@@ -1,0 +1,21 @@
+<!doctype html><html><head><meta charset="utf-8"><style>*{margin:0;padding:0;box-sizing:border-box}html,body{width:1200px;height:900px}body{display:flex;align-items:center;justify-content:center}svg{display:block}</style></head><body>
+<!-- NSS scores: survey clipboard with star rating + trend -->
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs><path id="star5" d="M0,-46 L13.5,-14.2 L46,-14.2 L19,6 L29,38 L0,18 L-29,38 L-19,6 L-46,-14.2 L-13.5,-14.2 Z"/></defs>
+  <rect width="1200" height="900" fill="#002333"/>
+  <ellipse cx="600" cy="772" rx="230" ry="34" fill="#001520"/>
+  <!-- clipboard -->
+  <rect x="380" y="150" width="440" height="580" rx="30" fill="#ffffff"/>
+  <rect x="500" y="120" width="200" height="64" rx="22" fill="#06314a" stroke="#ffffff" stroke-width="14"/>
+  <!-- stars row -->
+  <g fill="#00d563" transform="translate(0 60)">
+    <use href="#star5" transform="translate(470 300) scale(0.9)"/>
+    <use href="#star5" transform="translate(555 300) scale(0.9)"/>
+    <use href="#star5" transform="translate(640 300) scale(0.9)"/>
+    <use href="#star5" transform="translate(725 300) scale(0.9)"/>
+  </g>
+  <use href="#star5" transform="translate(730 360) scale(0.9)" fill="#11405a"/>
+  <!-- trend line going up -->
+  <path d="M440 600 L520 560 L600 580 L680 500 L760 470" stroke="#00e075" stroke-width="14" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#00e075"><circle cx="440" cy="600" r="11"/><circle cx="600" cy="580" r="11"/><circle cx="760" cy="470" r="11"/></g>
+</svg></body></html>

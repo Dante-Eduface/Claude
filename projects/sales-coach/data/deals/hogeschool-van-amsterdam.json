@@ -1,0 +1,118 @@
+{
+  "slug": "hogeschool-van-amsterdam",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_AedAoDkJ4pGpFionj1zEHrc3sOshzA0duKS0rrdqMkI",
+    "naam": "Hogeschool van Amsterdam",
+    "url": "https://app.close.com/lead/lead_AedAoDkJ4pGpFionj1zEHrc3sOshzA0duKS0rrdqMkI/",
+    "lead_status": "Prospect",
+    "opportunity_id": null,
+    "fase": null,
+    "fase_type": null,
+    "waarde": null,
+    "valuta": "EUR",
+    "confidence": null,
+    "close_date": null,
+    "eigenaar": "Eduface CRM",
+    "crm_note": "",
+    "contacten": [
+      {
+        "naam": "Katelijne Boerma",
+        "titel": "Director of Education and Research",
+        "email": "k.boerma@hva.nl",
+        "id": "cont_fjFnRS2wRXCu2fmDBx1U5aoUdKNhRzsELBBdtW9bHdN"
+      },
+      {
+        "naam": "Friederike Sadewasser",
+        "titel": null,
+        "email": "f.sadewasser@hva.nl",
+        "id": "cont_12RHtTwaq5C9CzgWwNngV3QJi7feho9PwvN8K2TaRZ7"
+      },
+      {
+        "naam": "Carla Stiekema",
+        "titel": "Docent NT2 / taaladviseur Taalwinkel",
+        "email": "c.j.stiekema@hva.nl",
+        "id": "cont_kPnYovgJbc8kiqctrDmHTtBP8NS8y2tqRCF0n0JZBrg"
+      },
+      {
+        "naam": "Guido Tierolf",
+        "titel": "Onderzoeker/socioloog",
+        "email": "g.tierolf@hva.nl",
+        "id": "cont_r5LNEZcEXqsR6oBjDU8HeExhinLeynCDzBYXeaQrdHl"
+      },
+      {
+        "naam": "Kim Weerts",
+        "titel": null,
+        "email": "k.j.w.weerts@hva.nl",
+        "id": "cont_AfZyRTfKk7yRBGJUVbhPl0ZON40VnTyo9NdMxT2otOg"
+      },
+      {
+        "naam": "Zuzana van Polen",
+        "titel": "Onderwijskundig adviseur",
+        "email": "z.van.polen@hva.nl",
+        "id": "cont_PbHQaOjDqYCxWBhWVLolSi6wZSTNKLRcZLr1CwZP7LQ"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_SRsNAfnSxpaXwzi4KB7WffEFMvUo29BTwTaXuJBSHzF",
+        "soort": "call",
+        "datum": "2026-03-31",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "VM ingesproken, ze heeft mij een I message gestuurd met de vraag of ze mij later terug kan bellen.",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_DjkYT4U9IrZD5sXEPmgVDAukTUgxyMIvferR5dlPAqC",
+        "soort": "meeting",
+        "datum": "2026-09-08",
+        "titel": "Re: Taal en spelling 1e test",
+        "duur_min": 50,
+        "status": "upcoming",
+        "deelnemers": [
+          "c.j.stiekema@hva.nl",
+          "jeroen.van.gessel@eduface.me",
+          "k.ruitinga@hva.nl"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": true
+      }
+    ],
+    "open_taken": [],
+    "laatste_gesprek": "2026-03-31",
+    "volgende_afspraak": "2026-09-08",
+    "aantal_gehad": 1,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eduface — product visual opties</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  body { background: var(--ink-50); }
+  .v-head { padding: 56px 0 20px; }
+  .v-head h1 { font-size: 2.5rem; }
+  .v-head p { margin-top: 12px; color: var(--ink-500); max-width: 620px; }
+  .v-group { padding: 40px 0 20px; border-top: 1px solid var(--line); margin-top: 40px; }
+  .v-group > h2 { font-size: 1.75rem; }
+  .v-group > p { color: var(--ink-500); margin-top: 8px; font-size: 0.9375rem; }
+  .v-item { margin-top: 34px; }
+  .v-tag {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: var(--navy); color: var(--white);
+    border-radius: var(--r-pill); padding: 7px 18px;
+    font-size: 0.875rem; font-weight: 600; margin-bottom: 16px;
+  }
+  .v-tag em { font-style: normal; color: var(--green); }
+  .v-note { font-size: 0.875rem; color: var(--ink-500); margin-bottom: 16px; max-width: 640px; }
+  .v-frame { background: var(--navy); border-radius: var(--r-card); padding: 34px; }
+  .v-frame.lightbg { background: var(--white); border: 1px solid var(--line); }
+  .v-half { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  @media (max-width: 860px) { .v-half { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<div class="wrap v-head">
+  <h1>Product visuals, opties om uit te kiezen</h1>
+  <p>Alles vlak, geen gradients, alleen navy / groen / wit en lijnen. Zeg per blok welk nummer je wil, dan zet ik die in de site. Combineren mag ook.</p>
+</div>
+
+<!-- ============ HERO OPTIES ============ -->
+<div class="wrap v-group">
+  <h2>Hero visual</h2>
+  <p>Het beeld direct onder de hero-tekst. Moet in één blik laten zien wat de tool doet.</p>
+
+  <!-- A1 -->
+  <div class="v-item">
+    <div class="v-tag">Hero <em>A1</em> · drie panelen (staat nu live)</div>
+    <p class="v-note">Wie het inleverde, wat de AI voorstelt, en de rubric. Meeste context, meest "echt product".</p>
+    <div class="v-frame">
+      <div class="stage-inner" style="border-radius:var(--r-card); border-bottom:1px solid var(--line-dark)">
+        <div class="panel stage-side">
+          <div class="panel-k">Submission</div>
+          <div class="who-row">
+            <span class="who-av">SD</span>
+            <span><span class="who-n">S. de Vries</span><br><span class="who-s">Essay, draft 3</span></span>
+          </div>
+          <div class="who-meta">
+            <div><span class="lbl">In batch</span><span class="val">12 of 142</span></div>
+            <div><span class="lbl">Rubric</span><span class="val">Research Methods</span></div>
+            <div><span class="lbl">Status</span><span class="val">Awaiting you</span></div>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-k">Feedback drafted, waiting on you</div>
+          <div class="stack">
+            <div class="cmt">
+              <span class="cmt-mark"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#00E075" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="cmt-t"><span class="q">Tie the thesis back to your research question</span><span class="c">Criterion 1 · Issue identification</span></span>
+              <span class="cmt-ok">Approve</span>
+            </div>
+            <div class="cmt back-1"><span class="cmt-mark"></span><span class="cmt-t"><span class="q">Source is strong, link it to criterion 2</span></span><span class="cmt-ok">Approve</span></div>
+            <div class="cmt back-2"><span class="cmt-mark"></span><span class="cmt-t"><span class="q">Conclusion restates, does not conclude</span></span><span class="cmt-ok">Approve</span></div>
+          </div>
+        </div>
+        <div class="panel stage-side">
+          <div class="panel-k">Rubric</div>
+          <div class="rub"><span>Issue identification</span><span class="s">8 / 10</span></div>
+          <div class="rub"><span>Use of sources</span><span class="s">9 / 10</span></div>
+          <div class="rub"><span>Depth of analysis</span><span class="s wait">Review</span></div>
+          <div class="rub"><span>Structure</span><span class="s">7 / 10</span></div>
+          <div class="rub"><span>Referencing</span><span class="s">9 / 10</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- A2 -->
+  <div class="v-item">
+    <div class="v-tag">Hero <em>A2</em> · alleen de stapel</div>
+    <p class="v-note">Eén idee, groot: de AI schrijft de opmerking, jij tikt af. Rustigst en het duidelijkst.</p>
+    <div class="v-frame">
+      <div style="max-width:620px; margin:0 auto">
+        <div class="panel" style="padding:26px">
+          <div class="panel-k">Feedback drafted, waiting on you</div>
+          <div class="stack" style="padding-bottom:44px">
+            <div class="cmt" style="padding:20px">
+              <span class="cmt-mark"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#00E075" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="cmt-t"><span class="q" style="font-size:1rem">Tie the thesis back to your research question</span><span class="c">Criterion 1 · Issue identification</span></span>
+              <span class="cmt-ok">Approve</span>
+            </div>
+            <div class="cmt back-1" style="top:92px"><span class="cmt-mark"></span><span class="cmt-t"><span class="q">Source is strong, link it to criterion 2</span></span><span class="cmt-ok">Approve</span></div>
+            <div class="cmt back-2" style="top:128px"><span class="cmt-mark"></span><span class="cmt-t"><span class="q">Conclusion restates, does not conclude</span></span><span class="cmt-ok">Approve</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- A3 -->
+  <div class="v-item">
+    <div class="v-tag">Hero <em>A3</em> · het document met markering</div>
+    <p class="v-note">Laat letterlijk zien dat de AI in de tekst markeert en daar een opmerking aan hangt. Het meest herkenbaar voor een docent.</p>
+    <div class="v-frame">
+      <div style="max-width:760px; margin:0 auto; display:grid; grid-template-columns:1fr 280px; gap:20px">
+        <div class="panel">
+          <div class="panel-k">Draft 3 · S. de Vries</div>
+          <div style="height:11px;background:rgba(255,255,255,0.18);border-radius:4px;width:52%;margin-bottom:18px"></div>
+          <div style="height:8px;background:rgba(255,255,255,0.09);border-radius:4px;margin-bottom:10px"></div>
+          <div style="height:8px;background:rgba(255,255,255,0.09);border-radius:4px;width:94%;margin-bottom:10px"></div>
+          <div style="height:8px;background:rgba(0,224,117,0.42);border-radius:4px;width:70%;margin-bottom:10px"></div>
+          <div style="height:8px;background:rgba(255,255,255,0.09);border-radius:4px;margin-bottom:10px"></div>
+          <div style="height:8px;background:rgba(255,255,255,0.09);border-radius:4px;width:80%"></div>
+        </div>
+        <div class="panel" style="align-self:start">
+          <div class="panel-k" style="color:#00E075">AI comment</div>
+          <p style="font-size:0.875rem;color:#fff">"Tie the thesis back to your research question so it lands from line one."</p>
+          <div style="margin-top:16px;padding-top:14px;border-top:1px solid var(--line-dark);display:flex;gap:8px">
+            <span class="cmt-ok">Approve</span>
+            <span style="border:1px solid rgba(255,255,255,0.16);border-radius:var(--r-pill);padding:5px 12px;font-size:0.75rem;color:rgba(255,255,255,0.6)">Edit</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- A4 -->
+  <div class="v-item">
+    <div class="v-tag">Hero <em>A4</em> · de batch-teller</div>
+    <p class="v-note">Kiest voor de uitkomst in plaats van het scherm: 142 nagekeken, 24 terug bij jou. Verkoopt tijd, niet features.</p>
+    <div class="v-frame">
+      <div style="max-width:700px;margin:0 auto">
+        <div class="panel" style="padding:32px">
+          <div class="panel-k">Research Methods · batch of 142</div>
+          <div style="display:flex;align-items:baseline;gap:14px;margin:10px 0 20px">
+            <span style="font-family:var(--font-display);font-size:4rem;font-weight:700;color:#00E075;letter-spacing:-0.04em;line-height:1">118</span>
+            <span style="color:rgba(255,255,255,0.6);font-size:1rem">drafted and ready for your approval</span>
+          </div>
+          <div class="mx-bar" style="height:14px"><i style="width:83%"></i></div>
+          <div class="mx-key" style="margin-top:16px">
+            <span><span class="dot"></span>118 drafted</span>
+            <span><span class="dot grey"></span>24 flagged for you</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ PRODUCT VISUAL OPTIES ============ -->
+<div class="wrap v-group">
+  <h2>Product visuals in de bento</h2>
+  <p>Het kleine beeld onder elke producttekst. Twee stijlen per product: <strong>1</strong> = het scherm, <strong>2</strong> = de uitkomst.</p>
+
+  <!-- AI Feedback -->
+  <div class="v-item">
+    <div class="v-tag">AI Feedback <em>B1 / B2</em></div>
+    <div class="v-half">
+      <div class="v-frame lightbg">
+        <p class="v-note"><strong>B1</strong> het scherm (staat nu live)</p>
+        <div class="mini">
+          <div class="mf-line w9"></div><div class="mf-line"></div><div class="mf-line w7 hit"></div>
+          <div class="mf-note">
+            <div class="k">AI comment</div>
+            <p>"Tie the thesis back to your research question."</p>
+            <div class="ok"><svg width="13" height="13" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="7" fill="#00E075"/><path d="M4 7.2L6.1 9.3L10 5" stroke="#002333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Approved by you</div>
+          </div>
+        </div>
+      </div>
+      <div class="v-frame lightbg">
+        <p class="v-note"><strong>B2</strong> de uitkomst</p>
+        <div class="mini" style="text-align:center;padding:30px 18px">
+          <div style="font-family:var(--font-display);font-size:3rem;font-weight:700;color:var(--green-deep);letter-spacing:-0.04em;line-height:1">4 of 4</div>
+          <div style="font-size:0.875rem;color:var(--ink-500);margin-top:8px">drafts got real feedback</div>
+          <div style="display:flex;justify-content:center;gap:8px;margin-top:18px">
+            <span style="width:30px;height:30px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#002333" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span style="width:30px;height:30px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#002333" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span style="width:30px;height:30px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#002333" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span style="width:30px;height:30px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#002333" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Paper Grader -->
+  <div class="v-item">
+    <div class="v-tag">AI Paper Grader <em>C1 / C2</em></div>
+    <div class="v-half">
+      <div class="v-frame">
+        <p class="v-note" style="color:rgba(255,255,255,0.6)"><strong style="color:#fff">C1</strong> de rubric-rijen (staat nu live)</p>
+        <div class="mini on-dark">
+          <div class="mg-row"><span>Issue identification</span><span class="sc">8 / 10</span></div>
+          <div class="mg-row"><span>Use of sources</span><span class="sc">9 / 10</span></div>
+          <div class="mg-row"><span>Depth of analysis</span><span class="sc wait">Review</span></div>
+          <div class="mg-row"><span>Referencing</span><span class="sc">9 / 10</span></div>
+        </div>
+      </div>
+      <div class="v-frame">
+        <p class="v-note" style="color:rgba(255,255,255,0.6)"><strong style="color:#fff">C2</strong> de spreiding, eerste vs laatste</p>
+        <div class="mini on-dark">
+          <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:6px;height:88px;margin-bottom:14px">
+            <i style="flex:1;height:62%;background:#00e075;border-radius:3px 3px 0 0;display:block"></i>
+            <i style="flex:1;height:70%;background:#00e075;border-radius:3px 3px 0 0;display:block"></i>
+            <i style="flex:1;height:58%;background:#00e075;border-radius:3px 3px 0 0;display:block"></i>
+            <i style="flex:1;height:66%;background:#00e075;border-radius:3px 3px 0 0;display:block"></i>
+            <i style="flex:1;height:64%;background:#00e075;border-radius:3px 3px 0 0;display:block"></i>
+            <i style="flex:1;height:60%;background:#00e075;border-radius:3px 3px 0 0;display:block"></i>
+            <i style="flex:1;height:68%;background:#00e075;border-radius:3px 3px 0 0;display:block"></i>
+            <i style="flex:1;height:63%;background:#00e075;border-radius:3px 3px 0 0;display:block"></i>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:0.75rem;color:rgba(255,255,255,0.5)">
+            <span>Paper 1</span><span>Paper 142</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Exam Grader -->
+  <div class="v-item">
+    <div class="v-tag">AI Exam Grader <em>D1 / D2</em></div>
+    <div class="v-half">
+      <div class="v-frame">
+        <p class="v-note" style="color:rgba(255,255,255,0.6)"><strong style="color:#fff">D1</strong> de balk (staat nu live)</p>
+        <div class="mini on-dark">
+          <div class="mx-top"><span class="n">86%</span><span class="l">scored without you</span></div>
+          <div class="mx-bar"><i style="width:86%"></i></div>
+          <div class="mx-key"><span><span class="dot"></span>Scored</span><span><span class="dot grey"></span>Flagged for you</span></div>
+        </div>
+      </div>
+      <div class="v-frame">
+        <p class="v-note" style="color:rgba(255,255,255,0.6)"><strong style="color:#fff">D2</strong> het raster van antwoorden</p>
+        <div class="mini on-dark">
+          <div style="display:grid;grid-template-columns:repeat(12,1fr);gap:5px">
+            <span style="aspect-ratio:1;border-radius:3px;background:#00e075"></span><span style="aspect-ratio:1;border-radius:3px;background:#00e075"></span><span style="aspect-ratio:1;border-radius:3px;background:#00e075"></span><span style="aspect-ratio:1;border-radius:3px;background:rgba(255,255,255,0.22)"></span><span style="aspect-ratio:1;border-radius:3px;background:#00e075"></span><span style="aspect-ratio:1;border-radius:3px;background:#00e075"></span><span style="aspect-ratio:1;border-radius:3px;background:#00e075"></span><span style="aspect-ratio:1;border-radius:3px;background:#00e075"></span><span style="aspect-ratio:1;border-radius:3px;background:#00e075"></span><span style="aspect-ratio:1;border-radius:3px;background:rgba(255,255,255,0.22)"></span><span style="aspect-ratio:1;border-radius:3px;background:#00e075"></span><span style="aspect-ratio:1;border-radius:3px;background:#00e075"></span>
+            <span style="aspect-ratio:1;border-radius:3px;background:#00e075"></span><span style="aspect-ratio:1;border-radius:3px;background:#00e075"></span><span style="aspect-ratio:1;border-radius:3px;background:#00e075"></span><span style="aspect-ratio:1;border-radius:3px;background:#00e075"></span><span style="aspect-ratio:1;border-radius:3px;background:#00e075"></span><span style="aspect-ratio:1;border-radius:3px;background:rgba(255,255,255,0.22)"></span><span style="aspect-ratio:1;border-radius:3px;background:#00e075"></span><span style="aspect-ratio:1;border-radius:3px;background:#00e075"></span><span style="aspect-ratio:1;border-radius:3px;background:#00e075"></span><span style="aspect-ratio:1;border-radius:3px;background:#00e075"></span><span style="aspect-ratio:1;border-radius:3px;background:#00e075"></span><span style="aspect-ratio:1;border-radius:3px;background:#00e075"></span>
+            <span style="aspect-ratio:1;border-radius:3px;background:#00e075"></span><span style="aspect-ratio:1;border-radius:3px;background:rgba(255,255,255,0.22)"></span><span style="aspect-ratio:1;border-radius:3px;background:#00e075"></span><span style="aspect-ratio:1;border-radius:3px;background:#00e075"></span><span style="aspect-ratio:1;border-radius:3px;background:#00e075"></span><span style="aspect-ratio:1;border-radius:3px;background:#00e075"></span><span style="aspect-ratio:1;border-radius:3px;background:#00e075"></span><span style="aspect-ratio:1;border-radius:3px;background:#00e075"></span><span style="aspect-ratio:1;border-radius:3px;background:rgba(255,255,255,0.22)"></span><span style="aspect-ratio:1;border-radius:3px;background:#00e075"></span><span style="aspect-ratio:1;border-radius:3px;background:#00e075"></span><span style="aspect-ratio:1;border-radius:3px;background:#00e075"></span>
+          </div>
+          <div class="mx-key" style="margin-top:16px"><span><span class="dot"></span>Scored</span><span><span class="dot grey"></span>Flagged for you</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Oral -->
+  <div class="v-item">
+    <div class="v-tag">Oral Examination <em>E1 / E2</em></div>
+    <div class="v-half">
+      <div class="v-frame lightbg">
+        <p class="v-note"><strong>E1</strong> golf + transcript (staat nu live)</p>
+        <div class="mini">
+          <div class="mo-wave"><i style="height:12px"></i><i style="height:24px"></i><i style="height:36px"></i><i style="height:18px"></i><i style="height:30px"></i><i style="height:22px"></i><i style="height:38px"></i><i style="height:14px"></i><i style="height:26px"></i><i style="height:20px"></i><i style="height:32px"></i><i style="height:11px"></i><i style="height:28px"></i><i style="height:16px"></i></div>
+          <div class="mo-line"><span class="w">Examiner</span><span class="x">Walk me through your methodology.</span></div>
+          <div class="mo-line"><span class="w">Student</span><span class="x">I started by reviewing...</span></div>
+        </div>
+      </div>
+      <div class="v-frame lightbg">
+        <p class="v-note"><strong>E2</strong> live opname-status</p>
+        <div class="mini" style="display:flex;align-items:center;gap:16px;padding:26px 20px">
+          <span style="width:46px;height:46px;border-radius:50%;background:var(--green);flex-shrink:0;display:flex;align-items:center;justify-content:center">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 15a4 4 0 0 0 4-4V6a4 4 0 1 0-8 0v5a4 4 0 0 0 4 4Zm7-4a7 7 0 0 1-14 0m7 7v3" stroke="#002333" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span>
+            <span style="display:block;font-family:var(--font-display);font-size:1.25rem;font-weight:600">Recording · 12:04</span>
+            <span style="display:block;font-size:0.875rem;color:var(--ink-500);margin-top:3px">Transcribing and scoring live</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap" style="padding:40px 0 80px">
+  <a class="btn btn-navy btn-sm" href="/">Terug naar de site</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+[
+  {
+    "id": "North-West-University-Noordwes-Universiteit-1",
+    "org": "North-West University / Noordwes-Universiteit",
+    "lead_id": "lead_4c9FAnE3ryS5EPb6zkVo7NiUbqnGmc8dbMqsbaAXo0W",
+    "close_url": "https://app.close.com/lead/lead_4c9FAnE3ryS5EPb6zkVo7NiUbqnGmc8dbMqsbaAXo0W/",
+    "persoon": "Nico van der Merwe",
+    "functie": "Deputy Director",
+    "datum": "2026-05-07",
+    "bron_type": "note",
+    "bron_id": "acti_PcAp7mPrTS4ss9Ra3zhqMkxgntPpTUx7zYvqoWXUiwN",
+    "segment": "intl",
+    "thema": "onderwijsvisie",
+    "type": "uitkomst",
+    "citaat": "we are definitely interested to discuss your solution further, specifically for our second-semester Ethics module which will commence in July 2026",
+    "samenvatting": "Ethics-module met veel schrijfwerk is hun eigen gekozen instap.",
+    "zekerheid": "letterlijk"
+  },
+  {
+    "id": "North-West-University-Noordwes-Universiteit-2",
+    "org": "North-West University / Noordwes-Universiteit",
+    "lead_id": "lead_4c9FAnE3ryS5EPb6zkVo7NiUbqnGmc8dbMqsbaAXo0W",
+    "close_url": "https://app.close.com/lead/lead_4c9FAnE3ryS5EPb6zkVo7NiUbqnGmc8dbMqsbaAXo0W/",
+    "persoon": "Heleen Janse van Vuuren",
+    "functie": "Director: School of Accounting Sciences",
+    "datum": "2026-06-10",
+    "bron_type": "email",
+    "bron_id": "acti_Ti4aDw3t3vrbK2wmhyiAKukzwPG6eGQ4lhhCmQzHe8J",
+    "segment": "intl",
+    "thema": "lms-it",
+    "type": "bezwaar",
+    "citaat": "the management team has decided to place this initiative on hold for the time being. This decision is primarily due to the University's transition to a new Learning Management System (LMS).",
+    "samenvatting": "Zelfde afwijzing als op de hoofdlead: LMS-transitie blokkeert.",
+    "zekerheid": "letterlijk"
+  },
+  {
+    "id": "North-West-University-Noordwes-Universiteit-3",
+    "org": "North-West University / Noordwes-Universiteit",
+    "lead_id": "lead_4c9FAnE3ryS5EPb6zkVo7NiUbqnGmc8dbMqsbaAXo0W",
+    "close_url": "https://app.close.com/lead/lead_4c9FAnE3ryS5EPb6zkVo7NiUbqnGmc8dbMqsbaAXo0W/",
+    "persoon": "Heleen Janse van Vuuren",
+    "functie": "Director: School of Accounting Sciences",
+    "datum": "2026-06-02",
+    "bron_type": "email",
+    "bron_id": "acti_9MessXvOEwL6xec9CLGIu3tQ6Lxh7tWjmDCO36tLfOf",
+    "segment": "intl",
+    "thema": "privacy-compliance",
+    "type": "huidig",
+    "citaat": "Will it be possible to put your proposal on an official letterhead so we can run everything through our legal department?",
+    "samenvatting": "Legal-afdeling zit standaard in het pad bij NWU.",
+    "zekerheid": "letterlijk"
+  }
+]

@@ -1,0 +1,63 @@
+{
+  "slug": "tilburg-university",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_oA3n1ns5ZI57r9R4095f5bKIR0ekDvLMRPjcWpHnaIC",
+    "naam": "Tilburg University",
+    "url": "https://app.close.com/lead/lead_oA3n1ns5ZI57r9R4095f5bKIR0ekDvLMRPjcWpHnaIC/",
+    "lead_status": "Actief",
+    "opportunity_id": "oppo_i2dZj36Gq9SEhY1goltXKbp6J1ZFNYzthp1JEwyTuHk",
+    "fase": "Pilot",
+    "fase_type": "active",
+    "waarde": 25000,
+    "valuta": "EUR",
+    "confidence": 40,
+    "close_date": null,
+    "eigenaar": "Eduface CRM",
+    "crm_note": "**Status:** Beslisproces niet in kaart, geen go/no-go met EB gepland, en sinds\nde laatste outreach nul reactie van de klant.\n\n**Wat er gebeurde:** De SSO grid van 26 juni concludeert dat het niet goed\ngaat en dat er veel stappen zijn overgeslagen: beslisproces onbekend, go/no-go\nmeeting met EB nog te plannen. Er loopt een pilot bij Tilburg Law School\n(tentamens beoordelen) en een project met Social Sciences and Behaviour\n(feedback op papers), maar wie budget heeft en wie tekent staat nergens\nvastgelegd. Alle drie de mails zijn uitgaand, er is geen enkele reactie\nbinnen. Er is nooit een meeting met vastgelegde inhoud geweest.\n\n**Next action:** Beslisproces in kaart brengen: budgethouder en ondertekenaar per faculteit vaststellen | Jeroen | <datum onbekend> | Hoog\n\n**Next action:** Go/no-go meeting met EB plannen | Jeroen | <datum onbekend> | Hoog\n\n**Risk:** Deal draait op twee losse faculteitsprojecten zonder bekende\nbudgethouder of koopproces. Geen close date, geen open taken, geen vervolgstap\ningepland.\n\n**Action required:** Eigenaar van deze deal (per de note Menno) moet\naanleveren wie de EB-kant is en wat er in de pilots is afgesproken. Zonder dat\nis de 25k niet te onderbouwen.",
+    "contacten": [
+      {
+        "naam": "Lonneke Schellekens",
+        "titel": "Instructional designer / onderwijskundige (dr.)",
+        "email": "l.h.schellekens@tilburguniversity.edu",
+        "id": "cont_JkDKQjfW2IBfBnkrAulcoszQxkTH8nKpZHqpLiYGwUK"
+      },
+      {
+        "naam": "Patrick van der Zande",
+        "titel": "Assessment Specialist (Teaching & Learning Center)",
+        "email": "p.vanderzande@tilburguniversity.edu",
+        "id": "cont_H4U7ItLxarPyWYuWp0bvWPujwFYJLl4q4ouxpLim6Sa"
+      }
+    ],
+    "gesprekken": [],
+    "open_taken": [],
+    "laatste_gesprek": null,
+    "volgende_afspraak": null,
+    "aantal_gehad": 0,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

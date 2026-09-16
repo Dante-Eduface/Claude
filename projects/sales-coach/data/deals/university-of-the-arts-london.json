@@ -1,0 +1,84 @@
+{
+  "slug": "university-of-the-arts-london",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_TnyoLcWzyoSHq5W88HVZzGRfS8lSfA3yWMzdSWatXJh",
+    "naam": "University of the Arts London",
+    "url": "https://app.close.com/lead/lead_TnyoLcWzyoSHq5W88HVZzGRfS8lSfA3yWMzdSWatXJh/",
+    "lead_status": "Prospect",
+    "opportunity_id": null,
+    "fase": null,
+    "fase_type": null,
+    "waarde": null,
+    "valuta": "EUR",
+    "confidence": null,
+    "close_date": null,
+    "eigenaar": "Eduface CRM",
+    "crm_note": "",
+    "contacten": [
+      {
+        "naam": "Allan Atlee",
+        "titel": "Pro Vice Chancellor Education and Students",
+        "email": null,
+        "id": "cont_Fo0vQoCJLBPPOkdaSmZ4BEwuE5AW3Iyr0dkzdxgQCpP"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_vDe3uBYMUUrZ54TJdy8JnL9Srn4bl738HGJb9ujShSQ",
+        "soort": "call",
+        "datum": "2026-05-11",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "VM",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_H63IXytCQaQzDdJbSMuoJJmR3pEwOTgeK7LvQG2fTzV",
+        "soort": "call",
+        "datum": "2026-05-13",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Gebeld en VM maar ook niet echt een goed haakje. Dus ga hem niet blijven bellen.",
+        "transcript_beschikbaar": false,
+        "komend": false
+      }
+    ],
+    "open_taken": [],
+    "laatste_gesprek": "2026-05-13",
+    "volgende_afspraak": null,
+    "aantal_gehad": 2,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

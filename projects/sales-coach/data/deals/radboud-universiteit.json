@@ -1,0 +1,63 @@
+{
+  "slug": "radboud-universiteit",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_RkErbdYpaKeN3op9saEZ3vUKGa1Wae56Dvf5PcqMUPP",
+    "naam": "Radboud Universiteit",
+    "url": "https://app.close.com/lead/lead_RkErbdYpaKeN3op9saEZ3vUKGa1Wae56Dvf5PcqMUPP/",
+    "lead_status": "Actief",
+    "opportunity_id": "oppo_0euDT0VQUwdOnkesvx8hNDrArFDzqyZzBimTwQFJ4ef",
+    "fase": "Pilot",
+    "fase_type": "active",
+    "waarde": 15000,
+    "valuta": "EUR",
+    "confidence": 55,
+    "close_date": null,
+    "eigenaar": "Eduface CRM",
+    "crm_note": "**Status:** Er is nooit contact geweest. Twee koude mails in maart, nul\nreacties, daarna niets meer.\n\n**Wat er gebeurde:** De enige activiteit is een koude mail per contact op 27\nmaart over feedbackconsistentie. Geen antwoord, geen meeting, geen gesprek. De\nlead ging op 1 april naar \"Negotiate and close\" en op 20 mei via \"Interested\"\nterug naar Actief, en de opportunity ging op 20 mei van Pilot naar Rollout en\ndezelfde dag weer terug naar Pilot. Voor geen van die wijzigingen staat een\ntoelichting in Close. De enige note is \"SSO grid Radboud 26 juni. Menno deal.\"\nzonder inhoud.\n\n**Next action:** Vaststellen of hier iets echt loopt buiten Close om, anders terugzetten naar prospect en opnieuw benaderen | Jeroen | <datum onbekend> | Hoog\n\n**Risk:** De fase en de 15k zijn nergens op gebaseerd. Dit staat als actieve\npilotdeal in de pipeline terwijl er geen enkel klantcontact is vastgelegd.\n\n**Action required:** Eigenaar van deze deal (per de note Menno) moet\nbevestigen of er offline gesprekken zijn geweest. Zo niet, dan moet de\nforecastwaarde eruit.",
+    "contacten": [
+      {
+        "naam": "Geertje Strijker",
+        "titel": "Afdelingshoofd Onderwijs",
+        "email": "geertje.strijker@ru.nl",
+        "id": "cont_RqMmlrPrMcEySR6MWFHbkvqATpaGhcTs5CD72aVE2iB"
+      },
+      {
+        "naam": "Liesbeth Gulpers",
+        "titel": "Director Of Education",
+        "email": "liesbeth.gulpers@ru.nl",
+        "id": "cont_3CSH2GKPRmXPaPFSK6rcEuWPtOSSEicRr1lnwaKUrPn"
+      }
+    ],
+    "gesprekken": [],
+    "open_taken": [],
+    "laatste_gesprek": null,
+    "volgende_afspraak": null,
+    "aantal_gehad": 0,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

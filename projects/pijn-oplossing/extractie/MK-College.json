@@ -1,0 +1,19 @@
+[
+ {
+  "id": "MK-College-1",
+  "org": "MK College",
+  "lead_id": "lead_Ci5j1nHu6SYvuLSbK09ytbxmrFWN1Axu3h1sXOkrgCa",
+  "close_url": "https://app.close.com/lead/lead_Ci5j1nHu6SYvuLSbK09ytbxmrFWN1Axu3h1sXOkrgCa/",
+  "persoon": null,
+  "functie": null,
+  "datum": "2026-04-16",
+  "bron_type": "note",
+  "bron_id": "acti_Z8JEPqIOnmYNGXWrE8VrF5PAvvLeJs7xiXXPOjEicxy",
+  "segment": "uk-he",
+  "thema": "lms-it",
+  "type": "bezwaar",
+  "citaat": "Does this integrate with Teams? Our assessments are submitted through Turnitin in Teams.",
+  "samenvatting": "FE-college werkt via Turnitin in Teams; integratie is de eerste vraag, niet de pijn.",
+  "zekerheid": "letterlijk"
+ }
+]

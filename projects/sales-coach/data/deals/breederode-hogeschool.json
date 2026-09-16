@@ -1,0 +1,95 @@
+{
+  "slug": "breederode-hogeschool",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_8sVUDLRJ6YRVHVD4c0pnmZ8WIoIkku6QnUMSm6aYC8c",
+    "naam": "Breederode Hogeschool",
+    "url": "https://app.close.com/lead/lead_8sVUDLRJ6YRVHVD4c0pnmZ8WIoIkku6QnUMSm6aYC8c/",
+    "lead_status": "Prospect",
+    "opportunity_id": null,
+    "fase": null,
+    "fase_type": null,
+    "waarde": null,
+    "valuta": "EUR",
+    "confidence": null,
+    "close_date": null,
+    "eigenaar": "Eduface CRM",
+    "crm_note": "",
+    "contacten": [
+      {
+        "naam": "Irma van der Velden",
+        "titel": "Directeur",
+        "email": null,
+        "id": "cont_SR8TYW5ITn9IUkKkOnZmjuPPXluybjyITRav6RqedIk"
+      },
+      {
+        "naam": "Ivonne Duiser",
+        "titel": null,
+        "email": "i.duiser@breederode.nl",
+        "id": "cont_AlfWwXxQGRlhmLwluTnUXyB5pJr0XsdZaLgFHhufDHn"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_W2XOK8NDwPiIfBBwTfCYQ0Ie9t38AZumnRbYfePKbCM",
+        "soort": "call",
+        "datum": "2026-08-06",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "VM",
+        "transcript_beschikbaar": true,
+        "komend": false
+      },
+      {
+        "id": "acti_ei45MpMCSBdbpxnnrOb4PPD3K0GHJGfjaWMkvKgrqaB",
+        "soort": "meeting",
+        "datum": "2026-09-01",
+        "titel": "Breederode x Eduface",
+        "duur_min": 60,
+        "status": "upcoming",
+        "deelnemers": [
+          "dante.torbed@eduface.me",
+          "i.duiser@breederode.nl",
+          "jeroen.van.gessel@eduface.me",
+          "m.degraaf@breederode.nl"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": true
+      }
+    ],
+    "open_taken": [],
+    "laatste_gesprek": "2026-08-06",
+    "volgende_afspraak": "2026-09-01",
+    "aantal_gehad": 1,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

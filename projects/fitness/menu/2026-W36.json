@@ -1,0 +1,91 @@
+{
+  "week": 36,
+  "range": "ma 31 aug t/m zo 6 sep 2026",
+  "prep_date": "zondag 30 augustus",
+  "targets": { "kcal": 3100, "eiwit": "175-180 g", "stop_eating": "19:30" },
+  "changes": [
+    "Porties omlaag van 3.800 naar 3.100 kcal. Alles eraf gaat van de koolhydraten, eiwit blijft gelijk.",
+    "Kwark van 2x naar 1x per dag. Tweede snack rouleert nu.",
+    "Kwark voor bed vervallen: die bestond voor de football-avonden van 00:30.",
+    "Nieuw: feed om 17:00 op dinsdag en donderdag, want dat zijn avondsessies na een werkdag.",
+    "Kippendij van 3 naar 2 hoofdgerechten. Elf nieuwe recepten toegevoegd."
+  ],
+  "days": [
+    { "dag": "Maandag",  "training": "Rust",
+      "ontbijt": "Griesmeelpap met kaneel, banaan en amandelen",
+      "lunch": "Couscous met kalkoen, geroosterde groente en tahinsaus",
+      "pre": null,
+      "diner": "Kabeljauw uit de oven met aardappel en romige prei",
+      "snack": "Kwark met banaan en honing" },
+    { "dag": "Dinsdag",  "training": "Lower B, avond",
+      "ontbijt": "Proteïne pannenkoeken met kwark en frambozen",
+      "lunch": "Couscous met kalkoen (2e bakje)",
+      "pre": "Rijstwafels met pindakaas en banaan",
+      "diner": "Garnalen-eierrijst met erwtjes en lente-ui",
+      "snack": "Cottage cheese met ananas en pompoenpitten" },
+    { "dag": "Woensdag", "training": "Rust",
+      "ontbijt": "Overnight oats met blauwe bessen en cashews",
+      "lunch": "Aardappelsalade met zalm, doperwten en mosterd-dille",
+      "pre": null,
+      "diner": "Milde kip tikka met basmati en komkommer-yoghurt",
+      "snack": "Kwark met banaan en honing" },
+    { "dag": "Donderdag","training": "Upper A, avond",
+      "ontbijt": "Turkse eieren op yoghurt met zuurdesem",
+      "lunch": "Aardappelsalade met zalm (2e bakje)",
+      "pre": "Rijstwafels met pindakaas en banaan",
+      "diner": "Biefstuk met geroosterde aardappel en sperziebonen",
+      "snack": "Skyr met granola en blauwe bessen" },
+    { "dag": "Vrijdag",  "training": "Rust",
+      "ontbijt": "Proteïne pannenkoeken met kwark en mango",
+      "lunch": "Rundvlees-noedels met broccoli, soja en gember",
+      "pre": null,
+      "diner": "Kabeljauw met aardappel en prei (2e keer)",
+      "snack": "Kwark met banaan en honing" },
+    { "dag": "Zaterdag", "training": "Lower A",
+      "ontbijt": "Turkse eieren op yoghurt met zuurdesem",
+      "lunch": "Pasta met Italiaanse worstjes en paprika",
+      "pre": null,
+      "diner": "Zoete aardappelpuree met gehaktballen en tomatensaus",
+      "snack": "Skyr met granola en aardbeien" },
+    { "dag": "Zondag",   "training": "Upper B + field day",
+      "ontbijt": "Scrambled eieren op zuurdesem met avocado en spinazie",
+      "lunch": "Pasta bolognese met parmezaan",
+      "pre": null,
+      "diner": "Kip shawarma rijstbowl met yoghurtsaus",
+      "snack": "Kwark met een handje cashews, grootste dag van de week" }
+  ],
+  "rotatie": {
+    "eiwit": "kalkoen 2 · zalm 2 · kabeljauw 2 · kip 2 · rund 4 (vier verschillende gerechten) · garnalen 1 · worst 1",
+    "saus": "romig-zuivel 4 · tomaat 4 · soja-gember 2 · tahin 1",
+    "let_op": "Romig en tomaat staan allebei op 4. Volgende week gaat een van de twee omlaag, bijvoorbeeld met een pesto- of currybasis."
+  },
+  "prep": [
+    { "fase": "Fase 1 — 0 tot 30 min", "stappen": [
+      "Oven op 200 graden. Aardappelblokjes en krieltjes op twee bakplaten, 25 min.",
+      "Couscous zetten (240 g droog). Eiernoedels koken (120 g).",
+      "Kalkoenfilet marineren: olijfolie, paprikapoeder, komijn, knoflook, citroen.",
+      "Bolognesesaus starten: gehakt aanbraden, tomatenpuree, passata, laag vuur." ] },
+    { "fase": "Fase 2 — 30 tot 60 min", "stappen": [
+      "Kalkoen bakken, laten rusten, in reepjes snijden.",
+      "Gehaktballen draaien en aanbraden, tomatensaus erbij, 15 min sudderen.",
+      "Groenten roosteren voor de couscous: paprika, courgette, rode ui.",
+      "Tahinsaus maken: tahin, citroen, knoflook, water, zout.",
+      "Mosterd-dilledressing: Griekse yoghurt, mosterd, dille, citroen." ] },
+    { "fase": "Fase 3 — 60 tot 90 min", "stappen": [
+      "Couscous-kalkoen: 2 bakjes koelkast (ma, di).",
+      "Aardappelsalade: 2 bakjes koelkast (wo, do). Zalm en dressing er pas woensdagochtend door.",
+      "Rundvlees-noedels: 1 bakje vriezer (vr), donderdagavond ontdooien.",
+      "Gehaktballen met saus: 1 bakje koelkast (za). Bolognesesaus: 1 bakje koelkast (zo).",
+      "Krieltjes en aardappel: 1 grote bak." ] },
+    { "fase": "Vers op de dag zelf", "stappen": [
+      "Kabeljauw, biefstuk, garnalen en de shawarmakip kook je vers.",
+      "Dat is bewust: elke dag één ding vers houdt de week eetbaar." ] }
+  ],
+  "boodschappen": [
+    { "groep": "Vlees en vis", "items": "kalkoenfilet 500 g · rundergehakt 550 g · biefreepjes 250 g · biefstuk 250 g · kippendij 300 g · Italiaanse worstjes 250 g · kabeljauwfilet 600 g · warmgerookte zalm 400 g · garnalen 250 g" },
+    { "groep": "Zuivel en ei", "items": "eieren 20 · magere kwark 1,2 kg · Griekse yoghurt 1 kg · skyr 600 g · cottage cheese 300 g · volle melk 1,5 L · parmezaan 100 g · boter" },
+    { "groep": "Koolhydraten", "items": "couscous 250 g · eiernoedels 150 g · basmati 300 g · pasta 300 g · krieltjes 1 kg · aardappel 1,5 kg · zoete aardappel 400 g · havermout · griesmeel 100 g · zuurdesembrood · rijstwafels" },
+    { "groep": "Groente en fruit", "items": "broccoli · sperziebonen 200 g · prei 2 · paprika 4 · courgette 1 · rode ui 3 · komkommer 2 · diepvriesspinazie · doperwten · erwtjes · lente-ui · avocado 1 · banaan 8 · ananas · diepvries bessen en frambozen · citroen 3" },
+    { "groep": "Kast", "items": "tahin · pindakaas · granola · cashews · amandelen · pompoenpitten · honing · passata 1,2 L · tomatenpuree · room 100 ml · sojasaus · gember · knoflook · garam masala · kurkuma · komijn · paprikapoeder · oregano · dille · kaneel" }
+  ]
+}

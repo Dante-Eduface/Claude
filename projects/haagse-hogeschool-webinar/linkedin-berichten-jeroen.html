@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LinkedIn-berichten · Webinar 23 juni · Jeroen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{ --navy:#002333; --green:#00E075; --green2:#008F5A; --bg:#f5f7f8; --card:#ffffff; --line:#e2e8ea; --muted:#5b6b73; }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--navy);font-family:'Roboto',system-ui,sans-serif;}
+  h1,h2,h3,.spartan{font-family:'League Spartan',system-ui,sans-serif;}
+  header{background:var(--navy);color:#fff;padding:20px 24px;position:sticky;top:0;z-index:10;box-shadow:0 2px 10px rgba(0,0,0,.15)}
+  header .logo{font-family:'League Spartan';font-weight:700;font-size:26px;letter-spacing:.5px}
+  header .logo b{color:var(--green)}
+  header .sub{font-size:14px;color:#b9c6cc;margin-top:2px}
+  .bar{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:14px}
+  .progress{flex:1;min-width:200px;height:10px;background:#0a3144;border-radius:6px;overflow:hidden}
+  .progress > div{height:100%;background:var(--green);width:0%;transition:width .25s}
+  .count{font-size:14px;color:#cfe9df;white-space:nowrap}
+  .btn{background:#0a3144;color:#fff;border:1px solid #16455c;border-radius:8px;padding:7px 12px;font-size:13px;cursor:pointer;font-family:'Roboto'}
+  .btn:hover{background:#0f3f56}
+  .wrap{max-width:880px;margin:0 auto;padding:22px 18px 90px}
+  .ref{background:#0a3144;color:#dfeef0;border-radius:12px;padding:16px 18px;margin:18px 0;font-size:14px;line-height:1.5}
+  .ref h3{margin:0 0 8px;color:#fff;font-size:18px}
+  .ref a{color:var(--green);font-weight:500}
+  .tmpl{margin:10px 0 4px}
+  .tmpl label{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.5px;color:#9fd8c4;margin:10px 0 5px;font-weight:700}
+  textarea{width:100%;background:#fff;color:var(--navy);border:1px solid #cdd9dd;border-radius:9px;padding:11px 12px;font-family:'Roboto';font-size:14px;line-height:1.5;resize:vertical;overflow:hidden}
+  textarea:focus{outline:none;border-color:var(--green2);box-shadow:0 0 0 2px #00e07533}
+  .batch-h{display:flex;align-items:baseline;gap:12px;margin:30px 4px 12px}
+  .batch-h h2{font-size:22px;margin:0}
+  .batch-h .bc{font-size:13px;color:var(--muted)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:10px 0;transition:opacity .2s,border-color .2s}
+  .card.done{opacity:.55;border-color:var(--green)}
+  .crow{display:flex;align-items:center;gap:10px;margin-bottom:9px;flex-wrap:wrap}
+  .chk{width:24px;height:24px;border-radius:7px;border:2px solid var(--line);flex:0 0 auto;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:15px;color:#fff;background:#fff}
+  .card.done .chk{background:var(--green);border-color:var(--green)}
+  .who{flex:1;min-width:120px}
+  .who .nm{font-family:'League Spartan';font-weight:700;font-size:17px;line-height:1.1}
+  .who .og{font-size:13px;color:var(--muted)}
+  .badge{font-size:11px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;padding:3px 8px;border-radius:20px;flex:0 0 auto}
+  .badge.warm{background:#d7f7e7;color:#006754}
+  .badge.koud{background:#e7eef1;color:#365663}
+  .li{font-size:13px;color:#fff;background:var(--navy);text-decoration:none;padding:6px 10px;border-radius:7px;flex:0 0 auto}
+  .li:hover{background:#0a3144}
+  .frow{display:flex;align-items:center;gap:12px;margin-top:8px}
+  .block{margin-top:14px}
+  .block:first-of-type{margin-top:0}
+  .blabel{font-size:12px;text-transform:uppercase;letter-spacing:.4px;color:var(--muted);font-weight:700;margin:4px 0 6px}
+  .copybtn{background:var(--green);color:var(--navy);border:none;border-radius:8px;padding:9px 16px;font-size:14px;font-weight:700;font-family:'League Spartan';cursor:pointer;letter-spacing:.3px}
+  .copybtn:hover{background:#00c768}
+  .reset1{font-size:12px;color:var(--muted);cursor:pointer;text-decoration:underline}
+  .chars{font-size:12px;color:var(--muted);margin-left:auto}
+  .chars.over{color:#c0392b;font-weight:700}
+  .toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--navy);color:#fff;padding:12px 20px;border-radius:10px;font-size:14px;opacity:0;pointer-events:none;transition:.2s;z-index:50}
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+  .toast b{color:var(--green)}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">Edu<b>face</b></div>
+  <div class="sub">LinkedIn-berichten · Webinar 23 juni (10:00-11:00) · versturen vanaf <b>Jeroen van Gessel</b></div>
+  <div class="bar">
+    <div class="progress"><div id="pbar"></div></div>
+    <div class="count" id="pcount">0 / 0 verstuurd</div>
+    <button class="btn" onclick="resetDone()">Reset vinkjes</button>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="ref">
+    <h3>Hoe gebruik je dit</h3>
+    Pas een bericht gerust aan in het tekstvak (wordt bewaard). Klik <b style="color:#fff">Kopiëren + afvinken</b> → de tekst staat op je klembord en de kaart is afgevinkt. Open het profiel, plak de tekst. Doe <b style="color:#fff">max 30 per dag</b>.<br>
+    Bij <b style="color:#fff">warm</b> krijg je twee opties: een <b style="color:#fff">lange DM</b> (al connected) en een <b style="color:#fff">korte connectie-note</b> (nog niet connected, max 300). Kies de juiste, de kaart vinkt af zodra je er één kopieert.
+
+    <div class="tmpl">
+      <label>Follow-up DM — na acceptatie connectie</label>
+      <textarea data-tk="followup"></textarea>
+      <div class="frow"><button class="copybtn" data-copytk="followup">Kopiëren</button><span class="reset1" data-resettk="followup">herstel</span></div>
+
+      <label>Post-aanmelding — nadat iemand zegt dat die zich heeft aangemeld</label>
+      <textarea data-tk="postreg"></textarea>
+      <div class="frow"><button class="copybtn" data-copytk="postreg">Kopiëren</button><span class="reset1" data-resettk="postreg">herstel</span></div>
+    </div>
+  </div>
+  <div id="list"></div>
+</div>
+
+<div class="toast" id="toast"><b>Gekopieerd</b> + afgevinkt</div>
+
+<script>
+const LINK = "join.eduface.me/webinar";
+const TOPIC = `hoe AI-gegenereerde feedback bijdraagt aan betere schrijfvaardigheid én meer kansengelijkheid in het hoger onderwijs`;
+const TOPIC_SHORT = `hoe AI-gegenereerde feedback bijdraagt aan betere schrijfvaardigheid én meer kansengelijkheid`;
+const C = fn => `Hi ${fn}, op 23 juni (10:00-11:00) geef ik samen met Maartje Sijm (De Haagse Hogeschool) een gratis webinar over ${TOPIC_SHORT}. Lijkt je dat interessant? Aanmelden kan hier: ${LINK}. Groet, Jeroen`;
+const WL = fn => `Hi ${fn}, hoe is het? Op 23 juni (10:00-11:00) geef ik samen met Maartje Sijm van De Haagse Hogeschool een webinar over ${TOPIC}. We laten zien hoe studenten de tool in hun schrijfproces gebruiken en wat de eerste resultaten zijn. Lijkt je dat interessant? Dan zou je je hier kunnen aanmelden: ${LINK}. Wij zouden het in ieder geval leuk vinden als je erbij bent. Groet, Jeroen`;
+
+const TEMPLATES = {
+  followup: `Leuk dat we connected zijn! De aanmeldlink voor het webinar op 23 juni (10:00-11:00): https://join.eduface.me/webinar. Tot dan!`,
+  postreg: `Top, leuk [voornaam]!\n\nWe laten samen met de Haagse zien hoe studenten de tool in hun schrijfproces gebruiken en wat de eerste resultaten zijn, sluit denk ik mooi aan op jullie onderwijs.\n\nVoel je vrij om 'm door te sturen naar collega's of afdelingen waar taal- en schrijfonderwijs speelt: https://join.eduface.me/webinar\n\nEn zeg het gerust als je iets wil dat je makkelijk intern kunt delen.`
+};
+
+// Warm eerst (prioriteit), dan koud. Alleen contacten met LinkedIn-URL.
+const DATA = [
+  {fn:"Margot",nm:"Margot van Mulken",og:"Radboud University",t:"warm",url:"https://www.linkedin.com/in/margot-van-mulken-48a68411/"},
+  {fn:"Silvester",nm:"Silvester Draaijer",og:"Vrije Universiteit Amsterdam",t:"warm",url:"https://www.linkedin.com/in/silvester-draaijer-973517/"},
+  {fn:"Carel",nm:"Carel Jansen",og:"University of Groningen",t:"warm",url:"https://www.linkedin.com/in/carel-jansen-7895b75/"},
+  {fn:"Jan",nm:"Jan Hansma",og:"Saxion",t:"warm",url:"https://www.linkedin.com/in/jan-hansma-87bb0a1b/"},
+  {fn:"Onno",nm:"Onno van Duinen",og:"Hogeschool van Arnhem en Nijmegen",t:"warm",url:"https://www.linkedin.com/in/onno-van-duinen-98b65b39/"},
+  {fn:"Eliane",nm:"Eliane Elsen",og:"Hogeschool Leiden",t:"warm",url:"https://www.linkedin.com/in/eliane-elsen-b1a57328/"},
+  {fn:"Arjan",nm:"Arjan van Hartesveldt",og:"Hogeschool Leiden",t:"warm",url:"https://www.linkedin.com/in/arjanvanhartesveldt/"},
+  {fn:"Rint",nm:"Rint Sijbesma",og:"Eindhoven University of Technology",t:"warm",url:"https://www.linkedin.com/in/rint-sijbesma-84347936/"},
+  {fn:"Jan",nm:"Jan Leeuwis",og:"Noorderpoort",t:"warm",url:"https://www.linkedin.com/in/jan-leeuwis-b5990918/"},
+  {fn:"Evelyn",nm:"Evelyn Koeling",og:"Veiligheidsregio Brabant-Zuidoost",t:"warm",url:"https://www.linkedin.com/in/evelyn-koeling-53794978/"},
+  {fn:"Peter",nm:"Peter Rijpkema",og:"University of Amsterdam",t:"warm",url:"https://www.linkedin.com/in/peter-rijpkema-bb325247/"},
+  {fn:"Maria",nm:"Maria Rutgers",og:"ROC Gildeopleidingen",t:"warm",url:"https://www.linkedin.com/in/maria-rutgers-a888745/"},
+  {fn:"Koos",nm:"Koos Winnips",og:"University of Groningen",t:"warm",url:"https://www.linkedin.com/in/winnips/"},
+  {fn:"Martijn",nm:"Martijn van der Heijden",og:"Avans Hogeschool",t:"warm",url:"https://www.linkedin.com/in/martijn-van-der-heijden-5a3a0792/"},
+  {fn:"Pascal",nm:"Pascal Mariany",og:"Onderwijs Orakel",t:"warm",url:"https://www.linkedin.com/in/pascalmariany/"},
+  {fn:"Marieke",nm:"Marieke Streefkerk",og:"Zuyd Hogeschool",t:"warm",url:"https://www.linkedin.com/in/marieke-streefkerk-46b70412/"},
+  {fn:"Samantha",nm:"Samantha Freriks",og:"MBO Rijnland",t:"warm",url:"https://www.linkedin.com/in/samantha-freriks-a29bb980/"},
+  {fn:"Jesca",nm:"Jesca van Petegem-Hellemans",og:"Hogeschool Utrecht",t:"warm",url:"https://www.linkedin.com/in/jescavanpetegem/"},
+  {fn:"Gijs",nm:"Gijs Bloemsaat",og:"Hogeschool van Arnhem en Nijmegen",t:"warm",url:"https://www.linkedin.com/in/gijsbloemsaat/"},
+  {fn:"Volkert",nm:"Volkert van Steijn",og:"Delft University of Technology",t:"warm",url:"https://www.linkedin.com/in/volkert-van-steijn-72b38798/"},
+  {fn:"Jan Willem",nm:"Jan Willem Smelt",og:"ROC Nijmegen",t:"warm",url:"https://www.linkedin.com/in/jwsmelt/"},
+  {fn:"Lenneke",nm:"Lenneke Tielemans",og:"Hogeschool van Arnhem en Nijmegen",t:"warm",url:"https://www.linkedin.com/in/lenneke-tielemans-96649922/"},
+  {fn:"Jeanne",nm:"Jeanne Benschop",og:"Hogeschool van Arnhem en Nijmegen",t:"warm",url:"https://www.linkedin.com/in/jeanne-benschop-b182991b/"},
+  {fn:"Carla",nm:"Carla Stiekema",og:"Hogeschool van Amsterdam",t:"warm",url:"https://www.linkedin.com/in/carla-stiekema-4731748/"},
+  {fn:"Eveline",nm:"Eveline Hoebe",og:"Universiteit Leiden (LACDR)",t:"warm",url:"https://www.linkedin.com/in/evelinehoebe/"},
+  {fn:"Diana",nm:"Diana Klomp",og:"Universiteit Leiden (LACDR)",t:"warm",url:"https://www.linkedin.com/in/diana-klomp-6306742/"},
+  {fn:"Tessa",nm:"Tessa Askamp",og:"Eindhoven University of Technology",t:"koud",url:"https://www.linkedin.com/in/tessa-askamp-87401542/"},
+  {fn:"Irene",nm:"Irene Blankers",og:"Eindhoven University of Technology",t:"koud",url:"https://www.linkedin.com/in/irene-blankers-84965512a/"},
+  {fn:"Sjieuwke",nm:"Sjieuwke Dankert",og:"SURF",t:"koud",url:"https://www.linkedin.com/in/sjieuwke-dankert-6b25a465/"},
+  {fn:"Marc",nm:"Marc Dietzenbacher",og:"VISTA College",t:"koud",url:"https://www.linkedin.com/in/mdietzenbacher/"},
+  {fn:"Yoni",nm:"Yoni Geubbels",og:"Delft University of Technology",t:"koud",url:"https://www.linkedin.com/in/yoni-geubbels-92b01915a/"},
+  {fn:"Ilse",nm:"Ilse Gmelig",og:"Npuls",t:"koud",url:"https://www.linkedin.com/in/ilse-gmelig-37890b9/"},
+  {fn:"Sanne",nm:"Sanne Hartemink",og:"Christelijke Hogeschool Ede",t:"koud",url:"https://www.linkedin.com/in/sanne-hartemink-42380615/"},
+  {fn:"Remko",nm:"Remko Imthorn",og:"Hogeschool Inholland",t:"koud",url:"https://www.linkedin.com/in/remko-imthorn-206b8a4/"},
+  {fn:"Mark",nm:"Mark de Jong",og:"Hogeschool Inholland",t:"koud",url:"https://www.linkedin.com/in/mark-de-jong-405678/"},
+  {fn:"Susan",nm:"Susan Nuijten",og:"Vrije Universiteit Amsterdam",t:"koud",url:"https://www.linkedin.com/in/susannuijten/"},
+  {fn:"Annette",nm:"Annette Peet",og:"Npuls",t:"koud",url:"https://www.linkedin.com/in/annette-peet-b7740a/"},
+  {fn:"Lars",nm:"Lars van der Plank",og:"UMC Utrecht",t:"koud",url:"https://www.linkedin.com/in/lars-van-der-plank-9ab43018/"},
+  {fn:"Anna",nm:"Anna Posthumus Meyjes",og:"Hogeschool Leiden",t:"koud",url:"https://www.linkedin.com/in/anna-de-breij-a5631626/"},
+  {fn:"Ine",nm:"Ine Rens",og:"KU Leuven",t:"koud",url:"https://www.linkedin.com/in/inerens/"},
+  {fn:"Marit",nm:"Marit Rensink",og:"Radboud Universiteit",t:"koud",url:"https://www.linkedin.com/in/marit-rensink-b175006/"},
+  {fn:"Elisabeth",nm:"Elisabeth Rullens",og:"Universiteit van Amsterdam",t:"koud",url:"https://www.linkedin.com/in/elisabeth-rullens-695871120/"},
+  {fn:"Jelle Jan",nm:"Jelle Jan de Schipper",og:"NSPOH",t:"koud",url:"https://www.linkedin.com/in/jelle-jan-de-schipper/"},
+  {fn:"Kristina",nm:"Kristina Skvortsova",og:"NVvP B.V.",t:"koud",url:"https://www.linkedin.com/in/kristina-skvortsova-99a060111/"},
+  {fn:"Nick",nm:"Nick van Breda",og:"Avans Hogeschool",t:"koud",url:"https://www.linkedin.com/in/nickvanbreda/"},
+  {fn:"Martijn",nm:"Martijn van Nieuwenhuizen",og:"Stichting Hogeschool Viaa",t:"koud",url:"https://www.linkedin.com/in/martijn-van-nieuwenhuizen-102b5852/"},
+  {fn:"Leontien",nm:"Leontien van Rossum",og:"SURF",t:"koud",url:"https://www.linkedin.com/in/leontienvanrossum/"},
+  {fn:"Menno",nm:"Menno de Waal",og:"Npuls",t:"koud",url:"https://www.linkedin.com/in/mennodewaal/"},
+  {fn:"Ronald",nm:"Ronald Groenendijk",og:"Hogeschool van Amsterdam",t:"koud",url:"https://www.linkedin.com/in/ronald-groenendijk-4785a0/"},
+  {fn:"Elisa",nm:"Elisa Jochims",og:"Graafschap College",t:"koud",url:"https://www.linkedin.com/in/elisa-jochims/"},
+  {fn:"Frits",nm:"Frits Minderhoud",og:"Hogeschool Leiden",t:"koud",url:"https://www.linkedin.com/in/frits-minderhoud-85007227/"},
+  {fn:"Alexandra",nm:"Alexandra Peters",og:"ROC Nijmegen",t:"koud",url:"https://www.linkedin.com/in/alexandra-peters-8907828/"},
+  {fn:"Mariska",nm:"Mariska Kersjes - van Haeften",og:"Saxion",t:"koud",url:"https://www.linkedin.com/in/mariska-kersjes-van-haeften/"},
+  {fn:"Robin",nm:"Robin Willems",og:"Zuyd Hogeschool",t:"koud",url:"https://www.linkedin.com/in/willemsrobin/"},
+  {fn:"Iwan",nm:"Iwan Wopereis",og:"Open Universiteit Nederland",t:"koud",url:"https://www.linkedin.com/in/iwan-wopereis-48a5a21/"},
+];
+DATA.forEach(d => { if(d.t==="warm"){ d.long=WL(d.fn); d.short=C(d.fn); } else { d.def=C(d.fn); } });
+
+const BATCH = 30;
+const KEY_DONE = "eduface-hhs-li-done-v2";
+const KEY_EDIT = "eduface-hhs-li-edits-v3";
+const KEY_TMPL = "eduface-hhs-li-tmpl-v2";
+let done = new Set(JSON.parse(localStorage.getItem(KEY_DONE) || "[]"));
+let edits = JSON.parse(localStorage.getItem(KEY_EDIT) || "{}");
+let tmpl = Object.assign({}, TEMPLATES, JSON.parse(localStorage.getItem(KEY_TMPL) || "{}"));
+const saveDone = () => localStorage.setItem(KEY_DONE, JSON.stringify([...done]));
+const saveEdits = () => localStorage.setItem(KEY_EDIT, JSON.stringify(edits));
+const saveTmpl = () => localStorage.setItem(KEY_TMPL, JSON.stringify(tmpl));
+
+function autogrow(ta){ ta.style.height="auto"; ta.style.height=(ta.scrollHeight+2)+"px"; }
+
+function render(){
+  // templates
+  document.querySelectorAll("textarea[data-tk]").forEach(ta=>{
+    const k = ta.dataset.tk; ta.value = tmpl[k]; autogrow(ta);
+    ta.addEventListener("input", ()=>{ tmpl[k]=ta.value; saveTmpl(); autogrow(ta); });
+  });
+  document.querySelectorAll("[data-copytk]").forEach(b=> b.addEventListener("click", ()=>copy(tmpl[b.dataset.copytk])));
+  document.querySelectorAll("[data-resettk]").forEach(s=> s.addEventListener("click", ()=>{
+    const k=s.dataset.resettk; tmpl[k]=TEMPLATES[k]; saveTmpl();
+    const ta=document.querySelector(`textarea[data-tk="${k}"]`); ta.value=tmpl[k]; autogrow(ta);
+  }));
+  // list
+  const list = document.getElementById("list"); list.innerHTML="";
+  const nBatches = Math.ceil(DATA.length / BATCH);
+  for(let b=0;b<nBatches;b++){
+    const slice = DATA.slice(b*BATCH, b*BATCH+BATCH);
+    const dn = slice.filter(d=>done.has(d.url)).length;
+    const h=document.createElement("div"); h.className="batch-h";
+    h.innerHTML=`<h2>Batch ${b+1}</h2><span class="bc">${slice.length} berichten · <b id="bc${b}">${dn}/${slice.length}</b> verstuurd</span>`;
+    list.appendChild(h);
+    slice.forEach(d=>list.appendChild(card(d)));
+  }
+  updateProgress();
+}
+
+function card(d){
+  const el=document.createElement("div");
+  el.className="card"+(done.has(d.url)?" done":""); el.dataset.url=d.url;
+  const head=document.createElement("div"); head.className="crow";
+  head.innerHTML=`
+      <div class="chk" title="Afvinken">✓</div>
+      <div class="who"><div class="nm"></div><div class="og"></div></div>
+      <span class="badge ${d.t}">${d.t}</span>
+      <a class="li" target="_blank" rel="noopener">Open profiel ↗</a>`;
+  head.querySelector(".nm").textContent=d.nm;
+  head.querySelector(".og").textContent=d.og;
+  head.querySelector(".li").href=d.url;
+  head.querySelector(".chk").addEventListener("click", e=>{ e.stopPropagation(); mark(d.url,!done.has(d.url)); });
+  el.appendChild(head);
+  if(d.t==="warm"){
+    el.appendChild(block(d,"long","Lang · DM (al connected)",d.long,false));
+    el.appendChild(block(d,"short","Kort · connectieverzoek (max 300)",d.short,true));
+  } else {
+    el.appendChild(block(d,"","",d.def,true));
+  }
+  return el;
+}
+
+function block(d,variant,label,def,limit){
+  const wrap=document.createElement("div"); wrap.className="block";
+  const key=d.url+(variant?"|"+variant:"");
+  wrap.innerHTML=`${label?`<div class="blabel">${label}</div>`:""}<textarea></textarea>`+
+    `<div class="frow"><button class="copybtn">Kopiëren + afvinken</button><span class="reset1">herstel tekst</span><span class="chars"></span></div>`;
+  const ta=wrap.querySelector("textarea");
+  ta.value=(key in edits)?edits[key]:def;
+  const chars=wrap.querySelector(".chars");
+  const upd=()=>{ const n=ta.value.length; chars.textContent=n+" tekens"+(limit?" / 300":""); chars.classList.toggle("over",limit&&n>300); };
+  setTimeout(()=>autogrow(ta),0); upd();
+  ta.addEventListener("input",()=>{ edits[key]=ta.value; saveEdits(); autogrow(ta); upd(); });
+  wrap.querySelector(".copybtn").addEventListener("click",()=>{ copy(ta.value); mark(d.url,true); });
+  wrap.querySelector(".reset1").addEventListener("click",()=>{ delete edits[key]; saveEdits(); ta.value=def; autogrow(ta); upd(); });
+  return wrap;
+}
+
+function mark(url,val){
+  if(val) done.add(url); else done.delete(url); saveDone();
+  const el=document.querySelector(`.card[data-url="${CSS.escape(url)}"]`);
+  if(el) el.classList.toggle("done",val);
+  refreshCounts();
+}
+function refreshCounts(){
+  const nBatches=Math.ceil(DATA.length/BATCH);
+  for(let b=0;b<nBatches;b++){
+    const slice=DATA.slice(b*BATCH,b*BATCH+BATCH);
+    const dn=slice.filter(d=>done.has(d.url)).length;
+    const t=document.getElementById("bc"+b); if(t) t.textContent=`${dn}/${slice.length}`;
+  }
+  updateProgress();
+}
+function updateProgress(){
+  const dn=DATA.filter(d=>done.has(d.url)).length;
+  document.getElementById("pbar").style.width=(dn/DATA.length*100)+"%";
+  document.getElementById("pcount").textContent=`${dn} / ${DATA.length} verstuurd`;
+}
+function copy(text){
+  if(navigator.clipboard && window.isSecureContext){ navigator.clipboard.writeText(text).then(toast,()=>fb(text)); }
+  else fb(text);
+}
+function fb(text){ const ta=document.createElement("textarea"); ta.value=text; ta.style.position="fixed"; ta.style.opacity="0"; document.body.appendChild(ta); ta.select(); try{document.execCommand("copy");toast();}catch(e){} document.body.removeChild(ta); }
+let tt;
+function toast(){ const el=document.getElementById("toast"); el.classList.add("show"); clearTimeout(tt); tt=setTimeout(()=>el.classList.remove("show"),1400); }
+function resetDone(){ if(confirm("Alle vinkjes wissen? (je aangepaste teksten blijven staan)")){ done=new Set(); saveDone(); render(); } }
+
+render();
+</script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+{
+  "slug": "hogeschool-leiden",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_B5XxYK2do8APdJRrzNjjqteej7H2y9Cckd0SJqFWO1h",
+    "naam": "Hogeschool Leiden",
+    "url": "https://app.close.com/lead/lead_B5XxYK2do8APdJRrzNjjqteej7H2y9Cckd0SJqFWO1h/",
+    "lead_status": "Actief",
+    "opportunity_id": null,
+    "fase": null,
+    "fase_type": null,
+    "waarde": null,
+    "valuta": "EUR",
+    "confidence": null,
+    "close_date": null,
+    "eigenaar": "Eduface CRM",
+    "crm_note": "",
+    "contacten": [
+      {
+        "naam": "Groot, Bastiaan",
+        "titel": null,
+        "email": "groot.b@hsleiden.nl",
+        "id": "cont_sKaX3jN8auH4B2ZDKj41qvfa6yD3JDbByHhjVlVCMB1"
+      },
+      {
+        "naam": "Arjan van Hartesveldt",
+        "titel": "Docent/coach e-commerce & digitale marketing",
+        "email": "hartesveldt.van.a@hsleiden.nl",
+        "id": "cont_TNFSWQsuJqArRK1Svsf2hek75brwr8vB3vo8TObPPsK"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_M4OnCWWVVvfhghUeA67PquRB0DPQ4ze9KCcRPo8AmTm",
+        "soort": "meeting",
+        "datum": "2025-09-16",
+        "titel": "Lunch Jeroen + Bastiaan",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "groot.b@hsleiden.nl",
+          "jeroen.van.gessel@eduface.me"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_hgDiWxrBm48WXgAld6mNXgmD6fGoaYjqfd6BnahF7KG",
+        "soort": "meeting",
+        "datum": "2025-11-04",
+        "titel": "Geannuleerd: CE Brightspace en EduFace bespreken",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "groot.b@hsleiden.nl",
+          "heijer.den.j@hsleiden.nl",
+          "jeroen.van.gessel@eduface.me",
+          "seijsener.p@hsleiden.nl"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_RP5pJSDmKcsc1x40EKoM1NalWDsCPJHdW5QU8zte0cN",
+        "soort": "meeting",
+        "datum": "2026-02-03",
+        "titel": "Pilot bespreken met Eduface",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "audhoe.r@hsleiden.nl",
+          "elsen.e@hsleiden.nl",
+          "g2.073@hsleiden.nl",
+          "groot.b@hsleiden.nl",
+          "hartesveldt.van.a@hsleiden.nl",
+          "heijtlager.h@hsleiden.nl",
+          "jeroen.van.gessel@eduface.me",
+          "seijsener.p@hsleiden.nl"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_D3VFRDS4iMLKwRDBNSRjKAIHTwzsk84hVlTqCWnzDZI",
+        "soort": "meeting",
+        "datum": "2026-06-25",
+        "titel": "Lunch met Jeroen / Bastiaan - Stadscafe vd Werf",
+        "duur_min": 90,
+        "status": "completed",
+        "deelnemers": [
+          "groot.b@hsleiden.nl",
+          "jeroen.van.gessel@eduface.me"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      }
+    ],
+    "open_taken": [],
+    "laatste_gesprek": "2026-06-25",
+    "volgende_afspraak": null,
+    "aantal_gehad": 4,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

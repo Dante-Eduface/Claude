@@ -1,0 +1,71 @@
+{
+  "slug": "birmingham-city-university",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_FECcsNLisa2Jeh9h2xu5aUEnpsOHuXaqjWTmeWVjbne",
+    "naam": "Birmingham City University",
+    "url": "https://app.close.com/lead/lead_FECcsNLisa2Jeh9h2xu5aUEnpsOHuXaqjWTmeWVjbne/",
+    "lead_status": "Nurturing",
+    "opportunity_id": null,
+    "fase": null,
+    "fase_type": null,
+    "waarde": null,
+    "valuta": "EUR",
+    "confidence": null,
+    "close_date": null,
+    "eigenaar": "Eduface CRM",
+    "crm_note": "",
+    "contacten": [
+      {
+        "naam": "Prof Marcia Wilson PhD",
+        "titel": "Pro Vice-Chancellor, Education",
+        "email": null,
+        "id": "cont_LHyqeUrLF8jia6EbyMrzEyaQmwl2hf6Do9TRrLudJSa"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_KXTxr43Vyd7DCCUUt4zQa0e7wnrr6fyFM25NP4GprsJ",
+        "soort": "call",
+        "datum": "2026-05-13",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "VM",
+        "transcript_beschikbaar": false,
+        "komend": false
+      }
+    ],
+    "open_taken": [],
+    "laatste_gesprek": "2026-05-13",
+    "volgende_afspraak": null,
+    "aantal_gehad": 1,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

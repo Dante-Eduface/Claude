@@ -1,0 +1,96 @@
+{
+  "slug": "uade",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_uULf7sLlkJ678O7L2ssQUIU3RdkTdhgQS8rshpfFaUS",
+    "naam": "UADE",
+    "url": "https://app.close.com/lead/lead_uULf7sLlkJ678O7L2ssQUIU3RdkTdhgQS8rshpfFaUS/",
+    "lead_status": "Nurturing",
+    "opportunity_id": null,
+    "fase": null,
+    "fase_type": null,
+    "waarde": null,
+    "valuta": "EUR",
+    "confidence": null,
+    "close_date": null,
+    "eigenaar": "Eduface CRM",
+    "crm_note": "",
+    "contacten": [
+      {
+        "naam": "Lucas Cortinez",
+        "titel": "Digital education and innovation manager.",
+        "email": null,
+        "id": "cont_r8c1Z0Adm0EDEDDYnIF4ByBPzv4Lh1gsvHYYgd2Ru7u"
+      },
+      {
+        "naam": "CORTINEZ LUCAS DIEGO",
+        "titel": null,
+        "email": "lcortinez@uade.edu.ar",
+        "id": "cont_hiT8mgqiqyzdoxtTC4Rk7URBY2U8151XDx8fWxg33bX"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_F7wayy41AswFExma6syhAdSw4SScbosS84cIc0DNfS6",
+        "soort": "meeting",
+        "datum": "2026-02-11",
+        "titel": "UADE x Eduface exploratory call",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "lcortinez@uade.edu.ar"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_wNAdcq6JRKkkTBmDqE1RqgZxLaYjxMv5IMEVcMbGjrR",
+        "soort": "meeting",
+        "datum": "2026-08-27",
+        "titel": "Eduface X UADE",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "lcortinez@uade.edu.ar"
+        ],
+        "samenvatting": "- Discussed UADE's expansion into AI tool management and need for transparent, objective evaluation platform to reduce teacher grading subjectivity.\n- Reviewed challenges with existing grading platforms providing generic feedback and inconsistent marking rather than personalized, accurate assessments.\n- Highlighted Eduface's competitive advantage using custom AI model trained specifically on professor feedback instead of generic ChatGPT/Claude models.\n- Agreed on two-week free trial in mid-September using actual UADE exams, contingent on Lucas providing detailed feature requirements list within one week.\n- Clarified UADE aims to select single grading solution provider, with decision escalation to university directory board after pilot results.\n\n### UADE's Current Initiatives and Team Expansion\n- UADE has expanded its team and scope beyond academic projects to include management projects focused on AI and AI tool usage in the university.\n- The institution is piloting a spaced repetition learning tool that started in the second semester beginning in August.\n- UADE is also working with adaptive learning tools as part of their broader educational technology initiatives.\n\n### Evaluation Process Transparency as Primary Objective\n- UADE seeks to make the evaluation process more transparent for students, teachers, and faculty members.\n- The institution wants students to perceive exam corrections as objective and based on content and rubrics rather than teacher subjectivity.\n- UADE is investing significant effort in academic compliance and wants to digitize paper-based exams onto a platform to support compliance team operations.\n\n### Challenges with Current Grading Platforms\n- UADE is currently evaluating three main grading platforms, one from Argentina, one from Portugal, and Eduface.\n- The primary challenge across existing platforms is the inability to simulate teacher correction accurately in terms of feedback and marking consistency.\n- Tested platforms provide generic feedback that is identical across students rather than personalized feedback based on individual student responses and course materials.\n\n### Eduface's Differentiated Approach\n- Eduface developed its own AI model specifically trained for grading and feedback, moving beyond generic ChatGPT and Claude models.\n- The proprietary model was trained with universities in the Netherlands and UK to provide more consistent and accurate feedback matching lecturer standards.\n- Eduface's AI is trained exclusively on professor feedback rather than internet-wide data, resulting in more specific and contextually appropriate evaluations.\n\n### Current Market Position and Language Support\n- Eduface currently has private institutional clients in the United States but is primarily focused on European markets.\n- UADE would be Eduface's first Spanish-language implementation, though the platform has been successfully adapted to Arabic, Swedish, and Nordic languages.\n- Eduface's model operates natively in English and translates effectively to other languages.\n\n### Partnership Examples and Potential Connections\n- Eduface has implemented solutions at universities including Rotabout University in the Netherlands and has medical department clients training doctors.\n- UADE expressed interest in connecting with existing Eduface clients among their US partners: San Ignacio University, Florida International University, Arizona State University, Miami Dade College, and Manhattan College.\n- Jeroen offered to connect UADE with other universities using Eduface to facilitate experience and best practice sharing.\n\n### Proposed Next Steps and Decision Process\n- Lucas will compile a detailed feature requirements list in collaboration with a university colleague piloting the exam project, to be shared within one week.\n- A two-week free trial is scheduled for mid-September when Eduface has capacity and when UADE's first exams are occurring.\n- The trial will test the platform using actual historical exams from one to two courses to evaluate real-world performance with actual teachers and corrections.\n- Lucas is responsible for conducting the pilot test; results will then be escalated to a university directory board for final decision-making.\n- UADE aims to select a single grading solution provider rather than implementing multiple platforms.\n\n### Feature Requirements Focus\n- UADE requires the platform to correct paper-based exams with strong focus on course-specific content, rubrics, and instructional materials.\n- The platform must allow uploading of course texts, rubrics, and subject-specific materials to guide the correction process.\n- Success metrics will be defined by UADE's directory board based on organizational priorities and strategy at the time of evaluation.",
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      }
+    ],
+    "open_taken": [],
+    "laatste_gesprek": "2026-08-27",
+    "volgende_afspraak": null,
+    "aantal_gehad": 2,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

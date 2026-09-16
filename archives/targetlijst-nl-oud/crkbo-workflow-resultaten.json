@@ -1,0 +1,1130 @@
+[
+ {
+  "naam": "Academie voor Mediationopleidingen B.V.",
+  "oordeel": "Nee",
+  "bewijs": "Examinering loopt via een extern landelijk examen, niet via eigen beoordeling. Site: \"Assessment training ter voorbereiding op het landelijke examen\" en diploma leidt tot \"MfN-registermediator\" (www.mediatorworden.nl). Externe instantie examineert -> poort 0 Nee. Opleiding is bovendien kort (6 dagen in 3 weken).",
+  "categorie": "Mediation-opleider"
+ },
+ {
+  "naam": "Agere Vakopleidingen B.V.",
+  "oordeel": "Nee",
+  "bewijs": "Aanbod is transport/verkeer en veiligheid: rijbewijzen C/D/E, Code 95, heftruck/reachtruck, VCA, BHV, EHBO, ADR (www.agere.nl). Valt onder sector-uitsluitingen (rijopleiding/CBR + VCA/BHV/EHBO + heftruck).",
+  "categorie": "Transport/verkeer vakopleider"
+ },
+ {
+  "naam": "Aumm Instituut voor Opleidingen en Persoonlijke Ontwikkeling",
+  "oordeel": "Nee",
+  "bewijs": "Aanbod: \"innerlijk kindwerk | lichaamsgeoriënteerde therapie | systemisch werk & familieopstellingen | geboortewerk\" en Primal Rebirth-opleiding (www.aumm.nl). Valt onder sector-uitsluiting spiritueel/therapie/lichaamswerk.",
+  "categorie": "Spiritueel/therapie-instituut"
+ },
+ {
+  "naam": "DON Vakopleidingen Amsterdam B.V.",
+  "oordeel": "Nee",
+  "bewijs": "Aanbod: rijopleidingen (geregistreerd bij CBR nr. 4153K1), Code 95, veiligheidstrainingen (BHV, heftruck, VCA) (www.donopleidingen.nl). Valt onder sector-uitsluiting rijopleiding/CBR + VCA/BHV/heftruck.",
+  "categorie": "Rij-/veiligheidsvakopleider"
+ },
+ {
+  "naam": "DON Vakopleidingen B.V.",
+  "oordeel": "Nee",
+  "bewijs": "Zelfde bedrijf/website als DON Amsterdam (www.donopleidingen.nl): rijopleidingen via CBR, Code 95, BHV/heftruck/VCA. Sector-uitsluiting rijopleiding + VCA/BHV.",
+  "categorie": "Rij-/veiligheidsvakopleider"
+ },
+ {
+  "naam": "IMKO Vakopleidingen",
+  "oordeel": "Onbekend",
+  "bewijs": "Aanbod: drogisterij, parfumerie, technische handel, beveiliging (www.imko.nl, nu onder Capabel). Er zijn examens (technischehandel.imko.nl/examens.aspx) maar de pagina noemt alleen data/locaties/kosten en niet wie examineert/beoordeelt. Binnen 3 pagina's geen citaat gevonden dat eigen docenten beoordelen -> Onbekend.",
+  "categorie": "Retail-/branchevakopleider"
+ },
+ {
+  "naam": "KEMP Vakopleidingen BV",
+  "oordeel": "Nee",
+  "bewijs": "Presenteert zich als \"KEMP Rijopleidingen\": rijbewijzen auto/motor/bus/vrachtauto/taxi + Code 95, met verwijzing naar CBR en RDW (www.kemp.eu). Sector-uitsluiting rijopleiding/CBR.",
+  "categorie": "Rijopleider"
+ },
+ {
+  "naam": "'t WEB Vakopleidingen VoF",
+  "oordeel": "Nee",
+  "bewijs": "Arbo-/veiligheidsopleider; trainingen \"bereiden deelnemers voor op het VCA Basis-, VOL- of VIL-VCU-examen\" (tweb.nl/vca). Extern VCA-examen + sector-uitsluiting VCA/veiligheid.",
+  "categorie": "Veiligheids-/Arbo-opleider"
+ },
+ {
+  "naam": "VDH Onderwijs & Opleidingen",
+  "oordeel": "Onbekend",
+  "bewijs": "Geen website in de CSV en geen vindbare bedrijfsinformatie via zoeken op \"VDH Onderwijs & Opleidingen Maastricht\". Niet te verifiëren -> Onbekend.",
+  "categorie": "Onbekend (geen website)"
+ },
+ {
+  "naam": "3Masters Opleidingen",
+  "oordeel": "Ja",
+  "bewijs": "3Masters neemt zelf examens af en beoordeelt: BOTO 1-pagina vermeldt \"Exam via MS Teams • Surveillant from 3Masters Opleidingen\", \"Results within 3 working days\", \"Certificate issued within 24 hours\" (www.3masters.nl/opleiding/boto-1/). MOTO-eindtoets bevat een \"layered case study & presentation\" die 3Masters zelf beoordeelt. Financiële/trust-vakopleiding, langlopend (BOTO 1 ca. 2 maanden, MOTO 56 PE-points over meerdere maanden). Poort 0 Ja, poort 0b Ja.",
+  "categorie": "Financieel/trust-sector vakopleider"
+ },
+ {
+  "naam": "9093 opleidingen",
+  "oordeel": "Nee",
+  "bewijs": "Aanbod: BHV, VCA, EHBO, levensreddend handelen, heftruck/reachtruck/logistiek, plus zorgtrainingen (medicatie) (9093opleidingen.nl). Sector-uitsluiting VCA/BHV/EHBO + heftruck.",
+  "categorie": "Veiligheids-/logistiek-opleider"
+ },
+ {
+  "naam": "A plus opleidingen",
+  "oordeel": "Nee",
+  "bewijs": "Leefstijlcoach/health-opleider. Op de leefstijlcoach-pagina: \"Er vindt een landelijk examen plaats\" (aplusopleidingen.nl/opleidingen/leefstijlcoach/). De kwalificerende toets is een landelijk (extern) examen -> poort 0 Nee. Sector health/coaching bovendien borderline.",
+  "categorie": "Leefstijl/health-opleider"
+ },
+ {
+  "naam": "AAG Opleidingen bv",
+  "oordeel": "Nee",
+  "bewijs": "Aanbod: masterclasses/trainingen zorgfinanciën (zorgverkoop, BTW in de zorg, payroll, Lean, facility), overwegend dag- en halfdagprogramma's 9:30-16:30 (www.aag.nl/opleidingen). Losse trainingsdagen zonder beoordeeld geschreven werk / onvoldoende volume -> poort 0b Nee.",
+  "categorie": "Zorg-finance trainingen"
+ },
+ {
+  "naam": "Academie SAGHO t.h.o.d.n. Cell Care Academy",
+  "oordeel": "Onbekend",
+  "bewijs": "Natuurgeneeskunde/orthomoleculair/homeopathie-opleider (sagho.nl). Zoekresultaten suggereren eigen eindexamen bij SAGHO + beoordeeld huiswerk (min. 5,5, eigen diploma), maar de eigen site (sagho.nl/examens, /examenreglement, homepage) geeft telkens HTTP 403, dus geen letterlijk citaat te verkrijgen. Sector alternatieve geneeskunde is bovendien borderline uitsluiting. Zonder citaat -> Onbekend.",
+  "categorie": "Natuurgeneeskunde-opleider"
+ },
+ {
+  "naam": "ACM Opleidingen B.V.",
+  "oordeel": "Nee",
+  "bewijs": "Rijschool + BHV/VCA + zorgtrainingen. Zelf: 'ACM Opleidingen biedt bedrijfshulpverlening-, zorg- en rijopleidingen'. VCA-examens gaan los ('VCA Basis | Los examen'), rijopleiding via CBR. Valt onder sector-uitsluitingen (rijopleiding, VCA/BHV). Bron: acmopleidingen.nl (courses/bhv-opleidingen).",
+  "categorie": "Rijschool + BHV/VCA/zorg-trainingen"
+ },
+ {
+  "naam": "Advancezorgopleidingen",
+  "oordeel": "Nee",
+  "bewijs": "Verzorgt '(bij)scholingen voor MBO en HBO opgeleide zorgverleners' en 'BIG-scholingen ter voorbereiding op BIG-(her)registratie', V&VN erkend. Losse bij-/nascholingen zorg, geen langlopend traject met eigen beoordeeld geschreven werk. Bron: advancezorgopleiding.nl / LinkedIn Advance Zorgopleidingen.",
+  "categorie": "Bij-/nascholing zorg (V&VN)"
+ },
+ {
+  "naam": "Ananta Opleidingen",
+  "oordeel": "Nee",
+  "bewijs": "Holistisch coach/therapeut-opleiding, kernwoorden 'energiewerk, oude wijsheid, intuitie, transformatie'. Valt onder sector-uitsluiting spiritueel/coaching. Bron: ananta.nl / snro-instituut.nl.",
+  "categorie": "Holistisch/spiritueel coach-therapeut"
+ },
+ {
+  "naam": "Apollo Opleidingen t.h.o.d.n. Untis-Opleidingen",
+  "oordeel": "Nee",
+  "bewijs": "Softwaretraining: 'end-user training for all Untis modules' (roostersoftware). Losse cursussen software zonder beoordeeld geschreven werk. Bron: untopa.eu / apollo-opleidingen.nl.",
+  "categorie": "Softwaretraining (Untis roostering)"
+ },
+ {
+  "naam": "Arnold Beumer Beroepsopleidingen",
+  "oordeel": "Nee",
+  "bewijs": "'training institute where you can get all training courses to become a driving instructor' + WRM-bijscholingen en EHBO. Valt onder sector-uitsluiting verkeer/rijopleiding + EHBO. Bron: abberoepsopleidingen.nl.",
+  "categorie": "Rijinstructeur-opleiding (WRM)"
+ },
+ {
+  "naam": "Arnoldi Opleidingen",
+  "oordeel": "Nee",
+  "bewijs": "Post-academische nascholingscursussen schematherapie/CGT voor reeds gekwalificeerde therapeuten ('basis, vervolg, nascholing & groepsleertherapie'). Nascholing zonder eigen beoordeeld eind-schrijfwerk. Bron: arnoldiopleidingen.nl / schematherapie.nl.",
+  "categorie": "Nascholing schematherapie (therapeuten)"
+ },
+ {
+  "naam": "Art of Life - Opleidingen en trainingen",
+  "oordeel": "Nee",
+  "bewijs": "'Non-dualiteit en Zelfinzicht', 'combinatie van spiritualiteit en psychologie', jaartraining non-dualiteit. Valt onder sector-uitsluiting spiritueel. Bron: artoflife.nu.",
+  "categorie": "Spiritueel/non-dualiteit training"
+ },
+ {
+  "naam": "Ascendens Opleidingen",
+  "oordeel": "Nee",
+  "bewijs": "'educational institute in the field of acute care, offering BHV, EHBO, BLS ALS, EHBSO, EHBO-K, and VCA training'. Valt onder sector-uitsluiting VCA/BHV/EHBO. Bron: ascendens.nl / anvda.nl.",
+  "categorie": "BHV/EHBO/acute zorg"
+ },
+ {
+  "naam": "AS-opleidingen B.V.",
+  "oordeel": "Ja",
+  "bewijs": "HBO/post-hbo (CPION) vakopleiding ambtelijk secretaris + adviseur medezeggenschap met eigen praktijkopdrachten en eindopdracht. Letterlijk citaat: 'ruim 120 contacturen (klassikaal) en in totaal aantal circa 80 studie-uren, exclusief praktijkopdrachten'. De opleiding wordt afgesloten met een eindopdracht die met minimaal een voldoende moet worden behaald voor het CPION-diploma; CPION is enkel certificerend, de instelling beoordeelt zelf. URL: https://www.as-opleidingen.nl/opleidingen/hbo-vakopleiding-ambtelijk-secretaris/ (+ /erkende-opleiding-tot-ambtelijke-secretaris-en-adviseur-medezeggenschap/). Poort 0b: langlopend (120 contacturen). ",
+  "categorie": "HBO/post-hbo vakopleiding medezeggenschap"
+ },
+ {
+  "naam": "ATS opleidingen",
+  "oordeel": "Nee",
+  "bewijs": "'ATS massageopleidingen', 'providing massage training since 1989', 21+ massagecursussen. Valt onder sector-uitsluiting massage. Bron: atsopleidingen.nl/opleidingen.",
+  "categorie": "Massage-opleidingen"
+ },
+ {
+  "naam": "Autonoomopleidingen",
+  "oordeel": "Onbekend",
+  "bewijs": "Website toont alleen 'Coming soon. We werken aan een vernieuwde website.' Geen inhoud over opleidingen of beoordeling te vinden. Bron: autonoomopleidingen.nl.",
+  "categorie": "Onbekend (site offline)"
+ },
+ {
+  "naam": "AVM Opleidingen",
+  "oordeel": "Onbekend",
+  "bewijs": "Digitale marketing/online-opleidingen, ca. 10 weken met praktijkopdrachten. Diploma loopt via partner NTI ('erkend HBO diploma via samenwerkingspartner NTI'), waardoor onduidelijk is of eigen docenten of NTI het werk beoordeelt. Geen citaat over eigen beoordeling gevonden. Bron: avmopleidingen.nl.",
+  "categorie": "Digitale marketing-opleidingen"
+ },
+ {
+  "naam": "AFN Instructor Training B.V. h/o EFAA. opleidingen",
+  "oordeel": "Nee",
+  "bewijs": "EFAA (voorheen AFN): fitnesstrainer, personal trainer, groepsles + CPR/AED-certificering. 'before doing the exam, you need proof of a current hands-on CPR/AED certification'; fitnessexamens via NL Actief. Valt onder sector-uitsluiting fitness/EHBO. Bron: efaa.nl.",
+  "categorie": "Fitness/personal trainer + CPR"
+ },
+ {
+  "naam": "Ayat verkeersopleidingen",
+  "oordeel": "Nee",
+  "bewijs": "Verkeersopleiding, examinering via CBR. Valt onder sector-uitsluiting rijopleiding/verkeer. Bron: ayat.nl (naam + CSV-vermelding 'verkeersopleidingen').",
+  "categorie": "Verkeers-/rijopleiding"
+ },
+ {
+  "naam": "Bakker Computer Opleidingen",
+  "oordeel": "Nee",
+  "bewijs": "Aanbod bestaat uit korte ICT-trainingen; op de site staan cursussen als '1-daagse' en '2-daagse'. Langste programma < 2 weken (poort 0b, onvoldoende volume) en geen beoordeeld langlopend schriftelijk werk. Bron: www.bakkercomputeropleidingen.nl (homepage/trainingsoverzicht).",
+  "categorie": "ICT/computertrainingen (losse dagcursussen)"
+ },
+ {
+  "naam": "Basic Trust Opleidingen B.V.",
+  "oordeel": "Onbekend",
+  "bewijs": "Post-hbo trainingen voor jeugdzorgprofessionals (o.a. schematherapie). Langlopend bevestigd: 'Vier dagen van 10.00 tot 17.00 uur met 2-3 weken ertussen' (basictrust.com/training/schematherapie-basis/). Maar geen letterlijk citaat gevonden over wie het werk beoordeelt/hoe getoetst wordt -> per bewijsregel geen Ja. Kandidaat om na te bellen.",
+  "categorie": "Post-hbo GGZ/jeugdzorg nascholing"
+ },
+ {
+  "naam": "Bax Beroepsopleidingen BV",
+  "oordeel": "Nee",
+  "bewijs": "Website www.baxverkeersopleidingen.nl -> verkeers-/rijopleiding. Sector-uitsluiting (rijopleiding/verkeer, examinering via CBR/CCV).",
+  "categorie": "Verkeers-/rijopleiding"
+ },
+ {
+  "naam": "Beldman Opleidingen",
+  "oordeel": "Ja",
+  "bewijs": "'Theoretische kennis en vaardigheden worden gedurende de cursus getoetst.' en 'Cursisten ontvangen een certificaat indien zij voldoende aanwezig zijn geweest en de cursus met goed gevolg hebben afgerond.' De docenten voeren de toetsing zelf uit (geen externe exameninstantie). Langlopend traject: tien cursusdagen + negen tussentijdse online-modules, 100 werkuren. URL: https://beldmanopleidingen.nl/cursussen/basiscursus-cognitieve-gedragstherapie-cgt-100-uur/",
+  "categorie": "CGT-nascholing voor GGZ-professionals (VGCt-geaccrediteerd)"
+ },
+ {
+  "naam": "Bender Opleidingen B.V.",
+  "oordeel": "Onbekend",
+  "bewijs": "Bender Academie: trainingen/traineeships voor het sociaal domein (VVE, Participatiewet). Geen citaat over beoordeling van schriftelijk werk of over wie examineert; duur onduidelijk. Bron: www.bendergroep.nl (Academie).",
+  "categorie": "Trainingen sociaal domein / overheid"
+ },
+ {
+  "naam": "BLOEI Opleidingen",
+  "oordeel": "Onbekend",
+  "bewijs": "'Opleidingen voor managers en ondernemers', leiderschap/coaching, '70% praktijk'. Geen bewijs van beoordeeld schriftelijk werk of examinering. Bron: www.bloeiopleidingen.nl.",
+  "categorie": "Management-/leiderschaps- en coachingtrainingen"
+ },
+ {
+  "naam": "Bloemzaad Verkeersopleidingen B.V.",
+  "oordeel": "Nee",
+  "bewijs": "Naam + www.bloemzaad.nl -> verkeersopleidingen. Sector-uitsluiting (rijopleiding/verkeer, externe examinering CBR/CCV).",
+  "categorie": "Verkeers-/rijopleiding"
+ },
+ {
+  "naam": "BLOM Beroepsopleidingen bv",
+  "oordeel": "Nee",
+  "bewijs": "Rijschool + VCA/heftruck. Rijexamen bij CBR ('de praktijktoets wordt afgenomen op een van de CBR-examenlocaties'), VCA levert extern PBNA-certificaat. Meerdere sector-uitsluitingen (rijopleiding, VCA, heftruck) + externe examinering. Bron: CBR-rijscholenregister + blomopleidingen.nl/vca.",
+  "categorie": "Rijschool + VCA/heftruck"
+ },
+ {
+  "naam": "Bodymind Opleidingen",
+  "oordeel": "Onbekend",
+  "bewijs": "'Opleidingsinstituut voor Lichaamsgeoriënteerde Psychotherapie', deeltijd hbo-niveau; opzet 22 lesdagen + 1 examendag (langlopend, eigen examen). Grenst aan de lichaamswerk-uitsluiting en geen letterlijk beoordelingscitaat van hun eigen site (homepage 403). Bron: opleiding-info.nl/bodymind-opleidingen.",
+  "categorie": "Lichaamsgeoriënteerde psychotherapie-opleiding"
+ },
+ {
+  "naam": "Boekhoudopleidingen Balans",
+  "oordeel": "Nee",
+  "bewijs": "Zelfstudie boekhouden; docent beoordeelt wel controle-opgaven, maar de diploma's (Praktijkdiploma Boekhouden, Moderne Bedrijfsadministratie) worden extern geexamineerd door de Nederlandse Associatie voor Examinering -> poort 0 Nee. Bovendien 'Je kiest je eigen tempo' (zelfstudie, geen vast langlopend traject). Bron: www.boekhoudopleiding.nl.",
+  "categorie": "Boekhoud-zelfstudie (extern diploma-examen)"
+ },
+ {
+  "naam": "Boitelle Opleidingen B.V.",
+  "oordeel": "Nee",
+  "bewijs": "www.boitelle.nl presenteert 'Boitelle HR Proactief', een datagedreven aanpak voor verzuimreductie (HR-consultancy). Geen opleiding met beoordeeld schriftelijk werk van lerenden. Bron: www.boitelle.nl.",
+  "categorie": "HR-/verzuim-consultancy (geen beoordeeld cursuswerk)"
+ },
+ {
+  "naam": "Bolwerk Opleidingen",
+  "oordeel": "Onbekend",
+  "bewijs": "Basiscursus CGT, VGCt-geaccrediteerd, langlopend bevestigd ('15 opleidingsdagen en een tussenles van in totaal 100 contacturen'). Maar de pagina noemt alleen aanwezigheids-/huiswerkeisen, geen letterlijk citaat over wie het werk beoordeelt/hoe getoetst -> per bewijsregel geen Ja. URL: https://www.bolwerkopleidingen.nl/opleidingen/Basiscursus_Cognitieve_Gedragstherapie/",
+  "categorie": "CGT-nascholing voor GGZ-professionals (VGCt-geaccrediteerd)"
+ },
+ {
+  "naam": "BouwSchool Breda Opleidingen |BV",
+  "oordeel": "Nee",
+  "bewijs": "Praktijkopleidingen bouwvakken (timmeren, metselen, tegelzetten, bouwmonteur). Praktijkgericht, geen beoordeeld schriftelijk werk; toetsing van vakvaardigheden. Geen fit met AI-feedback op geschreven werk. Bron: www.bouwschoolbreda.nl.",
+  "categorie": "Praktijkopleiding bouwvakken (MBO-achtig, hands-on)"
+ },
+ {
+  "naam": "Braakman - van der Hooning Opleidingsinstituut voor Traumaseksuologie",
+  "oordeel": "Nee",
+  "bewijs": "Instituut sluit: 'i.v.m. pensionering sluiten wij ons opleidingsinstituut'; alleen lopende groepen worden afgerond. Geen levensvatbare prospect. Bron: www.braakmanvanderhooning.nl.",
+  "categorie": "Traumaseksuologie-opleiding (sluit wegens pensionering)"
+ },
+ {
+  "naam": "Brandweeropleidingen Noord",
+  "oordeel": "Nee",
+  "bewijs": "Brandweeropleider (BON, locatie Wijster). Opleidingen en examens worden landelijk ontwikkeld door en de diplomering loopt via het NIPV (voorheen IFV): 'Vanaf 2020 zijn alleen door het NIPV gecertificeerde opleidingsinstituten... bevoegd om NIPV-toetsen en examens voor diplomering te organiseren' (nipv.nl/examens). Externe examinering + veiligheidssector = buiten ICP.",
+  "categorie": "Brandweer-/veiligheidsopleider, extern geexamineerd (NIPV/IFV)"
+ },
+ {
+  "naam": "Breederzorg Thuiszorg & Breederzorg Opleidingen B.V.",
+  "oordeel": "Ja",
+  "bewijs": "'Deze zijn officiele en wettelijk erkende BBL MBO opleidingen bij DUO en zijn voorzien van een CREBO nummer' (https://www.breederzorg.nl/opleidingen/) en 'Zowel de basisvakken als de keuzedelen, sluit je af met een examen' (https://www.breederzorg.nl/opleidingen/verpleegkundige/). Erkende MBO-instelling met eigen CREBO examineert zelf via eigen examencommissie. Verpleegkundige nv4 duurt 24 maanden -> ruim langlopend (poort 0b Ja).",
+  "categorie": "Erkende particuliere BBL MBO-zorgopleider (helpende/verzorgende/verpleegkundige)"
+ },
+ {
+  "naam": "BTSW Opleidingen",
+  "oordeel": "Nee",
+  "bewijs": "Psychologen-/orthopedagogenpraktijk die training en coaching biedt en universitair opgeleide psychologen begeleidt in praktijkervaring: 'BTSW biedt studenten (ortho)pedagogiek en psychologie aan de universiteit de mogelijkheid praktijkervaring op te doen' (https://www.btsw.nl/beroepscode-en-kwaliteit/). Geen diploma-opleiding met beoordeeld geschreven werk of eigen examencommissie; leans coach-/hulpverleningspraktijk.",
+  "categorie": "Psychologen-/coachpraktijk met training/coaching"
+ },
+ {
+  "naam": "Capgemini Educational Services BV (Capgemini Academy)",
+  "oordeel": "Nee",
+  "bewijs": "IT-certificeringstrainingen. Examens worden extern afgenomen bij certificeringsinstituten: 'Capgemini Academy's exams are all AnyTime AnyPlace, taken directly at the certification exam institute' en samenwerking met EXIN, PeopleCert, APMG, Microsoft (academy.capgemini.com/insights/exams). Externe examinering = poort 0 Nee.",
+  "categorie": "IT-trainingsaanbieder, externe certificering (EXIN/PeopleCert)"
+ },
+ {
+  "naam": "CardioVasculair Onderwijs Instituut",
+  "oordeel": "Nee",
+  "bewijs": "Medisch onderwijsinstituut (opgericht door NVVC/NHI/Hartstichting) voor nascholing van cardiologen/paramedici en het landelijke AIOS-curriculum. Beoordeling van AIOS gebeurt via de opleidingsgroep in de ziekenhuizen (KPB's, portfolio, 'judgment of the training group'), niet door CVOI zelf; nascholing = losse cursusdagen zonder beoordeeld geschreven werk (nvvc.nl/CVOI; medischescholing.nl). Geen fit.",
+  "categorie": "Medisch nascholings-/opleidingsinstituut (cardiologie)"
+ },
+ {
+  "naam": "CardioVasculair Onderwijs Instituut",
+  "oordeel": "Nee",
+  "bewijs": "Duplicaat-check overslaan; zie regel hierboven. (Deze rij niet gebruiken.)",
+  "categorie": "n.v.t."
+ },
+ {
+  "naam": "Centrum Hecht Opleidingen",
+  "oordeel": "Onbekend",
+  "bewijs": "Biedt MBT-therapiecursussen en supervisie voor professionals (MBT-A/K, Family-Ties, focusing) - https://www.centrumhechtopleidingen.nl. Site vermeldt geen examinering, beoordeling of examencommissie; niet vast te stellen wie beoordeelt of er beoordeeld geschreven werk is. Binnen 3 pagina's geen uitsluitsel.",
+  "categorie": "Post-academische therapieopleider (MBT), voor professionals"
+ },
+ {
+  "naam": "Collewijn/Mulder opleidingen",
+  "oordeel": "Nee",
+  "bewijs": "Geen website; KvK 54927420, SBI 85599 overig onderwijs. Aanbod = Voice Dialogue, Playful Coaching, Voicedrama voor trainers/coaches/therapeuten, gerund door Berry Collewijn en Lex Mulder (companyinfo.nl; berrycollewijn.nl; lex-mulder.nl). Coach-/trainerspraktijk zonder beoordeeld geschreven werk of eigen examinering.",
+  "categorie": "Coaching-/Voice-Dialogue-opleider voor coaches"
+ },
+ {
+  "naam": "Color Me Opleidingsinstituut",
+  "oordeel": "Nee",
+  "bewijs": "Site maaikekerstens.nl biedt spiritueel/holistisch aanbod: reiki, engelenmedium, chakra-/kleurentherapie, edelsteentherapie, als eenmanszaak (https://www.maaikekerstens.nl). Valt onder sector-uitsluiting spiritueel/paranormaal en eenmanszaak zonder tweede beoordelaar.",
+  "categorie": "Spiritueel/holistisch opleider (eenmanszaak)"
+ },
+ {
+  "naam": "Condor Arnhem - Opleidingen & Trainingen B.V.",
+  "oordeel": "Nee",
+  "bewijs": "Geen website in CSV; condorarnhem-ot.nl toont gespecialiseerde beveiligings-/veiligheidstrainingen (security, wapens & munitie, multidisciplinair/scenariotrainen, security awareness). Instructeurs 'internally trained and certified'. Praktijkgerichte trainingen zonder beoordeeld geschreven werk of eigen diploma-examinering; security-sector.",
+  "categorie": "Beveiligings-/veiligheidstrainer"
+ },
+ {
+  "naam": "Conducto Opleidingen BV",
+  "oordeel": "Ja",
+  "bewijs": "Post-hbo Inkoop & Aanbesteden. Eigen docenten beoordelen ingeleverd werk: 'Tijdens de leergang worden twee huiswerkopdrachten ingeleverd voor een cijfer' en afsluiting met 'een digitaal openboekexamen van drie uur' (programmabeschrijving Conducto via https://inkoopjobs.nl/opleidingen/post-hbo-inkoop-aanbesteden-2/). Conducto neemt zelf het examen af; PHBO-stichting valideert alleen het diploma. Duur: 7 lesdagen over 5-8 maanden -> poort 0b Ja.",
+  "categorie": "Particuliere post-hbo opleider (inkoop & aanbesteden)"
+ },
+ {
+  "naam": "Corael Opleidingen B.V.",
+  "oordeel": "Onbekend",
+  "bewijs": "Opleider in Transactionele Analyse, counseling & coaching met practitioner- en masterprogramma's (langlopend) - https://www.corael.nl. Site geeft geen expliciete tekst over wie beoordeelt of over beoordeeld geschreven werk/eigen examinering; TA-certificering loopt deels via externe boards. Geen citaat te vinden -> Onbekend.",
+  "categorie": "TA-/coaching-/counselingopleider"
+ },
+ {
+  "naam": "Cosmo Opleidingen",
+  "oordeel": "Nee",
+  "bewijs": "wearecosmo is een MBO-onderwijspartner in toerisme/entertainment/hospitality die 'MBO-scholen ondersteunt met praktijkgerichte en theoretische vakken' en studenten naar stages begeleidt (wearecosmo.nl/mbo-opleidingen). Examinering/diplomering ligt bij de bekostigde MBO-school, niet bij Cosmo zelf -> poort 0 Nee.",
+  "categorie": "MBO-onderwijspartner (toerisme/entertainment)"
+ },
+ {
+  "naam": "D&M Opleidingen",
+  "oordeel": "Nee",
+  "bewijs": "Aanbod = pedicure, nagelstyling, schoonheidsspecialist, voetreflexologie (https://www.dmopleidingen.nl). Valt onder sector-uitsluiting nagelstyling/schoonheid; beauty-examens lopen doorgaans via externe branche-examenbureaus.",
+  "categorie": "Beauty-/pedicure-/nagelstyling-opleider"
+ },
+ {
+  "naam": "Da Vinci Opleidingen B.V.",
+  "oordeel": "Onbekend",
+  "bewijs": "Geen website in CSV. Zoekresultaten leveren vrijwel alleen het bekostigde ROC Da Vinci College op (geen particuliere opleider); de private 'Da Vinci Opleidingen B.V.' in Dordrecht is daarvan niet te onderscheiden en aanbod/examinering is niet te verifieren binnen 3 pagina's.",
+  "categorie": "Onbekende particuliere opleider (niet verifieerbaar)"
+ },
+ {
+  "naam": "Daska Opleidingen bv",
+  "oordeel": "Onbekend",
+  "bewijs": "Geen website in CSV; via daska.nl/springest blijkt B2B-trainer in procesmanagement, kwaliteitsmanagement, Lean Six Sigma en performance management (klassikaal/e-learning, max 12 deelnemers). Geen informatie gevonden over eigen beoordeeld geschreven werk; Lean Six Sigma-belts worden doorgaans extern geëxamineerd. Beoordeling niet te bevestigen binnen 3 bronnen. Bron: https://www.daska.nl/trainingen-2/",
+  "categorie": "B2B kwaliteits-/procesmanagement & Lean Six Sigma trainingen"
+ },
+ {
+  "naam": "DBC Opleidingen B.V.",
+  "oordeel": "Nee",
+  "bewijs": "Trainer in het domein zorg & veiligheid; docenten uit politie, ambulance en defensie ('specialisten die maatwerktrainingen kunnen bieden', dbc-sneek.nl). Beveiligingsopleidingen worden in NL extern geëxamineerd door SVPB, en het gaat om korte trainingen. Externe examinering + sector veiligheid = buiten ICP. Bron: https://www.dbc-sneek.nl",
+  "categorie": "Zorg- & veiligheidstrainingen / beveiliging"
+ },
+ {
+  "naam": "De Broedplaats, opleidingen psychosynthese",
+  "oordeel": "Ja",
+  "bewijs": "Eigen geaccrediteerde beroepsopleiding (post-HBO counselor/therapeut) met eigen beoordeeld geschreven werk. Citaat jaar 2: 'De kwaliteiten om een casusbeschrijving te maken waarin eigen proces en praktijkervaring samen komen' en 'Groeps- en persoonlijke verslagen', met '2 stages met proefcliënten (10 sessies per cliënt)'. Langlopend: '21 lesdagen, 2 dagen per maand op vrijdag en zaterdag', onderdeel van 3-jarig traject. Eigen (geaccrediteerd) diploma, geen extern exameninstituut. URL: https://broedplaats.academy/jaar2/",
+  "categorie": "Psychosynthese counselor/therapeut opleiding (post-HBO)"
+ },
+ {
+  "naam": "De Droomsmidse: Jolijn Hendriks Opleidingen",
+  "oordeel": "Nee",
+  "bewijs": "Solo coachpraktijk gerund door één opleider (kindercoach- en gezinscoach-opleiding). Eenmanszaak/coachpraktijk zonder tweede beoordelaar valt buiten ICP. Bron: https://www.jolijnhendriks.nl",
+  "categorie": "Kinder-/gezinscoach opleiding, eenmanszaak"
+ },
+ {
+  "naam": "De Groot Verkeersopleidingen",
+  "oordeel": "Nee",
+  "bewijs": "Rijopleiding/verkeer (sector-uitsluiting, examinering via CBR/CCV). Bron: www.degrootverkeersopleidingen.nl",
+  "categorie": "Verkeers-/rijopleiding"
+ },
+ {
+  "naam": "De Kleine Parel Opleidingsinstituut B.V.",
+  "oordeel": "Nee",
+  "bewijs": "Aanbieder van holistische, natuurgerichte trainingen, workshops en praktijkdagen rond Reflexintegratie en breinontwikkeling voor professionals; erkend/geaccrediteerd via externe registers (CRKBO, NRTO, GAT/KTNO). Losse trainingsdagen/workshops in holistische hoek, geen eigen langlopend beoordeeld geschreven traject aangetroffen. Bron: https://ktno.nl/opleider/de-kleine-parel-opleidingsinstituut/ en https://www.dekleineparel.nl/",
+  "categorie": "Holistische bijscholing reflexintegratie/breinontwikkeling"
+ },
+ {
+  "naam": "De Roos Opleidingen",
+  "oordeel": "Onbekend",
+  "bewijs": "Langlopende opleiding tot Psychosociaal Registertherapeut/Registercounsellor met bachelorfase (240 EC), christelijke grondslag. Sterke ICP-indicatie (eigen therapieschool), maar op de site + zoekopdracht geen letterlijk citaat gevonden over wie scriptie/casuïstiek beoordeelt of over de duur. Zonder citaat = Onbekend. Bron: https://www.deroosopleidingen.nl",
+  "categorie": "Psychosociale therapie/counseling opleiding"
+ },
+ {
+  "naam": "De School voor Transitie Opleidingen B.V.",
+  "oordeel": "Onbekend",
+  "bewijs": "Trainings- en coachingsinstituut voor leiderschap, teamontwikkeling, coaching (secure base coachen) en persoonlijke ontwikkeling. Geen informatie gevonden over beoordeeld geschreven werk, examinatoren of duur; coaching/leiderschapstrajecten zijn doorgaans ervaringsgericht zonder beoordeelde schrijfopdrachten. Beoordeling niet te bevestigen. Bron: https://www.deschoolvoortransitie.nl",
+  "categorie": "Leiderschaps- & coachinginstituut"
+ },
+ {
+  "naam": "De Weerd Verkeersopleidingen B.V.",
+  "oordeel": "Nee",
+  "bewijs": "Rijopleiding/verkeer (sector-uitsluiting, examinering via CBR/CCV). Bron: www.deweerd.net",
+  "categorie": "Verkeers-/rijopleiding"
+ },
+ {
+  "naam": "Dek Verkeersopleidingen",
+  "oordeel": "Nee",
+  "bewijs": "Rijopleiding/verkeer (sector-uitsluiting, examinering via CBR/CCV). Bron: www.dek.nl",
+  "categorie": "Verkeers-/rijopleiding"
+ },
+ {
+  "naam": "DIBO beroepsopleidingen BV",
+  "oordeel": "Nee",
+  "bewijs": "Rijschool + logistieke certificeringen (heftruck/reachtruck/ladingzekeren) + veiligheidstrainingen (VCA, BHV) + Code 95. Meerdere sector-uitsluitingen (verkeer/transport/heftruck/VCA/BHV), externe examinering. Bron: https://www.dibo-emmen.nl",
+  "categorie": "Rijschool + logistiek/heftruck + VCA/BHV"
+ },
+ {
+  "naam": "Dompvloet Opleidingen",
+  "oordeel": "Nee",
+  "bewijs": "Opleider in administratie, boekhouden (Praktijkdiploma Boekhouden PDB), automatisering, secretariaat en typcursussen. Examinering loopt via externe exameninstantie (Nederlandse Associatie voor Examinering / Associatie voor Praktijkexamens), dus geen eigen beoordeling. Bron: https://www.springest.nl/dompvloet-opleidingen/praktijkdiploma-boekhouden en www.dompvloet.nl",
+  "categorie": "Boekhoud-/administratie-/typeopleidingen"
+ },
+ {
+  "naam": "Droomritme Opleidingen BV",
+  "oordeel": "Ja",
+  "bewijs": "Eigen CRKBO-beroepsopleiding tot Droomritmecoach (beschermde titel/methode) met eigen toetsing en examinering. Kennisblokken worden afgesloten met een kennistoets, praktijkblokken met een (schriftelijk/toepasselijk) examen; citaat: 'gratis herkansing bij kennistoetsen en praktijkexamens (1x per examen)'. Langlopend: 'een jaar lang aan de slag (sneller kan ook)'. Eigen certificering, geen extern exameninstituut. URL: https://droomritme.nl/opleidingtraining/droomritmecoach-0-10-jaar/",
+  "categorie": "Slaapcoach-opleiding (eigen methode)"
+ },
+ {
+  "naam": "E&R Opleidingen",
+  "oordeel": "Nee",
+  "bewijs": "Rijschool (rijbewijzen B/C/D + aanhanger) + logistieke trainingen (vorkheftruck, hoogwerker, veiligheidscursussen) + Code 95 nascholing. Sector-uitsluiting verkeer/transport, externe examinering. Bron: https://www.e-r-opleidingen.nl",
+  "categorie": "Rijschool + logistiek/transport (Code 95)"
+ },
+ {
+  "naam": "Economy Transformers academy, academie voor samenlevenskunst",
+  "oordeel": "Onbekend",
+  "bewijs": "Driejarige 'Leergang Samenlevingskunst' en twee-jarig traject 'Eigentijds Ondernemen', gericht op persoonlijke ontwikkeling en sociale processen ('In al hun werk komt persoonlijke ontwikkeling, inzicht in de sociale processen'). Lange looptijd, maar de site noemt geen examinering, toetsing of beoordeeld geschreven werk. Poort 0 niet vast te stellen. Bron: economytransformers.nl",
+  "categorie": "Persoonlijke ontwikkeling / levenskunst leergangen"
+ },
+ {
+  "naam": "Educatie instituut",
+  "oordeel": "Nee",
+  "bewijs": "Sluis NLP Instituut: 'NLP Basiscursus', Practitioner, 'NLP Master Practitioner', 'NLP Trainersopleiding' en familieopstellingen. 'Geaccrediteerde opleidingen met gediplomeerde trainers & coaches' wijst op externe accreditatie. Persoonlijke ontwikkeling/coaching, geen beoordeeld geschreven werk. Bron: sluisnlpinstituut.nl",
+  "categorie": "NLP / coaching / familieopstellingen"
+ },
+ {
+  "naam": "Educatief Mandala Instituut - Studio Danka Husken",
+  "oordeel": "Nee",
+  "bewijs": "Vierjarige (4,5 jaar) beroepsopleiding tot 'docent/coach/psychosociaal mandala kunstzinnig therapeut', mandala als middel voor zelfkennis. Valt onder de spiritueel/kunstzinnige-therapie-uitsluiting (mandala/zelfontwikkeling, KTNO/GAT-register). Lange duur maar sector uitgesloten. Bron: linkedin.com/in/educatiefmandalainstituut, ktno.nl/opleider/educatief-mandala-instituut",
+  "categorie": "Mandala kunstzinnige/psychosociale therapie (spiritueel)"
+ },
+ {
+  "naam": "Edumar vaaropleidingen",
+  "oordeel": "Nee",
+  "bewijs": "Vaaropleidingen (deksman, matroos, schipper, Rijnpatent). Externe examens: 'de examenstructuur bij het CBR voor het behalen van de EU kwalificatie schipper' en examenvragen 'ter voorbereiding op het Rijnpatent examen bij het CBR'. Sector verkeer/vaart, externe examinering. Bron: grootvaarbewijs.nl",
+  "categorie": "Vaaropleidingen (extern examen CBR)"
+ },
+ {
+  "naam": "Emergo opleidingen",
+  "oordeel": "Nee",
+  "bewijs": "Acute verloskunde, reanimatie voor verloskundige zorg, borstvoeding, kindermishandeling. Korte nascholingen met accreditatiepunten ('Kraamzorg na kunstverlossing en sectio (1,5 punt)', '(4 punten)'). Losse bij-/nascholingen zonder beoordeeld geschreven werk. Bron: emergo-opleidingen.nl",
+  "categorie": "Acute-zorg/verloskunde nascholing (accreditatiepunten)"
+ },
+ {
+  "naam": "EMRIN Opleidingen",
+  "oordeel": "Nee",
+  "bewijs": "PHBO MRI en PHBO MsCT voor radiologisch laboranten; EMRIN neemt het examen zelf af, maar het volledige diploma bestaat uit een 'theorie-examen en presentatie' (voor MsCT: 'theorie-examen (basisdiploma), of met een compleet examen bestaande uit theorie-examen en presentatie'). Geen beoordeeld geschreven werk. Bron: emrin.nl/multi-slice-ct, emrin.nl/phbo-mri",
+  "categorie": "Post-hbo MRI/CT voor laboranten (eigen theorie-examen + presentatie)"
+ },
+ {
+  "naam": "ExpertCollege-Nightingale Instituut",
+  "oordeel": "Ja",
+  "bewijs": "ENI beoordeelt zelf via eigen portfolioplatform ExpertFolio: 'Hierin komen beoordeling, feedback en voortgang samen binnen EPA-gestuurd onderwijs' en 'Vastleggen en beoordelen van EPA's' ('het digitale leer- en portfolioplatform'). Daarnaast eigen CAT-scholing over 'het schrijven en beoordelen van een Critically Appraised Topic (CAT)'. Verpleegkundige vervolgopleiding acute zorg (langlopend, blended), eigen certificaat. Bron: enilearning.nl, enilearning.nl/education/cat-scholing-voor-studenten",
+  "categorie": "Verpleegkundige vervolgopleiding acute zorg (eigen portfolio-/CAT-beoordeling)"
+ },
+ {
+  "naam": "Feelings Opleidingen",
+  "oordeel": "Nee",
+  "bewijs": "Ooracupunctuur/auriculo-reflexologie, voetreflexologie, ayurvedische massage, Reiki, EFT, Holistic Pulsing, yoga en retraites ('holistische en praktische visie'). Valt onder yoga/massage/spiritueel-uitsluiting. Bron: feelingsopleidingen.nl",
+  "categorie": "Massage / reflexologie / yoga / energetisch werk (spiritueel)"
+ },
+ {
+  "naam": "Financieel Vitaal Opleidingen B.V.",
+  "oordeel": "Nee",
+  "bewijs": "CFP-geaccrediteerde cursussen met PE-punten, plus 'Coaching en intervisie' en organisatieadvies. Externe accreditatie (CFP), geen eigen examinering of beoordeeld geschreven werk aangetoond. Bron: financieelvitaal.com",
+  "categorie": "Financieel-planner nascholing (CFP PE) + coaching"
+ },
+ {
+  "naam": "Firstt Opleidingen B.V.",
+  "oordeel": "Nee",
+  "bewijs": "Geen website in CSV; bedrijfsbronnen: 'FIRSTT has years of experience training driving instructors (rijinstructeurs)', opleiding in drie fasen. Sector verkeer/rijopleiding, extern examen (IBKI). Bron: firstt.nl, zoominfo.com/c/firstt-opleidingen-bv",
+  "categorie": "Rijinstructeuropleiding (extern examen IBKI)"
+ },
+ {
+  "naam": "Forta Opleidingen B.V.",
+  "oordeel": "Onbekend",
+  "bewijs": "GGZ-nascholing: ACT, mindfulness, CGT, diagnostiek, schematherapie; 'geaccrediteerd door diverse beroepsverenigingen en kwaliteitsregisters'; meerdaags over maanden. Zelf-examinering of eigen beoordeeld geschreven werk niet te bevestigen op de site. Bron: fortaopleidingen.nl",
+  "categorie": "GGZ/psychotherapie post-hbo nascholing"
+ },
+ {
+  "naam": "Galan Groep Opleidingen B.V. t..h.o.d.n. Bright & Company B.V.",
+  "oordeel": "Onbekend",
+  "bewijs": "Galan Groep Academie met leergangen rond 'Strategie, Governance & Inrichting' en 'Leiderschap & Transitie'; daarnaast advies en executive search. Site geeft geen informatie over examinering, toetsing of beoordeeld geschreven werk. Poort 0 niet vast te stellen. Bron: galangroep.nl",
+  "categorie": "Leiderschaps-/governance-leergangen + advies"
+ },
+ {
+  "naam": "Govers Opleidingen",
+  "oordeel": "Nee",
+  "bewijs": "Govers en Van der Staay: management- en communicatietraining, coaching en mediation. Soft-skills training/coaching zonder eigen examenstructuur of beoordeeld geschreven werk. Bron: volgopleidingen.nl/overveen/govers-en-van-der-staay-training-en-coaching, telefoonboek.nl",
+  "categorie": "Management-/communicatietraining + coaching/mediation"
+ },
+ {
+  "naam": "Haprotech Lasopleidingen BV",
+  "oordeel": "Nee",
+  "bewijs": "'NIL-erkend opleider'; lasopleidingen (BMBE/MAG/MIG/TIG) met 'Lasmethodekwalificatie (LMK)' en 'Lasserskwalificatie (LK)'. Externe/praktijkgerichte kwalificatie (NIL), geen beoordeeld geschreven werk. Sector techniek/lassen. Bron: haprotech.nl",
+  "categorie": "Lasopleidingen (NIL-kwalificatie, praktijk)"
+ },
+ {
+  "naam": "Harrows Opleidingen BV",
+  "oordeel": "Nee",
+  "bewijs": "Financiele dienstverlening: Wft-basis bootcamp + studiebegeleiding voor Wft-certificeringen en adviseurstrainingen. Wft/financiele certificering wordt extern geexamineerd door CDFD-erkende exameninstituten; Harrows traint alleen. Bron: harrows.nl/training-opleiding en harrows.nl (via zoekresultaat).",
+  "categorie": "Financiele opleider (Wft), externe examinering"
+ },
+ {
+  "naam": "Hartemink Vervoersopleidingen B.V.",
+  "oordeel": "Nee",
+  "bewijs": "Naam + domein: vervoers-/rijopleidingen. Valt onder sector-uitsluiting transport/verkeer (CBR/CCV, externe examinering). Bron: naam CSV + hartemink.nl.",
+  "categorie": "Vervoers-/rijopleider (transport)"
+ },
+ {
+  "naam": "Het Huis opleidingen BV",
+  "oordeel": "Onbekend",
+  "bewijs": "Biedt de 'Opleiding Familie GGZ', 'Het programma beslaat een jaar' met 'Intensieve tweedaagse sessies, gerichte opleidingsdagen en intervisietrajecten' (welkominhethuis.nl/familie-ggz/praktische-informatie). Langlopend, maar geen enkele vermelding van beoordeeld geschreven werk of wie beoordeelt/examineert. Poort 0 niet te bevestigen.",
+  "categorie": "GGZ-nascholing (beroepsscholing)"
+ },
+ {
+  "naam": "het vertrouwen opleidingen bv",
+  "oordeel": "Nee",
+  "bewijs": "Aanbod: 'Rijopleidingen, Chauffeursopleidingen, Veiligheidstrainingen, Nascholing Code 95' (hetvertrouwen.nl). Sector-uitsluiting verkeer/transport, externe examinering (CBR/CCV). ",
+  "categorie": "Rij-/chauffeursopleider (verkeer/transport)"
+ },
+ {
+  "naam": "Hielkema verkeersopleidingen",
+  "oordeel": "Nee",
+  "bewijs": "Naam: verkeersopleiding, sector-uitsluiting rijopleiding/verkeer (CBR-examinering). Geen website in CSV om anders te bewijzen. Bron: naam CSV.",
+  "categorie": "Verkeersopleider"
+ },
+ {
+  "naam": "Hoekstra Beroepsopleidingen BV",
+  "oordeel": "Nee",
+  "bewijs": "Aanbod: rijinstructie, Code 95, logistiek (heftruck/reachtruck), veiligheidstraining (hoekstra.net). Sector-uitsluiting transport/verkeer/heftruck, externe examinering.",
+  "categorie": "Transport-/logistiekopleider"
+ },
+ {
+  "naam": "Hoogendijk Coachopleidingen",
+  "oordeel": "Onbekend",
+  "bewijs": "'Post-HBO Geaccrediteerde Opleidingen', docententeam (niet solo), 'Behaal je diploma binnen 5 maanden' (hoogendijkcoachopleidingen.nl). Langlopend en meerdere docenten, maar op de site (incl. examenpagina) geen bewijs over beoordeeld geschreven werk of wie beoordeelt. Poort 0 niet te bevestigen.",
+  "categorie": "Coachopleider (Post-HBO)"
+ },
+ {
+  "naam": "Horizon Opleidingen",
+  "oordeel": "Nee",
+  "bewijs": "Aanbod: massagetherapie, energetisch werk en holistisch coaching; jaaropleidingen geaccrediteerd door beroepsverenigingen (horizonopleidingen.nl). Sector-uitsluiting massage/wellness/spiritueel.",
+  "categorie": "Massage-/wellness-/coachopleider"
+ },
+ {
+  "naam": "Hormoon Opleidingsinstituut",
+  "oordeel": "Onbekend",
+  "bewijs": "Aanbod rond vrouwengezondheid/menstruatiecyclus: 'De Vrouw - De Cyclus', 'Cyclus Therapeut', voorlichteropleidingen (hormooninstituut.nl). Wellness/gezondheid; geen vermelding van duur, beoordeeld geschreven werk of wie examineert. Poort 0 niet te bevestigen.",
+  "categorie": "Gezondheid/wellness (cyclus/hormoon)"
+ },
+ {
+  "naam": "Impact Financiële Opleidingen BV",
+  "oordeel": "Nee",
+  "bewijs": "Financiele opleidingen incl. 'Opleiding Certified Financial Planner (CFP)' (impact.nu/opleidingen/financiele-opleidingen). Financiele titels (CFP, Wft) worden extern geexamineerd (FPSB Nederland resp. CDFD-erkende exameninstituten); Impact traint. Externe examinering.",
+  "categorie": "Financiele opleider (CFP/Wft), externe examinering"
+ },
+ {
+  "naam": "Improfin Beroepsopleidingen",
+  "oordeel": "Nee",
+  "bewijs": "Financiele/controlling trainingen; langste programma's ('Financiele Functie 2.0', 'Planning & Control 2.0') duren 2 dagen (improfin.nl). Poort 0b: < 2 weken, onvoldoende volume; ook geen beoordeeld geschreven werk vermeld.",
+  "categorie": "Financiele korte-trainingen (controlling)"
+ },
+ {
+  "naam": "InBalans-opleidingen",
+  "oordeel": "Nee",
+  "bewijs": "NEI-therapie / muscle testing (natuurgeneeskunde/wellness): '1 op 1 begeleiding van docenten met 20 jaar ervaring als NEI therapeut', focus op O-ring muscle testing en emotional release (inbalansopleidingen.nl). Sector-uitsluiting wellness/alternatieve geneeswijze.",
+  "categorie": "Natuurgeneeskunde/wellness (NEI)"
+ },
+ {
+  "naam": "Inner Life Opleidingen",
+  "oordeel": "Nee",
+  "bewijs": "'Opleidingen en workshops in therapie en spirituele ontwikkeling' (innerlifeopleidingen.nl); body-oriented psychotherapy, trauma healing, o.a. 'Sri Yantra tekenen'. Sector-uitsluiting spiritueel/lichaamsgericht. Bron: innerlifeopleidingen.nl + KTNO-vermelding.",
+  "categorie": "Spiritueel/lichaamsgerichte therapieopleider"
+ },
+ {
+  "naam": "Instituut voor Lichaamspsychologie: Opleiding de psychologie van het lichaam",
+  "oordeel": "Nee",
+  "bewijs": "'Een lichaamsgerichte psychologie opleiding voor professionals', 18 dagen (3 masterclasses van 6 dagen), verzorgd door een begeleider (Tessa Harts): 'Lichaamsgericht begeleiden is vakmanschap, waarbij de wijsheid uit het lichaam komt' (depsychologievanhetlichaam.nl). Lichaamsgericht/spiritueel-adjacent, geen tweede beoordelaar of beoordeeld geschreven werk.",
+  "categorie": "Lichaamsgerichte psychologie/therapie (solo-begeleider)"
+ },
+ {
+  "naam": "Instituut voor sociale psychologie, onderdeel IBT-Academie",
+  "oordeel": "Nee",
+  "bewijs": "Relatietherapie/IBCT-bijscholing voor professionals. Basic-opleiding = 4 trainingsdagen + boekpakket + 3 intervisiebijeenkomsten, geaccrediteerd door NVRG/NFG (extern). Geen beoordeeld geschreven werk door eigen examinatoren; kort programma. Bron: medischescholing.nl/cursus/49499 en ibt-academie.nl/accreditaties",
+  "categorie": "Relatietherapie-bijscholing (medisch/psy CME)"
+ },
+ {
+  "naam": "Intence opleidingen",
+  "oordeel": "Nee",
+  "bewijs": "Creatieve/intuïtieve coaching- en therapieopleiding, kleine groepen (max 10). Citaat: 'personal feedback on your conversation techniques'. Focus op zelfervaring en persoonlijke ontwikkeling, geen beoordeeld geschreven werk / geen examinering vermeld. Bron: intenceopleidingen.nl",
+  "categorie": "Creatieve coaching/therapie"
+ },
+ {
+  "naam": "Interactie Opleidingen B.V.",
+  "oordeel": "Nee",
+  "bewijs": "Redirect naar interactiegroep.nl: congres- en verenigingsmanagement met medische bijscholing. 'ruim 70 cursussen en 12 congressen op jaarbasis'. Losse cursussen/congressen zonder beoordeeld geschreven werk. Bron: interactiegroep.nl",
+  "categorie": "Congres-/verenigingsmanagement + medische CME"
+ },
+ {
+  "naam": "intuitieve opleidingen Rotterdam",
+  "oordeel": "Nee",
+  "bewijs": "Sector-uitsluiting (spiritueel/paranormaal). 'intuitive/spiritual personal development', trainingen Healing en Reading, 'Trainer Natuurkracht'. Zelf-geevalueerd, geen externe of eigen examinering van geschreven werk. Bron: intuitief.com",
+  "categorie": "Spirituele/intuïtieve ontwikkeling"
+ },
+ {
+  "naam": "IVIO-Opleidingen B.V.",
+  "oordeel": "Onbekend",
+  "bewijs": "Redirect naar ivio-opleidingen.nl: taal (NT2), rekenen, digitale vaardigheden, budget. Citaat: 'Aan het einde krijg je een toets en, als het goed is, een certificaat of diploma'. Onduidelijk wie beoordeelt; NT2/inburgering wordt doorgaans extern (DUO) geexamineerd. Binnen 3 pagina's geen citaat over eigen examinator. Bron: ivio-opleidingen.nl",
+  "categorie": "Volwasseneneducatie / taal (NT2)"
+ },
+ {
+  "naam": "Jawel Opleidingen BV",
+  "oordeel": "Nee",
+  "bewijs": "Leiderschaps-, team- en cultuurcoaching (Profile Dynamics, storytelling). Geen formele toetsing of examinering, nadruk op gedragsontwikkeling en praktijk, geen beoordeeld geschreven werk. Bron: jawel.nu",
+  "categorie": "Leiderschaps-/teamcoaching"
+ },
+ {
+  "naam": "Jongepier opleidingen BV",
+  "oordeel": "Nee",
+  "bewijs": "Sector-uitsluiting (rijopleiding/verkeer). Opleidt rijinstructeurs (auto/motor/vrachtwagen/bus); examinering rijinstructeur loopt extern via IBKI. Bron: jongepier.nl",
+  "categorie": "Rijinstructeuropleiding"
+ },
+ {
+  "naam": "josmic opleidingen en trainingen bv",
+  "oordeel": "Nee",
+  "bewijs": "Handhaving, beveiliging en straatcoaching in het publieke domein. Praktijk-/vaardigheidstraining ('alle vaardigheden rustig en veilig getraind'), geen beoordeeld geschreven werk; beveiliging/handhaving kent externe examinering. Bron: josmic-opleidingen.nl",
+  "categorie": "Handhaving/beveiliging"
+ },
+ {
+  "naam": "JTI Opleidingen B.V.",
+  "oordeel": "Nee",
+  "bewijs": "Redirect naar gripopveiligheid.nl: BHV, EHBO en brandveiligheid. Sector-uitsluiting (VCA/BHV/EHBO). 'Erkend opleider NIKTA', geen beoordeeld geschreven werk. Bron: gripopveiligheid.nl",
+  "categorie": "BHV/EHBO/brandveiligheid"
+ },
+ {
+  "naam": "Jungiaans instituut - Academie voor dieptepsychologie",
+  "oordeel": "Onbekend",
+  "bewijs": "Opleiding tot Analytisch Therapeut vanuit dieptepsychologie ('De opleiding tot Analytisch Therapeut werkt vanuit een analytisch concept... dieptepsychologie'). Niet-uitgesloten sector en waarschijnlijk langlopend, maar binnen de bekeken pagina's geen citaat over wie het werk beoordeelt of over examinering. Bron: jungiaansinstituut.nl",
+  "categorie": "Dieptepsychologie/therapieopleiding"
+ },
+ {
+  "naam": "Kees de Vaan opleidingen BV",
+  "oordeel": "Nee",
+  "bewijs": "Sector-uitsluiting (rijopleiding/transport/heftruck/VCA/BHV). Aanbod: rijbewijzen, Code 95, heftruck/reachtruck, ADR, VCA, BHV, EHBO. Bron: keesdevaan.nl",
+  "categorie": "Rij-/logistiek-/veiligheidsopleidingen"
+ },
+ {
+  "naam": "keuze opleidingsinstituut KOI",
+  "oordeel": "Onbekend",
+  "bewijs": "Breed opleider over meerdere sectoren (onderwijs, zorg/GGZ, retail, transport, publieke veiligheid). Langlopend traject bestaat ('De Sterke School', 3-jarig traject). Geen citaat over wie geschreven werk beoordeelt / examinering binnen de bekeken pagina's. Bron: keuze.org",
+  "categorie": "Breed opleidingsinstituut (zorg/onderwijs/veiligheid)"
+ },
+ {
+  "naam": "Kind en ik Opleidingen",
+  "oordeel": "Nee",
+  "bewijs": "Gezinsbegeleiding en trauma/scheiding-trainingen voor professionals ('Groeien in je scheiding', 'Verslaglegging in de complexe scheiding'). Korte trainingen, geen formele toetsing/examinering of beoordeeld geschreven werk. Bron: kindenik.nl",
+  "categorie": "Gezins-/scheidingsbegeleiding"
+ },
+ {
+  "naam": "KRACHT opleidingen (handelsnaam van Healthy Crew)",
+  "oordeel": "Onbekend",
+  "bewijs": "Weerbaarheids-/vitaliteitscoach-opleiding. Langste programma = 7-daagse 'Basis Weerbaarheidscoach' verspreid 25 sep - 5 mrt 2027 (telt als langlopend). NOBCO & VESB geaccrediteerd, 'Je krijgt les van docenten uit de praktijk', maar geen citaat over wie geschreven werk beoordeelt/examineert. Bron: krachtopleidingen.nl",
+  "categorie": "Coachopleiding (weerbaarheid/vitaliteit)"
+ },
+ {
+  "naam": "MKPC Beroepsopleidingen B.V.",
+  "oordeel": "Ja",
+  "bewijs": "Letterlijk citaat: \"geheel onafhankelijk en door Cedeo gecertificeerd opleidings- en exameninstituut\" (https://mkpc.nl/veelgestelde-vragen/). MKPC is eigen exameninstituut en neemt de examens zelf af (online theorie-examen op 14 eigen locaties, mkpc.nl/lss-college/online-examen-lean-six-sigma/). Green/Black Belt-trajecten zijn meerdaags met een eigen verbeterproject. Poort 0b ok voor Green/Black Belt.",
+  "categorie": "Lean & Lean Six Sigma opleider (Yellow/Green/Black Belt)"
+ },
+ {
+  "naam": "Modevakopleiding Hermsen, Janssen & Schuurman",
+  "oordeel": "Onbekend",
+  "bewijs": "Driejarige coupeuse-opleiding met eigen tweedegraads docenten die groepen 3-4 jaar volgen (https://modevakopleiding.nl/over-ons/). Geen vindbaar letterlijk citaat over examen/beoordeling binnen 3 pagina's; bovendien praktisch/creatief (patroontekenen, naaien), zwakke fit voor beoordeeld geschreven werk. Geen citaat = Onbekend.",
+  "categorie": "Particuliere modevakopleiding (coupeuse/coupeur), langlopend maar praktisch"
+ },
+ {
+  "naam": "Mondra Opleidingen bv",
+  "oordeel": "Nee",
+  "bewijs": "Smeedopleidingen en workshops (Inleiding Smeden, Smeden 1-3, restauratiesmeden, kinderworkshops vanaf 10 jaar) op www.mondraopleidingen.nl. Ambacht/hobby, korte meerdaagse modules (bv. 'Opleiding Smeden 3 (1/4) - 17 oktober 08:30 tot 18 oktober 17:30' = 2 dagen per blok), geen beoordeeld geschreven werk. Sector-uitsluiting hobby/ambacht.",
+  "categorie": "Ambachtelijke smeedopleiding / workshops"
+ },
+ {
+  "naam": "MROI opleidingen en trainingen",
+  "oordeel": "Nee",
+  "bewijs": "Mindful Run Instructeur, Wandelcoach, Fietscoach, ademcoach etc. (www.mroi.nl). Sport/wellness-coaching, korte trainingen van 1-3 dagen (\"Wandelcoach is een 3-daagse opleiding\"), \"Geen taaie theorie in een lesruimte, maar lekker naar buiten\". Sector-uitsluiting (wellness/coaching) + te kort, geen beoordeeld geschreven werk.",
+  "categorie": "Mindful running / wandel- en wellness-coach opleider"
+ },
+ {
+  "naam": "Mulder Opleidingen",
+  "oordeel": "Onbekend",
+  "bewijs": "75+ opleidingen in talen, ICT (Office, AutoCAD, SolidWorks) en zakelijke diploma's (MBA, PD, PDL) op mulderopleidingen.nl. De vlaggenschip-diploma's (PDL/PD) worden doorgaans extern geexamineerd (Associatie voor Examinering). Geen letterlijk citaat gevonden over wie beoordeelt binnen 3 pagina's. Onbekend.",
+  "categorie": "Breed particulier opleidingsinstituut (talen/ICT/administratie)"
+ },
+ {
+  "naam": "Mulligan Opleidingen",
+  "oordeel": "Nee",
+  "bewijs": "MULLIGAN Concept ABC = zesdaagse cursus in 3 blokken van 2 dagen voor fysiotherapeuten (mulliganconcept.nl). \"Na het volgen van de Mulligan Concept cursus (ABC) bestaat er de mogelijkheid een facultatief examen af te leggen ... Slagen voor het examen geeft toegang tot het CMP (Certified Mulligan Practitioner) register, zowel nationaal als internationaal.\" Kort CPD-programma + facultatief examen dat leidt tot extern register.",
+  "categorie": "Fysiotherapie CPD (manuele therapie / Mulligan concept)"
+ },
+ {
+  "naam": "NCB Opleidingen BV",
+  "oordeel": "Nee",
+  "bewijs": "\"NCB Opleidingen verzorgt Inburgeringscursus A2, Alfabetisering, Staatsexamen I en II, Rekenvaardigheid 1F en 2F...\" (www.ncbnet.nl). Inburgering/NT2 en Staatsexamens worden extern afgenomen (DUO / College voor Toetsen en Examens), niet door NCB zelf. Externe examinering.",
+  "categorie": "Inburgering / NT2 / taalexamenprep"
+ },
+ {
+  "naam": "Nederlands Centrum Lactatie Opleidingen",
+  "oordeel": "Onbekend",
+  "bewijs": "Opleiding Lactatiekundige NLG is langlopend (22 lesdagen, sep-jun, 56 e-learnings + huiswerkopdrachten; nclo.nl/lactatiekundige-nlg/). Zoekresultaten wijzen op een eigen theorie-examen (uitslag binnen 3 werkdagen, 6.0+ vereist), maar de site blokkeert fetchen (herhaald HTTP 403), dus geen verifieerbaar letterlijk citaat. De IBCLC-route kent bovendien een extern examen (IBLCE). Zonder citaat: Onbekend (sterk signaal richting Ja, handmatig verifieren waard).",
+  "categorie": "Opleider lactatiekundigen (langlopend traject)"
+ },
+ {
+  "naam": "Nederlandse Opleidingsacademie",
+  "oordeel": "Nee",
+  "bewijs": "Finance/business-trainingen voor non-profit (www.nederlandseopleidingsacademie.nl). \"Heeft u de gehele training gevolgd, dan ontvangt u het deelname-certificaat.\" Alleen deelnamecertificaat, geen examen of beoordeeld werk.",
+  "categorie": "Zakelijke trainingen voor non-profit (deelnamecertificaat)"
+ },
+ {
+  "naam": "Nieuwetijds Opleidingen",
+  "oordeel": "Nee",
+  "bewijs": "Spirituele opleider: Reiki-trainingen (niveau 1-3), hypnose, intuitieve/spirituele ontwikkeling (nieuwetijdsopleidingen.nl; ktno.nl-opleiderprofiel). Sector-uitsluiting spiritueel/paranormaal.",
+  "categorie": "Spirituele opleider (Reiki/hypnose/intuitie)"
+ },
+ {
+  "naam": "NIPA EIndhoven B.V. T.H.O.D.N. NIPA Opleidingen en ZORGDIDACT",
+  "oordeel": "Ja",
+  "bewijs": "Zorgopleidingen met eigen erkend MBO-4 diploma (doktersassistent, verzorgende IG, triagist). Letterlijk: \"De examens zullen op een tweede avond plaatsvinden (woensdagavond)\" en kosten \"inclusief, studiebegeleiding, toetsen en examens\" (https://www.nipaopleidingen.nl/doktersassistenten-avondopleiding/). NIPA reikt zelf het door OCW erkende MBO-4 diploma uit en neemt de toetsen/examens zelf af. Langlopend: avondopleiding 17-18 maanden, 58 lesweken.",
+  "categorie": "Particuliere zorgopleider (doktersassistent / verzorgende IG, erkend MBO-4)"
+ },
+ {
+  "naam": "NLP Opleidingen Wegener",
+  "oordeel": "Nee",
+  "bewijs": "NLP Practitioner/Master Coach, 7-daagse training van EUR 2.697 (nlpopleidingenwegener.nl). \"Upon completion ... you receive an internationally recognized certificate from the Society of NLP\" - extern certificaat (Society of NLP / Richard Bandler), geen eigen beoordeeld geschreven examen. Coaching/korte training.",
+  "categorie": "NLP- / coach-opleider (extern certificaat)"
+ },
+ {
+  "naam": "Onderwijs Academie BV",
+  "oordeel": "Onbekend",
+  "bewijs": "\"Samen met specialisten ontwikkelt Onderwijs Academie e-learnings op maat in onze eigen studio\" (onderwijsacademie.nl). Lijkt vooral B2B e-learning-contentproducent voor opdrachtgevers; geen informatie dat ze zelf lerenden of geschreven werk beoordelen. Geen citaat over examinering/beoordeling. Onbekend.",
+  "categorie": "E-learning/content-ontwikkelaar voor onderwijs (B2B)"
+ },
+ {
+  "naam": "Oosterpoort Beroepsopleidingen BV",
+  "oordeel": "Nee",
+  "bewijs": "Rijopleidingen (auto/vrachtwagen/bus), VCA, ADR, heftruck, EHBO/BHV, Code95 (www.oosterpoort.nl). Meerdere harde sector-uitsluitingen (rijopleiding/verkeer, VCA/BHV, transport/heftruck); examens extern via CBR/CCV.",
+  "categorie": "Rij- en transport-/veiligheidsopleider"
+ },
+ {
+  "naam": "Opleidingen Land van Rouw",
+  "oordeel": "Ja",
+  "bewijs": "Post-HBO opleiding tot rouwbegeleider/rouwtherapeut met eigen examinering; CPION accrediteert maar examineert niet. Citaat: \"De CPION-geaccrediteerde Post-HBO opleiding\" en \"Terugblik examen juni 2026\" (https://www.landvanrouw.nl). Post-HBO traject met eigen examen en eindopdracht, langlopend.",
+  "categorie": "Post-HBO rouwbegeleiding/rouwtherapie"
+ },
+ {
+  "naam": "Opleidingen van ASR B.V.",
+  "oordeel": "Nee",
+  "bewijs": "Corporate trainingen rond duurzame inzetbaarheid/re-integratie voor werkgevers en adviseurs, inclusief inspiratiesessies. Geen aanwijzing voor langlopend beoordeeld geschreven werk; ogen als losse trainingssessies. Bron: https://www.asr.nl/zakelijk/reintegratie/opleidingen-en-trainingen (geen eigen site in CSV).",
+  "categorie": "Corporate HR/re-integratie trainingen"
+ },
+ {
+  "naam": "Opleidingsinstituut Delsasso en van de Weijer",
+  "oordeel": "Onbekend",
+  "bewijs": "Site kiluma.nl: systemisch werk/familieopstellingen. Er is een \"Jaaropleiding Systemisch werk\" maar het meeste aanbod is 2-daagse training (\"19 & 20 september ... 2 daagse training\"). Geen informatie over wie beoordeelt of over beoordeeld geschreven werk binnen 3 pagina's. Bron: https://www.kiluma.nl",
+  "categorie": "Systemisch werk / opstellingen (coaching)"
+ },
+ {
+  "naam": "Opleidingsinstituut Dermé",
+  "oordeel": "Nee",
+  "bewijs": "Sector-uitsluiting schoonheid/huidverzorging. Citaat: erkende opleiding in de huidverzorging, \"Een nieuw gezond beroep\" en \"De e-learning video's zijn afgestemd op de exameneisen\" (https://www.derme.nl).",
+  "categorie": "Huidverzorging/schoonheid"
+ },
+ {
+  "naam": "Opleidingsinstituut LOC B.V.",
+  "oordeel": "Onbekend",
+  "bewijs": "coachingvoordocenten.com: \"Landelijke Organisatie voor Coaching en training in het onderwijs\", coachpool 100+ coaches, \"binnen een jaar te ontwikkelen tot een gecertificeerd coach\", CRKBO-geregistreerd. Geen citaat over wie het werk beoordeelt of over beoordeeld geschreven werk. Bron: https://www.coachingvoordocenten.com",
+  "categorie": "Coachopleiding onderwijs"
+ },
+ {
+  "naam": "Opleidingsinstituut Pediroda",
+  "oordeel": "Nee",
+  "bewijs": "Sector voetzorg/pedicure (schoonheid-adjacent) met externe examinering/accreditatie. Citaat: \"officieel erkend door de Brancheorganisatie PROVOET\" en accreditatie via ProCERT (https://www.pediroda.nl). Externe instantie + sector-uitsluiting.",
+  "categorie": "Pedicure/voetzorg"
+ },
+ {
+  "naam": "Opleidingsinstituut PPO",
+  "oordeel": "Ja",
+  "bewijs": "Postmaster BIG-opleidingen (GZ-psycholoog, orthopedagoog-generalist, psychotherapeut, klinisch psycholoog), 2-4 jaar, eigen examencommissie. Citaat: \"De examencommissie beoordeelt of een opleideling voldoet aan alle eindtermen, zoals die vastgesteld zijn in de onderwijs- en examenregeling (OER)\" (https://www.ppo-opleidingen.nl). Eigen beoordeling, langlopend.",
+  "categorie": "Postmaster psychologie/pedagogiek (BIG)"
+ },
+ {
+  "naam": "Opleidingsinstituut RTN",
+  "oordeel": "Nee",
+  "bewijs": "Sector-uitsluiting spiritueel/paranormaal. Vlaggenschip is reincarnatie/past life therapy. Citaat: \"de driejarige Postinitiële HBO-Opleiding traumaverwerking d.m.v. PLT\" (Past Life Therapy) (https://www.rtnederland.nl).",
+  "categorie": "Reincarnatie/past life therapy (spiritueel)"
+ },
+ {
+  "naam": "Opportunity Opleidingen B.V.",
+  "oordeel": "Onbekend",
+  "bewijs": "Website onbereikbaar (SSL-certificaat wijst naar lsw.solcon.nl, geen geldig cert voor opportunity.nl). Search: trainingen rond inclusief leiderschap/inclusiviteit voor organisaties. Structuur en beoordeling niet te verifieren binnen 3 pagina's. Bron: search + www.opportunity.nl (onbereikbaar).",
+  "categorie": "Corporate leiderschaps-/inclusiviteitstrainingen"
+ },
+ {
+  "naam": "osseforth beroepsopleidingen",
+  "oordeel": "Nee",
+  "bewijs": "Meerdere sector-uitsluitingen: rijopleiding, VCA/BHV/EHBO, transport/logistiek. Citaat: \"Rijopleidingen\", \"VCA, BHV\", en \"U21 EHBO in het Verkeer\" als \"1 dag cursus\" (https://www.osseforth.nl).",
+  "categorie": "Rijopleiding + VCA/BHV + transport"
+ },
+ {
+  "naam": "Panta Rhei Opleidingen VOF",
+  "oordeel": "Onbekend",
+  "bewijs": "pro-osteo.com: postgraduate osteopathie-nascholing voor reeds gekwalificeerde osteopaten, 2 jaar / 16 modules, leidt tot diploma. CPD/nascholing voor professionals; geen citaat over beoordeeld geschreven werk of eigen beoordeling gevonden. Bron: https://pro-osteo.com en pe-online.org.",
+  "categorie": "Postgraduate osteopathie-nascholing"
+ },
+ {
+  "naam": "Paul Lenferink NLP Opleidingen",
+  "oordeel": "Nee",
+  "bewijs": "Eenmanszaak/kleine praktijk (Paul & Manon) in NLP/hypnose/klankschalen; sector-uitsluiting spiritueel + eenmanszaak zonder tweede beoordelaar. Langste programma 13 dagen. Citaat: NLP Practitioner \"NIEUW en KORTER, IN 13 DAGEN\", Kristallen Klankschalen (sound healing) (https://www.paullenferink.nl).",
+  "categorie": "NLP/spiritueel (eenmanspraktijk)"
+ },
+ {
+  "naam": "PBS Opleidingen",
+  "oordeel": "Nee",
+  "bewijs": "Sector-uitsluiting massage/holistisch. Citaat: \"Holistische opleidingen, masterclasses en cursussen\" in o.a. Baransu Shiatsu, Manual Lymphatic Drainage (massage) (https://www.pbsopleidingen.nl).",
+  "categorie": "Holistische massage-/shiatsu-opleidingen"
+ },
+ {
+  "naam": "PC Opleidingen B.V.",
+  "oordeel": "Onbekend",
+  "bewijs": "Geen website in CSV. Search wijst richting Computer Learning Center Apeldoorn (ICT/computertrainingen, zelf-tempo blended, \"Individual trainings always conclude with a final test\"), maar identiteit niet bevestigd. Vermoedelijk korte ICT-vaardigheidstrainingen met alleen eindtoets, geen beoordeeld geschreven werk. Bron: search (computer-learning-center.nl).",
+  "categorie": "ICT/computertrainingen (vermoedelijk)"
+ },
+ {
+  "naam": "Performance Opleidingen VOF",
+  "oordeel": "Onbekend",
+  "bewijs": "Website uit CSV (performancematters.nl) resolvet naar een domeinhandelaar (Dovendi: 'We manage over 250,000 international domain names and mediate in the sale of these names'), geen actieve opleidingssite. Geen opleidingsinfo of examenregeling vindbaar binnen 3 pagina's. Bron: https://www.performancematters.nl",
+  "categorie": "Onbekend / website inactief (domein te koop)"
+ },
+ {
+  "naam": "Phaos Opleidingen B.V.",
+  "oordeel": "Nee",
+  "bewijs": "Phaos is 'een bureau voor training, coaching en begeleiding on-the-job' met korte workshops en foundation-trainingen (bv. zomerworkshops). Geen examens, geen beoordeeld geschreven werk, geen diploma's/scripties op de site. Bron: https://www.phaos.nl",
+  "categorie": "Training- en coachingbureau (organisatieontwikkeling), korte trajecten"
+ },
+ {
+  "naam": "Phoenix Opleidingen",
+  "oordeel": "Nee",
+  "bewijs": "Coaching-/counselingopleiding gericht op professionele communicatie en persoonlijke ontwikkeling; ervaringsgericht en peer-based leren, geen beoordeeld geschreven werk of examens gevonden. Valt onder coaching/experiential zonder toetsing. Bron: https://www.phoenixopleidingen.nl/",
+  "categorie": "Coach-/counselingopleiding, ervaringsgericht"
+ },
+ {
+  "naam": "Platform Opleiding, Onderwijs en Organisatie B.V.",
+  "oordeel": "Nee",
+  "bewijs": "PLATO is het Platform van de Universiteit Leiden dat 'eindtermen [heeft] samengesteld voor de medische en psychosociale basiskennis' en landelijk examineert voor de complementaire zorg. Functioneert als normzetter/examenbureau voor andere opleiders, niet als opleider die eigen beoordeeld geschreven werk van lerenden nakijkt. Bron: https://conamore.com/faq/wat-is-plato-en-wat-zijn-de-plato-normen/",
+  "categorie": "Normzetter/examenbureau (medische basiskennis), universitair platform"
+ },
+ {
+  "naam": "Politie Opleidingen Centrum Nederland",
+  "oordeel": "Nee",
+  "bewijs": "Particulier opleidingsinstituut voor beveiliging/BOA/politie; leidt op naar externe SVPB-certificaten ('bereidt startende beveiligers voor op het SVPB-certificaat'). Externe examinering (SVPB) + uitgesloten veiligheidssector. Bron: https://pocn.nl/",
+  "categorie": "Beveiligings-/BOA-opleider, externe examinering (SVPB)"
+ },
+ {
+  "naam": "Polteq Opleidingen BV",
+  "oordeel": "Nee",
+  "bewijs": "Software-testopleider; examinering loopt via externe certificeerders ISTQB/iSQI/IREB ('erkend door iSQI Group ... Platinum Partner'). Cursussen 'variërend van een tot vijf dagen'. Externe examinering + korte trajecten. Bron: https://www.polteq.com/nl/opleidingen",
+  "categorie": "IT/software-testopleider, externe certificering (ISTQB/iSQI)"
+ },
+ {
+  "naam": "Porro Opleidingen",
+  "oordeel": "Nee",
+  "bewijs": "Transport/logistiek en rijschool (NIWO in 6 dagen, ADR gevaarlijke stoffen, Code 95). Per onderdeel 'een ochtend informatie, 's middags examen' bij externe instanties. Uitgesloten transport/verkeerssector + externe examinering + korte trajecten. Bron: https://porro-opleidingen.nl/",
+  "categorie": "Transport/logistiek + rijopleiding, externe examens"
+ },
+ {
+  "naam": "PostMDopleidingen",
+  "oordeel": "Ja",
+  "bewijs": "'Zo sluiten alle modules af met een praktijkopdracht.' en 'Bij voldoende resultaat ontvang je het diploma Middenmanagement van PostMDopleidingen.' Studiebelasting '27 bijeenkomsten van een dagdeel en 250 studieuren' = langlopend. Eigen docenten beoordelen, eigen diploma, geen externe examinator. URL: https://www.postmdopleidingen.nl/opleidingen/bedrijfsleven/middenmanagement",
+  "categorie": "Post-hbo management/bedrijfskunde-opleider (eigen diploma)"
+ },
+ {
+  "naam": "PPP Opleidingen Nederland",
+  "oordeel": "Nee",
+  "bewijs": "Tweejarige opleiding Psycho Pastorale Hulpverlening / Praktisch Persoonlijk Pastoraat, ervaringsgericht, doorstroom naar gestalt-familietherapie (Kempler Instituut). Pastoraal/therapeutisch, ervaringsgericht, geen beoordeeld geschreven werk. Valt onder uitgesloten spiritueel/therapeutisch. Bron: https://www.pppopleidingen.nl/vraag-en-aanbod",
+  "categorie": "Pastoraal/psychosociaal-therapeutische opleiding, ervaringsgericht"
+ },
+ {
+  "naam": "PROFESSIONEEL INSTITUUT OPLEIDING FINANCIËN (P.I.O.F.)",
+  "oordeel": "Nee",
+  "bewijs": "Financiële diploma-opleidingen (BKB, PDB, PDL, MBA) die 'worden afgesloten met landelijke examens bij de Associatie voor examinering'. Externe examinering (Associatie voor Examinering staat expliciet op de uitsluitlijst). Bron: https://www.piof.nl",
+  "categorie": "Financieel/boekhoudopleider, externe examinering (Associatie)"
+ },
+ {
+  "naam": "ProFundum Educatie, onderdeel ProFundum Instituut",
+  "oordeel": "Nee",
+  "bewijs": "Bijscholing voor zorgverleners rond bekken/bekkenbodem (o.a. bekkenfysiotherapie). Diverse programma's geven 'een deelnamecertificaat na afronding, zonder eindexamen'. Overwegend korte bijscholingscursussen zonder beoordeeld geschreven werk. Site zelf gaf certificaatfout; bron: https://profundum-educatie.nl/zorgverlener/ en zoekresultaten.",
+  "categorie": "Medische/fysio-bijscholing (zorgverleners), deelnamecertificaten"
+ },
+ {
+  "naam": "Q3P Opleidingen",
+  "oordeel": "Onbekend",
+  "bewijs": "Q3 Consult biedt in de zorg 'trainingen, workshops, modules, opfrisdagen, cursussen'. Format wijst op korte trainingen; geen bewijs van langlopend traject met beoordeeld geschreven werk en geen examenregeling gevonden binnen 3 pagina's. Bron: https://q3consult.nl/",
+  "categorie": "Zorgkwaliteit/veiligheidstrainingen, kort format"
+ },
+ {
+  "naam": "Ratio opleidingen BV",
+  "oordeel": "Onbekend",
+  "bewijs": "Geen website in de CSV en niet online te vinden; geen opleidingsaanbod of examenregeling gevonden binnen 3 zoekacties. Bron: n.v.t. (geen vindbare site).",
+  "categorie": "Onbekend / geen online vindplaats"
+ },
+ {
+  "naam": "ROCAS Opleidingen",
+  "oordeel": "Nee",
+  "bewijs": "Opleidingsinstituut voor pedicure en medisch pedicure (ProVoet branche-opleider); praktijkexamens in Emmen/Amersfoort. Uitgesloten schoonheids-/pedicuresector + branche-examinering. Bron: https://rocas-opleidingen.nl/ en https://rocas-opleidingen.nl/over/",
+  "categorie": "Pedicure/medisch-pedicureopleider (beauty), branche-examen"
+ },
+ {
+  "naam": "Roordink Opleidingen B.V.",
+  "oordeel": "Nee",
+  "bewijs": "Website is www.rijschoolroordink.nl, een rijschool. Rijopleiding/verkeer valt onder de harde sector-uitsluiting (CBR/CCV-examinering, extern).",
+  "categorie": "Rijschool / rijopleiding"
+ },
+ {
+  "naam": "Saasen Opleidingen B.V.",
+  "oordeel": "Nee",
+  "bewijs": "Aanbod op www.saasen.nl: BHV, EHBO, BLS, VCA, Arbo. Dat is exact de uitgesloten sector (VCA/BHV/EHBO), examinering loopt extern via branche-examenbureaus.",
+  "categorie": "Bedrijfshulpverlening / veiligheidstraining"
+ },
+ {
+  "naam": "SANU Opleidingen voor Geneeswijzen",
+  "oordeel": "Nee",
+  "bewijs": "www.sanu.nl biedt alternatieve/energetische geneeswijzen ('Op 9 september starten de opleidingen EAV en Bioresonantie'). Valt onder het uitgesloten alternatief/spiritueel-segment; geen bewijs van beoordeeld langlopend geschreven werk gevonden.",
+  "categorie": "Alternatieve geneeswijzen (EAV/bioresonantie)"
+ },
+ {
+  "naam": "Scheidegger Opleidingen B.V.",
+  "oordeel": "Ja",
+  "bewijs": "'Wanneer je jouw opleiding bij Scheidegger bent gestart, maak je deze gewoon bij Scheidegger af en ontvang je als je geslaagd bent een diploma of certificaat' (www.scheidegger.nl, redirect naar www.ncoi.nl/scheidegger). Scheidegger/NCOI bepaalt zelf geslaagd/gezakt en geeft eigen diploma uit; particuliere opleider administratief/secretarieel die eigen werk beoordeelt.",
+  "categorie": "Particuliere opleider administratief/secretarieel (NCOI-groep)"
+ },
+ {
+  "naam": "Sirion opleidingen",
+  "oordeel": "Nee",
+  "bewijs": "Website www.lichtwerker.nu ('Lichtwerker'), spiritueel/energetisch werk. Valt onder de uitgesloten sector spiritueel/paranormaal.",
+  "categorie": "Spiritueel / lichtwerker"
+ },
+ {
+  "naam": "SMART opleidingen lokale overheden",
+  "oordeel": "Nee",
+  "bewijs": "Op www.smart-solo.nl: 'Medewerkers ... moeten, voordat zij zich via opleidingen verder specialiseren, eerst het examen WOZ-medewerker bij SVMNIVO met goed gevolg afleggen.' Examinering loopt via SVMNIVO (extern examenbureau, staat expliciet op de uitsluitingslijst).",
+  "categorie": "Opleidingen lokale overheden (belastingen/WOZ)"
+ },
+ {
+  "naam": "Sparring Partners Opleidingen",
+  "oordeel": "Nee",
+  "bewijs": "www.thesparringpartners.nl is een trainings-/coachingsbedrijf (vechtkunst-workshops, persoonlijke coaching). Geen examinering of beoordeeld geschreven werk; losse ervaringsgerichte workshops.",
+  "categorie": "Coaching / experiëntiële training"
+ },
+ {
+  "naam": "Stethos Opleidingen & Trainingen",
+  "oordeel": "Onbekend",
+  "bewijs": "www.stethos.nl biedt maatwerktrainingen in zorg/management/administratie ('Iedere training die wij voor u verzorgen is afgestemd op uw vraag'). Geen informatie over wie beoordeelt of over duur gevonden binnen de bekeken pagina; niet te bepalen.",
+  "categorie": "Maatwerk trainingsbureau zorg/management"
+ },
+ {
+  "naam": "Stichting Brandweeropleidingen BOGO",
+  "oordeel": "Nee",
+  "bewijs": "www.bogo.nl levert brandweeropleidingen (Manschap, Bevelvoerder, e.a.); site vermeldt 'Erkend voor het verzorgen van de leergang brandweerduiker' / 'Gecertificeerd voor het verzorgen van brandweeropleidingen'. Examinering brandweer loopt landelijk extern (NIPV), niet door eigen examinatoren.",
+  "categorie": "Brandweeropleidingen"
+ },
+ {
+  "naam": "Stichting opleidingen sfeerkeepers",
+  "oordeel": "Nee",
+  "bewijs": "www.sfeerkeepercollege.nl (redirect sfeerkeeper-college.nl): 'Stichting EPML verzorgt de toetsing en examinering van deze beroepsgroep. Zij zijn verantwoordelijk voor de diploma's en certificering.' Examinering extern via Stichting EPML.",
+  "categorie": "Sfeerbeheer / beveiligingsopleiding"
+ },
+ {
+  "naam": "Stichting Plegan Opleidingen",
+  "oordeel": "Nee",
+  "bewijs": "www.plegan.nl biedt V&VN-geaccrediteerde bijscholing voor verpleegkundigen vanuit antroposofie, incl. ritmische massage. Bijscholingsmodules (deels massage, uitgesloten sector); geen bewijs van beoordeeld langlopend geschreven werk gevonden.",
+  "categorie": "Antroposofische zorg-bijscholing"
+ },
+ {
+  "naam": "Stichting Regionaal Opleidingen Centrum Aventus",
+  "oordeel": "Onbekend",
+  "bewijs": "www.aventus.nl is een publiek ROC (MBO, 200+ opleidingen). MBO-instellingen examineren via eigen examencommissie, maar op de bekeken pagina's staat geen letterlijk citaat over wie beoordeelt/hoe lang; geen site-citaat = Onbekend. Bovendien publiek bekostigd ROC, buiten de particuliere-opleiders-ICP.",
+  "categorie": "Publiek ROC / MBO"
+ },
+ {
+  "naam": "Stichting Sociaal Geneeskundige Opleidingen SSGO",
+  "oordeel": "Onbekend",
+  "bewijs": "Geen website in de CSV en geen bruikbare bron gevonden; medische vervolgopleiding sociale geneeskunde. Niet te bepalen wie beoordeelt of hoe lang.",
+  "categorie": "Medische vervolgopleiding (sociale geneeskunde)"
+ },
+ {
+  "naam": "Stichting VBA Opleidingsinstituut Morreau",
+  "oordeel": "Nee",
+  "bewijs": "cfasociety.nl (CFA Society Netherlands) biedt o.a. het 'CFA program', 'CIPM', 'Advanced Financial Modeler', 'Sustainable Investing Certificate'. De CFA-examens worden extern afgenomen door het CFA Institute (wereldwijd gestandaardiseerd examen), niet door eigen examinatoren.",
+  "categorie": "Financiële beroepscertificering (CFA/RBA)"
+ },
+ {
+  "naam": "Strongwood Opleidingen",
+  "oordeel": "Nee",
+  "bewijs": "Particuliere opleiding tot particulier onderzoeker/detective (merk Skillcove). Wordt afgesloten met het officiele SVPB-examen (externe exameninstantie), niet met eigen beoordeling. Bron: WebSearch resultaat + https://skillcove.nl/opleidingen/particulier-onderzoeker/ - 'concluded with the official SVPB exam ... SVPB diploma is a legal requirement'.",
+  "categorie": "Particuliere beroepsopleiding recherche/detective, extern geexamineerd (SVPB)"
+ },
+ {
+  "naam": "Tienopleidingen",
+  "oordeel": "Nee",
+  "bewijs": "Biedt OR-trainingen (ondernemingsraad), WOR, nieuwe OR en teambuilding. Korte trainingsdagen zonder beoordeeld geschreven werk. Bron: https://www.tienopleidingen.nl/contact/ (via WebSearch): 'OR trainings (Works Council trainings), new OR, WOR, and teambuilding services'.",
+  "categorie": "OR-/teambuilding-trainingen, korte trainingen"
+ },
+ {
+  "naam": "Turbo Theorie Opleidingen BV",
+  "oordeel": "Nee",
+  "bewijs": "Domein turbotheorievrachtwagen.nl: theorie-opleiding vrachtwagen, examen via CBR. Sector-uitsluiting rijopleiding/verkeer (CBR), externe examinering. Bron: domeinnaam website (CSV).",
+  "categorie": "Rijopleiding/theorie vrachtwagen (CBR)"
+ },
+ {
+  "naam": "Twynstra Gudde Opleidingen en Trainingen B.V.",
+  "oordeel": "Onbekend",
+  "bewijs": "Biedt management-/leiderschapstrainingen (project-, programma-, portfolio-, risico-, verandermanagement). Site vermeldt geen wie het werk beoordeelt of beoordeelde eindwerken/scripties. Geen citaat over eigen beoordeling gevonden binnen 3 pagina's. Bron: https://www.twynstragudde.nl/opleidingen.",
+  "categorie": "Professionele management-/consultancytrainingen"
+ },
+ {
+  "naam": "Urologisch Opleidings Instituut",
+  "oordeel": "Nee",
+  "bewijs": "UOI is opgericht door de NVU en regelt de logistiek van de medische vervolgopleiding urologie (specialistenopleiding, 6 jaar). Beoordeling gaat via jaarlijkse kennisexamens binnen het medisch-specialistische kader, geen particulier beoordeeld geschreven werk; valt buiten ICP. Bron: https://www.nvu.nl/opleiding-en-nascholing/uoi/ (via WebSearch).",
+  "categorie": "Medische vervolgopleiding urologie (NVU)"
+ },
+ {
+  "naam": "van Buuren beroepsopleidingen b.v.",
+  "oordeel": "Nee",
+  "bewijs": "vbuuren.nl = Van Buuren Rijopleiding & Training: rijbewijzen (AM/A/B/C/D/taxi), plus Code 95, heftruck, VCA, ADR. Sector-uitsluiting rijopleiding + externe examens (CBR/VCA). Bron: https://www.vbuuren.nl - aanbod 'Rijopleidingen' en 'Trainingen: Code 95, Heftruck, VCA, ADR'.",
+  "categorie": "Rijschool + VCA/heftruck-trainingen"
+ },
+ {
+  "naam": "Van der Staay Opleidingen",
+  "oordeel": "Nee",
+  "bewijs": "Geregistreerd als 'Govers & Van der Staay Training en Coaching', categorie organisatieadvies/training en coaching (Overveen). Coaching-/trainingspraktijk zonder beoordeeld geschreven werk of tweede beoordelaar. Bron: https://www.volgopleidingen.nl/overveen/govers-en-van-der-staay-training-en-coaching (via WebSearch).",
+  "categorie": "Training & coaching / organisatieadvies"
+ },
+ {
+  "naam": "Van Velzen Development opleidingen bv",
+  "oordeel": "Nee",
+  "bewijs": "Trainingen in leiderschap, teamontwikkeling en persoonlijke ontwikkeling, in modules van 1-2 dagen ('trainingen van 1 dag voor maar 349,-', 'Module 1: 6 & 7 mei'). Geen beoordeeld geschreven werk, korte trainingen. Bron: https://vanvelzendevelopment.nl.",
+  "categorie": "Leiderschap-/persoonlijke-ontwikkelingstrainingen"
+ },
+ {
+  "naam": "van Vugt beroepsopleidingen BV",
+  "oordeel": "Nee",
+  "bewijs": "Van Vugt Verkeersopleidingen: rijschool voor auto, motor, bromfiets, aanhanger, trekker en beroepschauffeurs, met eigen theoriecentrum en CBR-examenterrein. Sector-uitsluiting rijopleiding/verkeer (CBR). Bron: https://www.vrsvanvugt.nl/opleidingen/ (via WebSearch).",
+  "categorie": "Verkeersopleidingen/rijschool (CBR)"
+ },
+ {
+  "naam": "Vermeulen opleidingen en vorming",
+  "oordeel": "Nee",
+  "bewijs": "vov-opleidingen.nl biedt 'Opleiding Multi Disciplinair coach/therapeut' met hypnotherapie, regressie en systemisch werken. Valt onder sector-uitsluiting spiritueel/therapie-coaching, geen tweede beoordelaar aangetoond. Bron: https://www.vov-opleidingen.nl - 'Opleiding Multi Disciplinair coach/therapeut ... Hypnotherapie, Regressie, Systemisch werken'.",
+  "categorie": "Coach-/therapeutopleiding (hypnotherapie/regressie)"
+ },
+ {
+  "naam": "Vetraned BHV opleidingen BV",
+  "oordeel": "Nee",
+  "bewijs": "vetraned.nl = BHV-opleidingen. Harde sector-uitsluiting VCA/BHV/EHBO. Bron: domeinnaam/website (CSV).",
+  "categorie": "BHV-opleidingen"
+ },
+ {
+  "naam": "VIP opleidingen BV",
+  "oordeel": "Nee",
+  "bewijs": "vip-rijinstructeuropleiding.nl = opleiding tot rijinstructeur. Sector-uitsluiting rijopleiding/verkeer; rijinstructeur-examinering loopt via IBKI (extern). Bron: domeinnaam/website (CSV).",
+  "categorie": "Rijinstructeuropleiding (IBKI)"
+ },
+ {
+  "naam": "Vita Opleidingen B.V.",
+  "oordeel": "Onbekend",
+  "bewijs": "vitaopleidingen.nl biedt registeropleidingen Medische en Psychosociale Basisvakken en 'Life Science Therapeut' (complementaire therapie). Site noemt alleen 'apart examen gedaan kan worden' zonder te vermelden wie beoordeelt; registeropleidingen basisvakken worden doorgaans extern geexamineerd (SNRO/CPION). Geen citaat over eigen beoordeling. Bron: https://www.vitaopleidingen.nl.",
+  "categorie": "Complementaire therapie / medische basisvakken"
+ },
+ {
+  "naam": "VONK cursussen en bedrijfsopleidingen",
+  "oordeel": "Onbekend",
+  "bewijs": "vonknh.nl = Vonk (groen onderwijs: vmbo, mbo, vavo + cursussen/bedrijfsopleidingen). Voor mbo geldt een eigen examencommissie, maar dit is grotendeels bekostigd onderwijs en de commerciele cursustak toont geen bewijs over wie het werk beoordeelt. Geen citaat gevonden binnen 3 pagina's. Bron: https://www.vonknh.nl.",
+  "categorie": "Groen onderwijs (vmbo/mbo/vavo) + bedrijfscursussen"
+ },
+ {
+  "naam": "Wielwerk Opleidingen",
+  "oordeel": "Nee",
+  "bewijs": "Opleiding tot coach/therapeut volgens de 'Wielwerk-methode', psychosociale therapie en coaching. Valt onder de spiritueel/coach-uitsluiting (holistische therapieopleiding). Bron: https://wielwerkopleidingen.nl/over-wielwerk-opleidingen/ en gatregisteropleidingen.nl (Wielwerk Therapeut).",
+  "categorie": "Particuliere coach-/therapeutopleiding (psychosociaal/holistisch)"
+ },
+ {
+  "naam": "Wolves Opleidingen B.V.",
+  "oordeel": "Nee",
+  "bewijs": "Vrachtwagen-/transportopleiding; examen extern via CBR. Site: 'Het bedrag waar voor betaald is, is inclusief de CBR reservering.' Sector-uitsluiting transport/rijopleiding + externe examinering (CBR). Bron: https://www.vrachtwagenopleiding.nl",
+  "categorie": "Vrachtwagen-/transportopleiding (CBR-examen)"
+ },
+ {
+  "naam": "ZoMa Opleidingen Oost B.V.",
+  "oordeel": "Nee",
+  "bewijs": "Aanbod is 'Opleiding Holistisch Therapeut/Coach', 'Opleiding Spiritueel Coach', 'Opleiding Holistisch Leven' en Reiki-cursussen. Valt onder de spiritueel/paranormaal-uitsluiting. Bron: https://www.zoma-opleidingen.nl",
+  "categorie": "Holistische/spirituele therapeut- en coachopleiding"
+ },
+ {
+  "naam": "ZoMa Opleidingen West BV",
+  "oordeel": "Nee",
+  "bewijs": "Zelfde organisatie en aanbod als ZoMa Oost: holistisch/spiritueel therapeut/coach en Reiki. Spiritueel-uitsluiting. Bron: https://zoma-opleidingen.nl",
+  "categorie": "Holistische/spirituele therapeut- en coachopleiding"
+ },
+ {
+  "naam": "Zonnevlecht Opleidingen",
+  "oordeel": "Nee",
+  "bewijs": "Opleidingen voor coaches, hypnotherapeuten, therapeuten, massagetherapeuten en systemisch werk; oprichter/eigenaar Pauline Trum is de enige hoofdtrainer. Valt onder massage/spiritueel-uitsluiting en eenmanspraktijk zonder tweede beoordelaar. Bron: https://www.zonnevlechtopleidingen.nl",
+  "categorie": "Coach-/hypnotherapie-/massagetherapieopleiding (eenpersoons)"
+ }
+]

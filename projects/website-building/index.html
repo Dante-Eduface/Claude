@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eduface — Book a meeting</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!--
+  NOTE FOR DANTE
+  - Built to FRAMER-BRIEF.md: stacks + grids only, spacing via gap on parents,
+    zero margins, no negative offsets, minmax grids, one token set, one type scale,
+    no animation library. Should be a straight rebuild in Framer, not a redesign.
+  - Every CTA points to the real Calendly link.
+  - Testimonial cards are visible placeholders. No fabricated quotes.
+  - Footer legal links are "#" placeholders.
+  - The three facts under the hero panel are product facts, NOT compliance badges.
+    I have no source that we hold GDPR / ISO 27001 / SOC2. Send the list if we do.
+  - Accuracy stat = average point-difference from the lecturer's grade, never "% accurate".
+  - Colour = meaning: green approved, amber needs you, sky data moving, violet live oral.
+
+  BOUWOPDRACHT 14-08-2026, wat er in deze ronde bij is gekomen
+  - Sectie 0: vijf transition presets staan bovenin styles.css. Nergens meer losse waarden.
+    Hover verandert overal alleen kleur, geen schaal, lift of verplaatsing.
+  - Sectie 1: elke "Book a meeting" opent de Calendly modal op de pagina zelf.
+    Tilburg (en Haagse) staan nu op dezelfde grijswaarde als de rest.
+  - Sectie 2: sectiepadding terug naar 48px boven en onder, dus 96px tussen secties.
+  - Sectie 3: avatarkaartjes zijn een doorlopende ticker, twee rijen, tegengesteld, 20px/s.
+    NOG OPEN: de AI-gegenereerde studentfoto's. Ik kan hier geen beelden genereren,
+    dus de avatars zijn nog initialen. Foto's aanleveren in images/ en de img-slot vullen.
+  - Sectie 4: knop halverwege en aan het eind van de producten, beta-toelichting,
+    Six submodels terug (Law volledig, de andere vijf wachten op content), gemarkeerde
+    brontekst bij AI Feedback, micro-animaties per productkaart.
+  - Sectie 5: compliance-blok terug, iconen in het stroomdiagram, cijfers tellen op.
+  - Sectie 6: schaal onder de puntenclaim (staat nu op 0-100, BEVESTIGEN), officiële
+    LMS-logo's in plaats van de letterblokjes.
+-->
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="nav-pill nav-pill-brand">
+      <a href="#top" class="nav-logo"><img src="brand_assets/logos/logo_navy.png" alt="Eduface"></a>
+    </div>
+    <div class="nav-pill navseg" id="navseg">
+      <a href="#offer" data-sec="offer">What you get</a>
+      <a href="#products" data-sec="products">Products</a>
+      <a href="#trust" data-sec="trust">Why Eduface</a>
+      <a href="#integrations" data-sec="integrations">Integrations</a>
+      <a href="#faq" data-sec="faq">FAQ</a>
+    </div>
+    <div class="nav-pill nav-pill-cta">
+      <a class="btn btn-navy btn-sm" href="https://calendly.com/eduface/30min?back=1" data-calendly><span>Book a meeting</span></a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero sect sect-flush-bottom">
+    <div class="shell">
+      <div class="wrap hero-stack">
+        <h1 class="t-h1 hero-h">Mark paper 140 like you marked paper one</h1>
+        <p class="t-lead c-muted hero-lede">Eduface drafts the feedback and the grade. You approve it. Students never see anything you didn't sign off.</p>
+        <div class="hero-cta">
+          <a class="btn btn-green" href="https://calendly.com/eduface/30min?back=1" data-calendly><span>Book a meeting</span></a>
+          <a class="btn btn-line" href="#products"><span>See the products</span></a>
+        </div>
+
+        <div class="hero-stage">
+          <div class="fcard fc-back on-dark">
+            <div class="fcard-row">
+              <span class="t-body grow" style="font-weight:600">Research Methods</span>
+              <span class="t-small">12 of 140</span>
+            </div>
+            <div class="fcard-row">
+              <span class="t-small grow">Status</span>
+              <span class="t-small" style="color:var(--on-navy)">Awaiting you</span>
+            </div>
+          </div>
+        <div class="cast-card">
+          <svg class="cast-svg" viewBox="0 0 900 300" role="img" aria-label="Eduface drafts a mark on each paper. The lecturer approves it by hand. The approved papers stack up on the right.">
+            <title>Eduface drafts, you approve</title>
+
+            <path class="cast-path" d="M105 214 C150 168, 190 164, 228 170 C300 182, 360 176, 435 168 C500 162, 534 180, 572 190"/>
+            <line class="cast-line" x1="40" y1="256" x2="860" y2="256" stroke="#cdd9de" stroke-width="2.4" stroke-linecap="round"/>
+
+            <!-- ============ DE ONGELEZEN STAPEL ============ -->
+            <g class="mv-stack">
+              <rect class="pap" x="62" y="238" width="86" height="9" rx="3"/>
+              <rect class="pap" x="66" y="229" width="86" height="9" rx="3"/>
+              <rect class="pap" x="61" y="220" width="86" height="9" rx="3"/>
+            </g>
+            <path class="ln" d="M52 242 l0 10 q0 8 8 8 l92 0 q8 0 8 -8 l0 -10"/>
+            <text x="105" y="282" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="500" fill="#2c4a57">140 to mark</text>
+
+            <!-- ============ DE ASSISTENT: schrijft het concept ============ -->
+            <g class="mv-float">
+              <rect class="fl-w" x="228" y="78" width="58" height="58" rx="20"/>
+              <g class="mv-eyes-b">
+                <circle class="fl-n" cx="247" cy="104" r="3.1"/>
+                <circle class="fl-n" cx="267" cy="104" r="3.1"/>
+              </g>
+              <path class="ln-t" d="M248 116 q9 8 18 0"/>
+            </g>
+            <text x="257" y="64" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="500" fill="#2c4a57" class="cast-cap">Eduface drafts</text>
+
+            <!-- ============ DE BEOORDELAAR: zet zelf het vinkje ============ -->
+            <g class="mv-body">
+              <path class="fl-w" d="M667 118 L667 152 L693 152 L693 118 Z"/>
+              <path class="fl-w" d="M634 256 L634 176 a28 28 0 0 1 28 -28 L698 148 a28 28 0 0 1 28 28 L726 256 Z"/>
+              <path class="ln-t" d="M666 151 l14 18 l14 -18"/>
+              <g class="mv-nod">
+                <path class="fl-n cast-hair" d="M648 102 q-5 -48 32 -48 q37 0 32 48 q-7 -27 -32 -27 q-25 0 -32 27 Z"/>
+                <circle class="fl-w" cx="680" cy="98" r="31"/>
+                <rect class="ln-t" x="655" y="90" width="21" height="16" rx="6"/>
+                <rect class="ln-t" x="684" y="90" width="21" height="16" rx="6"/>
+                <line class="ln-t" x1="676" y1="98" x2="684" y2="98"/>
+                <g class="mv-eyes">
+                  <circle class="fl-n" cx="665.5" cy="98" r="2.9"/>
+                  <circle class="fl-n" cx="694.5" cy="98" r="2.9"/>
+                </g>
+                <path class="ln-t" d="M672 115 q8 7 16 0"/>
+              </g>
+            </g>
+            <!-- ============ DE VELLEN ONDERWEG ============ -->
+            <g class="mv-sheet mv-sheet-3">
+              <rect class="pap" x="72" y="192" width="66" height="48" rx="6"/>
+              <line class="ln-t cast-line" x1="82" y1="205" x2="128" y2="205"/>
+              <line class="ln-t cast-line" x1="82" y1="215" x2="120" y2="215"/>
+              <line class="ln-t cast-line" x1="82" y1="225" x2="112" y2="225"/>
+              <g class="mv-chip mv-chip-3">
+                <rect class="cast-chip" x="58" y="178" width="42" height="24" rx="11"/>
+                <text class="cast-chip-t" x="79" y="195" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="700">68</text>
+              </g>
+              <g class="mv-stamp mv-stamp-3">
+                <circle class="fl-g" cx="138" cy="228" r="13"/>
+                <path d="M132 228.5 l4.5 4.5 l8 -9" fill="none" class="cast-tick" stroke="#002333" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+            </g>
+            <g class="mv-sheet mv-sheet-2">
+              <rect class="pap" x="72" y="192" width="66" height="48" rx="6"/>
+              <line class="ln-t cast-line" x1="82" y1="205" x2="128" y2="205"/>
+              <line class="ln-t cast-line" x1="82" y1="215" x2="120" y2="215"/>
+              <line class="ln-t cast-line" x1="82" y1="225" x2="112" y2="225"/>
+              <g class="mv-chip mv-chip-2">
+                <rect class="cast-chip" x="58" y="178" width="42" height="24" rx="11"/>
+                <text class="cast-chip-t" x="79" y="195" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="700">68</text>
+              </g>
+              <g class="mv-stamp mv-stamp-2">
+                <circle class="fl-g" cx="138" cy="228" r="13"/>
+                <path d="M132 228.5 l4.5 4.5 l8 -9" fill="none" class="cast-tick" stroke="#002333" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+            </g>
+            <g class="mv-sheet">
+              <rect class="pap" x="72" y="192" width="66" height="48" rx="6"/>
+              <line class="ln-t cast-line" x1="82" y1="205" x2="128" y2="205"/>
+              <line class="ln-t cast-line" x1="82" y1="215" x2="120" y2="215"/>
+              <line class="ln-t cast-line" x1="82" y1="225" x2="112" y2="225"/>
+              <g class="mv-chip">
+                <rect class="cast-chip" x="58" y="178" width="42" height="24" rx="11"/>
+                <text class="cast-chip-t" x="79" y="195" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="700">68</text>
+              </g>
+              <g class="mv-stamp">
+                <circle class="fl-g" cx="138" cy="228" r="13"/>
+                <path d="M132 228.5 l4.5 4.5 l8 -9" fill="none" class="cast-tick" stroke="#002333" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+            </g>
+
+            <!-- de hand van de beoordelaar ligt BOVEN het passerende vel: hij zet het vinkje -->
+            <g class="mv-body">
+              <path class="ln" d="M638 192 q-30 2 -42 20"/>
+              <circle class="fl-w" cx="594" cy="214" r="9"/>
+            </g>
+
+            <text x="680" y="42" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="500" fill="#2c4a57" class="cast-cap">You approve</text>
+
+            <!-- ============ DE GOEDGEKEURDE STAPEL ============ -->
+            <g>
+              <rect class="pap" x="762" y="238" width="80" height="9" rx="3"/>
+              <rect class="pap" x="766" y="229" width="80" height="9" rx="3"/>
+              <circle class="fl-g" cx="772" cy="220" r="11"/>
+              <path d="M767 220.5 l3.8 3.8 l6.8 -7.6" fill="none" class="cast-tick" stroke="#002333" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <path class="ln" d="M754 242 l0 10 q0 8 8 8 l86 0 q8 0 8 -8 l0 -10"/>
+            <text x="805" y="282" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="500" fill="#2c4a57">Signed off by you</text>
+          </svg>
+          <svg class="cast-svg cast-mobile" viewBox="0 0 300 620" role="img" aria-label="Eduface drafts a mark on each paper. The lecturer approves it. The approved papers stack up below.">
+            <title>Eduface drafts, you approve</title>
+            <path class="cast-path" d="M150 122 C154 146, 156 170, 156 194 C156 250, 154 300, 160 330 C163 352, 164 372, 165 390 C167 430, 158 464, 152 494"/>
+
+            <g class="mv-stack">
+              <rect class="pap" x="104" y="76" width="92" height="10" rx="3"/>
+              <rect class="pap" x="108" y="66" width="92" height="10" rx="3"/>
+              <rect class="pap" x="103" y="56" width="92" height="10" rx="3"/>
+            </g>
+            <path class="ln" d="M94 80 l0 10 q0 8 8 8 l98 0 q8 0 8 -8 l0 -10"/>
+            <text x="150" y="124" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="500" fill="#2c4a57">140 to mark</text>
+
+            <g class="mv-float">
+              <rect class="fl-w" x="24" y="160" width="58" height="58" rx="20"/>
+              <g class="mv-eyes-b">
+                <circle class="fl-n" cx="43" cy="186" r="3.1"/>
+                <circle class="fl-n" cx="63" cy="186" r="3.1"/>
+              </g>
+              <path class="ln-t" d="M44 198 q9 8 18 0"/>
+            </g>
+            <text x="53" y="242" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="500" fill="#2c4a57" class="cast-cap">Eduface drafts</text>
+
+            <g class="mv-body">
+              <path class="fl-w" d="M209 366 L209 400 L235 400 L235 366 Z"/>
+              <path class="fl-w" d="M176 504 L176 424 a28 28 0 0 1 28 -28 L240 396 a28 28 0 0 1 28 28 L268 504 Z"/>
+              <path class="ln-t" d="M208 399 l14 18 l14 -18"/>
+              <g class="mv-nod">
+                <path class="fl-n cast-hair" d="M190 350 q-5 -48 32 -48 q37 0 32 48 q-7 -27 -32 -27 q-25 0 -32 27 Z"/>
+                <circle class="fl-w" cx="222" cy="346" r="31"/>
+                <rect class="ln-t" x="197" y="338" width="21" height="16" rx="6"/>
+                <rect class="ln-t" x="226" y="338" width="21" height="16" rx="6"/>
+                <line class="ln-t" x1="218" y1="346" x2="226" y2="346"/>
+                <g class="mv-eyes">
+                  <circle class="fl-n" cx="207.5" cy="346" r="2.9"/>
+                  <circle class="fl-n" cx="236.5" cy="346" r="2.9"/>
+                </g>
+                <path class="ln-t" d="M214 363 q8 7 16 0"/>
+              </g>
+            </g>
+            <text x="222" y="292" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="500" fill="#2c4a57" class="cast-cap">You approve</text>
+
+            <g class="mv-msheet mv-sheet-3">
+              <rect class="pap" x="117" y="96" width="66" height="48" rx="6"/>
+              <line class="ln-t cast-line" x1="127" y1="109" x2="173" y2="109"/>
+              <line class="ln-t cast-line" x1="127" y1="119" x2="165" y2="119"/>
+              <line class="ln-t cast-line" x1="127" y1="129" x2="157" y2="129"/>
+              <g class="mv-mchip mv-chip-3">
+                <rect class="cast-chip" x="103" y="82" width="42" height="24" rx="11"/>
+                <text class="cast-chip-t" x="124" y="99" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="700">68</text>
+              </g>
+              <g class="mv-mstamp mv-stamp-3">
+                <circle class="fl-g" cx="183" cy="132" r="13"/>
+                <path d="M177 132.5 l4.5 4.5 l8 -9" fill="none" class="cast-tick" stroke="#002333" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+            </g>
+            <g class="mv-msheet mv-sheet-2">
+              <rect class="pap" x="117" y="96" width="66" height="48" rx="6"/>
+              <line class="ln-t cast-line" x1="127" y1="109" x2="173" y2="109"/>
+              <line class="ln-t cast-line" x1="127" y1="119" x2="165" y2="119"/>
+              <line class="ln-t cast-line" x1="127" y1="129" x2="157" y2="129"/>
+              <g class="mv-mchip mv-chip-2">
+                <rect class="cast-chip" x="103" y="82" width="42" height="24" rx="11"/>
+                <text class="cast-chip-t" x="124" y="99" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="700">68</text>
+              </g>
+              <g class="mv-mstamp mv-stamp-2">
+                <circle class="fl-g" cx="183" cy="132" r="13"/>
+                <path d="M177 132.5 l4.5 4.5 l8 -9" fill="none" class="cast-tick" stroke="#002333" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+            </g>
+            <g class="mv-msheet">
+              <rect class="pap" x="117" y="96" width="66" height="48" rx="6"/>
+              <line class="ln-t cast-line" x1="127" y1="109" x2="173" y2="109"/>
+              <line class="ln-t cast-line" x1="127" y1="119" x2="165" y2="119"/>
+              <line class="ln-t cast-line" x1="127" y1="129" x2="157" y2="129"/>
+              <g class="mv-mchip">
+                <rect class="cast-chip" x="103" y="82" width="42" height="24" rx="11"/>
+                <text class="cast-chip-t" x="124" y="99" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="700">68</text>
+              </g>
+              <g class="mv-mstamp">
+                <circle class="fl-g" cx="183" cy="132" r="13"/>
+                <path d="M177 132.5 l4.5 4.5 l8 -9" fill="none" class="cast-tick" stroke="#002333" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+            </g>
+
+            <g class="mv-body">
+              <path class="ln" d="M180 436 q-14 -26 -14 -44"/>
+              <circle class="fl-w" cx="165" cy="388" r="9"/>
+            </g>
+
+            <g>
+              <rect class="pap" x="96" y="538" width="86" height="10" rx="3"/>
+              <rect class="pap" x="100" y="528" width="86" height="10" rx="3"/>
+              <circle class="fl-g" cx="106" cy="520" r="11"/>
+              <path d="M101 520.5 l3.8 3.8 l6.8 -7.6" fill="none" class="cast-tick" stroke="#002333" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <path class="ln" d="M88 542 l0 10 q0 8 8 8 l92 0 q8 0 8 -8 l0 -10"/>
+            <text x="140" y="586" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="500" fill="#2c4a57">Signed off by you</text>
+          </svg>
+
+        </div>
+          <div class="fcard fc-front on-dark">
+            <div class="fcard-row">
+              <span class="t-body grow">Tie the thesis back to your research question</span>
+            </div>
+            <div class="fcard-row">
+              <span class="t-small grow">Criterion 1</span>
+              <span class="pill pill-approve"><span>Approve</span></span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="dark-block on-dark rv-hero">
+          <div class="db-stage">
+            <div class="db-grid">
+
+              <div class="dcard db-side">
+                <span class="t-key c-on-dark-faint">Submission</span>
+                <div class="who-row">
+                  <span class="av av-green" style="width:42px;height:42px"><span>SV</span></span>
+                  <span class="who-name">
+                    <span class="t-body c-on-dark" style="font-weight:600">S. de Vries</span>
+                    <span class="t-small c-on-dark-faint">Essay · draft 3</span>
+                  </span>
+                </div>
+                <div class="who-meta">
+                  <div class="meta-row"><span class="t-small c-on-dark-faint grow">In batch</span><span class="t-small c-on-dark">12 of 140</span></div>
+                  <div class="meta-row"><span class="t-small c-on-dark-faint grow">Rubric</span><span class="t-small c-on-dark">Research Methods</span></div>
+                  <div class="meta-row"><span class="t-small c-on-dark-faint grow">Status</span><span class="t-small c-on-dark">Awaiting you</span></div>
+                </div>
+                <div class="who-meta">
+                  <div class="meta-row"><span class="t-small c-on-dark-faint grow">Issue identification</span><span class="t-small c-green">8 / 10</span></div>
+                  <div class="meta-row"><span class="t-small c-on-dark-faint grow">Use of sources</span><span class="t-small c-green">9 / 10</span></div>
+                  <div class="meta-row"><span class="t-small c-on-dark-faint grow">Depth of analysis</span><span class="t-small c-amber">Review</span></div>
+                </div>
+              </div>
+
+              <div class="dcard db-main">
+                <span class="t-key c-on-dark-faint">Feedback drafted, waiting on you</span>
+                <div class="stack">
+                  <div class="cmt cmt-front">
+                    <span class="cmt-mark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#00E075" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                    <span class="cmt-t grow">
+                      <span class="t-body c-on-dark" style="font-weight:500">Tie the thesis back to your research question</span>
+                      <span class="t-micro c-on-dark-faint">Criterion 1 · Issue identification</span>
+                    </span>
+                    <span class="pill pill-green"><span>Approve</span></span>
+                  </div>
+                  <div class="cmt back-1">
+                    <span class="cmt-mark"></span>
+                    <span class="cmt-t grow"><span class="t-body c-on-dark">Source is strong, link it to criterion 2</span></span>
+                    <span class="pill pill-green"><span>Approve</span></span>
+                  </div>
+                  <div class="cmt back-2">
+                    <span class="cmt-mark"></span>
+                    <span class="cmt-t grow"><span class="t-body c-on-dark">Conclusion restates, it does not conclude</span></span>
+                    <span class="pill pill-green"><span>Approve</span></span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="db-facts">
+            <span class="fact">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#00E075" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="t-body c-on-dark-soft">You approve every comment</span>
+            </span>
+            <span class="fact">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h10" stroke="#4D9FFF" stroke-width="2.4" stroke-linecap="round"/></svg>
+              <span class="t-body c-on-dark-soft">Scored against your own rubric</span>
+            </span>
+            <span class="fact">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M12 8v5m0 3.5v.01M12 3l9 16H3l9-16Z" stroke="#F0A531" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="t-body c-on-dark-soft">Low confidence is flagged, not guessed</span>
+            </span>
+          </div>
+
+          <div class="db-foot">
+            <span class="t-body c-muted">Used by teams from</span>
+            <div class="logo-wall">
+              <span class="logo-cell"><img src="brand_assets/schools/rotterdam.svg" alt="Hogeschool Rotterdam"></span>
+              <span class="logo-cell"><img src="brand_assets/schools/haagse.png" alt="De Haagse Hogeschool" class="ink"></span>
+              <!-- Tilburg stond lichter dan de rest, dus een extra donkerzet-filter -->
+              <span class="logo-cell"><img src="brand_assets/schools/tilburg.svg" alt="Tilburg University" class="xl ink"></span>
+              <span class="logo-cell"><img src="brand_assets/schools/leiden.svg" alt="Universiteit Leiden" class="tall"></span>
+              <span class="logo-cell"><img src="brand_assets/schools/radboud.svg" alt="Radboud Universiteit"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHAT YOU GET ===== -->
+  <section id="offer" class="sect">
+    <div class="shell">
+      <div class="wrap sect-stack">
+        <div class="head center">
+          <h2 class="t-h2">Marking that stops eating your week</h2>
+          <p class="t-body-lg c-muted">Not a tool you have to learn. A pile that is already half done when you sit down.</p>
+        </div>
+
+        <!-- Reveal per kaart, één voor één binnen tijdens het scrollen -->
+        <div class="offer">
+          <div class="offer-card rv" style="--d:0ms">
+            <svg class="mini" viewBox="0 0 268 128" role="img" aria-label="Three submissions in the batch flip from awaiting to read, one after another.">
+              <rect class="m-row" x="6" y="8" width="256" height="34" rx="12"/>
+              <text class="m-txt-b" x="20" y="29">L. Jansen</text>
+              <text class="m-txt" x="150" y="29">Read</text>
+              <circle class="m-ring mv-ring" cx="238" cy="25" r="10"/>
+              <g class="mv-tick"><circle class="fl-g" cx="238" cy="25" r="10"/><path d="M233 25.4 l3.6 3.6 l6.6 -7.4" fill="none" stroke="#002333" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></g>
+
+              <rect class="m-row" x="6" y="47" width="256" height="34" rx="12"/>
+              <text class="m-txt-b" x="20" y="68">M. Bakker</text>
+              <text class="m-txt" x="150" y="68">Read</text>
+              <circle class="m-ring mv-ring mv-ring-2" cx="238" cy="64" r="10"/>
+              <g class="mv-tick mv-tick-2"><circle class="fl-g" cx="238" cy="64" r="10"/><path d="M233 64.4 l3.6 3.6 l6.6 -7.4" fill="none" stroke="#002333" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></g>
+
+              <rect class="m-row" x="6" y="86" width="256" height="34" rx="12"/>
+              <text class="m-txt-b" x="20" y="107">R. Dijkstra</text>
+              <text class="m-txt" x="150" y="107">Read</text>
+              <circle class="m-ring mv-ring mv-ring-3" cx="238" cy="103" r="10"/>
+              <g class="mv-tick mv-tick-3"><circle class="fl-g" cx="238" cy="103" r="10"/><path d="M233 103.4 l3.6 3.6 l6.6 -7.4" fill="none" stroke="#002333" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></g>
+            </svg>
+            <h3 class="t-h5">Your Sunday back</h3>
+            <p class="t-body c-muted">Open the batch and the reading is done. You are reviewing judgements, not starting from a blank page 140 times.</p>
+          </div>
+          <div class="offer-card rv" style="--d:140ms">
+            <svg class="mini" viewBox="0 0 268 128" role="img" aria-label="Paper 1 and paper 140 score identically on the same three criteria."><text class="m-txt-b" x="14" y="20">Paper 1</text><text class="m-txt" x="14" y="34">Structure</text><rect class="m-bar" x="14" y="40" width="88" height="7" rx="3.5"/><rect class="m-bar-on mv-bar" x="14" y="40" width="64" height="7" rx="3.5"/><text class="m-txt-b" x="110" y="47">8</text><text class="m-txt" x="14" y="62">Sources</text><rect class="m-bar" x="14" y="68" width="88" height="7" rx="3.5"/><rect class="m-bar-on mv-bar mv-bar-2" x="14" y="68" width="72" height="7" rx="3.5"/><text class="m-txt-b" x="110" y="75">9</text><text class="m-txt" x="14" y="90">Analysis</text><rect class="m-bar" x="14" y="96" width="88" height="7" rx="3.5"/><rect class="m-bar-on mv-bar mv-bar-3" x="14" y="96" width="56" height="7" rx="3.5"/><text class="m-txt-b" x="110" y="103">7</text><line x1="134" y1="12" x2="134" y2="116" stroke="#cdd9de" stroke-width="1.6" stroke-dasharray="2 6" stroke-linecap="round"/><text class="m-txt-b" x="150" y="20">Paper 140</text><text class="m-txt" x="150" y="34">Structure</text><rect class="m-bar" x="150" y="40" width="88" height="7" rx="3.5"/><rect class="m-bar-on mv-bar" x="150" y="40" width="64" height="7" rx="3.5"/><text class="m-txt-b" x="246" y="47">8</text><text class="m-txt" x="150" y="62">Sources</text><rect class="m-bar" x="150" y="68" width="88" height="7" rx="3.5"/><rect class="m-bar-on mv-bar mv-bar-2" x="150" y="68" width="72" height="7" rx="3.5"/><text class="m-txt-b" x="246" y="75">9</text><text class="m-txt" x="150" y="90">Analysis</text><rect class="m-bar" x="150" y="96" width="88" height="7" rx="3.5"/><rect class="m-bar-on mv-bar mv-bar-3" x="150" y="96" width="56" height="7" rx="3.5"/><text class="m-txt-b" x="246" y="103">7</text></svg>
+            <h3 class="t-h5">The same standard, all the way down</h3>
+            <p class="t-body c-muted">Paper 1 and paper 140 get read against the same rubric with the same care. No drift because it is late.</p>
+          </div>
+          <div class="offer-card rv" style="--d:280ms">
+            <svg class="mini" viewBox="0 0 268 128" role="img" aria-label="Feedback lands on draft two, weeks before the deadline.">
+              <line x1="24" y1="84" x2="244" y2="84" stroke="#cdd9de" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="34" cy="84" r="5" fill="#a9bcc4"/>
+              <circle cx="108" cy="84" r="5" fill="#a9bcc4"/>
+              <circle cx="234" cy="84" r="5" fill="#a9bcc4"/>
+              <text class="m-txt" x="24" y="106">Draft 1</text>
+              <text class="m-txt" x="90" y="106">Draft 2</text>
+              <text class="m-txt" x="198" y="106">Deadline</text>
+              <g class="mv-marker">
+                <circle class="fl-g" cx="34" cy="84" r="9"/>
+                <path d="M29 84.4 l3.4 3.4 l6.2 -7" fill="none" stroke="#002333" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <g class="mv-callout">
+                <rect class="m-row" x="60" y="20" width="106" height="36" rx="12"/>
+                <text class="m-txt-b" x="72" y="36">Feedback</text>
+                <text class="m-txt-b" x="72" y="50">lands here</text>
+                <path d="M108 56 l0 18" stroke="#cdd9de" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 5"/>
+              </g>
+            </svg>
+            <h3 class="t-h5">Students fix it while it counts</h3>
+            <p class="t-body c-muted">Feedback on draft two, not two weeks after the deadline. They get to act on it before the grade is fixed.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COHORT ===== -->
+  <section class="sect band-card">
+    <div class="sect-stack">
+      <div class="shell">
+        <div class="wrap">
+          <div class="head center">
+            <h2 class="t-h2">See who has handed in, at a glance</h2>
+            <p class="t-body-lg c-muted">Students submit where they always did. It lands here, already read.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cohort-shell">
+        <div class="cohort-rail">
+
+          <div class="laptop">
+            <div class="laptop-lid">
+              <div class="laptop-screen">
+                <div class="app-top">
+                  <div class="app-crumb">
+                    <span class="t-small c-faint">Eduface</span><span class="t-small c-faint">›</span>
+                    <span class="t-small c-faint">Courses</span><span class="t-small c-faint">›</span>
+                    <span class="t-small c-faint">Business Administration</span><span class="t-small c-faint">›</span>
+                    <span class="t-small" style="font-weight:600">Investment Advice</span>
+                  </div>
+                </div>
+                <div class="app-body">
+                  <div class="app-rail">
+                    <span class="app-rail-item on"></span><span class="app-rail-item"></span><span class="app-rail-item"></span><span class="app-rail-item"></span>
+                  </div>
+                  <div class="app-main">
+                    <div class="app-h">
+                      <div class="app-h-t grow">
+                        <h4 class="t-h4">Investment Advice</h4>
+                        <p class="t-body c-muted">View and manage submissions for this assignment.</p>
+                      </div>
+                      <div class="app-h-acts">
+                        <span class="app-btn"><span>Manage rubric</span></span>
+                        <span class="app-btn pri navy"><span>Upload submission</span></span>
+                      </div>
+                    </div>
+                    <div class="app-table">
+                      <div class="app-tr th"><span class="t-key c-faint">Student</span><span class="t-key c-faint">Document</span><span class="t-key c-faint">Submitted on</span><span class="t-key c-faint">Status</span></div>
+                      <div class="app-tr"><span class="t-small" style="font-weight:600">L. Jansen</span><span class="t-small c-muted doc">Jansen_InvestmentAdvice.pdf</span><span class="t-small c-faint">13 Aug, 15:46</span><span><span class="pill pill-green"><span>Processed</span></span></span></div>
+                      <div class="app-tr"><span class="t-small" style="font-weight:600">M. Bakker</span><span class="t-small c-muted doc">Bakker_InvestmentAdvice.pdf</span><span class="t-small c-faint">13 Aug, 12:04</span><span><span class="pill pill-green"><span>Processed</span></span></span></div>
+                      <div class="app-tr"><span class="t-small" style="font-weight:600">R. Dijkstra</span><span class="t-small c-muted doc">Dijkstra_InvestmentAdvice.pdf</span><span class="t-small c-faint">13 Aug, 09:31</span><span><span class="pill pill-amber"><span>Needs review</span></span></span></div>
+                      <div class="app-tr"><span class="t-small" style="font-weight:600">S. de Vries</span><span class="t-small c-muted doc">DeVries_InvestmentAdvice.pdf</span><span class="t-small c-faint">12 Aug, 22:18</span><span><span class="pill pill-green"><span>Processed</span></span></span></div>
+                      <div class="app-tr"><span class="t-small" style="font-weight:600">T. Visser</span><span class="t-small c-muted doc">Visser_InvestmentAdvice.pdf</span><span class="t-small c-faint">12 Aug, 19:52</span><span><span class="pill pill-sky"><span>Grading</span></span></span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="laptop-foot"><div class="laptop-notch"></div></div>
+          </div>
+
+          <!--
+            TICKER. Twee rijen, tegengestelde richting, 20 px/s, lineair, randgradient.
+            In Framer: de ingebouwde Ticker-component met speed 20 en direction left/right,
+            geen eigen implementatie. Die dupliceert de reeks zelf; hier doet het script
+            onderaan dat, zodat de lus naadloos is zonder de markup te verdubbelen.
+            TODO foto's: de avatars zijn nu nog initialen. Zodra de AI-gegenereerde
+            studentfoto's er zijn: <span class="av"><img src="images/student-x.jpg" alt=""></span>.
+          -->
+          <div class="ticker">
+            <div class="tick-fade l"></div>
+            <div class="tick-fade r"></div>
+
+            <div class="tick-row"><div class="tick-track">
+              <div class="sc"><span class="av av-mint"><span>LJ</span></span><span class="sc-t"><span class="t-body" style="font-weight:600">L. Jansen</span><span class="sc-st"><span class="sc-dot"></span><span class="t-micro c-faint">Submitted · 2h ago</span></span></span></div>
+              <div class="sc"><span class="av av-sky"><span>MB</span></span><span class="sc-t"><span class="t-body" style="font-weight:600">M. Bakker</span><span class="sc-st"><span class="sc-dot"></span><span class="t-micro c-faint">Submitted · 5h ago</span></span></span></div>
+              <div class="sc"><span class="av av-amber"><span>RD</span></span><span class="sc-t"><span class="t-body" style="font-weight:600">R. Dijkstra</span><span class="sc-st"><span class="sc-dot"></span><span class="t-micro c-faint">Submitted · 3h ago</span></span></span></div>
+              <div class="sc"><span class="av av-green"><span>SV</span></span><span class="sc-t"><span class="t-body" style="font-weight:600">S. de Vries</span><span class="sc-st"><span class="sc-dot"></span><span class="t-micro c-faint">Submitted · 6h ago</span></span></span></div>
+              <div class="sc"><span class="av av-violet"><span>TV</span></span><span class="sc-t"><span class="t-body" style="font-weight:600">T. Visser</span><span class="sc-st"><span class="sc-dot"></span><span class="t-micro c-faint">Submitted · 1d ago</span></span></span></div>
+              <div class="sc"><span class="av av-navy"><span>KM</span></span><span class="sc-t"><span class="t-body" style="font-weight:600">K. Meijer</span><span class="sc-st"><span class="sc-dot"></span><span class="t-micro c-faint">Submitted · 1d ago</span></span></span></div>
+              <div class="sc"><span class="av av-sky"><span>AY</span></span><span class="sc-t"><span class="t-body" style="font-weight:600">A. Yıldız</span><span class="sc-st"><span class="sc-dot"></span><span class="t-micro c-faint">Submitted · 4h ago</span></span></span></div>
+              <div class="sc"><span class="av av-mint"><span>NA</span></span><span class="sc-t"><span class="t-body" style="font-weight:600">N. Adeyemi</span><span class="sc-st"><span class="sc-dot"></span><span class="t-micro c-faint">Submitted · 8h ago</span></span></span></div>
+            </div></div>
+
+            <div class="tick-row rev"><div class="tick-track">
+              <div class="sc"><span class="av av-amber"><span>JO</span></span><span class="sc-t"><span class="t-body" style="font-weight:600">J. O'Connor</span><span class="sc-st"><span class="sc-dot"></span><span class="t-micro c-faint">Submitted · 1h ago</span></span></span></div>
+              <div class="sc"><span class="av av-green"><span>PN</span></span><span class="sc-t"><span class="t-body" style="font-weight:600">P. Nowak</span><span class="sc-st"><span class="sc-dot"></span><span class="t-micro c-faint">Submitted · 7h ago</span></span></span></div>
+              <div class="sc"><span class="av av-violet"><span>EH</span></span><span class="sc-t"><span class="t-body" style="font-weight:600">E. Haddad</span><span class="sc-st"><span class="sc-dot"></span><span class="t-micro c-faint">Submitted · 9h ago</span></span></span></div>
+              <div class="sc"><span class="av av-navy"><span>CW</span></span><span class="sc-t"><span class="t-body" style="font-weight:600">C. Wong</span><span class="sc-st"><span class="sc-dot"></span><span class="t-micro c-faint">Submitted · 2h ago</span></span></span></div>
+              <div class="sc"><span class="av av-mint"><span>FD</span></span><span class="sc-t"><span class="t-body" style="font-weight:600">F. van Dijk</span><span class="sc-st"><span class="sc-dot"></span><span class="t-micro c-faint">Submitted · 5h ago</span></span></span></div>
+              <div class="sc"><span class="av av-sky"><span>HA</span></span><span class="sc-t"><span class="t-body" style="font-weight:600">H. Ahmed</span><span class="sc-st"><span class="sc-dot"></span><span class="t-micro c-faint">Submitted · 1d ago</span></span></span></div>
+              <div class="sc"><span class="av av-amber"><span>IP</span></span><span class="sc-t"><span class="t-body" style="font-weight:600">I. Petrova</span><span class="sc-st"><span class="sc-dot"></span><span class="t-micro c-faint">Submitted · 3h ago</span></span></span></div>
+              <div class="sc"><span class="av av-green"><span>DB</span></span><span class="sc-t"><span class="t-body" style="font-weight:600">D. Brouwer</span><span class="sc-st"><span class="sc-dot"></span><span class="t-micro c-faint">Submitted · 6h ago</span></span></span></div>
+            </div></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCTS ===== -->
+  <section id="products" class="sect">
+    <div class="shell">
+      <div class="wrap sect-stack">
+        <div class="head center">
+          <h2 class="t-h2">Four ways to get your evenings back</h2>
+          <p class="t-body-lg c-muted">One platform. Turn on what your programme needs.</p>
+        </div>
+
+        <div class="prow-list">
+
+          <!-- 1 -->
+          <div class="prow">
+            <div class="prow-text">
+              <h3 class="t-h3">Every draft gets a real read</h3>
+              <p class="t-body-lg c-muted body">Eduface marks the exact passage and writes the comment against your criterion. You approve, edit or bin it before the student sees a word.</p>
+              <ul class="points">
+                <li><span class="tick tick-green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#007B54" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t-body">Marks the passage, not the whole paper</span></li>
+                <li><span class="tick tick-green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#007B54" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t-body">Every comment names its criterion</span></li>
+                <li><span class="tick tick-green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#007B54" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t-body">Nothing reaches a student unapproved</span></li>
+              </ul>
+            </div>
+            <div class="pvis on-dark">
+              <div class="dcard">
+                <span class="t-key c-on-dark-faint">Draft 3 · S. de Vries</span>
+                <div class="doc-lines">
+                  <span class="dl w9"></span><span class="dl"></span><span class="dl w8"></span>
+                </div>
+                <!-- de zin uit het essay waar de comment op slaat, gemarkeerd -->
+                <div class="src">
+                  <span class="t-key c-on-dark-faint">From the submission</span>
+                  <p class="t-body c-on-dark-soft src-line">...three interview rounds were held with staff. <mark>This paper argues that hybrid teaching improves engagement.</mark> The next section sets out the results.</p>
+                </div>
+                <div class="pnote">
+                  <span class="t-key c-green">Eduface · Criterion 1</span>
+                  <p class="t-body c-on-dark">"Tie the thesis back to your research question so it lands from line one."</p>
+                  <div class="pnote-acts">
+                    <span class="pill pill-green"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Approve</span></span>
+                    <span class="pill pill-ghost"><span>Edit</span></span>
+                    <span class="pill pill-ghost"><span>Discard</span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="prow flip">
+            <div class="prow-text">
+              <h3 class="t-h3">Essay 140 marked like essay one</h3>
+              <p class="t-body-lg c-muted body">Full rubric scoring for essays, reports and theses, with a breakdown you can actually argue with. The grade is a proposal until you sign it.</p>
+              <ul class="points">
+                <li><span class="tick tick-green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#007B54" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t-body">Score and reasoning per criterion</span></li>
+                <li><span class="tick tick-green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#007B54" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t-body">Same standard across a marker team</span></li>
+                <li><span class="tick tick-green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#007B54" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t-body">Tunes closer the more you correct it</span></li>
+              </ul>
+            </div>
+            <div class="pvis on-dark">
+              <div class="dcard">
+                <span class="t-key c-on-dark-faint">Research Methods · rubric</span>
+                <!-- elke balk vult van links naar rechts met de preset Reveal, één voor één -->
+                <div class="rrows">
+                  <div class="rrow"><span class="t-body c-on-dark grow">Issue identification</span><span class="pill pill-green"><span>8 / 10</span></span><span class="rbar"><i class="rv-bar" style="width:80%;--d:0ms"></i></span></div>
+                  <div class="rrow"><span class="t-body c-on-dark grow">Use of sources</span><span class="pill pill-green"><span>9 / 10</span></span><span class="rbar"><i class="rv-bar" style="width:90%;--d:90ms"></i></span></div>
+                  <div class="rrow rev"><span class="t-body c-on-dark grow">Depth of analysis</span><span class="pill pill-amber"><span>Needs you</span></span><span class="rbar"><i class="rv-bar amber" style="width:55%;--d:180ms"></i></span></div>
+                  <div class="rrow"><span class="t-body c-on-dark grow">Structure</span><span class="pill pill-green"><span>7 / 10</span></span><span class="rbar"><i class="rv-bar" style="width:70%;--d:270ms"></i></span></div>
+                  <div class="rrow"><span class="t-body c-on-dark grow">Referencing</span><span class="pill pill-green"><span>9 / 10</span></span><span class="rbar"><i class="rv-bar" style="width:90%;--d:360ms"></i></span></div>
+                </div>
+                <div class="rtotal">
+                  <span class="t-small c-on-dark-faint grow">Proposed grade, pending your approval</span>
+                  <span class="t-num c-green" style="font-size:2.25rem" data-count="8.2" data-decimals="1">8.2</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- knop halverwege de vier producten -->
+          <div class="prow-cta">
+            <span class="t-body-lg c-muted l">Want to see it run on one of your own assignments?</span>
+            <a class="btn btn-green" href="https://calendly.com/eduface/30min?back=1" data-calendly><span>Book a meeting</span></a>
+          </div>
+
+          <!-- 3 -->
+          <div class="prow">
+            <div class="prow-text">
+              <h3 class="t-h3">You only open what it flagged</h3>
+              <p class="t-body-lg c-muted body">Closed answers scored against your mark scheme overnight. The clear ones are done. The doubtful ones are waiting for you, and it says why.</p>
+              <ul class="points">
+                <li><span class="tick tick-sky"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#1F6FD0" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t-body">Scored per criterion, not per gut feeling</span></li>
+                <li><span class="tick tick-amber"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#A86D0D" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t-body">Uncertainty comes to you, flagged</span></li>
+                <li><span class="tick tick-sky"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#1F6FD0" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t-body">Approved grades go back to the gradebook</span></li>
+              </ul>
+            </div>
+            <div class="pvis on-dark">
+              <div class="dcard">
+                <span class="t-key c-on-dark-faint">Exam · 140 papers</span>
+                <div class="ptop">
+                  <span class="t-num c-sky grow" style="font-size:3.25rem" data-count="86" data-suffix="%">86%</span>
+                  <span class="t-body c-on-dark-faint l">scored without you</span>
+                </div>
+                <div class="pbar"><i class="a" style="width:86%"></i><i class="b" style="width:14%"></i></div>
+                <div class="pkey">
+                  <span><span class="d a"></span><span class="t-small c-on-dark-soft">122 scored</span></span>
+                  <span><span class="d b"></span><span class="t-small c-on-dark-soft">20 flagged for you</span></span>
+                </div>
+                <!-- de vierkantjes komen na elkaar binnen, stagger 35ms, gezet door het script -->
+                <div class="pgrid" data-stagger="35">
+                  <i></i><i></i><i></i><i class="f"></i><i></i><i></i><i></i><i></i><i></i><i class="f"></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                  <i></i><i></i><i></i><i></i><i></i><i class="f"></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="f"></i><i></i><i></i><i></i>
+                  <i></i><i class="f"></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="f"></i><i></i><i></i><i></i><i></i><i></i><i class="f"></i><i></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="prow flip">
+            <div class="prow-text">
+              <h3 class="t-h3">Watch the student, not your notepad</h3>
+              <span class="beta-note">
+                <span class="pill pill-violet"><span>Beta</span></span>
+                <span class="t-body c-muted">In pilot with early customers. Deliberately not open to everyone yet.</span>
+              </span>
+              <p class="t-body-lg c-muted body">It transcribes and scores while the viva is running. You keep your attention on the person in front of you and check the record afterwards.</p>
+              <ul class="points">
+                <li><span class="tick tick-violet"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#5B4BD6" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t-body">Live transcript, timestamped</span></li>
+                <li><span class="tick tick-violet"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#5B4BD6" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t-body">Scored against the same criteria</span></li>
+                <li><span class="tick tick-violet"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#5B4BD6" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t-body">An oral-heavy programme still fits</span></li>
+              </ul>
+            </div>
+            <div class="pvis on-dark">
+              <div class="dcard">
+                <div class="plive">
+                  <span class="plive-rec"><svg width="23" height="23" viewBox="0 0 24 24" fill="none"><path d="M12 15a4 4 0 0 0 4-4V6a4 4 0 1 0-8 0v5a4 4 0 0 0 4 4Zm7-4a7 7 0 0 1-14 0m7 7v3" stroke="#8B7CF6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                  <span class="plive-t grow">
+                    <span class="t-h5 c-on-dark">Recording · 12:04</span>
+                    <span class="t-small c-on-dark-faint">Thesis defence · M. Bakker</span>
+                  </span>
+                  <span class="pill pill-violet"><span>Live</span></span>
+                </div>
+                <div class="pwave">
+                  <i style="animation-delay:0s"></i><i style="animation-delay:.1s"></i><i style="animation-delay:.2s"></i><i style="animation-delay:.3s"></i><i style="animation-delay:.15s"></i><i style="animation-delay:.05s"></i><i style="animation-delay:.25s"></i><i style="animation-delay:.35s"></i><i style="animation-delay:.12s"></i><i style="animation-delay:.22s"></i><i style="animation-delay:.32s"></i><i style="animation-delay:.08s"></i><i style="animation-delay:.18s"></i><i style="animation-delay:.28s"></i><i style="animation-delay:.38s"></i><i style="animation-delay:.02s"></i><i style="animation-delay:.24s"></i><i style="animation-delay:.14s"></i>
+                </div>
+                <div class="ptr-list">
+                  <div class="ptr"><span class="t-body c-on-dark" style="font-weight:700">Examiner</span><span class="t-body c-on-dark-soft">Walk me through your methodology.</span></div>
+                  <div class="ptr"><span class="t-body c-on-dark" style="font-weight:700">Student</span><span class="t-body c-on-dark-soft">I started by reviewing the literature on...</span></div>
+                  <div class="ptr"><span class="pill pill-green"><span>Criterion 2 scored</span></span><span class="t-small c-on-dark-soft">while you were listening</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- knop aan het eind van het productenblok -->
+          <div class="prow-cta">
+            <span class="t-body-lg c-muted l">Thirty minutes, your rubric, one real assignment.</span>
+            <a class="btn btn-green" href="https://calendly.com/eduface/30min?back=1" data-calendly><span>Book a meeting</span></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SIX SUBMODELS ===== -->
+  <section id="submodels" class="sect band-card">
+    <div class="shell">
+      <div class="wrap sect-stack">
+        <div class="head center">
+          <h2 class="t-h2">Six submodels, each trained as a domain expert</h2>
+          <p class="t-body-lg c-muted">Eduface does not apply generic AI to your course. Select your field and see exactly what the model knows.</p>
+        </div>
+
+        <div class="tabs" role="tablist" data-tabs="sub">
+          <button class="tab" role="tab" aria-selected="true" data-panel="s-law"><span>Law</span></button>
+          <button class="tab" role="tab" aria-selected="false" data-panel="s-econ"><span>Economics</span></button>
+          <button class="tab" role="tab" aria-selected="false" data-panel="s-soc"><span>Social Sciences</span></button>
+          <button class="tab" role="tab" aria-selected="false" data-panel="s-stem"><span>STEM</span></button>
+          <button class="tab" role="tab" aria-selected="false" data-panel="s-hum"><span>Humanities</span></button>
+          <button class="tab" role="tab" aria-selected="false" data-panel="s-health"><span>Health Sciences</span></button>
+        </div>
+
+        <div class="sub-panel" id="s-law" role="tabpanel">
+          <div class="sub-text">
+            <p class="t-body-lg c-muted body">The Law submodel understands legal argumentation structure, case law citation conventions, statutory interpretation methods, and the difference between a well-constructed argument and one that merely sounds convincing.</p>
+            <ul class="points">
+              <li><span class="tick tick-green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#007B54" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t-body">APA, OSCOLA, and Bluebook citation formats</span></li>
+              <li><span class="tick tick-green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#007B54" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t-body">IRAC and CREAC argumentation structure</span></li>
+              <li><span class="tick tick-green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#007B54" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t-body">Statutory interpretation and case law hierarchy</span></li>
+              <li><span class="tick tick-green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#007B54" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t-body">International law and local law frameworks</span></li>
+            </ul>
+          </div>
+          <div class="sub-ex">
+            <div class="ex-card">
+              <span class="t-key c-faint">Student text</span>
+              <p class="t-body c-muted">"Under Art. 7:653 DCC, a non-compete clause must be agreed in writing and must not disproportionately harm the employee's career prospects..."</p>
+            </div>
+            <div class="ex-card ai on-dark">
+              <span class="t-key c-green">Eduface feedback</span>
+              <p class="t-body c-on-dark-soft">"Your application of Art. 7:653 is correct, but the argument lacks a proportionality analysis. To reach a higher mark, you need to explicitly weigh the employer's business interest against the restriction on the employee using the Hof Amsterdam standard."</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Zelfde opbouw als Law. Content per vak volgt nog, dus geen verzonnen voorbeelden. -->
+        <div class="sub-panel" id="s-econ" role="tabpanel" hidden>
+          <div class="sub-text"><p class="t-body-lg c-muted body">[TODO — Economics submodel description, same shape as Law]</p></div>
+          <div class="sub-ex"><div class="ex-card sub-todo"><span class="t-key c-faint">Student text</span><p class="t-body c-muted">[TODO — example]</p></div><div class="ex-card sub-todo"><span class="t-key c-faint">Eduface feedback</span><p class="t-body c-muted">[TODO — example]</p></div></div>
+        </div>
+        <div class="sub-panel" id="s-soc" role="tabpanel" hidden>
+          <div class="sub-text"><p class="t-body-lg c-muted body">[TODO — Social Sciences submodel description, same shape as Law]</p></div>
+          <div class="sub-ex"><div class="ex-card sub-todo"><span class="t-key c-faint">Student text</span><p class="t-body c-muted">[TODO — example]</p></div><div class="ex-card sub-todo"><span class="t-key c-faint">Eduface feedback</span><p class="t-body c-muted">[TODO — example]</p></div></div>
+        </div>
+        <div class="sub-panel" id="s-stem" role="tabpanel" hidden>
+          <div class="sub-text"><p class="t-body-lg c-muted body">[TODO — STEM submodel description, same shape as Law]</p></div>
+          <div class="sub-ex"><div class="ex-card sub-todo"><span class="t-key c-faint">Student text</span><p class="t-body c-muted">[TODO — example]</p></div><div class="ex-card sub-todo"><span class="t-key c-faint">Eduface feedback</span><p class="t-body c-muted">[TODO — example]</p></div></div>
+        </div>
+        <div class="sub-panel" id="s-hum" role="tabpanel" hidden>
+          <div class="sub-text"><p class="t-body-lg c-muted body">[TODO — Humanities submodel description, same shape as Law]</p></div>
+          <div class="sub-ex"><div class="ex-card sub-todo"><span class="t-key c-faint">Student text</span><p class="t-body c-muted">[TODO — example]</p></div><div class="ex-card sub-todo"><span class="t-key c-faint">Eduface feedback</span><p class="t-body c-muted">[TODO — example]</p></div></div>
+        </div>
+        <div class="sub-panel" id="s-health" role="tabpanel" hidden>
+          <div class="sub-text"><p class="t-body-lg c-muted body">[TODO — Health Sciences submodel description, same shape as Law]</p></div>
+          <div class="sub-ex"><div class="ex-card sub-todo"><span class="t-key c-faint">Student text</span><p class="t-body c-muted">[TODO — example]</p></div><div class="ex-card sub-todo"><span class="t-key c-faint">Eduface feedback</span><p class="t-body c-muted">[TODO — example]</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRUST BENTO ===== -->
+  <section id="trust" class="sect band-card">
+    <div class="shell">
+      <div class="wrap sect-stack">
+        <div class="head center">
+          <h2 class="t-h2">You stay the one who decides</h2>
+        </div>
+
+        <div class="bento">
+          <div class="bento-card wide">
+            <span class="ic ic-green"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h10" stroke="#002333" stroke-width="2.4" stroke-linecap="round"/></svg></span>
+            <h3 class="t-h4">Every comment names its criterion</h3>
+            <p class="t-body c-muted sub">You can check the reasoning, not just the number. Nothing arrives as a black box.</p>
+            <div class="bv">
+              <div class="trace">
+                <span class="trace-chip"><span class="t-body c-accent" style="font-family:var(--font-display);font-weight:700">C1</span><span class="t-body">Issue identification</span></span>
+                <span class="trace-chip"><span class="t-body c-accent" style="font-family:var(--font-display);font-weight:700">C2</span><span class="t-body">Use of sources</span></span>
+                <span class="trace-chip"><span class="t-body c-accent" style="font-family:var(--font-display);font-weight:700">C4</span><span class="t-body">Structure</span></span>
+                <span class="trace-chip"><span class="t-body c-accent" style="font-family:var(--font-display);font-weight:700">C5</span><span class="t-body">Referencing</span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bento-card narrow dark on-dark">
+            <span class="ic ic-amber"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 8v5m0 3.5v.01M12 3l9 16H3l9-16Z" stroke="#002333" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <h3 class="t-h5">It admits doubt</h3>
+            <p class="t-body c-on-dark-soft sub">Low confidence gets flagged, never guessed.</p>
+            <div class="bv">
+              <div class="stat-block">
+                <span class="t-num stat-big c-amber" data-count="7" data-prefix="1 in ">1 in 7</span>
+                <span class="t-small c-on-dark-soft">comes back to you flagged</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bento-card narrow">
+            <span class="ic ic-green"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" class="cast-tick" stroke="#002333" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <h3 class="t-h5">Nothing ships unapproved</h3>
+            <p class="t-body c-muted sub">No comment, no grade, until you sign off.</p>
+            <div class="bv">
+              <div class="stat-block">
+                <span class="t-num stat-big c-accent" data-count="100" data-suffix="%">100%</span>
+                <span class="t-small c-muted">signed off by a lecturer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bento-card wide dark on-dark">
+            <span class="ic ic-sky"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3v12m0 0l-4.5-4.5M12 15l4.5-4.5M4 18v2h16v-2" stroke="#002333" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <h3 class="t-h4">The grade lands where it always did</h3>
+            <p class="t-body c-on-dark-soft sub">Straight into your gradebook. Nobody on your team learns a new system.</p>
+            <div class="bv">
+              <div class="flow">
+                <span class="flow-node"><span class="flow-ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#00E075" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t-body c-on-dark">You approve</span></span>
+                <span class="flow-arrow"><svg width="20" height="14" viewBox="0 0 20 14" fill="none"><path d="M1 7h17m0 0l-5.5-5.5M18 7l-5.5 5.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span class="flow-node"><span class="flow-ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 20h4L20 8l-4-4L4 16v4Zm10-14 4 4" stroke="#4D9FFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t-body c-on-dark">Eduface writes it</span></span>
+                <span class="flow-arrow"><svg width="20" height="14" viewBox="0 0 20 14" fill="none"><path d="M1 7h17m0 0l-5.5-5.5M18 7l-5.5 5.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span class="flow-node"><span class="flow-ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H19v16H5.5A1.5 1.5 0 0 1 4 18.5v-13ZM8 4v16M11.5 9h4M11.5 13h4" stroke="#FFFFFF" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t-body c-on-dark">Your LMS gradebook</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Compliance, terug uit de live site -->
+        <div class="comp">
+          <div class="comp-card">
+            <div class="comp-head">
+              <span class="ic ic-sm ic-green"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v6c0 4.2-2.9 7.5-7 9-4.1-1.5-7-4.8-7-9V6l7-3Z" stroke="#002333" stroke-width="2" stroke-linejoin="round"/></svg></span>
+            </div>
+            <h3 class="t-h4">Transparent &amp; explainable</h3>
+            <p class="t-body c-muted sub">Eduface uses its own model not a third-party. Every grade is explainable and auditable, meeting Article 13 transparency requirements directly.</p>
+            <ul class="points">
+              <li><span class="tick tick-green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#007B54" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t-body">Own proprietary model fully auditable</span></li>
+              <li><span class="tick tick-green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#007B54" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t-body">Every grading decision is explainable</span></li>
+              <li><span class="tick tick-green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#007B54" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t-body">No reliance on not specific education oriented third-party APIs</span></li>
+              <li><span class="tick tick-green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#007B54" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t-body">Compliant with high-risk AI system requirements</span></li>
+            </ul>
+          </div>
+          <div class="comp-card">
+            <div class="comp-head">
+              <span class="ic ic-sm ic-sky"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M6 11V8a6 6 0 1 1 12 0v3M5 11h14v9H5v-9Z" stroke="#002333" stroke-width="2" stroke-linejoin="round"/></svg></span>
+            </div>
+            <h3 class="t-h4">Your data, under your control</h3>
+            <p class="t-body c-muted sub">Assignments are processed securely in the EU, never used for model training, and deleted on your schedule. We sign a Data Processing Agreement on request.</p>
+            <ul class="points">
+              <li><span class="tick tick-sky"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#1F6FD0" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t-body">Data processed in EU, never shared</span></li>
+              <li><span class="tick tick-sky"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#1F6FD0" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t-body">Assignments never used for model training</span></li>
+              <li><span class="tick tick-sky"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#1F6FD0" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t-body">Deleted on your schedule, full control</span></li>
+              <li><span class="tick tick-sky"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#1F6FD0" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t-body">DPA signed on request for EU &amp; UK institutions</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NUMBERS ===== -->
+  <section id="numbers" class="sect band-navy on-dark">
+    <div class="shell">
+      <div class="wrap sect-stack">
+        <div class="head">
+          <span class="t-label c-green">Measured, not claimed</span>
+          <h2 class="t-h2 c-on-dark">How close it gets to your grade</h2>
+        </div>
+        <!--
+          Sectie 6. De drie kolommen komen binnen op een tween cubic-bezier(0.87,0,0.13,1),
+          1000 ms, stagger 35 en 70 ms. De cijfers tellen op met de preset TrageSpring.
+          LET OP DANTE: de schaal onder de puntenclaim staat nu op 0-100. Klopt dat niet,
+          verander de twee getallen in .scale-ends en de breedtes hieronder. Dit was het
+          belangrijkste onduidelijke punt op de pagina, dus het moet kloppen.
+        -->
+        <div class="nums">
+          <div class="num-item rv-stat" style="--d:0ms"><span class="t-num num-n c-sky" data-count="435">435</span><span class="t-body c-on-dark-soft">assignments graded by 13 lecturers using Eduface</span></div>
+          <div class="num-item rv-stat" style="--d:35ms">
+            <span class="t-num num-n c-amber" data-count="6" data-prefix="~" data-suffix=" pts">~6 pts</span>
+            <span class="t-body c-on-dark-soft">average gap between its proposal and the lecturer's grade</span>
+            <span class="scale">
+              <span class="scale-bar"><i class="amber" style="width:6%"></i></span>
+              <span class="scale-ends"><span class="t-micro c-on-dark-faint grow">0</span><span class="t-micro c-on-dark-faint">100 point scale</span></span>
+            </span>
+          </div>
+          <div class="num-item rv-stat" style="--d:70ms">
+            <span class="t-num num-n c-green" data-count="2" data-prefix="~" data-suffix=" pts">~2 pts</span>
+            <span class="t-body c-on-dark-soft">average gap once the lecturer has tuned it</span>
+            <span class="scale">
+              <span class="scale-bar"><i class="green" style="width:2%"></i></span>
+              <span class="scale-ends"><span class="t-micro c-on-dark-faint grow">0</span><span class="t-micro c-on-dark-faint">100 point scale</span></span>
+            </span>
+          </div>
+        </div>
+        <div class="nums-foot">
+          <p class="t-small c-on-dark-faint">That is distance from your grade, not how often it matched exactly. The point is the last number: the more you tune it, the closer it gets, which means you are steering it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INTEGRATIONS ===== -->
+  <section id="integrations" class="sect">
+    <div class="shell">
+      <div class="wrap sect-stack">
+        <div class="head center">
+          <h2 class="t-h2">It lives inside the LMS you already run</h2>
+          <p class="t-body-lg c-muted">Students submit where they always did. Approved grades land back in the gradebook.</p>
+        </div>
+        <div class="int-grid">
+          <div class="int-tile"><span class="int-mark"><img src="brand_assets/lms/moodle.svg" alt="Moodle"></span><span class="int-t"><span class="t-body" style="font-weight:600">Moodle</span><span class="t-small c-muted">Assignments &amp; gradebook</span></span></div>
+          <div class="int-tile"><span class="int-mark"><img src="brand_assets/lms/canvas.svg" alt="Canvas"></span><span class="int-t"><span class="t-body" style="font-weight:600">Canvas</span><span class="t-small c-muted">Assignments &amp; gradebook</span></span></div>
+          <div class="int-tile"><span class="int-mark"><img src="brand_assets/lms/blackboard.png" alt="Blackboard"></span><span class="int-t"><span class="t-body" style="font-weight:600">Blackboard</span><span class="t-small c-muted">Assignments &amp; gradebook</span></span></div>
+          <div class="int-tile"><span class="int-mark"><img src="brand_assets/lms/brightspace.png" alt="Brightspace"></span><span class="int-t"><span class="t-body" style="font-weight:600">Brightspace</span><span class="t-small c-muted">Assignments &amp; gradebook</span></span></div>
+        </div>
+        <div class="int-note">
+          <span class="ic ic-sm ic-sky"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#002333" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="t-body c-muted">Running something else? It connects to any other LMS too. Bring yours to the call.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROGRAMME TABS ===== -->
+  <section class="sect band-card">
+    <div class="shell">
+      <div class="wrap sect-stack">
+        <div class="head">
+          <h2 class="t-h2">Different course, different problem</h2>
+        </div>
+        <div class="tabs" role="tablist" data-tabs="prog">
+          <button class="tab" role="tab" aria-selected="true" data-panel="t1"><span>Bachelor's &amp; master's</span></button>
+          <button class="tab" role="tab" aria-selected="false" data-panel="t2"><span>Short courses</span></button>
+          <button class="tab" role="tab" aria-selected="false" data-panel="t3"><span>Theses</span></button>
+          <button class="tab" role="tab" aria-selected="false" data-panel="t4"><span>Oral assessment</span></button>
+        </div>
+        <div class="tab-panel" id="t1" role="tabpanel">
+          <div class="tab-main">
+            <h3 class="t-h3">Module 24 should read like module 1.</h3>
+            <div class="tabs"><span class="pill pill-tag"><span>Multi-year</span></span><span class="pill pill-tag"><span>Large cohorts</span></span><span class="pill pill-tag"><span>Many markers</span></span></div>
+          </div>
+          <div class="tab-stat"><span class="t-num c-accent" style="font-size:2rem">Every draft</span><span class="t-body c-muted l">gets a real read, not a tick</span></div>
+        </div>
+        <div class="tab-panel" id="t2" role="tabpanel" hidden>
+          <div class="tab-main">
+            <h3 class="t-h3">The load lands on your assessors, not on drop-out.</h3>
+            <div class="tabs"><span class="pill pill-tag"><span>Single modules</span></span><span class="pill pill-tag"><span>Certificate tracks</span></span><span class="pill pill-tag"><span>Tight turnaround</span></span></div>
+          </div>
+          <div class="tab-stat"><span class="t-num c-accent" style="font-size:2rem">Their hours</span><span class="t-body c-muted l">go where judgement is needed</span></div>
+        </div>
+        <div class="tab-panel" id="t3" role="tabpanel" hidden>
+          <div class="tab-main">
+            <h3 class="t-h3">Six supervisors, one standard.</h3>
+            <div class="tabs"><span class="pill pill-tag"><span>Supervisor teams</span></span><span class="pill pill-tag"><span>Long submissions</span></span><span class="pill pill-tag"><span>High stakes</span></span></div>
+          </div>
+          <div class="tab-stat"><span class="t-num c-accent" style="font-size:2rem">One rubric</span><span class="t-body c-muted l">applied the same way by everyone</span></div>
+        </div>
+        <div class="tab-panel" id="t4" role="tabpanel" hidden>
+          <div class="tab-main">
+            <h3 class="t-h3">Be present in the viva, not taking notes.</h3>
+            <div class="tabs"><span class="pill pill-tag"><span>Vivas</span></span><span class="pill pill-tag"><span>Defences</span></span><span class="pill pill-tag"><span>Practical exams</span></span></div>
+          </div>
+          <div class="tab-stat"><span class="t-num c-accent" style="font-size:2rem">Beta</span><span class="t-body c-muted l">live transcription and scoring</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="sect">
+    <div class="shell">
+      <div class="wrap sect-stack">
+        <div class="head center">
+          <h2 class="t-h2">What lecturers say</h2>
+        </div>
+        <div class="quotes">
+          <div class="q-card todo"><p class="t-body-lg c-muted" style="font-style:italic">"[TODO — real quote from a lecturer using AI Feedback]"</p><div class="who"><span class="av"><span>?</span></span><span class="q-who-t"><span class="t-body" style="font-weight:600">[Name]</span><span class="t-small c-muted">[Role, institution]</span></span></div></div>
+          <div class="q-card todo"><p class="t-body-lg c-muted" style="font-style:italic">"[TODO — real quote about marking time on a large cohort]"</p><div class="who"><span class="av"><span>?</span></span><span class="q-who-t"><span class="t-body" style="font-weight:600">[Name]</span><span class="t-small c-muted">[Role, institution]</span></span></div></div>
+          <div class="q-card todo"><p class="t-body-lg c-muted" style="font-style:italic">"[TODO — real quote from a programme lead or QA manager]"</p><div class="who"><span class="av"><span>?</span></span><span class="q-who-t"><span class="t-body" style="font-weight:600">[Name]</span><span class="t-small c-muted">[Role, institution]</span></span></div></div>
+        </div>
+        <div class="todo-banner"><span class="t-small c-muted">⚠</span><span class="t-small c-muted">Placeholders, not invented quotes. Send 3 real ones with permission and they drop straight in.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq" class="sect band-card">
+    <div class="shell">
+      <div class="wrap sect-stack">
+        <div class="head center">
+          <h2 class="t-h2">Frequently asked questions</h2>
+        </div>
+        <div class="faq">
+          <details class="faq-item" open>
+            <summary><span class="faq-q grow">Does the AI replace the lecturer?</span><span class="pm"><i class="h"></i><i class="v"></i></span></summary>
+            <div class="faq-ans"><p class="t-body c-muted">No. Every comment and grade is approved by a lecturer before a student sees it. Eduface drafts, you sign off. That is not a setting, it is how it works.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="faq-q grow">Which LMS does it work with?</span><span class="pm"><i class="h"></i><i class="v"></i></span></summary>
+            <div class="faq-ans"><p class="t-body c-muted">Moodle, Blackboard, Brightspace, Canvas and most others. Approved grades write straight back into your gradebook.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="faq-q grow">Do we need a finished rubric first?</span><span class="pm"><i class="h"></i><i class="v"></i></span></summary>
+            <div class="faq-ans"><p class="t-body c-muted">No. A requirements list or a set of learning outcomes is enough to start.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="faq-q grow">How accurate is the grade proposal?</span><span class="pm"><i class="h"></i><i class="v"></i></span></summary>
+            <div class="faq-ans"><p class="t-body c-muted">Across 435 assignments and 13 lecturers, it sat about 6 points from the lecturer's grade on average, and about 2 points once tuned. That is distance, not how often it matched exactly.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="faq-q grow">What about borderline pass marks?</span><span class="pm"><i class="h"></i><i class="v"></i></span></summary>
+            <div class="faq-ans"><p class="t-body c-muted">Some proposals land on the other side of a threshold, which is exactly why approval exists. Borderline cases come to you flagged.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="faq-q grow">Can it handle oral exams?</span><span class="pm"><i class="h"></i><i class="v"></i></span></summary>
+            <div class="faq-ans"><p class="t-body c-muted">Yes, in beta. It transcribes and scores while the exam runs.</p></div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="sect">
+    <div class="shell">
+      <div class="wrap">
+        <div class="cta">
+          <h2 class="t-h2 c-on-dark">Bring your own rubric</h2>
+          <p class="t-body-lg c-on-dark-soft sub">Thirty minutes. Put a real assignment in front of it and see what it flags.</p>
+          <div class="cta-btns">
+            <a class="btn btn-green" href="https://calendly.com/eduface/30min?back=1" data-calendly><span>Book a meeting</span></a>
+          </div>
+          <p class="t-small c-on-dark-faint">No account. No install.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="shell">
+    <div class="wrap foot-stack">
+      <div class="foot">
+        <div class="foot-brand">
+          <img src="brand_assets/logos/logo_navy.png" alt="Eduface">
+          <p class="t-body c-muted">AI feedback and grading for higher education, with the lecturer always in the loop.</p>
+          <a class="btn btn-navy btn-sm" href="https://calendly.com/eduface/30min?back=1" data-calendly><span>Book a meeting</span></a>
+        </div>
+        <div class="foot-col">
+          <h5 class="t-label c-muted">Products</h5>
+          <a href="#products" class="t-body">AI Feedback</a>
+          <a href="#products" class="t-body">Paper Grader</a>
+          <a href="#products" class="t-body">Exam Grader</a>
+          <a href="#products" class="t-body">Oral Examination</a>
+        </div>
+        <div class="foot-col">
+          <h5 class="t-label c-muted">Why Eduface</h5>
+          <a href="#offer" class="t-body">What you get</a>
+          <a href="#trust" class="t-body">Lecturer in control</a>
+          <a href="#integrations" class="t-body">Integrations</a>
+          <a href="#numbers" class="t-body">The numbers</a>
+        </div>
+        <div class="foot-col">
+          <h5 class="t-label c-muted">Legal</h5>
+          <a href="#" class="t-body">Privacy policy</a>
+          <a href="#" class="t-body">Terms &amp; conditions</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span class="t-small c-muted grow">© 2026 Eduface</span>
+        <span class="t-small c-muted">AI feedback and grading for higher education</span>
+      </div>
+      <div class="disclaimer">
+        <span class="t-micro c-faint">Student names, submissions and feedback shown on this page are sample data, not real students.</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Calendly opent hier, boven op de pagina. Geen aparte pagina, geen nieuwe tab. -->
+<div class="modal" id="calendly-modal" role="dialog" aria-modal="true" aria-label="Book a meeting" hidden>
+  <button class="modal-scrim" type="button" data-modal-close aria-label="Close"></button>
+  <div class="modal-panel">
+    <div class="modal-bar">
+      <span class="t-body grow" style="font-weight:600">Book a meeting</span>
+      <button class="modal-close" type="button" data-modal-close aria-label="Close">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 5l14 14M19 5L5 19" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+    <div class="modal-frame"></div>
+  </div>
+</div>
+
+<script>
+/* ==========================================================================
+   Alles hieronder is de CSS-vertaling van wat in Framer native bestaat:
+   - reveal = Appear effect met trigger "in view", speelt één keer
+   - ticker = de ingebouwde Ticker-component
+   - tabs   = een variant-switch op het panel
+   - modal  = een overlay-variant met een Calendly embed erin
+   Bij de overzetting bouw je dit dus als Framer-nodes, niet als codecomponent.
+   ========================================================================== */
+
+/* ---- tabs, per groep gescoped zodat de twee tabblokken elkaar niet raken ---- */
+document.querySelectorAll('[data-tabs]').forEach(function (group) {
+  var tabs = group.querySelectorAll('.tab');
+  tabs.forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      tabs.forEach(function (t) { t.setAttribute('aria-selected', String(t === tab)); });
+      tabs.forEach(function (t) {
+        var panel = document.getElementById(t.dataset.panel);
+        if (panel) { panel.hidden = t !== tab; }
+      });
+    });
+  });
+});
+
+/* ---- Calendly modal ---- */
+(function () {
+  var modal = document.getElementById('calendly-modal');
+  var frame = modal.querySelector('.modal-frame');
+  var opener = null;
+
+  function open(url) {
+    if (!frame.firstChild) {
+      var iframe = document.createElement('iframe');
+      iframe.src = url + (url.indexOf('?') > -1 ? '&' : '?') + 'embed_domain=eduface.me&embed_type=Inline';
+      iframe.title = 'Calendly';
+      frame.appendChild(iframe);
+    }
+    modal.hidden = false;
+    document.body.classList.add('modal-open');
+    modal.querySelector('.modal-close').focus();
+  }
+  function close() {
+    modal.hidden = true;
+    document.body.classList.remove('modal-open');
+    if (opener) { opener.focus(); }
+  }
+
+  document.querySelectorAll('[data-calendly]').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      opener = link;
+      open(link.getAttribute('href'));
+    });
+  });
+  modal.querySelectorAll('[data-modal-close]').forEach(function (b) { b.addEventListener('click', close); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !modal.hidden) { close(); } });
+})();
+
+/* ---- ticker: de reeks één keer verdubbelen zodat de lus naadloos is ---- */
+document.querySelectorAll('.tick-row').forEach(function (row) {
+  var track = row.querySelector('.tick-track');
+  row.appendChild(track.cloneNode(true));
+});
+
+/* ---- reveal on scroll: preset Reveal, in view, speelt één keer ---- */
+(function () {
+  var targets = document.querySelectorAll('.rv, .rv-hero, .rv-stat, .rv-bar, .rv-cell, [data-count], [data-stagger]');
+  if (!('IntersectionObserver' in window)) {
+    targets.forEach(function (el) { el.classList.add('in'); });
+    return;
+  }
+
+  /* de vierkantjes van het exam-grid krijgen hun stagger uit data-stagger */
+  document.querySelectorAll('[data-stagger]').forEach(function (grid) {
+    var step = parseInt(grid.dataset.stagger, 10) || 35;
+    Array.prototype.forEach.call(grid.children, function (cell, i) {
+      cell.classList.add('rv-cell');
+      cell.style.setProperty('--d', (i * step) + 'ms');
+    });
+  });
+
+  /* optellen met de preset TrageSpring */
+  function countUp(el) {
+    var target = parseFloat(el.dataset.count);
+    var decimals = parseInt(el.dataset.decimals, 10) || 0;
+    var prefix = el.dataset.prefix || '';
+    var suffix = el.dataset.suffix || '';
+    var start = null;
+    var dur = 900;
+    function frame(now) {
+      if (start === null) { start = now; }
+      var p = Math.min((now - start) / dur, 1);
+      /* zelfde curve als --ease-traag, benaderd */
+      var eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = prefix + (target * eased).toFixed(decimals) + suffix;
+      if (p < 1) { requestAnimationFrame(frame); }
+    }
+    requestAnimationFrame(frame);
+  }
+
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (!entry.isIntersecting) { return; }
+      var el = entry.target;
+      io.unobserve(el);
+      if (el.dataset.stagger !== undefined) {
+        Array.prototype.forEach.call(el.children, function (c) { c.classList.add('in'); });
+        return;
+      }
+      el.classList.add('in');
+      if (el.dataset.count !== undefined && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        countUp(el);
+      }
+    });
+  }, { threshold: 0.2, rootMargin: '0px 0px -40px 0px' });
+
+  targets.forEach(function (el) { io.observe(el); });
+})();
+</script>
+
+
+<script>
+(function(){
+  var segs = Array.prototype.slice.call(document.querySelectorAll('#navseg a'));
+  var secs = segs.map(function(a){ return document.getElementById(a.dataset.sec); }).filter(Boolean);
+  function onScroll(){ document.body.classList.toggle('scrolled', window.scrollY > 320); }
+  onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (!e.isIntersecting) return;
+        segs.forEach(function(a){ a.classList.toggle('is-here', a.dataset.sec === e.target.id); });
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    secs.forEach(function(s){ io.observe(s); });
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,261 @@
+{
+  "slug": "tu-delft",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_1p9Xqheg7HzHuVdjvN3G1fu484XvYNOKk353WIDEXeG",
+    "naam": "TU Delft",
+    "url": "https://app.close.com/lead/lead_1p9Xqheg7HzHuVdjvN3G1fu484XvYNOKk353WIDEXeG/",
+    "lead_status": "Actief",
+    "opportunity_id": null,
+    "fase": null,
+    "fase_type": null,
+    "waarde": null,
+    "valuta": "EUR",
+    "confidence": null,
+    "close_date": null,
+    "eigenaar": "Eduface CRM",
+    "crm_note": "",
+    "contacten": [
+      {
+        "naam": "Wendy Jansen",
+        "titel": "Project leader AI Education Innovation at TU Delft",
+        "email": null,
+        "id": "cont_oLoHAwYuiZzw6ef2dCC0ojsnsRGn8fUe6B5mTmEFbP3"
+      },
+      {
+        "naam": "Simon Goede",
+        "titel": "Executive Secretary / Afdelingsmanager bij TU Delft",
+        "email": "s.j.goede@tudelft.nl",
+        "id": "cont_m4Irfjzo8p7ewu5BVlCRWTV6C2zkyDWKBQqR7R9w6mE"
+      },
+      {
+        "naam": "Aart Oxenaar",
+        "titel": "Directeur Onderwijs, Faculty of Architecture",
+        "email": "aoxenaar@tudelft.nl",
+        "id": "cont_58U7wWF36HqJuF6fKLIgT8bg7geO8OLR4b9Yunw9Jdj"
+      },
+      {
+        "naam": "Annoesjka Cabo",
+        "titel": "Academic Director of Teaching Academy",
+        "email": "acabo@tudelft.nl",
+        "id": "cont_V9mcjXiyV0bluahtZdXqbepcwcGyfNNC1nKVxtx966s"
+      },
+      {
+        "naam": "Giulia Calabretta",
+        "titel": "Director of Education",
+        "email": "g.calabretta@tudelft.nl",
+        "id": "cont_6eBqpZjHDD1mMCaufs9aXYdgOFYaLJE5zhpc5OichwN"
+      },
+      {
+        "naam": "Hans Welleman",
+        "titel": "Director of Education, Faculty of Civil Engineering and Geosciences (CEG)",
+        "email": "j.w.welleman@tudelft.nl",
+        "id": "cont_Qp9jDweMgSnOQqCJTv2eQMynDEuwFRKlNInfqTcwoN4"
+      },
+      {
+        "naam": "Ann Van Dam",
+        "titel": "Head of Education and Student Affairs / Hoofd Onderwijs en Studentenzaken",
+        "email": "annvandam@tudelft.nl",
+        "id": "cont_UyoJ5BNsOw4NOLlKiEIANwe2LiolmfsngD68oQpg4ft"
+      },
+      {
+        "naam": "Geert-Jan Houben",
+        "titel": "pro-vice rector magnificus AI",
+        "email": "ai-initiative@tudelft.nl",
+        "id": "cont_WhIIrf2oI8dOzXe3jcfMD4lf0cAuSs0DtcZrzWOQ5GG"
+      },
+      {
+        "naam": "Fred Herrebout",
+        "titel": "Head of Public Affairs TU Delft Innovation & Impact Center",
+        "email": "a.m.herrebout@tudelft.nl",
+        "id": "cont_1rcAslHZ9kcvy4OarIWjbbQgGF1eRjBm5lMjXbGBpWB"
+      },
+      {
+        "naam": "Wendy Jansen",
+        "titel": null,
+        "email": "w.k.k.jansen@tudelft.nl",
+        "id": "cont_iOe4NmFmNwt5OBFFXsPOd2KfN6oJI7g9ojy4DCZloYC"
+      },
+      {
+        "naam": "Jan Implom",
+        "titel": "Learning Developer Extension School (PhD AI in onderwijs)",
+        "email": "j.implom@tudelft.nl",
+        "id": "cont_m61aC8SphGvMZ1e63bYWZmmJffhNjrOK5Oy2EhjejEC"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_FhfsS6sBgkhooZ7fJlUdc56cHWvQ2ulTgMJgqgNuTJz",
+        "soort": "call",
+        "datum": "2026-04-01",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "VM ingesproken.",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_Wwlfap89F9s5XVHX3tPORerF5v3jkLhFVEU7SSlJuKh",
+        "soort": "call",
+        "datum": "2026-04-01",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Gesproken hij zei dat Geert-Jan eigenlijk te hoog in de boom zit. Hij gaat mij door zetten naar mensen die kunnen bepalen of ze het wel of niet interessant  vinden.",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_Au9SP82XfWAKNXXPtkEVBE8TRBzg4ZP5UWQj10Yz2W3",
+        "soort": "call",
+        "datum": "2026-04-01",
+        "titel": "Telefoon outbound",
+        "duur_min": 5,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Simon is gaat morgen middag op vakantie in Nederland en is 13de terug.\nEen collega die hij graag bij de meeting wil hebben is de laatste week van april op vakantie. (Waarschijnlijk is het Mei vakantie)\n\nSimon zit zelf meer op proces en wil er graag nog een aantal collega’s bij hebben. Ik moet weten welke collega’s daar bij komen zitten.\n\nHij weet dat we een commercieel bedrijf zijn en hij vindt het alsnog interessant klinken.\n\nDe naam Volkert zegt hem wel wat, dus oppassen met wat ik zeg over accounts.\n\nWe gaan via de mail een afspraak inplannen.",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_KC2A4eBEVIs5IxrqAY5zMPkVU3bIoRzJaYPJGW1myMM",
+        "soort": "call",
+        "datum": "2026-04-15",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Mijn mail is gevonden in de spam, meeting staat gepland wel nog onder voorbehoud.",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_XV42xyGAOCKxUkrPqRlDEvdV1ss7jM3es33AUOyU8H4",
+        "soort": "meeting",
+        "datum": "2026-05-12",
+        "titel": "Tu Delft X Eduface verdere kennismaking",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "dante.torbed@eduface.me",
+          "jeroen.van.gessel@eduface.me",
+          "s.j.goede@tudelft.nl",
+          "w.k.k.jansen@tudelft.nl"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_sSESt7xxGBHeE87V4NKnacur7VDv7oNUG0EFgbGDoGR",
+        "soort": "call",
+        "datum": "2026-05-26",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "De mail is goed aangekomen. Volgende week gaat hij met Wendy zitten om uit te zoeken welke acties ze kunnen uitvoeren.",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_7fdvM9A7A1onKGWXvgAHXaMpZkc1YAPnvjUWTt6Nhi7",
+        "soort": "call",
+        "datum": "2026-06-08",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "VM deze SMS gestuurd. \nHi Simon, hoe is het? Helaas heb ik nog niks van je vernomen over wat momenteel het plan is met de slides waar het team en ik aan gewerkt hebben. Ook heb ik leuk nieuws dat ik graag met je zou willen delen. Ik zal je later nog eens proberen te bereiken, maar jij kunt mij uiteraard ook bellen zodra het je uitkomt. Groet, Dante Eduface",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_dgGUniQElH9QZxe8zJgEXKTIIpVYMBCIfeRJcrblfZf",
+        "soort": "call",
+        "datum": "2026-07-02",
+        "titel": "Telefoon outbound",
+        "duur_min": 2,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Wendy is op pad gestuurd om de inventariseren. \n\nWe worden meegenomen in het sleutel gesprek op 15 juli. Dit is namelijk verplaats. Als er iets van interesse is laat ze het ons weet. \n\nHeb mezelf heel passief opgesteld, had moeten vragen wie er bij het gesprek ging bij zitten. \nOf het een idee is om de slides nog uitgebreider te maken. \nWe hebben ook geen feedback op onze slides gekregen. \n\nIk had haar niet zo moeten laten gaan, altijd vervolg stap.",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_Jz8hu8s6tGGjNUc9ThxJWtR0Vvd3qjJzm3HUdxjvXZj",
+        "soort": "meeting",
+        "datum": "2026-07-16",
+        "titel": "Eduface × TU Delft – AI & kritisch denken in het onderwijs",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "dante.torbed@eduface.me",
+          "j.implom@tudelft.nl"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_PELbVYyNGbdQ4bo3ngUiup7N7kO98vFFrM4zGoXn3xJ",
+        "soort": "call",
+        "datum": "2026-07-16",
+        "titel": "Telefoon outbound",
+        "duur_min": 1,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      }
+    ],
+    "open_taken": [
+      {
+        "tekst": "Leden van het sleutel gesprek benaderen",
+        "datum": "2026-09-04"
+      }
+    ],
+    "laatste_gesprek": "2026-07-16",
+    "volgende_afspraak": null,
+    "aantal_gehad": 10,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

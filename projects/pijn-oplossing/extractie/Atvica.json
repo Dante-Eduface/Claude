@@ -1,0 +1,53 @@
+[
+  {
+    "id": "Atvica-1",
+    "org": "Atvica",
+    "lead_id": "lead_Zj8IItel0yfcRwEmZfu0nl0vF6uwkJFycQNngewbVMV",
+    "close_url": "https://app.close.com/lead/lead_Zj8IItel0yfcRwEmZfu0nl0vF6uwkJFycQNngewbVMV/",
+    "persoon": "Arnout Vree",
+    "functie": "Directeur & oprichter Avetica",
+    "datum": "2026-09-08",
+    "bron_type": "meeting",
+    "bron_id": "acti_wPhSC1NyN1C25v1q0Dz38n3UVow626y86St4KleX8JL",
+    "segment": "particulier",
+    "thema": "privacy-compliance",
+    "type": "pijn",
+    "citaat": "Universiteiten leggen toenemend nadruk op gegevenssoevereiniteit en lokale hosting. Universiteit Twente onderzoekt alternatieven als Nextcloud voor beter databestuur.",
+    "samenvatting": "Datasoevereiniteit en lokale hosting wegen zwaarder bij universiteiten.",
+    "zekerheid": "parafrase"
+  },
+  {
+    "id": "Atvica-2",
+    "org": "Atvica",
+    "lead_id": "lead_Zj8IItel0yfcRwEmZfu0nl0vF6uwkJFycQNngewbVMV",
+    "close_url": "https://app.close.com/lead/lead_Zj8IItel0yfcRwEmZfu0nl0vF6uwkJFycQNngewbVMV/",
+    "persoon": "Arnout Vree",
+    "functie": "Directeur & oprichter Avetica",
+    "datum": "2026-09-08",
+    "bron_type": "meeting",
+    "bron_id": "acti_wPhSC1NyN1C25v1q0Dz38n3UVow626y86St4KleX8JL",
+    "segment": "particulier",
+    "thema": "privacy-compliance",
+    "type": "pijn",
+    "citaat": "De Canvas-hack beinvloedde de focus van instellingen op veiligheid en gegevenslocatie. Serverlocatie en compliance hebben aanzienlijke impact op klantbeslissingen.",
+    "samenvatting": "Na de Canvas-hack is serverlocatie een beslissende factor geworden.",
+    "zekerheid": "parafrase"
+  },
+  {
+    "id": "Atvica-3",
+    "org": "Atvica",
+    "lead_id": "lead_Zj8IItel0yfcRwEmZfu0nl0vF6uwkJFycQNngewbVMV",
+    "close_url": "https://app.close.com/lead/lead_Zj8IItel0yfcRwEmZfu0nl0vF6uwkJFycQNngewbVMV/",
+    "persoon": "Arnout Vree",
+    "functie": "Directeur & oprichter Avetica",
+    "datum": "2026-09-08",
+    "bron_type": "meeting",
+    "bron_id": "acti_wPhSC1NyN1C25v1q0Dz38n3UVow626y86St4KleX8JL",
+    "segment": "particulier",
+    "thema": "lms-it",
+    "type": "huidig",
+    "citaat": "Certified Integration Partners garanderen dat plugins goed onderhouden blijven, wat risico op veroudering minimaliseert. Atvica kan klanten vertrouwen geven door gecertificeerde partners aan te bevelen.",
+    "samenvatting": "Moodle-certificering is voor partners het vertrouwenssignaal richting instellingen.",
+    "zekerheid": "parafrase"
+  }
+]

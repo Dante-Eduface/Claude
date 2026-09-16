@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  @page { size: A4 landscape; margin: 9mm; }
+  :root{
+    --navy:#002333;--green:#00E075;--green2:#067a43;--green3:#008F5A;
+    --ink:#0e1c24;--grey:#7a8a91;--cardline:#eceff1;
+    --amber:#b8860b;--red:#b3261e;--purple:#5b3ea8;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:'Inter',sans-serif;color:var(--ink);
+    background:#fbfdfd;
+    background-image:radial-gradient(#e3eaed 1px, transparent 1px);
+    background-size:22px 22px;
+    padding:14px 18px;
+    -webkit-print-color-adjust:exact;print-color-adjust:exact;
+  }
+  h1{font-family:'League Spartan',sans-serif;color:var(--navy);font-size:21px;}
+  .titlebar{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:3px solid var(--green);padding-bottom:8px;margin-bottom:6px;}
+  .sub{color:var(--grey);font-size:10px;margin-top:3px;}
+  .brand{font-family:'League Spartan';font-weight:800;font-size:16px;color:var(--navy);}
+  .brand .fx{color:var(--green3);}
+
+  .tierlabel{text-align:center;font-size:9px;text-transform:uppercase;letter-spacing:.13em;color:var(--grey);font-weight:700;margin:16px 0 8px;}
+  .tier{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;}
+  .vline{width:2px;height:16px;background:#dbe4e7;margin:2px auto;}
+
+  .card{
+    display:flex;gap:11px;align-items:flex-start;
+    background:#fff;border:1px solid var(--cardline);border-radius:16px;
+    padding:12px 14px;box-shadow:0 4px 16px rgba(16,40,60,.07);
+    min-width:200px;max-width:250px;
+  }
+  .card.hl-eb{border:2px solid var(--navy);}
+  .card.hl-champ{border:2px solid var(--amber);}
+  .card.hl-coach{border:2px solid var(--green3);}
+  .card.hl-swing{border:2px solid var(--purple);}
+  .card.hl-enemy{border:1.5px solid #f0c4c0;}
+  .card.hl-ally{border:1.5px solid #bfe6cf;}
+
+  .av{width:42px;height:42px;border-radius:50%;position:relative;overflow:hidden;flex:none;
+      background:#eef2f4;display:inline-flex;align-items:center;justify-content:center;}
+  .av span{color:#5a6b73;font-weight:700;font-size:14px;}
+  .av.ph{background:var(--navy);} .av.ph span{color:#fff;}
+
+  .info{flex:1;min-width:0;}
+  .nm{font-weight:700;font-size:13.5px;color:var(--ink);line-height:1.15;}
+  .rl{font-size:11px;color:var(--grey);margin-top:1px;line-height:1.2;}
+  .tags{margin-top:7px;display:flex;gap:5px;flex-wrap:wrap;}
+  .pill{font-size:9.5px;font-weight:600;padding:2px 9px;border-radius:20px;white-space:nowrap;}
+  .p-eb{background:#e6eef6;color:#1b4f7a;}
+  .p-champ{background:#fbeecf;color:#8a5b00;}
+  .p-coach{background:#d9f7e7;color:#067a43;}
+  .p-enemy{background:#fde4e4;color:#b3261e;}
+  .p-swing{background:#ece3fb;color:#5b3ea8;}
+  .p-ally{background:#d9f7e7;color:#067a43;}
+  .p-domain{background:#eef2f4;color:#56707d;}
+  .hot{font-size:9.5px;color:var(--grey);margin-top:7px;line-height:1.35;border-top:1px solid #f1f4f5;padding-top:5px;}
+  .hot b{color:var(--navy);font-weight:600;}
+
+  .blockwrap{background:#ffffffcc;border:1.5px dashed #e3c97a;border-radius:18px;padding:12px 14px;margin-top:8px;}
+  .blockwrap.green{border-color:#bfe6cf;}
+  .blockwrap h4{font-family:'League Spartan';font-size:12px;color:var(--navy);}
+  .blockwrap .bn{font-size:9.5px;color:var(--grey);margin:2px 0 10px;}
+  .grid{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;}
+
+  .bottom{display:flex;gap:12px;margin-top:16px;}
+  .panel{flex:1;background:#fff;border:1px solid var(--cardline);border-radius:14px;padding:11px 14px;box-shadow:0 3px 12px rgba(16,40,60,.05);}
+  .panel.cro{border:1.5px solid #e3c97a;}
+  .panel h4{font-family:'League Spartan';font-size:11px;color:var(--navy);margin-bottom:6px;}
+  .legrow{display:flex;flex-wrap:wrap;gap:8px 16px;}
+  .legitem{display:flex;align-items:center;gap:6px;font-size:9.5px;}
+  .ld{width:11px;height:11px;border-radius:4px;}
+  ul.cro{margin:0;padding-left:15px;font-size:9.4px;line-height:1.5;}
+  ul.cro li{margin-bottom:3px;} ul.cro b{color:var(--navy);}
+  .foot{font-size:7.5px;color:var(--grey);margin-top:9px;text-align:center;}
+</style>
+</head>
+<body>
+  <div class="titlebar">
+    <div>
+      <h1>Organogram &amp; stakeholdermap — IVT Hogeschool Windesheim</h1>
+      <div class="sub">Reconstructie o.b.v. windesheim.nl, LinkedIn, IVT-statusblog + officiële e-mailadressen. Rollen = CRO-inschatting (John McMahon-logica). Stand: 2 juli 2026. Verifiëren bij Geert.</div>
+    </div>
+    <div class="brand">Edu<span class="fx">face</span></div>
+  </div>
+
+  <!-- BOVEN DE KAMER -->
+  <div class="tierlabel">Boven de kamer — beslislijn (niet uitgenodigd, moet je bereiken)</div>
+  <div class="tier">
+    <div class="card hl-eb">
+      <div class="av ph"><span>IT</span></div>
+      <div class="info">
+        <div class="nm">Irene Tiepel</div>
+        <div class="rl">Manager Informatievoorziening &amp; Technologie (IVT) · ~130 fte</div>
+        <div class="tags"><span class="pill p-eb">Economic Buyer (IT)</span></div>
+        <div class="hot">Leidt hele IVT, zit in MT Dienst Bedrijfsvoering. <b>Budget-autoriteit boven de kamer.</b> Niet aanwezig.</div>
+      </div>
+    </div>
+    <div class="card hl-swing">
+      <div class="av ph"><span>RN</span></div>
+      <div class="info">
+        <div class="nm">Richard Netelbeek</div>
+        <div class="rl">Manager IVT Onderwijs (productgebied IT voor Onderwijs &amp; Onderzoek)</div>
+        <div class="tags"><span class="pill p-swing">Beslisser / swing</span></div>
+        <div class="hot"><b>Directe manager van de kamer.</b> Hier valt build-vs-buy voor onderwijstooling. Vraag Geert om introductie.</div>
+      </div>
+    </div>
+  </div>
+  <div class="vline"></div>
+
+  <!-- DE KAMER: IVT functioneel beheer onderwijs/toetsing -->
+  <div class="blockwrap">
+    <h4>De meeting — IVT, productgebied IT voor Onderwijs &amp; Onderzoek</h4>
+    <div class="bn">Functioneel-beheer / product-owner-groep die Windesheims toets- en LMS-stack draait (Brightspace, Ans, Surpass, iQualify, Möbius, plagiaatsoftware). Dit is de gebruikers-/techniek-koopkamer, niet de EB. Exact de plek waar Eduface naast komt te staan.</div>
+    <div class="grid">
+      <div class="card hl-champ">
+        <div class="av ph"><span>GW</span></div>
+        <div class="info"><div class="nm">Geert van der Wijk</div><div class="rl">Product Owner Onderwijsuitvoering &amp; Onderzoek · organisator</div>
+        <div class="tags"><span class="pill p-champ">Champion (te ontwikkelen)</span></div>
+        <div class="hot"><b>Belegde de meeting = intrinsiek geïnteresseerd.</b> Owner van toets- + plagiaatsystemen. Jouw #1 om richting champion te trekken.</div></div>
+      </div>
+      <div class="card hl-coach">
+        <div class="av"><span>CK</span></div>
+        <div class="info"><div class="nm">Cris Koster <span style="font-size:8.5px;color:var(--grey)">(optioneel)</span></div><div class="rl">Functioneel beheerder digitaal toetsen</div>
+        <div class="tags"><span class="pill p-coach">Coach / tech-evaluator</span></div>
+        <div class="hot">Draait dagelijks Ans, Surpass, iQualify, Möbius. <b>Weet exact waar het huidige nakijken pijn doet.</b></div></div>
+      </div>
+      <div class="card hl-ally">
+        <div class="av"><span>SF</span></div>
+        <div class="info"><div class="nm">Sabrina de Vent-Folkers <span style="font-size:8.5px;color:var(--grey)">(optioneel)</span></div><div class="rl">Functioneel beheer Brightspace / LMS</div>
+        <div class="tags"><span class="pill p-ally">Integratie-ally</span></div>
+        <div class="hot">LMS-koppeling = zij moet het dragen. Win vroeg: "hoe klikt dit in Brightspace".</div></div>
+      </div>
+      <div class="card hl-ally">
+        <div class="av"><span>RB</span></div>
+        <div class="info"><div class="nm">Ruben Bosma <span style="font-size:8.5px;color:var(--grey)">(optioneel)</span></div><div class="rl">Functioneel beheer</div>
+        <div class="tags"><span class="pill p-ally">Support-ally</span></div>
+        <div class="hot">Beheer/support-hoek. Neutraal-positief, moet meebewegen.</div></div>
+      </div>
+      <div class="card hl-ally">
+        <div class="av"><span>RR</span></div>
+        <div class="info"><div class="nm">Radbout Runhaar</div><div class="rl">Functioneel / applicatiebeheer (IVT)</div>
+        <div class="tags"><span class="pill p-ally">Support-ally</span></div>
+        <div class="hot">Post storings-/systeemupdates op IVT-statusblog. Beheer-kant.</div></div>
+      </div>
+      <div class="card">
+        <div class="av"><span>HB</span></div>
+        <div class="info"><div class="nm">Hemmo Brink</div><div class="rl">Medewerker ICT &amp; Onderwijs / Bedrijfsinformatie-coördinator</div>
+        <div class="hot">Brug ICT ↔ onderwijs. Kampen. Rol in besluit nog onduidelijk.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TWEEDE ROUTE: onderwijs / pedagogiek -->
+  <div class="blockwrap green" style="margin-top:14px;">
+    <h4>Tweede route — onderwijs / pedagogiek (naast de IT-route)</h4>
+    <div class="bn">Niet-IT-stemmen in de kamer die de gebruikers- en kwaliteitskant vertegenwoordigen. Bewerk parallel: zij voelen de nakijk-werkdruk en dragen "iedere student is uniek" (onderwijsvisie).</div>
+    <div class="grid">
+      <div class="card hl-champ">
+        <div class="av"><span>MT</span></div>
+        <div class="info"><div class="nm">Michell Tappel</div><div class="rl">Achtergrond toegepaste onderwijskunde (UT) · functie te bevestigen</div>
+        <div class="tags"><span class="pill p-champ">Champion-kandidaat (onderwijskundig)</span></div>
+        <div class="hot"><b>Onderwijskundige stem</b> = feedbackkwaliteit &amp; leeropbrengst. Mogelijke tweede champion buiten IT.</div></div>
+      </div>
+      <div class="card">
+        <div class="av"><span>LK</span></div>
+        <div class="info"><div class="nm">Louis Klomp</div><div class="rl">Docent-rol (o.a. journalistiek/vormgeving) · functie te bevestigen</div>
+        <div class="tags"><span class="pill p-domain">Docent / eindgebruiker</span></div>
+        <div class="hot"><b>De lecturer-stem.</b> Voelt de nakijk-uren zelf. Goede bron voor pijn + adoptie-realiteit.</div></div>
+      </div>
+      <div class="card">
+        <div class="av"><span>DM</span></div>
+        <div class="info"><div class="nm">Dide Mijsters</div><div class="rl">C.T. Mijsters · functie niet publiek zichtbaar</div>
+        <div class="hot">LinkedIn + ResearchGate profiel = mogelijk onderzoek/onderwijs-hoek. Vraag Geert.</div></div>
+      </div>
+      <div class="card">
+        <div class="av"><span>AL</span></div>
+        <div class="info"><div class="nm">Albert Luth</div><div class="rl">A.J. Luth · functie niet publiek gevonden</div>
+        <div class="hot">Medewerker bevestigd via e-mail, rol onbekend. Vraag Geert wie hij is.</div></div>
+      </div>
+      <div class="card">
+        <div class="av"><span>EE</span></div>
+        <div class="info"><div class="nm">Edriënne Eugenio</div><div class="rl">Functie niet publiek gevonden</div>
+        <div class="hot">Medewerker bevestigd via e-mail, rol onbekend. Vraag Geert wie zij is.</div></div>
+      </div>
+      <div class="card">
+        <div class="av"><span>RV</span></div>
+        <div class="info"><div class="nm">Renée Visscher <span style="font-size:8.5px;color:var(--grey)">(optioneel)</span></div><div class="rl">~10 jaar bij Windesheim · functie niet zichtbaar</div>
+        <div class="hot">Harderwijk. Rol te bevestigen.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GEEN ZELFBOUW AI-NAKIJKTOOL -->
+  <div class="blockwrap green" style="margin-top:14px;">
+    <h4>Zelfbouw-check — géén eigen AI-nakijktool <span style="font-size:9px;color:var(--green2);font-weight:600;">(open lane)</span></h4>
+    <div class="bn">Geen homegrown AI-grading/feedback-product gevonden. Windesheims AI-footprint = <b>governance + ethiek</b> (AI Assessment Scale voor studenten, ELSA Lab Oost-Nederland, AI-startbekwaamtest, lectoraat GenAI-onderzoek), niet een nakijk-engine. Ze regelen <b>hóe studenten AI mogen gebruiken</b>, maar hebben géén tool om docenten te helpen bij feedback/nakijken. Dat gat is jouw opening. Publieke AI-gezichten (buiten de kamer, mogelijke academische sponsors): Stephan Peters (AI-programmateam), Erik Fledderus (lector, ELSALON), Anneke Smits (lector Onderwijsinnovatie &amp; ICT).</div>
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="bottom">
+    <div class="panel">
+      <h4>Legenda &amp; strategische haken</h4>
+      <div class="legrow">
+        <div class="legitem"><span class="ld" style="background:#1b4f7a"></span> Economic Buyer</div>
+        <div class="legitem"><span class="ld" style="background:#5b3ea8"></span> Beslisser (swing)</div>
+        <div class="legitem"><span class="ld" style="background:#b8860b"></span> Champion (te ontwikkelen)</div>
+        <div class="legitem"><span class="ld" style="background:#067a43"></span> Coach / ally</div>
+        <div class="legitem"><span class="ld" style="background:#9aa7ad"></span> Neutraal / onbekend</div>
+      </div>
+      <div style="font-size:9px;color:var(--grey);margin-top:8px;line-height:1.45">
+        <b style="color:var(--navy)">Haken uit hun eigen taal:</b><br>
+        • <b>Digitale soevereiniteit / ethiek</b> → ELSA Lab, "publieke waarden". Leid met EU-hosting + data-eigenaarschap.<br>
+        • <b>"Welzijn én kwaliteit" (ambitie 2 Instellingsplan)</b> + NVAO: werkdruk "hoog", innovatie mag die niet verhogen → Eduface = meer feedback, minder nakijk-uren.<br>
+        • <b>Onderwijsvisie: "iedere student is uniek"</b> → gepersonaliseerde formatieve feedback op schaal.
+      </div>
+    </div>
+    <div class="panel cro">
+      <h4>CRO-assessment (John McMahon-logica)</h4>
+      <ul class="cro">
+        <li><b>Dit is de gebruikers-/techniekkamer, niet de EB.</b> Kwalificeer hier pijn + spelers, ga dan omhoog naar Netelbeek → Tiepel. Past bij Discovery-gate scope.</li>
+        <li><b>Champion = Geert van der Wijk.</b> Organisator + owner toets-/plagiaatsystemen. Ontwikkel hem: geef hem de business-case-taal om intern omhoog te verkopen.</li>
+        <li><b>Coach = Cris Koster</b> (weet waar het nakijken pijn doet). <b>Integratie-allies = Folkers (Brightspace), Bosma, Runhaar</b> — win ze vroeg zodat "kan niet" geen blocker wordt.</li>
+        <li><b>Tweede route = onderwijskundige/docent-stem (Tappel, Klomp).</b> Zij dragen feedbackkwaliteit + voelen werkdruk. Parallel bewerken naast IT.</li>
+        <li><b>Geen enemy uit zelfbouw</b> — geen eigen AI-nakijktool. Reëel risico = incumbent-loyaliteit aan bestaande toets-stack (Ans/Surpass) en "wij regelen AI-beleid zelf". Positioneer als docent-hulp bóven hun stack, niet ertegenin.</li>
+        <li><b>Actie:</b> vraag Geert vóór/na de meeting om rol-bevestiging van Luth, Eugenio, Mijsters, Tappel + een intro naar Netelbeek.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="foot">Eduface · vertrouwelijk · onderbouwde reconstructie, geen officieel Windesheim-document. Functies gemarkeerd "te bevestigen" niet publiek verifieerbaar (geen staff-pages; LinkedIn-bodies gated).</div>
+</body>
+</html>

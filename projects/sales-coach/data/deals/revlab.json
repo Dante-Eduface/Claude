@@ -1,0 +1,90 @@
+{
+  "slug": "revlab",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_wWKBuMlJKU6PYgvsJ8kBHFIjhMGXd3TdBmbDcuM0D4G",
+    "naam": "Revlab",
+    "url": "https://app.close.com/lead/lead_wWKBuMlJKU6PYgvsJ8kBHFIjhMGXd3TdBmbDcuM0D4G/",
+    "lead_status": "Prospect",
+    "opportunity_id": null,
+    "fase": null,
+    "fase_type": null,
+    "waarde": null,
+    "valuta": "EUR",
+    "confidence": null,
+    "close_date": null,
+    "eigenaar": "Eduface CRM",
+    "crm_note": "",
+    "contacten": [
+      {
+        "naam": "Ben van lustergraaf",
+        "titel": "",
+        "email": "ben@revlab.nl",
+        "id": "cont_PvYPyxFEqx2FpZurDZnV95SU8KNU7e9fZwOFcfw9eLy"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_CFvuPtJDpuOiWx4FIT5sJNCWs0xPIeYY9wiuGas4AmJ",
+        "soort": "meeting",
+        "datum": "2026-07-28",
+        "titel": "Linkedin contentstrategie, merkverhaal,  contentpijlers etc - Eduface x Revlab",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "ben@revlab.nl",
+          "dante.torbed@eduface.me"
+        ],
+        "samenvatting": "- Besproken waarom Eduface moeite heeft met consistente LinkedIn-content vanwege druk werkschema en behoefte aan strategische aanpak\n- Uitgelegd dat Eduface AI-feedback-tool voor docenten bouwt die consistentie verbetert, uitval van studenten vermindert en studenttevredenheid verhoogt\n- Geïdentificeerd dat university C-level bestuurders primaire doelgroep zijn die risicoavers zijn en vertrouwde partijen prefereren boven startups\n- Aangekaart dat grote weerstand komt van lange sales cycles (12-16 maanden), behoefte aan meer cases en gevoeligheden rond data privacy en AI-compliance\n- Aanbevolen om drie teamleden afzonderlijk te laten posten met mix van educatieve en voorzichtig geselecteerde persoonlijke content\n\n### Introductie en achtergrond Revlab\n- Ben van de Lustgraaf is copywriter met 15 jaar ervaring en werkt sinds 6-8 maanden samen met Thijs\n- Ben is onlangs naar Spanje geëmigreerd en woont daar nu twee weken\n- Ben had de verzonden content vluchtig doorgenomen en vond het een helder verhaal\n\n### Huidige uitdagingen Eduface\n- Eduface kampt met moeilijkheden om consistent goede ideeën voor LinkedIn-posts te bedenken\n- Het bedrijf werkt in een sector waar zeer zorgvuldige formuleringen belangrijk zijn vanwege verkoop aan universiteiten\n- Het team is te druk met andere taken om tijd te besteden aan creatief ontwikkelen van LinkedIn-content\n- Eduface wil posts plannen op basis van duidelijke strategie die aantoonbaar resultaat oplevert\n\n### Strategie LinkedIn-profilen\n- Eduface overweegt drie persoonlijke profielen in plaats van één bedrijfsprofiel te gebruiken\n- Ben benadrukt dat personal branding belangrijker is dan bedrijfsprofielen, omdat niemand meer via bedrijfsprofielen post\n- Fokus op drie profielen is beter omdat het beter aansluit bij bereik en impact van content\n\n### Wat is Eduface: product en waardepropositie\n- Eduface bouwt een AI-model dat feedback geeft op studentenschrijfopdrachten en helpt docenten met nakijken\n- Het tool is specifiek voor docenten, die feedback-suggesties en cijfersuggesties van het AI-model kunnen goedkeuren of aanpassen\n- Het model is samen met Leiden Universiteit en Radboud Universiteit getraind op onderwijskundige feedback en accurate beoordeling\n- Eduface helpt docenten formatieve feedback efficiënter te geven, wat normaal buiten contracturen gebeurt\n\n### Uitgebreide benefits van Eduface\n- Eduface kan per student een leerprofiel creëren op basis van feedback en cijfers als datapunten\n- Het systeem helpt studenten hun groei over tijd inzichtelijk te maken, wat motivatie verhoogt vergelijkbaar met Strava of Whoop\n- Door beter inzicht in individuele sterke en zwakke punten kunnen gepersonaliseerde leeropdrachten worden gemaakt\n- Beter inzicht motiveert studenten om hun studie af te maken en kan studentenuitval verminderen\n- Studentenuitval verminderen is kostbaar voor universiteiten, omdat zij verdienen wanneer studenten hun studie afmaken\n\n### Doelgroep en hiërarchie in onderwijs\n- De primaire doelgroep zijn university C-level bestuurders, niet docenten\n- Profesoren hebben veel autonomie maar kunnen ook blokkeren; bestuurders zijn essentieel voor doorvoering\n- Doelgroep is gemiddeld 35-50 jaar oud en heeft minimaal 7-9 jaar scholing gehad voordat zij professor werden\n- Bestuurders zijn risicoavers, wat meegenomen moet worden in content strategy\n\n### Pijnpunten universiteiten\n- Docenten experimenteren zelf met ongoedgekeurde AI-tools, wat tegen richtlijnen van universiteiten ingaat\n- Universiteiten willen dat alleen GDPR-compliant en AI-Act-conforme tools worden gebruikt\n- Grote zorg over gegevenslekkage en risico daarvan; universiteiten willen af van big tech-tools\n- Consistentieverschillen ontstaan wanneer meerdere teaching assistants dezelfde opdrachten nakijken met verschillende standaarden\n- Docenten willen formatieve feedback geven maar hebben niet voldoende tijd daarvoor\n\n### Differentiators en kwaliteitsverzekering\n- Eduface heeft een eigen AI-model en host het zelf, in plaats van gebruik te maken van API's zoals ChatGPT of Gemini\n- Dit eigen model zorgt voor gesloten omgeving waarbij data niet in- of uitvloeit en verwijderd wordt\n- Hallucinatieprobleem van AI wordt geminimaliseerd door training op basis van beoordelingsformulieren en opdrachtomschrijvingen\n- Feedback is in 10 van 10 gevallen goed, gebaseerd op training met Leiden en Radboud Universiteit\n\n### Voornaamste weerstand en risico's\n- Grootste hindernis is dat Eduface een startup is en universiteiten voorkeur geven aan vertrouwde partijen boven beste oplossingen\n- Universiteiten prefereren soms oude, vertrouwde software van marktleiders boven innovatieve alternatieven\n- Eduface heeft nog onvoldoende cases en track record (onvoldoende 'skin in the game')\n- Sales cycles zijn extreem lang: minimaal 12-16 maanden per klant\n- Veel weerstand kan worden ondervangen met aantoning van consistentie, kwaliteit en AI-compliance\n\n### Snelle impact bij implementatie\n- Na enkele weken zijn praktische verschillen al merkbaar in tijd bespaard bij feedback geven\n- Na enkele maanden zien universiteiten drastische verbeteringen in consistentie van feedback en cijfers\n- Studententevredenheid stijgt op lange termijn (minimaal één jaar nodig voor zichtbare impact)\n- NSS-scores (studententevredenheid-enquêtes) bepalen universiteitsrankings en zijn cruciaal voor internationale studentenwerving\n\n### Belfast University case study\n- Universiteit van Belfast was op zoek naar AI assessment-tool en had eerst problemen met ander AI-systeem\n- Eduface werd ontmoet op een beurs en daar werd duidelijk dat de kwaliteit van Eduface aanzienlijk beter was\n- Technische superioriteit in AI-model was het doorslaggevende verschil voor keuze voor Eduface\n\n### Marktlandschap en concurrentie\n- In het feedback- en grading-segment zijn relatief weinig serieuze spelers\n- Bestaande spelers in de markt zijn allemaal serieus en goed gekend via beurzen\n- Luchtkastelen zullen snel afvallen omdat sales cycles zo lang zijn (12-16 maanden)\n- EU-regelgeving en hoog risicogehalte in sector maken het moeilijk voor onbetrouwbare partijen om lang te overleven\n\n### Content strategy: wat vermijden\n- Efficiëntie mag niet de hoofdboodschap zijn\n- Persoonlijke posts moeten voorzichtig gebruikt worden; onduidelijk is of academische doelgroep daarop reageert\n- Vermijden van te verkoopende toon ('dit is hoe het werkt, koop ons'); academische mensen zijn daar gevoelig voor\n- Voorkeur voor educatieve content boven pure verkoopaanpak\n\n### Content strategy: aanpak met persoonlijke element\n- Persoonlijke posts met zakelijk element kunnen goed werken; voorbeeld: CEO loopt elke ochtend met hond in bos omdat AI haar hoofd vol maakt\n- Mix van persoonlijk-zakelijk kan netwerkbereik vergroten, maar moet niet te vaak gebruikt worden\n- Vermijden van goedkope vergelijkingen ('mijn kat deed X, dit leerde ik over B2B sales')\n- Naast persoonlijke posts moet focus liggen op expertise, marktinzichten en toekomstige trends\n\n### Rollen en expertise Eduface-team\n- Jeroen is oprichter met commerciële en visionaire rol\n- Menno is AI-bachelor met focus op AI-model en technologie\n- Dante Torbed heeft salesrol en productoptimalisatirol, spreekt veel met klanten over pijnpunten\n- De drie profielen vertegenwoordigen sales, visie en technologie-expertise\n\n### Aanbevelingen voor content-strategy\n- Content moet alle drie lagen van ICP aanspreken: marketing/sales, hoogleraren en AI-specialisten in universiteiten\n- Posts van verschillende teamleden helpen variatie in expertise en perspectief te tonen\n- Dit helpt ook om buiten netwerk van alleen bestuurders uit te breiden naar andere doelgroepen\n- Verschillende experts trekken verschillende kopers aan met verschillende interessegebieden\n\n### Vervolgstappen\n- Ben stuurt een vragenlijst naar Eduface over weerstandspunten om die goed in kaart te brengen\n- Dante wil ook inzicht krijgen in Revlab's processen en werkwijze\n- Er wordt een vervolgafspraak ingepland\n- Contact blijft bestaan gedurende strategieontwikkeling",
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_v2QKaFZhRcfj2g8DbEDb9HGVXlcOPxyMRuxJyNbeoWj",
+        "soort": "meeting",
+        "datum": "2026-08-11",
+        "titel": "Ben x Dante",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "ben@revlab.nl",
+          "dante.torbed@eduface.me"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      }
+    ],
+    "open_taken": [],
+    "laatste_gesprek": "2026-08-11",
+    "volgende_afspraak": null,
+    "aantal_gehad": 2,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

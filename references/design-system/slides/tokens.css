@@ -1,0 +1,43 @@
+/* ==========================================================================
+   Eduface — SLIDES tokens (decks, pitch, webinar, investor)
+   Core + een type-schaal voor projectie op afstand. Alles is groter en
+   contrastrijker dan web: de kijker zit 5 meter weg, niet 50 centimeter.
+   Canvas is vast 1920x1080 (16:9). Ontwerp in px op dat canvas, niet in rem.
+   ========================================================================== */
+
+@import "../core/tokens.css";
+
+@theme {
+  /* ---- Canvas ------------------------------------------------------------ */
+  --slide-w: 1920px;
+  --slide-h: 1080px;
+  --slide-margin: 120px;          /* veilige marge, niks komt hierbuiten */
+  --slide-gap: 48px;              /* standaard gat tussen blokken */
+  --slide-col: 3;                 /* max kolommen naast elkaar */
+
+  /* ---- Type op projectie-afstand (px, niet rem) -------------------------- */
+  --text-slide-hero: 132px;       /* opening / statement slide */
+  --text-slide-hero--line-height: 0.98;
+  --text-slide-hero--letter-spacing: -0.025em;
+  --text-slide-hero--font-weight: 700;
+
+  --text-slide-title: 76px;       /* slidekop */
+  --text-slide-title--line-height: 1.04;
+  --text-slide-title--letter-spacing: -0.02em;
+  --text-slide-title--font-weight: 700;
+
+  --text-slide-sub: 44px;         /* subkop / kolomkop */
+  --text-slide-sub--line-height: 1.15;
+  --text-slide-sub--font-weight: 600;
+
+  --text-slide-body: 32px;        /* ONDERGRENS voor leesbare tekst */
+  --text-slide-body--line-height: 1.45;
+
+  --text-slide-caption: 24px;     /* bijschrift, bron, as-label */
+  --text-slide-caption--line-height: 1.35;
+
+  --text-slide-stat: 180px;       /* één groot cijfer */
+  --text-slide-stat--line-height: 0.9;
+  --text-slide-stat--letter-spacing: -0.03em;
+  --text-slide-stat--font-weight: 700;
+}

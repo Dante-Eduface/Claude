@@ -1,0 +1,77 @@
+{
+  "slug": "university-of-bath",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_l2ddvN9RoLERu5OcsbaOlADfjw9AEYl1cQbElEJG3q1",
+    "naam": "University of Bath",
+    "url": "https://app.close.com/lead/lead_l2ddvN9RoLERu5OcsbaOlADfjw9AEYl1cQbElEJG3q1/",
+    "lead_status": "Prospect",
+    "opportunity_id": null,
+    "fase": null,
+    "fase_type": null,
+    "waarde": null,
+    "valuta": "EUR",
+    "confidence": null,
+    "close_date": null,
+    "eigenaar": "Eduface CRM",
+    "crm_note": "",
+    "contacten": [
+      {
+        "naam": "Momna Hejmadi",
+        "titel": "Associate Pro Vice Chancellor (Education)",
+        "email": null,
+        "id": "cont_R1klKxnEcdaxH113g5fwVVR5SkI1aFGw4Eej7jkB8HF"
+      },
+      {
+        "naam": "Julian Chaudhuri",
+        "titel": "Pro-Vice-Chancellor (Education)",
+        "email": null,
+        "id": "cont_fYly6OFxzMd4HUIpylMZHxDplew5zYz2ygWuovNk9gE"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_Wo3oSHzej5EF1XAZmZu4n11cbNBY2dd5uYEw1VKrLlt",
+        "soort": "call",
+        "datum": "2026-05-11",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "VM",
+        "transcript_beschikbaar": false,
+        "komend": false
+      }
+    ],
+    "open_taken": [],
+    "laatste_gesprek": "2026-05-11",
+    "volgende_afspraak": null,
+    "aantal_gehad": 1,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

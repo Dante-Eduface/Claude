@@ -1,0 +1,233 @@
+<title>Targetlijst NL, voorbeeld van 3 rijen</title>
+
+<style>
+  :root {
+    --paper: #ffffff; --ground: #f2f6f6; --ink: #07222e; --ink-soft: #4d6874;
+    --ink-faint: #7d949d; --rule: #dbe5e6; --accent: #007b54; --accent-soft: #e2f2ea;
+    --open: #9a5b06; --open-soft: #fbf0dd;
+    --shadow: 0 1px 2px rgba(7,34,46,.05), 0 8px 24px -16px rgba(7,34,46,.28);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #0c2029; --ground: #06161d; --ink: #e8f1f1; --ink-soft: #9fb6bd;
+      --ink-faint: #7a9199; --rule: #1c3742; --accent: #00e075; --accent-soft: #0d3a2c;
+      --open: #e8a94a; --open-soft: #3a2c11;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px -16px rgba(0,0,0,.8);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #0c2029; --ground: #06161d; --ink: #e8f1f1; --ink-soft: #9fb6bd;
+    --ink-faint: #7a9199; --rule: #1c3742; --accent: #00e075; --accent-soft: #0d3a2c;
+    --open: #e8a94a; --open-soft: #3a2c11;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px -16px rgba(0,0,0,.8);
+  }
+  :root[data-theme="light"] {
+    --paper: #ffffff; --ground: #f2f6f6; --ink: #07222e; --ink-soft: #4d6874;
+    --ink-faint: #7d949d; --rule: #dbe5e6; --accent: #007b54; --accent-soft: #e2f2ea;
+    --open: #9a5b06; --open-soft: #fbf0dd;
+    --shadow: 0 1px 2px rgba(7,34,46,.05), 0 8px 24px -16px rgba(7,34,46,.28);
+  }
+
+  body {
+    background: var(--ground); color: var(--ink);
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 54rem; margin: 0 auto; padding: 3.5rem 1.5rem 6rem; display: flex; flex-direction: column; gap: 2.75rem; }
+  .eyebrow { font-size: .7rem; font-weight: 600; letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint); }
+  header { display: flex; flex-direction: column; gap: .8rem; }
+  h1 { font-size: clamp(1.9rem, 5vw, 2.6rem); line-height: 1.08; letter-spacing: -.03em; font-weight: 800; margin: 0; text-wrap: balance; }
+  .lede { color: var(--ink-soft); max-width: 40rem; }
+
+  h2 { font-size: 1.05rem; font-weight: 700; letter-spacing: -.01em; margin: 0 0 1rem; padding-bottom: .6rem; border-bottom: 1px solid var(--rule); }
+  section { display: flex; flex-direction: column; }
+
+  .scroll { overflow-x: auto; border: 1px solid var(--rule); border-radius: 10px; background: var(--paper); box-shadow: var(--shadow); }
+  table { border-collapse: collapse; width: 100%; font-size: .86rem; }
+  th, td { text-align: left; padding: .65rem .85rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-size: .66rem; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-faint); font-weight: 700; white-space: nowrap; }
+  td { color: var(--ink-soft); }
+  td.name { color: var(--ink); font-weight: 650; white-space: nowrap; }
+  td.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+  td.open { color: var(--open); font-weight: 600; white-space: nowrap; }
+  tr:last-child td { border-bottom: none; }
+  .prio { display: inline-flex; align-items: center; justify-content: center; width: 1.5rem; height: 1.5rem; border-radius: 5px; font-weight: 800; font-size: .8rem; background: var(--accent-soft); color: var(--accent); }
+
+  dl.cols { margin: 0; display: grid; grid-template-columns: minmax(10rem, auto) 1fr; gap: .4rem 1rem; font-size: .9rem; }
+  dl.cols dt { color: var(--ink); font-weight: 650; }
+  dl.cols dd { margin: 0; color: var(--ink-soft); }
+
+  ul.wijz, ul.vragen { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: .8rem; }
+  ul.wijz li, ul.vragen li { font-size: .95rem; color: var(--ink-soft); padding-left: 1.15rem; position: relative; }
+  ul.wijz li::before, ul.vragen li::before { content: ""; position: absolute; left: 0; top: .62em; width: .42rem; height: .42rem; border-radius: 2px; background: var(--accent); }
+  ul.wijz li strong, ul.vragen li strong { color: var(--ink); font-weight: 650; }
+  ul.wijz li s { color: var(--ink-faint); }
+
+  .note { display: flex; gap: .85rem; background: var(--open-soft); border-left: 3px solid var(--open); border-radius: 0 6px 6px 0; padding: .9rem 1.1rem; font-size: .93rem; color: var(--ink-soft); }
+  .note strong { color: var(--open); }
+
+  footer { font-size: .82rem; color: var(--ink-faint); border-top: 1px solid var(--rule); padding-top: 1.2rem; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .85em; background: var(--ground); padding: .1em .35em; border-radius: 4px; }
+
+  .dl { display: flex; flex-wrap: wrap; align-items: center; gap: .9rem; margin-bottom: 1rem; }
+  #dl {
+    font: inherit; font-weight: 650; font-size: .95rem;
+    background: var(--accent); color: var(--ground);
+    border: none; border-radius: 8px; padding: .65rem 1.1rem; cursor: pointer;
+  }
+  #dl:hover { filter: brightness(1.08); }
+  #dl:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .dl-note { font-size: .88rem; color: var(--ink-soft); }
+  .raw summary { font-size: .88rem; color: var(--ink-faint); cursor: pointer; }
+  .raw pre {
+    margin: .7rem 0 0; padding: .9rem 1rem; overflow-x: auto;
+    background: var(--paper); border: 1px solid var(--rule); border-radius: 8px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .74rem;
+    color: var(--ink-soft); line-height: 1.5; white-space: pre;
+  }
+</style>
+
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">Targetlijst NL · voorbeeld v2 · 21 juli 2026</div>
+    <h1>Drie rijen, versie 2</h1>
+    <p class="lede">Zeven kolommen eruit, aantallen in plaats van labels, en fit en prioriteit samengevoegd. Vijftien kolommen over. Klopt dit, dan bouw ik de rest in dit formaat.</p>
+  </header>
+
+  <section>
+    <h2>Het bestand</h2>
+    <div class="dl">
+      <button id="dl" type="button">CSV downloaden</button>
+      <span class="dl-note">Drie voorbeeldrijen, vijftien kolommen. Opent in Excel of Sheets.</span>
+    </div>
+    <details class="raw">
+      <summary>Of kopieer de inhoud</summary>
+      <pre id="csv">Prioriteit,Aanbieder,Moeder / groep,Categorie,Deelnemers per jaar,Bron deelnemers,LMS,Bron LMS,Sterkste use case,Betaalt nu al voor nakijken,Waar dat te checken is,Sales complexity,ACV laag (EUR/jr),ACV hoog (EUR/jr),Midpunt (EUR/jr)
+A,Salta Group,"Salta Group, moeder van 20+ merken",Private opleidingsgroep,Nog te verifiëren,,Nog te verifiëren,,Nakijken op schaal en formatieve feedback op volume,Onbekend,"Jaarverslag Salta plus vacatures docent/beoordelaar bij de merken: staat nakijken als apart uurtarief?",Gemiddeld,150000,400000,275000
+A,Lindenhaeghe,Zelfstandig,"Opleider finance, DSI-geaccrediteerd",Nog te verifiëren,,Nog te verifiëren,,Open examenantwoorden op schaal nakijken tegen een vaste norm,Onbekend,"Examenreglement en vacatures examinator: vergoeding per correctie",Hoog,Nog te bepalen,Nog te bepalen,Nog te bepalen
+B,NOVI Hogeschool,Stichting Hoger Onderwijs NOVI / Hogeschool NOVI B.V.,"Private hbo (IT), aangewezen instelling",Niet gepubliceerd,https://www.studiekeuze123.nl/onderwijsinstellingen/hogeschool-novi,EdHub (eigen platform),https://publicaties.nvao.net/ACCR_009686_24HR-34035_Rapport_2021.pdf,"Formatieve feedback op beroepsproducten en scripties; cijferonderbouwing (75% van de toetsing is open werk)",Onbekend,"KvK-jaarrekening Stichting Hoger Onderwijs NOVI en DUO/CROHO-inschrijvingen voor volume; vacatures noemen geen tarief maar er is een freelance-docentschil",Laag,Nog te bepalen,Nog te bepalen,Nog te bepalen
+B,ICM Opleidingen en Trainingen,Zelfstandig,Private opleider/trainer,Nog te verifiëren,,Nog te verifiëren,,Formatieve feedback op praktijkopdrachten en doorstroom aantonen,Onbekend,"Vraag het in het lopende gesprek: hoeveel uur per maand gaat naar nakijken en wat betalen jullie daarvoor",Laag,25000,55000,40000</pre>
+    </details>
+  </section>
+
+  <section>
+    <h2>Wat er is veranderd</h2>
+    <ul class="wijz">
+      <li><strong>Weg:</strong> <s>Waar het wringt</s>, <s>Differentiators</s>, <s>Pijn-hypothese</s>, <s>In pipeline (Close)</s>, <s>Website</s>, <s>Laatst gecheckt</s>.</li>
+      <li><strong>ICP-smaak is weg.</strong> Dat was een label (groot / klein tot middelgroot) uit het ICP-document en zei inderdaad niets. Vervangen door <strong>Deelnemers per jaar</strong>, een echt getal, met de bron ernaast. Staat het aantal nergens publiek, dan staat er "niet gepubliceerd" en niet een verzonnen schatting.</li>
+      <li><strong>Fit en Prioriteit waren dubbelop.</strong> Fit was hoe goed ze op het ICP passen, prioriteit was in welke volgorde je ze aanpakt, en dat liep vrijwel altijd gelijk. Nu alleen <strong>Prioriteit</strong>, gevoed door drie dingen: hoe goed ze op de ICP-kernconditie passen, of de pijn al gefinancierd is, en de sales complexity.</li>
+      <li><strong>"Koepeldeal" heet nu gewoon groep.</strong> Salta staat als <em>Salta Group</em>, met in de moederkolom dat er 20+ merken onder hangen.</li>
+      <li><strong>DSI is eruit</strong>, conform je eigen correctie in het ICP-bestand: DSI leidt niet op en neemt geen examens af, dus er is geen nakijkwerk en geen koper. In het voorbeeld staat nu Lindenhaeghe, een van de opleiders die DSI accrediteert. Daar zit het examinatorbudget wel.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>De drie rijen</h2>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>Prio</th><th>Aanbieder</th><th>Moeder / groep</th><th>Categorie</th>
+            <th>Deelnemers/jaar</th><th>LMS</th><th>Sterkste use case</th>
+            <th>Betaalt voor nakijken</th><th>Complexity</th><th>ACV laag</th><th>ACV hoog</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="prio">A</span></td>
+            <td class="name">Salta Group</td>
+            <td>Salta Group, moeder van 20+ merken</td>
+            <td>Private opleidingsgroep</td>
+            <td class="open">Nog te verifiëren</td>
+            <td class="open">Nog te verifiëren</td>
+            <td>Nakijken op schaal en formatieve feedback op volume</td>
+            <td class="open">Onbekend</td>
+            <td>Gemiddeld</td>
+            <td class="num">150.000</td>
+            <td class="num">400.000</td>
+          </tr>
+          <tr>
+            <td><span class="prio">A</span></td>
+            <td class="name">Lindenhaeghe</td>
+            <td>Zelfstandig</td>
+            <td>Opleider finance, DSI-geaccrediteerd</td>
+            <td class="open">Nog te verifiëren</td>
+            <td class="open">Nog te verifiëren</td>
+            <td>Open examenantwoorden op schaal nakijken tegen een vaste norm</td>
+            <td class="open">Onbekend</td>
+            <td>Hoog</td>
+            <td class="open">Nog te bepalen</td>
+            <td class="open">Nog te bepalen</td>
+          </tr>
+          <tr>
+            <td><span class="prio">B</span></td>
+            <td class="name">ICM Opleidingen</td>
+            <td>Zelfstandig</td>
+            <td>Private opleider/trainer</td>
+            <td class="open">Nog te verifiëren</td>
+            <td class="open">Nog te verifiëren</td>
+            <td>Formatieve feedback op praktijkopdrachten en doorstroom aantonen</td>
+            <td class="open">Onbekend</td>
+            <td>Laag</td>
+            <td class="num">25.000</td>
+            <td class="num">55.000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>De vijftien kolommen</h2>
+    <dl class="cols">
+      <dt>Prioriteit</dt><dd>A, B of C. Bepaalt de volgorde, nooit of iets meedoet.</dd>
+      <dt>Aanbieder</dt><dd>Naam zoals ze zichzelf noemen</dd>
+      <dt>Moeder / groep</dt><dd>Leeg of "zelfstandig" als er geen groep boven hangt</dd>
+      <dt>Categorie</dt><dd>Type opleider</dd>
+      <dt>Deelnemers per jaar</dt><dd>Een getal. Niet publiek is "niet gepubliceerd".</dd>
+      <dt>Bron deelnemers</dt><dd>URL waar dat getal vandaan komt</dd>
+      <dt>LMS</dt><dd>Moodle, Canvas, Brightspace of eigen. Bepaalt de integratie en dus de adoptie.</dd>
+      <dt>Bron LMS</dt><dd>URL</dd>
+      <dt>Sterkste use case</dt><dd>Uit de use-case-matrix van het ICP</dd>
+      <dt>Betaalt nu al voor nakijken</dt><dd>Ja, nee of onbekend</dd>
+      <dt>Waar dat te checken is</dt><dd>Concrete vindplaats per aanbieder</dd>
+      <dt>Sales complexity</dt><dd>Laag, gemiddeld of hoog</dd>
+      <dt>ACV laag / hoog / midpunt</dt><dd>Getallen zonder valutateken, zodat sorteren en optellen werkt</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Twee dingen die ik nog aan je wil voorleggen</h2>
+    <ul class="vragen">
+      <li><strong>Sterkste use case: houden of weg?</strong> Het is de enige kolom die nog uit het ICP-denkwerk komt, en de enige die zegt waarmee je het gesprek opent. Maar het is ook de langste tekstkolom. Zeg het als hij weg mag.</li>
+      <li><strong>Wil je hem in Close importeren?</strong> Dan maak ik er een kale tweede CSV bij met alleen de velden die Close slikt. Deze blijft dan je werkbestand.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="note">
+      <div><strong>Het onderzoek staat stil, met opzet.</strong> Ik ga geen tientallen instellingen uitzoeken voordat jij hebt gezegd welke ertoe doen. De velden die leeg staan, staan leeg omdat ik niets invul wat ik niet met een bron kan onderbouwen. Zeg welke namen je wil laten uitzoeken, dan vul ik alleen die rijen.</div>
+    </div>
+  </section>
+
+  <footer>
+    CSV: <code>projects/targetlijst-nl/voorbeeld-3-rijen.csv</code> · staat in je Google Drive-map, dus hij synct vanzelf
+  </footer>
+
+</div>
+
+<script>
+  document.getElementById("dl").addEventListener("click", function () {
+    var csv = document.getElementById("csv").textContent;
+    var blob = new Blob(["﻿" + csv], { type: "text/csv;charset=utf-8;" });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement("a");
+    a.href = url;
+    a.download = "targetlijst-nl-voorbeeld.csv";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  });
+</script>

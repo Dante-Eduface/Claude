@@ -1,0 +1,128 @@
+{
+  "slug": "icm-opleidingen",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_1bVj0k4v6YprIVys2iLnXN4IqoDupnJJqYHjMoIIR94",
+    "naam": "ICM opleidingen",
+    "url": "https://app.close.com/lead/lead_1bVj0k4v6YprIVys2iLnXN4IqoDupnJJqYHjMoIIR94/",
+    "lead_status": "Actief",
+    "opportunity_id": "oppo_bHeX56pUmmir7lr1DncCGx9uWFZZvJ01FgNkykf0MBA",
+    "fase": "Lost",
+    "fase_type": "lost",
+    "waarde": 40000,
+    "valuta": "EUR",
+    "confidence": 0,
+    "close_date": "2027-06-12",
+    "eigenaar": "Eduface CRM",
+    "crm_note": "De inschrijvingen van ICM 4x teruggelopen",
+    "contacten": [
+      {
+        "naam": "Eric Kaim",
+        "titel": "Senior IT consultant",
+        "email": "eric.kaim@icm.nl",
+        "id": "cont_6LdlTpZRUlG9eFNINYJPGuVI4telqFRpwa3QVBxGcIl"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_tEachIwGuxOot6xvEVApK7JQY6xNRyRHb5co5g5Xgvm",
+        "soort": "meeting",
+        "datum": "2026-04-15",
+        "titel": "Geannuleerd: Eduface lunch + demo",
+        "duur_min": 120,
+        "status": "completed",
+        "deelnemers": [
+          "eric.kaim@icm.nl",
+          "frank.oderkerk@icm.nl",
+          "inspiratie@icm.nl",
+          "jeroen.van.gessel@eduface.me",
+          "rebecca.van.orsouw@icm.nl"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_fDjHUG5O7vH5mMPZZvLpLfA05RxUZ4yZlSAvM3bLMG9",
+        "soort": "meeting",
+        "datum": "2026-06-12",
+        "titel": "Lunch + demo op kantoor van Eduface",
+        "duur_min": 120,
+        "status": "completed",
+        "deelnemers": [
+          "eric.kaim@icm.nl",
+          "jeroen.van.gessel@eduface.me",
+          "samuel.rafini@eduface.me"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_tCPdE4j3J35CRA1Fq9hvcveFHV0XFAnTjZaLyPhrB0m",
+        "soort": "meeting",
+        "datum": "2026-06-29",
+        "titel": "LTI integratie: Eduface - ICM",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "eric.kaim@icm.nl",
+          "jeroen.van.gessel@eduface.me",
+          "samuel.rafini@eduface.me"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_wy8gm5NHwDvg8c9mq5GsJPCXuSRBnputxZeWZr4fXMV",
+        "soort": "meeting",
+        "datum": "2026-07-07",
+        "titel": "ICM x Eduface Lunch",
+        "duur_min": 120,
+        "status": "completed",
+        "deelnemers": [
+          "eric.kaim@icm.nl",
+          "jeroen.van.gessel@eduface.me",
+          "samuel.rafini@eduface.me"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "Meeting op kantoor bij ICM gehad. \n\n\n\nWe zaten voornamelijk alleen met Eric en niet met collega's. Andere collega's kwamen er alleen even bij door Eric om kort 'hoi' te zeggen. \n\nAlgemene ervaring bij ICM. We hebben een rondleiding gehad door het kantoor. Het heeft niet een zeer gelaagde structuur, maar het is juist heel open en informeel bij ICM. Ze vinden duurzaamheid en inclusiviteit heel belangrijk en vinden het heel belangrijk dat medewerkers graag naar kantoor komen. Ik heb zelf Erik de founder/directeur even kort ontmoet. Hij is erg spiritueel en verbindend leidend uit een visie voor een betere wereld. Daarin is er wel overlap tussen wat wij doen ook. \n\nEric wil dit project erg voor zichzelf houden. Hij gaf aan dat hij zelf met dit initiatief is gekomen. Het zelf wil leiden en er ook zelf budget voor heeft. Uiteraard heeft hij dit wel in beginsel langs wat mensen gespeeld om een goedkeuring hiervoor te krijgen en die heeft hij ook wel gehad. Hij gaf aan dat hij zelf best wel een IT budget heeft (niet perse voor dit project, maar meer voor hierna). Hij gaf aan dat hij dit project niet had opgepakt als hij niet dacht dat dit breder impact zou kunnen hebben voor ICM en zijn doel is dus ook dat als onze tool goed werkt om dit dan uit te rollen naar heel ICM. \n\nHij wilde nog niet teveel de inhoud van de succescriteria induiken, een besparing op uren of een bepaald bedrag wilde hij ook niet perse bewerkstelligen. Hij ziet de impact van ons project op de verbeterde ervaring van cursisten en dat dit uiteindelijk uitstraalt op groei en retentie. \n\nVervolgstappen zijn dat Samuel 17 juli met hem zit om de integratie volledig live te hebben in hun Moodle, is niet veel werk. Hij gaat ons pilotplan reviewen en op reageren. Hij heeft drie collega's die hij goed in de loop houdt en twee daarvan hebben we kort ontmoet. Frank en Rebecca. Rebecca is functioneel manager Moodle, Frank deed ook veel in Moodle. Hij noemde wel kort dat hij verwacht hij zal tekenen samen met de IT manager. De IT manager moeten we nog in kaart brengen en maak ik nu aan als taak voor Dante. Hij gaf aan dat de directeur en financieel director hoewel ze heel toegankelijk zijn, wel heel druk zijn en hij vroeg op kantoor moet zijn om de kans te hebben om ze even te spreken voor een snelle goedkeuring. Ze werken nog als een wendbare organisatie. \n\n\n\nB-corp en great place to work awards zag ik overal in het kantoor, dit is dus een belangrijk onderdeel van wat ze uitdragen. Ik had over het algemeen het idee dat ze niet optimaal gedreven waren om zo efficient mogelijk te werken. Deden veel evenementen buiten werk om, dagelijks rond de tafel, dart toernooien, tafeltennis, hardloop evenementen in bedrijfsshirtjes etc. \n\n\n\nEr is geen breder initiatief om een tool zoals Eduface aan te kopen vanuit hogerop, maar hij gaf aan dat dit soort initiatieven vaan bottom up gaan, maar ik geloof dat niet helemaal. We hebben een deadline gezet voor wanneer we een formele Go moeten hebben en we aan het contractwerk kunnen zitten. 15 Augustus moeten we de go hebben gekregen om dan voor 26 augustus volledig live te zijn in hun moodle omgeving. Ik geloof erin dat er een grote samenwerking mogelijk is maar we moeten wel een groot bedrag vragen voor de pilot, want deze grotere samenwerking is verre van zeker.",
+        "transcript_beschikbaar": true,
+        "komend": false
+      }
+    ],
+    "open_taken": [],
+    "laatste_gesprek": "2026-07-07",
+    "volgende_afspraak": null,
+    "aantal_gehad": 4,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

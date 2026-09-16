@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eduface landingspagina, samengesteld</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Inter:wght@400;450;500;600;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; scroll-behavior: smooth; }
+body { font-family: "Inter", ui-sans-serif, system-ui, sans-serif; background: #f3f7f8; color: #002333; }
+img { display: block; max-width: 100%; }
+a { text-decoration: none; color: inherit; }
+:focus-visible { outline: 2px solid #00e075; outline-offset: 3px; }
+[data-sec] { position: relative; }
+.wire-flag { position: absolute; top: 14px; right: 18px; z-index: 40; display: inline-flex; align-items: center; gap: 8px; background: #002333; color: #fff; border-radius: 999px; padding: 6px 14px; font-size: 12px; }
+.wire-flag span { font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #00e075; }
+
+.s-hero /* ==========================================================================
+   PROEF hero, .s-hero sectie 1. Patroon uit het bewijsblok doorgezet.
+   Productbeelden volgen projects/app-homepage-redesign: Inter, .s-hero drie groottes, .s-hero geen ring of balk, .s-hero geen ratio's, .s-hero kleur alleen op de afwijking.
+   Framer-proof: stacks en grids, .s-hero gap op de parent, .s-hero geen margins op children.
+   ========================================================================== */
+:root {
+  --navy: #002333;
+  --navy-2: #06303f;
+  --green: #00e075;
+  --green-deep: #007b54;
+  --danger: #b3261e;
+  --ink-950: #002333;
+  --ink-700: #2c4a57;
+  --ink-500: #5b7480;
+  --ink-300: #a9bcc4;
+  --ink-200: #cdd9de;
+  --ink-100: #e7eef0;
+  --ink-50:  #f3f7f8;
+  --white:   #ffffff;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "League Spartan", var(--font-sans);
+
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 10px;
+  --radius-xl: 12px;
+  --radius-2xl: 20px;
+  --radius-full: 9999px;
+
+  --container: 1200px;
+}
+.s-hero img { display: block; max-width: 100%; }
+.s-hero a { text-decoration: none; color: inherit; }
+.s-hero :focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
+.s-hero /* ---- type ---- */
+.h1 { font-family: var(--font-display); font-size: 4.25rem; line-height: .98; letter-spacing: -0.03em; font-weight: 700; text-wrap: balance; }
+.s-hero .lead { font-size: 1.25rem; line-height: 1.5; color: var(--ink-500); text-wrap: pretty; }
+.s-hero .small { font-size: 0.875rem; line-height: 1.5; }
+.s-hero .micro { font-size: 0.8125rem; line-height: 1.4; }
+.s-hero .accent { color: var(--green-deep); }
+.s-hero /* ---- nav ---- */
+.nav { display: flex; justify-content: center; background: rgba(243,247,248,.88); backdrop-filter: blur(12px); position: sticky; top: 0; z-index: 20; }
+.s-hero .nav-in { width: 100%; max-width: var(--container); padding: 16px 28px; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 20px; }
+.s-hero .nav-logo { font-family: var(--font-display); font-size: 1.375rem; font-weight: 700; letter-spacing: -0.02em; justify-self: start; }
+.s-hero .nav-links { display: flex; gap: 28px; justify-content: center; font-size: 0.9375rem; color: var(--ink-700); }
+.s-hero .nav-links a:hover { color: var(--navy); }
+.s-hero .nav-r { display: flex; justify-content: flex-end; }
+.s-hero /* ---- hero ---- */
+.hero { display: flex; justify-content: center; padding: 88px 28px 0; overflow: hidden; }
+.s-hero .hero-in { width: 100%; max-width: var(--container); display: flex; flex-direction: column; align-items: center; gap: 26px; text-align: center; }
+.s-hero .hero .h1 { max-width: 18ch; }
+.s-hero .h1 .l1 { display: block; }
+.s-hero .hero .lead { max-width: 58ch; }
+.s-hero .cta-row { display: flex; flex-direction: column; align-items: center; gap: 16px; padding-top: 6px; }
+.s-hero .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; border-radius: var(--radius-full); padding: 18px 34px; font-size: 1rem; font-weight: 600; border: 1px solid transparent; cursor: pointer; background: var(--navy); color: var(--white); transition: background 450ms cubic-bezier(.44,0,.56,1); white-space: nowrap; }
+.s-hero .btn:hover { background: var(--navy-2); }
+.s-hero .btn-sm { padding: 11px 22px; font-size: 0.9375rem; background: var(--navy); color: var(--white); }
+.s-hero .btn-sm:hover { background: var(--navy-2); color: var(--white); }
+.s-hero .tlink { display: inline-flex; align-items: center; gap: 7px; font-size: 0.9375rem; color: var(--ink-500); border-bottom: 1px solid var(--ink-200); padding-bottom: 3px; }
+.s-hero .tlink:hover { color: var(--navy); border-color: var(--ink-300); }
+.s-hero .proofline { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 14px 26px; padding-top: 10px; }
+.s-hero .pl-txt { display: inline-flex; align-items: center; gap: 8px; }
+.s-hero .pl-sep { width: 1px; height: 22px; background: var(--ink-200); }
+.s-hero .wall { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 14px 30px; }
+.s-hero .wall img { height: 24px; width: auto; filter: grayscale(1) brightness(.55); opacity: .72; }
+.s-hero .wall img.tall { height: 36px; }
+.s-hero /* ---- productbeeld, .s-hero loopt onder de vouw door ---- */
+.stage { width: 100%; max-width: 1160px; padding-top: 18px; }
+.s-hero .stage img { width: 100%; height: auto; }
+.s-hero /* held-getal met zijn woord op dezelfde regel, .s-hero geen ratio, .s-hero geen ring */
+
+@media (max-width: 780px) {
+  .hero { padding: 56px 20px 0; }
+  .h1 { font-size: 2.5rem; }
+  .lead { font-size: 1.0625rem; }
+  .nav-links { display: none; }
+
+}
+.s-hero /* toelichting buiten de proef */
+.notes { display: flex; justify-content: center; padding: 72px 28px 56px; background: var(--white); border-top: 1px solid var(--ink-100); }
+.s-hero .notes-in { width: 100%; max-width: var(--container); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px,100%),1fr)); gap: 32px; }
+.s-hero .nt { display: flex; flex-direction: column; gap: 10px; border-left: 2px solid var(--ink-100); padding-left: 18px; }
+.s-hero .nt h3 { font-size: 0.75rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--green-deep); }
+.s-hero .nt p { font-size: 0.875rem; line-height: 1.55; color: var(--ink-500); }
+
+
+.s-pijn /* ==========================================================================
+   PROEF pijn, .s-pijn sectie 2, .s-pijn v2. Richting 1: een geval, .s-pijn groot uitgemeten.
+   Dragende ordeningszet: dezelfde invoer splitst in twee uitkomsten.
+   Links staat wat gelijk was, .s-pijn rechts wat eruit kwam. Het gat is het punt.
+   Bron voor elke uitspraak: projects/pijn-oplossing/HANDOFF-landingspagina.md
+   ========================================================================== */
+:root {
+  --navy: #002333; --navy-2: #06303f;
+  --green: #00e075; --green-deep: #007b54;
+  --danger: #b3261e;
+  --ink-700: #2c4a57; --ink-500: #5b7480; --ink-300: #a9bcc4;
+  --ink-200: #cdd9de; --ink-100: #e7eef0; --ink-50: #f3f7f8; --white: #fff;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "League Spartan", var(--font-sans);
+  --radius-md: 8px; --radius-lg: 10px; --radius-xl: 12px; --radius-2xl: 20px; --radius-full: 9999px;
+  --container: 1200px;
+}
+.s-pijn img { display: block; max-width: 100%; }
+.s-pijn :focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
+.s-pijn .h2 { font-family: var(--font-display); font-size: 3.5rem; line-height: 1.02; letter-spacing: -0.025em; font-weight: 700; text-wrap: balance; }
+.s-pijn .h3 { font-family: var(--font-display); font-size: 1.5rem; line-height: 1.12; letter-spacing: -0.02em; font-weight: 700; text-wrap: balance; }
+.s-pijn .lead { font-size: 1.25rem; line-height: 1.45; color: var(--ink-500); text-wrap: pretty; }
+.s-pijn .body { font-size: 1rem; line-height: 1.6; color: var(--ink-500); }
+.s-pijn .seclabel { font-size: 1rem; font-weight: 600; color: var(--green-deep); }
+.s-pijn .accent { color: var(--green-deep); }
+.s-pijn .section { background: var(--white); display: flex; justify-content: center; padding: 96px 28px; }
+.s-pijn .container { width: 100%; max-width: var(--container); display: flex; flex-direction: column; gap: 56px; }
+.s-pijn .head { display: flex; flex-direction: column; gap: 18px; max-width: 820px; }
+.s-pijn .eyebrow { display: inline-flex; align-items: center; gap: 9px; align-self: flex-start; }
+.s-pijn /* ---- het geval: een invoer, .s-pijn twee uitkomsten ---- */
+.case { display: flex; flex-direction: column; gap: 32px; background: var(--ink-50); border: 1px solid var(--ink-100); border-radius: var(--radius-2xl); padding: 44px; }
+.s-pijn .case-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 12px 32px; }
+.s-pijn .case-head .h3 { max-width: 30ch; }
+.s-pijn .case-head .crit { font-size: 0.875rem; color: var(--ink-500); }
+.s-pijn .case-head .crit b { font-weight: 600; color: var(--navy); }
+.s-pijn .fork { display: grid; grid-template-columns: minmax(0, 30fr) 84px minmax(0, 70fr); align-items: center; gap: 0; }
+.s-pijn /* links: wat gelijk was */
+.same { display: flex; flex-direction: column; gap: 16px; background: var(--white); border: 1px solid var(--ink-100); border-radius: var(--radius-xl); padding: 24px; }
+.s-pijn .same-lbl { display: inline-flex; align-items: center; gap: 8px; font-size: 0.8125rem; font-weight: 600; color: var(--ink-700); }
+.s-pijn .same-list { display: flex; flex-direction: column; gap: 10px; }
+.s-pijn .same-list span { display: flex; align-items: center; gap: 10px; font-size: 0.875rem; color: var(--ink-500); }
+.s-pijn .same-list span b { font-weight: 600; color: var(--navy); }
+.s-pijn .tick { width: 16px; height: 16px; flex-shrink: 0; }
+.s-pijn .doclines { display: flex; flex-direction: column; gap: 6px; padding-top: 4px; }
+.s-pijn .doclines i { display: block; height: 6px; border-radius: 3px; background: var(--ink-100); }
+.s-pijn /* de splitsing zelf */
+.link { align-self: stretch; }
+.s-pijn .link svg { display: block; width: 100%; height: 100%; }
+.s-pijn /* rechts: wat eruit kwam */
+.out { display: grid; grid-template-columns: minmax(0, 1fr) 208px; align-items: stretch; gap: 0; }
+.s-pijn .rows { display: flex; flex-direction: column; gap: 14px; }
+.s-pijn .row { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 20px; background: var(--white); border: 1px solid var(--ink-100); border-radius: var(--radius-xl); padding: 20px 24px; box-shadow: 0 6px 20px rgba(0,35,51,.05); }
+.s-pijn .who { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.s-pijn .who-top { display: flex; align-items: center; gap: 10px; }
+.s-pijn .av { width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; font-size: 0.6875rem; font-weight: 700; color: var(--white); flex-shrink: 0; }
+.s-pijn .av-1 { background: var(--ink-700); }
+.s-pijn .av-2 { background: var(--ink-500); }
+.s-pijn .nm { font-size: 0.9375rem; font-weight: 600; }
+.s-pijn .meta { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 0.8125rem; color: var(--ink-500); }
+.s-pijn .meta b { font-weight: 600; color: var(--navy); }
+.s-pijn .grade { display: flex; align-items: baseline; gap: 6px; }
+.s-pijn .grade-n { font-family: var(--font-display); font-size: 3.25rem; font-weight: 700; line-height: .9; letter-spacing: -0.03em; }
+.s-pijn .grade-o { font-size: 0.875rem; color: var(--ink-500); }
+.s-pijn /* de beugel die het verschil meet */
+.brace { display: grid; grid-template-columns: 22px minmax(0, 1fr); align-items: center; gap: 10px; padding-left: 14px; }
+.s-pijn .brace-line { align-self: stretch; }
+.s-pijn .brace-line svg { display: block; width: 100%; height: 100%; }
+.s-pijn .brace-t { display: flex; flex-direction: column; gap: 2px; }
+.s-pijn .brace-t b { font-family: var(--font-display); font-size: 1.125rem; font-weight: 700; color: var(--danger); line-height: 1.1; }
+.s-pijn .brace-t span { font-size: 0.8125rem; color: var(--ink-500); line-height: 1.35; text-wrap: pretty; }
+.s-pijn .case-foot { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 10px 32px; border-top: 1px solid var(--ink-200); padding-top: 22px; }
+.s-pijn .case-foot p { font-size: 0.9375rem; color: var(--ink-700); max-width: 62ch; }
+.s-pijn .src { font-size: 0.8125rem; color: var(--ink-500); }
+.s-pijn /* ---- de twee ondersteunende regels, .s-pijn geen kaarten ---- */
+.also { display: flex; flex-direction: column; gap: 0; }
+.s-pijn .also-lbl { font-size: 0.9375rem; font-weight: 600; color: var(--navy); padding-bottom: 18px; }
+.s-pijn .line { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 320px); align-items: baseline; gap: 20px 48px; border-top: 1px solid var(--ink-100); padding: 20px 0; }
+.s-pijn .line p { font-size: 1.125rem; line-height: 1.4; color: var(--navy); text-wrap: pretty; }
+.s-pijn .line .src { padding-top: 2px; }
+@media (max-width: 1000px) {
+.s-pijn .fork { grid-template-columns: 1fr; gap: 20px; }
+.s-pijn .link { display: none; }
+.s-pijn .out { grid-template-columns: 1fr; }
+.s-pijn .brace { grid-template-columns: 22px minmax(0, 1fr); padding: 6px 0 0; }
+}
+@media (max-width: 760px) {
+.s-pijn .section { padding: 56px 20px; }
+.s-pijn .h2 { font-size: 2.25rem; }
+.s-pijn .case { padding: 26px 22px; }
+.s-pijn .row { grid-template-columns: 1fr; gap: 14px; }
+.s-pijn .line { grid-template-columns: 1fr; gap: 8px; }
+}
+.s-pijn .notes { display: flex; justify-content: center; padding: 56px 28px; background: var(--ink-50); border-top: 1px solid var(--ink-100); }
+.s-pijn .notes-in { width: 100%; max-width: var(--container); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px,100%),1fr)); gap: 32px; }
+.s-pijn .nt { display: flex; flex-direction: column; gap: 10px; border-left: 2px solid var(--ink-200); padding-left: 18px; }
+.s-pijn .nt h3 { font-size: 0.75rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--green-deep); }
+.s-pijn .nt p { font-size: 0.875rem; line-height: 1.55; color: var(--ink-500); }
+
+
+.s-bewijs /* ==========================================================================
+   PROEF v4, .s-bewijs poort 2. Sectie: het model is accuraat.
+   Verwerkt: geen "whisker", .s-bewijs geen herhaling tussen kop en dragers, .s-bewijs dragers als
+   gekleurde icoontegels, .s-bewijs sleutelwoord in de kop groen, .s-bewijs logo-rij eruit (staat
+   in de hero), .s-bewijs echte campusfoto.
+   Kleuren komen uit de bestaande set in projects/website-building/styles.css.
+   Framer-proof: stacks en grids, .s-bewijs gap op de parent, .s-bewijs geen margins op children, .s-bewijs geen vaste hoogtes, .s-bewijs minmax-grids.
+   ========================================================================== */
+:root {
+  --navy: #002333;
+  --navy-2: #06303f;
+  --navy-3: #0d3d4f;
+  --green: #00e075;
+  --green-deep: #007b54;
+  --sky: #4d9fff;
+  --amber: #f0a531;
+  --violet: #8b7cf6;
+  --ink-900: #0a2c3b;
+  --ink-100: #e7eef0;
+  --ink-50:  #f3f7f8;
+  --white:   #ffffff;
+
+  --bg-inverse: var(--navy);
+  --surface-inverse: var(--ink-900);
+  --fg-inverse: var(--white);
+  --fg-inverse-soft: rgba(255, 255, 255, 0.62);
+  --border-inverse: rgba(255, 255, 255, 0.12);
+  --tint-green: rgba(0, 224, 117, 0.15);
+  --tint-green-line: rgba(0, 224, 117, 0.32);
+  --tint-sky: rgba(77, 159, 255, 0.15);
+  --tint-amber: rgba(240, 165, 49, 0.18);
+  --tint-violet: rgba(139, 124, 246, 0.20);
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "League Spartan", var(--font-sans);
+
+  --radius-md: 8px;
+  --radius-lg: 10px;
+  --radius-xl: 12px;
+  --radius-2xl: 20px;
+  --radius-full: 9999px;
+
+  --section: 96px;
+  --container: 1200px;
+}
+.s-bewijs img { display: block; max-width: 100%; }
+.s-bewijs :focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
+.s-bewijs .h2 { font-family: var(--font-display); font-size: 3.5rem; line-height: 1.02; letter-spacing: -0.025em; font-weight: 700; text-wrap: balance; }
+.s-bewijs .lead { font-size: 1.25rem; line-height: 1.45; text-wrap: pretty; }
+.s-bewijs .small { font-size: 0.875rem; line-height: 1.5; }
+.s-bewijs .micro { font-size: 0.8125rem; line-height: 1.4; }
+.s-bewijs .label { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; }
+.s-bewijs .stat { font-family: var(--font-display); font-weight: 700; font-size: 6rem; line-height: .88; letter-spacing: -0.05em; }
+.s-bewijs .tile-n { font-family: var(--font-display); font-weight: 700; font-size: 1.25rem; line-height: 1; letter-spacing: -0.02em; }
+.s-bewijs .on-dark { color: var(--fg-inverse); }
+.s-bewijs .soft { color: var(--fg-inverse-soft); }
+.s-bewijs .accent { color: var(--green); }
+.s-bewijs .section {
+  position: relative;
+  background:
+    radial-gradient(rgba(255,255,255,.05) 1px, transparent 1px) 0 0 / 26px 26px,
+    var(--bg-inverse);
+  display: flex; justify-content: center; padding: var(--section) 28px;
+  overflow: hidden;
+}
+.s-bewijs .container { position: relative; width: 100%; max-width: var(--container); display: flex; flex-direction: column; gap: 48px; }
+.s-bewijs .head { display: flex; flex-direction: column; gap: 18px; max-width: 820px; }
+.s-bewijs .eyebrow { display: inline-flex; align-items: center; gap: 9px; align-self: flex-start; }
+.s-bewijs .seclabel { font-size: 1rem; font-weight: 600; }
+.s-bewijs .eyebrow svg { flex-shrink: 0; }
+.s-bewijs /* ---- de meting: foto links, .s-bewijs cijfers en dragers rechts ---- */
+.measure {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
+  background: var(--surface-inverse);
+  border: 1px solid var(--border-inverse);
+  border-radius: var(--radius-2xl);
+  overflow: hidden;
+}
+.s-bewijs .shot { position: relative; min-height: 440px; background: var(--navy-2); }
+.s-bewijs .shot img.photo { position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }
+.s-bewijs /* navy sluier zodat de foto bij het merk hoort en de crest leesbaar blijft */
+.veil { position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: linear-gradient(180deg, rgba(0,35,51,.22) 0%, rgba(0,35,51,.62) 52%, rgba(0,35,51,.88) 100%); }
+.s-bewijs .stamp { position: absolute; left: 26px; right: 26px; bottom: 26px; top: auto; display: flex; flex-direction: column; gap: 20px; }
+.s-bewijs .stamp-top { display: flex; align-items: center; gap: 16px; }
+.s-bewijs .facts { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,.18); }
+.s-bewijs .fact { display: flex; align-items: baseline; gap: 7px; }
+.s-bewijs .fact-n { font-family: var(--font-display); font-weight: 700; font-size: 1.125rem; line-height: 1; letter-spacing: -0.02em; }
+.s-bewijs .fsep { width: 1px; height: 14px; background: rgba(255,255,255,.22); flex-shrink: 0; }
+.s-bewijs .crest { display: block; width: 84px; height: 84px; border-radius: var(--radius-xl); overflow: hidden; flex-shrink: 0; box-shadow: 0 12px 34px rgba(0,0,0,.45); }
+.s-bewijs .stamp-t { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.s-bewijs .crest img { display: block; width: 100%; height: 100%; }
+.s-bewijs .numbers { display: flex; flex-direction: column; padding: 46px; justify-content: center; }
+.s-bewijs /* Eén verband, .s-bewijs geen twee losse cijfers. De as is afgesneden op 90 om het
+   verschil zichtbaar te maken, .s-bewijs dus beide uiteinden staan er expliciet bij.
+   Het rechteruiteinde heeft betekenis: 100% is het cijfer van het team zelf. */
+.scale { display: flex; flex-direction: column; gap: 14px; }
+.s-bewijs .steps { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; padding-bottom: 46px; }
+.s-bewijs .step { display: flex; flex-direction: column; gap: 10px; align-items: flex-start; }
+.s-bewijs .step-b { padding-left: 18%; }
+.s-bewijs .track { position: relative; height: 10px; border-radius: var(--radius-full); background: rgba(255,255,255,.09); }
+.s-bewijs .fill-base { position: absolute; left: 0; top: 0; bottom: 0; width: 40%; border-radius: var(--radius-full) 0 0 var(--radius-full); background: rgba(255,255,255,.26); }
+.s-bewijs .fill-jump { position: absolute; left: 40%; top: 0; bottom: 0; width: 40%; background: var(--green); }
+.s-bewijs .mark { position: absolute; top: 50%; width: 18px; height: 18px; border-radius: 50%; transform: translate(-50%, -50%); }
+.s-bewijs .mark-a { left: 40%; background: var(--white); box-shadow: 0 0 0 4px var(--surface-inverse); }
+.s-bewijs .mark-b { left: 80%; background: var(--green); box-shadow: 0 0 0 4px var(--surface-inverse); }
+.s-bewijs .ends { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; }
+.s-bewijs .cap { display: flex; flex-direction: column; gap: 2px; }
+.s-bewijs .capline { display: inline-flex; align-items: center; gap: 7px; font-size: 0.9375rem; font-weight: 600; }
+.s-bewijs .jump-badge { position: absolute; left: 60%; bottom: 24px; top: auto; transform: translateX(-50%); display: inline-flex; align-items: center; gap: 6px; background: var(--green); color: var(--navy); border-radius: var(--radius-full); padding: 6px 13px 6px 10px; font-size: 0.8125rem; font-weight: 600; white-space: nowrap; }
+.s-bewijs /* ---- dragers als icoontegels, .s-bewijs niet als opsomming ---- */
+
+.tile { display: flex; align-items: center; gap: 11px; }
+.s-bewijs .ic { display: grid; place-items: center; width: 34px; height: 34px; border-radius: var(--radius-md); flex-shrink: 0; }
+.s-bewijs .ic-sky { background: var(--tint-sky); }
+.s-bewijs .ic-violet { background: var(--tint-violet); }
+.s-bewijs .ic-amber { background: var(--tint-amber); }
+.s-bewijs .ic-green { background: var(--tint-green); }
+.s-bewijs .tile-t { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.s-bewijs .foot { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; }
+.s-bewijs .btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  border-radius: var(--radius-full); padding: 17px 32px;
+  font-family: var(--font-sans); font-size: 1rem; font-weight: 600;
+  border: 1px solid transparent; cursor: pointer; text-decoration: none;
+  background: var(--green); color: var(--navy);
+  transition: background 450ms cubic-bezier(.44,0,.56,1), color 450ms cubic-bezier(.44,0,.56,1);
+  white-space: nowrap;
+}
+.s-bewijs .btn:hover { background: #00b45e; color: var(--white); }
+@media (max-width: 900px) {
+.s-bewijs .section { padding: 56px 20px; }
+.s-bewijs .container { gap: 32px; }
+.s-bewijs .h2 { font-size: 2.25rem; }
+.s-bewijs .stat { font-size: 4rem; }
+.s-bewijs .numbers { padding: 30px 22px; gap: 26px; }
+.s-bewijs .shot { min-height: 240px; }
+.s-bewijs .steps { grid-template-columns: 1fr; gap: 22px; padding-bottom: 40px; }
+.s-bewijs .step-b { padding-left: 0; }
+.s-bewijs .jump-badge { left: 50%; bottom: 26px; }
+.s-bewijs .tag { white-space: normal; }
+.s-bewijs .tag-a { left: 0; transform: none; }
+.s-bewijs .tag-b { left: auto; right: 0; transform: none; text-align: right; }
+.s-bewijs .facts { gap: 10px 14px; }
+}
+.s-bewijs .notes { display: flex; justify-content: center; padding: 56px 28px; background: var(--white); }
+.s-bewijs .notes-in { width: 100%; max-width: var(--container); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 32px; }
+.s-bewijs .note { display: flex; flex-direction: column; gap: 10px; border-left: 2px solid var(--ink-100); padding-left: 18px; }
+.s-bewijs .note h3 { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; color: var(--green-deep); }
+.s-bewijs .note p { font-size: 0.875rem; line-height: 1.55; color: #5b7480; }
+
+
+.s-wire /* --- wireframe primitives: no real copy, .s-wire only shapes and labels --- */
+  .lbl { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: #999; font-weight: 600; }
+.s-wire .tag { position: absolute; top: 12px; left: 12px; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: #fff; background: #555; padding: 4px 8px; border-radius: 4px; z-index: 2; }
+.s-wire .t { display: flex; flex-direction: column; gap: 8px; }
+.s-wire .t i { display: block; height: 10px; border-radius: 5px; background: #d9d9d9; }
+.s-wire .t.h1 i { height: 44px; border-radius: 8px; background: #bcbcbc; }
+.s-wire .t.h2 i { height: 30px; border-radius: 7px; background: #c4c4c4; }
+.s-wire .t.h3 i { height: 18px; border-radius: 6px; background: #c9c9c9; }
+.s-wire .t.sub i { height: 14px; background: #d0d0d0; }
+.s-wire .t.body i { height: 9px; }
+.s-wire .t.small i { height: 7px; }
+.s-wire .t.center { align-items: center; }
+.s-wire .w100 { width: 100%; }
+.s-wire .w95 { width: 95%; }
+.s-wire .w85 { width: 85%; }
+.s-wire .w75 { width: 75%; }
+.s-wire .w65 { width: 65%; }
+.s-wire .w90 { width: 90%; }
+.s-wire .w80 { width: 80%; }
+.s-wire .w70 { width: 70%; }
+.s-wire .w60 { width: 60%; }
+.s-wire .w50 { width: 50%; }
+.s-wire .w40 { width: 40%; }
+.s-wire .w30 { width: 30%; }
+.s-wire .btn { display: inline-flex; align-items: center; justify-content: center; border: 2px solid #333; border-radius: 999px; padding: 18px 40px; background: #fff; }
+.s-wire .btn.pri { background: #333; }
+.s-wire .btn i { display: block; width: 90px; height: 10px; border-radius: 5px; background: #bbb; }
+.s-wire .btn.pri i { background: #eee; }
+.s-wire .btn.sm { padding: 11px 24px; }
+.s-wire .btn.sm i { width: 70px; }
+.s-wire .pill { display: inline-flex; border: 2px solid #bbb; border-radius: 999px; padding: 6px 14px; }
+.s-wire .pill i { display: block; width: 120px; height: 8px; border-radius: 4px; background: #ccc; }
+.s-wire .box { border: 2px solid #999; background: #f4f4f4; display: flex; align-items: center; justify-content: center; color: #888; font-size: 12px; text-transform: uppercase; letter-spacing: .08em; }
+.s-wire .img { border: 2px dashed #999; background: repeating-linear-gradient(45deg, #f7f7f7, #f7f7f7 10px, #ececec 10px, #ececec 20px); display: flex; align-items: center; justify-content: center; color: #777; font-size: 12px; text-transform: uppercase; letter-spacing: .08em; text-align: center; padding: 16px; position: relative; }
+.s-wire .logo { border: 2px dotted #aaa; min-width: 170px; min-height: 48px; display: flex; align-items: center; justify-content: center; color: #aaa; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
+.s-wire .card { border: 2px solid #999; background: #fafafa; padding: 26px; display: flex; flex-direction: column; gap: 14px; position: relative; }
+.s-wire .card .img { flex: 1; min-height: 120px; }
+.s-wire /* --- layout --- */
+  .sect { display: flex; justify-content: center; padding: 88px 28px; position: relative; }
+.s-wire .sect.grey { background: #f0f0f0; }
+.s-wire .sect.dark { background: #2b2b2b; }
+.s-wire .sect.dark .t i { background: #6a6a6a; }
+.s-wire .sect.dark .t.h2 i { background: #8a8a8a; }
+.s-wire .sect.dark .lbl { color: #999; }
+.s-wire .sect .no { position: absolute; top: 20px; left: 28px; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: #aaa; }
+.s-wire .wrap { width: 100%; max-width: 1200px; display: flex; flex-direction: column; gap: 48px; }
+.s-wire .head { display: flex; flex-direction: column; gap: 14px; max-width: 640px; }
+.s-wire .row { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+.s-wire .stack { display: flex; flex-direction: column; gap: 14px; }
+.s-wire .nav { display: flex; justify-content: center; border-bottom: 2px solid #ddd; }
+.s-wire .nav .in { width: 100%; max-width: 1200px; padding: 18px 28px; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 16px; }
+.s-wire .nav .links { display: flex; gap: 28px; justify-content: center; }
+.s-wire .nav .links i { display: block; width: 64px; height: 9px; border-radius: 5px; background: #ccc; }
+.s-wire .nav .r { display: flex; justify-content: flex-end; }
+.s-wire /* hero: stacked, .s-wire centered, .s-wire product under the fold */
+  .hero { display: flex; flex-direction: column; align-items: center; gap: 22px; }
+.s-wire .hero .t.h1 { width: 780px; max-width: 100%; }
+.s-wire .hero .t.sub { width: 560px; max-width: 100%; }
+.s-wire .hero .btns { display: flex; flex-direction: column; align-items: center; gap: 18px; padding-top: 8px; }
+.s-wire .tlink { display: inline-flex; align-items: center; gap: 8px; border-bottom: 2px solid #bbb; padding-bottom: 4px; }
+.s-wire .tlink i { display: block; width: 110px; height: 9px; border-radius: 5px; background: #bbb; }
+.s-wire .tlink span { color: #aaa; font-size: 13px; }
+.s-wire .hero .proofrow { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 14px 22px; padding-top: 6px; }
+.s-wire .hero .proofrow .logo { min-width: 104px; min-height: 30px; font-size: 9px; }
+.s-wire .hero .proofrow .t { width: 150px; }
+.s-wire .hero .space { height: 36px; }
+.s-wire .stage { position: relative; width: 100%; height: 520px; overflow: hidden; }
+.s-wire .stage .screen { position: absolute; left: 50%; transform: translateX(-50%); top: 0; width: 640px; height: 640px; border: 2px solid #777; border-bottom: 0; border-radius: 22px 22px 0 0; background: #fafafa; padding: 24px; display: flex; flex-direction: column; gap: 12px; box-shadow: 0 20px 60px rgba(0,0,0,.15); }
+.s-wire .stage .side { position: absolute; top: 90px; width: 300px; height: 560px; border: 2px solid #999; border-bottom: 0; border-radius: 18px 18px 0 0; background: #f2f2f2; padding: 20px; display: flex; flex-direction: column; gap: 12px; }
+.s-wire .stage .side.l { left: 4%; }
+.s-wire .stage .side.r { right: 4%; }
+.s-wire .ui-row { display: flex; justify-content: space-between; align-items: center; border: 1px solid #ccc; background: #fff; padding: 10px 12px; gap: 12px; }
+.s-wire .ui-row i { display: block; height: 8px; border-radius: 4px; background: #ccc; }
+.s-wire .ui-chip { border: 1px solid #bbb; border-radius: 999px; padding: 4px 10px; font-size: 10px; letter-spacing: .06em; text-transform: uppercase; color: #777; background: #fff; white-space: nowrap; }
+.s-wire .logos { display: flex; flex-wrap: wrap; gap: 40px; justify-content: center; }
+.s-wire .bento { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 18px; }
+.s-wire .c4 { grid-column: span 4; }
+.s-wire .c3 { grid-column: span 3; }
+.s-wire .c2 { grid-column: span 2; }
+.s-wire .r2 { grid-row: span 2; }
+.s-wire .steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; position: relative; }
+.s-wire .steps::before { content: ""; position: absolute; left: 24px; right: 24px; top: 26px; border-top: 2px dashed #aaa; }
+.s-wire .step { display: flex; flex-direction: column; gap: 14px; }
+.s-wire .step .dot { width: 52px; height: 52px; border-radius: 50%; border: 2px solid #333; background: #f0f0f0; display: grid; place-items: center; font-weight: 700; font-size: 20px; position: relative; }
+.s-wire .step .img { min-height: 170px; }
+.s-wire .prow { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 64px; align-items: center; }
+.s-wire .prow .img { min-height: 380px; }
+.s-wire .prow.flip .ptext { order: 2; }
+.s-wire .ptext { display: flex; flex-direction: column; gap: 18px; }
+.s-wire .checks { display: flex; flex-direction: column; gap: 10px; }
+.s-wire .checks span { display: flex; align-items: center; gap: 10px; }
+.s-wire .checks b { width: 16px; height: 16px; border-radius: 50%; border: 2px solid #999; flex-shrink: 0; }
+.s-wire .checks i { display: block; height: 9px; border-radius: 5px; background: #d9d9d9; }
+.s-wire .proof { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); gap: 64px; align-items: start; }
+.s-wire .nums { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+.s-wire .nums .n { display: flex; flex-direction: column; gap: 12px; border-left: 2px dashed #777; padding-left: 20px; }
+.s-wire .nums .big { height: 52px; width: 70%; border-radius: 8px; background: #8a8a8a; }
+.s-wire .bar { height: 10px; background: #555; border-radius: 6px; overflow: hidden; }
+.s-wire .bar i { display: block; height: 100%; background: #ccc; }
+.s-wire .flow { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.s-wire .flow .box { min-height: 44px; min-width: 120px; background: #fff; padding: 8px 12px; }
+.s-wire .faq { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); gap: 64px; align-items: start; }
+.s-wire .faq .list { display: flex; flex-direction: column; }
+.s-wire .faq .q { border-top: 2px solid #999; padding: 20px 0; display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+.s-wire .faq .q i { display: block; height: 12px; border-radius: 6px; background: #c9c9c9; }
+.s-wire .faq .q:last-child { border-bottom: 2px solid #999; }
+.s-wire .cta { border-radius: 32px; background: #2b2b2b; padding: 96px 48px; display: flex; flex-direction: column; align-items: center; gap: 22px; }
+.s-wire .cta .t i { background: #6a6a6a; }
+.s-wire .cta .t.h2 i { background: #8a8a8a; }
+.s-wire .foot { display: flex; justify-content: center; border-top: 2px solid #ddd; }
+.s-wire .foot .in { width: 100%; max-width: 1200px; padding: 40px 28px; display: flex; gap: 40px; align-items: center; }
+@media (max-width: 980px) {
+.s-wire .prow, .s-wire .proof, .s-wire .faq { grid-template-columns: 1fr; }
+.s-wire .prow.flip .ptext { order: 0; }
+.s-wire .bento { grid-template-columns: 1fr; }
+.s-wire .c4, .s-wire .c3, .s-wire .c2 { grid-column: auto; }
+.s-wire .r2 { grid-row: auto; }
+.s-wire .steps { grid-template-columns: 1fr; }
+.s-wire .steps::before { display: none; }
+.s-wire .stage { height: 380px; }
+.s-wire .stage .screen { width: 90%; }
+.s-wire .stage .side { display: none; }
+.s-wire .sect { padding: 64px 20px; } }
+.s-wire /* --- bewijsstrook in de hero (A) --- */
+  .pstrip { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 14px 20px; padding-top: 14px; max-width: 1100px; }
+.s-wire .pstat { display: flex; align-items: baseline; gap: 10px; }
+.s-wire .pstat b { font-size: 26px; font-weight: 700; color: #555; letter-spacing: -.01em; }
+.s-wire .pstat .t { width: 150px; }
+.s-wire .psep { width: 2px; height: 34px; background: #ddd; }
+.s-wire .pstrip .logo { min-width: 78px; min-height: 26px; font-size: 9px; border-style: dotted; }
+.s-wire /* --- bewijsblok, .s-wire twee benen (B) --- */
+  .legs { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 28px; }
+.s-wire .leg { border: 2px solid #666; padding: 28px; display: flex; flex-direction: column; gap: 18px; }
+.s-wire .pair { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; }
+.s-wire .one { display: flex; flex-direction: column; gap: 8px; }
+.s-wire .one .big2 { font-size: 54px; font-weight: 700; line-height: 1; color: #b5b5b5; }
+.s-wire .one .cap { width: 150px; }
+.s-wire .arrow { font-size: 26px; color: #888; }
+.s-wire .src { border-top: 1px solid #555; padding-top: 14px; }
+@media (max-width: 980px) {
+.s-wire .legs { grid-template-columns: 1fr; } }
+.s-wire /* --- boekblok: agenda inline + velden + citaat --- */
+  .book { display: grid; grid-template-columns: minmax(0,4fr) minmax(0,5fr); gap: 56px; align-items: start; }
+.s-wire .bookL { display: flex; flex-direction: column; gap: 26px; }
+.s-wire .quote { border-left: 3px solid #999; padding-left: 20px; display: flex; flex-direction: column; gap: 12px; }
+.s-wire .quote .t { width: 100%; }
+.s-wire .trustcues { display: flex; flex-direction: column; gap: 10px; }
+.s-wire .trustcues span { display: flex; align-items: center; gap: 10px; }
+.s-wire .trustcues b { width: 14px; height: 14px; border-radius: 50%; border: 2px solid #999; flex-shrink: 0; }
+.s-wire .trustcues i { display: block; height: 8px; border-radius: 4px; background: #d5d5d5; }
+.s-wire .widget { border: 2px solid #888; border-radius: 14px; background: #fafafa; padding: 24px; display: flex; flex-direction: column; gap: 20px; box-shadow: 0 14px 40px rgba(0,0,0,.10); }
+.s-wire .wstep { display: flex; align-items: center; gap: 10px; }
+.s-wire .wstep b { width: 22px; height: 22px; border-radius: 50%; background: #333; color: #fff; font-size: 11px; display: grid; place-items: center; flex-shrink: 0; }
+.s-wire .cal { display: grid; grid-template-columns: minmax(0,3fr) minmax(0,2fr); gap: 20px; }
+.s-wire .days { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; }
+.s-wire .days s { display: grid; place-items: center; aspect-ratio: 1; border-radius: 50%; border: 1px solid #ddd; background: #fff; font-size: 11px; color: #999; text-decoration: none; }
+.s-wire .days s.on { border-color: #333; color: #333; font-weight: 700; }
+.s-wire .days s.sel { background: #333; color: #fff; border-color: #333; }
+.s-wire .days s.off { border-color: transparent; color: #ccc; }
+.s-wire .slots { display: flex; flex-direction: column; gap: 8px; }
+.s-wire .slots s { border: 1px solid #bbb; border-radius: 6px; padding: 10px; text-align: center; font-size: 11px; color: #666; background: #fff; text-decoration: none; }
+.s-wire .slots s.sel { background: #333; color: #fff; border-color: #333; }
+.s-wire .fields { display: flex; flex-direction: column; gap: 10px; }
+.s-wire .field { border: 1px solid #bbb; border-radius: 6px; background: #fff; padding: 13px 14px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.s-wire .field i { display: block; height: 8px; border-radius: 4px; background: #d5d5d5; }
+.s-wire .wsep { border-top: 1px dashed #bbb; }
+.s-wire .selfserve { border: 2px dashed #999; padding: 28px 32px; display: flex; flex-wrap: wrap; align-items: center; gap: 20px; }
+@media (max-width: 980px) {
+.s-wire .book { grid-template-columns: 1fr; }
+.s-wire .cal { grid-template-columns: 1fr; } }
+.s-wire .tover { border-top: 1px solid #555; padding-top: 20px; display: flex; flex-direction: column; gap: 10px; }
+.s-wire .fit { display: grid; grid-template-columns: minmax(0,5fr) minmax(0,4fr); gap: 48px; align-items: start; }
+.s-wire .fitL, .s-wire .fitR { display: flex; flex-direction: column; gap: 18px; }
+.s-wire .lmsrow { display: flex; flex-wrap: wrap; gap: 12px; }
+.s-wire .lmsrow .logo { min-width: 120px; min-height: 44px; }
+.s-wire .tcard { border: 2px solid #999; background: #fafafa; padding: 18px 20px; display: flex; flex-direction: column; gap: 10px; }
+@media (max-width: 980px) {
+.s-wire .fit { grid-template-columns: 1fr; } }
+
+</style>
+</head>
+<body>
+<div class="s-hero" data-sec="hero">
+
+
+
+<header class="nav"><div class="nav-in">
+  <span class="nav-logo">Eduface</span>
+  <nav class="nav-links"><a href="#how">How it works</a><a href="#proof">Accuracy</a><a href="#products">Products</a><a href="#faq">FAQ</a></nav>
+  <span class="nav-r"><a class="btn btn-sm" href="#book">Book a demo</a></span>
+</div></header>
+
+<section class="hero"><div class="hero-in">
+
+  <h1 class="h1"><span class="l1">Grade essay 140</span> <span class="accent">like you graded essay one</span></h1>
+  <p class="lead">Eduface drafts the feedback and the grade against your own criteria.</p>
+
+  <div class="cta-row">
+    <a class="btn" href="#book">Book a demo</a>
+    <a class="tlink" href="#how">See how it works
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14m0 0l-6-6m6 6l6-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+
+  <div class="proofline">
+    <span class="small" style="color:var(--ink-500)">Used by teaching teams at</span>
+    <span class="wall">
+      <img src="brand_assets/schools/rotterdam-cropped.svg" alt="Hogeschool Rotterdam">
+      <img src="brand_assets/schools/haagse.png" alt="De Haagse Hogeschool">
+      <img src="brand_assets/schools/tilburg.svg" alt="Tilburg University" class="tall">
+      <img src="brand_assets/schools/radboud.svg" alt="Radboud Universiteit">
+    </span>
+  </div>
+
+  <div class="stage">
+    <img src="creatives/product-images/hero.png" alt="Eduface: one student, three drafts, with the lecturer signing off every comment" width="3120" height="1320">
+  </div>
+
+</div></section>
+
+
+</div>
+
+<div class="s-pijn" data-sec="pijn">
+
+
+
+<section class="section">
+  <div class="container">
+
+    <div class="head">
+      <span class="eyebrow">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 8v5m0 3.5v.01M12 3l9 16H3l9-16Z" stroke="#007B54" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="seclabel">The problem</span>
+      </span>
+      <h2 class="h2">The same essay gets <span class="accent">a different grade</span> depending on who opens it</h2>
+      <p class="lead">Students compare. And when the marks do not line up, it is the marker they start to doubt, not the work.</p>
+    </div>
+
+    <div class="case">
+
+      <div class="case-head">
+        <h3 class="h3">One submission, two markers, a full grade between them</h3>
+        <span class="crit">Criterion shown: <b>depth of analysis</b></span>
+      </div>
+
+      <div class="fork">
+
+        <div class="same">
+          <span class="same-lbl">
+            <svg class="tick" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 3h8l5 5v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" stroke="#2C4A57" stroke-width="1.8" stroke-linejoin="round"/><path d="M14 3v5h5" stroke="#2C4A57" stroke-width="1.8"/></svg>
+            Everything that went in
+          </span>
+          <div class="same-list">
+            <span><svg class="tick" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" stroke="#5B7480" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>The same <b>essay</b></span>
+            <span><svg class="tick" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" stroke="#5B7480" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>The same <b>rubric</b></span>
+            <span><svg class="tick" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" stroke="#5B7480" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>The same <b>cohort</b></span>
+          </div>
+          <div class="doclines">
+            <i style="width:100%"></i><i style="width:92%"></i><i style="width:97%"></i><i style="width:64%"></i>
+          </div>
+        </div>
+
+        <div class="link" aria-hidden="true">
+          <svg viewBox="0 0 92 220" preserveAspectRatio="none" fill="none">
+            <path d="M0 110 H30 C48 110 46 46 64 46 H92" stroke="#CDD9DE" stroke-width="2"/>
+            <path d="M0 110 H30 C48 110 46 174 64 174 H92" stroke="#CDD9DE" stroke-width="2"/>
+          </svg>
+        </div>
+
+        <div class="out">
+          <div class="rows">
+            <div class="row">
+              <div class="who">
+                <span class="who-top"><span class="av av-1">JM</span><span class="nm">Marker one</span></span>
+                <span class="meta"><span>Depth of analysis <b>Good</b></span><span>Marked <b>Monday morning</b></span></span>
+              </div>
+              <span class="grade"><span class="grade-n">7</span><span class="grade-o">/ 10</span></span>
+            </div>
+            <div class="row">
+              <div class="who">
+                <span class="who-top"><span class="av av-2">RK</span><span class="nm">Marker two</span></span>
+                <span class="meta"><span>Depth of analysis <b>Adequate</b></span><span>Marked <b>Sunday night</b></span></span>
+              </div>
+              <span class="grade"><span class="grade-n">6</span><span class="grade-o">/ 10</span></span>
+            </div>
+          </div>
+
+          <div class="brace">
+            <div class="brace-line" aria-hidden="true">
+              <svg viewBox="0 0 22 160" preserveAspectRatio="none" fill="none">
+                <path d="M2 4 H12 V76 H20 M12 76 V156 H2" stroke="#B3261E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="brace-t">
+              <b>One grade</b>
+              <span>and nothing in the work to point at</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="case-foot">
+        <p>Nobody is doing anything wrong. They read the same rubric on a different day, with a different pile behind them.</p>
+        <span class="src">Business School Nederland and Breederode, 2026. The same pattern came back from Sunderland and Bristol.</span>
+      </div>
+
+    </div>
+
+    <div class="also">
+      <span class="also-lbl">And it is not one marker having a bad day.</span>
+      <div class="line">
+        <p>Twenty markers on one cohort, a thousand assignments a year, and an hour of calibration between them.</p>
+        <span class="src">CMI Ireland and Bristol University, 2026.</span>
+      </div>
+      <div class="line">
+        <p>By essay 140 there is less time per paper than there was at essay 1, and depth is the first thing to go.</p>
+        <span class="src">Bath Spa and De Haagse Hogeschool, 2026.</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+</div>
+
+<div class="s-wire" data-sec="hoe">
+<div class="wire-flag"><span>Wireframe</span> nog niet uitgewerkt</div>
+<!-- 3 HOW IT WORKS (v6: een geannoteerd beoordeelscherm, niets achter een klik) -->
+<style>
+  .hiw { display: grid; grid-template-columns: minmax(0, 36fr) minmax(0, 64fr); gap: 56px; align-items: stretch; }
+  .hiw-list { display: flex; flex-direction: column; justify-content: space-between; gap: 24px; padding: 8px 0 12px; }
+  .hiw-line { display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 16px; align-items: start; }
+  .hiw-line .b { width: 28px; height: 28px; border-radius: 50%; background: #333; color: #fff; font-size: 12px; font-weight: 700; display: grid; place-items: center; }
+  .hiw-screen { border: 2px solid #777; border-radius: 18px; background: #fafafa; aspect-ratio: 16 / 10; padding: 26px; display: flex; flex-direction: column; gap: 14px; box-shadow: 0 20px 60px rgba(0,0,0,.12); position: relative; }
+  .hiw-screen .grid2 { display: grid; grid-template-columns: minmax(0,3fr) minmax(0,2fr); gap: 18px; flex: 1; min-height: 0; }
+  .hiw-screen .doc { border: 1px solid #ccc; background: #fff; padding: 18px; display: flex; flex-direction: column; gap: 12px; position: relative; }
+  .hiw-screen .mark { height: 12px; border-radius: 4px; background: #b6b6b6; outline: 3px solid #8f8f8f; outline-offset: 3px; }
+  .hiw-screen .rub { display: flex; flex-direction: column; gap: 9px; position: relative; }
+  .co { position: absolute; width: 28px; height: 28px; border-radius: 50%; background: #333; color: #fff; font-size: 12px; font-weight: 700; display: grid; place-items: center; box-shadow: 0 0 0 4px #fafafa; z-index: 3; }
+  .hiw-foot { display: flex; flex-wrap: wrap; align-items: center; gap: 24px; padding-top: 8px; }
+  .hiw-foot .logos { gap: 20px; justify-content: flex-start; } .hiw-foot .logo { min-width: 120px; min-height: 36px; }
+  .hiw-mob { display: none; }
+  @media (max-width: 980px) { .hiw { display: none; } .hiw-mob { display: flex; flex-direction: column; gap: 18px; } .hiw-mob .card .img { min-height: 160px; } .hiw-mob .card .ui-chip { align-self: flex-start; min-width: 34px; text-align: center; } }
+</style>
+<section class="sect grey"><span class="no">3 · How it works</span><div class="wrap">
+  <div class="head"><span class="lbl">Eyebrow</span><div class="t h2"><i class="w100"></i><i class="w70"></i></div><div class="t sub"><i class="w80"></i></div></div>
+
+  <div class="hiw">
+    <div class="hiw-list">
+      <div class="hiw-line"><span class="b">1</span><div class="t h3"><i class="w75"></i><i class="w100" style="height:9px;background:#d9d9d9"></i></div></div>
+      <div class="hiw-line"><span class="b">2</span><div class="t h3"><i class="w85"></i><i class="w100" style="height:9px;background:#d9d9d9"></i><i class="w60" style="height:9px;background:#d9d9d9"></i></div></div>
+      <div class="hiw-line"><span class="b">3</span><div class="t h3"><i class="w70"></i><i class="w95" style="height:9px;background:#d9d9d9"></i></div></div>
+      <div class="hiw-line"><span class="b">4</span><div class="t h3"><i class="w80"></i><i class="w90" style="height:9px;background:#d9d9d9"></i></div></div>
+    </div>
+
+    <div class="hiw-screen">
+      <span class="tag">Product UI · one submission, reviewed</span><div style="height:22px"></div>
+      <div class="grid2">
+        <div class="doc">
+          <div class="t body"><i class="w90"></i><i class="w100"></i><i class="w75"></i></div>
+          <span class="mark" style="width:88%"></span>
+          <span class="co" style="top:76px;left:-14px">1</span>
+          <div class="t body"><i class="w95"></i><i class="w65"></i></div>
+          <span class="box" style="height:60px;background:#f7f7f7;position:relative">Suggested comment · Approve / Edit<span class="co" style="top:-14px;left:-14px">2</span></span>
+          <div class="t body"><i class="w90"></i><i class="w100"></i><i class="w60"></i><i class="w85"></i><i class="w95"></i><i class="w70"></i></div>
+        </div>
+        <div class="rub">
+          <div class="ui-row"><i style="width:50%"></i><span class="ui-chip">8/10</span></div>
+          <div class="ui-row"><i style="width:40%"></i><span class="ui-chip">9/10</span></div>
+          <div class="ui-row" style="border-color:#888;position:relative"><i style="width:45%"></i><span class="ui-chip">needs you</span><span class="co" style="top:-14px;right:-14px">3</span></div>
+          <div class="ui-row"><i style="width:35%"></i><span class="ui-chip">7/10</span></div>
+          <div class="ui-row"><i style="width:42%"></i><span class="ui-chip">9/10</span></div>
+          <span class="box" style="height:54px;margin-top:auto;position:relative;background:#fff">Approve · writes to gradebook<span class="co" style="top:-14px;right:-14px">4</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hiw-mob">
+    <div class="card"><span class="ui-chip">1</span><div class="t h3"><i class="w70"></i></div><div class="t body"><i class="w100"></i></div><div class="img">Crop · marked passage</div></div>
+    <div class="card"><span class="ui-chip">2</span><div class="t h3"><i class="w70"></i></div><div class="t body"><i class="w100"></i></div><div class="img">Crop · suggested comment</div></div>
+    <div class="card"><span class="ui-chip">3</span><div class="t h3"><i class="w70"></i></div><div class="t body"><i class="w100"></i></div><div class="img">Crop · flagged criterion</div></div>
+    <div class="card"><span class="ui-chip">4</span><div class="t h3"><i class="w70"></i></div><div class="t body"><i class="w100"></i></div><div class="img">Crop · approve to gradebook</div></div>
+  </div>
+
+  <div class="hiw-foot">
+    <div class="t body" style="width:320px"><i class="w100"></i></div>
+    <span class="btn pri" style="margin-left:auto"><i></i></span>
+  </div>
+</div></section>
+
+
+</div>
+
+<div class="s-bewijs" data-sec="bewijs">
+
+
+
+<section class="section">
+  <div class="container">
+
+    <div class="head">
+      <span class="eyebrow">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 20V10M10 20V4M16 20v-7M22 20H2" stroke="#00E075" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
+        <span class="seclabel accent">Accuracy</span>
+      </span>
+      <h2 class="h2 on-dark">An AI model that marks <span class="accent">like your own team</span></h2>
+      <p class="lead soft">Tested on real student work your markers had already graded. Not on a demo set.</p>
+    </div>
+
+    <div class="measure">
+      <div class="shot">
+        <img class="photo" src="brand_assets/schools/bath-spa-campus.jpg" alt="Bath Spa University campus">
+        <span class="veil" aria-hidden="true"></span>
+        <span class="stamp">
+          <span class="stamp-top">
+            <span class="crest"><img src="brand_assets/schools/bath-spa.svg" alt="Bath Spa University"></span>
+            <span class="stamp-t">
+              <span class="small on-dark" style="font-weight:600">Bath Spa University</span>
+              <span class="micro soft">Pilot, June 2026</span>
+            </span>
+          </span>
+          <span class="facts">
+            <span class="fact"><span class="fact-n on-dark">435</span><span class="micro soft">assignments</span></span>
+            <span class="fsep" aria-hidden="true"></span>
+            <span class="fact"><span class="fact-n on-dark">13</span><span class="micro soft">markers</span></span>
+            <span class="fsep" aria-hidden="true"></span>
+            <span class="fact"><span class="fact-n on-dark">6</span><span class="micro soft">subjects</span></span>
+          </span>
+        </span>
+      </div>
+
+      <div class="numbers">
+        <div class="scale">
+
+          <div class="steps">
+            <div class="step">
+              <span class="stat on-dark">94%</span>
+              <span class="capline on-dark">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="3.6" stroke="currentColor" stroke-width="1.8"/></svg>
+                accurate
+              </span>
+              <span class="micro soft">before the lecturer instructs it</span>
+            </div>
+
+            <div class="step step-b">
+              <span class="stat accent">98%</span>
+              <span class="capline accent">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="3.6" stroke="currentColor" stroke-width="1.8" fill="currentColor"/></svg>
+                accurate
+              </span>
+              <span class="micro soft">after the lecturer instructs it</span>
+            </div>
+          </div>
+
+          <div class="track">
+            <span class="fill-base"></span>
+            <span class="fill-jump"></span>
+            <span class="mark mark-a"></span>
+            <span class="mark mark-b"></span>
+            <span class="jump-badge">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V5m0 0l-6 6m6-6l6 6" stroke="#002333" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>4 points closer</span>
+            </span>
+          </div>
+
+          <div class="ends">
+            <span class="micro soft">90%</span>
+            <span class="micro soft">100%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="foot">
+      <a class="btn" href="#book">Book a demo</a>
+    </div>
+
+  </div>
+</section>
+
+</div>
+
+<div class="s-wire" data-sec="prod">
+<div class="wire-flag"><span>Wireframe</span> nog niet uitgewerkt</div>
+<!-- 5 PRODUCTS -->
+<style>
+  /* Fragment = uitvergroot stuk product-UI, getekend naar de vormtaal van
+     projects/app-homepage-redesign/. Regels die daar gelden en hier dus ook:
+     geen voortgangsring/balk/meter, geen ratio's als "12/32", geen pills om
+     gewone metadata, geen kaartjes in kaartjes, drie tekstgroottes, Inter.
+     De filterbalk staat er altijd. Kleur alleen op de afwijking. */
+  .frag { border: 2px solid #888; background: #fff; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 14px; position: relative; box-shadow: 0 14px 40px rgba(0,0,0,.10); min-height: 430px; }
+  .frag .tag { position: static; align-self: flex-start; }
+  .frag .lblx { font-size: 10px; letter-spacing: .09em; text-transform: uppercase; color: #999; font-weight: 600; }
+  .fragwrap { display: flex; flex-direction: column; gap: 12px; }
+  /* Vaktabs boven het Paper Grader-fragment. Paginaelement in Framer, geen app-UI.
+     De labels dragen het bereik (zes vakken, altijd zichtbaar, nul klikken),
+     het beeld eronder draagt de diepte (een vak, echt uitgewerkt).
+     Onderzoek: content achter een tab wordt vaak niet gezien (NN/g, Baymard),
+     dus Law staat standaard aan en dat beeld moet op zichzelf het verhaal dragen. */
+  .pgwrap { display: flex; flex-direction: column; gap: 28px; }
+  .subtabs { display: flex; gap: 8px; }
+  .subtabs s { flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px; height: 38px; padding: 0 12px;
+               border-radius: 999px; border: 1px solid #cfcfcf; background: #fff; text-decoration: none;
+               font-size: 11px; letter-spacing: .04em; text-transform: uppercase; color: #777; white-space: nowrap; }
+  .subtabs s b { width: 14px; height: 14px; border-radius: 4px; background: #d5d5d5; display: block; }
+  .subtabs s.on { background: #333; border-color: #333; color: #fff; }
+  .subtabs s.on b { background: #fff; }
+  .fragcap { display: flex; align-items: center; gap: 10px; padding-left: 2px; }
+  .fragcap i { display: block; height: 8px; border-radius: 4px; background: #d5d5d5; }
+
+  /* held-getal plus één gewone regel, precies zoals de card in het herontwerp */
+  .hero-stat { display: flex; flex-direction: column; gap: 5px; }
+  .hero-stat .big { display: flex; align-items: center; gap: 10px; }
+  .hero-stat .big b { display: block; width: 52px; height: 24px; border-radius: 5px; background: #8f8f8f; }
+  .hero-stat .big i { display: block; height: 13px; border-radius: 6px; background: #c2c2c2; }
+  .hero-stat .sub { display: block; height: 9px; border-radius: 5px; background: #dcdcdc; }
+
+  /* filter- en zoekbalk: altijd aanwezig, 32px controls */
+  .fbar { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .ctrl { height: 32px; border: 1px solid #cfcfcf; border-radius: 8px; background: #fff; display: flex; align-items: center; gap: 7px; padding: 0 10px; }
+  .ctrl.on { border-color: #333; border-width: 2px; }
+  .ctrl i { display: block; height: 8px; border-radius: 4px; background: #d5d5d5; }
+  .ctrl.search { flex: 1; min-width: 110px; }
+
+  /* rijen in plaats van een raster van vierkantjes */
+  .rows { display: flex; flex-direction: column; border: 1px solid #e2e2e2; border-radius: 10px; overflow: hidden; }
+  .rw { display: flex; align-items: center; gap: 12px; padding: 10px 12px; border-bottom: 1px solid #ededed; }
+  .rw:last-child { border-bottom: 0; }
+  .rw i { display: block; height: 8px; border-radius: 4px; background: #d9d9d9; }
+  .rw .st { font-size: 10px; letter-spacing: .06em; text-transform: uppercase; color: #8a8a8a; white-space: nowrap; }
+  .rw.open { display: block; background: #fafafa; border-left: 3px solid #555; padding: 14px 12px; }
+  .rw.open .top { display: flex; align-items: center; gap: 12px; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; padding-top: 12px; }
+  .col { display: flex; flex-direction: column; gap: 7px; }
+  .col i { display: block; height: 8px; border-radius: 4px; background: #d9d9d9; }
+  .acts { display: flex; gap: 8px; flex-wrap: wrap; padding-top: 12px; align-items: center; }
+  .acts .ui-chip.on { background: #333; color: #fff; border-color: #333; }
+
+  /* document met gemarkeerde passage */
+  .doc { display: flex; flex-direction: column; gap: 9px; padding: 14px; border: 1px solid #e2e2e2; border-radius: 10px; }
+  .doc i { display: block; height: 9px; border-radius: 5px; background: #e2e2e2; }
+  .doc i.hl { background: #b9b9b9; box-shadow: 0 0 0 4px #ececec; }
+  .cmt { border: 1px solid #cfcfcf; border-left: 3px solid #555; border-radius: 10px; background: #fafafa; padding: 13px; display: flex; flex-direction: column; gap: 9px; }
+  .cmt .lines { display: flex; flex-direction: column; gap: 7px; }
+  .cmt .lines i { display: block; height: 8px; border-radius: 4px; background: #d5d5d5; }
+  /* criteria: label links, score rechts als gewone tekst, geen pill, geen balk */
+  .crits { display: flex; flex-direction: column; }
+  .crits .c { display: flex; align-items: center; gap: 12px; padding: 9px 0; border-bottom: 1px solid #eee; }
+  .crits .c:last-child { border-bottom: 0; }
+  .crits .c i { display: block; height: 8px; border-radius: 4px; background: #d9d9d9; flex: 1; }
+  .crits .c .sc { font-size: 12px; font-weight: 600; color: #666; white-space: nowrap; }
+  .crits .c .sc.att { color: #b3261e; }
+  .ftot { display: flex; align-items: center; gap: 12px; border-top: 1px solid #e2e2e2; padding-top: 12px; margin-top: auto; }
+  .ftot .big { width: 56px; height: 24px; border-radius: 5px; background: #8f8f8f; }
+  @media (max-width: 980px) { .two { grid-template-columns: 1fr; } }
+</style>
+<section class="sect"><span class="no">5 · Products</span><div class="wrap" style="gap:96px">
+  <div class="head"><span class="lbl">Eyebrow</span><div class="t h2"><i class="w100"></i><i class="w60"></i></div></div>
+
+  <!-- Paper Grader: het feedbackmoment, ingezoomd op één inzending -->
+  <!-- Vaktabs: de zes labels dragen het bereik en zijn altijd zichtbaar, het beeld
+       eronder draagt de diepte. Law staat standaard aan; reken erop dat de meeste
+       bezoekers nooit wisselen (NN/g over tabs, Baymard over horizontale tabs),
+       dus dat ene beeld moet het verhaal alleen kunnen dragen. -->
+  <div class="pgwrap">
+  <div class="subtabs">
+    <s class="on"><b></b>Law</s><s><b></b>Economics</s><s><b></b>Social Sciences</s>
+    <s><b></b>STEM</s><s><b></b>Humanities</s><s><b></b>Health Sciences</s>
+  </div>
+  <div class="prow">
+    <div class="ptext">
+      <span class="pill"><i></i></span>
+      <div class="t h3"><i class="w90"></i></div>
+      <div class="t body"><i class="w100"></i><i class="w100"></i><i class="w70"></i></div>
+      <div class="checks"><span><b></b><i style="width:60%"></i></span><span><b></b><i style="width:50%"></i></span><span><b></b><i style="width:55%"></i></span></div>
+    </div>
+    <div class="fragwrap"><div class="frag">
+      <span class="tag">Paper Grader</span>
+      <span class="lblx">Passage in the submission</span>
+      <div class="doc"><i style="width:94%"></i><i style="width:88%"></i><i class="hl" style="width:72%"></i><i style="width:90%"></i><i style="width:58%"></i></div>
+      <div class="cmt">
+        <span class="lblx">Criterion 1</span>
+        <div class="lines"><i style="width:96%"></i><i style="width:76%"></i></div>
+        <div class="acts" style="padding-top:2px"><span class="ui-chip on">Approve</span><span class="ui-chip">Edit</span><span class="ui-chip">Discard</span></div>
+      </div>
+      <span class="lblx">Score per criterion</span>
+      <div class="crits">
+        <div class="c"><i style="max-width:150px"></i><span class="sc">8 / 10</span></div>
+        <div class="c"><i style="max-width:120px"></i><span class="sc">9 / 10</span></div>
+        <div class="c"><i style="max-width:170px"></i><span class="sc">9 / 10</span></div>
+        <div class="c"><i style="max-width:130px"></i><span class="sc">7 / 10</span></div>
+      </div>
+      <div class="ftot"><span class="big"></span><div class="t small" style="flex:1"><i style="width:66%"></i></div><span class="lblx">pending your approval</span></div>
+    </div><div class="fragcap"><span class="ui-chip">What you are looking at</span><i style="width:46%"></i></div></div>
+  </div>
+
+  </div>
+
+  <!-- Exam Grader: filteren op wat gemarkeerd is, dan één antwoord openen -->
+  <div class="prow flip">
+    <div class="ptext">
+      <span class="pill"><i></i></span>
+      <div class="t h3"><i class="w90"></i></div>
+      <div class="t body"><i class="w100"></i><i class="w100"></i><i class="w70"></i></div>
+      <div class="checks"><span><b></b><i style="width:60%"></i></span><span><b></b><i style="width:50%"></i></span><span><b></b><i style="width:55%"></i></span></div>
+    </div>
+    <div class="fragwrap"><div class="frag">
+      <span class="tag">Exam Grader</span>
+      <div class="hero-stat">
+        <span class="big"><b></b><i style="width:130px"></i></span>
+        <span class="sub" style="width:58%"></span>
+      </div>
+      <div class="fbar">
+        <span class="ctrl search"><i style="width:60%"></i></span>
+        <span class="ctrl on"><i style="width:64px"></i></span>
+        <span class="ctrl"><i style="width:48px"></i></span>
+        <span class="ctrl" style="margin-left:auto"><i style="width:54px"></i></span>
+      </div>
+      <span class="lblx">20 of 142 answers</span>
+      <div class="rows">
+        <div class="rw"><i style="width:22%"></i><i style="flex:1"></i><span class="st">waiting 6 days</span></div>
+        <div class="rw open">
+          <div class="top"><i style="width:22%"></i><i style="flex:1"></i><span class="st">uncertain</span></div>
+          <div class="two">
+            <div class="col"><span class="lblx">Student answer</span><i style="width:92%"></i><i style="width:80%"></i><i style="width:64%"></i></div>
+            <div class="col"><span class="lblx">Mark scheme</span><i style="width:88%"></i><i style="width:72%"></i><i style="width:56%"></i></div>
+          </div>
+          <div class="acts"><span class="ui-chip on">Approve</span><span class="ui-chip">Adjust</span><span class="lblx" style="margin-left:6px">2 of 4 points</span></div>
+        </div>
+        <div class="rw"><i style="width:20%"></i><i style="flex:1"></i><span class="st">waiting 4 days</span></div>
+        <div class="rw"><i style="width:24%"></i><i style="flex:1"></i><span class="st">waiting 2 days</span></div>
+      </div>
+      <div class="ftot"><div class="t small" style="flex:1"><i style="width:58%"></i></div><span class="lblx">approved, to gradebook</span></div>
+    </div><div class="fragcap"><span class="ui-chip">What you are looking at</span><i style="width:46%"></i></div></div>
+  </div>
+
+  <!-- Beta's: klein, badge, geen beeld (zie research/product-tonen-en-beta.md) -->
+  <div class="bento">
+    <div class="card c3"><span class="row"><span class="pill"><i style="width:90px"></i></span><span class="ui-chip">Beta</span></span><div class="t h3"><i class="w80"></i></div><div class="t body"><i class="w100"></i><i class="w60"></i></div></div>
+    <div class="card c3"><span class="row"><span class="pill"><i style="width:90px"></i></span><span class="ui-chip">Beta</span></span><div class="t h3"><i class="w80"></i></div><div class="t body"><i class="w100"></i><i class="w60"></i></div></div>
+  </div>
+  <div class="row" style="justify-content:center"><span class="btn pri"><i></i></span></div>
+</div></section>
+
+
+</div>
+
+<div class="s-wire" data-sec="fit">
+<div class="wire-flag"><span>Wireframe</span> nog niet uitgewerkt</div>
+<!-- 6 FIT & TRUST (LMS en compliance samengevoegd) -->
+<section class="sect grey"><span class="no">6 · Fit &amp; trust</span><div class="wrap">
+  <div class="head"><span class="lbl">Eyebrow</span><div class="t h2"><i class="w100"></i><i class="w70"></i></div></div>
+  <div class="fit">
+    <div class="fitL">
+      <span class="lbl">Draait in wat je al hebt</span>
+      <div class="t body" style="width:100%"><i class="w100"></i><i class="w80"></i></div>
+      <div class="lmsrow"><span class="logo">Moodle</span><span class="logo">Canvas</span><span class="logo">Blackboard</span><span class="logo">Brightspace</span></div>
+      <div class="flow"><span class="box">Submit</span><span>&rarr;</span><span class="box">Draft</span><span>&rarr;</span><span class="box">Approve</span><span>&rarr;</span><span class="box">Gradebook</span></div>
+    </div>
+    <div class="fitR">
+      <span class="lbl">Mag van je instelling</span>
+      <div class="tcard"><span class="ui-chip">EU AI Act</span><div class="t body"><i class="w100"></i><i class="w70"></i></div></div>
+      <div class="tcard"><span class="ui-chip">GDPR</span><div class="t body"><i class="w100"></i><i class="w70"></i></div></div>
+      <div class="tcard"><span class="ui-chip">Human sign-off</span><div class="t body"><i class="w100"></i><i class="w70"></i></div></div>
+    </div>
+  </div>
+  <div class="row" style="justify-content:center;padding-top:8px"><span class="btn pri"><i></i></span></div>
+</div></section>
+
+
+</div>
+
+<div class="s-wire" data-sec="faq">
+<div class="wire-flag"><span>Wireframe</span> nog niet uitgewerkt</div>
+<!-- 7 FAQ -->
+<section class="sect grey"><span class="no">7 · FAQ</span><div class="wrap">
+  <div class="faq">
+    <div class="stack"><span class="lbl">Eyebrow</span><div class="t h2"><i class="w90"></i></div><div class="t body"><i class="w70"></i></div></div>
+    <div class="list">
+      <div class="q"><i style="width:60%"></i><span>+</span></div><div class="q"><i style="width:70%"></i><span>+</span></div><div class="q"><i style="width:50%"></i><span>+</span></div><div class="q"><i style="width:65%"></i><span>+</span></div><div class="q"><i style="width:45%"></i><span>+</span></div><div class="q"><i style="width:55%"></i><span>+</span></div>
+    </div>
+  </div>
+</div></section>
+
+
+</div>
+
+<div class="s-wire" data-sec="book">
+<div class="wire-flag"><span>Wireframe</span> nog niet uitgewerkt</div>
+<!-- 8 BOOK: de conversie zelf, agenda inline, geen extra klik -->
+<section class="sect grey" id="book"><span class="no">8 · Book (inline)</span><div class="wrap">
+  <div class="book">
+
+    <div class="bookL">
+      <div class="head" style="max-width:none">
+        <span class="lbl">Eyebrow</span>
+        <div class="t h2"><i class="w100"></i><i class="w70"></i></div>
+        <div class="t sub"><i class="w100"></i><i class="w60"></i></div>
+      </div>
+      <figure class="quote">
+        <div class="t h3"><i class="w100"></i><i class="w90"></i><i class="w50"></i></div>
+        <div class="t small"><i class="w60"></i><i class="w80"></i></div>
+      </figure>
+      <div class="trustcues">
+        <span><b></b><i style="width:58%"></i></span>
+        <span><b></b><i style="width:66%"></i></span>
+        <span><b></b><i style="width:50%"></i></span>
+      </div>
+    </div>
+
+    <div class="widget">
+      <span class="tag" style="position:static;align-self:flex-start">Calendly inline embed</span>
+
+      <div class="wstep"><b>1</b><div class="t h3" style="width:200px"><i class="w100"></i></div></div>
+      <div class="cal">
+        <div class="days">
+          <s class="off">M</s><s class="off">T</s><s class="off">W</s><s class="off">T</s><s class="off">F</s><s class="off">S</s><s class="off">S</s>
+          <s class="off">1</s><s class="on">2</s><s class="on">3</s><s class="on">4</s><s class="on">5</s><s class="off">6</s><s class="off">7</s>
+          <s class="on">8</s><s class="sel">9</s><s class="on">10</s><s class="on">11</s><s class="on">12</s><s class="off">13</s><s class="off">14</s>
+          <s class="on">15</s><s class="on">16</s><s class="on">17</s><s class="on">18</s><s class="on">19</s><s class="off">20</s><s class="off">21</s>
+        </div>
+        <div class="slots">
+          <s>09:30</s><s class="sel">11:00</s><s>14:00</s><s>15:30</s><s>16:30</s>
+        </div>
+      </div>
+
+      <div class="wsep"></div>
+
+      <div class="wstep"><b>2</b><div class="t h3" style="width:230px"><i class="w100"></i></div></div>
+      <div class="fields">
+        <div class="field"><i style="width:22%"></i><i style="width:44%"></i></div>
+        <div class="field"><i style="width:32%"></i><i style="width:48%"></i></div>
+        <div class="field"><i style="width:28%"></i><i style="width:40%"></i></div>
+        <div class="field"><i style="width:30%"></i><span class="ui-chip">optional</span></div>
+      </div>
+      <span class="btn pri" style="align-self:stretch;justify-content:center"><i></i></span>
+      <div class="t small" style="width:70%"><i class="w100"></i></div>
+    </div>
+
+  </div>
+
+  <div class="selfserve">
+    <div class="stack" style="flex:1;min-width:260px;gap:8px">
+      <div class="t h3" style="width:300px"><i class="w100"></i></div>
+      <div class="t body" style="width:420px"><i class="w100"></i><i class="w60"></i></div>
+    </div>
+    <span class="btn"><i></i></span>
+  </div>
+</div></section>
+
+
+</div>
+</body>
+</html>

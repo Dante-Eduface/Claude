@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SHIFT cockpit — proef Goedkeuren</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&family=Inter:wght@400;450;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --color-navy: #002333;
+    --color-green: #00e075;
+    --color-green-deep: #007b54;
+    --color-ink-950: #002333;
+    --color-ink-900: #0a2c3b;
+    --color-ink-700: #2c4a57;
+    --color-ink-500: #5b7480;
+    --color-ink-300: #a9bcc4;
+    --color-ink-200: #cdd9de;
+    --color-ink-100: #e7eef0;
+    --color-ink-50:  #f3f7f8;
+    --color-white:   #ffffff;
+
+    --bg: var(--color-white);
+    --surface: var(--color-ink-50);
+    --fg: var(--color-ink-950);
+    --muted: var(--color-ink-500);
+    --border: var(--color-ink-100);
+    --border-strong: var(--color-ink-200);
+    --primary: var(--color-navy);
+    --primary-fg: var(--color-white);
+    --success: var(--color-green-deep);
+    --danger: #b3261e;
+    --warning: #b26a00;
+    --ring: var(--color-green);
+    --card-bg: var(--color-white);
+
+    --shadow-sm: 0 1px 2px rgba(0,35,51,.06);
+    --shadow-md: 0 4px 16px rgba(0,35,51,.08);
+
+    --row-h: 36px;
+    --control-h: 32px;
+    --pane-pad: 16px;
+
+    --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+    --font-display: "League Spartan", var(--font-sans);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: var(--color-navy);
+      --surface: var(--color-ink-900);
+      --fg: var(--color-white);
+      --muted: var(--color-ink-300);
+      --border: rgba(255,255,255,.12);
+      --border-strong: rgba(255,255,255,.20);
+      --primary: var(--color-white);
+      --primary-fg: var(--color-navy);
+      --card-bg: var(--color-ink-900);
+      --danger: #ff6b60;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: var(--color-navy);
+    --surface: var(--color-ink-900);
+    --fg: var(--color-white);
+    --muted: var(--color-ink-300);
+    --border: rgba(255,255,255,.12);
+    --border-strong: rgba(255,255,255,.20);
+    --primary: var(--color-white);
+    --primary-fg: var(--color-navy);
+    --card-bg: var(--color-ink-900);
+    --danger: #ff6b60;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-sans);
+    font-size: 14px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3 { font-family: var(--font-display); margin: 0; }
+  a { color: inherit; }
+  button { font-family: var(--font-sans); }
+  :focus-visible { outline: 2px solid var(--ring); outline-offset: 2px; }
+
+  /* ---------- topbar ---------- */
+  .topbar {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 16px;
+    border-bottom: 1px solid var(--border);
+    background: var(--card-bg);
+  }
+  .brand {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: .01em;
+    white-space: nowrap;
+  }
+  .brand .markt {
+    color: var(--muted);
+    font-family: var(--font-sans);
+    font-weight: 500;
+    font-size: 12px;
+  }
+  .status-strip {
+    flex: 1;
+    min-width: 0;
+    font-size: 12.5px;
+    color: var(--muted);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .status-strip strong { color: var(--fg); font-weight: 600; }
+  .who {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+  }
+  .who-label { font-size: 12px; color: var(--muted); }
+  .who-toggle {
+    display: flex;
+    border: 1px solid var(--border-strong);
+    border-radius: 8px;
+    overflow: hidden;
+    height: var(--control-h);
+  }
+  .who-btn {
+    border: none;
+    background: transparent;
+    color: var(--fg);
+    font-size: 12.5px;
+    font-weight: 500;
+    padding: 0 12px;
+    cursor: pointer;
+    height: 100%;
+  }
+  .who-btn + .who-btn { border-left: 1px solid var(--border-strong); }
+  .who-btn[aria-pressed="true"] { background: var(--primary); color: var(--primary-fg); }
+
+  /* ---------- tabs ---------- */
+  .tabs {
+    display: flex;
+    gap: 4px;
+    padding: 8px 16px;
+    border-bottom: 1px solid var(--border);
+    background: var(--card-bg);
+  }
+  .tab {
+    height: var(--control-h);
+    padding: 0 14px;
+    border-radius: 8px;
+    border: none;
+    background: transparent;
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 500;
+    cursor: default;
+  }
+  .tab.active { background: var(--surface); color: var(--fg); cursor: pointer; }
+  .tab.disabled { opacity: .45; cursor: not-allowed; }
+
+  /* ---------- main ---------- */
+  main {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 24px 16px 64px;
+  }
+
+  .nav-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  .counter { font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .nav-buttons { display: flex; gap: 8px; }
+  .nav-btn {
+    height: var(--control-h);
+    min-width: var(--control-h);
+    border-radius: 8px;
+    border: 1px solid var(--border-strong);
+    background: var(--card-bg);
+    color: var(--fg);
+    cursor: pointer;
+    font-size: 13px;
+    padding: 0 10px;
+  }
+  .nav-btn:hover { background: var(--surface); }
+  .nav-btn:disabled { opacity: .35; cursor: not-allowed; }
+
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .card-head {
+    padding: var(--pane-pad) 20px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  .card-head h1 { font-size: 20px; font-weight: 700; }
+  .card-head .functie { font-size: 13.5px; color: var(--muted); margin-top: 2px; }
+  .card-head .meta {
+    font-size: 12.5px;
+    color: var(--muted);
+    margin-top: 8px;
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+  }
+  .card-head .meta span:not(:last-child)::after { content: "·"; margin-left: 4px; color: var(--border-strong); }
+  .card-head .link { flex-shrink: 0; font-size: 12.5px; text-decoration: underline; text-underline-offset: 2px; color: var(--muted); white-space: nowrap; }
+  .card-head .link:hover { color: var(--fg); }
+
+  .section { padding: var(--pane-pad) 20px; border-bottom: 1px solid var(--border); }
+  .section:last-child { border-bottom: none; }
+  .section-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .03em;
+    color: var(--muted);
+    margin-bottom: 8px;
+  }
+
+  .haakje {
+    font-size: 14.5px;
+    line-height: 1.6;
+    border-left: 2px solid var(--border-strong);
+    padding-left: 12px;
+  }
+  .bron {
+    margin-top: 6px;
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .bron a { text-decoration: underline; text-underline-offset: 2px; }
+  .niveau {
+    display: inline;
+    font-weight: 600;
+  }
+  .niveau.n1, .niveau.onbeoordeeld { color: var(--warning); }
+  .niveau.n2, .niveau.n2b { color: var(--fg); }
+  .niveau.n3 { color: var(--success); }
+
+  .support-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .support-grid .empty { color: var(--muted); font-style: normal; font-size: 13px; }
+  .support h3 { font-size: 12px; color: var(--muted); font-weight: 600; margin-bottom: 4px; }
+  .support p { margin: 0; font-size: 13px; line-height: 1.55; }
+
+  /* messages */
+  .msg-tabs { display: flex; gap: 4px; margin-bottom: 10px; }
+  .msg-tab {
+    height: 26px;
+    padding: 0 10px;
+    border-radius: 6px;
+    border: 1px solid var(--border-strong);
+    background: transparent;
+    color: var(--muted);
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .msg-tab.active { background: var(--surface); color: var(--fg); border-color: var(--border-strong); }
+  .msg-tab .empty-dot { display: inline-block; width: 5px; height: 5px; border-radius: 50%; background: var(--border-strong); margin-left: 5px; }
+
+  .msg-body { display: none; }
+  .msg-body.active { display: block; }
+  .msg-subject { font-size: 13px; font-weight: 600; margin-bottom: 6px; }
+  .msg-text {
+    font-size: 14px;
+    line-height: 1.65;
+    white-space: pre-wrap;
+    background: var(--surface);
+    border-radius: 8px;
+    padding: 12px 14px;
+  }
+  .msg-empty {
+    font-size: 13px;
+    color: var(--muted);
+    background: var(--surface);
+    border-radius: 8px;
+    padding: 12px 14px;
+  }
+  .msg-len { font-size: 11px; color: var(--muted); margin-top: 6px; text-align: right; }
+
+  /* redenering / reactie */
+  .reason-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+  }
+  .reason-col h3 { font-size: 11px; font-weight: 600; letter-spacing: .03em; color: var(--muted); margin-bottom: 8px; }
+  .reason-text { font-size: 13.5px; line-height: 1.6; }
+  .reason-text .empty { color: var(--muted); }
+  .twijfels-block { margin-top: 14px; }
+  .twijfels-block .item {
+    font-size: 13px;
+    line-height: 1.6;
+    padding: 8px 10px;
+    background: var(--surface);
+    border-radius: 6px;
+  }
+  .twijfels-block .item + .item { margin-top: 6px; }
+
+  textarea.reactie {
+    width: 100%;
+    min-height: 132px;
+    resize: vertical;
+    border: 1px solid var(--border-strong);
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-family: var(--font-sans);
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: var(--fg);
+    background: var(--card-bg);
+  }
+  textarea.reactie::placeholder { color: var(--muted); }
+
+  details.openers { margin-top: 10px; }
+  details.openers summary {
+    font-size: 12px;
+    color: var(--muted);
+    cursor: pointer;
+    user-select: none;
+  }
+  details.openers .item {
+    font-size: 12.5px;
+    color: var(--muted);
+    line-height: 1.55;
+    padding: 6px 0 0 14px;
+  }
+
+  /* actions */
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .action-btns { display: flex; gap: 8px; }
+  .btn {
+    height: 36px;
+    padding: 0 16px;
+    border-radius: 8px;
+    font-size: 13.5px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid var(--border-strong);
+    background: var(--card-bg);
+    color: var(--fg);
+  }
+  .btn:hover { background: var(--surface); }
+  .btn.primary { background: var(--primary); color: var(--primary-fg); border-color: var(--primary); }
+  .btn.primary:hover { opacity: .92; }
+  .btn.danger { color: var(--danger); border-color: var(--danger); background: var(--card-bg); }
+  .btn[aria-pressed="true"].primary { background: var(--success); border-color: var(--success); color: var(--color-white); }
+  .btn[aria-pressed="true"].danger { background: var(--danger); border-color: var(--danger); color: var(--color-white); }
+
+  .decision-state {
+    font-size: 12.5px;
+    color: var(--muted);
+  }
+  .decision-state strong { color: var(--fg); }
+
+  .hint { font-size: 11.5px; color: var(--muted); margin-top: 10px; }
+  kbd {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    border: 1px solid var(--border-strong);
+    border-radius: 4px;
+    padding: 1px 5px;
+  }
+
+  @media (max-width: 720px) {
+    .support-grid, .reason-grid { grid-template-columns: 1fr; }
+    .card-head { flex-direction: column; }
+    .status-strip { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="brand">SHIFT cockpit <span class="markt">· NL</span></div>
+  <div class="status-strip" id="statusStrip"></div>
+  <div class="who">
+    <span class="who-label">Ik ben</span>
+    <div class="who-toggle" role="group" aria-label="Wie geeft feedback">
+      <button class="who-btn" id="whoDante" aria-pressed="false">Dante</button>
+      <button class="who-btn" id="whoJeroen" aria-pressed="false">Jeroen</button>
+    </div>
+  </div>
+</div>
+
+<div class="tabs">
+  <button class="tab" disabled>Dashboard</button>
+  <button class="tab active">Goedkeuren</button>
+  <button class="tab" disabled>Reacties</button>
+  <button class="tab" disabled>Agents</button>
+</div>
+
+<main>
+  <div class="nav-row">
+    <div class="counter" id="counter">1 / 3</div>
+    <div class="nav-buttons">
+      <button class="nav-btn" id="prevBtn" title="Vorige (←)">← Vorige</button>
+      <button class="nav-btn" id="nextBtn" title="Volgende (→)">Volgende →</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div>
+        <h1 id="pNaam"></h1>
+        <div class="functie" id="pFunctie"></div>
+        <div class="meta" id="pMeta"></div>
+      </div>
+      <a class="link" id="pLinkedin" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+
+    <div class="section">
+      <div class="section-label">HAAKJE</div>
+      <div class="haakje" id="pHaakje"></div>
+      <div class="bron" id="pBron"></div>
+    </div>
+
+    <div class="section" id="supportSection">
+      <div class="support-grid">
+        <div class="support">
+          <h3>Toetsprogramma</h3>
+          <p id="pToets"></p>
+        </div>
+        <div class="support">
+          <h3>Opvallend</h3>
+          <p id="pOpvallend"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">BERICHTEN</div>
+      <div class="msg-tabs">
+        <button class="msg-tab active" data-msg="connectieverzoek">Connectieverzoek</button>
+        <button class="msg-tab" data-msg="mail">Mail 1</button>
+        <button class="msg-tab" data-msg="reminder">Reminder</button>
+      </div>
+      <div class="msg-body active" data-msg="connectieverzoek">
+        <div class="msg-text" id="pConnectie"></div>
+        <div class="msg-len" id="pConnectieLen"></div>
+      </div>
+      <div class="msg-body" data-msg="mail">
+        <div class="msg-subject" id="pMailOnderwerp"></div>
+        <div class="msg-text" id="pMail"></div>
+      </div>
+      <div class="msg-body" data-msg="reminder">
+        <div id="pReminderWrap"></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">REDENERING AGENT 4 EN JOUW REACTIE</div>
+      <div class="reason-grid">
+        <div class="reason-col">
+          <h3>Waarom dit bericht</h3>
+          <div class="reason-text" id="pWaarom"></div>
+          <div class="twijfels-block" id="pTwijfelsWrap"></div>
+          <details class="openers" id="pOpenersWrap">
+            <summary>Afgevallen openers</summary>
+            <div id="pOpeners"></div>
+          </details>
+        </div>
+        <div class="reason-col">
+          <h3>Jouw reactie op agent 4</h3>
+          <textarea class="reactie" id="reactieInput" placeholder="Wat klopt er niet aan het haakje, waarom landt deze opening niet, wat had hij moeten zien..."></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="actions">
+        <div class="action-btns">
+          <button class="btn primary" id="btnGoed">Goedkeuren</button>
+          <button class="btn danger" id="btnAfkeuren">Afkeuren</button>
+          <button class="btn" id="btnAanpassen">Aanpassen</button>
+        </div>
+        <div class="decision-state" id="decisionState">Nog geen besluit</div>
+      </div>
+      <div class="hint">Proef zonder opslag: navigeer met <kbd>←</kbd> <kbd>→</kbd>. Besluit en reactie wissen bij het verversen van de pagina — de echte versie schrijft naar de artifact-database.</div>
+    </div>
+  </div>
+</main>
+
+<script>
+const RECORDS = [
+  {
+    person_id: "p_dominique-stokman-5790277",
+    naam: "Dominique Stokman",
+    functie: "Director Academie Hypnos",
+    functie_niveau: "directie",
+    organisatie: "Academie Hypnos",
+    linkedin_url: "https://www.linkedin.com/in/dominique-stokman-5790277/",
+    segment_omvang: "micro",
+    lerenden_per_jaar: "42",
+    haakje: "Zegt zelf: Mijn passie ligt in het opleiden van professionals en het verbinden van mensen met zichzelf, hun naasten en hun omgeving. Nam de school in 2018 over van oprichter Barbelo Uijtenbogaardt",
+    haakje_bron_url: "https://hypnos.nl/organisatie-en-docenten/",
+    haakje_bron_type: "teampagina",
+    haakje_niveau: "onbeoordeeld",
+    toetsprogramma: "",
+    opvallend: "",
+    connectieverzoek: "Hi Dominique, ik las dat jaar 3 bij jullie een schriftelijk examen, een praktijkexamen en een afstudeeropdracht kent. Drie toetsvormen in een jaar. Ons AI-model helpt docenten bij feedback op schrijfopdrachten, ook bij Hogeschool Rotterdam. Wie beoordeelt die afstudeeropdrachten?",
+    opvolgmail_onderwerp: "Het derde jaar met drie toetsvormen",
+    opvolgmail: "Hi Dominique,\n\nIk las dat het derde jaar bij jullie een schriftelijk examen, een praktijkexamen en een afstudeeropdracht op hbo-niveau kent. Drie toetsvormen in een jaar, en die afstudeeropdrachten moet iemand op hbo-niveau beoordelen. Daarom stuurde ik je een connectieverzoek op LinkedIn.\n\nWij hebben een Nederlands onderwijskundig AI-model gebouwd, ontwikkeld met hulp van de Universiteit Leiden en de Radboud Universiteit, dat formatieve en summatieve feedback geeft op studentopdrachten. Onze tool wordt onder andere ingezet bij De Haagse Hogeschool en Hogeschool Rotterdam.\n\nLijkt het je interessant om te zien hoe we dat bij Hogeschool Rotterdam doen?\n\nMet vriendelijke groet,\n\nDante Torbed\nCustomer success manager, Eduface",
+    reminder: "",
+    waarom_dit_bericht: "Haakje is hun eigen praktische pagina: jaar 3 kent een schriftelijk examen, een praktijkexamen en een afstudeeropdracht op hbo-niveau, met een eigen OER (hypnos.nl/de-opleiding-praktisch). Reactie in plaats van citaat: drie toetsvormen in een jaar is veel voor een vierjarige deeltijdopleiding. Drager-toets: ik beweer nergens dat het zwaar is voor hun docenten, want dat staat niet in de bron; in plaats daarvan stel ik de vraag wie die afstudeeropdrachten beoordeelt. Social proof = De Haagse Hogeschool en Hogeschool Rotterdam (TIO en ICM mogen sinds 02-09-2026 niet meer genoemd worden).",
+    twijfels: "Kleinste org op de lijst: 42 studenten over alle vier de jaargangen, dus ongeveer 10 instroom per jaar. Dat staat op de 10k-ondergrens en niet erboven. Wil je op omvang schiften, dan is dit de eerste die eraf kan.|Wie de afstudeeropdrachten beoordeelt staat nergens online, daarom is het de vraag geworden.",
+    afgevallen_openers: "Dat zij de school in 2018 overnam van oprichter Barbelo Uijtenbogaardt toen die bijna sloot: menselijk en waar, maar acht jaar geleden dus geen why-now, en het raakt het beoordelen niet.|Haar uitspraak over passie voor het opleiden van professionals en het verbinden van mensen: had naar honderd anderen gekund.|Het cijfer 41 van de 42 studenten uit hun eigen evaluatie: getal van hun site, per regel weglaten."
+  },
+  {
+    person_id: "p_selma-de-nijs-2309a931",
+    naam: "Selma de Nijs",
+    functie: "Opleidingsmanager overgangsconsulent en research, docent, examinator",
+    functie_niveau: "onderwijsleiding",
+    organisatie: "Breederode Hogeschool",
+    linkedin_url: "https://www.linkedin.com/in/selma-de-nijs-2309a931/",
+    segment_omvang: "onbekend",
+    lerenden_per_jaar: "",
+    haakje: "Breederode leidt anderen op in toetskwaliteit met een eigen BKE-cursus die hands-on ervaring geeft in het verbeteren van de kwaliteit van je eigen toetsen",
+    haakje_bron_url: "https://publicaties.nvao.net/prd/AV-3019_20251113_Rapport_Breederode%20hbo%20v%20def2%20(1).pdf",
+    haakje_bron_type: "organisatie",
+    haakje_niveau: "2",
+    toetsprogramma: "Toetsen beoordeeld met beoordelingsformulieren met rubrics en ruimte voor toelichting per rubric (bachelor Verpleegkunde). Aantallen niet gevonden.",
+    opvallend: "",
+    connectieverzoek: "Hoi Selma, ik las dat Breederode in maart het convenant voor betere vrouwengezondheid tekende, met de opleiding overgangsconsulent als toezegging. Zo'n belofte landt uiteindelijk bij de examinator, want meer instroom betekent meer werk om te beoordelen. Daar werk ik aan. Vandaar dat ik je toevoeg.",
+    opvolgmail_onderwerp: "",
+    opvolgmail: "Dank voor het accepteren. Wij maken AI die geschreven werk van studenten nakijkt langs het eisenkader van de opleiding zelf, met feedback per student, examinator tekent af. Nu bij Hogeschool Rotterdam en De Haagse Hogeschool. Wie gaat bij Breederode over toetsing en AI, of moet ik bij jou zijn? Ik kon zelf niet goed vinden wie dat is.",
+    reminder: "",
+    waarom_dit_bericht: "",
+    twijfels: "Zwakste van de acht. Het convenant is nieuws over de organisatie, niet iets van haarzelf. Haar naam staat niet in het bericht, wel de opleiding die zij beheert. Als jij dit te dun vindt, laat ik hem vallen of zoek ik iets van haarzelf.|HERCHECK 2026-08-12: haakje gaat over de organisatie, niet over Selma zelf, zakt op de omkeertoets (elke andere nieuwe opleiding bij Breederode zou net zo goed passen). Breederode is al 2x aangeraakt (cold call + LinkedIn naar Irma). Voorstel: laten vallen, tenzij Dante een eigen haakje van Selma wil laten zoeken.",
+    afgevallen_openers: ""
+  },
+  {
+    person_id: "p_martijn-forrer-6b133897",
+    naam: "Martijn Forrer",
+    functie: "Bestuurder / Directeur onderwijs",
+    functie_niveau: "bestuur",
+    organisatie: "Stichting Academie voor Ambulancezorg",
+    linkedin_url: "https://www.linkedin.com/in/martijn-forrer-6b133897/",
+    segment_omvang: "midden",
+    lerenden_per_jaar: "2021",
+    haakje: "De Academie leidt eigen docenten en RAV-onderzoekers op tot beoordelaar van de producten die professionals in opleiding opleveren. Forrer wordt in dat bericht zelf geciteerd.",
+    haakje_bron_url: "https://www.academievoorambulancezorg.nl/actueel/academie-voor-ambulancezorg-en-han-university-of-applied-science-gaan-duurzame-samenwerking-met-elkaar-aan/",
+    haakje_bron_type: "nieuwsbericht organisatie",
+    haakje_niveau: "3",
+    toetsprogramma: "Landelijk assessment: kennistoets meerkeuze, praktijkcasussen en een reflectieverslag. Afgenomen door \"zorgvuldig geselecteerde ervaren professionals\" uit de RAVs. Aantallen niet vermeld.",
+    opvallend: "Forrer: programma helpt \"in de ontwikkeling naar een reflectieve beroepshouding\". Docenten en onderzoekers worden apart opgeleid tot beoordelaar van de opgeleverde producten.",
+    connectieverzoek: "Hi Martijn, ik las in het HAN-bericht dat jullie eigen docenten en RAV-onderzoekers apart opleiden tot beoordelaar. Dat je je nakijkers eerst zelf opleidt kom ik zelden zo tegen. Wij ondersteunen beoordelaars bij feedback op schrijfwerk, ook bij Hogeschool Rotterdam. Hoeveel leiden jullie er zo op?",
+    opvolgmail_onderwerp: "Beoordelaars die je eerst zelf moet opleiden",
+    opvolgmail: "Hi Martijn,\n\nIn het bericht over de samenwerking met de HAN las ik dat jullie eigen docenten en RAV-onderzoekers opleiden tot beoordelaar van de producten die professionals in opleiding opleveren. In het landelijk assessment zit naast de meerkeuze kennistoets en de praktijkcasussen ook een reflectieverslag, afgenomen door zorgvuldig geselecteerde ervaren professionals uit de RAVs. Je bouwt je beoordelaarscapaciteit dus steeds opnieuw op. Hierom stuurde ik je een LinkedIn-connectieverzoek.\n\nWij hebben een zelf getraind Nederlands onderwijskundig AI-model gebouwd, ontwikkeld met hulp van de Universiteit Leiden en de Radboud Universiteit, dat formatieve en summatieve feedback geeft op studentopdrachten. Elke opmerking wordt door de docent bekeken en goedgekeurd voordat de student hem ziet. Onze tool wordt onder andere ingezet bij Hogeschool Rotterdam en Tilburg University.\n\nHet opleidingsjaar is net begonnen. Ik ben benieuwd met hoeveel beoordelaars jullie dit jaar de reflectieverslagen nakijken, en hoe je die groep op een lijn houdt.\n\nMet vriendelijke groet,\n\nDante Torbed\nCustomer success manager, Eduface",
+    reminder: "",
+    waarom_dit_bericht: "Insteek: het feit dat ze hun eigen beoordelaars moeten opleiden, uit het HAN-bericht waarin Forrer zelf geciteerd wordt. Dat is niveau 3 en zeldzaam: de meeste opleiders hebben hun nakijkers al. Mijn reactie ('dat kom ik zelden zo tegen') is de levendigheidsstap, niet het kale feit. Drager-toets: de bron legt de last expliciet bij de beoordelaar (docenten en onderzoekers worden opgeleid TOT beoordelaar). Omkeertoets: vervang het reflectieverslag door een praktijkcasus en mijn zin over schrijfwerk klopt niet meer, dus de brug hangt aan het schrijven. Hij is bestuurder en directeur onderwijs in een tweekoppig bestuur, dus zelf de juiste persoon: uitnodiging, geen doorverwijsvraag.",
+    twijfels: "",
+    afgevallen_openers: "Opener A (reflectieve beroepshouding, zijn eigen woorden): mooi citaat maar de last ligt daar bij de student, zakt op de drager-toets.|Opener B (CITO-accreditatie van het assessment): keurmerk, geen wrijving.|Opener C (112 medewerkers): getal zonder betekenis voor nakijkwerk.|Opener D (landelijke monopoliepositie in ambulancezorg): interessant maar te veel mijn interpretatie."
+  }
+];
+
+const NIVEAU_LABEL = { "1": "1 — te zwak", "2": "2 — bruikbaar", "2b": "2b — bruikbaar met kanttekening", "3": "3 — sterk, hij zegt het zelf", "onbeoordeeld": "onbeoordeeld" };
+
+let idx = 0;
+let currentMsgTab = "connectieverzoek";
+const decisions = {}; // person_id -> {status, reactie}
+
+function el(id) { return document.getElementById(id); }
+
+function renderStatusStrip() {
+  el("statusStrip").innerHTML =
+    "<strong>98</strong> verstuurd · <strong>11</strong> geaccepteerd (12%) · <strong>12</strong> gereageerd (13%) — over de drempel bij bestuur en NL, de rest wacht nog op volume";
+}
+
+function paragraphOrEmpty(text) {
+  return text && text.trim() ? `<p>${escapeHtml(text)}</p>` : `<p class="empty">Niet ingevuld</p>`;
+}
+
+function escapeHtml(s) {
+  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
+function renderRecord() {
+  const r = RECORDS[idx];
+  el("counter").textContent = `${idx + 1} / ${RECORDS.length}`;
+  el("prevBtn").disabled = idx === 0;
+  el("nextBtn").disabled = idx === RECORDS.length - 1;
+
+  el("pNaam").textContent = r.naam;
+  el("pFunctie").textContent = `${r.functie} — ${r.organisatie}`;
+  el("pLinkedin").href = r.linkedin_url;
+
+  const metaParts = [r.functie_niveau, r.segment_omvang];
+  if (r.lerenden_per_jaar) metaParts.push(`${r.lerenden_per_jaar} lerenden/jaar`);
+  el("pMeta").innerHTML = metaParts.map(m => `<span>${escapeHtml(m)}</span>`).join("");
+
+  el("pHaakje").textContent = r.haakje;
+  const niveauKey = r.haakje_niveau.replace("b", "b");
+  const niveauClass = "n" + r.haakje_niveau.replace(/[^0-9b]/g, "") || "onbeoordeeld";
+  el("pBron").innerHTML = `<span class="niveau ${r.haakje_niveau === "onbeoordeeld" ? "onbeoordeeld" : "n" + r.haakje_niveau}">${NIVEAU_LABEL[r.haakje_niveau] || r.haakje_niveau}</span> · <a href="${r.haakje_bron_url}" target="_blank" rel="noopener">${r.haakje_bron_type} ↗</a>`;
+
+  const hasSupport = r.toetsprogramma || r.opvallend;
+  el("supportSection").style.display = hasSupport ? "" : "none";
+  el("pToets").innerHTML = paragraphOrEmpty(r.toetsprogramma).replace(/<\/?p>/g, "");
+  if (!r.toetsprogramma) el("pToets").className = "empty";
+  el("pOpvallend").innerHTML = paragraphOrEmpty(r.opvallend).replace(/<\/?p>/g, "");
+  if (!r.opvallend) el("pOpvallend").className = "empty";
+
+  el("pConnectie").textContent = r.connectieverzoek;
+  el("pConnectieLen").textContent = `${r.connectieverzoek.length} / 300 tekens`;
+  el("pMailOnderwerp").textContent = r.opvolgmail_onderwerp || "(geen onderwerp)";
+  el("pMail").textContent = r.opvolgmail;
+
+  if (r.reminder && r.reminder.trim()) {
+    el("pReminderWrap").innerHTML = `<div class="msg-text">${escapeHtml(r.reminder)}</div>`;
+  } else {
+    el("pReminderWrap").innerHTML = `<div class="msg-empty">Nog geen reminder — deze wordt pas geschreven als stap 4 daar is.</div>`;
+  }
+  document.querySelectorAll(".msg-tab").forEach(t => {
+    const isReminder = t.dataset.msg === "reminder";
+    t.querySelector(".empty-dot")?.remove();
+    if (isReminder && !(r.reminder && r.reminder.trim())) {
+      t.insertAdjacentHTML("beforeend", `<span class="empty-dot" title="leeg"></span>`);
+    }
+  });
+
+  if (r.waarom_dit_bericht && r.waarom_dit_bericht.trim()) {
+    el("pWaarom").innerHTML = `<p>${escapeHtml(r.waarom_dit_bericht)}</p>`;
+  } else {
+    el("pWaarom").innerHTML = `<p class="empty">Nog niet ingevuld door agent 4.</p>`;
+  }
+
+  const twijfelItems = (r.twijfels || "").split("|").map(s => s.trim()).filter(Boolean);
+  if (twijfelItems.length) {
+    el("pTwijfelsWrap").innerHTML =
+      `<h3 style="margin-top:14px">Twijfels</h3>` +
+      twijfelItems.map(t => `<div class="item">${escapeHtml(t)}</div>`).join("");
+  } else {
+    el("pTwijfelsWrap").innerHTML = "";
+  }
+
+  const openerItems = (r.afgevallen_openers || "").split("|").map(s => s.trim()).filter(Boolean);
+  el("pOpenersWrap").style.display = openerItems.length ? "" : "none";
+  el("pOpeners").innerHTML = openerItems.map(o => `<div class="item">${escapeHtml(o)}</div>`).join("");
+  el("pOpenersWrap").open = false;
+
+  // reset message tab to connectieverzoek on record change
+  currentMsgTab = "connectieverzoek";
+  document.querySelectorAll(".msg-tab").forEach(t => t.classList.toggle("active", t.dataset.msg === currentMsgTab));
+  document.querySelectorAll(".msg-body").forEach(b => b.classList.toggle("active", b.dataset.msg === currentMsgTab));
+
+  // restore decision state for this record
+  const d = decisions[r.person_id];
+  el("reactieInput").value = d?.reactie || "";
+  updateDecisionButtons(d?.status || null);
+}
+
+function updateDecisionButtons(status) {
+  el("btnGoed").setAttribute("aria-pressed", status === "goedgekeurd" ? "true" : "false");
+  el("btnAfkeuren").setAttribute("aria-pressed", status === "afgekeurd" ? "true" : "false");
+  el("btnAanpassen").setAttribute("aria-pressed", status === "aanpassen" ? "true" : "false");
+  const labels = { goedgekeurd: "Goedgekeurd", afgekeurd: "Afgekeurd", aanpassen: "Aanpassen gevraagd" };
+  el("decisionState").innerHTML = status ? `<strong>${labels[status]}</strong>` : "Nog geen besluit";
+}
+
+function setDecision(status) {
+  const r = RECORDS[idx];
+  const current = decisions[r.person_id]?.status;
+  const next = current === status ? null : status;
+  decisions[r.person_id] = { status: next, reactie: el("reactieInput").value };
+  updateDecisionButtons(next);
+}
+
+el("btnGoed").addEventListener("click", () => setDecision("goedgekeurd"));
+el("btnAfkeuren").addEventListener("click", () => setDecision("afgekeurd"));
+el("btnAanpassen").addEventListener("click", () => setDecision("aanpassen"));
+el("reactieInput").addEventListener("input", () => {
+  const r = RECORDS[idx];
+  const status = decisions[r.person_id]?.status || null;
+  decisions[r.person_id] = { status, reactie: el("reactieInput").value };
+});
+
+document.querySelectorAll(".msg-tab").forEach(tab => {
+  tab.addEventListener("click", () => {
+    currentMsgTab = tab.dataset.msg;
+    document.querySelectorAll(".msg-tab").forEach(t => t.classList.toggle("active", t === tab));
+    document.querySelectorAll(".msg-body").forEach(b => b.classList.toggle("active", b.dataset.msg === currentMsgTab));
+  });
+});
+
+function goPrev() { if (idx > 0) { idx--; renderRecord(); } }
+function goNext() { if (idx < RECORDS.length - 1) { idx++; renderRecord(); } }
+el("prevBtn").addEventListener("click", goPrev);
+el("nextBtn").addEventListener("click", goNext);
+document.addEventListener("keydown", (e) => {
+  if (e.target.tagName === "TEXTAREA") return;
+  if (e.key === "ArrowLeft") goPrev();
+  if (e.key === "ArrowRight") goNext();
+});
+
+function setWho(who) {
+  try { localStorage.setItem("shift-cockpit-who", who); } catch (e) {}
+  el("whoDante").setAttribute("aria-pressed", who === "dante" ? "true" : "false");
+  el("whoJeroen").setAttribute("aria-pressed", who === "jeroen" ? "true" : "false");
+}
+el("whoDante").addEventListener("click", () => setWho("dante"));
+el("whoJeroen").addEventListener("click", () => setWho("jeroen"));
+try {
+  const savedWho = localStorage.getItem("shift-cockpit-who");
+  if (savedWho) setWho(savedWho);
+} catch (e) {}
+
+renderStatusStrip();
+renderRecord();
+</script>
+</body>
+</html>

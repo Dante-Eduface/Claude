@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Labelstaten op de cursusrij</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&family=Inter:wght@400;450;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#002333; --green-deep:#007b54;
+  --ink-900:#0a2c3b; --ink-700:#2c4a57; --ink-500:#5b7480;
+  --ink-200:#cdd9de; --ink-100:#e7eef0; --ink-50:#f3f7f8; --white:#fff;
+  --danger:#b3261e;
+  --sans:"Inter",ui-sans-serif,system-ui,sans-serif;
+  --display:"League Spartan",var(--sans);
+  --mono:ui-monospace,"SF Mono",Menlo,monospace;
+}
+*{box-sizing:border-box}
+html{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body{margin:0;background:var(--white);color:var(--navy);font-family:var(--sans);font-size:16px;line-height:1.55}
+.wrap{max-width:1120px;margin:0 auto;padding:64px 32px 96px}
+h1{font-family:var(--display);font-size:38px;line-height:1.1;letter-spacing:-.015em;margin:0 0 8px;font-weight:700}
+h2{font-family:var(--display);font-size:22px;line-height:1.2;letter-spacing:-.01em;margin:0 0 16px;font-weight:600}
+.lede{font-size:17px;color:var(--ink-700);margin:0;max-width:68ch}
+section{margin-top:48px}
+
+/* uitspraakblok */
+.statement{background:var(--navy);color:var(--white);border-radius:12px;padding:32px}
+.statement h2{color:var(--white);margin-bottom:12px}
+.statement p{margin:0 0 16px;max-width:68ch;color:rgba(255,255,255,.82)}
+.statement p:last-child{margin-bottom:0}
+.rule{font-family:var(--display);font-size:26px;font-weight:600;line-height:1.25;color:var(--white);margin:0 0 20px;max-width:60ch}
+.derive{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:24px;padding-top:24px;border-top:1px solid rgba(255,255,255,.14)}
+.derive div{color:rgba(255,255,255,.82);font-size:15px}
+.derive b{display:block;color:var(--white);font-family:var(--mono);font-size:13px;font-weight:500;margin-bottom:6px}
+
+/* tabel */
+table{width:100%;border-collapse:collapse;margin-top:8px}
+caption{text-align:left;color:var(--ink-700);font-size:15px;padding-bottom:16px;max-width:68ch}
+th{font-size:13px;font-weight:600;color:var(--ink-700);text-align:left;padding:0 16px 10px 0;border-bottom:1px solid var(--ink-200);vertical-align:bottom}
+td{padding:18px 16px 18px 0;border-bottom:1px solid var(--ink-100);vertical-align:top;font-size:15px}
+th:last-child,td:last-child{padding-right:0}
+tbody tr:last-child td{border-bottom:1px solid var(--ink-200)}
+.sit{font-weight:600;width:15%}
+.lab{width:19%}
+.cond{width:38%;color:var(--ink-700)}
+.klik{width:14%;color:var(--ink-700)}
+.cel{width:14%;color:var(--ink-700)}
+
+/* labels zoals ze in de app renderen */
+.lb{font-size:14px;white-space:nowrap}
+.lb.done{color:var(--green-deep);font-weight:500}
+.lb.link{text-decoration:underline;text-underline-offset:3px}
+.lb.none{color:var(--ink-500);font-style:normal}
+code{font-family:var(--mono);font-size:13px;background:var(--ink-50);padding:1px 5px;border-radius:6px}
+
+ul{margin:0;padding-left:20px;max-width:68ch}
+li{margin-bottom:10px}
+li:last-child{margin-bottom:0}
+li b{font-weight:600}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.note{font-size:15px;color:var(--ink-700);max-width:68ch;margin:0 0 16px}
+@media (max-width:900px){
+  .two,.derive{grid-template-columns:1fr}
+  .wrap{padding:40px 20px 64px}
+  table,thead,tbody,th,td,tr{display:block}
+  thead{display:none}
+  td{border:0;padding:4px 0}
+  tbody tr{border-bottom:1px solid var(--ink-100);padding:16px 0}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Labelstaten op de cursusrij</h1>
+  <p class="lede">Naast de cursusnaam staat alleen een label als de cursus afwijkt van de norm. Vijf staten, één voorwaarde per staat, eerste die past wint.</p>
+
+  <section class="statement">
+    <h2>Begin hier: één gedeelde definitie</h2>
+    <p class="rule">Een inzending wacht zolang de docent hem niet heeft goedgekeurd.</p>
+    <p>Dus ingeleverd door de student, en nog niet afgetekend. Een inzending waarvan de AI de feedback al klaar heeft maar die de docent nog niet heeft bekeken, wacht nog steeds. Dat volgt uit hoe het product werkt: de student ziet pas iets nadat de docent het heeft goedgekeurd.</p>
+    <p>Uit dat ene begrip volgt de hele rij. Daardoor kunnen de cellen elkaar per definitie niet tegenspreken.</p>
+    <div class="derive">
+      <div><b>To grade</b>Aantal wachtende inzendingen in de cursus.</div>
+      <div><b>Oldest waiting</b>De oudste daarvan, gemeten vanaf het moment dat de student inleverde.</div>
+      <div><b>Completed</b>Er wacht niets meer, en er kan niets meer bij komen.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>De vijf staten</h2>
+    <table>
+      <caption>Precedentie van boven naar beneden. Past een rij, dan geldt die en wordt de rest niet meer bekeken.</caption>
+      <thead>
+        <tr>
+          <th class="sit">Situatie</th>
+          <th class="lab">Label</th>
+          <th class="cond">Voorwaarde</th>
+          <th class="klik">Klik</th>
+          <th class="cel">Cellen</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="sit">Gearchiveerd</td>
+          <td class="lab"><span class="lb">Archived</span></td>
+          <td class="cond">De cursus is gearchiveerd. Hoogste voorrang: dan geen enkel ander label, ongeacht wat er in de cursus staat.</td>
+          <td class="klik">Geen</td>
+          <td class="cel">Echte waarden. Niets leegmaken.</td>
+        </tr>
+        <tr>
+          <td class="sit">Setup niet af</td>
+          <td class="lab"><span class="lb link">Setup incomplete →</span></td>
+          <td class="cond">De cursus heeft minstens één opdracht, en minstens één daarvan is nog niet volledig ingericht. Verzin hier geen nieuwe definitie van volledig ingericht: gebruik exact dezelfde conditie die de bestaande actie <code>Complete setup</code> al controleert.</td>
+          <td class="klik">Naar de opdracht die niet af is, met de melding wat er precies mist.</td>
+          <td class="cel">Echte waarden. Er kan tegelijk werk liggen.</td>
+        </tr>
+        <tr>
+          <td class="sit">Nul opdrachten</td>
+          <td class="lab"><span class="lb link">No assignments yet →</span></td>
+          <td class="cond">De cursus bestaat en heeft nul opdrachten. Sluit de vorige staat uit, want zonder opdrachten kan er ook geen onvolledige opdracht zijn.</td>
+          <td class="klik">Naar het aanmaken van een opdracht.</td>
+          <td class="cel">Alle drie <code>–</code>. Er is niets te tellen.</td>
+        </tr>
+        <tr>
+          <td class="sit">Afgerond</td>
+          <td class="lab"><span class="lb done">Completed ✓</span></td>
+          <td class="cond">Alle drie tegelijk: de cursus heeft minstens één opdracht, van elke opdracht ligt de deadline in het verleden, en er wacht geen enkele inzending meer. Nadrukkelijk niet: <code>To grade = 0</code>.</td>
+          <td class="klik">Geen. Er valt niets te doen.</td>
+          <td class="cel"><code>0</code>, <code>–</code>, en de echte datum.</td>
+        </tr>
+        <tr>
+          <td class="sit">Alle overige</td>
+          <td class="lab"><span class="lb none">Geen label</span></td>
+          <td class="cond">De cursus loopt gewoon. Dit is de norm, en de norm krijgt geen naam. In het huidige scherm zou <code>Active</code> op zeven van de acht rijen staan, en een label dat bijna nooit verandert draagt geen informatie.</td>
+          <td class="klik">Niet van toepassing</td>
+          <td class="cel">Echte waarden.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="two">
+    <div>
+      <h2>Randgevallen om te benoemen</h2>
+      <ul>
+        <li><b>Opdracht zonder inzendingen blokkeert het afronden niet.</b> Anders rondt een cursus nooit af zodra één student nooit heeft ingeleverd, en dat is juist het normale geval.</li>
+        <li><b>Een te late inzending zet Afgerond weer uit.</b> Dat is correct, er ligt dan weer werk. Het verschil met een label dat elke dag flikkert is dat dit een uitzondering is en geen ritme.</li>
+        <li><b>Tijdzone van de instelling</b>, niet die van de browser. Anders zien twee collega's een verschillende staat.</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Waarom niet <code>To grade = 0</code></h2>
+      <p class="note">Dat was de voor de hand liggende voorwaarde voor Afgerond, en hij is fout. Nul te beoordelen zegt vandaag niets, want morgen levert er iemand in. Een label dat de volgende dag weer uit gaat is ruis, en een toestand die kan terugflippen kun je geen afrondingsbetekenis geven.</p>
+      <p class="note">Met de strikte voorwaarde kleurt één of twee van de acht rijen groen. Met <code>To grade = 0</code> waren het er drie geweest en werd groen behang.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Groen komt precies één keer voor</h2>
+    <p class="note">Alleen bij Afgerond. Ons design system staat groen op twee plekken toe, en de tweede is letterlijk een bevestigde positieve status in een tool: klaar, goedgekeurd, loopt op schema. Dit is dat geval, en het enige geval op deze rij.</p>
+    <ul>
+      <li>Tekstkleur is <code>green-deep #007b54</code>, niet de felle <code>#00e075</code>. Die heeft als tekst op wit te weinig contrast en werkt alleen als vlak.</li>
+      <li>Het vinkje staat er altijd bij. Naast kleur hoort een signaal dat geen kleur is, anders werkt het niet voor wie kleur slecht onderscheidt.</li>
+      <li>Kleur codeert een toestand, geen mening. Bij de strikte voorwaarde is Afgerond een feit. Bij <code>To grade = 0</code> zou het onze mening zijn dat nul gunstig is, en dat valt onder het verbod op groen omdat een waarde goed uitkomt.</li>
+    </ul>
+  </section>
+
+</div>
+</body>
+</html>

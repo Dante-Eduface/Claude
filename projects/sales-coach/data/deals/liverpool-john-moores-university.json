@@ -1,0 +1,77 @@
+{
+  "slug": "liverpool-john-moores-university",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_aBCvoUdEUMBi9VAU9N5zmIaKrYXYQIDmjoHUiDJ98yW",
+    "naam": "Liverpool John Moores University",
+    "url": "https://app.close.com/lead/lead_aBCvoUdEUMBi9VAU9N5zmIaKrYXYQIDmjoHUiDJ98yW/",
+    "lead_status": "Prospect",
+    "opportunity_id": null,
+    "fase": null,
+    "fase_type": null,
+    "waarde": null,
+    "valuta": "EUR",
+    "confidence": null,
+    "close_date": null,
+    "eigenaar": "Eduface CRM",
+    "crm_note": "",
+    "contacten": [
+      {
+        "naam": "Philip Vickerman",
+        "titel": "Pro-Vice Chancellor (Student Experience)",
+        "email": null,
+        "id": "cont_Cta3Xc7gsGEl81PffZ7NoVJ9Vb1ntE5L0aCTRo7JF2Z"
+      },
+      {
+        "naam": "Track Dinning",
+        "titel": "Education business faculty",
+        "email": null,
+        "id": "cont_6ubkhqbr2wr45yigg2hhuBMv5EFHOMpDx5NVKgPu7va"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_Vp6vmfkrhSEgMxTNzISFm9U1FoxKTwFGeAJHFP5gexD",
+        "soort": "call",
+        "datum": "2026-05-11",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Ik probeerde de PA van hem te bellen.",
+        "transcript_beschikbaar": false,
+        "komend": false
+      }
+    ],
+    "open_taken": [],
+    "laatste_gesprek": "2026-05-11",
+    "volgende_afspraak": null,
+    "aantal_gehad": 1,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

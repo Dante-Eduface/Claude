@@ -1,0 +1,2370 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Eduface Distribution Framework</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',system-ui,sans-serif;background:#0B0F1A;color:#E8EDF5;min-height:100vh;padding:40px 32px}
+.wrap{max-width:1100px;margin:0 auto}
+.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(61,187,107,0.12);border:1px solid rgba(61,187,107,0.25);border-radius:6px;padding:4px 12px;font-size:11px;font-weight:600;color:#3DBB6B;letter-spacing:.08em;text-transform:uppercase;margin-bottom:16px}
+h1{font-size:28px;font-weight:700;margin-bottom:8px;color:#fff;letter-spacing:-.02em}
+.sub{font-size:14px;color:#8B95A1;margin-bottom:40px;line-height:1.6}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.card{background:#141927;border:1.5px solid rgba(255,255,255,.06);border-radius:12px;padding:18px 20px;cursor:pointer;transition:all .18s ease}
+.card:hover{border-color:rgba(255,255,255,.15)}
+.card-hd{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.cid{width:28px;height:28px;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;flex-shrink:0}
+.cname{font-size:12.5px;font-weight:600;color:#CBD3DF;letter-spacing:-.01em}
+.items{display:flex;flex-direction:column;gap:5px;margin-bottom:10px}
+.irow{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.iname{font-size:11.5px;color:#6B7687;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
+.card-meta{display:flex;gap:8px;margin-bottom:10px;flex-wrap:wrap;min-height:18px}
+.foot{display:flex;gap:6px;border-top:1px solid rgba(255,255,255,.05);padding-top:12px;flex-wrap:wrap}
+.tag{font-size:10px;font-weight:600;border-radius:4px;padding:2px 7px}
+.tg{color:#3DBB6B;background:rgba(61,187,107,.1)}
+.ty{color:#F5A623;background:rgba(245,166,35,.1)}
+.tb{color:#4A9EE0;background:rgba(74,158,224,.08);margin-left:auto}
+.tp{color:#9B59B6;background:rgba(155,89,182,.1)}
+.exp-box{border-radius:14px;padding:28px 32px;margin-bottom:24px}
+.exp-hd{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;flex-wrap:wrap;gap:12px}
+.exp-left{display:flex;align-items:center;gap:12px}
+.exp-title{font-size:18px;font-weight:700;color:#fff;letter-spacing:-.02em}
+.exp-sub{font-size:12px;color:#555E6E;margin-top:2px}
+.close-btn{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:6px 14px;font-size:12px;color:#8B95A1;cursor:pointer;font-family:inherit}
+.close-btn:hover{background:rgba(255,255,255,.12)}
+.budget-row{display:flex;align-items:center;gap:10px;background:rgba(61,187,107,.06);border:1px solid rgba(61,187,107,.15);border-radius:8px;padding:10px 14px;margin-bottom:20px;flex-wrap:wrap}
+.budget-row label{font-size:12px;color:#3DBB6B;font-weight:600}
+.budget-input{background:#0B0F1A;border:1px solid rgba(61,187,107,.3);border-radius:6px;padding:5px 10px;font-size:13px;font-weight:600;color:#E8EDF5;width:110px;font-family:inherit;outline:none}
+.budget-input:focus{border-color:#3DBB6B}
+.budget-note{font-size:11px;color:#555E6E;margin-left:auto}
+.iexp{background:#0F1320;border:1px solid rgba(255,255,255,.06);border-radius:10px;padding:20px 22px;margin-bottom:16px}
+.iexp-hd{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px}
+.sbadge{display:inline-flex;align-items:center;gap:5px;border-radius:5px;padding:3px 8px;font-size:10px;font-weight:600;white-space:nowrap}
+.slabel{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}
+.sg{color:#3DBB6B}.sb{color:#4A9EE0}.sv{color:#9B59B6}
+.edit-name{font-size:14px;font-weight:700;color:#fff;letter-spacing:-.01em;background:transparent;border:none;border-bottom:1px dashed rgba(255,255,255,.15);width:100%;outline:none;font-family:inherit;padding:2px 0;margin-bottom:6px}
+.edit-name:focus{border-bottom-color:#4A9EE0}
+.edit-desc{font-size:12.5px;color:#6B7687;line-height:1.6;background:transparent;border:none;border-bottom:1px dashed rgba(255,255,255,.1);width:100%;outline:none;font-family:inherit;resize:none;padding:2px 0;margin-bottom:14px;min-height:36px}
+.edit-desc:focus{color:#9AA5B4;border-bottom-color:#4A9EE0}
+.edit-current{font-size:12.5px;color:#9AA5B4;line-height:1.7;background:rgba(61,187,107,.05);border:1px solid rgba(61,187,107,.15);border-radius:8px;padding:10px 12px;margin-bottom:14px;width:100%;outline:none;font-family:inherit;resize:vertical;min-height:80px}
+.edit-current:focus{border-color:rgba(61,187,107,.4)}
+.steps-wrap{margin-top:4px}
+.step-row{display:flex;align-items:flex-start;gap:8px;margin-bottom:8px}
+.snum{width:20px;height:20px;border-radius:5px;flex-shrink:0;margin-top:2px;background:rgba(74,158,224,.12);border:1px solid rgba(74,158,224,.2);display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;color:#4A9EE0}
+.edit-step{font-size:12.5px;color:#8B95A1;line-height:1.6;background:transparent;border:none;border-bottom:1px dashed rgba(255,255,255,.08);flex:1;outline:none;font-family:inherit;resize:none;min-height:22px;padding:1px 0}
+.edit-step:focus{color:#CBD3DF;border-bottom-color:#4A9EE0}
+.del-btn{background:rgba(232,93,117,.12);border:1px solid rgba(232,93,117,.2);border-radius:5px;width:20px;height:20px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:12px;color:#E85D75;flex-shrink:0;margin-top:2px;line-height:1}
+.del-btn:hover{background:rgba(232,93,117,.25)}
+.add-btn{display:flex;align-items:center;gap:6px;background:rgba(74,158,224,.08);border:1px dashed rgba(74,158,224,.25);border-radius:7px;padding:7px 12px;font-size:12px;color:#4A9EE0;cursor:pointer;font-family:inherit;margin-top:4px;transition:background .15s;width:100%}
+.add-btn:hover{background:rgba(74,158,224,.15)}
+/* Tools section */
+.tools-section{margin-top:24px;border-top:1px solid rgba(255,255,255,.06);padding-top:20px}
+.tools-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:8px}
+.tools-cost-summary{font-size:12px;color:#9B59B6;background:rgba(155,89,182,.1);border:1px solid rgba(155,89,182,.2);border-radius:6px;padding:3px 10px;font-weight:600}
+.tools-grid{display:flex;flex-direction:column;gap:8px;margin-bottom:10px}
+.tool-card{display:flex;align-items:flex-start;gap:12px;background:#141927;border:1.5px solid rgba(255,255,255,.06);border-radius:9px;padding:12px 14px;cursor:pointer;transition:all .15s;position:relative}
+.tool-card.selected{border-color:rgba(155,89,182,.4);background:rgba(155,89,182,.06)}
+.tool-card:hover{border-color:rgba(255,255,255,.12)}
+.tool-check{width:18px;height:18px;border-radius:4px;flex-shrink:0;margin-top:1px;border:1.5px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:11px;transition:all .15s}
+.tool-card.selected .tool-check{background:#9B59B6;border-color:#9B59B6;color:#fff}
+.tool-info{flex:1;min-width:0}
+.tool-name{font-size:12.5px;font-weight:600;color:#CBD3DF;margin-bottom:2px}
+.tool-card.selected .tool-name{color:#fff}
+.tool-desc{font-size:11.5px;color:#555E6E;line-height:1.5}
+.tool-right{display:flex;flex-direction:column;align-items:flex-end;gap:4px;flex-shrink:0}
+.tool-price{font-size:12px;font-weight:700;color:#9B59B6;white-space:nowrap}
+.tool-card.selected .tool-price{color:#B07FD4}
+.tool-note{font-size:10px;color:#3A4152;text-align:right}
+.tool-edit-name{font-size:12.5px;font-weight:600;color:#CBD3DF;background:transparent;border:none;border-bottom:1px dashed rgba(255,255,255,.1);width:100%;outline:none;font-family:inherit;padding:1px 0;margin-bottom:2px;cursor:text}
+.tool-edit-name:focus{border-bottom-color:#9B59B6;color:#fff}
+.tool-card.selected .tool-edit-name{color:#fff}
+.tool-edit-price{background:transparent;border:none;border-bottom:1px dashed rgba(155,89,182,.25);width:52px;outline:none;font-family:inherit;font-size:12px;font-weight:700;color:#9B59B6;padding:1px 0;text-align:right;cursor:text}
+.tool-edit-price:focus{border-bottom-color:#9B59B6}
+.tool-del{position:absolute;top:6px;right:6px;background:none;border:none;color:#2A2F3A;cursor:pointer;font-size:14px;line-height:1;display:none}
+.tool-card:hover .tool-del{display:block;color:#555E6E}
+.tool-del:hover{color:#E85D75!important}
+.add-tool-btn{display:flex;align-items:center;gap:6px;background:rgba(155,89,182,.08);border:1px dashed rgba(155,89,182,.25);border-radius:7px;padding:7px 12px;font-size:12px;color:#9B59B6;cursor:pointer;font-family:inherit;margin-top:6px;transition:background .15s;width:100%}
+.add-tool-btn:hover{background:rgba(155,89,182,.15)}
+/* Legend */
+.legend{margin-top:28px;padding:14px 18px;background:rgba(61,187,107,.05);border:1px solid rgba(61,187,107,.12);border-radius:10px;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.li{display:flex;align-items:center;gap:5px;font-size:11px}
+/* Total bar */
+.total-bar{margin-top:32px;background:#141927;border:1.5px solid rgba(61,187,107,.25);border-radius:14px;padding:28px 32px}
+.total-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;margin-bottom:20px}
+@media(max-width:700px){.total-grid{grid-template-columns:1fr}}
+.total-block{background:#0F1320;border-radius:10px;padding:16px 18px}
+.total-block-label{font-size:11px;color:#555E6E;text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:8px}
+.total-block-amount{font-size:26px;font-weight:700;letter-spacing:-.02em}
+.total-block-sub{font-size:11px;color:#555E6E;margin-top:4px}
+.total-pills{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px;padding-top:16px;border-top:1px solid rgba(255,255,255,.05)}
+.pill{font-size:11px;border-radius:20px;padding:3px 10px;font-weight:600}
+.total-footer-actions{display:flex;justify-content:flex-end;margin-top:16px}
+.reset-btn{background:transparent;border:1px solid rgba(232,93,117,.3);border-radius:7px;padding:6px 14px;font-size:11px;color:#E85D75;cursor:pointer;font-family:inherit}
+.reset-btn:hover{background:rgba(232,93,117,.1)}
+@media(max-width:600px){body{padding:20px 16px}.grid{grid-template-columns:1fr}.exp-box{padding:20px 16px}.total-bar{padding:20px 16px}}
+.toolbar{display:flex;align-items:center;gap:10px;margin-bottom:28px;flex-wrap:wrap}
+.toolbar-btn{display:flex;align-items:center;gap:7px;border:none;border-radius:8px;padding:9px 16px;font-size:12px;font-weight:600;cursor:pointer;font-family:inherit;transition:all .15s}
+.btn-save{background:#3DBB6B;color:#fff}.btn-save:hover{background:#35a85f}
+.btn-load{background:rgba(74,158,224,.15);color:#4A9EE0;border:1px solid rgba(74,158,224,.3)}.btn-load:hover{background:rgba(74,158,224,.25)}
+.btn-copy{background:rgba(155,89,182,.12);color:#9B59B6;border:1px solid rgba(155,89,182,.25)}.btn-copy:hover{background:rgba(155,89,182,.22)}
+.btn-cloud{background:#3DBB6B;color:#fff}.btn-cloud:hover{background:#35a85f}
+.btn-cloud.saving{background:#F5A623;cursor:default}
+.btn-cloud.saved{background:#2a9d5c}
+.btn-link{background:rgba(61,187,107,.12);color:#3DBB6B;border:1px solid rgba(61,187,107,.3)}.btn-link:hover{background:rgba(61,187,107,.22)}
+.btn-refresh{background:rgba(74,158,224,.12);color:#4A9EE0;border:1px solid rgba(74,158,224,.25)}.btn-refresh:hover{background:rgba(74,158,224,.22)}
+.autosave-indicator{margin-left:auto;font-size:11px;color:#3A4152;display:flex;align-items:center;gap:5px}
+.autosave-dot{width:6px;height:6px;border-radius:50%;background:#3A4152;transition:background .3s}
+.autosave-dot.saved{background:#3DBB6B}
+#toast{position:fixed;bottom:24px;right:24px;background:#1E2535;border:1px solid rgba(61,187,107,.3);color:#3DBB6B;padding:11px 18px;border-radius:10px;font-size:12px;font-weight:600;z-index:9999;opacity:0;transition:opacity .25s;pointer-events:none;box-shadow:0 4px 20px rgba(0,0,0,.4)}
+
+/* ── Task rows ── */
+.task-row{display:flex;align-items:flex-start;gap:8px;margin-bottom:7px;padding:8px 10px;border-radius:7px;background:rgba(255,255,255,.02);transition:background .15s}
+.task-row:hover{background:rgba(255,255,255,.04)}
+.task-row.task-klaar{opacity:.38}
+.task-bullet{color:#4A9EE0;font-size:16px;line-height:1;flex-shrink:0;margin-top:3px;user-select:none}
+.task-text{font-size:12.5px;color:#8B95A1;line-height:1.6;background:transparent;border:none;border-bottom:1px dashed rgba(255,255,255,.08);flex:1;outline:none;font-family:inherit;resize:none;min-height:22px;padding:1px 0}
+.task-text:focus{color:#CBD3DF;border-bottom-color:#4A9EE0}
+.task-row.task-klaar .task-text{color:#3A4152}
+.task-meta{display:flex;align-items:center;gap:5px;flex-shrink:0;margin-top:2px;flex-wrap:wrap}
+.task-sbadge{font-size:9.5px;font-weight:700;border-radius:4px;padding:2px 6px;cursor:pointer;white-space:nowrap;transition:opacity .15s;user-select:none}
+.task-sbadge:hover{opacity:.8}
+.task-owner{width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;cursor:pointer;flex-shrink:0;transition:opacity .15s;user-select:none}
+.task-owner:hover{opacity:.75}
+/* ── Item header in expanded view ── */
+.item-status-row{display:flex;align-items:center;gap:8px;margin-bottom:10px;flex-wrap:wrap}
+.item-calc-status{font-size:10px;font-weight:700;border-radius:5px;padding:3px 8px;display:flex;align-items:center;gap:4px}
+.item-owner-chip{font-size:10px;font-weight:600;border-radius:5px;padding:3px 8px}
+/* ── Category dots in card ── */
+.cat-status-dots{display:flex;gap:4px;align-items:center;margin-bottom:10px;min-height:10px}
+.cat-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.cat-status-label{font-size:10px;font-weight:600;margin-left:4px}
+/* ── Add task button ── */
+.add-task-btn{display:flex;align-items:center;gap:6px;background:rgba(74,158,224,.08);border:1px dashed rgba(74,158,224,.25);border-radius:7px;padding:7px 12px;font-size:12px;color:#4A9EE0;cursor:pointer;font-family:inherit;margin-top:6px;transition:background .15s;width:100%}
+.add-task-btn:hover{background:rgba(74,158,224,.15)}
+
+.task-select{font-family:'Inter',system-ui,sans-serif;font-size:10px;font-weight:700;border-radius:5px;padding:2px 6px;cursor:pointer;outline:none;border:1px solid;transition:opacity .15s;-webkit-appearance:none;appearance:none;padding-right:14px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='5' viewBox='0 0 8 5'%3E%3Cpath d='M0 0l4 5 4-5z' fill='%23888'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 4px center}
+.task-select:hover{opacity:.85}
+.task-owner-sel{width:62px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="badge">Marketing &amp; Pipeline Generatie</div>
+  <h1>Eduface Distribution Framework</h1>
+  <p class="sub">13 categorie&euml;n &mdash; klik om te openen &bull; tekst is direct bewerkbaar &bull; vink tools aan om ze mee te tellen in het budget</p>
+
+  <div id="toast"></div>
+  <div id="exp"></div>
+  <div class="grid" id="grid"></div>
+  <div class="legend">
+    <div class="li"><div class="dot" style="background:#3DBB6B"></div><span style="color:#3DBB6B">Actief</span></div>
+    <div class="li"><div class="dot" style="background:#F5A623"></div><span style="color:#F5A623">In ontwikkeling</span></div>
+    <div class="li"><div class="dot" style="background:#555E6E"></div><span style="color:#8B95A1">Nog niet gestart</span></div>
+    <div class="li"><div style="width:10px;height:10px;border-radius:3px;background:#9B59B6"></div><span style="color:#9B59B6">Tool geselecteerd</span></div>
+  </div>
+  <div class="total-bar" id="total-bar">
+    <div class="total-grid">
+      <div class="total-block">
+        <div class="total-block-label">Handmatig budget</div>
+        <div class="total-block-amount" id="t-manual" style="color:#3DBB6B">€0</div>
+        <div class="total-block-sub">Ingevoerd per categorie</div>
+      </div>
+      <div class="total-block">
+        <div class="total-block-label">Geselecteerde tools</div>
+        <div class="total-block-amount" id="t-tools" style="color:#9B59B6">€0</div>
+        <div class="total-block-sub">Maandelijkse abonnementen</div>
+      </div>
+      <div class="total-block" style="border:1px solid rgba(61,187,107,.2)">
+        <div class="total-block-label">Totaal per maand</div>
+        <div class="total-block-amount" id="t-total" style="color:#fff">€0</div>
+        <div class="total-block-sub">Budget + tools gecombineerd</div>
+      </div>
+    </div>
+    <div class="total-pills" id="total-pills"></div>
+    <div class="total-footer-actions">
+      <button class="reset-btn" onclick="resetData()" title="Verwijdert alle aanpassingen en laadt de originele inhoud">&#8635; Terugzetten naar origineel</button>
+    </div>
+  </div>
+
+  <div style="margin-top:20px;background:#141927;border:1.5px solid rgba(255,255,255,.06);border-radius:14px;padding:22px 28px">
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px">
+      <div class="autosave-dot" id="save-dot" style="width:8px;height:8px;flex-shrink:0"></div>
+      <span id="save-label" style="font-size:12px;color:#555E6E">Nog niet in de cloud opgeslagen — klik op de knop hieronder</span>
+    </div>
+    <div id="cloud-info-bar" style="display:none;margin-bottom:14px;padding:10px 14px;background:rgba(61,187,107,.06);border:1px solid rgba(61,187,107,.18);border-radius:8px;font-size:11.5px;color:#8B95A1;line-height:1.6">
+      <strong style="color:#3DBB6B">&#9729; Live samenwerking actief.</strong>
+      Stuur de deellink naar specialisten. Zij laden de laatste versie zodra ze de link openen. Wijzigingen worden automatisch opgeslagen.
+      <span id="cloud-lastupdate" style="display:block;margin-top:3px;color:#3A4152"></span>
+    </div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <button class="toolbar-btn btn-cloud" id="btn-cloud" onclick="cloudSave(true)">
+        <span>&#9729;</span> Verbind met cloud
+      </button>
+      <button class="toolbar-btn btn-link" id="btn-link" onclick="copyShareLink()" style="display:none">
+        <span>&#128279;</span> Kopieer deellink
+      </button>
+      <button class="toolbar-btn btn-refresh" onclick="cloudRefresh()">
+        <span>&#8635;</span> Verversen
+      </button>
+      <button class="toolbar-btn btn-load" onclick="importData()">
+        <span>&#128194;</span> Lokaal bestand laden
+      </button>
+      <button class="toolbar-btn" style="background:rgba(74,158,224,.12);color:#4A9EE0;border:1px solid rgba(74,158,224,.25)" onclick="exportData()">
+        <span>&#128427;</span> Downloaden
+      </button>
+    </div>
+  </div>
+</div>
+<script>
+const STATUS={
+  "actief":{label:"Actief",bg:"rgba(61,187,107,0.15)",color:"#3DBB6B",dot:"#3DBB6B"},
+  "in ontwikkeling":{label:"In ontwikkeling",bg:"rgba(245,166,35,0.15)",color:"#F5A623",dot:"#F5A623"},
+  "nog niet gestart":{label:"Nog niet gestart",bg:"rgba(139,149,161,0.12)",color:"#8B95A1",dot:"#555E6E"}
+};
+const TS_ORDER=['eenmalig','wekelijks','maandelijks','open','overleggen','klaar'];
+const TS={
+  eenmalig:  {label:'Eenmalig',    color:'#F5A623',bg:'rgba(245,166,35,.18)'},
+  wekelijks: {label:'Wekelijks',   color:'#4A9EE0',bg:'rgba(74,158,224,.18)'},
+  maandelijks:{label:'Maandelijks',color:'#9B59B6',bg:'rgba(155,89,182,.18)'},
+  open:      {label:'Open',        color:'#8B95A1',bg:'rgba(139,149,161,.15)'},
+  overleggen:{label:'Overleggen',  color:'#E67E22',bg:'rgba(230,126,34,.18)'},
+  klaar:     {label:'Klaar',       color:'#4A5060',bg:'rgba(74,80,96,.18)'},
+};
+const OW={
+  null:  {label:'–', color:'#555E6E',bg:'rgba(255,255,255,.06)'},
+  jeroen:{label:'J', color:'#4A9EE0',bg:'rgba(74,158,224,.2)'},
+  dante: {label:'D', color:'#E67E22',bg:'rgba(230,126,34,.2)'},
+  samen: {label:'S', color:'#3DBB6B',bg:'rgba(61,187,107,.2)'},
+};
+const OW_CYCLE=[null,'jeroen','dante','samen'];
+const TOOLS = {
+  "A": [
+    {
+      "name": "Ahrefs Lite",
+      "desc": "Keyword research, backlink analyse, content gap en technische SEO audit",
+      "price": 99,
+      "note": "Meest complete SEO toolset"
+    },
+    {
+      "name": "Screaming Frog SEO Spider",
+      "desc": "Technische SEO crawl: broken links, redirects, missing meta tags en sitemap validatie",
+      "price": 13,
+      "note": "Jaarabonnement ~£159/jr"
+    },
+    {
+      "name": "Google Search Console",
+      "desc": "Indexatiestatus, zoekterm impressies en crawl errors rechtstreeks van Google",
+      "price": 0,
+      "note": "Gratis"
+    }
+  ],
+  "B": [
+    {
+      "name": "LinkedIn Sales Navigator Core",
+      "desc": "ICP targeting op functietitel en instelling, account alerts en CRM-sync",
+      "price": 99,
+      "note": "Per gebruiker per maand"
+    },
+    {
+      "name": "Lemlist Sales Engagement",
+      "desc": "LinkedIn én email outreach sequences gecombineerd in één flow (al actief)",
+      "price": 99,
+      "note": "Per gebruiker per maand"
+    },
+    {
+      "name": "Clay Growth",
+      "desc": "Prospect enrichment, ICP kwalificatie en gepersonaliseerde data per instelling (al actief)",
+      "price": 149,
+      "note": "Growth plan"
+    },
+    {
+      "name": "Instantly Growth",
+      "desc": "Email warming, deliverability monitoring en sending account rotatie",
+      "price": 37,
+      "note": "Aanvullend op Lemlist voor bulk email"
+    }
+  ],
+  "C": [
+    {
+      "name": "Taplio",
+      "desc": "LinkedIn-specifieke scheduling, AI contentgeneratie, carrousel maker en post analytics",
+      "price": 39,
+      "note": "Sterkste LinkedIn-only tool"
+    },
+    {
+      "name": "Shield Analytics",
+      "desc": "Diepgaande analytics voor Jeroen en Dante hun LinkedIn profielen en post performance",
+      "price": 25,
+      "note": "Per profiel per maand"
+    },
+    {
+      "name": "Buffer Team",
+      "desc": "Multi-kanaal scheduling voor LinkedIn company page, planning en teamgoedkeuring (zoals Jeroen noemde)",
+      "price": 24,
+      "note": "Team plan ~$12/kanaal, 2 kanalen"
+    },
+    {
+      "name": "Canva Pro",
+      "desc": "Carrousels, covers, document posts en visuele templates voor consistent LinkedIn design",
+      "price": 15,
+      "note": "Per gebruiker per maand"
+    }
+  ],
+  "D": [
+    {
+      "name": "LinkedIn Campaign Manager",
+      "desc": "LinkedIn Ads beheer: Sponsored Content, Conversation Ads en retargeting",
+      "price": 0,
+      "note": "Gratis — advertentiebudget is apart"
+    },
+    {
+      "name": "Meta Ads Manager",
+      "desc": "Meta campagne beheer voor lead gen forms, lookalike audiences en retargeting",
+      "price": 0,
+      "note": "Gratis — advertentiebudget is apart"
+    },
+    {
+      "name": "Supermetrics Starter",
+      "desc": "Ads rapportage vanuit LinkedIn, Meta en Google Ads gecombineerd in Google Sheets of Looker Studio",
+      "price": 69,
+      "note": "Starter plan, 1 datasource per platform"
+    },
+    {
+      "name": "Madgicx",
+      "desc": "AI-gestuurde Meta Ads optimalisatie, audience clustering en creatieve rotatie automatisering",
+      "price": 49,
+      "note": "Starter plan"
+    }
+  ],
+  "E": [
+    {
+      "name": "Canva Pro",
+      "desc": "Whitepaper layout, infographics, case study design en ROI calculator visuals (al onder C)",
+      "price": 0,
+      "note": "Al betaald onder categorie C"
+    },
+    {
+      "name": "Outgrow Freelancer",
+      "desc": "Interactieve ROI calculator en lead capture tool die direct aan het CRM koppelt",
+      "price": 55,
+      "note": "Freelancer plan met 3 calculators"
+    },
+    {
+      "name": "Notion Plus",
+      "desc": "Content kalender, schrijfomgeving voor blogs en whitepapers, en teamdocumentatie",
+      "price": 10,
+      "note": "Per gebruiker per maand"
+    }
+  ],
+  "F": [
+    {
+      "name": "Luma Pro",
+      "desc": "Webinar registratiepagina's, event management, herinneringsmails en attendance tracking",
+      "price": 19,
+      "note": "Pro plan"
+    },
+    {
+      "name": "Riverside.fm Pro",
+      "desc": "Hoge kwaliteit remote video-opname voor webinar recordings en klant story interviews",
+      "price": 24,
+      "note": "Pro plan met onbeperkte opnames"
+    },
+    {
+      "name": "Descript Pro",
+      "desc": "Video en audio post-productie met AI transcriptie, captions en clip export",
+      "price": 24,
+      "note": "Creator plan"
+    },
+    {
+      "name": "StreamYard Pro",
+      "desc": "Live webinar hosting en simultaan streamen naar LinkedIn Live en YouTube",
+      "price": 49,
+      "note": "Pro plan, onbeperkte sessies"
+    }
+  ],
+  "G": [
+    {
+      "name": "Prowly Starter",
+      "desc": "PR outreach platform met media contact database, persbericht distributie en coverage tracking",
+      "price": 258,
+      "note": "Starter plan — overweeg pas na eerste media aandacht"
+    },
+    {
+      "name": "Connectively (HARO)",
+      "desc": "Journalist pitch platform: reageer op media vragen van THE, Wonkhe en andere sector media",
+      "price": 0,
+      "note": "Gratis basisversie"
+    },
+    {
+      "name": "Mention Solo",
+      "desc": "Real-time monitoring van Eduface brand mentions in media, blogs en social media",
+      "price": 41,
+      "note": "Solo plan, 3 alerts"
+    }
+  ],
+  "H": [
+    {
+      "name": "Typeform Basic",
+      "desc": "Partner intake formulieren, referral aanvraag flows en consultant onboarding surveys",
+      "price": 29,
+      "note": "Basic plan met 10 vragen per form"
+    },
+    {
+      "name": "Close CRM",
+      "desc": "Partner tracking en referral deal management via custom pipelines (al actief)",
+      "price": 0,
+      "note": "Al betaald als hoofd-CRM"
+    },
+    {
+      "name": "PartnerStack Growth",
+      "desc": "Volledig partner en referral programma management met uitbetalingen en tracking",
+      "price": 500,
+      "note": "Overweeg pas bij 10+ actieve partners — hoog instapbedrag"
+    }
+  ],
+  "I": [
+    {
+      "name": "Mixpanel Starter",
+      "desc": "Product analytics, gebruikersgedrag tracking, funnel analyse en retention cohorts",
+      "price": 0,
+      "note": "Gratis tot 20M events per maand"
+    },
+    {
+      "name": "Hotjar Plus",
+      "desc": "Session recordings, heatmaps en form analytics om dropoff in de onboarding te identificeren",
+      "price": 39,
+      "note": "Plus plan, onbeperkte heatmaps"
+    },
+    {
+      "name": "Intercom Essential",
+      "desc": "In-app onboarding berichten, triggered nudges en live chat support voor docenten",
+      "price": 39,
+      "note": "Essential plan voor kleine teams"
+    },
+    {
+      "name": "Segment Free",
+      "desc": "Unified customer data platform dat sign-up events naar alle andere tools doorstuurt",
+      "price": 0,
+      "note": "Gratis tot 1.000 maandelijkse users"
+    }
+  ],
+  "J": [
+    {
+      "name": "ActiveCampaign Plus",
+      "desc": "E-mail automation, behavioral flows en lifecycle nurture voor alle lead segmenten (al actief)",
+      "price": 49,
+      "note": "Plus plan, tot 1.000 contacten"
+    },
+    {
+      "name": "Lemlist",
+      "desc": "Outbound email sequences en post-webinar follow-up (al actief, ook onder categorie B)",
+      "price": 0,
+      "note": "Al betaald onder categorie B"
+    },
+    {
+      "name": "Beehiiv Scale",
+      "desc": "Dedicated newsletter platform met groeitools, referral mechanisme en diepgaande analytics",
+      "price": 49,
+      "note": "Scale plan, onbeperkt abonnees"
+    }
+  ],
+  "K": [
+    {
+      "name": "Senja Growth",
+      "desc": "Geautomatiseerd testimonials en reviews verzamelen via email, embedding en wall of love",
+      "price": 29,
+      "note": "Growth plan met video testimonials"
+    },
+    {
+      "name": "G2 Free Listing",
+      "desc": "Profiel aanmaken en reviews verzamelen op G2 — het meest gezaghebbende B2B review platform",
+      "price": 0,
+      "note": "Gratis basis listing"
+    },
+    {
+      "name": "Capterra Free Listing",
+      "desc": "Profiel op Capterra en GetApp, actief gebruikt door procurement teams van universiteiten",
+      "price": 0,
+      "note": "Gratis basis listing"
+    }
+  ],
+  "L": [
+    {
+      "name": "ReferralHero Starter",
+      "desc": "Referral programma met tracking, beloningsbeheer en automatische uitbetalingen",
+      "price": 49,
+      "note": "Starter plan tot 1.000 deelnemers"
+    },
+    {
+      "name": "Circle Professional",
+      "desc": "Online community platform voor klanten en ambassadeurs met events, posts en DMs",
+      "price": 89,
+      "note": "Professional plan"
+    },
+    {
+      "name": "Luma Pro",
+      "desc": "Community events en meetup beheer (al betaald onder categorie F)",
+      "price": 0,
+      "note": "Al betaald onder categorie F"
+    }
+  ],
+  "M": [
+    {
+      "name": "Riverside.fm Pro",
+      "desc": "Remote opname voor podcast interviews en YouTube klant stories (al betaald onder F)",
+      "price": 0,
+      "note": "Al betaald onder categorie F"
+    },
+    {
+      "name": "Descript Pro",
+      "desc": "Video en audio editing met AI transcriptie voor YouTube en podcast (al betaald onder F)",
+      "price": 0,
+      "note": "Al betaald onder categorie F"
+    },
+    {
+      "name": "Buzzsprout Unlimited",
+      "desc": "Podcast hosting en automatische distributie naar Spotify, Apple Podcasts en alle andere platforms",
+      "price": 18,
+      "note": "Unlimited plan, 6 uur/maand upload"
+    },
+    {
+      "name": "Opus Clip Pro",
+      "desc": "AI video clipping: haalt automatisch de beste 60 seconden uit lange videos voor LinkedIn en YouTube Shorts",
+      "price": 15,
+      "note": "Pro plan, 200 credits/maand"
+    }
+  ]
+};
+
+const CATEGORIES=[
+  {
+    id: "A",
+    label: "Search & AI Discoverability",
+    color: "#3DBB6B",
+    items: [
+      {
+        name: "SEO",
+        desc: "On-page, technisch en linkbuilding gericht op HE assessment zoektermen",
+        status: "actief",
+        strategy: {
+          current: "Elke maandag worden 3 blogs gepubliceerd plus 1 langer thought piece dat dieper ingaat op een specifiek onderwerp. Blogonderwerpen worden geselecteerd op basis van de GEO analyse tool: we kijken welke bestaande blogs gebruikt worden om AI prompts te beantwoorden en schrijven vervolgens betere, uitgebreidere versies van diezelfde blogs. Elke pagina op de website is geoptimaliseerd zodat AI tools de content goed kunnen uitlezen en de pagina goed vindbaar is in zoekmachines.",
+          next: [
+            "Interne linkstructuur systematisch verbeteren zodat blogposts elkaar versterken en link equity goed door de site vloeit",
+            "Technische SEO monitoring opzetten: Core Web Vitals, crawl errors en indexatiestatus wekelijks bijhouden",
+            "Content clusters bouwen rondom pillar pages per hoofdthema (assessment feedback, AI in HE, turnaround time) met alle blogs hieraan gekoppeld",
+            "Schema markup uitbreiden op blogposts en productpaginas voor betere rich snippets in zoekresultaten",
+            "Linkbuilding strategie starten via gastbijdragen in HE publicaties en vermeldingen in sector onderzoek",
+            "Zoekwoord mapping per pagina bijhouden zodat geen kannibalisme ontstaat tussen blogs onderling",
+          ]
+        }
+      },
+      {
+        name: "GEO / AEO",
+        desc: "Zichtbaarheid in ChatGPT, Perplexity, Gemini en Claude wanneer decision-makers zoeken naar AI feedback tools",
+        status: "actief",
+        strategy: {
+          current: "We gebruiken een GEO analyse tool om bij te houden welke blogs en paginas worden gebruikt als bronnen wanneer AI tools antwoord geven op prompts over assessment, feedback en AI in het onderwijs. Op basis van deze analyse schrijven we content die specifiek bedoeld is om door AI tools geciteerd te worden. Elke website pagina is zo ingericht dat AI crawlers de structuur goed kunnen interpreteren.",
+          next: [
+            "FAQ secties toevoegen aan strategische paginas zodat AI tools exact geformuleerde antwoorden kunnen overnemen",
+            "Brand entity building: zorgen dat Eduface consistent wordt vermeld in combinatie met de juiste beschrijvende termen in externe bronnen en directories zodat AI modellen Eduface herkennen als gevestigde entiteit",
+            "Monitoring uitbreiden: wekelijks handmatig testen in ChatGPT, Perplexity, Claude en Gemini op 10-15 target prompts om positie en bronvermelding bij te houden",
+            "Quotes en citeerbare statistieken inbouwen in blogcontent zodat AI tools concrete feiten van Eduface kunnen overnemen",
+            "Samenwerken met sector media en onderzoekspublicaties zodat externe bronnen Eduface noemen, wat indirect de kans vergroot dat AI tools Eduface als gezaghebbende bron behandelen",
+          ]
+        }
+      },
+      {
+        name: "SEA",
+        desc: "Google Ads op branded en high-intent non-branded zoektermen",
+        status: "actief",
+        strategy: {
+          current: "Google zoekcampagnes zijn actief en worden gebruikt om te leren welke zoekwoorden goed converteren. Op dit moment behalen we een conversiepercentage van 45% op alle kliks naar een gratis account op de website. De kosten per nieuwe sign-up liggen rond 1,30 euro. Sign-ups zijn voornamelijk studenten en docenten aan universiteiten.",
+          next: [
+            "Campagnestructuur splitsen: aparte campagnes voor studenten versus docenten omdat de intent en het conversiemoment fundamenteel anders zijn",
+            "UK HE specifieke campagne opzetten met zoektermen gericht op DVCs en PVCs in plaats van alleen end-users, om institutionele decision-makers te bereiken naast individuele gebruikers",
+            "Remarketing campagne inrichten voor website bezoekers die niet converteren, met een gerichte boodschap afhankelijk van welke pagina ze bezochten",
+            "Branded campagne toevoegen om te voorkomen dat concurrenten op de Eduface merknaam adverteren en om de positie in branded zoekopdrachten te beschermen",
+            "Negatieve zoekwoorden lijst uitbreiden op basis van zoekterm rapporten om irrelevante kliks te verminderen en de cost per sign-up verder te verlagen",
+            "Conversion value bijhouden per sign-up type: een docent die zich aanmeldt heeft significant meer waarde dan een student, dit onderscheid moet doorklinken in de biedstrategie",
+          ]
+        }
+      },
+    ]
+  },
+  {
+    id: "B",
+    label: "Outbound Prospecting",
+    color: "#4A9EE0",
+    items: [
+      {
+        name: "LinkedIn outreach via Lemlist",
+        desc: "Gepersonaliseerde connectieverzoeken en follow-up naar Senior Learning Technologists en Learning Designers als primair ICP",
+        status: "actief",
+        strategy: {
+          current: "Via Lemlist worden dagelijks 20 LinkedIn connectieverzoeken verstuurd. We hebben geleerd dat DVCs en PVCs te hoog in de organisatie zitten voor een vlotte eerste reactie: er zijn er minder van, de drempel om te reageren op een onbekend bedrijf is hoog en ze delegeren dit soort gesprekken snel weg. De focus is verschoven naar Senior Learning Technologists en Learning Designers. Deze mensen zijn sneller geïnteresseerd, zitten dichter op de dagelijkse pijn van feedback en assessment, en kunnen effectief functioneren als champion door de economic buyer intern erbij te halen zodra ze overtuigd zijn.",
+          next: [
+            "Sales Navigator ICP filter bijwerken: primair targeten op Senior Learning Technologist, Learning Designer, Learning Technology Manager, Head of Learning Technology en vergelijkbare titels. DVCs en PVCs blijven in de mix maar als secundair target, te bereiken via de champion",
+            "Connection request notes personaliseren per instelling op NSS Assessment & Feedback score: de ontvanger herkent direct dat je je huiswerk hebt gedaan en de boodschap is relevant voor hun specifieke situatie",
+            "Post-acceptatie sequence bouwen: na acceptatie automatisch een follow-up bericht sturen met een concrete waardepropositie en laagdrempelige uitnodiging voor een 20 minuten gesprek, geen verkooppitch",
+            "LinkedIn profiel van Jeroen en Dante optimaliseren als conversiepagina: duidelijke Eduface positionering in de headline, Bath Spa resultaten zichtbaar in de featured sectie, social proof voor iemand die net een connectieverzoek heeft geaccepteerd",
+            "A/B testen op connection request notes: korte nieuwsgierigheidshook versus directe NSS-referentie versus resultaat van een vergelijkbare instelling noemen. Per variant minimaal 50 verzendingen voor statistisch betrouwbare data",
+            "Reply rate, acceptatiepercentage en geboekte meetings per campagne wekelijks bijhouden in een apart tracking sheet zodat je altijd weet welke variant het beste werkt en snel kunt bijsturen",
+            "Champion educatie protocol inrichten: zodra een Learning Technologist geïnteresseerd is, hen actief voorzien van het materiaal dat ze nodig hebben om intern bij de economic buyer aan tafel te komen, cost justification document, NSS benchmark data, Bath Spa case study",
+          ]
+        }
+      },
+      {
+        name: "Email outreach via Lemlist",
+        desc: "Multi-step email sequences gepersonaliseerd op NSS score, instelling en functietitel, parallel aan LinkedIn",
+        status: "actief",
+        strategy: {
+          current: "Via Lemlist worden dagelijks follow-up mails verstuurd naar prospects, op dit moment naar ongeveer 20 mensen per dag. De personalisatie is gebaseerd op de NSS Assessment & Feedback score van de instelling. LinkedIn en email worden parallel ingezet maar nog niet als gecoördineerde multi-channel sequentie waarbij elk kanaal op het juiste moment in de sequence wordt ingezet.",
+          next: [
+            "Multi-channel sequentie bouwen waarbij LinkedIn en email bewust op elkaar aansluiten: LinkedIn connectieverzoek op dag 1, email follow-up op dag 4 als referentie aan het LinkedIn contact, second LinkedIn DM op dag 8, tweede email op dag 12. Elk contactmoment versterkt het vorige",
+            "Aparte sequences bouwen per ICP segment: Learning Technologist en Learning Designer (boodschap gericht op pedagogische waarde, tijdsbesparing en feedback kwaliteit) versus DVC en PVC (boodschap gericht op NSS scores, accreditatierisico en institutionele reputatie)",
+            "Aparte sequences voor UK versus NL: toon en directheid verschilt wezenlijk. UK sequences formeler van toon, referentie aan NSS en Jisc framework als vertrouwenshook. NL sequences iets directer, referentie aan SURF en bekende Nederlandse instellingen",
+            "Subjectlines systematisch A/B testen per segment: NSS score in de subjectline versus omschrijving van het pijnpunt versus curiosity hook. Per variant minimaal 100 verzendingen voor betrouwbare data",
+            "Social proof inbouwen in stap 3 van elke sequence: een concrete quote of meetbaar resultaat van Bath Spa of De Haagse Hogeschool. Niet generiek maar specifiek op het pijnpunt van de ontvangende instelling",
+            "Timing optimaliseren per markt: in UK HE werken dinsdag en woensdag ochtend het beste voor open rates. Vermijd examenperiodes en academische vakanties want Learning Technologists zijn dan overbelast en reageren niet",
+            "Lemlist deliverability actief bewaken: domein reputatie, spam score en bounce rate wekelijks checken. Bij bounce rate boven 3% de lijst opschonen voordat je doorgaat met verzenden",
+          ]
+        }
+      },
+      {
+        name: "Cold calling",
+        desc: "Warm telefonisch contact als verdiepingsstap na eerdere LinkedIn of email interactie, niet als koud kanaal",
+        status: "in ontwikkeling",
+        strategy: {
+          current: "Cold calling wordt af en toe ingezet maar levert weinig resultaat. In de UK nemen mensen de telefoon zelden op voor onbekende nummers, zeker niet op een buitenlands nummer. In Nederland is bellen in B2B context iets gebruikelijker maar ook hier werkt het aanzienlijk beter als er al eerder contact is geweest via LinkedIn of email en de naam Eduface herkenbaar is.",
+          next: [
+            "Cold calling definitief verschuiven van een koud kanaal naar een warme verdiepingsstap: alleen bellen na minimaal twee eerdere contactmomenten via LinkedIn of email waar de prospect heeft gereageerd of geklikt. Nooit koud bellen",
+            "Voicemail script voorbereiden voor als iemand niet opneemt: maximaal 25 seconden, persoonlijk, referentie aan eerder contact, één concrete reden om terug te bellen en een duidelijke call-to-action",
+            "Video voicemail als alternatief testen via Loom of Vidyard: een persoonlijk 45 tot 60 seconden video bericht gestuurd via LinkedIn DM of email als alternatief voor telefoon. Converteert significant beter dan een traditionele voicemail en is in UK HE context minder intrusief dan bellen",
+            "WhatsApp als warm follow-up kanaal testen in de Nederlandse context bij prospects die al hebben gereageerd op LinkedIn of email. In NL is zakelijk WhatsApp gebruik normaler dan in UK",
+            "Timing in acht nemen: Learning Technologists en Learning Designers zijn het best bereikbaar buiten hoorcolleges en werkgroepen, typisch tussen 12 en 14 uur of na 16 uur op dinsdag en woensdag",
+            "Bellen pas structureel opschalen als er een consistente reply rate is vanuit email en LinkedIn sequences. Je wilt altijd warme leads in de lijst hebben zodat bellen voelt als logische opvolging en niet als cold interrupt",
+          ]
+        }
+      },
+    ]
+  },
+  {
+    id: "C",
+    label: "LinkedIn Organic",
+    color: "#0077B5",
+    items: [
+      {
+        name: "Jeroen als #1 stem over assessment in HE",
+        desc: "Bewuste thought leader positionering rondom één specifiek thema: AI-driven feedback in hoger onderwijs. Scherpe standpunten, NSS data als wapen, build-in-public elementen en een vaste cadans die compound groeit",
+        status: "in ontwikkeling",
+        strategy: {
+          current: "Af en toe een post op LinkedIn, geen vaste cadans, geen bewuste positionering rondom een specifiek thema. LinkedIn wordt gebruikt als het uitkomt in plaats van als een strategisch kanaal dat dagelijks compound groeit. Een founder met 4 posts per week heeft na zes maanden een bereik dat niet te kopen is met advertentiebudget.",
+          next: [
+            "Positionering vastpinnen op één specifiek thema: AI-driven feedback in het hoger onderwijs. Niet breed over EdTech, niet breed over AI. Specifiek genoeg dat iedereen die in UK HE werkt en dit onderwerp relevant vindt, Jeroen uiteindelijk tegenkomt op LinkedIn",
+            "Cadans op 4 tot 5 posts per week. Eén uur per week batch produceren geeft genoeg voor de hele week. Het algoritme beloont consistentie zwaarder dan de kwaliteit van individuele posts. Stoppen kost bereik, doorgaan bouwt het exponentieel op",
+            "Vijf vaste content pilaren zodat je nooit voor een leeg scherm zit: NSS en assessment data met eigen interpretatie, AI in het onderwijs met een genuanceerd standpunt dat niet meegaat in de hype, eerlijke learnings van het bouwen van Eduface inclusief wat niet werkt, klant resultaten van pilotinstellingen zodra die er zijn, controversiële of tegendraadse standpunten over feedback in HE die discussie uitlokken",
+            "Scherpe standpunten innemen die discussie uitlokken. Neutrale content presteert slecht. Posts die mensen doen reageren met 'ik ben het er niet mee eens' presteren beter dan posts waarmee iedereen het eens is. Voorbeelden: 'Feedback turnaround times in UK HE zijn structureel te lang en dat is geen capaciteitsprobleem maar een prioriteitsprobleem.' Of: 'De meeste AI feedback tools lossen het verkeerde probleem op.'",
+            "NSS data als content wapen inzetten. Elke keer dat NSS resultaten uitkomen is er een wave aan content mogelijk: welke instellingen scoren slecht, wat zijn de trends over vijf jaar, wat zegt het patroon over de sector. Dit positioneert Eduface als de autoriteit op dit datapunt en trekt precies de decision-makers aan die erover nadenken",
+            "Build-in-public elementen toevoegen: posts over de Eduface journey, hoe een deal verloopt, wat je leert van een DVC die nee zegt, hoe een pilot er van binnen uitziet. Dit is de meest engaging content die founders kunnen maken en het bouwt vertrouwen sneller dan elke productpost",
+            "Content vormen bewust roteren: lange tekst posts voor storytelling en standpunten, document posts en PDF carrousels voor whitepapers en data, korte video clips uit de YouTube serie als native LinkedIn video, polls voor marktonderzoek met hoge engagementgraad, LinkedIn Articles voor diepere stukken die vindbaar blijven via zoeken",
+            "Posten om 8 uur of 12 uur en de eerste 60 minuten beschikbaar zijn om op comments te reageren. Dit is het moment waarop het algoritme beslist of een post verder wordt verspreid. Actieve comments in de beginfase zijn het sterkste signaal",
+            "LinkedIn profiel omzetten naar een conversiepagina: headline beschrijft de waardepropositie van Eduface niet de functietitel, featured sectie toont Bath Spa resultaten met een directe link naar de demo, about sectie geschreven vanuit het perspectief van iemand die net een post heeft gelezen en wil weten wie dit is",
+          ]
+        }
+      },
+      {
+        name: "Content machine: één productie, vijf distributiemomenten",
+        desc: "Een systeem dat ervoor zorgt dat elk stuk content dat Eduface toch al maakt automatisch meerdere LinkedIn posts oplevert, zodat de content investering vijf keer rendeert in plaats van één keer",
+        status: "nog niet gestart",
+        strategy: {
+          current: "Content wordt nu per kanaal apart geproduceerd. Een webinar wordt niet systematisch omgezet naar LinkedIn posts. Een whitepaper levert geen carrousel op. Een YouTube video levert geen clips op. Dit betekent dat elke content investering maar één keer rendeert terwijl hij minstens vijf keer kan renderen met minimale extra inspanning.",
+          next: [
+            "Vaste recycling regels instellen die na elk stuk content automatisch worden uitgevoerd: elke YouTube video levert twee korte clips op van 45 tot 60 seconden als native LinkedIn video, elke whitepaper levert een document carrousel op van 8 tot 12 slides met de kernpunten, elke webinar levert drie quote posts plus een LinkedIn Event aankondiging, elke blog levert een tekst post op met de drie kernpunten en een open vraag aan het einde",
+            "Document posts en PDF carrousels zijn het best scorende contenttype op LinkedIn voor B2B. De whitepapers die al worden gemaakt in categorie E zijn direct om te zetten naar carrousels. Hoge saves, hoog bereik, werkt als passieve lead magnet omdat mensen de carrousel opslaan om later terug te lezen",
+            "Elke case study uitwerken als meerdelige LinkedIn serie: post 1 beschrijft de pijn voor de pilot met concrete NSS cijfers, post 2 beschrijft de aanpak en wat Eduface deed, post 3 toont het resultaat met meetbare uitkomsten. Drie posts uit één case study, elk met een cliffhanger naar de volgende",
+            "NSS data visualisaties maken als standalone LinkedIn content. Een grafiek van de 20 slechtst scorende UK instellingen op Assessment & Feedback met een scherpe observatie erbij presteert extreem goed omdat het concreet, deelbaar en relevant is voor iedereen in HE",
+            "Evergreen content bibliotheek opbouwen van 20 tot 30 posts die altijd relevant zijn: hoe het Eduface model werkt, wat het verschil is tussen generatieve AI en classificatie AI voor feedback, wat kwalitatieve feedback van slechte feedback onderscheidt. Deze posts kunnen na drie maanden opnieuw worden geplaatst",
+            "Productie workflow: direct na elk webinar of YouTube opname 30 minuten inplannen voor de recycling. Niet later, niet volgende week. Direct na de opname terwijl de context nog vers is",
+          ]
+        }
+      },
+      {
+        name: "Dagelijkse engagement als warme motor voor outbound",
+        desc: "Systematisch engagen met de exacte mensen die Eduface wil bereiken zodat de naam vertrouwd is voordat een connectieverzoek of email arriveert, als directe versterker van categorie B",
+        status: "nog niet gestart",
+        strategy: {
+          current: "LinkedIn wordt momenteel als broadcast kanaal gebruikt. Posts worden verstuurd maar er is geen systematische engagement met de content van prospects. Het gevolg is dat outreach vanuit categorie B aankomt bij mensen die Eduface niet kennen, wat de drempel om te reageren structureel verhoogt.",
+          next: [
+            "Dante krijgt een dagelijkse LinkedIn engagement routine van 15 minuten als vast onderdeel van zijn outbound werkdag. Elke ochtend reageren op 5 posts van Senior Learning Technologists en Learning Designers bij target instellingen met een waardevolle opmerking die zijn kennis van het vakgebied laat zien. Geen spam, geen productpitch",
+            "Het directe mechanisme: wanneer Dante drie weken later een connectieverzoek of email stuurt naar iemand wiens posts hij regelmatig heeft gecommenteerd, herkent die persoon zijn naam. De openingsrate en replyrate op dat eerste bericht zijn dan structureel hoger. Dit is de goedkoopste verbetering van categorie B die er bestaat",
+            "Jeroen reageert op alle comments op zijn eigen posts binnen het eerste uur na publicatie. Dit houdt de post actief, signaleert aan het algoritme dat er waardevolle discussie is, en bouwt een-op-een relaties met precies de mensen die zijn content interessant genoeg vonden om op te reageren",
+            "LinkedIn Polls inzetten als engagement tool en marktonderzoek tegelijk: 'Wat is de grootste barrière voor AI gebruik bij feedback in jouw instelling?' of 'Hoeveel tijd besteden docenten gemiddeld per week aan het geven van schriftelijke feedback?' Polls hebben een hoge engagementgraad en de antwoorden zijn bruikbaar als input voor blog content en als gespreksstarter in outbound sequences",
+            "LinkedIn Newsletter starten met een maandelijkse editie over AI en assessment in HE. Een LinkedIn Newsletter heeft een eigen abonneelijst los van connecties en stuurt een pushnotificatie naar alle abonnees. Open rates liggen structureel tussen 40 en 55 procent. Elke whitepaper of thought piece die toch al wordt geschreven is direct bruikbaar als newsletter editie",
+            "Systematisch reageren op posts van thought leaders in de HE sector zoals Jisc accounts, Times Higher Education, Wonkhe en bekende DVCs met grote LinkedIn netwerken. Een waardevolle comment op een post met 10.000 impressies is gratis zichtbaarheid bij precies de doelgroep",
+          ]
+        }
+      },
+      {
+        name: "Menno en Dante als tweede en derde LinkedIn stem",
+        desc: "Menno bouwt technische geloofwaardigheid bij IT en procurement, Dante warmt zijn outbound prospects passief op via zijn feed. Elk met een eigen invalshoek, lage tijdsinvestering en directe impact op de pipeline",
+        status: "nog niet gestart",
+        strategy: {
+          current: "Menno en Dante zijn niet structureel actief op LinkedIn namens Eduface. Hun gecombineerde netwerk is een volledig onbenut distributiepunt dat een ander segment bereikt dan Jeroen.",
+          next: [
+            "Menno's LinkedIn invalshoek: de technische en wetenschappelijke kant van het Eduface model. Wat sparse activation doet voor nauwkeurigheid, hoe je AI output valideert in een educatieve context, wat de technische verschillen zijn tussen generatieve AI en klassieke classificatiemodellen voor feedback. Dit bereikt IT afdelingen, data officers en procurement teams die vragen hebben over hoe het systeem werkt en of het veilig is. Één post per week is genoeg",
+            "Dante's LinkedIn invalshoek: observaties uit zijn gesprekken met UK HE instellingen zonder vertrouwelijke informatie te delen. Wat hij leert over hoe learning professionals denken, welke vragen steeds terugkomen, wat instellingen tegenhoud om te vernieuwen. Dit positioneert hem als iemand die de sector begrijpt en maakt zijn outreach geloofwaardiger",
+            "Het directe mechanisme voor Dante: prospects die hij heeft benaderd en niet direct reageren zien zijn posts in hun feed. Na drie weken is de naam Dante Torbed herkenbaar. De volgende follow-up email of LinkedIn DM wordt geopend met een ander gevoel dan de eerste keer",
+            "Lage drempel als startpunt: één post per week per persoon. Na elke webinar, blog of YouTube video een kant-en-klare tekstversie aanleveren die Menno of Dante kunnen personaliseren met één eigen observatie en direct kunnen posten. Ze schrijven niet zelf, ze voegen een persoonlijke noot toe",
+            "Menno en Dante reageren op Jeroen's posts binnen het eerste uur na publicatie vanuit hun eigen perspectief. Een technische aanvulling van Menno of een sales observatie van Dante als comment voegt geloofwaardigheid toe en helpt de post het algoritme in",
+          ]
+        }
+      },
+      {
+        name: "Klant- en partnerstemmen als het sterkste bewijs",
+        desc: "Bath Spa, De Haagse Hogeschool en Jisc actief inzetten als LinkedIn stemmen. Klant testimonials en partner endorsements zijn structureel geloofwaardiger dan elke post die Eduface zelf maakt",
+        status: "nog niet gestart",
+        strategy: {
+          current: "Klanten en partners zijn nog niet actief ingezet als LinkedIn distributiekanaal. Zodra Bath Spa en De Haagse Hogeschool aantoonbare resultaten hebben, is hun stem op LinkedIn het meest waardevolle en goedkoopste marketingmateriaal dat Eduface kan hebben.",
+          next: [
+            "Bij afronding van elke succesvolle pilot direct een laagdrempelig verzoek doen: 'Als je het erover hebt met collega's op LinkedIn, tag ons dan, we delen het graag.' Dit kost de klant niks en levert Eduface zichtbaarheid op in precies de netwerken die Eduface wil bereiken",
+            "Gezamenlijke posts schrijven met klanten: Jeroen interviewt Hannah Lawrence van Bath Spa in een LinkedIn post over hoe ze het Assessment & Feedback probleem aanpakten en wat het resultaat was. Dit is een samenwerkingspost die het netwerk van Bath Spa bereikt bovenop het netwerk van Jeroen",
+            "Jisc als LinkedIn partner activeren: een gezamenlijk bericht van Jisc en Eduface na de webinar van 16 juni bereikt het volledige Jisc LinkedIn netwerk van UK HE instellingen. Jisc heeft aanzienlijk bereik in de exacte doelgroep die Eduface wil bereiken en een endorsement van Jisc heeft een geloofwaardigheid die Eduface zelf niet kan creëren",
+            "Na elke webinar de meest actieve deelnemers identificeren en hen vragen of ze hun takeaway willen delen op LinkedIn. Mensen die actief waren in de Q&A zijn al enthousiast, een kleine nudge om dat te delen kost weinig maar levert organische social proof op bij hun netwerk",
+            "LMS partners zoals Canvas en Brightspace kunnen Eduface taggen bij posts over assessment en AI integraties. Deze samenwerking kost geen geld maar bereikt de hele gebruikersgemeenschap van die platforms die toch al bezig zijn met assessment tools",
+          ]
+        }
+      },
+    ]
+  },
+  {
+    id: "D",
+    label: "Paid Advertising",
+    color: "#E85D75",
+    items: [
+      {
+        name: "LinkedIn Ads",
+        desc: "Sponsored content en conversation ads gericht op Senior Learning Technologists en DVCs in UK HE, als betaalde versterker van de organische en outbound strategie",
+        status: "in ontwikkeling",
+        strategy: {
+          current: "LinkedIn Ads zijn nog niet structureel ingezet. LinkedIn is het duurste advertentieplatform per klik maar het enige platform waar je precies op functietitel en instelling kunt targeten. Voor Eduface is dit relevant omdat de doelgroep zo specifiek is dat brede platforms als Meta de verkeerde mensen bereiken.",
+          next: [
+            "Campagne starten met Sponsored Content gericht op Senior Learning Technologists en Learning Designers bij UK instellingen met een NSS Assessment en Feedback score onder 78 procent. Dit is de meest directe betaalde verlengstuk van de ICP strategie uit categorie B",
+            "Budget instellen op 20 tot 30 pond per dag als testfase en na vier weken evalueren op cost per click, cost per webinar registratie en cost per demo aanvraag. Niet op impressies optimaliseren maar op downstream conversie",
+            "LinkedIn Conversation Ads testen als alternatief voor cold email: een gesprek initiëren via LinkedIn Messaging bij mensen die je profiel hebben bekeken of je posts hebben geliked. Dit is minder intrusief dan een cold email maar directer dan een organic post",
+            "Retargeting campagne opzetten op website bezoekers met een LinkedIn functietitel filter: alleen mensen met de juiste titel en instelling zien de retargeting ad, waardoor het budget niet wordt verspild aan studenten of irrelevante bezoekers",
+            "A/B testen op ad copy: NSS score hook versus tijdsbesparing argument versus concrete resultaten van Bath Spa. Per variant minimaal twee weken laten lopen voor statistisch betrouwbare data",
+            "LinkedIn Ads koppelen aan webinar promotie: elke nieuwe webinar krijgt een gesponsorde aankondiging gericht op exacte ICP van de betreffende markt. Dit is de meest kosteneffectieve toepassing van LinkedIn Ads budget omdat je warm verkeer stuurt naar een laagdrempelige actie",
+          ]
+        }
+      },
+      {
+        name: "Meta Ads",
+        desc: "Lead generation campagnes voor docent sign-ups met look-alike audiences op bestaande gebruikers, aparte campagnes per markt en creatieve rotatie om ad fatigue te voorkomen",
+        status: "actief",
+        strategy: {
+          current: "Meta Ads zijn actief met 18 PNG creatives en lead gen forms. Meta is effectief voor het bereiken van docenten en studenten maar minder precies in functietitel targeting dan LinkedIn. De huidige campagnes genereren sign-ups maar het onderscheid tussen docent en student sign-ups is cruciaal voor de waardebepaling.",
+          next: [
+            "Conversiewaarde per sign-up type differentiëren: een docent die converteert heeft voor Eduface structureel meer waarde dan een student. De biedstrategie moet dit weerspiegelen door aparte ad sets met aparte doelgroepen en aparte conversion events voor docenten versus studenten",
+            "Look-alike audiences opbouwen op de bestaande docent sign-ups: zodra er voldoende docenten in het systeem zitten, een look-alike audience aanmaken op Meta die nieuwe soortgelijke mensen bereikt buiten het bestaande netwerk",
+            "UK versus NL campagnes volledig scheiden: andere budget allocatie, andere creative stijl, andere call-to-action. UK HE professionals reageren anders op advertenties dan Nederlandse HO professionals",
+            "Video ads testen naast static image ads. Korte clips van 15 tot 30 seconden uit de YouTube productserie kunnen direct als Meta Ad worden ingezet. Video ads hebben doorgaans een lagere cost per click en hogere engagement rate",
+            "Creative rotatie systematisch inrichten: elke twee weken de laagst presterende creative vervangen door een nieuwe variant om ad fatigue te voorkomen. Zonder rotatie daalt de performance van elke creative significant na drie tot vier weken",
+            "Retargeting op website bezoekers die de pricing pagina of demo pagina hebben bezocht maar niet hebben geconverteerd. Dit segment heeft de hoogste koopintentie en rechtvaardigt een hogere CPC",
+          ]
+        }
+      },
+      {
+        name: "Retargeting ecosysteem",
+        desc: "Een gecoördineerd retargeting systeem over Google, LinkedIn en Meta dat prospects op het juiste moment met de juiste boodschap herberikt op basis van waar ze zich in de funnel bevinden",
+        status: "nog niet gestart",
+        strategy: {
+          current: "Retargeting is op dit moment niet structureel ingericht. Bezoekers die de website verlaten zonder te converteren worden niet opnieuw bereikt. Webinar registranten die niet verschijnen worden niet apart benaderd. Dit zijn warmere contacten dan koude prospects en verdienen een specifieke aanpak.",
+          next: [
+            "Retargeting segmenten definiëren op basis van gedrag: homepage bezoeker algemeen, pricing pagina bezoeker hoge intentie, webinar registrant die niet verscheen, demo aanvrager die niet converteerde. Elk segment krijgt een andere boodschap en een ander kanaal",
+            "Google Display retargeting instellen voor website bezoekers die niet converteren: een eenvoudige display ad met de Bath Spa resultaten en een directe link naar de demo aanvraag. Lage cost per impression, hoge relevantie omdat het warm verkeer is",
+            "LinkedIn retargeting specifiek voor webinar no-shows: mensen die zich hadden geregistreerd maar niet kwamen zien een gesponsord bericht met de opname en een uitnodiging voor de volgende sessie. Dit segment heeft aantoonbare interesse en een hoge kans op latere conversie",
+            "Meta retargeting met sequentiële boodschappen: dag 1 tot 3 na websitebezoek een product-focused ad, dag 4 tot 14 een social proof ad met de Bath Spa case study, dag 15 tot 30 een urgentie ad voor een gratis demo. De boodschap escalseert naarmate de prospect langer in de funnel zit",
+            "Frequency caps instellen per kanaal om te voorkomen dat prospects worden overladen met ads. Maximaal 5 tot 7 impressies per week per persoon over alle retargeting kanalen samen",
+          ]
+        }
+      },
+    ]
+  },
+  {
+    id: "E",
+    label: "Content & Thought Leadership",
+    color: "#F5A623",
+    items: [
+      {
+        name: "Whitepapers als strategische lead magnets",
+        desc: "Whitepapers niet als eindproduct maar als motor: gated downloads die inbound leads genereren, direct bruikbaar in outbound sequences en als geloofwaardigheidsmaker bij procurement",
+        status: "actief",
+        strategy: {
+          current: "Er zijn al meerdere whitepapers geproduceerd: een whitepaper over UK HE assessment strategie gebaseerd op 15 instellingen, een safety en compliance whitepaper en een Jisc due diligence document. Deze worden gebruikt in sales gesprekken maar zijn nog niet volledig ingezet als inbound lead generation tool via gated downloads.",
+          next: [
+            "Downloadpaginas opzetten voor elke whitepaper met een formulier dat minimale informatie vraagt: naam, email en instelling. Niet te veel velden want elke extra vraag verlaagt de conversie. Deze downloads zijn de eerste touch in een lead nurture flow uit categorie J",
+            "Jaarlijks NSS benchmark rapport als flagship publicatie lanceren: elk jaar na publicatie van de nieuwe NSS data een rapport publiceren met de analyse van Assessment en Feedback scores per instelling, trends over meerdere jaren en aanbevelingen. Dit is het meest deelbare stuk content dat Eduface kan maken en positioneert Eduface als de autoriteit op dit datapunt",
+            "Whitepapers inzetten als bewapening voor champions: zodra een Learning Technologist geïnteresseerd is, hem of haar de compliance whitepaper en de assessment strategie whitepaper geven als materiaal om intern te delen met de economic buyer. Dit verlaagt de drempel voor de champion om intern het gesprek aan te gaan",
+            "Elke whitepaper omzetten naar een LinkedIn document carrousel zoals omschreven in categorie C. De investering in de whitepaper rendeert dan ook als LinkedIn content, als email bijlage in sequences en als website lead magnet",
+            "Compliance whitepaper specifiek inzetten bij procurement teams die vragen hebben over GDPR, EU AI Act en data residency. Dit is een blocker in veel deals en een goede whitepaper neemt die blocker weg voordat het gesprek over prijs begint",
+          ]
+        }
+      },
+      {
+        name: "Case studies productiesysteem",
+        desc: "Een gestandaardiseerd systeem om van elke succesvolle pilot een case study te maken die werkt als sales tool, als SEO content, als LinkedIn serie en als referentie voor procurement",
+        status: "in ontwikkeling",
+        strategy: {
+          current: "Bath Spa en De Haagse Hogeschool zijn de eerste kandidaten voor een case study maar er is nog geen gestandaardiseerd format of productieproces. Een case study is het meest hergebruikte stuk content in de hele sales cyclus en verdient een systeem achter de productie.",
+          next: [
+            "Gestandaardiseerd case study format definiëren met vijf vaste secties: de institutionele context en de pijn voor Eduface, wat de instelling had geprobeerd voordat ze met Eduface gingen werken, de aanpak van de pilot inclusief concrete stappen, de meetbare resultaten met specifieke cijfers, en een quote van de champion die intern deelbaar is",
+            "Elke case study in drie formaten produceren: een volledige PDF voor gated download en sales gebruik, een korte versie van één pagina als sales bijlage in emails, en een meerdelige LinkedIn serie van drie posts zoals omschreven in categorie C",
+            "Case study landing pages aanmaken op eduface.me die ook op zoektermen ranken: Bath Spa University Eduface case study, AI feedback higher education case study. Dit zijn paginas die jarenlang traffic blijven genereren",
+            "Video versie van elke case study produceren als onderdeel van de YouTube klant stories in categorie M: een 5 tot 8 minuten gesprek met de champion dat ook als audio fragment bruikbaar is voor de podcast strategie",
+            "Na elk succesvolle pilot direct de case study productie starten terwijl de ervaring vers is bij de klant. Niet wachten tot zes maanden later wanneer de details vervagen en de champion minder bereid is om tijd te investeren",
+          ]
+        }
+      },
+      {
+        name: "Competitor comparison content",
+        desc: "Directe vergelijkingspaginas en documenten die prospects helpen begrijpen waarom Eduface een betere keuze is dan Inspera Graide, FeedbackFruits en generieke LLM tools",
+        status: "in ontwikkeling",
+        strategy: {
+          current: "Een D2L Lumi vergelijkingsdocument en een Learnwise AI analyse zijn al gemaakt. Inspera Graide is als PE-backed bolt-on geïdentificeerd als primaire concurrent die classificatie AI gebruikt in plaats van generatieve AI, wat een concreet differentiatiepunt is. Dit materiaal is nog niet volledig uitgewerkt als marketingcontent.",
+          next: [
+            "Inspera Graide versus Eduface vergelijkingspagina maken die duidelijk uitlegt waarom classificatie AI fundamenteel anders werkt dan generatieve AI voor feedback, wat de implicaties zijn voor feedback kwaliteit en wat dit betekent voor de NSS score van een instelling. Dit is het belangrijkste vergelijkingsdocument",
+            "FeedbackFruits versus Eduface pagina maken met focus op de aanpak. FeedbackFruits is een peer assessment platform, Eduface is AI-driven individuele feedback. Ze lijken concurrent maar pakken een fundamenteel ander probleem aan. Dit document helpt instellingen die beide vergelijken",
+            "Comparison landing pages opzetten op eduface.me voor de zoektermen die prospects gebruiken als ze onderzoek doen: Eduface vs Inspera, AI feedback tool comparison higher education. Deze paginas ranken op navigational intent van prospects die al in de evaluatiefase zitten",
+            "De generatieve AI versus classificatie AI differentiator uitwerken als LinkedIn post serie en als sectie in de sales presentatie. Dit is een technisch argument dat Menno kan onderschrijven en dat goed werkt bij sceptische learning technologists die vragen hebben over hoe het model werkt",
+          ]
+        }
+      },
+      {
+        name: "ROI calculator en interactieve tools",
+        desc: "Een interactieve ROI calculator op de website die prospects laat berekenen hoeveel tijd en geld ze besparen met Eduface, als laagdrempelige lead magnet met hoge intentie",
+        status: "nog niet gestart",
+        strategy: {
+          current: "Er is nog geen interactieve tool op de website die prospects helpt de waarde van Eduface te kwantificeren voor hun specifieke situatie. Een ROI calculator is een van de meest effectieve lead magnets voor B2B SaaS omdat het de prospect zelf het werk laat doen om de business case te bouwen.",
+          next: [
+            "ROI calculator bouwen met als inputs: aantal studenten, aantal beoordelende docenten, gemiddeld aantal beoordelingen per docent per semester, en huidige gemiddelde tijdsbesteding per beoordeling. Als output: berekende tijdsbesparing per semester, omgerekend in FTE kosten, en de verwachte impact op NSS feedback score",
+            "De calculator koppelen aan een lead capture formulier: het resultaat is gratis maar de instelling moet een email achterlaten om het volledige rapport te ontvangen. Dit is een hoge kwaliteit lead omdat de prospect al heeft nagedacht over hun specifieke situatie",
+            "De berekening gebruiken als basis voor de cost justification in stap 2 van het sales handbook. De championscan de calculator zelf invullen en de output direct gebruiken als eerste versie van de business case die ze intern delen",
+            "Calculator resultaten inzetten in outbound: bij instellingen waar de NSS score bekend is kun je in de email al een indicatieve berekening meesturen gebaseerd op gemiddelde universiteitsdata. Dit maakt de personalisatie concreter dan alleen de NSS score noemen",
+          ]
+        }
+      },
+    ]
+  },
+  {
+    id: "F",
+    label: "Webinars & Events",
+    color: "#9B59B6",
+    items: [
+      {
+        name: "Eigen webinar machine",
+        desc: "Een maandelijkse webinar cadans met een strak format, thematische opzet per NSS pijnpunt en een geoptimaliseerd voor- tijdens- en natraject dat de 42 warme leads van elke sessie maximaal converteert",
+        status: "actief",
+        strategy: {
+          current: "Twee webinars zijn gepland: de Jisc en Bath Spa webinar op 16 juni met 42 warme prospect instellingen en de De Haagse Hogeschool webinar op 23 juni. De webinar is het bewezen sterkste lead generation kanaal voor Eduface maar wordt nog incidenteel ingezet. Het doel is dit om te zetten naar een maandelijkse machine.",
+          next: [
+            "Maandelijkse cadans vastzetten voor de UK markt: één webinar per maand op de derde dinsdag van de maand om 11 uur UK tijd. Een vaste dag en tijd zorgt ervoor dat vaste volgers het in hun agenda plannen zonder elke keer opnieuw te hoeven beslissen",
+            "Thema per webinar baseren op een specifiek NSS pijnpunt of sector moment: september is ideaal voor Assessment Planning voor het nieuwe academische jaar, oktober voor Turnaround Time en feedback kwaliteit, januari voor NSS voorbereiding. De agenda loopt mee met de academische kalender van de doelgroep",
+            "Pre-webinar registratie flow optimaliseren: LinkedIn Event aanmaken naast de eigen landingspagina, reminder emails op dag 7, dag 3 en dag 1 voor aanvang, en een reminder op de ochtend van de webinar. Show-up rates verdubbelen doorgaans door goede reminder cadans",
+            "Tijdens de webinar engagement maximaliseren met polls, live vragen in de chat en een concrete case study presentatie door de klant zelf. Een klant die tijdens de webinar spreekt is geloofwaardiger dan Eduface dat over zichzelf praat",
+            "Webinar opname direct publiceren op YouTube met getimede hoofdstukken zodat kijkers naar specifieke secties kunnen springen. Dit verlengt de levensduur van elke webinar en genereert YouTube SEO",
+          ]
+        }
+      },
+      {
+        name: "Post-webinar conversie sequentie",
+        desc: "Een stapsgewijze opvolging van elke webinar registrant die de warmte omzet in Discovery gesprekken, de meest kritische stap in de webinar funnel die op dit moment nog niet is geautomatiseerd",
+        status: "in ontwikkeling",
+        strategy: {
+          current: "Post-webinar follow-up is geïdentificeerd als de eerste workflow om te automatiseren voor Dante. Op dit moment wordt de follow-up ad hoc gedaan. De 42 warme leads van de 16 juni webinar zijn een directe test voor hoe goed dit werkt.",
+          next: [
+            "Dag 1 na webinar: automatische bedankmail met de opname link, de drie belangrijkste takeaways samengevat in drie regels en een directe uitnodiging voor een 20 minuten gesprek. Kort, persoonlijk van toon, lage drempel",
+            "Dag 3: Dante stuurt een persoonlijke LinkedIn DM of email met een referentie aan iets specifieks uit de webinar. Niet een generieke follow-up maar iets dat laat zien dat hij aanwezig was en heeft geluisterd",
+            "Dag 5: automatische email met de meest relevante whitepaper voor het thema van de webinar als gratis download. Waarde leveren zonder te vragen om iets",
+            "Dag 8: email met de Bath Spa case study als concrete illustratie van hoe een vergelijkbare instelling het probleem heeft opgelost. Dit is het moment van social proof",
+            "Dag 12: directe uitnodiging voor een gratis pilot gesprek of demo van 30 minuten. Na meerdere waarde momenten is dit een logische volgende stap in plaats van een koude vraag",
+            "Dag 20: Dante belt als er interactie was maar geen gesprek is geboekt. Dit is het moment waarop de telefonische opvolging uit categorie B zijn plek heeft",
+            "Dag 30: laatste automatische email met een open vraag over of het moment nu niet goed is en wanneer beter zou zijn. Hierna gaat de lead naar een lange termijn nurture flow",
+          ]
+        }
+      },
+      {
+        name: "Jisc en partner events",
+        desc: "Jisc events, showcases en partner bijeenkomsten als warme introductiemotor waarbij Jisc de geloofwaardigheid van Eduface overdraagt aan haar eigen netwerk van UK HE instellingen",
+        status: "in ontwikkeling",
+        strategy: {
+          current: "Jisc is een goedgekeurd leverancier en de webinar van 16 juni is een eerste gezamenlijk initiatief. De relatie met Jisc is nog voornamelijk een procurement relatie en nog niet een actieve business development samenwerking.",
+          next: [
+            "Jisc Digifest aanwezigheid plannen: Jisc Digifest is de grootste jaarlijkse conferentie voor digitale hoger onderwijs professionals in het UK. Als leverancier op het Jisc framework is deelname mogelijk en legitiem. Een demo stand of presentatieslot bereikt honderden learning technology professionals in één dag",
+            "Jisc account managers activeren als introductiemotor: Jisc account managers begeleiden individuele instellingen bij hun digitale strategie. Een warme introductie van een Jisc account manager is de meest directe shortcut naar een Discovery gesprek. Dit vereist dat Jisc medewerkers Eduface goed kennen en vertrouwen",
+            "Gezamenlijke content produceren met Jisc: een gezamenlijk rapport over assessment trends in UK HE gepubliceerd onder de Jisc naam geeft Eduface een bereik en geloofwaardigheid die zelfstandig niet haalbaar is",
+            "Jisc procurement team voorzien van up-to-date Eduface materiaal: suppliers die goed gedocumenteerd zijn in het Jisc systeem worden vaker aanbevolen aan instellingen die het framework gebruiken voor oriëntatie",
+          ]
+        }
+      },
+      {
+        name: "Sectorconferenties als thought leader platform",
+        desc: "Aanwezigheid op ALT, UCISA, Wonkhe en EUNIS als spreker, niet als exposant, om Jeroen te positioneren als een stem die de sector volgt en niet als een bedrijf dat een product verkoopt",
+        status: "nog niet gestart",
+        strategy: {
+          current: "Eduface is nog niet aanwezig op sectorconferenties. Dit is een kanaal dat op korte termijn weinig directe leads genereert maar op middellange termijn de persoonlijke geloofwaardigheid van Jeroen substantieel vergroot en warme relaties bouwt die via andere kanalen moeilijk te bereiken zijn.",
+          next: [
+            "ALT Conference in november indienen als spreker: ALT is de Association for Learning Technology en organiseert de grootste jaarlijkse conferentie voor learning technologists in het UK. Een presentatieaanvraag indienen over AI-driven feedback en wat de NSS data zegt over de state of assessment in HE. Deadline voor sprekers is doorgaans april of mei",
+            "Wonkhe events bijwonen als deelnemer dit jaar en als spreker aanmelden voor volgend jaar. Wonkhe organiseert kleinschalige maar invloedrijke events voor HE beleidsmensen en senior leiders. Aanwezigheid geeft toegang tot precies de DVCs en PVCs die moeilijk bereikbaar zijn via email",
+            "UCISA Digital Capabilities Conference als target voor een gesponsorde sessie of workshop over AI en assessment. UCISA richt zich op IT en digitale professionals in HE die een sleutelrol spelen bij de evaluatie en aankoop van nieuwe tools",
+            "Sprekersstatus opbouwen is een stapsgewijs proces: begin met een panelrol of een kortere breakout sessie in plaats van een keynote. Elke conference vermelding op het CV van Jeroen vergroot de kans op een grotere rol bij de volgende editie",
+          ]
+        }
+      },
+    ]
+  },
+  {
+    id: "G",
+    label: "PR & Sector Media",
+    color: "#1ABC9C",
+    items: [
+      {
+        name: "Media relaties en journalist pitching",
+        desc: "Actief relaties opbouwen met redacteuren bij Times Higher Education, Wonkhe en QS zodat Eduface een go-to bron wordt voor commentaar over AI en assessment in UK HE",
+        status: "nog niet gestart",
+        strategy: {
+          current: "Er zijn nog geen actieve relaties met sector journalisten of redacteuren. Eduface wordt momenteel niet geciteerd in sector media. Voor een B2B product in een conservatieve sector als HE is media coverage een van de sterkste vormen van externe validatie.",
+          next: [
+            "Lijst opstellen van de vijf meest relevante journalisten en redacteuren die over EdTech en assessment schrijven bij THE, Wonkhe, QS en Guardian Higher Education. Per persoon bijhouden wat ze recent hebben geschreven en waar hun interesse ligt",
+            "Media kit bouwen: een document met de kernfeiten over Eduface, de NSS data hook, Bath Spa resultaten, founder bio en een set van foto's en logo bestanden klaar voor publicatie. Dit stuurt op het moment dat een journalist interesse toont",
+            "NSS data als persbericht hook gebruiken: elk jaar als NSS resultaten uitkomen is er een actueel haakje voor een persbericht of reactie. Journalisten zoeken op dat moment commentaar van experts. Als Jeroen beschikbaar is met een scherpe analyse staat hij erin",
+            "Wonkhe pitchen voor een opiniestuk over AI en de toekomst van assessment in HE. Wonkhe publiceert wekelijks opiniestukken van experts uit het veld en heeft een directe lezersgroep van HE beleidsmakers en senior leiders",
+            "Proactief commentaar aanbieden wanneer er relevante nieuwsgebeurtenissen zijn: een nieuw AI-beleid van OfS, een rapport over student tevredenheid, een grote instelling die een nieuw assessment systeem aankondigt. Journalisten waarderen experts die snel beschikbaar zijn",
+          ]
+        }
+      },
+      {
+        name: "Opiniestukken en sector bijdragen",
+        desc: "Jeroen als auteur van gedegen opiniestukken in THE, Wonkhe en JISC publicaties over de themas waar Eduface autoriteit op bouwt: AI feedback, NSS scores en assessment kwaliteit",
+        status: "nog niet gestart",
+        strategy: {
+          current: "Er zijn nog geen gepubliceerde opiniestukken in sector media. Opiniestukken zijn een van de weinige vormen van content die een DVC of PVC actief leest en deelt. Ze worden gevonden via Google, circuleren via email in institutionele netwerken en bouwen autoriteit op bij precies de mensen die moeilijk bereikbaar zijn via directe outreach.",
+          next: [
+            "Eerste opiniestuk pitchen bij Wonkhe over het thema: waarom Assessment en Feedback scores in de NSS structureel achterblijven en wat instellingen nu kunnen doen. Dit is scherp genoeg om interessant te zijn, relevant genoeg om geplaatst te worden en specifiek genoeg dat het Eduface's expertise toont zonder een verkooppitch te zijn",
+            "Tweede stuk pitchen bij Times Higher Education over de vraag of AI feedback een bedreiging of een kans is voor academische integriteit. Dit is een actueel debat in de sector en een genuanceerde bijdrage van Jeroen positioneert Eduface als een verantwoorde speler in dat debat",
+            "Gastblog schrijven voor de Jisc website over hoe instellingen op het Jisc framework AI tools kunnen evalueren voor assessment. Dit is direct relevant voor de Jisc doelgroep en versterkt de partnerrelatie",
+            "Publicatie cadans: één opiniestuk per zes tot acht weken is realistisch en houdbaar naast de andere werkzaamheden. Begin met Wonkhe als het meest toegankelijke platform en werk van daaruit naar THE",
+          ]
+        }
+      },
+      {
+        name: "EdTech awards strategie",
+        desc: "Systematisch deelnemen aan de relevante EdTech en HE awards om externe erkenning te krijgen die werkt als social proof bij procurement teams en decision-makers",
+        status: "nog niet gestart",
+        strategy: {
+          current: "Eduface heeft nog niet deelgenomen aan sector awards. Awards zijn geen doel op zichzelf maar een shortcut naar externe geloofwaardigheid. Een nominatie of winnaarschap bij een erkend award wordt vermeld op de website, in sales presentaties en in outbound emails en verhoogt de waargenomen legitimiteit bij procurement teams die Eduface nog niet kennen.",
+          next: [
+            "BETT Awards inschrijving plannen: BETT is de grootste EdTech beurs in het UK en de BETT Awards zijn de meest erkende EdTech awards in de sector. De inschrijfdeadline is doorgaans in het najaar voor de uitreiking in januari. De categorie AI en Education Technology is de meest relevante",
+            "Times Higher Education Awards plannen voor de categorie Outstanding Digital Innovation: de THE Awards zijn de meest prestigieuze HE awards in het UK en een nominatie opent deuren bij DVCs en PVCs die de awards nauwlettend volgen",
+            "EdTechX Awards en eLearning Industry Top Tools List als lagere drempel beginpunt: deze awards hebben een eenvoudiger inschrijfproces en zijn een goede eerste stap voordat de grotere awards worden aangepakt",
+            "Klanten vragen om te nomineren of te endorsen bij awards: een aanbeveling van Bath Spa University bij een award inschrijving is sterker dan een zelfnominatie en vergroot de kans op een winnaarschap significant",
+          ]
+        }
+      },
+      {
+        name: "Press release cadans bij mijlpalen",
+        desc: "Een gestandaardiseerde press release workflow die elke commerciële mijlpaal, nieuwe klant of partnership omzet in sector media coverage",
+        status: "nog niet gestart",
+        strategy: {
+          current: "Er is nog geen structurele press release aanpak. Commerciële mijlpalen zoals het winnen van Bath Spa als klant of het uitbreiden van de Jisc partnerrelatie zijn nieuwswaardige momenten die onbenut blijven als mediakans.",
+          next: [
+            "Press release template bouwen die snel aanpasbaar is per mijlpaal: nieuwe klant gewonnen, nieuw framework leverancierschap, significante pilot resultaten, productlancering. Een goede template maakt het schrijven van een press release een kwestie van een uur in plaats van een dag",
+            "Distributielijst opbouwen van sector media redacties: THE, Wonkhe, QS, Guardian Higher Education, EdSurge, EdTech Magazine. Elke press release gaat naar deze lijst plus naar de relevante Jisc communicatiekanalen",
+            "Bath Spa als eerste press release moment: wanneer Bath Spa formeel klant wordt is dat een persbericht waard. Een UK universitaire klant via het Jisc framework is een concrete geloofwaardigheidsmijlpaal voor de hele UK pipeline",
+            "Klanten vragen om gezamenlijk te communiceren: een persbericht van Bath Spa University en Eduface samen heeft meer nieuwswaarde dan een persbericht van Eduface alleen en bereikt ook het interne netwerk van Bath Spa",
+          ]
+        }
+      },
+    ]
+  },
+  {
+    id: "H",
+    label: "Partner & Channel",
+    color: "#E67E22",
+    items: [
+      {
+        name: "Jisc als actieve business development partner",
+        desc: "Jisc transformeren van een procurement framework naar een actieve warme introductiemotor waarbij Jisc account managers Eduface aanbevelen aan instellingen die worstelen met Assessment en Feedback scores",
+        status: "in ontwikkeling",
+        strategy: {
+          current: "Eduface heeft goedgekeurd leveranciersstatus op het Jisc framework. Dit is een procurement shortcut maar nog geen actieve business development relatie. Jisc heeft account managers die individuele instellingen begeleiden bij hun digitale strategie. Als die account managers Eduface kennen en vertrouwen, is elke introductie een warme lead van de hoogste kwaliteit.",
+          next: [
+            "Relatie opbouwen met de Jisc account managers die verantwoordelijk zijn voor de instellingen in de UK pipeline. Niet via procurement maar via een direct gesprek over hoe Eduface instellingen helpt hun NSS Assessment en Feedback scores te verbeteren",
+            "Eduface presenteren tijdens een intern Jisc team briefing: een 30 minuten sessie voor Jisc account managers om hen te leren hoe ze Eduface kunnen identificeren als oplossing bij instellingen die worstelen met feedback kwaliteit of turnaround time",
+            "Jisc voorzien van materiaal dat account managers kunnen delen met instellingen: een one-pager specifiek geschreven voor de Jisc doelgroep met de koppeling naar het Jisc framework, de NSS hook en de Bath Spa referentie",
+            "Gezamenlijk rapport of onderzoek publiceren met Jisc over de staat van assessment in UK HE. Dit geeft Jisc een reden om Eduface te noemen in hun eigen communicatie naar alle framework instellingen",
+            "Bijhouden welke deals zijn binnengekomen via een Jisc introductie versus via directe outreach. Als de Jisc route een significant hogere conversieratio heeft, meer tijd en energie investeren in het verdiepen van de Jisc relatie",
+          ]
+        }
+      },
+      {
+        name: "HEAnet en andere frameworks",
+        desc: "De Ierse markt opbouwen via de HEAnet framework positie en actief verkennen welke andere nationale procurement frameworks in Europa vergelijkbare distributiemogelijkheden bieden",
+        status: "in ontwikkeling",
+        strategy: {
+          current: "Eduface heeft goedgekeurd leveranciersstatus op het HEAnet framework in Ierland. De Ierse HE markt is kleiner dan de UK markt maar heeft vergelijkbare structuur met een centraal procurement framework. De pipeline in Ierland is nog niet actief ontwikkeld.",
+          next: [
+            "Ierse HE instellingen in kaart brengen die vergelijkbare assessment en feedback uitdagingen hebben als de UK pipeline. Ierland heeft een NSS equivalent in de form van de Irish Survey of Student Engagement dat vergelijkbare data levert",
+            "HEAnet account managers activeren op dezelfde manier als de Jisc strategie hierboven: een directe briefing over Eduface en wat het oplevert voor instellingen die worstelen met feedback kwaliteit",
+            "Eerste Ierse pilot identificeren: één sterke referentie in Ierland opent de rest van de Ierse markt op dezelfde manier als Bath Spa de UK markt opent",
+            "Andere Europese nationale procurement frameworks verkennen voor de middellange termijn: SURFmarket in Nederland voor de Nederlandse markt, CANHEIT in Canada voor de Noord-Amerikaanse markt. Framework posities zijn schaarse maar duurzame distributievoordelen",
+          ]
+        }
+      },
+      {
+        name: "LMS ecosysteem als inbound kanaal",
+        desc: "Canvas, Brightspace, Moodle en Blackboard marketplace listings als passief inbound kanaal dat docenten bereikt die al actief op zoek zijn naar assessment tools in hun vertrouwde LMS omgeving",
+        status: "nog niet gestart",
+        strategy: {
+          current: "Eduface integreert met Canvas, Brightspace, Moodle en Blackboard maar is nog niet aanwezig op de app marketplaces van deze platforms. Docenten die in hun LMS een assessment tool zoeken komen op dit moment Eduface niet tegen.",
+          next: [
+            "Canvas App Center listing aanmaken: een volledig profiel met screenshots, een demo video, de integratiebeschrijving en klant reviews. Canvas heeft een grote installatebasis in UK HE en de App Center is een actief discovery kanaal voor learning technologists die tools evalueren",
+            "Brightspace Marketplace listing aanmaken: Brightspace is het tweede grootste LMS in UK HE en heeft een vergelijkbaar ecosysteem. Bath Spa gebruikt Brightspace wat de relevantie direct aantoont",
+            "Co-marketing mogelijkheden verkennen met LMS providers: een gezamenlijk webinar van Canvas en Eduface over AI assessment integration bereikt het hele Canvas klantenbestand in één sessie",
+            "Reviews actief verzamelen op de LMS marketplaces zodra er gebruikers zijn: docenten die tevreden zijn met de integratie vragen om een review te schrijven op de marketplace. Reviews zijn de primaire trigger voor andere docenten om een tool te evalueren",
+          ]
+        }
+      },
+      {
+        name: "HE consultant en adviseur netwerk",
+        desc: "Learning technology consultants en onafhankelijke HE adviseurs als referral bron die Eduface introduceren bij instellingen waar directe outreach moeilijker is",
+        status: "nog niet gestart",
+        strategy: {
+          current: "Dave Corbett bij de University of Nottingham is een voorbeeld van een learning technology consultant met een rol die gericht is op het optimaliseren van bestaande tools in plaats van nieuwe tools aankopen. Dit type professional is zowel een potentieel referral partner als een gatekeeper die deals kan vertragen als hij niet is gewonnen.",
+          next: [
+            "Lijst opstellen van de 20 meest invloedrijke onafhankelijke learning technology consultants in UK HE die regelmatig instellingen adviseren over digitale tools. Dit zijn mensen die op meerdere boards zitten, ALT conferenties spreken en vertrouwensrelaties hebben met DVCs",
+            "Informeel kennismakingsgesprek initiëren met elk van deze consultants: niet een verkooppitch maar een genuanceerd gesprek over de assessment uitdagingen die zij zien bij hun klanten en hoe Eduface daarin past",
+            "Consultants voorzien van hetzelfde materiaal als champions: whitepapers, case studies, NSS data. Als een consultant het materiaal overtuigend vindt, zal hij of zij het organisch inbrengen in gesprekken met instellingen",
+            "Referral arrangement bespreken voor consultants die actief willen introduceren: een transparante afspraak over hoe Eduface de bijdrage van de consultant erkent als een deal tot stand komt via hun introductie",
+          ]
+        }
+      },
+    ]
+  },
+  {
+    id: "I",
+    label: "Product Led Growth",
+    color: "#2ECC71",
+    items: [
+      {
+        name: "Free tier als acquisitie funnel voor docenten",
+        desc: "De free tier optimaliseren als de primaire acquisitiepoort voor individuele docenten, met een scherp onderscheid tussen de student flow en de docent flow en een aha-moment dat snel genoeg komt om retentie te garanderen",
+        status: "actief",
+        strategy: {
+          current: "De free tier is actief en genereert sign-ups via Google Ads met een conversieratio van 45 procent en een cost per sign-up van rond 1,30 euro. Sign-ups zijn een mix van studenten en docenten. Het onderscheid in waarde tussen een docent sign-up en een student sign-up is groot maar wordt nog niet volledig doorvertaald in de product experience en de biedstrategie.",
+          next: [
+            "De onboarding flow splitsen in twee volledig aparte tracks op basis van het gekozen accounttype bij registratie: de docent track focust zo snel mogelijk op het aha-moment van de eerste AI-gegenereerde feedback op een echte studentinzending, de student track focust op het begrijpen en gebruiken van ontvangen feedback",
+            "Het aha-moment voor docenten zo vroeg mogelijk brengen: binnen 5 minuten na registratie moet een docent zijn eerste stuk feedback hebben gegenereerd. Elke stap die daarvoor zit is een dropoff risico. Mapping van de huidige stappen en eliminatie van alles dat niet direct bijdraagt aan dat eerste moment",
+            "In-app nudges toevoegen die docenten aanmoedigen om een collega uit te nodigen: een simpele knop na het genereren van de eerste feedback met de tekst 'Deel Eduface met een collega'. Dit is de goedkoopste virality mechanisme",
+            "Docent sign-ups die twee weken niet actief zijn geworden, reactief benaderen via ActiveCampaign: een persoonlijke email van Dante met de vraag of er een reden was waarom het niet lukte en een aanbod om te helpen. Dit zijn warme leads die bijna geactiveerd waren",
+          ]
+        }
+      },
+      {
+        name: "Activatiegraad en retentie optimalisatie",
+        desc: "Meten hoeveel sign-ups echt actief worden, waar de dropoff zit en wat er nodig is om de activatiegraad te verhogen, want een sign-up die niet activeert levert niets op voor pipeline of revenue",
+        status: "in ontwikkeling",
+        strategy: {
+          current: "De cost per sign-up is bekend maar de activatiegraad na sign-up is nog niet volledig gemeten. Hoeveel procent van de docenten die zich aanmelden genereren daadwerkelijk feedback? Hoeveel keren terug na de eerste sessie? Dit zijn de metrics die bepalen of de PLG funnel werkt.",
+          next: [
+            "Activatie definiëren als een concrete handeling: een docent die minimaal één AI-gegenereerde feedback heeft gegenereerd op een echte studentinzending is geactiveerd. Alles voor dat moment is nog niet geactiveerd en is een dropoff risico",
+            "Wekelijks dashboard opzetten met: nieuwe sign-ups, activatieratio, retentie na 7 dagen, retentie na 30 dagen, en split per accounttype docent versus student. Dit geeft de data om gerichte verbeteringen te maken",
+            "Dropoff punten in de onboarding identificeren via session recording tools zoals Hotjar of Microsoft Clarity. Waar verlaten de meeste gebruikers de flow? Die stap vereist directe aandacht",
+            "Email trigger instellen voor docenten die sign-up hebben gedaan maar 48 uur later nog geen feedback hebben gegenereerd: een korte email met een directe instructie en een link naar een 2 minuten tutorial video",
+            "Retentie verbeteren via een wekelijkse email met gebruik tips, nieuwe features en een herinnering aan de waarde die al is gegenereerd. Actieve gebruikers die terugkomen zijn de bron van mond-tot-mond aanbevelingen",
+          ]
+        }
+      },
+      {
+        name: "Cluster detectie naar enterprise outreach",
+        desc: "Automatische detectie van meerdere docenten van dezelfde instelling die zich aanmelden, als trigger voor Dante's proactieve enterprise outreach bij die instelling",
+        status: "in ontwikkeling",
+        strategy: {
+          current: "De cluster detectie strategie is bedacht maar nog niet volledig operationeel. Het principe is: als drie of meer docenten van dezelfde instelling zich hebben aangemeld voor een gratis account, is er organische interesse vanuit die instelling die een proactieve enterprise benadering rechtvaardigt.",
+          next: [
+            "Cluster definitie vaststellen: minimaal drie unieke docenten van dezelfde instelling op emaildomein binnen een periode van dertig dagen. Dit is het drempelpunt waarop Dante actief actie onderneemt",
+            "Automatische alert inrichten: wanneer een cluster wordt gedetecteerd, ontvangt Dante een Slack bericht of email met de naam van de instelling, het aantal docenten, de datum van eerste en laatste sign-up en de LinkedIn URL van de instelling",
+            "Dante voorzien van een specifiek script voor cluster outreach dat verschilt van zijn standaard cold outreach: hij kan refereren aan het feit dat meerdere collega's al met Eduface werken, wat de opening warmer maakt dan een volledig koude benadering",
+            "Cluster leads prioriteren boven koude outbound leads in Dante's dagelijkse werkwachtrij. Een instelling waar al organische adoptie plaatsvindt heeft een fundamenteel hogere conversiekans dan een instelling die nog nooit van Eduface heeft gehoord",
+            "Na de eerste enterprise gesprekken evalueren: welk percentage van cluster-getriggerde outreach leidt tot een Discovery gesprek? Als dit significant hoger is dan cold outreach, de cluster detectie zwaarder wegen in de pipeline prioritering",
+          ]
+        }
+      },
+      {
+        name: "In-product virality en netwerk effecten",
+        desc: "Mechanismen inbouwen in het product zelf die zorgen dat tevreden gebruikers het product organisch introduceren bij collega's, zonder dat Eduface daarvoor actief hoeft te pushen",
+        status: "nog niet gestart",
+        strategy: {
+          current: "Op dit moment zijn er geen in-product mechanismen die actief bijdragen aan organische verspreiding. De verspreiding van Eduface via gebruikers gebeurt passief als iemand het toevallig noemt aan een collega.",
+          next: [
+            "Docenten uitnodigen om collega's toe te voegen aan een gedeelde cursusomgeving: als meerdere docenten op één plek samenwerken aan feedback voor dezelfde cohort studenten, is dat ook een manier om het product te introduceren bij collega's die het nog niet kennen",
+            "Studenten die tevreden zijn met hun ontvangen feedback een mogelijkheid geven om dat te delen of om Eduface te noemen bij hun docent als ze het bij een nieuwe instelling verwachten. Studenten die Eduface kennen van hun vorige opleiding zijn ambassadeurs bij de volgende",
+            "Feedback rapporten en exports een Eduface branding meegeven: als een docent een feedbackrapport exporteert en dat intern deelt, is het logo en de naam van Eduface zichtbaar voor iedereen die het rapport ontvangt",
+            "Referral incentive voor docenten implementeren: een docent die een collega uitnodigt die vervolgens actief wordt, krijgt een maand extra capaciteit of een feature unlock. Laagdrempelig voor Eduface, hoge waardeperceptie voor de docent",
+          ]
+        }
+      },
+    ]
+  },
+  {
+    id: "J",
+    label: "Nurture & Email Marketing",
+    color: "#3498DB",
+    items: [
+      {
+        name: "Post-webinar conversie sequentie",
+        desc: "Een zeven-staps geautomatiseerde opvolging van elke webinar registrant die de warmte van een webinar omzet in geboekte Discovery gesprekken, de eerste workflow die volledig is geautomatiseerd",
+        status: "in ontwikkeling",
+        strategy: {
+          current: "Post-webinar opvolging is geïdentificeerd als de eerste workflow om te automatiseren voor Dante. Op dit moment wordt de follow-up ad hoc gedaan. De sequentie is uitgewerkt in categorie F maar leeft hier als de email en Lemlist automatisering die de sequentie uitvoert.",
+          next: [
+            "Sequentie bouwen in Lemlist met de volgende stappen: dag 1 automatisch bedankmail met opname link en drie kernpunten, dag 3 persoonlijke Dante DM via LinkedIn, dag 5 whitepaper email, dag 8 case study email, dag 12 demo uitnodiging, dag 20 telefonische opvolging als er interactie was, dag 30 afsluitende email met open vraag",
+            "Twee varianten van de sequentie bouwen: een voor aanwezigen die de volledige webinar hebben bijgewoond en een voor registranten die niet aanwezig waren. De boodschap is fundamenteel anders: aanwezigen krijgen een follow-up op iets wat ze hebben gezien, no-shows krijgen de opname als startpunt",
+            "Personalisatie inbouwen op instelling: als de registrant is afkomstig van een instelling met een bekende NSS score, dat cijfer noemen in de email om de relevantie te verhogen",
+            "Open rate, click rate en reply rate per stap bijhouden om te identificeren welke stap de meeste respons genereert en welke stap mensen uitschrijft. Na elke webinar een optimalisatieronde doen",
+          ]
+        }
+      },
+      {
+        name: "Long-term nurture voor koude prospects",
+        desc: "Een lange termijn drip sequentie voor prospects die niet direct converteren maar ook niet uitschrijven, zodat Eduface top-of-mind blijft tot het moment dat de timing wel goed is",
+        status: "nog niet gestart",
+        strategy: {
+          current: "Prospects die niet reageren op outbound of na een webinar niet converteren worden op dit moment niet actief warm gehouden. In HE zijn besluitvormingscycli lang en het moment van aankoop hangt vaak af van budgetcycli, accreditatiedeadlines of personele wisselingen. Lang-termijn nurture zorgt dat Eduface aanwezig is op het moment dat de timing verandert.",
+          next: [
+            "Een twaalf weken durende drip sequentie bouwen voor prospects die alle directe opvolging hebben doorlopen zonder te converteren: één email per twee weken met een mix van sector insights, een NSS data update, een klant success story en een zachte uitnodiging om opnieuw in gesprek te gaan",
+            "De drip koppelen aan sector momenten: in september een email over het nieuwe academische jaar en assessment planning, in januari een email over NSS voorbereiding, in juni een email met de nieuwe NSS resultaten en wat die betekenen voor de instelling",
+            "Uitschrijfdata analyseren: op welk moment in de drip schrijven de meeste mensen zich uit? Dat is het punt waarop de boodschap niet meer relevant genoeg is. Die email aanpassen of de frequentie verlagen",
+            "Een re-engagement email instellen na zes maanden inactiviteit: een directe vraag of de situatie is veranderd en of het een goed moment is om opnieuw te praten. Soms is een deal niet verloren maar gewoon gepauzeerd",
+          ]
+        }
+      },
+      {
+        name: "Klant onboarding en uitbreidingstriggers",
+        desc: "Email automatie die nieuwe klanten succesvol onboardt, hun gebruik monitort en op het juiste moment een uitbreidingsgesprek initieert voor meer faculties, meer gebruikers of een meerjarig contract",
+        status: "actief",
+        strategy: {
+          current: "ActiveCampaign onboarding flows zijn gebouwd voor docenten en studenten. De flows richten zich op activatie maar nog niet volledig op het identificeren van momenten waarop een klant klaar is voor uitbreiding of een langere contractvorm.",
+          next: [
+            "Milestone emails toevoegen die vieren wat er al is bereikt: na de eerste 100 gegenereerde feedbacks een email met de tijdsbesparing die dat heeft opgeleverd, na de eerste volledige examencyclus een overzicht van de resultaten. Dit herinnert de klant aan de waarde en bouwt interne ambassadeurs",
+            "Uitbreidingstrigger definiëren: als een klant consistent meer dan 80 procent van zijn beschikbare feedback volume gebruikt, is dat het signaal dat ze klaar zijn voor een groter pakket. Een automatische alert aan de CSM of aan Dante om dit gesprek aan te gaan",
+            "NPS survey inbouwen na de eerste succesvolle examencyclus: een eenvoudige vraag over de tevredenheid en de bereidheid om Eduface aan te bevelen. Hoge NPS respondenten zijn de eerste kandidaten voor een reference call of ambassadeur verzoek",
+            "Jaarlijks business review email sturen aan alle klanten drie maanden voor contractverlenging: een overzicht van alles wat is bereikt in het afgelopen jaar met concrete cijfers en een uitnodiging om de volgende stap te bespreken",
+          ]
+        }
+      },
+      {
+        name: "Newsletter als thought leadership kanaal",
+        desc: "Een maandelijkse HE assessment newsletter die waarde levert aan een breed publiek van leads, prospects en klanten tegelijk, en als anker dient voor alle content die Eduface al produceert",
+        status: "nog niet gestart",
+        strategy: {
+          current: "Er is geen structurele newsletter. Een newsletter is het meest kosteneffectieve kanaal om een breed publiek van leads, prospects en klanten tegelijk warm te houden met consistente waarde levering.",
+          next: [
+            "Newsletter format definiëren: één maandelijkse editie, maximaal 400 woorden, met de structuur: één sector observatie over assessment of AI in HE, één relevant datapunt uit de NSS of vergelijkbare bron, één Eduface update of klant resultaat, één aankondiging van het volgende webinar",
+            "Newsletter koppelen aan de LinkedIn Newsletter voor maximale distributie: dezelfde content gaat via email naar de ActiveCampaign lijst en via de LinkedIn Newsletter naar alle LinkedIn abonnees. Eén productie, twee distributiepunten",
+            "Inschrijving promoten op de websitepaginas met de meeste traffic, na elke webinar en in de outbound sequences als alternatief voor prospects die nog niet klaar zijn voor een demo",
+            "Open rate en click rate per editie bijhouden om te leren welke onderwerpen de meeste interesse wekken. De onderwerpen met de hoogste open rate zijn ook de beste topics voor blogs, webinars en LinkedIn posts",
+          ]
+        }
+      },
+    ]
+  },
+  {
+    id: "K",
+    label: "Review & Directory Listings",
+    color: "#F39C12",
+    items: [
+      {
+        name: "G2, Capterra en review platforms",
+        desc: "Een actief profiel op de belangrijkste EdTech review platforms met een systematisch review verzamelproces, zodat procurement teams die Eduface opzoeken een overtuigend extern beeld zien",
+        status: "nog niet gestart",
+        strategy: {
+          current: "Eduface is nog niet aanwezig op G2, Capterra of GetApp. Procurement teams en IT afdelingen van universiteiten gebruiken deze platforms actief als onderdeel van hun due diligence. Een ontbrekend of leeg profiel is een gemiste kans en soms een actief negatief signaal voor een evaluateur.",
+          next: [
+            "G2 profiel aanmaken en volledig invullen: categorie selectie op AI in Education en Assessment Software, productbeschrijving, screenshots van de interface, integratieoverzicht, en een video demo link. Een volledig profiel heeft een significant hogere conversie dan een leeg profiel",
+            "Capterra en GetApp profielen aanmaken parallel aan G2: dezelfde content maar aangepast aan de specifieke vereisten van elk platform. Capterra heeft een sterke positie in de UK markt",
+            "Review verzamelproces inrichten: na elke succesvolle onboarding van een docent een persoonlijk verzoek van Dante sturen om een review te schrijven op G2 of Capterra. Niet via een automatische email maar via een persoonlijk bericht omdat dat een significant hogere response rate heeft",
+            "Bestaande gebruikers en pilotdeelnemers van Bath Spa en De Haagse Hogeschool als eerste reviewers vragen. Dit zijn de mensen die de meeste ervaring hebben met het product en de meest gedetailleerde reviews kunnen schrijven",
+            "Reviews actief monitoren en beantwoorden: een reactie van Jeroen of Dante op elke review toont betrokkenheid en geeft toekomstige bezoekers van het profiel een positief beeld van de klantenservice",
+          ]
+        }
+      },
+      {
+        name: "Jisc supplier directory optimalisatie",
+        desc: "Het Jisc supplier directory profiel volledig optimaliseren als inbound kanaal voor UK instellingen die het Jisc framework gebruiken voor leveranciersselectie",
+        status: "actief",
+        strategy: {
+          current: "Eduface heeft goedgekeurd leveranciersstatus op het Jisc framework en is aanwezig in de Jisc supplier directory. Het profiel is functioneel maar nog niet volledig geoptimaliseerd als inbound discovery kanaal.",
+          next: [
+            "Profiel volledig bijwerken: gedetailleerde productbeschrijving gericht op de NSS Assessment en Feedback pijnpunten, alle integraties met Canvas, Brightspace, Moodle en Blackboard vermeld, prijsstructuur duidelijk beschreven inclusief Jisc framework kortingsstructuur",
+            "Bath Spa case study toevoegen aan het Jisc profiel zodra deze beschikbaar is: een referentie van een andere Jisc-aangesloten instelling is de sterkste social proof voor instellingen die het framework gebruiken",
+            "Keywords optimaliseren in de profielbeschrijving: assessment feedback, AI feedback, turnaround time, NSS improvement. Dit verhoogt de vindbaarheid binnen de Jisc directory zoekmachine",
+            "Jisc trust seals en compliance certificeringen toevoegen zodra ISO 27001 en SOC 2 zijn afgerond. Compliance badges zijn een actieve drempelverlagter voor procurement teams van UK instellingen",
+          ]
+        }
+      },
+      {
+        name: "EdTech directories en analyst listings",
+        desc: "Aanwezig zijn in de directories en rapporten die learning technology professionals en senior leiders in HE gebruiken als referentiepunt bij het evalueren van nieuwe tools",
+        status: "nog niet gestart",
+        strategy: {
+          current: "Eduface is nog niet aanwezig in de belangrijkste EdTech directories buiten het Jisc framework. Directories als EdTechImpact, HolonIQ en eLearning Industry worden actief gebruikt door HE professionals die marktoverzicht willen.",
+          next: [
+            "EdTechImpact profiel aanmaken: EdTechImpact is specifiek gericht op het UK onderwijs en heeft een actieve reviewgemeenschap van docenten en learning professionals. Een profiel hier is direct zichtbaar voor de doelgroep",
+            "HolonIQ radar verkennen: HolonIQ is het meest toonaangevende EdTech research en intelligence platform. Opgenomen worden in een HolonIQ EdTech radar geeft enorme geloofwaardigheid bij DVCs en investeerders. Contact opnemen met het HolonIQ team om te bespreken hoe Eduface in aanmerking komt",
+            "eLearning Industry Top Tools List: een jaarlijkse publicatie die veel wordt geciteerd in HE. Inschrijven voor de volgende editie en bestaande gebruikers vragen om te stemmen",
+            "Educause Horizon Report bijdragen: het Educause Horizon Report is het meest invloedrijke jaarlijkse rapport over technologietrends in het hoger onderwijs wereldwijd. Contact opnemen met het Educause onderzoeksteam om Eduface als casestudy of technologie-voorbeeld in te brengen",
+          ]
+        }
+      },
+    ]
+  },
+  {
+    id: "L",
+    label: "Community & Referral",
+    color: "#E74C3C",
+    items: [
+      {
+        name: "Bath Spa als eerste ambassadeur",
+        desc: "Hannah Lawrence en haar team bij Bath Spa systematisch activeren als de geloofwaardigste stem voor Eduface in de UK HE markt, via reference calls, LinkedIn posts en gezamenlijke communicatie",
+        status: "in ontwikkeling",
+        strategy: {
+          current: "Bath Spa is de meest geavanceerde deal in de UK pipeline met 96 procent pilot nauwkeurigheid en Hannah Lawrence als champion. Bath Spa is op het punt van formele klant worden. Zodra dat het geval is, is dit de krachtigste referentie die Eduface heeft in de hele UK markt.",
+          next: [
+            "Reference call protocol inrichten: zodra Bath Spa formeel klant is, Hannah Lawrence vragen om beschikbaar te zijn voor reference calls met andere prospects. Een gestructureerde 20 minuten call waarbij een nieuwe prospect Hannah rechtstreeks kan vragen naar haar ervaring is onvervangbaar als sales tool in de late deal fases",
+            "Gezamenlijke LinkedIn post plannen met Jeroen en Hannah bij de formele aankondiging van de samenwerking. Dit bereikt beide netwerken en is het eerste publieke bewijs van een UK institutionele klant",
+            "Bath Spa case study produceren zoals beschreven in categorie E en de case study ook aanbieden aan de Jisc communicatiekanalen als succesverhaal van een framework leverancier",
+            "Hannah Lawrence uitnodigen als gastspreker op de volgende UK webinar: een klant die vertelt over haar eigen ervaring is de meest overtuigende presentator die een webinar kan hebben",
+            "Actief bijhouden welke andere instellingen in de UK Hannah Lawrence kennen of met haar samenwerken. Warme introducties via haar netwerk zijn een directe shortcut naar deals die anders jaren zouden duren",
+          ]
+        }
+      },
+      {
+        name: "Formeel referral en ambassadeur systeem",
+        desc: "Een gestructureerd programma dat tevreden klanten en champions beloont voor het introduceren van Eduface bij nieuwe instellingen, met heldere afspraken over wat een referral oplevert",
+        status: "nog niet gestart",
+        strategy: {
+          current: "Er is geen formeel referral systeem. Organische mond-tot-mond aanbevelingen gebeuren maar zijn niet gestimuleerd of bijgehouden. In een sector als HE waar vertrouwen en reputatie cruciaal zijn voor aankoop, is een gestructureerd ambassadeursprogramma een van de meest rendabele investering.",
+          next: [
+            "Referral definitie en beloning vaststellen: een succesvolle referral is een nieuwe instelling die een pilot of licentie tekent na introductie door een bestaande klant. De beloning kan zijn een gratis jaar extra capaciteit, een korting op de volgende contractverlenging of een donatie aan een goed doel naar keuze van de klant",
+            "Ambassadeur criterium definiëren: een klant wordt ambassadeur na een volledig succesvolle eerste contractperiode met aantoonbare resultaten. Ambassadeurs zijn beschikbaar voor reference calls, bereid om te spreken op webinars en actief bereid om introducties te doen",
+            "Ambassadeursprogramma formeel lanceren zodra Bath Spa en De Haagse Hogeschool de eerste volledige contractperiode hebben afgerond. Niet te vroeg lanceren voordat er bewezen succes is",
+            "Referral tracking bijhouden in Close CRM: welke deals zijn binnengekomen via een referral, van wie, en wat was de gemiddelde sales cycle ten opzichte van cold outreach. Als referral deals sneller sluiten en een hogere ACV hebben, meer energie investeren in het actief stimuleren van referrals",
+          ]
+        }
+      },
+      {
+        name: "HE community aanwezigheid",
+        desc: "Aanwezig zijn in de online en offline communities waar learning technologists en HE professionals samenkomen, als waardevolle deelnemer die expertise deelt en niet als bedrijf dat iets verkoopt",
+        status: "nog niet gestart",
+        strategy: {
+          current: "Eduface is nog niet aanwezig in de online communities en Slack groepen waar Senior Learning Technologists en Learning Designers dagelijks actief zijn. Dit zijn de plekken waar tools worden aanbevolen en afgeraden zonder dat er een directe salesrelatie is.",
+          next: [
+            "ALT community aanwezig zijn: de Association for Learning Technology heeft een actieve online community op Discourse en een Slack workspace met duizenden learning professionals in het UK. Jeroen of Dante treden toe als reguliere deelnemers die waardevolle bijdragen leveren over assessment en feedback",
+            "Jisc community forums bijhouden en actief reageren op threads over assessment uitdagingen. Als iemand vraagt naar een oplossing voor feedback turnaround time is een helpend antwoord van Eduface zonder directe verkooppitch de beste eerste indruk",
+            "LinkedIn groepen voor HE professionals systematisch bijhouden: Higher Education Teaching and Learning, ALT Members Group, Learning Design in Higher Education. Elke thread over assessment of AI in het onderwijs is een kans om waarde te leveren en zichtbaarheid te bouwen",
+            "Community aanwezigheid strikt houden aan de waarde-eerst aanpak: nooit een direct product push in een community forum. De bekendheid die dat oplevert is negatief. Waardevolle bijdragen over een half jaar leiden tot organische vragen over wat Eduface doet",
+          ]
+        }
+      },
+      {
+        name: "Persoonlijk netwerk van Jeroen en Menno",
+        desc: "Het academische en professionele netwerk van de oprichters systematisch inzetten voor warme introducties, niet ad hoc maar als gestructureerd proces dat maandelijks wordt bijgehouden",
+        status: "in ontwikkeling",
+        strategy: {
+          current: "Jeroen en Menno hebben een netwerk van contacten uit hun eigen onderwijservaring en eerdere professionele rollen. Dit netwerk wordt incidenteel ingezet maar niet systematisch bijgehouden als introductiemotor.",
+          next: [
+            "Netwerk mapping uitvoeren: een lijst maken van iedereen in het netwerk van Jeroen en Menno die werkt bij of sterke connecties heeft met HE instellingen in de UK of NL. Close CRM gebruiken om bij te houden wie al is benaderd en wat het resultaat was",
+            "Maandelijks één warme introductie-verzoek doen per relevante contactpersoon: niet altijd voor een directe deal maar ook voor een kennismaking, een panelgesprek of een referral naar iemand anders die relevant is",
+            "Linkedin warm houden met contacten die later relevant kunnen zijn: likes en comments op posts van mensen in het netwerk die nog niet klaar zijn voor een gesprek maar over zes maanden wel kunnen zijn",
+            "Alumni netwerk van Leiden Universiteit en andere netwerken van Jeroen actief inzetten: alumni van dezelfde universiteit hebben een vertrouwensrelatie die een introductie aanzienlijk makkelijker maakt dan een cold outreach",
+          ]
+        }
+      },
+    ]
+  },
+  {
+    id: "M",
+    label: "Podcast & YouTube",
+    color: "#FF6B35",
+    items: [
+      {
+        name: "YouTube productserie: hoe Eduface werkt",
+        desc: "Een vaste YouTube serie van 8 tot 12 video's die stap voor stap uitlegt hoe Eduface werkt, welk probleem het oplost en hoe het er voor een docent in de praktijk uitziet, gericht op sceptische docenten en procurement teams",
+        status: "nog niet gestart",
+        strategy: {
+          current: "Er is nog geen YouTube kanaal of productserie. YouTube is zowel een zoekmachine als een contentplatform. Een goed uitgewerkte serie over Eduface en AI assessment is vindbaar via Google en YouTube zoeken, bruikbaar als salesmateriaal en herbruikbaar als LinkedIn clips en podcast audio.",
+          next: [
+            "De eerste vijf video's plannen met een duidelijke opbouw: video 1 is het probleem in twee minuten: waarom feedback in HE structureel tekortschiet en wat de NSS data daarover zegt, video 2 is hoe Eduface het probleem aanpakt inclusief een live demo van de interface, video 3 is een use case voor formatieve feedback in een specifieke discipline, video 4 is een use case voor summatieve feedback en grote groepen, video 5 is hoe de integratie met Canvas en Brightspace werkt",
+            "Productieformat kiezen dat haalbaar is: geen Hollywood productie maar een goede microfoon, een rustige achtergrond en een duidelijke structuur. Authenticiteit werkt beter dan overproductie voor B2B educational content. Opnemen in batches van drie of vier video's op één dag om voorraad op te bouwen",
+            "YouTube kanaal optimaliseren voor zoekbaarheid: elk video titel en beschrijving geschreven met relevante zoekwoorden, automatische transcriptie controleren en corrigeren voor SEO, tijdgestempelde hoofdstukken toevoegen zodat kijkers direct naar relevante secties kunnen springen",
+            "Elk video embedden op de relevante pagina van de Eduface website: de demo video op de homepage, de use case videos op de use case paginas, de integratie video op de integratiepagina. Dit verhoogt de time-on-page voor SEO en geeft bezoekers een reden om te blijven",
+            "Elke video ook aanbieden als audio fragment voor de podcast strategie en als twee korte clips voor LinkedIn. Eén opname, vier distributiemomenten",
+          ]
+        }
+      },
+      {
+        name: "YouTube klant stories",
+        desc: "Gefilmde gesprekken met docenten en leidinggevenden van Bath Spa en De Haagse Hogeschool die in hun eigen woorden vertellen wat Eduface voor hen betekent, het meest geloofwaardige videocontent dat Eduface kan maken",
+        status: "nog niet gestart",
+        strategy: {
+          current: "Klant video testimonials zijn nog niet geproduceerd. Een klant die in acht minuten vertelt over hun ervaring met Eduface is geloofwaardiger dan elke Eduface-eigen productievideo. Dit is de YouTube content die het meest wordt gebruikt in de late fases van een salesproces.",
+          next: [
+            "Zodra Bath Spa formeel klant is, een opnamedag plannen in Bath: een gesprek van 45 minuten met Hannah Lawrence dat wordt gemonteerd naar een video van 6 tot 8 minuten. De structuur: wie ben je en wat is je rol, welk probleem had je voor Eduface, hoe verliep de pilot, wat zijn de concrete resultaten, zou je het aanbevelen",
+            "Dezelfde aanpak voor De Haagse Hogeschool met Maartje Sijm: een Nederlandstalige klant story die deelbaar is in de Nederlandse markt en vertaalbaar naar ondertiteld Engels voor internationaal gebruik",
+            "Klant story video's inzetten als het ultimatum bewijs in stap 5 van het sales handbook bij de business case presentatie: prospects die twijfelen zien dan iemand van een vergelijkbare instelling die hun bezwaren al heeft gehad en overwonnen",
+            "Short cuts van 60 tot 90 seconden uit elke klant story maken voor gebruik als LinkedIn video, als begeleidende clip bij outreach emails en als embed op de case study landing page",
+          ]
+        }
+      },
+      {
+        name: "Guest appearances op HE podcasts",
+        desc: "Jeroen als terugkerende gast op de podcasts die DVCs, PVCs en learning professionals luisteren, als thought leader op het snijvlak van AI en assessment in HE",
+        status: "nog niet gestart",
+        strategy: {
+          current: "Er zijn nog geen podcast appearances geboekt. Guest podcast appearances zijn een van de meest onderschatte B2B marketing kanalen: je bereikt een highly engaged publiek dat actief heeft gekozen om te luisteren naar content over een specifiek onderwerp, en de episode blijft jaren vindbaar via podcast directories.",
+          next: [
+            "Lijst van relevante podcasts samenstellen: Teaching in Higher Ed is de meest beluisterde HE podcast in Noord-Amerika met relevantie voor UK markt, The EdTech Podcast van Sophie Bailey is specifiek gericht op UK EdTech en is gevolgd door veel learning professionals en DVCs, HE Professional en Wonkhe hebben eigen podcasts met directe doelgroep overlap",
+            "Pitch template schrijven voor podcast booking: een korte introductie van Jeroen, het thema dat hij kan bespreken inclusief zijn unieke datapunt via de NSS analyse, en een concreet voorstel voor de episode richting. Podcasts ontvangen veel pitches dus specificiteit is essentieel",
+            "Eerste drie targets benaderen met een gepersonaliseerde pitch die aansluit op recente episodes van die podcast: laat zien dat je de show kent en begrijpt wat het publiek interessant vindt",
+            "Na elke podcast episode een systeem voor hergebruik: volledige audio transcriptie als blog post, de beste quotes als LinkedIn posts, een korte clip als YouTube short en als LinkedIn video",
+          ]
+        }
+      },
+      {
+        name: "Content cross-platform distributie",
+        desc: "Een systeem dat ervoor zorgt dat elke YouTube video, podcast episode of webinar opname automatisch wordt omgezet naar content voor alle andere kanalen zodat de productieinvestering maximaal rendeert",
+        status: "nog niet gestart",
+        strategy: {
+          current: "Elk stuk video of audio content wordt op dit moment slechts op één platform gepubliceerd. De investering in productie is relatief hoog maar de distributie is minimaal. Een systematische cross-platform aanpak verhoogt de ROI van elke productie met een factor vier tot vijf zonder extra opnamekosten.",
+          next: [
+            "Productie workflow documenteren: elke YouTube video doorloopt automatisch de volgende stappen na publicatie: transcriptie genereren via de YouTube automatische transcriptie, de transcriptie opschonen en publiceren als blog post op eduface.me, twee korte clips knippen van 45 tot 90 seconden voor LinkedIn, het audio bestand exporteren voor podcast distributie via Spotify en Apple Podcasts, de video embedden op de relevante website pagina",
+            "Podcast feed aanmaken via een platform als Buzzsprout of Anchor: alle YouTube video's worden ook als audio aflevering gepubliceerd in een Eduface podcast feed. Dit kost geen extra productietijd en bereikt een nieuw publiek dat liever luistert dan kijkt",
+            "YouTube Shorts aanmaken van de meest impactvolle 60 seconden van elke video: YouTube Shorts worden door het algoritme extra gepromoot en bereiken een publiek buiten de vaste abonnees",
+            "Publicatiekalender bijhouden per content stuk: op welke dag gaat de YouTube video live, op welke dag de blog post, op welke dag de LinkedIn clips, op welke dag de podcast aflevering. Spreiding over de week zorgt voor dagelijkse aanwezigheid op basis van wekelijkse productieinspanning",
+          ]
+        }
+      },
+    ]
+  },
+];
+
+const SAVED_TOOLS = {
+  "A": [
+    {
+      "name": "GEO/SEO Tool",
+      "desc": "Keyword research, backlink analyse, content gap en technische SEO audit",
+      "price": 99,
+      "note": "Meest complete SEO toolset",
+      "selected": true
+    },
+    {
+      "name": "Google Search Console",
+      "desc": "Indexatiestatus, zoekterm impressies en crawl errors rechtstreeks van Google",
+      "price": 0,
+      "note": "Gratis",
+      "selected": true
+    },
+    {
+      "name": "Google Ads",
+      "desc": "Beschrijving...",
+      "price": 300,
+      "note": "",
+      "selected": true
+    },
+    {
+      "name": "Replit of Claude Code",
+      "desc": "Beschrijving...",
+      "price": 100,
+      "note": "",
+      "selected": true
+    },
+    {
+      "name": "Figma",
+      "desc": "Beschrijving...",
+      "price": 20,
+      "note": "",
+      "selected": true
+    },
+    {
+      "name": "Framer",
+      "desc": "Beschrijving...",
+      "price": 75,
+      "note": "",
+      "selected": true
+    }
+  ],
+  "B": [
+    {
+      "name": "LinkedIn Sales Navigator Core",
+      "desc": "ICP targeting op functietitel en instelling, account alerts en CRM-sync",
+      "price": 99,
+      "note": "Per gebruiker per maand",
+      "selected": true
+    },
+    {
+      "name": "Lemlist Sales Engagement",
+      "desc": "LinkedIn én email outreach sequences gecombineerd in één flow (al actief)",
+      "price": 110,
+      "note": "Per gebruiker per maand",
+      "selected": true
+    },
+    {
+      "name": "Email enrichment",
+      "desc": "Prospect enrichment, ICP kwalificatie en gepersonaliseerde data per instelling (al actief)",
+      "price": 30,
+      "note": "Growth plan",
+      "selected": true
+    },
+    {
+      "name": "Alternatief voor AC",
+      "desc": "Email warming, deliverability monitoring en sending account rotatie",
+      "price": 50,
+      "note": "Aanvullend op Lemlist voor bulk email",
+      "selected": false
+    },
+    {
+      "name": "Close CRM",
+      "desc": "CRM voor pipeline en deal management",
+      "price": 19,
+      "note": "",
+      "selected": true
+    }
+  ],
+  "C": [
+    {
+      "name": "Buffer Team",
+      "desc": "Multi-kanaal social media scheduling voor LinkedIn company page en teamgoedkeuring",
+      "price": 24,
+      "note": "Team plan ~$12/kanaal, 2 kanalen",
+      "selected": true
+    },
+    {
+      "name": "Canva Pro",
+      "desc": "Carrousels, covers, document posts en visuele templates voor consistent LinkedIn design",
+      "price": 15,
+      "note": "Per gebruiker per maand",
+      "selected": true
+    },
+    {
+      "name": "Taplio",
+      "desc": "LinkedIn-specifieke scheduling, AI contentgeneratie, carrousel maker en post analytics",
+      "price": 39,
+      "note": "Sterkste LinkedIn-only tool",
+      "selected": false
+    },
+    {
+      "name": "Shield Analytics",
+      "desc": "Diepgaande analytics voor Jeroen en Dante hun LinkedIn profielen en post performance",
+      "price": 25,
+      "note": "Per profiel per maand",
+      "selected": false
+    }
+  ],
+  "D": [
+    {
+      "name": "Meta Ads Manager",
+      "desc": "Meta campagne beheer voor lead gen forms, lookalike audiences en retargeting",
+      "price": 150,
+      "note": "Advertentiebudget (niet toolkosten)",
+      "selected": true
+    },
+    {
+      "name": "Google Display",
+      "desc": "Google Display en retargeting campagnes voor website bezoekers",
+      "price": 150,
+      "note": "Advertentiebudget (niet toolkosten)",
+      "selected": true
+    },
+    {
+      "name": "LinkedIn Campaign Manager",
+      "desc": "LinkedIn Ads beheer: Sponsored Content, Conversation Ads en retargeting",
+      "price": 0,
+      "note": "Gratis — advertentiebudget is apart",
+      "selected": false
+    },
+    {
+      "name": "Supermetrics",
+      "desc": "Ads rapportage vanuit LinkedIn, Meta en Google Ads gecombineerd",
+      "price": 69,
+      "note": "Starter plan",
+      "selected": false
+    }
+  ],
+  "E": [
+    {
+      "name": "Claude",
+      "desc": "AI assistent voor het schrijven van whitepapers, case studies en content",
+      "price": 90,
+      "note": "",
+      "selected": true
+    },
+    {
+      "name": "Outgrow Freelancer",
+      "desc": "Interactieve ROI calculator en lead capture tool",
+      "price": 55,
+      "note": "Freelancer plan",
+      "selected": false
+    },
+    {
+      "name": "Notion Plus",
+      "desc": "Content kalender, schrijfomgeving en teamdocumentatie",
+      "price": 10,
+      "note": "Per gebruiker per maand",
+      "selected": false
+    }
+  ],
+  "F": [
+    {
+      "name": "Microsoft Teams/Luma",
+      "desc": "Webinar hosting en event registratiebeheer",
+      "price": 19,
+      "note": "",
+      "selected": true
+    },
+    {
+      "name": "ALTC Conferentie",
+      "desc": "Association for Learning Technology jaarlijkse conferentie UK",
+      "price": 300,
+      "note": "Jaarlijks, omgerekend per maand",
+      "selected": true
+    },
+    {
+      "name": "Jisc Digifest",
+      "desc": "Jisc jaarlijkse digitale HE conferentie",
+      "price": 550,
+      "note": "Jaarlijks, omgerekend per maand",
+      "selected": true
+    },
+    {
+      "name": "SURF Onderwijs Innovatie",
+      "desc": "SURF sectorconferentie voor Nederlandse HO instellingen",
+      "price": 50,
+      "note": "",
+      "selected": true
+    },
+    {
+      "name": "OEB Conferentie",
+      "desc": "Online Educa Berlin — internationale EdTech conferentie",
+      "price": 350,
+      "note": "Jaarlijks, omgerekend per maand",
+      "selected": true
+    },
+    {
+      "name": "Riverside.fm Pro",
+      "desc": "Hoge kwaliteit remote video-opname voor webinar recordings",
+      "price": 24,
+      "note": "Pro plan",
+      "selected": false
+    },
+    {
+      "name": "Descript Pro",
+      "desc": "Video en audio post-productie met AI transcriptie",
+      "price": 24,
+      "note": "Creator plan",
+      "selected": false
+    }
+  ],
+  "G": [
+    {
+      "name": "Wonkhe",
+      "desc": "Sector media platform voor opiniestukken, PR en aanwezigheid in UK HE beleidsdiscussies",
+      "price": 200,
+      "note": "",
+      "selected": true
+    },
+    {
+      "name": "Connectively (HARO)",
+      "desc": "Journalist pitch platform voor thought leadership quotes",
+      "price": 0,
+      "note": "Gratis basisversie",
+      "selected": false
+    },
+    {
+      "name": "Mention Solo",
+      "desc": "Real-time monitoring van Eduface brand mentions in media en social",
+      "price": 41,
+      "note": "Solo plan, 3 alerts",
+      "selected": false
+    }
+  ],
+  "H": [
+    {
+      "name": "Close CRM",
+      "desc": "CRM voor partner tracking en referral deal management (al actief)",
+      "price": 0,
+      "note": "Al betaald als hoofd-CRM",
+      "selected": true
+    },
+    {
+      "name": "Typeform Basic",
+      "desc": "Partner intake formulieren en referral aanvraag flows",
+      "price": 29,
+      "note": "Basic plan",
+      "selected": false
+    },
+    {
+      "name": "PartnerStack Growth",
+      "desc": "Volledig partner en referral programma management",
+      "price": 500,
+      "note": "Overweeg pas bij 10+ actieve partners",
+      "selected": false
+    }
+  ],
+  "I": [
+    {
+      "name": "Mouseflow",
+      "desc": "Session recordings, heatmaps en gebruikersgedrag analyse voor product optimalisatie",
+      "price": 25,
+      "note": "Starter plan",
+      "selected": true
+    },
+    {
+      "name": "Mixpanel Starter",
+      "desc": "Product analytics, funnel tracking en retention cohorts",
+      "price": 0,
+      "note": "Gratis tot 20M events per maand",
+      "selected": false
+    },
+    {
+      "name": "Intercom Essential",
+      "desc": "In-app onboarding berichten en triggered nudges voor docenten",
+      "price": 39,
+      "note": "Essential plan",
+      "selected": false
+    }
+  ],
+  "J": [
+    {
+      "name": "Breveo",
+      "desc": "Email marketing en nurture automatisering",
+      "price": 49,
+      "note": "",
+      "selected": true
+    },
+    {
+      "name": "ActiveCampaign Plus",
+      "desc": "Email automation en behavioral lifecycle flows (al actief)",
+      "price": 49,
+      "note": "Plus plan, tot 1.000 contacten",
+      "selected": false
+    },
+    {
+      "name": "Beehiiv Scale",
+      "desc": "Newsletter platform met groeitools en analytics",
+      "price": 49,
+      "note": "Scale plan",
+      "selected": false
+    }
+  ],
+  "K": [
+    {
+      "name": "G2 Free Listing",
+      "desc": "Profiel aanmaken en reviews verzamelen op G2",
+      "price": 0,
+      "note": "Gratis basis listing",
+      "selected": true
+    },
+    {
+      "name": "Capterra Free Listing",
+      "desc": "Profiel op Capterra en GetApp voor procurement teams",
+      "price": 0,
+      "note": "Gratis basis listing",
+      "selected": true
+    },
+    {
+      "name": "Senja Growth",
+      "desc": "Geautomatiseerd testimonials en reviews verzamelen",
+      "price": 29,
+      "note": "Growth plan",
+      "selected": false
+    }
+  ],
+  "L": [
+    {
+      "name": "ReferralHero Starter",
+      "desc": "Referral programma met tracking en beloningsbeheer",
+      "price": 49,
+      "note": "Starter plan",
+      "selected": false
+    },
+    {
+      "name": "Circle Professional",
+      "desc": "Online community platform voor klanten en ambassadeurs",
+      "price": 89,
+      "note": "Professional plan",
+      "selected": false
+    }
+  ],
+  "M": [
+    {
+      "name": "Descript Pro",
+      "desc": "Video en audio editing met AI transcriptie voor YouTube en podcast",
+      "price": 24,
+      "note": "Creator plan",
+      "selected": true
+    },
+    {
+      "name": "Talking head video productie",
+      "desc": "Professionele videoproductie voor YouTube klant stories en productserie",
+      "price": 1200,
+      "note": "Maandelijks budget voor videograaf/productie",
+      "selected": true
+    },
+    {
+      "name": "Buzzsprout Unlimited",
+      "desc": "Podcast hosting en distributie naar Spotify en Apple Podcasts",
+      "price": 18,
+      "note": "Unlimited plan",
+      "selected": false
+    },
+    {
+      "name": "Opus Clip Pro",
+      "desc": "AI video clipping voor YouTube Shorts en LinkedIn clips",
+      "price": 15,
+      "note": "Pro plan",
+      "selected": false
+    }
+  ]
+};
+const ITEM_NAME_OVERRIDES = {
+  "D": {
+    "2": "Retargeting ecosysteem + Google Display"
+  },
+  "E": {
+    "2": "Competitor comparison content voor sales"
+  }
+};
+
+function deepCopy(o){return JSON.parse(JSON.stringify(o))}
+
+function migrateTask(t){
+  if(typeof t==='object'&&t!==null&&t.text!==undefined) return t;
+  return {text:String(t||''),status:'open',owner:null};
+}
+function initData(){
+  return CATEGORIES.map(cat=>{
+    const savedTools = SAVED_TOOLS[cat.id];
+    const tools = savedTools
+      ? savedTools.map(t=>({...t}))
+      : (TOOLS[cat.id]||[]).map(t=>({...t,selected:false}));
+    const nameOverrides = ITEM_NAME_OVERRIDES[cat.id] || {};
+    return {
+      ...deepCopy(cat),
+      budget:0,
+      tools,
+      items:cat.items.map((item,ii)=>({
+        ...deepCopy(item),
+        name: nameOverrides[ii]!==undefined ? nameOverrides[ii] : item.name,
+        strategy:{
+          current:(item.strategy&&item.strategy.current)||'',
+          next:((item.strategy&&item.strategy.next)||[]).map(migrateTask)
+        }
+      }))
+    };
+  });
+}
+
+let DATA;
+try{const s=localStorage.getItem('ef_fw_v4');DATA=s?JSON.parse(s):initData();}
+catch(e){DATA=initData();}
+
+let activeId=null;
+
+function save(){
+  try{localStorage.setItem('ef_fw_v4',JSON.stringify(DATA));}catch(e){}
+  updateTotal();
+  flashSaved();
+  scheduleAutoSave();
+}
+
+function flashSaved(){
+  const dot=document.getElementById('save-dot');
+  const lbl=document.getElementById('save-label');
+  if(!dot)return;
+  dot.classList.add('saved');
+  if(lbl) lbl.textContent='Opgeslagen in browser ✓';
+  clearTimeout(flashSaved._t);
+  flashSaved._t=setTimeout(()=>{
+    dot.classList.remove('saved');
+    if(lbl) lbl.textContent='Wijzigingen worden automatisch bewaard in deze browser';
+  },2500);
+}
+
+function showToast(msg,color){
+  const t=document.getElementById('toast');
+  if(!t)return;
+  t.textContent=msg;
+  t.style.color=color||'#3DBB6B';
+  t.style.borderColor=color?color.replace(')',',0.3)').replace('rgb','rgba'):'rgba(61,187,107,.3)';
+  t.style.opacity='1';
+  clearTimeout(showToast._t);
+  showToast._t=setTimeout(()=>t.style.opacity='0',3000);
+}
+
+function exportData(){
+  try{
+    const json=JSON.stringify(DATA,null,2);
+    const blob=new Blob([json],{type:'application/json'});
+    const url=URL.createObjectURL(blob);
+    const a=document.createElement('a');
+    a.href=url;
+    const d=new Date().toISOString().slice(0,10);
+    a.download='eduface_framework_'+d+'.json';
+    a.click();
+    URL.revokeObjectURL(url);
+    showToast('\u2713 Bestand opgeslagen als eduface_framework_'+d+'.json');
+  }catch(err){alert('Opslaan mislukt: '+err.message);}
+}
+
+function importData(){
+  const input=document.createElement('input');
+  input.type='file';
+  input.accept='.json,application/json';
+  input.onchange=ev=>{
+    const file=ev.target.files[0];
+    if(!file)return;
+    const reader=new FileReader();
+    reader.onload=e=>{
+      try{
+        const loaded=JSON.parse(e.target.result);
+        if(!Array.isArray(loaded)||!loaded[0]||!loaded[0].id)
+          throw new Error('Ongeldig bestandsformaat');
+        DATA=loaded;
+        localStorage.setItem('ef_fw_v4',JSON.stringify(DATA));
+        activeId=null;
+        renderAll();
+        showToast('\u2713 Bestand geladen: '+file.name);
+      }catch(err){
+        showToast('Laden mislukt: '+err.message,'#E85D75');
+      }
+    };
+    reader.readAsText(file);
+  };
+  input.click();
+}
+
+function copyStateToClipboard(){
+  try{
+    const json=JSON.stringify(DATA,null,2);
+    navigator.clipboard.writeText(json).then(()=>{
+      showToast('\u2713 Status gekopieerd naar klembord — plak dit in een tekstbestand om op te slaan');
+    });
+  }catch(e){
+    const ta=document.createElement('textarea');
+    ta.value=JSON.stringify(DATA,null,2);
+    document.body.appendChild(ta);ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+    showToast('\u2713 Gekopieerd naar klembord');
+  }
+}
+
+function resetData(){
+  if(!confirm('Alle wijzigingen, budgetten en toolselecties wissen?'))return;
+  localStorage.removeItem('ef_fw_v4');
+  DATA=initData();activeId=null;renderAll();
+}
+
+function getCat(id){return DATA.find(c=>c.id===id);}
+
+function e(s){
+  return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function sbadge(s){
+  const c=STATUS[s]||STATUS['nog niet gestart'];
+  return `<span class="sbadge" style="background:${c.bg};color:${c.color}"><span class="dot" style="background:${c.dot}"></span>${c.label}</span>`;
+}
+
+function rgba(hex,a){
+  const r=parseInt(hex.slice(1,3),16),g=parseInt(hex.slice(3,5),16),b=parseInt(hex.slice(5,7),16);
+  return `rgba(${r},${g},${b},${a})`;
+}
+
+function fmtPrice(p){
+  if(p===0||p===null||p===undefined)return null;
+  return '€'+Number(p).toLocaleString('nl-NL')+'/mo';
+}
+
+/* ---- Tools ---- */
+
+// ── Status & owner calculations ────────────────────────────────────────────
+function calcItemStatus(item){
+  const tasks=(item.strategy&&item.strategy.next||[]).map(migrateTask);
+  if(!tasks.length) return item.status||'nog niet gestart';
+  const klaar=tasks.filter(t=>t.status==='klaar').length;
+  if(klaar===tasks.length) return 'actief';
+  const active=tasks.filter(t=>['eenmalig','wekelijks','maandelijks'].includes(t.status)).length;
+  if(active>0) return 'actief';
+  const overleg=tasks.filter(t=>t.status==='overleggen').length;
+  if(overleg>0) return 'in ontwikkeling';
+  return 'nog niet gestart';
+}
+function calcItemOwner(item){
+  const tasks=(item.strategy&&item.strategy.next||[]).map(migrateTask).filter(t=>t.owner);
+  if(!tasks.length) return null;
+  const cnt={};
+  tasks.forEach(t=>{cnt[t.owner]=(cnt[t.owner]||0)+1;});
+  return Object.entries(cnt).sort((a,b)=>b[1]-a[1])[0][0];
+}
+function calcCatMeta(cat){
+  const statuses=cat.items.map(calcItemStatus);
+  const total=statuses.length;
+  const actief=statuses.filter(s=>s==='actief').length;
+  const dev=statuses.filter(s=>s==='in ontwikkeling').length;
+  const none=statuses.filter(s=>s==='nog niet gestart').length;
+  let label,color;
+  if(actief===total){label='Alles actief';color='#3DBB6B';}
+  else if(actief>total/2){label='Grotendeels actief';color='#3DBB6B';}
+  else if(actief>0||dev>0){label='In uitvoering';color='#F5A623';}
+  else{label='Nog te starten';color:'#555E6E';color='#555E6E';}
+  return {label,color,statuses};
+}
+function sortTasks(tasks){
+  return [...tasks].sort((a,b)=>{
+    const ai=TS_ORDER.indexOf(a.status||'open');
+    const bi=TS_ORDER.indexOf(b.status||'open');
+    return ai-bi;
+  });
+}
+
+function buildTools(cat){
+  const tools=cat.tools||[];
+  const selCost=tools.filter(t=>t.selected&&t.price>0).reduce((s,t)=>s+t.price,0);
+  const toolCards=tools.map((t,ti)=>{
+    return `<div class="tool-card${t.selected?' selected':''}" onclick="toggleTool('${cat.id}',${ti})">
+      <button class="tool-del" onclick="event.stopPropagation();removeTool('${cat.id}',${ti})" title="Verwijderen">&times;</button>
+      <div class="tool-check">${t.selected?'&#10003;':''}</div>
+      <div class="tool-info">
+        <input class="tool-edit-name" value="${e(t.name)}"
+          onclick="event.stopPropagation()"
+          onblur="setToolName('${cat.id}',${ti},this.value)"
+          placeholder="Naam tool...">
+        <div class="tool-desc">${e(t.desc)}</div>
+      </div>
+      <div class="tool-right" onclick="event.stopPropagation()">
+        <div style="display:flex;align-items:center;gap:3px">
+          <span style="font-size:11px;color:#9B59B6">€</span>
+          <input class="tool-edit-price" type="number" min="0" step="1"
+            value="${t.price}"
+            onblur="setToolPrice('${cat.id}',${ti},this.value)"
+            placeholder="0">
+          <span style="font-size:10px;color:#555E6E">/mo</span>
+        </div>
+        <div class="tool-note">${e(t.note||'')}</div>
+      </div>
+    </div>`;
+  }).join('');
+
+  return `<div class="tools-section">
+    <div class="tools-header">
+      <div class="slabel sv">&#128295; Aanbevolen tools &amp; software</div>
+      ${selCost>0?`<div class="tools-cost-summary">Geselecteerd: €${selCost}/mo</div>`:'<div class="tools-cost-summary" style="color:#3A4152;border-color:rgba(255,255,255,.05)">Vink tools aan om kosten bij te houden</div>'}
+    </div>
+    <div class="tools-grid">${toolCards}</div>
+    <button class="add-tool-btn" onclick="addTool('${cat.id}')">+ Tool toevoegen</button>
+  </div>`;
+}
+
+/* ---- Expanded ---- */
+function buildTaskRow(catId,ii,task,si){
+  const ts=TS[task.status||'open']||TS.open;
+  const ow=OW[task.owner||null]||OW[null];
+  const isKlaar=task.status==='klaar';
+  const statusOpts=TS_ORDER.map(s=>`<option value="${s}"${task.status===s?' selected':''}>${TS[s].label}</option>`).join('');
+  const ownerOpts=[
+    `<option value=""${!task.owner?' selected':''}>–</option>`,
+    `<option value="jeroen"${task.owner==='jeroen'?' selected':''}>Jeroen</option>`,
+    `<option value="dante"${task.owner==='dante'?' selected':''}>Dante</option>`,
+    `<option value="samen"${task.owner==='samen'?' selected':''}>Samen</option>`,
+  ].join('');
+  return `<div class="task-row${isKlaar?' task-klaar':''}">
+    <div class="task-bullet">•</div>
+    <textarea class="task-text" rows="1"
+      onblur="setTaskText('${catId}',${ii},${si},this.value)"
+      oninput="autoR(this)">${e(task.text||'')}</textarea>
+    <div class="task-meta">
+      <select class="task-select" style="background:${ts.bg};color:${ts.color};border-color:${ts.color}44"
+        onchange="setTaskStatus('${catId}',${ii},${si},this.value)">${statusOpts}</select>
+      <select class="task-select task-owner-sel" style="background:${ow.bg};color:${ow.color};border-color:${ow.color}44"
+        onchange="setTaskOwner('${catId}',${ii},${si},this.value)">${ownerOpts}</select>
+      <div class="del-btn" onclick="removeTask('${catId}',${ii},${si})">&times;</div>
+    </div>
+  </div>`;
+}
+
+function buildExpanded(cat){
+  const bg=rgba(cat.color,0.08);
+  const itemsHtml=cat.items.map((item,ii)=>{
+    const calcSt=calcItemStatus(item);
+    const calcOw=calcItemOwner(item);
+    const sCfg=STATUS[calcSt]||STATUS['nog niet gestart'];
+    const oCfg=OW[calcOw||null]||OW[null];
+    // Sort tasks and keep original indices for correct data addressing
+    const rawTasks=(item.strategy.next||[]).map(migrateTask);
+    const indexed=rawTasks.map((t,si)=>({t,si}));
+    const sorted=[...indexed].sort((a,b)=>{
+      return TS_ORDER.indexOf(a.t.status||'open')-TS_ORDER.indexOf(b.t.status||'open');
+    });
+    const tasksHtml=sorted.map(({t,si})=>buildTaskRow(cat.id,ii,t,si)).join('');
+    return `<div class="iexp" style="border-left:3px solid ${cat.color}">
+      <div class="iexp-hd">
+        <input class="edit-name" value="${e(item.name)}" onblur="setItemName('${cat.id}',${ii},this.value)" placeholder="Naam...">
+      </div>
+      <div class="item-status-row">
+        <div class="item-calc-status" style="background:${sCfg.bg||'rgba(139,149,161,.12)'};color:${sCfg.color||'#8B95A1'}">
+          <div class="dot" style="background:${sCfg.dot||sCfg.color||'#8B95A1'}"></div>${sCfg.label}
+        </div>
+        ${calcOw?`<div class="item-owner-chip" style="background:${oCfg.bg};color:${oCfg.color}">
+          Eigenaar: ${calcOw.charAt(0).toUpperCase()+calcOw.slice(1)}</div>`:''}
+      </div>
+      <textarea class="edit-desc" rows="2" onblur="setItemDesc('${cat.id}',${ii},this.value)"
+        oninput="autoR(this)" placeholder="Beschrijving...">${e(item.desc)}</textarea>
+      <div class="slabel sg">Huidige aanpak</div>
+      <textarea class="edit-current" onblur="setCurrent('${cat.id}',${ii},this.value)"
+        oninput="autoR(this)" placeholder="Huidige aanpak...">${e(item.strategy.current)}</textarea>
+      <div class="slabel sb" style="margin-top:14px;margin-bottom:8px">Taken</div>
+      <div class="tasks-wrap" id="tw-${cat.id}-${ii}">${tasksHtml}</div>
+      <button class="add-task-btn" onclick="addTask('${cat.id}',${ii})">+ Taak toevoegen</button>
+    </div>`;
+  }).join('');
+  return `<div class="exp-box" style="background:#141927;border:1.5px solid ${cat.color};box-shadow:0 0 40px ${rgba(cat.color,0.09)}">
+    <div class="exp-hd">
+      <div class="exp-left">
+        <div class="cid" style="width:36px;height:36px;border-radius:10px;background:${bg};border:1.5px solid ${cat.color}55;color:${cat.color};display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0">${cat.id}</div>
+        <div><div class="exp-title">${e(cat.label)}</div><div class="exp-sub">${cat.items.length} onderdelen</div></div>
+      </div>
+      <button class="close-btn" onclick="closeExp()">Sluiten</button>
+    </div>
+    ${itemsHtml}
+    ${buildTools(cat)}
+  </div>`;
+}
+
+function renderExp(){
+  const el=document.getElementById('exp');
+  if(!activeId){el.innerHTML='';return;}
+  const cat=getCat(activeId);
+  el.innerHTML=buildExpanded(cat);
+  el.querySelectorAll('textarea').forEach(autoR);
+  el.scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+
+/* ---- Grid ---- */
+function buildCard(cat){
+  const bg=rgba(cat.color,0.13);
+  const isA=activeId===cat.id;
+  const ac=cat.items.filter(i=>i.status==='actief').length;
+  const dv=cat.items.filter(i=>i.status==='in ontwikkeling').length;
+  const bud=cat.budget||0;
+  const toolSel=(cat.tools||[]).filter(t=>t.selected&&t.price>0).reduce((s,t)=>s+t.price,0);
+  const combined=bud+toolSel;
+  const catMeta=calcCatMeta(cat);
+  const rows=cat.items.map(i=>{
+    const cs=calcItemStatus(i);
+    const cfg=STATUS[cs]||STATUS['nog niet gestart'];
+    const co=calcItemOwner(i);
+    const oCfg=OW[co||null];
+    return `<div class="irow">
+      <div class="iname">${e(i.name)}</div>
+      <div style="display:flex;align-items:center;gap:4px">
+        ${co?`<div class="task-owner" style="background:${oCfg.bg};color:${oCfg.color};width:16px;height:16px;font-size:8px;cursor:default">${oCfg.label}</div>`:''}
+        <div class="dot" style="background:${cfg.dot||cfg.color}"></div>
+      </div>
+    </div>`;
+  }).join('');
+  const metaParts=[];
+  // Status dots row
+  const dotsHtml=cat.items.map(i=>{
+    const cs=calcItemStatus(i);
+    const cfg=STATUS[cs]||STATUS['nog niet gestart'];
+    return `<div class="cat-dot" style="background:${cfg.dot||cfg.color}" title="${e(i.name)}: ${cfg.label}"></div>`;
+  }).join('');
+  metaParts.push(`<div class="cat-status-dots">${dotsHtml}<span class="cat-status-label" style="color:${catMeta.color}">${catMeta.label}</span></div>`);
+  if(combined>0){
+    const parts=[];
+    if(bud>0) parts.push(`€${bud.toLocaleString('nl-NL')} budget`);
+    if(toolSel>0) parts.push(`€${toolSel.toLocaleString('nl-NL')} tools`);
+    metaParts.push(`<span class="tag tg">&#128176; €${combined.toLocaleString('nl-NL')}/mo</span>`);
+  }
+  const tags=[ac?`<span class="tag tg">${ac} actief`:'',dv?`<span class="tag ty">${dv} in dev</span>`:'',`<span class="tag tb">${isA?'Sluiten':'Uitklappen'}</span>`].join('');
+  return `<div class="card${isA?' active':''}" data-id="${cat.id}"
+    style="${isA?`border-color:${cat.color};box-shadow:0 0 20px ${rgba(cat.color,0.2)}`:''}"
+    onclick="toggle('${cat.id}')">
+    <div class="card-hd">
+      <div class="cid" style="background:${bg};border:1.5px solid ${cat.color}55;color:${cat.color}">${cat.id}</div>
+      <div class="cname" style="${isA?'color:#fff':''}">${e(cat.label)}</div>
+    </div>
+    <div class="items">${rows}</div>
+    <div class="card-meta" style="display:flex;flex-direction:column;gap:4px;margin-bottom:10px">${metaParts.join('')}</div>
+    <div class="foot">${tags}</div>
+  </div>`;
+}
+
+function renderGrid(){document.getElementById('grid').innerHTML=DATA.map(buildCard).join('');}
+
+/* ---- Total ---- */
+function updateTotal(){
+  const manualTotal=DATA.reduce((s,c)=>s+(parseFloat(c.budget)||0),0);
+  const toolsTotal=DATA.reduce((s,c)=>s+((c.tools||[]).filter(t=>t.selected&&t.price>0).reduce((ss,t)=>ss+t.price,0)),0);
+  const grand=manualTotal+toolsTotal;
+  document.getElementById('t-manual').textContent='€'+manualTotal.toLocaleString('nl-NL');
+  document.getElementById('t-tools').textContent='€'+toolsTotal.toLocaleString('nl-NL');
+  document.getElementById('t-total').textContent='€'+grand.toLocaleString('nl-NL');
+  const pills=[];
+  DATA.forEach(c=>{
+    const b=parseFloat(c.budget)||0;
+    const t=(c.tools||[]).filter(x=>x.selected&&x.price>0).reduce((s,x)=>s+x.price,0);
+    if(b>0||t>0){
+      const total=b+t;
+      pills.push(`<span class="pill" style="background:${rgba(c.color,0.15)};color:${c.color}">${c.id}: €${total.toLocaleString('nl-NL')}</span>`);
+    }
+  });
+  document.getElementById('total-pills').innerHTML=pills.length?pills.join(''):'<span style="font-size:11px;color:#3A4152">Voeg budgetten toe of selecteer tools om het totaal te zien</span>';
+}
+
+/* ---- Actions ---- */
+function toggle(id){activeId=(activeId===id)?null:id;renderAll();}
+function closeExp(){activeId=null;renderAll();}
+
+function setItemName(id,ii,v){getCat(id).items[ii].name=v.trim();save();renderGrid();}
+function setItemDesc(id,ii,v){getCat(id).items[ii].desc=v.trim();save();}
+function setCurrent(id,ii,v){getCat(id).items[ii].strategy.current=v;save();}
+function setBudget(id,v){getCat(id).budget=parseFloat(v)||0;save();renderGrid();}
+
+function setTaskText(id,ii,si,v){
+  const t=getCat(id).items[ii].strategy.next[si];
+  if(t) t.text=v;
+  save();
+}
+function setTaskStatus(id,ii,si,v){
+  const t=getCat(id).items[ii].strategy.next[si];
+  if(t){t.status=v;save();renderExp();renderGrid();}
+}
+function setTaskOwner(id,ii,si,v){
+  const t=getCat(id).items[ii].strategy.next[si];
+  if(t){t.owner=v||null;save();renderExp();renderGrid();}
+}
+function addTask(id,ii){
+  getCat(id).items[ii].strategy.next.push({text:'Nieuwe taak...',status:'open',owner:null});
+  save();renderExp();
+  const tw=document.getElementById('tw-'+id+'-'+ii);
+  if(tw){const tas=tw.querySelectorAll('.task-text');if(tas.length){tas[tas.length-1].focus();tas[tas.length-1].select();}}
+}
+function removeTask(id,ii,si){
+  if(!confirm('Taak verwijderen?'))return;
+  getCat(id).items[ii].strategy.next.splice(si,1);save();renderExp();renderGrid();
+}
+
+function toggleTool(id,ti){
+  const t=getCat(id).tools[ti];
+  t.selected=!t.selected;
+  save();renderExp();renderGrid();
+}
+function addTool(id){
+  getCat(id).tools.push({name:'Nieuwe tool',desc:'Beschrijving...',price:0,note:'',selected:false});
+  save();renderExp();
+}
+function removeTool(id,ti){
+  if(!confirm('Tool verwijderen?'))return;
+  getCat(id).tools.splice(ti,1);save();renderExp();renderGrid();
+}
+function setToolName(id,ti,v){
+  const t=getCat(id).tools[ti];
+  t.name=v.trim()||t.name;
+  save();
+}
+function setToolPrice(id,ti,v){
+  const t=getCat(id).tools[ti];
+  t.price=parseFloat(v)||0;
+  save();renderExp();renderGrid();updateTotal();
+}
+
+function autoR(el){el.style.height='auto';el.style.height=el.scrollHeight+'px';}
+
+function renderAll(){renderGrid();renderExp();updateTotal();}
+
+// ── Cloud sync ─────────────────────────────────────────────────────────────
+// Uses jsonblob.com with corsproxy.io as fallback
+const BLOB_BASE = 'https://jsonblob.com/api/jsonBlob';
+const PROXY     = 'https://corsproxy.io/?url=';
+let blobId = null;
+let autoSaveTimer = null;
+let isSaving = false;
+
+function getBlobIdFromUrl(){
+  const m = (window.location.hash||'').match(/id=([a-zA-Z0-9]+)/);
+  return m ? m[1] : null;
+}
+
+function setCloudLabel(msg, color){
+  const dot = document.getElementById('save-dot');
+  const lbl = document.getElementById('save-label');
+  if(dot){ dot.style.background = color||'#555E6E'; dot.classList.toggle('saved', color==='#3DBB6B'); }
+  if(lbl) lbl.textContent = msg;
+}
+
+function activateCloudUI(){
+  const link = document.getElementById('btn-link');
+  const info = document.getElementById('cloud-info-bar');
+  const btn  = document.getElementById('btn-cloud');
+  if(link) link.style.display='';
+  if(info) info.style.display='';
+  if(btn){ btn.innerHTML='<span>&#9729;</span> Cloud actief'; btn.style.background='rgba(61,187,107,.15)'; btn.style.color='#3DBB6B'; btn.style.border='1px solid rgba(61,187,107,.3)'; btn.onclick=null; }
+}
+
+// Robust fetch: try direct, then CORS proxy
+async function robustFetch(url, opts){
+  // Try direct
+  try {
+    const r = await fetch(url, {mode:'cors', ...opts});
+    if(r.status !== 0) return {res: r, proxied: false};
+  } catch(e) {}
+  // Try via proxy
+  const r2 = await fetch(PROXY + encodeURIComponent(url), opts);
+  return {res: r2, proxied: true};
+}
+
+async function cloudSave(isManual){
+  if(isSaving) return;
+  isSaving = true;
+  setCloudLabel('Opslaan in cloud...', '#F5A623');
+  const body = JSON.stringify(DATA);
+
+  try {
+    if(!blobId){
+      // Create new blob
+      const {res, proxied} = await robustFetch(BLOB_BASE, {
+        method:'POST',
+        headers:{'Content-Type':'application/json','Accept':'application/json'},
+        body
+      });
+      if(!res.ok) throw new Error('HTTP ' + res.status);
+
+      // Get ID from Location header
+      let loc = res.headers.get('Location') || '';
+      blobId = loc.split('/').pop();
+
+      // Fallback: parse from response body
+      if(!blobId || blobId.length < 5){
+        try { const j = await res.json(); if(j && j.id) blobId = String(j.id); } catch(e){}
+      }
+      if(!blobId || blobId.length < 5) throw new Error('Kon geen blob ID ophalen. Probeer het opnieuw.');
+
+      localStorage.setItem('ef_blob_id', blobId);
+      window.location.hash = 'id=' + blobId;
+      activateCloudUI();
+    } else {
+      // Update existing blob
+      const {res} = await robustFetch(BLOB_BASE + '/' + blobId, {
+        method:'PUT',
+        headers:{'Content-Type':'application/json','Accept':'application/json'},
+        body
+      });
+      if(!res.ok) throw new Error('HTTP ' + res.status);
+    }
+
+    const now = new Date().toLocaleTimeString('nl-NL');
+    setCloudLabel('✓ Auto-opgeslagen om ' + now, '#3DBB6B');
+    const lu = document.getElementById('cloud-lastupdate');
+    if(lu) lu.textContent = 'Automatisch opgeslagen om ' + now;
+    if(isManual) showToast('✓ Verbonden — deel de deellink met je team');
+
+  } catch(err){
+    setCloudLabel('Cloud opslaan mislukt: ' + err.message, '#E85D75');
+    if(isManual) showToast('Mislukt: ' + err.message + '. Probeer opnieuw of gebruik lokaal opslaan.', '#E85D75');
+  }
+  isSaving = false;
+}
+
+// Debounced auto-save: triggers 3s after last change
+function scheduleAutoSave(){
+  if(!blobId) return; // Only auto-save once connected
+  clearTimeout(autoSaveTimer);
+  autoSaveTimer = setTimeout(()=> cloudSave(false), 3000);
+}
+
+async function cloudLoad(){
+  if(!blobId) return false;
+  try {
+    const {res} = await robustFetch(BLOB_BASE + '/' + blobId, {
+      headers:{'Accept':'application/json'}
+    });
+    if(!res.ok) return false;
+    const loaded = await res.json();
+    if(!Array.isArray(loaded)||!loaded[0]||!loaded[0].id) return false;
+    DATA = loaded;
+    localStorage.setItem('ef_fw_v4', JSON.stringify(DATA));
+    return true;
+  } catch(e){ return false; }
+}
+
+async function cloudRefresh(){
+  if(!blobId){ showToast('Nog niet verbonden — klik eerst op Verbind met cloud', '#F5A623'); return; }
+  setCloudLabel('Verversen...', '#F5A623');
+  const ok = await cloudLoad();
+  if(ok){
+    activeId = null; renderAll();
+    const now = new Date().toLocaleTimeString('nl-NL');
+    setCloudLabel('✓ Vernieuwd om ' + now, '#3DBB6B');
+    const lu = document.getElementById('cloud-lastupdate');
+    if(lu) lu.textContent = 'Handmatig ververst om ' + now;
+    showToast('✓ Laatste versie geladen');
+  } else {
+    setCloudLabel('Verversen mislukt — controleer je verbinding', '#E85D75');
+    showToast('Verversen mislukt', '#E85D75');
+  }
+}
+
+function copyShareLink(){
+  if(!blobId){ showToast('Verbind eerst met cloud', '#F5A623'); return; }
+  const url = window.location.href.split('#')[0] + '#id=' + blobId;
+  navigator.clipboard.writeText(url).then(()=>{
+    showToast('✓ Deellink gekopieerd — stuur naar specialisten via WhatsApp of email');
+  }).catch(()=>{
+    const ta=document.createElement('textarea'); ta.value=url;
+    document.body.appendChild(ta); ta.select(); document.execCommand('copy'); document.body.removeChild(ta);
+    showToast('✓ Deellink gekopieerd');
+  });
+}
+
+// Init: load from cloud if ID in URL or localStorage
+(async function initCloud(){
+  const fromUrl = getBlobIdFromUrl();
+  const fromStorage = localStorage.getItem('ef_blob_id');
+  blobId = fromUrl || fromStorage;
+  if(!blobId) return;
+
+  if(fromUrl && fromUrl !== fromStorage) localStorage.setItem('ef_blob_id', blobId);
+  setCloudLabel('Cloud versie laden...', '#F5A623');
+  const ok = await cloudLoad();
+  if(ok){
+    activeId=null; renderAll();
+    const now = new Date().toLocaleTimeString('nl-NL');
+    setCloudLabel('✓ Cloud versie geladen om ' + now, '#3DBB6B');
+    activateCloudUI();
+    const lu = document.getElementById('cloud-lastupdate');
+    if(lu) lu.textContent = 'Geladen om ' + now;
+  } else {
+    blobId=null; localStorage.removeItem('ef_blob_id');
+    setCloudLabel('Verbinding mislukt — lokale versie geladen', '#E85D75');
+  }
+})();
+
+renderAll();
+</script>
+</body>
+</html>

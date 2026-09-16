@@ -1,0 +1,72 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1200px;height:900px}
+  body{display:flex;align-items:center;justify-content:center}
+  svg{display:block}
+</style></head>
+<body>
+<!-- BLOG: How accurate is AI marking, really?  → bullseye + dart hitting centre -->
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="75%">
+      <stop offset="0%" stop-color="#f4faf7"/>
+      <stop offset="100%" stop-color="#e3edef"/>
+    </radialGradient>
+    <radialGradient id="board" cx="38%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#0c3a4e"/>
+      <stop offset="60%" stop-color="#002333"/>
+      <stop offset="100%" stop-color="#001721"/>
+    </radialGradient>
+    <radialGradient id="green" cx="35%" cy="28%" r="80%">
+      <stop offset="0%" stop-color="#5dffb4"/>
+      <stop offset="45%" stop-color="#00e075"/>
+      <stop offset="100%" stop-color="#007b54"/>
+    </radialGradient>
+    <radialGradient id="shaft" cx="40%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#1d4d61"/>
+      <stop offset="100%" stop-color="#04293a"/>
+    </radialGradient>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="20" stdDeviation="26" flood-color="#012130" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softsm" x="-60%" y="-60%" width="220%" height="220%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#012130" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <!-- ambient accents -->
+  <circle cx="195" cy="200" r="20" fill="#00e075" opacity="0.9" filter="url(#softsm)"/>
+  <circle cx="1010" cy="710" r="14" fill="#007b54" opacity="0.85" filter="url(#softsm)"/>
+  <circle cx="980" cy="180" r="10" fill="#00e075" opacity="0.6"/>
+
+  <!-- dartboard -->
+  <g filter="url(#soft)">
+    <circle cx="600" cy="450" r="250" fill="url(#board)"/>
+    <circle cx="600" cy="450" r="250" fill="none" stroke="#ffffff" stroke-opacity="0.06" stroke-width="2"/>
+  </g>
+  <circle cx="600" cy="450" r="196" fill="none" stroke="#00e075" stroke-opacity="0.35" stroke-width="10"/>
+  <circle cx="600" cy="450" r="140" fill="none" stroke="#ffffff" stroke-opacity="0.16" stroke-width="10"/>
+  <circle cx="600" cy="450" r="92"  fill="none" stroke="#00e075" stroke-opacity="0.55" stroke-width="11"/>
+  <!-- raised centre -->
+  <g filter="url(#softsm)">
+    <circle cx="600" cy="450" r="50" fill="url(#green)"/>
+    <ellipse cx="586" cy="434" rx="20" ry="13" fill="#ffffff" opacity="0.35"/>
+  </g>
+
+  <!-- dart hitting the bullseye, coming from upper-right -->
+  <g transform="rotate(38 600 450)">
+    <!-- shaft -->
+    <rect x="592" y="120" width="18" height="330" rx="9" fill="url(#shaft)" filter="url(#softsm)"/>
+    <!-- flights -->
+    <path d="M601 120 L560 70 L601 92 Z" fill="#00e075"/>
+    <path d="M601 120 L642 70 L601 92 Z" fill="#007b54"/>
+    <path d="M601 92 L566 56 L601 78 Z" fill="#00e075" opacity="0.85"/>
+    <path d="M601 92 L636 56 L601 78 Z" fill="#007b54" opacity="0.85"/>
+    <!-- tip -->
+    <path d="M592 450 L610 450 L601 486 Z" fill="#ffffff"/>
+  </g>
+</svg>
+</body></html>

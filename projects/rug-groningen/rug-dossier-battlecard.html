@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  @page { size: A4 portrait; margin: 12mm 13mm; }
+  :root{
+    --navy:#002333;--green:#00E075;--green2:#067a43;--green3:#008F5A;
+    --ink:#13242c;--grey:#6c7d85;--line:#e4eaed;--bg:#f7fafb;
+    --amber:#b8860b;--red:#b3261e;--purple:#5b3ea8;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Inter',sans-serif;color:var(--ink);font-size:10.4px;line-height:1.45;
+       -webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  h1{font-family:'League Spartan',sans-serif;color:var(--navy);font-size:20px;line-height:1;}
+  h2{font-family:'League Spartan',sans-serif;color:#fff;background:var(--navy);font-size:13px;
+     padding:5px 11px;border-radius:6px;margin:16px 0 9px;letter-spacing:.02em;break-after:avoid;}
+  h3{font-family:'League Spartan',sans-serif;color:var(--navy);font-size:11.5px;margin:10px 0 4px;}
+  .sub{color:var(--grey);font-size:9.5px;margin-top:3px;}
+  .brand{font-family:'League Spartan';font-weight:800;font-size:16px;color:var(--navy);}
+  .brand .fx{color:var(--green3);}
+  .titlebar{display:flex;justify-content:space-between;align-items:flex-end;
+            border-bottom:3px solid var(--green);padding-bottom:7px;margin-bottom:4px;}
+  p{margin-bottom:5px;}
+  b{color:var(--navy);}
+  .src{color:var(--grey);font-size:8.6px;font-style:italic;}
+  section{break-inside:avoid;}
+
+  /* snapshot */
+  .snap{display:flex;gap:9px;margin:11px 0 2px;}
+  .kpi{flex:1;background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:8px 10px;text-align:center;}
+  .kpi .v{font-family:'League Spartan';font-size:17px;color:var(--navy);}
+  .kpi .l{font-size:8.4px;color:var(--grey);text-transform:uppercase;letter-spacing:.08em;margin-top:2px;}
+  .kpi.warn .v{color:var(--red);}
+
+  /* tables */
+  table{width:100%;border-collapse:collapse;margin:4px 0 6px;}
+  th{background:var(--navy);color:#fff;font-size:8.8px;text-transform:uppercase;letter-spacing:.05em;
+     padding:5px 7px;text-align:left;font-family:'League Spartan';font-weight:700;}
+  td{border:1px solid var(--line);padding:5px 7px;vertical-align:top;font-size:9.5px;}
+  tr:nth-child(even) td{background:#fafcfc;}
+  .lvl{font-family:'League Spartan';font-weight:700;font-size:9px;text-align:center;white-space:nowrap;}
+  .sc{text-align:center;font-weight:700;font-family:'League Spartan';}
+  .g0{color:var(--red);} .g1{color:var(--amber);} .g2{color:var(--green2);}
+
+  /* validation badges */
+  .vb{font-weight:700;font-size:8.6px;padding:2px 7px;border-radius:20px;white-space:nowrap;font-family:'League Spartan';}
+  .v-ok{background:#d9f7e7;color:#067a43;}
+  .v-part{background:#fbeecf;color:#8a5b00;}
+  .v-no{background:#eef2f4;color:#56707d;}
+
+  /* stakeholder pills */
+  .role{font-weight:700;font-size:8.6px;padding:2px 8px;border-radius:20px;white-space:nowrap;font-family:'League Spartan';}
+  .r-eb{background:#e6eef6;color:#1b4f7a;} .r-champ{background:#fbeecf;color:#8a5b00;}
+  .r-coach{background:#d9f7e7;color:#067a43;} .r-enemy{background:#fde4e4;color:#b3261e;}
+  .r-swing{background:#ece3fb;color:#5b3ea8;} .r-ally{background:#d9f7e7;color:#067a43;}
+  .r-fan{background:#d9f7e7;color:#067a43;} .r-neut{background:#eef2f4;color:#56707d;}
+
+  .chain{background:var(--bg);border:1px solid var(--line);border-left:4px solid var(--green);
+         border-radius:8px;padding:8px 11px;font-size:9.6px;margin:6px 0;}
+  ul{margin:2px 0 6px 16px;} li{margin-bottom:3px;}
+  .note{background:#fff8e6;border:1px solid #ecd9a3;border-radius:7px;padding:6px 10px;font-size:9.2px;margin:5px 0;}
+  .foot{font-size:7.6px;color:var(--grey);text-align:center;margin-top:12px;border-top:1px solid var(--line);padding-top:6px;}
+</style>
+</head>
+<body>
+
+<div class="titlebar">
+  <div>
+    <h1>RUG deal-dossier &amp; battle card</h1>
+    <div class="sub">Rijksuniversiteit Groningen (CIT) · SaaS-pilot → institutionele licentie · stand 1 juli 2026 · vertrouwelijk</div>
+  </div>
+  <div class="brand">Edu<span class="fx">face</span></div>
+</div>
+
+<div class="snap">
+  <div class="kpi"><div class="v">Discovery</div><div class="l">Sales stage</div></div>
+  <div class="kpi warn"><div class="v">6%</div><div class="l">MEDDPICC score</div></div>
+  <div class="kpi"><div class="v">~17%</div><div class="l">Benchmark discovery</div></div>
+  <div class="kpi"><div class="v">30 juni</div><div class="l">Laatste meeting</div></div>
+</div>
+<p class="src">Score 6% ligt onder de discovery-benchmark (~17%). Betekenis: we staan echt aan het begin. De grote gaten: pijn nog niet geowned, geen metrics, geen champion, decision criteria onbekend.</p>
+
+<!-- ============ MEDDPICC ============ -->
+<h2>1 · MEDDPICC-stand</h2>
+<table>
+  <tr><th style="width:15%">Lever</th><th style="width:8%">Gewicht</th><th style="width:20%">Huidig niveau</th><th style="width:7%">Score</th><th>Volgende actie om te verhogen</th></tr>
+  <tr><td><b>Metrics</b></td><td class="sc">3</td><td class="lvl">Unknown</td><td class="sc g0">0</td><td>Nog geen waarde-/succesmetrics. In vervolggesprek current-state meten (nakijktijd, volume, kosten) en gewenste uitkomst kwantificeren.</td></tr>
+  <tr><td><b>Economic Buyer</b></td><td class="sc">4</td><td class="lvl">Identified</td><td class="sc g2">8</td><td>EB = Nolda Tipping-Griffioen (CIO). We kennen haar, nog geen toegang. Via Reinard/Tessa richting een EB-moment werken.</td></tr>
+  <tr><td><b>Decision Criteria</b></td><td class="sc">3</td><td class="lvl">Unknown</td><td class="sc g0">0</td><td>Buying criteria onbekend. Met champion vaststellen (privacy/AVG, eigen LLM, Brightspace-integratie) vóór een POV.</td></tr>
+  <tr><td><b>Decision Process</b></td><td class="sc">2</td><td class="lvl">Outlined</td><td class="sc g1">4</td><td>Grove stappen bekend. Volledig proces + approvers mappen: wie hakt knoop door, welke gremia, welke timing (besluit projectplan).</td></tr>
+  <tr><td><b>Paper Process</b></td><td class="sc">2</td><td class="lvl">Unknown</td><td class="sc g0">0</td><td>Inkoop-/legal-route onbekend. Later: verwerkersovereenkomst, security-review, aanbestedingsdrempel checken.</td></tr>
+  <tr><td><b>Identify Pain</b></td><td class="sc">3</td><td class="lvl">Unknown</td><td class="sc g0">0</td><td>Pijn is door ons onderzocht maar nog niet door RUG erkend/geowned. Ze moeten het zelf benoemen (vacaturestop → nakijklast op docenten).</td></tr>
+  <tr><td><b>Champion</b></td><td class="sc">4</td><td class="lvl">None (coach)</td><td class="sc g0">0</td><td>Tessa = coach, geen champion. Reinard van Dalen ontwikkelen tot champion; Rob Nijenkamp als tweede ingang (data).</td></tr>
+  <tr><td><b>Competition</b></td><td class="sc">2</td><td class="lvl">Identified</td><td class="sc g1">4</td><td>Enemy bekend: zelfbouw (UG Grader), FeedbackFruits, niets doen. Differentiators positioneren: eigen EU-LLM, AI Act-proof, human-in-the-loop.</td></tr>
+</table>
+<p class="src">Totaal 16 / 250 = 6%. Bron: MEDDPICC SSO-grid, ingevuld 1 juli 2026.</p>
+<div class="note"><b>Wat dit stuurt:</b> de drie hefbomen met het hoogste gewicht en score 0 zijn <b>Pijn (3), Decision Criteria (3) en Champion (4)</b>. Daar de meeste waarde te winnen. Volgorde: pijn laten erkennen → champion bouwen (Reinard/Rob) → criteria samen zetten.</div>
+
+<!-- ============ ORGANOGRAM ============ -->
+<h2>2 · Stakeholdermap / organogram (CIT)</h2>
+<p>Rollen volgens CRO-assessment (John McMahon-logica). Een inschatting, geen vaststaand feit. Volledige visuele versie: <b>organogram.pdf</b>.</p>
+
+<div class="chain"><b>Rapportagelijn:</b> Tessa Jansen (coördinator) → Reinard van Dalen (teamlead ICT for Education) → Louwarnoud van der Duim (domeinmanager Onderwijs / ESI) → Nolda Tipping-Griffioen (algemeen directeur CIT / CIO).</div>
+
+<table>
+  <tr><th style="width:22%">Persoon</th><th style="width:26%">Functie</th><th style="width:16%">Rol in deal</th><th>Waarom</th></tr>
+  <tr><td><b>Nolda Tipping-Griffioen</b></td><td>Algemeen Directeur CIT / CIO</td><td><span class="role r-eb">Economic Buyer</span></td><td>"Geen Big Tech", digitale autonomie, waarden-gedreven. Eduface (EU, eigen LLM) = bullseye.</td></tr>
+  <tr><td><b>Louwarnoud van der Duim</b></td><td>Domeinmanager Onderwijs / Hoofd ESI</td><td><span class="role r-swing">Beslisser</span></td><td>Beslist build-vs-buy. Sunk cost in UG Grader, budget onder druk (€45M-bezuiniging).</td></tr>
+  <tr><td><b>Reinard van Dalen</b></td><td>Teamlead ICT for Education</td><td><span class="role r-champ">Champion (te ontwikkelen)</span></td><td>Leidt het bouwteam én gelooft in automatisch nakijken. Kan champion óf enemy worden. Prioriteit #1: onze kant op trekken.</td></tr>
+  <tr><td><b>Tessa Jansen</b></td><td>Coördinator Onderwijsapplicaties · Innovatie &amp; AI</td><td><span class="role r-coach">Coach</span></td><td>Jouw ingang. Ex-Noordhoff, zoekt een AI-nakijktool.</td></tr>
+  <tr><td><b>Rob Nijenkamp</b></td><td>Education Data Scientist · Team Educational Institutional Research (Bouma)</td><td><span class="role r-fan">Fan-kandidaat</span></td><td>Bouwt uitval-voorspelmodel. Learning analytics / data-hoek = onze platform-pitch. Kritisch op cijfers, dus eerlijk brengen.</td></tr>
+  <tr><td><b>Allard Naber</b> (+ Ivo Pot, Bas Wiebing)</td><td>Coördinatoren Onderwijsapplicaties / Scrum</td><td><span class="role r-enemy">Enemy</span></td><td>Gezicht van de zelfbouw-toetsstack (D2L-case). Externe AI-tool ondergraaft hun portfolio.</td></tr>
+  <tr><td><b>Vera Hommes</b></td><td>Privacy &amp; Security Coördinator</td><td><span class="role r-ally">Ally te winnen</span></td><td>AVG/security-gate. Ally zodra ons compliance-verhaal klopt.</td></tr>
+  <tr><td><b>Loes Schaafsma</b></td><td>Directeur School of Science &amp; Engineering (FSE)</td><td><span class="role r-champ">Champion (mogelijk)</span></td><td>Aparte lijn buiten CIT. Vindt learning analytics belangrijk (prijswinnend LA-team). Parallel bewerken.</td></tr>
+</table>
+<div class="note"><b>CRO-assessment:</b> EB = Nolda (digitale-autonomie-waarde = grootste hefboom). Champion = Reinard (autoriteit + invloed op van der Duim). Coach = Tessa (ingang). Swing = van der Duim (build-vs-buy). Enemy = bouwkamp. Tweede route = Rob (data) en Loes (FSE, learning analytics).</div>
+
+<!-- ============ WAT WE WETEN ============ -->
+<h2>3 · Wat we hebben geleerd over de RUG</h2>
+
+<h3>Pijn &amp; financiën</h3>
+<ul>
+  <li><b>Externe inhuur 2024: €46,6M</b> tegen €15,0M begroot, ruim 3x over budget. <span class="src">Jaarverslag 2024, p.144.</span></li>
+  <li><b>Vacaturestop sinds 9 maart 2026:</b> geen nieuwe vacatures/tijdelijke contracten, inhuur aan banden. <b>2 uitzonderingen:</b> kritieke functies met expliciete CvB-goedkeuring, en procedures die vóór 9 maart al liepen. <span class="src">UKrant / OOG, maart 2026.</span></li>
+  <li>Bredere <b>€45M-bezuiniging t/m 2030.</b> Doel van de stop: gedwongen ontslagen voorkomen.</li>
+  <li>Bonden waarschuwen dat de <b>werkdruk stijgt</b>: nakijkwerk valt terug op vast, al overbelast personeel.</li>
+  <li><b>Student-assistenten:</b> piek 1.749 (2021), ~€500/mnd per stuk. Maar: een SA <b>mag een tentamen niet formeel beoordelen</b>, alleen een aangewezen examinator mag dat (WHW art. 7.12c jo. 7.10). SA's ondersteunen onder supervisie, de docent blijft eindverantwoordelijk. <span class="src">Honoré Advocaten; Onderwijsinspectie.</span></li>
+</ul>
+
+<h3>Buy-vs-build (de centrale deal-dynamiek)</h3>
+<ul>
+  <li><b>UG Grader = handmatige rubric-tool</b> (bevestigd door Adekunle), geen AI-feedback. Exam Analysis = alleen MC. Het open-tekst nakijken ligt nog volledig bij docenten.</li>
+  <li><b>UG-AI Platform:</b> CIT AI Office bouwt een eigen, zelf-gehoste AI-gateway + lokale LLM. Dit is een <b>enabler, geen nakijk-concurrent</b>. Hier gaat de €10,5M "AI / Digitale Soevereiniteit" uit de begroting 2026 naartoe.</li>
+  <li>Zelf een AI-nakijksysteem bouwen = nieuw product + volledige EU AI Act-last + structurele kosten, midden in een bezuiniging. RUG koopt al extern in waar dat sneller is (FeedbackFruits), dus buy is geen taboe.</li>
+</ul>
+
+<h3>Strategische fit (uit hun eigen stukken)</h3>
+<ul>
+  <li>Instellingsbegroting 2026: strategische inzet op <b>"AI en digitale soevereiniteit"</b>. Eduface past daar exact in.</li>
+  <li>FEB noemt zelf "bezuinigingen (bijv. inzet AI)". GMW zoekt "minder arbeidsintensieve vormen" en rolde de <b>Heymans AI-tool</b> uit (apart academisch zelfbouw-spoor, GMW).</li>
+</ul>
+
+<h3>Compliance (onze sterkste hoek)</h3>
+<ul>
+  <li>EU AI Act: AI die leerresultaten beoordeelt = <b>hoog-risico</b> (Annex III), verplichtingen vanaf <b>2 augustus 2026</b>.</li>
+  <li>RUG's eigen AI-beleid (dec 2023): Rule 8 = human-in-the-loop verplicht; Rule 6 = verwerkersovereenkomst + AVG. Eduface voldoet 1-op-1 (EU-bedrijf, eigen LLM, EU-gehost).</li>
+  <li><b>Datalek-risico (HAN-case):</b> SQL-injectie → ~530.000 mensen, AP-boete €175.000, rechter €300 p.p. Ongecontroleerd AI-gebruik op studentwerk = dezelfde blootstelling. <span class="src">NB: niet claimen dat studenten wegbleven, instroom steeg juist.</span></li>
+</ul>
+
+<h3>Bewijs &amp; waarde</h3>
+<ul>
+  <li><b>Bath Spa University (pilot juni 2026):</b> 94% match met docent (96% in OBM), 435 submissions, 6 vakken / 3 disciplines, 13 docenten. Label als <b>sectorvalidatie</b>, niet RUG.</li>
+  <li><b>Tilburg University:</b> lopende pilot in NL. Zeg "we draaien al een pilot", geen afgerond succesverhaal.</li>
+  <li><b>Eduface-formule (per submissie):</b> nakijktijd T = 15 min (NL-sectorbasislijn), uurkostprijs U ≈ €50 academisch / €22,5 SA, efficiencywinst R = 48-78%. Voorbeeld (48%): besparing ~€6/submissie → €300k-€1,2M/jaar afhankelijk van volume. <b>Alleen echt te valideren in een pilot.</b> <span class="src">Schatting, expliciet zo benoemen.</span></li>
+</ul>
+
+<h3>Eerdere contacten met de RUG</h3>
+<table>
+  <tr><th style="width:26%">Faculteit / lijn</th><th style="width:34%">Wie</th><th>Waarom stilgevallen</th></tr>
+  <tr><td><b>Rechten</b></td><td>Eerst Bas Beijer, later Adekunle</td><td>Bas ging met pensioen.</td></tr>
+  <tr><td><b>Economie &amp; Bedrijfskunde (FEB)</b></td><td>Koos Winnips</td><td>Koos lange tijd niet aan het werk.</td></tr>
+  <tr><td><b>NPuls</b></td><td>Tom Spits (NPuls-coördinator RUG)</td><td>Zag de tool als interessant, maar zag de noodzaak nog niet.</td></tr>
+</table>
+<p class="src">Reinard van Dalen zat in deze trajecten vaak in de CC. Tom Spits' "nog geen noodzaak" is nu juist verschoven door de vacaturestop.</p>
+
+<!-- ============ DISCOVERY VALIDATIE ============ -->
+<h2>4 · Discovery-vragen &amp; validatie-status</h2>
+<p>Per vraag: weten we het antwoord al (gevalideerd via onderzoek), deels (sectorsignaal, RUG moet bevestigen), of nog niet (moeten we ophalen).</p>
+<table>
+  <tr><th style="width:6%">#</th><th style="width:56%">Vraag</th><th style="width:16%">Status</th><th>Wat we (niet) weten</th></tr>
+  <tr><td class="sc">1</td><td>Klopt het dat er sinds maart 2026 geen externe krachten meer ingehuurd mogen worden, op uitzonderingen na?</td><td><span class="vb v-ok">Gevalideerd</span></td><td>Feit bevestigd (9 maart 2026, 2 uitzonderingen). Vraag dient als bevestiging + opening.</td></tr>
+  <tr><td class="sc">2</td><td>Wat betekent dat voor het nakijken? Valt uitbesteed werk nu terug op vast personeel?</td><td><span class="vb v-part">Deels</span></td><td>Sectorsignaal (bonden: werkdruk stijgt). RUG-specifiek nog niet bevestigd, dit moeten zij benoemen.</td></tr>
+  <tr><td class="sc">3</td><td>Wat maakt dat dit nú op de agenda staat, en niet vorig jaar?</td><td><span class="vb v-no">Nog niet</span></td><td>CIT benaderde ons, maar de interne trigger kennen we niet.</td></tr>
+  <tr><td class="sc">4</td><td>Speelt de ambitie rond digitale autonomie / minder Big Tech mee in waarom jullie dit verkennen?</td><td><span class="vb v-part">Deels</span></td><td>Institutioneel signaal hard (begroting "AI en digitale soevereiniteit", Nolda's lijn). Of het déze verkenning drijft: niet bevestigd.</td></tr>
+  <tr><td class="sc">5</td><td>Werkt dit naar een deadline toe? EU AI Act vanaf augustus 2026?</td><td><span class="vb v-ok">Gevalideerd</span></td><td>Het feit (hoog-risico, 2 aug 2026) is hard. Of het hún driver is: nog niet.</td></tr>
+  <tr><td class="sc">6</td><td>Als dit over een jaar precies werkt zoals jullie willen, wat is er dan anders?</td><td><span class="vb v-no">Nog niet</span></td><td>Hun gewenste uitkomst is onbekend. Kernvraag voor Metrics.</td></tr>
+  <tr><td class="sc">7</td><td>Waaraan zouden jullie zien dat het een succes is?</td><td><span class="vb v-no">Nog niet</span></td><td>Succesmaatstaf onbekend. Nodig om Metrics op te bouwen.</td></tr>
+  <tr><td class="sc">8</td><td>Wie zou er betrokken moeten zijn om dit tot een succes te leiden?</td><td><span class="vb v-part">Deels</span></td><td>Org in kaart gebracht (zie deel 2). Wie zíj nodig achten en het beslisproces: niet bevestigd.</td></tr>
+  <tr><td class="sc">9</td><td>Champion-vraag: wie zou dit het liefst willen trekken, en met wie kan ik optrekken?</td><td><span class="vb v-no">Nog niet</span></td><td>Geen bevestigde champion. Dit is de belangrijkste open lever (Champion = gewicht 4, score 0).</td></tr>
+</table>
+<div class="note"><b>Rode draad:</b> alles wat "gevalideerd" is, gebruik je als geloofwaardigheid (laten zien dat je je huiswerk deed). Alles wat "nog niet" is, is precies waar de MEDDPICC-score op vastloopt: pijn erkennen, metrics, champion en criteria. Daar draait het vervolggesprek om.</div>
+
+<div class="foot">Eduface · vertrouwelijk · onderbouwde reconstructie, geen officieel RUG-document · cijfers in dossier-cost-justification-en-datalek.md, ROI-analyse en organogram.pdf</div>
+</body>
+</html>

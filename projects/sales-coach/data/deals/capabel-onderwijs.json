@@ -1,0 +1,179 @@
+{
+  "slug": "capabel-onderwijs",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_FUGZyomfJhmbKVyfiubEcH7EMTdXKSAXihmV7WmlUCD",
+    "naam": "Capabel Onderwijs",
+    "url": "https://app.close.com/lead/lead_FUGZyomfJhmbKVyfiubEcH7EMTdXKSAXihmV7WmlUCD/",
+    "lead_status": "Interested",
+    "opportunity_id": "oppo_NKexQs5hGYncMJYOLaWXdGuD78qokGU2HlDM8olFCFB",
+    "fase": "Discovery",
+    "fase_type": "active",
+    "waarde": 20000,
+    "valuta": "EUR",
+    "confidence": 10,
+    "close_date": "2027-07-08",
+    "eigenaar": "Eduface CRM",
+    "crm_note": "**Status:** Zij stellen het model nu zelf af op 1 tot 2 opdrachten,\nbevindingen op 10 aug bepalen of dit doorgaat.\n\n**Wat er gebeurde:** De AI-zoektocht komt van bovenaf: founder Godert van\nBuren gaf Karien van Dijk (Directeur Onderwijs) de opdracht, Karien schoof die\ndoor naar Inke. Karien beslist en heeft bevestigd dat het een betaalde versie\nwordt als ze de tool gaan gebruiken, maar wacht eerst de bevindingen van Inke\naf. Adoptie kan snel, er is geen lang procurement-traject. Make-or-break is of\nhet model hun holistische, groeigerichte beoordelen kan vasthouden in plaats\nvan rigide punten aftrekken. Bij succes ligt expansie open naar Capabel mbo en\nde tien onderwijsbedrijven van moederbedrijf Calder Holding.\n\n**Next action:** Fysieke werksessie op ons kantoor bevestigen en inplannen voor de meeting | Dante | 10 aug | Hoog\n\n**Next action:** Korte update naar Karien sturen met Inke in cc om de EB aangehaakt te houden | Dante | <datum onbekend> | Hoog\n\n**Risk:** Het afstellen lukt ze niet, ze gooien er te grote opdrachten in, of\nhet krijgt geen prioriteit. Dan komt er op 10 aug een negatief resultaat uit\ndat bij de EB landt.\n\n**Action required:** Bevestiging van Inke en Bas dat de sessie van 10 aug bij\nons op kantoor mag, zodat we het afstellen samen doen in plaats van af te\nwachten.",
+    "contacten": [
+      {
+        "naam": "Inke van Gameren",
+        "titel": "Opleidings coördinator/docent",
+        "email": "i.vangameren@capabelhogeschool.nl",
+        "id": "cont_kiBSnvjefqUmDgJGzZAlN7ndmGyELBAwj9RFo8OGObD"
+      },
+      {
+        "naam": "Karien van Dijk",
+        "titel": "Directeur onderwijs hogeschool",
+        "email": "k.vandijk@capabelhogeschool.nl",
+        "id": "cont_UOlvYdRySNGxyAgfrk3FMMZoErWVo6rZ5nnv9UW0AO4"
+      },
+      {
+        "naam": "Bas Franken",
+        "titel": "Docent/AI coach",
+        "email": "b.franken@capabelhogeschool.nl",
+        "id": "cont_T8twKt84wdrbFBx2opApmDSRBw6LRzmHoBU31D8f467"
+      },
+      {
+        "naam": "Godert van Buren",
+        "titel": "Founder",
+        "email": null,
+        "id": "cont_mBw1A2Npvv274LYuGd4RivGGkv8ILlMre8YVMokdyiq"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_gMtoh0Ruu8XasTa6u4pjoz94b6Wb2ok3zaNrQDH2ItX",
+        "soort": "meeting",
+        "datum": "2026-07-08",
+        "titel": "Kennismaking + jullie situatie bespreken - Dante x Inke",
+        "duur_min": 15,
+        "status": "completed",
+        "deelnemers": [
+          "dante.torbed@eduface.me",
+          "i.vangameren@capabelhogeschool.nl"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "Hoe ziet het nakijken van een opdracht er nu uit, van inleveren tot feedback bij de student?\n\nAls de student z'n feedback terugkrijgt, is dat algemene feedback of komen er ook specifieke opmerkingen in de tekst zelf?\n\nKun je voor de demo een voorbeeldopdracht + bijbehorend beoordelingsformulier sturen, liefst al nagekeken en geanonimiseerd (plus de toetsmatrijs)?\n\nIk zag dat Bas Franken een account heeft aangemaakt, is het een idee om hem bij de demo te laten aansluiten?\n\nVoorbereid maar niet aan toegekomen (voor een volgende keer): de AI-initiatieven-vraag, de expliciete \"cijfer of woordoordeel\"-vraag (Inke gaf dit deels vanzelf), de visie-vraag, en de brug naar Karien (met z'n drieën zitten). De visie-vraag is de belangrijkste om alsnog op te pakken.\n\nDante: Ga je op vakantie deze zomer? → Inke: Pas in september, nu nog aanwezig. (Dante: veel partners/onderwijs dicht in de zomer, leuk gespreksonderwerp. Zelf naar Italië, familiehuisje, 3e keer.)\n\nDante: Ik wil deze call gebruiken om een goed beeld te krijgen van hoe feedback geven nu loopt, zodat ik een passende demo kan voorbereiden. Hoe ziet het nakijken van een opdracht er nu uit? → Inke: We werken met beoordelingsformulieren, toetsmatrijs en rubrics. Onze visie is holistisch beoordelen: niet strak per punt aftrekken, op HBO kijken we naar de groei van de student. Veel aandacht voor groeigerichte feedback. Formulieren zijn Bloom-gebaseerd, ~9 leerdoelen, per leerdoel een Bloom-niveau + punten. Mijn twijfel: past dat holistische bij Eduface? Hebben jullie daar ideeën/ervaring bij vanuit andere partners?\n\nDante: Herkenbaar, ik noteer het. Ik ken holistisch van Windesheim, daar deden ze overstijgend feedback geven, we werkten toe naar een bepaalde kwaliteit van feedback. Met AI moet je instructies meegeven, het is tweaken, niet in 1-2 keer goed. → Inke: Eens, we moeten kijken hoever we het holistisch erin kunnen houden met duidelijke instructies.\n\nDante: Je zou Eduface als basis kunnen gebruiken met daarna een menselijk oog eroverheen. Hoe wordt Eduface meestal ingezet, veel opdrachten of specifiek? Reflectieverslagen of onderzoek? → Dante legt uit: verschilt per opdracht; onderscheid formatief vs summatief. Eerstejaars vaak formatief: student levert in, krijgt feedback, herschrijft, levert opnieuw in, tool laat groei/herhaalde foutjes zien. Werkt voor reflectie-, onderzoeksverslagen én inhoudelijke papers.\n\nInke: Dus het model brengt ook de groei van de student in kaart? Onthoudt het dat dezelfde persoon eerder iets inleverde? → Dante: Kan, maar dat soort features zit in de LMS-integratie. In welk LMS werken jullie? → Inke: Eigen systeem \"Mijn Capabel\", niet heel geavanceerd, maar alles komt binnen op één plek.\n\nDante: Als de student feedback terugkrijgt, is dat de holistische algemene feedback, of ook specifieke opmerkingen in de tekst zelf? → Inke: Geen opmerkingen in het document zelf, alleen op het beoordelingsformulier. Dat krijgt de student te zien, met de uitnodiging om bij docent/studieloopbaancoach toelichting te vragen.\n\nDante: Om de demo nuttig te maken werk ik liever met jullie eigen materiaal dan een standaardvoorbeeld. Kun je voor morgen een voorbeeldopdracht + bijbehorend beoordelingsformulier sturen, liefst al nagekeken en geanonimiseerd? → Inke: Kan. Dus opdrachtbeschrijving, ingeleverde opdracht, ingevuld geanonimiseerd formulier. → Dante: Ja, en als de toetsmatrijs erbij kan, nog beter. → Inke: Stuur ik begin van de middag.\n\nDante: Laatste punt: ik zag dat Bas Franken een account had aangemaakt. Is het een idee om te kijken of hij bij de demo kan aansluiten? → Inke: Zeker, ik nodig hem uit voor morgen 13:30, ik stuur hem jouw uitnodiging door.\n\nAfsluiting: Dante bereidt voor zodra materiaal binnen is. Demo morgen 13:30 met Inke + Bas.",
+        "transcript_beschikbaar": true,
+        "komend": false
+      },
+      {
+        "id": "acti_oLeX6Fam7Q7Bw5Y5dKstfueRFSv6FNyLwYxw3Cbmw5j",
+        "soort": "call",
+        "datum": "2026-07-08",
+        "titel": "Telefoon outbound",
+        "duur_min": 12,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Hoe ziet het nakijken van een opdracht er nu uit, van inleveren tot feedback bij de student?\n\nAls de student z'n feedback terugkrijgt, is dat algemene feedback of komen er ook specifieke opmerkingen in de tekst zelf?\n\nKun je voor de demo een voorbeeldopdracht + bijbehorend beoordelingsformulier sturen, liefst al nagekeken en geanonimiseerd (plus de toetsmatrijs)?\n\nIk zag dat Bas Franken een account heeft aangemaakt, is het een idee om hem bij de demo te laten aansluiten?\n\nVoorbereid maar niet aan toegekomen (voor een volgende keer): de AI-initiatieven-vraag, de expliciete \"cijfer of woordoordeel\"-vraag (Inke gaf dit deels vanzelf), de visie-vraag, en de brug naar Karien (met z'n drieën zitten). De visie-vraag is de belangrijkste om alsnog op te pakken.\n\nDante: Ga je op vakantie deze zomer? → Inke: Pas in september, nu nog aanwezig. (Dante: veel partners/onderwijs dicht in de zomer, leuk gespreksonderwerp. Zelf naar Italië, familiehuisje, 3e keer.)\n\nDante: Ik wil deze call gebruiken om een goed beeld te krijgen van hoe feedback geven nu loopt, zodat ik een passende demo kan voorbereiden. Hoe ziet het nakijken van een opdracht er nu uit? → Inke: We werken met beoordelingsformulieren, toetsmatrijs en rubrics. Onze visie is holistisch beoordelen: niet strak per punt aftrekken, op HBO kijken we naar de groei van de student. Veel aandacht voor groeigerichte feedback. Formulieren zijn Bloom-gebaseerd, ~9 leerdoelen, per leerdoel een Bloom-niveau + punten. Mijn twijfel: past dat holistische bij Eduface? Hebben jullie daar ideeën/ervaring bij vanuit andere partners?\n\nDante: Herkenbaar, ik noteer het. Ik ken holistisch van Windesheim, daar deden ze overstijgend feedback geven, we werkten toe naar een bepaalde kwaliteit van feedback. Met AI moet je instructies meegeven, het is tweaken, niet in 1-2 keer goed. → Inke: Eens, we moeten kijken hoever we het holistisch erin kunnen houden met duidelijke instructies.\n\nDante: Je zou Eduface als basis kunnen gebruiken met daarna een menselijk oog eroverheen. Hoe wordt Eduface meestal ingezet, veel opdrachten of specifiek? Reflectieverslagen of onderzoek? → Dante legt uit: verschilt per opdracht; onderscheid formatief vs summatief. Eerstejaars vaak formatief: student levert in, krijgt feedback, herschrijft, levert opnieuw in, tool laat groei/herhaalde foutjes zien. Werkt voor reflectie-, onderzoeksverslagen én inhoudelijke papers.\n\nInke: Dus het model brengt ook de groei van de student in kaart? Onthoudt het dat dezelfde persoon eerder iets inleverde? → Dante: Kan, maar dat soort features zit in de LMS-integratie. In welk LMS werken jullie? → Inke: Eigen systeem \"Mijn Capabel\", niet heel geavanceerd, maar alles komt binnen op één plek.\n\nDante: Als de student feedback terugkrijgt, is dat de holistische algemene feedback, of ook specifieke opmerkingen in de tekst zelf? → Inke: Geen opmerkingen in het document zelf, alleen op het beoordelingsformulier. Dat krijgt de student te zien, met de uitnodiging om bij docent/studieloopbaancoach toelichting te vragen.\n\nDante: Om de demo nuttig te maken werk ik liever met jullie eigen materiaal dan een standaardvoorbeeld. Kun je voor morgen een voorbeeldopdracht + bijbehorend beoordelingsformulier sturen, liefst al nagekeken en geanonimiseerd? → Inke: Kan. Dus opdrachtbeschrijving, ingeleverde opdracht, ingevuld geanonimiseerd formulier. → Dante: Ja, en als de toetsmatrijs erbij kan, nog beter. → Inke: Stuur ik begin van de middag.\n\nDante: Laatste punt: ik zag dat Bas Franken een account had aangemaakt. Is het een idee om te kijken of hij bij de demo kan aansluiten? → Inke: Zeker, ik nodig hem uit voor morgen 13:30, ik stuur hem jouw uitnodiging door.\n\nAfsluiting: Dante bereidt voor zodra materiaal binnen is. Demo morgen 13:30 met Inke + Bas.",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_J3GVWZXIgrC8bU6ENrCJtRqnxXpigUPbxN5WWMdveO7",
+        "soort": "call",
+        "datum": "2026-07-08",
+        "titel": "Telefoon outbound",
+        "duur_min": 2,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Fysiek afspreken",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_rKPqmoxZmfIlHqrXNJnDRz31ezlDC15LTzWDKHOL0ou",
+        "soort": "meeting",
+        "datum": "2026-07-13",
+        "titel": "Eduface x Capabel demo",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "dante.torbed@eduface.me",
+          "i.vangameren@capabelhogeschool.nl"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "Aanwezig\n\nInke van Gameren — Opleidingscoördinator + docent Toegepaste Psychologie. Mogelijk champion.\n\nBas Franken — Docent / AI-coach.\n\nInterne politiek (belangrijkste inzicht) Godert van Buren (founder) heeft Karien van Dijk (Directeur Onderwijs hogeschool) de opdracht gegeven om iets met AI te zoeken voor Capabel. Karien heeft die opdracht doorgeschoven naar Inke. De AI-zoektocht komt dus van bovenaf, niet uit een losse interesse van een docent.\n\nInsteek van de meeting Onze visie delen op het in kaart brengen van de leerlijnen van studenten. Inke had eerder telefonisch aangegeven dat juist dát voor haar belangrijk is.\n\nWat er uit kwam\n\nAdoptie kan snel. Geen lang procurement proces zoals bij reguliere onderwijsinstellingen. \n\nInke claimt dat zij Karien kunnen beïnvloeden. Wij geloven dat niet volledig, maar er zit waarschijnlijk een kern van waarheid in. \n\nDeal potentieel\n\nCapabel Hogeschool totaal: ~1.000 studenten.\n\nCapabel mbo: geschat ~2.000 studenten.\n\nMoederbedrijf Calder Holding heeft 10 onderwijsbedrijven in Nederland.\n\nBij goede adoptie, een sterke case study en een werkende integratie bij Capabel Hogeschool is er serieuze expansie naar de rest van het portfolio.\n\nOpdracht aan hen Zelf aan de slag met het instrueren/afstellen van het model op 1 of 2 opdrachten.  \n\nRisico's op een negatief resultaat (10 augustus)\n\nHet afstellen lukt ze niet goed genoeg.\n\nZe gooien er ineens hele grote opdrachten in.\n\nZe pakken het niet serieus op omdat het geen prioriteit krijgt.\n\nVoorstel: een moment afspreken waarop ze fysiek bij ons op kantoor komen om er samen aan te werken. Haalt alle drie de risico's tegelijk weg.\n\nNext steps\n\nMaandag 10 augustus: zij delen hun bevindingen met de tool.\n\nKorte update naar Karien sturen (met Inke in cc, afhankelijk van haar antwoord).",
+        "transcript_beschikbaar": true,
+        "komend": false
+      },
+      {
+        "id": "acti_gaLsZHh8n6wEHJ7ifBvKhtVEvqprpeDsIDcqJfvK2S0",
+        "soort": "call",
+        "datum": "2026-07-13",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Aanwezig\n\nInke van Gameren — Opleidingscoördinator + docent Toegepaste Psychologie. Mogelijk champion.\n\nBas Franken — Docent / AI-coach.\n\nInterne politiek (belangrijkste inzicht) Godert van Buren (founder) heeft Karien van Dijk (Directeur Onderwijs hogeschool) de opdracht gegeven om iets met AI te zoeken voor Capabel. Karien heeft die opdracht doorgeschoven naar Inke. De AI-zoektocht komt dus van bovenaf, niet uit een losse interesse van een docent.\n\nInsteek van de meeting Onze visie delen op het in kaart brengen van de leerlijnen van studenten. Inke had eerder telefonisch aangegeven dat juist dát voor haar belangrijk is.\n\nWat er uit kwam\n\nAdoptie kan snel. Geen lang procurement proces zoals bij reguliere onderwijsinstellingen. \n\nInke claimt dat zij Karien kunnen beïnvloeden. Wij geloven dat niet volledig, maar er zit waarschijnlijk een kern van waarheid in. \n\nDeal potentieel\n\nCapabel Hogeschool totaal: ~1.000 studenten.\n\nCapabel mbo: geschat ~2.000 studenten.\n\nMoederbedrijf Calder Holding heeft 10 onderwijsbedrijven in Nederland.\n\nBij goede adoptie, een sterke case study en een werkende integratie bij Capabel Hogeschool is er serieuze expansie naar de rest van het portfolio.\n\nOpdracht aan hen Zelf aan de slag met het instrueren/afstellen van het model op 1 of 2 opdrachten.  \n\nRisico's op een negatief resultaat (10 augustus)\n\nHet afstellen lukt ze niet goed genoeg.\n\nZe gooien er ineens hele grote opdrachten in.\n\nZe pakken het niet serieus op omdat het geen prioriteit krijgt.\n\nVoorstel: een moment afspreken waarop ze fysiek bij ons op kantoor komen om er samen aan te werken. Haalt alle drie de risico's tegelijk weg.\n\nNext steps\n\nMaandag 10 augustus: zij delen hun bevindingen met de tool.\n\nKorte update naar Karien sturen (met Inke in cc, afhankelijk van haar antwoord).",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_5DOR09MgCaUbOQ1ljUnMN7wZXtLVX8jTL7jGJN3k8Hh",
+        "soort": "call",
+        "datum": "2026-08-05",
+        "titel": "Telefoon outbound",
+        "duur_min": 4,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": true,
+        "komend": false
+      },
+      {
+        "id": "acti_UIbF7jYnG3S6W0iDBplVRwx2Ty3lFO52EEiRd1WgASh",
+        "soort": "meeting",
+        "datum": "2026-08-10",
+        "titel": "Bevindingen Eduface",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "b.franken@capabelhogeschool.nl",
+          "dante.torbed@eduface.me",
+          "i.vangameren@capabelhogeschool.nl",
+          "jeroen.van.gessel@eduface.me",
+          "menno.hahury@eduface.me"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      }
+    ],
+    "open_taken": [],
+    "laatste_gesprek": "2026-08-10",
+    "volgende_afspraak": null,
+    "aantal_gehad": 7,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

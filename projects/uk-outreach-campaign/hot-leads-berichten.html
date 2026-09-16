@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hot leads · re-engage · Dante</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{ --navy:#002333; --green:#00E075; --green2:#008F5A; --bg:#f5f7f8; --card:#ffffff; --line:#e2e8ea; --muted:#5b6b73; }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--navy);font-family:'Roboto',system-ui,sans-serif;}
+  h1,h2,h3,.spartan{font-family:'League Spartan',system-ui,sans-serif;}
+  header{background:var(--navy);color:#fff;padding:20px 24px;position:sticky;top:0;z-index:10;box-shadow:0 2px 10px rgba(0,0,0,.15)}
+  header .logo{font-family:'League Spartan';font-weight:700;font-size:26px;letter-spacing:.5px}
+  header .logo b{color:var(--green)}
+  header .sub{font-size:14px;color:#b9c6cc;margin-top:2px}
+  .bar{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:14px}
+  .progress{flex:1;min-width:200px;height:10px;background:#0a3144;border-radius:6px;overflow:hidden}
+  .progress > div{height:100%;background:var(--green);width:0%;transition:width .25s}
+  .count{font-size:14px;color:#cfe9df;white-space:nowrap}
+  .btn{background:#0a3144;color:#fff;border:1px solid #16455c;border-radius:8px;padding:7px 12px;font-size:13px;cursor:pointer;font-family:'Roboto'}
+  .btn:hover{background:#0f3f56}
+  .wrap{max-width:880px;margin:0 auto;padding:22px 18px 90px}
+  .ref{background:#0a3144;color:#dfeef0;border-radius:12px;padding:16px 18px;margin:18px 0;font-size:14px;line-height:1.5}
+  .ref h3{margin:0 0 8px;color:#fff;font-size:18px}
+  .ref a{color:var(--green);font-weight:500}
+  .ref details{margin-top:10px}
+  .ref summary{cursor:pointer;color:#9fd8c4;font-weight:700;font-size:13px}
+  .tmpl label{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.5px;color:#9fd8c4;margin:12px 0 5px;font-weight:700}
+  textarea{width:100%;background:#fff;color:var(--navy);border:1px solid #cdd9dd;border-radius:9px;padding:11px 12px;font-family:'Roboto';font-size:14px;line-height:1.5;resize:vertical;overflow:hidden}
+  textarea:focus{outline:none;border-color:var(--green2);box-shadow:0 0 0 2px #00e07533}
+  .batch-h{display:flex;align-items:baseline;gap:12px;margin:30px 4px 12px}
+  .batch-h h2{font-size:22px;margin:0}
+  .batch-h .bc{font-size:13px;color:var(--muted)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:10px 0;transition:opacity .2s,border-color .2s}
+  .card.done{opacity:.55;border-color:var(--green)}
+  .cardnote{background:#fff8e6;border:1px solid #f0e2b8;border-radius:8px;padding:8px 11px;margin-top:10px;font-size:12.5px;color:#6b5b1f;line-height:1.4}
+  .crow{display:flex;align-items:center;gap:10px;margin-bottom:9px;flex-wrap:wrap}
+  .chk{width:24px;height:24px;border-radius:7px;border:2px solid var(--line);flex:0 0 auto;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:15px;color:#fff;background:#fff}
+  .card.done .chk{background:var(--green);border-color:var(--green)}
+  .who{flex:1;min-width:160px}
+  .who .nm{font-family:'League Spartan';font-weight:700;font-size:17px;line-height:1.15}
+  .who .og{font-size:13px;color:var(--muted)}
+  .who .meta{font-size:12px;color:var(--muted);margin-top:3px;line-height:1.35}
+  .who .meta b{color:var(--navy);font-weight:500}
+  .badge{font-size:11px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;padding:3px 8px;border-radius:20px;flex:0 0 auto}
+  .badge.A{background:#d7f7e7;color:#006754}
+  .badge.B{background:#e7eef1;color:#365663}
+  .nss{font-size:12px;color:var(--muted);flex:0 0 auto}
+  .li{font-size:13px;color:#fff;background:var(--navy);text-decoration:none;padding:6px 10px;border-radius:7px;flex:0 0 auto}
+  .li:hover{background:#0a3144}
+  .li.mail{background:#0a3144}
+  .li.dead{background:#9bb0b8;cursor:default}
+  .frow{display:flex;align-items:center;gap:12px;margin-top:8px;flex-wrap:wrap}
+  .block{margin-top:14px}
+  .blabel{font-size:12px;text-transform:uppercase;letter-spacing:.4px;color:var(--muted);font-weight:700;margin:4px 0 6px}
+  .subj{font-size:13px;color:var(--navy);background:#eef4f2;border:1px solid #dbe7e2;border-radius:7px;padding:7px 10px;margin-bottom:7px;display:flex;align-items:center;gap:10px}
+  .subj b{font-weight:500}
+  .copysubj{font-size:12px;color:var(--green2);cursor:pointer;text-decoration:underline;white-space:nowrap}
+  .copybtn{background:var(--green);color:var(--navy);border:none;border-radius:8px;padding:9px 16px;font-size:14px;font-weight:700;font-family:'League Spartan';cursor:pointer;letter-spacing:.3px}
+  .copybtn:hover{background:#00c768}
+  .reset1{font-size:12px;color:var(--muted);cursor:pointer;text-decoration:underline}
+  .chars{font-size:12px;color:var(--muted);margin-left:auto}
+  .toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--navy);color:#fff;padding:12px 20px;border-radius:10px;font-size:14px;opacity:0;pointer-events:none;transition:.2s;z-index:50}
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+  .toast b{color:var(--green)}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">Edu<b>face</b></div>
+  <div class="sub">Hot leads · re-engage warme UK-leads · versturen vanaf <b>Dante</b></div>
+  <div class="bar">
+    <div class="progress"><div id="pbar"></div></div>
+    <div class="count" id="pcount">0 / 0 verstuurd</div>
+    <button class="btn" onclick="resetDone()">Reset vinkjes</button>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="ref">
+    <h3>Hoe gebruik je dit</h3>
+    Warme leads: LinkedIn geaccepteerd + e-mail geopend, nog geen reply. Pas een bericht gerust aan (wordt bewaard). Klik <b style="color:#fff">Kopiëren + afvinken</b> → tekst op je klembord, kaart afgevinkt. Open het profiel of de mail en plak.<br>
+    <b style="color:#fff">Tier A</b> = teaching/education leads (snelheid, kwaliteit, personalisatie). <b style="color:#fff">Tier B</b> = registrars/quality (consistentie + NSS). Soft CTA = "want me to send the pages" → verwijst naar de <b style="color:#fff">2-page Bath Spa write-up</b> (nog te maken).
+    <details>
+      <summary>Basis-templates aanpassen (geldt voor nog niet aangepaste kaarten)</summary>
+      <div class="tmpl">
+        <label>Tier A · LinkedIn DM</label><textarea data-tk="aDM"></textarea>
+        <label>Tier A · E-mail</label><textarea data-tk="aMail"></textarea>
+        <label>Tier B · LinkedIn DM</label><textarea data-tk="bDM"></textarea>
+        <label>Tier B · E-mail</label><textarea data-tk="bMail"></textarea>
+        <div class="frow"><span class="reset1" data-resetall="1">herstel alle templates</span></div>
+      </div>
+    </details>
+  </div>
+  <div id="list"></div>
+</div>
+
+<div class="toast" id="toast"><b>Gekopieerd</b> + afgevinkt</div>
+
+<script>
+const SUBJECT = "Bath Spa: 93% of students preferred the feedback";
+
+const TEMPLATES = {
+  aDM:  `Hi {first}, since we connected I wanted to share something concrete. We helped Bath Spa improve their Assessment & Feedback NSS scores, without adding to lecturers' and markers' workload. 93% of students preferred our AI feedback to what they got before. Happy to send a short write-up of how it worked.`,
+  aMail:`Hi {first},\n\nWe helped Bath Spa improve their Assessment & Feedback NSS scores, without adding to lecturers' and markers' workload.\n\n93% of students preferred our AI feedback to what they got before.\n\nHappy to send a short write-up of how it worked.\n\nBest,\nDante`,
+  bDM:  `Hi {first}, since we connected I wanted to share something concrete. We helped Bath Spa improve their Assessment & Feedback NSS scores, without adding to lecturers' and markers' workload. 93% of students preferred our AI feedback to what they got before. Happy to send a short write-up of how it worked.`,
+  bMail:`Hi {first},\n\nWe helped Bath Spa improve their Assessment & Feedback NSS scores, without adding to lecturers' and markers' workload.\n\n93% of students preferred our AI feedback to what they got before.\n\nHappy to send a short write-up of how it worked.\n\nBest,\nDante`
+};
+
+// Tier A first, then Tier B; within tier by priority. channel: "li", "mail", or both.
+const DATA = [
+  {id:"angela", first:"Angela", nm:"Angela Platt", role:"Senior Lecturer, Liberal Arts", og:"St Mary's", nss:"84.2%", tier:"A", score:33, act:"Connectie geaccepteerd + geopend, geen reply (laatste activiteit 8 jun)",url:"https://www.linkedin.com/in/angelaplatt", email:"", dm:"Hi Angela, I imagine you mark a lot of written work in Liberal Arts, so this might be useful. We helped Bath Spa improve their Assessment & Feedback NSS scores, without adding to lecturers' and markers' workload. 93% of students preferred our AI feedback to what they got before. Happy to send a short write-up of how it worked.", note:"Close: Senior Lecturer Liberal Arts (frontline docent, geen leider). Veel schrijfwerk = veel nakijken."},
+  {id:"jedd", first:"Jedd", nm:"Jedd Billing", role:"Head of Learning & Teaching Transformation", og:"UWE Bristol", nss:"79.9%", tier:"A", score:27, act:"Connectie geaccepteerd + geopend, geen reply (laatste activiteit 1 jun)",url:"https://www.linkedin.com/in/jedd-billing-00435830a", email:"jedd.billing@uwe.ac.uk", dm:"Hi Jedd, Health & Social Wellbeing is a big school with a lot of marking across all those courses, so this might be relevant for you. We helped Bath Spa improve their Assessment & Feedback NSS scores, without adding to lecturers' and markers' workload. 93% of students preferred our AI feedback to what they got before. I've got a short write-up of how, happy to send it over.", note:"UWE: Interim Deputy Dean, School of Health & Social Wellbeing (4.000+ studenten, 300 staf, 13 professionele disciplines). Close: status Nurturing."},
+  {id:"anesa", first:"Anesa", nm:"Anesa Hosein", role:"Head of Educational Development & Research", og:"Surrey", nss:"81.2%", tier:"A", score:19, act:"Connectie geaccepteerd + geopend, geen reply (laatste activiteit 3 jun)",url:"https://www.linkedin.com/in/anesa-hosein-14ab229", email:"", dm:"Hi Anesa, I know feedback is your research area, so I'd genuinely value your take on this. We helped Bath Spa improve their Assessment & Feedback NSS scores, without adding to lecturers' and markers' workload. 93% of students preferred our AI feedback to what they got before. Happy to send a short write-up of how it worked.", note:"Onderzoekt zelf feedback literacy & assessment literacy (Associate Professor). Behandel als expert, niet als iemand die het concept nog moet leren."},
+  {id:"daniel", first:"Daniel", nm:"Daniel Berger", role:"Deputy Dean (Education)", og:"ARU", nss:"80.0%", tier:"A", score:19, act:"Connectie geaccepteerd + geopend, geen reply (laatste activiteit 3 jun)",url:"https://www.linkedin.com/in/drdanielberger", email:"daniel.berger@aru.ac.uk", dm:"Hi Daniel, I know student experience and value for money matter a lot to you, so this might be relevant. We helped Bath Spa improve their Assessment & Feedback NSS scores, without adding to lecturers' and markers' workload. 93% of students preferred our AI feedback to what they got before. I've got a short write-up of how, happy to send it over.", note:"Prof, Deputy Dean (Education) Business & Law, PFHEA. Denkt in 'students as customers' + value-for-money. Close: bij ARU mailden we Dominic, niet Daniel, dit is een verse 2e ingang."},
+  {id:"joanna", first:"Joanna", nm:"Joanna Jenkins", role:"Head of Student Experience & Academic Outcomes", og:"London Met", nss:"83.4%", tier:"A", score:null, act:"Connectie geaccepteerd + 2x geopend (vanochtend), geen reply",url:"https://www.linkedin.com/in/joanna-jenkins-sfhea-958330235/", email:"jenkinsj@staff.londonmet.ac.uk", dm:"Hi Joanna, I saw you work on grading schemes and rubrics to improve outcomes, so this might be relevant. We helped Bath Spa improve their Assessment & Feedback NSS scores, without adding to lecturers' and markers' workload. 93% of students preferred our AI feedback to what they got before. Happy to send a short write-up of how it worked.", note:"Head of Student Experience & Academic Outcomes, School of Human Sciences. Onderzoekt grading schemes/rubrics + grit/resilience."},
+  {id:"colin", first:"Colin", nm:"Colin Loughlin", role:"Head of Digital Education", og:"Brunel", nss:"80.6%", tier:"A", score:18, act:"Connectie geaccepteerd + geopend, geen reply (laatste activiteit 29 mei)",url:"https://www.linkedin.com/in/colin-loughlin", email:"colin.loughlin@brunel.ac.uk", dm:"Hi Colin, I've reached out before so I'll keep this short. We helped Bath Spa improve their Assessment & Feedback NSS scores, without adding to lecturers' and markers' workload. 93% of students preferred our AI feedback to what they got before. Since digital education is your area, happy to send a short write-up of how it worked.", note:"Close: al 2x door jou gemaild + Caitlyn Merry (Learning Tech Manager) ook 2x. Dit is touch 3+, niet herhalen. Onderzoekt large-class teaching + lecture capture."},
+  {id:"ramon", first:"Ramon", nm:"Ramon Inglada", role:"LINCS Head of Learning & Teaching", og:"Heriot-Watt", nss:"74.9%", tier:"A", score:17, act:"Connectie geaccepteerd + geopend, geen reply (laatste activiteit 1 jun)",url:"https://www.linkedin.com/in/ramoninglada", email:"", dm:"Hi Ramon, since you work with translation technology, this will probably make sense to you quickly. We helped Bath Spa improve their Assessment & Feedback NSS scores, without adding to lecturers' and markers' workload. 93% of students preferred our AI feedback to what they got before. Happy to send a short write-up of how it worked.", note:"Assoc Prof Spanish & Translation Technologies, HoLT in LINCS (talen), werkt met CAT-tools. Close: sterke Jisc-route via Jason Miles-Campbell naar VC Nola Hewitt-Dundas, dat is de hoofdzet; cold DM is bijzaak."},
+  {id:"jonathan", first:"Jonathan", nm:"Jonathan Batty", role:"Dir Student Recruitment & Deputy Academic Registrar", og:"Durham", nss:"81.3%", tier:"B", score:23, act:"Connectie geaccepteerd + geopend, geen reply (laatste activiteit 3 jun)",url:"https://www.linkedin.com/in/jonathan-batty-217447b0", email:"j.batty@durham.ac.uk", dm:"Hi Jonathan, this is a bit outside your area, but it's close to student outcomes so I thought I'd share. We helped Bath Spa improve their Assessment & Feedback NSS scores, without adding to lecturers' and markers' workload. 93% of students preferred our AI feedback to what they got before. Happy to send a short write-up of how it worked.", note:"LET OP: remit = Access, Recruitment & Admissions, NIET assessment/feedback. Waarschijnlijk verkeerde ingang voor A&F, overweeg te skippen of iemand in quality/education bij Durham te zoeken."},
+  {id:"jacky", first:"Jacky", nm:"Jacky Mack", role:"Academic Registrar", og:"Bournemouth", nss:"78.3%", tier:"B", score:21, act:"Connectie geaccepteerd + geopend, geen reply (laatste activiteit 8 jun)",url:"https://www.linkedin.com/in/jacky-mack-7a033a3a", email:"jmack@bournemouth.ac.uk", dm:"Hi Jacky, assessment and feedback sits right across your area, so this might be relevant. We helped Bath Spa improve their Assessment & Feedback NSS scores, without adding to lecturers' and markers' workload. 93% of students preferred our AI feedback to what they got before. Happy to send a short write-up of how it worked.", note:"Head of Academic Services / Academic Registrar, Bournemouth."},
+  {id:"heather", first:"Heather", nm:"Heather McNeill", role:"Deputy Academic Registrar", og:"St Andrews", nss:"81.7%", tier:"B", score:21, act:"Connectie geaccepteerd + geopend, geen reply (laatste activiteit 1 jun)",url:"https://www.linkedin.com/in/heather-mcneill-226490182", email:"", dm:"Hi Heather, assessment and feedback sits right across your area, so this might be relevant. We helped Bath Spa improve their Assessment & Feedback NSS scores, without adding to lecturers' and markers' workload. 93% of students preferred our AI feedback to what they got before. Happy to send a short write-up of how it worked.", note:"Close: sterke Jisc-route via Jason naar PVC Monique Mackenzie (rijkste uni van Schotland, premium fit, sterke interesse in digitalisering). Jisc is de hoofdzet; cold DM bijzaak."},
+  {id:"marc", first:"Marc", nm:"Marc Griffith", role:"Group Director of Academic Quality, Planning & Strategy", og:"LSBU", nss:"82.4%", tier:"B", score:12, act:"Connectie geaccepteerd + geopend, geen reply (laatste activiteit 4 jun)",url:"https://www.linkedin.com/in/marc-griffith-602b9710", email:"m.griffith@lsbu.ac.uk", dm:"Hi Marc, this is right in your area of teaching quality and enhancement, so I thought I'd reach out. We helped Bath Spa improve their Assessment & Feedback NSS scores, without adding to lecturers' and markers' workload. 93% of students preferred our AI feedback to what they got before. I've got a short write-up of how, happy to send it over.", note:"Director of Teaching, Quality & Enhancement (eerder hoofd digitally enhanced learning). Sterke fit voor A&F-quality."},
+  {id:"rebecca", first:"Rebecca", nm:"Rebecca Di Pancrazio", role:"Academic Registrar", og:"Portsmouth", nss:"81.8%", tier:"B", score:12, act:"Connectie geaccepteerd + geopend, geen reply (laatste activiteit 4 jun)",url:"https://www.linkedin.com/in/rebecca-di-pancrazio-ahep-ma-ba-26276660", email:"rebecca.dipancrazio@port.ac.uk", dm:"Hi Rebecca, assessment and feedback sits right across your area, so this might be relevant. We helped Bath Spa improve their Assessment & Feedback NSS scores, without adding to lecturers' and markers' workload. 93% of students preferred our AI feedback to what they got before. Happy to send a short write-up of how it worked.", note:"Academic Registrar, Portsmouth."}
+];
+
+const KEY_DONE = "eduface-hotleads-done-v1";
+const KEY_EDIT = "eduface-hotleads-edits-v3";
+const KEY_TMPL = "eduface-hotleads-tmpl-v3";
+let done = new Set(JSON.parse(localStorage.getItem(KEY_DONE) || "[]"));
+let edits = JSON.parse(localStorage.getItem(KEY_EDIT) || "{}");
+let tmpl = Object.assign({}, TEMPLATES, JSON.parse(localStorage.getItem(KEY_TMPL) || "{}"));
+DATA.forEach(d => { if(d.sent) done.add(d.id); });
+const saveDone = () => localStorage.setItem(KEY_DONE, JSON.stringify([...done]));
+const saveEdits = () => localStorage.setItem(KEY_EDIT, JSON.stringify(edits));
+const saveTmpl = () => localStorage.setItem(KEY_TMPL, JSON.stringify(tmpl));
+
+const fill = (t, first) => t.replaceAll("{first}", first);
+const autogrow = ta => { ta.style.height="auto"; ta.style.height=(ta.scrollHeight+2)+"px"; };
+
+function render(){
+  document.querySelectorAll("textarea[data-tk]").forEach(ta=>{
+    const k=ta.dataset.tk; ta.value=tmpl[k]; autogrow(ta);
+    ta.addEventListener("input", ()=>{ tmpl[k]=ta.value; saveTmpl(); autogrow(ta); });
+  });
+  document.querySelector("[data-resetall]").addEventListener("click", ()=>{
+    tmpl=Object.assign({},TEMPLATES); saveTmpl();
+    document.querySelectorAll("textarea[data-tk]").forEach(ta=>{ ta.value=tmpl[ta.dataset.tk]; autogrow(ta); });
+  });
+
+  const list=document.getElementById("list"); list.innerHTML="";
+  [["A","Tier A · teaching / education leads"],["B","Tier B · registrars / quality / strategy"]].forEach(([tier,title])=>{
+    const slice=DATA.filter(d=>d.tier===tier);
+    const dn=slice.filter(d=>done.has(d.id)).length;
+    const h=document.createElement("div"); h.className="batch-h";
+    h.innerHTML=`<h2>${title}</h2><span class="bc">${slice.length} leads · <b id="bc${tier}">${dn}/${slice.length}</b> verstuurd</span>`;
+    list.appendChild(h);
+    slice.forEach(d=>list.appendChild(card(d)));
+  });
+  updateProgress();
+}
+
+function card(d){
+  const el=document.createElement("div");
+  el.className="card"+(done.has(d.id)?" done":""); el.dataset.id=d.id;
+  const head=document.createElement("div"); head.className="crow";
+  const prof = d.url ? `<a class="li" target="_blank" rel="noopener" href="${d.url}">Open profiel ↗</a>`
+                     : `<span class="li dead" title="LinkedIn nog opzoeken">LinkedIn: opzoeken</span>`;
+  const mail = d.email ? `<a class="li mail" href="mailto:${d.email}">E-mail ↗</a>` : "";
+  head.innerHTML=`
+      <div class="chk" title="Afvinken">✓</div>
+      <div class="who"><div class="nm"></div><div class="og"></div><div class="meta"></div></div>
+      <span class="badge ${d.tier}">Tier ${d.tier}</span>
+      <span class="nss">NSS ${d.nss}</span>
+      ${prof}${mail}`;
+  head.querySelector(".nm").textContent=d.nm;
+  head.querySelector(".og").textContent=`${d.role} · ${d.og}`;
+  head.querySelector(".meta").innerHTML=`<b>Lemlist score: ${d.score ?? "n/a"}</b> · ${d.act}`;
+  head.querySelector(".chk").addEventListener("click", e=>{ e.stopPropagation(); mark(d.id,!done.has(d.id)); });
+  el.appendChild(head);
+  if(d.note){ const nt=document.createElement("div"); nt.className="cardnote"; nt.textContent="ℹ️ "+d.note; el.appendChild(nt); }
+
+  const dmTmpl  = d.tier==="A" ? "aDM"  : "bDM";
+  const mailTmpl= d.tier==="A" ? "aMail": "bMail";
+  el.appendChild(block(d,"dm","LinkedIn DM",d.dm || fill(tmpl[dmTmpl],d.first),false));
+  if(d.email) el.appendChild(block(d,"mail","E-mail",d.mail || fill(tmpl[mailTmpl],d.first),true));
+  return el;
+}
+
+function block(d,variant,label,def,isMail){
+  const wrap=document.createElement("div"); wrap.className="block";
+  const key=d.id+"|"+variant;
+  const subj = isMail ? `<div class="subj"><b>Onderwerp: ${SUBJECT}</b><span class="copysubj">kopieer onderwerp</span></div>` : "";
+  wrap.innerHTML=`<div class="blabel">${label}</div>${subj}<textarea></textarea>`+
+    `<div class="frow"><button class="copybtn">Kopiëren + afvinken</button><span class="reset1">herstel tekst</span><span class="chars"></span></div>`;
+  const ta=wrap.querySelector("textarea");
+  ta.value=(key in edits)?edits[key]:def;
+  const chars=wrap.querySelector(".chars");
+  const upd=()=>{ chars.textContent=ta.value.length+" tekens"; };
+  setTimeout(()=>autogrow(ta),0); upd();
+  ta.addEventListener("input",()=>{ edits[key]=ta.value; saveEdits(); autogrow(ta); upd(); });
+  wrap.querySelector(".copybtn").addEventListener("click",()=>{ copy(ta.value); mark(d.id,true); });
+  wrap.querySelector(".reset1").addEventListener("click",()=>{ delete edits[key]; saveEdits(); ta.value=def; autogrow(ta); upd(); });
+  if(isMail) wrap.querySelector(".copysubj").addEventListener("click",()=>copy(SUBJECT));
+  return wrap;
+}
+
+function mark(id,val){
+  if(val) done.add(id); else done.delete(id); saveDone();
+  const el=document.querySelector(`.card[data-id="${id}"]`);
+  if(el) el.classList.toggle("done",val);
+  refreshCounts();
+}
+function refreshCounts(){
+  ["A","B"].forEach(tier=>{
+    const slice=DATA.filter(d=>d.tier===tier);
+    const dn=slice.filter(d=>done.has(d.id)).length;
+    const t=document.getElementById("bc"+tier); if(t) t.textContent=`${dn}/${slice.length}`;
+  });
+  updateProgress();
+}
+function updateProgress(){
+  const dn=DATA.filter(d=>done.has(d.id)).length;
+  document.getElementById("pbar").style.width=(dn/DATA.length*100)+"%";
+  document.getElementById("pcount").textContent=`${dn} / ${DATA.length} verstuurd`;
+}
+function copy(text){
+  if(navigator.clipboard && window.isSecureContext){ navigator.clipboard.writeText(text).then(toast,()=>fb(text)); }
+  else fb(text);
+}
+function fb(text){ const ta=document.createElement("textarea"); ta.value=text; ta.style.position="fixed"; ta.style.opacity="0"; document.body.appendChild(ta); ta.select(); try{document.execCommand("copy");toast();}catch(e){} document.body.removeChild(ta); }
+let tt;
+function toast(){ const el=document.getElementById("toast"); el.classList.add("show"); clearTimeout(tt); tt=setTimeout(()=>el.classList.remove("show"),1400); }
+function resetDone(){ if(confirm("Alle vinkjes wissen? (aangepaste teksten blijven staan)")){ done=new Set(); DATA.forEach(d=>{if(d.sent)done.add(d.id);}); saveDone(); render(); } }
+
+render();
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+{
+  "actief": {
+    "vaardigheid": "Doorvragen op wat de klant zelf aanreikt",
+    "dimensie": "doorvragen",
+    "start": "2026-09-01",
+    "eind": "2026-09-30",
+    "waarom": "In de Notenboom-call van 21 augustus gaf Barbara je ongevraagd drie interne bezwaren, het echte probleem (geen zicht op beoordelingskwaliteit bij internationale uitrol) en bijna een datum. Je bent op alle drie doorgelopen naar de volgende slide. Dit is de hefboom: fix dit en macht, pijn en de advance verbeteren vanzelf mee.",
+    "regel": "Elke keer dat de prospect uit zichzelf een probleem, een twijfel, een naam of een tijdlijn noemt, stel je minstens twee vervolgvragen voordat je iets anders zegt. Geen slide, geen product, geen 'precies'.",
+    "meetbaar": "Per call telt de coach hoeveel aangereikte openingen er waren en op hoeveel je hebt doorgevraagd. Doel: 80% of hoger over drie calls op rij.",
+    "bron": "Rackham, Huthwaite-onderzoek over 35.000 calls: toppers stellen 4x zoveel implicatievragen dan gemiddelde reps, en dat correleert sterker met close rate dan welke andere variabele in de studie.",
+    "verdict": null
+  },
+  "historie": [],
+  "dimensies": {
+    "praten": {
+      "label": "Praatratio",
+      "uitleg": "Hoeveel procent van de tijd praat jij. Gong (326.000 calls, 2025): gewonnen deals 57% reptijd, verloren 62%. Dat is 5 punten verschil, dus een vlag en geen norm. Op een demo hoor je meer te praten dan op een discovery.",
+      "vlag_boven": 65
+    },
+    "doorvragen": {
+      "label": "Doorvragen",
+      "uitleg": "Vraag je door op wat de klant zelf aanreikt, en stel je implicatievragen (wat gebeurt er als dit niet opgelost wordt) in plaats van situatievragen die je vooraf had kunnen opzoeken."
+    },
+    "pijn": {
+      "label": "Pijn kwantificeren",
+      "uitleg": "Staat er een getal onder de pijn dat uit hun eigen data komt, en is het geld dat zij ook echt uitgeven? Een generieke ROI-slide telt niet."
+    },
+    "macht": {
+      "label": "Macht in beeld",
+      "uitleg": "Weet je wie er kan tekenen, wie er intern voor je verkoopt, en wie er tegen is? Seniority is geen invloed en vriendelijkheid is geen steun."
+    },
+    "next_step": {
+      "label": "Advance vastgezet",
+      "uitleg": "Rackham: een volgende afspraak zonder klantactie is een continuation, geen advance. Doet de klant iets tussen nu en de volgende keer?"
+    },
+    "bezwaren": {
+      "label": "Bezwaren",
+      "uitleg": "Haal je bezwaren naar boven voordat ze intern besproken worden, en los je ze op met iets concreets in plaats van geruststelling?"
+    }
+  }
+}

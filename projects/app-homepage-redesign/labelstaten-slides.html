@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Labelstaten op de cursusrij</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#002333; --green-deep:#007b54; --green:#00e075;
+  --ink-700:#2c4a57; --ink-500:#5b7480; --ink-200:#cdd9de; --ink-100:#e7eef0; --ink-50:#f3f7f8;
+  --white:#fff; --soft:rgba(255,255,255,.62); --line-inv:rgba(255,255,255,.14);
+  --sans:"Inter",ui-sans-serif,system-ui,sans-serif;
+  --display:"League Spartan",var(--sans);
+  --mono:ui-monospace,"SF Mono",Menlo,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:#0b1a22;overflow:hidden}
+body{font-family:var(--sans);-webkit-font-smoothing:antialiased}
+
+#stage{position:fixed;inset:0;display:grid;place-items:center}
+#deck{width:1920px;height:1080px;position:relative;transform-origin:center center;flex:none}
+.slide{position:absolute;inset:0;padding:120px;background:var(--white);color:var(--navy);display:none;flex-direction:column}
+.slide.on{display:flex}
+.slide.inv{background:var(--navy);color:var(--white)}
+
+.hero{font-family:var(--display);font-size:132px;line-height:.98;letter-spacing:-.025em;font-weight:700;max-width:1400px}
+.title{font-family:var(--display);font-size:76px;line-height:1.04;letter-spacing:-.02em;font-weight:700;max-width:1560px}
+.sub{font-size:44px;line-height:1.15;font-weight:600}
+.body{font-size:32px;line-height:1.45}
+.cap{font-size:24px;line-height:1.35;color:var(--ink-500)}
+.inv .cap{color:var(--soft)}
+.inv .sub{color:var(--white)}
+.center{justify-content:center}
+.mt48{margin-top:48px}.mt64{margin-top:64px}.mt24{margin-top:24px}
+.grow{flex:1}
+.foot{display:flex;justify-content:space-between;align-items:flex-end;gap:48px}
+
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:48px;margin-top:64px}
+.col .sub{margin-bottom:16px}
+.col .body{color:var(--ink-700)}
+.inv .col .body{color:var(--soft)}
+.col{border-top:4px solid var(--navy);padding-top:24px}
+.inv .col{border-top-color:var(--line-inv)}
+
+table{width:100%;border-collapse:collapse;margin-top:56px}
+th{font-size:24px;font-weight:600;color:var(--ink-500);text-align:left;padding:0 40px 16px 0;border-bottom:2px solid var(--ink-200)}
+td{font-size:32px;line-height:1.3;padding:26px 40px 26px 0;border-bottom:1px solid var(--ink-100);vertical-align:top}
+th:last-child,td:last-child{padding-right:0}
+td.k{font-weight:600;white-space:nowrap}
+td.d{color:var(--ink-700)}
+.lb{font-size:30px;white-space:nowrap}
+.lb.done{color:var(--green-deep);font-weight:600}
+.lb.link{text-decoration:underline;text-underline-offset:5px}
+.lb.none{color:var(--ink-500)}
+code{font-family:var(--mono);font-size:.9em;background:var(--ink-50);padding:2px 10px;border-radius:6px}
+.inv code{background:rgba(255,255,255,.10);color:var(--white)}
+
+ul{list-style:none}
+li{font-size:32px;line-height:1.45;padding-left:44px;position:relative;margin-bottom:32px;max-width:1500px}
+li:last-child{margin-bottom:0}
+li::before{content:"";position:absolute;left:0;top:16px;width:20px;height:4px;background:var(--navy)}
+.inv li::before{background:var(--green)}
+li b{font-weight:600}
+
+#hud{position:fixed;right:24px;bottom:20px;font-size:14px;color:rgba(255,255,255,.45);font-family:var(--mono);letter-spacing:.04em}
+
+@media print{
+  html,body{overflow:visible;background:#fff}
+  #stage{position:static;display:block}
+  #deck{transform:none!important}
+  #hud{display:none}
+  .slide{display:flex!important;position:relative;page-break-after:always;break-after:page}
+  @page{size:1920px 1080px;margin:0}
+}
+</style>
+</head>
+<body>
+<div id="stage"><div id="deck">
+
+  <!-- 1 opening -->
+  <section class="slide inv on center">
+    <p class="sub" style="color:var(--green)">Home page, cursusrij</p>
+    <h1 class="hero mt24">Labelstaten</h1>
+    <p class="sub mt48" style="color:var(--soft);max-width:1300px">Vijf staten naast de cursusnaam, één voorwaarde per staat.</p>
+  </section>
+
+  <!-- 2 statement -->
+  <section class="slide center">
+    <p class="cap">Begin hier. Al het andere volgt hieruit.</p>
+    <h2 class="hero mt24">Een inzending wacht zolang de docent hem niet heeft goedgekeurd.</h2>
+    <p class="cap mt48">Ingeleverd, en nog niet afgetekend. Ook als de AI de feedback al klaar heeft. De student ziet pas iets na goedkeuring.</p>
+  </section>
+
+  <!-- 3 drie kolommen -->
+  <section class="slide">
+    <h2 class="title">Uit die ene definitie volgt de hele rij</h2>
+    <div class="cols">
+      <div class="col"><p class="sub">To grade</p><p class="body">Aantal wachtende inzendingen in de cursus.</p></div>
+      <div class="col"><p class="sub">Oldest waiting</p><p class="body">De oudste daarvan, gemeten vanaf het moment dat de student inleverde.</p></div>
+      <div class="col"><p class="sub">Completed</p><p class="body">Er wacht niets meer, en er kan niets meer bij komen.</p></div>
+    </div>
+    <div class="grow"></div>
+    <p class="cap">Daardoor kunnen de drie cellen elkaar per definitie niet tegenspreken.</p>
+  </section>
+
+  <!-- 4 wanneer welk label -->
+  <section class="slide">
+    <h2 class="title">Vijf staten, de eerste die past wint</h2>
+    <table>
+      <thead><tr><th style="width:22%">Situatie</th><th style="width:26%">Label</th><th>Voorwaarde</th></tr></thead>
+      <tbody>
+        <tr><td class="k">Gearchiveerd</td><td><span class="lb">Archived</span></td><td class="d">De cursus is gearchiveerd. Hoogste voorrang.</td></tr>
+        <tr><td class="k">Setup niet af</td><td><span class="lb link">Setup incomplete →</span></td><td class="d">Minstens één opdracht is nog niet volledig ingericht.</td></tr>
+        <tr><td class="k">Nul opdrachten</td><td><span class="lb link">No assignments yet →</span></td><td class="d">De cursus heeft nul opdrachten.</td></tr>
+        <tr><td class="k">Afgerond</td><td><span class="lb done">Completed ✓</span></td><td class="d">Alle deadlines voorbij én er wacht niets meer.</td></tr>
+        <tr><td class="k">Alle overige</td><td><span class="lb none">Geen label</span></td><td class="d">De cursus loopt gewoon. De norm krijgt geen naam.</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 5 gedrag -->
+  <section class="slide">
+    <h2 class="title">Wat er dan gebeurt</h2>
+    <table>
+      <thead><tr><th style="width:26%">Label</th><th style="width:40%">Klik</th><th>Cellen</th></tr></thead>
+      <tbody>
+        <tr><td><span class="lb">Archived</span></td><td class="d">Geen</td><td class="d">Echte waarden, niets leegmaken</td></tr>
+        <tr><td><span class="lb link">Setup incomplete →</span></td><td class="d">Naar de opdracht die niet af is, met de melding wat er mist</td><td class="d">Echte waarden</td></tr>
+        <tr><td><span class="lb link">No assignments yet →</span></td><td class="d">Naar opdracht aanmaken</td><td class="d">Alle drie <code>–</code></td></tr>
+        <tr><td><span class="lb done">Completed ✓</span></td><td class="d">Geen, er valt niets te doen</td><td class="d"><code>0</code>, <code>–</code>, echte datum</td></tr>
+        <tr><td><span class="lb none">Geen label</span></td><td class="d">Niet van toepassing</td><td class="d">Echte waarden</td></tr>
+      </tbody>
+    </table>
+    <div class="grow"></div>
+    <p class="cap">Setup incomplete gebruikt exact de conditie die de bestaande actie Complete setup al controleert. Geen tweede definitie.</p>
+  </section>
+
+  <!-- 6 statement navy -->
+  <section class="slide inv center">
+    <h2 class="hero">Nul te beoordelen is niet hetzelfde als afgerond.</h2>
+    <p class="sub mt48" style="color:var(--soft);max-width:1500px">Nul zegt vandaag niets, want morgen levert er iemand in. Een label dat de volgende dag weer uit gaat is ruis.</p>
+    <p class="cap mt24">Daarom: alle deadlines voorbij én alles goedgekeurd. Dat is een stabiele toestand.</p>
+  </section>
+
+  <!-- 7 randgevallen -->
+  <section class="slide">
+    <h2 class="title">Drie randgevallen om vooraf te beslissen</h2>
+    <ul class="mt64">
+      <li><b>Een opdracht zonder inzendingen blokkeert het afronden niet.</b> Anders rondt een cursus nooit af zodra één student nooit inlevert, en dat is juist het normale geval.</li>
+      <li><b>Een te late inzending zet Afgerond weer uit.</b> Correct, er ligt dan weer werk. Dit is een uitzondering, geen dagelijks ritme.</li>
+      <li><b>Tijdzone van de instelling, niet die van de browser.</b> Anders zien twee collega's een verschillende staat.</li>
+    </ul>
+  </section>
+
+  <!-- 8 groen -->
+  <section class="slide">
+    <h2 class="title">Groen komt precies één keer voor</h2>
+    <ul class="mt64">
+      <li><b>Alleen bij Afgerond.</b> Ons design system staat groen toe op een bevestigde positieve status in een tool: klaar, goedgekeurd, loopt op schema. Dit is dat geval, en het enige op deze rij.</li>
+      <li><b>Tekstkleur is <code>#007b54</code>, niet de felle <code>#00e075</code>.</b> Die heeft als tekst op wit te weinig contrast en werkt alleen als vlak.</li>
+      <li><b>Het vinkje staat er altijd bij.</b> Naast kleur hoort een signaal dat geen kleur is, anders werkt het niet voor wie kleur slecht onderscheidt.</li>
+    </ul>
+    <div class="grow"></div>
+    <p class="cap">Bron: references/design-system/core/regels.md</p>
+  </section>
+
+  <!-- 9 afsluiting -->
+  <section class="slide inv center">
+    <h2 class="hero">Kan het tech team op deze ene definitie bouwen?</h2>
+    <p class="sub mt48" style="color:var(--soft);max-width:1500px">Wachtend is ingeleverd en niet goedgekeurd. Zit die ene regel vast, dan volgen de drie kolommen en de vijf labels er vanzelf uit.</p>
+  </section>
+
+</div></div>
+<div id="hud"><span id="n">1</span> / 9</div>
+
+<script>
+const deck=document.getElementById('deck');
+const slides=[...document.querySelectorAll('.slide')];
+const n=document.getElementById('n');
+let i=0;
+function fit(){
+  const s=Math.min(innerWidth/1920,innerHeight/1080);
+  deck.style.transform='scale('+s+')';
+}
+function go(k){
+  i=Math.max(0,Math.min(slides.length-1,k));
+  slides.forEach((s,x)=>s.classList.toggle('on',x===i));
+  n.textContent=i+1;
+}
+addEventListener('resize',fit);
+addEventListener('keydown',e=>{
+  if(['ArrowRight','ArrowDown',' ','PageDown'].includes(e.key)){e.preventDefault();go(i+1)}
+  if(['ArrowLeft','ArrowUp','PageUp'].includes(e.key)){e.preventDefault();go(i-1)}
+  if(e.key==='Home')go(0);
+  if(e.key==='End')go(slides.length-1);
+});
+addEventListener('click',e=>{go(e.clientX<innerWidth*0.25?i-1:i+1)});
+fit();go(0);
+</script>
+</body>
+</html>

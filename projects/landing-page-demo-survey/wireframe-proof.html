@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wireframe — bewijs op de demopagina</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; color: #333; background: #fff; }
+  /* placeholder tekst = balken. Echte tekst alleen waar het BEWIJS is. */
+  .t { display: flex; flex-direction: column; gap: 8px; }
+  .t i { display: block; height: 10px; border-radius: 5px; background: #d9d9d9; }
+  .t.h1 i { height: 44px; border-radius: 8px; background: #bcbcbc; }
+  .t.h2 i { height: 30px; border-radius: 7px; background: #c4c4c4; }
+  .t.sub i { height: 14px; background: #d0d0d0; }
+  .t.center { align-items: center; }
+  .w100 { width: 100%; } .w80 { width: 80%; } .w70 { width: 70%; } .w60 { width: 60%; } .w50 { width: 50%; }
+  .lbl { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: #999; font-weight: 600; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; border: 2px solid #333; border-radius: 999px; padding: 18px 40px; background: #fff; }
+  .btn.pri { background: #333; }
+  .btn i { display: block; width: 90px; height: 10px; border-radius: 5px; background: #bbb; }
+  .btn.pri i { background: #eee; }
+  .logo { border: 2px dotted #aaa; min-width: 150px; min-height: 44px; display: flex; align-items: center; justify-content: center; color: #999; font-size: 11px; letter-spacing: .06em; }
+  .img { border: 2px dashed #999; background: repeating-linear-gradient(45deg,#f7f7f7,#f7f7f7 10px,#ececec 10px,#ececec 20px); display: flex; align-items: center; justify-content: center; color: #777; font-size: 12px; letter-spacing: .06em; text-transform: uppercase; padding: 16px; text-align: center; }
+
+  .sect { display: flex; justify-content: center; padding: 96px 28px; position: relative; }
+  .sect.grey { background: #f0f0f0; }
+  .sect.dark { background: #2b2b2b; }
+  .sect.dark .t i { background: #666; } .sect.dark .lbl { color: #999; }
+  .sect .no { position: absolute; top: 18px; left: 28px; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: #aaa; }
+  .wrap { width: 100%; max-width: 1160px; display: flex; flex-direction: column; gap: 44px; }
+  .head { display: flex; flex-direction: column; gap: 14px; max-width: 620px; }
+
+  /* A: bewijsstrook direct onder de hero */
+  .strip { display: flex; flex-wrap: wrap; align-items: center; gap: 20px 48px; justify-content: center; }
+  .strip .stat { display: flex; align-items: baseline; gap: 10px; }
+  .strip .stat b { font-size: 34px; font-weight: 700; letter-spacing: -.02em; }
+  .strip .stat span { font-size: 14px; color: #666; max-width: 150px; }
+  .strip .sep { width: 1px; align-self: stretch; background: #ccc; }
+  .strip .logos { display: flex; gap: 22px; flex-wrap: wrap; }
+
+  /* B: het bewijsblok, twee benen */
+  .legs { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 22px; }
+  .leg { border: 2px solid #777; background: #fafafa; padding: 34px; display: flex; flex-direction: column; gap: 22px; }
+  .sect.dark .leg { background: #363636; border-color: #555; color: #eee; }
+  .leg .src { font-size: 12px; color: #888; letter-spacing: .04em; }
+  .sect.dark .leg .src { color: #999; }
+  .pair { display: flex; align-items: flex-end; gap: 28px; }
+  .pair .one { display: flex; flex-direction: column; gap: 6px; }
+  .pair .num { font-size: 60px; font-weight: 700; line-height: .95; letter-spacing: -.03em; }
+  .pair .cap { font-size: 13px; color: #777; max-width: 130px; }
+  .sect.dark .pair .cap { color: #aaa; }
+  .arrow { font-size: 26px; color: #999; padding-bottom: 16px; }
+  .bars { display: flex; flex-direction: column; gap: 10px; }
+  .barrow { display: flex; align-items: center; gap: 12px; font-size: 12px; color: #888; }
+  .bar { flex: 1; height: 12px; background: #e2e2e2; border-radius: 6px; overflow: hidden; }
+  .sect.dark .bar { background: #4a4a4a; }
+  .bar i { display: block; height: 100%; background: #8a8a8a; border-radius: 6px; }
+  .bar.tbc { background: repeating-linear-gradient(45deg,#4a4a4a,#4a4a4a 6px,#3d3d3d 6px,#3d3d3d 12px); border: 1px dashed #888; }
+  .bar.tbc i { background: repeating-linear-gradient(45deg,#9a9a9a,#9a9a9a 6px,#7a7a7a 6px,#7a7a7a 12px); }
+  .tbcnote { font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: #c9a227; }
+  .split { display: flex; height: 22px; border-radius: 6px; overflow: hidden; border: 1px solid #bbb; }
+  .split i { display: block; height: 100%; }
+  .key { display: flex; flex-wrap: wrap; gap: 18px; font-size: 12px; color: #777; }
+  .key span { display: flex; align-items: center; gap: 7px; }
+  .key b { width: 10px; height: 10px; border-radius: 2px; display: block; }
+
+  /* C: citaat naast de CTA */
+  .cta { border-radius: 32px; background: #2b2b2b; padding: 72px 48px; display: grid; grid-template-columns: minmax(0,3fr) minmax(0,2fr); gap: 56px; align-items: center; }
+  .cta .left { display: flex; flex-direction: column; gap: 20px; align-items: flex-start; }
+  .cta .t i { background: #666; } .cta .t.h2 i { background: #8a8a8a; }
+  .quote { border-left: 3px solid #777; padding-left: 22px; display: flex; flex-direction: column; gap: 14px; }
+  .quote p { font-size: 19px; line-height: 1.45; color: #eee; }
+  .quote .who { font-size: 13px; color: #aaa; line-height: 1.5; }
+
+  .note { font-size: 12px; color: #555; border-left: 2px solid #bbb; padding-left: 14px; max-width: 760px; display: flex; flex-direction: column; gap: 6px; }
+  .note b { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: #111; }
+  @media (max-width: 900px) { .legs, .cta { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<!-- HERO, ingekort: alleen om te tonen wat er direct onder komt -->
+<section class="sect" style="padding-bottom:48px"><span class="no">Hero (ingekort)</span><div class="wrap">
+  <div class="t h1 center" style="width:760px;max-width:100%;align-self:center"><i class="w100"></i><i class="w60"></i></div>
+  <div class="t sub center" style="width:520px;max-width:100%;align-self:center"><i class="w100"></i><i class="w70"></i></div>
+  <div style="display:flex;gap:16px;justify-content:center"><span class="btn pri"><i></i></span><span class="btn"><i></i></span></div>
+</div></section>
+
+<!-- A -->
+<section class="sect grey" style="padding:36px 28px"><span class="no">A · bewijsstrook, direct onder de hero</span><div class="wrap" style="gap:18px">
+  <div class="strip">
+    <div class="stat"><b>94%</b><span>accuracy across 435 assignments and 13 markers</span></div>
+    <div class="sep"></div>
+    <div class="stat"><b>79%</b><span>of students rated the feedback positive or neutral</span></div>
+    <div class="sep"></div>
+    <div class="logos"><span class="logo">Rotterdam</span><span class="logo">The Hague</span><span class="logo">Tilburg</span><span class="logo">Radboud</span></div>
+  </div>
+</div></section>
+
+<section class="sect" style="padding:28px"><div class="wrap"><div class="note">
+  <b>A · waarom hier</b>
+  <p>Nu staat bewijs pas op positie 6, ver onder de vouw. Deze strook zet het sterkste getal in het eerste scherm, direct naast de knop waar 12 van de 16 kliks vallen. De logo's staan hier dun en zonder kop: herkenningswerk, geen bewijswerk.</p>
+</div></div></section>
+
+<!-- B -->
+<section class="sect dark"><span class="no">B · het bewijsblok, twee benen</span><div class="wrap">
+  <div class="head"><span class="lbl">Eyebrow</span><div class="t h2"><i class="w100"></i><i class="w70"></i></div></div>
+  <div class="legs">
+
+    <div class="leg">
+      <span class="lbl">Been 1 · de meting</span>
+      <div class="pair">
+        <span class="one"><span class="num">94%</span><span class="cap">out of the box</span></span>
+        <span class="arrow">→</span>
+        <span class="one"><span class="num">98%</span><span class="cap">once the marker tuned it</span></span>
+      </div>
+      <span class="src">435 assignments · 13 markers · 6 subjects · Bath Spa University, June 2026</span>
+    </div>
+
+    <div class="leg">
+      <span class="lbl">Been 2 · de case</span>
+      <div class="pair">
+        <span class="one"><span class="num">79%</span><span class="cap">of students positive or neutral, with no extra tutor support</span></span>
+      </div>
+      <span class="src">Round 2 rated better than round 1, after tuning the rubric · BDK, Hogeschool Rotterdam</span>
+    </div>
+
+  </div>
+  <div class="img" style="min-height:150px">Optioneel · echte productoutput: één gegenereerde opmerking met criteriumkoppeling</div>
+</div></section>
+
+<section class="sect" style="padding:28px"><div class="wrap"><div class="note">
+  <b>B · waarom twee benen</b>
+  <p>Eén getal is een claim, twee onafhankelijke bronnen die hetzelfde mechanisme aanwijzen zijn een patroon. Links 94 naar 98 na afstemmen, rechts ronde 1 naar ronde 2 na afstemmen. Dat is dezelfde uitspraak, twee keer, op twee instellingen. Dat draagt veel verder dan een groot percentage alleen.</p>
+  <p>Methode staat er niet bij, zoals afgesproken. De dragers (435, 13 markers, 6 vakken, instelling, datum) blijven, want dat is de identiteit van het getal, niet de methode. De definitie van accuraatheid verhuist naar de FAQ.</p>
+</div></div></section>
+
+<!-- C -->
+<section class="sect"><span class="no">C · citaat naast de CTA</span><div class="wrap">
+  <div class="cta">
+    <div class="left">
+      <div class="t h2" style="width:100%"><i class="w100"></i><i class="w70"></i></div>
+      <div class="t sub" style="width:80%"><i class="w100"></i></div>
+      <span class="btn" style="background:#fff"><i></i></span>
+    </div>
+    <figure class="quote">
+      <p>"It never gets tired, and in some ways it gives better feedback than I do."</p>
+      <figcaption class="who">Els Stapersma<br>Lecturer in language skills, The Hague University of Applied Sciences</figcaption>
+    </figure>
+  </div>
+</div></section>
+
+<section class="sect" style="padding:28px 28px 96px"><div class="wrap"><div class="note">
+  <b>C · waarom naast de knop</b>
+  <p>Eén benoemd citaat in een rij van drie leest als "we hadden er maar één". Naast de knop leest het als bewijs op het moment van beslissen. Dat is ook de plek die het enige echte experiment hierover aanwijst (comScore: testimonial met logo, +69% demo-aanvragen).</p>
+  <p>Engelse vertaling van het Nederlandse origineel: "Bovendien wordt die tool nooit moe en geeft hij in sommige opzichten betere feedback dan ik." Nog te bevestigen bij Els: publicatie met naam en instelling.</p>
+</div></div></section>
+
+</body>
+</html>

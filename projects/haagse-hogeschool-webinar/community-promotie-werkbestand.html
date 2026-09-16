@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Community-promotie · Webinar 23 juni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{ --navy:#002333; --green:#00E075; --green2:#008F5A; --bg:#f5f7f8; --card:#fff; --line:#e2e8ea; --muted:#5b6b73; }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--navy);font-family:'Roboto',system-ui,sans-serif}
+  h1,h2,.spartan{font-family:'League Spartan',system-ui,sans-serif}
+  header{background:var(--navy);color:#fff;padding:20px 24px;position:sticky;top:0;z-index:10;box-shadow:0 2px 10px rgba(0,0,0,.15)}
+  header .logo{font-family:'League Spartan';font-weight:700;font-size:26px}
+  header .logo b{color:var(--green)}
+  header .sub{font-size:14px;color:#b9c6cc;margin-top:2px}
+  .bar{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:14px}
+  .progress{flex:1;min-width:200px;height:10px;background:#0a3144;border-radius:6px;overflow:hidden}
+  .progress > div{height:100%;background:var(--green);width:0%;transition:width .25s}
+  .count{font-size:14px;color:#cfe9df;white-space:nowrap}
+  .wrap{max-width:880px;margin:0 auto;padding:22px 18px 90px}
+  .ref{background:#0a3144;color:#dfeef0;border-radius:12px;padding:16px 18px;margin:18px 0;font-size:14px;line-height:1.55}
+  .ref b{color:#fff}
+  .ref code{background:#06222f;color:#7ff0b6;padding:1px 6px;border-radius:5px;font-size:13px}
+  .sec-h{display:flex;align-items:baseline;gap:12px;margin:34px 4px 12px}
+  .sec-h h2{font-size:22px;margin:0}
+  .sec-h .bc{font-size:13px;color:var(--muted)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:10px 0;transition:opacity .2s,border-color .2s}
+  .card.done{opacity:.55;border-color:var(--green)}
+  .crow{display:flex;align-items:flex-start;gap:11px;flex-wrap:wrap}
+  .chk{width:24px;height:24px;border-radius:7px;border:2px solid var(--line);flex:0 0 auto;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:15px;color:#fff;background:#fff;margin-top:2px}
+  .card.done .chk{background:var(--green);border-color:var(--green)}
+  .who{flex:1;min-width:200px}
+  .who .nm{font-family:'League Spartan';font-weight:700;font-size:17px;line-height:1.15}
+  .who .nm a{color:var(--navy);text-decoration:none;border-bottom:2px solid var(--green)}
+  .who .url{font-size:12px;color:var(--green2);word-break:break-all}
+  .who .why{font-size:13px;color:var(--muted);margin-top:5px;line-height:1.5}
+  .badge{font-size:11px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;padding:3px 8px;border-radius:20px;flex:0 0 auto;margin-top:2px}
+  .b-top{background:#d7f7e7;color:#006754}
+  .b-mid{background:#e2edf2;color:#0a3144}
+  .b-low{background:#f0eede;color:#7a6a1f}
+  label.fl{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.4px;color:var(--muted);font-weight:700;margin:10px 0 4px}
+  textarea{width:100%;background:#fff;color:var(--navy);border:1px solid #cdd9dd;border-radius:9px;padding:11px 13px;font-family:'Roboto';font-size:14px;line-height:1.6;resize:vertical}
+  textarea:focus{outline:none;border-color:var(--green2);box-shadow:0 0 0 2px #00e07533}
+  .frow{display:flex;align-items:center;gap:12px;margin-top:10px;flex-wrap:wrap}
+  .cp{background:var(--green);color:var(--navy);border:none;border-radius:8px;padding:10px 18px;font-size:14px;font-weight:700;font-family:'League Spartan';cursor:pointer}
+  .cp:hover{background:#00c768}
+  .cp.sm{padding:7px 12px;font-size:13px}
+  .qline{display:flex;align-items:center;gap:10px;margin:8px 0;flex-wrap:wrap}
+  .q{flex:1;min-width:240px;background:#fff;border:1px solid var(--line);border-radius:8px;padding:9px 12px;font-size:13px;font-family:'Roboto'}
+  .q b{color:var(--green2)}
+  .toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--navy);color:#fff;padding:12px 20px;border-radius:10px;font-size:14px;opacity:0;pointer-events:none;transition:.2s;z-index:50}
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+  .toast b{color:var(--green)}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">Edu<b>face</b></div>
+  <div class="sub">Community-promotie · Webinar dinsdag 23 juni (10:00-11:00) · AI-feedback & kansengelijkheid</div>
+  <div class="bar">
+    <div class="progress"><div id="pbar"></div></div>
+    <div class="count" id="pcount">0 / 0 geplaatst</div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="ref">
+    <b>Doel:</b> de webinar plaatsen in NL hoger-onderwijscommunities rond AI, feedback en digitaal toetsen, om aanmeldingen op te halen buiten je eigen netwerk.<br><br>
+    <b>Toon:</b> dit zijn vakcommunities, geen advertentieruimte. Post als kennisdeling ("we delen de pilotresultaten"), niet als reclame. De kansengelijkheid-hoek werkt hier het beste. Aanmeldlink: <code>https://join.eduface.me/webinar</code><br><br>
+    <b>Afvinken:</b> klik het vakje als je ergens hebt geplaatst. Voortgang wordt lokaal in je browser bewaard.
+  </div>
+
+  <!-- ===== COMMUNITY POST ===== -->
+  <div class="sec-h"><h2 class="spartan">Post voor in de communities</h2><span class="bc">kennisdeling-toon</span></div>
+  <div class="card">
+    <textarea rows="12" id="post">We delen binnenkort de resultaten van een pilot op De Haagse Hogeschool over AI-feedback op schrijfvaardigheid.
+
+Samen met docent Maartje Sijm kijken we naar wat het deed. Studenten kregen over meerdere rondes AI-ondersteunde feedback op hun teksten. De studenten die de tool wekelijks gebruikten, haalden aan het eind allemaal een voldoende. We bespreken ook wat dit betekent voor kansengelijkheid in het hoger onderwijs.
+
+Dit doen we in een gratis webinar op dinsdag 23 juni, van 10:00 tot 11:00, online.
+
+Lijkt het je interessant? Aanmelden kan via https://join.eduface.me/webinar
+
+Heb je vragen over de pilot? Stel ze gerust hieronder.</textarea>
+    <div class="frow"><button class="cp" onclick="cp('post')">Kopieer post</button></div>
+  </div>
+
+  <!-- ===== COMMUNITIES ===== -->
+  <div class="sec-h"><h2 class="spartan">Waar plaatsen</h2><span class="bc">beste fit bovenaan</span></div>
+
+  <div class="card" data-id="npuls">
+    <div class="crow">
+      <div class="chk" onclick="tog(this)"></div>
+      <div class="who">
+        <div class="nm"><a href="https://community-data-ai.npuls.nl" target="_blank">Npuls Community Data &amp; AI</a></div>
+        <div class="url">community-data-ai.npuls.nl</div>
+        <div class="why">Beste match. 600+ leden uit mbo/hbo/wo rond AI in onderwijs. Loopt net een visietraject over AI, studiedata en kansengelijkheid, met De Haagse Hogeschool erbij. Jullie thema past 1-op-1.</div>
+      </div>
+      <span class="badge b-top">Top fit</span>
+    </div>
+  </div>
+
+  <div class="card" data-id="surf-dt">
+    <div class="crow">
+      <div class="chk" onclick="tog(this)"></div>
+      <div class="who">
+        <div class="nm"><a href="https://communities.surf.nl/digitaal-toetsen" target="_blank">SURF Communities – Digitaal Toetsen</a></div>
+        <div class="url">communities.surf.nl/digitaal-toetsen</div>
+        <div class="why">Vakcommunity rond digitaal toetsen (mbo/hbo/wo). Je kunt er artikelen én events delen. Precies de docenten en toetsexperts die je zoekt.</div>
+      </div>
+      <span class="badge b-top">Top fit</span>
+    </div>
+  </div>
+
+  <div class="card" data-id="lvt">
+    <div class="crow">
+      <div class="chk" onclick="tog(this)"></div>
+      <div class="who">
+        <div class="nm"><a href="https://lerenvantoetsen.nl" target="_blank">Platform Leren van Toetsen</a></div>
+        <div class="url">lerenvantoetsen.nl</div>
+        <div class="why">Draait om leerwaarde van toetsing en formatief toetsen, jullie hoek. Let op: stopt ergens in 2026, dus check of het kanaal nog actief is.</div>
+      </div>
+      <span class="badge b-mid">Goede fit</span>
+    </div>
+  </div>
+
+  <div class="card" data-id="ntb">
+    <div class="crow">
+      <div class="chk" onclick="tog(this)"></div>
+      <div class="who">
+        <div class="nm">Netwerk Toetsbekwaamheid</div>
+        <div class="url">via SURF / lerenvantoetsen-omgeving</div>
+        <div class="why">~800 HBO/WO-docenten en toetsexperts. Sterke doelgroep als je toegang krijgt tot de team-omgeving.</div>
+      </div>
+      <span class="badge b-mid">Goede fit</span>
+    </div>
+  </div>
+
+  <div class="card" data-id="surf-ai">
+    <div class="crow">
+      <div class="chk" onclick="tog(this)"></div>
+      <div class="who">
+        <div class="nm"><a href="https://communities.surf.nl" target="_blank">SURF Community – AI in Education</a></div>
+        <div class="url">communities.surf.nl</div>
+        <div class="why">SURF-community rond AI voor hoger onderwijs. Zoek op "AI" binnen het communities-platform.</div>
+      </div>
+      <span class="badge b-mid">Goede fit</span>
+    </div>
+  </div>
+
+  <div class="card" data-id="aivd">
+    <div class="crow">
+      <div class="chk" onclick="tog(this)"></div>
+      <div class="who">
+        <div class="nm"><a href="https://aivoordocenten.nl" target="_blank">AI voor Docenten</a></div>
+        <div class="url">aivoordocenten.nl</div>
+        <div class="why">Heeft een laagdrempelige WhatsApp-community voor verantwoorde AI in onderwijs (NL/BE). Goede plek om het event te droppen.</div>
+      </div>
+      <span class="badge b-low">Laagdrempelig</span>
+    </div>
+  </div>
+
+  <div class="card" data-id="oc">
+    <div class="crow">
+      <div class="chk" onclick="tog(this)"></div>
+      <div class="who">
+        <div class="nm"><a href="https://onderwijscommunity.nl" target="_blank">Onderwijscommunity.nl</a></div>
+        <div class="url">onderwijscommunity.nl</div>
+        <div class="why">Open community, actief rond ChatGPT/AI in onderwijs.</div>
+      </div>
+      <span class="badge b-low">Laagdrempelig</span>
+    </div>
+  </div>
+
+  <div class="card" data-id="li-groups">
+    <div class="crow">
+      <div class="chk" onclick="tog(this)"></div>
+      <div class="who">
+        <div class="nm">LinkedIn-groepen</div>
+        <div class="url">zoek op het platform, filter Groepen</div>
+        <div class="why">Bijv. "AI in het onderwijs", "Onderwijs en ICT", "Digitaal toetsen". Namen wisselen, vind ze via de zoekprompts hieronder.</div>
+      </div>
+      <span class="badge b-low">Laagdrempelig</span>
+    </div>
+  </div>
+
+  <div class="card" data-id="fb-groups">
+    <div class="crow">
+      <div class="chk" onclick="tog(this)"></div>
+      <div class="who">
+        <div class="nm">Facebook-groepen</div>
+        <div class="url">zoek direct op Facebook</div>
+        <div class="why">"AI in het onderwijs", "ChatGPT in het onderwijs". Grote, actieve NL-groepen, niet via Google te vinden.</div>
+      </div>
+      <span class="badge b-low">Laagdrempelig</span>
+    </div>
+  </div>
+
+  <!-- ===== ZOEKPROMPTS ===== -->
+  <div class="sec-h"><h2 class="spartan">Zoekprompts om meer te vinden</h2><span class="bc">plak in LinkedIn/Facebook (filter Groepen) of Google</span></div>
+  <div class="card">
+    <div class="qline"><div class="q"><b>LinkedIn/FB:</b> AI in het onderwijs &middot; filter Groepen</div><button class="cp sm" onclick="cpt('AI in het onderwijs')">Kopieer</button></div>
+    <div class="qline"><div class="q"><b>LinkedIn:</b> digitaal toetsen OR formatief toetsen &middot; filter Groepen</div><button class="cp sm" onclick="cpt('digitaal toetsen OR formatief toetsen')">Kopieer</button></div>
+    <div class="qline"><div class="q"><b>LinkedIn:</b> hoger onderwijs docenten community &middot; filter Groepen</div><button class="cp sm" onclick="cpt('hoger onderwijs docenten community')">Kopieer</button></div>
+    <div class="qline"><div class="q"><b>Google:</b> "AI in het onderwijs" community hoger onderwijs Nederland</div><button class="cp sm" onclick="cpt('&quot;AI in het onderwijs&quot; community hoger onderwijs Nederland')">Kopieer</button></div>
+    <div class="qline"><div class="q"><b>Google:</b> "slack" OR "discord" AI onderwijs Nederland community</div><button class="cp sm" onclick="cpt('&quot;slack&quot; OR &quot;discord&quot; AI onderwijs Nederland community')">Kopieer</button></div>
+    <div class="qline"><div class="q"><b>Google:</b> hogeschool OR universiteit "community" AI feedback toetsing</div><button class="cp sm" onclick="cpt('hogeschool OR universiteit &quot;community&quot; AI feedback toetsing')">Kopieer</button></div>
+    <div class="qline"><div class="q"><b>LinkedIn Events:</b> AI onderwijs &middot; kijk wie nog meer iets organiseert (= waar je doelgroep zit)</div><button class="cp sm" onclick="cpt('AI onderwijs')">Kopieer</button></div>
+  </div>
+
+</div>
+
+<div class="toast" id="toast"><b>Gekopieerd</b> naar klembord</div>
+<script>
+  const KEY='hss-community-promotie';
+  function load(){try{return JSON.parse(localStorage.getItem(KEY))||{}}catch(e){return {}}}
+  function save(s){localStorage.setItem(KEY,JSON.stringify(s))}
+  function refresh(){
+    const cards=document.querySelectorAll('.card[data-id]');
+    let done=0;cards.forEach(c=>{if(c.classList.contains('done'))done++});
+    document.getElementById('pcount').textContent=done+' / '+cards.length+' geplaatst';
+    document.getElementById('pbar').style.width=(cards.length?Math.round(done/cards.length*100):0)+'%';
+  }
+  function tog(el){const card=el.closest('.card');const id=card.dataset.id;card.classList.toggle('done');
+    el.textContent=card.classList.contains('done')?'✓':'';
+    const s=load();s[id]=card.classList.contains('done');save(s);refresh();}
+  (function init(){const s=load();document.querySelectorAll('.card[data-id]').forEach(c=>{
+    if(s[c.dataset.id]){c.classList.add('done');c.querySelector('.chk').textContent='✓';}});refresh();})();
+  document.querySelectorAll('textarea').forEach(t=>{const fit=()=>{t.style.height='auto';t.style.height=t.scrollHeight+'px'};fit();t.addEventListener('input',fit)});
+  function flash(){const t=document.getElementById('toast');t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1400)}
+  function cp(id){navigator.clipboard.writeText(document.getElementById(id).value).then(flash)}
+  function cpt(txt){const d=document.createElement('textarea');d.innerHTML=txt;navigator.clipboard.writeText(d.value).then(flash)}
+</script>
+</body>
+</html>

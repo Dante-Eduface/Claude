@@ -1,0 +1,240 @@
+<title>Beoordelingslast Notenboom</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=League+Spartan:wght@600;700;800&display=swap">
+
+<style>
+  :root{
+    --ground:#f2f6f6; --paper:#ffffff; --ink:#07222e; --ink-soft:#4d6874; --ink-faint:#7d949d;
+    --rule:#dbe5e6; --accent:#007b54; --accent-bright:#00e075; --accent-soft:#e2f2ea;
+    --slab:#07222e; --slab-ink:#ffffff; --slab-soft:#9fb6bd;
+    --shadow:0 1px 2px rgba(7,34,46,.05), 0 10px 26px -18px rgba(7,34,46,.35);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ground:#06161d; --paper:#0c2029; --ink:#e8f1f1; --ink-soft:#9fb6bd; --ink-faint:#7a9199;
+      --rule:#1c3742; --accent:#00e075; --accent-bright:#00e075; --accent-soft:#0d3a2c;
+      --slab:#02323f; --slab-ink:#ffffff; --slab-soft:#9fb6bd;
+      --shadow:0 1px 2px rgba(0,0,0,.3), 0 10px 26px -18px rgba(0,0,0,.8);
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#06161d; --paper:#0c2029; --ink:#e8f1f1; --ink-soft:#9fb6bd; --ink-faint:#7a9199;
+    --rule:#1c3742; --accent:#00e075; --accent-bright:#00e075; --accent-soft:#0d3a2c;
+    --slab:#02323f; --slab-ink:#ffffff; --slab-soft:#9fb6bd;
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 10px 26px -18px rgba(0,0,0,.8);
+  }
+
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--ground); color:var(--ink);
+    font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+    font-size:16px; line-height:1.55; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:70rem; margin:0 auto; padding:3rem 1.5rem 5rem; display:flex; flex-direction:column; gap:2rem}
+
+  header{display:flex; flex-direction:column; gap:.55rem}
+  .eyebrow{font-size:.7rem; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:var(--accent)}
+  h1{font-family:"League Spartan",Inter,sans-serif; font-weight:800; letter-spacing:-.025em;
+     font-size:clamp(2rem,5vw,2.6rem); line-height:1.05; margin:0; text-wrap:balance}
+  .lede{color:var(--ink-soft); max-width:44rem; margin:0}
+
+  .cols{display:grid; grid-template-columns:minmax(0,19rem) minmax(0,1fr); gap:1.75rem; align-items:start}
+  @media (max-width:860px){ .cols{grid-template-columns:1fr} }
+
+  h2{font-size:.72rem; font-weight:700; letter-spacing:.13em; text-transform:uppercase;
+     color:var(--ink-faint); margin:0 0 .9rem}
+
+  .panel{background:var(--paper); border:1px solid var(--rule); border-radius:14px;
+         box-shadow:var(--shadow); padding:1.25rem}
+
+  .fields{display:flex; flex-direction:column; gap:1.05rem}
+  .field{display:flex; flex-direction:column; gap:.35rem}
+  .field label{font-size:.9rem; font-weight:600}
+  .row{display:flex; align-items:center; gap:.5rem}
+  input[type="number"]{
+    flex:1; min-width:0; font:inherit; font-family:"League Spartan",Inter,sans-serif;
+    font-weight:700; font-size:1.15rem; font-variant-numeric:tabular-nums;
+    color:var(--ink); background:var(--ground); border:1px solid var(--rule);
+    border-radius:9px; padding:.5rem .7rem;
+  }
+  input[type="number"]:focus-visible{outline:2px solid var(--accent); outline-offset:1px; border-color:transparent}
+  .unit{font-size:.85rem; color:var(--ink-faint); flex:none}
+  .tag{font-size:.72rem; color:var(--ink-faint)}
+  .tag b{color:var(--accent); font-weight:600}
+
+  .slider{display:flex; flex-direction:column; gap:.45rem}
+  input[type="range"]{width:100%; accent-color:var(--accent)}
+  input[type="range"]:focus-visible{outline:2px solid var(--accent); outline-offset:3px}
+
+  .reset{margin-top:.4rem; font:inherit; font-size:.85rem; font-weight:600; color:var(--accent);
+         background:none; border:1px solid var(--rule); border-radius:8px; padding:.45rem .8rem; cursor:pointer}
+  .reset:hover{border-color:var(--accent)}
+  .reset:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+
+  .chain{display:flex; flex-direction:column; gap:.7rem}
+  .step{display:flex; align-items:center; justify-content:space-between; gap:1rem; flex-wrap:wrap;
+        background:var(--paper); border:1px solid var(--rule); border-radius:12px;
+        padding:.95rem 1.2rem; box-shadow:var(--shadow)}
+  .step .formula{font-size:.95rem; color:var(--ink-soft); font-variant-numeric:tabular-nums}
+  .step .out{font-family:"League Spartan",Inter,sans-serif; font-weight:700; font-size:1.5rem;
+             letter-spacing:-.02em; font-variant-numeric:tabular-nums; white-space:nowrap}
+  .step.total{background:var(--slab); border-color:var(--slab); color:var(--slab-ink)}
+  .step.total .formula{color:var(--slab-soft)}
+  .step.total .out{color:var(--accent-bright); font-size:2rem}
+
+  .checks{display:grid; grid-template-columns:1fr 1fr; gap:.7rem}
+  @media (max-width:560px){ .checks{grid-template-columns:1fr} }
+  .check{background:var(--accent-soft); border-radius:12px; padding:.85rem 1.1rem}
+  .check .v{font-family:"League Spartan",Inter,sans-serif; font-weight:700; font-size:1.25rem;
+            font-variant-numeric:tabular-nums}
+  .check .k{font-size:.85rem; color:var(--ink-soft)}
+  :root[data-theme="dark"] .check .k{color:var(--ink-soft)}
+
+  .gain{display:grid; grid-template-columns:repeat(3,1fr); gap:.7rem; margin-top:.2rem}
+  @media (max-width:700px){ .gain{grid-template-columns:1fr} }
+  .gain .cell{background:var(--paper); border:1px solid var(--rule); border-radius:12px;
+              padding:1rem 1.1rem; box-shadow:var(--shadow)}
+  .gain .v{font-family:"League Spartan",Inter,sans-serif; font-weight:700; font-size:1.6rem;
+           letter-spacing:-.02em; font-variant-numeric:tabular-nums}
+  .gain .k{font-size:.85rem; color:var(--ink-soft)}
+  .gain .cell.hi .v{color:var(--accent)}
+
+  footer{border-top:1px solid var(--rule); padding-top:1.1rem; font-size:.85rem; color:var(--ink-faint);
+         display:flex; flex-direction:column; gap:.3rem}
+  @media (prefers-reduced-motion: reduce){ *{transition:none !important} }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Business School Notenboom</div>
+    <h1>Wat beoordelen nu kost</h1>
+    <p class="lede">Ingevuld met de cijfers uit ons gesprek van 18 augustus. Pas elk getal aan, de som rekent mee.</p>
+  </header>
+
+  <div class="cols">
+    <section class="panel" aria-label="Invoer">
+      <h2>Jullie cijfers</h2>
+      <div class="fields">
+        <div class="field">
+          <label for="studenten">Studenten</label>
+          <div class="row"><input id="studenten" type="number" min="0" step="5" value="175"></div>
+          <div class="tag"><b>Barbara</b>, hele school</div>
+        </div>
+        <div class="field">
+          <label for="vakken">Vakken per student per jaar</label>
+          <div class="row"><input id="vakken" type="number" min="0" step="1" value="15"></div>
+          <div class="tag"><b>Barbara</b>, nog te bevestigen</div>
+        </div>
+        <div class="field">
+          <label for="uur">Uur per beoordeling</label>
+          <div class="row"><input id="uur" type="number" min="0" step=".5" value="2"></div>
+          <div class="tag"><b>Barbara</b>, per student per vak</div>
+        </div>
+        <div class="field">
+          <label for="tarief">Uurtarief</label>
+          <div class="row"><span class="unit">&euro;</span><input id="tarief" type="number" min="0" step="5" value="60"></div>
+          <div class="tag"><b>Barbara</b>, 18 augustus</div>
+        </div>
+        <div class="field">
+          <label for="docenten">Docenten</label>
+          <div class="row"><input id="docenten" type="number" min="1" step="1" value="20"></div>
+          <div class="tag">Van jullie teampagina</div>
+        </div>
+        <button class="reset" id="reset" type="button">Terug naar de startwaarden</button>
+      </div>
+    </section>
+
+    <section aria-label="Berekening">
+      <h2>Hoe de som loopt</h2>
+      <div class="chain">
+        <div class="step">
+          <span class="formula" id="f1"></span>
+          <span class="out" id="r1"></span>
+        </div>
+        <div class="step">
+          <span class="formula" id="f2"></span>
+          <span class="out" id="r2"></span>
+        </div>
+        <div class="step total">
+          <span class="formula" id="f3"></span>
+          <span class="out" id="r3"></span>
+        </div>
+      </div>
+
+      <h2 style="margin-top:1.6rem">Klopt dat met de praktijk</h2>
+      <div class="checks">
+        <div class="check"><div class="v" id="c1"></div><div class="k">per student per jaar</div></div>
+        <div class="check"><div class="v" id="c2"></div><div class="k">per docent per week, over 40 weken</div></div>
+      </div>
+
+      <h2 style="margin-top:1.6rem">Als een deel van dat voorwerk wegvalt</h2>
+      <div class="panel">
+        <div class="slider">
+          <label for="winst" style="font-size:.9rem;font-weight:600">
+            Tijdwinst op het nakijken: <span id="winstlbl">30%</span>
+          </label>
+          <input id="winst" type="range" min="0" max="60" step="5" value="30">
+        </div>
+        <div class="gain">
+          <div class="cell"><div class="v" id="g1"></div><div class="k">uur per jaar vrij</div></div>
+          <div class="cell"><div class="v" id="g2"></div><div class="k">wat die uren waard zijn</div></div>
+          <div class="cell hi"><div class="v" id="g3"></div><div class="k">na aftrek van &euro;10.000 jaarfee</div></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div>Alle cijfers komen uit de gesprekken van 10 en 18 augustus 2026, behalve het aantal docenten.</div>
+    <div>De jaarfee van &euro;10.000 geldt voor &eacute;&eacute;n opleiding tot 500 studentplaatsen.</div>
+  </footer>
+</div>
+
+<script>
+  const FEE = 10000;
+  const START = {studenten:175, vakken:15, uur:2, tarief:60, docenten:20, winst:30};
+  const el = id => document.getElementById(id);
+  const nl = new Intl.NumberFormat('nl-NL', {maximumFractionDigits:0});
+  const nl1 = new Intl.NumberFormat('nl-NL', {maximumFractionDigits:1});
+  const eur = n => '€' + nl.format(Math.round(n));
+
+  function calc(){
+    const s = +el('studenten').value || 0;
+    const v = +el('vakken').value || 0;
+    const u = +el('uur').value || 0;
+    const t = +el('tarief').value || 0;
+    const d = Math.max(1, +el('docenten').value || 1);
+    const w = +el('winst').value;
+
+    const beoordelingen = s * v;
+    const uren = beoordelingen * u;
+    const kosten = uren * t;
+
+    el('f1').textContent = nl.format(s) + ' studenten × ' + nl.format(v) + ' vakken';
+    el('r1').textContent = nl.format(beoordelingen) + ' beoordelingen';
+    el('f2').textContent = nl.format(beoordelingen) + ' beoordelingen × ' + nl1.format(u) + ' uur';
+    el('r2').textContent = nl.format(uren) + ' uur per jaar';
+    el('f3').textContent = nl.format(uren) + ' uur × ' + eur(t);
+    el('r3').textContent = eur(kosten) + ' per jaar';
+
+    el('c1').textContent = nl1.format(s ? uren / s : 0) + ' uur';
+    el('c2').textContent = nl1.format(uren / d / 40) + ' uur';
+
+    const vrij = uren * w / 100;
+    el('winstlbl').textContent = w + '%';
+    el('g1').textContent = nl.format(vrij);
+    el('g2').textContent = eur(vrij * t);
+    el('g3').textContent = eur(vrij * t - FEE);
+  }
+
+  ['studenten','vakken','uur','tarief','docenten','winst'].forEach(id =>
+    el(id).addEventListener('input', calc));
+
+  el('reset').addEventListener('click', () => {
+    for (const k in START) el(k).value = START[k];
+    calc();
+  });
+
+  calc();
+</script>

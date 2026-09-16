@@ -1,0 +1,107 @@
+{
+  "slug": "university-of-sunderland-in-london",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_11RN5Uj14ozTCYkIaqhffczC0fGv9UqSuqaQPNxWIv1",
+    "naam": "University of Sunderland in London",
+    "url": "https://app.close.com/lead/lead_11RN5Uj14ozTCYkIaqhffczC0fGv9UqSuqaQPNxWIv1/",
+    "lead_status": "Prospect",
+    "opportunity_id": null,
+    "fase": null,
+    "fase_type": null,
+    "waarde": null,
+    "valuta": "EUR",
+    "confidence": null,
+    "close_date": null,
+    "eigenaar": "Eduface CRM",
+    "crm_note": "",
+    "contacten": [
+      {
+        "naam": "Erika Keizere",
+        "titel": "Senior Lecturer (Academic Development – Digital Learning and Pedagogy)",
+        "email": "erikaklisonyte@gmail.com",
+        "id": "cont_NORq7RGBgcoIDXqgUUZ9ieUFAeuwnc8Mk9T9OWK0ei9"
+      },
+      {
+        "naam": "Yahaya Alhassan",
+        "titel": "PvC Academic (leidt de NSS scores)",
+        "email": null,
+        "id": "cont_iOQT4QnmsO9KDF7vtXaz18Otsuo6dwst7vSNPIecXBj"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_GRk3x98xQM9oK1JekuBArRbntfpnzmbruhsiXeLH6UV",
+        "soort": "call",
+        "datum": "2026-04-21",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Opgenomen, bel afspraak ingepland in de agenda.",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_BsM3o0SF9bf4lKb2EaAgpvH8owsmbojZ2yLXi6GDZDk",
+        "soort": "meeting",
+        "datum": "2026-04-30",
+        "titel": "Bath spa x Eduface AI Assessment webinar",
+        "duur_min": 30,
+        "status": "completed",
+        "deelnemers": [
+          "dante.torbed@eduface.me",
+          "erika.keizere@sunderland.ac.uk",
+          "jeroen.van.gessel@eduface.me"
+        ],
+        "samenvatting": "- Discussed Eduface's proprietary AI model trained for consistent educational grading and feedback, achieving 96% accuracy at Bath University with 90% greater energy efficiency than commercial models.\n- Identified University of Sunderland's key challenges: inconsistent feedback from multiple markers, high workload with 300-400 student intakes per term, and 90% international student population requiring careful language feedback.\n- Outlined Eduface features including customizable rubric-based feedback, program-level comment banks, and module leader analytics for tracking marker consistency.\n- Presented pilot pricing of £3,500-4,000 upfront plus conditional success fee, with rollout costs ranging £20,000-40,000 per year depending on contract length.\n- Confirmed institution is evaluating multiple tools including FeedbackFruits and will present findings to leadership team within several weeks for final decision.\n\n### Institution Background and Context\n- University of Sunderland in London is exploring AI assessment tools to support their marking and feedback processes.\n- The institution serves over 90% international students, with English not being their first language for the majority.\n- The university has four student intake periods per year, with some programs receiving 300-400 student entries.\n- An AI policy is currently in development, allowing AI tools for assessment support such as structuring, layout, and grammar checking.\n- Program-specific AI policies are being created to accommodate different assessment types across tourism, hospitality, and other disciplines.\n\n### Current Assessment Challenges\n- Consistency and standardization in feedback between multiple markers is a significant issue.\n- High staff workload due to marking volume creates delays in assessment turnaround and feedback provision.\n- Variation in marking and feedback quality between different tutors marking the same cohort affects student experience negatively.\n- The institution offers CPD sessions through the Academic Development Centre to address marking consistency issues.\n- While some modules have rubrics, they are not universally applied across all programs at the university.\n\n### Use Cases and Implementation Approach\n- The institution is willing to explore both formative and summative AI assessment feedback.\n- Formative feedback would be provided during the writing process (weeks 2, 4, 6) with summative feedback at assignment completion.\n- The university prefers AI as an assistant to generate feedback suggestions rather than as a comparison tool to save time.\n- Lecturers would be able to adjust AI-generated feedback and add personal comments as needed.\n- The institution is interested in establishing a learning partnership similar to Bath University's implementation with shared results and insights.\n\n### Eduface Tool Features and Technical Specifications\n- Eduface has developed its own large language model trained specifically on education and didactic principles of grading and consistent feedback.\n- The model contains 120 billion parameters, approximately 10 times smaller than commercial models like ChatGPT and Gemini.\n- The proprietary model provides approximately 90% greater energy efficiency compared to commercial large language models.\n- Current pilot results with Bath University show 96% accuracy in grading, with the AI model differing by only 4% from human markers.\n- The tool achieved 96% accuracy specifically because markers review their own grades first then compare with AI suggestions, creating a comparison study.\n\n### Tool Capabilities and Consistency\n- Eduface uses a proprietary model rather than API-based models due to consistency issues with commercial language models.\n- The custom model does not produce inconsistent results when processing the same assignment multiple times.\n- Lecturers can create personalized banks of standardized comments for frequent feedback, improving grading efficiency.\n- Comments and rubrics can be tailored program by program, not just at the university-wide level.\n- Module leaders can view analytics showing marking differences between different tutors and be alerted if markers deviate significantly from AI grades.\n\n### Pilot Program Structure and Costs\n- Eduface offers a six-month pilot period covering one or two modules with support from a dedicated point of contact.\n- Pilot programs require universities to set 2-3 critical success factors, such as 90% grading accuracy or 30% time savings on marking.\n- Upfront pilot fees are approximately £3,500 to £4,000.\n- An additional success fee of £3,500 to £4,000 applies if critical success factors are achieved.\n- The success fee is waived if the institution proceeds to a full rollout agreement.\n\n### Rollout Pricing and Cost Calculations\n- Rollout pricing is highly dependent on infrastructure requirements and contract length rather than per-assignment usage.\n- For an institution with approximately 5,000-6,000 students, costs typically range from £20,000 per year (multi-year contracts) to £40,000 per year (single-year contracts).\n- Pricing is flexible based on GPU reservation periods, with longer-term contracts resulting in lower annual costs.\n- Unlike API-based models, Eduface does not charge per token or per assignment processed.\n- The cost structure requires advance commitment to reserve GPU infrastructure, making pricing dependent on annual or multi-year selections.\n\n### Sustainability Advantages\n- Eduface's proprietary model is approximately 10 times smaller than commercial large language models that contain 1.6-2 trillion parameters.\n- The smaller model requires significantly less electricity, cooling, and hardware resources to operate.\n- Per-assignment processing in Eduface achieves approximately 90% greater energy efficiency compared to commercial language models.\n- Eduface is actively researching further optimization to reduce environmental impact even more.\n\n### Competitive Landscape and Next Steps\n- University of Sunderland is currently evaluating multiple assessment tools, including FeedbackFruits, which is identified as a key competitor.\n- The institution plans to present options to senior leadership, including the principal lecturer leading academic development and the digital team.\n- A decision timeline is planned for several weeks out, pending availability of key decision-makers who are currently on leave.\n- The institution may choose to implement either a single tool or multiple tools depending on institutional fit.\n- Jeroen van Gessel confirmed he would send meeting notes to Erika Keizere and remains available for further discussion.",
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_eQJ1nzPOEoZEC51l5hepFiGhfwZ7H5GAyp6RjU66xJr",
+        "soort": "call",
+        "datum": "2026-06-08",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Een feedback gesprek met haar plannen. \n\nWat kunnen we nog meer van haar leren. \n\n\n\n\n\nShe mentioned that she took the case Yaron gave her to her manager. She heard back that, budget-wise, it could be a fit, but it would be something for the next academic year (2027–2028), not the upcoming academic year, since those budgets are already finalized.\n\nI then asked whether there were any other concerns. Even though Sunderland Business School is a separate business faculty, it still has to take the rules of the wider university into account. The university's current AI policy states that lecturers cannot use AI for feedback and grading.\n\nHowever, she mentioned that if we are able to make a compelling business case — showing that lecturers are currently in a negative situation — there would be possibilities to set up a pilot. Case studies should be included in that document. So a pilot would be possible, but only in the next academic year.\n\nI told her that I would get in touch with her as we get closer to that next academic year, and that we will keep her in the loop regarding any updates to our product.",
+        "transcript_beschikbaar": false,
+        "komend": false
+      }
+    ],
+    "open_taken": [],
+    "laatste_gesprek": "2026-06-08",
+    "volgende_afspraak": null,
+    "aantal_gehad": 3,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

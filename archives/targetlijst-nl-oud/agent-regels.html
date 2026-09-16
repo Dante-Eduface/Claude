@@ -1,0 +1,259 @@
+<title>SHIFT agent-regels</title>
+
+<style>
+  :root{--bg:#f4f7f6;--card:#fff;--ink:#07222e;--soft:#4d6874;--faint:#7d949d;--rule:#dde6e5;
+    --accent:#00714a;--accent-soft:#e2f2ea;--warn:#8a5300;--warn-soft:#fbf0dd;--bad:#a3282d;--bad-soft:#fbeaea}
+  @media(prefers-color-scheme:dark){:root{--bg:#061c25;--card:#0b2732;--ink:#e8f1ef;--soft:#a9c2c4;--faint:#7d989c;
+    --rule:#153744;--accent:#3ddc9a;--accent-soft:#0e3a30;--warn:#f0b45c;--warn-soft:#33260f;--bad:#ff8f8f;--bad-soft:#3a1a1c}}
+  :root[data-theme=dark]{--bg:#061c25;--card:#0b2732;--ink:#e8f1ef;--soft:#a9c2c4;--faint:#7d989c;
+    --rule:#153744;--accent:#3ddc9a;--accent-soft:#0e3a30;--warn:#f0b45c;--warn-soft:#33260f;--bad:#ff8f8f;--bad-soft:#3a1a1c}
+  :root[data-theme=light]{--bg:#f4f7f6;--card:#fff;--ink:#07222e;--soft:#4d6874;--faint:#7d949d;
+    --rule:#dde6e5;--accent:#00714a;--accent-soft:#e2f2ea;--warn:#8a5300;--warn-soft:#fbf0dd;--bad:#a3282d;--bad-soft:#fbeaea}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,sans-serif;font-size:15.5px;line-height:1.55}
+  .wrap{max-width:900px;margin:0 auto;padding:clamp(28px,5vw,60px) clamp(16px,4vw,32px) 90px}
+  .eyebrow{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);margin:0 0 10px;font-weight:700}
+  h1{font-size:clamp(1.7rem,4.5vw,2.4rem);margin:0 0 12px;letter-spacing:-.02em;line-height:1.08}
+  .lede{color:var(--soft);max-width:62ch;margin:0 0 8px}
+  .date{margin:14px 0 0;font-size:.8rem;color:var(--faint)}
+  h2{font-size:1.15rem;margin:38px 0 4px;letter-spacing:-.01em;border-bottom:2px solid var(--ink);padding-bottom:8px}
+  .sub{color:var(--faint);font-size:.85rem;margin:6px 0 16px}
+  .r{background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:16px 18px;margin-bottom:10px}
+  .r h3{margin:0 0 8px;font-size:1rem;letter-spacing:-.01em}
+  .lab{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--faint);display:block;margin:10px 0 3px}
+  .r p{margin:0;font-size:.92rem;color:var(--soft)}
+  .r p.ink{color:var(--ink)}
+  .toets{background:var(--accent-soft);border-left:3px solid var(--accent);padding:10px 12px;border-radius:0 6px 6px 0;margin-top:4px}
+  .toets p{color:var(--ink);margin:0}
+  .fail{color:var(--bad);font-weight:600}
+  .waarom{font-size:.86rem;color:var(--soft);margin-top:8px}
+  .waarom b{color:var(--ink);font-weight:600}
+  .flag{background:var(--warn-soft);border-left:3px solid var(--warn);padding:12px 14px;border-radius:0 6px 6px 0;margin:10px 0}
+  .flag p{margin:0;font-size:.92rem;color:var(--ink)}
+  .vraag{background:var(--bad-soft);border-left:3px solid var(--bad);padding:12px 14px;border-radius:0 6px 6px 0;margin:10px 0}
+  .vraag p{margin:0;font-size:.92rem;color:var(--ink)}
+  code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.86em;background:var(--bg);padding:.1em .35em;border-radius:4px}
+  ul{margin:6px 0 0;padding-left:18px}
+  li{margin:4px 0;font-size:.92rem;color:var(--soft)}
+</style>
+
+<div class="wrap">
+
+<p class="eyebrow">SHIFT &middot; ter controle</p>
+<h1>Agent-regels als toets, niet als principe</h1>
+<p class="lede">Elke regel is omgezet naar een handeling met een uitkomst. Reden: een principe zoals "geen aannames" heb ik maandenlang netjes gelezen en toch overtreden, omdat ik het in het moment moet aanvoelen. Een toets faalt of slaagt, en dat kan ik niet wegredeneren.</p>
+<p class="date">23 juli 2026 &middot; toegepast in de skills</p>
+
+<h2>Het hart: van feit naar reactie</h2>
+<p class="sub">toegevoegd 23 juli, na het Femke-bericht</p>
+
+<div class="r">
+  <h3>Een feit is geen haakje. Je reactie erop wel.</h3>
+  <p class="ink">"Studenten schrijven een onderzoeksverslag" is saai. "Dat verraste me bij jullie creatieve opleidingen" is een mens. Zelfde feit.</p>
+  <span class="lab">Toets, de levendheidsgate</span>
+  <div class="toets"><p>Staat er in de eerste twee zinnen iets wat je <b>vindt</b>, of alleen wat je hebt <b>gelezen</b>? <span class="fail">Alleen constateringen, dan opnieuw.</span></p></div>
+  <p class="waarom"><b>Waarom:</b> ik had het materiaal en zag het contrast zelfs, maar schreef er een nette constatering van. De skill vroeg om feiten en nooit om een mening, dus vulde ik het feitenvakje in.</p>
+</div>
+
+<div class="r">
+  <h3>De vijf lenzen</h3>
+  <p class="ink">Vaag advies als "wees creatief" levert niets op. Een lijstje om langs te lopen wel.</p>
+  <ul>
+    <li><b>Tegenstelling</b> — X terwijl Y. Creatieve opleiding die laat schrijven. Opleider die AI doceert en zelf met de hand nakijkt. School die anderen leert toetsen.</li>
+    <li><b>Verrassing</b> — dit had ik hier niet verwacht.</li>
+    <li><b>Het getal</b> — 12 reflectieverslagen per jaar, 250 freelance examinatoren.</li>
+    <li><b>Herkenning</b> — dat probleem kennen wij ook, en je geeft er iets van jezelf bij weg.</li>
+    <li><b>Eerlijke non-sequitur</b> — de hond op de banner.</li>
+  </ul>
+</div>
+
+<div class="r">
+  <h3>Vijf openers schrijven, er één houden</h3>
+  <span class="lab">Toets</span>
+  <div class="toets"><p>Heb je er vijf geschreven vanuit vijf lenzen, of maar één? <span class="fail">Eén opener schrijven en oppoetsen levert altijd het nette, dode bericht op.</span></p></div>
+  <p class="waarom"><b>Waarom:</b> creativiteit is volume plus selectie, niet beter je best doen. De selectievraag is niet "welke is correct" maar "welke zou ik zelf openen". De afgevallen vier gaan mee naar Dante, want hij kiest regelmatig een andere.</p>
+</div>
+
+<div class="r">
+  <h3>Humor werkt</h3>
+  <p class="ink">Vastgesteld met Dante: "Goeie humor werkt 100% goed." Een smiley mag, ook koud. Verbazing over iets interessants werkt, spot met hun keuzes niet.</p>
+  <p class="waarom"><b>Let op labels die zij zelf afwijzen.</b> Bij Artemis lag "art school" voor de hand, maar hun eigen rapport zegt "De opleiding van Artemis is geen kunstacademie". Dan werkt de grap tegen je.</p>
+</div>
+
+<div class="r">
+  <h3>Agent 3 levert geen afgerond haakje meer</h3>
+  <span class="lab">Nieuw veld</span>
+  <div class="toets"><p>Kolom <code>Opvallend</code>: losse observaties met bron. Citaten, getallen die blijven hangen, rare details, dingen die niet bij elkaar passen. <span class="fail">Geen doorlopend verhaal, geen conclusie richting Eduface.</span></p></div>
+  <p class="waarom"><b>Waarom:</b> een afgeronde haakje-zin is een conclusie, en daar kun je niet meer op reageren. Agent 4 nam hem over, poetste hem op, en er kwam een correct en vergeetbaar bericht uit. Zelfde wortel als het verzinnen: voorkauwen kost zowel waarheid als leven.</p>
+</div>
+
+<h2>Agent 4 &middot; het schrijven</h2>
+<p class="sub">skill: linkedin-outreach</p>
+
+<div class="r">
+  <h3>1. De waarde: een claim die vastligt, woorden die vrij zijn</h3>
+  <p class="ink">Dit was eerst een checklist van vier verplichte elementen. Dat is eruit gehaald op 23 juli: als meer dan de helft van het bericht al vastligt, is diep onderzoek zinloos en krijgen vier mensen bij dezelfde organisatie vier keer hetzelfde.</p>
+  <span class="lab">Wat vast moet staan (de claim)</span>
+  <div class="toets"><p>De lezer weet na afloop concreet wat Eduface doet &middot; het klopt inhoudelijk (formatieve feedback op schrijfopdrachten, nooit "vragen beantwoorden" of "sneller nakijken") &middot; geen harde belofte over uitval &middot; alleen functies die in <code>references/eduface-product.md</code> staan.</p></div>
+  <span class="lab">Uitwisseltoets</span>
+  <div class="toets"><p>Plak je waarde-zin in het bericht van iemand anders bij dezelfde organisatie. Past hij daar net zo goed? <span class="fail">Dan is het een sjabloon en zakt hij.</span></p></div>
+  <span class="lab">Echo-toets</span>
+  <div class="toets"><p>Bevat de waarde-zin minstens één woord of artefact uit het haakje? <span class="fail">Zo niet, dan heb je de waarde eraan geplakt in plaats van eraan verbonden.</span></p></div>
+  <p class="waarom"><b>Bewijs dat het klopt:</b> het goedgekeurde Femke-bericht heeft geen uitval, geen klantnaam en niet de letterlijke formulering. En het is beter dan alle varianten die dat wel hadden. De vier elementen zijn een hulpmiddel als je vastloopt, geen eis.</p>
+</div>
+
+<div class="r">
+  <h3>2. Welke pijn je noemt hangt af van de opleiding</h3>
+  <span class="lab">Toets</span>
+  <div class="toets"><p>Is dit een lang traject (bachelor, master, meerjarig) of een kort traject (cursus, leergang, losse module)? <span class="fail">Weet je dat niet, dan kun je de waarde-zin niet schrijven.</span></p></div>
+  <p class="ink" style="margin-top:10px"><b>Lang traject &rarr;</b> uitval. <span style="color:var(--soft)">"wat uitval kan tegengaan"</span></p>
+  <p class="ink" style="margin-top:4px"><b>Kort traject &rarr;</b> werkdruk van de beoordelaars. <span style="color:var(--soft)">"wat de werkdruk van beoordelaars verlaagt"</span></p>
+  <span class="lab">Toets op de uitval-claim</span>
+  <div class="toets"><p>Staat er een verzachtend woord bij uitval ("kan", "kan tegengaan")? <span class="fail">Nee, en er staat iets als "zodat er minder afhaken", dan is het een belofte en faalt hij.</span></p></div>
+  <p class="waarom"><b>Waarom:</b> bij een korte studie is uitval nauwelijks relevant, daar is de pijn dat assessoren te veel werk hebben. Bij een vierjarige bachelor is uitval juist het zware onderwerp. Dezelfde zin naar allebei sturen betekent dat hij bij de helft niet landt.</p>
+</div>
+
+<div class="r">
+  <h3>3. Welke klant je als bewijs noemt</h3>
+  <span class="lab">Toets</span>
+  <div class="toets"><p>Staat de genoemde klant op deze lijst? <span class="fail">Zo niet, niet noemen.</span></p></div>
+  <p class="ink" style="margin-top:10px"><b>Toegestaan als klant:</b> Hogeschool Rotterdam &middot; De Haagse Hogeschool &middot; Tilburg University. Altijd voluit, want niet iedereen kent "HR".</p>
+  <p class="ink" style="margin-top:4px"><b>Toegestaan als medeontwikkelaar van het model:</b> Universiteit Leiden &middot; Radboud Universiteit.</p>
+  <p class="ink" style="margin-top:4px" ><b>Verboden:</b> ICM.</p>
+  <p class="waarom"><b>Waarom ICM niet:</b> ze kunnen ons als concurrent zien in plaats van als iemand van wie ze leren, en we zitten daar nog in de onderhandelfase.</p>
+</div>
+
+<div class="r">
+  <h3>4. De omkeertoets, op de brug tussen haakje en oplossing</h3>
+  <span class="lab">Toets</span>
+  <div class="toets"><p>Vervang het detail waarop je haakt door een ander detail dat in dezelfde situatie had gekund. Klopt je zin dan nog steeds? <span class="fail">Ja, dan haak je er niet echt op en is de brug vals.</span></p></div>
+  <p class="waarom"><b>Waarom:</b> bij Marrewijk schreef ik "twee afstudeeronderzoeken bepaalden of SDO de licentie hield, op geschreven werk staat dan alles". Vervang afstudeeronderzoeken door mondelinge examens: de zin klopt nog steeds. Dus de brug ging over "er stond veel op het spel", niet over schrijven, en dat geldt voor elke opleider. Bij de goedgekeurde versie draait het om de begeleider, en als je die weghaalt valt de zin om. Dat is een echte brug.</p>
+</div>
+
+<div class="r">
+  <h3>5. De vraag aan het eind</h3>
+  <span class="lab">Toets</span>
+  <div class="toets"><p>Kan hij dit vanuit zijn stoel in één regel beantwoorden, zonder iets op te zoeken of te besluiten? <span class="fail">Nee, dan is het geen vraag maar een verzoek.</span></p></div>
+  <span class="lab">Tweede toets</span>
+  <div class="toets"><p>Bij een doorverwijsvraag: kan het antwoord ook "dat ben ik" zijn? <span class="fail">Nee, dan loopt hij dood bij iemand die het zelf blijkt te zijn.</span></p></div>
+  <p class="waarom"><b>Waarom:</b> de vraag geeft ze een reden om te antwoorden, en het antwoord vertelt ons meteen waar de deal zit. Het Ken-model: "Weet jij wie hier over gaat? Ik kan die persoon niet vinden."</p>
+</div>
+
+<div class="r">
+  <h3>6. De brontoets, voor je één woord schrijft</h3>
+  <span class="lab">Woordtoets</span>
+  <div class="toets"><p>Zoek elk dragend zelfstandig naamwoord uit je haakje letterlijk op in de brontekst. <span class="fail">Staat het er niet, en ook geen echt synoniem, dan schrappen.</span></p></div>
+  <span class="lab">Tegenspraaktoets</span>
+  <div class="toets"><p>Spreekt de bron je gevolgtrekking ergens tegen? <span class="fail">Ja, dan is het geen zwak haakje maar een fout haakje.</span></p></div>
+  <p class="waarom"><b>Waarom:</b> het haakje beweerde dat Marrewijk reflectief vermogen opbouwt "door te schrijven en herschrijven met feedback". Het woord feedback komt in zijn hele stuk niet voor. Het was erin geslopen omdat het naar Eduface leidt. Het tweede deel, dat studenten weinig tijd hadden, wordt door de bron zelfs tegengesproken.</p>
+</div>
+
+<div class="r">
+  <h3>7. Vorm, allemaal mechanisch te checken</h3>
+  <ul>
+    <li><b>Tekens.</b> Tel ze. Boven 300 is onbruikbaar.</li>
+    <li><b>Opening.</b> Begint het met "Hi [voornaam], ik las"? Zo niet, herschrijven. Nooit "Hoi" of "Beste".</li>
+    <li><b>Drie delen.</b> Haakje, waarde, vraag. In die volgorde, geen vierde deel.</li>
+    <li><b>Afkorting.</b> Gebruik je de korte vorm die ze zelf voeren? Verzin er nooit een.</li>
+    <li><b>Getallen.</b> Staat er een getal in dat van hun website komt? Weghalen. Verouderde cijfers maken je meteen de persoon die iets onjuists beweert.</li>
+  </ul>
+</div>
+
+<h2>Agent 3 &middot; het onderzoek</h2>
+<p class="sub">subagent: shift-research</p>
+
+<div class="r">
+  <h3>1. Het toetsprogramma, eerst en per organisatie</h3>
+  <span class="lab">Toets</span>
+  <div class="toets"><p>Kun je deze drie invullen: <b>wat leveren lerenden in</b>, <b>hoeveel</b>, <b>wie kijkt het na</b>? <span class="fail">Nee, dan is deze stap niet gedaan.</span></p></div>
+  <p class="waarom"><b>Waarom:</b> dit is het enige veld dat in de diepte-test structureel een bericht mogelijk maakte. Bij King leverde het "240 uur praktijkopdrachten, beoordeeld door werkbegeleiders in het veld" op, bij THIM "12 reflectieverslagen in het portfolio na jaar 1". Bij allebei stond over de persoon zelf vrijwel niets, en tóch was er materiaal. Het staat bovendien altijd ergens opgeschreven: studiegids, OER, NVAO-rapport. Onderzoek dit één keer per organisatie, niet per persoon, want het is voor elke kandidaat daar hetzelfde.</p>
+</div>
+
+<div class="r">
+  <h3>2. Het niveau invullen</h3>
+  <span class="lab">Toets</span>
+  <div class="toets"><p>Is de kolom <code>Niveau</code> gevuld bij elke rij met <code>Gevonden = Ja</code>? <span class="fail">Leeg is een fout, geen "nog niet".</span></p></div>
+  <p class="waarom"><b>Waarom:</b> bij alle 134 rijen stond dit veld leeg terwijl het de gate is waar Agent 4 op filtert. Daardoor stond de wachtrij op nul terwijl er wel gewerkt was.</p>
+</div>
+
+<div class="r">
+  <h3>3. De bestandscheck, draaien voor je oplevert</h3>
+  <span class="lab">Toets</span>
+  <div class="toets"><p>Draai een script over je eigen oplevering: staat iemand dubbel, is er een rij met <code>Gevonden = Ja</code> zonder bron-URL, spreekt je verslag in de chat het bestand ergens tegen? <span class="fail">Elk van de drie is een fout.</span></p></div>
+  <p class="waarom"><b>Waarom:</b> bij Rosa Brussaard zei het verslag "sterkste van de vijf" en zei het bestand "Gevonden = Nee, functie klopt niet". Agent 4 leest het bestand, niet de chat, dus die tegenspraak kostte de kandidaat. Verder: 107 unieke mensen op 134 rijen, en bij 36 van de 93 gevonden haakjes ontbrak de bron.</p>
+</div>
+
+<div class="r">
+  <h3>4. Persoon of organisatie</h3>
+  <span class="lab">Toets</span>
+  <div class="toets"><p>Label elk haakje met precies één van twee waarden: <b>persoon</b> of <b>organisatie</b>. <span class="fail">Kun je niet kiezen, dan weet je niet waar het vandaan komt.</span></p></div>
+  <p class="waarom"><b>Waarom:</b> bij Eggink hing alles aan THIM en niets aan hem. Dat verandert hoe het bericht moet openen, want je kunt niet doen alsof je hém volgt.</p>
+</div>
+
+<div class="r">
+  <h3>5. Datum bij elk haakje</h3>
+  <span class="lab">Toets</span>
+  <div class="toets"><p>Is er een datum of jaartal bij de bron? <span class="fail">Nee, dan is er geen why-now en schrijf je nergens "onlangs".</span></p></div>
+</div>
+
+<div class="r">
+  <h3>6. Wat vervalt</h3>
+  <ul>
+    <li><b>Zoeken naar een AI-standpunt.</b> Vijf keer gezocht in de diepte-test, vijf keer niets. Dat ze er nog niets over zeggen is juist de reden om te bellen.</li>
+    <li><b>"Wat drijft deze persoon."</b> Bij drie van de vijf leeg, bij de andere twee niet gebruikt.</li>
+    <li><b>"Hoogste in de boom".</b> Dat is het werk van Agent 2.</li>
+    <li><b>Trap 5 van de zoekladder</b> (publicaties, Scholar, repositories) is voor dit segment vrijwel altijd leeg. Particuliere opleiders publiceren niet.</li>
+  </ul>
+  <p class="waarom"><b>Blijft wel:</b> een loopbaan of cv mag een haakje zijn.</p>
+</div>
+
+<h2>Agent 2 &middot; de contacten</h2>
+<p class="sub">skill: contact-sourcing-nl</p>
+
+<div class="r">
+  <h3>1. De blokkadelijst, vóór al het andere</h3>
+  <span class="lab">Toets</span>
+  <div class="toets"><p>Staat de organisatie of de moeder in Close? <span class="fail">Ja, dan valt het merk af, want dan is het geen koude outreach.</span></p></div>
+  <p class="waarom"><b>Waarom:</b> raakt elf organisaties: de hele Salta/NCOI-familie plus Team Academy, Inholland Academy en TMO. De kolom "Moeder / groep" wordt al gevuld, er werd alleen niets mee gedaan. Scheidegger kreeg acht zoekopdrachten research terwijl het onder NCOI valt én geen nieuwe cursisten meer aanneemt.</p>
+</div>
+
+<div class="r">
+  <h3>2. De functietitel verifiëren</h3>
+  <span class="lab">Toets</span>
+  <div class="toets"><p>Heb je een URL van hun eigen domein of hun LinkedIn-profiel waarop deze titel staat? <span class="fail">Nee, dan lever je de persoon niet op, maar meld je "titel niet te verifiëren".</span></p></div>
+  <p class="waarom"><b>Waarom:</b> bij drie van de vijf in de diepte-test klopte de titel niet. Dat kostte Agent 3 tien tot vijftien zoekopdrachten per persoon aan research die daarna toch onbruikbaar was.</p>
+</div>
+
+<div class="r">
+  <h3>3. Nooit een docent</h3>
+  <span class="lab">Toets</span>
+  <div class="toets"><p>Noem wie er onder deze persoon valt in het onderwijs. <span class="fail">Kun je dat niet, dan is het niet de juiste persoon.</span></p></div>
+  <p class="waarom"><b>Waarom:</b> we zoeken de hoogste autoriteit over het onderwijs, niet wie het dichtst bij de nakijkstapel zit. Een docent heeft geen mandaat en geen budget. Er kwamen er twee binnen die op de eigen site gewoon docent zijn.</p>
+</div>
+
+<div class="r">
+  <h3>4. De LinkedIn-URL</h3>
+  <span class="lab">Toets</span>
+  <div class="toets"><p>Is het veld gevuld met een profiel dat aantoonbaar deze persoon bij deze organisatie is? <span class="fail">Leeg of onzeker betekent: niet doorzetten naar Agent 3.</span></p></div>
+  <p class="waarom"><b>Waarom:</b> het kanaal is een connectieverzoek, dus zonder URL kan er niets uit. En Agent 3 begint blind, want het profiel is de rijkste bron voor een haakje. Er liggen nu zes goede kandidaten stil om precies deze reden.</p>
+</div>
+
+<h2>Wat géén echte toets oplevert</h2>
+<p class="sub">hier ga ik opnieuw de fout in, dus dit is waar jij moet meekijken</p>
+
+<div class="flag">
+  <p><b>Toon en spreektaal.</b> "Gewone spreektaal, geen AI-tells, uitnodigend en niet sturend" blijft een oordeel. Ik kan er geen check van maken die faalt. Het enige wat helpt is de kalibratieset met jouw eigen berichten, en jij die er alsnog uit haalt. Verwacht dat ik hier af en toe naast zit.</p>
+</div>
+
+<div class="flag">
+  <p><b>Is dit haakje sterk genoeg.</b> De omkeertoets vangt een valse brug, maar niet een brug die klopt en toch saai is. Het verschil tussen niveau 1 en niveau 2 blijft een oordeel.</p>
+</div>
+
+<div class="flag">
+  <p><b>Mandaat bij Agent 2.</b> "Noem wie er onder hem valt" werkt bij een hogeschool met een organogram, maar niet bij een club van tien man waar de eigenaar alles doet. Daar blijft het inschatten.</p>
+</div>
+
+<h2>Beantwoord door Dante, 23 juli</h2>
+<div class="r"><ul><li><b>Klanten noemen:</b> Hogeschool Rotterdam, De Haagse Hogeschool en Tilburg University mogen alle drie.</li><li><b>Leiden en Radboud:</b> mogen blijven staan als de partijen waarmee het model is ontwikkeld.</li><li><b>Uitval:</b> bij een korte studie nauwelijks relevant. Zet daar de focus op het verlagen van de werkdruk van de assessoren. Bij lange trajecten blijft uitval de pijn.</li><li><b>Formulering:</b> niet "formatieve feedback tijdens het schrijven" maar <b>formatieve feedback op schrijfopdrachten</b>.</li></ul></div>
+
+</div>

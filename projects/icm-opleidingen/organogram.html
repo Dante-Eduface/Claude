@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  @page { size: A4 landscape; margin: 5mm; }
+  :root{
+    --navy:#002333;--green:#00E075;--green2:#067a43;--green3:#008F5A;
+    --ink:#0e1c24;--grey:#7a8a91;--cardline:#eceff1;
+    --amber:#b8860b;--red:#b3261e;--purple:#5b3ea8;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:'Inter',sans-serif;color:var(--ink);
+    background:#fbfdfd;
+    background-image:radial-gradient(#e3eaed 1px, transparent 1px);
+    background-size:22px 22px;
+    padding:6px 13px 4px;
+    -webkit-print-color-adjust:exact;print-color-adjust:exact;
+  }
+  h1{font-family:'League Spartan',sans-serif;color:var(--navy);font-size:18px;}
+  .titlebar{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:3px solid var(--green);padding-bottom:6px;margin-bottom:4px;}
+  .sub{color:var(--grey);font-size:9.5px;margin-top:3px;max-width:830px;}
+  .brand{font-family:'League Spartan';font-weight:800;font-size:16px;color:var(--navy);}
+  .brand .fx{color:var(--green3);}
+
+  .tierlabel{text-align:center;font-size:9px;text-transform:uppercase;letter-spacing:.13em;color:var(--grey);font-weight:700;margin:8px 0 5px;}
+  .tierlabel b{color:var(--navy);}
+  .tier{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;align-items:stretch;}
+  .vline{width:2px;height:9px;background:#dbe4e7;margin:1px auto;}
+
+  .card{
+    display:flex;flex-direction:column;
+    break-inside:avoid;-webkit-column-break-inside:avoid;page-break-inside:avoid;
+    background:#fff;border:1px solid var(--cardline);border-radius:15px;
+    padding:9px 12px;box-shadow:0 4px 16px rgba(16,40,60,.07);
+    min-width:212px;max-width:248px;
+  }
+  .card.hl-eb{border:2px solid var(--navy);}
+  .card.hl-champ{border:2px solid var(--amber);}
+  .card.hl-coach{border:2px solid var(--green3);}
+  .card.hl-swing{border:2px solid var(--purple);}
+  .card.hl-ally{border:1.5px solid #bfe6cf;}
+
+  .top{display:flex;gap:10px;align-items:center;}
+  .av{width:44px;height:44px;border-radius:50%;position:relative;overflow:hidden;flex:none;
+      background:#eef2f4;display:inline-flex;align-items:center;justify-content:center;}
+  .av img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;}
+  .av span{color:#5a6b73;font-weight:700;font-size:14px;}
+  .av.ph{background:var(--navy);} .av.ph span{color:#fff;}
+  .head{min-width:0;}
+  .head .nm{font-weight:700;font-size:13px;color:var(--ink);line-height:1.14;}
+  .head .rl{font-size:10.5px;color:var(--grey);margin-top:2px;line-height:1.2;}
+
+  .body{margin-top:6px;}
+  .tags{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:5px;}
+  .pill{font-size:9px;font-weight:600;padding:2px 8px;border-radius:20px;white-space:nowrap;}
+  .p-eb{background:#e6eef6;color:#1b4f7a;}
+  .p-champ{background:#fbeecf;color:#8a5b00;}
+  .p-coach{background:#d9f7e7;color:#067a43;}
+  .p-swing{background:#ece3fb;color:#5b3ea8;}
+  .p-ally{background:#d9f7e7;color:#067a43;}
+  .p-neut{background:#eef2f4;color:#56707d;}
+  .p-conf{background:#d9f7e7;color:#067a43;}
+  .p-inf{background:#f0f2f3;color:#8a969c;}
+  .hot{font-size:9px;color:var(--grey);line-height:1.4;}
+  .hot b{color:var(--navy);font-weight:600;}
+  .hot a{color:var(--green2);text-decoration:none;}
+
+  .team{display:flex;flex-direction:column;break-inside:avoid;page-break-inside:avoid;
+        background:#fff;border:1px solid var(--cardline);border-radius:13px;padding:10px 12px;
+        box-shadow:0 3px 12px rgba(16,40,60,.06);min-width:185px;max-width:210px;border-left:4px solid #dbe4e7;}
+  .team.pivot{border-left-color:var(--amber);}
+  .team .tn{font-weight:700;font-size:11px;color:var(--navy);line-height:1.15;}
+  .team .tl{font-size:9px;color:var(--grey);margin-top:4px;line-height:1.35;}
+  .team .tl a{color:var(--green2);text-decoration:none;}
+
+  .siderow{display:flex;justify-content:center;margin-top:9px;}
+  .ingang{display:flex;align-items:center;gap:12px;background:#ffffffcc;border:1.5px dashed #bcdcc9;border-radius:16px;padding:10px 14px;max-width:560px;}
+  .ingang .lbl{writing-mode:vertical-rl;transform:rotate(180deg);font-size:8.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--green2);}
+
+  .bottom{display:flex;gap:11px;margin-top:7px;break-inside:avoid;page-break-inside:avoid;}
+  .panel{flex:1;background:#fff;border:1px solid var(--cardline);border-radius:13px;padding:9px 12px;box-shadow:0 3px 12px rgba(16,40,60,.05);}
+  .panel.cro{border:1.5px solid #e3c97a;flex:1.35;}
+  .panel h4{font-family:'League Spartan';font-size:11px;color:var(--navy);margin-bottom:6px;}
+  .legrow{display:flex;flex-wrap:wrap;gap:7px 14px;}
+  .legitem{display:flex;align-items:center;gap:6px;font-size:9px;}
+  .ld{width:11px;height:11px;border-radius:4px;}
+  ul.cro{margin:0;padding-left:14px;font-size:9.2px;line-height:1.5;}
+  ul.cro li{margin-bottom:3px;} ul.cro b{color:var(--navy);}
+  .foot{font-size:7.5px;color:var(--grey);margin-top:5px;text-align:center;}
+</style>
+</head>
+<body>
+  <div class="titlebar">
+    <div>
+      <h1>Organogram &amp; stakeholdermap — ICM Opleidingen &amp; Trainingen</h1>
+      <div class="sub">Reconstructie o.b.v. icm.nl + KvK/Drimble + LinkedIn/aggregators (RocketReach/AroundDeal). Rollen = CRO-inschatting (John McMahon-logica). <b>Geverifieerd</b> = uit primaire bron gelezen · <b>ingeschat</b> = afgeleid, met reden + bron. Stand: 6 juli 2026. Verifiëren bij contact.</div>
+    </div>
+    <div class="brand">Edu<span class="fx">face</span></div>
+  </div>
+
+  <!-- TIER 1 — EIGENAREN -->
+  <div class="tierlabel">Eigenaren &amp; directie · <b>hier ligt de handtekening voor groot geld</b></div>
+  <div class="tier">
+    <div class="card hl-eb">
+      <div class="top">
+        <div class="av ph"><img src="faces/smithuis.jpg" onerror="this.style.display='none'"><span>ES</span></div>
+        <div class="head"><div class="nm">Erik Smithuis</div><div class="rl">Oprichter · eigenaar · directeur</div></div>
+      </div>
+      <div class="body">
+        <div class="tags"><span class="pill p-eb">Economic Buyer</span><span class="pill p-conf">geverifieerd</span></div>
+        <div class="hot"><b>Eindbeslisser + budget.</b> Stuurt naar eigen zeggen ~2 dagen/week aan, dus dagelijkse evaluatie ligt bij het management. <a href="https://mkblounge.nl/mkb-talks/10-ondernemersvragen-aan-erik-smithuis/">bron</a></div>
+      </div>
+    </div>
+    <div class="card hl-eb">
+      <div class="top">
+        <div class="av ph"><img src="faces/roefs.jpg" onerror="this.style.display='none'"><span>HR</span></div>
+        <div class="head"><div class="nm">Harrie-Peter Roefs</div><div class="rl">Mede-oprichter · mede-eigenaar</div></div>
+      </div>
+      <div class="body">
+        <div class="tags"><span class="pill p-eb">Mede-EB</span><span class="pill p-conf">geverifieerd</span></div>
+        <div class="hot"><b>Tweede eigenaar.</b> Samen met Smithuis de uiteindelijke beslissers. Mensgericht-leiderschap-profiel. <a href="https://www.icm.nl/extra/waar-houdt-onze-projectmanager-maatschappelijke-impact-zich-mee-bezig/">bron</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="vline"></div>
+
+  <!-- TIER 2 — MANAGEMENT -->
+  <div class="tierlabel">Management · <b>hier wordt de deal gedragen (rapporteert aan de eigenaren)</b></div>
+  <div class="tier">
+    <div class="card hl-swing">
+      <div class="top">
+        <div class="av"><span>PB</span></div>
+        <div class="head"><div class="nm">Paul Brasem</div><div class="rl">Finance &amp; ICT Manager</div></div>
+      </div>
+      <div class="body">
+        <div class="tags"><span class="pill p-swing">Beslisser / spil</span><span class="pill p-inf">ingeschat</span></div>
+        <div class="hot"><b>DE poortwachter: budget én IT in één persoon.</b> Zonder hem geen deal; hem eerst winnen met de businesscase. <i>Ingeschat: 2 aggregators consistent, geen primaire bron, geen foto.</i> <a href="https://rocketreach.co/icm-opleidingen-trainingen-management_b5c3d350f42e0fe2">bron</a></div>
+      </div>
+    </div>
+    <div class="card hl-champ">
+      <div class="top">
+        <div class="av"><span>EV</span></div>
+        <div class="head"><div class="nm">Esmee Vermeulen</div><div class="rl">Productmanager</div></div>
+      </div>
+      <div class="body">
+        <div class="tags"><span class="pill p-champ">Champion (product)</span><span class="pill p-inf">ingeschat</span></div>
+        <div class="hot">Raakt inhoud + roadmap van de opleidingen. Natuurlijke champion voor de onderwijskant. <i>Ingeschat: alleen aggregator.</i> <a href="https://rocketreach.co/icm-opleidingen-trainingen-management_b5c3d350f42e0fe2">bron</a></div>
+      </div>
+    </div>
+    <div class="card hl-champ">
+      <div class="top">
+        <div class="av ph"><img src="faces/schiermeier.jpg" onerror="this.style.display='none'"><span>GS</span></div>
+        <div class="head"><div class="nm">Geerte Schiermeier</div><div class="rl">Projectmanager &amp; Kwaliteit</div></div>
+      </div>
+      <div class="body">
+        <div class="tags"><span class="pill p-champ">Champion (kwaliteit)</span><span class="pill p-inf">titel deels ingeschat</span></div>
+        <div class="hot">Kwaliteit van toetsing/feedback is haar terrein (o.a. ISO 27001). Persoon bevestigd op icm.nl; exacte titel via aggregator. <a href="https://www.icm.nl/over-icm/kwaliteit/">bron</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="vline"></div>
+
+  <!-- TIER 3 — UITVOEREND / TECHNISCH + INGANG (KAIM) -->
+  <div class="tierlabel">Uitvoerend · technisch · <b>ingang (buiten de beslislijn)</b></div>
+  <div class="tier">
+    <div class="card hl-ally">
+      <div class="top">
+        <div class="av ph"><img src="faces/breeuwsma.jpg" onerror="this.style.display='none'"><span>HB</span></div>
+        <div class="head"><div class="nm">Hidde Breeuwsma</div><div class="rl">ICT-consultant</div></div>
+      </div>
+      <div class="body">
+        <div class="tags"><span class="pill p-ally">Technisch evaluator</span><span class="pill p-conf">ICT-rol geverifieerd</span></div>
+        <div class="hot">Beheert o.a. Microsoft Dynamics 365. Beoordeelt de Moodle-koppeling. <i>"IT Manager"-titel onzeker.</i> <a href="https://www.icm.nl/over-icm/vacatures/functioneel-beheerder/">bron</a></div>
+      </div>
+    </div>
+    <div class="team pivot">
+      <div class="tn">Team E-learning — Moodle ★</div>
+      <div class="tl"><b>Integratiepunt voor Eduface.</b> Moodle op leren.icm.nl (SAML SSO), via assignment-module / LTI. Beheerd door Technical E-Learning Specialist. <a href="https://leren.icm.nl">leren.icm.nl</a></div>
+    </div>
+    <div class="card hl-coach">
+      <div class="top">
+        <div class="av ph"><img src="faces/kaim.jpg" onerror="this.style.display='none'"><span>EK</span></div>
+        <div class="head"><div class="nm">Eric Kaim</div><div class="rl">Senior IT Consultant &amp; trainer <span style="color:#aeb8bd;">(≠ Erik Smithuis)</span></div></div>
+      </div>
+      <div class="body">
+        <div class="tags"><span class="pill p-coach">Coach / ingang</span><span class="pill p-conf">geverifieerd</span></div>
+        <div class="hot"><b>GEEN beslisser, geen budget.</b> Wél ICM's interne AI-expert (bouwt hun Copilots): geloofwaardige technische ingang voor een warme intro naar Brasem/directie, niet de tekenaar. Let op: ICM verkoopt zelf AI-trainingen. <a href="https://www.icm.nl/extra/nieuwe-ai-toepassingen-projectmatig-implementeren/">bron</a></div>
+      </div>
+    </div>
+  </div>
+  <div style="text-align:center;font-size:8.6px;color:var(--grey);margin-top:6px;">Ook gebruikers/beïnvloeders, geen tekenbevoegdheid: <b>L&amp;D-consultants</b> Emilie Broeze &amp; Cecile van Sambeek (incompany). <a href="https://nextlearning.nl/2023/icm-opleidingen-trainingen/" style="color:var(--green2);text-decoration:none;">bron</a></div>
+
+  <!-- BOTTOM -->
+  <div class="bottom">
+    <div class="panel">
+      <h4>Legenda</h4>
+      <div class="legrow">
+        <div class="legitem"><span class="ld" style="background:#1b4f7a"></span> Economic Buyer</div>
+        <div class="legitem"><span class="ld" style="background:#5b3ea8"></span> Beslisser (swing)</div>
+        <div class="legitem"><span class="ld" style="background:#b8860b"></span> Champion</div>
+        <div class="legitem"><span class="ld" style="background:#067a43"></span> Coach / ally</div>
+        <div class="legitem"><span class="ld" style="background:#9aa7ad"></span> Neutraal / ingeschat</div>
+      </div>
+      <div style="font-size:8.7px;color:var(--grey);margin-top:8px;line-height:1.45">Foto's = geverifieerd bij ICM. Brasem &amp; Vermeulen: initialen (geen betrouwbare foto). Management-titels van Brasem/Vermeulen komen uit aggregators (RocketReach/AroundDeal), niet primair bevestigd — <b>verifieer bij eerste contact</b>.</div>
+    </div>
+    <div class="panel cro">
+      <h4>CRO-read — wie win je, in welke volgorde</h4>
+      <ul class="cro">
+        <li><b>Groot geld = Smithuis + Roefs</b> (eigenaren). Zij tekenen. Maar ~2 dagen/week actief, dus niet je eerste gesprek.</li>
+        <li><b>Eerst winnen: Paul Brasem</b> (Finance &amp; ICT). Budget + IT in één persoon = de spil. Zonder zijn ja geen deal.</li>
+        <li><b>Ingang = Eric Kaim</b> (coach, geen beslisser): warme intro naar Brasem/directie. <b>Champions = Vermeulen</b> (product) + <b>Schiermeier</b> (kwaliteit) dragen de onderwijswaarde intern.</li>
+        <li><b>Integratie = Moodle</b> (via Breeuwsma / e-learning team). Technische haalbaarheid is hun eerste vraag.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="foot">Eduface · vertrouwelijk · onderbouwde reconstructie, geen officieel ICM-document. Cost/ROI &amp; budget staan in een apart document.</div>
+</body>
+</html>

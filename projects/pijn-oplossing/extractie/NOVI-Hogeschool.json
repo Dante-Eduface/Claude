@@ -1,0 +1,36 @@
+[
+  {
+    "id": "NOVI-Hogeschool-1",
+    "org": "NOVI Hogeschool",
+    "lead_id": "lead_nzbIykVWwfXSkPFbiBUJSA3JaVdyGqZLvVO9YPQvQMa",
+    "close_url": "https://app.close.com/lead/lead_nzbIykVWwfXSkPFbiBUJSA3JaVdyGqZLvVO9YPQvQMa/",
+    "persoon": "Larissa Petrus - Al Bazi",
+    "functie": "Manager Educational Development & Quality",
+    "datum": "2026-08-05",
+    "bron_type": "call",
+    "bron_id": "acti_SSrpNvTJFYpn0nl18c3i8pKmwlRL1cWGlYVtovWm0gB",
+    "segment": "particulier",
+    "thema": "docentacceptatie",
+    "type": "bezwaar",
+    "citaat": "Zij zegt dat het interessant klinkt maar wel dat alle docenten van NOVI zelf ook IT onderlegd zijn en een niet al te makkelijke groep is om onze innovatie aan te verkopen.",
+    "samenvatting": "IT-onderlegde docenten zijn volgens haar een lastige groep om AI-beoordeling aan te verkopen.",
+    "zekerheid": "parafrase"
+  },
+  {
+    "id": "NOVI-Hogeschool-2",
+    "org": "NOVI Hogeschool",
+    "lead_id": "lead_nzbIykVWwfXSkPFbiBUJSA3JaVdyGqZLvVO9YPQvQMa",
+    "close_url": "https://app.close.com/lead/lead_nzbIykVWwfXSkPFbiBUJSA3JaVdyGqZLvVO9YPQvQMa/",
+    "persoon": "Marloes van der Have",
+    "functie": "Operationeel Directeur NOVI | TMO | NAVB (Calder Holding)",
+    "datum": "2026-08-06",
+    "bron_type": "email",
+    "bron_id": "acti_6yuzw4mLckAxIcXgHrGhn8ss4yQxUxZhzfBYPK2oT7G",
+    "segment": "particulier",
+    "thema": "besluitvorming",
+    "type": "bezwaar",
+    "citaat": "Dit is zeker een thema dat speelt en waar we de potentie van zien. Tegelijkertijd (...) NOVI gaat inderdaad fuseren en we leggen op dit moment de basis voor een nieuw merk en een nieuwe organisatie. Daardoor ligt onze focus nu vooral op die transitie.",
+    "samenvatting": "Thema leeft, maar de fusie naar Calder Holding slokt alle aandacht op tot later stadium.",
+    "zekerheid": "letterlijk"
+  }
+]

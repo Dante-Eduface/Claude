@@ -1,0 +1,121 @@
+{
+  "slug": "babel",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_me3lOcgNR58cM8m0u377pc1rC7u8NSozOjX5bKHAvAk",
+    "naam": "Babel",
+    "url": "https://app.close.com/lead/lead_me3lOcgNR58cM8m0u377pc1rC7u8NSozOjX5bKHAvAk/",
+    "lead_status": "Prospect",
+    "opportunity_id": null,
+    "fase": null,
+    "fase_type": null,
+    "waarde": null,
+    "valuta": "EUR",
+    "confidence": null,
+    "close_date": null,
+    "eigenaar": "Eduface CRM",
+    "crm_note": "",
+    "contacten": [
+      {
+        "naam": "Gemma",
+        "titel": "",
+        "email": null,
+        "id": "cont_F6yhSYn9H83ztUAf7gIk4XLaCuGy0YsULMo2SGNhtTc"
+      },
+      {
+        "naam": "Marloes Spook",
+        "titel": "Docent & ontwikkelaar NT2",
+        "email": "marloes@babel.nl",
+        "id": "cont_JuAGcRI1PDYzXIYOLCuqfO4nUnkwmO2JYvtQwULTUoN"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_O4JSXRKN1T1zoM2kho3OscxbuMHz2dA1S7zXie3LuSS",
+        "soort": "call",
+        "datum": "2026-04-08",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Naar de klantenservice gebeld die heeft mijn nummer genoteerd.",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_tJ1T5ZFqlrSZXH2dOhHpYTFaxTV3f4PfkjdY0ghnz2I",
+        "soort": "call",
+        "datum": "2026-04-08",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Gemma gesproken ze was thuis met haar kind. Ze gaat mij vrijdag even bellen.",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_hXaVzbw7tYbBJYzppSvDPa0sKzS2qF8jeJ7hkhlOrNi",
+        "soort": "call",
+        "datum": "2026-04-16",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "VM geen VM ingesproken",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_b8ZN1OcCb5PseMcEgRtE4CmAcCGtQFKJ9tQmQQ8yEKl",
+        "soort": "call",
+        "datum": "2026-05-13",
+        "titel": "Telefoon outbound",
+        "duur_min": 3,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Gevraagd of er intern interesse is en ze gaf aan dat het zo is. Alleen dat er momenteel te veel projecten lopen en dat het einde september interessant zou zijn om weer in de lucht te komen.",
+        "transcript_beschikbaar": false,
+        "komend": false
+      }
+    ],
+    "open_taken": [
+      {
+        "tekst": "Follow up inchecken waar ze staan met het Moodle project",
+        "datum": "2026-09-23"
+      }
+    ],
+    "laatste_gesprek": "2026-05-13",
+    "volgende_afspraak": null,
+    "aantal_gehad": 4,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

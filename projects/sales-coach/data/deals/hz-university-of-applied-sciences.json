@@ -1,0 +1,129 @@
+{
+  "slug": "hz-university-of-applied-sciences",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_CUr8JthsDPFDjWZVFiFx6A0hLX79l4Nf5JnuFJoLQDR",
+    "naam": "HZ University of Applied Sciences",
+    "url": "https://app.close.com/lead/lead_CUr8JthsDPFDjWZVFiFx6A0hLX79l4Nf5JnuFJoLQDR/",
+    "lead_status": "Prospect",
+    "opportunity_id": null,
+    "fase": null,
+    "fase_type": null,
+    "waarde": null,
+    "valuta": "EUR",
+    "confidence": null,
+    "close_date": null,
+    "eigenaar": "Eduface CRM",
+    "crm_note": "",
+    "contacten": [
+      {
+        "naam": "Martijn Leenknecht",
+        "titel": "Head of department Education, Research and Quality assurance",
+        "email": "m.j.m.leenknecht@hz.nl",
+        "id": "cont_Iaux5d3AaGk6QKy6fyON8xBDpYfNEdihYXTplAUu5P0"
+      },
+      {
+        "naam": "Walter Roovers",
+        "titel": "Academiedirecteur",
+        "email": null,
+        "id": "cont_H54S5aNqCEZnQasQ5ol0Kp0DNMQ2vAWrg5xbzdc8Cwn"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_RZaqOnJsEc8nGxfGmsMik80jHW46dLe4ShLJAEsq0Z9",
+        "soort": "call",
+        "datum": "2026-05-19",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Hij nam op en zei dat ik hem na 17:00 terug kan bellen.",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_psZ0WhKBsVY9VKFgMc2tL4smPsi5KqpvaMRlnZicSHA",
+        "soort": "call",
+        "datum": "2026-05-20",
+        "titel": "Telefoon outbound",
+        "duur_min": 5,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_flwp2SV3wZGDuKSRCwOL8dTNfSUGBhWUBgu7nvvneMs",
+        "soort": "call",
+        "datum": "2026-05-20",
+        "titel": "Telefoon outbound",
+        "duur_min": 1,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "VM",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_L4uwQ8AnhK1z2ng1moYOf3Vp1rHrpUbID0c4C0VLeNk",
+        "soort": "call",
+        "datum": "2026-05-22",
+        "titel": "Telefoon outbound",
+        "duur_min": 10,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_mQf6aFomiWZB84MzSwYPCecz3S4iRbECHSXz8hw57x1",
+        "soort": "call",
+        "datum": "2026-06-08",
+        "titel": "Telefoon outbound",
+        "duur_min": 1,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Hij stuurt mij een mailtje met een datum om te bellen, ik wil hier een formele meeting van maken. Dus dat voorstellen op zijn mailtje.",
+        "transcript_beschikbaar": false,
+        "komend": false
+      }
+    ],
+    "open_taken": [],
+    "laatste_gesprek": "2026-06-08",
+    "volgende_afspraak": null,
+    "aantal_gehad": 5,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

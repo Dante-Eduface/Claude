@@ -1,0 +1,81 @@
+{
+  "slug": "north-west-university",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_3Sycga0ARfet43bV1rHiILT7it65a5r0khnwQlpKtSl",
+    "naam": "North-West University",
+    "url": "https://app.close.com/lead/lead_3Sycga0ARfet43bV1rHiILT7it65a5r0khnwQlpKtSl/",
+    "lead_status": "Nurturing",
+    "opportunity_id": "oppo_alaUJbL2kIV6Xk44GdFwnIeIk4lMGCDfyxUkYLjSDQZ",
+    "fase": "Lost",
+    "fase_type": "lost",
+    "waarde": 40000,
+    "valuta": "EUR",
+    "confidence": 0,
+    "close_date": null,
+    "eigenaar": "Eduface CRM",
+    "crm_note": "**Status:** Verloren op timing: NWU stapt over op een nieuw LMS en het LMS-\nprojectteam onderzoekt AI-assessment universiteitsbreed, dus een losse pilot\nkrijgt geen goedkeuring.\n\n**Wat er gebeurde:** Voorgesteld was een standalone pilot op WVET222 met 3\ndocenten en 45 papers voor 4.000 euro, inclusief implementatieplan, pre-pilot\nsurvey en DPA. Het besluit om het on hold te zetten is genomen door \"the\nmanagement team\", geen namen bekend. Reden: de LMS-transitie loopt in het\ntweede semester en het LMS-projectteam bepaalt zelf welke AI-tools\ninstitutioneel beschikbaar komen. Er is nooit een economic buyer gesproken.\n\n**Next action:** Route terug loopt alleen via het LMS-projectteam. De vraag om een contactpersoon daar is op 11 juni gesteld en nooit beantwoord, dus opnieuw proberen via Nico van der Merwe en hem als contact toevoegen | Dante | <datum onbekend> | Hoog\n\n**Risk:** De opportunity staat op 40.000 euro terwijl het voorstel 4.000 euro\nwas, dat vervuilt de pipeline. Er is ook een duplicaat-lead voor deze account\nin Close. Verder liep het hele traject op een contactpersoon terwijl Nico,\nElsabe Kilian en Jack Jonck wel in de mailthread zaten maar niet in Close\nstaan.\n\n**Action required:** Dante: bedrag corrigeren naar de voorgestelde waarde,\nduplicaat-lead samenvoegen en de ontbrekende contacten toevoegen. Daarna\nbeslissen of dit Nurturing blijft tot na de LMS-migratie of definitief dicht\ngaat.",
+    "contacten": [
+      {
+        "naam": "Nico van der Merwe",
+        "titel": "",
+        "email": null,
+        "id": "cont_9ZWU4cNrkbtsNlsoXMVcQcBQDIes1jvOnrrFpD2ZZYn"
+      },
+      {
+        "naam": "Heleen Janse Van Vuuren",
+        "titel": null,
+        "email": "heleen.jansevanvuuren@nwu.ac.za",
+        "id": "cont_CODSJ3zFcVJsYKXbOqpez6TnineChiJyiSm7ALKrSkc"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_Wj4456gU2sq4Amwafg9ex8fC5KujFtbTu7Py3B3MsGi",
+        "soort": "meeting",
+        "datum": "2026-06-02",
+        "titel": "Discussion about Eduface' suitability for WVET221",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "dante.torbed@eduface.me",
+          "heleen.jansevanvuuren@nwu.ac.za",
+          "nico.vandermerwe@nwu.ac.za"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      }
+    ],
+    "open_taken": [],
+    "laatste_gesprek": "2026-06-02",
+    "volgende_afspraak": null,
+    "aantal_gehad": 1,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

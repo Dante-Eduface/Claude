@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Eduface x Notenboom</title>
+<style>
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap");
+
+:root{
+  --navy:#002333; --green:#00e075; --green-deep:#007b54;
+  --ink-700:#2c4a57; --ink-500:#5b7480; --ink-200:#cdd9de; --ink-100:#e7eef0; --ink-50:#f3f7f8;
+  --shadow:0 4px 18px rgba(0,35,51,.07);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#8c9aa2}
+@page{size:1280px 720px;margin:0}
+
+.slide{
+  width:1280px;height:720px;background:var(--ink-50);color:var(--navy);
+  font-family:Inter,system-ui,sans-serif;padding:54px 64px 62px;position:relative;overflow:hidden;
+  page-break-after:always;margin:0 auto 24px;display:flex;flex-direction:column;
+}
+.content{flex:1;display:flex;flex-direction:column;justify-content:center;padding-bottom:14px}
+.content.top{justify-content:flex-start}
+.slide:last-child{page-break-after:auto}
+
+.logo{position:absolute;top:52px;left:64px;height:36px}
+h1{font-family:"League Spartan",sans-serif;font-weight:700;font-size:46px;line-height:1.06;
+   letter-spacing:-.02em;text-align:center;padding:0 130px;margin-bottom:12px}
+h1 .hl{color:var(--green)}
+.sub{text-align:center;font-size:17px;color:var(--ink-500);margin-bottom:40px}
+.sub.tight{margin-bottom:30px}
+
+.src{position:absolute;left:64px;bottom:26px;font-size:12.5px;color:var(--ink-500)}
+
+.card{background:#fff;border-radius:20px;box-shadow:var(--shadow);padding:30px 32px}
+.card.dark{background:var(--navy);color:#fff}
+.card.dark .lbl{color:#9fb4bd}
+
+.row{display:flex;gap:24px}
+
+/* --- accuraatheid --- */
+.big{display:flex;gap:28px}
+.big .card{flex:1;text-align:center;padding:52px 34px}
+.num{font-family:"League Spartan",sans-serif;font-weight:700;font-size:96px;line-height:1;letter-spacing:-.03em}
+.card .num{color:var(--navy)}
+.card.dark .num{color:var(--green)}
+.num-lbl{font-size:19px;font-weight:600;margin-top:16px}
+.num-sub{font-size:15.5px;color:var(--ink-500);margin-top:10px;line-height:1.45}
+.card.dark .num-sub{color:#9fb4bd}
+
+/* --- bullets --- */
+.two{display:flex;gap:28px;align-items:stretch}
+.two .left{flex:1.25}
+.two .right{flex:.95}
+.blist{list-style:none;display:flex;flex-direction:column;gap:14px}
+.blist li{display:flex;gap:14px;align-items:flex-start;background:#fff;border-radius:14px;
+          box-shadow:var(--shadow);padding:16px 20px;font-size:17.5px;font-weight:500}
+.tick{flex:0 0 22px;height:22px;border-radius:50%;background:var(--green);position:relative;margin-top:1px}
+.tick:after{content:"";position:absolute;left:7px;top:4px;width:6px;height:11px;
+            border:solid var(--navy);border-width:0 2.5px 2.5px 0;transform:rotate(42deg)}
+.right .card{height:100%;display:flex;flex-direction:column;justify-content:center}
+.eyebrow{font-family:"League Spartan",sans-serif;font-weight:700;font-size:13px;letter-spacing:.08em;
+         text-transform:uppercase;color:var(--green);margin-bottom:14px}
+.eyebrow.deep{color:var(--green-deep)}
+.card.dark p{font-size:17px;line-height:1.55;color:#dbe7ea}
+.quote{font-size:17px;line-height:1.5;font-style:italic;color:#fff;margin-top:18px;
+       padding-left:16px;border-left:3px solid var(--green)}
+.qsrc{font-size:13px;color:#9fb4bd;margin-top:10px}
+
+/* --- flow --- */
+.flow{display:flex;align-items:stretch;gap:0;margin-top:30px}
+.step{flex:1;background:#fff;border-radius:20px;box-shadow:var(--shadow);padding:28px 26px 26px;
+      position:relative;min-height:170px;display:flex;flex-direction:column;justify-content:space-between}
+.step.on{background:var(--navy)}
+.step.on .st{color:#fff}
+.step .st{font-size:19px;font-weight:700;line-height:1.3;color:var(--navy)}
+.badge{position:absolute;top:18px;right:18px;width:34px;height:34px;border-radius:50%;
+       background:var(--green);color:var(--navy);font-family:"League Spartan",sans-serif;font-weight:700;
+       font-size:17px;display:flex;align-items:center;justify-content:center}
+.ico{width:52px;height:52px;border-radius:50%;background:var(--ink-50);display:flex;
+     align-items:center;justify-content:center;margin-bottom:20px}
+.step.on .ico{background:rgba(255,255,255,.12)}
+.ico svg{width:26px;height:26px}
+.link{flex:0 0 34px;align-self:center;height:2px;background:var(--ink-200)}
+
+.out{display:flex;gap:24px;margin-top:34px}
+.out .card{flex:1;padding:26px 28px}
+.out .card.line{border:2px solid var(--green);box-shadow:none}
+.pill{display:inline-block;background:var(--green);color:var(--navy);font-weight:700;font-size:14px;
+      padding:7px 16px;border-radius:999px;margin-bottom:14px}
+.card.dark .pill{background:transparent;color:var(--green);border:2px solid var(--green)}
+.out .txt{font-size:17px;font-weight:600;line-height:1.45}
+.card.dark .txt{color:#fff}
+
+/* --- twee kolommen kaarten --- */
+.duo{display:flex;gap:28px;margin-top:8px}
+.duo .card{flex:1;padding:34px 34px 32px}
+.duo h3{font-family:"League Spartan",sans-serif;font-weight:700;font-size:27px;margin-bottom:14px}
+.duo p{font-size:17px;line-height:1.55;color:var(--ink-700)}
+.card.dark h3{color:#fff}
+.card.dark .duo p{color:#dbe7ea}
+.duo .card.dark p{color:#dbe7ea}
+
+/* --- rekenmodule --- */
+.calc{display:flex;gap:28px;margin-top:26px}
+
+.inp{background:#fff;border-radius:14px;box-shadow:var(--shadow);padding:13px 18px;
+     display:flex;justify-content:space-between;align-items:center}
+.inp .k{font-size:15px;color:var(--ink-500)}
+.inp .v{font-family:"League Spartan",sans-serif;font-weight:700;font-size:20px}
+.chain{flex:0 0 760px;display:flex;flex-direction:column;gap:14px}
+.crow{background:#fff;border-radius:16px;box-shadow:var(--shadow);padding:16px 24px;
+      display:flex;justify-content:space-between;align-items:center}
+.crow .f{font-size:15.5px;color:var(--ink-500)}
+.crow .r{font-family:"League Spartan",sans-serif;font-weight:700;font-size:26px}
+.crow.total{background:var(--navy)}
+.crow.total .f{color:#9fb4bd}
+.crow.total .r{color:var(--green);font-size:34px}
+.check{font-size:15px;color:var(--ink-500);margin-top:4px;padding-left:4px}
+.risk{flex:1;display:flex;flex-direction:column;justify-content:center}
+.risk .card{height:auto}
+.risk .rq{font-family:"League Spartan",sans-serif;font-weight:600;font-size:23px;line-height:1.35;color:#fff}
+.risk .rs{font-size:13.5px;color:#9fb4bd;margin-top:16px}
+.risk .rl{margin-top:22px;padding-top:20px;border-top:1px solid rgba(255,255,255,.16);
+          font-size:16.5px;color:#dbe7ea;line-height:1.5}
+.mini{font-size:13px;color:var(--ink-500);text-align:center;margin-top:26px}
+</style>
+</head>
+<body>
+
+<!-- 1. Accuraatheid -->
+<div class="slide">
+  <img class="logo" src="../../../references/brand-assets/logos/logo_navy.png">
+  <h1>Hoe dicht zitten we bij de <span class="hl">docent</span></h1>
+  <div class="sub">Gemeten over 435 opdrachten, nagekeken door 13 docenten met de tool</div>
+<div class="content">
+  <div class="big">
+    <div class="card">
+      <div class="num">6</div>
+      <div class="num-lbl">punten verschil</div>
+      <div class="num-sub">Gemiddeld, over alle docenten</div>
+    </div>
+    <div class="card dark">
+      <div class="num">2</div>
+      <div class="num-lbl">punten verschil</div>
+      <div class="num-sub">Bij docenten die de tool goed hadden ingesteld</div>
+    </div>
+  </div>
+  <div class="src">Bath Spa University pilot, juni 2026</div>
+  </div>
+</div>
+
+<!-- 2. Wat het teruggeeft -->
+<div class="slide">
+  <img class="logo" src="../../../references/brand-assets/logos/logo_navy.png">
+  <h1>De feedback die je <span class="hl">zelf</span> zou geven</h1>
+  <div class="sub tight">Niet een algemene tekst over een tekst</div>
+<div class="content">
+  <div class="two">
+    <div class="left">
+      <ul class="blist">
+        <li><span class="tick"></span><span>Taal die studenten snappen</span></li>
+        <li><span class="tick"></span><span>Over dat werkstuk, niet generiek</span></li>
+        <li><span class="tick"></span><span>Verwijst naar jullie eigen beoordelingscriteria</span></li>
+        <li><span class="tick"></span><span>Legt uit waarom het een 7 is en geen 9</span></li>
+        <li><span class="tick"></span><span>Geeft suggesties om het beter te maken</span></li>
+      </ul>
+    </div>
+    <div class="right">
+      <div class="card dark">
+        <div class="eyebrow">Waarom dat kan</div>
+        <p>Het model wordt vooraf op jullie eigen beoordelingsmodel ingesteld. Het beoordeelt
+           tegen jullie criteria, niet tegen een algemeen idee van goed schrijven.</p>
+        <div class="quote">"Daar kun je prima AI mee voeden."</div>
+        <div class="qsrc">Barbara, 10 augustus 2026, over jullie beoordelingsmodellen</div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!-- 3-6. Formatieve flow -->
+<div class="slide">
+  <img class="logo" src="../../../references/brand-assets/logos/logo_navy.png">
+  <h1>Formatieve <span class="hl">feedback</span></h1>
+  <div class="sub tight">Hoe het in de praktijk loopt</div>
+<div class="content top">
+  <div class="flow">
+      <div class="step on">
+        <div class="badge">1</div>
+        <div><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 6h14M5 12h14M5 18h14"/><circle cx="9" cy="6" r="2.4" fill="#f3f7f8"/><circle cx="15" cy="12" r="2.4" fill="#f3f7f8"/><circle cx="8" cy="18" r="2.4" fill="#f3f7f8"/></svg></div></div>
+        <div class="st">Docent stelt de feedbackinstructies in</div>
+      </div>
+      <div class="link"></div>
+      <div class="step">
+        <div class="badge">2</div>
+        <div><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#002333" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 8l10 5 10-5-10-5Z"/><path d="M6 10.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-5.5"/></svg></div></div>
+        <div class="st">Student levert de opdracht in</div>
+      </div>
+      <div class="link"></div>
+      <div class="step">
+        <div class="badge">3</div>
+        <div><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#002333" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8Z"/><path d="M14 3v5h5"/><path d="m9.5 14 1.2 2.4L13 17.6l-2.3 1.2L9.5 21l-1.2-2.2L6 17.6l2.3-1.2Z" fill="#002333" stroke="none"/></svg></div></div>
+        <div class="st">Eduface genereert de feedback</div>
+      </div>
+  </div>
+  </div>
+</div>
+<div class="slide">
+  <img class="logo" src="../../../references/brand-assets/logos/logo_navy.png">
+  <h1>Formatieve <span class="hl">feedback</span></h1>
+  <div class="sub tight">Hoe het in de praktijk loopt</div>
+<div class="content top">
+  <div class="flow">
+      <div class="step">
+        <div class="badge">1</div>
+        <div><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#002333" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 6h14M5 12h14M5 18h14"/><circle cx="9" cy="6" r="2.4" fill="#f3f7f8"/><circle cx="15" cy="12" r="2.4" fill="#f3f7f8"/><circle cx="8" cy="18" r="2.4" fill="#f3f7f8"/></svg></div></div>
+        <div class="st">Docent stelt de feedbackinstructies in</div>
+      </div>
+      <div class="link"></div>
+      <div class="step on">
+        <div class="badge">2</div>
+        <div><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 8l10 5 10-5-10-5Z"/><path d="M6 10.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-5.5"/></svg></div></div>
+        <div class="st">Student levert de opdracht in</div>
+      </div>
+      <div class="link"></div>
+      <div class="step">
+        <div class="badge">3</div>
+        <div><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#002333" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8Z"/><path d="M14 3v5h5"/><path d="m9.5 14 1.2 2.4L13 17.6l-2.3 1.2L9.5 21l-1.2-2.2L6 17.6l2.3-1.2Z" fill="#002333" stroke="none"/></svg></div></div>
+        <div class="st">Eduface genereert de feedback</div>
+      </div>
+  </div>
+  </div>
+</div>
+<div class="slide">
+  <img class="logo" src="../../../references/brand-assets/logos/logo_navy.png">
+  <h1>Formatieve <span class="hl">feedback</span></h1>
+  <div class="sub tight">Hoe het in de praktijk loopt</div>
+<div class="content top">
+  <div class="flow">
+      <div class="step">
+        <div class="badge">1</div>
+        <div><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#002333" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 6h14M5 12h14M5 18h14"/><circle cx="9" cy="6" r="2.4" fill="#f3f7f8"/><circle cx="15" cy="12" r="2.4" fill="#f3f7f8"/><circle cx="8" cy="18" r="2.4" fill="#f3f7f8"/></svg></div></div>
+        <div class="st">Docent stelt de feedbackinstructies in</div>
+      </div>
+      <div class="link"></div>
+      <div class="step">
+        <div class="badge">2</div>
+        <div><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#002333" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 8l10 5 10-5-10-5Z"/><path d="M6 10.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-5.5"/></svg></div></div>
+        <div class="st">Student levert de opdracht in</div>
+      </div>
+      <div class="link"></div>
+      <div class="step on">
+        <div class="badge">3</div>
+        <div><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8Z"/><path d="M14 3v5h5"/><path d="m9.5 14 1.2 2.4L13 17.6l-2.3 1.2L9.5 21l-1.2-2.2L6 17.6l2.3-1.2Z" fill="#ffffff" stroke="none"/></svg></div></div>
+        <div class="st">Eduface genereert de feedback</div>
+      </div>
+  </div>
+  </div>
+</div>
+<div class="slide">
+  <img class="logo" src="../../../references/brand-assets/logos/logo_navy.png">
+  <h1>Formatieve <span class="hl">feedback</span></h1>
+  <div class="sub tight">Twee manieren om de feedback bij de student te krijgen</div>
+<div class="content top">
+  <div class="flow">
+      <div class="step">
+        <div class="badge">1</div>
+        <div><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#002333" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 6h14M5 12h14M5 18h14"/><circle cx="9" cy="6" r="2.4" fill="#f3f7f8"/><circle cx="15" cy="12" r="2.4" fill="#f3f7f8"/><circle cx="8" cy="18" r="2.4" fill="#f3f7f8"/></svg></div></div>
+        <div class="st">Docent stelt de feedbackinstructies in</div>
+      </div>
+      <div class="link"></div>
+      <div class="step">
+        <div class="badge">2</div>
+        <div><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#002333" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 8l10 5 10-5-10-5Z"/><path d="M6 10.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-5.5"/></svg></div></div>
+        <div class="st">Student levert de opdracht in</div>
+      </div>
+      <div class="link"></div>
+      <div class="step">
+        <div class="badge">3</div>
+        <div><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#002333" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8Z"/><path d="M14 3v5h5"/><path d="m9.5 14 1.2 2.4L13 17.6l-2.3 1.2L9.5 21l-1.2-2.2L6 17.6l2.3-1.2Z" fill="#002333" stroke="none"/></svg></div></div>
+        <div class="st">Eduface genereert de feedback</div>
+      </div>
+  </div>
+  <div class="out">
+    <div class="card line">
+      <span class="pill">Direct</span>
+      <div class="txt">De student krijgt de feedback meteen na het inleveren</div>
+    </div>
+    <div class="card dark">
+      <span class="pill">Door de docent goedgekeurd</span>
+      <div class="txt">De student krijgt de feedback nadat de docent hem heeft nagekeken en goedgekeurd</div>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!-- 7. Twee manieren -->
+<div class="slide">
+  <img class="logo" src="../../../references/brand-assets/logos/logo_navy.png">
+  <h1>Twee manieren om het <span class="hl">in te zetten</span></h1>
+  <div class="sub">Allebei mogelijk, en je kunt ermee schuiven per opleiding</div>
+<div class="content">
+  <div class="duo">
+    <div class="card">
+      <div class="eyebrow deep">Optie 1</div>
+      <h3>Direct bij de docent</h3>
+      <p>De docent stelt zelf de feedbackinstructie in voor zijn eigen opdracht, kijkt na met
+         het model als voorwerk, past aan waar nodig en bevestigt. Korte lijn, geen tussenlaag.</p>
+    </div>
+    <div class="card dark">
+      <div class="eyebrow">Optie 2</div>
+      <h3>Bij bureau onderwijs</h3>
+      <p>Jullie stellen de tool centraal in voor de formatieve feedback, met AI voor de
+         inhoudelijke kennis. Precies zoals jullie dat nu al doen bij de toetsconstructie.
+         De docent gebruikt wat eruit komt en blijft eindverantwoordelijk voor het oordeel.</p>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!-- 8. Waarom niet met gewone AI -->
+<div class="slide">
+  <img class="logo" src="../../../references/brand-assets/logos/logo_navy.png">
+  <h1>Waarom dit niet met <span class="hl">gewone</span> AI kan</h1>
+  <div class="sub">Jouw vraag uit ons eerste gesprek</div>
+<div class="content">
+  <div class="duo">
+    <div class="card">
+      <div class="eyebrow deep">01</div>
+      <h3>Twee keer hetzelfde werk, twee cijfers</h3>
+      <p>Een algemeen model geeft op hetzelfde beoordelingsmodel niet twee keer dezelfde
+         uitkomst. Dan lost je gereedschap het probleem niet op, maar veroorzaakt het dat zelf.</p>
+    </div>
+    <div class="card">
+      <div class="eyebrow deep">02</div>
+      <h3>Niet uit te leggen</h3>
+      <p>Er is geen herleidbare koppeling tussen de score en het criterium waar hij vandaan komt.
+         Daarmee is het onbruikbaar voor de verantwoording waar jullie accreditatie aan hangt.</p>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!-- 9. Rekenmodule -->
+<div class="slide">
+  <img class="logo" src="../../../references/brand-assets/logos/logo_navy.png">
+  <h1>Wat beoordelen nu <span class="hl">kost</span></h1>
+  <div class="sub tight">Samen invullen, met jullie eigen cijfers</div>
+<div class="content top">
+  <div class="calc">
+    <div class="chain">
+      <div class="crow"><span class="f">175 studenten &times; 15 vakken</span><span class="r">2.625 beoordelingen</span></div>
+      <div class="crow"><span class="f">2.625 beoordelingen &times; 2 uur</span><span class="r">5.250 uur per jaar</span></div>
+      <div class="crow total"><span class="f">5.250 uur &times; &euro;60</span><span class="r">&euro;315.000 per jaar</span></div>
+      <div class="check">Dat is 30 uur per student per jaar, en ruim 6 uur per week per docent.</div>
+    </div>
+  </div>
+  <div class="src">Cijfers uit ons gesprek van 18 augustus 2026</div>
+  </div>
+</div>
+
+<!-- 10. Rekenmodule + risico -->
+<div class="slide">
+  <img class="logo" src="../../../references/brand-assets/logos/logo_navy.png">
+  <h1>Wat beoordelen nu <span class="hl">kost</span></h1>
+  <div class="sub tight">En wat er nu niet gezien wordt</div>
+<div class="content top">
+  <div class="calc">
+    <div class="chain">
+      <div class="crow"><span class="f">175 studenten &times; 15 vakken</span><span class="r">2.625 beoordelingen</span></div>
+      <div class="crow"><span class="f">2.625 beoordelingen &times; 2 uur</span><span class="r">5.250 uur per jaar</span></div>
+      <div class="crow total"><span class="f">5.250 uur &times; &euro;60</span><span class="r">&euro;315.000 per jaar</span></div>
+      <div class="check">Dat is 30 uur per student per jaar, en ruim 6 uur per week per docent.</div>
+    </div>
+    <div class="risk">
+      <div class="card dark">
+        <div class="eyebrow">Het risico</div>
+        <div class="rq">"Het blijft een steekproef, dus er kan ook heel veel tussendoor glippen."</div>
+        <div class="rs">Barbara, 18 augustus 2026</div>
+        <div class="rl">Van elke 100 toetsen herbeoordeelt de examencommissie er 3.</div>
+      </div>
+    </div>
+  </div>
+  <div class="src">Cijfers uit ons gesprek van 18 augustus 2026</div>
+  </div>
+</div>
+
+</body>
+</html>

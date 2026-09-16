@@ -1,0 +1,71 @@
+{
+  "slug": "essenzo-business-school",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_uhWmfPu5aQyuf49eCfGVJwPDQdkwvDjTp0sLtlKMDVE",
+    "naam": "Essenzo business school",
+    "url": "https://app.close.com/lead/lead_uhWmfPu5aQyuf49eCfGVJwPDQdkwvDjTp0sLtlKMDVE/",
+    "lead_status": "Prospect",
+    "opportunity_id": null,
+    "fase": null,
+    "fase_type": null,
+    "waarde": null,
+    "valuta": "EUR",
+    "confidence": null,
+    "close_date": null,
+    "eigenaar": "Eduface CRM",
+    "crm_note": "",
+    "contacten": [
+      {
+        "naam": "Willem Rietberg",
+        "titel": "",
+        "email": null,
+        "id": "cont_39FXd0962H0cZiJIcbieCPGCLck1xIFrVsvd3oG9YRe"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_UtrfE9KUj3BX4SD3JxX6xTJGryAWfPWDVfAddgNNWb5",
+        "soort": "call",
+        "datum": "2026-08-24",
+        "titel": "Telefoon outbound",
+        "duur_min": 4,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Duidelijk niet geïnteresseerd",
+        "transcript_beschikbaar": true,
+        "komend": false
+      }
+    ],
+    "open_taken": [],
+    "laatste_gesprek": "2026-08-24",
+    "volgende_afspraak": null,
+    "aantal_gehad": 1,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

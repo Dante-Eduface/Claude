@@ -1,0 +1,216 @@
+        <div class="scale">
+          <div class="scale-track">
+            <span class="fill-base"></span>
+            <span class="fill-jump"></span>
+            <span class="mark mark-a"></span>
+            <span class="mark mark-b"></span>
+            <span class="tag tag-a">
+              <span class="stat on-dark">94%</span>
+              <span class="micro soft">out of the box</span>
+            </span>
+            <span class="tag tag-b">
+              <span class="stat accent">98%</span>
+              <span class="micro soft">after a marker tuned it</span>
+            </span>
+          </div>
+          <div class="scale-ends">
+            <span class="micro soft">90%</span>
+            <span class="micro soft jumplabel">the jump a marker adds by tuning it once</span>
+            <span class="micro soft">100%</span>
+          </div>
+        </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proef — bewijsblok (sectie 4), v6</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Inter:wght@400;450;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ==========================================================================
+   PROEF v6, poort 2. Richting A: het getal draagt.
+   Verschil met v5: percentages vervangen door de echte meting (afstand in
+   punten tot het cijfer van de docent), een schaal met twee markers in plaats
+   van twee losse cijferblokjes, geen groen op een getal, geen eyebrow-pill,
+   geen icoontegels, geen campusfoto, geen tweede groene CTA.
+   Framer-proof: stacks en grids, gap op de parent, geen margins op children,
+   geen vaste hoogtes.
+   ========================================================================== */
+:root {
+  --navy: #002333;
+  --navy-2: #06303f;
+  --green-deep: #007b54;
+  --ink-900: #0a2c3b;
+  --ink-100: #e7eef0;
+  --ink-50:  #f3f7f8;
+  --white:   #ffffff;
+
+  --bg-inverse: var(--navy);
+  --surface-inverse: var(--ink-900);
+  --fg-inverse: var(--white);
+  --fg-inverse-soft: rgba(255, 255, 255, 0.66);
+  --border-inverse: rgba(255, 255, 255, 0.12);
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "League Spartan", var(--font-sans);
+
+  --radius-md: 8px;
+  --radius-lg: 10px;
+  --radius-2xl: 20px;
+  --radius-full: 9999px;
+
+  --section: 96px;
+  --container: 1120px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+body { font-family: var(--font-sans); background: var(--ink-50); color: var(--navy); }
+:focus-visible { outline: 2px solid #00e075; outline-offset: 3px; }
+
+.h2 { font-family: var(--font-display); font-size: 3.5rem; line-height: 1.02; letter-spacing: -0.025em; font-weight: 700; text-wrap: balance; }
+.lead { font-size: 1.25rem; line-height: 1.45; text-wrap: pretty; max-width: 60ch; }
+.small { font-size: 0.9375rem; line-height: 1.5; }
+.micro { font-size: 0.8125rem; line-height: 1.45; }
+.on-dark { color: var(--fg-inverse); }
+.soft { color: var(--fg-inverse-soft); }
+
+.section {
+  background: var(--bg-inverse);
+  display: flex; justify-content: center; padding: var(--section) 28px;
+}
+.container { width: 100%; max-width: var(--container); display: flex; flex-direction: column; gap: 56px; }
+.head { display: flex; flex-direction: column; gap: 20px; max-width: 900px; }
+
+/* ---- de schaal: label-baan, plot-baan, waarde-baan ----
+   Eén raster. Elke rij begint en eindigt op dezelfde lijn, alleen de vulling
+   verschilt. Nulpunt is het cijfer van de docent, want de vraag is afstand. */
+.scale {
+  display: flex; flex-direction: column; gap: 40px;
+  background: var(--surface-inverse);
+  border: 1px solid var(--border-inverse);
+  border-radius: var(--radius-2xl);
+  padding: 48px 44px;
+}
+.rows { display: flex; flex-direction: column; gap: 30px; }
+.row { display: grid; grid-template-columns: 15.5rem 1fr 7.5rem; align-items: center; gap: 28px; }
+.row .lab { display: flex; flex-direction: column; gap: 4px; }
+
+.track { position: relative; height: 20px; border-radius: var(--radius-full); background: rgba(255,255,255,.07); }
+.bar { position: absolute; left: 0; top: 0; bottom: 0; border-radius: var(--radius-full); }
+.bar-before { width: 60%; background: rgba(255,255,255,.30); }
+.bar-after  { width: 20%; background: var(--white); }
+
+.val { display: flex; align-items: baseline; justify-content: flex-end; gap: 7px; }
+.val .n { font-family: var(--font-display); font-weight: 700; letter-spacing: -0.04em; line-height: .9; }
+.n-before { font-size: 3rem; color: var(--fg-inverse-soft); }
+.n-after  { font-size: 4.5rem; color: var(--white); }
+.val .u { font-size: 1rem; font-weight: 500; color: var(--fg-inverse-soft); }
+
+/* de as: nulpunt is de menselijke beoordeling, daarom staat hij links en
+   heeft hij een naam in plaats van een cijfer */
+.axis { display: grid; grid-template-columns: 15.5rem 1fr 7.5rem; gap: 28px; }
+.axis-line { grid-column: 2; display: flex; justify-content: space-between; border-top: 1px solid var(--border-inverse); padding-top: 10px; }
+
+.basis { display: flex; flex-wrap: wrap; gap: 8px 10px; align-items: baseline; border-top: 1px solid var(--border-inverse); padding-top: 22px; }
+
+.foot { display: flex; flex-direction: column; gap: 10px; }
+.foot a { color: var(--fg-inverse); text-underline-offset: 3px; }
+
+@media (max-width: 900px) {
+  .section { padding: 56px 20px; }
+  .container { gap: 36px; }
+  .h2 { font-size: 2.25rem; }
+  .lead { font-size: 1.0625rem; }
+  .scale { padding: 28px 22px; gap: 28px; }
+  .row { grid-template-columns: 1fr; gap: 10px; }
+  .row .track { order: 3; }
+  .val { justify-content: flex-start; }
+  .n-before { font-size: 2.5rem; }
+  .n-after { font-size: 3.25rem; }
+  .axis { display: none; }
+}
+
+.notes { display: flex; justify-content: center; padding: 56px 28px; background: var(--white); }
+.notes-in { width: 100%; max-width: var(--container); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 32px; }
+.note { display: flex; flex-direction: column; gap: 10px; border-left: 2px solid var(--ink-100); padding-left: 18px; }
+.note h3 { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; color: var(--green-deep); }
+.note p { font-size: 0.875rem; line-height: 1.55; color: #5b7480; }
+</style>
+</head>
+<body>
+
+<section class="section">
+  <div class="container">
+
+    <div class="head">
+      <h2 class="h2 on-dark">Two points away from the mark your own team gave</h2>
+      <p class="lead soft">Bath Spa put 435 assignments their markers had already graded back through the model, and measured the gap. Not a demo set.</p>
+    </div>
+
+    <div class="scale">
+      <div class="rows">
+
+        <div class="row">
+          <span class="lab">
+            <span class="small on-dark" style="font-weight:600">Straight out of the box</span>
+            <span class="micro soft">no set-up, no examples</span>
+          </span>
+          <span class="track"><span class="bar bar-before"></span></span>
+          <span class="val"><span class="n n-before">6</span><span class="u">points off</span></span>
+        </div>
+
+        <div class="row">
+          <span class="lab">
+            <span class="small on-dark" style="font-weight:600">After one marker tuned it</span>
+            <span class="micro soft">roughly an hour, once per module</span>
+          </span>
+          <span class="track"><span class="bar bar-after"></span></span>
+          <span class="val"><span class="n n-after">2</span><span class="u">points off</span></span>
+        </div>
+
+      </div>
+
+      <div class="axis" aria-hidden="true">
+        <span class="axis-line">
+          <span class="micro soft">0, the mark your team gave</span>
+          <span class="micro soft">10 points</span>
+        </span>
+      </div>
+
+      <p class="basis small soft">
+        <span class="on-dark" style="font-weight:600">Bath Spa University, pilot June 2026.</span>
+        435 assignments, 13 markers, 6 subjects. Average absolute difference on a 100 point scale.
+      </p>
+    </div>
+
+    <div class="foot">
+      <p class="small soft">Two points is inside the range two human markers normally differ by, which is why the pilot team could use the output as a first mark. <a href="#method">How we measured it</a>.</p>
+    </div>
+
+  </div>
+</section>
+
+<div class="notes"><div class="notes-in">
+  <div class="note">
+    <h3>De claim</h3>
+    <p>94% en 98% zijn eruit. Die stonden er als accuraatheidspercentage terwijl de pilot afstand in punten meet. Nu staat de echte meting er: gemiddeld 6 punten verschil zonder set-up, 2 punten na tuning door één beoordelaar.</p>
+  </div>
+  <div class="note">
+    <h3>De geometrie</h3>
+    <p>Afstand tot een grens, dus een schaal met een nulpunt (het cijfer van de docent) en twee markers op hetzelfde raster. Geen twee losse cijferblokjes meer, want 6 naar 2 is één verband en geen twee feiten.</p>
+  </div>
+  <div class="note">
+    <h3>Kleur</h3>
+    <p>Geen groen op een getal en geen groene tweede CTA. Het verschil tussen de twee rijen zit in vulling, lengte en grootte, dus het werkt ook zonder kleurwaarneming. De enige groene knop van de pagina blijft de hero.</p>
+  </div>
+  <div class="note">
+    <h3>Weg uit de proef</h3>
+    <p>Eyebrow-pill, icoontegels in drie vreemde kleuren, campusfoto en de tweede knop. Alle vier staan op de reflexen-lijst en geen ervan droeg het argument. De dragers staan nu als één regel onder de schaal.</p>
+  </div>
+</div></div>
+
+</body>
+</html>

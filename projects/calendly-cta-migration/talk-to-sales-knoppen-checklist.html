@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Talk to sales → Calendly · Knoppen-checklist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#002333; --accent:#00E075; --bg:#ebf2f5; --wit:#fff;
+    --border:#d6e4eb; --grijs:#5b6b73; --mint:#f2faf7;
+  }
+  *{box-sizing:border-box}
+  body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--navy);
+    margin:0;padding:32px 16px;line-height:1.5;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:780px;margin:0 auto}
+  header{background:var(--navy);color:var(--wit);border-radius:18px;padding:32px 30px;margin-bottom:22px}
+  header h1{margin:0 0 8px;font-size:24px;font-weight:800;letter-spacing:-.3px}
+  header p{margin:0;color:rgba(255,255,255,.75);font-size:14px}
+  .pill{display:inline-block;background:rgba(0,224,117,.15);color:var(--accent);
+    font-size:12px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;
+    padding:6px 12px;border-radius:100px;margin-bottom:16px}
+  .linkbox{display:flex;gap:10px;align-items:center;background:#0a3346;border:1px solid #1d3d50;
+    border-radius:10px;padding:12px 14px;margin-top:18px}
+  .linkbox code{flex:1;color:var(--accent);font-size:13px;word-break:break-all;font-family:ui-monospace,monospace}
+  .linkbox button{background:var(--accent);color:var(--navy);border:none;font-weight:700;font-size:13px;
+    padding:9px 16px;border-radius:8px;cursor:pointer;white-space:nowrap;font-family:inherit}
+  .linkbox button:active{transform:translateY(1px)}
+  .progress{background:var(--wit);border:1px solid var(--border);border-radius:12px;padding:14px 18px;
+    margin-bottom:22px;font-size:14px;font-weight:600;display:flex;align-items:center;gap:12px}
+  .bar{flex:1;height:8px;background:var(--bg);border-radius:99px;overflow:hidden}
+  .bar > i{display:block;height:100%;background:var(--accent);width:0;transition:width .25s}
+  section{background:var(--wit);border:1px solid var(--border);border-radius:14px;padding:22px 24px;margin-bottom:18px}
+  section h2{margin:0 0 4px;font-size:17px;font-weight:700}
+  section .sub{margin:0 0 16px;color:var(--grijs);font-size:13.5px}
+  ul{list-style:none;margin:0;padding:0}
+  li{display:flex;gap:11px;align-items:flex-start;padding:9px 0;border-top:1px solid var(--border)}
+  li:first-child{border-top:none}
+  li input{appearance:none;width:20px;height:20px;min-width:20px;margin-top:1px;border:2px solid var(--border);
+    border-radius:6px;cursor:pointer;position:relative;background:var(--wit)}
+  li input:checked{background:var(--accent);border-color:var(--accent)}
+  li input:checked::after{content:"";position:absolute;left:6px;top:2px;width:5px;height:10px;
+    border:solid var(--navy);border-width:0 2.5px 2.5px 0;transform:rotate(45deg)}
+  li label{font-size:14.5px;cursor:pointer}
+  li.done label{color:var(--grijs);text-decoration:line-through}
+  .tag{font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px;margin-left:6px;vertical-align:middle}
+  .tag.done{background:var(--mint);color:#0a7d52}
+  .tag.skip{background:#fff3d6;color:#9a7b1a}
+  .note{background:var(--mint);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;
+    padding:11px 14px;font-size:13px;color:#1d4d3d;margin-top:14px}
+  .muted{color:var(--grijs);font-size:13px;font-weight:500}
+  code.inline{background:var(--bg);padding:1px 6px;border-radius:5px;font-size:12.5px}
+  footer{text-align:center;color:var(--grijs);font-size:12px;margin-top:24px}
+  .reset{background:none;border:1px solid var(--border);color:var(--grijs);font-size:12px;
+    padding:6px 12px;border-radius:8px;cursor:pointer;font-family:inherit;margin-left:auto}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <span class="pill">CTA-migratie</span>
+    <h1>"Talk to sales" knoppen → Calendly</h1>
+    <p>Elke knop die naar de talk-to-sales pagina gaat ompunten naar Calendly. Tekst laten staan. De talk-to-sales pagina zelf blijft bestaan (eerst conversie meten).</p>
+    <div class="linkbox">
+      <code id="cal">https://calendly.com/eduface/30min?back=1</code>
+      <button onclick="copyLink(this)">Kopieer link</button>
+    </div>
+  </header>
+
+  <div class="progress">
+    <span id="count">0 / 0 afgevinkt</span>
+    <div class="bar"><i id="fill"></i></div>
+    <button class="reset" onclick="resetAll()">Reset</button>
+  </div>
+
+  <section>
+    <h2>A. Deze blog: AI Essay Grader for Brightspace D2L</h2>
+    <p class="sub"><code class="inline">/resources/blog/ai-essay-grader-brightspace-d2l</code> — knoppen die op deze pagina zelf staan.</p>
+    <ul>
+      <li><input type="checkbox" id="a1" checked disabled><label>"Book a demo" (CTA-blok onderaan)<span class="tag done">AL GEDAAN</span></label></li>
+      <li><input type="checkbox" id="a2" disabled><label>"Create free account" → laten staan (signup)<span class="tag skip">NIET WIJZIGEN</span></label></li>
+    </ul>
+    <div class="note">Op deze pagina zelf staat verder geen talk-to-sales knop. Klaar.</div>
+  </section>
+
+  <section>
+    <h2>B. Gedeelde componenten <span class="muted">— 1× aanpassen = overal goed</span></h2>
+    <p class="sub">Staan op elke pagina. Open het component in Framer (dubbelklik), dan zet ik de link erin om — of doe het zelf.</p>
+    <ul>
+      <li><input type="checkbox" id="b1"><label><b>Footer</b> — "Talk to sales" tekstlink (kolom Connect)</label></li>
+      <li><input type="checkbox" id="b2"><label><b>Nav</b> (bovenbalk) — sales-knop rechtsboven, check of 'ie naar talk-to-sales gaat</label></li>
+      <li><input type="checkbox" id="b3"><label><b>CTA-component</b> — het herhaalde blok onderaan pagina's</label></li>
+    </ul>
+    <div class="note">Let op: als de link per instance is ingesteld (niet vast in het component), moet 'ie per pagina apart. Dat zie ik zodra het component open is.</div>
+  </section>
+
+  <section>
+    <h2>C. Pagina's nalopen <span class="muted">— losse hero/CTA-knoppen</span></h2>
+    <p class="sub">Open in Framer → check elke knop → Calendly waar 'ie naar talk-to-sales wijst.</p>
+    <ul>
+      <li><input type="checkbox" id="c1"><label>/ (Home)</label></li>
+      <li><input type="checkbox" id="c2"><label>/pricing</label></li>
+      <li><input type="checkbox" id="c3"><label>/product/paper-grader</label></li>
+      <li><input type="checkbox" id="c4"><label>/product/exam-grader</label></li>
+      <li><input type="checkbox" id="c5"><label>/product/feedback</label></li>
+      <li><input type="checkbox" id="c6"><label>/product/oral-examination</label></li>
+      <li><input type="checkbox" id="c7"><label>/resources/lms-integrations</label></li>
+      <li><input type="checkbox" id="c8"><label>/resources/case-study</label></li>
+      <li><input type="checkbox" id="c9"><label>/resources/about-us</label></li>
+      <li><input type="checkbox" id="c10"><label>/resources/environmental</label></li>
+      <li><input type="checkbox" id="c11"><label>/resources/safety</label></li>
+      <li><input type="checkbox" id="c12"><label>/resources/blog (index)</label></li>
+      <li><input type="checkbox" id="c13"><label>Alle overige blogposts (15×) — meestal hetzelfde CTA-component, zie B</label></li>
+    </ul>
+    <div class="note">Grote kans dat de blogposts hetzelfde CTA-component gebruiken (sectie B). Dan zijn ze in één klap goed en hoef je ze hier niet los te doen.</div>
+  </section>
+
+  <section>
+    <h2>Snelste route</h2>
+    <ul>
+      <li><input type="checkbox" id="r1"><label>Eerst <b>sectie B</b> (Footer, Nav, CTA). Fixt waarschijnlijk 80%+ in één keer.</label></li>
+      <li><input type="checkbox" id="r2"><label>Daarna <b>sectie C</b>, alleen pagina's met een eigen losse knop.</label></li>
+    </ul>
+    <div class="note">Open een component/pagina in Framer en zeg het tegen Claude, dan gaat de link er meteen in.</div>
+  </section>
+
+  <footer>Eduface · werkbestand · vink af terwijl je gaat (wordt lokaal bewaard)</footer>
+</div>
+
+<script>
+  const boxes = [...document.querySelectorAll('input[type=checkbox]:not([disabled])')];
+  const KEY = 'eduface_cta_checklist';
+  const saved = JSON.parse(localStorage.getItem(KEY) || '{}');
+  boxes.forEach(b=>{
+    if(saved[b.id]) b.checked = true;
+    syncRow(b);
+    b.addEventListener('change', ()=>{
+      saved[b.id] = b.checked;
+      localStorage.setItem(KEY, JSON.stringify(saved));
+      syncRow(b); updateProgress();
+    });
+  });
+  function syncRow(b){ b.closest('li').classList.toggle('done', b.checked); }
+  function updateProgress(){
+    const done = boxes.filter(b=>b.checked).length;
+    document.getElementById('count').textContent = done+' / '+boxes.length+' afgevinkt';
+    document.getElementById('fill').style.width = (boxes.length? done/boxes.length*100:0)+'%';
+  }
+  function resetAll(){
+    boxes.forEach(b=>{b.checked=false; syncRow(b);});
+    localStorage.removeItem(KEY); updateProgress();
+  }
+  function copyLink(btn){
+    navigator.clipboard.writeText(document.getElementById('cal').textContent.trim()).then(()=>{
+      const t=btn.textContent; btn.textContent='Gekopieerd ✓';
+      setTimeout(()=>btn.textContent=t,1400);
+    });
+  }
+  updateProgress();
+</script>
+</body>
+</html>

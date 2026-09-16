@@ -1,0 +1,313 @@
+{
+  "slug": "rijksuniversiteit-groningen",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_QRnRvtAVBv8irHTT7z16S8KMbaVjZ7jLK2Ye74N6p07",
+    "naam": "Rijksuniversiteit Groningen",
+    "url": "https://app.close.com/lead/lead_QRnRvtAVBv8irHTT7z16S8KMbaVjZ7jLK2Ye74N6p07/",
+    "lead_status": "Prospect",
+    "opportunity_id": "oppo_vGoIbq4jsHKxcjEAUW7Ad8t4rMp0GIOnhUwp1fDU4it",
+    "fase": "Discovery",
+    "fase_type": "active",
+    "waarde": 200000,
+    "valuta": "EUR",
+    "confidence": 5,
+    "close_date": "2027-07-03",
+    "eigenaar": "Eduface CRM",
+    "crm_note": "**Status:** Verkenning, projectplan nog niet goedgekeurd en zelf bouwen in\nBrightspace ligt nog steeds op tafel. Voor half september valt er geen\nbesluit.\n\n**Wat er gebeurde:** Het CIT verkent universiteitsbreed AI voor feedback en\nnakijken. Tessa heeft expliciet bevestigd dat het projectplan half september\nopnieuw wordt besproken, dat zelf ontwikkelen een reele optie blijft en dat\nhet plan nu nog niet is goedgekeurd. Budget en budgethouder zijn onbekend, er\nis geen harde deadline. De RUG heeft al een eigen nakijktool, de UG Grader; op\n22 september staat de technische validatie of Eduface daaraan te koppelen is.\n\n**Next action:** Tessa bellen over de survey, de docentengesprekken en de invulling van het bezoek | Dante | 20 jul | Hoog\n\n**Next action:** Fysiek bezoek Groningen met demo, doel is CIO Nolda en manager Louwarnoud aan tafel | Dante en Jeroen | 21 sep | Hoog\n\n**Risk:** Het eigen developer-team is de concurrent. Er is geen budgethouder\nin beeld en niemand aan hun kant heeft een reden om nu te beslissen.\n\n**Action required:** Van Tessa horen wie het projectplan in september\ngoedkeurt en wie er over het budget gaat, en die mensen aan de demo van 21\nseptember krijgen.",
+    "contacten": [
+      {
+        "naam": "Tessa Jansen",
+        "titel": "Coördinator Onderwijsapplicaties",
+        "email": "t.h.jansen@rug.nl",
+        "id": "cont_il4FQy8y5plOK6Vd45lByOGCYZw0RsuvgGiwirzbjoQ"
+      },
+      {
+        "naam": "Rutger Klein Nagelvoort",
+        "titel": "Cluster Director Education and Students",
+        "email": "r.c.h.klein.nagelvoort@rug.nl",
+        "id": "cont_QDRaQR6pU4a8TU9xKmfDkRY6J4bnMup5shkpa8rSASl"
+      },
+      {
+        "naam": "Erik Meijles",
+        "titel": "Director of Education",
+        "email": null,
+        "id": "cont_M8Ktg2S5lcWJLML1C28dbawv38jcmHwhvOAZvcpYJEZ"
+      },
+      {
+        "naam": "Fokie Cnossen",
+        "titel": "Programme Director and Director of Education in BSc and MSc AI and CCS",
+        "email": "f.cnossen@rug.nl",
+        "id": "cont_am1JPi3OPrLwvMKzGrRGc6vwpa7EXhLZ0BPFCe491gl"
+      },
+      {
+        "naam": "Brenda Mathijssen",
+        "titel": "Vice Dean and Director of Education",
+        "email": "brenda.mathijssen@rug.nl",
+        "id": "cont_h9rcOluXnCDGDvyQu1fLY7MwJcU4fmxz6gb5B5To1cZ"
+      },
+      {
+        "naam": "Liane Voerman",
+        "titel": "Director of Education at Faculty of Economics and Business",
+        "email": "l.voerman@rug.nl",
+        "id": "cont_AK2ZIGqx1GxgKpCUpOHMbfzFL8ULMqct3zZAaMufIlQ"
+      },
+      {
+        "naam": "Ademiluyi, A.Z.",
+        "titel": null,
+        "email": "a.ademiluyi@rug.nl",
+        "id": "cont_qXYTuI86Zo8Rfl2x8IypAR7FEb2AeKIZeWYhezWXhE5"
+      },
+      {
+        "naam": "Pim Geelhoed",
+        "titel": "Associate Professor of Criminal Law and Criminal Procedure",
+        "email": null,
+        "id": "cont_4X6pFU9BtPcE0AQcyx8Us4Cz3wS2iS03fwVhzC21Fsk"
+      },
+      {
+        "naam": "Koos",
+        "titel": "",
+        "email": null,
+        "id": "cont_tbQDFQQcCQZEFsa50BeYuifwUIpWzbGuDiHKSJHc6mF"
+      },
+      {
+        "naam": "Carel Jansen",
+        "titel": "Emeritus hoogleraar Communicatie- & Informatiewetenschappen",
+        "email": "c.j.m.jansen@rug.nl",
+        "id": "cont_QuwtddZs7miI1VpNTdxV0yh2RmioAP0oxjIMh0pOoqS"
+      },
+      {
+        "naam": "Tessa Jansen",
+        "titel": "Coordinator Onderwijsapplicaties Innovatie & AI (CIT)",
+        "email": "t.h.jansen@rug.nl",
+        "id": "cont_0eNahLpwLSfsC4PwlUxLAZgKS4P5LQNcS7oRHSsz0bQ"
+      },
+      {
+        "naam": "Rob Nijenkamp",
+        "titel": "",
+        "email": "r.nijenkamp@rug.nl",
+        "id": "cont_tZ98HtroVtXcE8MFDPHHzgzHSl5qXaOY0IIfMoIeih1"
+      },
+      {
+        "naam": "Patricia Pereira",
+        "titel": "",
+        "email": "p.pereira@rug.nl",
+        "id": "cont_ckMKHH8DvTdBTSOE8US1yt0ze2KvwOzdaCeO1EGr6IH"
+      },
+      {
+        "naam": "Femke hemelaar",
+        "titel": "",
+        "email": "f.hemelaar@rug.nl",
+        "id": "cont_H0lmqwc5ZFQ0gt4TdOheWXccVbuh4VoulDYDiZbtnTG"
+      },
+      {
+        "naam": "Daphne brandenburg",
+        "titel": "",
+        "email": "d.d.brandenburg@rug.nl",
+        "id": "cont_xd8eEBqnC2ZkfwIz343HJjpNZLETLzJvOruXwikw6Uo"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_5zLW0fsAFTeItbP1si2bHTdPWyW7VTOU4YFTCHjk7Hm",
+        "soort": "meeting",
+        "datum": "2025-07-03",
+        "titel": "AI-feedback tool Rijksuniversiteit Groningen",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "a.ademiluyi@rug.nl",
+          "b.a.a.beijer@rug.nl",
+          "dante.torbed@eduface.me"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_pqzrfvoNz0nZfgjnqHmVbc6A2kzzmlZMCpqG8HaDLwC",
+        "soort": "meeting",
+        "datum": "2026-03-20",
+        "titel": "Vergadering met Dante Torbed",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "a.ademiluyi@rug.nl",
+          "dante.torbed@eduface.me"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_OfRzQpvlNC4i16e4SNp3zaIRNJJxLNGIVgQnJWeaJPm",
+        "soort": "meeting",
+        "datum": "2026-04-17",
+        "titel": "Vergadering met Dante Torbed",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "a.ademiluyi@rug.nl",
+          "dante.torbed@eduface.me"
+        ],
+        "samenvatting": "- Board of Examiners meeting held today to decide on Eduface pilot; decision expected by end of day.\n- A.Z. departing for three-week holiday Monday, returning mid-May; all lecturer arrangements already prepared.\n- University maintaining conservative approach to AI due to GDPR concerns and competing internal AI development.\n- Dante to attend in-person presentation with CTO once Board approves, followed by separate policy meeting.\n- A.Z. will coordinate with Bart to identify appropriate contacts (Yap or Alina Klingerberg) for further discussions.\n\n### Progress Update and Current Status\n- A.Z. has already met with lecturers and prepared assignment rubrics for the testing phase.\n- A.Z.'s manager, who heads the education support department, advised waiting for Board of Examiners approval before proceeding.\n- The Board of Examiners had a meeting today to discuss Eduface, with feedback expected by end of day.\n- A.Z. is departing for a three-week holiday starting Monday and will return mid-May.\n- Once approved, all necessary arrangements for lecturer involvement are already prepared.\n\n### Governance and Decision-Making Structure\n- A.Z.'s manager is part of the faculty management board and heads the education support department.\n- The Board of Examiners must approve any tool that will involve student data and assessment.\n- The Board includes IT law lecturers specializing in AI privacy and data protection.\n- Student assignments constitute personal data requiring careful legal and privacy consideration.\n- The university maintains a conservative approach to AI implementation due to GDPR and data privacy concerns.\n\n### Next Steps and Meeting Planning\n- Upon Board approval, A.Z. will schedule a meeting with Eduface and participating lecturers.\n- Dante will attend in person with Eduface's CTO and potentially CEO for the presentation.\n- The meeting will be conducted in Dutch with a 5-10 minute Eduface presentation.\n- A subsequent policy discussion meeting will occur between Eduface and university policy stakeholders.\n- A.Z. will contact Dante via WhatsApp during vacation if Board approval is received.\n\n### Challenges and Political Considerations\n- The university is developing its own AI solution, creating reluctance to invest in external tools.\n- The homegrown AI project will require 5-6 years and significant funding to develop properly.\n- University leadership is extremely cautious about AI implementation to avoid complications.\n- Feedback fruits, which has AI features, is already used but with AI deactivated for the university.\n- A.Z. emphasized the need for careful navigation of institutional politics surrounding AI adoption.\n\n### Key Contacts and Introduction Strategy\n- A.Z. will discuss preferred contacts with Bart at an event later today.\n- Alina Klingerberg, head of exam committee and technology/marketing law professor, is a strong potential contact.\n- Yap, the director of education, is another key person who might facilitate the discussion.\n- A.Z. will provide contact information or facilitate introductions through Bart to avoid political complications.\n- Dante can independently contact these individuals if necessary, though A.Z. prefers to manage introductions carefully.\n\n### Eduface Progress at Other Institutions\n- Eduface is conducting a successful pilot at UMCG with nursing staff providing student feedback.\n- The UMCG use case involves AI-generated feedback suggestions to improve quality and save time.\n- A significant number of nurses are currently using Eduface at UMCG.\n- UMCG's positive experience may help build confidence at Rijksuniversiteit Groningen.\n\n### Webinar and Support Materials\n- Dante hosted a webinar with Belspain University (UK, 30,000 students, ranked 80th) discussing Eduface.\n- Dante offered to create a shorter 5-10 minute version for A.Z. to share with the Board.\n- A.Z. had already shared an article about Eduface with the Board of Examiners previously.\n- The webinar material may provide additional context if needed, though the Board meeting timing makes it less critical.\n\n### Communication Plan and Timeline\n- A.Z. will get back to Dante via WhatsApp as soon as Board decision information is received.\n- Dante hopes to arrange the testing meeting before A.Z.'s three-week vacation begins.\n- A.Z. will contact Dante by end of day today with information about preferred contacts and next steps.\n- Dante will follow up with identified contacts after learning more from Bart.",
+        "eigen_notitie": "http://studiekeuze123.nl/opleidingen/7011-rechtsgeleerdheid-rijksuniversiteit-groningen-wo-bachelor\nhttps://www.rug.nl/staff/j.j.dijkstra/\nhttp://rug.nl/about-ug/latest-news/press-information/scientists-in-focus/aklingenberg?lang=en",
+        "transcript_beschikbaar": true,
+        "komend": false
+      },
+      {
+        "id": "acti_5fR1KRQswnpvEC5oC4PEv5eztClTnwPE21ZydBuf0Ny",
+        "soort": "call",
+        "datum": "2026-06-25",
+        "titel": "Telefoon outbound",
+        "duur_min": 1,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "VM ingesproken. Wel gemaild en aan gegeven dat ik haar ging bellen. Mailde haar wel laat.",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_ftCOjIxFvtbN2ndaeiL5IYsl9G8At7U6rYqWLcEhzx5",
+        "soort": "call",
+        "datum": "2026-06-26",
+        "titel": "Telefoon outbound",
+        "duur_min": 8,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Faculteiten zijn zelf al aan het proberen, zonder goedkeuring. Hoog risico op datalekken en negatieve publiciteit als hier niet snel een oplossing voor in de plaatst komt! PAIN PAIN PAIN.\n\n\n\n'Breder voor iedereen moet het helemaal goed zijn.' -&gt; wil het dus voor iedereen aanbieden, maar noemt wel heel expliciet dat ze ook aan het onderzoeken zijn of ze het zelf kunnen maken. Eigen in BS geïntegreerde Grading tool. \n\nLoopt al langer een voorstadium van breder aanbieden aan een AI grading tool. \n\nEr is enige prioriteit? -&gt; deze vraag kwam er niet lekker uit. \n\nBenieuwd naar hoe onze tool precies werkt. Benieuwd naar ervaringen van andere instellingen. Vragen over EU AI act. Ze hebben allemaal al voorkennis, dus dat betekent goed voorbereiden op deze onderwerpen. Eigen LLM, vinden ze interessant.",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_tecti0CvUP4Nh6fAViTUpccqLfq8Uwyp6qmfsdTEqZn",
+        "soort": "meeting",
+        "datum": "2026-06-30",
+        "titel": "Kennismaking RUG x Eduface",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "a.l.naber@rug.nl",
+          "dante.torbed@eduface.me",
+          "jeroen.van.gessel@eduface.me",
+          "r.nijenkamp@rug.nl",
+          "t.h.jansen@rug.nl"
+        ],
+        "samenvatting": "- Jeroen van Gessel adviseert om toestemming te vragen voordat iemand wordt toegelaten tot een bepaalde functie of groep.\n- De deelnemers bespreken een proces waarin toestemming vooraf moet worden verkregen in plaats van achteraf.\n- Jeroen stelt voor om eerst uit te schakelen en dan om toestemming te vragen voordat opnieuw wordt toegelaten.",
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_ksQHlx0H8egdhy6MN5dxplLK7KhGLVmJkvzeptMhwdb",
+        "soort": "call",
+        "datum": "2026-07-07",
+        "titel": "Telefoon outbound",
+        "duur_min": 3,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_j4OEG4QraxdoT4lzXzTOX3DdFEJtNI1JppqJcP26SU9",
+        "soort": "call",
+        "datum": "2026-07-16",
+        "titel": "Telefoon outbound",
+        "duur_min": 1,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Niet opgenomen",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_x23zPL3REEoUUAo7x0OzKAaSmpbaDUOWj9xscDf0X02",
+        "soort": "call",
+        "datum": "2026-07-17",
+        "titel": "Telefoon outbound",
+        "duur_min": 6,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_YD0lkQGGz591huO60RINZgg9woDXHHPDA55Akf0aLY0",
+        "soort": "meeting",
+        "datum": "2026-08-21",
+        "titel": "Uitval model",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "dante.torbed@eduface.me",
+          "jeroen.van.gessel@eduface.me",
+          "r.nijenkamp@rug.nl"
+        ],
+        "samenvatting": "- Gepresenteerd uitvalvoorspellingsmodel voor Rijksuniversiteit Groningen dat LMS- en cijferdata gebruikt om studentenuitval vroegtijdig op te sporen.\n- Identificeerde kritieke obstakels: datagewinning, organisatorische communicatie, en feature engineering voor vak-agnostische toepassing.\n- Dashboard voor studieadviseurs bevat geprioriteerde studentelijsten, scenario-exploratie, en explainbare AI-outputs via SHAP-techniek.\n- Eerdere onderzoeken toonden gemengde resultaten; combinatie van algoritme en menselijke expertise werkt beter dan elk afzonderlijk.\n- Project in testfase met volgende stappen inclusief pilot-testen met studieadviseurs en verdere integratie van vakinhoud en LLM-technologie.\n\n### Achtergrond en evolutie van het uitvalvoorspellingsproject\n- Het onderwerp learning analytics werd enkele jaren geleden steeds populairder binnen de universiteit.\n- Initiële process mining analyses leverden weinig op, maar trokken veel belangstelling vanuit het Learning Analytics Team.\n- Het team heeft eerder al aan studentuitvalvoorspelling gewerkt met een model dat vooral op de faculteit Science en Engineering werd toegepast.\n- De voorganger van dit project won destijds ook een prijs voor de voorspellingsaccuratesse.\n- Het huidige project bouwt voort op deze eerdere onderzoeken met een universiteitsbreder perspectief.\n\n### Projectstructuur en dashboards\n- Het project focust op het maken van dashboards voor verschillende doelgroepen, waaronder opleidingsdirecteuren en studieadviseurs.\n- Een curriculum overview dashboard laat zien hoe studenten het doen in vakken, geclusterd naar ability niveau.\n- Het specifieke voorspelmodel voor studieadviseurs is het dashboard waaraan Rob Nijenkamp momenteel werkt.\n- Het team bestaat uit Rob Nijenkamp, een andere data scientist, en sinds kort een computer science ontwikkelaar.\n- Het project gebruikt een Kubernetes-omgeving met Docker en is gebouwd met tools als Python en R met Shiny.\n\n### Data en feature engineering uitdagingen\n- Het grootste obstakel was het verkrijgen van data; niet zozeer vanuit Brightspace, maar door organisatorische en communicatiebarrières.\n- De universiteit heeft nog geen duidelijke data governance, wat onduidelijkheid schept over wie welke data mag gebruiken.\n- Samenwerking tussen teams (IT, databases, Analytics) was aanvankelijk moeilijk, hoewel de lijntjes korter zijn geworden.\n- Feature engineering was zeer complex; features moeten vak-agnostisch zijn voor universiteitsbreed gebruik.\n- Verschillende vakken laten verschillende hoeveelheden datasporen achter, wat comparabiliteit bemoeilijkt.\n\n### Voorspelmodel en gebruikte features\n- Aanvankelijk werd gefocust op cijfers en studiepunten uit het Business Intelligence-systeem.\n- Later werden LMS-features (Brightspace-activiteiten) toegevoegd voor vroegtijdiger voorspellingen zonder tentamencijfers.\n- Gebruikte constructen omvatten participatiematen, consistentie, timing, procrastinatie-aspecten, en entropie.\n- Formatieve assessment-data is voorspellend maar ontbreekt in veel eerstejaarsvakken, vooral in grote opleidingen.\n- Trend-variabelen en grade shock detectie helpen evolutie van studentprestaties over tijd in kaart te brengen.\n\n### Dashboard-features en uitlegbaarheid\n- De studieadviseursdashboard toont een geprioriteerde lijst met dropout risk categorieën (hoog, midden, laag).\n- SHAP-techniek wordt gebruikt om de voorspellingen expliciet te maken en te tonen welke factoren bijdragen aan risicoscores.\n- Een what-if scenario explorer laat zien wat gebeurt als studenten bepaalde herkanzingen halen.\n- Nationaliteit en gendergegevens zijn uit het model verwijderd vanwege ethische en privacy-bedenking.\n- Een tijdlijnvisualisatie toont academisch jaarverloop met vakken, resultaten en vergelijking met peers.\n\n### Ethische overwegingen en AI-verordening\n- Nationaliteit is verwijderd na bezorgdheid over potentiële discriminatie en volkssysteemachtige praktijken.\n- Explainable AI is cruciaal; zwarte doos-voorspellingen kunnen problematisch zijn voor AI-regelgeving.\n- Studieadviseurs moeten kunnen uitleggen waarom bepaalde studenten worden uitgenodigd.\n- Privacy is een aandachtspunt, vooral bij vroege voorspellingen op basis van persoonlijke gegevens.\n- De combinatie van algoritme en menselijk oordeel wordt gezien als beter dan elk afzonderlijk.\n\n### Onderzoeksresultaten en adoptie\n- Eerdere onderzoeken laten gemengde resultaten zien qua voorspellingswaarde van LMS-data.\n- Een MBO-studie toonde aan dat voorspelmodellen niet veel voordeel boden boven studieadviseursintuitie alleen.\n- Combinatie van model en menselijke expertise levert echter wel betere performance op.\n- Sommige studieadviseurs zijn enthousiast, anderen vertrouwen meer op hun eigen algoritme.\n- Adoptie hangt af van hoe het systeem wordt gepresenteerd en hoe gebruiksvriendelijk het is.\n\n### Praktische aanbevelingen uit data-analyse\n- Analyse toonde dat practicum-cijfers weinig variatie vertonen tussen ability-groepen, wat leidde tot aanbevelingen voor pass/fail beoordeling.\n- Theoretische vakken na practicavakken vertonen meer onderscheidend vermogen tussen studentgroepen.\n- Vakcijfers kunnen geclusterd worden op basis van semantische inhoud via tekstanalyse.\n- Alignment-problemen tussen vakken kunnen worden geïdentificeerd via vergelijking van succescriteria.\n- Structuur en kwaliteit van vakopzet bepalen sterk de beschikbaarheid van bruikbare datasporen.\n\n### Geplande volgende stappen en testen\n- Het project plant pilottests met studieadviseurs in het lopende academische jaar.\n- Formeel testen staat gepland omdat het moeilijk is om waardevolle feedback te krijgen op mockups.\n- Het project loopt naar verwachting nog een jaar en bevindt zich nog steeds in de projectfase.\n- Hopelijk evolueert het project naar een meer structurele oplossing na deze fase.\n- Presentaties en kennisuitwisseling met partijen als Eduface staan gepland voor september.\n\n### Potentiële toekomstige uitbreidingen\n- Een chatbot-interface gekoppeld aan LLM's zou kunnen helpen bij gegevensvragen van gebruikers.\n- Integratie van vakinhoud uit cursus-catalogi zou betere contextspecificiteit kunnen geven.\n- Leerlijnen-analyse zou curriculum-coherentie en vakuitlijning kunnen onderzoeken.\n- Combinatie met data-driven skill discovery algoritmes zou complementair kunnen zijn.\n- Student-dashboards zouden een eigen versie van deze visualisaties kunnen hebben via My Ocasis.\n\n### Samenwerking met Eduface en verwante projecten\n- Eduface werkt aan vergelijkbare doelen voor het meten van studentengroei en leren over tijd.\n- Eduface kan automatisch informatie uitlezen uit Brightspace-vakomgevingen en documenten.\n- Beide organisaties werken aan gestandaardiseerde rubrics en succescriteria-bepaling.\n- Gedeelde uitdagingen betreffen vakinconsistenties en onderwijsdatakwaliteit.\n- Voortdurend contact tussen beide partijen kan wederzijdse lering over het jaar opleveren.",
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_IPRMIcwyzOTRqi4MwbTjRHPP3i5U40EkU0M97UDCC1y",
+        "soort": "meeting",
+        "datum": "2026-09-22",
+        "titel": "Technische validatie: koppeling UG Grader × Eduface",
+        "duur_min": 60,
+        "status": "upcoming",
+        "deelnemers": [
+          "a.l.naber@rug.nl",
+          "dante.torbed@eduface.me",
+          "jeroen.van.gessel@eduface.me",
+          "menno.hahury@eduface.me",
+          "r.nijenkamp@rug.nl",
+          "samuel.rafini@eduface.me",
+          "t.h.jansen@rug.nl"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": true
+      }
+    ],
+    "open_taken": [],
+    "laatste_gesprek": "2026-08-21",
+    "volgende_afspraak": "2026-09-22",
+    "aantal_gehad": 10,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

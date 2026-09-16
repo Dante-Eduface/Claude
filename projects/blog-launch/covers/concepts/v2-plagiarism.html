@@ -1,0 +1,75 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1200px;height:900px}
+  body{display:flex;align-items:center;justify-content:center}
+  svg{display:block}
+</style></head>
+<body>
+<!-- BLOG: Why AI plagiarism detection is failing → magnifier over a flagged document, false positive -->
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="75%">
+      <stop offset="0%" stop-color="#f4faf7"/>
+      <stop offset="100%" stop-color="#e3edef"/>
+    </radialGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#eef3f5"/>
+    </linearGradient>
+    <radialGradient id="ring" cx="38%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#13435a"/>
+      <stop offset="60%" stop-color="#002333"/>
+      <stop offset="100%" stop-color="#001620"/>
+    </radialGradient>
+    <radialGradient id="glass" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="55%" stop-color="#9af0c6" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#00e075" stop-opacity="0.18"/>
+    </radialGradient>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="20" stdDeviation="26" flood-color="#012130" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softsm" x="-60%" y="-60%" width="220%" height="220%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#012130" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <circle cx="210" cy="210" r="16" fill="#00e075" opacity="0.9" filter="url(#softsm)"/>
+  <circle cx="1000" cy="715" r="13" fill="#007b54" opacity="0.8"/>
+  <circle cx="1020" cy="220" r="10" fill="#00e075" opacity="0.55"/>
+
+  <!-- document -->
+  <g filter="url(#soft)">
+    <rect x="360" y="200" width="430" height="540" rx="26" fill="url(#paper)"/>
+  </g>
+  <g>
+    <rect x="404" y="252" width="300" height="16" rx="8" fill="#d4dee2"/>
+    <rect x="404" y="292" width="342" height="16" rx="8" fill="#d4dee2"/>
+    <!-- falsely flagged line -->
+    <rect x="392" y="328" width="366" height="34" rx="10" fill="#00e075" opacity="0.20"/>
+    <rect x="404" y="336" width="320" height="16" rx="8" fill="#00b85f"/>
+    <rect x="404" y="384" width="280" height="16" rx="8" fill="#d4dee2"/>
+    <rect x="404" y="424" width="330" height="16" rx="8" fill="#d4dee2"/>
+    <rect x="404" y="464" width="250" height="16" rx="8" fill="#d4dee2"/>
+    <rect x="404" y="504" width="300" height="16" rx="8" fill="#d4dee2"/>
+  </g>
+
+  <!-- magnifying glass, lower-right over the doc -->
+  <g filter="url(#soft)">
+    <line x1="828" y1="628" x2="930" y2="730" stroke="#002333" stroke-width="40" stroke-linecap="round"/>
+    <circle cx="720" cy="520" r="160" fill="url(#ring)"/>
+    <circle cx="720" cy="520" r="128" fill="url(#glass)"/>
+    <ellipse cx="678" cy="478" rx="44" ry="26" fill="#ffffff" opacity="0.4"/>
+  </g>
+
+  <!-- false-positive badge: a question/cross to signal detection failing -->
+  <g filter="url(#softsm)" transform="translate(842 300)">
+    <circle r="58" fill="#002333"/>
+    <line x1="-20" y1="-20" x2="20" y2="20" stroke="#00e075" stroke-width="14" stroke-linecap="round"/>
+    <line x1="20" y1="-20" x2="-20" y2="20" stroke="#00e075" stroke-width="14" stroke-linecap="round"/>
+  </g>
+</svg>
+</body></html>

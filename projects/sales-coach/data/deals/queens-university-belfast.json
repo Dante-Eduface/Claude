@@ -1,0 +1,92 @@
+{
+  "slug": "queens-university-belfast",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_JTuoI0ZPS4E4T2JfjA0ameCdAFSFNdc6fXvDUyxicur",
+    "naam": "Queens University Belfast",
+    "url": "https://app.close.com/lead/lead_JTuoI0ZPS4E4T2JfjA0ameCdAFSFNdc6fXvDUyxicur/",
+    "lead_status": "Actief",
+    "opportunity_id": null,
+    "fase": null,
+    "fase_type": null,
+    "waarde": null,
+    "valuta": "EUR",
+    "confidence": null,
+    "close_date": null,
+    "eigenaar": "Eduface CRM",
+    "crm_note": "",
+    "contacten": [
+      {
+        "naam": "Nuala Devlin",
+        "titel": "",
+        "email": null,
+        "id": "cont_OeJ2UrudTZqZQMlVj9A4CgEXAR8HTgvl64KdayjsRhF"
+      },
+      {
+        "naam": "Judy Williams",
+        "titel": "PVC - decision maker",
+        "email": "judy.williams@qub.ac.uk",
+        "id": "cont_UUmcMfuQkU364wHL1vk6Ltlob5vKtx0S8vyiYxGh9QA"
+      },
+      {
+        "naam": "Maria Lee",
+        "titel": "Teaching, Learning & Assessment (interest in technology) - NOTE: has lost influence in organization",
+        "email": "maureen.kelly@qub.ac.uk",
+        "id": "cont_lfhrhRu4YTBO4xWxkuAGZ27r2noCGw3CncrbKoQLeGg"
+      },
+      {
+        "naam": "Judith Williams",
+        "titel": "Pro Vice Chancellor Education and Students",
+        "email": null,
+        "id": "cont_g7OWdguNHVjLUntpgbmIpgYFcCUzwf1EnhfYc8gfMPl"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_eBE9vqvqv6QEKezKU3evj4ukgTSSKd01YDPvGdNT2e6",
+        "soort": "meeting",
+        "datum": "2026-04-30",
+        "titel": "Jeroen Van Gessel (Eduface) See email as reference.",
+        "duur_min": 30,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "judy.williams@qub.ac.uk"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      }
+    ],
+    "open_taken": [],
+    "laatste_gesprek": "2026-04-30",
+    "volgende_afspraak": null,
+    "aantal_gehad": 1,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

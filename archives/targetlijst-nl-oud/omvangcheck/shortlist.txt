@@ -1,0 +1,53 @@
+p_marc-van-harten-b410b521|org_educared-erkend-opleiden-b-v|Educared Erkend Opleiden B.V.|educared.nl|0|gemeten: 18 mnd
+p_cindy-menke-ba1a561a|org_flair-scholing|Flair Scholing|flairscholing.nl|0|erkend mbo-diploma (structureel >1 jaar)
+p_jan-de-jong-1ab6b037|org_go-college|GO-College|gocollege.nl|0|erkend mbo-diploma (structureel >1 jaar)
+p_peter-sc-janssen-5668396|org_kronenburgh-beroepsopleidingen|Kronenburgh Beroepsopleidingen||0|erkend mbo-diploma (structureel >1 jaar)
+p_rob-rijbroek-18977355|org_laurentius-college-b-v|Laurentius College B.V.|laurentiuscollege.nl|0|gemeten: 18 mnd
+p_silvia-van-echtelt-a5a65539|org_ovd-opleidingen|OVD Opleidingen|ovd-opleidingen.nl|0|erkend mbo-diploma (structureel >1 jaar)
+p_ewoud-ponsioen-05386218|org_ponsioen-opleiding-en-advies|Ponsioen Opleiding en Advies|ponsioen.biz|0|erkend mbo-diploma (structureel >1 jaar)
+p_ruthbartstra|org_vandoen-academie|VanDoen Academie|vandoenacademie.nl|0|gemeten: 18 mnd
+p_maarten-vergeer-96104a5b|org_zorg-en-werk-academy-b-v|Zorg en Werk Academy B.V.|zorgenwerk.nl|0|gemeten: 36 mnd
+p_raoulkluivers|org_de-voshaar|De Voshaar|buitensportopleiding.nl|2|erkend mbo-diploma (structureel >1 jaar)
+p_gert-jan-pruijn-052a04|org_mbo4-nederland|MBO4 Nederland|mbo4leisuresports.nl|2|erkend mbo-diploma (structureel >1 jaar)
+p_petra-van-bussel-49909716|org_nipa-eindhoven-b-v|NIPA Eindhoven B.V.|nipaopleidingen.nl|2|erkend mbo-diploma (structureel >1 jaar)
+p_mariamariane|org_university-of-applied-sciences-europe|University of Applied Sciences Europe|publicaties.nvao.net|2|NVAO bachelor/master (structureel >1 jaar)
+p_dominique-stokman-5790277|org_academie-hypnos|Academie Hypnos|hypnos.nl|3|gemeten: 48 mnd
+p_aog-school-of-management--albert-jan-postma|org_aog-school-of-management|AOG School of Management|aog.nl|3|gemeten: 24 mnd
+p_werner-pellis-344ba23b|org_beeldcentrum|BeeldCentrum|beeldcentrum.nl|3|gemeten: 15 mnd
+p_toine-van-den-heuvel-a627842|org_business-school-nederland|Business School Nederland|bsn.nl|3|NVAO bachelor/master (structureel >1 jaar)
+p_barbarasuijkerbuijk|org_business-school-notenboom|Business School Notenboom|publicaties.nvao.net|3|NVAO bachelor/master (structureel >1 jaar)
+p_civas--klaartje-droste-pollmann|org_civas|CIVAS|civas.nl|3|gemeten: 36 mnd
+p_stefan-van-rossum-810b878|org_esoterra|Esoterra|esoterra.nl|3|gemeten: 36 mnd
+p_gomotive--remy-steegers|org_gomotive|GOmotive|gomotive.nl|3|erkend mbo-diploma (structureel >1 jaar)
+p_hbo-a-a--w-haar|org_hbo-a-a|hbo A&A|hboaa.nl|3|NVAO bachelor/master (structureel >1 jaar)
+p_paul-teule-7a4652219|org_hogeschool-voor-toegepaste-filosofie|Hogeschool voor Toegepaste Filosofie|publicaties.nvao.net|3|NVAO bachelor/master (structureel >1 jaar)
+p_marjonvandevensanders|org_i4healthcare-b-v|i4healthcare B.V.|i4healthcare.nl|3|erkend mbo-diploma (structureel >1 jaar)
+p_emrullah-akgunduz-0971a85b|org_islamic-university-of-applied-sciences-rotterdam|Islamic University of Applied Sciences Rotterdam|publicaties.nvao.net|3|NVAO bachelor/master (structureel >1 jaar)
+p_michelle-baars-7a9232211|org_kiki-training-coaching|KIKI Training & Coaching|viaviela.nl|3|erkend mbo-diploma (structureel >1 jaar)
+p_reneehilverdink|org_lsr-de-eerste-verdieping|LSR / De eerste verdieping|1e-verdieping.nl|3|NVAO bachelor/master (structureel >1 jaar)
+p_brendan-van-den-beuken-90291917|org_nederlandse-academie-voor-beeldcreatie|Nederlandse Academie voor Beeldcreatie|publicaties.nvao.net|3|NVAO bachelor/master (structureel >1 jaar)
+p_netherlands-business-academy--sandra-doeze-jager|org_netherlands-business-academy|Netherlands Business Academy|publicaties.nvao.net|3|NVAO bachelor/master (structureel >1 jaar)
+p_tessa-leidsman-hendriks-66b11742|org_nevi|Nevi|nevi.nl|3|gemeten: 18 mnd
+p_selmaspaas|org_nso-cna-leiderschapsacademie|NSO-CNA Leiderschapsacademie|publicaties.nvao.net|3|NVAO bachelor/master (structureel >1 jaar)
+p_marcel-van-zanten-9381b447|org_opleidingen-land-van-rouw|Opleidingen Land van Rouw|landvanrouw.nl|3|gemeten: 24 mnd
+p_armandvanbercheycke|org_spv-b-v|SPV B.V.||3|erkend mbo-diploma (structureel >1 jaar)
+p_marijnleijten|org_srh-haarlem-university-of-applied-sciences|SRH Haarlem University of Applied Sciences|publicaties.nvao.net|3|NVAO bachelor/master (structureel >1 jaar)
+p_jady-petovic-131aa63a|org_the-new-school-for-information-services|The New School for Information Services|publicaties.nvao.net|3|NVAO bachelor/master (structureel >1 jaar)
+p_bernadette-molier-53b14512|org_threewise|Threewise||3|erkend mbo-diploma (structureel >1 jaar)
+p_peter-hj-van-der-voort-85902b23|org_tias-school-for-business-and-society|TIAS School for Business and Society|publicaties.nvao.net|3|NVAO bachelor/master (structureel >1 jaar)
+p_welkin-kinesiologie-college--annabelle-rijntjes|org_welkin-kinesiologie-college|Welkin Kinesiologie College|welkinkinesiologiecollege.nl|3|gemeten: 48 mnd
+p_gelders-opleidingsinstituut--monique-bosch|org_gelders-opleidingsinstituut|Gelders Opleidingsinstituut|geldersopleidingsinstituut.nl|4|erkend mbo-diploma (structureel >1 jaar)
+p_aad-vollebregt-63297412|org_goc|GOC|goc.nl|4|erkend mbo-diploma (structureel >1 jaar)
+p_wim-karels-26bab89|org_haka-mbo-b-v|Haka MBO B.V.||4|erkend mbo-diploma (structureel >1 jaar)
+p_maarten-molenaar-743670a|org_haka-nederland|HaKa Nederland|ambinex.nl|4|erkend mbo-diploma (structureel >1 jaar)
+p_corne-broers-89674420|org_instituut-broers-bv|Instituut Broers BV||4|erkend mbo-diploma (structureel >1 jaar)
+p_kimvandenberg-kingnascholing|org_king-nascholing|King nascholing|kingnascholing.nl|4|gemeten: 24 mnd
+p_medivus-opleidingen-bv--simone-pieterson|org_medivus-opleidingen-bv|Medivus opleidingen BV||4|erkend mbo-diploma (structureel >1 jaar)
+p_maaike-nijboer-818a5015|org_newcare-college|NewCare College|newcarecollege.nl|4|gemeten: 24 mnd
+p_margriet-wensink-227501a|org_pao-psychologie-nascholing-opleiding|PAO Psychologie Nascholing & Opleiding|pao.nl|4|NVAO bachelor/master (structureel >1 jaar)
+p_arnold-van-duijn-165b4021|org_scholings-trainings-en-opleidings-centrum-stoc-b-v|Scholings Trainings en Opleidings Centrum STOC B.V.|stoc.nl|4|erkend mbo-diploma (structureel >1 jaar)
+p_alexandra-buijsman-076699a8|org_scillz|Scillz|scillz.nl|4|gemeten: 24 mnd
+p_robert-mentink-92ab2435|org_thomas-more-leiderschapsacademie|Thomas More Leiderschapsacademie|tm-leiderschapsacademie.nl|4|NVAO bachelor/master (structureel >1 jaar)
+p_universiteit-nyenrode-b-v--michael-erkens|org_universiteit-nyenrode-b-v|Universiteit Nyenrode B.V.|publicaties.nvao.net|4|NVAO bachelor/master (structureel >1 jaar)
+p_brigitte-van-den-boogaard-2a391720|org_vbot|VBOT|vbot.nl|4|erkend mbo-diploma (structureel >1 jaar)
+p_joyce-vlaarkamp-59359718|org_zen-shiatsu-opleiding|Zen Shiatsu Opleiding|zenshiatsu.nl|4|NVAO bachelor/master (structureel >1 jaar)

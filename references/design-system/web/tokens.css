@@ -1,0 +1,43 @@
+/* ==========================================================================
+   Eduface — WEB tokens (marketingsite, landingspagina's, blog)
+   Core + een type-schaal voor grote schermen op leesafstand + sectieritme.
+   Gebruik dit NIET voor slides of interne tools.
+   ========================================================================== */
+
+@import "../core/tokens.css";
+
+@theme {
+  /* ---- Display-schaal (League Spartan, strak getrackt) -------------------- */
+  --text-display-xl: 4.5rem;            /* 72px hero */
+  --text-display-xl--line-height: 1;
+  --text-display-xl--letter-spacing: -0.02em;
+  --text-display-xl--font-weight: 700;
+
+  --text-display-lg: 3.5rem;            /* 56px */
+  --text-display-lg--line-height: 1.02;
+  --text-display-lg--letter-spacing: -0.02em;
+  --text-display-lg--font-weight: 700;
+
+  --text-display-md: 2.75rem;           /* 44px sectiekoppen */
+  --text-display-md--line-height: 1.05;
+  --text-display-md--letter-spacing: -0.015em;
+  --text-display-md--font-weight: 600;
+
+  --text-display-sm: 2rem;              /* 32px */
+  --text-display-sm--line-height: 1.1;
+  --text-display-sm--letter-spacing: -0.01em;
+  --text-display-sm--font-weight: 600;
+
+  /* ---- Tekst-schaal (Inter) ---------------------------------------------- */
+  --text-xl: 1.25rem;   --text-xl--line-height: 1.4;
+  --text-lg: 1.125rem;  --text-lg--line-height: 1.5;
+  --text-base: 1rem;    --text-base--line-height: 1.6;
+  --text-sm: 0.875rem;  --text-sm--line-height: 1.5;
+  --text-xs: 0.75rem;   --text-xs--line-height: 1.4;
+
+  /* ---- Sectieritme (8pt-familie) ----------------------------------------- */
+  --spacing-section: 6rem;        /* 96px verticaal per sectie, desktop */
+  --spacing-section-sm: 3.5rem;   /* 56px mobiel */
+  --container-max: 1200px;
+  --measure: 68ch;                /* max regellengte lopende tekst */
+}

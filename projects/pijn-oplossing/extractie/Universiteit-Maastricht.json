@@ -1,0 +1,53 @@
+[
+  {
+    "id": "Universiteit-Maastricht-1",
+    "org": "Universiteit Maastricht",
+    "lead_id": "lead_6fMw93YOzDbHqa3gsKhm9xiTW7P0IEWq3NQRT80F3L4",
+    "close_url": "https://app.close.com/lead/lead_6fMw93YOzDbHqa3gsKhm9xiTW7P0IEWq3NQRT80F3L4/",
+    "persoon": "Ellen Bastiaens",
+    "functie": "Director of the Centre for Teaching and Learning",
+    "datum": "2026-04-13",
+    "bron_type": "note",
+    "bron_id": "acti_WyULag5PaeUQbTV4wnfqmsPx4CP6tweLb3FAGC0Hjfa",
+    "segment": "nl-ho",
+    "thema": "onderwijsvisie",
+    "type": "uitkomst",
+    "citaat": "Ellen zegt letterlijk dat ze AI op een relevante en betekenisvolle manier willen verankeren in het PGO-systeem.",
+    "samenvatting": "Verankering van AI in het PGO-model is haar doel, niet een tool.",
+    "zekerheid": "letterlijk"
+  },
+  {
+    "id": "Universiteit-Maastricht-2",
+    "org": "Universiteit Maastricht",
+    "lead_id": "lead_6fMw93YOzDbHqa3gsKhm9xiTW7P0IEWq3NQRT80F3L4",
+    "close_url": "https://app.close.com/lead/lead_6fMw93YOzDbHqa3gsKhm9xiTW7P0IEWq3NQRT80F3L4/",
+    "persoon": "Ellen Bastiaens",
+    "functie": "Director of the Centre for Teaching and Learning",
+    "datum": "2026-04-13",
+    "bron_type": "note",
+    "bron_id": "acti_WyULag5PaeUQbTV4wnfqmsPx4CP6tweLb3FAGC0Hjfa",
+    "segment": "nl-ho",
+    "thema": "ai-beleid",
+    "type": "huidig",
+    "citaat": "EDLAB loopt momenteel een groot onderzoek genaamd Future of Learning dat minimaal anderhalf jaar duurt. Het centrale thema is de rol van AI binnen het PGO-systeem van UM.",
+    "samenvatting": "Een lopend anderhalfjarig AI-onderzoek bepaalt het tempo.",
+    "zekerheid": "parafrase"
+  },
+  {
+    "id": "Universiteit-Maastricht-3",
+    "org": "Universiteit Maastricht",
+    "lead_id": "lead_6fMw93YOzDbHqa3gsKhm9xiTW7P0IEWq3NQRT80F3L4",
+    "close_url": "https://app.close.com/lead/lead_6fMw93YOzDbHqa3gsKhm9xiTW7P0IEWq3NQRT80F3L4/",
+    "persoon": "Judith Buddenberg",
+    "functie": "Head Education Office at the Faculty of Science and Engineering",
+    "datum": "2026-05-20",
+    "bron_type": "call",
+    "bron_id": "acti_o7SMCKxZvU4FhrsxKmhiF6rS7eafQRUR6pc31O0jUHo",
+    "segment": "nl-ho",
+    "thema": "besluitvorming",
+    "type": "huidig",
+    "citaat": "Ze zei dat we bij de vice decaan onderwijs van elke faculteit moeten zijn. Die komen ook bij elkaar en bespreken dit soort zaken.",
+    "samenvatting": "Vice-decanen onderwijs zijn per faculteit de route en overleggen onderling.",
+    "zekerheid": "letterlijk"
+  }
+]

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700;800&family=Inter:wght@400;450;500;600;700&display=swap");
+
+  :root{
+    --navy:#002333;
+    --green:#00e075;
+    --soft:rgba(255,255,255,.66);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{width:1280px;height:960px;}
+  .stage{
+    position:relative;
+    width:1280px;height:960px;
+    background:
+      radial-gradient(940px 660px at 86% -10%, rgba(0,224,117,.22), rgba(0,224,117,0) 60%),
+      radial-gradient(720px 620px at 4% 114%, rgba(0,143,90,.18), rgba(0,143,90,0) 60%),
+      var(--navy);
+    overflow:hidden;
+    font-family:"Inter",sans-serif;
+  }
+  .stage::before{
+    content:"";position:absolute;inset:0;
+    background-image:
+      linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+    background-size:64px 64px;
+    -webkit-mask-image:radial-gradient(1100px 760px at 70% 20%,#000 40%,transparent 85%);
+            mask-image:radial-gradient(1100px 760px at 70% 20%,#000 40%,transparent 85%);
+  }
+
+  .pad{position:absolute;inset:0;padding:74px 90px;display:flex;flex-direction:column;justify-content:flex-start;}
+
+  /* eyebrow pill */
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:14px;
+    align-self:flex-start;
+    padding:16px 30px;border-radius:999px;
+    background:rgba(0,224,117,.12);
+    border:1px solid rgba(0,224,117,.42);
+    color:var(--green);
+    font-weight:600;font-size:28px;letter-spacing:.13em;text-transform:uppercase;
+  }
+  .eyebrow .dot{width:14px;height:14px;border-radius:50%;background:var(--green);box-shadow:0 0 14px rgba(0,224,117,.9);}
+
+  /* headline */
+  h1{
+    font-family:"League Spartan",sans-serif;
+    color:#fff;font-weight:700;
+    font-size:104px;line-height:.94;letter-spacing:-.025em;
+    margin-top:46px;
+  }
+  h1 .g{color:var(--green);}
+
+  /* badges (groot, weinig) */
+  .badges{
+    margin-top:46px;
+    display:flex;flex-wrap:wrap;gap:22px;
+  }
+  .badge{
+    display:inline-flex;align-items:center;gap:16px;
+    padding:20px 34px;border-radius:999px;
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.16);
+    color:#fff;font-weight:500;font-size:34px;
+  }
+  .badge .d{width:17px;height:17px;border-radius:50%;background:var(--green);box-shadow:0 0 12px rgba(0,224,117,.85);}
+
+  /* product card onder de tekst */
+  .card{
+    margin-top:54px;
+    align-self:flex-start;
+    width:780px;
+    background:#fff;border-radius:22px;
+    box-shadow:0 30px 70px rgba(0,0,0,.40);
+    padding:30px 34px;
+    transform:rotate(-1.4deg);
+  }
+  .card .top{display:flex;align-items:center;gap:15px;margin-bottom:20px;}
+  .card .check{
+    width:42px;height:42px;border-radius:50%;
+    background:var(--green);
+    display:flex;align-items:center;justify-content:center;flex:none;
+  }
+  .card .check svg{width:24px;height:24px;}
+  .card .ttl{font-family:"League Spartan",sans-serif;font-weight:700;font-size:30px;color:var(--navy);}
+  .card .badge2{
+    margin-left:auto;
+    background:rgba(0,224,117,.16);color:#007b54;
+    font-weight:700;font-size:26px;
+    padding:8px 20px;border-radius:999px;flex:none;
+  }
+  .card .fb{
+    color:#2c4a57;font-size:27px;line-height:1.4;font-weight:450;
+    border-left:4px solid var(--green);padding-left:20px;margin-bottom:22px;
+  }
+  .card .rubric{display:flex;gap:14px;flex-wrap:wrap;}
+  .card .rb{
+    background:#f3f7f8;border:1px solid #e7eef0;color:#2c4a57;
+    font-size:23px;font-weight:600;padding:10px 18px;border-radius:12px;
+  }
+  .card .rb b{color:var(--navy);}
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="pad">
+      <span class="eyebrow"><span class="dot"></span>AI essay grader</span>
+
+      <h1>Feedback students<br/><span class="g">actually learn from.</span></h1>
+
+      <div class="badges">
+        <span class="badge"><span class="d"></span>Consistent grading</span>
+        <span class="badge"><span class="d"></span>Built for higher ed</span>
+      </div>
+
+      <div class="card">
+        <div class="top">
+          <span class="check">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#002333" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="ttl">Essay feedback</span>
+          <span class="badge2">8.5</span>
+        </div>
+        <div class="fb">Strong, well-argued thesis. Back up your second point with a source and tighten the conclusion.</div>
+        <div class="rubric">
+          <span class="rb">Argumentation <b>9</b></span>
+          <span class="rb">Structure <b>8</b></span>
+          <span class="rb">Sources <b>7</b></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

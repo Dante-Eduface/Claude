@@ -1,0 +1,27 @@
+<!doctype html><html><head><meta charset="utf-8"><style>*{margin:0;padding:0;box-sizing:border-box}html,body{width:1200px;height:900px}body{display:flex;align-items:center;justify-content:center}svg{display:block}</style></head><body>
+<!-- automated vs manual: gear (auto) vs pen (manual) -->
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#002333"/>
+  <ellipse cx="370" cy="742" rx="170" ry="30" fill="#001520"/>
+  <ellipse cx="820" cy="742" rx="170" ry="30" fill="#001520"/>
+  <!-- divider -->
+  <line x1="600" y1="220" x2="600" y2="660" stroke="#ffffff" stroke-width="6" stroke-opacity="0.25" stroke-dasharray="4 22" stroke-linecap="round"/>
+  <!-- gear (automated) -->
+  <g transform="translate(370 440)" fill="#00d563">
+    <g>
+      <rect x="-22" y="-178" width="44" height="60" rx="10"/><rect x="-22" y="118" width="44" height="60" rx="10"/>
+      <rect x="-178" y="-22" width="60" height="44" rx="10"/><rect x="118" y="-22" width="60" height="44" rx="10"/>
+      <rect x="-22" y="-178" width="44" height="60" rx="10" transform="rotate(45)"/><rect x="-22" y="118" width="44" height="60" rx="10" transform="rotate(45)"/>
+      <rect x="-178" y="-22" width="60" height="44" rx="10" transform="rotate(45)"/><rect x="118" y="-22" width="60" height="44" rx="10" transform="rotate(45)"/>
+    </g>
+    <circle r="120"/>
+    <circle r="48" fill="#002333"/>
+  </g>
+  <!-- pen (manual) -->
+  <g transform="rotate(45 820 440)">
+    <rect x="790" y="270" width="60" height="280" rx="20" fill="#ffffff"/>
+    <rect x="790" y="270" width="60" height="60" rx="20" fill="#00e075"/>
+    <path d="M790 550 L820 610 L850 550 Z" fill="#e8eef2"/>
+    <path d="M808 575 L832 575 L820 600 Z" fill="#002333"/>
+  </g>
+</svg></body></html>

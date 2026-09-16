@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proef hero v2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Inter:wght@400;450;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ==========================================================================
+   PROEF hero, sectie 1. Patroon uit het bewijsblok doorgezet.
+   Productbeelden volgen projects/app-homepage-redesign: Inter, drie groottes,
+   geen ring of balk, geen ratio's, kleur alleen op de afwijking.
+   Framer-proof: stacks en grids, gap op de parent, geen margins op children.
+   ========================================================================== */
+:root {
+  --navy: #002333;
+  --navy-2: #06303f;
+  --green: #00e075;
+  --green-deep: #007b54;
+  --danger: #b3261e;
+  --ink-950: #002333;
+  --ink-700: #2c4a57;
+  --ink-500: #5b7480;
+  --ink-300: #a9bcc4;
+  --ink-200: #cdd9de;
+  --ink-100: #e7eef0;
+  --ink-50:  #f3f7f8;
+  --white:   #ffffff;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "League Spartan", var(--font-sans);
+
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 10px;
+  --radius-xl: 12px;
+  --radius-2xl: 20px;
+  --radius-full: 9999px;
+
+  --container: 1200px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+body { font-family: var(--font-sans); background: var(--ink-50); color: var(--navy); }
+img { display: block; max-width: 100%; }
+a { text-decoration: none; color: inherit; }
+:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
+
+/* ---- type ---- */
+.h1 { font-family: var(--font-display); font-size: 4.25rem; line-height: .98; letter-spacing: -0.03em; font-weight: 700; text-wrap: balance; }
+.lead { font-size: 1.25rem; line-height: 1.5; color: var(--ink-500); text-wrap: pretty; }
+.small { font-size: 0.875rem; line-height: 1.5; }
+.micro { font-size: 0.8125rem; line-height: 1.4; }
+.accent { color: var(--green-deep); }
+
+/* ---- nav ---- */
+.nav { display: flex; justify-content: center; background: rgba(243,247,248,.88); backdrop-filter: blur(12px); position: sticky; top: 0; z-index: 20; }
+.nav-in { width: 100%; max-width: var(--container); padding: 16px 28px; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 20px; }
+.nav-logo { font-family: var(--font-display); font-size: 1.375rem; font-weight: 700; letter-spacing: -0.02em; justify-self: start; }
+.nav-links { display: flex; gap: 28px; justify-content: center; font-size: 0.9375rem; color: var(--ink-700); }
+.nav-links a:hover { color: var(--navy); }
+.nav-r { display: flex; justify-content: flex-end; }
+
+/* ---- hero ---- */
+.hero { display: flex; justify-content: center; padding: 88px 28px 0; overflow: hidden; }
+.hero-in { width: 100%; max-width: var(--container); display: flex; flex-direction: column; align-items: center; gap: 26px; text-align: center; }
+.hero .h1 { max-width: 18ch; }
+.h1 .l1 { display: block; }
+.hero .lead { max-width: 58ch; }
+.cta-row { display: flex; flex-direction: column; align-items: center; gap: 16px; padding-top: 6px; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; border-radius: var(--radius-full); padding: 18px 34px; font-size: 1rem; font-weight: 600; border: 1px solid transparent; cursor: pointer; background: var(--navy); color: var(--white); transition: background 450ms cubic-bezier(.44,0,.56,1); white-space: nowrap; }
+.btn:hover { background: var(--navy-2); }
+.btn-sm { padding: 11px 22px; font-size: 0.9375rem; background: var(--navy); color: var(--white); }
+.btn-sm:hover { background: var(--navy-2); color: var(--white); }
+.tlink { display: inline-flex; align-items: center; gap: 7px; font-size: 0.9375rem; color: var(--ink-500); border-bottom: 1px solid var(--ink-200); padding-bottom: 3px; }
+.tlink:hover { color: var(--navy); border-color: var(--ink-300); }
+
+.proofline { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 14px 26px; padding-top: 10px; }
+.pl-txt { display: inline-flex; align-items: center; gap: 8px; }
+.pl-sep { width: 1px; height: 22px; background: var(--ink-200); }
+.wall { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 14px 30px; }
+.wall img { height: 24px; width: auto; filter: grayscale(1) brightness(.55); opacity: .72; }
+.wall img.tall { height: 36px; }
+
+/* ---- productbeeld, loopt onder de vouw door ---- */
+.stage { width: 100%; max-width: 1160px; padding-top: 18px; }
+.stage img { width: 100%; height: auto; }
+
+
+
+
+
+/* held-getal met zijn woord op dezelfde regel, geen ratio, geen ring */
+
+@media (max-width: 780px) {
+  .hero { padding: 56px 20px 0; }
+  .h1 { font-size: 2.5rem; }
+  .lead { font-size: 1.0625rem; }
+  .nav-links { display: none; }
+
+}
+
+/* toelichting buiten de proef */
+.notes { display: flex; justify-content: center; padding: 72px 28px 56px; background: var(--white); border-top: 1px solid var(--ink-100); }
+.notes-in { width: 100%; max-width: var(--container); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px,100%),1fr)); gap: 32px; }
+.nt { display: flex; flex-direction: column; gap: 10px; border-left: 2px solid var(--ink-100); padding-left: 18px; }
+.nt h3 { font-size: 0.75rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--green-deep); }
+.nt p { font-size: 0.875rem; line-height: 1.55; color: var(--ink-500); }
+</style>
+</head>
+<body>
+
+<header class="nav"><div class="nav-in">
+  <span class="nav-logo">Eduface</span>
+  <nav class="nav-links"><a href="#how">How it works</a><a href="#proof">Accuracy</a><a href="#products">Products</a><a href="#faq">FAQ</a></nav>
+  <span class="nav-r"><a class="btn btn-sm" href="#book">Book a demo</a></span>
+</div></header>
+
+<section class="hero"><div class="hero-in">
+
+  <h1 class="h1"><span class="l1">Grade essay 140</span> <span class="accent">like you graded essay one</span></h1>
+  <p class="lead">Eduface drafts the feedback and the grade against your own criteria.</p>
+
+  <div class="cta-row">
+    <a class="btn" href="#book">Book a demo</a>
+    <a class="tlink" href="#how">See how it works
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14m0 0l-6-6m6 6l6-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+
+  <div class="proofline">
+    <span class="small" style="color:var(--ink-500)">Used by teaching teams at</span>
+    <span class="wall">
+      <img src="brand_assets/schools/rotterdam-cropped.svg" alt="Hogeschool Rotterdam">
+      <img src="brand_assets/schools/haagse.png" alt="De Haagse Hogeschool">
+      <img src="brand_assets/schools/tilburg.svg" alt="Tilburg University" class="tall">
+      <img src="brand_assets/schools/radboud.svg" alt="Radboud Universiteit">
+    </span>
+  </div>
+
+  <div class="stage">
+    <img src="creatives/product-images/hero.png" alt="Eduface: one student, three drafts, with the lecturer signing off every comment" width="3120" height="1320">
+  </div>
+
+</div></section>
+
+<div class="notes"><div class="notes-in">
+  <div class="nt">
+    <h3>Kop</h3>
+    <p>"Grade" en "essay" staan erin, want daar komt bijna al het advertentieverkeer op binnen. Message match met de advertentiegroep is volgens het onderzoek de sterkste hefboom op de pagina. Het groene stuk draagt de belofte.</p>
+  </div>
+  <div class="nt">
+    <h3>Eén knop</h3>
+    <p>Groen mag hier, dit is de enige plek op de pagina waar kijk hier en klik hier samenvallen. Daaronder een tekstlink die naar beneden scrollt, geen tweede knop.</p>
+  </div>
+  <div class="nt">
+    <h3>Het beeld</h3>
+    <p>Essay 1 links is al afgetekend, essay 140 in het midden wacht op de docent, rechts de hele lichting. Samen zeggen ze: zelfde criteria, zelfde behandeling, jij tekent af. Het label "Lecturer + AI" komt uit de marketingtekst.</p>
+  </div>
+  <div class="nt">
+    <h3>Regels van het app-herontwerp</h3>
+    <p>Inter met drie groottes, geen ring of balk, geen ratio zoals 12/32, maar één held-getal met zijn woord: "20 to grade". Kleur alleen op de afwijking, hier het criterium waar het model onzeker is.</p>
+  </div>
+</div></div>
+
+</body>
+</html>

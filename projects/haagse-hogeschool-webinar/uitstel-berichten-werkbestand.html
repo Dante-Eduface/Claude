@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uitstel-berichten · Webinar 23 juni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{ --navy:#002333; --green:#00E075; --green2:#008F5A; --bg:#f5f7f8; --card:#fff; --line:#e2e8ea; --muted:#5b6b73; --warn:#b3471a; }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--navy);font-family:'Inter',system-ui,sans-serif}
+  h1,h2,.spartan{font-family:'League Spartan',system-ui,sans-serif}
+  header{background:var(--navy);color:#fff;padding:18px 24px;position:sticky;top:0;z-index:10;box-shadow:0 2px 10px rgba(0,0,0,.15)}
+  header .logo{font-family:'League Spartan';font-weight:700;font-size:24px}
+  header .logo b{color:var(--green)}
+  header .sub{font-size:13px;color:#b9c6cc;margin-top:2px}
+  .bar{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:13px}
+  .progress{flex:1;min-width:180px;height:10px;background:#0a3144;border-radius:6px;overflow:hidden}
+  .progress > div{height:100%;background:var(--green);width:0%;transition:width .25s}
+  .count{font-size:14px;color:#cfe9df;white-space:nowrap}
+  .search{margin-top:12px}
+  .search input{width:100%;max-width:340px;background:#0a3144;border:1px solid #0e3e54;border-radius:8px;padding:9px 12px;font-size:14px;font-family:'Inter';color:#fff}
+  .search input::placeholder{color:#7f97a1}
+  .search input:focus{outline:none;border-color:var(--green)}
+  .wrap{max-width:820px;margin:0 auto;padding:20px 18px 100px}
+  .ref{background:#0a3144;color:#dfeef0;border-radius:12px;padding:15px 18px;margin:16px 0;font-size:14px;line-height:1.55}
+  .ref b{color:#fff}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:13px 16px;margin:10px 0;transition:opacity .2s,border-color .2s}
+  .card.done{opacity:.62;border-color:var(--green)}
+  .card.hide{display:none}
+  .crow{display:flex;align-items:flex-start;gap:11px}
+  .chk{width:24px;height:24px;border-radius:7px;border:2px solid var(--line);flex:0 0 auto;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:15px;color:#fff;background:#fff;margin-top:1px}
+  .card.done .chk{background:var(--green);border-color:var(--green)}
+  .who{flex:1;min-width:0}
+  .who .nm{font-family:'League Spartan';font-weight:700;font-size:17px;line-height:1.15}
+  .who .meta{font-size:12px;color:var(--muted);margin-top:3px}
+  .warn{display:inline-block;background:#fbe7dc;color:var(--warn);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.3px;padding:2px 7px;border-radius:20px;margin-left:6px}
+  .undo{font-size:12px;color:var(--green2);cursor:pointer;font-weight:600;white-space:nowrap;margin-top:3px;display:none}
+  .card.done .undo{display:inline}
+  .body{margin-top:11px}
+  .card.done .body{display:none}
+  textarea{width:100%;background:#fff;color:var(--navy);border:1px solid #cdd9dd;border-radius:9px;padding:11px 13px;font-family:'Inter';font-size:14px;line-height:1.6;resize:vertical;min-height:120px}
+  textarea:focus{outline:none;border-color:var(--green2);box-shadow:0 0 0 2px #00e07533}
+  .frow{display:flex;align-items:center;gap:12px;margin-top:10px;flex-wrap:wrap}
+  .cp{background:var(--green);color:var(--navy);border:none;border-radius:8px;padding:10px 18px;font-size:14px;font-weight:700;font-family:'League Spartan';cursor:pointer}
+  .cp:hover{background:#00c768}
+  .hint{font-size:12px;color:var(--muted)}
+  .toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--navy);color:#fff;padding:12px 20px;border-radius:10px;font-size:14px;opacity:0;pointer-events:none;transition:.2s;z-index:50}
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+  .toast b{color:var(--green)}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">Edu<b>face</b></div>
+  <div class="sub">Uitstel-berichten · Webinar 23 juni · stuur per persoon via je eigen kanaal</div>
+  <div class="bar">
+    <div class="progress"><div id="pbar"></div></div>
+    <div class="count" id="pcount">0 / 0 verstuurd</div>
+  </div>
+  <div class="search"><input id="q" type="text" placeholder="Zoek op naam of instelling..." oninput="filter(this.value)"></div>
+</header>
+
+<div class="wrap">
+
+  <div class="ref">
+    <b>Werkwijze:</b> klik <b>Kopieer &amp; markeer verstuurd</b> bij iemand, plak het in je eigen kanaal (mail / LinkedIn / WhatsApp), klaar. De kaart wordt afgevinkt en zakt naar onderen. Voortgang blijft lokaal in je browser bewaard.<br><br>
+    <b>Let op:</b> bij de 2 kaarten met <span class="warn">naam checken</span> heb ik alleen een initiaal, vul daar zelf de juiste naam in voor je kopieert. De tekst is overal aanpasbaar, je edits blijven bewaard.
+  </div>
+
+  <div id="list"></div>
+
+</div>
+
+<div class="toast" id="toast"><b>Gekopieerd</b> · gemarkeerd als verstuurd</div>
+<script>
+  const PEOPLE=[
+    {f:"Harald",l:"Grasdijk",e:"h.grasdijk@noordhoff.nl",o:"Noordhoff"},
+    {f:"Arjan",l:"van Hartesveldt",e:"hartesveldt.van.a@hsleiden.nl",o:"Hogeschool Leiden"},
+    {f:"Carel",l:"Jansen",e:"c.j.m.jansen@rug.nl",o:"RUG"},
+    {f:"Carla",l:"Stiekema",e:"c.j.stiekema@hva.nl",o:"HvA"},
+    {f:"Marloes",l:"Spook",e:"marloes@babel.nl",o:"Babel"},
+    {f:"Marieke",l:"Streefkerk",e:"marieke.streefkerk@zuyd.nl",o:"Zuyd"},
+    {f:"Remko",l:"Imthorn",e:"remko.imthorn@inholland.nl",o:"Inholland"},
+    {f:"Amber",l:"de Wilde",e:"amber.dewilde@npuls.nl",o:"Npuls"},
+    {f:"Paul",l:"Hermans",e:"p.hermans@hr.nl",o:"Hogeschool Rotterdam"},
+    {f:"Marijke",l:"Willemen",e:"m.willemen@curio.nl",o:"Curio"},
+    {f:"Koen",l:"Dekker",e:"a.k.dekker@uva.nl",o:"UvA"},
+    {f:"Maartje",l:"de Groot",e:"m.h.degroot@hhs.nl",o:"De Haagse Hogeschool"},
+    {f:"Sanne",l:"Huinink",e:"s.huinink@aeres.nl",o:"Aeres"},
+    {f:"Finnian",l:"Reiser",e:"f.reiser@hmcollege.nl",o:"HMC"},
+    {f:"Arnold",l:"van Oostrum",e:"a.r.van_oostrum@lumc.nl",o:"LUMC"},
+    {f:"Lonneke",l:"Schellekens",e:"l.h.schellekens@tilburguniversity.edu",o:"Tilburg University"},
+    {f:"Guido",l:"Tierolf",e:"g.tierolf@hva.nl",o:"HvA"},
+    {f:"Ivo",l:"Schürmann",e:"ivo.schurmann@hu.nl",o:"Hogeschool Utrecht"},
+    {f:"Bart",l:"Blankendaal",e:"b.blankendaal@hmcollege.nl",o:"HMC"},
+    {f:"Manuel",l:"Rodrigues",e:"manuelrodrigues@me.com",o:"privé adres"},
+    {f:"T",l:"Val",e:"t.val@hmcollege.nl",o:"HMC",flag:true},
+    {f:"Len",l:"Kromkamp",e:"l.kromkamp@fontys.nl",o:"Fontys"},
+    {f:"Willem",l:"Meijs",e:"w.c.j.vandermeijs@hhs.nl",o:"De Haagse Hogeschool"},
+    {f:"Anita",l:"Mannens",e:"mannens@lis.nl",o:"LIS"},
+    {f:"Jacky",l:"van der Sluijs",e:"j.vandersluijs@hmcollege.nl",o:"HMC"},
+    {f:"André",l:"Groenewoud",e:"andre.groenewoud@wur.nl",o:"WUR"},
+    {f:"Leo",l:"Sarbach",e:"l.sarbach@boom.nl",o:"Boom"},
+    {f:"Lize",l:"Van de Pol",e:"l.van.de.pol@aeres.nl",o:"Aeres"},
+    {f:"Elsbeth",l:"Bouman",e:"e.bouman@boom.nl",o:"Boom"},
+    {f:"Nies",l:"Oostenbrink",e:"n.oostenbrink@rocva.nl",o:"ROC van Amsterdam"},
+    {f:"Astrid",l:"van der Schee",e:"a.vanderschee@boom.nl",o:"Boom"},
+    {f:"Eky",l:"Fioole",e:"ey.fioole@avans.nl",o:"Avans"},
+    {f:"Thijs",l:"van Dongen",e:"m.vandongen8@avans.nl",o:"Avans"},
+    {f:"Jan",l:"Implom",e:"j.implom@tudelft.nl",o:"TU Delft"},
+    {f:"Margreet",l:"Ter Horst",e:"m.terhorst@fontys.nl",o:"Fontys"},
+    {f:"J",l:"Timmers",e:"j.timmers@aeres.nl",o:"Aeres",flag:true},
+    {f:"Tanja",l:"Beks",e:"beks.t@buas.nl",o:"BUas"},
+    {f:"Gijs",l:"de Boer",e:"gijs.deboer@designacademy.nl",o:"Design Academy Eindhoven"},
+    {f:"Ad",l:"Hoen",e:"ad.hoen@zuyd.nl",o:"Zuyd"},
+    {f:"Stephanie",l:"Meuleman - Van Den Kieboom",e:"s.v.d.kieboom@het-erasmus.nl",o:"Het Erasmus"},
+    {f:"Bart",l:"Sjoerdsma",e:"bart.sjoerdsma@gmail.com",o:"privé adres"},
+    {f:"Pim",l:"Schelvis",e:"pc.schelvis@avans.nl",o:"Avans"},
+    {f:"Jochem",l:"ten Böhmer",e:"jochem.tenbohmer@han.nl",o:"HAN"},
+    {f:"Patrick",l:"van der Zande",e:"p.vanderzande@tilburguniversity.edu",o:"Tilburg University"},
+    {f:"Simon",l:"Goede",e:"s.j.goede@tudelft.nl",o:"TU Delft"},
+    {f:"Kim",l:"Weerts",e:"k.j.w.weerts@hva.nl",o:"HvA"},
+    {f:"Sam",l:"Wubben",e:"s.a.m.wubben@hr.nl",o:"Hogeschool Rotterdam"},
+    {f:"Wendy",l:"Troost",e:"wtroost@hhs.nl",o:"De Haagse Hogeschool"},
+    {f:"Lieve",l:"Van Assche",e:"lieve.van.assche@howest.be",o:"Howest (BE)"},
+    {f:"Bjorn",l:"Kenis",e:"bjorn.kenis@sjbmol.be",o:"Sint-Jan Berchmans (BE)"},
+    {f:"Marjelle",l:"Maljaars",e:"marjelle.maljaars@ou.nl",o:"Open Universiteit"},
+    {f:"Zuzana",l:"van Polen",e:"z.van.polen@hva.nl",o:"HvA"},
+    {f:"Stephan",l:"Okhuijsen",e:"stephan.okhuijsen@surf.nl",o:"SURF"},
+    {f:"Mariette",l:"Poot",e:"mh.poot@avans.nl",o:"Avans"},
+    {f:"Tessa",l:"Jansen",e:"t.h.jansen@rug.nl",o:"RUG"},
+    {f:"Mark",l:"Murkes",e:"m.r.murkes@hhs.nl",o:"De Haagse Hogeschool"}
+  ];
+
+  function msg(name){return `Beste ${name},
+
+Dank je voor je aanmelding voor het webinar van morgen. Helaas moet ik je laten weten dat we het webinar uitstellen.
+
+De reden: het onderzoek waarop het webinar is gebaseerd is nog niet volledig afgerond, en we willen je de complete resultaten laten zien in plaats van een tussenstand. Het webinar wordt hiermee vollediger en informatiever.
+
+We plannen het webinar opnieuw zodra het onderzoek is afgerond. Jij hoort als eerste wanneer de nieuwe datum vaststaat.
+
+Onze excuses voor het ongemak.
+
+Met vriendelijke groet,
+
+Jeroen van Gessel
+Eduface`;}
+
+  const KEY='hss-uitstel-berichten';
+  function load(){try{return JSON.parse(localStorage.getItem(KEY))||{done:{},text:{}}}catch(e){return {done:{},text:{}}}}
+  function save(s){localStorage.setItem(KEY,JSON.stringify(s))}
+  let state=load();
+  const esc=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+
+  const list=document.getElementById('list');
+  PEOPLE.forEach((p,i)=>{
+    const id=p.e;
+    const name=p.flag?'[naam]':p.f;
+    const txt=(state.text[id]!==undefined)?state.text[id]:msg(name);
+    const card=document.createElement('div');
+    card.className='card';
+    card.dataset.id=id;card.dataset.order=i;
+    card.dataset.search=(p.f+' '+p.l+' '+p.o).toLowerCase();
+    card.innerHTML=`
+      <div class="crow">
+        <div class="chk" onclick="tog('${id}')"></div>
+        <div class="who">
+          <div class="nm">${esc(p.f+' '+p.l)}${p.flag?'<span class="warn">naam checken</span>':''}</div>
+          <div class="meta">${esc(p.o)} · ${esc(p.e)}</div>
+          <div class="undo" onclick="tog('${id}')">↩ ongedaan maken</div>
+        </div>
+      </div>
+      <div class="body">
+        <textarea oninput="saveText('${id}',this.value)">${esc(txt)}</textarea>
+        <div class="frow">
+          <button class="cp" onclick="copy('${id}',this)">Kopieer &amp; markeer verstuurd</button>
+          ${p.flag?'<span class="hint">Vul eerst de juiste naam in.</span>':''}
+        </div>
+      </div>`;
+    list.appendChild(card);
+  });
+
+  function cards(){return [...list.querySelectorAll('.card')]}
+  function refresh(){
+    const cs=cards();let done=0;cs.forEach(c=>{if(c.classList.contains('done'))done++});
+    document.getElementById('pcount').textContent=done+' / '+cs.length+' verstuurd';
+    document.getElementById('pbar').style.width=(cs.length?Math.round(done/cs.length*100):0)+'%';
+  }
+  function reorder(){
+    cards().sort((a,b)=>{
+      const da=a.classList.contains('done')?1:0,db=b.classList.contains('done')?1:0;
+      if(da!==db)return da-db;return (+a.dataset.order)-(+b.dataset.order);
+    }).forEach(c=>list.appendChild(c));
+  }
+  function setDone(id,v){
+    const card=list.querySelector(`.card[data-id="${CSS.escape(id)}"]`);
+    card.classList.toggle('done',v);
+    card.querySelector('.chk').textContent=v?'✓':'';
+    state.done[id]=v;save(state);reorder();refresh();
+  }
+  function tog(id){setDone(id,!state.done[id]);}
+  function saveText(id,v){state.text[id]=v;save(state);}
+  function copy(id,btn){
+    const ta=btn.closest('.body').querySelector('textarea');
+    navigator.clipboard.writeText(ta.value).then(()=>{flash();setDone(id,true);});
+  }
+  function filter(q){
+    q=q.trim().toLowerCase();
+    cards().forEach(c=>c.classList.toggle('hide',q&&!c.dataset.search.includes(q)));
+  }
+  function flash(){const t=document.getElementById('toast');t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1400)}
+
+  (function init(){
+    cards().forEach(c=>{if(state.done[c.dataset.id]){c.classList.add('done');c.querySelector('.chk').textContent='✓';}});
+    reorder();refresh();
+    document.querySelectorAll('textarea').forEach(t=>{const fit=()=>{t.style.height='auto';t.style.height=t.scrollHeight+'px'};fit();t.addEventListener('input',fit)});
+  })();
+</script>
+</body>
+</html>

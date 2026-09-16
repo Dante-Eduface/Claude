@@ -1,0 +1,159 @@
+{
+ "slug": "universal-technical-institute",
+ "coach": {
+  "next_action": {
+   "wat": "EB-sessie met Ami Bhandari geboekt + Legal/IT Security-eisen ontvangen",
+   "wanneer": "binnen 2 weken na 2026-09-01",
+   "wie": "Robert Jordan",
+   "waarom": "Zonder de EB is dit een afdelingsaankoop, geen uitrolbesluit. Tegelijk is dit de champion-test."
+  },
+  "prep": {
+   "doel": "Advance: Robert boekt binnen 2 weken een sessie met Ami Bhandari (Division SVP Education, de EB) erbij, en start de Legal/IT Security-route die hij zelf heeft gebouwd. Secundair: aantal instructeurs dat labs nakijkt + programma-scope voor een betaalde deployment van 6 maanden (geen pilot).",
+   "openers": [
+    "Before I share my screen: last time you gave me two lab documents and your answer keys, so what you'll see is your own content, not a canned demo. Ten minutes on that, then a few questions, then five minutes on what a real deployment looks like. Does that work?",
+    "Nikki, Linnea, since we haven't met: what would make this half hour worth it for you?"
+   ],
+   "vragen": [
+    "Last time you said instructors lose two to four hours a day on short-answer grading. How many instructors are we talking about who grade labs this way?",
+    "If that time came back tomorrow, what would it go into? Who would notice, and who tracks instructor time today?",
+    "Nikki: does the feedback actually map to what the objective is testing, or does it just restate the answer key?",
+    "Linnea: where would this break in how you actually build and maintain a course?",
+    "Robert, you built UTI's generative AI framework. What does this have to clear, and how long does that usually take?",
+    "When Atlanta, Houston, Glendale and Salt Lake City open, who absorbs the lab grading there?",
+    "What's your next term start? I want any timeline to land on a term boundary.",
+    "Could we get 45 minutes with your SVP of Education in the next two weeks?"
+   ],
+   "risicos": [
+    "EB Ami Bhandari nog nooit gesproken. Zonder haar is er geen uitrolbesluit, alleen een afdelingsaankoop.",
+    "Build-vs-buy is het echte alternatief: Robert schreef zelf UTI's genAI-framework.",
+    "Geen enemy in beeld. Bij AI+beoordeling is er altijd iemand die vindt dat het de instructeursrol uitholt.",
+    "Klimaat: guidance-cut 5 aug + aandeelhoudersonderzoek. Elke nieuwe uitgave wordt voorzichtiger goedgekeurd dan 2 maanden geleden.",
+    "Bath Spa 94% is op geschreven werk, niet op short-answer labs tegen een answer key. Niet als bewijs voor hun geval presenteren.",
+    "30 minuten met 5 mensen. Alleen ruimte voor bevestigen, laten zien, vastzetten."
+   ],
+   "bezwaren": [
+    "'We kunnen dit zelf bouwen met ons eigen AI-framework' -> onderscheid framework (governance) van model (onderwijskundig getraind, 435 inzendingen/13 nakijkers gemeten).",
+    "'AI mag geen studenten beoordelen' -> het model stelt voor, de instructeur tekent af; niets bereikt student of gradebook zonder goedkeuring.",
+    "'Wat kost het' -> per active student per maand, schaalt met portfolio; geen getal voordat scope en aantallen vaststaan.",
+    "'Laten we een pilot doen' -> nee: betaalde deployment van 6 maanden op een afgebakende set programma's, met vooraf afgesproken meting en een termination clause."
+   ]
+  },
+  "meddpicc": {},
+  "gate": {
+   "fase": "",
+   "open": null,
+   "ontbreekt": []
+  },
+  "stakeholders": [
+   {
+    "naam": "Robert Jordan",
+    "rol": "champion",
+    "titel": "AVP Instructional Design",
+    "gesproken": true,
+    "notitie": "4 mnd in rol. Eigen budget incl. vendor contracts en invoice approval. Schreef UTI's genAI usage framework (governance, Legal/IT Security/Education, audit-ready). Quality Matters gecertificeerd. Denver, remote van Phoenix HQ."
+   },
+   {
+    "naam": "Ami Bhandari",
+    "rol": "eb",
+    "titel": "Division SVP Education",
+    "gesproken": false,
+    "notitie": "Columbia MBA, ex-Booz Allen, 7 jaar strategie Lincoln Tech. Publiceerde over middle-skills workforce shortage. Wil de business case, niet de pedagogiek. Geen corporate officer, dus divisie-niveau."
+   },
+   {
+    "naam": "Nikki Sneddon",
+    "rol": "coach",
+    "titel": "Freelance Instructional Design (ex-Director Education Training & Assessment, 11 jr UTI)",
+    "gesproken": false,
+    "notitie": "Assessment strategy specialist. Bouwde AI Academy bij Moderna met Carnegie Mellon. Geen budget, wel gezag op assessmentkwaliteit."
+   },
+   {
+    "naam": "Linnea Nigro",
+    "rol": "gebruiker",
+    "titel": "Senior Project Manager - Learning",
+    "gesproken": false,
+    "notitie": "5 jr 9 mnd. Runt course development end-to-end. Ex-Pearson, beheerde daar 3-4M/jr aan vendor agreements. Kan vetoen op workflow-frictie."
+   },
+   {
+    "naam": "Sherrell E. Smith",
+    "rol": "eb",
+    "titel": "EVP & Chief Academic Officer",
+    "gesproken": false,
+    "notitie": "Corporate officer per FY2025 10-K. Pas relevant bij instellingsbrede uitrol."
+   }
+  ],
+  "calls": [],
+  "diagnose": "",
+  "laatst_gecoacht": "2026-09-01"
+ },
+ "close": {
+  "lead_id": "lead_iERmDIaqQjAukGdBOUKXU5XYUWLBlP86JcjrqRl4lh6",
+  "naam": "Universal Technical Institute",
+  "url": "https://app.close.com/lead/lead_iERmDIaqQjAukGdBOUKXU5XYUWLBlP86JcjrqRl4lh6/",
+  "lead_status": "Prospect",
+  "opportunity_id": null,
+  "fase": null,
+  "fase_type": null,
+  "waarde": null,
+  "valuta": "EUR",
+  "confidence": null,
+  "close_date": null,
+  "eigenaar": "Eduface CRM",
+  "crm_note": "",
+  "contacten": [
+   {
+    "naam": "Robert Jordan",
+    "titel": "",
+    "email": "rjordan@uti.edu",
+    "id": "cont_mVUalBaOCPUrnfDvGXwerQBilnCSz5SLwJCugJMWUmC"
+   },
+   {
+    "naam": "Linnea Nigro",
+    "titel": "",
+    "email": "lnigro@uti.edu",
+    "id": "cont_smmcDJG0OvZXLcwiOHgpufZsrFSxM3XlDZOaQTJQI5r"
+   }
+  ],
+  "gesprekken": [
+   {
+    "id": "acti_Q1sNElbe12gOyBNTV5qYbQi7cAWIMPGnODzWyBQrXlT",
+    "soort": "meeting",
+    "datum": "2026-08-26",
+    "titel": "Robert Jordan and Dante Torbed",
+    "duur_min": 30,
+    "status": "completed",
+    "deelnemers": [
+     "dante.torbed@eduface.me",
+     "rjordan@uti.edu"
+    ],
+    "samenvatting": "- Identified urgent instructor time-sink: UTI instructors spend 2–4 hours daily manually grading short-answer lab questions due to Blackboard's inflexible auto-grading.\n- Discussed desired solution: Eduface AI integration into Blackboard to provide immediate student feedback and instructor-verified grading using rubrics or answer keys.\n- Learned Eduface capabilities: Custom-trained AI model delivers point-based grading, inline feedback, and confidence scores while protecting student privacy.\n- Agreed on pilot approach: UTI will provide lab examples and rubrics for a Blackboard-integrated demo before considering full-scale rollout across 20,000 students.\n- Scheduled follow-up demo: Tuesday, 1st at 4pm Netherlands time to review Blackboard integration with sample assignments.\n\n### Company Background and Product Development\n- Dante Torbed is the first employee of Eduface, a company based in the Netherlands founded three and a half years ago.\n- The company was founded to address inconsistent and insufficient feedback from instructors to students due to time constraints.\n- Eduface initially attempted using ChatGPT for feedback generation but found it inconsistent in grading and feedback quality.\n- The company developed its own AI model trained on academic data with universities in the Netherlands and the United Kingdom.\n- The proprietary model ensures persistent, clear, and directional feedback specifically optimized for educational contexts.\n\n### Universal Technical Institute's Current Challenge\n- UTI instructors spend two to four hours daily on manual grading of short-answer questions in lab documents.\n- Current Blackboard short-answer automatic grading systems fail if student responses are not 100 percent character-perfect.\n- Students currently upload fillable PDF lab documents to Blackboard and receive minimal written feedback.\n- The challenge was prompted by a program manager teaching a course for the first time who underestimated grading workload.\n- UTI serves approximately 20,000 students across 16 programs, with all courses containing hands-on digital labs.\n\n### Desired Solution and Implementation Goals\n- Robert Jordan requested integration directly into Blackboard Ultra, UTI's current learning management system.\n- The solution should accept rubrics or documents as a knowledge base for grading and feedback generation.\n- UTI seeks both formative feedback (immediate student feedback on uploads) and summative feedback (instructor review and adjustment).\n- Ideal implementation includes confidence scores indicating AI certainty about grading judgments.\n- The AI should provide feedback within lab documents and generate grading assessments based on point-based scoring systems.\n\n### Eduface Product Capabilities and Features\n- Eduface provides three types of feedback options: general feedback, pair rubric creation for teachers, and inline assignment comments.\n- The platform supports point-based grading and can accept rubrics, answer keys, or contextual documents for model training.\n- Eduface integrates with Blackboard and can access approved documents without exposing private information using only student IDs.\n- The model works with higher education students at diploma and degree-granting levels, with course durations ranging from nine to eighteen months.\n- Dante demonstrated the product showing assignment feedback, rubric-based grading options, and the ability to modify rubric criteria.\n\n### Decision-Making Process and Stakeholders\n- Robert Jordan's senior vice president of education must weigh in on the implementation decision.\n- UTI's legal and IT teams must review the product for security and integration compliance before implementation.\n- If the pilot proves successful, UTI plans full-scale implementation across all programs and students.\n- A pilot program with multiple courses across different campuses is planned before considering organization-wide deployment.\n- A larger stakeholder demo will be scheduled if leadership is satisfied with initial results.\n\n### Next Steps and Follow-up Demo\n- **Dante will create a Blackboard-specific demo showing the product integrated directly into UTI's learning management system.**\n- UTI will provide two lab examples: one with elaborate open-ended answers and one with short answers for testing.\n- Robert Jordan will supply rubrics and answer keys as reference materials for the AI model configuration.\n- A follow-up meeting is scheduled for Tuesday, the 1st, at 4pm Netherlands time to review the Blackboard integration demo.\n- Robert Jordan will send a calendar invite to Dante with meeting details and confirm receipt of materials from UTI.",
+    "eigen_notitie": "",
+    "transcript_beschikbaar": false,
+    "komend": false
+   },
+   {
+    "id": "acti_DYzfiynVIclaARFi19wPJ8UvxuIKA4Js4SIT0UlGp2b",
+    "soort": "meeting",
+    "datum": "2026-09-01",
+    "titel": "Follow Up Demo for UTI",
+    "duur_min": 30,
+    "status": "upcoming",
+    "deelnemers": [
+     "dante.torbed@eduface.me",
+     "jeroen.van.gessel@eduface.me",
+     "lnigro@uti.edu",
+     "nsneddon@uti.edu",
+     "rjordan@uti.edu"
+    ],
+    "samenvatting": null,
+    "eigen_notitie": "",
+    "transcript_beschikbaar": false,
+    "komend": true
+   }
+  ],
+  "open_taken": [],
+  "laatste_gesprek": "2026-08-26",
+  "volgende_afspraak": "2026-09-01",
+  "aantal_gehad": 1,
+  "gesynct": "2026-08-29 13:35"
+ }
+}

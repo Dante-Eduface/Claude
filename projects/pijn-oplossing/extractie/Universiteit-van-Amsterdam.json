@@ -1,0 +1,36 @@
+[
+  {
+    "id": "Universiteit-van-Amsterdam-1",
+    "org": "Universiteit van Amsterdam",
+    "lead_id": "lead_rgY8muw143JHQLGb0TexcRBkRSSywVWOBBE3LQDDCR8",
+    "close_url": "https://app.close.com/lead/lead_rgY8muw143JHQLGb0TexcRBkRSSywVWOBBE3LQDDCR8/",
+    "persoon": null,
+    "functie": null,
+    "datum": "2026-03-31",
+    "bron_type": "note",
+    "bron_id": "acti_ANyXxFelMLWD22NwPlAazW4yeXV9FNtDRyUrRSUrUBh",
+    "segment": "nl-ho",
+    "thema": "ai-beleid",
+    "type": "bezwaar",
+    "citaat": "Luke strongly advises against using AI for summative grading, a practice that is also not allowed under current UvA AI policy.",
+    "samenvatting": "UvA-beleid verbiedt summatief beoordelen met AI.",
+    "zekerheid": "letterlijk"
+  },
+  {
+    "id": "Universiteit-van-Amsterdam-2",
+    "org": "Universiteit van Amsterdam",
+    "lead_id": "lead_rgY8muw143JHQLGb0TexcRBkRSSywVWOBBE3LQDDCR8",
+    "close_url": "https://app.close.com/lead/lead_rgY8muw143JHQLGb0TexcRBkRSSywVWOBBE3LQDDCR8/",
+    "persoon": "Peter Rijpkema",
+    "functie": null,
+    "datum": "2026-07-11",
+    "bron_type": "email",
+    "bron_id": "acti_xGxVktdXGNj42GjTdXG9fYPdNpsf5UeHe4SLUVoi3gX",
+    "segment": "nl-ho",
+    "thema": "besluitvorming",
+    "type": "bezwaar",
+    "citaat": "Het ziet er op dit moment niet naar uit dat ik binnenkort met een voor jullie relevant project aan de slag ga.",
+    "samenvatting": "Geen lopend project om bij aan te haken, route ligt stil.",
+    "zekerheid": "letterlijk"
+  }
+]

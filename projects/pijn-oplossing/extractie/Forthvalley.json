@@ -1,0 +1,36 @@
+[
+  {
+    "id": "Forthvalley-1",
+    "org": "Forthvalley",
+    "lead_id": "lead_NR1N2A0tin2UqFOZsXVCebD685YUw0xWh2TkVyip6zh",
+    "close_url": "https://app.close.com/lead/lead_NR1N2A0tin2UqFOZsXVCebD685YUw0xWh2TkVyip6zh/",
+    "persoon": "Darren Payne",
+    "functie": null,
+    "datum": "2026-04-16",
+    "bron_type": "note",
+    "bron_id": "acti_9ZVB69OkoRW18adFSQkJjlQjqVGAuk0oj0TIVNaYDPN",
+    "segment": "uk-he",
+    "thema": "docentacceptatie",
+    "type": "bezwaar",
+    "citaat": "We have heard all the positive aspects of the system - what are the top three weaknesses of the system that staff, education establishements overall and IT teams need to be aware of",
+    "samenvatting": "Wil expliciet de zwaktes horen voor staf en IT, niet alleen het positieve verhaal.",
+    "zekerheid": "letterlijk"
+  },
+  {
+    "id": "Forthvalley-2",
+    "org": "Forthvalley",
+    "lead_id": "lead_NR1N2A0tin2UqFOZsXVCebD685YUw0xWh2TkVyip6zh",
+    "close_url": "https://app.close.com/lead/lead_NR1N2A0tin2UqFOZsXVCebD685YUw0xWh2TkVyip6zh/",
+    "persoon": "Darren Payne",
+    "functie": null,
+    "datum": "2026-04-16",
+    "bron_type": "note",
+    "bron_id": "acti_9ZVB69OkoRW18adFSQkJjlQjqVGAuk0oj0TIVNaYDPN",
+    "segment": "uk-he",
+    "thema": "ai-gebruik-studenten",
+    "type": "bezwaar",
+    "citaat": "I may have missed this but does Eduface replace the need for academic integrity tools ?",
+    "samenvatting": "Vraagt of Eduface hun academic integrity tools vervangt of ernaast komt.",
+    "zekerheid": "letterlijk"
+  }
+]

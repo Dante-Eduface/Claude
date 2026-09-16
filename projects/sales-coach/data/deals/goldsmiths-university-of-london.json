@@ -1,0 +1,124 @@
+{
+  "slug": "goldsmiths-university-of-london",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_jzWkdkF23SUSKcR3dtJwNXzypLDcPHGD6gPkjklxs4f",
+    "naam": "GoldSmiths - University of London",
+    "url": "https://app.close.com/lead/lead_jzWkdkF23SUSKcR3dtJwNXzypLDcPHGD6gPkjklxs4f/",
+    "lead_status": "Actief",
+    "opportunity_id": null,
+    "fase": null,
+    "fase_type": null,
+    "waarde": null,
+    "valuta": "EUR",
+    "confidence": null,
+    "close_date": null,
+    "eigenaar": "Eduface CRM",
+    "crm_note": "",
+    "contacten": [
+      {
+        "naam": "Rob Hart",
+        "titel": "Digital education and innovation manager",
+        "email": "r.hart@gold.ac.uk",
+        "id": "cont_eNUMapWuwUkbxlR0eyFkr0XaCIAnswpHD3HAaZyAh37"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_bdlURSFiw1CHaKxKhKRrPhlIN247reV0gmHFqbI2d6y",
+        "soort": "meeting",
+        "datum": "2026-04-23",
+        "titel": "Re: Eduface users at Goldsmiths",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "r.hart@gold.ac.uk"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_wJ6A1eJNWkuhZvMBynObVZLlZXmY9m2qD5PVtf4cEhw",
+        "soort": "call",
+        "datum": "2026-05-11",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Gesproken en morgen bellen",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_8D77t4irLWkWT5JS9MCs25Hooc8uK9FQMFavte2fyVF",
+        "soort": "meeting",
+        "datum": "2026-05-14",
+        "titel": "Goldsmiths x Eduface",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "r.hart@gold.ac.uk"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_etiMfZbTJpT1DnSNY8b37CUSKuSP1IpBwfr1gx6jhl9",
+        "soort": "meeting",
+        "datum": "2026-09-15",
+        "titel": "Update call Goldsmiths x Eduface",
+        "duur_min": 60,
+        "status": "upcoming",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "r.hart@gold.ac.uk"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": true
+      }
+    ],
+    "open_taken": [
+      {
+        "tekst": "Meeting with Rob",
+        "datum": "2026-09-14"
+      }
+    ],
+    "laatste_gesprek": "2026-05-14",
+    "volgende_afspraak": "2026-09-15",
+    "aantal_gehad": 3,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

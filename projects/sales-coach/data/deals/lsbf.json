@@ -1,0 +1,80 @@
+{
+  "slug": "lsbf",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_gvOeb5Wpce3DaBX1mxdVwuL1MlTsaCSy79hOLgprH9f",
+    "naam": "LSBF",
+    "url": "https://app.close.com/lead/lead_gvOeb5Wpce3DaBX1mxdVwuL1MlTsaCSy79hOLgprH9f/",
+    "lead_status": "Prospect",
+    "opportunity_id": null,
+    "fase": null,
+    "fase_type": null,
+    "waarde": null,
+    "valuta": "EUR",
+    "confidence": null,
+    "close_date": null,
+    "eigenaar": "Eduface CRM",
+    "crm_note": "",
+    "contacten": [
+      {
+        "naam": "Karina Kizhner",
+        "titel": "Managing Director and Vice Rector",
+        "email": null,
+        "id": "cont_sC2PrsnE8mqcFhiMyU8EWvIOsDiLdknv24xwPR0Du8n"
+      },
+      {
+        "naam": "Dr. Shahnaz Hamid LSBF",
+        "titel": null,
+        "email": "shahnaz.hamid@lsbf.org.uk",
+        "id": "cont_LO6NAFGKK2gtzXg128f2D2YxaWKNVMEFQhPUaeUMKOs"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_TruABEVdD59IcXQsKTfFRYw0nTAgr4MSlbuy9S4gHoa",
+        "soort": "meeting",
+        "datum": "2026-08-19",
+        "titel": "Introduction meeting LSBF - Eduface",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "shahnaz.hamid@lsbf.org.uk"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      }
+    ],
+    "open_taken": [],
+    "laatste_gesprek": "2026-08-19",
+    "volgende_afspraak": null,
+    "aantal_gehad": 1,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

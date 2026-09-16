@@ -1,0 +1,107 @@
+{
+  "slug": "cms-vocational-training",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_QB4W3lBe5HxU9A37akXfhMH64ysjB7eskLTuqBg3b60",
+    "naam": "CMS Vocational Training",
+    "url": "https://app.close.com/lead/lead_QB4W3lBe5HxU9A37akXfhMH64ysjB7eskLTuqBg3b60/",
+    "lead_status": "Actief",
+    "opportunity_id": "oppo_6fcJYH4BlIhCJ21AJ5ap7QauIQHSDTYvzmTEUVpm82U",
+    "fase": "Lost",
+    "fase_type": "lost",
+    "waarde": 3000,
+    "valuta": "EUR",
+    "confidence": 0,
+    "close_date": null,
+    "eigenaar": "Eduface CRM",
+    "crm_note": "**Status:** Verloren op alternatief: de klant heeft zelf een werkend proces\ngebouwd met een eigen GPT in ChatGPT en zag geen reden om met Eduface door te\ngaan.\n\n**Wat er gebeurde:** Voorgesteld was een POV met een offerte voor een licentie\nvoor een trialperiode vanaf januari, met succescriteria rond feedbackkwaliteit\nen tijdwinst. De klant heeft die criteria zelf aangescherpt naar Ofsted- en\nEPA-toetsbaarheid en heeft daarna zelf een GPT gebouwd die goed genoeg werkte.\nOp 15 april is het project door hen geparkeerd, met de toevoeging dat ze wel\nopen staan voor verder testen als het product doorontwikkelt. De blokkade die\nze noemden was het ontbreken van het uploaden van context- en\nreferentiedocumenten, nodig om dit bedrijfsbreed uit te rollen.\n\n**Next action:** Route terug is de featurekant: er is toegezegd een meeting in te plannen zodra er een goed visueel overzicht is van wat er nu gebouwd wordt (uitsluiten van specifieke woorden, nieuwe rubric-interface, meer controle over de output). De klant heeft zijn agenda al gedeeld | Dante | <datum onbekend> | Midden\n\n**Risk:** Als de context-file functionaliteit er niet is, komt dezelfde\nafwijzing terug. Het gesprek loopt nu op feedback geven op features, niet op\nkoopintentie, en er is geen economic buyer of budget in beeld. Van de drie\nmeetings op deze account is geen inhoud vastgelegd.\n\n**Action required:** Dante bevestigt of de context-file functionaliteit er is\nvoordat de meeting wordt ingepland, anders is het gesprek zinloos. Jeroen\nbeslist of dit met een aangepaste scope terug de pipeline in mag.",
+    "contacten": [
+      {
+        "naam": "Gareth Luke",
+        "titel": null,
+        "email": "gareth.luke@cmsvoc.co.uk",
+        "id": "cont_un4DMC3UKBNnTTAOYhKgO9eR3xVuXYtbV5yRxxEyOrG"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_1gyqJDcogCMUaF9nrvle2rc6TmbmUQkCcAu6zYVHNg1",
+        "soort": "meeting",
+        "datum": "2026-01-12",
+        "titel": "45 min met Dante (Gareth Luke)",
+        "duur_min": 45,
+        "status": "completed",
+        "deelnemers": [
+          "dante.torbed@eduface.me",
+          "gareth.a.luke@gmail.com",
+          "gareth.luke@cmsvoc.co.uk"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_GZAlpjNXkyKo43m1bkoVOkY7YcZRkrZhWmRDu7xQXkp",
+        "soort": "meeting",
+        "datum": "2026-01-27",
+        "titel": "45 min met Dante (Gareth Luke)",
+        "duur_min": 45,
+        "status": "completed",
+        "deelnemers": [
+          "dante.torbed@eduface.me",
+          "gareth.luke@cmsvoc.co.uk"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_UxXSeOsEgylsDdEseFw4JcqYhjSIMHXXMJeAXotGAV8",
+        "soort": "meeting",
+        "datum": "2026-02-19",
+        "titel": "Canceled: CMS Eduface Review Meeting",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "dante.torbed@eduface.me",
+          "gareth.luke@cmsvoc.co.uk"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      }
+    ],
+    "open_taken": [],
+    "laatste_gesprek": "2026-02-19",
+    "volgende_afspraak": null,
+    "aantal_gehad": 3,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "slug": "cmi-communications-management-institute-ie",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_QEs8R48JUMTBSb26k7wLoTqUPrxR2Ysxcu0zRuQY07Y",
+    "naam": "CMI - Communications & Management Institute (IE)",
+    "url": "https://app.close.com/lead/lead_QEs8R48JUMTBSb26k7wLoTqUPrxR2Ysxcu0zRuQY07Y/",
+    "lead_status": "Interested",
+    "opportunity_id": "oppo_4JBdh119rlNURh18l63YYBwMTivVRh3Oe1qR6ctOleI",
+    "fase": "Discovery",
+    "fase_type": "active",
+    "waarde": 10000,
+    "valuta": "EUR",
+    "confidence": 10,
+    "close_date": "2026-10-31",
+    "eigenaar": "Eduface CRM",
+    "crm_note": "Inbound, ongekwalificeerd. Discovery staat vr 24 juli 15:30.  \n  \nICP: segment 2, bedrijfsopleiders en particuliere instellingen. Laagste sales\ncomplexity van alle segmenten, directie beslist zelf, geen\naanbestedingsplicht. Indicatieve bandbreedte 10K-40K per jaar. Zelfde segment\nals ICM en Capabel.  \n  \nNODIG: aantal assignments per jaar en het uitvalpercentage. Dat zijn de twee\ncijfers waar de deal op hangt.  \n  \nVERLOOP: John O'Toole boekte 20 juli zelf een Eduface intro via Calendly. Geen\nintakevragen ingevuld, geen mailwisseling, geen campagnespoor. Trigger\nonbekend.  \n  \nUSE CASE: formatieve feedback op opdrachten, in dienst van doorstroom.\nLearners betalen 550-4.950 euro uit eigen zak en studeren 's avonds naast een\nbaan. CMI's belofte is dat 80% daarna promotie of een nieuwe baan heeft, en\ndie belofte breekt bij elke afhaker. Hun eigen beleid zegt al dat assessors\n\"usually\" formatieve feedback op concepten geven, dat \"usually\" is het gat.\nScherpste variant: een OTHM level 6 learner doet 7 units over 11 maanden bij\nwisselende assessors, en niemand ziet of hij feedback uit unit 2 heeft\nopgepakt in unit 5.  \nSecundair: cijferconsistentie bij meerdere nakijkers. Dat is de compliance-wig\nvoor Thomas Mallon, QQI en OTHM. Tweede stap, niet de opening.  \nKort: John koopt op doorstroom en kosten, Thomas koopt op verdedigbaarheid.  \n  \nGATEN:  \n\\- Waarde is de onderkant van de ICP-band. Herzien na discovery op assignment-\nvolume en uitval.  \n\\- Landmijn: hun Academic Integrity Guide (jan 2025) noemt AI-gebruik\nmalpractice, met Turnitin-detectie en een 25%-drempel. AI-bij-de-learner\nexpliciet scheiden van AI-bij-de-assessor.  \n\\- Governance: QQI legde in 2021 op dat de Results Approval Panel\nonafhankelijk van de commerciele kant over assessment beslist. John is\neigenaar maar beslist dit formeel niet alleen. Dus iets complexer dan het\nsegmentgemiddelde. Thomas Mallon niet overslaan.  \n\\- Non-universiteit en niet-UK, dus buiten de #1 prioriteit. Wel een testcase\nvoor een segment dat we sowieso bewerken (UK-namen daar: BPP, Kaplan, QA\nHigher Education, Pearson College London).",
+    "contacten": [
+      {
+        "naam": "John O'Toole",
+        "titel": "Founder & Managing Director",
+        "email": "john@cmi-ireland.com",
+        "id": "cont_Sbs6X6moQJbjCOotUA1qmttXbJ2swEhYe5xorQXC2hk"
+      },
+      {
+        "naam": "Thomas Mallon",
+        "titel": "Academic Director (eigenaar QA & verificatie)",
+        "email": null,
+        "id": "cont_aW3YPI105FWtjQpvdlGuATmuz9iBiZiwneak7OVQKYq"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_wmNCCQLN71AaObzUAWr7lSGCuzXfIN08BsxJBEMD3XB",
+        "soort": "meeting",
+        "datum": "2026-07-24",
+        "titel": "John O'Toole and Dante Torbed",
+        "duur_min": 45,
+        "status": "completed",
+        "deelnemers": [
+          "dante.torbed@eduface.me",
+          "john@cmi-ireland.com"
+        ],
+        "samenvatting": "- Discussed CMI's current manual assessment process correcting 1,000 assignments yearly, which is time-intensive and requires consistent feedback across 20+ teachers.\n- Reviewed CMI's recent disappointing trial with another AI provider that generated only 20% usable feedback and created additional assessor workload.\n- Presented Eduface's custom academic AI model trained with universities, achieving 89% grading consistency across teachers at Bergstra University.\n- Established CMI requirements for AI feedback: structured format identifying strengths/weaknesses, mandatory versus optional improvements, and clear rubric alignment.\n- Scheduled initial testing for August 4th with goal of implementation by November when new students begin assignments.\n\n### Introduction and Company Background\n- John O'Toole is the managing director of CMI (Communications Management Institute), an education institute based in Dublin, Ireland.\n- CMI operates online classes with approximately 400 students per year and 20 teaching staff members.\n- The institute uses assessment-based courses rather than exams, with students submitting draft and final assignments.\n- Eduface is a Dutch company with pilot manager Dante Torbed, founded with Leiden University and Radboud University approximately three and a half years ago.\n- Eduface is integrated with Moodle and has developed its own academic AI model rather than using general-purpose LLMs.\n\n### Current Assessment Process and Pain Points\n- CMI currently uses Moodle for manual assessment with teachers providing feedback on draft and final submissions.\n- Assignments contain 17-25 questions with up to 5,000-6,000 words total, requiring lecturers to spend multiple days correcting each batch.\n- Teachers manually grade using Moodle rubric templates, marking whether students have achieved, passed, or not yet achieved learning objectives.\n- The institute corrects approximately 1,000 assignments per year across approximately 200 students.\n- Manual assessment is time-consuming and requires consistent feedback quality across 20+ teaching staff members.\n\n### Previous AI Testing Experience\n- CMI recently tested another AI solution that generated approximately 80% unsuitable feedback requiring significant human editing.\n- **The tested AI model summarized answers excessively, used direct quotations without explanation, and had inconsistent recommendations.**\n- **Key issues included failing to identify assessment gaps, not understanding command words, missing academic weaknesses, and inconsistently applying the assessment rubric.**\n- **The AI frequently indicated passes where human assessors identified significant deficiencies, creating conflicting outcomes.**\n- Only approximately 20% of the AI feedback was genuinely useful, often requiring extensive human intervention and quality checking before issuing to learners.\n\n### Requirements for Effective AI Assessment Feedback\n- CMI expects feedback structured like a hamburger: introductory sentence restating requirements, main section identifying strengths and weaknesses, and conclusion stating pass status with justification.\n- Feedback should distinguish between mandatory changes and optional enhancements for student improvement.\n- The model must provide individual feedback per question and overall summary feedback without excessive quotations or summaries.\n- Feedback must clearly align with the assessment rubric and demonstrate how grading decisions are reached.\n- CMI emphasizes that AI effectiveness directly impacts assessor workload—99% accuracy reduces correction time, while 50% accuracy actually increases assessor work and costs.\n\n### Eduface Solution and Demo\n- Eduface built a custom academic AI model trained with Leiden University and Radboud University specifically for formative feedback on writing assignments.\n- The platform provides feedback per rubric criterion based on teacher-uploaded grading schemes and assessment briefs.\n- Teachers can add quick comments and highlight specific parts of assignments for additional feedback.\n- The solution evaluates assignments against up to seven criteria ranging from fail to very good ratings.\n- Processed assignments can be marked complete and instantly sent to students once the teacher has reviewed the AI feedback.\n\n### Partner Experience and Consistency Results\n- Eduface currently serves eight institutional partners, including Bergstra University with 30,000 students.\n- At Bergstra University, the pilot showed 89% consistency in grading across teachers using the same tool.\n- The tool normalizes feedback language and tone across lecturers, which some teachers viewed as constraining their individual voice.\n- Initial setup requires significant time investment to provide the AI model with complete information including assessment briefs and correction guidance.\n- The most important benefit reported by partners is improved consistency in feedback quality across all teachers.\n\n### Testing and Implementation Timeline\n- Eduface offers one to two weeks of testing with one or two courses to evaluate the tool's effectiveness.\n- A 5,000-word assignment typically takes 5-10 minutes for the AI to process and generate feedback.\n- CMI can test the solution before August 14th when John O'Toole goes on holidays.\n- CMI's academic year begins end of September/October, making early November the earliest realistic start date for full implementation.\n- Setup will involve initial installation, course selection, optimization, and a follow-up meeting to discuss pricing and findings.\n\n### Company Information and Pricing\n- Eduface is a startup founded by two founders—one with AI expertise and one with legal and commercial background.\n- Dante Torbed is the first employee and pilot manager, working with a team of four developers and the commercial founder.\n- Website pricing of €25 per month for 200 assignments applies only to individual teachers, not institutions.\n- Eduface focuses on institutional partnerships to embed the tool across entire teacher groups for consistent feedback standards.\n- Institutional pricing will be provided during the testing phase for evaluation alongside the tool's performance.\n\n### Next Steps and Follow-up Meeting\n- A follow-up meeting was scheduled for Tuesday, August 4th at 12:00 PM Eduface time (11:00 AM Irish time) to set up the testing environment.\n- Dante will send information about the meeting agenda and provide contact for coordination before the test setup.\n- CMI will prepare Moodle configuration and provide assessment briefs, rubrics, and correction guidance to optimize the AI model.\n- Testing will involve processing actual CMI assignments to evaluate feedback quality and consistency before institutional rollout.\n- Implementation decision will depend on the AI solution achieving 95-99% accuracy and effectiveness to justify adoption across 20+ teaching staff.",
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_tbYn2IijyXzxQLygzlNF8SOrOCa5pJczDPcg4Kp1Xtj",
+        "soort": "meeting",
+        "datum": "2026-08-04",
+        "titel": "Eduface × CMI – getting started",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "dante.torbed@eduface.me",
+          "john@cmi-ireland.com"
+        ],
+        "samenvatting": "- Discussed CMI's current manual assessment process and requirement for AI-powered feedback to save lecturer time without creating additional work.\n- Established that accuracy must be in the high 80s with minimal editing needed to be viable; grammar and spelling already covered by Copyleaks.\n- Agreed on a two-phase testing approach: Phase 1 uses standalone platform with three test assignments and human comparison; Phase 2 integrates into Moodle.\n- Configured Eduface platform demo showing rubric setup, assignment upload, and feedback download capabilities for CMI collaboration.\n- Scheduled next steps with John O'Toole to receive account access and begin uploading rubric, grading scheme, and test assignments immediately.\n\n### Current Assessment Process and Tool Requirements\n- CMI currently has a manual assessment process with draft and final submissions, plus formative feedback in Moodle that assessors correct by hand.\n- Previous assessment tools tried by CMI focused mainly on summarizing rather than addressing specific assignment issues.\n- CMI uses a grading system with pass and refer (not yet achieved), allowing students to resubmit after receiving feedback.\n- The ideal workflow involves students submitting assignments, AI providing feedback, and lecturers reviewing for minimal adjustments.\n\n### Accuracy and Performance Expectations\n- CMI requires accuracy in the late 80s percentage range with only minor editing needed (10-15% editing maximum) to be viable.\n- Eduface cannot guarantee 99% accuracy due to tone of voice variations, but aims to provide a solid head start saving lecturer time.\n- Eduface measures accuracy based on edits made by assessors; any change, including tone adjustments, counts as an edit.\n- An example from Basel University achieved 89% accuracy, meaning only one or two lecturers out of five changed the feedback.\n- If editing requirements exceed 15%, the tool becomes counterproductive and creates double work for teachers.\n\n### Key Tool Evaluation Criteria\n- Accuracy level is the most critical factor for CMI when evaluating assessment tools.\n- Seamless Moodle integration is essential, allowing the tool to work in the background without additional user effort.\n- User friendliness and simplicity are important; teachers should be able to upload assignments and receive feedback without extra steps.\n- Academic referencing and citations are repetitive tasks that the tool should handle effectively.\n- Grammar and spelling feedback is already provided through Copyleaks reports, so Eduface should not duplicate this functionality.\n\n### Testing Plan and Methodology\n- CMI will provide three to four assignments for the test period to create a snapshot of quality and consistency.\n- Testing will compare Eduface AI feedback against human corrections made by CMI staff using their rubric and learner guidance.\n- CMI will send the rubric, marking sheet, and sample answers to provide context for the AI model.\n- The initial test phase will use Word documents or a standalone Eduface page rather than Moodle integration.\n- After initial accuracy testing succeeds, the second phase will focus on integrating the tool into Moodle.\n\n### Collaboration and Model Customization\n- Eduface will create a shared account for John O'Toole to upload assignments and collaborate on model improvement.\n- CMI will provide feedback on initial reports, allowing Eduface to adjust instructions and improve the AI model output.\n- Eduface uses its own proprietary AI model, not OpenAI, so customization depends heavily on proper instruction feeding.\n- The tool allows adding criteria items and success criteria lists to guide the AI model's feedback generation.\n- Repeated criteria across headings can help prevent the model from missing important points like Harvard-style referencing.\n\n### Platform Demo and Functionality\n- Eduface's platform allows users to create courses, assignments, and upload rubrics with specific assessment criteria.\n- The rubric interface displays criteria with detailed guidelines underneath; the look and feel will be updated soon.\n- Users can upload submissions individually or in bulk; in Moodle integration, submissions sync automatically.\n- The formative feedback is visible in the platform and can be downloaded for comparison with human grading.\n- After rubric setup and assignment uploads, users can download files and feedback for analysis.\n\n### Next Steps and Timeline\n- John O'Toole will receive login credentials for the shared Eduface account to begin uploading assignments immediately.\n- CMI will start by uploading the rubric, grading scheme, and three assignments as the initial simple step.\n- Eduface will provide feedback reports on the three test assignments for CMI to compare against human corrections.\n- CMI will return human-corrected marking sheets after a couple of days for Eduface to use in comparison analysis.\n- John O'Toole indicated limited availability until late August due to workload and vacation, but agreed to move forward with the testing process.",
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      }
+    ],
+    "open_taken": [],
+    "laatste_gesprek": "2026-08-04",
+    "volgende_afspraak": null,
+    "aantal_gehad": 2,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

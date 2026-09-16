@@ -1,0 +1,386 @@
+{
+  "slug": "haagse-hogeschool",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_waimXLhF6CqX6wqedhNAK5pJd2ExAENHQv9l88s4BvD",
+    "naam": "Haagse Hogeschool",
+    "url": "https://app.close.com/lead/lead_waimXLhF6CqX6wqedhNAK5pJd2ExAENHQv9l88s4BvD/",
+    "lead_status": "Actief",
+    "opportunity_id": "oppo_6H8p5PISKtw3kfIn3xPmVoa51tSFFkNhBXVjwKAeNYl",
+    "fase": "Contracting",
+    "fase_type": "active",
+    "waarde": 30000,
+    "valuta": "EUR",
+    "confidence": 65,
+    "close_date": "2026-11-21",
+    "eigenaar": "Eduface CRM",
+    "crm_note": "**Status:** Docenten en beide opleidingsmanagers willen door, maar\nfaculteitsdirecteur Willem moet tekenen en de toolroute is de blokkade.\n\n**Wat er gebeurde:** Theo Bakker heeft aan Piet laten weten dat hij de\nsamenwerking wil voortzetten en uitbreiden naar een integratie in Brightspace.\nHet lectoraat stapt alleen in voor onderzoek, dus het besluit moet uit de\nopleiding en van faculteitsdirecteur Willem komen, die dit vanuit business-\nperspectief beslist. Piet en Mario hebben Maartje gevraagd de uitrol te leiden\nals het zover komt, naar de opleiding of de hele faculteit. Business case en\nimplementatieplan liggen bij Piet en Mario.\n\n**Next action:** Piet bellen over hoe een uitrol er in het aankomende studiejaar uitziet, Maartje heeft hiervoor groen licht gegeven. Deze week is de laatste werkweek van Piet en Mario voor de zomer | Dante | 20 jul | Hoog\n\n**Next action:** Willem aan tafel krijgen voor het uitrolbesluit | Jeroen | <datum onbekend> | Hoog\n\n**Risk:** Piet durft de toolroute niet in omdat er net een dure AI-chat is\naangeschaft en hij bang is voor een definitieve nee. De omweg via het\nlectoraat is afgesloten, dus er is nu geen alternatieve route naar\ngoedkeuring.\n\n**Action required:** Maartje moet de ingang bij Willem regelen. Zonder een\ngesprek met de faculteitsdirecteur blijft dit hangen op enthousiaste\ngebruikers zonder besluitvormer.",
+    "contacten": [
+      {
+        "naam": "Maartje Sijm",
+        "titel": null,
+        "email": "m.g.c.sijm@hhs.nl",
+        "id": "cont_G4o6p8qShXvpE24989fPvjKk8flBjvHuvrhPoKR3wGG"
+      },
+      {
+        "naam": "Boudewijn Wisse",
+        "titel": null,
+        "email": "b.m.wisse@hhs.nl",
+        "id": "cont_QEWgMOHPWgVj85UJJ3Q7RXjL3pCVfBd27t4p4ngSpdk"
+      },
+      {
+        "naam": "Dennis Mulder",
+        "titel": null,
+        "email": "d.mulder@hhs.nl",
+        "id": "cont_C6SqSb9LzWdB3x5GP7cbtzA7k2E0QVamkteSFAQS8Zj"
+      },
+      {
+        "naam": "Piet Willems",
+        "titel": null,
+        "email": "p.willems@hhs.nl",
+        "id": "cont_Iou4EvyrnZ2R5kjPQL0MW57olH3EU0MExNzNzDciY81"
+      },
+      {
+        "naam": "Willem van Nieuwkerk",
+        "titel": null,
+        "email": "w.e.vannieuwkerk@hhs.nl",
+        "id": "cont_F8qwwAU1d6jsm6rjXXjY9Enehm6aVrtfTi7akdHLKiT"
+      },
+      {
+        "naam": "Renate Hoogduin - Eilander",
+        "titel": null,
+        "email": "r.m.hoogduin@hhs.nl",
+        "id": "cont_ntCnEi2rCiWcANKAmFWBorfRnS0iDPjhK08wKzJLvbo"
+      },
+      {
+        "naam": "Mario Flips",
+        "titel": null,
+        "email": "m.j.g.w.flips@hhs.nl",
+        "id": "cont_PSLP86JnTXBP0B3GHdYSyKNIY3NHmNVBTmoPoO19pJD"
+      },
+      {
+        "naam": "Leonoor Haan",
+        "titel": null,
+        "email": "l.j.r.j.haan@hhs.nl",
+        "id": "cont_sT9s0EmtKGnwYR2QRIsQeVFCRJXntk5umEJInLNxdoQ"
+      },
+      {
+        "naam": "Marco van der Land",
+        "titel": null,
+        "email": "m.vanderland@hhs.nl",
+        "id": "cont_L0SiFIoh0zHBWWCAt14BFbixDNLWe4cSV76I9VdRWhI"
+      },
+      {
+        "naam": "Maartje de Groot",
+        "titel": "Teamleider",
+        "email": "m.h.degroot@hhs.nl",
+        "id": "cont_dm5SL8MRSjrNmZqVwMt5ZIOMiGCw4X0uXEGmdoaBWtE"
+      },
+      {
+        "naam": "Willem Meijs",
+        "titel": null,
+        "email": "w.c.j.vandermeijs@hhs.nl",
+        "id": "cont_Eze54xpRXrS2uGIDquRxgougB1Ohcds8joGnpLMbcQ6"
+      },
+      {
+        "naam": "Wendy Troost",
+        "titel": null,
+        "email": "wtroost@hhs.nl",
+        "id": "cont_REQgNX98930KuPWxbZ3myxXaXb7qjUO5dsJ7VM8Tm4W"
+      },
+      {
+        "naam": "Mark Murkes",
+        "titel": "Docent & ontwikkelaar e-commerce/online marketing",
+        "email": "m.r.murkes@hhs.nl",
+        "id": "cont_5M2Nv8raAH57r3oZwT92WiNR1SBTkBDJ7P7K7sv02sn"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_VdkVyMlB4fYcvORkhrRNpe5I4d6FUI63HKdHDc1ByBX",
+        "soort": "meeting",
+        "datum": "2025-11-21",
+        "titel": "overleg eduface",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "m.g.c.sijm@hhs.nl",
+          "p.willems@hhs.nl",
+          "rz3.52@hhs.nl"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_2xzWGewHEg263b4ZVFBHZewmUdGAstFUkqCqTQ7XsYg",
+        "soort": "meeting",
+        "datum": "2025-12-12",
+        "titel": "Geannuleerd: Eduface",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "m.g.c.sijm@hhs.nl",
+          "m.j.g.w.flips@hhs.nl",
+          "p.willems@hhs.nl",
+          "rz3.59@hhs.nl"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_M3BS59bqbfGSaQzywe2m56Kh96Z5ZeZLDArMCN4a0xq",
+        "soort": "meeting",
+        "datum": "2026-01-29",
+        "titel": "Eduface",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "m.g.c.sijm@hhs.nl",
+          "rz3.79@hhs.nl"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_UoA8Bz33OZthtuFjXbOFwRWuz8cp5UNhlnEbH9NYD8q",
+        "soort": "meeting",
+        "datum": "2026-03-10",
+        "titel": "Overleg sleutel team en rol IVK",
+        "duur_min": 45,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "m.c.vanvliet@hhs.nl",
+          "m.g.c.sijm@hhs.nl",
+          "p.willems@hhs.nl",
+          "rz3.52@hhs.nl",
+          "t.c.bakker@hhs.nl"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_BiZ67Nxo1VxubQSQxGncPXnaPzw6XoYGxUGr2GQflJM",
+        "soort": "meeting",
+        "datum": "2026-03-17",
+        "titel": "Canceled: Overleg Maartje/Theo/Jeroen",
+        "duur_min": 30,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "m.g.c.sijm@hhs.nl",
+          "t.c.bakker@hhs.nl"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_TZQqE7xOQiWy3A2kdiprrsmOWVALibHX8Fm82jHCiOA",
+        "soort": "meeting",
+        "datum": "2026-03-18",
+        "titel": "Overleg IVK",
+        "duur_min": 45,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "m.c.vanvliet@hhs.nl",
+          "m.g.c.sijm@hhs.nl",
+          "t.c.bakker@hhs.nl"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_siCOjmJ8XH3FHfIaw0RGwzcQ22lO7SSVfFfU65XsgPu",
+        "soort": "meeting",
+        "datum": "2026-03-20",
+        "titel": "overleg Eduface",
+        "duur_min": 30,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "m.g.c.sijm@hhs.nl"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_Ovx02GMfUfIKoPPADO5Z4GYzYC6UlgGX2Hk5uZTtVe0",
+        "soort": "meeting",
+        "datum": "2026-03-26",
+        "titel": "onboarding Eduface",
+        "duur_min": 45,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "m.g.c.sijm@hhs.nl"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_l0YvSZ9qxWpgnGXoblzWi2JdhaHtEGw6UVDuTiIUKzw",
+        "soort": "meeting",
+        "datum": "2026-03-31",
+        "titel": "overleg pilot hhs eduface",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "m.g.c.sijm@hhs.nl"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_AyJPAzgsaguOelNzPRx5cPhALqziK89IDzRQO22PQAH",
+        "soort": "meeting",
+        "datum": "2026-04-17",
+        "titel": "bespreken deelopdr 2 IVK-Eduface",
+        "duur_min": 45,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "m.g.c.sijm@hhs.nl"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_hoA7RjZfBlzdDbe7fP70GEFiPnq3x1zTWQq2ggTzpeQ",
+        "soort": "meeting",
+        "datum": "2026-04-24",
+        "titel": "Deelopdr 3 en update Eduface bij HHs",
+        "duur_min": 45,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "m.g.c.sijm@hhs.nl"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_pYLDuAgUj2Ya62sk685mKhzXrlBqwMP9E3jRIXRyNUQ",
+        "soort": "meeting",
+        "datum": "2026-05-08",
+        "titel": "Overleg IVK-Eduface",
+        "duur_min": 45,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "m.g.c.sijm@hhs.nl"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_3Qo9yTOh3vUL2v1Zr4diBUPQsFvx2Rj3hCSPWZwYHi4",
+        "soort": "meeting",
+        "datum": "2026-06-04",
+        "titel": "Eduface",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "a.frank@hhs.nl",
+          "b.f.j.gerritsen@hhs.nl",
+          "b.m.wisse@hhs.nl",
+          "d.mulder@hhs.nl",
+          "jeroen.van.gessel@eduface.me",
+          "l.h.h.niemann@hhs.nl",
+          "l.j.r.j.haan@hhs.nl",
+          "l.zarrou@hhs.nl",
+          "m.g.c.sijm@hhs.nl",
+          "m.j.g.w.flips@hhs.nl",
+          "m.vanderland@hhs.nl",
+          "p.willems@hhs.nl",
+          "r.benard@hhs.nl",
+          "r.m.hoogduin@hhs.nl",
+          "w.e.vannieuwkerk@hhs.nl"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_7H0sg1a5vxJJU9TwTGbAi08f1F8i16lCGqBRiC7kqgT",
+        "soort": "meeting",
+        "datum": "2026-06-19",
+        "titel": "Webinar voorbereiden",
+        "duur_min": 45,
+        "status": "completed",
+        "deelnemers": [
+          "dante.torbed@eduface.me",
+          "jeroen.van.gessel@eduface.me",
+          "m.g.c.sijm@hhs.nl"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      }
+    ],
+    "open_taken": [
+      {
+        "tekst": "Follow up bij Piet en Mario in hun laatste werk week",
+        "datum": "2026-08-28"
+      }
+    ],
+    "laatste_gesprek": "2026-06-19",
+    "volgende_afspraak": null,
+    "aantal_gehad": 14,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

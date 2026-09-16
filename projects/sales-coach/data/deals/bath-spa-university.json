@@ -1,0 +1,628 @@
+{
+  "slug": "bath-spa-university",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_s6LxQyZ7yIyQnETykuPEI2B9H6TR25W5HwCLvNX7XFJ",
+    "naam": "Bath Spa University",
+    "url": "https://app.close.com/lead/lead_s6LxQyZ7yIyQnETykuPEI2B9H6TR25W5HwCLvNX7XFJ/",
+    "lead_status": "Actief",
+    "opportunity_id": "oppo_ABahohlEyoctsCim0FB8lmpQjsA6pk7Cng8j9SJEqCl",
+    "fase": "Contracting",
+    "fase_type": "active",
+    "waarde": 80000,
+    "valuta": "EUR",
+    "confidence": 75,
+    "close_date": "2027-01-23",
+    "eigenaar": "Eduface CRM",
+    "crm_note": "**Status:** Alles hangt aan de Blackboard-demo die het bewijs moet leveren\nvoor Helens paper richting AIPB, en die demo staat nog niet in de agenda.\n\n**Wat er gebeurde:** De route naar geld ligt vast: Helens paper gaat via de\nAIPB naar de Digital Oversight Group in augustus, die met een\nprioriteringsmatrix bepaalt of het doorgaat, daarna eventueel naar de\nUniversity Executive Board voor financiering. Die board vergadert maandelijks.\nKeurt de DOG adoptie goed, dan schrijft Bath Spa de business case zelf zonder\nEduface wegens belangenverstrengeling. Hun adoptievoorwaarden voor de demo\nzijn hard: rolgebaseerde workflows voor markers, moderators, module leaders en\nexternal examiners, gebruiksdashboards die aantonen dat docenten niet op de AI\nleunen, en acht jaar dataretentie. De demo draait in hun eigen omgeving met 10\ntot 12 deelnemers.\n\n**Next action:** Demo-datum vastleggen met Helen en Susana, Helen is terug op 27 jul | Jeroen | 27 jul | Hoog\n\n**Next action:** Blackboard-demo uitvoeren, moet voor de AIPB-vergadering van augustus | Jeroen en Menno | <datum onbekend> | Hoog\n\n**Risk:** Helen is out of office tot 27 juli en de DOG vergadert in augustus.\nLandt de demo niet op tijd, dan mist het paper zijn onderbouwing en schuift de\nhele financieringsroute door naar de volgende board-cyclus.\n\n**Action required:** Susana moet bevestigen of de AIPB-vergadering in augustus\ndezelfde is als de DOG, wie er presenteert en wanneer de materialen klaar\nmoeten zijn. Die vraag staat sinds 1 juli open.",
+    "contacten": [
+      {
+        "naam": "Helen King",
+        "titel": null,
+        "email": "h.king@bathspa.ac.uk",
+        "id": "cont_dqZ1dWXAhaf1lv2nmnASj9A0sVmcKdOiqZb40zQdaPb"
+      },
+      {
+        "naam": "Susana Romans-Roca",
+        "titel": null,
+        "email": "s.romans-roca@bathspa.ac.uk",
+        "id": "cont_EUxWD1zAw8osaS7A7COQBwDmNvBJ4TBG3Anypi3718X"
+      },
+      {
+        "naam": "Giles Martin",
+        "titel": null,
+        "email": "g.martin@bathspa.ac.uk",
+        "id": "cont_3GVMoDhWx55XXA0rKZd5VKmVV0FwZXrjv1lzJwaWWos"
+      },
+      {
+        "naam": "Siobhan Hawke",
+        "titel": null,
+        "email": "s.hawke@bathspa.ac.uk",
+        "id": "cont_cHo5jHncgWvVTiX0sy3gME3pisluNl6iykd3TjpWDW4"
+      },
+      {
+        "naam": "Ashley Ogborn",
+        "titel": null,
+        "email": "a.ogborn@bathspa.ac.uk",
+        "id": "cont_tzkAKY9SUROQNgmFseiqBk6YmpCUWF5yxEarBAKLQ8x"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_jAKkbrSPqi1gd8xhIMtIUOuiENM305tOgpu07UuQ7fD",
+        "soort": "meeting",
+        "datum": "2026-01-23",
+        "titel": "Eduface pre-meet",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "h.king@bathspa.ac.uk",
+          "jeroen.van.gessel@eduface.me",
+          "menno.hahury@eduface.me",
+          "s.romans-roca@bathspa.ac.uk"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_rc6gkGfuSuWfFFbj5rtCQWilWvwM7joh0TuYX1Awo9C",
+        "soort": "meeting",
+        "datum": "2026-01-23",
+        "titel": "Eduface Lecturers' Demo",
+        "duur_min": 120,
+        "status": "completed",
+        "deelnemers": [
+          "h.king@bathspa.ac.uk",
+          "jeroen.van.gessel@eduface.me",
+          "menno.hahury@eduface.me",
+          "s.romans-roca@bathspa.ac.uk"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_OW0WcMulW1FCYx6WP7X5p0liPmayhYL8HJeMStsdaWT",
+        "soort": "meeting",
+        "datum": "2026-01-26",
+        "titel": "Eduface x Bath Spa: formative feedback meeting",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "menno.hahury@eduface.me",
+          "s.hawke@bathspa.ac.uk",
+          "s.romans-roca@bathspa.ac.uk"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_nBeEIto3N0Q5HvZx8bARuPUqJ6OgOaT7IuzxRnA0TnR",
+        "soort": "meeting",
+        "datum": "2026-01-27",
+        "titel": "Submission workflow",
+        "duur_min": 30,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "s.romans-roca@bathspa.ac.uk"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_JIh2LzYCUpiLQbvprLlEm0JWDhGmUIyXOgXBb9SsUD6",
+        "soort": "meeting",
+        "datum": "2026-02-23",
+        "titel": "Cath up Jeroen/Susanna",
+        "duur_min": 30,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "s.romans-roca@bathspa.ac.uk"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_aNepuZEz2VVfqiu0J3N205pufWkactN9les9XMO7mhe",
+        "soort": "meeting",
+        "datum": "2026-02-26",
+        "titel": "Jeroen/Susanna Workflow",
+        "duur_min": 30,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "s.romans-roca@bathspa.ac.uk"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_sDxKIBEDstLLIXtBtghjAjsbgm9amtHjaVeQ3eCzTz9",
+        "soort": "meeting",
+        "datum": "2026-03-02",
+        "titel": "Module Introductory call - Eduface",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "j.govindaraj@bathspa.ac.uk",
+          "jeroen.van.gessel@eduface.me",
+          "s.romans-roca@bathspa.ac.uk"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_SSRGW0ZFecqKg2wlQCfvIvclL68o9JWZhzDEoovbH7D",
+        "soort": "meeting",
+        "datum": "2026-03-04",
+        "titel": "Jeroen/Susanna",
+        "duur_min": 30,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "s.romans-roca@bathspa.ac.uk"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_3xtnpJUF10qsTasvcBftaG8cGQ9nYMWOOcvbz0Z5VWW",
+        "soort": "meeting",
+        "datum": "2026-03-09",
+        "titel": "Eduface onboarding call",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "e.nartey@bathspa.ac.uk",
+          "jeroen.van.gessel@eduface.me",
+          "s.romans-roca@bathspa.ac.uk"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_SG2YZ2SUXDVdw3xnGGbsqUrT1BoSle8a4J8JrIjOx5I",
+        "soort": "meeting",
+        "datum": "2026-03-09",
+        "titel": "OBM - Marking discussion",
+        "duur_min": 30,
+        "status": "completed",
+        "deelnemers": [
+          "j.govindaraj@bathspa.ac.uk",
+          "jeroen.van.gessel@eduface.me",
+          "s.romans-roca@bathspa.ac.uk"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_iM9D4UDHMf7xllRyrpEJTv5RwUm4LtgHKeNe4EMRhDf",
+        "soort": "meeting",
+        "datum": "2026-03-16",
+        "titel": "Eduface Second Meeting",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "e.nartey@bathspa.ac.uk",
+          "jeroen.van.gessel@eduface.me",
+          "s.romans-roca@bathspa.ac.uk"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_pqyqG5g6FkAxjor3Hx26rTkYIom7KdLGTyRz0f2X7aY",
+        "soort": "meeting",
+        "datum": "2026-03-19",
+        "titel": "Eduface Siobhan",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "s.hawke@bathspa.ac.uk",
+          "s.romans-roca@bathspa.ac.uk"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_6PG7d7hkQwcyjRPY0yU4rnOtM61UN1n3hMeQ3z4SLvb",
+        "soort": "meeting",
+        "datum": "2026-03-26",
+        "titel": "Jeroen/Susanna",
+        "duur_min": 30,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "s.romans-roca@bathspa.ac.uk"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_LmjNWoi1xzd6FpENQYxRkK3yIY2CGYZwRvyBMYtSag1",
+        "soort": "meeting",
+        "datum": "2026-03-30",
+        "titel": "Eduface Jaya/Jeroen/SRR",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "j.govindaraj@bathspa.ac.uk",
+          "jeroen.van.gessel@eduface.me",
+          "s.romans-roca@bathspa.ac.uk"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_bj7KPe4FcNuH7v2HO8PBvMVcJlO89bFs8gJwyspIoMC",
+        "soort": "meeting",
+        "datum": "2026-03-31",
+        "titel": "Eduface Jaya/Jeroen/SRR",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "j.govindaraj@bathspa.ac.uk",
+          "jeroen.van.gessel@eduface.me",
+          "s.romans-roca@bathspa.ac.uk"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_3BJe7uKCbNX2bUbdpr9g3qveVcuJtvOvbZOe9UyPTc1",
+        "soort": "meeting",
+        "datum": "2026-04-02",
+        "titel": "Eduface edits",
+        "duur_min": 30,
+        "status": "completed",
+        "deelnemers": [
+          "e.shackel@bathspa.ac.uk",
+          "jeroen.van.gessel@eduface.me",
+          "s.hawke@bathspa.ac.uk"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_cfEGb2vBTtNAiNOeFv5P6I3nfZrYW3pgyjKyG4VxA2P",
+        "soort": "meeting",
+        "datum": "2026-04-02",
+        "titel": "Eduface Onboarding Meeting",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "g.martin@bathspa.ac.uk",
+          "j.bostock@bathspa.ac.uk",
+          "jeroen.van.gessel@eduface.me",
+          "s.romans-roca@bathspa.ac.uk"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_4kRnxuDgSRTohDWYPVwQ0VQRPtCrupadlsYuuMbm5m7",
+        "soort": "meeting",
+        "datum": "2026-04-13",
+        "titel": "Eduface: Feedback and preparation for the second assessment",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "e.nartey@bathspa.ac.uk",
+          "jeroen.van.gessel@eduface.me",
+          "menno.hahury@eduface.me",
+          "s.romans-roca@bathspa.ac.uk"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_cv5i7wIj1AYglXnDY7OEDsfE9zuI1vsCtppB8xWQQ5h",
+        "soort": "meeting",
+        "datum": "2026-04-21",
+        "titel": "Jeroen/Susanna",
+        "duur_min": 30,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "s.romans-roca@bathspa.ac.uk"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_YU0WB0yuGzyrxZWRZDpf4hzsZfe89aTRqaxO92gpj4c",
+        "soort": "meeting",
+        "datum": "2026-04-30",
+        "titel": "Jeroen/Susanna",
+        "duur_min": 25,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "s.romans-roca@bathspa.ac.uk"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_o7IEPFQBeUH6V7nKlRimjU8pgiHsnB6mI3GvEL7Jrxv",
+        "soort": "meeting",
+        "datum": "2026-05-01",
+        "titel": "Eduface PGCE Secondary",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "a.ogborn@bathspa.ac.uk",
+          "jeroen.van.gessel@eduface.me",
+          "s.romans-roca@bathspa.ac.uk",
+          "s.wilton-rhead@bathspa.ac.uk"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_rc87DNxPZDRrmkL51reJV9dEYhWqUs4qCLGrg96X3Eo",
+        "soort": "meeting",
+        "datum": "2026-05-01",
+        "titel": "BSU Eduface formative feedback catch up",
+        "duur_min": 30,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "s.hawke@bathspa.ac.uk"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_Dz0ZtijPdXyQu3EW7qxxDyq4DoHumX3RDSMwNpOvaan",
+        "soort": "meeting",
+        "datum": "2026-05-01",
+        "titel": "Eduface PGCE Primary",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "e.asbury@bathspa.ac.uk",
+          "jeroen.van.gessel@eduface.me",
+          "n.mcgrogan@bathspa.ac.uk",
+          "s.romans-roca@bathspa.ac.uk"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_8zMQjXLGt7Vg5sVr0Hb6Ge1pok4hRbh2xwfEho0S523",
+        "soort": "meeting",
+        "datum": "2026-05-06",
+        "titel": "Eduface Mani/Jeroen/Susanna",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "e.nartey@bathspa.ac.uk",
+          "jeroen.van.gessel@eduface.me",
+          "s.romans-roca@bathspa.ac.uk"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_Xl0jzLW2WpoGdWU7AWLI10aKGDDmS6azxO65AmBAm7H",
+        "soort": "meeting",
+        "datum": "2026-05-06",
+        "titel": "Eduface Onboarding Innovation Lab II",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "a.gray2@bathspa.ac.uk",
+          "jeroen.van.gessel@eduface.me",
+          "s.romans-roca@bathspa.ac.uk"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_iSgiAKkjuIXmG5Gjyo9PC66GIhTM5jre3O2hjMthSN7",
+        "soort": "meeting",
+        "datum": "2026-05-07",
+        "titel": "Eduface Updates Feedback",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "j.govindaraj@bathspa.ac.uk",
+          "jeroen.van.gessel@eduface.me",
+          "s.romans-roca@bathspa.ac.uk"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_pCYOwuHy99v8DovJ9xxK6ZPdbUegBYChl7nZ0KhAW4G",
+        "soort": "meeting",
+        "datum": "2026-05-19",
+        "titel": "Eduface catch-up",
+        "duur_min": 30,
+        "status": "completed",
+        "deelnemers": [
+          "h.king@bathspa.ac.uk",
+          "jeroen.van.gessel@eduface.me",
+          "s.romans-roca@bathspa.ac.uk"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_CQNyQkkue52DvyL7vhzHmBsDmkhjwj46gg3RMNNI3gP",
+        "soort": "meeting",
+        "datum": "2026-05-20",
+        "titel": "Eduface Tech&Innovation",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "g.martin@bathspa.ac.uk",
+          "j.bostock@bathspa.ac.uk",
+          "jeroen.van.gessel@eduface.me",
+          "s.romans-roca@bathspa.ac.uk"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_YmLDcnU729ITIIzDHtL1OWcaetBsYKvi66c65C7E8Lo",
+        "soort": "meeting",
+        "datum": "2026-05-27",
+        "titel": "Eduface ASk",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "e.shackel@bathspa.ac.uk",
+          "jeroen.van.gessel@eduface.me",
+          "s.hawke@bathspa.ac.uk",
+          "s.romans-roca@bathspa.ac.uk"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_yJYhYB0u6zeirZfhoAzG50k8Wm4G6NhTKW8kobRMvDF",
+        "soort": "meeting",
+        "datum": "2026-06-16",
+        "titel": "Eduface Innovation lab II",
+        "duur_min": 30,
+        "status": "completed",
+        "deelnemers": [
+          "a.gray2@bathspa.ac.uk",
+          "jeroen.van.gessel@eduface.me",
+          "s.romans-roca@bathspa.ac.uk"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_3cVRJ42Au1OHjIPieRxdL9c7hT26rV9i5K5TmE2oPZ6",
+        "soort": "meeting",
+        "datum": "2026-07-16",
+        "titel": "Eduface: Blackboard demo prep discussion",
+        "duur_min": 30,
+        "status": "completed",
+        "deelnemers": [
+          "h.king@bathspa.ac.uk",
+          "jeroen.van.gessel@eduface.me",
+          "menno.hahury@eduface.me",
+          "s.lewarne@bathspa.ac.uk",
+          "s.romans-roca@bathspa.ac.uk"
+        ],
+        "samenvatting": "- Prepared Blackboard integration demo focusing on staff efficiencies, two-way syncing with Turnitin, and multi-stakeholder workflow views (markers, moderators, module leaders, external examiners).\n- Confirmed integration works with Blackboard Ultra, Canvas, and Moodle with automatic assignment routing to both Turnitin and Eduface.\n- Emphasized critical demo requirements: human-first assessment approach, usage monitoring dashboards, moderation capabilities, and eight-year data retention for compliance.\n- Identified key adoption barriers as time pressures and learning curves, requiring demo to emphasize ease of use, reliability, and integration seamlessness.\n- Demo will be conducted in Bath Spa's environment with 10-12 participants including pilot module leaders, digital learning developers, academic IT staff, and recorded for broader sharing.\n\n### Meeting Purpose and Attendee Introductions\n- This meeting served as preparation for the formal Blackboard integration demo with Bath Spa University.\n- A note taker was included to ensure proper documentation of discussion points.\n- Jeroen van Gessel introduced himself as Eduface co-founder focusing on business operations, started almost three and a half years ago.\n- Menno presented as co-founder with technical background in software engineering and AI who built the platform with Samuel.\n- Samuel introduced himself as lead software engineer at Eduface, joining in February.\n- Helen King identified herself as Director of Learning, Innovation, Development and Skills, serving as strategic lead for the pilot project.\n- Steven Lewarne described himself as Senior Digital Learning Developer supporting academic staff.\n- Susana Romans-Roca presented as Academic Developer managing the day-to-day pilot operations.\n\n### Demo Content and Integration Requirements\n- The demo must provide evidence supporting Helen's paper to the AIPB meeting about integration benefits and efficiencies for staff.\n- Jeroen confirmed the integration works with Canvas and Moodle in addition to Blackboard Ultra and will be shown during the demo.\n- The demo should showcase automations syncing back to Blackboard and bidirectional syncs from Blackboard to Eduface to reduce setup friction.\n- Jeroen explained that when students submit assignments in Blackboard, they automatically sync to both Turnitin for originality checks and Eduface for AI feedback.\n- Susana noted that Turnitin has introduced a new Standard Assignment Tool with Blackboard integration, potentially eliminating friction by avoiding manual processes.\n- The demo should demonstrate how assignments automatically pass to Turnitin's new Standard Assignment Tool, though activation status needs verification in the test server.\n\n### Role-Based Workflow and Marking Considerations\n- **The demo must show the tool from multiple stakeholder perspectives: markers, moderators, module leaders, and external examiners.**\n- **Friction and ease of use are critical factors—any added complexity discourages staff adoption.**\n- Steven emphasized that uptime and availability build confidence in integrations, noting the successful adoption of Turnitin LTI despite its different interface.\n- Susana highlighted that staff currently perceive Turnitin as integrated with Blackboard Ultra due to its seamless functionality, even though it is a separate integration.\n- The demo should demonstrate compatibility with Blackboard Ultra's grade journeys to ensure marks sync properly without manual entry.\n- The workflow must support moderation processes where moderators can view staff submissions and module leaders can maintain oversight across multiple markers.\n\n### Data Retention and Compliance Requirements\n- **Retention policies are essential—the tool must retain all data for institutional appeals and external compliance with UK Office for Students requirements of five years post-graduation.**\n- Bath Spa retains materials for three additional years beyond the five-year requirement, totaling eight years of necessary data retention.\n- The demo should address retention mechanisms to ensure this compliance box is ticked for university adoption.\n\n### Governance and Approval Process\n- Helen's paper goes through the AIPB for input and recommendations, then to the Digital Oversight Group in August for oversight of new software proposals.\n- The Digital Oversight Group uses a prioritization matrix to determine next steps and may request additional information before approval.\n- Following the Digital Oversight Group decision, the project may progress to the University Executive Board for funding approval if needed.\n- The Executive Board meets monthly, so timing depends on when the proposal reaches that stage.\n\n### Demo Attendees and Technical Setup\n- Attendees should include module leaders from the pilot, digital learning developers, Susana, and academic IT staff for approximately 10-12 participants.\n- The demo should be conducted in Bath Spa's environment rather than Eduface's sandbox for greater authenticity.\n- Steve from Bath Spa IT will be available to navigate the Blackboard environment during the demo, with Susana and Steven as backup.\n- The demo should be recorded for reference and sharing with pilot participants who cannot attend, including possibly Kiriaki who was active in early meetings.\n- Scheduling will be handled via email coordination due to summer leave periods and multiple calendars to check.\n\n### Monitoring and Pedagogical Safeguards\n- **The demo should include dashboards and metrics showing usage data to verify that staff actively engage with the tool rather than over-relying on AI feedback.**\n- Moderators should be able to see evidence of human interaction and decision-making in the marking process.\n- **The tool must support a human-first assessment approach, ensuring educators retain active involvement in evaluation decisions.**\n- Usage monitoring allows university staff and moderators to track time spent and verify appropriate human oversight.\n\n### Formative and Summative Assessment Use Cases\n- The pilot includes two distinct use cases: modules using summative assessment and the ASK team using the tool formatively.\n- For formative student feedback, Eduface should provide a button in Blackboard allowing students to request feedback without summative grading.\n- If student-facing formative feedback integrates through Blackboard Ultra, it should be included in the demo for consistency.\n- Helen requested focusing the demo on the academic/module use case with summative assessment, then briefly mentioning the formative student-facing approach to save time.\n\n### Staff Adoption Concerns and System Pressures\n- Staff at Bath Spa are time-poor and under pressure, making steep learning curves a barrier to adoption.\n- The university continuously adds new systems, creating additional burden on staff unless clear time benefits are demonstrated.\n- Systems showing tangible time savings and reduced workload are more readily received by academic staff.\n- Staff acceptance improves when implementations feel integrated and supported rather than adding extra steps to existing workflows.",
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_XPUQi2w9YvHstOB9aBeVER19CR9DZgkRrOOiTuQ507k",
+        "soort": "meeting",
+        "datum": "2026-08-06",
+        "titel": "Eduface VLE integration demo",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "s.romans-roca@bathspa.ac.uk"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      }
+    ],
+    "open_taken": [],
+    "laatste_gesprek": "2026-08-06",
+    "volgende_afspraak": null,
+    "aantal_gehad": 32,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

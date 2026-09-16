@@ -1,0 +1,128 @@
+{
+  "slug": "noordhoff",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_QUReRPzpB1XwirLwiUxObexNNirurglK57kHo6aactK",
+    "naam": "Noordhoff",
+    "url": "https://app.close.com/lead/lead_QUReRPzpB1XwirLwiUxObexNNirurglK57kHo6aactK/",
+    "lead_status": "Actief",
+    "opportunity_id": "oppo_K8eNYy7nCwgfIMdYalncDxShGeKCuEyt71HR2YvG8hi",
+    "fase": "Discovery",
+    "fase_type": "active",
+    "waarde": 10000,
+    "valuta": "EUR",
+    "confidence": 20,
+    "close_date": "2026-12-19",
+    "eigenaar": "Eduface CRM",
+    "crm_note": "Ander deal-type dan de rest: geen opleider die zelf beoordeelt, maar een uitgever die een AI-feedbacklaag zoekt onder Hogeschooltaal. Wij zitten in hun validatie naast twee andere tools (schrijftrainer vooraf, schrijfcoach tijdens, wij als feedbacktool achteraf). Sparringsgesprek 5 aug gedaan, vervolgafspraak van 28 aug is geannuleerd, sindsdien stil.\n\nNodig: opnieuw een moment met Harald. Hun eigen tijdlijn was juli-augustus intern terugkoppelen, dus het besluit valt nu. Vragen die open moeten: wie besluit dit (Harald is adviseur, geen budget), wanneer, en wat de uitkomst van de docentgesprekken was. Eva Jansen is terug van verlof sinds augustus, dat is de tweede ingang.\n\nVerloop: demo-omgeving hogeschooltaal.eduface.cloud gebouwd op Eva's feedbackstructuur (feb). Maart: Harald zet drie varianten naast elkaar, validatie april-juni bij docenten en studenten. Mei: signaal is dat docenten vooral begeleiding tijdens het schrijven willen, en dat volledig automatiseren in onderwijs- en sociale opleidingen gevoelig ligt. Juli-augustus intern terugkoppelen. 5 aug gesproken.\n\nGaten: geen besluitvormingsproces, geen budget, geen EB in beeld. Onbekend of wij nog in de race zitten na de docentgesprekken. Waarde is een placeholder, dit loopt via een partner-/OEM-model en er is nooit over prijs gesproken.",
+    "contacten": [
+      {
+        "naam": "Eva Jansen",
+        "titel": null,
+        "email": "eva.jansen@noordhoff.nl",
+        "id": "cont_bbRiE87NqDTZ6T9kyD6VhwgRrQWyfmyIhlyWmCSNpn1"
+      },
+      {
+        "naam": "Harald Grasdijk",
+        "titel": "Learning & Innovation specialist - Strategisch adviseur",
+        "email": "haraldgrasdijk@outlook.com",
+        "id": "cont_myT4haFfp8cxChqimpsjMjqJD3mGtiERA9PdoEkzIbO"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_UJGjfMJSCWrnsCnSVmErd0afZw3HlU0Jt7sx4qMvISz",
+        "soort": "meeting",
+        "datum": "2026-01-20",
+        "titel": "Kennismaking Noordhoff x Eduface",
+        "duur_min": 30,
+        "status": "completed",
+        "deelnemers": [
+          "dante.torbed@eduface.me",
+          "eva.jansen@noordhoff.nl",
+          "h.grasdijk@noordhoff.nl"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_qpLuS0sVBVdnr9aikSqz5daTWni4CSBGrKFG7GaUmwD",
+        "soort": "meeting",
+        "datum": "2026-01-28",
+        "titel": "Hogeschooltaal x Eduface",
+        "duur_min": 30,
+        "status": "completed",
+        "deelnemers": [
+          "dante.torbed@eduface.me",
+          "eva.jansen@noordhoff.nl",
+          "h.grasdijk@noordhoff.nl",
+          "jeroen.van.gessel@eduface.me"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_raM6YJ9yQNwFLMAgz4QCO7AFZ2LXSB4TCkb2GVKU58s",
+        "soort": "call",
+        "datum": "2026-05-13",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "VM ingesproken gevraagd over een status update.",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_e5i0nEyTNe0KUDAwkW60bgqTaCKvIIcagJLz4KarP7O",
+        "soort": "meeting",
+        "datum": "2026-08-05",
+        "titel": "Bijpraten ervaringen AI",
+        "duur_min": 30,
+        "status": "completed",
+        "deelnemers": [
+          "dante.torbed@eduface.me",
+          "h.grasdijk@noordhoff.nl"
+        ],
+        "samenvatting": "- Getest drie AI-tools met docenten en studenten; Eduface-tool scoort goed op gebruiksvriendelijkheid en feedback-structuur.\n- Meeste waarde zit in formatieve feedback en ondersteuning *tijdens* schrijfproces in plaats van feedback achteraf.\n- **Eduface heeft formatieve feedback functionaliteit toegevoegd en leerde van pilot dat consistent feedback beter werkt dan hyperindividualisatie.**\n- Twee opleidingen testen tools in september; resultaten begin oktober bepalen of samenwerking volgt.\n- Volgende meeting 28 augustus waar Eduface formatieve feedback-voorbeelden deelt en haalbaarheid business model nader besproken wordt.\n\n### Onderzoeksresultaten AI-tools\n- Noordhoff heeft drie verschillende AI-tools getest met docenten en studenten, waaronder de tool van Eduface.\n- De onderzoeksperiode was intensief maar nog niet volledig afgerond door interne beslissingen en capaciteitsbeperkingen.\n- Het onderzoek richtte zich op waarde, gebruiksvriendelijkheid en business model viability van de tools.\n\n### Schrijfondersteuning als kernbehoefte\n- Uit alle gesprékken bleek dat de grootste behoefte ligt bij ondersteuning *tijdens* het schrijfproces om studenten te activeren.\n- De meeste opleidingen zien AI als waardevolle aanvulling op hun onderwijs, maar met nuances per type opleiding.\n- Formatieve feedback (tussentijdse ondersteuning) blijkt veel waardevol dan summatieve feedback (feedback achteraf).\n- Sociale en pedagogische opleidingen hebben bedenkingen bij het inzetten van AI voor persoonlijke verhalen en reflectieve opdrachten.\n\n### Eduface-tool sterke punten\n- Gebruiksvriendelijkheid van Eduface-tool zit goed en sluit aan bij uiterlijk en gevoel van Noordhoff-platform.\n- Feedback-structuur is overzichtelijk opgebouwd en sluit goed aan bij wat docenten belangrijk vinden.\n- **Formatieve feedback functionaliteit die Eduface heeft toegevoegd blijkt interessant en relevant voor Noordhoff's behoefte.**\n\n### Juridische en compliance-kwesties\n- Noordhoff heeft legal team en internationaal afdeling die GDPR en gegevensbescherming controleren.\n- Voordat tools ingezet kunnen worden, moet juridisch vastgesteld zijn hoe data veilig wordt opgeslagen en gebruikt.\n- Dit proces is kritiek voor scholen en maakt deel uit van pilot-voorbereiding.\n\n### Pilot-planning en business model\n- Twee opleidingen gaan in september met één tool aan de slag met ~30 studenten voor praktijktesting.\n- De pilot moet duidelijk maken wat werkelijke gebruikskosten zijn en of business model haalbaar is.\n- Noordhoff verwacht begin oktober resultaten zodat EVA (propositiemanager) kan bepalen of samenwerking volgt.\n- **Schrijftrainingshulp is afgevallen; focus ligt op schrijfcoach/ondersteuning.**\n\n### Eduface-innovaties in leerprofielen\n- Eduface werkt aan student-dashboards die groei over tijd tonen op basis van meerdere vakken en opdrachten.\n- **Formatieve feedback is nu gegeven op basis van inleidingen om studenten vroeg in proces te ondersteunen.**\n- **Pilot leerde dat excessieve individualisatie van feedback niet praktisch was; Eduface maakte het consistent.**\n- Docenten kunnen nu groeperen op basis van micro-credentials (sterktes en zwaktes) per student.\n\n### Vervolgstappen en samenwerking\n- Nieuwe meeting gepland voor **vrijdag 28 augustus om 10:00 uur** onder titel 'Bijpraten ervaringen AI'.\n- Eduface zal formatieve feedback-voorbeelden delen zodat beiden kunnen evalueren hoe dit aansluit.\n- Haagse Hogeschool webinar over kans-en-gelijkheidsproject komt later; resultaten kunnen niet nu gedeeld worden.\n- Noordhoff wil meer duidelijkheid over intensiteit van toolgebruik en haalbaarheid business model voordat partners aanbevolen worden.\n\n### Resterende onzekerheden\n- Harald kan nog niet aanraden welke partner Noordhoff moet kiezen vanwege onvoldoende inzicht in werkelijke kosten en rendement.\n- Onderwijs staat onder druk wat investeringen betreft; nieuwe tools moeten inpasbaar zijn zonder extra kosten.\n- Interne capaciteit van Noordhoff's AI-team beperkt; samenwerking met partners is noodzakelijk voor innovatiesnelheid.",
+        "eigen_notitie": "Status: Geen go, geen keuze. Onze categorie (feedback achteraf) is niet waar hun behoefte zit; de opening is de formatieve feedback die Dante in dit gesprek op tafel legde. Besluit valt begin oktober bij Eva Jansen.\n\nWat er gebeurde: Noordhoff testte 3 tools langs schrijftrainer (vooraf) / schrijfcoach (tijdens) / feedbacktool (achteraf). Conclusie uit alle docentgesprekken: de grootste behoefte ligt tijdens het schrijfproces. Schrijftrainer valt af, wij worden nu als \"achteraf\" ervaren. Een concurrent (chatbot-achtige schrijfcoach) krijgt in september wel al een concreet vervolg, 2 klassen / ~30 studenten op verzoek van een klant, om verbruik en kosten te meten. Wij zitten daar niet in. Harald durft Eva nu geen partner aan te bevelen omdat hij geen zicht heeft op gebruik, kosten en rendement. Hogeschooltaal zelf staat ook onder druk: twee opleidingen stappen van de 5-jaars licentie (€60) naar 1 jaar tegen gereduceerd tarief. Eva Jansen, propositiemanager, is de beslisser en is eind augustus terug.\n\nNext action: Voorbeeld formatieve feedback sturen dat Harald intern met Eva kan delen | Dante | vóór 28 aug | hoog\n\nNext action: Vervolggesprek | Dante x Harald | 28 aug 10:00 (staat in Close)\n\nRisk: We worden beoordeeld op de verkeerde categorie terwijl de concurrent in september praktijkbewijs opbouwt dat wij niet hebben. HHS-resultaten mogen nog niet gedeeld, dus we hebben tot oktober weinig hard bewijs.\n\nTwee dingen die ik je wil voorleggen:",
+        "transcript_beschikbaar": true,
+        "komend": false
+      }
+    ],
+    "open_taken": [],
+    "laatste_gesprek": "2026-08-05",
+    "volgende_afspraak": null,
+    "aantal_gehad": 4,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

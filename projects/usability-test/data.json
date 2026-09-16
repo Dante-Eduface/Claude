@@ -1,0 +1,603 @@
+{
+  "titel": "Usability test Eduface",
+  "ondertitel": "Feedback per criterium, Grading en Feedback tab apart",
+  "meta": {
+    "Tester": "Dante Torbed",
+    "Datum": "26 augustus 2026",
+    "Rol": "Manager / nakijker",
+    "Scenario": "Assessment setup, rubric beheer en nakijken in de reader",
+    "Bron": "Todoist sectie Eduface platform + eigen testronde"
+  },
+  "categorieen": [
+    {
+      "id": "A",
+      "titel": "Account aanmaken en signup flow",
+      "intro": "Van registratie tot eerste keer binnen zijn.",
+      "criteria": [
+        {
+          "id": "A1",
+          "titel": "Duidelijkheid van het registratieproces",
+          "anchors": {
+            "1": "Onduidelijke velden of foutmeldingen",
+            "3": "Werkt, maar terminologie is verwarrend",
+            "5": "Zelfverklarend, geen vragen nodig"
+          },
+          "feedback": [
+            {
+              "tab": "signup",
+              "tekst": "De velden die je invult krijgen geen duidelijke markering. Zet een gekleurd balkje langs het veld waar je mee bezig bent, dan is in een oogopslag zichtbaar waar je staat.",
+              "bron": "Todoist: Rood balkje om de velden die je invult"
+            }
+          ]
+        },
+        {
+          "id": "A2",
+          "titel": "Foutafhandeling bij aanmelden",
+          "anchors": {
+            "1": "Fout leidt tot doodlopende weg",
+            "3": "Foutmelding is er, maar niet helder",
+            "5": "Foutmelding legt precies uit wat te doen"
+          },
+          "feedback": [
+            {
+              "tab": "signup",
+              "tekst": "Melding e-mailadres is al in gebruik loopt dood. Gewenst gedrag: klopt het wachtwoord, log dan direct in. Klopt het wachtwoord niet, stuur naar de inlogpagina met het e-mailadres al ingevuld en de melding dat het wachtwoord niet klopte, plus een link naar wachtwoord vergeten.",
+              "bron": "Todoist: Melding email adres is al in gebruik"
+            },
+            {
+              "tab": "signup",
+              "tekst": "De melding onverwachte fout mag niet meer voor kunnen komen. Die zegt de gebruiker niets en biedt geen uitweg. Elke fout hoort te benoemen wat er misging en wat je nu kunt doen.",
+              "bron": "Todoist: Melding onverwachte fout",
+              "afbeeldingen": [
+                {
+                  "pad": "afbeeldingen/signin-onverwachte-fout.png",
+                  "bijschrift": "Inlogscherm met de toast Onverwachte fout, zonder uitleg of vervolgstap"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "titel": "Gebruiksvriendelijkheid interface",
+      "intro": "Overzicht, consistentie, herstel na een fout en controle over de instellingen.",
+      "criteria": [
+        {
+          "id": "B1",
+          "titel": "Overzichtelijkheid dashboard",
+          "anchors": {
+            "1": "Chaotisch, je weet niet waar te beginnen",
+            "3": "Overzichtelijk na wat rondkijken",
+            "5": "In een oogopslag duidelijk wat er te doen is"
+          },
+          "feedback": [
+            {
+              "tab": "algemeen",
+              "tekst": "Dashboard metrics: inconsistenties in de cijfers en in het gedrag van feedback edits. Uitwerking staat in de spraaknotitie van 25 augustus in Todoist, die moet nog uitgeschreven worden.",
+              "bron": "Todoist: Dashboard metrics, inconsistenties en feedback edits (spraaknotitie)"
+            }
+          ]
+        },
+        {
+          "id": "B2",
+          "titel": "Consistentie en verwachting van knoppen",
+          "anchors": {
+            "1": "Elke pagina voelt anders aan",
+            "3": "Meestal consistent",
+            "5": "Volledig consistent door de hele flow"
+          },
+          "feedback": [
+            {
+              "tab": "feedback",
+              "tekst": "De Regenerate knop staat binnen het vak Describe your feedback style, dus je gaat ervan uit dat hij op de quick add descriptions slaat. In plaats daarvan werden de model instructions die ik net goed had staan opnieuw gegenereerd. Dat is frustrerend en niet terug te draaien in de flow zelf.",
+              "bron": "Todoist: Model instructions regenereren knop onduidelijk",
+              "afbeeldingen": [
+                {
+                  "pad": "afbeeldingen/feedbacktab-regenerate.png",
+                  "bijschrift": "Feedback tab, Regenerate zit in het blok Describe your feedback style"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "B3",
+          "titel": "Controle over opties en rollen",
+          "anchors": {
+            "1": "Je kunt niet zelf instellen wat je nodig hebt",
+            "3": "Meeste opties zijn bereikbaar",
+            "5": "Alles wat je nodig hebt zet je zelf aan"
+          },
+          "feedback": [
+            {
+              "tab": "feedback",
+              "tekst": "Ik kon zelf niet alle feedbackopties aanzetten tijdens het opzetten van het salesproces bij CMI. Als ik dat niet kan, kan een docent het ook niet, en dan is de tool afhankelijk van ons.",
+              "bron": "Todoist: Grading options en checklist feedback aan Samuel sturen"
+            },
+            {
+              "tab": "grading",
+              "tekst": "Het toewijzen van een marker aan een opdracht ontbreekt. Uitwerking staat in de spraaknotitie van 25 augustus in Todoist.",
+              "bron": "Todoist: Het kunnen toewijzen van een marker (spraaknotitie)"
+            },
+            {
+              "tab": "feedback",
+              "tekst": "Het is vervelend dat ik niet alle drie de opties kan aanvinken en dat nergens staat waarom niet. Als een combinatie niet kan, zeg dan wat de reden is.",
+              "bron": "Testronde 26 augustus",
+              "afbeeldingen": [
+                {
+                  "pad": "afbeeldingen/feedbacktab-generatie-450.png",
+                  "bijschrift": "Twee van de drie opties staan uit, zonder uitleg waarom ze niet samen aan kunnen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "B4",
+          "titel": "Uitleg bij instellingen en keuzes",
+          "anchors": {
+            "1": "Je weet niet wat een keuze doet",
+            "3": "Je snapt de term, niet het effect in de tool",
+            "5": "Bij elke keuze staat wat er verandert"
+          },
+          "score": 3,
+          "feedback": [
+            {
+              "tab": "grading",
+              "tekst": "Score 3. Bij Assessment mode staan Summative en Formative only. Als docent weet ik het verschil, maar niet wat de knop specifiek doet in Eduface. Krijgt de student wel of geen cijfer, verandert de feedback, verandert de rubric. Dat moet erbij staan.",
+              "bron": "Testronde 26 augustus",
+              "afbeeldingen": [
+                {
+                  "pad": "afbeeldingen/grading-tab-overzicht.png",
+                  "bijschrift": "Grading tab, Assessment mode met Summative en Formative only, zonder uitleg wat het verandert"
+                }
+              ]
+            },
+            {
+              "tab": "feedback",
+              "tekst": "Maak visueel wat Algemene feedback per rubriekcriterium, Algemene feedback op hele opdracht en Specifieke opmerkingen per rubriekcriterium betekenen. Nu zijn het drie regels tekst en moet je maar raden wat de student straks ziet.",
+              "bron": "Testronde 26 augustus",
+              "afbeeldingen": [
+                {
+                  "pad": "afbeeldingen/feedbacktab-generatie-150.png",
+                  "bijschrift": "Wat er per inzending wordt gegenereerd, drie opties zonder voorbeeld van het resultaat"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "titel": "Duidelijkheid volgende stap tijdens nakijken",
+      "intro": "Weet je op elk moment wat de volgende handeling is en hoever je bent.",
+      "criteria": [
+        {
+          "id": "C1",
+          "titel": "Duidelijk wat de vereiste actie nu is",
+          "anchors": {
+            "1": "Je moet gokken of rondklikken",
+            "3": "Duidelijk na kort zoeken",
+            "5": "Direct duidelijk zonder nadenken"
+          },
+          "feedback": [
+            {
+              "tab": "grading",
+              "tekst": "Als ik op Complete setup klik en de setup is nog niet compleet, dan moet ik terugkrijgen wat er nog mist en wat ik moet doen om hem wel af te kunnen ronden. Nu klik je en gebeurt er niets bruikbaars.",
+              "bron": "Testronde 26 augustus"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "titel": "Voortgangsindicatie in het proces",
+          "anchors": {
+            "1": "Geen idee hoever het nakijken is gevorderd",
+            "3": "Enige indicatie aanwezig",
+            "5": "Altijd zichtbaar hoeveel werk nog rest"
+          },
+          "feedback": [
+            {
+              "tab": "grading",
+              "tekst": "Na 30 minuten in de reader kwam ik er pas achter dat je naar rechts kon scrollen om de rest van de criteria te zien. Je moet kunnen zien hoeveel criteria er zijn en waar je in die rij zit.",
+              "bron": "Todoist: Duidelijker door alle criteria heen gaan"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "titel": "Hervatten van een onderbroken sessie",
+          "anchors": {
+            "1": "Werk of context gaat verloren",
+            "3": "Kan hervatten met wat zoekwerk",
+            "5": "Pakt direct op waar je gebleven was"
+          },
+          "feedback": []
+        },
+        {
+          "id": "C4",
+          "titel": "Opbouw van het product als proces met stappen",
+          "anchors": {
+            "1": "Alle opties komen tegelijk, geen begin en geen eind",
+            "3": "Er zit een volgorde in, maar die moet je zelf ontdekken",
+            "5": "Vaste stappen, je ziet waar je bent en wat er nog komt"
+          },
+          "feedback": [
+            {
+              "tab": "feedback",
+              "tekst": "Maak duidelijk dat je eerst je feedbackstijl mag beschrijven en dat dat stap 1 van het feedbackproces is. Nu staat het er zonder dat iets zegt waar je bent in het proces.",
+              "bron": "Testronde 26 augustus"
+            },
+            {
+              "tab": "algemeen",
+              "tekst": "Het moet duidelijker zijn dat je een proces met stappen ingaat. Nu krijg je alle mogelijke opties tegelijk in je gezicht. Beter is een vaste set stappen die je doorloopt tot de setup klaar is.",
+              "bron": "Testronde 26 augustus"
+            },
+            {
+              "tab": "algemeen",
+              "tekst": "Voorbeeld om van af te kijken is Lemlist. Klik je op create campaign, dan bouw je eerst de flow. Daarna importeer je je leads, en pas dan klik je op Next step. Elke stap staat op zichzelf en je ziet bovenin waar je bent en wat er nog komt.",
+              "bron": "Testronde 26 augustus, vergelijking met Lemlist",
+              "afbeeldingen": [
+                {
+                  "pad": "afbeeldingen/lemlist-stappenbalk.png",
+                  "bijschrift": "Lemlist zet de stappen bovenin: Sequence, Leads list, Launch, Performance, met Next step rechts"
+                },
+                {
+                  "pad": "afbeeldingen/lemlist-stap-1-sequence.png",
+                  "bijschrift": "Lemlist stap 1: sequence bouwen, stappenbalk bovenin met Sequence, Leads list, Launch, Performance"
+                },
+                {
+                  "pad": "afbeeldingen/lemlist-stap-2-leads.png",
+                  "bijschrift": "Lemlist stap 2: leads importeren, lege staat vertelt precies wat je nu moet doen"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "titel": "Cognitieve belasting",
+      "intro": "Hoeveel moeite het kost om de kernflow te doen en de output te begrijpen.",
+      "criteria": [
+        {
+          "id": "D1",
+          "titel": "Aantal stappen of kliks voor de kernactie",
+          "anchors": {
+            "1": "Onnodig veel stappen",
+            "3": "Redelijk aantal stappen",
+            "5": "Minimaal aantal stappen, voelt efficient"
+          },
+          "feedback": []
+        },
+        {
+          "id": "D2",
+          "titel": "Hoeveelheid informatie per scherm",
+          "anchors": {
+            "1": "Overladen, moeilijk te scannen",
+            "3": "Behapbaar met enige inspanning",
+            "5": "Precies genoeg, niets overbodigs"
+          },
+          "feedback": [
+            {
+              "tab": "feedback",
+              "tekst": "De model instructions kan ik toch niet aanpassen, dus die hoeft een gebruiker niet te zien. Het enige wat je aanpast is je feedbackstijl, en wat de AI daarvan gemaakt heeft. Voed de model instructions gewoon tijdens het laden van de opdracht.",
+              "bron": "Testronde 26 augustus",
+              "afbeeldingen": [
+                {
+                  "pad": "afbeeldingen/feedbacktab-regenerate.png",
+                  "bijschrift": "Feedback tab: onder de stijlbeschrijving staat het hele blok model instructions dat je niet kunt bewerken"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "D3",
+          "titel": "Begrijpelijkheid van AI feedback en output",
+          "anchors": {
+            "1": "Je snapt niet wat het betekent of moet doen",
+            "3": "Begrijpelijk na uitleg of nadenken",
+            "5": "Direct te begrijpen zonder toelichting"
+          },
+          "feedback": []
+        },
+        {
+          "id": "D4",
+          "titel": "Kernflow zonder voorafgaande uitleg",
+          "anchors": {
+            "1": "Zonder uitleg kom je niet door de kernflow",
+            "3": "Komt eruit, met vertraging of onzekerheid",
+            "5": "Moeiteloos zonder enige uitleg vooraf"
+          },
+          "feedback": []
+        }
+      ]
+    },
+    {
+      "id": "G",
+      "titel": "Rubric beheer, proces en pagina",
+      "intro": "De flow waar je een rubric aanmaakt, aanpast, weegt of aan een opdracht koppelt.",
+      "criteria": [
+        {
+          "id": "G1",
+          "titel": "Duidelijkheid van het aanmaken van een nieuwe rubric",
+          "score": 1,
+          "anchors": {
+            "1": "Je snapt niet waar of hoe te beginnen",
+            "3": "Lukt na wat uitproberen",
+            "5": "Meteen duidelijk hoe een rubric wordt opgezet"
+          },
+          "feedback": [
+            {
+              "tab": "rubric",
+              "tekst": "Score 1. Je komt op een pagina en het is niet duidelijk dat dit de rubric is die je net hebt geupload. Als je niet gaat lezen zou het net zo goed een compleet andere rubric kunnen zijn. Er is niets dat bevestigt: dit is jouw bestand, dit is wat eruit gekomen is.",
+              "bron": "Testronde 26 augustus"
+            }
+          ]
+        },
+        {
+          "id": "G2",
+          "titel": "Criteria en scoreniveaus toevoegen of bewerken",
+          "anchors": {
+            "1": "Verwarrend, onduidelijk wat waar hoort",
+            "3": "Werkt, met vallen en opstaan",
+            "5": "Intuitief, snel in te richten"
+          },
+          "feedback": [
+            {
+              "tab": "grading",
+              "tekst": "Voeg je een criterium toe en laat je je muis op dezelfde plek staan, dan klapt daar een ander criteriumvak open en staat het nieuwe criterium buiten beeld. Risico: je denkt dat de knop niet werkte, klikt nog een keer, en hebt er ineens twee. Dat voelt onhandig.",
+              "bron": "Testronde 26 augustus"
+            },
+            {
+              "tab": "grading",
+              "tekst": "Het openklappen van een criteriumvak werkt onprettig. Niets anders in de tool werkt op deze manier, en hij klapt verder open dan nodig.",
+              "bron": "Todoist: Het openen van criterion vakje",
+              "afbeeldingen": [
+                {
+                  "pad": "afbeeldingen/criterion-vakje-open.png",
+                  "bijschrift": "Assessment rubric, een criterium klapt over de volle breedte open"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "G3",
+          "titel": "Koppelen van de rubric aan de opdracht",
+          "anchors": {
+            "1": "Onduidelijk of en hoe de koppeling is gelegd",
+            "3": "Lukt, maar voelt niet vanzelfsprekend",
+            "5": "Direct helder dat en hoe de rubric gekoppeld is"
+          },
+          "feedback": [
+            {
+              "tab": "rubric",
+              "tekst": "Score 3. Je uploadt je rubric maar krijgt geen bevestiging dat hij goed staat. Er is geen moment waarop de tool zegt: dit is jouw rubric, hij staat nu hier, en hier pas je hem aan.",
+              "bron": "Testronde 26 augustus"
+            }
+          ],
+          "score": 3
+        },
+        {
+          "id": "G4",
+          "titel": "Hergebruik of dupliceren van een bestaande rubric",
+          "anchors": {
+            "1": "Moet alles opnieuw opbouwen",
+            "3": "Mogelijk maar omslachtig",
+            "5": "In een paar stappen te kopieren of aan te passen"
+          },
+          "feedback": [
+            {
+              "tab": "rubric",
+              "tekst": "Nu moet je een nieuwe course aanmaken om een rubric te kunnen dupliceren, en dat is niet duidelijk. Mooier is een knop Dupliceren op de manage rubric pagina, die meteen een nieuwe course maakt met de naam van de oude plus copy.",
+              "bron": "Testronde 26 augustus"
+            }
+          ]
+        },
+        {
+          "id": "G6",
+          "titel": "Weging per criterium bepalen",
+          "anchors": {
+            "1": "Verdelen van de weging werkt niet",
+            "3": "Kan handmatig, kost rekenwerk",
+            "5": "Verdeling klopt vanzelf en blijft kloppen"
+          },
+          "feedback": [
+            {
+              "tab": "grading",
+              "tekst": "De weging per rubricpunt bepalen werkt niet fijn. Je past er een aan en moet zelf de rest weer kloppend maken.",
+              "bron": "Todoist: Weging per rubric punt bepalen werkt niet fijn"
+            },
+            {
+              "tab": "grading",
+              "tekst": "Voorstel: je past een weging aan en krijgt een AI suggestie, zal ik de andere criteria op x procent zetten om het gelijkwaardig te verdelen. Voorkeur gaat uit naar automatisch aanpassen. Risico daarvan: iemand past het per ongeluk aan en de AI feedback klopt daarna niet meer.",
+              "bron": "Todoist: Het werkt niet fijn, met oplossing en risicos",
+              "afbeeldingen": [
+                {
+                  "pad": "afbeeldingen/extra-criterium-0-procent.png",
+                  "bijschrift": "Nieuw criterium komt binnen op 0 procent, de rest van de weging blijft staan"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E",
+      "titel": "Extra functies",
+      "intro": "Wensen die er nu niet zijn. Geen scores, dit is een verlanglijst.",
+      "criteria": [
+        {
+          "id": "E1",
+          "titel": "Criterium verwijderen: bevestigen, deactiveren of definitief weg",
+          "anchors": null,
+          "feedback": [
+            {
+              "tab": "grading",
+              "tekst": "Verwijder je een criterium, dan is het meteen weg en kun je het niet terughalen. Er hoort eerst een bevestiging te komen: wil je dit criteriumpunt verwijderen. Daarnaast wil ik criteria kunnen deactiveren via een menu met drie puntjes. Een gedeactiveerd criterium zakt grijs naar de onderkant van de pagina en telt niet mee. Verwijderen blijft dan echt verwijderen.",
+              "bron": "Testronde 26 augustus",
+              "afbeeldingen": [
+                {
+                  "pad": "afbeeldingen/rubric-nieuwe-criteria-leeg.png",
+                  "bijschrift": "Onderkant van de rubric met lege criteria op 0 procent, nu geen manier om iets terug te halen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "E2",
+          "titel": "Focus mode per rubricvakje",
+          "anchors": null,
+          "feedback": [
+            {
+              "tab": "grading",
+              "tekst": "Er moet een focus mode per rubricvakje komen, zodat je een vakje kunt uitvergroten en er rustig in kunt werken. Nu typ je in een smal vakje en groeit de rij met je mee.",
+              "bron": "Testronde 26 augustus",
+              "afbeeldingen": [
+                {
+                  "pad": "afbeeldingen/rubric-vakje-bewerken.png",
+                  "bijschrift": "Bewerken in een rubricvakje, de tekst loopt door in een smalle kolom"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "E3",
+          "titel": "Feedbackstijl kiezen uit gecategoriseerde suggesties",
+          "anchors": null,
+          "feedback": [
+            {
+              "tab": "feedback",
+              "tekst": "Maak de suggesties visueel, zoals Lemlist dat doet met Start with an idea. Categoriseer ze en geef per categorie drie opties, dus negen voorgeselecteerde keuzes. Categorieen kunnen bijvoorbeeld overstijgend, concreet en behulpzaam zijn.",
+              "bron": "Testronde 26 augustus, vergelijking met Lemlist",
+              "afbeeldingen": [
+                {
+                  "pad": "afbeeldingen/lemlist-suggesties.png",
+                  "bijschrift": "Lemlist: suggesties in categorieen met een beeld per optie"
+                },
+                {
+                  "pad": "afbeeldingen/lemlist-lemagent.png",
+                  "bijschrift": "De hele pagina: een invoerveld met daaronder gecategoriseerde startpunten"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "E4",
+          "titel": "Feedbacklengte in plaats van een maximum aantal woorden",
+          "anchors": null,
+          "feedback": [
+            {
+              "tab": "feedback",
+              "tekst": "Max woorden is geen fijne instelling. Een aantal woorden zegt mij niets, en bij het ene feedbackpunt moet je beknopter zijn dan bij het andere. Liever korte, gemiddelde of uitgebreide feedback. En eigenlijk hoort die vraag niet zo direct aan een stand in de tool gekoppeld te zijn.",
+              "bron": "Testronde 26 augustus",
+              "afbeeldingen": [
+                {
+                  "pad": "afbeeldingen/feedbacktab-generatie-450.png",
+                  "bijschrift": "Max woorden als teller, van 150 naar 450, zonder dat duidelijk is wat dat oplevert"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "H",
+      "titel": "Algeheel oordeel",
+      "intro": "Losse observaties die niet aan een enkel criterium hangen.",
+      "criteria": [
+        {
+          "id": "H1",
+          "titel": "Grootste frictiepunt in deze test",
+          "anchors": null,
+          "feedback": []
+        },
+        {
+          "id": "H2",
+          "titel": "Grootste positieve verrassing",
+          "anchors": null,
+          "feedback": []
+        },
+        {
+          "id": "H3",
+          "titel": "Overig, nog niet ingedeeld",
+          "anchors": null,
+          "feedback": []
+        }
+      ]
+    }
+  ],
+  "bugs": [
+    {
+      "titel": "Onverwachte fout bij inloggen",
+      "tab": "signup",
+      "waar": "app.eduface.me/signin",
+      "tekst": "Bij het inloggen verschijnt rechtsonder de melding Er is een onverwachte fout opgetreden. Probeer het later opnieuw. Geen oorzaak, geen vervolgstap, en onduidelijk of het inloggen nu wel of niet gelukt is.",
+      "afbeeldingen": [
+        {
+          "pad": "afbeeldingen/signin-onverwachte-fout.png",
+          "bijschrift": "Toast rechtsonder op het inlogscherm"
+        }
+      ]
+    },
+    {
+      "titel": "Processing submissions paneel opent over de setup heen",
+      "tab": "rubric",
+      "waar": "Assessment setup, manage rubric",
+      "tekst": "Ik zat in manage rubric en klikte rechtsboven op Processing submissions. Het paneel schuift over de pagina, de achtergrond verduistert en de tweede kaart in de lijst wordt half afgesneden door de balk eronder.",
+      "afbeeldingen": [
+        {
+          "pad": "afbeeldingen/processing-submissions-paneel.png",
+          "bijschrift": "Paneel over de Assessment setup, tweede kaart valt half weg"
+        }
+      ]
+    },
+    {
+      "titel": "Taalkiezer valt over de tabbalk heen",
+      "tab": "grading",
+      "waar": "Assessment setup, taalmenu rechtsboven",
+      "tekst": "Het uitgeklapte taalmenu overlapt de Grading en Feedback tabs. De bovenste optie is afgekapt tot een streepje, alleen English is leesbaar.",
+      "afbeeldingen": [
+        {
+          "pad": "afbeeldingen/taal-dropdown-over-tabs.png",
+          "bijschrift": "Taalmenu over de tabs, bovenste optie onleesbaar"
+        }
+      ]
+    },
+    {
+      "titel": "Nieuw criterium komt binnen op 0 procent",
+      "tab": "grading",
+      "waar": "Assessment rubric, Add criterion",
+      "tekst": "Voeg je een extra criterium toe, dan staat de weging op 0 procent.",
+      "afbeeldingen": [
+        {
+          "pad": "afbeeldingen/extra-criterium-0-procent.png",
+          "bijschrift": "Toegevoegd criterium met weging 0 procent"
+        }
+      ]
+    },
+    {
+      "titel": "Rubric staat in twee talen door elkaar",
+      "tab": "grading",
+      "waar": "Assessment rubric",
+      "tekst": "Mijn rubric is deels Nederlands en deels Engels, zonder dat ik weet waardoor dat komt. De criteriumnamen zijn Nederlands, een deel van de niveaubeschrijvingen is Engels.",
+      "afbeeldingen": [
+        {
+          "pad": "afbeeldingen/grading-tab-overzicht.png",
+          "bijschrift": "Nederlandse criteriumnamen met Engelse niveaubeschrijvingen in dezelfde rubric"
+        }
+      ]
+    }
+  ]
+}

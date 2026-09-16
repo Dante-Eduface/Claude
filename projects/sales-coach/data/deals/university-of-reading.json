@@ -1,0 +1,77 @@
+{
+  "slug": "university-of-reading",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_VHVrvDSThSeR3a5Q8Pv90kf8Rt2TzoUISYmuquvQYPG",
+    "naam": "University of Reading",
+    "url": "https://app.close.com/lead/lead_VHVrvDSThSeR3a5Q8Pv90kf8Rt2TzoUISYmuquvQYPG/",
+    "lead_status": "Prospect",
+    "opportunity_id": null,
+    "fase": null,
+    "fase_type": null,
+    "waarde": null,
+    "valuta": "EUR",
+    "confidence": null,
+    "close_date": null,
+    "eigenaar": "Eduface CRM",
+    "crm_note": "",
+    "contacten": [
+      {
+        "naam": "Elizabeth McCrum",
+        "titel": "Pro-Vice-Chancellor for Education and Student Experience",
+        "email": null,
+        "id": "cont_IAYVNHsW1eB7ilF930lcC6BwNlCm0krV53VgLzQrnTH"
+      },
+      {
+        "naam": "Alan Howard",
+        "titel": "Associate Pro-Vice-Chancellor (Education and Student Experience)",
+        "email": null,
+        "id": "cont_DswO1X1SJjRUC1AfmN4eQhaecwYGfxvpQ2Dzkja2d6g"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_xQECCvNFj7VYCwlyGeFvmvJAUNb99Sepb1aagxHM5vW",
+        "soort": "call",
+        "datum": "2026-05-13",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": null,
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "VM geen haakje dus ik laat het hierbij.",
+        "transcript_beschikbaar": false,
+        "komend": false
+      }
+    ],
+    "open_taken": [],
+    "laatste_gesprek": "2026-05-13",
+    "volgende_afspraak": null,
+    "aantal_gehad": 1,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

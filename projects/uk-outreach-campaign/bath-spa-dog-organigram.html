@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  @page { size: A4 landscape; margin: 5mm; }
+  @media print { body { zoom: 0.9; } }
+  :root{
+    --navy:#002333;--green:#00E075;--green2:#067a43;--green3:#008F5A;
+    --ink:#0e1c24;--grey:#7a8a91;--cardline:#eceff1;
+    --amber:#b8860b;--red:#b3261e;--purple:#5b3ea8;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:'Inter',sans-serif;color:var(--ink);
+    background:#fbfdfd;background-image:radial-gradient(#e3eaed 1px, transparent 1px);
+    background-size:22px 22px;padding:8px 14px;
+    -webkit-print-color-adjust:exact;print-color-adjust:exact;
+  }
+  h1{font-family:'League Spartan',sans-serif;color:var(--navy);font-size:19px;}
+  .titlebar{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:3px solid var(--green);padding-bottom:7px;margin-bottom:5px;}
+  .sub{color:var(--grey);font-size:9.5px;margin-top:3px;max-width:900px;line-height:1.4;}
+  .brand{font-family:'League Spartan';font-weight:800;font-size:15px;color:var(--navy);}
+  .brand .fx{color:var(--green3);}
+
+  .tierlabel{text-align:center;font-size:8px;text-transform:uppercase;letter-spacing:.13em;color:var(--grey);font-weight:700;margin:6px 0 4px;}
+  .tier{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;}
+  .vline{width:2px;height:7px;background:#dbe4e7;margin:0 auto;}
+
+  /* CARD: photo+name on top row, description full-width below. Never split across a page. */
+  .card{
+    display:flex;flex-direction:column;
+    break-inside:avoid;page-break-inside:avoid;-webkit-column-break-inside:avoid;
+    background:#fff;border:1px solid var(--cardline);border-radius:14px;
+    padding:8px 11px;box-shadow:0 4px 14px rgba(16,40,60,.07);
+    width:250px;
+  }
+  .card.hl-eb{border:2px solid var(--navy);}
+  .card.hl-champ{border:2px solid var(--amber);}
+  .card.hl-swing{border:2px solid var(--purple);}
+  .card.hl-ally{border:1.5px solid #bfe6cf;}
+  .card.hl-enemy{border:1.5px solid #f0c4c0;}
+
+  .top{display:flex;gap:11px;align-items:center;}
+  .av{width:40px;height:40px;border-radius:50%;position:relative;overflow:hidden;flex:none;
+      background:#eef2f4;display:inline-flex;align-items:center;justify-content:center;}
+  .av img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+  .av span{color:#5a6b73;font-weight:700;font-size:14px;}
+  .av.ph{background:var(--navy);} .av.ph span{color:#fff;}
+  .head{flex:1;min-width:0;}
+  .nm{font-weight:700;font-size:13.5px;color:var(--ink);line-height:1.14;}
+  .rl{font-size:10.5px;color:var(--grey);margin-top:2px;line-height:1.22;}
+
+  .body{margin-top:6px;}
+  .tags{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:5px;}
+  .pill{font-size:9px;font-weight:600;padding:2px 8px;border-radius:20px;white-space:nowrap;}
+  .p-eb{background:#e6eef6;color:#1b4f7a;}
+  .p-champ{background:#fbeecf;color:#8a5b00;}
+  .p-swing{background:#ece3fb;color:#5b3ea8;}
+  .p-ally{background:#d9f7e7;color:#067a43;}
+  .p-neutral{background:#eef2f4;color:#56707d;}
+  .dog-conf{background:#d9f7e7;color:#067a43;}
+  .dog-inf{background:#fff3d6;color:#8a5b00;}
+  .dog-unk{background:#f0f3f4;color:#8a97a0;}
+  .hot{font-size:8.9px;color:var(--grey);line-height:1.34;}
+  .hot b{color:var(--navy);font-weight:600;}
+  .hot a{color:var(--green2);text-decoration:none;font-weight:600;}
+
+  .bottom{display:flex;gap:11px;margin-top:8px;}
+  .panel{flex:1;background:#fff;border:1px solid var(--cardline);border-radius:13px;padding:9px 12px;box-shadow:0 3px 10px rgba(16,40,60,.05);break-inside:avoid;}
+  .panel.cro{border:1.5px solid #e3c97a;}
+  .panel h4{font-family:'League Spartan';font-size:10.5px;color:var(--navy);margin-bottom:6px;}
+  .legrow{display:flex;flex-wrap:wrap;gap:7px 13px;}
+  .legitem{display:flex;align-items:center;gap:6px;font-size:9px;}
+  .ld{width:11px;height:11px;border-radius:4px;}
+  .legnote{font-size:8.5px;color:var(--grey);margin-top:7px;line-height:1.4;}
+  ul.cro{margin:0;padding-left:14px;font-size:8.6px;line-height:1.42;}
+  ul.cro li{margin-bottom:2px;} ul.cro b{color:var(--navy);}
+  .foot{font-size:7.5px;color:var(--grey);margin-top:8px;text-align:center;}
+</style>
+</head>
+<body>
+  <div class="titlebar">
+    <div>
+      <h1>Stakeholdermap — Digital Oversight Group, Bath Spa University</h1>
+      <div class="sub">Reporting line &amp; titels geverifieerd via bathspa.ac.uk / Jisc / LinkedIn. DOG-lidmaatschap: groen = bevestigd, oranje = ingeschat (met reden + bron om zelf te checken). Rollen = CRO-assessment. Stand 3 juli 2026.</div>
+    </div>
+    <div class="brand">Edu<span class="fx">face</span></div>
+  </div>
+
+  <!-- TIER 1 -->
+  <div class="tierlabel">Vice-Chancellor</div>
+  <div class="tier">
+    <div class="card hl-eb">
+      <div class="top">
+        <div class="av ph"><img src="bath-spa-faces/andrews.jpg" onerror="this.style.display='none'"><span>GA</span></div>
+        <div class="head"><div class="nm">Prof. Georgina Andrews</div><div class="rl">Vice-Chancellor</div></div>
+      </div>
+      <div class="body">
+        <div class="tags"><span class="pill p-eb">EB-niveau / sponsor</span><span class="pill dog-conf">DOG bevestigd</span></div>
+        <div class="hot">Beschrijft de DOG zelf: <b>"digitale transformatie mag niet iets zijn dat IT oplegt"</b>. Wil academisch-gedragen verandering. <a href="https://www.jisc.ac.uk/member-stories/scaling-digital-heights-bath-spas-transformation-journey">bron: Jisc</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="vline"></div>
+
+  <!-- TIER 2 -->
+  <div class="tierlabel">University Executive Board</div>
+  <div class="tier">
+    <div class="card hl-eb">
+      <div class="top">
+        <div class="av ph"><img src="bath-spa-faces/stocks.jpg" onerror="this.style.display='none'"><span>JS</span></div>
+        <div class="head"><div class="nm">Jo Stocks</div><div class="rl">Chief Operating Officer</div></div>
+      </div>
+      <div class="body">
+        <div class="tags"><span class="pill p-eb">Economic Buyer</span><span class="pill dog-inf">DOG ingeschat</span></div>
+        <div class="hot">Bezit budget: Finance + IT &amp; Digital Transformation; CIO rapporteert aan haar. <b>Ingeschat DOG-lid:</b> Jisc noemt "professional services vertegenwoordiging" in de DOG, dat is haar portfolio. <a href="https://www.bathspa.ac.uk/our-people/jo-stocks/">bron: profiel</a></div>
+      </div>
+    </div>
+    <div class="card hl-ally">
+      <div class="top">
+        <div class="av ph"><img src="bath-spa-faces/anagnostopoulou.jpg" onerror="this.style.display='none'"><span>KA</span></div>
+        <div class="head"><div class="nm">Prof. Kyriaki Anagnostopoulou</div><div class="rl">Deputy Vice-Chancellor</div></div>
+      </div>
+      <div class="body">
+        <div class="tags"><span class="pill p-ally">Academisch sponsor</span><span class="pill dog-inf">DOG ingeschat</span></div>
+        <div class="hot">Portfolio digital pedagogies &amp; innovation. <b>Ingeschat DOG-lid:</b> Jisc noemt "senior academische vertegenwoordiging"; als DVC met digitaal profiel de logische stem. <a href="https://www.bathspa.ac.uk/our-people/kyriaki-anagnostopoulou/">bron: profiel</a></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="top">
+        <div class="av ph"><img src="bath-spa-faces/newman.jpg" onerror="this.style.display='none'"><span>DN</span></div>
+        <div class="head"><div class="nm">David Newman</div><div class="rl">University Secretary &amp; Registrar</div></div>
+      </div>
+      <div class="body">
+        <div class="tags"><span class="pill p-neutral">Governance-gate</span><span class="pill dog-unk">DOG onbekend</span></div>
+        <div class="hot">Governance, policy &amp; academic standards. Bezit IT niet (dat is Stocks). Relevant voor de "aligned with policy"-eis. <a href="https://www.bathspa.ac.uk/about-us/leadership/">bron: leadership</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="vline"></div>
+
+  <!-- TIER 3 -->
+  <div class="tierlabel">DOG-kern · CIO-lijn &amp; academische lijn</div>
+  <div class="tier">
+    <div class="card hl-swing">
+      <div class="top">
+        <div class="av ph"><img src="bath-spa-faces/johnson-duval.jpg" onerror="this.style.display='none'"><span>RJ</span></div>
+        <div class="head"><div class="nm">Rachael Johnson-Duval</div><div class="rl">Chief Information Officer</div></div>
+      </div>
+      <div class="body">
+        <div class="tags"><span class="pill p-swing">Beslisser (approval-gate)</span><span class="pill dog-conf">DOG voorzitter</span></div>
+        <div class="hot"><b>Beslist of Eduface "approved tool" wordt.</b> Zorg: adoptie-/ROI-gap + data protection (Copilot = standaard). Win haar = deal. <a href="https://uk.linkedin.com/in/rachaeljohnson1">bron: LinkedIn</a> <span style="color:#b8860b">(foto handmatig toe te voegen)</span></div>
+      </div>
+    </div>
+    <div class="card hl-champ">
+      <div class="top">
+        <div class="av ph"><img src="bath-spa-faces/king.jpg" onerror="this.style.display='none'"><span>HK</span></div>
+        <div class="head"><div class="nm">Prof. Helen King</div><div class="rl">Director of Learning, Innovation, Development &amp; Skills</div></div>
+      </div>
+      <div class="body">
+        <div class="tags"><span class="pill p-champ">Champion</span><span class="pill dog-conf">DOG bevestigd</span></div>
+        <div class="hot"><b>Trekt de pilot intern; presenteerde met Eduface bij CHEST.</b> Bezit learning &amp; teaching innovation. Jouw warme ingang. <a href="https://www.chest.ac.uk/events/how-bath-spa-university-is-exploring-ai-assisted-assessment-feedback-in-higher-education/">bron: CHEST</a></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="top">
+        <div class="av ph"><img src="bath-spa-faces/thomas.jpg" onerror="this.style.display='none'"><span>KT</span></div>
+        <div class="head"><div class="nm">Kate Thomas</div><div class="rl">Head of Strategic Projects &amp; Change</div></div>
+      </div>
+      <div class="body">
+        <div class="tags"><span class="pill p-neutral">Change lead</span><span class="pill dog-unk">DOG onbekend</span></div>
+        <div class="hot">Onder Stocks, naast de CIO. Stuurt uitrol/verandertrajecten, relevant voor implementatie-buy-in. <a href="https://uk.linkedin.com/in/kate-thomas-70052495">bron: LinkedIn</a> <span style="color:#b8860b">(foto handmatig)</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="vline"></div>
+
+  <!-- TIER 4 -->
+  <div class="tierlabel">IT-leiderschap onder de CIO</div>
+  <div class="tier">
+    <div class="card">
+      <div class="top">
+        <div class="av ph"><img src="bath-spa-faces/stedham.jpg" onerror="this.style.display='none'"><span>CS</span></div>
+        <div class="head"><div class="nm">Chris Stedham</div><div class="rl">Chief Technology Officer</div></div>
+      </div>
+      <div class="body">
+        <div class="tags"><span class="pill p-neutral">Technische haalbaarheid</span><span class="pill dog-unk">DOG onbekend</span></div>
+        <div class="hot">Integratie met Blackboard Ultra + M365-stack. Neutraal tot ally als de tech-fit klopt. <a href="https://uk.linkedin.com/in/chrisstedham">bron: LinkedIn</a> <span style="color:#b8860b">(foto handmatig)</span></div>
+      </div>
+    </div>
+    <div class="card hl-ally">
+      <div class="top">
+        <div class="av ph"><img src="bath-spa-faces/jones.jpg" onerror="this.style.display='none'"><span>DJ</span></div>
+        <div class="head"><div class="nm">David Jones</div><div class="rl">Chief Information Security Officer</div></div>
+      </div>
+      <div class="body">
+        <div class="tags"><span class="pill p-ally">Ally te winnen</span><span class="pill dog-inf">DOG ingeschat</span></div>
+        <div class="hot"><b>Data protection is hun expliciete koopcriterium.</b> Win 'm vroeg met het EU-/compliance-verhaal. <b>Ingeschat DOG-lid:</b> security-rep bij een tool-approval. <a href="https://www.linkedin.com/in/david-jones-it-leadership/">bron: LinkedIn</a></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOTTOM: legend + CRO (over de leden) -->
+  <div class="bottom">
+    <div class="panel">
+      <h4>Legenda</h4>
+      <div class="legrow">
+        <div class="legitem"><span class="ld" style="background:#1b4f7a"></span> Economic Buyer</div>
+        <div class="legitem"><span class="ld" style="background:#5b3ea8"></span> Beslisser (approval-gate)</div>
+        <div class="legitem"><span class="ld" style="background:#b8860b"></span> Champion</div>
+        <div class="legitem"><span class="ld" style="background:#067a43"></span> Ally te winnen</div>
+        <div class="legitem"><span class="ld" style="background:#9aa7ad"></span> Neutraal</div>
+      </div>
+      <div class="legnote"><b>DOG-status:</b> <span style="color:#067a43">bevestigd</span> = via bron gekoppeld aan de DOG · <span style="color:#8a5b00">ingeschat</span> = afgeleid uit functie, reden + bron staan op de card, checkt zelf · <span style="color:#8a97a0">onbekend</span> = geen signaal. Foto's van CIO/CTO/Change-lead ontbreken (LinkedIn blokkeert download) — handmatig toe te voegen.</div>
+    </div>
+    <div class="panel cro">
+      <h4>CRO-assessment — wie bewerken</h4>
+      <ul class="cro">
+        <li><b>Champion = Helen King.</b> Trekt al intern. Voed haar met munitie voor de DOG (succescriteria, studentfeedback, 95% grade-alignment).</li>
+        <li><b>Approval-gate = Rachael Johnson-Duval (CIO, DOG-voorzitter).</b> Prio #1. Haak: data protection + adoptie-ROI, "approved tool, geen Big Tech".</li>
+        <li><b>Economic Buyer = Jo Stocks (COO).</b> Tekent de licentie. Bereik via King + Johnson-Duval, niet koud.</li>
+        <li><b>Ally vroeg winnen = David Jones (CISO)</b> met het EU/compliance-verhaal. <b>Tweede route = Anagnostopoulou (DVC)</b> academisch, parallel.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="foot">Eduface · vertrouwelijk · reconstructie o.b.v. publieke bronnen. DOG-lidmaatschap deels ingeschat (reden + bron per card) — finale bevestiging bij Helen King.</div>
+</body>
+</html>

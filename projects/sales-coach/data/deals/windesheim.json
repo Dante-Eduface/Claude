@@ -1,0 +1,117 @@
+{
+  "slug": "windesheim",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_ksWkVIR0pOiSuXUyFupcEMXKNM6xmNkbUVmb4PjL9M2",
+    "naam": "Windesheim",
+    "url": "https://app.close.com/lead/lead_ksWkVIR0pOiSuXUyFupcEMXKNM6xmNkbUVmb4PjL9M2/",
+    "lead_status": "Interested",
+    "opportunity_id": "oppo_9ysyeuszPsuGILIufgJtQzGNZE8XJYqo7XVPmAeDaKW",
+    "fase": "Discovery",
+    "fase_type": "active",
+    "waarde": 250000,
+    "valuta": "EUR",
+    "confidence": 0,
+    "close_date": "2026-09-22",
+    "eigenaar": "Eduface CRM",
+    "crm_note": "**Status:** Geen koopbeweging mogelijk tot het AI-beleid voor hoog-risico\ntoepassingen na de zomer duidelijk is. Geert organiseert intern een demo op 14\nsep, 1-op-1 met hem staat op 19 aug.\n\n**Wat er gebeurde:** Geert is feitelijk champion: hij nodigde zelf een groep\ncollega's uit en stuurde onze demo-video rond. Uitgangspunt aan hun kant is\neen campuslicentie voor circa 25.000 studenten en circa 1.800 docenten,\nallemaal beoordelend in Brightspace. Eduface valt bij hen onder hoog-risico AI\nen daar is nog geen kader voor. Boven 80K over vier jaar geldt\naanbestedingsplicht (meervoudig onderhands), en bezuinigingen spelen mee.\n\n**Next action:** 1-op-1 met Geert gebruiken om de sessie van 14 sep op hun situatie toe te spitsen: verwachtingen, wie er aan tafel zit, fysiek of online | Dante | 19 aug | Hoog\n\n**Next action:** Demo op locatie met Jeroen erbij | Dante | 14 sep | Hoog\n\n**Risk:** Beleid, bezuinigingen en aanbestedingsplicht liggen alle drie buiten\nGeert zijn invloed. Zolang het hoog-risico kader ontbreekt is er geen route\nnaar een handtekening, ongeacht hoe goed de demo gaat.\n\n**Action required:** Bij Geert op 19 aug ophalen wie over het hoog-risico\nkader beslist en wat de verwachte timing is, plus een prijsroute die het\neerste jaar onder de aanbestedingsgrens blijft (het per-docent-model is\ndaarvoor al eerder aangeboden).",
+    "contacten": [
+      {
+        "naam": "Geert van der Wijk",
+        "titel": "Product Owner-Educational Systems",
+        "email": "grs.vander.wijk@windesheim.nl",
+        "id": "cont_vVqPyHsBNC6CSIM18PpxauypkAMRWNcufxXWIqF5ZXi"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_t3XWogXJPHKZulHV6y54F91C8iklQN9ChEpv72xYnCi",
+        "soort": "meeting",
+        "datum": "2026-08-19",
+        "titel": " Windesheim x Eduface",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "dante.torbed@eduface.me",
+          "grs.vander.wijk@windesheim.nl"
+        ],
+        "samenvatting": "- Windesheim werkt aan stapsgewijze implementatie van AI-toepassingen in onderwijs, beginnend met low-risk pilots zoals CreatorPlus en FeedbackFruits.\n- Organisatie bereidt zich voor op high-risk AI-toepassingen door AI Impact Assessment (IAMA) in te vullen en compliance-processen op te stellen.\n- Eduface biedt gespecialiseerde feedback- en assessmentfunctionaliteiten aan, inclusief paper grader, open exam grader en studentenprofielen op basis van datapunten.\n- Windesheim heeft TrainTool voor gespreksvaardigheden geselecteerd en bereidt pilot voor in samenwerking met AI Compliance Officer en ICTO-stakeholders.\n- Demo voor Eduface-tool is gepland voor 14 september met feedback-moment op 19 september rond 14:30 uur.\n\n### Achtergrond Windesheim en Huidige Applicatielandschap\n- Windesheim gebruikt Brightspace als LMS met aanvullende tools zoals FeedbackFruits voor feedback op ingeleverd werk.\n- Organisatie beschikt over diverse AI-toepassingen van Surf en werkt aan implementatie van Uvachat voor chatondersteuning.\n- Geert van der Wijk werkt in IT-afdeling en coördineert AI-implementaties na eerder werkzaam te zijn als onderwijsadviseur.\n\n### Aanleiding voor Samenwerking met Eduface\n- Docenten hebben grote behoefte aan efficiëntere en kwalitatief betere feedback op studentenwerk.\n- Multiple domeinen bij Windesheim hebben interesse getoond voor Eduface-functionaliteit na demo's bij Beweging en Educatie, Gezondheidswetenschappen en Business Management.\n- **Dante van Eduface benaderden Geert via AI-tool die zijn mobiele nummer kon achterhalen, wat aantoont groeiende vraag naar oplossing.**\n\n### AI-Compliance en Wetgevingskader\n- Windesheim volgt Europese AI-act en wil high-risk AI-toepassingen voorzichtig implementeren via formele IAMA-proces.\n- Organisatie heeft onlangs AI Compliance Officer aangesteld die samen met Geert pilots voorbereidt.\n- Low-risk pilots met CreatorPlus en FeedbackFruits zijn succesvol afgerond; high-risk toepassingen vereisen uitgebreid IAMA-document of compactere IAMA Lite-versie.\n- Wetgeving voorziet vertraging, wat Windesheim de mogelijkheid geeft nu al te piloten onder royal path-aanpak.\n\n### Strategie voor Implementatie van AI-Toepassingen\n- Windesheim start met low-risk toepassingen om organisatie warm te maken voor AI; focus ligt op stapsgewijze acceptatie.\n- Stakeholders per domein worden betrokken bij pilots via kick-offs met leveranciers en testen in productieomgeving of acceptatieomgeving.\n- Authenticiteit van studentenwerk vormt belangrijk aandachtspunt; Windesheim schafte SchoolYear aan tegen plagiaat en AI-gegenereerde inzendingen.\n\n### Flexible Learning Routes en Onderwijsveranderingen\n- Windesheim werkt vijf à zes jaar aan flexible learning routes waarbij sinds dit collegejaar helft van studenten in nieuw systeem zit.\n- Implementatie van nieuwe tools zoals OPAL, Schedule, en Brightspace Creator Plus vormt grote belasting voor docenten naast onderwijs geven.\n- Geert ziet mogelijkheden voor AI-tools om docenten te ontlasten en kwaliteit van onderwijs te verbeteren door betere feedback.\n\n### Behoefte aan Feedback en Kwaliteitsverbetering\n- Docenten hebben veel verwachtingen en moeten vele applicaties managen; AI kan tijd besparen maar vooral kwaliteit van feedback verbeteren.\n- Rijkere feedback helpt studenten beter leren en zich volgende keer beter voorbereiden.\n- ICTO-teams en curriculumcommissies bepalen deels onderwijskwaliteit, maar individuele docenten hebben veel vrijheid in invulling.\n\n### TrainTool voor Gespreksvaardigheden\n- Windesheim heeft TrainTool geselecteerd voor training van gespreksvaardigheden waarbij studenten op rollen video's reageren.\n- Tool werd via marktconsultatie geëvalueerd tegen alternatieven en bleek unieke oplossing; contract voor vier jaar afgesloten onder afwijkingsprocedure.\n- Pilot met TrainTool en **FeedbackFruits mondeling functie start volgende week met pre-IAMA invullen.**\n\n### Functionaliteiten van Eduface\n- Eduface trainde eigen LLM-model in samenwerking met Leiden en Radboud Universiteit om consistent, AI-act-proof feedback te geven.\n- Paper grader geeft feedback op schrijfopdrachten; open exam grader nakijkt open vragen met docent als eindverantwoordelijk.\n- Eduface bouwt studentenprofielen op basis van datapunten om groei in competenties zichtbaar te maken en motivatie te vergroten.\n- Mondeling examenfunctionaliteit voldoet aan authenticiteitseis door AI-chatbot in te zetten voor vragen, waardoor docent focus kan leggen op kwaliteit van inhoud.\n\n### Integraties en Bereik van Eduface\n- Eduface integreert met Brightspace en werkt aan koppelingen met tools als Portflow en Test Vision.\n- Bedrijf werkt samen met universiteiten zoals UMCG, Radboud, Hogeschool Rotterdam en internationale partijen.\n- Eduface bestaat uit zes medewerkers: vier developers en twee founders, waarvan één met commerciële achtergrond en rechtenstudie.\n\n### Vervolg en Planning\n- Demo voor Eduface-tool gepland met ICTO'ers, AI Compliance Officer en IT-architect betrokken bij Uvachat-implementatie.\n- **Feedback moment gepland voor 19 september rond 14:30 uur om presentatieslides te verfijnen.**\n- **Formele demo gepland voor 14 september in Zwolle, waarbij Eduface team vanuit Utrecht naar Windesheim reist.**\n\n### Kernpunten Eduface-Voorstel\n- Eduface biedt meer dan enkel paper grader; platform integreert feedback, examinering en studentenprofielen in één systeem.\n- AI-model van Eduface compliant met EU-AI-act door training op relevante dataset en explainability.\n- Voorstel adresseert authenticiteit van studentenwerk en activeert kritisch denken door gericht feedback- en mondelingproces.",
+        "eigen_notitie": "Debrief\nZe gaan volgende \n\n\n\nWaarom moeten ze kopen? \nBehoeft vanuit 3 BDR en 2 ander domeinen. In deze meeting is de pijn niet naar boven gekomen enkel incidenteel gebeurtenissen. \n\nIk zou de pijn graag willen gaan uitvragen bij een van onze docenten die we eerder spraken behalve dat de pijn natuurlijk uiteenlopend is per docent. Dus we zouden wat hoger in de boom, deze informatie moeten verkrijgen. Of op basis van eigen kennis een presentatie geven die waarschijnlijkheid goed aansluit bij de pijn. \n\nWaarom moeten ze van ons kopen? \nWij zijn een van de partijen die ze gaan overwegen. Voor het verbeteren van gesprek vaardig heden zijn we niet meegnomen terwijl het wel een tool is die wie van plan zijn om te bouwen. Hun hadden moeten weten dat we deze tool in huis hadden. Door webinar's, Linkedin post en website. \n\nWe hebben ons nog niet goed kunnen onderscheiden van Feedback fruits onze enige concurrent in dit veld. Lumi is gewoon te duur. \n\nWaarom moeten ze nu kopen? \nDe wereld verandert en ze moeten actie ondernemen op alle toepassingen die er zijn. \n\nGeleerd \nOrganisatie zijn druk en en er zijn zoveel mensen die met zoveel verschillende dingen bezig zijn. Toen Geert ons af wijste was dat omdat hij geen tijd had om ons goed onder de loep te nemen. Neem niks persoonlijks.",
+        "transcript_beschikbaar": true,
+        "komend": false
+      },
+      {
+        "id": "acti_qll1jMTLjmsD4aCoZkTyAxdpXqYwItfkWIAWsa7pG1N",
+        "soort": "meeting",
+        "datum": "2026-09-09",
+        "titel": "Geert x Dante - Eduface",
+        "duur_min": 60,
+        "status": "upcoming",
+        "deelnemers": [
+          "dante.torbed@eduface.me",
+          "grs.vander.wijk@windesheim.nl"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": true
+      },
+      {
+        "id": "acti_dcLGRv3e7x3mxs9BU1ePwjLaGPmLb0PFOrjKnxBrgY3",
+        "soort": "meeting",
+        "datum": "2026-09-14",
+        "titel": "Demo Eduface",
+        "duur_min": 60,
+        "status": "upcoming",
+        "deelnemers": [
+          "aj.luth@windesheim.nl",
+          "c.t.mijsters@windesheim.nl",
+          "ce.koster@windesheim.nl",
+          "dante.torbed@eduface.me",
+          "e.eugenio@windesheim.nl",
+          "grs.vander.wijk@windesheim.nl",
+          "h.c.brink@windesheim.nl",
+          "lhj.klomp@windesheim.nl",
+          "mmt.tappel@windesheim.nl",
+          "r.k.bosma@windesheim.nl",
+          "r.runhaar@windesheim.nl",
+          "r.visscher@windesheim.nl",
+          "s.m.e.folkers@windesheim.nl"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": true
+      }
+    ],
+    "open_taken": [],
+    "laatste_gesprek": "2026-08-19",
+    "volgende_afspraak": "2026-09-09",
+    "aantal_gehad": 1,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

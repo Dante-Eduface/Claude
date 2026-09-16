@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  @page { size: A4 portrait; margin: 11mm 12mm; }
+  :root{
+    --navy:#002333;--green:#00E075;--green2:#067a43;--green3:#008F5A;
+    --ink:#13242c;--grey:#6c7d85;--line:#e4eaed;--bg:#f7fafb;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Inter',sans-serif;color:var(--ink);font-size:10.3px;line-height:1.4;
+       -webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  .titlebar{display:flex;justify-content:space-between;align-items:flex-end;
+            border-bottom:3px solid var(--green);padding-bottom:6px;margin-bottom:10px;}
+  h1{font-family:'League Spartan',sans-serif;color:var(--navy);font-size:18px;line-height:1;}
+  .sub{color:var(--grey);font-size:9px;margin-top:3px;}
+  .brand{font-family:'League Spartan';font-weight:800;font-size:15px;color:var(--navy);}
+  .brand .fx{color:var(--green3);}
+
+  .sec{margin-bottom:9px;break-inside:avoid;}
+  .sh{font-family:'League Spartan';font-size:11px;color:#fff;background:var(--navy);
+      display:inline-block;padding:3px 10px;border-radius:6px;margin-bottom:6px;letter-spacing:.02em;}
+  .grp{font-size:8.6px;text-transform:uppercase;letter-spacing:.11em;color:var(--green2);
+       font-weight:700;margin:7px 0 2px;}
+  .intro{background:var(--bg);border:1px solid var(--line);border-left:4px solid var(--green);
+         border-radius:9px;padding:9px 12px;line-height:1.5;}
+  .intro .fill{background:#fff6d6;border-bottom:1px dashed #c9a227;padding:0 6px;font-weight:700;color:var(--navy);}
+
+  ol{margin:0;padding-left:17px;}
+  ol li{margin-bottom:3px;}
+  ol li .int{color:var(--grey);font-style:italic;font-size:9px;}
+  .champ{background:#fbeecf;border:1px solid #e7cf95;border-radius:7px;padding:5px 9px;margin-top:3px;}
+  .champ b{color:#8a5b00;}
+
+  .slides{display:grid;grid-template-columns:1fr 1fr;gap:6px;}
+  .sl{background:#fff;border:1px solid var(--line);border-radius:8px;padding:7px 9px;break-inside:avoid;}
+  .sl .n{display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;
+         background:var(--green2);color:#fff;border-radius:50%;font-weight:700;font-size:9px;margin-right:5px;}
+  .sl .t{font-weight:700;color:var(--navy);font-size:10px;}
+  .sl .d{color:var(--grey);font-size:9px;margin-top:2px;line-height:1.35;}
+  .sl.empty{background:var(--bg);border-style:dashed;}
+
+  .close{background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:9px 12px;margin-bottom:7px;}
+  .close .q{font-style:italic;color:var(--ink);}
+  .close .tag{font-family:'League Spartan';font-size:9px;color:var(--green2);font-weight:700;
+              text-transform:uppercase;letter-spacing:.06em;display:block;margin-bottom:3px;}
+  .note{font-size:8.8px;color:var(--grey);margin-top:4px;}
+  table.hist{width:100%;border-collapse:collapse;}
+  table.hist td{border:1px solid var(--line);padding:5px 8px;vertical-align:top;font-size:9.4px;}
+  table.hist .fac{font-family:'League Spartan';color:var(--navy);font-weight:700;width:24%;background:var(--bg);}
+  table.hist .who{width:38%;}
+  table.hist .why{width:38%;color:var(--grey);}
+  table.hist b{color:var(--navy);}
+  .foot{font-size:7.6px;color:var(--grey);text-align:center;margin-top:8px;border-top:1px solid var(--line);padding-top:5px;}
+</style>
+</head>
+<body>
+  <div class="titlebar">
+    <div>
+      <h1>Spiekbrief, RUG / CIT</h1>
+      <div class="sub">Discovery-meeting, dinsdag 30 juni 2026, 13:00. Doel: pijn, spelers, why-now en vervolgstap helder. Niet hard pitchen.</div>
+    </div>
+    <div class="brand">Edu<span class="fx">face</span></div>
+  </div>
+
+  <!-- INTRO -->
+  <div class="sec">
+    <span class="sh">1 · Intro</span>
+    <div class="intro">
+      Hoi, ik ben Dante Torbed, pilot manager bij Eduface. Kort over mezelf: naast werk ben ik veel met sport bezig, American football en de gym, zo'n zes keer per week. Ons kantoor staat in Utrecht, naast NPULS en SURF, en we hebben een vestiging in Leiden, waar ik zelf geboren en getogen ben.<br><br>
+      Ik ben ruim drieënhalf jaar geleden als eerste bij Eduface gehaald, toen de oprichters net begonnen met bouwen, en werk nog steeds nauw met ze samen. Daardoor ken ik onze missie van binnenuit.<br><br>
+      En dan geef ik het stokje graag over aan <span class="fill">&nbsp;naam&nbsp;</span>.
+    </div>
+  </div>
+
+  <!-- DISCOVERY -->
+  <div class="sec">
+    <span class="sh">2 · Discovery-vragen</span>
+    <div class="grp">Pijn</div>
+    <ol>
+      <li>Klopt het dat er sinds maart 2026 geen externe krachten meer ingehuurd mogen worden, op een paar uitzonderingen na? <span class="int">(vacaturestop bevestigen)</span></li>
+      <li>Wat betekent dat voor het nakijken? Mijn beeld is dat werk dat eerst werd uitbesteed nu terugvalt op vast personeel. Klopt dat, en hoe merken jullie dat? <span class="int">(pijn laten benoemen)</span></li>
+    </ol>
+    <div class="grp">Why-now</div>
+    <ol start="3">
+      <li>Wat maakt dat dit nú op de agenda staat, en niet vorig jaar? <span class="int">(de trigger)</span></li>
+      <li>De RUG zet sterk in op digitale autonomie en minder afhankelijkheid van Big Tech. Speelt die ambitie mee in waarom jullie dit nu verkennen? <span class="int">(EB-agenda als driver)</span></li>
+      <li>Werkt dit naar een moment of deadline toe? Denk aan de EU AI Act die vanaf augustus 2026 geldt voor AI bij toetsing. <span class="int">(urgentie zonder forceren)</span></li>
+    </ol>
+    <div class="grp">Gewenste uitkomst</div>
+    <ol start="6">
+      <li>Als dit over een jaar precies werkt zoals jullie willen, wat is er dan anders, voor docenten, studenten en bestuur? <span class="int">(desired outcome)</span></li>
+      <li>Waaraan zouden jullie zien dat het een succes is? <span class="int">(succesmaatstaf)</span></li>
+    </ol>
+    <div class="grp">Spelers</div>
+    <ol start="8">
+      <li>Wie zou er betrokken moeten zijn om dit project tot een succes te leiden? <span class="int">(players)</span></li>
+      <li>
+        <div class="champ"><b>Champion-vraag:</b> We zouden hier zelf ontzettend graag samen iets moois van maken. Als dit doorgaat, wie binnen jullie zou dit het liefst willen trekken, en met wie kan ik daarvoor het beste optrekken?</div>
+      </li>
+    </ol>
+  </div>
+
+  <!-- SLIDES -->
+  <div class="sec">
+    <span class="sh">3 · Slides (alleen wat in beeld staat)</span>
+    <div class="slides">
+      <div class="sl"><div><span class="n">1</span><span class="t">Ons eigen AI-model</span></div><div class="d">Digitale autonomie. 3 cards: eigen model (geen GPT/Gemini/Claude), data blijft in Nederland (NL-vlag), klein en efficiënt (bar vs Big Tech).</div></div>
+      <div class="sl"><div><span class="n">2</span><span class="t">Bewijs: Bath Spa University</span></div><div class="d">94% match docent (96% in OBM). 435 submissions, 6 vakken / 3 disciplines, 13 docenten.</div></div>
+      <div class="sl"><div><span class="n">3</span><span class="t">Onze visie</span></div><div class="d">Visie-slide uit de board-meeting (product en missie).</div></div>
+      <div class="sl empty"><div><span class="n">4</span><span class="t">Lege slide</span></div><div class="d">Geen inhoud, overgang/pauze.</div></div>
+      <div class="sl"><div><span class="n">5</span><span class="t">Risico's van zelf bouwen</span></div><div class="d">Anoniem praktijkverhaal (ICM): onderhoud slokte alles op, workflow liep vast, geen ruimte voor innovatie, alsnog afhankelijk van Big Tech.</div></div>
+      <div class="sl"><div><span class="n">6</span><span class="t">Voldoen aan de EU AI Act</span></div><div class="d">Human-in-the-loop (docent beslist). DPIA uitgevoerd, AVG-conform + EU-gehost, verwerkersovereenkomst klaar. Hoog-risico vanaf aug 2026.</div></div>
+    </div>
+  </div>
+
+  <!-- CLOSE 1 -->
+  <div class="sec">
+    <span class="sh">4 · Afsluitvraag 1, ruimte voor vragen</span>
+    <div class="close">
+      <span class="tag">Luister wie doorvraagt op resultaten = champion/fan</span>
+      <span class="q">"Dat was het van onze kant. Voordat we het over een vervolg hebben: zijn er vragen, of dingen die ik kan verduidelijken?"</span>
+    </div>
+  </div>
+
+  <!-- CLOSE 2 -->
+  <div class="sec">
+    <span class="sh">5 · Afsluitvraag 2, vervolgstap</span>
+    <div class="close">
+      <span class="tag">Stel voor: technische validatie (niet de pilot, dat komt later)</span>
+      <span class="q">"Een logische vervolgstap lijkt me een korte technische validatie: kunnen we op jullie eigen materiaal laten zien dat AI-grading betrouwbaar werkt? Dat doen we samen met onze CTO, Menno Hahuri, en jullie mensen die de toetstech kennen, Bas en Allard. Zouden jullie daarvoor openstaan?"</span>
+      <div class="note">Reminder: de bredere pilot is het einddoel, de technische validatie is nu de logische tussenstap. Na de meeting: bevestigingsmail met pijn + spelers + why-now + vervolgstap = Discovery-gate door.</div>
+    </div>
+  </div>
+
+  <!-- HISTORIE -->
+  <div class="sec">
+    <span class="sh">6 · Eerdere contacten met de RUG</span>
+    <table class="hist">
+      <tr>
+        <td class="fac">Faculteit Rechten</td>
+        <td class="who">Eerst <b>Bas Beijer</b>, later <b>Adekunle</b></td>
+        <td class="why">Stilgevallen: Bas ging met pensioen.</td>
+      </tr>
+      <tr>
+        <td class="fac">Economie &amp; Bedrijfskunde (FEB)</td>
+        <td class="who"><b>Koos Winnips</b></td>
+        <td class="why">Stilgevallen: Koos was lange tijd niet aan het werk.</td>
+      </tr>
+      <tr>
+        <td class="fac">NPuls</td>
+        <td class="who"><b>Tom Spits</b>, NPuls-coördinator RUG (mailcontact)</td>
+        <td class="why">Zag het als interessante tool, maar zag de noodzaak er nog niet van in.</td>
+      </tr>
+    </table>
+    <div class="note"><b>Reinard van Dalen</b> zat in deze trajecten vaak in de CC.</div>
+  </div>
+
+  <div class="foot">Eduface · vertrouwelijk · cijfers onderbouwd in dossier-cost-justification-en-datalek.md + ROI-analyse</div>
+</body>
+</html>

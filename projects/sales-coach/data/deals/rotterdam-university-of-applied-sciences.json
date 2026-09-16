@@ -1,0 +1,235 @@
+{
+  "slug": "rotterdam-university-of-applied-sciences",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_sBQJUEcvvOsFiQ1RvvogLPX2cnpgGcs9VQVaqGI4dX8",
+    "naam": "Rotterdam University of Applied Sciences",
+    "url": "https://app.close.com/lead/lead_sBQJUEcvvOsFiQ1RvvogLPX2cnpgGcs9VQVaqGI4dX8/",
+    "lead_status": "Actief",
+    "opportunity_id": "oppo_Xm3tczxJvAEKXAxj0DUXoq0CYqgWqD9E2hXQDPIeZhh",
+    "fase": "Contracting",
+    "fase_type": "active",
+    "waarde": 20000,
+    "valuta": "EUR",
+    "confidence": 65,
+    "close_date": "2026-10-13",
+    "eigenaar": "Eduface CRM",
+    "crm_note": "**Status:** Voorstel 26/27 ligt klaar op de aantallen van Mark Boot, maar de\nlooptijdvraag staat open en er is nog geen beslisproces.\n\n**Wat er gebeurde:** Mark Boot leverde de aantallen voor het vervolg op\nTransities Leiden: aanname 175 deelnemers, met feedbackmomenten op zowel het\nindividuele portfoliodeel als het groepsrapport. Prijsmodel is de standaard\nSURF DAS EdTech-staffel tot 500 studentplaatsen, dus er blijven 325\nstudentplaatsen over die BDK zonder meerkosten met andere vakken in dezelfde\nperiode kan vullen. Voor verzending is advies gevraagd over een contract van 1\nversus 2 jaar. De vorige pilot (4.568,96 euro) is getekend en gefactureerd op\nnaam van de onderwijsmanager Bedrijfskunde; of zijn mandaat ook geldt voor een\nbredere uitrol is nooit bevestigd.\n\n**Next action:** Looptijd 1 of 2 jaar afstemmen met Paul en offerte 26/27 versturen | Jeroen | <datum onbekend> | Hoog\n\n**Next action:** Beslispad vastleggen: wie tekent, gaat het via inkoop | Jeroen | <datum onbekend> | Hoog\n\n**Risk:** Geen beslisproces bepaald (eigen SSO-note 26 juni), waardoor de\nofferte naar een contactpersoon gaat zonder bevestigd mandaat.\n\n**Action required:** Jeroen heeft van BDK bevestiging nodig wie tekent en of\ninkoop erbij komt, voordat het voorstel de deur uit gaat.",
+    "contacten": [
+      {
+        "naam": "Hermans, P.J.A.",
+        "titel": null,
+        "email": "p.hermans@hr.nl",
+        "id": "cont_dn63hT1cN1Ie7JyBSgZOgGlP36rHI0ApFsND4CFY6fi"
+      },
+      {
+        "naam": "Sam Wubben",
+        "titel": "Privacy Officer / Functionaris Gegevensbescherming",
+        "email": "s.a.m.wubben@hr.nl",
+        "id": "cont_7n0zyK5nZ7HrhFioTNaUt7M1X34W9o0LRknfEe3RCct"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_SWBgCerbzUYrFWNoyaJAvb3T9aCkEXawuh9U0BhAGmw",
+        "soort": "meeting",
+        "datum": "2025-10-13",
+        "titel": "RE: Eduface account",
+        "duur_min": 45,
+        "status": "completed",
+        "deelnemers": [
+          "dante.torbed@eduface.me",
+          "jeroen.van.gessel@eduface.me",
+          "m.j.g.boot@hr.nl",
+          "p.hermans@hr.nl"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_L4L8XMGWXH8RWpl8WOg1VOzbbv3rMf65nCTignohIVK",
+        "soort": "meeting",
+        "datum": "2025-11-03",
+        "titel": "Eduface x Hogeschool Rotterdam",
+        "duur_min": 45,
+        "status": "completed",
+        "deelnemers": [
+          "dante.torbed@eduface.me",
+          "jeroen.van.gessel@eduface.me",
+          "n.j.kemp-geerman@hr.nl",
+          "p.hermans@hr.nl"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_NxCa3rGcngMyrxgkD8CxO3ejdl7dCvWqv8I5m5XWVes",
+        "soort": "meeting",
+        "datum": "2025-11-27",
+        "titel": "RE: Voorstel Pilot IA & Afstuderen v0.5.docx",
+        "duur_min": 45,
+        "status": "completed",
+        "deelnemers": [
+          "dante.torbed@eduface.me",
+          "jeroen.van.gessel@eduface.me",
+          "p.hermans@hr.nl"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_fBiHMtAkygNB8bUJyjzPXNPc2YqB7DcjlzoLDQKHR8k",
+        "soort": "meeting",
+        "datum": "2026-02-02",
+        "titel": "Eduface - Inregelen voor pilot",
+        "duur_min": 120,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "p.hermans@hr.nl"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_NET11eueicmnleVb3mHXb8pU66QcZ4sik2zPJxC0fx4",
+        "soort": "meeting",
+        "datum": "2026-02-02",
+        "titel": "Eduface check-in: feedback eerste test",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "e.de.kleijn@hr.nl",
+          "j.valtulina@hr.nl",
+          "jeroen.van.gessel@eduface.me",
+          "m.j.g.boot@hr.nl",
+          "p.hermans@hr.nl"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_QXY3BBR98Xu9W9OVho6XR79eUUC2hdFzQkzKglzTcaU",
+        "soort": "meeting",
+        "datum": "2026-02-05",
+        "titel": "RE: Terugkoppeling Pilot Eduface - 1e keer",
+        "duur_min": 30,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "p.hermans@hr.nl"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_r01PvjNmt953XqxvSGISXiOguaBlI62hP0QLtJLLyly",
+        "soort": "meeting",
+        "datum": "2026-03-17",
+        "titel": "Eduface afstemming",
+        "duur_min": 30,
+        "status": "completed",
+        "deelnemers": [
+          "j.valtulina@hr.nl",
+          "jeroen.van.gessel@eduface.me",
+          "p.hermans@hr.nl"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_vtJuTkpqNjzeSEJmmbqq4TSNdfTkbuDwGGdeRKa6zPm",
+        "soort": "meeting",
+        "datum": "2026-04-24",
+        "titel": "Test - Kralingse Zoom",
+        "duur_min": 120,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "p.hermans@hr.nl"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_glfHMBqpiHNm7YTSr4Y2NsXV63GUqDgRRIGfYQ970Zi",
+        "soort": "meeting",
+        "datum": "2026-06-02",
+        "titel": "Voorbespreking evaluatie",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "p.hermans@hr.nl"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_R0FdwaJ5JbD6ohZx1tUAr1lPWpn9OXkn5buWvT7i7GI",
+        "soort": "meeting",
+        "datum": "2026-06-08",
+        "titel": "Evaluatie Pilot Eduface",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "m.j.g.boot@hr.nl",
+          "n.w.wagenaar@hr.nl",
+          "p.hermans@hr.nl"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      }
+    ],
+    "open_taken": [],
+    "laatste_gesprek": "2026-06-08",
+    "volgende_afspraak": null,
+    "aantal_gehad": 10,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

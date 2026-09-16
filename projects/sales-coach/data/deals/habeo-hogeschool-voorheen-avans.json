@@ -1,0 +1,90 @@
+{
+  "slug": "habeo-hogeschool-voorheen-avans",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_mo0NSzMGaA5uqx0E0JNAsqnOLgZ3B1WJtKLEfqLQ4Fe",
+    "naam": "Habeo+ Hogeschool (voorheen Avans+)",
+    "url": "https://app.close.com/lead/lead_mo0NSzMGaA5uqx0E0JNAsqnOLgZ3B1WJtKLEfqLQ4Fe/",
+    "lead_status": "Prospect",
+    "opportunity_id": null,
+    "fase": null,
+    "fase_type": null,
+    "waarde": null,
+    "valuta": "EUR",
+    "confidence": null,
+    "close_date": null,
+    "eigenaar": "Eduface CRM",
+    "crm_note": "",
+    "contacten": [
+      {
+        "naam": "Coen Toebosch",
+        "titel": "Algemeen directeur",
+        "email": null,
+        "id": "cont_WOGHhWNnOktLHRdZZAbL3k56JQG7Q4eG59s1HfRLEKe"
+      },
+      {
+        "naam": "Annemiek Slofstra",
+        "titel": "Opleidingsmanager (belcontact onderwijs/kwaliteit)",
+        "email": null,
+        "id": "cont_CUZtUQl7oFayK1kq0Rdli7xnOwpFwAvIP33sUET1fwN"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_mJxIAHDM6d44fy7VZT7RAkBcA2wIVpxxMaiWsRudF7J",
+        "soort": "call",
+        "datum": "2026-08-06",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "VM juiste nummer wel",
+        "transcript_beschikbaar": true,
+        "komend": false
+      },
+      {
+        "id": "acti_45eMtR0iNrrkY2hVqw1HkJc6pP3kxpD2Cvna870dzZ1",
+        "soort": "call",
+        "datum": "2026-08-24",
+        "titel": "Telefoon outbound",
+        "duur_min": 2,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "VM ingesproken",
+        "transcript_beschikbaar": true,
+        "komend": false
+      }
+    ],
+    "open_taken": [],
+    "laatste_gesprek": "2026-08-24",
+    "volgende_afspraak": null,
+    "aantal_gehad": 2,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

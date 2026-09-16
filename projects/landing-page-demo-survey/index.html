@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eduface — See it on your own assignments</title>
+<meta name="description" content="Eduface drafts the feedback and the grade. You approve it. Book a 30-minute demo with a real assignment from your course.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!--
+  DEMO LANDING PAGE, 11-09-2026
+  - One goal: a booked demo. One conversion point: the #demo block (3 questions, then the calendar inline).
+  - Every "Book a demo" button on the page scrolls to #demo. Nothing opens a new tab.
+  - Green only on the hero CTA. Every other button is navy. (core/regels.md)
+  - Built to web/framer.md: stacks + gap, no margins on children, no fixed heights, minmax grids.
+  - Copy is plain spoken English. Claims only from references/eduface-product.md.
+  - Compliance text (AI Act / GDPR) is the text that was already on the live site. Confirm before shipping.
+  - No testimonials: we have no quotes cleared for use. Add when we do.
+  - Survey answers are appended to the Calendly URL as utm_content so they land on the booking.
+-->
+
+<header class="nav">
+  <div class="shell">
+    <div class="wrap nav-inner">
+      <a href="#top" class="nav-logo"><img src="brand_assets/logos/logo_navy.png" alt="Eduface"></a>
+      <nav class="nav-menu grow">
+        <a href="#how" class="t-body">How it works</a>
+        <a href="#numbers" class="t-body">Proof</a>
+        <a href="#trust" class="t-body">Trust</a>
+        <a href="#faq" class="t-body">FAQ</a>
+      </nav>
+      <a class="btn btn-navy btn-sm" href="#demo" data-demo><span>Book a demo</span></a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero sect sect-flush-bottom">
+    <div class="shell">
+      <div class="wrap hero-stack">
+        <span class="t-label c-accent">AI feedback &amp; grading for higher education</span>
+        <h1 class="t-h1 hero-h">Mark paper 140 like you marked paper one</h1>
+        <p class="t-lead c-muted hero-lede">Eduface drafts the feedback and the grade. You approve it. Students never see anything you didn't sign off.</p>
+        <div class="hero-cta">
+          <a class="btn btn-green" href="#demo" data-demo><span>Book a 30-minute demo</span></a>
+          <a class="btn btn-line" href="#how"><span>See how it works</span></a>
+        </div>
+
+        <div class="dark-block on-dark rv-hero">
+          <div class="db-stage">
+            <div class="db-grid">
+
+              <div class="dcard db-side">
+                <span class="t-key c-on-dark-faint">Submission</span>
+                <div class="who-row">
+                  <span class="av av-green" style="width:42px;height:42px"><span>SV</span></span>
+                  <span class="who-name">
+                    <span class="t-body c-on-dark" style="font-weight:600">S. de Vries</span>
+                    <span class="t-small c-on-dark-faint">Essay · draft 3</span>
+                  </span>
+                </div>
+                <div class="who-meta">
+                  <div class="meta-row"><span class="t-small c-on-dark-faint grow">In batch</span><span class="t-small c-on-dark">12 of 142</span></div>
+                  <div class="meta-row"><span class="t-small c-on-dark-faint grow">Rubric</span><span class="t-small c-on-dark">Research Methods</span></div>
+                  <div class="meta-row"><span class="t-small c-on-dark-faint grow">Status</span><span class="t-small c-on-dark">Awaiting you</span></div>
+                </div>
+                <div class="who-meta">
+                  <div class="meta-row"><span class="t-small c-on-dark-faint grow">Issue identification</span><span class="t-small c-green">8 / 10</span></div>
+                  <div class="meta-row"><span class="t-small c-on-dark-faint grow">Use of sources</span><span class="t-small c-green">9 / 10</span></div>
+                  <div class="meta-row"><span class="t-small c-on-dark-faint grow">Depth of analysis</span><span class="t-small c-amber">Review</span></div>
+                </div>
+              </div>
+
+              <div class="dcard db-main">
+                <span class="t-key c-on-dark-faint">Feedback drafted, waiting on you</span>
+                <div class="stack">
+                  <div class="cmt cmt-front">
+                    <span class="cmt-mark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#00E075" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                    <span class="cmt-t grow">
+                      <span class="t-body c-on-dark" style="font-weight:500">Tie the thesis back to your research question</span>
+                      <span class="t-micro c-on-dark-faint">Criterion 1 · Issue identification</span>
+                    </span>
+                    <span class="pill pill-green"><span>Approve</span></span>
+                  </div>
+                  <div class="cmt back-1">
+                    <span class="cmt-mark"></span>
+                    <span class="cmt-t grow"><span class="t-body c-on-dark">Source is strong, link it to criterion 2</span></span>
+                    <span class="pill pill-green"><span>Approve</span></span>
+                  </div>
+                  <div class="cmt back-2">
+                    <span class="cmt-mark"></span>
+                    <span class="cmt-t grow"><span class="t-body c-on-dark">Conclusion restates, it does not conclude</span></span>
+                    <span class="pill pill-green"><span>Approve</span></span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="db-facts">
+            <span class="fact">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#00E075" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="t-body c-on-dark-soft">You approve every comment</span>
+            </span>
+            <span class="fact">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h10" stroke="#4D9FFF" stroke-width="2.4" stroke-linecap="round"/></svg>
+              <span class="t-body c-on-dark-soft">Scored against your own rubric</span>
+            </span>
+            <span class="fact">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M12 8v5m0 3.5v.01M12 3l9 16H3l9-16Z" stroke="#F0A531" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="t-body c-on-dark-soft">Low confidence is flagged, not guessed</span>
+            </span>
+          </div>
+
+          <div class="db-foot">
+            <span class="t-body c-muted">Used by teaching teams at</span>
+            <div class="logo-wall">
+              <span class="logo-cell"><img src="brand_assets/schools/rotterdam.svg" alt="Hogeschool Rotterdam"></span>
+              <span class="logo-cell"><img src="brand_assets/schools/haagse.png" alt="De Haagse Hogeschool" class="ink"></span>
+              <span class="logo-cell"><img src="brand_assets/schools/tilburg.svg" alt="Tilburg University" class="xl ink"></span>
+              <span class="logo-cell"><img src="brand_assets/schools/radboud.svg" alt="Radboud Universiteit"></span>
+              <span class="logo-cell"><img src="brand_assets/schools/leiden.svg" alt="Universiteit Leiden" class="tall"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== THE PROBLEM, IN THE LECTURER'S WORDS ===== -->
+  <section id="problem" class="sect">
+    <div class="shell">
+      <div class="wrap sect-stack">
+        <div class="head center">
+          <span class="t-label c-accent">Sound familiar?</span>
+          <h2 class="t-h2">Marking that stops eating your week</h2>
+          <p class="t-body-lg c-muted">Not a tool you have to learn. A pile that is already half done when you sit down.</p>
+        </div>
+        <div class="offer">
+          <div class="offer-card rv" style="--d:0ms">
+            <span class="ic ic-green"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3v9m0 0l-3.5-3.5M12 12l3.5-3.5M4 15v4a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4" stroke="#002333" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <h3 class="t-h5">Your Sunday back</h3>
+            <p class="t-body c-muted">Open the batch and the reading is done. You are reviewing judgements, not starting from a blank page 142 times.</p>
+          </div>
+          <div class="offer-card rv" style="--d:140ms">
+            <span class="ic ic-sky"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 12h4l3-8 4 16 3-8h4" stroke="#002333" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <h3 class="t-h5">The same standard, all the way down</h3>
+            <p class="t-body c-muted">Paper 1 and paper 142 get read against the same rubric with the same care. No drift because it is late.</p>
+          </div>
+          <div class="offer-card rv" style="--d:280ms">
+            <span class="ic ic-amber"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M20 12a8 8 0 1 1-3.2-6.4M20 4v5h-5" stroke="#002333" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <h3 class="t-h5">Students fix it while it counts</h3>
+            <p class="t-body c-muted">Feedback on draft two, not two weeks after the deadline. They get to act on it before the grade is fixed.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section id="how" class="sect band-card">
+    <div class="shell">
+      <div class="wrap sect-stack">
+        <div class="head center">
+          <span class="t-label c-accent">How it works</span>
+          <h2 class="t-h2">Three steps. You are in charge of the third.</h2>
+          <p class="t-body-lg c-muted">Students submit where they always did. Nothing changes for them until you say so.</p>
+        </div>
+        <div class="steps">
+          <div class="step rv" style="--d:0ms">
+            <span class="step-n">1</span>
+            <h3 class="t-h5">Submissions land in Eduface</h3>
+            <p class="t-body c-muted">Straight from your LMS assignment, or uploaded as a batch. Your rubric or learning outcomes go in once.</p>
+          </div>
+          <div class="step rv" style="--d:140ms">
+            <span class="step-n">2</span>
+            <h3 class="t-h5">Eduface drafts feedback and a grade</h3>
+            <p class="t-body c-muted">It marks the exact passage, writes the comment against your criterion and proposes a score with the reasoning. Where it is unsure, it says so.</p>
+          </div>
+          <div class="step rv" style="--d:280ms">
+            <span class="step-n">3</span>
+            <h3 class="t-h5">You approve, edit or bin it</h3>
+            <p class="t-body c-muted">Nothing reaches a student unapproved. Signed-off grades go back to your gradebook. The more you correct it, the closer it gets.</p>
+          </div>
+        </div>
+
+        <div class="prow" style="padding-top:8px;border-top:none">
+          <div class="prow-text">
+            <span class="t-label c-accent">What the lecturer sees</span>
+            <h3 class="t-h3">Every comment names its criterion</h3>
+            <p class="t-body-lg c-muted body">You can check the reasoning, not just the number. Nothing arrives as a black box, and the grade is a proposal until you sign it.</p>
+            <ul class="points">
+              <li><span class="tick tick-green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#007B54" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t-body">Marks the passage, not the whole paper</span></li>
+              <li><span class="tick tick-green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#007B54" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t-body">Score and reasoning per criterion</span></li>
+              <li><span class="tick tick-amber"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#A86D0D" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t-body">Uncertainty comes to you, flagged</span></li>
+            </ul>
+          </div>
+          <div class="pvis on-dark">
+            <div class="dcard">
+              <span class="t-key c-on-dark-faint">Research Methods · rubric</span>
+              <div class="rrows">
+                <div class="rrow"><span class="t-body c-on-dark grow">Issue identification</span><span class="pill pill-green"><span>8 / 10</span></span><span class="rbar"><i class="rv-bar" style="width:80%;--d:0ms"></i></span></div>
+                <div class="rrow"><span class="t-body c-on-dark grow">Use of sources</span><span class="pill pill-green"><span>9 / 10</span></span><span class="rbar"><i class="rv-bar" style="width:90%;--d:90ms"></i></span></div>
+                <div class="rrow rev"><span class="t-body c-on-dark grow">Depth of analysis</span><span class="pill pill-amber"><span>Needs you</span></span><span class="rbar"><i class="rv-bar amber" style="width:55%;--d:180ms"></i></span></div>
+                <div class="rrow"><span class="t-body c-on-dark grow">Structure</span><span class="pill pill-green"><span>7 / 10</span></span><span class="rbar"><i class="rv-bar" style="width:70%;--d:270ms"></i></span></div>
+                <div class="rrow"><span class="t-body c-on-dark grow">Referencing</span><span class="pill pill-green"><span>9 / 10</span></span><span class="rbar"><i class="rv-bar" style="width:90%;--d:360ms"></i></span></div>
+              </div>
+              <div class="rtotal">
+                <span class="t-small c-on-dark-faint grow">Proposed grade, pending your approval</span>
+                <span class="t-num c-green" style="font-size:2.25rem" data-count="8.2" data-decimals="1">8.2</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NUMBERS ===== -->
+  <section id="numbers" class="sect band-navy on-dark">
+    <div class="shell">
+      <div class="wrap sect-stack">
+        <div class="head">
+          <span class="t-label c-green">Measured, not claimed</span>
+          <h2 class="t-h2 c-on-dark">How close it gets to your grade</h2>
+          <p class="t-body-lg c-on-dark-soft">One pilot at a UK university, June 2026. Six modules, thirteen markers.</p>
+        </div>
+        <div class="nums">
+          <div class="num-item rv-stat" style="--d:0ms"><span class="t-num num-n c-sky" data-count="435">435</span><span class="t-body c-on-dark-soft">assignments graded by 13 lecturers using Eduface</span></div>
+          <div class="num-item rv-stat" style="--d:35ms">
+            <span class="t-num num-n c-amber" data-count="6" data-prefix="~" data-suffix=" pts">~6 pts</span>
+            <span class="t-body c-on-dark-soft">average gap between its proposal and the lecturer's grade</span>
+            <span class="scale">
+              <span class="scale-bar"><i class="amber" style="width:6%"></i></span>
+              <span class="scale-ends"><span class="t-micro c-on-dark-faint grow">0</span><span class="t-micro c-on-dark-faint">100 point scale</span></span>
+            </span>
+          </div>
+          <div class="num-item rv-stat" style="--d:70ms">
+            <span class="t-num num-n c-green" data-count="2" data-prefix="~" data-suffix=" pts">~2 pts</span>
+            <span class="t-body c-on-dark-soft">average gap once the lecturer has tuned it</span>
+            <span class="scale">
+              <span class="scale-bar"><i class="green" style="width:2%"></i></span>
+              <span class="scale-ends"><span class="t-micro c-on-dark-faint grow">0</span><span class="t-micro c-on-dark-faint">100 point scale</span></span>
+            </span>
+          </div>
+        </div>
+        <div class="nums-foot">
+          <p class="t-small c-on-dark-faint">That is distance from your grade, not how often it matched exactly. The point is the last number: the more you tune it, the closer it gets, which means you are steering it. Review time per submission in that pilot was two to three minutes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRUST ===== -->
+  <section id="trust" class="sect">
+    <div class="shell">
+      <div class="wrap sect-stack">
+        <div class="head center">
+          <span class="t-label c-accent">Built to pass procurement</span>
+          <h2 class="t-h2">The questions your quality office will ask</h2>
+          <p class="t-body-lg c-muted">Bring them to the call. The short version is below.</p>
+        </div>
+        <div class="trust-grid">
+          <div class="comp-card">
+            <div class="comp-head">
+              <span class="ic ic-sm ic-green"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v6c0 4.2-2.9 7.5-7 9-4.1-1.5-7-4.8-7-9V6l7-3Z" stroke="#002333" stroke-width="2" stroke-linejoin="round"/></svg></span>
+              <span class="t-label c-accent">EU AI Act</span>
+            </div>
+            <h3 class="t-h4">Lecturer in the loop, by design</h3>
+            <p class="t-body c-muted sub">Eduface runs its own education model, not a third-party API. Every grade is explainable and auditable, and a lecturer signs off before anything reaches a student.</p>
+            <ul class="points">
+              <li><span class="tick tick-green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#007B54" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t-body">Every grading decision is explainable</span></li>
+              <li><span class="tick tick-green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#007B54" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t-body">Built for the high-risk AI requirements</span></li>
+              <li><span class="tick tick-green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#007B54" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t-body">100% of grades signed off by a lecturer</span></li>
+            </ul>
+          </div>
+          <div class="comp-card">
+            <div class="comp-head">
+              <span class="ic ic-sm ic-sky"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M6 11V8a6 6 0 1 1 12 0v3M5 11h14v9H5v-9Z" stroke="#002333" stroke-width="2" stroke-linejoin="round"/></svg></span>
+              <span class="t-label c-accent">GDPR</span>
+            </div>
+            <h3 class="t-h4">Your data, under your control</h3>
+            <p class="t-body c-muted sub">Assignments are processed in the EU, never used for model training, and deleted on your schedule. We sign a Data Processing Agreement on request.</p>
+            <ul class="points">
+              <li><span class="tick tick-sky"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#1F6FD0" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t-body">Processed in the EU, never shared</span></li>
+              <li><span class="tick tick-sky"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#1F6FD0" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t-body">Student work never used for training</span></li>
+              <li><span class="tick tick-sky"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#1F6FD0" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t-body">DPA for EU and UK institutions</span></li>
+            </ul>
+          </div>
+          <div class="comp-card">
+            <div class="comp-head">
+              <span class="ic ic-sm ic-amber"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H19v16H5.5A1.5 1.5 0 0 1 4 18.5v-13ZM8 4v16M11.5 9h4M11.5 13h4" stroke="#002333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="t-label c-accent">Your LMS</span>
+            </div>
+            <h3 class="t-h4">Lives inside what you already run</h3>
+            <p class="t-body c-muted sub">Students submit where they always did. Approved grades land back in the gradebook. Nobody on your team learns a new system.</p>
+            <div class="lms-row">
+              <img src="brand_assets/lms/moodle.svg" alt="Moodle">
+              <img src="brand_assets/lms/canvas.svg" alt="Canvas">
+              <img src="brand_assets/lms/blackboard.png" alt="Blackboard">
+              <img src="brand_assets/lms/brightspace.png" alt="Brightspace">
+            </div>
+            <p class="t-small c-muted">Running something else? Bring it to the call.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DEMO: 3 QUESTIONS, THEN THE CALENDAR ===== -->
+  <section id="demo" class="sect">
+    <div class="shell">
+      <div class="wrap">
+        <div class="demo">
+          <div class="demo-text">
+            <span class="t-label c-green">Book a demo</span>
+            <h2 class="t-h2 c-on-dark">Thirty minutes, your rubric, one real assignment</h2>
+            <p class="t-body-lg c-on-dark-soft sub">Three quick questions so we put the right person on the call and skip the generic tour. Then pick a time that suits you.</p>
+            <ul class="demo-list">
+              <li><span class="tick tick-green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#00E075" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t-body c-on-dark-soft">We run it on an assignment from your course, live</span></li>
+              <li><span class="tick tick-green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#00E075" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t-body c-on-dark-soft">You see what it flags and what it gets wrong</span></li>
+              <li><span class="tick tick-green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#00E075" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t-body c-on-dark-soft">No account, no install, no slide deck</span></li>
+            </ul>
+            <p class="t-small c-on-dark-faint">Prefer email? <a href="mailto:info@eduface.me" style="text-decoration:underline">info@eduface.me</a></p>
+          </div>
+
+          <div class="survey" id="survey" aria-live="polite">
+            <div class="sv-head">
+              <span class="t-small c-muted grow" id="sv-label">Question 1 of 3</span>
+              <span class="sv-dots" aria-hidden="true"><span class="sv-dot on"></span><span class="sv-dot"></span><span class="sv-dot"></span></span>
+            </div>
+
+            <!-- Q1 role -->
+            <div class="sv-step in" data-step="1">
+              <h3 class="t-h4">What best describes you?</h3>
+              <div class="opts" data-q="role">
+                <button class="opt" type="button" data-v="Lecturer / course leader"><span class="opt-k">A</span><span>Lecturer or course leader</span></button>
+                <button class="opt" type="button" data-v="Head of assessment / quality"><span class="opt-k">B</span><span>Head of assessment or quality</span></button>
+                <button class="opt" type="button" data-v="Dean / director"><span class="opt-k">C</span><span>Dean, director or programme lead</span></button>
+                <button class="opt" type="button" data-v="Learning technologist / IT"><span class="opt-k">D</span><span>Learning technologist or IT</span></button>
+                <button class="opt" type="button" data-v="Student"><span class="opt-k">E</span><span>Student</span></button>
+              </div>
+            </div>
+
+            <!-- Q2 institution -->
+            <div class="sv-step" data-step="2" hidden>
+              <h3 class="t-h4">Where do you work?</h3>
+              <div class="opts" data-q="inst">
+                <button class="opt" type="button" data-v="UK university"><span class="opt-k">A</span><span>UK university</span></button>
+                <button class="opt" type="button" data-v="UK college / HE provider"><span class="opt-k">B</span><span>UK college or HE provider</span></button>
+                <button class="opt" type="button" data-v="Dutch hogeschool / university"><span class="opt-k">C</span><span>Dutch hogeschool or university</span></button>
+                <button class="opt" type="button" data-v="Other institution"><span class="opt-k">D</span><span>Another institution</span></button>
+                <button class="opt" type="button" data-v="Not at an institution"><span class="opt-k">E</span><span>I'm not at an institution</span></button>
+              </div>
+              <div class="sv-foot"><button class="sv-back" type="button" data-back>← Back</button></div>
+            </div>
+
+            <!-- Q3 volume -->
+            <div class="sv-step" data-step="3" hidden>
+              <h3 class="t-h4">Roughly how many assignments get marked per year in your area?</h3>
+              <div class="opts" data-q="volume">
+                <button class="opt" type="button" data-v="Under 500"><span class="opt-k">A</span><span>Under 500</span></button>
+                <button class="opt" type="button" data-v="500 to 2,000"><span class="opt-k">B</span><span>500 to 2,000</span></button>
+                <button class="opt" type="button" data-v="2,000 to 10,000"><span class="opt-k">C</span><span>2,000 to 10,000</span></button>
+                <button class="opt" type="button" data-v="10,000+"><span class="opt-k">D</span><span>10,000 or more</span></button>
+                <button class="opt" type="button" data-v="Not sure"><span class="opt-k">E</span><span>Not sure</span></button>
+              </div>
+              <div class="sv-foot"><button class="sv-back" type="button" data-back>← Back</button></div>
+            </div>
+
+            <!-- Result: calendar -->
+            <div class="sv-step" data-step="cal" hidden>
+              <h3 class="t-h4">Pick a time</h3>
+              <div class="chips" id="sv-chips"></div>
+              <div class="sv-cal" id="sv-cal"></div>
+              <div class="sv-foot">
+                <button class="sv-back" type="button" data-restart>← Change my answers</button>
+              </div>
+            </div>
+
+            <!-- Result: student -->
+            <div class="sv-step" data-step="student" hidden>
+              <h3 class="t-h4">Eduface is set up by your university, not by students</h3>
+              <p class="t-body c-muted">So a demo would not get you much. Two things that will:</p>
+              <ul class="points">
+                <li><span class="tick tick-green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#007B54" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t-body">Watch the three-minute walkthrough of what your lecturer would see</span></li>
+                <li><span class="tick tick-green"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6.5" stroke="#007B54" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="t-body">Send this page to a lecturer or course leader. They can book from here.</span></li>
+              </ul>
+              <div class="sv-foot">
+                <a class="btn btn-navy btn-sm" href="#how"><span>See how it works</span></a>
+                <button class="sv-back" type="button" data-copy>Copy link to this page</button>
+              </div>
+              <div class="sv-foot"><button class="sv-back" type="button" data-restart>← Change my answers</button></div>
+            </div>
+
+            <!-- Result: not at an institution -->
+            <div class="sv-step" data-step="none" hidden>
+              <h3 class="t-h4">Thanks, but a demo is probably not the right fit yet</h3>
+              <p class="t-body c-muted">We build Eduface with and for teaching teams at universities and colleges. If you advise one, or you're moving into one, we'd still like to hear from you.</p>
+              <div class="sv-foot">
+                <a class="btn btn-navy btn-sm" href="mailto:info@eduface.me?subject=Eduface"><span>Email us instead</span></a>
+              </div>
+              <div class="sv-foot"><button class="sv-back" type="button" data-restart>← Change my answers</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq" class="sect band-card">
+    <div class="shell">
+      <div class="wrap sect-stack">
+        <div class="head center">
+          <span class="t-label c-accent">Common questions</span>
+          <h2 class="t-h2">Before you book</h2>
+        </div>
+        <div class="faq">
+          <details class="faq-item" open>
+            <summary><span class="faq-q grow">Does the AI replace the lecturer?</span><span class="pm"><i class="h"></i><i class="v"></i></span></summary>
+            <div class="faq-ans"><p class="t-body c-muted">No. Every comment and grade is approved by a lecturer before a student sees it. Eduface drafts, you sign off. That is not a setting, it is how it works.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="faq-q grow">What happens in the demo?</span><span class="pm"><i class="h"></i><i class="v"></i></span></summary>
+            <div class="faq-ans"><p class="t-body c-muted">Bring one real assignment and the rubric or learning outcomes you mark it against. We run it live and you judge the output. Thirty minutes, on a video call.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="faq-q grow">How does a pilot work?</span><span class="pm"><i class="h"></i><i class="v"></i></span></summary>
+            <div class="faq-ans"><p class="t-body c-muted">One or more modules, one semester, with success criteria we agree on up front. We look at what a wider rollout would need from day one, so the pilot is a step and not a dead end.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="faq-q grow">Which LMS does it work with?</span><span class="pm"><i class="h"></i><i class="v"></i></span></summary>
+            <div class="faq-ans"><p class="t-body c-muted">Moodle, Blackboard, Brightspace, Canvas and most others. Approved grades write straight back into your gradebook.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="faq-q grow">Do we need a finished rubric first?</span><span class="pm"><i class="h"></i><i class="v"></i></span></summary>
+            <div class="faq-ans"><p class="t-body c-muted">No. A requirements list or a set of learning outcomes is enough to start.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="faq-q grow">How accurate is the grade proposal?</span><span class="pm"><i class="h"></i><i class="v"></i></span></summary>
+            <div class="faq-ans"><p class="t-body c-muted">Across 435 assignments and 13 lecturers, it sat about 6 points from the lecturer's grade on average, and about 2 points once tuned. That is distance, not how often it matched exactly.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="faq-q grow">What happens to student work?</span><span class="pm"><i class="h"></i><i class="v"></i></span></summary>
+            <div class="faq-ans"><p class="t-body c-muted">Processed in the EU, never used to train the model, deleted on your schedule. We sign a DPA on request.</p></div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REPEAT CTA ===== -->
+  <section class="sect">
+    <div class="shell">
+      <div class="wrap">
+        <div class="cta">
+          <h2 class="t-h2 c-on-dark">Bring your own rubric</h2>
+          <p class="t-body-lg c-on-dark-soft sub">Put a real assignment in front of it and see what it flags.</p>
+          <div class="cta-btns">
+            <a class="btn btn-navy" href="#demo" data-demo style="background:#fff;color:var(--navy)"><span>Book a demo</span></a>
+          </div>
+          <p class="t-small c-on-dark-faint">Three questions, then pick a time. About a minute.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="shell">
+    <div class="wrap foot-stack">
+      <div class="foot">
+        <div class="foot-brand">
+          <img src="brand_assets/logos/logo_navy.png" alt="Eduface">
+          <p class="t-body c-muted">AI feedback and grading for higher education, with the lecturer always in the loop.</p>
+        </div>
+        <div class="foot-col">
+          <h5 class="t-label c-muted">On this page</h5>
+          <a href="#how" class="t-body">How it works</a>
+          <a href="#numbers" class="t-body">Proof</a>
+          <a href="#trust" class="t-body">Trust</a>
+          <a href="#faq" class="t-body">FAQ</a>
+        </div>
+        <div class="foot-col">
+          <h5 class="t-label c-muted">Legal</h5>
+          <a href="#" class="t-body">Privacy policy</a>
+          <a href="#" class="t-body">Terms &amp; conditions</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span class="t-small c-muted grow">© 2026 Eduface</span>
+        <span class="t-micro c-faint">Student names, submissions and feedback shown on this page are sample data, not real students.</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ==========================================================================
+   In Framer this becomes ONE code component (React + framer-motion):
+   state = {role, inst, volume, step}; each question is a variant; the
+   calendar step renders the Calendly inline embed with the answers appended.
+   Everything else on the page is native Framer nodes.
+   ========================================================================== */
+
+/* ---- the survey ---- */
+(function () {
+  var root = document.getElementById('survey');
+  var steps = root.querySelectorAll('.sv-step');
+  var dots = root.querySelectorAll('.sv-dot');
+  var label = document.getElementById('sv-label');
+  var chips = document.getElementById('sv-chips');
+  var calBox = document.getElementById('sv-cal');
+  var CAL = 'https://calendly.com/eduface/30min';
+  var answers = { role: null, inst: null, volume: null };
+  var order = ['1', '2', '3'];
+
+  function show(name) {
+    steps.forEach(function (s) {
+      var on = s.dataset.step === name;
+      s.hidden = !on;
+      s.classList.remove('in');
+      if (on) { requestAnimationFrame(function () { s.classList.add('in'); }); }
+    });
+    var idx = order.indexOf(name);
+    dots.forEach(function (d, i) {
+      d.classList.toggle('on', i === idx);
+      d.classList.toggle('done', idx === -1 ? true : i < idx);
+    });
+    label.textContent = idx === -1 ? 'Done' : 'Question ' + (idx + 1) + ' of 3';
+    if (name !== '1') { root.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }
+  }
+
+  /* routing: student and no-institution get a soft landing, everyone else the calendar.
+     Volume never blocks, it only travels along as a tag. */
+  function route() {
+    if (answers.role === 'Student') { return 'student'; }
+    if (answers.inst === 'Not at an institution') { return 'none'; }
+    return 'cal';
+  }
+
+  function renderCalendar() {
+    chips.innerHTML = '';
+    ['role', 'inst', 'volume'].forEach(function (k) {
+      if (!answers[k]) { return; }
+      var c = document.createElement('span');
+      c.className = 'chip';
+      c.textContent = answers[k];
+      chips.appendChild(c);
+    });
+    var tag = encodeURIComponent([answers.role, answers.inst, answers.volume].join(' | '));
+    var src = CAL + '?hide_gdpr_banner=1&embed_domain=eduface.me&embed_type=Inline&utm_source=demo-page&utm_medium=survey&utm_content=' + tag;
+    calBox.innerHTML = '';
+    var iframe = document.createElement('iframe');
+    iframe.src = src;
+    iframe.title = 'Pick a time';
+    iframe.loading = 'lazy';
+    calBox.appendChild(iframe);
+  }
+
+  root.querySelectorAll('.opts').forEach(function (group) {
+    var q = group.dataset.q;
+    group.querySelectorAll('.opt').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        group.querySelectorAll('.opt').forEach(function (b) { b.classList.toggle('on', b === btn); });
+        answers[q] = btn.dataset.v;
+        /* auto-advance after a short beat so the selection is visible (preset KorteSpring) */
+        setTimeout(function () {
+          if (q === 'role') {
+            if (answers.role === 'Student') { show('student'); } else { show('2'); }
+          } else if (q === 'inst') {
+            if (answers.inst === 'Not at an institution') { show('none'); } else { show('3'); }
+          } else {
+            var r = route();
+            if (r === 'cal') { renderCalendar(); }
+            show(r);
+          }
+        }, 220);
+      });
+    });
+  });
+
+  root.querySelectorAll('[data-back]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var cur = b.closest('.sv-step').dataset.step;
+      show(cur === '3' ? '2' : '1');
+    });
+  });
+  root.querySelectorAll('[data-restart]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      answers = { role: null, inst: null, volume: null };
+      root.querySelectorAll('.opt').forEach(function (o) { o.classList.remove('on'); });
+      calBox.innerHTML = '';
+      show('1');
+    });
+  });
+  var copy = root.querySelector('[data-copy]');
+  if (copy) {
+    copy.addEventListener('click', function () {
+      var url = location.href.split('#')[0];
+      if (navigator.clipboard) { navigator.clipboard.writeText(url); }
+      copy.textContent = 'Link copied';
+    });
+  }
+})();
+
+/* ---- every "Book a demo" scrolls to the survey ---- */
+document.querySelectorAll('[data-demo]').forEach(function (a) {
+  a.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.getElementById('demo').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
+
+/* ---- reveal on scroll: preset Reveal, in view, plays once ---- */
+(function () {
+  var targets = document.querySelectorAll('.rv, .rv-hero, .rv-stat, .rv-bar, [data-count]');
+  if (!('IntersectionObserver' in window)) {
+    targets.forEach(function (el) { el.classList.add('in'); });
+    return;
+  }
+  function countUp(el) {
+    var target = parseFloat(el.dataset.count);
+    var decimals = parseInt(el.dataset.decimals, 10) || 0;
+    var prefix = el.dataset.prefix || '';
+    var suffix = el.dataset.suffix || '';
+    var start = null, dur = 900;
+    function frame(now) {
+      if (start === null) { start = now; }
+      var p = Math.min((now - start) / dur, 1);
+      var eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = prefix + (target * eased).toFixed(decimals) + suffix;
+      if (p < 1) { requestAnimationFrame(frame); }
+    }
+    requestAnimationFrame(frame);
+  }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (!entry.isIntersecting) { return; }
+      var el = entry.target;
+      io.unobserve(el);
+      el.classList.add('in');
+      if (el.dataset.count !== undefined && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) { countUp(el); }
+    });
+  }, { threshold: 0.2, rootMargin: '0px 0px -40px 0px' });
+  targets.forEach(function (el) { io.observe(el); });
+})();
+</script>
+
+</body>
+</html>

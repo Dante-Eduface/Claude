@@ -1,0 +1,74 @@
+Naam,Website,Plaats,Adres,Postcode,Lid sinds,Sectoren,Regios,Marktgroepen,status,score,pos,neg,signalen,aliassen
+Leidse Onderwijsinstellingen B.V. (LOI),www.loi.nl,LEIDEN,Dellaertweg 5G,2316WZ,2020-09-30,,,,ok,41,41,0,+afstudeeropdracht +eindopdracht +praktijkopdracht +beroepsproduct +beoordeeld door (?:de |je  +portfolio +studiepunten +hbo-?bachelor|hbo-?master +nvao +toetsing +beoordeling +diploma,0
+Habeo+ (vh Avans+),https://habeoplus.nl/,BREDA,Claudius Prinsenlaan 140,4818 CP,2009-02-01,,,,ok,32,32,0,+praktijkopdracht +beroepsproduct +examinator +portfolio +examencommissie +post-?hbo +nvao +beoordeling +studiebelasting +diploma,1
+Academie Hypnos,https://hypnos.nl/,Voorthuizen,Hoofdstraat 185,3781 AE,2022-05-17,,,,ok,27,27,0,+afstudeeropdracht +praktijkopdracht +examencommissie +\boer\b +studiepunten +cpion +toetsing +studiebelasting +diploma,0
+Variva Edu Academy,www.variva.nl,Someren,Witvrouwenbergweg 12,5711 CN,2017-09-15,,,,ok,25,25,0,+praktijkopdracht +examinator +portfolio +examencommissie +toetsing +studiebelasting +diploma +modules? (?:wordt|worden) ,0
+Stichting De Nederlandse School voor Onderwijsmanagement,https://www.nso-cna.nl,Diemen,Diemermere 15,1112 TB,2025-04-15,Inburgering; Bouw; ICT; Onderwijs; Techniek; Zorg,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,23,28,5,+\bscriptie\b +afstudeeropdracht +praktijkopdracht +examencommissie +nvao +studiebelasting +diploma +meerdaagse leergang|leerga -certificaat van deelname|b,0
+Zorgcampus Rotterdam B.V.,www.zorgcampus.nl,ROTTERDAM,Mathenesserlaan 480,3023 HL,2018-09-25,,,,ok,23,23,0,+praktijkopdracht +examinator +examencommissie +toetsing +beoordeling +herkansing +diploma,0
+Academie voor Podologie,www.academiepodologie.nl,UTRECHT,St. Laurensdreef 22,3565 AK,2017-01-01,,,,ok,22,22,0,+\bscriptie\b +onderwijs- en examenregeli +\boer\b +beoordeling +leeruitkomsten +studiebelasting +diploma,0
+Mooivakonderwijs B.V.,www.mooivakonderwijs.nl,Helmond,Inclusieveld 1,5707 DP,2022-06-22,,,,ok,22,27,5,+eindopdracht +praktijkopdracht +portfolio +examencommissie +cpion +crkbo +toetsing +beoordeling +studiebelasting +diploma -certificaat van deelname|b,0
+PHOV B.V.,www.phov.nl,Utrecht ,Weerdsingel WZ 32,3513 BC,2022-03-08,,,,ok,22,22,0,+\bscriptie\b +eindopdracht +praktijkopdracht +toetsing +studiebelasting +diploma +meerdaagse leergang|leerga,0
+Scobe Academy,www.scobe.nl,Gouda ,Buchnerweg 7,2803 GR ,2023-01-02,,,,ok,20,21,1,+\bthesis\b +praktijkopdracht +post-?hbo +cpion +beoordeling +herkansing +diploma -incompany training(?!s?pro,0
+CB Education Group (55 Creative Business School),www.55creativebusinessschool.nl,HILVERSUM,Witte Kruislaan 55a,1217 AM,2021-12-13,,,,ok,17,17,0,+eindopdracht +praktijkopdracht +portfolio +crkbo +beoordeling +studiebelasting +diploma,0
+OntwerpAcademie,www.ontwerpacademie.nl,HAZERSWOUDE-DORP,Belgiëlaan 1A5,2391 PH,2017-02-28,Inburgering,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,17,18,1,+praktijkopdracht +examinator +portfolio +examencommissie +crkbo +diploma -incompany training(?!s?pro,0
+Academie voor Psychodynamica BV,www.psychodynamica.nl,Scherpenzeel,Burgemeester Royaardslaan 3,3925GG,2022-01-31,,,,ok,16,21,5,+\bscriptie\b +post-?hbo +cpion +crkbo +beoordeling +studiebelasting +herkansing +diploma -certificaat van deelname|b,0
+Cito,www.cito.nl,ARNHEM,Amsterdamseweg 13,6814 CM,2004-01-01,,,,ok,16,16,0,+examinator +portfolio +examencommissie +toetsing +beoordeling,0
+Realise B.V.,www.sn.nl,Zaltbommel,Van Heemstraweg-West 5,5301PA,2023-02-20,,,,ok,16,17,1,+praktijkopdracht +studiepunten +nvao +toetsing +beoordeling +diploma -incompany training(?!s?pro,9
+Edufit,www.edufit.nl,GOUDA,Graaf Florisweg 30, 2805 AL,2012-10-01,,,,ok,16,16,0,+beoordelingsformulier +examencommissie +nvao +beoordeling +meerdaagse leergang|leerga,0
+hbo A&A,www.hboaa.nl,Almere ,Transitorstraat 7,1322 CJ,2015-07-21,,,,ok,16,16,0,+studiepunten +post-?hbo +nvao +toetsing +studiebelasting +diploma,0
+Teelen ,www.Teelen.nl,WILP,Lathmerweg 5,7384 AD,2014-01-01,,,,ok,16,16,0,+examinator +portfolio +examencommissie +toetsing +beoordeling,0
+TMO Fashion Business School,www.tmo.nl,DOORN,Driebergsestraatweg 11,3941 ZW,1995-04-24,,,,ok,16,16,0,+\bscriptie\b +portfolio +studiepunten +studiebelasting +herkansing +diploma,0
+Intop Zorgsector,www.intopzorgsector.nl,Woerden ,Vijzelmolenlaan 1,3447 GX,2007-11-16,,,,ok,15,15,0,+examencommissie +onderwijs- en examenregeli +\boer\b +crkbo +toetsing,0
+Sound Education,www.soundeducation.nl,Utrecht ,CAB-rondom 100,3534 BE ,2022-10-25,,,,ok,15,19,4,+praktijkopdracht +nagekeken +feedback op je (?:opdracht +crkbo +beoordeling +studiebelasting +diploma -\bvca\b,0
+U-Consultancy,www.uconsultancy.nl,NIEUWEGEIN,Edisonbaan 8,3439 MN ,2012-08-02,,,,ok,15,19,4,+praktijkopdracht +portfolio +examencommissie +toetsing +beoordeling +studiebelasting +diploma -eendaagse|1-?daagse|tweeda -incompany training(?!s?pro,0
+AN-i,www.an-i.nl,Zeist,Jagerlaan 12,3701 XJ,2022-04-04,,,,ok,14,18,4,+post-?hbo +hbo-?bachelor|hbo-?master +crkbo +beoordeling +studiebelasting +herkansing +diploma +meerdaagse leergang|leerga -heftruck|hoogwerker|rijbew,0
+BartN Trainingen BV,www.bartn.nl,Hillegom,Haarlemmerstraat 5,2182HA,2019-07-01,,,,ok,14,15,1,+praktijkopdracht +toetsing +beoordeling +studiebelasting +reflectieverslag -incompany training(?!s?pro,0
+Bureau STERK,www.bureausterk.nl,CULEMBORG,Godfried Bomansstraat 7,4103 WR,2018-11-01,,,,ok,14,14,0,+portfolio +beoordeling +leeruitkomsten +reflectieverslag +diploma,0
+Facefacts,www.facefactsacademy.nl,Arnhem,Utrechtsestraat 5,6811 LS,2022-04-04,,,,ok,14,14,0,+eindopdracht +portfolio +crkbo +toetsing +studiebelasting +diploma,0
+LSR BV,www.1e-verdieping.nl,Zoetermeer,Dorpsstraat 7,2712 AB,2022-05-25,,,,ok,14,17,3,+eindopdracht +examinator +crkbo +toetsing +reflectieverslag -eendaagse|1-?daagse|tweeda,0
+NIVE Opleidingen ll B.V.,www.niveopleidingen.nl,Groningen,Radesingel 50,9711 EK,2022-01-31,,,,ok,14,14,0,+praktijkopdracht +post-?hbo +cpion +studiebelasting +diploma,0
+WWZ Academie,www.wwz-academie.nl,Rotterdam,Burgemeester Hazenberglaan 401,3078 HG,2020-10-14,,,,ok,14,14,0,+eindopdracht +praktijkopdracht +reflectieverslag +diploma,0
+BeeldCentrum,www.beeldcentrum.nl,Breda ,Charles Petitweg 37A9,4827 HJ ,2022-05-31,,,,ok,13,13,0,+portfolio +feedback op je (?:opdracht +crkbo +beoordeling +studiebelasting +diploma,0
+Esoterra B.V.,www.esoterra.nl,BILTHOVEN,P.C. Staalweg 50,3721 TJ,2021-10-19,Inburgering; Bouw; ICT; Onderwijs; Techniek; Zorg,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,13,13,0,+eindopdracht +portfolio +cpion +eindtoets +diploma,0
+Academie voor Interieur Ontwerp,https://academievoorinterieurontwerp.nl,Zwolle,Herenweg 98,8025 AD,2025-01-08,,,,ok,12,12,0,+praktijkopdracht +portfolio +crkbo +herkansing +diploma,0
+Bit Academy B.V.,www.bit-academy.nl,Amsterdam,Science Park 608,1098XH,2021-01-21,,,,ok,12,12,0,+praktijkopdracht +portfolio +hbo-?bachelor|hbo-?master +crkbo +diploma,0
+Bongers & Partners BV,www.bongers-partners.nl,Noordwijk,'sGravendijcksweg 60,2201 CZ ,2023-01-02,,,,ok,12,12,0,+\bscriptie\b +portfolio +crkbo +reflectieverslag,0
+Elitas Nursing Academy,www.elitasnursingacademy.nl,Nieuwegein,Archimedesbaan 13,3439 ME ,2022-05-30,,,,ok,12,12,0,+examinator +beoordeling +herkansing +diploma,0
+SDO Hogeschool voor Moderne Bedrijfskunde,www.sdo-hogeschool.nl   ,Rotterdam,Innsbruckweg 180-G,3047 AH,2011-08-01,,,,ok,12,12,0,+onderwijs- en examenregeli +\boer\b +nvao +crkbo,0
+Van Harte & Lingsma Management en Organisatie B.V.,www.vanhartelingsma.nl,Amstelveen,Burgemeester Haspelslaan 63,1181 NB ,2021-02-03,,,,ok,12,12,0,+praktijkopdracht +beoordeling +reflectieverslag +meerdaagse leergang|leerga,1
+Capabel PRO,www.capabel.nl,Utrecht,Australielaan 14-16,3526 AB,1995-04-24,,,,ok,11,11,0,+post-?hbo +nvao +beoordeling +diploma,1
+Academica University of Applied Sciences,https://www.academica-group.com/,Nederland,Weteringschans 28,1017 SG,2026-07-06,,,,ok,11,11,0,+post-?hbo +nvao +diploma +meerdaagse leergang|leerga,0
+Berghauser Pont Academy B.V.,https://www.berghauserpontacademy.nl/,Amsterdam,Danzigerkade 53,1013 AP,2022-04-18,,,,ok,11,14,3,+praktijkopdracht +casus(?:opdracht|uitwerkin +toetsing +diploma +meerdaagse leergang|leerga -eendaagse|1-?daagse|tweeda,0
+Capabel Hogeschool,www.capabelhogeschool.nl,UTRECHT,Australiëlaan 14,3526 AB,2004-05-01,,,,ok,11,11,0,+post-?hbo +nvao +beoordeling +diploma,0
+Edin B.V.,www.edin.nl,Maarsbergen,Ambachtsweg 4e,3953 BZ,2010-08-25,,,,ok,11,16,5,+eindopdracht +praktijkopdracht +leeruitkomsten +studiebelasting +diploma -certificaat van deelname|b,0
+Libereaux,www.libereaux.nl,Hengelo,Jan Tinbergenstraat 202,7559 ST,2014-01-01,,,,ok,11,11,0,+beroepsproduct +portfolio +toetsing +diploma,0
+PEKK,www.pekk.nl,TILBURG,Meerssenstraat 1c,5045 WD,2019-03-20,,,,ok,11,11,0,+praktijkopdracht +portfolio +crkbo +studiebelasting +diploma,0
+Practice Solutions,www.dto-breda.nl,Breda,Minervum 7154,4817 ZN,2023-04-28,,,,ok,11,11,0,+examencommissie +crkbo +beoordeling +studiebelasting +diploma,0
+The New School for Information Services,www.thenewschool.nl,AMSTERDAM,Jan Luykenstraat 98,1071 CV,2001-02-01,,,,ok,11,11,0,+afstudeeropdracht +portfolio +nvao,0
+Ticken BV,www.ticken.nl,Baarn,Jacob van Lenneplaan 22,3743AR,2021-11-08,,,,ok,11,11,0,+crkbo +toetsing +beoordeling +herkansing +diploma,0
+Bestuursacademie Nederland Opleidingen B.V.,www.bestuursacademie.nl,HILVERSUM,Marathon 7,1213 PD,2014-04-14,,,,ok,10,10,0,+praktijkopdracht +nvao +meerdaagse leergang|leerga,0
+Certiforce C.I. B.V.,https://certiforce.nl,Doetinchem,Hanzestraat 19,7006 RH,2025-01-08,,,,ok,10,10,0,+portfolio +examencommissie +beoordeling +diploma,0
+LSBL,www.lsbl.nl,EDE,Galvanistraat 1,6716 AE,2001-02-01,,,,ok,10,10,0,+praktijkopdracht +portfolio +eindtoets +diploma,0
+NCOI Opleidingen,www.ncoi.nl,Hilversum,Marathon 7,1213 PD,2025-11-26,,,,ok,10,10,0,+praktijkopdracht +nvao +diploma,2
+Team Academy/Schoolvision,www.teamacademy.nl,AMSTERDAM,Vlaardingenlaan 15-4,1062 HM,2016-04-19,,,,ok,10,10,0,+\bthesis\b +nvao +diploma,0
+Wittenborg University of Applied Sciences,www.wittenborg.eu,APELDOORN,Brinklaan 268,7311 JD,2004-01-01,,,,ok,10,10,0,+\bthesis\b +nvao +diploma,0
+EuroCollege Management School,www.eurocollege.nl,ROTTERDAM,Westblaak 139,3012 KJ,2003-10-01,Inburgering; Bouw; ICT; Onderwijs; Techniek; Zorg,,,ok,9,9,0,+hbo-?bachelor|hbo-?master +nvao +diploma,0
+GOmotive,http://www.gomotive.nl,Duiven,Impact 57,6921 RZ,2012-05-01,,,,ok,9,9,0,+praktijkopdracht +crkbo +diploma +meerdaagse leergang|leerga,0
+Keulseweg,www.keulseweg.nl,PIJNACKER,Keulseweg 34,2641 PK,2019-01-01,,,,ok,9,9,0,+post-?hbo +cpion +crkbo +studiebelasting,0
+King nascholing ,www.kingnascholing.nl,Amsterdam,Czaar Peterstraat 111,1018 SK,2022-05-01,,,,ok,9,9,0,+post-?hbo +beoordeling +eindtoets +meerdaagse leergang|leerga,0
+OSR OpMaat,www.osr.nl,Utrecht ,Arthur van Schendelstraat 650,3511MJ,2021-10-05,,,,ok,9,17,8,+eindopdracht +toetsing +beoordeling +herkansing +modules? (?:wordt|worden)  +meerdaagse leergang|leerga -certificaat van deelname|b -eendaagse|1-?daagse|tweeda,1
+Take Off Support,https://www.takeoffsupport.nl,ARNHEM,Willemsplein 9,6811 KB,2022-05-03,,,,ok,9,10,1,+crkbo +toetsing +reflectieverslag +diploma -incompany training(?!s?pro,0
+Winc Academy,https://wincacademy.nl,Amsterdam,van de Sande Bakhuijzenstraat 4,1061 AG,2020-06-25,,,,ok,9,9,0,+eindopdracht +portfolio +crkbo +diploma,0
+Academie voor Chinese Geneeswijze Qing- Bai,www.qing-bai.nl,Milsbeek,Kanonskamp 60,6596 AT ,2022-07-27,,,,ok,8,8,0,+toetsing +herkansing +diploma,0
+Bedrijfskunde Opleiding Utrecht,https://bedrijfskundeopleidingutrecht.nl/,UTRECHT,Koningsbergerstraat 9,3531 AJ,2020-03-10,,,,ok,8,8,0,+post-?hbo +cpion +meerdaagse leergang|leerga,0
+BTSG,www.btsg.nl,ZWOLLE,Branderweg 3a,8042 PD,2010-03-02,,,,ok,8,9,1,+studiepunten +crkbo +beoordeling +studiebelasting +diploma -incompany training(?!s?pro,0
+Contractgroep Inholland B.V.,www.inhollandacademy.nl,ALKMAAR,Bergerweg 200,1817 MN,2010-11-16,,,,ok,8,8,0,+afstudeeropdracht +post-?hbo,0
+Fiscaal Studie- en documentatie Centrum ,https://www.fsdc.nl ,Loenen ,Hoofdweg 115,7371 GG,2023-01-02,,,,ok,8,8,0,+examencommissie +beoordeling +studiebelasting,0
+Hogeschool NOVI,www.novi.nl,UTRECHT,Newtonlaan 247 ,3584 BH ,2012-07-01,,,,ok,8,8,0,+praktijkopdracht +studiepunten +diploma,0
+Hogeschool TIO/TIO College,www.tio.nl,Hilversum,Marathon 7,1213 PD,1995-04-24,,,,ok,8,8,0,+praktijkopdracht +beoordeling +diploma,0
+IBHS,www.ibhs.nl,Amsterdam,Prinsengracht 701,1017 JV,2025-02-21,,,,ok,8,8,0,+\boer\b +hbo-?bachelor|hbo-?master +crkbo +diploma,0
+Luzac Onderwijs B.V.,www.luzac.nl,HILVERSUM,Marathon 7,1213 PD,2001-02-01,,,,ok,8,8,0,+toetsing +herkansing +diploma,0
+Nederlands Compliance Instituut B.V.,https://compliance-instituut.nl,Rotterdam,Burgemeester Hazenberglaan 401,3078 HG,2023-03-30,,,,ok,8,8,0,+praktijkopdracht +diploma +meerdaagse leergang|leerga,0
+NIA Academie B.V.,https://nia-academie.nl/,Amsterdam,Memeleiland 45,1014 ZL,2022-04-18,,,,ok,8,8,0,+eindopdracht +portfolio +diploma,0
+Stichting Continuiteit Schrijversvakschool,www.schrijversvakschool.nl,Amsterdam,Herengracht 613,1017 CE,2022-02-21,,,,ok,8,8,0,+examencommissie +beoordeling +diploma,0
+The Lean Six Sigma Company B.V.,https://www.theleansixsigmacompany.nl,Rotterdam,Van Nelleweg 1,3044 BC,2023-11-01,,,,ok,8,8,0,+praktijkopdracht +beoordeling +diploma,0

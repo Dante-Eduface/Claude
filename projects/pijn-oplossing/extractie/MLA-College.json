@@ -1,0 +1,36 @@
+[
+ {
+  "id": "MLA-College-1",
+  "org": "MLA College",
+  "lead_id": "lead_VbUaJIOxIsoamA5fzS8fKYRNskKetk38vWiHZD3UzjD",
+  "close_url": "https://app.close.com/lead/lead_VbUaJIOxIsoamA5fzS8fKYRNskKetk38vWiHZD3UzjD/",
+  "persoon": "Paul Folan",
+  "functie": null,
+  "datum": "2026-04-16",
+  "bron_type": "note",
+  "bron_id": "acti_bsRdc0E7DMipR5rCfXY09wIBbZXNib6Sepo8HIgeWp6",
+  "segment": "uk-he",
+  "thema": "docentacceptatie",
+  "type": "bezwaar",
+  "citaat": "If marking criteria evolve through human judgement, how do we ensure AI doesn't \"freeze\" outdated interpretations of quality in work? Using examples of previous assessor's grading practices as a training base, is dangerous no?",
+  "samenvatting": "Angst dat AI verouderde beoordelingsnormen vastzet als het traint op oude nakijkpraktijk.",
+  "zekerheid": "letterlijk"
+ },
+ {
+  "id": "MLA-College-2",
+  "org": "MLA College",
+  "lead_id": "lead_VbUaJIOxIsoamA5fzS8fKYRNskKetk38vWiHZD3UzjD",
+  "close_url": "https://app.close.com/lead/lead_VbUaJIOxIsoamA5fzS8fKYRNskKetk38vWiHZD3UzjD/",
+  "persoon": "Paul Folan",
+  "functie": null,
+  "datum": "2026-04-16",
+  "bron_type": "note",
+  "bron_id": "acti_bsRdc0E7DMipR5rCfXY09wIBbZXNib6Sepo8HIgeWp6",
+  "segment": "uk-he",
+  "thema": "docentacceptatie",
+  "type": "bezwaar",
+  "citaat": "How do we detect bias in AI marking when the \"correct\" mark is itself subjective, and developed by the black box of \"academic judgement\"?",
+  "samenvatting": "Bias in AI-beoordeling is niet meetbaar als het juiste cijfer zelf subjectief is.",
+  "zekerheid": "letterlijk"
+ }
+]

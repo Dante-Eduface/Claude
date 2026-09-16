@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#002333;--green:#00E075;--green2:#006754;--green3:#008F5A;
+    --ink:#0e1c24;--grey:#5a6b73;--soft:#f3f7f8;--line:#e2e8eb;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Inter',sans-serif;color:var(--ink);background:#cfd8db;padding:24px 0;}
+  .slide{
+    width:1280px;height:720px;margin:0 auto 26px;background:#fff;position:relative;
+    overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,.18);display:flex;flex-direction:column;
+    padding:64px 72px;
+  }
+  h1,h2,h3{font-family:'League Spartan',sans-serif;color:var(--navy);line-height:1.05;}
+  .kicker{font-family:'Inter';font-weight:700;text-transform:uppercase;letter-spacing:.18em;font-size:15px;color:var(--green3);margin-bottom:14px;}
+  h2.title{font-size:50px;font-weight:800;letter-spacing:-.01em;margin-bottom:34px;}
+  .pagenum{position:absolute;bottom:30px;right:40px;font-size:14px;color:#9fb0b6;}
+  .wm{position:absolute;bottom:28px;left:48px;font-family:'League Spartan';font-weight:800;font-size:18px;color:var(--navy);}
+  .wm .fx{color:var(--green3);}
+  .slide.dark .wm{color:#fff;} .slide.dark .wm .fx{color:var(--green);}
+  .slide.dark .pagenum{color:#5d7783;}
+
+  /* dark slide */
+  .slide.dark{background:var(--navy);color:#fff;}
+  .slide.dark h1,.slide.dark h2,.slide.dark h3{color:#fff;}
+  .slide.dark .kicker{color:var(--green);}
+
+  /* accent slide */
+  .slide.accent{background:var(--soft);}
+
+  .rows{display:flex;flex-direction:column;gap:22px;}
+  .row{display:flex;gap:22px;align-items:flex-start;}
+  .ic{width:54px;height:54px;border-radius:14px;background:#e6fbf0;display:flex;align-items:center;justify-content:center;flex:none;}
+  .slide.dark .ic{background:rgba(0,224,117,.14);}
+  .ic svg{width:28px;height:28px;stroke:var(--green2);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+  .slide.dark .ic svg{stroke:var(--green);}
+  .rt .h{font-family:'League Spartan';font-weight:700;font-size:24px;color:var(--navy);line-height:1.1;}
+  .slide.dark .rt .h{color:#fff;}
+  .rt .p{font-size:18px;color:var(--grey);margin-top:4px;line-height:1.4;max-width:880px;}
+  .slide.dark .rt .p{color:#bcd;}
+
+  /* stat blocks */
+  .stats{display:flex;gap:26px;margin-top:10px;}
+  .stat{flex:1;background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px 24px;text-align:center;}
+  .slide.accent .stat{background:#fff;}
+  .stat .v{font-family:'League Spartan';font-weight:800;font-size:46px;color:var(--navy);line-height:1;}
+  .stat .v .u{font-size:24px;color:var(--green3);}
+  .stat .l{font-size:15px;color:var(--grey);margin-top:10px;}
+
+  /* cost math */
+  .math{display:flex;align-items:center;gap:20px;margin-top:8px;flex-wrap:wrap;}
+  .mbox{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px 26px;text-align:center;min-width:230px;}
+  .mbox .lab{font-size:14px;color:var(--grey);text-transform:uppercase;letter-spacing:.05em;}
+  .mbox .num{font-family:'League Spartan';font-weight:800;font-size:38px;color:var(--navy);margin-top:6px;}
+  .mbox.win{background:var(--navy);border-color:var(--navy);} .mbox.win .lab{color:var(--green);} .mbox.win .num{color:#fff;}
+  .arrow{font-size:34px;color:var(--green3);font-weight:800;}
+  .note{font-size:15px;color:var(--grey);margin-top:22px;}
+  .slide.dark .note{color:#9fb8c2;}
+
+  .lead{font-size:24px;color:var(--grey);max-width:920px;line-height:1.45;}
+  .slide.dark .lead{color:#cfe1e8;}
+  .big-quote{font-family:'League Spartan';font-weight:800;font-size:46px;line-height:1.15;max-width:1000px;}
+  .big-quote .fx{color:var(--green);}
+
+  /* title slide */
+  .title-wrap{margin-top:auto;margin-bottom:auto;}
+  .title-wrap .brandbig{font-family:'League Spartan';font-weight:800;font-size:40px;margin-bottom:36px;}
+  .title-wrap .brandbig .fx{color:var(--green);}
+  .title-wrap h1{font-size:60px;font-weight:800;letter-spacing:-.02em;max-width:1000px;}
+  .title-wrap .sub{font-size:22px;color:#bcd;margin-top:18px;}
+  .title-wrap .who{font-size:18px;color:#9fb8c2;margin-top:40px;}
+
+  @media print{
+    @page{size:1280px 720px;margin:0;}
+    body{background:#fff;padding:0;}
+    .slide{margin:0;box-shadow:none;page-break-after:always;}
+  }
+</style>
+</head>
+<body>
+
+<!-- 1 TITLE -->
+<section class="slide dark">
+  <div class="title-wrap">
+    <div class="brandbig">Edu<span class="fx">face</span></div>
+    <h1>AI-feedback en nakijken voor de Rijksuniversiteit Groningen</h1>
+    <div class="sub">Verkennende sessie · 30 juni 2026</div>
+    <div class="who">Dante Torbed · Jeroen van Gessel — Eduface</div>
+  </div>
+  <div class="wm">Edu<span class="fx">face</span></div>
+</section>
+
+<!-- 2 WIE -->
+<section class="slide">
+  <div class="kicker">Wie wij zijn</div>
+  <h2 class="title">Eduface in het kort</h2>
+  <div class="rows">
+    <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></svg></div>
+      <div class="rt"><div class="h">AI-feedback en nakijken op geschreven werk</div><div class="p">Essays, verslagen, scripties en open tentamenvragen, direct in de leeromgeving (Brightspace).</div></div></div>
+    <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+      <div class="rt"><div class="h">Eigen LLM, EU-gehost, AVG-conform</div><div class="p">Nederlands bedrijf, data-soeverein. Geen afhankelijkheid van Big Tech.</div></div></div>
+    <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></div>
+      <div class="rt"><div class="h">Human-in-the-loop: de docent beslist</div><div class="p">De AI doet het voorwerk, de examinator verifieert en blijft eindverantwoordelijk.</div></div></div>
+  </div>
+  <div class="wm">Edu<span class="fx">face</span></div><div class="pagenum">2</div>
+</section>
+
+<!-- 3 MISSIE -->
+<section class="slide dark">
+  <div class="kicker">Onze missie</div>
+  <div class="big-quote" style="margin-top:auto;margin-bottom:auto;">Elke student verdient <span class="fx">wereldklasse, persoonlijke feedback</span>, zonder dat de docent eronder bezwijkt.</div>
+  <div class="wm">Edu<span class="fx">face</span></div><div class="pagenum">3</div>
+</section>
+
+<!-- 4 UITDAGING -->
+<section class="slide">
+  <div class="kicker">De uitdaging</div>
+  <h2 class="title">Goede feedback, lastig op schaal</h2>
+  <div class="rows">
+    <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg></div>
+      <div class="rt"><div class="h">Veel studenten, meerdere beoordelaars</div><div class="p">Consistentie tussen markers wordt het eerste slachtoffer.</div></div></div>
+    <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+      <div class="rt"><div class="h">Snelheid en consistentie</div><div class="p">"Studenten noemen telkens problemen met consistentie, effectiviteit en tijdigheid van feedback." (Williams, 2024)</div></div></div>
+    <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></div>
+      <div class="rt"><div class="h">Tijd en kennis ontbreken</div><div class="p">Nakijken is een grote, onzichtbare tijdpost voor docenten.</div></div></div>
+  </div>
+  <div class="wm">Edu<span class="fx">face</span></div><div class="pagenum">4</div>
+</section>
+
+<!-- 5 RUG SITUATIE -->
+<section class="slide accent">
+  <div class="kicker">De situatie bij de RUG</div>
+  <h2 class="title">Het nakijken staat onder druk</h2>
+  <div class="rows">
+    <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg></div>
+      <div class="rt"><div class="h">~1.750 student-assistenten kijken na</div><div class="p">Goedkoop, maar wisselend en zonder de ervaring van een docent. (UKrant, 2021/22)</div></div></div>
+    <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M14.5 9.5a2.5 2.5 0 0 0-5 .5c0 3 5 2 5 5a2.5 2.5 0 0 1-5 .5M12 6v1m0 10v1"/></svg></div>
+      <div class="rt"><div class="h">€46,6M externe inhuur in 2024 — 3x over budget</div><div class="p">En die inhuur is sinds maart 2026 bevroren (vacaturestop). (Jaarverslag 2024, UKrant)</div></div></div>
+    <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/></svg></div>
+      <div class="rt"><div class="h">Het werk valt terug op vast, overbelast personeel</div><div class="p">Er mag niemand bij, terwijl de nakijklast blijft.</div></div></div>
+  </div>
+  <div class="note">Context, geen besparingsbelofte. De besparing zelf rekenen we per submissie (zie verderop).</div>
+  <div class="wm">Edu<span class="fx">face</span></div><div class="pagenum">5</div>
+</section>
+
+<!-- 6 HOE HET WERKT -->
+<section class="slide">
+  <div class="kicker">Hoe het werkt</div>
+  <h2 class="title">Drie stappen, docent aan het stuur</h2>
+  <div class="rows">
+    <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 3-2 4-2 6H7c0-2-2-3-2-6a7 7 0 0 1 7-7Z"/><path d="M9 21h6"/></svg></div>
+      <div class="rt"><div class="h">1. AI genereert feedback + conceptcijfer</div><div class="p">Rubric-gealigneerd, in de leeromgeving.</div></div></div>
+    <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></div>
+      <div class="rt"><div class="h">2. Docent verifieert en finaliseert</div><div class="p">2-3 minuten per submissie in plaats van het volledige nakijkwerk.</div></div></div>
+    <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></div>
+      <div class="rt"><div class="h">3. Data wordt inzicht</div><div class="p">Uit alle submissies bouwen we leerlijnen → gepersonaliseerd leren. Niet alleen nakijken, een platform.</div></div></div>
+  </div>
+  <div class="wm">Edu<span class="fx">face</span></div><div class="pagenum">6</div>
+</section>
+
+<!-- 7 BEWIJS -->
+<section class="slide dark">
+  <div class="kicker">Bewijs uit de praktijk</div>
+  <h2 class="title">Bath Spa University-pilot</h2>
+  <div class="stats">
+    <div class="stat" style="background:#0a2a39;border-color:#143b4c"><div class="v">435</div><div class="l" style="color:#bcd">submissions beoordeeld</div></div>
+    <div class="stat" style="background:#0a2a39;border-color:#143b4c"><div class="v">94<span class="u">%</span></div><div class="l" style="color:#bcd">AI-nauwkeurigheid</div></div>
+    <div class="stat" style="background:#0a2a39;border-color:#143b4c"><div class="v">2-3<span class="u">min</span></div><div class="l" style="color:#bcd">reviewtijd per submissie</div></div>
+  </div>
+  <div class="note">En een lopende NL-pilot bij Tilburg University: nakijken van open vragen, geïntegreerd in het LMS.</div>
+  <div class="wm">Edu<span class="fx">face</span></div><div class="pagenum">7</div>
+</section>
+
+<!-- 8 COST -->
+<section class="slide accent">
+  <div class="kicker">Wat het oplevert</div>
+  <h2 class="title">De rekensom per submissie</h2>
+  <div class="math">
+    <div class="mbox"><div class="lab">Nu, handmatig</div><div class="num">€12,50</div></div>
+    <div class="arrow">→</div>
+    <div class="mbox"><div class="lab">Eduface −48%</div><div class="num">−€6,00</div></div>
+    <div class="arrow">=</div>
+    <div class="mbox win"><div class="lab">× jullie volume</div><div class="num">€ ?</div></div>
+  </div>
+  <div class="note">Basislijn 15 min/submissie (NL-sectorcijfer, expliciet als sector gelabeld) × ~€50/uur. De RUG vult het eigen aantal submissies in; het exacte getal komt uit een pilot.</div>
+  <div class="wm">Edu<span class="fx">face</span></div><div class="pagenum">8</div>
+</section>
+
+<!-- 9 COMPLIANCE -->
+<section class="slide dark">
+  <div class="kicker">Compliant by design</div>
+  <h2 class="title">Gebouwd voor de EU AI Act</h2>
+  <div class="rows">
+    <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.5 8 8 11 4.5-3 8-6 8-11V5l-8-3Z"/></svg></div>
+      <div class="rt"><div class="h">Assessment-AI = hoog-risico vanaf 2 aug 2026</div><div class="p">Wie het zelf bouwt, draagt de volledige conformiteitslast.</div></div></div>
+    <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+      <div class="rt"><div class="h">EU-gehost, eigen LLM, AVG + verwerkersovereenkomst</div><div class="p">Data-soeverein, geen Big Tech.</div></div></div>
+    <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></div>
+      <div class="rt"><div class="h">Human-in-the-loop = jullie eigen AI-beleid</div><div class="p">Sluit 1-op-1 aan op de RUG-regels (Rule 6 &amp; 8).</div></div></div>
+  </div>
+  <div class="wm">Edu<span class="fx">face</span></div><div class="pagenum">9</div>
+</section>
+
+<!-- 10 DATALEK -->
+<section class="slide">
+  <div class="kicker">Waarom controle telt</div>
+  <h2 class="title">Ongecontroleerd AI-gebruik is een risico</h2>
+  <div class="rows">
+    <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"/><path d="M12 9v4m0 4h.01"/></svg></div>
+      <div class="rt"><div class="h">HAN: één webformulier, ~530.000 mensen gelekt</div><div class="p">Inclusief BSN en medische data. AP-boete €175.000.</div></div></div>
+    <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div>
+      <div class="rt"><div class="h">Faculteiten gebruiken nu al ongecontroleerd AI</div><div class="p">Zelfde art. 32-blootstelling, zonder grip of verwerkersovereenkomst.</div></div></div>
+    <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.5 8 8 11 4.5-3 8-6 8-11V5l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></div>
+      <div class="rt"><div class="h">Eduface is de gecontroleerde route</div><div class="p">Eén veilige, AVG-conforme plek in plaats van losse tools.</div></div></div>
+  </div>
+  <div class="wm">Edu<span class="fx">face</span></div><div class="pagenum">10</div>
+</section>
+
+<!-- 11 BUY VS BUILD -->
+<section class="slide accent">
+  <div class="kicker">Zelf bouwen of samen versterken</div>
+  <h2 class="title">UG Grader + Eduface, niet vervangen</h2>
+  <div class="rows">
+    <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><path d="M14 7h7v7"/><path d="M21 7 10 18l-4-4-4 4"/></svg></div>
+      <div class="rt"><div class="h">UG Grader is handmatig, geen AI-feedback</div><div class="p">De open-tekst nakijklast ligt nog volledig bij docenten.</div></div></div>
+    <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M14.5 9.5a2.5 2.5 0 0 0-5 .5c0 3 5 2 5 5a2.5 2.5 0 0 1-5 .5M12 6v1m0 10v1"/></svg></div>
+      <div class="rt"><div class="h">Zelf AI-nakijken bouwen = nieuw product</div><div class="p">Plus de volledige EU AI Act-last en structurele kosten, midden in een €45M-bezuiniging.</div></div></div>
+    <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></svg></div>
+      <div class="rt"><div class="h">Eduface: bewezen, direct, ín jullie omgeving</div><div class="p">De RUG koopt al extern in waar dat sneller is (FeedbackFruits).</div></div></div>
+  </div>
+  <div class="wm">Edu<span class="fx">face</span></div><div class="pagenum">11</div>
+</section>
+
+<!-- 12 STRATEGISCHE FIT -->
+<section class="slide dark">
+  <div class="kicker">Het past in jullie eigen plannen</div>
+  <h2 class="title">Strategische fit met de RUG</h2>
+  <div class="rows">
+    <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 3-2 4-2 6H7c0-2-2-3-2-6a7 7 0 0 1 7-7Z"/><path d="M9 21h6"/></svg></div>
+      <div class="rt"><div class="h">"AI en digitale soevereiniteit"</div><div class="p">Strategische inzet uit de Instellingsbegroting 2026. Eduface (EU, eigen LLM) is exact die lijn.</div></div></div>
+    <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></div>
+      <div class="rt"><div class="h">€10M besparen via "standaardiseren en automatiseren"</div><div class="p">Automatisch nakijken is precies dat soort procesautomatisering.</div></div></div>
+    <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></div>
+      <div class="rt"><div class="h">Faculteiten noemen het zelf</div><div class="p">FEB: "bezuinigingen (bijv. inzet AI)". GMW: "minder arbeidsintensieve vormen".</div></div></div>
+  </div>
+  <div class="wm">Edu<span class="fx">face</span></div><div class="pagenum">12</div>
+</section>
+
+<!-- 13 VERVOLGSTAP -->
+<section class="slide">
+  <div class="kicker">Voorstel</div>
+  <h2 class="title">Een afgebakende pilot</h2>
+  <div class="lead" style="margin-top:6px">Start bij één schrijfintensieve faculteit, bijvoorbeeld Rechten of Letteren.</div>
+  <div class="rows" style="margin-top:34px">
+    <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+      <div class="rt"><div class="h">Meet jullie eigen nakijktijd en nauwkeurigheid</div><div class="p">RUG-specifiek bewijs in plaats van een schatting.</div></div></div>
+    <div class="row"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 22V4a2 2 0 0 1 2-2h9l5 5v15"/><path d="M14 2v6h6"/></svg></div>
+      <div class="rt"><div class="h">Harde cijfers voor de brede afweging</div><div class="p">En meteen een stuk van het ongecontroleerde gebruik gecontroleerd opgelost.</div></div></div>
+  </div>
+  <div class="wm">Edu<span class="fx">face</span></div><div class="pagenum">13</div>
+</section>
+
+<!-- 14 VRAGEN -->
+<section class="slide dark">
+  <div class="title-wrap">
+    <h1 style="font-size:64px">Vragen?</h1>
+    <div class="sub">Dank voor jullie tijd.</div>
+    <div class="who">Dante Torbed · Eduface · eduface.me · info@eduface.me</div>
+  </div>
+  <div class="wm">Edu<span class="fx">face</span></div><div class="pagenum">14</div>
+</section>
+
+</body>
+</html>

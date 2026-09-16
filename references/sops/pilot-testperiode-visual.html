@@ -1,0 +1,291 @@
+<title>Eduface pilot — hoe een korte testperiode eruitziet</title>
+<style>
+  :root {
+    --navy: #002333;
+    --green: #00e075;
+    --green-dark: #008f5a;
+    --green-deep: #006754;
+    --bg: #eef4f5;
+    --panel: #ffffff;
+    --panel-2: #f5f9fa;
+    --text: #062430;
+    --muted: #5a7280;
+    --line: #d3e0e5;
+    --ring: rgba(0,143,90,.35);
+    --shadow: 0 1px 2px rgba(0,35,51,.05), 0 8px 24px rgba(0,35,51,.06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --navy: #d9ebf0;
+      --bg: #061a22;
+      --panel: #0c2731;
+      --panel-2: #0a222b;
+      --text: #e4f1f4;
+      --muted: #8fabb4;
+      --line: #1b3c47;
+      --ring: rgba(0,224,117,.4);
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 10px 30px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="dark"] {
+    --navy: #d9ebf0;
+    --bg: #061a22;
+    --panel: #0c2731;
+    --panel-2: #0a222b;
+    --text: #e4f1f4;
+    --muted: #8fabb4;
+    --line: #1b3c47;
+    --ring: rgba(0,224,117,.4);
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 10px 30px rgba(0,0,0,.35);
+  }
+  :root[data-theme="light"] {
+    --navy: #002333;
+    --bg: #eef4f5;
+    --panel: #ffffff;
+    --panel-2: #f5f9fa;
+    --text: #062430;
+    --muted: #5a7280;
+    --line: #d3e0e5;
+    --ring: rgba(0,143,90,.35);
+    --shadow: 0 1px 2px rgba(0,35,51,.05), 0 8px 24px rgba(0,35,51,.06);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background:
+      radial-gradient(1100px 500px at 88% -8%, rgba(0,224,117,.10), transparent 60%),
+      var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.55;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 56px 22px 72px; }
+
+  /* Header */
+  .kicker {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 11.5px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase;
+    color: var(--green-dark);
+    background: rgba(0,224,117,.12);
+    border: 1px solid var(--ring);
+    padding: 6px 13px; border-radius: 100px;
+  }
+  .kicker .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--green); box-shadow: 0 0 0 3px rgba(0,224,117,.2); }
+  h1 {
+    font-family: "Segoe UI Semibold", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: clamp(30px, 5.4vw, 46px);
+    font-weight: 800; letter-spacing: -.02em; line-height: 1.05;
+    margin: 20px 0 0; color: var(--navy); text-wrap: balance;
+  }
+  h1 .accent { color: var(--green-dark); }
+  .lede { margin: 16px 0 0; font-size: 16.5px; color: var(--muted); max-width: 60ch; }
+
+  /* Facts strip */
+  .facts { display: flex; flex-wrap: wrap; gap: 10px; margin: 26px 0 0; }
+  .fact {
+    display: flex; flex-direction: column; gap: 2px;
+    background: var(--panel); border: 1px solid var(--line); border-radius: 12px;
+    padding: 12px 16px; box-shadow: var(--shadow); flex: 1 1 150px;
+  }
+  .fact b { font-size: 20px; font-weight: 800; color: var(--navy); letter-spacing: -.01em; }
+  .fact span { font-size: 12.5px; color: var(--muted); }
+
+  /* Principle banner */
+  .principle {
+    margin: 30px 0 8px; background: var(--navy); color: #eaffff;
+    border-radius: 16px; padding: 20px 24px; display: flex; gap: 16px; align-items: flex-start;
+    box-shadow: var(--shadow);
+  }
+  :root[data-theme="dark"] .principle, :root:not([data-theme]) .principle { }
+  @media (prefers-color-scheme: dark) { .principle { color: #052029; } }
+  :root[data-theme="dark"] .principle { color: #052029; }
+  :root[data-theme="light"] .principle { color: #eaffff; }
+  .principle .ic {
+    flex: none; width: 38px; height: 38px; border-radius: 10px;
+    background: rgba(0,224,117,.18); display: grid; place-items: center; font-size: 20px;
+  }
+  .principle p { margin: 0; font-size: 15px; line-height: 1.5; }
+  .principle b { color: var(--green); }
+
+  /* Timeline */
+  .tl { margin: 40px 0 0; position: relative; }
+  .tl::before {
+    content: ""; position: absolute; left: 21px; top: 8px; bottom: 40px;
+    width: 2px; background: linear-gradient(var(--green), var(--green-deep) 65%, var(--line));
+  }
+  .step { position: relative; padding: 0 0 30px 62px; }
+  .step:last-child { padding-bottom: 0; }
+  .marker {
+    position: absolute; left: 0; top: 2px; width: 44px; height: 44px; border-radius: 12px;
+    background: var(--panel); border: 2px solid var(--green); color: var(--green-dark);
+    display: grid; place-items: center; font-weight: 800; font-size: 15px;
+    box-shadow: var(--shadow); z-index: 1;
+  }
+  .step.gate .marker { background: var(--green); border-color: var(--green); color: var(--navy); }
+  :root[data-theme="light"] .step.gate .marker { color: #003a24; }
+
+  .card {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 14px;
+    padding: 18px 20px; box-shadow: var(--shadow);
+  }
+  .card .head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .card h3 { margin: 0; font-size: 17.5px; font-weight: 800; color: var(--navy); letter-spacing: -.01em; }
+  .when {
+    font-size: 11.5px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase;
+    color: var(--green-dark); background: rgba(0,224,117,.1); border: 1px solid var(--ring);
+    padding: 3px 10px; border-radius: 100px; white-space: nowrap;
+  }
+  .card .sub { margin: 6px 0 0; font-size: 14.5px; color: var(--muted); }
+  ul.pts { margin: 12px 0 0; padding: 0; list-style: none; display: grid; gap: 7px; }
+  ul.pts li { position: relative; padding-left: 22px; font-size: 14.5px; }
+  ul.pts li::before {
+    content: ""; position: absolute; left: 2px; top: 8px; width: 9px; height: 9px;
+    border-radius: 3px; background: var(--green); transform: rotate(45deg);
+  }
+  .card .out {
+    margin: 14px 0 0; padding-top: 12px; border-top: 1px dashed var(--line);
+    font-size: 13.5px; color: var(--text);
+  }
+  .card .out b { color: var(--green-dark); }
+
+  /* Bottom panels */
+  .panels { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 36px 0 0; }
+  @media (max-width: 620px) { .panels { grid-template-columns: 1fr; } }
+  .panel {
+    background: var(--panel-2); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px;
+  }
+  .panel h4 {
+    margin: 0 0 10px; font-size: 12px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase;
+    color: var(--green-dark);
+  }
+  .panel ul { margin: 0; padding-left: 18px; display: grid; gap: 6px; }
+  .panel li { font-size: 14px; }
+  .panel li::marker { color: var(--green); }
+
+  .foot {
+    margin: 30px 0 0; font-size: 13.5px; color: var(--muted); text-align: center;
+    border-top: 1px solid var(--line); padding-top: 18px;
+  }
+  .foot b { color: var(--navy); }
+</style>
+
+<div class="wrap">
+
+  <span class="kicker"><span class="dot"></span> Eduface pilot</span>
+  <h1>Hoe een korte <span class="accent">testperiode</span> eruitziet</h1>
+  <p class="lede">Klein opzetten, hard bewijzen. Eén module, één vak, echte studentinzendingen. Binnen een maand weet je zwart op wit of het werkt in jouw omgeving.</p>
+
+  <div class="facts">
+    <div class="fact"><b>3–4 weken</b><span>van opzet tot besluit</span></div>
+    <div class="fact"><b>1 module</b><span>bv. AI Feedback of Paper Grader</span></div>
+    <div class="fact"><b>1 vak</b><span>1 docent, 1 set inzendingen</span></div>
+    <div class="fact"><b>Go / no-go</b><span>op vooraf afgesproken cijfers</span></div>
+  </div>
+
+  <div class="principle">
+    <div class="ic">✓</div>
+    <p><b>De docent houdt de regie.</b> Eduface stelt de feedback en cijfers op, maar de docent keurt elke opmerking en elk cijfer goed voordat een student er iets van ziet. Je test met echt werk, zonder risico voor de student.</p>
+  </div>
+
+  <div class="tl">
+
+    <div class="step">
+      <div class="marker">0</div>
+      <div class="card">
+        <div class="head">
+          <h3>Opzet en startsein</h3>
+          <span class="when">2–3 dagen</span>
+        </div>
+        <p class="sub">Voordat we draaien leggen we samen vast waar de test op slaagt.</p>
+        <ul class="pts">
+          <li>Kies één module, één vak en één docent die meedoet</li>
+          <li>Spreek de succescriteria af: waar meten we op, wat is een goede uitkomst</li>
+          <li>Koppeling met je LMS of VLE klaarzetten (dit bepaalt later de adoptie)</li>
+          <li>Korte kickoff van 30 minuten met de docent</li>
+        </ul>
+        <p class="out"><b>Aan het eind:</b> een afgebakende scope en een meetlat waar iedereen achter staat.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="marker">1</div>
+      <div class="card">
+        <div class="head">
+          <h3>Draaien op echt werk</h3>
+          <span class="when">Week 1–2</span>
+        </div>
+        <p class="sub">De echte inzendingen gaan door Eduface. De docent blijft aan het stuur.</p>
+        <ul class="pts">
+          <li>Eduface leest elke inzending en stelt feedback of cijfer op, onderbouwd per criterium</li>
+          <li>De docent keurt goed, past aan of wijst af voordat de student iets ziet</li>
+          <li>Studenten krijgen sneller en meer feedback dan normaal</li>
+          <li>We leggen bewijs vast: bespaarde tijd, feedbackvolume, consistentie</li>
+        </ul>
+        <p class="out"><b>Aan het eind:</b> een echte lichting nagekeken, met bewijs van hoe het liep.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="marker">2</div>
+      <div class="card">
+        <div class="head">
+          <h3>Meten tegen de nulmeting</h3>
+          <span class="when">Week 3</span>
+        </div>
+        <p class="sub">We zetten de oude manier naast de nieuwe, in cijfers die jij herkent.</p>
+        <ul class="pts">
+          <li>Nakijktijd per docent: voor en na</li>
+          <li>Feedback per student en doorlooptijd tot de student iets terugkrijgt</li>
+          <li>Consistentie van de beoordeling over de hele lichting</li>
+          <li>Ervaring ophalen bij de docent en bij een paar studenten</li>
+        </ul>
+        <p class="out"><b>Aan het eind:</b> een helder voor/na-plaatje op jouw eigen cijfers.</p>
+      </div>
+    </div>
+
+    <div class="step gate">
+      <div class="marker">✓</div>
+      <div class="card">
+        <div class="head">
+          <h3>Terugkoppeling en besluit</h3>
+          <span class="when">Week 4 · beslismoment</span>
+        </div>
+        <p class="sub">We leggen de uitkomst op tafel en beslissen samen of het door kan.</p>
+        <ul class="pts">
+          <li>Kort rapport met de resultaten, besproken met de betrokken docent</li>
+          <li>Uitkomst afgezet tegen de succescriteria uit stap 0</li>
+          <li>Wat het bredere kost en oplevert bij uitrol over meer vakken</li>
+          <li>Duidelijke go of no-go, geen open eindjes</li>
+        </ul>
+        <p class="out"><b>Bij een go:</b> de test is de opstap naar een bredere uitrol over meer opleidingen.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="panels">
+    <div class="panel">
+      <h4>Wat we van jou vragen</h4>
+      <ul>
+        <li>Eén vak en één docent die meedoet</li>
+        <li>Eén set echte studentinzendingen</li>
+        <li>Eén contactpersoon voor de LMS-koppeling</li>
+        <li>Samen 30 min kickoff en 30 min afronding</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h4>Waar we op meten</h4>
+      <ul>
+        <li>Minder nakijktijd per docent</li>
+        <li>Meer en snellere feedback per student</li>
+        <li>Consistente beoordeling over de lichting</li>
+        <li>Tevredenheid docent en student</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="foot">Een korte test is bewust klein: <b>1 module, 1 vak, echte inzendingen</b>. Klein genoeg om deze maand te starten, groot genoeg om de beslissing over een bredere uitrol op te baseren.</p>
+
+</div>

@@ -1,0 +1,111 @@
+{
+  "slug": "uvac",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_HMoaNYFJ1VFy1OYpRJAu6vxAh0OFuaxpCA4f0CgsHfM",
+    "naam": "UVAC",
+    "url": "https://app.close.com/lead/lead_HMoaNYFJ1VFy1OYpRJAu6vxAh0OFuaxpCA4f0CgsHfM/",
+    "lead_status": "Prospect",
+    "opportunity_id": null,
+    "fase": null,
+    "fase_type": null,
+    "waarde": null,
+    "valuta": "EUR",
+    "confidence": null,
+    "close_date": null,
+    "eigenaar": "Eduface CRM",
+    "crm_note": "",
+    "contacten": [
+      {
+        "naam": "Vikki Liogier",
+        "titel": "EdTech Consultant",
+        "email": "vikkiliogier@outlook.com",
+        "id": "cont_YAsmKjXyFHUKsllBkDVwI42awmJXAtPrd81xOgJhTGE"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_qiqXcThsBDyZYNWDpp9eRssZAx2xney8JS2QSy0wHSx",
+        "soort": "meeting",
+        "datum": "2026-04-30",
+        "titel": "Eduface / Vikki meeting",
+        "duur_min": 45,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "vikkiliogier@outlook.com"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_rjcVqy4rg0eETrZAR7PnhVZthz4cVoAREpkpDOiyN0P",
+        "soort": "meeting",
+        "datum": "2026-05-04",
+        "titel": "Eduface/ Vikki meeting",
+        "duur_min": 45,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "vikkiliogier@outlook.com"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_29NeNdVJUwLXwqh4hjph6aYMQudm02vq8MqSBt0AhrC",
+        "soort": "meeting",
+        "datum": "2026-05-19",
+        "titel": "Potential UVAC / Eduface Pilot",
+        "duur_min": 30,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "vikkiliogier@outlook.com"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      }
+    ],
+    "open_taken": [
+      {
+        "tekst": "Plan meeting",
+        "datum": "2026-09-01"
+      }
+    ],
+    "laatste_gesprek": "2026-05-19",
+    "volgende_afspraak": null,
+    "aantal_gehad": 3,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

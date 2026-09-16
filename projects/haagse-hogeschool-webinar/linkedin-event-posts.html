@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LinkedIn Event + posts · Webinar 23 juni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{ --navy:#002333; --green:#00E075; --green2:#008F5A; --bg:#f5f7f8; --card:#fff; --line:#e2e8ea; --muted:#5b6b73; }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--navy);font-family:'Roboto',system-ui,sans-serif}
+  h1,h2,.spartan{font-family:'League Spartan',system-ui,sans-serif}
+  header{background:var(--navy);color:#fff;padding:20px 24px;position:sticky;top:0;z-index:10;box-shadow:0 2px 10px rgba(0,0,0,.15)}
+  header .logo{font-family:'League Spartan';font-weight:700;font-size:26px}
+  header .logo b{color:var(--green)}
+  header .sub{font-size:14px;color:#b9c6cc;margin-top:2px}
+  .wrap{max-width:880px;margin:0 auto;padding:22px 18px 90px}
+  .ref{background:#0a3144;color:#dfeef0;border-radius:12px;padding:16px 18px;margin:18px 0;font-size:14px;line-height:1.55}
+  .ref b{color:#fff}
+  .ref code{background:#06222f;color:#7ff0b6;padding:1px 6px;border-radius:5px;font-size:13px}
+  .sec-h{display:flex;align-items:baseline;gap:12px;margin:34px 4px 12px}
+  .sec-h h2{font-size:22px;margin:0}
+  .sec-h .bc{font-size:13px;color:var(--muted)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:12px 0}
+  .crow{display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap}
+  .who .nm{font-family:'League Spartan';font-weight:700;font-size:18px;line-height:1.1}
+  .who .og{font-size:13px;color:var(--muted)}
+  .badge{font-size:11px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;padding:3px 8px;border-radius:20px;background:#d7f7e7;color:#006754;flex:0 0 auto}
+  .badge.alt{background:#e2edf2;color:#0a3144}
+  label.fl{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.4px;color:var(--muted);font-weight:700;margin:10px 0 4px}
+  textarea{width:100%;background:#fff;color:var(--navy);border:1px solid #cdd9dd;border-radius:9px;padding:11px 13px;font-family:'Roboto';font-size:14px;line-height:1.6;resize:vertical}
+  textarea:focus{outline:none;border-color:var(--green2);box-shadow:0 0 0 2px #00e07533}
+  .frow{display:flex;align-items:center;gap:12px;margin-top:10px;flex-wrap:wrap}
+  .cp{background:var(--green);color:var(--navy);border:none;border-radius:8px;padding:10px 18px;font-size:14px;font-weight:700;font-family:'League Spartan';cursor:pointer}
+  .cp:hover{background:#00c768}
+  .steps{counter-reset:s;list-style:none;padding:0;margin:6px 0}
+  .steps li{position:relative;padding:8px 0 8px 38px;font-size:14px;line-height:1.55;border-bottom:1px solid var(--line)}
+  .steps li:last-child{border-bottom:none}
+  .steps li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:7px;width:26px;height:26px;background:var(--navy);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;font-family:'League Spartan'}
+  .timeline{margin:6px 0}
+  .tl{display:flex;gap:14px;padding:12px 0;border-bottom:1px solid var(--line)}
+  .tl:last-child{border-bottom:none}
+  .tl .when{flex:0 0 130px;font-family:'League Spartan';font-weight:700;font-size:15px;color:var(--green2)}
+  .tl .what{flex:1;font-size:14px;line-height:1.55}
+  .toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--navy);color:#fff;padding:12px 20px;border-radius:10px;font-size:14px;opacity:0;pointer-events:none;transition:.2s;z-index:50}
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+  .toast b{color:var(--green)}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">Edu<b>face</b></div>
+  <div class="sub">LinkedIn Event + posts · Webinar dinsdag 23 juni (10:00-11:00) · Maartje Sijm × Eduface</div>
+</header>
+
+<div class="wrap">
+
+  <div class="ref">
+    <b>Doel:</b> organische LinkedIn-laag bovenop de 84 DM's en de warme e-mail. Eén LinkedIn Event als verzamel- en reminderpunt, drie posts (Maartje voorop), alles linkt naar <code>https://join.eduface.me/webinar</code>.<br><br>
+    <b>Belangrijk:</b> zet het Event op <b>externe registratie</b> die doorlinkt naar de aanmeldpagina. Niet de LinkedIn-RSVP gebruiken, want dan heb je namen maar geen e-mail en krijg je ze niet in Teams.
+  </div>
+
+  <!-- ===== EVENT SETUP ===== -->
+  <div class="sec-h"><h2 class="spartan">1. LinkedIn Event aanmaken</h2><span class="bc">vanaf de Eduface-bedrijfspagina</span></div>
+  <div class="card">
+    <ol class="steps">
+      <li>Ga naar de <b>Eduface-bedrijfspagina</b> → "Een evenement maken" (zo staat de pagina als host en kunnen Jeroen, Maartje en jij alle drie delen).</li>
+      <li>Evenementtype: <b>Online</b>. Bij "Hoe melden mensen zich aan" kies je <b>Externe link</b> en vul je <code>https://join.eduface.me/webinar</code> in.</li>
+      <li>Datum/tijd: <b>dinsdag 23 juni, 10:00-11:00 (CET)</b>.</li>
+      <li>Banner: hergebruik de webinar-banner zodra die klaar is. Tot dan een simpele tekstbanner zodat het Event nu al live kan.</li>
+      <li>Titel en omschrijving: plak uit de blokken hieronder.</li>
+      <li>Na het aanmaken: deel het Event als post (zie posts hieronder) en gebruik <b>"Connecties uitnodigen"</b> om netwerk + de 84 leads uit te nodigen.</li>
+    </ol>
+
+    <label class="fl">Event-titel</label>
+    <textarea rows="2" id="t-title">Webinar: AI-feedback op schrijfvaardigheid in het hoger onderwijs</textarea>
+    <div class="frow"><button class="cp" onclick="cp('t-title')">Kopieer titel</button></div>
+
+    <label class="fl">Event-omschrijving</label>
+    <textarea rows="9" id="t-desc">Gratis online webinar op dinsdag 23 juni, van 10:00 tot 11:00.
+
+Samen met Maartje Sijm (docent aan De Haagse Hogeschool) laten we zien hoe je AI inzet voor formatieve feedback op schrijfvaardigheid. Maartje deelt een pilot waarin studenten over meerdere rondes AI-ondersteunde feedback kregen op hun teksten. Een van de uitkomsten: de studenten die de tool wekelijks gebruikten, haalden aan het eind allemaal een voldoende.
+
+We laten zien hoe het in de praktijk werkt, wat wel en niet werkte, en hoe je AI breder inzet om docenten werk uit handen te nemen en studenten sneller betere feedback te geven.
+
+Online en gratis. Meld je aan via de knop hierboven. Kun je niet live? Meld je toch aan, dan sturen we je achteraf de opname.</textarea>
+    <div class="frow"><button class="cp" onclick="cp('t-desc')">Kopieer omschrijving</button></div>
+  </div>
+
+  <!-- ===== POSTS ===== -->
+  <div class="sec-h"><h2 class="spartan">2. Posts</h2><span class="bc">drie stemmen, andere invalshoek per post</span></div>
+
+  <div class="card">
+    <div class="crow">
+      <div class="who"><div class="nm">Maartje Sijm</div><div class="og">De Haagse Hogeschool · persoonlijk profiel</div></div>
+      <span class="badge">Belangrijkste</span>
+    </div>
+    <textarea rows="14" id="p-maartje">Op 23 juni geef ik samen met Eduface een gratis webinar, en ik vind het leuk als je erbij bent.
+
+Het afgelopen jaar heb ik op De Haagse Hogeschool een pilot gedaan met AI-feedback op schrijfvaardigheid. Studenten kregen over meerdere rondes feedback op hun teksten. Wat me het meest bijbleef: de studenten die de tool elke week gebruikten, haalden aan het eind allemaal een voldoende.
+
+In het webinar vertel ik hoe dat in de praktijk ging, wat wel werkte en wat niet, en wat het voor de studenten betekende. Geen verkooppraatje, gewoon mijn ervaring als docent.
+
+Het is dinsdag 23 juni, van 10:00 tot 11:00, online en gratis.
+
+Aanmelden kan via het event hieronder of op https://join.eduface.me/webinar</textarea>
+    <div class="frow"><button class="cp" onclick="cp('p-maartje')">Kopieer post</button></div>
+  </div>
+
+  <div class="card">
+    <div class="crow">
+      <div class="who"><div class="nm">Jeroen van Gessel</div><div class="og">CEO Eduface · persoonlijk profiel</div></div>
+      <span class="badge alt">Uitnodiging</span>
+    </div>
+    <textarea rows="14" id="p-jeroen">Op 23 juni doen we een gratis webinar over AI en feedback in het hoger onderwijs, en ik ben blij dat Maartje Sijm van De Haagse Hogeschool meedoet.
+
+Maartje deelt een pilot waarin studenten AI-ondersteunde feedback kregen op hun schrijfvaardigheid, over meerdere rondes. Een van de resultaten: de studenten die de tool wekelijks gebruikten, haalden allemaal een voldoende.
+
+Zelf laat ik zien hoe je AI breder inzet, zodat docenten minder nakijkwerk hebben en studenten sneller betere feedback krijgen.
+
+Voor wie het interessant vindt: dinsdag 23 juni, 10:00 tot 11:00, online en gratis.
+
+Aanmelden: https://join.eduface.me/webinar</textarea>
+    <div class="frow"><button class="cp" onclick="cp('p-jeroen')">Kopieer post</button></div>
+  </div>
+
+  <div class="card">
+    <div class="crow">
+      <div class="who"><div class="nm">Eduface</div><div class="og">bedrijfspagina · aankondiging</div></div>
+      <span class="badge alt">Pagina</span>
+    </div>
+    <textarea rows="11" id="p-page">Gratis webinar op 23 juni: AI-feedback op schrijfvaardigheid in het hoger onderwijs.
+
+Samen met Maartje Sijm (De Haagse Hogeschool) laten we zien hoe AI docenten helpt om studenten sneller en beter feedback te geven. Maartje deelt de resultaten van haar pilot, wij laten zien hoe het werkt.
+
+Dinsdag 23 juni, 10:00 tot 11:00, online en gratis.
+
+Meld je aan: https://join.eduface.me/webinar</textarea>
+    <div class="frow"><button class="cp" onclick="cp('p-page')">Kopieer post</button></div>
+  </div>
+
+  <div class="card">
+    <div class="crow">
+      <div class="who"><div class="nm">Reminder (dag ervoor)</div><div class="og">korte herinnering · pagina + Maartje</div></div>
+      <span class="badge alt">22 juni</span>
+    </div>
+    <textarea rows="6" id="p-reminder">Morgen is het zover: ons gratis webinar over AI-feedback op schrijfvaardigheid, met Maartje Sijm van De Haagse Hogeschool. Dinsdag 23 juni, 10:00 tot 11:00, online.
+
+Nog snel aanmelden kan hier: https://join.eduface.me/webinar</textarea>
+    <div class="frow"><button class="cp" onclick="cp('p-reminder')">Kopieer reminder</button></div>
+  </div>
+
+  <!-- ===== CADANS ===== -->
+  <div class="sec-h"><h2 class="spartan">3. Deelritme</h2><span class="bc">13 dagen tot 23 juni</span></div>
+  <div class="card">
+    <div class="timeline">
+      <div class="tl"><div class="when">Nu (10-11 juni)</div><div class="what">Event live zetten. <b>Maartje</b> plaatst haar post, <b>Eduface-pagina</b> plaatst de aankondiging. Jeroen en Dante reposten allebei.</div></div>
+      <div class="tl"><div class="when">~17 juni</div><div class="what"><b>Jeroen</b> plaatst zijn post (andere invalshoek). <b>Maartje</b> nodigt haar connecties uit voor het Event via "Connecties uitnodigen".</div></div>
+      <div class="tl"><div class="when">22 juni</div><div class="what">Korte <b>reminder-post</b> vanaf de pagina en bij Maartje. "Morgen, laatste kans om aan te melden."</div></div>
+      <div class="tl"><div class="when">Doorlopend</div><div class="what">In de stap-2 DM's (de 84 leads) ook naar het <b>Event</b> verwijzen, niet alleen de aanmeldlink. Event-deelnemers = warme leadlijst voor de follow-up achteraf.</div></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="toast" id="toast"><b>Gekopieerd</b> naar klembord</div>
+<script>
+  document.querySelectorAll('textarea').forEach(t=>{const fit=()=>{t.style.height='auto';t.style.height=t.scrollHeight+'px'};fit();t.addEventListener('input',fit)});
+  function cp(id){const el=document.getElementById(id);navigator.clipboard.writeText(el.value).then(()=>{const t=document.getElementById('toast');t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1400)})}
+</script>
+</body>
+</html>

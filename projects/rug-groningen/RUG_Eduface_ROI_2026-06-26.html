@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eduface ROI Analyse - Rijksuniversiteit Groningen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#002333;
+    --green:#00E075;
+    --green2:#006754;
+    --green3:#008F5A;
+    --green4:#004C4C;
+    --ink:#0e1c24;
+    --muted:#5a6b73;
+    --line:#e2e8eb;
+    --bg:#ffffff;
+    --soft:#f3f7f8;
+    --pink:#ffe1ec;
+    --pink-ink:#a01457;
+    --purple:#e9e2fb;
+    --purple-ink:#5b3ea8;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    font-family:'Inter',-apple-system,sans-serif;
+    color:var(--ink);
+    background:#dfe6e9;
+    font-size:13px;
+    line-height:1.55;
+  }
+  h1,h2,h3,h4{font-family:'League Spartan',sans-serif;color:var(--navy);margin:0;line-height:1.1;}
+  .page{
+    width:210mm;min-height:297mm;
+    background:var(--bg);
+    margin:14px auto;
+    padding:20mm 18mm;
+    position:relative;
+    box-shadow:0 2px 14px rgba(0,0,0,.12);
+  }
+  .pagenum{position:absolute;bottom:10mm;right:18mm;font-size:10px;color:var(--muted);}
+  .foot{position:absolute;bottom:10mm;left:18mm;font-size:9px;color:var(--muted);max-width:130mm;}
+  .runhead{display:flex;justify-content:space-between;font-size:9px;color:var(--muted);border-bottom:1px solid var(--line);padding-bottom:6px;margin-bottom:18px;text-transform:uppercase;letter-spacing:.04em;}
+  .brand{font-family:'League Spartan';font-weight:800;color:var(--navy);}
+  .brand .fx{color:var(--green3);}
+
+  /* COVER */
+  .cover{background:var(--navy);color:#fff;}
+  .cover h1,.cover h2,.cover h3{color:#fff;}
+  .cover .wordmark{font-family:'League Spartan';font-weight:800;font-size:30px;letter-spacing:-.01em;}
+  .cover .wordmark .fx{color:var(--green);}
+  .cover .kicker{color:var(--green);font-weight:600;letter-spacing:.16em;text-transform:uppercase;font-size:11px;margin-top:90px;}
+  .cover h1{font-size:46px;font-weight:800;margin:14px 0 6px;letter-spacing:-.02em;}
+  .cover .sub{font-size:18px;color:#bcd;max-width:150mm;font-weight:500;}
+  .cover .metsplit{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:70px;border-top:1px solid rgba(255,255,255,.18);}
+  .cover .met{padding:16px 0;border-bottom:1px solid rgba(255,255,255,.12);}
+  .cover .met .l{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--green);}
+  .cover .met .v{font-size:15px;font-weight:600;margin-top:3px;}
+  .cover .conf{position:absolute;bottom:16mm;left:18mm;right:18mm;font-size:10px;color:#9bb;border-top:1px solid rgba(255,255,255,.15);padding-top:10px;}
+
+  .lead{font-size:14px;color:var(--ink);}
+  h2.sec{font-size:22px;margin:0 0 4px;}
+  .secnum{color:var(--green3);}
+  .sub2{color:var(--muted);font-size:12px;margin:0 0 16px;}
+  p{margin:0 0 11px;}
+  strong{color:var(--navy);}
+  a{color:var(--green2);word-break:break-word;}
+
+  /* data tiles */
+  .tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0;}
+  .tile{border:1px solid var(--line);border-radius:9px;padding:13px 14px;background:var(--soft);}
+  .tile .v{font-family:'League Spartan';font-weight:800;color:var(--navy);font-size:24px;line-height:1;}
+  .tile .l{font-weight:600;margin-top:6px;font-size:12px;color:var(--ink);}
+  .tile .s{font-size:9.5px;color:var(--muted);margin-top:5px;line-height:1.35;}
+
+  table{width:100%;border-collapse:collapse;margin:10px 0 16px;font-size:11.5px;}
+  th{background:var(--navy);color:#fff;text-align:left;padding:8px 9px;font-weight:600;font-family:'Inter';}
+  td{padding:7px 9px;border-bottom:1px solid var(--line);vertical-align:top;}
+  tr:nth-child(even) td{background:var(--soft);}
+  .small{font-size:10.5px;color:var(--muted);}
+
+  /* value card */
+  .vcard{border:1px solid var(--line);border-radius:11px;overflow:hidden;margin:0 0 16px;}
+  .vhead{display:flex;align-items:center;gap:11px;padding:12px 15px;background:var(--soft);border-bottom:1px solid var(--line);}
+  .vno{font-family:'League Spartan';font-weight:800;font-size:19px;color:#fff;background:var(--navy);min-width:30px;height:30px;border-radius:7px;display:flex;align-items:center;justify-content:center;}
+  .vhead h3{font-size:15.5px;flex:1;}
+  .badge{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;padding:4px 9px;border-radius:20px;}
+  .b-direct{background:#d9f7e7;color:#046a40;}
+  .b-risk{background:#fff0d6;color:#9a6400;}
+  .b-strat{background:#e3eefc;color:#1b4f9c;}
+  .vbody{padding:13px 15px;}
+  .tags{margin:4px 0 11px;}
+  .tag{font-size:9px;font-weight:600;padding:3px 8px;border-radius:5px;margin-right:5px;display:inline-block;}
+  .t-new{background:var(--pink);color:var(--pink-ink);}
+  .t-sec{background:var(--purple);color:var(--purple-ink);}
+  .calc{background:#0a2a39;color:#cfe;border-radius:8px;padding:12px 14px;font-family:'SFMono-Regular',Consolas,monospace;font-size:10.8px;line-height:1.7;white-space:pre-wrap;margin:10px 0;}
+  .calc b{color:var(--green);}
+  .challenge{border-left:3px solid var(--green3);background:var(--soft);padding:9px 13px;border-radius:0 7px 7px 0;font-size:11px;margin:10px 0;}
+  .challenge .q{font-weight:700;color:var(--navy);}
+  .vfoot{display:flex;gap:10px;margin-top:12px;}
+  .vfoot .box{flex:1;border:1px solid var(--line);border-radius:8px;padding:9px 12px;}
+  .vfoot .box.full{background:var(--navy);border-color:var(--navy);}
+  .vfoot .box .l{font-size:9.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);}
+  .vfoot .box.full .l{color:var(--green);}
+  .vfoot .box .v{font-family:'League Spartan';font-weight:800;font-size:21px;color:var(--navy);}
+  .vfoot .box.full .v{color:#fff;}
+
+  .callout{border:1px solid var(--green3);background:#effaf3;border-radius:10px;padding:14px 16px;margin:14px 0;}
+  .callout h4{color:var(--green2);font-size:14px;margin-bottom:6px;}
+
+  .totbar{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0;}
+  .totbox{border-radius:11px;padding:16px;border:1px solid var(--line);}
+  .totbox.a{background:var(--soft);}
+  .totbox.b{background:#eef7f1;border-color:#bfe6cf;}
+  .totbox.c{background:var(--navy);color:#fff;}
+  .totbox .l{font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600;}
+  .totbox.c .l{color:var(--green);}
+  .totbox .v{font-family:'League Spartan';font-weight:800;font-size:23px;margin:6px 0 2px;color:var(--navy);}
+  .totbox.c .v{color:#fff;}
+  .totbox .v2{font-size:12px;color:var(--muted);}
+  .totbox.c .v2{color:#9bb;}
+
+  .note{font-size:10.5px;color:var(--muted);}
+  ul.tight{margin:6px 0 12px;padding-left:18px;}
+  ul.tight li{margin-bottom:5px;}
+  .pagebreak{page-break-after:always;}
+  @media print{
+    body{background:#fff;}
+    .page{margin:0;box-shadow:none;width:auto;min-height:auto;page-break-after:always;}
+  }
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<section class="page cover">
+  <div class="wordmark">Edu<span class="fx">face</span></div>
+  <div class="kicker">AI-gestuurde assessmentfeedback voor het hoger onderwijs</div>
+  <h1>ROI Analyse<br>Rijksuniversiteit Groningen</h1>
+  <div class="sub">Waardepotentieel van Eduface voor universiteitsbrede toetsing en feedback, voor bestuurlijke besluitvorming.</div>
+
+  <div class="metsplit">
+    <div class="met"><div class="l">Opgesteld voor</div><div class="v">Nolda Tipping-Griffioen<br><span style="font-weight:400;color:#bcd;font-size:12px">Algemeen Directeur CIT &amp; CIO (beoogd economic buyer)</span></div></div>
+    <div class="met"><div class="l">Primair contact</div><div class="v">Tessa Jansen<br><span style="font-weight:400;color:#bcd;font-size:12px">Coördinator Onderwijsapplicaties, CIT</span></div></div>
+    <div class="met"><div class="l">Datum / versie</div><div class="v">26 juni 2026 — v1.0</div></div>
+    <div class="met"><div class="l">Analysebasis</div><div class="v">34.314 studenten (DUO 2025-26) · 4.235,9 WP-FTE (Jaarverslag 2024)</div></div>
+    <div class="met"><div class="l">Pilotbewijs</div><div class="v">Bath Spa University, juni 2026 (sectorvalidatie)</div></div>
+    <div class="met"><div class="l">Reikwijdte</div><div class="v">Volledige Eduface-inzet, tekstgebaseerde toetsing</div></div>
+  </div>
+
+  <div class="conf">Vertrouwelijk — voor intern gebruik Eduface en de geadresseerde. Alle bedragen in euro's, excl. btw. Schattingen zijn expliciet gelabeld. Jaar 1-waarden op basis van 30% adoptiegraad; volledige inzet = 100% implementatie. · info@eduface.me · eduface.me</div>
+</section>
+
+<!-- PAGE: context -->
+<section class="page">
+  <div class="runhead"><span class="brand">Edu<span class="fx">face</span> · ROI Analyse Rijksuniversiteit Groningen</span><span>Vertrouwelijk · 26 juni 2026</span></div>
+
+  <h2 class="sec"><span class="secnum">1.</span> Relatiecontext &amp; CRM-status</h2>
+  <p class="sub2">Waar dit gesprek vandaan komt en wie betrokken is.</p>
+
+  <p>Het contact loopt via het <strong>CIT (Center for Information Technology)</strong> van de RUG, het centrale team dat onderwijsapplicaties voor alle elf faculteiten beheert. Aanleiding was een webinar-aanmelding; daaruit kwam dat het CIT al langer een <strong>voorstadium van een project</strong> loopt om AI-ondersteund nakijken en feedback universiteitsbreed aan te bieden. In een telefonische kennismaking op 26 juni 2026 schetste Tessa Jansen de kern van de pijn (zie hieronder). Op <strong>dinsdag 30 juni 2026 (13:00-14:00)</strong> staat een verkennende meeting met meerdere CIT-collega's en Jeroen van Gessel (oprichter Eduface).</p>
+
+  <table>
+    <tr><th>Rol</th><th>Naam</th><th>Positie in het verkoopproces</th></tr>
+    <tr><td>Coach / ingang</td><td><strong>Tessa Jansen</strong></td><td>Coördinator Onderwijsapplicaties, CIT. Regelt toegang en organiseert de meeting. Eerder Learning Solutions Expert bij Noordhoff; sinds juni 2026 bij de RUG.</td></tr>
+    <tr><td>Beoogd economic buyer</td><td><strong>Nolda Tipping-Griffioen</strong></td><td>Algemeen Directeur CIT &amp; CIO van de universiteit (sinds 1 juli 2024). Houdt de discretionaire IT-middelen.</td></tr>
+    <tr><td>Operationele gatekeeper</td><td>Louwarnoud van der Duim</td><td>Domeinmanager Onderwijs, CIT.</td></tr>
+    <tr><td>Academisch sponsor</td><td>Jacquelien Scherpen</td><td>Rector Magnificus; eindverantwoordelijk voor onderwijs (afgeleid uit de rol).</td></tr>
+    <tr><td>Faculteitscontact</td><td>A.Z. Ademiluyi</td><td>Eerder contact vanuit een faculteit; warme relatie met Eduface.</td></tr>
+  </table>
+
+  <div class="callout">
+    <h4>Geïdentificeerde pijn (kennismaking 26 juni 2026, letterlijk uit het gesprek)</h4>
+    <p style="margin-bottom:6px"><strong>Faculteiten en docenten gebruiken nu al zelf AI-tools om na te kijken, zonder centrale goedkeuring.</strong> Tessa benoemde expliciet een <strong>hoog risico op datalekken en negatieve publiciteit</strong> als hier niet snel een gecontroleerde oplossing voor komt. Tegelijk geldt: "breder, voor iedereen, moet het helemaal goed zijn" (juridisch, privacy, technisch). Het CIT onderzoekt daarom twee routes: een bestaande tool inzetten, of <strong>zelf bouwen</strong> bovenop hun eigen Brightspace-tooling (UG Grader).</p>
+    <p style="margin-bottom:0" class="note">Dit document kwantificeert de waarde van de eerste route en weegt die expliciet af tegen zelfbouw (sectie 8).</p>
+  </div>
+
+  <p class="note"><strong>BANT-status:</strong> Need = ja, breed/institutioneel en met een concreet risico-argument. Authority = economic buyer beoogd (CIO/CIT), nog niet bevestigd. Budget = onbekend (verkenningsfase). Timing = geen harde deadline, maar de EU AI Act (hoog-risico, vanaf 2 aug 2026) en het ongecontroleerde gebruik geven urgentie.</p>
+
+  <div class="foot">Alle schattingen zijn gebaseerd op geïdentificeerde bronnen. Zie bronnenregister op de laatste pagina.</div>
+  <div class="pagenum">2</div>
+</section>
+
+<!-- PAGE: kerninput -->
+<section class="page">
+  <div class="runhead"><span class="brand">Edu<span class="fx">face</span> · ROI Analyse Rijksuniversiteit Groningen</span><span>Vertrouwelijk · 26 juni 2026</span></div>
+
+  <h2 class="sec"><span class="secnum">2.</span> Kerninputgegevens</h2>
+  <p class="sub2">Geverifieerde inputs uit publieke bronnen. Elke tegel toont de waarde en de bron.</p>
+
+  <div class="tiles">
+    <div class="tile"><div class="v">34.314</div><div class="l">Studenten (2025-2026)</div><div class="s">Ba 23.426 / Ma 10.748. DUO via AlleCijfers.nl. RUG-eigen telling: ~32.500.</div></div>
+    <div class="tile"><div class="v">11</div><div class="l">Faculteiten</div><div class="s">Universiteitsbrede scope via CIT. RUG Jaarverslag 2024.</div></div>
+    <div class="tile"><div class="v">4.235,9</div><div class="l">WP-FTE (wetenschappelijk personeel)</div><div class="s">Totaal 7.271,2 FTE. RUG Jaarverslag 2024, p.146.</div></div>
+    <div class="tile"><div class="v">€ 954,7M</div><div class="l">Totale baten 2024</div><div class="s">Personeelslasten € 714,4M = ~75% van de baten. RUG Jaarverslag 2024, p.116.</div></div>
+    <div class="tile"><div class="v">−€ 41,4M</div><div class="l">Nettoresultaat 2024 (tekort)</div><div class="s">2025 begroot −€23,6M. Structureel bezuinigen. Jaarverslag 2024 / Instellingsbegroting 2025.</div></div>
+    <div class="tile"><div class="v">~€ 45M</div><div class="l">Extra te bezuinigen t/m 2030</div><div class="s">Bovenop eerdere maatregelen; o.a. door WIB (~€42,4M/jr). oogtv.nl / ukrant.nl, 2025-2026.</div></div>
+    <div class="tile"><div class="v">33,3%</div><div class="l">Tijdelijke contracten</div><div class="s">Docenten landelijk ~47% tijdelijk. Jaarverslag 2024 p.69 / Rathenau.</div></div>
+    <div class="tile"><div class="v">~€ 50</div><div class="l">Werkgeverskosten per uur (gem. nakijker)</div><div class="s">Docent ~€45, UD ~€55. CAO Ned. Universiteiten + ABP 18,9%. Schatting, zie sectie 3.</div></div>
+    <div class="tile"><div class="v">94%</div><div class="l">AI-nauwkeurigheid (sectorvalidatie)</div><div class="s">96% in OBM-vakken. Bath Spa pilot juni 2026.</div></div>
+  </div>
+
+  <div class="callout">
+    <h4>Financiële context = de wig</h4>
+    <p style="margin-bottom:0">De RUG zit in een <strong>structureel meerjarentekort</strong> (−€41,4M in 2024) met expliciete druk om personeelskosten te verlagen en met minder capaciteit meer te doen. Personeel is <strong>75% van de baten</strong> en nakijken is een grote, onzichtbare tijdpost daarbinnen. Elke structurele besparing op nakijktijd raakt direct de grootste kostenpost in een periode waarin de RUG moet bezuinigen.</p>
+  </div>
+
+  <div class="foot">Alle schattingen zijn gebaseerd op geïdentificeerde bronnen. Zie bronnenregister op de laatste pagina.</div>
+  <div class="pagenum">3</div>
+</section>
+
+<!-- PAGE: aannames -->
+<section class="page">
+  <div class="runhead"><span class="brand">Edu<span class="fx">face</span> · ROI Analyse Rijksuniversiteit Groningen</span><span>Vertrouwelijk · 26 juni 2026</span></div>
+
+  <h2 class="sec"><span class="secnum">3.</span> Aannames en berekenbare inputs</h2>
+  <p class="sub2">De basis onder alle berekeningen. Schattingen zijn bewust conservatief.</p>
+
+  <table>
+    <tr><th>Input</th><th>Waarde</th><th>Bron / toelichting</th></tr>
+    <tr><td>Totaal studenten (2025-2026)</td><td>34.314</td><td>DUO via AlleCijfers.nl. Geverifieerd.</td></tr>
+    <tr><td>Eduface-relevante studenten (schatting)</td><td>ca. 16.000</td><td><strong>SCHATTING.</strong> Schrijfintensieve faculteiten: Rechten 4.368, Letteren 5.687, schrijfdeel van GMW (5.667) en FEB (6.899), Wijsbegeerte ~500, Ruimtelijke Wetenschappen 1.100, Theologie ~300. STEM (FSE) en Medisch (UMCG) grotendeels uitgesloten. Conservatief afgerond op 16.000.</td></tr>
+    <tr><td>Tekstsubmissies per student per jaar (schatting)</td><td>8</td><td><strong>SCHATTING, conservatief.</strong> WO-norm 60 EC/jr ≈ 10-12 vakken; schrijfintensieve opleidingen 8-12 beoordeelde schrijfproducten/jaar (open tentamenvragen, papers, verslagen, scriptie). Ondergrens gebruikt.</td></tr>
+    <tr><td>Totale Eduface-relevante submissions/jaar</td><td>128.000</td><td>Berekening: 16.000 × 8. Schatting.</td></tr>
+    <tr><td>Nakijktijd ZONDER Eduface</td><td>20 min</td><td>Sector-schatting (Saxion "SOS bij nakijkdruk", 2021: ~3/uur). BSU 2-3 min impliceert 20-30 min zonder. Conservatief 20 min.</td></tr>
+    <tr><td>Nakijktijd MET Eduface</td><td>3 min</td><td>BSU-pilot juni 2026: 2-3 min gemiddelde reviewtijd. Sectorvalidatie, niet RUG-specifiek.</td></tr>
+    <tr><td>Tijdsbesparing per submission</td><td>17 min (0,283 u)</td><td>20 − 3 = 17 min. Basis voor alle tijdsbesparing.</td></tr>
+    <tr><td>Werkgeverskosten per uur (gewogen)</td><td>ca. € 50/uur</td><td><strong>SCHATTING.</strong> Docent (schaal 10/11) ~€89.000/FTE → ~€45/u; UD (schaal 11/12) ~€108.000/FTE → ~€55/u. Bruto + vakantiegeld 8% + eindejaarsuitkering 8,3% + ABP-werkgeverspremie 18,9% + sociale lasten. Contractuele urenbasis (1.976 u, 38-urige week CAO NU).</td></tr>
+    <tr><td>CAO-urenbasis (WO)</td><td>38 u/week</td><td>CAO Nederlandse Universiteiten (geen normjaartaak van 1.659 u; dat is HBO). Uurloon = 1/165 maandsalaris.</td></tr>
+    <tr><td>Adoptiegraad jaar 1</td><td>30%</td><td>Standaard Eduface-aanname, conform BSU-implementatiefasering.</td></tr>
+    <tr><td>AI-nauwkeurigheid (sectorvalidatie)</td><td>94-96%</td><td>BSU-pilot juni 2026. Sectorvalidatie, niet RUG-specifiek.</td></tr>
+  </table>
+
+  <h2 class="sec" style="margin-top:18px"><span class="secnum">4.</span> Pilotbewijs</h2>
+  <p class="sub2">Instelling-specifiek pilotbewijs: geen. Onderstaande getallen zijn sectorvalidatie (Bath Spa University).</p>
+  <table>
+    <tr><th>Datapunt</th><th>Waarde</th><th>Geldigheid voor RUG</th></tr>
+    <tr><td>Submissions in pilot</td><td>435</td><td>Sectorvalidatie — niet RUG-specifiek</td></tr>
+    <tr><td>Vakken / disciplines / beoordelaars</td><td>6 vakken, 3 disciplines, 13 markers</td><td>Sectorvalidatie</td></tr>
+    <tr><td>Gem. reviewtijd met Eduface</td><td>2-3 min/submission</td><td>Toegepast als 3 min in RUG-berekening</td></tr>
+    <tr><td>AI-beoordelingsnauwkeurigheid</td><td>94% (96% in OBM-vakken)</td><td>Sectorvalidatie; niet RUG-specifiek</td></tr>
+    <tr><td>Benodigde eindredactie docent</td><td>Minimaal; consistente rubric-dekking</td><td>Verwacht vergelijkbaar in NL WO-context</td></tr>
+  </table>
+  <p class="note">Een RUG-pilot (bijv. bij Rechten of Letteren) zou dit bewijs instelling-specifiek maken. Dat is de logische eerste stap na deze verkenning.</p>
+
+  <div class="foot">Alle schattingen zijn gebaseerd op geïdentificeerde bronnen. Zie bronnenregister op de laatste pagina.</div>
+  <div class="pagenum">4</div>
+</section>
+
+<!-- PAGE: pathways A -->
+<section class="page">
+  <div class="runhead"><span class="brand">Edu<span class="fx">face</span> · ROI Analyse Rijksuniversiteit Groningen</span><span>Vertrouwelijk · 26 juni 2026</span></div>
+
+  <h2 class="sec"><span class="secnum">5.</span> Waardepaden</h2>
+  <p class="sub2">Drie categorieën: (A) directe besparingen, (B) risicobeheersing, (C) strategische waarde. Kansen zijn schattingen; u mag uw eigen percentages hanteren.</p>
+
+  <div class="vcard">
+    <div class="vhead"><div class="vno">1</div><h3>Nakijktijdwinst — tekstgebaseerde beoordelingen</h3><span class="badge b-direct">Directe besparing</span></div>
+    <div class="vbody">
+      <div class="tags"><span class="tag t-sec">BSU-pilot sectorvalidatie</span><span class="tag t-sec">CAO Ned. Universiteiten</span><span class="tag t-new">RUG Jaarverslag 2024</span></div>
+      <p>Nakijken van geschreven werk is een van de grootste, minst zichtbare tijdposten voor wetenschappelijk personeel. Eduface genereert direct gestructureerde feedback inclusief rubric-dekking en een conceptcijfer; de docent verifieert en finaliseert in 2-3 minuten in plaats van de gebruikelijke ~20. Dit geldt voor essays, papers, verslagen, reflecties, casusanalyses en open tentamenvragen.</p>
+      <div class="calc">Eduface-relevante studenten: 16.000 (schatting, sectie 3)
+Tekstsubmissies per student/jaar: 8 (schatting)
+Totale submissions/jaar: 128.000
+Tijdsbesparing per submission: 17 min = 0,283 u
+Totale tijdsbesparing (100%): 128.000 × 0,283 = 36.224 uur
+Werkgeverskosten per uur: € 50 (schatting, sectie 3)
+Waarde volledige inzet: 36.224 × € 50 = <b>€ 1.811.000</b>
+Jaar 1 (30%): 36.224 × 0,30 × € 50 = <b>€ 543.000</b></div>
+      <div class="challenge"><span class="q">Kritische vraag:</span> geldt BSU-bewijs ook voor het Nederlandse WO? <br><span class="q">Antwoord:</span> BSU-essays en WO-papers/scripties zijn qua structuur vergelijkbaar. De schatting is bewust conservatief: 20 min nakijken per submission is aan de lage kant voor scripties en juridische casus. Een RUG-pilot levert instelling-specifiek bewijs.</div>
+      <div class="vfoot">
+        <div class="box"><div class="l">Jaar 1 (30% adoptie)</div><div class="v">€ 543.000</div></div>
+        <div class="box full"><div class="l">Volledige inzet</div><div class="v">€ 1.811.000</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="vcard">
+    <div class="vhead"><div class="vno">2</div><h3>Reductie externe nakijk- en inhuurcapaciteit</h3><span class="badge b-direct">Directe besparing</span></div>
+    <div class="vbody">
+      <div class="tags"><span class="tag t-new">RUG Jaarverslag 2024 (p.146)</span><span class="tag t-sec">BSU-pilot sectorvalidatie</span></div>
+      <p>In 2024 gaf de RUG <strong>€ 46,6M</strong> uit aan personeel niet in loondienst (externe inhuur), en de overschrijding op personeelskosten werd deels gedreven door "meer inhuur van derden". Een deel hiervan betreft piek-nakijk- en onderwijsondersteuning. Met ~85% kortere nakijktijd per submission neemt de behoefte aan externe nakijkcapaciteit structureel af. De vakdocent behoudt de eindverantwoordelijkheid over elke beoordeling.</p>
+      <div class="calc">Personeel niet in loondienst 2024: € 46.600.000 (geverifieerd)
+Aandeel nakijk-/onderwijsondersteuning: 7% (schatting; instellingsbreed, dus laag gehouden)
+Nakijkgerelateerde inhuur: € 46,6M × 0,07 = € 3.262.000
+Reductie door Eduface: 25% (schatting; docent behoudt eindredactie)
+Besparing volledige inzet: € 3.262.000 × 0,25 = <b>€ 815.000</b>
+Jaar 1 (30%): € 815.000 × 0,30 = <b>€ 245.000</b></div>
+      <div class="challenge"><span class="q">Kritische vraag:</span> hoe weet u dat 7% van de inhuur nakijk is, en overlapt dit met pad 1? <br><span class="q">Antwoord:</span> we weten het niet exact; 7% is een conservatieve ondergrens (het Jaarverslag splitst de inhuur niet uit). Om dubbeltelling met pad 1 te vermijden betreft dit specifiek <em>externe</em> inhuurbudget, los van interne docenttijd. Een interne uitsplitsing verfijnt dit.</div>
+      <div class="vfoot">
+        <div class="box"><div class="l">Jaar 1 (30% adoptie)</div><div class="v">€ 245.000</div></div>
+        <div class="box full"><div class="l">Volledige inzet</div><div class="v">€ 815.000</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">Alle schattingen zijn gebaseerd op geïdentificeerde bronnen. Zie bronnenregister op de laatste pagina.</div>
+  <div class="pagenum">5</div>
+</section>
+
+<!-- PAGE: pathways 3 + 4 -->
+<section class="page">
+  <div class="runhead"><span class="brand">Edu<span class="fx">face</span> · ROI Analyse Rijksuniversiteit Groningen</span><span>Vertrouwelijk · 26 juni 2026</span></div>
+
+  <div class="vcard">
+    <div class="vhead"><div class="vno">3</div><h3>Reductie herkansingen en hernakijken</h3><span class="badge b-direct">Directe besparing</span></div>
+    <div class="vbody">
+      <div class="tags"><span class="tag t-new">Schatting — niet RUG-specifiek</span><span class="tag t-sec">BSU: consistente rubric-dekking</span></div>
+      <p>Snellere, duidelijkere en consistentere feedback vermindert het aantal studenten dat een toets niet haalt door onduidelijke rubricering of te late feedback. Minder herkansingen betekent minder hernakijkwerk. Conservatief gerekend met 10% reductie.</p>
+      <div class="calc">Totale submissions/jaar: 128.000
+Gemiddeld herkansingspercentage: 15% (schatting) → 19.200
+Reductie door betere feedback: 10% (schatting) → 1.920 vermeden
+Tijd per hernakijking: 20 min = 0,333 u
+Totale tijdsbesparing: 1.920 × 0,333 = 640 uur
+Waarde volledige inzet: 640 × € 50 = <b>€ 32.000</b>
+Jaar 1 (30%): <b>€ 10.000</b></div>
+      <div class="challenge"><span class="q">Kritische vraag:</span> is 10% realistisch? <br><span class="q">Antwoord:</span> conservatieve schatting. In de BSU-pilot was "minimale eindredactie vereist", wat duidt op hoge rubric-consistentie. Opgenomen voor volledigheid, niet als kernclaim.</div>
+      <div class="vfoot">
+        <div class="box"><div class="l">Jaar 1 (30% adoptie)</div><div class="v">€ 10.000</div></div>
+        <div class="box full"><div class="l">Volledige inzet</div><div class="v">€ 32.000</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="vcard">
+    <div class="vhead"><div class="vno">4</div><h3>Ongecontroleerd AI-gebruik — datalek- en reputatierisico</h3><span class="badge b-risk">Risicobeheersing</span></div>
+    <div class="vbody">
+      <div class="tags"><span class="tag t-new">RUG kennismaking 26 juni 2026</span><span class="tag t-new">RUG AI-beleid 2023 (Rule 6 &amp; 8)</span><span class="tag t-sec">EU AI Act</span></div>
+      <p><strong>Dit is de pijn die het CIT zelf benoemde.</strong> Faculteiten en docenten gebruiken nu al AI-tools om na te kijken, zonder centrale goedkeuring, DPA of AVG-waarborg. Studentwerk (persoonsgegevens) gaat zo mogelijk door ongecontroleerde, niet-EU modellen. Het CIT noemt expliciet het risico op <strong>datalekken en negatieve publiciteit</strong>. Eduface vervangt dit door één gecontroleerde route: verwerkersovereenkomst, AVG-conform, EU-gehost, eigen LLM, en human-in-the-loop (de examinator blijft eindverantwoordelijk, conform RUG's eigen AI-beleid Rule 8).</p>
+      <div class="calc">Geschatte kosten serieus AVG-/datalekincident: € 500.000 (schatting)
+  (incidentrespons, juridisch, AP-traject, remediatie, reputatie)
+Kans op zo'n incident binnen 2 jaar bij ongecontroleerd gebruik: 20% (schatting)
+Kansgewogen verwacht jaarverlies: € 500.000 × 0,20 = € 100.000
+Risicoreductie door gecontroleerde inzet (Eduface): 70% (schatting)
+Waarde volledige inzet: € 100.000 × 0,70 = <b>€ 70.000</b>
+Jaar 1 (30% dekking): <b>€ 21.000</b></div>
+      <div class="challenge"><span class="q">Kritische vraag:</span> is een kans van 20% niet hoog? <br><span class="q">Antwoord:</span> u mag uw eigen kans hanteren. Het punt is niet het exacte percentage maar dat het risico nu <em>ongecontroleerd</em> is en al speelt. De primaire waarde is bestuurlijke grip en reputatiebescherming, niet het bedrag. Reputatieschade bij een publiek incident is hier niet gemonetariseerd.</div>
+      <div class="vfoot">
+        <div class="box"><div class="l">Jaar 1 (30% dekking)</div><div class="v">€ 21.000</div></div>
+        <div class="box full"><div class="l">Volledige inzet</div><div class="v">€ 70.000</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">Alle schattingen zijn gebaseerd op geïdentificeerde bronnen. Zie bronnenregister op de laatste pagina.</div>
+  <div class="pagenum">6</div>
+</section>
+
+<!-- PAGE: pathways 5 + 6 -->
+<section class="page">
+  <div class="runhead"><span class="brand">Edu<span class="fx">face</span> · ROI Analyse Rijksuniversiteit Groningen</span><span>Vertrouwelijk · 26 juni 2026</span></div>
+
+  <div class="vcard">
+    <div class="vhead"><div class="vno">5</div><h3>NVAO-accreditatie — standaard toetsing en beoordeling</h3><span class="badge b-risk">Risicobeheersing</span></div>
+    <div class="vbody">
+      <div class="tags"><span class="tag t-sec">NVAO Beoordelingskader 2018</span><span class="tag t-new">RUG ITK positief 2025</span></div>
+      <p>De NVAO toetst elke WO-opleiding elke zes jaar, met <strong>"toetsing" als zelfstandige Standaard 3</strong>: de beoordeling moet valide, betrouwbaar en voldoende onafhankelijk zijn. Inconsistente rubricering of afwijkingen tussen beoordelaars zijn een kwetsbaarheid. Eduface verhoogt de consistentie en documenteerbaarheid van beoordelingen structureel. De RUG staat sterk (ITK positief in 2025), dus dit is risicoreductie, geen acuut probleem.</p>
+      <div class="calc">Voorbeeld: faculteit Rechtsgeleerdheid: 4.368 studenten
+Collegegeld (wettelijk 2024-25): € 2.530
+Rijksbijdragecomponent per student (schatting): € 8.000
+Opbrengstenrisico Rechten: 4.368 × € 10.530 = € 45.995.000
+Kans op accreditatieprobleem t.g.v. toetsingskwaliteit: 1,5% (schatting)
+Gedeeltelijk effect (herstelperiode i.p.v. verlies): 50%
+Kansgewogen waarde: € 45.995.000 × 0,015 × 0,50 = <b>€ 345.000</b>
+Jaar 1 (30%, beginnend bij risicovolste opleidingen): <b>€ 103.000</b></div>
+      <div class="challenge"><span class="q">Kritische vraag:</span> heeft de RUG nu accreditatieproblemen rond toetsing? <br><span class="q">Antwoord:</span> nee — geen publieke NVAO-herstelbesluiten gevonden, en de ITK is positief (2025). Dit is structurele risicoreductie op een formele, terugkerende standaard, geen acuut probleem. U mag uw eigen kans toepassen.</div>
+      <div class="vfoot">
+        <div class="box"><div class="l">Jaar 1 (30% adoptie)</div><div class="v">€ 103.000</div></div>
+        <div class="box full"><div class="l">Volledige inzet</div><div class="v">€ 345.000</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="vcard">
+    <div class="vhead"><div class="vno">6</div><h3>Werkdrukverlichting en personeelsbehoud</h3><span class="badge b-strat">Strategische waarde</span></div>
+    <div class="vbody">
+      <div class="tags"><span class="tag t-sec">CBS/OCW Werkonderzoek 2024</span><span class="tag t-sec">Rathenau 2024</span><span class="tag t-new">RUG: Inspectie SZW werkdrukonderzoek 2020</span></div>
+      <p><strong>61% van het wetenschappelijk personeel</strong> ervaart (zeer) veel werkdruk (CBS/OCW 2024); WP werkt gemiddeld 7,5 uur/week over (2023). Nakijken is een bekende driver. De RUG kreeg in 2020 een werkdrukonderzoek van de Arbeidsinspectie en benoemt in het eigen Toetsbeleid expliciet "de impact op werkdruk" van toetsing. Eduface haalt de piek-nakijklast weg.</p>
+      <p class="note">Niet apart gemonetariseerd om dubbeltelling met pad 1 te vermijden (de teruggewonnen tijd zit daar al in). De waarde hier is kwalitatief: minder burn-out-risico, beter behoud van schaars docententalent, en een concreet antwoord op een erkend RUG-knelpunt — relevant in een periode van bezuiniging waarin capaciteit kostbaar is.</p>
+      <div class="vfoot">
+        <div class="box"><div class="l">Jaar 1</div><div class="v" style="font-size:15px">Strategisch</div></div>
+        <div class="box full"><div class="l">Volledige inzet</div><div class="v" style="font-size:15px">Strategisch</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">Alle schattingen zijn gebaseerd op geïdentificeerde bronnen. Zie bronnenregister op de laatste pagina.</div>
+  <div class="pagenum">7</div>
+</section>
+
+<!-- PAGE: pathways 7 + 8 strategic -->
+<section class="page">
+  <div class="runhead"><span class="brand">Edu<span class="fx">face</span> · ROI Analyse Rijksuniversiteit Groningen</span><span>Vertrouwelijk · 26 juni 2026</span></div>
+
+  <div class="vcard">
+    <div class="vhead"><div class="vno">7</div><h3>Digitale autonomie — onafhankelijkheid van Big Tech</h3><span class="badge b-strat">Strategische waarde</span></div>
+    <div class="vbody">
+      <div class="tags"><span class="tag t-new">RUG Instellingsplan 2026-2031</span></div>
+      <p>Het nieuwe Instellingsplan 2026-2031 ("Creating impact together") zet expliciet in op AI "slim" inzetten <strong>met behoud van digitale autonomie en onafhankelijkheid van Big Tech</strong> (de RUG start zelfs een interne "AI Factory"). Eduface past hier strategisch beter dan een Amerikaanse LLM-tool: <strong>EU-bedrijf, NL-gevestigd, eigen LLM, EU-gehoste data</strong>. Dit is precies het onderwerp dat het CIT in de kennismaking interessant noemde.</p>
+      <p class="note">Niet rechtstreeks te monetariseren. Primaire waarde: strategische fit met het bestuurlijke kader, en een sterk argument tegenover zowel buitenlandse vendors als zelfbouw.</p>
+      <div class="vfoot">
+        <div class="box"><div class="l">Jaar 1</div><div class="v" style="font-size:15px">Strategisch</div></div>
+        <div class="box full"><div class="l">Volledige inzet</div><div class="v" style="font-size:15px">Strategisch</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="vcard">
+    <div class="vhead"><div class="vno">8</div><h3>Onderwijskwaliteit en NSE-positionering</h3><span class="badge b-strat">Strategische waarde</span></div>
+    <div class="vbody">
+      <div class="tags"><span class="tag t-sec">NSE 2024</span><span class="tag t-sec">Keuzegids Universiteiten 2025</span></div>
+      <p>De RUG is in de Keuzegids 2025 de <strong>3e brede universiteit</strong> van Nederland en haalde 46 van de 50 NSE-vragen (2024), met toetsing en beoordeling als verbeterend thema. Snellere, consistentere feedback ondersteunt deze positie. Tijdige formatieve feedback is bovendien een sterke voorspeller van studenttevredenheid en -retentie.</p>
+      <p class="note">NSE-effecten zijn multi-causaal en hebben 2-3 jaar vertraging; daarom als strategische waarde gepresenteerd, niet als directe causale claim. Het argument is positiebehoud en -versterking, in een markt met dalende studentenaantallen.</p>
+      <div class="vfoot">
+        <div class="box"><div class="l">Jaar 1</div><div class="v" style="font-size:15px">Strategisch</div></div>
+        <div class="box full"><div class="l">Volledige inzet</div><div class="v" style="font-size:15px">Strategisch</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">Alle schattingen zijn gebaseerd op geïdentificeerde bronnen. Zie bronnenregister op de laatste pagina.</div>
+  <div class="pagenum">8</div>
+</section>
+
+<!-- PAGE: buy vs build -->
+<section class="page">
+  <div class="runhead"><span class="brand">Edu<span class="fx">face</span> · ROI Analyse Rijksuniversiteit Groningen</span><span>Vertrouwelijk · 26 juni 2026</span></div>
+
+  <h2 class="sec"><span class="secnum">8.</span> Zelf bouwen versus Eduface — de afweging die het CIT maakt</h2>
+  <p class="sub2">Het CIT noemde expliciet dat het overweegt het zelf te bouwen. Dit is de eerlijke vergelijking.</p>
+
+  <p>De RUG heeft een sterk IT-team en bouwde eerder eigen tools. Belangrijk om scherp te hebben: die bestaande tools dekken een <strong>ander probleem</strong> dan Eduface.</p>
+  <table>
+    <tr><th>Bestaande RUG-tool</th><th>Wat het doet</th><th>Wat het niet doet</th></tr>
+    <tr><td><strong>UG Grader</strong></td><td>Handmatige rubric-beoordeling van open tentamenvragen in Brightspace; anonimiseren, bias-reductie.</td><td>Geen AI-gegenereerde feedback of conceptcijfers. De nakijklast blijft volledig bij de docent.</td></tr>
+    <tr><td><strong>Exam Analysis</strong></td><td>Automatische analyse/beoordeling van meerkeuzevragen.</td><td>Werkt alleen voor MC; geen open tekst.</td></tr>
+    <tr><td><strong>FeedbackFruits</strong></td><td>Peer review tussen studenten (extern ingekocht).</td><td>Geen docent-AI-nakijken. Bewijst wél dat de RUG extern inkoopt waar dat sneller is.</td></tr>
+  </table>
+  <p>Een eigen <strong>AI-nakijksysteem voor geschreven werk</strong> is dus geen uitbreiding van UG Grader, maar een nieuw product bouwen, onderhouden en compliant houden. Drie dingen maken zelfbouw zwaar:</p>
+  <ul class="tight">
+    <li><strong>EU AI Act.</strong> AI die leerresultaten beoordeelt valt onder <strong>hoog-risico</strong> (Annex III, Verordening 2024/1689), met verplichtingen vanaf <strong>2 augustus 2026</strong>: risicomanagement, datagovernance, technische documentatie, logging, menselijk toezicht, conformiteitsbeoordeling, CE-markering en EU-registratie. Bij zelfbouw draagt de RUG die volledige last en aansprakelijkheid zelf. Eduface draagt die als leverancier.</li>
+    <li><strong>Financiële realiteit.</strong> Een eigen AI/ML-team, LLM-infrastructuur en doorlopende compliance opbouwen is een <em>structurele</em> kostenpost (indicatief € 350.000-500.000/jaar plus 12-18 maanden tot productie — schatting), juist in een periode waarin de RuG ~€45M moet bezuinigen. Een licentie zet dit om in een lagere, voorspelbare kostenpost met de compliance inbegrepen.</li>
+    <li><strong>Bewijs en snelheid.</strong> Eduface is nu al bewezen (BSU: 94% nauwkeurigheid, 2-3 min reviewtijd) en direct inzetbaar. Zelfbouw start vanaf nul, zonder garantie dat het diezelfde kwaliteit haalt, terwijl het ongecontroleerde gebruik in de faculteiten ondertussen doorloopt.</li>
+  </ul>
+  <div class="callout">
+    <h4>Kortom</h4>
+    <p style="margin-bottom:0">Zelfbouw lost het urgente risico (ongecontroleerd gebruik) niet sneller op, kost structureel meer in een bezuinigingsperiode, en verschuift de volledige EU AI Act-last naar de RUG. Eduface is EU-gebaseerd en data-soeverein (past bij "digitale autonomie"), bewezen, en compliant-by-design (human-in-the-loop conform RUG's eigen AI-beleid). De RUG koopt bovendien al extern in waar dat sneller is (FeedbackFruits).</p>
+  </div>
+
+  <div class="foot">Alle schattingen zijn gebaseerd op geïdentificeerde bronnen. Zie bronnenregister op de laatste pagina.</div>
+  <div class="pagenum">9</div>
+</section>
+
+<!-- PAGE: summary + totals -->
+<section class="page">
+  <div class="runhead"><span class="brand">Edu<span class="fx">face</span> · ROI Analyse Rijksuniversiteit Groningen</span><span>Vertrouwelijk · 26 juni 2026</span></div>
+
+  <h2 class="sec"><span class="secnum">9.</span> Overzichtstabel — alle waardepaden</h2>
+  <table>
+    <tr><th>#</th><th>Waardepad</th><th>Type</th><th>Jaar 1 (30%)</th><th>Volledige inzet</th><th>Zekerheid</th></tr>
+    <tr><td>1</td><td>Nakijktijdwinst tekstsubmissies</td><td>Direct</td><td>€ 543.000</td><td>€ 1.811.000</td><td>Hoog (BSU-validatie)</td></tr>
+    <tr><td>2</td><td>Reductie externe nakijkinhuur</td><td>Direct</td><td>€ 245.000</td><td>€ 815.000</td><td>Laag-Middel (7% schatting)</td></tr>
+    <tr><td>3</td><td>Reductie herkansingen / hernakijken</td><td>Direct</td><td>€ 10.000</td><td>€ 32.000</td><td>Laag (dubbele schatting)</td></tr>
+    <tr><td>4</td><td>Ongecontroleerd AI-gebruik — datalek/reputatie</td><td>Risico</td><td>€ 21.000</td><td>€ 70.000</td><td>Middel (kans-schatting)</td></tr>
+    <tr><td>5</td><td>NVAO-accreditatie — toetsing</td><td>Risico</td><td>€ 103.000</td><td>€ 345.000</td><td>Laag-Middel (kans 1,5%)</td></tr>
+    <tr><td>6</td><td>Werkdrukverlichting / personeelsbehoud</td><td>Strategisch</td><td>—</td><td>—</td><td>Strategisch, n.k.</td></tr>
+    <tr><td>7</td><td>Digitale autonomie / EU-soevereiniteit</td><td>Strategisch</td><td>—</td><td>—</td><td>Strategisch, n.k.</td></tr>
+    <tr><td>8</td><td>Onderwijskwaliteit / NSE-positionering</td><td>Strategisch</td><td>—</td><td>—</td><td>Strategisch, n.k.</td></tr>
+  </table>
+
+  <h2 class="sec" style="margin-top:18px"><span class="secnum">10.</span> Totaaloverzicht</h2>
+  <div class="totbar">
+    <div class="totbox a"><div class="l">Directe besparingen (1-3)</div><div class="v">€ 798.000</div><div class="v2">Jaar 1 (30%)</div><div class="v" style="font-size:17px;margin-top:8px">€ 2.658.000</div><div class="v2">Volledige inzet · hoogste zekerheid</div></div>
+    <div class="totbox b"><div class="l">Direct + risicobeheersing (1-5)</div><div class="v">€ 922.000</div><div class="v2">Jaar 1 (30%)</div><div class="v" style="font-size:17px;margin-top:8px">€ 3.073.000</div><div class="v2">Conservatieve ondergrens incl. kansgewogen risico</div></div>
+    <div class="totbox c"><div class="l">Incl. strategische waarde (1-8)</div><div class="v">€ 922.000+</div><div class="v2">Jaar 1 — plus kwalitatieve waarde</div><div class="v" style="font-size:17px;margin-top:8px">€ 3.073.000+</div><div class="v2">Plus digitale autonomie, werkdruk, NSE, buy-vs-build</div></div>
+  </div>
+  <p class="note">De strategische paden (6-8) zijn reëel maar niet als bedrag opgeteld, om de cijfers verdedigbaar te houden. Ter context: de gemiddelde Eduface-pilot is ~€10K en een institutionele licentie begint bij ~€40K — een fractie van de directe besparing alleen al. De getallen onderbouwen een serieuze universiteitsbrede licentie, niet slechts een pilot.</p>
+
+  <div class="callout">
+    <h4>Aanbevolen vervolgstap</h4>
+    <p style="margin-bottom:0">Begin met een afgebakende <strong>pilot bij één schrijfintensieve faculteit</strong> (Rechtsgeleerdheid of Letteren). Dat zet de RUG-specifieke nakijktijd en nauwkeurigheid om in instelling-specifiek bewijs, lost meteen een stuk van het ongecontroleerde gebruik gecontroleerd op, en levert de cijfers voor de bredere uitrol — met de economic buyer (CIO/CIT) aan tafel.</p>
+  </div>
+
+  <div class="foot">Alle schattingen zijn gebaseerd op geïdentificeerde bronnen. Zie bronnenregister op de laatste pagina.</div>
+  <div class="pagenum">10</div>
+</section>
+
+<!-- PAGE: methodology + sources -->
+<section class="page">
+  <div class="runhead"><span class="brand">Edu<span class="fx">face</span> · ROI Analyse Rijksuniversiteit Groningen</span><span>Vertrouwelijk · 26 juni 2026</span></div>
+
+  <h2 class="sec"><span class="secnum">11.</span> Methodologie en bronnenregister</h2>
+  <p class="sub2">Onderscheid: geverifieerd vs. schatting. Geen enkel getal is gefabriceerd.</p>
+  <p>Geverifieerde datapunten komen rechtstreeks uit gepubliceerde bronnen (Jaarverslag, DUO, CAO, ABP, NVAO, EU-wetgeving). Schattingen zijn expliciet gelabeld met hun grondslag. Waar een getal niet betrouwbaar te vinden was, is het als zodanig benoemd of weggelaten.</p>
+
+  <table>
+    <tr><th>#</th><th>Bron</th><th>Wat geverifieerd</th></tr>
+    <tr><td>1</td><td>DUO via AlleCijfers.nl</td><td>Studentenaantallen 2025-2026 (34.314; Ba 23.426 / Ma 10.748). allecijfers.nl/wo/rijksuniversiteit-groningen</td></tr>
+    <tr><td>2</td><td>RUG Jaarverslag 2024</td><td>WP-FTE 4.235,9; totaal 7.271,2 FTE; baten € 954,7M; personeelslasten € 714,4M; resultaat −€41,4M; niet in loondienst € 46,6M; tijdelijke contracten 33,3%. rug.nl/.../rug-jaarverslag2024-def.pdf</td></tr>
+    <tr><td>3</td><td>RUG Instellingsbegroting 2025 / oogtv.nl / ukrant.nl</td><td>Tekort 2025 −€23,6M; ~€45M bezuinigen t/m 2030; WIB ~€42,4M/jr structureel.</td></tr>
+    <tr><td>4</td><td>CAO Nederlandse Universiteiten 2025-2026</td><td>Salarisschalen 10/11/12; 38-urige week; vakantiegeld 8%; eindejaarsuitkering 8,3%; uurloon 1/165 maandsalaris. universiteitenvannederland.nl</td></tr>
+    <tr><td>5</td><td>ABP premietabel 2025 / VNG</td><td>Werkgeverspremie ABP 18,9% (70% van totaal 27%). abp.nl / vng.nl</td></tr>
+    <tr><td>6</td><td>BSU Pilotrapport — Bath Spa University, juni 2026</td><td>435 submissions, 6 vakken, 3 disciplines, 13 markers; 2-3 min reviewtijd; 94% nauwkeurigheid (96% OBM). Intern Eduface. Sectorvalidatie, niet RUG-specifiek.</td></tr>
+    <tr><td>7</td><td>RUG Toetsbeleid 2021-2026</td><td>Examengerichte traditie; scriptie door ≥2 examinatoren (Vereiste 12); werkdruk-framing. rug.nl/.../toetsbeleid-rug-2021-def-nl.pdf</td></tr>
+    <tr><td>8</td><td>RUG CIT / edusupport.rug.nl</td><td>UG Grader (handmatige rubric-tool, open tentamenvragen); Exam Analysis (alleen MC); FeedbackFruits (peer review, extern ingekocht). Brightspace als centrale LMS.</td></tr>
+    <tr><td>9</td><td>RUG-beleid AI in onderwijs (v1, dec 2023)</td><td>Rule 8: autonoom AI-nakijken zonder menselijke controle niet toegestaan, examinator eindverantwoordelijk. Rule 6: verwerkersovereenkomst + AVG. Rule 7: AI-detectie onbetrouwbaar. rug.nl/.../eng-rug-beleid-ai-in-onderwijs-2023-def.pdf</td></tr>
+    <tr><td>10</td><td>EU AI Act (Verordening 2024/1689), Annex III(3)</td><td>AI voor het beoordelen van leerresultaten = hoog-risico; verplichtingen voor onderwijs vanaf 2 augustus 2026. artificialintelligenceact.eu/annex/3</td></tr>
+    <tr><td>11</td><td>NVAO Beoordelingskader 2018</td><td>Toetsing = zelfstandige Standaard 3; 6-jaarlijkse heraccreditatie. RUG ITK positief 2025. nvao.net</td></tr>
+    <tr><td>12</td><td>NSE 2024 — RUG</td><td>46 van 50 vragen gehaald; toetsing/beoordeling verbeterend thema. rug.nl (NSE 2024 nieuwsbericht)</td></tr>
+    <tr><td>13</td><td>Keuzegids Universiteiten 2025</td><td>RUG 3e brede universiteit van Nederland. keuzegids.org</td></tr>
+    <tr><td>14</td><td>RUG Instellingsplan 2026-2031 "Creating impact together"</td><td>Pijlers Openness/Agility/Independence; AI "slim" + digitale autonomie / onafhankelijkheid Big Tech; interne "AI Factory". rug.nl/about-ug/policy-and-strategy/future-ug</td></tr>
+    <tr><td>15</td><td>CBS/OCW Werkonderzoek 2024 / Rathenau 2024</td><td>61% WP ervaart (zeer) veel werkdruk; >25% werkt fors over. RUG: Inspectie SZW werkdrukonderzoek 2020.</td></tr>
+    <tr><td>16</td><td>Close CRM — RUG-lead + kennismaking 26 juni 2026</td><td>Contacten, pijn (ongecontroleerd AI-gebruik, datalek-/reputatierisico), buy-vs-build-overweging, EU AI Act-vragen.</td></tr>
+    <tr><td>17</td><td>RUG bestuur / CIT-organisatie (rug.nl)</td><td>CIO &amp; Directeur CIT Nolda Tipping-Griffioen; Domeinmanager Onderwijs Louwarnoud van der Duim; Rector Magnificus Jacquelien Scherpen.</td></tr>
+  </table>
+
+  <h4 style="margin-top:14px;font-size:14px;color:var(--navy)">Fact-check auditlog</h4>
+  <ul class="tight">
+    <li><strong>Gecorrigeerd — urenbasis.</strong> De HBO-normjaartaak van 1.659 u is <em>niet</em> van toepassing op het WO. Berekeningen gebruiken de CAO Nederlandse Universiteiten (38-urige week, ~1.976 contractuele uren).</li>
+    <li><strong>Gecorrigeerd — ABP-premie.</strong> Werkgeverspremie 18,9% gebruikt (70% van de totale 27%), niet de volledige premie.</li>
+    <li><strong>Genuanceerd — studentenaantal.</strong> DUO telt 34.314; de RUG-eigen telling is ~32.500 (andere peildatum/teltechniek). DUO als basis gehanteerd.</li>
+    <li><strong>Genuanceerd — externe inhuur.</strong> De € 46,6M "niet in loondienst" is instellingsbreed, niet alleen nakijken. Daarom conservatief 7% toegerekend en laag gewogen.</li>
+    <li><strong>Te verifiëren — per-faculteit studentenaantallen.</strong> DUO publiceert per CROHO-sector, niet per faculteit. Faculteitscijfers zijn benaderingen.</li>
+    <li><strong>Te verifiëren — economic buyer.</strong> RUG publiceert geen portefeuilleverdeling per bestuurslid; de EB-toewijzing (CIO/CIT) is een onderbouwde aanname, te bevestigen in het traject.</li>
+    <li><strong>Te verifiëren — UG Grader.</strong> Publieke bronnen beschrijven UG Grader als handmatig (geen AI). Aanbevolen dit live te bevestigen voordat het in een gesprek wordt gesteld.</li>
+  </ul>
+
+  <p class="note" style="margin-top:14px">Opgesteld door Eduface · info@eduface.me · eduface.me · 26 juni 2026 · Vertrouwelijk</p>
+  <div class="foot">Dit document is uitsluitend bestemd voor de geadresseerde en voor intern gebruik bij Eduface.</div>
+  <div class="pagenum">11</div>
+</section>
+
+</body>
+</html>

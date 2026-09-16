@@ -1,0 +1,217 @@
+<title>Eduface werkmap</title>
+
+<style>
+  :root {
+    --paper: #ffffff; --ground: #f2f6f6; --ink: #07222e; --ink-soft: #4d6874;
+    --ink-faint: #7d949d; --rule: #dbe5e6; --accent: #007b54; --accent-soft: #e2f2ea;
+    --shadow: 0 1px 2px rgba(7, 34, 46, .05), 0 8px 24px -16px rgba(7, 34, 46, .28);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #0c2029; --ground: #06161d; --ink: #e8f1f1; --ink-soft: #9fb6bd;
+      --ink-faint: #7a9199; --rule: #1c3742; --accent: #00e075; --accent-soft: #0d3a2c;
+      --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px -16px rgba(0, 0, 0, .8);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #0c2029; --ground: #06161d; --ink: #e8f1f1; --ink-soft: #9fb6bd;
+    --ink-faint: #7a9199; --rule: #1c3742; --accent: #00e075; --accent-soft: #0d3a2c;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px -16px rgba(0, 0, 0, .8);
+  }
+  :root[data-theme="light"] {
+    --paper: #ffffff; --ground: #f2f6f6; --ink: #07222e; --ink-soft: #4d6874;
+    --ink-faint: #7d949d; --rule: #dbe5e6; --accent: #007b54; --accent-soft: #e2f2ea;
+    --shadow: 0 1px 2px rgba(7, 34, 46, .05), 0 8px 24px -16px rgba(7, 34, 46, .28);
+  }
+
+  body {
+    background: var(--ground); color: var(--ink);
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 3.5rem 1.5rem 6rem; display: flex; flex-direction: column; gap: 2.5rem; }
+  header { display: flex; flex-direction: column; gap: .7rem; }
+  .eyebrow { font-size: .7rem; font-weight: 600; letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint); }
+  h1 { font-size: clamp(2rem, 5.5vw, 2.7rem); line-height: 1.08; letter-spacing: -.03em; font-weight: 800; margin: 0; }
+  .lede { color: var(--ink-soft); max-width: 34rem; }
+
+  h2 { font-size: .72rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; color: var(--ink-faint); margin: 0 0 1rem; }
+  .list { display: flex; flex-direction: column; gap: .75rem; }
+
+  a.item {
+    display: flex; align-items: baseline; gap: 1rem;
+    background: var(--paper); border: 1px solid var(--rule); border-radius: 10px;
+    padding: 1.05rem 1.25rem; box-shadow: var(--shadow);
+    text-decoration: none; color: inherit;
+    transition: border-color .15s ease, transform .15s ease;
+  }
+  a.item:hover { border-color: var(--accent); transform: translateY(-1px); }
+  a.item:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .item .body { flex: 1; display: flex; flex-direction: column; gap: .2rem; min-width: 0; }
+  .item .title { font-weight: 650; letter-spacing: -.012em; }
+  .item .desc { font-size: .9rem; color: var(--ink-soft); }
+  .item .date { flex: none; font-size: .78rem; font-variant-numeric: tabular-nums; color: var(--ink-faint); white-space: nowrap; }
+
+  .gallery {
+    display: flex; flex-direction: column; gap: .4rem;
+    border-left: 2px solid var(--accent); padding-left: 1rem;
+    font-size: .92rem; color: var(--ink-soft);
+  }
+  .gallery a { color: var(--accent); font-weight: 600; }
+
+  footer { font-size: .82rem; color: var(--ink-faint); border-top: 1px solid var(--rule); padding-top: 1.2rem; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .85em; background: var(--ground); padding: .1em .35em; border-radius: 4px; }
+
+  @media (prefers-reduced-motion: reduce) {
+    a.item { transition: none; }
+    a.item:hover { transform: none; }
+  }
+</style>
+
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">Eduface</div>
+    <h1>Werkmap</h1>
+    <p class="lede">Eén startpunt. Per onderwerp één pagina, die ik bijwerk in plaats van vervang. Zet deze pagina bij je bladwijzers.</p>
+  </header>
+
+  <section>
+    <h2>Onderwerpen</h2>
+    <div class="list">
+
+      <a class="item" href="https://claude.ai/code/artifact/8843b7ff-a187-4f90-83ca-53e30e2df7ce">
+        <div class="body">
+          <div class="title">Beoordelingslast Notenboom</div>
+          <div class="desc">Rekenmodule om samen met Barbara door te rekenen wat beoordelen nu kost. Elk getal aanpasbaar, de som loopt mee</div>
+        </div>
+        <div class="date">21 aug</div>
+      </a>
+
+      <a class="item" href="https://claude.ai/code/artifact/7b1fd118-fdbe-44c0-89a3-46614dfa163f">
+        <div class="body">
+          <div class="title">Belscript Noortje Sax</div>
+          <div class="desc">Cold call GGZ-VS: fit-oordeel, de cijfers, het script in zeven stappen met bron onder elke regel, bezwaren en hun woordenlijst</div>
+        </div>
+        <div class="date">18 aug</div>
+      </a>
+
+      <a class="item" href="https://claude.ai/code/artifact/cc0fc85d-c0b1-4d72-a0fd-8317dfaa6902">
+        <div class="body">
+          <div class="title">Shift batch 30</div>
+          <div class="desc">Werkbestand: 30 connectieverzoeken en opvolgmails nalopen, aanpassen en goedkeuren. Wijzigingen kun je terugkopiëren naar de chat</div>
+        </div>
+        <div class="date">14 aug</div>
+      </a>
+
+      <a class="item" href="https://claude.ai/code/artifact/aa337533-750d-444b-8f10-cef82b7519a4">
+        <div class="body">
+          <div class="title">Onderzoeksdossier SHIFT (nieuwe batch)</div>
+          <div class="desc">9 verse kandidaten: haakje met bron, redenering en bewerkbaar connectieverzoek per persoon</div>
+        </div>
+        <div class="date">7 aug</div>
+      </a>
+
+      <a class="item" href="https://claude.ai/code/artifact/0964e26f-17dd-4b6d-a0d6-c6913f035436">
+        <div class="body">
+          <div class="title">Korte testperiode (pilot)</div>
+          <div class="desc">Visuele tijdlijn van hoe een korte Eduface-pilot loopt: 3-4 weken, 1 module, 1 vak, echte inzendingen, eindigt met go/no-go</div>
+        </div>
+        <div class="date">25 jul</div>
+      </a>
+
+      <a class="item" href="https://claude.ai/code/artifact/c4492e73-42f1-4946-8abe-855f14441347">
+        <div class="body">
+          <div class="title">Connectieverzoeken NL</div>
+          <div class="desc">Alle goedgekeurde koude LinkedIn-berichten, met per bericht het haakje en de bron. Klaar om handmatig te versturen</div>
+        </div>
+        <div class="date">24 jul</div>
+      </a>
+
+      <a class="item" href="https://claude.ai/code/artifact/c90d8f0c-aa2f-4b30-b292-d5667d672b94">
+        <div class="body">
+          <div class="title">Agent-regels als toets</div>
+          <div class="desc">Alle feedback op agent 2, 3 en 4 omgezet naar toetsen met een uitkomst, plus wat geen toets oplevert en drie open vragen</div>
+        </div>
+        <div class="date">23 jul</div>
+      </a>
+
+      <a class="item" href="https://claude.ai/code/artifact/b4cea701-aa38-4b28-9139-81cfae9e2efb">
+        <div class="body">
+          <div class="title">Diep onderzoek 19 contacten</div>
+          <div class="desc">Per persoon: schaal, hoe ze werk beoordelen, AI-landschap en het haakje op niveau 2 met bron. Klaar voor de connectieverzoeken</div>
+        </div>
+        <div class="date">23 jul</div>
+      </a>
+
+      <a class="item" href="https://claude.ai/code/artifact/f529deff-5335-4250-bc08-79fb27192e07">
+        <div class="body">
+          <div class="title">Hoe diep moet person-research?</div>
+          <div class="desc">Test op 5 SHIFT-personen: wat dieper onderzoek oplevert, wat het kost, en waar de skill zou moeten stoppen</div>
+        </div>
+        <div class="date">23 jul</div>
+      </a>
+
+      <a class="item" href="https://claude.ai/code/artifact/4a1a6e93-14a5-451d-91fd-f7e0145e0605">
+        <div class="body">
+          <div class="title">Haakjes-onderzoek NL opleiders</div>
+          <div class="desc">Per contactpersoon één haakje met bron: 94 gevonden, 51 direct te versturen, plus wie er nog onderzocht moet worden</div>
+        </div>
+        <div class="date">23 jul</div>
+      </a>
+
+      <a class="item" href="https://claude.ai/code/artifact/ce04ed5f-97e8-4b8d-ba56-72473e2896bc">
+        <div class="body">
+          <div class="title">LinkedIn-berichten NL</div>
+          <div class="desc">Koude connectieverzoeken plus opvolgbericht per persoon, met haakje, bron en twijfels. Batch 1: 8 personen</div>
+        </div>
+        <div class="date">22 jul</div>
+      </a>
+
+      <a class="item" href="https://claude.ai/code/artifact/e40a83dd-36fe-47c2-9275-faa7713ea0a1">
+        <div class="body">
+          <div class="title">LinkedIn-profiel Dante</div>
+          <div class="desc">Scrape van de laatste 10 posts en reposts met engagement, plus profielbeschrijving en huidige functie</div>
+        </div>
+        <div class="date">22 jul</div>
+      </a>
+
+      <a class="item" href="https://claude.ai/code/artifact/8c921cad-349c-4b5d-aa72-5d6fc26460c5">
+        <div class="body">
+          <div class="title">ICP</div>
+          <div class="desc">107 opleiders beoordeeld, 100 door poort 0, en per organisatie de aangewezen contactpersoon met de reden erbij</div>
+        </div>
+        <div class="date">21 jul</div>
+      </a>
+
+      <a class="item" href="https://claude.ai/code/artifact/19faa0bd-9b66-4b91-84f6-3b6cb46e7df9">
+        <div class="body">
+          <div class="title">CMI Ireland, briefing voor vrijdag</div>
+          <div class="desc">Voorbereiding op het gesprek met CMI</div>
+        </div>
+        <div class="date">21 jul</div>
+      </a>
+
+      <a class="item" href="https://claude.ai/code/artifact/b5d4ab59-c791-452f-a108-50d937c551bf">
+        <div class="body">
+          <div class="title">Eduface content-pilaren</div>
+          <div class="desc">De pijlers onder de LinkedIn- en contentstrategie</div>
+        </div>
+        <div class="date">19 jul</div>
+      </a>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Alles, ook oudere</h2>
+    <div class="gallery">
+      Deze pagina houd ik handmatig bij. De volledige, automatische lijst van alles wat ooit gepubliceerd is staat in je galerij: <a href="https://claude.ai/code/artifacts">claude.ai/code/artifacts</a>
+    </div>
+  </section>
+
+  <footer>
+    Bijgewerkt 21 augustus 2026 · bron <code>hub.html</code> in de Claud AE-repo
+  </footer>
+
+</div>

@@ -1,0 +1,97 @@
+{
+  "slug": "schouten-nelissen",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_540Ek9AhopCbgftipozLW9g8VOgPsMr9l57j6uFREd8",
+    "naam": "Schouten & Nelissen",
+    "url": "https://app.close.com/lead/lead_540Ek9AhopCbgftipozLW9g8VOgPsMr9l57j6uFREd8/",
+    "lead_status": "Prospect",
+    "opportunity_id": null,
+    "fase": null,
+    "fase_type": null,
+    "waarde": null,
+    "valuta": "EUR",
+    "confidence": null,
+    "close_date": null,
+    "eigenaar": "Eduface CRM",
+    "crm_note": "",
+    "contacten": [
+      {
+        "naam": "Conny Spijker",
+        "titel": "Learning Innovation Manager",
+        "email": "conny.spijker@sn.nl",
+        "id": "cont_e08uOpK4eOCDiBO3WuX2mfmnDy50tiXvy5IPjpNHY5N"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_Jl6oumCMDmNO2XLYtieNk86WIqGjveGYPSHEYrUim3D",
+        "soort": "call",
+        "datum": "2026-08-18",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Zij hoorde mij niet ofzo",
+        "transcript_beschikbaar": true,
+        "komend": false
+      },
+      {
+        "id": "acti_2cMzQBtFb5zG6XIvnGVGFrXEShbhSYXlauPKcvre5lg",
+        "soort": "call",
+        "datum": "2026-08-18",
+        "titel": "Telefoon outbound",
+        "duur_min": 1,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "VM en een VM achtergelaten",
+        "transcript_beschikbaar": true,
+        "komend": false
+      },
+      {
+        "id": "acti_JFVyK2KBCItrjGVh8xSRYnmHBjbve2Ff03JRCrWtcK7",
+        "soort": "call",
+        "datum": "2026-08-18",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Ze moet ons niet. \n\nZe Ghost ons, reden is onbekend.",
+        "transcript_beschikbaar": true,
+        "komend": false
+      }
+    ],
+    "open_taken": [],
+    "laatste_gesprek": "2026-08-18",
+    "volgende_afspraak": null,
+    "aantal_gehad": 3,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

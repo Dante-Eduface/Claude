@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog launch checklist · 7 nieuwe blogs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#002333;--accent:#00E075;--bg:#ebf2f5;--wit:#fff;--border:#d6e4eb;--grijs:#5b6b73;--mint:#f2faf7;--amber:#fff8e6;}
+  *{box-sizing:border-box}
+  body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--navy);margin:0;padding:32px 16px;line-height:1.5;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:860px;margin:0 auto}
+  header{background:var(--navy);color:var(--wit);border-radius:18px;padding:32px 30px;margin-bottom:20px}
+  header h1{margin:0 0 8px;font-size:24px;font-weight:800;letter-spacing:-.3px}
+  header p{margin:0;color:rgba(255,255,255,.75);font-size:14px}
+  .pill{display:inline-block;background:rgba(0,224,117,.15);color:var(--accent);font-size:12px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;padding:6px 12px;border-radius:100px;margin-bottom:16px}
+  .progress{background:var(--wit);border:1px solid var(--border);border-radius:12px;padding:14px 18px;margin-bottom:20px;font-size:14px;font-weight:600;display:flex;align-items:center;gap:12px}
+  .bar{flex:1;height:8px;background:var(--bg);border-radius:99px;overflow:hidden}
+  .bar>i{display:block;height:100%;background:var(--accent);width:0;transition:width .25s}
+  .reset{background:none;border:1px solid var(--border);color:var(--grijs);font-size:12px;padding:6px 12px;border-radius:8px;cursor:pointer;font-family:inherit;margin-left:auto}
+  section{background:var(--wit);border:1px solid var(--border);border-radius:14px;padding:22px 24px;margin-bottom:18px}
+  section h2{margin:0 0 4px;font-size:17px;font-weight:700}
+  section .sub{margin:0 0 14px;color:var(--grijs);font-size:13.5px}
+  .answer{background:var(--mint);border-left:3px solid var(--accent);border-radius:0 10px 10px 0;padding:16px 18px;margin-bottom:20px;font-size:14px}
+  .answer b{color:var(--navy)}
+  ul{list-style:none;margin:0;padding:0}
+  li{display:flex;gap:11px;align-items:flex-start;padding:9px 0;border-top:1px solid var(--border)}
+  li:first-child{border-top:none}
+  li input{appearance:none;width:20px;height:20px;min-width:20px;margin-top:1px;border:2px solid var(--border);border-radius:6px;cursor:pointer;position:relative;background:var(--wit)}
+  li input:checked{background:var(--accent);border-color:var(--accent)}
+  li input:checked::after{content:"";position:absolute;left:6px;top:2px;width:5px;height:10px;border:solid var(--navy);border-width:0 2.5px 2.5px 0;transform:rotate(45deg)}
+  li label{font-size:14.5px;cursor:pointer}
+  li.done label{color:var(--grijs);text-decoration:line-through}
+  .path{font-size:12.5px;color:var(--grijs);font-family:ui-monospace,monospace;background:var(--bg);padding:1px 6px;border-radius:5px}
+  .seo{margin:0 0 14px}
+  .seo .row{display:flex;gap:10px;align-items:flex-start;margin-bottom:8px}
+  .seo .k{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:var(--grijs);min-width:74px;padding-top:7px}
+  .seo .v{flex:1;background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:8px 10px;font-size:13px}
+  .seo button{background:var(--navy);color:var(--wit);border:none;font-weight:600;font-size:12px;padding:8px 12px;border-radius:8px;cursor:pointer;white-space:nowrap;font-family:inherit;height:fit-content;margin-top:1px}
+  .seo button:active{transform:translateY(1px)}
+  .tag{font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px;margin-left:6px;vertical-align:middle}
+  .tag.done{background:var(--mint);color:#0a7d52}
+  .tag.todo{background:#fff3d6;color:#9a7b1a}
+  .note{background:var(--mint);border-radius:8px;padding:11px 14px;font-size:13px;color:#1d4d3d;margin-top:12px}
+  .note.warn{background:var(--amber);color:#7a5c12}
+  h3.cardttl{font-size:15px;font-weight:700;margin:0 0 2px}
+  footer{text-align:center;color:var(--grijs);font-size:12px;margin-top:24px}
+  .legend{font-size:12px;color:var(--grijs);margin:0 0 16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <span class="pill">Blog launch</span>
+    <h1>7 nieuwe blogs, klaar om live te zetten</h1>
+    <p>Alle blogs zijn gebouwd in Framer en door Claude structureel ge-QA'd. Hieronder per pagina de SEO-titel + meta, plus de resterende handmatige taken (breakpoints, indexeren, publiceren).</p>
+  </header>
+
+  <div class="answer">
+    <b>Vraag: heeft de "Create free account" knop al https://app.eduface.me/signup?</b><br>
+    Ja. Op alle blogs wijzen de account/trial-knoppen naar <b>https://app.eduface.me/signup</b> (op de RBS heet 'ie "Start free trial"). <b>Blackboard</b> heeft nu ook een <b>"Create free account"</b> knop naar signup (zojuist aangepast op jouw verzoek, was "Oral Examination early access").
+  </div>
+
+  <div class="answer">
+    <b>Claude QA-ronde (13 juni): alle 7 blogs end-to-end nagelopen op je 7 punten. Dit is gevonden + gefixt:</b><br>
+    • <b>Brightspace</b>: 2 callout-cards zonder padding → opgevuld. Tabel-headers stonden tegen de bovenrand (padding was gedropt) → hersteld. CTA-knoppen verticaal gezet.<br>
+    • <b>Moodle</b>: 4 zwerf-tekstnodes onderaan (resttekst van de Canvas-hero) verwijderd.<br>
+    • <b>Blackboard</b>: CTA-knoppen van 2-koloms grid naar onder elkaar + 2 zwerf-tekstnodes verwijderd.<br>
+    • <b>Canvas, AI-feedback, marking-workload, RBS</b>: schoon, niks aan gedaan.<br>
+    Over alle 7: diagram-blokken 26px padding + wrappen op mobiel, tabellen in scroll-wrappers met gepadde rijen, hero navy + witte tekst + groene pill, CTA's demo→Calendly + account→signup. Geen typo's of weggevallen stukken meer.
+  </div>
+
+  <div class="progress">
+    <span id="count">0 / 0 afgevinkt</span>
+    <div class="bar"><i id="fill"></i></div>
+    <button class="reset" onclick="resetAll()">Reset</button>
+  </div>
+
+  <section>
+    <h2>Globale taken (1x)</h2>
+    <p class="sub">Doe deze los van de losse pagina's.</p>
+    <ul>
+      <li><input type="checkbox" id="g1" checked disabled><label><b>Brightspace CTA-knoppen</b> verticaal gezet. <span class="tag done">DOOR CLAUDE</span></label></li>
+      <li><input type="checkbox" id="g2" checked disabled><label><b>Blackboard CTA</b>: knoppen verticaal + 2e knop "Create free account" → signup. <span class="tag done">DOOR CLAUDE</span></label></li>
+      <li><input type="checkbox" id="g3" checked disabled><label><b>RBS-gebouw foto</b>: staat er nu in (echte afbeelding, geen placeholder meer). <span class="tag done">DOOR CLAUDE</span></label></li>
+      <li><input type="checkbox" id="g4"><label><b>Publiceer de site</b> nadat alles staat (Framer → Publish).</label></li>
+      <li><input type="checkbox" id="g5"><label><b>Sitemap indienen</b> in Google Search Console (de 7 nieuwe URL's staan automatisch in <span class="path">eduface.me/sitemap.xml</span> na publish).</label></li>
+      <li><input type="checkbox" id="g6"><label><b>Request indexing</b> per URL in Search Console (URL Inspection → Request indexing) voor de 7 nieuwe blogs, zodat ze sneller opgepakt worden.</label></li>
+      <li><input type="checkbox" id="g7"><label><b>Interne links</b>: link de 4 LMS-blogs naar elkaar en naar de case study (onderaan of in de tekst) voor SEO. Optioneel maar sterk aangeraden.</label></li>
+    </ul>
+    <div class="note">Per pagina geldt in Framer: <b>Page settings → SEO</b> voor titel + description, en check dat <b>"Indexable"</b> aan staat (niet verborgen voor zoekmachines).</div>
+  </section>
+
+  <p class="legend">Per blog: SEO-titel + meta description (klik "Kopieer" en plak in Framer Page settings → SEO), daarna de afvinklijst. <span class="tag done">breakpoints OK</span> = die had je al gedaan.</p>
+
+  <!-- PAGE 1 -->
+  <section>
+    <h3 class="cardttl">1. Brightspace D2L <span class="tag done">breakpoints OK</span></h3>
+    <span class="path">/resources/blog/ai-essay-grader-brightspace-d2l</span>
+    <div class="seo" style="margin-top:14px">
+      <div class="row"><div class="k">Titel</div><div class="v" id="t1">Brightspace D2L AI Essay Grading & Feedback | Eduface</div><button onclick="cp('t1',this)">Kopieer</button></div>
+      <div class="row"><div class="k">Meta</div><div class="v" id="m1">Add AI grading, rubric-aligned feedback, and oral exams to Brightspace D2L via LTI 1.3. Every grade approved by a lecturer. Jisc-approved, GDPR-compliant.</div><button onclick="cp('m1',this)">Kopieer</button></div>
+    </div>
+    <ul>
+      <li><input type="checkbox" id="p1a"><label>Titel + meta in Framer gezet</label></li>
+      <li><input type="checkbox" id="p1b"><label>Indexable = aan</label></li>
+      <li><input type="checkbox" id="p1c"><label>QA desktop (scroll alles na)</label></li>
+      <li><input type="checkbox" id="p1d"><label>QA mobiel</label></li>
+      <li><input type="checkbox" id="p1e" checked disabled><label>CTA-knoppen verticaal <span class="tag done">DOOR CLAUDE</span></label></li>
+    </ul>
+  </section>
+
+  <!-- PAGE 2 -->
+  <section>
+    <h3 class="cardttl">2. Moodle <span class="tag done">breakpoints OK</span></h3>
+    <span class="path">/resources/blog/ai-essay-grader-moodle-lti</span>
+    <div class="seo" style="margin-top:14px">
+      <div class="row"><div class="k">Titel</div><div class="v" id="t2">Moodle AI Essay Grading & Feedback | Eduface</div><button onclick="cp('t2',this)">Kopieer</button></div>
+      <div class="row"><div class="k">Meta</div><div class="v" id="m2">Add AI grading, formative feedback, and oral exams to Moodle via LTI 1.3. No plugin, no IT overhead. Every grade approved by a lecturer. Jisc-approved.</div><button onclick="cp('m2',this)">Kopieer</button></div>
+    </div>
+    <ul>
+      <li><input type="checkbox" id="p2a"><label>Titel + meta in Framer gezet</label></li>
+      <li><input type="checkbox" id="p2b"><label>Indexable = aan</label></li>
+      <li><input type="checkbox" id="p2c"><label>QA desktop</label></li>
+      <li><input type="checkbox" id="p2d"><label>QA mobiel</label></li>
+    </ul>
+  </section>
+
+  <!-- PAGE 3 -->
+  <section>
+    <h3 class="cardttl">3. Canvas LMS <span class="tag done">breakpoints OK</span></h3>
+    <span class="path">/resources/blog/ai-essay-grader-canvas-lms-lti</span>
+    <div class="seo" style="margin-top:14px">
+      <div class="row"><div class="k">Titel</div><div class="v" id="t3">Canvas LMS AI Essay Grading & Feedback | Eduface</div><button onclick="cp('t3',this)">Kopieer</button></div>
+      <div class="row"><div class="k">Meta</div><div class="v" id="m3">Add AI grading and rubric-aligned feedback to Canvas via LTI 1.3. Submissions flow in automatically, grades pass back, no student login needed. Jisc-approved.</div><button onclick="cp('m3',this)">Kopieer</button></div>
+    </div>
+    <ul>
+      <li><input type="checkbox" id="p3a"><label>Titel + meta in Framer gezet</label></li>
+      <li><input type="checkbox" id="p3b"><label>Indexable = aan</label></li>
+      <li><input type="checkbox" id="p3c"><label>QA desktop</label></li>
+      <li><input type="checkbox" id="p3d"><label>QA mobiel</label></li>
+    </ul>
+  </section>
+
+  <!-- PAGE 4 -->
+  <section>
+    <h3 class="cardttl">4. Blackboard Learn & Ultra <span class="tag todo">breakpoints nodig</span></h3>
+    <span class="path">/resources/blog/ai-essay-grader-blackboard-lti</span>
+    <div class="seo" style="margin-top:14px">
+      <div class="row"><div class="k">Titel</div><div class="v" id="t4">Blackboard Learn AI Essay Grading & Feedback | Eduface</div><button onclick="cp('t4',this)">Kopieer</button></div>
+      <div class="row"><div class="k">Meta</div><div class="v" id="m4">Add AI grading and formative feedback to Blackboard Learn and Ultra via LTI 1.3. Works across both interfaces during migration. Lecturer approves every grade.</div><button onclick="cp('m4',this)">Kopieer</button></div>
+    </div>
+    <ul>
+      <li><input type="checkbox" id="p4a"><label>Titel + meta in Framer gezet</label></li>
+      <li><input type="checkbox" id="p4z"><label>Breakpoints toevoegen (Tablet + Phone + Groot)</label></li>
+      <li><input type="checkbox" id="p4b"><label>Indexable = aan</label></li>
+      <li><input type="checkbox" id="p4c"><label>QA desktop</label></li>
+      <li><input type="checkbox" id="p4d"><label>QA mobiel</label></li>
+      <li><input type="checkbox" id="p4e" checked disabled><label>CTA: knoppen verticaal + "Create free account" → signup <span class="tag done">DOOR CLAUDE</span></label></li>
+    </ul>
+  </section>
+
+  <!-- PAGE 5 -->
+  <section>
+    <h3 class="cardttl">5. AI feedback vs AI grading <span class="tag todo">breakpoints nodig</span></h3>
+    <span class="path">/resources/blog/ai-feedback-vs-ai-grading</span>
+    <div class="seo" style="margin-top:14px">
+      <div class="row"><div class="k">Titel</div><div class="v" id="t5">AI Feedback vs AI Grading: What's the Difference? | Eduface</div><button onclick="cp('t5',this)">Kopieer</button></div>
+      <div class="row"><div class="k">Meta</div><div class="v" id="m5">AI feedback helps students improve before a grade exists. AI grading certifies attainment on the record. They carry different risks, rules, and oversight.</div><button onclick="cp('m5',this)">Kopieer</button></div>
+    </div>
+    <ul>
+      <li><input type="checkbox" id="p5a"><label>Titel + meta in Framer gezet</label></li>
+      <li><input type="checkbox" id="p5z"><label>Breakpoints toevoegen</label></li>
+      <li><input type="checkbox" id="p5b"><label>Indexable = aan</label></li>
+      <li><input type="checkbox" id="p5c"><label>QA desktop</label></li>
+      <li><input type="checkbox" id="p5d"><label>QA mobiel</label></li>
+    </ul>
+  </section>
+
+  <!-- PAGE 6 -->
+  <section>
+    <h3 class="cardttl">6. Reducing marking workload <span class="tag todo">breakpoints nodig</span></h3>
+    <span class="path">/resources/blog/reducing-marking-workload-without-reducing-feedback-quality</span>
+    <div class="seo" style="margin-top:14px">
+      <div class="row"><div class="k">Titel</div><div class="v" id="t6">Reducing Marking Workload Without Losing Quality | Eduface</div><button onclick="cp('t6',this)">Kopieer</button></div>
+      <div class="row"><div class="k">Meta</div><div class="v" id="m6">AI-assisted marking cuts grading time by around 48% while improving consistency and criterion coverage. Lecturers still grade every submission. Here is how.</div><button onclick="cp('m6',this)">Kopieer</button></div>
+    </div>
+    <ul>
+      <li><input type="checkbox" id="p6a"><label>Titel + meta in Framer gezet</label></li>
+      <li><input type="checkbox" id="p6z"><label>Breakpoints toevoegen</label></li>
+      <li><input type="checkbox" id="p6b"><label>Indexable = aan</label></li>
+      <li><input type="checkbox" id="p6c"><label>QA desktop</label></li>
+      <li><input type="checkbox" id="p6d"><label>QA mobiel</label></li>
+    </ul>
+  </section>
+
+  <!-- PAGE 7 -->
+  <section>
+    <h3 class="cardttl">7. RBS case study <span class="tag todo">breakpoints nodig</span></h3>
+    <span class="path">/resources/blog/case-study-rotterdam-business-school</span>
+    <div class="seo" style="margin-top:14px">
+      <div class="row"><div class="k">Titel</div><div class="v" id="t7">Rotterdam Business School AI Feedback Pilot | Eduface</div><button onclick="cp('t7',this)">Kopieer</button></div>
+      <div class="row"><div class="k">Meta</div><div class="v" id="m7">Rotterdam Business School ran a full-cohort Eduface pilot across 18 teams and two feedback rounds. 79% of students were positive or open. Read the findings.</div><button onclick="cp('m7',this)">Kopieer</button></div>
+    </div>
+    <ul>
+      <li><input type="checkbox" id="p7a"><label>Titel + meta in Framer gezet</label></li>
+      <li><input type="checkbox" id="p7f" checked disabled><label>Gebouw-foto staat erin <span class="tag done">DOOR CLAUDE</span></label></li>
+      <li><input type="checkbox" id="p7z"><label>Breakpoints toevoegen</label></li>
+      <li><input type="checkbox" id="p7b"><label>Indexable = aan</label></li>
+      <li><input type="checkbox" id="p7c"><label>QA desktop</label></li>
+      <li><input type="checkbox" id="p7d"><label>QA mobiel</label></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>QA: waar je per pagina op let</h2>
+    <p class="sub">Loop elke blog op desktop én mobiel door en check:</p>
+    <div class="note">Claude heeft deze 7 punten al <b>structureel geverifieerd</b> op alle 7 pagina's (hero-kleur + witte tekst, tabel-scrollwrappers + rij-padding, diagram-wrap op mobiel, card-padding, CTA verticaal, links, geen zwerftekst/typo's). De vinkjes hieronder zijn je <b>visuele dubbelcheck op een echte telefoon</b> na het toevoegen van de breakpoints.</div>
+    <ul>
+      <li><input type="checkbox" id="q1"><label>Hero: navy, witte tekst, groene pill, leesbaar op mobiel</label></li>
+      <li><input type="checkbox" id="q2"><label>Tabellen: tekst niet tegen de lijn, scrollt horizontaal op mobiel binnen het scherm</label></li>
+      <li><input type="checkbox" id="q3"><label>Diagram-blokken: tekst met lucht, wrappen netjes op mobiel</label></li>
+      <li><input type="checkbox" id="q4"><label>Callouts/cards: genoeg padding boven/onder</label></li>
+      <li><input type="checkbox" id="q5"><label>CTA: knoppen onder elkaar, niks steekt uit. "Book a demo" → Calendly, "Create account" → signup</label></li>
+      <li><input type="checkbox" id="q6"><label>Alle links werken (demo → calendly.com/eduface/30min, account → app.eduface.me/signup)</label></li>
+      <li><input type="checkbox" id="q7"><label>Geen typo's / dubbele teksten / weggevallen stukken</label></li>
+    </ul>
+  </section>
+
+  <footer>Eduface · blog launch checklist · vinkjes worden lokaal bewaard</footer>
+</div>
+
+<script>
+  const boxes=[...document.querySelectorAll('input[type=checkbox]')];
+  const KEY='eduface_blog_launch';
+  const saved=JSON.parse(localStorage.getItem(KEY)||'{}');
+  boxes.forEach(b=>{
+    if(saved[b.id])b.checked=true; sync(b);
+    b.addEventListener('change',()=>{saved[b.id]=b.checked;localStorage.setItem(KEY,JSON.stringify(saved));sync(b);prog();});
+  });
+  function sync(b){b.closest('li')?.classList.toggle('done',b.checked);}
+  function prog(){const d=boxes.filter(b=>b.checked).length;document.getElementById('count').textContent=d+' / '+boxes.length+' afgevinkt';document.getElementById('fill').style.width=(boxes.length?d/boxes.length*100:0)+'%';}
+  function resetAll(){boxes.forEach(b=>{b.checked=false;sync(b);});localStorage.removeItem(KEY);prog();}
+  function cp(id,btn){navigator.clipboard.writeText(document.getElementById(id).textContent.trim()).then(()=>{const t=btn.textContent;btn.textContent='Gekopieerd ✓';setTimeout(()=>btn.textContent=t,1300);});}
+  prog();
+</script>
+</body>
+</html>

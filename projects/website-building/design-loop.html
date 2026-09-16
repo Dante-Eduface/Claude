@@ -1,0 +1,106 @@
+<!DOCTYPE html><html lang="nl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Design loop — landingspagina tegen Habitline</title>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#002333;--navy-2:#06303f;--green:#00e075;--green-deep:#007b54;--amber:#f0a531;
+--ink-500:#46606e;--ink-300:#a9bcc4;--ground:#eef4f5;--card:#fff;--line:#dfe9ec;--r:20px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--ground);color:var(--navy);font-family:Inter,system-ui,sans-serif;line-height:1.55;padding:48px 24px}
+.wrap{max-width:1000px;margin:0 auto;display:flex;flex-direction:column;gap:32px}
+h1{font-family:"League Spartan",sans-serif;font-size:2.375rem;letter-spacing:-.03em;line-height:1.05}
+h2{font-family:"League Spartan",sans-serif;font-size:1.25rem;letter-spacing:-.02em}
+.sub{color:var(--ink-500);font-size:1.0625rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:24px;display:flex;flex-direction:column;gap:16px}
+.meta{display:flex;flex-wrap:wrap;gap:12px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px 20px;flex:1;min-width:160px}
+.stat b{font-family:"League Spartan",sans-serif;font-size:1.75rem;display:block;line-height:1.1}
+.stat span{font-size:.8125rem;color:var(--ink-500)}
+table{width:100%;border-collapse:collapse;font-size:.9375rem}
+th{text-align:left;font-size:.6875rem;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-500);padding-bottom:10px;font-weight:600}
+td{padding:11px 0;border-top:1px solid var(--line);vertical-align:top}
+td:first-child{font-weight:600;white-space:nowrap;padding-right:20px}
+.tag{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:3px 11px;font-size:.75rem;font-weight:600;white-space:nowrap}
+.fail{background:rgba(240,165,49,.18);color:#a86d0d}
+.pass{background:rgba(0,224,117,.16);color:var(--green-deep)}
+.wait{background:var(--ground);color:var(--ink-500)}
+.gap{color:var(--ink-500);font-size:.9375rem}
+ol{padding-left:20px;display:flex;flex-direction:column;gap:8px;font-size:.9375rem}
+.foot{color:var(--ink-500);font-size:.8125rem}
+</style></head><body><div class="wrap">
+
+<div>
+  <h1>Design loop: onze landingspagina tegen Habitline</h1>
+  <p class="sub">Vier stukken, elk door een builder en drie critici met verse context. Alle drie moeten slagen. Geen vaste rondelimiet, de uitgang is winnen.</p>
+</div>
+
+<div class="meta">
+  <div class="stat"><b>6</b><span>rondes gedraaid</span></div>
+  <div class="stat"><b>1 van 4</b><span>stukken in behandeling</span></div>
+  <div class="stat"><b>18</b><span>criticus-oordelen tot nu toe</span></div>
+  <div class="stat"><b>0</b><span>stukken geslaagd</span></div>
+</div>
+
+<div class="card">
+  <h2>Stuk 1 — hero plus navigatie</h2>
+  <table>
+    <tr><th>Ronde</th><th>Brief</th><th>Systeem</th><th>Craft</th><th>Grootste gap die terugging naar de builder</th></tr>
+    <tr><td>1</td>
+      <td><span class="tag fail">fail</span></td>
+      <td><span class="tag fail">fail</span></td>
+      <td><span class="tag fail">fail</span></td>
+      <td class="gap">Geen materiaal. Een vlakke lichte lap met een wit kaartje erop, alles op een z-vlak, nul textuur. Plus groen als versiering op de eyebrow, en de kop zei 140 waar de stapel 142 zei.</td></tr>
+    <tr><td>2</td>
+      <td><span class="tag fail">fail</span></td>
+      <td><span class="tag fail">fail</span></td>
+      <td><span class="tag fail">fail</span></td>
+      <td class="gap">In de tekening keurde de machine goed, niet de docent. Het vinkje verscheen in de lucht naast het AI-gezicht, en er was nergens een cijfer te zien. Daarnaast puur wit als tekstkleur op navy.</td></tr>
+    <tr><td>3</td>
+      <td><span class="tag pass">pass</span></td>
+      <td><span class="tag fail">fail</span></td>
+      <td><span class="tag fail">fail</span></td>
+      <td class="gap">Verhaal klopt nu (stapel, Eduface schrijft concept met cijfer 68, docent zet het vinkje, goedgekeurde stapel). Craft: 6 van 7 mechanismen geslaagd, donker vlak nog plat. Systeem: puur wit op de navy knop.</td></tr>
+    <tr><td>4</td>
+      <td><span class="tag pass">pass</span></td>
+      <td><span class="tag fail">fail</span></td>
+      <td><span class="tag fail">fail</span></td>
+      <td class="gap">Diepte toegevoegd, M7 geslaagd. Systeem: een groene Approve-knop in de zwevende kaart, groen betekent nooit klik hier. Craft: te veel tekstmaten en overal dezelfde lijndikte.</td></tr>
+    <tr><td>5</td>
+      <td><span class="tag pass">pass</span></td>
+      <td><span class="tag fail">fail</span></td>
+      <td><span class="tag fail">fail</span></td>
+      <td class="gap">Beide critici wezen hetzelfde aan: contrast was verlaagd om iets minder nadruk te geven (mag niet), en de eerste viewport had zeven maten in plaats van vier. Gemeten in de browser, niet geschat.</td></tr>
+    <tr><td>6</td>
+      <td><span class="tag wait">loopt</span></td>
+      <td><span class="tag wait">loopt</span></td>
+      <td><span class="tag wait">loopt</span></td>
+      <td class="gap">Vier maten, drie gewichten. Bijschriften op leesbaar contrast. De route eindigt bij de hand, dus geen vel snijdt meer door de docent. Plus een eigen verticale scene voor telefoons.</td></tr>
+  </table>
+</div>
+
+<div class="card">
+  <h2>De vier stukken</h2>
+  <ol>
+    <li><b>Hero plus navigatie</b> — in behandeling, ronde 6</li>
+    <li><b>De beeldtaal zelf</b>: het Nakijkvolk plus de loop-bibliotheek — wacht</li>
+    <li><b>De feature-bento</b> — wacht</li>
+    <li><b>Social proof, cijfers en slot-CTA</b> — wacht</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>De lat</h2>
+  <p class="sub" style="font-size:.9375rem">Zeven mechanismen, gemeten in de live Habitline-pagina, niet geschat. Staan voluit in <b>bar.md</b>.</p>
+  <table>
+    <tr><td>M1</td><td style="font-weight:400">Een transitieduur en een curve op de hele site (0,45s, cubic-bezier 0.44 0 0.56 1)</td></tr>
+    <tr><td>M2</td><td style="font-weight:400">Kop is 3,8x de body, maximaal vier groottes per sectie, twee fontfamilies</td></tr>
+    <tr><td>M3</td><td style="font-weight:400">Twee radii, en accentkleur alleen in cirkels kleiner dan 32px</td></tr>
+    <tr><td>M4</td><td style="font-weight:400">Elke feature-cel is werkende product-UI, geen icoon met een tekstje</td></tr>
+    <tr><td>M5</td><td style="font-weight:400">Elke sectie is anders op t=0 en t=10 seconden</td></tr>
+    <tr><td>M6</td><td style="font-weight:400">De nav is een zwevende pill die vertelt waar je bent</td></tr>
+    <tr><td>M7</td><td style="font-weight:400">Licht en donker wisselen af, donker heeft altijd textuur</td></tr>
+  </table>
+</div>
+
+<p class="foot">Er is geen betrouwbare kostenmeting, dus die staat er niet. Wat je wel ziet is het aantal rondes. De echte rem ben jij: kijk mee en zeg stop wanneer je wil.</p>
+</div></body></html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Facebook-groepen promotie · Webinar 23 juni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{ --navy:#002333; --green:#00E075; --green2:#008F5A; --bg:#f5f7f8; --card:#fff; --line:#e2e8ea; --muted:#5b6b73; }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--navy);font-family:'Roboto',system-ui,sans-serif}
+  h1,h2,.spartan{font-family:'League Spartan',system-ui,sans-serif}
+  header{background:var(--navy);color:#fff;padding:20px 24px;position:sticky;top:0;z-index:10;box-shadow:0 2px 10px rgba(0,0,0,.15)}
+  header .logo{font-family:'League Spartan';font-weight:700;font-size:26px}
+  header .logo b{color:var(--green)}
+  header .sub{font-size:14px;color:#b9c6cc;margin-top:2px}
+  .bar{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:14px}
+  .progress{flex:1;min-width:200px;height:10px;background:#0a3144;border-radius:6px;overflow:hidden}
+  .progress > div{height:100%;background:var(--green);width:0%;transition:width .25s}
+  .count{font-size:14px;color:#cfe9df;white-space:nowrap}
+  .wrap{max-width:880px;margin:0 auto;padding:22px 18px 90px}
+  .ref{background:#0a3144;color:#dfeef0;border-radius:12px;padding:16px 18px;margin:18px 0;font-size:14px;line-height:1.55}
+  .ref b{color:#fff}
+  .ref code{background:#06222f;color:#7ff0b6;padding:1px 6px;border-radius:5px;font-size:13px}
+  .sec-h{display:flex;align-items:baseline;gap:12px;margin:32px 4px 10px}
+  .sec-h h2{font-size:21px;margin:0}
+  .sec-h .bc{font-size:13px;color:var(--muted)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:10px 0;transition:opacity .2s,border-color .2s}
+  .card.done{opacity:.6;border-color:var(--green)}
+  .crow{display:flex;align-items:flex-start;gap:11px;flex-wrap:wrap}
+  .chk{width:24px;height:24px;border-radius:7px;border:2px solid var(--line);flex:0 0 auto;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:15px;color:#fff;background:#fff;margin-top:2px}
+  .card.done .chk{background:var(--green);border-color:var(--green)}
+  .who{flex:1;min-width:220px}
+  .who .nm{font-family:'League Spartan';font-weight:700;font-size:17px;line-height:1.15}
+  .who .nm a{color:var(--navy);text-decoration:none;border-bottom:2px solid var(--green)}
+  .who .meta{font-size:12px;color:var(--muted);margin-top:3px}
+  .who .why{font-size:13px;color:var(--muted);margin-top:5px;line-height:1.5}
+  .badge{font-size:11px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;padding:3px 8px;border-radius:20px;flex:0 0 auto;margin-top:2px}
+  .b-open{background:#d7f7e7;color:#006754}
+  .b-priv{background:#f0e7da;color:#8a5a1f}
+  .b-var{background:#e2edf2;color:#0a3144;margin-left:6px}
+  .lnk{margin-top:10px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .lnk label{font-size:11px;text-transform:uppercase;letter-spacing:.4px;color:var(--muted);font-weight:700;flex:0 0 auto}
+  .lnk input{flex:1;min-width:200px;background:#fbfdfd;border:1px solid #cdd9dd;border-radius:8px;padding:8px 11px;font-size:13px;font-family:'Roboto';color:var(--navy)}
+  .lnk input:focus{outline:none;border-color:var(--green2);box-shadow:0 0 0 2px #00e07533}
+  .step{font-size:12px;color:var(--green2);font-weight:700;margin-top:8px}
+  label.fl{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.4px;color:var(--muted);font-weight:700;margin:10px 0 4px}
+  textarea{width:100%;background:#fff;color:var(--navy);border:1px solid #cdd9dd;border-radius:9px;padding:11px 13px;font-family:'Roboto';font-size:14px;line-height:1.6;resize:vertical}
+  textarea:focus{outline:none;border-color:var(--green2);box-shadow:0 0 0 2px #00e07533}
+  .frow{display:flex;align-items:center;gap:12px;margin-top:10px;flex-wrap:wrap}
+  .cp{background:var(--green);color:var(--navy);border:none;border-radius:8px;padding:10px 18px;font-size:14px;font-weight:700;font-family:'League Spartan';cursor:pointer}
+  .cp:hover{background:#00c768}
+  .toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--navy);color:#fff;padding:12px 20px;border-radius:10px;font-size:14px;opacity:0;pointer-events:none;transition:.2s;z-index:50}
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+  .toast b{color:var(--green)}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">Edu<b>face</b></div>
+  <div class="sub">Facebook-groepen · Webinar dinsdag 23 juni (10:00-11:00) · AI-feedback & kansengelijkheid</div>
+  <div class="bar">
+    <div class="progress"><div id="pbar"></div></div>
+    <div class="count" id="pcount">0 / 0 geplaatst</div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="ref">
+    <b>Werkwijze per groep:</b> <b>1)</b> maak eerst een <b>unieke link</b> &nbsp;<b>2)</b> plaats de post &nbsp;<b>3)</b> vink af. Voortgang en links blijven lokaal in je browser bewaard.<br><br>
+    <b>Waarom een unieke link:</b> zo zie je per groep hoeveel aanmeldingen er binnenkomen. Dat lost het attributieprobleem op (we konden eerder niet zien waar aanmeldingen vandaan kwamen). Maak per groep een verkorte link (bijv. via Bitly) die naar de aanmeldpagina leidt, of hang een herkenbare tag aan de URL: <code>join.eduface.me/webinar?bron=fb-onderwijsmetai</code>. Plak de link die je maakt in het veld bij elke groep, en gebruik diezelfde link in je post.<br><br>
+    <b>Let op:</b> Facebook is lager-fit dan je WhatsApp/Npuls-kanalen (veel PO/VO-leraren, minder HBO/WO). Doe de Tier 1 + een paar uit Tier 2, niet alle privégroepen najagen. <b>Openbaar</b> = direct plaatsen, <b>Privé</b> = eerst lid worden (kan te traag zijn voor 23 juni). Respecteer de groepsregels, post als kennisdeling, niet als reclame.
+  </div>
+
+  <!-- ===== POST COPY ===== -->
+  <div class="sec-h"><h2 class="spartan">Postteksten</h2><span class="bc">vervang [UNIEKE LINK] door de link van die groep</span></div>
+
+  <div class="card">
+    <label class="fl">Algemeen (Tier 1 + 3)</label>
+    <textarea rows="10" id="post-alg">🎓 Gratis webinar: AI-feedback op schrijfvaardigheid in het hoger onderwijs
+
+Op dinsdag 23 juni delen we samen met Maartje Sijm (docent De Haagse Hogeschool) de resultaten van haar pilot. De studenten die de AI-feedbacktool wekelijks gebruikten, haalden aan het eind allemaal een voldoende. We bespreken ook wat dit betekent voor kansengelijkheid in het onderwijs.
+
+🗓️ Di 23 juni, 10:00-11:00
+💻 Online via Teams
+👉 Aanmelden: [UNIEKE LINK]</textarea>
+    <div class="frow"><button class="cp" onclick="cp('post-alg')">Kopieer post</button></div>
+
+    <label class="fl">Variant voor schrijf-/NT2-groepen (Tier 2)</label>
+    <textarea rows="10" id="post-nt2">✍️ Gratis webinar: AI-feedback op schrijfvaardigheid
+
+Hoe help je studenten stap voor stap beter schrijven, zonder dat je als docent omkomt in nakijkwerk? Op 23 juni deelt Maartje Sijm (De Haagse Hogeschool) haar pilot met AI-ondersteunde feedback op schrijfvaardigheid. De studenten die de tool wekelijks gebruikten, haalden aan het eind allemaal een voldoende. We kijken ook naar wat het betekent voor kansengelijkheid.
+
+🗓️ Di 23 juni, 10:00-11:00
+💻 Online via Teams
+👉 Aanmelden: [UNIEKE LINK]</textarea>
+    <div class="frow"><button class="cp" onclick="cp('post-nt2')">Kopieer variant</button></div>
+  </div>
+
+  <!-- ===== TIER 1 ===== -->
+  <div class="sec-h"><h2 class="spartan">Tier 1: eerst doen</h2><span class="bc">AI + onderwijs, NL, groot</span></div>
+
+  <div class="card" data-id="onderwijsmetai">
+    <div class="crow">
+      <div class="chk" onclick="tog(this)"></div>
+      <div class="who">
+        <div class="nm"><a href="https://www.facebook.com/groups/onderwijsmetai/" target="_blank">Onderwijs met AI</a></div>
+        <div class="meta">~1.900 leden</div>
+        <div class="why">Beste fit en openbaar, dus direct plaatsen.</div>
+        <div class="step">Tekst: Algemeen</div>
+        <div class="lnk"><label>Unieke link</label><input type="text" data-link="onderwijsmetai" placeholder="plak hier de link die je maakt" oninput="saveLink(this)"></div>
+      </div>
+      <span class="badge b-open">Openbaar</span>
+    </div>
+  </div>
+
+  <div class="card" data-id="chatgptai">
+    <div class="crow">
+      <div class="chk" onclick="tog(this)"></div>
+      <div class="who">
+        <div class="nm"><a href="https://www.facebook.com/groups/1662361957577866/" target="_blank">ChatGPT en AI in het Onderwijs</a></div>
+        <div class="meta">~4.200 leden</div>
+        <div class="why">Grootste AI-onderwijsgroep. De moeite van het lid worden waard.</div>
+        <div class="step">Tekst: Algemeen</div>
+        <div class="lnk"><label>Unieke link</label><input type="text" data-link="chatgptai" placeholder="plak hier de link die je maakt" oninput="saveLink(this)"></div>
+      </div>
+      <span class="badge b-priv">Privé</span>
+    </div>
+  </div>
+
+  <div class="card" data-id="aiwijs">
+    <div class="crow">
+      <div class="chk" onclick="tog(this)"></div>
+      <div class="who">
+        <div class="nm"><a href="https://www.facebook.com/groups/995293571890337/" target="_blank">AI wijs in onderwijs</a></div>
+        <div class="meta">~1.200 leden</div>
+        <div class="why">On-topic en openbaar.</div>
+        <div class="step">Tekst: Algemeen</div>
+        <div class="lnk"><label>Unieke link</label><input type="text" data-link="aiwijs" placeholder="plak hier de link die je maakt" oninput="saveLink(this)"></div>
+      </div>
+      <span class="badge b-open">Openbaar</span>
+    </div>
+  </div>
+
+  <!-- ===== TIER 2 ===== -->
+  <div class="sec-h"><h2 class="spartan">Tier 2: schrijf- & NT2-niche</h2><span class="bc">past bij schrijfvaardigheid + kansengelijkheid</span></div>
+
+  <div class="card" data-id="schrijfdocenten">
+    <div class="crow">
+      <div class="chk" onclick="tog(this)"></div>
+      <div class="who">
+        <div class="nm"><a href="https://www.facebook.com/groups/netwerkschrijfdocenten/" target="_blank">Netwerk Schrijfdocenten</a></div>
+        <div class="meta">278 leden</div>
+        <div class="why">Schrijfdocenten, direct jullie thema.</div>
+        <div class="step">Tekst: NT2/schrijf-variant</div>
+        <div class="lnk"><label>Unieke link</label><input type="text" data-link="schrijfdocenten" placeholder="plak hier de link die je maakt" oninput="saveLink(this)"></div>
+      </div>
+      <span class="badge b-priv">Privé</span>
+    </div>
+  </div>
+
+  <div class="card" data-id="docentennt2">
+    <div class="crow">
+      <div class="chk" onclick="tog(this)"></div>
+      <div class="who">
+        <div class="nm"><a href="https://www.facebook.com/groups/893183037369033/" target="_blank">Docenten NT2</a></div>
+        <div class="meta">~4.300 leden</div>
+        <div class="why">NT2-docenten geven veel taalfeedback en zijn bezig met kansengelijkheid. Sterke match.</div>
+        <div class="step">Tekst: NT2/schrijf-variant</div>
+        <div class="lnk"><label>Unieke link</label><input type="text" data-link="docentennt2" placeholder="plak hier de link die je maakt" oninput="saveLink(this)"></div>
+      </div>
+      <span class="badge b-priv">Privé</span>
+    </div>
+  </div>
+
+  <div class="card" data-id="nt2oefenen">
+    <div class="crow">
+      <div class="chk" onclick="tog(this)"></div>
+      <div class="who">
+        <div class="nm"><a href="https://www.facebook.com/groups/580707266135085/" target="_blank">NT2 Nederlands oefenen</a></div>
+        <div class="meta">~8.900 leden</div>
+        <div class="why">Grootste NT2-groep. Framen rond taalfeedback.</div>
+        <div class="step">Tekst: NT2/schrijf-variant</div>
+        <div class="lnk"><label>Unieke link</label><input type="text" data-link="nt2oefenen" placeholder="plak hier de link die je maakt" oninput="saveLink(this)"></div>
+      </div>
+      <span class="badge b-priv">Privé</span>
+    </div>
+  </div>
+
+  <div class="card" data-id="ant2">
+    <div class="crow">
+      <div class="chk" onclick="tog(this)"></div>
+      <div class="who">
+        <div class="nm"><a href="https://www.facebook.com/groups/2246191035627823/" target="_blank">A-NT2 maar mee! (docenten-netwerk)</a></div>
+        <div class="meta">851 leden</div>
+        <div class="why">NT2-docentennetwerk.</div>
+        <div class="step">Tekst: NT2/schrijf-variant</div>
+        <div class="lnk"><label>Unieke link</label><input type="text" data-link="ant2" placeholder="plak hier de link die je maakt" oninput="saveLink(this)"></div>
+      </div>
+      <span class="badge b-priv">Privé</span>
+    </div>
+  </div>
+
+  <div class="card" data-id="schrijfvl">
+    <div class="crow">
+      <div class="chk" onclick="tog(this)"></div>
+      <div class="who">
+        <div class="nm"><a href="https://www.facebook.com/groups/382512525602222/" target="_blank">Schrijfdocenten Vlaanderen</a></div>
+        <div class="meta">319 leden (BE)</div>
+        <div class="why">Schrijfdocenten, Belgisch.</div>
+        <div class="step">Tekst: NT2/schrijf-variant</div>
+        <div class="lnk"><label>Unieke link</label><input type="text" data-link="schrijfvl" placeholder="plak hier de link die je maakt" oninput="saveLink(this)"></div>
+      </div>
+      <span class="badge b-priv">Privé</span>
+    </div>
+  </div>
+
+  <!-- ===== TIER 3 ===== -->
+  <div class="sec-h"><h2 class="spartan">Tier 3: algemeen / events</h2><span class="bc">lagere fit, breed</span></div>
+
+  <div class="card" data-id="onderwijsagenda">
+    <div class="crow">
+      <div class="chk" onclick="tog(this)"></div>
+      <div class="who">
+        <div class="nm"><a href="https://www.facebook.com/groups/329557670765348/" target="_blank">Onderwijsagenda</a></div>
+        <div class="meta">778 leden</div>
+        <div class="why">Letterlijk bedoeld voor events, dus netjes om te plaatsen.</div>
+        <div class="step">Tekst: Algemeen</div>
+        <div class="lnk"><label>Unieke link</label><input type="text" data-link="onderwijsagenda" placeholder="plak hier de link die je maakt" oninput="saveLink(this)"></div>
+      </div>
+      <span class="badge b-open">Openbaar</span>
+    </div>
+  </div>
+
+  <div class="card" data-id="evidence">
+    <div class="crow">
+      <div class="chk" onclick="tog(this)"></div>
+      <div class="who">
+        <div class="nm"><a href="https://www.facebook.com/groups/270381530122235/" target="_blank">Evidence-informed onderwijzen</a></div>
+        <div class="meta">~2.000 leden</div>
+        <div class="why">Past bij een onderzoek-webinar.</div>
+        <div class="step">Tekst: Algemeen</div>
+        <div class="lnk"><label>Unieke link</label><input type="text" data-link="evidence" placeholder="plak hier de link die je maakt" oninput="saveLink(this)"></div>
+      </div>
+      <span class="badge b-priv">Privé</span>
+    </div>
+  </div>
+
+  <div class="card" data-id="onderwijsmorgen">
+    <div class="crow">
+      <div class="chk" onclick="tog(this)"></div>
+      <div class="who">
+        <div class="nm"><a href="https://www.facebook.com/groups/318714841609606/" target="_blank">onderwijs morgen</a></div>
+        <div class="meta">393 leden</div>
+        <div class="why">Onderwijsinnovatie, openbaar.</div>
+        <div class="step">Tekst: Algemeen</div>
+        <div class="lnk"><label>Unieke link</label><input type="text" data-link="onderwijsmorgen" placeholder="plak hier de link die je maakt" oninput="saveLink(this)"></div>
+      </div>
+      <span class="badge b-open">Openbaar</span>
+    </div>
+  </div>
+
+  <div class="card" data-id="digigeletterd">
+    <div class="crow">
+      <div class="chk" onclick="tog(this)"></div>
+      <div class="who">
+        <div class="nm"><a href="https://www.facebook.com/groups/140624236669676/" target="_blank">Digitale geletterdheid in het onderwijs</a></div>
+        <div class="meta">~3.700 leden</div>
+        <div class="why">Digitale geletterdheid, raakt jullie thema.</div>
+        <div class="step">Tekst: Algemeen</div>
+        <div class="lnk"><label>Unieke link</label><input type="text" data-link="digigeletterd" placeholder="plak hier de link die je maakt" oninput="saveLink(this)"></div>
+      </div>
+      <span class="badge b-priv">Privé</span>
+    </div>
+  </div>
+
+</div>
+
+<div class="toast" id="toast"><b>Gekopieerd</b> naar klembord</div>
+<script>
+  const KEY='hss-facebook-groepen';
+  function load(){try{return JSON.parse(localStorage.getItem(KEY))||{done:{},links:{}}}catch(e){return {done:{},links:{}}}}
+  function save(s){localStorage.setItem(KEY,JSON.stringify(s))}
+  let state=load();
+  function refresh(){
+    const cards=document.querySelectorAll('.card[data-id]');
+    let done=0;cards.forEach(c=>{if(c.classList.contains('done'))done++});
+    document.getElementById('pcount').textContent=done+' / '+cards.length+' geplaatst';
+    document.getElementById('pbar').style.width=(cards.length?Math.round(done/cards.length*100):0)+'%';
+  }
+  function tog(el){const card=el.closest('.card');const id=card.dataset.id;card.classList.toggle('done');
+    el.textContent=card.classList.contains('done')?'✓':'';
+    state.done[id]=card.classList.contains('done');save(state);refresh();}
+  function saveLink(el){state.links[el.dataset.link]=el.value;save(state);}
+  (function init(){
+    document.querySelectorAll('.card[data-id]').forEach(c=>{
+      if(state.done[c.dataset.id]){c.classList.add('done');c.querySelector('.chk').textContent='✓';}});
+    document.querySelectorAll('input[data-link]').forEach(i=>{if(state.links[i.dataset.link])i.value=state.links[i.dataset.link];});
+    refresh();
+  })();
+  document.querySelectorAll('textarea').forEach(t=>{const fit=()=>{t.style.height='auto';t.style.height=t.scrollHeight+'px'};fit();t.addEventListener('input',fit)});
+  function flash(){const t=document.getElementById('toast');t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1400)}
+  function cp(id){navigator.clipboard.writeText(document.getElementById(id).value).then(flash)}
+</script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Inter:wght@400;450;500;600;700&display=swap");
+
+  :root{
+    --navy:#002333;
+    --green:#00e075;
+    --green-deep:#007b54;
+    --ink-500:#5b7480;
+    --ink-50:#f3f7f8;
+    --white:#fff;
+    --soft-white:rgba(255,255,255,.62);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:"Inter",sans-serif;background:#e7eef0;padding:48px;display:flex;flex-direction:column;gap:40px;width:1200px;}
+
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:40px;}
+  .card{border-radius:20px;padding:56px;box-shadow:0 12px 40px rgba(0,35,51,.10);}
+  .light{background:var(--white);}
+  .dark{background:var(--navy);}
+
+  .eyebrow{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.14em;display:inline-flex;align-items:center;gap:10px;}
+  .eyebrow.l{color:var(--green-deep);}
+  .eyebrow.d{color:var(--green);}
+  .eyebrow.soft{color:var(--soft-white);}
+  .dash{display:inline-block;height:1px;width:26px;}
+  .dash.l{background:var(--green-deep);}
+  .dash.d{background:var(--green);}
+  .dash.soft{background:var(--soft-white);}
+
+  h2{font-family:"League Spartan",sans-serif;font-weight:700;letter-spacing:-.02em;font-size:44px;line-height:1.05;margin-top:14px;}
+  h2.l{color:var(--navy);}
+  h2.d{color:var(--white);}
+  p.sub{font-size:18px;line-height:1.5;margin-top:16px;max-width:90%;}
+  p.sub.l{color:var(--ink-500);}
+  p.sub.d{color:var(--soft-white);}
+
+  .variant-label{font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:#5b7480;margin-bottom:28px;display:block;}
+  .block{margin-bottom:44px;}
+  .block:last-child{margin-bottom:0;}
+  .pagetitle{font-family:"League Spartan",sans-serif;font-weight:700;font-size:22px;color:var(--navy);margin-bottom:4px;}
+  .pagesub{font-size:14px;color:#5b7480;margin-bottom:8px;}
+</style>
+</head>
+<body>
+  <div>
+    <div class="pagetitle">Eduface eyebrow — licht vs donker</div>
+    <div class="pagesub">League Spartan kop · Inter eyebrow · merkkleuren uit tokens.css</div>
+  </div>
+
+  <div class="row">
+    <!-- LIGHT -->
+    <div class="card light">
+      <span class="variant-label">Lichte pagina</span>
+
+      <div class="block">
+        <span class="eyebrow l">Voor docenten</span>
+        <h2 class="l">Nakijken in seconden</h2>
+        <p class="sub l">Studenten krijgen direct onderbouwde feedback op hun werk.</p>
+      </div>
+
+      <div class="block">
+        <span class="eyebrow l"><span class="dash l"></span>Voor docenten</span>
+        <h2 class="l">Nakijken in seconden</h2>
+        <p class="sub l">Versie met streepje ervoor. Net iets meer "design-bureau".</p>
+      </div>
+    </div>
+
+    <!-- DARK -->
+    <div class="card dark">
+      <span class="variant-label" style="color:rgba(255,255,255,.5)">Donkere pagina</span>
+
+      <div class="block">
+        <span class="eyebrow d">Voor docenten</span>
+        <h2 class="d">Nakijken in seconden</h2>
+        <p class="sub d">Fel groen plopt op navy. Dit is waar de accentkleur voor bedoeld is.</p>
+      </div>
+
+      <div class="block">
+        <span class="eyebrow d"><span class="dash d"></span>Voor docenten</span>
+        <h2 class="d">Nakijken in seconden</h2>
+        <p class="sub d">Met streepje. Mijn favoriet voor donkere secties.</p>
+      </div>
+
+      <div class="block">
+        <span class="eyebrow soft"><span class="dash soft"></span>Voor docenten</span>
+        <h2 class="d">Nakijken in seconden</h2>
+        <p class="sub d">Gedempt wit als het groen te druk wordt naast een felle CTA.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

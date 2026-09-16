@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-mails warme contacten · Webinar 23 juni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{ --navy:#002333; --green:#00E075; --green2:#008F5A; --bg:#f5f7f8; --card:#fff; --line:#e2e8ea; --muted:#5b6b73; }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--navy);font-family:'Roboto',system-ui,sans-serif}
+  h1,h2,.spartan{font-family:'League Spartan',system-ui,sans-serif}
+  header{background:var(--navy);color:#fff;padding:20px 24px;position:sticky;top:0;z-index:10;box-shadow:0 2px 10px rgba(0,0,0,.15)}
+  header .logo{font-family:'League Spartan';font-weight:700;font-size:26px}
+  header .logo b{color:var(--green)}
+  header .sub{font-size:14px;color:#b9c6cc;margin-top:2px}
+  .bar{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:14px}
+  .progress{flex:1;min-width:200px;height:10px;background:#0a3144;border-radius:6px;overflow:hidden}
+  .progress > div{height:100%;background:var(--green);width:0%;transition:width .25s}
+  .count{font-size:14px;color:#cfe9df;white-space:nowrap}
+  .btn{background:#0a3144;color:#fff;border:1px solid #16455c;border-radius:8px;padding:7px 12px;font-size:13px;cursor:pointer}
+  .wrap{max-width:880px;margin:0 auto;padding:22px 18px 90px}
+  .ref{background:#0a3144;color:#dfeef0;border-radius:12px;padding:16px 18px;margin:18px 0;font-size:14px;line-height:1.5}
+  .ref b{color:#fff}
+  .batch-h{display:flex;align-items:baseline;gap:12px;margin:30px 4px 12px}
+  .batch-h h2{font-size:22px;margin:0}
+  .batch-h .bc{font-size:13px;color:var(--muted)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:10px 0;transition:opacity .2s,border-color .2s}
+  .card.done{opacity:.55;border-color:var(--green)}
+  .crow{display:flex;align-items:center;gap:10px;margin-bottom:9px;flex-wrap:wrap}
+  .chk{width:24px;height:24px;border-radius:7px;border:2px solid var(--line);flex:0 0 auto;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:15px;color:#fff;background:#fff}
+  .card.done .chk{background:var(--green);border-color:var(--green)}
+  .who{flex:1;min-width:140px}
+  .who .nm{font-family:'League Spartan';font-weight:700;font-size:17px;line-height:1.1}
+  .who .og{font-size:13px;color:var(--muted)}
+  .who .em{font-size:12px;color:var(--green2)}
+  .badge{font-size:11px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;padding:3px 8px;border-radius:20px;background:#d7f7e7;color:#006754;flex:0 0 auto}
+  label.fl{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.4px;color:var(--muted);font-weight:700;margin:8px 0 4px}
+  input.subj,textarea{width:100%;background:#fff;color:var(--navy);border:1px solid #cdd9dd;border-radius:9px;padding:10px 12px;font-family:'Roboto';font-size:14px;line-height:1.5}
+  textarea{resize:vertical;overflow:hidden;line-height:1.55}
+  input.subj:focus,textarea:focus{outline:none;border-color:var(--green2);box-shadow:0 0 0 2px #00e07533}
+  .frow{display:flex;align-items:center;gap:12px;margin-top:10px;flex-wrap:wrap}
+  .gmail{background:var(--green);color:var(--navy);border:none;border-radius:8px;padding:10px 18px;font-size:14px;font-weight:700;font-family:'League Spartan';cursor:pointer;text-decoration:none;display:inline-block}
+  .gmail:hover{background:#00c768}
+  .cp{background:#0a3144;color:#fff;border:none;border-radius:8px;padding:10px 14px;font-size:13px;cursor:pointer}
+  .reset1{font-size:12px;color:var(--muted);cursor:pointer;text-decoration:underline}
+  .toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--navy);color:#fff;padding:12px 20px;border-radius:10px;font-size:14px;opacity:0;pointer-events:none;transition:.2s;z-index:50}
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+  .toast b{color:var(--green)}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">Edu<b>face</b></div>
+  <div class="sub">Persoonlijke e-mails · warme contacten · Webinar 23 juni (10:00-11:00)</div>
+  <div class="bar">
+    <div class="progress"><div id="pbar"></div></div>
+    <div class="count" id="pcount">0 / 0 verstuurd</div>
+    <button class="btn" onclick="resetDone()">Reset vinkjes</button>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="ref">
+    <b>Hoe gebruik je dit:</b> pas onderwerp/tekst gerust aan (wordt bewaard) en personaliseer per persoon. Klik <b>Opstellen in Gmail</b> → er opent een Gmail-venster met ontvanger, onderwerp en tekst al ingevuld. Je controleert en verstuurt zelf. De kaart vinkt dan af.<br>
+    Dit zijn mensen waar je al contact mee hebt gehad, dus voeg waar je kunt een persoonlijke zin toe. Max ~25 per dag aanhouden.
+  </div>
+  <div id="list"></div>
+</div>
+
+<div class="toast" id="toast"><b>Geopend in Gmail</b> + afgevinkt</div>
+
+<script>
+const SUBJECT = "Uitnodiging webinar 23 juni — AI-feedback bij De Haagse Hogeschool";
+const BODY = fn => `Hi ${fn},
+
+Hoe is het? Op dinsdag 23 juni (10:00-11:00, online) organiseren we samen met Maartje Sijm van De Haagse Hogeschool een webinar over hoe AI-gegenereerde feedback bijdraagt aan betere schrijfvaardigheid én meer kansengelijkheid in het hoger onderwijs.
+
+We laten zien hoe studenten de tool in hun schrijfproces gebruiken en wat de eerste resultaten zijn. Eén ding dat eruit sprong: de studenten die de tool wekelijks gebruikten, haalden aan het eind van het vak allemaal een voldoende.
+
+Leek me echt iets voor jou. Aanmelden kan hier: https://join.eduface.me/teams
+
+Mocht je niet kunnen, laat het me weten, dan stuur ik je achteraf graag de opname.
+
+Groet,
+Dante`;
+
+// Warme contacten (Eduface-source, al contact gehad). [voornaam] = even checken/aanvullen.
+const DATA = [
+  {fn:"Daniëlle",nm:"Daniëlle Holtrop",og:"University Leiden",em:"d.holtrop@levwn.nl"},
+  {fn:"Margot",nm:"Margot van Mulken",og:"Radboud University",em:"margot.vanmulken@ru.nl"},
+  {fn:"Silvester",nm:"Silvester Draaijer",og:"Vrije Universiteit Amsterdam",em:"silvester.draaijer@vu.nl"},
+  {fn:"Carel",nm:"Carel Jansen",og:"University of Groningen",em:"c.j.m.jansen@rug.nl"},
+  {fn:"Jan",nm:"Jan Hansma",og:"Saxion",em:"j.hansma@saxion.nl"},
+  {fn:"Bram",nm:"Bram van der Schilden",og:"MBO Utrecht",em:"bramvanderschilden@kurve.nl"},
+  {fn:"Vanessa",nm:"Vanessa Pinto Ferreira",og:"ROC Ter Aa",em:"v.pintoferreira@ter-aa.nl"},
+  {fn:"[voornaam]",nm:"M.C. van Vliet",og:"De Haagse Hogeschool",em:"m.c.vanvliet@hhs.nl"},
+  {fn:"Graeme",nm:"Graeme La'Met",og:"Team Academy",em:"graeme@teamacademy.nl"},
+  {fn:"Memon",nm:"Memon Boukiour",og:"De Haagse Hogeschool",em:"m.boukiour@hhs.nl"},
+  {fn:"Onno",nm:"Onno van Duinen",og:"Hogeschool van Arnhem en Nijmegen",em:"onno.vanduinen@han.nl"},
+  {fn:"Heleen",nm:"Heleen van Deuzen",og:"NSPOH",em:"h.vandeuzen@nspoh.nl"},
+  {fn:"Eliane",nm:"Eliane Elsen",og:"Hogeschool Leiden",em:"elsen.e@hsleiden.nl"},
+  {fn:"team",nm:"Onderwijsinnovatieteam",og:"University of Twente",em:"telt@utwente.nl"},
+  {fn:"Arjan",nm:"Arjan van Hartesveldt",og:"Hogeschool Leiden",em:"hartesveldt.van.a@hsleiden.nl"},
+  {fn:"Marleen",nm:"Marleen",og:"Sport&People",em:"marleen@sport-people.nl"},
+  {fn:"Louise",nm:"Louise Helmer",og:"Hogeschool Utrecht",em:"louise.helmer@hu.nl"},
+  {fn:"Rint",nm:"Rint Sijbesma",og:"Eindhoven University of Technology",em:"r.p.sijbesma@tue.nl"},
+  {fn:"Dominic",nm:"Dominic",og:"MBO Rijnland",em:"donbag@mborijnland.nl"},
+  {fn:"[voornaam]",nm:"M. de Jong",og:"Sport&People",em:"m.dejong@sport-people.nl"},
+  {fn:"Jan",nm:"Jan Leeuwis",og:"Noorderpoort",em:"jc.leeuwis@noorderpoort.nl"},
+  {fn:"Evelyn",nm:"Evelyn Koeling",og:"Veiligheidsregio Brabant-Zuidoost",em:"evelynkoeling@vrbzo.nl"},
+  {fn:"Peter",nm:"Peter Rijpkema",og:"University of Amsterdam",em:"p.rijpkema@uva.nl"},
+  {fn:"Boudewijn",nm:"Boudewijn Wisse",og:"De Haagse Hogeschool",em:"b.m.wisse@hhs.nl"},
+  {fn:"Elisabeth",nm:"Elisabeth Stapersma",og:"De Haagse Hogeschool",em:"e.a.stapersma@hhs.nl"},
+  {fn:"Ron",nm:"Ron Zwaan",og:"De Haagse Hogeschool",em:"brzwaan@hhs.nl"},
+  {fn:"Maria",nm:"Maria Rutgers",og:"ROC Gildeopleidingen",em:"m.rutgers@rocgilde.nl"},
+  {fn:"May",nm:"May Lee",og:"Maastricht University",em:"may.lee@maastrichtuniversity.nl"},
+  {fn:"Marianna",nm:"Marianna De Sa Siqueira",og:"Radboud University",em:"marianna.desasiqueira@ru.nl"},
+  {fn:"Janneke",nm:"Janneke Kelter",og:"De Haagse Hogeschool",em:"j.kelter@hhs.nl"},
+  {fn:"Koos",nm:"Koos Winnips",og:"University of Groningen",em:"koos.winnips@rug.nl"},
+  {fn:"Inge",nm:"Inge Dame",og:"Professional Education",em:"idame@professional-education.nl"},
+  {fn:"Martijn",nm:"Martijn van der Heijden",og:"Avans Hogeschool",em:"m.vanderheijden10@avans.nl"},
+  {fn:"Pascal",nm:"Pascal Mariany",og:"Onderwijs Orakel",em:"pascal@onderwijsorakel.nl"},
+  {fn:"Nina",nm:"Nina de Jongh",og:"Avans Hogeschool",em:"n.dejongh@avans.nl"},
+  {fn:"Marieke",nm:"Marieke Streefkerk",og:"Zuyd Hogeschool",em:"marieke.streefkerk@zuyd.nl"},
+  {fn:"Samantha",nm:"Samantha Freriks",og:"MBO Rijnland",em:"sfreriks@mborijnland.nl"},
+  {fn:"Dennis",nm:"Dennis Mulder",og:"De Haagse Hogeschool",em:"d.mulder@hhs.nl"},
+  {fn:"Mari",nm:"Mari Gutter",og:"Hogeschool Utrecht",em:"mari.gutter@hu.nl"},
+  {fn:"Jesca",nm:"Jesca van Petegem-Hellemans",og:"Hogeschool Utrecht",em:"jesca.vanpetegem-hellemans@hu.nl"},
+  {fn:"Gijs",nm:"Gijs Bloemsaat",og:"Hogeschool van Arnhem en Nijmegen",em:"gijs.bloemsaat@han.nl"},
+  {fn:"Volkert",nm:"Volkert van Steijn",og:"Delft University of Technology",em:"v.vansteijn@tudelft.nl"},
+  {fn:"Jan Willem",nm:"Jan Willem Smelt",og:"ROC Nijmegen",em:"j.smelt@roc-nijmegen.nl"},
+  {fn:"Lenneke",nm:"Lenneke Tielemans",og:"Hogeschool van Arnhem en Nijmegen",em:"lenneke.tielemans@han.nl"},
+  {fn:"Ellen",nm:"Ellen Zwarteveen",og:"De Haagse Hogeschool",em:"e.b.zwarteveen@hhs.nl"},
+  {fn:"Edwin",nm:"Edwin Spielhagen",og:"MBO Amersfoort",em:"ensn@mboamersfoort.nl"},
+  {fn:"Jeanne",nm:"Jeanne Benschop",og:"Hogeschool van Arnhem en Nijmegen",em:"jeanne.benschop@han.nl"},
+  {fn:"Carla",nm:"Carla Stiekema",og:"Hogeschool van Amsterdam",em:"c.j.stiekema@hva.nl"},
+  {fn:"Eveline",nm:"Eveline Hoebe",og:"Universiteit Leiden (LACDR)",em:"e.k.hoebe@lacdr.leidenuniv.nl"},
+  {fn:"Diana",nm:"Diana Klomp",og:"Universiteit Leiden (LACDR)",em:"a.e.m.klomp@lacdr.leidenuniv.nl"},
+];
+DATA.forEach(d=>{ d.defS=SUBJECT; d.defB=BODY(d.fn); });
+
+const BATCH=25;
+const KEY_DONE="eduface-hhs-mail-done-v1";
+const KEY_EDIT="eduface-hhs-mail-edits-v1";
+let done=new Set(JSON.parse(localStorage.getItem(KEY_DONE)||"[]"));
+let edits=JSON.parse(localStorage.getItem(KEY_EDIT)||"{}");
+const saveDone=()=>localStorage.setItem(KEY_DONE,JSON.stringify([...done]));
+const saveEdits=()=>localStorage.setItem(KEY_EDIT,JSON.stringify(edits));
+function autogrow(ta){ ta.style.height="auto"; ta.style.height=(ta.scrollHeight+2)+"px"; }
+const getS=d=>(d.em+"|s" in edits)?edits[d.em+"|s"]:d.defS;
+const getB=d=>(d.em+"|b" in edits)?edits[d.em+"|b"]:d.defB;
+
+function render(){
+  const list=document.getElementById("list"); list.innerHTML="";
+  const nB=Math.ceil(DATA.length/BATCH);
+  for(let b=0;b<nB;b++){
+    const slice=DATA.slice(b*BATCH,b*BATCH+BATCH);
+    const dn=slice.filter(d=>done.has(d.em)).length;
+    const h=document.createElement("div"); h.className="batch-h";
+    h.innerHTML=`<h2>Batch ${b+1}</h2><span class="bc">${slice.length} mails · <b id="bc${b}">${dn}/${slice.length}</b> verstuurd</span>`;
+    list.appendChild(h);
+    slice.forEach(d=>list.appendChild(card(d)));
+  }
+  updateProgress();
+}
+
+function card(d){
+  const el=document.createElement("div");
+  el.className="card"+(done.has(d.em)?" done":""); el.dataset.em=d.em;
+  el.innerHTML=`
+    <div class="crow">
+      <div class="chk" title="Afvinken">✓</div>
+      <div class="who"><div class="nm"></div><div class="og"></div><div class="em"></div></div>
+      <span class="badge">warm</span>
+    </div>
+    <label class="fl">Onderwerp</label>
+    <input class="subj" type="text">
+    <label class="fl">Bericht</label>
+    <textarea></textarea>
+    <div class="frow">
+      <a class="gmail" target="_blank" rel="noopener">Opstellen in Gmail</a>
+      <button class="cp">Kopieer bericht</button>
+      <span class="reset1">herstel</span>
+    </div>`;
+  el.querySelector(".nm").textContent=d.nm;
+  el.querySelector(".og").textContent=d.og;
+  el.querySelector(".em").textContent=d.em;
+  const subj=el.querySelector(".subj"), ta=el.querySelector("textarea");
+  subj.value=getS(d); ta.value=getB(d);
+  setTimeout(()=>autogrow(ta),0);
+  const gmail=el.querySelector(".gmail");
+  const buildUrl=()=>`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(d.em)}&su=${encodeURIComponent(subj.value)}&body=${encodeURIComponent(ta.value)}`;
+  gmail.href=buildUrl();
+  subj.addEventListener("input",()=>{ edits[d.em+"|s"]=subj.value; saveEdits(); gmail.href=buildUrl(); });
+  ta.addEventListener("input",()=>{ edits[d.em+"|b"]=ta.value; saveEdits(); autogrow(ta); gmail.href=buildUrl(); });
+  gmail.addEventListener("click",()=>{ mark(d.em,true); });
+  el.querySelector(".cp").addEventListener("click",()=>copy(ta.value));
+  el.querySelector(".chk").addEventListener("click",e=>{ e.stopPropagation(); mark(d.em,!done.has(d.em)); });
+  el.querySelector(".reset1").addEventListener("click",()=>{ delete edits[d.em+"|s"]; delete edits[d.em+"|b"]; saveEdits(); subj.value=d.defS; ta.value=d.defB; autogrow(ta); gmail.href=buildUrl(); });
+  return el;
+}
+
+function mark(em,val){
+  if(val) done.add(em); else done.delete(em); saveDone();
+  const el=document.querySelector(`.card[data-em="${CSS.escape(em)}"]`);
+  if(el) el.classList.toggle("done",val);
+  refreshCounts();
+}
+function refreshCounts(){
+  const nB=Math.ceil(DATA.length/BATCH);
+  for(let b=0;b<nB;b++){
+    const slice=DATA.slice(b*BATCH,b*BATCH+BATCH);
+    const dn=slice.filter(d=>done.has(d.em)).length;
+    const t=document.getElementById("bc"+b); if(t) t.textContent=`${dn}/${slice.length}`;
+  }
+  updateProgress();
+}
+function updateProgress(){
+  const dn=DATA.filter(d=>done.has(d.em)).length;
+  document.getElementById("pbar").style.width=(dn/DATA.length*100)+"%";
+  document.getElementById("pcount").textContent=`${dn} / ${DATA.length} verstuurd`;
+}
+function copy(text){
+  if(navigator.clipboard&&window.isSecureContext){ navigator.clipboard.writeText(text).then(()=>toast("Gekopieerd"),()=>fb(text)); } else fb(text);
+}
+function fb(text){ const ta=document.createElement("textarea"); ta.value=text; ta.style.position="fixed"; ta.style.opacity="0"; document.body.appendChild(ta); ta.select(); try{document.execCommand("copy");toast("Gekopieerd");}catch(e){} document.body.removeChild(ta); }
+let tt;
+function toast(msg){ const el=document.getElementById("toast"); el.querySelector("b").textContent=msg; el.classList.add("show"); clearTimeout(tt); tt=setTimeout(()=>el.classList.remove("show"),1400); }
+function resetDone(){ if(confirm("Alle vinkjes wissen? (je aangepaste teksten blijven staan)")){ done=new Set(); saveDone(); render(); } }
+
+render();
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+import puppeteer from 'puppeteer';
+const url = process.argv[2];
+const out = process.argv[3];
+const b = await puppeteer.launch();
+const p = await b.newPage();
+await p.setViewport({ width: 1440, height: 1000, deviceScaleFactor: 2 });
+await p.goto(url, { waitUntil: 'networkidle0' });
+await p.evaluate(async () => { await new Promise(r => { let y=0; const t=setInterval(()=>{window.scrollBy(0,600); y+=600; if(y>document.body.scrollHeight){clearInterval(t);r();}},60); }); });
+await p.evaluate(() => window.scrollTo(0,0));
+await new Promise(r=>setTimeout(r,1200));
+await p.screenshot({ path: out, fullPage: true });
+await b.close();

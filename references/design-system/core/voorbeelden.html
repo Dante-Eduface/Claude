@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Compositieregels, visueel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&family=Inter:wght@400;450;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#002333; --green:#00e075; --green-deep:#007b54;
+  --ink-900:#0a2c3b; --ink-700:#2c4a57; --ink-500:#5b7480;
+  --ink-300:#a9bcc4; --ink-200:#cdd9de; --ink-100:#e7eef0; --ink-50:#f3f7f8;
+  --white:#fff;
+  --r-sm:6px; --r-md:8px; --r-lg:10px; --r-xl:12px;
+  --s1:4px; --s2:8px; --s3:12px; --s4:16px; --s5:20px; --s6:24px; --s8:32px; --s10:40px; --s12:48px; --s16:64px;
+  --sans:"Inter",ui-sans-serif,system-ui,sans-serif;
+  --display:"League Spartan",var(--sans);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--white);color:var(--navy);font-family:var(--sans);
+  -webkit-font-smoothing:antialiased;line-height:1.6}
+.wrap{max-width:1180px;margin:0 auto;padding:0 var(--s6)}
+h1,h2,h3,h4{font-family:var(--display);margin:0;text-wrap:balance}
+p{margin:0;text-wrap:pretty}
+
+/* ---- kop ---- */
+header{padding:var(--s16) 0 var(--s12)}
+h1{font-size:52px;line-height:1.02;letter-spacing:-.02em;font-weight:700;max-width:15ch}
+header p{margin-top:var(--s5);max-width:62ch;color:var(--ink-700);font-size:18px}
+
+/* ---- secties ---- */
+section{padding:var(--s12) 0;border-top:1px solid var(--ink-100)}
+.num{font-size:13px;color:var(--ink-500);font-variant-numeric:tabular-nums;margin-bottom:var(--s2)}
+h2{font-size:28px;line-height:1.1;letter-spacing:-.015em;font-weight:600;max-width:26ch}
+section > .wrap > p.intro{margin-top:var(--s3);max-width:66ch;color:var(--ink-700)}
+
+/* ---- demo-paar ---- */
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:var(--s6);margin-top:var(--s8)}
+@media (max-width:860px){.pair{grid-template-columns:1fr}}
+.demo{border:1px solid var(--ink-200);border-radius:var(--r-xl);overflow:hidden;display:flex;flex-direction:column}
+.demo-head{display:flex;align-items:center;gap:var(--s2);padding:var(--s3) var(--s4);
+  border-bottom:1px solid var(--ink-100);font-size:13px;font-weight:600;letter-spacing:.01em}
+.bad .demo-head{color:#8a2f26}
+.good .demo-head{color:var(--green-deep)}
+.mark{width:14px;height:14px;flex:none}
+.demo-body{padding:var(--s6) var(--s5);flex:1;background:var(--white)}
+.why{margin-top:var(--s4);font-size:14px;color:var(--ink-500);max-width:64ch}
+.why b{color:var(--navy);font-weight:600}
+
+/* ---- generieke demo-onderdelen ---- */
+.lbl{font-size:12px;color:var(--ink-500);letter-spacing:.01em}
+.val{font-family:var(--display);font-size:30px;font-weight:700;letter-spacing:-.02em;line-height:1;
+  font-variant-numeric:tabular-nums}
+.det{font-size:12px;color:var(--ink-500)}
+.card{border:1px solid var(--ink-200);border-radius:var(--r-lg);padding:var(--s4)}
+.txt{font-size:14px;color:var(--ink-700)}
+
+/* 1 ritme */
+.rhythm-bad > *{margin:0 0 14px}
+.rhythm-good .grp{display:flex;flex-direction:column;gap:var(--s1)}
+.rhythm-good .grp + .grp{margin-top:var(--s6)}
+
+/* 2 gelijke vakjes */
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s3)}
+.ranked .lead{margin-bottom:var(--s5)}
+.ranked .lead .val{font-size:44px}
+.ranked .rest{display:grid;grid-template-columns:1fr 1fr;gap:var(--s4);
+  padding-top:var(--s4);border-top:1px solid var(--ink-100)}
+.ranked .rest .val{font-size:20px}
+
+/* 3 tabel */
+table{border-collapse:collapse;width:100%;font-size:13px}
+caption{text-align:left;font-size:12px;color:var(--ink-500);padding-bottom:var(--s3)}
+th,td{padding:7px 10px;border-bottom:1px solid var(--ink-100);vertical-align:baseline}
+thead th{border-bottom:1px solid var(--ink-300);font-weight:600;font-size:12px;color:var(--ink-700)}
+.numc{text-align:right;font-variant-numeric:tabular-nums}
+.wrapname{max-width:64px}
+tbody tr:last-child td,tbody tr:last-child th{border-bottom:none}
+th[scope=row]{text-align:left;font-weight:450}
+.grouphead td{background:var(--ink-50);font-weight:600;font-size:12px;color:var(--ink-700)}
+
+/* 4 staven */
+.bars-bad .row{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.bars-bad .row .n{font-size:12px;white-space:nowrap}
+.bars-bad .row .track{height:14px;background:var(--ink-100);border-radius:3px;flex:1}
+.bars-bad .row .fill{height:100%;background:var(--navy);border-radius:3px}
+.bars-bad .row .v{font-size:12px;font-variant-numeric:tabular-nums}
+
+.bars-good{display:grid;grid-template-columns:auto 1fr auto;gap:10px 12px;align-items:center}
+.bars-good .n{font-size:12px;white-space:nowrap}
+.bars-good .track{height:14px;background:var(--ink-100);border-radius:3px}
+.bars-good .fill{height:100%;background:var(--navy);border-radius:3px}
+.bars-good .v{font-size:12px;font-variant-numeric:tabular-nums;text-align:right}
+
+/* 5 as */
+.axis{display:flex;align-items:flex-end;gap:18px;height:150px;
+  border-bottom:1px solid var(--ink-300);padding-bottom:0}
+.axis .col{width:52px;display:flex;flex-direction:column;justify-content:flex-end;height:100%}
+.axis .b{background:var(--navy);border-radius:3px 3px 0 0}
+.cap{font-size:11px;color:var(--ink-500);text-align:center;margin-top:6px}
+.axisnote{font-size:11px;color:var(--ink-500);margin-top:var(--s2)}
+
+/* 8 kleur */
+.chips{display:flex;flex-wrap:wrap;gap:var(--s2)}
+.chip{font-size:12px;padding:4px 10px;border-radius:999px;font-weight:500}
+
+/* 9 nesting */
+.nest-bad{border:1px solid var(--ink-200);border-radius:var(--r-lg);padding:12px;background:var(--ink-50)}
+.nest-bad .inner{border:1px solid var(--ink-200);border-radius:var(--r-lg);padding:12px;background:var(--white)}
+.nest-bad .inner2{border:1px solid var(--ink-200);border-radius:var(--r-lg);padding:10px;background:var(--ink-50)}
+.nest-good .blk + .blk{margin-top:var(--s6)}
+
+/* 10 radius */
+.radius-demo{display:flex;gap:var(--s6);align-items:flex-start}
+.ro{background:var(--ink-100);padding:16px}
+.ri{background:var(--navy);height:64px;width:110px}
+.r-bad .ro{border-radius:20px}.r-bad .ri{border-radius:20px}
+.r-good .ro{border-radius:20px}.r-good .ri{border-radius:4px}
+.rcap{font-size:11px;color:var(--ink-500);margin-top:6px;text-align:center}
+
+/* 11 de-emphasize */
+.deemph-bad .sub{font-size:11px;color:#cfd8dc}
+.deemph-good .sub{font-size:14px;color:var(--ink-700)}
+
+/* 12 measure */
+.measure-bad p{max-width:none;font-size:14px}
+.measure-good p{max-width:60ch;font-size:14px}
+
+/* 13 legenda */
+.legend{display:flex;gap:14px;margin-bottom:10px;font-size:11px;color:var(--ink-700)}
+.legend i{width:10px;height:10px;border-radius:2px;display:inline-block;margin-right:5px}
+.lines{position:relative;height:110px;border-bottom:1px solid var(--ink-200);border-left:1px solid var(--ink-200)}
+.lines svg{display:block}
+.dl{font-size:11px;font-weight:600}
+
+/* 14 twee leessnelheden */
+.split2{display:grid;grid-template-columns:1fr;gap:var(--s5)}
+.claim{font-family:var(--display);font-size:22px;font-weight:600;line-height:1.2;letter-spacing:-.01em;max-width:30ch}
+.audit{font-size:12px;color:var(--ink-700);border-top:1px solid var(--ink-100);padding-top:var(--s3)}
+
+/* tests */
+.testbar{display:flex;gap:var(--s3);flex-wrap:wrap;margin-top:var(--s6)}
+button.t{font:inherit;font-size:13px;font-weight:500;padding:9px 16px;border-radius:var(--r-md);
+  border:1px solid var(--ink-200);background:var(--white);color:var(--navy);cursor:pointer}
+button.t:hover{border-color:var(--ink-300)}
+button.t[aria-pressed=true]{background:var(--navy);color:var(--white);border-color:var(--navy)}
+button.t:focus-visible{outline:2px solid var(--green);outline-offset:2px}
+.stage{margin-top:var(--s6);border:1px solid var(--ink-200);border-radius:var(--r-xl);padding:var(--s8) var(--s6)}
+.stage.blur{filter:blur(5px)}
+.stage.mask .m{color:transparent!important;background:currentColor;
+  -webkit-background-clip:text;background-clip:text}
+.stage.mask .m{position:relative}
+.stage.mask .m::after{content:"";position:absolute;inset:0.12em 0 0.14em;background:var(--ink-300);border-radius:2px}
+.stage.mask .m{color:transparent}
+.stage h3{font-size:30px;line-height:1.05;letter-spacing:-.02em;font-weight:700;max-width:20ch}
+.stage .sub{margin-top:var(--s3);color:var(--ink-700);max-width:56ch;font-size:15px}
+.stage .row3{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s5);margin-top:var(--s8)}
+
+footer{padding:var(--s12) 0 var(--s16);border-top:1px solid var(--ink-100);
+  color:var(--ink-500);font-size:13px}
+</style>
+</head>
+<body>
+
+<header><div class="wrap">
+  <h1>Compositieregels, maar dan zichtbaar</h1>
+  <p>Bij elke regel uit <code>core/compositie.md</code> en <code>core/regels.md</code> staat links wat er misgaat en rechts wat de regel oplost. Het verschil is meestal klein om te benoemen en groot om te zien.</p>
+</div></header>
+
+<!-- 1 -->
+<section><div class="wrap">
+  <p class="num">01</p>
+  <h2>Geef elke witruimte één eigenaar</h2>
+  <p class="intro">Eén uniforme afstand tussen alles maakt alles even belangrijk. Ruimte is het middel waarmee je zegt wat bij elkaar hoort.</p>
+  <div class="pair">
+    <div class="demo bad"><div class="demo-head"><svg class="mark" viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="2" fill="none"/></svg>Overal 14px</div>
+      <div class="demo-body"><div class="rhythm-bad">
+        <p class="lbl">Actieve pilots</p><p class="val">4</p><p class="det">Stand per 1 augustus</p>
+        <p class="lbl">Beoordeelde opdrachten</p><p class="val">12.480</p><p class="det">Sinds september</p>
+      </div></div></div>
+    <div class="demo good"><div class="demo-head"><svg class="mark" viewBox="0 0 16 16"><path d="M3 8.5l3.5 3.5L13 5" stroke="currentColor" stroke-width="2" fill="none"/></svg>Binnen de groep dicht, tussen groepen ruim</div>
+      <div class="demo-body"><div class="rhythm-good">
+        <div class="grp"><p class="lbl">Actieve pilots</p><p class="val">4</p><p class="det">Stand per 1 augustus</p></div>
+        <div class="grp"><p class="lbl">Beoordeelde opdrachten</p><p class="val">12.480</p><p class="det">Sinds september</p></div>
+      </div></div></div>
+  </div>
+  <p class="why"><b>Wat je ziet:</b> links zweven zes losse regels, je moet zelf uitzoeken wat bij wat hoort. Rechts zijn het twee dingen. Er is niets toegevoegd, alleen de afstand verdeeld.</p>
+</div></section>
+
+<!-- 2 -->
+<section><div class="wrap">
+  <p class="num">02</p>
+  <h2>Dwing ongelijke bevindingen niet in gelijke vakjes</h2>
+  <p class="intro">Drie even grote kaartjes zeggen: deze drie zijn even belangrijk. Als dat niet zo is, liegt de vorm.</p>
+  <div class="pair">
+    <div class="demo bad"><div class="demo-head"><svg class="mark" viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="2" fill="none"/></svg>Drie gelijke kaartjes</div>
+      <div class="demo-body"><div class="three">
+        <div class="card"><p class="lbl">Tijdwinst</p><p class="val" style="font-size:22px">62%</p></div>
+        <div class="card"><p class="lbl">Docenten</p><p class="val" style="font-size:22px">18</p></div>
+        <div class="card"><p class="lbl">Vakken</p><p class="val" style="font-size:22px">3</p></div>
+      </div></div></div>
+    <div class="demo good"><div class="demo-head"><svg class="mark" viewBox="0 0 16 16"><path d="M3 8.5l3.5 3.5L13 5" stroke="currentColor" stroke-width="2" fill="none"/></svg>Beslissend cijfer voorop</div>
+      <div class="demo-body"><div class="ranked">
+        <div class="lead"><p class="lbl">Tijdwinst op nakijken</p><p class="val">62%</p><p class="det">Gemeten over 3 vakken, blok 2</p></div>
+        <div class="rest">
+          <div><p class="lbl">Docenten</p><p class="val">18</p></div>
+          <div><p class="lbl">Vakken</p><p class="val">3</p></div>
+        </div>
+      </div></div></div>
+  </div>
+  <p class="why"><b>Wat je ziet:</b> links weet je niet waar je moet kijken. Rechts is het antwoord de tijdwinst en zijn de andere twee de context daarbij. De vorm volgt het argument.</p>
+</div></section>
+
+<!-- 3 -->
+<section><div class="wrap">
+  <p class="num">03</p>
+  <h2>Kolomkop krijgt dezelfde uitlijning als zijn cellen</h2>
+  <p class="intro">Dit gaat bijna altijd mis en het is de snelste manier om een tabel amateuristisch te laten ogen. Plus: verspil geen kolom aan dezelfde categorie voor een reeks rijen.</p>
+  <div class="pair">
+    <div class="demo bad"><div class="demo-head"><svg class="mark" viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="2" fill="none"/></svg>Koppen links, getallen rechts</div>
+      <div class="demo-body"><table>
+        <caption>Nagekeken opdrachten per opleiding</caption>
+        <thead><tr><th>Faculteit</th><th class="wrapname">Opleiding</th><th>Opdrachten</th><th>Docenten</th></tr></thead>
+        <tbody>
+          <tr><td>Economie</td><th scope="row">Bedrijfskunde</th><td class="numc">4.120</td><td class="numc">7</td></tr>
+          <tr><td>Economie</td><th scope="row">Finance</th><td class="numc">980</td><td class="numc">3</td></tr>
+          <tr><td>Zorg</td><th scope="row">Verpleegkunde</th><td class="numc">6.310</td><td class="numc">11</td></tr>
+        </tbody>
+      </table></div></div>
+    <div class="demo good"><div class="demo-head"><svg class="mark" viewBox="0 0 16 16"><path d="M3 8.5l3.5 3.5L13 5" stroke="currentColor" stroke-width="2" fill="none"/></svg>Koppen volgen de cellen, categorie gegroepeerd</div>
+      <div class="demo-body"><table>
+        <caption>Nagekeken opdrachten per opleiding</caption>
+        <thead><tr><th>Opleiding</th><th class="numc">Opdrachten</th><th class="numc">Docenten</th></tr></thead>
+        <tbody>
+          <tr class="grouphead"><td colspan="3">Economie</td></tr>
+          <tr><th scope="row">Bedrijfskunde</th><td class="numc">4.120</td><td class="numc">7</td></tr>
+          <tr><th scope="row">Finance</th><td class="numc">980</td><td class="numc">3</td></tr>
+          <tr class="grouphead"><td colspan="3">Zorg</td></tr>
+          <tr><th scope="row">Verpleegkunde</th><td class="numc">6.310</td><td class="numc">11</td></tr>
+        </tbody>
+      </table></div></div>
+  </div>
+  <p class="why"><b>Wat je ziet:</b> links dwalen je ogen omdat kop en getal niet op dezelfde lijn beginnen, en staat "Economie" er twee keer voor niets. Rechts scan je één rechterrand naar beneden.</p>
+</div></section>
+
+<!-- 4 -->
+<section><div class="wrap">
+  <p class="num">04</p>
+  <h2>Staven delen één raster, niet per rij</h2>
+  <p class="intro">Als je elke rij los opmaakt, bepaalt de lengte van het label waar de staaf begint. Dan encodeert de staaflengte niet meer de waarde.</p>
+  <div class="pair">
+    <div class="demo bad"><div class="demo-head"><svg class="mark" viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="2" fill="none"/></svg>Elke rij eigen breedte</div>
+      <div class="demo-body"><div class="bars-bad">
+        <div class="row"><span class="n">Bedrijfskunde</span><span class="track"><span class="fill" style="width:66%"></span></span><span class="v">4.120</span></div>
+        <div class="row"><span class="n">Finance</span><span class="track"><span class="fill" style="width:16%"></span></span><span class="v">980</span></div>
+        <div class="row"><span class="n">Verpleegkunde deeltijd</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="v">6.310</span></div>
+      </div></div></div>
+    <div class="demo good"><div class="demo-head"><svg class="mark" viewBox="0 0 16 16"><path d="M3 8.5l3.5 3.5L13 5" stroke="currentColor" stroke-width="2" fill="none"/></svg>Labelbaan, plotbaan, waardebaan</div>
+      <div class="demo-body"><div class="bars-good">
+        <span class="n">Bedrijfskunde</span><span class="track"><span class="fill" style="width:65%"></span></span><span class="v">4.120</span>
+        <span class="n">Finance</span><span class="track"><span class="fill" style="width:16%"></span></span><span class="v">980</span>
+        <span class="n">Verpleegkunde deeltijd</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="v">6.310</span>
+      </div></div></div>
+  </div>
+  <p class="why"><b>Wat je ziet:</b> links beginnen en eindigen de staven op verschillende plekken, dus je kunt ze niet vergelijken zonder de getallen te lezen. Dan had je net zo goed alleen een tabel kunnen maken.</p>
+</div></section>
+
+<!-- 5 -->
+<section><div class="wrap">
+  <p class="num">05</p>
+  <h2>Nulpunt als basis, tenzij je expliciet een verschil toont</h2>
+  <p class="intro">Een afgesneden as maakt van een verschil van 4% een verschil dat eruitziet als een factor drie.</p>
+  <div class="pair">
+    <div class="demo bad"><div class="demo-head"><svg class="mark" viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="2" fill="none"/></svg>As begint bij 84%</div>
+      <div class="demo-body">
+        <div class="axis">
+          <div class="col"><div class="b" style="height:22%"></div></div>
+          <div class="col"><div class="b" style="height:58%"></div></div>
+          <div class="col"><div class="b" style="height:100%"></div></div>
+        </div>
+        <div style="display:flex;gap:18px"><span class="cap" style="width:52px">86%</span><span class="cap" style="width:52px">88%</span><span class="cap" style="width:52px">90%</span></div>
+        <p class="axisnote">Slagingspercentage per blok</p>
+      </div></div>
+    <div class="demo good"><div class="demo-head"><svg class="mark" viewBox="0 0 16 16"><path d="M3 8.5l3.5 3.5L13 5" stroke="currentColor" stroke-width="2" fill="none"/></svg>As begint bij 0</div>
+      <div class="demo-body">
+        <div class="axis">
+          <div class="col"><div class="b" style="height:86%"></div></div>
+          <div class="col"><div class="b" style="height:88%"></div></div>
+          <div class="col"><div class="b" style="height:90%"></div></div>
+        </div>
+        <div style="display:flex;gap:18px"><span class="cap" style="width:52px">86%</span><span class="cap" style="width:52px">88%</span><span class="cap" style="width:52px">90%</span></div>
+        <p class="axisnote">Slagingspercentage per blok. Verschil blok 1 naar 3: 4 procentpunt.</p>
+      </div></div>
+  </div>
+  <p class="why"><b>Wat je ziet:</b> dezelfde drie getallen. Links lijkt het een doorbraak, rechts een lichte stijging. Wil je het kleine verschil laten zien, toon dan het verschil zelf en zeg erbij dat je dat doet.</p>
+</div></section>
+
+<!-- 6 -->
+<section><div class="wrap">
+  <p class="num">06</p>
+  <h2>Let op de noemer</h2>
+  <p class="intro">Ruwe aantallen naast elkaar zetten alsof de bases gelijk zijn is de meest voorkomende stille fout in salesmateriaal.</p>
+  <div class="pair">
+    <div class="demo bad"><div class="demo-head"><svg class="mark" viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="2" fill="none"/></svg>Alleen aantallen</div>
+      <div class="demo-body"><div class="bars-good">
+        <span class="n">Hogeschool A</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="v">480</span>
+        <span class="n">Hogeschool B</span><span class="track"><span class="fill" style="width:25%"></span></span><span class="v">120</span>
+      </div>
+      <p class="axisnote">Herkansingen per instelling</p></div></div>
+    <div class="demo good"><div class="demo-head"><svg class="mark" viewBox="0 0 16 16"><path d="M3 8.5l3.5 3.5L13 5" stroke="currentColor" stroke-width="2" fill="none"/></svg>Percentage, met aantal en basis erbij</div>
+      <div class="demo-body"><div class="bars-good">
+        <span class="n">Hogeschool A</span><span class="track"><span class="fill" style="width:40%"></span></span><span class="v">8%</span>
+        <span class="n">Hogeschool B</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="v">20%</span>
+      </div>
+      <p class="axisnote">Herkansingen als aandeel van alle inzendingen. A: 480 van 6.000. B: 120 van 600.</p></div></div>
+  </div>
+  <p class="why"><b>Wat je ziet:</b> links lijkt A vier keer zo'n groot probleem te hebben. Rechts blijkt B het probleem te hebben. Zelfde data, tegengestelde conclusie.</p>
+</div></section>
+
+<!-- 7 -->
+<section><div class="wrap">
+  <p class="num">07</p>
+  <h2>Kleur draagt betekenis of hoort er niet</h2>
+  <p class="intro">Zodra alles een kleur heeft, betekent geen enkele kleur nog iets. Groen is bij ons de primaire actie en nadruk, geen decoratie.</p>
+  <div class="pair">
+    <div class="demo bad"><div class="demo-head"><svg class="mark" viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="2" fill="none"/></svg>Alles gekleurd</div>
+      <div class="demo-body"><div class="chips">
+        <span class="chip" style="background:#e8fff4;color:#007b54">Pilot</span>
+        <span class="chip" style="background:#fff4e5;color:#b26a00">Blok 2</span>
+        <span class="chip" style="background:#e9f0ff;color:#2b4fa8">18 docenten</span>
+        <span class="chip" style="background:#ffeaea;color:#b3261e">3 vakken</span>
+        <span class="chip" style="background:#f3e8ff;color:#6b3fa0">Nederlands</span>
+      </div>
+      <p class="txt" style="margin-top:16px">Vijf kleuren, vijf keer niks. De lezer zoekt naar het systeem en vindt het niet.</p>
+      </div></div>
+    <div class="demo good"><div class="demo-head"><svg class="mark" viewBox="0 0 16 16"><path d="M3 8.5l3.5 3.5L13 5" stroke="currentColor" stroke-width="2" fill="none"/></svg>Kleur alleen op de status</div>
+      <div class="demo-body">
+        <p class="txt" style="margin-bottom:14px">Pilot, blok 2, 18 docenten, 3 vakken, Nederlands.</p>
+        <span class="chip" style="background:#e8fff4;color:#007b54;border:1px solid #b6f0d5">&#10003; Loopt op schema</span>
+        <p class="txt" style="margin-top:16px">Eén kleur, en die betekent iets. Met een vinkje erbij, zodat het ook zonder kleur werkt.</p>
+      </div></div>
+  </div>
+  <p class="why"><b>Wat je ziet:</b> gewone metadata hoort in gewone tekst. Een badge is voor iets dat afwijkt van normaal.</p>
+</div></section>
+
+<!-- 8 -->
+<section><div class="wrap">
+  <p class="num">08</p>
+  <h2>Geen kaartjes in kaartjes</h2>
+  <p class="intro">Randen worden vaak gebruikt om zwakke hiërarchie te repareren. Dat werkt niet, het stapelt alleen ruis.</p>
+  <div class="pair">
+    <div class="demo bad"><div class="demo-head"><svg class="mark" viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="2" fill="none"/></svg>Drie randen om dezelfde inhoud</div>
+      <div class="demo-body"><div class="nest-bad">
+        <div class="inner">
+          <p class="lbl" style="margin-bottom:8px">Resultaat blok 2</p>
+          <div class="inner2"><p class="val" style="font-size:24px">62%</p><p class="det">minder nakijktijd</p></div>
+        </div>
+      </div></div></div>
+    <div class="demo good"><div class="demo-head"><svg class="mark" viewBox="0 0 16 16"><path d="M3 8.5l3.5 3.5L13 5" stroke="currentColor" stroke-width="2" fill="none"/></svg>Ruimte in plaats van randen</div>
+      <div class="demo-body"><div class="nest-good">
+        <div class="blk"><p class="lbl">Resultaat blok 2</p></div>
+        <div class="blk"><p class="val">62%</p><p class="det" style="margin-top:4px">minder nakijktijd</p></div>
+      </div></div></div>
+  </div>
+  <p class="why"><b>Wat je ziet:</b> rechts is niets weggehaald behalve de randen. De hiërarchie is duidelijker omdat typografie en ruimte hem nu dragen.</p>
+</div></section>
+
+<!-- 9 -->
+<section><div class="wrap">
+  <p class="num">09</p>
+  <h2>Geneste hoeken: binnen is buiten min de tussenruimte</h2>
+  <p class="intro">Dit is een van die dingen die je niet kunt aanwijzen maar wel ziet. De bogen lopen niet parallel en het voelt slordig.</p>
+  <div class="pair">
+    <div class="demo bad"><div class="demo-head"><svg class="mark" viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="2" fill="none"/></svg>Binnen en buiten allebei 20px</div>
+      <div class="demo-body r-bad"><div class="radius-demo"><div><div class="ro"><div class="ri"></div></div><p class="rcap">buiten 20, binnen 20</p></div></div></div></div>
+    <div class="demo good"><div class="demo-head"><svg class="mark" viewBox="0 0 16 16"><path d="M3 8.5l3.5 3.5L13 5" stroke="currentColor" stroke-width="2" fill="none"/></svg>20 min 16 padding = 4px</div>
+      <div class="demo-body r-good"><div class="radius-demo"><div><div class="ro"><div class="ri"></div></div><p class="rcap">buiten 20, binnen 4</p></div></div></div></div>
+  </div>
+  <p class="why"><b>Wat je ziet:</b> links wordt de tussenruimte in de hoek dikker dan aan de zijkanten. Rechts blijft hij overal gelijk. Formule: <code>binnen = buiten &minus; tussenruimte</code>.</p>
+</div></section>
+
+<!-- 10 -->
+<section><div class="wrap">
+  <p class="num">10</p>
+  <h2>Verlaag nooit het contrast om iets minder nadruk te geven</h2>
+  <p class="intro">Gebruik grootte, gewicht of ruimte. Lichtgrijze minitekst is geen ondergeschiktheid, het is onleesbaarheid.</p>
+  <div class="pair">
+    <div class="demo bad"><div class="demo-head"><svg class="mark" viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="2" fill="none"/></svg>11px lichtgrijs</div>
+      <div class="demo-body deemph-bad">
+        <p class="val" style="font-size:26px">12.480</p>
+        <p class="sub" style="margin-top:6px">Beoordeelde opdrachten sinds september 2025, over drie opleidingen</p>
+      </div></div>
+    <div class="demo good"><div class="demo-head"><svg class="mark" viewBox="0 0 16 16"><path d="M3 8.5l3.5 3.5L13 5" stroke="currentColor" stroke-width="2" fill="none"/></svg>Kleiner in schaal, wel leesbaar</div>
+      <div class="demo-body deemph-good">
+        <p class="val" style="font-size:26px">12.480</p>
+        <p class="sub" style="margin-top:6px">Beoordeelde opdrachten sinds september 2025, over drie opleidingen</p>
+      </div></div>
+  </div>
+  <p class="why"><b>Wat je ziet:</b> rechts is de tekst nog steeds duidelijk ondergeschikt aan het getal, maar wel te lezen. Het contrastverschil doet het werk niet, het formaatverschil wel.</p>
+</div></section>
+
+<!-- 11 -->
+<section><div class="wrap">
+  <p class="num">11</p>
+  <h2>Regellengte 45 tot 90 tekens</h2>
+  <p class="intro">Bij te lange regels raakt je oog de volgende regel kwijt bij het terugspringen.</p>
+  <div class="pair">
+    <div class="demo bad"><div class="demo-head"><svg class="mark" viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="2" fill="none"/></svg>Volle breedte</div>
+      <div class="demo-body measure-bad"><p class="txt">Eduface geeft studenten snelle formatieve feedback op schrijfopdrachten en automatiseert het nakijkwerk voor docenten. Bij lange trajecten zien we vooral uitval terugdringen, bij korte modules is de winst vooral werkdrukverlaging bij de beoordelaars.</p></div></div>
+    <div class="demo good"><div class="demo-head"><svg class="mark" viewBox="0 0 16 16"><path d="M3 8.5l3.5 3.5L13 5" stroke="currentColor" stroke-width="2" fill="none"/></svg>Maximaal 60 tekens</div>
+      <div class="demo-body measure-good"><p class="txt">Eduface geeft studenten snelle formatieve feedback op schrijfopdrachten en automatiseert het nakijkwerk voor docenten. Bij lange trajecten zien we vooral uitval terugdringen, bij korte modules is de winst vooral werkdrukverlaging bij de beoordelaars.</p></div></div>
+  </div>
+  <p class="why"><b>Wat je ziet:</b> rechts leest merkbaar rustiger, terwijl de tekst identiek is. Dit is de reden dat een tekstkolom nooit de volle paginabreedte krijgt.</p>
+</div></section>
+
+<!-- 12 -->
+<section><div class="wrap">
+  <p class="num">12</p>
+  <h2>Directe labels boven een legenda</h2>
+  <p class="intro">Een legenda dwingt de lezer heen en weer te kijken en kleur te onthouden. Zet het label bij de lijn.</p>
+  <div class="pair">
+    <div class="demo bad"><div class="demo-head"><svg class="mark" viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="2" fill="none"/></svg>Legenda bovenaan</div>
+      <div class="demo-body">
+        <div class="legend"><span><i style="background:#002333"></i>Met Eduface</span><span><i style="background:#a9bcc4"></i>Zonder</span></div>
+        <svg viewBox="0 0 260 110" width="100%" height="110" aria-hidden="true">
+          <polyline points="10,90 70,74 130,52 190,34 250,22" fill="none" stroke="#002333" stroke-width="2"/>
+          <polyline points="10,92 70,88 130,84 190,82 250,79" fill="none" stroke="#a9bcc4" stroke-width="2"/>
+        </svg>
+      </div></div>
+    <div class="demo good"><div class="demo-head"><svg class="mark" viewBox="0 0 16 16"><path d="M3 8.5l3.5 3.5L13 5" stroke="currentColor" stroke-width="2" fill="none"/></svg>Label aan het einde van de lijn</div>
+      <div class="demo-body">
+        <div class="legend" style="visibility:hidden">&nbsp;</div>
+        <svg viewBox="0 0 260 110" width="100%" height="110">
+          <polyline points="10,90 60,74 110,52 160,34 200,22" fill="none" stroke="#002333" stroke-width="2"/>
+          <polyline points="10,92 60,88 110,84 160,82 200,79" fill="none" stroke="#a9bcc4" stroke-width="2"/>
+          <text x="206" y="24" class="dl" fill="#002333" font-size="10" font-family="Inter">Met Eduface</text>
+          <text x="206" y="82" class="dl" fill="#5b7480" font-size="10" font-family="Inter">Zonder</text>
+        </svg>
+      </div></div>
+  </div>
+  <p class="why"><b>Wat je ziet:</b> rechts lees je de grafiek in één beweging. Je hoeft geen kleurcode te onthouden.</p>
+</div></section>
+
+<!-- 13 -->
+<section><div class="wrap">
+  <p class="num">13</p>
+  <h2>Twee leessnelheden</h2>
+  <p class="intro">De directeur leest het besluitpad, de kwaliteitsmedewerker rekent het naslagpad na. Meng je ze, dan verlies je allebei.</p>
+  <div class="pair">
+    <div class="demo bad"><div class="demo-head"><svg class="mark" viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="2" fill="none"/></svg>Door elkaar</div>
+      <div class="demo-body">
+        <p class="txt">In blok 2 is over de drie deelnemende opleidingen (n=18 docenten, 12.480 inzendingen, meetperiode 4 september tot 19 december 2025, exclusief herkansingen) een reductie in nakijktijd gemeten van 62% ten opzichte van de zelfgerapporteerde baseline uit blok 1, waarbij de spreiding tussen opleidingen 48% tot 71% bedroeg.</p>
+      </div></div>
+    <div class="demo good"><div class="demo-head"><svg class="mark" viewBox="0 0 16 16"><path d="M3 8.5l3.5 3.5L13 5" stroke="currentColor" stroke-width="2" fill="none"/></svg>Besluit boven, naslag onder</div>
+      <div class="demo-body"><div class="split2">
+        <p class="claim">Docenten waren 62% minder tijd kwijt aan nakijken.</p>
+        <div class="audit">
+          <p style="margin-bottom:6px">18 docenten, 3 opleidingen, 12.480 inzendingen.</p>
+          <p style="margin-bottom:6px">4 september tot 19 december 2025, herkansingen niet meegeteld.</p>
+          <p>Spreiding tussen opleidingen: 48% tot 71%. Basislijn is zelfgerapporteerd uit blok 1.</p>
+        </div>
+      </div></div></div>
+  </div>
+  <p class="why"><b>Wat je ziet:</b> rechts staat exact dezelfde informatie, inclusief elk voorbehoud. Alleen kan de een na één zin stoppen en de ander doorlezen. Niets is weggelaten of afgezwakt.</p>
+</div></section>
+
+<!-- 14 tests -->
+<section><div class="wrap">
+  <p class="num">14</p>
+  <h2>De twee gratis controles</h2>
+  <p class="intro">Zet ze aan op de voorbeeldsectie hieronder. Squint: is de dominante claim nog te zien? Tekstmasker: communiceert de hiërarchie nog zonder woorden?</p>
+  <div class="testbar">
+    <button class="t" id="b1" aria-pressed="false">Squint-test</button>
+    <button class="t" id="b2" aria-pressed="false">Tekstmasker-test</button>
+    <button class="t" id="b3" aria-pressed="false">Maak alles even zwaar</button>
+  </div>
+  <div class="stage" id="stage">
+    <p class="lbl m" id="e1">Pilot Hogeschool Rotterdam, blok 2</p>
+    <h3 class="m" id="e2" style="margin-top:10px">Docenten waren 62% minder tijd kwijt aan nakijken.</h3>
+    <p class="sub m" id="e3">Gemeten over drie opleidingen en 12.480 inzendingen, tussen september en december 2025.</p>
+    <div class="row3">
+      <div><p class="lbl m">Docenten</p><p class="val m" style="font-size:24px">18</p></div>
+      <div><p class="lbl m">Opleidingen</p><p class="val m" style="font-size:24px">3</p></div>
+      <div><p class="lbl m">Inzendingen</p><p class="val m" style="font-size:24px">12.480</p></div>
+    </div>
+  </div>
+  <p class="why"><b>Wat je ziet:</b> met de squint-test blijft de kop het zwaarste blok, dus het leespad klopt. Zet je "maak alles even zwaar" aan, dan valt de hiërarchie weg en heeft geen enkel element nog voorrang. Dat is precies wat er gebeurt als elk blok evenveel gewicht krijgt.</p>
+</div></section>
+
+<footer><div class="wrap">
+  Hoort bij <code>references/design-system/core/compositie.md</code> en <code>core/regels.md</code>. Alle cijfers in de voorbeelden zijn verzonnen ter illustratie.
+</div></footer>
+
+<script>
+var stage=document.getElementById('stage');
+function toggle(btn,fn){btn.addEventListener('click',function(){
+  var on=btn.getAttribute('aria-pressed')==='true';
+  btn.setAttribute('aria-pressed',String(!on));fn(!on);});}
+toggle(document.getElementById('b1'),function(on){stage.classList.toggle('blur',on);});
+toggle(document.getElementById('b2'),function(on){stage.classList.toggle('mask',on);});
+toggle(document.getElementById('b3'),function(on){
+  var h=document.getElementById('e2'),s=document.getElementById('e3'),l=document.getElementById('e1');
+  var vals=stage.querySelectorAll('.val');
+  if(on){h.style.fontSize='15px';h.style.fontWeight='400';h.style.fontFamily='Inter';
+    s.style.fontSize='15px';l.style.fontSize='15px';l.style.color='#002333';
+    vals.forEach(function(v){v.style.fontSize='15px';v.style.fontWeight='400';v.style.fontFamily='Inter';});}
+  else{h.style.cssText='margin-top:10px';s.style.cssText='';l.style.cssText='';
+    vals.forEach(function(v){v.style.cssText='font-size:24px';});}
+});
+</script>
+</body>
+</html>

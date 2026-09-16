@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<title>Capabel — volledig organogram (Eduface deal)</title>
+<style>
+  @page{size:A4 landscape;margin:9mm;}
+  :root{
+    --navy:#0f2a3f; --green:#1fb98a; --ink:#12303f; --muted:#7a8a91;
+    --bg:#f3f7f8; --line:#c9d7d9; --amber:#b8860b; --grey:#9aa7ad;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;}
+  body{background:var(--bg);color:var(--ink);padding:20px 24px;}
+  h1{font-size:21px;color:var(--navy);font-weight:800;}
+  .sub{color:var(--muted);font-size:12px;margin-top:3px;margin-bottom:10px;max-width:940px;line-height:1.4;}
+  .brand{float:right;display:flex;align-items:center;gap:7px;font-weight:800;color:var(--navy);font-size:15px;}
+  .brand .dot{width:12px;height:12px;border-radius:50%;background:var(--green);}
+  .legend{display:flex;gap:14px;flex-wrap:wrap;font-size:10.5px;color:var(--muted);margin-bottom:14px;align-items:center;}
+  .legend span{display:inline-flex;align-items:center;gap:6px;}
+  .sw{width:11px;height:11px;border-radius:3px;display:inline-block;}
+  .sw.eb{background:var(--navy);} .sw.champ{background:var(--amber);}
+  .sw.coach{background:var(--green);} .sw.neu{background:var(--grey);}
+  .sw.unk{background:#fff;border:2px dashed var(--amber);}
+
+  .chart{display:flex;flex-direction:column;align-items:center;gap:0;}
+  .tier{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;break-inside:avoid;page-break-inside:avoid;}
+  .conn{width:2px;height:16px;background:var(--line);}
+  .conn.spine{background:var(--green);width:3px;}
+
+  .card{display:flex;flex-direction:column;break-inside:avoid;page-break-inside:avoid;
+    background:#fff;border:1px solid #e4ebec;border-radius:13px;padding:10px 13px;
+    box-shadow:0 3px 12px rgba(16,40,60,.07);min-width:232px;max-width:260px;border-left:5px solid var(--grey);}
+  .card.eb{border-left-color:var(--navy);}
+  .card.champ{border-left-color:var(--amber);}
+  .card.coach{border-left-color:var(--green);}
+  .card.spine{box-shadow:0 4px 16px rgba(15,42,63,.16);}
+  .top{display:flex;gap:9px;align-items:center;}
+  .av{width:38px;height:38px;border-radius:50%;flex:none;background:var(--navy);
+      display:inline-flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:12px;}
+  .av.g{background:#e6f6f0;color:#0d7a5b;} .av.n{background:#eef2f4;color:#5a6b73;} .av.a{background:#f6efd9;color:#8a680a;}
+  .head .nm{font-weight:800;font-size:12.5px;color:var(--navy);line-height:1.12;}
+  .head .rl{font-size:10px;color:var(--muted);margin-top:2px;line-height:1.2;}
+  .body{margin-top:7px;}
+  .tags{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:4px;}
+  .pill{font-size:8.5px;font-weight:700;letter-spacing:.3px;text-transform:uppercase;padding:2px 6px;border-radius:11px;}
+  .p-eb{background:var(--navy);color:#fff;} .p-champ{background:#f6efd9;color:#8a680a;}
+  .p-coach{background:#e6f6f0;color:#0d7a5b;} .p-neu{background:#eef2f4;color:#6b7a80;}
+  .p-conf{background:#e6f6f0;color:#0d7a5b;} .p-inf{background:#f3ece0;color:#9c6a12;}
+  .hot{font-size:9px;color:#6b7a80;line-height:1.35;}
+  .hot a{color:#067a43;text-decoration:none;}
+
+  .tierlabel{font-size:10px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--navy);
+    background:#e2edee;padding:3px 11px;border-radius:6px;margin:12px 0 9px;}
+
+  /* coördinator layer */
+  .branches{display:flex;gap:11px;flex-wrap:wrap;justify-content:center;max-width:1180px;}
+  .branch{border:1px solid #dfe8e9;border-radius:12px;padding:9px 10px 10px;background:#fbfdfd;min-width:172px;max-width:200px;break-inside:avoid;page-break-inside:avoid;}
+  .branch.deal{border-color:var(--green);background:#f2fbf7;box-shadow:0 3px 12px rgba(31,185,138,.13);}
+  .bh{font-size:10px;font-weight:800;color:var(--navy);text-transform:uppercase;letter-spacing:.3px;margin-bottom:7px;line-height:1.2;}
+  .cc{background:#fff;border:1px solid #e7eded;border-left:4px solid var(--grey);border-radius:8px;padding:6px 8px;margin-bottom:6px;break-inside:avoid;}
+  .cc:last-child{margin-bottom:0;}
+  .cc.coach{border-left-color:var(--green);} .cc.deal{border-left-color:var(--green);background:#f2fbf7;}
+  .cc.unk{border-left:4px dashed var(--amber);background:#fdfaf3;}
+  .cc .cn{font-weight:700;font-size:11px;color:var(--navy);line-height:1.15;}
+  .cc .co{font-size:9px;color:var(--muted);margin-top:1px;line-height:1.25;}
+  .cc .ct{display:inline-block;margin-top:3px;font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.3px;padding:1px 5px;border-radius:9px;}
+  .ct.deal{background:#0d7a5b;color:#fff;} .ct.tc{background:#f3ece0;color:#9c6a12;} .ct.unk{background:#fbf1dd;color:#9c6a12;}
+
+  .context{margin-top:16px;background:#fff;border:1px dashed var(--line);border-radius:12px;padding:11px 15px;max-width:1180px;break-inside:avoid;}
+  .context h3{font-size:10px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-bottom:7px;}
+  .clist{display:flex;gap:8px;flex-wrap:wrap;}
+  .cnode{font-size:9.5px;color:var(--ink);background:var(--bg);border:1px solid #e4ebec;border-radius:8px;padding:5px 9px;line-height:1.25;}
+  .cnode b{color:var(--navy);}
+
+  .nuance{margin-top:14px;background:#fff;border:1px solid #e4ebec;border-left:5px solid var(--navy);border-radius:12px;padding:12px 16px;max-width:1180px;break-inside:avoid;}
+  .nuance h3{font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--navy);margin-bottom:8px;}
+  .nuance ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:5px 22px;}
+  .nuance li{font-size:10px;color:var(--ink);line-height:1.4;padding-left:12px;position:relative;}
+  .nuance li:before{content:"–";position:absolute;left:0;color:var(--green);font-weight:700;}
+  .nuance li b{color:var(--navy);}
+  .foot{margin-top:12px;font-size:9.5px;color:var(--muted);max-width:1180px;line-height:1.5;}
+</style>
+</head>
+<body>
+  <div class="brand"><span class="dot"></span>Eduface</div>
+  <h1>Capabel — volledig organogram</h1>
+  <div class="sub">Capabel Hogeschool onder Calder Holding. Groene lijn = deal-lijn richting <b>uitrol</b> (niet pilot). Randkleur = deal-rol. Gestreept/oranje = ingeschat of onbekend, zelf checken. Foto's ontbreken (LinkedIn blokkeert), dus initialen.</div>
+
+  <div class="legend">
+    <span><span class="sw eb"></span> Economic Buyer (uitrol)</span>
+    <span><span class="sw champ"></span> Champion</span>
+    <span><span class="sw coach"></span> Coach / gebruiker / deal-cluster</span>
+    <span><span class="sw neu"></span> Context, niet in deal-lijn</span>
+    <span><span class="sw unk"></span> Onbekend / te verifiëren</span>
+  </div>
+
+  <div class="chart">
+
+    <div class="tier">
+      <div class="card">
+        <div class="top"><div class="av n">ML</div><div class="head"><div class="nm">Marcel Lekkerkerker</div><div class="rl">Directeur Calder Holding</div></div></div>
+        <div class="body"><div class="tags"><span class="pill p-neu">Holding</span></div>
+          <div class="hot">Sociale onderneming (~800 mdw, onderwijs/zorg/werk). Eigenaar = Naumann Group (geen PE-druk). Te ver van de deal. <a href="https://www.calderholding.nl/">bron</a></div></div>
+      </div>
+    </div>
+    <div class="conn spine"></div>
+
+    <div class="tier">
+      <div class="card eb spine">
+        <div class="top"><div class="av">BB</div><div class="head"><div class="nm">Barbara van Beek</div><div class="rl">Directeur Capabel Onderwijs Groep</div></div></div>
+        <div class="body"><div class="tags"><span class="pill p-eb">EB uitrol · hoogste budget</span><span class="pill p-inf">ingeschat boven Vivian</span></div>
+          <div class="hot">Directeur hele groep (sinds 2018) + SBK. Budgethouder groep-brede uitrol. <a href="https://nl.linkedin.com/in/barbaravanbeek">bron</a></div></div>
+      </div>
+    </div>
+    <div class="conn spine"></div>
+
+    <div class="tier">
+      <div class="card eb spine">
+        <div class="top"><div class="av">VL</div><div class="head"><div class="nm">Vivian Liebregts</div><div class="rl">Algemeen Directeur Capabel Hogeschool</div></div></div>
+        <div class="body"><div class="tags"><span class="pill p-eb">EB uitrol · primair</span><span class="pill p-conf">geverifieerd</span></div>
+          <div class="hot">Leidt de hogeschool = niveau met budget voor hbo-brede uitrol. Zelf ex-coördinator Social Work. <a href="https://nl.linkedin.com/in/vivian-liebregts-77031211b">bron</a></div></div>
+      </div>
+      <div class="card">
+        <div class="top"><div class="av n">GB</div><div class="head"><div class="nm">Godert van Buren</div><div class="rl">Bevoegd gezag / directeur mbo</div></div></div>
+        <div class="body"><div class="tags"><span class="pill p-neu">mbo-lijn</span></div>
+          <div class="hot">Directeur mbo-groep + vz examencommissie. Aparte lijn, niet Kariens hbo. <a href="https://publicaties.nvao.net/">NVAO</a></div></div>
+      </div>
+      <div class="card">
+        <div class="top"><div class="av n">SZ</div><div class="head"><div class="nm">Sanne van Zeijl</div><div class="rl">Directeur Capabel PRO</div></div></div>
+        <div class="body"><div class="tags"><span class="pill p-neu">Andere tak</span></div>
+          <div class="hot">Zustertak afstandsonderwijs. Groep-context, niet de deal. <a href="https://www.linkedin.com/in/sanne-van-zeijl-22a288b2/">bron</a></div></div>
+      </div>
+    </div>
+    <div class="conn spine"></div>
+
+    <div class="tier">
+      <div class="card champ spine">
+        <div class="top"><div class="av a">KD</div><div class="head"><div class="nm">Karien van Dijk</div><div class="rl">Directeur Onderwijs Hogeschool</div></div></div>
+        <div class="body"><div class="tags"><span class="pill p-champ">Champion</span><span class="pill p-conf">geverifieerd</span></div>
+          <div class="hot">Baas van álle opleidingscoördinatoren (geen tussenmanager). Ex-coördinator TP/SW. Jouw motor richting de EB. <a href="https://nl.linkedin.com/in/karien-van-dijk-70594019">bron</a></div></div>
+      </div>
+      <div class="card coach">
+        <div class="top"><div class="av g">SD</div><div class="head"><div class="nm">Sanne Dragstra</div><div class="rl">Manager Kwaliteit Hogeschool</div></div></div>
+        <div class="body"><div class="tags"><span class="pill p-coach">Kwaliteit / ally</span></div>
+          <div class="hot">Kwaliteit + examencommissie. Poort voor AI-in-toetsing bij uitrol. <a href="https://publicaties.nvao.net/">NVAO 2025</a></div></div>
+      </div>
+    </div>
+    <div class="conn spine"></div>
+
+    <div class="tierlabel">Opleidingscoördinatoren — rapporteren allemaal aan Karien</div>
+
+    <div class="branches">
+      <div class="branch deal">
+        <div class="bh">Psychologie &amp; Coaching</div>
+        <div class="cc deal"><div class="cn">Inke van Gameren</div><div class="co">Toegepaste Psychologie <i>(+ Post-hbo Loopbaanprof.)</i></div><span class="ct deal">Deal · coach</span></div>
+        <div class="cc coach"><div class="cn">Lavina Wesseling Alvarez</div><div class="co">Toegepaste Psychologie</div></div>
+        <div class="cc coach"><div class="cn">Hans van Iersel</div><div class="co">Toegepaste Psychologie</div></div>
+        <div class="cc unk"><div class="cn">onbekend</div><div class="co">Therapeut Kind &amp; Jeugd</div><span class="ct unk">te zoeken</span></div>
+      </div>
+
+      <div class="branch">
+        <div class="bh">Zorg &amp; Welzijn</div>
+        <div class="cc coach"><div class="cn">Jens Flos</div><div class="co">Social Work</div><span class="ct tc">nieuw feb ’26</span></div>
+        <div class="cc"><div class="cn">Roline Julen</div><div class="co">Social Work</div><span class="ct tc">te checken</span></div>
+        <div class="cc"><div class="cn">Josje Meester</div><div class="co">Verpleegkunde + POH</div></div>
+        <div class="cc"><div class="cn">Natascha Ayachi</div><div class="co">Farmaceutisch Consulent</div></div>
+        <div class="cc unk"><div class="cn">onbekend</div><div class="co">Praktijkonderst. Fysio</div><span class="ct unk">te zoeken</span></div>
+      </div>
+
+      <div class="branch">
+        <div class="bh">Tolken &amp; Vertalen (ITV)</div>
+        <div class="cc"><div class="cn">Jikke van Gosliga</div><div class="co">Tolk-Vertaler</div></div>
+        <div class="cc"><div class="cn">Karin Preslmayr</div><div class="co">Tolk-Vertaler</div></div>
+      </div>
+
+      <div class="branch">
+        <div class="bh">Juridisch &amp; Recht</div>
+        <div class="cc"><div class="cn">Annemieke Oostveen</div><div class="co">Rechten / Juridisch</div><span class="ct tc">vorig, nu kwaliteit</span></div>
+        <div class="cc unk"><div class="cn">onbekend</div><div class="co">Huidige coördinator Rechten</div><span class="ct unk">te zoeken</span></div>
+      </div>
+
+      <div class="branch">
+        <div class="bh">HRM &amp; Inzetbaarheid</div>
+        <div class="cc deal"><div class="cn">Inke van Gameren</div><div class="co">Post-hbo Loopbaanprofessional</div><span class="ct deal">dubbelrol</span></div>
+        <div class="cc unk"><div class="cn">onbekend</div><div class="co">Arbeidsdeskundige / Casemanager / Jobcoach</div><span class="ct unk">te zoeken</span></div>
+      </div>
+
+      <div class="branch">
+        <div class="bh">Bedrijfskunde &amp; Leiderschap</div>
+        <div class="cc unk"><div class="cn">onbekend</div><div class="co">Bedrijfskunde</div><span class="ct unk">te zoeken</span></div>
+      </div>
+
+      <div class="branch">
+        <div class="bh">ICT &amp; Web</div>
+        <div class="cc unk"><div class="cn">onbekend</div><div class="co">HBO ICT</div><span class="ct unk">te zoeken</span></div>
+      </div>
+    </div>
+
+    <div class="conn spine"></div>
+    <div class="tier">
+      <div class="card coach spine">
+        <div class="top"><div class="av g">BF</div><div class="head"><div class="nm">Bas Franken</div><div class="rl">Docent Toegepaste Psychologie</div></div></div>
+        <div class="body"><div class="tags"><span class="pill p-coach">Gebruiker / mede-tester</span></div>
+          <div class="hot">Meest actieve gebruiker in de tool, sluit aan bij de demo. Onder de TP-coördinatoren (Inke). <a href="https://nl.linkedin.com/in/inke-van-gameren">bron</a></div></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="context">
+    <h3>Groep / mbo — context, niet in deal-lijn</h3>
+    <div class="clist">
+      <div class="cnode"><b>Frank de Baar</b> · Recruitment Manager Calder</div>
+      <div class="cnode"><b>Sylvana Stok</b> · Vestigingsmanager</div>
+      <div class="cnode"><b>Janneke van Asselt</b> · Vestigingsmanager Amsterdam</div>
+      <div class="cnode"><b>Elma Schot</b> · Teamcoach OKE + examencommissie</div>
+      <div class="cnode"><b>Nico van der Rijt</b> · Manager Kwaliteit &amp; Ontwikkeling</div>
+      <div class="cnode"><b>Rob Kivits</b> · E-learning coach (groep)</div>
+      <div class="cnode"><b>Heinie Raaijman</b> · Projectmanager Calder (ex-coördinator mbo)</div>
+    </div>
+  </div>
+
+  <div class="nuance">
+    <h3>Nuances</h3>
+    <ul>
+      <li><b>Deal draait op één cluster:</b> Psychologie &amp; Coaching (Inke's TP), evt. Social Work. De rest is compleetheid, niet je focus nu.</li>
+      <li><b>EB = uitrol, niet pilot.</b> Karien kan een pilot trekken, maar het uitrol-budget zit bij Vivian, en groep-breed bij Barbara.</li>
+      <li><b>Coördinatorstoel = kweekvijver:</b> zowel Karien als Vivian groeiden van coördinator TP/SW door naar de leiding. Inke goed behandelen loont dubbel.</li>
+      <li><b>Inke heeft een dubbelrol:</b> coördinator TP én Post-hbo Loopbaanprofessional (HRM-cluster).</li>
+      <li><b>TP heeft 3 coördinatoren</b> (Inke, Lavina, Hans van Iersel), waarschijnlijk verdeeld over de locaties Utrecht/Rotterdam/Amsterdam.</li>
+      <li><b>Social Work in overgang:</b> Jens Flos net gepromoveerd (feb ’26, junior), Roline Julen staat als “vorig”. Wie nu leidt = checken.</li>
+      <li><b>Rechten heeft een gat:</b> Annemieke Oostveen is naar Strategische Onderwijs Kwaliteit, huidige Rechten-coördinator onbekend.</li>
+      <li><b>Barbara boven Vivian is ingeschat</b> (titel wijst erop, niet 100% hard). Zelfde voor de exacte plek van de mbo-lijn (G. van Buren).</li>
+      <li><b>Nog geen coördinator gevonden</b> voor Bedrijfskunde, ICT, HRM (Arbeidsdeskundige/Casemanager/Jobcoach), Therapeut Kind &amp; Jeugd, Fysio-ondersteuner. Klaas S. (opleiding onbekend) vult vermoedelijk één gat.</li>
+      <li><b>mbo ≠ hogeschool:</b> Rob Kivits en Heinie Raaijman staan onder “Capabel Onderwijs (Groep)”, dus mbo/groep, niet de hogeschool.</li>
+    </ul>
+  </div>
+
+  <div class="foot">
+    Bronnen: LinkedIn (profielen + coördinator-zoek), capabel.nl opleidingenlijst, NVAO-rapporten (Social Work 2025, TP ~2020), Calder Holding, Company.info. Alle “onbekend/te checken” = niet publiek te vinden of niet actueel te bevestigen, LinkedIn blokkeert het ophalen van profielen en foto's.
+  </div>
+
+</body>
+</html>

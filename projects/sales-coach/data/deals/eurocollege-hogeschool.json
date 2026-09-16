@@ -1,0 +1,77 @@
+{
+  "slug": "eurocollege-hogeschool",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_U3WrZQFshThPM15bCQNMmJSRfntJa6d9ypubVHiSgF7",
+    "naam": "EuroCollege Hogeschool",
+    "url": "https://app.close.com/lead/lead_U3WrZQFshThPM15bCQNMmJSRfntJa6d9ypubVHiSgF7/",
+    "lead_status": "Prospect",
+    "opportunity_id": null,
+    "fase": null,
+    "fase_type": null,
+    "waarde": null,
+    "valuta": "EUR",
+    "confidence": null,
+    "close_date": null,
+    "eigenaar": "Eduface CRM",
+    "crm_note": "",
+    "contacten": [
+      {
+        "naam": "Edu van de Walle",
+        "titel": "Algemeen directeur",
+        "email": null,
+        "id": "cont_q4pfds22hiSQSTn6pzRTOgp5UuTRrMGFTCZAv7XbmH1"
+      },
+      {
+        "naam": "Centraal nu",
+        "titel": "",
+        "email": null,
+        "id": "cont_Dgz5dZbmDrImhazZihzWyS7SN6Z8zWhksA1GqAdIb7S"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_pNVgVYC32vdXAQTlXyXpvyvpPGGVaQL4xQfGXOQlev8",
+        "soort": "call",
+        "datum": "2026-08-21",
+        "titel": "Telefoon outbound",
+        "duur_min": 2,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "+31104254744 \n\nCentraal, wel aan het coooken. :)",
+        "transcript_beschikbaar": true,
+        "komend": false
+      }
+    ],
+    "open_taken": [],
+    "laatste_gesprek": "2026-08-21",
+    "volgende_afspraak": null,
+    "aantal_gehad": 1,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

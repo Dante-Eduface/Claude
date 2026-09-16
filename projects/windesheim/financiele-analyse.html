@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  @page { size: A4 landscape; margin: 9mm; }
+  :root{
+    --navy:#002333;--green:#00E075;--green2:#067a43;--green3:#008F5A;
+    --ink:#0e1c24;--grey:#7a8a91;--cardline:#eceff1;--amber:#b8860b;--red:#b3261e;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Inter',sans-serif;color:var(--ink);background:#fbfdfd;
+    background-image:radial-gradient(#e3eaed 1px, transparent 1px);background-size:22px 22px;
+    padding:14px 18px;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  h1{font-family:'League Spartan',sans-serif;color:var(--navy);font-size:21px;}
+  .titlebar{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:3px solid var(--green);padding-bottom:8px;margin-bottom:10px;}
+  .sub{color:var(--grey);font-size:10px;margin-top:3px;}
+  .brand{font-family:'League Spartan';font-weight:800;font-size:16px;color:var(--navy);}
+  .brand .fx{color:var(--green3);}
+
+  .kpirow{display:flex;gap:12px;margin-bottom:12px;}
+  .kpi{flex:1;background:#fff;border:1px solid var(--cardline);border-radius:14px;padding:12px 14px;box-shadow:0 3px 12px rgba(16,40,60,.06);}
+  .kpi .big{font-family:'League Spartan';font-size:24px;color:var(--navy);line-height:1;}
+  .kpi .big.red{color:var(--red);} .kpi .big.grn{color:var(--green2);}
+  .kpi .lab{font-size:9.5px;color:var(--grey);margin-top:5px;line-height:1.3;}
+  .kpi .src{font-size:8px;color:#a7b3b9;margin-top:4px;}
+
+  .cols{display:flex;gap:12px;}
+  .col{flex:1;}
+  .panel{background:#fff;border:1px solid var(--cardline);border-radius:14px;padding:12px 14px;box-shadow:0 3px 12px rgba(16,40,60,.05);margin-bottom:12px;}
+  .panel.hl{border:1.5px solid #e3c97a;}
+  .panel.grn{border:1.5px solid #bfe6cf;}
+  .panel h4{font-family:'League Spartan';font-size:12px;color:var(--navy);margin-bottom:8px;}
+  table{width:100%;border-collapse:collapse;font-size:9.5px;}
+  th,td{text-align:right;padding:3px 5px;border-bottom:1px solid #f1f4f5;}
+  th:first-child,td:first-child{text-align:left;}
+  th{color:var(--grey);font-weight:600;font-size:9px;text-transform:uppercase;letter-spacing:.04em;}
+  tr.hot td{font-weight:700;color:var(--navy);}
+  .down{color:var(--red);font-weight:700;}
+  ul.pts{margin:0;padding-left:15px;font-size:9.6px;line-height:1.5;}
+  ul.pts li{margin-bottom:4px;} ul.pts b{color:var(--navy);}
+  .scentab td.eur{font-weight:700;color:var(--green2);}
+  .badge{display:inline-block;font-size:8px;font-weight:600;padding:1px 7px;border-radius:20px;background:#fbeecf;color:#8a5b00;margin-left:4px;}
+  .badge.ver{background:#d9f7e7;color:#067a43;}
+  .foot{font-size:7.5px;color:var(--grey);margin-top:8px;text-align:center;}
+  .note{font-size:8.5px;color:var(--grey);margin-top:6px;line-height:1.35;}
+</style>
+</head>
+<body>
+  <div class="titlebar">
+    <div>
+      <h1>Financiële analyse Windesheim — waar zit de besparing?</h1>
+      <div class="sub">Bron: Windesheim Jaarverantwoording 2024. Windesheim-cijfers geverifieerd (met pagina); nakijk-/uurcijfers = sector-schatting, gelabeld. Stand: 2 juli 2026.</div>
+    </div>
+    <div class="brand">Edu<span class="fx">face</span></div>
+  </div>
+
+  <!-- KPI ROW -->
+  <div class="kpirow">
+    <div class="kpi"><div class="big red">-€4,45M</div><div class="lab">Exploitatietekort 2024 (begroot 2025: -€7,5M)</div><div class="src">jaarverslag p.62 · GEVERIFIEERD</div></div>
+    <div class="kpi"><div class="big">80%</div><div class="lab">Personeel = aandeel in totale lasten (€264,1M van €329,8M)</div><div class="src">p.62 · GEVERIFIEERD</div></div>
+    <div class="kpi"><div class="big red">-16%</div><div class="lab">Geplande krimp totale formatie 2024→2028 (~380 fte)</div><div class="src">Tabel 13, p.36-37 · GEVERIFIEERD</div></div>
+    <div class="kpi"><div class="big red">-21%</div><div class="lab">Krimp onderwijsformatie (1.302→1.032 fte), studenten maar -9%</div><div class="src">Tabel 13 · GEVERIFIEERD</div></div>
+  </div>
+
+  <div class="cols">
+    <!-- LEFT -->
+    <div class="col">
+      <div class="panel hl">
+        <h4>De kern: het gat tussen studentkrimp en docentkrimp</h4>
+        <ul class="pts">
+          <li><b>Windesheim draait verlies</b> door studentdaling + lagere rijksbijdrage, en snijdt bewust in personeel (hun eigen woorden, p.34).</li>
+          <li><b>Onderwijsformatie krimpt -21%, studenten maar -9%.</b> Elke overblijvende docent krijgt structureel meer studenten. Werkdruk (al "hoog" volgens hun NVAO-audit) loopt op.</li>
+          <li><b>De besparing zit niet in ICT-budget</b> maar in de grootste kostenpost: onderwijzend personeel, via het wegnemen van nakijk-/feedbacktijd.</li>
+          <li><b>Frame Eduface als enabler van hún bezuiniging</b>, niet als extra uitgave: opvangen van de krimp zonder verlies van kwaliteit of extra mensen.</li>
+        </ul>
+      </div>
+
+      <div class="panel">
+        <h4>Tabel 13 — formatie krimpt sneller dan studenten <span class="badge ver">jaarverslag p.36-37</span></h4>
+        <table>
+          <tr><th></th><th>2024</th><th>2028</th><th>Δ</th></tr>
+          <tr><td>Studenten</td><td>25.885</td><td>23.450</td><td class="down">-9,4%</td></tr>
+          <tr class="hot"><td>Onderwijs (fte)</td><td>1.302</td><td>1.032</td><td class="down">-20,7%</td></tr>
+          <tr><td>Totaal formatie (fte)</td><td>2.358</td><td>1.976</td><td class="down">-16,2%</td></tr>
+          <tr><td>Personeelslasten (€M)</td><td>264,1</td><td>228,1</td><td class="down">-€36M</td></tr>
+        </table>
+        <div class="note">Onderwijs-fte daalt meer dan 2× zo hard als het studentaantal. Dat gat moet met efficiency dicht, anders knapt de werkdruk.</div>
+      </div>
+
+      <div class="panel grn">
+        <h4>Nevenvoordeel voor IVT (Geert's afdeling)</h4>
+        <ul class="pts">
+          <li><b>€16,4M</b> personeel niet in loondienst (2023: €20,1M), deels voor <b>"IVT projecten en bedrijfsvoerende taken"</b> (p.73, p.77).</li>
+          <li>Kant-en-klaar SaaS verlaagt externe bouwcapaciteit én interne beheerlast. Klein t.o.v. de nakijk-case, maar het raakt exact zijn afdeling.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="col">
+      <div class="panel">
+        <h4>Besparingscase: nakijk-/feedbacktijd <span class="badge">sector-schatting</span></h4>
+        <div class="note" style="margin-top:0;margin-bottom:8px">
+          Basislijn hbo-nakijken: <b>15 min/inzending</b> (Hogeschool Rotterdam 15, Saxion ~20). Eduface: <b>2-3 min</b> (Bath Spa-pilot). Uurkostprijs docent <b>~€55/u</b>, afgeleid uit hun eigen P&amp;L (€231,3M loonsom / 2.360 fte / 1.659u). Volume = 25.885 studenten × schriftelijke inzendingen/jaar.
+        </div>
+        <table class="scentab">
+          <tr><th>Scenario</th><th>Nakijk → Eduface</th><th>Volume</th><th>Jaarpotentie</th></tr>
+          <tr><td>Zeer conservatief</td><td>10 → 3 min</td><td>103.500</td><td class="eur">~€605k</td></tr>
+          <tr class="hot"><td>Centraal</td><td>15 → 3 min</td><td>155.000</td><td class="eur">~€1,71M</td></tr>
+          <tr><td>Ruim</td><td>20 → 3 min</td><td>155.000</td><td class="eur">~€2,41M</td></tr>
+        </table>
+        <div class="note"><b>Jaar 1 bij ~30% adoptie ≈ €510k</b> (centraal). Een pilot (~€10k) verdient zichzelf ruim terug en schaalt naar €1-2M bij volledige uitrol. Reductie per inzending: 80-87%.</div>
+      </div>
+
+      <div class="panel hl">
+        <h4>Wat je in de meeting doet</h4>
+        <ul class="pts">
+          <li><b>Haal 1 getal op:</b> hoeveel schriftelijke inzendingen per student per jaar? Dat maakt de case hard. Vraag Geert/Cris.</li>
+          <li><b>Zeg veilig:</b> "In het hbo kost nakijken 15-20 min per werk (HR, Saxion). Eduface brengt dat naar 2-3 min. Bij jullie schaal loopt de bespaarde docenttijd in de tonnen tot miljoenen, precies de capaciteit die jullie nu wegbezuinigen."</li>
+          <li><b>Zeg NIET:</b> een Windesheim-eigen nakijknorm, of dat de €16,4M inhuur naar nakijken gaat. Dat sneuvelt bij een fact-check.</li>
+        </ul>
+      </div>
+
+      <div class="panel">
+        <h4>Geverifieerde ankers (jaarverslag 2024)</h4>
+        <table>
+          <tr><td>Totaal baten / lasten</td><td>€322,9M / €329,8M</td><td>p.62</td></tr>
+          <tr><td>Personeelslasten</td><td>€264,1M</td><td>p.62</td></tr>
+          <tr><td>Gemiddeld fte</td><td>2.360</td><td>p.73</td></tr>
+          <tr><td>Loonsom (salaris+sociaal+pensioen)</td><td>€231,3M</td><td>p.77</td></tr>
+          <tr><td>Inhuur derden</td><td>€16,4M</td><td>p.77</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">Eduface · vertrouwelijk · onderbouwde analyse o.b.v. Windesheim Jaarverantwoording 2024. Sector-/afgeleide cijfers als schatting gelabeld, geen officieel Windesheim-document.</div>
+</body>
+</html>

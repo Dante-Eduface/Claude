@@ -1,0 +1,77 @@
+{
+  "slug": "academica-university-of-applied-sciences",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_gYN2c5Txx1IolZCLMDaD9r8OfPEBv1wb03TAFiM9wmC",
+    "naam": "Academica University of Applied Sciences",
+    "url": "https://app.close.com/lead/lead_gYN2c5Txx1IolZCLMDaD9r8OfPEBv1wb03TAFiM9wmC/",
+    "lead_status": "Prospect",
+    "opportunity_id": "oppo_wB7vGXXADY5dno0Jwp7R5oPappw388AV8PcQtZC6IxV",
+    "fase": "Interested",
+    "fase_type": "active",
+    "waarde": 7500,
+    "valuta": "EUR",
+    "confidence": 10,
+    "close_date": "2026-12-19",
+    "eigenaar": "Eduface CRM",
+    "crm_note": "Warm, nog niet gekwalificeerd. Afspraak staat 24 sep 11:00-12:00 met Marjolein Looij (Opleidingsdirecteur Schoolleidersopleiding en MILE).\n\nNodig: discovery draaien op 24 sep. Uitzoeken hoe ze nu opdrachten/scripties beoordelen, volume, wie nakijkt. LMS is Neo LMS, integratie uitzoeken (nu Moodle/Brightspace/Blackboard/Canvas). Boven Marjolein zit bestuurder Mirte van den Berg, die is de uitrol-budgethouder.\n\nVerloop: koude mail 13 aug op haar ICT-achtergrond, zij vroeg zelf naar integratie, daarna afspraak ingepland. Belpoging 14 aug: alleen assistent Selma, Academica lijkt vrijdag dicht.\n\nGaten: geen pijn, geen cijfers, geen budget of besluitvorming bekend. Onbekend waarom het pas eind september kon. Waarde is aanname op basis van het NL-prijsmodel (toolfee EUR 7.500 per opleiding), infrastructuurstaffel nog niet in te schatten.",
+    "contacten": [
+      {
+        "naam": "Marjolein Looij",
+        "titel": "Opleidingsdirecteur Schoolleidersopleidingen en Master",
+        "email": null,
+        "id": "cont_5poMBCSrZN6gqieB7OzWx6sLvN5LNTxemqv7SlkBE61"
+      },
+      {
+        "naam": "Algemeen nummer",
+        "titel": "",
+        "email": null,
+        "id": "cont_NqoAg26tRoBWRH4zaT4O5GaozYw4qA9tejP6biq5nUI"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_E0KHliErzNeEvfxz8OUrHVffKWlE7Tdp5LD6yG1MUzJ",
+        "soort": "call",
+        "datum": "2026-08-14",
+        "titel": "Telefoon outbound",
+        "duur_min": 3,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Assistent gesproken van de directie bij Academica genaamd Selma. \n\nIk had nog moeten vragen waneer Marjolein wel werkt, voor de toekomst. \n\nIk weet nu tenminste dat ze op vrijdag niet werkt en Selma eigenlijk ook niet. Waarschijnlijk is heel academica dicht op vrijdag.\n\nIk had de omstandigheden ook moeten vragen, nu weet ik niet waarom pas half / einde september.",
+        "transcript_beschikbaar": true,
+        "komend": false
+      }
+    ],
+    "open_taken": [],
+    "laatste_gesprek": "2026-08-14",
+    "volgende_afspraak": null,
+    "aantal_gehad": 1,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

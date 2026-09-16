@@ -1,0 +1,352 @@
+{
+  "slug": "business-school-notenboom",
+  "coach": {
+    "next_action": {
+      "wat": "Vraag Barbara per mail wie er sinds de overname door Business School Nederland over een uitgave van 10k gaat, en of zij je aan die persoon voorstelt",
+      "wanneer": "2026-09-01",
+      "wie": "Dante",
+      "waarom": "Je staat in Close op Scoping maar de Discovery-gate is nooit dicht: geen naam van een budgethouder, geen datum, geen bedrag dat zij kwijt zijn. Notenboom is in 2025 verkocht aan Business School Nederland, dus de oude eigenaar-route bestaat niet meer. Zonder die naam is de meeting van 22 september gesprek nummer vijf zonder beslisser."
+    },
+    "prep": {
+      "doel": "Advance: Barbara noemt de naam van de budgethouder bij Business School Nederland en zegt toe je voor te stellen. Geen naam betekent geen implementatieplan en geen pilotvoorstel.",
+      "openers": [
+        "Je zei dat het dit studiejaar echt moet gaan vallen, en dat de internationale uitrol de reden is. Volgende week begint het jaar. Wat moet er in september gebeuren om dat waar te maken?",
+        "Sinds de overname door Business School Nederland, hoe loopt een uitgave van deze omvang nu?"
+      ],
+      "vragen": [
+        "Wie moet er behalve jij ja zeggen voor een bedrag als dit?",
+        "Toen jullie voor het laatst een tool van deze omvang kochten, wie zat daar dan bij en hoe lang duurde het?",
+        "Je zei dat collega's zullen vragen welk probleem we oplossen. Wat is jouw antwoord daarop als je het straks intern brengt?",
+        "Die 1500 uur, wie is dat geld nu kwijt? Zit dat in een budget dat iemand beheert of is dat onbetaalde tijd van ZZP-docenten?",
+        "Bij de internationale uitrol zei je dat de wens om toezicht aan te scherpen groter wordt. Wat gebeurt er als dat toezicht er niet is voordat de eerste buitenlandse groep start?",
+        "Wie kijkt bij jullie naar AVG en AI-act voordat er getekend wordt?"
+      ],
+      "risicos": [
+        "Barbara is coach, geen champion. Na drie gesprekken heeft ze Eduface nog niet intern genoemd. Ze verzamelt informatie voor later.",
+        "De 94k tijdwinst is geen echt geld: zij zei zelf dat niet alles vergoed wordt en dat docenten niet de last zijn. Blijf die cijfers gebruiken en je bouwt een business case die niemand herkent.",
+        "Vier weken stilte tussen 21 augustus en 22 september terwijl het studiejaar start. Elke week zonder interne beweging maakt de kans groter dat het naar volgend jaar schuift.",
+        "Budgethouder onbekend sinds de overname. Het risico is niet dat ze nee zeggen, het risico is dat er niemand is die ja kan zeggen."
+      ],
+      "bezwaren": [
+        "\"Het wordt pas relevant in de loop van het jaar.\" Antwoord niet met geduld. Vraag welke gebeurtenis het relevant maakt en zet daar een datum omheen.",
+        "\"Docenten willen het voorwerk niet doen, dat uur is onbezoldigd.\" Je had hier al een goed antwoord: Eduface zet het zelf klaar. Zet dat nu op papier met een prijs, want zij vroeg daar expliciet om.",
+        "\"Ik moet het eerst intern bespreken.\" Vraag met wie, in welk overleg, en bied aan de slides te maken die zij daar gebruikt."
+      ]
+    },
+    "meddpicc": {
+      "metrics": {
+        "state": "CURRENT STATE",
+        "bewijs": "Samen live doorgerekend: 175 studenten, 15 vakken per periode maal 2 periodes, 1 uur per beoordeling (zij corrigeerde je 2 uur naar 1), 60 euro per uur. 5.250 beoordelingen per jaar, 30% tijdwinst, 1.500 uur, 94k.",
+        "gat": "Het is geen geld dat iemand kwijt is. Zij zei letterlijk dat niet alles vergoed wordt en dat de docenten niet de last zijn. Geen geschreven cost justification, niet bevestigd door een champion."
+      },
+      "economic_buyer": {
+        "state": "UNKNOWN",
+        "bewijs": "Geen naam. Bureau Onderwijs is waar het werk zou landen, dat is geen budgethouder.",
+        "gat": "Notenboom is in 2025 verkocht aan Business School Nederland. Onbekend wie daar over een uitgave van 10k gaat. Nooit gevraagd in drie gesprekken."
+      },
+      "champion": {
+        "state": "COACH",
+        "bewijs": "Barbara denkt actief mee, corrigeert je cijfers, brengt zelf de internationale uitrol in. Maar op je eigen vraag of ze Eduface intern had laten vallen: 'Nee, zelf eerlijk gezegd niet.'",
+        "gat": "Geen persoonlijke win benoemd. Ze doet niks van wat een champion doet: geen introducties, geen criteria vormen, geen EB-meeting. Ze verzamelt."
+      },
+      "identify_pain": {
+        "state": "DISCOVERED",
+        "bewijs": "Twee pijnen. De genoemde: versnipperde nakijklast over 75 ZZP-docenten die 1 a 2 vakken doen. De echte, die zij zelf inbracht: bij internationale uitrol naar China en Nigeria heeft ze geen zicht op de kwaliteit van beoordeling in het buitenland.",
+        "gat": "Geen datum en geen bedrag. 'Dit studiejaar moet het echt gaan vallen' is het dichtst bij een compelling event dat je kreeg en je hebt het laten liggen."
+      },
+      "decision_criteria": {
+        "state": "SURFACED",
+        "bewijs": "Genoemd door haar: taal die de student snapt, niet generiek, gekoppeld aan eigen beoordelingscriteria, uitleg waarom. Plus AVG en bias-controle, en NL/EN naast elkaar voor de internationale uitrol.",
+        "gat": "Nooit teruggelegd als lijst en bevestigd. Ze heeft ze niet samen met jou vastgesteld, dus ze sturen niks."
+      },
+      "decision_process": {
+        "state": "UNKNOWN",
+        "bewijs": "Alleen 'als ik de spullen heb kan ik het intern bespreken'.",
+        "gat": "Met wie, in welk overleg, hoe vaak dat overleg is, wat er daarna gebeurt: niks van gevraagd."
+      },
+      "paper_process": {
+        "state": "UNKNOWN",
+        "bewijs": "Geen legal team. Ze kende de term DPIA niet. Wel bezorgd over AVG en bias.",
+        "gat": "Geen inkooproute, geen doorlooptijd, geen idee wie tekent. Bij een groepsovername zit dat vaak op groepsniveau."
+      },
+      "competition": {
+        "state": "IDENTIFIED",
+        "bewijs": "De concurrent is zelf doen met generieke AI. Zij gebruikt LeChat met een jaarabonnement voor een paar mensen. Je hebt goed gepositioneerd op consistentie, explainability en AI-act.",
+        "gat": "Nooit gevraagd of ze ook naar andere leveranciers kijken."
+      }
+    },
+    "gate": {
+      "fase": "Discovery",
+      "open": false,
+      "ontbreekt": [
+        "Players: geen budgethouder bekend, geen tweede contact binnen Notenboom of Business School Nederland",
+        "Why now: geen datum, alleen 'in de loop van het jaar'",
+        "BANT budget: geen indicatie van wat ze mogen uitgeven",
+        "Geen bevestigingsmail met pijn, spelers, tijdlijn en volgende stappen",
+        "Let op: de deal staat in Close op Scoping. Dat is een overgeslagen stap, niet een voorsprong."
+      ]
+    },
+    "stakeholders": [
+      {
+        "naam": "Barbara Suijkerbuijk",
+        "titel": "Directeur onderwijs, in dienst sinds 2012, eigenaar 2019-2025",
+        "rol": "coach",
+        "gesproken": true,
+        "notitie": "Gaat over onderwijskwaliteit en doorontwikkeling. Wil het nakijken naar Bureau Onderwijs trekken. Voorstander van AI. Rijdt drie maanden niet vanwege epilepsie, werkt 2 dagen thuis."
+      },
+      {
+        "naam": "Onbekend",
+        "titel": "Budgethouder Business School Nederland",
+        "rol": "eb",
+        "gesproken": false,
+        "notitie": "Notenboom is in 2025 overgenomen. Wie sinds die overname over een uitgave van 10k gaat is niet bekend. Dit is het gat dat de deal blokkeert."
+      },
+      {
+        "naam": "Bureau Onderwijs",
+        "titel": "Team dat het nakijken centraal zou gaan doen",
+        "rol": "gebruiker",
+        "gesproken": false,
+        "notitie": "Barbara wil het werk hierheen trekken. Zij verwacht dat collega's afwachtend zijn: wat brengt het, hoeveel tijd kost het, welk probleem lost het op."
+      },
+      {
+        "naam": "75 ZZP-docenten",
+        "titel": "Beoordelaars, 1 a 2 vakken per persoon",
+        "rol": "enemy",
+        "gesproken": false,
+        "notitie": "Barbara's inschatting: die doen het voorwerk niet, want dat extra uur is onbezoldigd. Structurele verbetering interesseert een ZZP-er per periode niet."
+      }
+    ],
+    "calls": [
+      {
+        "gesprek_id": "acti_GgoEainHQ1Yxf2UAoIamUvUiZnNKGRJ0oF8Z22cMSbI",
+        "datum": "2026-08-21",
+        "titel": "Barbara x Dante - Eduface (gesprek 4)",
+        "praatratio": 73,
+        "praatratio_bron": "transcript",
+        "zelfscore": null,
+        "scores": {
+          "praten": 2,
+          "doorvragen": 2,
+          "pijn": 3,
+          "macht": 1,
+          "next_step": 2,
+          "bezwaren": 4
+        },
+        "diagnose": "Je hebt een demo gegeven waar een kwalificatie had moeten staan. Barbara gaf je in de eerste vijf minuten drie interne bezwaren, later het echte probleem (geen zicht op beoordelingskwaliteit bij internationale uitrol) en bijna een datum (dit studiejaar). Je bent op alle drie doorgelopen naar de volgende slide. 73% van de tijd praatte jij, en dat is niet het probleem maar het symptoom: je had een deck en dat moest af.\n\nHet zwaarste feit: je vroeg zelf of ze Eduface intern had laten vallen. Antwoord nee. Gesprek vier, geen interne beweging, geen budgethouder, en de deal staat in Close op Scoping. Dat is geen Scoping, dat is een overgeslagen Discovery-gate.",
+        "wins": [
+          "Je liet haar de berekening corrigeren (2 uur naar 1 uur) en paste hem live aan. Dat is het verschil tussen jouw cijfer en haar cijfer, en het kost je niks.",
+          "Op het ZZP-bezwaar bedacht je ter plekke dat Eduface het voorwerk overneemt. Zij ging daarin mee en vroeg zelfs om de kosten. Dat is een echte opening.",
+          "Je checkte of de beoordelingsformulieren en de docent-vak-koppeling in een database staan. Dat is de vraag die de implementatie haalbaar maakt en de meeste reps vergeten hem."
+        ],
+        "missers": [
+          {
+            "spreker": "Barbara",
+            "quote": "Ik denk dat ze wat afwachtend zullen zijn van wat gaat het dan brengen. En hoeveel tijd en energie moeten we insteken om het te laten werken. En ook welk probleem gaan we oplossen.",
+            "waarom": "Zij gaf je de drie bezwaren die deze deal intern gaan doden, ongevraagd, in de eerste minuut. Jij zei 'precies' en ging naar je slides. Dit is het beste materiaal dat je die dag kreeg.",
+            "beter": "Dat zijn precies de drie vragen die ik zou stellen. Laten we ze een voor een langs gaan. Als jij het maandag in dat overleg brengt en iemand vraagt welk probleem we oplossen, wat is dan jouw antwoord? Dan weet ik meteen waar mijn verhaal nog niet klopt."
+          },
+          {
+            "spreker": "Barbara",
+            "quote": "Dat is even het punt inderdaad van wanneer gaan we dit de volgende stap maken. En dat gaat ook samen in mijn ogen met onze internationale uitrol. Want wat in het buitenland gebeurt, daar hebben we niet direct zicht op. Dus het zal niet morgen al gaan spelen, maar wel in de loop van het jaar.",
+            "waarom": "Hier ligt je compelling event en je grootste pijn tegelijk. Niet nakijklast maar kwaliteitsborging op afstand bij Chinese en Nigeriaanse partners, met NVAO-eisen eronder. Jouw reactie was 'Oké, dat is duidelijk'. Daarna vroeg je hoe internationale uitrol werkt, uit interesse, niet om de deal vast te pinnen.",
+            "beter": "Dus als er in januari een groep in Nigeria start en jullie hebben geen zicht op hoe daar beoordeeld wordt, wat gebeurt er dan? Wie binnen Business School Nederland ligt daar wakker van? En wanneer moet het geregeld zijn om die eerste groep te halen?"
+          },
+          {
+            "spreker": "Barbara",
+            "quote": "Het gaat om bakken natuurlijk. Het is niet zozeer dat de docenten de last zijn. (...) Het is wel zo dat we daar niet alles van vergoeden, uiteindelijk. Dus een deel is voor rekening van de docent zelf.",
+            "waarom": "Twee keer zei ze dat de tijdwinst geen kostenpost van Notenboom is. Je bent daarna toch doorgerekend naar 1.500 uur en 94.000 euro en hebt dat als waarde gepresenteerd. Een bedrag dat de klant niet uitgeeft, kan ze niet besparen. Die business case sneuvelt zodra een controller ernaar kijkt.",
+            "beter": "Wacht even, als een deel voor rekening van de docent is, dan is die 94k geen besparing voor jullie. Waar zit het dan wel? Zit het in doorlooptijd, in uitval, in wat jullie kwijt zijn aan het herstellen van slechte beoordelingen? Laten we het cijfer pakken dat jullie echt raakt."
+          },
+          {
+            "spreker": "Dante",
+            "quote": "Voor de pilot vragen we 450 euro. Dan krijg je twee weken lang support van mij.",
+            "waarom": "Je hebt het volledige prijsmodel plus de pilotprijs gepresenteerd zonder dat zij er een enkele vraag over stelde. Nul koopvragen van haar kant over prijs in het hele gesprek. Prijs geven aan iemand die er niet naar vraagt levert geen informatie op en zet je pilot op 450 euro voordat de waarde vaststaat.",
+            "beter": "Prijs pas als zij ernaar vraagt, of vraag om toestemming: wil je dat ik het prijsmodel nu doorneem, of is dat pas relevant als je weet met wie je dit intern gaat bespreken?"
+          },
+          {
+            "spreker": "Dante",
+            "quote": "Is het idee om donderdag nog een keer even te sparren? Misschien een kwartiertje van maken?",
+            "waarom": "Een kwartier sparren is een continuation, geen advance. Er zit geen klantactie in. Rackham: als de klant niks doet tussen nu en de volgende afspraak, staat de deal stil. En die donderdag is niet doorgegaan, de eerstvolgende afspraak staat op 22 september.",
+            "beter": "Ik stuur het materiaal maandag. Zou jij het voor donderdag met een of twee collega's kunnen delen, dan hebben we donderdag hun eerste reactie en weet ik of mijn verhaal klopt. En kun je me dan ook zeggen wie er sinds de overname over zo'n uitgave gaat?"
+          }
+        ],
+        "meddpicc_verplaatst": [
+          "METRICS: UNKNOWN naar CURRENT STATE. Haar eigen cijfers staan er, maar het bedrag klopt niet met wat zij uitgeeft.",
+          "DECISION CRITERIA: UNKNOWN naar SURFACED. Vijf eisen genoemd, geen ervan bevestigd.",
+          "CHAMPION: blijft COACH. Je vroeg het zelf en het antwoord was nee.",
+          "ECONOMIC BUYER: blijft UNKNOWN na vier gesprekken. Dit is de bottleneck."
+        ],
+        "afspraken": [
+          "Dante stuurt maandag: slides, de rekentool, de voorbeeldopdracht met feedback, het prijsmodel particulier onderwijs",
+          "Barbara koppelt terug over het materiaal",
+          "Kwartier sparren donderdag 27 augustus (niet doorgegaan, volgende afspraak staat op 22 september)",
+          "Implementatieplan bewust uitgesteld op haar verzoek"
+        ],
+        "patronen": [
+          "Doorlopen op wat de klant zelf aanreikt",
+          "Presenteren waar gekwalificeerd moet worden",
+          "Prijs geven zonder dat erom gevraagd is",
+          "Volgende afspraak zonder klantactie"
+        ],
+        "drills": [
+          {
+            "titel": "De drie interne bezwaren uitgraven",
+            "situatie": "De prospect vertelt ongevraagd hoe collega's zullen reageren: afwachtend, wat kost het ons, welk probleem lossen we op.",
+            "opdracht": "Speel Barbara. Ik mag pas verder met mijn verhaal als ik alle drie de bezwaren heb uitgevraagd en haar eigen antwoord erop heb gehoord. Elke keer dat ik naar mijn product schuif, kap je me af.",
+            "bron_call": "acti_GgoEainHQ1Yxf2UAoIamUvUiZnNKGRJ0oF8Z22cMSbI"
+          },
+          {
+            "titel": "Een compelling event vastpinnen",
+            "situatie": "De prospect zegt dat het pas 'in de loop van het jaar' relevant wordt en koppelt het aan een intern project.",
+            "opdracht": "Speel Barbara. Blijf vaag over de timing. Ik moet eruit krijgen welke gebeurtenis het relevant maakt, welke datum daarbij hoort, en wie er last van heeft als het niet klaar is. Geef pas een datum als ik er drie keer echt naar heb gegraven.",
+            "bron_call": "acti_GgoEainHQ1Yxf2UAoIamUvUiZnNKGRJ0oF8Z22cMSbI"
+          },
+          {
+            "titel": "De budgethouder vinden na een overname",
+            "situatie": "Je contactpersoon was vroeger eigenaar, het bedrijf is verkocht, en de beslissingslijn is onduidelijk.",
+            "opdracht": "Speel Barbara. Je vindt de vraag wie er over budget gaat een beetje ongemakkelijk en wijkt uit naar inhoud. Ik moet het indirect en subtiel blijven proberen tot ik een naam en een route heb. Kap me af als ik het te bot vraag.",
+            "bron_call": "acti_GgoEainHQ1Yxf2UAoIamUvUiZnNKGRJ0oF8Z22cMSbI"
+          }
+        ]
+      }
+    ],
+    "diagnose": "Vier gesprekken, geen budgethouder, geen interne beweging, en de deal staat in Close op Scoping met 20% confidence. Dat is geen Scoping. De Discovery-gate is nooit dicht gegaan.\n\nDe echte deal zit niet in nakijklast maar in kwaliteitsborging bij de internationale uitrol naar China en Nigeria, met NVAO-eisen eronder. Dat is een probleem waar een directie geld voor vrijmaakt. Barbara heeft het je zelf gegeven en het ligt er nog onaangeraakt.\n\nEen actie: haal de naam van de budgethouder bij Business School Nederland op voordat 22 september er is. Zonder die naam is dat gesprek nummer vijf zonder beslisser.",
+    "laatst_gecoacht": "2026-08-29"
+  },
+  "close": {
+    "lead_id": "lead_4ZpmfrLKEVu0B6AXU6ndN9aGYhfl50JoOXG5m5nhRXM",
+    "naam": "Business School Notenboom",
+    "url": "https://app.close.com/lead/lead_4ZpmfrLKEVu0B6AXU6ndN9aGYhfl50JoOXG5m5nhRXM/",
+    "lead_status": "Prospect",
+    "opportunity_id": "oppo_9exEsgoebeja97rIitvrVoyXu871tdxQd6KtiKYLCeG",
+    "fase": "Scoping",
+    "fase_type": "active",
+    "waarde": 10000,
+    "valuta": "EUR",
+    "confidence": 20,
+    "close_date": null,
+    "eigenaar": "Eduface CRM",
+    "crm_note": "**Status:** Discovery gehad en Barbara stuurt zelf aan op het afstudeervak,\nmaar haar eigen tijdlijn is \"volgend jaar experimenteren\" en de budgethouder\nis onbekend sinds de BSN-overname.\n\n**Wat er gebeurde:** Barbara is directeur onderwijs (in dienst sinds 2012),\nwas eigenaar 2019-2025 en verkocht Notenboom in 2025 aan Business School\nNederland. Zij gaat over onderwijskwaliteit en doorontwikkeling; wie over\nbudget gaat is niet uitgevraagd. Zij stelde zelf de pilotscope voor: het\nafstudeervak Bedrijfskunde, 20 afstudeerders per jaar (afstuderen totaal\n120/jaar over twee vestigingen). Betrokkenen: zijzelf, een collega onderwijs\nen mogelijk de afstudeercoordinator, maximaal drie. LMS is Magister, Turnitin\nzit eraan gekoppeld en werkt volgens haar niet tegen AI. Beoordelingsmodellen\nzijn rubrics en al met AI gemaakt, dus instrueren kost weinig. Haar eisen aan\nfeedback: taal die studenten snappen, concrete verwijzing naar de criteria,\nuitleg waarom voldoende of onvoldoende, verbetersuggesties, geen\nhallucinaties, mens blijft beslissen. Waarde hierboven is staffel A (1\nopleiding, tot 500 studentplaatsen), nog niet met haar besproken.\n\n**Next action:** vervolgmeeting: vak, timing, betrokkenen en pilotdocument samen invullen | Dante | vr 14 aug 09:00 | hoog\n\n**Next action:** uitvragen wie na de BSN-overname over dit budget gaat, Notenboom zelf of BSN | Dante | vr 14 aug | hoog\n\n**Next action:** prijsopgave-meeting (go/no-go) aan het eind van meeting 2 inplannen | Dante | datum onbekend\n\n**Risk:** Barbara zei zelf dat ze \"volgend jaar\" met AI-beoordeling op grote\nwerkstukken wil experimenteren. Er is geen gekwantificeerde pijn en geen\ndeadline die een start dit studiejaar afdwingt.\n\n**Action required:** een meetbaar succescriterium uit haar krijgen (uren per\nafstudeerwerk of doorlooptijd tot feedback), anders is er niets om de pilot op\naf te rekenen.",
+    "contacten": [
+      {
+        "naam": "Barbara Suijkerbuijk",
+        "titel": "Directeur onderwijs",
+        "email": "b.suijkerbuijk@notenboom.nl",
+        "id": "cont_uTjaIEY3kCBYXSHh8r5bjR3E6lG7mfjQlHblNSQP5PV"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_d73WGsSfKpH92N9JoHM2VWrwkONhEPHoSefZptKI56u",
+        "soort": "call",
+        "datum": "2026-08-06",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Juiste nummer maar ze was in gesprek. 30 min geven.",
+        "transcript_beschikbaar": true,
+        "komend": false
+      },
+      {
+        "id": "acti_ZobG2zoYQN80BGUvHWHZAMqIbg0MDF13zMorKtcF1cU",
+        "soort": "call",
+        "datum": "2026-08-06",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": null,
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Zat in de trein richting Londen voor vakantie. \nMeeting geboekt volgende week maandag 13:00\nZal ook nog wat informatie op de mail zetten.",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_f1vLdc9OeCwBjJImuhzPJ7WGKmpmWsgAyTXqPpVbPhx",
+        "soort": "meeting",
+        "datum": "2026-08-10",
+        "titel": "Barbara x Dante",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "b.suijkerbuijk@notenboom.nl",
+          "dante.torbed@eduface.me"
+        ],
+        "samenvatting": "- Besproken hoe Business School Notenboom een arbeidsintensief afstudeerproces optimaliseren kan met AI-feedback en mondelingexamens.\n- Vastgesteld dat Notenboom al beoordelingsformulieren met AI maakt en bereid is volgende jaar AI-beoordeling op grote werkstukken te testen.\n- Afgesproken dat een pilot van twee weken gaat focussen op het afstudeervak met ongeveer 20 afstudeerders per jaar.\n- Identified dat custom AI-modellen beter werken dan generieke AI voor consistent feedback geven op Nederlandse onderwijsstandaarden.\n- Vervolgmeeting gepland voor vrijdag 9 uur om vak, timing, betrokkenen en implementatieplan vast te stellen voorafgaand pilotstart.\n\n### Inleiding en achtergrond van deelnemers\n- Barbara Suijkerbuijk is directeur onderwijs bij Business School Notenboom sinds 2012 en was eigenaar van de school van 2019 tot 2025.\n- In 2025 verkocht Notenboom aan Business School Nederland, die Master MBA-programma's, HBV-training en particulier onderwijs aanbiedt.\n- Business School Notenboom heeft een zelfstandig ontwikkelde MBA voor familiebedrijven in ontwikkeling, wachtend op NVAO-goedkeuring.\n- Dante Torbed is pilot manager bij Eduface sinds het begin van het bedrijf 3,5 jaar geleden.\n- Eduface is een spin-off van de Universiteit Leiden, opgericht nadat docenten feedback problemen ondervonden bij grote studentenaantallen.\n\n### Oorsprong en missie van Eduface\n- Eduface ontstond uit frustratie van oprichters die geen gedetailleerde feedback konden geven op studentenwerk door werkdruk met zeventig studenten.\n- Het bedrijf trainde een Nederlands AI-model met ondersteuning van Leiden Universiteit en Radboud Universiteit in plaats van generieke AI te gebruiken.\n- De focus ligt op het trainen van het model met academische data zodat het consistente beoordelingen geeft op basis van dezelfde beoordelingsformulieren.\n- Het model is getraind op hoe Nederlandse docenten feedback geven, niet op Amerikaanse standaarden.\n- Eduface werkt momenteel met Tilburg Universiteit, Hogeschool Rotterdam, Haagse Hogeschool en Radboud Universiteit.\n\n### Huidige beoordelingsproces bij Business School Notenboom\n- Afstudeerwerk gaat door meerdere fases met tussentijdse verdedigingen van deelproducten voor begeleiders en beoordelaars.\n- Bij de finale fase voegt een externe beoordelaar zich bij de verdediging nadat alles is goedgekeurd.\n- Het proces is arbeidsintensief en ondersteund door beoordelingsformulieren die objectiviteit moeten waarborgen.\n- Studenten leveren opdrachten via Magister in, en feedback wordt ook via dit systeem gegeven.\n- Turnitin is gekoppeld aan Magister maar biedt geen oplossing voor AI-gegenereerde content.\n\n### Rol van AI in onderwijs volgens Barbara\n- Barbara gelooft dat AI grote bijdrage kan leveren bij het beoordelen van toetsen en gestandaardiseerde werkstukken, en bij het geven van feedback op rapporten.\n- Business School Notenboom heeft onderwijsontwikkeling meer naar zich toe getrokken en gebruikt AI intensief voor het ontwikkelen van toetsen en beoordelingsmodellen.\n- Feedback via AI kan helpen voorwerk uit te voeren wat normaal bij docenten lag, zodat die docent of inhoudsdeskundige het kan valideren.\n- Het is essentieel om de mens in de lus te houden, omdat AI fouten kan maken en hallucinations kan produceren.\n- Diepgaande feedback via AI wordt momenteel nog onvoldoende ingezet bij Notenboom.\n\n### AI-detectie en het stimuleren van kritisch studentengedrag\n- Barbara en Dante zijn het erover eens dat AI-detectie niet de oplossing is, in tegenstelling tot wat veel instellingen denken.\n- Het doel is om studenten te stimuleren zelf met AI om te gaan, omdat ze dit in hun toekomstige beroep toch moeten doen.\n- Studenten moeten kritischer worden ten aanzien van AI-gegenereerde content en deze relateren aan hun onderzoeksvraag.\n- Educatief gezien moeten studenten meer tijd krijgen voor dieper onderzoek in plaats van op schrijven, dankzij AI-ondersteuning.\n- Wanneer AI-feedback gegeven wordt, worden studenten aangespoord beter werk af te leveren omdat ze weten kritischer beoordeeld te worden.\n\n### Kwaliteitseisen voor AI-feedback\n- Feedback moet in begrijpelijke taal voor studenten geformuleerd zijn en niet generiek maar specifiek op het werkstuk gericht.\n- Feedback moet concrete verwijzingen naar beoordelingscriteria bevatten en uitleggen waarom iets onvoldoende of voldoende is.\n- Bij voorkeur moet feedback suggesties ter verbetering bevatten.\n- AI moet hallucinations vermijden en de feedback moet explainabel zijn waarom de score gegeven is.\n- Notenboom gebruikt rubrics-gebaseerde beoordelingsmodellen die goed geschikt zijn voor AI-voeding.\n\n### Mondeling examen als aanvulling op schriftelijk werk\n- Eduface voert pilots uit met mondelingexamens waarbij docenten inhoudelijke vragen stellen op basis van de geschreven opdracht.\n- Studenten krijgen 30 seconden tot 1 minuut tijd om mondeling te antwoorden, gevolgd door opbouwende feedback zonder afrekening.\n- Dit stimuleert diepere voorbereiding bij studenten en maakt echt begrip meetbaar.\n- De aanpak maakt mondelingexamens schaalbaar met één docent en dertig studenten door formatieve elementen en voorbereiding.\n- Notenboom overweegt het schriftelijke werk minder zwaar te laten meewegen en het mondeling meer centraal te stellen.\n\n### Studentprofiel en gepersonaliseerd leren\n- Eduface werkt aan het verzamelen van datapunten van studenten door verschillende tools zodat een studentprofiel ontstaat.\n- Dit profiel helpt docenten inzicht krijgen waar studenten goed in zijn en waar zij meer hulp nodig hebben.\n- Dit maakt gepersonaliseerd leren mogelijk, wat voorheen moeilijk was vanwege werkdruk.\n- Docenten kunnen hun aandacht beter richten op studentenclusters die specifieke ondersteuning nodig hebben.\n\n### Implementatiebenadering van Eduface\n- Eduface start met een pilot van twee weken met enkele docenten die experimenteren willen.\n- De onderwijsinrichting van het AI-model vereist ongeveer 1 tot 2 uur werk met aanpassingen van het beoordelingsformulier.\n- Business School Notenboom heeft al beoordelingsformulieren met AI ontwikkeld, wat het proces soepel kan maken.\n- Gedurende de pilot wordt een implementatieplan opgesteld en succescriteria bepaald.\n- Eduface werkt op jaarbasis met een jaarlijkse licentie gebaseerd op aantal studenten.\n\n### Waarom custom AI beter is dan generieke AI\n- Eduface testte eerst ChatGPT, Gemini en Grok maar stootte op limitatiesprobleven met prompt-geheugenbegrenzingen.\n- Generieke modellen konden niet alle nuances meenemen die nodig waren voor goede feedback en lazen niet het hele werkstuk.\n- Aanpassingen in prompts werkten inconsistent en veroorzaakten onevenredige problemen.\n- Een custom getraind model lost dit op en voldoet aan GDPR en AI Act-vereisten inclusief explainability.\n- Custom modellen zijn getraind op actuele onderwijsfeedback, niet op algemene internet-data.\n\n### Vakken waar AI minder geschikt is\n- AI heeft aanvankelijk moeite gehad met rekenkundige en economische vakken, maar Notenboom heeft het model daar goed getraind.\n- Filosofische en ethische vakken waarbij veel gaat om het volgen van unieke redeneringen vormen een groter uitdagingspunt voor AI.\n- Barbara verwacht dat volgende jaar experimenten plaatsvinden met AI-beoordeling op grote werkstukken.\n\n### Praktische volgende stappen en pilot voorbereiding\n- Barbara ziet het afstudeerwerk als ideale plek om te experimenteren, gezien de betekenis voor opleidingskwaliteit.\n- Het afstudeerwerk betreft 120 studenten per jaar, verdeeld over twee vestigingen, grotendeels uit Bedrijfskunde.\n- Voor de pilot zal Barbara zelf betrokken zijn, samen met een collega voor onderwijs en mogelijk een afstudeervakcoördinator.\n- De pilot zou zich kunnen focussen op de afstudeervak met ongeveer 20 afstudeerders per jaar.\n- Dante en Barbara plannen een vervolgmeeting vrijdag 9 uur in de ochtend om het vak, timing en benodigde deelnemers vast te stellen.\n\n### Houding ten aanzien van AI en onderwijs transformatie\n- Barbara is voorzichtig maar constructief over AI-inzet en wil bewijs zien dat het werkt voor hun specifieke situatie.\n- Ze ziet kansen voor AI vooral waar repetitief werk kan worden afgevangen, wat docenten tijd geeft voor kritische feedback.\n- Barbara stelt vragen over hoe volwassen studenten (die meer betalen) feedback van AI zullen ontvangen en waarderen.\n- Zij verwacht meer van studenten dankzij AI-tools en ziet geen excuses meer voor slordig werk.\n- Barbara's artikel uit april 2024 over AI in onderwijs aligneert met Eduface's kernvisie op beter onderwijs.",
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_rVvdfJ5ctz4kFNVjgVsROZVPwoW8YwXLo9K6lUAlSkS",
+        "soort": "meeting",
+        "datum": "2026-08-14",
+        "titel": "Barbara x Dante",
+        "duur_min": 45,
+        "status": "completed",
+        "deelnemers": [
+          "b.suijkerbuijk@notenboom.nl",
+          "dante.torbed@eduface.me"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_glhm8qLJcahDdZkxDUmFXmjB0w1oJfGc6uF2XXmgnux",
+        "soort": "meeting",
+        "datum": "2026-08-18",
+        "titel": "Barbara x Dante - Eduface",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "b.suijkerbuijk@notenboom.nl",
+          "dante.torbed@eduface.me"
+        ],
+        "samenvatting": "- Besproken hoe Eduface CRM kan helpen bij centraal en consistent beoordelen als strategische reactie op strengere accreditatie-eisen van de NVAO.\n- School Notenboom heeft sinds vorig jaar zomer AI ingezet voor toetsconstructie en heeft HBO jaar 1 volledig opnieuw opgebouwd met één dedicated personeelslid.\n- Identifieerde drie kernwaarden voor implementatie: efficiëntieslag, accreditatieverdediging, en diepere dataanalyse voor onderwijsverbetering.\n- Vastgesteld dat docenten twee uur per student per periode spenderen aan beoordeling, waardoor grondige kwaliteitsanalyse ontbreekt.\n- Vervolgafspraak gepland voor vrijdag 10:00 uur voor demo, prijsmodel en verdere business case-ontwikkeling.\n\n### Doelstelling van het systeem en bruikbaarheid\n- Eduface CRM richt zich primair op ondersteuning van docenten bij het geven van meer kwalitatieve feedback in kortere tijd.\n- Het systeem kan zowel door docenten als centraal door een bureau onderwijs worden ingezet voor beoordelingen.\n- Barbara benadrukte dat centralizing van beoordelingen via een neutrale partij (bureau onderwijs) effectiever kan zijn dan volledige decentralisatie.\n\n### Huidige uitdagingen bij Business School Notenboom\n- De school worstelt met consistentie in beoordelingen vanwege wisselende docenten die als zelfstandig opereren.\n- Docenten hebben beperkte inhoudelijke voorbereiding voor het geven van beoordelingen zonder onderwijskundige kennis.\n- De examencommissie voert momenteel alleen steekproefswijs controles uit, waardoor veel kan worden gemist.\n- Docenten besteden ongeveer twee uur per student per periode aan beoordeling van schrijfopdrachten.\n- De organisatie heeft onvoldoende capaciteit voor grondige analyses en kwaliteitsverbeteringen door de hoge werkdruk.\n\n### Accreditatie en kwaliteitsborging\n- De NVAO (accrediterende instantie) stelt steeds strengere eisen aan verifieerbare kwaliteitsborging.\n- Het risico bestaat dat onvoldoende kwaliteitsborging leidt tot afkeuring en daarmee verlies van accreditatie.\n- Accreditatie-verlies zou het hele bedrijfsmodel van de school in gevaar brengen.\n- De school moet voortdurende kwaliteitsverbeteringen aantonen via een PDCA-cyclus (Plan-Do-Check-Act).\n- **De visitatie is recent afgerond en de school heeft opdrachten gekregen van de accrediteuringscommissie.**\n\n### Implementatie van AI-gestuurde toetsing\n- Notenboom is sinds vorig jaar zomer bezig met AI-ondersteuning voor het centraal samenstellen van toetsen.\n- **De eerste trainingsperiode duurde ongeveer drie maanden, waarin één dedicated persoon van het bureau onderwijs het systeem heeft opgebouwd.**\n- In het afgelopen jaar heeft men het HBO eerste jaar volledig afgerond met alle toetsing opnieuw opgesteld via AI.\n- Voor het eerste jaar zijn drie toetsvarianten per vak gemaakt (één toetsperiode en twee herkansingsperioden).\n- Dit jaar worden het HBO tweede en derde jaar uitgewerkt, met later uitbreiding naar MBO en voortgezet onderwijs.\n\n### Voordelen van AI voor toetsing en onderwijs\n- AI maakt het mogelijk toetsmatrices op te stellen zonder dat volledige onderwijskundige expertise vereist is.\n- Door AI kunnen consistent opgestelde toetsen voor meerdere vestigingen tegelijk gebruikt worden.\n- De werkdruk op docenten kan aanzienlijk afnemen dankzij geautomatiseerde toetscreatie en beoordeling.\n- Vrijgekomen tijd kan docenten helpen zich toe te leggen op betere lesvoorbereiding en meer aandacht voor praktijkkoppelingen.\n- AI biedt rekenkracht voor diepere analyses van toetsresultaten en onderwijskwaliteit.\n\n### Kwaliteit van afstuderen en eindniveau\n- De school heeft strakke begeleiding ingevoerd met wekelijks één-op-één coaching door dedicated afstudeerbegeleiders.\n- Studenten moeten nu een 'beroepsproduct' voor een daadwerkelijk bedrijf opleveren, niet alleen een onderzoeksverslag.\n- Dit zorgt ervoor dat studenten praktische, toepasbare resultaten moeten bereiken.\n- De intensieve begeleiding en praktijkgerichtheid hebben merkbaar effect op de groei en leerresultaten van studenten.\n\n### Rol van docenten en Bureau Onderwijs\n- Docenten moeten zich primair richten op excellente lesgegeving met nadruk op praktijkervaring en theorie-integratie.\n- Het Bureau Onderwijs is nu verantwoordelijk voor toetsconstructie, toetsmatrice-ontwerp en centrale beoordeling.\n- Docenten worden geëvalueerd via studentbeoordelingen en toetsresultaten, niet op hun beoordeelingen.\n- Centrale toetsmaking zorgt voor consistentie tussen meerdere vestigingen en verhoogt de onderwijskundige kwaliteit.\n\n### Toekomstvisie en volgende stappen\n- **Barbara wil in studiejaar 2027-2028 verdere automatisering en dataanalyse uitrollen.**\n- De eerste fase (toetsing van HBO jaar 1-3) moet eerst voltooid worden voordat dataanalyse begint.\n- Dante gaat een business case uitwerken op basis van alle besproken informatie.\n- Een vervolgmeeting is ingepland voor vrijdag 10:00 uur om de demo, prijsmodel en verdere details door te nemen.\n- Het doel is gezamenlijk een sterker business case op te bouwen en duidelijkheid te krijgen over samenwerking.",
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_GgoEainHQ1Yxf2UAoIamUvUiZnNKGRJ0oF8Z22cMSbI",
+        "soort": "meeting",
+        "datum": "2026-08-21",
+        "titel": "Barbara x Dante - Eduface",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "b.suijkerbuijk@notenboom.nl",
+          "dante.torbed@eduface.me"
+        ],
+        "samenvatting": "- Gepresenteerd Eduface AI-feedback tool met 95% nauwkeurigheid uit Bergspa Universiteit pilot met 435 beoordeelde opdrachten.\n- Tool geeft gepersonaliseerde, domeinspecifieke feedback gekoppeld aan beoordelingscriteria en biedt formatieve feedback-loops.\n- Berekend potentiële jaarlijkse besparing van 1.500 uur (94.000 euro) voor Business School Notenboom met 175 studenten.\n- Discussed centralized feedback-approach via Bureau Onderwijs, internationale uitrol naar China/Nigeria, en docent-compliance met AI Act.\n- Afgesproken vervolgafspraak donderdag om materialen door te nemen; pilot kost 450 euro met twee weken ondersteuning.\n\n### Eduface Pilot en Nauwkeurigheid Tool\n- Eduface heeft een succesvolle pilot uitgevoerd aan Bergspa Universiteit met 435 beoordeelde opdrachten door 13 docenten.\n- De tool haalde een nauwkeurigheid van 95 procent bij het geven van feedback op schrijfopdrachten.\n- Docenten die de tool goed hebben geïnstrueerd bereikten een verschil van slechts twee punten ten opzichte van handmatige beoordeling.\n- Docenten die minder tijd voor instructie hadden waren minder nauwkeurig, wat verklaart het gemiddelde verschil van zes punten.\n- Ondersteuning werd geboden aan docenten die het model wilden testen en aanpassen.\n\n### Functionaliteiten van Eduface voor Feedback\n- De tool biedt feedback in taal die afgestemd is op het niveau van de student (NBO, HBO, Universitair).\n- Feedback wordt aangepast op basis van de inhoud van de schrijfopdracht door gebruik van een 'reg system' voor domeinspecifieke termen.\n- Feedback is gekoppeld aan beoordelingscriteria uit het beoordelingsformulier voor duidelijkheid.\n- De tool voldoet aan de AI Act-vereiste van explainability door gebruikers inzicht te geven in modelkeuzes.\n- Korte feedbackloops worden gerealiseerd zodat studenten direct feedback kunnen ontvangen (formatieve feedback).\n\n### Formatieve en Summatieve Beoordeling\n- De tool ondersteunt twee beoordelingsmogelijkheden: formatieve feedback (direct aan student) en summatieve beoordeling (met docent-goedkeuring).\n- Docenten kunnen kiezen of studenten direct feedback ontvangen of dat deze eerst moet worden goedgekeurd.\n- Bij formatieve beoordeling vergelijkt het model verschillende versies van opdrachten en herkent aanpassingen.\n- Business School Notenboom wil feedback centraal via Bureau Onderwijs afhandelen in plaats van per docent.\n- Papers zullen voorwaardelijk zijn voor mondelinge toetsing met een samenvatting van sterke en zwakke punten voor voorbereiding docent.\n\n### AI en Gebruik van Standaard AI-modellen\n- Reguliere AI-modellen zoals ChatGPT of Gemini bieden onvoldoende consistentie en explainability voor onderwijs.\n- Eduface heeft drieënhalf jaar geleden besloten een custom model te bouwen vanwege problemen met inconsistentie en verborgen aannames.\n- Het custom model zorgt voor betrouwbare en verklaarbare feedback zonder willekeurige uitspraken.\n- Uso van standaard API's is minder geschikt omdat deze afhankelijkheden en AI Act-compliance issues opleveren.\n\n### Kostprijsberekening en Besparing\n- Business School Notenboom heeft 175 studenten en 15 vakken per periode (30 per jaar) met gemiddeld 2 uur beoordeling per vak.\n- De berekening resulteert in 5.250 beoordelingen per jaar, wat ongeveer 5.250 uur beoordeling kost.\n- Met Eduface kan een tijdsbesparing van ongeveer 30 procent worden bereikt, gelijk aan circa 1.500 uur per jaar.\n- Dit levert een geschatte waarde van ongeveer 94.000 euro per jaar op.\n- Voor de pilot vraagt Eduface een investering van 450 euro met twee weken ondersteuning van Dante Torbed.\n\n### Juridische en Compliance Aangelegenheden\n- **Business School Notenboom is attent op AVG-compliance en het voorkomen van bias in AI-gegenereerde content.**\n- **De organisatie voert zorgvuldig controle uit op gegenereerde teksten om politieke of filosofische vooringenomenheid tegen te gaan.**\n- Eduface is GDPR-compliant en voldoet aan AI Act-vereisten.\n- Dante zal compliance-documenten naar Barbara sturen voor verdere interne behandeling.\n- Een Data Impact Assessment (DIA) is nog niet uitgevoerd door Business School Notenboom.\n\n### Taalondersteuning en Internationale Uitrol\n- De Eduface-tool ondersteunt zowel Nederlands als Engels met gescheiden omgevingen per taal.\n- Business School Notenboom bereidt internationale uitrol voor naar China en Nigeria.\n- Internationale studenten moeten minimaal 25 procent van hun opleiding in Nederland volgen voor een Nederlands diploma.\n- Er zijn tien verschillende onderwijsvarianten in voorbereiding voor internationale samenwerkingsmodellen.\n\n### Implementatie en Ondersteuning\n- Eduface kan alle beoordelingsformulieren centraal opzetten voor docenten, waardoor zij alleen opdrachten hoeven in te leveren.\n- De tool kan zonder uitgebreide docent-instructie tot 93 procent nauwkeurigheid bereiken op basis van beoordelingsformulieren.\n- Implementatie vereist een plan dat afgestemd moet zijn met andere lopende pilots.\n- Barbara wil eerst intern overleggen over timing en relevantie voordat een volledige implementatieplan wordt gemaakt.\n- Een vervolgafspraak is gepland voor donderdag om materialen door te nemen en voortgang te bespreken.\n\n### Pricing Model en Contractvoorwaarden\n- Eduface hanteert een apart pricing model voor particulier onderwijs anders dan voor reguliere instellingen.\n- Het model bestaat uit twee componenten: tool fee (ondersteuning, onboarding, software development) en infrastructuurkosten (AI-capaciteit).\n- Meerjaarskorting is beschikbaar bij contracten van drie of vijf jaar.\n- Contracten kunnen flexibel zijn, met mogelijkheid tot aanpassing na zes maanden.\n- Het aanbod zal inzicht geven in kosten voor voorbereiding van beoordelingsformulieren voor interne doorrekening.\n\n### Docenten en Organisatiestructuur\n- Business School Notenboom heeft ongeveer 75 docenten die elk slechts één of twee vakken geven.\n- De docenten zijn goed gekarteerd in relatie tot de vakken die zij verzorgen.\n- Beoordelingsformulieren zijn opgeslagen in de interne database en goed georganiseerd.\n- **Docenten werken op ZZP-basis en focussen op specifieke periodes, niet op structurele procesverbetering.**\n- Docenten zijn niet bereid extra voorbereidingswerk te doen zonder compensatie, ook al leidt dit tot latere lastenverlichting.",
+        "eigen_notitie": "Obstakels: \nPas relevant zodra de internationale uitrol gaat plaats vinden. \n\nDocenten kunnen zelf niet de tool instuweren dat moet bij het onderwijs bureau gebeuren dus dat moet zij zelf doen. En daar heeft ze nu geen tijd voor vindt ze.",
+        "transcript_beschikbaar": true,
+        "komend": false
+      },
+      {
+        "id": "acti_Hk4fd4DlEDiEpLi1Wywxkagjl8CCqzJohEXjpF7GX6v",
+        "soort": "meeting",
+        "datum": "2026-09-22",
+        "titel": "Barbara x Dante - Eduface",
+        "duur_min": 60,
+        "status": "upcoming",
+        "deelnemers": [
+          "b.suijkerbuijk@notenboom.nl",
+          "dante.torbed@eduface.me"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": true
+      }
+    ],
+    "open_taken": [],
+    "laatste_gesprek": "2026-08-21",
+    "volgende_afspraak": "2026-09-22",
+    "aantal_gehad": 6,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

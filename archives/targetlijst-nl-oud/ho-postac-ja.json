@@ -1,0 +1,62 @@
+[
+ {
+  "naam": "Universiteit Nyenrode B.V.",
+  "oordeel": "Ja",
+  "bewijs": "Private universiteit (B.V.), beoordeelt zelf. NVAO-rapport: \"Een door de student afgeronde en door de begeleider geaccordeerde scriptie wordt door een hoogleraar op inhoud beoordeeld\" en \"de scriptie wordt door twee beoordelaars uitgebreid beoordeeld\"; alle toetsen op basis van het vier-ogenprincipe. Poort 0 Ja (eigen examinatoren/hoogleraren + tweede lezer). Particulier Ja (private, niet-bekostigde universiteit). Duur >2 wkn. URL: https://publicaties.nvao.net/591999cda38f2_005409%20rapport%20Nyenrode%20wo-ma%20Executive%20Master%20of%20Finance%20and%20Control.pdf",
+  "categorie": "Private universiteit / post-master finance & control (MBA)"
+ },
+ {
+  "naam": "Wittenborg University of Applied Sciences",
+  "oordeel": "Ja",
+  "bewijs": "Particuliere hbo, beoordeelt zelf via eigen Exam Board/examinatoren. EEG Part 6: \"The Exam Board appoints examiners who are in charge of taking (partial) tests. Only staff members in charge of education in the educational unit concerned can be appointed examiner... Examiners shall always hold an academic qualification of at least master's level.\" Poort 0 Ja. Particulier Ja (private hbo, eigen bachelor/master). Duur >2 wkn. URL: https://www.wittenborg.eu/sites/default/files/wittenborg/pdf/downloads/eeg/eeg_part_6/PART%206%20-%20Graduation%20and%20Examination%20Board%20Regulations.pdf",
+  "categorie": "Particuliere hogeschool / business (bachelor + MBA/master)"
+ },
+ {
+  "naam": "Stichting Tyndale Theological Seminary",
+  "oordeel": "Ja",
+  "bewijs": "Private stichting, Engelstalige theologie-master, NVAO/ECTE-geaccrediteerd, beoordeelt zelf. NVAO-rapport: \"The first reader is a full-time faculty member at Tyndale, while the second reader is from outside of Tyndale... This contributes to the independency of the grading process\" en \"examinations are checked by peers (four-eyes principle) before they are given to\" studenten; \"The examination board appoints the examiners.\" Poort 0 Ja (eigen faculty beoordeelt thesis). Particulier Ja (private stichting, niet-bekostigd). Duur >2 wkn (master + thesis). URL: https://publicaties.nvao.net/prd/AV-1204_20230302_Rapport_Report%20Tyndale%20Theological%20Seminary%20final%20v211212.pdf",
+  "categorie": "Particuliere theologische opleiding (post-hbo master, Engelstalig)"
+ },
+ {
+  "naam": "St. Opleidingsinstituut GGZ Verpleegkundig Specialist",
+  "oordeel": "Ja",
+  "bewijs": "Aangewezen private hbo-masteropleiding (180 ECTS, 3 jaar) met eigen onderzoeks-/scriptieleerlijn en eigen toetsing. Citaat: \"Een praktijkbegeleider treedt op als coach en supervisor en beoordeelt het werk van de vios in de praktijk.\" (https://ggzvs.nl/de-opleiding/wat-doen-we/over-de-opleiding/praktijkleren/). De opleiding werkt volgens een eigen Protocol Toetsing en Beoordeling; werk wordt door de instelling zelf beoordeeld. Duur ruim >2 weken.",
+  "categorie": "Post-hbo master GGZ / zorg"
+ },
+ {
+  "naam": "Thomas More Hogeschool",
+  "oordeel": "Ja",
+  "bewijs": "Private (aangewezen) hbo-pabo (bachelor, 2,5-4 jaar) die haar eigen studenten toetst en beoordeelt via een eigen examencommissie. De hogeschool heeft een eigen examencommissie (contact: examencommissie@thomasmorehs.nl) en meldt op de opleidingspagina: \"Je krijgt structureel feedback waardoor je je snel ontwikkelt tot een zelfstandige leerkracht\" (https://www.thomasmorehs.nl/opleidingen/voltijd-pabo/ en https://www.thomasmorehs.nl/faq/). Afstudeeronderzoek wordt door eigen examinatoren beoordeeld. Duur >2 weken.",
+  "categorie": "Particuliere hbo-lerarenopleiding (pabo)"
+ },
+ {
+  "naam": "Stichting BV/BmS Opleidingen",
+  "oordeel": "Ja",
+  "bewijs": "Private stichting met graadverlening (MSc-erkend sinds nov. 2023), hbo-masteropleiding Constructief Ontwerpen (3 jaar deeltijd) die zelf beoordeelt via eigen examencommissie. Citaat: \"Het afstudeerwerk moet worden verdedigd voor de examencommissie.\" (https://www.bouwenmetstaal.nl/educatief/opleidingen/constructief-ontwerpen-bvbms). Duur >2 weken. NB: afstudeerwerk is grotendeels ontwerp/berekening van een staalconstructie, minder tekstueel schriftelijk werk.",
+  "categorie": "Technische hbo-master (constructief ontwerpen)"
+ },
+ {
+  "naam": "Nederlandse Orde van Belastingadviseurs (NOB) Beroepsopleiding",
+  "oordeel": "Ja",
+  "bewijs": "Private beroepsvereniging/stichting; verplichte 3-jarige Beroepsopleiding Belastingadviseurs waarin eigen docenten schriftelijk werk beoordelen. Citaat: \"Voor het overgrote deel van de cursussen moet een voorbereidingsopdracht worden gemaakt, waarvan het resultaat wordt beoordeeld door de docent.\" (https://www.nob.net/wp-content/uploads/2024/01/Voorwaarden-Beroepsopleiding-Belastingadviseurs-def.pdf). Duur >2 weken. NB: opleiding kent geen centraal examen; beoordeling betreft schriftelijke voorbereidingsopdrachten (relatief kort werk).",
+  "categorie": "Fiscale beroepsopleiding"
+ },
+ {
+  "naam": "Register Belastingadviseurs RB Academy",
+  "oordeel": "Ja",
+  "bewijs": "Private beroepsvereniging (Register Belastingadviseurs) met eigen modulaire opleiding en eigen schriftelijke toetsing plus optionele scriptie. Citaat: \"Elke module wordt afgesloten met een schriftelijk examen en na succesvolle afsluiting van alle 15 modules ontvang je het diploma Belastingconsulent.\" (https://rb.nl/onderwijs-programmas/programma-belastingconsulent/). De schriftelijke toetsen worden door Register Belastingadviseurs zelf afgenomen (https://rb.nl/rb-academy/). Duur >2 weken.",
+  "categorie": "Fiscale beroepsopleiding"
+ },
+ {
+  "naam": "Sioo",
+  "oordeel": "Ja",
+  "bewijs": "Particuliere onderwijsinstelling, langste programma's 9-13 maanden (ruim > 2 weken). Poort 0: Sioo beoordeelt deelnemers zelf. Leergangpagina Advanced Consulting and Change (12 maanden, 560 uur) vermeldt letterlijk een 'Week van proefbeoordelingsgesprekken' en 'Week van beoordelingsgesprekken', met praktijkopgaven gedurende de leergang (https://sioo.nl/opleiding/de-nieuwe-adviseur/). Succesvolle afronding geeft recht op de CMC-titel via beroepsvereniging Ooa. Kanttekening: beoordeling loopt deels via gesprekken; het geschreven component zit in de praktijkopgaven.",
+  "categorie": "Postacademische organisatie- en veranderkunde"
+ },
+ {
+  "naam": "Federatie Belastingadviseurs FB / opleiding",
+  "oordeel": "Ja",
+  "bewijs": "Particuliere (niet-bekostigde) fiscale beroepsopleiding, nu de RB Academy / Federatie Belasting Academie. Citaat: 'de beroepsopleiding van het Register Belastingadviseurs' (https://rb.nl/rb-academy/). De opleiding sluit af met een scriptie als afsluitend onderdeel en de overige modules met een praktijkgericht schriftelijk examen dat door Register Belastingadviseurs zelf wordt afgenomen; bij voldoende resultaat volgt het diploma. Meerjarig traject (>2 weken). Poort 0: opleider beoordeelt scriptie en examens zelf. Particulier: eigen beroepsopleiding van een branchevereniging, niet publiek bekostigd.",
+  "categorie": "Particuliere fiscale opleider"
+ }
+]

@@ -1,0 +1,89 @@
+/* ==========================================================================
+   Eduface — CORE tokens
+   Alleen het merk: kleur, font, radius, schaduw. Geen type-schaal, geen layout.
+   Elk oppervlak (web / slides / internal) importeert dit en zet er zijn eigen
+   type-schaal en spacing bovenop. Verander hier nooit iets per project.
+   ========================================================================== */
+
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Inter:wght@400;450;500;600;700&display=swap");
+
+@theme {
+  /* ---- Primitieven: merkkleuren (vast) ----------------------------------- */
+  --color-navy: #002333;
+  --color-green: #00e075;
+  --color-green-deep: #007b54;
+  --color-green-700: #006754;
+  --color-green-800: #004c4c;
+  --color-green-600: #008f5a;
+
+  /* ---- Primitieven: navy-getinte neutralen ------------------------------- */
+  --color-ink-950: #002333;
+  --color-ink-900: #0a2c3b;
+  --color-ink-700: #2c4a57;
+  --color-ink-500: #5b7480;
+  --color-ink-300: #a9bcc4;
+  --color-ink-200: #cdd9de;
+  --color-ink-100: #e7eef0;
+  --color-ink-50:  #f3f7f8;
+  --color-white:   #ffffff;
+
+  /* ---- Semantisch: HIER naar verwijzen, nooit naar de primitieven -------- */
+  --color-background: var(--color-white);
+  --color-surface:    var(--color-ink-50);
+  --color-foreground: var(--color-ink-950);
+  --color-muted:      var(--color-ink-500);
+  --color-border:     var(--color-ink-100);
+  --color-border-strong: var(--color-ink-200);
+
+  --color-primary: var(--color-navy);
+  --color-primary-foreground: var(--color-white);
+  --color-accent: var(--color-green);
+  --color-accent-foreground: var(--color-navy);
+  --color-ring: var(--color-green);
+
+  /* ---- Inverse (navy blok, witte tekst) ---------------------------------- */
+  --color-background-inverse: var(--color-navy);
+  --color-surface-inverse: var(--color-ink-900);
+  --color-foreground-inverse: var(--color-white);
+  --color-foreground-inverse-soft: rgba(255, 255, 255, 0.62);
+  --color-border-inverse: rgba(255, 255, 255, 0.12);
+  --color-primary-on-inverse: var(--color-white);
+  --color-primary-on-inverse-foreground: var(--color-navy);
+
+  /* ---- Status: alleen voor bevestigde toestanden, nooit als 'gunstig cijfer' -- */
+  --color-success: var(--color-green-deep);
+  --color-warning: #b26a00;
+  --color-danger:  #b3261e;
+  --color-info:    var(--color-ink-700);
+
+  /* ---- Fonts -------------------------------------------------------------- */
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "League Spartan", var(--font-sans);
+  --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* ---- Radius ------------------------------------------------------------- */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 10px;
+  --radius-xl: 12px;
+  --radius-2xl: 20px;
+  --radius-full: 9999px;
+
+  /* ---- Schaduw ------------------------------------------------------------ */
+  --shadow-sm: 0 1px 2px rgba(0, 35, 51, 0.06);
+  --shadow-md: 0 4px 16px rgba(0, 35, 51, 0.08);
+  --shadow-lg: 0 12px 40px rgba(0, 35, 51, 0.10);
+}
+
+@layer base {
+  html { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+  body {
+    background: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+  }
+  h1, h2, h3, h4 { font-family: var(--font-display); text-wrap: balance; }
+  p { text-wrap: pretty; }
+  :focus-visible { outline: 2px solid var(--color-ring); outline-offset: 2px; }
+}

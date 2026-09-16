@@ -1,0 +1,77 @@
+{
+  "slug": "novi-hogeschool",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_nzbIykVWwfXSkPFbiBUJSA3JaVdyGqZLvVO9YPQvQMa",
+    "naam": "NOVI Hogeschool",
+    "url": "https://app.close.com/lead/lead_nzbIykVWwfXSkPFbiBUJSA3JaVdyGqZLvVO9YPQvQMa/",
+    "lead_status": "Prospect",
+    "opportunity_id": null,
+    "fase": null,
+    "fase_type": null,
+    "waarde": null,
+    "valuta": "EUR",
+    "confidence": null,
+    "close_date": null,
+    "eigenaar": "Eduface CRM",
+    "crm_note": "",
+    "contacten": [
+      {
+        "naam": "Larissa Petrus - Al Bazi",
+        "titel": "Manager Educational Development & Quality at NOVI Hogeschool",
+        "email": null,
+        "id": "cont_sip5InjddI9Ilozitld78sKxnvzZSV96iTnWJrXsBCe"
+      },
+      {
+        "naam": "Marloes van der Have",
+        "titel": "operationeel directeur van de Calder Academie, bestaande uit Novi, NAVB en TMO",
+        "email": "m.vanderhave@novi.nl",
+        "id": "cont_k3LZcwwbD2ASlCu8mWbvt4BNuKj4clEFB8cA8Jtsel6"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_SSrpNvTJFYpn0nl18c3i8pKmwlRL1cWGlYVtovWm0gB",
+        "soort": "call",
+        "datum": "2026-08-05",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "NOVI gaat in september fuseren met Capabel onderwijs en een andere hogeschool. Calder holding wordt het. \n\nWaarom ze gaan fuseren weet ik niet maar is wel interessant ook. \n\nWel zij ze dat zulke besluiten niet gemaakt worden door haar directe collega’s of zij zelf. Dat kan enkel de operationele directeur doen Marloes. \n\nZij zegt dat het interessant klinkt maar wel dat alle docenten van NOVI zelf ook IT onderlegd zijn en een niet al te makkelijke groep is om onze innovatie aan te verkopen.",
+        "transcript_beschikbaar": false,
+        "komend": false
+      }
+    ],
+    "open_taken": [],
+    "laatste_gesprek": "2026-08-05",
+    "volgende_afspraak": null,
+    "aantal_gehad": 1,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

@@ -1,0 +1,352 @@
+<title>Missende groepen in de NL-targetlijst</title>
+
+<style>
+  :root {
+    --paper: #ffffff;
+    --ground: #f2f6f6;
+    --ink: #07222e;
+    --ink-soft: #4d6874;
+    --ink-faint: #7d949d;
+    --rule: #dbe5e6;
+    --accent: #007b54;
+    --accent-soft: #e2f2ea;
+    --flag: #9a5b06;
+    --flag-soft: #fbf0dd;
+    --shadow: 0 1px 2px rgba(7, 34, 46, .05), 0 8px 24px -16px rgba(7, 34, 46, .28);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #0c2029;
+      --ground: #06161d;
+      --ink: #e8f1f1;
+      --ink-soft: #9fb6bd;
+      --ink-faint: #7a9199;
+      --rule: #1c3742;
+      --accent: #00e075;
+      --accent-soft: #0d3a2c;
+      --flag: #e8a94a;
+      --flag-soft: #3a2c11;
+      --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px -16px rgba(0, 0, 0, .8);
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --paper: #0c2029;
+    --ground: #06161d;
+    --ink: #e8f1f1;
+    --ink-soft: #9fb6bd;
+    --ink-faint: #7a9199;
+    --rule: #1c3742;
+    --accent: #00e075;
+    --accent-soft: #0d3a2c;
+    --flag: #e8a94a;
+    --flag-soft: #3a2c11;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px -16px rgba(0, 0, 0, .8);
+  }
+
+  :root[data-theme="light"] {
+    --paper: #ffffff;
+    --ground: #f2f6f6;
+    --ink: #07222e;
+    --ink-soft: #4d6874;
+    --ink-faint: #7d949d;
+    --rule: #dbe5e6;
+    --accent: #007b54;
+    --accent-soft: #e2f2ea;
+    --flag: #9a5b06;
+    --flag-soft: #fbf0dd;
+    --shadow: 0 1px 2px rgba(7, 34, 46, .05), 0 8px 24px -16px rgba(7, 34, 46, .28);
+  }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 3.5rem 1.5rem 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .eyebrow {
+    font-size: .7rem;
+    font-weight: 600;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+  }
+
+  header { display: flex; flex-direction: column; gap: .9rem; }
+
+  h1 {
+    font-size: clamp(2rem, 5.5vw, 2.9rem);
+    line-height: 1.08;
+    letter-spacing: -.03em;
+    font-weight: 800;
+    text-wrap: balance;
+    margin: 0;
+  }
+
+  .lede { color: var(--ink-soft); max-width: 42rem; }
+
+  .caveat {
+    display: flex;
+    gap: .85rem;
+    align-items: flex-start;
+    background: var(--flag-soft);
+    border-left: 3px solid var(--flag);
+    border-radius: 0 6px 6px 0;
+    padding: .9rem 1.1rem;
+    font-size: .93rem;
+  }
+  .caveat strong { color: var(--flag); }
+
+  section { display: flex; flex-direction: column; gap: 1.25rem; }
+
+  h2 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: -.01em;
+    margin: 0;
+    padding-bottom: .6rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .groups { display: flex; flex-direction: column; gap: .9rem; }
+
+  .group {
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 1.15rem 1.3rem;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: .55rem;
+  }
+
+  .group-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: .5rem;
+  }
+
+  .group h3 {
+    font-size: 1.06rem;
+    font-weight: 700;
+    letter-spacing: -.015em;
+    margin: 0;
+  }
+
+  .tag {
+    flex: none;
+    font-size: .66rem;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    padding: .2rem .55rem;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+  .tag.hoog { background: var(--accent-soft); color: var(--accent); }
+  .tag.middel { background: transparent; color: var(--ink-faint); border: 1px solid var(--rule); }
+  .tag.beslis { background: var(--flag-soft); color: var(--flag); }
+
+  .group p { margin: 0; font-size: .95rem; color: var(--ink-soft); }
+  .group p.namen { color: var(--ink); }
+  .group p.namen span { color: var(--ink-faint); }
+
+  .note {
+    font-size: .88rem;
+    color: var(--ink-soft);
+    padding-left: .85rem;
+    border-left: 2px solid var(--accent);
+  }
+
+  ol.vragen, ul.flags { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: .85rem; }
+  ol.vragen li { display: flex; gap: .8rem; font-size: .95rem; color: var(--ink-soft); }
+  ol.vragen li .num {
+    flex: none;
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    color: var(--accent);
+    width: 1.2rem;
+  }
+  ol.vragen li strong, ul.flags li strong { color: var(--ink); font-weight: 650; }
+
+  ul.flags li {
+    font-size: .95rem;
+    color: var(--ink-soft);
+    padding-left: 1.1rem;
+    position: relative;
+  }
+  ul.flags li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: .62em;
+    width: .42rem;
+    height: .42rem;
+    border-radius: 2px;
+    background: var(--flag);
+  }
+
+  footer {
+    font-size: .82rem;
+    color: var(--ink-faint);
+    border-top: 1px solid var(--rule);
+    padding-top: 1.2rem;
+  }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: .85em;
+    background: var(--ground);
+    padding: .1em .35em;
+    border-radius: 4px;
+  }
+</style>
+
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">Targetlijst NL · 21 juli 2026</div>
+    <h1>Missende groepen in de NL-targetlijst</h1>
+    <p class="lede">De bestaande lijst van 33 rijen dekt Salta plus merken, erkende private HBO/MBO-instellingen en een handvol business schools. Wat ontbreekt zijn hele categorieën, geen losse namen. Hieronder tien.</p>
+    <div class="caveat">
+      <div><strong>Niet geverifieerd.</strong> Het bronnenonderzoek is stopgezet. Namen zijn kandidaten: schaal, eigenaar, LMS en beoordelingsvorm moeten nog gecheckt worden voordat dit een werklijst wordt.</div>
+    </div>
+  </header>
+
+  <section>
+    <h2>De tien groepen</h2>
+    <div class="groups">
+
+      <article class="group">
+        <div class="group-head">
+          <h3>Zorg, psychologie en postmaster</h3>
+          <span class="tag hoog">Sterkste fit</span>
+        </div>
+        <p class="namen">RINO Groep en de andere RINO's, PAO Psychologie, opleiders voor GZ-psycholoog en psychotherapeut, particuliere coach- en counsellingopleidingen <span>(NOBCO-erkend)</span></p>
+        <p>Beoordeelt casus- en reflectieverslagen, over tijd, door meerdere beoordelaars, tegen een geregistreerd eisenkader. Dat is bijna letterlijk het ICP. Staat nu volledig niet op de lijst.</p>
+      </article>
+
+      <article class="group">
+        <div class="group-head">
+          <h3>Commerciële BV's van hogescholen</h3>
+          <span class="tag hoog">Hoog</span>
+        </div>
+        <p class="namen">Saxion Next, Hanze Professionals, HU Academy, Fontys Pro, Windesheim bedrijfsopleidingen, HAN contractonderwijs, Zuyd Professional</p>
+        <p>Avans+ staat er al op en is geen uitzondering. Vrijwel elke hogeschool heeft een private tak met betalende deelnemers, eigen P&amp;L en geen aanbestedingsplicht.</p>
+        <p class="note">Tweede ingang bij accounts waar we al praten, via een warme brug naar de bekostigde moeder.</p>
+      </article>
+
+      <article class="group">
+        <div class="group-head">
+          <h3>Beroeps- en certificeringsopleiders buiten Salta</h3>
+          <span class="tag hoog">Hoog</span>
+        </div>
+        <p class="namen">NBA-opleidingen en de praktijkopleiding RA/AA, de beroepsopleiding advocaten, OSR Juridische Opleidingen, Grotius Academie, SRM, NIMA, NEVI, Schouten &amp; Nelissen, Dirksen, opleidingen van het Register Belastingadviseurs</p>
+        <p>Markus Verbeek en NIBE-SVV zitten er in, maar dat is alleen de Salta-hoek. Finance, juridisch, HR, marketing en inkoop ontbreken verder volledig.</p>
+        <p class="note">Filter: puur multiple choice is geen fit. Casusopdrachten, praktijkopdrachten en scripties tegen een vast eisenkader wel.</p>
+      </article>
+
+      <article class="group">
+        <div class="group-head">
+          <h3>Taal, tolken en vertalen</h3>
+          <span class="tag hoog">Hoog</span>
+        </div>
+        <p class="namen">Babel, ITV Hogeschool voor Tolken en Vertalen, Regina Coeli, Direct Dutch, NT2-opleiders</p>
+        <p>Schrijfvaardigheid en vertalingen zijn per definitie open beoordeling op volume. Babel staat als voorbeeld in het ICP-document maar niet op de lijst, dat is een directe gemiste rij.</p>
+      </article>
+
+      <article class="group">
+        <div class="group-head">
+          <h3>Exec-ed takken van universiteiten</h3>
+          <span class="tag middel">Middel</span>
+        </div>
+        <p class="namen">RSM Executive Education, UMIO (Maastricht), Amsterdam Business School exec (UvA), In the LEAD (RUG)</p>
+        <p>TIAS staat er op, de rest niet. Aparte entiteiten met commerciële besluitvorming. Bij de RUG loopt al een traject, dus de exec-tak is daar mogelijk een aparte deal binnen hetzelfde account.</p>
+      </article>
+
+      <article class="group">
+        <div class="group-head">
+          <h3>Private IT- en tech-opleiders</h3>
+          <span class="tag middel">Middel</span>
+        </div>
+        <p class="namen">NOVI Hogeschool, Winc Academy, Techgrounds, Ironhack Amsterdam, Computrain, Vijfhart, Master IT</p>
+        <p>NOVI Hogeschool is een gemiste erkende private instelling. Bootcamps beoordelen veel code en projecten, maar vaak zonder vast eisenkader, dus per aanbieder checken.</p>
+      </article>
+
+      <article class="group">
+        <div class="group-head">
+          <h3>Academies van uitgevers en kennisbedrijven</h3>
+          <span class="tag middel">Middel</span>
+        </div>
+        <p class="namen">Wolters Kluwer opleidingen, Sdu Opleidingen, Berghauser Pont Academy, Euroforum, Vakmedianet, Kerckebosch</p>
+        <p>SBO staat er als enige op, terwijl dit een breder cluster met hetzelfde model is. Veel losse eendaagse trainingen zonder beoordeling, alleen de meerdaagse leergangen met eindwerkstuk tellen mee.</p>
+      </article>
+
+      <article class="group">
+        <div class="group-head">
+          <h3>Sector- en branche-opleiders met portfoliobeoordeling</h3>
+          <span class="tag middel">Wisselend</span>
+        </div>
+        <p class="namen">VAPRO, PBNA, Kenteq, Bouwmensen</p>
+        <p>Techniek, procesindustrie, bouw, transport en veiligheid, met veel praktijkopdrachten en portfolio's. Wisselende fit, veel hiervan is praktijkexamen in plaats van geschreven werk.</p>
+      </article>
+
+      <article class="group">
+        <div class="group-head">
+          <h3>Creatieve en media-academies</h3>
+          <span class="tag middel">Laag volume</span>
+        </div>
+        <p class="namen">SAE Institute Amsterdam, Herman Brood Academie, Fotoacademie, Schrijversvakschool</p>
+        <p>Klein maar particulier en beoordelingszwaar. Lage prioriteit qua ACV, wel snelle beslissers.</p>
+      </article>
+
+      <article class="group">
+        <div class="group-head">
+          <h3>Particulier voortgezet onderwijs en examentraining</h3>
+          <span class="tag beslis">Beslissing nodig</span>
+        </div>
+        <p class="namen">Luzac, Winford, particuliere lycea</p>
+        <p>Geen hoger onderwijs, maar wel particulier, betalend, met schrijfopdrachten over tijd. Valt nu buiten het ICP-document. Als je het meeneemt hoort het een eigen segment te worden, geen rij in deze lijst.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Open vragen, eerst beantwoorden</h2>
+    <ol class="vragen">
+      <li><span class="num">1</span><div><strong>Zijn er nog meer koepels zoals Salta?</strong> De lijst behandelt Salta als de enige roll-up. Een tweede private-equity-eigenaar met meerdere opleidingsmerken is direct een tier-1 kans. Nog niet uitgezocht.</div></li>
+      <li><span class="num">2</span><div><strong>Wat is de ondergrens?</strong> De creatieve academies en het particulier VO leveren deals van €6.000 tot €15.000. Bij een gemiddelde deal van €10.000 is de vraag of die de saleslast waard zijn, of dat de lijst onder tier 3 stopt.</div></li>
+      <li><span class="num">3</span><div><strong>Horen de commerciële takken in dit ICP of in het hogeschool-ICP?</strong> Ze zijn particulier bekostigd, maar de inkoop loopt vaak alsnog langs de moederinstelling. Dat verandert de sales complexity.</div></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Datakwaliteit bestaande lijst</h2>
+    <ul class="flags">
+      <li><strong>Tio Business School</strong> staat in de lijst op <code>In pipeline = Nee</code>, maar in Close op status "Actief". Kolom is verouderd, check hem in één keer tegen Close.</li>
+      <li><strong>Babel</strong> staat als ICP-voorbeeld in het brondocument maar niet in de lijst.</li>
+      <li><strong>Open Universiteit</strong> staat in deze lijst terwijl het publiek bekostigd en aanbestedingsplichtig is. Dat botst met het eerste ICP-criterium en hoort waarschijnlijk in het hogeschool-ICP.</li>
+    </ul>
+  </section>
+
+  <footer>
+    Bron: <code>projects/targetlijst-nl/</code> · ICP-document en targetlijst v1 aangeleverd 21 juli 2026 · geen bronvalidatie uitgevoerd
+  </footer>
+
+</div>

@@ -1,0 +1,84 @@
+{
+  "slug": "stichting-opleidingsinstelling-ggz-vs",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_Timq5ZS9KDvXdO8tQFmVXTFtVZb9Z8TIUkxbMgmTvzO",
+    "naam": "Stichting Opleidingsinstelling GGZ-VS",
+    "url": "https://app.close.com/lead/lead_Timq5ZS9KDvXdO8tQFmVXTFtVZb9Z8TIUkxbMgmTvzO/",
+    "lead_status": "Prospect",
+    "opportunity_id": null,
+    "fase": null,
+    "fase_type": null,
+    "waarde": null,
+    "valuta": "EUR",
+    "confidence": null,
+    "close_date": null,
+    "eigenaar": "Eduface CRM",
+    "crm_note": "",
+    "contacten": [
+      {
+        "naam": "Noortje Sax",
+        "titel": "Directeur-bestuurder",
+        "email": "n.sax@nvvp.net",
+        "id": "cont_P1b3b0g13bSWNjP8hSxGfejwDm0xXybfRYdaeB4H7BN"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_LVEWTRGFRbFNzUxvVlCDNZj0h6Q6Nn9i5XfuPsDux15",
+        "soort": "call",
+        "datum": "2026-08-18",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Verkeerd nummer van Lemlist gekregen",
+        "transcript_beschikbaar": true,
+        "komend": false
+      },
+      {
+        "id": "acti_THndgMNuqiyaLvoqJfufYmzhFlGH8XGVOpi5XqRkRCh",
+        "soort": "call",
+        "datum": "2026-08-18",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Lusha nr VM weet nog niet zeker of het de juiste nummer is maar denk het wel",
+        "transcript_beschikbaar": true,
+        "komend": false
+      }
+    ],
+    "open_taken": [],
+    "laatste_gesprek": "2026-08-18",
+    "volgende_afspraak": null,
+    "aantal_gehad": 2,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

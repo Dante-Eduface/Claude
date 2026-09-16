@@ -1,0 +1,102 @@
+{
+  "slug": "erasmus-universiteit-rotterdam",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_hqfalwCod32lXq2bvMLiVBJfmIKruUC0KjFBWojeiup",
+    "naam": "Erasmus Universiteit Rotterdam",
+    "url": "https://app.close.com/lead/lead_hqfalwCod32lXq2bvMLiVBJfmIKruUC0KjFBWojeiup/",
+    "lead_status": "Prospect",
+    "opportunity_id": null,
+    "fase": null,
+    "fase_type": null,
+    "waarde": null,
+    "valuta": "EUR",
+    "confidence": null,
+    "close_date": null,
+    "eigenaar": "Eduface CRM",
+    "crm_note": "",
+    "contacten": [
+      {
+        "naam": "Miriam Koning",
+        "titel": "Academic Director",
+        "email": "mkoning@rsm.nl",
+        "id": "cont_EmKhvtbunnx53KdDHsTqvlZGtYmtcB5Q9rXiPZmIEVd"
+      },
+      {
+        "naam": "Yu Liu",
+        "titel": "Academic Director",
+        "email": "y.liu@rsm.nl",
+        "id": "cont_AX1v5h3kwcSCCENTuFUD3vuJ2eoD3ElHXu6Jg4ArZKf"
+      },
+      {
+        "naam": "Ting Li",
+        "titel": "Academic Director",
+        "email": "tli@rsm.nl",
+        "id": "cont_JZhcdLPcB5aufHNO8C51kUbXh497l2tm3SDzt6Pqm2p"
+      },
+      {
+        "naam": "Mariapia Di Palma CPCC CNTC ACC",
+        "titel": "Manager Registrar's Office, Registrar, Academic Services",
+        "email": "benischke@rsm.nl",
+        "id": "cont_H5hZ10lSBieGd8LVzIpfYxuwpwV8OGXT1jD2bMrCLTh"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_iDPvM4J9fqPtyocmyl3rI4DnLgG8rerqG3uWQy4Tn8H",
+        "soort": "call",
+        "datum": "2026-04-20",
+        "titel": "Telefoon outbound",
+        "duur_min": 7,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Het gesprek leidde nergens concreet naar toe maar die gene ging ons wel meteen opzoeken. Website is belangrijk. Ik belde naar de commerciële kant van RSM. Ze zat aan de police kant, en wist wel mensen aan die kant.",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_uJmupyBeCjhzo6jGSo6HvZ4px16aJZMbErG00SioskU",
+        "soort": "call",
+        "datum": "2026-04-20",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Zou het op de mail moeten gaan zetten, ga het niet doen.\nHet was de head of Educatie alleen hij zat meer op leiderschap.",
+        "transcript_beschikbaar": false,
+        "komend": false
+      }
+    ],
+    "open_taken": [],
+    "laatste_gesprek": "2026-04-20",
+    "volgende_afspraak": null,
+    "aantal_gehad": 2,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

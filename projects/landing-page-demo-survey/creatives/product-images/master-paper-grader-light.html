@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Master frame light · Paper Grader, only the Eduface feedback in words</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  /* Tokens: references/design-system/core/tokens.css + internal/tokens.css. Geen losse waarden. */
+  :root{
+    --navy:#002333; --green:#00e075; --green-deep:#007b54;
+    --ink-900:#0a2c3b; --ink-700:#2c4a57; --ink-500:#5b7480; --ink-300:#a9bcc4; --ink-200:#cdd9de; --ink-100:#e7eef0; --ink-50:#f3f7f8;
+    --danger:#b3261e; --white:#fff;
+    --r-sm:6px; --r-md:8px; --r-lg:10px; --r-xl:12px; --r-2xl:20px;
+    --sh-md:0 4px 16px rgba(0,35,51,.08); --sh-lg:0 12px 40px rgba(0,35,51,.10);
+    --row-h:36px; --control-h:32px; --pad:16px;
+  }
+  *{box-sizing:border-box;margin:0}
+  html,body{background:var(--ink-50);font-family:Inter,ui-sans-serif,system-ui,sans-serif;color:var(--navy);-webkit-font-smoothing:antialiased}
+  body{width:1600px;height:900px;overflow:hidden;display:grid;place-items:center}
+
+  /* Drie tekstgroottes: 17/600 naam, 24/600 held, 14/400 rest (herontwerp-regel). */
+  .t-name{font-size:17px;font-weight:600;line-height:1.3}
+  .t-hero{font-size:24px;font-weight:600;line-height:1.2;font-variant-numeric:tabular-nums}
+  .t{font-size:14px;font-weight:400;line-height:1.5}
+  .muted{color:var(--ink-500)}
+
+  .frame{width:1440px;height:800px;background:var(--white);border-radius:var(--r-2xl);box-shadow:var(--sh-lg);border:1px solid var(--ink-100);display:flex;flex-direction:column;overflow:hidden}
+
+  /* Topbalk 48px: breadcrumb + navigatie door de batch */
+  .top{height:48px;border-bottom:1px solid var(--ink-100);display:flex;align-items:center;justify-content:space-between;padding:0 24px;flex-shrink:0}
+  .crumb{display:flex;align-items:center;gap:8px}
+  .crumb .sep{color:var(--ink-300)}
+  .nav{display:flex;align-items:center;gap:12px}
+  .nav .arrow{width:var(--control-h);height:var(--control-h);border:1px solid var(--ink-200);border-radius:var(--r-md);display:grid;place-items:center;color:var(--ink-700)}
+  .nav .arrow svg{width:14px;height:14px}
+
+  .body{flex:1;display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);min-height:0}
+
+  /* Document */
+  .doc{padding:32px 40px;border-right:1px solid var(--ink-100);display:flex;flex-direction:column;gap:16px;overflow:hidden;position:relative}
+  .doc .head{display:flex;justify-content:space-between;align-items:baseline;gap:16px}
+  .doc h1{font-size:17px;font-weight:600}
+  .doc p{font-size:14px;line-height:1.65;color:var(--ink-700);max-width:68ch}
+  .doc h2{font-size:14px;font-weight:600;color:var(--navy);padding-top:8px}
+  .mark{background:rgba(0,224,117,.22);box-shadow:inset 0 -2px 0 var(--green-deep);border-radius:2px;padding:1px 0}
+
+  /* Voorgestelde opmerking, verankerd onder de passage */
+  .comment{border:1px solid var(--ink-200);border-radius:var(--r-xl);background:var(--white);box-shadow:var(--sh-md);padding:var(--pad);display:flex;flex-direction:column;gap:12px;max-width:560px;position:relative}
+  .comment .meta{display:flex;align-items:center;gap:8px}
+  .comment .meta .dot{width:8px;height:8px;border-radius:50%;background:var(--ink-300)}
+  .comment q{font-style:italic;color:var(--ink-500);quotes:"\201C" "\201D"}
+  .comment .text{color:var(--navy)}
+  .acts{display:flex;align-items:center;gap:8px}
+  .btn{height:var(--control-h);padding:0 14px;border-radius:var(--r-md);font-size:14px;font-weight:500;display:inline-flex;align-items:center;gap:6px;border:1px solid transparent;white-space:nowrap}
+  .btn.pri{background:var(--navy);color:var(--white)}
+  .btn.sec{background:var(--white);border-color:var(--ink-200);color:var(--navy)}
+  .btn.ghost{color:var(--ink-500);padding:0 8px}
+  .btn svg{width:14px;height:14px}
+
+  /* Eerder goedgekeurde opmerking, klein: bevestigde status = groen met vinkje */
+  .approved{display:inline-flex;align-items:center;gap:6px;color:var(--green-deep);font-weight:500}
+  .approved svg{width:14px;height:14px}
+  .prior{border-left:2px solid var(--ink-200);padding:4px 0 4px 14px;display:flex;flex-direction:column;gap:4px;max-width:560px}
+
+  /* Rubric-paneel */
+  .rub{padding:32px 32px 24px;display:flex;flex-direction:column;gap:0;background:var(--white)}
+  .rub .title{display:flex;justify-content:space-between;align-items:baseline;padding-bottom:12px}
+  .row{height:44px;display:grid;grid-template-columns:minmax(0,1fr) 48px 104px;align-items:center;gap:12px;border-top:1px solid var(--ink-100)}
+  .row:last-of-type{border-bottom:1px solid var(--ink-100)}
+  .row .w{color:var(--ink-500);text-align:right;font-variant-numeric:tabular-nums}
+  .row .s{text-align:right;font-variant-numeric:tabular-nums}
+  .row.att .name{color:var(--danger);font-weight:500}
+  .row.att .s{color:var(--danger);font-weight:500;display:inline-flex;justify-content:flex-end;align-items:center;gap:6px;white-space:nowrap}
+  .row.att .s svg{width:14px;height:14px;flex-shrink:0}
+  .general{margin-top:auto;padding-top:20px;border-top:1px solid var(--ink-100);display:flex;flex-direction:column;gap:12px}
+  .general .meta{display:flex;align-items:center;gap:8px}
+  .general .dot{width:8px;height:8px;border-radius:50%;background:var(--ink-300)}
+  .grade{display:flex;flex-direction:column;gap:16px;padding-top:24px}
+  .grade .line{display:flex;justify-content:space-between;align-items:baseline}
+  .grade .num{display:flex;align-items:baseline;gap:8px}
+  .grade .why{color:var(--ink-500)}
+  .grade .cta{display:flex;align-items:center;justify-content:space-between;gap:12px;border-top:1px solid var(--ink-100);padding-top:16px}
+
+  /* Skeleton: alles wat niet de Eduface-feedback of de gemarkeerde passage is */
+  .lns{display:flex;flex-direction:column;gap:11px}
+  .ln{display:block;height:9px;border-radius:4px;background:var(--ink-100)}
+  .ln.h{height:13px;border-radius:5px;background:var(--ink-200)}
+  .ln.sub{background:var(--ink-100);opacity:.75}
+
+  /* Callouts voor how-it-works, uit te zetten met body.plain */
+  .co{position:absolute;width:28px;height:28px;border-radius:50%;background:var(--navy);color:var(--white);font-size:13px;font-weight:600;display:grid;place-items:center;box-shadow:0 0 0 4px var(--white);z-index:3}
+  body.plain .co{display:none}
+</style></head>
+<body class="plain">
+<div class="frame">
+  <div class="top">
+    <div class="crumb t">
+      <span class="muted">Contract Law · Essay 1</span><span class="sep">/</span><span>Submission 140 of 142</span>
+    </div>
+    <div class="nav t">
+      <span class="muted">Waiting 6 days</span>
+      <span class="arrow"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3 5 8l5 5"/></svg></span>
+      <span class="arrow"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m6 3 5 5-5 5"/></svg></span>
+    </div>
+  </div>
+
+  <div class="body">
+    <div class="doc">
+      <div class="head" style="align-items:center">
+        <span class="ln h" style="width:58%"></span>
+        <span class="t muted">2,140 words</span>
+      </div>
+      <div class="lns" style="max-width:640px">
+        <span class="ln" style="width:96%"></span><span class="ln" style="width:100%"></span>
+        <span class="ln" style="width:88%"></span><span class="ln" style="width:64%"></span>
+      </div>
+      <span class="ln h" style="width:32%;margin-top:6px"></span>
+      <p style="max-width:640px">In <span class="mark">Williams v Roffey Bros the Court of Appeal held that a promise to pay more for the same work was enforceable, because the promisor obtained a practical benefit. This shows that consideration can now be found in almost any commercial situation.</span></p>
+
+      <div class="comment">
+        <span class="co" style="top:-14px;left:-14px">2</span>
+        <div class="meta t"><span class="dot"></span><span class="muted">Suggested comment</span><span class="sep muted">·</span><span>Use of authority</span></div>
+        <div class="text t">Roffey concerned a variation of an existing contract, not the formation of a new one. Say what the case decided before you generalise from it, and cite the passage of Glidewell LJ's judgment you are relying on.</div>
+        <div class="acts">
+          <span class="btn pri"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 8.5 3 3 7-7"/></svg>Approve</span>
+          <span class="btn sec">Edit</span>
+          <span class="btn ghost">Discard</span>
+        </div>
+      </div>
+
+      <div class="lns" style="max-width:640px">
+        <span class="ln" style="width:92%"></span><span class="ln" style="width:100%"></span><span class="ln" style="width:70%"></span>
+      </div>
+      <span class="ln h" style="width:26%;margin-top:6px"></span>
+      <div class="lns" style="max-width:640px">
+        <span class="ln" style="width:100%"></span><span class="ln" style="width:94%"></span>
+        <span class="ln" style="width:98%"></span><span class="ln" style="width:58%"></span>
+      </div>
+      <span class="co" style="top:262px;left:2px">1</span>
+    </div>
+
+    <div class="rub">
+      <div class="title"><span class="t-name">Score per criterion</span><span class="t muted">Weight · Score</span></div>
+      <div class="row t"><span class="name"><span class="ln" style="width:58%"></span></span><span class="w">25%</span><span class="s">8 / 10</span></div>
+      <div class="row t"><span class="name"><span class="ln" style="width:72%"></span></span><span class="w">20%</span><span class="s">9 / 10</span></div>
+      <div class="row t att" style="position:relative"><span class="name"><span class="ln" style="width:46%"></span></span><span class="w">20%</span><span class="s"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 1.5 13.5h13L8 2z"/><path d="M8 6.5v3M8 11.5v.5"/></svg>needs you</span><span class="co" style="top:8px;left:-46px">3</span></div>
+      <div class="row t"><span class="name"><span class="ln" style="width:64%"></span></span><span class="w">20%</span><span class="s">7 / 10</span></div>
+      <div class="row t"><span class="name"><span class="ln" style="width:54%"></span></span><span class="w">15%</span><span class="s">9 / 10</span></div>
+
+      <div class="general">
+        <div class="meta t"><span class="dot"></span><span class="muted">General feedback</span><span class="muted">·</span><span>draft</span></div>
+        <div class="t">Clear position, tested against the cases in order. The weak point is authority: twice you say what a case "shows" without saying what it decided.</div>
+        <div class="acts"><span class="btn sec"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 8.5 3 3 7-7"/></svg>Approve</span><span class="btn ghost">Edit</span></div>
+      </div>
+
+      <div class="grade">
+        <div class="line">
+          <span class="num"><span class="t-hero">8.2</span><span class="t muted">/ 10 proposed</span></span>
+          <span class="t muted">1 criterion open</span>
+        </div>
+        <div class="lns" style="gap:9px"><span class="ln" style="width:86%"></span><span class="ln" style="width:52%"></span></div>
+        <div class="cta" style="position:relative">
+          <span class="t muted">Approving sends the grade to the gradebook.</span>
+          <span class="btn pri">Approve grade</span>
+          <span class="co" style="top:-14px;right:-14px">4</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body></html>

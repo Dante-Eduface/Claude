@@ -1,0 +1,142 @@
+{
+  "slug": "uva-minds",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_fo6HFy6yq92eH09PW3taFbemaV5tUKYGkR78fzGNrbk",
+    "naam": "UvA Minds",
+    "url": "https://app.close.com/lead/lead_fo6HFy6yq92eH09PW3taFbemaV5tUKYGkR78fzGNrbk/",
+    "lead_status": "Nurturing",
+    "opportunity_id": null,
+    "fase": null,
+    "fase_type": null,
+    "waarde": null,
+    "valuta": "EUR",
+    "confidence": null,
+    "close_date": null,
+    "eigenaar": "Eduface CRM",
+    "crm_note": "",
+    "contacten": [
+      {
+        "naam": "Diego pos",
+        "titel": "",
+        "email": "diego@diegopos.nl",
+        "id": "cont_RzKWs5wfUnMcDyiS9VqfHVQfEaINZeO8HpHFXAkhBGM"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_j5OzEdwUI2MsPkNvGgVTywJXUonhQO80AtStgIMI3IR",
+        "soort": "meeting",
+        "datum": "2025-09-12",
+        "titel": "Writejunior en Eduface",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "diego@diegopos.nl",
+          "jeroen.van.gessel@eduface.me",
+          "menno.hahury@eduface.me",
+          "slucassen@uvaminds.nl"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_Mmnk2TKB0Eo4AbmMyII1ClAIsa7tz27kgNiGLFeoI9A",
+        "soort": "meeting",
+        "datum": "2026-04-22",
+        "titel": "Demo meeting Eduface",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "diego@diegopos.nl",
+          "diegopos@gmail.com",
+          "jeroen.van.gessel@eduface.me"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_Ny6Y06glDeEEC7vJp9bY4RZ0tpjYiIvzPPvDDv4iRuh",
+        "soort": "meeting",
+        "datum": "2026-05-08",
+        "titel": "Feedback op instellingen Eduface",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "diego@diegopos.nl",
+          "jeroen.van.gessel@eduface.me",
+          "slucassen@uvaminds.nl"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_7619CrgVQr8DdqcOXiRaZ0ykfFxnG65KAEEHkKnVHjW",
+        "soort": "meeting",
+        "datum": "2026-07-17",
+        "titel": "Feedback Schrijftherapie",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "diego@diegopos.nl",
+          "jeroen.van.gessel@eduface.me"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "Ze gaan 5 opdrachten (casussen) maken en ons model daarop instrueren zodat het de juiste feedback geeft. Eind september hebben we een meeting gepland met UvA minds, Parnassys, en nog een training partij om te bespreken hoe het model geïnstrueerd moet worden. Hierna bespreken we een SaaS subscription om ervoor te zorgen dat dit model daadwerkelijk kan worden gebruikt in de cursussen die ze geven.",
+        "transcript_beschikbaar": true,
+        "komend": false
+      },
+      {
+        "id": "acti_jzzJDv7tVlP2iHo7aVRjTGgI0W2htH22ohBlG54JYBT",
+        "soort": "meeting",
+        "datum": "2026-09-28",
+        "titel": "Afspraak 5 casussen bespreken",
+        "duur_min": 60,
+        "status": "upcoming",
+        "deelnemers": [
+          "diego@diegopos.nl",
+          "jeroen.van.gessel@eduface.me"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": true
+      }
+    ],
+    "open_taken": [],
+    "laatste_gesprek": "2026-07-17",
+    "volgende_afspraak": "2026-09-28",
+    "aantal_gehad": 4,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

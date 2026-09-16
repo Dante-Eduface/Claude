@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<style>
+  :root{
+    --navy:#0f2a3f;
+    --green:#1fb98a;
+    --ink:#12303f;
+    --muted:#6b8290;
+    --bg:#f3f7f8;
+    --line:#e2ebec;
+    --card:#ffffff;
+    --amber:#d99a2b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;}
+  body{background:var(--bg);}
+  .canvas{width:1080px;padding:44px 48px 40px;background:var(--bg);}
+
+  .head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:26px;}
+  h1{font-size:30px;color:var(--navy);font-weight:800;letter-spacing:-.3px;}
+  .sub{color:var(--muted);font-size:15px;margin-top:5px;}
+  .brand{display:flex;align-items:center;gap:9px;font-weight:800;color:var(--navy);font-size:19px;}
+  .brand .dot{width:15px;height:15px;border-radius:50%;background:var(--green);display:inline-block;}
+
+  .card{
+    background:var(--card);border-radius:16px;padding:22px 26px;margin-bottom:16px;
+    box-shadow:0 2px 8px rgba(15,42,63,.07);border-left:6px solid var(--green);
+    display:flex;gap:26px;align-items:center;
+  }
+  .card.koop{border-left-color:var(--navy);box-shadow:0 4px 14px rgba(15,42,63,.14);}
+  .card.leunt{border-left-color:var(--amber);}
+
+  .who{width:250px;flex-shrink:0;}
+  .who .name{font-size:21px;font-weight:800;color:var(--navy);}
+  .who .role{font-size:13px;color:var(--muted);margin-top:2px;line-height:1.35;}
+  .pill{display:inline-block;margin-top:10px;font-size:11.5px;font-weight:700;letter-spacing:.5px;
+    text-transform:uppercase;padding:4px 11px;border-radius:20px;}
+  .pill.g{background:#e6f6f0;color:#0d7a5b;}
+  .pill.n{background:var(--navy);color:#fff;}
+  .pill.a{background:#fbf1dd;color:#9c6a12;}
+
+  .stats{display:flex;gap:14px;flex-shrink:0;}
+  .stat{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:12px 16px;text-align:center;min-width:96px;}
+  .stat .num{font-size:26px;font-weight:800;color:var(--navy);line-height:1;}
+  .stat .lbl{font-size:11px;color:var(--muted);margin-top:6px;text-transform:uppercase;letter-spacing:.4px;}
+
+  .read{font-size:14px;color:var(--ink);line-height:1.5;flex:1;border-left:1px solid var(--line);padding-left:22px;}
+  .read b{color:var(--navy);}
+
+  .netto{background:var(--navy);border-radius:16px;padding:22px 26px;margin-top:22px;color:#dbe7ea;font-size:14.5px;line-height:1.6;}
+  .netto .t{color:#fff;font-weight:800;font-size:13px;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;display:flex;align-items:center;gap:8px;}
+  .netto .t .dot{width:10px;height:10px;border-radius:50%;background:var(--green);}
+  .netto b{color:#fff;}
+
+  .foot{margin-top:16px;font-size:12px;color:var(--muted);text-align:right;}
+</style>
+</head>
+<body>
+  <div class="canvas">
+    <div class="head">
+      <div>
+        <h1>Platform-activiteit — Capabel</h1>
+        <div class="sub">Wie zit er al in de tool, en hoe diep. Stand t/m 7 juli 2026.</div>
+      </div>
+      <div class="brand"><span class="dot"></span>Eduface</div>
+    </div>
+
+    <div class="card">
+      <div class="who">
+        <div class="name">Bas Franken</div>
+        <div class="role">Docent Toegepaste Psychologie</div>
+        <span class="pill g">Meest actief</span>
+      </div>
+      <div class="stats">
+        <div class="stat"><div class="num">13</div><div class="lbl">Sessies</div></div>
+        <div class="stat"><div class="num">6</div><div class="lbl">Inzendingen</div></div>
+        <div class="stat"><div class="num">3m 1s</div><div class="lbl">Reviewtijd</div></div>
+      </div>
+      <div class="read">Klikt uit zichzelf rond, nieuwsgierig, gisteren nog actief. Die 3 min betekent: hij <b>verkent, test nog niet diep</b>. In de demo je beste klankbord, vraag wat hij al gezien heeft.</div>
+    </div>
+
+    <div class="card koop">
+      <div class="who">
+        <div class="name">Karien van Dijk</div>
+        <div class="role">Directeur Onderwijs, de beslisser</div>
+        <span class="pill n">Koopsignaal</span>
+      </div>
+      <div class="stats">
+        <div class="stat"><div class="num">2</div><div class="lbl">Sessies</div></div>
+        <div class="stat"><div class="num">2</div><div class="lbl">Inzendingen</div></div>
+        <div class="stat"><div class="num">6m 32s</div><div class="lbl">Reviewtijd</div></div>
+      </div>
+      <div class="read">De beslisser logde <b>zelf in en nam de tijd</b>, meer dan alleen delegeren. Kijkt van een afstand mee, wacht op Inke's bevindingen. Beeld nog ondiep. <b>Zorg dat Inke's terugkoppeling positief is</b>, die weegt zwaar.</div>
+    </div>
+
+    <div class="card leunt">
+      <div class="who">
+        <div class="name">Inke van Gameren</div>
+        <div class="role">Opleidingscoördinator, je ingang</div>
+        <span class="pill a">Leunt op jou</span>
+      </div>
+      <div class="stats">
+        <div class="stat"><div class="num">2</div><div class="lbl">Sessies</div></div>
+        <div class="stat"><div class="num">3</div><div class="lbl">Inzendingen</div></div>
+        <div class="stat"><div class="num">20s</div><div class="lbl">Reviewtijd</div></div>
+      </div>
+      <div class="read">Nauwelijks zelf gebruikt, precies zoals ze zei. Verwacht geen mening uit eigen ervaring. <b>Jouw demo is haar eerste echte kennismaking</b>, dus jij bepaalt de eerste indruk.</div>
+    </div>
+
+    <div class="netto">
+      <div class="t"><span class="dot"></span>Netto — de speelwijze</div>
+      <b>Bas</b> is warm en hands-on, <b>Karien</b> kijkt stilletjes mee (belangrijkste om te overtuigen), <b>Inke</b> is je ingang en wacht op jouw setup. Speel de demo naar Bas als mede-tester, en zorg dat de uitkomst goed genoeg is dat Inke het met vertrouwen naar Karien brengt.
+    </div>
+
+    <div class="foot">Bron: Eduface platform-dashboard · t/m 07-07-2026</div>
+  </div>
+</body>
+</html>

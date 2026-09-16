@@ -1,0 +1,37 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#002333;--green-deep:#007b54;--muted:#5b7480;--border:#e7eef0;--surface:#f3f7f8;}
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1100px;height:1100px}
+  body{background:var(--surface);display:flex;align-items:center;justify-content:center;font-family:"Inter",sans-serif}
+  .card{width:740px;background:#fff;border-radius:24px;box-shadow:0 18px 50px rgba(0,35,51,.10);overflow:hidden}
+  .cover{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:#f3f7f8}
+  .body{padding:32px 34px 34px}
+  .tag{display:inline-block;font-size:14px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+        color:var(--green-deep);background:rgba(0,224,117,.12);padding:7px 16px;border-radius:9999px}
+  h2{font-family:"League Spartan",sans-serif;color:var(--navy);font-size:34px;line-height:1.05;
+     letter-spacing:-.01em;margin:18px 0 12px}
+  p{color:var(--muted);font-size:18px;line-height:1.5}
+  .foot{display:flex;align-items:center;justify-content:space-between;margin-top:26px;
+        padding-top:22px;border-top:1px solid var(--border)}
+  .author{display:flex;align-items:center;gap:12px;color:var(--navy);font-weight:600;font-size:16px}
+  .mark{width:30px;height:30px;border-radius:8px;background:var(--navy);display:flex;align-items:center;justify-content:center}
+  .mark span{color:#00e075;font-family:"League Spartan",sans-serif;font-weight:700;font-size:20px;line-height:1}
+  .read{color:var(--muted);font-size:15px}
+</style></head>
+<body>
+  <div class="card">
+    <img class="cover" src="./v4-accuracy-flat.png" alt="">
+    <div class="body">
+      <span class="tag">Research</span>
+      <h2>How Accurate Is AI Marking, Really?</h2>
+      <p>Measured against the real baseline, human inter-rater reliability, AI-assisted grading at 95% alignment is not a compromise. Here is the evidence.</p>
+      <div class="foot">
+        <div class="author"><span class="mark"><span>e</span></span>Eduface Team</div>
+        <div class="read">6 min read</div>
+      </div>
+    </div>
+  </div>
+</body></html>

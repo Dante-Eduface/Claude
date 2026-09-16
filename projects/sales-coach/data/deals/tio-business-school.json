@@ -1,0 +1,196 @@
+{
+  "slug": "tio-business-school",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_8e0AjTEdlAllhdeC3AdYc2sCb0cSwfpDHbU5hUYBI3Y",
+    "naam": "Tio Business School",
+    "url": "https://app.close.com/lead/lead_8e0AjTEdlAllhdeC3AdYc2sCb0cSwfpDHbU5hUYBI3Y/",
+    "lead_status": "Actief",
+    "opportunity_id": "oppo_PewO0T8FqDi9zV5PUCDo3eH8MJnBdKGvNOsw1UXMFBa",
+    "fase": "Lost",
+    "fase_type": "lost",
+    "waarde": 37500,
+    "valuta": "EUR",
+    "confidence": 0,
+    "close_date": null,
+    "eigenaar": "Eduface CRM",
+    "crm_note": "**Status:** Reden van verlies staat niet in Close, terwijl het contact\ninmiddels weer levend is en er een meeting staat op 31 juli.\n\n**Wat er gebeurde:** De opportunity is op 2 juli van Discovery naar Lost gezet\nzonder toelichting van de gebruiker die het deed. Er is geen afwijzing van de\nklant in het dossier: op dezelfde dag reageerde Tio juist positief op de AI\nintegrity model-insteek en werd een meeting op 31 juli afgesproken. Het open\neind van eerder is nog steeds hetzelfde punt: er is nooit samen naar de rubric\nvan Tio-opdrachten gekeken.\n\n**Next action:** Meeting voeren en eruit komen met een concrete vervolgafspraak, niet alleen interesse | Dante | 31 jul | Hoog\n\n**Next action:** Opportunity heropenen zodra die vervolgafspraak vastligt | Dante | <datum onbekend> | Midden\n\n**Risk:** Een deal op Lost zonder reden terwijl er een meeting staat maakt de\npipeline onbetrouwbaar. Deze account is al drie keer eerder van status\ngewisseld (Discovery naar Lost naar Scoping naar Discovery naar Lost) zonder\nvastgelegde onderbouwing.\n\n**Action required:** Bij het zetten van Lost altijd de reden vastleggen. Van\nde vier meetings op deze account heeft geen enkele een samenvatting of eigen\nnotitie, dus er is nul vastgelegde gespreksinhoud om op te sturen.",
+    "contacten": [
+      {
+        "naam": "Gideon Hummel",
+        "titel": null,
+        "email": "g.hummel@tio.nl",
+        "id": "cont_kfCW0tnc7UMvmeALnL4s0QoAqDUj6q2e3kJWYtw6BTF"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_AiAw1zBcDIwbktaxBhyvIKxGdQgvonm9N1Hr4p21Fkk",
+        "soort": "meeting",
+        "datum": "2025-09-16",
+        "titel": "Master onderzoek naar AI naijken Gideon / Dante",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "dante.torbed@eduface.me",
+          "g.hummel@tio.nl"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_8Tu3IISShrq95LKMtFUOirXuqo4VYRuvtlhAyRo4ADa",
+        "soort": "meeting",
+        "datum": "2025-10-07",
+        "titel": "Feedforward podcast opnemen",
+        "duur_min": 45,
+        "status": "completed",
+        "deelnemers": [
+          "dante.torbed@eduface.me",
+          "g.hummel@tio.nl"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_mbUeNZQncsbLybJ7LW1fbeEek7hf5xpbSOqJuMnzIen",
+        "soort": "meeting",
+        "datum": "2025-11-17",
+        "titel": "Gideon x Dante business case",
+        "duur_min": 45,
+        "status": "completed",
+        "deelnemers": [
+          "dante.torbed@eduface.me",
+          "g.hummel@tio.nl",
+          "jeroen.van.gessel@eduface.me"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_UKgr4QzgO2p926g8980XtqghvtXcrycbZdG8a3GAXOL",
+        "soort": "call",
+        "datum": "2026-04-01",
+        "titel": "Telefoon outbound",
+        "duur_min": 7,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Hij was toevallig bezig met het testen van onze tool en had er een opdracht in gestopt. \nEr was een wachtrij van de Bath spa Univerity, dus hierom was zijn opdracht niet klaar. \n\nIk stelde voor om fysiek langs te komen, alleen hij wees mij af. \nHij is wel de persoon die kan kiezen welke platform ze gaan inzetten. \nHij krijgt ook feedback van docenten. \n\nIk moet er gewoon achter komen hoe ik hem kan overtuigen om Eduface te gaan piloten. \n\nDocenten en studenten zijn niet blij met Cognitie. \nIn de podcast spraken ze over dat ze 25 nakijk Agents hebben gebouwd. \n\nBij Salta/LOI zijn de nu bezig met het nakijken van huiswerk. Ik wil erachter komen wie dat project leid en of we mee mogen doen aan die pilot.",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_VxwiBgFRAsWpMq1EyesQRJsqHnqYwDKbXGqz82ZtgNf",
+        "soort": "call",
+        "datum": "2026-04-08",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Gesproken: \nZe gaan afstappen van cognitie en zijn momenteel opzoek naar alternatieve. Ze hebben nu Moodle als LMS en gaan naar Brightspace. Ze moeten nu cijfers uit Cogniet halen en handmatige in ist learing zetten. \n\n\nHet zijn 6 locaties, met 200 - 250 studenten. \n\n\nBij Rijksuniversiteit Groningen gebruiken ze Lumi momenteel.",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_tcw5lc9Ra510dEHXch0VVCPfxwn8znL2DazbEJoSXDe",
+        "soort": "call",
+        "datum": "2026-05-13",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "VM",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_cTKkvezi3beioEHAjDYwvOiulUGuq2DbLpuav28gwiG",
+        "soort": "meeting",
+        "datum": "2026-08-04",
+        "titel": "AI integrity model | Gideon x Dante",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "dante.torbed@eduface.me",
+          "g.hummel@tio.nl",
+          "jeroen.van.gessel@eduface.me"
+        ],
+        "samenvatting": "- Gepresenteerd Eduface's AI-integriteitmodel met 15-minutenvenster voor AI-gestuurde mondelinge consistentiecontroles na inlevering.\n- Gideon bevestigde dat Cogniti-adoptie moeilijk verloopt vanwege decentrale structuur Tio en dat docenten gebruiksvriendelijker tools prefereren.\n- Jeroen stelde automatische Blackboard-integratie voor die opdrachten importeert, feedback genereert en resultaten exporteert via enkelvoudige syncknop.\n- Vroeger voorstel werd afgewezen wegens kostprijs; Jeroen zal ICM-pilot-voorbeeld sturen om beter aangepast prijsmodel te tonen voor particulier onderwijs.\n- Gideon zal nieuw voorstel deze week met Lucy de Ridder (Salta-directeur) bespreken; EU AI Act-compliance en Nederlands-gebaseerde cloud zijn belangrijke criteria.\n\n### Huidige situatie Tio Business School en Cogniti implementatie\n- Tio Business School heeft cognitieve toetsing ingeregeld met volgende week updates voor hogere uploadlimieten en uitgebreide capaciteit.\n- Visuele aspecten van het systeem worden nog niet goed ondersteund en uitrol is nog niet breedvoerig doorgevoerd.\n- Training voor geïnteresseerde docenten wordt in oktober gegeven, maar adoptie blijft uitdagend vanwege Tio's decentrale organisatiestructuur.\n- Cogniti-agenten moeten manueel worden opgebouwd en verspreid onder docenten, wat veel werk met zich meebrengt.\n- Implementatie in slechts één vak heeft plaatsgevonden met ongeveer twintig agents, maar docenten prefereren ChatGPT en Claude vanwege gebruiksgemak.\n\n### Integratie en adoptie-uitdagingen\n- Cogniti staat volledig los van Blackboard, wat adoptie belemmert zonder systeemintegratie.\n- Jeroen van Gessel presenteerde automatische integratie die Blackboard-opdrachten automatisch importeert en feedback genereert via één syncknop.\n- Deze integratie werkt in Blackboard, Brightspace en binnenkort ook in Moodle als premium partner.\n- Automatische synchronisatie elimineert de noodzaak voor docenten om uitgebreid met agenten te werken voordat zij feedback kunnen geven.\n- Adoptie-probleem is een groot knelpunt; Tio heeft grote moeite docenten te bereiken en te trainen voor nieuwe tools.\n\n### AI-integriteitmodel en consistentiecontrole\n- Eduface heeft een paperfeedback-model ontwikkeld dat nu wordt geïmplementeerd op universiteiten in VK, Nederland en hogescholen.\n- **Nieuw model biedt een 15-minutenvenster na inlevering voor AI-gestuurde mondelinge consistentiecontrole van studentenwerk.**\n- **Model leest gehele opdracht, bronnen en studentenvisie, voert vervolgens mondeling vragentoets uit om inconsistenties op te sporen.**\n- Pilotstudie toonde aan dat studenten hun eigen werk beter bestuderen wanneer zij weten van consistentiecontrole, zelfs bij AI-gebruik.\n- **Mondeling kan thuis op laptop plaatsvinden met optionele camera; model beoordeelt consistentie tussen geschreven werk en mondelinge antwoorden.**\n\n### Leerprofiel en uitbreidde toepassingen\n- Eduface bouwt leerprofielen op via meerdere soorten opdrachten (schrijfopdrachten, mondelingen, tentamens).\n- **Model wordt beschreven als 'Garmin van kennisontwikkeling' die studentengroei visualiseert en voortgang aantoont.**\n- Leerprofielen kunnen worden ingezet voor accreditatie, studentretentie en engagement.\n- Business schools vinden dit model bijzonder relevant omdat het bewijs levert van onderwijskwaliteit.\n- Model wordt al gebruikt op meerdere instellingen en universiteiten voor verschillende toetsingsvormen.\n\n### Tio's visie op AI in onderwijs en huidige strategie\n- Tio werkt aan standaardisering van rubrics met betere richtlijnen voor docenten rond AI-nakijken.\n- Er is geen expliciete verantwoordelijkheid aangesteld voor 'AI-ready' maken van Tio, maar rubricsontwikkeling is gaande.\n- Beweging bestaat om AI te integreren in assessments, variërend van strikte klaslokaal-toetsen tot toetsing met AI-richtlijnen.\n- ROCM (MBO-instelling waar Gideon actief is) maakt casusspecifieke keuzes over hoe AI in toetsing wordt ingezet.\n- Salta Group heeft onlangs AI-personen aangesteld, maar Tio zelf heeft nog niet duidelijke AI-implementatiestrategie.\n\n### Brightspace-migratie en Lumi-testen\n- Lumi-testen worden uitgesteld tot Brightspace-integratie gereed is, waarvan timing onzeker is.\n- Salta Group begint transitie van verschillende LMS-systemen naar Brightspace, maar niet alle labels gebruiken dezelfde systemen.\n- Blackboard wordt geleidelijk uitgefaseerd, hoewel timing hiervan onduidelijk blijft.\n- Tio-onderwijsafdeling heeft beperkte capaciteit, waardoor AI-implementatieprojecten worden uitgesteld.\n- Gideon weet niet wie actief aan Brightspace-migratie werkt vanwege Tio's decentrale structuur.\n\n### Kostenbatenanalyse en prijsmodellering\n- Eerder voorstel van Eduface voor Tio werd afgewezen vanwege te hoge kosten, vooral per-docent-model.\n- Tio heeft veel part-time docenten die slechts enkele opdrachten per semester nakijken, waardoor ROI negatief is.\n- Particulier onderwijs met kleine aantallen studenten en deeltijdse docenten profiteert slecht van per-docent-prijsmodellen.\n- Jeroen biedt aan ICM-opleiding-voorstel en pilot-voorstel te delen als precedent voor beter aangepaste prijsmodellen.\n- Salta Group wordt gezien als grotere business case die internationaal als casestudy kan dienen.\n\n### Integratie met Educator en Excel-export\n- Gideon vraagt om mogelijkheid Excel-bestanden uit Eduface te exporteren voor uploaden in Educator-systeem.\n- Integratie met Blackboard voor automatiseren van processen staat hoog op wensenlijst.\n- Jeroen bevestigt dat deze functies al zijn ingebouwd in huidige tooling.\n- Formatieve feedback-mogelijkheden worden als nuttig beschouwd voor verbeterde gebruikerservaring.\n- Doel is systemen naadloos te laten samenwerken in plaats van aparte tools te gebruiken.\n\n### Volgende stappen en vervolgafspraken\n- Jeroen stuurt nieuw voorstel met ICM-pilot-voorbeeld naar Gideon voor doorgifte aan Lucy de Ridder (directeur kwaliteit Salta Group).\n- Gideon zal voorstel deze week bespreken met Lucy en mogelijke board-goedkeuring voorbereiden.\n- Dante en Jeroen zullen intern voorstel voorbereiden en als feedback binnenkomt, planning hervatten via mail.\n- Lucy de Ridder is Key-decision-maker; educatiequaliteitsdirecteur staat positief tegenover implementatie.\n- **Gideon benadrukt belang van cloud-gebaseerd model op Nederlands grondgebied vanwege EU AI Act-compliance.**\n\n### Kwaliteitsvoordelen van Eduface-model\n- Gideon ziet grootste winst in verbeterde kwaliteit van nakijkwerk door expertise ingebracht in Eduface-tool.\n- Interne tools zouden minder inhoudelijk sterk kunnen zijn ondanks betere afstemming op organisatie.\n- Tool-kennis en doorgevoerde expertise van Eduface bieden waarde die Tio intern moeilijk kan repliceren.\n- Snelheid is geen prioriteit voor particulier onderwijs; kwaliteit en relevantie van feedback zijn essentieel.",
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_l21OBTq2cufwIWQgk9qcPKGIcMWQk9VKjYr1c3W2EDZ",
+        "soort": "call",
+        "datum": "2026-08-27",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Hij heeft ons terug gebeld \n50 vakken willen beginnen. \n\n10 - 15 K 60 studenten per opdracht 20K - 25K 2K voor de pilot. Betaal termijn van 2 weken. \n\nAanbetaling Ramon over financiën Ze gaan over naar een nieuwe blauw druk van opdracht van ongeveer 15 kantjes. Opdracht worden kleiner. Bij cogniti zijn ze met 25 vakken begonnen. Meeting waarschijnlijk in Hilversum omdat we fysiek Lucie. Gaan spreken en Gideon is daar 2 uur vandaan en sluit online aan. Gideon gaat naar de Hanze hogeschool als docent.",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_D3H1i4PTvZICQGjGr5WP9PGx53kvjN4jjoBgX72JMHa",
+        "soort": "meeting",
+        "datum": "2026-09-03",
+        "titel": "Meeting Tio - Eduface - AI-feedback",
+        "duur_min": 60,
+        "status": "upcoming",
+        "deelnemers": [
+          "calendar@ncoi.entrancemanager.com",
+          "dante.torbed@eduface.me",
+          "g.hummel@tio.nl",
+          "jeroen.van.gessel@eduface.me",
+          "lderidder@saltagroup.com",
+          "zaal503@ncoi.nl"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": true
+      }
+    ],
+    "open_taken": [],
+    "laatste_gesprek": "2026-08-27",
+    "volgende_afspraak": "2026-09-03",
+    "aantal_gehad": 8,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "slug": "nhl-stenden",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_KTEiys0MwwzCBNsnF6O3A1rPOAKIBiCawXH7uh8dzbb",
+    "naam": "NHL Stenden",
+    "url": "https://app.close.com/lead/lead_KTEiys0MwwzCBNsnF6O3A1rPOAKIBiCawXH7uh8dzbb/",
+    "lead_status": "Actief",
+    "opportunity_id": null,
+    "fase": null,
+    "fase_type": null,
+    "waarde": null,
+    "valuta": "EUR",
+    "confidence": null,
+    "close_date": null,
+    "eigenaar": "Eduface CRM",
+    "crm_note": "",
+    "contacten": [
+      {
+        "naam": "Patrick van Aalst",
+        "titel": "Coordinator of the Center of Teaching & Learning at NHL Stenden",
+        "email": null,
+        "id": "cont_Cuq23z83PWgeiMDm5mHYlQOLsNYXhyFSx0ntoBpjXja"
+      },
+      {
+        "naam": "Jantine Kuijpers",
+        "titel": "Director Academy of Education",
+        "email": "jantine.kuijpers@nhlstenden.com",
+        "id": "cont_9NQ3O0Hu7tMW5zGSFoJb17r0PFr1mBG9tbHyKVfZI3m"
+      },
+      {
+        "naam": "Michele Murgia",
+        "titel": "",
+        "email": "michele.murgia@nhlstenden.com",
+        "id": "cont_HKecKGOwNuNSYLLFDY0nPZhehgAd0JiIQg6mLqSeBHy"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_TWEE9xwtPdlo6QJEFQnpauTz5ytUuz0BTjNOWGHDFBI",
+        "soort": "call",
+        "datum": "2026-03-31",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Gebeld opgenomen en gaf aan dat die mij over 10 minuten zou willen terug bellen",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_ftO8fTaiq1Yhri7AQeGFbTjQutz2Kcn9lpKfXDzYPsU",
+        "soort": "call",
+        "datum": "2026-03-31",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Michele gesproken, hij gaat mij door verwijzen. \nHij zei ook dat er een AI werkgroep is waar Patrick zelf volgensmij niet in zit maar hij er wel lijntje naar heeft. Ik wil een presentatie geven in de AI werkgroep.",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_FWZKRdUuSD4Jef8Fmar9WCzBApD1JUxjq6e4GteKull",
+        "soort": "call",
+        "datum": "2026-03-31",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "VM ingesproken",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_s4R95dqdbuhxa5c2AJx2DdvSg4EKaux0SM1txpV4s9j",
+        "soort": "call",
+        "datum": "2026-04-02",
+        "titel": "Telefoon outbound",
+        "duur_min": 2,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": true,
+        "komend": false
+      },
+      {
+        "id": "acti_NOHO2da1VXRL7NvVnTsZSvg2INBifEPvHH65LYLMIvw",
+        "soort": "call",
+        "datum": "2026-04-02",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "VM ingesproken.\n\nIk wou dat die belde.",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_tJBHq2NgtrIv2NpG2cXheXsinKm0kYY7L593g1aZiiz",
+        "soort": "call",
+        "datum": "2026-04-10",
+        "titel": "Telefoon outbound",
+        "duur_min": 1,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_c1N2bU9MO3LWmPS5fUEGD79PwgkrotcXAhw49SSG7Mg",
+        "soort": "call",
+        "datum": "2026-04-14",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "VM, geen VM achter gelaten.",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_4cIDwUJygQ5ZNJTFQv4xEb74k5Wl0Hm1lt58GkC3oLu",
+        "soort": "call",
+        "datum": "2026-04-14",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "VM, geen VM achter gelaten.",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_4YmnBbLpPQVsd8WZjQX2E4VBYdsydCnmyf6cyi2Xi5a",
+        "soort": "call",
+        "datum": "2026-05-19",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "VM geen VM ingesproken",
+        "transcript_beschikbaar": false,
+        "komend": false
+      }
+    ],
+    "open_taken": [],
+    "laatste_gesprek": "2026-05-19",
+    "volgende_afspraak": null,
+    "aantal_gehad": 9,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Paper Grader · Law</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=League+Spartan:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#002333; --green:#00e075; --green-deep:#007b54;
+    --ink-500:#5b7480; --ink-300:#a9bcc4; --ink-200:#cdd9de; --ink-100:#e7eef0; --ink-50:#f3f7f8; --white:#fff;
+    --r-md:8px; --r-xl:12px; --r-2xl:20px; --r-full:9999px;
+    --sh-md:0 4px 16px rgba(0,35,51,.08); --sh-lg:0 12px 40px rgba(0,35,51,.10);
+    --control-h:32px; --pad:16px;
+  }
+  *{box-sizing:border-box;margin:0}
+  html,body{background:transparent;font-family:Inter,ui-sans-serif,system-ui,sans-serif;color:var(--navy);-webkit-font-smoothing:antialiased}
+  body{width:1520px;height:628px;overflow:hidden;display:grid;place-items:center}
+
+  .t-block{font-size:17px;font-weight:600;line-height:1.3}
+  .t-hero{font-size:24px;font-weight:600;line-height:1.2;font-variant-numeric:tabular-nums}
+  .t{font-size:14px;font-weight:400;line-height:1.55}
+  .muted{color:var(--ink-500)}
+
+
+  .frame{width:1440px;height:548px;background:var(--white);border-radius:var(--r-2xl);box-shadow:var(--sh-lg);
+         border:1px solid var(--ink-100);display:flex;flex-direction:column;overflow:hidden}
+  .top{height:48px;border-bottom:1px solid var(--ink-100);display:flex;align-items:center;padding:0 24px;flex-shrink:0}
+  .crumb{display:flex;align-items:center;gap:8px}
+  .crumb .sep{color:var(--ink-300)}
+
+  .body{flex:1;display:grid;grid-template-columns:minmax(0,52fr) minmax(0,48fr);min-height:0}
+  .col{padding:24px 28px;display:flex;flex-direction:column;gap:14px;min-height:0}
+  .col.left{border-right:1px solid var(--ink-100)}
+  .col.right{padding:0;display:grid;grid-template-rows:minmax(0,1fr) minmax(0,1fr)}
+  .col.right > div{padding:24px 28px;display:flex;flex-direction:column;gap:14px}
+  .col.right > div + div{border-top:1px solid var(--ink-100)}
+
+  .excerpt{color:var(--ink-700,#2c4a57);max-width:62ch}
+  .mark{background:rgba(0,224,117,.22);box-shadow:inset 0 -2px 0 var(--green-deep);border-radius:2px;padding:1px 0}
+
+  .card{border:1px solid var(--ink-200);border-radius:var(--r-xl);background:var(--white);box-shadow:var(--sh-md);
+        padding:var(--pad);display:flex;flex-direction:column;gap:12px}
+  .crit{color:var(--ink-500)}
+  .done{display:inline-flex;align-items:center;gap:7px;color:var(--green-deep);font-weight:500}
+  .done svg{width:15px;height:15px;flex-shrink:0}
+
+  .acts{display:flex;align-items:center;gap:8px;margin-top:auto}
+  .btn{height:var(--control-h);padding:0 14px;border-radius:var(--r-md);font-size:14px;font-weight:500;
+       display:inline-flex;align-items:center;gap:6px;border:1px solid transparent;white-space:nowrap}
+  .btn.pri{background:var(--navy);color:var(--white)}
+  .btn.sec{background:var(--white);border-color:var(--ink-200);color:var(--navy)}
+  .btn.ghost{color:var(--ink-500);padding:0 8px}
+  .btn svg{width:14px;height:14px}
+
+  .rows{display:flex;flex-direction:column}
+  .row{height:42px;display:grid;grid-template-columns:minmax(0,1fr) 48px 64px;align-items:center;gap:12px;
+       border-top:1px solid var(--ink-100)}
+  .row:last-child{border-bottom:1px solid var(--ink-100)}
+  .row .w{color:var(--ink-500);text-align:right;font-variant-numeric:tabular-nums}
+  .row .s{text-align:right;font-variant-numeric:tabular-nums}
+  .grade{display:flex;align-items:baseline;gap:8px}
+
+  /* Nummers bij de drie titels, alleen in de how-it-works-variant */
+  .no{width:26px;height:26px;border-radius:50%;background:var(--navy);color:var(--white);font-size:13px;
+      font-weight:600;display:none;place-items:center;flex-shrink:0}
+  body.callouts .no{display:grid}
+  .head{display:flex;align-items:center;gap:10px}
+</style></head>
+<body class="plain">
+
+<div class="frame">
+  <div class="top">
+    <div class="crumb t"><span class="muted">Law · Employment law case study</span><span class="sep">/</span><span>Submission 86 of 88</span></div>
+  </div>
+
+  <div class="body">
+    <div class="col left">
+      <span class="head"><span class="no">1</span><span class="t-block">Comments in the text</span></span>
+      <p class="t excerpt">The employer ended the contract without notice after a single incident. <span class="mark">That makes the dismissal unfair, because summary dismissal always requires gross misconduct.</span></p>
+      <div class="card">
+        <span class="t crit">Application of law</span>
+        <p class="t">You state the rule and go straight to the conclusion. Work through the facts first: what did the employee actually do, and does that meet the threshold? Put the authority next to it.</p>
+        <div class="acts">
+          <span class="btn pri"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 8.5 3 3 7-7"/></svg>Approve</span>
+          <span class="btn sec">Edit</span>
+          <span class="btn ghost">Discard</span>
+        </div>
+      </div>
+      <p class="t excerpt" style="margin-top:2px">The employee had two written warnings in the previous year, <span class="mark">which the tribunal weighs when it looks at proportionality.</span></p>
+      <div class="done t"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 8.5 3 3 7-7"/></svg>Approved by you · Issue identification</div>
+    </div>
+
+    <div class="col right">
+      <div>
+        <span class="head"><span class="no">2</span><span class="t-block">Feedback per criterion</span></span>
+        <span class="t crit">Application of law</span>
+        <p class="t">The rules are stated correctly but they are not applied to these facts. Take each element of the test in turn and say whether the facts meet it.</p>
+        <div class="acts">
+          <span class="btn pri"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 8.5 3 3 7-7"/></svg>Approve</span>
+          <span class="btn sec">Edit</span>
+        </div>
+      </div>
+
+      <div>
+        <span class="head"><span class="no">3</span><span class="t-block">Grade per criterion</span></span>
+        <div class="rows"><div class="row t"><span>Issue identification</span><span class="w">25%</span><span class="s">9 / 10</span></div><div class="row t"><span>Application of law</span><span class="w">35%</span><span class="s">7 / 10</span></div><div class="row t"><span>Legal writing and structure</span><span class="w">40%</span><span class="s">8 / 10</span></div></div>
+        <div class="acts" style="justify-content:space-between">
+          <span class="grade"><span class="t-hero">7.9</span><span class="t muted">/ 10 proposed</span></span>
+          <span class="btn pri"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 8.5 3 3 7-7"/></svg>Approve grade</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body></html>

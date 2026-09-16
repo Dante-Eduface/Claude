@@ -1,0 +1,120 @@
+{
+  "slug": "avans-hogeschool",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_wgEbzJlj0B2LaZfi0yB0HBkHnqXmRtXKj6MbvnMl011",
+    "naam": "Avans Hogeschool",
+    "url": "https://app.close.com/lead/lead_wgEbzJlj0B2LaZfi0yB0HBkHnqXmRtXKj6MbvnMl011/",
+    "lead_status": "Nurturing",
+    "opportunity_id": null,
+    "fase": null,
+    "fase_type": null,
+    "waarde": null,
+    "valuta": "EUR",
+    "confidence": null,
+    "close_date": null,
+    "eigenaar": "Eduface CRM",
+    "crm_note": "",
+    "contacten": [
+      {
+        "naam": "Luiz Alberto Canalle",
+        "titel": "Senior lecturer & AI-Innovation coordinator",
+        "email": "la.canalle@avans.nl",
+        "id": "cont_bWyV4WYqIEgseR8bbbIEgfiRrAnyEltvQotD4s4rQl2"
+      },
+      {
+        "naam": "Peter kenter",
+        "titel": "",
+        "email": null,
+        "id": "cont_C2qgHq468sEuHa6UVTmBMNjWdJtjQYxBexKKYyWrARQ"
+      },
+      {
+        "naam": "Eky Fioole",
+        "titel": "ICTO-coach & docent (projectleider digitaal toetsen)",
+        "email": "ey.fioole@avans.nl",
+        "id": "cont_yew29JrR1kW0EtUNfQcA49u1RBqLZPmTovGgiqSQj5P"
+      },
+      {
+        "naam": "Thijs van Dongen",
+        "titel": "ICTO-coach / onderwijskundig adviseur (digitaal toetsen & AI)",
+        "email": "m.vandongen8@avans.nl",
+        "id": "cont_y8aYhAkNmHmh9cLUJgBg8RrHQnsVd9wteQLTdlvjgBq"
+      },
+      {
+        "naam": "Pim Schelvis",
+        "titel": "Docent",
+        "email": "pc.schelvis@avans.nl",
+        "id": "cont_DLyJvReZQNy4fZYRrcuTcG1yYEyV8thmd0COsNTWw3p"
+      },
+      {
+        "naam": "Mariette Poot",
+        "titel": null,
+        "email": "mh.poot@avans.nl",
+        "id": "cont_cnVBCj51zqAYTXwAwqswERX8jZGJLzYrSjyiZxHIzBc"
+      },
+      {
+        "naam": "Esther van der Stappen",
+        "titel": null,
+        "email": "ej.vanderstappen@avans.nl",
+        "id": "cont_NZuNj8oYeDuBYPUrVLObmV1YbTFdc7jnEUNFVmx7EBN"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_biMZBUUxsA1WKAbLJKd7B7EqwT6rwY85yK8ri3jO2GX",
+        "soort": "call",
+        "datum": "2026-04-15",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Heb hem ook al 2 keer geprobeerd te bellen. Ik ga hem een Linkedin connectie verzoek sturen.",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_hq9paa2YWXkWaDUkXE0YbGSKQ1X3ieyDEE1SJD2iKfX",
+        "soort": "call",
+        "datum": "2026-04-15",
+        "titel": "Telefoon outbound",
+        "duur_min": 17,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "De Avans heeft een eigen AI lab waar docenten van heel Avans met met hun eigen ideeën op het gebied van AI aan de slag kunnen in een veilige omgeving waar ze ook begeleid worden door het innovatie team van Avans. \n\n\nHet primaire doel is docenten AI geletterd maken. Waar zitten de mogelijk risico’s en toepassing. \nHet tweede doel is dat docenten komen met initiatieven die breder uit gerold kunnen worden binnen de Avans. \n\nLMS = Brightspace\n\nIk stelde de vraag over het gebruik van Chat GPT. Toen gaf die aan dat ze naar een interface gaan van Erasmus universiteit. \n\nHij heeft expliciet aangegeven dat ze niet de capaciteit hebben om in huis wat zelf te bouwen dus ze gaan \n\nHet programma gaat alweer hun 4de jaar en en het duurt voor een docent twee semesters. \n\nToen vroeg ik hem over beoordeling met AI. \n\nUitvoering regel wat het met AI nu nog verbeid. (Ik denk dat dit BS is.) \n\nZe hebben dit getest en hij deelde 2 pilots met mij. \n\nMet Claud getest een casus toets met een praktijk onderdeel. De student gaat er mee aan de slag, de docent begeleid de casus en moet ook nog de beoordeling. \n\nDit kan slimmer dacht de opleiding, dus er was iemand in de opleiding die een early adpoter is en de manager van de opleiding ding gelooft in deze persoon. Interessant insteek, wellicht zouden we bij die opleiding kunnen starten. \n\nClaud moest een notulen maken en de docent verlichten met het zelf aantekeningen maken. \n\nWaarschijnlijk niet het verwacht uitkomst dus zijn ze gestopt. \n\nZe hebben ook een pilot gedaan met schrijfopdrachten alleen daar kon die mij niks echt over vertellen. Ik denk dat ze het niet echt gepilot hebben, enkel 1 keer getest tijdens zo een stand up. \n\nZe zijn bang voor verkeerd gebruik onder mede collega’s. \n\nAI expo is enkel voor intern, hierom gaan we een intern gesprek als volgende stap doen. \n\nZe willen graag Edvince based een beslissing maken, dus een proof of concept is wel op zijn plaats. \n\nWekelijks op de maandag is er een.",
+        "transcript_beschikbaar": false,
+        "komend": false
+      }
+    ],
+    "open_taken": [],
+    "laatste_gesprek": "2026-04-15",
+    "volgende_afspraak": null,
+    "aantal_gehad": 2,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

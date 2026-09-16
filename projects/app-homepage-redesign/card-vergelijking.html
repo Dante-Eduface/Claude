@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Card vergelijking</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#002333; --green-deep:#007b54; --danger:#b3261e;
+  --ink-900:#0a2c3b; --ink-700:#2c4a57; --ink-500:#5b7480;
+  --ink-300:#a9bcc4; --ink-200:#cdd9de; --ink-100:#e7eef0; --ink-50:#f3f7f8; --white:#fff;
+  --sans:"Inter",ui-sans-serif,system-ui,sans-serif;
+  --display:"League Spartan",var(--sans);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-font-smoothing:antialiased}
+body{background:var(--ink-50);color:var(--navy);font-family:var(--sans);font-size:15px;line-height:1.55}
+.wrap{max-width:1240px;margin:0 auto;padding:56px 32px 96px}
+h1{font-family:var(--display);font-size:34px;line-height:1.1;letter-spacing:-.015em;font-weight:700;margin-bottom:8px}
+h2{font-family:var(--display);font-size:20px;font-weight:600;margin-bottom:6px}
+.lede{color:var(--ink-700);max-width:68ch}
+section{margin-top:56px}
+.note{color:var(--ink-700);max-width:68ch;margin-bottom:24px}
+
+.row{display:grid;grid-template-columns:repeat(3,380px);gap:32px;align-items:start}
+.slot h3{font-size:13px;font-weight:600;color:var(--ink-700);margin-bottom:4px}
+.slot p.sub{font-size:13px;color:var(--ink-500);margin-bottom:14px;min-height:34px}
+
+/* gedeelde kaartvorm, gelijke breedte voor alle drie */
+.card{background:var(--white);border:1px solid var(--ink-100);border-radius:12px;padding:20px;width:380px}
+.div{height:1px;background:var(--ink-100);margin:18px 0 14px}
+
+/* ---- OUD ---- */
+.old .t{font-size:16px;font-weight:600}
+.old .lvl{font-size:13px;color:var(--ink-500);margin-top:2px}
+.old .met{display:flex;align-items:center;gap:14px;margin-top:16px}
+.old .ring{width:34px;height:34px;border-radius:50%;border:3px solid var(--ink-100);border-top-color:var(--navy);border-right-color:var(--navy);transform:rotate(20deg);flex:none}
+.old .n{font-size:15px}
+.old .n b{font-weight:600}
+.old .n span{color:var(--ink-500)}
+.old .foot{font-size:13px;color:var(--ink-500)}
+
+/* ---- NIEUW ---- */
+.new .t{font-family:var(--display);font-size:26px;font-weight:700;letter-spacing:-.01em;line-height:1.1}
+.new .lvl{font-size:16px;color:var(--ink-500);margin-top:6px}
+.new .met{display:flex;gap:40px;margin-top:22px}
+.new .big{font-size:34px;font-weight:700;line-height:1}
+.new .big.warn{color:var(--danger)}
+.new .lab{font-size:15px;color:var(--ink-500);margin-top:6px}
+.new .foot{font-size:14px;color:var(--ink-700)}
+
+/* ---- VOORSTEL ---- */
+.prop .t{font-size:17px;font-weight:600;letter-spacing:-.005em}
+.prop .met{margin-top:14px}
+.prop .n{font-size:24px;font-weight:600;line-height:1.1}
+.prop .n span{font-size:14px;font-weight:400;color:var(--ink-700)}
+.prop .wait{font-size:14px;color:var(--ink-700);margin-top:4px}
+.prop .wait.late{color:var(--danger);font-weight:500}
+.prop .foot{font-size:14px;color:var(--ink-700)}
+.prop .foot b{font-weight:500;color:var(--navy)}
+.prop .mark{float:right;font-size:14px;font-weight:500;color:var(--green-deep)}
+.prop .none{font-size:14px;color:var(--ink-500);margin-top:14px}
+
+/* raster van zeven */
+.grid7{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1180px}
+.grid7 .card{width:auto}
+
+.sizes{margin-top:24px;border-collapse:collapse;font-size:14px}
+.sizes th,.sizes td{text-align:left;padding:8px 28px 8px 0;border-bottom:1px solid var(--ink-100)}
+.sizes th{font-size:13px;color:var(--ink-700);font-weight:600}
+.sizes td:last-child,.sizes th:last-child{padding-right:0}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Card vergelijking</h1>
+  <p class="lede">Alle drie op dezelfde breedte van 380px. De screenshots stonden op verschillende zoom, dus dit is de eerlijke vergelijking: je ziet de verhoudingskeuzes, niet het uitvergroten.</p>
+
+  <section>
+    <div class="row">
+
+      <div class="slot">
+        <h3>Oud</h3>
+        <p class="sub">Rustig, maar de inhoud klopt niet. Drie keer hetzelfde feit.</p>
+        <div class="card old">
+          <div class="t">Graafschap college</div>
+          <div class="lvl">MBO Level 4 (Secondary Education)</div>
+          <div class="met">
+            <div class="ring"></div>
+            <div>
+              <div class="n"><b>12/32</b> <span>graded</span></div>
+              <div class="n"><b>20</b> <span>to grade</span></div>
+            </div>
+          </div>
+          <div class="div"></div>
+          <div class="foot">1 day ago</div>
+        </div>
+      </div>
+
+      <div class="slot">
+        <h3>Nieuw</h3>
+        <p class="sub">Inhoud klopt beter, maar vijf concurrerende groottes en rood op koptekstformaat.</p>
+        <div class="card new">
+          <div class="t">Graafschap college</div>
+          <div class="lvl">MBO Level 4 (Secondary Education)</div>
+          <div class="met">
+            <div>
+              <div class="big">20</div>
+              <div class="lab">to grade</div>
+            </div>
+            <div>
+              <div class="big warn">12 days &#9888;</div>
+              <div class="lab">oldest waiting</div>
+            </div>
+          </div>
+          <div class="div"></div>
+          <div class="foot">Last submission 1 day ago</div>
+        </div>
+      </div>
+
+      <div class="slot">
+        <h3>Voorstel</h3>
+        <p class="sub">Drie groottes. Getal boven titel, want het getal verandert en de naam niet.</p>
+        <div class="card prop">
+          <div class="t">Graafschap college</div>
+          <div class="met">
+            <div class="n">20 <span>to grade</span></div>
+            <div class="wait late">Oldest waiting 12 days &#9888;</div>
+          </div>
+          <div class="div"></div>
+          <div class="foot">Last submission <b>1 day ago</b></div>
+        </div>
+      </div>
+
+    </div>
+
+    <table class="sizes">
+      <thead><tr><th>Versie</th><th>Aantal groottes</th><th>Grootste element</th><th>Voldoet aan de regel</th></tr></thead>
+      <tbody>
+        <tr><td>Oud</td><td>4</td><td>titel, 16px</td><td>net niet</td></tr>
+        <tr><td>Nieuw</td><td>5</td><td>de getallen, 34px</td><td>nee</td></tr>
+        <tr><td>Voorstel</td><td>3</td><td>het getal, 24px</td><td>ja</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Waarom dit pas te beoordelen is met zeven</h2>
+    <p class="note">Het hele argument is dat de card standaard stil is en dat alleen de uitzondering luid wordt. Dat kun je aan één card niet zien. Hieronder het raster zoals een docent het dagelijks ziet, gesorteerd op langst wachtend. Eén cursus is over zijn deadline, en die is de enige die kleur krijgt.</p>
+
+    <div class="grid7">
+
+      <div class="card prop">
+        <div class="t">Graafschap college</div>
+        <div class="met">
+          <div class="n">20 <span>to grade</span></div>
+          <div class="wait late">Oldest waiting 12 days &#9888;</div>
+        </div>
+        <div class="div"></div>
+        <div class="foot">Last submission <b>1 day ago</b></div>
+      </div>
+
+      <div class="card prop">
+        <div class="t">Rechtsgeleerdheid</div>
+        <div class="met">
+          <div class="n">14 <span>to grade</span></div>
+          <div class="wait">Oldest waiting 6 days</div>
+        </div>
+        <div class="div"></div>
+        <div class="foot">Last submission <b>4 days ago</b></div>
+      </div>
+
+      <div class="card prop">
+        <div class="t">Marketing plan</div>
+        <div class="met">
+          <div class="n">6 <span>to grade</span></div>
+          <div class="wait">Oldest waiting today</div>
+        </div>
+        <div class="div"></div>
+        <div class="foot">Last submission <b>1 week ago</b></div>
+      </div>
+
+      <div class="card prop">
+        <div class="t">Bedrijfskunde</div>
+        <div class="met">
+          <div class="n">3 <span>to grade</span></div>
+          <div class="wait">Oldest waiting 2 days</div>
+        </div>
+        <div class="div"></div>
+        <div class="foot">Last submission <b>2 days ago</b></div>
+      </div>
+
+      <div class="card prop">
+        <div class="t">Law <span class="mark">Completed &#10003;</span></div>
+        <div class="met">
+          <div class="n">0 <span>to grade</span></div>
+          <div class="wait">Oldest waiting &ndash;</div>
+        </div>
+        <div class="div"></div>
+        <div class="foot">Last submission <b>6 days ago</b></div>
+      </div>
+
+      <div class="card prop">
+        <div class="t">Social Work <span class="mark">Completed &#10003;</span></div>
+        <div class="met">
+          <div class="n">0 <span>to grade</span></div>
+          <div class="wait">Oldest waiting &ndash;</div>
+        </div>
+        <div class="div"></div>
+        <div class="foot">Last submission <b>1 week ago</b></div>
+      </div>
+
+      <div class="card prop">
+        <div class="t">Verzorgenden</div>
+        <div class="none">No submissions yet</div>
+        <div class="div"></div>
+        <div class="foot">&nbsp;</div>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Waar je naar moet kijken</h2>
+    <p class="note">Loop met je oog van boven naar beneden langs de linkerkant van de getallen. Ze staan op elke card op dezelfde plek, dus je scant ze als een kolom zonder dat er een kolom is. Dat is het werk dat grootte niet hoeft te doen zolang er maar zeven cursussen zijn.</p>
+    <p class="note">Let ook op het rood. Er is er precies één. Zodra er in een nakijkperiode vier of vijf rood staan, is de drempel verkeerd en werkt het signaal niet meer. Dat is het ding om na een echte periode te controleren.</p>
+  </section>
+
+</div>
+</body>
+</html>

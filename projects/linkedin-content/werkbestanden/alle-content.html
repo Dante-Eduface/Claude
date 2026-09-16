@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LinkedIn content - alle posts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#002333;--green:#00E075;--green2:#008F5A;--bg:#f5f7f8;--card:#fff;--line:#e2e8ea;--muted:#5b6b73}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--navy);font-family:'Inter',system-ui,sans-serif;line-height:1.55}
+  h1,h2,h3,.spartan{font-family:'League Spartan',system-ui,sans-serif}
+  header{background:var(--navy);color:#fff;padding:22px 24px;position:sticky;top:0;z-index:10;box-shadow:0 2px 10px rgba(0,0,0,.15)}
+  header .logo{font-family:'League Spartan';font-weight:700;font-size:26px}
+  header .logo b{color:var(--green)}
+  header .sub{font-size:14px;color:#b9c6cc;margin-top:3px}
+  .wrap{max-width:760px;margin:0 auto;padding:22px 18px 110px}
+  .intro{background:#0a3144;color:#dfeef0;border-radius:12px;padding:16px 18px;margin:16px 0;font-size:14px}
+  .intro b{color:#fff}
+  .intro code{background:#06222f;color:#7ff0b6;padding:1px 6px;border-radius:5px}
+  .voice-h{font-family:'League Spartan';font-size:24px;margin:36px 4px 6px;border-bottom:2px solid var(--green);padding-bottom:6px}
+  .post{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:14px 0}
+  .post-h{font-size:12px;text-transform:uppercase;letter-spacing:.4px;color:var(--green2);font-weight:700;margin-bottom:8px}
+  textarea{width:100%;background:#fcfdfd;color:var(--navy);border:1px solid #cdd9dd;border-radius:9px;padding:11px 13px;font-family:'Inter';font-size:14px;line-height:1.55;resize:vertical}
+  textarea:focus{outline:none;border-color:var(--green2);box-shadow:0 0 0 2px #00e07533}
+  .pv-lbl{font-size:11px;text-transform:uppercase;letter-spacing:.4px;color:var(--muted);font-weight:700;margin:12px 0 4px}
+  .preview{background:#fff;border:1px solid #e6edf0;border-left:3px solid var(--green);border-radius:9px;padding:12px 14px;font-size:14.5px;white-space:pre-wrap;min-height:20px}
+  .preview b{font-weight:700}
+  .row{display:flex;justify-content:flex-end;margin-top:10px}
+  .cp{background:var(--green);color:var(--navy);border:none;border-radius:8px;padding:8px 16px;font-size:13px;font-weight:700;font-family:'League Spartan';cursor:pointer}
+  .cp:hover{background:#00c768}
+  .dlbar{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid var(--line);padding:12px 18px;display:flex;justify-content:center;gap:12px;box-shadow:0 -2px 10px rgba(0,0,0,.06);z-index:20}
+  .btn{background:var(--green);color:var(--navy);border:none;border-radius:9px;padding:13px 26px;font-size:15px;font-weight:700;font-family:'League Spartan';cursor:pointer}
+  .btn:hover{background:#00c768}
+  .btn.ghost{background:#eef3f4;color:var(--navy)}
+  .toast{position:fixed;bottom:80px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--navy);color:#fff;padding:12px 20px;border-radius:10px;font-size:14px;opacity:0;pointer-events:none;transition:.2s;z-index:50}
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+  .toast b{color:var(--green)}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">Edu<b>face</b></div>
+  <div class="sub">LinkedIn content - alle posts (Dante, Jeroen, Menno, Eduface)</div>
+</header>
+
+<div class="wrap">
+
+  <div class="intro">
+    <b>Zo werkt dit:</b> alle conceptposts staan hieronder, bewerk ze gerust. Tekst tussen <code>**twee sterren**</code> wordt vet op LinkedIn. De <b>preview</b> onder elke post laat zien hoe het er echt uitziet. <b>Kopieer voor LinkedIn</b> zet de sterren om naar echte vette tekst die je zo in Buffer/LinkedIn plakt. Onderaan: <b>Download alles</b> om het ingevulde bestand op te slaan. Niets wordt automatisch geplaatst.
+  </div>
+
+  <!-- ================= DANTE ================= -->
+  <div class="voice-h">Dante (10)</div>
+
+  <div class="post" data-section="Dante"><div class="post-h">Observatie + take · EN</div>
+  <textarea id="d1" data-post rows="12">Last week a lecturer told me she marks 180 essays. Twice a year.
+
+By the time her students get the feedback back, they've already handed in the next assignment.
+
+We talk about feedback in UK higher education like it's a quality problem. I don't think it is. It's a timing problem.
+
+**Feedback that arrives too late to act on isn't feedback.** It's a grade with a few notes attached.
+
+And I get why it happens. Nobody has the hours to turn 180 essays around in a week. So we've quietly accepted that feedback comes late, or thin, or both.
+
+That's the part I think we've stopped questioning.
+
+What if the goal wasn't faster marking, but feedback a student actually gets while they can still use it?
+
+Is late feedback a staffing problem, or one we've just learned to live with?</textarea>
+  <div class="pv-lbl">Preview (zoals op LinkedIn)</div><div class="preview" id="d1_pv"></div>
+  <div class="row"><button class="cp" onclick="copyPost('d1')">Kopieer voor LinkedIn</button></div></div>
+
+  <div class="post" data-section="Dante"><div class="post-h">Gesprek uit de praktijk · EN</div>
+  <textarea id="d2" data-post rows="12">I've had the same conversation maybe twenty times with UK universities this year.
+
+It always lands on one question:
+
+"This looks great. But can I trust what it tells my students?"
+
+Not "is it fast." Not "is it cheap." **Can I trust it.**
+
+For a while I treated that as an objection to get past. I've stopped doing that.
+
+It's the most important question in the room. And the people who ask it hardest are usually the ones who end up moving first.
+
+Because trust isn't something you bolt on at the end. It's what decides whether a tool ever gets near a student in the first place.
+
+So now I lead with it. How does the model reach its answer? Where does the data live? Where does the lecturer stay in control?
+
+If you work in higher education: what would a tool have to show you before you'd trust it with your students' work?</textarea>
+  <div class="pv-lbl">Preview (zoals op LinkedIn)</div><div class="preview" id="d2_pv"></div>
+  <div class="row"><button class="cp" onclick="copyPost('d2')">Kopieer voor LinkedIn</button></div></div>
+
+  <div class="post" data-section="Dante"><div class="post-h">Genuanceerde take · EN</div>
+  <textarea id="d3" data-post rows="12">A question I get from teachers almost every week:
+
+"If AI can do all of this, what's left for me?"
+
+I don't buy the headline that teachers become obsolete. But the role does shift.
+
+**AI can respond. A teacher can have a conversation.**
+
+That difference gets more important, not less. Sensing what a student isn't saying, no model does that.
+
+Where AI does help is the work teachers dread: marking, feedback on writing, building practice material.
+
+So it's not about replacing the teacher. It's about giving the teacher back time for the part that actually matters.
+
+Are you seeing that shift already?</textarea>
+  <div class="pv-lbl">Preview (zoals op LinkedIn)</div><div class="preview" id="d3_pv"></div>
+  <div class="row"><button class="cp" onclick="copyPost('d3')">Kopieer voor LinkedIn</button></div></div>
+
+  <div class="post" data-section="Dante"><div class="post-h">Eerlijk / hulp vragen · EN</div>
+  <textarea id="d4" data-post rows="11">Time for an honest one.
+
+We have 500+ users, educators from nearly every university in the Netherlands, and a few in the UK.
+
+And in 2.5 years we've had exactly one article written about us. (Thanks, Universiteit Leiden.)
+
+**We're genuinely bad at getting attention for the work.**
+
+We're good at building a model and getting teachers to use it. We're bad at telling anyone about it.
+
+So I'll just ask: if you know how education startups break through to press and sector visibility, I'd love to learn from you.
+
+What actually worked for you?</textarea>
+  <div class="pv-lbl">Preview (zoals op LinkedIn)</div><div class="preview" id="d4_pv"></div>
+  <div class="row"><button class="cp" onclick="copyPost('d4')">Kopieer voor LinkedIn</button></div></div>
+
+  <div class="post" data-section="Dante"><div class="post-h">Verhaal van een conferentie · EN</div>
+  <textarea id="d5" data-post rows="12">At a conference in Glasgow, a lecturer walked up to our stand and said:
+
+"Last week I described your product to my team. And now you're standing here, with exactly what I was looking for."
+
+We were talking about a pilot five minutes later.
+
+But the part that stuck with me wasn't the pilot.
+
+**The problem we work on isn't a Dutch problem.**
+
+Helping teachers give good feedback on writing is just as real in the UK, in Ireland, anywhere there are too many students and too few hours.
+
+We knew that on paper. It hits differently when someone says it to your face.
+
+Where are you seeing the biggest feedback bottleneck right now?</textarea>
+  <div class="pv-lbl">Preview (zoals op LinkedIn)</div><div class="preview" id="d5_pv"></div>
+  <div class="row"><button class="cp" onclick="copyPost('d5')">Kopieer voor LinkedIn</button></div></div>
+
+  <div class="post" data-section="Dante"><div class="post-h">Contrarian · EN</div>
+  <textarea id="d6" data-post rows="12">Two things I keep hearing about AI in education. I don't fully buy either.
+
+"AI will replace teachers." It won't.
+
+"AI has no place in the classroom." That's not realistic either.
+
+**The risk isn't AI in education. It's lazy AI in education.**
+
+A generic chatbot handing students confident, slightly wrong feedback does real damage. A tool built for the job, with the teacher in control, does the opposite.
+
+The technology isn't the question. How you use it is.
+
+So the conversation I'd rather have isn't whether AI belongs in assessment. It's what it should have to prove before it earns a place there.
+
+What would it have to prove for you?</textarea>
+  <div class="pv-lbl">Preview (zoals op LinkedIn)</div><div class="preview" id="d6_pv"></div>
+  <div class="row"><button class="cp" onclick="copyPost('d6')">Kopieer voor LinkedIn</button></div></div>
+
+  <div class="post" data-section="Dante"><div class="post-h">Observatie: wat houdt instellingen tegen · EN</div>
+  <textarea id="d7" data-post rows="12">After a year of conversations with UK universities, here's what actually slows AI adoption in assessment.
+
+It's not budget. It's not the technology.
+
+It's that nobody wants to be the one who put a black box near a student's grade.
+
+**The fear isn't "will it work." It's "can I defend this if someone asks."**
+
+That's a reasonable fear. A grade is high-stakes. Reputations sit on it.
+
+The universities moving forward aren't the boldest ones. They're the ones who kept the lecturer in control and could explain exactly how it works.
+
+Caution here isn't a blocker. It's the right instinct. The job is to meet it, not argue with it.
+
+What would make you comfortable enough to try?</textarea>
+  <div class="pv-lbl">Preview (zoals op LinkedIn)</div><div class="preview" id="d7_pv"></div>
+  <div class="row"><button class="cp" onclick="copyPost('d7')">Kopieer voor LinkedIn</button></div></div>
+
+  <div class="post" data-section="Dante"><div class="post-h">Take over toetsing · EN</div>
+  <textarea id="d8" data-post rows="12">Ask teachers which task they dread most, and the answer is almost always the same: marking.
+
+It takes huge amounts of time, it's repetitive, and it lands on top of everything else.
+
+**For years we've made assessment scalable by making it simpler, not better.**
+
+Multiple choice because it's easy to mark. Short tasks because there's no time for more.
+
+I think we're at a turning point. Used well, AI could make richer assessment possible at scale, instead of pushing us toward the thinnest version of it.
+
+The goal isn't less marking. It's better assessment.
+
+What would your ideal assessment look like if time wasn't the constraint?</textarea>
+  <div class="pv-lbl">Preview (zoals op LinkedIn)</div><div class="preview" id="d8_pv"></div>
+  <div class="row"><button class="cp" onclick="copyPost('d8')">Kopieer voor LinkedIn</button></div></div>
+
+  <div class="post" data-section="Dante"><div class="post-h">Behind the scenes · EN</div>
+  <textarea id="d9" data-post rows="12">Selling into higher education is slow. Committees, procurement, security reviews, academic calendars.
+
+For a while that frustrated me.
+
+Now I think it's mostly right.
+
+**You're asking an institution to trust software with something that shapes a student's future. That should be hard.**
+
+The deals that move fastest aren't the ones where we pushed hardest. They're the ones where a university felt in control the whole way through.
+
+So we stopped trying to shorten the process and started trying to make it easier to say yes safely.
+
+Slower. But it sticks.
+
+If you sell into higher ed: what actually builds the trust that moves a deal?</textarea>
+  <div class="pv-lbl">Preview (zoals op LinkedIn)</div><div class="preview" id="d9_pv"></div>
+  <div class="row"><button class="cp" onclick="copyPost('d9')">Kopieer voor LinkedIn</button></div></div>
+
+  <div class="post" data-section="Dante"><div class="post-h">Vraag-gedreven · EN</div>
+  <textarea id="d10" data-post rows="12">A question I keep asking lecturers, and the answers are never the same:
+
+"What does good feedback actually look like to you?"
+
+Some say specific. Some say fast. Some say kind but honest. Some say it points to the next step, not just the mistake.
+
+**You can't build a tool for feedback if you haven't sat with that question first.**
+
+It's tempting to let the AI "figure it out." But a model only learns what good looks like if the people who know tell it.
+
+That's why most of my week is conversations, not demos.
+
+So I'll ask you too: what makes feedback actually useful for your students?</textarea>
+  <div class="pv-lbl">Preview (zoals op LinkedIn)</div><div class="preview" id="d10_pv"></div>
+  <div class="row"><button class="cp" onclick="copyPost('d10')">Kopieer voor LinkedIn</button></div></div>
+
+  <!-- ================= JEROEN ================= -->
+  <div class="voice-h">Jeroen (10)</div>
+
+  <div class="post" data-section="Jeroen"><div class="post-h">Contrarian / buying criteria · EN</div>
+  <textarea id="j1" data-post rows="12">Every university I talk to wants responsible AI for assessment. Almost none of them ask the question that actually proves it.
+
+They ask: is it accurate?
+
+Better question: can you see how it reached its answer, and can you run it on your own infrastructure?
+
+A model you can't inspect and can't host is a black box you're renting from a US data center. For grading, which sits in the high-risk category of the AI Act, that isn't a detail. It's the whole thing.
+
+**We built our own model, hosted in the EU, because accurate isn't enough when a student's grade is on the line.**
+
+Transparency and control are the real buying criteria. Accuracy is table stakes.
+
+If you're evaluating AI for assessment, what's on your must-have list?</textarea>
+  <div class="pv-lbl">Preview (zoals op LinkedIn)</div><div class="preview" id="j1_pv"></div>
+  <div class="row"><button class="cp" onclick="copyPost('j1')">Kopieer voor LinkedIn</button></div></div>
+
+  <div class="post" data-section="Jeroen"><div class="post-h">Contrarian · EN</div>
+  <textarea id="j2" data-post rows="13">I keep seeing "sovereign AI" or even "100% European AI" on the websites of new AI startups offering language models.
+
+But what does that actually mean?
+
+In a lot of cases, it's a US model running in a data center that happens to sit in Europe.
+
+**Is that sovereign? I don't think so, if you still depend on a model you didn't build.**
+
+To be clear: plenty of companies genuinely train their own models. That's not who I mean. I mean the language models that aren't built by the company selling them.
+
+So my question: when is a model actually "sovereign" to you? Is running on European hardware enough? Or does it have to be trained and developed in-house?
+
+Curious how you see it.</textarea>
+  <div class="pv-lbl">Preview (zoals op LinkedIn)</div><div class="preview" id="j2_pv"></div>
+  <div class="row"><button class="cp" onclick="copyPost('j2')">Kopieer voor LinkedIn</button></div></div>
+
+  <div class="post" data-section="Jeroen"><div class="post-h">Take over toetsing · EN</div>
+  <textarea id="j3" data-post rows="12">A few years ago a headline called the university "an exam factory."
+
+The writer was frustrated by the flood of multiple-choice tests, which mostly exist to move large numbers of students toward a diploma.
+
+I understand how it got there. With hundreds of students, scalable assessment is almost a necessity.
+
+**But scalable isn't the same as good.**
+
+I think we're reaching a point where richer assessment can also happen at scale, by working with AI instead of against it.
+
+Not to replace teachers, but so the thinnest form of testing is no longer the only feasible one.
+
+Where would you want to see more creative assessment if scale wasn't the problem?</textarea>
+  <div class="pv-lbl">Preview (zoals op LinkedIn)</div><div class="preview" id="j3_pv"></div>
+  <div class="row"><button class="cp" onclick="copyPost('j3')">Kopieer voor LinkedIn</button></div></div>
+
+  <div class="post" data-section="Jeroen"><div class="post-h">Milestone / partnership · EN</div>
+  <textarea id="j4" data-post rows="11">A milestone I'm proud of.
+
+We ran a webinar with Bath Spa University, hosted together with Professor Helen King, for educators across the UK.
+
+We didn't present a feature list. We walked through how Bath Spa defined success, what they learned about feedback quality, and what their students actually said.
+
+**The most useful sessions in our space aren't vendor pitches. They're institutions sharing what really happened.**
+
+That's the kind of conversation that moves a sector forward.
+
+If you'd like the recording, leave a comment and I'll send it over.</textarea>
+  <div class="pv-lbl">Preview (zoals op LinkedIn)</div><div class="preview" id="j4_pv"></div>
+  <div class="row"><button class="cp" onclick="copyPost('j4')">Kopieer voor LinkedIn</button></div></div>
+
+  <div class="post" data-section="Jeroen"><div class="post-h">Waarom eigen EU-model · EN</div>
+  <textarea id="j5" data-post rows="12">A lot of edtech tools are a thin layer on top of a US language model.
+
+We chose the harder path: we built and host our own model, in the EU.
+
+Why take on that cost?
+
+**When the output is a student's grade, "we use a powerful API" isn't an answer. "Here's how it works and where your data lives" is.**
+
+Owning the model means we can be transparent about how it was trained, keep data in Europe, and stay compliant with the AI Act, which puts grading in the high-risk category.
+
+For a chatbot, renting a model is fine. For assessment, control isn't optional.
+
+If you're evaluating AI for education, how much does owning the model matter to you?</textarea>
+  <div class="pv-lbl">Preview (zoals op LinkedIn)</div><div class="preview" id="j5_pv"></div>
+  <div class="row"><button class="cp" onclick="copyPost('j5')">Kopieer voor LinkedIn</button></div></div>
+
+  <div class="post" data-section="Jeroen"><div class="post-h">Duurzaamheid / specialisatie · EN</div>
+  <textarea id="j6" data-post rows="11">Something that doesn't get said enough about AI in education.
+
+Our model is purpose-built for one job: feedback and assessment. It doesn't need to write poetry or code.
+
+**Because it's specialised, it's small. And small means far less compute.**
+
+That has a practical upside (lower latency, the option to run it locally) and an environmental one: a much smaller footprint than routing everything through a giant general-purpose model.
+
+The industry default is "bigger is better." For education, I think fit-for-purpose beats big.
+
+Is sustainability part of how your institution evaluates AI yet?</textarea>
+  <div class="pv-lbl">Preview (zoals op LinkedIn)</div><div class="preview" id="j6_pv"></div>
+  <div class="row"><button class="cp" onclick="copyPost('j6')">Kopieer voor LinkedIn</button></div></div>
+
+  <div class="post" data-section="Jeroen"><div class="post-h">Jaar-reflectie / momentum · EN</div>
+  <textarea id="j7" data-post rows="12">End of the year. A good moment to actually stop and look back.
+
+When you're building a startup it's easy to fixate on what went wrong and miss what went right.
+
+So, the right:
+
+We met our first international partner in the UK and were chosen for an AI assessment programme. We were selected in Ireland too. Educators from every Dutch university now use the tool, and five have moved into structured collaborations.
+
+**And 90% of our new sign-ups still come from one teacher recommending us to another.**
+
+That last number matters most to me. You can't fake word of mouth.
+
+Grateful for the people who got us here. More next year.</textarea>
+  <div class="pv-lbl">Preview (zoals op LinkedIn)</div><div class="preview" id="j7_pv"></div>
+  <div class="row"><button class="cp" onclick="copyPost('j7')">Kopieer voor LinkedIn</button></div></div>
+
+  <div class="post" data-section="Jeroen"><div class="post-h">Hallucinaties · EN</div>
+  <textarea id="j8" data-post rows="11">"It's right most of the time" is a great line for a chatbot.
+
+It's a terrible line for grading.
+
+If a model invents a reason, misreads an argument, or marks the same answer differently twice, a student pays for it.
+
+**In assessment, "usually correct" is just "sometimes wrong" with better marketing.**
+
+That's why we don't treat reliability as a nice-to-have. It's the product. A model trained for feedback, validated against what teachers actually write, with the lecturer in control of the outcome.
+
+Trust is earned in the cases where it would have been easy to be wrong.
+
+What would you need to see before you trusted AI with a grade?</textarea>
+  <div class="pv-lbl">Preview (zoals op LinkedIn)</div><div class="preview" id="j8_pv"></div>
+  <div class="row"><button class="cp" onclick="copyPost('j8')">Kopieer voor LinkedIn</button></div></div>
+
+  <div class="post" data-section="Jeroen"><div class="post-h">Toekomst van toetsing · EN</div>
+  <textarea id="j9" data-post rows="12">We think a lot about what assessment looks like in the age of AI.
+
+Here's one belief: it won't be top-down.
+
+**The interesting shift isn't institutions controlling AI harder. It's students taking more ownership of how they learn and prove it.**
+
+Oral checks, portfolios, defending your own reasoning, work that's hard to fake because it's yours. AI doesn't kill that. Used well, it makes room for it.
+
+The fear-driven version of this conversation is all about catching cheating. The better version is about designing assessment worth doing.
+
+Which conversation is your institution having right now?</textarea>
+  <div class="pv-lbl">Preview (zoals op LinkedIn)</div><div class="preview" id="j9_pv"></div>
+  <div class="row"><button class="cp" onclick="copyPost('j9')">Kopieer voor LinkedIn</button></div></div>
+
+  <div class="post" data-section="Jeroen"><div class="post-h">Wat te evalueren · EN</div>
+  <textarea id="j10" data-post rows="11">Most AI-in-education evaluations I see ask the wrong first question: "how accurate is it?"
+
+Accuracy matters. But it's table stakes, not a differentiator.
+
+**The questions that actually protect you: can you see how it works, can you host it, and does the teacher stay in control?**
+
+A model you can't inspect and can't run on your own terms is a risk you don't fully own, no matter how good the benchmark looks.
+
+If I were buying AI for assessment today, accuracy would be on the list. It just wouldn't be at the top.
+
+What's at the top of yours?</textarea>
+  <div class="pv-lbl">Preview (zoals op LinkedIn)</div><div class="preview" id="j10_pv"></div>
+  <div class="row"><button class="cp" onclick="copyPost('j10')">Kopieer voor LinkedIn</button></div></div>
+
+  <!-- ================= MENNO ================= -->
+  <div class="voice-h">Menno (10)</div>
+
+  <div class="post" data-section="Menno"><div class="post-h">Generieke LLM vs getraind model · EN</div>
+  <textarea id="m1" data-post rows="13">A general-purpose LLM and a model trained for formative feedback are not the same tool. Here's the technical reason it matters for grading.
+
+A general model is optimised to sound right. It predicts the most plausible next token. Great for a chatbot. A problem when the output is a grade, because "plausible" and "correct against a rubric" are not the same thing.
+
+For assessment you need three things a general model doesn't give you by default:
+1. Output anchored to the rubric, not to what reads well.
+2. Consistency across hundreds of submissions, so the same answer gets the same mark.
+3. A way to show why the model landed where it did.
+
+We train for exactly this, and we validate against what an experienced teacher would actually write, not a generic benchmark. It also lets us run a smaller model, which means lower latency and the option to host it inside the institution.
+
+**Short version: for grading, a model that sounds confident is not the same as a model you can defend in an exam board.**</textarea>
+  <div class="pv-lbl">Preview (zoals op LinkedIn)</div><div class="preview" id="m1_pv"></div>
+  <div class="row"><button class="cp" onclick="copyPost('m1')">Kopieer voor LinkedIn</button></div></div>
+
+  <div class="post" data-section="Menno"><div class="post-h">Pruning als systeembeslissing · EN</div>
+  <textarea id="m2" data-post rows="12">A note on something we spend real engineering time on: pruning our model.
+
+People assume pruning is about making a model smaller to save space. For us it isn't.
+
+**We prune because educational AI has hard constraints a general model doesn't.**
+
+It has to be fast enough for real-time feedback, small enough to run on infrastructure a university controls, and stable across very different assignments and languages.
+
+The naive approach (drop the weights that matter least) fails, because the parts of a model aren't independent. Remove one and you change the behaviour of many others.
+
+So the real work isn't removing weights. It's removing capacity while keeping the function intact.
+
+That's the difference between deploying a model and engineering one for a job.</textarea>
+  <div class="pv-lbl">Preview (zoals op LinkedIn)</div><div class="preview" id="m2_pv"></div>
+  <div class="row"><button class="cp" onclick="copyPost('m2')">Kopieer voor LinkedIn</button></div></div>
+
+  <div class="post" data-section="Menno"><div class="post-h">Lokaal hosten · EN</div>
+  <textarea id="m3" data-post rows="12">A question we get from every IT and data team: where does the model run?
+
+For us the answer is: on infrastructure the institution can control, in the EU.
+
+That's not a marketing choice. It's a technical and legal one.
+
+**Grading sits in the high-risk category of the AI Act. "Trust us, it's in the cloud somewhere" doesn't clear that bar.**
+
+Local hosting gives three things at once: data stays where it should, latency drops, and you can actually audit what the system is doing.
+
+For a consumer chatbot, none of this matters. For a tool that touches student records and grades, all of it does.
+
+What's the first question your data team asks about a new tool?</textarea>
+  <div class="pv-lbl">Preview (zoals op LinkedIn)</div><div class="preview" id="m3_pv"></div>
+  <div class="row"><button class="cp" onclick="copyPost('m3')">Kopieer voor LinkedIn</button></div></div>
+
+  <div class="post" data-section="Menno"><div class="post-h">Output valideren · EN</div>
+  <textarea id="m4" data-post rows="11">Most AI feedback fails for one unglamorous reason: nobody checked it against what a good teacher would actually say.
+
+A model can produce fluent, confident feedback that sounds right and is pedagogically useless.
+
+**So the hard part isn't generating feedback. It's validating it.**
+
+We compare model output to what experienced educators write, on the same work, against the same rubric. Not a generic benchmark. The real thing.
+
+That's slower and less impressive in a demo. It's also the only way to know the feedback helps a student instead of just filling space.
+
+In education, "sounds good" and "is good" are not the same measurement.</textarea>
+  <div class="pv-lbl">Preview (zoals op LinkedIn)</div><div class="preview" id="m4_pv"></div>
+  <div class="row"><button class="cp" onclick="copyPost('m4')">Kopieer voor LinkedIn</button></div></div>
+
+  <div class="post" data-section="Menno"><div class="post-h">Reading comprehension eerst · EN</div>
+  <textarea id="m5" data-post rows="11">Before a model can give feedback on an essay, it has to actually understand the essay.
+
+That sounds obvious. It's where a lot of tools quietly skip a step.
+
+**If the model misreads the argument, every comment after that is built on a misunderstanding.**
+
+So we put real work into reading comprehension first. Our model reached the top score on the Dutch SQuAD benchmark and ranks among the best on the English one.
+
+Only once it reliably understands academic text, argumentation and structure does it make sense to let it comment on quality.
+
+Understanding first, feedback second. In that order, or the feedback is just confident noise.</textarea>
+  <div class="pv-lbl">Preview (zoals op LinkedIn)</div><div class="preview" id="m5_pv"></div>
+  <div class="row"><button class="cp" onclick="copyPost('m5')">Kopieer voor LinkedIn</button></div></div>
+
+  <div class="post" data-section="Menno"><div class="post-h">Generatie vs classificatie · EN</div>
+  <textarea id="m6" data-post rows="12">A distinction that matters more than it sounds: generative models and classification models do different jobs.
+
+A generative model predicts the next plausible word. A classifier decides which category something belongs to.
+
+**Good assessment needs both, and using only one is where a lot of tools go wrong.**
+
+You want generation to explain feedback in language a student understands. You want classification-style rigour to judge where work sits against a rubric, consistently.
+
+Lean only on generation and you get fluent, inconsistent marking. Lean only on classification and you get a score with no useful explanation.
+
+The engineering challenge is combining them so the explanation and the judgement actually agree.</textarea>
+  <div class="pv-lbl">Preview (zoals op LinkedIn)</div><div class="preview" id="m6_pv"></div>
+  <div class="row"><button class="cp" onclick="copyPost('m6')">Kopieer voor LinkedIn</button></div></div>
+
+  <div class="post" data-section="Menno"><div class="post-h">Consistentie op schaal · EN</div>
+  <textarea id="m7" data-post rows="12">Here's a property that's easy to overlook and hard to build: consistency.
+
+A human marker drifts. The same answer, Monday morning versus Friday afternoon, can get a different mark. Everyone knows it, few say it.
+
+**If AI is going to help with grading, the bar isn't "as good as a tired marker." It's the same answer, the same mark, every time.**
+
+That's a real engineering target: stable behaviour across hundreds of submissions, across courses, across languages.
+
+It's also where a model can genuinely beat the status quo, not by being smarter, but by being consistent in a way humans can't sustain at volume.
+
+Consistency isn't a flashy feature. For assessment, it might be the most important one.</textarea>
+  <div class="pv-lbl">Preview (zoals op LinkedIn)</div><div class="preview" id="m7_pv"></div>
+  <div class="row"><button class="cp" onclick="copyPost('m7')">Kopieer voor LinkedIn</button></div></div>
+
+  <div class="post" data-section="Menno"><div class="post-h">Confident vs correct · EN</div>
+  <textarea id="m8" data-post rows="11">The most dangerous thing about a language model is that it's always fluent, even when it's wrong.
+
+For a chatbot, a confident wrong answer is annoying. For grading, it's harmful.
+
+**A model that sounds sure of itself is not the same as a model you can defend in an exam board.**
+
+So we optimise for something less impressive in a demo: feedback anchored to the rubric, traceable to a reason, and honest about what it can't judge.
+
+The goal isn't a model that always has an answer. It's a model whose answers hold up when someone challenges them.
+
+Confidence is easy. Defensibility is the hard part, and the one that matters here.</textarea>
+  <div class="pv-lbl">Preview (zoals op LinkedIn)</div><div class="preview" id="m8_pv"></div>
+  <div class="row"><button class="cp" onclick="copyPost('m8')">Kopieer voor LinkedIn</button></div></div>
+
+  <div class="post" data-section="Menno"><div class="post-h">AI-Act / transparantie · EN</div>
+  <textarea id="m9" data-post rows="11">Grading with AI falls into the high-risk category of the EU AI Act. That's not a footnote, it's a design constraint.
+
+High-risk means you have to explain how the system reaches its output, manage the risks, and keep humans in control.
+
+**You can't bolt that on afterwards. Either the system was built to be transparent, or it wasn't.**
+
+Because we built and host our own model, we can show how it was trained and how it arrives at a given piece of feedback. That's not a compliance checkbox for us, it's the reason institutions can actually adopt it.
+
+Regulation here isn't the obstacle people think it is. Done right, it's the same thing as being trustworthy.</textarea>
+  <div class="pv-lbl">Preview (zoals op LinkedIn)</div><div class="preview" id="m9_pv"></div>
+  <div class="row"><button class="cp" onclick="copyPost('m9')">Kopieer voor LinkedIn</button></div></div>
+
+  <div class="post" data-section="Menno"><div class="post-h">Persoonlijk / journey · EN</div>
+  <textarea id="m10" data-post rows="11">A personal one.
+
+In 2021 I started a bachelor's in Artificial Intelligence, just before the boom. In 2023 I started building Eduface. Now I'm finishing my master's while we scale the company.
+
+**I went from studying AI at Radboud to bringing an AI model back to Radboud.**
+
+We're starting a collaboration there, exploring how our model can support assessment, at the same place I learned the fundamentals.
+
+It's a strange and good feeling to close that loop.
+
+Most of my time is still spent in the codebase and training pipelines. But moments like this are the reason the technical work matters: it ends up in front of real students and teachers.</textarea>
+  <div class="pv-lbl">Preview (zoals op LinkedIn)</div><div class="preview" id="m10_pv"></div>
+  <div class="row"><button class="cp" onclick="copyPost('m10')">Kopieer voor LinkedIn</button></div></div>
+
+  <!-- ================= EDUFACE ================= -->
+  <div class="voice-h">Eduface (6)</div>
+
+  <div class="post" data-section="Eduface"><div class="post-h">POV / opinie · EN</div>
+  <textarea id="e1" data-post rows="12">Most feedback in higher education arrives too late to change anything.
+
+A student hands in an essay, waits three weeks, gets a grade and a few comments, and by then they've moved on. The feedback becomes a receipt, not a learning tool.
+
+That's not because lecturers don't care. They're marking hundreds of scripts on top of teaching. The system asks them to choose between fast and good, and there are only so many hours.
+
+**We think that's a false choice.** Done right, AI takes the first pass so lecturers spend their time where it counts: the judgment, the nuance, the conversation with the student.
+
+Feedback should reach students while it still matters. Everything we build comes back to that.
+
+Where does feedback break down at your institution: speed, consistency, or something else?</textarea>
+  <div class="pv-lbl">Preview (zoals op LinkedIn)</div><div class="preview" id="e1_pv"></div>
+  <div class="row"><button class="cp" onclick="copyPost('e1')">Kopieer voor LinkedIn</button></div></div>
+
+  <div class="post" data-section="Eduface"><div class="post-h">POV / learning from teachers · EN</div>
+  <textarea id="e2" data-post rows="12">Anyone can build a product.
+
+Building one that actually works in education means doing the hard part first: learning from teachers.
+
+**So we don't ask AI to "do the magic." We ask teachers what good feedback looks like, and where AI should stay out of the way.**
+
+The questions that shape our roadmap sound like:
+What does meaningful feedback look like for you?
+Where does AI genuinely help, and where does it get in the way?
+
+The tool is the easy part. The understanding behind it is the work.
+
+Where do you think AI should help in education, and where should it stay out?</textarea>
+  <div class="pv-lbl">Preview (zoals op LinkedIn)</div><div class="preview" id="e2_pv"></div>
+  <div class="row"><button class="cp" onclick="copyPost('e2')">Kopieer voor LinkedIn</button></div></div>
+
+  <div class="post" data-section="Eduface"><div class="post-h">Proof / Scorion · EN</div>
+  <textarea id="e3" data-post rows="11">Our first step into medical education.
+
+Together with Scorion, we're working on AI use cases for programmes built around programmatic assessment.
+
+**One concrete example: turning quick, shorthand examiner notes into clear, didactically strong feedback.**
+
+So students don't just get a polite comment. They get feedback that actually points them toward their next step.
+
+It fits straight into Scorion: programmatic assessment as the foundation, stronger feedback on top.
+
+Small step, real impact. More to come.</textarea>
+  <div class="pv-lbl">Preview (zoals op LinkedIn)</div><div class="preview" id="e3_pv"></div>
+  <div class="row"><button class="cp" onclick="copyPost('e3')">Kopieer voor LinkedIn</button></div></div>
+
+  <div class="post" data-section="Eduface"><div class="post-h">Proof / pilot · EN</div>
+  <textarea id="e4" data-post rows="11">A new collaboration we're proud of: Eduface and Radboud University.
+
+We're exploring how our model can support assessment in the Faculty of Arts, helping lecturers give better, more consistent feedback while saving real time on marking.
+
+**In practice, that's typically around 48% of assessment time handed back to teachers.**
+
+That time doesn't disappear. It goes back into the part of teaching a model can't do: the conversation with the student.
+
+Better feedback, less grading grind, more room for the human work. That's the point.
+
+Curious how this could fit your faculty? Send us a message.</textarea>
+  <div class="pv-lbl">Preview (zoals op LinkedIn)</div><div class="preview" id="e4_pv"></div>
+  <div class="row"><button class="cp" onclick="copyPost('e4')">Kopieer voor LinkedIn</button></div></div>
+
+  <div class="post" data-section="Eduface"><div class="post-h">POV / wat AI in assessment moet zijn · EN</div>
+  <textarea id="e5" data-post rows="11">"AI in assessment" is becoming a buzzword. So let's be specific about what it should actually mean.
+
+Not: a black box that hands back a grade.
+
+**But: a tool that's transparent about how it reached its answer, that keeps the lecturer in control, and that you can run on your own terms.**
+
+Anything less and you've added risk, not removed work.
+
+We think the bar for AI near a student's grade should be higher than for AI anywhere else. Because the stakes are higher.
+
+What would AI have to prove before you'd trust it in your assessment process?</textarea>
+  <div class="pv-lbl">Preview (zoals op LinkedIn)</div><div class="preview" id="e5_pv"></div>
+  <div class="row"><button class="cp" onclick="copyPost('e5')">Kopieer voor LinkedIn</button></div></div>
+
+  <div class="post" data-section="Eduface"><div class="post-h">POV / tijd van de docent · EN</div>
+  <textarea id="e6" data-post rows="11">Every hour a lecturer spends grading is an hour not spent teaching.
+
+That's the trade-off higher education has quietly accepted for years.
+
+**We don't think faster marking is the goal. Freeing teachers for the work only they can do is.**
+
+A model can take the first pass on feedback. It can't have the conversation, read the room, or notice the student who's quietly struggling.
+
+So the aim isn't to automate teachers out of assessment. It's to hand them back the time, and the energy, for the part that actually changes a student's outcome.
+
+Where would you reinvest the time if grading took half as long?</textarea>
+  <div class="pv-lbl">Preview (zoals op LinkedIn)</div><div class="preview" id="e6_pv"></div>
+  <div class="row"><button class="cp" onclick="copyPost('e6')">Kopieer voor LinkedIn</button></div></div>
+
+</div>
+
+<div class="dlbar">
+  <button class="btn" onclick="dl()">Download alles</button>
+  <button class="btn ghost" onclick="resetAll()">Herstel originelen</button>
+</div>
+<div class="toast" id="toast"><b>Gekopieerd</b> (vet is meegezet, plak in LinkedIn/Buffer)</div>
+
+<script>
+  const KEY='eduface-linkedin-content';
+  function toBold(str){let o='';for(const ch of str){const c=ch.codePointAt(0);
+    if(c>=65&&c<=90)o+=String.fromCodePoint(0x1D5D4+(c-65));
+    else if(c>=97&&c<=122)o+=String.fromCodePoint(0x1D5EE+(c-97));
+    else if(c>=48&&c<=57)o+=String.fromCodePoint(0x1D7EC+(c-48));
+    else o+=ch;}return o;}
+  function liReady(t){return t.replace(/\*\*([\s\S]+?)\*\*/g,(m,p)=>toBold(p));}
+  function escHtml(t){return t.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+  function pvHtml(t){return escHtml(t).replace(/\*\*([\s\S]+?)\*\*/g,'<b>$1</b>');}
+  function posts(){return document.querySelectorAll('textarea[data-post]')}
+  function auto(t){t.style.height='auto';t.style.height=t.scrollHeight+'px'}
+  function preview(t){const pv=document.getElementById(t.id+'_pv');if(pv)pv.innerHTML=pvHtml(t.value);}
+  function save(){const s={};posts().forEach(t=>s[t.id]=t.value);localStorage.setItem(KEY,JSON.stringify(s));}
+  function load(){let s={};try{s=JSON.parse(localStorage.getItem(KEY))||{}}catch(e){}
+    posts().forEach(t=>{if(s[t.id]!==undefined)t.value=s[t.id];auto(t);preview(t);});}
+  function copyPost(id){const t=document.getElementById(id);navigator.clipboard.writeText(liReady(t.value)).then(()=>toast('Gekopieerd'));}
+  function md(){
+    let out='# Eduface LinkedIn content (ingevuld)\n\nDatum: '+new Date().toLocaleDateString('nl-NL')+'\n\nVet (**...**) is in deze export omgezet naar LinkedIn-vet.\n';
+    let cur='';
+    document.querySelectorAll('.post[data-section]').forEach(p=>{
+      if(p.dataset.section!==cur){cur=p.dataset.section;out+='\n\n# '+cur+'\n';}
+      const h=p.querySelector('.post-h').textContent;
+      const t=p.querySelector('textarea[data-post]');
+      out+='\n## '+h+'\n\n'+liReady(t.value)+'\n\n---\n';
+    });
+    return out;
+  }
+  function dl(){save();const blob=new Blob([md()],{type:'text/markdown'});const a=document.createElement('a');
+    a.href=URL.createObjectURL(blob);a.download=KEY+'-ingevuld.md';document.body.appendChild(a);a.click();a.remove();toast('Gedownload');}
+  function resetAll(){if(confirm('Alle wijzigingen wissen en de originele posts terugzetten?')){localStorage.removeItem(KEY);location.reload();}}
+  let tmo;function toast(msg){const t=document.getElementById('toast');t.querySelector('b').textContent=msg;t.classList.add('show');clearTimeout(tmo);tmo=setTimeout(()=>t.classList.remove('show'),1800)}
+  document.addEventListener('input',e=>{if(e.target.matches('textarea[data-post]')){save();auto(e.target);preview(e.target);}});
+  load();
+</script>
+</body>
+</html>

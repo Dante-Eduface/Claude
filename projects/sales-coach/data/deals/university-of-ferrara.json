@@ -1,0 +1,75 @@
+{
+  "slug": "university-of-ferrara",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_gDH5j4Jwn9oxeuCGYmbfl6XP1gaFzkWW62zv0Wsinkv",
+    "naam": "University of Ferrara",
+    "url": "https://app.close.com/lead/lead_gDH5j4Jwn9oxeuCGYmbfl6XP1gaFzkWW62zv0Wsinkv/",
+    "lead_status": "Nurturing",
+    "opportunity_id": null,
+    "fase": null,
+    "fase_type": null,
+    "waarde": null,
+    "valuta": "EUR",
+    "confidence": null,
+    "close_date": null,
+    "eigenaar": "Eduface CRM",
+    "crm_note": "",
+    "contacten": [
+      {
+        "naam": "Filippo Carnevali",
+        "titel": "",
+        "email": "crnfpp@unife.it",
+        "id": "cont_R3ev6SRrfgR8E5x5HnssxRBznwAIQder5m8zyxWORk9"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_PhW6W35sRhwAyft7j0xReh1sZlAXSUm5MPuo6DcpuQE",
+        "soort": "meeting",
+        "datum": "2026-07-10",
+        "titel": "Reconnecting - Eduface × University of Ferrara",
+        "duur_min": 45,
+        "status": "completed",
+        "deelnemers": [
+          "crnfpp@unife.it",
+          "dante.torbed@eduface.me",
+          "jeroen.van.gessel@eduface.me"
+        ],
+        "samenvatting": "- Discussed University of Ferrara's recent organizational restructuring that split AI initiatives into a separate department with independent decision-making authority over technology adoption.\n- Confirmed writing assignments remain central to university assessment while current approaches to AI integrity rely on professor oversight and student guidelines rather than detection tools.\n- Presented Eduface's AI Integrity Checker product, which uses rapid AI-conducted oral exams to verify student knowledge and learning outcomes rather than assign marks.\n- Demonstrated integrated learning analytics vision combining multiple AI tools to build student learning profiles and enable personalized learning interventions.\n- Agreed to arrange meeting with Professor Fabrizio Rigutsi from the newly established AI center to discuss technology adoption, with response expected after summer break.\n\n### University of Ferrara's Organizational Structure and Responsibilities\n- Filippo Carnevali confirmed that writing assignments remain central to assessment and evaluation at the University of Ferrara, appearing in both coursework and final exams.\n- The university recently reorganized its artificial intelligence initiatives into a separate, self-contained department split from e-learning and digital learning.\n- Filippo now operates in the e-learning and digital learning division while AI evaluation responsibilities have been delegated to colleagues in the new AI department.\n- The new AI department acts as a filter and evaluation body, with decision-making authority over technology adoption, pilot organization, and budget allocation.\n- Filippo can flag software to the AI department but cannot make final adoption decisions independently.\n\n### Current Approaches to Academic Integrity and AI Usage\n- The university has not adopted strict guidelines or AI detector tools, as professors decided these approaches have inherent limitations with rapidly evolving AI models.\n- Some professors conduct in-person classroom assessments with laptops to oversee student work directly during assignments.\n- Other professors provide guardrails and guidelines encouraging students to use AI transparently while building trust and accountability through academic contracts.\n- The university relies on existing academic integrity principles rather than new technological enforcement mechanisms.\n- Writing assignments remain central because they combat potential brain rot from AI overuse and are considered superior to oral exams for scaling to large student populations.\n- Students are increasingly interested in AI technologies for receiving initial feedback on written assignments.\n\n### Eduface's AI Integrity Checker Product\n- Dante introduced Eduface's AI Integrity Checker, designed to verify students understand assignment content through rapid oral examinations with an AI agent.\n- The product has students answer specific questions in 30 seconds to one minute, allowing assessment of knowledge rather than authorship.\n- Pilot testing with small groups has shown students prepare thoroughly when aware of oral examinations, encouraging genuine learning.\n- The tool generates a knowledge score and summary but does not assign academic marks in traditional grading formats.\n- Professors can deploy the tool to large cohorts (e.g., 200 students) and review aggregated results rather than individual assessments.\n- The product functions as a learning incentive tool rather than a marking mechanism.\n\n### Learning Analytics and Personalized Learning Vision\n- Filippo highlighted the absence of learning analytics from current AI tools, making it difficult to identify which topics students struggle with or need clarification.\n- Dante demonstrated Eduface's integrated approach combining the AI paper grader, AI integrity checker, and AI exam grader to build individual student learning profiles.\n- The learning profile system would enable anonymized analytics showing which topics students prepare for, time spent on preparation, and identified knowledge gaps.\n- Eduface envisions using learning profiles to create personalized learning experiences by grouping students with similar knowledge gaps and delivering targeted lessons.\n- Filippo expressed interest in the concept but requested practical interface demonstrations to evaluate usability and functionality before committing to adoption.\n\n### University Readiness and Technology Adoption Concerns\n- Filippo noted professors remain suspicious of AI-based assessment software, viewing it as controversial and not yet widely accepted at the university.\n- The university is still in the awareness phase, training professors on artificial intelligence fundamentals rather than advanced applications.\n- Technology evolution has shifted from AI content generation (2025) to feedback and assessment, but local universities lag in adoption sensibility.\n- The university acknowledges technology capability for assisted assessment exists but institutional readiness and professor confidence require further development.\n- Large institutional change toward AI-assisted assessment requires cultural and training shifts beyond technology availability.\n\n### Next Steps and Contact with AI Department\n- Filippo confirmed the new AI department was established only one week prior, with leadership positions still being finalized.\n- Dante identified Professor Fabrizio Rigutsi as a potential contact, likely leading the AI center, though the formal AI department head had not yet been appointed.\n- The university maintains both administrative and academic organizational structures, with the new AI department likely drawing staff from the academic AI center.\n- Filippo agreed to contact Professor Rigutsi to explore interest in meeting with Eduface and to assess technology scouting priorities.\n- Filippo will provide feedback within days but noted summer vacation in Italy may delay responses until August or September.",
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      }
+    ],
+    "open_taken": [],
+    "laatste_gesprek": "2026-07-10",
+    "volgende_afspraak": null,
+    "aantal_gehad": 1,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

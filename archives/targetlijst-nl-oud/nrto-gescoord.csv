@@ -1,0 +1,739 @@
+Naam,Website,Plaats,Adres,Postcode,Lid sinds,Sectoren,Regios,Marktgroepen,status,score,pos,neg,signalen
+Leidse Onderwijsinstellingen B.V. (LOI),www.loi.nl,LEIDEN,Dellaertweg 5G,2316WZ,2020-09-30,,,,ok,41,41,0,+afstudeeropdracht +eindopdracht +praktijkopdracht +beroepsproduct +beoordeeld door (?:de |je  +portfolio +studiepunten +hbo-?bachelor|hbo-?master +nvao +toetsing +beoordeling +diploma
+Habeo+ (vh Avans+),https://habeoplus.nl/,BREDA,Claudius Prinsenlaan 140,4818 CP,2009-02-01,,,,ok,32,32,0,+praktijkopdracht +beroepsproduct +examinator +portfolio +examencommissie +post-?hbo +nvao +beoordeling +studiebelasting +diploma
+Instituut Scire B.V.,https://habeoplus.nl/,BREDA,Claudius Prinsenlaan 140,4818 CP,2026-06-02,,,,ok,32,32,0,+praktijkopdracht +beroepsproduct +examinator +portfolio +examencommissie +post-?hbo +nvao +beoordeling +studiebelasting +diploma
+Academie Hypnos,https://hypnos.nl/,Voorthuizen,Hoofdstraat 185,3781 AE,2022-05-17,,,,ok,27,27,0,+afstudeeropdracht +praktijkopdracht +examencommissie +\boer\b +studiepunten +cpion +toetsing +studiebelasting +diploma
+Variva Edu Academy,www.variva.nl,Someren,Witvrouwenbergweg 12,5711 CN,2017-09-15,,,,ok,25,25,0,+praktijkopdracht +examinator +portfolio +examencommissie +toetsing +studiebelasting +diploma +modules? (?:wordt|worden) 
+Stichting De Nederlandse School voor Onderwijsmanagement,https://www.nso-cna.nl,Diemen,Diemermere 15,1112 TB,2025-04-15,Inburgering; Bouw; ICT; Onderwijs; Techniek; Zorg,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,23,28,5,+\bscriptie\b +afstudeeropdracht +praktijkopdracht +examencommissie +nvao +studiebelasting +diploma +meerdaagse leergang|leerga -certificaat van deelname|b
+Zorgcampus Rotterdam B.V.,www.zorgcampus.nl,ROTTERDAM,Mathenesserlaan 480,3023 HL,2018-09-25,,,,ok,23,23,0,+praktijkopdracht +examinator +examencommissie +toetsing +beoordeling +herkansing +diploma
+Academie voor Podologie,www.academiepodologie.nl,UTRECHT,St. Laurensdreef 22,3565 AK,2017-01-01,,,,ok,22,22,0,+\bscriptie\b +onderwijs- en examenregeli +\boer\b +beoordeling +leeruitkomsten +studiebelasting +diploma
+Mooivakonderwijs B.V.,www.mooivakonderwijs.nl,Helmond,Inclusieveld 1,5707 DP,2022-06-22,,,,ok,22,27,5,+eindopdracht +praktijkopdracht +portfolio +examencommissie +cpion +crkbo +toetsing +beoordeling +studiebelasting +diploma -certificaat van deelname|b
+PHOV B.V.,www.phov.nl,Utrecht ,Weerdsingel WZ 32,3513 BC,2022-03-08,,,,ok,22,22,0,+\bscriptie\b +eindopdracht +praktijkopdracht +toetsing +studiebelasting +diploma +meerdaagse leergang|leerga
+Capabel Onderwijs Groep,www.capabel.nl,UTRECHT,Australiëlaan 14,3526 AB,2012-05-22,,,,ok,21,21,0,+praktijkopdracht +post-?hbo +nvao +toetsing +beoordeling +herkansing +diploma
+Scobe Academy,www.scobe.nl,Gouda ,Buchnerweg 7,2803 GR ,2023-01-02,,,,ok,20,21,1,+\bthesis\b +praktijkopdracht +post-?hbo +cpion +beoordeling +herkansing +diploma -incompany training(?!s?pro
+CB Education Group (55 Creative Business School),www.55creativebusinessschool.nl,HILVERSUM,Witte Kruislaan 55a,1217 AM,2021-12-13,,,,ok,17,17,0,+eindopdracht +praktijkopdracht +portfolio +crkbo +beoordeling +studiebelasting +diploma
+OntwerpAcademie,www.ontwerpacademie.nl,HAZERSWOUDE-DORP,Belgiëlaan 1A5,2391 PH,2017-02-28,Inburgering,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,17,18,1,+praktijkopdracht +examinator +portfolio +examencommissie +crkbo +diploma -incompany training(?!s?pro
+Academie voor Psychodynamica BV,www.psychodynamica.nl,Scherpenzeel,Burgemeester Royaardslaan 3,3925GG,2022-01-31,,,,ok,16,21,5,+\bscriptie\b +post-?hbo +cpion +crkbo +beoordeling +studiebelasting +herkansing +diploma -certificaat van deelname|b
+Cito,www.cito.nl,ARNHEM,Amsterdamseweg 13,6814 CM,2004-01-01,,,,ok,16,16,0,+examinator +portfolio +examencommissie +toetsing +beoordeling
+Competence Trainingen en Opleidingen B.V.,www.sn.nl,Zaltbommel,Van Heemstraweg-West 5,5301PA,2023-02-20,,,,ok,16,17,1,+praktijkopdracht +studiepunten +nvao +toetsing +beoordeling +diploma -incompany training(?!s?pro
+Edufit,www.edufit.nl,GOUDA,Graaf Florisweg 30, 2805 AL,2012-10-01,,,,ok,16,16,0,+beoordelingsformulier +examencommissie +nvao +beoordeling +meerdaagse leergang|leerga
+hbo A&A,www.hboaa.nl,Almere ,Transitorstraat 7,1322 CJ,2015-07-21,,,,ok,16,16,0,+studiepunten +post-?hbo +nvao +toetsing +studiebelasting +diploma
+New Dawn Academy B.V. ,www.sn.nl,Zaltbommel,Van Heemstraweg-West 5,5301PA,2023-02-20,,,,ok,16,17,1,+praktijkopdracht +studiepunten +nvao +toetsing +beoordeling +diploma -incompany training(?!s?pro
+Realise Academy B.V.,www.sn.nl,Zaltbommel,Van Heemstraweg-West 5,5301PA,2023-02-20,,,,ok,16,17,1,+praktijkopdracht +studiepunten +nvao +toetsing +beoordeling +diploma -incompany training(?!s?pro
+Realise B.V.,www.sn.nl,Zaltbommel,Van Heemstraweg-West 5,5301PA,2023-02-20,,,,ok,16,17,1,+praktijkopdracht +studiepunten +nvao +toetsing +beoordeling +diploma -incompany training(?!s?pro
+Relevance Learning B.V.,www.sn.nl,Zaltbommel,Van Heemstraweg-West 5,5301PA,2023-02-20,,,,ok,16,17,1,+praktijkopdracht +studiepunten +nvao +toetsing +beoordeling +diploma -incompany training(?!s?pro
+Relevance Leren B.V. ,www.sn.nl,Zaltbommel,Van Heemstraweg-West 5,5301PA,2023-02-20,,,,ok,16,17,1,+praktijkopdracht +studiepunten +nvao +toetsing +beoordeling +diploma -incompany training(?!s?pro
+Schouten & Nelissen Academy B.V.,www.sn.nl,ZALTBOMMEL,Van Heemstraweg West 5,5301 PA,2013-01-01,Inburgering,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,16,17,1,+praktijkopdracht +studiepunten +nvao +toetsing +beoordeling +diploma -incompany training(?!s?pro
+Schouten & Nelissen B.V.,www.sn.nl,Zaltbommel,Van Heemstraweg-West 5,5301PA,2023-02-20,,,,ok,16,17,1,+praktijkopdracht +studiepunten +nvao +toetsing +beoordeling +diploma -incompany training(?!s?pro
+Schouten Company B.V. (holding),www.sn.nl,Zaltbommel,Van Heemstraweg-West 5,5301PA,2023-02-20,,,,ok,16,17,1,+praktijkopdracht +studiepunten +nvao +toetsing +beoordeling +diploma -incompany training(?!s?pro
+Teelen ,www.Teelen.nl,WILP,Lathmerweg 5,7384 AD,2014-01-01,,,,ok,16,16,0,+examinator +portfolio +examencommissie +toetsing +beoordeling
+TMO Fashion Business School,www.tmo.nl,DOORN,Driebergsestraatweg 11,3941 ZW,1995-04-24,,,,ok,16,16,0,+\bscriptie\b +portfolio +studiepunten +studiebelasting +herkansing +diploma
+Intop Zorgsector,www.intopzorgsector.nl,Woerden ,Vijzelmolenlaan 1,3447 GX,2007-11-16,,,,ok,15,15,0,+examencommissie +onderwijs- en examenregeli +\boer\b +crkbo +toetsing
+Sound Education,www.soundeducation.nl,Utrecht ,CAB-rondom 100,3534 BE ,2022-10-25,,,,ok,15,19,4,+praktijkopdracht +nagekeken +feedback op je (?:opdracht +crkbo +beoordeling +studiebelasting +diploma -\bvca\b
+U-Consultancy,www.uconsultancy.nl,NIEUWEGEIN,Edisonbaan 8,3439 MN ,2012-08-02,,,,ok,15,19,4,+praktijkopdracht +portfolio +examencommissie +toetsing +beoordeling +studiebelasting +diploma -eendaagse|1-?daagse|tweeda -incompany training(?!s?pro
+AN-i,www.an-i.nl,Zeist,Jagerlaan 12,3701 XJ,2022-04-04,,,,ok,14,18,4,+post-?hbo +hbo-?bachelor|hbo-?master +crkbo +beoordeling +studiebelasting +herkansing +diploma +meerdaagse leergang|leerga -heftruck|hoogwerker|rijbew
+BartN Trainingen BV,www.bartn.nl,Hillegom,Haarlemmerstraat 5,2182HA,2019-07-01,,,,ok,14,15,1,+praktijkopdracht +toetsing +beoordeling +studiebelasting +reflectieverslag -incompany training(?!s?pro
+Bureau STERK,www.bureausterk.nl,CULEMBORG,Godfried Bomansstraat 7,4103 WR,2018-11-01,,,,ok,14,14,0,+portfolio +beoordeling +leeruitkomsten +reflectieverslag +diploma
+Facefacts,www.facefactsacademy.nl,Arnhem,Utrechtsestraat 5,6811 LS,2022-04-04,,,,ok,14,14,0,+eindopdracht +portfolio +crkbo +toetsing +studiebelasting +diploma
+LSR BV,www.1e-verdieping.nl,Zoetermeer,Dorpsstraat 7,2712 AB,2022-05-25,,,,ok,14,17,3,+eindopdracht +examinator +crkbo +toetsing +reflectieverslag -eendaagse|1-?daagse|tweeda
+NIVE Opleidingen ll B.V.,www.niveopleidingen.nl,Groningen,Radesingel 50,9711 EK,2022-01-31,,,,ok,14,14,0,+praktijkopdracht +post-?hbo +cpion +studiebelasting +diploma
+WWZ Academie,www.wwz-academie.nl,Rotterdam,Burgemeester Hazenberglaan 401,3078 HG,2020-10-14,,,,ok,14,14,0,+eindopdracht +praktijkopdracht +reflectieverslag +diploma
+BeeldCentrum,www.beeldcentrum.nl,Breda ,Charles Petitweg 37A9,4827 HJ ,2022-05-31,,,,ok,13,13,0,+portfolio +feedback op je (?:opdracht +crkbo +beoordeling +studiebelasting +diploma
+Esoterra B.V.,www.esoterra.nl,BILTHOVEN,P.C. Staalweg 50,3721 TJ,2021-10-19,Inburgering; Bouw; ICT; Onderwijs; Techniek; Zorg,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,13,13,0,+eindopdracht +portfolio +cpion +eindtoets +diploma
+Academie voor Interieur Ontwerp,https://academievoorinterieurontwerp.nl,Zwolle,Herenweg 98,8025 AD,2025-01-08,,,,ok,12,12,0,+praktijkopdracht +portfolio +crkbo +herkansing +diploma
+Bit Academy B.V.,www.bit-academy.nl,Amsterdam,Science Park 608,1098XH,2021-01-21,,,,ok,12,12,0,+praktijkopdracht +portfolio +hbo-?bachelor|hbo-?master +crkbo +diploma
+Bongers & Partners BV,www.bongers-partners.nl,Noordwijk,'sGravendijcksweg 60,2201 CZ ,2023-01-02,,,,ok,12,12,0,+\bscriptie\b +portfolio +crkbo +reflectieverslag
+Elitas Nursing Academy,www.elitasnursingacademy.nl,Nieuwegein,Archimedesbaan 13,3439 ME ,2022-05-30,,,,ok,12,12,0,+examinator +beoordeling +herkansing +diploma
+SDO Hogeschool voor Moderne Bedrijfskunde,www.sdo-hogeschool.nl   ,Rotterdam,Innsbruckweg 180-G,3047 AH,2011-08-01,,,,ok,12,12,0,+onderwijs- en examenregeli +\boer\b +nvao +crkbo
+Van Harte & Lingsma Management en Organisatie B.V.,www.vanhartelingsma.nl,Amstelveen,Burgemeester Haspelslaan 63,1181 NB ,2021-02-03,,,,ok,12,12,0,+praktijkopdracht +beoordeling +reflectieverslag +meerdaagse leergang|leerga
+Van Harte & Lingsma Management en Organisatie II B.V.,www.vanhartelingsma.nl,Amstelveen,Dorpsstraat 75,1182 JC,2025-07-01,,,,ok,12,12,0,+praktijkopdracht +beoordeling +reflectieverslag +meerdaagse leergang|leerga
+Academica University of Applied Sciences,https://www.academica-group.com/,Nederland,Weteringschans 28,1017 SG,2026-07-06,,,,ok,11,11,0,+post-?hbo +nvao +diploma +meerdaagse leergang|leerga
+Berghauser Pont Academy B.V.,https://www.berghauserpontacademy.nl/,Amsterdam,Danzigerkade 53,1013 AP,2022-04-18,,,,ok,11,14,3,+praktijkopdracht +casus(?:opdracht|uitwerkin +toetsing +diploma +meerdaagse leergang|leerga -eendaagse|1-?daagse|tweeda
+Capabel PRO,www.capabel.nl,Utrecht,Australielaan 14-16,3526 AB,1995-04-24,,,,ok,11,11,0,+post-?hbo +nvao +beoordeling +diploma
+Capabel Hogeschool,www.capabelhogeschool.nl,UTRECHT,Australiëlaan 14,3526 AB,2004-05-01,,,,ok,11,11,0,+post-?hbo +nvao +beoordeling +diploma
+Edin B.V.,www.edin.nl,Maarsbergen,Ambachtsweg 4e,3953 BZ,2010-08-25,,,,ok,11,16,5,+eindopdracht +praktijkopdracht +leeruitkomsten +studiebelasting +diploma -certificaat van deelname|b
+Libereaux,www.libereaux.nl,Hengelo,Jan Tinbergenstraat 202,7559 ST,2014-01-01,,,,ok,11,11,0,+beroepsproduct +portfolio +toetsing +diploma
+PEKK,www.pekk.nl,TILBURG,Meerssenstraat 1c,5045 WD,2019-03-20,,,,ok,11,11,0,+praktijkopdracht +portfolio +crkbo +studiebelasting +diploma
+Practice Solutions,www.dto-breda.nl,Breda,Minervum 7154,4817 ZN,2023-04-28,,,,ok,11,11,0,+examencommissie +crkbo +beoordeling +studiebelasting +diploma
+The New School for Information Services,www.thenewschool.nl,AMSTERDAM,Jan Luykenstraat 98,1071 CV,2001-02-01,,,,ok,11,11,0,+afstudeeropdracht +portfolio +nvao
+Ticken BV,www.ticken.nl,Baarn,Jacob van Lenneplaan 22,3743AR,2021-11-08,,,,ok,11,11,0,+crkbo +toetsing +beoordeling +herkansing +diploma
+Bestuursacademie Nederland Opleidingen B.V.,www.bestuursacademie.nl,HILVERSUM,Marathon 7,1213 PD,2014-04-14,,,,ok,10,10,0,+praktijkopdracht +nvao +meerdaagse leergang|leerga
+Certiforce C.I. B.V.,https://certiforce.nl,Doetinchem,Hanzestraat 19,7006 RH,2025-01-08,,,,ok,10,10,0,+portfolio +examencommissie +beoordeling +diploma
+LSBL,www.lsbl.nl,EDE,Galvanistraat 1,6716 AE,2001-02-01,,,,ok,10,10,0,+praktijkopdracht +portfolio +eindtoets +diploma
+NCOI Online Academy B.V.,www.ncoi.nl,Hilversum,Marathon 7,1213 PD,2020-09-30,,,,ok,10,10,0,+praktijkopdracht +nvao +diploma
+NCOI Opleidingen,www.ncoi.nl,Hilversum,Marathon 7,1213 PD,2025-11-26,,,,ok,10,10,0,+praktijkopdracht +nvao +diploma
+Salta Group B.V. ,www.ncoi.nl,HILVERSUM,Marathon 7,1213 PD,2011-07-11,,,,ok,10,10,0,+praktijkopdracht +nvao +diploma
+Team Academy/Schoolvision,www.teamacademy.nl,AMSTERDAM,Vlaardingenlaan 15-4,1062 HM,2016-04-19,,,,ok,10,10,0,+\bthesis\b +nvao +diploma
+Wittenborg University of Applied Sciences,www.wittenborg.eu,APELDOORN,Brinklaan 268,7311 JD,2004-01-01,,,,ok,10,10,0,+\bthesis\b +nvao +diploma
+Competence Training Institute B.V.,www.sn.nl,Zaltbommel,Van Heemstraweg-West 5,5301PA,2023-02-20,,,,ok,9,10,1,+praktijkopdracht +nvao +beoordeling -incompany training(?!s?pro
+EuroCollege Management School,www.eurocollege.nl,ROTTERDAM,Westblaak 139,3012 KJ,2003-10-01,Inburgering; Bouw; ICT; Onderwijs; Techniek; Zorg,,,ok,9,9,0,+hbo-?bachelor|hbo-?master +nvao +diploma
+GOmotive,http://www.gomotive.nl,Duiven,Impact 57,6921 RZ,2012-05-01,,,,ok,9,9,0,+praktijkopdracht +crkbo +diploma +meerdaagse leergang|leerga
+Keulseweg,www.keulseweg.nl,PIJNACKER,Keulseweg 34,2641 PK,2019-01-01,,,,ok,9,9,0,+post-?hbo +cpion +crkbo +studiebelasting
+King nascholing ,www.kingnascholing.nl,Amsterdam,Czaar Peterstraat 111,1018 SK,2022-05-01,,,,ok,9,9,0,+post-?hbo +beoordeling +eindtoets +meerdaagse leergang|leerga
+OSR juridische opleidingen ,www.osr.nl,Utrecht ,Arthur van Schendelstraat 650,3511 MJ ,2021-06-10,,,,ok,9,17,8,+eindopdracht +toetsing +beoordeling +herkansing +modules? (?:wordt|worden)  +meerdaagse leergang|leerga -certificaat van deelname|b -eendaagse|1-?daagse|tweeda
+OSR OpMaat,www.osr.nl,Utrecht ,Arthur van Schendelstraat 650,3511MJ,2021-10-05,,,,ok,9,17,8,+eindopdracht +toetsing +beoordeling +herkansing +modules? (?:wordt|worden)  +meerdaagse leergang|leerga -certificaat van deelname|b -eendaagse|1-?daagse|tweeda
+Take Off Support,https://www.takeoffsupport.nl,ARNHEM,Willemsplein 9,6811 KB,2022-05-03,,,,ok,9,10,1,+crkbo +toetsing +reflectieverslag +diploma -incompany training(?!s?pro
+Winc Academy,https://wincacademy.nl,Amsterdam,van de Sande Bakhuijzenstraat 4,1061 AG,2020-06-25,,,,ok,9,9,0,+eindopdracht +portfolio +crkbo +diploma
+Academie voor Chinese Geneeswijze Qing- Bai,www.qing-bai.nl,Milsbeek,Kanonskamp 60,6596 AT ,2022-07-27,,,,ok,8,8,0,+toetsing +herkansing +diploma
+Bedrijfskunde Opleiding Utrecht,https://bedrijfskundeopleidingutrecht.nl/,UTRECHT,Koningsbergerstraat 9,3531 AJ,2020-03-10,,,,ok,8,8,0,+post-?hbo +cpion +meerdaagse leergang|leerga
+BTSG,www.btsg.nl,ZWOLLE,Branderweg 3a,8042 PD,2010-03-02,,,,ok,8,9,1,+studiepunten +crkbo +beoordeling +studiebelasting +diploma -incompany training(?!s?pro
+Contractgroep Inholland B.V.,www.inhollandacademy.nl,ALKMAAR,Bergerweg 200,1817 MN,2010-11-16,,,,ok,8,8,0,+afstudeeropdracht +post-?hbo
+Fiscaal Studie- en documentatie Centrum ,https://www.fsdc.nl ,Loenen ,Hoofdweg 115,7371 GG,2023-01-02,,,,ok,8,8,0,+examencommissie +beoordeling +studiebelasting
+Hogeschool NOVI,www.novi.nl,UTRECHT,Newtonlaan 247 ,3584 BH ,2012-07-01,,,,ok,8,8,0,+praktijkopdracht +studiepunten +diploma
+Hogeschool TIO/TIO College,www.tio.nl,Hilversum,Marathon 7,1213 PD,1995-04-24,,,,ok,8,8,0,+praktijkopdracht +beoordeling +diploma
+IBHS,www.ibhs.nl,Amsterdam,Prinsengracht 701,1017 JV,2025-02-21,,,,ok,8,8,0,+\boer\b +hbo-?bachelor|hbo-?master +crkbo +diploma
+Luzac Onderwijs B.V.,www.luzac.nl,HILVERSUM,Marathon 7,1213 PD,2001-02-01,,,,ok,8,8,0,+toetsing +herkansing +diploma
+Nederlands Compliance Instituut B.V.,https://compliance-instituut.nl,Rotterdam,Burgemeester Hazenberglaan 401,3078 HG,2023-03-30,,,,ok,8,8,0,+praktijkopdracht +diploma +meerdaagse leergang|leerga
+NIA Academie B.V.,https://nia-academie.nl/,Amsterdam,Memeleiland 45,1014 ZL,2022-04-18,,,,ok,8,8,0,+eindopdracht +portfolio +diploma
+Stichting Continuiteit Schrijversvakschool,www.schrijversvakschool.nl,Amsterdam,Herengracht 613,1017 CE,2022-02-21,,,,ok,8,8,0,+examencommissie +beoordeling +diploma
+The Lean Six Sigma Company B.V.,https://www.theleansixsigmacompany.nl,Rotterdam,Van Nelleweg 1,3044 BC,2023-11-01,,,,ok,8,8,0,+praktijkopdracht +beoordeling +diploma
+Artemis Academie,www.artemisacademie.nl,Amsterdam,Marnixstraat 317,1016 TB,2011-09-01,,,,ok,7,7,0,+hbo-?bachelor|hbo-?master +nvao
+Brave Minds,www.brave-minds.nl,Utrecht ,Lucasbolwerk 7,3512 EG ,2022-03-14,,,,ok,7,7,0,+examinator +diploma
+BusinessCoach Nederland B.V. (vh Zakelijk Succes B.V.),www.businesscoach.nl,De Meern,Boteyken 193-11,3454 PD,2021-01-03,,,,ok,7,10,3,+portfolio +post-?hbo +cpion +diploma -eendaagse|1-?daagse|tweeda
+Centrum voor Conflicthantering,https://www.cvc.nl/,Haarlem,Nieuwe Gracht 3,2011 NB,2022-05-03,,,,ok,7,8,1,+eindopdracht +beoordeling +meerdaagse leergang|leerga -incompany training(?!s?pro
+Docendo,www.docendo.nl,Houten ,Elzenkade 1-3,3992 AD,2022-08-31,,,,ok,7,8,1,+praktijkopdracht +studiebelasting +diploma -incompany training(?!s?pro
+Hogeschool voor Toegepaste Filosofie,www.hogeschoolvoortoegepastefilosofie.nl,UTRECHT,Vondellaan 174,3521 GH,2014-09-01,,,,ok,7,7,0,+studiepunten +hbo-?bachelor|hbo-?master +meerdaagse leergang|leerga
+Onderwijsinstelling STOC,www.stoc.nl/,DEN HAAG,Loire 150,2491 AK,2012-12-05,,,,ok,7,10,3,+toetsing +beoordeling +herkansing +diploma -eendaagse|1-?daagse|tweeda
+Overdenkwerk,http://www.overdenkwerk.nl/,EMMELOORD,Eemsstraat 14,8303LH,2020-01-31,,,,ok,7,8,1,+eindopdracht +studiebelasting +meerdaagse leergang|leerga -incompany training(?!s?pro
+Stichting Hoger Technisch Instituut (HTI) Amsterdam,www.hti-opleidingen.nl,Wijk bij Duurstede,Zandweg 50,3962 ED,2014-07-15,,,,ok,7,7,0,+post-?hbo +studiebelasting +diploma
+Business School Nederland,www.bsn.eu,Buren,Herenstraat 25,4116 BK,2005-03-14,,,,ok,6,6,0,+nvao +diploma
+Dirksen Opleidingen,www.dirksen.nl,ELST,Nijverheidsweg 21,6662 NG,2024-12-12,Inburgering; Bouw; ICT; Onderwijs; Techniek; Zorg,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,6,6,0,+praktijkopdracht +diploma
+Haarlem Institute for Higher Education BV,srh-haarlem-campus.com,Haarlem,Koepelplein 1c,2031 WL,2024-10-14,,,,ok,6,6,0,+portfolio +nvao
+Hogeschool Dirksen,www.dirksen.nl,ELST,Nijverheidsweg 21,6662 NG,1995-04-24,Inburgering; Bouw; ICT; Onderwijs; Techniek; Zorg,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,6,6,0,+praktijkopdracht +diploma
+ITV Hogeschool voor Tolken en Vertalen,www.itv-h.nl,UTRECHT,Padualaan 101,3584 CH,1995-04-24,,,,ok,6,6,0,+hbo-?bachelor|hbo-?master +toetsing
+IVA Driebergen,www.iva.nl,DRIEBERGEN,Hogesteeg 2,3972 JT,2000-05-01,,,,ok,6,6,0,+nvao +diploma
+Maas College,www.maascollege.nl,ROTTERDAM,Oostplein 410-428,3061 CH,2019-12-13,,,,ok,6,9,3,+praktijkopdracht +herkansing +diploma -eendaagse|1-?daagse|tweeda
+Medivus,www.medivus.nl,Rijswijk,Laan van Zuidhoorn 60,2289 DE,2023-04-28,,,,ok,6,9,3,+praktijkopdracht +toetsing +diploma -ehbo
+Rjansen Vastgoedbeheer BV,www.dirksen.nl,Elst,Vivaldistraat 21,6661 BW,2024-12-12,Inburgering; Bouw; ICT; Onderwijs; Techniek; Zorg,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,6,6,0,+praktijkopdracht +diploma
+Schoevers Opleidingen B.V.,www.schoevers.nl,HILVERSUM,Marathon 7,1213 PD,1995-04-24,,,,ok,6,6,0,+nvao +diploma
+SocialLane Academy B.V.,https://dutchmarketingacademy.nl/,DEN HAAG,Hellingweg 98 L,2583 WH,2020-07-21,,,,ok,6,7,1,+praktijkopdracht +herkansing -incompany training(?!s?pro
+Stichting TCI Toetscentrum Intereducatief,www.tci-examens.nl,SCHOONREWOERD,Dorpsstraat 47,4145 KB,2005-05-01,,,,ok,6,6,0,+portfolio +beoordeling +diploma
+Synergos ,www.synergos.nl,Amersfoort,Regentesselaan 21,3818HH,2021-11-08,,,,ok,6,6,0,+post-?hbo +cpion
+TAT beroepsopleidingen Luchtvaart en Hospitality B.V.,https://opleidingstewardess.nl/,Leiden,Schipholweg 103,2316XC,2022-03-28,Inburgering,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,6,6,0,+praktijkopdracht +diploma
+TSTC (Tshukudu Technology College BV) ,www.tstc.nl,Veenendaal,Plesmanstraat 62,3905 KZ,2021-03-26,,,,ok,6,9,3,+praktijkopdracht +beoordeling +herkansing -eendaagse|1-?daagse|tweeda
+Wellness Academie BV,www.wellnessacademie.com,Eindhoven,Stadhuisplein 10,5611 EM,2022-05-10,,,,ok,6,9,3,+portfolio +crkbo +beoordeling +studiebelasting +diploma -eendaagse|1-?daagse|tweeda
+ABC Opleiding & Training,https://abc-opleiding.com/,Paramaribo,Louiselaan 115 / Hoek Verlenge Mahonylaan,,2018-02-01,,,,ok,5,5,0,+cpion +diploma
+Academie voor Geesteswetenschappen,www.academiegeesteswetenschappen.nl,Utrecht,Hengeveldstraat 29,3572 KH,2021-07-09,,,,ok,5,5,0,+cpion +meerdaagse leergang|leerga
+Avondopleidingen SKO,https://www.avondopleidingensko.nl ,Vught,Titus Brandsmalaan 1,5262 BS,2021-12-20,,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,5,5,0,+herkansing +diploma
+Brain Blocks Group,www.brainblocks.com,NIJMEGEN,Kerkenbos 10-79 LL,6564 BB,2019-11-25,,,,ok,5,6,1,+praktijkopdracht +studiebelasting -incompany training(?!s?pro
+C.I.C.K.,https://cick.nl/,Zwolle,Burg. van Roijensingel 10a,8011 CT,2019-06-03,,,,ok,5,5,0,+crkbo +studiebelasting +diploma
+Computrain Opleidingen B.V.,www.computrain.nl,HILVERSUM,Marathon 7,1213 PD,2018-03-23,,,,ok,5,8,3,+praktijkopdracht +portfolio +diploma -ehbo
+CTC Talent,https://ctctalent.nl,Veenendaal,Wiltonstraat 2a,3905 KW,2025-05-14,,,,ok,5,5,0,+examinator
+Finance Ideas Academy,www.fi-academy.nl,LELYSTAD,Pascallaan 68F,8218 NJ,2014-07-17,,,,ok,5,5,0,+toetsing +meerdaagse leergang|leerga
+FIRSTT Opleidingen,https://firstt.nl,Stellendam,Korteweg 4,3251 LE,2022-05-17,,,,ok,5,5,0,+herkansing +diploma
+Home of Impact ,www.homeofimpact.nl,Berkel en Rodenrijs,Zuidersingel 4A,2651 AJ,2022-09-26,Inburgering; Bouw; ICT; Onderwijs; Techniek; Zorg,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,5,5,0,+post-?hbo +meerdaagse leergang|leerga
+IS-ZO,https://www.tozo-skills.nl/,Beek en Donk,Trentstraat 2a,5741 ST,2023-03-23,,,,ok,5,5,0,+toetsing +diploma
+IVIO Examenbureau,www.ivio-examenbureau.nl,LELYSTAD,Pascallaan 71,8218 NJ,2008-06-12,,,,ok,5,5,0,+toetsing +diploma
+Kans Kwadraat,www.kanskwadraat.nl,Utrecht,Herculesplein 25,3584 AA,2021-05-04,,,,ok,5,6,1,+praktijkopdracht +diploma -incompany training(?!s?pro
+Markus Verbeek Praehep B.V.,www.mvp.nl,HILVERSUM,Marathon 5,1213 PD,1995-04-24,,,,ok,5,5,0,+toetsing +diploma
+Modevakschool Nancy van Vliet,www.nancyvanvliet.nl,Alkmaar,Arkplein 25,1826 DM,2022-04-04,,,,ok,5,5,0,+crkbo +studiebelasting +diploma
+NIVE Opleidingen,https://niveopleidingen.nl/,DE BILT,Dorpstraat vo Steenstraat 74,3732 HK,2021-02-03,,,,ok,5,5,0,+post-?hbo +diploma
+NTI B.V.,www.nti.nl,LEIDEN,Schuttersveld 6,2316 ZB,1998-02-01,,,,ok,5,5,0,+hbo-?bachelor|hbo-?master +diploma
+OranjeStarters B.V. ,www.ambachtshuis-brabant.nl,Eindhoven ,Rijsven 8,5645 KH,2022-06-22,Inburgering; Bouw; ICT; Onderwijs; Techniek; Zorg,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,5,5,0,+crkbo +beoordeling +diploma
+Prosper College B.V.,https://prospercollege.nl,Amsterdam,Geldershoofd 80,1103 BG,2025-01-08,,,,ok,5,5,0,+herkansing +diploma
+Précon Learning,www.precongroup.nl/training-en-e-learning,BUNNIK,Regulierenring 16,3981 LB,2014-10-21,,,,ok,5,5,0,+toetsing +beoordeling
+SOMT University of Physiotherapy,www.somt.nl,AMERSFOORT,Softwareweg 5,3821 BN,2014-12-17,,,,ok,5,5,0,+hbo-?bachelor|hbo-?master +diploma
+Stichting Breederode Hogeschool,www.breederode.nl,ROTTERDAM,Posthumalaan 120 ,3072 AG ,2016-04-01,,,,ok,5,5,0,+crkbo +diploma +meerdaagse leergang|leerga
+Stichting HVNA,www.hvna-opleidingen.nl,Huissen,Julianastraat 17,6851 KJ,2022-07-12,Inburgering; Bouw; ICT; Onderwijs; Techniek; Zorg,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,5,5,0,+cpion +diploma
+Stichting Reklame Rakkers,www.mediaenmaatschappij.nl,Amsterdam,Wildenborch 31,1082 KB,2022-04-14,,,,ok,5,5,0,+examencommissie +crkbo
+ToZo-Skills,https://www.tozo-skills.nl/,Beek en Donk,Trentstraat 2a,5741 ST,2023-05-30,,,,ok,5,5,0,+toetsing +diploma
+Trainjezelf.nl,https://www.precongroup.nl/training-en-e-learning/,BUNNIK,Regulierenring 16,3981 LB,2014-10-21,,,,ok,5,5,0,+toetsing +beoordeling
+Welkin BV,www.welkinkinesiologiecollege.nl,Bilthoven ,Professor Bronkhorstlaan 10G86,3723 MB,2022-08-26,,,,ok,5,8,3,+cpion +crkbo +beoordeling +diploma -eendaagse|1-?daagse|tweeda
+Winford College BV,www.winford.nl,UTRECHT,Nieuwegracht 69A,3512 LG,2018-01-01,,,,ok,5,8,3,+toetsing +herkansing +diploma -eendaagse|1-?daagse|tweeda
+Zes Boutique,https://www.zes-maastricht.com/education,,,,2026-01-07,,,,ok,5,5,0,+crkbo +leeruitkomsten
+ NONONS Opleidingen BV,www.nonons.nl,Amsterdam,Linnaeushof 1-6,1098 KH,2021-10-19,,,,ok,4,4,0,+beoordeling +diploma
+5ST3PS,https://www.5st3ps.nl,Rotterdam,Weena 290 - W200,3012 NJ,2022-05-01,,,,ok,4,4,0,+praktijkopdracht
+Braint Academy B.V.,www.braint.nl,CASTRICUM,Oude Parklaan 111,1901 ZZ,2020-08-10,Inburgering,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,4,4,0,+eindopdracht
+Bureau Tromp BV,www.bureautromp.nl,Utrecht ,Orteliuslaan 850,3528 BB,2022-03-14,,,,ok,4,4,0,+portfolio +meerdaagse leergang|leerga
+CIVAS,www.civas.nl,HAARLEM,Spaarne 13,2011 CC,2010-06-22,,,,ok,4,4,0,+beoordeling +studiebelasting
+De Laat Kenniscentrum,www.delaatkenniscentrum.nl,Eindhoven,Daalakkersweg 10,5641 JA,2021-01-21,,,,ok,4,4,0,+studiebelasting +diploma
+De VerkeersAcademie,www.deverkeersacademie.nl,Nieuwegein,Newtonbaan 2,3439 NK,2021-01-01,,,,ok,4,14,10,+eindopdracht +praktijkopdracht +beoordeling +studiebelasting +diploma -het oranje kruis|certech|i -heftruck|hoogwerker|rijbew
+Detex Opleidingen,www.detex.nl,DOORN,Postbus 183,3940 AD,2022-05-12,,,,ok,4,4,0,+diploma +meerdaagse leergang|leerga
+Helix Academy,www.helixacademy.nl,Gouda,Zuidelijk Halfrond 4,2801 DD,2021-03-12,,,,ok,4,4,0,+diploma +meerdaagse leergang|leerga
+hihaho interactive video,www.hihaho.nl,ASSEN,Kloekhorststraat 29,9401 BB,2018-01-01,Inburgering,,,ok,4,4,0,+praktijkopdracht
+IT Randsteden,www.it-randsteden.nl,AMERSFOORT,Netwerklaan 42,3821 AG,2020-05-22,Inburgering,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,4,4,0,+praktijkopdracht
+KinderWijs TV,https://www.kinderwijstv.nl/,Druten,Van Heemstraweg 123a,6651 KH,2020-08-11,,,,ok,4,9,5,+nagekeken +crkbo +eindtoets +meerdaagse leergang|leerga -certificaat van deelname|b
+LTD TF B.V. ,www.lepaya.nl,Amsterdam,Stephensonstraat 19,1097 BA,2020-12-14,,,,ok,4,4,0,+portfolio +beoordeling
+Miraconsult (handelsnaam Academie voor Leven),www.academievoorleven.com,Amsterdam,Olphert Vaillantlaan 34,1086 ZA,2022-03-22,,,,ok,4,4,0,+post-?hbo +crkbo
+NIBE-SVV Opleidingen B.V.,www.nibesvv.nl,HILVERSUM,Marathon 7,1213 PD,2011-02-03,,,,ok,4,4,0,+diploma +meerdaagse leergang|leerga
+NL Mode Academie,www.nlmodeacademie.nl,Amstelveen,Laan Nieuwer-Amstel 3,1182 JR,2024-10-14,,,,ok,4,4,0,+portfolio +diploma
+OCD Opleidingen,https://www.ocdopleidingen.nl/,DEVENTER,Keizerstraat 39,7411 HE,2020-04-30,,,,ok,4,4,0,+leeruitkomsten
+Opleidingen 2000 VOF,https://opleidingen2000.nl,Geertruidenberg,Markt 17,4931BR,2022-03-22,,,,ok,4,4,0,+beoordeling +diploma
+OVD Beroepsopleidingen,www.ovd-opleidingen.nl,EDE,Galileilaan 31,6716 BP,2017-05-03,Inburgering,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,4,13,9,+praktijkopdracht +toetsing +beoordeling +studiebelasting +diploma -certificaat van deelname|b -eendaagse|1-?daagse|tweeda -incompany training(?!s?pro
+OVD Opleidingen,www.ovd-opleidingen.nl,EDE,Galileilaan 31,6716 BP,2017-05-03,Inburgering,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,4,13,9,+praktijkopdracht +toetsing +beoordeling +studiebelasting +diploma -certificaat van deelname|b -eendaagse|1-?daagse|tweeda -incompany training(?!s?pro
+Stichting Sioo,www.sioo.nl,Utrecht,Stadsplateau 12,3521 AZ,2021-04-14,,,,ok,4,4,0,+studiebelasting +meerdaagse leergang|leerga
+SVOZ opleidingen in de zorg,www.svoz.nl,UTRECHT,Kaap Hoorndreef 44,3563 AV,1999-03-01,,,,ok,4,4,0,+examencommissie
+SVS,www.svs-opleidingen.nl,CAPELLE AAN DEN IJSSEL,Rhijnspoor 267,2901 LB,2014-03-19,Inburgering; Bouw; ICT; Onderwijs; Techniek; Zorg,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,4,4,0,+praktijkopdracht
+Tele-Educatie,www.deverkeersacademie.nl,NIEUWEGEIN,Newtonbaan 2,3439 NK,2015-12-09,,,,ok,4,14,10,+eindopdracht +praktijkopdracht +beoordeling +studiebelasting +diploma -het oranje kruis|certech|i -heftruck|hoogwerker|rijbew
+VAPRO (holding),www.vapro.nl,Den Haag,"Loire 150 (Castellum, gedeelte C)",2491 AK,2021-02-18,,,,ok,4,4,0,+beoordeling +diploma
+Vapro trainingen,www.vapro.nl,DEN HAAG,"Loire 150 (Castellum, gedeelte C)",2491 AK,2020-01-01,,,,ok,4,4,0,+beoordeling +diploma
+Vidarte,www.vidarte.nl,Vught,Bosscheweg 2A,5261 AA,2022-04-04,,,,ok,4,4,0,+praktijkopdracht
+Volksuniversiteit Breda,www.volksuniversiteit-breda.nl,Breda,Molenstraat 6,4311 GS,2022-10-25,,,,ok,4,4,0,+praktijkopdracht
+Arminius Selectie Trainingscentrum,https://arminius-stc.com,Zwolle,Carlbenzstraat 5B,8013 NH,2023-03-27,,,,ok,3,3,0,+crkbo +diploma
+Auxilium Academy,www.auxiliumacademy.nl,Lippenhuizen,'t Corso 33,8408 HW,2022-03-14,,,,ok,3,3,0,+post-?hbo
+Buddywise (valt onder NHA),www.buddywise.nl,PANNINGEN,Industrieterrein 37,5981 NK,2021-03-01,,,,ok,3,8,5,+eindopdracht +beoordeling +diploma -certificaat van deelname|b
+Dagnall Taleninstituut,www.dagnall.nl,ASSEN,Industrieweg 22,9403 AA,2012-01-01,,,,ok,3,4,1,+praktijkopdracht -incompany training(?!s?pro
+De Academies B.V.,www.de-academies.nl,Ridderkerk,Kerkweg 128,2985 AW,2022-03-14,,,,ok,3,4,1,+praktijkopdracht -incompany training(?!s?pro
+Edu-Dutch Academy B.V.,https://edu-dutch.nl/,,,,2026-06-18,,,,ok,3,3,0,+herkansing
+EVC Centrum Nederland B.V.,www.evc-nederland.nl,HILVERSUM,Marathon 7,  1213 PD,2017-05-22,,,,ok,3,4,1,+portfolio +diploma -incompany training(?!s?pro
+Forsa Advies,www.forsa-advies.nl,Rijswijk,Laan van Zuid Hoorn 31,2289 DC,2022-02-15,,,,ok,3,12,9,+praktijkopdracht +portfolio +beoordeling +studiebelasting +diploma -certificaat van deelname|b -eendaagse|1-?daagse|tweeda -incompany training(?!s?pro
+GO B.V.,http://goopleidingen.nl,VOORBURG,Charlotte van Pallandtlaan 18,2272 TR,1995-04-24,,,,ok,3,6,3,+eindopdracht +meerdaagse leergang|leerga -eendaagse|1-?daagse|tweeda
+IDcentre,www.id-centre.com,Eindhoven,Luchthavenweg 54,5657 EB,2021-09-08,,,,ok,3,3,0,+crkbo +beoordeling
+IPD Opleidingen,www.ipd-opleidingen.nl,Nieuwegein,Rond Het Fort 38,3439 MK,1995-04-24,,,,ok,3,4,1,+beoordeling +diploma -incompany training(?!s?pro
+Jolange Opleidingen B.V.,www.jolange-opleidingen.nl,Rotterdam ,Piet Cottaarstraat 2,3043 JR,2022-06-13,,,,ok,3,3,0,+crkbo +diploma
+Lagant Academy B.V.,www.lagant.eu,AMERSFOORT,Stationsplen 26,3818 LE,2022-02-14,,,,ok,3,4,1,+portfolio +beoordeling -incompany training(?!s?pro
+Logikos Trainingen,www.logikos.nl,Apeldoorn,Bouwmeestershoeve 49,7326 RM,2020-12-08,,,,ok,3,3,0,+crkbo +studiebelasting
+ORGB,www.orgb.nl,Wessem,Van Horneplein 6,6019 BW,2015-03-04,,,,ok,3,3,0,+crkbo +diploma
+Studdy BV,studdy.nl,BREDA,Liesboslaan 57,4813 EB,2020-07-21,,,,ok,3,3,0,+crkbo +beoordeling
+UvA Talen BV,www.uvatalen.nl,Amsterdam,Roetersstraat 25,1018 WB,2022-03-22,,,,ok,3,3,0,+crkbo +eindtoets
+Vitacademie,www.vitacademie.nl,Eindhoven,Beemdstraat 1,5653 MA,2021-08-05,,,,ok,3,3,0,+post-?hbo
+Vitalogisch,www.vitalogisch.nl,Eindhoven,Beemdstraat 1,5653 MA,2021-08-05,,,,ok,3,3,0,+post-?hbo
+Weddingplanners International,http://www.theweddingplannersinstitute.com,Utrecht,Computerweg 22,3542 DR  ,2022-04-04,Inburgering; Bouw; ICT; Onderwijs; Techniek; Zorg,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,3,6,3,+leeruitkomsten +diploma -ehbo
+Agile Scrum Group BV,https://agilescrumgroup.nl,Amsterdam,H.J.E. Wenckebachweg 123,1096 AM,2022-01-25,,,,ok,2,2,0,+\boer\b
+Amsterdam Wine Academy,www.amsterdamwineacademy.com,Amsterdam ,Lutmastraat 91- H,1073 GR,2022-07-20,,,,ok,2,2,0,+diploma
+Ardis Organisatie Ontwikkeling,www.ardis.nl,DEN HAAG,Nieuwe Parklaan 105,2587 BP,2017-05-15,,,,ok,2,2,0,+meerdaagse leergang|leerga
+Arezoo Beauty College ,www.arezoo.nl,Hoogvliet,Koddeweg 1,3194 DH,2023-01-02,,,,ok,2,2,0,+portfolio
+Art2Change BV,www.art2change.nl,Noordwijk aan Zee,Trompstraat 1 d2,2201 KP,2023-03-27,,,,ok,2,2,0,+meerdaagse leergang|leerga
+Avicenna Academie voor Leiderschap,www.academievoorleiderschap.nl,Deventer,Zutphenseweg 55,7418 AH,2019-07-29,,,,ok,2,2,0,+meerdaagse leergang|leerga
+Belangenbehartiging Opleidingen Bouwnijverheid B.V. (BOB B.V.),https://kob.nl,Zoetermeer,Zilverstraat 69,2718 RP,2024-10-30,,,,ok,2,2,0,+diploma
+Boulevard Magenta,www.boulevardmagenta.nl,Laag-Soeren,Cruyshoevelaan 28,6957 AT ,2022-07-27,,,,ok,2,2,0,+portfolio
+Bureau VRIS,www.bureauvris.nl,Geesteren,Respelhoek 3,7274 EL,2021-03-17,,,,ok,2,2,0,+beoordeling
+Buro Holland,www.buroholland.nl,Deventer,Diepenveenseweg 159,7413 AP,2021-06-10,,,,ok,2,2,0,+diploma
+Capabel taal,https://www.capabeltaal.nl/,Utrecht,Australiëlaan 14-16,3526 AB,2012-05-22,,,,ok,2,2,0,+diploma
+Code Gorilla,www.codegorilla.nl,Groningen,Laan Corpus den Hoorn 106,9728 JR,2022-03-11,,,,ok,2,2,0,+diploma
+CBT,www.cbtresultaatuitopleiden.nl,Velp,Arnhemsestraatweg 362,6881 NK,2021-08-06,Inburgering; Bouw; ICT; Onderwijs; Techniek; Zorg,,,ok,2,2,0,+beoordeling
+Communicatiehelden,www.communicatiehelden.nl,Amersfoort,Ruimtevaart 22-24,3824  MX,2022-05-25,,,,ok,2,2,0,+meerdaagse leergang|leerga
+Competence Factory,https://www.competencefactory.nl/,UTRECHT,Stationsplein 90,3511 ED ,2018-04-23,,,,ok,2,5,3,+post-?hbo +beoordeling -eendaagse|1-?daagse|tweeda
+CS Opleidingen,https://www.cs-opleidingen.nl/?gclid=CjwKCAjwtfqKBhBoEiwAZuesiATL7fga0NjsE-rqkcB0nQaUg0Ng56sEIy1BXT-Xszxtbcfs_XuWFxoCyY8QAvD_BwE,Arnhem,Meester B.M. Teldersstraat 3,6842 CT,2021-11-29,,,,ok,2,2,0,+beoordeling
+De Berekuyl B.V.,www.deberekuylacademy.nl,Hierden ,Molenweg 4 ,3849 RM,2023-01-30,,,,ok,2,2,0,+portfolio
+De Corporatiestrateeg,www.corporatiestrateeg.nl,NIJMEGEN,Graafseweg 274 (unit 3.07b),6532ZV,2018-09-25,,,,ok,2,5,3,+crkbo +beoordeling +meerdaagse leergang|leerga -eendaagse|1-?daagse|tweeda
+De Taaltrainer,https://detaaltrainer.nl/,,,,2026-04-14,,,,ok,2,2,0,+beoordeling
+Dental Best Practice BV,www.dentalbestpractice.nl,Deventer (Colmschate),Koggeschip 212,7429 BG,2022-03-08,,,,ok,2,2,0,+meerdaagse leergang|leerga
+Digi Surfer BV,https://digisurfer.nl,Amsterdam,Oostenburgermiddenstraat 636,1018 LL,2023-03-27,,,,ok,2,2,0,+diploma
+DOC Nederland,www.doc.nl,DOETINCHEM,"Gildenstraat, 27",7005 BL,2022-01-10,,,,ok,2,2,0,+diploma
+DogVision bv,https://www.dogvision.nl,Ede,Zandlaan 29,6717 LN,2022-05-03,,,,ok,2,7,5,+crkbo +beoordeling +studiebelasting +diploma -certificaat van deelname|b
+E-WISE Nederland, www.pe-academy.nl,Utrecht,Janssoniuslaan 40,3528 AJ,2021-08-06,,,,ok,2,2,0,+portfolio
+Educared Erkend Opleiden B.V.,www.educared.nl,Hengelo,Jan Tinbergenstraat 156,7559 SP,2024-02-22,,,,ok,2,2,0,+diploma
+Edupet,www.edupet.nl,Lelystad,Bronsweg 11-A,8211 AL,2023-07-20,,,,ok,2,2,0,+beoordeling
+Elan Training BV,www.elantraining.nl,Oisterwijk,Moergestelseweg 16,5062 JW,2022-02-21,,,,ok,2,2,0,+meerdaagse leergang|leerga
+Essenburgh Group B.V.,www.essenburgh.com,Harderwijk,Ceintuurbaan 2-40,3847 LG,2023-07-20,,,,ok,2,2,0,+portfolio
+F.L.A.I.R. Scholingstrajecten,www.flairscholing.nl,EMMEN,Nieuw Amsterdamsestraat 40,7814 VA,2006-08-01,,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,2,2,0,+diploma
+Freestyle Academy (Emiel Voest),www.freestyleacademy.nl,Ruinerwold,Wolddijk 50,7961 NC,2022-04-18,,,,ok,2,2,0,+meerdaagse leergang|leerga
+GBT Opleidingen BV (vh Gilde bt),www.gilde-bt.nl,VENLO,Venrayseweg 32,5928 NZ,2018-08-15,,,,ok,2,2,0,+diploma
+Geo-ICT Training Center,www.geo-ict.nl,Apeldoorn ,Wapenrustlaan 11-31,7321 DL,2021-11-29,,,,ok,2,2,0,+beoordeling
+GOC,www.goc.nl,Breukelen,De Corridor 5,3621 ZA ,2011-10-01,,,,ok,2,2,0,+diploma
+Graafschap Opleidingen,https://www.graafschapcollege.nl,Doetinchem,JF Kennedylaan 49,7001 EA,2022-05-10,,,,ok,2,2,0,+diploma
+Haka Content B.V.,www.ambinex.nl,Groot- ammers,Schoonhovense veer 19,2964 GB,2021-09-21,,,,ok,2,2,0,+beoordeling
+Handelsnaam van NTI B.V.,www.schrijversacademie.nl,LEIDEN,Schipholweg 1,2316 XC,2013-09-03,,,,ok,2,2,0,+beoordeling
+Helder & van Pas Opleidingen,www.heldervanpas.nl,Spannum,Tsjerkebuorren 10  ,8843 KE,2020-12-02,,,,ok,2,2,0,+meerdaagse leergang|leerga
+I AM College BV,http://www.iamcollege.nl,AMSTERDAM,Aambeeldstraat 10,1021 KB,2017-04-10,,,,ok,2,2,0,+diploma
+i4healthcare B.V.,https://i4healthcare.nl/,Tiel,Biezenwei 23,4004 MB,2024-07-08,,,,ok,2,2,0,+diploma
+Icademy,www.icademy.nl,ASSEN,Kloekhorststraat 29,9401 BB,2011-10-01,Inburgering,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,2,2,0,+meerdaagse leergang|leerga
+ILC,www.ilc-talen.nl,VLIJMEN,Wolput 34,5251 CG ,2012-04-16,"Inburgering; Bouw; ICT; Onderwijs; Techniek; Zorg; (Zakelijke) dienstverlening; Agrarisch en groen; Autobranche; Beveiliging; Coaching; Cultuur, sport en recreatie; Cybersecurity; Economisch- administratief; EVC; Exameninstituten; Financiële dienstverlening; Groothandel; Industrie – Techniek; IT; Klantcontact; Klimaat; Laaggeletterdheid; Learning & Development; Leiderschap; Online leren; Overheid; Persoonlijke effectiviteit; Schoonmaak; Sociaal werk, jeugdzorg en kinderopvang; Talen - NT2; Thuis zorgverpleging en/of medisch en/of alternatieve zorg; Transport en logistiek",Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,2,2,0,+diploma
+Instituut Broers,www.instituutbroers.nl,TILBURG,Stappegoorweg 190,5022 DL,2015-11-06,,,,ok,2,2,0,+diploma
+Interieuracademie Nederland,www.interieuracademie.nl,Doetinchem,Gildenstraat 27,7005 BL,2022-01-12,,,,ok,2,2,0,+diploma
+ISBW Opleidingen B.V.,www.isbw.nl,HILVERSUM,Marathon 7,1213 PD,2013-09-26,,,,ok,2,2,0,+diploma
+IVA Opleidingen,www.ivaopleidingen.nl,UTRECHT,Savannahweg 71c,3542 AW,2022-01-03,,,,ok,2,2,0,+beoordeling
+IVIO-Opleidingen,https://ivio-opleidingen.nl/,Lelystad,Pascallaan 68,8218 NJ,2012-07-27,Inburgering; Bouw; ICT; Onderwijs; Techniek; Zorg,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,2,2,0,+diploma
+IVS opleidingen,www.ivsopleidingen.nl,Dordrecht,Spuiweg 105,3311 GT,2020-12-14,,,,ok,2,2,0,+beoordeling
+JBBX BV,www.jbbx.nl,Den Haag,Laan van Meerdervoort 187,2517 BA,2022-02-04,,,,ok,2,2,0,+portfolio
+Kader- en Ondernemersopleiding Bouwbedrijf B.V. (KOB B.V.),https://kob.nl,Zoetermeer,Zilverstraat 69,2718 RP,2023-07-10,,,,ok,2,2,0,+diploma
+Kjenning,www.kjenning.nl,LELYSTAD,Pascallaan 68f,8218 NJ,2010-03-02,,,,ok,2,2,0,+meerdaagse leergang|leerga
+Kronenburgh Beroepsopleidingen,www.kb-opleidingen.nl/,DEN HAAG,Lange Houtstraat 7,2511 CV,2010-08-25,,,,ok,2,2,0,+diploma
+KSG Trainers & Consultants,www.ksgtrainersconsultants.nl,Soest,Vredehofstraat 1B,3761 HA,2013-02-12,,,,ok,2,2,0,+meerdaagse leergang|leerga
+Language Partners B.V.,www.languagepartners.nl,Rijswijk,De Bruyn Kopstraat 15 G,2288 EC,2025-11-21,,,,ok,2,2,0,+diploma
+Laudius,www.laudius.nl,Venlo,Alerbeemdweg 5,5928 PV,2021-02-10,,,,ok,2,2,0,+diploma
+Master The Mix Academy,www.masterthemix.com,Hilversum,Eemnesserweg 2,121 CT,2021-11-22,,,,ok,2,2,0,+diploma
+Mikrocentrum ,www.mikrocentrum.nl,VELDHOVEN,De Run 1115,5503 LB,2015-08-21,,,,ok,2,2,0,+diploma
+Mind Academy B.V.,https://www.mindacademy.nl,Heiloo,Laan Eindeloos 13,1851 ZM,2021-11-08,,,,ok,2,7,5,+examencommissie +crkbo +beoordeling -certificaat van deelname|b
+Moovs Savant Learning Partners ,www.savantlearningpartners.nl,Amsterdam,Tweede Jan Steenstraat 84H,1074 CR,2022-10-07,,,,ok,2,2,0,+meerdaagse leergang|leerga
+Move The Crowd BV,www.movethecrowd.nl,Rotterdam,Olympiaweg 4-14,3077 AL,2021-04-20,Inburgering; Bouw; ICT; Onderwijs; Techniek; Zorg,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,2,2,0,+diploma
+Nationaal Centrum Erfgoedopleidingen,www.erfgoedopleidingen.nl,AMERSFOORT,Klooster Ter Eem - Daam Fockemalaan 22,3818 KG,2019-01-01,,,,ok,2,2,0,+diploma
+NHA,www.nha.nl,PANNINGEN,Industrieterrein 37,5981 NK,1995-04-24,,,,ok,2,2,0,+diploma
+oCaro BV,https://ocaro.nl/,Loenen,Hoofdweg 74,7371 AK,2024-07-02,,,,ok,2,2,0,+meerdaagse leergang|leerga
+OPATEL Opleidingen,www.opatel.nl,ROTTERDAM,Piekstraat 23,3071 EL,2016-06-24,,,,ok,2,2,0,+diploma
+Opleidingscentrum Orca,www.oc-orca.nl,Best,De Waal 9,5684 PL,2010-06-03,,,,ok,2,2,0,+studiebelasting
+Opleidingsinstituut KMBV (Health & Welfare B.V.),www.kmbv.nl,Deventer,Zutphenseweg 55,7418 AH,2022-03-11,,,,ok,2,2,0,+meerdaagse leergang|leerga
+Opleidingsinstituut O.P.B.,www.opb.cc,SITTARD,Engelenkampstraat 86,6131 JJ,1997-01-01,,,,ok,2,2,0,+portfolio
+Opleidingsinstituut Thomas,www.instituut-thomas.nl,S-HERTOGENBOSCH,Verwersstraat 51,5211 HT,1995-04-24,,,,ok,2,2,0,+diploma
+OptiSec Cyber Security Trainingen B.V.,www.optisec.nl,Woerden,Pelmolenlaan 16,3447 GW,2026-03-06,,,,ok,2,2,0,+beoordeling
+Picabia Opleidingen,www.picabia.nl,HENGELO,Deldenerstraat 42,7551AG,2012-08-02,,,,ok,2,2,0,+beoordeling
+Pro Education B.V.,www.proeducation.nl,AMSTERDAM,Hoogoorddreef 5,1101 DG,2008-06-12,,,,ok,2,2,0,+diploma
+RBO/EVC-dienstencentrum,www.rbo.nl,GRONINGEN,Rozenburglaan 3,9727 DL,2019-04-10,,,,ok,2,2,0,+diploma
+Sagènn Groep BV,www.sagenn.nl,Rotterdam,Stieltjesstraat 20,3071 JX,2024-12-18,,,,ok,2,2,0,+diploma
+Sagénn Educatie BV,www.sagenn.nl,Rotterdam,Stieltjesstraat 20,3071 JX,2024-12-18,,,,ok,2,2,0,+diploma
+Sagénn Re-integratie BV,www.sagenn.nl,Rotterdam,Stieltjesstraat 20,3071 JX,2024-12-18,,,,ok,2,2,0,+diploma
+Sayna College (Sayna Skin and Beauty Academie),https://saynacollege.com,Zwijndrecht,Daltonstraat 12,3335 LR,2025-04-15,,,,ok,2,2,0,+portfolio
+SRM Communicatie B.V.,www.srm.nl,HILVERSUM,Marathon 7,1213 PD,2019-07-24,,,,ok,2,2,0,+diploma
+Start2Move ,www.start2move.nl,Arnhem,Papendallaan 7,6816 VD,2022-01-03,,,,ok,2,2,0,+portfolio
+STC Next,https://stcnext.com,Rotterdam,Waalhaven Z.z. 16,3088 HH,2022-01-03,,,,ok,2,2,0,+diploma
+Stichting BOB-KOB,https://kob.nl,Zoetermeer,Zilverstraat 69,2718 RP,2024-10-30,,,,ok,2,2,0,+diploma
+Stichting Boswijk instituut ,www.boswijkinstituut.nl,Doorn,Beukenrodelaan 2L,3941 ZP,2021-11-22,,,,ok,2,7,5,+studiebelasting +verslag(?:en)? schrijven|s +diploma -certificaat van deelname|b
+Stichting Go,www.opleidingscentrum-go.nl, Ede,Zandlaan 29,6717 LN,2020-11-01,,,,ok,2,6,4,+praktijkopdracht +diploma -\bvca\b
+Stichting NewCare College,www.newcarecollege.nl,Den Haag,Oder 20,2491 DC ,2025-01-01,,,,ok,2,2,0,+diploma
+Technicom,www.technicom.nl,HOOGVLIET,Koddeweg 41,3194 DH,2017-07-20,,,,ok,2,6,4,+praktijkopdracht +diploma -\bvca\b
+Technicom Opleidingen BV,www.technicom.nl,"Hoogvliet, Rotterdam",Koddeweg 41,3194 DH,2021-04-19,,,,ok,2,6,4,+praktijkopdracht +diploma -\bvca\b
+Tetrix Techniekopleidingen,https://www.tetrixtechniek.nl/,HEERHUGOWAARD,W.M. Dudokweg 66,1703 DC,2020-02-14,,,,ok,2,2,0,+diploma
+The Square Mile (holding),www.thesquaremile.nl,Leiden,Johan de Wittstraat 41,2334 AN,2013-04-17,,,,ok,2,2,0,+diploma
+The Square Mile Private Sector Training bv,https://www.thesquaremile.nl/,Leiden ,Johan de Wittstraat 41,23340 AN,2021-08-18,,,,ok,2,2,0,+diploma
+The Square Mile Public sector Training bv,https://www.thesquaremile.nl/,Leiden,Johan de Wittstraat 41,23340 AN,2021-08-18,,,,ok,2,2,0,+diploma
+Trainspot Office Leercentrum,www.trainspot.nl,Bunnik,Regulierenring 2,3981 LB,2016-02-24,,,,ok,2,2,0,+portfolio
+Tulp Training B.V.,www.tulptraining.nl,Rotterdam,Zuidplein 16,3083 CW,2023-03-27,,,,ok,2,2,0,+diploma
+University of Applied Sciences Europe B.V. (vh Intercollege Business School),https://www.ue-amsterdam.com/nl,AMSTERDAM,Passeerdersgracht 23,1016 XG,2001-02-01,,,,ok,2,2,0,+\boer\b
+Use Your Talents B.V.,www.useyourtalents.nl,Breda,Kleine Hil 16,4822 AE,2022-08-31,,,,ok,2,2,0,+meerdaagse leergang|leerga
+Van Campen Consulting,https://vancampenconsulting.nl ,Zaltbommel,Hogeweg 37b,5301 LJ,2025-10-02,,,,ok,2,2,0,+diploma
+Van Kraaij Educatie,www.vankraaijeducatie.nl,Druten,Van Heemstraweg 53,6651 KH,2020-08-10,,,,ok,2,2,0,+beoordeling
+Verbeta B.V.,www.verbeta.nl,Tilburg,Brugstraat 10,5042 SB,2022-04-18,,,,ok,2,3,1,+herkansing -incompany training(?!s?pro
+Vers Pers-Open Eyes,www.openeyesinstitute.org,AMSTERDAM,Overhoeksplein 2,1031 KS,2023-01-01,,,,ok,2,5,3,+praktijkopdracht +crkbo -eendaagse|1-?daagse|tweeda
+VIPD,www.vipd.nl,Steenwijk ,Stationsstraat 36B,8331 GK,2021-11-22,,,,ok,2,2,0,+beoordeling
+Volver Sound Academy,www.volversoundacademy.nl,Tilburg,Frans Mannaertsstraat 14G,5011 EN,2022-03-14,,,,ok,2,2,0,+portfolio
+W en L Opleidingen,www.wenlopleidingen.nl,Kampen,Meeuwenplein 5,8261 WB,2022-02-11,,,,ok,2,2,0,+portfolio
+Wandelcoach.nl BV ,www.wandelcoach.nl,Grave,Violier 17,5361 MR,2014-06-27,,,,ok,2,2,0,+portfolio
+WFT Xperience B.V. ,https://www.wftxperience.nl/,Capelle aan den IJssel ,Rietbaan 2-4,2905 LP  ,2022-05-01,,,,ok,2,2,0,+diploma
+WR College,www.wr-college.nl,Purmerend,Impuls 22,1446 WX,2025-01-01,,,,ok,2,2,0,+diploma
+Amsterdams ADR Instituut,www.adrinstituut.nl,Diemen,Dalsteindreef 141,1112 XJ,2022-04-04,,,,ok,1,4,3,+studiebelasting +diploma -eendaagse|1-?daagse|tweeda
+Bart de Pau Language Courses BV,https://dutchsummerschool.nl,Westerbork,Gagelmaat 4,9431 KT,2022-04-18,,,,ok,1,1,0,+crkbo
+Carrièrepoort/True Taste,www.carrierepoort.nl,Rotterdam,Van der Takstraat 28, 3071 LL,2021-11-08,,,,ok,1,2,1,+beoordeling -incompany training(?!s?pro
+Centrum voor Effectieve Intuïtie,www.effectieveintuitie.nl,HAARLEM,van 't Hofftraat 120,2014 RK,2018-08-24,,,,ok,1,1,0,+crkbo
+CIVA B.V.,www.civabv.nl,Brunssum,Rumpenerstraat 9,6443 CA,2022-03-11,,,,ok,1,4,3,+crkbo +toetsing -eendaagse|1-?daagse|tweeda
+Education360 B.V.,lindenhaeghe.nl,BILTHOVEN,Rembrandtlaan 1B,3723 BG,2018-05-02,,,,ok,1,7,6,+casus(?:opdracht|uitwerkin +studiebelasting +diploma -zonder examen
+Elsden training,www.elsden.nl,Almere,"Camerastraat, 23 ",1322BB,2020-12-02,,,,ok,1,1,0,+crkbo
+Estasi Trainingen,www.estasi.nl,ERMELO,De Driesten 20,3851 DV,2014-12-04,,,,ok,1,1,0,+crkbo
+Esthetica  Bedrijfsopleidingen BV,www.esthetica.nl,BREDA,Hambroeklaan 1,4822 ZZ,2021-05-04,,,,ok,1,1,0,+crkbo
+Esthetica Opleidingen,www.esthetica.nl,Breda,Hambroeklaan 1, 4822 ZZ,2022-01-14,,,,ok,1,1,0,+crkbo
+ExplainiT Special Accounts BV,www.explainit.nl,Hengelo,John Maynard Keynesstraat 351,7559 SV,2023-07-20,,,,ok,1,2,1,+diploma -incompany training(?!s?pro
+FBTA,www.fbta.nl,NUNSPEET,Brinkersweg 18,8071 GT,2015-06-03,,,,ok,1,1,0,+crkbo
+Frankwatching,https://www.frankwatching.com,Utrecht,Atoomweg 1,3542AA,2021-03-26,,,,ok,1,2,1,+beoordeling -incompany training(?!s?pro
+Gelders Opleidingsinstituut,www.geldersopleidingsinstituut.nl,ARNHEM,Willem Pijperstraat 21,6815 AV,2005-03-14,Inburgering; Bouw; ICT; Onderwijs; Techniek; Zorg,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,1,1,0,+crkbo
+GetCertified Opleidingen,www.getcertified.nl,ARNHEM,Velperweg 160,6824 MD,2018-01-01,,,,ok,1,2,1,+diploma -incompany training(?!s?pro
+Global TC Group,https://globaltcgroup.nl,Zaandijk,Lagedijk 60,1544 BH,2025-09-04,,,,ok,1,1,0,+crkbo
+HBO Academy,www.hbo-academy.nl,Hilversum,Arena 301 - kamer nr E114,1213 NW,2012-07-27,,,,ok,1,4,3,+portfolio +diploma -eendaagse|1-?daagse|tweeda
+Holland Opleidingen BV,https://www.hollandopleidingengroep.nl ,Steenwijk ,De Vesting 11,8332 GL,2023-01-30,,,,ok,1,1,0,+crkbo
+IMK Opleidingen,www.imkopleidingen.nl,ALPHEN AAN DEN RIJN,Henry Dunantweg 28,2402 NR,2017-10-17,,,,ok,1,2,1,+beoordeling -incompany training(?!s?pro
+Information Security Academy,www.securityacademy.nl,Woerden,De Bleek 11,3447 GV,2022-03-28,,,,ok,1,2,1,+portfolio -incompany training(?!s?pro
+ITIP school voor leven en werk,www.itip.nl,ZUTPHEN,Marspoortstraat 16,7201 JC,2020-02-14,,,,ok,1,1,0,+crkbo
+KPE Groep,www.kpe.nl,MAASTRICHT,Bassin 120,6211 AK,2015-03-04,,,,ok,1,6,5,+studiepunten +studiebelasting +meerdaagse leergang|leerga -certificaat van deelname|b
+Lindenhaeghe B.V.,www.lindenhaeghe.nl,Bilthoven,Rembrandtlaan 1b,3723 BG,2024-01-01,,,,ok,1,7,6,+casus(?:opdracht|uitwerkin +studiebelasting +diploma -zonder examen
+Lindenhaeghe Examens bv,www.lindenhaeghe.nl,Bilthoven,Rembrandtlaan 1B,3723 BG,2021-08-26,,,,ok,1,7,6,+casus(?:opdracht|uitwerkin +studiebelasting +diploma -zonder examen
+Lindenhaeghe International B.V.,www.lindenhaeghe.nl,Bilthoven,Rembrandtlaan 1b,3723 BG,2025-01-01,,,,ok,1,7,6,+casus(?:opdracht|uitwerkin +studiebelasting +diploma -zonder examen
+Lindenhaeghe Opleidingen bv,www.lindenhaeghe.nl,Bilthoven,Rembrandtlaan 1B,3723 BG,2021-08-26,,,,ok,1,7,6,+casus(?:opdracht|uitwerkin +studiebelasting +diploma -zonder examen
+M2 academy B.V.,www.m2academy.nl,Voorburg,Prins Bernhardlaan 1,2274 HT,2025-02-21,,,,ok,1,4,3,+beoordeling +diploma -eendaagse|1-?daagse|tweeda
+RecruitmentTraining.Pro ,https://recruitmenttraining.pro,Amsterdam,Cruquiusweg 89C,1019 AG,2022-05-01,,,,ok,1,2,1,+beoordeling -incompany training(?!s?pro
+Reframe InTensis B.V.,www.reframe.nl,TILBURG,Jules Verneweg 121,5015 BK,2018-04-11,,,,ok,1,1,0,+crkbo
+School of Datascience,www.schoolofdatascience.nl,Den Haag,Lulofsstraat 55 Unit 41,2521 AL,2022-03-08,,,,ok,1,2,1,+beoordeling -incompany training(?!s?pro
+Security Academy Opleidingen BV ,https://www.securityacademy.nl ,Woerden ,De Bleek 11,3447 Gv,2022-08-16,,,,ok,1,2,1,+portfolio -incompany training(?!s?pro
+Security Academy Trainingen BV ,https://www.securityacademy.nl ,Woerden,De Bleek 11 ,3447 GV,2022-08-16,,,,ok,1,2,1,+portfolio -incompany training(?!s?pro
+Selfline,https://www.selfline.nl/,Den Haag,Aagje Dekenlaan 51,2533 SG,2022-04-18,,,,ok,1,1,0,+crkbo
+Stichting Centre for Safety and Development (handelsnaam CSD),https://www.centreforsafety.org ,Amersfoort,Laan 1914 nr. 41,3818 EX,2025-02-21,,,,ok,1,1,0,+crkbo
+Stichting Jeugdinterventies ,www.stichtingjeugdinterventies.nl,Den Haag,President Kennedylaan 19,2517 JK,2022-07-20,,,,ok,1,4,3,+beoordeling +studiebelasting -eendaagse|1-?daagse|tweeda
+Tailor ICT Training BV,www.tailorit.nl,Tilburg,Spoorlaan 348,5038 CC,2020-10-01,,,,ok,1,2,1,+diploma -incompany training(?!s?pro
+Thai Hand,www.thai-hand.com,Amsterdam,Piri Reisplain 70,1057 KH,2024-02-10,,,,ok,1,1,0,+crkbo
+Van der Burgt Opleidingen,www.vanderburgtopleidingen.nl,BADHOEVEDORP,Pa Verkuijllaan 2,1711 EE,2019-12-13,,,,ok,1,2,1,+studiepunten -incompany training(?!s?pro
+VCM Opleiders,www.vcm-opleiders.nl,Liessel,Hoogdonkseweg 3,5757 PJ,2022-03-14,,,,ok,1,1,0,+crkbo
+Vetami Education BV,www.vetami.nl,Kapel-Avezaath,Laageinde 3,4013 CT,2023-03-30,,,,ok,1,4,3,+beoordeling +studiebelasting -eendaagse|1-?daagse|tweeda
+VINE Instituut voor Verbindende Communicatie,www.vinetraining.nl,Doorn,Mariniersweg 3,3941 XK,2023-06-15,,,,ok,1,2,1,+meerdaagse leergang|leerga -incompany training(?!s?pro
+2Moons,https://www.2moons.nl/,BLEISWIJK,Hoekeindsehof 1,2665 JZ,2019-11-05,,,,ok,0,0,0,
+Academie voor Arbeidsmarktcommunicatie ,https://www.academievoorarbeidsmarktcommunicatie.nl/,Rotterdam,Weena 210-212,3012 NJ,2020-08-18,,,,ok,0,4,4,+beoordeling +meerdaagse leergang|leerga -eendaagse|1-?daagse|tweeda -incompany training(?!s?pro
+Academysuite B.V.,www.academysuite.nl,Lunteren,Dorpsstraat 22,6741 AK,2021-02-10,,,,ok,0,0,0,
+Acceptus,www.acceptus.nl,Waal,Waal 7,2968 GB,2013-09-26,,,,ok,0,0,0,
+ACT Guide B.V.,https://www.act-guide.com,EINDHOVEN,High Tech Campus 32,5656 AE,2020-04-24,,,,ok,0,0,0,
+Active4you,www.active4you.nl,EINDHOVEN,Schiestraat 5,5626 AZ,2017-06-01,,,,ok,0,0,0,
+Ad Appel Taaltrainingen,https://www.adappel.nl/,HEEMSTEDE,Glipperweg 94-G,2104 AM,2018-08-16,,,,ok,0,0,0,
+Adwise Academy B.V.,www.adwise.nl,Almelo,Twentepoort West 12A,7609 RD,2020-09-03,,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,0,0,0,
+Aeres Tech,www.aeres.nl,Ede,Zandlaan 29,6717 LN,2020-11-01,,,,ok,0,0,0,
+Alsare Academie B.V.,https://alsare.nl,Rotterdam,Linker Rottekade 292 unit 4.01,3034 CV,2024-06-17,,,,ok,0,0,0,
+Amice Academy B.V.,www.amice.nl,Hoevelaken,Hogebrinkerweg 17a,3871 KM,2021-08-05,,,,ok,0,0,0,
+Amsterdam Data Academy,https://amsterdamdataacademy.com/,Zeist,Steynlaan 44,3701EH,2022-03-22,,,,ok,0,0,0,
+aNewSpring,www.anewspring.com,ROTTERDAM,Westblaak 180,3012 KN,2014-05-16,,,,ok,0,0,0,
+Art of Colors,www.artofcolors.nl,Amsterdam ,Singel 432 (zie opmerking),1017 AV,2022-02-14,Inburgering,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,0,0,0,
+Basten B.V.,www.bastentrainingen.nl,Eindhoven,Daumierstraat 5,5623 EV,2019-08-27,,,,ok,0,0,0,
+BAYZ Analytics B.V.,www.bayz.nl,Amsterdam ,Barbara Strozzilaan 201,1083 HN ,2023-01-02,,,,ok,0,0,0,
+Beeckestijn Business School,https://www.beeckestijn.org/,Leusden,Leusderend 30,3832 RC,2020-09-29,,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,0,3,3,+post-?hbo -eendaagse|1-?daagse|tweeda
+Behavior Change Group - Academy,https://behaviorchange.group/academy/,NIJMEGEN,Tweede Walstraat 2,6511 LV,2018-05-11,,,,ok,0,3,3,+crkbo +diploma -eendaagse|1-?daagse|tweeda
+benVitaal Academy,www.benvitaal.nl,Beek,Kelmonderstraat 55,6191 RD,2020-08-12,,,,ok,0,0,0,
+Bergsma en de Boer Bij- en Nascholing,https://www.bergsmaendeboer.nl/,LEEUWARDEN,Huizumerlaan 16,8934 BH,2018-05-03,,,,ok,0,0,0,
+Berlitz Schools of Languages BV,www.berlitz.nl,AMSTERDAM,Weerdestein 205,1083 GN,2018-05-03,,,,ok,0,0,0,
+Beroepsopleiding Makelaars B.V. (Handelsnaam Opleidingsinstituut Vastgoedprofessionals),www.ovgp.nl,Den Haag,Bezuidenhoutseweg 12,2594 AV,2023-03-01,,,,ok,0,0,0,
+Blauw B.V.,www.blauwbv.nl,SOEST,Veldweg 6-A,3764 CP,2015-02-11,,,,ok,0,0,0,
+Blue Road Academy BV,https://blueroadacademy.com,Amsterdam,"Herengracht 495, Unit 1.2",1017 BT,2025-03-13,,,,ok,0,0,0,
+Bogaers Taleninstituut,www.bogaerstalen.nl,TILBURG,Groenstraat 139-155,5021 LL,2009-06-01,,,,ok,0,0,0,
+Bon Courage,www.boncourage.eu,BAARN,Nassaulaan 12,3743 CC,2018-09-25,,,,ok,0,0,0,
+Bouwstarters,www.bouwmensen.nl/vestigingen/apeldoorn,Apeldoorn,Kanaal Noord 260,7322 AE,2021-06-10,,,,ok,0,0,0,
+Breincentrum B.V.,https://www.breincentrum.com/,Wijchen,Zuiderpoort 56,6605 HN,2022-04-18,,,,ok,0,0,0,
+Bright Alley B.V.,www.brightalley.nl,UTRECHT,Herculesplein 80,3584 AA,2014-01-01,,,,ok,0,0,0,
+Bron Trainingen,www.brontrainingen.nl,Zwolle,Punterweg 20 (toevoeging 1 06),8042 PB,2022-05-10,,,,ok,0,0,0,
+Bureau Bewezen Effect B.V.,www.bewezeneffect.nl,Rotterdam ,Elsbes 36,3069 LN,2022-08-22,,,,ok,0,0,0,
+Bureau HTM | Adapt,www.bureauhtm.nl,Zwolle,Dr. van Deenweg 162,8025 BM,2023-03-30,,,,ok,0,0,0,
+Bureau Personal Development B.V. ,https://www.bpdtraining.nl ,Zoetermeer ,Topaas 8,2719 VD,2023-01-30,,,,ok,0,0,0,
+Business Mine B.V.,https://businessmine.co,Zwolle,Paxtonstraat 3N | Unit A5999,8031 RP,2023-05-09,,,,ok,0,0,0,
+Business School Notenboom,www.notenboom.nl,EINDHOVEN,Beukenlaan 145,5616 VD,2018-01-16,,,,ok,0,0,0,
+BVO Opleidingen B.V. (Boertien Vergouwen Overduin),www.bvo.nl,HILVERSUM,Marathon 7,1213 PD,2013-01-01,,,,ok,0,0,0,
+Coincide BV,www.coincide.nl,AMSTERDAM,Argonautenstraat 29,1076 KK,2020-06-25,,,,ok,0,0,0,
+College voor Integrale Geneeswijzen BV ,https://collegeintegralegeneeswijzen.nl/,Amsterdam,Contactweg 145-153,1014 BJ,2023-01-30,,,,ok,0,0,0,
+Combo Emonomy BV,www.combo.nl,Utrecht,Catharijnesteeg 4 ,3512 NZ,2022-02-07,,,,ok,0,0,0,
+Conrado,www.conrado.nl,AMSTERDAM,Papaverweg 42/b,1032 KJ,2023-01-02,,,,ok,0,0,0,
+De Baak,www.debaak.nl,DRIEBERGEN,De Horst 1,3971 KR,2025-02-25,,,,ok,0,0,0,
+De Groot LPMW Lasinstituut,www.lasinstituut.nl,Breda,Weidehek 24 ,4824 AS,2022-03-28,,,,ok,0,0,0,
+De Kleine Tiki,www.dekleinetiki.nl,Breda ,Langendijk 87,4801 BV,2022-05-30,,,,ok,0,0,0,
+De Trainingsacteur Academie,www.trainingsacteur-academie.nl,Markelo,Plasdijk 2B,7475 TD,2022-02-14,,,,ok,0,0,0,
+De Vrije Taal,www.devrijetaal.nl,Alkmaar,Comeniusstraat 6,1817 MS,2023-11-02,,,,ok,0,0,0,
+Deloitte Academy,https://www.deloitte.com/gr/en/about/deloitte-academy.html,ROTTERDAM,Wilhelminakade 1,3072 AP,2016-03-01,,,,ok,0,0,0,
+Deltion Business,www.deltion.nl,ZWOLLE,Mozartlaan 15,8031 AA,2019-02-06,,,,ok,0,0,0,
+Dental Best College BV,www.dentalbestcollege.nl,Deventer (Colmschate),Koggeschip 212,7429 BG,2025-05-26,,,,ok,0,0,0,
+Dental Best Learning,www.dentalbestcollege.nl,Deventer (Colmschate),Koggeschip 212,7429 BG,2026-02-19,,,,ok,0,0,0,
+Dental Product Promotions,www.dentalbestcollege.nl,Deventer (Colmschate),Koggeschip 212,7429 BG,2026-02-19,,,,ok,0,0,0,
+Dentallect (onderdeel van BSL),www.bsl.nl,Utrecht,Varrolaan 114,3584BW,2012-11-19,Inburgering; Bouw; ICT; Onderwijs; Techniek; Zorg,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,0,0,0,
+DesignThinkers Academy,www.designthinkers.nl,Amsterdam,Nieuwe Leliestraat 13,1015 SH,2022-04-04,,,,ok,0,0,0,
+Dialogue Academy BV,www.kyden.com,Hilversum,Oude Amersfoortseweg 125,1212 AA,2016-04-28,,,,ok,0,0,0,
+Digidog B.V.,www.digidog.nl,MELICK,Peysstraat 87,6074 HM,2022-06-13,,,,ok,0,0,0,
+Dream Support,www.dreamsupport.nl,AMSTERDAM,Bataviastraat 24,1095 ET,2022-06-22,,,,ok,0,0,0,
+Dutch Human Development Academy B.V.,https://dutchhumandevelopmentacademy.nl,Hilversum,Johannes Gerardtsweg 115,1222 PP,2023-05-17,,,,ok,0,0,0,
+Duthler Associates,www.duthler.nl,DEN HAAG,Frankenslag 137,2582 HH,2017-10-24,,,,ok,0,0,0,
+Dé Codeerschool,https://codeerschool.nl/,,,,2026-04-14,,,,ok,0,0,0,
+E-learning Training,www.elearningtraining.nl,DEN HAAG,Lange Vijverberg 9,2513 AC,2017-02-17,,,,ok,0,0,0,
+EBC Taleninstituut,www.ebc.nl,BERGEN OP ZOOM,Keldermanslaan 3, 4611 AL,2009-06-01,,,,ok,0,0,0,
+EchoXpert,www.echoxpert.nl,AMSTERDAM,Oeverpad 300,1068 PJ,2019-05-29,,,,ok,0,0,0,
+Echt Nederlands,www.echtnederlands.nu,DEN HAAG,Calandstraat 12,2521 AG,2019-03-01,,,,ok,0,0,0,
+Edux,www.edux.nl,Ulvenhout,Tolweg 11 ,4851SJ,2022-02-21,,,,ok,0,0,0,
+Elycio Talen BV,www.elyciotalen.nl,Rijswijk,De Bruyn Kopsstraat 15 G,2288 EC,2025-06-10,,,,ok,0,0,0,
+EMDR Kind en Jeugd ,www.emdrkindenjeugd.nl,Oegstgeest ,Jacob van Maerlantlaan 23,2343 JX ,2022-08-26,,,,ok,0,0,0,
+Fabius Opleidingen,www.fabiusopleidingen.nl,OOSTERHOUT,Dillehof 1,4907 BG,2010-03-02,,,,ok,0,0,0,
+Faculty of Skills (handelsnaam We are Robin),www.faculty.nl,UTRECHT,Hooghiemstraplein 152,3514 AZ,2020-09-28,,,,ok,0,0,0,
+Fast Lane Benelux BV,www.flane.nl,Utrecht ,Burgemeester Verderlaan 11B,3544AD,2021-03-26,,,,ok,0,0,0,
+Fast Lane Nederland BV,www.fastlane.nl,Utrecht,Burgermeester Verderlaan 11,3544 AD,2022-06-13,,,,ok,0,0,0,
+Feedback Learning & Development B.V.,www.feedbackconsulting.nl,Klundert,Kerkring 21,4791 HG,2026-04-23,,,,ok,0,3,3,+toetsing -eendaagse|1-?daagse|tweeda
+Feedback Training & Consulting bv,www.feedbackconsulting.nl,Klundert,Kerkring 21,4791 HG,2021-09-01,,,,ok,0,3,3,+toetsing -eendaagse|1-?daagse|tweeda
+Fintastic Media Group B.V,www.madelonvos.nl,Amsterdam ,Herengracht 449A,1017 BR,2022-06-13,,,,ok,0,0,0,
+Focus Academy,www.focusacademy.com,Amsterdam ,Haarlemmerweg 317-G,1051 LG,2022-09-15,,,,ok,0,0,0,
+FP&P Leiderschap en Organisatieontwikkeling BV ,https://www.fpnp.nl ,Driebergen- Rijsenburg,Hoofdstraat 71,3971 KD,2023-01-02,,,,ok,0,0,0,
+Freia Holding,www.freia.nl,GRONINGEN,Laan Corpus den Hoorn 300,9728 JT,2024-01-01,,,,ok,0,0,0,
+Frits Philips & partners Jr. BV,www.fpnp.nl,Driebergen- Rijsenburg,Hoofdstraat 71,3971 KD ,2022-06-13,,,,ok,0,0,0,
+Furca B.V.,https://furca.nl,Dordrecht,Krommedijk 69,3312 CE,2024-11-18,,,,ok,0,0,0,
+"Gerben Bergsma Training, Advies en innovatie",www.gerbenbergsma.nl,LEEUWARDEN,Huizumerlaan 16,8934 BH,2011-01-12,,,,ok,0,0,0,
+Global Knowledge Network Netherlands BV,https://www.globalknowledge.com/nl-nl,Nieuwegein,Iepenhoeve 5,3438 MR,2021-01-07,,,,ok,0,0,0,
+Gooiconsult Academie,www.gooiconsult.nl,Utrecht,2e Korte Baanstraat 7,3581 BZ,2013-01-01,,,,ok,0,0,0,
+Grafische Cursussen | Option One,https://www.grafischecursussen.nl,Amsterdam,Sem Presserhof 108,1087 JG,2022-02-22,,,,ok,0,4,4,+opdracht(?:en)? in(?:te)?l +crkbo -eendaagse|1-?daagse|tweeda -incompany training(?!s?pro
+Hamrah ,www.hamrah.nl,Rotterdam ,Zuidplein 14,3083 CW,2022-08-25,,,,ok,0,0,0,
+Het Spring Instituut B.V.,www.springinstituut.nl,Ede,Galvanistraat 1,6716 AE,2026-02-26,,,,ok,0,0,0,
+HOBP Holding BV,hobp.nl,BREDA,Liesboslaan 57,4813 EB,2020-06-25,,,,ok,0,0,0,
+Hodac/ Cadix,www.cadix.nl,Drachten,Amperelaan 1 ,9207AM,2020-11-01,,,,ok,0,0,0,
+Hondentrimopleiding,www.span-info.nl,Ermelo,Eendenparkweg 49A,3852 LG,2022-04-04,,,,ok,0,0,0,
+Horizon Trainingen,https://horizontraining.nl/,Groningen,Laan Corpus den Hoorn 300,9728 JT,2021-02-03,,,,ok,0,0,0,
+Horizon Trainingen ll B.V.,https://horizontraining.nl/,Groningen,Laan Corpus den Hoorn 300,9728 JT,2022-01-31,,,,ok,0,0,0,
+HorizonTaal,https://horizontaal.nu/,DEN HAAG,Calandstraat 1,2521 AD,2020-04-10,,,,ok,0,0,0,
+Hormoon Community Nederland ,www.opleidinghormonen.nl,Rotterdam ,Haltewachter 18,3034 KE,2022-11-23,,,,ok,0,0,0,
+Hout Support,www.houtsupport.nl,Tuitjenhorn,Oostwal 2,1747 EZ,2022-05-25,"Inburgering; Bouw; ICT; Onderwijs; Techniek; Zorg; (Zakelijke) dienstverlening; Agrarisch en groen; Autobranche; Beveiliging; Coaching; Cultuur, sport en recreatie; Cybersecurity; Economisch- administratief; EVC; Exameninstituten; Financiële dienstverlening; Groothandel; Industrie – Techniek; IT; Klantcontact; Klimaat; Laaggeletterdheid; Learning & Development; Leiderschap; Online leren; Overheid; Persoonlijke effectiviteit; Schoonmaak; Sociaal werk, jeugdzorg en kinderopvang; Talen - NT2; Thuis zorgverpleging en/of medisch en/of alternatieve zorg; Transport en logistiek",Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,0,0,0,
+HQ Werkmaatschappij B.V.,https://hqwerkmaatschappij.nl,Rotterdam,Beursplein 37,3011 AA,2023-10-16,,,,ok,0,0,0,
+Human & Horse Academy,www.humanhorseacademy.com,Kootwijkerbroek,Harskampeerweg 22,3774 JP,2022-03-22,,,,ok,0,0,0,
+IAM Studios B.V.,https://www.stemacteren.nl,Breda,Donauweg 10,1043 AJ,2022-05-10,,,,ok,0,0,0,
+Iber Lengua Taal & Cultuur,www.iberlengua.nl,HAARLEM,A. Hofmanweg 5A,2013 BH,2009-06-01,,,,ok,0,0,0,
+ICM Opleidingen & Trainingen,www.icm.nl,UTRECHT,Joseph Haydnlaan 2,3533 AE,2012-06-01,,,,ok,0,3,3,+post-?hbo -eendaagse|1-?daagse|tweeda
+Idiomas,www.idiomas.nl,Tilburg,Ellen Pankhurststraat 1,5032 MD,2024-10-14,,,,ok,0,0,0,
+IKEV,www.ikev.nl,Overberg,Zandschulperweg 2,3959 AX,2017-02-28,,,,ok,0,0,0,
+IMC Mensontwikkeling,www.mensontwikkeling.nl,Loosdrecht,Oud Loosdrechtsedijk 9,1231 LN,2022-01-03,,,,ok,0,0,0,
+Impact Training & Advies ,www.impacttrainingenadvies.nl,Almelo,Twentepoort Oost 55A,7607 RG,2021-08-06,,,,ok,0,0,0,
+Inclufy Academy,https://inclufy.com/academy,,,,2026-05-04,,,,ok,0,0,0,
+Instituut Mentoris Opleidingen en Trainingen BV,www.instituutmentoris.nl ,Zutphen,Noorderhavenstraat 49,7202 DD,2021-10-19,,,,ok,0,0,0,
+Instytut Jezyka Niderlandzkiego ISN,www.instytutisn.nl,Heijningen,Oude Heijningsedijk 189,4749 RE,2026-06-18,,,,ok,0,0,0,
+Inzigd,www.inzigd.nl,Stramproy,Kroonstraat 12A,6039 AE,2022-01-03,,,,ok,0,0,0,
+IPC Groene Ruimte,https://www.ipcgroen.nl,Arnhem,Koningsweg 35,6816 TG,2022-04-18,,,,ok,0,0,0,
+IPro Training NL,https://iprotraining.nl/,Den Haag,Binckhorstlaan 36 - Unit C 059,2516 BE,2022-01-31,Inburgering; Bouw; ICT; Onderwijs; Techniek; Zorg,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,0,0,0,
+IV Academy,www.iv-experts.com,Veenendaal,Standaardruiter 9 ,3905 PT,2022-04-18,,,,ok,0,0,0,
+IW Nederland,www.iw.nl,Amersfoort,Hardwareweg 15,3821 BL,2022-02-28,,,,ok,0,0,0,
+"IW Noord, Oost & Flevoland ",www.iwnederland.nl,Apeldoorn,Arnhemseweg 107,7331 BD,2022-03-24,,,,ok,0,0,0,
+IW Noord-Holland ,www.iwnederland.nl,Heerhugowaard,W.M. Dudokweg 66,1703 DC,2022-03-24,,,,ok,0,0,0,
+IW Zuid & Midden,www.iwnederland.nl,Breda,Minervum 7051,4817 ZK,2022-03-24,,,,ok,0,0,0,
+IW Zuid- Holland ,www.iwnederland.nl,Rijswijk,Verrijn Stuartlaan 19 ,2288 EK,2022-03-24,,,,ok,0,0,0,
+IW Zuid- oost,www.iwnederland.nl,Roermond,Kerkveldlaan 4,6040 KG ,2022-02-28,,,,ok,0,0,0,
+Ja tegen Nu BV,www.jategennu.nl,Heerlen,Putgraaf 3,6411 GT,2022-02-21,,,,ok,0,0,0,
+JAR Opleidingen,www.jaropleidingen.nl,Alkmaar,James Wattstraat 8,1871 DC,2005-11-01,,,,ok,0,0,0,
+Kenniscentrum Sociaal Domein Opleiden,www.kenniscentrumsociaaldomein.nl,MEPPEL,Blankenstein 410,7943 PH,2017-09-19,,,,ok,0,0,0,
+Kickstart School B.V.,www.kickstartschool.nl,Den Haag,Koninginnegracht 62,2514 AG,2024-02-22,,,,ok,0,0,0,
+KIOM Opleidingen,www.kiom.nl,Veldhoven,Locht 117,5504 RM,2022-02-11,,,,ok,0,0,0,
+Klankpraktijk Sylvia Zijlstra ,https://klankpraktijk.nl,Sneek,Tingietersstraat 8,8601 WJ,2024-02-22,,,,ok,0,0,0,
+Konijn Meubelmakers t.h.o.d.n. Beemster School voor Meubelmaken ,beemsterschoolvoormeubelmaken.nl,Zuidoostbeemster ,Zuiderweg 52,1461 GD ,2022-11-23,,,,ok,0,0,0,
+KTBA Netherlands,https://www.ktba.com/,KAATSHEUVEL,Horst 12,5171 RA,2015-07-22,,,,ok,0,0,0,
+Kusters scholing & training ,https://www.kusters-scholing.nl/,,,,2026-02-02,,,,ok,0,0,0,
+L&D Talent Nederland B.V. (vh EMC Advies),www.houseoftalents.nl,Utrecht,Orteliuslaan 855,3528 BE,2012-10-01,,,,ok,0,0,0,
+Language Switch,www.languageswitch.eu,Vlodrop,Etsberg 18,6063 NH,2021-11-29,,,,ok,0,0,0,
+Lasconsult opleidingen BV,www.lasconsult.nl,Heerenveen,De Ynfeart 7-209,8447 GM,2025-06-10,,,,ok,0,0,0,
+Lemion B.V.,www.boom.nl,Amsterdam,Prinsengracht 747,1017 JX,2023-07-20,,,,ok,0,0,0,
+Lest Best,www.lestbest.nl,UTRECHT,Newtonlaan 215,3584 BH,2019-03-20,,,,ok,0,0,0,
+Letsel Opleidingen B.V.,https://letselopleidingen.nl/,Utrecht,Europalaan 500,3026 KS,2020-03-24,,,,ok,0,0,0,
+Loo van Eck,https://lve.nl/,EDE,Pascalstraat 28,6716 AZ,2019-10-03,,,,ok,0,0,0,
+Loof training en advies,www.looftrainingen.nl,BERGEN NH,Eeuwigelaan 3,1861 CL,2013-01-28,,,,ok,0,0,0,
+LTC/ Language Training Centre,www.ltc.nl,Nijmegen,Prins Hendrikstraat 2,6521 AW,2009-06-01,,,,ok,0,0,0,
+Maatschap Stap Brabant ,www.stapbrabant.nl,Gemonde ,Loopstraat 2,5293 NA ,2022-08-31,,,,ok,0,0,0,
+Maxxecure,www.maxxecure.nl,AMSTERDAM,Tweede Jan Steenstraat 84H,1074 CR  ,2016-08-01,,,,ok,0,0,0,
+Maxxecure Academy,www.maxxecure.nl,AMSTERDAM,Tweede Jan Steenstraat 84H,1074 CR,2016-08-01,,,,ok,0,0,0,
+MBO4Nederland,www.mbo4nederland.nl,HILLEGOM,Kwekerij 6,2182 AG,2016-01-18,Inburgering; Bouw; ICT; Onderwijs; Techniek; Zorg,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,0,0,0,
+Melearning Onderwijs B.V. ,https://melearning.nl/,AMSTERDAM,Lauriergracht 116-S,1016 RR,2020-07-23,,,,ok,0,0,0,
+Moovs,www.moovs.nl,AMSTERDAM,Tweede Jan Steenstraat 84H,1074 CR,2016-08-01,,,,ok,0,0,0,
+Moovs Academy,www.moovs.nl,AMSTERDAM,Tweede Jan Steenstraat 84H,1074 CR,2016-08-01,,,,ok,0,0,0,
+MP Beauty Group BV (M P Brows ),www.mp-brows.nl,Arnhem,Rijnkade 36,6811HA,2022-04-04,,,,ok,0,0,0,
+Mudita Academie,www.mudita-academie.nl,WINTERSWIJK-WOOLD,Schoolweg 7,7108 BM,2015-11-06,,,,ok,0,0,0,
+MYOS Opleidingen,http://myosopleidingen.nl,Utrecht ,Otto Hahnweg 56,3542 AX,2022-03-22,,,,ok,0,0,0,
+Nationale Beroepsopleiding Zwemonderwijs BV (NBZ),www.nbz.nl,Oirschot,De Scheper 312,5688 HP,2021-02-18,Bouw; ICT; Onderwijs; Techniek; Zorg,,,ok,0,0,0,
+Nederlands de Baas b.v.,https://nederlandsdebaas.nl/,Nijmegen,Couwenbergstraat 143,6535 RX,2022-04-18,Inburgering; Bouw; ICT; Onderwijs; Techniek; Zorg,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,0,0,0,
+Nederlandse Academie voor Beeldcreatie (NAVB),www.navb.nl,APELDOORN,Spoorstraat 27,7311 PE,2013-03-29,,,,ok,0,0,0,
+NedLes,www.nedles.nl,AMSTERDAM,Derde Oosterparkstraat 271,1092 EA,2018-11-02,,,,ok,0,0,0,
+New Heroes BV,www.newheroes.nl,Zaltbommel,Van Heemstraweg West 5,5301PA,2020-09-30,,,,ok,0,0,0,
+NLtraining,www.nltraining.nl,AMSTERDAM,Tt. Vasumweg 122,1033 SH,2019-02-06,,,,ok,0,0,0,
+Nobbe Mieras trainingen B.V. ,www.nobbemieras.nl,Arnhem,De la Reijstraat 2,6814 AE,2019-02-25,,,,ok,0,4,4,+beoordeling +meerdaagse leergang|leerga -eendaagse|1-?daagse|tweeda -incompany training(?!s?pro
+Noorda en Co,www.noordaenco.nl,AMSTERDAM,Cannenburg 36,1081 HA,2011-01-04,,,,ok,0,0,0,
+Normec Foodcare Training & Education B.V,www.normecfoodcare.com,,Balkweg 3,5232 BT,2021-12-05,,,,ok,0,0,0,
+oCaro (holding),www.ocaro.nl,Loenen,Hoofdweg 74,7371 AK,2020-08-10,,,,ok,0,0,0,
+oCaro college bv,www.ocaro.nl,Loenen,Hoofdweg 74,7371 AK,2020-09-30,,,,ok,0,0,0,
+OCICT,www.ocict.nl,Apeldoorn,Jean Monnetpark 43,7336 BB,2020-10-13,Inburgering; Bouw; ICT; Onderwijs; Techniek; Zorg,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,0,0,0,
+Odyssee,www.odyssee-groep.nl,DOORN,Amersfoortseweg 98,3941 EP,2013-01-01,,,,ok,0,0,0,
+Open Studio,www.openstudio.nl,Amsterdam,Keienbergweg 109 B,1101 GG,2010-11-20,,,,ok,0,0,0,
+Opleidingsinstituut Beeckestijn Business School,www.beeckestijn.org ,Leusden ,Leusderend 30,3832 RC ,2020-09-01,,,,ok,0,3,3,+post-?hbo -eendaagse|1-?daagse|tweeda
+PAIR,www.pair-taal.nl,Utrecht ,Europalaan 2,3526 KS,2022-10-20,,,,ok,0,0,0,
+Pebblz,www.pebblz.nl,DORDRECHT,Calandstraat 24 B,3316 EA,2018-08-24,,,,ok,0,0,0,
+Praktijkcampus B.V. (vh Leerbouwen),www.praktijkcampus.nl,Groningen,Euvelgunnerweg 25a,9723 CV,2022-03-28,,,,ok,0,0,0,
+Précon Consulting Group,www.precongroup.com,BUNNIK,Regulierenring 16a,3981 LB,2014-10-21,,,,ok,0,0,0,
+Psy-zo! Onderwijs,www.psy-onderwijs.nl,Groningen,Zernikepark 12,9747 AN,2022-05-03,,,,ok,0,0,0,
+Quality Communication Taaltrainingen B.V.,www.qualitycommunication.nl,Voorthuizen,Tromplaan 10,3781 TE,2022-01-23,,,,ok,0,0,0,
+Real Estate Business School (REBS),www.rebs.nl,HILVERSUM,Larenseweg 32 A3, 1221 CN,2017-05-15,,,,ok,0,0,0,
+REASeuro,www.reaseuro.com,Riel,Vijfhuizenbaan 1b,5133 NH,2019-07-01,,,,ok,0,0,0,
+RedFoxBlue B.V.,www.redfoxblue.nl,Haarlem,Wagenweg 204,2012 NM ,2022-02-11,,,,ok,0,0,0,
+Response Instituut B.V.,https://response-instituut.nl/ ,Venlo,Venrayseweg 32,5928NZ,2021-11-29,,,,ok,0,0,0,
+RMMBR bv,www.rmmbr.com,AMSTERDAM,Hoogoorddreef 56a,1100 BE,2016-05-18,Inburgering; Bouw; ICT; Onderwijs; Techniek; Zorg,,,ok,0,0,0,
+SBI Formaat,www.sbi.nl,DOORN,Amersfoortseweg 98,3941 EP,2013-01-01,,,,ok,0,0,0,
+SILK PMU,https://silkpmu.nl,Huissen,Langestraat 31,6831 AL,2025-07-17,,,,ok,0,3,3,+portfolio +crkbo -eendaagse|1-?daagse|tweeda
+Siss Trainingen B.V. ,www.sisstrainingen.nl,Reeuwijk,Korssendijk 17,2811 HK,2022-04-04,,,,ok,0,1,1,+crkbo -incompany training(?!s?pro
+Sociaal Opleidingsinstituut,https://so-i.nl,Amsterdam,Bastenakenstraat 111,1066JB,2023-05-17,,,,ok,0,1,1,+crkbo -incompany training(?!s?pro
+Sonnevelt Opleidingen B.V.,www.sonneveltopleidingen.nl,Hedel,Architronlaan 2-60A,5321JJ,2014-12-10,,,,ok,0,0,0,
+SpiralTrain ,www.spiraltrain.nl,Houten,"Standerdmolen 10, 2e verdieping",3995 AA,2021-08-05,,,,ok,0,0,0,
+Startel,www.startel.nl,Drachten,Kraaiheide 17,9202 PC,2021-01-21,,,,ok,0,0,0,
+Stavoor,www.stavoor.nl,Helvoirt,Guldenberg 12,5268 KR,2013-01-01,,,,ok,0,0,0,
+Stichting Actuarieel Instituut,www.actuarieelinstituut.nl,UTRECHT,Groenewoudsedijk 80,3528 BK,2018-05-02,,,,ok,0,0,0,
+Stichting Codam,www.codam.nl,Amsterdam,Kattenburgerstraat 5 (gebouw 039),1018JA,2021-01-27,,,,ok,0,0,0,
+Stichting ICT Tribe Almere,https://icttribe.nl,Almere,Straat van Florida 1,1334 PA ,2026-02-20,,,,ok,0,0,0,
+Stichting Klassieke Academie ,www.klassiekeacademie.nl,Groningen,Akerkhof 43 c,9712BC,2022-04-18,Inburgering; Bouw; ICT; Onderwijs; Techniek; Zorg,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,0,0,0,
+Stichting Leer Unique ,www.leerunique.nl,Rotterdam,Griendwerkerstraat 52,3068 GZ,2023-02-01,,,,ok,0,0,0,
+Stichting Medische Opleidingen Nederland,www.medischeopleidingen.nl,Rotterdam,Berglustlaan 44,3054 BJ,2022-03-14,,,,ok,0,0,0,
+Stichting Railcenter,www.railcenter.nl,Amersfoort,Soesterweg 244,3812 BH,2026-04-16,,,,ok,0,0,0,
+Stichting Wijnacademie,www.wijnacademie.nl,Soesterberg,Amersfoortsestraat 18,3769 AR ,2022-06-13,,,,ok,0,0,0,
+STODT,www.stodt.nl,HENGELO,Gieterij 212,7553 VZ,2010-04-29,,,,ok,0,0,0,
+Taalcentrum-VU,www.taalcentrum-vu.nl,AMSTERDAM,De Boelelaan 1177,,2009-06-01,,,,ok,0,3,3,+toetsing -eendaagse|1-?daagse|tweeda
+Taalkracht,www.taalkracht.com,TERNEUZEN,Axelsestraat 76,4537 AM,2019-12-13,,,,ok,0,0,0,
+Taalthuis,www.taalthuis.nl,Haarlem,Lorentzplein 25,2012 HH,2022-03-22,,,,ok,0,1,1,+crkbo -incompany training(?!s?pro
+Talent in Huis bv,www.talentinhuis.nl,UTRECHT,"Lumax gebouw, Ondiep Zuidzijde 6",3551 BW,2019-05-17,,,,ok,0,0,0,
+Teamchange,www.teamchange.nl,Amsterdam,Oosterdokskade 61,1011 DL,2022-04-18,,,,ok,0,0,0,
+Teamwork Curacao,www.teamworkcaribbean.com,WILLEMSTAD - CURACAO,Scharlooweg 75, ,2017-07-20,,,,ok,0,0,0,
+TechGrounds,https://techgrounds.nl/,Reeuwijk,Burgemeester Brachlaan 33,2811 BP,2020-10-30,,,,ok,0,0,0,
+Thim van der Laan B.V.,www.thim.nl,NIEUWEGEIN,Newtonbaan 6,3439 NK,2017-07-06,,,,ok,0,0,0,
+TopTaal,www.toptaal.nl,AMSTERDAM,Postbus 56808,1040 AV,2009-06-01,,,,ok,0,0,0,
+TSH vakopleidingen,www.tshvakopleidingen.nl,Emmen,Nijbracht 158,7821 CE,2020-09-30,,,,ok,0,0,0,
+TWST,www.twst.nl,NAARDEN,Adriaan Dortsmanplein 3,1411 RC,2019-01-28,,,,ok,0,0,0,
+UL-Team,www.ul-team.nl,CULEMBORG,Anthonie van Diemenstraat 19,4104 AD,2014-02-01,,,,ok,0,0,0,
+UNLP,www.unlp.nl,'s Graveland,Noordereinde 56,1243 JJ,2021-11-29,,,,ok,0,3,3,+post-?hbo -eendaagse|1-?daagse|tweeda
+V-Kam Education B.V.,www.v-kam.nl ,Genemuiden,Spoelstraat 5n,8281 JT,2022-03-22,,,,ok,0,17,17,+\bscriptie\b +eindopdracht +portfolio +beoordeling +studiebelasting +diploma -\bvca\b -\bbhv\b -certificaat van deelname|b -eendaagse|1-?daagse|tweeda -incompany training(?!s?pro
+VA School,www.vaschool.nl,Leiden,Haagweg 300,2324 NC,2022-03-22,,,,ok,0,0,0,
+Vakschool Zorgwacht,www.zorgwacht.nl,UTRECHT,Zamenhofdreef 5,3562 JT,2017-03-10,Inburgering; Bouw; ICT; Onderwijs; Techniek; Zorg,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,0,0,0,
+Vakwijs BV (vh Goflex),www.vakwijs.nl,SCHIEDAM,Daniel Pichotstraat 10,3115 JB,2013-06-21,Inburgering,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,0,4,4,+studiebelasting +diploma -\bvca\b
+VBOT bv,https://vbot.nl,Zoetermeer,Orfeoschouw 24,2726 JD,2024-12-18,,,,ok,0,0,0,
+VDS Training Consultants,www.vds.nl,Utrecht,Euclideslaan 257,3584 BV,2013-01-01,,,,ok,0,0,0,
+Verder in Techniek,https://www.verderintechniek.nl/,Doetinchem,Fabriekstraat 42,7005 AR,2021-11-29,,,,ok,0,0,0,
+Vijfhart IT- Trainingen B.V.,www.vijfhart.nl,Velp,Arnhemsestraatweg 33,6881 ND,2022-02-21,,,,ok,0,0,0,
+Volksuniversiteit Utrecht ,www.volksuniversiteitutrecht.nl,Utrecht ,Nieuwegracht 41,3512 LE,2023-01-02,,,,ok,0,0,0,
+Volwassenen College,www.volwassenencollege.nl,Tytsjerk,Lytse Geast 69,9255 LJ,2020-04-17,,,,ok,0,0,0,
+We Care College,https://wecarecollege.nl ,Helmond,Kanaaldijk ZW 67,5707 LC,2024-06-27,,,,ok,0,0,0,
+We Support W. BV,https://equals.nl,Amsterdam,Keizersgracht,1016 EW,2025-01-08,,,,ok,0,0,0,
+Weld Point,www.weldpoint.nl,Beek,Schuttersstraat 27 D & E,6191 RZ,2021-11-29,,,,ok,0,0,0,
+WerkendLeren B.V.,www.werkendleren.nl,ALMELO,Burgemeester Raveslootsingel 2,7607 GK,2018-05-22,,,,ok,0,0,0,
+Werkvloertaal ,www.werkvloertaal.nl,HELMOND,Pastoor van Leeuwenstraat 22a,5701 JV,2018-12-06,Inburgering,,,ok,0,0,0,
+Yellow Research,www.yellowresearch.nl,AMSTERDAM,Veemkade 240,1019 HD ,2015-01-05,,,,ok,0,0,0,
+Zakelijk schrijven,www.zakelijkschrijven.nl,Den Haag,Bezuidenhoutseweg 187,2594 AH,2020-11-16,,,,ok,0,0,0,
+Zelforganisatie Fabriek B.V.,www.zelforganisatiefabriek.nl,Amsterdam ,HJE Wenckebachweg 123,1096 AM,2022-09-15,,,,ok,0,0,0,
+Ziggurat Taaltrainingen,www.ziggurattaaltrainingen.nl,GRONINGEN,Atoomweg 2,9743 AK,2013-01-01,Inburgering; Bouw; ICT; Onderwijs; Techniek; Zorg,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,0,0,0,
+Academie voor Vastgoed,www.academievoorvastgoed.nl,Utrecht,Orteliuslaan 951,3528 BE,2026-02-20,,,,ok,-1,10,11,+toetsing +studiebelasting +herkansing +diploma -het oranje kruis|certech|i -exameninstituut|extern exa
+Boerma Instituut International Floral Design School Holland,www.boerma.nl,AALSMEER,Legmeerdijk 227,1432 KA,2010-08-25,,,,ok,-1,2,3,+beoordeling -eendaagse|1-?daagse|tweeda
+Brain Box Mediatraining BV,https://www.brain-box.nl/,HILVERSUM,Mozartlaan 27c,1217 CM,2018-05-18,,,,ok,-1,2,3,+diploma -eendaagse|1-?daagse|tweeda
+Coöperatie Schoonderwoerd en Partners,https://schoonderwoerd.nl/,Utrecht,Park Oog in Al 1,3533 HE,2021-11-15,,,,ok,-1,0,1,-incompany training(?!s?pro
+De Corporatie Academie B.V.,https://www.decorporatie-academie.nl,Nijkerk,Berencamperweg 8,3861 MC,2024-03-28,,,,ok,-1,0,1,-incompany training(?!s?pro
+DeZorgacademy,www.dezorgacademy.nl,Zeist ,Driebergseweg 16C,3708 JB,2022-09-26,,,,ok,-1,4,5,+studiebelasting +meerdaagse leergang|leerga -certificaat van deelname|b
+Excellent Trainingen ,www.excellenttrainers.nl,APELDOORN,Gardenierslaan 3,7314 CS,2020-10-10,,,,ok,-1,8,9,+praktijkopdracht +studiebelasting +diploma -certificaat van deelname|b -eendaagse|1-?daagse|tweeda -incompany training(?!s?pro
+Extra Trainers,www.extratrainers.nl,Almere,Zinkstraat 1d,1362 JX,2022-02-11,,,,ok,-1,2,3,+beoordeling -eendaagse|1-?daagse|tweeda
+Fairfield,www.fair-field.nl,EINDHOVEN,Luchthavenweg 81,5657 EA,2017-12-01,,,,ok,-1,0,1,-incompany training(?!s?pro
+FiAC,www.fiac.nl,NOORDWIJKERHOUT,Gieterij 50,2211 XK,2010-06-03,,,,ok,-1,6,7,+beoordeling +studiebelasting +meerdaagse leergang|leerga -\bbhv\b -bedrijfshulpverlening
+FOI B.V.,www.foi.nl,Bilthoven,Rembrandtlaan 1B,3723 BG,2024-01-01,,,,ok,-1,4,5,+beoordeling +diploma -certificaat van deelname|b
+GITP Ontwikkeling BV (vh training en opleiding),www.gitp.nl,ROTTERDAM,Oostmaaslaan 53,3063 AN,2013-01-01,,,,ok,-1,0,1,-incompany training(?!s?pro
+Gundelach Organisatieadvies B.V.,www.gundelach.nl,Den Haag,"Zeestraat 100, Z3-4",2518 AD,2023-08-16,,,,ok,-1,0,1,-incompany training(?!s?pro
+Helder Groep Veenendaal B.V.,https://www.wijzijnhelder.nl,Veenendaal,Eikenlaan 5,3901 XA,2025-03-13,,,,ok,-1,0,1,-incompany training(?!s?pro
+IPOL BV,www.ipol.nl,ROTTERDAM,Edmond Hellenraadstraat 100,3067 NT,2025-06-10,,,,ok,-1,4,5,+diploma +meerdaagse leergang|leerga -exameninstituut|extern exa
+Language Helps,www.languagehelps.nl/nl/,Amsterdam,Keizersgracht 391 a,1016 EJ,2023-04-13,,,,ok,-1,0,1,-incompany training(?!s?pro
+Language Institute Regina Coeli,www.reginacoeli.nl,VUGHT,Martinilaan 12,5262 BR,2009-06-01,,,,ok,-1,0,1,-incompany training(?!s?pro
+Laurentius College,www.stewardesscollege.nl,SCHIPHOL,Evert van de Beekstraat 39,1118 CL,2009-11-17,,,,ok,-1,2,3,+diploma -eendaagse|1-?daagse|tweeda
+Lexicon Trainingen,www.lexicon.nl,HAARLEM,Mauritsstraat 1,2011 VN,2012-09-07,,,,ok,-1,0,1,-incompany training(?!s?pro
+Lighting Design Academy (handelsnaam Poncius),www.lightingdesignacademy.org,Amersfoort,Grote Haag 11,3811 NH,2022-03-22,,,,ok,-1,2,3,+diploma -eendaagse|1-?daagse|tweeda
+Merlijn B.V.,www.merlijngroep.nl,'s-Hertogenbosch,Veemarktkade 8 ruimte 1019,5222 AE,2026-05-11,,,,ok,-1,2,3,+beoordeling -eendaagse|1-?daagse|tweeda
+NIOW De Taal- en Functiegerichte trainingen ,www.niow.nl,ZEIST,De Dreef 21, ,2021-09-20,,,,ok,-1,0,1,-incompany training(?!s?pro
+NIOW De Taal- en tekstexperts,www.niow.nl,ZEIST,De Dreef 21,3706 BR,2016-04-01,,,,ok,-1,0,1,-incompany training(?!s?pro
+Orlemans & Orlemans,www.orlemans.nl,NIJMEGEN,St. Annastraat 291,6525 GT,2013-01-01,,,,ok,-1,0,1,-incompany training(?!s?pro
+Patagonia Opleidingen,https://www.patagonia-opleidingen.com/,Hendrik-Ido-Ambacht,Langesteijn 110,3342 LG  ,2020-02-25,,,,ok,-1,0,1,-incompany training(?!s?pro
+Regina Coeli Language Courses B.V.,www.reginacoeli.nl,Vught,Martinilaan 12,5262 BR,2009-05-19,,,,ok,-1,0,1,-incompany training(?!s?pro
+Schoonderwoerd Academy B.V.,https://schoonderwoerd.nl/,Utrecht,Park Oog in Al 1,3533 HE,2024-08-22,,,,ok,-1,0,1,-incompany training(?!s?pro
+Stichting miMakkus,www.mimakkus.nl,EINDHOVEN,Iepenlaan 40,5616 NS,2015-01-01,,,,ok,-1,0,1,-incompany training(?!s?pro
+Stichting Wateropleidingen,www.wateropleidingen.nl,Nieuwegein,Groningenhaven 7,3430 BK,2022-03-11,,,,ok,-1,2,3,+beoordeling -eendaagse|1-?daagse|tweeda
+Subconscious Impact BV,https://www.subconsciousimpact.com,Baarn,Cantonlaan 6,3742CH,2022-05-03,,,,ok,-1,2,3,+studiebelasting -eendaagse|1-?daagse|tweeda
+TA academie,www.ta-academie.nl,Zeist,Arnhemse Bovenweg 140,3708 AH,2022-03-22,,,,ok,-1,2,3,+meerdaagse leergang|leerga -eendaagse|1-?daagse|tweeda
+Train2work,www.train2work.nl,Rijswijk,Lange Kleiweg 14,2288 GK,2016-04-19,Inburgering,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,-1,2,3,+beoordeling -eendaagse|1-?daagse|tweeda
+Transparant Training,www.transparanttraining.nl,BARENDRECHT,Noldijk 108,2991 VL,2018-01-01,,,,ok,-1,6,7,+portfolio +leeruitkomsten -\bbhv\b -ehbo
+Bureau Zuidema,www.zuidema.nl,LEUSDEN,Olmenlaan 4,3833 AV,2015-01-01,,,,ok,-2,2,4,+beoordeling -eendaagse|1-?daagse|tweeda -incompany training(?!s?pro
+Danner & Danner,www.dannerendanner.nl,HILVERSUM,"Gebouw Noorderhaeve, Noorderweg 68",1221 AB,2019-01-01,,,,ok,-2,2,4,+diploma -\bvca\b
+Debatrix,www.debatrix.com,Rotterdam,Westersingel 109,3015 LD,2022-03-08,Inburgering; Bouw; ICT; Onderwijs; Techniek; Zorg,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,-2,2,4,+beoordeling -eendaagse|1-?daagse|tweeda -incompany training(?!s?pro
+ENVOZ,www.envoz.nl,BARENDRECHT,Donk 7A,2991 LE,2008-11-04,,,,ok,-2,2,4,+diploma -\bvca\b
+HDGM,www.hdgm.nl,WOUWSE PLANTAGE,Bleijdenhoeksestraat 3,4725 SW,2019-01-23,,,,ok,-2,1,3,+crkbo -ehbo
+Het Effectieve Werken B.V.,www.heteffectievewerken.nl,Tubbergen,Velduil 10,7651 GM,2022-06-28,,,,ok,-2,6,8,+praktijkopdracht +beoordeling -certificaat van deelname|b -eendaagse|1-?daagse|tweeda
+Inventas ,https://inventas.nl,Nuenen,Spegelt 74,5674 CD,2023-08-03,Inburgering; Bouw; ICT; Onderwijs; Techniek; Zorg,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,-2,2,4,+beoordeling -eendaagse|1-?daagse|tweeda -incompany training(?!s?pro
+Kader Academy B.V.,www.kader.nl,Zeist,Dijnselburgerlaan 2,3705 LP,2022-03-11,,,,ok,-2,2,4,+diploma -\bvca\b
+Landelijk Instituut Vertrouwenspersonen,https://www.livp.nl,Amersfoort,Agolweg 15,3821 BG,2022-02-25,,,,ok,-2,4,6,+crkbo +toetsing -het oranje kruis|certech|i
+Logavak Opleidingsgroep,www.logavak.nl,AMSTERDAM ZUID-OOST,Spaklerweg 79,1114 AE,2013-08-13,,,,ok,-2,4,6,+\boer\b +studiebelasting -het oranje kruis|certech|i
+Quercus Energy Technicians BV ,https://www.qet.nl ,Ermelo ,Harderwijkerweg 141,3852 AB,2023-01-30,,,,ok,-2,2,4,+diploma -\bbhv\b
+Stichting Vakopleiding Techniek,www.vakopleidingtechniek.nl,CUIJK,Het Riet 7,5431 NL,2012-02-20,,,,ok,-2,2,4,+diploma -\bvca\b
+Stichting Vakopleidingen Metaal West-Brabant ,https://www.vakopleidingmetaal.nl/ ,Oudenbosch,Bosschendijk 219,4731 DD,2024-07-16,,,,ok,-2,2,4,+diploma -\bvca\b
+VCANederland,www.vcanederland.nl,APELDOORN,Wilmersdorf 50,7327 AC,2016-04-26,,,,ok,-2,2,4,+diploma -\bvca\b
+Apis Academy B.V.,https://apis-academy.nl,Nijkerk,Westkadijk 10c,3861 MB,2025-02-21,,,,ok,-3,2,5,+studiebelasting -certificaat van deelname|b
+ARQ IVP,https://ivptraining.arq.org/,DIEMEN,Nienoord 5,1112 XE,2010-10-01,,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,-3,1,4,+crkbo -eendaagse|1-?daagse|tweeda -incompany training(?!s?pro
+B-Mind,https://www.bmind.nl/,Eindhoven,Strausslaan 1,5653 AJ,2022-04-18,,,,ok,-3,0,3,-eendaagse|1-?daagse|tweeda
+Betonvereniging,www.betonvereniging.nl,Gouda,Tielweg 3,2803 PK,2024-10-14,,,,ok,-3,0,3,-eendaagse|1-?daagse|tweeda
+Data Science Partners,https://datasciencepartners.nl,Hilversum,Larenseweg 216,1223 AB,2022-02-21,,,,ok,-3,0,3,-eendaagse|1-?daagse|tweeda
+De Bewustzijnsfabriek,https://debewustzijnsfabriek.nl/,,,,2026-05-21,,,,ok,-3,0,3,-eendaagse|1-?daagse|tweeda
+EFTiN,www.eftin.nl,Eindhoven,Jacob Reviuslaan 5,5644 TP,2022-08-31,,,,ok,-3,0,3,-eendaagse|1-?daagse|tweeda
+Jeugdprofessionals Nederland Opleiden,https://www.jeugdprofessionalsnederland.nl/,MEPPEL,Blankestein 410,7943 PH,2017-09-19,,,,ok,-3,2,5,+studiebelasting -certificaat van deelname|b
+Learncare Academy,www.learncare.nl,Zeewolde,Gildenveld 24D,3892DG,2017-11-27,,,,ok,-3,4,7,+studiebelasting +diploma -het oranje kruis|certech|i -incompany training(?!s?pro
+Nederlands Debat Instituut,www.debatinstituut.nl,HILVERSUM,Frans Halslaan 57,1213 BK,2017-11-09,,,,ok,-3,2,5,+meerdaagse leergang|leerga -certificaat van deelname|b
+Robin Stevens Training,www.robin-stevens.nl,Putten,Kerkplein 35,3881 DH,2023-03-27,,,,ok,-3,3,6,+crkbo +diploma -certificaat van deelname|b -incompany training(?!s?pro
+Shake Academy (vh Mark Bongers Academy),www.markbongers.nl,Uden,Loopkantstraat 11,5405 NB,2022-03-22,,,,ok,-3,0,3,-eendaagse|1-?daagse|tweeda
+Slouwerhof Academy,www.slouwerhof.nl,AKKRUM,De Parse 2,8491 PJ,2022-05-31,,,,ok,-3,0,3,-ehbo
+Speechen.nl,www.speechen.nl,Amsterdam,Schakelstraat 2,1014 AW,2022-10-25,,,,ok,-3,0,3,-eendaagse|1-?daagse|tweeda
+TalentFirst Nederland,www.talentfirst.nl,Amsterdam,Javakade 77,1019SZ,2021-08-25,,,,ok,-3,0,3,-eendaagse|1-?daagse|tweeda
+Total Health Opleidingen BV,www.totalhealth.eu,Breda,Weidehek 34,4824 AS,2026-02-23,,,,ok,-3,0,3,-eendaagse|1-?daagse|tweeda
+Vijfhart IT-Opleidingen,www.vijfhart.nl,Velp,Arnhemsestraatweg 33,6881ND,2021-06-10,,,,ok,-3,0,3,-eendaagse|1-?daagse|tweeda
+@The Academy ,www.the-academy.nl,Eindhoven,Paradijslaan 40,5611KP,2020-11-13,Inburgering,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,-4,2,6,+studiebelasting -certificaat van deelname|b -incompany training(?!s?pro
+ARTRA,www.artra.nl,ARNHEM,"Utrechtseweg 310, gebouw B42", 6812 AR,2019-04-10,Inburgering,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,-4,0,4,-eendaagse|1-?daagse|tweeda -incompany training(?!s?pro
+ASPD Scholing,www.aspdscholing.nl,WIJNANDSRADE,Hellebroekerweg 41,6363 AB,2018-01-01,,,,ok,-4,0,4,-\bbhv\b
+Babel,www.babel.nl,Utrecht,Nieuwegracht 94,3512 LX,2014-02-14,,,,ok,-4,2,6,+beoordeling -certificaat van deelname|b -incompany training(?!s?pro
+@The Academy btw vrij bv,www.the-academy.nl,Eindhoven,Paradijslaan 40,5611KP,2024-02-07,Inburgering,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,-4,2,6,+studiebelasting -certificaat van deelname|b -incompany training(?!s?pro
+Edumia B.V.,https://www.edumia.nl,'s-Hertogenbosch,Hambakenwetering 1,5231 DD,2021-01-07,Inburgering; Bouw; ICT; Onderwijs; Techniek; Zorg,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,-4,0,4,-eendaagse|1-?daagse|tweeda -incompany training(?!s?pro
+Flux Groep B.V.,https://academy.flux.nl/,AMSTERDAM,Krijn Taconiskade 282,1087 HW,2020-10-13,,,,ok,-4,0,4,-eendaagse|1-?daagse|tweeda -incompany training(?!s?pro
+INT B.V.,www.intservices.nl,Vlaardingen,James Wattweg 20,3133 KK,2022-03-14,,,,ok,-4,0,4,-\bvca\b
+Kiwa Expert BV,https://www.kiwa.com/nl/nl/markten/opleiding-en-training/ ,Apeldoorn,Wilmersdorf 50,7327 AC,2024-01-01,,,,ok,-4,6,10,+portfolio +leeruitkomsten -\bvca\b -het oranje kruis|certech|i
+Kiwa Training,www.kiwa.com,Apeldoorn,Wilmersdorf 50,7327 AC,2021-07-06,,,,ok,-4,2,6,+portfolio -het oranje kruis|certech|i
+Kiwa Training & Development,https://www.kiwa.com/nl/nl/markten/opleiding-en-training/ ,Apeldoorn,Wilmersdorf 50,7327 AC,2023-12-01,,,,ok,-4,6,10,+portfolio +leeruitkomsten -\bvca\b -het oranje kruis|certech|i
+MedischInstituut (handelsnaam Instituut Memo),medischinstituut.nl,Zoetermeer ,Storkstraat 6,2722 NN,2016-09-02,Inburgering,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,-4,3,7,+crkbo +diploma -\bbhv\b -ehbo
+Molijn Training,www.molijntraining.nl,Utrecht,Daltonlaan 100,3584 BJ,2014-06-27,,,,ok,-4,0,4,-eendaagse|1-?daagse|tweeda -incompany training(?!s?pro
+Purple Monkey Breinonderwijs,www.purplemonkey.nl,Vleuten,Nieuwe Vaart 1c,3451 AH,2024-06-18,,,,ok,-4,0,4,-eendaagse|1-?daagse|tweeda -incompany training(?!s?pro
+SkillsTown,https://www.skillstown.com/,EINDHOVEN,Bogert 31-14,5612 LX,2018-08-16,,,,ok,-4,0,4,-\bbhv\b
+STE Languages,www.ste.nl,EINDHOVEN,Aalsterweg 3,5615 CA,2009-06-01,,,,ok,-4,2,6,+eindtoets -certificaat van deelname|b -incompany training(?!s?pro
+Taalswitch BV,www.taalswitch.nl,Enschede,Hengelosestraat 60,7514 AJ,2022-04-18,,,,ok,-4,0,4,-\bvca\b
+Talen Training Centrum B.V.,https://talentraining.nl,Soest,Burg. Grothestraat 61,3761 CL,2023-12-28,,,,ok,-4,0,4,-\bvca\b
+VHIC (Van Heijst Information Consulting) Faculty B.V.,www.vhic.nl,RIJSWIJK,Polakweg 23,2288 GG,2018-06-11,,,,ok,-4,4,8,+studiebelasting +meerdaagse leergang|leerga -certificaat van deelname|b -eendaagse|1-?daagse|tweeda
+Westhaghe Nederland BV,www.westhaghe.com,Amsterdam,Kingsfordweg 151,1043 GR,2022-03-22,,,,ok,-4,2,6,+beoordeling -certificaat van deelname|b -incompany training(?!s?pro
+Wilde Kastanje Training & Opleiding,www.wildekastanje.nl,CULEMBORG,Goilberdingerstraat 2,4101 BP,2011-02-03,Inburgering; Bouw; ICT; Onderwijs; Techniek; Zorg,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,-4,2,6,+beoordeling -certificaat van deelname|b -incompany training(?!s?pro
+YEARTH Academy,www.yearth.nl,NAARDEN,Gooimeer 9,1411 DD,2016-11-01,,,,ok,-4,0,4,-eendaagse|1-?daagse|tweeda -incompany training(?!s?pro
+Ynnergy,www.ynnergy.nl,Den Bosch,Vivaldistraat 35,5216EK,2022-03-28,,,,ok,-4,1,5,+crkbo -certificaat van deelname|b
+B2B opleidingen B.V.,www.b2b-opleidingen.nl,Helmond,Basstraat 48,5702 SH,2026-06-03,"Inburgering; Bouw; ICT; Onderwijs; Techniek; Zorg; (Zakelijke) dienstverlening; Agrarisch en groen; Autobranche; Beveiliging; Coaching; Cultuur, sport en recreatie; Cybersecurity; Economisch- administratief; EVC; Exameninstituten; Financiële dienstverlening; Groothandel; Industrie – Techniek; IT; Klantcontact; Klimaat; Laaggeletterdheid; Learning & Development; Leiderschap; Online leren; Overheid; Persoonlijke effectiviteit; Schoonmaak; Sociaal werk, jeugdzorg en kinderopvang; Talen - NT2; Thuis zorgverpleging en/of medisch en/of alternatieve zorg; Transport en logistiek",Drenthe; Flevoland; Groningen; Overijssel; Zeeland,Marktgroep Learning & Development; Marktgroep VCA en SOG; Opleiders actief in de techniek,ok,-5,0,5,-\bvca\b -incompany training(?!s?pro
+Continue Services VOF,https://www.continue-ct.nl,Schimmert,Nieuwstraat 11B,6333AN,2022-05-03,,,,ok,-5,2,7,+diploma -\bbhv\b -eendaagse|1-?daagse|tweeda
+E-WISE/CME-online v.o.f.,www.cme-online.nl,UTRECHT,Janssoniuslaan 40,3528 AJ,2014-08-05,,,,ok,-5,0,5,-certificaat van deelname|b
+ITPH Academy GBO B.V.,https://itph-academy.nl/,'t HARDE,Koekoeksweg 3,8084 GN ,2024-02-12,,,,ok,-5,0,5,-certificaat van deelname|b
+NIPA Opleidingen,www.nipaopleidingen.nl,ASTEN,Ommelseweg 48,5721 WV,2016-01-04,,,,ok,-5,2,7,+diploma -\bbhv\b -ehbo
+Zorg & Werk Academy,www.zorgenwerk.nl,EDE,Galvanistraat 1,6716 AE,2014-04-14,,,,ok,-5,0,5,-certificaat van deelname|b
+EduCenter Opleidingen,www.educenteropleidingen.nl,WOUDENBERG,Voskuilerweg 49b,3931 MV,2013-10-10,,,,ok,-6,2,8,+diploma -\bvca\b -\bbhv\b
+Kenniscentrum Noodverlichting,https://kenniscentrum.famostar.nl/,VELP,Florijnweg 8,6883 JP,2020-03-10,,,,ok,-6,2,8,+studiebelasting -certificaat van deelname|b -eendaagse|1-?daagse|tweeda
+PlusPort ,www.plusport.com,ZOETERMEER,Louis Braillelaan 80,2719 EK,2016-04-26,,,,ok,-6,2,8,+diploma -\bvca\b -\bbhv\b
+Stichting Volandis,www.volandis.nl,HARDERWIJK,Ceintuurbaan 2-100a,3847 LG ,2019-02-06,,,,ok,-6,2,8,+diploma -\bvca\b -heftruck|hoogwerker|rijbew
+AutoNiveau BV,www.autoniveau.nl,NIEUWEGEIN,Structuurbaan 2,3439 MB,2022-03-14,Inburgering; Bouw; ICT; Onderwijs; Techniek; Zorg,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,-7,7,14,+praktijkopdracht +toetsing -certificaat van deelname|b -eendaagse|1-?daagse|tweeda -het oranje kruis|certech|i
+BLOM opleidingen,www.blomopleidingen.nl,Hengelo,Adam Smithstraat 41,7559 SW,2020-09-30,"Inburgering; Bouw; ICT; Onderwijs; Techniek; Zorg; (Zakelijke) dienstverlening; Agrarisch en groen; Autobranche; Beveiliging; Coaching; Cultuur, sport en recreatie; Cybersecurity; Economisch- administratief; EVC; Exameninstituten; Financiële dienstverlening; Groothandel; Industrie – Techniek; IT; Klantcontact; Klimaat; Laaggeletterdheid; Learning & Development; Leiderschap; Online leren; Overheid; Persoonlijke effectiviteit; Schoonmaak; Sociaal werk, jeugdzorg en kinderopvang; Talen - NT2; Thuis zorgverpleging en/of medisch en/of alternatieve zorg; Transport en logistiek",Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,-7,8,15,+beoordelingsformulier +beoordeling +diploma -\bvca\b -\bbhv\b -eendaagse|1-?daagse|tweeda -heftruck|hoogwerker|rijbew
+OBA Opleidingen Bemiddeling Advies B.V.,www.obabv.com,Rotterdam,Van Helmontstraat 5,3029 AA ,2022-03-14,,,,ok,-7,8,15,+crkbo +beoordeling +herkansing +diploma -\bvca\b -\bbhv\b -ehbo -heftruck|hoogwerker|rijbew
+Ponsioen Opleiding en Advies BV,www.ponsioen.biz,Helmond ,Lagedijk 6,5705 BZ ,2022-11-23,Inburgering; Bouw; ICT; Onderwijs; Techniek; Zorg,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,-7,0,7,-\bvca\b -bedrijfshulpverlening
+"Stichting VAM, Opleidingsinstituut voor het Motorvoertuig-, Tweewieler- en Aanverwant Bedr",www.innovam.nl,NIEUWEGEIN,Structuurbaan 2,3439 MB,2022-03-14,Inburgering; Bouw; ICT; Onderwijs; Techniek; Zorg,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,-7,2,9,+beoordeling -\bbhv\b -certificaat van deelname|b
+Technisch Opleidingscentrum Zuid BV,www.technischopleidingscentrumzuid.nl,Kelpen-Oler,Ellerweg 17,6037 RR,2023-03-30,,,,ok,-8,0,8,-\bvca\b -\bbhv\b
+Construction Media B.V.,www.constructionmedia.nl,Waalre,Van Dijklaan 5,5581 WG,2016-05-18,,,,ok,-9,2,11,+diploma -\bvca\b -\bbhv\b -eendaagse|1-?daagse|tweeda
+Cumela opleiding & training,www.cumela.nl,Nijkerk,Nijverheidsstraat 13,3861RJ,2021-11-29,,,,ok,-9,2,11,+diploma -\bbhv\b -ehbo -bedrijfshulpverlening -incompany training(?!s?pro
+Groene Veluwe b.v.,www.groeneveluwe.nl,Epe,Tongerenseweg 116,8162 PP,2023-01-02,,,,ok,-9,0,9,-\bvca\b -heftruck|hoogwerker|rijbew -incompany training(?!s?pro
+Huisdier Kennis Instituut,www.huisdierkennis.nl,Bunnik,Regulierenring 11,3981 LA,2010-04-29,,,,ok,-9,1,10,+crkbo -\bbhv\b -ehbo -bedrijfshulpverlening
+Ingenium B.V.,https://de-opleider.nl,Hengelo,Jan Tinbergenstraat 218,7559 ST,2025-04-15,,,,ok,-9,2,11,+eindtoets -\bvca\b -ehbo -heftruck|hoogwerker|rijbew
+Match-it,www.match-it.info,Markelo,Plasdijk 2B,7475 TD,2021-01-01,,,,ok,-9,0,9,-eendaagse|1-?daagse|tweeda -het oranje kruis|certech|i
+SBK Opleidingen,www.SBKadvies.nl,ZWOLLE,Obrechtstraat 28,8031 AZ,2012-05-22,,,,ok,-9,5,14,+eindtoets +herkansing -\bvca\b -\bbhv\b -certificaat van deelname|b -incompany training(?!s?pro
+Beroepsstudie.nl,www.beroepsstudie.nl,Delft,Kleveringweg 23,2616 LZ,2023-03-27,,,,ok,-10,4,14,+beoordeling +diploma -\bvca\b -het oranje kruis|certech|i -heftruck|hoogwerker|rijbew
+Nuvrachtwagen,www.nuvrachtwagen.nl,RIJSWIJK,"Verrijn Stuartlaan, 22",2288EL,2022-03-28,,,,ok,-10,0,10,-het oranje kruis|certech|i -heftruck|hoogwerker|rijbew
+Peinemann Training Center B.V.,https://www.peinemann.nl/training-center/,ROTTERDAM,Breevaartstraat 12,3044 AH,2017-09-27,,,,ok,-10,0,10,-het oranje kruis|certech|i -heftruck|hoogwerker|rijbew
+ROVC Technische Opleidingen B.V.,www.rovc.nl,EDE,Galvanistraat 13,6716 AE,2018-01-01,Inburgering; Bouw; ICT; Onderwijs; Techniek; Zorg,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,-10,0,10,-\bvca\b -het oranje kruis|certech|i
+Vaarbewijsopleidingen (VBO),www.watersportcursussen.nl,Dongen,De Slof 10 J,5107 RJ,2014-08-05,Inburgering; Bouw; ICT; Onderwijs; Techniek; Zorg,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,ok,-10,0,10,-\bbhv\b -het oranje kruis|certech|i
+Dräger Nederland BV,www.draeger-academy.nl,ZOETERMEER,Huygensstraat 3,2721 LT,2016-07-01,,,,ok,-11,0,11,-\bvca\b -\bbhv\b -eendaagse|1-?daagse|tweeda
+Edu4u,www.edu4u.nl,Amsterdam,Asingaborg 82,1082 SK,2022-02-04,,,,ok,-11,4,15,+studiebelasting +diploma -certificaat van deelname|b -het oranje kruis|certech|i -heftruck|hoogwerker|rijbew
+Examenadviesburo B.V.,https://www.examenadviesburo.nl,Nieuwegein,Fultonbaan 80,3439 NE,2021-05-03,,,,ok,-11,0,11,-het oranje kruis|certech|i -exameninstituut|extern exa
+Insignia Training en Projecten b.v. (handelsnaam Perspective Opleidingen),https://perspective-opleidingen.nl/,Ridderkerk,Florijnstraat 4A,2988 CL,2021-03-26,,,,ok,-11,0,11,-\bvca\b -\bbhv\b -ehbo
+TCC,www.training-cursuscentrum.nl,ROTTERDAM,Driemanssteeweg 56,3084 CB,2013-05-01,,,,ok,-11,0,11,-\bvca\b -ehbo -heftruck|hoogwerker|rijbew
+Adviesbureau Kap,www.kap-opleidingen.nl,WERKENDAM,Ferrandstraat 7,4251 LL,2012-12-05,,,,ok,-13,2,15,+diploma -\bvca\b -\bbhv\b -bedrijfshulpverlening -heftruck|hoogwerker|rijbew
+BTR Trainingen,www.btrtrainingen.nl,Hengelo,Demmersweg 110,7556 BN,2022-03-22,,,,ok,-13,2,15,+meerdaagse leergang|leerga -\bvca\b -\bbhv\b -bedrijfshulpverlening -heftruck|hoogwerker|rijbew
+Kenniscentrum veiligheid 365,www.veiligheid365.nl,Breda,Charles Petitweg 11A,4827 HJ,2021-11-01,,,,ok,-13,2,15,+diploma -\bvca\b -\bbhv\b -ehbo -heftruck|hoogwerker|rijbew
+Trafieq Educatie en advies ,www.trafieq.nl,Zeist,Bergweg 173a,3707 AC,2021-10-19,,,,ok,-13,0,13,-eendaagse|1-?daagse|tweeda -het oranje kruis|certech|i -heftruck|hoogwerker|rijbew
+Bouwradius Training & Advies B.V.,www.bouwradius.nl,Hazerswoude-Dorp,Engelandleaan 74,2391PN,2022-03-22,,,,ok,-14,7,21,+examinator +diploma -\bvca\b -\bbhv\b -ehbo -bedrijfshulpverlening -eendaagse|1-?daagse|tweeda -heftruck|hoogwerker|rijbew
+Vervoerscollege Venlo BV,www.vervoerscollegevenlo.nl,VENLO,Vasco da Gamaweg 1,5928 LD,2018-03-25,,,,ok,-14,4,18,+portfolio +diploma -\bvca\b -\bbhv\b -het oranje kruis|certech|i -heftruck|hoogwerker|rijbew
+Thinq Academy b.v.,www.thinqacademy.nl,Tilburg,Heraclesstraat 6,5048 CG,2022-02-11,,,,ok,-15,0,15,-\bvca\b -\bbhv\b -ehbo -heftruck|hoogwerker|rijbew
+Van Wees Opleidingen,www.vanweesopleidingen.nl,Uitgeest,Molenwerf 21L,1911 DB,2022-04-04,,,,ok,-15,0,15,-\bvca\b -\bbhv\b -ehbo -heftruck|hoogwerker|rijbew
+Koops NOVL Beroepsopleidingen ,www.koopsvec.nl,Assen,Van Vlissingenstraat 45a,9403BB,2012-03-05,,,,ok,-16,2,18,+diploma -\bvca\b -\bbhv\b -ehbo -bedrijfshulpverlening -heftruck|hoogwerker|rijbew
+LOC Logistiek OpleidingsCentrum bv,www.locb.nl,Etten- Leur,Hoevenseweg 39-d,4877 LA,2022-03-14,,,,ok,-16,2,18,+beoordeling -\bvca\b -\bbhv\b -ehbo -eendaagse|1-?daagse|tweeda -heftruck|hoogwerker|rijbew
+EDUQ Opleidingen,www.eduq.nl,Haarlem,Waarderweg 19 ,2031 BN,2021-11-02,,,,ok,-18,0,18,-\bvca\b -\bbhv\b -ehbo -eendaagse|1-?daagse|tweeda -heftruck|hoogwerker|rijbew
+Özel opleidingen,www.ozelopleidingen.nl,Rotterdam,Vlaardingweg 36,3044 CK,2021-08-25,,,,ok,-18,4,22,+beoordeling +diploma -\bvca\b -\bbhv\b -ehbo -het oranje kruis|certech|i -heftruck|hoogwerker|rijbew -incompany training(?!s?pro
+Zpits,www.zpits.nl,Rotterdam,Rotterdam Airportplein 55,3045 AP,2021-10-01,,,,ok,-19,2,21,+diploma -\bvca\b -\bbhv\b -eendaagse|1-?daagse|tweeda -exameninstituut|extern exa -heftruck|hoogwerker|rijbew -incompany training(?!s?pro
+ML Opleidingen,www.ml-opleidingen.nl,Naaldwijk,Buys Ballotstraat 3 BU2,2693 BD,2026-03-09,,,,ok,-24,0,24,-\bvca\b -\bbhv\b -ehbo -bedrijfshulpverlening -het oranje kruis|certech|i -heftruck|hoogwerker|rijbew
+Scaves,www.scaves.nl,SCHOONEBEEK,Wendakker 5,7761 PX,2013-04-23,,,,ok,-25,0,25,-\bvca\b -\bbhv\b -ehbo -bedrijfshulpverlening -het oranje kruis|certech|i -heftruck|hoogwerker|rijbew -incompany training(?!s?pro
+Academie voor Leefstijl en Gezondheid,www.avleg.nl,Ede,"HNK - Horapark, Bennekomseweg 41",6717 LL,2022-04-04,,,,fout: URLError,,,,
+AVS Professionalisering,www.avs.nl/academie,UTRECHT,Herenstraat 35,3512 KB,2011-03-10,,,,fout: HTTPError,,,,
+Brain Balance Opleidingen BV,https://brainbalanceinstituut.com/,Rotterdam ,Theodoor Colenbranderhof 3,3059 LS ,2022-11-23,,,,fout: HTTPError,,,,
+Calibris Advies,htpps://www.calibrisadvies.nl,HOUTEN,De Molen 88,3995 AX,2015-11-19,,,,fout: URLError,,,,
+Capricorn Taallessen en Vertalingen,Https://capricorntaallessen.com,Rotterdam,Tapuitstraat 5b,3083 WC,2026-06-17,,,,fout: URLError,,,,
+CCB B.V. (Samenvoeging BIJDA en Cursuscentrum Groen),www.ccb.nl,Arnhem,Otterloseweg 2D2,6816 TJ,2021-09-14,,,,fout: URLError,,,,
+Coöperatie Scillz UA,http://www.scillz.nl/contact.html,ZEIST,Socrateslaan 22,3707 GL,2017-04-10,,,,fout: HTTPError,,,,
+de Werff,www.dewerff.net,Ruurlo,Christinalaan 1,7261CB,2022-01-10,,,,fout: HTTPError,,,,
+DELTA Safety Training,www.deltasafetytrainingen.com,Rotterdam,Geyssendorfferweg 47,3088 GJ,2021-11-02,Inburgering; Bouw; ICT; Onderwijs; Techniek; Zorg,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,fout: URLError,,,,
+Drone Flight Academy B.V.,www.droneflightacademy.eu,Katwijk,Wassenaarseweg 75,2223 LA,2022-03-28,,,,fout: URLError,,,,
+Dutch Dental Academy,https://dutchdentalacademy.nl,Gorinchem,Arkelseo Onderweg 61,4206 AG,2024-11-18,,,,fout: HTTPError,,,,
+DWM Trainingen,www.dwmtrainingen.nl,Wemeldinge,Dorpsstraat 38,4424 CX,2021-11-02,,,,fout: URLError,,,,
+Essenzo Business School,www.essenzo.nu,GOUDA,Burg. V. Reenensingel 101,2803 PA,2018-02-26,,,,fout: HTTPError,,,,
+Firda voor Volwassenen B.V.,www.firda.nl/volwassenenonderwijs,Leeuwarden,De Eenhoorn 4,8932 NX,2022-02-07,,,,fout: HTTPError,,,,
+FP&P Onderhandelen BV,www.onderhandelen.fpnp.nl,Driebergen- Rijsenburg,Hoofdstraat 71,3971 KD,2023-01-02,,,,fout: URLError,,,,
+GITP Training & Opleiding BV,www.gitp-ontwikkeling.nl ,Utrecht ,Postbus 2182,3500 GD,2021-09-23,,,,fout: URLError,,,,
+Global Education Services Netherlands BV,www.uibs.org,AMSTERDAM,Weteringschans 28,1017 SG ,2015-12-28,,,,fout: HTTPError,,,,
+Globi,https:// globi.nl,Utrecht,Maliebaan 92,3581 CX,2023-03-01,Inburgering; Bouw; ICT; Onderwijs; Techniek; Zorg,Drenthe; Flevoland; Groningen; Overijssel; Zeeland,,fout: URLError,,,,
+Instituut CAM,www.instituut-cam.nl,Warffum,Westervalge 24,9989 EB,2016-01-04,,,,fout: HTTPError,,,,
+Instituut voor Wijsbegeerte (handelsnaam ISVW),www.isvw.nl,LEUSDEN,Dodeweg 8,3832 RD,2010-11-16,,,,fout: HTTPError,,,,
+Interbeek Support BV,Https://interbeeksupport.nl,Eibergen,Grotestraat 52,7151 BD,2025-04-15,,,,fout: URLError,,,,
+IT Management Group BV ,www.itmg.nl,Den Haag,Lange Vijverberg 4-5,2513 AC,2020-12-02,,,,fout: HTTPError,,,,
+Kyden BV,www.kyden.nl,Hilversum,Oude Amersfoortseweg 125,1212 AA,2024-09-01,,,,fout: URLError,,,,
+Lean Six Sigma College,www.theleansixcompany.nl,Rotterdam,Van Nelleweg 1,3044 BC,2023-11-01,,,,fout: URLError,,,,
+Lean Six Sigma Partners B.V.,www.leansixpartners.nl,Soesterberg,Rademakerstraat 22,3769 BD,2022-08-31,,,,fout: URLError,,,,
+Marlijn Academie,www.marlijnacacdemie.nl ,LANGEWEG,De Langeweg 22,4771 RB,2018-02-19,,,,fout: URLError,,,,
+Open2Contact,www.open2contact.nl,SOEST,Zuidergracht 21-Unit 31,3763 LS,2018-07-09,,,,fout: HTTPError,,,,
+Ovidius Werk,www.ovidiuswerk.nl,Zeist,Van Renesselaan 25,3703 AE,2022-10-24,,,,fout: HTTPError,,,,
+Passionned Nederland BV,www.passopnned.nl/academy,Amersfoort ,Utrechtseweg 225,3818 EG ,2022-11-23,,,,fout: URLError,,,,
+Plata Opleidingen,www.platafoundation.nl,Leiden,Oude Vest 9,2312 XP,2019-10-03,,,,fout: URLError,,,,
+Pro Audio Education NL B.V.,https://www.proaudioeducation.nl,Amstelveen,Uilenstede 354,1183 DB,2023-05-09,,,,fout: HTTPError,,,,
+School voor Communicatie ,www.intoacademy.nl,Bunschoten ,De Kronkels 5A,3752 LM,2022-05-25,,,,fout: HTTPError,,,,
+SkillValley,https:// www.skillvalley.nl,Elsloo,Business Park Stein 108,6181 MA,2025-03-13,,,,fout: URLError,,,,
+Soofos,https://soofos.nl,Hattem,Hommelbrink 6,8051 PV,2021-11-29,,,,fout: HTTPError,,,,
+Stg. SOMA Bedrijfsopleidingen,www.somabedrijfsopleidingen.nl,Harderwijk,Ceintuurbaan 2,3847 LG ,2020-12-03,,,,fout: URLError,,,,
+Stichting Calidus (vh ZW Opleidingen),www.calidus.nl,Hoorn,Dampten 28,1624 NR,2020-10-01,,,,fout: HTTPError,,,,
+Stichting eX:plain,www.explain.nl,Amersfoort ,Disketteweg 6,3821 AR,2022-08-31,,,,fout: URLError,,,,
+Stichting Examens Uitzendbranche (SEU),www.seu.nl,AMERSFOORT,Disketteweg 6,3821 AR,2017-02-17,,,,fout: URLError,,,,
+The Lean Six Sigma Company,www.theleansixcompany.nl,Rotterdan,Van Nelleweg 1,3944 BC,2023-11-01,,,,fout: URLError,,,,
+The Wine & Food Academy BV,https://thewineacademy.nl/,Zeist ,Steynlaan 44,3701 EH ,2022-03-22,,,,fout: HTTPError,,,,
+Tim Koldenhof Producties B.V.,www.denederlandseacteurschool.nl,Apeldoorn,Vlijtseweg 140,7317 AK,2022-05-30,,,,fout: URLError,,,,
+TopTaal in het Bedrijf,www.taalinhetbedrijf.nl,AMSTERDAM,Zekeringstraat 44,1014 BT,2014-02-07,,,,fout: URLError,,,,
+V&B consulting,https://4dlean.nl,Barendrecht,Meerwedesingel 6,2993 TG,2023-04-28,,,,fout: URLError,,,,
+Vinova Opleidingen B.V.,www.vinova.nl,Beugen,Zuster Bloemstraat 20,5835 DW,2025-07-24,,,,fout: URLError,,,,
+Vlokhoven Opleidingen,http://www.vlokhovenopleidingen.nl,Breda,Charles Petitweg 7A 5,4827HJ,2025-12-11,,,,fout: URLError,,,,
+HaKa HBO B.V.,,Groot-Ammers,Schoonhovenseveer 19,2964 GB,2024-07-16,,,,geen website,,,,
+Haka MBO B.V.,,Groot- ammers,Schoonhovense veer 19,2964 GB ,2021-09-21,,,,geen website,,,,
+HaKa Nederland B.V.,,Sliedrecht,Stationspark 827,3364 DA,2018-08-15,,,,geen website,,,,
+IW Achterhoek Rivierenland ,,Didam,Bieslook 24,6942 SG,2022-03-24,,,,geen website,,,,
+Learnit BV,,Amsterdam,Piet Heinkade 1,1019 BR,2021-05-03,,,,geen website,,,,
+Pastoor BV,,Nijmegen,Kerkenbos 1103-D,6546 BC,2021-09-23,,,,geen website,,,,
+soba,,,,,2026-01-07,,,,geen website,,,,
+Test CCI 13-12-2022,,,,,2025-12-23,,,,geen website,,,,
+XL10 ,,HENGELO,Welbergweg 92,7556 PE,2022-02-01,,,,geen website,,,,

@@ -1,0 +1,211 @@
+{
+  "slug": "umcg",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_4Mh3jCQPY7E6Q20lyVoXTNQJzOsWq8Z8fD7o7m016pC",
+    "naam": "UMCG",
+    "url": "https://app.close.com/lead/lead_4Mh3jCQPY7E6Q20lyVoXTNQJzOsWq8Z8fD7o7m016pC/",
+    "lead_status": "Actief",
+    "opportunity_id": "oppo_PSWr7St1cpI4ilLJzNbIKUOKsynSFHIV9zR4PS6crpd",
+    "fase": "Pilot",
+    "fase_type": "active",
+    "waarde": 15000,
+    "valuta": "EUR",
+    "confidence": 65,
+    "close_date": "2027-01-14",
+    "eigenaar": "Eduface CRM",
+    "crm_note": "**Status:** Evaluatie is geland op de laatste week van september en de eerste\nweek van oktober, maar er liggen nog geen succescriteria vast.\n\n**Wat er gebeurde:** Het verwerken van de POC-feedback kost 40 uur in plaats\nvan de 8 uur die in het contract stonden; Eduface neemt de extra 32 uur voor\neigen rekening. De verbeterde versie is toegezegd voor 1 september. UMCG kort\nde gecontracteerde 90 werkdagen evaluatie fors in en verwacht ruim minder dan\nde helft nodig te hebben. Rienk Dijkstra koppelt de evaluatie aan de eerste\nassessments consultvoering bij Geneeskunde en inventariseert op de\nstartbijeenkomst in september welke docenten meedoen. Of Tandheelkunde in\ndezelfde weken meebeoordeelt wordt nog uitgezocht. Eindbeeld dat met UMCG en\nScorion is besproken: Eduface geintegreerd in Scorion.\n\n**Next action:** Verbeterde modelversie opleveren | Menno | 1 sep | Hoog\n\n**Next action:** Succescriteria en meetpunten vastleggen voor de evaluatie start | Jeroen | <datum onbekend> | Hoog\n\n**Risk:** Er worden geen resultaten of succes metrics bijgehouden (eigen SSO-\nnote 26 juni: \"we sturen blind\"), en er is geen budgethouder of besluitmoment\nbekend voor de stap na de POC.\n\n**Action required:** Jeroen legt met UMCG vast wat de evaluatie moet opleveren\nen wie beslist over het vervolg via Scorion.",
+    "contacten": [
+      {
+        "naam": "Marin Groothengel",
+        "titel": "",
+        "email": "m.c.groothengel@umcg.nl",
+        "id": "cont_MgBK38XblllMfPuUih2R3Xp6voBF5YDcPW8Wp78i9OH"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_usTkqgKbuyF6Rx5hhUWPxYf9FBdrksPJWphcHdkpfqF",
+        "soort": "meeting",
+        "datum": "2025-07-03",
+        "titel": "UMCG Scorion Eduface AI afstemmen",
+        "duur_min": 30,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "m.c.groothengel@umcg.nl",
+          "m.heijne-penninga@umcg.nl",
+          "robert.smeenk@scorion.com"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_ii6O3bPp4yntfnYJwdju0KcMb5miqbF527TW6yBWB0D",
+        "soort": "meeting",
+        "datum": "2025-09-11",
+        "titel": "FW: Afspraak Scorion/ Eduface ivm innovatieproject feedback met AI",
+        "duur_min": 30,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "l.reinke@umcg.nl",
+          "m.c.groothengel@umcg.nl",
+          "robert.smeenk@scorion.com"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_3PxfiJCBtkXgqknwLrbOoDjQbIL66Ewhchj01PMbMgp",
+        "soort": "meeting",
+        "datum": "2025-11-17",
+        "titel": "Kick off AI project",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "l.reinke@umcg.nl",
+          "m.c.groothengel@umcg.nl",
+          "renate.kleinhaneveld@scorion.com",
+          "robert.smeenk@scorion.com"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_fp8oRbkjCbwqbf5QaTWj1eyylOCPcT1ED4eZcn4D5A2",
+        "soort": "meeting",
+        "datum": "2026-01-14",
+        "titel": "Ai in feedbackproces- Scorion/UMCG",
+        "duur_min": 30,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "m.c.groothengel@umcg.nl",
+          "r.s.dijkstra@umcg.nl",
+          "renate.kleinhaneveld@scorion.com",
+          "robert.smeenk@scorion.com"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_wTIL1H4tOdrq0SzMSKsCL98W2yx3rUFWNpRykWdOOEj",
+        "soort": "meeting",
+        "datum": "2026-02-12",
+        "titel": "Feedbackmodellen UMCG",
+        "duur_min": 30,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "m.c.groothengel@umcg.nl",
+          "renate.kleinhaneveld@scorion.com",
+          "robert.smeenk@scorion.com"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_y9VZ25GEx5MGQUCZg4RzIX3MX9EAhZm5e4X3oxkB7cq",
+        "soort": "meeting",
+        "datum": "2026-03-31",
+        "titel": "Scorion/Eduface/UMCG - innovatieproject feedback",
+        "duur_min": 30,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "k.y.ma@umcg.nl",
+          "m.c.groothengel@umcg.nl",
+          "renate.kleinhaneveld@scorion.com",
+          "robert.smeenk@scorion.com"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_KF2zjAB8Taxceqx0gppHvJPhr8rjizva0qV6FBDUddG",
+        "soort": "meeting",
+        "datum": "2026-04-20",
+        "titel": "proof of concept Eduface Scorion",
+        "duur_min": 90,
+        "status": "completed",
+        "deelnemers": [
+          "e.s.schaafsma@umcg.nl",
+          "jeroen.van.gessel@eduface.me",
+          "k.y.ma@umcg.nl",
+          "l.reinke@umcg.nl",
+          "m.c.groothengel@umcg.nl",
+          "menno.hahury@eduface.me",
+          "r.s.dijkstra@umcg.nl",
+          "renate.kleinhaneveld@scorion.com",
+          "robert.smeenk@scorion.com"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_WPElf05P4qMO0l4WoRWsy9ZWAkLStlxUCqoyodXM4OS",
+        "soort": "meeting",
+        "datum": "2026-06-04",
+        "titel": "Bespreken proof-of-concept Scorion/Eduface/UMCG",
+        "duur_min": 60,
+        "status": "completed",
+        "deelnemers": [
+          "jeroen.van.gessel@eduface.me",
+          "k.y.ma@umcg.nl",
+          "m.c.groothengel@umcg.nl",
+          "menno.hahury@eduface.me",
+          "renate.kleinhaneveld@scorion.com"
+        ],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      }
+    ],
+    "open_taken": [],
+    "laatste_gesprek": "2026-06-04",
+    "volgende_afspraak": null,
+    "aantal_gehad": 8,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

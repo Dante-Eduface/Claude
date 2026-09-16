@@ -1,0 +1,84 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1200px;height:900px}
+  body{display:flex;align-items:center;justify-content:center}
+  svg{display:block}
+</style></head>
+<body>
+<!-- BLOG: How much time do lecturers spend marking? → stack of papers + big clock + pen -->
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="75%">
+      <stop offset="0%" stop-color="#f4faf7"/>
+      <stop offset="100%" stop-color="#e3edef"/>
+    </radialGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#eef3f5"/>
+    </linearGradient>
+    <radialGradient id="clock" cx="36%" cy="28%" r="82%">
+      <stop offset="0%" stop-color="#13435a"/>
+      <stop offset="60%" stop-color="#002333"/>
+      <stop offset="100%" stop-color="#001620"/>
+    </radialGradient>
+    <radialGradient id="green" cx="35%" cy="28%" r="80%">
+      <stop offset="0%" stop-color="#5dffb4"/>
+      <stop offset="45%" stop-color="#00e075"/>
+      <stop offset="100%" stop-color="#007b54"/>
+    </radialGradient>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="20" stdDeviation="26" flood-color="#012130" flood-opacity="0.22"/>
+    </filter>
+    <filter id="softsm" x="-60%" y="-60%" width="220%" height="220%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#012130" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <circle cx="200" cy="210" r="16" fill="#00e075" opacity="0.9" filter="url(#softsm)"/>
+  <circle cx="1015" cy="250" r="11" fill="#007b54" opacity="0.8"/>
+  <circle cx="250" cy="720" r="13" fill="#00e075" opacity="0.55"/>
+
+  <!-- stack of papers, lower-left, slightly fanned -->
+  <g filter="url(#soft)">
+    <rect x="300" y="470" width="430" height="320" rx="22" fill="url(#paper)" transform="rotate(-9 515 630)"/>
+    <rect x="320" y="455" width="430" height="320" rx="22" fill="url(#paper)" transform="rotate(-3 535 615)"/>
+    <rect x="338" y="445" width="430" height="320" rx="22" fill="url(#paper)"/>
+  </g>
+  <!-- text lines on top sheet, two marked green -->
+  <g>
+    <rect x="372" y="486" width="300" height="16" rx="8" fill="#d4dee2"/>
+    <rect x="372" y="522" width="240" height="16" rx="8" fill="#d4dee2"/>
+    <rect x="372" y="558" width="280" height="16" rx="8" fill="#9af0c6"/>
+    <rect x="372" y="594" width="200" height="16" rx="8" fill="#d4dee2"/>
+    <rect x="372" y="630" width="270" height="16" rx="8" fill="#9af0c6"/>
+    <rect x="372" y="666" width="180" height="16" rx="8" fill="#d4dee2"/>
+  </g>
+
+  <!-- big clock, upper-right, overlapping -->
+  <g filter="url(#soft)">
+    <circle cx="780" cy="360" r="195" fill="url(#clock)"/>
+  </g>
+  <circle cx="780" cy="360" r="195" fill="none" stroke="#00e075" stroke-opacity="0.30" stroke-width="8"/>
+  <!-- ticks -->
+  <g stroke="#ffffff" stroke-opacity="0.5" stroke-width="6" stroke-linecap="round">
+    <line x1="780" y1="195" x2="780" y2="222"/>
+    <line x1="780" y1="498" x2="780" y2="525"/>
+    <line x1="615" y1="360" x2="642" y2="360"/>
+    <line x1="918" y1="360" x2="945" y2="360"/>
+  </g>
+  <!-- hands (pointing to a lot of hours) -->
+  <line x1="780" y1="360" x2="780" y2="250" stroke="#ffffff" stroke-width="12" stroke-linecap="round"/>
+  <line x1="780" y1="360" x2="880" y2="392" stroke="#00e075" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="780" cy="360" r="16" fill="#00e075"/>
+
+  <!-- pen resting across the papers -->
+  <g transform="rotate(24 720 700)" filter="url(#softsm)">
+    <rect x="560" y="688" width="320" height="26" rx="13" fill="url(#green)"/>
+    <rect x="858" y="688" width="46" height="26" rx="8" fill="#002333"/>
+    <path d="M560 688 L536 701 L560 714 Z" fill="#ffffff"/>
+  </g>
+</svg>
+</body></html>

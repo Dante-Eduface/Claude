@@ -1,0 +1,53 @@
+[
+  {
+    "id": "Instituut-Mentoris-1",
+    "org": "Instituut Mentoris",
+    "lead_id": "lead_mozYeGBD5YvtfVwRsp3hpzaTpvyfjH0PanjdukZXFck",
+    "close_url": "https://app.close.com/lead/lead_mozYeGBD5YvtfVwRsp3hpzaTpvyfjH0PanjdukZXFck/",
+    "persoon": "Betsy van Bel",
+    "functie": null,
+    "datum": "2026-09-07",
+    "bron_type": "meeting",
+    "bron_id": "acti_YnGYzTSfAgLthxH8povpK1aal8Y0huXGaKpzhxoMqrM",
+    "segment": "particulier",
+    "thema": "schaal",
+    "type": "huidig",
+    "citaat": "Student aantallen zitten tussen de 48 - 96 deelnemers.",
+    "samenvatting": "Kleine opleider met 48 tot 96 deelnemers per jaar.",
+    "zekerheid": "letterlijk"
+  },
+  {
+    "id": "Instituut-Mentoris-2",
+    "org": "Instituut Mentoris",
+    "lead_id": "lead_mozYeGBD5YvtfVwRsp3hpzaTpvyfjH0PanjdukZXFck",
+    "close_url": "https://app.close.com/lead/lead_mozYeGBD5YvtfVwRsp3hpzaTpvyfjH0PanjdukZXFck/",
+    "persoon": "Betsy van Bel",
+    "functie": null,
+    "datum": "2026-09-10",
+    "bron_type": "email",
+    "bron_id": "acti_Ltj4Bv0OC1EZvJU8IAPZh4lHyFOEK0tOxbJ4UtXyoPo",
+    "segment": "particulier",
+    "thema": "schaal",
+    "type": "bezwaar",
+    "citaat": "Op dit moment is er binnen ons team nog niet direct veel belangstelling voor. Dat heeft vooral te maken met de manier waarop wij onze opleidingen hebben ingericht. Wij werken met relatief kleine groepen deelnemers en met twee vaste docenten per groep.",
+    "samenvatting": "Kleine groepen met twee vaste docenten maken de nakijklast klein, dus geen urgentie.",
+    "zekerheid": "letterlijk"
+  },
+  {
+    "id": "Instituut-Mentoris-3",
+    "org": "Instituut Mentoris",
+    "lead_id": "lead_mozYeGBD5YvtfVwRsp3hpzaTpvyfjH0PanjdukZXFck",
+    "close_url": "https://app.close.com/lead/lead_mozYeGBD5YvtfVwRsp3hpzaTpvyfjH0PanjdukZXFck/",
+    "persoon": "Betsy van Bel",
+    "functie": null,
+    "datum": "2026-09-10",
+    "bron_type": "email",
+    "bron_id": "acti_Ltj4Bv0OC1EZvJU8IAPZh4lHyFOEK0tOxbJ4UtXyoPo",
+    "segment": "particulier",
+    "thema": "mondeling",
+    "type": "huidig",
+    "citaat": "Onze opleidingen zijn bovendien sterk praktijkgericht. Veel van de feedback wordt daarom tijdens de opleidingsdagen zelf gegeven, in gesprekken, oefeningen en bij het bespreken van praktijkervaringen en opdrachten.",
+    "samenvatting": "Feedback loopt mondeling tijdens de opleidingsdagen, niet via schriftelijk nakijken.",
+    "zekerheid": "letterlijk"
+  }
+]

@@ -1,0 +1,186 @@
+{
+  "slug": "universiteit-maastricht",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_6fMw93YOzDbHqa3gsKhm9xiTW7P0IEWq3NQRT80F3L4",
+    "naam": "Universiteit Maastricht",
+    "url": "https://app.close.com/lead/lead_6fMw93YOzDbHqa3gsKhm9xiTW7P0IEWq3NQRT80F3L4/",
+    "lead_status": "Prospect",
+    "opportunity_id": null,
+    "fase": null,
+    "fase_type": null,
+    "waarde": null,
+    "valuta": "EUR",
+    "confidence": null,
+    "close_date": null,
+    "eigenaar": "Eduface CRM",
+    "crm_note": "",
+    "contacten": [
+      {
+        "naam": "Judith Buddenberg",
+        "titel": "Head Education Office at the Faculty of Science and Engineering - Maastricht University",
+        "email": "judith.buddenberg@maastrichtuniversity.nl",
+        "id": "cont_5VfBlRLwWvMBRRRAQLTOXFBfQxjRFpngFMnWkK3ZwUB"
+      },
+      {
+        "naam": "Mariëtte Cruijssen",
+        "titel": "Director Institute for Education FHML",
+        "email": "m.cruijssen@maastrichtuniversity.nl",
+        "id": "cont_heOocXtyeb3LFNZfTcofVFGxWJDqARrv31RZYBotSsA"
+      },
+      {
+        "naam": "Walter Jansen",
+        "titel": "Senior Coordinator Innovation at EDLAB",
+        "email": "walter.jansen@maastrichtuniversity.nl",
+        "id": "cont_fuG7aiaLJEv1WULPW1kRtSdkl94ckMGAmjvJWgjb91X"
+      },
+      {
+        "naam": "Ellen Bastiaens",
+        "titel": "Director of the Centre for Teaching and Learning",
+        "email": null,
+        "id": "cont_i98Qwy1uvlVoV9TukDCS5ptXExFG7shJNCtayHPSrRD"
+      },
+      {
+        "naam": "Charles Bollen",
+        "titel": "Product owner LMS",
+        "email": "ch.bollen@maastrichtuniversity.nl",
+        "id": "cont_X5ntVBdFQ8URWw4nsqTDLax40uSGWjderpjIctJogIQ"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_WW68TszJxJDfYVx3eQtCEyWwDDax8V853ipkTMyIQOD",
+        "soort": "call",
+        "datum": "2026-04-02",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "VM ingesproken",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_GxybeLTjzTiB0n7uSd1wBCDjay7yv6NshXNij7oRQGV",
+        "soort": "call",
+        "datum": "2026-04-13",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "VM insteek was als volgt: \nDag Walter, ik ben Jeroen van Gessel, medeoprichter van Eduface. We zijn op dit moment in gesprek met collega's bij de Universiteitsbibliotheek over een pilot rondom geautomatiseerde feedback op schrijfopdrachten. Meerdere docenten vanuit Arts and Social Sciences hebben ook aangehaakt bij onze demo.\n\nIk realiseer me dat EDLAB de aangewezen plek is om te bekijken of dit breder past binnen de onderwijsinnovatiestrategie van UM. Zou je openstaan voor een kort gesprek van 20 minuten om te verkennen of er een logische aansluiting is?",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_FcMe3xE8QwsLeAEBNOcuLP63e247bVha8DLRadEmn9f",
+        "soort": "call",
+        "datum": "2026-04-13",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Director of the Centre for Teaching and Learning: \nRelevanter dan Walter. \nIk kan beter de casus voorleggen bij Ellen dan bij Walter.",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_BQLVIKsSpBv8ijnVRouWVaTfYO4MsGsAUkC9oWPTB5m",
+        "soort": "call",
+        "datum": "2026-04-16",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Niet opgenomen.",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_4NO7QkTslvUTrXQk0lfVMAz5RIzC2qbtx4hJvwG5Lch",
+        "soort": "call",
+        "datum": "2026-04-16",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Niet opgenomen",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_5SxxRhMdAiv5aVl1RDyldi99J1pJ35LyhNsRArA4HDT",
+        "soort": "call",
+        "datum": "2026-05-19",
+        "titel": "Telefoon outbound",
+        "duur_min": 2,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_j7f1TNNORnNCXgsGI8dJ7BMEOsbvAa71K4xHNT0F63Y",
+        "soort": "call",
+        "datum": "2026-05-19",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Opgenomen zat in een meeting, kon dus op dat moment niet bellen. Ze zij dat ik haar morgen van 12:00 tot 14:00 kan bellen.",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_o7SMCKxZvU4FhrsxKmhiF6rS7eafQRUR6pc31O0jUHo",
+        "soort": "call",
+        "datum": "2026-05-20",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": null,
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Aardig vrouw en zit zelf niet aan het onderwijs kant. \nLeer moment: Cold callen is goed alleen het is heel belangrijk dat je de juiste mensen belt anders is het eigenlijk gewoon wasted energie. \n\nZe zei dat we bij de vice decaan onderwijs van elke faculteit moeten zijn. Die komen ook bij elkaar en bespreken dit soort zaken.",
+        "transcript_beschikbaar": false,
+        "komend": false
+      }
+    ],
+    "open_taken": [],
+    "laatste_gesprek": "2026-05-20",
+    "volgende_afspraak": null,
+    "aantal_gehad": 8,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

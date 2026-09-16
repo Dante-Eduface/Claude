@@ -1,0 +1,84 @@
+{
+  "slug": "iva-business-school-driebergen",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_48965rC0N7uA1mKFiFXqoZWzBEn4jlWfZnuN4pSqsdh",
+    "naam": "IVA Business School (Driebergen)",
+    "url": "https://app.close.com/lead/lead_48965rC0N7uA1mKFiFXqoZWzBEn4jlWfZnuN4pSqsdh/",
+    "lead_status": "Prospect",
+    "opportunity_id": null,
+    "fase": null,
+    "fase_type": null,
+    "waarde": null,
+    "valuta": "EUR",
+    "confidence": null,
+    "close_date": null,
+    "eigenaar": "Eduface CRM",
+    "crm_note": "",
+    "contacten": [
+      {
+        "naam": "Joan Janssens",
+        "titel": "Algemeen directeur",
+        "email": null,
+        "id": "cont_pQ4qHjO9sLyCh4cMj6d7ttmYcrroUfJYdopz6KgH2QD"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_ixzcXvhXCVWsZhpa1QIwHWvT0t8FeyDcS8n5SV1RDJT",
+        "soort": "call",
+        "datum": "2026-08-06",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Verkeerd nummer zegt die gene, dit is wel de nummer die op popt bij mij. Bijzonder.",
+        "transcript_beschikbaar": true,
+        "komend": false
+      },
+      {
+        "id": "acti_xrbsHyrA2wkuHkXRLGNbUZUOefUOkPw5r5fQEqPb59e",
+        "soort": "call",
+        "datum": "2026-08-19",
+        "titel": "Telefoon outbound",
+        "duur_min": 1,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Dit was echt verschrikkelijk. \n\nIk had mijn introductie heel sterk en relevant moeten maken. Nu had ik hem niet aan kunnen zetten. Daarnaast had ik gewoon moeten vragen. Schikt het dat ik bel.",
+        "transcript_beschikbaar": true,
+        "komend": false
+      }
+    ],
+    "open_taken": [],
+    "laatste_gesprek": "2026-08-19",
+    "volgende_afspraak": null,
+    "aantal_gehad": 2,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

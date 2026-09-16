@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  @page { size: A4 landscape; margin: 9mm; }
+  :root{
+    --navy:#002333;--green:#00E075;--green2:#067a43;--green3:#008F5A;
+    --ink:#0e1c24;--grey:#7a8a91;--cardline:#eceff1;
+    --amber:#b8860b;--red:#b3261e;--purple:#5b3ea8;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:'Inter',sans-serif;color:var(--ink);
+    background:#fbfdfd;
+    background-image:radial-gradient(#e3eaed 1px, transparent 1px);
+    background-size:22px 22px;
+    padding:14px 18px;
+    -webkit-print-color-adjust:exact;print-color-adjust:exact;
+  }
+  h1{font-family:'League Spartan',sans-serif;color:var(--navy);font-size:21px;}
+  .titlebar{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:3px solid var(--green);padding-bottom:8px;margin-bottom:6px;}
+  .sub{color:var(--grey);font-size:10px;margin-top:3px;}
+  .brand{font-family:'League Spartan';font-weight:800;font-size:16px;color:var(--navy);}
+  .brand .fx{color:var(--green3);}
+
+  .tierlabel{text-align:center;font-size:9px;text-transform:uppercase;letter-spacing:.13em;color:var(--grey);font-weight:700;margin:16px 0 8px;}
+  .tier{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;}
+  .vline{width:2px;height:16px;background:#dbe4e7;margin:2px auto;}
+
+  /* CLEAN CARD */
+  .card{
+    display:flex;gap:11px;align-items:flex-start;
+    background:#fff;border:1px solid var(--cardline);border-radius:16px;
+    padding:12px 14px;box-shadow:0 4px 16px rgba(16,40,60,.07);
+    min-width:200px;max-width:240px;
+  }
+  .card.hl-eb{border:2px solid var(--navy);}
+  .card.hl-champ{border:2px solid var(--amber);}
+  .card.hl-coach{border:2px solid var(--green3);}
+  .card.hl-swing{border:2px solid var(--purple);}
+  .card.hl-enemy{border:1.5px solid #f0c4c0;}
+  .card.hl-ally{border:1.5px solid #bfe6cf;}
+
+  .av{width:42px;height:42px;border-radius:50%;position:relative;overflow:hidden;flex:none;
+      background:#eef2f4;display:inline-flex;align-items:center;justify-content:center;}
+  .av img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;}
+  .av span{color:#5a6b73;font-weight:700;font-size:14px;}
+  .av.ph{background:var(--navy);} .av.ph span{color:#fff;}
+
+  .info{flex:1;min-width:0;}
+  .nm{font-weight:700;font-size:13.5px;color:var(--ink);line-height:1.15;}
+  .rl{font-size:11px;color:var(--grey);margin-top:1px;line-height:1.2;}
+  .tags{margin-top:7px;display:flex;gap:5px;flex-wrap:wrap;}
+  .pill{font-size:9.5px;font-weight:600;padding:2px 9px;border-radius:20px;white-space:nowrap;}
+  .p-eb{background:#e6eef6;color:#1b4f7a;}
+  .p-champ{background:#fbeecf;color:#8a5b00;}
+  .p-coach{background:#d9f7e7;color:#067a43;}
+  .p-enemy{background:#fde4e4;color:#b3261e;}
+  .p-swing{background:#ece3fb;color:#5b3ea8;}
+  .p-ally{background:#d9f7e7;color:#067a43;}
+  .p-domain{background:#eef2f4;color:#56707d;}
+  .hot{font-size:9.5px;color:var(--grey);margin-top:7px;line-height:1.35;border-top:1px solid #f1f4f5;padding-top:5px;}
+  .hot b{color:var(--navy);font-weight:600;}
+
+  /* TEAM CARD (geen persoon) */
+  .team{background:#fff;border:1px solid var(--cardline);border-radius:14px;padding:11px 13px;
+        box-shadow:0 3px 12px rgba(16,40,60,.06);min-width:150px;max-width:165px;border-left:4px solid #dbe4e7;}
+  .team.pivot{border-left-color:var(--amber);}
+  .team .tn{font-weight:700;font-size:11.5px;color:var(--navy);line-height:1.15;}
+  .team .tl{font-size:9.5px;color:var(--grey);margin-top:3px;}
+
+  .blockwrap{background:#ffffffcc;border:1.5px dashed #e3c97a;border-radius:18px;padding:12px 14px;margin-top:8px;}
+  .blockwrap h4{font-family:'League Spartan';font-size:12px;color:var(--navy);}
+  .blockwrap .bn{font-size:9.5px;color:var(--grey);margin:2px 0 10px;}
+  .grid{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;}
+
+  .bottom{display:flex;gap:12px;margin-top:16px;}
+  .panel{flex:1;background:#fff;border:1px solid var(--cardline);border-radius:14px;padding:11px 14px;box-shadow:0 3px 12px rgba(16,40,60,.05);}
+  .panel.cro{border:1.5px solid #e3c97a;}
+  .panel h4{font-family:'League Spartan';font-size:11px;color:var(--navy);margin-bottom:6px;}
+  .legrow{display:flex;flex-wrap:wrap;gap:8px 16px;}
+  .legitem{display:flex;align-items:center;gap:6px;font-size:9.5px;}
+  .ld{width:11px;height:11px;border-radius:4px;}
+  ul.cro{margin:0;padding-left:15px;font-size:9.4px;line-height:1.5;}
+  ul.cro li{margin-bottom:3px;} ul.cro b{color:var(--navy);}
+  .foot{font-size:7.5px;color:var(--grey);margin-top:9px;text-align:center;}
+</style>
+</head>
+<body>
+  <div class="titlebar">
+    <div>
+      <h1>Organogram &amp; stakeholdermap — CIT Rijksuniversiteit Groningen</h1>
+      <div class="sub">Reconstructie o.b.v. rug.nl + LinkedIn. Rollen volgens CRO-assessment (John McMahon-logica). Stand: 28 juni 2026. Verifiëren bij contact.</div>
+    </div>
+    <div class="brand">Edu<span class="fx">face</span></div>
+  </div>
+
+  <!-- DIRECTIE -->
+  <div class="tierlabel">CIT Directie</div>
+  <div class="tier">
+    <div class="card hl-eb">
+      <div class="av ph"><img src="faces/nolda.png" onerror="this.style.display='none'"><span>NT</span></div>
+      <div class="info">
+        <div class="nm">Nolda Tipping-Griffioen</div>
+        <div class="rl">Algemeen Directeur / CIO</div>
+        <div class="tags"><span class="pill p-eb">Economic Buyer</span></div>
+        <div class="hot"><b>Geen Big Tech</b> · digitale autonomie · waarden-gedreven. Eduface = bullseye.</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="av ph"><img src="faces/anke.png" onerror="this.style.display='none'"><span>AB</span></div>
+      <div class="info">
+        <div class="nm">Anke Breeuwsma</div>
+        <div class="rl">Technisch Directeur</div>
+        <div class="hot">Technische haalbaarheid &amp; security. Geen sterk publiek signaal.</div>
+      </div>
+    </div>
+  </div>
+  <div class="vline"></div>
+
+  <!-- DOMEINMANAGERS -->
+  <div class="tierlabel">Domeinmanagers · 5 domeinen</div>
+  <div class="tier">
+    <div class="card"><div class="av"><span>NB</span></div><div class="info"><div class="nm">Niels van der Beek</div><div class="rl">Domein Infrastructuur</div></div></div>
+    <div class="card"><div class="av"><span>BD</span></div><div class="info"><div class="nm">Bernard van Dijk</div><div class="rl">Domein Organisatiesystemen</div></div></div>
+    <div class="card hl-swing">
+      <div class="av ph"><img src="faces/louwarnoud.png" onerror="this.style.display='none'"><span>LD</span></div>
+      <div class="info">
+        <div class="nm">Louwarnoud van der Duim</div>
+        <div class="rl">Domein Onderwijs / Hoofd ESI</div>
+        <div class="tags"><span class="pill p-swing">Beslisser</span></div>
+        <div class="hot"><b>Beslist build-vs-buy</b> · sunk cost in UG Grader · budget onder druk (€45M).</div>
+      </div>
+    </div>
+    <div class="card"><div class="av"><span>JU</span></div><div class="info"><div class="nm">Jan Jurjen Uitterdijk</div><div class="rl">Domein Onderzoek</div></div></div>
+    <div class="card"><div class="av"><span>JW</span></div><div class="info"><div class="nm">Jan Woudstra</div><div class="rl">Domein Basis Werkplek</div></div></div>
+  </div>
+  <div class="vline"></div>
+
+  <!-- ESI TEAMS -->
+  <div class="tierlabel">Teams onder Domein Onderwijs (ESI)</div>
+  <div class="tier">
+    <div class="team"><div class="tn">Assessment Support</div><div class="tl">Teamlead: Raoul Terlaak</div></div>
+    <div class="team"><div class="tn">Educational Design &amp; Development</div><div class="tl">Teamlead: Jan Tjeerd Groenewoud</div></div>
+    <div class="team"><div class="tn">Educational Institutional Research</div><div class="tl">Teamlead: Esther Bouma</div></div>
+    <div class="team"><div class="tn">Educational Staff Development</div><div class="tl">Teamlead: Esther Visscher</div></div>
+    <div class="team pivot"><div class="tn">ICT for Education ★</div><div class="tl">Teamlead: Reinard van Dalen</div></div>
+  </div>
+  <div class="vline"></div>
+
+  <!-- ICT FOR EDUCATION VOLLEDIG -->
+  <div class="blockwrap">
+    <h4>Team ICT for Education — volledig</h4>
+    <div class="bn">Beheert, ondersteunt en ontwikkelt 12 onderwijsdiensten (o.a. Brightspace, digitale toetsing, UG Grader). Hier valt de build-vs-buy-beslissing in de praktijk.</div>
+    <div class="grid">
+      <div class="card hl-champ">
+        <div class="av ph"><img src="faces/reinard.png" onerror="this.style.display='none'"><span>RD</span></div>
+        <div class="info"><div class="nm">Reinard van Dalen</div><div class="rl">Teamlead ICT for Education</div>
+        <div class="tags"><span class="pill p-champ">Champion (te ontwikkelen)</span></div>
+        <div class="hot"><b>Gelooft in automatisch nakijken</b> · let op: zijn team bouwt UG Grader.</div></div>
+      </div>
+      <div class="card hl-coach">
+        <div class="av ph"><img src="faces/tessa.png" onerror="this.style.display='none'"><span>TJ</span></div>
+        <div class="info"><div class="nm">Tessa Jansen</div><div class="rl">Coördinator Onderwijsapplicaties · Innovatie &amp; AI</div>
+        <div class="tags"><span class="pill p-coach">Coach</span></div>
+        <div class="hot"><b>Jouw ingang</b> · ex-Noordhoff · zoekt een AI-nakijktool.</div></div>
+      </div>
+      <div class="card hl-enemy">
+        <div class="av"><span>AN</span></div>
+        <div class="info"><div class="nm">Allard Naber</div><div class="rl">Coördinator Onderwijsapplicaties</div>
+        <div class="tags"><span class="pill p-enemy">Enemy</span></div>
+        <div class="hot">Gezicht zelfbouw-toetsstack (D2L-case).</div></div>
+      </div>
+      <div class="card hl-enemy">
+        <div class="av"><span>IP</span></div>
+        <div class="info"><div class="nm">Inge Pot</div><div class="rl">Coördinator Onderwijsapplicaties</div>
+        <div class="tags"><span class="pill p-enemy">Enemy</span></div>
+        <div class="hot">Marking-functionaliteit · naam verifiëren (Inge/Ivo).</div></div>
+      </div>
+      <div class="card">
+        <div class="av"><span>BW</span></div>
+        <div class="info"><div class="nm">Bas Wiebing</div><div class="rl">Applicatiebeheerder / Scrum Master</div>
+        <div class="hot">Vz Dienstraad · stuurt bouwcapaciteit.</div></div>
+      </div>
+      <div class="card hl-ally">
+        <div class="av"><span>VH</span></div>
+        <div class="info"><div class="nm">Vera Hommes</div><div class="rl">Privacy &amp; Security Coördinator</div>
+        <div class="tags"><span class="pill p-ally">Ally te winnen</span></div>
+        <div class="hot">AVG/security-gate · ally als compliance-verhaal klopt.</div></div>
+      </div>
+      <div class="card">
+        <div class="av"><span>+5</span></div>
+        <div class="info"><div class="nm">Developers</div><div class="rl">Lelikakis, Orriens-Spuij, Sikkema, ten Brink, Fokkinga</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TEAM EIR (Bouma) -->
+  <div class="blockwrap" style="border-color:#bfe6cf;margin-top:14px;">
+    <h4>Team Educational Institutional Research (ESI) <span style="font-size:9px;color:var(--green2);font-weight:600;">— teamlead Esther Bouma · ander team dan Tessa</span></h4>
+    <div class="bn">Data- en onderzoekshoek van ESI (soms ook "Educational Innovation &amp; Evaluation" genoemd, zelfde team/teamlead). Leden o.a. Bouma, Douwes-van Ark, van de Kamp, Deinum, Nijenkamp, Vermue. <b>Rob Nijenkamp sluit 30 juni aan bij de meeting.</b></div>
+    <div class="grid">
+      <div class="card hl-ally" style="max-width:560px;">
+        <div class="av ph"><span>RN</span></div>
+        <div class="info">
+          <div class="nm">Dr. Rob Nijenkamp</div>
+          <div class="rl">Education Data Scientist · Team Educational Institutional Research (Bouma)</div>
+          <div class="tags">
+            <span class="pill p-ally">Fan-kandidaat (data)</span>
+            <span class="pill p-domain">Learning Analytics</span>
+            <span class="pill p-domain">AI in Onderwijs</span>
+            <span class="pill p-domain">Toetsing / Herkansingen</span>
+          </div>
+          <div class="hot"><b>Sluit aan bij de meeting (30 juni).</b> Data-scientist = speelt in op de platform-/learning-analytics-pitch (nakijkdata → leerlijnen). Let op: kan ook de "dit modelleren we zelf"-reflex hebben en zal kritisch zijn op je nauwkeurigheidscijfers (Bath Spa 94%). Breng cijfers hard en eerlijk, label schattingen als schatting.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- UG-AI PLATFORM -->
+  <div class="blockwrap" style="border-color:#bfe6cf;margin-top:14px;">
+    <h4>Zelfbouw-infra — UG-AI Platform <span style="font-size:9px;color:var(--green2);font-weight:600;">(enabler, geen nakijk-concurrent)</span></h4>
+    <div class="bn">CIT AI Office bouwt aan een eigen, volledig zelf-gehoste AI-gateway + lokale LLM-oplossing. Geen toets-/nakijktool, maar de onderliggende AI-infra. Géén individuele naam publiek gevonden. Dit is waar de <b>€10,5M "AI / Digitale Soevereiniteit"</b> uit de begroting 2026 naartoe gaat. Bron: <a href="https://www.rug.nl/cit/services/ai-office/ai-oplossingen/ai-tools-in-development" style="color:var(--green2);">rug.nl/cit/.../ai-tools-in-development</a></div>
+    <div class="grid">
+      <div class="card hl-ally" style="max-width:560px;">
+        <div class="av ph"><span>AI</span></div>
+        <div class="info">
+          <div class="nm">UG-AI Platform</div>
+          <div class="rl">RUG AI-platform + standaard modellen · CIT AI Office</div>
+          <div class="tags"><span class="pill p-ally">Strategische haak</span></div>
+          <div class="hot">Volledig lokaal gehost: data blijft op RUG-servers, digitale soevereiniteit + privacy als prioriteit, voor onderwijs/onderzoek/bedrijfsvoering. Voor passende toepassingen ook gekoppeld aan commerciële modellen. <b>Eduface-haak:</b> exact Nolda's "geen Big Tech"-lijn. Positioneer Eduface als app bóvenop deze infra (eigen/EU-LLM, data lokaal), niet als externe cloud die hier tegenin gaat.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FSE BRANCH -->
+  <div class="tierlabel">Aparte lijn — Faculty of Science &amp; Engineering (FSE), buiten CIT · learning-analytics ingang</div>
+  <div class="tier">
+    <div class="card"><div class="av"><span>RT</span></div>
+      <div class="info"><div class="nm">Rob Timmermans</div><div class="rl">Vice-decaan / Portefeuillehouder Onderwijs FSE</div>
+      <div class="hot">Autoriteit + budget onderwijs FSE · geen learning-analytics signaal.</div></div>
+    </div>
+    <div class="card hl-champ"><div class="av"><span>LS</span></div>
+      <div class="info"><div class="nm">Loes Schaafsma</div><div class="rl">Directeur School of Science &amp; Engineering</div>
+      <div class="tags"><span class="pill p-champ">Champion (mogelijk)</span></div>
+      <div class="hot"><b>Vindt learning analytics belangrijk</b> · "student success, data-driven" · oprichter ESC (prijswinnend LA-team).</div></div>
+    </div>
+  </div>
+  <div class="sub" style="text-align:center;margin-top:6px">Bewijs: het FSE learning-analytics-team won een landelijke SURF/Erasmus-prijs (2023) met een studieadviseur-dashboard. NB: hun case = studiesucces/early-warning, nog niet toetsing.</div>
+
+  <!-- BOTTOM -->
+  <div class="bottom">
+    <div class="panel">
+      <h4>Legenda</h4>
+      <div class="legrow">
+        <div class="legitem"><span class="ld" style="background:#1b4f7a"></span> Economic Buyer</div>
+        <div class="legitem"><span class="ld" style="background:#5b3ea8"></span> Beslisser (swing)</div>
+        <div class="legitem"><span class="ld" style="background:#b8860b"></span> Champion (te ontwikkelen)</div>
+        <div class="legitem"><span class="ld" style="background:#067a43"></span> Coach / ally</div>
+        <div class="legitem"><span class="ld" style="background:#b3261e"></span> Enemy</div>
+        <div class="legitem"><span class="ld" style="background:#9aa7ad"></span> Neutraal / onbekend</div>
+      </div>
+      <div style="font-size:9px;color:var(--grey);margin-top:8px;line-height:1.4">Foto's = key stakeholders. Overige cards: initialen. Rollen zijn een inschatting, geen vaststaand feit.</div>
+    </div>
+    <div class="panel cro">
+      <h4>CRO-assessment (John McMahon-logica)</h4>
+      <ul class="cro">
+        <li><b>EB = Nolda (CIO).</b> Grootste hefboom: haar "geen Big Tech / digitale autonomie" matcht exact Eduface (EU, eigen LLM).</li>
+        <li><b>Champion = Reinard van Dalen.</b> Autoriteit (bouwteam) + invloed op van der Duim + gelooft in automatisch nakijken. Risico: kan ook enemy worden.</li>
+        <li><b>Coach = Tessa</b> (ingang). <b>Enemy = bouwkamp</b> (Naber, Pot, Wiebing). <b>Swing = van der Duim</b> (beslist build-vs-buy).</li>
+        <li><b>Tweede champion-route (FSE) = Loes Schaafsma</b> voor de learning-analytics-hoek. Parallel bewerken.</li>
+        <li><b>Aanpassing:</b> rode draad = Nolda's digitale-autonomie-waarde; van Dalen als interne champion; Schaafsma voor LA; Vera Hommes vroeg als ally voor de privacy-gate.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="foot">Eduface · vertrouwelijk · onderbouwde reconstructie, geen officieel RUG-document.</div>
+</body>
+</html>

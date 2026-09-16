@@ -1,0 +1,889 @@
+#!/usr/bin/env python3
+# Generates all blog covers in the LIGHT flat-icon style.
+# Style: light bg #f3f7f8, grounding shadow #dbe6ea, navy #002333 outlines,
+# green #00d563 fills, white shapes with navy outlines. One content-mapped icon per blog.
+import os
+
+OUT = os.path.join(os.path.dirname(__file__), "final")
+
+WRAP_HEAD = ('<!doctype html><html><head><meta charset="utf-8"><style>'
+             '*{margin:0;padding:0;box-sizing:border-box}html,body{width:1200px;height:900px}'
+             'body{display:flex;align-items:center;justify-content:center}svg{display:block}'
+             '</style></head><body>\n'
+             '<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" '
+             'xmlns="http://www.w3.org/2000/svg">\n'
+             '<rect width="1200" height="900" fill="#f3f7f8"/>\n')
+WRAP_TAIL = '\n</svg></body></html>'
+
+# --- scenes (inner svg incl. grounding shadow), recolored for light bg ---
+SCENES = {}
+
+# 1. Blackboard LTI: two interlocking puzzle pieces
+SCENES["ai-essay-grader-blackboard-lti"] = '''
+  <ellipse cx="600" cy="742" rx="240" ry="34" fill="#dbe6ea"/>
+  <path d="M300 280 h220 v70 a44 44 0 0 0 0 88 v70 h-220 a24 24 0 0 1 -24 -24 v-80 a44 44 0 0 0 0 -88 v-80 a24 24 0 0 1 24 -24 Z" fill="#ffffff" stroke="#002333" stroke-width="16" stroke-linejoin="round"/>
+  <path d="M900 280 h-220 v70 a44 44 0 0 1 0 88 v70 h220 a24 24 0 0 0 24 -24 v-80 a44 44 0 0 1 0 -88 v-80 a24 24 0 0 0 -24 -24 Z" fill="#00d563" stroke="#002333" stroke-width="16" stroke-linejoin="round"/>
+'''
+
+# 2. Brightspace LTI: two windows with circular sync arrows
+SCENES["ai-essay-grader-brightspace-d2l"] = '''
+  <ellipse cx="600" cy="742" rx="250" ry="34" fill="#dbe6ea"/>
+  <rect x="250" y="300" width="280" height="220" rx="24" fill="#ffffff" stroke="#002333" stroke-width="14"/>
+  <rect x="250" y="300" width="280" height="50" rx="24" fill="#cdd9de"/>
+  <rect x="250" y="326" width="280" height="24" fill="#cdd9de"/>
+  <g fill="#9fb3bb"><rect x="284" y="390" width="180" height="16" rx="8"/><rect x="284" y="422" width="150" height="16" rx="8"/><rect x="284" y="454" width="180" height="16" rx="8"/></g>
+  <rect x="670" y="380" width="280" height="220" rx="24" fill="#ffffff" stroke="#002333" stroke-width="14"/>
+  <rect x="670" y="380" width="280" height="50" rx="24" fill="#00d563"/>
+  <rect x="670" y="406" width="280" height="24" fill="#00d563"/>
+  <g fill="#9fb3bb"><rect x="704" y="470" width="180" height="16" rx="8"/><rect x="704" y="502" width="150" height="16" rx="8"/><rect x="704" y="534" width="180" height="16" rx="8"/></g>
+  <g stroke="#00b85f" stroke-width="18" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M548 410 q60 -40 120 0"/>
+    <path d="M652 500 q-60 40 -120 0"/>
+  </g>
+  <path d="M664 392 L676 414 L650 418 Z" fill="#00b85f"/>
+  <path d="M536 518 L524 496 L550 492 Z" fill="#00b85f"/>
+'''
+
+# 3. Canvas LTI: plug into socket
+SCENES["ai-essay-grader-canvas-lms-lti"] = '''
+  <ellipse cx="600" cy="742" rx="220" ry="34" fill="#dbe6ea"/>
+  <rect x="660" y="320" width="200" height="240" rx="40" fill="#00d563" stroke="#002333" stroke-width="14"/>
+  <rect x="630" y="356" width="44" height="48" rx="14" fill="#00d563" stroke="#002333" stroke-width="14"/>
+  <rect x="630" y="496" width="44" height="48" rx="14" fill="#00d563" stroke="#002333" stroke-width="14"/>
+  <g fill="#002333"><rect x="700" y="372" width="44" height="40" rx="12"/><rect x="700" y="488" width="44" height="40" rx="12"/></g>
+  <rect x="300" y="356" width="200" height="168" rx="40" fill="#ffffff" stroke="#002333" stroke-width="14"/>
+  <rect x="500" y="382" width="120" height="32" rx="16" fill="#cdd9de" stroke="#002333" stroke-width="10"/>
+  <rect x="500" y="466" width="120" height="32" rx="16" fill="#cdd9de" stroke="#002333" stroke-width="10"/>
+  <path d="M300 440 q-120 0 -120 -120" stroke="#002333" stroke-width="20" fill="none" stroke-linecap="round"/>
+'''
+
+# 4. Moodle LTI: two interlocking rings
+SCENES["ai-essay-grader-moodle-lti"] = '''
+  <ellipse cx="600" cy="742" rx="240" ry="34" fill="#dbe6ea"/>
+  <circle cx="490" cy="450" r="150" fill="none" stroke="#002333" stroke-width="56"/>
+  <circle cx="710" cy="450" r="150" fill="none" stroke="#00d563" stroke-width="56"/>
+  <path d="M490 300 A150 150 0 0 0 360 525" fill="none" stroke="#002333" stroke-width="56" stroke-linecap="round"/>
+'''
+
+# 5. feedback vs grading: speech bubble (feedback) vs medal/rosette (grading)
+SCENES["ai-feedback-vs-ai-grading"] = '''
+  <ellipse cx="380" cy="742" rx="170" ry="30" fill="#dbe6ea"/>
+  <ellipse cx="820" cy="742" rx="170" ry="30" fill="#dbe6ea"/>
+  <line x1="600" y1="220" x2="600" y2="660" stroke="#002333" stroke-width="6" stroke-opacity="0.18" stroke-dasharray="4 22" stroke-linecap="round"/>
+  <path d="M230 280 h300 a36 36 0 0 1 36 36 v150 a36 36 0 0 1 -36 36 h-200 l-60 64 v-64 h-40 a36 36 0 0 1 -36 -36 v-150 a36 36 0 0 1 36 -36 Z" fill="#00d563" stroke="#002333" stroke-width="14" stroke-linejoin="round"/>
+  <g stroke="#002333" stroke-width="18" stroke-linecap="round"><line x1="250" y1="350" x2="500" y2="350"/><line x1="250" y1="400" x2="460" y2="400"/><line x1="250" y1="450" x2="420" y2="450"/></g>
+  <circle cx="820" cy="400" r="120" fill="#ffffff" stroke="#002333" stroke-width="16"/>
+  <circle cx="820" cy="400" r="96" fill="none" stroke="#00d563" stroke-width="16"/>
+  <path d="M780 510 L740 640 L820 600 L900 640 L860 510 Z" fill="#00d563" stroke="#002333" stroke-width="14" stroke-linejoin="round"/>
+  <path d="M788 388 l24 26 l44 -56" stroke="#002333" stroke-width="18" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+'''
+
+# 6. accuracy: dart in bullseye (canonical light reference)
+SCENES["ai-marking-accuracy-human-alignment"] = '''
+  <ellipse cx="600" cy="742" rx="262" ry="40" fill="#dbe6ea"/>
+  <circle cx="600" cy="452" r="250" fill="#ffffff" stroke="#002333" stroke-width="20"/>
+  <circle cx="600" cy="452" r="186" fill="#00d563"/>
+  <circle cx="600" cy="452" r="124" fill="#ffffff"/>
+  <circle cx="600" cy="452" r="62"  fill="#00d563"/>
+  <circle cx="600" cy="452" r="18"  fill="#002333"/>
+  <g transform="rotate(40 600 452)">
+    <rect x="590" y="150" width="20" height="302" rx="10" fill="#002333"/>
+    <path d="M600 150 L552 96 L600 124 Z" fill="#00d563" stroke="#002333" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M600 150 L648 96 L600 124 Z" fill="#00d563" stroke="#002333" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M590 452 Q600 446 610 452 L603 492 Q600 500 597 492 Z" fill="#ffffff" stroke="#002333" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+  </g>
+'''
+
+# 7. plagiarism detection failing: doc + magnifier + red X
+SCENES["ai-plagiarism-detection-failing-higher-education"] = '''
+  <ellipse cx="600" cy="752" rx="220" ry="32" fill="#dbe6ea"/>
+  <path d="M430 170 L690 170 L786 266 L786 690 L430 690 Z" fill="#ffffff" stroke="#002333" stroke-width="16" stroke-linejoin="round"/>
+  <path d="M690 170 L690 266 L786 266 Z" fill="#cdd9de"/>
+  <g fill="#00c95c">
+    <rect x="472" y="250" width="240" height="26" rx="13"/>
+    <rect x="472" y="300" width="270" height="26" rx="13"/>
+    <rect x="472" y="350" width="210" height="26" rx="13"/>
+    <rect x="472" y="400" width="250" height="26" rx="13"/>
+  </g>
+  <line x1="742" y1="566" x2="838" y2="662" stroke="#002333" stroke-width="36" stroke-linecap="round"/>
+  <circle cx="660" cy="486" r="118" fill="#ffffff" fill-opacity="0.45" stroke="#002333" stroke-width="20"/>
+  <circle cx="812" cy="252" r="58" fill="#ff5a5f" stroke="#002333" stroke-width="10"/>
+  <g stroke="#ffffff" stroke-width="14" stroke-linecap="round">
+    <line x1="791" y1="231" x2="833" y2="273"/>
+    <line x1="833" y1="231" x2="791" y2="273"/>
+  </g>
+'''
+
+# 8. AI assessment: AI chip + circuit
+SCENES["ai-powered-assessment-higher-education"] = '''
+  <ellipse cx="600" cy="742" rx="220" ry="34" fill="#dbe6ea"/>
+  <g stroke="#002333" stroke-width="14" stroke-linecap="round">
+    <line x1="470" y1="250" x2="470" y2="200"/><line x1="600" y1="250" x2="600" y2="200"/><line x1="730" y1="250" x2="730" y2="200"/>
+    <line x1="470" y1="650" x2="470" y2="700"/><line x1="600" y1="650" x2="600" y2="700"/><line x1="730" y1="650" x2="730" y2="700"/>
+    <line x1="350" y1="370" x2="300" y2="370"/><line x1="350" y1="500" x2="300" y2="500"/>
+    <line x1="850" y1="370" x2="900" y2="370"/><line x1="850" y1="500" x2="900" y2="500"/>
+  </g>
+  <rect x="350" y="250" width="500" height="400" rx="40" fill="#ffffff" stroke="#002333" stroke-width="16"/>
+  <g stroke="#00b85f" stroke-width="14" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M460 540 L460 420 L560 420 L560 360"/>
+    <path d="M740 360 L740 480 L640 480"/>
+  </g>
+  <g fill="#00d563"><circle cx="460" cy="540" r="16"/><circle cx="560" cy="360" r="16"/><circle cx="740" cy="360" r="16"/><circle cx="640" cy="480" r="16"/></g>
+  <circle cx="600" cy="450" r="58" fill="#00d563"/>
+  <path d="M576 448 l16 18 l34 -42" stroke="#ffffff" stroke-width="16" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+'''
+
+# 9. automated vs manual: gear (auto) vs pen (manual)
+SCENES["automated-feedback-vs-manual-feedback"] = '''
+  <ellipse cx="370" cy="742" rx="170" ry="30" fill="#dbe6ea"/>
+  <ellipse cx="820" cy="742" rx="170" ry="30" fill="#dbe6ea"/>
+  <line x1="600" y1="220" x2="600" y2="660" stroke="#002333" stroke-width="6" stroke-opacity="0.18" stroke-dasharray="4 22" stroke-linecap="round"/>
+  <g transform="translate(370 440)" fill="#00d563">
+    <g>
+      <rect x="-22" y="-178" width="44" height="60" rx="10"/><rect x="-22" y="118" width="44" height="60" rx="10"/>
+      <rect x="-178" y="-22" width="60" height="44" rx="10"/><rect x="118" y="-22" width="60" height="44" rx="10"/>
+      <rect x="-22" y="-178" width="44" height="60" rx="10" transform="rotate(45)"/><rect x="-22" y="118" width="44" height="60" rx="10" transform="rotate(45)"/>
+      <rect x="-178" y="-22" width="60" height="44" rx="10" transform="rotate(45)"/><rect x="118" y="-22" width="60" height="44" rx="10" transform="rotate(45)"/>
+    </g>
+    <circle r="120"/>
+    <circle r="48" fill="#ffffff"/>
+    <circle r="48" fill="none" stroke="#002333" stroke-width="14"/>
+  </g>
+  <g transform="rotate(45 820 440)">
+    <rect x="790" y="270" width="60" height="280" rx="20" fill="#ffffff" stroke="#002333" stroke-width="14"/>
+    <rect x="790" y="270" width="60" height="60" rx="20" fill="#00d563"/>
+    <path d="M790 550 L820 610 L850 550 Z" fill="#ffffff" stroke="#002333" stroke-width="14" stroke-linejoin="round"/>
+    <path d="M806 572 L834 572 L820 600 Z" fill="#002333"/>
+  </g>
+'''
+
+# 10. business case: ascending bar chart + coin (ROI)
+SCENES["business-case-ai-assessment-higher-education"] = '''
+  <ellipse cx="560" cy="730" rx="250" ry="34" fill="#dbe6ea"/>
+  <path d="M320 230 L320 680 L820 680" stroke="#002333" stroke-width="14" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="380" y="520" width="80" height="150" rx="18" fill="#00b85f"/>
+  <rect x="500" y="430" width="80" height="240" rx="18" fill="#00c95c"/>
+  <rect x="620" y="320" width="80" height="350" rx="18" fill="#00d563"/>
+  <path d="M360 560 L520 460 L660 360" stroke="#002333" stroke-width="14" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="860" cy="300" r="78" fill="#00d563" stroke="#002333" stroke-width="14"/>
+  <path d="M884 268 a36 36 0 1 0 0 64 M836 286 h40 M836 312 h40" stroke="#002333" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+'''
+
+# 11. fairness: balance scales
+SCENES["can-ai-mark-papers-fairly"] = '''
+  <ellipse cx="600" cy="760" rx="200" ry="30" fill="#dbe6ea"/>
+  <rect x="520" y="690" width="160" height="26" rx="13" fill="#002333"/>
+  <rect x="560" y="640" width="80" height="60" rx="12" fill="#002333"/>
+  <rect x="588" y="250" width="24" height="400" rx="12" fill="#002333"/>
+  <circle cx="600" cy="246" r="22" fill="#00d563" stroke="#002333" stroke-width="10"/>
+  <rect x="330" y="260" width="540" height="22" rx="11" fill="#002333"/>
+  <g stroke="#002333" stroke-width="8" stroke-linecap="round">
+    <line x1="360" y1="278" x2="360" y2="330"/><line x1="840" y1="278" x2="840" y2="330"/>
+  </g>
+  <path d="M286 330 a74 50 0 0 0 148 0 Z" fill="#00d563" stroke="#002333" stroke-width="12" stroke-linejoin="round"/>
+  <rect x="334" y="296" width="52" height="62" rx="10" fill="#ffffff" stroke="#002333" stroke-width="10"/>
+  <path d="M766 330 a74 50 0 0 0 148 0 Z" fill="#00d563" stroke="#002333" stroke-width="12" stroke-linejoin="round"/>
+  <rect x="814" y="296" width="52" height="62" rx="10" fill="#ffffff" stroke="#002333" stroke-width="10"/>
+'''
+
+# 12. case study (school): university building + check badge
+SCENES["case-study-rotterdam-business-school"] = '''
+  <ellipse cx="600" cy="742" rx="270" ry="34" fill="#dbe6ea"/>
+  <path d="M600 200 L840 320 L360 320 Z" fill="#ffffff" stroke="#002333" stroke-width="16" stroke-linejoin="round"/>
+  <rect x="360" y="320" width="480" height="22" rx="6" fill="#cdd9de"/>
+  <g fill="#ffffff" stroke="#002333" stroke-width="12">
+    <rect x="392" y="360" width="46" height="280" rx="10"/>
+    <rect x="486" y="360" width="46" height="280" rx="10"/>
+    <rect x="580" y="360" width="46" height="280" rx="10"/>
+    <rect x="674" y="360" width="46" height="280" rx="10"/>
+    <rect x="768" y="360" width="46" height="280" rx="10"/>
+  </g>
+  <rect x="350" y="640" width="500" height="26" rx="8" fill="#ffffff" stroke="#002333" stroke-width="12"/>
+  <rect x="320" y="666" width="560" height="28" rx="8" fill="#cdd9de"/>
+  <path d="M600 248 L724 310 L476 310 Z" fill="#00d563"/>
+  <circle cx="820" cy="560" r="56" fill="#00d563" stroke="#002333" stroke-width="12"/>
+  <path d="M793 558 l19 21 l37 -45" stroke="#ffffff" stroke-width="14" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+'''
+
+# 13. competitor review: review card with stars + magnifier
+SCENES["cograder-review-2026-higher-education"] = '''
+  <defs><path id="st" d="M0,-40 L11.7,-12.4 L40,-12.4 L16.5,5 L25,33 L0,15.5 L-25,33 L-16.5,5 L-40,-12.4 L-11.7,-12.4 Z"/></defs>
+  <ellipse cx="560" cy="742" rx="240" ry="34" fill="#dbe6ea"/>
+  <rect x="320" y="220" width="480" height="380" rx="30" fill="#ffffff" stroke="#002333" stroke-width="16"/>
+  <g fill="#00d563">
+    <use href="#st" transform="translate(390 320)"/><use href="#st" transform="translate(470 320)"/><use href="#st" transform="translate(550 320)"/><use href="#st" transform="translate(630 320)"/>
+  </g>
+  <use href="#st" transform="translate(710 320)" fill="#cdd9de"/>
+  <g fill="#cdd9de"><rect x="372" y="400" width="370" height="22" rx="11"/><rect x="372" y="446" width="330" height="22" rx="11"/><rect x="372" y="492" width="280" height="22" rx="11"/></g>
+  <line x1="772" y1="572" x2="876" y2="676" stroke="#002333" stroke-width="38" stroke-linecap="round"/>
+  <circle cx="690" cy="490" r="150" fill="#ffffff" fill-opacity="0.4" stroke="#002333" stroke-width="22"/>
+'''
+
+# 14. EU AI Act: gavel + sound block on EU stars circle
+SCENES["eu-ai-act-higher-education-assessment"] = '''
+  <defs><path id="s" d="M0,-8 L2.3,-2.5 L8,-2.5 L3.3,1 L5,6.5 L0,3.1 L-5,6.5 L-3.3,1 L-8,-2.5 L-2.3,-2.5 Z" fill="#ffd617"/></defs>
+  <ellipse cx="600" cy="752" rx="210" ry="30" fill="#dbe6ea"/>
+  <circle cx="600" cy="430" r="248" fill="#003399" stroke="#002333" stroke-width="10"/>
+  <g>
+    <use href="#s" transform="translate(600,254) scale(1.6)"/><use href="#s" transform="translate(688,278) scale(1.6)"/>
+    <use href="#s" transform="translate(752,342) scale(1.6)"/><use href="#s" transform="translate(776,430) scale(1.6)"/>
+    <use href="#s" transform="translate(752,518) scale(1.6)"/><use href="#s" transform="translate(688,582) scale(1.6)"/>
+    <use href="#s" transform="translate(600,606) scale(1.6)"/><use href="#s" transform="translate(512,582) scale(1.6)"/>
+    <use href="#s" transform="translate(448,518) scale(1.6)"/><use href="#s" transform="translate(424,430) scale(1.6)"/>
+    <use href="#s" transform="translate(448,342) scale(1.6)"/><use href="#s" transform="translate(512,278) scale(1.6)"/>
+  </g>
+  <rect x="488" y="566" width="224" height="30" rx="15" fill="#ffffff" stroke="#002333" stroke-width="10"/>
+  <rect x="512" y="540" width="176" height="30" rx="12" fill="#ffffff" stroke="#002333" stroke-width="10"/>
+  <g transform="rotate(-24 600 430)">
+    <rect x="512" y="318" width="176" height="84" rx="28" fill="#ffffff" stroke="#002333" stroke-width="14"/>
+    <rect x="592" y="318" width="16" height="84" fill="#cfd9de"/>
+    <rect x="586" y="402" width="28" height="150" rx="14" fill="#ffffff" stroke="#002333" stroke-width="14"/>
+  </g>
+'''
+
+# 15. NSS turnaround: stopwatch + rising bars + upward arrow
+SCENES["feedback-turnaround-nss-scores"] = '''
+  <ellipse cx="500" cy="712" rx="220" ry="34" fill="#dbe6ea"/>
+  <g>
+    <rect x="742" y="556" width="62" height="120" rx="26" fill="#00b85f"/>
+    <rect x="828" y="486" width="62" height="190" rx="26" fill="#00c95c"/>
+    <rect x="914" y="396" width="62" height="280" rx="26" fill="#00d563"/>
+  </g>
+  <g stroke="#00b85f" stroke-width="18" stroke-linecap="round" fill="none">
+    <path d="M705 650 Q855 615 945 392"/>
+  </g>
+  <path d="M957 363 L984 408 L906 376 Z" fill="#00b85f" stroke="#00b85f" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
+  <g transform="translate(500 478)">
+    <rect x="-22" y="-228" width="44" height="44" rx="18" fill="#cdd9de"/>
+    <rect x="-46" y="-244" width="92" height="30" rx="15" fill="#00d563"/>
+    <circle cx="0" cy="0" r="186" fill="#ffffff" stroke="#002333" stroke-width="18"/>
+    <path d="M0 -150 A150 150 0 0 1 130 75" fill="none" stroke="#00d563" stroke-width="18" stroke-linecap="round"/>
+    <g stroke="#002333" stroke-opacity="0.5" stroke-width="6" stroke-linecap="round">
+      <line x1="0" y1="-150" x2="0" y2="-122"/><line x1="0" y1="150" x2="0" y2="122"/>
+      <line x1="-150" y1="0" x2="-122" y2="0"/><line x1="150" y1="0" x2="122" y2="0"/>
+    </g>
+    <line x1="0" y1="0" x2="86" y2="-104" stroke="#002333" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="17" fill="#00d563"/>
+  </g>
+'''
+
+# 16. formative assessment guide: open book + bookmark + check
+SCENES["formative-assessment-higher-education"] = '''
+  <ellipse cx="600" cy="730" rx="250" ry="36" fill="#dbe6ea"/>
+  <path d="M600 280 C520 230 410 230 330 262 L330 620 C410 588 520 588 600 638 Z" fill="#ffffff" stroke="#002333" stroke-width="14" stroke-linejoin="round"/>
+  <path d="M600 280 C680 230 790 230 870 262 L870 620 C790 588 680 588 600 638 Z" fill="#ffffff" stroke="#002333" stroke-width="14" stroke-linejoin="round"/>
+  <rect x="588" y="280" width="24" height="358" rx="8" fill="#cdd9de"/>
+  <g fill="#00c95c">
+    <rect x="372" y="330" width="180" height="18" rx="9"/><rect x="372" y="370" width="160" height="18" rx="9"/><rect x="372" y="410" width="180" height="18" rx="9"/>
+    <rect x="648" y="330" width="180" height="18" rx="9"/><rect x="668" y="370" width="160" height="18" rx="9"/><rect x="648" y="410" width="180" height="18" rx="9"/>
+  </g>
+  <path d="M760 230 L820 230 L820 350 L790 322 L760 350 Z" fill="#00d563" stroke="#002333" stroke-width="10" stroke-linejoin="round"/>
+  <circle cx="430" cy="560" r="52" fill="#00d563" stroke="#002333" stroke-width="10"/>
+  <path d="M404 558 l18 20 l36 -44" stroke="#ffffff" stroke-width="14" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+'''
+
+# 17. GDPR: document + green lines + EU/UK lock badge
+SCENES["gdpr-ai-assessment-compliance"] = '''
+  <defs>
+    <clipPath id="ukclip"><circle cx="958" cy="702" r="50"/></clipPath>
+    <path id="eustar" d="M0,-9 L2.6,-2.8 L9,-2.8 L3.7,1.1 L5.6,7.3 L0,3.5 L-5.6,7.3 L-3.7,1.1 L-9,-2.8 L-2.6,-2.8 Z" fill="#ffd617"/>
+  </defs>
+  <ellipse cx="560" cy="772" rx="250" ry="34" fill="#dbe6ea"/>
+  <path d="M360 150 L660 150 L770 260 L770 730 L360 730 Z" fill="#ffffff" stroke="#002333" stroke-width="16" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M660 150 L660 260 L770 260 Z" fill="#cdd9de"/>
+  <g fill="#00c95c">
+    <rect x="406" y="338" width="296" height="30" rx="15"/>
+    <rect x="406" y="392" width="306" height="30" rx="15"/>
+    <rect x="406" y="446" width="248" height="30" rx="15"/>
+    <rect x="406" y="500" width="300" height="30" rx="15"/>
+    <rect x="406" y="554" width="226" height="30" rx="15"/>
+  </g>
+  <rect x="700" y="566" width="356" height="252" rx="30" fill="#ffffff" stroke="#002333" stroke-width="14"/>
+  <rect x="726" y="610" width="150" height="168" rx="20" fill="#eef4f6"/>
+  <rect x="884" y="610" width="150" height="168" rx="20" fill="#eef4f6"/>
+  <g>
+    <path d="M768 700 V658 a22 22 0 0 1 44 0 V700" fill="none" stroke="#06205c" stroke-width="16" stroke-linecap="round"/>
+    <circle cx="790" cy="702" r="50" fill="#003399"/>
+    <use href="#eustar" transform="translate(790,668) scale(0.62)"/>
+    <use href="#eustar" transform="translate(806,672) scale(0.62)"/>
+    <use href="#eustar" transform="translate(818,684) scale(0.62)"/>
+    <use href="#eustar" transform="translate(822,702) scale(0.62)"/>
+    <use href="#eustar" transform="translate(818,720) scale(0.62)"/>
+    <use href="#eustar" transform="translate(806,732) scale(0.62)"/>
+    <use href="#eustar" transform="translate(790,736) scale(0.62)"/>
+    <use href="#eustar" transform="translate(774,732) scale(0.62)"/>
+    <use href="#eustar" transform="translate(762,720) scale(0.62)"/>
+    <use href="#eustar" transform="translate(758,702) scale(0.62)"/>
+    <use href="#eustar" transform="translate(762,684) scale(0.62)"/>
+    <use href="#eustar" transform="translate(774,672) scale(0.62)"/>
+  </g>
+  <g>
+    <path d="M936 700 V658 a22 22 0 0 1 44 0 V700" fill="none" stroke="#06205c" stroke-width="16" stroke-linecap="round"/>
+    <g clip-path="url(#ukclip)">
+      <rect x="908" y="652" width="100" height="100" fill="#012169"/>
+      <line x1="908" y1="652" x2="1008" y2="752" stroke="#ffffff" stroke-width="20"/>
+      <line x1="1008" y1="652" x2="908" y2="752" stroke="#ffffff" stroke-width="20"/>
+      <line x1="908" y1="652" x2="1008" y2="752" stroke="#c8102e" stroke-width="9"/>
+      <line x1="1008" y1="652" x2="908" y2="752" stroke="#c8102e" stroke-width="9"/>
+      <rect x="947" y="652" width="22" height="100" fill="#ffffff"/>
+      <rect x="908" y="691" width="100" height="22" fill="#ffffff"/>
+      <rect x="951" y="652" width="14" height="100" fill="#c8102e"/>
+      <rect x="908" y="695" width="100" height="14" fill="#c8102e"/>
+    </g>
+  </g>
+'''
+
+# 18. competitor compare: two cards + compare badge
+SCENES["gradescope-review-2026-higher-education"] = '''
+  <ellipse cx="600" cy="742" rx="260" ry="32" fill="#dbe6ea"/>
+  <rect x="232" y="244" width="300" height="412" rx="28" fill="#ffffff" stroke="#002333" stroke-width="14"/>
+  <g fill="#cdd9de"><rect x="272" y="300" width="200" height="22" rx="11"/><rect x="272" y="344" width="160" height="22" rx="11"/></g>
+  <g fill="#dde6ea"><rect x="272" y="430" width="220" height="18" rx="9"/><rect x="272" y="468" width="200" height="18" rx="9"/><rect x="272" y="506" width="220" height="18" rx="9"/><rect x="272" y="544" width="170" height="18" rx="9"/></g>
+  <rect x="668" y="244" width="300" height="412" rx="28" fill="#ffffff" stroke="#002333" stroke-width="14"/>
+  <path d="M668 272 a28 28 0 0 1 28 -28 h244 a28 28 0 0 1 28 28 v52 h-300 Z" fill="#00d563"/>
+  <g fill="#dde6ea"><rect x="708" y="430" width="220" height="18" rx="9"/><rect x="708" y="468" width="200" height="18" rx="9"/><rect x="708" y="506" width="220" height="18" rx="9"/><rect x="708" y="544" width="180" height="18" rx="9"/></g>
+  <circle cx="600" cy="450" r="50" fill="#002333"/>
+  <g stroke="#00e075" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="580" y1="438" x2="620" y2="438"/>
+    <path d="M610 428 L622 438 L610 448"/>
+    <line x1="620" y1="462" x2="580" y2="462"/>
+    <path d="M590 452 L578 462 L590 472"/>
+  </g>
+'''
+
+# 19. formative feedback at scale: big green bubble + smaller bubbles + check
+SCENES["how-ai-delivers-formative-feedback-at-scale"] = '''
+  <ellipse cx="540" cy="720" rx="240" ry="36" fill="#dbe6ea"/>
+  <path d="M812 250 h150 a26 26 0 0 1 26 26 v92 a26 26 0 0 1 -26 26 h-70 l-30 34 v-34 h-50 a26 26 0 0 1 -26 -26 v-92 a26 26 0 0 1 26 -26 Z" fill="#ffffff" stroke="#002333" stroke-width="14" stroke-linejoin="round"/>
+  <path d="M860 470 h120 a24 24 0 0 1 24 24 v66 a24 24 0 0 1 -24 24 h-40 l-26 30 v-30 h-54 a24 24 0 0 1 -24 -24 v-66 a24 24 0 0 1 24 -24 Z" fill="#ffffff" stroke="#002333" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M330 250 h360 a40 40 0 0 1 40 40 v200 a40 40 0 0 1 -40 40 h-250 l-70 78 v-78 h-40 a40 40 0 0 1 -40 -40 v-200 a40 40 0 0 1 40 -40 Z" fill="#00d563" stroke="#002333" stroke-width="16" stroke-linejoin="round"/>
+  <path d="M430 400 l52 56 l108 -128" stroke="#002333" stroke-width="30" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+'''
+
+# 20. human in the loop: circular arrow around a person + check
+SCENES["human-in-the-loop-ai-assessment"] = '''
+  <ellipse cx="600" cy="742" rx="200" ry="30" fill="#dbe6ea"/>
+  <path d="M600 250 A176 176 0 1 1 424 426" stroke="#00d563" stroke-width="26" fill="none" stroke-linecap="round"/>
+  <path d="M566 232 L612 246 L598 292 Z" fill="#00d563" stroke="#00d563" stroke-width="8" stroke-linejoin="round"/>
+  <circle cx="600" cy="392" r="64" fill="#ffffff" stroke="#002333" stroke-width="14"/>
+  <path d="M504 556 a96 84 0 0 1 192 0 Z" fill="#ffffff" stroke="#002333" stroke-width="14" stroke-linejoin="round"/>
+  <circle cx="724" cy="556" r="50" fill="#00d563" stroke="#002333" stroke-width="10"/>
+  <path d="M700 554 l16 18 l34 -40" stroke="#ffffff" stroke-width="13" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+'''
+
+# 21. marking time: clock + tidy paper stack
+SCENES["lecturer-marking-time-higher-education"] = '''
+  <ellipse cx="370" cy="700" rx="170" ry="28" fill="#dbe6ea"/>
+  <ellipse cx="780" cy="612" rx="180" ry="30" fill="#dbe6ea"/>
+  <rect x="232" y="500" width="300" height="64" rx="16" fill="#cdd9de" stroke="#002333" stroke-width="12"/>
+  <rect x="246" y="438" width="300" height="64" rx="16" fill="#ffffff" stroke="#002333" stroke-width="12"/>
+  <rect x="232" y="376" width="300" height="64" rx="16" fill="#ffffff" stroke="#002333" stroke-width="12"/>
+  <g fill="#00c95c">
+    <rect x="266" y="398" width="170" height="18" rx="9"/>
+    <rect x="266" y="522" width="170" height="18" rx="9"/>
+  </g>
+  <circle cx="780" cy="372" r="172" fill="#ffffff" stroke="#002333" stroke-width="18"/>
+  <rect x="752" y="182" width="56" height="34" rx="12" fill="#00d563"/>
+  <g stroke="#002333" stroke-width="6" stroke-linecap="round" stroke-opacity="0.45">
+    <line x1="780" y1="218" x2="780" y2="244"/><line x1="780" y1="500" x2="780" y2="526"/>
+    <line x1="624" y1="372" x2="650" y2="372"/><line x1="936" y1="372" x2="910" y2="372"/>
+  </g>
+  <line x1="780" y1="372" x2="780" y2="262" stroke="#002333" stroke-width="16" stroke-linecap="round"/>
+  <line x1="780" y1="372" x2="872" y2="404" stroke="#00b85f" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="780" cy="372" r="18" fill="#00d563"/>
+'''
+
+# 22. NSS scores: survey clipboard with star rating + trend
+SCENES["nss-assessment-feedback-scores"] = '''
+  <defs><path id="star5" d="M0,-46 L13.5,-14.2 L46,-14.2 L19,6 L29,38 L0,18 L-29,38 L-19,6 L-46,-14.2 L-13.5,-14.2 Z"/></defs>
+  <ellipse cx="600" cy="772" rx="230" ry="34" fill="#dbe6ea"/>
+  <rect x="380" y="150" width="440" height="580" rx="30" fill="#ffffff" stroke="#002333" stroke-width="16"/>
+  <rect x="500" y="120" width="200" height="64" rx="22" fill="#ffffff" stroke="#002333" stroke-width="14"/>
+  <g fill="#00d563" transform="translate(0 60)">
+    <use href="#star5" transform="translate(470 300) scale(0.9)"/>
+    <use href="#star5" transform="translate(555 300) scale(0.9)"/>
+    <use href="#star5" transform="translate(640 300) scale(0.9)"/>
+    <use href="#star5" transform="translate(725 300) scale(0.9)"/>
+  </g>
+  <use href="#star5" transform="translate(730 360) scale(0.9)" fill="#cdd9de"/>
+  <path d="M440 600 L520 560 L600 580 L680 500 L760 470" stroke="#00b85f" stroke-width="14" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#00b85f"><circle cx="440" cy="600" r="11"/><circle cx="600" cy="580" r="11"/><circle cx="760" cy="470" r="11"/></g>
+'''
+
+# 23. strategy paradox: converging start, diverging arrows
+SCENES["nss-assessment-strategy-paradox"] = '''
+  <ellipse cx="600" cy="742" rx="220" ry="34" fill="#dbe6ea"/>
+  <circle cx="360" cy="450" r="30" fill="#ffffff" stroke="#002333" stroke-width="12"/>
+  <g stroke="#00d563" stroke-width="20" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M390 440 Q620 380 840 250"/>
+  </g>
+  <path d="M812 232 L856 238 L846 282 Z" fill="#00d563" stroke="#00d563" stroke-width="12" stroke-linejoin="round"/>
+  <g stroke="#002333" stroke-width="20" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M390 460 Q620 520 840 650"/>
+  </g>
+  <path d="M812 668 L856 662 L846 618 Z" fill="#002333" stroke="#002333" stroke-width="12" stroke-linejoin="round"/>
+'''
+
+# 24. reduce workload, keep quality: stack of papers + down arrow + check
+SCENES["reducing-marking-workload-without-reducing-feedback-quality"] = '''
+  <ellipse cx="520" cy="752" rx="240" ry="34" fill="#dbe6ea"/>
+  <g stroke="#002333" stroke-width="12">
+    <rect x="330" y="640" width="380" height="70" rx="20" fill="#cdd9de"/>
+    <rect x="345" y="560" width="350" height="70" rx="20" fill="#ffffff"/>
+    <rect x="330" y="480" width="380" height="70" rx="20" fill="#ffffff"/>
+    <rect x="345" y="400" width="350" height="70" rx="20" fill="#ffffff"/>
+    <rect x="330" y="320" width="380" height="70" rx="20" fill="#ffffff"/>
+  </g>
+  <circle cx="630" cy="355" r="40" fill="#00d563" stroke="#002333" stroke-width="10"/>
+  <path d="M612 354 l13 15 l28 -34" stroke="#ffffff" stroke-width="11" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <g stroke="#00b85f" stroke-width="24" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="850" y1="300" x2="850" y2="580"/>
+  </g>
+  <path d="M806 548 L850 604 L894 548 Z" fill="#00b85f" stroke="#00b85f" stroke-width="14" stroke-linejoin="round"/>
+'''
+
+# 25. creativity: lightbulb with upward sprout
+SCENES["why-ai-feedback-nurtures-creativity"] = '''
+  <ellipse cx="600" cy="742" rx="160" ry="28" fill="#dbe6ea"/>
+  <g stroke="#00d563" stroke-width="16" stroke-linecap="round">
+    <line x1="600" y1="120" x2="600" y2="166"/>
+    <line x1="418" y1="196" x2="450" y2="228"/>
+    <line x1="782" y1="196" x2="750" y2="228"/>
+    <line x1="360" y1="410" x2="406" y2="410"/>
+    <line x1="840" y1="410" x2="794" y2="410"/>
+  </g>
+  <circle cx="600" cy="412" r="150" fill="#ffffff" stroke="#002333" stroke-width="16"/>
+  <g fill="#ffffff" stroke="#002333" stroke-width="12" stroke-linejoin="round">
+    <rect x="556" y="556" width="88" height="40" rx="12"/>
+    <rect x="572" y="596" width="56" height="34" rx="12"/>
+  </g>
+  <path d="M600 482 V392" stroke="#00b85f" stroke-width="14" stroke-linecap="round"/>
+  <ellipse cx="566" cy="392" rx="22" ry="46" fill="#00d563" transform="rotate(-36 566 392)"/>
+  <ellipse cx="634" cy="392" rx="22" ry="46" fill="#00d563" transform="rotate(36 634 392)"/>
+  <circle cx="600" cy="372" r="13" fill="#00b85f"/>
+'''
+
+# 26. AI grading tools guide: evaluation checklist clipboard (how to choose)
+SCENES["ai-grading-tools-higher-education-guide"] = '''
+  <ellipse cx="600" cy="770" rx="212" ry="32" fill="#dbe6ea"/>
+  <rect x="356" y="176" width="488" height="566" rx="38" fill="#ffffff" stroke="#002333" stroke-width="16"/>
+  <rect x="510" y="146" width="180" height="72" rx="24" fill="#00d563" stroke="#002333" stroke-width="14"/>
+  <rect x="404" y="286" width="70" height="70" rx="18" fill="#00d563" stroke="#002333" stroke-width="12"/>
+  <path d="M421 320 l15 16 l26 -32" stroke="#ffffff" stroke-width="13" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="502" y="304" width="300" height="34" rx="17" fill="#cdd9de"/>
+  <rect x="404" y="390" width="70" height="70" rx="18" fill="#00d563" stroke="#002333" stroke-width="12"/>
+  <path d="M421 424 l15 16 l26 -32" stroke="#ffffff" stroke-width="13" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="502" y="408" width="256" height="34" rx="17" fill="#cdd9de"/>
+  <rect x="404" y="494" width="70" height="70" rx="18" fill="#00d563" stroke="#002333" stroke-width="12"/>
+  <path d="M421 528 l15 16 l26 -32" stroke="#ffffff" stroke-width="13" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="502" y="512" width="290" height="34" rx="17" fill="#cdd9de"/>
+  <rect x="404" y="598" width="70" height="70" rx="18" fill="#ffffff" stroke="#002333" stroke-width="12"/>
+  <rect x="502" y="616" width="238" height="34" rx="17" fill="#cdd9de"/>
+'''
+
+# 27. Eduface vs tools: comparison bars, green winner tallest
+SCENES["eduface-vs-ai-grading-tools"] = '''
+  <ellipse cx="600" cy="768" rx="250" ry="32" fill="#dbe6ea"/>
+  <line x1="296" y1="704" x2="904" y2="704" stroke="#002333" stroke-width="16" stroke-linecap="round"/>
+  <rect x="316" y="504" width="112" height="200" rx="18" fill="#ffffff" stroke="#002333" stroke-width="14"/>
+  <rect x="466" y="434" width="112" height="270" rx="18" fill="#ffffff" stroke="#002333" stroke-width="14"/>
+  <rect x="616" y="360" width="112" height="344" rx="18" fill="#cdd9de" stroke="#002333" stroke-width="14"/>
+  <rect x="766" y="250" width="112" height="454" rx="18" fill="#00d563" stroke="#002333" stroke-width="14"/>
+  <circle cx="822" cy="206" r="48" fill="#ffffff" stroke="#002333" stroke-width="14"/>
+  <path d="M800 204 l16 17 l30 -37" stroke="#00b85f" stroke-width="15" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+'''
+
+# 28. formative vs summative: clock (timely formative) vs graduation cap (summative)
+SCENES["formative-vs-summative-assessment-ai"] = '''
+  <ellipse cx="378" cy="748" rx="176" ry="30" fill="#dbe6ea"/>
+  <ellipse cx="822" cy="748" rx="176" ry="30" fill="#dbe6ea"/>
+  <line x1="600" y1="210" x2="600" y2="668" stroke="#002333" stroke-width="6" stroke-opacity="0.18" stroke-dasharray="4 22" stroke-linecap="round"/>
+  <circle cx="378" cy="432" r="150" fill="#ffffff" stroke="#002333" stroke-width="18"/>
+  <line x1="378" y1="432" x2="378" y2="336" stroke="#002333" stroke-width="16" stroke-linecap="round"/>
+  <line x1="378" y1="432" x2="446" y2="432" stroke="#002333" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="378" cy="432" r="16" fill="#00b85f"/>
+  <circle cx="474" cy="330" r="50" fill="#00d563" stroke="#002333" stroke-width="12"/>
+  <path d="M454 328 l13 14 l26 -32" stroke="#ffffff" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M822 320 L952 380 L822 440 L692 380 Z" fill="#002333" stroke="#002333" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M770 398 L874 398 L866 468 Q822 492 778 468 Z" fill="#00d563" stroke="#002333" stroke-width="12" stroke-linejoin="round"/>
+  <circle cx="822" cy="380" r="15" fill="#ffffff"/>
+  <path d="M906 388 L906 470" stroke="#00b85f" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="906" cy="488" r="17" fill="#00b85f"/>
+'''
+
+# 29. academic integrity: shield with green check
+SCENES["academic-integrity-ai-assessment-design"] = '''
+  <ellipse cx="600" cy="762" rx="196" ry="32" fill="#dbe6ea"/>
+  <path d="M600 158 L824 244 V468 Q824 626 600 728 Q376 626 376 468 V244 Z" fill="#ffffff" stroke="#002333" stroke-width="18" stroke-linejoin="round"/>
+  <path d="M600 224 L764 287 V468 Q764 588 600 662 Q436 588 436 468 V287 Z" fill="#f0faf4"/>
+  <path d="M516 452 l60 62 l112 -134" stroke="#00d563" stroke-width="34" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+'''
+
+# 30. Jisc/CHEST procurement: document with green approved seal
+SCENES["jisc-chest-ai-assessment-procurement"] = '''
+  <ellipse cx="560" cy="766" rx="212" ry="32" fill="#dbe6ea"/>
+  <path d="M300 158 L620 158 L740 278 L740 706 L300 706 Z" fill="#ffffff" stroke="#002333" stroke-width="16" stroke-linejoin="round"/>
+  <path d="M620 158 L620 278 L740 278 Z" fill="#cdd9de"/>
+  <g fill="#cdd9de"><rect x="352" y="330" width="300" height="28" rx="14"/><rect x="352" y="392" width="340" height="28" rx="14"/><rect x="352" y="454" width="300" height="28" rx="14"/><rect x="352" y="516" width="250" height="28" rx="14"/></g>
+  <path d="M726 636 L706 726 L760 694 L814 726 L794 636 Z" fill="#00b85f" stroke="#002333" stroke-width="10" stroke-linejoin="round"/>
+  <circle cx="760" cy="582" r="96" fill="#00d563" stroke="#002333" stroke-width="14"/>
+  <path d="M716 580 l30 32 l56 -68" stroke="#ffffff" stroke-width="18" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+'''
+
+# 31. how automated assessment works: rubric doc -> 3 AI agents -> reconciled approved grade
+SCENES["how-automated-assessment-works-step-by-step"] = '''
+  <ellipse cx="600" cy="806" rx="400" ry="34" fill="#dbe6ea"/>
+  <g stroke="#002333" stroke-width="10" stroke-linecap="round" fill="none">
+    <line x1="330" y1="450" x2="518" y2="256"/>
+    <line x1="330" y1="450" x2="518" y2="450"/>
+    <line x1="330" y1="450" x2="518" y2="644"/>
+    <line x1="642" y1="256" x2="858" y2="440"/>
+    <line x1="642" y1="450" x2="858" y2="450"/>
+    <line x1="642" y1="644" x2="858" y2="460"/>
+  </g>
+  <rect x="150" y="330" width="182" height="242" rx="22" fill="#ffffff" stroke="#002333" stroke-width="14"/>
+  <g fill="#cdd9de">
+    <rect x="182" y="376" width="120" height="18" rx="9"/>
+    <rect x="182" y="416" width="100" height="18" rx="9"/>
+    <rect x="182" y="456" width="120" height="18" rx="9"/>
+    <rect x="182" y="496" width="76" height="18" rx="9"/>
+  </g>
+  <circle cx="580" cy="256" r="62" fill="#ffffff" stroke="#002333" stroke-width="14"/>
+  <circle cx="580" cy="256" r="20" fill="#00d563"/>
+  <circle cx="580" cy="450" r="62" fill="#ffffff" stroke="#002333" stroke-width="14"/>
+  <circle cx="580" cy="450" r="20" fill="#00d563"/>
+  <circle cx="580" cy="644" r="62" fill="#ffffff" stroke="#002333" stroke-width="14"/>
+  <circle cx="580" cy="644" r="20" fill="#00d563"/>
+  <circle cx="970" cy="450" r="112" fill="#00d563" stroke="#002333" stroke-width="16"/>
+  <path d="M918 448 l32 34 l62 -74" stroke="#ffffff" stroke-width="20" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+'''
+
+# 32. scaling feedback: one big feedback bubble serving a whole cohort
+SCENES["scaling-feedback-higher-education"] = '''
+  <ellipse cx="600" cy="800" rx="330" ry="32" fill="#dbe6ea"/>
+  <path d="M314 140 H886 A44 44 0 0 1 930 184 V388 A44 44 0 0 1 886 432 H626 L540 512 L540 432 H314 A44 44 0 0 1 270 388 V184 A44 44 0 0 1 314 140 Z" fill="#00d563" stroke="#002333" stroke-width="16" stroke-linejoin="round"/>
+  <g fill="#002333">
+    <rect x="330" y="206" width="540" height="26" rx="13"/>
+    <rect x="330" y="266" width="450" height="26" rx="13"/>
+    <rect x="330" y="326" width="510" height="26" rx="13"/>
+  </g>
+  <g stroke="#002333" stroke-width="12" stroke-linejoin="round">
+    <circle cx="340" cy="612" r="30" fill="#ffffff"/>
+    <path d="M294 726 q0 -56 46 -56 q46 0 46 56 Z" fill="#ffffff"/>
+    <circle cx="470" cy="612" r="30" fill="#ffffff"/>
+    <path d="M424 726 q0 -56 46 -56 q46 0 46 56 Z" fill="#ffffff"/>
+    <circle cx="600" cy="612" r="30" fill="#00d563"/>
+    <path d="M554 726 q0 -56 46 -56 q46 0 46 56 Z" fill="#00d563"/>
+    <circle cx="730" cy="612" r="30" fill="#ffffff"/>
+    <path d="M684 726 q0 -56 46 -56 q46 0 46 56 Z" fill="#ffffff"/>
+    <circle cx="860" cy="612" r="30" fill="#ffffff"/>
+    <path d="M814 726 q0 -56 46 -56 q46 0 46 56 Z" fill="#ffffff"/>
+  </g>
+'''
+
+# 33. five questions for learning technologists: magnifier with question mark
+SCENES["ai-assessment-tool-evaluation-questions"] = '''
+  <ellipse cx="600" cy="806" rx="250" ry="32" fill="#dbe6ea"/>
+  <line x1="672" y1="556" x2="836" y2="720" stroke="#002333" stroke-width="58" stroke-linecap="round"/>
+  <line x1="672" y1="556" x2="836" y2="720" stroke="#00d563" stroke-width="30" stroke-linecap="round"/>
+  <circle cx="522" cy="404" r="212" fill="#ffffff" stroke="#002333" stroke-width="22"/>
+  <path d="M462 366 A 62 62 0 1 1 524 428 v 34" stroke="#002333" stroke-width="32" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="524" cy="512" r="20" fill="#002333"/>
+'''
+
+# 34. what lecturers think: lecturer with a thought bubble
+SCENES["what-lecturers-think-ai-marking"] = '''
+  <ellipse cx="470" cy="796" rx="210" ry="32" fill="#dbe6ea"/>
+  <circle cx="782" cy="330" r="196" fill="#00d563" stroke="#002333" stroke-width="16"/>
+  <g fill="#002333">
+    <rect x="668" y="286" width="228" height="24" rx="12"/>
+    <rect x="668" y="336" width="180" height="24" rx="12"/>
+    <rect x="668" y="386" width="210" height="24" rx="12"/>
+  </g>
+  <circle cx="620" cy="522" r="40" fill="#00d563" stroke="#002333" stroke-width="14"/>
+  <circle cx="552" cy="576" r="22" fill="#00d563" stroke="#002333" stroke-width="12"/>
+  <circle cx="404" cy="530" r="86" fill="#ffffff" stroke="#002333" stroke-width="16"/>
+  <path d="M264 754 q0 -146 140 -146 q140 0 140 146 Z" fill="#ffffff" stroke="#002333" stroke-width="16" stroke-linejoin="round"/>
+'''
+
+# 35. faster feedback -> performance: rising line with speed badge
+SCENES["faster-feedback-student-performance"] = '''
+  <ellipse cx="600" cy="792" rx="330" ry="32" fill="#dbe6ea"/>
+  <path d="M250 190 V706 H950" stroke="#002333" stroke-width="18" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M330 620 L490 520 L640 560 L860 300" stroke="#00d563" stroke-width="26" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M770 300 L870 290 L860 390" stroke="#00d563" stroke-width="26" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="330" cy="620" r="26" fill="#ffffff" stroke="#002333" stroke-width="14"/>
+  <circle cx="490" cy="520" r="26" fill="#ffffff" stroke="#002333" stroke-width="14"/>
+  <circle cx="640" cy="560" r="26" fill="#ffffff" stroke="#002333" stroke-width="14"/>
+  <circle cx="390" cy="286" r="82" fill="#00d563" stroke="#002333" stroke-width="16"/>
+  <path d="M404 232 L354 300 L386 300 L374 344 L428 272 L394 272 Z" fill="#ffffff"/>
+'''
+
+# 36. Moodle quiz essay grading: 9 green auto-checked tiles + 1 navy human tile
+def _quiz_grid():
+    parts = ['<ellipse cx="600" cy="812" rx="360" ry="30" fill="#dbe6ea"/>']
+    for i in range(10):
+        c, r = i % 5, i // 5
+        x, y = 169 + c * 178, 250 + r * 178
+        if i < 9:
+            parts.append(f'<rect x="{x}" y="{y}" width="150" height="150" rx="30" fill="#00d563" stroke="#002333" stroke-width="12"/>')
+            parts.append(f'<path d="M{x+42} {y+78} l22 24 l44 -54" stroke="#ffffff" stroke-width="16" fill="none" stroke-linecap="round" stroke-linejoin="round"/>')
+        else:
+            parts.append(f'<rect x="{x}" y="{y}" width="150" height="150" rx="30" fill="#002333" stroke="#002333" stroke-width="12"/>')
+            parts.append(f'<circle cx="{x+75}" cy="{y+58}" r="26" fill="#ffffff"/>')
+            parts.append(f'<path d="M{x+33} {y+126} q0 -40 42 -40 q42 0 42 40 Z" fill="#ffffff"/>')
+    return "\n  " + "\n  ".join(parts) + "\n"
+SCENES["ai-grading-moodle-quiz-essay-questions"] = _quiz_grid()
+
+# 37. best AI grading tools comparison: three product cards, middle one chosen
+SCENES["best-ai-grading-tools-moodle-2026"] = '''
+  <ellipse cx="600" cy="792" rx="360" ry="30" fill="#dbe6ea"/>
+  <rect x="110" y="286" width="300" height="340" rx="22" fill="#ffffff" stroke="#002333" stroke-width="14"/>
+  <g fill="#cdd9de"><rect x="150" y="336" width="150" height="22" rx="11"/><rect x="150" y="384" width="220" height="20" rx="10"/><rect x="150" y="420" width="190" height="20" rx="10"/><rect x="150" y="456" width="210" height="20" rx="10"/></g>
+  <rect x="790" y="286" width="300" height="340" rx="22" fill="#ffffff" stroke="#002333" stroke-width="14"/>
+  <g fill="#cdd9de"><rect x="830" y="336" width="150" height="22" rx="11"/><rect x="830" y="384" width="220" height="20" rx="10"/><rect x="830" y="420" width="190" height="20" rx="10"/><rect x="830" y="456" width="210" height="20" rx="10"/></g>
+  <rect x="446" y="252" width="308" height="408" rx="24" fill="#00d563" stroke="#002333" stroke-width="16"/>
+  <circle cx="600" cy="404" r="86" fill="#ffffff" stroke="#002333" stroke-width="14"/>
+  <path d="M562 402 l26 28 l50 -60" stroke="#00b85f" stroke-width="20" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+'''
+
+# 38. Moodle oral exams: microphone with a green verified check badge
+SCENES["ai-oral-exams-moodle-verify-authorship"] = '''
+  <ellipse cx="560" cy="800" rx="240" ry="30" fill="#dbe6ea"/>
+  <rect x="490" y="180" width="140" height="252" rx="70" fill="#ffffff" stroke="#002333" stroke-width="16"/>
+  <g stroke="#002333" stroke-width="12" stroke-linecap="round"><line x1="524" y1="238" x2="596" y2="238"/><line x1="524" y1="286" x2="596" y2="286"/><line x1="524" y1="334" x2="596" y2="334"/></g>
+  <path d="M406 356 A 154 154 0 0 0 714 356" fill="none" stroke="#002333" stroke-width="16" stroke-linecap="round"/>
+  <line x1="560" y1="510" x2="560" y2="620" stroke="#002333" stroke-width="16" stroke-linecap="round"/>
+  <line x1="486" y1="622" x2="634" y2="622" stroke="#002333" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="712" cy="238" r="62" fill="#00d563" stroke="#002333" stroke-width="14"/>
+  <path d="M684 236 l20 22 l38 -46" stroke="#ffffff" stroke-width="16" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+'''
+
+# 39. Moodle draft feedback: document with a green feedback comment bubble
+SCENES["ai-feedback-moodle-assignment-drafts"] = '''
+  <ellipse cx="560" cy="770" rx="230" ry="32" fill="#dbe6ea"/>
+  <path d="M300 150 L620 150 L740 270 L740 700 L300 700 Z" fill="#ffffff" stroke="#002333" stroke-width="16" stroke-linejoin="round"/>
+  <path d="M620 150 L620 270 L740 270 Z" fill="#cdd9de"/>
+  <g fill="#cdd9de"><rect x="352" y="320" width="300" height="26" rx="13"/><rect x="352" y="378" width="336" height="26" rx="13"/><rect x="352" y="436" width="300" height="26" rx="13"/></g>
+  <path d="M636 470 H902 A28 28 0 0 1 930 498 V632 A28 28 0 0 1 902 660 H772 L724 726 V660 H636 A28 28 0 0 1 608 632 V498 A28 28 0 0 1 636 470 Z" fill="#00d563" stroke="#002333" stroke-width="14" stroke-linejoin="round"/>
+  <g stroke="#ffffff" stroke-width="16" stroke-linecap="round"><line x1="654" y1="530" x2="884" y2="530"/><line x1="654" y1="576" x2="820" y2="576"/><line x1="654" y1="622" x2="856" y2="622"/></g>
+'''
+
+# 40. is AI allowed to mark (Ofqual rules): rulebook + green check
+SCENES["is-ai-allowed-to-mark-assignments-ofqual"] = '''
+  <ellipse cx="600" cy="772" rx="240" ry="32" fill="#dbe6ea"/>
+  <rect x="360" y="216" width="480" height="448" rx="24" fill="#ffffff" stroke="#002333" stroke-width="16"/>
+  <path d="M408 216 h40 v448 h-40 a24 24 0 0 1 -24 -24 v-400 a24 24 0 0 1 24 -24 Z" fill="#002333"/>
+  <g fill="#cdd9de"><rect x="486" y="300" width="286" height="26" rx="13"/><rect x="486" y="356" width="240" height="26" rx="13"/><rect x="486" y="412" width="286" height="26" rx="13"/></g>
+  <circle cx="772" cy="600" r="80" fill="#00d563" stroke="#002333" stroke-width="16"/>
+  <path d="M736 598 l26 28 l48 -58" stroke="#ffffff" stroke-width="18" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+'''
+
+# 41. Ofqual 2026 guidance: signpost with direction signs
+SCENES["ofqual-2026-ai-guidance-awarding-organisations"] = '''
+  <ellipse cx="600" cy="778" rx="220" ry="30" fill="#dbe6ea"/>
+  <rect x="582" y="238" width="36" height="500" rx="14" fill="#002333"/>
+  <rect x="540" y="720" width="120" height="24" rx="12" fill="#002333"/>
+  <path d="M618 272 H812 L856 316 L812 360 H618 Z" fill="#00d563" stroke="#002333" stroke-width="14" stroke-linejoin="round"/>
+  <path d="M582 396 H388 L344 440 L388 484 H582 Z" fill="#ffffff" stroke="#002333" stroke-width="14" stroke-linejoin="round"/>
+  <path d="M618 520 H770 L814 564 L770 608 H618 Z" fill="#ffffff" stroke="#002333" stroke-width="14" stroke-linejoin="round"/>
+'''
+
+# 42. human in the loop marking: green loop ring around a person + approve check
+SCENES["human-in-the-loop-marking-ofqual-compliant"] = '''
+  <ellipse cx="600" cy="778" rx="250" ry="30" fill="#dbe6ea"/>
+  <circle cx="600" cy="424" r="214" fill="none" stroke="#00d563" stroke-width="28"/>
+  <path d="M600 210 l34 -30 l0 60 Z" fill="#00d563"/>
+  <path d="M600 638 l-34 30 l0 -60 Z" fill="#00d563"/>
+  <circle cx="600" cy="386" r="70" fill="#002333"/>
+  <path d="M492 566 q0 -112 108 -112 q108 0 108 112 Z" fill="#002333"/>
+  <circle cx="770" cy="566" r="66" fill="#00d563" stroke="#002333" stroke-width="14"/>
+  <path d="M738 564 l22 24 l42 -50" stroke="#ffffff" stroke-width="16" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+'''
+
+# 43. AI marking vs AI-assisted: two paths, one through a human check gate
+SCENES["ai-marking-vs-ai-assisted-marking"] = '''
+  <ellipse cx="600" cy="792" rx="330" ry="30" fill="#dbe6ea"/>
+  <rect x="150" y="360" width="188" height="228" rx="20" fill="#ffffff" stroke="#002333" stroke-width="16"/>
+  <g fill="#cdd9de"><rect x="184" y="404" width="120" height="20" rx="10"/><rect x="184" y="444" width="98" height="20" rx="10"/><rect x="184" y="484" width="120" height="20" rx="10"/></g>
+  <path d="M338 420 L700 300" stroke="#002333" stroke-width="14" fill="none" stroke-linecap="round"/>
+  <path d="M338 528 L700 636" stroke="#002333" stroke-width="14" fill="none" stroke-linecap="round"/>
+  <circle cx="828" cy="298" r="104" fill="#00d563" stroke="#002333" stroke-width="16"/>
+  <path d="M782 296 l32 34 l60 -74" stroke="#ffffff" stroke-width="20" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="828" cy="636" r="104" fill="#ffffff" stroke="#002333" stroke-width="16"/>
+  <path d="M792 636 h60" stroke="#8fa8b2" stroke-width="18" fill="none" stroke-linecap="round"/>
+  <path d="M842 616 l26 20 l-26 20" stroke="#8fa8b2" stroke-width="18" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+'''
+
+# 44. JCQ/Ofqual checklist: two-column checklist board
+SCENES["jcq-ofqual-ai-checklist-training-providers"] = '''
+  <ellipse cx="600" cy="752" rx="248" ry="32" fill="#dbe6ea"/>
+  <rect x="312" y="196" width="576" height="520" rx="34" fill="#ffffff" stroke="#002333" stroke-width="16"/>
+  <rect x="512" y="164" width="176" height="70" rx="22" fill="#00d563" stroke="#002333" stroke-width="14"/>
+  <rect x="366" y="300" width="64" height="64" rx="16" fill="#00d563" stroke="#002333" stroke-width="12"/><path d="M382 332 l14 15 l24 -30" stroke="#ffffff" stroke-width="13" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="452" y="316" width="120" height="30" rx="15" fill="#cdd9de"/>
+  <rect x="366" y="404" width="64" height="64" rx="16" fill="#00d563" stroke="#002333" stroke-width="12"/><path d="M382 436 l14 15 l24 -30" stroke="#ffffff" stroke-width="13" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="452" y="420" width="120" height="30" rx="15" fill="#cdd9de"/>
+  <rect x="366" y="508" width="64" height="64" rx="16" fill="#00d563" stroke="#002333" stroke-width="12"/><path d="M382 540 l14 15 l24 -30" stroke="#ffffff" stroke-width="13" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="452" y="524" width="120" height="30" rx="15" fill="#cdd9de"/>
+  <rect x="628" y="300" width="64" height="64" rx="16" fill="#00d563" stroke="#002333" stroke-width="12"/><path d="M644 332 l14 15 l24 -30" stroke="#ffffff" stroke-width="13" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="714" y="316" width="120" height="30" rx="15" fill="#cdd9de"/>
+  <rect x="628" y="404" width="64" height="64" rx="16" fill="#00d563" stroke="#002333" stroke-width="12"/><path d="M644 436 l14 15 l24 -30" stroke="#ffffff" stroke-width="13" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="714" y="420" width="120" height="30" rx="15" fill="#cdd9de"/>
+  <rect x="628" y="508" width="64" height="64" rx="16" fill="#00d563" stroke="#002333" stroke-width="12"/><path d="M644 540 l14 15 l24 -30" stroke="#ffffff" stroke-width="13" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="714" y="524" width="120" height="30" rx="15" fill="#cdd9de"/>
+'''
+
+# 45. awarding bodies approve: approved stamp on a policy document
+SCENES["awarding-bodies-approve-ai-marking-tools"] = '''
+  <ellipse cx="560" cy="758" rx="228" ry="32" fill="#dbe6ea"/>
+  <rect x="300" y="200" width="420" height="480" rx="24" fill="#ffffff" stroke="#002333" stroke-width="16"/>
+  <g fill="#cdd9de"><rect x="352" y="284" width="300" height="28" rx="14"/><rect x="352" y="344" width="256" height="28" rx="14"/><rect x="352" y="404" width="300" height="28" rx="14"/></g>
+  <g transform="rotate(-12 700 560)">
+    <rect x="596" y="468" width="212" height="184" rx="26" fill="#00d563" stroke="#002333" stroke-width="16"/>
+    <path d="M646 562 l34 36 l66 -80" stroke="#ffffff" stroke-width="20" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+'''
+
+# 46. marking resilience: a primary assessor and a backup stepping in
+SCENES["marking-resilience-small-training-provider"] = '''
+  <ellipse cx="600" cy="774" rx="290" ry="30" fill="#dbe6ea"/>
+  <circle cx="768" cy="430" r="84" fill="#00d563" stroke="#002333" stroke-width="14"/>
+  <path d="M628 718 q0 -140 140 -140 q140 0 140 140 Z" fill="#00d563" stroke="#002333" stroke-width="14" stroke-linejoin="round"/>
+  <circle cx="452" cy="398" r="96" fill="#002333"/>
+  <path d="M296 720 q0 -156 156 -156 q156 0 156 156 Z" fill="#002333" stroke-linejoin="round"/>
+'''
+
+# 47. slow marking costs: a clock with a red alert badge
+SCENES["slow-marking-costs-training-providers"] = '''
+  <ellipse cx="556" cy="762" rx="230" ry="32" fill="#dbe6ea"/>
+  <circle cx="536" cy="442" r="212" fill="#ffffff" stroke="#002333" stroke-width="20"/>
+  <line x1="536" y1="442" x2="536" y2="302" stroke="#002333" stroke-width="20" stroke-linecap="round"/>
+  <line x1="536" y1="442" x2="640" y2="442" stroke="#002333" stroke-width="20" stroke-linecap="round"/>
+  <circle cx="536" cy="442" r="20" fill="#00b85f"/>
+  <circle cx="726" cy="286" r="78" fill="#ff5a5f" stroke="#002333" stroke-width="14"/>
+  <rect x="716" y="248" width="20" height="48" rx="10" fill="#ffffff"/>
+  <circle cx="726" cy="318" r="12" fill="#ffffff"/>
+'''
+
+# 48. learner complaints: loud speech bubble vs a fading, walking-away figure
+SCENES["learner-complaints-slow-marking-training-providers"] = '''
+  <ellipse cx="400" cy="758" rx="150" ry="28" fill="#dbe6ea"/>
+  <ellipse cx="800" cy="758" rx="150" ry="28" fill="#dbe6ea"/>
+  <path d="M250 260 h300 a36 36 0 0 1 36 36 v170 a36 36 0 0 1 -36 36 h-190 l-70 74 v-74 h-40 a36 36 0 0 1 -36 -36 v-170 a36 36 0 0 1 36 -36 Z" fill="#00d563" stroke="#002333" stroke-width="16" stroke-linejoin="round"/>
+  <circle cx="330" cy="380" r="16" fill="#002333"/><circle cx="400" cy="380" r="16" fill="#002333"/><circle cx="470" cy="380" r="16" fill="#002333"/>
+  <circle cx="800" cy="440" r="88" fill="none" stroke="#002333" stroke-width="14" stroke-opacity="0.35" stroke-dasharray="2 20" stroke-linecap="round"/>
+  <path d="M800 580 q0 -120 120 -120 q120 0 120 120 Z" fill="none" stroke="#002333" stroke-width="14" stroke-opacity="0.35" stroke-dasharray="2 20" stroke-linejoin="round"/>
+  <path d="M700 700 l160 -60" stroke="#002333" stroke-width="14" stroke-opacity="0.35" stroke-dasharray="2 16" stroke-linecap="round"/>
+'''
+
+# 49. bottleneck: wide pipe narrowing to a highlighted choke point
+SCENES["what-to-automate-first-assessment-team"] = '''
+  <ellipse cx="600" cy="774" rx="300" ry="30" fill="#dbe6ea"/>
+  <path d="M180 340 h280 l180 90 l180 -90 h180 v220 h-180 l-180 -90 l-180 90 h-280 Z" fill="#ffffff" stroke="#002333" stroke-width="16" stroke-linejoin="round"/>
+  <circle cx="600" cy="450" r="86" fill="#00d563" stroke="#002333" stroke-width="16"/>
+  <circle cx="600" cy="450" r="30" fill="#ffffff"/>
+  <g fill="#cdd9de"><rect x="210" y="400" width="90" height="30" rx="15"/><rect x="210" y="450" width="120" height="30" rx="15"/><rect x="210" y="500" width="90" height="30" rx="15"/></g>
+  <g fill="#cdd9de"><rect x="900" y="410" width="90" height="30" rx="15"/><rect x="900" y="460" width="70" height="30" rx="15"/></g>
+'''
+
+# 50. hire vs AI: a balance scale between a person icon and a chip icon
+SCENES["hire-assessor-vs-ai-assisted-marking"] = '''
+  <ellipse cx="600" cy="770" rx="270" ry="28" fill="#dbe6ea"/>
+  <line x1="600" y1="230" x2="600" y2="560" stroke="#002333" stroke-width="18" stroke-linecap="round"/>
+  <line x1="360" y1="330" x2="840" y2="330" stroke="#002333" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="600" cy="220" r="24" fill="#002333"/>
+  <path d="M360 330 l-70 150 h140 Z" fill="none" stroke="#002333" stroke-width="14" stroke-linejoin="round"/>
+  <path d="M290 480 q0 60 70 60 q70 0 70 -60 Z" fill="#00d563" stroke="#002333" stroke-width="14"/>
+  <path d="M840 330 l-70 150 h140 Z" fill="none" stroke="#002333" stroke-width="14" stroke-linejoin="round"/>
+  <path d="M770 480 q0 60 70 60 q70 0 70 -60 Z" fill="#002333" stroke="#002333" stroke-width="14"/>
+  <circle cx="500" cy="640" r="70" fill="#00d563" stroke="#002333" stroke-width="14"/>
+  <circle cx="500" cy="614" r="24" fill="#ffffff"/>
+  <path d="M456 686 q0 -40 44 -40 q44 0 44 40 Z" fill="#ffffff"/>
+  <rect x="656" y="576" width="128" height="128" rx="20" fill="#ffffff" stroke="#002333" stroke-width="14"/>
+  <rect x="686" y="606" width="68" height="68" rx="10" fill="#00d563"/>
+  <g stroke="#002333" stroke-width="8" stroke-linecap="round"><line x1="656" y1="600" x2="636" y2="600"/><line x1="656" y1="640" x2="636" y2="640"/><line x1="656" y1="680" x2="636" y2="680"/><line x1="784" y1="600" x2="804" y2="600"/><line x1="784" y1="640" x2="804" y2="640"/><line x1="784" y1="680" x2="804" y2="680"/></g>
+'''
+
+# 51. Moodle outcome-mapped grading: interlocking ring + document with per-outcome checks
+SCENES["ai-grading-moodle-business-case-studies"] = '''
+  <ellipse cx="600" cy="770" rx="280" ry="30" fill="#dbe6ea"/>
+  <circle cx="410" cy="420" r="120" fill="none" stroke="#002333" stroke-width="44"/>
+  <circle cx="590" cy="420" r="120" fill="none" stroke="#00d563" stroke-width="44"/>
+  <path d="M410 300 A120 120 0 0 0 306 480" fill="none" stroke="#002333" stroke-width="44" stroke-linecap="round"/>
+  <rect x="700" y="300" width="260" height="340" rx="24" fill="#ffffff" stroke="#002333" stroke-width="16"/>
+  <rect x="740" y="352" width="64" height="64" rx="14" fill="#00d563" stroke="#002333" stroke-width="10"/><path d="M754 384 l12 13 l20 -26" stroke="#ffffff" stroke-width="11" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="820" y="368" width="100" height="24" rx="12" fill="#cdd9de"/>
+  <rect x="740" y="440" width="64" height="64" rx="14" fill="#00d563" stroke="#002333" stroke-width="10"/><path d="M754 472 l12 13 l20 -26" stroke="#ffffff" stroke-width="11" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="820" y="456" width="100" height="24" rx="12" fill="#cdd9de"/>
+  <rect x="740" y="528" width="64" height="64" rx="14" fill="#002333" stroke="#002333" stroke-width="10"/>
+  <rect x="820" y="544" width="70" height="24" rx="12" fill="#cdd9de"/>
+'''
+
+
+# 52. Practice viva rehearsal (Moodle): mic with replay badge + rising attempt scores
+SCENES["ai-proof-oral-exam-practice-moodle"] = '''
+  <ellipse cx="600" cy="790" rx="290" ry="30" fill="#dbe6ea"/>
+  <rect x="330" y="200" width="130" height="240" rx="65" fill="#ffffff" stroke="#002333" stroke-width="16"/>
+  <g stroke="#002333" stroke-width="12" stroke-linecap="round"><line x1="362" y1="256" x2="428" y2="256"/><line x1="362" y1="302" x2="428" y2="302"/><line x1="362" y1="348" x2="428" y2="348"/></g>
+  <path d="M254 372 A 141 141 0 0 0 536 372" fill="none" stroke="#002333" stroke-width="16" stroke-linecap="round"/>
+  <line x1="395" y1="513" x2="395" y2="624" stroke="#002333" stroke-width="16" stroke-linecap="round"/>
+  <line x1="322" y1="626" x2="468" y2="626" stroke="#002333" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="522" cy="206" r="62" fill="#00d563" stroke="#002333" stroke-width="14"/>
+  <path d="M494 230 a34 34 0 1 0 -4 -38" fill="none" stroke="#ffffff" stroke-width="14" stroke-linecap="round"/>
+  <path d="M478 164 l8 36 l32 -18 Z" fill="#ffffff"/>
+  <rect x="618" y="500" width="92" height="160" rx="16" fill="#ffffff" stroke="#002333" stroke-width="14"/>
+  <rect x="740" y="404" width="92" height="256" rx="16" fill="#ffffff" stroke="#002333" stroke-width="14"/>
+  <rect x="862" y="300" width="92" height="360" rx="16" fill="#00d563" stroke="#002333" stroke-width="14"/>
+  <line x1="586" y1="672" x2="986" y2="672" stroke="#002333" stroke-width="14" stroke-linecap="round"/>
+'''
+
+# 53. Consistent vivas (Canvas): one criteria card driving two identical outcomes
+SCENES["are-oral-exams-ai-proof-canvas"] = '''
+  <ellipse cx="330" cy="748" rx="200" ry="28" fill="#dbe6ea"/>
+  <ellipse cx="870" cy="748" rx="200" ry="28" fill="#dbe6ea"/>
+  <rect x="470" y="150" width="260" height="200" rx="24" fill="#00d563" stroke="#002333" stroke-width="16"/>
+  <g stroke="#ffffff" stroke-width="16" stroke-linecap="round"><line x1="516" y1="212" x2="684" y2="212"/><line x1="516" y1="252" x2="650" y2="252"/><line x1="516" y1="292" x2="684" y2="292"/></g>
+  <path d="M470 250 H330 V444" fill="none" stroke="#002333" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M730 250 H870 V444" fill="none" stroke="#002333" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M180 440 H480 A28 28 0 0 1 508 468 V608 A28 28 0 0 1 480 636 H360 L312 700 V636 H180 A28 28 0 0 1 152 608 V468 A28 28 0 0 1 180 440 Z" fill="#ffffff" stroke="#002333" stroke-width="16" stroke-linejoin="round"/>
+  <path d="M262 534 l30 32 l58 -68" stroke="#00b85f" stroke-width="20" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M720 440 H1020 A28 28 0 0 1 1048 468 V608 A28 28 0 0 1 1020 636 H900 L852 700 V636 H720 A28 28 0 0 1 692 608 V468 A28 28 0 0 1 720 440 Z" fill="#ffffff" stroke="#002333" stroke-width="16" stroke-linejoin="round"/>
+  <path d="M802 534 l30 32 l58 -68" stroke="#00b85f" stroke-width="20" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+'''
+
+# 54. Four examiner dialogue styles (Brightspace): four distinct speech bubbles
+SCENES["ai-oral-examiner-styles-brightspace"] = '''
+  <ellipse cx="600" cy="800" rx="330" ry="30" fill="#dbe6ea"/>
+  <path d="M198 160 H532 A28 28 0 0 1 560 188 V332 A28 28 0 0 1 532 360 H370 L320 410 V360 H198 A28 28 0 0 1 170 332 V188 A28 28 0 0 1 198 160 Z" fill="#ffffff" stroke="#002333" stroke-width="16" stroke-linejoin="round"/>
+  <path d="M332 240 a34 34 0 1 1 33 42 v14" fill="none" stroke="#002333" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="365" cy="320" r="12" fill="#002333"/>
+  <path d="M668 160 H1002 A28 28 0 0 1 1030 188 V332 A28 28 0 0 1 1002 360 H840 L790 410 V360 H668 A28 28 0 0 1 640 332 V188 A28 28 0 0 1 668 160 Z" fill="#002333" stroke="#002333" stroke-width="16" stroke-linejoin="round"/>
+  <rect x="823" y="208" width="24" height="76" rx="12" fill="#ffffff"/>
+  <circle cx="835" cy="314" r="14" fill="#ffffff"/>
+  <path d="M198 470 H532 A28 28 0 0 1 560 498 V642 A28 28 0 0 1 532 670 H370 L320 720 V670 H198 A28 28 0 0 1 170 642 V498 A28 28 0 0 1 198 470 Z" fill="#00d563" stroke="#002333" stroke-width="16" stroke-linejoin="round"/>
+  <path d="M325 566 l30 32 l58 -68" stroke="#ffffff" stroke-width="20" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M668 470 H1002 A28 28 0 0 1 1030 498 V642 A28 28 0 0 1 1002 670 H840 L790 720 V670 H668 A28 28 0 0 1 640 642 V498 A28 28 0 0 1 668 470 Z" fill="#ffffff" stroke="#002333" stroke-width="16" stroke-linejoin="round"/>
+  <g stroke="#002333" stroke-width="16" stroke-linecap="round"><line x1="700" y1="530" x2="970" y2="530"/><line x1="700" y1="572" x2="910" y2="572"/><line x1="700" y1="614" x2="970" y2="614"/></g>
+'''
+
+# 55. Beyond detection (Blackboard): the submission itself generates the follow-up questions
+SCENES["beyond-ai-detection-oral-verification-blackboard"] = '''
+  <ellipse cx="580" cy="778" rx="260" ry="30" fill="#dbe6ea"/>
+  <path d="M250 170 L540 170 L650 280 L650 720 L250 720 Z" fill="#ffffff" stroke="#002333" stroke-width="16" stroke-linejoin="round"/>
+  <path d="M540 170 L540 280 L650 280 Z" fill="#cdd9de"/>
+  <g fill="#cdd9de"><rect x="300" y="340" width="280" height="26" rx="13"/><rect x="300" y="398" width="300" height="26" rx="13"/><rect x="300" y="456" width="240" height="26" rx="13"/><rect x="300" y="514" width="280" height="26" rx="13"/></g>
+  <circle cx="738" cy="596" r="44" fill="#ffffff" stroke="#002333" stroke-width="14"/>
+  <circle cx="818" cy="456" r="64" fill="#ffffff" stroke="#002333" stroke-width="14"/>
+  <circle cx="900" cy="272" r="98" fill="#00d563" stroke="#002333" stroke-width="16"/>
+  <path d="M866 244 a34 34 0 1 1 34 42 v14" fill="none" stroke="#ffffff" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="900" cy="324" r="12" fill="#ffffff"/>
+'''
+
+for slug, scene in SCENES.items():
+    html = WRAP_HEAD + scene.strip("\n") + WRAP_TAIL
+    with open(os.path.join(OUT, slug + ".html"), "w") as f:
+        f.write(html)
+
+
+print(f"wrote {len(SCENES)} html files")

@@ -1,0 +1,135 @@
+{
+  "slug": "breda-university-of-applied-sciences",
+  "coach": {
+    "next_action": {
+      "wat": "",
+      "wanneer": "",
+      "wie": "",
+      "waarom": ""
+    },
+    "prep": {
+      "doel": "",
+      "openers": [],
+      "vragen": [],
+      "risicos": [],
+      "bezwaren": []
+    },
+    "meddpicc": {},
+    "gate": {
+      "fase": "",
+      "open": null,
+      "ontbreekt": []
+    },
+    "stakeholders": [],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": ""
+  },
+  "close": {
+    "lead_id": "lead_BM1EBRIygnD5qEB6glUt8HXYlcPFV3MhfyPMyNWRkGK",
+    "naam": "Breda University of Applied Sciences",
+    "url": "https://app.close.com/lead/lead_BM1EBRIygnD5qEB6glUt8HXYlcPFV3MhfyPMyNWRkGK/",
+    "lead_status": "Prospect",
+    "opportunity_id": null,
+    "fase": null,
+    "fase_type": null,
+    "waarde": null,
+    "valuta": "EUR",
+    "confidence": null,
+    "close_date": null,
+    "eigenaar": "Eduface CRM",
+    "crm_note": "",
+    "contacten": [
+      {
+        "naam": "Erwin van Braam",
+        "titel": "Director of Education, Research & Information Management",
+        "email": "braam.e@buas.nl",
+        "id": "cont_mW32wdRiOvZhKhQ32yuCcA2yOH1ZxhbBrhe9Cn3cc0t"
+      },
+      {
+        "naam": "Ines Springael",
+        "titel": "Programme Lead CTL/AI & Researcher",
+        "email": null,
+        "id": "cont_lFjSVbr6ECLFGDlcAimnLO1Tsps7SAI3nQsCQzd6UxE"
+      },
+      {
+        "naam": "Tanja Beks",
+        "titel": "Policy officer Education / Project leader Teaching And Learning With AI Europe Conference",
+        "email": "beks.t@buas.nl",
+        "id": "cont_EzrkdNBSw7dOzPzxtHRd1Bs5vVScnfMVEJwI1vw0XtP"
+      }
+    ],
+    "gesprekken": [
+      {
+        "id": "acti_AgAtXGp18cB27GwdsV2QfWux7nERasu5SAZEcBT6mwE",
+        "soort": "call",
+        "datum": "2026-03-31",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "VM ingesproken",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_VmOqCJ1CyYtIS4mcMi0t32ZcmkwS16F0z9yJhkL7ZCH",
+        "soort": "call",
+        "datum": "2026-03-31",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "VM ingesproken",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_M2YXStcqYHohv7zvW3s5h6v0SGRD6OTQQZYbt1eVaME",
+        "soort": "call",
+        "datum": "2026-03-31",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Zij heeft mij terug gebeld\nZe zij dat ik het op de mail kon zetten en dat ze terug bij mij gaat komen. Zij is de juiste persoon binnen Breda. Ze Heeft dat Compass gemaakt en is zeker voor AI.",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_Qy2tpb8sV3IQQ3S2SYsVAX6oh0gIFGO96wMtsYBMGDE",
+        "soort": "call",
+        "datum": "2026-04-14",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Zij heeft opgenomen en stond op dat moment op Schiphol. Ze zei dat ze naar de mail gaat kijken.",
+        "transcript_beschikbaar": false,
+        "komend": false
+      },
+      {
+        "id": "acti_EeYkuilNzUAVqxBYWOHzwzeErkai4WfOMj3cRd1KUSH",
+        "soort": "call",
+        "datum": "2026-04-20",
+        "titel": "Telefoon outbound",
+        "duur_min": 0,
+        "status": "answered",
+        "deelnemers": [],
+        "samenvatting": null,
+        "eigen_notitie": "Niet opgenomen, ook geen VM.\n\nInsteek van het belletje zou zijn dat we ook een key note mochten geven bij het NPULS comminty dag.",
+        "transcript_beschikbaar": false,
+        "komend": false
+      }
+    ],
+    "open_taken": [],
+    "laatste_gesprek": "2026-04-20",
+    "volgende_afspraak": null,
+    "aantal_gehad": 5,
+    "gesynct": "2026-08-29 13:35"
+  }
+}

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#002333; --green:#00e075; --green-deep:#007b54; --green-700:#006754;
+    --ink-300:#a9bcc4; --white:#fff;
+    --font-display:"League Spartan",sans-serif; --font-sans:"Inter",sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1200px;height:630px}
+  .cover{position:relative;width:1200px;height:630px;overflow:hidden;display:flex;font-family:var(--font-sans)}
+  /* left navy panel */
+  .left{
+    width:680px;background:var(--navy);color:var(--white);
+    padding:70px 56px 64px 80px;display:flex;flex-direction:column;justify-content:space-between;position:relative;
+  }
+  .eyebrow{font-size:17px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--green);
+     display:flex;align-items:center;gap:12px}
+  .eyebrow .dot{width:9px;height:9px;border-radius:50%;background:var(--green)}
+  .headline{font-family:var(--font-display);font-weight:700;font-size:62px;line-height:1.0;letter-spacing:-.02em;max-width:520px}
+  .wordmark{font-family:var(--font-display);font-weight:700;font-size:28px;letter-spacing:-.01em}
+  .wordmark .cap{color:var(--green)}
+  /* right stat panel with gradient */
+  .right{flex:1;background:linear-gradient(150deg,#007b54 0%,#006754 55%,#004c4c 100%);
+     position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--white);overflow:hidden}
+  .right::after{content:"";position:absolute;width:520px;height:520px;border-radius:50%;
+     border:2px solid rgba(255,255,255,.12);top:-160px;right:-160px}
+  .right::before{content:"";position:absolute;width:340px;height:340px;border-radius:50%;
+     border:2px solid rgba(255,255,255,.12);bottom:-120px;left:-120px}
+  .stat{font-family:var(--font-display);font-weight:800;font-size:200px;line-height:.86;letter-spacing:-.04em;z-index:2}
+  .stat .pct{color:var(--green);font-size:120px;vertical-align:top}
+  .statlabel{z-index:2;font-size:19px;font-weight:500;letter-spacing:.04em;max-width:300px;text-align:center;
+     color:rgba(255,255,255,.85);margin-top:6px}
+</style>
+</head>
+<body>
+  <div class="cover">
+    <div class="left">
+      <div class="eyebrow"><span class="dot"></span>Eduface · Assessment</div>
+      <h1 class="headline">How accurate is AI marking, really?</h1>
+      <div class="wordmark">eduface<span class="cap">.</span></div>
+    </div>
+    <div class="right">
+      <div class="stat">95<span class="pct">%</span></div>
+      <div class="statlabel">alignment with human inter-rater reliability</div>
+    </div>
+  </div>
+</body>
+</html>

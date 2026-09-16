@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Exam Grader · it scores the batch, you open what it is unsure about</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  /* Tokens uit references/design-system/core/tokens.css.
+     Vormtaal uit projects/app-homepage-redesign/: een held-getal met een gewone regel
+     eronder, geen ratio's, geen meters, geen pills om metadata, drie tekstgroottes,
+     Inter, en de zoek- en filterbalk staat er altijd. */
+  :root{
+    --navy:#002333; --green:#00e075; --green-deep:#007b54;
+    --ink-700:#2c4a57; --ink-500:#5b7480; --ink-300:#a9bcc4; --ink-200:#cdd9de; --ink-100:#e7eef0; --ink-50:#f3f7f8; --white:#fff;
+    --r-md:8px; --r-lg:10px; --r-xl:12px; --r-2xl:20px; --r-full:9999px;
+    --sh-md:0 4px 16px rgba(0,35,51,.08); --sh-lg:0 12px 40px rgba(0,35,51,.10);
+    --control-h:32px;
+  }
+  *{box-sizing:border-box;margin:0}
+  html,body{background:transparent;font-family:Inter,ui-sans-serif,system-ui,sans-serif;color:var(--navy);-webkit-font-smoothing:antialiased}
+  body{width:1520px;height:700px;overflow:hidden;display:grid;place-items:center}
+
+  .t-block{font-size:17px;font-weight:600;line-height:1.3}
+  .t-hero{font-size:24px;font-weight:600;line-height:1.2;font-variant-numeric:tabular-nums}
+  .t{font-size:14px;font-weight:400;line-height:1.55}
+  .muted{color:var(--ink-500)}
+
+  .frame{width:1440px;height:620px;background:var(--white);border-radius:var(--r-2xl);box-shadow:var(--sh-lg);
+         border:1px solid var(--ink-100);display:flex;flex-direction:column;overflow:hidden}
+  .top{height:48px;border-bottom:1px solid var(--ink-100);display:flex;align-items:center;padding:0 24px;flex-shrink:0}
+  .crumb{display:flex;align-items:center;gap:8px}
+  .crumb .sep{color:var(--ink-300)}
+
+  .head{padding:24px 28px 18px;display:flex;flex-direction:column;gap:18px}
+  .stat{display:flex;flex-direction:column;gap:4px}
+  .stat .big{display:flex;align-items:baseline;gap:8px}
+
+  /* zoek- en filterbalk: 32px controls, hoort er altijd te staan */
+  .fbar{display:flex;align-items:center;gap:8px}
+  .ctrl{height:var(--control-h);border:1px solid var(--ink-200);border-radius:var(--r-md);background:var(--white);
+        display:flex;align-items:center;gap:8px;padding:0 12px;font-size:14px;color:var(--ink-500);white-space:nowrap}
+  .ctrl.search{flex:1;max-width:320px}
+  .ctrl.on{border-color:var(--navy);color:var(--navy);font-weight:500}
+  .ctrl svg{width:14px;height:14px}
+  .fbar .right{margin-left:auto;display:flex;align-items:center;gap:8px}
+
+  .list{flex:1;display:flex;flex-direction:column;border-top:1px solid var(--ink-100);min-height:0}
+  .row{height:48px;display:flex;align-items:center;gap:16px;padding:0 28px;border-bottom:1px solid var(--ink-100)}
+  .row .q{flex:1}
+  .row .pts{color:var(--ink-500);font-variant-numeric:tabular-nums}
+
+  /* de geopende, geselecteerde regel: rand als selectie, niet als versiering */
+  .open{border-bottom:1px solid var(--ink-100);background:var(--ink-50);box-shadow:inset 3px 0 0 var(--navy);padding:18px 28px;
+        display:flex;flex-direction:column;gap:14px}
+  .open .line{display:flex;align-items:center;gap:16px}
+  .open .line .q{flex:1;font-weight:500}
+  .flag{display:inline-flex;align-items:center;gap:7px;color:var(--ink-700)}
+  .flag svg{width:15px;height:15px;flex-shrink:0}
+  .two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px}
+  .pane{display:flex;flex-direction:column;gap:8px}
+  .pane .lbl{font-size:14px;color:var(--ink-500)}
+  .pane p{color:var(--ink-700)}
+  .pane ol{margin:0;padding-left:18px;color:var(--ink-700);display:flex;flex-direction:column;gap:4px}
+  .pane li::marker{color:var(--ink-300)}
+  .why{border-top:1px solid var(--ink-200);padding-top:12px;display:flex;align-items:center;gap:16px}
+  .why p{flex:1;color:var(--ink-700)}
+
+  .btn{height:var(--control-h);padding:0 14px;border-radius:var(--r-md);font-size:14px;font-weight:500;
+       display:inline-flex;align-items:center;gap:6px;border:1px solid transparent;white-space:nowrap}
+  .btn.pri{background:var(--navy);color:var(--white)}
+  .btn.sec{background:var(--white);border-color:var(--ink-200);color:var(--navy)}
+  .btn svg{width:14px;height:14px}
+
+  .foot{height:52px;display:flex;align-items:center;padding:0 28px;margin-top:auto}
+  .done{display:inline-flex;align-items:center;gap:7px;color:var(--green-deep);font-weight:500}
+  .done svg{width:15px;height:15px;flex-shrink:0}
+</style></head>
+<body>
+<div class="frame">
+  <div class="top">
+    <div class="crumb t"><span class="muted">STEM · Thermodynamics, exam 2</span><span class="sep">/</span><span>142 answers</span></div>
+  </div>
+
+  <div class="head">
+    <div class="stat">
+      <span class="big"><span class="t-hero">20</span><span class="t-block">answers flagged for you</span></span>
+      <span class="t muted">The rest is scored against the mark scheme and waiting for your approval.</span>
+    </div>
+    <div class="fbar">
+      <span class="ctrl search"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="7" cy="7" r="4.5"/><path d="m10.5 10.5 3 3"/></svg>Search answers</span>
+      <span class="ctrl on">Flagged only</span>
+      <span class="ctrl">All questions</span>
+      <span class="right"><span class="ctrl">Sort · Question order</span></span>
+    </div>
+  </div>
+
+  <div class="list">
+    <div class="row t"><span class="q">Q4 · Heat capacity of the calorimeter</span><span class="pts">2 of 3 proposed</span></div>
+
+    <div class="open">
+      <div class="line t">
+        <span class="q">Q7 · Why does the temperature stay constant while ice melts?</span>
+        <span class="flag"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="8" cy="8" r="6.5"/><path d="M6.2 6.1a1.9 1.9 0 1 1 2.1 2.6v.9"/><path d="M8.3 11.4v.4"/></svg>Uncertain</span>
+        <span class="pts t muted">3 of 4 proposed</span>
+      </div>
+      <div class="two">
+        <div class="pane">
+          <span class="lbl">Student answer</span>
+          <p class="t">The heat going in is used to break the bonds between the water molecules instead of making them move faster, so the temperature does not rise until all the ice has gone.</p>
+        </div>
+        <div class="pane">
+          <span class="lbl">Mark scheme</span>
+          <ol class="t">
+            <li>Energy is absorbed during the phase change</li>
+            <li>It overcomes intermolecular forces, not kinetic energy</li>
+            <li>Temperature stays constant until melting is complete</li>
+            <li>Names it as the latent heat of fusion</li>
+          </ol>
+        </div>
+      </div>
+      <div class="why">
+        <p class="t">The first three points are there in the student's own words. The term latent heat of fusion is never used. Whether that costs the fourth point is your call.</p>
+        <span class="btn pri"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 8.5 3 3 7-7"/></svg>Approve 3 of 4</span>
+        <span class="btn sec">Adjust</span>
+      </div>
+    </div>
+
+    <div class="row t"><span class="q">Q11 · Entropy change of the surroundings</span><span class="pts">1 of 3 proposed</span></div>
+    <div class="row t"><span class="q">Q14 · Efficiency of the Carnot cycle</span><span class="pts">2 of 4 proposed</span></div>
+  </div>
+
+  <div class="foot">
+    <span class="done t"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 8.5 3 3 7-7"/></svg>Q2 approved by you · sent to the gradebook</span>
+  </div>
+</div>
+</body></html>

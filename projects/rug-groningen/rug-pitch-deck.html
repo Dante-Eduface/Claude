@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#002333;--green:#00E075;--green2:#067a43;--green3:#00b85f;
+    --ink:#13242c;--grey:#5c6f78;--soft:#eef3f6;--line:#e4eaed;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Inter',sans-serif;color:var(--ink);background:#cdd6da;padding:26px 0;}
+  .slide{
+    width:1280px;height:720px;margin:0 auto 28px;position:relative;overflow:hidden;
+    background:linear-gradient(150deg,#eef3f6 0%,#f5f8fa 60%,#eef2f5 100%);
+    box-shadow:0 8px 30px rgba(0,0,0,.18);padding:54px 70px;display:flex;flex-direction:column;
+  }
+  .slide.dark{background:var(--navy);color:#fff;}
+  .brand{display:flex;align-items:center;gap:8px;}
+  .brand .wm{font-family:'League Spartan';font-weight:800;font-size:25px;color:var(--navy);letter-spacing:-.01em;}
+  .slide.dark .brand .wm{color:#fff;}
+  .brand .cap{width:0;height:0;border-left:9px solid transparent;border-right:9px solid transparent;border-bottom:13px solid var(--green);transform:translateY(-7px) rotate(8deg);}
+  .head{display:flex;justify-content:space-between;align-items:flex-start;}
+  h2.title{font-family:'League Spartan';font-weight:800;font-size:50px;color:var(--navy);letter-spacing:-.01em;text-align:center;flex:1;line-height:1;margin-top:26px;}
+  .title .g{color:var(--green3);}
+  .pagenum{position:absolute;bottom:26px;right:40px;font-size:13px;color:#9fb1b8;}
+  .slide.dark .pagenum{color:#496773;}
+  .body{flex:1;display:flex;flex-direction:column;justify-content:center;}
+
+  .hero{background:var(--navy);color:#fff;border-radius:22px;padding:26px 34px;display:flex;align-items:center;gap:22px;margin-bottom:26px;box-shadow:0 14px 30px rgba(0,35,51,.22);}
+  .hero .pill{background:var(--green);color:var(--navy);font-weight:700;font-size:14px;padding:6px 16px;border-radius:30px;white-space:nowrap;}
+  .hero .ht{font-family:'League Spartan';font-weight:700;font-size:27px;line-height:1.08;}
+  .hero .hs{font-size:16px;color:#9fc7d3;margin-top:4px;}
+
+  .cards{display:flex;gap:20px;}
+  .card{flex:1;background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:0 8px 22px rgba(16,40,60,.07);}
+  .ic{width:52px;height:52px;border-radius:14px;background:#e3fbef;display:flex;align-items:center;justify-content:center;margin-bottom:16px;}
+  .ic svg{width:28px;height:28px;fill:none;stroke:var(--green2);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+  .ic.warn{background:#fdecec;} .ic.warn svg{stroke:#c0392b;}
+  .card .ct{font-family:'League Spartan';font-weight:700;font-size:21px;color:var(--navy);line-height:1.08;}
+  .card .cb{font-size:16px;color:var(--grey);margin-top:8px;line-height:1.4;}
+  .foot{font-size:15px;color:var(--grey);margin-top:24px;text-align:center;line-height:1.45;}
+
+  .costwrap{display:flex;gap:26px;align-items:stretch;}
+  .ctx{width:42%;display:flex;flex-direction:column;gap:14px;justify-content:center;}
+  .ctxrow{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 18px;display:flex;gap:14px;align-items:center;box-shadow:0 6px 16px rgba(16,40,60,.06);}
+  .ctxrow .ci{width:42px;height:42px;border-radius:11px;background:#fdecec;display:flex;align-items:center;justify-content:center;flex:none;}
+  .ctxrow .ci svg{width:22px;height:22px;fill:none;stroke:#c0392b;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+  .ctxrow .t{font-weight:600;font-size:16px;color:var(--navy);line-height:1.2;}
+  .ctxrow .s{font-size:12.5px;color:var(--grey);margin-top:2px;}
+  .formula{flex:1;display:flex;flex-direction:column;gap:12px;justify-content:center;}
+  .frow{display:flex;align-items:center;justify-content:space-between;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 26px;box-shadow:0 6px 16px rgba(16,40,60,.06);}
+  .frow .fl{font-size:17px;color:var(--grey);font-weight:600;}
+  .frow .fl small{display:block;font-size:12px;color:#9fb1b8;font-weight:500;margin-top:2px;}
+  .frow .fv{font-family:'League Spartan';font-weight:800;font-size:36px;color:var(--navy);}
+  .frow.win{background:var(--navy);border-color:var(--navy);}
+  .frow.win .fl{color:var(--green);} .frow.win .fv{color:#fff;}
+  .impact{margin-top:22px;background:#e3fbef;border:1px solid #b7edd0;border-radius:18px;padding:20px 28px;text-align:center;font-size:17px;}
+  .impact .big{font-family:'League Spartan';font-weight:800;color:var(--green2);font-size:22px;}
+
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+
+  .stats{display:flex;gap:22px;margin-top:8px;}
+  .stat{flex:1;background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px 22px;text-align:center;border-top:5px solid var(--green);box-shadow:0 8px 22px rgba(16,40,60,.07);}
+  .stat .v{font-family:'League Spartan';font-weight:800;font-size:48px;color:var(--navy);line-height:1;}
+  .stat .v small{font-size:24px;color:var(--green2);}
+  .stat .l{font-size:15px;color:var(--grey);margin-top:12px;line-height:1.3;}
+  .bighero{display:flex;align-items:center;gap:30px;background:var(--navy);border-radius:24px;padding:34px 44px;margin-bottom:24px;color:#fff;box-shadow:0 16px 34px rgba(0,35,51,.24);}
+  .bighero .num{font-family:'League Spartan';font-weight:800;font-size:96px;color:var(--green);line-height:.9;}
+  .bighero .tx h3{font-family:'League Spartan';font-weight:700;font-size:30px;}
+  .bighero .tx p{font-size:17px;color:#9fc7d3;margin-top:6px;max-width:560px;line-height:1.4;}
+
+  .ph{flex:1;border:2.5px dashed #b9c7cd;border-radius:24px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;background:#ffffff80;color:#7a8c93;text-align:center;}
+  .ph svg{width:56px;height:56px;fill:none;stroke:#9fb1b8;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;}
+  .ph .pt{font-family:'League Spartan';font-weight:700;font-size:22px;color:#5c6f78;}
+  .ph .ps{font-size:15px;max-width:520px;}
+  .phrow{display:flex;gap:24px;flex:1;}
+
+  .tcenter{margin:auto 0;}
+  .tcenter .lead{font-family:'League Spartan';font-weight:800;font-size:62px;line-height:1.02;max-width:1000px;letter-spacing:-.02em;}
+  .tcenter .lead .g{color:var(--green);}
+  .tcenter .sub{font-size:21px;color:#9fc7d3;margin-top:22px;}
+  .tcenter .who{font-size:18px;color:#7fa6b2;margin-top:46px;}
+
+  /* AI model visual */
+  .dautonomy{display:flex;align-items:center;gap:26px;justify-content:center;margin-bottom:34px;}
+  .dautonomy .shield{width:84px;height:84px;border-radius:22px;background:#e3fbef;display:flex;align-items:center;justify-content:center;flex:none;}
+  .dautonomy .shield svg{width:46px;height:46px;fill:none;stroke:var(--green2);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+  .dautonomy .dt{font-family:'League Spartan';font-weight:800;font-size:58px;color:var(--navy);letter-spacing:-.02em;line-height:1;}
+  .dautonomy .dt .g{color:var(--green3);}
+  .vcards{display:flex;gap:18px;}
+  .vcard{flex:1;background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px 18px;text-align:center;box-shadow:0 8px 22px rgba(16,40,60,.07);display:flex;flex-direction:column;align-items:center;gap:18px;}
+  .vcard .visual{height:88px;display:flex;align-items:center;justify-content:center;width:100%;}
+  .vcard .vt{font-family:'League Spartan';font-weight:700;font-size:19px;color:var(--navy);line-height:1.12;}
+  .nobt{display:flex;flex-direction:column;gap:9px;align-items:center;}
+  .nobt .row{display:flex;gap:9px;}
+  .nobt .bt{font-weight:700;font-size:13px;color:#b3bfc5;text-decoration:line-through;}
+  .nobt .edu{display:flex;align-items:center;gap:6px;font-family:'League Spartan';font-weight:800;font-size:19px;color:var(--green2);}
+  .nobt .edu svg{width:18px;height:18px;fill:none;stroke:var(--green2);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;}
+  .nlflag{width:78px;height:52px;border-radius:8px;overflow:hidden;box-shadow:0 3px 9px rgba(0,0,0,.16);}
+  .nlflag div{height:33.34%;}
+  .nlflag .r{background:#AE1C28;} .nlflag .w{background:#fff;} .nlflag .b{background:#21468B;}
+  .barcmp{display:flex;align-items:flex-end;gap:18px;height:88px;}
+  .barcmp .col{display:flex;flex-direction:column;align-items:center;gap:6px;}
+  .barcmp .b{width:30px;border-radius:7px 7px 0 0;}
+  .barcmp .big{height:74px;background:#cdd9de;}
+  .barcmp .small{height:34px;background:var(--green3);}
+  .barcmp .cl{font-size:10px;color:#9fb1b8;font-weight:600;}
+  .srv svg{width:60px;height:60px;fill:none;stroke:var(--green2);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+
+  /* ---- bespoke visuals, zelfde taal als slide 'Ons eigen AI-model' ---- */
+  .vcard .vsub{font-size:13.5px;color:var(--grey);line-height:1.35;margin-top:-4px;}
+  .vcard.neg .visual svg{stroke:#c0392b;}
+  /* EU-roundel */
+  .euroundel{width:84px;height:84px;}
+  /* DPIA doc + check, contract + pen: per-slide inline svg */
+  /* donut gauge */
+  .donutwrap{display:flex;align-items:center;gap:34px;background:var(--navy);border-radius:24px;padding:30px 42px;margin-bottom:24px;color:#fff;box-shadow:0 16px 34px rgba(0,35,51,.24);}
+  .donut{width:148px;height:148px;flex:none;transform:rotate(-90deg);}
+  .donut .track{fill:none;stroke:#0f3a4a;stroke-width:14;}
+  .donut .arc{fill:none;stroke:var(--green);stroke-width:14;stroke-linecap:round;}
+  .donutc{position:relative;width:148px;height:148px;flex:none;}
+  .donutc .lbl{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+  .donutc .lbl b{font-family:'League Spartan';font-weight:800;font-size:42px;color:#fff;line-height:1;}
+  .donutc .lbl span{font-size:12px;color:#9fc7d3;margin-top:3px;letter-spacing:.04em;}
+  .donutwrap .dtx h3{font-family:'League Spartan';font-weight:700;font-size:30px;}
+  .donutwrap .dtx p{font-size:17px;color:#9fc7d3;margin-top:8px;max-width:520px;line-height:1.42;}
+  .donutwrap .dtx .obm{display:inline-block;margin-top:12px;background:#0f3a4a;color:var(--green);font-weight:700;font-size:13px;padding:5px 14px;border-radius:20px;}
+  /* stat met mini-icoon */
+  .stat .si{width:42px;height:42px;border-radius:12px;background:#e3fbef;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;}
+  .stat .si svg{width:22px;height:22px;fill:none;stroke:var(--green2);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+  /* besparing-visual slide rekensom */
+  .saveband{display:flex;align-items:center;gap:18px;justify-content:center;text-align:left;}
+  .saveband .coins{flex:none;width:54px;height:54px;border-radius:14px;background:#fff;border:1px solid #b7edd0;display:flex;align-items:center;justify-content:center;}
+  .saveband .coins svg{width:30px;height:30px;fill:none;stroke:var(--green2);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+  @media print{@page{size:1280px 720px;margin:0;} body{background:#fff;padding:0;} .slide{margin:0;box-shadow:none;page-break-after:always;}}
+</style>
+</head>
+<body>
+
+<!-- 1 TITLE -->
+<section class="slide dark">
+  <div class="brand"><span class="wm">Eduface</span><span class="cap"></span></div>
+  <div class="tcenter">
+    <div class="lead">AI feedback en grading voor de <span class="g">Rijksuniversiteit Groningen</span></div>
+    <div class="sub">Verkennende sessie, 30 juni 2026</div>
+    <div class="who">Dante Torbed en Jeroen van Gessel, Eduface</div>
+  </div>
+</section>
+
+<!-- 2 AI MODEL -->
+<section class="slide">
+  <div class="head"><div class="brand"><span class="wm">Eduface</span><span class="cap"></span></div></div>
+  <h2 class="title">Ons <span class="g">eigen</span> AI-model</h2>
+  <div class="body">
+    <div class="dautonomy">
+      <div class="shield"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.5 8 8 11 4.5-3 8-6 8-11V5z"/><path d="m9 12 2 2 4-4"/></svg></div>
+      <div class="dt">Digitale <span class="g">autonomie</span></div>
+    </div>
+    <div class="vcards">
+      <div class="vcard" style="flex:0 0 440px;margin:0 auto;">
+        <div class="visual">
+          <div class="nobt">
+            <div class="row"><span class="bt">GPT</span><span class="bt">Gemini</span><span class="bt">Claude</span></div>
+            <div class="edu"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Eduface</div>
+          </div>
+        </div>
+        <div class="vt">Eigen model</div>
+        <div class="vsub">Geen Big Tech. Wij bepalen wat ermee gebeurt.</div>
+      </div>
+    </div>
+  </div>
+  <div class="pagenum">2</div>
+</section>
+
+<!-- 3 VEILIG EN DUURZAAM -->
+<section class="slide">
+  <div class="head"><div class="brand"><span class="wm">Eduface</span><span class="cap"></span></div></div>
+  <h2 class="title">Veilig en <span class="g">duurzaam</span></h2>
+  <div class="body">
+    <div class="vcards">
+      <div class="vcard">
+        <div class="visual"><div class="nlflag"><div class="r"></div><div class="w"></div><div class="b"></div></div></div>
+        <div class="vt">Data blijft in Nederland</div>
+        <div class="vsub">EU-gehost en soeverein. Studentwerk blijft binnen de landsgrenzen.</div>
+      </div>
+      <div class="vcard">
+        <div class="visual">
+          <div class="barcmp">
+            <div class="col"><div class="b big"></div><div class="cl">Big Tech</div></div>
+            <div class="col"><div class="b small"></div><div class="cl">Eduface</div></div>
+          </div>
+        </div>
+        <div class="vt">Klein en efficient model</div>
+        <div class="vsub">Getraind op onderwijs, geen zware general-purpose infrastructuur.</div>
+      </div>
+      <div class="vcard">
+        <div class="visual srv"><svg viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-9 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></svg></div>
+        <div class="vt">Minder energieverbruik</div>
+        <div class="vsub">Een klein, gericht model is milieuvriendelijker dan general-purpose AI.</div>
+      </div>
+    </div>
+  </div>
+  <div class="pagenum">3</div>
+</section>
+
+<!-- 4 FOTO'S VAN DE TOOL (placeholder) -->
+<section class="slide">
+  <div class="head"><div class="brand"><span class="wm">Eduface</span><span class="cap"></span></div></div>
+  <h2 class="title">De <span class="g">tool</span> in beeld</h2>
+  <div class="body">
+    <div class="phrow">
+      <div class="ph">
+        <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 16h18M9 20h6"/></svg>
+        <div class="pt">AI feedback tool</div>
+        <div class="ps">Sleep hier de screenshot van de feedback-tool in.</div>
+      </div>
+      <div class="ph">
+        <svg viewBox="0 0 24 24"><path d="M4 4h16v12H4z"/><path d="M8 20h8M9 8h6M9 12h4"/></svg>
+        <div class="pt">AI Grader</div>
+        <div class="ps">Sleep hier de screenshot van de grader in.</div>
+      </div>
+    </div>
+  </div>
+  <div class="pagenum">4</div>
+</section>
+
+<!-- 4 AI ACT -->
+<section class="slide">
+  <div class="head"><div class="brand"><span class="wm">Eduface</span><span class="cap"></span></div></div>
+  <h2 class="title">Voldoen aan de <span class="g">EU AI Act</span></h2>
+  <div class="body">
+    <div class="hero">
+      <span class="pill">Human in the loop</span>
+      <div>
+        <div class="ht">De docent beslist altijd</div>
+        <div class="hs">De AI doet het voorwerk. De examinator verifieert en blijft eindverantwoordelijk.</div>
+      </div>
+    </div>
+    <div class="vcards">
+      <div class="vcard">
+        <div class="visual">
+          <svg width="118" height="84" viewBox="0 0 118 84">
+            <rect x="30" y="8" width="58" height="68" rx="7" fill="#fff" stroke="#cdd9de" stroke-width="2"/>
+            <path d="M44 26h30M44 36h30M44 46h18" stroke="#cdd9de" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="80" cy="58" r="20" fill="#e3fbef" stroke="#067a43" stroke-width="2.5"/>
+            <path d="m71 58 6 6 11-12" fill="none" stroke="#067a43" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="vt">DPIA uitgevoerd</div>
+        <div class="vsub">Data Protection Impact Assessment voordat er iets draait.</div>
+      </div>
+      <div class="vcard">
+        <div class="visual">
+          <svg class="euroundel" viewBox="0 0 84 84">
+            <circle cx="42" cy="42" r="40" fill="#21468B"/>
+            <g fill="#f5c518">
+              <circle cx="42" cy="12" r="3.1"/><circle cx="57" cy="16" r="3.1"/><circle cx="68" cy="27" r="3.1"/>
+              <circle cx="72" cy="42" r="3.1"/><circle cx="68" cy="57" r="3.1"/><circle cx="57" cy="68" r="3.1"/>
+              <circle cx="42" cy="72" r="3.1"/><circle cx="27" cy="68" r="3.1"/><circle cx="16" cy="57" r="3.1"/>
+              <circle cx="12" cy="42" r="3.1"/><circle cx="16" cy="27" r="3.1"/><circle cx="27" cy="16" r="3.1"/>
+            </g>
+            <rect x="33" y="40" width="18" height="14" rx="2.5" fill="#fff"/>
+            <path d="M36 40v-4a6 6 0 0 1 12 0v4" fill="none" stroke="#fff" stroke-width="2.6"/>
+          </svg>
+        </div>
+        <div class="vt">AVG-conform, EU-gehost</div>
+        <div class="vsub">De data blijft binnen de EU. Geen verrassingen.</div>
+      </div>
+      <div class="vcard">
+        <div class="visual">
+          <svg width="100" height="84" viewBox="0 0 100 84">
+            <rect x="22" y="6" width="50" height="64" rx="6" fill="#fff" stroke="#cdd9de" stroke-width="2"/>
+            <path d="M32 22h30M32 32h30M32 42h20" stroke="#cdd9de" stroke-width="3" stroke-linecap="round"/>
+            <path d="M30 58c8-3 16 3 24 0s12 1 18-1" fill="none" stroke="#067a43" stroke-width="2.6" stroke-linecap="round"/>
+            <path d="M58 62 82 38l8 8-24 24-11 3z" fill="#e3fbef" stroke="#067a43" stroke-width="2.5" stroke-linejoin="round"/>
+            <path d="m78 42 8 8" stroke="#067a43" stroke-width="2.5"/>
+          </svg>
+        </div>
+        <div class="vt">Verwerkersovereenkomst</div>
+        <div class="vsub">Klaar om te tekenen, sluit aan op jullie AI-beleid.</div>
+      </div>
+    </div>
+    <div class="foot">Toetsing met AI valt onder hoog-risico in de EU AI Act, met verplichtingen vanaf augustus 2026. Eduface is daar vanaf de basis op gebouwd.</div>
+  </div>
+  <div class="pagenum">5</div>
+</section>
+
+<!-- 5 REFERENTIE BSU -->
+<section class="slide">
+  <div class="head"><div class="brand"><span class="wm">Eduface</span><span class="cap"></span></div></div>
+  <h2 class="title">Bewijs: <span class="g">Bath Spa University</span></h2>
+  <div class="body">
+    <div class="donutwrap">
+      <div class="donutc">
+        <svg class="donut" viewBox="0 0 148 148">
+          <circle class="track" cx="74" cy="74" r="58"/>
+          <circle class="arc" cx="74" cy="74" r="58" stroke-dasharray="364.4" stroke-dashoffset="21.9"/>
+        </svg>
+        <div class="lbl"><b>94%</b><span>match docent</span></div>
+      </div>
+      <div class="dtx">
+        <h3>De AI dacht hetzelfde als de docent</h3>
+        <p>In 94% van de gevallen kwam de AI-beoordeling overeen met het oordeel van de docent. Over 6 vakken en 3 disciplines.</p>
+        <span class="obm">96% in OBM-vakken</span>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat">
+        <div class="si"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h4"/></svg></div>
+        <div class="v">435</div><div class="l">submissions beoordeeld</div>
+      </div>
+      <div class="stat">
+        <div class="si"><svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+        <div class="v">6</div><div class="l">vakken over 3 disciplines</div>
+      </div>
+      <div class="stat">
+        <div class="si"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9"/><path d="M16 3.1a4 4 0 0 1 0 7.8"/></svg></div>
+        <div class="v">13</div><div class="l">docenten in de pilot</div>
+      </div>
+    </div>
+  </div>
+  <div class="pagenum">6</div>
+</section>
+
+<!-- 7 RISICO'S ZELF BOUWEN (anoniem) -->
+<section class="slide">
+  <div class="head"><div class="brand"><span class="wm">Eduface</span><span class="cap"></span></div></div>
+  <h2 class="title">De risico's van <span class="g">zelf bouwen</span></h2>
+  <div class="body">
+    <div class="hero">
+      <span class="pill" style="background:#ffd2cd;color:#8a2018">Praktijkverhaal</span>
+      <div>
+        <div class="ht">Een instelling bouwde zelf een AI-feedbacktool</div>
+        <div class="hs">Wat er in de praktijk gebeurde:</div>
+      </div>
+    </div>
+    <div class="vcards">
+      <div class="vcard neg">
+        <div class="visual">
+          <svg width="84" height="84" viewBox="0 0 84 84">
+            <circle cx="42" cy="42" r="34" fill="#fdecec" stroke="#c0392b" stroke-width="2"/>
+            <path d="M42 42 V8 A34 34 0 1 1 14.9 58.7 Z" fill="#c0392b" opacity="0.85"/>
+            <circle cx="42" cy="42" r="10" fill="#fff"/>
+            <path d="M42 42V35M42 42l5 3" stroke="#c0392b" stroke-width="2.4" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="vt">Onderhoud slokte alles op</div>
+        <div class="vsub">De tool moest constant onderhouden worden.</div>
+      </div>
+      <div class="vcard neg">
+        <div class="visual">
+          <svg width="100" height="84" viewBox="0 0 100 84">
+            <path d="M14 42h22" fill="none" stroke="#c0392b" stroke-width="6" stroke-linecap="round"/>
+            <path d="M64 42h22" fill="none" stroke="#c0392b" stroke-width="6" stroke-linecap="round"/>
+            <path d="M36 30l6 12-6 12" fill="none" stroke="#c0392b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M64 30l-6 12 6 12" fill="none" stroke="#c0392b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M50 24v8M50 52v8" stroke="#e7a6a0" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="vt">De workflow liep vast</div>
+        <div class="vsub">In de praktijk werkte het uiteindelijk niet.</div>
+      </div>
+      <div class="vcard neg">
+        <div class="visual">
+          <svg width="84" height="84" viewBox="0 0 84 84">
+            <path d="M42 14a18 18 0 0 0-10 33c2 1.4 3 3 3 5h14c0-2 1-3.6 3-5a18 18 0 0 0-10-33z" fill="#fdecec" stroke="#c0392b" stroke-width="2.4"/>
+            <path d="M36 62h12M38 68h8" stroke="#c0392b" stroke-width="2.6" stroke-linecap="round"/>
+            <path d="M22 22 62 62" stroke="#c0392b" stroke-width="3.4" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="vt">Geen ruimte voor innovatie</div>
+        <div class="vsub">Het tech-team zat vast in onderhoud.</div>
+      </div>
+      <div class="vcard neg">
+        <div class="visual">
+          <svg width="100" height="84" viewBox="0 0 100 84">
+            <path d="M30 56a14 14 0 0 1 .6-27.9 18 18 0 0 1 34.6 4.2A12 12 0 0 1 68 56z" fill="#fdecec" stroke="#c0392b" stroke-width="2.4"/>
+            <rect x="40" y="50" width="20" height="16" rx="2.5" fill="#fff" stroke="#c0392b" stroke-width="2.2"/>
+            <path d="M43 50v-3a7 7 0 0 1 14 0v3" fill="none" stroke="#c0392b" stroke-width="2.2"/>
+          </svg>
+        </div>
+        <div class="vt">Alsnog afhankelijk van Big Tech</div>
+        <div class="vsub">Het oorspronkelijke doel werd niet bereikt.</div>
+      </div>
+    </div>
+    <div class="foot">Zelf bouwen is duurder en risicovoller dan het lijkt, zeker met de EU AI Act en een bezuinigingsopgave.</div>
+  </div>
+  <div class="pagenum">7</div>
+</section>
+
+<!-- 8 VISIE PRODUCT (placeholder) -->
+<section class="slide">
+  <div class="head"><div class="brand"><span class="wm">Eduface</span><span class="cap"></span></div></div>
+  <h2 class="title">Onze <span class="g">visie</span></h2>
+  <div class="body">
+    <div class="phrow">
+      <div class="ph">
+        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        <div class="pt">Board-slide komt hier</div>
+        <div class="ps">Sleep hier de bestaande visie-slide uit de board-meeting in.</div>
+      </div>
+    </div>
+  </div>
+  <div class="pagenum">8</div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Momentum — Strategie</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #002333;
+    --green: #00E075;
+    --green-dark: #008F5A;
+    --green-deep: #006754;
+    --bg: #f3f7f8;
+    --card: #ffffff;
+    --text: #002333;
+    --muted: #5a6e78;
+    --line: #e2eaee;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.55;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .page {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 48px 40px 80px;
+  }
+  h1, h2, h3 { font-family: 'League Spartan', sans-serif; }
+
+  /* Header */
+  .header {
+    background: var(--navy);
+    border-radius: 20px;
+    padding: 44px 48px 40px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+  .header::after {
+    content: '';
+    position: absolute;
+    right: -60px; top: -60px;
+    width: 260px; height: 260px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0,224,117,0.25), transparent 70%);
+  }
+  .brand {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--green);
+    margin-bottom: 18px;
+  }
+  .header h1 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 12px;
+  }
+  .header .sub {
+    font-size: 16px;
+    color: #b9cdd6;
+    max-width: 560px;
+  }
+  .header .meta {
+    margin-top: 24px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .chip {
+    background: rgba(0,224,117,0.12);
+    border: 1px solid rgba(0,224,117,0.4);
+    color: var(--green);
+    font-size: 12.5px;
+    font-weight: 600;
+    padding: 5px 14px;
+    border-radius: 999px;
+  }
+
+  /* Sections */
+  section { margin-top: 44px; }
+  .section-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+  .section-num {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    color: #fff;
+    background: var(--navy);
+    width: 30px; height: 30px;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .section-label h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--navy);
+  }
+  .section-intro {
+    color: var(--muted);
+    font-size: 14.5px;
+    margin: -8px 0 18px 42px;
+  }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 26px 30px;
+  }
+  .card + .card { margin-top: 14px; }
+
+  /* Doel */
+  .doel-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  @media (max-width: 640px) { .doel-grid { grid-template-columns: 1fr; } }
+  .doel-grid .card h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 8px;
+  }
+  .doel-grid .card p { font-size: 14.5px; color: #33505d; }
+  .card.accent { border-left: 4px solid var(--green); }
+
+  /* Tools & agents */
+  .item-row {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    padding: 18px 0;
+  }
+  .item-row + .item-row { border-top: 1px solid var(--line); }
+  .item-row:first-child { padding-top: 4px; }
+  .item-row:last-child { padding-bottom: 4px; }
+  .item-icon {
+    width: 40px; height: 40px;
+    border-radius: 12px;
+    background: rgba(0,224,117,0.14);
+    color: var(--green-deep);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+  .item-body h3 { font-size: 16.5px; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
+  .item-body p { font-size: 14.5px; color: #33505d; }
+  .item-body p + p { margin-top: 6px; }
+  .note {
+    display: inline-block;
+    margin-top: 8px;
+    background: #fff6e8;
+    border: 1px solid #f2dcb8;
+    color: #8a6420;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 4px 12px;
+    border-radius: 8px;
+  }
+
+  /* Tables */
+  table { width: 100%; border-collapse: collapse; font-size: 14.5px; }
+  th {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-align: left;
+    padding: 10px 14px;
+    border-bottom: 2px solid var(--navy);
+  }
+  td { padding: 12px 14px; border-bottom: 1px solid var(--line); color: #33505d; }
+  tr:last-child td { border-bottom: none; }
+  td strong { color: var(--navy); }
+  .num {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    color: var(--green-dark);
+  }
+
+  /* Agenda */
+  .ritme-tag {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--green-deep);
+    background: rgba(0,224,117,0.12);
+    padding: 3px 10px;
+    border-radius: 999px;
+  }
+
+  /* Werkwijze */
+  ul.clean { list-style: none; }
+  ul.clean li {
+    position: relative;
+    padding: 8px 0 8px 30px;
+    font-size: 14.5px;
+    color: #33505d;
+  }
+  ul.clean li::before {
+    content: '';
+    position: absolute;
+    left: 4px; top: 15px;
+    width: 9px; height: 9px;
+    border-radius: 3px;
+    background: var(--green);
+  }
+
+  /* Footer */
+  .footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    font-size: 12.5px;
+    color: var(--muted);
+  }
+  .footer .fbrand {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    color: var(--navy);
+  }
+
+  @media print {
+    body { background: #fff; }
+    .page { padding: 0; max-width: none; }
+    section { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div class="brand">Eduface · Project Momentum</div>
+    <h1>Strategie &amp; Uitvoeringsplan</h1>
+    <p class="sub">Een nieuwe markt openen met een LinkedIn-led outreach motie. Alles vooraf vastgelegd: aanpak, taken en verwacht resultaat, zodat het review-moment met Jeroen over het plan gaat en niet over de vraag wat er gedaan is.</p>
+    <div class="meta">
+      <span class="chip">Eigenaar: Dante</span>
+      <span class="chip">Looptijd: 4 weken</span>
+      <span class="chip">Review met Jeroen: na 2 weken</span>
+    </div>
+  </div>
+
+  <!-- 1. Doel -->
+  <section>
+    <div class="section-label"><div class="section-num">1</div><h2>Doel &amp; afspraak</h2></div>
+    <div class="doel-grid">
+      <div class="card accent">
+        <h3>Het doel</h3>
+        <p>Een hele nieuwe markt openen voor Eduface. LinkedIn wordt het conversie-kanaal: veel posten (nieuwe strategie uit de webinar testen) plus gerichte outreach, tot aan de Discovery-gate.</p>
+      </div>
+      <div class="card accent">
+        <h3>De afspraak met Jeroen</h3>
+        <p>Aanpak, taken en verwacht resultaat staan vooraf op papier. Over 2 weken zitten we samen en kan ik zeggen: alles is uitgevoerd. Dan zien we of het resultaat boven, onder of gelijk aan verwachting is.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Tools -->
+  <section>
+    <div class="section-label"><div class="section-num">2</div><h2>Tools</h2></div>
+    <p class="section-intro">De drie tools waar de hele motie op draait. Geen tool-shoppen tijdens de pilot.</p>
+    <div class="card">
+      <div class="item-row">
+        <div class="item-icon">Le</div>
+        <div class="item-body">
+          <h3>Lemlist</h3>
+          <p>Het verzendkanaal. Alle outreach (LinkedIn + mail) wordt via Lemlist verstuurd, zodat volume, follow-ups en replies op één plek meetbaar zijn.</p>
+        </div>
+      </div>
+      <div class="item-row">
+        <div class="item-icon">Cl</div>
+        <div class="item-body">
+          <h3>Claude</h3>
+          <p>Zoeken van contacten én onderzoek per contact. Onderzoek moet gericht blijven: een prioriterings-systeem bouwen zodat de agent tokens slim inzet en niet uren draait voor matig resultaat.</p>
+        </div>
+      </div>
+      <div class="item-row">
+        <div class="item-icon">Li</div>
+        <div class="item-body">
+          <h3>LinkedIn</h3>
+          <p>Het pijplijn- en awareness-kanaal. Veel posts schrijven om conversie te verhogen, plus de nieuwe LinkedIn-strategie uit de webinar testen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Agents -->
+  <section>
+    <div class="section-label"><div class="section-num">3</div><h2>Agents (te bouwen)</h2></div>
+    <p class="section-intro">Drie agents die het handwerk uit de motie halen. Elk bericht wordt handmatig gecontroleerd voor verzending.</p>
+    <div class="card">
+      <div class="item-row">
+        <div class="item-icon">1</div>
+        <div class="item-body">
+          <h3>Score uni + contact</h3>
+          <p>Scoort universiteiten én contactpersonen, zodat de beste accounts en mensen als eerste aan de beurt zijn. De bijbehorende agents hiervoor bouwen.</p>
+        </div>
+      </div>
+      <div class="item-row">
+        <div class="item-icon">2</div>
+        <div class="item-body">
+          <h3>Lead scoring</h3>
+          <p>Prioriteert leads in de funnel, zodat onderzoek en opvolging naar de kansrijkste leads gaan in plaats van uren research op koude namen.</p>
+        </div>
+      </div>
+      <div class="item-row">
+        <div class="item-icon">3</div>
+        <div class="item-body">
+          <h3>Messaging</h3>
+          <p>Schrijft berichten voor LinkedIn en mail. Beide los bouwen, maar wel tegelijkertijd. Veel nuance meegeven, anders klinkt het als een bot.</p>
+          <span class="note">Regel: élk bericht handmatig controleren voor het via Lemlist gaat.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Agenda -->
+  <section>
+    <div class="section-label"><div class="section-num">4</div><h2>Agenda &amp; ritme</h2></div>
+    <p class="section-intro">Vaste blokken in de week, plus twee dagelijkse taken. Per dag taken afvinken.</p>
+    <div class="card">
+      <table>
+        <thead>
+          <tr><th>Wanneer</th><th>Blok</th><th>Wat</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Maandag</strong> 9:30 – 10:30</td>
+            <td><span class="ritme-tag">Wekelijks</span></td>
+            <td>LinkedIn post + golden hour</td>
+          </tr>
+          <tr>
+            <td><strong>Donderdag</strong> 8:00 – 9:00</td>
+            <td><span class="ritme-tag">Wekelijks</span></td>
+            <td>LinkedIn post + golden hour</td>
+          </tr>
+          <tr>
+            <td><strong>Vrijdag</strong> 10:00 – 11:00</td>
+            <td><span class="ritme-tag">Wekelijks</span></td>
+            <td>LinkedIn voorbereiden (posts voor de week erna)</td>
+          </tr>
+          <tr>
+            <td><strong>Elke dag</strong> (vanaf 27 juni)</td>
+            <td><span class="ritme-tag">Dagelijks</span></td>
+            <td>Standaard check (ergens op de dag)</td>
+          </tr>
+          <tr>
+            <td><strong>Elke dag</strong> (vanaf 27 juni)</td>
+            <td><span class="ritme-tag">Dagelijks</span></td>
+            <td>Fine-tunen van agents &amp; messaging (ergens op de dag)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 5. Resultaten -->
+  <section>
+    <div class="section-label"><div class="section-num">5</div><h2>Verwacht resultaat (week 1 – 4)</h2></div>
+    <p class="section-intro">De meetlat voor het gesprek met Jeroen. Boven, onder of gelijk aan deze lijn, dat is het oordeel.</p>
+    <div class="card">
+      <table>
+        <thead>
+          <tr><th>Week</th><th>Interesse</th><th>Meetings</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Week 1</strong></td><td><span class="num">5</span></td><td><span class="num">1</span></td></tr>
+          <tr><td><strong>Week 2</strong></td><td><span class="num">10</span></td><td><span class="num">2</span></td></tr>
+          <tr><td><strong>Week 3</strong></td><td><span class="num">15</span></td><td><span class="num">4</span></td></tr>
+          <tr><td><strong>Week 4</strong></td><td><span class="num">20</span></td><td><span class="num">5</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 6. Werkwijze -->
+  <section>
+    <div class="section-label"><div class="section-num">6</div><h2>Werkafspraken</h2></div>
+    <div class="card">
+      <ul class="clean">
+        <li>Alles versturen via Lemlist, één plek voor volume en metingen.</li>
+        <li>Elk agent-bericht handmatig controleren. Nuance boven volume, geen bot-gevoel.</li>
+        <li>Claude-onderzoek altijd via het prioriterings-systeem, let op tokenverbruik.</li>
+        <li>Per dag taken afvinken in Todoist, zodat de uitvoering aantoonbaar is.</li>
+        <li>Na 2 weken: review met Jeroen tegen de meetlat hierboven.</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="footer">
+    <span class="fbrand">EDUFACE</span>
+    <span>Project Momentum · Strategie &amp; uitvoeringsplan · 16 juli 2026</span>
+  </div>
+
+</div>
+</body>
+</html>

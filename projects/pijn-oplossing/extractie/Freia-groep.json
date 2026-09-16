@@ -1,0 +1,36 @@
+[
+  {
+    "id": "Freia-groep-1",
+    "org": "Freia groep",
+    "lead_id": "lead_ulmlJvuCpDVkPFbowEYE9nho4eazopIC73ZobIxfxxk",
+    "close_url": "https://app.close.com/lead/lead_ulmlJvuCpDVkPFbowEYE9nho4eazopIC73ZobIxfxxk/",
+    "persoon": "Ernst Eijsvogel",
+    "functie": "Operational director",
+    "datum": "2026-08-19",
+    "bron_type": "note",
+    "bron_id": "acti_cuadvl5KoXt1wTTGkfkKmMQSziJ8Hdgza6HAbVQL92x",
+    "segment": "particulier",
+    "thema": "bestaande-tools",
+    "type": "huidig",
+    "citaat": "Ze gebruiken op dit moment Turnitin feedback studio en zien ons als een equivalent daarvan.",
+    "samenvatting": "Ze zien ons als Turnitin-vervanger, niet als iets nieuws.",
+    "zekerheid": "letterlijk"
+  },
+  {
+    "id": "Freia-groep-2",
+    "org": "Freia groep",
+    "lead_id": "lead_ulmlJvuCpDVkPFbowEYE9nho4eazopIC73ZobIxfxxk",
+    "close_url": "https://app.close.com/lead/lead_ulmlJvuCpDVkPFbowEYE9nho4eazopIC73ZobIxfxxk/",
+    "persoon": "Ernst Eijsvogel",
+    "functie": "Operational director",
+    "datum": "2026-08-19",
+    "bron_type": "note",
+    "bron_id": "acti_ck1wccVGsxXgdnG1SRnBnAQ6BfKb74URgnRsbOuSGsI",
+    "segment": "particulier",
+    "thema": "bestaande-tools",
+    "type": "oplossing_verwoord",
+    "citaat": "Ten opzichte van Turnitin feedback studio kunnen wij automatisch nakijken en feedback geven zonder dat de docent zelf hoeft te prompten. Ons model kan daarom formatief worden ingezet zonder de tussenkomst van een docent.",
+    "samenvatting": "Ons onderscheid tegen Turnitin: geen prompt nodig, formatief zonder docent.",
+    "zekerheid": "letterlijk"
+  }
+]
