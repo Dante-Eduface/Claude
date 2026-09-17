@@ -20,6 +20,8 @@
 
 **Open note (do not assume settled):** what the rest between the 07:00–09:00 and 09:30–12:00 focus blocks should actually consist of, and the exact lunch eating order/routine — both raised, neither resolved into a fixed habit yet.
 
+**Existing tool, not yet in use:** he already built a "Deep Work Logboek" in Google Sheets (created 12-09-2026, still empty/template-only) that logs time entries as diep/ondiep/vrij against P1/P2/P3 priorities, plus a 5-question "makkelijkste weg" (easiest-path/avoidance) self-check. Worth pointing him back to this instead of building something new.
+
 ## Work (the personal angle)
 - Role: SDR. Grows pipeline + generates qualified leads, hands off to the founders.
 - His own read: not performing well in this role right now. Gets distracted by side projects outside his core job, jumps between tasks instead of deep focus.
@@ -71,7 +73,7 @@ Log of books he's actually read, especially ones he rates as important — so Cl
 
 | Book | Author | Read | Why it mattered / key takeaway |
 |---|---|---|---|
-| _(none logged yet — tell Claude titles as you finish or rate them)_ | | | |
+| *Deep Work* | Cal Newport | In progress (as of Sept 2026) | Cites the Adam Grant example (locks himself away, "out of office" for days) as the model for the kind of uninterrupted focus real thinking work needs — directly tied to his own struggle with the 07:00-09:00/09:30-12:00 focus blocks and not knowing how to rest properly in between. |
 
 **Open question (do not assume):**
 - Q12: Which single skill does he want to develop most in the next 12 months (sales, marketing, leadership, communication, product thinking)? Not chosen yet.
