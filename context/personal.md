@@ -10,6 +10,16 @@
 - 19 years old, based in Leiden, likely moving to Utrecht around September 2026.
 - MBO diploma, left school at 17 to work at a startup. That first startup shut down, then moved to Eduface and has done nothing else since.
 
+## Daily Routine & Focus (as of 17-09-2026)
+- **Wake-up:** 05:00 every day, including weekends.
+- **Work days:** Mon/Wed/Fri 07:00–18:30. Tue/Thu 07:00–15:30 (shorter — football commute days). No work planned in the evenings otherwise.
+- **Focus blocks:** 07:00–09:00 and 09:30–12:00, back-to-back with barely a real break in between. Knows he should rest in the ~30 min gap but doesn't have a routine for what that rest should look like, so in practice just keeps working through it. Wants to get better at deep work / recovery between blocks.
+- **Eating:** Moved to intermittent fasting — fasts in the morning, first meal at 12:00 (during the second focus block). Main focus killer is a blood-sugar spike from eating carelessly/unhealthily.
+- **Lunch meal-prep staples:** rice, kwark (quark), banana, mandarin. Still figuring out the best order/combination to eat these in without spiking blood sugar — not a settled routine yet.
+- **Reading:** Books on the train, ~40 min each way → 2x/day on commute days. Weekdays only, not on weekends.
+
+**Open note (do not assume settled):** what the rest between the 07:00–09:00 and 09:30–12:00 focus blocks should actually consist of, and the exact lunch eating order/routine — both raised, neither resolved into a fixed habit yet.
+
 ## Work (the personal angle)
 - Role: SDR. Grows pipeline + generates qualified leads, hands off to the founders.
 - His own read: not performing well in this role right now. Gets distracted by side projects outside his core job, jumps between tasks instead of deep focus.
@@ -53,8 +63,15 @@
 ## Learning & Knowledge
 - Does NOT care about formal diplomas (HBO, MBA) for their own sake. Formal HBO→MBA route is explicitly deprioritised.
 - Wants practical knowledge he can apply immediately. Sees Eduface itself as his real business school.
-- Relevant books for his stage: *The Mom Test*, *$100M Offers* (Hormozi), *Zero to One* (Thiel).
+- Relevant books for his stage (recommended, not confirmed read): *The Mom Test*, *$100M Offers* (Hormozi), *Zero to One* (Thiel).
 - Toastmasters: mentioned as a communication-skills goal, not started.
+
+### Books read & favorites
+Log of books he's actually read, especially ones he rates as important — so Claude can pull specific ideas/frameworks from them when relevant (e.g. sales advice, focus, deal coaching). Add an entry whenever he mentions a book he's finished or rates highly.
+
+| Book | Author | Read | Why it mattered / key takeaway |
+|---|---|---|---|
+| _(none logged yet — tell Claude titles as you finish or rate them)_ | | | |
 
 **Open question (do not assume):**
 - Q12: Which single skill does he want to develop most in the next 12 months (sales, marketing, leadership, communication, product thinking)? Not chosen yet.
