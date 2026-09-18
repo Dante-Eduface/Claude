@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Slide 1 — Opening</title>
+<link rel="stylesheet" href="deck.css">
+<style>
+  .cols { display: flex; gap: var(--slide-gap); margin-top: 56px; }
+  .col { flex: 1; }
+  .col + .col { padding-left: var(--slide-gap); border-left: 1px solid var(--color-border-inverse); }
+  .person { margin-top: 20px; }
+  .person:first-of-type { margin-top: 24px; }
+  .person-name { font-size: var(--text-slide-body); font-weight: 600; color: var(--color-foreground-inverse); }
+  .person-role { font-size: var(--text-slide-caption); color: var(--color-foreground-inverse-soft); margin-top: 4px; }
+  .bullet { font-size: var(--text-slide-body); line-height: 1.4; color: var(--color-foreground-inverse-soft); margin-top: 22px; }
+  .bullet:first-of-type { margin-top: 24px; }
+  .agenda-item { display: flex; gap: 20px; margin-top: 22px; }
+  .agenda-item:first-of-type { margin-top: 24px; }
+  .agenda-num { font-family: var(--font-display); font-weight: 700; font-size: var(--text-slide-body); color: var(--color-ink-300); width: 44px; flex-shrink: 0; }
+  .agenda-text { font-size: var(--text-slide-body); line-height: 1.35; color: var(--color-foreground-inverse); }
+  .logo-row { position: absolute; left: 0; bottom: 0; display: flex; align-items: center; gap: 16px; }
+</style>
+</head>
+<body>
+<div class="slide slide-inverse">
+  <div class="slide-pad">
+    <div class="eyebrow-inverse">Universal Technical Institute &middot; Leadership Review</div>
+    <h1 class="slide-title" style="color: var(--color-foreground-inverse); margin-top: 20px; max-width: 1500px;">
+      Six weeks in, ready for a leadership decision
+    </h1>
+
+    <div class="cols">
+      <div class="col">
+        <h2 class="slide-sub" style="color: var(--color-foreground-inverse);">Where we stand</h2>
+        <div class="bullet">Discovery and scoping complete on HVAC 101 and Medical Assisting.</div>
+        <div class="bullet">Live demo delivered inside Blackboard Ultra, on UTI's own labs.</div>
+        <div class="bullet">VPAT and accessibility docs already with Legal and IT.</div>
+      </div>
+
+      <div class="col">
+        <h2 class="slide-sub" style="color: var(--color-foreground-inverse);">In the room today</h2>
+        <div class="person">
+          <div class="person-name">Robert Jordan</div>
+          <div class="person-role">Associate VP, Instructional Design &middot; UTI</div>
+        </div>
+        <div class="person">
+          <div class="person-name">Division SVP, Education</div>
+          <div class="person-role">UTI</div>
+        </div>
+        <div class="person">
+          <div class="person-name">Jeroen van Gessel</div>
+          <div class="person-role">CEO &amp; Co-founder &middot; Eduface</div>
+        </div>
+        <div class="person">
+          <div class="person-name">Dante Torbed</div>
+          <div class="person-role">Customer Success Manager &middot; Eduface</div>
+        </div>
+      </div>
+
+      <div class="col">
+        <h2 class="slide-sub" style="color: var(--color-foreground-inverse);">Today's agenda</h2>
+        <div class="agenda-item"><div class="agenda-num">01</div><div class="agenda-text">Discovery &amp; scoping findings</div></div>
+        <div class="agenda-item"><div class="agenda-num">02</div><div class="agenda-text">Current state, and its cost</div></div>
+        <div class="agenda-item"><div class="agenda-num">03</div><div class="agenda-text">Proposed state &amp; required capabilities</div></div>
+        <div class="agenda-item"><div class="agenda-num">04</div><div class="agenda-text">Solution, pricing &amp; proof</div></div>
+        <div class="agenda-item"><div class="agenda-num">05</div><div class="agenda-text">Next steps &amp; decision</div></div>
+      </div>
+    </div>
+
+    <div class="logo-row">
+      <div class="wordmark">eduface</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

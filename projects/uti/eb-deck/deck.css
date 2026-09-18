@@ -1,0 +1,140 @@
+/* Tokens copied verbatim from references/design-system/core/tokens.css
+   and references/design-system/slides/tokens.css — do not invent values here. */
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Inter:wght@400;450;500;600;700&display=swap");
+
+:root {
+  /* core */
+  --color-navy: #002333;
+  --color-green: #00e075;
+  --color-green-deep: #007b54;
+
+  --color-ink-950: #002333;
+  --color-ink-900: #0a2c3b;
+  --color-ink-700: #2c4a57;
+  --color-ink-500: #5b7480;
+  --color-ink-300: #a9bcc4;
+  --color-ink-200: #cdd9de;
+  --color-ink-100: #e7eef0;
+  --color-ink-50:  #f3f7f8;
+  --color-white:   #ffffff;
+
+  --color-background: var(--color-white);
+  --color-surface:    var(--color-ink-50);
+  --color-foreground: var(--color-ink-950);
+  --color-muted:      var(--color-ink-500);
+  --color-border:     var(--color-ink-100);
+  --color-border-strong: var(--color-ink-200);
+
+  --color-primary: var(--color-navy);
+  --color-primary-foreground: var(--color-white);
+  --color-accent: var(--color-green);
+  --color-accent-foreground: var(--color-navy);
+
+  --color-background-inverse: var(--color-navy);
+  --color-surface-inverse: var(--color-ink-900);
+  --color-foreground-inverse: var(--color-white);
+  --color-foreground-inverse-soft: rgba(255, 255, 255, 0.62);
+  --color-border-inverse: rgba(255, 255, 255, 0.12);
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "League Spartan", var(--font-sans);
+
+  /* slides type scale */
+  --slide-w: 1920px;
+  --slide-h: 1080px;
+  --slide-margin: 120px;
+  --slide-gap: 48px;
+
+  --text-slide-hero: 132px;
+  --text-slide-title: 76px;
+  --text-slide-sub: 44px;
+  --text-slide-body: 32px;
+  --text-slide-caption: 24px;
+  --text-slide-stat: 180px;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { font-family: var(--font-sans); background: var(--color-ink-200); }
+h1, h2, h3, h4 { font-family: var(--font-display); margin: 0; }
+p { margin: 0; }
+
+.slide {
+  width: var(--slide-w);
+  height: var(--slide-h);
+  position: relative;
+  overflow: hidden;
+  background: var(--color-background);
+  color: var(--color-foreground);
+}
+
+.slide-inverse {
+  background: var(--color-background-inverse);
+  color: var(--color-foreground-inverse);
+}
+
+.slide-pad {
+  position: absolute;
+  inset: var(--slide-margin);
+}
+
+.slide-title {
+  font-size: var(--text-slide-title);
+  line-height: 1.04;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+.slide-sub {
+  font-size: var(--text-slide-sub);
+  line-height: 1.15;
+  font-weight: 600;
+  font-family: var(--font-display);
+}
+
+.slide-body {
+  font-size: var(--text-slide-body);
+  line-height: 1.45;
+  font-weight: 450;
+}
+
+.slide-caption {
+  font-size: var(--text-slide-caption);
+  line-height: 1.35;
+  color: var(--color-muted);
+}
+
+.slide-caption-inverse {
+  font-size: var(--text-slide-caption);
+  line-height: 1.35;
+  color: var(--color-foreground-inverse-soft);
+}
+
+.eyebrow {
+  font-size: var(--text-slide-caption);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.eyebrow-inverse {
+  font-size: var(--text-slide-caption);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-ink-300);
+}
+
+.wordmark {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: -0.01em;
+  color: var(--color-foreground-inverse);
+}
+
+.rule {
+  height: 1px;
+  background: var(--color-border-strong);
+}
