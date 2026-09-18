@@ -357,3 +357,13 @@ Gebouwd met `build-pagina.mjs`. Dat script pakt uit elk proef-bestand de stijl e
 **Bijwerken:** pas het losse proef-bestand aan en draai `node build-pagina.mjs`. Nooit direct in `pagina.html` werken, dat wordt overschreven.
 
 Is een sectie af, zet hem dan in `build-pagina.mjs` op `klaar: true` met zijn proef-bestand erbij.
+
+## Hero-kop vervangen voor het institutionele segment (18-09-2026)
+
+Deze pagina is het "Groot"/50-150K executive-institutionele stuk uit `references/eduface-icp.md` (chat-overdracht, nog niet als los bestand opgeslagen — zie de sessie van 18-09 voor de volledige tekst). Dante gaf een nieuwe hero-kop, bedoeld ter vervanging van de bestaande, niet als los stuk ernaast (bevestigd door Dante via vraag, 18-09-2026).
+
+- **Nieuwe H1:** "Become the institution that leads while competitors quietly fall behind." Vervangt "Grade essay 140 like you graded essay one" (die kop was getuned op message match met koude advertentiezoekwoorden — "essay grader", "ai grading" — relevant bij koud verkeer, niet bij een institutionele koper).
+- **Wat is blijven staan, bewust:** navy CTA, `hero.png`, de proofline met logo's, de subkop. Dit zijn al goedgekeurde Poort-2-beslissingen uit eerdere rondes (zie boven) en zijn niet heropend.
+- **Kleur:** alleen "leads" is groen. "While competitors quietly fall behind" is bewust navy gebleven — groen betekent "kijk hier" of "dit is goed afgelopen", nooit een risico-/verlies-uitspraak (`core/regels.md`).
+- **Nog open:** de subkop ("Eduface drafts the feedback and the grade against your own criteria.") is niet aangepast aan het nieuwe, institutionele register — die is nog geschreven voor de docent-lezer van de oude kop. Mogelijk moet die ook naar het niveau van de nieuwe kop, maar dat is niet gevraagd dus niet gedaan.
+- Losstaand, nog niet verwerkt: Dante vroeg eerder in dezelfde sessie om de subkop te vervangen door een 3-regelige checklist met vinkjes (consistentie tussen beoordelaars, werkt in je eigen LMS, 94% accuraatheid). Dat was vóór dit project gevonden werd, dus nog niet toegepast op deze hero — de bestaande lead-sin is een al goedgekeurd patroon en ik open dat niet zonder akkoord.
