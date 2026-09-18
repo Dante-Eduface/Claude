@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proef hero — discovery call</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ==========================================================================
+   PROEF hero, discovery-call-landingspagina, sectie 1 van 13.
+   Structuur (2 kolommen: copy + form) komt uit het Figma-skelet ("ThrillX"),
+   alle vormgeving uit references/design-system/core/ + web/.
+   Framer-proof: stacks/grid, gap op de parent, geen margins op children,
+   geen vaste hoogtes, absolute positionering alleen voor de gepinde
+   achtergrondlaag (bewuste overlap, beide assen gepind).
+   ========================================================================== */
+:root {
+  --navy: #002333;
+  --navy-2: #06303f;
+  --green: #00e075;
+  --green-deep: #007b54;
+  --ink-950: #002333;
+  --ink-900: #0a2c3b;
+  --ink-700: #2c4a57;
+  --ink-500: #5b7480;
+  --ink-200: #cdd9de;
+  --ink-100: #e7eef0;
+  --ink-50:  #f3f7f8;
+  --white:   #ffffff;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "League Spartan", var(--font-sans);
+
+  --radius-md: 8px;
+  --radius-lg: 10px;
+  --radius-2xl: 20px;
+
+  --shadow-lg: 0 12px 40px rgba(0,35,51,.10);
+
+  --container: 1200px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+body { font-family: var(--font-sans); background: var(--ink-50); color: var(--navy); }
+a { text-decoration: none; color: inherit; }
+:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
+
+/* ---- nav ---- */
+.nav { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.86); backdrop-filter: blur(12px); border-bottom: 1px solid var(--ink-100); }
+.nav-in { max-width: var(--container); margin: 0 auto; padding: 12px 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.nav-logo { font-family: var(--font-display); font-size: 1.375rem; font-weight: 700; letter-spacing: -0.02em; color: var(--navy); }
+.nav-links { display: flex; align-items: center; gap: 32px; font-size: 0.875rem; color: var(--ink-500); }
+.nav-links a:hover { color: var(--navy); }
+
+/* ---- buttons ---- */
+.btn { display: inline-flex; align-items: center; justify-content: center; border-radius: var(--radius-lg); font-weight: 600; cursor: pointer; border: 1px solid transparent; white-space: nowrap; transition: opacity .2s ease; }
+.btn:hover { opacity: .9; }
+.btn-primary { background: var(--navy); color: var(--white); padding: 10px 20px; font-size: 0.875rem; font-weight: 500; }
+.btn-accent  { background: var(--green); color: var(--navy); padding: 12px 24px; font-size: 0.9375rem; font-weight: 600; }
+
+/* ---- hero ---- */
+.hero { position: relative; display: flex; justify-content: center; overflow: hidden; padding: 96px 32px; }
+.hero-bg { position: absolute; inset: 0; background: var(--ink-900); }
+.hero-bg .bg-label { position: absolute; right: 16px; bottom: 16px; font-family: monospace; font-size: 11px; color: rgba(255,255,255,.35); }
+.hero-overlay { position: absolute; inset: 0; background: linear-gradient(100deg, rgba(0,35,51,.88) 0%, rgba(0,35,51,.66) 55%, rgba(0,35,51,.40) 100%); }
+
+.hero-in { position: relative; width: 100%; max-width: var(--container); display: grid; grid-template-columns: minmax(320px, 1fr) minmax(360px, 420px); align-items: center; gap: 64px; }
+
+.hero-copy { display: flex; flex-direction: column; align-items: flex-start; gap: 24px; }
+.eyebrow { font-size: 0.875rem; line-height: 1.4; color: rgba(255,255,255,.72); }
+.h1 { font-family: var(--font-display); font-size: 3.5rem; line-height: 1.05; letter-spacing: -0.02em; font-weight: 700; color: var(--white); max-width: 15ch; text-wrap: balance; }
+.lead { font-size: 1.125rem; line-height: 1.5; color: rgba(255,255,255,.72); max-width: 46ch; }
+
+.value-props { display: flex; flex-direction: column; gap: 16px; }
+.value-props li { list-style: none; display: flex; align-items: flex-start; gap: 12px; font-size: 1rem; line-height: 1.5; color: rgba(255,255,255,.92); }
+.check { flex-shrink: 0; width: 22px; height: 22px; border-radius: 9999px; background: rgba(255,255,255,.16); display: flex; align-items: center; justify-content: center; margin-top: 1px; }
+.check svg { width: 12px; height: 12px; }
+
+.cta-row { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; padding-top: 8px; }
+.microcopy { font-size: 0.8125rem; color: rgba(255,255,255,.6); }
+
+/* ---- form panel ---- */
+.hero-form-panel { position: relative; background: var(--white); border-radius: var(--radius-2xl); box-shadow: var(--shadow-lg); padding: 40px 32px; display: flex; flex-direction: column; gap: 20px; }
+.form-title { font-family: var(--font-sans); font-size: 1.125rem; font-weight: 600; color: var(--ink-950); }
+form { display: flex; flex-direction: column; gap: 16px; }
+label { display: flex; flex-direction: column; gap: 6px; font-size: 0.875rem; color: var(--ink-700); }
+input, textarea { font: inherit; font-size: 1rem; color: var(--ink-950); border: 1px solid var(--ink-200); border-radius: var(--radius-md); padding: 12px 14px; background: var(--white); }
+input:focus-visible, textarea:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
+textarea { resize: vertical; min-height: 80px; }
+.hero-form-panel .btn-primary { width: 100%; padding: 12px 20px; font-size: 0.9375rem; }
+
+@media (max-width: 900px) {
+  .hero { padding: 56px 20px; }
+  .hero-in { grid-template-columns: 1fr; gap: 40px; }
+  .nav-links { display: none; }
+  .h1 { font-size: 2.25rem; max-width: 18ch; }
+  .lead { font-size: 1.0625rem; max-width: none; }
+  .hero-form-panel { padding: 32px 24px; }
+}
+
+/* ---- toelichting buiten de proef ---- */
+.notes { display: flex; justify-content: center; padding: 72px 28px 56px; background: var(--white); border-top: 1px solid var(--ink-100); }
+.notes-in { width: 100%; max-width: var(--container); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px,100%),1fr)); gap: 32px; }
+.nt { display: flex; flex-direction: column; gap: 10px; border-left: 2px solid var(--ink-100); padding-left: 18px; }
+.nt h3 { font-size: 0.75rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--green-deep); }
+.nt p { font-size: 0.875rem; line-height: 1.55; color: var(--ink-500); }
+</style>
+</head>
+<body>
+
+<header class="nav"><div class="nav-in">
+  <span class="nav-logo">Eduface</span>
+  <nav class="nav-links">
+    <a href="#platform">Platform</a>
+    <a href="#how">How It Works</a>
+    <a href="#results">Results</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+  <a class="btn btn-primary" href="#form">Book a Call</a>
+</div></header>
+
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true"><span class="bg-label">background photo — placeholder</span></div>
+  <div class="hero-overlay" aria-hidden="true"></div>
+
+  <div class="hero-in">
+    <div class="hero-copy">
+      <p class="eyebrow">Used by Hogeschool Rotterdam, De Haagse Hogeschool and Tilburg University</p>
+      <h1 class="h1">Become the Institution That Leads While Competitors Quietly Fall Behind</h1>
+      <p class="lead">Within your first week, every teacher sees a student's full feedback history and stops sending contradictory feedback to the students most likely to drop out, using Eduface's AI assessment platform.</p>
+
+      <ul class="value-props">
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.2 11.5L13 4.5" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Flags inconsistent grades between markers before a student complains</li>
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.2 11.5L13 4.5" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Works inside your existing LMS, no new system to learn</li>
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.2 11.5L13 4.5" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>94% grading accuracy, tested on real student work</li>
+      </ul>
+
+      <div class="cta-row">
+        <a class="btn btn-accent" href="#form">Book a Discovery Call</a>
+        <p class="microcopy">No commitment. No credit card.</p>
+      </div>
+    </div>
+
+    <div class="hero-form-panel" id="form">
+      <h2 class="form-title">Get in Touch</h2>
+      <form>
+        <label>Name<input type="text" name="name" required></label>
+        <label>Work Email<input type="email" name="email" required></label>
+        <label>Institution<input type="text" name="institution" required></label>
+        <label>Job Title<input type="text" name="job_title" required></label>
+        <label>Message (optional)<textarea name="message"></textarea></label>
+        <button class="btn btn-primary" type="submit">Book a Discovery Call</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div class="notes"><div class="notes-in">
+  <div class="nt"><h3>Eyebrow</h3><p>Bewust een gewone regel, geen hoofdletter-pill/badge. Dat patroon staat op de reflexen-lijst (compositie.md §12) als af te raden, ook al kent het design system zelf een eyebrow-badge-stijl elders. Hier dus een bewuste afwijking.</p></div>
+  <div class="nt"><h3>Achtergrond</h3><p>Effen ink-900-vlak met een klein devlabel, geen nepfoto. De donkere overlay-gradient blijft staan zodra er een echte foto in komt, dan wel opnieuw checken op contrast: deze verhouding is afgestemd op het huidige vlakke fond.</p></div>
+  <div class="nt"><h3>Twee keer dezelfde CTA-tekst</h3><p>"Book a Discovery Call" staat op de groene hero-knop én op de form-submit. Groen is de ene toegestane accentkleur per pagina (de hero-knop), de submit is bewust navy: zelfde actie, andere rol (uitnodiging vs. transactie), niet dubbel groen.</p></div>
+  <div class="nt"><h3>Kopmaat</h3><p>H1 op de display-lg-maat (56px) in plaats van de grootste display-xl (72px): deze kop is elf woorden lang in een kolom die de helft van de breedte deelt met het formulier, dus de kleinere hero-maat past beter zonder de kop kunstmatig in te korten.</p></div>
+  <div class="nt"><h3>Formulier</h3><p>Puur markup, geen backend-koppeling. Native HTML5-validatie (required, type=email) is genoeg voor deze proef.</p></div>
+  <div class="nt"><h3>Mobiel</h3><p>De twee kolommen stapelen, copy eerst en dan het formulier, nav-links klappen in. Zelfde patroon als landing-page-demo-survey.</p></div>
+</div></div>
+
+</body>
+</html>
