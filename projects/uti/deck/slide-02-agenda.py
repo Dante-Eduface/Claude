@@ -1,11 +1,12 @@
 """Agenda: wegwijzer, geen betoog.
 
 Negen items passen niet in één leesbare kolom, dus twee kolommen van 5 en 4,
-gelezen van boven naar beneden en dan naar rechts. Het nummer staat in de
-linkermarge van de rij op caption-formaat in muted, het label draagt de rij op
-body-formaat in navy: zo scant het oog de labels en niet de cijfers. Eén
-haarlijn tussen de kolommen; verder geen randen, want de rijafstand doet het
-groeperen al. Geen accentkleur, want er is hier niets actiefs om te markeren.
+gelezen van boven naar beneden en dan naar rechts. Het nummer staat links in de
+rij op caption-formaat in muted, het label draagt de rij op body-formaat in
+navy: zo scant het oog de labels en niet de cijfers. Onder elke rij één
+haarlijn, want zonder die lijn zweven negen korte labels los in een breed vlak;
+de lijn geeft de kolom een rechterrand die op de marge uitkomt. Geen
+accentkleur, want er is hier niets actiefs om te markeren.
 """
 from deckbuild import rect, text, foot, render_html, shoot, \
     NAVY, INK500, INK100, HEAD, BODY, \
@@ -31,10 +32,10 @@ ITEMS = [
 ]
 LEFT_N = 5
 
-COL_W, COL_GAP = 720, 240
-COL_X = [M, M + COL_W + COL_GAP]
-NUM_W, LABEL_X = 76, 104
-ROW_H, Y0 = 132, 276
+COL_W, COL_GAP = 700, 280
+COL_X = [M, M + COL_W + COL_GAP]          # rechterkolom eindigt precies op de marge
+NUM_W, LABEL_DX = 60, 72
+ROW_H, Y0, RULE_DY = 124, 282, 74
 
 for i, label in enumerate(ITEMS):
     col, row = (0, i) if i < LEFT_N else (1, i - LEFT_N)
@@ -42,12 +43,12 @@ for i, label in enumerate(ITEMS):
     # nummer iets lager zodat de kleine cijfers optisch op de lijn van het label staan
     els += [text(x, y + 9, NUM_W, 34, f'{i + 1:02d}', font=HEAD, size=CAPTION,
                  color=INK500, align='left', ls=1.0),
-            text(x + LABEL_X, y, COL_W - LABEL_X, 48, label, font=BODY,
+            text(x + LABEL_DX, y, COL_W - LABEL_DX, 48, label, font=BODY,
                  size=TEXT, color=NAVY, align='left', ls=1.2)]
-
-# haarlijn scheidt de twee kolommen, loopt tot onder de laatste linkerrij
-els += [rect(COL_X[1] - COL_GAP / 2, Y0 - 12, 1,
-             (LEFT_N - 1) * ROW_H + 72, INK100)]
+    # lijn staat tussen items, niet onder het laatste: anders loopt de kolom
+    # dood tegen de voettekstlijn
+    if i not in (LEFT_N - 1, len(ITEMS) - 1):
+        els += [rect(x, y + RULE_DY, COL_W, 1, INK100)]
 
 els += foot(dark=False, page=2)
 
