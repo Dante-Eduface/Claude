@@ -75,5 +75,8 @@ for i, (cx, (icon, val, lbl)) in enumerate(zip(c3, EVIDENCE)):
 
 els += foot(page=13, source='Source: Bath Spa University · Eduface pilot data.')
 
-shoot(render_html(els, 'preview/slide-13.html'), 'preview/slide-13.png')
-print('preview/slide-13.png')
+DARK = False
+
+if __name__ == '__main__':
+    shoot(render_html(els, 'preview/slide-13.html', dark=DARK), 'preview/slide-13.png')
+    print('preview/slide-13.png')

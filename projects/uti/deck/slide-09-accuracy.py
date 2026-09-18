@@ -52,5 +52,8 @@ els += [text(CONTENT_X, NAV_Y0 + 412, min(CONTENT_W, 860), 160,
 
 els += foot(dark=True, page=9)
 
-shoot(render_html(els, 'preview/slide-09.html', dark=True), 'preview/slide-09.png')
-print('preview/slide-09.png')
+DARK = True
+
+if __name__ == '__main__':
+    shoot(render_html(els, 'preview/slide-09.html', dark=DARK), 'preview/slide-09.png')
+    print('preview/slide-09.png')
