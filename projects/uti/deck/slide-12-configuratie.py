@@ -1,8 +1,11 @@
 """Capability 4/4: zelfconfigurerend.
 
-Structureel een kopie van slide-09, actief item 04. De voorwaarde over
-Blackboard is een kanttekening bij de claim, geen claim op zich, en staat
-daarom in de bronregel onderaan.
+Structureel een kopie van slide-09, actief item 04. Dezelfde nav-rail, dezelfde
+geometrie, alleen de claim rechts wisselt. Die herhaling is het punt: vier
+slides met hetzelfde silhouet laten zien dat je door één blok loopt.
+
+De voorwaarde over Blackboard is een kanttekening bij de claim, geen claim op
+zich, en staat daarom in de bronregel onderaan.
 """
 from deckbuild import rect, text, tile, foot, render_html, shoot, \
     NAVY, GREEN, WHITE, INV_SOFT, INV_RULE, INK900, HEAD, BODY, \
@@ -38,11 +41,16 @@ els += [rect(NAV_X + NAV_W + 60, NAV_Y0, 1, ROW_H * len(CAPS) - 26, INV_RULE)]
 CONTENT_X = NAV_X + NAV_W + 60 + 80
 CONTENT_W = W - M - CONTENT_X
 
+# Vier regels, hard afgebroken. 'for new programs' meet 1115px op HERO en past
+# niet in de 1020px kolom; zonder eigen breuk hakt de browser hem willekeurig.
+# Zo blijft 'Self-configuring' heel en sluit de laatste regel het blok af.
 els += [text(CONTENT_X, NAV_Y0 - 14, CONTENT_W, HERO * 4.2,
-             'Self-configuring\nfor new programs\nand campuses',
+             'Self-configuring\nfor new\nprograms\nand campuses',
              font=HEAD, size=HERO, bold=True, color=WHITE, align='left', ls=0.98)]
 
-els += [text(CONTENT_X, NAV_Y0 + 560, min(CONTENT_W, 860), 160,
+# Vier regels claim, dus de body schuift één regelhoogte mee ten opzichte van
+# slide 09 (412 + 128): de afstand kop-naar-body blijft over het blok gelijk.
+els += [text(CONTENT_X, NAV_Y0 + 540, min(CONTENT_W, 860), 160,
              "Minimal manual setup, essential at UTI's pace of expansion.",
              font=BODY, size=TEXT, color=INV_SOFT, align='left', ls=1.45)]
 

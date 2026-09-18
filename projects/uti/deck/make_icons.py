@@ -12,12 +12,16 @@ TONES = {'navy': '002333', 'white': 'FFFFFF',
 
 ICONS = {
     # capabilities
-    'doel':       '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/>'
-                  '<circle cx="12" cy="12" r="1.4"/>',
-    'sleutel':    '<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77'
-                  'a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91'
-                  'a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>',
-    'instelling': '<path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/>',
+    # Vizier in plaats van drie ringen: op 48px liepen de ringen tegen elkaar.
+    'doel':       '<circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.6"/>'
+                  '<path d="M12 2v3.5M12 18.5V22M2 12h3.5M18.5 12H22"/>',
+    # Tandwiel in plaats van moersleutel: de sleutel viel op klein formaat uiteen.
+    'sleutel':    '<circle cx="12" cy="12" r="3.2"/>'
+                  '<path d="M12 2.5v3M12 18.5v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1'
+                  'M2.5 12h3M18.5 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/>',
+    # Instellingsgebouw, geen woonhuis: dit gaat over campussen, niet over thuis.
+    'instelling': '<path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/>'
+                  '<path d="M9 21v-5h6v5"/><path d="M9 9h2M13 9h2M9 12.5h2M13 12.5h2"/>',
     'schuifjes':  '<path d="M21 4h-7M10 4H3M21 12h-9M8 12H3M21 20h-5M12 20H3"/>'
                   '<path d="M14 2v4M8 10v4M16 18v4"/>',
     # bewijs
@@ -26,7 +30,10 @@ ICONS = {
                   '<path d="M14 2v6h6"/><path d="M9 13h6M9 17h6"/>',
     'klok':       '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
     # bevindingen en risico
-    'exact':      '<path d="M5 9h14M5 15h14"/><path d="m18 4-12 16"/>',
+    # Gelijkteken in een kader: exact-match. Het was een ongelijkteken, en dat
+    # zei letterlijk het tegenovergestelde van wat er op de slide staat.
+    'exact':      '<rect x="3" y="3" width="18" height="18" rx="3.5"/>'
+                  '<path d="M8 10h8M8 14h8"/>',
     'onzichtbaar': '<path d="M9.88 9.88a3 3 0 1 0 4.24 4.24"/>'
                   '<path d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"/>'
                   '<path d="M6.61 6.61A13.526 13.526 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"/>'
@@ -66,7 +73,7 @@ for name, paths in ICONS.items():
             'svg{display:block;width:296px;height:296px}'
             '</style></head><body>'
             f'<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" '
-            f'stroke="#{hexc}" stroke-width="1.9" stroke-linecap="round" '
+            f'stroke="#{hexc}" stroke-width="2.2" stroke-linecap="round" '
             f'stroke-linejoin="round">{paths}</svg></body></html>')
         subprocess.run([CHROME, '--headless', '--disable-gpu', '--no-sandbox',
                         f'--screenshot={out}', '--window-size=296,296',

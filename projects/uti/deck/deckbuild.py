@@ -58,6 +58,32 @@ def tile(x, y, icon, tone='navy', fill=INK50, size=132, r=20, ic=64):
             pic(f'assets/icon-{icon}-{tone}.png',
                 x + (size - ic) / 2, y + (size - ic) / 2, ic, ic)]
 
+# De inhoudsband: alles tussen de kop en de voettekst. Een slide hoort deze
+# band te vullen. Blijft de inhoud boven BAND_BOT steken, dan oogt de slide
+# leeg en klopt de compositie niet — dat is geen smaakkwestie maar de meest
+# herhaalde correctie op dit deck.
+BAND_TOP, BAND_BOT = 236, 896
+
+def column(x, y, w, h, icon, head, body, dark=False, pad=48, r=24):
+    """Kolom over de volle bandhoogte: vlak, icoon, kop, tekst.
+
+    De kop staat op SUB en de tekst op TEXT, en de tekst wordt onderaan het
+    vlak uitgelijnd. Zo vult één kolom de hele band in plaats van halverwege
+    op te houden.
+    """
+    fill = INK900 if dark else INK50
+    out = [rect(x, y, w, h, fill, r=r)]
+    out += tile(x + pad, y + pad, icon,
+                tone='green' if dark else 'navy',
+                fill=NAVY if dark else WHITE, size=112, r=20, ic=56)
+    out += [text(x + pad, y + pad + 112 + 40, w - 2 * pad, SUB * 2.6, head,
+                 font=HEAD, size=SUB, bold=True,
+                 color=WHITE if dark else NAVY, align='left', ls=1.15)]
+    out += [text(x + pad, y + h - pad - TEXT * 1.45 * 3, w - 2 * pad,
+                 TEXT * 1.45 * 3, body, font=BODY, size=TEXT,
+                 color=INV_SOFT if dark else INK500, align='left', ls=1.45)]
+    return out
+
 def lockup(x, y, dark=False, h=40):
     """Eduface naast de klant. Zodra assets/uti-logo-*.png bestaat pakt hij het
     logo; tot die tijd staat de naam er uitgeschreven, zodat er geen gat valt."""
