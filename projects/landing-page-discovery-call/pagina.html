@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eduface — Book a Discovery Call</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ==========================================================================
+   Discovery-call landingspagina — volledige pagina, laptop/desktop-breedte.
+   Bouwt door op de goedgekeurde hero (proef-hero.html). Structuur uit het
+   Figma-skelet ("ThrillX"), alle vormgeving uit references/design-system/
+   core/ + web/. Mobiel bewust nog niet gedaan (Dante, 18-09-2026).
+   ========================================================================== */
+:root {
+  --navy: #002333;
+  --navy-2: #06303f;
+  --green: #00e075;
+  --green-deep: #007b54;
+  --ink-950: #002333;
+  --ink-900: #0a2c3b;
+  --ink-700: #2c4a57;
+  --ink-500: #5b7480;
+  --ink-300: #a9bcc4;
+  --ink-200: #cdd9de;
+  --ink-100: #e7eef0;
+  --ink-50:  #f3f7f8;
+  --white:   #ffffff;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "League Spartan", var(--font-sans);
+
+  --radius-md: 8px;
+  --radius-lg: 10px;
+  --radius-xl: 12px;
+  --radius-2xl: 20px;
+  --radius-full: 9999px;
+
+  --shadow-md: 0 4px 16px rgba(0,35,51,.08);
+  --shadow-lg: 0 12px 40px rgba(0,35,51,.10);
+
+  --container: 1200px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+body { font-family: var(--font-sans); background: var(--white); color: var(--navy); min-width: 1280px; }
+a { text-decoration: none; color: inherit; }
+img { display: block; max-width: 100%; }
+:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
+ul { list-style: none; }
+
+/* ---- shared type ---- */
+.eyebrow { font-size: 0.875rem; line-height: 1.4; }
+.h1 { font-family: var(--font-display); font-size: 3.5rem; line-height: 1.05; letter-spacing: -0.02em; font-weight: 700; text-wrap: balance; }
+.h2 { font-family: var(--font-display); font-size: 2.75rem; line-height: 1.1; letter-spacing: -0.015em; font-weight: 600; text-wrap: balance; }
+.h3 { font-family: var(--font-sans); font-size: 1.25rem; line-height: 1.3; font-weight: 600; }
+.body-text { font-size: 1.0625rem; line-height: 1.6; color: var(--ink-500); }
+
+/* ---- shared layout ---- */
+.section { display: flex; justify-content: center; padding: 96px 32px; }
+.section-in { width: 100%; max-width: var(--container); }
+.two-col { display: grid; grid-template-columns: minmax(360px, 1fr) minmax(360px, 1fr); gap: 80px; align-items: center; }
+.stack { display: flex; flex-direction: column; gap: 24px; align-items: flex-start; }
+
+/* ---- buttons ---- */
+.btn { display: inline-flex; align-items: center; justify-content: center; border-radius: var(--radius-lg); font-weight: 600; cursor: pointer; border: 1px solid transparent; white-space: nowrap; transition: opacity .2s ease; }
+.btn:hover { opacity: .9; }
+.btn-primary { background: var(--navy); color: var(--white); padding: 12px 22px; font-size: 0.9375rem; font-weight: 500; }
+.btn-accent  { background: var(--green); color: var(--navy); padding: 12px 24px; font-size: 0.9375rem; font-weight: 600; }
+.btn-inverse { background: var(--white); color: var(--navy); padding: 12px 22px; font-size: 0.9375rem; font-weight: 600; }
+.microcopy { font-size: 0.8125rem; color: var(--ink-500); }
+
+/* ---- placeholder panel (product beeld nog te maken) ---- */
+.placeholder { position: relative; width: 100%; aspect-ratio: 4/3; border-radius: var(--radius-xl); background: var(--ink-100); display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.placeholder span { font-family: monospace; font-size: 12px; color: var(--ink-500); }
+
+/* ==========================================================================
+   1. NAV + HERO — patroon uit proef-hero.html, ongewijzigd
+   ========================================================================== */
+.nav { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.86); backdrop-filter: blur(12px); border-bottom: 1px solid var(--ink-100); }
+.nav-in { max-width: var(--container); margin: 0 auto; padding: 12px 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.nav-logo { font-family: var(--font-display); font-size: 1.375rem; font-weight: 700; letter-spacing: -0.02em; color: var(--navy); }
+.nav-links { display: flex; align-items: center; gap: 32px; font-size: 0.875rem; color: var(--ink-500); }
+.nav-links a:hover { color: var(--navy); }
+
+.hero { position: relative; display: flex; justify-content: center; overflow: hidden; padding: 96px 32px; }
+.hero-bg { position: absolute; inset: 0; background: var(--ink-900); }
+.hero-bg .bg-label { position: absolute; right: 16px; bottom: 16px; font-family: monospace; font-size: 11px; color: rgba(255,255,255,.35); }
+.hero-overlay { position: absolute; inset: 0; background: linear-gradient(100deg, rgba(0,35,51,.88) 0%, rgba(0,35,51,.66) 55%, rgba(0,35,51,.40) 100%); }
+.hero-in { position: relative; width: 100%; max-width: var(--container); display: grid; grid-template-columns: minmax(320px, 1fr) minmax(360px, 420px); align-items: center; gap: 64px; }
+.hero-copy { display: flex; flex-direction: column; align-items: flex-start; gap: 24px; }
+.hero-copy .eyebrow { color: rgba(255,255,255,.72); }
+.hero-copy .h1 { color: var(--white); max-width: 15ch; }
+.value-props { display: flex; flex-direction: column; gap: 16px; }
+.value-props li { display: flex; align-items: flex-start; gap: 12px; font-size: 1rem; line-height: 1.5; color: rgba(255,255,255,.92); }
+.check { flex-shrink: 0; width: 22px; height: 22px; border-radius: var(--radius-full); background: rgba(255,255,255,.16); display: flex; align-items: center; justify-content: center; margin-top: 1px; }
+.check svg { width: 12px; height: 12px; }
+.cta-row { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; padding-top: 8px; }
+.cta-row .microcopy { color: rgba(255,255,255,.6); }
+.hero-form-panel { position: relative; background: var(--white); border-radius: var(--radius-2xl); box-shadow: var(--shadow-lg); padding: 40px 32px; display: flex; flex-direction: column; gap: 20px; }
+.form-title { font-size: 1.125rem; font-weight: 600; color: var(--ink-950); }
+form { display: flex; flex-direction: column; gap: 16px; }
+label { display: flex; flex-direction: column; gap: 6px; font-size: 0.875rem; color: var(--ink-700); }
+input, textarea { font: inherit; font-size: 1rem; color: var(--ink-950); border: 1px solid var(--ink-200); border-radius: var(--radius-md); padding: 12px 14px; background: var(--white); }
+input:focus-visible, textarea:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
+textarea { resize: vertical; min-height: 80px; }
+.hero-form-panel .btn-primary { width: 100%; padding: 12px 20px; font-size: 0.9375rem; }
+
+/* ==========================================================================
+   2. TRUST BAR
+   ========================================================================== */
+.trust { padding: 48px 32px; border-bottom: 1px solid var(--ink-100); }
+.trust-in { display: flex; flex-direction: column; align-items: center; gap: 24px; }
+.trust-line { font-size: 0.875rem; color: var(--ink-500); text-align: center; }
+.trust-logos { display: flex; align-items: center; justify-content: center; gap: 56px; }
+.trust-logos img { height: 26px; width: auto; filter: grayscale(1) brightness(.55); opacity: .68; }
+.trust-logos img.tall { height: 34px; }
+
+/* ==========================================================================
+   3. PROBLEEM / HERKENNING
+   ========================================================================== */
+.problem { background: var(--ink-50); }
+.problem .stack { max-width: 720px; gap: 20px; }
+.problem .eyebrow { color: var(--green-deep); font-weight: 600; }
+
+/* ==========================================================================
+   4 &amp; 8. SOCIAL PROOF
+   ========================================================================== */
+.proof-dark { background: var(--navy); }
+.proof-dark .h2 { color: var(--white); }
+.proof-dark .body-text { color: rgba(255,255,255,.72); }
+.proof-dark .eyebrow { color: rgba(255,255,255,.6); }
+
+.proof-card { position: relative; border-radius: var(--radius-2xl); overflow: hidden; background: var(--white); box-shadow: var(--shadow-lg); }
+.proof-photo { position: relative; height: 220px; background-size: cover; background-position: center; }
+.proof-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,35,51,0) 40%, rgba(0,35,51,.82) 100%); }
+.proof-logo-chip { position: absolute; top: 16px; left: 16px; background: var(--white); border-radius: var(--radius-md); padding: 6px 10px; z-index: 2; }
+.proof-logo-chip img { height: 20px; width: auto; }
+.proof-caption { position: absolute; left: 16px; bottom: 14px; z-index: 2; color: var(--white); }
+.proof-caption .cap-title { font-size: 0.875rem; font-weight: 600; }
+.proof-caption .cap-facts { font-size: 0.75rem; color: rgba(255,255,255,.72); margin-top: 2px; }
+
+.stat-row { display: flex; align-items: center; gap: 20px; padding: 32px 28px; }
+.stat { display: flex; flex-direction: column; gap: 4px; }
+.stat .num { font-family: var(--font-display); font-size: 2.75rem; line-height: 1; font-weight: 700; color: var(--navy); }
+.stat .cap { font-size: 0.8125rem; color: var(--ink-500); }
+.stat-arrow { color: var(--ink-300); font-size: 1.5rem; }
+.delta-badge { margin-left: auto; display: inline-flex; align-items: center; gap: 6px; background: var(--ink-50); border-radius: var(--radius-full); padding: 6px 14px; font-size: 0.8125rem; font-weight: 600; color: var(--green-deep); }
+
+.quote-card { background: var(--white); border-radius: var(--radius-2xl); padding: 40px 36px; box-shadow: var(--shadow-md); display: flex; flex-direction: column; gap: 20px; }
+.quote-mark { font-family: var(--font-display); font-size: 3rem; line-height: 1; color: var(--ink-200); }
+.quote-text { font-size: 1.125rem; line-height: 1.6; color: var(--ink-950); font-style: italic; }
+.quote-attr { font-size: 0.875rem; color: var(--ink-500); }
+.finding-list { display: flex; flex-direction: column; gap: 12px; }
+.finding-list li { font-size: 0.9375rem; line-height: 1.5; color: var(--ink-700); padding-left: 18px; position: relative; }
+.finding-list li::before { content: "—"; position: absolute; left: 0; color: var(--ink-300); }
+
+/* ==========================================================================
+   5-7. VALUE PROP SECTIES
+   ========================================================================== */
+.value-section .eyebrow { color: var(--green-deep); font-weight: 600; }
+.value-section.reverse .two-col { direction: rtl; }
+.value-section.reverse .two-col > * { direction: ltr; }
+
+/* ==========================================================================
+   9. VERGELIJKINGSSECTIE
+   ========================================================================== */
+.compare .section-in { display: flex; flex-direction: column; align-items: center; gap: 40px; }
+.compare .h2 { text-align: center; }
+.compare-table { width: 100%; border-collapse: collapse; background: var(--white); border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-md); }
+.compare-table th, .compare-table td { padding: 18px 20px; text-align: center; border-bottom: 1px solid var(--ink-100); font-size: 0.9375rem; }
+.compare-table th { font-family: var(--font-sans); font-weight: 600; color: var(--ink-700); background: var(--ink-50); }
+.compare-table td:first-child, .compare-table th:first-child { text-align: left; color: var(--ink-700); font-weight: 500; }
+.compare-table th.us { color: var(--navy); background: var(--ink-100); }
+.compare-table tr:last-child td { border-bottom: none; }
+.ok  { color: var(--green-deep); font-weight: 700; }
+.no  { color: var(--ink-300); font-weight: 700; }
+
+/* ==========================================================================
+   10. HOW IT WORKS
+   ========================================================================== */
+.how { background: var(--ink-50); }
+.how .section-in { display: flex; flex-direction: column; align-items: center; gap: 56px; }
+.how .h2 { text-align: center; max-width: 20ch; }
+.steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; width: 100%; }
+.step { background: var(--white); border-radius: var(--radius-xl); padding: 32px 28px; box-shadow: var(--shadow-md); display: flex; flex-direction: column; gap: 16px; }
+.step-num { width: 36px; height: 36px; border-radius: var(--radius-full); background: var(--navy); color: var(--white); font-family: var(--font-display); font-weight: 700; display: flex; align-items: center; justify-content: center; }
+.step h3 { font-size: 1.0625rem; font-weight: 600; }
+.step p { font-size: 0.9375rem; line-height: 1.55; color: var(--ink-500); }
+
+/* ==========================================================================
+   11. FAQ
+   ========================================================================== */
+.faq .section-in { max-width: 800px; }
+.faq .h2 { text-align: center; margin-bottom: 40px; }
+.faq-list { display: flex; flex-direction: column; gap: 4px; }
+.faq-item { border-bottom: 1px solid var(--ink-100); padding: 20px 4px; }
+.faq-item summary { display: flex; align-items: center; justify-content: space-between; gap: 16px; cursor: pointer; font-size: 1.0625rem; font-weight: 600; color: var(--navy); list-style: none; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item .plus { flex-shrink: 0; width: 20px; height: 20px; position: relative; }
+.faq-item .plus::before, .faq-item .plus::after { content:""; position: absolute; background: var(--ink-500); border-radius: 2px; }
+.faq-item .plus::before { width: 14px; height: 2px; top: 9px; left: 3px; }
+.faq-item .plus::after { width: 2px; height: 14px; top: 3px; left: 9px; transition: transform .2s ease; }
+.faq-item[open] .plus::after { transform: rotate(90deg); }
+.faq-item p { margin-top: 14px; font-size: 0.9375rem; line-height: 1.6; color: var(--ink-500); max-width: 68ch; }
+
+/* ==========================================================================
+   12. LAATSTE CTA
+   ========================================================================== */
+.final-cta { background: var(--navy); text-align: center; }
+.final-cta .section-in { display: flex; flex-direction: column; align-items: center; gap: 24px; max-width: 760px; margin: 0 auto; }
+.final-cta .h2 { color: var(--white); }
+.final-cta .body-text { color: rgba(255,255,255,.72); }
+
+/* ==========================================================================
+   13. FOOTER
+   ========================================================================== */
+.footer { background: var(--ink-950); padding: 40px 32px; }
+.footer-in { max-width: var(--container); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.footer-logo { font-family: var(--font-display); font-size: 1.125rem; font-weight: 700; color: var(--white); }
+.footer-links { display: flex; align-items: center; gap: 28px; font-size: 0.8125rem; color: rgba(255,255,255,.6); }
+.footer-links a:hover { color: var(--white); }
+.footer-copy { font-size: 0.75rem; color: rgba(255,255,255,.4); }
+</style>
+</head>
+<body>
+
+<header class="nav"><div class="nav-in">
+  <span class="nav-logo">Eduface</span>
+  <nav class="nav-links">
+    <a href="#platform">Platform</a>
+    <a href="#how">How It Works</a>
+    <a href="#results">Results</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+  <a class="btn btn-primary" href="#form">Book a Call</a>
+</div></header>
+
+<!-- 1. HERO -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true"><span class="bg-label">background photo — placeholder</span></div>
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="hero-in">
+    <div class="hero-copy">
+      <p class="eyebrow">Used by Hogeschool Rotterdam, De Haagse Hogeschool and Tilburg University</p>
+      <h1 class="h1">Become the Institution That Leads While Competitors Quietly Fall Behind</h1>
+      <ul class="value-props">
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.2 11.5L13 4.5" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Flags inconsistent grades between markers before a student complains</li>
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.2 11.5L13 4.5" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Works inside your existing LMS, no new system to learn</li>
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.2 11.5L13 4.5" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>94% grading accuracy, tested on real student work</li>
+      </ul>
+      <div class="cta-row">
+        <a class="btn btn-accent" href="#form">Book a Discovery Call</a>
+        <p class="microcopy">No commitment. No credit card.</p>
+      </div>
+    </div>
+    <div class="hero-form-panel" id="form">
+      <h2 class="form-title">Get in Touch</h2>
+      <form>
+        <label>Name<input type="text" name="name" required></label>
+        <label>Work Email<input type="email" name="email" required></label>
+        <label>Institution<input type="text" name="institution" required></label>
+        <label>Job Title<input type="text" name="job_title" required></label>
+        <label>Message (optional)<textarea name="message"></textarea></label>
+        <button class="btn btn-primary" type="submit">Book a Discovery Call</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- 2. TRUST BAR -->
+<section class="trust"><div class="trust-in section-in" style="max-width:var(--container);margin:0 auto;">
+  <p class="trust-line">Built with UK and Dutch higher education institutions</p>
+  <div class="trust-logos">
+    <img src="brand_assets/schools/rotterdam-cropped.svg" alt="Hogeschool Rotterdam">
+    <img class="tall" src="brand_assets/schools/haagse.png" alt="De Haagse Hogeschool">
+    <img src="brand_assets/schools/tilburg.svg" alt="Tilburg University">
+  </div>
+</div></section>
+
+<!-- 3. PROBLEEM -->
+<section class="section problem" id="platform"><div class="section-in stack">
+  <p class="eyebrow">The cost of inconsistency</p>
+  <h2 class="h2">Feeling like grading is bleeding your margin?</h2>
+  <p class="body-text">Almost every institution wants consistent, high-quality feedback. Few can prove they deliver it. Under workload pressure, quality gets rushed, and markers grade the same work differently without anyone noticing until a student complains or an accreditor asks for evidence. Eduface gives every marker the same instructed standard, so consistency stops depending on who happens to be marking that week.</p>
+  <a class="btn btn-primary" href="#form">Book a Discovery Call</a>
+</div></section>
+
+<!-- 4. SOCIAL PROOF #1 — BATH SPA -->
+<section class="section proof-dark" id="results"><div class="section-in two-col">
+  <div class="stack">
+    <h2 class="h2">An AI Model That Marks Like Your Own Team</h2>
+    <p class="body-text">Tested on real student work your markers had already graded. Not on a demo set.</p>
+    <a class="btn btn-accent" href="#form">Book a Discovery Call</a>
+  </div>
+  <div class="proof-card">
+    <div class="proof-photo" style="background-image:url('brand_assets/schools/bath-spa-campus.jpg')">
+      <div class="proof-logo-chip"><img src="brand_assets/schools/bath-spa.svg" alt="Bath Spa University"></div>
+      <div class="proof-caption">
+        <div class="cap-title">Bath Spa University, Pilot, June 2026</div>
+        <div class="cap-facts">435 assignments · 13 markers · 6 subjects</div>
+      </div>
+    </div>
+    <div class="stat-row">
+      <div class="stat"><span class="num">94%</span><span class="cap">before instructing</span></div>
+      <span class="stat-arrow">→</span>
+      <div class="stat"><span class="num">98%</span><span class="cap">after instructing</span></div>
+      <span class="delta-badge">↑ 4 points closer</span>
+    </div>
+  </div>
+</div></section>
+
+<!-- 5. VALUE PROP — CONSISTENCY -->
+<section class="section value-section"><div class="section-in two-col">
+  <div class="placeholder"><span>product screenshot — placeholder</span></div>
+  <div class="stack">
+    <p class="eyebrow">Consistent grading, guaranteed</p>
+    <h2 class="h2">Every marker grades to the same standard, every time</h2>
+    <p class="body-text">Eduface's Grader Comparison Dashboard shows the moment a marker's grade or feedback drifts from the instructed standard, before it reaches the student. You see the gap in one view instead of finding out from a complaint or an accreditation review.</p>
+    <a class="btn btn-primary" href="#form">Book a Discovery Call</a>
+  </div>
+</div></section>
+
+<!-- 6. VALUE PROP — ACCURACY -->
+<section class="section value-section reverse" style="background:var(--ink-50)"><div class="section-in two-col">
+  <div class="stack">
+    <p class="eyebrow">Verified accuracy, not a claim</p>
+    <h2 class="h2">94% accurate out of the box, 98% once it knows your standard</h2>
+    <p class="body-text">Eduface isn't one generic model guessing at every subject. It runs six subject-trained models, Law, Economics, Social Sciences, STEM, Humanities and Health Sciences, each built on the reasoning and source conventions of its own field. Instructed on your rubric, accuracy climbed from 94% to 98% in Bath Spa University's pilot, tested against markers who had already graded the same work.</p>
+    <a class="btn btn-primary" href="#form">Book a Discovery Call</a>
+  </div>
+  <div class="placeholder"><span>product screenshot — placeholder</span></div>
+</div></section>
+
+<!-- 7. VALUE PROP — RETENTION -->
+<section class="section value-section"><div class="section-in two-col">
+  <div class="placeholder"><span>product screenshot — placeholder</span></div>
+  <div class="stack">
+    <p class="eyebrow">Protect what grading inconsistency puts at risk</p>
+    <h2 class="h2">Fewer students lost to feedback that let them down</h2>
+    <p class="body-text">Inconsistent, late or generic feedback is one of the quiet reasons students disengage and drop out, and one of the reasons accreditors flag traceability gaps. Consistent, timely feedback closes both risks at once, without adding headcount.</p>
+    <a class="btn btn-primary" href="#form">Book a Discovery Call</a>
+  </div>
+</div></section>
+
+<!-- 8. SOCIAL PROOF #2 — ROTTERDAM BDK -->
+<section class="section" style="background:var(--ink-50)"><div class="section-in stack" style="gap:40px;max-width:none;">
+  <h2 class="h2">The Second Round Is Where It Clicks</h2>
+  <div class="two-col" style="gap:48px;align-items:start;">
+    <div class="stack" style="gap:20px;">
+      <img src="brand_assets/schools/rotterdam-cropped.svg" alt="Hogeschool Rotterdam, Bedrijfskunde" style="height:32px;width:auto;">
+      <ul class="finding-list">
+        <li>Pilot in Bedrijfskunde (BDK), Rotterdam Business School, on a 20+ page group report combining multiple business perspectives</li>
+        <li>Groups submitted a draft, received rubric-based feedback with comments directly in the text, a second round showed visible progress before final submission</li>
+        <li>79% of students rated the feedback positive or neutral, without extra guidance from the lecturer</li>
+        <li>Round 2 was rated noticeably better than round 1, after refining the rubric configuration</li>
+        <li>Students saw AI feedback and peer feedback as complementary, not as replacements</li>
+      </ul>
+      <a class="btn btn-primary" href="#form">Book a Discovery Call</a>
+    </div>
+    <div class="quote-card">
+      <span class="quote-mark">&ldquo;</span>
+      <p class="quote-text">We need to keep working with AI in our education as an institution. Students expect it... Doing nothing is not an option.</p>
+      <p class="quote-attr">— Rotterdam Business School, Bedrijfskunde (BDK)</p>
+    </div>
+  </div>
+</div></section>
+
+<!-- 9. VERGELIJKING -->
+<section class="section compare"><div class="section-in">
+  <h2 class="h2">What Actually Makes Eduface Different</h2>
+  <table class="compare-table" style="margin-top:40px;">
+    <thead>
+      <tr><th></th><th class="us">Eduface</th><th>General LLM</th><th>Self-Built</th><th>LLM-Wrapper</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Time to go live</td><td class="us">Weeks</td><td>Instant</td><td>~3 months</td><td>Weeks to months</td></tr>
+      <tr><td>Consistency &amp; accuracy</td><td class="us ok">✓</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td></tr>
+      <tr><td>AI Act / GDPR compliant</td><td class="us ok">✓</td><td class="no">✗</td><td class="ok">✓</td><td class="no">✗</td></tr>
+      <tr><td>Works in your LMS</td><td class="us ok">✓</td><td class="no">✗</td><td class="ok">✓</td><td class="ok">✓</td></tr>
+    </tbody>
+  </table>
+  <div style="text-align:center;margin-top:40px;"><a class="btn btn-primary" href="#form">Book a Discovery Call</a></div>
+</div></section>
+
+<!-- 10. HOW IT WORKS -->
+<section class="section how" id="how"><div class="section-in">
+  <h2 class="h2">From First Conversation to Consistent Grading</h2>
+  <div class="steps">
+    <div class="step">
+      <span class="step-num">1</span>
+      <h3>Discovery Call</h3>
+      <p>We map where grading inconsistency and workload actually hurt your institution.</p>
+    </div>
+    <div class="step">
+      <span class="step-num">2</span>
+      <h3>Instruct Eduface on Your Rubric</h3>
+      <p>We configure Eduface on your exact criteria, so every grade matches your standard from day one.</p>
+    </div>
+    <div class="step">
+      <span class="step-num">3</span>
+      <h3>Go Live in Your LMS</h3>
+      <p>Eduface connects to your existing system and starts grading consistently from day one.</p>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:16px;"><a class="btn btn-primary" href="#form">Book a Discovery Call</a></div>
+</div></section>
+
+<!-- 11. FAQ -->
+<section class="section faq" id="faq"><div class="section-in">
+  <h2 class="h2">Frequently Asked Questions</h2>
+  <div class="faq-list">
+    <details class="faq-item">
+      <summary>Does Eduface detect AI-generated student work?<span class="plus"></span></summary>
+      <p>Eduface doesn't claim hard AI-detection. Our Academic Integrity module (in beta) asks students to verbally defend their own paper, similar to a thesis defense, and flags inconsistencies for your markers to review. It never hands down an automatic verdict.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Where is our data hosted, and does it meet GDPR requirements?<span class="plus"></span></summary>
+      <p>Eduface runs on infrastructure built for EU/UK data requirements. We'll walk your compliance team through it on the call.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Does Eduface integrate with our existing LMS?<span class="plus"></span></summary>
+      <p>Yes. Eduface connects to Moodle, Brightspace and Itslearning through standard LTI integration.</p>
+    </details>
+    <details class="faq-item">
+      <summary>How accurate is the AI grading?<span class="plus"></span></summary>
+      <p>94% out of the box, and up to 98% once it's instructed on your own rubric, tested against markers who had already graded the same work.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Does a human still grade, or is it fully automated?<span class="plus"></span></summary>
+      <p>The AI assists. The academic decides. Institutions choose how much human oversight they want — feedback can go straight to students, or wait for your markers to review and approve it first.</p>
+    </details>
+    <details class="faq-item">
+      <summary>What does it cost?<span class="plus"></span></summary>
+      <p>Pricing scales with your institution's assessment volume. We'll walk through it on the call.</p>
+    </details>
+  </div>
+</div></section>
+
+<!-- 12. LAATSTE CTA -->
+<section class="section final-cta"><div class="section-in">
+  <h2 class="h2">Every Term You Wait Is Another Cohort Graded the Old Way</h2>
+  <p class="body-text">Grading inconsistency and rushed feedback don't fix themselves between terms. The institutions ahead of this are already instructing their rubric into Eduface before the next intake starts.</p>
+  <a class="btn btn-inverse" href="#form">Book a Discovery Call</a>
+</div></section>
+
+<!-- 13. FOOTER -->
+<footer class="footer"><div class="footer-in">
+  <span class="footer-logo">Eduface</span>
+  <nav class="footer-links">
+    <a href="#platform">Platform</a>
+    <a href="#how">How It Works</a>
+    <a href="#results">Results</a>
+    <a href="#faq">FAQ</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms of Service</a>
+    <a href="#form">Get in Touch</a>
+  </nav>
+  <span class="footer-copy">© 2026 Eduface. All rights reserved.</span>
+</div></footer>
+
+</body>
+</html>

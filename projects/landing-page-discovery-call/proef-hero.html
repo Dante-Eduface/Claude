@@ -72,7 +72,6 @@ a { text-decoration: none; color: inherit; }
 .hero-copy { display: flex; flex-direction: column; align-items: flex-start; gap: 24px; }
 .eyebrow { font-size: 0.875rem; line-height: 1.4; color: rgba(255,255,255,.72); }
 .h1 { font-family: var(--font-display); font-size: 3.5rem; line-height: 1.05; letter-spacing: -0.02em; font-weight: 700; color: var(--white); max-width: 15ch; text-wrap: balance; }
-.lead { font-size: 1.125rem; line-height: 1.5; color: rgba(255,255,255,.72); max-width: 46ch; }
 
 .value-props { display: flex; flex-direction: column; gap: 16px; }
 .value-props li { list-style: none; display: flex; align-items: flex-start; gap: 12px; font-size: 1rem; line-height: 1.5; color: rgba(255,255,255,.92); }
@@ -91,15 +90,6 @@ input, textarea { font: inherit; font-size: 1rem; color: var(--ink-950); border:
 input:focus-visible, textarea:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
 textarea { resize: vertical; min-height: 80px; }
 .hero-form-panel .btn-primary { width: 100%; padding: 12px 20px; font-size: 0.9375rem; }
-
-@media (max-width: 900px) {
-  .hero { padding: 56px 20px; }
-  .hero-in { grid-template-columns: 1fr; gap: 40px; }
-  .nav-links { display: none; }
-  .h1 { font-size: 2.25rem; max-width: 18ch; }
-  .lead { font-size: 1.0625rem; max-width: none; }
-  .hero-form-panel { padding: 32px 24px; }
-}
 
 /* ---- toelichting buiten de proef ---- */
 .notes { display: flex; justify-content: center; padding: 72px 28px 56px; background: var(--white); border-top: 1px solid var(--ink-100); }
@@ -130,7 +120,6 @@ textarea { resize: vertical; min-height: 80px; }
     <div class="hero-copy">
       <p class="eyebrow">Used by Hogeschool Rotterdam, De Haagse Hogeschool and Tilburg University</p>
       <h1 class="h1">Become the Institution That Leads While Competitors Quietly Fall Behind</h1>
-      <p class="lead">Within your first week, every teacher sees a student's full feedback history and stops sending contradictory feedback to the students most likely to drop out, using Eduface's AI assessment platform.</p>
 
       <ul class="value-props">
         <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.2 11.5L13 4.5" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Flags inconsistent grades between markers before a student complains</li>
@@ -164,7 +153,7 @@ textarea { resize: vertical; min-height: 80px; }
   <div class="nt"><h3>Twee keer dezelfde CTA-tekst</h3><p>"Book a Discovery Call" staat op de groene hero-knop én op de form-submit. Groen is de ene toegestane accentkleur per pagina (de hero-knop), de submit is bewust navy: zelfde actie, andere rol (uitnodiging vs. transactie), niet dubbel groen.</p></div>
   <div class="nt"><h3>Kopmaat</h3><p>H1 op de display-lg-maat (56px) in plaats van de grootste display-xl (72px): deze kop is elf woorden lang in een kolom die de helft van de breedte deelt met het formulier, dus de kleinere hero-maat past beter zonder de kop kunstmatig in te korten.</p></div>
   <div class="nt"><h3>Formulier</h3><p>Puur markup, geen backend-koppeling. Native HTML5-validatie (required, type=email) is genoeg voor deze proef.</p></div>
-  <div class="nt"><h3>Mobiel</h3><p>De twee kolommen stapelen, copy eerst en dan het formulier, nav-links klappen in. Zelfde patroon als landing-page-demo-survey.</p></div>
+  <div class="nt"><h3>Subheading weg, mobiel geparkeerd</h3><p>Op Dante's feedback (18-09-2026): de lead-paragraaf onder de H1 is geschrapt, de drie value props dragen die rol al. Focus voorlopig op laptop/desktop; mobiel-breakpoints zijn er bewust nog niet.</p></div>
 </div></div>
 
 </body>
