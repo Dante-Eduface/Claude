@@ -1,49 +1,56 @@
 """Proefslide (Gate 2, stuk 1/2): capability-slide met navigatie-rail links.
-Vier vaste capabilities, het huidige item onderscheiden door gewicht en kleur
-(navy/bold vs. ink-500), niet door contrast te verlagen op de andere drie."""
-from deckbuild import rect, pic, text, foot, render_html, shoot, \
-    NAVY, INK500, HEAD, BODY, M, TITLE, TEXT, CAPTION
 
-CAPS = ['Accuracy & Consistency', 'Technical Domain Fit',
-        'Institution-Wide', 'Self-Configuring']
+De vier capability-slides vormen samen één navy blok — dat is wat de
+kleurritme-regel bedoelt met een blok bewust omsluiten, en het geeft het
+midden van het deck kleur. Elk item heeft zijn eigen icoon; het actieve item
+staat op een groene tegel met navy icoon, de andere drie op een donkere
+tegel met een groen icoon. Onderscheid dus via vulling en gewicht, niet door
+de andere drie weg te faden.
+"""
+from deckbuild import rect, text, tile, foot, render_html, shoot, \
+    NAVY, GREEN, WHITE, INV_SOFT, INV_RULE, INK900, HEAD, BODY, \
+    M, W, HERO, TEXT, CAPTION
+
+CAPS = [
+    ('Accuracy & Consistency', 'doel'),
+    ('Technical Domain Fit', 'sleutel'),
+    ('Institution-Wide', 'instelling'),
+    ('Self-Configuring', 'schuifjes'),
+]
 ACTIVE = 0
 
 els = []
 
-# --- nav-rail: links, vier capabilities, huidige actief -------------------
-NAV_X, NAV_W, ROW_H, NAV_Y0 = M, 400, 132, 300
-NAV_H = ROW_H * len(CAPS)
-for i, label in enumerate(CAPS):
+# --- nav-rail: vier capabilities, elk met eigen icoon ----------------------
+NAV_X, NAV_W, ROW_H, NAV_Y0, TILE = M, 520, 156, 208, 96
+LABEL_X = NAV_X + TILE + 32
+LABEL_W = NAV_W - TILE - 32
+for i, (label, icon) in enumerate(CAPS):
     y = NAV_Y0 + i * ROW_H
-    active = i == ACTIVE
-    els += [text(NAV_X, y, 56, 40, f'0{i+1}', font=HEAD, size=CAPTION, bold=active,
-                 color=NAVY if active else INK500, align='left', ls=1.0),
-            text(NAV_X + 64, y - 6, NAV_W - 64, 96, label, font=HEAD,
-                 size=TEXT, bold=active, color=NAVY if active else INK500,
-                 align='left', ls=1.2)]
+    on = i == ACTIVE
+    els += tile(NAV_X, y, icon, tone='navy' if on else 'green',
+                fill=GREEN if on else INK900, size=TILE, r=20, ic=48)
+    els += [text(LABEL_X, y + 6, LABEL_W, 34, f'0{i+1}', font=HEAD, size=CAPTION,
+                 color=GREEN if on else INV_SOFT, align='left', ls=1.0),
+            text(LABEL_X, y + 42, LABEL_W, 88, label, font=HEAD, size=TEXT,
+                 bold=on, color=WHITE if on else INV_SOFT, align='left', ls=1.2)]
 
-els += [rect(NAV_X + NAV_W + 40, NAV_Y0, 1, NAV_H - 26, 'E7EEF0')]
+els += [rect(NAV_X + NAV_W + 60, NAV_Y0, 1, ROW_H * len(CAPS) - 26, INV_RULE)]
 
-# --- inhoud: claim + toelichting + ondersteunend icoon ---------------------
-# Optisch gecentreerd tegen de nav-rail, anders valt de onderkant leeg.
-CONTENT_X = NAV_X + NAV_W + 40 + 80
-CONTENT_W = 1920 - M - CONTENT_X
-CONTENT_H = 132 + 56 + 2 * TEXT * 1.45
-CONTENT_Y = NAV_Y0 + (NAV_H - 26 - CONTENT_H) / 2
+# --- de claim zelf: dit is het statement van de slide ----------------------
+CONTENT_X = NAV_X + NAV_W + 60 + 80
+CONTENT_W = W - M - CONTENT_X
 
-els += [rect(CONTENT_X, CONTENT_Y, 132, 132, 'F3F7F8', r=20),
-        pic('assets/icon-check-navy.png', CONTENT_X + 34, CONTENT_Y + 34, 64, 64)]
+els += [text(CONTENT_X, NAV_Y0 - 14, CONTENT_W, HERO * 3.2,
+             'Trained for\naccuracy and\nconsistency',
+             font=HEAD, size=HERO, bold=True, color=WHITE, align='left', ls=0.98)]
 
-els += [text(CONTENT_X + 172, CONTENT_Y, CONTENT_W - 172, TITLE * 2.2,
-             'Trained for Accuracy\nand Consistency', font=HEAD, size=TITLE,
-             bold=True, color=NAVY, align='left', ls=1.04)]
-
-els += [text(CONTENT_X, CONTENT_Y + 132 + 56, min(CONTENT_W, 980), 140,
+els += [text(CONTENT_X, NAV_Y0 + 412, min(CONTENT_W, 860), 160,
              'The model is trained specifically to grade and give feedback '
              'with accuracy and consistency at the core.',
-             font=BODY, size=TEXT, color=NAVY, align='left', ls=1.45)]
+             font=BODY, size=TEXT, color=INV_SOFT, align='left', ls=1.45)]
 
-els += foot(page=9)
+els += foot(dark=True, page=9)
 
-shoot(render_html(els, 'preview/slide-09.html'), 'preview/slide-09.png')
+shoot(render_html(els, 'preview/slide-09.html', dark=True), 'preview/slide-09.png')
 print('preview/slide-09.png')

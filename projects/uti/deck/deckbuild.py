@@ -21,6 +21,9 @@ GREEN, GREEN_DEEP = '00E075', '007B54'
 INK900, INK700, INK500, INK300, INK200, INK100, INK50 = (
     '0A2C3B', '2C4A57', '5B7480', 'A9BCC4', 'CDD9DE', 'E7EEF0', 'F3F7F8')
 WHITE = 'FFFFFF'
+# Inverse-tokens doorgerekend naar een vaste kleur: pptx kent geen alpha op tekst.
+# foreground-inverse-soft (62% wit) en border-inverse (12% wit), beide over navy.
+INV_SOFT, INV_RULE = '9EABB1', '1F3D4B'
 HEAD, BODY = 'League Spartan', 'Inter'
 
 # ---------------------------------------------------------------- type-schaal (slides/tokens.css)
@@ -49,19 +52,40 @@ def slide_title(t, dark=False, claim_size=TITLE):
     return [text(M, 88, W - 2 * M, claim_size * 1.3, t, font=HEAD, size=claim_size,
                  bold=True, color=WHITE if dark else NAVY, align='left', ls=1.04)]
 
+def tile(x, y, icon, tone='navy', fill=INK50, size=132, r=20, ic=64):
+    """Icoontegel: vlak met een icoon erin, altijd hetzelfde formaat."""
+    return [rect(x, y, size, size, fill, r=r),
+            pic(f'assets/icon-{icon}-{tone}.png',
+                x + (size - ic) / 2, y + (size - ic) / 2, ic, ic)]
+
+def lockup(x, y, dark=False, h=40):
+    """Eduface naast de klant. Zodra assets/uti-logo-*.png bestaat pakt hij het
+    logo; tot die tijd staat de naam er uitgeschreven, zodat er geen gat valt."""
+    out = [pic('assets/logo_white.png' if dark else 'assets/logo_navy.png',
+               x, y, 168, h)]
+    uti = f"assets/uti-logo-{'white' if dark else 'navy'}.png"
+    out += [rect(x + 208, y - 2, 1, h + 4, INV_RULE if dark else INK200)]
+    if os.path.exists(os.path.join(os.path.dirname(__file__), uti)):
+        out += [pic(uti, x + 248, y, 190, h)]
+    else:
+        out += [text(x + 248, y + 8, 520, h, 'Universal Technical Institute',
+                     size=CAPTION, color=INV_SOFT if dark else INK500,
+                     align='left', ls=1.2)]
+    return out
+
 def foot(dark=False, page=None, source=None):
-    """Vaste voettekst: scheidingslijn, logo, optionele bron, paginanummer.
+    """Vaste voettekst: scheidingslijn, merk-lockup, optionele bron, paginanummer.
     Bron staat hier — direct op de slide — niet in een aparte bronnenlijst."""
     y0 = H_ - 128
-    out = [rect(M, y0, W - 2 * M, 1, 'FFFFFF33' if dark else INK100),
-           pic('assets/logo_white.png' if dark else 'assets/logo_navy.png',
-               M, y0 + 44, 168, 40)]
+    out = [rect(M, y0, W - 2 * M, 1, INV_RULE if dark else INK100)]
+    out += lockup(M, y0 + 44, dark)
     if source:
-        out += [text(M + 220, y0 + 46, W - 2 * M - 220 - 140, CAPTION * 1.6, source,
-                     size=CAPTION, color='8FA9B4' if dark else INK500, align='left', ls=1.35)]
+        out += [text(900, y0 + 52, W - M - 900 - 100, CAPTION * 1.6, source,
+                     size=CAPTION, color=INV_SOFT if dark else INK500,
+                     align='right', ls=1.35)]
     if page:
-        out += [text(W - M - 80, y0 + 50, 80, 36, str(page),
-                     size=CAPTION, color='FFFFFF8C' if dark else INK500, align='right')]
+        out += [text(W - M - 80, y0 + 52, 80, 36, str(page),
+                     size=CAPTION, color=INV_SOFT if dark else INK500, align='right')]
     return out
 
 # ---------------------------------------------------------------- renderers
