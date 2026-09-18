@@ -40,6 +40,8 @@ Wat je hier **wel** beoordeelt: alles van craft. Dit is het moment.
 
 Wat hierna vastligt: het visuele patroon. De rest wordt hierop gebouwd.
 
+**Kies bij twijfel het spannendste dat nog binnen de opdracht past, niet het veiligste.** Een proef die er precies zo uitziet als wat er al stond, heeft de proef niet gebruikt. Dit gold nog niet expliciet toen de web-oppervlakte op 18-09-2026 als plat en saai werd afgekeurd — zie `web/regels.md` voor wat dat concreet betekent.
+
 ## Poort 3 — Uitrol en politoer
 
 Ik bouw de rest op het goedgekeurde patroon en loop daarna zelf na:
@@ -63,6 +65,12 @@ Pas daarna lever ik op. Dante hoort geen dingen te hoeven melden die ik zelf had
 - **Klein** (één afbeelding, één slide, kleine aanpassing): poort 1 vervalt, ga direct naar de proef. Vraag hooguit één ding.
 - **Normaal** (een pagina, een sectie, een set creatives): alle drie.
 - **Groot** (heel deck, hele app, redesign): alle drie, en bij poort 2 lever je twee proeven in plaats van één, zodat de keuze ook op craft-niveau nog open is.
+
+## Een bevroren poort heropenen
+
+Regel 2 hierboven zegt: wat bij een poort is besloten, heropen je niet meer zonder akkoord. Dat gaat over **iteratie binnen dezelfde opdracht**. Het geldt niet meer zodra de opdracht zelf wezenlijk verandert — een andere koper, een andere boodschap, een ander register. Dan is een eerder "af" Poort-2-resultaat geen bevroren laag meer maar het antwoord op een vraag die niet meer gesteld wordt.
+
+**Signaal dat dit aan de hand is:** je past alleen de tekst aan in een bestaand, goedgekeurd stuk, terwijl de reden dat de tekst verandert eigenlijk het hele beeld raakt. Dan patch je niet, je bouwt een nieuwe proef en legt uit waarom de oude niet meer volstaat. Gebeurd op 18-09-2026: een hero-kop wisselde van koud-advertentieverkeer-taal naar een institutionele koper, en alleen de kop werd vervangen terwijl de rest (beeld, toon) nog op de oude lezer was gebouwd.
 
 ## Ontsnappingsluiken
 

@@ -74,6 +74,7 @@ core/       proces.md      de drie poorten (lees dit eerst)
             voorbeelden.html   fout naast goed, in de browser
 web/        tokens.css     display-schaal + sectieritme
             components.md  knoppen, cards, secties, nav (spec, geen Framer-code)
+            regels.md      creatieve ruimte voor hero's en productbeelden (lees dit ook)
             framer.md      bouwbeperkingen van Framer
 slides/     tokens.css   1920x1080 canvas + projectie-schaal
             layouts.md   de vaste slidesoorten

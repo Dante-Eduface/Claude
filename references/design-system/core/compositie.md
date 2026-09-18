@@ -139,6 +139,8 @@ Dit is in de praktijk het bruikbaarste stuk van het hele Vercel-document: een li
 
 En het tegengif erbij: los dit niet op door een steriel anti-design op te leveren. Ingetogenheid is scherpe hiërarchie, goede typografie, duidelijk bewijs en bewuste spanning. Niet zwart-wit met dunne lijntjes en veel marge.
 
+**Deze lijst is een verdediging tegen sjabloonwerk, geen plafond op ambitie.** Dante, 18-09-2026: de web-oppervlakte voelde hierdoor te voorzichtig, te plat. Voor hero's en productbeelden op de marketingsite geldt daarom een expliciete, bewuste uitzondering op "decoratieve gradiënts, gloed" — zie `web/regels.md`. De rest van deze lijst (stockbeeld, nepscreenshots, kaartjes-in-kaartjes, herhaalde metric-boxjes) blijft overal onverkort gelden, ook op web.
+
 ## 13. Beweging
 
 Standaard stil. Geen scroll-onthullingen per sectie, geen parallax, geen typemachine-cursors, geen pulserende bolletjes. Beweging alleen als die een toestandsverandering uitlegt of een actie bevestigt. De pagina moet compleet zijn zonder beweging.
