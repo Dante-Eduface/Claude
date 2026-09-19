@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Hero · one student through three drafts, plus what it gives you</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  /* Twee registers, bewust gescheiden (reflexenlijst: nooit gemengde icoonstijlen
+     binnen een register). Het productpaneel houdt dunne functionele iconen en
+     blijft ingetogen, want dat is UI. De drie voordelen krijgen vlakke illustraties
+     in de taal van onze blogcovers: navy contour, plat groen vlak. Daar zit de kleur.
+     Elk voordeel staat in Platform/product.md. */
+  :root{
+    --navy:#002333; --green:#00e075; --green-deep:#007b54;
+    --ink-700:#2c4a57; --ink-500:#5b7480; --ink-200:#cdd9de; --ink-100:#e7eef0; --ink-50:#f3f7f8; --white:#fff;
+    --r-2xl:20px;
+    --sh-lg:0 16px 44px rgba(0,35,51,.10); --sh-xl:0 26px 70px rgba(0,35,51,.13);
+  }
+  *{box-sizing:border-box;margin:0}
+  html,body{background:transparent;font-family:Inter,ui-sans-serif,system-ui,sans-serif;color:var(--navy);-webkit-font-smoothing:antialiased}
+  body{width:1560px;height:660px;overflow:hidden;display:grid;place-items:start center}
+
+  .t-name{font-size:17px;font-weight:600;line-height:1.3}
+  .t-hero{font-size:24px;font-weight:600;line-height:1.2;font-variant-numeric:tabular-nums}
+  .t{font-size:14px;font-weight:400;line-height:1.5}
+  .muted{color:var(--ink-500)}
+  svg{flex-shrink:0}
+
+  .stage{position:relative;width:1520px;height:660px}
+  .panel{position:absolute;background:var(--white);border:1px solid var(--ink-100);border-radius:var(--r-2xl)}
+
+  /* PRODUCT: een student, drie concepten */
+  .growth{left:50%;transform:translateX(-50%);top:0;width:740px;padding:24px 26px;display:flex;flex-direction:column;gap:18px;box-shadow:var(--sh-xl)}
+  .ghead{display:flex;align-items:center;gap:11px}
+  .track{display:flex;flex-direction:column;position:relative}
+  .track::before{content:"";position:absolute;left:17px;top:30px;bottom:30px;width:2px;background:var(--ink-100)}
+  .node{display:grid;grid-template-columns:36px minmax(0,1fr);gap:16px;padding-bottom:16px}
+  .node:last-child{padding-bottom:0}
+  .dot{width:36px;height:36px;border-radius:50%;background:var(--white);border:1px solid var(--ink-200);
+       display:grid;place-items:center;color:var(--ink-500);z-index:1}
+  .node.last .dot{border-color:var(--green);color:var(--green-deep);background:rgba(0,224,117,.10)}
+  .nline{display:flex;align-items:center;gap:12px;min-height:36px}
+  .nline .lab{font-weight:500}
+  .meta{margin-left:auto;display:flex;align-items:center;gap:16px;color:var(--ink-500)}
+  .meta span{display:inline-flex;align-items:center;gap:6px}
+  .meta .chk{color:var(--green-deep)}
+  .quote{color:var(--ink-700)}
+  .final{display:flex;align-items:center;gap:14px;border-top:1px solid var(--ink-100);padding-top:14px}
+  .final .n{display:flex;align-items:baseline;gap:7px}
+
+  /* VOORDELEN */
+  .ben{top:392px;width:346px;min-height:226px;padding:24px;display:flex;flex-direction:column;gap:12px;box-shadow:var(--sh-lg)}
+  .ben.a{left:110px} .ben.b{left:50%;transform:translateX(-50%);top:424px} .ben.c{right:110px}
+  .ben .ttl{font-size:22px;font-weight:600;line-height:1.2}
+  .ben .ttl b{font-weight:600}
+</style></head>
+<body>
+<div class="stage">
+
+  <!-- PRODUCT -->
+  <div class="panel growth">
+    <div class="ghead">
+      <svg width="22" height="22" viewBox="0 0 16 16" fill="none" stroke="var(--navy)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 1.5 5.2 8 8.4l6.5-3.2z"/><path d="M4 6.8v3.4c0 1 1.8 1.8 4 1.8s4-.8 4-1.8V6.8M14.5 5.2v4"/></svg>
+      <span class="t-name">One student, three drafts</span>
+      <span class="t muted" style="margin-left:auto">Investment appraisal</span>
+    </div>
+
+    <div class="track">
+      <div class="node">
+        <span class="dot"><svg width="17" height="17" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 1.5H4a1.5 1.5 0 0 0-1.5 1.5v10A1.5 1.5 0 0 0 4 14.5h8a1.5 1.5 0 0 0 1.5-1.5V6z"/><path d="M9 1.5V6h4.5M5.5 9h5M5.5 11.5h3"/></svg></span>
+        <div>
+          <div class="nline t"><span class="lab">Draft 1</span><span class="muted">12 Feb</span>
+            <span class="meta"><span><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9.5a1.5 1.5 0 0 1-1.5 1.5H5l-3 2.5V3.5A1.5 1.5 0 0 1 3.5 2h9A1.5 1.5 0 0 1 14 3.5z"/></svg>9</span>
+            <span class="chk"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 8.5 3 3 7-7"/></svg></span></span>
+          </div>
+          <p class="quote t">VAT and the feasibility study are still in the total.</p>
+        </div>
+      </div>
+
+      <div class="node">
+        <span class="dot"><svg width="17" height="17" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 1.5H4a1.5 1.5 0 0 0-1.5 1.5v10A1.5 1.5 0 0 0 4 14.5h8a1.5 1.5 0 0 0 1.5-1.5V6z"/><path d="M9 1.5V6h4.5M5.5 9h5M5.5 11.5h3"/></svg></span>
+        <div>
+          <div class="nline t"><span class="lab">Draft 2</span><span class="muted">19 Feb</span>
+            <span class="meta"><span><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9.5a1.5 1.5 0 0 1-1.5 1.5H5l-3 2.5V3.5A1.5 1.5 0 0 1 3.5 2h9A1.5 1.5 0 0 1 14 3.5z"/></svg>5</span>
+            <span class="chk"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 8.5 3 3 7-7"/></svg></span></span>
+          </div>
+          <p class="quote t">Sunk cost is out. Lost rent is still missing.</p>
+        </div>
+      </div>
+
+      <div class="node last">
+        <span class="dot"><svg width="17" height="17" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 1.5H4a1.5 1.5 0 0 0-1.5 1.5v10A1.5 1.5 0 0 0 4 14.5h8a1.5 1.5 0 0 0 1.5-1.5V6z"/><path d="M9 1.5V6h4.5M5.5 9h5M5.5 11.5h3"/></svg></span>
+        <div>
+          <div class="nline t"><span class="lab">Draft 3</span><span class="muted">26 Feb</span>
+            <span class="meta"><span><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9.5a1.5 1.5 0 0 1-1.5 1.5H5l-3 2.5V3.5A1.5 1.5 0 0 1 3.5 2h9A1.5 1.5 0 0 1 14 3.5z"/></svg>2</span>
+            <span class="chk"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 8.5 3 3 7-7"/></svg></span></span>
+          </div>
+          <p class="quote t">Only the risk paragraph left to tighten.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="final">
+      <span class="n"><span class="t-hero">8.2</span><span class="t muted">/ 10 submitted</span></span>
+      <span class="t muted">Three rounds before the deadline.</span>
+    </div>
+  </div>
+
+  <!-- VOORDEEL 1: accuraat -->
+  <div class="panel ben a">
+    <svg width="76" height="76" viewBox="0 0 72 72" fill="none">
+      <circle cx="32" cy="42" r="25" fill="#fff" stroke="#002333" stroke-width="3.5"/>
+      <circle cx="32" cy="42" r="16" fill="#00e075"/>
+      <circle cx="32" cy="42" r="7" fill="#fff" stroke="#002333" stroke-width="3.5"/>
+      <path d="M46 29 64 11" stroke="#002333" stroke-width="4" stroke-linecap="round"/>
+      <path d="M31 44 49 37 40 27z" fill="#002333"/>
+      <path d="m55 12 7 7M59 8l7 7" stroke="#002333" stroke-width="3.5" stroke-linecap="round"/>
+    </svg>
+    <span class="ttl">94% accurate</span>
+    <span class="t muted">Our proposed grade against the marker's, over 435 submissions and 13 markers.</span>
+  </div>
+
+  <!-- VOORDEEL 2: elk concept -->
+  <div class="panel ben b">
+    <svg width="76" height="76" viewBox="0 0 72 72" fill="none">
+      <rect x="6" y="9" width="36" height="46" rx="5" fill="#fff" stroke="#002333" stroke-width="3.5"/>
+      <rect x="17" y="15" width="36" height="46" rx="5" fill="#fff" stroke="#002333" stroke-width="3.5"/>
+      <rect x="28" y="21" width="36" height="46" rx="5" fill="#00e075" stroke="#002333" stroke-width="3.5"/>
+      <path d="M36 34h20M36 43h20M36 52h12" stroke="#002333" stroke-width="3.5" stroke-linecap="round"/>
+    </svg>
+    <span class="ttl">Every draft</span>
+    <span class="t muted">Students get real feedback while they are still writing, not after the deadline.</span>
+  </div>
+
+  <!-- VOORDEEL 3: jij tekent af -->
+  <div class="panel ben c">
+    <svg width="76" height="76" viewBox="0 0 72 72" fill="none">
+      <rect x="9" y="6" width="40" height="52" rx="5" fill="#fff" stroke="#002333" stroke-width="3.5"/>
+      <path d="M18 19h22M18 29h22M18 39h12" stroke="#002333" stroke-width="3.5" stroke-linecap="round"/>
+      <circle cx="49" cy="49" r="17" fill="#00e075" stroke="#002333" stroke-width="3.5"/>
+      <path d="m42 49 5 5 10-10" stroke="#002333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span class="ttl">You sign off</span>
+    <span class="t muted">Every comment and every grade is yours before the student ever sees it.</span>
+  </div>
+
+</div>
+</body></html>

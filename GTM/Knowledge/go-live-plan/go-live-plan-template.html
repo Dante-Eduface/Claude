@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Go Live Plan — TEMPLATE (EN)</title>
+<style>
+  /* Kleuren uit Design/System/core/tokens.css. Geen losse waarden. */
+  body { font-family: Arial, Helvetica, sans-serif; color:#002333; font-size:10.5pt; line-height:1.5; }
+  table { border-collapse:collapse; width:100%; }
+  td, th { padding:6pt 12pt 6pt 8pt; vertical-align:top; border:none; }
+
+  /* Kop zit dicht op zijn eigen tabel, ruim los van de vorige sectie. */
+  .h td { font-size:12pt; font-weight:bold; padding:30pt 0 4pt 0; }
+  .title td { font-size:19pt; font-weight:bold; padding:0 0 2pt 0; }
+  .sub td { color:#5b7480; font-size:9.5pt; padding:0 0 6pt 0; }
+  .logos td { color:#5b7480; padding:0 0 20pt 0; }
+
+  .sum td { background:#f3f7f8; padding:14pt 16pt 14pt 8pt; font-size:11pt; line-height:1.6;
+            border-top:1px solid #cdd9de; border-bottom:1px solid #cdd9de; }
+  .sum td.first { padding-bottom:10pt; border-bottom:none; }
+  .sum td.mid { padding-top:0; padding-bottom:10pt; border-top:none; border-bottom:none; }
+  .sum td.last { padding-top:0; font-weight:bold; border-top:none; }
+
+  /* Afgemaakte tabel: gevulde kopregel met lijn boven en onder, sluitlijn onderaan. */
+  .rows td { border-bottom:1px solid #e7eef0; padding-top:7pt; padding-bottom:7pt; }
+  .rows tr.end td { border-bottom:1px solid #a9bcc4; }
+  .ch td { background:#f3f7f8; color:#002333; font-size:9.5pt; font-weight:bold;
+           border-top:1px solid #a9bcc4; border-bottom:1px solid #a9bcc4;
+           padding:5pt 12pt 5pt 8pt; }
+  .k { color:#5b7480; width:36%; }
+  .n { width:26pt; color:#5b7480; }
+  .done { color:#007b54; }
+  .now  { color:#b26a00; font-weight:bold; }
+  .late { color:#b3261e; font-weight:bold; }
+  .key  { font-weight:bold; }
+  .hl td { background:#f3f7f8; border-bottom:1px solid #e7eef0; }
+</style></head><body>
+
+<table class="logos"><tr>
+  <td>[Eduface logo]</td><td style="text-align:right;">[Customer logo]</td>
+</tr></table>
+
+<table class="title"><tr><td>[Customer] Go Live Plan</td></tr></table>
+<table class="sub"><tr><td>Last updated [date] by [name]</td></tr></table>
+
+<table class="h"><tr><td>Why we are doing this</td></tr></table>
+<table class="sum">
+  <tr><td class="first">[Situation and the pain, quantified. Example: across [programme], instructors mark [x] lab reports a week, on top of a teaching day of [y] hours.]</td></tr>
+  <tr><td class="mid">[What Eduface does about it, in their words. Example: students get written feedback per rubric criterion inside [LMS], the instructor signs off, the grade syncs back to the gradebook.]</td></tr>
+  <tr><td class="mid">[The expected effect, in numbers, with the source next to it. Example: [y] hours a week back per instructor, based on [source, date].]</td></tr>
+  <tr><td class="last">Our mutual aim is to be live by [date]. This document is the shared plan to get there, and both teams keep it up to date.</td></tr>
+</table>
+
+<table class="h"><tr><td>Information</td></tr></table>
+<table class="rows">
+  <tr><td class="k">Company</td><td>[Customer]</td></tr>
+  <tr><td class="k">Target contractual signing date</td><td>[date]</td></tr>
+  <tr><td class="k">Target go-live date</td><td>[date]</td></tr>
+  <tr class="end"><td class="k">Price per student per month</td><td>&euro;3, AI capacity and software tool included</td></tr>
+</table>
+
+<table class="h"><tr><td>Planned steps and key events</td></tr></table>
+<table class="rows">
+  <tr class="ch"><td class="n"></td><td>Action</td><td style="width:70pt;">Owner</td><td style="width:90pt;">By when</td><td style="width:90pt;">Status</td></tr>
+  <tr><td class="n">1</td><td>Initial meeting</td><td>[DT]</td><td>[date]</td><td class="done">&#10003; Done</td></tr>
+  <tr><td class="n">2</td><td>Demo in [LMS]</td><td>[DT]</td><td>[date]</td><td class="done">&#10003; Done</td></tr>
+  <tr class="hl"><td class="n">3</td><td class="key">Build the business case</td><td>[DT]</td><td>[date]</td><td class="now">In progress</td></tr>
+  <tr><td class="n">4</td><td class="key">Presentation for leadership</td><td>[name]</td><td>[date]</td><td></td></tr>
+  <tr><td class="n">5</td><td class="key">Go / no-go decision</td><td>[name]</td><td>[date]</td><td></td></tr>
+  <tr><td class="n">6</td><td>Share legal &amp; security documentation</td><td>[DT]</td><td>[date]</td><td></td></tr>
+  <tr><td class="n">7</td><td>Share legal &amp; security documentation with procurement</td><td>[name]</td><td>[date]</td><td></td></tr>
+  <tr><td class="n">8</td><td class="key">Technical sign off</td><td>[name]</td><td>[date]</td><td></td></tr>
+  <tr><td class="n">9</td><td class="key">Define 4 week proof of value scope: milestones, success criteria, timeline</td><td>[DT]</td><td>[date]</td><td></td></tr>
+  <tr><td class="n">10</td><td class="key">Sign licence agreement</td><td>[name]</td><td>[date]</td><td></td></tr>
+  <tr><td class="n">11</td><td>Start proof of value</td><td>[DT]</td><td>[date]</td><td></td></tr>
+  <tr><td class="n">12</td><td>Proof of value check-in</td><td>[DT]</td><td>[date]</td><td></td></tr>
+  <tr><td class="n">13</td><td class="key">Proof of value evaluation</td><td>[name]</td><td>[date]</td><td></td></tr>
+  <tr><td class="n">14</td><td>Instructor training</td><td>[DT]</td><td>[date]</td><td></td></tr>
+  <tr><td class="n">15</td><td class="key">Go live</td><td>[name]</td><td>[date]</td><td></td></tr>
+  <tr class="end"><td class="n">16</td><td>Start implementation plan</td><td>[DT]</td><td>[date]</td><td></td></tr>
+</table>
+
+<table class="h"><tr><td>Where everything lives</td></tr></table>
+<table class="rows">
+  <tr class="ch"><td>Resource</td><td style="width:100pt;">Status</td><td>Detail</td></tr>
+  <tr><td><a href="https://drive.google.com/">[Shared folder]</a></td><td class="done">&#10003; Shared</td><td>[Everything below sits in here.]</td></tr>
+  <tr><td><a href="https://drive.google.com/">[Business case]</a></td><td class="now">In progress</td><td>[The numbers behind the case, and where they come from.]</td></tr>
+  <tr><td><a href="https://drive.google.com/">[Sample assignments and output]</a></td><td class="done">&#10003; Shared</td><td>[Real Eduface feedback on your own assignments.]</td></tr>
+  <tr><td><a href="https://drive.google.com/">[Legal &amp; security document]</a></td><td></td><td>[Data processing, hosting, model use, and our answers to your security questions.]</td></tr>
+  <tr><td><a href="https://drive.google.com/">[LMS integration document]</a></td><td></td><td>[How Eduface connects to [LMS], and what your LMS administrator needs to do.]</td></tr>
+  <tr class="end"><td><a href="https://drive.google.com/">[Proof of value scope]</a></td><td></td><td>[Milestones, success criteria and timeline for the 4 week proof of value.]</td></tr>
+</table>
+
+<table class="h"><tr><td>Who is involved</td></tr></table>
+<table class="rows">
+  <tr class="ch"><td colspan="3">Eduface</td></tr>
+  <tr><td style="width:32%;">Dante Torbed (DT)</td><td style="width:34%;">dante.torbed@eduface.me</td><td>Customer Success Manager</td></tr>
+  <tr><td>Jeroen van Gessel (JG)</td><td>jeroen.van.gessel@eduface.me</td><td>CEO and co-founder</td></tr>
+  <tr><td>Menno Hahury (MH)</td><td>menno.hahury@eduface.me</td><td>CTO and co-founder</td></tr>
+  <tr class="end"><td>Samuel Rafini (SR)</td><td>samuel.rafini@eduface.me</td><td>Senior Engineer, integrations</td></tr>
+</table>
+<table class="rows" style="margin-top:14pt;">
+  <tr class="ch"><td colspan="3">[Customer]</td></tr>
+  <tr><td style="width:32%;">[Name]</td><td style="width:34%;">[Email]</td><td>[Role]</td></tr>
+  <tr><td>[Name]</td><td>[Email]</td><td>[Role]</td></tr>
+  <tr><td>[Name]</td><td>[Email]</td><td>[Role]</td></tr>
+  <tr><td>[Name]</td><td>[Email]</td><td>[Role]</td></tr>
+  <tr><td>[Name]</td><td>[Email]</td><td>[Role]</td></tr>
+</table>
+
+<table class="h"><tr><td>What decides the timeline</td></tr></table>
+<table class="rows">
+  <tr class="ch"><td style="width:22%;">Who</td><td>Detail</td></tr>
+  <tr><td>[Customer]</td><td>[To be live for the start of [semester / block] on [date], everything has to be signed by [date].]</td></tr>
+  <tr><td>[Customer]</td><td>[Budget for [year] is decided in the [board meeting / budget round] of [date].]</td></tr>
+  <tr><td>[Customer]</td><td>[The current contract with [existing tool] renews on [date].]</td></tr>
+  <tr class="end"><td>Eduface</td><td>[The current pricing is held until [date].]</td></tr>
+</table>
+
+<table class="h"><tr><td>Questions and answers</td></tr></table>
+<table class="rows">
+  <tr class="ch"><td style="width:30%;">Question</td><td style="width:12%;">Asked by</td><td>Answer</td><td style="width:12%;">Answered by</td></tr>
+  <tr><td>[Where is student work stored, and is it used to train models?]</td><td>[name]</td><td>[Answer, with a link to the source document where there is one.]</td><td>[DT]</td></tr>
+  <tr><td>[Question]</td><td>[name]</td><td>[Answer]</td><td>[name]</td></tr>
+  <tr class="end"><td>[Question]</td><td>[name]</td><td>[Answer]</td><td>[name]</td></tr>
+</table>
+
+</body></html>

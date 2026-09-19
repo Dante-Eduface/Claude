@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Go Live Plan proef</title>
+<style>
+  /* alle kleuren uit Design/System/core/tokens.css */
+  body { font-family: Arial, Helvetica, sans-serif; color:#002333; background:#fff;
+         font-size:10.5pt; line-height:1.55; margin:0; padding:34pt 40pt; max-width:720pt; }
+  table { border-collapse:collapse; width:100%; }
+  td, th { padding:7pt 0; vertical-align:top; }
+
+  .logos td { padding:0 0 26pt 0; color:#5b7480; }
+  h1 { font-size:19pt; font-weight:bold; margin:0 0 2pt 0; line-height:1.15; }
+  .sub { color:#5b7480; font-size:9.5pt; margin:0 0 30pt 0; }
+
+  h2 { font-size:11.5pt; font-weight:bold; margin:30pt 0 8pt 0;
+       padding-bottom:5pt; border-bottom:1px solid #cdd9de; }
+
+  .info td { border-bottom:1px solid #e7eef0; }
+  .info td.k { color:#5b7480; width:38%; }
+
+  .summary { background:#f3f7f8; padding:16pt 18pt; }
+  .summary p { margin:0 0 10pt 0; max-width:68ch; font-size:11pt; line-height:1.6; }
+  .summary p:last-child { margin-bottom:0; }
+  .aim { font-weight:bold; }
+
+  .steps th { border-bottom:1px solid #a9bcc4; font-size:9.5pt; color:#5b7480;
+              font-weight:bold; text-align:left; padding-bottom:5pt; }
+  .steps td { border-bottom:1px solid #e7eef0; }
+  .steps td, .steps th { padding-right:14pt; }
+  .steps .n  { width:26pt; color:#5b7480; }
+  .steps .ow { width:64pt; }
+  .steps .wh { width:96pt; }
+  .steps .st { width:96pt; }
+  .done   { color:#007b54; }
+  .now    { color:#b26a00; font-weight:bold; }
+  .late   { color:#b3261e; font-weight:bold; }
+  .key    { font-weight:bold; }
+  .rownow td { background:#f3f7f8; }
+</style></head><body>
+
+<table class="logos"><tr>
+  <td>[Eduface logo]</td>
+  <td style="text-align:right;">[Customer logo]</td>
+</tr></table>
+
+<h1>[Customer] Go Live Plan</h1>
+<p class="sub">Last updated [date] by [name]</p>
+
+<h2>Why we are doing this</h2>
+<div class="summary">
+  <p>[Situation and the pain, quantified. Example: across [programme], instructors mark [x] lab reports a week, on top of a teaching day of [y] hours.]</p>
+  <p>[What Eduface does about it, in their words. Example: students get written feedback per rubric criterion inside [LMS], the instructor signs off, the grade syncs back to the gradebook.]</p>
+  <p>[The expected effect, in numbers, with the source next to it. Example: [y] hours a week back per instructor, based on [source, date].]</p>
+  <p class="aim">Our mutual aim is to be live by [date]. This document is the shared plan to get there, and both teams keep it up to date.</p>
+</div>
+
+<h2>Information</h2>
+<table class="info">
+  <tr><td class="k">Company</td><td>[Customer]</td></tr>
+  <tr><td class="k">Target contractual signing date</td><td>[date]</td></tr>
+  <tr><td class="k">Target go-live date</td><td>[date]</td></tr>
+  <tr><td class="k">Price per student per month</td><td>&euro;3, AI capacity and software tool included</td></tr>
+</table>
+
+<h2>Planned steps and key events</h2>
+<table class="steps">
+  <tr><th class="n"></th><th>Action</th><th class="ow">Owner</th><th class="wh">By when</th><th class="st">Status</th></tr>
+  <tr><td class="n">1</td><td>Initial meeting</td><td>[DT]</td><td>[date]</td><td class="done">&#10003; Done</td></tr>
+  <tr><td class="n">2</td><td>Demo in [LMS]</td><td>[DT]</td><td>[date]</td><td class="done">&#10003; Done</td></tr>
+  <tr><td class="n">3</td><td>Share legal &amp; security documentation</td><td>[DT]</td><td>[date]</td><td class="late">Overdue</td></tr>
+  <tr class="rownow"><td class="n">4</td><td class="key">Build the business case</td><td>[DT]</td><td>[date]</td><td class="now">In progress</td></tr>
+  <tr><td class="n">5</td><td class="key">Presentation for leadership</td><td>[name]</td><td>[date]</td><td></td></tr>
+  <tr><td class="n">6</td><td class="key">Go / no-go decision</td><td>[name]</td><td>[date]</td><td></td></tr>
+  <tr><td class="n">7</td><td>Share legal &amp; security documentation with procurement</td><td>[name]</td><td>[date]</td><td></td></tr>
+  <tr><td class="n">8</td><td class="key">Technical sign off</td><td>[name]</td><td>[date]</td><td></td></tr>
+</table>
+
+</body></html>

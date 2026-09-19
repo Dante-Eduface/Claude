@@ -1,0 +1,15 @@
+# Geheimen — nooit in git
+.claude/settings.local.json
+settings.local.json
+*.env
+
+# Rommel van het besturingssysteem
+.DS_Store
+
+# Dependencies en bouwafval
+node_modules/
+*/temporary screenshots/
+**/temporary screenshots/
+
+# Losse zip-uploads
+*.zip

@@ -1,0 +1,24 @@
+{
+  "code": "us",
+  "naam": "",
+  "valuta": "",
+  "taal": "",
+  "kanaal": [],
+  "staffel": [],
+  "drempel_jaarwaarde": null,
+  "max_fee_aandeel": null,
+  "titel_rang": [],
+  "klantnamen": [],
+  "lemlist_campagne_id": "",
+  "_uitleg": {
+    "valuta": "een van EUR/GBP/USD",
+    "taal": "taalcode van de berichten, bijv. en-GB of en-US",
+    "kanaal": "lijst uit linkedin/email",
+    "staffel": "[[bovengrens studentplaatsen per opleiding, jaarfee, letter], ...], laatste grens 'inf'",
+    "drempel_jaarwaarde": "vloer voor poort 0d in de valuta van de markt",
+    "max_fee_aandeel": "onze fee mag hoogstens dit deel van de programma-omzet zijn, bijv. 0.10",
+    "titel_rang": "[[regex op de functietitel, score 0-100], ...], eerste treffer wint",
+    "klantnamen": "klanten die als bewijs genoemd mogen worden, lege lijst mag",
+    "lemlist_campagne_id": "cam_... van de campagne voor deze markt, leeg tot die bestaat"
+  }
+}

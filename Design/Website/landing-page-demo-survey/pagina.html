@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eduface landingspagina, samengesteld</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Inter:wght@400;450;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ==========================================================================
+   TOKENS — hersteld op 15-09-2026.
+   De :root-blokken van hero, pijn en bewijs zijn ooit met zoek-en-vervang
+   achter een sectieprefix beland (".s-hero :root"), waardoor ze nergens meer
+   matchten en de hele pagina op losse hexwaarden dreef. Dit is nu de enige
+   plek waar tokens gedefinieerd worden.
+   ========================================================================== */
+:root {
+  --navy: #002333;
+  --navy-2: #06303f;
+  --navy-3: #0d3d4f;
+  --green: #00e075;
+  --green-deep: #007b54;
+  --amber: #f0a531;
+  --danger: #b3261e;
+  --sky: #4d9fff;
+  --violet: #8b7cf6;
+  --ink-900: #0a2c3b;
+  --ink-700: #2c4a57;
+  --ink-500: #5b7480;
+  --ink-300: #a9bcc4;
+  --ink-200: #cdd9de;
+  --ink-100: #e7eef0;
+  --ink-50:  #f3f7f8;
+  --white:   #ffffff;
+
+  --bg-inverse: var(--navy);
+  --surface-inverse: var(--ink-900);
+  --fg-inverse: var(--white);
+  --fg-inverse-soft: rgba(255, 255, 255, 0.62);
+  --border-inverse: rgba(255, 255, 255, 0.12);
+  --tint-green: rgba(0, 224, 117, 0.15);
+  --tint-green-line: rgba(0, 224, 117, 0.32);
+  --tint-sky: rgba(77, 159, 255, 0.15);
+  --tint-amber: rgba(240, 165, 49, 0.18);
+  --tint-violet: rgba(139, 124, 246, 0.20);
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "League Spartan", var(--font-sans);
+
+  --radius-md: 8px;
+  --radius-lg: 10px;
+  --radius-xl: 12px;
+  --radius-2xl: 20px;
+  --radius-full: 9999px;
+
+  --section: 96px;
+  --container: 1200px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; scroll-behavior: smooth; }
+body { font-family: "Inter", ui-sans-serif, system-ui, sans-serif; background: #f3f7f8; color: #002333; }
+img { display: block; max-width: 100%; }
+a { text-decoration: none; color: inherit; }
+:focus-visible { outline: 2px solid #00e075; outline-offset: 3px; }
+[data-sec] { position: relative; }
+
+.s-hero /* ==========================================================================
+   PROEF hero, .s-hero sectie 1. Patroon uit het bewijsblok doorgezet.
+   Productbeelden volgen Design/Website/app-homepage-redesign: Inter, .s-hero drie groottes, .s-hero geen ring of balk, .s-hero geen ratio's, .s-hero kleur alleen op de afwijking.
+   Framer-proof: stacks en grids, .s-hero gap op de parent, .s-hero geen margins op children.
+   ========================================================================== */
+:root {
+  --navy: #002333;
+  --navy-2: #06303f;
+  --green: #00e075;
+  --green-deep: #007b54;
+  --danger: #b3261e;
+  --ink-950: #002333;
+  --ink-700: #2c4a57;
+  --ink-500: #5b7480;
+  --ink-300: #a9bcc4;
+  --ink-200: #cdd9de;
+  --ink-100: #e7eef0;
+  --ink-50:  #f3f7f8;
+  --white:   #ffffff;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "League Spartan", var(--font-sans);
+
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 10px;
+  --radius-xl: 12px;
+  --radius-2xl: 20px;
+  --radius-full: 9999px;
+
+  --container: 1200px;
+}
+.s-hero img { display: block; max-width: 100%; }
+.s-hero a { text-decoration: none; color: inherit; }
+.s-hero :focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
+.s-hero /* ---- type ---- */
+.h1 { font-family: var(--font-display); font-size: 4.25rem; line-height: .98; letter-spacing: -0.03em; font-weight: 700; text-wrap: balance; }
+.s-hero .lead { font-size: 1.25rem; line-height: 1.5; color: var(--ink-500); text-wrap: pretty; }
+.s-hero .small { font-size: 0.875rem; line-height: 1.5; }
+.s-hero .micro { font-size: 0.8125rem; line-height: 1.4; }
+.s-hero .accent { color: var(--green-deep); }
+.s-hero /* ---- nav ---- */
+.nav { display: flex; justify-content: center; background: rgba(243,247,248,.88); backdrop-filter: blur(12px); position: sticky; top: 0; z-index: 20; }
+.s-hero .nav-in { width: 100%; max-width: var(--container); padding: 16px 28px; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 20px; }
+.s-hero .nav-logo { font-family: var(--font-display); font-size: 1.375rem; font-weight: 700; letter-spacing: -0.02em; justify-self: start; }
+.s-hero .nav-links { display: flex; gap: 28px; justify-content: center; font-size: 0.9375rem; color: var(--ink-700); }
+.s-hero .nav-links a:hover { color: var(--navy); }
+.s-hero .nav-r { display: flex; justify-content: flex-end; }
+.s-hero /* ---- hero ---- */
+.hero { display: flex; justify-content: center; padding: 88px 28px 0; overflow: hidden; }
+.s-hero .hero-in { width: 100%; max-width: var(--container); display: flex; flex-direction: column; align-items: center; gap: 26px; text-align: center; }
+.s-hero .hero .h1 { max-width: 18ch; }
+.s-hero .h1 .l1 { display: block; }
+.s-hero .hero .lead { max-width: 58ch; }
+.s-hero .cta-row { display: flex; flex-direction: column; align-items: center; gap: 16px; padding-top: 6px; }
+.s-hero .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; border-radius: var(--radius-full); padding: 18px 34px; font-size: 1rem; font-weight: 600; border: 1px solid transparent; cursor: pointer; background: var(--navy); color: var(--white); transition: background 450ms cubic-bezier(.44,0,.56,1); white-space: nowrap; }
+.s-hero .btn:hover { background: var(--navy-2); }
+.s-hero .btn-sm { padding: 11px 22px; font-size: 0.9375rem; background: var(--navy); color: var(--white); }
+.s-hero .btn-sm:hover { background: var(--navy-2); color: var(--white); }
+.s-hero .tlink { display: inline-flex; align-items: center; gap: 7px; font-size: 0.9375rem; color: var(--ink-500); border-bottom: 1px solid var(--ink-200); padding-bottom: 3px; }
+.s-hero .tlink:hover { color: var(--navy); border-color: var(--ink-300); }
+.s-hero .proofline { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 14px 26px; padding-top: 10px; }
+.s-hero .pl-txt { display: inline-flex; align-items: center; gap: 8px; }
+.s-hero .pl-sep { width: 1px; height: 22px; background: var(--ink-200); }
+.s-hero .wall { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 14px 30px; }
+.s-hero .wall img { height: 24px; width: auto; filter: grayscale(1) brightness(.55); opacity: .72; }
+.s-hero .wall img.tall { height: 36px; }
+.s-hero /* ---- productbeeld, .s-hero loopt onder de vouw door ---- */
+.stage { width: 100%; max-width: 1160px; padding-top: 18px; }
+.s-hero .stage img { width: 100%; height: auto; }
+.s-hero /* held-getal met zijn woord op dezelfde regel, .s-hero geen ratio, .s-hero geen ring */
+
+@media (max-width: 780px) {
+  .hero { padding: 56px 20px 0; }
+  .h1 { font-size: 2.5rem; }
+  .lead { font-size: 1.0625rem; }
+  .nav-links { display: none; }
+
+}
+.s-hero /* toelichting buiten de proef */
+.notes { display: flex; justify-content: center; padding: 72px 28px 56px; background: var(--white); border-top: 1px solid var(--ink-100); }
+.s-hero .notes-in { width: 100%; max-width: var(--container); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px,100%),1fr)); gap: 32px; }
+.s-hero .nt { display: flex; flex-direction: column; gap: 10px; border-left: 2px solid var(--ink-100); padding-left: 18px; }
+.s-hero .nt h3 { font-size: 0.75rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--green-deep); }
+.s-hero .nt p { font-size: 0.875rem; line-height: 1.55; color: var(--ink-500); }
+
+
+.s-pijn /* ==========================================================================
+   PROEF pijn, .s-pijn sectie 2, .s-pijn v2. Richting 1: een geval, .s-pijn groot uitgemeten.
+   Dragende ordeningszet: dezelfde invoer splitst in twee uitkomsten.
+   Links staat wat gelijk was, .s-pijn rechts wat eruit kwam. Het gat is het punt.
+   Bron voor elke uitspraak: GTM/ICP/pijn-oplossing/HANDOFF-landingspagina.md
+   ========================================================================== */
+:root {
+  --navy: #002333; --navy-2: #06303f;
+  --green: #00e075; --green-deep: #007b54;
+  --danger: #b3261e;
+  --ink-700: #2c4a57; --ink-500: #5b7480; --ink-300: #a9bcc4;
+  --ink-200: #cdd9de; --ink-100: #e7eef0; --ink-50: #f3f7f8; --white: #fff;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "League Spartan", var(--font-sans);
+  --radius-md: 8px; --radius-lg: 10px; --radius-xl: 12px; --radius-2xl: 20px; --radius-full: 9999px;
+  --container: 1200px;
+}
+.s-pijn img { display: block; max-width: 100%; }
+.s-pijn :focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
+.s-pijn .h2 { font-family: var(--font-display); font-size: 3.5rem; line-height: 1.02; letter-spacing: -0.025em; font-weight: 700; text-wrap: balance; }
+.s-pijn .h3 { font-family: var(--font-display); font-size: 1.5rem; line-height: 1.12; letter-spacing: -0.02em; font-weight: 700; text-wrap: balance; }
+.s-pijn .lead { font-size: 1.25rem; line-height: 1.45; color: var(--ink-500); text-wrap: pretty; }
+.s-pijn .body { font-size: 1rem; line-height: 1.6; color: var(--ink-500); }
+.s-pijn .seclabel { font-size: 1rem; font-weight: 600; color: var(--green-deep); }
+.s-pijn .accent { color: var(--green-deep); }
+.s-pijn .section { background: var(--white); display: flex; justify-content: center; padding: 96px 28px; }
+.s-pijn .container { width: 100%; max-width: var(--container); display: flex; flex-direction: column; gap: 56px; }
+.s-pijn .head { display: flex; flex-direction: column; gap: 18px; max-width: 820px; }
+.s-pijn .eyebrow { display: inline-flex; align-items: center; gap: 9px; align-self: flex-start; }
+.s-pijn /* ---- het geval: een invoer, .s-pijn twee uitkomsten ---- */
+.case { display: flex; flex-direction: column; gap: 32px; background: var(--ink-50); border: 1px solid var(--ink-100); border-radius: var(--radius-2xl); padding: 44px; }
+.s-pijn .case-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 12px 32px; }
+.s-pijn .case-head .h3 { max-width: 30ch; }
+.s-pijn .case-head .crit { font-size: 0.875rem; color: var(--ink-500); }
+.s-pijn .case-head .crit b { font-weight: 600; color: var(--navy); }
+.s-pijn .fork { display: grid; grid-template-columns: minmax(0, 30fr) 84px minmax(0, 70fr); align-items: center; gap: 0; }
+.s-pijn /* links: wat gelijk was */
+.same { display: flex; flex-direction: column; gap: 16px; background: var(--white); border: 1px solid var(--ink-100); border-radius: var(--radius-xl); padding: 24px; }
+.s-pijn .same-lbl { display: inline-flex; align-items: center; gap: 8px; font-size: 0.8125rem; font-weight: 600; color: var(--ink-700); }
+.s-pijn .same-list { display: flex; flex-direction: column; gap: 10px; }
+.s-pijn .same-list span { display: flex; align-items: center; gap: 10px; font-size: 0.875rem; color: var(--ink-500); }
+.s-pijn .same-list span b { font-weight: 600; color: var(--navy); }
+.s-pijn .tick { width: 16px; height: 16px; flex-shrink: 0; }
+.s-pijn .doclines { display: flex; flex-direction: column; gap: 6px; padding-top: 4px; }
+.s-pijn .doclines i { display: block; height: 6px; border-radius: 3px; background: var(--ink-100); }
+.s-pijn /* de splitsing zelf */
+.link { align-self: stretch; }
+.s-pijn .link svg { display: block; width: 100%; height: 100%; }
+.s-pijn /* rechts: wat eruit kwam */
+.out { display: grid; grid-template-columns: minmax(0, 1fr) 208px; align-items: stretch; gap: 0; }
+.s-pijn .rows { display: flex; flex-direction: column; gap: 14px; }
+.s-pijn .row { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 20px; background: var(--white); border: 1px solid var(--ink-100); border-radius: var(--radius-xl); padding: 20px 24px; box-shadow: 0 6px 20px rgba(0,35,51,.05); }
+.s-pijn .who { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.s-pijn .who-top { display: flex; align-items: center; gap: 10px; }
+.s-pijn .av { width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; font-size: 0.6875rem; font-weight: 700; color: var(--white); flex-shrink: 0; }
+.s-pijn .av-1 { background: var(--ink-700); }
+.s-pijn .av-2 { background: var(--ink-500); }
+.s-pijn .nm { font-size: 0.9375rem; font-weight: 600; }
+.s-pijn .meta { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 0.8125rem; color: var(--ink-500); }
+.s-pijn .meta b { font-weight: 600; color: var(--navy); }
+.s-pijn .grade { display: flex; align-items: baseline; gap: 6px; }
+.s-pijn .grade-n { font-family: var(--font-display); font-size: 3.25rem; font-weight: 700; line-height: .9; letter-spacing: -0.03em; }
+.s-pijn .grade-o { font-size: 0.875rem; color: var(--ink-500); }
+.s-pijn /* de beugel die het verschil meet */
+.brace { display: grid; grid-template-columns: 22px minmax(0, 1fr); align-items: center; gap: 10px; padding-left: 14px; }
+.s-pijn .brace-line { align-self: stretch; }
+.s-pijn .brace-line svg { display: block; width: 100%; height: 100%; }
+.s-pijn .brace-t { display: flex; flex-direction: column; gap: 2px; }
+.s-pijn .brace-t b { font-family: var(--font-display); font-size: 1.125rem; font-weight: 700; color: var(--danger); line-height: 1.1; }
+.s-pijn .brace-t span { font-size: 0.8125rem; color: var(--ink-500); line-height: 1.35; text-wrap: pretty; }
+.s-pijn .case-foot { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 10px 32px; border-top: 1px solid var(--ink-200); padding-top: 22px; }
+.s-pijn .case-foot p { font-size: 0.9375rem; color: var(--ink-700); max-width: 62ch; }
+.s-pijn .src { font-size: 0.8125rem; color: var(--ink-500); }
+.s-pijn /* ---- de twee ondersteunende regels, .s-pijn geen kaarten ---- */
+.also { display: flex; flex-direction: column; gap: 0; }
+.s-pijn .also-lbl { font-size: 0.9375rem; font-weight: 600; color: var(--navy); padding-bottom: 18px; }
+.s-pijn .line { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 320px); align-items: baseline; gap: 20px 48px; border-top: 1px solid var(--ink-100); padding: 20px 0; }
+.s-pijn .line p { font-size: 1.125rem; line-height: 1.4; color: var(--navy); text-wrap: pretty; }
+.s-pijn .line .src { padding-top: 2px; }
+@media (max-width: 1000px) {
+.s-pijn .fork { grid-template-columns: 1fr; gap: 20px; }
+.s-pijn .link { display: none; }
+.s-pijn .out { grid-template-columns: 1fr; }
+.s-pijn .brace { grid-template-columns: 22px minmax(0, 1fr); padding: 6px 0 0; }
+}
+@media (max-width: 760px) {
+.s-pijn .section { padding: 56px 20px; }
+.s-pijn .h2 { font-size: 2.25rem; }
+.s-pijn .case { padding: 26px 22px; }
+.s-pijn .row { grid-template-columns: 1fr; gap: 14px; }
+.s-pijn .line { grid-template-columns: 1fr; gap: 8px; }
+}
+.s-pijn .notes { display: flex; justify-content: center; padding: 56px 28px; background: var(--ink-50); border-top: 1px solid var(--ink-100); }
+.s-pijn .notes-in { width: 100%; max-width: var(--container); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px,100%),1fr)); gap: 32px; }
+.s-pijn .nt { display: flex; flex-direction: column; gap: 10px; border-left: 2px solid var(--ink-200); padding-left: 18px; }
+.s-pijn .nt h3 { font-size: 0.75rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--green-deep); }
+.s-pijn .nt p { font-size: 0.875rem; line-height: 1.55; color: var(--ink-500); }
+
+
+/* bewijsblok v9, correct genaamruimd op 15-09-2026 */
+.s-bewijs {
+  --navy: #002333;
+  --navy-2: #06303f;
+  --navy-3: #0d3d4f;
+  --green: #00e075;
+  --green-deep: #007b54;
+  --sky: #4d9fff;
+  --amber: #f0a531;
+  --violet: #8b7cf6;
+  --ink-900: #0a2c3b;
+  --ink-100: #e7eef0;
+  --ink-50:  #f3f7f8;
+  --white:   #ffffff;
+
+  --bg-inverse: var(--navy);
+  --surface-inverse: var(--ink-900);
+  --fg-inverse: var(--white);
+  --fg-inverse-soft: rgba(255, 255, 255, 0.62);
+  --border-inverse: rgba(255, 255, 255, 0.12);
+  --tint-green: rgba(0, 224, 117, 0.15);
+  --tint-green-line: rgba(0, 224, 117, 0.32);
+  --tint-sky: rgba(77, 159, 255, 0.15);
+  --tint-amber: rgba(240, 165, 49, 0.18);
+  --tint-violet: rgba(139, 124, 246, 0.20);
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "League Spartan", var(--font-sans);
+
+  --radius-md: 8px;
+  --radius-lg: 10px;
+  --radius-xl: 12px;
+  --radius-2xl: 20px;
+  --radius-full: 9999px;
+
+  --section: 96px;
+  --container: 1200px;
+}.s-bewijs *, .s-bewijs *::before, .s-bewijs *::after { box-sizing: border-box; margin: 0; padding: 0; }.s-bewijs { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }.s-bewijs { font-family: var(--font-sans); background: var(--ink-50); color: var(--navy); }.s-bewijs img { display: block; max-width: 100%; }.s-bewijs :focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }.s-bewijs .h2 { font-family: var(--font-display); font-size: 3.5rem; line-height: 1.02; letter-spacing: -0.025em; font-weight: 700; text-wrap: balance; }.s-bewijs .lead { font-size: 1.25rem; line-height: 1.45; text-wrap: pretty; }.s-bewijs .small { font-size: 0.875rem; line-height: 1.5; }.s-bewijs .micro { font-size: 0.8125rem; line-height: 1.4; }.s-bewijs .label { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; }.s-bewijs .stat { font-family: var(--font-display); font-weight: 700; font-size: 6rem; line-height: .88; letter-spacing: -0.05em; }.s-bewijs .tile-n { font-family: var(--font-display); font-weight: 700; font-size: 1.25rem; line-height: 1; letter-spacing: -0.02em; }.s-bewijs .on-dark { color: var(--fg-inverse); }.s-bewijs .soft { color: var(--fg-inverse-soft); }.s-bewijs .accent { color: var(--green); }.s-bewijs .section {
+  position: relative;
+  background:
+    radial-gradient(rgba(255,255,255,.05) 1px, transparent 1px) 0 0 / 26px 26px,
+    var(--bg-inverse);
+  display: flex; justify-content: center; padding: var(--section) 28px;
+  overflow: hidden;
+}.s-bewijs .container { position: relative; width: 100%; max-width: var(--container); display: flex; flex-direction: column; gap: 48px; }.s-bewijs .head { display: flex; flex-direction: column; gap: 18px; max-width: 820px; }.s-bewijs .eyebrow { display: inline-flex; align-items: center; gap: 9px; align-self: flex-start; }.s-bewijs .seclabel { font-size: 1rem; font-weight: 600; }.s-bewijs .eyebrow svg { flex-shrink: 0; }.s-bewijs .measure {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
+  background: var(--surface-inverse);
+  border: 1px solid var(--border-inverse);
+  border-radius: var(--radius-2xl);
+  overflow: hidden;
+}.s-bewijs .shot { position: relative; min-height: 440px; background: var(--navy-2); }.s-bewijs .shot img.photo { position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }.s-bewijs .veil { position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: linear-gradient(180deg, rgba(0,35,51,.22) 0%, rgba(0,35,51,.62) 52%, rgba(0,35,51,.88) 100%); }.s-bewijs .stamp { position: absolute; left: 26px; right: 26px; bottom: 26px; top: auto; display: flex; flex-direction: column; gap: 20px; }.s-bewijs .stamp-top { display: flex; align-items: center; gap: 16px; }.s-bewijs .facts { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,.18); }.s-bewijs .fact { display: flex; align-items: baseline; gap: 7px; }.s-bewijs .fact-n { font-family: var(--font-display); font-weight: 700; font-size: 1.125rem; line-height: 1; letter-spacing: -0.02em; }.s-bewijs .fsep { width: 1px; height: 14px; background: rgba(255,255,255,.22); flex-shrink: 0; }.s-bewijs .crest { display: block; width: 84px; height: 84px; border-radius: var(--radius-xl); overflow: hidden; flex-shrink: 0; box-shadow: 0 12px 34px rgba(0,0,0,.45); }.s-bewijs .stamp-t { display: flex; flex-direction: column; gap: 3px; min-width: 0; }.s-bewijs .crest img { display: block; width: 100%; height: 100%; }.s-bewijs .numbers { display: flex; flex-direction: column; padding: 46px; justify-content: center; }.s-bewijs .scale { display: flex; flex-direction: column; gap: 14px; }.s-bewijs .steps { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; padding-bottom: 46px; }.s-bewijs .step { display: flex; flex-direction: column; gap: 10px; align-items: flex-start; }.s-bewijs .step-b { padding-left: 18%; }.s-bewijs .track { position: relative; height: 10px; border-radius: var(--radius-full); background: rgba(255,255,255,.09); }.s-bewijs .fill-base { position: absolute; left: 0; top: 0; bottom: 0; width: 40%; border-radius: var(--radius-full) 0 0 var(--radius-full); background: rgba(255,255,255,.26); }.s-bewijs .fill-jump { position: absolute; left: 40%; top: 0; bottom: 0; width: 40%; background: var(--green); }.s-bewijs .mark { position: absolute; top: 50%; width: 18px; height: 18px; border-radius: 50%; transform: translate(-50%, -50%); }.s-bewijs .mark-a { left: 40%; background: var(--white); box-shadow: 0 0 0 4px var(--surface-inverse); }.s-bewijs .mark-b { left: 80%; background: var(--green); box-shadow: 0 0 0 4px var(--surface-inverse); }.s-bewijs .ends { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; }.s-bewijs .cap { display: flex; flex-direction: column; gap: 2px; }.s-bewijs .capline { display: inline-flex; align-items: center; gap: 7px; font-size: 0.9375rem; font-weight: 600; }.s-bewijs .jump-badge { position: absolute; left: 60%; bottom: 24px; top: auto; transform: translateX(-50%); display: inline-flex; align-items: center; gap: 6px; background: var(--green); color: var(--navy); border-radius: var(--radius-full); padding: 6px 13px 6px 10px; font-size: 0.8125rem; font-weight: 600; white-space: nowrap; }.s-bewijs .tile { display: flex; align-items: center; gap: 11px; }.s-bewijs .ic { display: grid; place-items: center; width: 34px; height: 34px; border-radius: var(--radius-md); flex-shrink: 0; }.s-bewijs .ic-sky { background: var(--tint-sky); }.s-bewijs .ic-violet { background: var(--tint-violet); }.s-bewijs .ic-amber { background: var(--tint-amber); }.s-bewijs .ic-green { background: var(--tint-green); }.s-bewijs .tile-t { display: flex; flex-direction: column; gap: 3px; min-width: 0; }.s-bewijs .foot { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; }.s-bewijs .btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  border-radius: var(--radius-full); padding: 17px 32px;
+  font-family: var(--font-sans); font-size: 1rem; font-weight: 600;
+  border: 1px solid rgba(255,255,255,.28); cursor: pointer; text-decoration: none;
+  background: rgba(255,255,255,.08); color: var(--white);
+  transition: background 450ms cubic-bezier(.44,0,.56,1), color 450ms cubic-bezier(.44,0,.56,1);
+  white-space: nowrap;
+}.s-bewijs .btn:hover { background: rgba(255,255,255,.16); border-color: rgba(255,255,255,.44); }@media (max-width: 900px) {.s-bewijs .section { padding: 56px 20px; }.s-bewijs .container { gap: 32px; }.s-bewijs .h2 { font-size: 2.25rem; }.s-bewijs .stat { font-size: 4rem; }.s-bewijs .numbers { padding: 30px 22px; gap: 26px; }.s-bewijs .shot { min-height: 240px; }.s-bewijs .steps { grid-template-columns: 1fr; gap: 22px; padding-bottom: 40px; }.s-bewijs .step-b { padding-left: 0; }.s-bewijs .jump-badge { left: 50%; bottom: 26px; }.s-bewijs .tag { white-space: normal; }.s-bewijs .tag-a { left: 0; transform: none; }.s-bewijs .tag-b { left: auto; right: 0; transform: none; text-align: right; }.s-bewijs .facts { gap: 10px 14px; }}.s-bewijs .notes { display: flex; justify-content: center; padding: 56px 28px; background: var(--white); }.s-bewijs .notes-in { width: 100%; max-width: var(--container); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 32px; }.s-bewijs .note { display: flex; flex-direction: column; gap: 10px; border-left: 2px solid var(--ink-100); padding-left: 18px; }.s-bewijs .note h3 { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; color: var(--green-deep); }.s-bewijs .note p { font-size: 0.875rem; line-height: 1.55; color: #5b7480; }
+
+
+  .lbl { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: #999; font-weight: 600; }
+  .sect { display: flex; justify-content: center; padding: 88px 28px; position: relative; }
+  .hero { display: flex; flex-direction: column; align-items: center; gap: 22px; }
+@media (max-width: 980px) {
+  .pstrip { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 14px 20px; padding-top: 14px; max-width: 1100px; }
+  .legs { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 28px; }
+@media (max-width: 980px) {
+  .book { display: grid; grid-template-columns: minmax(0,4fr) minmax(0,5fr); gap: 56px; align-items: start; }
+@media (max-width: 980px) {
+@media (max-width: 980px) {
+
+</style>
+</head>
+<body>
+<div class="s-hero" data-sec="hero">
+
+
+
+<header class="nav"><div class="nav-in">
+  <span class="nav-logo">Eduface</span>
+  <nav class="nav-links"><a href="#how">How it works</a><a href="#proof">Accuracy</a><a href="#products">Products</a><a href="#faq">FAQ</a></nav>
+  <span class="nav-r"><a class="btn btn-sm" href="#book">Book a demo</a></span>
+</div></header>
+
+<section class="hero"><div class="hero-in">
+
+  <h1 class="h1"><span class="l1">Grade essay 140</span> <span class="accent">like you graded essay one</span></h1>
+  <p class="lead">Eduface drafts the feedback and the grade against your own criteria.</p>
+
+  <div class="cta-row">
+    <a class="btn" href="#book">Book a demo</a>
+    <a class="tlink" href="#how">See how it works
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14m0 0l-6-6m6 6l6-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+
+  <div class="proofline">
+    <span class="small" style="color:var(--ink-500)">Used by teaching teams at</span>
+    <span class="wall">
+      <img src="brand_assets/schools/rotterdam-cropped.svg" alt="Hogeschool Rotterdam">
+      <img src="brand_assets/schools/haagse.png" alt="De Haagse Hogeschool">
+      <img src="brand_assets/schools/tilburg.svg" alt="Tilburg University" class="tall">
+      <img src="brand_assets/schools/radboud.svg" alt="Radboud Universiteit">
+    </span>
+  </div>
+
+  <div class="stage">
+    <img src="creatives/product-images/hero.png" alt="Eduface: one student, three drafts, with the lecturer signing off every comment" width="3120" height="1320">
+  </div>
+
+</div></section>
+
+
+</div>
+
+<div class="s-pijn" data-sec="pijn">
+
+
+
+<section class="section">
+  <div class="container">
+
+    <div class="head">
+      <span class="eyebrow">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 8v5m0 3.5v.01M12 3l9 16H3l9-16Z" stroke="#007B54" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="seclabel">The problem</span>
+      </span>
+      <h2 class="h2">The same essay gets <span class="accent">a different grade</span> depending on who opens it</h2>
+      <p class="lead">Students compare. And when the marks do not line up, it is the marker they start to doubt, not the work.</p>
+    </div>
+
+    <div class="case">
+
+      <div class="case-head">
+        <h3 class="h3">One submission, two markers, a full grade between them</h3>
+        <span class="crit">Criterion shown: <b>depth of analysis</b></span>
+      </div>
+
+      <div class="fork">
+
+        <div class="same">
+          <span class="same-lbl">
+            <svg class="tick" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 3h8l5 5v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" stroke="#2C4A57" stroke-width="1.8" stroke-linejoin="round"/><path d="M14 3v5h5" stroke="#2C4A57" stroke-width="1.8"/></svg>
+            Everything that went in
+          </span>
+          <div class="same-list">
+            <span><svg class="tick" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" stroke="#5B7480" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>The same <b>essay</b></span>
+            <span><svg class="tick" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" stroke="#5B7480" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>The same <b>rubric</b></span>
+            <span><svg class="tick" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" stroke="#5B7480" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>The same <b>cohort</b></span>
+          </div>
+          <div class="doclines">
+            <i style="width:100%"></i><i style="width:92%"></i><i style="width:97%"></i><i style="width:64%"></i>
+          </div>
+        </div>
+
+        <div class="link" aria-hidden="true">
+          <svg viewBox="0 0 92 220" preserveAspectRatio="none" fill="none">
+            <path d="M0 110 H30 C48 110 46 46 64 46 H92" stroke="#CDD9DE" stroke-width="2"/>
+            <path d="M0 110 H30 C48 110 46 174 64 174 H92" stroke="#CDD9DE" stroke-width="2"/>
+          </svg>
+        </div>
+
+        <div class="out">
+          <div class="rows">
+            <div class="row">
+              <div class="who">
+                <span class="who-top"><span class="av av-1">JM</span><span class="nm">Marker one</span></span>
+                <span class="meta"><span>Depth of analysis <b>Good</b></span><span>Marked <b>Monday morning</b></span></span>
+              </div>
+              <span class="grade"><span class="grade-n">7</span><span class="grade-o">/ 10</span></span>
+            </div>
+            <div class="row">
+              <div class="who">
+                <span class="who-top"><span class="av av-2">RK</span><span class="nm">Marker two</span></span>
+                <span class="meta"><span>Depth of analysis <b>Adequate</b></span><span>Marked <b>Sunday night</b></span></span>
+              </div>
+              <span class="grade"><span class="grade-n">6</span><span class="grade-o">/ 10</span></span>
+            </div>
+          </div>
+
+          <div class="brace">
+            <div class="brace-line" aria-hidden="true">
+              <svg viewBox="0 0 22 160" preserveAspectRatio="none" fill="none">
+                <path d="M2 4 H12 V76 H20 M12 76 V156 H2" stroke="#B3261E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="brace-t">
+              <b>One grade</b>
+              <span>and nothing in the work to point at</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="case-foot">
+        <p>Nobody is doing anything wrong. They read the same rubric on a different day, with a different pile behind them.</p>
+        <span class="src">Business School Nederland and Breederode, 2026. The same pattern came back from Sunderland and Bristol.</span>
+      </div>
+
+    </div>
+
+    <div class="also">
+      <span class="also-lbl">And it is not one marker having a bad day.</span>
+      <div class="line">
+        <p>Twenty markers on one cohort, a thousand assignments a year, and an hour of calibration between them.</p>
+        <span class="src">CMI Ireland and Bristol University, 2026.</span>
+      </div>
+      <div class="line">
+        <p>By essay 140 there is less time per paper than there was at essay 1, and depth is the first thing to go.</p>
+        <span class="src">Bath Spa and De Haagse Hogeschool, 2026.</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+</div>
+
+<div class="s-hoe" data-sec="hoe">
+<style>
+/* ==========================================================================
+   SECTIE 3 · HOW IT WORKS — uitgewerkt 15-09-2026.
+   Ordeningszet: vier stappen links, en rechts één beoordeelscherm waar die
+   vier nummers letterlijk op staan. Niets achter een klik, geen carrousel.
+   ========================================================================== */
+.s-hoe .section { background: var(--ink-50); display: flex; justify-content: center; padding: 96px 28px; }
+.s-hoe .container { width: 100%; max-width: var(--container); display: flex; flex-direction: column; gap: 56px; }
+.s-hoe .head { display: flex; flex-direction: column; gap: 18px; max-width: 820px; }
+.s-hoe .eyebrow { display: inline-flex; align-items: center; gap: 9px; align-self: flex-start; }
+.s-hoe .seclabel { font-size: 1rem; font-weight: 600; color: var(--green-deep); }
+.s-hoe .h2 { font-family: var(--font-display); font-size: 3.5rem; line-height: 1.02; letter-spacing: -0.025em; font-weight: 700; color: var(--navy); text-wrap: balance; }
+.s-hoe .lead { font-size: 1.25rem; line-height: 1.45; color: var(--ink-500); text-wrap: pretty; }
+
+.s-hoe .hiw { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(340px,100%),1fr)); gap: 56px; align-items: center; }
+.s-hoe .steps { display: flex; flex-direction: column; gap: 28px; }
+.s-hoe .line { display: grid; grid-template-columns: 30px minmax(0,1fr); gap: 16px; align-items: start; }
+.s-hoe .n { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--navy); color: var(--ink-50); font-size: 0.8125rem; font-weight: 700; }
+.s-hoe .line.you .n { background: var(--green); color: var(--navy); }
+.s-hoe .lt { display: flex; flex-direction: column; gap: 6px; }
+.s-hoe .h3 { font-family: var(--font-display); font-size: 1.25rem; line-height: 1.15; letter-spacing: -0.02em; font-weight: 700; color: var(--navy); }
+.s-hoe .body { font-size: 0.9375rem; line-height: 1.6; color: var(--ink-500); }
+
+/* het scherm */
+.s-hoe .screen { position: relative; display: flex; flex-direction: column; gap: 14px; background: var(--white); border: 1px solid var(--ink-100); border-radius: var(--radius-2xl); padding: 24px; box-shadow: 0 4px 12px rgba(0,35,51,.05), 0 28px 64px rgba(0,35,51,.1); }
+.s-hoe .sbar { display: flex; align-items: center; gap: 10px; padding-bottom: 14px; border-bottom: 1px solid var(--ink-100); }
+.s-hoe .slbl { font-size: 0.6875rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: var(--ink-500); }
+.s-hoe .two { display: grid; grid-template-columns: minmax(0,3fr) minmax(0,2fr); gap: 16px; }
+.s-hoe .doc { position: relative; display: flex; flex-direction: column; gap: 10px; }
+.s-hoe .dl { height: 8px; border-radius: 4px; background: var(--ink-100); }
+.s-hoe .dl.hl { background: rgba(0,224,117,.28); }
+.s-hoe .sug { position: relative; display: flex; flex-direction: column; gap: 8px; border: 1px solid var(--ink-100); border-left: 2px solid var(--green); border-radius: var(--radius-lg); padding: 12px; background: var(--ink-50); }
+.s-hoe .sug p { font-size: 0.8125rem; line-height: 1.5; color: var(--navy); }
+.s-hoe .acts { display: flex; gap: 7px; }
+.s-hoe .chip { border-radius: var(--radius-full); border: 1px solid var(--ink-200); padding: 5px 11px; font-size: 0.6875rem; font-weight: 600; color: var(--ink-500); background: var(--white); }
+.s-hoe .chip.on { background: var(--navy); border-color: var(--navy); color: var(--ink-50); }
+.s-hoe .rub { display: flex; flex-direction: column; gap: 8px; }
+.s-hoe .rr { position: relative; display: flex; align-items: center; gap: 10px; border: 1px solid var(--ink-100); border-radius: var(--radius-lg); padding: 10px 12px; font-size: 0.75rem; color: var(--ink-500); background: var(--white); }
+.s-hoe .rr .sc { margin-left: auto; font-weight: 700; color: var(--navy); }
+.s-hoe .rr.flag { border-color: rgba(240,165,49,.55); background: rgba(240,165,49,.08); }
+.s-hoe .rr.flag .sc { color: #a86d0d; }
+.s-hoe .sfoot { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; padding-top: 14px; border-top: 1px solid var(--ink-100); }
+.s-hoe .big { font-family: var(--font-display); font-weight: 700; font-size: 1.5rem; line-height: 1; letter-spacing: -0.03em; color: var(--navy); }
+.s-hoe .approve { margin-left: auto; display: inline-flex; align-items: center; gap: 7px; border-radius: var(--radius-full); background: var(--green); color: var(--navy); padding: 8px 15px; font-size: 0.8125rem; font-weight: 700; }
+
+/* de nummers op het scherm, dezelfde als links */
+.s-hoe .co { position: absolute; display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: var(--navy); color: var(--ink-50); font-size: 0.75rem; font-weight: 700; box-shadow: 0 0 0 4px var(--white); z-index: 3; }
+.s-hoe .co.you { background: var(--green); color: var(--navy); }
+
+@media (max-width: 900px) {
+  .s-hoe .section { padding: 56px 20px; }
+  .s-hoe .h2 { font-size: 2.25rem; }
+  .s-hoe .hiw { gap: 32px; }
+  .s-hoe .two { grid-template-columns: 1fr; }
+  .s-hoe .screen { padding: 16px; }
+}
+</style>
+
+<section class="section">
+  <div class="container">
+    <div class="head">
+      <span class="eyebrow">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10" stroke="#007b54" stroke-width="2" stroke-linecap="round"/></svg>
+        <span class="seclabel">How it works</span>
+      </span>
+      <h2 class="h2">One submission, from handed in to signed off</h2>
+      <p class="lead">Four steps, and the third one is yours. Everything below is one screen, nothing is hidden behind a click.</p>
+    </div>
+
+    <div class="hiw">
+      <div class="steps">
+        <div class="line">
+          <span class="n">1</span>
+          <span class="lt">
+            <span class="h3">Students hand in where they always did</span>
+            <span class="body">Eduface picks the submission up from your LMS. No new place for anyone to learn.</span>
+          </span>
+        </div>
+        <div class="line">
+          <span class="n">2</span>
+          <span class="lt">
+            <span class="h3">The model marks the passage and writes the comment</span>
+            <span class="body">It points at the exact sentence it is talking about and writes against the criterion from your own rubric, not a generic remark.</span>
+          </span>
+        </div>
+        <div class="line you">
+          <span class="n">3</span>
+          <span class="lt">
+            <span class="h3">You approve, edit or bin every comment</span>
+            <span class="body">Where the model is not confident it says so instead of guessing, so the ones that need you are the ones you see first.</span>
+          </span>
+        </div>
+        <div class="line">
+          <span class="n">4</span>
+          <span class="lt">
+            <span class="h3">The approved mark goes back to the gradebook</span>
+            <span class="body">Straight into the LMS you already run. The student sees what you signed off, and nothing else.</span>
+          </span>
+        </div>
+      </div>
+
+      <div class="screen">
+        <div class="sbar">
+          <span class="slbl">Investment appraisal · S. de Vries · draft 3</span>
+          <span class="slbl" style="margin-left:auto">12 of 140</span>
+          <span class="co" style="top:14px;left:-13px">1</span>
+        </div>
+
+        <div class="two">
+          <div class="doc">
+            <span class="dl" style="width:94%"></span>
+            <span class="dl" style="width:88%"></span>
+            <span class="dl hl" style="width:72%"></span>
+            <span class="dl" style="width:90%"></span>
+            <div class="sug">
+              <span class="co" style="top:-13px;left:-13px">2</span>
+              <p>Tie the thesis back to your research question so it lands from line one.</p>
+              <span class="acts"><span class="chip on">Approve</span><span class="chip">Edit</span><span class="chip">Discard</span></span>
+            </div>
+            <span class="dl" style="width:86%"></span>
+            <span class="dl" style="width:58%"></span>
+          </div>
+
+          <div class="rub">
+            <span class="rr">Issue identification<span class="sc">8 / 10</span></span>
+            <span class="rr">Use of sources<span class="sc">9 / 10</span></span>
+            <span class="rr flag">Depth of analysis<span class="sc">Needs you</span><span class="co you" style="top:-13px;right:-13px">3</span></span>
+            <span class="rr">Structure<span class="sc">9 / 10</span></span>
+          </div>
+        </div>
+
+        <div class="sfoot">
+          <span class="big">8.2</span>
+          <span class="slbl" style="text-transform:none;letter-spacing:0;font-weight:400;font-size:0.8125rem">Proposed from the four criteria</span>
+          <span class="approve">Approve and send to gradebook</span>
+          <span class="co" style="bottom:14px;right:-13px">4</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+
+<div class="s-bewijs" data-sec="bewijs">
+
+
+
+<section class="section">
+  <div class="container">
+
+    <div class="head">
+      <span class="eyebrow">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 20V10M10 20V4M16 20v-7M22 20H2" stroke="#00E075" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
+        <span class="seclabel accent">Accuracy</span>
+      </span>
+      <h2 class="h2 on-dark">An AI model that marks <span class="accent">like your own team</span></h2>
+      <p class="lead soft">Tested on real student work your markers had already graded. Not on a demo set.</p>
+    </div>
+
+    <div class="measure">
+      <div class="shot">
+        <img class="photo" src="brand_assets/schools/bath-spa-campus.jpg" alt="Bath Spa University campus">
+        <span class="veil" aria-hidden="true"></span>
+        <span class="stamp">
+          <span class="stamp-top">
+            <span class="crest"><img src="brand_assets/schools/bath-spa.svg" alt="Bath Spa University"></span>
+            <span class="stamp-t">
+              <span class="small on-dark" style="font-weight:600">Bath Spa University</span>
+              <span class="micro soft">Pilot, June 2026</span>
+            </span>
+          </span>
+          <span class="facts">
+            <span class="fact"><span class="fact-n on-dark">435</span><span class="micro soft">assignments</span></span>
+            <span class="fsep" aria-hidden="true"></span>
+            <span class="fact"><span class="fact-n on-dark">13</span><span class="micro soft">markers</span></span>
+            <span class="fsep" aria-hidden="true"></span>
+            <span class="fact"><span class="fact-n on-dark">6</span><span class="micro soft">subjects</span></span>
+          </span>
+        </span>
+      </div>
+
+      <div class="numbers">
+        <div class="scale">
+
+          <div class="steps">
+            <div class="step">
+              <span class="stat on-dark">94%</span>
+              <span class="capline on-dark">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="3.6" stroke="currentColor" stroke-width="1.8"/></svg>
+                accurate
+              </span>
+              <span class="micro soft">before the lecturer instructs it</span>
+            </div>
+
+            <div class="step step-b">
+              <span class="stat accent">98%</span>
+              <span class="capline accent">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="3.6" stroke="currentColor" stroke-width="1.8" fill="currentColor"/></svg>
+                accurate
+              </span>
+              <span class="micro soft">after the lecturer instructs it</span>
+            </div>
+          </div>
+
+          <div class="track">
+            <span class="fill-base"></span>
+            <span class="fill-jump"></span>
+            <span class="mark mark-a"></span>
+            <span class="mark mark-b"></span>
+            <span class="jump-badge">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V5m0 0l-6 6m6-6l6 6" stroke="#002333" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>4 points closer</span>
+            </span>
+          </div>
+
+          <div class="ends">
+            <span class="micro soft">90%</span>
+            <span class="micro soft">100%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="foot">
+      <a class="btn" href="#book">Book a demo</a>
+    </div>
+
+  </div>
+</section>
+
+</div>
+
+<div class="s-prod" data-sec="prod">
+<style>
+/* ==========================================================================
+   SECTIE 5 · PRODUCTS — uitgewerkt 15-09-2026.
+   Ordeningszet: twee productrijen die spiegelen, daaronder de twee beta's klein.
+   Elke rij is tekst plus een nagebouwd stuk van het echte scherm, geen screenshot.
+   Elke claim komt uit Platform/product.md. Staat het daar niet, dan staat
+   het hier niet.
+   Framer-proof: stacks en grids, gap op de parent, geen margins op children,
+   geen vaste hoogtes, minmax-grids.
+   ========================================================================== */
+:root { --prod-gap: 96px; }
+.s-prod .section { background: var(--white); display: flex; justify-content: center; padding: 96px 28px; }
+.s-prod .container { width: 100%; max-width: var(--container); display: flex; flex-direction: column; gap: var(--prod-gap); }
+.s-prod .head { display: flex; flex-direction: column; gap: 18px; max-width: 820px; }
+.s-prod .eyebrow { display: inline-flex; align-items: center; gap: 9px; align-self: flex-start; }
+.s-prod .seclabel { font-size: 1rem; font-weight: 600; color: var(--green-deep); }
+.s-prod .h2 { font-family: var(--font-display); font-size: 3.5rem; line-height: 1.02; letter-spacing: -0.025em; font-weight: 700; text-wrap: balance; color: var(--navy); }
+.s-prod .h3 { font-family: var(--font-display); font-size: 1.75rem; line-height: 1.1; letter-spacing: -0.02em; font-weight: 700; text-wrap: balance; color: var(--navy); }
+.s-prod .lead { font-size: 1.25rem; line-height: 1.45; color: var(--ink-500); text-wrap: pretty; }
+.s-prod .body { font-size: 1rem; line-height: 1.6; color: var(--ink-500); }
+.s-prod .micro { font-size: 0.8125rem; line-height: 1.4; color: var(--ink-500); }
+
+
+/* ---- vaktabs: de zes vakmodellen. Law staat aan, het beeld eronder moet
+       het verhaal alleen kunnen dragen, want de meeste bezoekers wisselen nooit. ---- */
+.s-prod .subtabs { display: flex; flex-wrap: wrap; gap: 8px; }
+.s-prod .tab { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--ink-200); border-radius: var(--radius-full); padding: 9px 16px; font-size: 0.875rem; font-weight: 500; color: var(--ink-500); background: var(--white); white-space: nowrap; transition: border-color 450ms cubic-bezier(.44,0,.56,1), color 450ms cubic-bezier(.44,0,.56,1); }
+.s-prod .tab b { width: 7px; height: 7px; border-radius: 50%; background: var(--ink-200); flex-shrink: 0; }
+.s-prod .tab.on { background: var(--navy); border-color: var(--navy); color: var(--ink-50); font-weight: 600; }
+.s-prod .tab.on b { background: var(--green); }
+.s-prod .pgroup { display: flex; flex-direction: column; gap: 32px; }
+
+/* ---- de productrij: tekst en scherm, om en om ---- */
+.s-prod .prow { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr)); gap: 64px; align-items: center; }
+.s-prod .prow.flip .ptext { order: 2; }
+.s-prod .ptext { display: flex; flex-direction: column; gap: 20px; }
+.s-prod .tagline { display: inline-flex; align-items: center; gap: 8px; align-self: flex-start; border: 1px solid var(--ink-200); border-radius: var(--radius-full); padding: 7px 15px; font-size: 0.8125rem; font-weight: 600; color: var(--navy); }
+.s-prod .tagline b { width: 7px; height: 7px; border-radius: 50%; background: var(--green); flex-shrink: 0; }
+.s-prod .checks { display: flex; flex-direction: column; gap: 12px; padding-top: 4px; }
+.s-prod .chk { display: flex; align-items: flex-start; gap: 11px; font-size: 0.9375rem; line-height: 1.5; color: var(--ink-700); }
+.s-prod .chk b { display: grid; place-items: center; width: 21px; height: 21px; border-radius: 50%; background: rgba(0,224,117,.16); flex-shrink: 0; }
+
+/* ---- het nagebouwde scherm ---- */
+.s-prod .frag { display: flex; flex-direction: column; gap: 14px; background: var(--navy); border: 1px solid rgba(255,255,255,.1); border-radius: var(--radius-2xl); padding: 24px; box-shadow: 0 4px 12px rgba(0,35,51,.1), 0 28px 64px rgba(0,35,51,.18); }
+.s-prod .ftag { display: inline-flex; align-self: flex-start; align-items: center; border-radius: var(--radius-full); padding: 5px 12px; font-size: 0.75rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: rgba(255,255,255,.72); border: 1px solid rgba(255,255,255,.16); }
+.s-prod .flbl { font-size: 0.6875rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: rgba(255,255,255,.42); }
+.s-prod .fcard { display: flex; flex-direction: column; gap: 9px; background: rgba(255,255,255,.045); border: 1px solid rgba(255,255,255,.09); border-radius: var(--radius-xl); padding: 15px; }
+.s-prod .fcard.lead-in { border-left: 2px solid var(--green); }
+.s-prod .ftext { font-size: 0.875rem; line-height: 1.6; color: rgba(255,255,255,.66); }
+.s-prod .ftext mark { background: rgba(0,224,117,.2); color: #fff; border-radius: 2px; box-decoration-break: clone; }
+.s-prod .fquote { font-size: 0.9375rem; line-height: 1.55; color: #fff; }
+.s-prod .acts { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.s-prod .chip { display: inline-flex; align-items: center; gap: 6px; border-radius: var(--radius-full); padding: 6px 13px; font-size: 0.75rem; font-weight: 600; color: rgba(255,255,255,.62); border: 1px solid rgba(255,255,255,.14); white-space: nowrap; }
+.s-prod .chip.on { color: #fff; border-color: rgba(255,255,255,.34); background: rgba(255,255,255,.1); }
+.s-prod .crits { display: flex; flex-direction: column; gap: 8px; }
+.s-prod .crit { display: flex; align-items: center; gap: 12px; }
+.s-prod .crit .cn { font-size: 0.8125rem; color: rgba(255,255,255,.66); width: 40%; flex-shrink: 0; }
+.s-prod .cbar { flex: 1; height: 6px; border-radius: var(--radius-full); background: rgba(255,255,255,.1); overflow: hidden; display: flex; }
+.s-prod .cbar i { display: block; height: 100%; border-radius: var(--radius-full); background: rgba(255,255,255,.55); }
+.s-prod .cs { font-size: 0.8125rem; font-weight: 600; color: #fff; width: 44px; text-align: right; flex-shrink: 0; }
+.s-prod .ffoot { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,.12); }
+.s-prod .fbig { font-family: var(--font-display); font-weight: 700; font-size: 1.75rem; line-height: 1; letter-spacing: -0.03em; color: #fff; }
+
+/* exam grader */
+.s-prod .fbar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.s-prod .rows { display: flex; flex-direction: column; gap: 8px; }
+.s-prod .rw { display: flex; align-items: center; gap: 12px; background: rgba(255,255,255,.045); border: 1px solid rgba(255,255,255,.09); border-radius: var(--radius-lg); padding: 11px 14px; font-size: 0.8125rem; color: rgba(255,255,255,.66); }
+.s-prod .rw .who { color: #fff; font-weight: 600; width: 34%; flex-shrink: 0; }
+.s-prod .rw .st { margin-left: auto; white-space: nowrap; }
+.s-prod .rw.flag { border-color: rgba(240,165,49,.4); }
+.s-prod .rw.flag .st { color: var(--amber, #f0a531); }
+.s-prod .open { display: flex; flex-direction: column; gap: 12px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.14); border-radius: var(--radius-xl); padding: 15px; }
+.s-prod .two { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px,100%),1fr)); gap: 14px; }
+.s-prod .col { display: flex; flex-direction: column; gap: 6px; }
+
+/* ---- de twee beta's, klein en zonder beeld ---- */
+.s-prod .bento { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px,100%),1fr)); gap: 22px; }
+.s-prod .bcard { display: flex; flex-direction: column; gap: 12px; background: var(--ink-50); border: 1px solid var(--ink-100); border-radius: var(--radius-2xl); padding: 28px; }
+.s-prod .brow { display: flex; align-items: center; gap: 10px; }
+.s-prod .beta { display: inline-flex; align-items: center; border-radius: var(--radius-full); padding: 4px 11px; font-size: 0.6875rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-500); border: 1px solid var(--ink-200); margin-left: auto; }
+
+.s-prod .foot { display: flex; justify-content: center; }
+.s-prod .btn { display: inline-flex; align-items: center; justify-content: center; border-radius: var(--radius-full); padding: 16px 32px; font-size: 1rem; font-weight: 600; text-decoration: none; background: var(--navy); color: var(--ink-50); border: 1px solid transparent; transition: background 450ms cubic-bezier(.44,0,.56,1); }
+.s-prod .btn:hover { background: var(--navy-2, #06303f); }
+
+@media (max-width: 900px) {
+  .s-prod .section { padding: 56px 20px; }
+  .s-prod .container { gap: 64px; }
+  .s-prod .h2 { font-size: 2.25rem; }
+  .s-prod .prow { gap: 32px; }
+  .s-prod .prow.flip .ptext { order: 0; }
+  .s-prod .frag { padding: 18px; }
+}
+
+</style>
+
+<section class="section">
+  <div class="container">
+
+    <div class="head">
+      <span class="eyebrow">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M5 4h9l5 5v11a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Z" stroke="#007b54" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M13 4v6h6" stroke="#007b54" stroke-width="2" stroke-linejoin="round"/>
+        </svg>
+        <span class="seclabel">Products</span>
+      </span>
+      <h2 class="h2">Written work and exams, drafted by the same model</h2>
+      <p class="lead">Two products your markers can use today, two more in beta. You turn on what your programme actually needs.</p>
+    </div>
+
+    <!-- ===== PAPER GRADER ===== -->
+    <div class="pgroup">
+      <div class="subtabs">
+        <span class="tab on"><b></b>Law</span>
+        <span class="tab"><b></b>Economics</span>
+        <span class="tab"><b></b>Social Sciences</span>
+        <span class="tab"><b></b>STEM</span>
+        <span class="tab"><b></b>Humanities</span>
+        <span class="tab"><b></b>Health Sciences</span>
+      </div>
+
+    <div class="prow">
+      <div class="ptext">
+        <span class="tagline"><b></b>Paper Grader</span>
+        <h3 class="h3">Every draft gets a real read</h3>
+        <p class="body">Eduface reads the submission, marks the exact passage it is talking about, and writes the comment against your own criterion. It scores the full rubric with a breakdown you can explain to a student.</p>
+        <p class="body">Six subject models, so a law essay is not read the way a lab report is.</p>
+        <div class="checks">
+          <span class="chk"><b><svg width="11" height="11" viewBox="0 0 24 24" fill="none"><path d="M4 12.5 9.5 18 20 6.5" stroke="#007b54" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></b>Marks the passage, not the whole paper</span>
+          <span class="chk"><b><svg width="11" height="11" viewBox="0 0 24 24" fill="none"><path d="M4 12.5 9.5 18 20 6.5" stroke="#007b54" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></b>Every comment names the criterion it came from</span>
+          <span class="chk"><b><svg width="11" height="11" viewBox="0 0 24 24" fill="none"><path d="M4 12.5 9.5 18 20 6.5" stroke="#007b54" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></b>Nothing reaches a student before you approve it</span>
+        </div>
+      </div>
+
+      <div class="frag">
+        <span class="ftag">Paper Grader</span>
+        <span class="flbl">Passage in the submission</span>
+        <div class="fcard">
+          <p class="ftext">Three interview rounds were held with staff. <mark>This paper argues that hybrid teaching improves engagement.</mark> The next section sets out the results.</p>
+        </div>
+        <div class="fcard lead-in">
+          <span class="flbl">Criterion 1 · Issue identification</span>
+          <p class="fquote">Tie the thesis back to your research question so it lands from line one.</p>
+          <div class="acts">
+            <span class="chip on">Approve</span>
+            <span class="chip">Edit</span>
+            <span class="chip">Discard</span>
+          </div>
+        </div>
+        <span class="flbl">Score per criterion</span>
+        <div class="crits">
+          <span class="crit"><span class="cn">Issue identification</span><span class="cbar"><i style="width:80%"></i></span><span class="cs">8 / 10</span></span>
+          <span class="crit"><span class="cn">Use of sources</span><span class="cbar"><i style="width:90%"></i></span><span class="cs">9 / 10</span></span>
+          <span class="crit"><span class="cn">Depth of analysis</span><span class="cbar"><i style="width:70%"></i></span><span class="cs">7 / 10</span></span>
+          <span class="crit"><span class="cn">Structure</span><span class="cbar"><i style="width:90%"></i></span><span class="cs">9 / 10</span></span>
+        </div>
+        <div class="ffoot">
+          <span class="fbig">8.2</span>
+          <span class="micro" style="color:rgba(255,255,255,.62);flex:1">Grade proposed from the four criteria above</span>
+          <span class="flbl">Pending your approval</span>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- ===== EXAM GRADER ===== -->
+    <div class="prow flip">
+      <div class="ptext">
+        <span class="tagline"><b></b>Exam Grader</span>
+        <h3 class="h3">Open answers, marked against your mark scheme</h3>
+        <p class="body">Eduface scores every answer per criterion against the mark scheme, flags the ones it is not sure about, and puts each of those decisions back with you. Once you approve, the mark goes straight into the gradebook of your LMS.</p>
+        <div class="checks">
+          <span class="chk"><b><svg width="11" height="11" viewBox="0 0 24 24" fill="none"><path d="M4 12.5 9.5 18 20 6.5" stroke="#007b54" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></b>Scored per criterion against your mark scheme</span>
+          <span class="chk"><b><svg width="11" height="11" viewBox="0 0 24 24" fill="none"><path d="M4 12.5 9.5 18 20 6.5" stroke="#007b54" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></b>Uncertainty is flagged, not smoothed over</span>
+          <span class="chk"><b><svg width="11" height="11" viewBox="0 0 24 24" fill="none"><path d="M4 12.5 9.5 18 20 6.5" stroke="#007b54" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></b>Approved marks return to your LMS gradebook</span>
+        </div>
+      </div>
+
+      <div class="frag">
+        <span class="ftag">Exam Grader</span>
+        <div class="fbar">
+          <span class="chip on">Flagged first</span>
+          <span class="chip">All answers</span>
+          <span class="chip">Question 4</span>
+        </div>
+        <span class="flbl">20 of 140 answers need you</span>
+        <div class="rows">
+          <span class="rw"><span class="who">L. Jansen</span><span>Question 4</span><span class="st">Approved</span></span>
+        </div>
+        <div class="open">
+          <span class="rw flag" style="background:none;border:0;padding:0"><span class="who">R. Dijkstra</span><span>Question 4</span><span class="st">Uncertain</span></span>
+          <div class="two">
+            <div class="col">
+              <span class="flbl">Student answer</span>
+              <p class="ftext">Lost rent counts as a sunk cost, so it stays out of the appraisal.</p>
+            </div>
+            <div class="col">
+              <span class="flbl">Mark scheme</span>
+              <p class="ftext">Sunk costs excluded (1). Opportunity cost of the site named (1).</p>
+            </div>
+          </div>
+          <div class="acts">
+            <span class="chip on">Approve</span>
+            <span class="chip">Adjust</span>
+            <span class="flbl">2 of 4 points</span>
+          </div>
+        </div>
+        <div class="rows">
+          <span class="rw"><span class="who">M. Bakker</span><span>Question 4</span><span class="st">Approved</span></span>
+          <span class="rw"><span class="who">S. de Vries</span><span>Question 4</span><span class="st">Approved</span></span>
+        </div>
+        <div class="ffoot">
+          <span class="micro" style="color:rgba(255,255,255,.62);flex:1">Approved marks are written back to the gradebook</span>
+          <span class="flbl">To gradebook</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== DE TWEE BETA'S ===== -->
+    <div class="bento">
+      <div class="bcard">
+        <span class="brow"><span class="tagline"><b></b>Academic Integrity</span><span class="beta">Beta</span></span>
+        <h3 class="h3">Ask the student to defend their own paper</h3>
+        <p class="body">The student gets critical questions about the work they handed in and answers them out loud, the way they would at a thesis defence.</p>
+      </div>
+      <div class="bcard">
+        <span class="brow"><span class="tagline"><b></b>Oral Examination</span><span class="beta">Beta</span></span>
+        <h3 class="h3">A spoken exam, transcribed as it happens</h3>
+        <p class="body">An oral assessment on a set topic, with live transcription and marking, so an oral-heavy programme is not left out.</p>
+      </div>
+    </div>
+
+    <div class="foot"><a class="btn" href="#book">Book a demo</a></div>
+
+  </div>
+</section>
+
+</div>
+
+<div class="s-fit" data-sec="fit">
+<style>
+/* ==========================================================================
+   SECTIE 6 · FIT & TRUST — uitgewerkt 15-09-2026.
+   Ordeningszet: links de route door de systemen die ze al hebben, rechts de
+   drie dingen die een examencommissie wil horen. Niet nog een kaartenrij.
+   Claims: alleen wat in Platform/product.md staat.
+   ========================================================================== */
+.s-fit .section { background: var(--ink-50); display: flex; justify-content: center; padding: 96px 28px; }
+.s-fit .container { width: 100%; max-width: var(--container); display: flex; flex-direction: column; gap: 56px; }
+.s-fit .head { display: flex; flex-direction: column; gap: 18px; max-width: 820px; }
+.s-fit .eyebrow { display: inline-flex; align-items: center; gap: 9px; align-self: flex-start; }
+.s-fit .seclabel { font-size: 1rem; font-weight: 600; color: var(--green-deep); }
+.s-fit .h2 { font-family: var(--font-display); font-size: 3.5rem; line-height: 1.02; letter-spacing: -0.025em; font-weight: 700; color: var(--navy); text-wrap: balance; }
+.s-fit .h3 { font-family: var(--font-display); font-size: 1.25rem; line-height: 1.15; letter-spacing: -0.02em; font-weight: 700; color: var(--navy); }
+.s-fit .lead { font-size: 1.25rem; line-height: 1.45; color: var(--ink-500); text-wrap: pretty; }
+.s-fit .body { font-size: 1rem; line-height: 1.6; color: var(--ink-500); }
+.s-fit .lbl { font-size: 0.6875rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: var(--ink-500); }
+
+.s-fit .fit { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(400px,100%),1fr)); gap: 24px; align-items: start; }
+.s-fit .panel { display: flex; flex-direction: column; gap: 22px; background: var(--white); border: 1px solid var(--ink-100); border-radius: var(--radius-2xl); padding: 32px; }
+
+.s-fit .lmsrow { display: flex; flex-wrap: wrap; gap: 10px; }
+.s-fit .lms { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--ink-100); border-radius: var(--radius-full); padding: 8px 15px; font-size: 0.875rem; font-weight: 600; color: var(--navy); }
+.s-fit .lms b { width: 9px; height: 9px; border-radius: 2px; flex-shrink: 0; }
+
+/* de route: vier stappen, de derde is van jou */
+.s-fit .flow { display: flex; flex-wrap: wrap; align-items: stretch; gap: 8px; }
+.s-fit .step { flex: 1 1 100px; display: flex; flex-direction: column; gap: 5px; border: 1px solid var(--ink-100); border-radius: var(--radius-xl); padding: 14px; background: var(--ink-50); }
+.s-fit .step.you { border-color: rgba(0,224,117,.5); background: rgba(0,224,117,.08); }
+.s-fit .step .sn { font-size: 0.6875rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: var(--ink-500); }
+.s-fit .step.you .sn { color: var(--green-deep); }
+.s-fit .step .st { font-size: 0.9375rem; font-weight: 600; color: var(--navy); }
+
+.s-fit .tcards { display: flex; flex-direction: column; gap: 12px; }
+.s-fit .tcard { display: flex; flex-direction: column; gap: 7px; border: 1px solid var(--ink-100); border-radius: var(--radius-xl); padding: 18px; background: var(--ink-50); }
+.s-fit .trow { display: flex; align-items: center; gap: 10px; }
+.s-fit .tic { display: grid; place-items: center; width: 30px; height: 30px; border-radius: var(--radius-md); background: rgba(0,224,117,.14); flex-shrink: 0; }
+.s-fit .foot { display: flex; justify-content: center; }
+.s-fit .btn { display: inline-flex; align-items: center; justify-content: center; border-radius: var(--radius-full); padding: 16px 32px; font-size: 1rem; font-weight: 600; text-decoration: none; background: var(--navy); color: var(--ink-50); transition: background 450ms cubic-bezier(.44,0,.56,1); }
+.s-fit .btn:hover { background: var(--navy-2); }
+@media (max-width: 900px) { .s-fit .section { padding: 56px 20px; } .s-fit .h2 { font-size: 2.25rem; } .s-fit .panel { padding: 22px; } }
+</style>
+
+<section class="section">
+  <div class="container">
+    <div class="head">
+      <span class="eyebrow">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3l8 3.5v5c0 5-3.4 8.6-8 9.5-4.6-.9-8-4.5-8-9.5v-5L12 3Z" stroke="#007b54" stroke-width="2" stroke-linejoin="round"/></svg>
+        <span class="seclabel">Fit &amp; trust</span>
+      </span>
+      <h2 class="h2">It runs where your markers already work</h2>
+      <p class="lead">No new place to log in, and nothing that needs an exception from your assessment board.</p>
+    </div>
+
+    <div class="fit">
+      <div class="panel">
+        <span class="lbl">Runs in what you already have</span>
+        <p class="body">Students hand in where they always did. Eduface picks the submission up from your LMS and writes the approved mark back into the gradebook.</p>
+        <div class="lmsrow">
+          <span class="lms"><b style="background:#f98012"></b>Moodle</span>
+          <span class="lms"><b style="background:#e72429"></b>Canvas</span>
+          <span class="lms"><b style="background:#2c4a57"></b>Blackboard</span>
+          <span class="lms"><b style="background:#f26430"></b>Brightspace</span>
+        </div>
+        <div class="flow">
+          <span class="step"><span class="sn">1</span><span class="st">Student submits</span></span>
+          <span class="step"><span class="sn">2</span><span class="st">Eduface drafts</span></span>
+          <span class="step you"><span class="sn">3 · you</span><span class="st">You approve</span></span>
+          <span class="step"><span class="sn">4</span><span class="st">Gradebook</span></span>
+        </div>
+      </div>
+
+      <div class="panel">
+        <span class="lbl">Cleared with your institution</span>
+        <div class="tcards">
+          <div class="tcard">
+            <span class="trow">
+              <span class="tic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M4 12.5 9.5 18 20 6.5" stroke="#007b54" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="h3">EU AI Act</span>
+            </span>
+            <p class="body">Eduface meets the requirements of the AI Act.</p>
+          </div>
+          <div class="tcard">
+            <span class="trow">
+              <span class="tic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M4 12.5 9.5 18 20 6.5" stroke="#007b54" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="h3">A human signs off</span>
+            </span>
+            <p class="body">The model proposes, the marker decides. Nothing reaches a student that a lecturer has not approved first.</p>
+          </div>
+          <div class="tcard">
+            <span class="trow">
+              <span class="tic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M4 12.5 9.5 18 20 6.5" stroke="#007b54" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="h3">Your criteria, not ours</span>
+            </span>
+            <p class="body">Every comment and every score is grounded in the rubric your programme already uses, with a breakdown per criterion you can show anyone who asks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="foot"><a class="btn" href="#book">Book a demo</a></div>
+  </div>
+</section>
+</div>
+
+<div class="s-faq" data-sec="faq">
+<style>
+/* ==========================================================================
+   SECTIE 7 · FAQ — uitgewerkt 15-09-2026.
+   Lijnen, geen kaartjes. Kop links, vragen rechts, zodat het silhouet
+   verschilt van de secties ervoor.
+   ========================================================================== */
+.s-faq .section { background: var(--white); display: flex; justify-content: center; padding: 96px 28px; }
+.s-faq .container { width: 100%; max-width: var(--container); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(340px,100%),1fr)); gap: 56px; align-items: start; }
+.s-faq .head { display: flex; flex-direction: column; gap: 16px; }
+.s-faq .eyebrow { display: inline-flex; align-items: center; gap: 9px; align-self: flex-start; }
+.s-faq .seclabel { font-size: 1rem; font-weight: 600; color: var(--green-deep); }
+.s-faq .h2 { font-family: var(--font-display); font-size: 3rem; line-height: 1.04; letter-spacing: -0.025em; font-weight: 700; color: var(--navy); text-wrap: balance; }
+.s-faq .lead { font-size: 1.0625rem; line-height: 1.55; color: var(--ink-500); }
+.s-faq .list { display: flex; flex-direction: column; }
+.s-faq details { border-top: 1px solid var(--ink-100); }
+.s-faq details:last-of-type { border-bottom: 1px solid var(--ink-100); }
+.s-faq summary { display: flex; align-items: center; gap: 16px; padding: 22px 0; cursor: pointer; list-style: none; font-size: 1.0625rem; font-weight: 600; color: var(--navy); }
+.s-faq summary::-webkit-details-marker { display: none; }
+.s-faq summary span { flex: 1; }
+.s-faq summary i { position: relative; width: 16px; height: 16px; flex-shrink: 0; }
+.s-faq summary i::before, .s-faq summary i::after { content: ""; position: absolute; top: 7px; left: 0; right: 0; height: 2px; border-radius: 1px; background: var(--ink-500); transition: transform 450ms cubic-bezier(.44,0,.56,1); }
+.s-faq summary i::after { transform: rotate(90deg); }
+.s-faq details[open] summary i::after { transform: rotate(0deg); }
+.s-faq .ans { padding: 0 40px 24px 0; font-size: 1rem; line-height: 1.65; color: var(--ink-500); }
+@media (max-width: 900px) { .s-faq .section { padding: 56px 20px; } .s-faq .container { gap: 28px; } .s-faq .h2 { font-size: 2.25rem; } }
+</style>
+
+<section class="section">
+  <div class="container">
+    <div class="head">
+      <span class="eyebrow">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="#007b54" stroke-width="2"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3 2.45V14" stroke="#007b54" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="17" r="1.1" fill="#007b54"/></svg>
+        <span class="seclabel">Questions</span>
+      </span>
+      <h2 class="h2">The things people ask before they book</h2>
+      <p class="lead">If yours is not here, ask it in the call. Thirty minutes, your rubric, one real assignment.</p>
+    </div>
+
+    <div class="list">
+      <details open>
+        <summary><span>What happens in the demo?</span><i aria-hidden="true"></i></summary>
+        <p class="ans">Thirty minutes. You bring a rubric and one assignment you have already marked, and we run it through the model live so you can see how close the proposal lands to your own judgement. No slides.</p>
+      </details>
+      <details>
+        <summary><span>Does the AI decide the grade?</span><i aria-hidden="true"></i></summary>
+        <p class="ans">No. The model proposes a comment and a score per criterion, and the marker approves, edits or discards each one. Nothing reaches a student before a lecturer has signed it off.</p>
+      </details>
+      <details>
+        <summary><span>How accurate is the proposal?</span><i aria-hidden="true"></i></summary>
+        <p class="ans">In the Bath Spa University pilot of June 2026, across 435 assignments, 6 subjects and 13 markers, the proposal sat on average about 6 points from the marker's own grade. For markers who had spent time instructing the model, that dropped to about 2 points. That is distance from your grade, not a percentage of cases where we agreed.</p>
+      </details>
+      <details>
+        <summary><span>Does it work with our LMS?</span><i aria-hidden="true"></i></summary>
+        <p class="ans">Yes. Eduface integrates with Moodle, Blackboard, Brightspace, Canvas and other systems. Students submit where they always did, and the approved mark is written back to the gradebook.</p>
+      </details>
+      <details>
+        <summary><span>Do we need a rubric?</span><i aria-hidden="true"></i></summary>
+        <p class="ans">The Paper Grader is grounded in the rubric and does full rubric scoring, so if you have one, we use it. If your programme works from learning outcomes or a set of requirements instead, bring those to the demo and we will look at what the model needs.</p>
+      </details>
+      <details>
+        <summary><span>Is this allowed under the AI Act?</span><i aria-hidden="true"></i></summary>
+        <p class="ans">Eduface meets the requirements of the AI Act. The human sign-off is not a setting you can switch off, it is how the product works.</p>
+      </details>
+      <details>
+        <summary><span>What does a pilot look like?</span><i aria-hidden="true"></i></summary>
+        <p class="ans">One programme, one assessment round, your own markers. The point is to see the difference on work you have already graded, so you are comparing against something real. We work out the scope in the call.</p>
+      </details>
+    </div>
+  </div>
+</section>
+</div>
+
+<div class="s-book" data-sec="book">
+<style>
+/* ==========================================================================
+   SECTIE 8 · BOOK — uitgewerkt 15-09-2026.
+   Het enige conversiepunt van de pagina. Drie knopvragen, dan de kalender.
+   Regels uit onderzoek.md: knoppen geen dropdowns, een vraag per stap,
+   automatisch doorgaan, e-mail pas in de kalender, geen dood spoor.
+   Donkere band, want dit is het zwaarste blok en het laatste.
+   ========================================================================== */
+.s-book .section { background: var(--navy); display: flex; justify-content: center; padding: 96px 28px; }
+.s-book .container { width: 100%; max-width: var(--container); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(380px,100%),1fr)); gap: 64px; align-items: start; }
+.s-book .h2 { font-family: var(--font-display); font-size: 3.25rem; line-height: 1.02; letter-spacing: -0.025em; font-weight: 700; color: var(--white); text-wrap: balance; }
+.s-book .accent { color: var(--green); }
+.s-book .lead { font-size: 1.1875rem; line-height: 1.5; color: rgba(255,255,255,.66); text-wrap: pretty; }
+.s-book .lbl { font-size: 0.6875rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: rgba(255,255,255,.42); }
+
+.s-book .left { display: flex; flex-direction: column; gap: 32px; }
+.s-book .head { display: flex; flex-direction: column; gap: 18px; }
+.s-book .cues { display: flex; flex-direction: column; gap: 13px; padding-top: 4px; }
+.s-book .cue { display: flex; align-items: flex-start; gap: 11px; font-size: 0.9375rem; line-height: 1.5; color: rgba(255,255,255,.78); }
+.s-book .cue b { display: grid; place-items: center; width: 21px; height: 21px; border-radius: 50%; background: rgba(0,224,117,.18); flex-shrink: 0; }
+.s-book .proofline { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 20px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.14); }
+.s-book .pf { display: flex; align-items: baseline; gap: 7px; }
+.s-book .pf-n { font-family: var(--font-display); font-weight: 700; font-size: 1.375rem; line-height: 1; letter-spacing: -0.02em; color: var(--white); }
+.s-book .pf-t { font-size: 0.8125rem; color: rgba(255,255,255,.6); }
+
+/* ---- de vragen ---- */
+.s-book .widget { display: flex; flex-direction: column; gap: 20px; background: var(--ink-900); border: 1px solid rgba(255,255,255,.12); border-radius: var(--radius-2xl); padding: 28px; }
+.s-book .wbar { display: flex; align-items: center; gap: 8px; }
+.s-book .dot { flex: 1; height: 3px; border-radius: 2px; background: rgba(255,255,255,.14); transition: background 450ms cubic-bezier(.44,0,.56,1); }
+.s-book .dot.on { background: var(--green); }
+.s-book .q { font-family: var(--font-display); font-size: 1.375rem; line-height: 1.15; letter-spacing: -0.02em; font-weight: 700; color: var(--white); }
+.s-book .opts { display: flex; flex-direction: column; gap: 9px; }
+.s-book .opt {
+  display: flex; align-items: center; gap: 12px; width: 100%; text-align: left;
+  background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.12);
+  border-radius: var(--radius-xl); padding: 15px 18px;
+  font-family: var(--font-sans); font-size: 0.9375rem; font-weight: 500; color: var(--white);
+  cursor: pointer;
+  transition: background 450ms cubic-bezier(.44,0,.56,1), border-color 450ms cubic-bezier(.44,0,.56,1);
+}
+.s-book .opt:hover { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.28); }
+.s-book .opt b { width: 9px; height: 9px; border-radius: 50%; border: 1px solid rgba(255,255,255,.34); flex-shrink: 0; }
+.s-book .back { align-self: flex-start; background: none; border: 0; padding: 0; font-family: var(--font-sans); font-size: 0.8125rem; color: rgba(255,255,255,.5); cursor: pointer; }
+.s-book .back:hover { color: var(--white); }
+.s-book .pane[hidden] { display: none; }
+
+/* ---- de kalender ---- */
+.s-book .cal { display: flex; flex-direction: column; gap: 16px; }
+.s-book .calgrid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 5px; }
+.s-book .calgrid s { display: grid; place-items: center; aspect-ratio: 1; border-radius: var(--radius-md); font-size: 0.8125rem; text-decoration: none; color: rgba(255,255,255,.28); }
+.s-book .calgrid s.hd { color: rgba(255,255,255,.42); font-size: 0.6875rem; font-weight: 700; text-transform: uppercase; }
+.s-book .calgrid s.free { color: var(--white); background: rgba(255,255,255,.07); }
+.s-book .calgrid s.sel { color: var(--navy); background: var(--green); font-weight: 700; }
+.s-book .slots { display: flex; flex-wrap: wrap; gap: 8px; }
+.s-book .slot { border-radius: var(--radius-full); border: 1px solid rgba(255,255,255,.16); padding: 9px 15px; font-size: 0.875rem; color: rgba(255,255,255,.78); }
+.s-book .slot.sel { background: var(--green); border-color: var(--green); color: var(--navy); font-weight: 600; }
+.s-book .cta { display: inline-flex; align-items: center; justify-content: center; border-radius: var(--radius-full); padding: 17px 32px; font-size: 1rem; font-weight: 600; text-decoration: none; background: var(--green); color: var(--navy); transition: background 450ms cubic-bezier(.44,0,.56,1); }
+.s-book .cta:hover { background: #00b45e; color: var(--white); }
+.s-book .note { font-size: 0.8125rem; line-height: 1.5; color: rgba(255,255,255,.5); }
+@media (max-width: 900px) { .s-book .section { padding: 56px 20px; } .s-book .container { gap: 32px; } .s-book .h2 { font-size: 2.25rem; } .s-book .widget { padding: 20px; } }
+</style>
+
+<section class="section" id="book">
+  <div class="container">
+
+    <div class="left">
+      <div class="head">
+        <h2 class="h2">Bring one assignment <span class="accent">you have already marked</span></h2>
+        <p class="lead">Thirty minutes. Your rubric, your work, the model running live. You will see the distance between its proposal and your own grade before you decide anything.</p>
+      </div>
+      <div class="cues">
+        <span class="cue"><b><svg width="11" height="11" viewBox="0 0 24 24" fill="none"><path d="M4 12.5 9.5 18 20 6.5" stroke="#00e075" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></b>No slides, we work on your own assignment</span>
+        <span class="cue"><b><svg width="11" height="11" viewBox="0 0 24 24" fill="none"><path d="M4 12.5 9.5 18 20 6.5" stroke="#00e075" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></b>Nothing is stored from the call unless you ask</span>
+        <span class="cue"><b><svg width="11" height="11" viewBox="0 0 24 24" fill="none"><path d="M4 12.5 9.5 18 20 6.5" stroke="#00e075" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></b>You speak to someone who has run a pilot, not a rep</span>
+      </div>
+      <div class="proofline">
+        <span class="pf"><span class="pf-n">435</span><span class="pf-t">assignments in the pilot</span></span>
+        <span class="pf"><span class="pf-n">13</span><span class="pf-t">markers</span></span>
+        <span class="pf"><span class="pf-n">6</span><span class="pf-t">subjects</span></span>
+      </div>
+    </div>
+
+    <div class="widget" id="survey">
+      <div class="wbar" aria-hidden="true">
+        <span class="dot on" data-dot="0"></span><span class="dot" data-dot="1"></span>
+        <span class="dot" data-dot="2"></span><span class="dot" data-dot="3"></span>
+      </div>
+
+      <div class="pane" data-step="0">
+        <span class="lbl">Question 1 of 3</span>
+        <p class="q">What best describes you?</p>
+        <div class="opts">
+          <button class="opt" data-next="1" data-v="lecturer"><b></b>Lecturer or marker</button>
+          <button class="opt" data-next="1" data-v="head"><b></b>Head of assessment</button>
+          <button class="opt" data-next="1" data-v="dean"><b></b>Dean or director</button>
+          <button class="opt" data-next="1" data-v="lt"><b></b>Learning technologist</button>
+          <button class="opt" data-next="soft" data-v="student"><b></b>Student</button>
+        </div>
+      </div>
+
+      <div class="pane" data-step="1" hidden>
+        <span class="lbl">Question 2 of 3</span>
+        <p class="q">Where do you work?</p>
+        <div class="opts">
+          <button class="opt" data-next="2" data-v="uk-uni"><b></b>UK university</button>
+          <button class="opt" data-next="2" data-v="uk-college"><b></b>UK college</button>
+          <button class="opt" data-next="2" data-v="nl"><b></b>Dutch hogeschool or university</button>
+          <button class="opt" data-next="2" data-v="other"><b></b>Another institution</button>
+          <button class="opt" data-next="soft" data-v="none"><b></b>Not at an institution</button>
+        </div>
+        <button class="back" data-back="0">Back</button>
+      </div>
+
+      <div class="pane" data-step="2" hidden>
+        <span class="lbl">Question 3 of 3</span>
+        <p class="q">How many assignments a year in your area?</p>
+        <div class="opts">
+          <button class="opt" data-next="3" data-v="lt500"><b></b>Under 500</button>
+          <button class="opt" data-next="3" data-v="500-2k"><b></b>500 to 2,000</button>
+          <button class="opt" data-next="3" data-v="2k-10k"><b></b>2,000 to 10,000</button>
+          <button class="opt" data-next="3" data-v="10k"><b></b>More than 10,000</button>
+          <button class="opt" data-next="3" data-v="unsure"><b></b>Not sure</button>
+        </div>
+        <button class="back" data-back="1">Back</button>
+      </div>
+
+      <div class="pane" data-step="3" hidden>
+        <div class="cal">
+          <span class="lbl">Pick a time</span>
+          <div class="calgrid" aria-hidden="true">
+            <s class="hd">M</s><s class="hd">T</s><s class="hd">W</s><s class="hd">T</s><s class="hd">F</s><s class="hd">S</s><s class="hd">S</s>
+            <s>1</s><s class="free">2</s><s class="free">3</s><s class="free">4</s><s class="free">5</s><s>6</s><s>7</s>
+            <s class="free">8</s><s class="sel">9</s><s class="free">10</s><s class="free">11</s><s class="free">12</s><s>13</s><s>14</s>
+            <s class="free">15</s><s class="free">16</s><s class="free">17</s><s class="free">18</s><s class="free">19</s><s>20</s><s>21</s>
+          </div>
+          <div class="slots">
+            <span class="slot">09:30</span><span class="slot sel">11:00</span><span class="slot">14:00</span><span class="slot">15:30</span><span class="slot">16:30</span>
+          </div>
+          <a class="cta" id="bookLink" href="https://calendly.com/eduface/30min">Confirm this time</a>
+          <p class="note">Your answers travel with the booking, so the call starts where you are, not at the beginning.</p>
+        </div>
+        <button class="back" data-back="2">Back</button>
+      </div>
+
+      <div class="pane" data-step="soft" hidden>
+        <p class="q">Let us send it instead</p>
+        <p class="note">A demo call is built around a programme's own marking, so it will not tell you much on your own. We will send a short recording and the pilot write-up, and you can forward it to whoever runs assessment.</p>
+        <a class="cta" href="mailto:info@eduface.me?subject=Send%20me%20the%20Eduface%20recording">Send it to me</a>
+        <button class="back" data-back="0">Back to the questions</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+(function () {
+  var w = document.getElementById('survey');
+  if (!w) return;
+  var panes = w.querySelectorAll('.pane');
+  var dots = w.querySelectorAll('.dot');
+  var answers = {};
+  function show(step) {
+    panes.forEach(function (p) { p.hidden = p.dataset.step !== String(step); });
+    var n = parseInt(step, 10);
+    dots.forEach(function (d, i) { d.classList.toggle('on', !isNaN(n) && i <= n); });
+  }
+  w.addEventListener('click', function (e) {
+    var opt = e.target.closest('.opt');
+    if (opt) {
+      answers['q' + (opt.closest('.pane').dataset.step)] = opt.dataset.v;
+      var link = document.getElementById('bookLink');
+      if (link) {
+        var utm = Object.keys(answers).map(function (k) { return answers[k]; }).join('-');
+        link.href = 'https://calendly.com/eduface/30min?utm_content=' + encodeURIComponent(utm);
+      }
+      show(opt.dataset.next);
+      return;
+    }
+    var back = e.target.closest('.back');
+    if (back) show(back.dataset.back);
+  });
+})();
+</script>
+</div>
+
+
+</body>
+</html>

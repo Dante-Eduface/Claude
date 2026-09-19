@@ -1,0 +1,124 @@
+{
+  "code": "nl",
+  "naam": "Nederland, particuliere opleiders (NRTO/CRKBO, private hogescholen, post-hbo)",
+  "valuta": "EUR",
+  "taal": "nl-NL",
+  "kanaal": [
+    "linkedin",
+    "email"
+  ],
+  "staffel": [
+    [
+      500,
+      10000,
+      "A"
+    ],
+    [
+      1500,
+      15000,
+      "B"
+    ],
+    [
+      3000,
+      21500,
+      "C"
+    ],
+    [
+      6000,
+      33500,
+      "D"
+    ],
+    [
+      "inf",
+      51500,
+      "E"
+    ]
+  ],
+  "drempel_jaarwaarde": 10000,
+  "max_fee_aandeel": 0.1,
+  "titel_rang": [
+    [
+      "college van bestuur|\\bcvb\\b|bestuursvoorzitter|\\bbestuurder\\b",
+      100
+    ],
+    [
+      "\\b(ceo|algemeen\\s*directeur|directeur[- ]bestuurder|managing\\s*director)\\b",
+      96
+    ],
+    [
+      "\\b(eigenaar|oprichter|founder|mede-oprichter|co-?founder)\\b",
+      94
+    ],
+    [
+      "\\bdirect(eur|ie)\\s*(van\\s*)?(onderwijs|opleidingen|academy|kwaliteit|studie)",
+      92
+    ],
+    [
+      "\\b(directie|directielid)\\b",
+      88
+    ],
+    [
+      "\\b(commercieel|financieel|marketing|hr|operationeel)\\s*directeur\\b",
+      82
+    ],
+    [
+      "\\bdirecteur\\b",
+      86
+    ],
+    [
+      "\\bhoofd\\s*(onderwijs|opleidingen|academy|kwaliteit)",
+      80
+    ],
+    [
+      "\\bhoofd\\b",
+      75
+    ],
+    [
+      "\\b(lector|decaan|dean)\\b",
+      72
+    ],
+    [
+      "manager\\s*(onderwijs|opleidingen|academy|kwaliteit)",
+      68
+    ],
+    [
+      "\\b(onderwijsmanager|opleidingsmanager|programmamanager)\\b",
+      66
+    ],
+    [
+      "\\bmanager\\b",
+      60
+    ],
+    [
+      "\\b(teamleider|team\\s*lead)\\b",
+      55
+    ],
+    [
+      "\\b(adviseur|advisor|specialist|expert|onderwijskundige)\\b",
+      45
+    ],
+    [
+      "\\b(cordinator|coordinator|cordinatie)\\b",
+      40
+    ],
+    [
+      "\\b(docent|trainer|lecturer)\\b",
+      20
+    ]
+  ],
+  "klantnamen": [
+    "Radboud Universiteit",
+    "Universiteit Leiden",
+    "Tilburg University",
+    "De Haagse Hogeschool",
+    "Hogeschool Rotterdam",
+    "TIO",
+    "ICM"
+  ],
+  "lemlist_campagne_id": "cam_qpkMQ2axpN7wt7HZt",
+  "_bron": "overgenomen uit de constanten van pipeline.py op 2026-09-10; prijsmodel GTM/Pricing/prijsmodel-nl-opleiding-26-27.md; klantnamen per memory eduface-werking-in-outreach (ICM mag sinds 21-08-2026)",
+  "poort0_own": "wordt beoordeeld|worden beoordeeld|beoordeeld door (de |onze |een )?(docent|trainer|opleider|assessor|examinator|examencommissie|begeleider|beoordelaar)|(docent|trainer|assessor|examinator|examencommissie|beoordelaar)\\w*[^.]{0,80}beoordeel|onze examencommissie|eigen examencommissie|scriptie|afstudeeropdracht|eindwerkstuk|eindopdracht|eindgesprek|proeve van bekwaamheid|portfolio wordt|beoordelingscriteria|nakijk|feedback op je (opdracht|werk|verslag|essay)|leerverslag",
+  "poort0_extern": "\\bCBR\\b|\\bCCV\\b|\\bTCVT\\b|Oranje Kruis|\\bIBKI\\b|CerTech|\\bSVPB\\b|\\bExTH\\b|\\bSEU\\b|Prometric|Pearson VUE|extern examenbureau|externe examinator|externe examinering|onafhankelijk exameninstituut|onafhankelijk examenbureau|\\bLSSA\\b|Associatie voor Examinering|Scrum\\.org|PeopleCert|APMG|\\bEXIN\\b|Nedcert|\\bSVH\\b|SVM ?NIVO|\\bTCI\\b|Exuive|staatsexamen",
+  "poort0_duur": "\\b(\\d{1,2})\\s*(maanden|jaar)\\b|studiebelasting|\\b\\d{1,3}\\s*(EC|ECTS|SBU)\\b|lesdagen|opleidingsdagen|bijeenkomsten",
+  "poort0_url_kw": "opleiding|leergang|post-hbo|post-mbo|studiegids|examen|toets|reglement|diploma|certific|beoordel|faq|veelgestelde"
+}
