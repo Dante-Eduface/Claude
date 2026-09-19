@@ -37,7 +37,7 @@ de generieke tekst hieronder, wint deze laag.
    machine. **Lane B (echte gegenereerde video) kan hier niet**: geen ffmpeg, geen Higgsfield,
    geen Kie-key. Bied Lane B dus niet aan zonder te zeggen dat er eerst `brew install ffmpeg`
    plus een engine-account nodig is.
-2. Lees het design system: `Design/Design system/core/` plus `web/` (marketingsite,
+2. Lees het design system: `Design/System/core/` plus `web/` (marketingsite,
    landingspagina). Nooit de hele map. Kleuren, type, spacing en radius komen daarvandaan,
    niet uit je eigen hoofd. Zie ook de merkregels: primaire knop is navy, groen alleen voor
    de hero-CTA of een bevestigde status.
@@ -46,7 +46,7 @@ de generieke tekst hieronder, wint deze laag.
 
 ### De drie poorten winnen van de stappen hieronder
 De skill kent STEP 0/1/2 en gaat daarna bouwen. In deze repo geldt
-`Design/Design system/core/proces.md`: **nooit in een klap een af resultaat**.
+`Design/System/core/proces.md`: **nooit in een klap een af resultaat**.
 Mapping:
 - **Poort 1 (richting)** = STEP 0 interview + STEP 1 concepten. Twee opties, jouw aanbeveling
   erbij. Dante kiest. De adversariële sparring uit STEP 1 blijft verplicht (verse subagent).

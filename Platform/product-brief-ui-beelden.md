@@ -82,7 +82,7 @@ In `Design/Website/app-homepage-redesign/` ligt een klikbaar prototype van een n
 
 ## 4. Merk en design system
 
-Bron: `Design/Design system/`. Laad `core/` plus het oppervlak dat je maakt (`web/`, `slides/` of `internal/`), nooit de hele map.
+Bron: `Design/System/`. Laad `core/` plus het oppervlak dat je maakt (`web/`, `slides/` of `internal/`), nooit de hele map.
 
 **Kleur**
 - Navy `#002333`, dat is de zwart-vervanger en de primaire knop.
@@ -119,8 +119,8 @@ Let op de spanning: de echte app gebruikt nu groen voor `Create Course`, `Sign i
 ## 6. Waar je verder kijkt
 
 - `Platform/product.md` — de bron voor elke claim
-- `Design/Design system/core/` — tokens, regels, compositie, en `voorbeelden.html` met fout naast goed
-- `Design/Design system/internal/` — als je app- of dashboard-UI tekent
+- `Design/System/core/` — tokens, regels, compositie, en `voorbeelden.html` met fout naast goed
+- `Design/System/internal/` — als je app- of dashboard-UI tekent
 - `Design/Merk/` — logo's, fonts, productscreenshots
 - `Platform/usability-test/afbeeldingen/` — echte schermen van de huidige app
 - `Design/Website/app-homepage-redesign/` — het herontwerp plus de bouwprompts

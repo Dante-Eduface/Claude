@@ -6,7 +6,7 @@ Geschreven 15-09-2026 voor de sessie die de pijn-landingspagina bouwt. Alles wat
 
 ## 1. Waar het proces staat
 
-De drie poorten uit `Design/Design system/core/proces.md` zijn leidend.
+De drie poorten uit `Design/System/core/proces.md` zijn leidend.
 
 | Poort | Status |
 |---|---|
@@ -133,4 +133,4 @@ Referentie die Dante mooi vindt: https://habitline-wbs.framer.website/
 - 94% staat nu zowel als kaart in de hero als hoofdgetal in het bewijsblok. Eén van de twee moet iets anders dragen.
 - Hero en bewijsblok formuleren hetzelfde verschillend: "our proposed grade against the marker's" tegenover "before/after the lecturer instructs it". Kies één.
 - De kwalificatievragen vóór de agenda zijn geparkeerd, niet geschrapt.
-- Alles gaat uiteindelijk naar Framer. Bouw binnen dat model: stacks en gap, nooit margins op children, geen vaste hoogtes, minmax-grids, framer-motion als enige animatielib. Zie `Design/Design system/web/framer.md`.
+- Alles gaat uiteindelijk naar Framer. Bouw binnen dat model: stacks en gap, nooit margins op children, geen vaste hoogtes, minmax-grids, framer-motion als enige animatielib. Zie `Design/System/web/framer.md`.

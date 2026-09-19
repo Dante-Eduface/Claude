@@ -10,7 +10,7 @@ Maakt visueel marketingmateriaal voor Eduface dat altijd on-brand is. Output: **
 ## Voor je begint: laad de basis
 Lees altijd eerst, in deze volgorde:
 1. `Design/Merk/brand-guidelines.md` — kleuren, fonts, logo-regels, toon.
-2. `Design/Design system/tokens.css` — exacte design-tokens (kleur, type-schaal, radius, schaduw). **Verzin nooit losse waarden, lees ze hier.**
+2. `Design/System/tokens.css` — exacte design-tokens (kleur, type-schaal, radius, schaduw). **Verzin nooit losse waarden, lees ze hier.**
 3. `reference.md` (in deze skill-folder) — slide-designpatronen, render-methodes, en gotchas.
 
 Brand-assets (logo's, product-shots, fonts) staan centraal in `Design/Merk/`. Gebruik altijd die, niet kopieën uit een project.

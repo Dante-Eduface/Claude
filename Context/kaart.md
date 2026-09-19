@@ -33,7 +33,7 @@ ze daar moet vinden. `.claude/` en `.vscode/` zijn configuratie.
 
 - **`Platform/product.md`** is de bron van waarheid voor productclaims. Negen bestanden lezen
   hieruit. Klopt een claim ergens niet, corrigeer hier, niet in de kopie.
-- **`Design/Design system/`** is verplicht bij alles wat een mens bekijkt. Start bij
+- **`Design/System/`** is verplicht bij alles wat een mens bekijkt. Start bij
   `core/proces.md`, laad daarna alleen `core/` plus het oppervlak dat je bouwt.
 - **`Design/Merk/`** is de enige bron voor logo's, fonts en schoollogo's. Kopieer ze niet
   een project in; verwijs ernaar. Dat ging eerder mis: het Eduface-logo stond vijf keer in de repo.
@@ -50,7 +50,7 @@ Paid-ads-materiaal blijft in `GTM/Campaigns/paid-ads/` met zijn eigen structuur.
 ## Naamregels
 
 Mappen die jij en ik lezen mogen spaties en hoofdletters hebben, als de naam maar kort en
-duidelijk is: `GTM/Event manager/`, `Design/Design system/`.
+duidelijk is: `GTM/Event manager/`, `Design/System/`.
 
 **Eén uitzondering, en die is hard.** Alles onder `.claude/` blijft kleine letters met
 streepjes, want de mapnaam van een skill *is* het commando: `/task-planning` werkt,

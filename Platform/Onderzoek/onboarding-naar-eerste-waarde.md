@@ -135,4 +135,4 @@ Het product laten zien op echt werk, niet illustreren. De patronen hierboven zij
 
 - `Platform/Onderzoek/ux-ui-design-expertwerkwijze.md` — wat een ontwerp goed maakt, en waar de vakliteratuur elkaar tegenspreekt.
 - `Platform/Onderzoek/designkeuzes-bij-spanning.md` — kiezen als twee opties allebei verdedigbaar zijn, wat gewoontes doorbreken kost, en welke toets welke vraag beantwoordt.
-- `Design/Design system/core/informatie.md` — de regels die uit dit werk zijn gedestilleerd, in toepasbare vorm.
+- `Design/System/core/informatie.md` — de regels die uit dit werk zijn gedestilleerd, in toepasbare vorm.

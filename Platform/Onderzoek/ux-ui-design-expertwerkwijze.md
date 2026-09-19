@@ -36,7 +36,7 @@ Onderzoek 29-08-2026. Zeven parallelle onderzoekslijnen: visuele principes, werk
 
 ## De concrete regels die overeind bleven
 
-Verwerkt in `Design/Design system/core/regels.md`. De belangrijkste, met bron:
+Verwerkt in `Design/System/core/regels.md`. De belangrijkste, met bron:
 
 - **Contrast:** 4.5:1 normale tekst, 3:1 grote tekst. [WCAG 2.2, W3C, 2023](https://www.w3.org/TR/WCAG22/). Enige regel hier met normatieve status.
 - **Regellengte:** 45-90 tekens. [Butterick, Practical Typography](https://practicaltypography.com/line-length.html). Refactoring UI zegt 60-80; overlappende banden, beide vakmeningen zonder experimenteel bewijs.

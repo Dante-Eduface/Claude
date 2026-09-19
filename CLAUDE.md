@@ -67,9 +67,9 @@ Losse opmerkingen van Dante landen in `Decisions/feedback.md`, met datum en onde
 ## Design (verplicht bij alles wat er visueel uitziet)
 Bouw je iets dat een mens bekijkt (pagina, deck, tool-UI, creative), lees dan **eerst** het design system. Niet zelf kleuren, maten of spacing verzinnen.
 
-**Werk altijd via de drie poorten uit `Design/Design system/core/proces.md`.** Nooit in één klap een volledig resultaat opleveren: eerst richting met twee opties, dan één onderdeel als proef, dan pas de uitrol. Dante kan poorten overslaan door dat te zeggen ("gewoon bouwen"), maar de standaard is aan.
+**Werk altijd via de drie poorten uit `Design/System/core/proces.md`.** Nooit in één klap een volledig resultaat opleveren: eerst richting met twee opties, dan één onderdeel als proef, dan pas de uitrol. Dante kan poorten overslaan door dat te zeggen ("gewoon bouwen"), maar de standaard is aan.
 
-- Proces: `core/proces.md` (verplicht) · Router: `Design/Design system/README.md`
+- Proces: `core/proces.md` (verplicht) · Router: `Design/System/README.md`
 - **Laad alleen `core/` plus het oppervlak dat je bouwt.** Nooit de hele map.
   - marketingsite, landingspagina, blog → `core/` + `web/`
   - deck, pitch, webinar-slides → `core/` + `slides/`

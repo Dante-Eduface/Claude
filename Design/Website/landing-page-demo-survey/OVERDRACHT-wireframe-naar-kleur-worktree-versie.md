@@ -4,7 +4,7 @@ Landingspagina Eduface, demopagina voor Google Ads-verkeer. Stand 15-09-2026.
 
 ## 1. Waar het proces staat
 
-De drie poorten uit `Design/Design system/core/proces.md` zijn leidend.
+De drie poorten uit `Design/System/core/proces.md` zijn leidend.
 
 | Poort | Status |
 |---|---|
@@ -124,4 +124,4 @@ Referentie die Dante mooi vindt: https://habitline-wbs.framer.website/
 - De kwalificatievragen vóór de agenda zijn geparkeerd, niet geschrapt.
 - Nog in te kleuren: how it works, producten, fit & trust, FAQ, boekblok.
 
-Alles gaat uiteindelijk naar Framer. Bouw binnen dat model: stacks en gap, nooit margins op children, geen vaste hoogtes, minmax-grids, framer-motion als enige animatielib. Zie `Design/Design system/web/framer.md`.
+Alles gaat uiteindelijk naar Framer. Bouw binnen dat model: stacks en gap, nooit margins op children, geen vaste hoogtes, minmax-grids, framer-motion als enige animatielib. Zie `Design/System/web/framer.md`.

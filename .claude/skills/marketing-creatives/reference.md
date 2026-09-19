@@ -31,7 +31,7 @@ Voorbeelden in de repo: `GTM/Campaigns/paid-ads/creatives/maps-cover-banner.html
 
 Aanpak:
 1. Schrijf een standalone HTML-bestand met inline CSS, op exacte slide-/canvas-afmeting (16:9 slide = 1280x720 of 1920x1080).
-2. Gebruik de design-tokens uit `Design/Design system/tokens.css` (kleuren, type-schaal, radius, schaduw). Laad League Spartan + Inter via de Google Fonts `@import` die bovenin tokens.css staat.
+2. Gebruik de design-tokens uit `Design/System/tokens.css` (kleuren, type-schaal, radius, schaduw). Laad League Spartan + Inter via de Google Fonts `@import` die bovenin tokens.css staat.
 3. Render naar PNG. Opties: een headless browser (Playwright/Chromium screenshot van de `.html`), of een bestaand screenshot-pad. Wacht tot fonts geladen zijn voor je schiet.
 
 ## Eduface slide-stijl (de stijl die Dante wil)

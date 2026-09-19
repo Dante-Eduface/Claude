@@ -71,7 +71,7 @@ Een cursus heeft geen deadline, een opdracht wel.
 
 ## Opmaak, en dit gaat bijna altijd mis
 
-Uit `Design/Design system/core/compositie.md` en `core/regels.md`:
+Uit `Design/System/core/compositie.md` en `core/regels.md`:
 
 - **Getalkolommen rechts uitlijnen, inclusief de kolomkop.** Dit is letterlijk de regel waarvan in ons systeem staat dat hij bijna altijd fout gaat.
 - **Geen nepprecisie.** `9 days`, niet `9.2 days`. Onder een dag wordt `today`.
