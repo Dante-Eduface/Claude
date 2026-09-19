@@ -1,0 +1,158 @@
+{
+  "code": "uk",
+  "naam": "Verenigd Koninkrijk, independent en private HE en professional training providers",
+  "valuta": "GBP",
+  "taal": "en-GB",
+  "kanaal": [
+    "linkedin",
+    "email"
+  ],
+  "staffel": [
+    [
+      500,
+      8500,
+      "A"
+    ],
+    [
+      1500,
+      12750,
+      "B"
+    ],
+    [
+      3000,
+      18250,
+      "C"
+    ],
+    [
+      6000,
+      28500,
+      "D"
+    ],
+    [
+      "inf",
+      43750,
+      "E"
+    ]
+  ],
+  "drempel_jaarwaarde": 8500,
+  "max_fee_aandeel": 0.1,
+  "titel_rang": [
+    [
+      "\\b(deputy|pro)[\\s-]?vice[\\s-]?chancellor\\b|\\bpro-?vc\\b|\\bdvc\\b|\\bpvc\\b",
+      96
+    ],
+    [
+      "\\bvice[\\s-]?chancellor\\b",
+      100
+    ],
+    [
+      "\\b(chief executive officer|chief executive)\\b|\\bceo\\b",
+      98
+    ],
+    [
+      "\\bprincipal\\b(?!\\s+(lecturer|investigator))",
+      97
+    ],
+    [
+      "\\b(provost|rector)\\b",
+      97
+    ],
+    [
+      "\\b(managing director|group managing director|chief academic officer)\\b|\\bcao\\b",
+      95
+    ],
+    [
+      "\\b(founder|co-?founder|owner|proprietor)\\b",
+      94
+    ],
+    [
+      "\\b(college director|centre director|campus director|centre manager)\\b",
+      93
+    ],
+    [
+      "\\bdirector of (education|academic affairs|academic quality|academic strategy|academics|learning|teaching|learning and teaching|studies|curriculum|quality|assessment|student experience)\\b|\\b(academic director|director of academic)\\b",
+      92
+    ],
+    [
+      "\\bexecutive dean\\b",
+      90
+    ],
+    [
+      "\\b(associate|assistant|deputy) dean\\b",
+      78
+    ],
+    [
+      "\\bdean\\b",
+      88
+    ],
+    [
+      "\\b(academic registrar|university registrar)\\b|\\bregistrar\\b",
+      87
+    ],
+    [
+      "\\b(head of quality|head of academic quality|head of academic standards|head of quality assurance|director of quality assurance|quality assurance manager)\\b",
+      86
+    ],
+    [
+      "\\bchief (operating|financial|commercial|marketing|revenue|technology|people|information) officer\\b|\\b(coo|cfo|cmo|cro|cto)\\b",
+      82
+    ],
+    [
+      "\\b(commercial|finance|financial|marketing|hr|people|operations|sales|admissions|it) director\\b|\\bdirector of (operations|finance|marketing|sales|admissions|hr|people)\\b",
+      80
+    ],
+    [
+      "\\bdirector\\b",
+      85
+    ],
+    [
+      "\\bhead of (school|faculty|department|programmes?|curriculum|learning and teaching)\\b",
+      75
+    ],
+    [
+      "\\bhead of\\b",
+      70
+    ],
+    [
+      "\\b(programme (director|leader|manager)|course (director|leader|manager)|subject lead|module leader)\\b",
+      66
+    ],
+    [
+      "\\b(learning technologist|academic developer|educational developer|learning designer|instructional designer|digital learning)\\b",
+      45
+    ],
+    [
+      "\\b(quality officer|quality co-?ordinator|academic co-?ordinator|academic administrator|co-?ordinator|coordinator)\\b",
+      40
+    ],
+    [
+      "\\b(principal lecturer|senior lecturer)\\b",
+      35
+    ],
+    [
+      "\\b(lecturer|tutor|teacher|trainer|instructor|assessor|marker)\\b",
+      20
+    ]
+  ],
+  "klantnamen": [
+    "Bath Spa University"
+  ],
+  "lemlist_campagne_id": "",
+  "_voorlopig": "prijsmodel is een omrekening van NL, niet bevestigd door Dante (10-09-2026)",
+  "_bron": "staffel = NL-staffel maal 0,85, afgerond (bron references/pricing/prijsmodel-nl-opleiding-26-27.md); drempel_jaarwaarde 8500 GBP; titel_rang samengesteld 10-09-2026 uit UK-functietitels bij private providers en pathway colleges, onderwijstak boven bedrijfsvoering, registrar en quality hoger dan in NL omdat zij in het VK eigenaar zijn van de assessment regulations; klantnamen leeg tot Dante beslist",
+  "_uitleg": {
+    "valuta": "een van EUR/GBP/USD",
+    "taal": "taalcode van de berichten, bijv. en-GB of en-US",
+    "kanaal": "lijst uit linkedin/email",
+    "staffel": "[[bovengrens studentplaatsen per opleiding, jaarfee, letter], ...], laatste grens 'inf'",
+    "drempel_jaarwaarde": "vloer voor poort 0d in de valuta van de markt",
+    "max_fee_aandeel": "onze fee mag hoogstens dit deel van de programma-omzet zijn, bijv. 0.10",
+    "titel_rang": "[[regex op de functietitel, score 0-100], ...], eerste treffer wint",
+    "klantnamen": "klanten die als bewijs genoemd mogen worden, lege lijst mag",
+    "lemlist_campagne_id": "cam_... van de campagne voor deze markt, leeg tot die bestaat"
+  },
+  "poort0_own": "marked by (our |the |your )?(tutors?|lecturers?|academic staff|markers?|module leader)|(first|second|double|internal(ly)?) (marking|marked|moderat(ion|ed))|assessed by (our|the) (tutors?|lecturers?|academic staff|assessors?)|our (tutors?|lecturers?|markers?|academic staff)[^.]{0,60}(mark|assess|grade|feedback)|board of examiners|assessment board|examination board|exam board|second marker|internal verification|internally verified|standardisation meeting|marking (criteria|standards|team|documents)|assessment (criteria|brief|strategy)|dissertation|coursework|written assignment|reflective (essay|journal|report)|portfolio is assessed|feedback on (your|assessed) (assignment|coursework|work|essay|assessments)|turnaround|within \\d{1,2} working days",
+  "poort0_extern": "awarded by (Pearson|BTEC|NCFE|City ?& ?Guilds|OCR|AQA|Highfield|CMI|ILM)|\\bPearson VUE\\b|\\bOfqual\\b|awarding (organisation|body)|externally (assessed|marked|set|examined)|external examination|examined by (ACCA|CIMA|ICAEW|CII|CIPD|CIM|CFA)|exam(ination)? centre for|approved (test|exam(ination)?) centre|prepares? you for the (ACCA|CIMA|ICAEW|CII|CIPD|CFA|CIM|NEBOSH|IOSH)|sit(ting)? your (ACCA|CIMA|ICAEW|CII|CFA) exams?|end-?point assessment|\\bEPAO\\b|register of regulated qualifications",
+  "poort0_duur": "\\b(\\d{1,2})\\s*(years?|months?|terms?|semesters?|weeks?)\\b|\\b(\\d{2,3})\\s*credits?\\b|\\b(RQF|SCQF|FHEQ)\\s*[Ll]evel\\s*[1-9]\\b|\\b[Ll]evel\\s*[3-7]\\b|\\b(one|two|three|four|five)[- ](year|academic year)\\b|full-?time|part-?time",
+  "poort0_url_kw": "course|programme|degree|assessment|regulations|handbook|policy|quality|academic|exam|marking|feedback|faq|study"
+}
