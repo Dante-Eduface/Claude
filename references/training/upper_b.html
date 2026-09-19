@@ -1,0 +1,210 @@
+<style>
+:root{
+  --ink:#1C1410;--mut:#8A7A6D;--line:#E2D9D0;
+  --card:#FFFAF6;--bg:#F3EDE6;--row:#F8F3EE;
+  --green:#2B6B2B;--red:#B52E2E;--amber:#A86A20;
+  --gfill:rgba(43,107,43,.1);--rfill:rgba(181,46,46,.1);
+  --mono:'SF Mono',Menlo,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font:14px/1.5 system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--ink);padding:24px}
+
+.header{margin-bottom:20px}
+.header h1{font-size:20px;font-weight:700;letter-spacing:-.02em;margin-bottom:4px}
+.header p{font-size:12px;color:var(--mut)}
+
+.legend{display:flex;gap:10px;margin-bottom:18px;flex-wrap:wrap}
+.leg{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--mut)}
+.leg-dot{width:10px;height:10px;border-radius:2px;border:1px solid;flex-shrink:0}
+
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:3px;overflow:hidden}
+th{text-align:left;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);font-weight:700;padding:10px 14px;border-bottom:1px solid var(--line);background:var(--row)}
+td{padding:10px 14px;border-bottom:1px solid #F0EBE5;vertical-align:top}
+tr:last-child td{border-bottom:none}
+tr.mav-row td{background:rgba(43,107,43,.03)}
+tr.mav-row:hover td, tr:hover td{background:var(--row)}
+
+td.n{font-family:var(--mono);font-size:12px;white-space:nowrap;text-align:center}
+td.ord{font-family:var(--mono);font-size:11px;color:var(--mut);text-align:center;width:32px}
+
+.exname{font-weight:600;margin-bottom:3px;font-size:14px}
+.exnote{font-size:11px;color:var(--mut);line-height:1.6}
+.change{font-size:10px;color:var(--amber);font-weight:600;margin-bottom:3px}
+
+.pill{display:inline-block;font-size:10px;border-radius:2px;padding:1px 7px;white-space:nowrap;margin-right:3px;border:1px solid}
+.pill.mav{background:var(--gfill);border-color:rgba(43,107,43,.35);color:var(--green);font-weight:700}
+.pill.mev{background:#F5F0EC;border-color:#C8BDB6;color:var(--mut)}
+
+.badge{display:inline-block;font-size:9px;border-radius:2px;padding:1px 5px;font-weight:700;margin-left:4px;border:1px solid;vertical-align:middle}
+.badge.drop{background:rgba(168,106,32,.12);border-color:rgba(168,106,32,.35);color:var(--amber)}
+.badge.changed{background:rgba(168,106,32,.12);border-color:rgba(168,106,32,.35);color:var(--amber)}
+
+.sets-col{font-family:var(--mono);font-size:13px;font-weight:700;text-align:center;width:120px;white-space:nowrap}
+.sets-col.mav{color:var(--green)}
+.sets-col.mev{color:var(--mut)}
+
+.freq-col{font-size:11px;color:var(--mut);font-family:var(--mono);text-align:center;width:50px}
+
+.dropset-box{margin-top:8px;background:rgba(168,106,32,.06);border:1px solid rgba(168,106,32,.25);border-radius:3px;padding:8px 10px}
+.ds-title{font-size:9px;text-transform:uppercase;letter-spacing:.08em;font-weight:700;color:var(--amber);margin-bottom:6px}
+.ds-row{display:flex;gap:0;font-size:11px;border-bottom:1px solid rgba(168,106,32,.15)}
+.ds-row:last-child{border-bottom:none}
+.ds-row div{padding:4px 8px;flex:1}
+.ds-row div:first-child{flex:0 0 70px;color:var(--mut);font-weight:600}
+.ds-row.header div{font-size:9px;text-transform:uppercase;letter-spacing:.06em;color:var(--amber);padding:3px 8px}
+
+.bottom-note{margin-top:14px;background:var(--card);border:1px solid var(--line);border-radius:3px;padding:14px;font-size:12px;line-height:1.7;color:var(--mut)}
+.bottom-note strong{color:var(--ink)}
+.section-break{height:1px;background:var(--line);margin:8px 0}
+</style>
+
+<div class="header">
+  <h1>Upper B — Definitief schema</h1>
+  <p>Flat chest · Lat breedte + dikte · Schoudervolume · Accessories</p>
+</div>
+
+<div class="legend">
+  <div class="leg"><div class="leg-dot" style="background:var(--gfill);border-color:rgba(43,107,43,.4)"></div> MAV — prioriteit (lats, schouders)</div>
+  <div class="leg"><div class="leg-dot" style="background:#F5F0EC;border-color:#C8BDB6"></div> MEV — ondersteunend</div>
+  <div class="leg"><div class="leg-dot" style="background:rgba(168,106,32,.12);border-color:rgba(168,106,32,.35)"></div> Gewijzigd t.o.v. vorige versie</div>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th style="width:32px">#</th>
+      <th>Oefening</th>
+      <th style="width:130px;text-align:center">Sets × Reps</th>
+      <th>Spiergroep</th>
+      <th style="width:50px;text-align:center">p/week</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <!-- 1: Flat Bench -->
+    <tr>
+      <td class="ord">1</td>
+      <td>
+        <div class="exname">Flat Bench Press (Barbell)</div>
+        <div class="exnote">Zwaarste compound als eerste — maximale kwaliteit en veiligheid. Barbell boven dumbbell omdat de belasting nauwkeuriger progressief te sturen is. Mid/sternale chest. Volgorde: direct daarna cable fly terwijl chest nog vers is.</div>
+      </td>
+      <td class="sets-col mev">2 × 6–8</td>
+      <td><span class="pill mev">Chest mid</span></td>
+      <td class="freq-col">2×</td>
+    </tr>
+
+    <!-- 2: Cable Fly -- moved up -->
+    <tr>
+      <td class="ord">2</td>
+      <td>
+        <div class="change">↑ Omhoog verplaatst — direct na bench</div>
+        <div class="exname">Cable Fly<span class="badge changed">GEWIJZIGD</span></div>
+        <div class="exnote">Stretched positie die de bench mist — cables geven constante spanning door de hele ROM. Chest staat nog vers na de bench, dus dit is het ideale moment voor chest-isolatie. Ellebogen licht gebogen, focus op de stretch onderaan.</div>
+      </td>
+      <td class="sets-col mev">2 × 10–12</td>
+      <td><span class="pill mev">Chest stretch</span></td>
+      <td class="freq-col">2×</td>
+    </tr>
+
+    <!-- 3: Pendlay Row -->
+    <tr class="mav-row">
+      <td class="ord">3</td>
+      <td>
+        <div class="change">Reps aangepast: 5 → 6–8 voor hypertrofie</div>
+        <div class="exname">Pendlay Row (Barbell)<span class="badge changed">GEWIJZIGD</span></div>
+        <div class="exnote">Horizontale pull voor lat dikte en mid-rug. Was 3×5 — te weinig time under tension voor hypertrofie. Nu 3×6–8 voor betere spieropbouw terwijl het zwaar genoeg blijft. Balk op de grond tussen elke rep voor maximale kracht per herhaling.</div>
+      </td>
+      <td class="sets-col mav">3 × 6–8</td>
+      <td><span class="pill mav">Lats</span><span class="pill mev">Mid-rug</span></td>
+      <td class="freq-col">2×</td>
+    </tr>
+
+    <!-- 4: Lat Pulldown -->
+    <tr class="mav-row">
+      <td class="ord">4</td>
+      <td>
+        <div class="exname">Lat Pulldown (Cable)</div>
+        <div class="exnote">Verticale pull voor lat breedte — complementair aan de horizontale Pendlay row. Breedte grip ~1.5× schouderbreedte. Schouders laag houden tijdens de beweging, focus op het naar beneden trekken van de ellebogen.</div>
+      </td>
+      <td class="sets-col mav">3 × 8–10</td>
+      <td><span class="pill mav">Lats</span></td>
+      <td class="freq-col">2×</td>
+    </tr>
+
+    <!-- 5: Lateral Raise -->
+    <tr class="mav-row">
+      <td class="ord">5</td>
+      <td>
+        <div class="exname">Lateral Raise<span class="badge drop">DROPSET</span></div>
+        <div class="exnote">Primaire V-taper oefening — tweede wekelijkse exposure. Kabel of dumbbell, identieke groei. Stop op schouderhoogte, ellebogen licht gebogen en vasthouden. Dropset protocol hieronder.</div>
+        <div class="dropset-box">
+          <div class="ds-title">Dropset protocol — geen rust binnen de set</div>
+          <div class="ds-row header"><div>Drop</div><div>Gewicht</div><div>Reps</div><div>Rust</div></div>
+          <div class="ds-row"><div>Start</div><div>Werklast</div><div>15</div><div>geen</div></div>
+          <div class="ds-row"><div>Drop 1</div><div>−30%</div><div>12</div><div>geen</div></div>
+          <div class="ds-row"><div>Drop 2</div><div>−30%</div><div>10</div><div>2–3 min</div></div>
+          <div class="ds-row"><div style="color:var(--mut);font-size:10px">Herhaal 3×</div><div></div><div></div><div></div></div>
+        </div>
+      </td>
+      <td class="sets-col mav">3× dropset</td>
+      <td><span class="pill mav">Schouders</span></td>
+      <td class="freq-col">2×</td>
+    </tr>
+
+    <!-- 6: Rear Delt Fly -->
+    <tr>
+      <td class="ord">6</td>
+      <td>
+        <div class="exname">Rear Delt Fly (cable of machine)</div>
+        <div class="exnote">Achterste delt isolatie. Geen face pull — die spreidt te veel naar rotator cuff en traps. Strikte uitvoering: geen schouderophaling, lichte externe rotatie. Kleine spier die weinig systemische vermoeidheid kost.</div>
+      </td>
+      <td class="sets-col mev">2 × 12–15</td>
+      <td><span class="pill mev">Achterste delt</span></td>
+      <td class="freq-col">2×</td>
+    </tr>
+
+    <!-- 7: Preacher Curl -->
+    <tr>
+      <td class="ord">7</td>
+      <td>
+        <div class="exname">Preacher Curl of Spider Curl</div>
+        <div class="exnote">Hoge spanning bij gestrekte elleboog = distale biceps + brachialis (Kassiano 2025). Complementair aan de incline curl van Upper A die de proximale biceps traint. MEV — biceps is ondersteunend in dit schema.</div>
+      </td>
+      <td class="sets-col mev">2 × 10–12</td>
+      <td><span class="pill mev">Biceps</span></td>
+      <td class="freq-col">2×</td>
+    </tr>
+
+    <!-- 8: Triceps Pushdown -->
+    <tr>
+      <td class="ord">8</td>
+      <td>
+        <div class="exname">Triceps Pushdown (Cable)</div>
+        <div class="exnote">Tweede wekelijkse tricepsstimulus naast de overhead extension van Upper A. Alle drie de koppen op kortere positie. Ellebogen strak langs het lichaam houden gedurende de hele beweging.</div>
+      </td>
+      <td class="sets-col mev">2 × 12–15</td>
+      <td><span class="pill mev">Triceps</span></td>
+      <td class="freq-col">2×</td>
+    </tr>
+
+    <!-- 9: Hanging Leg Raise -->
+    <tr>
+      <td class="ord">9</td>
+      <td>
+        <div class="exname">Hanging Leg Raise</div>
+        <div class="exnote">Onderste rectus abdominis (Youdas 2013). Complementair aan ab wheel van Upper A. Geen zware oblique rotaties — die vergroten de taille en werken tégen de V-taper. Langzaam en gecontroleerd neer voor maximale spanning.</div>
+      </td>
+      <td class="sets-col mev">2 × max</td>
+      <td><span class="pill mev">Core</span></td>
+      <td class="freq-col">2×</td>
+    </tr>
+
+  </tbody>
+</table>
+
+<div class="bottom-note">
+  <strong>Twee wijzigingen t.o.v. vorige versie:</strong><br>
+  1. <strong>Cable fly omhoog</strong> — van positie 5 naar positie 2, direct na flat bench. Chest is dan nog vers en de fly is het logische complement op de drukbeweging.<br>
+  2. <strong>Pendlay row: 3×5 → 3×6–8</strong> — 5 reps is een krachtprotocol. Voor hypertrofie heb je meer time under tension nodig. 6–8 reps houdt het zwaar genoeg terwijl je in het hypertrofiebereik blijft.<br><br>
+  <strong>Volgorde logica:</strong> Bench (zwaarste compound vers) → Fly (chest nog vers) → Pendlay row (horizontale lat compound) → Lat pulldown (verticale lat) → Lateral raise (schouder MAV) → Accessories (kleine spieren, weinig vermoeidheid).
+</div>

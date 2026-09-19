@@ -2,7 +2,7 @@
 
 _Laatst bijgewerkt: 2026-09-19._
 
-Het bedrijf waar Dante werkt. Dit bestand is alleen het minimum dat elke sessie nodig heeft: wat we verkopen, aan wie, en wie er werkt. Alles wat dieper gaat staat in een eigen bestand, zie **Waar de details staan**.
+Het bedrijf waar Dante werkt. Juridisch heet het **Blockbook B.V.**, daar komt zijn salaris ook vandaan. Naar buiten is alles Eduface. Dit bestand is alleen het minimum dat elke sessie nodig heeft: wat we verkopen, aan wie, en wie er werkt. Alles wat dieper gaat staat in een eigen bestand, zie **Waar de details staan**.
 
 ## Wat Eduface doet
 
@@ -35,7 +35,7 @@ Universiteiten en hogescholen, én particuliere onderwijsinstellingen. Markten: 
 | **Jeroen van Gessel** | CEO en medeoprichter. Strategie, sales, fundraising, alles extern. Dante's belangrijkste counterpart. |
 | **Menno Hahury** | CTO en medeoprichter. Bouwt het product. |
 | **Samuel Rafini** | Senior Engineer. Bouwt het product. |
-| **Tjarko Kwee** | Wekelijkse sales sessie met Jeroen en Dante. OPEN, rol nog niet vastgelegd, zie `context/open-vragen.md`. |
+| **Tjarko Kwee** | Sales adviseur en angel investor in Eduface. Wekelijkse sales sessie met Jeroen en Dante. |
 | **Dante Torbed** | Customer Success Manager. Zie `context/me.md`. |
 
 Wie eigenaar is van een deal verschilt per deal en staat in Close, bij de opportunity. Niet hier bijhouden.
@@ -53,7 +53,7 @@ Aangesloten als MCP in Claude Code: Gmail, Google Calendar, Google Drive, Close,
 Niet elke sessie lezen, wel altijd naar verwijzen in plaats van uit het hoofd beweren:
 
 - **Product, wat je wel en niet mag claimen:** `references/eduface-product.md`. Dat is de bron voor elke productclaim. Staat het daar niet, dan beweer je het niet.
-- **Wat het product doet, meest uitgewerkte versie:** de productpagina. OPEN, link staat nog niet in de repo, zie `context/open-vragen.md`.
+- **Wat het product doet, meest uitgewerkte versie:** de productpagina, in Google Drive onder de map **Platform**. Op 19-09-2026 was die map nog leeg, dus tot er iets in staat blijft `eduface-product.md` de bron.
 - **Prijs:** `references/pricing/prijsmodel-psu-26-27.md`. 3 per student per maand in de valuta van de markt, drempel 300 lerenden. Nooit een prijs uit het hoofd noemen, altijd dit bestand lezen.
 - **Salesproces en gates:** `references/sops/sales-handbook-v1.md`, `references/sops/meddpicc-states-and-gates.md`.
 - **Pipeline en dealstand:** Close, niet een bestand hier.

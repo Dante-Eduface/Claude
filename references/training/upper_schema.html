@@ -1,0 +1,359 @@
+<style>
+:root{
+  --ink:#1C1410;--mut:#8A7A6D;--line:#E2D9D0;
+  --card:#FFFAF6;--bg:#F3EDE6;--row:#F8F3EE;
+  --green:#2B6B2B;--red:#B52E2E;--amber:#A86A20;
+  --gfill:rgba(43,107,43,.1);--rfill:rgba(181,46,46,.1);
+  --mono:'SF Mono',Menlo,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font:14px/1.5 system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--ink);padding:24px}
+.header{margin-bottom:18px}
+.header h1{font-size:20px;font-weight:700;letter-spacing:-.02em;margin-bottom:4px}
+.header p{font-size:12px;color:var(--mut)}
+.priority-box{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:18px}
+.pbox{background:var(--card);border:1px solid var(--line);border-radius:3px;padding:12px 14px}
+.pbox.hi{border-left:3px solid var(--green)}
+.pbox.lo{border-left:3px solid #C8BDB6}
+.pbox .ptag{font-size:9px;text-transform:uppercase;letter-spacing:.09em;font-weight:700;margin-bottom:4px}
+.pbox.hi .ptag{color:var(--green)}
+.pbox.lo .ptag{color:var(--mut)}
+.pbox .pname{font-size:14px;font-weight:700;margin-bottom:2px}
+.pbox .pdesc{font-size:11px;color:var(--mut);line-height:1.5}
+.pbox .psets{font-family:var(--mono);font-size:12px;margin-top:6px;font-weight:600}
+.pbox.hi .psets{color:var(--green)}
+.pbox.lo .psets{color:var(--mut)}
+.tabs{display:flex;gap:4px;margin-bottom:16px}
+.tab{padding:6px 16px;border:1px solid var(--line);border-radius:3px;font-size:12px;cursor:pointer;background:var(--card);color:var(--mut);font-weight:500}
+.tab.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+.tab-content{display:none}
+.tab-content.show{display:block}
+.section-label{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);font-weight:700;margin-bottom:12px}
+.focus-tag{font-size:10px;color:var(--mut);font-weight:400;letter-spacing:0;text-transform:none;margin-left:6px}
+table{width:100%;border-collapse:collapse;font-size:13px;background:var(--card);border:1px solid var(--line);border-radius:3px;overflow:hidden;margin-bottom:20px}
+th{text-align:left;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);font-weight:700;padding:9px 12px;border-bottom:1px solid var(--line);background:var(--row)}
+td{padding:9px 12px;border-bottom:1px solid #F0EBE5;vertical-align:top}
+tr:last-child td{border-bottom:none}
+tr.priority-row td{background:rgba(43,107,43,.04)}
+tr.priority-row:hover td{background:rgba(43,107,43,.08)}
+tr:hover td{background:var(--row)}
+td.order{font-family:var(--mono);font-size:11px;color:var(--mut);text-align:center;width:28px}
+td.sets{font-family:var(--mono);font-size:12px;white-space:nowrap;text-align:center;width:110px}
+.exname{font-weight:600;margin-bottom:2px}
+.exnote{font-size:11px;color:var(--mut);line-height:1.5}
+.pill{display:inline-block;font-size:10px;background:var(--row);border:1px solid var(--line);border-radius:2px;padding:1px 6px;color:var(--mut);white-space:nowrap;margin-right:2px}
+.pill.p{background:var(--gfill);border-color:rgba(43,107,43,.3);color:var(--green);font-weight:700}
+.pill.mev{background:#F5F0EC;border-color:#C8BDB6;color:var(--mut)}
+.badge-drop{display:inline-block;font-size:9px;background:rgba(168,106,32,.12);border:1px solid rgba(168,106,32,.3);border-radius:2px;padding:1px 5px;color:var(--amber);font-weight:700;margin-left:3px}
+.badge-mav{display:inline-block;font-size:9px;background:var(--gfill);border:1px solid rgba(43,107,43,.3);border-radius:2px;padding:1px 5px;color:var(--green);font-weight:700;margin-left:3px}
+.badge-mev{display:inline-block;font-size:9px;background:#F5F0EC;border:1px solid #C8BDB6;border-radius:2px;padding:1px 5px;color:var(--mut);font-weight:700;margin-left:3px}
+.freq{font-size:11px;color:var(--mut);font-family:var(--mono)}
+/* vol tab */
+.bar-bg{height:7px;background:#E2D9D0;border-radius:3px;position:relative;overflow:visible;margin:4px 0 2px}
+.bar-fill{height:100%;border-radius:3px;position:absolute;top:0;left:0}
+.bar-mev-line{position:absolute;top:-2px;height:11px;width:1.5px;background:rgba(181,46,46,.6);z-index:2}
+.bar-mav-line{position:absolute;top:-2px;height:11px;width:1.5px;background:rgba(43,107,43,.6);z-index:2}
+.bar-label{display:flex;justify-content:space-between;font-size:9px;color:var(--mut);font-family:var(--mono)}
+.vol-status{font-size:10px;font-weight:700;padding:1px 6px;border-radius:2px;border:1px solid;white-space:nowrap}
+.vol-status.mav{color:var(--green);background:var(--gfill);border-color:rgba(43,107,43,.3)}
+.vol-status.mev{color:var(--mut);background:#F5F0EC;border-color:#C8BDB6}
+.vol-status.warn{color:var(--amber);background:rgba(168,106,32,.1);border-color:rgba(168,106,32,.3)}
+.note{background:var(--card);border:1px solid var(--line);border-radius:3px;padding:14px;font-size:12px;line-height:1.7;color:var(--mut);margin-top:0}
+.note strong{color:var(--ink)}
+</style>
+
+<div class="header">
+  <h1>Upper A / Upper B Schema</h1>
+  <p>V-taper prioriteit: Lats + Lateral delt op MAV · de rest op MEV</p>
+</div>
+
+<div class="priority-box">
+  <div class="pbox hi">
+    <div class="ptag">Prioriteit 1 — MAV</div>
+    <div class="pname">Lats</div>
+    <div class="pdesc">Bepaalt de breedte van de V van achteren en het silhouet van voren. Meeste impact op het overall frame.</div>
+    <div class="psets">3 sets per sessie · 2× per week</div>
+  </div>
+  <div class="pbox hi">
+    <div class="ptag">Prioriteit 2 — MAV</div>
+    <div class="pname">Lateral delt</div>
+    <div class="pdesc">Bepaalt de schouderbreedte — de bovenkant van de V. Herstelt snel, verdraagt hoge frequentie goed.</div>
+    <div class="psets">3 dropsets per sessie · 2× per week</div>
+  </div>
+  <div class="pbox lo">
+    <div class="ptag">Ondersteunend — MEV</div>
+    <div class="pname">Chest · Mid-rug · Achterste delt</div>
+    <div class="pdesc">Dragen bij aan volledigheid en balans. Minimaal genoeg om te groeien, niet genoeg om het herstelbudget te domineren.</div>
+    <div class="psets">2 sets per sessie · 2× per week</div>
+  </div>
+  <div class="pbox lo">
+    <div class="ptag">Onderhoud — MEV</div>
+    <div class="pname">Biceps · Triceps · Core</div>
+    <div class="pdesc">Groeien mee via compound overlap en isolatie. Bewust laag gehouden zodat het herstel vrij blijft voor de prioriteiten.</div>
+    <div class="psets">2 sets per sessie · 2× per week</div>
+  </div>
+</div>
+
+<div class="tabs">
+  <button class="tab active" onclick="show('a',this)">Upper A</button>
+  <button class="tab" onclick="show('b',this)">Upper B</button>
+  <button class="tab" onclick="show('vol',this)">Volume &amp; MAV</button>
+</div>
+
+<!-- UPPER A -->
+<div class="tab-content show" id="tab-a">
+  <div class="section-label">Upper A <span class="focus-tag">Incline chest · Lat breedte · Schoudervolume · Proximale biceps</span></div>
+  <table>
+    <thead>
+      <tr><th style="width:28px">#</th><th>Oefening</th><th>Sets × Reps</th><th>Spiergroep</th><th style="width:60px">Niveau</th></tr>
+    </thead>
+    <tbody>
+      <tr class="priority-row">
+        <td class="order">1</td>
+        <td>
+          <div class="exname">Incline Bench Press (30–35°)<span class="badge-mev">MEV</span></div>
+          <div class="exnote">Bovenkant chest als eerste — vers en zwaar. 30–35° voor maximale bovenkant chest activatie zonder dat de voorste delt overneemt (Chaves 2020).</div>
+        </td>
+        <td class="sets">2 × 6–8</td>
+        <td><span class="pill mev">Chest boven</span></td>
+        <td class="freq" style="color:var(--mut)">MEV</td>
+      </tr>
+      <tr class="priority-row">
+        <td class="order">2</td>
+        <td>
+          <div class="exname">Weighted Pull-Up<span class="badge-mav">MAV</span></div>
+          <div class="exnote">Verticale pull = lat breedte. Prioriteit — gedaan direct na de compound bench terwijl je nog vers bent. +15–20 kg voor kracht én hypertrofie.</div>
+        </td>
+        <td class="sets">3 × 4–6</td>
+        <td><span class="pill p">Lats</span></td>
+        <td class="freq" style="color:var(--green)">MAV</td>
+      </tr>
+      <tr>
+        <td class="order">3</td>
+        <td>
+          <div class="exname">Lateral Raise<span class="badge-drop">DROPSET</span><span class="badge-mav">MAV</span></div>
+          <div class="exnote">Primaire V-taper oefening. Kabel of dumbbell — identieke groei (Larsen 2025). Dropset: 15 reps → −30% → 12 reps → −30% → 10 reps, geen rust ertussen.</div>
+        </td>
+        <td class="sets">3× dropset</td>
+        <td><span class="pill p">Schouders</span></td>
+        <td class="freq" style="color:var(--green)">MAV</td>
+      </tr>
+      <tr>
+        <td class="order">4</td>
+        <td>
+          <div class="exname">Chest-Supported Row<span class="badge-mev">MEV</span></div>
+          <div class="exnote">Mid-rug dikte. Borst op de bank = geen momentum, hoge isolatie. Tweede latset zit hier ook in — maar primair mid-rug.</div>
+        </td>
+        <td class="sets">2 × 10–12</td>
+        <td><span class="pill mev">Mid-rug</span></td>
+        <td class="freq" style="color:var(--mut)">MEV</td>
+      </tr>
+      <tr>
+        <td class="order">5</td>
+        <td>
+          <div class="exname">Overhead Cable Extension<span class="badge-mev">MEV</span></div>
+          <div class="exnote">Long head in stretched positie — 19.9% vs 13.5% groei t.o.v. pushdown (Maeo 2023). Best beschikbare bewijs voor triceps oefenselect. 2 sets volstaat op MEV niveau.</div>
+        </td>
+        <td class="sets">2 × 10–12</td>
+        <td><span class="pill mev">Triceps</span></td>
+        <td class="freq" style="color:var(--mut)">MEV</td>
+      </tr>
+      <tr>
+        <td class="order">6</td>
+        <td>
+          <div class="exname">Incline Curl (Bayesian)<span class="badge-mev">MEV</span></div>
+          <div class="exnote">Schouder achterover = proximale bicepsgroei (Kassiano 2025). 2 sets — biceps is ondersteunend, niet de focus van dit schema.</div>
+        </td>
+        <td class="sets">2 × 10–12</td>
+        <td><span class="pill mev">Biceps</span></td>
+        <td class="freq" style="color:var(--mut)">MEV</td>
+      </tr>
+      <tr>
+        <td class="order">7</td>
+        <td>
+          <div class="exname">Reverse Cable Fly<span class="badge-mev">MEV</span></div>
+          <div class="exnote">Achterste delt isolatie. Kost weinig vermoeidheid — ideaal aan het einde. Face pull hier niet: isoleert de achterste delt minder goed voor hypertrofie.</div>
+        </td>
+        <td class="sets">2 × 12–15</td>
+        <td><span class="pill mev">Achterste delt</span></td>
+        <td class="freq" style="color:var(--mut)">MEV</td>
+      </tr>
+      <tr>
+        <td class="order">8</td>
+        <td>
+          <div class="exname">Ab Wheel Rollout</div>
+          <div class="exnote">Hoogste rectus abdominis activatie zonder oblique dikte (Escamilla 2010). Geen zware oblique training — dat vergroot de taille en werkt tégen de V-taper.</div>
+        </td>
+        <td class="sets">2 × max</td>
+        <td><span class="pill mev">Core</span></td>
+        <td class="freq" style="color:var(--mut)">MEV</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- UPPER B -->
+<div class="tab-content" id="tab-b">
+  <div class="section-label">Upper B <span class="focus-tag">Flat chest · Rug dikte · Distale biceps · Achterste delt</span></div>
+  <table>
+    <thead>
+      <tr><th style="width:28px">#</th><th>Oefening</th><th>Sets × Reps</th><th>Spiergroep</th><th style="width:60px">Niveau</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="order">1</td>
+        <td>
+          <div class="exname">Flat Bench Press (Barbell)<span class="badge-mev">MEV</span></div>
+          <div class="exnote">Zwaarste horizontale drukbeweging als eerste. Mid/sternale chest. Samen met incline bench in Upper A dekt dit het hele borstoppervlak.</div>
+        </td>
+        <td class="sets">2 × 5–7</td>
+        <td><span class="pill mev">Chest mid</span></td>
+        <td class="freq" style="color:var(--mut)">MEV</td>
+      </tr>
+      <tr class="priority-row">
+        <td class="order">2</td>
+        <td>
+          <div class="exname">Pendlay Row<span class="badge-mav">MAV</span></div>
+          <div class="exnote">Horizontale compound — mid-rug + lats. Direct na bench vers gedaan. Explosief omhoog, balk terug op de grond tussen elke rep voor maximale kracht per rep.</div>
+        </td>
+        <td class="sets">3 × 5</td>
+        <td><span class="pill p">Lats</span> <span class="pill mev">Mid-rug</span></td>
+        <td class="freq" style="color:var(--green)">MAV</td>
+      </tr>
+      <tr class="priority-row">
+        <td class="order">3</td>
+        <td>
+          <div class="exname">Lat Pulldown (Cable)<span class="badge-mav">MAV</span></div>
+          <div class="exnote">Tweede verticale pull voor lat breedte. Breedte grip ~1.5× schouderbreedte — bredere grip geeft geen extra latactivatie (Andersen 2014). Totaal 3+3 sets lats per week.</div>
+        </td>
+        <td class="sets">3 × 8–10</td>
+        <td><span class="pill p">Lats</span></td>
+        <td class="freq" style="color:var(--green)">MAV</td>
+      </tr>
+      <tr class="priority-row">
+        <td class="order">4</td>
+        <td>
+          <div class="exname">Lateral Raise<span class="badge-drop">DROPSET</span><span class="badge-mav">MAV</span></div>
+          <div class="exnote">Tweede wekelijkse exposure lateral delt. Lateral delt herstelt snel — hoge frequentie is hier een voordeel. Zelfde dropset protocol als Upper A.</div>
+        </td>
+        <td class="sets">3× dropset</td>
+        <td><span class="pill p">Schouders</span></td>
+        <td class="freq" style="color:var(--green)">MAV</td>
+      </tr>
+      <tr>
+        <td class="order">5</td>
+        <td>
+          <div class="exname">Cable Fly of Low Incline DB Press (15–20°)<span class="badge-mev">MEV</span></div>
+          <div class="exnote">Mid/onderkant chest. Cable fly geeft de stretched positie die drukbewegingen missen. Low incline geeft extra tricepsvolume als bonus.</div>
+        </td>
+        <td class="sets">2 × 10–12</td>
+        <td><span class="pill mev">Chest mid/onder</span></td>
+        <td class="freq" style="color:var(--mut)">MEV</td>
+      </tr>
+      <tr>
+        <td class="order">6</td>
+        <td>
+          <div class="exname">Rear Delt Fly (cable of machine)<span class="badge-mev">MEV</span></div>
+          <div class="exnote">Achterste delt — samen met reverse fly in Upper A op MEV niveau. Draagt bij aan schoudervolledigheid van achteren. Strikte isolatie, geen schouderophaling.</div>
+        </td>
+        <td class="sets">2 × 12–15</td>
+        <td><span class="pill mev">Achterste delt</span></td>
+        <td class="freq" style="color:var(--mut)">MEV</td>
+      </tr>
+      <tr>
+        <td class="order">7</td>
+        <td>
+          <div class="exname">Preacher Curl of Spider Curl<span class="badge-mev">MEV</span></div>
+          <div class="exnote">Distale biceps + brachialis (Kassiano 2025). Complementair aan incline curl van Upper A. 2 sets — biceps is ondersteunend in dit schema.</div>
+        </td>
+        <td class="sets">2 × 10–12</td>
+        <td><span class="pill mev">Biceps</span></td>
+        <td class="freq" style="color:var(--mut)">MEV</td>
+      </tr>
+      <tr>
+        <td class="order">8</td>
+        <td>
+          <div class="exname">Triceps Pushdown (Cable)<span class="badge-mev">MEV</span></div>
+          <div class="exnote">Alle drie de koppen op kortere positie. Tweede wekelijkse tricepsstimulus naast overhead extension. 2 sets op MEV niveau.</div>
+        </td>
+        <td class="sets">2 × 12–15</td>
+        <td><span class="pill mev">Triceps</span></td>
+        <td class="freq" style="color:var(--mut)">MEV</td>
+      </tr>
+      <tr>
+        <td class="order">9</td>
+        <td>
+          <div class="exname">Hanging Leg Raise</div>
+          <div class="exnote">Onderste rectus abdominis (Youdas 2013). Complementair aan ab wheel. Geen zware oblique rotaties — vergroot de taille en werkt tégen de V-taper.</div>
+        </td>
+        <td class="sets">2 × max</td>
+        <td><span class="pill mev">Core</span></td>
+        <td class="freq" style="color:var(--mut)">MEV</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- VOLUME TAB -->
+<div class="tab-content" id="tab-vol">
+  <div class="section-label">Volume per spiergroep vs MEV en MAV</div>
+  <table>
+    <thead>
+      <tr>
+        <th>Spiergroep</th>
+        <th>Keuze</th>
+        <th class="n" style="text-align:center;width:80px">Sets/week</th>
+        <th>MEV → MAV</th>
+        <th style="width:80px">Status</th>
+      </tr>
+    </thead>
+    <tbody id="vol-body"></tbody>
+  </table>
+  <div class="note">
+    <strong>Logica:</strong> Lats en lateral delt op MAV — hier gaat het herstelbudget naartoe. De rest op MEV: genoeg om te groeien en bij te houden, niet genoeg om te concurreren met de prioriteiten. Als armen of chest achterblijven en dat een probleem wordt, schuif je ze omhoog — maar dan gaat er iets anders omlaag.<br><br>
+    <strong>Wanneer aanpassen?</strong> Als Lats en Schouders zichtbaar groeien maar één andere spier duidelijk achterblijft en je er last van hebt — dan pas verhoog je die spier naar MAV en verlaag je een andere naar MEV.
+  </div>
+</div>
+
+<script>
+function show(id,btn){
+  document.querySelectorAll('.tab-content').forEach(el=>el.classList.remove('show'));
+  document.querySelectorAll('.tab').forEach(el=>el.classList.remove('active'));
+  document.getElementById('tab-'+id).classList.add('show');
+  btn.classList.add('active');
+}
+const DATA=[
+  {m:"Lats",sets:12,mev:8,mav:20,max:26,status:"mav",label:"MAV — prioriteit"},
+  {m:"Schouders (lateral)",sets:18,mev:6,mav:22,max:26,status:"mav",label:"MAV — prioriteit"},
+  {m:"Chest",sets:8,mev:8,mav:20,max:26,status:"mev",label:"MEV"},
+  {m:"Mid-rug",sets:8,mev:8,mav:18,max:26,status:"mev",label:"MEV"},
+  {m:"Achterste delt",sets:6,mev:6,mav:18,max:26,status:"mev",label:"MEV"},
+  {m:"Biceps",sets:6,mev:6,mav:20,max:26,status:"mev",label:"MEV"},
+  {m:"Triceps",sets:6,mev:6,mav:18,max:26,status:"mev",label:"MEV"},
+  {m:"Core",sets:4,mev:4,mav:16,max:26,status:"mev",label:"MEV"},
+];
+const tbody=document.getElementById('vol-body');
+DATA.forEach(d=>{
+  const fillPct=Math.min(100,(d.sets/d.max)*100);
+  const mevPct=(d.mev/d.max)*100;
+  const mavPct=(d.mav/d.max)*100;
+  const col=d.status==='mav'?'#2B6B2B':'#8A7A6D';
+  const tr=document.createElement('tr');
+  tr.innerHTML=`
+    <td><strong>${d.m}</strong></td>
+    <td style="font-size:11px;color:var(--mut)">${d.status==='mav'?'Pull-up 3s + Pulldown 3s / Lateral raises 3×':'2 sets per oefening'}</td>
+    <td style="text-align:center;font-family:var(--mono);font-weight:700;color:${col}">${d.sets}</td>
+    <td style="min-width:180px;padding:8px 12px">
+      <div class="bar-bg" style="background:#E2D9D0;height:7px;border-radius:3px;position:relative;overflow:visible">
+        <div class="bar-fill" style="width:${fillPct}%;background:${col};height:100%;border-radius:3px;position:absolute;top:0;left:0"></div>
+        <div class="bar-mev-line" style="left:${mevPct}%;position:absolute;top:-2px;height:11px;width:1.5px;background:rgba(181,46,46,.5)"></div>
+        <div class="bar-mav-line" style="left:${mavPct}%;position:absolute;top:-2px;height:11px;width:1.5px;background:rgba(43,107,43,.5)"></div>
+      </div>
+      <div class="bar-label" style="display:flex;justify-content:space-between;font-size:9px;color:var(--mut);font-family:var(--mono);margin-top:3px">
+        <span>0</span><span style="color:#B52E2E">MEV ${d.mev}</span><span style="color:#2B6B2B">MAV ${d.mav}</span>
+      </div>
+    </td>
+    <td><span class="vol-status ${d.status}">${d.label}</span></td>`;
+  tbody.appendChild(tr);
+});
+</script>

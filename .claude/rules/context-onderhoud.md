@@ -53,7 +53,8 @@ Geeft hij antwoord, dan gaat het antwoord meteen naar het juiste bestand, verhui
 | Wie Dante is, rol, weekritme | `context/me.md` |
 | Wat Eduface is, mensen, tools | `context/eduface.md` |
 | Doelen en de leidende maat | `context/current-priorities.md` |
-| Sport, geld, relatie, wonen, leren | `context/personal.md` |
+| Sport, eten, wonen, leren | `context/personal.md` |
+| Alles met geld | `context/financien.md` |
 | Wat ik niet zelf mag invullen | `context/open-vragen.md` |
 | Een keuze met gevolgen, plus de redenering | `decisions/log.md` |
 | Productclaims, prijs, salesmethode | het bestand in `references/`, niet een contextbestand |

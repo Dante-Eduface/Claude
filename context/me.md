@@ -32,9 +32,16 @@ De ochtendtrein is een uur per dag waarin hij werkt, vier uur per week. Losse, z
 
 ## Hoe hij werkt
 
-**OPEN, staat op navragen.** De oude tekst hier (lean startup, veel parallel, springt tussen taken) is door Dante afgekeurd als niet meer accuraat op 19-09-2026 en verwijderd in plaats van blijven staan. De vragen staan in `context/open-vragen.md`. Niets invullen tot hij antwoord geeft.
+Bijgewerkt 19-09-2026, uit zijn eigen woorden.
 
-Wat wel vastligt en de basis is van de huidige aanpak: hij werkt met **één prioriteit tegelijk** en meet zichzelf op **uren deep work** als leidende maat. De redenering daarachter staat in `references/deep-work.md`.
+- **Eén prioriteit, het hele jaar.** *"Bepaal gewoon één prioriteit, daar focus ik mij het hele jaar op, ik doe geen ander werk."* Welke dat is staat in `context/current-priorities.md`. Kom je met een goed idee dat daar niet aan bijdraagt, dan is het antwoord nee.
+- **Geen lange-termijndoelen, bewust niet.** Geen vijfjaarsplan, geen tienjaarsplan. Dat is een keuze naar aanleiding van de focus-these, geen gat in zijn context. Niet invullen en niet ernaar vragen.
+- **De functiewisseling naar CSM veranderde niets aan zijn werkdag.** Alleen zijn titel op LinkedIn is aangepast. Behandel zijn werk dus niet als iets nieuws.
+- **Een dag gaat mis bij het eten, niet bij de planning.** Zijn eigen antwoord op waar het op stuk loopt: *"een dag gaat vooral mis als ik ongezond begin te eten."* Dat is het eerste om naar te kijken als een dag ontspoort, niet zijn takenlijst.
+- **Over een slechte week heeft hij nog niet nagedacht.** Niet zelf invullen.
+- **Eduface is zijn thuis.** Hij blijft, en denkt niet in exitscenario's of een eigen startup. Dat is voor nu geen open vraag maar een gepasseerd station.
+
+Zijn leidende maat is **uren deep work**. De redenering, het schema en het plafond staan in `references/deep-work.md`.
 
 ## Persoonlijk
 

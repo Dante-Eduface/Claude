@@ -87,14 +87,11 @@ Bouw je iets dat een mens bekijkt (pagina, deck, tool-UI, creative), lees dan **
 ---
 
 ## Skills to Build (backlog)
-Workflows Dante wants help with, to turn into skills over time:
+Workflows Dante wants help with, to turn into skills over time. De ads- en LinkedIn-punten zijn op 19-09-2026 geschrapt: hij doet geen LinkedIn-ads meer en content is geen prioriteit.
 1. ~~**Daily/weekly/monthly task setup & prioritisation** (hand-off priority #1)~~ → built: `/task-planning` (2026-06-15)
-2. **Weekly LinkedIn + Meta ad set creation** — copy, audience, variation logic
 3. **Lemlist campaign analysis** — recurring performance review + improvement recommendations + implementation
-4. **LinkedIn/Meta ads campaign analysis** — recurring performance review + improvements
 5. **Weekly Close CRM pipeline summary** — pipeline + lead follow-up overview
 6. **CRM update after calls/meetings** — auto-draft notes + next steps in Close
 7. **Cold outreach sequence builder** (Lemlist) — write + personalise UK prospect emails at volume
 8. **Webinar follow-up sequences**
-9. **LinkedIn outreach messages to DVCs/PVCs**
 10. **Prospect research before outreach** + **prospect list building in Clay**

@@ -1,0 +1,44 @@
+{
+  "_comment": "Voorbeeld-spec. Eén JSON per blog. Alle top-velden verplicht behalve waar gemeld.",
+  "slug": "example-blog-slug",
+  "path": "/resources/blog/example-blog-slug",
+  "category": "Compliance",
+  "readTime": "8 min read",
+  "cardTitle": "De volledige titel zoals op de kaart en als page-name",
+  "seoTitle": "Specifiek onderwerp vooraan | Eduface",
+  "seoDesc": "1-2 concrete zinnen, ~150-160 tekens, voor de meta description.",
+  "excerpt": "Korte samenvatting voor de CMS-kaart (Body-veld).",
+  "publishedDate": "2026-07-09T00:00:00.000Z",
+  "hero": {
+    "eyebrow": "COMPLIANCE · ONDERWERP",
+    "h1": "De H1 op de pagina (mag lang zijn)",
+    "subtitle": "Eén of twee zinnen dek onder de H1.",
+    "meta": "By Eduface · July 2026 · 8 min read"
+  },
+  "blocks": [
+    {"t":"p","x":"Openingsalinea."},
+    {"t":"callout","title":"Quick answer / kernpunt","x":"Mint highlight-kaart met het antwoord in de eerste zin (goed voor GEO)."},
+    {"t":"h2","x":"Een sectiekop als vraag"},
+    {"t":"p","x":"Gewone alinea (Body 16)."},
+    {"t":"p","runs":[["Bold lead. ",true],["gewone tekst, en een ",false],["interne link",true,"/resources/blog/andere-slug"],[" midden in de zin.",false]]},
+    {"t":"pb","x":"Een bold subkop of FAQ-vraag."},
+    {"t":"cards","cols":2,"items":[
+      {"title":"Kaart 1","x":"Body van kaart 1."},
+      {"title":"Kaart 2","x":"Body van kaart 2."}
+    ]},
+    {"t":"table","weights":[1.4,1,1],"head":["Kolom A","Kolom B","Kolom C"],"rows":[
+      ["Rij 1 cel A","cel B","cel C"],
+      ["Rij 2 cel A","cel B","cel C"]
+    ]},
+    {"t":"img","src":"https://framerusercontent.com/images/....png","aspect":1.875,"alt":"Alt-tekst uit de SVG <desc>"},
+    {"t":"h2","x":"Frequently asked questions"},
+    {"t":"pb","x":"Een FAQ-vraag?"},
+    {"t":"p","x":"Het antwoord. Deze pb+p paren worden ook 1:1 de FAQPage-schema."},
+    {"t":"h2","x":"Sources"},
+    {"t":"p","x":"Auteur, A. (2026). Titel. Tijdschrift, 1(1), 1-10."}
+  ],
+  "cta": {
+    "title": "CTA-kop",
+    "desc": "CTA-subtekst. Knoppen (Book a demo / Create free account) zijn vast in de compiler."
+  }
+}

@@ -1,6 +1,6 @@
 # Deep Work, en hoe Dante zijn week erop inricht
 
-_Opgesteld 19-09-2026. Bron: Cal Newport, "Deep Work" (2016), het boek dat Dante nu leest. Aanleiding: deep work is per 19-09-2026 de leidende maat in `context/current-priorities.md`._
+_Opgesteld 19-09-2026, schema herzien op 19-09-2026 naar Dante's eigen indeling. Bron: Cal Newport, "Deep Work" (2016), het boek dat Dante nu leest. Aanleiding: deep work is per 19-09-2026 de leidende maat in `context/current-priorities.md`._
 
 ## De definitie, want die is smaller dan mensen denken
 
@@ -60,57 +60,65 @@ Newport noemt vier manieren om deep work in een leven te passen:
 
 ## De agenda-inrichting
 
-Uitgangspunten uit zijn echte agenda, gelezen op 19-09-2026:
-
-- Ma t/m do: trein 06:23, om 07:35 op kantoor in Utrecht. Ma en wo tot 18:25, di en do tot 15:55 (gym 17:00).
-- Vrijdag thuis, geen reistijd.
-- Meetings: gemiddeld 8 uur per week. Van de 21 afspraken in drie weken begonnen er **3 voor 10:00** en de rest tussen 11:00 en 18:00.
-- Bureautijd totaal: ongeveer 43 uur per week.
-
-Daar volgt één ding uit: **de ochtend is het enige deel van de dag dat hij echt zelf bezet.** Om 07:40 zit hij er al, is er nog niemand, en boekt geen enkele Nederlandse of Britse instelling een afspraak.
+**Dit schema is op 19-09-2026 door Dante zelf bepaald.** Hij leest het plafond van vier uur als een doel, niet als een waarschuwing, en wil zeven dagen per week draaien.
 
 ### De blokken
 
-| Dag | Blok 1 | Blok 2 |
+| Dag | Blok 1 | Pauze | Blok 2 | Per dag |
+|---|---|---|---|---|
+| Ma t/m vr | 07:00 tot 09:00 | 30 min | 09:30 tot 12:00 | 4,5 uur |
+| Za en zo | 06:00 tot 08:00 | 30 min | 08:30 tot 11:00 | 4,5 uur |
+
+Daarna eten. **31,5 uur per week** als alles staat.
+
+Dat is 12,5% boven wat Newport als plafond noemt (4 uur per dag), en dan ook nog zeven dagen achter elkaar. Het boek beschrijft nergens iemand die dat volhoudt. Dat maakt het geen slecht doel, het maakt het een bovengrens: 31,5 is waar het schema op uitkomt als er niets tussenkomt, niet wat je in week één haalt.
+
+### Drie dingen die botsen
+
+Uit zijn eigen agenda, gelezen op 19-09-2026. Deze moeten opgelost worden, anders staat het schema op papier en niet in de week.
+
+**1. De trein eet 35 minuten van blok 1, vier dagen per week.** Hij vertrekt om 06:23 en zit rond 07:35 op kantoor. Van 07:00 tot 09:00 is dus 07:00 tot 07:23 trein, tot 07:35 lopen, en pas dan werk. Twee oplossingen:
+
+- **Een vroegere trein pakken** zodat hij rond 06:55 aan zijn bureau zit. Hij staat al om 05:30 op, dus de ruimte is er. Dit houdt het schema heel.
+- **Blok 1 verschuiven naar 07:40 tot 09:40**, pauze tot 10:10, blok 2 van 10:10 tot 12:00. Dat is 3 uur 50 in plaats van 4,5.
+
+De eerste is beter. De trein is de enige echte beperking en die is verplaatsbaar.
+
+**2. Blok 2 loopt tot 12:00, en dat is precies waar zijn afspraken beginnen.** Van 21 afspraken in drie weken begonnen er vijf tussen 11:00 en 12:00. De regel wordt daarmee strenger dan eerst gedacht: **geen afspraken voor 12:00**, niet voor 10:30. Dat kan, want het middagvenster van 12:00 tot 18:00 is breed genoeg, het Verenigd Koninkrijk loopt een uur achter en de Verenigde Staten beginnen pas om 16:00 onze tijd. Alleen Nederlandse afspraken worden hiermee strikt middagwerk.
+
+**3. De weekendblokken zijn al bezet.** In de kalender "Persoonlijk taken" staat elke week:
+
+| Dag | Tijd | Wat |
 |---|---|---|
-| Ma | 07:40 tot 09:10 | 09:20 tot 10:30 |
-| Di | 07:40 tot 09:10 | 09:20 tot 10:30 |
-| Wo | 07:40 tot 09:10 | 09:20 tot 10:30 |
-| Do | 07:40 tot 09:10 | 09:20 tot 10:30 |
-| Vr (thuis) | 08:00 tot 09:30 | 10:00 tot 11:30 |
+| Zaterdag | 07:30 tot 09:00 | Week plannen |
+| Zaterdag | 09:00 tot 10:00 | Gym dashboard |
+| Zondag | 07:30 tot 09:00 | LinkedIn post schrijven |
+| Zondag | 09:00 tot 10:00 | Financiele controle |
 
-Vol uitgevoerd is dat **13 uur en 20 minuten per week**, oftewel ongeveer 2,7 uur per werkdag. Ruim onder Newports plafond van 4 uur, en ongeveer 31% van zijn bureautijd. De andere 69% is meetings, klantwerk, Close, mail: shallow, en dat mag.
+Dat is drie van de 4,5 uur per weekenddag die al een bestemming hebben. Twee keuzes: die taken zijn het deep work van dat blok, of ze verhuizen naar de middag. Ze tellen alleen mee als deep work wanneer ze echt denkwerk zijn. Week plannen is dat. Een dashboard bijwerken en een financiele controle niet, dat is shallow werk in een deep-work-blok.
 
-### De ene regel die dit mogelijk maakt
+**En een vierde die geen botsing is maar wel opvalt:** elke zondag staat "LinkedIn post schrijven" van 07:30 tot 09:00, terwijl content op 19-09-2026 expliciet geen prioriteit is. Anderhalf uur op de beste tijd van de week aan iets dat niet je prioriteit is, is precies het vijfde feestje uit `references/research/focus-these-hormozi.md`.
 
-**Geen afspraken voor 10:30.** Dat is de enige structurele verandering. Nu staan er nog calls om 09:00 en 09:30; die verhuizen naar de middag. Het middagvenster van 11:00 tot 18:00 is breed genoeg om alle 8 meetinguren kwijt te kunnen, ook met Britse en Amerikaanse tijdzones erbij (de VS begint toch pas om 16:00 onze tijd).
+### Wat het weektarget wordt
 
-Aanpassen in: Calendly-beschikbaarheid, en de standaard waarop hij zelf afspraken voorstelt.
+Het schema staat op 31,5 uur. Het **target** is iets anders dan het schema, want een target dat je structureel niet haalt leert je niets behalve dat meten geen zin heeft.
 
-### De opbouw, want 13 uur in week één is een garantie op falen
+Voorstel: de eerste twee weken is het aantal uren de **nulmeting**, geen doel. Voorspelling op basis van de botsingen hierboven: **18 tot 22 uur in week één**. Wordt het meer, dan is het plafond hoger dan Newport beschrijft en zetten we het target daarop. Wordt het minder, dan weten we welk blok sneuvelt en waarom.
 
-Newports plafond is trainbaar, dus je begint eronder. Drie fases:
-
-| Fase | Wat | Uren per week |
-|---|---|---|
-| Week 1 tot 2 | Alleen blok 1, elke werkdag | 7,5 |
-| Week 3 tot 4 | Blok 2 erbij op de drie rustigste dagen | ongeveer 11 |
-| Vanaf week 5 | Beide blokken, elke werkdag | 13,3 |
-
-In fase 1 is het percentage gehaalde blokken de maat, niet het aantal uren. Vijf van de vijf blokken van 90 minuten is een betere week dan negen losse uren die overal vandaan zijn gesprokkeld.
+Na twee weken wordt het één getal. Dat staat als W5 in `context/open-vragen.md`.
 
 ### De ochtendtrein
 
-06:23 tot 07:23, vier keer per week, vier uur. Dat telt **niet** mee in de deep-work-uren: trein is rumoerig en de verbinding valt weg. Het is wel de beste plek voor afgebakende klussen die hooguit een uur duren en geen diepe concentratie vragen: een dealvoorbereiding doorlezen, Close bijwerken, een outreachlijst nalopen. Zo eet dat werk niet aan de ochtendblokken.
+06:23 tot 07:23, vier keer per week. Telt **niet** mee in de deep-work-uren: trein is rumoerig en de verbinding valt weg. Wel de beste plek voor afgebakende klussen van hooguit een uur die geen diepe concentratie vragen. Pakt hij een vroegere trein voor blok 1, dan vervalt dit.
 
 ## Meten, want anders is het een voornemen
 
 Newport neemt 4DX uit "The 4 Disciplines of Execution" over. Die vier vertaald naar dit geval:
 
-1. **Focus op wat echt telt.** De twee doelen in `context/current-priorities.md`, verder niks.
+1. **Focus op wat echt telt.** Het doel in `context/current-priorities.md`, verder niks.
 2. **Stuur op de leidende maat.** Uren deep work. Achteraf-cijfers (salesprocessen, NPS) vertellen je pas wat er is gebeurd toen je er niks meer aan kon doen; deep-work-uren kun je vandaag beïnvloeden.
-3. **Houd een zichtbaar scorebord bij.** Blokken staan als afspraak in de agenda (kalender "Planning"). Bij de bestaande afsluitritueel-afspraak van 20:00 zet hij achter elk blok een ✓ of ✗. Vrijdag 20:00 telt hij de week op.
-4. **Zorg voor een vast moment van verantwoording.** Vrijdagmiddag: uren geteld, en één zin over wat de gemiste blokken heeft opgegeten. Dat laatste is het nuttigste deel, want daar staat het patroon in.
+3. **Houd een zichtbaar scorebord bij.** Blokken staan als afspraak in de agenda (kalender "Planning"). Bij de bestaande afsluitritueel-afspraak van 20:00 zet hij achter elk blok een ✓ of ✗. Zaterdag 07:30, bij "Week plannen", telt hij de week op.
+4. **Zorg voor een vast moment van verantwoording.** Het blok "Week plannen" op zaterdag 07:30 is dat moment: uren geteld, en één zin over wat de gemiste blokken heeft opgegeten. Dat laatste is het nuttigste deel, want daar staat het patroon in.
 
 Het afsluitritueel van 20:00 staat er al. Newport hecht daar veel waarde aan: een expliciet einde ("shutdown complete") laat je hersenen los, en zonder dat einde kauwt de dag door en is de volgende ochtend minder scherp. Dus die 20:00-afspraak is geen luxe, het is onderhoud aan het ochtendblok.
 

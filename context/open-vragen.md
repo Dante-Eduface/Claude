@@ -1,95 +1,73 @@
 # Open vragen
 
-_Aangelegd 19-09-2026._
+_Aangelegd 19-09-2026, grote opschoonronde dezelfde dag._
 
-De enige plek waar openstaande vragen aan Dante staan, werk en persoonlijk door elkaar. Een vraag die hier staat is een vraag die ik **niet zelf mag invullen**.
+De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat is een vraag die ik **niet zelf mag invullen**.
 
 ## Hoe deze lijst werkt
 
 - Kom ik iets tegen dat ik niet zeker weet, dan komt het hier te staan met de datum. Niet raden, niet "waarschijnlijk".
-- **In de chat** stel ik er hoogstens twee of drie per keer, en alleen als het gesprek er toch al over gaat. Twintig vragen op een rij is een formulier.
-- **In dit bestand mogen ze wel allemaal staan.** Dante heeft op 19-09-2026 gezegd dat hij ze liever in één keer beantwoordt door hier te schrijven. Hij zet zijn antwoord achter de vraag of eronder; ik verwerk ze daarna naar het juiste contextbestand.
-- Geeft Dante antwoord, dan gaat het antwoord **direct naar het juiste contextbestand** en gaat de vraag hier weg. Niet op twee plekken laten staan.
-- Blijft een vraag langer dan 90 dagen liggen, dan stel ik hem opnieuw of stel ik voor hem te schrappen omdat hij blijkbaar niet belangrijk is.
+- **In de chat** stel ik er hoogstens twee of drie per keer, en alleen als het gesprek er toch al over gaat.
+- **In dit bestand mag de hele lijst staan.** Dante beantwoordt ze het liefst in één keer door hier te schrijven. Ik verwerk de antwoorden daarna naar het juiste contextbestand en haal de vraag uit de lijst.
+- Blijft een vraag langer dan 90 dagen liggen, dan stel ik hem opnieuw of stel ik voor hem te schrappen.
 - De werkwijze eromheen staat in `.claude/rules/context-onderhoud.md`.
 
-## Werk
+## Open
 
 | # | Vraag | Waarom het uitmaakt | Sinds |
 |---|---|---|---|
-| W1 | Hoe ziet je werkdag er sinds je CSM bent echt uit? En als een week misgaat, waar gaat hij dan op stuk? | De sectie "Hoe hij werkt" in `context/me.md` is leeg tot hier antwoord op is. Dit stuurt hoe ik taken voorstel. | 19-09-2026 |
-| W2 | Wat is Tjarko Kwee's rol? Hij heeft een eduface.me-adres en een wekelijkse sales sessie met jou en Jeroen. | Staat als OPEN in `context/eduface.md`. | 19-09-2026 |
-| W3 | Waar staat de productpagina? Je noemde hem als de meest uitgewerkte beschrijving van het product. | Zodat ik ernaar kan verwijzen in plaats van uit `eduface-product.md` te parafraseren. | 19-09-2026 |
-| W4 | Hoe en hoe vaak meten we de Enterprise-NPS nu? | Een doel van boven de 50 zonder meetmoment is geen doel. | 19-09-2026 |
-| W5 | Na twee weken deep work: welk weektarget zetten we vast? | Staat nu als opbouw in `context/current-priorities.md`, moet één getal worden. | Vanaf 03-10-2026 |
-| W6 | De skills-backlog in `CLAUDE.md` heeft twee punten over LinkedIn-ads (wekelijkse ad sets, campagne-analyse). Je doet geen LinkedIn-ads meer. Eraf, of laten staan voor later? | Anders bouwen we ooit een skill voor werk dat je niet doet. | 19-09-2026 |
-| W7 | Wat telt als een "gestart salesproces"? Welke status of pipelinefase in Close moet ik tellen om te zien of je de 20 van deze maand haalt? | Zonder die definitie kan `/task-planning` niet zeggen hoeveel er nog te gaan zijn, en is het doel niet te meten. | 19-09-2026 |
-
-## Persoonlijk
-
-De lijst van dertien uit `context/personal.md`, opgeschoond. De twee football-vragen zijn vervallen (je bent gestopt) en de Utrecht-vraag is beantwoord (kantoor Utrecht, jij blijft in Leiden).
-
-| # | Vraag | Sinds |
-|---|---|---|
-| P1 | Je 5- en 10-jaarsambities zijn afgekeurd als niet meer accuraat en staan nu nergens. Wat zijn ze nu wel? Of is er bewust even geen lange-termijndoel? | 19-09-2026 |
-| P2 | Wat doe je concreet anders in je werk nu je CSM bent en geen SDR meer? | 19-09-2026 (was Q1) |
-| P3 | Is Eduface een thuis voor 3 tot 5 jaar, of een leerplek waar je op enig moment weggaat? | 19-09-2026 (was Q2) |
-| P4 | Het salarismoment van september is geweest. Wat is eruit gekomen, en heb je rolduidelijkheid of een pad naar CRO besproken? | 19-09-2026 (was Q3) |
-| P5 | ~~Twee tegenstrijdige inkomens.~~ Opgelost uit de afschriften, bevestiging staat nu als G2. | 19-09-2026 |
-| P6 | ~~Automatisch sparen.~~ Verplaatst naar G13, met de cijfers erbij. | 19-09-2026 (was Q7) |
-| P7 | Als de angst om alleen te zijn er niet was, was je dan nog bij haar? | 19-09-2026 (was Q8) |
-| P8 | Welke vakjes vinkt ze niet aan, en hoe zwaar wegen die over 5 tot 10 jaar? | 19-09-2026 (was Q9) |
-| P9 | Heb je een concreet startup-idee, of is het nog een gevoel zonder inhoud? | 19-09-2026 (was Q10) |
-| P10 | Als Eduface geen exit maakt, wat is dan je route naar oprichter? Bootstrappen of ophalen? | 19-09-2026 (was Q11) |
-| P11 | Welke ene vaardigheid wil je het komende jaar het hardst ontwikkelen? | 19-09-2026 (was Q12) |
-| P12 | Wanneer begin je met content, en in welke vorm? | 19-09-2026 (was Q13) |
-| P13 | Is er iets van het Spaans gekomen sinds juni? | 19-09-2026 |
-| P14 | Je bent gestopt met American football. Blijft het bij 4x gym per week, of komt er weer een competitieve sport bij? | 19-09-2026 |
-
-## Geld
-
-_Uit de afschriften en de geldplan-app die je op 19-09-2026 deelde. Wat ik gemeten heb staat in `context/personal.md`, dit is wat de cijfers niet vertellen._
-
-| # | Vraag | Waarom ik het vraag | Sinds |
-|---|---|---|---|
-| G1 | Je salaris komt van **Blockbook B.V.** Is dat de loonentiteit van Eduface, of is dat iets anders? | Nergens in de repo staat die naam, en ik wil niet gokken dat het hetzelfde bedrijf is. | 19-09-2026 |
-| G2 | Juli 2.118, augustus 2.147. Is dat je nieuwe vaste netto, en wat is het bruto? | Het oude bestand zei 2.200 bruto / 1.600 netto vanaf september. Dat klopt geen van beide. | 19-09-2026 |
-| G3 | Het "salarismoment september" uit je levensplan: is dat vervallen omdat de verhoging in juli kwam, of komt er nog een gesprek? | Hangt samen met P4 (rolduidelijkheid en pad naar CRO). | 19-09-2026 |
-| G4 | Elke maand gaat er 350 tot 400 euro weg met de omschrijving "hulp voor het huis". Is dat kostgeld? Vast bedrag? Loopt dat door tot je uit huis gaat? | Het is na reizen je grootste vaste post en bepaalt wat je echt kunt sparen. | 19-09-2026 |
-| G5 | In september kwam er 950 euro binnen van je vader, en in de app staat precies 950 als schuld. Waarvoor was dat, en wanneer moet het terug? | Het drukt je vermogen met 950 en er staat geen aflosdatum bij. | 19-09-2026 |
-| G6 | Je hebt vijf rekeningen. Vier kan ik thuisbrengen (betaal, uit huis, Curaçao, zorgtoeslag). De vijfde heeft maar vier transacties. Waar is die voor? | Anders reken ik straks met een pot die ergens anders voor is. | 19-09-2026 |
-| G7 | Maart tot september ging er ongeveer 2.700 euro naar NS en NS Internationaal. **Krijg je die reiskosten vergoed door Eduface, of betaal je dat zelf?** | Dit is je grootste uitgavenpost, groter dan boodschappen en vaste lasten samen. Als je het zelf betaalt, is dit de eerste knop om aan te draaien. | 19-09-2026 |
-| G8 | Er staat een vlucht van 947 euro (KLM) en een Booking-reservering van 274 euro. Was dat Curaçao, of iets anders? | Als Curaçao al deels betaald is, klopt het spaardoel van 2.030 niet meer. | 19-09-2026 |
-| G9 | Staat Curaçao op 26-01-2027 vast? Er staat 429 van de 2.030, dus je moet vanaf nu ongeveer 400 per maand apart zetten. | Dat is bijna je hele vrije ruimte. Als de reis vast staat, kan er dit jaar niets anders bij. | 19-09-2026 |
-| G10 | Uit huis op 01-08-2027 met 7.500 euro: staat die datum nog? En waarheen, Leiden of Utrecht? | In die pot staat nu 14,11. Bij het huidige tempo haal je dat niet, dus of de datum of het bedrag moet schuiven. | 19-09-2026 |
-| G11 | Is 10.000 euro vermogen binnen 12 maanden nog het doel? | Staat in de app als kopregel, maar je hebt de app zelf als mogelijk achterhaald bestempeld. | 19-09-2026 |
-| G12 | De verdeling 55 sparen / 35 leven / 10 aandelen: doe je dat echt, of is het een voornemen in de app? | De potjes staan vrijwel leeg, wat erop wijst dat het een voornemen is. | 19-09-2026 |
-| G13 | Zet je op salarisdag automatisch geld apart, of met de hand? En zo ja, hoeveel en naar welke pot? | Dit was Q7 uit je oude lijst en is nog steeds niet beantwoord. Automatisch overboeken is het enige dat zonder discipline werkt. | 19-09-2026 |
-| G14 | Heb je die Trade Republic-rekening al, of moet die nog open? | De aandelenpot staat op 0. Als de rekening er niet is, is 10% naar aandelen nu fictie. | 19-09-2026 |
-
-## Lichaam en training
-
-_Uit de Greek God-bestanden van augustus 2026. Die zijn geschreven toen je nog football speelde, dus een deel is per definitie achterhaald._
-
-| # | Vraag | Waarom ik het vraag | Sinds |
-|---|---|---|---|
-| V1 | Is er na je InBody van augustus (89,4 kg, 10,2%) nog een meting geweest, nu football eruit is? | Alles in je voedingsplan hangt aan die meting. | 19-09-2026 |
-| V2 | 3.100 kcal per dag is berekend mét football erbij. Nu train je vier keer per week en reis je niet meer naar Düsseldorf. **Moet dat getal omlaag?** | Je verbrandt aanzienlijk minder. Hetzelfde eten betekent een snellere bulk dan de 0,3 tot 0,5 kg per maand die je wilde. | 19-09-2026 |
-| V3 | Het schema zegt gym op maandag, woensdag, vrijdag en zondag. Je agenda zegt dinsdag, donderdag, zaterdag en zondag. Welke klopt? | Ik ben van de agenda uitgegaan. Zeg het als dat fout is. | 19-09-2026 |
-| V4 | Gym om 17:00 op di en do betekent dat je de trein van 16:05 pakt en dus rond 15:55 stopt met werken. Is dat afgesproken, of schuift dat? | Het scheelt twee kortere werkdagen per week en bepaalt waar de deep-work-blokken kunnen staan. | 19-09-2026 |
-| V5 | Is 92 tot 96 kg nog het doel nu football weg is? | Dat gewicht was deels functioneel voor je positie. Voor alleen esthetiek kan het antwoord anders zijn. | 19-09-2026 |
-| V6 | Je voedingsdocument staat op naam van **Jeroen, 19 jaar**, maar bevat jouw InBody-cijfers. Plakfout, of klopt dat? | Ik ga er nu van uit dat het jouw document is met de verkeerde naam erboven. Bevestig even. | 19-09-2026 |
-| V7 | Wil je de trainings- en voedingsbestanden (schema's, tracker, onderzoek) in deze repo, of blijven die los? | Het is ongeveer 180 kB aan HTML. Ik heb ze niet toegevoegd zonder dat je het zegt. | 19-09-2026 |
-| V8 | In de handoff staat dat er een trainings-app met login en database gebouwd moet worden. Is dat nog actueel? | Eerlijke vraag: dit is precies zo'n vijfde feestje. Je hebt een werkende tracker en een schema. Een app bouwen kost weken en verandert niets aan of je traint. | 19-09-2026 |
+| A1 | **De trein tegen blok 1.** Je blok begint om 07:00, maar je zit pas rond 07:35 op kantoor. Pak je een vroegere trein, of schuift blok 1 naar 07:40 tot 09:40? | Zonder keuze mist blok 1 vier dagen per week 35 minuten. Zie `references/deep-work.md`. | 19-09-2026 |
+| A2 | **Geen afspraken voor 12:00.** Blok 2 loopt tot 12:00 en daar begint nu ongeveer een kwart van je afspraken. Zet je die grens echt op 12:00 in Calendly? | Dit is de enige regel die het hele schema draagt. | 19-09-2026 |
+| A3 | **Je weekendblokken zijn al bezet.** Zaterdag staat week plannen (07:30) en gym dashboard (09:00), zondag LinkedIn (07:30) en financiele controle (09:00). Zijn dat het deep work van die blokken, of verhuizen ze naar de middag? | Een dashboard bijwerken is shallow werk in een deep-work-blok. Week plannen is wel echt denkwerk. | 19-09-2026 |
+| A4 | **LinkedIn post schrijven staat nog elke zondag 07:30 in je agenda**, terwijl content geen prioriteit is. Eruit, of blijft hij? | Anderhalf uur op je beste tijd van de week aan iets dat je prioriteit niet is. | 19-09-2026 |
+| W3 | Waar staat de productpagina? De map **Platform** in Drive was op 19-09-2026 nog leeg. | Zolang die leeg is blijft `references/eduface-product.md` de bron voor productclaims. | 19-09-2026 |
+| W4 | Wanneer komt de NPS-meting op Enterprise er? | Tot die er is staat het doel in `current-priorities.md` als niet stuurbaar. | 19-09-2026 |
+| W5 | Na twee weken deep work: welk weektarget zetten we vast? | Het schema staat op 31,5 uur. De eerste twee weken zijn een nulmeting. | Vanaf 03-10-2026 |
+| P11 | Welke vaardigheid ontwikkel je het komende jaar? Je zei: die volgt uit de leidende maat. Welke is dat dan? | Zodra de deep-work-uren staan, is dit de logische volgende. | 19-09-2026 |
+| G15 | De actuele standen van je potjes. Je levert hier een nieuw bestand voor. | `context/financien.md` noemt bewust geen bedragen tot dat er is. | 19-09-2026 |
+| V9 | Ga je één keer per week wegen, of stuur je op broekband en gymprestatie? | 2.800 kcal heeft een foutmarge van plus of min 250. Zonder enig signaal kun je niet bijstellen. Zie `references/training/calorieen.md`. | 19-09-2026 |
 
 ## Beantwoord en verwerkt
 
-Blijft staan zodat zichtbaar is wat er al gevraagd is. Het antwoord zelf staat in het genoemde bestand.
+Blijft staan zodat zichtbaar is wat er al gevraagd is. Alles hieronder is op 19-09-2026 beantwoord.
 
-| Vraag | Antwoord | Waar het nu staat | Datum |
-|---|---|---|---|
-| Wanneer moeten de 20 salesprocessen gestart zijn? | Maandelijks 20, doorlopend, geen einddatum | `context/current-priorities.md` | 19-09-2026 |
-| NPS boven 50, van wie? | Alleen de Enterprise-versie, niet PLG | `context/current-priorities.md`, `context/eduface.md` | 19-09-2026 |
-| Verhuis je zelf naar Utrecht? | Nee, kantoor is verhuisd, Dante woont in Leiden | `context/me.md` | 19-09-2026 |
-| Stop je met American football? | Gestopt | `context/personal.md` | 19-09-2026 |
-| Klopt het inkomen van 920 netto uit het oude bestand? | Nee. 1.062 tot mei 2026, daarna rond 2.120. Gemeten uit de afschriften, bevestiging staat als G2 | `context/personal.md` | 19-09-2026 |
+| Vraag | Antwoord | Waar het nu staat |
+|---|---|---|
+| Hoe ziet je werkdag eruit sinds je CSM bent? | De functiewissel veranderde niets, alleen de titel op LinkedIn. Een dag gaat mis als hij ongezond begint te eten. Over een slechte week heeft hij nog niet nagedacht. | `context/me.md` |
+| Wat is Tjarko Kwee's rol? | Sales adviseur en angel investor in Eduface. | `context/eduface.md` |
+| Wanneer moeten de 20 salesprocessen gestart zijn? | Maandelijks 20, doorlopend, geen einddatum. | `context/current-priorities.md` |
+| Wat telt als gestart salesproces, en hoe tel ik dat in Close? | Niet uit Close halen. Vraag het gewoon aan Dante, hij vult het zelf in. | `context/current-priorities.md` |
+| NPS boven 50, van wie? | Alleen de Enterprise-versie, niet PLG. | `context/eduface.md` |
+| Hoe meten we die NPS? | Nu niet. Er is geen meting, dus er valt nog niet op te sturen. | `context/current-priorities.md` |
+| De LinkedIn-ads in de skills-backlog? | Eruit. Doet hij niet meer. | `CLAUDE.md` |
+| Je 5- en 10-jaarsambities? | Bewust geen lange-termijndoelen meer. Eén prioriteit, het hele jaar. | `context/me.md` |
+| Is Eduface een thuis of een leerplek? | Een thuis. Hij blijft. | `context/personal.md` |
+| Het salarismoment van september, pad naar CRO? | Weg. Wil er niet over nadenken of praten. Niet opnieuw opbrengen. | geschrapt |
+| Heb je een startup-idee? Route naar oprichter? | Nee en niet relevant. Focus is Eduface. | `context/personal.md` |
+| Content, wanneer en in welke vorm? | Geen prioriteit. | `context/personal.md` |
+| Spaans? | Geen prioriteit. | `context/personal.md` |
+| Blijft het bij 4x gym? | Ja, di, do, za, zo. Geen competitieve sport erbij. | `context/personal.md` |
+| Is Blockbook B.V. de loonentiteit van Eduface? | Ja, dat is de juridische naam. | `context/eduface.md` |
+| Is 2.118 netto, en wat is bruto? | Wat op de rekening komt is netto. Nu ongeveer 2.000 per maand. | `context/financien.md` |
+| De 950 euro van je vader? | Was voor het boeken van Curaçao. Terugbetalen zodra het salaris binnen is. | `context/financien.md` |
+| De vijfde rekening? | Archiefrekening, geen bestemming. | `context/financien.md` |
+| Worden je reiskosten vergoed? | Nee. Hij is er zelf mee bezig om ze omlaag te krijgen. | `context/financien.md` |
+| Staat Curaçao vast? | Ja, geboekt, 26-01-2027. | `context/financien.md` |
+| Uit huis, waarheen? | Waarschijnlijk Utrecht of Rotterdam. | `context/financien.md` |
+| Is 10.000 euro vermogen nog het doel? | Ja. | `context/financien.md` |
+| Doe je de 55/35/10-verdeling echt? | Ja, met de hand op salarisdag. | `context/financien.md` |
+| Heb je Trade Republic al? | Ja. | `context/financien.md` |
+| Komt er nog een InBody? | Nee, nu niet en later niet. Geen metingen, geen gewichtdoel. | `context/personal.md` |
+| Mogen de calorieën omlaag? | Ja. Herrekend naar 2.800. | `references/training/calorieen.md` |
+| Gym ma/wo/vr/zo of di/do/za/zo? | Di, do, za, zo. De agenda klopt, het oude schema niet. | `context/personal.md` |
+| Klopt het dat je di en do eerder stopt met werken voor de gym? | Ja, bewust. | `context/personal.md` |
+| Gewichtdoel 92 tot 96 kg? | Geen gewichtdoel. Hij wil gewoon groter worden. | `context/personal.md` |
+| Waarom staat Jeroen's naam op je voedingsdocument? | Kladartefact, ze werken in hetzelfde document. De cijfers zijn van Dante. | `context/personal.md` |
+| Trainingsbestanden in de repo? | Ja. | `references/training/` |
+| Moet er een trainingsapp gebouwd worden? | Nee. | `context/personal.md` |
+| Twee tegenstrijdige inkomens (920 en 2.118)? | Achterhaald. Nu ongeveer 2.000 netto. | `context/financien.md` |
+| Hoeveel zet je automatisch opzij? | Niets automatisch, hij doet het met de hand. | `context/financien.md` |
+| Verhuis je zelf naar Utrecht? | Nog niet. Kantoor is verhuisd, hij woont in Leiden. | `context/me.md` |
+| Stop je met American football? | Gestopt. | `context/personal.md` |
+| De relatievragen. | Geschrapt op zijn verzoek. Niet meer opbrengen. | geschrapt |
+| "Hulp voor het huis" en de oude uitgaven? | Geschrapt. Kijk vooruit, niet naar het verleden. De situatie is anders. | geschrapt |

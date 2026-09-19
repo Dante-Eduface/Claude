@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>me.eduface.shift</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/zsh</string>
+    <string>/Users/User/Library/Application Support/eduface/run-shift-nacht.sh</string>
+  </array>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <!-- Welke agents er deze ronde mogen draaien. Terwijl Dante aan de skills
+         van agent 3 en 4 werkt staan die uit: anders schrijft de nacht berichten
+         volgens een skill die de dag erna verandert. Zet hem op 1,2,3,4 zodra
+         die skills staan zoals hij ze wil. -->
+    <key>SHIFT_AGENTS</key>
+    <string>1,2</string>
+    <key>SHIFT_MARKT</key>
+    <string>uk</string>
+    <!-- Tot hoe laat de ronde doorwerkt. Een klok-eindtijd en geen duur, want
+         een duur telt slaaptijd mee: 17-09 startte hij om 02:00, sliep de Mac
+         vijf uur, en was het budget op voordat agent 1 begon. -->
+    <key>SHIFT_STOP_UUR</key>
+    <string>8</string>
+  </dict>
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>
+    <integer>2</integer>
+    <key>Minute</key>
+    <integer>0</integer>
+  </dict>
+  <key>RunAtLoad</key>
+  <false/>
+  <key>StandardOutPath</key>
+  <string>/Users/User/Library/Logs/eduface-shift-nacht.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/User/Library/Logs/eduface-shift-nacht.err.log</string>
+</dict>
+</plist>

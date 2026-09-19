@@ -1,0 +1,310 @@
+<style>
+:root{
+  --ink:#1C1410;--mut:#8A7A6D;--line:#E2D9D0;
+  --card:#FFFAF6;--bg:#F3EDE6;--row:#F8F3EE;
+  --green:#2B6B2B;--red:#B52E2E;--amber:#A86A20;
+  --gfill:rgba(43,107,43,.1);--rfill:rgba(181,46,46,.1);
+  --wmup:rgba(168,106,32,.08);
+  --mono:'SF Mono',Menlo,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font:14px/1.6 system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--ink);padding:20px}
+h1{font-size:20px;font-weight:700;letter-spacing:-.02em;margin-bottom:3px}
+.sub{font-size:11px;color:var(--mut);margin-bottom:18px}
+
+/* TABS */
+.tabs{display:flex;gap:4px;margin-bottom:16px;flex-wrap:wrap}
+.tab{padding:7px 18px;border:1px solid var(--line);border-radius:3px;font-size:12px;cursor:pointer;background:var(--card);color:var(--mut);font-weight:500}
+.tab.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+.tab-content{display:none}
+.tab-content.show{display:block}
+
+/* DAY HEADER */
+.day-header{background:var(--card);border:1px solid var(--line);border-radius:3px;padding:12px 16px;margin-bottom:12px;display:flex;justify-content:space-between;align-items:flex-start}
+.day-title{font-size:17px;font-weight:700;margin-bottom:2px}
+.day-focus{font-size:11px;color:var(--mut)}
+.total-time{font-size:10px;color:var(--mut);font-family:var(--mono);text-align:right}
+
+/* WARMUP DYNAMIC SECTION */
+.warmup-section{background:rgba(168,106,32,.06);border:1px solid rgba(168,106,32,.25);border-radius:3px;padding:11px 14px;margin-bottom:12px}
+.warmup-title{font-size:10px;text-transform:uppercase;letter-spacing:.09em;font-weight:700;color:var(--amber);margin-bottom:8px}
+.stretch-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:5px}
+.stretch-item{font-size:11px;color:var(--mut);display:flex;gap:5px;line-height:1.4}
+.stretch-item::before{content:"→";color:var(--amber);flex-shrink:0;font-size:10px;margin-top:1px}
+
+/* EXERCISE TABLE */
+.ex-table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:3px;overflow:hidden;margin-bottom:14px}
+.ex-table th{text-align:left;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);font-weight:700;padding:8px 13px;border-bottom:1px solid var(--line);background:var(--row)}
+.ex-table td{padding:9px 13px;border-bottom:1px solid #F0EBE5;vertical-align:top;font-size:13px}
+.ex-table tr:last-child td{border-bottom:none}
+.ex-table tr:hover td{background:var(--row)}
+
+/* Warm-up rows */
+.ex-table tr.wu td{background:var(--wmup);font-size:12px}
+.ex-table tr.wu:hover td{background:rgba(168,106,32,.14)}
+.wu-label{font-size:9px;text-transform:uppercase;letter-spacing:.07em;color:var(--amber);font-weight:700;display:block;margin-bottom:1px}
+
+td.num{font-family:var(--mono);color:var(--mut);text-align:center;width:26px;font-size:11px}
+td.sets-col{font-family:var(--mono);font-weight:700;text-align:center;width:100px;white-space:nowrap}
+td.sets-col.work{color:var(--green)}
+td.sets-col.wu-sets{color:var(--amber)}
+td.sets-col.mev{color:var(--mut)}
+
+.ex{font-weight:600;margin-bottom:2px;font-size:13px}
+.why{font-size:11px;color:var(--mut);line-height:1.5}
+
+.pill{display:inline-block;font-size:10px;border-radius:2px;padding:1px 6px;border:1px solid;margin-right:2px;white-space:nowrap}
+.pill.mav{background:var(--gfill);border-color:rgba(43,107,43,.3);color:var(--green);font-weight:600}
+.pill.mev{background:#F5F0EC;border-color:#C8BDB6;color:var(--mut)}
+.drop{display:inline-block;font-size:9px;background:rgba(168,106,32,.12);border:1px solid rgba(168,106,32,.3);border-radius:2px;padding:1px 5px;color:var(--amber);font-weight:700;margin-left:3px;vertical-align:middle}
+
+/* LEGEND */
+.legend{display:flex;gap:14px;margin-bottom:14px;flex-wrap:wrap}
+.leg{display:flex;align-items:center;gap:5px;font-size:11px;color:var(--mut)}
+.leg-box{width:12px;height:12px;border-radius:2px;flex-shrink:0}
+
+/* REST TIMES */
+.rest-box{background:var(--card);border:1px solid var(--line);border-radius:3px;padding:10px 14px;font-size:12px;color:var(--mut);line-height:1.7}
+.rest-box strong{color:var(--ink)}
+
+/* RESEARCH BOX */
+.research-box{background:var(--row);border:1px solid var(--line);border-radius:3px;padding:11px 14px;margin-bottom:12px}
+.research-title{font-size:10px;text-transform:uppercase;letter-spacing:.09em;font-weight:700;color:var(--mut);margin-bottom:7px}
+.research-item{font-size:12px;color:var(--mut);margin-bottom:5px;display:flex;gap:7px;line-height:1.5}
+.research-item:last-child{margin-bottom:0}
+.ri-stat{font-family:var(--mono);font-size:11px;font-weight:700;color:var(--green);background:var(--gfill);border:1px solid rgba(43,107,43,.25);border-radius:2px;padding:0 5px;flex-shrink:0}
+</style>
+
+<h1>Volledig Trainingsschema</h1>
+<p class="sub">Upper A · Upper B · Lower A · Lower B — inclusief opwarmsets en dynamische stretches</p>
+
+<div class="legend">
+  <div class="leg"><div class="leg-box" style="background:var(--wmup);border:1px solid rgba(168,106,32,.4)"></div>Opwarmset (niet tot failure)</div>
+  <div class="leg"><div class="leg-box" style="background:var(--gfill);border:1px solid rgba(43,107,43,.4)"></div>Werkset — MAV prioriteit</div>
+  <div class="leg"><div class="leg-box" style="background:#F5F0EC;border:1px solid #C8BDB6"></div>Werkset — MEV</div>
+</div>
+
+<div class="tabs">
+  <button class="tab active" onclick="show('ua',this)">Upper A</button>
+  <button class="tab" onclick="show('ub',this)">Upper B</button>
+  <button class="tab" onclick="show('la',this)">Lower A</button>
+  <button class="tab" onclick="show('lb',this)">Lower B</button>
+</div>
+
+<!-- ══════════ UPPER A ══════════ -->
+<div class="tab-content show" id="tab-ua">
+  <div class="day-header">
+    <div>
+      <div class="day-title">Upper A</div>
+      <div class="day-focus">Platte chest · Pull-up · Schoudervolume · Triceps long head · Proximale biceps</div>
+    </div>
+    <div class="total-time">~70–80 min</div>
+  </div>
+
+  <div class="warmup-section">
+    <div class="warmup-title">Dynamische opwarming — 3–5 min</div>
+    <div class="stretch-grid">
+      <div class="stretch-item">Schouder pass-throughs met stang of band: 15 reps snel tempo</div>
+      <div class="stretch-item">Armcirkels voor- en achteruit: 15 reps per kant</div>
+      <div class="stretch-item">Band pull-aparts: 15 reps</div>
+      <div class="stretch-item">Scapula pull-ups (hangen + schouderbladen intrekken): 8 reps</div>
+      <div class="stretch-item">Thoracale rotaties vanuit handen-en-knieën: 10 reps per kant</div>
+    </div>
+  </div>
+
+  <table class="ex-table">
+    <thead><tr><th style="width:26px">#</th><th>Oefening</th><th style="width:100px;text-align:center">Sets × Reps</th><th>Spier</th></tr></thead>
+    <tbody>
+      <!-- BENCH -->
+      <tr class="wu"><td class="num">1</td><td><span class="wu-label">Opwarmset</span>Lege stang × 8 / 50% × 5 / 70% × 3 / 85% × 1</td><td class="sets-col wu-sets">4 sets</td><td><span class="pill mev">Opwarming</span></td></tr>
+      <tr><td class="num">1</td><td><div class="ex">Bench Press (Barbell)</div><div class="why">Zwaarste compound vers gedaan. Mid/onderkant borst — complement op incline in Upper B.</div></td><td class="sets-col mev">2 × 6–8</td><td><span class="pill mev">Chest</span></td></tr>
+      <!-- PULL UP -->
+      <tr class="wu"><td class="num">2</td><td><span class="wu-label">Opwarmset</span>Bodyweight pull-ups × 5 (je bent al warm)</td><td class="sets-col wu-sets">1 set</td><td><span class="pill mev">Opwarming</span></td></tr>
+      <tr><td class="num">2</td><td><div class="ex">Weighted Pull-Up</div><div class="why">Verticale pull = lat breedte. +15–20 kg. V-taper prioriteit — vers gedaan direct na bench.</div></td><td class="sets-col work">3 × 4–6</td><td><span class="pill mav">Lats</span></td></tr>
+      <!-- LATERAL RAISE -->
+      <tr><td class="num">3</td><td><div class="ex">Lateral Raise (Dumbbell)<span class="drop">DROPSET</span></div><div class="why">15 reps → −30% → 12 reps → −30% → 10 reps zonder rust. Dan 2–3 min rust. 3× herhalen. Geen opwarmset nodig na de compounds.</div></td><td class="sets-col work">3× dropset</td><td><span class="pill mav">Schouders</span></td></tr>
+      <!-- INCLINE ROW -->
+      <tr><td class="num">4</td><td><div class="ex">Chest-Supported Row (Dumbbell)</div><div class="why">Borst op bank = geen momentum. Mid-rug dikte. Direct naar werkgewicht — spieren zijn warm.</div></td><td class="sets-col mev">2 × 10–12</td><td><span class="pill mev">Mid-rug</span></td></tr>
+      <!-- TRICEPS -->
+      <tr><td class="num">5</td><td><div class="ex">Triceps Extension (Cable) — overhead</div><div class="why">Arm omhoog = triceps maximaal uitgerekt. +40% meer groei vs pushdown (Maeo 2023). Beste tricepsoefening qua bewijs.</div></td><td class="sets-col mev">2 × 10–12</td><td><span class="pill mev">Triceps</span></td></tr>
+      <!-- INCLINE CURL -->
+      <tr><td class="num">6</td><td><div class="ex">Incline Curl (Dumbbell) — één arm</div><div class="why">Schouder achterover = bovenstuk biceps groeit meer (Kassiano 2025). Eén arm tegelijk voor betere focus en supinatie.</div></td><td class="sets-col mev">2 × 10–12</td><td><span class="pill mev">Biceps boven</span></td></tr>
+      <!-- REVERSE FLY -->
+      <tr><td class="num">7</td><td><div class="ex">Reverse Fly (Cable)</div><div class="why">Achterste schouder isolatie. Aan het einde — kleine spier, weinig vermoeidheid.</div></td><td class="sets-col mev">2 × 12–15</td><td><span class="pill mev">Achterste delt</span></td></tr>
+      <!-- AB WHEEL -->
+      <tr><td class="num">8</td><td><div class="ex">Ab Wheel</div><div class="why">Bovenste buik. Anti-extensie = buik trainen zonder de taille te verbreden. Begin op knieën.</div></td><td class="sets-col mev">2 × max</td><td><span class="pill mev">Core</span></td></tr>
+    </tbody>
+  </table>
+
+  <div class="rest-box"><strong>Rusttijden:</strong> Tussen opwarmsets: 60 sec · Tussen werksets compounds: 2–3 min · Tussen werksets isolatie: 90 sec–2 min</div>
+</div>
+
+<!-- ══════════ UPPER B ══════════ -->
+<div class="tab-content" id="tab-ub">
+  <div class="day-header">
+    <div>
+      <div class="day-title">Upper B</div>
+      <div class="day-focus">Bovenkant chest (30°) · Lat pulldown · Schoudervolume · Distale biceps · Onderste buik</div>
+    </div>
+    <div class="total-time">~70–80 min</div>
+  </div>
+
+  <div class="warmup-section">
+    <div class="warmup-title">Dynamische opwarming — 3–5 min</div>
+    <div class="stretch-grid">
+      <div class="stretch-item">Thoracale extensie over bank (ruggengraat achterover): 10 reps, 1 sec vasthouden</div>
+      <div class="stretch-item">Thoracale rotaties: 10 reps per kant</div>
+      <div class="stretch-item">Band pull-aparts: 15 reps</div>
+      <div class="stretch-item">Bodyweight heupscharnieren (rug recht, knieën licht gebogen): 10 reps</div>
+      <div class="stretch-item">Lichte band rows of kabelrows: 15 reps</div>
+    </div>
+  </div>
+
+  <div class="research-box">
+    <div class="research-title">Waarom deze oefeningen — het onderzoek simpel</div>
+    <div class="research-item"><span class="ri-stat">+62%</span> Bovenkant borst bij schuine press vs +32% bij platte bench (Chaves 2020). Vandaar incline als eerste.</div>
+    <div class="research-item"><span class="ri-stat">=</span> Kabel en dumbbell lateral raise geven identieke groei (Larsen 2025). Kabel hier voor variatie in spanning.</div>
+    <div class="research-item"><span class="ri-stat">✓</span> Preacher curl groeit het onderstuk van de biceps. Incline curl (Upper A) groeit het bovenstuk. Samen = complete biceps (Kassiano 2025).</div>
+    <div class="research-item"><span class="ri-stat">✓</span> Hanging leg raise traint de onderste buik. Ab wheel (Upper A) de bovenste. Samen = complete buik.</div>
+  </div>
+
+  <table class="ex-table">
+    <thead><tr><th style="width:26px">#</th><th>Oefening</th><th style="width:100px;text-align:center">Sets × Reps</th><th>Spier</th></tr></thead>
+    <tbody>
+      <!-- INCLINE DB PRESS -->
+      <tr class="wu"><td class="num">1</td><td><span class="wu-label">Opwarmset</span>Licht × 10 / 60% × 6 / 80% × 3</td><td class="sets-col wu-sets">3 sets</td><td><span class="pill mev">Opwarming</span></td></tr>
+      <tr><td class="num">1</td><td><div class="ex">Incline Dumbbell Press (30°)</div><div class="why">Bovenkant borst — het gat dat Upper A laat. Niet steiler dan 35°, anders neemt de schouder over.</div></td><td class="sets-col mev">2–3 × 8–10</td><td><span class="pill mev">Chest boven</span></td></tr>
+      <!-- LAT PULLDOWN -->
+      <tr class="wu"><td class="num">2</td><td><span class="wu-label">Opwarmset</span>1 lichte set × 10 (je bent al warm)</td><td class="sets-col wu-sets">1 set</td><td><span class="pill mev">Opwarming</span></td></tr>
+      <tr><td class="num">2</td><td><div class="ex">Lat Pulldown (Cable)</div><div class="why">Tweede verticale pull voor lat breedte. Breedte grip ~1.5× schouderbreedte. Schouders laag houden.</div></td><td class="sets-col work">3 × 8–10</td><td><span class="pill mav">Lats</span></td></tr>
+      <!-- LATERAL RAISE -->
+      <tr><td class="num">3</td><td><div class="ex">Lateral Raise (Dumbbell of Cable)<span class="drop">DROPSET</span></div><div class="why">Tweede wekelijkse schouderstimulus. Zelfde protocol: 15 → −30% → 12 → −30% → 10 reps, 3× herhalen.</div></td><td class="sets-col work">3× dropset</td><td><span class="pill mav">Schouders</span></td></tr>
+      <!-- CS ROW -->
+      <tr><td class="num">4</td><td><div class="ex">Chest-Supported Row</div><div class="why">Tweede horizontale pull voor rug dikte. Borst op bank = onderrug doet niks, alleen rugspieren trekken.</div></td><td class="sets-col mev">2–3 × 10–12</td><td><span class="pill mev">Mid-rug</span></td></tr>
+      <!-- PREACHER CURL -->
+      <tr><td class="num">5</td><td><div class="ex">Preacher Curl (Dumbbell) — één arm</div><div class="why">Elleboog naar voren = onderstuk biceps + brachialis groeit. Eén arm tegelijk voor bewuste supinatie tijdens de beweging.</div></td><td class="sets-col mev">2 × 10–12</td><td><span class="pill mev">Biceps onder</span></td></tr>
+      <!-- PUSHDOWN -->
+      <tr><td class="num">6</td><td><div class="ex">Triceps Pushdown (Cable)</div><div class="why">Arm langs lichaam — andere hoek dan overhead extension van Upper A. Alle drie de tricepskoppen.</div></td><td class="sets-col mev">2 × 12–15</td><td><span class="pill mev">Triceps</span></td></tr>
+      <!-- REAR DELT -->
+      <tr><td class="num">7</td><td><div class="ex">Rear Delt Fly (Machine of Dumbbell)</div><div class="why">Tweede achterste schouder stimulus. Reverse pec-deck of voorovergebogen dumbbell fly.</div></td><td class="sets-col mev">2 × 12–15</td><td><span class="pill mev">Achterste delt</span></td></tr>
+      <!-- HANGING LEG RAISE -->
+      <tr><td class="num">8</td><td><div class="ex">Hanging Leg Raise</div><div class="why">Onderste buik — complement op ab wheel. Bekken achterover kantelen bovenaan voor buikactivatie, niet alleen benen gooien.</div></td><td class="sets-col mev">2 × max</td><td><span class="pill mev">Core</span></td></tr>
+    </tbody>
+  </table>
+
+  <div class="rest-box"><strong>Rusttijden:</strong> Tussen opwarmsets: 60 sec · Tussen werksets compounds: 2–3 min · Tussen werksets isolatie: 90 sec–2 min</div>
+</div>
+
+<!-- ══════════ LOWER A ══════════ -->
+<div class="tab-content" id="tab-la">
+  <div class="day-header">
+    <div>
+      <div class="day-title">Lower A</div>
+      <div class="day-focus">Squat (diep) · Leg extension (rectus femoris) · Seated leg curl · Hip thrust · Calves</div>
+    </div>
+    <div class="total-time">~70–80 min</div>
+  </div>
+
+  <div class="warmup-section">
+    <div class="warmup-title">Dynamische opwarming — 4–5 min (squat dag heeft meeste mobiliteit nodig)</div>
+    <div class="stretch-grid">
+      <div class="stretch-item">Knie naar de muur (enkel mobiliteit): 15 reps per kant — #1 limiet voor squatdiepte</div>
+      <div class="stretch-item">90/90 heupbeweging (zittend, knieën 90°, draaien): 10 reps per kant</div>
+      <div class="stretch-item">Goblet squat zo diep mogelijk, 2 sec vasthouden onderaan: 8 reps</div>
+      <div class="stretch-item">Been zwaaien voor-achter: 15 reps per been</div>
+      <div class="stretch-item">Been zwaaien zijwaarts: 15 reps per been</div>
+      <div class="stretch-item">Bodyweight squats, steeds dieper: 10 reps</div>
+    </div>
+  </div>
+
+  <div class="research-box">
+    <div class="research-title">Waarom deze oefeningen — het onderzoek simpel</div>
+    <div class="research-item"><span class="ri-stat">✓</span> Diep squatten groeit de quad op alle 6 gemeten punten. Kwart squats op slechts 2 van 6. Diep is niet optioneel (Bloomquist 2013).</div>
+    <div class="research-item"><span class="ri-stat">✓</span> Squat mist de voorste quad bijna volledig. Leg extension is daarom verplicht naast de squat — niet optioneel (Kassiano 2026).</div>
+    <div class="research-item"><span class="ri-stat">2×</span> Seated leg curl groeit hamstrings bijna 2× harder dan liggende leg curl (Maeo 2021). Altijd seated, nooit liggend.</div>
+    <div class="research-item"><span class="ri-stat">=</span> Hip thrust en squat groeien de kont even veel. Hip thrust is aanvulling voor de samengeknepen positie (Plotkin 2023).</div>
+    <div class="research-item"><span class="ri-stat">7×</span> Staande calf raise groeit de grote kuitspier 7× harder dan zittende (+12% vs +1.7%, Kinoshita 2023).</div>
+  </div>
+
+  <table class="ex-table">
+    <thead><tr><th style="width:26px">#</th><th>Oefening</th><th style="width:100px;text-align:center">Sets × Reps</th><th>Spier</th></tr></thead>
+    <tbody>
+      <!-- SQUAT -->
+      <tr class="wu"><td class="num">1</td><td><span class="wu-label">Opwarmset</span>Lege stang × 8 / 40% × 6 / 60% × 4 / 75% × 3 / 85% × 1–2</td><td class="sets-col wu-sets">5 sets</td><td><span class="pill mev">Opwarming</span></td></tr>
+      <tr><td class="num">1</td><td><div class="ex">Back Squat (Barbell) — tot parallel of dieper</div><div class="why">Zwaarste compound vers. Diep = meer quad en kont. Rug recht houden, knieën over tenen.</div></td><td class="sets-col work">3 × 4–6</td><td><span class="pill mav">Quads</span></td></tr>
+      <!-- LEG EXTENSION -->
+      <tr><td class="num">2</td><td><div class="ex">Leg Extension — stoel iets achterover (~40°)</div><div class="why">Traint de voorste quad die squat mist. Stoel iets achterover = nog meer stimulatie van die voorste quad. Direct naar werkgewicht — benen zijn al warm.</div></td><td class="sets-col work">3 × 10–12</td><td><span class="pill mav">Quads</span></td></tr>
+      <!-- SEATED LEG CURL -->
+      <tr><td class="num">3</td><td><div class="ex">Seated Leg Curl</div><div class="why">Zittend = hamstrings uitgerekt bovenaan = bijna 2× meer groei dan liggend (Maeo 2021). Altijd seated, nooit vervangen door lying.</div></td><td class="sets-col work">3 × 10–12</td><td><span class="pill mav">Hamstrings</span></td></tr>
+      <!-- HIP THRUST -->
+      <tr class="wu"><td class="num">4</td><td><span class="wu-label">Opwarmset</span>1 lichte set × 10 met bodyweight of licht gewicht</td><td class="sets-col wu-sets">1 set</td><td><span class="pill mev">Opwarming</span></td></tr>
+      <tr><td class="num">4</td><td><div class="ex">Hip Thrust (Barbell)</div><div class="why">Kont in de samengeknepen positie (bovenaan). Complement op de diepe squat die de kont uitrekt. Groeit kont even veel als squat bij gelijk volume (Plotkin 2023).</div></td><td class="sets-col mev">2 × 8–10</td><td><span class="pill mev">Glutes</span></td></tr>
+      <!-- STANDING CALF -->
+      <tr><td class="num">5</td><td><div class="ex">Standing Calf Raise (Machine)</div><div class="why">Grote kuitspier. Knie gestrekt = grote kuit kan volledig werken. Diepe stretch onderaan 1–3 sec vasthouden. 15–20 reps voor calves.</div></td><td class="sets-col work">3 × 15–20</td><td><span class="pill mav">Kuiten</span></td></tr>
+      <!-- SEATED CALF -->
+      <tr><td class="num">6</td><td><div class="ex">Seated Calf Raise (Machine)</div><div class="why">Diepe kuitspier. Knie gebogen = grote kuit zit niet in de weg. Zelfde diepe stretch principe.</div></td><td class="sets-col mev">2 × 15–20</td><td><span class="pill mev">Kuiten diep</span></td></tr>
+    </tbody>
+  </table>
+
+  <div class="rest-box"><strong>Rusttijden:</strong> Tussen opwarmsets: 60–90 sec · Squat werksets: 3 min · Andere compounds: 2–3 min · Isolatie: 90 sec · Calves: 60–90 sec</div>
+</div>
+
+<!-- ══════════ LOWER B ══════════ -->
+<div class="tab-content" id="tab-lb">
+  <div class="day-header">
+    <div>
+      <div class="day-title">Lower B</div>
+      <div class="day-focus">Hack squat · RDL (hamstrings van heup) · Bulgarian split squat · Calves</div>
+    </div>
+    <div class="total-time">~70–80 min</div>
+  </div>
+
+  <div class="warmup-section">
+    <div class="warmup-title">Dynamische opwarming — 3–5 min</div>
+    <div class="stretch-grid">
+      <div class="stretch-item">Bodyweight heupscharnieren (rug recht, knieën licht gebogen): 12 reps — voorbereiding RDL</div>
+      <div class="stretch-item">Glute bridges (kont omhoog, 1 sec vasthouden): 12 reps — kont activeren</div>
+      <div class="stretch-item">Been zwaaien voor-achter: 15 reps per been — hamstrings losmaken</div>
+      <div class="stretch-item">Knie naar de muur (enkel mobiliteit): 12 reps per kant — voor hack squat diepte</div>
+      <div class="stretch-item">Cat-camel (rug afwisselen bol en hol): 10 reps — wervelkolom losmaken voor RDL</div>
+    </div>
+  </div>
+
+  <div class="research-box">
+    <div class="research-title">Waarom deze oefeningen — het onderzoek simpel</div>
+    <div class="research-item"><span class="ri-stat">✓</span> Verschillende quad oefeningen groeien de quad completer dan één oefening herhalen. Hack squat geeft een andere belastingshoek dan back squat (Fonseca 2014).</div>
+    <div class="research-item"><span class="ri-stat">✓</span> RDL traint de hamstrings via de heup. Seated leg curl (Lower A) traint ze via de knie. Samen dek je de volledige functie — geen overlap, puur aanvulling.</div>
+    <div class="research-item"><span class="ri-stat">✓</span> Bulgarian split squat traint quads en kont op één been. Onthult links/rechts disbalans en legt de nadruk op stabilisatie.</div>
+    <div class="research-item"><span class="ri-stat">2×</span> Calves herstellen snel en reageren goed op hoge frequentie. 2× per week = bijna dubbel zoveel groei als 1× (Kassiano 2024).</div>
+  </div>
+
+  <table class="ex-table">
+    <thead><tr><th style="width:26px">#</th><th>Oefening</th><th style="width:100px;text-align:center">Sets × Reps</th><th>Spier</th></tr></thead>
+    <tbody>
+      <!-- HACK SQUAT -->
+      <tr class="wu"><td class="num">1</td><td><span class="wu-label">Opwarmset</span>Licht × 10 / 60% × 5 / 80% × 2–3</td><td class="sets-col wu-sets">3 sets</td><td><span class="pill mev">Opwarming</span></td></tr>
+      <tr><td class="num">1</td><td><div class="ex">Hack Squat (Machine)</div><div class="why">Rug gesteund = onderrug doet niks, alleen quads werken. Andere belastingshoek dan back squat. Diep gaan voor maximale quadgroei.</div></td><td class="sets-col work">3 × 8–10</td><td><span class="pill mav">Quads</span></td></tr>
+      <!-- RDL -->
+      <tr class="wu"><td class="num">2</td><td><span class="wu-label">Opwarmset</span>Lichte stang × 10 / 50% × 6 (je bent al warm van hack squat)</td><td class="sets-col wu-sets">2 sets</td><td><span class="pill mev">Opwarming</span></td></tr>
+      <tr><td class="num">2</td><td><div class="ex">Romanian Deadlift (RDL)</div><div class="why">Hamstrings via de heup — de functie die seated leg curl (Lower A) niet traint. Rug recht, stang langs de benen, tot je de rek voelt in de achterkant van je been. Niet tot de vloer — tot net onder de knie.</div></td><td class="sets-col work">3 × 8–10</td><td><span class="pill mav">Hamstrings</span></td></tr>
+      <!-- BULGARIAN SPLIT SQUAT -->
+      <tr class="wu"><td class="num">3</td><td><span class="wu-label">Opwarmset</span>1 set bodyweight of zeer licht × 8 per been</td><td class="sets-col wu-sets">1 set</td><td><span class="pill mev">Opwarming</span></td></tr>
+      <tr><td class="num">3</td><td><div class="ex">Bulgarian Split Squat</div><div class="why">Één been tegelijk — ontdekt links/rechts disbalans. Voorste been doet het werk. Achterste voet op bank. Romp iets voorover voor meer kont, rechtop voor meer quad.</div></td><td class="sets-col mev">2–3 × 10–12</td><td><span class="pill mev">Quads + Glutes</span></td></tr>
+      <!-- STANDING CALF -->
+      <tr><td class="num">4</td><td><div class="ex">Standing Calf Raise (Machine)</div><div class="why">Tweede wekelijkse grote kuitstimulus. Calves herstellen snel — 2× per week is beter dan 1×. Diepe stretch, 1–3 sec vasthouden onderaan.</div></td><td class="sets-col work">3 × 15–20</td><td><span class="pill mav">Kuiten</span></td></tr>
+      <!-- SEATED CALF -->
+      <tr><td class="num">5</td><td><div class="ex">Seated Calf Raise (Machine)</div><div class="why">Tweede wekelijkse diepe kuit stimulus. Zelfde protocol als Lower A.</div></td><td class="sets-col mev">2 × 15–20</td><td><span class="pill mev">Kuiten diep</span></td></tr>
+    </tbody>
+  </table>
+
+  <div class="rest-box"><strong>Rusttijden:</strong> Tussen opwarmsets: 60–90 sec · Hack squat werksets: 2–3 min · RDL werksets: 2–3 min · Bulgarian: 2 min per been · Calves: 60–90 sec</div>
+</div>
+
+<script>
+function show(id,btn){
+  document.querySelectorAll('.tab-content').forEach(e=>e.classList.remove('show'));
+  document.querySelectorAll('.tab').forEach(e=>e.classList.remove('active'));
+  document.getElementById('tab-'+id).classList.add('show');
+  btn.classList.add('active');
+}
+</script>

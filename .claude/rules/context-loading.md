@@ -19,8 +19,8 @@ Bij werktaken blijf je in werkcontext. Geen persoonlijke context erbij halen.
 
 ## Persoonlijk (alleen op verzoek)
 
-- Persoonlijke context staat in `context/personal.md`. Dat bestand is **bewust geen `@import`**, dus het laadt nooit vanzelf mee.
-- Lees het alleen als de taak echt persoonlijk is (sport, geld, relatie, persoonlijke administratie).
+- Persoonlijke context staat in `context/personal.md` en `context/financien.md`. Die zijn **bewust geen `@import`**, dus ze laden nooit vanzelf mee.
+- Lees ze alleen als de taak echt persoonlijk is. Sport, eten en leren staan in `personal.md`; alles met geld in `financien.md`.
 - Werk je aan een persoonlijke taak, houd werkcontext er dan buiten.
 
 ## Diepere bronnen
@@ -30,6 +30,7 @@ Niet elke sessie laden, wel naartoe verwijzen in plaats van uit het hoofd bewere
 - Product: `references/eduface-product.md`
 - Prijs: `references/pricing/prijsmodel-psu-26-27.md`
 - Deep work en de agenda-indeling: `references/deep-work.md`
+- Trainingsschema's en de caloriebepaling: `references/training/`
 - Focus en prioriteit: `references/research/focus-these-hormozi.md`
 
 ## Onderhoud

@@ -1,0 +1,358 @@
+<style>
+:root{
+  --ink:#1C1410;--mut:#8A7A6D;--line:#E2D9D0;
+  --card:#FFFAF6;--bg:#F3EDE6;--row:#F8F3EE;
+  --green:#2B6B2B;--red:#B52E2E;--amber:#A86A20;
+  --gfill:rgba(43,107,43,.1);--rfill:rgba(181,46,46,.1);
+  --mono:'SF Mono',Menlo,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font:14px/1.5 system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--ink);padding:24px}
+.header{margin-bottom:18px}
+.header h1{font-size:20px;font-weight:700;letter-spacing:-.02em;margin-bottom:4px}
+.header p{font-size:12px;color:var(--mut)}
+
+.priority-box{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:8px;margin-bottom:18px}
+.pbox{background:var(--card);border:1px solid var(--line);border-radius:3px;padding:11px 13px}
+.pbox.hi{border-left:3px solid var(--green)}
+.pbox.lo{border-left:3px solid #C8BDB6}
+.ptag{font-size:9px;text-transform:uppercase;letter-spacing:.09em;font-weight:700;margin-bottom:3px}
+.pbox.hi .ptag{color:var(--green)}
+.pbox.lo .ptag{color:var(--mut)}
+.pname{font-size:13px;font-weight:700;margin-bottom:2px}
+.pdesc{font-size:10px;color:var(--mut);line-height:1.5}
+.psets{font-family:var(--mono);font-size:11px;margin-top:5px;font-weight:600}
+.pbox.hi .psets{color:var(--green)}
+.pbox.lo .psets{color:var(--mut)}
+
+.tabs{display:flex;gap:4px;margin-bottom:16px}
+.tab{padding:6px 16px;border:1px solid var(--line);border-radius:3px;font-size:12px;cursor:pointer;background:var(--card);color:var(--mut);font-weight:500}
+.tab.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+.tab-content{display:none}
+.tab-content.show{display:block}
+
+.section-label{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);font-weight:700;margin-bottom:12px}
+.focus-tag{font-size:10px;color:var(--mut);font-weight:400;letter-spacing:0;text-transform:none;margin-left:6px}
+
+.legend{display:flex;gap:12px;margin-bottom:14px;flex-wrap:wrap}
+.leg{display:flex;align-items:center;gap:5px;font-size:11px;color:var(--mut)}
+.leg-dot{width:9px;height:9px;border-radius:2px;border:1px solid;flex-shrink:0}
+
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:3px;overflow:hidden;margin-bottom:16px}
+th{text-align:left;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);font-weight:700;padding:9px 13px;border-bottom:1px solid var(--line);background:var(--row)}
+td{padding:9px 13px;border-bottom:1px solid #F0EBE5;vertical-align:top}
+tr:last-child td{border-bottom:none}
+tr.mav-row td{background:rgba(43,107,43,.03)}
+tr.mav-row:hover td,tr:hover td{background:var(--row)}
+td.ord{font-family:var(--mono);font-size:11px;color:var(--mut);text-align:center;width:30px}
+td.sets{font-family:var(--mono);font-size:13px;font-weight:700;text-align:center;width:120px;white-space:nowrap}
+td.sets.mav{color:var(--green)}
+td.sets.mev{color:var(--mut)}
+td.freq{font-size:11px;color:var(--mut);font-family:var(--mono);text-align:center;width:50px}
+
+.exname{font-weight:600;margin-bottom:3px;font-size:14px}
+.exnote{font-size:11px;color:var(--mut);line-height:1.6}
+.study{font-size:10px;color:var(--amber);font-style:italic;margin-top:3px}
+
+.pill{display:inline-block;font-size:10px;border-radius:2px;padding:1px 7px;white-space:nowrap;margin-right:3px;border:1px solid}
+.pill.mav{background:var(--gfill);border-color:rgba(43,107,43,.35);color:var(--green);font-weight:700}
+.pill.mev{background:#F5F0EC;border-color:#C8BDB6;color:var(--mut)}
+
+.badge{display:inline-block;font-size:9px;border-radius:2px;padding:1px 5px;font-weight:700;margin-left:4px;border:1px solid;vertical-align:middle}
+.badge.key{background:var(--gfill);border-color:rgba(43,107,43,.35);color:var(--green)}
+.badge.note{background:rgba(168,106,32,.12);border-color:rgba(168,106,32,.35);color:var(--amber)}
+
+/* vol tab */
+.bar-bg{height:7px;background:#E2D9D0;border-radius:3px;position:relative;overflow:visible;margin:4px 0 3px}
+.bar-fill{height:100%;border-radius:3px;position:absolute;top:0;left:0}
+.bar-mev-line{position:absolute;top:-2px;height:11px;width:1.5px;background:rgba(181,46,46,.55);z-index:2}
+.bar-mav-line{position:absolute;top:-2px;height:11px;width:1.5px;background:rgba(43,107,43,.55);z-index:2}
+.bar-label{display:flex;justify-content:space-between;font-size:9px;color:var(--mut);font-family:var(--mono)}
+.vstatus{font-size:10px;font-weight:700;padding:1px 6px;border-radius:2px;border:1px solid;white-space:nowrap}
+.vstatus.mav{color:var(--green);background:var(--gfill);border-color:rgba(43,107,43,.3)}
+.vstatus.mev{color:var(--mut);background:#F5F0EC;border-color:#C8BDB6}
+
+.note-box{background:var(--card);border:1px solid var(--line);border-radius:3px;padding:13px;font-size:12px;line-height:1.7;color:var(--mut);margin-top:0}
+.note-box strong{color:var(--ink)}
+</style>
+
+<div class="header">
+  <h1>Lower A / Lower B Schema</h1>
+  <p>Evidencebased beentraining voor maximale hypertrofie · 4-daagse Upper/Lower split</p>
+</div>
+
+<div class="priority-box">
+  <div class="pbox hi">
+    <div class="ptag">Prioriteit 1 — MAV</div>
+    <div class="pname">Quads</div>
+    <div class="pdesc">Quad sweep (vastus lateralis) + teardrop (VMO) = meeste visuele impact. Compound + isolatie nodig.</div>
+    <div class="psets">3 sets compound + 3 sets ext.</div>
+  </div>
+  <div class="pbox hi">
+    <div class="ptag">Prioriteit 2 — MAV</div>
+    <div class="pname">Calves</div>
+    <div class="pdesc">Meest verwaarloosde spiergroep. Hoog volume, hoge frequentie, diepe stretch. Standing + seated apart.</div>
+    <div class="psets">3 standing + 2 seated p/sessie</div>
+  </div>
+  <div class="pbox lo">
+    <div class="ptag">Ondersteunend — MEV/MAV</div>
+    <div class="pname">Hamstrings</div>
+    <div class="pdesc">Hip-dominant (RDL) + knee-dominant (seated curl) vereist voor complete ontwikkeling. Lage MRV per sessie.</div>
+    <div class="psets">3 sets RDL + 3 sets curl p/week</div>
+  </div>
+  <div class="pbox lo">
+    <div class="ptag">Ondersteunend — MEV</div>
+    <div class="pname">Glutes</div>
+    <div class="pdesc">Groeit gelijk aan squat bij gelijk volume (Plotkin 2023). Diepe squat + hip thrust dekt beide posities.</div>
+    <div class="psets">2 sets hip thrust p/sessie</div>
+  </div>
+</div>
+
+<div class="tabs">
+  <button class="tab active" onclick="show('a',this)">Lower A</button>
+  <button class="tab" onclick="show('b',this)">Lower B</button>
+  <button class="tab" onclick="show('vol',this)">Volume &amp; MAV</button>
+</div>
+
+<!-- LOWER A -->
+<div class="tab-content show" id="tab-a">
+  <div class="section-label">Lower A <span class="focus-tag">Squat compound · Rectus femoris · Hamstrings · Glutes · Calves</span></div>
+  <div class="legend">
+    <div class="leg"><div class="leg-dot" style="background:var(--gfill);border-color:rgba(43,107,43,.4)"></div> MAV — prioriteit</div>
+    <div class="leg"><div class="leg-dot" style="background:#F5F0EC;border-color:#C8BDB6"></div> MEV — ondersteunend</div>
+    <div class="leg"><span class="badge key">BEWIJS</span> Longitudinaal onderzoek beschikbaar</div>
+  </div>
+  <table>
+    <thead>
+      <tr><th style="width:30px">#</th><th>Oefening</th><th style="width:120px;text-align:center">Sets × Reps</th><th>Spiergroep</th><th style="width:50px;text-align:center">p/week</th></tr>
+    </thead>
+    <tbody>
+      <tr class="mav-row">
+        <td class="ord">1</td>
+        <td>
+          <div class="exname">Back Squat (Barbell) — tot parallel of dieper<span class="badge key">BEWIJS</span></div>
+          <div class="exnote">Zwaarste compound als eerste. Diep squatten (≥90° knieflexie) groeit vastii significant meer op alle zes gemeten sites vs kwart squat. Groeit ook glutes en adductoren meer met diepte (Kubo 2019: glutes +6.7% diep vs +2.2% half).</div>
+          <div class="study">Bloomquist 2013 · Kubo 2019 · Fonseca 2014</div>
+        </td>
+        <td class="sets mav">3 × 4–6</td>
+        <td><span class="pill mav">Quads</span><span class="pill mev">Glutes</span></td>
+        <td class="freq">2×</td>
+      </tr>
+      <tr class="mav-row">
+        <td class="ord">2</td>
+        <td>
+          <div class="exname">Leg Extension (verminderde heupflexie ~40°)<span class="badge key">BEWIJS</span></div>
+          <div class="exnote">Rectus femoris traint niet bij squat of leg press — biarticulaire spier die bij compounds nauwelijks van lengte verandert. Leg extension groeit RF 9.0% vs 4.8% bij leg press. Verminderde heupflexie (stoel achterover of ~40° i.p.v. 90°) stimuleert RF verder.</div>
+          <div class="study">Kassiano JSCR · Larsen 2024 · Maeo 2018</div>
+        </td>
+        <td class="sets mav">3 × 10–12</td>
+        <td><span class="pill mav">Rectus femoris</span></td>
+        <td class="freq">2×</td>
+      </tr>
+      <tr class="mav-row">
+        <td class="ord">3</td>
+        <td>
+          <div class="exname">Seated Leg Curl<span class="badge key">BEWIJS</span></div>
+          <div class="exnote">Seated verslaat lying: heupflexie brengt biarticulaire hamstringkoppen in lengthened positie. Biceps femoris long head +14.4% seated vs +6.5% lying, semitendinosus +23.6% vs +19.3%, semimembranosus +8.2% vs +3.6% (Maeo 2021). Niet vervangen door lying leg curl.</div>
+          <div class="study">Maeo et al. 2021 Med Sci Sports Exerc</div>
+        </td>
+        <td class="sets mav">3 × 10–12</td>
+        <td><span class="pill mav">Hamstrings</span></td>
+        <td class="freq">2×</td>
+      </tr>
+      <tr>
+        <td class="ord">4</td>
+        <td>
+          <div class="exname">Hip Thrust (Barbell)<span class="badge key">BEWIJS</span></div>
+          <div class="exnote">Laadt glutes in verkorte positie (topstand). Gecombineerd met diepe squat (die glutes in stretched positie laadt) dekt dit het volledige glute ROM. Groeit glutes gelijk aan squat bij gelijk volume — hip thrust is aanvulling, niet vervanging (Plotkin/Contreras/Henselmans 2023).</div>
+          <div class="study">Plotkin et al. 2023 Frontiers in Physiology</div>
+        </td>
+        <td class="sets mev">2 × 8–10</td>
+        <td><span class="pill mev">Glutes</span></td>
+        <td class="freq">2×</td>
+      </tr>
+      <tr class="mav-row">
+        <td class="ord">5</td>
+        <td>
+          <div class="exname">Standing Calf Raise (machine)<span class="badge key">BEWIJS</span></div>
+          <div class="exnote">Gastrocnemius doelwit — knie gestrekt. Standing groeit gastrocnemius 12.4% vs 1.7% seated (Kinoshita/Maeo 2023). Diepe stretch met 1–3 seconden pauze onderaan. Volle ROM: gestrekte achillespees = maximale prikkel. Hoge reps (15–20) voor calves.</div>
+          <div class="study">Kinoshita & Maeo 2023 Frontiers in Physiology</div>
+        </td>
+        <td class="sets mav">3 × 15–20</td>
+        <td><span class="pill mav">Gastrocnemius</span></td>
+        <td class="freq">2×</td>
+      </tr>
+      <tr>
+        <td class="ord">6</td>
+        <td>
+          <div class="exname">Seated Calf Raise (machine)</div>
+          <div class="exnote">Soleus doelwit — knie gebogen zet gastrocnemius in actieve insufficiëntie. Soleus groeit gelijkwaardig bij standing of seated (~2–3%), maar voor volledige kuitontwikkeling is directe soleusstimulus nodig. Zelfde diepe stretch principe.</div>
+        </td>
+        <td class="sets mev">2 × 15–20</td>
+        <td><span class="pill mev">Soleus</span></td>
+        <td class="freq">2×</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- LOWER B -->
+<div class="tab-content" id="tab-b">
+  <div class="section-label">Lower B <span class="focus-tag">Hinge hamstrings · Quad volume · Unilateraal · Calves</span></div>
+  <div class="legend">
+    <div class="leg"><div class="leg-dot" style="background:var(--gfill);border-color:rgba(43,107,43,.4)"></div> MAV — prioriteit</div>
+    <div class="leg"><div class="leg-dot" style="background:#F5F0EC;border-color:#C8BDB6"></div> MEV — ondersteunend</div>
+    <div class="leg"><span class="badge key">BEWIJS</span> Longitudinaal onderzoek beschikbaar</div>
+  </div>
+  <table>
+    <thead>
+      <tr><th style="width:30px">#</th><th>Oefening</th><th style="width:120px;text-align:center">Sets × Reps</th><th>Spiergroep</th><th style="width:50px;text-align:center">p/week</th></tr>
+    </thead>
+    <tbody>
+      <tr class="mav-row">
+        <td class="ord">1</td>
+        <td>
+          <div class="exname">Hack Squat of Leg Press<span class="badge key">BEWIJS</span></div>
+          <div class="exnote">Tweede quad compound van de week — anders dan back squat voor variatie en andere belastinghoek. Hack squat biast vastus lateralis (sweep) door de compacte stap. Leg press groeit vastii gelijk aan knee extension terwijl ook glutes en adductoren meegroeien (Kinoshita/Maeo MSSE 2026).</div>
+          <div class="study">Kinoshita & Maeo MSSE 2026</div>
+        </td>
+        <td class="sets mav">3 × 8–10</td>
+        <td><span class="pill mav">Quads</span></td>
+        <td class="freq">2×</td>
+      </tr>
+      <tr class="mav-row">
+        <td class="ord">2</td>
+        <td>
+          <div class="exname">Romanian Deadlift (RDL)<span class="badge key">BEWIJS</span></div>
+          <div class="exnote">Heup-dominant hamstringwerk — traint biarticulaire koppen in lengthened positie via heupflexie. Noodzakelijk complement aan seated leg curl: samen dekken ze zowel de heup- als kniefunctie van de hamstrings. Biceps femoris short head (monoarticulair) groeit alleen met kniefocus — vandaar dat RDL alleen niet voldoende is.</div>
+          <div class="study">Maeo 2021 · Maeo 2022</div>
+        </td>
+        <td class="sets mav">3 × 8–10</td>
+        <td><span class="pill mav">Hamstrings</span><span class="pill mev">Glutes</span></td>
+        <td class="freq">2×</td>
+      </tr>
+      <tr>
+        <td class="ord">3</td>
+        <td>
+          <div class="exname">Leg Extension (normale positie)</div>
+          <div class="exnote">Tweede wekelijkse exposure rectus femoris. Hier kan de normale heuppositie worden gebruikt — lagere prioriteit dan Lower A maar directe RF stimulus blijft nodig. Quads hebben direct leg extension nodig naast compounds.</div>
+        </td>
+        <td class="sets mev">2 × 10–12</td>
+        <td><span class="pill mev">Rectus femoris</span></td>
+        <td class="freq">2×</td>
+      </tr>
+      <tr>
+        <td class="ord">4</td>
+        <td>
+          <div class="exname">Bulgarian Split Squat</div>
+          <div class="exnote">Unilateraal — onthult en corrigeert links/rechts disbalans. Traint quads + glutes met lage rugbelasting. Vergelijkbare quad/glute stimulus als back squat maar meer nadruk op gluteus medius en heupstabilisatoren. Voorste been dominant houden.</div>
+        </td>
+        <td class="sets mev">2 × 10–12</td>
+        <td><span class="pill mev">Quads</span><span class="pill mev">Glutes</span></td>
+        <td class="freq">2×</td>
+      </tr>
+      <tr>
+        <td class="ord">5</td>
+        <td>
+          <div class="exname">Seated Leg Curl<span class="badge key">BEWIJS</span></div>
+          <div class="exnote">Tweede knie-dominante hamstringstimulus van de week — traint de biceps femoris short head (monoarticulair, groeit ALLEEN met kniekrul) en completeert de biarticulaire dekking. Seated, niet lying — betere groei voor de lange koppen.</div>
+          <div class="study">Maeo et al. 2021</div>
+        </td>
+        <td class="sets mev">2 × 10–12</td>
+        <td><span class="pill mev">Hamstrings</span></td>
+        <td class="freq">2×</td>
+      </tr>
+      <tr class="mav-row">
+        <td class="ord">6</td>
+        <td>
+          <div class="exname">Standing Calf Raise (machine)<span class="badge key">BEWIJS</span></div>
+          <div class="exnote">Tweede wekelijkse gastrocnemius stimulus. Calves verdragen hoge frequentie goed door snelle lokale recuperatie. Zelfde protocol: diepe stretch, 1–3 seconden pauze onderaan, volle ROM. Meer volume = meer groei (Kassiano 2024: 12 sets/week significant beter dan 6 sets).</div>
+          <div class="study">Kassiano et al. 2024 Int J Sports Med</div>
+        </td>
+        <td class="sets mav">3 × 15–20</td>
+        <td><span class="pill mav">Gastrocnemius</span></td>
+        <td class="freq">2×</td>
+      </tr>
+      <tr>
+        <td class="ord">7</td>
+        <td>
+          <div class="exname">Seated Calf Raise (machine)</div>
+          <div class="exnote">Tweede soleus stimulus. Soleus is slow-twitch dominant en reageert goed op hoge reps en hoog volume. Samen met Lower A dek je 4 standing + 4 seated sets per week — stevig wekelijks calf volume.</div>
+        </td>
+        <td class="sets mev">2 × 15–20</td>
+        <td><span class="pill mev">Soleus</span></td>
+        <td class="freq">2×</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- VOLUME TAB -->
+<div class="tab-content" id="tab-vol">
+  <div class="section-label">Wekelijks volume per spiergroep vs MEV en MAV</div>
+  <table>
+    <thead>
+      <tr>
+        <th>Spiergroep</th>
+        <th>Lower A</th>
+        <th>Lower B</th>
+        <th style="text-align:center;width:80px">Sets/week</th>
+        <th>MEV → MAV</th>
+        <th style="width:90px">Status</th>
+      </tr>
+    </thead>
+    <tbody id="vol-body"></tbody>
+  </table>
+  <div class="note-box">
+    <strong>Sleutelinzichten uit het onderzoek:</strong><br>
+    · <strong>Seated &gt; lying leg curl</strong> — altijd seated, nooit vervangen door lying (Maeo 2021)<br>
+    · <strong>Leg extension is verplicht</strong> — squat en leg press groeien de rectus femoris niet of nauwelijks<br>
+    · <strong>Hip thrust = aanvulling, geen vervanging</strong> — groeit glutes gelijk aan squat; voeg toe voor de verkorte positiestimulus (Plotkin 2023)<br>
+    · <strong>Standing &gt; seated voor gastrocnemius</strong> — 12.4% vs 1.7% groei (Kinoshita 2023)<br>
+    · <strong>Hamstrings: lage MRV per sessie</strong> — verspreid over twee sessies, niet alles in één dag stapelen<br>
+    · <strong>Calves: hoog volume verdragen</strong> — herstellen snel, 9–12 sets/week optimaal (Kassiano 2024)
+  </div>
+</div>
+
+<script>
+function show(id,btn){
+  document.querySelectorAll('.tab-content').forEach(el=>el.classList.remove('show'));
+  document.querySelectorAll('.tab').forEach(el=>el.classList.remove('active'));
+  document.getElementById('tab-'+id).classList.add('show');
+  btn.classList.add('active');
+}
+const DATA=[
+  {m:"Quads (vastii)",la:"Back squat 3s + Leg ext. 3s",lb:"Hack squat 3s + Leg ext. 2s + BSS 2s",sets:13,mev:6,mav:16,max:24,status:"mav",label:"MAV bereik"},
+  {m:"Rectus femoris",la:"Leg ext. (40° hip) 3s",lb:"Leg ext. 2s",sets:5,mev:4,mav:12,max:24,status:"mev",label:"MEV–MAV"},
+  {m:"Hamstrings",la:"Seated leg curl 3s",lb:"RDL 3s + Seated curl 2s",sets:8,mev:4,mav:12,max:24,status:"mav",label:"MEV–MAV"},
+  {m:"Glutes",la:"Squat (deep) 3s + Hip thrust 2s",lb:"RDL 3s + BSS 2s",sets:10,mev:6,mav:16,max:24,status:"mav",label:"MEV–MAV"},
+  {m:"Gastrocnemius",la:"Standing calf raise 3s",lb:"Standing calf raise 3s",sets:6,mev:4,mav:12,max:24,status:"mav",label:"MAV bereik"},
+  {m:"Soleus",la:"Seated calf raise 2s",lb:"Seated calf raise 2s",sets:4,mev:4,mav:12,max:24,status:"mev",label:"MEV — voeg sets toe"},
+];
+const tbody=document.getElementById('vol-body');
+DATA.forEach(d=>{
+  const fillPct=Math.min(100,(d.sets/d.max)*100);
+  const mevPct=(d.mev/d.max)*100;
+  const mavPct=(d.mav/d.max)*100;
+  const col=d.sets<d.mev?'#B52E2E':d.sets<=d.mav?'#2B6B2B':'#A86A20';
+  const cls=d.sets>=d.mev&&d.sets<=d.mav?'mav':'mev';
+  const tr=document.createElement('tr');
+  tr.innerHTML=`
+    <td><strong>${d.m}</strong></td>
+    <td style="font-size:11px;color:var(--mut)">${d.la}</td>
+    <td style="font-size:11px;color:var(--mut)">${d.lb}</td>
+    <td style="text-align:center;font-family:var(--mono);font-weight:700;color:${col}">${d.sets}</td>
+    <td style="min-width:160px;padding:8px 13px">
+      <div class="bar-bg">
+        <div class="bar-fill" style="width:${fillPct}%;background:${col}"></div>
+        <div class="bar-mev-line" style="left:${mevPct}%"></div>
+        <div class="bar-mav-line" style="left:${mavPct}%"></div>
+      </div>
+      <div class="bar-label">
+        <span>0</span><span style="color:#B52E2E">MEV ${d.mev}</span><span style="color:#2B6B2B">MAV ${d.mav}</span>
+      </div>
+    </td>
+    <td><span class="vstatus ${cls}">${d.label}</span></td>`;
+  tbody.appendChild(tr);
+});
+</script>

@@ -1,0 +1,477 @@
+
+<style>
+:root{
+  --ink:#1C1410;--mut:#8A7A6D;--line:#E2D9D0;
+  --card:#FFFAF6;--bg:#F3EDE6;--row:#F8F3EE;
+  --green:#2B6B2B;--red:#B52E2E;--amber:#A86A20;
+  --gfill:rgba(43,107,43,.11);--rfill:rgba(181,46,46,.11);
+  --mono:'SF Mono',Menlo,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font:14px/1.5 system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--ink)}
+.topbar{display:flex;align-items:center;gap:24px;padding:0 24px;height:48px;background:var(--card);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+.logo{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink)}
+.week-nav{display:flex;align-items:center;gap:6px}
+.week-nav button{background:none;border:1px solid var(--line);border-radius:4px;width:22px;height:22px;cursor:pointer;font-size:13px;color:var(--mut);line-height:1}
+.week-nav button:disabled{opacity:.3;cursor:default}
+.week-nav span{font-size:11px;color:var(--mut);min-width:78px;text-align:center;font-family:var(--mono)}
+.btn-now{background:none;border:1px solid var(--green);border-radius:4px;padding:0 7px;height:20px;color:var(--green);cursor:pointer;font-size:9px;font-weight:700;letter-spacing:.05em}
+.ib-stats{display:flex;gap:20px;border-left:1px solid var(--line);padding-left:20px}
+.ib-stat{text-align:center}
+.ib-stat .lbl{font-size:9px;text-transform:uppercase;letter-spacing:.08em;color:var(--mut);display:block;margin-bottom:1px}
+.ib-stat .val{font-family:var(--mono);font-size:13px;font-weight:600}
+.ib-stat .delta{font-size:9px;margin-left:3px;font-family:var(--mono)}
+.ml-auto{margin-left:auto}
+.layout{display:grid;grid-template-columns:1fr 340px;min-height:calc(100vh - 48px)}
+.col-left{padding:16px 20px;overflow-y:auto;border-right:1px solid var(--line)}
+.col-right{display:flex;flex-direction:column;overflow:hidden}
+.card{background:var(--card);border:1px solid var(--line);border-radius:3px;padding:14px;margin-bottom:10px}
+.card-title{font-size:10px;text-transform:uppercase;letter-spacing:.09em;color:var(--mut);font-weight:700;margin-bottom:12px}
+
+/* Body map */
+.body-map-wrap{display:flex;gap:16px;align-items:flex-start}
+.body-map-legend{display:flex;flex-direction:column;gap:5px;padding-top:4px;font-size:11px;color:var(--mut)}
+.legend-row{display:flex;align-items:center;gap:6px}
+.legend-dot{width:9px;height:9px;border-radius:2px;border-width:1px;border-style:solid;flex-shrink:0}
+.hover-tip{margin-top:10px;padding:7px 8px;background:var(--row);border:1px solid var(--line);border-radius:3px;font-size:11px;display:none}
+.hover-tip.show{display:block}
+.hover-tip .ht-name{font-weight:700;margin-bottom:2px}
+.hover-tip .ht-val{color:var(--mut)}
+
+/* Muscle grid */
+.muscle-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}
+.mc{background:var(--card);border:1px solid var(--line);border-radius:3px;padding:11px;cursor:pointer;transition:border-color .1s}
+.mc.active{border-color:var(--green)}
+.mc.up{border-left:3px solid var(--green)}
+.mc.down{border-left:3px solid var(--red)}
+.mc .mc-label{font-size:9px;text-transform:uppercase;letter-spacing:.08em;color:var(--mut);display:flex;align-items:center;gap:5px;margin-bottom:6px}
+.mc .mc-icon{font-size:11px;color:inherit}
+.mc .mc-delta{display:flex;align-items:baseline;gap:3px}
+.mc .mc-arr{font-size:18px;font-weight:700;line-height:1}
+.mc .mc-pct{font-size:14px;font-weight:700;line-height:1;font-family:var(--mono)}
+.mc .mc-ex{font-size:9px;color:var(--mut);margin-top:5px;display:flex;justify-content:space-between}
+.mc .mc-e1rm{font-family:var(--mono);color:var(--ink);font-weight:600}
+.mc .mc-stale{font-size:8px;background:var(--row);border:1px solid var(--line);border-radius:2px;padding:1px 4px;color:var(--mut);float:right}
+.mc .mc-spark{width:100%;height:34px;margin:5px 0 0;display:block}
+.mc-exlist{margin-top:8px;border-top:1px solid var(--line);padding-top:7px;display:none}
+.mc-exlist.show{display:block}
+.mc-exrow{display:flex;justify-content:space-between;padding:3px 0;font-size:10px;border-bottom:1px solid #F0EBE5}
+.mc-exrow:last-child{border:none}
+.mc-exrow .en{color:var(--mut);flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin-right:6px}
+.mc-exrow .ev{font-family:var(--mono);font-weight:600;white-space:nowrap}
+
+/* Right col sections */
+.score-wrap{display:flex;align-items:center;gap:14px}
+.score-label .sl-head{font-size:13px;font-weight:600;margin-bottom:2px}
+.score-label .sl-week{font-size:10px;color:var(--mut);font-family:var(--mono)}
+.score-label .sl-btn{margin-top:7px;background:none;border:1px solid var(--line);border-radius:3px;padding:2px 8px;font:inherit;font-size:9px;color:var(--mut);cursor:pointer}
+
+/* Goals */
+.goal-row{margin-bottom:11px}
+.goal-row:last-child{margin-bottom:0}
+.goal-top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:4px;font-size:12px}
+.goal-lbl{font-weight:600}
+.goal-nums{font-family:var(--mono);color:var(--ink)}
+.goal-nums span{color:var(--mut);font-weight:400}
+.bar{height:5px;background:#E2D9D0;border-radius:3px;overflow:hidden}
+.bar i{display:block;height:100%;border-radius:3px;background:var(--green)}
+.bar i.amber{background:var(--amber)}
+.bar i.done{background:var(--green)}
+.goal-foot{display:flex;justify-content:space-between;margin-top:2px;font-size:9px;color:var(--mut);font-family:var(--mono)}
+
+/* Coach chat */
+.col-right-inner{display:flex;flex-direction:column;height:100%;min-height:0}
+.chat-msgs{flex:1;overflow-y:auto;padding:12px 14px;min-height:0}
+.chat-msg{margin-bottom:8px;display:flex}
+.chat-msg.user{justify-content:flex-end}
+.chat-bubble{max-width:88%;padding:8px 11px;border-radius:3px;font-size:12px;line-height:1.6;white-space:pre-wrap;border:1px solid var(--line)}
+.chat-msg.user .chat-bubble{background:var(--gfill);border-color:rgba(43,107,43,.25)}
+.chat-msg.asst .chat-bubble{background:var(--card)}
+.thinking{font-size:11px;color:var(--mut);padding:6px 0;display:none}
+.thinking.show{display:block}
+.chat-footer{padding:10px 14px;border-top:1px solid var(--line);flex-shrink:0}
+.chat-input-row{display:flex;gap:6px}
+.chat-input-row input{flex:1;border:1px solid var(--line);border-radius:3px;padding:7px 10px;font:inherit;font-size:12px;background:var(--card);color:var(--ink);outline:none}
+.chat-input-row input:focus{border-color:var(--mut)}
+.chat-input-row button{background:var(--ink);color:#fff;border:none;border-radius:3px;padding:7px 13px;font:inherit;font-size:13px;font-weight:600;cursor:pointer}
+.chat-input-row button:disabled{opacity:.4}
+.chat-chips{display:flex;gap:4px;margin-top:6px;flex-wrap:wrap}
+.chip{font-size:9px;border:1px solid var(--line);border-radius:20px;padding:2px 8px;background:var(--card);color:var(--mut);cursor:pointer}
+.chip:hover{border-color:var(--mut)}
+
+/* Right col is sticky + flex */
+.col-right{display:flex;flex-direction:column;height:calc(100vh - 48px);position:sticky;top:48px}
+.right-scroll{flex:1;overflow-y:auto;padding:16px 14px 0}
+.right-chat{display:flex;flex-direction:column;flex:1;min-height:180px;background:var(--card);border:1px solid var(--line);border-radius:3px;margin-bottom:10px;overflow:hidden}
+.right-chat-title{font-size:10px;text-transform:uppercase;letter-spacing:.09em;color:var(--mut);font-weight:700;padding:12px 14px 8px;border-bottom:1px solid var(--line);flex-shrink:0}
+
+/* Misc */
+.section-stats{display:flex;gap:14px;align-items:center;margin-bottom:10px}
+.section-stats .lbl{font-size:9px;text-transform:uppercase;letter-spacing:.08em;color:var(--mut)}
+.stat-pill{font-size:10px;font-family:var(--mono)}
+.week-num{font-size:10px;color:var(--mut);font-family:var(--mono)}
+</style>
+
+<header class="topbar">
+  <div class="logo">Greek God</div>
+  <nav class="week-nav">
+    <button id="btn-prev" onclick="shiftWeek(1)">‹</button>
+    <span id="wk-lbl">—</span>
+    <button id="btn-next" onclick="shiftWeek(-1)">›</button>
+    <button class="btn-now" id="btn-now" onclick="goNow()" style="display:none">Nu</button>
+  </nav>
+  <div class="ib-stats" id="ib-stats"></div>
+  <div class="ml-auto" style="font-size:10px;color:var(--mut)" id="data-info"></div>
+</header>
+
+<div class="layout">
+  <div class="col-left">
+    <!-- Body map -->
+    <div class="card">
+      <div class="card-title">Spierkaart — <span id="wk-lbl2"></span></div>
+      <div class="body-map-wrap">
+        <svg id="svg-front" viewBox="0 0 100 260" style="width:105px;height:245px;cursor:pointer" onmouseout="hoverM(null)"></svg>
+        <svg id="svg-back" viewBox="0 0 100 260" style="width:105px;height:245px;cursor:pointer" onmouseout="hoverM(null)"></svg>
+        <div class="body-map-legend">
+          <div style="font-size:9px;text-transform:uppercase;letter-spacing:.08em;color:var(--mut);font-weight:700;margin-bottom:3px">Legenda</div>
+          <div class="legend-row"><div class="legend-dot" style="background:var(--gfill);border-color:var(--green)"></div><span>Sterker</span></div>
+          <div class="legend-row"><div class="legend-dot" style="background:var(--rfill);border-color:var(--red)"></div><span>Zwakker</span></div>
+          <div class="legend-row"><div class="legend-dot" style="background:#F0EBE5;border-color:#C8BDB6"></div><span>Gelijk / oud</span></div>
+          <div class="hover-tip" id="hover-tip">
+            <div class="ht-name" id="ht-name"></div>
+            <div class="ht-val" id="ht-val"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Stats + Grid -->
+    <div class="section-stats">
+      <div class="lbl">Spiergroepen</div>
+      <div class="stat-pill" id="stat-up" style="color:var(--green)"></div>
+      <div class="stat-pill" id="stat-down" style="color:var(--red)"></div>
+      <div class="stat-pill" id="stat-stale" style="color:var(--mut)"></div>
+    </div>
+    <div class="muscle-grid" id="muscle-grid"></div>
+  </div>
+
+  <div class="col-right">
+    <div class="right-scroll">
+      <!-- Score -->
+      <div class="card" id="score-card">
+        <div class="card-title">Weekscore</div>
+        <div class="score-wrap">
+          <svg id="score-ring" width="80" height="80" style="transform:rotate(-90deg);flex-shrink:0">
+            <circle cx="40" cy="40" r="32" fill="none" stroke="#E2D9D0" stroke-width="5"/>
+            <circle id="score-arc" cx="40" cy="40" r="32" fill="none" stroke="var(--green)" stroke-width="5" stroke-dasharray="0 201" stroke-linecap="round"/>
+            <text id="score-num" x="40" y="40" text-anchor="middle" dominant-baseline="middle" style="fill:var(--ink);font-size:16px;font-weight:700;transform:rotate(90deg);transform-origin:40px 40px;font-family:system-ui">—</text>
+          </svg>
+          <div class="score-label">
+            <div class="sl-head" id="score-head">—</div>
+            <div class="sl-week" id="score-week"></div>
+            <button class="sl-btn" onclick="doReflect()">↺ Vernieuwen</button>
+          </div>
+        </div>
+      </div>
+      <!-- Goals -->
+      <div class="card">
+        <div class="card-title">Doelen — feb 2027</div>
+        <div id="goals-section"></div>
+      </div>
+    </div>
+    <!-- Coach chat -->
+    <div class="right-chat" style="margin:0 14px 14px">
+      <div class="right-chat-title">Coach</div>
+      <div class="chat-msgs" id="chat-msgs">
+        <div class="thinking show" id="thinking">Coach analyseert je data...</div>
+      </div>
+      <div class="chat-footer">
+        <div class="chat-input-row">
+          <input id="chat-in" placeholder="Stel een vraag..." onkeydown="if(event.key==='Enter')sendMsg()">
+          <button id="send-btn" onclick="sendMsg()">↑</button>
+        </div>
+        <div class="chat-chips">
+          <span class="chip" onclick="setQ('Welke spier heeft aandacht nodig?')">Welke spier?</span>
+          <span class="chip" onclick="setQ('Ben ik op schema voor mijn doelen?')">Op schema?</span>
+          <span class="chip" onclick="setQ('Wat aanpassen volgende week?')">Wat aanpassen?</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const GYM={"2026-W11":{"Chest":{"maxScore":50.7,"exercises":{"Incline Bench Press (Dumbbell)":{"w":40,"r":8,"score":50.7}}},"Rug / Lats":{"maxScore":105,"exercises":{"Lat Pulldown (Cable)":{"w":75,"r":12,"score":105},"Pull Up":{"w":20,"r":4,"score":22.7}}},"Schouders":{"maxScore":38.5,"exercises":{"Seated OHP (Dumbbell)":{"w":27.5,"r":12,"score":38.5}}},"Biceps":{"maxScore":39.2,"exercises":{"Hammer Curl":{"w":28,"r":12,"score":39.2}}},"Triceps":{"maxScore":22.7,"exercises":{"Triceps Dip":{"w":20,"r":4,"score":22.7}}},"Quads":{"maxScore":90.7,"exercises":{"Hack Squat":{"w":80,"r":4,"score":90.7}}},"Glutes":{"maxScore":73.7,"exercises":{"Trap Bar Deadlift":{"w":65,"r":4,"score":73.7},"Hip Thrust":{"w":40,"r":6,"score":48}}},"Core":{"maxScore":52.5,"exercises":{"Cable Crunch":{"w":37.5,"r":12,"score":52.5}}}},"2026-W12":{"Chest":{"maxScore":116.7,"exercises":{"Bench Press (Barbell)":{"w":100,"r":5,"score":116.7},"Incline Bench (DB)":{"w":38,"r":6,"score":45.6}}},"Schouders":{"maxScore":24.7,"exercises":{"Shoulder Press (Machine)":{"w":20,"r":7,"score":24.7}}},"Quads":{"maxScore":210,"exercises":{"Leg Press":{"w":150,"r":12,"score":210}}},"Hamstrings":{"maxScore":76,"exercises":{"Lying Leg Curl":{"w":60,"r":8,"score":76}}},"Core":{"maxScore":12,"exercises":{"Ab Wheel":{"w":0,"r":12,"score":12}}},"Rug / Lats":{"maxScore":18,"exercises":{"Pull Up":{"w":15,"r":6,"score":18}}},"Triceps":{"maxScore":19,"exercises":{"Triceps Dip":{"w":15,"r":8,"score":19}}}},"2026-W14":{"Chest":{"maxScore":113.3,"exercises":{"Bench Press (Barbell)":{"w":100,"r":4,"score":113.3},"Chest Press (Machine)":{"w":70,"r":8,"score":88.7}}},"Rug / Lats":{"maxScore":112,"exercises":{"Lat Pulldown (Cable)":{"w":96,"r":5,"score":112}}},"Schouders":{"maxScore":32.7,"exercises":{"Seated OHP (DB)":{"w":28,"r":5,"score":32.7}}},"Biceps":{"maxScore":30.8,"exercises":{"Preacher Curl":{"w":22,"r":12,"score":30.8}}},"Triceps":{"maxScore":10.5,"exercises":{"Cable Pushdown":{"w":7.5,"r":12,"score":10.5}}},"Quads":{"maxScore":168,"exercises":{"Squat (Barbell)":{"w":120,"r":4,"score":136},"Squat (Machine)":{"w":120,"r":12,"score":168}}},"Glutes":{"maxScore":48,"exercises":{"Hip Thrust":{"w":40,"r":6,"score":48}}},"Core":{"maxScore":52.5,"exercises":{"Cable Crunch":{"w":37.5,"r":12,"score":52.5}}},"Hamstrings":{"maxScore":21.3,"exercises":{"RDL (Dumbbell)":{"w":16,"r":10,"score":21.3}}}},"2026-W15":{"Glutes":{"maxScore":110,"exercises":{"Trap Bar Deadlift":{"w":100,"r":3,"score":110},"Hip Thrust":{"w":60,"r":8,"score":76}}},"Quads":{"maxScore":336,"exercises":{"Leg Press":{"w":280,"r":6,"score":336},"Bulgarian Split Squat":{"w":28,"r":8,"score":35.5}}},"Hamstrings":{"maxScore":120,"exercises":{"Stiff Leg Deadlift":{"w":100,"r":6,"score":120}}},"Core":{"maxScore":12,"exercises":{"Ab Wheel":{"w":0,"r":12,"score":12}}},"Chest":{"maxScore":108,"exercises":{"Bench Press (Barbell)":{"w":90,"r":6,"score":108}}},"Rug / Lats":{"maxScore":112,"exercises":{"Lat Pulldown (Cable)":{"w":96,"r":5,"score":112},"Pendlay Row":{"w":55,"r":8,"score":69.7},"Seated Row (Cable)":{"w":60,"r":12,"score":84}}},"Schouders":{"maxScore":44.3,"exercises":{"Overhead Press (Barbell)":{"w":35,"r":8,"score":44.3},"Face Pull":{"w":26,"r":10,"score":34.7}}},"Triceps":{"maxScore":10.5,"exercises":{"Cable Pushdown":{"w":7.5,"r":12,"score":10.5}}},"Biceps":{"maxScore":39.2,"exercises":{"Hammer Curl":{"w":28,"r":12,"score":39.2}}}},"2026-W18":{"Chest":{"maxScore":101.3,"exercises":{"Bench Press (Barbell)":{"w":80,"r":8,"score":101.3}}},"Rug / Lats":{"maxScore":105.6,"exercises":{"Lat Pulldown (Cable)":{"w":96,"r":3,"score":105.6},"Pendlay Row":{"w":55,"r":8,"score":69.7}}},"Schouders":{"maxScore":53.3,"exercises":{"Overhead Press (Barbell)":{"w":40,"r":10,"score":53.3},"Face Pull":{"w":26,"r":10,"score":34.7}}},"Triceps":{"maxScore":36,"exercises":{"Cable Pushdown":{"w":27,"r":10,"score":36}}},"Biceps":{"maxScore":28,"exercises":{"Hammer Curl":{"w":20,"r":12,"score":28}}}},"2026-W19":{"Glutes":{"maxScore":165,"exercises":{"Trap Bar Deadlift":{"w":150,"r":3,"score":165}}},"Quads":{"maxScore":304,"exercises":{"Leg Press":{"w":240,"r":8,"score":304}}},"Hamstrings":{"maxScore":84,"exercises":{"Stiff Leg Deadlift":{"w":60,"r":12,"score":84}}},"Core":{"maxScore":8.4,"exercises":{"Pallof Press":{"w":6,"r":12,"score":8.4}}},"Chest":{"maxScore":108,"exercises":{"Bench Press (Barbell)":{"w":90,"r":6,"score":108}}},"Rug / Lats":{"maxScore":69.7,"exercises":{"Pendlay Row":{"w":55,"r":8,"score":69.7}}},"Schouders":{"maxScore":56,"exercises":{"Overhead Press (Barbell)":{"w":40,"r":12,"score":56}}}},"2026-W22":{"Glutes":{"maxScore":165,"exercises":{"Trap Bar Deadlift":{"w":150,"r":3,"score":165},"Hip Thrust":{"w":60,"r":8,"score":76}}},"Quads":{"maxScore":304,"exercises":{"Leg Press":{"w":240,"r":8,"score":304},"Bulgarian Split Squat":{"w":28,"r":8,"score":35.5}}},"Hamstrings":{"maxScore":108,"exercises":{"Stiff Leg Deadlift":{"w":90,"r":6,"score":108},"Lying Leg Curl":{"w":60,"r":8,"score":76}}},"Core":{"maxScore":14,"exercises":{"Pallof Press":{"w":10,"r":12,"score":14}}},"Chest":{"maxScore":84,"exercises":{"Bench Press (Barbell)":{"w":60,"r":12,"score":84}}},"Rug / Lats":{"maxScore":77,"exercises":{"Pendlay Row":{"w":70,"r":3,"score":77},"Pull Up":{"w":20,"r":8,"score":25.3}}},"Schouders":{"maxScore":62.3,"exercises":{"Face Pull":{"w":44.5,"r":12,"score":62.3},"Overhead Press":{"w":45,"r":6,"score":54}}}},"2026-W25":{"Quads":{"maxScore":128,"exercises":{"Squat (Barbell)":{"w":120,"r":2,"score":128}}},"Glutes":{"maxScore":128,"exercises":{"Trap Bar Deadlift":{"w":120,"r":2,"score":128}}},"Hamstrings":{"maxScore":5,"exercises":{"Nordic Hamstring Curl":{"w":0,"r":5,"score":5}}},"Core":{"maxScore":14,"exercises":{"Pallof Press":{"w":10,"r":12,"score":14}}},"Kuiten":{"maxScore":52.5,"exercises":{"Standing Calf Raise":{"w":35,"r":15,"score":52.5}}},"Chest":{"maxScore":110,"exercises":{"Bench Press (Barbell)":{"w":100,"r":3,"score":110}}},"Rug / Lats":{"maxScore":70,"exercises":{"Pull Up":{"w":20,"r":8,"score":25.3},"Pendlay Row":{"w":60,"r":5,"score":70}}},"Schouders":{"maxScore":58.3,"exercises":{"Overhead Press (Barbell)":{"w":50,"r":5,"score":58.3},"Push Press":{"w":20,"r":12,"score":28}}},"Biceps":{"maxScore":19.6,"exercises":{"Incline Curl":{"w":14,"r":12,"score":19.6}}},"Triceps":{"maxScore":31.5,"exercises":{"Triceps Extension (Cable)":{"w":22.5,"r":12,"score":31.5}}}},"2026-W26":{"Chest":{"maxScore":120.3,"exercises":{"Bench Press (Barbell)":{"w":95,"r":8,"score":120.3}}},"Rug / Lats":{"maxScore":81.7,"exercises":{"Pull Up":{"w":20,"r":8,"score":25.3},"Pendlay Row":{"w":70,"r":5,"score":81.7}}},"Schouders":{"maxScore":70,"exercises":{"Overhead Press (Barbell)":{"w":60,"r":5,"score":70},"Push Press":{"w":50,"r":12,"score":70}}},"Quads":{"maxScore":101.3,"exercises":{"Squat (Barbell)":{"w":80,"r":8,"score":101.3}}},"Hamstrings":{"maxScore":5,"exercises":{"Nordic Hamstring Curl":{"w":0,"r":5,"score":5}}},"Triceps":{"maxScore":31.5,"exercises":{"Triceps Extension (Cable)":{"w":22.5,"r":12,"score":31.5}}}},"2026-W27":{"Chest":{"maxScore":116.7,"exercises":{"Bench Press (Barbell)":{"w":100,"r":5,"score":116.7}}},"Rug / Lats":{"maxScore":76,"exercises":{"Lat Pulldown (Cable)":{"w":54,"r":12,"score":75.6},"Pendlay Row":{"w":60,"r":8,"score":76}}},"Schouders":{"maxScore":64,"exercises":{"Push Press":{"w":60,"r":2,"score":64},"Lateral Raise (DB)":{"w":14,"r":15,"score":21}}},"Quads":{"maxScore":120,"exercises":{"Squat (Barbell)":{"w":100,"r":6,"score":120}}},"Hamstrings":{"maxScore":5,"exercises":{"Nordic Hamstring Curl":{"w":0,"r":5,"score":5}}},"Triceps":{"maxScore":47.6,"exercises":{"Triceps Extension (Cable)":{"w":34,"r":12,"score":47.6}}},"Biceps":{"maxScore":19.6,"exercises":{"Incline Curl":{"w":14,"r":12,"score":19.6}}}},"2026-W28":{"Chest":{"maxScore":45.6,"exercises":{"Incline Bench (DB)":{"w":38,"r":6,"score":45.6}}},"Rug / Lats":{"maxScore":76,"exercises":{"Pendlay Row":{"w":60,"r":8,"score":76}}},"Schouders":{"maxScore":70,"exercises":{"Push Press":{"w":50,"r":12,"score":70}}},"Glutes":{"maxScore":202.7,"exercises":{"Trap Bar Deadlift":{"w":160,"r":8,"score":202.7}}},"Quads":{"maxScore":132,"exercises":{"Squat (Barbell)":{"w":120,"r":3,"score":132}}},"Hamstrings":{"maxScore":72,"exercises":{"RDL (Barbell)":{"w":60,"r":6,"score":72}}}},"2026-W29":{"Chest":{"maxScore":120,"exercises":{"Bench Press (Barbell)":{"w":100,"r":6,"score":120}}},"Rug / Lats":{"maxScore":81.7,"exercises":{"Pendlay Row":{"w":70,"r":5,"score":81.7},"Pull Up":{"w":20,"r":6,"score":24}}},"Quads":{"maxScore":124,"exercises":{"Squat (Barbell)":{"w":120,"r":1,"score":124}}},"Glutes":{"maxScore":140,"exercises":{"Trap Bar Deadlift":{"w":120,"r":5,"score":140}}},"Hamstrings":{"maxScore":5,"exercises":{"Nordic Hamstring Curl":{"w":0,"r":5,"score":5}}},"Schouders":{"maxScore":68,"exercises":{"Push Press":{"w":60,"r":4,"score":68},"Lateral Raise (Cable)":{"w":14,"r":15,"score":21}}},"Biceps":{"maxScore":28,"exercises":{"Incline Curl":{"w":20,"r":12,"score":28}}},"Triceps":{"maxScore":47.6,"exercises":{"Triceps Extension (Cable)":{"w":34,"r":12,"score":47.6}}}},"2026-W30":{"Chest":{"maxScore":126.7,"exercises":{"Bench Press (Barbell)":{"w":100,"r":8,"score":126.7}}},"Rug / Lats":{"maxScore":80,"exercises":{"Pendlay Row":{"w":60,"r":10,"score":80},"T Bar Row":{"w":50,"r":6,"score":60}}},"Schouders":{"maxScore":21,"exercises":{"Lateral Raise (DB)":{"w":14,"r":15,"score":21}}},"Core":{"maxScore":14,"exercises":{"Pallof Press":{"w":10,"r":12,"score":14}}},"Quads":{"maxScore":101.3,"exercises":{"Squat (Barbell)":{"w":80,"r":8,"score":101.3}}}},"2026-W33":{"Quads":{"maxScore":126.7,"exercises":{"Squat (Barbell)":{"w":100,"r":8,"score":126.7},"Leg Extension":{"w":70,"r":12,"score":98}}},"Hamstrings":{"maxScore":120,"exercises":{"Seated Leg Curl":{"w":75,"r":8,"score":95},"Lying Leg Curl":{"w":55,"r":12,"score":77},"RDL (Barbell)":{"w":100,"r":6,"score":120}}},"Kuiten":{"maxScore":97.5,"exercises":{"Standing Calf Raise":{"w":65,"r":15,"score":97.5}}},"Core":{"maxScore":10,"exercises":{"Hanging Leg Raise":{"w":0,"r":10,"score":10}}},"Schouders":{"maxScore":24,"exercises":{"Lateral Raise (Cable)":{"w":16,"r":15,"score":24}}},"Biceps":{"maxScore":25.3,"exercises":{"Incline Curl":{"w":20,"r":8,"score":25.3}}}}};
+
+const INBODY=[{date:"2026-08-03",weight:89.4,muscle:46.8,fat:10.2},{date:"2026-05-28",weight:92.1,muscle:48.0,fat:10.1}];
+const MUSCLES=["Schouders","Rug / Lats","Chest","Biceps","Triceps","Quads","Hamstrings","Glutes","Core","Kuiten"];
+const WEEKS=Object.keys(GYM).sort();
+const GOALS=[
+  {label:"Gewicht",cur:89.4,start:89.4,target:93,unit:"kg"},
+  {label:"Spiermassa",cur:46.8,start:46.8,target:49.5,unit:"kg"},
+  {label:"Bench e1RM",cur:126.7,start:90,target:145,unit:"kg"},
+  {label:"Squat e1RM",cur:126.7,start:100,target:150,unit:"kg"},
+  {label:"Push Press",cur:70,start:50,target:90,unit:"kg"},
+  {label:"RDL e1RM",cur:120,start:60,target:150,unit:"kg"},
+];
+const ICONS={"Schouders":"◎","Rug / Lats":"▽","Chest":"◆","Biceps":"↑","Triceps":"↓","Quads":"▲","Hamstrings":"▼","Glutes":"○","Core":"⊞","Kuiten":"╎"};
+const SHAPES={
+  front:{"Schouders":[{t:"e",cx:22,cy:45,rx:10,ry:8},{t:"e",cx:78,cy:45,rx:10,ry:8}],"Chest":[{t:"p",d:"M35,40 L50,42 L50,82 L33,79Z"},{t:"p",d:"M50,42 L65,40 L67,79 L50,82Z"}],"Biceps":[{t:"p",d:"M13,52 L24,50 L22,96 L11,96Z"},{t:"p",d:"M76,50 L87,52 L89,96 L78,96Z"}],"Quads":[{t:"p",d:"M35,120 L50,120 L49,192 L34,192Z"},{t:"p",d:"M50,120 L65,120 L66,192 L51,192Z"}],"Core":[{t:"p",d:"M33,83 L67,83 L65,118 L35,118Z"}],"Kuiten":[{t:"p",d:"M34,195 L49,195 L47,245 L32,245Z"},{t:"p",d:"M51,195 L66,195 L68,245 L53,245Z"}]},
+  back:{"Schouders":[{t:"e",cx:22,cy:45,rx:10,ry:8},{t:"e",cx:78,cy:45,rx:10,ry:8}],"Rug / Lats":[{t:"p",d:"M35,38 L50,40 L50,108 L27,102Z"},{t:"p",d:"M50,40 L65,38 L73,102 L50,108Z"}],"Triceps":[{t:"p",d:"M11,52 L22,50 L20,96 L9,96Z"},{t:"p",d:"M78,50 L89,52 L91,96 L80,96Z"}],"Glutes":[{t:"p",d:"M33,118 L67,118 L69,163 L31,163Z"}],"Hamstrings":[{t:"p",d:"M32,165 L50,165 L49,218 L30,218Z"},{t:"p",d:"M50,165 L68,165 L70,218 L51,218Z"}],"Kuiten":[{t:"p",d:"M30,222 L48,222 L46,258 L28,258Z"},{t:"p",d:"M52,222 L70,222 L72,258 L54,258Z"}]}
+};
+
+let weekOffset=0, hovMuscle=null, chatHistory=[], weekScore=null, loadingReflect=false, loadingChat=false;
+
+function getProgress(){
+  const idx=Math.max(0,WEEKS.length-1-weekOffset), cur=WEEKS[idx], prev=idx>0?WEEKS[idx-1]:null;
+  const out={};
+  MUSCLES.forEach(m=>{
+    let lastScore=0,lastWk=null,lastEx={};
+    for(let i=idx;i>=0;i--){if(GYM[WEEKS[i]]&&GYM[WEEKS[i]][m]){lastScore=GYM[WEEKS[i]][m].maxScore;lastWk=WEEKS[i];lastEx=GYM[WEEKS[i]][m].exercises;break;}}
+    const c=GYM[cur]&&GYM[cur][m]?GYM[cur][m].maxScore:0;
+    const p=prev&&GYM[prev]&&GYM[prev][m]?GYM[prev][m].maxScore:0;
+    const hist=WEEKS.slice(Math.max(0,idx-11),idx+1).map(w=>GYM[w]&&GYM[w][m]?GYM[w][m].maxScore:null).filter(v=>v!==null);
+    const delta=p>0?parseFloat(((c-p)/p*100).toFixed(1)):0;
+    const direction=c>p?"up":c<p&&p>0?"down":"flat", stale=c===0&&lastScore>0;
+    out[m]={current:c||lastScore,actualCurrent:c,prev:p,delta,direction,history:hist,exercises:c>0?(GYM[cur]&&GYM[cur][m]?GYM[cur][m].exercises:{}):lastEx,stale,staleWk:stale?lastWk:null};
+  });
+  return out;
+}
+
+function mColor(m,pr){
+  const d=pr[m];
+  if(!d||!d.current) return{fill:"#F0EBE6",stroke:"#C8BDB6"};
+  if(d.stale) return{fill:"#F5F0EC",stroke:"#C8BDB6"};
+  if(d.direction==="up") return{fill:"rgba(43,107,43,.12)",stroke:"#2B6B2B"};
+  if(d.direction==="down") return{fill:"rgba(181,46,46,.12)",stroke:"#B52E2E"};
+  return{fill:"#F0EBE6",stroke:"#B8ADA6"};
+}
+
+function hoverM(m){
+  hovMuscle=m;
+  const tip=document.getElementById("hover-tip");
+  if(!m){tip.classList.remove("show");renderBodyMap();return;}
+  const pr=getProgress();
+  const d=pr[m];
+  document.getElementById("ht-name").textContent=m;
+  let val="Geen data";
+  if(d&&d.current){if(d.stale)val="Niet getraind ("+d.staleWk+")";else if(d.direction==="up")val="↑ +"+d.delta+"%";else if(d.direction==="down")val="↓ "+d.delta+"%";else val="Gelijk";}
+  document.getElementById("ht-val").textContent=val;
+  tip.classList.add("show");
+  renderBodyMap();
+}
+
+function makeSVGBody(view,pr){
+  const ns="http://www.w3.org/2000/svg";
+  const svg=document.getElementById("svg-"+view);
+  while(svg.firstChild)svg.removeChild(svg.firstChild);
+  function el(tag,attrs){
+    const e=document.createElementNS(ns,tag);
+    Object.entries(attrs).forEach(([k,v])=>e.setAttribute(k,v));
+    return e;
+  }
+  // Silhouette
+  svg.appendChild(el("ellipse",{cx:50,cy:18,rx:13,ry:14,fill:"#EDE8E3",stroke:"#D5CEC8","stroke-width":"0.5"}));
+  svg.appendChild(el("path",{d:"M43,32 L57,32 L57,38 L43,38Z",fill:"#EDE8E3",stroke:"none"}));
+  svg.appendChild(el("path",{d:"M26,38 L74,38 L70,118 L30,118Z",fill:"#EDE8E3",stroke:"#D5CEC8","stroke-width":"0.5"}));
+  svg.appendChild(el("path",{d:"M10,46 L26,42 L24,100 L8,100Z",fill:"#EDE8E3",stroke:"#D5CEC8","stroke-width":"0.5"}));
+  svg.appendChild(el("path",{d:"M74,42 L90,46 L92,100 L76,100Z",fill:"#EDE8E3",stroke:"#D5CEC8","stroke-width":"0.5"}));
+  svg.appendChild(el("path",{d:"M30,118 L70,118 L68,198 L32,198Z",fill:"#EDE8E3",stroke:"#D5CEC8","stroke-width":"0.5"}));
+  svg.appendChild(el("path",{d:"M32,198 L50,198 L48,250 L30,250Z",fill:"#EDE8E3",stroke:"#D5CEC8","stroke-width":"0.5"}));
+  svg.appendChild(el("path",{d:"M50,198 L68,198 L70,250 L52,250Z",fill:"#EDE8E3",stroke:"#D5CEC8","stroke-width":"0.5"}));
+  // Muscle regions
+  const shapes=SHAPES[view];
+  MUSCLES.forEach(m=>{
+    const regions=shapes[m]||[];
+    const col=mColor(m,pr);
+    const isActive=hovMuscle===m;
+    regions.forEach((s,i)=>{
+      let e;
+      const fill=isActive?col.stroke+"30":col.fill;
+      const sw=isActive?"1.8":"0.8";
+      if(s.t==="e") e=el("ellipse",{cx:s.cx,cy:s.cy,rx:s.rx,ry:s.ry,fill:fill,stroke:col.stroke,"stroke-width":sw});
+      else e=el("path",{d:s.d,fill:fill,stroke:col.stroke,"stroke-width":sw});
+      e.style.cursor="pointer";
+      e.addEventListener("mouseenter",()=>hoverM(m));
+      svg.appendChild(e);
+    });
+  });
+  // Label
+  const txt=el("text",{x:50,y:258,"text-anchor":"middle"});
+  txt.style.fontSize="7px";txt.style.fill="var(--mut)";txt.style.fontFamily="system-ui";
+  txt.textContent=view==="front"?"Voor":"Achter";
+  svg.appendChild(txt);
+}
+
+function makeSpark(history,color){
+  if(!history||history.length<2) return "";
+  const min=Math.min(...history),max=Math.max(...history),range=max-min||1;
+  const W=400,H=34,P=3;
+  const pts=history.map((v,i)=>[(i/(history.length-1))*W,H-P-((v-min)/range)*(H-P*2)]);
+  const path=pts.map((p,i)=>(i?"L":"M")+p[0]+","+p[1]).join(" ");
+  const fill=path+" L"+W+","+H+" L0,"+H+" Z";
+  const id="sp"+Math.random().toString(36).slice(2,7);
+  return "<svg viewBox='0 0 "+W+" "+H+"' width='100%' height='34' preserveAspectRatio='none'><defs><linearGradient id='"+id+"' x1='0' y1='0' x2='0' y2='1'><stop offset='0%' stop-color='"+color+"' stop-opacity='.15'/><stop offset='100%' stop-color='"+color+"' stop-opacity='0'/></linearGradient></defs><path d='"+fill+"' fill='url(#"+id+")'/>.<path d='"+path+"' fill='none' stroke='"+color+"' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/><circle cx='"+pts[pts.length-1][0]+"' cy='"+pts[pts.length-1][1]+"' r='3' fill='"+color+"'/></svg>";
+}
+
+function renderBodyMap(){
+  const pr=getProgress();
+  makeSVGBody("front",pr);
+  makeSVGBody("back",pr);
+}
+
+function renderMuscleGrid(){
+  const pr=getProgress();
+  const sorted=[...MUSCLES].sort((a,b)=>{
+    const da=pr[a],db=pr[b];
+    if(da.stale&&!db.stale)return 1;if(!da.stale&&db.stale)return-1;
+    const o={up:0,flat:1,down:2};
+    if(o[da.direction]!==o[db.direction])return o[da.direction]-o[db.direction];
+    return(db.delta||0)-(da.delta||0);
+  });
+  let upC=0,downC=0,staleC=0;
+  sorted.forEach(m=>{const d=pr[m];if(d.stale)staleC++;else if(d.direction==="up")upC++;else if(d.direction==="down")downC++;});
+  document.getElementById("stat-up").textContent="↑ "+upC+" sterker";
+  document.getElementById("stat-down").textContent="↓ "+downC+" zwakker";
+  document.getElementById("stat-stale").textContent=staleC+" oud";
+  const grid=document.getElementById("muscle-grid");
+  grid.innerHTML="";
+  sorted.forEach(m=>{
+    const d=pr[m];
+    const color=d.stale?"#8A7A6D":d.direction==="up"?"#2B6B2B":d.direction==="down"?"#B52E2E":"#8A7A6D";
+    const arrow=d.stale?"·":d.direction==="up"?"↑":d.direction==="down"?"↓":"—";
+    const ds=d.stale?d.staleWk:d.delta!==0?(d.delta>0?"+":"")+d.delta+"%":"gelijk";
+    const topEx=Object.entries(d.exercises||{}).sort((a,b)=>b[1].score-a[1].score)[0];
+    const cls="mc"+(d.stale?"":" "+d.direction);
+    const sparkColor=d.stale?"#B8ADA6":color;
+    const spark=makeSpark(d.history,sparkColor);
+    const staleTag=d.stale?"<span class='mc-stale'>"+d.staleWk+"</span>":"";
+    const exHtml=topEx?"<div class='mc-ex'><span style='overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:60%'>"+topEx[0]+"</span><span class='mc-e1rm'>"+(topEx[1].w>0?"e1RM "+Math.round(topEx[1].score)+"kg":topEx[1].r+" reps")+"</span></div>":"";
+    let detailRows="";
+    Object.entries(d.exercises||{}).forEach(([ex,{w,r,score}])=>{detailRows+="<div class='mc-exrow'><span class='en'>"+ex+"</span><span class='ev'>"+(w>0?w+"kg×"+r+" → e1RM "+Math.round(score)+"kg":r+" reps")+"</span></div>";});
+    const div=document.createElement("div");
+    div.className=cls;
+    div.innerHTML="<div class='mc-label'><span class='mc-icon' style='color:"+color+"'>"+ICONS[m]+"</span>"+m+staleTag+"</div><div class='mc-delta'><span class='mc-arr' style='color:"+color+"'>"+arrow+"</span><span class='mc-pct' style='color:"+color+"'>"+ds+"</span></div>"+spark+exHtml+"<div class='mc-exlist' id='exlist-"+m.replace(/[^a-z]/gi,"")+"'>"+detailRows+"</div>";
+    div.addEventListener("click",()=>{
+      const el=document.getElementById("exlist-"+m.replace(/[^a-z]/gi,""));
+      if(el) el.classList.toggle("show");
+    });
+    div.addEventListener("mouseenter",()=>{hovMuscle=m;renderBodyMap();});
+    div.addEventListener("mouseleave",()=>{hovMuscle=null;renderBodyMap();});
+    grid.appendChild(div);
+  });
+}
+
+function renderIBStats(){
+  const la=INBODY[0],pr=INBODY[1];
+  const defs=[{l:"Gewicht",c:la.weight,p:pr.weight,u:"kg",good:"up"},{l:"Spier",c:la.muscle,p:pr.muscle,u:"kg",good:"up"},{l:"Vet",c:la.fat,p:pr.fat,u:"%",good:"down"}];
+  let html="";
+  defs.forEach(({l,c,p,u,good})=>{
+    const d=parseFloat((c-p).toFixed(1));
+    const col=d===0?"var(--mut)":good==="up"?d>0?"var(--green)":"var(--red)":d<0?"var(--green)":"var(--red)";
+    html+="<div class='ib-stat'><span class='lbl'>"+l+"</span><span class='val'>"+c+u+"<span class='delta' style='color:"+col+"'>"+(d>0?"+":"")+d+u+"</span></span></div>";
+  });
+  document.getElementById("ib-stats").innerHTML=html;
+}
+
+function renderGoals(){
+  let html="";
+  GOALS.forEach(g=>{
+    const pct=Math.min(100,Math.max(0,((g.cur-g.start)/(g.target-g.start))*100));
+    const done=g.cur>=g.target;
+    const cls=done?"done":pct>70?"amber":"";
+    html+="<div class='goal-row'><div class='goal-top'><span class='goal-lbl'>"+g.label+"</span><span class='goal-nums'>"+g.cur+g.unit+" <span>/ "+g.target+g.unit+"</span></span></div><div class='bar'><i class='"+cls+"' style='width:"+pct+"%'></i></div><div class='goal-foot'><span>"+g.start+g.unit+"</span><span style='color:"+(done?"var(--green)":pct>70?"var(--amber)":"var(--mut)")+"'>"+Math.round(pct)+"%"+(done?" ✓":"")+"</span><span>"+g.target+g.unit+"</span></div></div>";
+  });
+  document.getElementById("goals-section").innerHTML=html;
+}
+
+function renderWeekLabel(){
+  const wk=WEEKS[Math.max(0,WEEKS.length-1-weekOffset)]||"—";
+  document.getElementById("wk-lbl").textContent=wk;
+  document.getElementById("wk-lbl2").textContent=wk;
+  document.getElementById("score-week").textContent=wk;
+  document.getElementById("data-info").textContent=WEEKS.length+"w · "+INBODY[0].date;
+  document.getElementById("btn-now").style.display=weekOffset>0?"inline-block":"none";
+  document.getElementById("btn-next").disabled=weekOffset===0;
+}
+
+function renderScore(){
+  if(weekScore===null) return;
+  const arc=document.getElementById("score-arc");
+  const circ=2*Math.PI*32, dash=circ*(weekScore/10);
+  arc.setAttribute("stroke-dasharray",dash+" "+(circ-dash));
+  document.getElementById("score-num").textContent=weekScore.toFixed(1);
+  const labels=["","","","","Moeilijke week","","Gemiddelde week","Goede week","","","Uitstekende week"];
+  document.getElementById("score-head").textContent=weekScore>=8?"Uitstekende week":weekScore>=6?"Goede week":weekScore>=4?"Gemiddelde week":"Moeilijke week";
+}
+
+function shiftWeek(dir){
+  weekOffset=Math.max(0,Math.min(weekOffset+dir,WEEKS.length-1));
+  renderWeekLabel();renderBodyMap();renderMuscleGrid();
+}
+function goNow(){weekOffset=0;renderWeekLabel();renderBodyMap();renderMuscleGrid();}
+
+function buildCtx(){
+  const pr=getProgress();
+  const wk=WEEKS[Math.max(0,WEEKS.length-1-weekOffset)]||"—";
+  const lines=MUSCLES.map(m=>{const d=pr[m];if(d.stale)return m+": niet getraind ("+d.staleWk+")";const dir=d.direction==="up"?"↑":d.direction==="down"?"↓":"→";return m+": "+dir+" "+(d.delta>0?"+":"")+d.delta+"%";}).join(", ");
+  return "Jeroen 19j 185cm. InBody: "+INBODY[0].weight+"kg, "+INBODY[0].muscle+"kg spier, "+INBODY[0].fat+"%vet. Week "+wk+": "+lines+". Doel: Greek god V-taper, 93kg bij 10-12%vet.";
+}
+
+async function doReflect(){
+  if(loadingReflect) return;
+  loadingReflect=true;
+  const t=document.getElementById("thinking");
+  t.textContent="Coach analyseert je data...";t.classList.add("show");
+  document.getElementById("chat-msgs").querySelectorAll(".chat-msg").forEach(e=>e.remove());
+  try{
+    const res=await fetch("https://api.anthropic.com/v1/messages",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({model:"claude-sonnet-4-6",max_tokens:550,messages:[{role:"user",content:"Personal coach voor Jeroen.\n"+buildCtx()+"\n\n1. Weekcijfer X.X/10 (eerste regel, alleen getal)\n2. Twee sterke punten\n3. Twee verbeterpunten\n4. Twee acties volgende week\nNederlands, direct."}]})});
+    const data=await res.json(), text=data.content&&data.content[0]?data.content[0].text:"Fout.";
+    const match=text.split("\n")[0].trim().match(/(\d+\.?\d*)/);
+    if(match){weekScore=parseFloat(match[1]);renderScore();}
+    chatHistory=[{role:"assistant",content:text}];
+    appendMsg("assistant",text);
+    t.classList.remove("show");
+  }catch(e){t.textContent="Kon geen reflectie genereren.";chatHistory=[];}
+  loadingReflect=false;
+}
+
+function appendMsg(role,text){
+  const msgs=document.getElementById("chat-msgs");
+  const div=document.createElement("div");
+  div.className="chat-msg "+role;
+  const bub=document.createElement("div");
+  bub.className="chat-bubble";
+  bub.textContent=text;
+  div.appendChild(bub);
+  msgs.appendChild(div);
+  msgs.scrollTop=msgs.scrollHeight;
+}
+
+async function sendMsg(){
+  const input=document.getElementById("chat-in");
+  const msg=input.value.trim();
+  if(!msg||loadingChat) return;
+  input.value="";
+  appendMsg("user",msg);
+  chatHistory.push({role:"user",content:msg});
+  loadingChat=true;
+  document.getElementById("send-btn").disabled=true;
+  const t=document.getElementById("thinking");
+  t.textContent="Denken...";t.classList.add("show");
+  try{
+    const res=await fetch("https://api.anthropic.com/v1/messages",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({model:"claude-sonnet-4-6",max_tokens:450,system:"Jeroens personal coach. "+buildCtx(),messages:chatHistory.map(m=>({role:m.role,content:m.content}))})});
+    const data=await res.json(), text=data.content&&data.content[0]?data.content[0].text:"Fout.";
+    chatHistory.push({role:"assistant",content:text});
+    appendMsg("assistant",text);
+  }catch{appendMsg("assistant","Er ging iets mis.");}
+  loadingChat=false;
+  document.getElementById("send-btn").disabled=false;
+  t.classList.remove("show");
+}
+
+function setQ(q){document.getElementById("chat-in").value=q;document.getElementById("chat-in").focus();}
+
+// Init
+renderIBStats();renderWeekLabel();renderBodyMap();renderMuscleGrid();renderGoals();
+setTimeout(doReflect,200);
+</script>
