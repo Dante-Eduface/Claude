@@ -1,199 +1,207 @@
-# Voorstel mappenstructuur
+# Voorstel mappenstructuur — versie 2
 
-Schrijf je feedback direct onder elk blok, achter **Feedback:**. Kort mag: "ja", "nee, moet X", "snap ik niet".
+Verwerkt jouw feedback. Schrijf nieuwe opmerkingen achter **Feedback:**.
 Dit bestand verdwijnt zodra we het uitvoeren.
 
 ---
 
-## 1. De eerste laag: 7 mappen
+## Wat er veranderd is t.o.v. versie 1
 
-Alleen mappen. De enige losse bestanden zijn `CLAUDE.md` en `.gitignore` — die moeten in de root staan, anders leest Claude Code ze niet.
+| Jouw feedback | Verwerkt |
+|---|---|
+| vu-amsterdam mag weg | Verwijderd, niet gearchiveerd |
+| `markt/` → `ICP` | ✓ |
+| `events/` → `Event manager` | ✓ — dit is ook je Todoist-sectienaam |
+| `playbooks/` → `Knowledge` | ✓ |
+| `prijzen/` → `Pricing` | ✓ |
+| Go-live-plan niet onder pricing | Verplaatst naar `Knowledge/` |
+| Spaties en hoofdletters mogen | ✓ — zie naamregels hieronder, met één uitzondering |
+| Skills samenvoegen (4×) | ✓ — zie skill-blok |
+| SHIFT | **Gevonden** in de zip die je net uploadde: 261 bestanden |
 
-| Map | Wat erin hoort | Komt uit |
-|---|---|---|
-| `.claude/` | skills, rules, agents, scripts, hooks, settings | de 14 zips |
-| `context/` | wie je bent, Eduface, team, prioriteiten, doelen, kaart | `context/` |
-| `gtm/` | alles sales & marketing | `projects/` (28 mappen), `references/sops`, `references/pricing`, `templates/` |
-| `design/` | design system, merk, website, creatives | `references/design-system`, `references/brand-assets`, `creatives/`, 4 website-projecten |
-| `platform/` | het product zelf: claims, vaktermen, onderzoek | `references/` losse bestanden, `usability-test` |
-| `persoonlijk/` | fitness, privécontext | `projects/fitness`, `context/personal.md` |
-| `besluiten/` | besluitenlog + feedback | `decisions/` |
-| `archief/` | afgerond en vervangen | `archives/` |
+---
 
-Dat zijn er 8 als je `.claude/` meetelt. `templates/`, `creatives/`, `references/` en `projects/` verdwijnen als losse top-level map.
+## 1. De eerste laag
 
-**Waarom deze woorden:** ze komen uit je Todoist. Jij zet sales en marketing samen onder GTM, en je hebt Design en Eduface platform als aparte secties. Google Drive gebruikt Sales/Marketing/Branding apart — daar wijk ik bewust van af omdat je zelf zei dat GTM de plek is waar het samenkomt.
+```
+CLAUDE.md          moet in de root
+.gitignore         moet in de root
+.claude/           skills, rules, agents, scripts, hooks, settings
+Context/           wie je bent, Eduface, team, prioriteiten, doelen, kaart
+GTM/               alles sales & marketing
+Design/            design system, merk, website
+Platform/          het product zelf
+Personal/          fitness, privécontext
+Decisions/         besluitenlog + feedback
+Archive/           afgerond en vervangen
+```
+
+Acht mappen, nul losse bestanden op de twee die moeten.
 
 **Feedback:**
 -
 
 ---
 
-## 2. gtm/ — 7 submappen
+## 2. GTM/ — zes submappen
 
-### gtm/accounts/ — de instellingen waar een deal loopt
+### GTM/Accounts/ — 12 instellingen
 
-| Nieuw | Nu |
-|---|---|
-| `breederode-hogeschool/` | projects/breederode-hogeschool |
-| `rug-groningen/` | projects/rug-groningen |
-| `windesheim/` | projects/windesheim |
-| `notenboom/` | projects/action-learning-demo |
-| `uti/` | projects/uti |
-| `tu-delft/` | projects/tu-delft |
-| `capabel/` | projects/capabel |
-| `icm-opleidingen/` | projects/icm-opleidingen |
-| `hbmsu/` | projects/hbmsu |
-| `salta/` | projects/salta |
-| `cmi-ireland/` | projects/cmi-ireland |
-| `business-school-nederland/` | projects/business-school-nederland |
-| `vu-amsterdam/` | projects/vu-silvester-draaijer (nu genoemd naar de persoon, niet de instelling) |
+breederode-hogeschool · rug-groningen · windesheim · notenboom · uti · tu-delft · capabel · icm-opleidingen · hbmsu · salta · cmi-ireland · business-school-nederland
 
-### gtm/campagnes/ — wat je uitstuurt
+`vu-silvester-draaijer` is geschrapt.
 
-uk-outreach-campaign · au-outreach · lt-outreach-nl · cold-calling · paid-ads-buildout · linkedin-content · blog-launch · momentum
+### GTM/Campaigns/ — wat je uitstuurt
 
-### gtm/events/ — webinars en conferenties
+uk-outreach · au-outreach · lt-outreach-nl · cold-calling · paid-ads · linkedin-content · blog-launch · momentum
+
+### GTM/Event manager/
 
 haagse-hogeschool-webinar · altc-conference
 
-### gtm/markt/ — wie moet je hebben
+### GTM/ICP/ — wie moet je hebben
 
-targetlijst-nl · market-sizing-international · landingspagina-icp · discovery-kennis · pijn-oplossing · shift · shift-cockpit
+**shift/** (261 bestanden uit je nieuwe zip: master met orgs.csv, people.csv, journal.csv en de dossiers, plus markets) · targetlijst-nl · market-sizing-international · landingspagina-icp · discovery-kennis · pijn-oplossing · shift-cockpit
 
-### gtm/playbooks/ — hoe je verkoopt
+### GTM/Knowledge/ — hoe je verkoopt
 
-Uit `references/sops/`: sales-handbook · meddpicc-states-and-gates · q-points-scorecard · crm-playbook · gtm-abm-motion · cold-call-roleplay · de 3 podcastnotities
+sales-handbook · meddpicc-states-and-gates · q-points-scorecard · crm-playbook · gtm-abm-motion · cold-call-roleplay · 3 podcastnotities · **go-live-plan** (template)
 
-### gtm/prijzen/
+### GTM/Pricing/
 
-`references/pricing/` + `templates/go-live-plan/` (jouw voorbeeld: templates met één bestand kan naar GTM)
+prijsmodel-psu-26-27
 
-### gtm/sales-coach/
+### En sales-coach?
 
-Blijft zoals het is.
+Die stond los in versie 1. Voorstel: `GTM/sales-coach/`, want het is je levende CRM plus coachingsapp — dat hoort onder GTM, niet ernaast.
 
 **Feedback:**
 -
 
 ---
 
-## 3. design/ — 4 submappen
+## 3. Design/
 
 | Submap | Inhoud |
 |---|---|
-| `design-system/` | references/design-system (core, web, slides, internal) |
-| `merk/` | brand-assets, brand-guidelines.md, "Logo van scholen" |
-| `website/` | website-building, landing-page-demo-survey, app-homepage-redesign, calendly-cta-migration |
-| `creatives/` | creatives/ |
+| `Design system/` | core, web, slides, internal |
+| `Merk/` | brand-assets, brand-guidelines, Logo van scholen |
+| `Website/` | website-building, landing-page-demo-survey, app-homepage-redesign, calendly-cta-migration |
+
+**`creatives/` schrap ik als map.** Er zit één PNG in. De README bevat wel een nuttige regel — losse creatives hier, projectcreatives bij het project — die zet ik in `Context/kaart.md`. Die ene PNG gaat naar `Design/Merk/`.
 
 **Feedback:**
 -
 
 ---
 
-## 4. platform/ — het product
+## 4. Platform/
 
-`product.md` (nu `references/eduface-product.md` — negen bestanden lezen hieruit, dit is je belangrijkste bronbestand) · `onderwijs-vaktermen.md` · `product-brief-ui-beelden.md` · `usability-test/` · `onderzoek/` (references/research + website-analyses)
-
-**Feedback:**
--
-
----
-
-## 5. Je 32 skills
-
-Ze blijven allemaal in `.claude/skills/` staan — Claude Code vindt ze alleen daar. Deze indeling is zodat jij weet wat je hebt.
-
-**Sales — deals voeren (14)**
-cro-of-eduface · sales-coach · meddpicc-sales-grid · sso-grid · kunnen-we-winnen · stakeholder-mapping · organogram · cold-call-prep · question-builder · deal-status-update · meeting-prep-tasks · person-research · targeted-outreach · goed-teksten-schrijven
-
-**SHIFT-pijplijn — opleiders vinden en benaderen (5, genummerd)**
-lead-sourcing (1) · contact-sourcing (2) · shift-research (3, is een agent) · outreach (4) · lemlist-import (5)
-
-**Marketing en content (6)**
-linkedin-content · content-voice · marketing-creatives · blog-builder · linkedin-profile-scraper · grammar-check
-
-**Bouwen (3)**
-design-loop · scroll-film-studio · pitch-deck
-
-**Overig (4)**
-deep-research · task-planning · skill-builder · fitness-coach
-
-### Overlap die ik zie
-
-| Overlap | Wat er speelt |
-|---|---|
-| `cro-of-eduface` vs `giving-sales-advice-` | Allebei "John de CRO". De tweede zit in je account-skills, heeft een typefout in de naam en één regel beschrijving. Voorstel: weg. |
-| `meddpicc-sales-grid` vs `sso-grid` vs `meddpicc-qualifier` | Drie MEDDPICC-dingen. De eerste twee vullen elkaar aan (scoren vs plaatje). De derde zit in je account-skills en doet hetzelfde als de eerste. |
-| `outreach` vs `targeted-outreach` | Allebei outreach schrijven. De eerste is agent 4 van SHIFT, de tweede staat los. Samenvoegen of duidelijker uit elkaar trekken? |
-| `goed-teksten-schrijven` vs `content-voice` vs `grammar-check` | Drie schrijfskills. Grammar-check is duidelijk apart, de andere twee overlappen. |
-| `deep-research` vs `person-research` | Overlappen niet echt — onderwerp vs persoon. Laat ik staan. |
+`product.md` (negen bestanden lezen hieruit — je belangrijkste bronbestand) · `onderwijs-vaktermen.md` · `product-brief-ui-beelden.md` · `usability-test/` · `Onderzoek/`
 
 **Feedback:**
 -
 
 ---
 
-## 6. Naamregels
+## 5. Skills — van 32 naar 28
 
-- Kleine letters, kebab-case, Nederlands
-- Geen spaties of apostrofs. Nu fout: `Logo van scholen /`, `temporary screenshots/`, `Kings's college London.png`
-- Geen `snake_case` ernaast. Nu: `brand_assets/` naast `brand-assets/`
-- Geen backup-achtervoegsels — git is je backup. Weg met `.bak`, `-backup-voor-*`, `.oud-*`, `-v1/-v2`
+### De vier samenvoegingen
+
+| Wordt | Uit | Waarom |
+|---|---|---|
+| `cro` | `cro-of-eduface` + `giving-sales-advice-` | Allebei John de CRO. De tweede heeft een typefout in de naam en één regel beschrijving. |
+| `schrijven` | `goed-teksten-schrijven` + `content-voice` | Allebei overtuigend schrijven in de juiste stem. |
+| `outreach` | `outreach` + `targeted-outreach` | **Let op:** `outreach` is agent 4 van de SHIFT-pijplijn. Ik houd die rol intact en bouw targeted-outreach erin als tweede stand: los signaal in plaats van pijplijn. |
+| `meddpicc` | `meddpicc-sales-grid` + `meddpicc-qualifier` + `sso-grid` | Ik las jouw "maak er maar één van" als de MEDDPICC-skills. **Klopt dat?** `sso-grid` is puur de plaatjesstap met een eigen Close-script; die wordt dan de laatste stand binnen `meddpicc`. |
+
+### Wat overblijft, 28 skills
+
+**Sales (11)** — cro · sales-coach · meddpicc · kunnen-we-winnen · stakeholder-mapping · organogram · cold-call-prep · question-builder · deal-status-update · meeting-prep-tasks · person-research
+
+**SHIFT-pijplijn (5)** — lead-sourcing (1) · contact-sourcing (2) · shift-research (3, agent) · outreach (4) · lemlist-import (5)
+
+**Marketing en content (5)** — linkedin-content · schrijven · marketing-creatives · blog-builder · linkedin-profile-scraper
+
+**Bouwen (3)** — design-loop · scroll-film-studio · pitch-deck
+
+**Overig (4)** — deep-research · task-planning · skill-builder · fitness-coach
+
+Plus `grammar-check` = 28. Die laat ik apart: taalfoutjes checken is iets anders dan schrijven.
+
+**Feedback:**
+-
+
+---
+
+## 6. Naamregels — aangepast op jouw voorkeur
+
+**Mappen die jij en ik lezen: spaties en hoofdletters mogen.** Kort en duidelijk.
+`GTM/Event manager/`, `Design/Design system/`, `Platform/Onderzoek/`
+
+**Eén uitzondering, en die is hard:** alles onder `.claude/` blijft kleine letters met streepjes.
+Reden: de mapnaam van een skill *is* het commando. `/task-planning` werkt, `/task planning` niet.
+Hetzelfde voor `shift/master/people.csv` — daar leest `pipeline.py` uit, dus die paden blijven exact zoals ze zijn.
+
+**Verder:**
+- Geen apostrofs of spaties aan het eind. Nu fout: `Logo van scholen /`, `Kings's college London.png`
+- Geen backup-achtervoegsels — git is je backup. Weg met `.bak`, `-backup-voor-*`, `.oud-*`
 - Datums alleen als het bestand een datum ís, en dan `2026-09-19`. Nu drie stijlen: `30-juni`, `0902`, `2026-08-14`
 - Eén wegwijzer per map, altijd `README.md`. Nu vier woorden voor hetzelfde: README, LEESMIJ, HANDOFF, OVERDRACHT
-- Elke projectmap krijgt een README van max 10 regels: wat is dit, welke fase, volgende stap, wat leest hieruit
+- Elke map krijgt een README van max 10 regels: wat is dit, welke fase, volgende stap, wat leest hieruit
 
 **Feedback:**
 -
 
 ---
 
-## 7. Wat ik weggooi
+## 7. Wat weg gaat
 
 | Wat | Hoeveel |
 |---|---|
 | node_modules | 30 MB |
-| temporary screenshots | 77 MB, 162 PNG's |
+| temporary screenshots | 77 MB |
 | 13 × .DS_Store | |
 | `CLAUDE (1).md` | duplicaat met Windows-paden |
-| 50 lege JSON's in pijn-oplossing/extractie | |
+| 50 lege JSON's in pijn-oplossing | |
 | 4 dubbele merkassetmappen | logo staat nu 5× |
 | Backupvarianten | .bak, .voor-bewijsfix.html, pagina.backup.html |
 | `Claude-AE/` | leeg |
-| 7 van de 14 zips | per ongeluk meegezipt .git-binnenwerk |
+| `vu-silvester-draaijer/` | jouw besluit |
+| 15 zips | 8 uitpakken, 7 zijn .git-binnenwerk |
+| `hub.html` | 16 links naar artifacts, 0 naar deze repo — `Context/kaart.md` neemt het over |
 
-Alles blijft in de git-geschiedenis staan, dus niets is echt weg.
-
-Apart voorleggen, nog geen besluit: documenten die in 3 formaten bestaan (RUG-pitchdeck als html + pdf + pptx + bewerkbaar.pptx), en 12 documenten over afgelopen momenten (RUG-meeting 30 juni, webinar 23 juni).
-
-**Feedback:**
--
-
----
-
-## 8. Twee dingen die ik niet kan oplossen zonder jou
-
-**`projects/shift/` is leeg.** Ook op GitHub. Zes bestanden noemen het "de actuele stand" en `targetlijst-nl/LEESMIJ.md` stuurt je er expliciet heen. De oude data staat in `archives/targetlijst-nl-oud/` (68 bestanden). Waar staat de echte SHIFT-data?
-
-**`context/current-priorities.md` en `goals.md` zijn van 8 juni** en noemen het webinar van 23 juni als aanstaand. Die worden elke sessie automatisch geladen, dus ik start nu elke keer met verouderde prioriteiten. Los oppakken na het opruimen, zei je — akkoord, maar dit is wel de duurste fout in de map.
+Alles blijft in de git-geschiedenis, dus niets is echt weg.
 
 **Feedback:**
 -
 
 ---
 
-## 9. Volgorde van uitvoeren
+## 8. Nog open
 
-1. Sleutels uit tracking, `.gitignore`
-2. Zips uitpakken naar `.claude/`
+**Documenten in drie formaten.** RUG-pitchdeck bestaat als html + pdf + pptx + bewerkbaar.pptx. Zelfde bij Windesheim. Voorstel: bron + de versie die je deelt houden, rest naar Archive. Lijst volgt vóór ik het doe.
+
+**Twaalf documenten over afgelopen momenten** (RUG-meeting 30 juni, webinar 23 juni). Naar Archive of laten staan?
+
+**`Context/current-priorities.md` en `goals.md` zijn van 8 juni** en worden elke sessie automatisch geladen. Los oppakken, zei je — akkoord, maar zolang dat niet gebeurt start elke sessie met verouderde prioriteiten.
+
+**Feedback:**
+-
+
+---
+
+## 9. Volgorde
+
+1. ~~Sleutels uit git~~ ✓ gedaan
+2. Zips uitpakken naar `.claude/` en `GTM/ICP/shift/`
 3. Afval weg (110 MB)
 4. Nieuwe indeling met `git mv`
-5. Verwijzingen repareren (16 naar `.claude/`, 6 naar shift, 3 naar verhuisde prijsmodellen, 9 naar bestanden die nooit gemaakt zijn)
-6. `context/kaart.md` en `besluiten/feedback.md`
+5. Skills samenvoegen (4 stuks)
+6. Verwijzingen repareren — 16 naar `.claude/`, 6 naar shift (lost zichzelf op), 3 naar verhuisde prijsmodellen, 9 naar bestanden die nooit gemaakt zijn
+7. `Context/kaart.md` en `Decisions/feedback.md`
 
-Eén commit per stap, dus je kunt elke stap los terugdraaien.
+Eén commit per stap, elk los terug te draaien.
 
 **Feedback:**
 -
