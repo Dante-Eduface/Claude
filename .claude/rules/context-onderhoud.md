@@ -39,6 +39,7 @@ Kort: een feit verandert een bestand, een oordeel verandert een werkwijze. Het e
 De maat daarbij:
 
 - **Hoogstens twee of drie vragen per gesprek.** Meer is een formulier, en dat vult niemand in.
+- **Behalve in het bestand zelf.** Daar mag de hele lijst staan: Dante beantwoordt ze het liefst in één keer door in `open-vragen.md` te schrijven (afgesproken 19-09-2026). Verwerk zijn antwoorden daarna naar het juiste contextbestand en haal de vraag uit de lijst.
 - **Alleen vragen die passen bij waar het gesprek toch al over gaat.** Een vraag over zijn relatie tijdens een outreachsessie is fout getimed, ook als hij openstaat.
 - **Een feit ouder dan 90 dagen mag getoetst worden** met één zin: "hier staat nog X, klopt dat nog?"
 - **Geen vraag stellen die ik zelf kan opzoeken.** Zijn agenda, Close en de repo staan open. Eerst kijken, dan pas vragen. Zie ook `.claude/rules/credits.md`.
