@@ -19,6 +19,7 @@ Voor Dante betekent dat concreet:
 | Uitzoeken waarom een pilot niet omzet naar licentie | Een meeting inplannen |
 | Een demo voorbereiden die echt over hún situatie gaat | Een demo geven (dat is uitvoeren, niet bedenken) |
 | Een NPS-terugval ontleden naar oorzaak | Een NPS-uitvraag versturen |
+| Een LinkedIn-post schrijven die ergens over gaat | Reageren op reacties |
 
 De vergelijking van het boek: **geproduceerd werk van hoge kwaliteit = tijd × intensiteit van focus**. Twee uur echt geconcentreerd verslaat zes uur half geconcentreerd, en die zes uur voelen drukker.
 
@@ -60,56 +61,75 @@ Newport noemt vier manieren om deep work in een leven te passen:
 
 ## De agenda-inrichting
 
-**Dit schema is op 19-09-2026 door Dante zelf bepaald.** Hij leest het plafond van vier uur als een doel, niet als een waarschuwing, en wil zeven dagen per week draaien.
-
-### De blokken
+**Door Dante zelf bepaald, herzien op 19-09-2026 naar vier uur per dag met een uur pauze ertussen.**
 
 | Dag | Blok 1 | Pauze | Blok 2 | Per dag |
 |---|---|---|---|---|
-| Ma t/m vr | 07:00 tot 09:00 | 30 min | 09:30 tot 12:00 | 4,5 uur |
-| Za en zo | 06:00 tot 08:00 | 30 min | 08:30 tot 11:00 | 4,5 uur |
+| Ma t/m vr | 07:00 tot 09:00 | 09:00 tot 10:00 | 10:00 tot 12:00 | 4 uur |
+| Za en zo | 06:00 tot 08:00 | 08:00 tot 09:00 | 09:00 tot 11:00 | 4 uur |
 
-Daarna eten. **31,5 uur per week** als alles staat.
+**28 uur per week**, zeven dagen. Daarna eten.
 
-Dat is 12,5% boven wat Newport als plafond noemt (4 uur per dag), en dan ook nog zeven dagen achter elkaar. Het boek beschrijft nergens iemand die dat volhoudt. Dat maakt het geen slecht doel, het maakt het een bovengrens: 31,5 is waar het schema op uitkomt als er niets tussenkomt, niet wat je in week één haalt.
+Hij staat elke dag om 05:00 op en sluit om 20:00 af. Op ma t/m do pakt hij de trein van **05:53**, is 06:53 op het station en rond 07:05 op kantoor. Daarmee is de botsing met blok 1 opgelost: hij zit er vijf minuten voor de start.
 
-### Drie dingen die botsen
+### Heb je een rustdag nodig
 
-Uit zijn eigen agenda, gelezen op 19-09-2026. Deze moeten opgelost worden, anders staat het schema op papier en niet in de week.
+**Nee, niet als de dagelijkse grens en het afsluitritueel echt zijn.** Ik heb dit op 19-09-2026 scherper opgezocht dan mijn eerste opmerking erover.
 
-**1. De trein eet 35 minuten van blok 1, vier dagen per week.** Hij vertrekt om 06:23 en zit rond 07:35 op kantoor. Van 07:00 tot 09:00 is dus 07:00 tot 07:23 trein, tot 07:35 lopen, en pas dan werk. Twee oplossingen:
+Newport schrijft nergens over een rustdag. Wat hij wel voorschrijft is een **harde eindtijd per dag** en echte vrije avond daarna. Het herstel zit in de avond, niet in een vrije dag. Zijn onderbouwing is het Zeigarnik-effect: een onafgemaakte taak blijft je hersenen bezetten, en een expliciet afsluitmoment ("klaar voor vandaag") maakt dat los. Ericssons topmusici namen ook geen dag vrij, die hielden zich aan de dagelijkse dosis en sliepen meer.
 
-- **Een vroegere trein pakken** zodat hij rond 06:55 aan zijn bureau zit. Hij staat al om 05:30 op, dus de ruimte is er. Dit houdt het schema heel.
-- **Blok 1 verschuiven naar 07:40 tot 09:40**, pauze tot 10:10, blok 2 van 10:10 tot 12:00. Dat is 3 uur 50 in plaats van 4,5.
+Het risico zit dus niet in zeven dagen. Het zit in over de grens gaan en niet afsluiten. Dante heeft die grens nu op vier uur en zijn afsluitritueel staat om 20:00. Daarmee is zeven dagen verdedigbaar.
 
-De eerste is beter. De trein is de enige echte beperking en die is verplaatsbaar.
+### Hoe je de blokken intens maakt
 
-**2. Blok 2 loopt tot 12:00, en dat is precies waar zijn afspraken beginnen.** Van 21 afspraken in drie weken begonnen er vijf tussen 11:00 en 12:00. De regel wordt daarmee strenger dan eerst gedacht: **geen afspraken voor 12:00**, niet voor 10:30. Dat kan, want het middagvenster van 12:00 tot 18:00 is breed genoeg, het Verenigd Koninkrijk loopt een uur achter en de Verenigde Staten beginnen pas om 16:00 onze tijd. Alleen Nederlandse afspraken worden hiermee strikt middagwerk.
+Dit is zijn eigen vermoeden, en het klopt waarschijnlijk: uren zijn makkelijk, intensiteit niet. Newport heeft daar vier concrete dingen voor.
 
-**3. De weekendblokken zijn al bezet.** In de kalender "Persoonlijk taken" staat elke week:
+**1. De telefoon uit de kamer.** Niet op stil, niet omgekeerd op tafel: buiten de kamer. Newports punt uit "Embrace Boredom" is dat één keer kijken tijdens een blok je hersenen traint om afwezigheid van prikkels niet meer te verdragen. Dan is het volgende blok al zwakker voordat je begint. Dit is de enige maatregel die echt onderscheid maakt tussen twee uur zitten en twee uur werken.
 
-| Dag | Tijd | Wat |
-|---|---|---|
-| Zaterdag | 07:30 tot 09:00 | Week plannen |
-| Zaterdag | 09:00 tot 10:00 | Gym dashboard |
-| Zondag | 07:30 tot 09:00 | LinkedIn post schrijven |
-| Zondag | 09:00 tot 10:00 | Financiele controle |
+**2. Eén taak per blok, en die is de avond ervoor gekozen.** Om 20:00, bij het afsluiten, noemt hij welke taak in welk blok komt. Kiezen in het blok zelf kost precies de wilskracht die het werk nodig heeft.
 
-Dat is drie van de 4,5 uur per weekenddag die al een bestemming hebben. Twee keuzes: die taken zijn het deep work van dat blok, of ze verhuizen naar de middag. Ze tellen alleen mee als deep work wanneer ze echt denkwerk zijn. Week plannen is dat. Een dashboard bijwerken en een financiele controle niet, dat is shallow werk in een deep-work-blok.
+**3. De Roosevelt-oefening.** Schat hoeveel tijd een taak kost, geef jezelf 70% daarvan, en zet een zichtbare timer op je bureau. Newport gebruikt dit expliciet als training: de tijdsdruk dwingt een intensiteit af die je uit jezelf niet haalt. Een paar keer per week, niet elk blok.
 
-**En een vierde die geen botsing is maar wel opvalt:** elke zondag staat "LinkedIn post schrijven" van 07:30 tot 09:00, terwijl content op 19-09-2026 expliciet geen prioriteit is. Anderhalf uur op de beste tijd van de week aan iets dat niet je prioriteit is, is precies het vijfde feestje uit `references/research/focus-these-hormozi.md`.
+**4. Productive meditation op de trein.** Eén vraag in je hoofd houden, telkens terugkeren als je afdwaalt, geen telefoon. Het uur van 05:53 tot 06:53 is daar precies lang genoeg voor, en het traint de concentratie die je om 07:00 nodig hebt.
 
-### Wat het weektarget wordt
+### Wat je in het pauze-uur doet
 
-Het schema staat op 31,5 uur. Het **target** is iets anders dan het schema, want een target dat je structureel niet haalt leert je niets behalve dat meten geen zin heeft.
+De pauze moet een **pauze van focus** zijn, niet een pauze van afleiding. Dat onderscheid bepaalt of blok 2 net zo goed is als blok 1.
 
-Voorstel: de eerste twee weken is het aantal uren de **nulmeting**, geen doel. Voorspelling op basis van de botsingen hierboven: **18 tot 22 uur in week één**. Wordt het meer, dan is het plafond hoger dan Newport beschrijft en zetten we het target daarop. Wordt het minder, dan weten we welk blok sneuvelt en waarom.
+Verdeling die werkt:
 
-Na twee weken wordt het één getal. Dat staat als W5 in `context/open-vragen.md`.
+| Tijd | Wat |
+|---|---|
+| Eerste 20 minuten | Eten en naar buiten lopen, zonder scherm |
+| Laatste 40 minuten | Shallow werk: mail, Close, opvolging, administratie |
 
-### De ochtendtrein
+Dante's eigen voorstel, shallow werk in de pauze doen, klopt dus. Twee kanttekeningen. De hele pauze volstoppen met shallow werk herstelt je aandacht niet, alleen het lopen doet dat. En scrollen is de slechtste optie van alle: dat is geen rust, dat is training in afleiding.
 
-06:23 tot 07:23, vier keer per week. Telt **niet** mee in de deep-work-uren: trein is rumoerig en de verbinding valt weg. Wel de beste plek voor afgebakende klussen van hooguit een uur die geen diepe concentratie vragen. Pakt hij een vroegere trein voor blok 1, dan vervalt dit.
+**Niet doen in de pauze:** lezen of ergens hard over nadenken. Dat is meer focus, en dan is het geen pauze.
+
+### De week
+
+| | Ma t/m vr | Zaterdag | Zondag |
+|---|---|---|---|
+| 05:00 | Op | Op | Op |
+| 05:53 | Trein (ma t/m do) | | |
+| Blok 1 | 07:00 tot 09:00 | 06:00 tot 08:00, week plannen | 06:00 tot 08:00, LinkedIn-post |
+| Pauze | 09:00 tot 10:00 | 08:00 tot 09:00, financiele controle | 08:00 tot 09:00 |
+| Blok 2 | 10:00 tot 12:00 | 09:00 tot 11:00 | 09:00 tot 11:00 |
+| Middag | Meetings en shallow werk | Gym 13:00, boodschappen 15:00 | Gym 13:00, schoonmaken 15:00, koken 16:00 |
+| 20:00 | Afsluiten | Afsluiten | Afsluiten |
+
+**Thema's:** zaterdag is een werkdag, zondag is een thuisdag. Beide beginnen met dezelfde twee blokken, want het ritme is het punt.
+
+**Boodschappen blijven op zaterdag.** Dante's eigen instinct klopt: een dag van tevoren inkopen betekent dat hij zondag meteen kan koken. Het is een klus van een uur na de gym en die breekt de werkdag niet. Schoonmaken verhuist wel naar zondag, want dan staat alles wat met het huis te maken heeft op één dag.
+
+**Financiele controle hoort in het pauze-uur van zaterdag (08:00 tot 09:00), niet om 09:00.** Zoals hij nu staat valt hij in blok 2, en een financiele controle is shallow werk. In de pauze is hij precies goed.
+
+### Wat er expliciet NIET gebeurt
+
+**Calendly wordt niet aangepast.** Er komt geen regel dat er voor 12:00 niets geboekt mag worden. Dante op 19-09-2026: *"het is belangrijk voor ons dat mensen een meeting boeken. Een deep work sessie niet doen maar wel een meeting hebben is belangrijker. We moeten zoveel mogelijk opties hebben voor mensen om een tijd te boeken."*
+
+Dat is de juiste afweging en het betekent iets voor de uren: **een geboekte meeting wint altijd van een blok.** Blokken die daardoor sneuvelen zijn geen falen, dat is het systeem dat werkt zoals bedoeld. Reken erop dat de weken daardoor uiteenlopen.
 
 ## Meten, want anders is het een voornemen
 
@@ -121,6 +141,26 @@ Newport neemt 4DX uit "The 4 Disciplines of Execution" over. Die vier vertaald n
 4. **Zorg voor een vast moment van verantwoording.** Het blok "Week plannen" op zaterdag 07:30 is dat moment: uren geteld, en één zin over wat de gemiste blokken heeft opgegeten. Dat laatste is het nuttigste deel, want daar staat het patroon in.
 
 Het afsluitritueel van 20:00 staat er al. Newport hecht daar veel waarde aan: een expliciet einde ("shutdown complete") laat je hersenen los, en zonder dat einde kauwt de dag door en is de volgende ochtend minder scherp. Dus die 20:00-afspraak is geen luxe, het is onderhoud aan het ochtendblok.
+
+## Welke leidende maat het moet worden
+
+Dante's vraag van 19-09-2026. 4DX stelt twee eisen aan een leidende maat: hij moet **voorspellend** zijn (als hij omhoog gaat, gaat het doel mee) en **beinvloedbaar** (jij bepaalt hem, niemand anders).
+
+Uren deep work zijn goed beinvloedbaar maar matig voorspellend. Je kunt 28 uur maken aan het verkeerde werk. Dat is precies wat hij zelf aanvoelt als hij zegt dat het misschien niet intens genoeg is: uren meten tijd, niet wat eruit komt.
+
+Drie kandidaten:
+
+| Maat | Voorspellend | Beinvloedbaar | Oordeel |
+|---|---|---|---|
+| Uren deep work per week | Matig | Volledig | Goed als gewoonte-teller, zwak als stuurmaat |
+| **Eerste gesprekken geboekt per week** | **Sterk** | **Groot** | Vijf per week is twintig per maand, precies het doel |
+| Accounts benaderd per week | Zwak | Volledig | Te ver weg van de uitkomst |
+
+**Advies: geboekte eerste gesprekken per week wordt de leidende maat, uren deep work blijft het scorebord.**
+
+De uren zijn hoe hij de capaciteit opbouwt, dus die blijven op het bord staan. Maar de knop waar hij wekelijks op stuurt is het aantal gesprekken. Vijf per week is twintig per maand, dus de leidende maat en het doel praten dezelfde taal.
+
+**En dan volgt de vaardigheid er vanzelf uit.** Als de maat "gesprekken geboekt" is, dan is de vaardigheid die dat bepaalt: een bericht schrijven waar iemand op reageert. Dat is waar hij dit jaar echt goed in moet worden. Dat beantwoordt P11 in `context/open-vragen.md`, als hij het ermee eens is.
 
 ## Hoe dit samenhangt met de focus-these
 

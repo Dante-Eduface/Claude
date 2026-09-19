@@ -16,16 +16,26 @@ De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat 
 
 | # | Vraag | Waarom het uitmaakt | Sinds |
 |---|---|---|---|
-| A1 | **De trein tegen blok 1.** Je blok begint om 07:00, maar je zit pas rond 07:35 op kantoor. Pak je een vroegere trein, of schuift blok 1 naar 07:40 tot 09:40? | Zonder keuze mist blok 1 vier dagen per week 35 minuten. Zie `references/deep-work.md`. | 19-09-2026 |
-| A2 | **Geen afspraken voor 12:00.** Blok 2 loopt tot 12:00 en daar begint nu ongeveer een kwart van je afspraken. Zet je die grens echt op 12:00 in Calendly? | Dit is de enige regel die het hele schema draagt. | 19-09-2026 |
-| A3 | **Je weekendblokken zijn al bezet.** Zaterdag staat week plannen (07:30) en gym dashboard (09:00), zondag LinkedIn (07:30) en financiele controle (09:00). Zijn dat het deep work van die blokken, of verhuizen ze naar de middag? | Een dashboard bijwerken is shallow werk in een deep-work-blok. Week plannen is wel echt denkwerk. | 19-09-2026 |
-| A4 | **LinkedIn post schrijven staat nog elke zondag 07:30 in je agenda**, terwijl content geen prioriteit is. Eruit, of blijft hij? | Anderhalf uur op je beste tijd van de week aan iets dat je prioriteit niet is. | 19-09-2026 |
-| W3 | Waar staat de productpagina? De map **Platform** in Drive was op 19-09-2026 nog leeg. | Zolang die leeg is blijft `references/eduface-product.md` de bron voor productclaims. | 19-09-2026 |
-| W4 | Wanneer komt de NPS-meting op Enterprise er? | Tot die er is staat het doel in `current-priorities.md` als niet stuurbaar. | 19-09-2026 |
-| W5 | Na twee weken deep work: welk weektarget zetten we vast? | Het schema staat op 31,5 uur. De eerste twee weken zijn een nulmeting. | Vanaf 03-10-2026 |
-| P11 | Welke vaardigheid ontwikkel je het komende jaar? Je zei: die volgt uit de leidende maat. Welke is dat dan? | Zodra de deep-work-uren staan, is dit de logische volgende. | 19-09-2026 |
+| A5 | **Wordt de leidende maat "geboekte eerste gesprekken per week", vijf stuks?** Uren deep work blijven dan het scorebord, de gesprekken worden de knop waar je op stuurt. | Uren zijn beinvloedbaar maar matig voorspellend: je kunt 28 uur aan het verkeerde werk besteden. Zie `references/deep-work.md`. | 19-09-2026 |
+| A6 | Verhuist de financiele controle van zaterdag 09:00 naar 08:00? | Nu valt hij in blok 2, terwijl het shallow werk is. Het pauze-uur is er precies voor. | 19-09-2026 |
+| A7 | Verhuist schoonmaken van zaterdag 16:00 naar zondag 15:00? | Dan staat alles met het huis op de thuisdag. Boodschappen blijven bewust op zaterdag, een dag voor het koken. | 19-09-2026 |
+| W4 | Wanneer komt de NPS-meting op Enterprise er? | Tot die er is staat het doel in `current-priorities.md` als niet stuurbaar. Dante weet het nog niet. | 19-09-2026 |
+| W5 | Na twee weken deep work: welk weektarget zetten we vast? | Het schema staat op 28 uur. De eerste twee weken zijn een nulmeting. | Vanaf 03-10-2026 |
+| P11 | Wordt de vaardigheid van dit jaar "een bericht schrijven waar iemand op reageert"? | Dat volgt uit A5: als de maat geboekte gesprekken is, is dat de vaardigheid die hem bepaalt. | 19-09-2026 |
 | G15 | De actuele standen van je potjes. Je levert hier een nieuw bestand voor. | `context/financien.md` noemt bewust geen bedragen tot dat er is. | 19-09-2026 |
-| V9 | Ga je één keer per week wegen, of stuur je op broekband en gymprestatie? | 2.800 kcal heeft een foutmarge van plus of min 250. Zonder enig signaal kun je niet bijstellen. Zie `references/training/calorieen.md`. | 19-09-2026 |
+
+## Later, geen vraag maar een richting
+
+Dante wil op termijn **losse vensters** voor een paar onderdelen van zijn leven, en daar dieper in duiken dan nu:
+
+- geld
+- fitness
+- koken
+- gym, apart van fitness
+
+Zijn eigen woorden op 19-09-2026: *"ik wil wel langzaam tot dat punt komen, ik denk dat we nu heel erg aan het optimaliseren zijn."* Dus niet nu beginnen. Wel oppakken zodra hij erover begint, en dan één onderdeel tegelijk.
+
+Onduidelijk is nog wat het verschil is tussen "fitness" en "gym" in zijn hoofd. Vragen zodra dit aan de beurt is, niet nu.
 
 ## Beantwoord en verwerkt
 
@@ -70,4 +80,13 @@ Blijft staan zodat zichtbaar is wat er al gevraagd is. Alles hieronder is op 19-
 | Verhuis je zelf naar Utrecht? | Nog niet. Kantoor is verhuisd, hij woont in Leiden. | `context/me.md` |
 | Stop je met American football? | Gestopt. | `context/personal.md` |
 | De relatievragen. | Geschrapt op zijn verzoek. Niet meer opbrengen. | geschrapt |
+| Heb je een rustdag nodig bij 7 dagen deep work? | Nee, mits de dagelijkse grens en het afsluitritueel echt zijn. Newport schrijft geen rustdag voor, wel een harde eindtijd. | `references/deep-work.md` |
+| De trein tegen blok 1? | Opgelost. Hij pakt nu de trein van 05:53 en staat om 05:00 op. | `references/deep-work.md` |
+| Geen afspraken voor 12:00 in Calendly? | Nee. Een geboekte meeting wint van een blok, Calendly blijft open. | `references/deep-work.md` |
+| Zijn de weekendblokken al bezet? | Opgelost. Gym dashboard is eruit, week plannen en LinkedIn staan nu in blok 1. | `references/deep-work.md` |
+| LinkedIn-post elke zondag, terwijl content geen prioriteit is? | Die is wel prioriteit. Het is een Eduface-taak en hoort bij het SHIFT-project. | `context/current-priorities.md` |
+| Waar staat de productpagina? | Gebruik `references/eduface-product.md` voor productclaims. Dat is de bron. | `context/eduface.md` |
+| Ga je wekelijks wegen? | Ja, een keer per week. | `context/personal.md` |
+| Draag je nog een WHOOP? | Gestopt. Geen herstel- of slaapdata meer. | `context/personal.md` |
+| Wat doe je in het pauze-uur? | Eerst 20 minuten eten en lopen zonder scherm, dan 40 minuten shallow werk. | `references/deep-work.md` |
 | "Hulp voor het huis" en de oude uitgaven? | Geschrapt. Kijk vooruit, niet naar het verleden. De situatie is anders. | geschrapt |

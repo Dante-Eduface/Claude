@@ -52,8 +52,8 @@ Aangesloten als MCP in Claude Code: Gmail, Google Calendar, Google Drive, Close,
 
 Niet elke sessie lezen, wel altijd naar verwijzen in plaats van uit het hoofd beweren:
 
-- **Product, wat je wel en niet mag claimen:** `references/eduface-product.md`. Dat is de bron voor elke productclaim. Staat het daar niet, dan beweer je het niet.
-- **Wat het product doet, meest uitgewerkte versie:** de productpagina, in Google Drive onder de map **Platform**. Op 19-09-2026 was die map nog leeg, dus tot er iets in staat blijft `eduface-product.md` de bron.
+- **Product, wat je wel en niet mag claimen:** `references/eduface-product.md`. Bevestigd door Dante op 19-09-2026 als dé bron voor elke productclaim. Staat het daar niet, dan beweer je het niet.
+
 - **Prijs:** `references/pricing/prijsmodel-psu-26-27.md`. 3 per student per maand in de valuta van de markt, drempel 300 lerenden. Nooit een prijs uit het hoofd noemen, altijd dit bestand lezen.
 - **Salesproces en gates:** `references/sops/sales-handbook-v1.md`, `references/sops/meddpicc-states-and-gates.md`.
 - **Pipeline en dealstand:** Close, niet een bestand hier.

@@ -49,9 +49,9 @@ Die verdeling voert hij echt uit, het is geen voornemen.
 
 ## Het ritme
 
-Elke **zondag 09:00** staat "Financieel controle" in zijn agenda, wekelijks. Dat is het moment om dit bestand tegen de werkelijkheid te leggen.
+Elke **zaterdag** staat "Financieel controle" in zijn agenda, wekelijks. Dat is het moment om dit bestand tegen de werkelijkheid te leggen.
 
-Let op: dat uur valt midden in zijn tweede deep-work-blok van de zondag (08:30 tot 11:00). Een financiële controle is shallow werk. Zie `references/deep-work.md`.
+**Hoort in het pauze-uur van 08:00 tot 09:00**, niet om 09:00. Zoals hij nu staat valt hij in deep-work-blok 2, en een financiële controle is shallow werk. Dat is precies waar het pauze-uur voor is. Zie `references/deep-work.md`.
 
 ## De geldplan-app
 

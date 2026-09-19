@@ -18,26 +18,22 @@ Enkelvoud, en dat is het punt. Dante op 19-09-2026: *"bepaal gewoon één priori
 
 ## De leidende maat
 
-**Uren deep work per week.**
-
-Aan de prioriteit hierboven kun je vandaag niets doen, aan je uren wel. Dus stuur je op de uren en kijk je naar het doel.
-
 | Dag | Blok 1 | Pauze | Blok 2 |
 |---|---|---|---|
-| Ma t/m vr | 07:00 tot 09:00 | 30 min | 09:30 tot 12:00 |
-| Za en zo | 06:00 tot 08:00 | 30 min | 08:30 tot 11:00 |
+| Ma t/m vr | 07:00 tot 09:00 | 09:00 tot 10:00 | 10:00 tot 12:00 |
+| Za en zo | 06:00 tot 08:00 | 08:00 tot 09:00 | 09:00 tot 11:00 |
 
-Vol uitgevoerd: **31,5 uur per week**. Door Dante zelf zo bepaald op 19-09-2026.
+**28 uur per week**, zeven dagen, vier uur per dag. Op ma t/m do pakt hij de trein van 05:53 en zit rond 07:05 op kantoor.
 
-**De eerste twee weken is dat een nulmeting, geen target.** 31,5 ligt boven het plafond van vier uur per dag dat Newport beschrijft, en dan ook nog zeven dagen achter elkaar. We meten eerst wat hij echt haalt en zetten daarna één getal vast (W5).
+**Een geboekte meeting wint altijd van een blok.** Calendly blijft open, ook 's ochtends. Dat is een bewuste keuze: liever een meeting dan een blok. Blokken die daardoor sneuvelen zijn geen falen.
 
-Drie dingen moeten opgelost worden voor het schema in de week past, uitgewerkt in `references/deep-work.md`:
+In een blok past **één** taak, die de avond ervoor bij het afsluiten van 20:00 gekozen is. De telefoon ligt buiten de kamer. Hoe je de blokken intens maakt en wat er in het pauze-uur hoort staat in `references/deep-work.md`.
 
-1. **De trein.** Hij vertrekt 06:23 en zit 07:35 op kantoor, dus blok 1 mist 35 minuten. Of een vroegere trein, of blok 1 naar 07:40.
-2. **Geen afspraken voor 12:00.** Strenger dan eerder gedacht, want blok 2 loopt tot 12:00 en daar begint nu een kwart van zijn afspraken.
-3. **De weekendblokken zijn al bezet** met week plannen, gym dashboard, LinkedIn en financiele controle. Die zijn niet allemaal deep work.
+**De eerste twee weken zijn een nulmeting**, geen target. Daarna wordt het één getal (W5).
 
-Scorebord: blokken in de agenda "Planning", bij het 20:00-blok een ✓ of ✗, zaterdag 07:30 bij "Week plannen" de week optellen.
+**Voorstel voor de echte stuurmaat: geboekte eerste gesprekken per week, vijf stuks.** Uren deep work zijn goed beinvloedbaar maar matig voorspellend, je kunt 28 uur aan het verkeerde werk besteden. Vijf gesprekken per week is twintig per maand, dus dezelfde taal als het doel. De uren blijven het scorebord, de gesprekken worden de knop. Nog te bevestigen door Dante.
+
+Scorebord: blokken in de agenda "Planning", bij het 20:00-blok een ✓ of ✗, zaterdag 06:00 bij "Week plannen" de week optellen.
 
 ## Revenue target Eduface, eind 2027
 
@@ -58,7 +54,6 @@ Stond hier tot 19-09-2026. Niet omdat het slechte ideeën zijn, maar omdat alles
 - De Framer-site herbouwen.
 - De Jisc/CHEST-pilotdoelen uit Q2.
 - Het webinar met De Haagse Hogeschool, dat was 23 juni.
-- **Content en LinkedIn.** Expliciet geen prioriteit (19-09-2026). Let op: er staat nog wel elke zondag 07:30 "LinkedIn post schrijven" in zijn agenda.
 - **Spaans.** Expliciet geen prioriteit (19-09-2026).
 
 De oude versie staat in `archives/context-2026-09/`. Komt er iets van terug, dan komt het hier terug met een datum erbij, niet als stille toevoeging.

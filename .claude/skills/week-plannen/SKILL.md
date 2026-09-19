@@ -5,7 +5,7 @@ description: Begeleidt Dante's wekelijkse planmoment op zaterdagochtend. Hij bed
 
 # Week plannen
 
-Zijn planmoment staat elke **zaterdag 07:30 tot 09:00** in de agenda "Persoonlijk taken". Dit is de skill die dat uur invult.
+Zijn planmoment staat elke **zaterdag 06:00 tot 07:30** in de agenda "Persoonlijk taken", binnen zijn eerste deep-work-blok. Dit is de skill die dat uur invult.
 
 > **Vervangt `/task-planning`**, gearchiveerd op 19-09-2026 in `archives/skills-2026-09/`. Dante: *"die taken moet ik echt zelf bedenken, de input moet echt vanuit mij komen."* Die skill rangschikte zijn Todoist-lijst en verzon er taken bij. Dat is precies de verkeerde kant op.
 
@@ -20,7 +20,7 @@ Wat ik wel doe: doorvragen, het naast zijn eigen prioriteit leggen, en wegschrij
 **1. Terugblik, vijf minuten.** Ik lever de cijfers, hij het oordeel.
 
 - Hoeveel deep-work-blokken zijn er vorige week gehaald? Tel ze uit de agenda "Planning".
-- Vraag hem hoeveel salesprocessen er deze maand gestart zijn. **Niet uit Close afleiden**, dat heeft hij expliciet zo gekozen.
+- Vraag hem hoeveel salesprocessen er deze maand gestart zijn, en hoeveel eerste gesprekken er vorige week geboekt zijn. **Niet uit Close afleiden**, dat heeft hij expliciet zo gekozen.
 - Eén vraag: wat heeft de gemiste blokken opgegeten? Daar zit het patroon.
 
 **2. Hij denkt hardop.** Laat hem opnoemen wat er volgens hem moet gebeuren. Onderbreek niet om te ordenen. Schrijf mee.
@@ -28,6 +28,7 @@ Wat ik wel doe: doorvragen, het naast zijn eigen prioriteit leggen, en wegschrij
 **3. Ik bevraag.** Pas hier kom ik in beeld, met vragen, niet met een oordeel:
 
 - *Draagt dit bij aan de 20 salesprocessen van deze maand?* Zo nee, waarom staat het er dan?
+- *Welke taak zet je in welk blok?* Eén per blok, en die keuze maak je nu, niet in het blok zelf.
 - *Dit staat er de derde week op rij op. Gaat het gebeuren, of gaat het weg?*
 - *Is dit een taak van een uur of van een week?* Een taak die niet in één blok past is geen taak maar een project.
 - *Welke hiervan vraagt echt denkwerk?* Die horen in een deep-work-blok, de rest in de middag.
@@ -53,12 +54,12 @@ Uit `context/current-priorities.md`:
 
 | Dag | Blok 1 | Blok 2 |
 |---|---|---|
-| Ma t/m vr | 07:00 tot 09:00 | 09:30 tot 12:00 |
-| Za en zo | 06:00 tot 08:00 | 08:30 tot 11:00 |
+| Ma t/m vr | 07:00 tot 09:00 | 10:00 tot 12:00 |
+| Za en zo | 06:00 tot 08:00 | 09:00 tot 11:00 |
 
 In een blok past **één** taak die echt denkwerk vraagt. Geen mail, geen Close, geen belrondje. De rest van de dag is shallow werk en dat mag.
 
-Ziet de planning er zo uit dat er een afspraak voor 12:00 staat, meld dat. Dat is de enige regel die de hele opzet draagt.
+Staat er een meeting in een blok, dan is dat geen probleem. Calendly blijft bewust open: een geboekte meeting wint van een blok. Plan het blok dan om of laat het vallen, en zeg er niets van.
 
 ## Oplevering
 

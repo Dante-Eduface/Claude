@@ -29,7 +29,7 @@ Zijn twee prioriteiten voor gezondheid, letterlijk: **goede intensiteit tijdens 
 
 ### De split
 
-Vier dagen per week, upper/lower. Volumeprioriteit ligt op **lats en laterale deltoid** (het V-taper-frame), de rest op onderhoudsvolume. Hij logt in de **Strong**-app en draagt een **WHOOP**. De schema's staan in `references/training/`.
+Vier dagen per week, upper/lower. Volumeprioriteit ligt op **lats en laterale deltoid** (het V-taper-frame), de rest op onderhoudsvolume. Hij logt in de **Strong**-app. **Gestopt met WHOOP** (19-09-2026), dus er is geen herstel- of slaapdata meer. De schema's staan in `references/training/`.
 
 | Dag | Training | Tijd |
 |---|---|---|
@@ -53,7 +53,9 @@ Consistent en wat hem betreft niet onderhandelbaar. Dat di en do om 17:00 begint
 
 **Lust hij niet:** feta, walnoten, chiliflakes, chipotle, sambal, gember.
 
-**Laatste meting, augustus 2026, en de laatste die er komt:** 89,4 kg, 10,2% vet, 46,8 kg spiermassa, BMR 2.104 kcal.
+**Laatste InBody, augustus 2026, en de laatste die er komt:** 89,4 kg, 10,2% vet, 46,8 kg spiermassa, BMR 2.104 kcal.
+
+**Wel: één keer per week op de weegschaal.** Zaterdagochtend, nuchter. Niet om het getal maar om de richting: gaat het harder dan een halve kilo per maand omhoog, dan 200 kcal eraf; beweegt het in twee maanden niet, dan 200 erbij. Dat is het enige signaal waarmee de 2.800 bijgesteld kan worden.
 
 **Let op:** eten is ook zijn eerste faalpunt op een werkdag. Zijn eigen woorden: *"een dag gaat vooral mis als ik ongezond begin te eten."* Dat maakt dit geen los gezondheidsonderwerp maar een werkonderwerp.
 
@@ -68,11 +70,19 @@ Staat apart in **`context/financien.md`**. Laadt ook niet automatisch.
 - Leest nu *Deep Work* (Newport). Wat daaruit in zijn werkweek terechtkomt staat in `references/deep-work.md`.
 - **Welke vaardigheid hij het komende jaar ontwikkelt, volgt uit de leidende maat**, niet uit een aparte keuze. Zijn redenering: de skill die bij de lead metric hoort, dat is waar hij hard in moet worden. Staat nog open als P11.
 
+## Het weekend
+
+Twee thema's, allebei met dezelfde twee deep-work-blokken erin (06:00 tot 08:00 en 09:00 tot 11:00):
+
+- **Zaterdag is een werkdag.** Week plannen in blok 1, financiele controle in de pauze, gym om 13:00, boodschappen om 15:00.
+- **Zondag is een thuisdag.** LinkedIn-post in blok 1, gym om 13:00, schoonmaken om 15:00, koken om 16:00.
+
+Boodschappen blijven bewust op zaterdag, een dag voor het koken. Zie `references/deep-work.md` voor de hele week.
+
 ## Wat nu geen prioriteit is
 
 Op 19-09-2026 door hemzelf geparkeerd. Niet voorstellen, niet inplannen, niet naar vragen tot hij er zelf over begint:
 
-- **Content en LinkedIn.** Let op: er staat nog wel elke zondag 07:30 "LinkedIn post schrijven" in zijn agenda.
 - **Spaans.**
 - Een eigen startup, een route naar oprichter, en elk exitscenario voor Eduface.
 - Een salarisgesprek of een pad naar CRO. Hij wil er niet over nadenken of praten. Niet opnieuw opbrengen.
