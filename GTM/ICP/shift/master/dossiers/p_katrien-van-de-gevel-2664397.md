@@ -23,7 +23,7 @@ https://publicaties.nvao.net/prd/AV-1183_20221005_Rapport_Thomas%20More%20Rappor
 NVAO/NQA-visitatierapport 2022 + functieprofiel Chasse 2025 + LinkedIn-post
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 DIEP 2026-08-07: STERKSTE haakje = hun eigen eerste toetsprincipe "Toetsen dragen bij aan de professionele ontwikkeling van studenten" + actieve uitrol van "assessment for learning" op het raamwerk van Sluijsmans et al. (2012); dr. Sluijsmans (NL-autoriteit formatief toetsen) zat zelf in het NVAO-visitatiepanel. Wie binnenkomt met "formatieve feedback op schrijfwerk" spreekt hun eigen taal. Bron: NQA/NVAO-rapport 2022. | Why-now: Katrien net aangetreden (haar eigen LinkedIn-post "Van Dalton Den Haag naar Thomas More Hogeschool", 1 dec 2025); per functieprofiel aangenomen om "richting te geven aan onderwijskwaliteit" en "vernieuwende onderwijs- en onderzoeksprogramma s" te implementeren. Vernieuwingsvenster. | GEEN eerste-persoons pijn-citaat van Katrien over toetsing gevonden (komt uit VO, niet uit de toetshoek) - forceer dat niet. | Panel-aandachtspunt: eindwerken mogen "onderzoekend en analytisch vermogen" meer tonen (voorzichtig gebruiken, niet als jouw conclusie).
 

@@ -17,7 +17,7 @@ https://www.dirksen.nl/opleiding/312/Bachelor-Technische-informatica-afstudeerri
 organisatie
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 **Haakje zoals agent 3 het opschreef**
 Dirksen startte een derde studievariant naast Industriele Automatisering en ICT-Telecom: de bachelor Technische Informatica met afstudeerrichting Duurzame installaties en systeemintegratie

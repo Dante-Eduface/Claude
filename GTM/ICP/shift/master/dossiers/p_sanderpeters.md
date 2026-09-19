@@ -23,7 +23,7 @@ Nieuwsbericht (ANP/aethon.nl) + eigen site
 2022-01-06
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 Werd per 1-1-2022 directeur van SVOZ als opvolger van Paul Schoone (15 jaar directeur/eigenaar); quote bij aantreden: "Deze nieuwe stap is echt nieuw. Voor het eerst buiten de muren van een ROC" (ANP persportaal / aethon.nl) - kwam dus uit de bekostigde ROC-wereld naar een particuliere zorgopleider; SVOZ bestaat sinds 1973, een van de grootste particuliere zorgopleiders, en is overgenomen door Aethon; SVOZ examineert zelf via eigen mbo-examencommissie (crebo-erkend, o.a. crebo 25655), studenten leveren praktijkexamens plus een geschreven verantwoording van hun keuzes in (svoz.nl)
 

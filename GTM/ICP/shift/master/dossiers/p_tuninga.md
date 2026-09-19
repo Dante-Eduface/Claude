@@ -23,7 +23,7 @@ eigen OER / handbook
 2026-05-15
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 DIEP 2026-08-12 STERK: eigen Graduation Assignment handbook (versie 15-05-2026) zegt dat begeleiders 'a maximum of 14 hours per student' krijgen, inclusief nakijken; twee tussenversies krijgen bewust alleen feedback en geen cijfer; een externe tweede beoordelaar is verplicht; eindwerk is 10.000 tot 12.000 woorden; AACSB self-assessment en Assurance-of-Learning-traject lopen nu, bevestigd op een meeting van 05-02-2025 met de uitspraak 'Once we check in, AACSB will be with us forever'; hij komt zelf van AACSB (VP/Managing Director EMEA 2022-2024) en publiceert over kwaliteit in business education; PhD Temple University; LET OP: die 14 uur is een toewijzing, geen klacht over nakijklast, dus niet zo framen; agent scoorde 2 tot 3, hier conservatief op 2
 

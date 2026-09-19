@@ -23,7 +23,7 @@ organisatie (NVAO-rapport, dateert van voor haar aantreden)
 2023-02-17
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 DIEP 2026-08-12 ZWAK: geen persoonlijk haakje vindbaar, LinkedIn geeft 999 en er zijn geen posts of interviews; enige verse organisatiefeit is dat Artemis in feb 2026 de 15e academie werd binnen Groupe EDH, maar dat raakt schrijfwerk niet; LET OP CONFLICT: de eerdere ronde had wel een gedekt organisatiehaakje uit het NVAO-rapport Allround Styling (17-02-2023), dat letterlijk aanbeveelt dat studenten 'woorden' geven aan hun onderzoeksverslag en expliciet aandacht besteden aan schriftelijk taalgebruik, en dat vaststelt dat het onderwijs draait op ruim 120 praktijkdocenten in een flexibele schil bij circa 80 nieuwe studenten per jaar; dat rapport dateert van voor haar aantreden en is dus niet haar aandachtspunt, maar het is wel een echte bron - DANTE AKKOORD 2026-08-12: mag gebruikt worden, met EXPLICIET erbij dat het rapport van voor haar aantreden dateert (feb 2023, zij startte okt 2023) - het is een structureel feit over de opleiding (flexibele schil, schrijfwerk-beoordeling), geen incident dat aan haar hangt, dus aannemelijk nog steeds relevant maar niet apart herbevestigd sinds 2023
 

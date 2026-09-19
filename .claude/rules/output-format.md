@@ -10,7 +10,7 @@ Een markdown-bestand in de repo is opslag, geen oplevering. Dante leest niet in 
 ## Eén pagina per onderwerp
 - Maak **niet** per oplevering een nieuwe Artifact. Bestaat er al een pagina over dit onderwerp, voeg het daar toe als eigen sectie en publiceer opnieuw op hetzelfde pad.
 - Alleen een echt nieuw onderwerp krijgt een nieuwe pagina.
-- NL-ICP en targetlijst = de pagina **ICP** (`projects/targetlijst-nl/groepen-gekwalificeerd.html`).
+- NL-ICP en targetlijst = de pagina **ICP** (`GTM/ICP/targetlijst-nl/groepen-gekwalificeerd.html`).
 
 ## De werkmap (hub)
 - **Vervallen op 21-08-2026.** Nieuwe Artifacts hoeven niet meer in `hub.html` gezet te worden.

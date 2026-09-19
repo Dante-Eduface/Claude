@@ -18,7 +18,7 @@ Per deal: maak een kopie, hernoem naar `[Klant] Go Live Plan`, zet hun logo erbi
 
 ## Design
 
-Volgt `references/design-system/core/` plus de bodyschaal van `web/`, de afleiding die de
+Volgt `Design/Design system/core/` plus de bodyschaal van `web/`, de afleiding die de
 README van het design system zelf als voorbeeld geeft voor een go-live-document.
 
 - Opbouw: het waarom eerst, dan pas het plan.

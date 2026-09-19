@@ -6,7 +6,7 @@ Alle content voor een landingspagina gericht op onze ICP: particuliere onderwijs
 
 **Eén doel per pagina:** demo aanvragen. Alles eromheen is ondersteunend.
 
-**Claim-regel:** alles hieronder komt uit `references/eduface-product.md`. Alles met `[INVULLEN]` is een plek waar een cijfer, quote of logo hoort dat wij nog moeten bevestigen. Zet niks live wat niet bevestigd is.
+**Claim-regel:** alles hieronder komt uit `Platform/product.md`. Alles met `[INVULLEN]` is een plek waar een cijfer, quote of logo hoort dat wij nog moeten bevestigen. Zet niks live wat niet bevestigd is.
 
 ---
 

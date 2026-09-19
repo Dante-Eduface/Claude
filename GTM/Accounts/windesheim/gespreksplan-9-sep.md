@@ -213,5 +213,5 @@ Stuur de bevestiging vandaag nog per mail. Dat is de discovery-gate: pijn, spele
 - Niet je eigen besparingsberekening als hun cijfer presenteren. De 15 tot 20 minuten is een sectorbasislijn.
 - Het accuraatheidscijfer nooit kaal laten staan als iemand doorvraagt: het is het verschil tussen ons cijfervoorstel en dat van de docent, geen overeenstemmingspercentage.
 - TIO en ICM noem je nergens.
-- Geen functies beloven die niet in `references/eduface-product.md` staan.
+- Geen functies beloven die niet in `Platform/product.md` staan.
 - Begeleiding niet framen als kostenpost. Dat is hun hoogste NSE-score en hun trots.

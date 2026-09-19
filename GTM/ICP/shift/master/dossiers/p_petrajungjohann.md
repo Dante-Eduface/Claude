@@ -23,7 +23,7 @@ Hobeon-beoordelingsrapport via NOvA
 2025-02-10
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 DIEP 2026-08-12 STERKSTE VAN HAAR GROEP: Hobeon-rapport van 10-02-2025 over de Law Firm School, die OSR sinds 2024 operationeel draait, zegt dat het panel de 'bandbreedte... verkleinen' wil tussen docenten qua feedback en 'een (korte) schriftelijke beoordeling... vanwege de navolgbaarheid' wil, terwijl nu 'het grootste deel van de feedback mondeling... op de dag zelf' gaat; LFS-stagiairs leveren dagvaarding, conclusie van antwoord, clientadvies en conceptcontract in; OSR-cursussen kennen praktijkteksten en reflectieopdrachten; LET OP: OSR wordt zelf niet bij naam genoemd in het rapport, dat eerlijk zo brengen; achtergrond is marketing (Springer Nature), niet het juridisch onderwijs zelf; agent scoorde dit als niveau 2 tot 3, hier conservatief op 2 gezet
 

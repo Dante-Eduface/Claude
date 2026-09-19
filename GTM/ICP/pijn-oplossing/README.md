@@ -1,9 +1,9 @@
 # Pijn en oplossing uit Close
 
-Eén pagina met alles wat prospects en klanten in Close hebben gezegd over hun pijn, gewenste uitkomst, bezwaren en huidige aanpak, per thema, met onze oplossing eronder (alleen claims uit `references/eduface-product.md`).
+Eén pagina met alles wat prospects en klanten in Close hebben gezegd over hun pijn, gewenste uitkomst, bezwaren en huidige aanpak, per thema, met onze oplossing eronder (alleen claims uit `Platform/product.md`).
 
 ## Bestanden
-- `pijn-oplossing.html` — de pagina. Open via `node projects/website-building/serve.mjs` vanuit de repo-root en ga naar `http://localhost:3000/projects/pijn-oplossing/pijn-oplossing.html` (of dubbelklik, werkt ook zonder server). Dante beoordeelt hier per uitspraak: klopt (y) of weg (n), met notitie (o). Knop "Kopieer besluiten" zet zijn besluiten als JSON op het klembord.
+- `pijn-oplossing.html` — de pagina. Open via `node Design/Website/website-building/serve.mjs` vanuit de repo-root en ga naar `http://localhost:3000/GTM/ICP/pijn-oplossing/pijn-oplossing.html` (of dubbelklik, werkt ook zonder server). Dante beoordeelt hier per uitspraak: klopt (y) of weg (n), met notitie (o). Knop "Kopieer besluiten" zet zijn besluiten als JSON op het klembord.
 - `besluiten.json` — daar plakt Dante (of ik) de gekopieerde besluiten in. Formaat: `{stand, klopt:[ids], weg:[ids], notities:{id:tekst}}`. Dit is wat het volgende Claude-venster leest.
 - `items.json` — alle uitspraken, één object per regel-item, machine-leesbaar. Veldnamen staan in `EXTRACTIE-INSTRUCTIE.md`.
 - `pijn-bibliotheek.md` — dezelfde inhoud als de pagina, leesbaar zonder browser.
@@ -14,8 +14,8 @@ Eén pagina met alles wat prospects en klanten in Close hebben gezegd over hun p
 
 ## Verversen
 ```bash
-python3 projects/pijn-oplossing/close_alles.py projects/pijn-oplossing/close-dump   # nieuwe Close-data (slaat al gedumpte leads over; verwijder _index.tsv voor een volledige refresh)
-python3 projects/pijn-oplossing/build.py                                            # pagina + md opnieuw
+python3 GTM/ICP/pijn-oplossing/close_alles.py GTM/ICP/pijn-oplossing/close-dump   # nieuwe Close-data (slaat al gedumpte leads over; verwijder _index.tsv voor een volledige refresh)
+python3 GTM/ICP/pijn-oplossing/build.py                                            # pagina + md opnieuw
 ```
 Nieuwe dossiers moeten opnieuw door de extractie (zie `EXTRACTIE-INSTRUCTIE.md`), dat doet build.py niet zelf.
 

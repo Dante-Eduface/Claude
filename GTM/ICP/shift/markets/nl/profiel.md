@@ -39,7 +39,7 @@ De enige vraag per organisatie: **wie neemt het examen af?** Zoek `"[naam] exame
 Geen sectorbrede gepubliceerde norm in NL. Sommige OER's noemen een nakijktermijn (vaak 10 tot 15 werkdagen), citeer die alleen als hij letterlijk in hun eigen reglement staat. Niet gevonden = niet noemen.
 
 ## Vaktermen
-De volledige tabel met betekenis en drager staat in `references/onderwijs-vaktermen.md`. De kern:
+De volledige tabel met betekenis en drager staat in `Platform/onderwijs-vaktermen.md`. De kern:
 - **Student** draagt: studeerbaarheid, studielast, toetslast/toetsdruk, herhalingsactiviteiten, leertaken. Nooit ons haakje.
 - **Beoordelaar** draagt: beoordelingslast/nakijklast, docentbelasting, tweede beoordelaar/vier-ogen-principe, kalibratie, doorlooptijd van de beoordeling. Wel ons haakje.
 - **Panel/organisatie**: borging van de toetskwaliteit (examencommissie, nooit framen als "het rammelt"), robuuste toetsing (compliment, geen pijn).
@@ -49,7 +49,7 @@ De volledige tabel met betekenis en drager staat in `references/onderwijs-vakter
 Poort 0b: minstens één opleiding **langer dan een jaar** (aangescherpt 18-08-2026, was 2 weken). Meet het langste programma. Losse lesdagen verspreid over meer dan een jaar tellen mee; een modulaire route telt als de deelnemer aaneengesloten naar één diploma werkt. Twijfel net onder het jaar = kandidaat, niet afgevallen. Eenheid: maanden, EC/SBU als beschikbaar.
 
 ## Prijsmodel
-EUR. Toolfee 7.500 per opleiding plus infrastructuurstaffel op studentplaatsen per opleiding: A tot 500 = 10.000, B tot 1.500 = 15.000, C tot 3.000 = 21.500, D tot 6.000 = 33.500, E daarboven = 51.500. Drempel 10.000 jaarwaarde, en onze fee hoogstens 10% van de programma-omzet. Bron: `references/pricing/prijsmodel-nl-opleiding-26-27.md`. Harde waarden in `profiel.json`.
+EUR. Toolfee 7.500 per opleiding plus infrastructuurstaffel op studentplaatsen per opleiding: A tot 500 = 10.000, B tot 1.500 = 15.000, C tot 3.000 = 21.500, D tot 6.000 = 33.500, E daarboven = 51.500. Drempel 10.000 jaarwaarde, en onze fee hoogstens 10% van de programma-omzet. Bron: `Archive/prijsmodel-nl-opleiding-26-27.md`. Harde waarden in `profiel.json`.
 
 ## Titelrangorde
 Onderwijstak boven bedrijfsvoeringstak. College van bestuur en bestuurder bovenaan, dan algemeen directeur en eigenaar, dan directeur onderwijs/opleidingen/kwaliteit, dan hoofd onderwijs, lector/decaan, manager onderwijs, opleidingsmanager, teamleider, adviseur, coördinator, docent. Nooit de examencommissie als ingang; opleidingsmanager alleen als er niets hogers is, dan een directeur als tweede kandidaat erbij. Regexes in `profiel.json`.

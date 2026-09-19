@@ -21,7 +21,7 @@ het om te weten waar je in Close naar moet zoeken.
 Opgenomen uit de vroegere skill `meddpicc-qualifier`.
 
 
-`references/sops/meddpicc-states-and-gates.md` holds the full states-and-gates
+`GTM/Knowledge/meddpicc-states-and-gates.md` holds the full states-and-gates
 reference: the six sales stages with their exit gates, and per element the proof
 required for every state plus the gate to the next one. Read it whenever the
 question is "where does this deal really stand", "what moves this element up one

@@ -5,9 +5,9 @@ description: Takes a goal and a real-world reference, extracts what actually mak
 
 ## EDUFACE-LAAG — lees dit eerst, het gaat voor op de rest van dit bestand
 
-- Waar hieronder `design-system.md` staat, lees je `references/design-system/core/` plus het oppervlak dat je bouwt (`web/`, `slides/` of `internal/`). Nooit de hele map. De system critic toetst tegen `core/regels.md` en `core/compositie.md`.
+- Waar hieronder `design-system.md` staat, lees je `Design/Design system/core/` plus het oppervlak dat je bouwt (`web/`, `slides/` of `internal/`). Nooit de hele map. De system critic toetst tegen `core/regels.md` en `core/compositie.md`.
 - Deze loop vervangt de drie poorten uit `core/proces.md` niet, hij zit erin: poort 1 (richting) = fase 1-3, poort 2 (proef) = ronde 1 op het eerste stuk, poort 3 (uitrol) = de rest van de stukken. Dante kan poorten overslaan door dat te zeggen.
-- Rendering: HTML zelf in Chrome openen of de puppeteer-tooling uit `projects/website-building/` gebruiken. De verborgen browserpane geeft lege screenshots.
+- Rendering: HTML zelf in Chrome openen of de puppeteer-tooling uit `Design/Website/website-building/` gebruiken. De verborgen browserpane geeft lege screenshots.
 - `bar.md` en de voortgangspagina zet je in de projectmap waar je aan werkt, niet los in de root.
 - Geen Artifact tenzij Dante er expliciet om vraagt. De voortgangspagina is standaard een lokaal HTML-bestand dat je zelf opent.
 - Schrijf naar Dante in het Nederlands, bondig, bullets, geen em-dashes. De critic-briefs zelf mogen Engels zijn.

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Bakt data/deals/*.json in tot een dubbelklikbare sales-coach.html.
 
-    python3 projects/sales-coach/scripts/build.py
+    python3 GTM/sales-coach/scripts/build.py
 """
 import glob
 import json

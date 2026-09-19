@@ -672,7 +672,7 @@ function renderFocus(){
     ${drills.length? drills.map(d=>`${drillCard(d)}`).join('')
       : '<div class="empty">Nog geen drills. Die ontstaan vanzelf uit gedebriefte calls.</div>'}
     ${drills.length? `<div class="band" style="margin-top:10px">Plak een opdracht in Claude om te oefenen. De roleplay-vorm staat in
-      <span class="kbd">references/sops/cold-call-roleplay-prompt.md</span></div>`:''}</div>
+      <span class="kbd">GTM/Knowledge/cold-call-roleplay-prompt.md</span></div>`:''}</div>
 
   ${(FOCUS.historie||[]).length? `<div class="sec"><h2>Eerdere focus</h2><div class="card" style="padding:0"><div class="rows">
     ${FOCUS.historie.map(h=>`<div class="row"><span class="r-nm">${esc(h.vaardigheid)}</span>

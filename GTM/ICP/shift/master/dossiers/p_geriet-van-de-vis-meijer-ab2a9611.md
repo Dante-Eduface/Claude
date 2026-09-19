@@ -23,7 +23,7 @@ eigen site (nieuwsbericht)
 2025-12-09
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 Zij is per december 2025 aangetreden als algemeen directeur over twee labels tegelijk en volgde Marieke Fieten op (https://cs-opleidingen.nl/actueel/iva-opleidingen-sluit-aan-bij-certify360-nieuwe-directeur-voor-cs-opleidingen, 9-12-2025); het bericht noemt haar "ruime ervaring mee in het opleidings- en onderwijsdomein" en "bekend om haar verbindende stijl en resultaatgericht leiderschap"; de gecombineerde leiding moet zorgen voor "eenduidige aansturing, meer strategische focus en ruimte om het totale opleidingsportfolio verder te ontwikkelen" (zelfde bericht); per 1 mei 2026 fuseren IVA Opleidingen en CS Opleidingen onder de naam CS Opleidingen (zelfde bron); zij begon als arbeidsdeskundige en gaf jarenlang zelf les bij IVA Opleidingen voordat zij directeur werd, dus intern doorgegroeid vanuit het docentschap; haar LinkedIn-headline staat nog op "Directeur - IVA Opleidingen", de eigen site loopt voor op LinkedIn
 

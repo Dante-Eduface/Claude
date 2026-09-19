@@ -34,7 +34,7 @@ Jeroen noemde als thema's ook: beoordeling van de AI-feedback door studenten en 
 - Gedeelde ruwe schatting: **€2 tot €3 per cursist per maand**. Daar is groen licht op gegeven als werkbaar.
 - Bij ruim 800 cursisten is dat grofweg €19.000 tot €29.000 op jaarbasis, wat de €20.000 in Close verklaart.
 - Zij opperden zelf om de kosten door te berekenen aan de cursist.
-- Het Nederlandse prijsmodel per opleiding (toolfee €7.500 plus infrastructuurstaffel, zie `references/pricing/`) is hier nog niet naast gelegd. Doen voordat het contract wordt opgesteld.
+- Het Nederlandse prijsmodel per opleiding (toolfee €7.500 plus infrastructuurstaffel, zie `GTM/Pricing/`) is hier nog niet naast gelegd. Doen voordat het contract wordt opgesteld.
 
 ## MEDDPICC, stand na de demo
 - **Metrics:** nog niet gekwantificeerd. Openstaand punt.

@@ -17,7 +17,7 @@ https://managementmodellensite.nl/gert-jan-schop/
 publicatie
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 **Haakje zoals agent 3 het opschreef**
 Runt zelf de Managementmodellensite, waar staat: Voor Gert Jan is veranderen gelijk aan leren en leren gelijk aan veranderen, en waar hij claimt dat alle content grondig op betrouwbaarheid is gecheckt

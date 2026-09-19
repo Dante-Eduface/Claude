@@ -1,7 +1,7 @@
 # Extractie-instructie (voor subagents)
 
-Je leest Close-dumps in `projects/pijn-oplossing/close-dump/<bestand>.md` en haalt eruit wat de prospect
-zelf zei over zijn situatie. Output: één JSON-array per dossier in `projects/pijn-oplossing/extractie/<zelfde-naam>.json`.
+Je leest Close-dumps in `GTM/ICP/pijn-oplossing/close-dump/<bestand>.md` en haalt eruit wat de prospect
+zelf zei over zijn situatie. Output: één JSON-array per dossier in `GTM/ICP/pijn-oplossing/extractie/<zelfde-naam>.json`.
 
 ## Wat je eruit haalt (één item per uitspraak)
 - **pijn**: een probleem dat de prospect zelf benoemt (werkdruk, inconsistentie, uitval, fraude, traagheid, ...).

@@ -20,7 +20,7 @@ https://www.linkedin.com/in/maarten-vergeer-96104a5b/
 LinkedIn (headline + posts, geindexeerd) + eigen site
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 LinkedIn omschrijft hem als "ondernemende bestuurder in Onderwijs, Zorg & Welzijn" (nl.linkedin.com/in/maarten-vergeer-96104a5b); directeur/eigenaar van zowel Zorg & Werk Academy als Spring Instituut; LinkedIn-post "Leereenheden voor MBO-Opleidingen zorg" (2025) - ontwikkelt/deelt zelf mbo-leereenheden; Zorg & Werk Academy sinds 2012, erkende niet-bekostigde mbo zorg & welzijn met eigen CREBO en eigen examinering; over-ons noemt "oefening en toetsing" (zorgenwerk.nl/over-ons)
 

@@ -26,7 +26,7 @@ NVAO/Hobeon-rapport
 2020-04-24
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 NIET KOUD, NIET OPNIEUW BENADEREN: Dante heeft haar op 2026-08-05 gebeld (Close, disposition Answered), zij verwees door naar Marloes van der Have (operationeel directeur) en daar loopt sinds 6 aug een mailthread; NOVI fuseert in september met Capabel tot Calder Holding en Marloes heeft het geparkeerd; haar eigen woorden in de call: de NOVI-docenten zijn zelf IT-onderlegd en 'een niet al te makkelijke groep is om onze innovatie aan te verkopen'. | ONDERZOEKSWAARDE (voor later, niet voor koude outreach): NVAO/Hobeon-rapport (audit 24-04-2020) zegt letterlijk 'Het panel concludeerde dat de feedback vaak wat minimaal is' en 'de feedback erg summier was' bij BEDRIJFSKUNDE, niet bij ICT waar de feedback juist 'krachtig' heet. | CORRECTIE: de eerder gebruikte parafrase 'feedback te mager' was FOUT, het woord 'mager' gaat in het rapport over iets anders; juiste citaten zijn 'vaak wat minimaal' en 'erg summier'. Dezelfde foute parafrase staat als voorbeeld in .claude/agents/shift-research.md en moet daar ook gecorrigeerd worden. | Education: MSc Universiteit Twente, bachelor Hogeschool Rotterdam (onze klant); location Amsterdam
 

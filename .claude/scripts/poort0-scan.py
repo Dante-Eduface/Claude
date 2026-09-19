@@ -1,5 +1,5 @@
 import sys,re,subprocess,html,os,json,concurrent.futures as cf
-# Sinds 10-09-2026 marktafhankelijk: de regexes komen uit projects/shift/markets/<code>/profiel.json
+# Sinds 10-09-2026 marktafhankelijk: de regexes komen uit GTM/ICP/shift/markets/<code>/profiel.json
 # (sleutels poort0_own, poort0_extern, poort0_duur, poort0_url_kw). Markt via SHIFT_MARKT, anders nl.
 # Ontbreekt een sleutel, dan geldt de NL-regex hieronder. Gebruik: SHIFT_MARKT=uk python3 poort0-scan.py lijst.txt 0 50
 _REPO=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))

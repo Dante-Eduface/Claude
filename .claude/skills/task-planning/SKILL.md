@@ -1,6 +1,6 @@
 ---
 name: task-planning
-description: Daily / weekly / monthly task planning + prioritisation for Dante across Todoist. Pulls his open + overdue tasks, ranks them against context/current-priorities.md + context/goals.md (everything ladders up to UK university adoption), produces a focused plan, and applies the reprioritise / reschedule / add changes in Todoist. Trigger when Dante says "plan mijn dag", "wat moet ik vandaag doen", "wat staat er vandaag", "weekplanning", "plan mijn week", "maandoverzicht", "prioriteer mijn taken", or on a morning planning cron.
+description: Daily / weekly / monthly task planning + prioritisation for Dante across Todoist. Pulls his open + overdue tasks, ranks them against Context/current-priorities.md + Context/goals.md (everything ladders up to UK university adoption), produces a focused plan, and applies the reprioritise / reschedule / add changes in Todoist. Trigger when Dante says "plan mijn dag", "wat moet ik vandaag doen", "wat staat er vandaag", "weekplanning", "plan mijn week", "maandoverzicht", "prioriteer mijn taken", or on a morning planning cron.
 ---
 
 # Task Planning
@@ -20,7 +20,7 @@ If the mode is ambiguous, assume **daily**. Don't ask.
 ## The loop
 
 ```
-1. LOAD     read context/current-priorities.md + context/goals.md (the anchor)
+1. LOAD     read Context/current-priorities.md + Context/goals.md (the anchor)
 2. PULL     get tasks from Todoist for the mode's window (Eduface + sub-projects)
 3. SCORE    rank each task on the priority ladder below
 4. PLAN     write the plan in Dante's voice (template in reference.md)
@@ -42,7 +42,7 @@ Tie-breakers, in order: deadline proximity → deal stage (later-stage deal beat
 ## Scope of what to pull
 
 - **Include:** the **Eduface** project `6g45VgPCC6MHp22p` (all sections) and its sub-projects: Hot Lead Outreach `6gqR7Q5Gj9MgjVVg`, Webinar HHS aanmeldingen `6gqRR6gxjxr7FCpx`, Webinar HHS replies `6gqRcf77j2PrvRP6`. Plus the Inbox `6M5QRjwfxMV42g4Q`.
-- **Exclude by default:** the **Personal** project `6R32RmpH44VRMGJv`. Only include it if Dante asks for a personal/combined plan (and then read `context/personal.md` per the context-loading rule).
+- **Exclude by default:** the **Personal** project `6R32RmpH44VRMGJv`. Only include it if Dante asks for a personal/combined plan (and then read `Context/personal.md` per the context-loading rule).
 - Use `find-tasks-by-date` with `startDate: today` and `overdueOption: include-overdue` for daily; widen `daysCount` to 7 for weekly. For monthly, also pull `find-completed-tasks` / `get-productivity-stats` to review what shipped.
 
 ## Eduface sections (for placing new tasks)
@@ -71,4 +71,4 @@ Write the plan in Dante's voice: casual, bullets, no em-dashes, no hype, in Dutc
 
 - This can run on a morning cron like `hot-lead-outreach`. Not wired up yet; build it only if Dante asks.
 - Re-read the anchor files every run. When focus shifts they get updated, and the plan must follow.
-- Log a meaningful change to the prioritisation logic in `decisions/log.md`.
+- Log a meaningful change to the prioritisation logic in `Decisions/log.md`.

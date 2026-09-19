@@ -28,7 +28,7 @@ Voor het web opgegaan is, eerst wat er aantoonbaar bij ons gebeurt.
 Zestien mappen geraakt in dertig dagen, dertien daarvan met meer dan een paar bestanden. Dat is de maat voor "hoeveel feestjes tegelijk".
 
 ### De SHIFT-pijplijn: gebouwde voorraad tegenover verstuurd werk
-Uit `projects/shift/master/` op 13-09-2026:
+Uit `GTM/ICP/shift/master/` op 13-09-2026:
 
 | Stap | Aantal |
 |---|---|
@@ -135,7 +135,7 @@ Dit is het deel waar Hormozi's advies het meest bijgesteld moet worden. De liter
 - **Hormozi's doelgroep is een andere dan de onze.** Acquisition.com richt zich op bedrijven met ongeveer $1-10M EBITDA of $3-10M+ omzet (alleen op tertiaire bronnen gevonden, niet op acquisition.com zelf). Zijn advies is geschreven voor iemand met een draaiende motor die hij verstoort door eraan te sleutelen.
 
 ### De geschreven prioriteiten lopen achter
-`context/current-priorities.md` is voor het laatst bijgewerkt op 08-06-2026, ruim drie maanden geleden. Het noemt de Haagse Hogeschool-webinar van 23 juni nog als tijdgevoelig en zegt niets over UTI, Bath Spa of de internationale SHIFT-uitbreiding, de drie dingen waar nu het meeste geld en werk in zit. Er is dus geen actueel document dat zegt wat nummer een is.
+`Context/current-priorities.md` is voor het laatst bijgewerkt op 08-06-2026, ruim drie maanden geleden. Het noemt de Haagse Hogeschool-webinar van 23 juni nog als tijdgevoelig en zegt niets over UTI, Bath Spa of de internationale SHIFT-uitbreiding, de drie dingen waar nu het meeste geld en werk in zit. Er is dus geen actueel document dat zegt wat nummer een is.
 
 ## Deel 6 — De tegenspraak
 

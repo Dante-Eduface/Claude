@@ -21,7 +21,7 @@ Dit is de begrippenlijst achter de **drager-toets** in `.claude/skills/linkedin-
 | Kalibratie / kalibreersessies | Beoordelaars stemmen hun oordeel op elkaar af | Beoordelaars | **Ja** |
 | Borging van de toetskwaliteit | Systeem waarmee het toetsniveau bewaakt wordt | Examencommissie | Deels, en nooit framen als "het rammelt" |
 | Robuuste toetsing | Panel-oordeel dat het toetssysteem deugt | Organisatie | **Nee**, dit is een compliment, geen pijn |
-| Rendement / uitval / studiesucces | Hoeveel studenten het halen | Student en organisatie | Ja, maar via het lange-traject-verhaal (zie `eduface-product.md`), niet via nakijklast |
+| Rendement / uitval / studiesucces | Hoeveel studenten het halen | Student en organisatie | Ja, maar via het lange-traject-verhaal (zie `Platform/product.md`), niet via nakijklast |
 | Doorlooptijd van de beoordeling | Tijd tussen inleveren en cijfer | Beoordelaar levert, student wacht | **Ja**, mits de bron de vertraging zelf noemt |
 
 ## Twee vuistregels

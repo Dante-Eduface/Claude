@@ -23,7 +23,7 @@ https://www.3masters.nl/open-training/moto-multidisciplinaire-opleiding-trust-of
 Eigen site, examen/opleiding-pagina
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 MOTO-eindexamen is 3-delig: multiple choice (25%), een Case Study 'requiring a substantiated client advice' (90 min, 50%, max 140 pnt) en een presentatie van het advies aan de 'examination committee' (25%); die examencommissie beoordeelt de presentatie [3masters.nl/open-training/moto-...-56-pe-points]; alle examens lopen schriftelijk via MS Teams met surveillant/camera, resultaten 'within 3 work days' [boto-1 + moto pages]; BOTO-1 = schriftelijk examen 90 min, 210 pnt, slagen bij 60%, 28 PE-punten, 7 modules [3masters.nl/opleiding/boto-1]; MOTO = 14 modules, 56 contacturen, groep min 10/max 20 deelnemers, mrt-jun 2027 [moto page]; team 'ruim 45 professionals', trainers ook werkzaam in de praktijk [3masters.nl/over-3masters]; tweede directeur op gelijke hoogte: Frans van Laar (Directeur) [contactenlijst]
 

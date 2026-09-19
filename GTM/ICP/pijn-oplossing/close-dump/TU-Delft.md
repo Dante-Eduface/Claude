@@ -75,7 +75,7 @@ VOLGENDE STAP: In de meeting van vandaag: (1) uitkomst van het sleutelgesprek va
 
 ### 2026-07-21 | note | door Eduface CRM | id=acti_gBpq2s1uTl1ilY079DYUGHVxlRzesakjk2hlGpMSbeK
 file:///Users/User/Library/CloudStorage/GoogleDrive-
-dante.torbed@eduface.me/My%20Drive/Eduface/Claud%20AE/projects/tu-delft/tu-
+dante.torbed@eduface.me/My%20Drive/Eduface/Claud%20AE/GTM/Accounts/tu-delft/tu-
 delft-organogram.pdf
 
 ## Calls (met notitie)

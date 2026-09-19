@@ -142,7 +142,7 @@ Noemt ze zelf een getal (deelnemers per cohort, aantal leergangen, aantal traine
 > "Snap ik. Ik vraag ook geen traject, ik vraag een half uur om te kijken of het überhaupt raakt aan waar jullie mee bezig zijn. En als de timing niet klopt, hoor ik dat liever nu."
 
 **"Wat kost het?"**
-> "Dat hangt van de omvang af, en dat weet ik pas als ik jullie situatie ken." Niet in gesprek één. Het NL-prijsmodel per opleiding staat in `references/pricing/prijsmodel-nl-opleiding-26-27.md`. Ter oriëntatie in je hoofd, niet aan de telefoon: staffel A is €10.000 per opleiding per jaar.
+> "Dat hangt van de omvang af, en dat weet ik pas als ik jullie situatie ken." Niet in gesprek één. Het NL-prijsmodel per opleiding staat in `Archive/prijsmodel-nl-opleiding-26-27.md`. Ter oriëntatie in je hoofd, niet aan de telefoon: staffel A is €10.000 per opleiding per jaar.
 
 **"We kijken al naar Onderwijs Orakel."**
 > "Prima, dan weet je waar het over gaat. Wij zitten op de beoordelaarskant en bouwen het model samen met Leiden en de Radboud. Zullen we een half uur nemen zodat je het naast elkaar kunt leggen?"

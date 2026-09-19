@@ -20,7 +20,7 @@ interview eigen site plus onderwijsvisie
 2021-03-23
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 DIEP 2026-08-12 CITATEN BEVESTIGD: eigen interview op asre.nl (23-03-2021) zegt 'Behalve misschien twintig essays lezen onder druk van een deadline... ik merk nu dat ik zin heb ook de rest te lezen'; LET OP NUANCE: die uitspraak is POSITIEF bedoeld, zij vertelt dat ze zin heeft om verder te lezen, dus NIET gebruiken als klacht over werkdruk - dat is precies de fout die eerder bij Marcel van Marrewijk is gemaakt; ASRE-onderwijsconcept noemt essays expliciet als summatieve toetsvorm en zegt zelf naar meer formatieve toetsing te bewegen 'zodat het geen verkapte summatieve toetsing wordt'; zij is zelf MSRE-alumna; groepen 15-25, lichting circa 22 (2023); location Houten/Amsterdam
 

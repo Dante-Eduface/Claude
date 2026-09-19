@@ -17,7 +17,7 @@ Clay / LinkedIn
 https://tsm.nl/freia-groep/
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 DIEP 2026-08-12 GEEN HAAKJE: functieconflict opgelost, zijn TSM-directeurschap stopte al eind 2023 en hij is sinds jan 2024 operationeel directeur van de moeder, dus de overgang is geen why-now maar oud nieuws; geen toetsprogramma op koepelniveau vindbaar; geen persoonlijke content sinds 2021
 

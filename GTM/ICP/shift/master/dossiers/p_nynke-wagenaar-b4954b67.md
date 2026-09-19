@@ -17,7 +17,7 @@ https://asre.nl/wp-content/uploads/2022/05/ASRE_Onderwijsvisie.pdf
 onderwijsvisie
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 DIEP 2026-08-12: functie NU WEL BEVESTIGD, eerdere ronde had haar ten onrechte als studieadviseur; was Datamanager 2022-2025 en deed functioneel beheer van Moodle en het CRM, dus zij zit op de digitale kant; ASRE-onderwijsconcept zegt letterlijk 'Bij de formatieve toetsing ligt hierbij bewust de nadruk op het geven van feedback, zodat het geen verkapte summatieve toetsing wordt' (ASRE_Onderwijsvisie.pdf); groepen 15-25; MRE eindigt met company research paper, MSRE met scriptie; TEGENSPRAAK: pitch op feedback, NIET op cijfers of nakijken, dat gaat rechtstreeks in tegen hun eigen geformuleerde principe
 

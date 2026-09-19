@@ -38,10 +38,10 @@ Dante's scope loopt tot de Discovery gate. Deze skill dient dus één doel: zorg
 Dit is de kern. Deze zes komen altijd terug:
 
 1. **Discovery vragen voorbereiden** — de vragenlijst voor dit specifieke gesprek. Gebruik `/discovery` of de LDS-methode: geen kale vragenlijst, luisteren + doorvragen + samenvatten, must vs optioneel, gesplitst over meerdere meetings. Besluitvorming en budget subtiel formuleren.
-2. **Discovery kennis strak hebben** — wat moet Dante uit z'n hoofd weten: het product (alleen wat echt bestaat, zie `references/eduface-product.md`), de referentieklanten, de prijsstructuur, de antwoorden op de standaard bezwaren.
+2. **Discovery kennis strak hebben** — wat moet Dante uit z'n hoofd weten: het product (alleen wat echt bestaat, zie `Platform/product.md`), de referentieklanten, de prijsstructuur, de antwoorden op de standaard bezwaren.
 3. **Weten wat hij/zij belangrijk vindt** — persoonlijk onderzoek naar de contactpersoon. Roep hiervoor `/person-research` aan. Publicaties, LinkedIn-posts, onderwijsvisie, wat drijft die persoon.
 4. **Huidige situatie bij hen in kaart brengen** — toetsprogramma eerst: wat leveren lerenden in, hoeveel, wie kijkt na. Plus LMS, onderwijsvisie, lopende AI-initiatieven.
-5. **Financieel plaatje** — dealwaarde-inschatting op basis van `references/pricing/`. Wie heeft budget, welk budget is dit (opleidingsbudget, innovatie, IT), en wat kost hun huidige situatie.
+5. **Financieel plaatje** — dealwaarde-inschatting op basis van `GTM/Pricing/`. Wie heeft budget, welk budget is dit (opleidingsbudget, innovatie, IT), en wat kost hun huidige situatie.
 6. **Hoe groot is [Account]** — aantal lerenden, aantal opleidingen, aantal beoordelaars, omzet. Bepaalt de staffel en of dit een pilot of meteen een licentie is.
 
 Pas de titels aan op het account (subtaak 3 en 6 krijgen de echte naam). Voeg extra subtaken toe als de situatie erom vraagt, maar laat er nooit één van deze zes weg.

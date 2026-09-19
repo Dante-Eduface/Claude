@@ -20,7 +20,7 @@ https://www.eurocollege.nl/interviews/edu-van-de-walle-de-geest-van-dalsteyn/
 interview eigen site
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 DIEP 2026-08-12: eigen onderwijsfilosofie is 'onderwijs is karaktervorming', met verwijzingen naar Napoleon Hill, Viktor Frankl en Marcus Aurelius, motto 'Rise Beyond Yourself' (eurocollege.nl/interviews/edu-van-de-walle-de-geest-van-dalsteyn); site zegt directeur sinds 1998, niet 2001 of 2023 zoals eerder genoteerd; WAARSCHUWING: er ligt een kritisch artikel uit 2020 (Groene Amsterdammer/Investico) over willekeurige scriptiefeedback bij EuroCollege dat de school publiek en juridisch heeft weerlegd, NOOIT als opening gebruiken; omvang en beoordeling van het schrijfwerk in PGO jaar 3 blijft onbevestigd
 

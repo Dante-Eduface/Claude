@@ -20,7 +20,7 @@ publicatie
 2024-11-06
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 **Haakje zoals agent 3 het opschreef**
 Schrijft dat S&N AI inzet in de contentproductie: medewerkers ontwikkelen de basisinhoud, AI zet die om naar quizzen, podcasts en video's, met human in the loop als harde voorwaarde omdat mensen altijd de eindbeslissing maken. | LET OP: 35+ locaties en het beoordelingsdeel uit het haakje gehaald, stonden niet in de bron. Artikel gaat over leidinggeven met AI, niet over toetsing.

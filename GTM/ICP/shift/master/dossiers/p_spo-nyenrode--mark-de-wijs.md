@@ -20,7 +20,7 @@ https://cms.spo.nl/app/uploads/2025/01/Examenreglement-vanaf-1-januari-2025.pdf
 examenreglement (PDF, pypdf gelezen) + eigen site + Financial Investigator-interview
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 DIEP (opus) 2026-08-07, vervangt oude oppervlakkige rij: sinds 1-1-2025 verbiedt hun examenreglement AI als fraude AAN KANDIDAATZIJDE (art.7), maar zegt NIETS over AI aan beoordelaarszijde - dat gat is het haakje. Elk examen dubbel nagekeken (2 onafhankelijke beoordelaars + 3e bij twijfel/slaaggrens), 8 weken doorlooptijd (art.8 lid 5). Open vragen wegen 64% bij Opleiding Vermogensbeheer. Zijn eigen citaat (Financial Investigator, okt 2021): "We blijven zelf in de lead als het gaat om de vorm en de kwaliteit van het onderwijs." + "Leren is steeds meer aan het personaliseren." Perfecte tegenhanger voor een AI-aan-beoordelaarszijde-vraag. Open vraag-suggestie: "Hoe kijken jullie naar AI aan de beoordelaarskant?" - niet als verwijt, als vraag over hun eigen twee documenten. LET OP: 2 mogelijke LinkedIn-URLs, geen bevestigd - handmatig checken voor verzending. Volume/dealwaarde onbekend (EPP max 20 deelnemers/editie, klein).
 

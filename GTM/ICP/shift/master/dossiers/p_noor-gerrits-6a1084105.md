@@ -17,7 +17,7 @@ https://complementairgroep.nl/2024-winc-academy/
 organisatie
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 **Haakje zoals agent 3 het opschreef**
 Bij de overname door De Complementair Groep: Mijn doel is om Winc Academy te versterken als toonaangevende opleider in de tech-sector door te blijven zoeken naar de beste innovatieve leeroplossingen zonder de studentervaring uit het oog te verliezen. Uiteindelijk gaat het mij om blije studenten

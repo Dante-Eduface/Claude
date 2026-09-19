@@ -20,7 +20,7 @@ https://nl.linkedin.com/company/prosper-college
 LinkedIn company + posts
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 FEIT: oprichter/directeur van Prosper College, erkende mbo-4 Sociaal Werker in 18 mnd; richt zich bewust op jongvolwassenen die in het regulier onderwijs zijn vastgelopen, met ervaringsdeskundigheid; runt daarnaast Asmowidjojo Coaching & Ondersteuning (Haarlem). Toets 2026-08-07: bij elk certificaat 'verslag en examengesprek', beoordeeld door examinatoren van Prosper op de werkplek (prospercollege.nl); geschreven verslag is aanwezig maar bijzaak naast het praktijkexamen. GEVOLG (Agent 4) = het verslag-component is de schrijf-ingang, niet de kern.
 

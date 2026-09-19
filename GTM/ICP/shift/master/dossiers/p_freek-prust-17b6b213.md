@@ -20,7 +20,7 @@ https://www.vastgoedbs.nl/teacher/freek-prust/
 teampagina
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 **Haakje zoals agent 3 het opschreef**
 Op zijn docentenpagina: Freek is Algemeen Manager van de Vastgoed Business School en houdt zich bezig met inhoud van de opleidingen, het in goede banen leiden van de organisatie, marketing, automatisering, en algemene zaken | LET OP: Schrijft zichzelf als Pruest met umlaut

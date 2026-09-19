@@ -20,7 +20,7 @@ https://mbo4leisuresports.nl/
 eigen site
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 LET OP: de LinkedIn-URL in de contactenlijst wijkt af, het aantoonbare profiel is https://nl.linkedin.com/in/gertjanpruijn; hij schreef zelf een LinkedIn-artikel getiteld "Avontuur" (https://nl.linkedin.com/pulse/avontuur-gert-jan-pruijn); hij is niet alleen directeur maar staat er als "Opleider en directeur", dus hij geeft zelf les (https://www.mbo4leisuresports.nl/team/); het onderwijs vindt plaats "in de sneeuw, op het water en outdoor" op locaties in Nederland, Frankrijk en Oostenrijk (https://www.mbo4leisuresports.com/meet-us/); MBO4LeisureSports noemt zichzelf een "kleinschalige, particuliere opleiding" met door het ministerie erkende mbo-opleidingen Sport & Bewegen op niveau 3 en 4, duur circa 3 jaar (https://mbo4leisuresports.nl/); hij publiceert onder een pagina "Ons klaslokaal" waarin de buitenlocaties het klaslokaal zijn (https://www.mbo4leisuresports.nl/ons-klaslokaal/); 6 medewerkers
 

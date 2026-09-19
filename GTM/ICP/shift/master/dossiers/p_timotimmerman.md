@@ -12,7 +12,7 @@ globalschoolforentrepreneurship.com/about + LinkedIn
 webresearch
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 **Haakje zoals agent 3 het opschreef**
 Kleine private hogeschool zonder zichtbare onderwijslaag; oprichter is hier de baas van het onderwijs. Mede-oprichters Hendrik Halbe en Thomas Blekman. Let op: hij is ook CEO van Haarlem Campus, dubbele pet.

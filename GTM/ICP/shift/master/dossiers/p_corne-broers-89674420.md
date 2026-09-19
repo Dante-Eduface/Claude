@@ -20,7 +20,7 @@ https://companyinfo.nl/organisatieprofiel/bedrijfsopleiding-en-training/instituu
 KVK/Company.info + eigen site
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 DIEP (opus) 2026-08-07: Org-haakje (voor Jos Gulden of Sophie van der Pas te gebruiken): eigen bericht 1 juli 2026 over nieuwe Burgerschap-eisen - portfolio + instellingsexamen, beoordelingen moeten "eerlijk, betrouwbaar en navolgbaar" zijn. ~300 studenten tegenover 3 vaste taal/LOB-docenten in loondienst. Governance net verzwaard: 16 aandeelhouders + nieuwe RvC (juni 2026). Greenfield op AI/digitalisering, niets gevonden.
 

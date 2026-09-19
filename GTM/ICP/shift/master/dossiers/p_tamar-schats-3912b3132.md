@@ -23,7 +23,7 @@ https://www.iamcollege.nl/team
 Eigen site (homepage + teampagina)
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 DIEP 2026-08-12 FUNCTIECORRECTIE: LinkedIn zegt 'Directeur onderwijs' maar de eigen teampagina zegt 'Opleidingsmanager, Onderwijs Coordinator, coach & expert'; er is iemand hogers, Patrick Molenaar staat op diezelfde teampagina als 'Onderwijs directeur' met een sterker citaat; homepage-claim 'Je leert door te doen, zonder boeken of toetsen' is letterlijk bevestigd, terwijl er een echte examencommissie is met Jasper Breebaart als voorzitter en er wel degelijk schrijfexamens zijn; LET OP: de CREBO-nummers 25727 en 25749 zijn NIET bevestigd op een eigen bron, niet gebruiken zonder registercheck
 

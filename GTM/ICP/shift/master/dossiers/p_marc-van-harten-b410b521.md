@@ -23,7 +23,7 @@ https://educared.nl/teamleden/marc-van-harten
 Eigen site (teampagina + homepage)
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 DIEP 2026-08-07: Educared = zorg-werkplekleren-opleider (VVT/GHZ) met eigen leerplatform Buddie (LMS/LXP, microlearning) - educared.nl/leertechnologie/buddie. Buddie noemt NERGENS feedback op geschreven werk/beoordeling -> overlapt met Eduface op leertechnologie maar niet op functie. | Marc = oprichter/directeur/eigenaar, onderwijskundige. Visie: "de werkplek is altijd het uitgangspunt, daar ontstaat de leerbehoefte en vindt het leren voornamelijk plaats" en "standaardtrainingen en het najagen van punten behoort tot het verleden" (educared.nl) - botst met een nakijk-pitch. | Erkende mbo-zorgopleidingen toetsen via proeve van bekwaamheid op de werkplek + portfolio, geen schrijf-volume. | Werft actief New Business (LinkedIn-post Marc) = commercieel in de groei.
 

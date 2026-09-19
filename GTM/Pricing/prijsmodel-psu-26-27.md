@@ -1,6 +1,6 @@
 # Prijsmodel: per student per maand (vanaf 16-09-2026)
 
-Besluit Dante, 16-09-2026. Vervangt `prijsmodel-nl-opleiding-26-27.md` (staffel A-E plus toolfee), dat is verplaatst naar `archives/`.
+Besluit Dante, 16-09-2026. Vervangt `prijsmodel-nl-opleiding-26-27.md` (staffel A-E plus toolfee), dat is verplaatst naar `Archive/`.
 
 ## Het model
 
@@ -33,7 +33,7 @@ Waarom in lerenden en niet in geld: 300 lerenden is in elke markt hetzelfde geta
 - `omvang_oordeel()` (poort 0d) vergelijkt het aantal lerenden met de drempel, meer niet
 - `SEGMENT_GRENZEN = [(300, "micro"), (1000, "klein"), (3000, "midden")]`, daarboven `groot`
 
-Per markt overschrijfbaar in `projects/shift/markets/<code>/profiel.json` onder `prijs_per_student_maand`, `maanden_per_jaar`, `drempel_lerenden` en `segment_grenzen`.
+Per markt overschrijfbaar in `GTM/ICP/shift/markets/<code>/profiel.json` onder `prijs_per_student_maand`, `maanden_per_jaar`, `drempel_lerenden` en `segment_grenzen`.
 
 ## Wat dit betekent voor het sourcen
 

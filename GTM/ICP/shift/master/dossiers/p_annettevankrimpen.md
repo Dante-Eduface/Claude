@@ -20,7 +20,7 @@ https://oppstap.nl/wp-content/uploads/2025/10/Verslag-van-werkzaamheden-OPPstap-
 jaarverslag/verslag van werkzaamheden + OER (PDF, pypdf gelezen)
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 DIEP (opus) 2026-08-07: Hun EIGEN verslag van werkzaamheden (okt 2025) zegt letterlijk: "We bouwen verder aan ons onderwijs van de toekomst en denken na over een passende wijze van examineren." + expliciet AI-beleid: "We hebben AI-beleid dat onze studenten richting geeft w.b.t. de (on)mogelijkheden bij het maken van opdrachten en examens." Ze sturen jaar op jaar zelf op "objectieve beoordeling" en "gelijkwaardige beoordeling" (examencommissie-verbeterpunt, NIET als opener gebruiken - verkeerde toon, examencie koopt niets). Docenten zijn hybride/ZZP, werken solo op klantlocatie, nakijken is bijwerk naast een zorgbaan. Docentwaardering stijgt (7,9->8,3), geen crisis-verkoop. LET OP: niet openen op AI (risico dat gesprek naar fraude-detectie kantelt); openen op "passende wijze van examineren" is de juiste insteek, met open vraag "welk deel van het beoordelen kost jullie docenten nu de meeste tijd?" LinkedIn niet leesbaar (999) - handmatig checken voor verzending.
 

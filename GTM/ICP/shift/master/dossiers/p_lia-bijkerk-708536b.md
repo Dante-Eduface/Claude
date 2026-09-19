@@ -17,7 +17,7 @@ LinkedIn (functietitel), 24-07-2026
 https://edufit.nl/wp-content/uploads/2022/02/Opleidingsgids-Leergang-Activerend-Opleiden-2022-2023-1.pdf
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 **Haakje zoals agent 3 het opschreef**
 Leergang Activerend Opleiden (post-hbo, 300 SBU): van de 9 toetsen zijn minstens 5 geschreven verslagen/plannen (reflectieverslag, verantwoordingsverslag, coachgespreksverslag, casusverslag, essay). BKE/SKE-trainingen: 36 van de 45-52 zelfstudie-uren gaan naar een geschreven verbeterplan/verslag met rubric-beoordeling incl. 'feedback en feedforward' als expliciet criterium.

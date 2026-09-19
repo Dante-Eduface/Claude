@@ -257,7 +257,7 @@ Doel is de afspraak, meer niet. Niet doorpakken naar een pilot of prijs.
 - sn.nl AI-trainingsaanbod (ChatGPT in je werk, Effectief inzetten van AI-tools, Veilig leren werken met AI, AI ethiek en wetgeving) — https://www.sn.nl/vakgebieden/ict/ai
 - Blenheim, "Blenheim adviseert bij overname van Schouten & Nelissen door Nedvest" — https://www.blenheim.nl/blog/blenheim-adviseert-bij-overname-van-schouten-nelissen-door-nedvest/
 - MijnSN-loginportalen als bevestiging van het LMS — https://www.mijnsn.nl/Account/Login
-- Interne pijplijn: `projects/shift/master/people.csv`, record `p_connyspijker`
+- Interne pijplijn: `GTM/ICP/shift/master/people.csv`, record `p_connyspijker`
 
 **Niet gelezen / niet gevonden**
 - Het volledige NVAO-visitatierapport van november 2021 (alleen het vervolgrapport uit 2022 gelezen)

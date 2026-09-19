@@ -36,7 +36,7 @@ LinkedIn-led outreach motion voor Eduface (AI feedback/assessment platform voor 
 - AU target-account lijst + namen Heads of Learning nog te bouwen.
 
 ## Referentie (in deze repo)
-- `references/sops/sales-handbook-v1.md` — 6-stage proces, gates. Alles loopt tot de Discovery-gate, dan hand-off naar Jeroen.
-- `references/sops/abm-tim-routen-podcast-notes.md` — ICP-clusters, relatie-tactieken, KPI-ladder, pilot-opzet.
-- `references/sops/outreach-lag-charlie-morgan-notes.md` — outreach lag, consistentie, follow-up discipline.
-- `projects/uk-outreach-campaign/sequence-head-of-learning.md` — multichannel sequence-concept.
+- `GTM/Knowledge/sales-handbook-v1.md` — 6-stage proces, gates. Alles loopt tot de Discovery-gate, dan hand-off naar Jeroen.
+- `GTM/Knowledge/abm-tim-routen-podcast-notes.md` — ICP-clusters, relatie-tactieken, KPI-ladder, pilot-opzet.
+- `GTM/Knowledge/outreach-lag-charlie-morgan-notes.md` — outreach lag, consistentie, follow-up discipline.
+- `GTM/Campaigns/uk-outreach/sequence-head-of-learning.md` — multichannel sequence-concept.

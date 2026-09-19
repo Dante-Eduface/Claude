@@ -19,6 +19,6 @@ Particuliere hogeschool in Rotterdam, zorg en welzijn, deeltijd voor werkende pr
 
 ## Regels voor dit account
 - Elke claim over Breederode moet terug te voeren zijn op `bronnen/`, `raw/` of Close. Staat het er niet, dan beweer je het niet.
-- Productclaims over Eduface komen uit `references/eduface-product.md`, nergens anders vandaan.
+- Productclaims over Eduface komen uit `Platform/product.md`, nergens anders vandaan.
 - Hun woord is **navolgbaarheid**, niet consistentie. Zie 06.
 - De site verversen: `python3` script in de projectgeschiedenis, of opnieuw via `https://breederode.nl/wp-json/wp/v2/posts?per_page=50`.

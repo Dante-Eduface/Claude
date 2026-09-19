@@ -17,7 +17,7 @@ https://sdo-hogeschool.nl/publicaties/to-be-or-not-te-be-onderzoek-en-accreditat
 publicatie
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 **Haakje zoals agent 3 het opschreef**
 Schrijft zelf dat SDO na een mislukte accreditatie nog een kans kreeg om aan te tonen dat het de HBO-licentie waard was, en dat het bewijs voor het eindniveau uit twee afstudeerwerken moest komen: 'We hadden met die twee voldoende werkstukken om ons eindniveau aan te tonen.' Ze hebben die studenten bewust niet achter de broek gezeten. | LET OP: Twee keer gecorrigeerd. Eerste versie beweerde schrijven en herschrijven met feedback en weinig tijd, beide niet in de bron en het tweede tegengesproken. Nu is het citaat letterlijk gedekt. Niet zeggen dat die twee werken de licentie bepaalden: de commissie richtte zich vooral op continuiteit en kwaliteitsborging.

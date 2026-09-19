@@ -135,4 +135,4 @@ De enemy is ook **FeedbackFruits, zelfgebouwde tools, en niets doen.** Win de ma
 
 ## Gevalideerd voorbeeld
 
-`projects/capabel/capabel-meddpicc-grid.html` + `.png` — goedgekeurd door Dante. Gebruik `template.html` in deze map als startpunt.
+`GTM/Accounts/capabel/capabel-meddpicc-grid.html` + `.png` — goedgekeurd door Dante. Gebruik `template.html` in deze map als startpunt.

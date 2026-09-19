@@ -28,7 +28,7 @@ Handboek-lens: elke post is top-of-funnel demand-gen die Stage 1 (Discovery) voe
 - **Taal:** alle content in het Engels, voor alle 4 de stemmen (besluit Dante 2026-06-18).
 - **Scherp, niet neutraal.** Neutrale content presteert slecht. Schrijf posts waar mensen "daar ben ik het niet mee eens" op willen reageren. Voorbeeld-take: "Feedback turnaround in UK HE is structureel te traag. Dat is geen capaciteitsprobleem, het is een prioriteitsprobleem." AI in onderwijs altijd genuanceerd, nooit mee in de hype.
 - **Stijl:** plain, gesproken taal. Geen hype, geen buzzwords, GEEN em-dashes (gebruik komma of punt). Korte zinnen. 1 idee per post.
-- **Eerlijk:** nooit pilot-cijfers of klant-claims verzinnen. Kwalitatief blijven of echte cijfers uit `projects/` gebruiken.
+- **Eerlijk:** nooit pilot-cijfers of klant-claims verzinnen. Kwalitatief blijven of echte cijfers uit `GTM/` en `Platform/` gebruiken.
 - **Per post 1 doel:** welke Discovery-pijn of welk buying-criterion raakt deze post? Is het antwoord "geen", herschrijf.
 
 ## Stem-kalibratie
@@ -39,7 +39,7 @@ De stem-profielen zijn **GEIJKT** op echte posts (2026-06-18, corpus in `voice-s
 
 ## Intake via werkbestanden
 
-Elke stem heeft een self-contained HTML-werkbestand in `projects/linkedin-content/werkbestanden/` (1 per persoon, Eduface = master + gedeelde CTA). De persoon vult het in op zijn laptop, downloadt een `.md` en stuurt die naar Dante. Doel: Jeroen/Menno (kritisch, willen controle) zien de input en houden de pen.
+Elke stem heeft een self-contained HTML-werkbestand in `GTM/Campaigns/linkedin-content/werkbestanden/` (1 per persoon, Eduface = master + gedeelde CTA). De persoon vult het in op zijn laptop, downloadt een `.md` en stuurt die naar Dante. Doel: Jeroen/Menno (kritisch, willen controle) zien de input en houden de pen.
 - Krijg je een ingevulde `.md`: verwerk de stem-markers, onderwerpen, rode lijnen en feiten in `voice-profiles.md` voor die persoon, en gebruik de voorbeeldpost-reactie om de toon bij te stellen.
 - Niets wordt geplaatst zonder OK van de persoon. Concept -> persoon keurt -> Buffer.
 
@@ -56,7 +56,7 @@ Elke stem heeft een self-contained HTML-werkbestand in `projects/linkedin-conten
 
 ## Output + review
 
-- Default review-surface: een markdown-batch in `projects/linkedin-content/` (maak de map als die er niet is), die Dante naar Buffer kopieert.
+- Default review-surface: een markdown-batch in `GTM/Campaigns/linkedin-content/` (maak de map als die er niet is), die Dante naar Buffer kopieert.
 - Elke post als los blok:
   ```
   ## [Stem] · [Pijler] · [Taal]
@@ -71,4 +71,4 @@ Elke stem heeft een self-contained HTML-werkbestand in `projects/linkedin-conten
 ## Done
 
 - Posts staan klaar in de gevraagde stem(men), scherp, plain, geen em-dashes, elk met een duidelijk Discovery- of buying-doel, plak-klaar voor Buffer.
-- Bij een nieuwe of meaningful wijziging: log het in `decisions/log.md`.
+- Bij een nieuwe of meaningful wijziging: log het in `Decisions/log.md`.

@@ -17,7 +17,7 @@ Clay (LinkedIn)
 https://www.linkedin.com/in/rosa-de-boer-4492235/
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 DIEP 2026-08-12 GEEN HAAKJE EN NIET KOUD: haar rol is NIET te bevestigen, haar naam staat nergens op somt.nl; education onbekend; nul publicaties vindbaar ondanks de titel klinisch epidemioloog; RISICO OP PERSOONSVERWISSELING met een andere Rosa de Boer (schrijfster), dus het oude haakje over 'scherpe pen, nieuwsgierige blik' vervalt; BOVENDIEN NIET KOUD: SOMT valt onder Calder Holding waar het Capabel-traject met Inke van Gameren loopt, en dossiers.md regel 245 had SOMT al op OVERGESLAGEN gezet wegens de zorg-uitsluiting met de aantekening dat dat besluit aan Dante voorgelegd moest worden; dat is nooit gebeurd en er is op 2026-08-05 toch een bericht uitgegaan
 

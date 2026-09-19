@@ -23,7 +23,7 @@ https://www.linkedin.com/in/rob-rijbroek-18977355/
 LinkedIn (headline/CV via rocketreach-indexatie) + laurentiuscollege.nl/over-ons
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 DIEP 2026-08-07: ICP-fit ZWAK/marginaal. Hospitality bewust praktijk-gedreven: 1 dag school / 4 dagen werk, Rob zelf: "onze opleidingen zijn echt bedoeld voor studenten met een hands-on mentaliteit" (blikopnoordwijk 15-11-2023). | Poort 0 alleen "ja" op mbo-4-deel; het schrijfzwaarste traject (HBO Ad Officemanagement/Ondernemerschap) loopt via Schoevers/NCOI met een Schoevers-diploma - dat werk kijkt Laurentius NIET zelf na. | Stageverslag = aanname, niet op site bevestigd. | Onderwijsvisie praktijk-first, geen feedback-/toets-haakje. Geen why-now (laatste anker nov 2023). | Rob loopbaan volledig particulier onderwijs (Scheidegger, NCOI, Schoevers, ISBW, SRM); oprichter is Laura van Dijk, Rob is algemeen directeur.
 

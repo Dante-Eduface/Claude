@@ -92,7 +92,7 @@ Zonder dat bestand maak je elke ronde dezelfde fout opnieuw en krijgt Dante elke
 
 1. Noemt Dante geen markt, vraag het in één regel. Raad niet.
 2. Geef `--markt <code>` mee bij elk commando, of zet `export SHIFT_MARKT=<code>`.
-3. Lees `projects/shift/markets/<code>/profiel.md`. Voor jou tellen **Taal en register** (taal, aanhef, toon, wat je niet zegt), **Klantnamen** (wat je als bewijs mag noemen, en of dat "geen" is), **Vaktermen** (de drager-toets in deze taal), **Kanaal** (welke stukken je oplevert), **Doorlooptijdnorm** en **Student-signaal** (waar in deze markt de organisatie-haakjes zitten) en **Seizoen** (of dit een goed moment is).
+3. Lees `GTM/ICP/shift/markets/<code>/profiel.md`. Voor jou tellen **Taal en register** (taal, aanhef, toon, wat je niet zegt), **Klantnamen** (wat je als bewijs mag noemen, en of dat "geen" is), **Vaktermen** (de drager-toets in deze taal), **Kanaal** (welke stukken je oplevert), **Doorlooptijdnorm** en **Student-signaal** (waar in deze markt de organisatie-haakjes zitten) en **Seizoen** (of dit een goed moment is).
 
 **Uitleg aan Dante in het Nederlands, elke zin die de prospect leest in de taal van de markt.** Hij moet hem kunnen oefenen en versturen zonder te vertalen. In een Engelstalige markt schrijf je dus Engels, en je hanteert de spelling en het register uit het profiel (VK: Britse spelling, "VLE" in plaats van "LMS", geen "I noticed", geen "reaching out").
 
@@ -176,7 +176,7 @@ Batches van 10 tot 15 personen. Rapporteer pas aan het eind van een batch, en le
 - `voorbeelden-dante.md` in deze map. Dante's echte berichten, Engels en Nederlands, met warmte-label. Dat is de lat, niet je eigen smaak. Het Ken-bericht (Engels, koud, kreeg reactie) is het model voor een Engelstalige markt.
 - `haakje-zoeken.md` in deze map. De originaliteitsladder, waar je zoekt, en wanneer je stopt.
 - `schrijven` voor de stem.
-- `references/eduface-product.md`: de enige bron voor wat je over Eduface beweert.
+- `Platform/product.md`: de enige bron voor wat je over Eduface beweert.
 
 ## De loop
 
@@ -246,7 +246,7 @@ Gebruik **één** haakje per stuk. Alles met bron en letterlijk citaat (`claims-
 
 Op 2026-07-23 ging er een bericht bijna de deur uit waarin stond dat iemand reflectief vermogen opbouwt "door te schrijven en herschrijven met feedback". Het woord feedback kwam in zijn hele stuk niet voor. Het was erin geslopen omdat het naar Eduface leidt.
 
-**De brontoets geldt twee kanten op, ook op wat je over Eduface beweert.** Het product staat in `references/eduface-product.md`. Staat een functie daar niet, dan noem je hem niet.
+**De brontoets geldt twee kanten op, ook op wat je over Eduface beweert.** Het product staat in `Platform/product.md`. Staat een functie daar niet, dan noem je hem niet.
 
 **Vertrouw de citaten, vertrouw de interpretatie niet.** Wat onder `## Citaten` staat is letterlijk, met vindplaats, datum en drager. Dat neem je aan. Het veld `haakje` en alles wat naar een conclusie riekt neem je **niet** aan. Mist er iets, dan is dat een gat in het dossier: terug naar agent 3.
 
@@ -284,11 +284,11 @@ Komt je haakje deze toets niet door, val dan terug op een feit dat er wél staat
 
 **De opening:** de aanhef uit het profiel (NL: "Hi [voornaam]", VK: "Hi [first name]"). Openen met "ik las" / "je schreef" / "I read" / "you wrote". Geen aanloopje, geen "wat me opviel", geen "I noticed" (`no-opviel-filler-openers`).
 
-**De waarde.** Zeg concreet wat Eduface doet: **docenten ondersteunen bij het nakijken en feedback geven op studentopdrachten**, in de woorden van de markt. Wat vastligt is de claim, niet de woorden: de lezer weet na afloop wat Eduface doet, het klopt inhoudelijk (formatieve feedback op schrijfopdrachten, nooit "sneller nakijken"), geen harde belofte over uitval, alleen functies uit `eduface-product.md`. Twee toetsen: de **uitwisseltoets** (past je waarde-zin ook in het bericht van iemand anders bij dezelfde organisatie? dan is het een sjabloon) en de **echo-toets** (bevat de waarde-zin minstens één woord uit het haakje?).
+**De waarde.** Zeg concreet wat Eduface doet: **docenten ondersteunen bij het nakijken en feedback geven op studentopdrachten**, in de woorden van de markt. Wat vastligt is de claim, niet de woorden: de lezer weet na afloop wat Eduface doet, het klopt inhoudelijk (formatieve feedback op schrijfopdrachten, nooit "sneller nakijken"), geen harde belofte over uitval, alleen functies uit `Platform/product.md`. Twee toetsen: de **uitwisseltoets** (past je waarde-zin ook in het bericht van iemand anders bij dezelfde organisatie? dan is het een sjabloon) en de **echo-toets** (bevat de waarde-zin minstens één woord uit het haakje?).
 
 **De pijn hoort niet in het connectieverzoek** (Dante, 2026-07-23). Bewaar die voor het gesprek.
 
-**Klantnamen als bewijs** komen uit het profiel, kop **Klantnamen**. Staat daar "geen", dan noem je er geen en bouw je het bewijs anders (een verifieerbaar feit over ons, zoals het Jisc-framework in het Ken-bericht, mits dat in `eduface-product.md` of het profiel staat). Staat er een lijst, dan kies je de naam die het dichtst bij deze persoon staat (waar hij studeerde, waar hij woont; agent 3 noteert dat onder `## Persoon`). Onze klanten en partners noem je voluit; de organisatie van de ontvanger kort je af naar de vorm die ze zelf voeren.
+**Klantnamen als bewijs** komen uit het profiel, kop **Klantnamen**. Staat daar "geen", dan noem je er geen en bouw je het bewijs anders (een verifieerbaar feit over ons, zoals het Jisc-framework in het Ken-bericht, mits dat in `Platform/product.md` of het profiel staat). Staat er een lijst, dan kies je de naam die het dichtst bij deze persoon staat (waar hij studeerde, waar hij woont; agent 3 noteert dat onder `## Persoon`). Onze klanten en partners noem je voluit; de organisatie van de ontvanger kort je af naar de vorm die ze zelf voeren.
 
 **Het slot.** Twee vormen: zit de persoon hoog in de boom en kan hij het doorschuiven, dan de doorverwijsvraag ("Do you know who looks after this? I couldn't quite work out who that was myself."). Is hij aantoonbaar zelf de juiste, dan de uitnodiging. Vraag nooit om tijd of een meeting in het verzoek. **Benoem iemands functie niet in het bericht.**
 

@@ -14,7 +14,7 @@ aog.nl/over-ons
 webresearch
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 **Haakje zoals agent 3 het opschreef**
 Geen aparte onderwijsdirecteur: programma-inhoud ligt bij kerndocenten (hoogleraren). Directeur is dus het aanspreekpunt. Tweede kandidaat: Ilse Braams, programmamanager, als inhoudelijke ingang. Onderdeel van Freia Groep.

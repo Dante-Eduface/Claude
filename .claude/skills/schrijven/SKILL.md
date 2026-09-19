@@ -14,7 +14,7 @@ De stem-discipline. Bestaat omdat mijn content vaak te **vaag en overbodig** is 
 
 1. **Bepaal het type** (dit bepaalt alles): formele mail · presentatie/slides · marketingtekst · cold outreach · opvolgmail · LinkedIn connectieverzoek. Twijfel je, vraag het in één zin.
 2. **Lees de hele stem-sectie voor dat type** in `voice-by-type.md` + de recente feedback voor dat type in `feedback-log.md`. Niet alleen de nieuwste feedback uit het huidige gesprek: bestaande regels (bv. de social-proof-formulering) gaan net zo makkelijk mis als je ze niet herleest.
-2b. **Check op een diep onderzoeksdossier voor deze persoon/organisatie** (`pipeline.py dossier <id>` voor de NL-pijplijn, `projects/cold-calling/` voor de belllijn, of `person-research`-output) voor je een lichter CSV-veld (haakje, insteek) als beste bron aanneemt. Een snelle "insteek" uit een eerdere, snellere pass kan achterhaald of zwakker zijn dan een dieper dossier dat later is gemaakt.
+2b. **Check op een diep onderzoeksdossier voor deze persoon/organisatie** (`pipeline.py dossier <id>` voor de NL-pijplijn, `GTM/Campaigns/cold-calling/` voor de belllijn, of `person-research`-output) voor je een lichter CSV-veld (haakje, insteek) als beste bron aanneemt. Een snelle "insteek" uit een eerdere, snellere pass kan achterhaald of zwakker zijn dan een dieper dossier dat later is gemaakt.
 3. Schrijf. Dan de anti-vaagheid-check hieronder langs voor je het oplevert.
 
 ## De kernregel: niet vaag, niet overbodig, niet AI

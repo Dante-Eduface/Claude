@@ -10,7 +10,7 @@
 https://publicaties.nvao.net/prd/AV-2013_20240327_Rapport_AVANSplus%20Rapport%20definitief%20Master%20of%20ICT%20and%20Business%20Innovation.pdf
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 **Haakje zoals agent 3 het opschreef**
 NQA/NVAO-rapport Master of ICT and Business Innovation (Avans+, visitatie feb 2023): formatieve feedback per module op concept-beroepsproducten, freelance docenten, kalibratiesessies al sinds 2017-advies 'in ontwikkeling'. Bij Habeo+ bestaat geen aparte onderwijsdirecteur, kwaliteitslaag = staffafdeling PO&O.

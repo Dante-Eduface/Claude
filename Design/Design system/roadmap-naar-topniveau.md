@@ -51,7 +51,7 @@ Je houdt Framer als CMS. Dan is dit de juiste opzet:
 ## 6. Governance: zo blijft het consistent
 - **Regel:** bouw alleen met bestaande styles/componenten. Nieuwe waarde nodig? Eerst token toevoegen.
 - **Audit:** ik kan het hele Framer-project uitlezen en elk element markeren dat géén gedeelde stijl gebruikt (de inconsistentie-jager). Zo trek je consistentie over de bestaande pagina's.
-- **De spec leeft hier** in `references/design-system/`. Bij elke nieuwe pagina lees ik die en blijf ik binnen het systeem.
+- **De spec leeft hier** in `Design/Design system/`. Bij elke nieuwe pagina lees ik die en blijf ik binnen het systeem.
 
 ## 7. Stappenplan
 - **Fase 0 — Beslissen (kort):** licht of donker thema, type-schaal vastzetten, primaire knopkleur. (1 sessie)

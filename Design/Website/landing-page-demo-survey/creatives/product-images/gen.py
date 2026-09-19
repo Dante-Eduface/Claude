@@ -2,8 +2,8 @@
 """Genereert zes Paper Grader-productbeelden, een per vakgebied.
 
 Een sjabloon, zes inhouden. Het cijfer wordt uit de weging berekend, nooit met de
-hand ingevuld. Tokens uit references/design-system/core/tokens.css.
-Bron voor elke productclaim: references/eduface-product.md.
+hand ingevuld. Tokens uit Design/Design system/core/tokens.css.
+Bron voor elke productclaim: Platform/product.md.
 """
 import pathlib, html
 

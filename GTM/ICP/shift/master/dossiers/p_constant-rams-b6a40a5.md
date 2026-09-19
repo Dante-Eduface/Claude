@@ -26,7 +26,7 @@ https://www.nyenrode.nl/nieuws/n/studenten-waarderen-voorbereiding-beroepsprakti
 <!-- elk citaat op deze vorm, de drager is verplicht:
 > "letterlijk citaat"
   bron: <url of document, pagina> · datum: JJJJ-MM-DD · drager: student|beoordelaar|organisatie|panel
-   Vaktermen hebben een vaste drager, zie references/onderwijs-vaktermen.md:
+   Vaktermen hebben een vaste drager, zie Platform/onderwijs-vaktermen.md:
    studeerbaarheid/studielast/toetslast = student, nakijklast/tweede beoordelaar = beoordelaar. -->
 
 ## Toetsprogramma

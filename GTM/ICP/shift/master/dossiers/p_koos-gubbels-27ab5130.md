@@ -23,7 +23,7 @@ https://www.actuarieelinstituut.nl/actueel/koos-gubbels-is-actuaris-van-het-jaar
 organisatie
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 DIEP 2026-08-07: WHY-NOW goud: verkozen tot Actuaris van het Jaar 2025 (24-09-2025). Jurycitaat letterlijk: "zijn unieke vermogen om praktijk, wetenschap en onderwijs met elkaar te verbinden" + geprezen om "zijn inzet voor de nieuwe generatie actuarissen". Onderwijs zit in de winreden. | Schrijfwerk KERN: EMAS-toetsing = essays per course + 6 case-rapporten + individuele scriptie (studentum.nl). "Elke course wordt beoordeeld met een examen of essay". | Studentaantallen onder hem verdubbeld (15->35, het max) met "kwaliteitsbehoud" als expliciete opgave = meer scripties/rapporten na te kijken. | Hij zet zelf in op AI/data science in het curriculum ("naast domeinkennis ook AI, data-analyse en communicatie") - AI-feedbacktool botst niet met zijn overtuiging. | Academisch zwaargewicht (Tilburg, ~1.471 citaties, hoofdredacteur De Actuaris).
 

@@ -7,7 +7,7 @@ description: Build a clean, print-perfect organogram / org chart / stakeholder m
 
 Turn a set of people (with roles, reporting lines, and deal-roles) into a **clean, one-look organogram** rendered HTML → PDF. This skill owns ONLY the visual. The research that produces the people lives in the calling skill (e.g. `stakeholder-mapping`).
 
-Visual template to copy: `projects/rug-groningen/organogram.html`. Copy its tokens and structure, then apply the HARD RULES below (they fix mistakes made before).
+Visual template to copy: `GTM/Accounts/rug-groningen/organogram.html`. Copy its tokens and structure, then apply the HARD RULES below (they fix mistakes made before).
 
 ## HARD RULES — non-negotiable, these are baked in because they were broken before
 

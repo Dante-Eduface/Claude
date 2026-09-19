@@ -4,7 +4,7 @@ Gestart 11-09-2026. Eén doel: een geboekte demo. Eén conversiepunt: het `#demo
 
 - `index.html` + `styles.css`: de interactieve preview. Openen in Chrome (`open -a "Google Chrome" index.html`).
 - `onderzoek.md`: het onderzoek met bronnen, plus de aanbevolen structuur en het surveyontwerp.
-- `brand_assets/`: kopie van `projects/website-building/brand_assets/` (logo's, schoollogo's, LMS-logo's).
+- `brand_assets/`: kopie van `Design/Website/website-building/brand_assets/` (logo's, schoollogo's, LMS-logo's).
 
 ## Opbouw van de pagina (en waarom)
 
@@ -52,13 +52,13 @@ Wat Framer niet kan en wat er nog bij moet voordat dit live gaat:
 - "Review time two to three minutes per submission" komt uit de Bath Spa-pilotnotities. Bevestigen voordat het live gaat.
 - Geen testimonials op de pagina: er zijn geen vrijgegeven citaten. Drie echte quotes met toestemming en ze passen erin.
 - Footer-links naar privacy en voorwaarden zijn placeholders.
-- De H1 is de hero uit `projects/website-building` (augustus 2026). Bij een ad-campagne: H1 exact laten matchen met de advertentietekst.
+- De H1 is de hero uit `Design/Website/website-building` (augustus 2026). Bij een ad-campagne: H1 exact laten matchen met de advertentietekst.
 
 ## Besluiten en bronnen (bijgewerkt 11-09-2026, middag)
 
 - Proces: stap voor stap. Onderzoek (goedgekeurd) → secties → wireframe → proef → uitrol. De eerder gebouwde `index.html` is een scratch-draft, geen oplevering. De quiz/survey is geparkeerd.
 - **Dragend woord: consistentie** (Dante, 11-09). Niet navolgbaarheid, niet tijd.
-- Pijnbron: `projects/pijn-oplossing/HANDOFF-landingspagina.md` (50 goedgekeurde uitspraken uit Close). Productclaims uitsluitend uit `references/eduface-product.md`.
+- Pijnbron: `GTM/ICP/pijn-oplossing/HANDOFF-landingspagina.md` (50 goedgekeurde uitspraken uit Close). Productclaims uitsluitend uit `Platform/product.md`.
 - Analytics huidige pagina `/ai-for-grading-papers` (28 aug tot 11 sep): 59 bezoekers, 27% klikt Book a demo, 0 boekingen, 67% bounce, 88% desktop, slechts 9 uit GB.
 - Design-inspiratie voor later: https://habitline-wbs.framer.website/ (Dante: "fantastische website"). Patroon: grote typografie in de hero, feature-kaarten met mockups, metrics-blok, FAQ, centrale eind-CTA.
 
@@ -196,7 +196,7 @@ Bestand: `proef-bewijsblok.html`. Eén sectie volledig af, als patroon voor de r
 4. **Mobiel.** De twee cijfers stapelen en de pijl draait mee naar beneden, zodat het verband van 94 naar 98 blijft kloppen.
 
 **Copy-besluiten**
-- "94% accuracy" mag, mét de dragers erbij, volgens `references/eduface-product.md`. De definitie van accuraatheid hoort in de FAQ, niet hier.
+- "94% accuracy" mag, mét de dragers erbij, volgens `Platform/product.md`. De definitie van accuraatheid hoort in de FAQ, niet hier.
 - Bath Spa staat er als pilot ("Piloted at Bath Spa University"), niet als klant, en zonder citaat. Dat is feitelijk juist en houdt het risico klein.
 - Geen "95% accuraat", geen "30.000 studenten", geen balk bij de 79%.
 - De regel over doorlooptijd, overgebleven uit de geschrapte sectie Opbrengst, staat onderaan onder "what that gives you back".
@@ -233,9 +233,9 @@ Dante: "Met deze sectie zouden we willen zeggen dat ons model accuraat is." Dat 
 - **"How we measured this" weg.**
 - De regel van maximaal vier woorden in de kop is vervallen.
 
-Logo van Bath Spa staat in `brand_assets/schools/bath-spa.svg`. Er moest een viewBox in, anders schaalde hij niet mee.
+Logo van Bath Spa staat in `Design/Merk/logo-van-scholen/bath-spa.svg`. Er moest een viewBox in, anders schaalde hij niet mee.
 
-**Nog nodig:** de campusfoto van Bath Spa. Die staat wel in het gesprek maar niet op schijf. Opslaan als `brand_assets/schools/bath-spa-campus.jpg` en ik zet hem erin.
+**Nog nodig:** de campusfoto van Bath Spa. Die staat wel in het gesprek maar niet op schijf. Opslaan als `Design/Merk/logo-van-scholen/bath-spa-campus.jpg` en ik zet hem erin.
 
 ## Proef v4 (11-09-2026)
 
@@ -246,7 +246,7 @@ Logo van Bath Spa staat in `brand_assets/schools/bath-spa.svg`. Er moest een vie
 - **Campusfoto erin**, verkleind naar 1800px en gecomprimeerd. Navy sluier eroverheen zodat het beeld bij het merk hoort.
 - **Logo-rij weg**, die staat in de hero.
 
-Bestanden: `brand_assets/schools/bath-spa.svg` (viewBox toegevoegd) en `bath-spa-campus.jpg`.
+Bestanden: `Design/Merk/logo-van-scholen/bath-spa.svg` (viewBox toegevoegd) en `bath-spa-campus.jpg`.
 
 ## Proef v5: rust in het paneel (11-09-2026)
 
@@ -276,7 +276,7 @@ Die versie loste dezelfde twee punten op, en met een goede vondst: twee balken o
 
 Ik heb Dante's besluiten teruggezet en het goede idee overgenomen: het rechteruiteinde van de as heeft nu betekenis, net als dat nulpunt.
 
-**Open vraag voor Dante: punten of procenten.** De andere sessie had een argument dat klopt. `references/eduface-product.md` zegt dat "94% accuraatheid" de vorm is voor korte outreach, en dat "ongeveer 6 punten van het cijfer van de docent af" de juiste vorm blijft zodra er ruimte is, dus in alles wat een onderwijskundige rustig doorleest. Een landingspaginasectie met een schaal is zoiets. Dante koos eerder vandaag expliciet voor 94/98, dus dat staat er nu, maar het is het overwegen waard.
+**Open vraag voor Dante: punten of procenten.** De andere sessie had een argument dat klopt. `Platform/product.md` zegt dat "94% accuraatheid" de vorm is voor korte outreach, en dat "ongeveer 6 punten van het cijfer van de docent af" de juiste vorm blijft zodra er ruimte is, dus in alles wat een onderwijskundige rustig doorleest. Een landingspaginasectie met een schaal is zoiets. Dante koos eerder vandaag expliciet voor 94/98, dus dat staat er nu, maar het is het overwegen waard.
 
 ## Proef v7: de term bij het cijfer (11-09-2026)
 
@@ -317,7 +317,7 @@ Bestand: `proef-hero.html`. Volgende sectie na het bewijsblok, op hetzelfde patr
 
 **Het beeld, drie panelen die onder de vouw doorlopen.** Links essay 1, al afgetekend. Midden essay 140, wacht op de docent, met de voorgestelde opmerking en Approve. Rechts de hele lichting. Samen: zelfde criteria, zelfde behandeling, jij tekent af. Het label "Lecturer + AI" komt uit de marketingtekst.
 
-**Regels van het app-herontwerp toegepast** (`projects/app-homepage-redesign`): Inter met drie groottes, geen League Spartan in een fragment, geen voortgangsring of balk, geen ratio zoals 12/32 maar één held-getal met zijn woord ("20 to grade"), kleur alleen op de afwijking. Dat laatste is hier het criterium waar het model onzeker is, in rood met waarschuwingsteken.
+**Regels van het app-herontwerp toegepast** (`Design/Website/app-homepage-redesign`): Inter met drie groottes, geen League Spartan in een fragment, geen voortgangsring of balk, geen ratio zoals 12/32 maar één held-getal met zijn woord ("20 to grade"), kleur alleen op de afwijking. Dat laatste is hier het criterium waar het model onzeker is, in rood met waarschuwingsteken.
 
 ## Hero v2 (15-09-2026)
 
@@ -335,7 +335,7 @@ Bestand: `proef-pijn.html`. Licht, als tegenhanger van het donkere bewijsblok.
 - **Bento met één dominant geval.** De 7-tegen-6 krijgt het grote vak met beeld, de twee andere zijn ondersteunend.
 - **Het beeld:** twee beoordelaarskaartjes voor dezelfde inzending, met een chip erboven die zegt dat het om hetzelfde werk en dezelfde rubric gaat. Zonder die chip is het verschil niet het punt.
 - **Kleur:** rood alleen op de afwijking, het gat tussen de cijfers en de vier beoordelaars die uit de pas lopen. Groen alleen op het sectielabel.
-- **Bronnen onderaan elke kaart**, instellingen zonder namen van personen. Alles uit de 50 goedgekeurde uitspraken in `projects/pijn-oplossing`.
+- **Bronnen onderaan elke kaart**, instellingen zonder namen van personen. Alles uit de 50 goedgekeurde uitspraken in `GTM/ICP/pijn-oplossing`.
 
 ## pagina.html: de hele pagina in één bestand (15-09-2026)
 

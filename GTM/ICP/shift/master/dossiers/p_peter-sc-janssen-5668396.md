@@ -20,7 +20,7 @@ https://business-college.kronenburgh.nl/opleidingsvarianten/
 Eigen site (opleidingsvarianten) + business-haaglanden.nl profiel
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 DIEP 2026-08-07: Schrijfwerk KERN. Volledig opdracht-/business-case-gedreven toetsmodel: elke unit eindigt met geschreven opdracht + presentatie; HBO-bachelor International Business Management eindigt met thesis + Advanced Business Project onder Engelse validatie (Essex). Klassieke tentamens spelen kleine rol. | Onderwijsvisie "Think-Act-Grow", kleine klassen (5-20), belofte "individueel de diepte in", "we leggen de lat nooit omlaag" (business-college.kronenburgh.nl). Docenten zijn praktijkmensen -> nakijken concurreert met hun praktijktijd (GEVOLG). | Peter = hands-on collegedirecteur (Drs. P.S.C. Janssen MBA) over alle divisies, doet zelf wekelijkse intakes (dinsdag); brede span of control, weinig onderwijsstaf onder hem. | Meerdere scholen onder een dak; relevante tak = beroepsopleidingen (mbo + HBO business).
 

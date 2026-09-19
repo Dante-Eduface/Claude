@@ -20,7 +20,7 @@ https://dentalbestpractice.nl/over-dental-best-practice-2/
 eigen site (teampagina)
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 Zijn functie staat letterlijk op de teampagina als "Onderwijs management & specialist leren, kwaliteit en innovatie" en hij is de enige van het genoemde team met onderwijs of kwaliteit in de titel (https://dentalbestpractice.nl/over-dental-best-practice-2/); de teampagina noemt 21 mensen bij naam, verder eigenaar, docenten, sales, administratie, marketing en backoffice (zelfde pagina); zeven trainingslocaties: Nijkerk, Dordrecht, Hoorn, Deventer, Enschede, Woerden en Sittard (zelfde pagina); de opleiding tandartsassistent "duurt ongeveer 1 jaar en bestaat uit 13 praktijkdagen" met een online leeromgeving met "theorie, aangevuld met opdrachten en toetsen" plus portfolio (https://www.dentalbestpractice.nl/opleiding-tandartsassistent/); geen externe examinerende partij genoemd, het diploma komt van Dental Best Practice zelf
 

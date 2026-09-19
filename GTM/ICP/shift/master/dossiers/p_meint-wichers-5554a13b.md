@@ -17,7 +17,7 @@ https://www.letselschade.nu/letselschadebranche/beroepsopleiding-personenschade-
 vakblad
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 **Haakje zoals agent 3 het opschreef**
 Voorzitter van de stichting die in juni 2022 NIVRE-accreditatie kreeg voor de Beroepsopleiding Personenschade, opgezet met 22 grondleggers uit de branche. Daarnaast afdelingsmanager Personenschade bij Unive

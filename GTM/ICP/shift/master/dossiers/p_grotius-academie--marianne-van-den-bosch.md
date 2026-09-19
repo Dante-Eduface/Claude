@@ -17,7 +17,7 @@ https://www.advocatenblad.nl/2013/02/27/advocaat-2-0-in-zicht/
 interview
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 **Haakje zoals agent 3 het opschreef**
 Over de digitale leeromgeving van de vernieuwde Beroepsopleiding Advocaten in het Advocatenblad: Onder die multimediale omgeving zit een didactisch concept, en: Je kunt straks als stagiaire je eigen accenten leggen, niet alleen met de keuzevakken, maar ook doordat wij per vak verscheidene leervormen aanbieden | LET OP: Interview is uit 2013, dus niet actueel

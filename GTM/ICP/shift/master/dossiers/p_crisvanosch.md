@@ -18,7 +18,7 @@ https://punt.avans.nl/2025/10/avans-heet-vanaf-nu-habeo/
 interview
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 **Haakje zoals agent 3 het opschreef**
 Over de afsplitsing van Avans (rebrand Avans+ naar Habeo+, 2025): "Avans is een marathonloper, wij zijn sprinters" en de tijd was rijp om op eigen benen te staan

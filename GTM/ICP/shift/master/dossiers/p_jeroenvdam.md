@@ -14,7 +14,7 @@ Webresearch
 https://intop.nl/informatie/examencommissie/
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 **Haakje zoals agent 3 het opschreef**
 LinkedIn-post waarin hij een medisch technicus feliciteert met het afronden van de IntopA-opleiding: https://nl.linkedin.com/posts/jeroenvdam_medischtechnicus-intopa-activity-6957290867971735552-0f3_

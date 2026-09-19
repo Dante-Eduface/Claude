@@ -1,6 +1,6 @@
 # Overdracht: pijn voor de landingspagina
 
-Stand 2026-09-11. Dante heeft 576 uitspraken uit Close doorgelopen en er 50 als "klopt" gemarkeerd (49 pijn, 1 gewenste uitkomst) en 64 als "weg". Dit bestand bevat alleen wat klopt, plus de conclusie. Volledige data: `items.json` en `besluiten.json` in deze map. Productclaims mogen uitsluitend uit `references/eduface-product.md`.
+Stand 2026-09-11. Dante heeft 576 uitspraken uit Close doorgelopen en er 50 als "klopt" gemarkeerd (49 pijn, 1 gewenste uitkomst) en 64 als "weg". Dit bestand bevat alleen wat klopt, plus de conclusie. Volledige data: `items.json` en `besluiten.json` in deze map. Productclaims mogen uitsluitend uit `Platform/product.md`.
 
 ## De pijn in één zin per segment
 
@@ -29,8 +29,8 @@ Instructeurs die 2 tot 4 uur per dag nakijken bovenop 8 tot 10 uur lesgeven, en 
 - Niets uit de thema's Productervaring, Bezwaar of Huidige aanpak: dat is sales- en productinput, geen websitecopy.
 - TIO Business School en ICM Opleidingen nooit noemen. Bath Spa alleen als geanonimiseerde UK-pilot tenzij Dante toestemming heeft. Klantnamen die mogen: Hogeschool Rotterdam (lerarenopleiding), De Haagse Hogeschool, Tilburg University, Radboud Universiteit.
 - Citaten van prospects niet met naam op een publieke pagina. Gebruik ze als bron voor de formulering, niet als testimonial.
-- Geen claims buiten `references/eduface-product.md`. Geen "minder uitval" beloven, geen implementatietijd, geen NSS-effect.
-- Schrijfstijl: `.claude/rules/communication-style.md` en de skill `schrijven`. Design: `references/design-system/core/` plus `web/`, via de drie poorten uit `core/proces.md`.
+- Geen claims buiten `Platform/product.md`. Geen "minder uitval" beloven, geen implementatietijd, geen NSS-effect.
+- Schrijfstijl: `.claude/rules/communication-style.md` en de skill `schrijven`. Design: `Design/Design system/core/` plus `web/`, via de drie poorten uit `core/proces.md`.
 
 ## De 50 goedgekeurde uitspraken, per segment en thema
 

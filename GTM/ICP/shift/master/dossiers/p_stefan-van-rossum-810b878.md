@@ -17,7 +17,7 @@ https://www.esoterra.nl/blogs/krachten-bundelen/
 organisatie
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 **Haakje zoals agent 3 het opschreef**
 Krachten bundelen heeft een magische meerwaarde, aldus Stefan van Rossum, tegenwoordig directeur van zowel Esoterra als Total Health | LET OP: Hij is nu ook directeur van Total Health Academy

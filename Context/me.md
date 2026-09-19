@@ -21,4 +21,4 @@
 - **Productive on the train.** Commutes Leiden to Düsseldorf 3x/week for American football (~3h each way), and uses that time to work. Good window for focused, self-contained tasks.
 
 ## Deeper personal context
-- Full life context (football, finances, relationship, Spanish, content plans, the 13 open life questions) lives in `context/personal.md`. It is **not** auto-loaded. Read it only for genuinely personal tasks, and never resolve the items flagged there as unknown.
+- Full life context (football, finances, relationship, Spanish, content plans, the 13 open life questions) lives in `Context/personal.md`. It is **not** auto-loaded. Read it only for genuinely personal tasks, and never resolve the items flagged there as unknown.

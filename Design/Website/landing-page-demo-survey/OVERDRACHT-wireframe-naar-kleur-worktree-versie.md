@@ -4,7 +4,7 @@ Landingspagina Eduface, demopagina voor Google Ads-verkeer. Stand 15-09-2026.
 
 ## 1. Waar het proces staat
 
-De drie poorten uit `references/design-system/core/proces.md` zijn leidend.
+De drie poorten uit `Design/Design system/core/proces.md` zijn leidend.
 
 | Poort | Status |
 |---|---|
@@ -60,7 +60,7 @@ Volledig in `research/proof.md`. De kern:
 
 ## 5. Claim-regels (hard)
 
-`references/eduface-product.md` is de enige bron voor productclaims. Staat het er niet, dan beweer je het niet.
+`Platform/product.md` is de enige bron voor productclaims. Staat het er niet, dan beweer je het niet.
 
 **Mag wel:**
 
@@ -81,7 +81,7 @@ Besluit 11-09-2026: de methode van het cijfer hoeft niet op de pagina. De drager
 
 ## 6. De pijn
 
-Bron: `projects/pijn-oplossing/HANDOFF-landingspagina.md`, 50 goedgekeurde uitspraken uit Close.
+Bron: `GTM/ICP/pijn-oplossing/HANDOFF-landingspagina.md`, 50 goedgekeurde uitspraken uit Close.
 
 Eén pijn met drie gezichten:
 
@@ -95,8 +95,8 @@ Why-now per segment: accreditatie bij particulier, krimp bij NL hoger onderwijs,
 
 ## 7. Valkuilen die tijd kostten
 
-- `python3 -m http.server` faalt op de Drive-map met `PermissionError`. Gebruik node: kopie van `projects/website-building/serve.mjs`, root via `fileURLToPath(new URL(".", import.meta.url))`. Met `.pathname` worden spaties `%20` en krijg je overal 404.
-- Het in-app browserpaneel geeft lege screenshots zodra het verborgen is. Gebruik puppeteer uit `projects/website-building/node_modules`, script tijdelijk in die map zetten zodat de bare import resolvet.
+- `python3 -m http.server` faalt op de Drive-map met `PermissionError`. Gebruik node: kopie van `Design/Website/website-building/serve.mjs`, root via `fileURLToPath(new URL(".", import.meta.url))`. Met `.pathname` worden spaties `%20` en krijg je overal 404.
+- Het in-app browserpaneel geeft lege screenshots zodra het verborgen is. Gebruik puppeteer uit `Design/Website/website-building/node_modules`, script tijdelijk in die map zetten zodat de bare import resolvet.
 - Scroll de pagina helemaal door voor je screenshot maakt, anders staan alle in-view reveals leeg.
 - Let op CSS-klassebotsingen. Wij hadden `.cta` voor zowel de nav-knop als het eind-CTA-blok; de nav-knop werd een enorm donker vlak. Geef nav-elementen een eigen naam.
 - Open HTML altijd zelf in Chrome met `open -a "Google Chrome" <pad>`. Dubbelklikken opent bij Dante een code-editor.
@@ -124,4 +124,4 @@ Referentie die Dante mooi vindt: https://habitline-wbs.framer.website/
 - De kwalificatievragen vóór de agenda zijn geparkeerd, niet geschrapt.
 - Nog in te kleuren: how it works, producten, fit & trust, FAQ, boekblok.
 
-Alles gaat uiteindelijk naar Framer. Bouw binnen dat model: stacks en gap, nooit margins op children, geen vaste hoogtes, minmax-grids, framer-motion als enige animatielib. Zie `references/design-system/web/framer.md`.
+Alles gaat uiteindelijk naar Framer. Bouw binnen dat model: stacks en gap, nooit margins op children, geen vaste hoogtes, minmax-grids, framer-motion als enige animatielib. Zie `Design/Design system/web/framer.md`.

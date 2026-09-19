@@ -20,7 +20,7 @@ https://compliance-instituut.nl/insights/nederlands-compliance-instituut-groeit-
 interview
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 **Haakje zoals agent 3 het opschreef**
 Bij de overname van het Nederlands Compliance Instituut in augustus 2025: Met ons label Lindenhaeghe zijn wij al jaren toonaangevend op het gebied van verplichte educatie

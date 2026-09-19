@@ -9,9 +9,9 @@ echo "--- Lane A (pure-code, altijd beschikbaar) ---"
 need node ""
 [[ -x "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" ]] \
   && say "chrome" "ok" || { say "chrome" "ONTBREEKT (nodig voor verify.js/shot.js)"; OK=1; }
-PUP="$(cd "$(dirname $0)/../../../.." && pwd)/projects/website-building/node_modules/puppeteer-core"
-[[ -d "$PUP" ]] && say "puppeteer-core" "ok  (gedeeld: projects/website-building)" \
-  || { say "puppeteer-core" "ONTBREEKT -> npm i puppeteer-core in projects/website-building"; OK=1; }
+PUP="$(cd "$(dirname $0)/../../../.." && pwd)/Design/Website/website-building/node_modules/puppeteer-core"
+[[ -d "$PUP" ]] && say "puppeteer-core" "ok  (gedeeld: Design/Website/website-building)" \
+  || { say "puppeteer-core" "ONTBREEKT -> npm i puppeteer-core in Design/Website/website-building"; OK=1; }
 
 echo "\n--- Lane B (echte video, alleen als Dante dat wil) ---"
 need python3 ""

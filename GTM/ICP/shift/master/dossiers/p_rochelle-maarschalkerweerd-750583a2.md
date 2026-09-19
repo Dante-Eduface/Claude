@@ -20,7 +20,7 @@ https://www.sonneveltopleidingen.nl/opleidingen/leefstijlcoach
 eigen site (opleidingspagina)
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 Zij komt van Master IT, waar zij Planner/Project Coördinator was (https://master-it.nl/persoon/rochelle-maarschalkerweerd/), en Master IT is sinds 2025 net als Sonnevelt onderdeel van De Complementair Groep, dus dit is een interne overstap binnen de groep; Sonnevelt beschrijft het portfolio letterlijk als "Tijdens de opleiding werk je aan je portfolio (reflectieverslag per les en huiswerkopdrachten)" (https://www.sonneveltopleidingen.nl/opleidingen/leefstijlcoach); diploma-eis is "een voldoende voor het portfolio met de huiswerkopdrachten" plus "een voldoende voor het examen theorie en praktijk" (zelfde pagina); de opleiding Leefstijlcoach telt 15 lesdagen en duurt "circa 8 maanden (start najaar) of 10 maanden (start voorjaar)" (zelfde pagina), dus een reflectieverslag per les betekent bij 15 lesdagen een reeks verslagen per cursist; geen externe examinerende partij genoemd, BLCN accrediteert alleen; LET OP: haar functietitel is niet uit een tweede bron hard te maken
 

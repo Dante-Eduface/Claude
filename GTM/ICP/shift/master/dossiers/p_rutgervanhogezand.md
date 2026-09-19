@@ -20,7 +20,7 @@ https://www.wateropleidingen.nl/study/basisopleiding-drinkwaterdistributie-2/
 opleidingspagina plus LinkedIn
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 DIEP 2026-08-12: was 2020-2025 docent en opleidingsmanager Watermanagement bij Hogeschool Rotterdam, onze KLANT, dat is de sterkste troef; Wateropleidingen draait op 275 freelance vakexperts als docenten die ook zelf de opdrachten nakijken (wateropleidingen.nl); individuele en groepsopdrachten in een portfolio, bijvoorbeeld 4 toetsen bij de Basisopleiding drinkwaterdistributie; hij stapte dus van een hbo-opleiding met vaste docenten naar een club waar het nakijken bij 275 freelancers ligt
 

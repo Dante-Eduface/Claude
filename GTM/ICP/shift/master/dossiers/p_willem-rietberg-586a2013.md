@@ -17,7 +17,7 @@ https://essenzo.nu/opleidingen/business-management/
 eigen site + RD-interviews (deels via samenvatting, 1 pagina gaf HTTP 500)
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 DIEP (opus) 2026-08-07: Spanning tussen groei en persoonlijke belofte. Instroom flink gegroeid dit studiejaar (RD noemt 60-70%, LET OP cijfer kwam uit samenvatting, bronpagina gaf HTTP 500, niet hard citeren als exact percentage) terwijl hele belofte is "meester-gezel", "alle docenten kennen alle studenten bij naam". Rietberg zelf (13-05-2025): "We bouwen niet vanuit een lesboek, maar vanuit vragen uit de praktijk. Studenten brengen situaties mee van hun werk en oefenen direct met het formuleren van een passend advies." = individueel, handmatig te beoordelen schrijfwerk. Open vraag: hoe houden jullie de feedback op die werkstukken persoonlijk nu er flink meer studenten zijn? Nieuwe HBO Accountancy (sep 2025, Amersfoort) heeft AI als leerlijn door het hele curriculum, Rietberg is contactpersoon - zwakkere 2e optie, gaat over AI als lesstof niet als beoordelingshulp. LinkedIn niet leesbaar (999): zijn 40-jarige carriere/examencommissie-verleden NIET onafhankelijk bevestigd, niet citeren.
 

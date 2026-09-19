@@ -68,7 +68,7 @@ Een drempel op aantallen is bovendien zelden eenduidig: telt hij het totaal of d
 
 Geen filter op een programma-niveau dat niet bestaat. Geen tags als het datamodel geen tags kent. Geen periode als we die data niet uithalen. Een control die op lucht staat, is erger dan een ontbrekende control, want hij belooft iets.
 
-Zelfde regel als bij productclaims: staat het niet in de bron, dan bestaat het niet. Zie `references/eduface-product.md`.
+Zelfde regel als bij productclaims: staat het niet in de bron, dan bestaat het niet. Zie `Platform/product.md`.
 
 ---
 
@@ -90,6 +90,6 @@ Zakt een element op vraag 1 of 5, dan gaat het eruit. Zakt het op 2, 3 of 4, dan
 
 De regels hierboven komen uit het ontwerpwerk aan de docentomgeving, september 2026, en uit drie onderzoeksdocumenten:
 
-- `references/research/ux-ui-design-expertwerkwijze.md` — wat een ontwerp goed maakt, en waar de vakliteratuur elkaar tegenspreekt.
-- `references/research/designkeuzes-bij-spanning.md` — hoe je kiest als twee opties allebei verdedigbaar zijn, wat gewoontes doorbreken kost, en welke toets welke vraag beantwoordt.
-- `references/research/onboarding-naar-eerste-waarde.md` — hoe je iemand naar zijn eerste waardemoment brengt, wachttijd ontwerpen, en wat er bekend is over docentadoptie en vertrouwen in AI-feedback.
+- `Platform/Onderzoek/ux-ui-design-expertwerkwijze.md` — wat een ontwerp goed maakt, en waar de vakliteratuur elkaar tegenspreekt.
+- `Platform/Onderzoek/designkeuzes-bij-spanning.md` — hoe je kiest als twee opties allebei verdedigbaar zijn, wat gewoontes doorbreken kost, en welke toets welke vraag beantwoordt.
+- `Platform/Onderzoek/onboarding-naar-eerste-waarde.md` — hoe je iemand naar zijn eerste waardemoment brengt, wachttijd ontwerpen, en wat er bekend is over docentadoptie en vertrouwen in AI-feedback.

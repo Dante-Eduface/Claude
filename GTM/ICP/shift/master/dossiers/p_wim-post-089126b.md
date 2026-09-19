@@ -23,7 +23,7 @@ https://www.postmdopleidingen.nl/over-ons
 Eigen website (opleidingspagina + over-ons)
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 DIEP 2026-08-12 BEVESTIGD woord voor woord op postmdopleidingen.nl/over-ons: voortgekomen uit de post-hbo-activiteiten van Hogeschool Rotterdam die in 2014 zijn verzelfstandigd, en enkele opleidingen geven vrijstellingen binnen de hbo-opleidingen van Hogeschool Rotterdam (Ad Management in de zorg, Ad Ondernemen, HBO-V deeltijd) - Hogeschool Rotterdam is onze KLANT, dat draagt de opening; Middenmanagement module 4 heet letterlijk 'het schrijven van verbetervoorstellen', Teamleider zorg vraagt 'het schrijven van een jaarplan voor je afdeling', beide sluiten elke module af met een praktijkopdracht; wie nakijkt is NIET gevonden (eerdere claim 'nagekeken door eigen docenten' is dus niet hard); location Capelle aan den IJssel/Rotterdam; agent scoorde 1 tot 2, hier op 2 gehouden vanwege de klantband
 

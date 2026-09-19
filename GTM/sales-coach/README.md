@@ -25,8 +25,8 @@ Toetsen: `1` `2` `3` `4` voor de schermen, `/` voor zoeken.
 ## Onderhoud
 
 ```bash
-python3 projects/sales-coach/scripts/sync_close.py   # Close ophalen
-python3 projects/sales-coach/scripts/build.py        # app opnieuw bouwen
+python3 GTM/sales-coach/scripts/sync_close.py   # Close ophalen
+python3 GTM/sales-coach/scripts/build.py        # app opnieuw bouwen
 ```
 
 `sync_close.py` overschrijft alleen de `close`-zone in elk dealbestand. De `coach`-zone blijft altijd staan.

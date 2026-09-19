@@ -20,7 +20,7 @@ opleidingspagina
 2026-08-12
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 DIEP 2026-08-12: de kopopleiding A&O zet 520 van de 770 uur in het eindtraject (eindverslag/scriptietraject), tegen 250 uur gewone studietijd, dus tweederde van de opleiding is het eindverslag (phov.nl/opleiding/kopopleiding-ao/begeleiding-en-toetsing); het eindverslag wordt individueel geschreven en begeleid door een mentor per intervisiegroep; wie het formeel beoordeelt staat nergens; VERVALLEN: het oude haakje over 'fouten maken zonder angst' uit haar about is niet verifieerbaar als citaat en is geschrapt
 

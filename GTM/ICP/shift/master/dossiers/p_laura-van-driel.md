@@ -17,7 +17,7 @@ https://nl.linkedin.com/in/laura-van-driel
 about
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 DIEP 2026-08-12 GEEN HAAKJE: geen enkele bron noemt schriftelijk werk, feedback of nakijken; de beoordeling loopt volledig via proeven van bekwaamheid, portfoliogesprekken en mondelinge examens; bij de kopmodules GVP en GVS is het portfolio zelfs vervallen en blijft alleen de proeve over; advies is van de lijst af of ver naar achteren
 

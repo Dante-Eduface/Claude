@@ -20,7 +20,7 @@ https://auxilio.nl/academie/
 eigen site
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 Zij is algemeen manager van drie dingen tegelijk: Auxilio Zorgprofessionals, de Academie en het Triage Support Center (https://auxilio.nl/ons-team/ en LinkedIn); Auxilio belooft op de eigen site "In slechts 11 maanden haal je een erkend mbo-niveau 4 diploma" voor doktersassistent (https://auxilio.nl/academie/); de triagist-opleiding loopt tot 12 maanden (https://auxilio.nl/academie/diploma-triagist/); Auxilio telt 177 medewerkers over 4 locaties, terwijl de academie maar een deel van het bedrijf is, de rest is detachering/zorgprofessionals (contactenlijst + auxilio.nl); geen aparte onderwijsdirecteur zichtbaar op de teampagina; geen onderwijsvisie of visiestuk online gevonden
 

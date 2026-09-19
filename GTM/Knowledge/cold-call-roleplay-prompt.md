@@ -1,6 +1,6 @@
 # Cold call roleplay — prompt
 
-Plak deze prompt in een nieuwe Claude-chat. Plak het onderzoeksbestand van de betreffende persoon eronder (`projects/cold-calling/<naam>.md`). Kies je moeilijkheidsgraad en bellen maar.
+Plak deze prompt in een nieuwe Claude-chat. Plak het onderzoeksbestand van de betreffende persoon eronder (`GTM/Campaigns/cold-calling/<naam>.md`). Kies je moeilijkheidsgraad en bellen maar.
 
 ---
 
@@ -75,4 +75,4 @@ Bied daarna aan om hetzelfde gesprek opnieuw te doen, of een niveau hoger.
 
 DOSSIER:
 
-[plak hier de inhoud van projects/cold-calling/<naam>.md]
+[plak hier de inhoud van GTM/Campaigns/cold-calling/<naam>.md]

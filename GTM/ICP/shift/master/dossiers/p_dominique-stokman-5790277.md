@@ -17,7 +17,7 @@ https://hypnos.nl/organisatie-en-docenten/
 teampagina
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 **Haakje zoals agent 3 het opschreef**
 Zegt zelf: Mijn passie ligt in het opleiden van professionals en het verbinden van mensen met zichzelf, hun naasten en hun omgeving. Nam de school in 2018 over van oprichter Barbelo Uijtenbogaardt

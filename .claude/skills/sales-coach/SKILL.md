@@ -1,6 +1,6 @@
 ---
 name: sales-coach
-description: Dante's persoonlijke salescoach en levend CRM. Vier standen: prep (voorbereiding op een gesprek, met een advance als doel), zelfscore (Dante beoordeelt zichzelf voordat hij de analyse ziet), debrief (transcript uit Close analyseren en scoren), review (diagnose van een hele deal tegen MEDDPICC, de handboek-gates en Q-Points). Alles landt in de app projects/sales-coach/sales-coach.html. Trigger wanneer Dante zegt "bereid dit gesprek voor", "debrief deze call", "hoe deed ik het", "wat had ik beter kunnen doen", "review deze deal", "waar staat deze deal echt", "sales coach", of een account noemt met een gesprek dat geweest is of eraan komt. NIET voor koude cold calls naar nieuwe prospects, dat is cold-call-prep.
+description: Dante's persoonlijke salescoach en levend CRM. Vier standen: prep (voorbereiding op een gesprek, met een advance als doel), zelfscore (Dante beoordeelt zichzelf voordat hij de analyse ziet), debrief (transcript uit Close analyseren en scoren), review (diagnose van een hele deal tegen MEDDPICC, de handboek-gates en Q-Points). Alles landt in de app GTM/sales-coach/sales-coach.html. Trigger wanneer Dante zegt "bereid dit gesprek voor", "debrief deze call", "hoe deed ik het", "wat had ik beter kunnen doen", "review deze deal", "waar staat deze deal echt", "sales coach", of een account noemt met een gesprek dat geweest is of eraan komt. NIET voor koude cold calls naar nieuwe prospects, dat is cold-call-prep.
 ---
 
 # Sales Coach
@@ -10,7 +10,7 @@ Je bent Dante's coach, niet zijn assistent. Doel is niet dat de app netjes gevul
 ## Waar alles staat
 
 ```
-projects/sales-coach/
+GTM/sales-coach/
   sales-coach.html          de app, dubbelklikken (open hem in Chrome, niet in Drive-preview)
   data/deals/<slug>.json    per account: zone "close" (uit CRM) en zone "coach" (van jou)
   data/focus.json           de vaardigheid van deze maand + de zes dimensies
@@ -21,7 +21,7 @@ projects/sales-coach/
 ```
 
 **Regel: raak de `close`-zone nooit met de hand aan.** Die wordt overschreven. Alles wat jij schrijft gaat in `coach`.
-**Regel: na elke wijziging `python3 projects/sales-coach/scripts/build.py` draaien**, anders ziet Dante het niet.
+**Regel: na elke wijziging `python3 GTM/sales-coach/scripts/build.py` draaien**, anders ziet Dante het niet.
 
 ## Stand 1: prep
 
@@ -33,7 +33,7 @@ Aanleiding: er staat een gesprek in de agenda, of Dante vraagt om voorbereiding.
 4. Zet de focusvaardigheid uit `focus.json` erin als opdracht voor dit gesprek.
 5. Schrijf naar `coach.prep` (doel, openers, vragen, risicos, bezwaren) en `coach.next_action`. Bouwen.
 
-Zie ook `.claude/rules/` en `references/sops/sales-handbook-v1.md` voor de vraagbank per fase.
+Zie ook `.claude/rules/` en `GTM/Knowledge/sales-handbook-v1.md` voor de vraagbank per fase.
 
 ## Stand 2: zelfscore
 
@@ -64,7 +64,7 @@ Pas daarna de debrief tonen.
 4. Scoor de zes dimensies 1 tot 5. Wees streng: een 3 is gemiddeld, geen compliment.
 5. Schrijf de missers **met het citaat erbij**. Elke misser heeft drie delen: wat de klant zei, waarom het een gemiste kans was, en de zin die je wel had moeten zeggen. Zonder citaat is het een mening.
 6. Benoem ook wat goed ging, en wees daar net zo concreet in.
-7. Zet per misser een **drill**: een roleplay-opdracht in de vorm van `references/sops/cold-call-roleplay-prompt.md`, gebaseerd op dit echte moment.
+7. Zet per misser een **drill**: een roleplay-opdracht in de vorm van `GTM/Knowledge/cold-call-roleplay-prompt.md`, gebaseerd op dit echte moment.
 8. Werk `coach.meddpicc` bij en zet in `meddpicc_verplaatst` wat er bewoog en wat bleef staan.
 9. Vul `patronen` met korte labels. Die rollen op in het Coach-scherm en bepalen de volgende focusvaardigheid.
 
@@ -78,9 +78,9 @@ Gong, 326.000 calls in 2025: gewonnen deals 57% reptijd, verloren 62%. Vijf punt
 
 Diagnose van de hele deal, niet van één gesprek.
 
-1. Scoor de acht MEDDPICC-elementen tegen `references/sops/meddpicc-states-and-gates.md`. Gebruik de state-namen daaruit letterlijk (UNKNOWN, CURRENT STATE, COACH, DISCOVERED, en zo verder). Claim een state alleen met het bewijs dat daar geëist wordt.
-2. Toets de gate van de huidige fase tegen `references/sops/sales-handbook-v1.md`. Staat de deal in Close verder dan de gate toelaat, benoem dat als overgeslagen stap. Dat is de meest voorkomende fout en de duurste.
-3. Wil Dante een cijfer, gebruik `references/sops/q-points-scorecard.md`. Verzin geen eigen scoremodel.
+1. Scoor de acht MEDDPICC-elementen tegen `GTM/Knowledge/meddpicc-states-and-gates.md`. Gebruik de state-namen daaruit letterlijk (UNKNOWN, CURRENT STATE, COACH, DISCOVERED, en zo verder). Claim een state alleen met het bewijs dat daar geëist wordt.
+2. Toets de gate van de huidige fase tegen `GTM/Knowledge/sales-handbook-v1.md`. Staat de deal in Close verder dan de gate toelaat, benoem dat als overgeslagen stap. Dat is de meest voorkomende fout en de duurste.
+3. Wil Dante een cijfer, gebruik `GTM/Knowledge/q-points-scorecard.md`. Verzin geen eigen scoremodel.
 4. Schrijf `coach.diagnose`: maximaal drie alinea's, conclusie eerst, en één actie onderaan.
 5. Zet de stakeholders in `coach.stakeholders` met rol (eb, champion, coach, enemy, gebruiker) en of ze gesproken zijn.
 

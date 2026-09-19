@@ -23,7 +23,7 @@ nieuws (partnerinstelling)
 2023-10-01
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 Technicom tekende in september 2023 samen met twee bekostigde ROC's, Zadkine en Noorderpoort, voor flexibel modulair logistiek onderwijs voor volwassenen (https://www.zadkine.nl/nieuws/2023-10-01-zadkine-slaat-handen-ineen-met-het-bedrijfsleven-en-opleiders-noorderpoort-en-technicom-voor-flexibel-modulair-logistiek-onderwijs); een particuliere opleider van 47 man die naast twee ROC's aan tafel zit is ongebruikelijk in dit segment; Technicom noemt zichzelf "landelijk erkende mbo-opleidingen, branche-opleidingen en trainingen" in procestechniek, maintenance en logistiek, 30 jaar industrieel opleider (https://www.technicom.nl/); hij heeft een eigen teampagina op de site (https://www.technicom.nl/ons-team/robert-goedhart/); LET OP: de titel is niet uit twee bronnen hard te maken, en de MVK-examinering loopt extern via Hobeon, daar dus niet op pitchen
 

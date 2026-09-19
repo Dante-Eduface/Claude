@@ -20,7 +20,7 @@ https://news.webster.edu/2020/new-academic-director-leiden-campus.php
 organisatie
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 **Haakje zoals agent 3 het opschreef**
 Noemt haar onderwijsfilosofie zelf classroom outdoors of classroom in the community, studenten koppelen aan echte problemen via experiential learning. Richtte het Bijlmer-project op over slachtoffers van mensenhandel

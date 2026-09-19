@@ -10,7 +10,7 @@
 https://www.erasta.nl/wie-ik-ben + https://hvna-opleidingen.nl/over-ons/
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 **Haakje zoals agent 3 het opschreef**
 Student (afgestudeerd 2020) -> docent 4e jaar -> directeur sinds aug 2023, alle drie stappen letterlijk bevestigd op erasta.nl en hvna-opleidingen.nl/over-ons. Afstuderen: portfolio met reflectieopdrachten+feedbackverslagen, (reflectie)scriptie, praktijkexamen. Doorlopend: verslagen van afgenomen anamneses, werkstukken.

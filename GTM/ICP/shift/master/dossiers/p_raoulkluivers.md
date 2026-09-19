@@ -20,7 +20,7 @@ https://buitensportopleiding.nl/team/
 eigen site (teampagina)
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 Hij is in 1969 geboren op exact de plek waar het buitensportcentrum nu staat, en is daar nu eigenaar (https://buitensportopleiding.nl/team/); hij volgde begin jaren 90 het CIOS in Heerenveen en is volgens de eigen teampagina de enige Nederlander met het Professional Interpretive Hiking Guide-diploma van de IGA; hij schreef het wildernishandboek "Tracks of the White Wolf" (zelfde pagina), dus hij is zelf auteur van het lesmateriaal in zijn vakgebied; De Voshaar bestaat sinds 1977, ging in 1990 over op survivalruntraining, in 1993 op outdoorsport, is sinds 2001 opleidingsgericht en draait sinds 2015 een eigen mbo Sport en Bewegen (zelfde pagina); "De opleiding functioneert zelfstandig en is niet gekoppeld aan een ROC of andere onderwijsinstelling" (https://buitensportopleiding.nl/); zij bieden ook een "Online Course Wilderness Skills & Knowledge", dus er is al een online leerlijn (https://buitensportopleiding.nl/en/online-course-wilderness-nature-preps-home/)
 

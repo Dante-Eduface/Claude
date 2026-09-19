@@ -15,7 +15,7 @@ Clay (LinkedIn)
 ## Bronnen
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 **Haakje zoals agent 3 het opschreef**
 LET OP: Functie lijkt niet te kloppen: vindbaar als docent bij SPO en bestuurder bij Pensioenfonds PDN, niet als Program Manager Executive Education. Ook naamgenoot-risico

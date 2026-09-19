@@ -4,7 +4,7 @@ Geschreven op 11-09-2026 voor de sessie die UI-images en product-images maakt. A
 
 **Lees dit bestand vanuit de hoofdmap.** Het staat niet in elke worktree; wie in een worktree zit die van een oudere commit aftakt vindt het niet.
 
-**De hoofdregel:** `references/eduface-product.md` is de enige bron voor productclaims. Staat een functie daar niet in, dan teken je hem ook niet. Een verzonnen knop in een beeld is hetzelfde als een verzonnen claim in een mail.
+**De hoofdregel:** `Platform/product.md` is de enige bron voor productclaims. Staat een functie daar niet in, dan teken je hem ook niet. Een verzonnen knop in een beeld is hetzelfde als een verzonnen claim in een mail.
 
 ---
 
@@ -58,13 +58,13 @@ Uitgelezen op `app-dev.eduface.me` op 03-09-2026. Dit is de huidige productie-UI
 - Links het formulier met een groene `Sign in` en Google-login.
 - Rechts een navy paneel: `AI feedback and grading for teachers`, daaronder `Generate clear rubric-based comments, feedback and consistent grading for student submissions.`, een collage van productschermen en onderaan logo's van universiteiten.
 
-**Overige echte schermen** staan als screenshot in `projects/usability-test/afbeeldingen/`: feedbacktab met regenerate, grading-tab, rubriccriteria bewerken, het paneel dat inzendingen verwerkt, de taal-dropdown. Dat is de beste referentie voor hoe het product er nu echt uitziet.
+**Overige echte schermen** staan als screenshot in `Platform/usability-test/afbeeldingen/`: feedbacktab met regenerate, grading-tab, rubriccriteria bewerken, het paneel dat inzendingen verwerkt, de taal-dropdown. Dat is de beste referentie voor hoe het product er nu echt uitziet.
 
 ---
 
 ## 3. Het herontwerp, en wat daarvan geldt
 
-In `projects/app-homepage-redesign/` ligt een klikbaar prototype van een nieuwe home page (`home-redesign.html`), plus de bouwprompts. Dat is **een voorstel, geen productie**. Als je een beeld maakt van "hoe het eruit gaat zien", gebruik dat. Moet het beeld de huidige app tonen, gebruik de screenshots.
+In `Design/Website/app-homepage-redesign/` ligt een klikbaar prototype van een nieuwe home page (`home-redesign.html`), plus de bouwprompts. Dat is **een voorstel, geen productie**. Als je een beeld maakt van "hoe het eruit gaat zien", gebruik dat. Moet het beeld de huidige app tonen, gebruik de screenshots.
 
 **De card**
 - Drie zones: naam, dan óf één held-getal `20 to grade` met daaronder `Oldest waiting 12 days`, óf `No submissions yet`, dan een voet met `Last submission 1 day ago`.
@@ -82,7 +82,7 @@ In `projects/app-homepage-redesign/` ligt een klikbaar prototype van een nieuwe 
 
 ## 4. Merk en design system
 
-Bron: `references/design-system/`. Laad `core/` plus het oppervlak dat je maakt (`web/`, `slides/` of `internal/`), nooit de hele map.
+Bron: `Design/Design system/`. Laad `core/` plus het oppervlak dat je maakt (`web/`, `slides/` of `internal/`), nooit de hele map.
 
 **Kleur**
 - Navy `#002333`, dat is de zwart-vervanger en de primaire knop.
@@ -100,7 +100,7 @@ Let op de spanning: de echte app gebruikt nu groen voor `Create Course`, `Sign i
 **Ruimte**: 8pt-familie. Interne schermen zijn dicht: rijen 36px, controls 32px, panelpadding 16px, zijbalk 240px.
 **Schaduw**: drie niveaus, subtiel, navy-getint, nooit zwart en nooit gestapeld.
 
-**Assets**: `references/brand-assets/` heeft `logos/logo_navy.png`, `logos/logo_white.png`, drie productscreenshots in `product/` en de font-bestanden. Logo's niet roteren, stretchen of herkleuren.
+**Assets**: `Design/Merk/` heeft `logos/logo_navy.png`, `logos/logo_white.png`, drie productscreenshots in `product/` en de font-bestanden. Logo's niet roteren, stretchen of herkleuren.
 
 ---
 
@@ -118,10 +118,10 @@ Let op de spanning: de echte app gebruikt nu groen voor `Create Course`, `Sign i
 
 ## 6. Waar je verder kijkt
 
-- `references/eduface-product.md` — de bron voor elke claim
-- `references/design-system/core/` — tokens, regels, compositie, en `voorbeelden.html` met fout naast goed
-- `references/design-system/internal/` — als je app- of dashboard-UI tekent
-- `references/brand-assets/` — logo's, fonts, productscreenshots
-- `projects/usability-test/afbeeldingen/` — echte schermen van de huidige app
-- `projects/app-homepage-redesign/` — het herontwerp plus de bouwprompts
-- `references/brand-guidelines.md` — merk breed
+- `Platform/product.md` — de bron voor elke claim
+- `Design/Design system/core/` — tokens, regels, compositie, en `voorbeelden.html` met fout naast goed
+- `Design/Design system/internal/` — als je app- of dashboard-UI tekent
+- `Design/Merk/` — logo's, fonts, productscreenshots
+- `Platform/usability-test/afbeeldingen/` — echte schermen van de huidige app
+- `Design/Website/app-homepage-redesign/` — het herontwerp plus de bouwprompts
+- `Design/Merk/brand-guidelines.md` — merk breed

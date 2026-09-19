@@ -2,7 +2,7 @@
 
 _Opgesteld 09-09-2026. Bronnen: Close-transcript 01-09 (Dante, Jeroen, Marloes, Ivonne), Close-transcript 03-09 (Dante, Jeroen, Irma, Jochem, Marina, Sanne), en de discovery-notitie van de fysieke demo op 25-08. De demo van 25-08 is niet opgenomen, daarvan hebben we alleen de notitie._
 
-Kolom **Bewijs**: staat het in `references/eduface-product.md`, komt het terug in andere deals in `projects/sales-coach/data/`, of is het hier voor het eerst gezegd.
+Kolom **Bewijs**: staat het in `Platform/product.md`, komt het terug in andere deals in `GTM/sales-coach/data/`, of is het hier voor het eerst gezegd.
 
 ## Groen: gedekt door de productdocumentatie
 | Wat we zeiden | Waar | Bewijs |

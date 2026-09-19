@@ -17,7 +17,7 @@ https://www.businesscoach.nl/organisatie/
 organisatie
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 **Haakje zoals agent 3 het opschreef**
 De visie staat er hard: in 2030 wereldwijd marktleider in business coaching met 1.000+ gecertificeerde business coaches, terwijl er nu meer dan 55 coaches in vier landen met de methodiek werken. BusinessCoach mag als enige in Nederland een erkend diploma tot businesscoach uitgeven. | LET OP: Alles vanaf beoordeling van coach-opdrachten was verzonnen en is verwijderd. Nuance: de vier landen slaan op coaches die met het MKB Canvas werken, niet op vestigingen. | FIT ZWAK: beoordeling draait om presenteren en mondeling verdedigen, weinig geschreven werk.

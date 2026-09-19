@@ -23,7 +23,7 @@ LinkedIn-post
 2026-07-08
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 DIEP 2026-08-12: rondde net jaar 1 af van haar EIGEN master Onderwijswetenschappen aan de Open Universiteit en zoekt voor jaar 2 een thesisonderwerp onder schoolleiders/studenten (LinkedIn-post 08-07-2026); zij is dus zelf student en zelf opleidingsdirecteur tegelijk; module 5 van haar eigen opleiding sluit af met een paper plus presentatie, 10-15u zelfstudie per week (academica-group.com); wie die papers nakijkt staat nergens op de site; VERVALLEN: het oude haakje (individuele feedback is zwaar, begeleiders kijken stuk voor stuk na) vindt nergens dekking in de bron en is geschrapt
 

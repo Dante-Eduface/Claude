@@ -10,13 +10,13 @@ komt zowel de HTML-preview (voor jezelf, om te controleren) als de bewerkbare pp
 Dante, om in Canva te importeren).
 
 ## Voor je begint
-1. `references/design-system/slides/layouts.md` — de soorten slides.
-2. `references/design-system/slides/pitch-slides.md` — hoe een pitch-slide eruitziet. **Verplicht.**
-3. `references/eduface-product.md` — de enige bron voor productclaims. Staat het er niet, dan zet je het niet op een slide.
+1. `Design/Design system/slides/layouts.md` — de soorten slides.
+2. `Design/Design system/slides/pitch-slides.md` — hoe een pitch-slide eruitziet. **Verplicht.**
+3. `Platform/product.md` — de enige bron voor productclaims. Staat het er niet, dan zet je het niet op een slide.
 4. `reference.md` in deze map — de valkuilen. Scheelt drie rondes.
 
 ## De drie poorten
-`references/design-system/core/proces.md` geldt ook hier. Nooit in één klap een heel deck:
+`Design/Design system/core/proces.md` geldt ook hier. Nooit in één klap een heel deck:
 eerst één slide als PNG, akkoord, dan de rest. Dante slaat poorten over door "gewoon bouwen" te zeggen.
 
 ## De loop
@@ -48,8 +48,8 @@ Raster is 1920x1080 px, marge 120. `cols(n)` geeft de x-middens en de kolombreed
 
 ## Assets
 Zet in de werkmap een `assets/` met:
-- `logo_navy.png` en `logo_white.png` uit `references/brand-assets/logos/`
-- het klantlogo als `klant.png` (schoollogo's staan in `references/design-system/Logo van scholen/`)
+- `logo_navy.png` en `logo_white.png` uit `Design/Merk/logos/`
+- het klantlogo als `klant.png` (schoollogo's staan in `Design/Design system/Logo van scholen/`)
 - SVG-logo's eerst naar transparante PNG renderen en de lege rand wegknippen, anders klopt de schaal niet
 
 Iconen: `python3 icons.py verschillen variatie --tint amber`. Nieuw icoon nodig? Paadje toevoegen

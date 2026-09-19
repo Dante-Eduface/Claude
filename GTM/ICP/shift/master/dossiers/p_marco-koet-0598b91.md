@@ -20,7 +20,7 @@ https://mkpc.nl/kennisbank/praktijkcertificering-1-december-2021/
 Organisatie-website (kennisbank/opleidingspagina) + eigen interview
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 Certified Green Belt vereist 1 succesvol verbeterproject, gepresenteerd aan de examencommissie, met minstens een 7,0 (https://mkpc.nl/lean-six-sigma-opleiding/greenbelt/); de examencommissie bestaat uit Marco Koet zelf + Michael van der Vlist, Michel Grouwstra en Mark Voetman, en beoordeelt op "de inhoudelijke aanpak, de inhoud, de relevantie voor de organisatie en de wijze van presentatie" (https://mkpc.nl/kennisbank/praktijkcertificering-1-december-2021/); beoordeling draait om de presentatie van het verbeterproject, niet om een schriftelijk werkstuk; theorie-examen apart (online, 14 locaties) (https://mkpc.nl/veelgestelde-vragen/); 90-95% slaagt in een keer (https://mkpc.nl/veelgestelde-vragen/); Marco's eigen leervisie in interview: "Liever heb ik een manager die een techniek verkeerd gebruikt, maar die wel de juiste houding weet neer te zetten" en "Ontspannen... Dat schept het beste klimaat om managers bewust naar hun rol en houding te kijken" (https://mkpc.nl/lss-college/klantverhalen/interview-met-marco-koet-oprichter-mkpc/); 18 man, CRKBO + Cedeo gecertificeerd zelfstandig exameninstituut (targetlijst-nl.csv, mkpc.nl)
 

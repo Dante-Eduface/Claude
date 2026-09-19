@@ -116,7 +116,7 @@
     "ICM"
   ],
   "lemlist_campagne_id": "cam_qpkMQ2axpN7wt7HZt",
-  "_bron": "overgenomen uit de constanten van pipeline.py op 2026-09-10; prijsmodel references/pricing/prijsmodel-nl-opleiding-26-27.md; klantnamen per memory eduface-werking-in-outreach (ICM mag sinds 21-08-2026)",
+  "_bron": "overgenomen uit de constanten van pipeline.py op 2026-09-10; prijsmodel GTM/Pricing/prijsmodel-nl-opleiding-26-27.md; klantnamen per memory eduface-werking-in-outreach (ICM mag sinds 21-08-2026)",
   "poort0_own": "wordt beoordeeld|worden beoordeeld|beoordeeld door (de |onze |een )?(docent|trainer|opleider|assessor|examinator|examencommissie|begeleider|beoordelaar)|(docent|trainer|assessor|examinator|examencommissie|beoordelaar)\\w*[^.]{0,80}beoordeel|onze examencommissie|eigen examencommissie|scriptie|afstudeeropdracht|eindwerkstuk|eindopdracht|eindgesprek|proeve van bekwaamheid|portfolio wordt|beoordelingscriteria|nakijk|feedback op je (opdracht|werk|verslag|essay)|leerverslag",
   "poort0_extern": "\\bCBR\\b|\\bCCV\\b|\\bTCVT\\b|Oranje Kruis|\\bIBKI\\b|CerTech|\\bSVPB\\b|\\bExTH\\b|\\bSEU\\b|Prometric|Pearson VUE|extern examenbureau|externe examinator|externe examinering|onafhankelijk exameninstituut|onafhankelijk examenbureau|\\bLSSA\\b|Associatie voor Examinering|Scrum\\.org|PeopleCert|APMG|\\bEXIN\\b|Nedcert|\\bSVH\\b|SVM ?NIVO|\\bTCI\\b|Exuive|staatsexamen",
   "poort0_duur": "\\b(\\d{1,2})\\s*(maanden|jaar)\\b|studiebelasting|\\b\\d{1,3}\\s*(EC|ECTS|SBU)\\b|lesdagen|opleidingsdagen|bijeenkomsten",

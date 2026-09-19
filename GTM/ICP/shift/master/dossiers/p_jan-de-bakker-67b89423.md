@@ -20,7 +20,7 @@ https://www.huisdierkennis.nl/wat-is-het-hki
 eigen site
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 LAGE PRIORITEIT, klein en praktijkzwaar. Hij is HKI-secretaris en legt in het jubileumbericht uit dat het HKI nu een zelfstandig opleidingsinstituut is maar nauwe banden met Dibevo houdt (https://dibevo.nl/nieuws/70-jaar-huisdier-kennis-instituut); het HKI bestaat sinds 1953 en vierde zijn 70-jarig jubileum, dus het is een van de oudste particuliere vakopleiders in dit segment (zelfde bron); "De examens staan onder toezicht van de Commissie Toezicht Examens welke bestaat uit deelnemers van de branche- en belangenorganisaties" (https://www.huisdierkennis.nl/wat-is-het-hki), dus het toezicht op de examens ligt bij de branche, niet bij een onderwijskundige; hij is de enige met zowel een bestuurs- als een beoordelaarsrol (secretaris plus assessor) en geen docent; 5 medewerkers, vakopleiding Hondentrimmen op NLQF niveau 3
 

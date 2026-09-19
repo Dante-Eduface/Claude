@@ -20,7 +20,7 @@ https://www.litop.nl/examens/
 eigen site
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 Litop is niet alleen opleider maar ook toetsbouwer voor anderen: "Litop is een gevalideerde examenleverancier voor het mbo" met digitale gevalideerde examens voor het beroepsgerichte deel (https://www.litop.nl/examens/); hij richtte Litop op 1 juli 2011 op als eenmanszaak na 12 jaar bij VAPRO, waarvan een aantal jaren als manager, omdat hij operators volgens zijn eigen visie wilde opleiden (https://www.litop.nl/over-litop/); hij deelt de dagelijkse leiding met John Bode (zelfde pagina); Litop is zelf een erkende mbo-instelling (DUO OIE 31GU) met BBL-opleidingen procestechniek en logistiek; 24 medewerkers; Litop is hoofdsponsor van de Veerse Dag (https://veersedag.nl/nieuws/litop-nieuwe-hoofdsponsor-veerse-dag/)
 

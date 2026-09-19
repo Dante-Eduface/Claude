@@ -20,7 +20,7 @@ https://publicaties.nvao.net/prd/AV-2947_20250108_Rapport_20241021%20Definitief%
 organisatie
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 DIEP 2026-08-07: NVAO-rapport (5 SOMT-masters, 36pp, uitgelezen). Schrijfwerk KERN: elke master eindigt met masterproef = onderzoeksverslag (thesis) + CAT (schriftelijk rapporteren). "Alle masterproefonderdelen worden door twee beoordelaars beoordeeld. Bij de geschreven producten vormt de tweede beoordelaar zijn oordeel zonder kennis van het oordeel van de eerste" + intern EN extern beoordelaar (vier-ogen). | Onderwijsvisie zet feedback al centraal: sociaal constructivisme, "peer review van gestructureerde feedback", panel noemt "monitoring en feedback intensief"; High Impact Learning. | Why-now: NVAO-rapport net publiek (jan 2025), alle standaarden positief, 2 aanbevelingen ter overweging (samenwerking + BKE-certificering; BKE nu 25% docenten, Geriatrie 0%). NB BKE = docent-toetsbekwaamheid, geen tool - als context, geen causale claim. | Pool = academisch zwaargewicht (hoogleraar VU, 55 publicaties, promotie 2003); haakje op wetenschappelijk schrijven/kwaliteit onderzoeksverslag landt beter dan kale efficiency-pitch.
 

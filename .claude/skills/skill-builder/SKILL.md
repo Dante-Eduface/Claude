@@ -76,7 +76,7 @@ Claude only pulls these in when the task needs them, so the main skill loads fas
 
 ### 6. Log + tidy
 
-- Append a one-line entry to `decisions/log.md` (per CLAUDE.md format) when the skill is a meaningful addition.
+- Append a one-line entry to `Decisions/log.md` (per CLAUDE.md format) when the skill is a meaningful addition.
 - If the new skill matches an item in the CLAUDE.md "Skills to Build" backlog, point that out so Dante can cross it off.
 
 ## Quick checklist before calling it done

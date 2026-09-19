@@ -20,7 +20,7 @@ Iets menselijks en zichtbaars van hun profiel (de hond op Kens banner), meteen z
 
 ## Waar je zoekt, in deze volgorde
 
-Lees eerst het marktprofiel (`projects/shift/markets/<code>/profiel.md`): de koppen Toezichtregime, Student-signaal en Doorlooptijdnorm zeggen waar in deze markt de organisatie-haakjes zitten. Bij particuliere opleiders is de persoon meestal minder online zichtbaar dan een lector aan een hogeschool. Verwacht geen publicaties. Verwacht wel een LinkedIn-profiel dat ze zelf hebben ingericht.
+Lees eerst het marktprofiel (`GTM/ICP/shift/markets/<code>/profiel.md`): de koppen Toezichtregime, Student-signaal en Doorlooptijdnorm zeggen waar in deze markt de organisatie-haakjes zitten. Bij particuliere opleiders is de persoon meestal minder online zichtbaar dan een lector aan een hogeschool. Verwacht geen publicaties. Verwacht wel een LinkedIn-profiel dat ze zelf hebben ingericht.
 
 1. **Hun LinkedIn-profiel zelf.** Banner, headline, about-tekst, eigen posts, commentaren onder andermans posts. Dit is het rijkste en meest onderbenutte terrein, want alles daar is een bewuste keuze van die persoon. Kans op niveau 2b zit hier.
 2. **Wat ze de afgelopen 12 maanden hebben gedeeld of geschreven.** Een post over hun nieuwe curriculum, een interview, een podcast, een webinar waar ze in zaten.

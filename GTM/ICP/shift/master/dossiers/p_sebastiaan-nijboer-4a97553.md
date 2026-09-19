@@ -15,7 +15,7 @@ https://www.linkedin.com/in/sebastiaan-nijboer-4a97553/
 LinkedIn
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 LinkedIn: "Commercieel directeur | Mede-eigenaar - New Care College"; zijn remit is business development, acquisitie, concept- & productontwikkeling, commercie en marketing (linkedin.com/in/sebastiaan-nijboer-4a97553); de onderwijsinhoudelijke/toetskant ligt bij Maaike Nijboer, "Directeur Onderwijs New Care College" (linkedin.com/in/maaike-nijboer-818a5015, YouTube); NewCare College leidt verzorgende IG (niveau 3) op vanuit de gedachte dat veel talent op de arbeidsmarkt onbenut blijft
 

@@ -18,7 +18,7 @@ https://www.vvvf.nl/cms/showpage.aspx?id=6562
 webresearch
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 DIEP 2026-08-07: ICP-fit ZWAK. VAPRO toetst op praktijk/vaardigheid: theorietoets + praktijkbeoordeling per module + Proeve van Bekwaamheid (werkplekbezoek + portfolio-interview). Geen beoordeeld schrijf-volume. Onderwijsvisie letterlijk: "de werkplek is ons klaslokaal; de praktijk vormt het startpunt, we bepalen de theorie op basis van toepassingen uit jouw werkveld" (vapro.nl/opleiden) = tegenovergestelde van schrijf-/feedbackzwaar. | Niels wel de juiste laag (Directeur Opleiden, MT-lid sinds dec 2023). Bestaande arbeidskrapte-haakje is 2,5 jaar oud (VVVF 07-12-2023) en gaat over instroom/werving, niet onderwijslast. | vapro.nl = de opleider (Clay-twijfel VAPRO Recruitment opgelost: een bedrijf, opleider + recruitment).
 

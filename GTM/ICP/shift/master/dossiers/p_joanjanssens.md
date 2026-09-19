@@ -20,7 +20,7 @@ https://www.iva.nl/updates/maak-kennis-met-algemeen-directeur-joan-janssens/
 interview
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 **Haakje zoals agent 3 het opschreef**
 In het kennismakingsinterview op de eigen site: "De IVA heeft een duidelijk profiel, dat is heel waardevol." en "Het meest bijzondere aan de IVA vind ik mijn collega's." Kwam uit Hanzehogeschool Groningen en was rector van Canisius College Nijmegen

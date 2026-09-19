@@ -23,7 +23,7 @@ https://www.landvanrouw.nl/over-ons/wortels-en-groei/
 organisatie (over-ons) + eigen praktijksite
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 DEGRADE 2026-08-07 naar Twijfel/niveau 1: geen beoordeeld geschreven eindwerk op de site (bevestigd), toetsing is persoonlijke-ontwikkelings-/supervisiegericht = zwakke ICP-fit voor feedback-op-schrijfwerk. Why-now (persoon) blijft echt: eind dec 2024 mede-eigenaar geworden van Land van Rouw (~1,5 jr in de rol) en zelf oud-cursist van de opleiding die hij nu runt; carriereswitch uit 20 jr voortgezet onderwijs (docent drama, opleidingsdirecteur Olympus College). FEIT = overname dec 2024 (landvanrouw.nl/over-ons/wortels-en-groei), oud-cursist (samenzonder.nl/over-ons).
 

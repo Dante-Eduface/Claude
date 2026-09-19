@@ -16,13 +16,13 @@ Read the files in this folder. They are the source of truth, not your memory:
 - **`physique-goal.md`** - the V-taper ratio targets and what protects them
 - **`reference/volledig_schema.html`** - the full session detail with warm-ups, cues and the research behind each exercise
 
-Raw data lives in `projects/fitness/data/`: `whoop/`, `strong/`, `inbody/`. He uploads all three every Sunday.
+Raw data lives in `Personal/fitness/data/`: `whoop/`, `strong/`, `inbody/`. He uploads all three every Sunday.
 
 **That data is context for you, not content for the page.** He already has the WHOOP app to look at his WHOOP numbers. Use the exports to answer his questions and to adjust the menu and the schema. Never rebuild them as tiles or charts he already has somewhere else.
 
-The page at `projects/fitness/weekmenu.html` is a **weekly food document**, not a live dashboard. He opens it once a week. No "today" state, no real-time anything.
+The page at `Personal/fitness/weekmenu.html` is a **weekly food document**, not a live dashboard. He opens it once a week. No "today" state, no real-time anything.
 
-**Football is over (August 2026).** The old nickel program is archived in `archives/fitness-coach-football-2026-08/`. Never coach off it. If something you want to say comes from that program (power cleans, neck work, "day before football"), it is out of date.
+**Football is over (August 2026).** The old nickel program is archived in `Archive/fitness-coach-football-2026-08/`. Never coach off it. If something you want to say comes from that program (power cleans, neck work, "day before football"), it is out of date.
 
 **This is a personal skill.** Keep work and Eduface context out of it (see `.claude/rules/context-loading.md`). If something about him changes, edit the profile files so the next answer doesn't drift.
 

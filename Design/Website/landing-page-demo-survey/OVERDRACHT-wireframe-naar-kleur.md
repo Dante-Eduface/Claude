@@ -6,7 +6,7 @@ Geschreven 15-09-2026 voor de sessie die de pijn-landingspagina bouwt. Alles wat
 
 ## 1. Waar het proces staat
 
-De drie poorten uit `references/design-system/core/proces.md` zijn leidend.
+De drie poorten uit `Design/Design system/core/proces.md` zijn leidend.
 
 | Poort | Status |
 |---|---|
@@ -68,7 +68,7 @@ Volledig in `research/proof.md`. De kern:
 
 ## 5. Claim-regels (hard)
 
-`references/eduface-product.md` is de enige bron voor productclaims. Staat het er niet, dan beweer je het niet.
+`Platform/product.md` is de enige bron voor productclaims. Staat het er niet, dan beweer je het niet.
 
 **Mag wel:**
 - 94% accuraatheid met de dragers erbij: 435 opdrachten, 13 markers, 6 vakken, Bath Spa University, juni 2026. 98% bij markers die het model hadden afgestemd.
@@ -89,7 +89,7 @@ Volledig in `research/proof.md`. De kern:
 
 ## 6. De pijn
 
-Bron: `projects/pijn-oplossing/HANDOFF-landingspagina.md`, 50 goedgekeurde uitspraken uit Close.
+Bron: `GTM/ICP/pijn-oplossing/HANDOFF-landingspagina.md`, 50 goedgekeurde uitspraken uit Close.
 
 Eén pijn met drie gezichten:
 1. **De docent voelt tijd.** Maar zegt nooit "minder werk". Zegt: "ik kom niet toe aan de feedback die ik wil geven."
@@ -104,8 +104,8 @@ Why-now per segment: accreditatie bij particulier, krimp bij NL hoger onderwijs,
 
 ## 7. Valkuilen die tijd kostten
 
-- **`python3 -m http.server` faalt op de Drive-map** met PermissionError. Gebruik node: kopie van `projects/website-building/serve.mjs`, root via `fileURLToPath(new URL(".", import.meta.url))`. Met `.pathname` worden spaties `%20` en krijg je overal 404.
-- **Het in-app browserpaneel geeft lege screenshots zodra het verborgen is.** Gebruik puppeteer uit `projects/website-building/node_modules`, script tijdelijk in die map zetten zodat de bare import resolvet.
+- **`python3 -m http.server` faalt op de Drive-map** met PermissionError. Gebruik node: kopie van `Design/Website/website-building/serve.mjs`, root via `fileURLToPath(new URL(".", import.meta.url))`. Met `.pathname` worden spaties `%20` en krijg je overal 404.
+- **Het in-app browserpaneel geeft lege screenshots zodra het verborgen is.** Gebruik puppeteer uit `Design/Website/website-building/node_modules`, script tijdelijk in die map zetten zodat de bare import resolvet.
 - **Scroll de pagina helemaal door voor je screenshot maakt**, anders staan alle in-view reveals leeg.
 - **Let op CSS-klassebotsingen.** Wij hadden `.cta` voor zowel de nav-knop als het eind-CTA-blok; de nav-knop werd een enorm donker vlak. Geef nav-elementen een eigen naam.
 - **Open HTML altijd zelf in Chrome** met `open -a "Google Chrome" <pad>`. Dubbelklikken opent bij Dante een code-editor.
@@ -133,4 +133,4 @@ Referentie die Dante mooi vindt: https://habitline-wbs.framer.website/
 - 94% staat nu zowel als kaart in de hero als hoofdgetal in het bewijsblok. Eén van de twee moet iets anders dragen.
 - Hero en bewijsblok formuleren hetzelfde verschillend: "our proposed grade against the marker's" tegenover "before/after the lecturer instructs it". Kies één.
 - De kwalificatievragen vóór de agenda zijn geparkeerd, niet geschrapt.
-- Alles gaat uiteindelijk naar Framer. Bouw binnen dat model: stacks en gap, nooit margins op children, geen vaste hoogtes, minmax-grids, framer-motion als enige animatielib. Zie `references/design-system/web/framer.md`.
+- Alles gaat uiteindelijk naar Framer. Bouw binnen dat model: stacks en gap, nooit margins op children, geen vaste hoogtes, minmax-grids, framer-motion als enige animatielib. Zie `Design/Design system/web/framer.md`.

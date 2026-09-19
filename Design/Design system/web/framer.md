@@ -4,7 +4,7 @@
 
 Framer kan geen HTML/CSS/JS importeren, alles wordt nagebouwd als native nodes. Gaat iets naar Framer, dan moet het binnen dit model passen, anders is de overzetting een herontwerp in plaats van nabouwen.
 
-Stond eerder alleen in memory en in `projects/website-building/FRAMER-BRIEF.md`. Hier vastgelegd zodat het meekomt met het design system.
+Stond eerder alleen in memory en in `Design/Website/website-building/FRAMER-BRIEF.md`. Hier vastgelegd zodat het meekomt met het design system.
 
 ## Layout
 - Alleen flex-stacks en grids. Absolute positionering alleen bij bewuste overlap, en dan beide assen pinnen. In Framer werkt left/top niet op `position: relative`.

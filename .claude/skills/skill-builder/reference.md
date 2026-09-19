@@ -70,7 +70,7 @@ A SKILL.md that runs past ~150–200 lines is usually a sign detail should move 
 ## Linking to other skills and context
 
 - Skills can lean on other skills. `hot-lead-outreach` defers message voice to `cro`. State the dependency in the body ("read that skill's logic when drafting").
-- Skills can point at repo context: handbooks in `references/`, project READMEs in `projects/`, context files in `context/`. Reference them by path so the skill stays the single source of the workflow, not a copy of the data.
+- Skills can point at repo context: handbooks in `GTM/Knowledge/`, project READMEs in `GTM/` en `Design/`, context files in `Context/`. Reference them by path so the skill stays the single source of the workflow, not a copy of the data.
 
 ## Testing a skill
 

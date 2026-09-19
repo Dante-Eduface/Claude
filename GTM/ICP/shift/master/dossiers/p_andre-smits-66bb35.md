@@ -17,7 +17,7 @@ https://www.bob.nl/opleidingen/vastgoed-academy/vastgoedbeheer/asset-en-onderhou
 organisatie
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 **Haakje zoals agent 3 het opschreef**
 De opleiding Asset- en Onderhoudsmanager Vastgoed sluit af met een tweedelig examen onder de BOB-KOB-examencommissie: een kennistoets en een praktijkopdracht die de kandidaat uitwerkt in een adviesrapport en daarna mondeling toelicht en verdedigt. | LET OP: TEGENGESPROKEN: het examen is tweedelig (ook een kennistoets), en beoordeling ligt bij de examencommissie, niet bij docenten. De deeltijd-praktijkdocent-claim kwam van een andere pagina en ging over Bob Smits, niet Andre.

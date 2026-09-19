@@ -7,7 +7,7 @@ Plak dit als geheel. Het is zelfstandig leesbaar, je hoeft er geen ander gesprek
 
 ---
 
-Je werkt aan `projects/app-homepage-redesign/home-redesign.html`, de home page voor docenten die **al** cursussen en opdrachten hebben.
+Je werkt aan `Design/Website/app-homepage-redesign/home-redesign.html`, de home page voor docenten die **al** cursussen en opdrachten hebben.
 
 **Scope: Enterprise.** We ontwerpen nu voor instellingen die accounts uitzetten bij hun docenten, niet voor zelf-aanmeldende gebruikers. Alles wat specifiek is voor product-led growth valt buiten deze opdracht. De kolommen van de cursusrij zijn nu vastgesteld. Hieronder staat wat je bouwt, waarom, en wat je expliciet niet doet.
 
@@ -25,7 +25,7 @@ Drie metriekkolommen, niet vier. Vier voelt druk en de vierde verdiende zijn ple
 
 De toets per kolom was: verandert hij welke cursus ik nú open, is hij waar op cursusniveau of alleen afgeleid, heeft hij een fatsoenlijke lege staat, is hij berekenbaar, en doet hij hetzelfde werk als zijn buurman.
 
-- **Oldest waiting** is het hoofdsignaal. Eduface verkoopt snelle formatieve feedback. De pijn is bij lange trajecten uitval en bij korte de werkdruk van beoordelaars, en allebei gaan over de wachttijd, niet over de planningskalender. Zie `references/eduface-product.md`. Een kolom die iets anders meet dan de belofte van het product, meet het verkeerde ding.
+- **Oldest waiting** is het hoofdsignaal. Eduface verkoopt snelle formatieve feedback. De pijn is bij lange trajecten uitval en bij korte de werkdruk van beoordelaars, en allebei gaan over de wachttijd, niet over de planningskalender. Zie `Platform/product.md`. Een kolom die iets anders meet dan de belofte van het product, meet het verkeerde ding.
 - **To grade** staat ervóór, want volume en urgentie zijn niet inwisselbaar. Twaalf dagen met één inzending is een ander karwei dan twaalf dagen met veertig. Je hebt de poort nodig voor de kwalificatie betekenis krijgt.
 - **Last activity** blijft, want die is op cursusniveau echt waar. Wel het label preciezer maken: `Last activity` is dubbelzinnig (activiteit van de student of van mij). Maak er `Last submission` van, of zet er een tooltip bij. In onze eigen usability-test scoorde het criterium "uitleg bij instellingen en keuzes" een 3 met precies die klacht: je snapt de term, niet het effect in de tool.
 - **Assignments** wordt geen kolom. Het aantal opdrachten verandert bijna nooit welke cursus je opent, dus het is context en geen signaal. Het staat op de tweede regel onder de naam.
@@ -71,7 +71,7 @@ Een cursus heeft geen deadline, een opdracht wel.
 
 ## Opmaak, en dit gaat bijna altijd mis
 
-Uit `references/design-system/core/compositie.md` en `core/regels.md`:
+Uit `Design/Design system/core/compositie.md` en `core/regels.md`:
 
 - **Getalkolommen rechts uitlijnen, inclusief de kolomkop.** Dit is letterlijk de regel waarvan in ons systeem staat dat hij bijna altijd fout gaat.
 - **Geen nepprecisie.** `9 days`, niet `9.2 days`. Onder een dag wordt `today`.

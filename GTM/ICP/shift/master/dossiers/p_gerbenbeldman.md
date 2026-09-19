@@ -26,7 +26,7 @@ Organisatie-website (homepage onderwijsvisie + cursuspagina)
 2024-12-15
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 Onderwijsvisie draait om enthousiasme, niet om feedback of toetsing: "Tegelijkertijd met het leren & ontwikkelen willen we je vooral enthousiasmeren. Uit onderzoek komt naar voren dat enthousiaste therapeuten betere therapeuten zijn" (homepage, beldmanopleidingen.nl); Toetsing summier omschreven: "Theoretische kennis en vaardigheden worden gedurende de cursus getoetst" - site noemt niet wie beoordeelt, hoeveel opdrachten of hoe feedback wordt gegeven (basiscursus-CGT-pagina); Leeractiviteiten zijn vooral praktisch/mondeling, geen schrijfwerk als kern: "literatuurstudie en -besprekingen", "individuele online-opdrachten", "oefenen van vaardigheden in rollenspel", "praktijkopdrachten", "casuistiek bespreking" (basiscursus-CGT-pagina); Certificaat na "voldoende aanwezig zijn geweest en de cursus met goed gevolg hebben afgerond"; afwezigheid compenseerbaar met "een vervangende opdracht" (basiscursus-CGT-pagina); Klein bureau, eigenaar tekent zelf af: Gerben Beldman "werkzaam als klinisch psycholoog en supervisor VGCT", werkt "samen met een aantal zeer gewaardeerde collega's" (homepage); Basiscursus CGT: 100 uur, 10 cursusdagen + 9 online-modules, VGCt-geaccrediteerd (targetlijst/basiscursus-pagina)
 

@@ -23,7 +23,7 @@ eigen site (examenreglement)
 2021-06-07
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 Hij noemt zichzelf "Peoplebuilder" en zegt dat een deel van de personeelsproblemen in de bouw, vastgoed en installatie op te lossen is door het kennis- en vaardigheidsniveau van medewerkers te verhogen (https://nieuws.kpe.nl/2021/06/07/wijlimburg-in-gesprek-met-ron-koenen-2/); hij stuurt vier labels tegelijk aan: KPE Bouw & Infra, KPE HTI, KPE Vastgoed en KPE Lab (https://www.kpe.nl/contact); HTI verzorgt "sinds 1939" deeltijd technische opleidingen (https://www.hti-opleidingen.nl/hti/organisatie); HTI heeft een eigen examenreglement per opleiding met de eis "voor modulen van hoofdvakken tenminste een 5,5 te behalen", een eigen HTI-diploma en een cijferlijst die "op het digitale leerplatform van het HTI gepubliceerd" wordt (https://www.hti-opleidingen.nl/hti/examenreglementen); HTI zelf is klein (21 man) maar de moeder KPE Groep telt 48 man in Amsterdam en Maastricht
 

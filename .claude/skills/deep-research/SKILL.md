@@ -69,7 +69,7 @@ De stand ligt niet vast als je eenmaal loopt.
 
 ```
 1. HERFORMULEER  wat is de echte vraag, en waarvoor gebruikt Dante het antwoord
-2. INTERN EERST  Close, Gmail, Drive, en de repo (projects/, references/, decisions/log.md)
+2. INTERN EERST  Close, Gmail, Drive, en de repo (GTM/, Platform/, Design/, Decisions/log.md)
 3. VERKEN        2 tot 4 eigen searches, staat het antwoord al ergens compleet? zo ja: stop hier
 4. SPLITS        3 tot 8 deelvragen die elkaar niet overlappen
 5. FAN-OUT       alle subagents in EEN bericht, parallel, model per deelvraag
@@ -81,7 +81,7 @@ De stand ligt niet vast als je eenmaal loopt.
 ### Stap 2: intern eerst
 
 Voor je het web opgaat, kijk wat er al is. Dit wordt structureel overgeslagen en dat kost dubbel werk. Check:
-- `projects/` en `references/` in deze repo, en `decisions/log.md`
+- `GTM/`, `Platform/` en `Design/` in deze repo, en `Decisions/log.md`
 - Close op de betrokken accounts
 - Gmail en Drive op het onderwerp
 
@@ -138,7 +138,7 @@ Sla deze over als de fan-out eensgezind terugkwam zonder tegenspraak, dat scheel
 - **Bronnenlijst** met links en jaartallen, gesplitst primair (originele documenten, cijfers van de bron zelf) / secundair (journalistiek, analyses) / tertiair (blogs, vendorcontent)
 - **Gaten**: wat je niet hard kreeg, en wat er nodig is om het wel hard te krijgen
 
-Schrijf het weg naar `projects/<project>/research/<onderwerp>.md` als het bij een lopend project hoort, anders `references/research/<onderwerp>.md`. Een oplevering die alleen in de chat staat, bestaat na afloop niet meer.
+Schrijf het weg naar `<map van het project>/research/<onderwerp>.md` als het bij een lopend project hoort, anders `Platform/Onderzoek/<onderwerp>.md`. Een oplevering die alleen in de chat staat, bestaat na afloop niet meer.
 
 Artifact alleen als Dante er expliciet om vraagt (`deliver-as-artifact`).
 

@@ -20,7 +20,7 @@ https://fsdc.nl/examen-fiscaal-adviseur/
 organisatie
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 Opleiding bestaat uit zeven modules, elk afgesloten met een schriftelijk examen van 2,5 uur (10.00-12.30): 'Er wordt geen scriptie verlangd' (fsdc.nl/examen-fiscaal-adviseur); 7 examens totaal, georganiseerd in samenwerking met de deelnemende hogescholen; FSDC-site noemt geen eigenaren of docenten, enige naam is studieadviseur Henk Guiljam (fsdc.nl/contact, fsdc.nl/over-fsdc); Ad Wijne niet te verifiëren op FSDC-bronnen en LinkedIn gaf HTTP 999 (loginmuur), dus werkgever/rol niet bevestigd
 

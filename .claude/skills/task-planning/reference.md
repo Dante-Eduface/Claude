@@ -31,7 +31,7 @@ Ask, in order:
 
 - **Daily:** `find-tasks-by-date` with `startDate: "today"`, `overdueOption: "include-overdue"`, `daysCount: 1`. Set `responsibleUser` to Dante (get it from `user-info`) so collaborators' tasks don't leak in, or leave the default `unassignedOrMe`.
 - **Weekly:** same call with `daysCount: 7`. Also glance at last week with `find-completed-tasks` to see what shipped.
-- **Monthly:** `daysCount: 30` for what's ahead, plus `find-completed-tasks` and `get-productivity-stats` / `get-project-activity-stats` for the look-back. Compare against `context/goals.md`.
+- **Monthly:** `daysCount: 30` for what's ahead, plus `find-completed-tasks` and `get-productivity-stats` / `get-project-activity-stats` for the look-back. Compare against `Context/goals.md`.
 - If a project has many tasks, use `get-overview` with a `projectId` to see them grouped by section.
 
 ## Output templates
@@ -89,7 +89,7 @@ Gaten + risico's vs de targets
 ```
 **Maand — [maand]**
 
-Tegen de kwartaaldoelen (context/goals.md):
+Tegen de kwartaaldoelen (Context/goals.md):
 - [doel] → [status: op koers / loopt achter] — [waarom]
 - ...
 

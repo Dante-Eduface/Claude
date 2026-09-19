@@ -20,7 +20,7 @@ https://www.vandoenacademie.nl/mbo-certificaten/
 eigen site
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 Zij is niet alleen eigenaar maar staat ook zelf voor de klas: op de eigen site is zij directeur, programmaontwerper én trainer/docent zorg (https://www.vandoenacademie.nl/vandoen/trainers-en-docenten/); vanDoen biedt "de mogelijkheid om de opleiding Verzorgende IG in 18 maanden af te ronden" via een modulaire leerroute van zes modules met erkende mbo-certificaten niveau 2-3 (https://www.vandoenacademie.nl/mbo-certificaten/); zes losse modules met elk een erkend certificaat betekent zes afsluitmomenten per student in plaats van één; vanDoen is naast erkende mbo-opleider ook adviseur en trainer voor zorgorganisaties (managementdevelopment, communicatietraining, teamcoaching), dus opleiden en advies lopen door elkaar; 13 medewerkers; bewust niet Adri Westmaas benaderd, die is voorzitter examencommissie
 

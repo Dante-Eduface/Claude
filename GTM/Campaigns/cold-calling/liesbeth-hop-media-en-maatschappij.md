@@ -304,8 +304,8 @@ _Niet afdoen alsof zij dus al AI-volwassen zijn. Aanbod is geen competentie. Doo
 - Inlogpagina leerplatform (Joomla) — https://www.mediaenmaatschappij.nl/academie/inloggen
 - nomc.nl, opleidingssite MediaCoach — https://www.nomc.nl/
 - Close: lead `lead_fyOM9JHpTNB3BdAD0jw8KmWGqhHZTgA9rBNTefKHIL6`, geen activiteiten
-- Interne pijplijn: `projects/shift/master/dossiers/p_liesbeth-hop-b111905.md` en `master/people.csv`
-- `references/pricing/prijsmodel-nl-opleiding-26-27.md`
+- Interne pijplijn: `GTM/ICP/shift/master/dossiers/p_liesbeth-hop-b111905.md` en `master/people.csv`
+- `Archive/prijsmodel-nl-opleiding-26-27.md`
 
 **Secundair**
 - Websearch-snippets LinkedIn-headline "Nationale Leerlijn Fanfareorkest" — https://nl.linkedin.com/in/liesbeth-hop-b111905

@@ -48,7 +48,7 @@ Onder de drempel gaat een opleider naar `icp_status=te_klein`, niet naar `afgeva
 
 Je rekent dit niet zelf uit. Vul de velden en vraag `pipeline.py omvang --toets org_x` om het oordeel: `groot_genoeg`, `te_klein` of `onbekend`.
 
-**Waar de drempel vandaan komt** (zie `references/pricing/prijsmodel-nl-opleiding-26-27.md`): 7.500 euro toolfee per opleiding plus een infrastructuurstaffel op studentplaatsen **per opleiding**, niet op het instellingstotaal.
+**Waar de drempel vandaan komt** (zie `Archive/prijsmodel-nl-opleiding-26-27.md`): 7.500 euro toolfee per opleiding plus een infrastructuurstaffel op studentplaatsen **per opleiding**, niet op het instellingstotaal.
 
 | Staffel | Studentplaatsen per opleiding | Jaarfee |
 |---|---|---|

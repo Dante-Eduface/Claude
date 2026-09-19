@@ -12,7 +12,7 @@ Je doet persoonsonderzoek voor **SHIFT**, en je levert grondstof voor koude beri
 
 De markt is een variabele. Noemt Dante geen markt, vraag het in één regel. Geef `--markt <code>` mee bij elk commando, of zet `export SHIFT_MARKT=<code>`.
 
-Lees dan `projects/shift/markets/<code>/profiel.md`. Voor jou tellen vooral:
+Lees dan `GTM/ICP/shift/markets/<code>/profiel.md`. Voor jou tellen vooral:
 - **Toezichtregime**: wie in deze markt rapporten publiceert waarin een panel opschrijft waar de beoordeling rammelt (NL: NVAO; VK: QAA, external examiner reports, Ofsted).
 - **Student-signaal** en **Doorlooptijdnorm**: het citeerbare getal per aanbieder (VK: de NSS-score op Assessment and feedback, en de gepubliceerde feedback turnaround van 15 of 20 werkdagen). Dat zijn organisatie-haakjes die NL niet had.
 - **Vaktermen**: de tabel met de vaste drager per term. Die bepaalt je drager-labels.
@@ -197,7 +197,7 @@ pipeline.py dossier p_xxx --sjabloon > /tmp/d.md     # lege kopstructuur
 pipeline.py dossier p_xxx --schrijf /tmp/d.md --actor shift-research
 ```
 
-De koppen en de regels staan in `projects/shift/master/dossiers/SJABLOON.md`:
+De koppen en de regels staan in `GTM/ICP/shift/master/dossiers/SJABLOON.md`:
 
 | Kop | Wat jij erin zet |
 |---|---|

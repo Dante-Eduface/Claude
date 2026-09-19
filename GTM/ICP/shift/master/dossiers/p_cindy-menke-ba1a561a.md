@@ -20,7 +20,7 @@ https://www.flairscholing.nl/doktersassistent/
 eigen site + RTV Noord-interview
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 DIEP (opus) 2026-08-07: Rollende instroom - "Na je definitieve aanmelding start je direct... Je hoeft niet te wachten op het eerstvolgende klassikale startmoment" - gecombineerd met eigen belofte "duidelijke structuur, heldere feedback en coaching waar nodig". Open vraag: hoe houd je die feedback op peil per student als iedereen op een eigen moment start? Cindy is de onbetwiste enige ingang (klachtenregeling noemt haar expliciet "bevoegd gezag"). Eigen citaten (RTV Noord 27-03-2023): "Ik dacht schouders eronder, ik ga opleiden" / "We moeten aan de bak, want de pijn is nu" (over assistententekort, niet onderwijs - 3 jaar oud). Oud-cursist review (Springest 2018): "Je moest je opdrachten maken en dan moest je het zelf controleren dmv quizlet" - raakt precies Eduface-terrein maar is oud signaal. LinkedIn persoonlijk profiel niet leesbaar (999); functietitel/jaartal niet via LinkedIn geverifieerd.
 

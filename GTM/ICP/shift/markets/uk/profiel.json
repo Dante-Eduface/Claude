@@ -139,7 +139,7 @@
   ],
   "lemlist_campagne_id": "",
   "_voorlopig": "prijsmodel is een omrekening van NL, niet bevestigd door Dante (10-09-2026)",
-  "_bron": "staffel = NL-staffel maal 0,85, afgerond (bron references/pricing/prijsmodel-nl-opleiding-26-27.md); drempel_jaarwaarde 8500 GBP; titel_rang samengesteld 10-09-2026 uit UK-functietitels bij private providers en pathway colleges, onderwijstak boven bedrijfsvoering, registrar en quality hoger dan in NL omdat zij in het VK eigenaar zijn van de assessment regulations; klantnamen leeg tot Dante beslist",
+  "_bron": "staffel = NL-staffel maal 0,85, afgerond (bron GTM/Pricing/prijsmodel-nl-opleiding-26-27.md); drempel_jaarwaarde 8500 GBP; titel_rang samengesteld 10-09-2026 uit UK-functietitels bij private providers en pathway colleges, onderwijstak boven bedrijfsvoering, registrar en quality hoger dan in NL omdat zij in het VK eigenaar zijn van de assessment regulations; klantnamen leeg tot Dante beslist",
   "_uitleg": {
     "valuta": "een van EUR/GBP/USD",
     "taal": "taalcode van de berichten, bijv. en-GB of en-US",

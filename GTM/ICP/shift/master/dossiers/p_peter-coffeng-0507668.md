@@ -20,7 +20,7 @@ https://edufit.nl/peter-coffeng-webinar-preventiemedewerker/
 organisatie
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 **Haakje zoals agent 3 het opschreef**
 Bedrijfsarts die bij Edufit een webinar over de preventiemedewerker verzorgde en spreker was op de NVAB BG-dagen | LET OP: Ook docent bij Over!academie en NSPOH, dus niet exclusief aan Edufit verbonden

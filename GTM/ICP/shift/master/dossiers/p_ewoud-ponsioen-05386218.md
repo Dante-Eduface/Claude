@@ -20,7 +20,7 @@ https://www.ponsioen.biz/mbo/
 eigen site
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 Zijn LinkedIn-headline is geen functietitel maar een keurmerk: "Erkend MBO-opleider" (https://nl.linkedin.com/in/ewoud-ponsioen-05386218), dat is een bewuste keuze van een eigenaar van een club van 5 man; POA werkt in klassen van maximaal tien mensen en houdt het bewust kleinschalig (https://www.ponsioen.biz/mbo/); POA is erkend voor 6 mbo-kwalificaties plus een mbo-certificaat in laagspanning en gas-, water- en warmtedistributie, en "Het mbo-diploma en -certificaat dat POA uitreikt (...) wordt erkend door de overheid en door de branche" (zelfde pagina); hij gebruikt zijn eigen naam als merk en als mailadres (ewoud@ponsioen.biz); geen onderwijsvisie of visiestuk online gevonden
 

@@ -1,6 +1,6 @@
 # Team Coordination
 
-Who to involve, and who to protect. Details in @context/team.md.
+Who to involve, and who to protect. Details in @Context/team.md.
 
 ## Default
 - **Jeroen (CEO)** is Dante's counterpart for everything outside the core product build. Loop in freely on strategy, sales, pilots, fundraising-facing work.

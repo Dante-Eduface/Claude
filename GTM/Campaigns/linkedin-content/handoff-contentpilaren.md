@@ -72,4 +72,4 @@ Mijn account heeft nog geen actieve, reagerende following. De "stel een vraag, l
 1. Lees de stand (sectie 5 of de repo-files).
 2. Stel me 2-3 scherpe vragen als iets echt onduidelijk is, anders gewoon voorstellen doen.
 3. Lever de deliverables uit sectie 6.
-4. Als iets terug moet naar de repo: het hoort in het Dante-blok van `.claude/skills/linkedin-content/content-pillars.md`, en een meaningful besluit gaat in `decisions/log.md`.
+4. Als iets terug moet naar de repo: het hoort in het Dante-blok van `.claude/skills/linkedin-content/content-pillars.md`, en een meaningful besluit gaat in `Decisions/log.md`.

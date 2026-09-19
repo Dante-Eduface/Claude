@@ -20,7 +20,7 @@ https://ovd-opleidingen.nl/opleiding/mbo-2-verkoper-supermarkt/
 eigen site (opleidingspagina)
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 Haar LinkedIn-titel is preciezer dan onze lijst: "Directeur Sales & Operations", niet algemeen directeur (https://nl.linkedin.com/in/silvia-van-echtelt-a5a65539); zij schrijft onder haar eigen naam blogs op de bedrijfssite, waaronder "Silvia's Blog #2: Bewust van mijn (werk)geluk" (https://www.ovd-opleidingen.nl/silvias-blog-2-bewust-van-mijn-werkgeluk/), ongebruikelijk voor een directeur in dit segment; OVD zegt over de eigen toetsing: "Elke kerntaak wordt afgesloten met een toets of een werkstuk" en "Het aantal examens wordt benoemd in het Examenreglement" (https://ovd-opleidingen.nl/opleiding/mbo-2-verkoper-supermarkt/); OVD verlengde de samenwerking met SVO vakopleiding food voor het ontwikkelen en uitvoeren van mbo-trajecten (https://ovd-opleidingen.nl/samenwerking-opnieuw-verlengd/); OVD hoort bij de Gilde-BT groep, naast Response Instituut, Mentaal Vitaal en UQ Learn; 25 medewerkers in Ede
 

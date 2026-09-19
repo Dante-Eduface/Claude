@@ -20,7 +20,7 @@ https://www.auxiliumacademy.nl/
 eigen site
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 Hij heeft zelf beide diploma's die de academie afgeeft: hij is gecertificeerd Mantelzorgmakelaar én Onafhankelijk Cliëntondersteuner (https://www.auxiliumacademy.nl/); hij zette de organisatienaam in zijn eigen LinkedIn-URL (linkedin.com/in/arjendehaanauxiliumacademy), een bewuste keuze; hij post zelf over accreditatie: "Auxilium Academy is opnieuw geaccrediteerd" (https://nl.linkedin.com/posts/arjendehaanauxiliumacademy_auxilium-academy-is-opnieuw-geaccrediteerd-activity-7417857895679160321-7L33); hij blijft na afloop van de opleiding beschikbaar voor advies en vragen van oud-cursisten (auxiliumacademy.nl), dus de docentrol stopt niet bij het diploma; de post-hbo opleiding duurt tien maanden en werkt met beoordeelde opdrachten: "In 2025/2026 heb ik via de woensdaggroep de opleiding tot mantelzorgmakelaar gevolgd (...) Na tien maanden" en "de opbouw van de opdrachten en het contact met docenten" (zelfde site); Auxilium Academy voert het NRTO-keurmerk; 13 medewerkers
 

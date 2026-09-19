@@ -20,7 +20,7 @@ https://www.nha.nl/
 eigen site
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 NHA noemt zichzelf op de eigen homepage: "Als een van de grootste opleiders van Nederland bieden wij ruim 700 opleidingen en cursussen" (https://www.nha.nl/); zij combineert twee petten in een functietitel, Hoofd Onderwijsbureau EN Manager Kwaliteit, terwijl NHA 353 medewerkers heeft (LinkedIn-profiel + contactenlijst); NHA belooft op de site "Persoonlijke begeleiding van vakdocenten uit de praktijk" bij een thuisstudiemodel waarin de docent ingestuurd huiswerk nakijkt en met een cijfer beoordeelt (https://www.nha.nl/, cursistreviews https://www.cursusreviews.nl/reviews/nha/); geen onderwijsvisie of visiestuk online vindbaar, ook geen NVAO-rapport (NHA is geen NVAO-instelling); vestiging Panningen, Limburg
 

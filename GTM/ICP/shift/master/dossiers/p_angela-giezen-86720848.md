@@ -20,7 +20,7 @@ https://www.linkedin.com/in/angela-giezen-86720848/
 post
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 **Haakje zoals agent 3 het opschreef**
 Deelde in maart 2026 op LinkedIn dat ze net is begonnen als onderwijsmanager bij TMO, na 6,5 jaar bij haar vorige werkgever | LET OP: Kort in de rol

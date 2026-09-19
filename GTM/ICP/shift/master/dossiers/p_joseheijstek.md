@@ -20,7 +20,7 @@ https://www.uconsultancy.nl/congressen/nationaal-congres-wondzorg-dermatologie/
 organisatie
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 **Haakje zoals agent 3 het opschreef**
 Verzorgt op het Nationaal Congres Wondzorg en Dermatologie 2026 de sessie Ulcus Cruris: Pressure On or Pressure Off plus de praktijkworkshop zwachtelen | LET OP: Zij lijkt congresspreker, niet de beslisser. Directeur en eigenaar van U-Consultancy is Carla Uppelschoten, waarschijnlijk de juiste ingang

@@ -17,7 +17,7 @@ https://scobe.nl/docent/nico-harkes
 teampagina
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 **Haakje zoals agent 3 het opschreef**
 Op zijn docentprofiel: De woningmarkt en verduurzaming vertragen omdat er geen geld zou zijn. Als directeur van Scobe en NEXT Vastgoed Consultancy bv maak ik mij daar druk om en wil deze bal oppakken | LET OP: LinkedIn noemt Senior programmamanager, eigen site Directeur - Programmamanager

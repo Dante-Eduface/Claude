@@ -4,7 +4,7 @@ Alles van de SHIFT-opleiderspijplijn staat in deze map, voor alle markten tegeli
 
 ## De markt is een variabele (sinds 10-09-2026)
 
-Eén master, één `pipeline.py`, en per markt een profiel in `projects/shift/markets/<code>/`:
+Eén master, één `pipeline.py`, en per markt een profiel in `GTM/ICP/shift/markets/<code>/`:
 
 - `profiel.json`: de harde waarden waar het script mee rekent (valuta, staffel, drempel, titelrangorde, kanaal, taal, klantnamen, Lemlist-campagne). Valuta is alleen EUR, GBP of USD.
 - `profiel.md`: veertien koppen met de kennis die de agents lezen (registers, toezicht, poort-0-afvallers, vocabulaire, student-signaal, doorlooptijdnorm, vaktermen, programmaduur, prijsmodel, titelrangorde, taal, klantnamen, kanaal, seizoen).
@@ -44,7 +44,7 @@ pipeline.py dossier <id> --schrijf -        van stdin, gaat door het journaal
 
 De regels en de koppen staan in `dossiers/SJABLOON.md`. De belangrijkste: **elk citaat draagt zijn drager** (student, beoordelaar, organisatie of panel), want daar ging het bij THIM mis. `doctor` valt op een citaat zonder drager.
 
-Het oude `projects/targetlijst-nl/dossiers.md` blijft staan als rondelogboek. De organisatiedossiers die eruit te halen waren staan nu in `dossiers/orgs/`; wat erin achterbleef zijn procesnotities en afgevallen organisaties zonder record.
+Het oude `GTM/ICP/shift/master/dossiers/` blijft staan als rondelogboek. De organisatiedossiers die eruit te halen waren staan nu in `dossiers/orgs/`; wat erin achterbleef zijn procesnotities en afgevallen organisaties zonder record.
 
 ## Je hoeft geen veldnamen te onthouden
 

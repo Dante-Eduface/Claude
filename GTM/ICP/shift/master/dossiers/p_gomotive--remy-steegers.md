@@ -17,7 +17,7 @@ https://rematiptopholdingbenelux.nl/onze-opleider-van-technici-binnen-de-mobilit
 organisatie
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 **Haakje zoals agent 3 het opschreef**
 Begon in 2020 als technisch trainer bij GOmotive en groeide door naar directeur, nam de taken over van oprichter Johan de Gooijer | LET OP: GOmotive is sinds 2022 onderdeel van REMA TIP TOP Holding Benelux via Explora

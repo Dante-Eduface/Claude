@@ -16,7 +16,7 @@ eigen nieuwsartikel
 2024-06-27
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 DIEP 2026-08-12 BESTE ICP-FIT VAN DE HELE BATCH: 'De beroepsopleiding kent geen examen', alles hangt op schrijfopdrachten die door circa 180 docenten worden nagekeken, over 325 cursussen en 6.271 deelnemers per jaar; SOB kondigde in juni 2024 aan plagiaatsoftware te gaan gebruiken tegen coproducties en plagiaat en vroeg docenten per cursus nieuwe opdrachten te maken (nob.net/actueel/vijf-vragen-aan-stan-stevens, 27-06-2024); LET OP: dat citaat is van Stan Stevens, bestuursvoorzitter SOB, niet van haarzelf - het is haar dossier maar niet haar quote; Stevens zegt 'soms', dus de omvang niet overdrijven; zij is per reglement de functionaris die afwijst; functie bevestigd via jaarverslag 2025
 

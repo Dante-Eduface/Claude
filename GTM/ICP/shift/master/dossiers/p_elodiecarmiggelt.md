@@ -20,7 +20,7 @@ https://www.linkedin.com/in/elodiecarmiggelt/
 LinkedIn + eigen site opleiding
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 Haar LinkedIn-headline stapelt vijf rollen: "Manager onderwijs Beroepsopleiding Advocaten | Mediator | Trainer | Psycholoog | Coach" (https://www.linkedin.com/in/elodiecarmiggelt/); zij is organisatie- en arbeidspsycholoog van huis uit, geen jurist, terwijl zij het onderwijs van de advocatenopleiding runt (https://www.dialoguebv.nl/onsteam/elodie-carmiggelt); het examen kent volgens de opleiding drie toetsen (Ethiek, eerste integratieve dag, tweede integratieve dag) en "Per onderdeel mag je ten hoogste driemaal een toets afleggen" (https://beroepsopleidingadvocaten.nl/toetsing/toetskansen-toetsgelegenheden-en-toetsverzoeken); een herkansing kost 100 euro voor Ethiek en 275 euro voor een integratieve dag (zelfde pagina); de uitvoeringsorganisatie is "verantwoordelijk voor het (doen) verzorgen van het onderwijs, de examinering en de feitelijke organisatie", terwijl de examencommissie van de NOvA de normen vaststelt (https://rechtennieuws.nl/38494/cpodialogue-uitvoeringsorganisatie-van-nieuwe-beroepsopleiding-advocaten/); wie het schriftelijke werk feitelijk nakijkt staat niet op de toetsingspagina
 

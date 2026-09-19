@@ -20,7 +20,7 @@ https://broedplaats.academy/wp-content/uploads/2024/07/Studiegidstweedejaar20242
 Studiegids (PDF)
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 Casusbeschrijving = eindwerkstuk, min 6 / max 12 A4, "wordt beoordeeld door de supervisietrainer en de programmaleider" (studiegids jaar 2, 2024-2025); opleidingsjaar bevat naast de casusbeschrijving: reflectieverslagen van eigen ontwikkeling, groepsverslagen, clientverslagen, boekverslagen, studiegroepverslagen, zelfevaluatie en eindevaluatie (studiegids); na elke lesdag een groepsverslag: "De trainer voorziet het verslag van aandachtspunten of feedback en stuurt het terug naar de student" (studiegids); verslagen gaan naar wisselende beoordelaars: trainer van de dag, leertherapeut (proefclient- en zelfevaluatie), en supervisietrainer+programmaleider (casus) (overzicht "bij wie in te leveren", studiegids); gemiddeld 12 uur thuisstudie per week, 21 lesdagen, onderdeel van 3-jarig traject naar SKB-erkend diploma Psychosynthese Therapeut (studiegids); kleine club (~5-8 trainers) die veel geschreven verslagen met de hand van feedback voorziet; Yolande = zakelijk leider; Wendy Smit = "programmaleider" en mede-beoordelaar van de casusbeschrijving, dus inhoudelijk baas/beoordelaar van het onderwijs (teampagina + studiegids)
 

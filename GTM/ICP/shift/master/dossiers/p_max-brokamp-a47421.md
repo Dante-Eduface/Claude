@@ -23,7 +23,7 @@ eigen FAQ plus eigen OER
 2025-10-29
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 DIEP 2026-08-12 STERKSTE VAN ZIJN GROEP, geen interpretatie nodig: eigen FAQ zegt onder de AI-vraag letterlijk 'Ons programma en bijbehorende toetsing hebben wij aangepast. Zo zijn er meer en diversere toetsmethodes geintroduceerd en hebben wij opdrachten uitgebreid en verdiept. Met software controleren wij op plagiaat en het gebruik van AI. Ook hebben wij meer mondelinge examens toegevoegd.' (ibhs.nl/over-ibhs/faq); eigen OER heeft een artikel 101 met de titel 'Nakijktijd, feedbacktijd en verschillende invalshoeken in de begeleiding' dat zegt 'gestreefd om de doorlooptijd van de terugkoppeling (feedbacktijd en nakijktijd) te minimaliseren, echter veertien (14) werkdagen wordt beschouwd als een normale termijn' (OER SDO 2025-2026, p172, 29-10-2025); programma is versneld, 4 jaar in 3, 45 uur per week; LET OP: niet framen als '14 dagen is traag', het punt is de combinatie van een versneld programma met die terugkoppeltijd; location Amsterdam
 

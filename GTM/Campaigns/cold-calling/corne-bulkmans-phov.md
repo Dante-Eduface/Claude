@@ -133,7 +133,7 @@ Noemt hij zelf een getal (aantal cursisten, aantal groepen, aantal mentors), laa
 
 **Secundair**
 - Zoekresultaat LinkedIn-titel "Corné Bulkmans - Managing Director - PHOV"
-- Eigen dossier projects/shift/master/dossiers/p_corne-bulkmans-8398074.md (diepteronde 12-08-2026)
+- Eigen dossier GTM/ICP/shift/master/dossiers/p_corne-bulkmans-8398074.md (diepteronde 12-08-2026)
 - Close CRM: geen resultaten op PHOV of Bulkmans
 
 **Niet gelezen**

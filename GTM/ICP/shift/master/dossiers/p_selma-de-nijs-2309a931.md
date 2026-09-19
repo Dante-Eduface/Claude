@@ -20,7 +20,7 @@ https://publicaties.nvao.net/prd/AV-3019_20251113_Rapport_Breederode%20hbo%20v%2
 organisatie
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 **Haakje zoals agent 3 het opschreef**
 Breederode leidt anderen op in toetskwaliteit met een eigen BKE-cursus die hands-on ervaring geeft in het verbeteren van de kwaliteit van je eigen toetsen. In het NVAO-rapport over de bachelor Verpleegkunde (november 2025) adviseert het panel Breederode met meer regelmaat te kalibreren om de beoordelingen verder te harmoniseren. | LET OP: Naam Selma de Nijs komt niet in de bron voor. Alles persoonlijks (zelf examinator, haar opleidingen, vakexperts die handmatig feedback geven) was ingevuld en is verwijderd. Persoonsrol nog apart verifieren.

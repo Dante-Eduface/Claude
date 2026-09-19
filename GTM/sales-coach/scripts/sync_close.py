@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""Sync Close CRM -> projects/sales-coach/data/deals/*.json
+"""Sync Close CRM -> GTM/sales-coach/data/deals/*.json
 
 Elk dealbestand heeft twee zones:
   "close"  wordt bij elke sync overschreven (feiten uit het CRM)
   "coach"  blijft altijd staan (prep, MEDDPICC, call-reviews, stakeholderrollen)
 
 Gebruik:
-    python3 projects/sales-coach/scripts/sync_close.py            # alle leads met een gesprek
-    python3 projects/sales-coach/scripts/sync_close.py --lead lead_xxx
+    python3 GTM/sales-coach/scripts/sync_close.py            # alle leads met een gesprek
+    python3 GTM/sales-coach/scripts/sync_close.py --lead lead_xxx
 """
 import base64
 import json
@@ -227,7 +227,7 @@ def main():
         print(f"  {slug:35s} {len(gesprekken)} gesprekken")
 
     print(f"\n{len(index)} deals weggeschreven naar data/deals/")
-    print("Bouw nu de app: python3 projects/sales-coach/scripts/build.py")
+    print("Bouw nu de app: python3 GTM/sales-coach/scripts/build.py")
 
 
 if __name__ == "__main__":

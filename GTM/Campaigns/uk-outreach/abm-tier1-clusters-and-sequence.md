@@ -1,6 +1,6 @@
 # UK ABM — Tier 1 patch, clusters & sequence (v1)
 
-> Source: `eduface_lead_scores_ranked.md` (NSS 2025 Theme 3: Assessment & Feedback). Scope: everything here runs up to the **Discovery gate** (handbook Stage 1 / SQL), then hand off to Jeroen. No Clay — built with Claude Agent (research/scoring) + Lemlist (enrichment + outreach) + Close (status). See `references/sops/gtm-abm-motion-reference.md`.
+> Source: `eduface_lead_scores_ranked.md` (NSS 2025 Theme 3: Assessment & Feedback). Scope: everything here runs up to the **Discovery gate** (handbook Stage 1 / SQL), then hand off to Jeroen. No Clay — built with Claude Agent (research/scoring) + Lemlist (enrichment + outreach) + Close (status). See `GTM/Knowledge/gtm-abm-motion-reference.md`.
 
 ## The patch (Tier 1 = 24 "Outreach now" accounts, Overall ≥ 6.5)
 

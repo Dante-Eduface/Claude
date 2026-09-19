@@ -20,7 +20,7 @@ https://bol.com/nl/nl/f/bekijk-het/9300000033211533
 publicatie
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 **Haakje zoals agent 3 het opschreef**
 Schreef het boek Bekijk het over karakterontwikkeling via het enneagram, dat volgens een recensie wordt gebruikt bij de studenten HBO-IBHS | LET OP: Koppeling boek-IBHS komt uit een klantrecensie, niet uit een IBHS-bron. Auteurschap staat wel vast

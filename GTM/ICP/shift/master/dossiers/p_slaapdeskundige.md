@@ -23,7 +23,7 @@ https://droomritme.nl/opleidingtraining/droomritmecoach-0-10-jaar/
 opleidingspagina/studiegids
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 Toetsprogramma: kennisblokken met kennistoets, praktijkblokken met praktijkexamen, 'Tussentijdse Test Module 1' t/m Module 6, een 'live examen' en veel 'oefencasussen' (droomritme.nl/opleidingtraining/droomritmecoach/); 'Gratis herkansing bij kennistoetsen en praktijkexamens (1x per examen)' en '2x (examen) begeleiding van team Droomritme' (droomritme.nl/opleidingtraining/droomritmecoach-0-10-jaar/); schriftelijk examen als mogelijk struikelblok: 'Mocht het schriftelijk examen een struikelblok vormen, is er begeleiding voor je via de opleidingscoaches' (zelfde pagina); nakijken/beoordeling ligt bij 'team Droomritme' / de opleidingscoaches, geen aparte examencommissie genoemd; CRKBO-geregistreerde onderwijsinstelling, certificaten van deelname + diploma bij combinatie van blokken, eigen merk Droomritmecoach (droomritme.nl/opleidingtraining/droomritmecoach/); 2-persoons organisatie, sterk persoonlijk merk rond Stephanie: 'auteur van 11 boeken', kindfluisteraar, darm-/voedings-/aroma-/breintherapeut, moeder van 4 (websearch stephaniemolenaar.nl); Schrijfwerk = BIJZAAK: assessment draait op kennistoetsen + praktijkexamens, er is een schriftelijk examen maar geen scriptie/portfolio/substantieel schrijfwerk dat lerenden inleveren
 

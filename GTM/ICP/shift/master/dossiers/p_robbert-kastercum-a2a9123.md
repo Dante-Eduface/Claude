@@ -20,7 +20,7 @@ https://www.instituutcronesteyn.nl/over-ons/
 Eigen site (over ons) + transfirm
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 DEGRADE 2026-08-07 naar Twijfel/niveau 1: kern van de toetsing = praktijkexamens op de leerwerkplek, geschreven inleverwerk alleen bij Loopbaan en Burgerschap = zwakke ICP-fit. Persoon-haakje blijft: oprichter/directeur van een kleinschalig instituut voor verkorte mbo/hbo-zorgopleidingen (Derde Leerweg) in Leiden, doelgroep werkt al in de zorg (instituutcronesteyn.nl/over-ons). FEIT = functie + doelgroep.
 

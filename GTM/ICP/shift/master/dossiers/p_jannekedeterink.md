@@ -23,7 +23,7 @@ NVAO/AeQui-visitatierapport
 2024-06-03
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 DIEP 2026-08-12: NVAO/AeQui-rapport over de MBA Innovatie & Leiderschap (visitatie 03-06-2024, publicatie 20-03-2025) meldt dat deelnemers verschil ervaren in hoeveelheid en kwaliteit van feedback tussen leerlijnen en meer feedbackmomenten willen; de instelling praat al met leveranciers van plagiaatdetectiesoftware; het panel vraagt de examencommissie een positie in te nemen over generatieve AI; LET OP: dit gaat over de AOG-locaties Groningen en Nunspeet, NIET over haar eigen Enschede-EMBA, dat expliciet erbij zeggen - wel dezelfde B.V. en dezelfde examencommissie; het panel oordeelt overall positief en het feedbackpunt is een suggestie, geen tekortkoming; haar eigen Leergang Bedrijfskunde heeft expliciet GEEN scriptie
 

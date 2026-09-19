@@ -36,7 +36,7 @@ Onderzoek 29-08-2026. Zeven parallelle onderzoekslijnen: visuele principes, werk
 
 ## De concrete regels die overeind bleven
 
-Verwerkt in `references/design-system/core/regels.md`. De belangrijkste, met bron:
+Verwerkt in `Design/Design system/core/regels.md`. De belangrijkste, met bron:
 
 - **Contrast:** 4.5:1 normale tekst, 3:1 grote tekst. [WCAG 2.2, W3C, 2023](https://www.w3.org/TR/WCAG22/). Enige regel hier met normatieve status.
 - **Regellengte:** 45-90 tekens. [Butterick, Practical Typography](https://practicaltypography.com/line-length.html). Refactoring UI zegt 60-80; overlappende banden, beide vakmeningen zonder experimenteel bewijs.
@@ -143,7 +143,7 @@ Het scherpste openstaande punt is niet craft maar onderscheid. De hele B2B SaaS-
 - [NN/g, Aesthetic-Usability Effect, Moran, 2024](https://www.nngroup.com/articles/aesthetic-usability-effect/)
 - [UXPA Magazine over de validiteit van Nielsens heuristieken](http://uxpamagazine.org/nielsens-heuristic-evaluation/)
 - [Connor & Irizarry, Discussing Design, UIE-seminar 2012](https://archive.uie.com/brainsparks/2012/07/13/adam-connor-aaron-irizarry-discussing-design-the-art-of-critique/)
-- [Monteiro, Design Is a Job, hoofdstuk Managing Feedback (UXmatters, 2019)](https://www.uxmatters.com/mt/archives/2019/12/sample-chapter-design-is-a-job.php)
+- [Monteiro, Design Is a Job, hoofdstuk Managing Feedback (UXmatters, 2019)](https://www.uxmatters.com/mt/Archive/2019/12/sample-chapter-design-is-a-job.php)
 - [AIGA Eye on Design, Famous creatives on the design brief, 2014](https://eyeondesign.aiga.org/famous-creatives-on-how-to-write-the-perfect-design-brief/)
 - [Brownlee, The golden ratio: design's biggest myth, Fast Company 2015](https://web.archive.org/web/20251006173630/https://www.fastcompany.com/3044877/the-golden-ratio-designs-biggest-myth)
 - [Econsultancy over de M&S-relaunch, 2014](https://econsultancy.com/where-did-the-marks-spencer-website-relaunch-go-wrong/)

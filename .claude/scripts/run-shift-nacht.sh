@@ -22,7 +22,7 @@ set -u
 
 PROJECT="/Users/User/Library/CloudStorage/GoogleDrive-dante.torbed@eduface.me/My Drive/Eduface/Claud AE"
 LOG="$HOME/Library/Logs/eduface-shift-nacht.log"
-STATUSBESTAND="$PROJECT/projects/shift/NACHTRUN.md"
+STATUSBESTAND="$PROJECT/GTM/ICP/shift/NACHTRUN.md"
 
 # Wat er per ronde gebeurt. Bescheiden gehouden: een ronde die te veel wil doet
 # niets af, en agent 1 en 3 zijn traag omdat ze het web op moeten.
@@ -131,7 +131,7 @@ if [[ -n "${CLAUDE_CODE_OAUTH_TOKEN:-}" ]]; then
   log "langlevend token in gebruik"
 fi
 
-(( DROOG )) || git -C "$PROJECT/projects/shift" pull --quiet --rebase 2>>"$LOG" \
+(( DROOG )) || git -C "$PROJECT/GTM/ICP/shift" pull --quiet --rebase 2>>"$LOG" \
   || log "let op: git pull mislukte, ga door"
 
 export SHIFT_NACHT=1          # zet de grendel-hook aan
@@ -232,7 +232,7 @@ LEADS="${TMPDIR%/}/shift-lemlist-$MARKT.json"
 draai "sync-lemlist" "Werk de meetlus bij voor markt $MARKT. Doe dit in twee stappen, want de
 tweede is duur en de eerste is bijna gratis.
 
-STAP 1, de peiling. Lees de campagne-id uit projects/shift/markets/$MARKT/profiel.json
+STAP 1, de peiling. Lees de campagne-id uit GTM/ICP/shift/markets/$MARKT/profiel.json
 (lemlist_campagne_id). Is die leeg, meld dat en stop. Draai anders get_campaigns_stats op die
 campagne en tel drie getallen op: messageMetrics.sent, channelMetrics.linkedinInvitationAccepted
 en messageMetrics.replied. Geef die door aan:
@@ -259,8 +259,8 @@ if (( DROOG )); then
   print "  python3 .claude/scripts/pipeline.py --markt $MARKT status --table"
   print "  python3 .claude/scripts/pipeline.py --markt $MARKT rapport --table"
   print "  python3 .claude/scripts/pipeline.py --markt $MARKT cockpit --out /tmp/cockpit-$MARKT.json"
-  print "  git add, commit en push in projects/shift"
-  print "  stand naar projects/shift/NACHTRUN.md"
+  print "  git add, commit en push in GTM/ICP/shift"
+  print "  stand naar GTM/ICP/shift/NACHTRUN.md"
   print ""
   print "Droge ronde klaar. Er is niets gestart en niets gewijzigd."
   log "===== droge ronde einde ====="
@@ -272,9 +272,9 @@ print -r -- "$DOC" >> "$LOG"
 STAND=$(python3 .claude/scripts/pipeline.py --markt "$MARKT" status --table 2>&1)
 RAPPORT=$(python3 .claude/scripts/pipeline.py --markt "$MARKT" rapport --table 2>&1)
 
-git -C "$PROJECT/projects/shift" add -A >>"$LOG" 2>&1
-git -C "$PROJECT/projects/shift" commit -q -m "Nachtronde $(date '+%d-%m-%Y'), markt $MARKT" >>"$LOG" 2>&1 \
-  && git -C "$PROJECT/projects/shift" push --quiet >>"$LOG" 2>&1 \
+git -C "$PROJECT/GTM/ICP/shift" add -A >>"$LOG" 2>&1
+git -C "$PROJECT/GTM/ICP/shift" commit -q -m "Nachtronde $(date '+%d-%m-%Y'), markt $MARKT" >>"$LOG" 2>&1 \
+  && git -C "$PROJECT/GTM/ICP/shift" push --quiet >>"$LOG" 2>&1 \
   || log "niets te committen of push mislukt"
 
 cat > "$STATUSBESTAND" <<EOF

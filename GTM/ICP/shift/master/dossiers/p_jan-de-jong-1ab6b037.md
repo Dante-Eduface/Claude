@@ -20,7 +20,7 @@ https://gocollege.nl/een-nieuw-systeem-bestaat-al-minister/
 eigen publicatie (opiniestuk op eigen site)
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 Hij schreef zelf een opiniestuk op de eigen site, "Een ánder schoolsysteem bestaat al, minister", waarin hij het LAKS-begrip "zweten – weten – vergeten" aanhaalt (https://gocollege.nl/een-nieuw-systeem-bestaat-al-minister/, juni 2024); daarin staat letterlijk "Je moet het niet uit je hoofd kennen, maar de waarom-vraag willen begrijpen. Alleen dán is leren leuk én kan je als monteur straks zelfstandig aan de slag"; en "Juist omdat we er zijn voor de leerling, laten we waar mogelijk de standaard los. We weten dat iedere leerling zijn eigen route, snelheid en groei nodig heeft"; en over instroommomenten "Wat een onzin om dat te beperken tot 2 momenten in het jaar, als je nú al iemand het vak kan leren"; hij gaf tientallen jaren les als bouwdocent op de Tech in Middelharnis en later bij een ROC in Rotterdam voordat hij in 2012 GO-College begon (https://www.eilandennieuws.nl/nieuws/algemeen/6464/go-college-viert-vijfjarig-jubileum-); GO-College is een stichting met een Raad van Toezicht en mag zelf erkende mbo-diploma's uitreiken (BRIN 30VR); 13 medewerkers in Oude-Tonge
 

@@ -216,7 +216,7 @@ document.getElementById("kopieer").onclick=async()=>{
   const uit={stand:new Date().toISOString().slice(0,10),klopt:[],weg:[],notities:{}};
   Object.entries(besluit).forEach(([id,b])=>{if(b.s==="klopt")uit.klopt.push(id);if(b.s==="weg")uit.weg.push(id);if(b.n)uit.notities[id]=b.n});
   const txt=JSON.stringify(uit,null,1);
-  try{await navigator.clipboard.writeText(txt);toast("Gekopieerd: "+uit.klopt.length+" klopt, "+uit.weg.length+" weg, "+Object.keys(uit.notities).length+" notities. Plak in projects/pijn-oplossing/besluiten.json")}
+  try{await navigator.clipboard.writeText(txt);toast("Gekopieerd: "+uit.klopt.length+" klopt, "+uit.weg.length+" weg, "+Object.keys(uit.notities).length+" notities. Plak in GTM/ICP/pijn-oplossing/besluiten.json")}
   catch(e){prompt("Kopieer handmatig:",txt)}
 };
 function toast(m){const t=document.getElementById("toast");t.textContent=m;t.classList.add("zichtbaar");setTimeout(()=>t.classList.remove("zichtbaar"),4000)}

@@ -23,7 +23,7 @@ eigen site (scriptiehandleiding PDF)
 2026-01-13
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 Zij is per 1 augustus 2025 directeur en volgde interim-directeur Gertjan Mulder op, die op de site zelf terugblikt op zijn interim-periode (https://academiegeesteswetenschappen.nl/gertjan-mulder-blikt-terug-op-interim-directeurschap/ en https://academiegeesteswetenschappen.nl/bestuur-en-organisatie/); zij zit dus net een jaar in de rol na een interim-periode; de scriptiehandleiding is gedateerd januari 2026, dus vernieuwd tijdens haar eerste jaar (https://academiegeesteswetenschappen.nl/wp-content/uploads/2026-01-13_AvG_Scriptiehandleiding.pdf); die handleiding zegt letterlijk "De scriptie moet door de scriptiebegeleider op alle bovengenoemde onderdelen met een voldoende worden beoordeeld" en "Het vervaardigen van de scriptie vindt plaatst onder de verantwoordelijkheid van een vakdocent, die de begeleider is"; de begeleider is dus ook de beoordelaar, één persoon in beide rollen; de academie omschrijft zichzelf als een plek "waar persoonlijke betrokkenheid en academische verdieping samengaan" (bestuur-en-organisatie); boven haar zit een bestuur van vijf, met Wim Smeets als voorzitter
 

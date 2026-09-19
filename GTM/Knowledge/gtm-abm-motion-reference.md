@@ -4,7 +4,7 @@
 > - Tim Routen (CMO Backbase) podcast on building an AI-native ABM function — the philosophy.
 > - Clay blog: "How Clay Runs ABM Campaigns" (Apr 2026) + "GTM Alpha" (Varun Anand, Apr 2026) — the operating playbook + tooling.
 >
-> Anchor: this feeds **Stage 1 Discovery** of `references/sops/sales-handbook-v1.md`. The ABM machine's only job is to take a named account from cold → aware → in dialogue → SQL (pain + players + why-now + BANT confirmed over email) → **hand off to founders**. Everything below stops at that gate.
+> Anchor: this feeds **Stage 1 Discovery** of `GTM/Knowledge/sales-handbook-v1.md`. The ABM machine's only job is to take a named account from cold → aware → in dialogue → SQL (pain + players + why-now + BANT confirmed over email) → **hand off to founders**. Everything below stops at that gate.
 
 ## The two-layer model
 - **Tim = philosophy.** Everything is ABM. Run a system against a finite named account list, not campaigns at a market. ICP clusters by *title* (multiple wedges per institution). Thin brand layer, deep cluster work. Relationship tactics get the "yes" (podcast, events, peer community, love letters, exec ego/exposure). Pilot the motion on one patch before scaling, no revenue target on the pilot.

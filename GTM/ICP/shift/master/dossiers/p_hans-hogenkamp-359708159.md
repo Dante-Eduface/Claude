@@ -17,7 +17,7 @@ https://www.schrijversvakschool.nl/docenten/582-hans-hogenkamp-directeur
 teampagina
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 **Haakje zoals agent 3 het opschreef**
 Is zelf romanschrijver (Excuses voor het ongemak, shortlist Debutantenprijs, en Dingen die op liefde lijken) en bestuurslid van Scriptbank en de Vertalersvakschool

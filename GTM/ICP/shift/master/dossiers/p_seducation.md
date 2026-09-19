@@ -17,7 +17,7 @@ https://www.soundeducation.nl/veel-gestelde-vragen
 organisatie
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 **Haakje zoals agent 3 het opschreef**
 Gaf in de eerste jaren zelf de meeste lessen en ziet het nu als zijn belangrijkste taak om docenten te werven en de vinger te houden op de kwaliteit van het lesprogramma | LET OP: Ook mede-eigenaar van Live Sound Education

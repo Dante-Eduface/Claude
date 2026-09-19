@@ -9,7 +9,7 @@ Leesregels: `zekerheid=parafrase` komt uit een AI-samenvatting van een meeting, 
 _Wie beslist, traagheid, pilotstructuur, examencommissie._
 
 **Onze oplossing:** Het sterkste argument bij een examencommissie of kwaliteitsmanager is de docent-in-de-lus: niet 'AI beoordeelt' maar 'AI stelt voor, de docent tekent af'.
-Bron: references/eduface-product.md, sectie Wat dit betekent voor outreach
+Bron: Platform/product.md, sectie Wat dit betekent voor outreach
 
 ### Gewenste uitkomst
 - `UMCG-16` [NL ho] "Ten aanzien van de offerte hebben jullie aangegeven de pilotduur te willen verdubbelen. Dan komen we uit op 90 dagen." (UMCG, Robert Smeenk, 2025-09-15, email, letterlijk) https://app.close.com/lead/lead_4Mh3jCQPY7E6Q20lyVoXTNQJzOsWq8Z8fD7o7m016pC/
@@ -180,7 +180,7 @@ Bron: references/eduface-product.md, sectie Wat dit betekent voor outreach
 _Turnitin, LMS-native AI, eigen GPT of devteam, toolwildgroei, angst voor leveranciersafhankelijkheid._
 
 **Onze oplossing:** Geen vergelijkende claim in de productbron. Wat we wel mogen zeggen over onszelf: de docent keurt elke opmerking goed, uitlegbare cijferopbouw per criterium, onzekerheid wordt gemarkeerd.
-Bron: references/eduface-product.md, sectie Wat dit betekent voor outreach
+Bron: Platform/product.md, sectie Wat dit betekent voor outreach
 Geen claim in de bron over: vergelijking met specifieke concurrenten
 
 ### Pijn
@@ -310,7 +310,7 @@ Geen claim in de bron over: vergelijking met specifieke concurrenten
 _Angst voor AI-beoordeling, verlies van eigen oordeel, bias._
 
 **Onze oplossing:** De docent blijft in de lus: AI stelt voor, de docent tekent af. Onzekerheid wordt gemarkeerd in plaats van weggepoetst. Docenten die het model afstemden kwamen op 98%, wat laat zien dat de docent stuurt.
-Bron: references/eduface-product.md, secties Wat dit betekent voor outreach, Accuraatheid
+Bron: Platform/product.md, secties Wat dit betekent voor outreach, Accuraatheid
 
 ### Pijn
 - `Bath-Spa-University-27` [UK/IE] "I will also share the challenges, which are the same as for the other Jisc pilots, in terms of perceptions and conceptions of the use of AI tools in assessment." (Bath Spa University, Helen King, 2026-04-08, email, letterlijk) https://app.close.com/lead/lead_s6LxQyZ7yIyQnETykuPEI2B9H6TR25W5HwCLvNX7XFJ/
@@ -433,7 +433,7 @@ Bron: references/eduface-product.md, secties Wat dit betekent voor outreach, Acc
 _Verschillen tussen beoordelaars, kalibratie, kwaliteit van de feedback._
 
 **Onze oplossing:** Beoordeling is gegrond in de rubric, met een uitlegbare cijferopbouw per criterium en annotaties in de tekst. Accuraatheid van het cijfervoorstel: gemiddeld 94% (gedefinieerd als puntenverschil met het docentcijfer, niet als overeenstemming), 98% bij docenten die het model afstemden.
-Bron: references/eduface-product.md, secties Paper Grader, Accuraatheid
+Bron: Platform/product.md, secties Paper Grader, Accuraatheid
 
 ### Pijn
 - `Rotterdam-University-of-Applied-Sciences-21` [NL ho] "AI kan 'de directe omgeving' niet vinden - terwijl studenten duidelijk een interne analyse hebben opgeleverd. Wat is er aan de hand? Wat kan er gebeuren zodat ik maandagochtend wel bruikbare feedback kan delen?" (Rotterdam University of Applied Sciences, Erwin de Kleijn, 2026-03-12, email, letterlijk) https://app.close.com/lead/lead_sBQJUEcvvOsFiQ1RvvogLPX2cnpgGcs9VQVaqGI4dX8/
@@ -550,7 +550,7 @@ Bron: references/eduface-product.md, secties Paper Grader, Accuraatheid
 _AVG, AI Act, security, DPIA, procurement._
 
 **Onze oplossing:** Eduface voldoet aan de AI Act. Verder staat er niets in de productbron over certificeringen, hosting of DPIA, dus daar beweren we niets over.
-Bron: references/eduface-product.md, sectie Regelgeving
+Bron: Platform/product.md, sectie Regelgeving
 Geen claim in de bron over: certificeringen, hosting, DPIA
 
 ### Pijn
@@ -652,7 +652,7 @@ Geen claim in de bron over: certificeringen, hosting, DPIA
 _Tijd en werkdruk van nakijken en feedback geven._
 
 **Onze oplossing:** De Paper Grader leest elke inzending, markeert passages, stelt criterium-specifieke opmerkingen op en scoort de volledige rubric. De Exam Grader doet hetzelfde voor open en gesloten antwoorden op schaal. De docent keurt elke opmerking goed voordat de student iets ziet. In de Bath Spa-pilot (juni 2026, 435 inzendingen, 13 markers) was de reviewtijd 2 tot 3 minuten per inzending.
-Bron: references/eduface-product.md, secties Paper Grader, Exam Grader, Accuraatheid
+Bron: Platform/product.md, secties Paper Grader, Exam Grader, Accuraatheid
 
 ### Pijn
 - `Tio-Business-School-01` [particulier] "Nakijken was voor mij altijd één van de minst favoriete klussen; het is tijdrovend en studenten lijken de feedback vaak pas echt serieus te nemen als ze een onvoldoende krijgen." (Tio Business School, Gideon Hummel, 2025-09-29, email, letterlijk) https://app.close.com/lead/lead_8e0AjTEdlAllhdeC3AdYc2sCb0cSwfpDHbU5hUYBI3Y/
@@ -746,8 +746,8 @@ Bron: references/eduface-product.md, secties Paper Grader, Exam Grader, Accuraat
 
 _Geld, wie betaalt, prijs, pilotbudget._
 
-**Onze oplossing:** Geen productantwoord. Prijsmodel staat in references/pricing/.
-Bron: references/pricing/
+**Onze oplossing:** Geen productantwoord. Prijsmodel staat in GTM/Pricing/.
+Bron: GTM/Pricing/
 Geen claim in de bron over: alles behalve het prijsmodel
 
 ### Pijn
@@ -839,7 +839,7 @@ Geen claim in de bron over: alles behalve het prijsmodel
 _Integratie, beheer, waar het in het proces past._
 
 **Onze oplossing:** Integreert in Moodle, Blackboard, Brightspace, Canvas en elke andere LMS. Het goedgekeurde cijfer gaat terug naar het gradebook van het LMS.
-Bron: references/eduface-product.md, secties LMS-integratie, Exam Grader
+Bron: Platform/product.md, secties LMS-integratie, Exam Grader
 
 ### Pijn
 - `Tio-Business-School-04` [particulier] "Ze gaan afstappen van cognitie en zijn momenteel opzoek naar alternatieve. Ze hebben nu Moodle als LMS en gaan naar Brightspace. Ze moeten nu cijfers uit Cogniti halen en handmatig in itslearning zetten." (Tio Business School, Gideon Hummel, 2026-04-08, call, parafrase) https://app.close.com/lead/lead_8e0AjTEdlAllhdeC3AdYc2sCb0cSwfpDHbU5hUYBI3Y/
@@ -926,7 +926,7 @@ Bron: references/eduface-product.md, secties LMS-integratie, Exam Grader
 _Feedbackcultuur, formatief of programmatisch toetsen._
 
 **Onze oplossing:** Formatieve feedback op schrijfopdrachten: per concept, tijdens het schrijven. Elke opmerking wordt door de docent bekeken voordat de student hem ziet.
-Bron: references/eduface-product.md, sectie Paper Grader
+Bron: Platform/product.md, sectie Paper Grader
 
 ### Pijn
 - `HZ-University-of-Applied-Sciences-6` [NL ho] "Uitdaging zit niet in het ontbreken van feedback, maar in actiegericht en gemotiveerd gebruik door studenten." (HZ University of Applied Sciences, Martijn Leenknecht, Head of department Education, Research and Quality assurance, 2026-05-22, note, letterlijk) https://app.close.com/lead/lead_CUr8JthsDPFDjWZVFiFx6A0hLX79l4Nf5JnuFJoLQDR/
@@ -1001,7 +1001,7 @@ Bron: references/eduface-product.md, sectie Paper Grader
 _Rubrics ontbreken, zijn slecht, of criteria zijn onduidelijk._
 
 **Onze oplossing:** De Paper Grader is gegrond in de rubric en doet volledige rubric-scoring. Het product beweegt naar instrueren zonder rubric; toets een prospect daarom op eisenkader of leeruitkomsten, niet op of er een rubric ligt.
-Bron: references/eduface-product.md, sectie De rubric
+Bron: Platform/product.md, sectie De rubric
 
 ### Pijn
 - `Rotterdam-University-of-Applied-Sciences-22` [NL ho] "Waar ik nog wel mee zat is dat er ook een mismatch lijkt te zijn tussen de termen. Als de AI een interne analyse krijgt en vervolgens meldt dat hij de directe omgeving niet kan vinden, moet er misschien nog iets worden aangepast in de terminologie/rubric?" (Rotterdam University of Applied Sciences, Erwin de Kleijn, 2026-03-13, email, letterlijk) https://app.close.com/lead/lead_sBQJUEcvvOsFiQ1RvvogLPX2cnpgGcs9VQVaqGI4dX8/
@@ -1068,7 +1068,7 @@ Bron: references/eduface-product.md, sectie De rubric
 _Grote cohorten, te weinig docenten, beoordelen centraal beleggen._
 
 **Onze oplossing:** De Exam Grader kijkt open en gesloten antwoorden op schaal na; de Paper Grader behandelt elke inzending afzonderlijk met dezelfde rubric.
-Bron: references/eduface-product.md, secties Paper Grader, Exam Grader
+Bron: Platform/product.md, secties Paper Grader, Exam Grader
 
 ### Pijn
 - `Haagse-Hogeschool-30` [NL ho] "Het argument is dat er een medewerker in het taaldocenten team met pensioen gaat terwijl deze niet wordt vervangen. Daarnaast is er een grotere instroom dus moet er ook meer werk worden geleverd. Eduface kan de uitkomst zijn." (Haagse Hogeschool, 2026-04-24, note, parafrase) https://app.close.com/lead/lead_waimXLhF6CqX6wqedhNAK5pJd2ExAENHQv9l88s4BvD/
@@ -1131,7 +1131,7 @@ Bron: references/eduface-product.md, secties Paper Grader, Exam Grader
 _Hoe goed het cijfervoorstel klopt, of de feedback te globaal of te positief is, of het model het vak kent, en hoeveel afstellen het vraagt._
 
 **Onze oplossing:** Accuraatheid van het cijfervoorstel: gemiddeld 94%, gedefinieerd als puntenverschil met het docentcijfer (niet als overeenstemming), en 98% bij docenten die het model afstemden. Meting: Bath Spa-pilot juni 2026, 435 inzendingen, 13 markers. Onzekerheid wordt gemarkeerd. De docent keurt elke opmerking goed.
-Bron: references/eduface-product.md, sectie Accuraatheid
+Bron: Platform/product.md, sectie Accuraatheid
 
 ### Pijn
 - `Haagse-Hogeschool-23` [NL ho] "Geef alle spelfouten aan, niet enkele. Opdrachtgever en point of view van de tekst kloppen dus niet met elkaar. Dit ziet de tool (nog) niet. Over het ontbreken van argumentatie zegt de tool niets in de feedback." (Haagse Hogeschool, Maartje Sijm, Docent IVK, lid AI-sleutelteam lectoraat, 2026-03-31, email, letterlijk) https://app.close.com/lead/lead_waimXLhF6CqX6wqedhNAK5pJd2ExAENHQv9l88s4BvD/
@@ -1174,7 +1174,7 @@ Bron: references/eduface-product.md, sectie Accuraatheid
 _Weten of het werk van de student zelf is; fraude._
 
 **Onze oplossing:** Academic Integrity (beta): de student krijgt kritische vragen over zijn eigen paper en moet zich daar mondeling over verantwoorden, zoals bij een scriptieverdediging.
-Bron: references/eduface-product.md, sectie Academic Integrity
+Bron: Platform/product.md, sectie Academic Integrity
 
 ### Pijn
 - `Business-school-Nederland-6` [particulier] "AI-gegenereerde tekst is moeilijk te detecteren; docenten vertrouwen op menselijke intuitie en kennis van studenten." (Business school Nederland, Arthur van Gemert, Studiebegeleider / onderwijs en innovatie, 2026-08-31, meeting, parafrase) https://app.close.com/lead/lead_lFz9aSPR6J44Mno6glfYsreey7rYBP0rbETGm9s3uqZ/
@@ -1213,7 +1213,7 @@ Bron: references/eduface-product.md, sectie Academic Integrity
 _NVAO, visitatie, Ofsted/EPA, kalibratie als bewijslast, borging van eindkwalificaties._
 
 **Onze oplossing:** Uitlegbare cijferopbouw per criterium en annotaties in de tekst, en de docent tekent elke beoordeling af. Dat is de bewijslijn richting een examencommissie of auditor. Verder geen claim over accreditatie-eisen.
-Bron: references/eduface-product.md, secties Paper Grader, Wat dit betekent voor outreach
+Bron: Platform/product.md, secties Paper Grader, Wat dit betekent voor outreach
 Geen claim in de bron over: specifieke accreditatiekaders
 
 ### Pijn
@@ -1251,7 +1251,7 @@ Geen claim in de bron over: specifieke accreditatiekaders
 _Tijdens het schrijven of pas achteraf; hoe lang studenten wachten._
 
 **Onze oplossing:** Feedback per concept, tijdens het schrijven, niet pas achteraf (draft-by-draft guidance in de Paper Grader).
-Bron: references/eduface-product.md, sectie Paper Grader
+Bron: Platform/product.md, sectie Paper Grader
 
 ### Pijn
 - `University-of-Sunderland-in-London-2` [UK/IE] "High staff workload due to marking volume creates delays in assessment turnaround and feedback provision." (University of Sunderland in London, Erika Keizere, Senior Lecturer (Academic Development - Digital Learning and Pedagogy), 2026-04-30, meeting, parafrase) https://app.close.com/lead/lead_11RN5Uj14ozTCYkIaqhffczC0fGv9UqSuqaQPNxWIv1/
@@ -1284,7 +1284,7 @@ Bron: references/eduface-product.md, sectie Paper Grader
 _Beleid dat AI bij beoordelen verbiedt of inkadert, transparantie naar studenten, duurzaamheid._
 
 **Onze oplossing:** Eduface voldoet aan de AI Act. De docent blijft in de lus: AI stelt voor, de docent tekent af, en de student ziet niets voordat de docent het heeft goedgekeurd. Over transparantielabels naar studenten en energieverbruik staat niets in de productbron.
-Bron: references/eduface-product.md, secties Regelgeving, Paper Grader
+Bron: Platform/product.md, secties Regelgeving, Paper Grader
 Geen claim in de bron over: transparantielabels naar studenten, energieverbruik
 
 ### Bezwaar
@@ -1316,7 +1316,7 @@ Geen claim in de bron over: transparantielabels naar studenten, energieverbruik
 _Geen tijd, mensen of ruimte om iets nieuws op te pakken; hoe zwaar de invoering is._
 
 **Onze oplossing:** Geen claim in de productbron over implementatietijd of begeleiding. Niets beweren over 'in een week live'.
-Bron: references/eduface-product.md
+Bron: Platform/product.md
 Geen claim in de bron over: implementatietijd, onboarding, begeleiding
 
 ### Pijn
@@ -1377,7 +1377,7 @@ Geen claim in de bron over: alles, dit zijn productissues
 _Opleiders die door AI naar mondelinge toetsing bewegen._
 
 **Onze oplossing:** Oral Examination (beta): mondelinge afname met realtime transcriptie en beoordeling. Positioneer Eduface als tijd vrijmaken voor het mondelinge deel door de schrijffeedback te ondersteunen, niet als iets dat tegen de verschuiving in gaat.
-Bron: references/eduface-product.md, sectie Oral Examination
+Bron: Platform/product.md, sectie Oral Examination
 
 ### Gewenste uitkomst
 - `Business-School-Notenboom-08` [particulier] "Notenboom overweegt het schriftelijke werk minder zwaar te laten meewegen en het mondeling meer centraal te stellen." (Business School Notenboom, Barbara Suijkerbuijk, Directeur onderwijs, 2026-08-10, meeting, parafrase) https://app.close.com/lead/lead_4ZpmfrLKEVu0B6AXU6ndN9aGYhfl50JoOXG5m5nhRXM/
@@ -1408,7 +1408,7 @@ Bron: references/eduface-product.md, sectie Oral Examination
 _Wat prospects nodig hebben dat mogelijk buiten het product valt: contextdocumenten, papieren toetsen, toetsconstructie, video-inzendingen, learning analytics, apprenticeships._
 
 **Onze oplossing:** Alleen wat in de productbron staat: Paper Grader, Exam Grader (open en gesloten antwoorden), Academic Integrity (beta), Oral Examination (beta). De rest niet beweren; check bij Menno of Samuel voordat je ja zegt.
-Bron: references/eduface-product.md, sectie De vier modules
+Bron: Platform/product.md, sectie De vier modules
 Geen claim in de bron over: alles buiten de vier modules
 
 ### Pijn
@@ -1438,7 +1438,7 @@ Geen claim in de bron over: alles buiten de vier modules
 _NT2, Engels naast Nederlands, taalniveau._
 
 **Onze oplossing:** Geen claim in de productbron.
-Bron: references/eduface-product.md
+Bron: Platform/product.md
 Geen claim in de bron over: taalondersteuning
 
 ### Pijn
@@ -1466,7 +1466,7 @@ Geen claim in de bron over: taalondersteuning
 _Hoe feedback eruit moet zien: niveau, structuur, inline of samenvattend, hoeveel._
 
 **Onze oplossing:** Criterium-specifieke opmerkingen gegrond in de rubric, annotaties bij specifieke passages in de tekst, en een cijferopbouw per criterium. De docent past aan en keurt goed voordat de student het ziet.
-Bron: references/eduface-product.md, sectie Paper Grader
+Bron: Platform/product.md, sectie Paper Grader
 
 ### Gewenste uitkomst
 - `Noordhoff-07` [particulier] "Voor onze casus zou het mooi zijn als de feedback niet een lange lijst is met inhoudelijke punten, maar volgens een vaste structuur is opgebouwd. Let op dat je niet te veel in 1x toont, dit kan overweldigend zijn." (Noordhoff, Eva Jansen, Propositiemanager Hogeschooltaal, 2026-02-19, email, letterlijk) https://app.close.com/lead/lead_QUReRPzpB1XwirLwiUxObexNNirurglK57kHo6aactK/
@@ -1491,7 +1491,7 @@ Bron: references/eduface-product.md, sectie Paper Grader
 _Retentie en doorstroom, vooral in lange trajecten._
 
 **Onze oplossing:** Alleen verzacht claimen: feedback per concept tijdens het schrijven kan uitval tegengaan. Nooit beloven dat er minder studenten afhaken.
-Bron: references/eduface-product.md, sectie De pijn per soort opleiding
+Bron: Platform/product.md, sectie De pijn per soort opleiding
 
 ### Pijn
 - `Rijksuniversiteit-Groningen-19` [NL ho] "Formatieve assessment-data is voorspellend maar ontbreekt in veel eerstejaarsvakken, vooral in grote opleidingen." (Rijksuniversiteit Groningen, Rob Nijenkamp, 2026-08-21, meeting, parafrase) https://app.close.com/lead/lead_QRnRvtAVBv8irHTT7z16S8KMbaVjZ7jLK2Ye74N6p07/
@@ -1514,7 +1514,7 @@ Bron: references/eduface-product.md, sectie De pijn per soort opleiding
 _De NSS-vraag 'feedback helps me improve' als koopreden of why-now._
 
 **Onze oplossing:** Geen claim in de productbron over effect op NSS-scores. Feedback per concept tijdens het schrijven is wat we wel mogen zeggen.
-Bron: references/eduface-product.md, sectie Paper Grader
+Bron: Platform/product.md, sectie Paper Grader
 Geen claim in de bron over: effect op NSS
 
 ### Gewenste uitkomst

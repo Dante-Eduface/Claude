@@ -20,7 +20,7 @@ https://www.groenesector.nl/speaker/dolf-houtman/
 vakblad
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 **Haakje zoals agent 3 het opschreef**
 Noemt het zijn missie om te laten zien hoe mooi het Nederlandse landschap is en hoe het ontwerpen van buitenruimte bijdraagt aan architectuur, natuur en ecologie. Richtte de OntwerpAcademie op in 2021

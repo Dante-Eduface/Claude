@@ -2,7 +2,7 @@ Ik wil de SHIFT-cockpit bouwen: één pagina waarop Jeroen en ik elke ochtend de
 
 ## Wat SHIFT is
 
-Een keten van vijf agents die particuliere opleiders vindt, de juiste persoon opzoekt, onderzoekt waar we op kunnen aanhaken, en daar berichten bij schrijft. Alles staat in `projects/shift/master/` en wordt beheerd door `.claude/scripts/pipeline.py`. Lees `projects/shift/CLAUDE.md` en `projects/shift/master/LEESMIJ.md` voordat je begint.
+Een keten van vijf agents die particuliere opleiders vindt, de juiste persoon opzoekt, onderzoekt waar we op kunnen aanhaken, en daar berichten bij schrijft. Alles staat in `GTM/ICP/shift/master/` en wordt beheerd door `.claude/scripts/pipeline.py`. Lees `GTM/ICP/shift/CLAUDE.md` en `GTM/ICP/shift/master/LEESMIJ.md` voordat je begint.
 
 ## De databron
 
@@ -38,11 +38,11 @@ De pagina leest deze export en praat zelf niet met het master-document.
 
 ## Design
 
-Verplicht, voordat je iets bouwt: `references/design-system/core/proces.md` en de drie poorten daarin. Dit is een interne tool, dus laad `core/` plus `internal/`, nooit `web/` of `slides/`.
+Verplicht, voordat je iets bouwt: `Design/Design system/core/proces.md` en de drie poorten daarin. Dit is een interne tool, dus laad `core/` plus `internal/`, nooit `web/` of `slides/`.
 
 Let op de spanning die daar zit: `internal/starten.md` schrijft Next.js met shadcn voor, maar dit wordt een Artifact, dus één zelfstandig HTML-bestand. Neem de tokens, de dichtheid (rijen 36px, controls 32px, panelpadding 16px) en de regel dat de primaire knop navy is en groen alleen status betekent. Neem de stack niet over.
 
-Twee bestaande pagina's zijn het bekijken waard als vorm: `archives/targetlijst-nl-oud/berichten-review.html` (de reviewkaarten die we eerder hadden) en `projects/sales-coach/sales-coach.html` (de sidebar-app die nu in gebruik is).
+Twee bestaande pagina's zijn het bekijken waard als vorm: `Archive/targetlijst-nl-oud/berichten-review.html` (de reviewkaarten die we eerder hadden) en `GTM/sales-coach/sales-coach.html` (de sidebar-app die nu in gebruik is).
 
 ## Wat ik niet wil
 

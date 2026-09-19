@@ -48,4 +48,4 @@ Niet door elkaar halen.
 - Diepte is een signaal (dit zweeft, dit is actief), geen versiering.
 
 ## Wat dit systeem niet oplost
-Regels voorkomen dat iets er amateuristisch uitziet. Ze maken het niet onderscheidend. Onderzoek laat zien dat sites tussen 2010 en 2016 meetbaar meer op elkaar zijn gaan lijken door gedeelde libraries en defaults ([Goree e.a., CHI 2021](https://dl.acm.org/doi/10.1145/3411764.3445156)). Het onderscheid moet ergens anders vandaan komen: eigen beeldtaal, eigen woorden, het echte product laten zien. Zie `web/components.md` en de tegenspraak-sectie in `references/research/ux-ui-design-expertwerkwijze.md`.
+Regels voorkomen dat iets er amateuristisch uitziet. Ze maken het niet onderscheidend. Onderzoek laat zien dat sites tussen 2010 en 2016 meetbaar meer op elkaar zijn gaan lijken door gedeelde libraries en defaults ([Goree e.a., CHI 2021](https://dl.acm.org/doi/10.1145/3411764.3445156)). Het onderscheid moet ergens anders vandaan komen: eigen beeldtaal, eigen woorden, het echte product laten zien. Zie `web/components.md` en de tegenspraak-sectie in `Platform/Onderzoek/ux-ui-design-expertwerkwijze.md`.

@@ -37,7 +37,7 @@ de generieke tekst hieronder, wint deze laag.
    machine. **Lane B (echte gegenereerde video) kan hier niet**: geen ffmpeg, geen Higgsfield,
    geen Kie-key. Bied Lane B dus niet aan zonder te zeggen dat er eerst `brew install ffmpeg`
    plus een engine-account nodig is.
-2. Lees het design system: `references/design-system/core/` plus `web/` (marketingsite,
+2. Lees het design system: `Design/Design system/core/` plus `web/` (marketingsite,
    landingspagina). Nooit de hele map. Kleuren, type, spacing en radius komen daarvandaan,
    niet uit je eigen hoofd. Zie ook de merkregels: primaire knop is navy, groen alleen voor
    de hero-CTA of een bevestigde status.
@@ -46,7 +46,7 @@ de generieke tekst hieronder, wint deze laag.
 
 ### De drie poorten winnen van de stappen hieronder
 De skill kent STEP 0/1/2 en gaat daarna bouwen. In deze repo geldt
-`references/design-system/core/proces.md`: **nooit in een klap een af resultaat**.
+`Design/Design system/core/proces.md`: **nooit in een klap een af resultaat**.
 Mapping:
 - **Poort 1 (richting)** = STEP 0 interview + STEP 1 concepten. Twee opties, jouw aanbeveling
   erbij. Dante kiest. De adversariële sparring uit STEP 1 blijft verplicht (verse subagent).
@@ -57,13 +57,13 @@ Dante kan poorten overslaan door "gewoon bouwen" te zeggen. Standaard staan ze a
 
 ### Waar het werk landt
 - Projectgebonden pagina → `projects/<project>/` in deze repo.
-- Losse experimenten en previews → `projects/website-building/` (daar staan al `serve.mjs`,
+- Losse experimenten en previews → `Design/Website/website-building/` (daar staan al `serve.mjs`,
   `screenshot.mjs`, `node_modules/puppeteer-core` en een Chrome-render-pad dat werkt).
 - **Python kan deze Drive-map niet serveren.** Gebruik `node serve.mjs`, niet
   `python3 -m http.server`. En nooit op de voorgrond: `nohup … &`, pollen met curl, daarna
   `pkill`.
 - puppeteer-core staat niet in de skill zelf. Draai `verify.js` en `shot.js` met
-  `NODE_PATH="<repo>/projects/website-building/node_modules" node scripts/verify.js …`.
+  `NODE_PATH="<repo>/Design/Website/website-building/node_modules" node scripts/verify.js …`.
 
 ### Framer-proof bouwen is verplicht als de pagina naar eduface.me gaat
 Gaat het live op de site, dan wordt het in Framer nagebouwd. Dus: stacks met `gap`, nooit
@@ -79,7 +79,7 @@ als een technische keuze, niet als een detail.
 - Geen Artifact maken tenzij Dante er expliciet om vraagt.
 - Schrijf tegen Dante in het Nederlands, bondig, bullets, geen em-dashes. De site-copy zelf
   volgt de taal van het merk.
-- Log een echte keuze (concept gekozen, Framer vs GSAP) in `decisions/log.md`.
+- Log een echte keuze (concept gekozen, Framer vs GSAP) in `Decisions/log.md`.
 
 # Scroll-Film Studio
 

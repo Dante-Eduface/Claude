@@ -23,7 +23,7 @@ Afgevallen
 > "letterlijk citaat"
   bron: <url of document, pagina> · datum: JJJJ-MM-DD · drager: student|beoordelaar|organisatie|panel
    Vaktermen hebben een vaste drager, zie de kop Vaktermen in
-   projects/shift/markets/uk/profiel.md. Lees ze nooit als gewone taal. -->
+   GTM/ICP/shift/markets/uk/profiel.md. Lees ze nooit als gewone taal. -->
 
 ## Toetsprogramma
 

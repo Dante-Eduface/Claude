@@ -26,7 +26,7 @@ eigen opleidingsplan
 2025-06-01
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 DIEP 2026-08-12 GENUANCEERD: opleidingsplan 2025-2030 zegt op p33 letterlijk 'Gezien de ontwikkelingen binnen de Artificial Intelligence (AI) zal o.a. mondelinge verdediging een grotere rol krijgen in de toetsing t.o.v. enkel schriftelijke toetsing'; BELANGRIJKE CORRECTIE: die zin stond al in de januari-2025-versie, dus VOOR haar aantreden, en mag NIET aan haar worden toegeschreven als haar besluit; de echte why-now is dat zij nieuw is na 27 jaar dezelfde voorganger; KRITISCHE TEGENSPRAAK: de zin gaat over SUMMATIEF toetsen en pleit voor MEER mondeling in plaats van schriftelijk, dus alleen bruikbaar als je pitcht op de formatieve laag naast het mondelinge, NOOIT als 'wij lossen het nakijken op' - dat gaat rechtstreeks tegen hun besluit in; location Utrecht | DANTE 2026-08-12: speel in op dat ze meer mondeling wil - wij geloven daar zelf ook in en bouwen daar nu aan, positioneer als bondgenoot in die verschuiving, niet als tegenpartij van hun besluit.
 

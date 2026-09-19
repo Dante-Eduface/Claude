@@ -17,7 +17,7 @@ Webresearch
 https://www.wenb.nl/nieuws/openbaar/2023/interview-met-claudia-peters-opleidingsmanager-bij-stichting-wateropleidingen
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 **Haakje zoals agent 3 het opschreef**
 | LET OP: Bron-URL is dood en redirect naar de homepage. 318 opleidingen klopt niet (ruim 150; 337 = uitvoeringen). 250 freelance examinatoren nergens te vinden. Apify gaf leeg resultaat. Toetsing is grotendeels gesloten kennistoetsing, dus zwakke fit.

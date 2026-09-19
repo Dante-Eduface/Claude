@@ -23,7 +23,7 @@ eigen review als oud-cursist
 2015-08-11
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 DIEP 2026-08-12 PERSOONLIJK EN STERK, review BEVESTIGD: hij is zelf oud-cursist MVK bij Kader (2014-2015) en liet een review met cijfer 9 achter met de zin 'De organisatie achter de lessen en de scriptiebegeleiding vond ik zeer prettig' (springest.nl, 11-08-2015), en is nu manager van precies diezelfde scriptiebegeleiding; MVK telt 112 contacturen plus 96 uur zelfstudie, met examen, scriptie en verdediging voor examinatoren, mentor begeleidt de scriptie, 15 startlocaties; TEGENSPRAAK: Kader positioneert de scriptiebegeleiding juist positief (9/10 en 8.0), dus de insteek moet zijn opschalen zonder het persoonlijke gevoel te verliezen over 15 locaties, NIET een probleem suggereren; LET OP: zijn huidige werkzaam-check is de zwakst onderbouwde van de batch, alleen via een RocketReach-snippet; location Vriezenveen
 

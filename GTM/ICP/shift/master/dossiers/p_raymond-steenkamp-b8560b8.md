@@ -17,7 +17,7 @@ https://libereaux.nl/team/raymond-steenkamp/
 teampagina
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 **Haakje zoals agent 3 het opschreef**
 Op de teampagina: Enthousiast en vanuit de inhoud overtuigen dat is wat ik graag doe. Als directeur van Libereaux ben ik een pleitbezorger van het valideren van ervaring en skills

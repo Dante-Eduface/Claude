@@ -105,7 +105,7 @@ Geen enkel signaal dat dat zo is, maar als het komt: doorvragen wát precies. Bi
 
 **"Wat kost het?"**
 > "Dat hangt van de omvang af, en dat weet ik pas als ik jullie situatie ken."
-Niet in gesprek één. Het NL-model per opleiding staat in references/pricing/.
+Niet in gesprek één. Het NL-model per opleiding staat in GTM/Pricing/.
 
 **Onderwijs Orakel.**
 Als zij die noemt: niet afkraken. Vragen wat ze daar gezien heeft en waar het bij hen op vastliep. Dat is gratis discovery.

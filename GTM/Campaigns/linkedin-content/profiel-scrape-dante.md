@@ -72,4 +72,4 @@ Reacties en comments die Dante plaatst onder posts van anderen, dus de losse int
 
 ## Bestanden
 
-- Ruwe rij-data: `projects/linkedin-content/linkedin-posts-dante-2026-07-22.csv`
+- Ruwe rij-data: `GTM/Campaigns/linkedin-content/linkedin-posts-dante-2026-07-22.csv`

@@ -20,7 +20,7 @@ NVAO-rapport (TNO)
 2023-04-26
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 DIEP 2026-08-12: NVAO-rapport van de osteopathie-bachelor (26-04-2023) beveelt letterlijk aan 'Blijf waken over de studeerbaarheid... met het oog op de vele herhalingsactiviteiten, feedbackmomenten en toetsen', terwijl het jaar-1-portfolio alleen al bestaat uit 12 video's plus 12 reflectieverslagen plus 12 verbeterplannen; BELANGRIJKE TEGENSPRAAK: hetzelfde rapport noemt de toetsing 'robuust' en de feedbackcyclus 'goed ingericht', dus NOOIT framen als 'de toetsing rammelt', puur als volume-observatie; het oude kritische fysio-rapport is van 2011/2012 en mag NIET gebruikt worden; bachelor fysiotherapie sluit af met een scriptie beoordeeld door twee onafhankelijke beoordelaars (niet de begeleiders)
 

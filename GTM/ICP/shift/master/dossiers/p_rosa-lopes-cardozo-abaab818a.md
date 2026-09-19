@@ -23,7 +23,7 @@ https://bureausterk.nl/medewerkers/rosa-lopes-cardozo
 teampagina
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 DIEP 2026-08-07: Bureau STERK = EVC-aanbieder (Erkenning Verworven Competenties) + professionaliseringsbureau, B Corp, NRTO, Culemborg (bureausterk.nl). EVC-kandidaat bouwt eenmalig portfolio met casussen+bewijzen, assessor beoordeelt portfolio + criteriumgericht interview, eindigt in Ervaringscertificaat bij De Examenkamer (bureausterk.nl/ervaringscertificaat). Dit is validering/assessment, GEEN opleidingstraject met feedback-stroom -> zwakke Eduface-fit. | Rosa: onderwijskundige sinds 2019, beoordeelt EVC-trajecten (PABO/onderwijsassistent/kinderopvang), ontwikkelt eigen kindportfolio STERiK (bureausterk.nl/medewerkers/rosa-lopes-cardozo). Geen eigen publicaties/posts gevonden; geen why-now.
 

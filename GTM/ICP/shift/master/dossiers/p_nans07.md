@@ -20,7 +20,7 @@ https://www.nsob.nl/over-nsob/onze-mensen/nmh-nancy-chin-fat
 eigen site (profielpagina)
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 Haar NSOB-profielpagina zet onderzoek en onderwijs in één functie: "Manager onderzoek en onderwijs", met daarnaast een rol als senior onderzoeker (https://www.nsob.nl/over-nsob/onze-mensen/nmh-nancy-chin-fat); "Nancy Chin-A-Fat heeft een achtergrond in sociologie en bestuurskunde" (zelfde pagina); zij staat als auteur op vijf NSOB-publicaties in twee jaar, waaronder "Weten van Wetenschap" (2026) over onderwijsonderzoek naar basisvaardigheden en "Verbeelding verbindt" (2026); haar onderzoekswerk gaat over evacuatie uit Kaboel (commissie Ruys) en de landelijke aanpak huiselijk geweld, dus zwaar beleidswerk naast het onderwijs; NSOB-leerateliers duren 9 maanden en eindpresentaties worden "door een jury beoordeeld", jury onder leiding van decaan Mark van Twist (https://www.nsob.nl/over-nsob/actualiteiten/14e-uitvoering-leeratelier-strategie-afgerond); let op: de MPA-masteropleiding wordt na de huidige lichting niet voortgezet (nsob.nl)
 

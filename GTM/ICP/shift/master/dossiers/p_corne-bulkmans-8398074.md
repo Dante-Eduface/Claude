@@ -20,7 +20,7 @@ https://www.phov.nl/opleiding/hogere-veiligheidskunde/hvk-scripties/
 organisatie
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 DIEP 2026-08-12: een eigen cursist (Bijlsma) schreef in 2024 de HVK-scriptie 'AI en mens in veiligheid', titel bevestigd op phov.nl/opleiding/hogere-veiligheidskunde/hvk-scripties, volledige tekst niet online maar wel op te vragen - AI zit dus al in hun eigen scriptie-onderwerpen; HVK telt 1000 uur waarvan 300 uur scriptie, de MVK-specialisatie 570 uur waarvan 300 uur scriptie; begeleiding via een mentor plus intervisiegroep; Hobeon SKO woont steekproefsgewijs eindexamens bij; hij studeerde bachelor aan De Haagse Hogeschool (onze KLANT) en arbeidshygiene aan Hogeschool Breda; woont in Rucphen. | CORRECTIE op het oude citaat: dat was twee pagina's samengeknipt en bevatte een fout woord. Juist is 'voor de scriptie voer je een praktijkopdracht uit, bij voorkeur in het eigen bedrijf of bij een grote klant' (phov.nl/opleiding/specialisatie-middelbare-veiligheidskunde/inhoud-specialisatie-mvk/) en apart 'Het scriptietraject wordt afgesloten met een presentatie en verdediging van de scriptie' (phov.nl/.../begeleiding-en-toetsing/, dat is de enige zin die echt op die URL staat)
 

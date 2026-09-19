@@ -20,7 +20,7 @@ https://coniche.nl/business-school/docenten/rik-bronswijk/
 teampagina
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 **Haakje zoals agent 3 het opschreef**
 Op zijn docentenpagina: "Echt contact maken mensenwerk is en blijft. Mensen raken en het verschil maken." Daarnaast voorzitter van de Workforce Managers Association

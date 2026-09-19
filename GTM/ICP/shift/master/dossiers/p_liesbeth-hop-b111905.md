@@ -10,7 +10,7 @@
 https://www.mediaenmaatschappij.nl/images/_new/web/academie/Procedures/Examenprocedure_Nationale_Academie_voor_Media_en_Maatschappij_vanaf_2024.pdf
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 **Haakje zoals agent 3 het opschreef**
 Examenprocedure (vanaf 1-9-2024): persoonlijk beleidsplan verplicht bij alle 4 opleidingen, beoordeeld door 2 onafhankelijke docenten. Plus dossiers met praktijkopdrachten beoordeeld door hoofddocent, herkansing mogelijk.

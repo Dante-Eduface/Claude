@@ -17,7 +17,7 @@ LinkedIn (functietitel), 24-07-2026
 https://www.linkedin.com/in/irma-van-der-velden-4b385113/
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 **Haakje zoals agent 3 het opschreef**
 LinkedIn: ze leidde 2005-2016 de Master Physician Assistant bij Hogeschool Rotterdam, en HR is onze klant. Haakje EN bewijs in een. Let op: Eduface draait bij HR's LERARENOPLEIDING, niet bij haar oude Master, dus 'bij hun lerarenopleiding' i.p.v. 'daar' (anders claim je deployment op haar opleiding, en dat is niet zo). Breederode werkt nog met HR samen voor validering, dus HR is een gedeelde bekende.

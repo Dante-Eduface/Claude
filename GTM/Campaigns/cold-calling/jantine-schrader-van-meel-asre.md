@@ -241,7 +241,7 @@ niet."
 - Medewerkerspagina ASRE (alle 18 namen en functies) — https://asre.nl/over-asre/medewerkers/
 - Organisatiepagina ASRE (directie en RvC) — https://asre.nl/over-asre/organisatie/
 - Interview Jantine Schrader op asre.nl, 23-03-2021 — https://asre.nl/ik-weet-wat-het-is-studeren-naast-een-drukke-baan/
-- Dossier p_jantine-schrader-van-meel-43a8554 in projects/targetlijst-nl
+- Dossier p_jantine-schrader-van-meel-43a8554 in GTM/ICP/targetlijst-nl
 
 **Secundair**
 - Vastgoedjournaal, benoeming tot programmamanager MRE — https://vastgoedjournaal.nl/news/49306/asre-benoemt-jantine-schrader-tot-programmamanager-mre

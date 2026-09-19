@@ -23,7 +23,7 @@ eigen vacaturepagina
 2026-08-12
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 DIEP 2026-08-12: het nakijken is uitbesteed aan freelance 'nakijkdocenten' die volledig vanuit huis werken, en de eigen vacaturetekst vraagt expliciet om 'constructieve feedback te formuleren' (brave-minds.nl/freelance-examinator); circa 1000 studenten per jaar, diploma in 15 maanden, een vak per keer; TEGENSPRAAK: de schoolinspectie prijst juist de lage uitval, dus NIET framen als nakijklast of achterstand, alleen als kalibratievraag over een thuiswerkende freelance-schil; geen persoonlijk haakje gevonden
 

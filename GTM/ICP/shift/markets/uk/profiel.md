@@ -114,7 +114,7 @@ Dit is het sterkste haakje van deze markt. UK-aanbieders zetten hun feedbackterm
 **Niet gevonden.** The University of Law publiceert geen getal: de Feedback & Feedforward Policy (https://www.law.ac.uk/globalassets/13.-media--doc-repo/08.-policies/pdf_policies_assessment-feedback-policy.pdf, gelezen 10-09-2026) delegeert het, par. 11: *"detail will be provided in programme-specific information, e.g., course handbooks"*, en die handbooks zijn niet publiek. QA Higher Education: geen termijn online, gezocht op qa.com en qahighereducation.com op "assessment and feedback policy" en "working days"; hun *Querying Academic Feedback or Marks* (2025) beschrijft alleen de moderatieketen. LSBF UK: niet gevonden, gezocht op lsbf.org.uk op "working days" plus feedback en op student handbook, de enige treffers zijn klachttermijnen. Oxford International en ONCAMPUS: niet gezocht.
 
 ## Vaktermen
-Zelfde principe als `references/onderwijs-vaktermen.md`, maar Engels en UK. Staat een term hier, dan lees en citeer je hem alleen in deze betekenis, met deze drager. Wil je de last naar de andere kant vertalen, dan heb je een tweede citaat nodig dat die kant zelf noemt.
+Zelfde principe als `Platform/onderwijs-vaktermen.md`, maar Engels en UK. Staat een term hier, dan lees en citeer je hem alleen in deze betekenis, met deze drager. Wil je de last naar de andere kant vertalen, dan heb je een tweede citaat nodig dat die kant zelf noemt.
 
 | Term | Betekenis in UK HE | Drager | Haakje voor ons? |
 |---|---|---|---|
@@ -150,7 +150,7 @@ Poort 0b blijft: minstens een programma **langer dan een jaar**. Meet het langst
 ## Prijsmodel
 GBP. **Voorlopig: NL-staffel omgerekend, wacht op bevestiging van Dante.** Er is nog geen door Dante vastgesteld UK-prijsmodel.
 
-De omrekening is de NL-staffel maal 0,85, afgerond: A tot 500 plaatsen = £8.500, B tot 1.500 = £12.750, C tot 3.000 = £18.250, D tot 6.000 = £28.500, E daarboven = £43.750. Drempel voor poort 0d is £8.500 jaarwaarde, en onze fee mag hoogstens 10% van de programma-omzet zijn. De toolfee die in NL €7.500 per opleiding is komt in dezelfde omrekening op ongeveer £6.400 uit, maar dat getal is niet apart bevestigd, dus reken met de staffel en niet met de losse componenten. Bron van de NL-basis: `references/pricing/prijsmodel-nl-opleiding-26-27.md`. Harde waarden plus de markering `_voorlopig` staan in `profiel.json`.
+De omrekening is de NL-staffel maal 0,85, afgerond: A tot 500 plaatsen = £8.500, B tot 1.500 = £12.750, C tot 3.000 = £18.250, D tot 6.000 = £28.500, E daarboven = £43.750. Drempel voor poort 0d is £8.500 jaarwaarde, en onze fee mag hoogstens 10% van de programma-omzet zijn. De toolfee die in NL €7.500 per opleiding is komt in dezelfde omrekening op ongeveer £6.400 uit, maar dat getal is niet apart bevestigd, dus reken met de staffel en niet met de losse componenten. Bron van de NL-basis: `Archive/prijsmodel-nl-opleiding-26-27.md`. Harde waarden plus de markering `_voorlopig` staan in `profiel.json`.
 
 Twee dingen om aan Dante voor te leggen voor dit definitief wordt: 1) UK-tuitionfees per student liggen hoger dan NL-cursusprijzen, dus de betaalbaarheidstoets van 10% zal hier bijna nooit bijten en de drempel doet dan al het werk; 2) bij pathway providers en franchise-colleges zit de koopbeslissing vaak centraal (Kaplan International Pathways, QAHE-Ulster-governance), dus de relevante eenheid is eerder een groep colleges dan een losse opleiding.
 

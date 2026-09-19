@@ -17,7 +17,7 @@ LinkedIn (functietitel), 24-07-2026
 https://www.variva.nl/taalpakketten/ ; https://www.variva.nl/modulair-leren/ ; https://www.emerce.nl/wire/examenleverancier-exallent-presenteert-eerste-geautomatiseerd-beoordeelde-rekenexamen-mbo
 
 ## Citaten
-LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie references/onderwijs-vaktermen.md.
+LET OP: dit is overgezet uit de oude CSV-velden. De dragers zijn nog niet toegekend, dus lees hier geen last van de beoordelaar in die er niet staat. Zie Platform/onderwijs-vaktermen.md.
 
 **Haakje zoals agent 3 het opschreef**
 Variva verkoopt taalpakketten Nederlands 3F, Schrijven is apart geprijsd onderdeel (pakket B2 = idem zonder Schrijven). Erwin komt uit Exallent (examenleverancier mbo, eerste geautomatiseerd beoordeeld rekenexamen mbo feb 2024, onbekend of hij er toen nog werkte). Opvolghaakje: 'modulair leren' belofte aan werkgevers over bijsturen na elke module, 13 locaties.
