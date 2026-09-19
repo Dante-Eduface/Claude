@@ -1,11 +1,14 @@
 ---
-name: content-voice
-description: Schrijft en reviseert klant-gerichte content in de juiste stem, met scherp onderscheid per content-type (formele mail, presentatie, marketingtekst, cold outreach). Kernregel: geen vage, overbodige of AI-klinkende taal. Verwerkt Dante's feedback SCOPED per type, zodat feedback op een mail nooit de marketingstem verandert en andersom. Trigger wanneer je klant-gerichte content schrijft of herschrijft, en wanneer Dante feedback geeft op een tekst ("te vaag", "te lang", "klinkt als AI", "dit klinkt raar", "overbodig", "verwerk deze feedback").
+name: schrijven
+description: Schrijft en reviseert alles wat naar buiten gaat — mails, offertes, website copy, presentaties, cold outreach, voorstellen — in de juiste stem per content-type, en reviewt bestaande tekst op overtuigingskracht. Kernregel, geen vage, overbodige of AI-klinkende taal. Verwerkt Dante's feedback SCOPED per type, zodat feedback op een mail nooit de marketingstem verandert. Trigger wanneer je klant-gerichte content schrijft of herschrijft, wanneer Dante feedback geeft op een tekst ("te vaag", "te lang", "klinkt als AI", "overbodig", "verwerk deze feedback"), en bij "kan dit korter", "is dit overtuigend genoeg", "check deze tekst", "maak dit sterker".
 ---
 
-# Content Voice
+# Schrijven
 
-De stem-discipline voor alles wat naar buiten gaat. Bestaat omdat mijn content vaak te **vaag en overbodig** is en soms **als AI klinkt**. Deze skill traint dat eruit, en houdt de stem per content-type apart.
+De schrijfskill voor alles wat naar buiten gaat: stem-discipline plus overtuigingstechniek.
+Opgenomen uit de vroegere skills `schrijven` en `schrijven`.
+
+De stem-discipline. Bestaat omdat mijn content vaak te **vaag en overbodig** is en soms **als AI klinkt**. Deze skill traint dat eruit, en houdt de stem per content-type apart.
 
 ## Eerste stap, elke keer
 
@@ -47,7 +50,7 @@ De stem verschilt per type. Verwar ze niet. Details staan in `voice-by-type.md`,
 - **Formele mail** (prospect, academicus, beslisser): menselijk maar professioneel, eerlijk, kort, één duidelijke CTA. Hou het beknopt, een drukke lezer haakt af bij een lap tekst.
 - **Presentatie/slides**: punchy, één idee per slide, weinig woorden. Bouw via `marketing-creatives`.
 - **Marketingtekst**: casual, menselijk, plain, een hook. Verkoopt een gevoel, geen feature-dump.
-- **Cold outreach**: verankerd aan het `cro-of-eduface`-handboek (Discovery-logica, pijn + proof + why-now).
+- **Cold outreach**: verankerd aan het `cro`-handboek (Discovery-logica, pijn + proof + why-now).
 
 Voor LinkedIn-posts bestaat een aparte skill (`linkedin-content`) met stem-profielen per persoon. Gebruik die daar; deze skill is voor de rest.
 
@@ -64,8 +67,31 @@ Als Dante feedback geeft op een tekst:
 
 Uitzondering: alleen als Dante expliciet zegt dat iets voor álle content geldt, zet je het in de kernregel hierboven in plaats van onder één type.
 
+## Overtuigingstechniek: de vier pijlers
+
+Uit een Nederlands boek over overtuigend schrijven bij aanbestedingen. Generiek genoeg voor
+offertes, outreach, website copy, LinkedIn en voorstellen. Lees
+`references/schrijfprincipes.md` voor de volledige uitwerking per pijler voordat je
+een langere tekst schrijft of reviewt.
+
+1. **Structuur** — kernboodschap eerst, niet pas in de conclusie. Tussenkopjes als reddingsboei. Korte alinea's, max 5-6 regels, met witregels ertussen.
+2. **Schrijfstijl** — MANDI: kan het korter? Korte zinnen, gemiddeld 10-15 woorden, gemengd met een enkele lange. Actief, nooit lijdend.
+3. **Neuro-woorden** — gedoseerd woorden rond vertrouwen, resultaat, gemak, autoriteit. Eén tot drie per sectie, niet meer, anders klinkt het als een reclamefolder.
+4. **Vormgeving** — overzicht, positieve emotie, herkenbare huisstijl.
+
+Deze pijlers zijn **aanvullend** op de kernregel hierboven en op
+`.claude/rules/communication-style.md`. Bij conflict wint de communicatiestijl-regel.
+
+### Een bestaande tekst reviewen
+
+1. Loop de vier pijlers langs als checklist.
+2. Geef per pijler concrete feedback, en schrijf de betere versie er meteen bij. Niet "dit kan beter".
+3. Wijs wollige woorden en passieve zinnen specifiek aan.
+4. Sluit af met een verdict: klaar, of de 2-3 dingen die het meeste verschil maken.
+
 ## Done
 
 - Type bepaald, juiste stem + feedback-log gelezen.
 - Anti-vaagheid-check gedaan: geen AI-tells, niks vaags of overbodigs, gevarieerd ritme, geen em-dashes.
+- Bij een langere tekst: de vier pijlers langsgelopen.
 - Nieuwe feedback correct gelogd onder het juiste type, zonder de andere types te vervuilen.

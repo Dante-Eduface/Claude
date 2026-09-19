@@ -30,7 +30,7 @@ Instructeurs die 2 tot 4 uur per dag nakijken bovenop 8 tot 10 uur lesgeven, en 
 - TIO Business School en ICM Opleidingen nooit noemen. Bath Spa alleen als geanonimiseerde UK-pilot tenzij Dante toestemming heeft. Klantnamen die mogen: Hogeschool Rotterdam (lerarenopleiding), De Haagse Hogeschool, Tilburg University, Radboud Universiteit.
 - Citaten van prospects niet met naam op een publieke pagina. Gebruik ze als bron voor de formulering, niet als testimonial.
 - Geen claims buiten `references/eduface-product.md`. Geen "minder uitval" beloven, geen implementatietijd, geen NSS-effect.
-- Schrijfstijl: `.claude/rules/communication-style.md` en de skill `content-voice`. Design: `references/design-system/core/` plus `web/`, via de drie poorten uit `core/proces.md`.
+- Schrijfstijl: `.claude/rules/communication-style.md` en de skill `schrijven`. Design: `references/design-system/core/` plus `web/`, via de drie poorten uit `core/proces.md`.
 
 ## De 50 goedgekeurde uitspraken, per segment en thema
 

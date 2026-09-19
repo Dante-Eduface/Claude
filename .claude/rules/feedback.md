@@ -25,7 +25,7 @@ Zegt Dante zelf "altijd" of "nooit" of "vanaf nu", dan slaat het patroon over en
 |---|---|
 | Correctie op één bericht of lead | het record zelf, via `pipeline.py` |
 | Feedback op wat een SHIFT-agent oplevert | het leerpuntenbestand van die agent, zie hieronder |
-| Een vastgelegde regel over stijl | `.claude/skills/content-voice/feedback-log.md`, gescheiden per content-type |
+| Een vastgelegde regel over stijl | `.claude/skills/schrijven/feedback-log.md`, gescheiden per content-type |
 | Een besluit met gevolgen | `decisions/log.md`, met de redenering erbij |
 | Iets dat elke sessie moet gelden | de memory-map, één bestand per feit |
 

@@ -7,7 +7,7 @@ description: Diepgaand, bronnen-gevalideerd onderzoek naar één persoon (prospe
 
 Diep onderzoek naar één persoon, zodat Dante ze scherp kan benaderen (outreach, gesprek, stakeholder-map). De lat: **elke claim is gevalideerd met een bron. Geen aannames.**
 
-Dit is een onderzoeksmethode-skill. Voor de sales-vertaling van wat je vindt, leun op `cro-of-eduface`. Voor het in kaart brengen van meerdere mensen bij één instelling, zie `stakeholder-mapping`. Deze skill gaat over de **diepte per persoon**.
+Dit is een onderzoeksmethode-skill. Voor de sales-vertaling van wat je vindt, leun op `cro`. Voor het in kaart brengen van meerdere mensen bij één instelling, zie `stakeholder-mapping`. Deze skill gaat over de **diepte per persoon**.
 
 ## Twee modi: bepaal deze eerst
 

@@ -109,7 +109,7 @@ Deze regels gelden voor elk klant-gericht bericht, niet per kanaal apart.
 ## Cold outreach
 (Lemlist, eerste koude mail/DM)
 
-- Verankerd aan het **`cro-of-eduface`-handboek**: Discovery-logica, open op een waarschijnlijke pijn, niet op een feature.
+- Verankerd aan het **`cro`-handboek**: Discovery-logica, open op een waarschijnlijke pijn, niet op een feature.
 - Pijn + relevante proof (bv. Bath Spa, kwalitatief) + why-now + zachte CTA naar een gesprek.
 - Weef de UK/NL HE-kalender/seizoen mee (`outreach-seasonality`).
 - Herhaal geen eerdere touches uit de sequence; open op iets nieuws.

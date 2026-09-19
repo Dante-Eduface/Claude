@@ -87,7 +87,7 @@ Twee voorbeelden uit de praktijk, want dit vraagt lezen en oordelen:
 - *"Teamcoach OKE onderwijs, kwaliteit en examenservice"* is een uitstekende rol ondanks het woord teamcoach.
 - *"Learning Consultant"* klinkt onderwijskundig maar is bij een trainingsbureau vaak commercieel. Kijk verder.
 
-Bij twijfel over de sales-logica: roep de **`cro-of-eduface`** skill aan.
+Bij twijfel over de sales-logica: roep de **`cro`** skill aan.
 
 **Bij een kleine organisatie zonder onderwijslaag** is de eigenaar of directeur gewoon het antwoord.
 

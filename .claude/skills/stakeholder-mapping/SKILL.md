@@ -9,7 +9,7 @@ Map who matters at a target institution and what role each person plays in the d
 
 **Scope boundary (important):** this skill does stakeholder mapping only. Do NOT go researching cost figures, ROI, jaarverslag spend, or a self-built tool's business case here. Detecting *that* a self-built assessment tool exists (and who owns it) is in scope; costing it is not. If Dante wants numbers, that is a separate module, say so and stop.
 
-Role vocabulary (EB, champion, coach, enemy, ally, fan, swing) follows the `cro-of-eduface` handbook. Read that skill's role definitions if unsure.
+Role vocabulary (EB, champion, coach, enemy, ally, fan, swing) follows the `cro` handbook. Read that skill's role definitions if unsure.
 
 ## The loop
 

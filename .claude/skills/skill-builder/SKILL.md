@@ -56,7 +56,7 @@ Two required frontmatter fields: `name` and `description`. **The description is 
 - Keep the body **concise and skimmable**: short procedure, key IDs, where the automation lives. Bullets over paragraphs. No em-dashes (house style).
 
 Look at the two existing skills in this project as your templates:
-- `.claude/skills/cro-of-eduface/SKILL.md` — a "persona + method" skill that reads a handbook first.
+- `.claude/skills/cro/SKILL.md` — a "persona + method" skill that reads a handbook first.
 - `.claude/skills/hot-lead-outreach/SKILL.md` — an "operational loop" skill with IDs, cron, and a clear done-state.
 
 ### 4. Split out detail (progressive disclosure)

@@ -1,11 +1,25 @@
 ---
-name: meddpicc-sales-grid
+name: meddpicc
 description: The SCORING and coaching skill (not the visual one). Coach the user through scoring an Eduface deal on the MEDDPICC sales grid, one criterion at a time, in MEDDPICC_Sales_Grid.xlsx. Use this whenever the user wants to fill in, score, review, update, or sanity check a deal's qualification, or asks where a deal sits in the sales funnel, whether a gate was skipped, or how qualified a deal is. Triggers: "kwalificeer deze deal", "score deze deal", "vul de grid in", "hoe staat deze deal ervoor", "MEDDPICC voor [klant]", "waar staat deze deal in de funnel". The job is to make the user understand every step, not to autofill the sheet. This skill does NOT render a PNG or push anything to Close. If the user only wants a visual plaat/PNG of an ALREADY-filled grid, or wants it attached in Close, use the sso-grid skill instead, NOT this one.
 ---
 
 # Eduface MEDDPICC Sales Grid, fill in coach
 
 ## Companion reference
+
+## Bronnen: wat telt als bewijs
+
+**Close CRM is leidend.** Haal notities, gesprekstranscripties, e-mails en activiteit
+voor de deal op uit Close. Dit is de enige bron voor concrete scores; aannames en losse
+indrukken tellen niet als bewijs. Geeft Close geen toegang of is er te weinig materiaal
+voor een onderdeel, zeg dat expliciet in plaats van te gokken.
+
+Het deal-dossier in `GTM/Accounts/<instelling>/` is aanvullende context voor namen, rollen
+en geschiedenis, maar niet nauwkeurig genoeg om zelf een onderdeel op te scoren. Gebruik
+het om te weten waar je in Close naar moet zoeken.
+
+Opgenomen uit de vroegere skill `meddpicc-qualifier`.
+
 
 `references/sops/meddpicc-states-and-gates.md` holds the full states-and-gates
 reference: the six sales stages with their exit gates, and per element the proof

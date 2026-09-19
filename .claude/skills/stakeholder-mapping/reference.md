@@ -33,7 +33,7 @@ Goal: turn the verified name list into a role map using handbook vocabulary.
 - Read recent posts and stated expertise for leanings. Someone publicly enthusiastic about the problem you solve is a champion candidate; someone who is the public face of a competing internal approach is an enemy candidate.
 - Note dual-role risk: the person who leads the team that builds the internal tool is either your strongest champion (sees buying as the smart route) or your biggest enemy (wants to keep building). Their public tone tells you which way they lean. That person is priority #1 to pull your way.
 
-**Classify to handbook roles** (see `cro-of-eduface`): EB, champion, coach, enemy, ally (e.g. privacy/security gate you can win), fan (interested but no line authority, e.g. a data scientist), swing/decision-maker (holds the build-vs-buy call).
+**Classify to handbook roles** (see `cro`): EB, champion, coach, enemy, ally (e.g. privacy/security gate you can win), fan (interested but no line authority, e.g. a data scientist), swing/decision-maker (holds the build-vs-buy call).
 
 **Second champion route (do this deliberately):**
 - Do not stop at the core IT / edtech department. Look for an academic sponsor in a faculty who owns the outcome (student success, retention, assessment quality). A prize-winning learning-analytics lead, a vice-dean of education, a data scientist. Work this route in parallel to the IT route.

@@ -41,7 +41,7 @@ Deze regel zet de **funnelpositie**. Elke andere regel wordt hiertegen gecheckt.
 | 8 | Go obtained | EB bevestigt prioriteit en signaleert budget |
 | 10 | Sponsoring | EB beschermt de deal actief door procurement heen |
 
-**Alleen de EB bevestigt prioriteit en budget.** De EB-meeting is de Go/No-Go gate. Bereik ze vóór de POV. De EB is de **uitrol-budgethouder**, niet de manager die een pilot kan goedkeuren (zie `cro-of-eduface`).
+**Alleen de EB bevestigt prioriteit en budget.** De EB-meeting is de Go/No-Go gate. Bereik ze vóór de POV. De EB is de **uitrol-budgethouder**, niet de manager die een pilot kan goedkeuren (zie `cro`).
 
 ## 4. Decision Criteria — weging 3
 | Score | Status | Betekenis |

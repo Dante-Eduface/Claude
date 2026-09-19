@@ -38,7 +38,7 @@ Lees eerst het marktprofiel (`projects/shift/markets/<code>/profiel.md`): de kop
 
 ## De ook-naar-100-anderen-test
 
-Voor je schrijft, één vraag: **had dit bericht ook naar honderd anderen gekund?** Ja, dan is het haakje niet af. Dit is dezelfde lat als in `targeted-outreach`.
+Voor je schrijft, één vraag: **had dit bericht ook naar honderd anderen gekund?** Ja, dan is het haakje niet af. Dit is dezelfde lat als in `outreach`.
 
 Tweede test: **waarom stuurt uitgerekend Dante dit, en waarom nu?** Kun je dat niet in één zin beantwoorden, dan is er geen why-now en wordt het bericht genegeerd.
 

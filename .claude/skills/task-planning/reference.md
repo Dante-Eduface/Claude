@@ -17,7 +17,7 @@ Ask, in order:
 ### Tie-breakers (when two tasks land in the same tier)
 
 1. **Deadline proximity** — sooner wins.
-2. **Deal stage** — a later-stage deal (POV, business case) beats a cold/early one. Use the `cro-of-eduface` 6-stage map if a task is tied to a specific deal.
+2. **Deal stage** — a later-stage deal (POV, business case) beats a cold/early one. Use the `cro` 6-stage map if a task is tied to a specific deal.
 3. **Impact per effort** — a 20-minute task that unblocks a deal beats a 3-hour task that nudges a metric.
 
 ### Watch-outs

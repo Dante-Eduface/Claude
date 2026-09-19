@@ -1,11 +1,24 @@
 ---
 name: outreach
-description: Agent 4 van de SHIFT-pijplijn, voor elke markt. Schrijft uit het dossier van agent 3 per persoon het LinkedIn-connectieverzoek (max 300 tekens), mail 1 (onderwerp plus ~110 woorden) en de reminder, in de taal en het register van het marktprofiel. Levert altijd het haakje met bron en de redenering erbij. Komt het niet boven "citeren en dan pitchen" uit, dan schrijft de skill niets en legt het aan Dante voor. Trigger wanneer Dante zegt "schrijf de berichten", "agent 4", "maak outreach voor deze lijst", "schrijf een connectieverzoek voor [naam]", "write the UK messages", of een wachtrij aanwijst. Vervangt linkedin-outreach sinds 10-09-2026 voor de pijplijn; voor losse NL-mails buiten de pijplijn blijft targeted-outreach bestaan.
+description: Agent 4 van de SHIFT-pijplijn, voor elke markt. Schrijft uit het dossier van agent 3 per persoon het LinkedIn-connectieverzoek (max 300 tekens), mail 1 (onderwerp plus ~110 woorden) en de reminder, in de taal en het register van het marktprofiel. Levert altijd het haakje met bron en de redenering erbij. Komt het niet boven "citeren en dan pitchen" uit, dan schrijft de skill niets en legt het aan Dante voor. Trigger wanneer Dante zegt "schrijf de berichten", "agent 4", "maak outreach voor deze lijst", "schrijf een connectieverzoek voor [naam]", "write the UK messages", of een wachtrij aanwijst. Vervangt linkedin-outreach sinds 10-09-2026 voor de pijplijn; voor losse NL-mails buiten de pijplijn blijft outreach bestaan.
 ---
 
 # Agent 4: de berichten
 
 Elk contact krijgt een handgemaakt bericht, want per organisatie is er maar één persoon en er is geen tweede lane om achter te schuilen.
+
+## Twee standen
+
+Deze skill heeft twee ingangen. Bepaal altijd eerst welke van toepassing is.
+
+- **Stand 1 — pijplijn (dit document).** Agent 4 van SHIFT. De aanleiding is een dossier
+  dat agent 3 heeft opgeleverd. Je schrijft het LinkedIn-connectieverzoek, mail 1 en
+  de reminder, en schrijft ze terug naar het master-document.
+- **Stand 2 — los signaal.** Zie `los-signaal.md`. De aanleiding komt buiten de pijplijn
+  om: een aanmelding, een lijst opleiders, of "wie moet ik mailen bij deze school".
+  Daar doe je de research zelf via `person-research` en `stakeholder-mapping`,
+  en bepaal je eerst het segment en poort 0.
+
 
 Per persoon lever je drie stukken, allemaal in de taal van de markt:
 1. het **connectieverzoek** van maximaal 300 tekens, met de vraag er al in;
@@ -162,7 +175,7 @@ Batches van 10 tot 15 personen. Rapporteer pas aan het eind van een batch, en le
 
 - `voorbeelden-dante.md` in deze map. Dante's echte berichten, Engels en Nederlands, met warmte-label. Dat is de lat, niet je eigen smaak. Het Ken-bericht (Engels, koud, kreeg reactie) is het model voor een Engelstalige markt.
 - `haakje-zoeken.md` in deze map. De originaliteitsladder, waar je zoekt, en wanneer je stopt.
-- `content-voice` voor de stem.
+- `schrijven` voor de stem.
 - `references/eduface-product.md`: de enige bron voor wat je over Eduface beweert.
 
 ## De loop

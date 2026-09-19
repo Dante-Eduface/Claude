@@ -1,13 +1,13 @@
 ---
 name: linkedin-content
-description: Schrijft LinkedIn-posts in 4 stemmen (Dante, Jeroen, Menno, Eduface company page) vanuit gekalibreerde stem-profielen + content-pijlers, plak-klaar voor Buffer. Trigger wanneer Dante zegt "schrijf een LinkedIn post", "maak content voor Jeroen/Menno/Eduface", "linkedin batch", "content kalender", "thought leadership post", of een post in iemands stijl vraagt. Stemmen worden gekalibreerd op echte posts in voice-samples/. Anchored aan voice-profiles.md, content-pillars.md en het cro-of-eduface handboek.
+description: Schrijft LinkedIn-posts in 4 stemmen (Dante, Jeroen, Menno, Eduface company page) vanuit gekalibreerde stem-profielen + content-pijlers, plak-klaar voor Buffer. Trigger wanneer Dante zegt "schrijf een LinkedIn post", "maak content voor Jeroen/Menno/Eduface", "linkedin batch", "content kalender", "thought leadership post", of een post in iemands stijl vraagt. Stemmen worden gekalibreerd op echte posts in voice-samples/. Anchored aan voice-profiles.md, content-pillars.md en het cro handboek.
 ---
 
 # LinkedIn Content
 
 Schrijft LinkedIn-posts in de 4 Eduface-stemmen en levert ze plak-klaar voor Buffer (Dante's scheduler). Geen autoposting: de skill schrijft, Dante plant in Buffer.
 
-Handboek-lens: elke post is top-of-funnel demand-gen die Stage 1 (Discovery) voedt. De taak is institutionele pijn zichtbaar maken bij de juiste mensen, niet likes scoren. Koppel waarde aan pijn op instituutsniveau (retention, financiele gezondheid, risk), of zet een buying-criterion (differentiatie vs de Enemy). Zie de `cro-of-eduface` skill.
+Handboek-lens: elke post is top-of-funnel demand-gen die Stage 1 (Discovery) voedt. De taak is institutionele pijn zichtbaar maken bij de juiste mensen, niet likes scoren. Koppel waarde aan pijn op instituutsniveau (retention, financiele gezondheid, risk), of zet een buying-criterion (differentiatie vs de Enemy). Zie de `cro` skill.
 
 ## De 4 stemmen (detail in `voice-profiles.md`)
 
@@ -21,7 +21,7 @@ Handboek-lens: elke post is top-of-funnel demand-gen die Stage 1 (Discovery) voe
 1. Bepaal per post: WIE (stem) + WELKE pijler/invalshoek (`content-pillars.md`) + TAAL + FORMAT.
 2. Schrijf vanuit het stem-profiel. Neem een scherp standpunt in (zie House rules). Geen generieke AI-tekst.
 3. Lever per post: hook (regel 1), body, optionele zachte CTA, format-notitie, hashtags. Plak-klaar voor Buffer.
-4. Bij een batch: spreid pijlers en stemmen, hou de UK HE-kalender aan (zie `cro-of-eduface` seizoens-logica), lever als markdown-lijst.
+4. Bij een batch: spreid pijlers en stemmen, hou de UK HE-kalender aan (zie `cro` seizoens-logica), lever als markdown-lijst.
 
 ## House rules
 

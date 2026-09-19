@@ -1,7 +1,8 @@
----
-name: targeted-outreach
-description: Van een interesse-signaal of een lijst opleiders naar de juiste persoon per organisatie plus een mail die echt klopt en nooit als massmailing voelt. Werkt in twee segmenten: bij hogescholen en universiteiten routeert het omhoog naar de eigenaar van digitaal onderwijs, bij particuliere opleiders (NRTO/CRKBO) direct naar de directeur of eigenaar. Kwalificeert eerst op poort 0 (beoordelen ze zelf werk van lerenden), onderzoekt dan persoon EN organisatie via person-research en stakeholder-mapping, en schrijft mails die openen met een concreet "ik las/ik zag ...". Kan een lange lijst in twee passes aan. Trigger wanneer Dante zegt "maak outreach voor deze aanmelders", "wie moet ik mailen bij [school]", "zoek de juiste contacten bij deze accounts", "zoek de directeur van deze opleiders", "schrijf gepersonaliseerde mails voor deze lijst", of "koude introductie bij [instelling]".
----
+# Stand 2 — los signaal of losse lijst
+
+Opgenomen uit de vroegere skill `outreach`. Gebruik deze stand wanneer
+de aanleiding buiten de SHIFT-pijplijn om komt: een aanmelding, een lijst
+opleiders, of een vraag als "wie moet ik mailen bij deze school".
 
 # Targeted Outreach
 
@@ -13,8 +14,8 @@ Dit is Dante's werk tot de **Discovery-gate** (`scope-discovery-gate`). Doel van
 
 - **`stakeholder-mapping`** — de juiste persoon en de org-structuur vinden (manager, faculteit, Head of Digital Education).
 - **`person-research`** — diep, bronnen-gevalideerd onderzoek op de gekozen contactpersoon. Geen aannames.
-- **`cro-of-eduface`** — de sales-logica: welke stage, wat is de taak van de mail, welke pijn/why-now.
-- **`content-voice`** — de mail in de juiste stem schrijven, insteek-eerst, niet vaag, geen AI-taal.
+- **`cro`** — de sales-logica: welke stage, wat is de taak van de mail, welke pijn/why-now.
+- **`schrijven`** — de mail in de juiste stem schrijven, insteek-eerst, niet vaag, geen AI-taal.
 - **`marketing-creatives`** (optioneel) — een visual meesturen als dat de mail sterker maakt (bv. een mockup).
 
 ## De loop
@@ -172,11 +173,11 @@ Doe niet alsof. Benoem hard wat je niet kon verifiëren (bv. "LinkedIn zat dicht
 Niet-onderhandelbaar:
 - **Is de persoon een webinar-aanmelder? Dan opent de mail 100% met die aanmelding.** Dat is de reden van contact en de warme aanleiding ("ik mail je omdat je je hebt aangemeld voor ons webinar met De Haagse Hogeschool"). Vergeet dit nooit en schuif het niet naar paragraaf 2. Een andere hook (scriptie, project) mag daarna volgen, niet ervoor.
 - **Anders: open met een concreet "ik las ..." of "ik zag ..."** met een specifiek ding (een rede, een project, een pagina, een uitspraak). Nooit vaag ("ik zag dat jullie met AI bezig zijn" is te zwak).
-- **Kort. Snijd elke overbodige zin eruit.** Context mag, maar focus op zo min mogelijk. Geen lege verbindingszinnen ("dat sluit precies aan op ..."); zeg het concreet. Zie `content-voice`.
+- **Kort. Snijd elke overbodige zin eruit.** Context mag, maar focus op zo min mogelijk. Geen lege verbindingszinnen ("dat sluit precies aan op ..."); zeg het concreet. Zie `schrijven`.
 - **Herhaal geen info die de persoon al in een eerdere mail kreeg** (bv. dat het webinar is uitgesteld, of "je hoort van ons als de datum staat"). Uit de Gmail-historie weet je wat ze al hebben gelezen. Verwijs kort naar de aanleiding, leg niks opnieuw uit.
 - **Elke mail moet volledig kloppen** en aantoonbaar over déze persoon/instelling gaan. Als het ook naar 100 anderen had gekund, is het niet goed genoeg.
 - **Eén duidelijke CTA** naar een gesprek (Discovery). Zacht en concreet.
-- Stem en anti-vaagheid via `content-voice`. Sales-logica via `cro-of-eduface`.
+- Stem en anti-vaagheid via `schrijven`. Sales-logica via `cro`.
 
 **Extra voor segment B (particuliere opleider):**
 - **Schrijf naar een ondernemer, niet naar een onderwijskundige.** Deze persoon runt de tent, kijkt vaak zelf na en betaalt zelf. Geen onderwijskundig jargon, geen visiestukken.
@@ -189,7 +190,7 @@ Niet-onderhandelbaar:
 Voor de connect-mensen (niet de mail-ontvangers): een kort, persoonlijk connectieverzoek, geen mail en geen pitch.
 - **Verankerd aan hoe Dante ze kent of hun Eduface-interactie** (uit Close of de aanmeldlijst): "je meldde je aan voor ons webinar met De Haagse Hogeschool", "we spraken bij [event]".
 - **Max ~300 tekens**, licht, warm, met een echte reden (zelfde vakgebied, elkaars werk volgen). Geen "laten we bellen".
-- Stem en regels: zie het type **LinkedIn connectieverzoek** in `content-voice`.
+- Stem en regels: zie het type **LinkedIn connectieverzoek** in `schrijven`.
 
 ## Verzenden (deliverability)
 

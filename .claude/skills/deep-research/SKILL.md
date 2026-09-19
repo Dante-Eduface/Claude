@@ -14,7 +14,7 @@ Een open vraag uitzoeken zoals de Research-modus in de Claude-app dat doet: opde
 | Eén persoon | `person-research` |
 | Meerdere personen uit de NL-pijplijn | subagent `shift-research` |
 | Wie is wie bij één instelling | `stakeholder-mapping` |
-| Een deal, of sales-advies | `cro-of-eduface` |
+| Een deal, of sales-advies | `cro` |
 | Alles wat je in één of twee searches beantwoordt | gewoon zelf `WebSearch`, geen skill |
 | **Een open vraag met meerdere onafhankelijke deelvragen** | **deze skill** |
 

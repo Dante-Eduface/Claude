@@ -1,7 +1,7 @@
 # Notenboom — SSO stappenplan (na discovery 10 aug)
 
 Bron: meeting-transcript 10-08-2026 in Close. Opportunity: Discovery, €10.000/jaar, confidence 20%.
-Dit is een voorstel-score. De grid zelf vullen we samen in (skill `/meddpicc-sales-grid`), dit is de onderbouwing.
+Dit is een voorstel-score. De grid zelf vullen we samen in (skill `/meddpicc`), dit is de onderbouwing.
 
 ## Stand: 36 / 250 = 14% (rood)
 
