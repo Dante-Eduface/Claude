@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wireframe v2 — Eduface demo landing page (11-09-2026)</title>
+<style>
+  /* Lo-fi: grey only, one font. Structure, hierarchy and silhouette per section. */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; color: #222; background: #fff; line-height: 1.4; }
+  .legend { position: sticky; top: 0; z-index: 5; display: flex; justify-content: center; background: #111; color: #eee; font-size: 13px; }
+  .legend .in { max-width: 1240px; width: 100%; padding: 8px 28px; display: flex; flex-wrap: wrap; gap: 24px; font-size: 12px; }
+
+  /* section rhythm: big, and alternating ground so every section reads as its own room */
+  .sect { display: flex; justify-content: center; padding: 120px 28px; }
+  .sect.tight { padding: 40px 28px; }
+  .sect.grey { background: #f0f0f0; }
+  .sect.dark { background: #2a2a2a; color: #eee; }
+  .sect.dark .p, .sect.dark .lede, .sect.dark .eyebrow { color: #bbb; }
+  .sect.dark .card { background: #3a3a3a; border-color: #666; color: #eee; }
+  .wrap { width: 100%; max-width: 1240px; display: grid; grid-template-columns: minmax(0, 1fr) 240px; gap: 40px; }
+  .body { display: flex; flex-direction: column; gap: 40px; min-width: 0; }
+  .head { display: flex; flex-direction: column; gap: 14px; max-width: 640px; }
+  .note { display: flex; flex-direction: column; gap: 8px; font-size: 12px; color: #444; border-left: 2px solid #bbb; padding-left: 14px; align-self: start; position: sticky; top: 70px; }
+  .sect.dark .note { color: #ccc; border-color: #666; }
+  .note b { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
+  .note p { line-height: 1.45; }
+
+  .box { border: 2px solid #888; background: #f4f4f4; display: flex; align-items: center; justify-content: center; text-align: center; color: #666; font-size: 13px; padding: 12px; }
+  .img { border: 2px dashed #999; background: repeating-linear-gradient(45deg, #f7f7f7, #f7f7f7 10px, #ececec 10px, #ececec 20px); color: #555; display: flex; align-items: center; justify-content: center; text-align: center; font-size: 13px; padding: 16px; }
+  .sect.dark .img { background: repeating-linear-gradient(45deg, #333, #333 10px, #3d3d3d 10px, #3d3d3d 20px); color: #bbb; border-color: #777; }
+  .pill { display: inline-flex; border: 2px solid #999; border-radius: 999px; padding: 6px 14px; font-size: 13px; color: #555; align-self: flex-start; }
+  .h1 { font-size: 64px; font-weight: 700; line-height: 1.0; letter-spacing: -.02em; }
+  .h2 { font-size: 40px; font-weight: 700; line-height: 1.05; letter-spacing: -.01em; }
+  .h3 { font-size: 22px; font-weight: 700; line-height: 1.2; }
+  .h4 { font-size: 16px; font-weight: 700; }
+  .lede { font-size: 20px; color: #555; max-width: 520px; }
+  .p { font-size: 14px; color: #555; }
+  .eyebrow { font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: #777; }
+  .btn { display: inline-flex; border: 2px solid #111; border-radius: 999px; padding: 16px 28px; font-weight: 600; font-size: 15px; background: #fff; color: #111; }
+  .btn.pri { background: #111; color: #fff; }
+  .row { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+  .stack { display: flex; flex-direction: column; gap: 14px; }
+  .num { font-size: 56px; font-weight: 700; line-height: 1; }
+  .ann { font-size: 11px; color: #999; }
+
+  /* nav: logo | centered links | cta */
+  .nav { display: flex; justify-content: center; border-bottom: 2px solid #ddd; }
+  .nav .in { width: 100%; max-width: 1240px; padding: 18px 28px; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 16px; }
+  .nav .btn { padding: 12px 22px; font-size: 14px; white-space: nowrap; }
+  .nav .links { display: flex; gap: 28px; font-size: 14px; color: #555; justify-content: center; }
+  .nav .navcta { display: flex; justify-content: flex-end; }
+
+  /* hero split */
+  .hero { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 64px; align-items: center; }
+  .hero-text { display: flex; flex-direction: column; gap: 28px; }
+  .hero-vis { position: relative; min-height: 560px; }
+  .hero-vis .img { position: absolute; top: 0; right: 0; bottom: 0; left: 0; align-items: flex-start; justify-content: flex-end; padding: 24px; }
+  .hero-vis .float { position: absolute; left: 0; width: 46%; display: flex; flex-direction: column; gap: 12px; }
+  .hero-vis .float .card { padding: 16px; gap: 8px; box-shadow: 0 10px 30px rgba(0,0,0,.12); }
+  .hero-vis .screen { position: absolute; right: 24px; top: 40px; bottom: 40px; width: 62%; border: 2px solid #888; background: #fafafa; display: flex; flex-direction: column; gap: 10px; padding: 18px; font-size: 12px; color: #666; }
+  .screen .line { height: 10px; background: #ddd; border-radius: 4px; }
+  .screen .crit { display: flex; justify-content: space-between; border: 1px solid #ccc; padding: 8px 10px; background: #fff; }
+
+  /* bento */
+  .bento { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); grid-auto-rows: minmax(160px, auto); gap: 18px; }
+  .card { border: 2px solid #888; background: #fafafa; padding: 26px; display: flex; flex-direction: column; gap: 12px; }
+  .card .img { min-height: 120px; flex: 1; }
+  .c4 { grid-column: span 4; } .c3 { grid-column: span 3; } .c2 { grid-column: span 2; } .r2 { grid-row: span 2; }
+
+  /* timeline steps */
+  .steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; position: relative; }
+  .steps::before { content: ""; position: absolute; left: 24px; right: 24px; top: 26px; border-top: 2px dashed #aaa; }
+  .step { display: flex; flex-direction: column; gap: 14px; }
+  .step .dot { width: 52px; height: 52px; border-radius: 50%; border: 2px solid #111; background: #fff; display: grid; place-items: center; font-weight: 700; font-size: 20px; position: relative; }
+  .sect.grey .step .dot { background: #f0f0f0; }
+  .step .img { min-height: 170px; }
+
+  /* product rows */
+  .prow { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 64px; align-items: center; }
+  .prow .img { min-height: 380px; }
+  .prow.flip .ptext { order: 2; }
+  .ptext { display: flex; flex-direction: column; gap: 16px; }
+  .ptext ul { list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 14px; color: #444; }
+  .ptext li::before { content: "✓ "; color: #888; }
+
+  /* proof */
+  .proof { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); gap: 64px; align-items: start; }
+  .nums { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+  .nums .n { display: flex; flex-direction: column; gap: 10px; border-left: 2px dashed #777; padding-left: 20px; }
+  .bar { height: 10px; background: #555; border-radius: 6px; overflow: hidden; }
+  .bar i { display: block; height: 100%; background: #ccc; }
+
+  .logos { display: flex; flex-wrap: wrap; gap: 40px; justify-content: center; align-items: center; }
+  .logos .box { min-width: 180px; min-height: 48px; background: transparent; border-style: dotted; }
+
+  .flow { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+  .flow .box { min-height: 48px; background: #fff; }
+  .faq { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); gap: 64px; align-items: start; }
+  .faq .list { display: flex; flex-direction: column; }
+  .faq .q { border-top: 2px solid #999; padding: 18px 0; display: flex; justify-content: space-between; font-size: 16px; font-weight: 600; }
+  .faq .q:last-child { border-bottom: 2px solid #999; }
+  .cta { border: 2px solid #666; background: #3a3a3a; border-radius: 32px; padding: 96px 48px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 18px; }
+  .foot { display: flex; justify-content: center; border-top: 2px solid #ddd; }
+  .foot .in { width: 100%; max-width: 1240px; padding: 40px 28px; display: flex; gap: 40px; font-size: 13px; color: #777; align-items: center; }
+  @media (max-width: 980px) { .wrap { grid-template-columns: 1fr; } .note { position: static; } .hero, .prow, .proof, .faq { grid-template-columns: 1fr; } .prow.flip .ptext { order: 0; } .bento { grid-template-columns: 1fr; } .c4,.c3,.c2 { grid-column: auto; } .r2 { grid-row: auto; } .steps { grid-template-columns: 1fr; } .steps::before { display: none; } .h1 { font-size: 40px; } .h2 { font-size: 30px; } .sect { padding: 64px 20px; } }
+</style>
+</head>
+<body>
+
+<div class="legend"><div class="in">
+  <span><b>Wireframe v3 (hero herzien)</b> · demo landing page · UK · dragend woord: consistentie</span>
+  <span>Grijs = tekst/blok · Gestreept = product-UI · Rechterkolom = waarom</span>
+  <span>Beoordeel: volgorde, silhouet per sectie, ruimte. Negeer: kleur, font, woorden.</span>
+</div></div>
+
+<div class="nav"><div class="in">
+  <span class="box" style="width:120px;min-height:34px;justify-self:start">Logo</span>
+  <nav class="links"><span>How it works</span><span>Products</span><span>Proof</span><span>Integrations</span><span>FAQ</span></nav>
+  <span class="navcta"><span class="btn">Book a demo</span></span>
+</div></div>
+
+<!-- 1 HERO (v3: gestapeld, gecentreerd, productbeelden onder de vouw) -->
+<style>
+  .hero3 { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 22px; }
+  .hero3 .h1 { font-size: 68px; max-width: 900px; }
+  .hero3 .lede { font-size: 22px; max-width: 620px; }
+  .hero3 .btn { padding: 20px 36px; font-size: 17px; }
+  .hero3 .btns { display: flex; gap: 16px; justify-content: center; padding-top: 8px; }
+  .hero3 .space { height: 36px; }
+  .stage { position: relative; width: 100%; max-width: 1240px; height: 520px; overflow: hidden; }
+  .stage .screen { position: absolute; left: 50%; transform: translateX(-50%); top: 0; width: 640px; height: 640px; border: 2px solid #777; border-bottom: 0; border-radius: 22px 22px 0 0; background: #fafafa; display: flex; flex-direction: column; gap: 12px; padding: 24px; text-align: left; font-size: 13px; color: #666; box-shadow: 0 20px 60px rgba(0,0,0,.15); }
+  .stage .side { position: absolute; top: 90px; width: 300px; height: 560px; border: 2px solid #999; border-bottom: 0; border-radius: 18px 18px 0 0; background: #f2f2f2; display: flex; flex-direction: column; gap: 12px; padding: 20px; text-align: left; font-size: 13px; color: #666; }
+  .stage .side.l { left: 6%; } .stage .side.r { right: 6%; }
+  .screen .line { height: 10px; background: #ddd; border-radius: 4px; }
+  .screen .crit { display: flex; justify-content: space-between; border: 1px solid #ccc; padding: 10px 12px; background: #fff; }
+  .side .row2 { display: flex; justify-content: space-between; border-top: 1px solid #ccc; padding-top: 8px; }
+  .hero-notes { width: 100%; max-width: 1240px; display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 24px; text-align: left; }
+  @media (max-width: 980px) { .hero3 .h1 { font-size: 44px; } .stage { height: 380px; } .stage .screen { width: 90%; } .stage .side { display: none; } .hero-notes { grid-template-columns: 1fr; } }
+</style>
+<section class="sect" style="padding-top:72px;padding-bottom:0"><div class="wrap" style="grid-template-columns:1fr">
+  <div class="hero3">
+    <span class="pill" style="align-self:center">AI feedback &amp; grading for higher education</span>
+    <div class="h1">[Paper 140 marked like paper one]</div>
+    <p class="lede">[Eduface drafts the feedback and the grade against your criteria. You approve every word before a student sees it.]</p>
+    <div class="btns">
+      <span class="btn pri">Book a demo</span>
+      <span class="btn">See how it works</span>
+    </div>
+    <div class="space"></div>
+    <div class="stage">
+      <div class="side l">
+        <span style="font-weight:700">Submission 1 · L. Jansen</span>
+        <span class="line" style="width:80%"></span><span class="line" style="width:60%"></span>
+        <span class="row2"><span>Issue identification</span><span>8/10</span></span>
+        <span class="row2"><span>Use of sources</span><span>9/10</span></span>
+        <span class="row2"><span>Structure</span><span>7/10</span></span>
+        <span class="box" style="margin-top:auto;min-height:36px">Approved ✓</span>
+      </div>
+      <div class="screen">
+        <span style="font-weight:700;font-size:15px">Product-UI · Submission 140 · S. de Vries · Research Methods</span>
+        <span class="line" style="width:92%"></span><span class="line" style="width:78%"></span><span class="line" style="width:86%"></span>
+        <span class="crit"><span>Issue identification</span><span>8/10</span></span>
+        <span class="crit"><span>Use of sources</span><span>9/10</span></span>
+        <span class="crit"><span>Depth of analysis</span><span>⚠ needs you</span></span>
+        <span class="crit"><span>Structure</span><span>7/10</span></span>
+        <span class="crit"><span>Referencing</span><span>9/10</span></span>
+        <span class="box" style="min-height:48px;background:#fff">"Tie the thesis back to your research question" · Criterion 1 · Approve / Edit</span>
+        <span class="box" style="min-height:44px">Proposed grade 8.2 · pending your approval</span>
+      </div>
+      <div class="side r">
+        <span style="font-weight:700">Batch · Research Methods</span>
+        <span class="box" style="min-height:64px;background:#fff">142 submissions<br>122 done · 20 need you</span>
+        <span class="row2"><span>Same rubric</span><span>✓</span></span>
+        <span class="row2"><span>Same standard</span><span>✓</span></span>
+        <span class="row2"><span>Gradebook sync</span><span>✓</span></span>
+      </div>
+    </div>
+    <div class="hero-notes">
+      <div class="note" style="position:static"><b>Hero · leesvolgorde</b><p>Pill → kop (76px) → subkop → twee grote knoppen. Alles gecentreerd, één kolom, zoals het Habitline-scherm. Niets ernaast dat aandacht trekt.</p></div>
+      <div class="note" style="position:static"><b>Hero · de beelden</b><p>56px lucht na de knoppen, dan drie productvlakken: submission 1 links, submission 140 in het midden (groot, dominant), de batch rechts. Ze lopen onder de vouw door, dat nodigt uit tot scrollen. Links en rechts samen zeggen "zelfde rubric, zelfde standaard": de consistentieclaim in beeld.</p></div>
+      <div class="note" style="position:static"><b>Hero · wat er niet in zit</b><p>Geen logo-regel meer in de hero, die komt als dunne strook eronder. Geen foto-achtergrond zoals Habitline: wij hebben geen beeldmateriaal met toestemming, en de product-UI is het beeld. In het design kan hier een zacht navy vlak achter de schermen komen.</p></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- 2 LOGOS (thin strip) -->
+<section class="sect tight grey"><div class="wrap">
+  <div class="body" style="gap:16px;align-items:center">
+    <div class="logos">
+      <span class="box">Hogeschool Rotterdam</span><span class="box">De Haagse Hogeschool</span><span class="box">Tilburg University</span><span class="box">Radboud Universiteit</span>
+    </div>
+  </div>
+  <aside class="note"><b>2 · Logostrook</b><p>Dun en grijs, geen kop. Een adempauze tussen hero en pijn, geen eigen sectie. Alleen de vier toegestane namen.</p></aside>
+</div></section>
+
+<!-- 3 PAIN bento -->
+<section class="sect"><div class="wrap">
+  <div class="body">
+    <div class="head">
+      <span class="eyebrow">Sound familiar?</span>
+      <div class="h2">[Same work, different grade. And you can't explain why.]</div>
+    </div>
+    <div class="bento">
+      <div class="card c4 r2">
+        <span class="h3">[Two markers, a 7 and a 6]</span>
+        <p class="p">[Same essay, two tutors, two grades. Students compare, and it's the marker they judge, not the work.]</p>
+        <div class="img" style="min-height:220px">visual: twee identieke essays naast elkaar, twee verschillende cijferkaartjes</div>
+        <span class="ann">bron: BSN-3, Breederode-17, Sunderland-1</span>
+      </div>
+      <div class="card c2">
+        <span class="h3">[Paper 1 on Monday, paper 140 on Sunday night]</span>
+        <p class="p">[You put the hours in and the feedback still gets thinner as the pile shrinks.]</p>
+        <span class="ann">bron: Bath Spa-37, Haagse-21</span>
+      </div>
+      <div class="card c2">
+        <span class="h3">[1,000 assignments, 20 markers, one standard]</span>
+        <p class="p">[Calibration once a year doesn't hold a cohort together. The two-week turnaround slips.]</p>
+        <span class="ann">bron: CMI-2, Bristol-5</span>
+      </div>
+    </div>
+  </div>
+  <aside class="note">
+    <b>3 · De pijn</b>
+    <p>Bento in plaats van drie gelijke kaarten: de beslissende pijn (7 vs 6) krijgt het grote vak met beeld, de twee andere zijn ondersteunend. Compositie-regel 5: dwing ongelijke bevindingen niet in gelijke vakjes.</p>
+    <p>Kop links uitgelijnd, niet gecentreerd. Anders krijg je "gecentreerde kop gevolgd door kaartjesraster", het sjabloon van de reflexen-lijst.</p>
+  </aside>
+</div></section>
+
+<!-- 4 HOW IT WORKS timeline -->
+<section class="sect grey"><div class="wrap">
+  <div class="body">
+    <div class="head">
+      <span class="eyebrow">How it works</span>
+      <div class="h2">[Every paper read against the same criteria. You stay the one who decides.]</div>
+    </div>
+    <div class="steps">
+      <div class="step"><span class="dot">1</span><span class="h3">[Submissions come in from your LMS]</span><p class="p">[Your rubric or learning outcomes go in once.]</p><div class="img">UI-crop: assignment list in LMS → Eduface</div></div>
+      <div class="step"><span class="dot">2</span><span class="h3">[Eduface drafts per criterion, and says when it's unsure]</span><p class="p">[Passage marked, comment against the criterion, score with reasoning. Doubt flagged, not guessed.]</p><div class="img">UI-crop: comment on a passage + "needs you" flag</div></div>
+      <div class="step"><span class="dot">3</span><span class="h3">[You approve, edit or bin it]</span><p class="p">[Nothing reaches a student unapproved. Grades go back to the gradebook. The more you correct it, the closer it gets.]</p><div class="img">UI-crop: Approve / Edit / Discard</div></div>
+    </div>
+  </div>
+  <aside class="note">
+    <b>4 · Hoe het werkt</b>
+    <p>Tijdlijn met stippellijn en genummerde bollen, elk met een klein UI-fragment. Ander silhouet dan de bento erboven en de productrijen eronder.</p>
+    <p>Grijze grond, zodat de sectie als eigen kamer leest.</p>
+  </aside>
+</div></section>
+
+<!-- 5 PRODUCTS step by step -->
+<section class="sect"><div class="wrap">
+  <div class="body" style="gap:96px">
+    <div class="head">
+      <span class="eyebrow">The products</span>
+      <div class="h2">[One platform. Turn on what your programme needs.]</div>
+    </div>
+
+    <div class="prow">
+      <div class="ptext">
+        <span class="pill">AI Paper Grader</span>
+        <span class="h3">[Essay 142 marked like essay one]</span>
+        <p class="p">[Full rubric scoring for essays, reports and theses, with a breakdown you can argue with. The grade is a proposal until you sign it.]</p>
+        <ul><li>[Score and reasoning per criterion]</li><li>[Same standard across a marker team]</li><li>[Tunes closer the more you correct it]</li></ul>
+      </div>
+      <div class="img">Product-UI: rubric panel, 5 criteria, proposed grade<br>+ zwevend kaartje "Approve"</div>
+    </div>
+
+    <div class="prow flip">
+      <div class="ptext">
+        <span class="pill">AI Exam Grader</span>
+        <span class="h3">[You only open what it flagged]</span>
+        <p class="p">[Open and closed answers scored against your marking scheme. The clear ones are done. The doubtful ones wait for you, and it says why.]</p>
+        <ul><li>[Scored per criterion against the model answer]</li><li>[Uncertainty comes to you, flagged]</li><li>[Approved grades back to the gradebook]</li></ul>
+      </div>
+      <div class="img">Product-UI: 142 papers, 122 scored / 20 flagged, grid of squares</div>
+    </div>
+
+    <div class="bento" style="grid-auto-rows:auto">
+      <div class="card c3"><span class="row"><span class="pill">Academic Integrity</span><span class="pill">Beta</span></span><span class="h3">[The student defends their own paper]</span><p class="p">[Critical questions about their own work, answered orally, like a thesis defence.]</p></div>
+      <div class="card c3"><span class="row"><span class="pill">Oral Examination</span><span class="pill">Beta</span></span><span class="h3">[Watch the student, not your notepad]</span><p class="p">[Live transcription and scoring during the oral exam.]</p></div>
+    </div>
+  </div>
+  <aside class="note">
+    <b>5 · Producten, stap voor stap</b>
+    <p>Twee live producten als volle rijen met een productbeeld, afwisselend links/rechts (Habitline-patroon). De twee beta's als halve bento-cellen zonder beeld: ze bestaan, maar dragen de pagina niet.</p>
+    <p>Claims letterlijk uit Platform/Product/product.md. Geen "AI Feedback" als losse module meer.</p>
+    <p>Dit is de langste sectie. Daarom 96px tussen de rijen en géén grijze grond, anders wordt het zwaar.</p>
+  </aside>
+</div></section>
+
+<!-- 6 PROOF dark -->
+<section class="sect dark"><div class="wrap">
+  <div class="body">
+    <div class="proof">
+      <div class="stack">
+        <span class="eyebrow">Measured, not claimed</span>
+        <div class="h2">[How close it gets to your grade]</div>
+        <p class="p">[One UK university, June 2026. Six modules, thirteen markers.]</p>
+        <p class="p">[That's distance from your grade, not how often it matched. The point is the last number: the more you correct it, the closer it lands on your standard.]</p>
+      </div>
+      <div class="nums">
+        <div class="n"><span class="num">435</span><span class="p">[assignments graded by 13 markers]</span></div>
+        <div class="n"><span class="num">~6 pts</span><span class="p">[average gap, out of the box]</span><span class="bar"><i style="width:6%"></i></span><span class="ann">0 — 100</span></div>
+        <div class="n"><span class="num">~2 pts</span><span class="p">[average gap once tuned]</span><span class="bar"><i style="width:2%"></i></span><span class="ann">0 — 100</span></div>
+      </div>
+    </div>
+  </div>
+  <aside class="note">
+    <b>6 · Bewijs</b>
+    <p>Donkere band (inverse), tekst links, cijfers rechts met schaalbalk. Het enige donkere blok tot de eind-CTA, dus het valt op.</p>
+    <p>Bath Spa geanonimiseerd. Geen "95%", geen "30,000".</p>
+  </aside>
+</div></section>
+
+<!-- 7 OUTCOME bento -->
+<section class="sect"><div class="wrap">
+  <div class="body">
+    <div class="head">
+      <span class="eyebrow">What that gives you back</span>
+      <div class="h2">[The feedback you meant to give, in the time you actually have]</div>
+    </div>
+    <div class="bento" style="grid-auto-rows:auto">
+      <div class="card c4"><span class="h3">[Feedback that goes deeper than "this is wrong"]</span><p class="p">[Passage marked, criterion named, a concrete tip. The part that used to get cut first.]</p><div class="img" style="min-height:140px">UI-crop: comment with passage highlight</div></div>
+      <div class="card c2"><span class="num" style="font-size:40px">2–3 min</span><span class="h4">[review per submission in the pilot]</span><span class="ann">⚠ bevestigen</span></div>
+      <div class="card c2"><span class="h3">[A turnaround you can promise and keep]</span><p class="p">[The batch is half done when you sit down.]</p></div>
+      <div class="card c4"><span class="h3">[One standard across the whole marking team]</span><p class="p">[Full-time, part-time, sessional: everyone marks against the same criteria, and the differences show up before a student sees them.]</p></div>
+    </div>
+  </div>
+  <aside class="note">
+    <b>7 · Opbrengst</b>
+    <p>Bento 4-2 / 2-4, gespiegeld, zodat hij niet dezelfde vorm heeft als de pijn-bento. Tijd staat hier als gevolg, ná het bewijs.</p>
+    <p>Vierde cel brengt het terug naar consistentie: dat is het dragende woord, ook in de opbrengst.</p>
+  </aside>
+</div></section>
+
+<!-- 8 LMS -->
+<section class="sect grey"><div class="wrap">
+  <div class="body">
+    <div class="prow">
+      <div class="ptext">
+        <span class="eyebrow">Integrations</span>
+        <div class="h2">[It lives inside the LMS you already run]</div>
+        <p class="p">[Students submit where they always did. Approved grades land back in the gradebook. Nobody on your team learns a new system.]</p>
+        <div class="flow">
+          <span class="box">Student submits</span><span>→</span><span class="box">Eduface drafts</span><span>→</span><span class="box">Marker approves</span><span>→</span><span class="box">Gradebook</span>
+        </div>
+        <p class="p">[Running something else? Bring it to the call.]</p>
+      </div>
+      <div class="bento" style="grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:auto">
+        <div class="card"><span class="box" style="min-height:40px">Moodle</span></div>
+        <div class="card"><span class="box" style="min-height:40px">Canvas</span></div>
+        <div class="card"><span class="box" style="min-height:40px">Blackboard</span></div>
+        <div class="card"><span class="box" style="min-height:40px">Brightspace</span></div>
+      </div>
+    </div>
+  </div>
+  <aside class="note">
+    <b>8 · LMS</b>
+    <p>Eigen sectie (Dante, 11-09). Tekst en stroomdiagram links, vier logo-tegels rechts. Weer een ander silhouet.</p>
+    <p>Positie ná opbrengst, vóór trust: nu vraagt de lezer of het in zijn omgeving past.</p>
+  </aside>
+</div></section>
+
+<!-- 9 TRUST -->
+<section class="sect"><div class="wrap">
+  <div class="body">
+    <div class="head">
+      <span class="eyebrow">For whoever has to approve it</span>
+      <div class="h2">[An approved route for AI in assessment, instead of what staff already do on their own]</div>
+    </div>
+    <div class="bento" style="grid-auto-rows:auto">
+      <div class="card c2"><span class="h4">EU AI Act</span><p class="p">[Own education model. Every grade explainable. A marker signs off before anything reaches a student.]</p></div>
+      <div class="card c2"><span class="h4">GDPR</span><p class="p">[Processed in the EU, never used for training, deleted on your schedule. DPA on request.]</p></div>
+      <div class="card c2"><span class="h4">Human sign-off, always</span><p class="p">[100% of grades approved by a marker. Full audit trail.]</p></div>
+    </div>
+  </div>
+  <aside class="note">
+    <b>9 · Trust</b>
+    <p>Drie compacte cellen, bewust klein: dit is naslag voor de inkoper, geen verkoop. UK-why-now in de kop.</p>
+    <p>Teksten = huidige site, nalopen met Jeroen.</p>
+  </aside>
+</div></section>
+
+<!-- 10 FAQ -->
+<section class="sect grey"><div class="wrap">
+  <div class="body">
+    <div class="faq">
+      <div class="stack">
+        <span class="eyebrow">FAQ</span>
+        <div class="h2">[Before you book]</div>
+        <p class="p">[Something else? Ask on the call.]</p>
+      </div>
+      <div class="list">
+        <div class="q"><span>Does the AI replace the marker?</span><span>+</span></div>
+        <div class="q"><span>What if two markers would have disagreed anyway?</span><span>+</span></div>
+        <div class="q"><span>Do we need a finished rubric?</span><span>+</span></div>
+        <div class="q"><span>What happens when it's unsure about a grade?</span><span>+</span></div>
+        <div class="q"><span>What happens in the demo?</span><span>+</span></div>
+        <div class="q"><span>What happens to student work?</span><span>+</span></div>
+      </div>
+    </div>
+  </div>
+  <aside class="note"><b>10 · FAQ</b><p>Kop links, lijst rechts met lijnen in plaats van kaartjes. Geen "Can I try for free".</p></aside>
+</div></section>
+
+<!-- 11 CTA -->
+<section class="sect"><div class="wrap">
+  <div class="body">
+    <div class="cta">
+      <div class="h2" style="color:#fff">[Bring one assignment and your criteria]</div>
+      <p class="lede" style="color:#ccc">[Thirty minutes. We run it live, you judge the output.]</p>
+      <span class="btn" style="background:#fff">Book a demo</span>
+      <span class="p" style="color:#aaa">[No account. No install. No slide deck.]</span>
+    </div>
+  </div>
+  <aside class="note"><b>11 · Eind-CTA</b><p>Donker afgerond blok, zelfde knoptekst als de hero. De kwalificatievragen komen later tussen deze knop en de kalender.</p></aside>
+</div></section>
+
+<div class="foot"><div class="in">
+  <span class="box" style="width:90px;min-height:28px">Logo</span>
+  <span>Privacy · Terms</span>
+  <span style="margin-left:auto">© 2026 Eduface · sample data, not real students</span>
+</div></div>
+
+</body>
+</html>

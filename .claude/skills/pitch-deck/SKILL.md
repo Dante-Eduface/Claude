@@ -12,7 +12,7 @@ Dante, om in Canva te importeren).
 ## Voor je begint
 1. `Design/System/slides/layouts.md` — de soorten slides.
 2. `Design/System/slides/pitch-slides.md` — hoe een pitch-slide eruitziet. **Verplicht.**
-3. `Platform/product.md` — de enige bron voor productclaims. Staat het er niet, dan zet je het niet op een slide.
+3. `Platform/Product/product.md` — de enige bron voor productclaims. Staat het er niet, dan zet je het niet op een slide.
 4. `reference.md` in deze map — de valkuilen. Scheelt drie rondes.
 
 ## De drie poorten

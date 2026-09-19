@@ -58,7 +58,7 @@ Wat Framer niet kan en wat er nog bij moet voordat dit live gaat:
 
 - Proces: stap voor stap. Onderzoek (goedgekeurd) → secties → wireframe → proef → uitrol. De eerder gebouwde `index.html` is een scratch-draft, geen oplevering. De quiz/survey is geparkeerd.
 - **Dragend woord: consistentie** (Dante, 11-09). Niet navolgbaarheid, niet tijd.
-- Pijnbron: `GTM/ICP/pijn-oplossing/HANDOFF-landingspagina.md` (50 goedgekeurde uitspraken uit Close). Productclaims uitsluitend uit `Platform/product.md`.
+- Pijnbron: `GTM/Knowledge/pijn-oplossing/docs/HANDOFF-landingspagina.md` (50 goedgekeurde uitspraken uit Close). Productclaims uitsluitend uit `Platform/Product/product.md`.
 - Analytics huidige pagina `/ai-for-grading-papers` (28 aug tot 11 sep): 59 bezoekers, 27% klikt Book a demo, 0 boekingen, 67% bounce, 88% desktop, slechts 9 uit GB.
 - Design-inspiratie voor later: https://habitline-wbs.framer.website/ (Dante: "fantastische website"). Patroon: grote typografie in de hero, feature-kaarten met mockups, metrics-blok, FAQ, centrale eind-CTA.
 
@@ -90,19 +90,19 @@ Onderbouwing: `research/product-tonen-en-beta.md`.
 
 ## Eén wireframe, forks samengevoegd (11-09-2026, eind)
 
-Er liepen drie forks plus de hoofdsessie naast elkaar. Ze hebben elkaar niet overschreven, elk pakte een ander stuk. Samengevoegd in `wireframe.html`:
+Er liepen drie forks plus de hoofdsessie naast elkaar. Ze hebben elkaar niet overschreven, elk pakte een ander stuk. Samengevoegd in `wireframes/wireframe.html`:
 
 | Bron | Wat er in zit |
 |---|---|
 | hoofdsessie | hero (één CTA plus tekstlink, bewijsregel in de hero), secties 3 en 6 tot 11 |
 | sessie in hoofdmap | sectie 4 herzien naar één geannoteerd beoordeelscherm (v6) |
 | fork `great-brahmagupta` | sectie 5 volledig uitgewerkt, plus `research/product-tonen-en-beta.md` |
-| fork `beautiful-keller` | `wireframe-proof-varianten.html` (drie varianten A/B/C voor het bewijsblok) plus `research/proof.md` |
+| fork `beautiful-keller` | `wireframes/wireframe-proof-varianten.html` (drie varianten A/B/C voor het bewijsblok) plus `research/proof.md` |
 | fork `sweet-mendeleev` | niets, lege fork |
 
-**`wireframe.html` is vanaf nu het enige levende bestand.** `wireframe-v1.html` en `wireframe-v3.html` zijn historie. `wireframe-proof-varianten.html` is een keuzedocument: Dante kiest A, B of C, daarna gaat die variant in sectie 6 van `wireframe.html` en kan het losse bestand weg.
+**`wireframes/wireframe.html` is vanaf nu het enige levende bestand.** `wireframes/wireframe-v1.html` en `wireframes/wireframe-v3.html` zijn historie. `wireframes/wireframe-proof-varianten.html` is een keuzedocument: Dante kiest A, B of C, daarna gaat die variant in sectie 6 van `wireframes/wireframe.html` en kan het losse bestand weg.
 
-**Werkafspraak om dit te voorkomen:** één sessie schrijft in `wireframe.html`. Wil je parallel aan een sectie werken, doe dat in een eigen bestand `wireframe-sectie-<n>.html` en voeg het daarna samen. Anders lopen forks op hetzelfde bestand uit elkaar.
+**Werkafspraak om dit te voorkomen:** één sessie schrijft in `wireframes/wireframe.html`. Wil je parallel aan een sectie werken, doe dat in een eigen bestand `wireframe-sectie-<n>.html` en voeg het daarna samen. Anders lopen forks op hetzelfde bestand uit elkaar.
 
 ## Boekflow: besluit (11-09-2026)
 
@@ -143,7 +143,7 @@ Direct onder het boekblok, als aparte strook: "Not ready for a call? Create a fr
 
 ## Bewijs verwerkt in de wireframe (11-09-2026)
 
-Het volledige plan uit `research/proof.md` zit nu in `wireframe.html`, op drie plekken:
+Het volledige plan uit `research/proof.md` zit nu in `wireframes/wireframe.html`, op drie plekken:
 
 - **A, in de hero:** één strook onder de CTA met 94% en 79% plus vier dunne logo's zonder kop. Het sterkste getal staat nu in het eerste scherm in plaats van op positie 6.
 - **B, sectie 6:** het bewijsblok op twee benen. Been 1 is de meting (94% naar 98% na afstemmen, 435 opdrachten, 13 markers, 6 vakken, Bath Spa juni 2026). Been 2 is de case (79% van de studenten positief of neutraal, ronde 2 beter dan ronde 1 na het verfijnen van de rubric, BDK Hogeschool Rotterdam). Twee bronnen die hetzelfde mechanisme aanwijzen.
@@ -180,7 +180,7 @@ Wat ik bewust heb laten staan: het vouwen van "hoe het werkt" in de eerste produ
 
 ## Poort 2, proef: het bewijsblok (11-09-2026)
 
-Bestand: `proef-bewijsblok.html`. Eén sectie volledig af, als patroon voor de rest.
+Bestand: `proeven/proef-bewijsblok.html`. Eén sectie volledig af, als patroon voor de rest.
 
 **Wat vastligt als dit akkoord is**
 - Type: League Spartan voor de kop (44px, weight 600), Inter voor de rest. Cijfers in League Spartan 72px met -0,04em tracking. Drie tekstgroottes per blok, niet meer.
@@ -196,7 +196,7 @@ Bestand: `proef-bewijsblok.html`. Eén sectie volledig af, als patroon voor de r
 4. **Mobiel.** De twee cijfers stapelen en de pijl draait mee naar beneden, zodat het verband van 94 naar 98 blijft kloppen.
 
 **Copy-besluiten**
-- "94% accuracy" mag, mét de dragers erbij, volgens `Platform/product.md`. De definitie van accuraatheid hoort in de FAQ, niet hier.
+- "94% accuracy" mag, mét de dragers erbij, volgens `Platform/Product/product.md`. De definitie van accuraatheid hoort in de FAQ, niet hier.
 - Bath Spa staat er als pilot ("Piloted at Bath Spa University"), niet als klant, en zonder citaat. Dat is feitelijk juist en houdt het risico klein.
 - Geen "95% accuraat", geen "30.000 studenten", geen balk bij de 79%.
 - De regel over doorlooptijd, overgebleven uit de geschrapte sectie Opbrengst, staat onderaan onder "what that gives you back".
@@ -233,9 +233,9 @@ Dante: "Met deze sectie zouden we willen zeggen dat ons model accuraat is." Dat 
 - **"How we measured this" weg.**
 - De regel van maximaal vier woorden in de kop is vervallen.
 
-Logo van Bath Spa staat in `Design/Merk/logo-van-scholen/bath-spa.svg`. Er moest een viewBox in, anders schaalde hij niet mee.
+Logo van Bath Spa staat in `Design/Website/landing-page-demo-survey/brand_assets/schools/bath-spa.svg`. Er moest een viewBox in, anders schaalde hij niet mee.
 
-**Nog nodig:** de campusfoto van Bath Spa. Die staat wel in het gesprek maar niet op schijf. Opslaan als `Design/Merk/logo-van-scholen/bath-spa-campus.jpg` en ik zet hem erin.
+**Nog nodig:** de campusfoto van Bath Spa. Die staat wel in het gesprek maar niet op schijf. Opslaan als `Design/Website/landing-page-demo-survey/brand_assets/schools/bath-spa-campus.jpg` en ik zet hem erin.
 
 ## Proef v4 (11-09-2026)
 
@@ -246,7 +246,7 @@ Logo van Bath Spa staat in `Design/Merk/logo-van-scholen/bath-spa.svg`. Er moest
 - **Campusfoto erin**, verkleind naar 1800px en gecomprimeerd. Navy sluier eroverheen zodat het beeld bij het merk hoort.
 - **Logo-rij weg**, die staat in de hero.
 
-Bestanden: `Design/Merk/logo-van-scholen/bath-spa.svg` (viewBox toegevoegd) en `bath-spa-campus.jpg`.
+Bestanden: `Design/Website/landing-page-demo-survey/brand_assets/schools/bath-spa.svg` (viewBox toegevoegd) en `bath-spa-campus.jpg`.
 
 ## Proef v5: rust in het paneel (11-09-2026)
 
@@ -267,7 +267,7 @@ Twee terechte punten van Dante, allebei uit de reflexen-lijst in `core/compositi
 
 ### Botsing met een andere sessie, 19:06
 
-Tijdens dit werk heeft een andere sessie `proef-bewijsblok.html` overschreven met een eigen versie. Bewaard als `proef-bewijsblok-andere-sessie.html`.
+Tijdens dit werk heeft een andere sessie `proeven/proef-bewijsblok.html` overschreven met een eigen versie. Bewaard als `proef-bewijsblok-andere-sessie.html`.
 
 Die versie loste dezelfde twee punten op, en met een goede vondst: twee balken op één as met een betekenisvol nulpunt ("0, de mark die je team gaf"). Maar hij draaide drie besluiten van Dante terug:
 - terug naar 6 en 2 punten in plaats van 94% en 98%
@@ -276,7 +276,7 @@ Die versie loste dezelfde twee punten op, en met een goede vondst: twee balken o
 
 Ik heb Dante's besluiten teruggezet en het goede idee overgenomen: het rechteruiteinde van de as heeft nu betekenis, net als dat nulpunt.
 
-**Open vraag voor Dante: punten of procenten.** De andere sessie had een argument dat klopt. `Platform/product.md` zegt dat "94% accuraatheid" de vorm is voor korte outreach, en dat "ongeveer 6 punten van het cijfer van de docent af" de juiste vorm blijft zodra er ruimte is, dus in alles wat een onderwijskundige rustig doorleest. Een landingspaginasectie met een schaal is zoiets. Dante koos eerder vandaag expliciet voor 94/98, dus dat staat er nu, maar het is het overwegen waard.
+**Open vraag voor Dante: punten of procenten.** De andere sessie had een argument dat klopt. `Platform/Product/product.md` zegt dat "94% accuraatheid" de vorm is voor korte outreach, en dat "ongeveer 6 punten van het cijfer van de docent af" de juiste vorm blijft zodra er ruimte is, dus in alles wat een onderwijskundige rustig doorleest. Een landingspaginasectie met een schaal is zoiets. Dante koos eerder vandaag expliciet voor 94/98, dus dat staat er nu, maar het is het overwegen waard.
 
 ## Proef v7: de term bij het cijfer (11-09-2026)
 
@@ -305,7 +305,7 @@ De foto is iets hoger geworden (440 in plaats van 380) en de sluier loopt ondera
 
 ## Proef hero (11-09-2026)
 
-Bestand: `proef-hero.html`. Volgende sectie na het bewijsblok, op hetzelfde patroon.
+Bestand: `proeven/proef-hero.html`. Volgende sectie na het bewijsblok, op hetzelfde patroon.
 
 **Waarom de hero als tweede proef.** Het is de sectie die bepaalt of iemand de rest leest, 57% van de kijktijd zit boven de vouw. Het is ook de plek waar de message match met de advertentie zit, en dat is volgens het onderzoek de sterkste hefboom op de hele pagina. En het is de lastigste sectie, dus die nu doen maakt de rest goedkoper.
 
@@ -329,13 +329,13 @@ Bestand: `proef-hero.html`. Volgende sectie na het bewijsblok, op hetzelfde patr
 
 ## Proef pijn, sectie 2 (15-09-2026)
 
-Bestand: `proef-pijn.html`. Licht, als tegenhanger van het donkere bewijsblok.
+Bestand: `proeven/proef-pijn.html`. Licht, als tegenhanger van het donkere bewijsblok.
 
 - **Kop:** "The same essay gets a different grade depending on who opens it", sleutelwoord groen. Subkop zegt waarom dat pijn doet: de student twijfelt aan de beoordelaar, niet aan het werk.
 - **Bento met één dominant geval.** De 7-tegen-6 krijgt het grote vak met beeld, de twee andere zijn ondersteunend.
 - **Het beeld:** twee beoordelaarskaartjes voor dezelfde inzending, met een chip erboven die zegt dat het om hetzelfde werk en dezelfde rubric gaat. Zonder die chip is het verschil niet het punt.
 - **Kleur:** rood alleen op de afwijking, het gat tussen de cijfers en de vier beoordelaars die uit de pas lopen. Groen alleen op het sectielabel.
-- **Bronnen onderaan elke kaart**, instellingen zonder namen van personen. Alles uit de 50 goedgekeurde uitspraken in `GTM/ICP/pijn-oplossing`.
+- **Bronnen onderaan elke kaart**, instellingen zonder namen van personen. Alles uit de 50 goedgekeurde uitspraken in `GTM/Knowledge/pijn-oplossing`.
 
 ## pagina.html: de hele pagina in één bestand (15-09-2026)
 

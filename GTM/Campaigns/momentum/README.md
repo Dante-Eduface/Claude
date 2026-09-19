@@ -149,9 +149,9 @@ Een herhaalbare **LinkedIn-led outreach motie** voor Eduface (AI feedback/assess
 ---
 
 ## Gerelateerde bestanden
-- `GTM/Campaigns/momentum/insights.md` — de inzichten-laag (samen te voegen met tweede bron)
-- `GTM/Campaigns/momentum/handoff.md` — korte plak-klare briefing voor een andere chat
-- `GTM/Campaigns/uk-outreach/sequence-head-of-learning.md` — multichannel sequence-concept
-- `GTM/Knowledge/sales-handbook-v1.md` — 6-stage proces + gates
-- `GTM/Knowledge/abm-tim-routen-podcast-notes.md` — ICP-clusters, relatie-tactieken, KPI-ladder, pilot-opzet
-- `GTM/Knowledge/outreach-lag-charlie-morgan-notes.md` — outreach lag, consistentie, follow-up
+- `GTM/Campaigns/momentum/analyse/insights.md` — de inzichten-laag (samen te voegen met tweede bron)
+- `GTM/Campaigns/momentum/analyse/handoff.md` — korte plak-klare briefing voor een andere chat
+- `GTM/Campaigns/uk-outreach/sequences/sequence-head-of-learning.md` — multichannel sequence-concept
+- `GTM/Knowledge/handboeken/sales-handbook-v1.md` — 6-stage proces + gates
+- `GTM/Knowledge/podcast-notities/abm-tim-routen-podcast-notes.md` — ICP-clusters, relatie-tactieken, KPI-ladder, pilot-opzet
+- `GTM/Knowledge/podcast-notities/outreach-lag-charlie-morgan-notes.md` — outreach lag, consistentie, follow-up

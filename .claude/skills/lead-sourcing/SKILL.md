@@ -1,13 +1,13 @@
 ---
 name: lead-sourcing
-description: Agent 1 van de SHIFT-opleiderspijplijn, voor elke markt (nl, uk, us, ...). Zoekt particuliere opleiders die binnen de Eduface-ICP vallen en zet ze met bewijs in het master-document. Leest de bronnen, de afvallers en het vocabulaire uit het marktprofiel in GTM/ICP/shift/markets/<code>/, en houdt per markt zelf bij welke bronnen af zijn. Stelt per organisatie een vraag, wie beoordeelt het werk van de lerenden. Trigger wanneer Dante zegt "zoek meer opleiders", "vul de targetlijst aan", "lead sourcing", "agent 1", "ga verder met de opleiderslijst", "bouw de UK-lijst", of een nieuwe bron of markt aanlevert om af te zoeken. Vervangt lead-sourcing-nl sinds 10-09-2026.
+description: Agent 1 van de SHIFT-opleiderspijplijn, voor elke markt (nl, uk, us, ...). Zoekt particuliere opleiders die binnen de Eduface-ICP vallen en zet ze met bewijs in het master-document. Leest de bronnen, de afvallers en het vocabulaire uit het marktprofiel in GTM/Campaigns/shift/markets/<code>/, en houdt per markt zelf bij welke bronnen af zijn. Stelt per organisatie een vraag, wie beoordeelt het werk van de lerenden. Trigger wanneer Dante zegt "zoek meer opleiders", "vul de targetlijst aan", "lead sourcing", "agent 1", "ga verder met de opleiderslijst", "bouw de UK-lijst", of een nieuwe bron of markt aanlevert om af te zoeken. Vervangt lead-sourcing-nl sinds 10-09-2026.
 ---
 
 # Agent 1: opleiders zoeken
 
 Je vult de targetlijst van particuliere opleiders voor Eduface (AI-feedback en nakijken op geschreven werk), in de markt die Dante aanwijst.
 
-Alles staat in het master-document, dat je alleen via `pipeline.py` aanraakt. Je schrijft met `--actor lead-sourcing`; het script bewaakt zelf welke velden van jou zijn. Lees `GTM/ICP/shift/master/LEESMIJ.md` als je twijfelt over een veldnaam, of draai `pipeline.py uitleg <veld>`.
+Alles staat in het master-document, dat je alleen via `pipeline.py` aanraakt. Je schrijft met `--actor lead-sourcing`; het script bewaakt zelf welke velden van jou zijn. Lees `GTM/Campaigns/shift/master/LEESMIJ.md` als je twijfelt over een veldnaam, of draai `pipeline.py uitleg <veld>`.
 
 
 ## Lees eerst de leerpunten
@@ -22,7 +22,7 @@ De markt is een variabele. Alles wat per markt verschilt staat in **het marktpro
 
 1. Noemt Dante geen markt, vraag het in één regel. Raad niet.
 2. Geef `--markt <code>` mee bij elk `pipeline.py`-commando, of zet één keer `export SHIFT_MARKT=<code>`. Controleer met `pipeline.py markt --table` dat het profiel compleet is; zo niet, dan is het profiel je eerste werk, niet de lijst.
-3. Lees `GTM/ICP/shift/markets/<code>/profiel.md` helemaal. Voor jou tellen vooral de koppen **Registers**, **Toezichtregime**, **Poort-0-afvallers**, **Poort-0-vocabulaire**, **Programmaduur** en **Prijsmodel**. Waar deze skill "zie profiel" zegt, staat het daar.
+3. Lees `GTM/Campaigns/shift/markets/<code>/profiel.md` helemaal. Voor jou tellen vooral de koppen **Registers**, **Toezichtregime**, **Poort-0-afvallers**, **Poort-0-vocabulaire**, **Programmaduur** en **Prijsmodel**. Waar deze skill "zie profiel" zegt, staat het daar.
 
 ## Begin altijd zo
 
@@ -31,9 +31,9 @@ De markt is een variabele. Alles wat per markt verschilt staat in **het marktpro
    python3 .claude/scripts/pipeline.py orgs --markt <code> --icp-status kandidaat --limit 0 --table
    ```
    `icp_status=kandidaat` betekent bijna altijd: poort 0 kwam er bij het toevoegen niet uit (`beoordeelt_zelf=Onbekend`). Loop deze lijst eerst langs en probeer poort 0 alsnog te beantwoorden — zelfde bewijsregel als hieronder, een citaat of hij blijft `onbekend` en staat gewoon nog een keer op de lijst. Pas als je deze achterstand hebt geprobeerd weg te werken (of hij is leeg), ga je verder met nieuwe bronnen of organisaties zoeken in stap 1.
-1. Lees `GTM/ICP/shift/markets/<code>/WERKVOORRAAD.md`. Daar staat welke bronnen af zijn en welke niet, in volgorde van opbrengst. Bestaat hij nog niet of is hij leeg, begin dan met de registers uit het profiel, in de volgorde die daar staat.
-1b. Lees `GTM/ICP/shift/markets/<code>/GATEN.md`. Elke regel met status `open` is een gekwalificeerde opleider die zijn contact kwijt is en dus uit de pijplijn valt. Tel ze en zoek er in deze batch **evenveel extra opleiders** bij, het liefst in dezelfde categorie. Zie "Gaten opvullen" hieronder.
-2. Lees `GTM/ICP/shift/markets/<code>/icp.md` als die er is (NL heeft er een, met alle uitgewerkte gevallen). Is er geen, dan is het profiel het kader.
+1. Lees `GTM/Campaigns/shift/markets/<code>/WERKVOORRAAD.md`. Daar staat welke bronnen af zijn en welke niet, in volgorde van opbrengst. Bestaat hij nog niet of is hij leeg, begin dan met de registers uit het profiel, in de volgorde die daar staat.
+1b. Lees `GTM/Campaigns/shift/markets/<code>/GATEN.md`. Elke regel met status `open` is een gekwalificeerde opleider die zijn contact kwijt is en dus uit de pijplijn valt. Tel ze en zoek er in deze batch **evenveel extra opleiders** bij, het liefst in dezelfde categorie. Zie "Gaten opvullen" hieronder.
+2. Lees `GTM/Campaigns/shift/markets/<code>/icp.md` als die er is (NL heeft er een, met alle uitgewerkte gevallen). Is er geen, dan is het profiel het kader.
 3. Controleer per organisatie of hij al bestaat. **Doe geen werk over.** `exists` en `show` kijken over alle markten heen, en dat is de bedoeling: een concern als Kaplan of Navitas kan al onder een andere markt staan.
    **Verplicht, geen uitzondering: draai `exists --naam "<naam>"` vlak vóór elke `add-org`, ook als je "vrij zeker" bent dat hij nog niet bestaat.** Op 15-09-2026 maakte een ronde twee dubbele rijen (Raindance Film School / Raindance Film School London, en UA92 Global / University Academy 92) door deze stap over te slaan. Twijfel je over de exacte naam, probeer ook een kortere of langere variant (zonder "London", zonder de volledige juridische naam).
 
@@ -45,7 +45,7 @@ De markt is een variabele. Alles wat per markt verschilt staat in **het marktpro
    python3 .claude/scripts/pipeline.py exists --naam "Naam van de opleider"
    python3 .claude/scripts/pipeline.py orgs --limit 0 --table   # alleen deze markt
    ```
-   Kijk daarnaast in `GTM/ICP/shift/markets/<code>/UITGESLOTEN.md` naar afvallers met reden (maak dat bestand aan als het er nog niet is).
+   Kijk daarnaast in `GTM/Campaigns/shift/markets/<code>/UITGESLOTEN.md` naar afvallers met reden (maak dat bestand aan als het er nog niet is).
 4. Pak het bovenste openstaande item uit de werkvoorraad, tenzij Dante iets anders aanwijst. Meld kort waar je begint, en ga dan door zonder te wachten.
 
 ## Poort 0, de enige vraag
@@ -203,7 +203,7 @@ Regels daarbij:
 
 Twee chats tegelijk is geen probleem, het script vergrendelt het bestand.
 
-Schrijf afvallers met reden en citaat weg in `GTM/ICP/shift/markets/<code>/UITGESLOTEN.md`, anders onderzoekt de volgende ronde ze opnieuw.
+Schrijf afvallers met reden en citaat weg in `GTM/Campaigns/shift/markets/<code>/UITGESLOTEN.md`, anders onderzoekt de volgende ronde ze opnieuw.
 
 ## Zuinig zoeken
 

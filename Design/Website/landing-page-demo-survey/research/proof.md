@@ -146,7 +146,7 @@ Aanbevelingen 1 tot 8 hierboven blijven staan. Hierbij:
 
 ## Hoe besluit 3 uitpakt
 
-Dit botst niet met `Platform/product.md`, het volgt de regel voor korte copy daar: "In korte outreach mag je gewoon 94% accuraatheid zeggen, met de dragers erbij: over 435 opdrachten en 13 nakijkers." De dragers zijn geen methode, dat is de identiteit van het getal.
+Dit botst niet met `Platform/Product/product.md`, het volgt de regel voor korte copy daar: "In korte outreach mag je gewoon 94% accuraatheid zeggen, met de dragers erbij: over 435 opdrachten en 13 nakijkers." De dragers zijn geen methode, dat is de identiteit van het getal.
 
 Dus op de pagina: **94% accuraatheid, over 435 opdrachten en 13 markers.** Niet: de definitie van accuraatheid, niet de 6-punten-formulering, niet de grens per programma.
 

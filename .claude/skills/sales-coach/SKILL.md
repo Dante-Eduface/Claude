@@ -33,7 +33,7 @@ Aanleiding: er staat een gesprek in de agenda, of Dante vraagt om voorbereiding.
 4. Zet de focusvaardigheid uit `focus.json` erin als opdracht voor dit gesprek.
 5. Schrijf naar `coach.prep` (doel, openers, vragen, risicos, bezwaren) en `coach.next_action`. Bouwen.
 
-Zie ook `.claude/rules/` en `GTM/Knowledge/sales-handbook-v1.md` voor de vraagbank per fase.
+Zie ook `.claude/rules/` en `GTM/Knowledge/handboeken/sales-handbook-v1.md` voor de vraagbank per fase.
 
 ## Stand 2: zelfscore
 
@@ -64,7 +64,7 @@ Pas daarna de debrief tonen.
 4. Scoor de zes dimensies 1 tot 5. Wees streng: een 3 is gemiddeld, geen compliment.
 5. Schrijf de missers **met het citaat erbij**. Elke misser heeft drie delen: wat de klant zei, waarom het een gemiste kans was, en de zin die je wel had moeten zeggen. Zonder citaat is het een mening.
 6. Benoem ook wat goed ging, en wees daar net zo concreet in.
-7. Zet per misser een **drill**: een roleplay-opdracht in de vorm van `GTM/Knowledge/cold-call-roleplay-prompt.md`, gebaseerd op dit echte moment.
+7. Zet per misser een **drill**: een roleplay-opdracht in de vorm van `GTM/Knowledge/handboeken/cold-call-roleplay-prompt.md`, gebaseerd op dit echte moment.
 8. Werk `coach.meddpicc` bij en zet in `meddpicc_verplaatst` wat er bewoog en wat bleef staan.
 9. Vul `patronen` met korte labels. Die rollen op in het Coach-scherm en bepalen de volgende focusvaardigheid.
 
@@ -78,9 +78,9 @@ Gong, 326.000 calls in 2025: gewonnen deals 57% reptijd, verloren 62%. Vijf punt
 
 Diagnose van de hele deal, niet van één gesprek.
 
-1. Scoor de acht MEDDPICC-elementen tegen `GTM/Knowledge/meddpicc-states-and-gates.md`. Gebruik de state-namen daaruit letterlijk (UNKNOWN, CURRENT STATE, COACH, DISCOVERED, en zo verder). Claim een state alleen met het bewijs dat daar geëist wordt.
-2. Toets de gate van de huidige fase tegen `GTM/Knowledge/sales-handbook-v1.md`. Staat de deal in Close verder dan de gate toelaat, benoem dat als overgeslagen stap. Dat is de meest voorkomende fout en de duurste.
-3. Wil Dante een cijfer, gebruik `GTM/Knowledge/q-points-scorecard.md`. Verzin geen eigen scoremodel.
+1. Scoor de acht MEDDPICC-elementen tegen `GTM/Knowledge/handboeken/meddpicc-states-and-gates.md`. Gebruik de state-namen daaruit letterlijk (UNKNOWN, CURRENT STATE, COACH, DISCOVERED, en zo verder). Claim een state alleen met het bewijs dat daar geëist wordt.
+2. Toets de gate van de huidige fase tegen `GTM/Knowledge/handboeken/sales-handbook-v1.md`. Staat de deal in Close verder dan de gate toelaat, benoem dat als overgeslagen stap. Dat is de meest voorkomende fout en de duurste.
+3. Wil Dante een cijfer, gebruik `GTM/Knowledge/handboeken/q-points-scorecard.md`. Verzin geen eigen scoremodel.
 4. Schrijf `coach.diagnose`: maximaal drie alinea's, conclusie eerst, en één actie onderaan.
 5. Zet de stakeholders in `coach.stakeholders` met rol (eb, champion, coach, enemy, gebruiker) en of ze gesproken zijn.
 

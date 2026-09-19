@@ -3,7 +3,7 @@
 
 Een sjabloon, zes inhouden. Het cijfer wordt uit de weging berekend, nooit met de
 hand ingevuld. Tokens uit Design/System/core/tokens.css.
-Bron voor elke productclaim: Platform/product.md.
+Bron voor elke productclaim: Platform/Product/product.md.
 """
 import pathlib, html
 

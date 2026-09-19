@@ -155,7 +155,7 @@ Dit is het principe achter alle punten hierboven. Je houdt de gevolgtrekking en 
 - **Witregels tussen de alinea's**, en ook tussen "Met vriendelijke groet," en de naam eronder.
 - **Nooit aannemen dat het connectieverzoek geaccepteerd is.** Open dus nooit met "dank voor het accepteren".
 - **Het haakje bouwt door op het connectieverzoek, het vervangt het niet.** Wissel niet naar een ander, mooier klinkend citaat.
-- **Drager-toets op de inferentie.** Ligt de last in de bron bij de student en zet jouw zin hem bij de docent, dan is de mail fout, ook als elk woord uit de bron komt. Vaktermen als `studeerbaarheid`, `studielast` en `toetslast` gaan over de student, zie `Platform/onderwijs-vaktermen.md`.
+- **Drager-toets op de inferentie.** Ligt de last in de bron bij de student en zet jouw zin hem bij de docent, dan is de mail fout, ook als elk woord uit de bron komt. Vaktermen als `studeerbaarheid`, `studielast` en `toetslast` gaan over de student, zie `Platform/Product/onderwijs-vaktermen.md`.
 - **De inferentie moet specifiek zijn.** Had hij ook bij een andere prospect gepast, dan is hij niet goed genoeg.
 - **Geen tweede haakje gevonden?** Hergebruik het haakje uit het connectieverzoek, anders geformuleerd, niet letterlijk herhaald.
 - **Taal matcht het connectieverzoek.** Engels verzoek is een Engelse mail, inclusief "Kind regards" en "Customer success manager".

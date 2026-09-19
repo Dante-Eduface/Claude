@@ -31,15 +31,15 @@ ze daar moet vinden. `.claude/` en `.vscode/` zijn configuratie.
 
 ## Wat waaruit leest
 
-- **`Platform/product.md`** is de bron van waarheid voor productclaims. Negen bestanden lezen
+- **`Platform/Product/product.md`** is de bron van waarheid voor productclaims. Negen bestanden lezen
   hieruit. Klopt een claim ergens niet, corrigeer hier, niet in de kopie.
 - **`Design/System/`** is verplicht bij alles wat een mens bekijkt. Start bij
   `core/proces.md`, laad daarna alleen `core/` plus het oppervlak dat je bouwt.
 - **`Design/Merk/`** is de enige bron voor logo's, fonts en schoollogo's. Kopieer ze niet
   een project in; verwijs ernaar. Dat ging eerder mis: het Eduface-logo stond vijf keer in de repo.
-- **`GTM/ICP/shift/master/`** wordt gelezen door `.claude/scripts/pipeline.py` en
+- **`GTM/Campaigns/shift/master/`** wordt gelezen door `.claude/scripts/pipeline.py` en
   `dashboard.py`. De mapnamen en bestandsnamen daaronder liggen dus vast.
-- **`GTM/Knowledge/sales-handbook-v1.md`** is het anker voor `/cro` en de dealfasen.
+- **`GTM/Knowledge/handboeken/sales-handbook-v1.md`** is het anker voor `/cro` en de dealfasen.
 
 ## Losse creatives
 
@@ -54,7 +54,7 @@ duidelijk is: `GTM/Event manager/`, `Design/System/`.
 
 **Eén uitzondering, en die is hard.** Alles onder `.claude/` blijft kleine letters met
 streepjes, want de mapnaam van een skill *is* het commando: `/task-planning` werkt,
-`/task planning` niet. Hetzelfde geldt voor `GTM/ICP/shift/master/`, waar scripts uit lezen.
+`/task planning` niet. Hetzelfde geldt voor `GTM/Campaigns/shift/master/`, waar scripts uit lezen.
 
 Verder:
 

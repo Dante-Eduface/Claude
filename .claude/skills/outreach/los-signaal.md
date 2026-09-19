@@ -45,7 +45,7 @@ Bij meer dan circa 15 organisaties werkt de loop hierboven niet één-voor-één
 **Pass 2, diep (alleen de overlevers).** Dante bepaalt hoeveel er doorgaan. Pas hier draait de volledige research-gate, `person-research` en de mail.
 
 Regels bij volume:
-- **Leg de afvallers vast met reden en citaat**, in `GTM/ICP/shift/master/dossiers/`. Anders onderzoekt de volgende ronde ze opnieuw.
+- **Leg de afvallers vast met reden en citaat**, in `GTM/Campaigns/shift/master/dossiers/`. Anders onderzoekt de volgende ronde ze opnieuw.
 - **Kijk eerst in `dossiers.md`** of een organisatie al onderzocht is. Doe geen werk over.
 - **Rapporteer wat je hebt laten vallen.** Een lijst van 150 waarvan je er 30 deed is prima, zolang je dat zegt. Stilzwijgend afkappen leest als volledige dekking.
 - **Vertrouw geen automatische score als kwalificatie.** Trefwoordscores vangen "er wordt getoetst", niet "wij toetsen zelf". Gebruik ze hooguit om de volgorde te bepalen.
@@ -58,7 +58,7 @@ Twee segmenten, met een andere doelpersoon, andere research en een andere mail. 
 
 **B. Particuliere opleider** (NRTO/CRKBO-lid, bedrijfsopleider, vakopleider, particuliere academie). Meestal 5 tot 50 mensen. Er is geen onderwijskundige laag: de **directeur of eigenaar** is champion, budgethouder en beslisser in één, en kijkt vaak zelf mee na. Route: recht op de directeur. Zie stap 4B.
 
-Twijfel je? De registers beslissen: staat de organisatie in NRTO of CRKBO, dan is het segment B. Voor segment B geldt bovendien `GTM/ICP/shift/markets/nl/icp.md` als kwalificatiekader, en staat wat al onderzocht is in `GTM/ICP/shift/master/dossiers/`. **Kijk daar eerst, doe geen werk over.**
+Twijfel je? De registers beslissen: staat de organisatie in NRTO of CRKBO, dan is het segment B. Voor segment B geldt bovendien `GTM/Campaigns/shift/markets/nl/icp.md` als kwalificatiekader, en staat wat al onderzocht is in `GTM/Campaigns/shift/master/dossiers/`. **Kijk daar eerst, doe geen werk over.**
 
 ## Stap 2: poort 0, wie neemt het examen af? (voor segment B, vóór al het andere)
 

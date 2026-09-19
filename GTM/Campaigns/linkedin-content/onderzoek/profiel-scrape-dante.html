@@ -1,0 +1,246 @@
+<title>LinkedIn-scrape Dante</title>
+<style>
+  :root {
+    --paper: #eef1f4;
+    --card: #ffffff;
+    --ink: #12212e;
+    --ink-soft: #4a5c6b;
+    --line: #d2dae1;
+    --accent: #0d6156;
+    --accent-soft: #cfe3df;
+    --warn: #9a5b16;
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #0e161d;
+      --card: #16212b;
+      --ink: #e6edf2;
+      --ink-soft: #9aabb8;
+      --line: #2a3945;
+      --accent: #55c2ad;
+      --accent-soft: #1d3a37;
+      --warn: #d19a54;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #0e161d;
+    --card: #16212b;
+    --ink: #e6edf2;
+    --ink-soft: #9aabb8;
+    --line: #2a3945;
+    --accent: #55c2ad;
+    --accent-soft: #1d3a37;
+    --warn: #d19a54;
+  }
+  :root[data-theme="light"] {
+    --paper: #eef1f4;
+    --card: #ffffff;
+    --ink: #12212e;
+    --ink-soft: #4a5c6b;
+    --line: #d2dae1;
+    --accent: #0d6156;
+    --accent-soft: #cfe3df;
+    --warn: #9a5b16;
+  }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    line-height: 1.55;
+    padding: 40px 20px 80px;
+  }
+  .wrap { max-width: 940px; margin: 0 auto; display: flex; flex-direction: column; gap: 34px; }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+  h1 {
+    font-family: var(--serif);
+    font-size: clamp(30px, 5vw, 44px);
+    line-height: 1.1;
+    text-wrap: balance;
+    margin: 6px 0 8px;
+    font-weight: 600;
+  }
+  h2 {
+    font-family: var(--serif);
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 4px;
+  }
+  h3 { font-size: 13px; font-family: var(--mono); text-transform: uppercase; letter-spacing: .1em; color: var(--ink-soft); margin: 0 0 10px; font-weight: 600; }
+  p { max-width: 66ch; }
+  .lede { color: var(--ink-soft); max-width: 62ch; }
+
+  section { display: flex; flex-direction: column; gap: 14px; }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 22px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 18px 26px; }
+  .fact { display: flex; flex-direction: column; gap: 2px; }
+  .fact .k { font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-soft); }
+  .fact .v { font-size: 15px; }
+  .fact .v b { font-weight: 600; }
+
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 4px; overflow: hidden; }
+  .stat { background: var(--card); padding: 16px 18px; display: flex; flex-direction: column; gap: 2px; }
+  .stat .n { font-family: var(--serif); font-size: 30px; line-height: 1.1; font-variant-numeric: tabular-nums; }
+  .stat .l { font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-soft); }
+
+  blockquote {
+    border-left: 2px solid var(--accent);
+    padding-left: 18px;
+    margin: 0;
+    font-family: var(--serif);
+    font-size: 16.5px;
+    color: var(--ink);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 64ch;
+  }
+  blockquote p { margin: 0; }
+
+  .scroller { overflow-x: auto; border: 1px solid var(--line); border-radius: 4px; background: var(--card); }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid var(--line); vertical-align: middle; white-space: nowrap; }
+  th { font-family: var(--mono); font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft); font-weight: 600; }
+  tr:last-child td { border-bottom: none; }
+  td.num { text-align: right; font-variant-numeric: tabular-nums; font-family: var(--mono); font-size: 13px; }
+  td.topic { white-space: normal; min-width: 250px; }
+
+  .pill { font-family: var(--mono); font-size: 10px; letter-spacing: .06em; text-transform: uppercase; padding: 2px 7px; border-radius: 999px; border: 1px solid var(--line); color: var(--ink-soft); }
+  .pill.repost { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
+
+  .bar { display: flex; align-items: center; gap: 8px; }
+  .bar .track { width: 74px; height: 6px; background: var(--line); border-radius: 999px; overflow: hidden; }
+  .bar .fill { height: 100%; background: var(--accent); border-radius: 999px; }
+  .bar .fill.low { background: var(--warn); }
+  .bar .val { font-family: var(--mono); font-size: 12px; font-variant-numeric: tabular-nums; min-width: 30px; }
+
+  ul { padding-left: 18px; display: flex; flex-direction: column; gap: 8px; max-width: 66ch; }
+  li::marker { color: var(--accent); }
+
+  .flag { border-left: 3px solid var(--warn); background: var(--card); padding: 14px 18px; border-radius: 0 4px 4px 0; }
+  .flag strong { color: var(--warn); }
+
+  footer { border-top: 1px solid var(--line); padding-top: 16px; font-size: 13px; color: var(--ink-soft); font-family: var(--mono); }
+</style>
+
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">Apify-scrape · 22 juli 2026</div>
+    <h1>LinkedIn-profiel Dante Torbed</h1>
+    <p class="lede">Laatste 10 items van het profiel, plus de profielbeschrijving en huidige functie. Gescrapet met harvestapi/linkedin-profile-posts en harvestapi/linkedin-profile-scraper.</p>
+  </header>
+
+  <section>
+    <div class="stats">
+      <div class="stat"><span class="n">10</span><span class="l">items</span></div>
+      <div class="stat"><span class="n">8</span><span class="l">eigen posts</span></div>
+      <div class="stat"><span class="n">2</span><span class="l">reposts</span></div>
+      <div class="stat"><span class="n">5</span><span class="l">comments totaal</span></div>
+      <div class="stat"><span class="n">892</span><span class="l">volgers</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Profiel</h2>
+    <div class="card">
+      <div class="facts">
+        <div class="fact"><span class="k">Huidige baan</span><span class="v"><b>Head of Partnerships</b>, Eduface</span></div>
+        <div class="fact"><span class="k">Sinds</span><span class="v">dec 2023 · 2 jr 8 mnd · hybride</span></div>
+        <div class="fact"><span class="k">Tweede rol</span><span class="v">Community Builder, Community Z (sinds jan 2023)</span></div>
+        <div class="fact"><span class="k">Locatie</span><span class="v">Leiden, Zuid-Holland</span></div>
+        <div class="fact"><span class="k">Netwerk</span><span class="v">892 volgers · 861 connecties</span></div>
+        <div class="fact"><span class="k">Top skills</span><span class="v">tijdmanagement, prioriteiten stellen, communicatie, sales, teamwork</span></div>
+      </div>
+      <div class="fact"><span class="k">Headline</span><span class="v">Helping teachers save 10-15 hours per week with AI-powered feedback | Helping Universities Optimize Feedback | Product Developer at Eduface</span></div>
+    </div>
+    <div class="flag">
+      <strong>Conflict op je eigen profiel.</strong> De headline zegt "Product Developer at Eduface", je ervaring zegt "Head of Partnerships". Kies er een.
+    </div>
+  </section>
+
+  <section>
+    <h2>Beschrijving (About)</h2>
+    <blockquote>
+      <p>"Did you ever have to wait longer than a week for feedback on an assignment you worked hard on?"</p>
+      <p>That was the question Jeroen van Gessel and Menno Hahury asked me three years ago when they were just starting to build Eduface.</p>
+      <p>My answer was yes. And I suspect most students would say the same.</p>
+      <p>"We have the ambition to build an AI feedback tool. Would you want to get on board?"</p>
+      <p>Three years later, what started as an ambition has become a platform used at universities across the UK and the Netherlands.</p>
+      <p>My role is to bring Eduface to institutions that are ready to take assessment and feedback seriously. That means identifying the right contacts, understanding what a university actually needs, guiding pilots from start to finish, and making sure the procurement process is as straightforward as possible through the Jisc and HEAnet frameworks.</p>
+      <p>What keeps me going is what I see when pilots go live. Lecturers who finally have the capacity to give every student the feedback they deserve. Students who receive detailed, consistent responses instead of a few lines at the bottom of a page.</p>
+      <p>If you are working on assessment, feedback, or AI in education and want to understand what this looks like in practice, feel free to reach out.</p>
+    </blockquote>
+  </section>
+
+  <section>
+    <h2>Laatste 10 items</h2>
+    <p class="lede">Score = (likes ×1 + comments ×3 + shares ×2), afgezet tegen de best scorende post. Amber = onder de 3.</p>
+    <div class="scroller">
+      <table>
+        <thead>
+          <tr>
+            <th>Datum</th><th>Soort</th><th>Media</th>
+            <th class="num" style="text-align:right">Likes</th>
+            <th class="num" style="text-align:right">Comm.</th>
+            <th class="num" style="text-align:right">Shares</th>
+            <th>Score</th><th>Onderwerp</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>21 jul 2026</td><td><span class="pill">post</span></td><td>beeld</td><td class="num">8</td><td class="num">0</td><td class="num">0</td><td><div class="bar"><div class="track"><div class="fill low" style="width:26%"></div></div><span class="val">2.6</span></div></td><td class="topic">Zomerstilte, nieuwe doelgroep gevonden: opleiders voor werkenden</td></tr>
+          <tr><td>26 mei 2026</td><td><span class="pill">post</span></td><td>tekst</td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td><div class="bar"><div class="track"><div class="fill low" style="width:6%"></div></div><span class="val">0.6</span></div></td><td class="topic">Artikel: can AI mark essays fairly</td></tr>
+          <tr><td>7 mei 2026</td><td><span class="pill repost">repost</span></td><td>tekst</td><td class="num">19</td><td class="num">2</td><td class="num">3</td><td><div class="bar"><div class="track"><div class="fill" style="width:100%"></div></div><span class="val">10.0</span></div></td><td class="topic">Repost Jeroen van Gessel: webinar Bath Spa × Eduface</td></tr>
+          <tr><td>16 apr 2026</td><td><span class="pill">post</span></td><td>tekst</td><td class="num">17</td><td class="num">0</td><td class="num">1</td><td><div class="bar"><div class="track"><div class="fill" style="width:61%"></div></div><span class="val">6.1</span></div></td><td class="topic">Persoonlijk: ergens tijd en energie in stoppen</td></tr>
+          <tr><td>13 apr 2026</td><td><span class="pill">post</span></td><td>beeld</td><td class="num">22</td><td class="num">1</td><td class="num">3</td><td><div class="bar"><div class="track"><div class="fill" style="width:100%"></div></div><span class="val">10.0</span></div></td><td class="topic">Bath Spa University verkent AI-assisted assessment</td></tr>
+          <tr><td>19 mrt 2026</td><td><span class="pill">post</span></td><td>beeld</td><td class="num">13</td><td class="num">0</td><td class="num">0</td><td><div class="bar"><div class="track"><div class="fill" style="width:42%"></div></div><span class="val">4.2</span></div></td><td class="topic">Digifest Birmingham, dag 2</td></tr>
+          <tr><td>10 mrt 2026</td><td><span class="pill">post</span></td><td>beeld</td><td class="num">28</td><td class="num">0</td><td class="num">1</td><td><div class="bar"><div class="track"><div class="fill" style="width:97%"></div></div><span class="val">9.7</span></div></td><td class="topic">Digifest dag 1, geselecteerd door Jisc om te exposeren</td></tr>
+          <tr><td>16 dec 2025</td><td><span class="pill repost">repost</span></td><td>beeld</td><td class="num">21</td><td class="num">0</td><td class="num">2</td><td><div class="bar"><div class="track"><div class="fill" style="width:81%"></div></div><span class="val">8.1</span></div></td><td class="topic">Repost Briskr: tijd is de echte bottleneck bij feedback</td></tr>
+          <tr><td>10 dec 2025</td><td><span class="pill">post</span></td><td>tekst</td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td><div class="bar"><div class="track"><div class="fill low" style="width:6%"></div></div><span class="val">0.6</span></div></td><td class="topic">Vacature Sr. Full Stack Engineer</td></tr>
+          <tr><td>24 nov 2025</td><td><span class="pill">post</span></td><td>tekst</td><td class="num">6</td><td class="num">2</td><td class="num">0</td><td><div class="bar"><div class="track"><div class="fill" style="width:39%"></div></div><span class="val">3.9</span></div></td><td class="topic">500+ users, bijna alle NL-hogescholen</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Wat de data zegt</h2>
+    <ul>
+      <li><b>8 posts in 8 maanden.</b> Ongeveer 1 per maand. Veel te weinig om als thought leader in UK HE gezien te worden.</li>
+      <li><b>Wat werkt:</b> een klantnaam plus bewijs. Bath Spa en Digifest dag 1 staan bovenaan, en de repost van Jeroen scoort net zo hoog als je beste eigen post. Instelling, event of gezicht in de post.</li>
+      <li><b>Wat niet werkt:</b> het artikel (score 0.6) en de vacature (0.6). Beide sturen weg van LinkedIn of gaan niet over de klant.</li>
+      <li><b>Vrijwel geen gesprek.</b> 5 comments over 10 posts. Je posts eindigen niet met iets waar iemand op kan reageren.</li>
+      <li><b>Geen video.</b> Alles is tekst of stilstaand beeld.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Wat deze scrape niet oplevert</h2>
+    <p>Reacties en comments die je plaatst onder posts van anderen zitten niet in deze actor, die geeft alleen posts en reposts op je eigen profiel. Losse interacties zijn alleen via het activity-tabblad te halen en vergen een andere scraper. Zeg het als je die er ook bij wilt.</p>
+  </section>
+
+  <footer>
+    Bron: apify · harvestapi/linkedin-profile-posts + harvestapi/linkedin-profile-scraper · ruwe data in GTM/Campaigns/linkedin-content/onderzoek/linkedin-posts-dante-2026-07-22.csv
+  </footer>
+
+</div>

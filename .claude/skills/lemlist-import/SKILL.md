@@ -3,7 +3,7 @@ name: lemlist-import
 description: >
   Agent 5 van de SHIFT-pijplijn, voor elke markt. Zet goedgekeurde berichten (LinkedIn-invite, mail 1, reminder)
   uit het master-document in de Lemlist-campagne van de markt. De campagne-ID staat in
-  GTM/ICP/shift/markets/<code>/profiel.json onder lemlist_campagne_id; ga altijd op de ID af, nooit op de naam.
+  GTM/Campaigns/shift/markets/<code>/profiel.json onder lemlist_campagne_id; ga altijd op de ID af, nooit op de naam.
   Trigger wanneer Dante zegt "voeg de leads toe aan Lemlist", "zet ze in Lemlist", "importeer de nieuwe leads",
   "de UK-batch mag naar Lemlist", of iets in die geest. Weet zelf: geen e-mailadres nodig vooraf, en de mails
   moeten met <br>-tags anders valt de opmaak weg. Vervangt lemlist-import-nl sinds 10-09-2026.
@@ -32,7 +32,7 @@ De vaste, herhaalbare manier om goedgekeurde berichten in Lemlist te zetten. Dan
 ## Eerst: welke markt, welke campagne
 
 1. Noemt Dante geen markt, vraag het in één regel.
-2. Lees `GTM/ICP/shift/markets/<code>/profiel.json`: `lemlist_campagne_id` is de campagne. Is die leeg, dan **stop je** en meld je dat de campagne voor deze markt nog niet bestaat. Bouw hem alleen na expliciet akkoord van Dante, met de vaste vier stappen hieronder, en zet daarna de ID in `profiel.json` (actor dante).
+2. Lees `GTM/Campaigns/shift/markets/<code>/profiel.json`: `lemlist_campagne_id` is de campagne. Is die leeg, dan **stop je** en meld je dat de campagne voor deze markt nog niet bestaat. Bouw hem alleen na expliciet akkoord van Dante, met de vaste vier stappen hieronder, en zet daarna de ID in `profiel.json` (actor dante).
 3. Draai `get_campaigns` en `get_campaign_sequences` op die ID om te bevestigen dat de stappen nog kloppen. Campagnenamen worden hernoemd, ID's niet.
 4. Lees in `profiel.md` de kop **Kanaal**: welke stappen deze markt gebruikt en wat er per lead in moet.
 
@@ -48,7 +48,7 @@ Het onderwerp van stap 3 moet leeg blijven, anders breekt de thread.
 
 **Geen belafspraak-taak meer** (besluit Dante 16-09-2026). Die stond als stap 4 in de oude NL-campagne en verving de breakup-mail, maar bellen loopt via `/cold-call-prep` met een echt belscript, niet via een taak zonder voorbereiding. Er zit ook geen afsluitmail in.
 
-Markten met alleen `linkedin` als kanaal gebruiken stap 1 en 4. De oude NL-campagnes en hun geschiedenis staan in `GTM/ICP/shift/markets/nl/profiel.md` onder **Kanaal**; nooit ombouwen, nooit verwijderen.
+Markten met alleen `linkedin` als kanaal gebruiken stap 1 en 4. De oude NL-campagnes en hun geschiedenis staan in `GTM/Campaigns/shift/markets/nl/profiel.md` onder **Kanaal**; nooit ombouwen, nooit verwijderen.
 
 ## Bron
 

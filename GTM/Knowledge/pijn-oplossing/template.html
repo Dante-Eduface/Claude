@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pijn en oplossing uit Close</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#002333;--green:#00e075;--green-deep:#007b54;
+  --ink-900:#0a2c3b;--ink-700:#2c4a57;--ink-500:#5b7480;--ink-300:#a9bcc4;--ink-200:#cdd9de;--ink-100:#e7eef0;--ink-50:#f3f7f8;--white:#fff;
+  --bg:var(--white);--surface:var(--ink-50);--fg:var(--navy);--muted:var(--ink-500);--border:var(--ink-100);--border-strong:var(--ink-200);
+  --primary:var(--navy);--primary-fg:var(--white);--warning:#b26a00;--danger:#b3261e;
+  --font-sans:"Inter",ui-sans-serif,system-ui,sans-serif;--font-display:"League Spartan",var(--font-sans);
+  --r-sm:6px;--r-md:8px;--r-lg:10px;--shadow-sm:0 1px 2px rgba(0,35,51,.06);--shadow-md:0 4px 16px rgba(0,35,51,.08);
+  --row-h:36px;--control-h:32px;--pad:16px;--sidebar-w:240px;
+}
+*{box-sizing:border-box}
+html{-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 15px/1.5 var(--font-sans)}
+h1,h2,h3{font-family:var(--font-display);margin:0;text-wrap:balance}
+a{color:inherit}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--green);outline-offset:2px}
+
+/* ---- kader ---- */
+.top{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--border);display:flex;align-items:center;gap:24px;padding:0 var(--pad);height:56px}
+.top h1{font-size:24px;line-height:1.25;font-weight:600;white-space:nowrap}
+.top .meta{color:var(--muted);font-size:13px;white-space:nowrap}
+.top .spacer{flex:1}
+.layout{display:grid;grid-template-columns:var(--sidebar-w) minmax(0,1fr)}
+.side{position:sticky;top:56px;height:calc(100vh - 56px);overflow:auto;background:var(--surface);border-right:1px solid var(--border);padding:var(--pad) 8px}
+.side .lbl{font-size:12px;font-weight:600;letter-spacing:.02em;text-transform:uppercase;color:var(--muted);padding:8px 8px 4px}
+.side a{display:flex;justify-content:space-between;gap:8px;align-items:center;min-height:var(--row-h);padding:6px 8px;border-radius:var(--r-sm);text-decoration:none;font-size:13px;line-height:1.3;color:var(--fg)}
+.side a span:first-child{text-wrap:balance}
+.side a:hover{background:var(--ink-100)}
+.side a.actief{background:var(--navy);color:var(--white)}
+.side a .n{color:var(--muted);font-variant-numeric:tabular-nums;font-size:12px}
+.side a.actief .n{color:rgba(255,255,255,.7)}
+.main{padding:0 var(--pad) 96px;max-width:1120px}
+
+/* ---- filters ---- */
+.filters{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:center;padding:12px 0;border-bottom:1px solid var(--border);position:sticky;top:56px;background:var(--bg);z-index:4}
+.grp{display:flex;align-items:center;gap:6px}
+.grp .lbl{font-size:12px;color:var(--muted);margin-right:2px}
+.chip{height:26px;padding:0 10px;border:1px solid var(--border-strong);background:var(--bg);border-radius:999px;font-size:12px;cursor:pointer;color:var(--fg);display:inline-flex;align-items:center;gap:6px}
+.chip.aan{background:var(--navy);border-color:var(--navy);color:var(--white)}
+.chip .n{font-variant-numeric:tabular-nums;opacity:.7}
+input[type=search]{height:var(--control-h);border:1px solid var(--border-strong);border-radius:var(--r-md);padding:0 10px;font:inherit;font-size:13px;min-width:220px;color:var(--fg);background:var(--bg)}
+.btn{height:var(--control-h);padding:0 12px;border-radius:var(--r-md);border:1px solid var(--navy);background:var(--navy);color:var(--white);font-size:13px;font-weight:500;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.btn.sec{background:var(--bg);color:var(--navy)}
+.btn:hover{filter:brightness(1.08)}
+
+/* ---- thema ---- */
+.thema{padding-top:32px;scroll-margin-top:120px}
+.thema-kop{display:flex;align-items:baseline;gap:12px;margin-bottom:4px}
+.thema-kop h2{font-size:22px;font-weight:600}
+.thema-kop .wat{color:var(--muted);font-size:13px}
+.thema-kop .telling{margin-left:auto;font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.opl{display:grid;grid-template-columns:120px 1fr;gap:0 16px;border:1px solid var(--border);border-left:3px solid var(--navy);border-radius:var(--r-md);padding:12px 16px;margin:12px 0 16px;background:var(--surface)}
+.opl .k{font-size:12px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.02em;padding-top:3px}
+.opl p{margin:0;max-width:68ch}
+.opl .bron{grid-column:2;font-size:12px;color:var(--muted);margin-top:6px}
+.opl .geen{grid-column:2;font-size:12px;color:var(--warning);margin-top:4px}
+.opl.nieuw{border-left-color:var(--warning)}
+
+/* ---- rijen ---- */
+.rij{display:grid;grid-template-columns:72px 92px minmax(0,1fr) 260px;gap:0 12px;align-items:start;padding:10px 0;border-bottom:1px solid var(--border);position:relative}
+.rij:hover{background:var(--ink-50)}
+.rij.focus{box-shadow:inset 3px 0 0 var(--navy)}
+.rij.weg .cit,.rij.weg .sam{color:var(--ink-300);text-decoration:line-through}
+.rij.klopt .st-k{background:var(--green-deep);color:var(--white);border-color:var(--green-deep)}
+.rij.weg .st-w{background:var(--ink-700);color:var(--white);border-color:var(--ink-700)}
+.acties{display:flex;gap:4px}
+.st{width:32px;height:26px;border:1px solid var(--border-strong);background:var(--bg);border-radius:var(--r-sm);font-size:12px;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;color:var(--ink-700)}
+.st:hover{border-color:var(--navy)}
+.typ{font-size:11px;font-weight:600;letter-spacing:.02em;text-transform:uppercase;padding:3px 0;color:var(--ink-700)}
+.typ.bezwaar{color:var(--danger)}
+.typ.oplossing_verwoord{color:var(--green-deep)}
+.cit{margin:0;max-width:72ch}
+.cit q{quotes:"\201C" "\201D"}
+.cit .par{color:var(--muted);font-size:12px;margin-left:6px}
+.sam{margin:2px 0 0;font-size:13px;color:var(--muted);max-width:72ch}
+.bron{font-size:12px;color:var(--muted);line-height:1.45}
+.bron b{font-weight:600;color:var(--fg)}
+.bron a{color:var(--muted)}
+.rij textarea{grid-column:3/5;margin-top:6px;width:100%;min-height:52px;border:1px solid var(--border-strong);border-radius:var(--r-sm);padding:6px 8px;font:inherit;font-size:13px;resize:vertical;color:var(--fg);background:var(--bg)}
+.notitie-knop{grid-column:3;justify-self:start;background:none;border:0;padding:0;font-size:12px;color:var(--muted);cursor:pointer;margin-top:4px;text-decoration:underline dotted}
+.leeg{padding:24px 0;color:var(--muted);font-size:13px}
+.hulp{font-size:12px;color:var(--muted);padding:12px 0 0}
+kbd{font:500 11px/1 var(--font-sans);border:1px solid var(--border-strong);border-bottom-width:2px;border-radius:4px;padding:2px 5px;background:var(--bg)}
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--navy);color:var(--white);padding:10px 16px;border-radius:var(--r-md);font-size:13px;box-shadow:var(--shadow-md);opacity:0;transition:opacity .2s;pointer-events:none}
+.toast.zichtbaar{opacity:1}
+.verborgen{display:none!important}
+@media (max-width:900px){.layout{grid-template-columns:1fr}.side{display:none}.rij{grid-template-columns:72px 1fr}.rij .bron{grid-column:2}.rij .typ{grid-column:2}}
+</style>
+</head>
+<body>
+<header class="top">
+  <h1>Pijn en oplossing uit Close</h1>
+  <span class="meta">{{N_ITEMS}} uitspraken · {{N_ORGS}} organisaties · {{N_THEMAS}} thema's · stand {{STAMP}}</span>
+  <span class="spacer"></span>
+  <span class="meta" id="voortgang"></span>
+  <button class="btn sec" id="kopieer" title="Kopieert je besluiten (klopt / weg / notities) als JSON">Kopieer besluiten</button>
+</header>
+<div class="layout">
+  <nav class="side" id="side"></nav>
+  <main class="main">
+    <div class="filters">
+      <div class="grp" id="f-seg"><span class="lbl">Segment</span></div>
+      <div class="grp" id="f-typ"><span class="lbl">Soort</span></div>
+      <div class="grp" id="f-zek"><span class="lbl">Bron</span></div>
+      <div class="grp"><input type="search" id="zoek" placeholder="Zoek in citaat, org, persoon"></div>
+      <div class="grp"><label class="chip" id="verberg-weg"><input type="checkbox" hidden>verberg weggestreept</label></div>
+    </div>
+    <p class="hulp"><kbd>j</kbd>/<kbd>k</kbd> volgende/vorige · <kbd>y</kbd> klopt · <kbd>n</kbd> weg · <kbd>u</kbd> ongedaan · <kbd>o</kbd> notitie · <kbd>/</kbd> zoeken. Besluiten blijven in deze browser staan tot je ze kopieert.</p>
+    <div id="inhoud"></div>
+  </main>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+/*DATA*/
+(function(){
+const D=window.DATA, items=D.items, themas=D.themas, volgorde=D.volgorde;
+const SEG={"nl-ho":"NL hogescholen en universiteiten","uk-he":"UK en Ierland","particulier":"Particuliere opleiders","intl":"Overig internationaal"};
+const TYP={"pijn":"Pijn","uitkomst":"Gewenste uitkomst","bezwaar":"Bezwaar","huidig":"Huidige aanpak","oplossing_verwoord":"Onze verwoording"};
+const ZEK={"letterlijk":"Letterlijk","parafrase":"Parafrase (AI-samenvatting)"};
+const KEY="pijn-oplossing-besluiten-v1";
+let besluit={}; try{besluit=JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){besluit={}}
+function bewaar(){try{localStorage.setItem(KEY,JSON.stringify(besluit))}catch(e){}}
+const filt={seg:new Set(),typ:new Set(),zek:new Set(),q:"",verbergWeg:false};
+const esc=s=>String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function tel(veld){const c={};items.forEach(i=>{c[i[veld]]=(c[i[veld]]||0)+1});return c}
+function chips(el,veld,labels,set){const c=tel(veld);Object.keys(labels).forEach(k=>{if(!c[k])return;const b=document.createElement("button");b.className="chip";b.innerHTML=esc(labels[k])+' <span class="n">'+c[k]+'</span>';b.onclick=()=>{set.has(k)?set.delete(k):set.add(k);b.classList.toggle("aan");render()};el.appendChild(b)})}
+chips(document.getElementById("f-seg"),"segment",SEG,filt.seg);
+chips(document.getElementById("f-typ"),"type",TYP,filt.typ);
+chips(document.getElementById("f-zek"),"zekerheid",ZEK,filt.zek);
+document.getElementById("zoek").oninput=e=>{filt.q=e.target.value.toLowerCase();render()};
+const vw=document.getElementById("verberg-weg");vw.querySelector("input").onchange=e=>{filt.verbergWeg=e.target.checked;vw.classList.toggle("aan",filt.verbergWeg);render()};
+function zichtbaar(i){
+  if(filt.seg.size&&!filt.seg.has(i.segment))return false;
+  if(filt.typ.size&&!filt.typ.has(i.type))return false;
+  if(filt.zek.size&&!filt.zek.has(i.zekerheid))return false;
+  if(filt.verbergWeg&&besluit[i.id]&&besluit[i.id].s==="weg")return false;
+  if(filt.q){const h=(i.citaat+" "+i.samenvatting+" "+i.org+" "+(i.persoon||"")+" "+(i.functie||"")).toLowerCase();if(!h.includes(filt.q))return false}
+  return true;
+}
+function bronregel(i){
+  const wie=[i.persoon,i.functie].filter(Boolean).join(", ");
+  const soort={meeting:"meeting",call:"call",note:"note",email:"mail"}[i.bron_type]||i.bron_type;
+  return '<b>'+esc(i.org)+'</b>'+(wie?'<br>'+esc(wie):'')+'<br>'+esc(i.datum||"")+' · '+soort+' · <a href="'+esc(i.close_url)+'" target="_blank" rel="noopener">Close ↗</a>';
+}
+function rijHtml(i){
+  const b=besluit[i.id]||{};
+  const st=b.s?" "+b.s:"";
+  const par=i.zekerheid==="parafrase"?'<span class="par">parafrase</span>':'';
+  return '<div class="rij'+st+'" data-id="'+esc(i.id)+'" tabindex="0">'+
+    '<div class="acties"><button class="st st-k" data-a="klopt" title="klopt (y)">✓</button><button class="st st-w" data-a="weg" title="weg (n)">✕</button></div>'+
+    '<div class="typ '+esc(i.type)+'">'+esc(TYP[i.type]||i.type)+'</div>'+
+    '<div><p class="cit"><q>'+esc(i.citaat)+'</q>'+par+'</p><p class="sam">'+esc(i.samenvatting)+'</p></div>'+
+    '<div class="bron">'+bronregel(i)+'</div>'+
+    (b.n!=null?'<textarea data-n placeholder="Notitie voor het volgende venster">'+esc(b.n)+'</textarea>':'<button class="notitie-knop" data-a="notitie">notitie</button>')+
+  '</div>';
+}
+function render(){
+  const inhoud=document.getElementById("inhoud"), side=document.getElementById("side");
+  let h="", s='<div class="lbl">Thema\'s</div>', tot=0;
+  volgorde.forEach(slug=>{
+    const t=themas[slug]; const lijst=items.filter(i=>i.thema===slug&&zichtbaar(i)); const alle=items.filter(i=>i.thema===slug).length;
+    tot+=lijst.length;
+    s+='<a href="#t-'+slug+'" data-slug="'+slug+'"><span>'+esc(t.naam)+'</span><span class="n">'+lijst.length+(lijst.length!==alle?'/'+alle:'')+'</span></a>';
+    h+='<section class="thema" id="t-'+slug+'"><div class="thema-kop"><h2>'+esc(t.naam)+'</h2><span class="wat">'+esc(t.wat)+'</span><span class="telling">'+lijst.length+' van '+alle+'</span></div>';
+    h+='<div class="opl'+(t.nieuw?' nieuw':'')+'"><div class="k">Onze oplossing</div><p>'+esc(t.oplossing)+'</p>'+(t.bron?'<div class="bron">Bron: '+esc(t.bron)+'</div>':'')+(t.geen_claim?'<div class="geen">Geen claim in de bron over: '+esc(t.geen_claim)+'</div>':'')+'</div>';
+    h+=lijst.length?lijst.map(rijHtml).join(""):'<div class="leeg">Geen uitspraken binnen dit filter.</div>';
+    h+='</section>';
+  });
+  inhoud.innerHTML=h; side.innerHTML=s;
+  const beoordeeld=Object.values(besluit).filter(b=>b.s).length;
+  document.getElementById("voortgang").textContent=beoordeeld+" van "+items.length+" beoordeeld";
+  markeerFocus();
+}
+function zet(id,s){const b=besluit[id]||{};b.s=(b.s===s)?undefined:s;if(!b.s)delete b.s;if(Object.keys(b).length)besluit[id]=b;else delete besluit[id];bewaar();
+  const el=document.querySelector('.rij[data-id="'+CSS.escape(id)+'"]');if(el){el.classList.remove("klopt","weg");if(besluit[id]&&besluit[id].s)el.classList.add(besluit[id].s)}
+  const beoordeeld=Object.values(besluit).filter(b=>b.s).length;document.getElementById("voortgang").textContent=beoordeeld+" van "+items.length+" beoordeeld";
+  document.querySelectorAll("#side a").forEach(a=>{const slug=a.dataset.slug;const n=items.filter(i=>i.thema===slug&&zichtbaar(i)).length;const alle=items.filter(i=>i.thema===slug).length;a.querySelector(".n").textContent=n+(n!==alle?'/'+alle:'')});
+  if(filt.verbergWeg&&s==="weg"&&el)el.classList.add("verborgen");
+}
+function notitie(id){const b=besluit[id]||{};if(b.n==null){b.n="";besluit[id]=b;bewaar()}
+  const el=document.querySelector('.rij[data-id="'+CSS.escape(id)+'"]');const knop=el.querySelector(".notitie-knop");
+  if(knop){const ta=document.createElement("textarea");ta.dataset.n="";ta.placeholder="Notitie voor het volgende venster";knop.replaceWith(ta);ta.focus()}else{const ta=el.querySelector("textarea");if(ta)ta.focus()}}
+document.getElementById("inhoud").addEventListener("click",e=>{
+  const rij=e.target.closest(".rij");if(!rij)return;focusIdx=zichtbareRijen().indexOf(rij);markeerFocus();
+  const a=e.target.closest("[data-a]");if(!a)return;const id=rij.dataset.id;
+  if(a.dataset.a==="notitie")notitie(id);else zet(id,a.dataset.a);
+});
+document.getElementById("inhoud").addEventListener("input",e=>{if(e.target.matches("textarea[data-n]")){const id=e.target.closest(".rij").dataset.id;const b=besluit[id]||{};b.n=e.target.value;besluit[id]=b;bewaar()}});
+/* toetsenbord */
+let focusIdx=-1;
+function zichtbareRijen(){return Array.from(document.querySelectorAll(".rij:not(.verborgen)"))}
+function markeerFocus(){document.querySelectorAll(".rij.focus").forEach(r=>r.classList.remove("focus"));const r=zichtbareRijen()[focusIdx];if(r){r.classList.add("focus");r.scrollIntoView({block:"center",behavior:"smooth"})}}
+document.addEventListener("keydown",e=>{
+  if(e.target.matches("input,textarea")){if(e.key==="Escape")e.target.blur();return}
+  const rijen=zichtbareRijen();if(!rijen.length)return;
+  if(e.key==="j"){focusIdx=Math.min(rijen.length-1,focusIdx+1);markeerFocus()}
+  else if(e.key==="k"){focusIdx=Math.max(0,focusIdx-1);markeerFocus()}
+  else if(e.key==="/"){e.preventDefault();document.getElementById("zoek").focus()}
+  else if(focusIdx>=0){const id=rijen[focusIdx].dataset.id;
+    if(e.key==="y"){zet(id,"klopt");focusIdx=Math.min(rijen.length-1,focusIdx+1);markeerFocus()}
+    else if(e.key==="n"){zet(id,"weg");focusIdx=Math.min(rijen.length-1,focusIdx+1);markeerFocus()}
+    else if(e.key==="u"){const b=besluit[id];if(b&&b.s){zet(id,b.s)}}
+    else if(e.key==="o"){e.preventDefault();notitie(id)}}
+});
+/* kopieer */
+document.getElementById("kopieer").onclick=async()=>{
+  const uit={stand:new Date().toISOString().slice(0,10),klopt:[],weg:[],notities:{}};
+  Object.entries(besluit).forEach(([id,b])=>{if(b.s==="klopt")uit.klopt.push(id);if(b.s==="weg")uit.weg.push(id);if(b.n)uit.notities[id]=b.n});
+  const txt=JSON.stringify(uit,null,1);
+  try{await navigator.clipboard.writeText(txt);toast("Gekopieerd: "+uit.klopt.length+" klopt, "+uit.weg.length+" weg, "+Object.keys(uit.notities).length+" notities. Plak in GTM/Knowledge/pijn-oplossing/besluiten.json")}
+  catch(e){prompt("Kopieer handmatig:",txt)}
+};
+function toast(m){const t=document.getElementById("toast");t.textContent=m;t.classList.add("zichtbaar");setTimeout(()=>t.classList.remove("zichtbaar"),4000)}
+/* sidebar actief bij scrollen */
+const io=new IntersectionObserver(es=>{es.forEach(en=>{if(en.isIntersecting){document.querySelectorAll("#side a").forEach(a=>a.classList.toggle("actief",a.dataset.slug===en.target.id.slice(2)))}})},{rootMargin:"-120px 0px -70% 0px"});
+render();document.querySelectorAll(".thema").forEach(s=>io.observe(s));
+})();
+</script>
+</body>
+</html>

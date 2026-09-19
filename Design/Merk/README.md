@@ -6,5 +6,5 @@ Centrale bibliotheek met Eduface merk-assets. **Eén bron** — gebruik deze, ni
 - `product/` — product-screenshots: `product_app.png`, `product_grading.png`, `product_criteria.png`.
 - `fonts/` — `LeagueSpartan-Bold.ttf` (display/koppen), `Inter-Regular.ttf` (body).
 
-Kleuren, type-schaal en tokens: zie `../brand-guidelines.md` en `../design-system/tokens.css`.
+Kleuren, type-schaal en tokens: zie `richtlijnen/brand-guidelines.md` en `../System/core/tokens.css`.
 Gebruikt door de `marketing-creatives` skill.

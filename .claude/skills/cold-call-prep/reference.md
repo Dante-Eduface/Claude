@@ -8,7 +8,7 @@ Alles wat je moet weten om het script inhoudelijk te laten kloppen. De SKILL.md 
 
 Nooit zeggen: "vragen beantwoorden", "sneller nakijken", "het cijfer geven".
 
-**De productmodules zijn de enige bron voor productclaims:** AI Feedback, AI Paper Grader, AI Exam Grader, Oral Examination (beta). De volledige omschrijving staat in `Platform/product.md`. Staat een functie daar niet, dan bestaat hij niet, ook niet als hij perfect op de pijn van deze prospect aansluit. Juist dan is de kans het grootst dat je hem verzint.
+**De productmodules zijn de enige bron voor productclaims:** AI Feedback, AI Paper Grader, AI Exam Grader, Oral Examination (beta). De volledige omschrijving staat in `Platform/Product/product.md`. Staat een functie daar niet, dan bestaat hij niet, ook niet als hij perfect op de pijn van deze prospect aansluit. Juist dan is de kans het grootst dat je hem verzint.
 
 **De grens die je zelf noemt voordat de prospect hem noemt:** het model beslist niet, de examinator houdt het laatste woord. Bij iemand met een toets- of examenachtergrond zeg je dat meteen in de pitch.
 

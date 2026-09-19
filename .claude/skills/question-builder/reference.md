@@ -79,4 +79,4 @@ Zelfde patroon bij beleid: "I saw in your quality manual that X. Is that how it 
 
 ## Vraagcategorieën per fase
 
-De volledige vraagbank per categorie (probleem en oorzaak, timing, frequentie en schaal, eerdere pogingen, metrics, eigenaarschap, afhankelijkheden, gewenste uitkomst, veranderbereidheid, besluitproces) staat in `GTM/Knowledge/sales-handbook-v1.md`, sectie "Discovery questions". Gebruik die als checklist voor **welk** gat je dicht wil, en deze skill voor **hoe** je de vraag formuleert. De handboekvragen zijn generiek en gaan nooit rechtstreeks naar Dante toe.
+De volledige vraagbank per categorie (probleem en oorzaak, timing, frequentie en schaal, eerdere pogingen, metrics, eigenaarschap, afhankelijkheden, gewenste uitkomst, veranderbereidheid, besluitproces) staat in `GTM/Knowledge/handboeken/sales-handbook-v1.md`, sectie "Discovery questions". Gebruik die als checklist voor **welk** gat je dicht wil, en deze skill voor **hoe** je de vraag formuleert. De handboekvragen zijn generiek en gaan nooit rechtstreeks naar Dante toe.

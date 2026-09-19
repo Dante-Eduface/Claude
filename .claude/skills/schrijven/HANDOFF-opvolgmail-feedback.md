@@ -7,7 +7,7 @@ Dante gaf net 27 opvolgmails (na een geaccepteerd LinkedIn-connectieverzoek) ter
 
 ## Wat er al staat
 - `.claude/skills/schrijven/voice-by-type.md` heeft nog GEEN aparte sectie voor "opvolgmail na geaccepteerd LinkedIn-verzoek". De dichtstbijzijnde secties zijn "Cold outreach" en "LinkedIn connectieverzoek", maar een opvolgmail is een ander moment (warm, ze hebben al geaccepteerd) dus verdient een eigen sectie.
-- De 27 voorbeeldmails staan in `GTM/ICP/targetlijst-nl/lemlist-opvolgmails-batch1.csv` (kolom `firstEmail`), met per mail de onderbouwing waarom die hoek gekozen is (zie transcript van de master-chat als je de redenering nodig hebt, niet herhaald hier).
+- De 27 voorbeeldmails staan in `Archive/targetlijst-nl/lemlist-opvolgmails-batch1.csv` (kolom `firstEmail`), met per mail de onderbouwing waarom die hoek gekozen is (zie transcript van de master-chat als je de redenering nodig hebt, niet herhaald hier).
 - Vast format voor deze mails: aanhef altijd "Hi [voornaam],", afsluiting "Met vriendelijke groet, Dante Torbed, Customer success manager, Eduface" (Engels voor buitenlandse contacten).
 
 ## Wat hier te doen is

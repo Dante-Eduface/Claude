@@ -20,7 +20,7 @@ Zonder dat bestand maak je elke ronde dezelfde fout opnieuw en moet Dante elke r
 
 1. Noemt Dante geen markt, vraag het in één regel. Raad niet.
 2. Geef `--markt <code>` mee bij elk commando, of zet `export SHIFT_MARKT=<code>`.
-3. Lees `GTM/ICP/shift/markets/<code>/profiel.md`. Voor jou tellen vooral **Titelrangorde** (welke functies hoog staan en welke je juist niet wilt), **Registers** en **Toezichtregime** (waar namen met functies staan) en **Kanaal** (of je naast LinkedIn ook een mailadres noteert). De rangorde zit ook als regexes in `profiel.json`, en die gebruikt het script bij de tiebreak.
+3. Lees `GTM/Campaigns/shift/markets/<code>/profiel.md`. Voor jou tellen vooral **Titelrangorde** (welke functies hoog staan en welke je juist niet wilt), **Registers** en **Toezichtregime** (waar namen met functies staan) en **Kanaal** (of je naast LinkedIn ook een mailadres noteert). De rangorde zit ook als regexes in `profiel.json`, en die gebruikt het script bij de tiebreak.
 
 **Je legt ook het dossier aan.** Het veld `waarom_deze_persoon` is de korte samenvatting die agent 3 in zijn wachtrij ziet, één of twee zinnen. De route door het organigram, de bronnen die je bekeek en de mensen die afvielen zet je in het dossier:
 
@@ -28,7 +28,7 @@ Zonder dat bestand maak je elke ronde dezelfde fout opnieuw en moet Dante elke r
 pipeline.py dossier p_xxx --sectie "Waarom deze persoon" --schrijf - --actor contact-sourcing
 ```
 
-Bestaat er nog geen dossier, dan maakt dat commando er een aan op basis van het sjabloon. De koppen staan in `GTM/ICP/shift/master/dossiers/SJABLOON.md`.
+Bestaat er nog geen dossier, dan maakt dat commando er een aan op basis van het sjabloon. De koppen staan in `GTM/Campaigns/shift/master/dossiers/SJABLOON.md`.
 
 ## Begin met je wachtrij
 
@@ -154,7 +154,7 @@ Agent 3 doet dieper onderzoek en komt er soms achter dat jouw aangewezen persoon
    ```bash
    pipeline.py set org_x --set contact_zoekpoging="gat 2026-09-10: aangewezen persoon afgekeurd door agent 3, geen vervanger; <wat je geprobeerd hebt>" --actor contact-sourcing
    ```
-   en één regel in `GTM/ICP/shift/markets/<code>/GATEN.md` met status `open`. Eén gat per organisatie.
+   en één regel in `GTM/Campaigns/shift/markets/<code>/GATEN.md` met status `open`. Eén gat per organisatie.
 
 **Je roept agent 1 niet aan.** Het gat wacht op de volgende batch van agent 1.
 

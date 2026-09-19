@@ -71,7 +71,7 @@ Detecting the tool and its owner is in scope. Costing it or building its busines
 
 ## Output format
 
-- Reuse `GTM/Accounts/rug-groningen/organogram.html` as the visual template: tiers (directie → domain managers → teams), clean role-color-coded cards, optional faces, a legend, and a short CRO-assessment box.
+- Reuse `GTM/Accounts/rug-groningen/onderzoek/organogram.html` as the visual template: tiers (directie → domain managers → teams), clean role-color-coded cards, optional faces, a legend, and a short CRO-assessment box.
 - Render HTML to PDF with headless Chrome (`--print-to-pdf`), landscape A4 for a wide org.
 - If Dante wants it fast, a role table (person | function | role | why) is a fine lighter output.
 

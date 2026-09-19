@@ -4,11 +4,6 @@ Campagne.
 
 **Status:** nog invullen — welke fase, en wat is de volgende stap?
 
-## Bestanden
-
-- `blog-launch-checklist.html`
-- `framer-cms-prompt.md`
-
 ## Submappen
 
 - `ai-assessment-tef-uk-institutions-schema/`
@@ -32,3 +27,4 @@ Campagne.
 - `ofqual-schema/`
 - `oral-schema/`
 - `student-appeals-ai-assisted-grade-schema/`
+- `werkbestanden/`

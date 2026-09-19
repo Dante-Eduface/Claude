@@ -8,7 +8,7 @@ _Kennisbank van de deal. Bijgewerkt: 2026-09-11. Werk dit bij na elk contact._
 - **Notes op de lead:** discovery-vragen (31 aug), cost justification (10 sep), SSO grid 1 (10 sep).
 - **SSO grid:** `sso-grid-bsn.html` + `sso-grid-bsn.png` in deze map. Volgende versie = "SSO grid 2" in Close.
 - **Transcript gesprek 10 sep:** `Eduface/Archive/Opnamens/2026-09-10 Action Learning Business School Europe.txt` (Dictafoon-opname, 20 min, hoorfouten, geen sprekerscheiding).
-- **Samenhang:** BSN nam Business School Notenboom over in 2025. Notenboom is een aparte lead in Close (SHIFT cold call batch, Tier A). Dossier: `GTM/Campaigns/cold-calling/notenboom-sso-stappenplan.md`.
+- **Samenhang:** BSN nam Business School Notenboom over in 2025. Notenboom is een aparte lead in Close (SHIFT cold call batch, Tier A). Dossier: `GTM/Accounts/notenboom/kwalificatie/notenboom-sso-stappenplan.md`.
 
 ## Organisatie
 - Business School Netherlands, Herenstraat 25, Buren (Gld). Site bsn.eu / bsn.nl. Action Learning-business school, MBA-achtig.

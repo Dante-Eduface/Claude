@@ -122,7 +122,7 @@ Zet erbij wat hij wel en niet gelezen heeft. Nooit "ik las jullie handreiking" a
 
 ## Roleplay
 
-Wil Dante oefenen, dan staat de prompt klaar in `GTM/Knowledge/cold-call-roleplay-prompt.md`. Plakken in een nieuwe chat met het dossier eronder. Claude speelt de prospect, mag hem laten falen, en geeft daarna feedback per scriptstap plus praatverhouding en taalgebruik.
+Wil Dante oefenen, dan staat de prompt klaar in `GTM/Knowledge/handboeken/cold-call-roleplay-prompt.md`. Plakken in een nieuwe chat met het dossier eronder. Claude speelt de prospect, mag hem laten falen, en geeft daarna feedback per scriptstap plus praatverhouding en taalgebruik.
 
 ## Done
 

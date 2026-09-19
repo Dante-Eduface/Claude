@@ -14,11 +14,11 @@ Particuliere hogeschool in Rotterdam, zorg en welzijn, deeltijd voor werkende pr
 - [06-taal-en-haakjes.md](06-taal-en-haakjes.md) — hun vocabulaire en de haakjes met bron
 - [07-beloofde-features.md](07-beloofde-features.md) — alles wat we ze over de tool hebben verteld, met een inschatting of het al bestaat
 - `transcripts/` — uitgeschreven gesprekken van 01-09 en 03-09 (Close Notetaker)
-- `bronnen/` — de twee NVAO-visitatierapporten als PDF en als tekst
+- `../bronnen/` — de twee NVAO-visitatierapporten als PDF en als tekst
 - `raw/` — alle 106 pagina's van breederode.nl (WordPress REST-dump van 09-09-2026)
 
 ## Regels voor dit account
-- Elke claim over Breederode moet terug te voeren zijn op `bronnen/`, `raw/` of Close. Staat het er niet, dan beweer je het niet.
-- Productclaims over Eduface komen uit `Platform/product.md`, nergens anders vandaan.
+- Elke claim over Breederode moet terug te voeren zijn op `../bronnen/`, `raw/` of Close. Staat het er niet, dan beweer je het niet.
+- Productclaims over Eduface komen uit `Platform/Product/product.md`, nergens anders vandaan.
 - Hun woord is **navolgbaarheid**, niet consistentie. Zie 06.
 - De site verversen: `python3` script in de projectgeschiedenis, of opnieuw via `https://breederode.nl/wp-json/wp/v2/posts?per_page=50`.

@@ -6,7 +6,7 @@ gebruikt stage_van() als enige waarheid voor de fase.
 
     python3 .claude/scripts/dashboard.py [--out PAD]
 
-Schrijft standaard naar GTM/ICP/targetlijst-nl/pijplijn-dashboard.html.
+Schrijft standaard naar Archive/targetlijst-nl/pijplijn-dashboard.html.
 """
 
 import argparse
@@ -643,7 +643,7 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em;
 
   $('footer').innerHTML = 'Stand van ' + esc(D.gegenereerd) +
     '. Verversen: <code>python3 .claude/scripts/dashboard.py</code>. ' +
-    'Bron: GTM/ICP/shift/master/, fase afgeleid met stage_van() uit pipeline.py.';
+    'Bron: GTM/Campaigns/shift/master/, fase afgeleid met stage_van() uit pipeline.py.';
 })();
 </script>
 </body>

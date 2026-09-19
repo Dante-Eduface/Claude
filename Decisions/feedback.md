@@ -27,7 +27,7 @@ regel in de kaart, anders groeit dit terug.
 
 ### 2026-09-19 · naamgeving · regel
 Spaties en hoofdletters mogen in mapnamen die een mens leest, mits kort en duidelijk.
-Kleine letters met streepjes blijven verplicht onder `.claude/` en in `GTM/ICP/shift/master/`,
+Kleine letters met streepjes blijven verplicht onder `.claude/` en in `GTM/Campaigns/shift/master/`,
 omdat commando's en scripts daarvan afhangen. Vastgelegd in `Context/kaart.md`.
 
 ### 2026-09-19 · skills · correctie
