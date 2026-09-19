@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "landing-demo",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["projects/landing-page-demo-survey/serve.mjs"],
+      "port": 3210
+    }
+  ]
+}

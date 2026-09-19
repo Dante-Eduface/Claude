@@ -1,0 +1,56 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__claude_ai_Close",
+      "mcp__claude_ai_Gmail",
+      "mcp__claude_ai_Google_Calendar",
+      "mcp__claude_ai_Google_Drive",
+      "mcp__claude_ai_Todoist",
+      "mcp__claude_ai_Clay",
+      "mcp__claude_ai_Framer",
+      "mcp__lemlist"
+    ],
+    "ask": [
+      "mcp__claude_ai_Close__delete_address",
+      "mcp__claude_ai_Close__delete_contact",
+      "mcp__claude_ai_Close__delete_email_template",
+      "mcp__claude_ai_Close__delete_lead",
+      "mcp__claude_ai_Close__delete_lead_smart_view",
+      "mcp__claude_ai_Close__delete_lead_status",
+      "mcp__claude_ai_Close__delete_note",
+      "mcp__claude_ai_Close__delete_opportunity",
+      "mcp__claude_ai_Close__delete_opportunity_status_tool",
+      "mcp__claude_ai_Close__delete_pipeline",
+      "mcp__claude_ai_Close__delete_sms_template",
+      "mcp__claude_ai_Close__delete_task",
+      "mcp__claude_ai_Close__schedule_voice_agent_call",
+      "mcp__claude_ai_Gmail__delete_label",
+      "mcp__claude_ai_Google_Calendar__delete_event",
+      "mcp__claude_ai_Todoist__delete-object",
+      "mcp__claude_ai_Framer__deleteCMSItem",
+      "mcp__claude_ai_Framer__deleteNode",
+      "mcp__lemlist__send_message",
+      "mcp__lemlist__set_campaign_state",
+      "mcp__lemlist__add_leads_to_campaign",
+      "mcp__lemlist__delete_company",
+      "mcp__lemlist__delete_memory",
+      "mcp__lemlist__delete_sequence_step",
+      "mcp__lemlist__delete_unsubscribe",
+      "mcp__lemlist__delete_watch_list",
+      "mcp__lemlist__delete_webhook"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/.claude/hooks/shift-nacht-grendel.py\""
+          }
+        ]
+      }
+    ]
+  }
+}
