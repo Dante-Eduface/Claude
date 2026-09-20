@@ -1,6 +1,6 @@
 # Dante
 
-_Laatst bijgewerkt: 2026-09-19._
+_Laatst bijgewerkt: 2026-09-20._
 
 - **Naam:** Dante Torbed
 - **Geboren:** 17-08-2006. Leeftijd zelf uitrekenen tegen de datum van vandaag, nooit een getal hier neerzetten. (Op 19-09-2026: 20.)
@@ -20,15 +20,15 @@ Uit de agenda gelezen op 19-09-2026. Dit is de vorm van zijn week, niet een afsp
 
 | Wanneer | Wat |
 |---|---|
-| Elke dag 05:30 | Op |
-| Ma t/m do 06:23 | Trein naar Utrecht, ~07:35 op kantoor |
+| Elke dag 05:00 | Op |
+| Ma t/m do 05:53 | Trein naar Utrecht, ~07:05 op kantoor |
 | Ma en wo | Terugtrein 18:35, thuis ~19:25 |
 | Di en do | Terugtrein 16:05, want gym om 17:00 |
 | Vrijdag | Thuis, geen reistijd |
 | Elke dag 20:00 | Dag afsluiten |
 | Gym 4x per week | Di en do 17:00, za en zo 13:00, 2 uur per keer |
 
-De ochtendtrein is een uur per dag waarin hij werkt, vier uur per week. Losse, zelfstandige klussen passen daar goed in.
+In de trein leest hij boeken, heen en terug, acht uur per week (20-09-2026). Voorstel dat openstaat: de heenreis wordt het schrijfblok en de terugreis blijft lezen, omdat de ochtend zijn frisste uur is. Zie `references/deep-work.md`.
 
 ## Hoe hij werkt
 
@@ -41,7 +41,7 @@ Bijgewerkt 19-09-2026, uit zijn eigen woorden.
 - **Over een slechte week heeft hij nog niet nagedacht.** Niet zelf invullen.
 - **Eduface is zijn thuis.** Hij blijft, en denkt niet in exitscenario's of een eigen startup. Dat is voor nu geen open vraag maar een gepasseerd station.
 
-Zijn leidende maat is **uren deep work**. De redenering, het schema en het plafond staan in `references/deep-work.md`.
+Zijn leidende maat is **uren deep work**, met een voorstel om die te verschuiven naar geboekte eerste gesprekken per week. De redenering, het schema en het plafond staan in `references/deep-work.md`.
 
 ## Persoonlijk
 

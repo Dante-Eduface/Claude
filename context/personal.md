@@ -65,6 +65,8 @@ Staat apart in **`context/financien.md`**. Laadt ook niet automatisch.
 
 ## Leren
 
+- **Leest in de trein**, heen en terug, ongeveer acht uur per week (20-09-2026).
+
 - Geen HBO of MBA, bewust niet. Wil kennis die hij direct kan toepassen. Eduface is zijn business school.
 - Boeken die bij zijn fase passen: *The Mom Test*, *$100M Offers* (Hormozi), *Zero to One* (Thiel).
 - Leest nu *Deep Work* (Newport). Wat daaruit in zijn werkweek terechtkomt staat in `references/deep-work.md`.

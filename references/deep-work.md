@@ -119,16 +119,24 @@ Er zitten wel twee verschillende dingen onder één woord:
 | **Productieschrijven** | Een LinkedIn-post, een mail, een accountstrategie. Er komt iets af. | In een deep-work-blok, als de taak van dat blok |
 | **Denkschrijven** | Schrijven om erachter te komen wat je denkt. Geen oplevering. | Eigen moment, zie hieronder |
 
-**Voorstel: de trein wordt het schrijfblok.** Ma t/m do 05:53 tot 06:53, vier uur per week.
+**Voorstel: de heenreis wordt het schrijfblok, de terugreis blijft lezen.** Ma t/m do 05:53 tot 06:53, vier uur per week.
 
-Waarom daar:
+Dante leest op 20-09-2026 in beide treinen een boek, heen en terug, dus acht uur per week. Dat is goed besteed, maar niet optimaal verdeeld: **de heenreis is zijn frisste uur van de dag en dat gaat nu naar input.** Lezen houdt prima stand met een halve batterij, schrijven niet. Dus ruil je ze om.
 
-- Het is tijd die hij toch al heeft en die nu aan losse klusjes opgaat. Die klusjes kunnen naar de middag.
+Er zit ook een lus in die nu ontbreekt. Je leest op de terugweg, je schrijft er de volgende ochtend over. Zonder dat tweede deel houd je drie weken na een boek vrijwel niets over. Met dat deel wordt lezen iets wat je bezit in plaats van iets wat je hebt gedaan.
+
+En het is precies de valkuil waar het boek dat hij nu leest over gaat: acht uur input per week zonder output voelt productief en levert niets op. Vier uur lezen plus vier uur schrijven levert meer op dan acht uur lezen.
+
+Waarom de trein:
+
+- Het is tijd die hij toch al heeft.
 - Hij is fris, niemand kan bij hem, en er is geen scherm nodig.
 - Het botst niet met zijn deep-work-blokken, dus het kost hem geen productie.
 - Vier korte sessies per week verslaan één lange. Bij denkschrijven telt de frequentie zwaarder dan de lengte, omdat je elke keer verder komt op waar je de vorige keer bleef.
 
 Op vrijdag en in het weekend is er geen trein. Dan zijn het de **eerste 20 minuten van blok 1**: leegschrijven, de vraag van de dag scherp krijgen, en dan de rest van het blok aan die ene taak. Dat maakt het blok beter in plaats van dat het ermee concurreert.
+
+**De terugreis blijft lezen.** 16:05 op di en do, 18:35 op ma en wo. Vier uur per week, en dat is ruim genoeg.
 
 **Niet splitsen in zakelijk en persoonlijk.** Eén plek, alles door elkaar. Twee bestanden bijhouden is administratie, en administratie is precies wat een denkgewoonte om zeep helpt.
 
