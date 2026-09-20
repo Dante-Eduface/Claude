@@ -4,7 +4,7 @@
 >
 > **Niets invullen wat je kunt navragen.** Alles wat open is staat in `context/open-vragen.md`.
 
-_Laatst bijgewerkt: 19-09-2026, na een ronde antwoorden van Dante zelf._
+_Laatst bijgewerkt: 20-09-2026, na twee rondes antwoorden van Dante zelf._
 
 ## Basis
 
@@ -74,7 +74,7 @@ Staat apart in **`context/financien.md`**. Laadt ook niet automatisch.
 
 Twee thema's, allebei met dezelfde twee deep-work-blokken erin (06:00 tot 08:00 en 09:00 tot 11:00):
 
-- **Zaterdag is een werkdag.** Week plannen in blok 1, financiele controle in de pauze, gym om 13:00, boodschappen om 15:00.
+- **Zaterdag is een werkdag.** Week plannen in blok 1, financiele controle om 11:00, gym om 13:00, boodschappen om 15:00.
 - **Zondag is een thuisdag.** LinkedIn-post in blok 1, gym om 13:00, schoonmaken om 15:00, koken om 16:00.
 
 Boodschappen blijven bewust op zaterdag, een dag voor het koken. Zie `references/deep-work.md` voor de hele week.

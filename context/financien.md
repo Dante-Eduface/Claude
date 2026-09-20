@@ -4,7 +4,7 @@
 >
 > **Kijk vooruit, niet achteruit.** Dante op 19-09-2026: *"ik wil dat je niet zo bezig bent met het verleden, de situatie is heel anders."* De historische uitgavenanalyse uit de afschriften is daarom hier niet overgenomen. Gebruik dit bestand voor waar hij naartoe gaat, niet voor wat hij vorig jaar uitgaf.
 
-_Laatst bijgewerkt: 19-09-2026. Bron: Dante zelf, plus zijn geldplan-app._
+_Laatst bijgewerkt: 20-09-2026. Bron: Dante zelf, plus zijn geldplan-app._
 
 ## Wat er binnenkomt
 
@@ -51,7 +51,7 @@ Die verdeling voert hij echt uit, het is geen voornemen.
 
 Elke **zaterdag** staat "Financieel controle" in zijn agenda, wekelijks. Dat is het moment om dit bestand tegen de werkelijkheid te leggen.
 
-**Hoort in het pauze-uur van 08:00 tot 09:00**, niet om 09:00. Zoals hij nu staat valt hij in deep-work-blok 2, en een financiële controle is shallow werk. Dat is precies waar het pauze-uur voor is. Zie `references/deep-work.md`.
+**Hoort op 11:00 tot 12:00**, niet om 09:00. Zoals hij nu staat valt hij in deep-work-blok 2, en een financiële controle is shallow werk. Het pauze-uur is geen alternatief, want dat blijft leeg. Na blok 2 en voor de lunch is de plek. Zie `references/deep-work.md`.
 
 ## De geldplan-app
 

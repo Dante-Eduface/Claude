@@ -1,6 +1,6 @@
 # Wat er nu eerst moet
 
-_Laatst bijgewerkt: 2026-09-19. Dit bestand wint van elk ander contextbestand. Verandert de focus, dan verandert dit bestand, niet een zin ergens anders._
+_Laatst bijgewerkt: 2026-09-20. Dit bestand wint van elk ander contextbestand. Verandert de focus, dan verandert dit bestand, niet een zin ergens anders._
 
 ## De prioriteit
 
@@ -27,7 +27,13 @@ Enkelvoud, en dat is het punt. Dante op 19-09-2026: *"bepaal gewoon één priori
 
 **Een geboekte meeting wint altijd van een blok.** Calendly blijft open, ook 's ochtends. Dat is een bewuste keuze: liever een meeting dan een blok. Blokken die daardoor sneuvelen zijn geen falen.
 
-In een blok past **één** taak, die de avond ervoor bij het afsluiten van 20:00 gekozen is. De telefoon ligt buiten de kamer. Hoe je de blokken intens maakt en wat er in het pauze-uur hoort staat in `references/deep-work.md`.
+In een blok past **één** taak, die de avond ervoor bij het afsluiten van 20:00 gekozen is. De telefoon ligt buiten de kamer.
+
+**Het pauze-uur is leeg.** Eten, lopen, geen scherm. Geen mail, geen Close. Shallow werk gaat naar de middag, want dat is werktijd en geen pauze (gecorrigeerd 20-09-2026).
+
+**De trein van 05:53 is het schrijfblok**, ma t/m do. Denken en schrijven over werk en persoonlijke dingen door elkaar. Telt niet mee in de deep-work-uren. Op vrijdag en in het weekend zijn het de eerste 20 minuten van blok 1.
+
+Hoe je de blokken intens maakt staat in `references/deep-work.md`.
 
 **De eerste twee weken zijn een nulmeting**, geen target. Daarna wordt het één getal (W5).
 

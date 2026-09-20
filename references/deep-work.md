@@ -90,22 +90,47 @@ Dit is zijn eigen vermoeden, en het klopt waarschijnlijk: uren zijn makkelijk, i
 
 **3. De Roosevelt-oefening.** Schat hoeveel tijd een taak kost, geef jezelf 70% daarvan, en zet een zichtbare timer op je bureau. Newport gebruikt dit expliciet als training: de tijdsdruk dwingt een intensiteit af die je uit jezelf niet haalt. Een paar keer per week, niet elk blok.
 
-**4. Productive meditation op de trein.** Eén vraag in je hoofd houden, telkens terugkeren als je afdwaalt, geen telefoon. Het uur van 05:53 tot 06:53 is daar precies lang genoeg voor, en het traint de concentratie die je om 07:00 nodig hebt.
+**4. Productive meditation.** Eén vraag in je hoofd houden, telkens terugkeren als je afdwaalt, geen telefoon. Doe dit op de terugweg of tijdens het lopen in de pauze; de heenreis is vanaf 20-09-2026 het schrijfblok.
 
 ### Wat je in het pauze-uur doet
 
-De pauze moet een **pauze van focus** zijn, niet een pauze van afleiding. Dat onderscheid bepaalt of blok 2 net zo goed is als blok 1.
+**Correctie van 20-09-2026.** Ik schreef eerst dat de pauze uit 20 minuten lopen plus 40 minuten shallow werk bestond. Dante's tegenwerping klopte: *"dan ga je toch weer aan heel veel andere dingen nadenken."* Dat is precies wat er gebeurt. Mail en Close openen zet vijftien nieuwe open lussen in je hoofd, en met die lussen begin je aan blok 2. Dat is dezelfde attention residue als een taakwissel, alleen dan vijftien keer.
 
-Verdeling die werkt:
+De twee zinnen spraken elkaar ook gewoon tegen. Als de pauze bedoeld is om je gerichte aandacht te laten herstellen, dan is shallow werk geen herstel: dat is gerichte aandacht plus prikkelhonger, de slechtste combinatie van de twee.
 
-| Tijd | Wat |
-|---|---|
-| Eerste 20 minuten | Eten en naar buiten lopen, zonder scherm |
-| Laatste 40 minuten | Shallow werk: mail, Close, opvolging, administratie |
+**Het pauze-uur is leeg.** Eten, naar buiten lopen, douchen, staren. Geen scherm, geen mail, geen Close, geen telefoon.
 
-Dante's eigen voorstel, shallow werk in de pauze doen, klopt dus. Twee kanttekeningen. De hele pauze volstoppen met shallow werk herstelt je aandacht niet, alleen het lopen doet dat. En scrollen is de slechtste optie van alle: dat is geen rust, dat is training in afleiding.
+Dat voelt als een uur weggooien en dat is het niet. Newport heeft er een heel hoofdstuk over ("Embrace Boredom"): het vermogen om je te concentreren en het vermogen om verveling te verdragen zijn dezelfde spier. Voelt een uur zonder prikkels ongemakkelijk, dan is dat het signaal dat die spier training nodig heeft, niet dat het uur beter gevuld kan worden.
 
-**Niet doen in de pauze:** lezen of ergens hard over nadenken. Dat is meer focus, en dan is het geen pauze.
+**Waar het shallow werk dan wel heen gaat:** de middag. Vanaf 12:00 heeft hij zes uur voor mail, Close, opvolging en meetings. Newport plant shallow werk in eigen blokken, als werktijd, niet als pauze. Die twee dingen door elkaar halen was mijn fout.
+
+Op zaterdag is er geen kantoormiddag, dus daar komt de financiele controle na blok 2: **11:00 tot 12:00**, niet in de pauze.
+
+### Het schrijfblok
+
+Dante wil een vast moment om na te denken en te schrijven, over werk en over persoonlijke dingen door elkaar. Zijn eigen voorstel was om dat in de pauze te doen, minder gefocust.
+
+**Dat is de verkeerde plek, om de omgekeerde reden.** Schrijven is niet te licht voor een deep-work-blok, het is het zwaarste dat er is. Newport noemt schrijven de kernactiviteit van deep work, want denken op papier is het scherpst mogelijke gebruik van gerichte aandacht. In de pauze zetten betekent je waardevolste activiteit in je slechtste uur.
+
+Er zitten wel twee verschillende dingen onder één woord:
+
+| Soort | Wat het is | Waar het hoort |
+|---|---|---|
+| **Productieschrijven** | Een LinkedIn-post, een mail, een accountstrategie. Er komt iets af. | In een deep-work-blok, als de taak van dat blok |
+| **Denkschrijven** | Schrijven om erachter te komen wat je denkt. Geen oplevering. | Eigen moment, zie hieronder |
+
+**Voorstel: de trein wordt het schrijfblok.** Ma t/m do 05:53 tot 06:53, vier uur per week.
+
+Waarom daar:
+
+- Het is tijd die hij toch al heeft en die nu aan losse klusjes opgaat. Die klusjes kunnen naar de middag.
+- Hij is fris, niemand kan bij hem, en er is geen scherm nodig.
+- Het botst niet met zijn deep-work-blokken, dus het kost hem geen productie.
+- Vier korte sessies per week verslaan één lange. Bij denkschrijven telt de frequentie zwaarder dan de lengte, omdat je elke keer verder komt op waar je de vorige keer bleef.
+
+Op vrijdag en in het weekend is er geen trein. Dan zijn het de **eerste 20 minuten van blok 1**: leegschrijven, de vraag van de dag scherp krijgen, en dan de rest van het blok aan die ene taak. Dat maakt het blok beter in plaats van dat het ermee concurreert.
+
+**Niet splitsen in zakelijk en persoonlijk.** Eén plek, alles door elkaar. Twee bestanden bijhouden is administratie, en administratie is precies wat een denkgewoonte om zeep helpt.
 
 ### De week
 
@@ -114,8 +139,9 @@ Dante's eigen voorstel, shallow werk in de pauze doen, klopt dus. Twee kantteken
 | 05:00 | Op | Op | Op |
 | 05:53 | Trein (ma t/m do) | | |
 | Blok 1 | 07:00 tot 09:00 | 06:00 tot 08:00, week plannen | 06:00 tot 08:00, LinkedIn-post |
-| Pauze | 09:00 tot 10:00 | 08:00 tot 09:00, financiele controle | 08:00 tot 09:00 |
+| Pauze | 09:00 tot 10:00, leeg | 08:00 tot 09:00, leeg | 08:00 tot 09:00, leeg |
 | Blok 2 | 10:00 tot 12:00 | 09:00 tot 11:00 | 09:00 tot 11:00 |
+| Daarna | Shallow werk en meetings | Financiele controle 11:00 | |
 | Middag | Meetings en shallow werk | Gym 13:00, boodschappen 15:00 | Gym 13:00, schoonmaken 15:00, koken 16:00 |
 | 20:00 | Afsluiten | Afsluiten | Afsluiten |
 
@@ -123,7 +149,7 @@ Dante's eigen voorstel, shallow werk in de pauze doen, klopt dus. Twee kantteken
 
 **Boodschappen blijven op zaterdag.** Dante's eigen instinct klopt: een dag van tevoren inkopen betekent dat hij zondag meteen kan koken. Het is een klus van een uur na de gym en die breekt de werkdag niet. Schoonmaken verhuist wel naar zondag, want dan staat alles wat met het huis te maken heeft op één dag.
 
-**Financiele controle hoort in het pauze-uur van zaterdag (08:00 tot 09:00), niet om 09:00.** Zoals hij nu staat valt hij in blok 2, en een financiele controle is shallow werk. In de pauze is hij precies goed.
+**Financiele controle gaat naar zaterdag 11:00 tot 12:00.** Zoals hij nu staat (09:00) valt hij in blok 2, en het is shallow werk. De pauze is geen alternatief, want die blijft leeg. Na blok 2 en voor de lunch is de plek.
 
 ### Wat er expliciet NIET gebeurt
 

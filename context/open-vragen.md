@@ -1,6 +1,6 @@
 # Open vragen
 
-_Aangelegd 19-09-2026, grote opschoonronde dezelfde dag._
+_Aangelegd 19-09-2026, bijgewerkt 20-09-2026._
 
 De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat is een vraag die ik **niet zelf mag invullen**.
 
@@ -17,7 +17,9 @@ De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat 
 | # | Vraag | Waarom het uitmaakt | Sinds |
 |---|---|---|---|
 | A5 | **Wordt de leidende maat "geboekte eerste gesprekken per week", vijf stuks?** Uren deep work blijven dan het scorebord, de gesprekken worden de knop waar je op stuurt. | Uren zijn beinvloedbaar maar matig voorspellend: je kunt 28 uur aan het verkeerde werk besteden. Zie `references/deep-work.md`. | 19-09-2026 |
-| A6 | Verhuist de financiele controle van zaterdag 09:00 naar 08:00? | Nu valt hij in blok 2, terwijl het shallow werk is. Het pauze-uur is er precies voor. | 19-09-2026 |
+| A6 | Verhuist de financiele controle van zaterdag 09:00 naar 11:00? | Nu valt hij in blok 2, terwijl het shallow werk is. De pauze is geen alternatief, die blijft leeg. | 20-09-2026 |
+| A8 | **Wordt de trein van 05:53 je schrijfblok?** Ma t/m do een uur denken en schrijven, werk en persoonlijk door elkaar. Op vrijdag en in het weekend de eerste 20 minuten van blok 1. | Je vroeg om een vast moment om te schrijven. De pauze is er de verkeerde plek voor, want schrijven is het zwaarste denkwerk dat er is, niet het lichtste. | 20-09-2026 |
+| A9 | Waar landt dat schrijven? Apple Notes, een schrift, of een bestand in deze repo? | In de repo betekent dat ik het kan lezen en je context vanzelf actueel blijft. Een schrift is sneller op een trein. Jouw keuze. | 20-09-2026 |
 | A7 | Verhuist schoonmaken van zaterdag 16:00 naar zondag 15:00? | Dan staat alles met het huis op de thuisdag. Boodschappen blijven bewust op zaterdag, een dag voor het koken. | 19-09-2026 |
 | W4 | Wanneer komt de NPS-meting op Enterprise er? | Tot die er is staat het doel in `current-priorities.md` als niet stuurbaar. Dante weet het nog niet. | 19-09-2026 |
 | W5 | Na twee weken deep work: welk weektarget zetten we vast? | Het schema staat op 28 uur. De eerste twee weken zijn een nulmeting. | Vanaf 03-10-2026 |
@@ -88,5 +90,5 @@ Blijft staan zodat zichtbaar is wat er al gevraagd is. Alles hieronder is op 19-
 | Waar staat de productpagina? | Gebruik `references/eduface-product.md` voor productclaims. Dat is de bron. | `context/eduface.md` |
 | Ga je wekelijks wegen? | Ja, een keer per week. | `context/personal.md` |
 | Draag je nog een WHOOP? | Gestopt. Geen herstel- of slaapdata meer. | `context/personal.md` |
-| Wat doe je in het pauze-uur? | Eerst 20 minuten eten en lopen zonder scherm, dan 40 minuten shallow werk. | `references/deep-work.md` |
+| Wat doe je in het pauze-uur? | Gecorrigeerd op 20-09-2026: helemaal leeg. Eten en lopen, geen scherm. Shallow werk gaat naar de middag, want dat is werktijd en geen pauze. | `references/deep-work.md` |
 | "Hulp voor het huis" en de oude uitgaven? | Geschrapt. Kijk vooruit, niet naar het verleden. De situatie is anders. | geschrapt |
