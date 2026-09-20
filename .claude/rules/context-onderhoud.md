@@ -80,7 +80,40 @@ Eén keer per maand, of als een sessie er toch al langs komt:
 3. Leg Dante hoogstens drie dingen voor: wat volgens mij niet meer klopt, en wat ik zou schrappen.
 4. Schrappen mag altijd voorgesteld worden. Een leeg vak is beter dan een verkeerd ingevuld vak.
 
-## 7. Wat ik nooit doe
+## 7. Het schema bijhouden vanuit de agenda
+
+Afgesproken 20-09-2026. Dante: *"ik vind het helemaal niet erg als je af en toe mijn agenda kijkt, en als je ziet dat er een aantal dingen aangepast zijn in de basis, dan kun je ook aan mij vragen: deze aanpassingen zijn gemaakt, zou ik dat ook aanpassen in het schema?"*
+
+**De agenda is de bron, `Context/schema.md` is de samenvatting.** Wijken ze af, dan klopt het bestand niet, niet de agenda.
+
+### Wanneer kijken
+
+- Bij de maandelijkse ronde hierboven.
+- Bij het week plannen op zaterdag, want dan ligt de agenda toch open.
+- Als een gesprek over zijn planning gaat.
+
+Niet vaker. Elke sessie de agenda ophalen kost geld en levert meestal niets op, zie `.claude/rules/credits.md`.
+
+### Wat wel en niet telt
+
+**Alleen terugkerende afspraken vormen de basis.** Een gymsessie die structureel verschuift is een schemawijziging. Een verjaardag in het weekend waardoor hij alles opschuift is dat niet.
+
+| Wat ik zie | Wat ik doe |
+|---|---|
+| Een terugkerende afspraak is verplaatst, toegevoegd of verwijderd | Vragen of het schema mee moet |
+| Dezelfde verschuiving twee weken op rij | Vragen of het de nieuwe basis is |
+| Eén losse week die anders loopt | Niets. Niet noemen, niet vastleggen |
+| Een losse afspraak in Eduface Meetings | Niets. Dat is geen ritme |
+
+### Hoe ik het voorleg
+
+Eén regel, met wat ik zie en wat ik zou aanpassen: *"Je gym staat sinds twee weken op 18:00 in plaats van 17:00. Zal ik dat in het schema zetten?"*
+
+**Nooit stil aanpassen.** Het schema is van hem, niet van mij. Ook niet als de agenda duidelijk lijkt.
+
+De kalender-ID's staan in `Context/schema.md`, zodat je ze niet hoeft op te zoeken.
+
+## 8. Wat ik nooit doe
 
 - **Een gat opvullen met iets plausibels.** Niet afleiden dat hij wel verhuisd zal zijn omdat het kantoor verhuisde. Vragen.
 - **Twee versies van hetzelfde feit laten staan.** Nieuw wint, oud gaat weg. Twee getallen naast elkaar betekent dat geen van beide bruikbaar is.
@@ -89,3 +122,5 @@ Eén keer per maand, of als een sessie er toch al langs komt:
 - **Een bestand verwijderen.** Verplaatsen naar `Archive/` met een datum in de mapnaam, zodat de oude versie na te lezen is.
 - **Een aanpassing doorvoeren zonder hem te melden.**
 - **Een persoonlijk feit in werkcontext zetten, of andersom.**
+- **Het schema aanpassen op basis van zijn agenda zonder het te vragen.** Zie punt 7.
+

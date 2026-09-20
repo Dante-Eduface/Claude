@@ -25,7 +25,7 @@ Dante weet dat hij dat in het begin niet haalt en houdt zelf bij hoe het gaat. N
 - **Wanneer de blokken vallen en hoe de rest van zijn week eruitziet:** `Context/schema.md`.
 - **Waarom het zo staat, hoe je de blokken intens maakt, en wat het plafond van Newport betekent:** `Context/deep-work.md`.
 
-**Nog open (A5):** een voorstel om de echte stuurmaat te verschuiven naar geboekte eerste gesprekken per week, vijf stuks, met de uren als scorebord. Uren zijn goed beinvloedbaar maar matig voorspellend: je kunt 28 uur aan het verkeerde werk besteden.
+**Het blijven de uren.** Op 20-09-2026 heeft Dante het voorstel om te verschuiven naar geboekte eerste gesprekken per week afgewezen. Niet opnieuw voorstellen. De kanttekening blijft staan en is zijn keuze om te dragen: uren zijn goed beinvloedbaar maar matig voorspellend, je kunt 28 uur aan het verkeerde werk besteden. Dat is een reden om bij het weekplannen scherp te zijn op waar de uren heen gaan, niet om de maat te veranderen.
 
 ## Revenue target Eduface, eind 2027
 

@@ -1,6 +1,6 @@
 # Open vragen
 
-_Aangelegd 19-09-2026, bijgewerkt 20-09-2026. Vier vragen open._
+_Aangelegd 19-09-2026, bijgewerkt 20-09-2026. Twee vragen open._
 
 De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat is een vraag die ik **niet zelf mag invullen**.
 
@@ -16,9 +16,7 @@ De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat 
 
 | # | Vraag | Waarom het uitmaakt | Sinds |
 |---|---|---|---|
-| A5 | **Wordt de leidende maat "geboekte eerste gesprekken per week", vijf stuks?** Uren deep work blijven dan het scorebord. | Uren zijn beinvloedbaar maar matig voorspellend: je kunt 28 uur aan het verkeerde werk besteden. Zie `Context/deep-work.md`. | 19-09-2026 |
-| A6 | Hoe laat doe je de financiele controle op zaterdag? Hij staat nu om 09:00 en valt daarmee in blok 2, terwijl het shallow werk is. Na blok 2 (11:00) past hij wel. | De pauze is geen alternatief, die blijft leeg. | 20-09-2026 |
-| P11 | Welke vaardigheid ontwikkel je dit jaar? "Een bericht schrijven waar iemand op reageert" wordt het **niet**, dat heb je afgewezen. Wat dan wel? | Je zei eerder dat die volgt uit de leidende maat. Nu de maat 28 uur deep work is, is het antwoord niet meer vanzelfsprekend. | 19-09-2026, opnieuw open 20-09-2026 |
+| P11 | Welke vaardigheid ontwikkel je dit jaar? "Een bericht schrijven waar iemand op reageert" wordt het **niet**, dat heb je afgewezen. | Je zei eerder dat die volgt uit de leidende maat. Nu die op 28 uur deep work staat, is het antwoord niet meer vanzelfsprekend. | 19-09-2026, opnieuw open 20-09-2026 |
 | G15 | De actuele standen van je potjes. Je levert hier een bestand voor aan. | `Personal/geld/geld.md` noemt bewust geen bedragen tot dat er is, en de tijdlijn begint pas bij het eerste bestand. | 19-09-2026 |
 
 ## Later, geen vraag maar een richting
@@ -92,3 +90,5 @@ Blijft staan zodat zichtbaar is wat er al gevraagd is, en zodat ik niet twee kee
 | Verhuist schoonmaken naar zondag? | Nee. Boodschappen en schoonmaken blijven zaterdag, na de gym: 15:00 boodschappen, 16:00 schoonmaken. Koken zondag 15:30 tot 18:00. | `Context/schema.md` |
 | Ruil je de heenreis om van lezen naar schrijven? | Ja. Heen schrijven, terug lezen. | `Context/schema.md` |
 | Waar landt dat schrijven? | Op papier, in een schrift. Niet in deze repo. | `Context/schema.md` |
+| Wordt de stuurmaat geboekte gesprekken per week? | Nee. Het blijven de uren deep work. Niet opnieuw voorstellen. | `Context/current-priorities.md` |
+| Hoe laat doe je de financiele controle op zaterdag? | Om 11:00, na blok 2. | `Context/schema.md` |

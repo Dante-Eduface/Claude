@@ -48,7 +48,7 @@ Thuis, geen reistijd. Zelfde blokken als ma t/m do. Blok 1 begint met 20 minuten
 |---|---|
 | 06:00 tot 07:30 | Week plannen, binnen blok 1. Zie de skill `/week-plannen` |
 | 09:00 tot 11:00 | Blok 2 |
-| Ergens deze ochtend | Financiële controle en wegen. Zie `Personal/geld/` |
+| 11:00 tot 12:00 | Financiële controle en wegen. Na blok 2, want het is shallow werk. Zie `Personal/geld/` |
 | 13:00 tot 15:00 | Gym, Lower B |
 | 15:00 tot 16:00 | Boodschappen, een dag voor het koken |
 | 16:00 tot 17:00 | Schoonmaken |
@@ -61,6 +61,21 @@ Thuis, geen reistijd. Zelfde blokken als ma t/m do. Blok 1 begint met 20 minuten
 | 09:00 tot 11:00 | Blok 2 |
 | 13:00 tot 15:00 | Gym, Upper B |
 | 15:30 tot 18:00 | Koken. Zie `Personal/koken/` |
+
+## Waar dit vandaan komt, en hoe het actueel blijft
+
+Dit schema komt uit Dante's Google Agenda. **De agenda is de bron, dit bestand is de samenvatting.** Wijken ze af, dan klopt dit bestand niet.
+
+| Kalender | Wat erin staat | ID |
+|---|---|---|
+| Planning | Opstaan, treinen, eten, afsluiten | `c_f1d2ab8564178b025424d83c2dfa076c9bbb20172f2df90e8c49b172185ff1db@group.calendar.google.com` |
+| Sporten | De vier gymsessies | `b1723ee094e826f467c9433492fa4c9eb2c50f295c65ca04a75bb71b87472e56@group.calendar.google.com` |
+| Persoonlijk taken | Week plannen, boodschappen, schoonmaken, koken, financiële controle | `321cbbc0833a8375d1cb6043cc90e61d556c0e79754bdc69d6fcc4287b0d4235@group.calendar.google.com` |
+| Eduface Meetings | Afspraken. Geen ritme, dus niet relevant voor dit bestand | `dante.torbed@eduface.me` |
+
+**Alleen terugkerende afspraken vormen de basis.** Een losse verplaatsing telt niet. Heeft hij in het weekend een verjaardag en schuift hij alles op, dan is dat geen schemawijziging maar een gewone week die anders loopt. Dat hoeft nergens vastgelegd.
+
+De werkwijze om dit bij te houden staat in `.claude/rules/context-onderhoud.md`, punt 8.
 
 ## Het scorebord
 

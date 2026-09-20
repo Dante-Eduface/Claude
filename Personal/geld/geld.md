@@ -2,7 +2,7 @@
 
 _Laatst bijgewerkt: 2026-09-20._
 
-> **Dit bestand hoort altijd de actuele stand te tonen.** Afspraak van 20-09-2026: elke keer dat Dante zijn financiële controle doet en zijn export hier uploadt, werk ik dit bestand bij en zet ik een regel in de tijdlijn onderaan. Klopt de stand niet meer, dan is dit bestand stuk.
+> **Dit bestand hoort altijd de actuele stand te tonen.** Afspraak van 20-09-2026: elke zaterdag om 11:00 doet Dante zijn financiële controle en uploadt hij zijn export hierheen. Dan werk ik dit bestand bij en zet ik een regel in de tijdlijn onderaan. Klopt de stand niet meer, dan is dit bestand stuk.
 >
 > **Kijk vooruit, niet achteruit.** Dante: *"ik wil dat je niet zo bezig bent met het verleden, de situatie is heel anders."* De tijdlijn is er om de richting te zien, niet om oude uitgaven na te pluizen.
 
