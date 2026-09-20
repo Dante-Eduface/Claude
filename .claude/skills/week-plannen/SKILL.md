@@ -5,9 +5,20 @@ description: Begeleidt Dante's wekelijkse planmoment op zaterdagochtend. Hij bed
 
 # Week plannen
 
-Zijn planmoment staat elke **zaterdag 06:00 tot 07:30** in de agenda "Persoonlijk taken", binnen zijn eerste deep-work-blok. Dit is de skill die dat uur invult.
+_Laatst bijgewerkt: 2026-09-20._
+
+Zijn planmoment staat elke **zaterdag 06:00 tot 08:00** in de agenda "Persoonlijk taken", en vult zijn eerste deep-work-blok van die dag. Dit is de skill die dat blok invult.
 
 > **Vervangt `/task-planning`**, gearchiveerd op 19-09-2026 in `Archive/skills-2026-09/`. Dante: *"die taken moet ik echt zelf bedenken, de input moet echt vanuit mij komen."* Die skill rangschikte zijn Todoist-lijst en verzon er taken bij. Dat is precies de verkeerde kant op.
+
+## Bronnen, lees deze eerst
+
+Niets hieronder overschrijft wat in deze bronnen staat. Verandert zijn ritme of zijn prioriteit, dan beweegt deze skill vanzelf mee.
+
+- `Context/current-priorities.md` - de prioriteit van deze maand, de leidende maat en het blokkenschema. **Wint van elke zin in dit bestand.**
+- `Context/me.md` - zijn weekritme: welke dagen hij reist, wanneer hij traint, wanneer hij afsluit.
+- Agenda **Planning** - de gehaalde blokken van vorige week, met de ✓ of ✗ van het 20:00-blok.
+- Agenda **Persoonlijk taken** - waar dit blok staat en wat er die zaterdag verder op staat.
 
 ## De rolverdeling
 
@@ -15,7 +26,7 @@ Zijn planmoment staat elke **zaterdag 06:00 tot 07:30** in de agenda "Persoonlij
 
 Wat ik wel doe: doorvragen, het naast zijn eigen prioriteit leggen, en wegschrijven wat eruit komt.
 
-## De opzet van dat uur
+## De opzet van dat blok
 
 **1. Terugblik, vijf minuten.** Ik lever de cijfers, hij het oordeel.
 
@@ -27,7 +38,7 @@ Wat ik wel doe: doorvragen, het naast zijn eigen prioriteit leggen, en wegschrij
 
 **3. Ik bevraag.** Pas hier kom ik in beeld, met vragen, niet met een oordeel:
 
-- *Draagt dit bij aan de 20 salesprocessen van deze maand?* Zo nee, waarom staat het er dan?
+- *Draagt dit bij aan de prioriteit van deze maand?* Het getal staat in `Context/current-priorities.md`, noem dat, niet een getal uit je hoofd. Zo nee, waarom staat het er dan?
 - *Welke taak zet je in welk blok?* Eén per blok, en die keuze maak je nu, niet in het blok zelf.
 - *Dit staat er de derde week op rij op. Gaat het gebeuren, of gaat het weg?*
 - *Is dit een taak van een uur of van een week?* Een taak die niet in één blok past is geen taak maar een project.
@@ -50,14 +61,9 @@ Secties in Eduface: GTM `6g45W5JMF3H83JPG` · Design `6g45W5QRj6vVpCMG` · Edufa
 
 ## De deep-work-blokken zijn het raamwerk
 
-Uit `Context/current-priorities.md`:
+**Het schema staat in `Context/current-priorities.md`. Lees het daar en schrijf het hier niet over**, anders plan ik hem na de volgende wijziging in blokken die niet meer bestaan.
 
-| Dag | Blok 1 | Blok 2 |
-|---|---|---|
-| Ma t/m vr | 07:00 tot 09:00 | 10:00 tot 12:00 |
-| Za en zo | 06:00 tot 08:00 | 09:00 tot 11:00 |
-
-In een blok past **één** taak die echt denkwerk vraagt. Geen mail, geen Close, geen belrondje. De rest van de dag is shallow werk en dat mag.
+In een blok past **één** taak die echt denkwerk vraagt. Geen mail, geen Close, geen belrondje. De rest van de dag is shallow werk en dat mag, maar niet in het pauze-uur: dat blijft leeg.
 
 Staat er een meeting in een blok, dan is dat geen probleem. Calendly blijft bewust open: een geboekte meeting wint van een blok. Plan het blok dan om of laat het vallen, en zeg er niets van.
 
