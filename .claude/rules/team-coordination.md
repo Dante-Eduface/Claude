@@ -1,6 +1,6 @@
 # Samenwerken met het team
 
-Wie er werkt en wat ze doen staat in `context/eduface.md`.
+Wie er werkt en wat ze doen staat in `Context/eduface.md`.
 
 ## Wie erbij betrekken
 

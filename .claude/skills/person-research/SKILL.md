@@ -7,7 +7,7 @@ description: Diepgaand, bronnen-gevalideerd onderzoek naar één persoon (prospe
 
 Diep onderzoek naar één persoon, zodat Dante ze scherp kan benaderen (outreach, gesprek, stakeholder-map). De lat: **elke claim is gevalideerd met een bron. Geen aannames.**
 
-Dit is een onderzoeksmethode-skill. Voor de sales-vertaling van wat je vindt, leun op `cro-of-eduface`. Voor het in kaart brengen van meerdere mensen bij één instelling, zie `stakeholder-mapping`. Deze skill gaat over de **diepte per persoon**.
+Dit is een onderzoeksmethode-skill. Voor de sales-vertaling van wat je vindt, leun op `cro`. Voor het in kaart brengen van meerdere mensen bij één instelling, zie `stakeholder-mapping`. Deze skill gaat over de **diepte per persoon**.
 
 ## Twee modi: bepaal deze eerst
 
@@ -85,7 +85,7 @@ Let daarbij op:
 - **Rapporten zijn per opleiding, niet per instelling.** Zeg "in het rapport van opleiding X", niet "bij jullie", tenzij je ze allemaal hebt gelezen.
 - **Kijk naar de accreditatiehistorie** op de besluitenpagina. Een oude onvoldoende die inmiddels hersteld is, is nuttig om te weten en dodelijk om te noemen.
 - **Een panelbevinding is niet van de persoon.** Zoek de naam van je contact in het rapport. Staat die er niet, dan is het "de opleiding" en schrijf je "jullie", nooit "jij hebt".
-- **Een NVAO-vakterm is geen gewone taal.** `studeerbaarheid`, `studielast` en `toetslast` gaan over de **student**, niet over de docent. Noteer bij elk citaat wie de last draagt (student, beoordelaar, organisatie, panel) en zet die drager erbij. De vaste betekenissen staan in `references/onderwijs-vaktermen.md`. Dit kostte op 13-08-2026 de THIM-lead.
+- **Een NVAO-vakterm is geen gewone taal.** `studeerbaarheid`, `studielast` en `toetslast` gaan over de **student**, niet over de docent. Noteer bij elk citaat wie de last draagt (student, beoordelaar, organisatie, panel) en zet die drager erbij. De vaste betekenissen staan in `Platform/onderwijs-vaktermen.md`. Dit kostte op 13-08-2026 de THIM-lead.
 - Bij particuliere opleiders zonder NVAO-erkenning: zoek in plaats daarvan naar het **NRTO-keurmerk, CRKBO, CEDEO, NLQF-inschaling** en het jaarverslag of verslag van werkzaamheden.
 
 ## Drie dingen die je bij een opleider altijd opzoekt
@@ -173,9 +173,9 @@ Broneerlijkheid boven volledigheid. Vind je niks over iemand, zeg dat gewoon. Ee
 
 **Waar het heen gaat.** Een oplevering die alleen in de chat staat, bestaat na afloop niet meer. Dat is precies waarom er van diep onderzoek zo weinig overbleef voor de volgende stap.
 
-- Zit de persoon in de NL-opleiderspijplijn, dan schrijf je het weg als dossier: `pipeline.py dossier <person_id> --schrijf - --actor <skill>`. De koppen hierboven mappen één op één op de koppen in `projects/shift/master/dossiers/SJABLOON.md`, inclusief de bronnenlijst en de onzekerheden.
-- Gaat het om een cold call, dan geldt de oplevering uit `cold-call-prep` (`projects/cold-calling/<naam>.md`).
-- **Elk citaat krijgt zijn drager mee** (student, beoordelaar, organisatie, panel). Zie `references/onderwijs-vaktermen.md`. Zonder dat label kan de volgende stap er de verkeerde kant aan geven, en dat is bij THIM gebeurd.
+- Zit de persoon in de NL-opleiderspijplijn, dan schrijf je het weg als dossier: `pipeline.py dossier <person_id> --schrijf - --actor <skill>`. De koppen hierboven mappen één op één op de koppen in `GTM/ICP/shift/master/dossiers/SJABLOON.md`, inclusief de bronnenlijst en de onzekerheden.
+- Gaat het om een cold call, dan geldt de oplevering uit `cold-call-prep` (`GTM/Campaigns/cold-calling/<naam>.md`).
+- **Elk citaat krijgt zijn drager mee** (student, beoordelaar, organisatie, panel). Zie `Platform/onderwijs-vaktermen.md`. Zonder dat label kan de volgende stap er de verkeerde kant aan geven, en dat is bij THIM gebeurd.
 
 ## Diepte-technieken
 

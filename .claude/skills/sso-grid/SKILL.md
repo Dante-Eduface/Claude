@@ -1,6 +1,6 @@
 ---
 name: sso-grid
-description: ALLEEN de visuele output-stap. Maakt van een AL INGEVULDE MEDDPICC/SSO deal-kwalificatiegrid een strakke Eduface-styled PNG en hangt die als bijlage onder een note in Close op de juiste lead. Deze skill scoort of kwalificeert de deal NIET zelf, hij rendert alleen een bestaande grid naar een plaat. Wil Dante de deal juist SCOREN, invullen, reviewen of doorlopen (line-by-line coaching, waar staat de deal, is er een stap overgeslagen), gebruik dan de skill meddpicc-sales-grid, NIET deze. Werkt op drie manieren: (1) uit de MEDDPICC SSO.xlsx in Google Drive, tab per klant, (2) Dante levert een ingevulde grid aan (screenshot, CSV of tekst) en ik lees het uit, of (3) Dante beschrijft de stand van de deal in gewone taal en ik stel de grid zelf samen. Trigger ALLEEN wanneer Dante een visuele plaat/PNG wil: "maak een SSO grid", "maak een sales grid", "render de grid", "maak er een plaat van", "zet de grid in Close", "hang de grid als bijlage", of een ingevulde grid/scoring matrix aanlevert om te visualiseren. NIET triggeren op "kwalificeer deze deal", "score deze deal", "vul de grid in", "hoe staat deze deal ervoor" (dat is meddpicc-sales-grid).
+description: ALLEEN de visuele output-stap. Maakt van een AL INGEVULDE MEDDPICC/SSO deal-kwalificatiegrid een strakke Eduface-styled PNG en hangt die als bijlage onder een note in Close op de juiste lead. Deze skill scoort of kwalificeert de deal NIET zelf, hij rendert alleen een bestaande grid naar een plaat. Wil Dante de deal juist SCOREN, invullen, reviewen of doorlopen (line-by-line coaching, waar staat de deal, is er een stap overgeslagen), gebruik dan de skill meddpicc, NIET deze. Werkt op drie manieren: (1) uit de MEDDPICC SSO.xlsx in Google Drive, tab per klant, (2) Dante levert een ingevulde grid aan (screenshot, CSV of tekst) en ik lees het uit, of (3) Dante beschrijft de stand van de deal in gewone taal en ik stel de grid zelf samen. Trigger ALLEEN wanneer Dante een visuele plaat/PNG wil: "maak een SSO grid", "maak een sales grid", "render de grid", "maak er een plaat van", "zet de grid in Close", "hang de grid als bijlage", of een ingevulde grid/scoring matrix aanlevert om te visualiseren. NIET triggeren op "kwalificeer deze deal", "score deze deal", "vul de grid in", "hoe staat deze deal ervoor" (dat is meddpicc).
 ---
 
 # MEDDPICC / SSO Grid
@@ -53,7 +53,7 @@ Reken altijd na en check dat je totaal klopt met de som van de rijen. Klopt het 
 
 ## Salestaal
 
-Anker aan `cro-of-eduface`. Belangrijkste: **we sturen op de uitrol, niet de pilot**, en de **EB is de uitrol-budgethouder**, niet de manager die een pilot kan goedkeuren. Beschrijf Economic Buyer en Metrics dus in uitrol-termen.
+Anker aan `cro`. Belangrijkste: **we sturen op de uitrol, niet de pilot**, en de **EB is de uitrol-budgethouder**, niet de manager die een pilot kan goedkeuren. Beschrijf Economic Buyer en Metrics dus in uitrol-termen.
 
 ## Bouwen
 

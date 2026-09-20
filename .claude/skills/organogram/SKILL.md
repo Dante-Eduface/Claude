@@ -1,13 +1,13 @@
 ---
 name: organogram
-description: Build a clean, print-perfect organogram / org chart / stakeholder map as HTML then PDF, with real validated photos, role color-coding, and cards that never break across a page. Standalone and reusable — other skills (stakeholder-mapping, targeted-outreach) invoke this for their visual output. Trigger when Dante says "maak een organogram", "organigram", "org chart", "maak er een organogram van", or when another skill needs to render a people-map.
+description: Build a clean, print-perfect organogram / org chart / stakeholder map as HTML then PDF, with real validated photos, role color-coding, and cards that never break across a page. Standalone and reusable — other skills (stakeholder-mapping, outreach) invoke this for their visual output. Trigger when Dante says "maak een organogram", "organigram", "org chart", "maak er een organogram van", or when another skill needs to render a people-map.
 ---
 
 # Organogram
 
 Turn a set of people (with roles, reporting lines, and deal-roles) into a **clean, one-look organogram** rendered HTML → PDF. This skill owns ONLY the visual. The research that produces the people lives in the calling skill (e.g. `stakeholder-mapping`).
 
-Visual template to copy: `projects/rug-groningen/organogram.html`. Copy its tokens and structure, then apply the HARD RULES below (they fix mistakes made before).
+Visual template to copy: `GTM/Accounts/rug-groningen/organogram.html`. Copy its tokens and structure, then apply the HARD RULES below (they fix mistakes made before).
 
 ## HARD RULES — non-negotiable, these are baked in because they were broken before
 
@@ -120,7 +120,7 @@ The cramped narrow text column next to the photo is a past failure. Use this str
 5. **MANDATORY visual QA** — rasterise the PDF and LOOK at it (`sips -s format png x.pdf --out x.png`, then Read the PNG). Confirm: (a) no card cut across a page boundary, (b) compact, not a sparse long document, (c) photos load and are the right people, (d) no grey blocks / shadows / background fills that would print badly. Page count: `python3` count of `/Type /Page` (mdls is unreliable/stale). If any check fails, fix and re-render before showing Dante.
 6. **Open ONLY the PDF** (`open name.pdf`). Do not ship or open an HTML version.
 
-## Role vocabulary + colors (from cro-of-eduface handbook)
+## Role vocabulary + colors (from cro handbook)
 - Economic Buyer — navy `#002333` (`hl-eb` / `p-eb`)
 - Beslisser / swing — purple `#5b3ea8` (`hl-swing` / `p-swing`)
 - Champion — amber `#b8860b` (`hl-champ` / `p-champ`)

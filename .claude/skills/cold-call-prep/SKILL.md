@@ -116,13 +116,13 @@ Zet erbij wat hij wel en niet gelezen heeft. Nooit "ik las jullie handreiking" a
 
 ## Oplevering
 
-- Bestand: `projects/cold-calling/<voornaam-achternaam-organisatie>.md`
+- Bestand: `GTM/Campaigns/cold-calling/<voornaam-achternaam-organisatie>.md`
 - In de chat: de kern in bullets, plus het script als hij erom vraagt. Geen Artifact tenzij hij erom vraagt (`deliver-as-artifact`)
 - Bronnenlijst onderaan, gesplitst primair / secundair / niet gelezen
 
 ## Roleplay
 
-Wil Dante oefenen, dan staat de prompt klaar in `references/sops/cold-call-roleplay-prompt.md`. Plakken in een nieuwe chat met het dossier eronder. Claude speelt de prospect, mag hem laten falen, en geeft daarna feedback per scriptstap plus praatverhouding en taalgebruik.
+Wil Dante oefenen, dan staat de prompt klaar in `GTM/Knowledge/cold-call-roleplay-prompt.md`. Plakken in een nieuwe chat met het dossier eronder. Claude speelt de prospect, mag hem laten falen, en geeft daarna feedback per scriptstap plus praatverhouding en taalgebruik.
 
 ## Done
 
@@ -130,4 +130,4 @@ Wil Dante oefenen, dan staat de prompt klaar in `references/sops/cold-call-rolep
 - Fit-oordeel in twee zinnen bovenaan
 - Script compleet in de zeven stappen, met bron onder elke aangehaalde regel
 - LSD-signalen, bezwaren, woordenlijst en onzekerheden erbij
-- Bestand staat in `projects/cold-calling/`
+- Bestand staat in `GTM/Campaigns/cold-calling/`

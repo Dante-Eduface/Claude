@@ -26,14 +26,14 @@ P="/Users/User/Library/CloudStorage/GoogleDrive-dante.torbed@eduface.me/My Drive
 L="$HOME/Library/Logs/eduface-rechten-check.log"
 : > "$L"
 cd "$P" 2>/dev/null && print "map openen      ok" >> "$L" || print "map openen      GEWEIGERD" >> "$L"
-cat "$P/projects/shift/master/orgs.csv" > /dev/null 2>/dev/null \
+cat "$P/GTM/ICP/shift/master/orgs.csv" > /dev/null 2>/dev/null \
   && print "gegevens lezen  ok" >> "$L" || print "gegevens lezen  GEWEIGERD" >> "$L"
-print x > "$P/projects/shift/master/.rechten-probe" 2>/dev/null \
-  && { print "gegevens schrijven ok" >> "$L"; rm -f "$P/projects/shift/master/.rechten-probe" } \
+print x > "$P/GTM/ICP/shift/master/.rechten-probe" 2>/dev/null \
+  && { print "gegevens schrijven ok" >> "$L"; rm -f "$P/GTM/ICP/shift/master/.rechten-probe" } \
   || print "gegevens schrijven GEWEIGERD" >> "$L"
 python3 "$P/.claude/scripts/pipeline.py" --markt uk status > /dev/null 2>/dev/null \
   && print "pipeline.py     ok" >> "$L" || print "pipeline.py     GEWEIGERD" >> "$L"
-git -C "$P/projects/shift" status --short > /dev/null 2>/dev/null \
+git -C "$P/GTM/ICP/shift" status --short > /dev/null 2>/dev/null \
   && print "git             ok" >> "$L" || print "git             GEWEIGERD" >> "$L"
 print "KLAAR" >> "$L"
 INNER

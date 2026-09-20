@@ -8,18 +8,18 @@ Deze laden elke sessie automatisch, via `CLAUDE.md`:
 
 | Bestand | Wat erin staat |
 |---|---|
-| `context/me.md` | Wie Dante is, zijn rol, zijn weekritme |
-| `context/eduface.md` | Wat Eduface is, wie er werken, welke tools |
-| `context/current-priorities.md` | De twee doelen en de leidende maat. Wint van alle andere bestanden. |
-| `context/open-vragen.md` | Wat ik niet zelf mag invullen |
+| `Context/me.md` | Wie Dante is, zijn rol, zijn weekritme |
+| `Context/eduface.md` | Wat Eduface is, wie er werken, welke tools |
+| `Context/current-priorities.md` | De twee doelen en de leidende maat. Wint van alle andere bestanden. |
+| `Context/open-vragen.md` | Wat ik niet zelf mag invullen |
 
 Bij werktaken blijf je in werkcontext. Geen persoonlijke context erbij halen.
 
-**Vervallen op 19-09-2026:** `context/work.md`, `context/team.md` en `context/goals.md`. Werk en team zijn samengevoegd tot `context/eduface.md`, en de doelen staan in `context/current-priorities.md`. De oude versies staan in `archives/context-2026-09/`. Kom je een verwijzing naar die drie bestanden tegen, dan is dat een overblijfsel dat weg mag.
+**Vervallen op 19-09-2026:** `Context/work.md`, `Context/team.md` en `Context/goals.md`. Werk en team zijn samengevoegd tot `Context/eduface.md`, en de doelen staan in `Context/current-priorities.md`. De oude versies staan in `Archive/context-2026-09/`. Kom je een verwijzing naar die drie bestanden tegen, dan is dat een overblijfsel dat weg mag.
 
 ## Persoonlijk (alleen op verzoek)
 
-- Persoonlijke context staat in `context/personal.md` en `context/financien.md`. Die zijn **bewust geen `@import`**, dus ze laden nooit vanzelf mee.
+- Persoonlijke context staat in `Context/personal.md` en `Context/financien.md`. Die zijn **bewust geen `@import`**, dus ze laden nooit vanzelf mee.
 - Lees ze alleen als de taak echt persoonlijk is. Sport, eten en leren staan in `personal.md`; alles met geld in `financien.md`.
 - Werk je aan een persoonlijke taak, houd werkcontext er dan buiten.
 
@@ -27,11 +27,11 @@ Bij werktaken blijf je in werkcontext. Geen persoonlijke context erbij halen.
 
 Niet elke sessie laden, wel naartoe verwijzen in plaats van uit het hoofd beweren:
 
-- Product: `references/eduface-product.md`
-- Prijs: `references/pricing/prijsmodel-psu-26-27.md`
-- Deep work en de agenda-indeling: `references/deep-work.md`
-- Trainingsschema's en de caloriebepaling: `references/training/`
-- Focus en prioriteit: `references/research/focus-these-hormozi.md`
+- Product: `Platform/product.md`
+- Prijs: `GTM/Pricing/prijsmodel-psu-26-27.md`
+- Deep work en de agenda-indeling: `Context/deep-work.md`
+- Trainingsschema's en de caloriebepaling: `Personal/fitness/schema/`
+- Focus en prioriteit: `Platform/Onderzoek/focus-these-hormozi.md`
 
 ## Onderhoud
 

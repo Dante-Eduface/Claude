@@ -18,7 +18,7 @@ Lees ook `reference/design-system.md` (kleuren, text styles, CMS-velden, cover-p
 
 ## Stap voor stap
 1. **Inspecteer eenmalig** (alleen bij twijfel): serialize een recente fluide blog (bv. page `jHWeiLUf5` = ai-marking-accuracy) om het patroon te bevestigen. Structuur = Desktop-breakpoint (1200px) met 3 kinderen: Hero (navy), Content (maxWidth 720), CTA (navy). Layout-template `default` levert nav+footer — die NIET per pagina toevoegen.
-2. **Covers**: voeg per blog een scene toe aan `projects/blog-launch/covers/gen_light.py` (light flat-icon stijl, zie design-system.md), render lokaal met Chrome, bekijk ze. Zie design-system.md → "Cover pipeline".
+2. **Covers**: voeg per blog een scene toe aan `GTM/Campaigns/blog-launch/covers/gen_light.py` (light flat-icon stijl, zie design-system.md), render lokaal met Chrome, bekijk ze. Zie design-system.md → "Cover pipeline".
 3. **Maak de link-stijl** (eenmalig per project, al aanwezig): een `LinkStylePreset` genaamd **"Body Link"** voor inline-links. Check met `getNodesOfTypes({types:['LinkStylePresetNode']})`; bestaat 'ie al, niets doen.
 4. **Schrijf per blog een spec-JSON** (zie `reference/spec-example.json` + blok-types hieronder). Sla ze op in een stabiele scratchpad-map, bv. `.../scratchpad/blogbuild/`. LET OP: die map wordt tussen turns opgeschoond — schrijf de compiler + specs elke sessie opnieuw weg (compiler staat in deze skill).
 5. **Kopieer `reference/build-page.js`** naar de scratchpad-map.
@@ -29,7 +29,7 @@ Lees ook `reference/design-system.md` (kleuren, text styles, CMS-velden, cover-p
    - Voeg Tablet + Phone breakpoints toe via `CREATE_VARIANT` (810px @ left 1320, 390px @ left 2210).
 8. **Cover uploaden + CMS-kaart**: `framer.uploadImage({image: dataURI})` → framerusercontent-URL, dan één `applyChanges` die per blog een `+CollectionItemNode parent="QOSeMeN0X"` aanmaakt met alle velden (zie design-system.md).
 9. **Publiceren**: `mergeBranch('main')` → `publish({action:'preview'})` → `publish({action:'confirm_publish', confirmationHash})`. Productie-publish is geblokkeerd door de safety-classifier tenzij Dante expliciet "zet live"/"live" zei. Anders: branch-preview publiceren en de review-URL geven.
-10. **Schema (JSON-LD)**: genereer per blog een `.html` met Article + FAQPage + BreadcrumbList (FAQ-tekst letterlijk gelijk aan de pagina). Kan NIET via de API (alleen site-brede custom code bestaat; per-pagina head-code is UI-only). Lever de bestanden op in `projects/blog-launch/*-schema/`; Dante plakt ze in **Page Settings → Custom Code → End of `<head>`** en checkt met Google Rich Results Test.
+10. **Schema (JSON-LD)**: genereer per blog een `.html` met Article + FAQPage + BreadcrumbList (FAQ-tekst letterlijk gelijk aan de pagina). Kan NIET via de API (alleen site-brede custom code bestaat; per-pagina head-code is UI-only). Lever de bestanden op in `GTM/Campaigns/blog-launch/*-schema/`; Dante plakt ze in **Page Settings → Custom Code → End of `<head>`** en checkt met Google Rich Results Test.
 11. **QA**: screenshot 1 pagina via `readProject({type:'screenshot', url})` + curl de 4 live-URL's op HTTP 200.
 
 ## Blok-types in de spec (`blocks: [...]`)

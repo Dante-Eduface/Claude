@@ -2,8 +2,8 @@
 """
 pipeline.py - de enige schrijver van het master-document van de SHIFT-opleiderspijplijn.
 
-Twee tabellen in projects/shift/master/ (sinds 10-09-2026 internationaal, de markt is
-een variabele: --markt <code>, SHIFT_MARKT, anders nl. Profielen in projects/shift/markets/):
+Twee tabellen in GTM/ICP/shift/master/ (sinds 10-09-2026 internationaal, de markt is
+een variabele: --markt <code>, SHIFT_MARKT, anders nl. Profielen in GTM/ICP/shift/markets/):
   orgs.csv     een rij per organisatie   (agent 1)
   people.csv   een rij per persoon       (agent 2/3/4/5)
   journal.csv  append-only audit van elke veldwijziging
@@ -27,7 +27,7 @@ csv.field_size_limit(10 * 1024 * 1024)
 
 # ---------------------------------------------------------------- paden
 
-# Twee geldige lay-outs voor dezelfde pipeline.py: genest onder projects/shift/
+# Twee geldige lay-outs voor dezelfde pipeline.py: genest onder GTM/ICP/shift/
 # (de Claud AE-hoofdmap) of plat op de repo-root (de losgetrokken shift-agent-
 # repo voor Jeroen, sinds 16-09-2026). Kies wat er echt staat, gok niet vast.
 REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -67,7 +67,7 @@ ORG_SECTIES = [
 
 # Wie draagt de last in de bron. Zonder dit label is een citaat een halve
 # observatie: bij THIM (13-08-2026) ging een NVAO-citaat over de STUDENT en
-# maakte het bericht er de last van de DOCENT van. Zie references/onderwijs-vaktermen.md.
+# maakte het bericht er de last van de DOCENT van. Zie Platform/onderwijs-vaktermen.md.
 DRAGERS = ["student", "beoordelaar", "organisatie", "panel"]
 
 DOSSIER_MAX_REGELS = 250
@@ -93,7 +93,7 @@ ORG_COLS = [
 # ---------------------------------------------------------------- prijsmodel
 #
 # Sinds 16-09-2026: prijs per student per maand, geen staffel meer. Besluit
-# Dante, zie references/pricing/. Drie per student per maand in elke markt,
+# Dante, zie GTM/Pricing/. Drie per student per maand in elke markt,
 # in de valuta van die markt: 3 EUR, 3 GBP, 3 USD. Geen omrekening, hetzelfde
 # getal, want het is een prijspunt en geen wisselkoers.
 #
@@ -117,7 +117,7 @@ DREMPEL_JAARWAARDE = 10000
 # ---------------------------------------------------------------- markten
 #
 # Sinds 10-09-2026 is de markt een variabele. Alles wat per markt verschilt
-# staat in projects/shift/markets/<code>/: profiel.json voor de harde waarden
+# staat in GTM/ICP/shift/markets/<code>/: profiel.json voor de harde waarden
 # waar dit script mee rekent, profiel.md voor de kennis die de agents lezen.
 # De constanten hierboven zijn de NL-waarden en blijven de default, zodat
 # dashboard.py (importeert de module zonder main()) gewoon blijft werken.
@@ -266,7 +266,7 @@ def eis_profiel_compleet():
     fouten, _ = profiel_klachten(MARKT)
     if fouten:
         die("markt '%s' is niet compleet, dus geen wachtrij:\n  - %s\n"
-            "Vul projects/shift/markets/%s/ aan en controleer met: pipeline.py --markt %s doctor"
+            "Vul GTM/ICP/shift/markets/%s/ aan en controleer met: pipeline.py --markt %s doctor"
             % (MARKT, "\n  - ".join(fouten), MARKT, MARKT))
 
 
@@ -1032,7 +1032,7 @@ def dossier_sjabloon(rid, naam="", org_naam=""):
                 "  bron: <url of document, pagina> · datum: JJJJ-MM-DD · drager: %s"
                 % "|".join(DRAGERS),
                 "   Vaktermen hebben een vaste drager, zie de kop Vaktermen in",
-                "   projects/shift/markets/%s/profiel.md. Lees ze nooit als gewone taal. -->" % MARKT,
+                "   GTM/ICP/shift/markets/%s/profiel.md. Lees ze nooit als gewone taal. -->" % MARKT,
             ]
         regels.append("")
     return "\n".join(regels).rstrip() + "\n"

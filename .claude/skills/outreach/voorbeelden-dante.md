@@ -16,7 +16,7 @@ Ken, Harper Adams University. Zijn LinkedIn-banner had een hond.
 
 Wat hier werkt, in volgorde:
 1. **Haakje van iets zichtbaars op het profiel zelf** (banner), niet uit een database. Iets wat die persoon bewust heeft neergezet.
-2. **Meteen toegeven dat het haakje er niks mee te maken heeft.** "But that is a bit off the point of why I am reaching out." Geen geforceerde brug van hond naar AI. Dat is precies het tegenovergestelde van de lege verbindingszin uit `content-voice`, en het werkt omdat het eerlijk is.
+2. **Meteen toegeven dat het haakje er niks mee te maken heeft.** "But that is a bit off the point of why I am reaching out." Geen geforceerde brug van hond naar AI. Dat is precies het tegenovergestelde van de lege verbindingszin uit `schrijven`, en het werkt omdat het eerlijk is.
 3. **Geloofwaardigheid in één zin**, met namen die verifieerbaar zijn (Jisc, Bath Spa). Geen productuitleg.
 4. **De vraag is een doorverwijzing, geen gesprek.** Veel lager drempel dan een uur van iemands tijd.
 5. **Toegeven dat je het niet kon vinden.** "I couldn't quite figure out who that was myself." Maakt jezelf even kleiner en maakt helpen makkelijk.
@@ -98,7 +98,7 @@ Een echt persoonlijk feit als aanleiding. Werkt alleen als het waar is. Nooit ve
 - **De vraag is altijd concreet en meetbaar.** "Zou je een paar momenten kunnen doorgeven waarop je komende week beschikbaar bent?" Nooit "laat me weten of het interessant lijkt", nooit "ik hoor graag van je".
 - **Altijd eerlijk over hoe hij bij iemand kwam**, ook als die route omslachtig is.
 - **Nooit meer lezing claimen dan er gelezen is.**
-- Geen em-dashes, geen AI-tells, lopende zinnen. Zie `content-voice`.
+- Geen em-dashes, geen AI-tells, lopende zinnen. Zie `schrijven`.
 
 ---
 

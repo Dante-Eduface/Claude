@@ -56,7 +56,7 @@ Two required frontmatter fields: `name` and `description`. **The description is 
 - Keep the body **concise and skimmable**: short procedure, key IDs, where the automation lives. Bullets over paragraphs. No em-dashes (house style).
 
 Look at the two existing skills in this project as your templates:
-- `.claude/skills/cro-of-eduface/SKILL.md` — a "persona + method" skill that reads a handbook first.
+- `.claude/skills/cro/SKILL.md` — a "persona + method" skill that reads a handbook first.
 - `.claude/skills/hot-lead-outreach/SKILL.md` — an "operational loop" skill with IDs, cron, and a clear done-state.
 
 ### 4. Split out detail (progressive disclosure)
@@ -76,7 +76,7 @@ Claude only pulls these in when the task needs them, so the main skill loads fas
 
 ### 6. Log + tidy
 
-- Append a one-line entry to `decisions/log.md` (per CLAUDE.md format) when the skill is a meaningful addition.
+- Append a one-line entry to `Decisions/log.md` (per CLAUDE.md format) when the skill is a meaningful addition.
 - If the new skill matches an item in the CLAUDE.md "Skills to Build" backlog, point that out so Dante can cross it off.
 
 ## Quick checklist before calling it done

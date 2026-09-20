@@ -7,7 +7,7 @@ description: Begeleidt Dante's wekelijkse planmoment op zaterdagochtend. Hij bed
 
 Zijn planmoment staat elke **zaterdag 06:00 tot 07:30** in de agenda "Persoonlijk taken", binnen zijn eerste deep-work-blok. Dit is de skill die dat uur invult.
 
-> **Vervangt `/task-planning`**, gearchiveerd op 19-09-2026 in `archives/skills-2026-09/`. Dante: *"die taken moet ik echt zelf bedenken, de input moet echt vanuit mij komen."* Die skill rangschikte zijn Todoist-lijst en verzon er taken bij. Dat is precies de verkeerde kant op.
+> **Vervangt `/task-planning`**, gearchiveerd op 19-09-2026 in `Archive/skills-2026-09/`. Dante: *"die taken moet ik echt zelf bedenken, de input moet echt vanuit mij komen."* Die skill rangschikte zijn Todoist-lijst en verzon er taken bij. Dat is precies de verkeerde kant op.
 
 ## De rolverdeling
 
@@ -50,7 +50,7 @@ Secties in Eduface: GTM `6g45W5JMF3H83JPG` · Design `6g45W5QRj6vVpCMG` · Edufa
 
 ## De deep-work-blokken zijn het raamwerk
 
-Uit `context/current-priorities.md`:
+Uit `Context/current-priorities.md`:
 
 | Dag | Blok 1 | Blok 2 |
 |---|---|---|

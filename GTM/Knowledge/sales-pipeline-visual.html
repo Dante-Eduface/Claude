@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eduface Sales Pipeline — 1 pipeline, 6 fases</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #002333;
+    --green: #00E075;
+    --green-dark: #008F5A;
+    --green-deep: #006754;
+    --bg: #f3f7f8;
+    --card: #ffffff;
+    --text: #002333;
+    --muted: #5a7280;
+    --line: #d6e2e7;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 48px 24px 64px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; }
+
+  /* Header */
+  .header { text-align: center; margin-bottom: 12px; }
+  .header .kicker {
+    display: inline-block;
+    font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase;
+    color: var(--green-dark);
+    background: rgba(0,224,117,.12);
+    border: 1px solid rgba(0,143,90,.25);
+    padding: 6px 14px; border-radius: 100px; margin-bottom: 16px;
+  }
+  h1 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 40px; font-weight: 800; line-height: 1.1;
+    color: var(--navy);
+  }
+  h1 .accent { color: var(--green-dark); }
+  .header .sub {
+    margin-top: 12px; font-size: 15px; color: var(--muted); max-width: 560px;
+    margin-left: auto; margin-right: auto; line-height: 1.5;
+  }
+
+  /* Key principle banner */
+  .principle {
+    margin: 28px 0 40px;
+    background: var(--navy);
+    color: #fff;
+    border-radius: 16px;
+    padding: 22px 28px;
+    display: flex; gap: 18px; align-items: center;
+  }
+  .principle .num {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 44px; font-weight: 800; color: var(--green); line-height: 1;
+    flex-shrink: 0;
+  }
+  .principle .body b { color: var(--green); }
+  .principle .body { font-size: 14.5px; line-height: 1.55; }
+
+  /* Account vs opportunity levels */
+  .levels {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 24px 28px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 8px rgba(0,35,51,.05);
+  }
+  .levels-title {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 18px; font-weight: 700; color: var(--navy);
+    margin-bottom: 4px;
+  }
+  .levels-sub { font-size: 13px; color: var(--muted); line-height: 1.5; margin-bottom: 18px; }
+  .account-card {
+    border: 2px solid var(--navy);
+    border-radius: 14px;
+    padding: 16px 18px;
+    background: var(--bg);
+  }
+  .account-head {
+    display: flex; align-items: center; gap: 10px; margin-bottom: 4px;
+  }
+  .account-head .tag-lvl {
+    font-size: 10.5px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+    background: var(--navy); color: #fff;
+    padding: 4px 10px; border-radius: 100px;
+  }
+  .account-head .name {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 16px; font-weight: 700; color: var(--navy);
+  }
+  .account-status {
+    font-size: 12px; color: var(--muted); margin-bottom: 14px;
+  }
+  .account-status b { color: var(--green-deep); }
+  .opps { display: flex; flex-direction: column; gap: 8px; }
+  .opp {
+    background: var(--card);
+    border: 1.5px solid var(--line);
+    border-radius: 10px;
+    padding: 10px 14px;
+    display: flex; align-items: center; gap: 12px;
+    font-size: 13px;
+  }
+  .opp .tag-lvl {
+    font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+    background: rgba(0,224,117,.15); color: var(--green-deep);
+    border: 1px solid rgba(0,143,90,.3);
+    padding: 3px 9px; border-radius: 100px; flex-shrink: 0;
+  }
+  .opp .opp-name { font-weight: 600; color: var(--navy); }
+  .opp .opp-stage {
+    margin-left: auto; flex-shrink: 0;
+    font-size: 12px; font-weight: 600; color: var(--green-deep);
+  }
+  .levels-note {
+    margin-top: 14px; font-size: 12.5px; color: var(--muted); line-height: 1.55;
+  }
+  .levels-note b { color: var(--navy); }
+
+  /* Pre-pipeline strip */
+  .section-label {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 14px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+    color: var(--muted); margin-bottom: 14px; text-align: center;
+  }
+  .prepipe {
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    flex-wrap: wrap; margin-bottom: 10px;
+  }
+  .prepipe .status {
+    background: var(--card);
+    border: 1.5px dashed var(--line);
+    color: var(--muted);
+    font-size: 13px; font-weight: 600;
+    padding: 10px 18px; border-radius: 100px;
+  }
+  .prepipe .status.sql {
+    border: 2px solid var(--green-dark);
+    color: var(--green-deep);
+    background: rgba(0,224,117,.10);
+  }
+  .prepipe .arrow { color: var(--muted); font-size: 14px; }
+  .prepipe-note {
+    text-align: center; font-size: 12.5px; color: var(--muted);
+    margin-bottom: 8px; font-style: italic;
+  }
+
+  /* Connector */
+  .connector {
+    display: flex; flex-direction: column; align-items: center;
+    margin: 4px 0;
+  }
+  .connector .stem { width: 3px; height: 26px; background: var(--line); border-radius: 2px; }
+  .connector .stem.solid { background: var(--green-dark); }
+  .connector .tip {
+    width: 0; height: 0;
+    border-left: 7px solid transparent; border-right: 7px solid transparent;
+    border-top: 9px solid var(--line);
+  }
+  .connector .tip.solid { border-top-color: var(--green-dark); }
+
+  /* Stage cards */
+  .stage {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 26px 28px 24px;
+    box-shadow: 0 2px 8px rgba(0,35,51,.05);
+  }
+  .stage-head { display: flex; align-items: center; gap: 16px; margin-bottom: 6px; }
+  .stage-num {
+    font-family: 'League Spartan', sans-serif;
+    width: 46px; height: 46px; flex-shrink: 0;
+    background: var(--navy); color: var(--green);
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px; font-weight: 800; padding-top: 3px;
+  }
+  .stage-title {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 24px; font-weight: 700; color: var(--navy);
+  }
+  .stage-goal { font-size: 13.5px; color: var(--muted); margin-top: 2px; }
+  .owner {
+    margin-left: auto; flex-shrink: 0;
+    font-size: 11.5px; font-weight: 700; letter-spacing: .5px; text-transform: uppercase;
+    padding: 5px 12px; border-radius: 100px;
+  }
+  .owner.dante { background: rgba(0,224,117,.15); color: var(--green-deep); border: 1px solid rgba(0,143,90,.3); }
+  .owner.jeroen { background: rgba(0,35,51,.07); color: var(--navy); border: 1px solid var(--line); }
+
+  /* Gate box */
+  .gate {
+    margin-top: 16px;
+    background: var(--bg);
+    border-left: 4px solid var(--green-dark);
+    border-radius: 0 12px 12px 0;
+    padding: 16px 20px 14px;
+  }
+  .gate-label {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 12.5px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+    color: var(--green-deep); margin-bottom: 10px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .gate-label::before { content: "🔒"; font-size: 13px; }
+  .gate ul { list-style: none; }
+  .gate li {
+    font-size: 13.5px; line-height: 1.5; padding: 3.5px 0 3.5px 26px;
+    position: relative;
+  }
+  .gate li::before {
+    content: "✓";
+    position: absolute; left: 0; top: 3px;
+    width: 17px; height: 17px;
+    background: var(--green-dark); color: #fff;
+    border-radius: 5px;
+    font-size: 11px; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .gate li b { font-weight: 600; }
+  .stage-note {
+    margin-top: 12px; font-size: 12.5px; color: var(--muted);
+    padding-left: 4px; line-height: 1.5;
+  }
+  .stage-note b { color: var(--navy); }
+
+  /* Hand-off banner */
+  .handoff {
+    background: linear-gradient(90deg, var(--green-deep), var(--green-dark));
+    color: #fff;
+    border-radius: 14px;
+    padding: 18px 26px;
+    display: flex; align-items: center; gap: 16px;
+    margin: 4px 0;
+  }
+  .handoff .icon { font-size: 26px; }
+  .handoff .txt { font-size: 14px; line-height: 1.5; }
+  .handoff .txt b { font-family: 'League Spartan', sans-serif; font-size: 16px; display: block; margin-bottom: 2px; }
+
+  /* Forecast line */
+  .forecast-line {
+    display: flex; align-items: center; gap: 14px; margin: 22px 0;
+  }
+  .forecast-line .rule { flex: 1; height: 2px; background: repeating-linear-gradient(90deg, var(--navy) 0 10px, transparent 10px 18px); }
+  .forecast-line .tag {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+    color: #fff; background: var(--navy);
+    padding: 8px 18px; border-radius: 100px;
+    flex-shrink: 0;
+  }
+  .forecast-note {
+    text-align: center; font-size: 13px; color: var(--muted);
+    margin: -12px 0 22px; line-height: 1.5;
+  }
+  .forecast-note b { color: var(--navy); }
+
+  /* Won */
+  .won {
+    background: var(--navy);
+    border-radius: 16px;
+    padding: 28px;
+    text-align: center; color: #fff;
+  }
+  .won .big {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 28px; font-weight: 800; color: var(--green);
+  }
+  .won .sub { font-size: 13.5px; color: rgba(255,255,255,.75); margin-top: 6px; }
+
+  /* Footer notes */
+  .footnotes {
+    margin-top: 36px;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 14px;
+  }
+  .footnote {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 16px 18px; font-size: 12.5px; line-height: 1.55; color: var(--muted);
+  }
+  .footnote b { color: var(--navy); display: block; margin-bottom: 4px; font-size: 13px; }
+  .src { text-align: center; margin-top: 28px; font-size: 11.5px; color: var(--muted); }
+
+  @media (max-width: 640px) {
+    h1 { font-size: 30px; }
+    .footnotes { grid-template-columns: 1fr; }
+    .owner { display: none; }
+  }
+  @media print {
+    body { padding: 20px; background: #fff; }
+    .stage, .footnote { box-shadow: none; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="header">
+    <div class="kicker">Eduface Sales &amp; Prospecting Handbook · v1</div>
+    <h1>De Eduface pipeline:<br><span class="accent">1 pipeline, 6 fases</span></h1>
+    <div class="sub">De deal = de institutionele uitrol. De POV (pilot) is fase 4 binnen dezelfde deal, geen aparte pipeline. Elke fase heeft een gate: harde exit-criteria, geen gevoel.</div>
+  </div>
+
+  <div class="principle">
+    <div class="num">1</div>
+    <div class="body"><b>Waarom maar één pipeline?</b> Een aparte pilot-pipeline zou een "gewonnen pilot" als win laten tellen. Per het handboek is een pilot zonder rollout-criteria <b>een gestalde deal, geen win</b>. We sturen op de uitrol, de POV is de on-ramp.</div>
+  </div>
+
+  <div class="levels">
+    <div class="levels-title">Twee niveaus: account ≠ opportunity</div>
+    <div class="levels-sub">De lead in Close = het account (de instelling). Per account kunnen <b>meerdere opportunities</b> lopen, en elke opportunity doorloopt de 6 fases apart. De pipeline volgt de opportunity, niet het account.</div>
+    <div class="account-card">
+      <div class="account-head">
+        <span class="tag-lvl">Lead / Account</span>
+        <span class="name">Universiteit X</span>
+      </div>
+      <div class="account-status">Lead status: <b>In dialogue</b> · account-niveau, zegt niets over de fase van een deal</div>
+      <div class="opps">
+        <div class="opp"><span class="tag-lvl">Opp 1</span><span class="opp-name">Faculteit A · POV essay-feedback</span><span class="opp-stage">Fase 4 · POV</span></div>
+        <div class="opp"><span class="tag-lvl">Opp 2</span><span class="opp-name">Faculteit B · grading workflow</span><span class="opp-stage">Fase 1 · Discovery</span></div>
+        <div class="opp"><span class="tag-lvl">Opp 3</span><span class="opp-name">Institutionele licentie (uitrol)</span><span class="opp-stage">Fase 2 · Scoping</span></div>
+      </div>
+    </div>
+    <div class="levels-note"><b>Elke opportunity heeft zijn eigen gates.</b> Een geteste champion bij faculteit A telt niet automatisch voor faculteit B. Wel geldt: opportunities binnen één account moeten naar dezelfde uitrol-EB leiden, dat is het punt waar ze samenkomen.</div>
+  </div>
+
+  <div class="section-label" style="margin-top:28px;">Vóór de eerste opportunity · lead statuses (account-niveau)</div>
+  <div class="prepipe">
+    <div class="status">Cold</div><div class="arrow">→</div>
+    <div class="status">Contacted</div><div class="arrow">→</div>
+    <div class="status">Replied</div><div class="arrow">→</div>
+    <div class="status sql">SQL ✓</div>
+  </div>
+  <div class="prepipe-note">Outreach en replies leven als lead status op het account. Pas bij SQL maak je de eerste opportunity aan in fase 1. Nieuwe deals bij een bestaand account starten direct als nieuwe opportunity in Discovery.<br><b style="color:var(--navy); font-style:normal;">Werkwijze in Close: smart views filteren op lead status</b> — per status één view (Cold, Contacted, Replied, SQL) zodat je werklijsten automatisch gevuld worden en niets blijft liggen.</div>
+
+  <div class="connector"><div class="stem solid"></div><div class="tip solid"></div></div>
+
+  <!-- STAGE 1 -->
+  <div class="stage">
+    <div class="stage-head">
+      <div class="stage-num">1</div>
+      <div>
+        <div class="stage-title">Discovery</div>
+        <div class="stage-goal">Kwalificeren in/uit forecast: pijn, spelers, gain. Discovery is onderzoeken, niet verkopen.</div>
+      </div>
+      <div class="owner dante">Dante</div>
+    </div>
+    <div class="gate">
+      <div class="gate-label">Gate · bevestigd per e-mail aan de klant</div>
+      <ul>
+        <li>Ontdekte <b>pijn</b></li>
+        <li>Geïdentificeerde <b>spelers</b></li>
+        <li>Waarom <b>nú</b> kopen + koopdeadline/schema (<b>complete BANT</b>)</li>
+        <li>Gewenste <b>business outcome</b></li>
+        <li>Concrete <b>next steps</b> in het salesproces</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="connector"><div class="stem solid"></div></div>
+
+  <div class="handoff">
+    <div class="icon">🤝</div>
+    <div class="txt"><b>Hand-off punt</b>Na de Discovery-gate komt Jeroen erbij (solution fit bereikt, SQL behaald). Dante owns de funnel tot hier; Jeroen runt Scoping → Close.</div>
+  </div>
+
+  <div class="connector"><div class="stem"></div><div class="tip"></div></div>
+
+  <!-- STAGE 2 -->
+  <div class="stage">
+    <div class="stage-head">
+      <div class="stage-num">2</div>
+      <div>
+        <div class="stage-title">Scoping</div>
+        <div class="stage-goal">Pijn kwantificeren en implicaties scherp maken: as-is vs to-be metrics → cost justification.</div>
+      </div>
+      <div class="owner jeroen">Jeroen</div>
+    </div>
+    <div class="gate">
+      <div class="gate-label">Gate · 3 documenten + champion</div>
+      <ul>
+        <li><b>Cost justification</b> met as-is en to-be metrics</li>
+        <li><b>POV-plan</b> dat direct correleert aan de cost justification</li>
+        <li><b>Preliminary pricing proposal</b> gebaseerd op de cost justification</li>
+        <li>Een <b>educated én geteste champion</b>: kan koopproces uitleggen, pijn + implicaties verwoorden, stakeholders introduceren, de EB-meeting regelen</li>
+      </ul>
+    </div>
+    <div class="stage-note"><b>Let op:</b> een coach krijgt je een POV, alleen een champion krijgt je een grote deal. De 3 documenten moeten de EB bereiken, direct of via de champion.</div>
+  </div>
+
+  <div class="connector"><div class="stem"></div><div class="tip"></div></div>
+
+  <!-- STAGE 3 -->
+  <div class="stage">
+    <div class="stage-head">
+      <div class="stage-num">3</div>
+      <div>
+        <div class="stage-title">EB Meeting</div>
+        <div class="stage-goal">Go/No-Go: alleen de EB kan bevestigen of kopen een prioriteit is. Vóór de POV, om buying criteria te zetten.</div>
+      </div>
+      <div class="owner jeroen">Jeroen</div>
+    </div>
+    <div class="gate">
+      <div class="gate-label">Gate · binair</div>
+      <ul>
+        <li>Meeting gehad met de <b>EB</b> (budgethouder van de <b>uitrol</b>, niet de pilot-manager)</li>
+        <li>De <b>Go</b> gekregen om de POV te starten</li>
+        <li><b>Buying criteria</b> vastgesteld, geframed op onze unieke differentiators</li>
+        <li>EB bevestigt: bij succesvolle POV bestellen, alleen nog legal + prijsonderhandeling</li>
+      </ul>
+    </div>
+    <div class="stage-note"><b>Regel:</b> in de EB-meeting mag je geen discovery- of scopingvragen meer stellen. Je weet alles al, anders ben je niet klaar.</div>
+  </div>
+
+  <div class="connector"><div class="stem"></div><div class="tip"></div></div>
+
+  <!-- STAGE 4 -->
+  <div class="stage">
+    <div class="stage-head">
+      <div class="stage-num">4</div>
+      <div>
+        <div class="stage-title">POV <span style="font-size:14px; color:var(--muted); font-weight:500;">(de pilot)</span></div>
+        <div class="stage-goal">Bewijzen dat de oplossing de pijn oplost en hoog scoort op de vooraf gekende evaluatiematrix.</div>
+      </div>
+      <div class="owner jeroen">Jeroen</div>
+    </div>
+    <div class="gate">
+      <div class="gate-label">Gate · bewijs op tafel</div>
+      <ul>
+        <li><b>POV summary report</b> waar de champion <b>100%</b> mee akkoord is (fysieke meeting)</li>
+        <li><b>Geüpdatete cost justification</b>, gedeeld met de EB</li>
+        <li><b>Materieel bewijs</b> dat de oplossing het probleem oplost</li>
+      </ul>
+    </div>
+    <div class="stage-note"><b>Startvoorwaarden:</b> bevestigde champion, champion heeft scoring matrix mee geframed, cost justification waar gain &gt;&gt; pain, en BANT + resterende stappen geverifieerd met de EB. Geen matrix = geen POV.</div>
+  </div>
+
+  <div class="connector"><div class="stem"></div><div class="tip"></div></div>
+
+  <!-- STAGE 5 -->
+  <div class="stage">
+    <div class="stage-head">
+      <div class="stage-num">5</div>
+      <div>
+        <div class="stage-title">Business Case</div>
+        <div class="stage-goal">Hun interne rechtvaardiging voor de aankoop, door ons geschreven alsof zij het schreven.</div>
+      </div>
+      <div class="owner jeroen">Jeroen</div>
+    </div>
+    <div class="gate">
+      <div class="gate-label">Gate · klaar voor procurement</div>
+      <ul>
+        <li>Business case <b>gevalideerd door de champion</b>: accuraat, intern bruikbaar, gekoppeld aan hun hoogste prioriteiten</li>
+        <li><b>Finale cost justification</b> op basis van POV-resultaten, in hún taal (studentscores, werkdruk, feedback per docent)</li>
+        <li><b>Implementatieplan</b> met data en milestones (creëert urgentie: "contract rond op datum E om resultaat op datum D te halen")</li>
+        <li><b>EB bevestigt intentie</b> om door te gaan na legal review en procurement</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="connector"><div class="stem"></div><div class="tip"></div></div>
+
+  <!-- STAGE 6 -->
+  <div class="stage">
+    <div class="stage-head">
+      <div class="stage-num">6</div>
+      <div>
+        <div class="stage-title">Negotiate &amp; Close</div>
+        <div class="stage-goal">Legal, procurement en commercie afronden zonder scope, waarde of criteria te heropenen.</div>
+      </div>
+      <div class="owner jeroen">Jeroen</div>
+    </div>
+    <div class="gate">
+      <div class="gate-label">Gate · handtekening</div>
+      <ul>
+        <li><b>Getekend contract</b> met afgesproken commerciële voorwaarden</li>
+        <li><b>Legal</b> afgerond</li>
+        <li>Bevestigde <b>implementatie-startdatum</b></li>
+        <li>Concessies alleen <b>geruild</b> (langere looptijd, snellere handtekening, bredere scope, referentie), nooit weggegeven</li>
+      </ul>
+    </div>
+    <div class="stage-note"><b>Regel:</b> als procurement de beslisser wordt, is de deal al in de problemen. Champion deblokkeert, EB beschermt de waarde.</div>
+  </div>
+
+  <div class="connector"><div class="stem solid"></div><div class="tip solid"></div></div>
+
+  <div class="won">
+    <div class="big">Won = institutionele uitrol getekend</div>
+    <div class="sub">Niet de pilot. De pilot was fase 4.</div>
+  </div>
+
+  <div class="forecast-line" style="margin-top:32px;">
+    <div class="rule"></div>
+    <div class="tag">Forecast-discipline</div>
+    <div class="rule"></div>
+  </div>
+  <div class="forecast-note">Alleen deals met <b>bevestigde business case + EB-commitment + afgesproken tekendatum</b> horen in de forecast.<br>Verbale geruststelling van procurement telt niet. Al het andere is pipeline, geen forecast.</div>
+
+  <div class="footnotes">
+    <div class="footnote"><b>Vocabulaire</b>EB = discretionaire budgethouder van de uitrol · Champion = invloed + autoriteit · Coach = helpt, maar zonder invloed/autoriteit · POV = de pilot · Gate = exit-criteria per fase · Enemy = de concurrentie.</div>
+    <div class="footnote"><b>Inspect facts, not feelings</b>"De deal loopt goed" telt niet. Een fase is pas gepasseerd als het bewijs inspecteerbaar is: bevestigde BANT-mail, benoemde EB, geteste champion, scoring matrix, gevalideerde business case.</div>
+  </div>
+
+  <div class="src">Bron: Eduface Sales &amp; Prospecting Handbook v1 · GTM/Knowledge/sales-handbook-v1.md · juli 2026</div>
+
+</div>
+</body>
+</html>

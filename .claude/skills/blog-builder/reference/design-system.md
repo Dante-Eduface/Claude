@@ -41,7 +41,7 @@ SET <id> $control__title="<kaarttitel>" $control__slug="<slug>" $control__body="
 `article_path` (link-veld) laat de kaart naar de losse WebPageNode wijzen. `.src` voor image-velden, `.href` voor link-velden.
 
 ## Cover pipeline (light flat-icon)
-Generator: `projects/blog-launch/covers/gen_light.py` — bevat ALLE scenes en schrijft `final/<slug>.html`. Stijl (zie [[blog-cover-style]]): licht `#f3f7f8`, navy outlines `#002333` (stroke 14-20), groene vlakken `#00d563` (accent `#00b85f`), witte vormen krijgen altijd navy outline, grond-schaduw-ellips `#dbe6ea`, ronde hoeken, GEEN tekst/logo, 1200×900 @2x. Voeg per blog één content-passende scene toe (`SCENES["<slug>"] = '''...svg...'''`), voor de `for slug, scene in SCENES.items()`-loop.
+Generator: `GTM/Campaigns/blog-launch/covers/gen_light.py` — bevat ALLE scenes en schrijft `final/<slug>.html`. Stijl (zie [[blog-cover-style]]): licht `#f3f7f8`, navy outlines `#002333` (stroke 14-20), groene vlakken `#00d563` (accent `#00b85f`), witte vormen krijgen altijd navy outline, grond-schaduw-ellips `#dbe6ea`, ronde hoeken, GEEN tekst/logo, 1200×900 @2x. Voeg per blog één content-passende scene toe (`SCENES["<slug>"] = '''...svg...'''`), voor de `for slug, scene in SCENES.items()`-loop.
 
 Renderen (Chrome hangt op de Google Drive mount → naar LOKALE map):
 ```
@@ -78,7 +78,7 @@ Per-pagina head-code kan NIET via de API (alleen site-brede `setCustomCode`, wat
 - **FAQPage** (mainEntity uit de FAQ — antwoordtekst LETTERLIJK gelijk aan de zichtbare pagina, anders negeert Google het)
 - **BreadcrumbList** (Home > Blog > artikel)
 
-Genereer met een node-script dat de FAQ uit de spec-blocks haalt (pb=vraag, volgende p=antwoord, tussen "Frequently asked questions" en "Sources"). Zie `projects/blog-launch/ofqual-schema/` voor voorbeelden. Dante plakt per blog in **Page Settings → Custom Code → End of `<head>`** en checkt met Google Rich Results Test.
+Genereer met een node-script dat de FAQ uit de spec-blocks haalt (pb=vraag, volgende p=antwoord, tussen "Frequently asked questions" en "Sources"). Zie `GTM/Campaigns/blog-launch/ofqual-schema/` voor voorbeelden. Dante plakt per blog in **Page Settings → Custom Code → End of `<head>`** en checkt met Google Rich Results Test.
 
 ## SEO/GEO (zie [[geo-title-strategy]])
 Titel begint met het specifieke onderwerp + ` | Eduface`, < ~55-60 tekens (anders truncatie). Meta 1-2 concrete zinnen ~150-160 tekens.

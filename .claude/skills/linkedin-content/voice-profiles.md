@@ -9,7 +9,7 @@
 - Plain, gesproken taal. Geen hype, geen buzzwords, geen em-dashes.
 - Geen emoji tenzij het echt iets toevoegt.
 - Scherp standpunt of een echt verhaal boven neutrale update.
-- Eerlijk: nooit cijfers of klant-claims verzinnen. Echte cijfers staan in `projects/`. (Bekende echte cijfers: 500+ users, ~90% sign-ups via aanbeveling collega, 250+ docenten gaven trainingsfeedback, 450.000+ education-specific datapoints, Radboud ~48,5% tijdsbesparing, hoogste F1 op SQuAD-NL, eigen lokaal gehost EU-model. Verifieer voor gebruik.)
+- Eerlijk: nooit cijfers of klant-claims verzinnen. Echte cijfers staan in `GTM/` en `Platform/`. (Bekende echte cijfers: 500+ users, ~90% sign-ups via aanbeveling collega, 250+ docenten gaven trainingsfeedback, 450.000+ education-specific datapoints, Radboud ~48,5% tijdsbesparing, hoogste F1 op SQuAD-NL, eigen lokaal gehost EU-model. Verifieer voor gebruik.)
 - Tag echte mensen waar relevant (community-gevoel, dat doen ze alle drie).
 - Handboek-lens: elke post raakt een institutionele pijn (retention, financiele gezondheid, risk) of zet een buying-criterion (differentiatie vs de Enemy).
 
@@ -88,7 +88,7 @@ Dit zijn de patronen die de echte stem kapotmaken en "geschreven door AI" schree
 - **Het probleem:** de opmaak. Bold-unicode op half de woorden + emoji achter elke bullet = de AI-tell. Bij ghostwriten: **hou de techniek + de "wat betekent dit voor onderwijs"-payoff, gooi de opmaak-tics eruit.** Schrijf het zoals een ingenieur het aan een slimme collega uitlegt: helder, nuchter, zonder opsmuk.
 - **Structuur die werkt:** scherpe these-kop in gewone tekst -> waarom de naive aanpak faalt -> wat wij doen -> wat het concreet oplevert voor de instelling (latency, lokaal draaien, throughput, compliance).
 - **Persoonlijk mag soms:** zijn AI-studie aan Radboud, internship, thesis, "from studying AI at Radboud to bringing it back". Humaniseert hem.
-- **Productie:** ghostwrite. Max 1 korte intake per batch, of werk uit bestaande materialen in `projects/`. Nooit zijn build-tijd opeten (team-rule).
+- **Productie:** ghostwrite. Max 1 korte intake per batch, of werk uit bestaande materialen in `GTM/`. Nooit zijn build-tijd opeten (team-rule).
 - **Taal:** EN.
 - **Niet doen:** "Excited to bring state-of-the-art..."-opener, bold-unicode, emoji-bullets.
 

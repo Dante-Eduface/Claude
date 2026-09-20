@@ -32,9 +32,9 @@ Kort: een feit verandert een bestand, een oordeel verandert een werkwijze. Het e
 
 ## 3. Vragen stellen in plaats van invullen
 
-**Nooit een aanname invullen die ik kan navragen.** Weet ik het niet zeker, dan zet ik het als OPEN in het bestand met de datum, en zet ik de vraag in `context/open-vragen.md`.
+**Nooit een aanname invullen die ik kan navragen.** Weet ik het niet zeker, dan zet ik het als OPEN in het bestand met de datum, en zet ik de vraag in `Context/open-vragen.md`.
 
-**Komt een persoonlijk onderwerp ter sprake, dan controleer ik het bijbehorende bestand.** Gaat het gesprek over sport, geld, relatie, wonen of leren, dan open ik `context/personal.md` en kijk ik of wat daar staat nog klopt. Zo ja, niks zeggen. Zo nee, of twijfel, dan vraag ik het.
+**Komt een persoonlijk onderwerp ter sprake, dan controleer ik het bijbehorende bestand.** Gaat het gesprek over sport, geld, relatie, wonen of leren, dan open ik `Context/personal.md` en kijk ik of wat daar staat nog klopt. Zo ja, niks zeggen. Zo nee, of twijfel, dan vraag ik het.
 
 De maat daarbij:
 
@@ -50,14 +50,16 @@ Geeft hij antwoord, dan gaat het antwoord meteen naar het juiste bestand, verhui
 
 | Wat | Bestand |
 |---|---|
-| Wie Dante is, rol, weekritme | `context/me.md` |
-| Wat Eduface is, mensen, tools | `context/eduface.md` |
-| Doelen en de leidende maat | `context/current-priorities.md` |
-| Sport, eten, wonen, leren | `context/personal.md` |
-| Alles met geld | `context/financien.md` |
-| Wat ik niet zelf mag invullen | `context/open-vragen.md` |
-| Een keuze met gevolgen, plus de redenering | `decisions/log.md` |
-| Productclaims, prijs, salesmethode | het bestand in `references/`, niet een contextbestand |
+| Wie Dante is, rol, weekritme | `Context/me.md` |
+| Wat Eduface is, mensen, tools | `Context/eduface.md` |
+| Doelen en de leidende maat | `Context/current-priorities.md` |
+| Sport, eten, wonen, leren | `Context/personal.md` |
+| Alles met geld | `Context/financien.md` |
+| Wat ik niet zelf mag invullen | `Context/open-vragen.md` |
+| Een keuze met gevolgen, plus de redenering | `Decisions/log.md` |
+| Productclaims | `Platform/product.md` |
+| Prijs | `GTM/Pricing/` |
+| Salesmethode en playbooks | `GTM/Knowledge/` |
 
 Twijfel je tussen werk en persoonlijk: staat het in zijn agenda als werkafspraak, dan is het werk.
 
@@ -72,14 +74,14 @@ Zonder datum kun je niet zien of iets oud is, en dan wordt alles even betrouwbaa
 Eén keer per maand, of als een sessie er toch al langs komt:
 
 1. Loop de vier werkcontextbestanden door op dingen die je niet meer herkent uit de afgelopen maand chats, agenda en Close.
-2. Kijk in `context/open-vragen.md` welke vragen er langer dan 90 dagen staan.
+2. Kijk in `Context/open-vragen.md` welke vragen er langer dan 90 dagen staan.
 3. Leg Dante hoogstens drie dingen voor: wat volgens mij niet meer klopt, en wat ik zou schrappen.
 4. Schrappen mag altijd voorgesteld worden. Een leeg vak is beter dan een verkeerd ingevuld vak.
 
 ## 7. Wat ik nooit doe
 
 - **Een gat opvullen met iets plausibels.** Niet afleiden dat hij wel verhuisd zal zijn omdat het kantoor verhuisde. Vragen.
-- **Twee versies van hetzelfde feit laten staan.** Nieuw wint, oud gaat weg. Zie het inkomen in `context/personal.md`: twee getallen naast elkaar betekent dat geen van beide bruikbaar is.
-- **Een bestand verwijderen.** Verplaatsen naar `archives/` met een datum in de mapnaam, zodat de oude versie na te lezen is.
+- **Twee versies van hetzelfde feit laten staan.** Nieuw wint, oud gaat weg. Zie het inkomen in `Context/personal.md`: twee getallen naast elkaar betekent dat geen van beide bruikbaar is.
+- **Een bestand verwijderen.** Verplaatsen naar `Archive/` met een datum in de mapnaam, zodat de oude versie na te lezen is.
 - **Een aanpassing doorvoeren zonder hem te melden.**
 - **Een persoonlijk feit in werkcontext zetten, of andersom.**

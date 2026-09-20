@@ -13,7 +13,7 @@ Render-methodes, slide-designpatronen en gotchas. SKILL.md is het proces; dit zi
 
 ## Methode 1: PIL / Python
 
-Werkend, geanker voorbeeld: `projects/paid-ads-buildout/creatives/render_png.py`. Het bevat herbruikbare helpers — hergebruik ze, schrijf niet opnieuw:
+Werkend, geanker voorbeeld: `GTM/Campaigns/paid-ads/creatives/render_png.py`. Het bevat herbruikbare helpers — hergebruik ze, schrijf niet opnieuw:
 - `head(size)` / `body(size)` — League Spartan / Inter laden uit `fonts/`.
 - `card(...)`, `shadow(...)`, `glow(...)` — cards met schaduw en groene glow.
 - `logo(...)` — plakt het witte logo, crop op bbox, schaalt op hoogte.
@@ -23,15 +23,15 @@ Werkend, geanker voorbeeld: `projects/paid-ads-buildout/creatives/render_png.py`
 
 Afmetingen die het script al draait: 1080x1080 (1:1), 1080x1920 (9:16), 1200x628 (1.91:1).
 
-Run: `python3 render_png.py` vanuit de map (heeft Pillow nodig). Fonts en assets leest het relatief uit `fonts/` en `assets/`. Voor nieuw werk: wijs naar de centrale `references/brand-assets/fonts/` en `.../logos/` + `.../product/`, of kopieer de nodige files mee in de werkmap.
+Run: `python3 render_png.py` vanuit de map (heeft Pillow nodig). Fonts en assets leest het relatief uit `fonts/` en `assets/`. Voor nieuw werk: wijs naar de centrale `Design/Merk/fonts/` en `.../logos/` + `.../product/`, of kopieer de nodige files mee in de werkmap.
 
 ## Methode 2: HTML → PNG
 
-Voorbeelden in de repo: `projects/paid-ads-buildout/creatives/maps-cover-banner.html`, `.../assets/listing.html`.
+Voorbeelden in de repo: `GTM/Campaigns/paid-ads/creatives/maps-cover-banner.html`, `.../assets/listing.html`.
 
 Aanpak:
 1. Schrijf een standalone HTML-bestand met inline CSS, op exacte slide-/canvas-afmeting (16:9 slide = 1280x720 of 1920x1080).
-2. Gebruik de design-tokens uit `references/design-system/tokens.css` (kleuren, type-schaal, radius, schaduw). Laad League Spartan + Inter via de Google Fonts `@import` die bovenin tokens.css staat.
+2. Gebruik de design-tokens uit `Design/System/tokens.css` (kleuren, type-schaal, radius, schaduw). Laad League Spartan + Inter via de Google Fonts `@import` die bovenin tokens.css staat.
 3. Render naar PNG. Opties: een headless browser (Playwright/Chromium screenshot van de `.html`), of een bestaand screenshot-pad. Wacht tot fonts geladen zijn voor je schiet.
 
 ## Eduface slide-stijl (de stijl die Dante wil)
@@ -77,7 +77,7 @@ Gebaseerd op de Eduface-branded slides (navy + groen, clean cards). NIET de stra
   .src{position:absolute;left:64px;bottom:20px;font-size:13px;color:var(--muted)}
 </style></head>
 <body><div class="slide">
-  <div class="logos"><img src="references/brand-assets/logos/logo_navy.png" height="44"></div>
+  <div class="logos"><img src="Design/Merk/logos/logo_navy.png" height="44"></div>
   <h1><span class="hl">Good</span> feedback requires</h1>
   <div class="grid">
     <div class="card"><div class="eyebrow">01</div><h3>Clear criteria</h3><p>...</p></div>
