@@ -34,7 +34,7 @@ Kort: een feit verandert een bestand, een oordeel verandert een werkwijze. Het e
 
 **Nooit een aanname invullen die ik kan navragen.** Weet ik het niet zeker, dan zet ik het als OPEN in het bestand met de datum, en zet ik de vraag in `Context/open-vragen.md`.
 
-**Komt een persoonlijk onderwerp ter sprake, dan controleer ik het bijbehorende bestand.** Gaat het gesprek over sport, geld, relatie, wonen of leren, dan open ik `Context/personal.md` en kijk ik of wat daar staat nog klopt. Zo ja, niks zeggen. Zo nee, of twijfel, dan vraag ik het.
+**Komt een persoonlijk onderwerp ter sprake, dan controleer ik het bijbehorende bestand.** Gaat het gesprek over gym, eten of geld, dan open ik het bestand in `Personal/` dat erover gaat en kijk ik of wat daar staat nog klopt. Zo ja, niks zeggen. Zo nee, of twijfel, dan vraag ik het.
 
 De maat daarbij:
 
@@ -50,11 +50,13 @@ Geeft hij antwoord, dan gaat het antwoord meteen naar het juiste bestand, verhui
 
 | Wat | Bestand |
 |---|---|
-| Wie Dante is, rol, weekritme | `Context/me.md` |
+| Wie Dante is, zijn rol, hoe hij werkt | `Context/me.md` |
+| Een tijd: wanneer hij iets doet | `Context/schema.md`, en daar alleen |
 | Wat Eduface is, mensen, tools | `Context/eduface.md` |
 | Doelen en de leidende maat | `Context/current-priorities.md` |
-| Sport, eten, wonen, leren | `Context/personal.md` |
-| Alles met geld | `Context/financien.md` |
+| Gym en trainen | `Personal/gym/gym.md` |
+| Eten, calorieën, koken | `Personal/koken/koken.md` |
+| Alles met geld | `Personal/geld/geld.md` |
 | Wat ik niet zelf mag invullen | `Context/open-vragen.md` |
 | Een keuze met gevolgen, plus de redenering | `Decisions/log.md` |
 | Productclaims | `Platform/product.md` |
@@ -81,7 +83,9 @@ Eén keer per maand, of als een sessie er toch al langs komt:
 ## 7. Wat ik nooit doe
 
 - **Een gat opvullen met iets plausibels.** Niet afleiden dat hij wel verhuisd zal zijn omdat het kantoor verhuisde. Vragen.
-- **Twee versies van hetzelfde feit laten staan.** Nieuw wint, oud gaat weg. Zie het inkomen in `Context/personal.md`: twee getallen naast elkaar betekent dat geen van beide bruikbaar is.
+- **Twee versies van hetzelfde feit laten staan.** Nieuw wint, oud gaat weg. Twee getallen naast elkaar betekent dat geen van beide bruikbaar is.
+- **Hetzelfde feit op twee plekken zetten.** Elk feit heeft één huis, zie de tabel hierboven. Heeft een tweede bestand het ook nodig, verwijs dan in plaats van te kopiëren. Dit ging op 20-09-2026 mis: naam, rol en schema stonden in twee bestanden tegelijk.
+- **Een vraag stellen die al beantwoord is.** Lees eerst de tabel "Beantwoord en verwerkt" onderaan `Context/open-vragen.md`.
 - **Een bestand verwijderen.** Verplaatsen naar `Archive/` met een datum in de mapnaam, zodat de oude versie na te lezen is.
 - **Een aanpassing doorvoeren zonder hem te melden.**
 - **Een persoonlijk feit in werkcontext zetten, of andersom.**

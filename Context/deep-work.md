@@ -61,16 +61,13 @@ Newport noemt vier manieren om deep work in een leven te passen:
 
 ## De agenda-inrichting
 
-**Door Dante zelf bepaald, herzien op 19-09-2026 naar vier uur per dag met een uur pauze ertussen.**
+**De tijden staan in `Context/schema.md`, niet hier.** Dit bestand gaat over waarom, dat bestand over wanneer. Kort: vier uur per dag in twee blokken met een uur pauze ertussen, zeven dagen, 28 uur per week.
 
-| Dag | Blok 1 | Pauze | Blok 2 | Per dag |
-|---|---|---|---|---|
-| Ma t/m vr | 07:00 tot 09:00 | 09:00 tot 10:00 | 10:00 tot 12:00 | 4 uur |
-| Za en zo | 06:00 tot 08:00 | 08:00 tot 09:00 | 09:00 tot 11:00 | 4 uur |
+Twee keuzes die Dante zelf gemaakt heeft en die hier thuishoren omdat ze uitleg vragen:
 
-**28 uur per week**, zeven dagen. Daarna eten.
+**De trein.** Hij stond eerst om 05:30 op en pakte de trein van 06:23, waardoor blok 1 vier dagen per week 35 minuten miste. Hij is dat zelf gaan oplossen: op om 05:00, trein van 05:53, om 07:05 aan zijn bureau.
 
-Hij staat elke dag om 05:00 op en sluit om 20:00 af. Op ma t/m do pakt hij de trein van **05:53**, is 06:53 op het station en rond 07:05 op kantoor. Daarmee is de botsing met blok 1 opgelost: hij zit er vijf minuten voor de start.
+**Calendly blijft open, ook 's ochtends.** Geen regel dat er voor 12:00 niets geboekt mag worden. Dante op 19-09-2026: *"het is belangrijk voor ons dat mensen een meeting boeken. Een deep work sessie niet doen maar wel een meeting hebben is belangrijker."* Dat is de juiste afweging voor een bedrijf dat aan pipeline bouwt, en het betekent dat de weken uiteen zullen lopen. Een geboekte meeting wint altijd van een blok, en zo'n gesneuveld blok is geen falen.
 
 ### Heb je een rustdag nodig
 
@@ -104,7 +101,7 @@ Dat voelt als een uur weggooien en dat is het niet. Newport heeft er een heel ho
 
 **Waar het shallow werk dan wel heen gaat:** de middag. Vanaf 12:00 heeft hij zes uur voor mail, Close, opvolging en meetings. Newport plant shallow werk in eigen blokken, als werktijd, niet als pauze. Die twee dingen door elkaar halen was mijn fout.
 
-Op zaterdag is er geen kantoormiddag, dus daar komt de financiele controle na blok 2: **11:00 tot 12:00**, niet in de pauze.
+Op zaterdag is er geen kantoormiddag, dus daar hoort de financiele controle na blok 2 en niet in de pauze.
 
 ### Het schrijfblok
 
@@ -119,15 +116,15 @@ Er zitten wel twee verschillende dingen onder één woord:
 | **Productieschrijven** | Een LinkedIn-post, een mail, een accountstrategie. Er komt iets af. | In een deep-work-blok, als de taak van dat blok |
 | **Denkschrijven** | Schrijven om erachter te komen wat je denkt. Geen oplevering. | Eigen moment, zie hieronder |
 
-**Voorstel: de heenreis wordt het schrijfblok, de terugreis blijft lezen.** Ma t/m do 05:53 tot 06:53, vier uur per week.
+**Zo staat het sinds 20-09-2026: de heenreis is het schrijfblok, de terugreis is lezen.** Ma t/m do 05:53 tot 06:53. Op papier, in een schrift.
 
-Dante leest op 20-09-2026 in beide treinen een boek, heen en terug, dus acht uur per week. Dat is goed besteed, maar niet optimaal verdeeld: **de heenreis is zijn frisste uur van de dag en dat gaat nu naar input.** Lezen houdt prima stand met een halve batterij, schrijven niet. Dus ruil je ze om.
+Hij las eerst in beide treinen, acht uur per week. Dat was goed besteed maar verkeerd verdeeld: de heenreis is zijn frisste uur en dat ging naar input. Lezen houdt prima stand met een halve batterij, schrijven niet.
 
 Er zit ook een lus in die nu ontbreekt. Je leest op de terugweg, je schrijft er de volgende ochtend over. Zonder dat tweede deel houd je drie weken na een boek vrijwel niets over. Met dat deel wordt lezen iets wat je bezit in plaats van iets wat je hebt gedaan.
 
 En het is precies de valkuil waar het boek dat hij nu leest over gaat: acht uur input per week zonder output voelt productief en levert niets op. Vier uur lezen plus vier uur schrijven levert meer op dan acht uur lezen.
 
-Waarom de trein:
+Waarom de trein de goede plek is:
 
 - Het is tijd die hij toch al heeft.
 - Hij is fris, niemand kan bij hem, en er is geen scherm nodig.
@@ -139,31 +136,6 @@ Op vrijdag en in het weekend is er geen trein. Dan zijn het de **eerste 20 minut
 **De terugreis blijft lezen.** 16:05 op di en do, 18:35 op ma en wo. Vier uur per week, en dat is ruim genoeg.
 
 **Niet splitsen in zakelijk en persoonlijk.** Eén plek, alles door elkaar. Twee bestanden bijhouden is administratie, en administratie is precies wat een denkgewoonte om zeep helpt.
-
-### De week
-
-| | Ma t/m vr | Zaterdag | Zondag |
-|---|---|---|---|
-| 05:00 | Op | Op | Op |
-| 05:53 | Trein (ma t/m do) | | |
-| Blok 1 | 07:00 tot 09:00 | 06:00 tot 08:00, week plannen | 06:00 tot 08:00, LinkedIn-post |
-| Pauze | 09:00 tot 10:00, leeg | 08:00 tot 09:00, leeg | 08:00 tot 09:00, leeg |
-| Blok 2 | 10:00 tot 12:00 | 09:00 tot 11:00 | 09:00 tot 11:00 |
-| Daarna | Shallow werk en meetings | Financiele controle 11:00 | |
-| Middag | Meetings en shallow werk | Gym 13:00, boodschappen 15:00 | Gym 13:00, schoonmaken 15:00, koken 16:00 |
-| 20:00 | Afsluiten | Afsluiten | Afsluiten |
-
-**Thema's:** zaterdag is een werkdag, zondag is een thuisdag. Beide beginnen met dezelfde twee blokken, want het ritme is het punt.
-
-**Boodschappen blijven op zaterdag.** Dante's eigen instinct klopt: een dag van tevoren inkopen betekent dat hij zondag meteen kan koken. Het is een klus van een uur na de gym en die breekt de werkdag niet. Schoonmaken verhuist wel naar zondag, want dan staat alles wat met het huis te maken heeft op één dag.
-
-**Financiele controle gaat naar zaterdag 11:00 tot 12:00.** Zoals hij nu staat (09:00) valt hij in blok 2, en het is shallow werk. De pauze is geen alternatief, want die blijft leeg. Na blok 2 en voor de lunch is de plek.
-
-### Wat er expliciet NIET gebeurt
-
-**Calendly wordt niet aangepast.** Er komt geen regel dat er voor 12:00 niets geboekt mag worden. Dante op 19-09-2026: *"het is belangrijk voor ons dat mensen een meeting boeken. Een deep work sessie niet doen maar wel een meeting hebben is belangrijker. We moeten zoveel mogelijk opties hebben voor mensen om een tijd te boeken."*
-
-Dat is de juiste afweging en het betekent iets voor de uren: **een geboekte meeting wint altijd van een blok.** Blokken die daardoor sneuvelen zijn geen falen, dat is het systeem dat werkt zoals bedoeld. Reken erop dat de weken daardoor uiteenlopen.
 
 ## Meten, want anders is het een voornemen
 

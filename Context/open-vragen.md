@@ -1,6 +1,6 @@
 # Open vragen
 
-_Aangelegd 19-09-2026, bijgewerkt 20-09-2026._
+_Aangelegd 19-09-2026, bijgewerkt 20-09-2026. Vier vragen open._
 
 De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat is een vraag die ik **niet zelf mag invullen**.
 
@@ -16,15 +16,10 @@ De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat 
 
 | # | Vraag | Waarom het uitmaakt | Sinds |
 |---|---|---|---|
-| A5 | **Wordt de leidende maat "geboekte eerste gesprekken per week", vijf stuks?** Uren deep work blijven dan het scorebord, de gesprekken worden de knop waar je op stuurt. | Uren zijn beinvloedbaar maar matig voorspellend: je kunt 28 uur aan het verkeerde werk besteden. Zie `Context/deep-work.md`. | 19-09-2026 |
-| A6 | Verhuist de financiele controle van zaterdag 09:00 naar 11:00? | Nu valt hij in blok 2, terwijl het shallow werk is. De pauze is geen alternatief, die blijft leeg. | 20-09-2026 |
-| A8 | **Ruil je de heenreis om van lezen naar schrijven?** Heen schrijven (frisste uur), terug lezen. Nu lees je beide kanten, acht uur per week input zonder output. | Schrijven is het zwaarste denkwerk dat er is en hoort in je beste uur. Lezen houdt prima stand met een halve batterij. | 20-09-2026 |
-| A9 | Waar landt dat schrijven? Apple Notes, een schrift, of een bestand in deze repo? | In de repo betekent dat ik het kan lezen en je context vanzelf actueel blijft. Een schrift is sneller op een trein. Jouw keuze. | 20-09-2026 |
-| A7 | Verhuist schoonmaken van zaterdag 16:00 naar zondag 15:00? | Dan staat alles met het huis op de thuisdag. Boodschappen blijven bewust op zaterdag, een dag voor het koken. | 19-09-2026 |
-| W4 | Wanneer komt de NPS-meting op Enterprise er? | Tot die er is staat het doel in `current-priorities.md` als niet stuurbaar. Dante weet het nog niet. | 19-09-2026 |
-| W5 | Na twee weken deep work: welk weektarget zetten we vast? | Het schema staat op 28 uur. De eerste twee weken zijn een nulmeting. | Vanaf 03-10-2026 |
-| P11 | Wordt de vaardigheid van dit jaar "een bericht schrijven waar iemand op reageert"? | Dat volgt uit A5: als de maat geboekte gesprekken is, is dat de vaardigheid die hem bepaalt. | 19-09-2026 |
-| G15 | De actuele standen van je potjes. Je levert hier een nieuw bestand voor. | `Context/financien.md` noemt bewust geen bedragen tot dat er is. | 19-09-2026 |
+| A5 | **Wordt de leidende maat "geboekte eerste gesprekken per week", vijf stuks?** Uren deep work blijven dan het scorebord. | Uren zijn beinvloedbaar maar matig voorspellend: je kunt 28 uur aan het verkeerde werk besteden. Zie `Context/deep-work.md`. | 19-09-2026 |
+| A6 | Hoe laat doe je de financiele controle op zaterdag? Hij staat nu om 09:00 en valt daarmee in blok 2, terwijl het shallow werk is. Na blok 2 (11:00) past hij wel. | De pauze is geen alternatief, die blijft leeg. | 20-09-2026 |
+| P11 | Welke vaardigheid ontwikkel je dit jaar? "Een bericht schrijven waar iemand op reageert" wordt het **niet**, dat heb je afgewezen. Wat dan wel? | Je zei eerder dat die volgt uit de leidende maat. Nu de maat 28 uur deep work is, is het antwoord niet meer vanzelfsprekend. | 19-09-2026, opnieuw open 20-09-2026 |
+| G15 | De actuele standen van je potjes. Je levert hier een bestand voor aan. | `Personal/geld/geld.md` noemt bewust geen bedragen tot dat er is, en de tijdlijn begint pas bij het eerste bestand. | 19-09-2026 |
 
 ## Later, geen vraag maar een richting
 
@@ -41,7 +36,7 @@ Onduidelijk is nog wat het verschil is tussen "fitness" en "gym" in zijn hoofd. 
 
 ## Beantwoord en verwerkt
 
-Blijft staan zodat zichtbaar is wat er al gevraagd is. Alles hieronder is op 19-09-2026 beantwoord.
+Blijft staan zodat zichtbaar is wat er al gevraagd is, en zodat ik niet twee keer hetzelfde vraag. Controleer deze lijst altijd voordat je een vraag stelt.
 
 | Vraag | Antwoord | Waar het nu staat |
 |---|---|---|
@@ -53,34 +48,34 @@ Blijft staan zodat zichtbaar is wat er al gevraagd is. Alles hieronder is op 19-
 | Hoe meten we die NPS? | Nu niet. Er is geen meting, dus er valt nog niet op te sturen. | `Context/current-priorities.md` |
 | De LinkedIn-ads in de skills-backlog? | Eruit. Doet hij niet meer. | `CLAUDE.md` |
 | Je 5- en 10-jaarsambities? | Bewust geen lange-termijndoelen meer. Eén prioriteit, het hele jaar. | `Context/me.md` |
-| Is Eduface een thuis of een leerplek? | Een thuis. Hij blijft. | `Context/personal.md` |
+| Is Eduface een thuis of een leerplek? | Een thuis. Hij blijft. | `Context/me.md` |
 | Het salarismoment van september, pad naar CRO? | Weg. Wil er niet over nadenken of praten. Niet opnieuw opbrengen. | geschrapt |
-| Heb je een startup-idee? Route naar oprichter? | Nee en niet relevant. Focus is Eduface. | `Context/personal.md` |
-| Content, wanneer en in welke vorm? | Geen prioriteit. | `Context/personal.md` |
-| Spaans? | Geen prioriteit. | `Context/personal.md` |
-| Blijft het bij 4x gym? | Ja, di, do, za, zo. Geen competitieve sport erbij. | `Context/personal.md` |
+| Heb je een startup-idee? Route naar oprichter? | Nee en niet relevant. Focus is Eduface. | `Context/me.md` |
+| Content, wanneer en in welke vorm? | Geen prioriteit. | `Context/me.md` |
+| Spaans? | Geen prioriteit. | `Context/me.md` |
+| Blijft het bij 4x gym? | Ja, di, do, za, zo. Geen competitieve sport erbij. | `Personal/gym/gym.md` |
 | Is Blockbook B.V. de loonentiteit van Eduface? | Ja, dat is de juridische naam. | `Context/eduface.md` |
-| Is 2.118 netto, en wat is bruto? | Wat op de rekening komt is netto. Nu ongeveer 2.000 per maand. | `Context/financien.md` |
-| De 950 euro van je vader? | Was voor het boeken van Curaçao. Terugbetalen zodra het salaris binnen is. | `Context/financien.md` |
-| De vijfde rekening? | Archiefrekening, geen bestemming. | `Context/financien.md` |
-| Worden je reiskosten vergoed? | Nee. Hij is er zelf mee bezig om ze omlaag te krijgen. | `Context/financien.md` |
-| Staat Curaçao vast? | Ja, geboekt, 26-01-2027. | `Context/financien.md` |
-| Uit huis, waarheen? | Waarschijnlijk Utrecht of Rotterdam. | `Context/financien.md` |
-| Is 10.000 euro vermogen nog het doel? | Ja. | `Context/financien.md` |
-| Doe je de 55/35/10-verdeling echt? | Ja, met de hand op salarisdag. | `Context/financien.md` |
-| Heb je Trade Republic al? | Ja. | `Context/financien.md` |
-| Komt er nog een InBody? | Nee, nu niet en later niet. Geen metingen, geen gewichtdoel. | `Context/personal.md` |
-| Mogen de calorieën omlaag? | Ja. Herrekend naar 2.800. | `Personal/fitness/calorieen.md` |
-| Gym ma/wo/vr/zo of di/do/za/zo? | Di, do, za, zo. De agenda klopt, het oude schema niet. | `Context/personal.md` |
-| Klopt het dat je di en do eerder stopt met werken voor de gym? | Ja, bewust. | `Context/personal.md` |
-| Gewichtdoel 92 tot 96 kg? | Geen gewichtdoel. Hij wil gewoon groter worden. | `Context/personal.md` |
-| Waarom staat Jeroen's naam op je voedingsdocument? | Kladartefact, ze werken in hetzelfde document. De cijfers zijn van Dante. | `Context/personal.md` |
-| Trainingsbestanden in de repo? | Ja. | `Personal/fitness/schema/` |
-| Moet er een trainingsapp gebouwd worden? | Nee. | `Context/personal.md` |
-| Twee tegenstrijdige inkomens (920 en 2.118)? | Achterhaald. Nu ongeveer 2.000 netto. | `Context/financien.md` |
-| Hoeveel zet je automatisch opzij? | Niets automatisch, hij doet het met de hand. | `Context/financien.md` |
+| Is 2.118 netto, en wat is bruto? | Wat op de rekening komt is netto. Nu ongeveer 2.000 per maand. | `Personal/geld/geld.md` |
+| De 950 euro van je vader? | Was voor het boeken van Curaçao. Terugbetalen zodra het salaris binnen is. | `Personal/geld/geld.md` |
+| De vijfde rekening? | Archiefrekening, geen bestemming. | `Personal/geld/geld.md` |
+| Worden je reiskosten vergoed? | Nee. Hij is er zelf mee bezig om ze omlaag te krijgen. | `Personal/geld/geld.md` |
+| Staat Curaçao vast? | Ja, geboekt, 26-01-2027. | `Personal/geld/geld.md` |
+| Uit huis, waarheen? | Waarschijnlijk Utrecht of Rotterdam. | `Personal/geld/geld.md` |
+| Is 10.000 euro vermogen nog het doel? | Ja. | `Personal/geld/geld.md` |
+| Doe je de 55/35/10-verdeling echt? | Ja, met de hand op salarisdag. | `Personal/geld/geld.md` |
+| Heb je Trade Republic al? | Ja. | `Personal/geld/geld.md` |
+| Komt er nog een InBody? | Nee, nu niet en later niet. Geen metingen, geen gewichtdoel. | `Personal/gym/gym.md` |
+| Mogen de calorieën omlaag? | Ja. Herrekend naar 2.800. | `Personal/koken/koken.md` |
+| Gym ma/wo/vr/zo of di/do/za/zo? | Di, do, za, zo. De agenda klopt, het oude schema niet. | `Personal/gym/gym.md` |
+| Klopt het dat je di en do eerder stopt met werken voor de gym? | Ja, bewust. | `Context/schema.md` |
+| Gewichtdoel 92 tot 96 kg? | Geen gewichtdoel. Hij wil gewoon groter worden. | `Personal/gym/gym.md` |
+| Waarom staat Jeroen's naam op je voedingsdocument? | Kladartefact, ze werken in hetzelfde document. De cijfers zijn van Dante. | `Personal/gym/gym.md` |
+| Trainingsbestanden in de repo? | Ja. | `Personal/koken/koken.md` |
+| Moet er een trainingsapp gebouwd worden? | Nee. | `Personal/gym/gym.md` |
+| Twee tegenstrijdige inkomens (920 en 2.118)? | Achterhaald. Nu ongeveer 2.000 netto. | `Personal/geld/geld.md` |
+| Hoeveel zet je automatisch opzij? | Niets automatisch, hij doet het met de hand. | `Personal/geld/geld.md` |
 | Verhuis je zelf naar Utrecht? | Nog niet. Kantoor is verhuisd, hij woont in Leiden. | `Context/me.md` |
-| Stop je met American football? | Gestopt. | `Context/personal.md` |
+| Stop je met American football? | Gestopt. | `Personal/gym/gym.md` |
 | De relatievragen. | Geschrapt op zijn verzoek. Niet meer opbrengen. | geschrapt |
 | Heb je een rustdag nodig bij 7 dagen deep work? | Nee, mits de dagelijkse grens en het afsluitritueel echt zijn. Newport schrijft geen rustdag voor, wel een harde eindtijd. | `Context/deep-work.md` |
 | De trein tegen blok 1? | Opgelost. Hij pakt nu de trein van 05:53 en staat om 05:00 op. | `Context/deep-work.md` |
@@ -88,7 +83,12 @@ Blijft staan zodat zichtbaar is wat er al gevraagd is. Alles hieronder is op 19-
 | Zijn de weekendblokken al bezet? | Opgelost. Gym dashboard is eruit, week plannen en LinkedIn staan nu in blok 1. | `Context/deep-work.md` |
 | LinkedIn-post elke zondag, terwijl content geen prioriteit is? | Die is wel prioriteit. Het is een Eduface-taak en hoort bij het SHIFT-project. | `Context/current-priorities.md` |
 | Waar staat de productpagina? | Gebruik `Platform/product.md` voor productclaims. Dat is de bron. | `Context/eduface.md` |
-| Ga je wekelijks wegen? | Ja, een keer per week. | `Context/personal.md` |
-| Draag je nog een WHOOP? | Gestopt. Geen herstel- of slaapdata meer. | `Context/personal.md` |
+| Ga je wekelijks wegen? | Ja, een keer per week. | `Personal/gym/gym.md` |
+| Draag je nog een WHOOP? | Gestopt. Geen herstel- of slaapdata meer. | `Personal/gym/gym.md` |
 | Wat doe je in het pauze-uur? | Gecorrigeerd op 20-09-2026: helemaal leeg. Eten en lopen, geen scherm. Shallow werk gaat naar de middag, want dat is werktijd en geen pauze. | `Context/deep-work.md` |
 | "Hulp voor het huis" en de oude uitgaven? | Geschrapt. Kijk vooruit, niet naar het verleden. De situatie is anders. | geschrapt |
+| Wanneer komt de NPS-meting op Enterprise? | Hij weet het niet. Vraag gesloten, niet opnieuw stellen tot hij er zelf over begint. | `Context/current-priorities.md` |
+| Welk weektarget voor deep work? | 28 uur per week. Vastgezet op 20-09-2026. Hij weet dat het in het begin niet lukt en houdt zelf bij hoe het gaat. | `Context/schema.md` |
+| Verhuist schoonmaken naar zondag? | Nee. Boodschappen en schoonmaken blijven zaterdag, na de gym: 15:00 boodschappen, 16:00 schoonmaken. Koken zondag 15:30 tot 18:00. | `Context/schema.md` |
+| Ruil je de heenreis om van lezen naar schrijven? | Ja. Heen schrijven, terug lezen. | `Context/schema.md` |
+| Waar landt dat schrijven? | Op papier, in een schrift. Niet in deze repo. | `Context/schema.md` |

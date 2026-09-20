@@ -1,3 +1,5 @@
+> **Achterhaald op 20-09-2026.** WHOOP, InBody en gewichtdoelen zijn vervallen. Actueel: `Personal/gym/gym.md`, `Personal/koken/koken.md` en `Context/schema.md` voor de tijden.
+
 # Athlete Profile - Dante
 
 Source of truth for the `fitness-coach` skill. Keep this current: when something changes (schema, maxes, InBody, WHOOP trends, goals), edit this file. Nutrition lives in `nutrition-profile.md`, the aesthetic layer in `physique-goal.md`, the full session detail in `reference/volledig_schema.html`.
@@ -37,7 +39,7 @@ Lean at 89.4kg with 10.2% BF is a strong starting point. The job is adding muscl
 
 Schouder/taille-ratio **1.52**, doel 1.6+. Ongewijzigd sinds 05-07-2026: alle acht de maten zijn exact gelijk gebleven over twee maanden.
 
-**Alle metingen staan in `Personal/fitness/data/metingen/metingen.csv`.** Dat is de historie, dit tabelletje is alleen de laatste stand. Nieuwe meting? Regel eronder plakken, niet dit bestand overschrijven. Tapemeting elke 4-6 weken, 's ochtends, ontspannen, niet gepompt. InBody wekelijks op zondag.
+**Alle metingen staan in `Personal/gym/data/metingen/metingen.csv`.** Dat is de historie, dit tabelletje is alleen de laatste stand. Nieuwe meting? Regel eronder plakken, niet dit bestand overschrijven. Tapemeting elke 4-6 weken, 's ochtends, ontspannen, niet gepompt. InBody wekelijks op zondag.
 
 ## Weekly schedule
 
@@ -107,7 +109,7 @@ Kept from the football program because he likes it and it burns strain without a
 
 ## Werkgewichten (Strong-export t/m 2026-08-15, 476 workouts sinds 2021)
 
-Ruwe export: `Personal/fitness/data/strong/strong_workouts.csv`. Zwaarste set sinds mei 2026:
+Ruwe export: `Personal/gym/data/strong/strong_workouts.csv`. Zwaarste set sinds mei 2026:
 
 | Oefening | Beste set | Laatst gelogd |
 |---|---|---|
@@ -133,7 +135,7 @@ Laatste gelogde workout is 2026-08-15, het nieuwe schema is daarna ingegaan.
 
 ## Wekelijkse upload (zondag)
 
-Elke zondag levert hij drie dingen aan: **Strong-export, WHOOP-export en InBody-uitslag.** Die gaan naar `Personal/fitness/data/`.
+Elke zondag levert hij drie dingen aan: **Strong-export, WHOOP-export en InBody-uitslag.** Die gaan naar `Personal/gym/data/`.
 
 Dat is **context voor de coach, geen dashboardinhoud.** Hij heeft de WHOOP-app al om zijn WHOOP-cijfers te bekijken en hoeft ze niet nog een keer te zien. Gebruik de data om vragen te beantwoorden en het weekmenu en het schema bij te stellen, en bouw er geen tegels van.
 

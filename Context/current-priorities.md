@@ -18,28 +18,14 @@ Enkelvoud, en dat is het punt. Dante op 19-09-2026: *"bepaal gewoon één priori
 
 ## De leidende maat
 
-| Dag | Blok 1 | Pauze | Blok 2 |
-|---|---|---|---|
-| Ma t/m vr | 07:00 tot 09:00 | 09:00 tot 10:00 | 10:00 tot 12:00 |
-| Za en zo | 06:00 tot 08:00 | 08:00 tot 09:00 | 09:00 tot 11:00 |
+**Uren deep work per week. Het target is 28 uur**, vastgezet op 20-09-2026. Vier uur per dag, zeven dagen.
 
-**28 uur per week**, zeven dagen, vier uur per dag. Op ma t/m do pakt hij de trein van 05:53 en zit rond 07:05 op kantoor.
+Dante weet dat hij dat in het begin niet haalt en houdt zelf bij hoe het gaat. Niet elke week als falen behandelen, wel de uren noemen.
 
-**Een geboekte meeting wint altijd van een blok.** Calendly blijft open, ook 's ochtends. Dat is een bewuste keuze: liever een meeting dan een blok. Blokken die daardoor sneuvelen zijn geen falen.
+- **Wanneer de blokken vallen en hoe de rest van zijn week eruitziet:** `Context/schema.md`.
+- **Waarom het zo staat, hoe je de blokken intens maakt, en wat het plafond van Newport betekent:** `Context/deep-work.md`.
 
-In een blok past **één** taak, die de avond ervoor bij het afsluiten van 20:00 gekozen is. De telefoon ligt buiten de kamer.
-
-**Het pauze-uur is leeg.** Eten, lopen, geen scherm. Geen mail, geen Close. Shallow werk gaat naar de middag, want dat is werktijd en geen pauze (gecorrigeerd 20-09-2026).
-
-**De trein van 05:53 is het schrijfblok**, ma t/m do. Denken en schrijven over werk en persoonlijke dingen door elkaar. Telt niet mee in de deep-work-uren. Op vrijdag en in het weekend zijn het de eerste 20 minuten van blok 1.
-
-Hoe je de blokken intens maakt staat in `Context/deep-work.md`.
-
-**De eerste twee weken zijn een nulmeting**, geen target. Daarna wordt het één getal (W5).
-
-**Voorstel voor de echte stuurmaat: geboekte eerste gesprekken per week, vijf stuks.** Uren deep work zijn goed beinvloedbaar maar matig voorspellend, je kunt 28 uur aan het verkeerde werk besteden. Vijf gesprekken per week is twintig per maand, dus dezelfde taal als het doel. De uren blijven het scorebord, de gesprekken worden de knop. Nog te bevestigen door Dante.
-
-Scorebord: blokken in de agenda "Planning", bij het 20:00-blok een ✓ of ✗, zaterdag 06:00 bij "Week plannen" de week optellen.
+**Nog open (A5):** een voorstel om de echte stuurmaat te verschuiven naar geboekte eerste gesprekken per week, vijf stuks, met de uren als scorebord. Uren zijn goed beinvloedbaar maar matig voorspellend: je kunt 28 uur aan het verkeerde werk besteden.
 
 ## Revenue target Eduface, eind 2027
 

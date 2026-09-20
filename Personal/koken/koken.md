@@ -1,6 +1,10 @@
-# Hoeveel Dante moet eten, nu football eruit is
+# Koken en eten
 
-_Berekend 19-09-2026, op verzoek van Dante. Vervangt de 3.100 kcal uit het voedingsdocument van augustus 2026._
+_Laatst bijgewerkt: 2026-09-20. Berekend op 19-09-2026, vervangt de 3.100 kcal uit het voedingsdocument van augustus 2026._
+
+Hij kookt op **zondag**, zie `Context/schema.md`. Boodschappen doet hij een dag eerder, op zaterdag, zodat hij zondag meteen kan beginnen. Het weekmenu staat in `weekmenu.html` en wordt gebouwd uit `menu/<week>.json` met `python3 build.py`.
+
+**Lust hij niet:** feta, walnoten, chiliflakes, chipotle, sambal, gember.
 
 ## Het antwoord
 
@@ -46,13 +50,8 @@ De waarheid ligt er tussenin. Ik houd **2.600 tot 2.700 kcal onderhoud** aan.
 
 **Plus of min 250 kcal.** Dat is eerlijk gezegd de foutmarge, en dat komt door het gat tussen de twee methodes hierboven.
 
-Dante wil geen InBody meer en meet zijn gewicht niet. Dat mag, maar dan is 2.800 een startpunt dat je niet kunt bijstellen op data. Twee manieren om er toch grip op te houden zonder er tijd in te steken:
-
-- **De goedkoopste:** één keer per week op de weegschaal, zaterdagochtend, nuchter, tien seconden. Niet om het getal, maar om de richting. Gaat het sneller dan een halve kilo per maand omhoog, dan 200 kcal eraf. Beweegt het in twee maanden niet, dan 200 erbij.
-- **Zonder weegschaal:** de broekband en de prestatie in de gym. Blijft de riem hetzelfde en gaan de gewichten omhoog, dan zit je goed. Dat is trager en ruiser, maar het werkt.
-
-Kiest hij voor geen van beide, dan is dat ook een antwoord: dan eet hij 2.800 en accepteert hij dat het er misschien 2.600 of 3.000 hadden moeten zijn.
+**Hij weegt één keer per week**, zaterdagochtend, nuchter. Dat is het enige signaal om bij te stellen. Gaat het sneller dan een halve kilo per maand omhoog, dan 200 kcal eraf. Beweegt het in twee maanden niet, dan 200 erbij. Verder geen metingen, zie `Personal/gym/gym.md`.
 
 ## Wat hier niet in staat
 
-Maaltijdplannen, recepten en timing rond de training. Zijn twee prioriteiten zijn intensiteit in de gym en goed eten, niet een schema per maaltijd. Vraagt hij erom, dan pas.
+Recepten en timing rond de training. Zijn twee prioriteiten zijn intensiteit in de gym en goed eten, niet een schema per maaltijd. Vraagt hij erom, dan pas.

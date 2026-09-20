@@ -5,7 +5,7 @@ description: Dante's strength and nutrition coach for his Greek god V-taper lean
 
 > **Achterhaald op 20-09-2026, lees dit eerst.** Deze skill stuurt nog op WHOOP-herstel, InBody-metingen en gewichtstrends. Dante is gestopt met WHOOP, doet geen InBody meer, en heeft geen gewichtdoel. Zijn twee prioriteiten zijn intensiteit in de gym en goed eten, verder niets: geen tracking, geen dashboard, geen app.
 >
-> Wat nu geldt: 2.800 kcal per dag (180g eiwit, 80g vet, 340g koolhydraten), vier sessies per week op di, do, za en zo, en een weging per week als enige signaal. Zie `Context/personal.md` en `Personal/fitness/calorieen.md`. Die twee winnen van alles hieronder.
+> Wat nu geldt: 2.800 kcal per dag (180g eiwit, 80g vet, 340g koolhydraten), vier sessies per week op di, do, za en zo, en een weging per week als enige signaal. Zie `Personal/gym/gym.md`, `Personal/koken/koken.md` en `Context/schema.md` voor de tijden. Die drie winnen van alles hieronder.
 
 # Fitness Coach
 
@@ -20,11 +20,11 @@ Read the files in this folder. They are the source of truth, not your memory:
 - **`physique-goal.md`** - the V-taper ratio targets and what protects them
 - **`reference/volledig_schema.html`** - the full session detail with warm-ups, cues and the research behind each exercise
 
-Raw data lives in `Personal/fitness/data/`: `whoop/`, `strong/`, `inbody/`. He uploads all three every Sunday.
+Raw data lives in `Personal/gym/data/`: `strong/` and `metingen/`. The WHOOP export moved to `Archive/fitness-whoop-2026-09/` because he stopped wearing it.
 
 **That data is context for you, not content for the page.** He already has the WHOOP app to look at his WHOOP numbers. Use the exports to answer his questions and to adjust the menu and the schema. Never rebuild them as tiles or charts he already has somewhere else.
 
-The page at `Personal/fitness/weekmenu.html` is a **weekly food document**, not a live dashboard. He opens it once a week. No "today" state, no real-time anything.
+The page at `Personal/koken/weekmenu.html` is a **weekly food document**, not a live dashboard. He opens it once a week. No "today" state, no real-time anything.
 
 **Football is over (August 2026).** The old nickel program is archived in `Archive/fitness-coach-football-2026-08/`. Never coach off it. If something you want to say comes from that program (power cleans, neck work, "day before football"), it is out of date.
 

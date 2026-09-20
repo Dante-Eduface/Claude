@@ -9,11 +9,11 @@ ze daar moet vinden. `.claude/` en `.vscode/` zijn configuratie.
 
 | Map | Wat hier hoort | Wat hier **niet** hoort |
 |---|---|---|
-| `Context/` | Wie Dante is, wat Eduface is, prioriteiten, open vragen, het werkritme, deze kaart | Projectwerk |
+| `Context/` | Wie Dante is, wat Eduface is, prioriteiten, open vragen, zijn hele week, deze kaart | Projectwerk, en persoonlijke onderwerpen |
 | `GTM/` | Alles sales & marketing | Productkennis, designwerk |
 | `Design/` | Design system, merk-assets, websitewerk | Campagnemateriaal (dat is GTM) |
 | `Platform/` | Het product zelf: claims, vaktermen, onderzoek, usability | Accountspecifieke stukken |
-| `Personal/` | Privé. Wordt niet auto-geladen | Alles wat met Eduface te maken heeft |
+| `Personal/` | Privé, niet auto-geladen. Drie onderdelen: `geld/`, `gym/`, `koken/` | Alles wat met Eduface te maken heeft, en tijden (die staan in `Context/schema.md`) |
 | `Decisions/` | `log.md` (append-only) en `feedback.md` | Werkbestanden |
 | `Archive/` | Afgerond en vervangen materiaal | Iets waar nog aan gewerkt wordt |
 
@@ -34,7 +34,9 @@ ze daar moet vinden. `.claude/` en `.vscode/` zijn configuratie.
 - **`Context/current-priorities.md`** wint van elk ander contextbestand. Staat er iets elders dat het
   tegenspreekt, dan is dat elders fout.
 - **`Context/open-vragen.md`** is de enige plek voor wat Claude niet zelf mag invullen. Niet raden,
-  daar neerzetten en navragen.
+  daar neerzetten en navragen. Lees ook de lijst met beantwoorde vragen voordat je iets vraagt.
+- **`Context/schema.md`** is de enige plek met tijden. Wanneer hij traint, kookt, reist of boodschappen
+  doet staat daar, niet in `Personal/`. Anders lopen ze uit elkaar.
 - **`Platform/product.md`** is de bron van waarheid voor productclaims. Negen bestanden lezen
   hieruit. Klopt een claim ergens niet, corrigeer hier, niet in de kopie.
 - **`Design/System/`** is verplicht bij alles wat een mens bekijkt. Start bij
