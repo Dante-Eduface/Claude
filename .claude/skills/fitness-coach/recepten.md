@@ -89,7 +89,9 @@ Vuistregels voor een week, in de hoofdmaaltijden (lunch + diner, 14 stuks):
 
 O1 en O4 zijn eiwitarm. Zet er op die dagen een portie kwark of cottage cheese naast, of plan ze op een dag met een eiwitrijke lunch.
 
-## Lunch (zondag in batch)
+## Warme maaltijd 1 (het oude 'lunch', zondag in batch)
+
+**Er is geen verschil tussen lunch en diner.** Hij eet twee keer warm per dag en elk gerecht kan op beide plekken. De indeling hieronder is alleen een bak om uit te kiezen, geen voorschrift.
 
 | # | Gerecht | Portie (3.100-stand, converteer) | Eiwit |
 |---|---|---|---|
@@ -101,7 +103,7 @@ O1 en O4 zijn eiwitarm. Zet er op die dagen een portie kwark of cottage cheese n
 | L6 | Rundvlees-noedels met broccoli, soja en knoflook | eiernoedels 120 g droog, biefreepjes 250 g, broccoli 200 g, soja, knoflook, lente-ui | ~58 g |
 | L7 | Pasta pesto met garnalen, courgette en pijnboompitten | pasta 140 g droog, garnalen 250 g, pesto 40 g, courgette 1 | ~50 g |
 
-## Diner (altijd andere eiwitbron dan de lunch van diezelfde dag)
+## Warme maaltijd 2 (het oude 'diner', andere eiwitbron dan maaltijd 1 van die dag)
 
 | # | Gerecht | Portie (3.100-stand, converteer) | Eiwit | Snel genoeg voor di/do |
 |---|---|---|---|---|
