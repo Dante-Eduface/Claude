@@ -40,7 +40,7 @@ The page at `Personal/fitness/weekmenu.html` is a **weekly food document**, not 
 
 ## "Wat train ik vandaag"
 
-1. **What day is it** -> pull that session: Tue = Lower B, Thu = Upper A, Sat = Lower A, Sun = Upper B + field day. Mon/Wed/Fri = rest. Rotation is lower/upper/lower/upper so Sunday's gym never collides with field day.
+1. **What day is it** -> pull that session: Tue = Lower A (17:00), Thu = Upper A (17:00), Sat = Lower B (13:00), Sun = Upper B (13:00). Mon/Wed/Fri = rest. Bijgewerkt 20-09-2026 uit `Context/personal.md`: football is weg, dus de oude reden om Lower B bij zondag vandaan te houden (sprints op verse RDL-hamstrings) geldt niet meer.
 2. **Get today's WHOOP recovery**, then apply the adjustment rule:
    - Green (67%+): full intensity as planned.
    - Yellow (34-66%): -1 set per exercise, top sets -5 to -10%.

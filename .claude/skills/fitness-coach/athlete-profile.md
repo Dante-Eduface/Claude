@@ -44,16 +44,16 @@ Schouder/taille-ratio **1.52**, doel 1.6+. Ongewijzigd sinds 05-07-2026: alle ac
 | Day | Session |
 |-----|---------|
 | Monday | Rest |
-| Tuesday | Gym - **Lower B** (hack squat, RDL, Bulgarian) |
+| Tuesday | Gym - **Lower A** (squat, leg ext, seated leg curl, hip thrust), 17:00-19:00 |
 | Wednesday | Rest |
 | Thursday | Gym - **Upper A** |
 | Friday | Rest |
-| Saturday | Gym - **Lower A** (squat, leg ext, seated leg curl, hip thrust) |
-| Sunday | Gym - **Upper B** + field day |
+| Saturday | Gym - **Lower B** (hack squat, RDL, Bulgarian, calves), 13:00-15:00 |
+| Sunday | Gym - **Upper B**, 13:00-15:00. Geen field day meer, football is voorbij. |
 
 Rotation is **lower / upper / lower / upper**, so Sunday's gym session is upper body and does not collide with field day. Every muscle group still gets hit 2x/week. Field day stays Sunday, fixed.
 
-Why Lower B sits on Tuesday and not Saturday: **Lower B contains the RDL**, a loaded hamstring stretch. Sprinting on hamstrings that are sore from RDLs is the single most common way to tear one. Lower A's hamstring work is the seated leg curl, which is far safer to sprint on the next day. So the heavier hip-hinge day goes as far from field day as possible.
+Bijgewerkt 20-09-2026: de rotatie is omgedraaid (di Lower A, za Lower B) volgens `Context/personal.md`. De oude redenering hieronder hing aan football op zondag, en football is voorbij. Bron voor de split is nu `Context/personal.md`, niet dit bestand.
 
 Leg spacing is Tue -> Sat (4 days) and Sat -> Tue (3 days). Fine for 2x/week.
 
