@@ -15,11 +15,13 @@ Persoonlijke context staat in `Context/personal.md` (sport, eten, leren) en `Con
 Vervallen op 19-09-2026: `Context/work.md`, `Context/team.md` en `Context/goals.md`, samengevoegd in de bestanden hierboven. Oude versies in `Archive/context-2026-09/`.
 
 ## Rules
-Behavioral rules live in `.claude/rules/`. Communication style, team coordination, context loading, output format and **feedbackverwerking** are defined there — follow them.
+Behavioral rules live in `.claude/rules/`. Communication style, team coordination, context loading, output format, **feedbackverwerking** en **skill-onderhoud** are defined there — follow them.
 
 **Context actueel houden (`.claude/rules/context-onderhoud.md`):** vertelt Dante in de chat iets dat een contextbestand tegenspreekt of aanvult, dan werk ik dat bestand **dezelfde beurt** bij en meld ik dat in één regel. Niet wachten tot hij zegt "schrijf dat op". Komt een persoonlijk onderwerp langs, dan toets ik wat erover vastligt en vraag ik hoogstens twee of drie dingen na. Wat ik niet zeker weet gaat als OPEN naar `Context/open-vragen.md`, nooit als aanname het bestand in.
 
 **Feedback (`.claude/rules/feedback.md`):** een losse opmerking is een correctie, twee keer hetzelfde is een patroon, en pas na akkoord wordt het een regel, met de tekst vooraf voorgelegd. Nooit een aanname invullen die je kunt navragen, nooit een regel breder maken dan de feedback was, nooit stilletjes een skill wijzigen.
+
+**Skills actueel houden (`.claude/rules/skill-onderhoud.md`):** draait een skill, of gaat het gesprek over zijn onderwerp, dan toets ik of die skill nog klopt. Een pad, ID of feit dat aantoonbaar verhuisd is pas ik **dezelfde beurt** aan en meld ik in één regel. Gaat het over de procedure, de triggers, of wat de skill oplevert, dan leg ik de tekst eerst voor. Weet ik het niet zeker, dan markeer ik het met `> **Te toetsen (datum):**` en gaat de vraag naar `Context/open-vragen.md`. Nooit stil wijzigen, nooit een skill verwijderen.
 
 **Credits (`.claude/rules/credits.md`):** het geld zit in ophalen, niet in nadenken. Vraag het script voor je het web vraagt, stop zodra je het antwoord hebt, peil voor je een dure operatie start, en kies het goedkoopste model dat het werk aankan.
 
@@ -35,6 +37,7 @@ Gmail · Google Calendar · Google Drive · Close (CRM) · Clay · Framer · Tod
 ## Skills
 - Skills live in `.claude/skills/`. Each skill is a folder with a `SKILL.md`: `.claude/skills/skill-name/SKILL.md`.
 - Skills are built **organically** as recurring workflows emerge. Don't pre-build them.
+- **Een skill is een procedure, geen kopie van de data.** Elk feit dat ergens anders leeft wordt aangewezen met een pad, nooit overgeschreven. De bronregel staat in `.claude/skills/skill-builder/SKILL.md`, het onderhoud in `.claude/rules/skill-onderhoud.md`.
 - When you notice Dante repeating the same request, suggest turning it into a skill.
 - The backlog of workflows to turn into skills is below.
 
