@@ -48,7 +48,9 @@ Wake 05:00, trein 05:53 op ma t/m do, om 07:05 op kantoor. Acht uur slaap beteke
 
 - Ontbijt en lunch zijn de grote maaltijden.
 - Diner is normaal, niet de grootste maaltijd van de dag.
-- **Klaar met eten om 19:30** op ma, wo en vr. Op di en do eet hij na de gym, rond 19:30 tot 20:00.
+- **Op ma, wo en vr eet hij warm om 17:30.** Op di, do, za en zo na de gym, rond 19:30.
+- **Een tussendoortje per dag**, halverwege de middag: of scrambled eggs, of overnight oats. Nooit allebei.
+- **Het eiwit per warme maaltijd is de knop.** 300 g vlees of vis, niet de portie die het recept noemt. Zonder dat haalt hij de 180 g nooit.
 
 ### De vier trainingsdagen
 

@@ -53,11 +53,24 @@ Consistent en wat hem betreft niet onderhandelbaar. Dat di en do om 17:00 begint
 
 **Geen verschil tussen lunch en diner.** Hij eet twee keer warm per dag en het maakt niet uit welk gerecht waar staat. Wat officieel een diner is eet hij net zo goed om 12:00 (20-09-2026).
 
-**Hij vast tot 12:00** en eet daarna tot de avond. Reden: eten zakt zijn focus in, en de deep-work-blokken liggen van 07:00 tot 12:00. Hij wordt niet snel vol, dus grote porties in een kort venster gaan hem makkelijk af.
+**Hij vast tot 12:00**, en dat doet hij nu al echt (bevestigd 20-09-2026). Reden: eten zakt zijn focus in, en de deep-work-blokken liggen van 07:00 tot 12:00. Hij wordt niet snel vol, dus grote porties in een kort venster gaan hem makkelijk af.
 
-**Zijn vaste bouwstenen:** scrambled eggs (8 eieren, vier per dag over twee dagen, met lente-ui en cherrytomaat), 3 tot 4 bakjes overnight oats als tussendoortje, een bakje volle kwark met pindakaas, honing en rozijnen om 12:00, en op gymdagen crackers met pindakaas, honing en banaan. De basis boodschappenlijst staat in `Personal/fitness/boodschappen-basis.md`.
+**Vier eetmomenten, en maar een tussendoortje per dag.**
 
-**Op di en do eet hij na de gym.** Die sessie loopt van 17:00 tot 19:00 en daarna volgt een grote avondmaaltijd, geen licht diner en geen pre-gym feed vooraf (bevestigd 20-09-2026).
+| Wanneer | Wat |
+|---|---|
+| 12:00 | Bakje volle kwark met pindakaas, honing en rozijnen, plus warme maaltijd 1 |
+| Halverwege de middag | **Een** tussendoortje: of een bakje scrambled eggs, of een bakje overnight oats. Nooit allebei. |
+| 16:00, alleen gymdagen | Crackers met pindakaas, honing en banaan |
+| 17:30 op ma, wo en vr | Warme maaltijd 2 |
+| Na de gym op di, do, za en zo | Warme maaltijd 2, rond 19:30 |
+
+
+**De weekindeling van het tussendoortje**, door Dante zelf voorgesteld op 20-09-2026: zondag kookt hij 8 eieren, die eet hij maandag en dinsdag (vier per dag, met lente-ui en cherrytomaat). Woensdag, donderdag en vrijdag overnight oats. Zaterdag en zondag staan nog open.
+
+De basis boodschappenlijst staat in `Personal/fitness/boodschappen-basis.md`.
+
+**Op alle vier de gymdagen eet hij warm na de gym.** Op ma, wo en vr staat de tweede warme maaltijd om 17:30 (bevestigd 20-09-2026).
 
 **Het weekmenu en het boodschappenlijstje maakt hij op zaterdag**, voor de boodschappen van 15:00. Niet op zondag, dat is een dag te laat (20-09-2026).
 
