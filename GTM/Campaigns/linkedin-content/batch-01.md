@@ -1,78 +1,55 @@
-# Batch 01 — Dante · skilled trades + adoptie · 2026-09-20
+# Batch 01 — Dante · skilled trades · 2026-09-20
 
-Twee posts, stem Dante, Engels. Post 1 maandag (reflectief), post 2 donderdag (tastbaar).
+Post 1. Stem Dante, Engels. Post 2 (adoptie) staat geparkeerd in
+`post-2-adoptie-geparkeerd.md`, die pakken we op als deze klaar is.
 
-**Format volgt Dante's eigen norm** (voorbeeldpost "Als we dit niet oplossen, kunnen we een
-onvoldoende krijgen op onze opleiding", 2026-09-20): open met een citaat uit een echt gesprek,
-rol zonder naam, geen instelling, geen externe bronnen of cijfers, concrete operationele details,
-warme afsluiting op "hierna wist ik hoe we konden helpen".
+**Opzet van Dante, aangehouden in deze volgorde:**
+1. de goal van de instelling, aan het begin
+2. haakje: meer studenten stromen die markt in
+3. instructeurs kunnen meer verdienen in het werkveld, en hebben een hogere werkdruk
+4. verrijking: waarom het zo belangrijk is dat instructeurs blijven
+5. "Challenging, but not impossible." = het kantelpunt
+6. daarna pas de impact-helft: instructeursuren als de variabele die je wel kunt sturen
 
-**Geen instellingsnaam.** Niet genoemd en niet herleidbaar: geen land, geen groeicijfers,
-geen campus-aantallen, geen filings. De opening van post 1 is een geparafraseerd citaat uit een
-gesprek van 18-09. Check of je daar comfortabel mee bent voor je plaatst.
+**Eduface wordt niet genoemd.** De instelling ook niet, en niets dat herleidbaar is:
+geen land, geen campus-aantallen, geen omzet- of groeidoelen, geen strategienaam.
 
 ---
 
 ## Post 1 · Dante · P1 Staat en toekomst van toetsen · EN
 
-"They can't do any tutoring, because they're locked into grading."
+A training provider I spoke with recently wants to open new campuses every year for the next few years, and get their full catalogue of programmes running at every one of them.
 
-That came from someone whose job is supporting and training instructors, in a conversation a couple of weeks ago.
+The students are there for it. More people are going into the skilled trades than a few years ago. Welding, diesel, automotive, HVAC.
 
-Earlier this year I wrote that we were moving more toward independent providers. That has taken us somewhere I did not expect, into the skilled trades. Welding, diesel, automotive. Programmes where more students enrol every year.
+The instructors are the part nobody has solved.
 
-Which sounds like a good problem to have. More students, more campuses, more programmes. Until you look at who is meant to teach them.
+Someone who is good enough to teach a trade is usually good enough to earn more doing it. So the school is asking that person to take less money, work to a fixed hourly schedule, and then spend the evening grading. That is a harder sell than any job advert makes it look.
 
-These instructors come out of the trade itself. Someone who spent fifteen years in a workshop and now teaches it. They are paid hourly, so their time is watched closely, and grading takes the part of the week that was supposed to go to the students who are falling behind.
+And when they leave, you cannot replace them out of an academic hiring pool. They walk out with fifteen years of workshop experience, and that was the actual product.
 
-So the school grows, the instructor's evening gets longer, and the tutoring that would have kept those students enrolled never happens. Then the best instructors leave, because they have somewhere else to go. They always do.
+This is the part I did not appreciate until recently. In a trade programme the instructor is not giving a lecture that somebody else could give. They are the one standing next to a student who is about to give up, showing them the thing that makes it click. Take that away and students do not finish. And students finishing is the number the whole school is measured on.
 
-Nobody I spoke to was confused about any of this. They know exactly what is happening. The hard part is that the obvious fix, hire more instructors, is the one thing the market will not hand them.
+So you have growth on one side, and the people who make the growth possible walking out the other.
 
-What I liked about that conversation is that I came out of it knowing where we can actually help. Not with the hiring. With the hours that never had to go there in the first place.
+Challenging, but not impossible.
+
+Instructor hours are one of the biggest costs a campus actually controls. Most people look at that line and think about rates and headcount. The more useful question is what those hours are being spent on.
+
+Grading is not why any of them took the job. If that part of the week gets shorter, the instructor gets back the part they came for, which is standing next to the student who is stuck.
+
+That is the same hour working twice. One that keeps the instructor, and one that keeps the student.
 
 **Format:** single text, geen link.
-**Doel:** Discovery-pijn (instructeurs-attritie en tutoring die wegvalt als rem op groei).
-**Let op:** de openingszin is bijna letterlijk wat er op 18-09 gezegd werd. Geparafraseerd en
-niet herleidbaar, maar het is wel uit dat gesprek.
+**Doel:** Discovery-pijn (instructeurs-attritie als rem op groei, completion als de metriek die telt).
 
 #SkilledTrades #TechnicalEducation #Eduface
 
 ---
 
-## Post 2 · Dante · P3 Pijn feedback & nakijken · EN
+## Aandachtspunt
 
-Most tools in education do not fail because they are bad. They fail in week one.
-
-Here is how a rollout usually goes. The tool gets integrated into the LMS. The module leaders get trained so they can train everyone else. Then every instructor is asked to spend an hour getting used to it, and a couple more fitting it into how they already work.
-
-For some of them that is a way of working they have had for ten years. And in technical training it is often someone who came out of the trade to teach, not a career academic. Configuration screens are not what they signed up for.
-
-So the tool sits there. Part of the team uses it properly, part of it never gets past the setup screen. A year later someone puts the cost next to the usage and it gets swapped for something else. Not because it did not work. Because it never got started.
-
-The thing I did not understand until recently is that half-adoption is worse than none. The people who only half use a tool end up with more work than they had before, not less. They are carrying the old way and the new one at the same time.
-
-So the step that decides everything is the first one. Setting the thing up.
-
-We took that step off the instructor. One button, and the course pulls in what is already in the LMS, the slides, the brief, the rubric, the handbook, and builds itself from there. They open it and it is ready.
-
-If you have rolled something out across a faculty, what got people through that first session?
-
-**Format:** image (de Brightspace/Eduface sync-visual, door Dante gecorrigeerd 2026-09-20).
-**Doel:** buying-criterion zetten (setup-gemak als adoptie-criterium).
-
-#EdTech #TechnicalEducation #Eduface
-
----
-
-## Wat ik bewust NIET gebruikt heb
-
-- **Alle externe bronnen en cijfers uit de eerste versie** (SEC-filings, NSC-enrollment, BLS-lonen,
-  Educational Researcher, Advance CTE, Tyton Partners). Ze maakten de posts herleidbaar en lazen
-  als een analistenrapport in plaats van als Dante. Staan in het onderzoek als je ze ooit wilt.
-- **"Instructeurs verdienen meer in het werkveld."** Klopt niet op BLS-medianen mei 2025:
-  postsecondary CTE-docent $72.060 tegenover lassers $53.750, elektriciens $63.190,
-  dieselmonteurs $61.770, HVAC $68.120. Post 1 zegt nu "they have somewhere else to go",
-  wat wel klopt en niet op een mediaan leunt.
-- **Elk detail dat de instelling herleidbaar maakt:** land, aantal campussen, groeidoelen,
-  omzetdoelen, aantal instructeurs, de naam van de strategie.
+"Someone who is good enough to teach a trade is usually good enough to earn more doing it" is
+bewust zo geformuleerd. Op BLS-medianen mei 2025 klopt de platte versie niet (postsecondary
+CTE-docent $72.060 tegenover lassers $53.750, elektriciens $63.190, dieselmonteurs $61.770,
+HVAC $68.120). In de bovenste staart klopt het wel, en dat is precies de groep waar het over gaat.
