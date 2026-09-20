@@ -4,7 +4,7 @@
 >
 > **Niets invullen wat je kunt navragen.** Alles wat open is staat in `Context/open-vragen.md`.
 
-_Laatst bijgewerkt: 20-09-2026, na twee rondes antwoorden van Dante zelf._
+_Laatst bijgewerkt: 20-09-2026, na drie rondes antwoorden van Dante zelf._
 
 ## Basis
 
@@ -50,6 +50,12 @@ Consistent en wat hem betreft niet onderhandelbaar. Dat di en do om 17:00 begint
 | Eiwit | 180 gram |
 | Vet | 80 gram |
 | Koolhydraten | 340 gram |
+
+**Op di en do eet hij na de gym.** Die sessie loopt van 17:00 tot 19:00 en daarna volgt een grote avondmaaltijd, geen licht diner en geen pre-gym feed vooraf (bevestigd 20-09-2026).
+
+**Het weekmenu en het boodschappenlijstje maakt hij op zaterdag**, voor de boodschappen van 15:00. Niet op zondag, dat is een dag te laat (20-09-2026).
+
+**Waar eten voor dient:** genoeg eten om het fysiek op te bouwen dat hij wil. Niet goedkoper, niet sneller, niet minder herhaling. Die vraag heeft hij expliciet weggewuifd.
 
 **Lust hij niet:** feta, walnoten, chiliflakes, chipotle, sambal, gember.
 

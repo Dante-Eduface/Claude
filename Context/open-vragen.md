@@ -17,9 +17,6 @@ De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat 
 | # | Vraag | Waarom het uitmaakt | Sinds |
 |---|---|---|---|
 | A5 | **Wordt de leidende maat "geboekte eerste gesprekken per week", vijf stuks?** Uren deep work blijven dan het scorebord, de gesprekken worden de knop waar je op stuurt. | Uren zijn beinvloedbaar maar matig voorspellend: je kunt 28 uur aan het verkeerde werk besteden. Zie `Context/deep-work.md`. | 19-09-2026 |
-| K1 | **Verhuist het weekmenu naar zaterdagochtend, voor de boodschappen van 15:00?** Nu maak ik het op zondag, een dag nadat je al boodschappen hebt gedaan. | Dan koop je op zaterdag precies wat het menu vraagt, in plaats van het menu te buigen naar wat er toevallig in huis is. | 20-09-2026 |
-| K2 | **Op di en do botsen de gym van 17:00 tot 19:00 en de regel klaar met eten om 19:30.** Eet je liever tot 19:45, of wil je een grotere pre-gym feed en een licht diner? | Je bent 19:15 thuis. Acht uur slaap betekent om 21:00 liggen, en laat en groot eten kost slaap. Nu staan er alleen 15-minutendiners op die dagen, dat is mijn aanname. | 20-09-2026 |
-| K3 | **Wat moet het venster koken opleveren?** Minder herhaling, minder tijd, minder geld, of gewoon dat het altijd klaarstaat? | Je noemde koken als een van de vier vensters. Zonder te weten waar het nu knelt bouw ik de verkeerde kant op. | 20-09-2026 |
 | A6 | Verhuist de financiele controle van zaterdag 09:00 naar 11:00? | Nu valt hij in blok 2, terwijl het shallow werk is. De pauze is geen alternatief, die blijft leeg. | 20-09-2026 |
 | A8 | **Ruil je de heenreis om van lezen naar schrijven?** Heen schrijven (frisste uur), terug lezen. Nu lees je beide kanten, acht uur per week input zonder output. | Schrijven is het zwaarste denkwerk dat er is en hoort in je beste uur. Lezen houdt prima stand met een halve batterij. | 20-09-2026 |
 | A9 | Waar landt dat schrijven? Apple Notes, een schrift, of een bestand in deze repo? | In de repo betekent dat ik het kan lezen en je context vanzelf actueel blijft. Een schrift is sneller op een trein. Jouw keuze. | 20-09-2026 |
@@ -48,6 +45,8 @@ Blijft staan zodat zichtbaar is wat er al gevraagd is. Alles hieronder is op 19-
 
 | Vraag | Antwoord | Waar het nu staat |
 |---|---|---|
+| Weekmenu naar zaterdagochtend, voor de boodschappen? | Ja. Menu plus boodschappenlijstje maakt hij zaterdag, en daar gebruikt hij mij voor. | `Context/personal.md` |
+| Op di en do botsen de gym en klaar met eten om 19:30. | Geen botsing. Hij eet **na** de gym, en dat is een grote avondmaaltijd. Geen pre-gym feed. | `Context/personal.md` |
 | Hoe ziet je werkdag eruit sinds je CSM bent? | De functiewissel veranderde niets, alleen de titel op LinkedIn. Een dag gaat mis als hij ongezond begint te eten. Over een slechte week heeft hij nog niet nagedacht. | `Context/me.md` |
 | Wat is Tjarko Kwee's rol? | Sales adviseur en angel investor in Eduface. | `Context/eduface.md` |
 | Wanneer moeten de 20 salesprocessen gestart zijn? | Maandelijks 20, doorlopend, geen einddatum. | `Context/current-priorities.md` |

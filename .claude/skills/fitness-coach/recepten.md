@@ -31,6 +31,10 @@ Het boek is twee keer verlaagd: 3.800 (football) naar 3.100 (augustus), en nu na
 
 De porties in de tabellen hieronder staan nog op de 3.100-stand. Pas bij het samenstellen van een week deze conversie toe. Dante weegt niets af en telt niets: de porties bestaan zodat het plan klopt, niet zodat hij ze controleert.
 
+## Wanneer het menu gemaakt wordt
+
+**Zaterdagochtend, voor de boodschappen van 15:00.** Menu en boodschappenlijstje komen samen. Zondag 16:00 is alleen koken, niet plannen.
+
 ## Vaste beperkingen
 
 **Lust hij niet: feta, walnoten, chiliflakes, chipotle, sambal, gember.** Gember is op 20-09-2026 toegevoegd, die stond hier nog niet in terwijl het soja-gembergerecht er wel op draaide. Soja-gember is vervangen door **soja-knoflook-lente-ui**.
@@ -44,19 +48,19 @@ Wake 05:00, trein 05:53 op ma t/m do, om 07:05 op kantoor. Acht uur slaap beteke
 
 - Ontbijt en lunch zijn de grote maaltijden.
 - Diner is normaal, niet de grootste maaltijd van de dag.
-- **Klaar met eten om 19:30**, behalve op di en do, zie hieronder.
+- **Klaar met eten om 19:30** op ma, wo en vr. Op di en do eet hij na de gym, rond 19:30 tot 20:00.
 
 ### De vier trainingsdagen
 
 | Dag | Sessie | Tijd | Wat dat voor eten betekent |
 |---|---|---|---|
-| Di | Lower A | 17:00 tot 19:00 | Trein van 16:05, dus de pre-gym feed gaat **rond 16:10 mee in de trein**, niet op kantoor. Diner daarna moet in 15 minuten klaar zijn. |
+| Di | Lower A | 17:00 tot 19:00 | **Hij eet na de gym, en dat is de grote maaltijd van de dag.** Geen pre-gym feed. Thuis rond 19:15, dus het diner mag stevig zijn maar moet wel snel op tafel staan. |
 | Do | Upper A | 17:00 tot 19:00 | Zelfde als dinsdag. |
 | Za | Lower B | 13:00 tot 15:00 | Normale maaltijd 2 uur ervoor, geen aparte pre-feed nodig. |
 | Zo | Upper B | 13:00 tot 15:00 | Geen field day meer. Zondag is een normale trainingsdag, niet de grootste dag van de week. |
 | Ma, wo, vr | Rust | | Zelfde eiwit, zelfde calorieen. Niet minder eten op een rustdag. |
 
-**Het knelpunt op di en do:** gym tot 19:00, thuis rond 19:15, en de regel zegt klaar met eten om 19:30. Dat past alleen als het diner een opwarmklus van 10 tot 15 minuten is met alle componenten al klaar. Daarom staan op di en do alleen snelle diners (gebakken rijst, biefstuk met voorgegaarde krieltjes, iets uit de pan). Staat als K2 open bij Dante of hij liever 20 minuten later eet.
+**Di en do, opgehelderd op 20-09-2026:** er is geen knelpunt. Hij eet na de gym en dat is bewust de grote avondmaaltijd. De regel klaar met eten om 19:30 geldt op ma, wo en vr. Op di en do is het rond 19:30 tot 20:00, en dat is de bedoeling.
 
 ## Het herhalingsprobleem
 
@@ -122,7 +126,7 @@ Tikka en curry: **mild houden**, kruiden op garam masala, kurkuma, komijn en pap
 | S4 | Skyr met granola en blauwe bessen | skyr 300 g, granola 40 g, bessen 100 g | ~35 g |
 | S5 | Handje amandelen of cashews | 25 g | ~6 g |
 
-**Kwark maar 1x per dag.** Wissel de andere dagen tussen S2 en S4. S3 is de pre-gym feed op di en do, die gaat mee in de trein van 16:05.
+**Kwark maar 1x per dag.** Wissel de andere dagen tussen S2 en S4. S3 is een gewone snack. Er is geen pre-gym feed: op di en do eet hij na de gym.
 
 ## Zondag koken, 16:00 tot 18:30
 
@@ -153,4 +157,4 @@ Twee tot twee en een half uur, en de zondagavondmaaltijd komt uit dezelfde sessi
 **Elke avond, 2 minuten**
 - Ontbijt van morgen klaarzetten
 - Vriezerbakje naar de koelkast voor overmorgen
-- Tas klaar voor Utrecht: lunch, snack, en op di en do de rijstwafels voor de trein van 16:05
+- Tas klaar voor Utrecht: lunch en snack
