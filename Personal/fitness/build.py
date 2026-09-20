@@ -24,7 +24,7 @@ def esc(x):
 def render(d):
     rows = ""
     for day in d["days"]:
-        pre = f'<div class="pre">17:00, voor de gym &middot; {esc(day["pre"])}</div>' if day.get("pre") else ""
+        pre = f'<div class="pre">16:10, in de trein voor de gym &middot; {esc(day["pre"])}</div>' if day.get("pre") else ""
         rest = "rest" if day["training"].lower().startswith("rust") else ""
         rows += f"""
       <tr>
