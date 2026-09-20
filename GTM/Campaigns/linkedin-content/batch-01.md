@@ -18,21 +18,12 @@ geen land, geen campus-aantallen, geen omzet- of groeidoelen, geen strategienaam
 
 ## Post 1 · Dante · P1 Staat en toekomst van toetsen · EN
 
+_Ingekort door Dante 2026-09-20. Goal-alinea, instroom-alinea, vervanging en
+studentuitval zijn eruit. Wat overblijft is haakje, betaling/werkdruk, kantelpunt, uren-argument._
+
 More students is a growth plan. More instructors is a hiring problem with a lot more to it than I first thought.
 
-I spoke with a training provider recently that wants to open new campuses every year for the next few years, and get their full catalogue of programmes running at every one of them.
-
-The students are there for it. More people are going into the skilled trades than a few years ago. Welding, diesel, automotive, HVAC.
-
-The instructors are the part nobody has solved.
-
-Start with pay. Someone who is good enough to teach a trade is usually good enough to earn more doing it. So the school is asking that person to take less money, work to a fixed hourly schedule, and then spend the evening grading. That is a harder sell than any job advert makes it look.
-
-Then there is replacement. When one of them leaves you cannot hire out of an academic pool. They walk out with fifteen years of workshop experience, and that was the actual product.
-
-And then the one I had not seen coming. In a trade programme the instructor is not giving a lecture that somebody else could give. They are the one standing next to a student who is about to give up, showing them the thing that makes it click. Take that away and students do not finish. And students finishing is the number the whole school is measured on.
-
-So you have growth on one side, and the people who make the growth possible walking out the other.
+Instructors can earn more in the field than they can teaching it, and carry a lighter workload doing it. So the school is asking that person to take less money, work to a fixed hourly schedule, and then spend the evening grading.
 
 Challenging, but not impossible.
 
@@ -40,20 +31,29 @@ Instructor hours are one of the biggest costs a campus actually controls. Most p
 
 Grading is not why any of them took the job. If that part of the week gets shorter, the instructor gets back the part they came for, which is standing next to the student who is stuck.
 
-That is the same hour working twice. One that keeps the instructor, and one that keeps the student.
+Schools treat keeping instructors and keeping students as two different problems. They are the same problem, and it is sitting in the grading pile.
 
 **Format:** single text, geen link.
-**Doel:** Discovery-pijn (instructeurs-attritie als rem op groei, completion als de metriek die telt).
-**Haakje:** gekozen door Dante 2026-09-20. De belofte "meer haken en ogen dan ik dacht" wordt in
-de body waargemaakt met drie benoemde complicaties (betaling, vervanging, studentuitval).
+**Doel:** Discovery-pijn (instructeurs-attritie en studentuitval als hetzelfde probleem).
 
 #SkilledTrades #TechnicalEducation #Eduface
+
+### Alternatieve slotregels
+- That one hour keeps two people. The instructor who wanted to teach, and the student who was ready to quit.
+- You are not buying back grading time. You are buying back the reason they took the job, and the student who would have left without them.
+- One hour off the grading pile. An instructor who stays, and a student who finishes.
+- Move that hour and you stop losing people at both ends.
+
+_Vervangen: "That is the same hour working twice. One that keeps the instructor, and one that
+keeps the student." Te vaag, de lezer moest zelf uitrekenen wat het oplevert._
 
 ---
 
 ## Aandachtspunt
 
-"Someone who is good enough to teach a trade is usually good enough to earn more doing it" is
-bewust zo geformuleerd. Op BLS-medianen mei 2025 klopt de platte versie niet (postsecondary
+Dante heeft 2026-09-20 gekozen voor de platte formulering: "Instructors can earn more in the
+field than they can teaching it." Op BLS-medianen mei 2025 klopt die niet (postsecondary
 CTE-docent $72.060 tegenover lassers $53.750, elektriciens $63.190, dieselmonteurs $61.770,
-HVAC $68.120). In de bovenste staart klopt het wel, en dat is precies de groep waar het over gaat.
+HVAC $68.120). In de bovenste staart klopt het wel, en dat is de groep waar het over gaat.
+De gehedgede variant blijft beschikbaar: "Someone who is good enough to teach a trade is usually
+good enough to earn more doing it." Het werkdruk-deel van de zin klopt hoe dan ook.
