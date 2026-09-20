@@ -24,7 +24,8 @@ De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat 
 | W4 | Wanneer komt de NPS-meting op Enterprise er? | Tot die er is staat het doel in `current-priorities.md` als niet stuurbaar. Dante weet het nog niet. | 19-09-2026 |
 | W5 | Na twee weken deep work: welk weektarget zetten we vast? | Het schema staat op 28 uur. De eerste twee weken zijn een nulmeting. | Vanaf 03-10-2026 |
 | P11 | Wordt de vaardigheid van dit jaar "een bericht schrijven waar iemand op reageert"? | Dat volgt uit A5: als de maat geboekte gesprekken is, is dat de vaardigheid die hem bepaalt. | 19-09-2026 |
-| G15 | De actuele standen van je potjes. Je levert hier een nieuw bestand voor. | `Context/financien.md` noemt bewust geen bedragen tot dat er is. | 19-09-2026 |
+| G16 | **Wat kost reizen je echt per maand?** Je zei 145 aan spitsritten naast Dal Vrij. De afschriften zeggen alleen al aan NS 387 in juli en 414 in augustus, en inclusief overig vervoer kwam de hele post op 665 tot 898 per maand. | Dit is de grootste post na leefgeld en hij stond in de app op 140. Het verschil is ruwweg 660 per maand, en dat is precies het gat in je plan. | 20-09-2026 |
+| G17 | **Waar is rekening 142509299 (Zorgverzekering) voor?** Het parkeren van de zorgtoeslag tot de premie afgeschreven wordt, of een buffer voor een heel jaar premie? | De premie van 129,45 wordt nu rechtstreeks van je betaalrekening geïncasseerd, dus het potje bouwt niets op. Bij parkeren is het doel ongeveer één maandpremie, niet de 1.548 die er nu staat. | 20-09-2026 |
 
 ## Later, geen vraag maar een richting
 
@@ -75,6 +76,7 @@ Blijft staan zodat zichtbaar is wat er al gevraagd is. Alles hieronder is op 19-
 | Klopt het dat je di en do eerder stopt met werken voor de gym? | Ja, bewust. | `Context/personal.md` |
 | Gewichtdoel 92 tot 96 kg? | Geen gewichtdoel. Hij wil gewoon groter worden. | `Context/personal.md` |
 | Waarom staat Jeroen's naam op je voedingsdocument? | Kladartefact, ze werken in hetzelfde document. De cijfers zijn van Dante. | `Context/personal.md` |
+| G15, de actuele standen van je potjes. | Uit de ABN-export van 20-09-2026: betaalrekening 31,53, Savings 0,11, Curaçao 122,10, Zorgverzekering 53,00, Trade Republic leeg. Samen 206,74, min de 950 aan je vader is een vermogen van min 743. | `Context/financien.md` |
 | Trainingsbestanden in de repo? | Ja. | `Personal/fitness/schema/` |
 | Moet er een trainingsapp gebouwd worden? | Nee. | `Context/personal.md` |
 | Twee tegenstrijdige inkomens (920 en 2.118)? | Achterhaald. Nu ongeveer 2.000 netto. | `Context/financien.md` |
