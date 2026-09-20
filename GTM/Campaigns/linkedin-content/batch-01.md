@@ -18,17 +18,19 @@ geen land, geen campus-aantallen, geen omzet- of groeidoelen, geen strategienaam
 
 ## Post 1 · Dante · P1 Staat en toekomst van toetsen · EN
 
-A training provider I spoke with recently wants to open new campuses every year for the next few years, and get their full catalogue of programmes running at every one of them.
+More students is a growth plan. More instructors is a hiring problem with a lot more to it than I first thought.
+
+I spoke with a training provider recently that wants to open new campuses every year for the next few years, and get their full catalogue of programmes running at every one of them.
 
 The students are there for it. More people are going into the skilled trades than a few years ago. Welding, diesel, automotive, HVAC.
 
 The instructors are the part nobody has solved.
 
-Someone who is good enough to teach a trade is usually good enough to earn more doing it. So the school is asking that person to take less money, work to a fixed hourly schedule, and then spend the evening grading. That is a harder sell than any job advert makes it look.
+Start with pay. Someone who is good enough to teach a trade is usually good enough to earn more doing it. So the school is asking that person to take less money, work to a fixed hourly schedule, and then spend the evening grading. That is a harder sell than any job advert makes it look.
 
-And when they leave, you cannot replace them out of an academic hiring pool. They walk out with fifteen years of workshop experience, and that was the actual product.
+Then there is replacement. When one of them leaves you cannot hire out of an academic pool. They walk out with fifteen years of workshop experience, and that was the actual product.
 
-This is the part I did not appreciate until recently. In a trade programme the instructor is not giving a lecture that somebody else could give. They are the one standing next to a student who is about to give up, showing them the thing that makes it click. Take that away and students do not finish. And students finishing is the number the whole school is measured on.
+And then the one I had not seen coming. In a trade programme the instructor is not giving a lecture that somebody else could give. They are the one standing next to a student who is about to give up, showing them the thing that makes it click. Take that away and students do not finish. And students finishing is the number the whole school is measured on.
 
 So you have growth on one side, and the people who make the growth possible walking out the other.
 
@@ -42,6 +44,8 @@ That is the same hour working twice. One that keeps the instructor, and one that
 
 **Format:** single text, geen link.
 **Doel:** Discovery-pijn (instructeurs-attritie als rem op groei, completion als de metriek die telt).
+**Haakje:** gekozen door Dante 2026-09-20. De belofte "meer haken en ogen dan ik dacht" wordt in
+de body waargemaakt met drie benoemde complicaties (betaling, vervanging, studentuitval).
 
 #SkilledTrades #TechnicalEducation #Eduface
 
