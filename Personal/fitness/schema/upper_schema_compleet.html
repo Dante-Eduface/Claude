@@ -1,0 +1,244 @@
+<style>
+:root{
+  --ink:#1C1410;--mut:#8A7A6D;--line:#E2D9D0;
+  --card:#FFFAF6;--bg:#F3EDE6;--row:#F8F3EE;
+  --green:#2B6B2B;--red:#B52E2E;--amber:#A86A20;
+  --gfill:rgba(43,107,43,.1);--rfill:rgba(181,46,46,.1);
+  --mono:'SF Mono',Menlo,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font:14px/1.6 system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--ink);padding:24px}
+h1{font-size:20px;font-weight:700;letter-spacing:-.02em;margin-bottom:4px}
+.sub{font-size:12px;color:var(--mut);margin-bottom:20px}
+.tabs{display:flex;gap:4px;margin-bottom:16px}
+.tab{padding:6px 20px;border:1px solid var(--line);border-radius:3px;font-size:12px;cursor:pointer;background:var(--card);color:var(--mut);font-weight:500}
+.tab.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+.tab-content{display:none}
+.tab-content.show{display:block}
+.day-header{background:var(--card);border:1px solid var(--line);border-radius:3px;padding:12px 16px;margin-bottom:12px}
+.day-title{font-size:17px;font-weight:700;margin-bottom:3px}
+.day-focus{font-size:11px;color:var(--mut)}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:3px;overflow:hidden}
+th{text-align:left;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);font-weight:700;padding:9px 14px;border-bottom:1px solid var(--line);background:var(--row)}
+td{padding:10px 14px;border-bottom:1px solid #F0EBE5;vertical-align:top;font-size:13px}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:var(--row)}
+td.num{font-family:var(--mono);color:var(--mut);text-align:center;width:26px;font-size:11px}
+td.sets{font-family:var(--mono);font-weight:700;text-align:center;width:100px;color:var(--green)}
+td.sets.mev{color:var(--mut)}
+.ex{font-weight:600;margin-bottom:2px}
+.why{font-size:11px;color:var(--mut);line-height:1.5}
+.muscle{display:inline-block;font-size:10px;border-radius:2px;padding:1px 6px;border:1px solid;margin-right:3px;white-space:nowrap}
+.muscle.mav{background:var(--gfill);border-color:rgba(43,107,43,.3);color:var(--green);font-weight:600}
+.muscle.mev{background:#F5F0EC;border-color:#C8BDB6;color:var(--mut)}
+.drop-badge{display:inline-block;font-size:9px;background:rgba(168,106,32,.12);border:1px solid rgba(168,106,32,.3);border-radius:2px;padding:1px 5px;color:var(--amber);font-weight:700;margin-left:4px;vertical-align:middle}
+.note{margin-top:12px;background:var(--row);border:1px solid var(--line);border-radius:3px;padding:10px 14px;font-size:12px;color:var(--mut);line-height:1.6}
+.note strong{color:var(--ink)}
+</style>
+
+<h1>Upper Schema — Compleet</h1>
+<p class="sub">Upper A (huidige schema) · Upper B (evidencebased redesign)</p>
+
+<div class="tabs">
+  <button class="tab active" onclick="show('a',this)">Upper A</button>
+  <button class="tab" onclick="show('b',this)">Upper B</button>
+</div>
+
+<!-- UPPER A -->
+<div class="tab-content show" id="tab-a">
+  <div class="day-header">
+    <div class="day-title">Upper A</div>
+    <div class="day-focus">Platte chest · Pull-up · Schoudervolume · Proximale biceps · Triceps long head</div>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th style="width:26px">#</th>
+        <th>Oefening</th>
+        <th style="width:100px;text-align:center">Sets × Reps</th>
+        <th>Spier</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="num">1</td>
+        <td>
+          <div class="ex">Bench Press (Barbell)</div>
+          <div class="why">Zwaarste compound vers gedaan. Traint midden/onderkant borst.</div>
+        </td>
+        <td class="sets mev">2 × 6–8</td>
+        <td><span class="muscle mev">Chest</span></td>
+      </tr>
+      <tr>
+        <td class="num">2</td>
+        <td>
+          <div class="ex">Pull Up (Weighted)</div>
+          <div class="why">Verticale pull voor lat breedte — de V-taper spier. +15–20 kg.</div>
+        </td>
+        <td class="sets">3 × 4–6</td>
+        <td><span class="muscle mav">Lats</span></td>
+      </tr>
+      <tr>
+        <td class="num">3</td>
+        <td>
+          <div class="ex">Lateral Raise (Dumbbell)<span class="drop-badge">DROPSET</span></div>
+          <div class="why">Primaire schouderbreedteoefening. Dropset: 15 → −30% → 12 → −30% → 10 reps zonder rust.</div>
+        </td>
+        <td class="sets">3× drop</td>
+        <td><span class="muscle mav">Schouders</span></td>
+      </tr>
+      <tr>
+        <td class="num">4</td>
+        <td>
+          <div class="ex">Incline Row (Dumbbell)</div>
+          <div class="why">Horizontale pull voor mid-rug dikte. Borst op bank = geen momentum.</div>
+        </td>
+        <td class="sets mev">2 × 10–12</td>
+        <td><span class="muscle mev">Mid-rug</span></td>
+      </tr>
+      <tr>
+        <td class="num">5</td>
+        <td>
+          <div class="ex">Triceps Extension (Cable) — overhead</div>
+          <div class="why">Arm omhoog = triceps maximaal uitgerekt. +40% meer groei vs pushdown (Maeo 2023). Meest effectieve tricepsoefening.</div>
+        </td>
+        <td class="sets mev">2 × 10–12</td>
+        <td><span class="muscle mev">Triceps</span></td>
+      </tr>
+      <tr>
+        <td class="num">6</td>
+        <td>
+          <div class="ex">Incline Curl (Dumbbell)</div>
+          <div class="why">Schouder achterover = biceps uitgerekt bovenaan = bovenstuk biceps groeit meer (Kassiano 2025).</div>
+        </td>
+        <td class="sets mev">2 × 10–12</td>
+        <td><span class="muscle mev">Biceps</span></td>
+      </tr>
+      <tr>
+        <td class="num">7</td>
+        <td>
+          <div class="ex">Reverse Fly (Cable)</div>
+          <div class="why">Achterste schouder isolatie. Aan het einde — kleine spier, weinig vermoeidheid.</div>
+        </td>
+        <td class="sets mev">2 × 12–15</td>
+        <td><span class="muscle mev">Achterste delt</span></td>
+      </tr>
+      <tr>
+        <td class="num">8</td>
+        <td>
+          <div class="ex">Ab Wheel</div>
+          <div class="why">Hoogste activatie bovenste buikspier. Anti-extensie beweging zonder de taille te verbreden.</div>
+        </td>
+        <td class="sets mev">2 × max</td>
+        <td><span class="muscle mev">Core boven</span></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="note">
+    <strong>Volgorde logica:</strong> Bench vers (zwaarste compound) → Pull-up vers (prioriteit lats) → Lateral raise (schouder MAV) → Incline row (rug) → Triceps overhead (lang en technisch) → Incline curl → Reverse fly → Ab wheel
+  </div>
+</div>
+
+<!-- UPPER B -->
+<div class="tab-content" id="tab-b">
+  <div class="day-header">
+    <div class="day-title">Upper B</div>
+    <div class="day-focus">Incline chest · Lat pulldown · Schoudervolume · Distale biceps · Onderste buik</div>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th style="width:26px">#</th>
+        <th>Oefening</th>
+        <th style="width:100px;text-align:center">Sets × Reps</th>
+        <th>Spier</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="num">1</td>
+        <td>
+          <div class="ex">Incline Dumbbell Press (30°)</div>
+          <div class="why">Bovenkant borst — het gat dat Upper A laat. 30° is optimaal: steiler = schouder neemt over. MRI studie: +62% bovenste borst vs +32% bij flat (Chaves 2020).</div>
+        </td>
+        <td class="sets mev">2–3 × 8–10</td>
+        <td><span class="muscle mev">Chest boven</span></td>
+      </tr>
+      <tr>
+        <td class="num">2</td>
+        <td>
+          <div class="ex">Lat Pulldown (Cable)</div>
+          <div class="why">Tweede verticale pull voor lat breedte. Stabiel en precies te sturen. Breedte grip ~1.5× schouderbreedte.</div>
+        </td>
+        <td class="sets">3 × 8–10</td>
+        <td><span class="muscle mav">Lats</span></td>
+      </tr>
+      <tr>
+        <td class="num">3</td>
+        <td>
+          <div class="ex">Lateral Raise (Cable)<span class="drop-badge">DROPSET</span></div>
+          <div class="why">Tweede wekelijkse schouderstimulus. Kabel i.p.v. dumbbell voor variatie in spanning. Identieke groei (Larsen 2025).</div>
+        </td>
+        <td class="sets">3× drop</td>
+        <td><span class="muscle mav">Schouders</span></td>
+      </tr>
+      <tr>
+        <td class="num">4</td>
+        <td>
+          <div class="ex">Chest-Supported Row / Seated Cable Row</div>
+          <div class="why">Tweede horizontale pull voor rug dikte. Borst op bank = onderrug doet niks, alleen rugspieren trekken. Betere isolatie dan Pendlay row halverwege de training.</div>
+        </td>
+        <td class="sets mev">2–3 × 10–12</td>
+        <td><span class="muscle mev">Mid-rug</span></td>
+      </tr>
+      <tr>
+        <td class="num">5</td>
+        <td>
+          <div class="ex">Preacher Curl</div>
+          <div class="why">Elleboog op kussen naar voren = onderstuk biceps en brachialis groeit. Direct complement op incline curl van Upper A (Kassiano 2025: twee verschillende plekken, twee verschillende oefeningen).</div>
+        </td>
+        <td class="sets mev">2 × 10–12</td>
+        <td><span class="muscle mev">Biceps</span></td>
+      </tr>
+      <tr>
+        <td class="num">6</td>
+        <td>
+          <div class="ex">Triceps Pushdown (Cable)</div>
+          <div class="why">Arm langs lichaam — andere hoek dan overhead extension van Upper A. Tweede wekelijkse tricepsstimulus. Alle drie de koppen op kortere positie.</div>
+        </td>
+        <td class="sets mev">2 × 12–15</td>
+        <td><span class="muscle mev">Triceps</span></td>
+      </tr>
+      <tr>
+        <td class="num">7</td>
+        <td>
+          <div class="ex">Rear Delt Fly (Machine of Dumbbell)</div>
+          <div class="why">Tweede achterste schouder stimulus. Reverse pec-deck of voorovergebogen dumbbell fly. Kleine spier, snel herstel, goed voor twee keer per week.</div>
+        </td>
+        <td class="sets mev">2 × 12–15</td>
+        <td><span class="muscle mev">Achterste delt</span></td>
+      </tr>
+      <tr>
+        <td class="num">8</td>
+        <td>
+          <div class="ex">Hanging Leg Raise</div>
+          <div class="why">Onderste buik — complement op ab wheel van Upper A. Bekken achterover kantelen bovenaan voor maximale buikactivatie. Niet alleen benen gooien.</div>
+        </td>
+        <td class="sets mev">2 × max</td>
+        <td><span class="muscle mev">Core onder</span></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="note">
+    <strong>Volgorde logica:</strong> Incline press vers (chest prioriteit) → Lat pulldown vers (lats MAV) → Lateral raise (schouder MAV) → CS Row (rug) → Preacher curl → Pushdown → Rear delt fly → Hanging leg raise
+  </div>
+</div>
+
+<script>
+function show(id,btn){
+  document.querySelectorAll('.tab-content').forEach(e=>e.classList.remove('show'));
+  document.querySelectorAll('.tab').forEach(e=>e.classList.remove('active'));
+  document.getElementById('tab-'+id).classList.add('show');
+  btn.classList.add('active');
+}
+</script>

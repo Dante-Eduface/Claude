@@ -1,0 +1,176 @@
+<style>
+:root{
+  --ink:#1C1410;--mut:#8A7A6D;--line:#E2D9D0;
+  --card:#FFFAF6;--bg:#F3EDE6;--row:#F8F3EE;
+  --green:#2B6B2B;--red:#B52E2E;--amber:#A86A20;
+  --gfill:rgba(43,107,43,.1);
+  --mono:'SF Mono',Menlo,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font:14px/1.6 system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--ink);padding:24px;max-width:720px}
+
+h1{font-size:20px;font-weight:700;margin-bottom:4px;letter-spacing:-.02em}
+.sub{font-size:12px;color:var(--mut);margin-bottom:24px}
+
+.section{margin-bottom:28px}
+.section-title{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--mut);margin-bottom:12px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+
+.card{background:var(--card);border:1px solid var(--line);border-radius:3px;padding:14px 16px;margin-bottom:10px}
+.card.highlight{border-left:3px solid var(--green)}
+.card.neutral{border-left:3px solid #C8BDB6}
+
+.muscle-name{font-size:15px;font-weight:700;margin-bottom:3px}
+.muscle-where{font-size:11px;color:var(--amber);font-weight:600;margin-bottom:8px}
+.muscle-body{font-size:13px;line-height:1.7;color:var(--ink)}
+.muscle-body p{margin-bottom:8px}
+.muscle-body p:last-child{margin-bottom:0}
+
+.stat{display:inline-block;font-family:var(--mono);font-size:13px;font-weight:700;background:var(--gfill);border:1px solid rgba(43,107,43,.3);border-radius:3px;padding:1px 7px;color:var(--green);margin:0 2px}
+.stat.red{background:var(--rfill,rgba(181,46,46,.1));border-color:rgba(181,46,46,.3);color:var(--red)}
+.stat.amber{background:rgba(168,106,32,.1);border-color:rgba(168,106,32,.3);color:var(--amber)}
+
+.source{font-size:10px;color:var(--mut);font-style:italic;margin-top:8px;padding-top:8px;border-top:1px solid var(--line)}
+
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0}
+.vs-box{border-radius:3px;padding:10px 12px;font-size:12px;line-height:1.5}
+.vs-box.win{background:var(--gfill);border:1px solid rgba(43,107,43,.3)}
+.vs-box.lose{background:#F5F0EC;border:1px solid #C8BDB6}
+.vs-label{font-size:9px;text-transform:uppercase;letter-spacing:.08em;font-weight:700;margin-bottom:4px}
+.vs-box.win .vs-label{color:var(--green)}
+.vs-box.lose .vs-label{color:var(--mut)}
+.vs-name{font-weight:700;margin-bottom:3px;font-size:13px}
+</style>
+
+<h1>Het onderzoek — in gewone taal</h1>
+<p class="sub">Wat het bewijs zegt over beentraining, zonder vaktermen</p>
+
+<!-- QUADS -->
+<div class="section">
+  <div class="section-title">Je bovenbenen (quads)</div>
+
+  <div class="card highlight">
+    <div class="muscle-name">Je quad bestaat uit 4 aparte spieren</div>
+    <div class="muscle-where">Bovenkant, voorkant van je been</div>
+    <div class="muscle-body">
+      <p>Je quad is geen één spier — het zijn er vier die naast elkaar zitten. Drie ervan zitten alleen vast aan je knie. Eentje loopt van je heup helemaal naar je knie. Dat is het verschil dat alles bepaalt voor je training.</p>
+      <p><strong>De buitenkant (sweep)</strong> — die bult die aan de zijkant van je been uitsteekt. Dit is de spier die het meeste bijdraagt aan het brede, atletische beensilhouet.</p>
+      <p><strong>De traan</strong> — de druppelvorm net boven je knie aan de binnenkant. Dit is de spier die gevorderde atleten hebben en beginners niet. Diep squatten traint hem het meest.</p>
+      <p><strong>De middenste quad</strong> — loopt recht over het midden van je bovenbeen van je heup naar je knie. <em>Dit is de probleemspier.</em> Hij overbrugt twee gewrichten (heup én knie), waardoor hij bij squat en leg press bijna niets hoeft te doen — je heup en knie bewegen allebei, maar in tegengestelde richting, waardoor de spier op dezelfde lengte blijft.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="muscle-name">Squat groeit je quad — maar mist één spier bijna volledig</div>
+    <div class="muscle-body">
+      <p>Onderzoek met MRI-scans (voor en na trainingsprogramma's) toont consistent dat squats en leg press de drie buitenste quads goed ontwikkelen, maar de middelste quad nauwelijks raakt.</p>
+      <p>Eén studie vergeleek leg press vs leg extension over 12 weken. De middenste quad groeide <span class="stat">9%</span> met leg extension, maar slechts <span class="stat amber">4.8%</span> met leg press. Dat lijkt klein, maar dit is het verschil tussen een volledige quad en eentje met een zichtbaar 'gat' in het midden.</p>
+      <p><strong>Wat dit betekent voor jou:</strong> Als je alleen squat, heb je een blinde vlek. Je hebt directe leg extensions nodig naast je compounds. Niet optioneel, wel verplicht voor een volledige quad.</p>
+    </div>
+    <div class="source">Kassiano JSCR · Maeo 2018 · Kubo 2019 · Fonseca 2014</div>
+  </div>
+
+  <div class="card">
+    <div class="muscle-name">Hoe diep moet je squatten?</div>
+    <div class="muscle-body">
+      <p>Een studie vergeleek diep squatten (tot de grond) met kwart squats. MRI na 12 weken: diep squatten groeide de quad op <span class="stat">alle zes</span> gemeten punten. Kwart squats groeiden de quad op <span class="stat amber">twee van de zes</span>.</p>
+      <p>Diep squatten groeide ook de kont <span class="stat">6.7%</span> extra vs <span class="stat amber">2.2%</span> bij halve squat.</p>
+      <p><strong>Conclusie:</strong> Parallel of dieper. Kwart squats zijn voor krachtsport, niet voor spieropbouw.</p>
+    </div>
+    <div class="source">Bloomquist 2013 · Kubo 2019</div>
+  </div>
+</div>
+
+<!-- HAMSTRINGS -->
+<div class="section">
+  <div class="section-title">Je achterkant bovenbeen (hamstrings)</div>
+
+  <div class="card highlight">
+    <div class="muscle-name">Seated leg curl vs lying leg curl — gigantisch verschil</div>
+    <div class="muscle-where">Achterkant van je bovenbeen</div>
+    <div class="muscle-body">
+      <p>Je hamstrings lopen van je kont (heup) naar je knie. Dit is een spier die twee gewrichten overbrugt — net als die middelste quad, maar andersom.</p>
+      <p>Als je ligt tijdens een leg curl, is je heup gestrekt. De hamstrings zijn dan eigenlijk al iets 'ingekort' aan de bovenkant. Ze werken, maar niet optimaal.</p>
+      <p>Als je zit tijdens een leg curl, is je heup gebogen. Dit rekt de hamstrings aan de bovenkant op terwijl ze tegelijk proberen te werken aan de onderkant. Meer spanning = meer groei.</p>
+    </div>
+    <div class="vs">
+      <div class="vs-box win">
+        <div class="vs-label">Winnaar</div>
+        <div class="vs-name">Seated leg curl</div>
+        Gehele hamstring: <strong>+14%</strong><br>
+        Buitenste hamstring: <strong>+14.4%</strong><br>
+        Binnenste hamstring: <strong>+23.6%</strong>
+      </div>
+      <div class="vs-box lose">
+        <div class="vs-label">Verliezer</div>
+        <div class="vs-name">Lying leg curl</div>
+        Gehele hamstring: +9%<br>
+        Buitenste hamstring: +6.5%<br>
+        Binnenste hamstring: +19.3%
+      </div>
+    </div>
+    <div class="muscle-body">
+      <p><strong>Wat dit betekent:</strong> Vervang je lying leg curl door seated. Dit is de grootste directe upgrade die de meeste mensen kunnen maken aan hun beentraining.</p>
+    </div>
+    <div class="source">Maeo et al. 2021 · Medicine & Science in Sports & Exercise</div>
+  </div>
+
+  <div class="card">
+    <div class="muscle-name">Waarom je ook RDL nodig hebt naast leg curls</div>
+    <div class="muscle-body">
+      <p>Je hamstrings hebben twee functies: je knie buigen (wat leg curls doen) én je heup strekken (wat je doet bij een RDL of deadlift).</p>
+      <p>Er is één deeltje van je hamstring dat alleen voor de knie werkt — dat groeit alleen met leg curls. De rest van je hamstrings groeit het beste als ze worden gerekt via de heup (RDL) én de knie (leg curl).</p>
+      <p><strong>Conclusie:</strong> RDL + seated leg curl samen dekt je volledige hamstring. Eentje weglaten betekent een deel van je hamstring dat achterblijft.</p>
+    </div>
+  </div>
+</div>
+
+<!-- GLUTES -->
+<div class="section">
+  <div class="section-title">Je kont (glutes)</div>
+
+  <div class="card highlight">
+    <div class="muscle-name">Hip thrust vs squat — wie wint?</div>
+    <div class="muscle-where">Kontspieren — je grootste spiergroep</div>
+    <div class="muscle-body">
+      <p>Lange tijd dachten mensen dat hip thrusts beter zijn voor de kont dan squats, omdat je meer spanning voelt in je kont bij een hip thrust. Maar gevoel ≠ groei.</p>
+      <p>De definitieve studie (Plotkin, Contreras, Henselmans 2023, 34 deelnemers, 9 weken): squatgroep vs hip thrust groep, zelfde volume. Resultaat: <strong>de kont groeide even veel in beide groepen.</strong></p>
+      <p>Maar de squatgroep groeide ook significant meer in de quads en binnenkant dij. De hip thrust deed dat niet.</p>
+      <p><strong>Wat dit betekent:</strong> De hip thrust is geen vervanging van de squat — het is een aanvulling. De squat laadt je kont wanneer die uitgerekt is (onderin), de hip thrust laadt je kont wanneer die samengeknepen is (bovenin). Samen dek je het volledige bereik.</p>
+    </div>
+    <div class="source">Plotkin, Contreras, Henselmans et al. 2023 · Frontiers in Physiology</div>
+  </div>
+</div>
+
+<!-- CALVES -->
+<div class="section">
+  <div class="section-title">Je kuiten (calves)</div>
+
+  <div class="card highlight">
+    <div class="muscle-name">Staand vs zittend kuitoefening — enorm verschil</div>
+    <div class="muscle-where">Kuiten — twee aparte spieren</div>
+    <div class="muscle-body">
+      <p>Je kuit bestaat uit twee spieren die je apart moet trainen:</p>
+      <p><strong>De grote kuitspier</strong> — de twee bollen die je ziet aan de achterkant van je been. Deze spier loopt van boven je knie naar je hiel. Dat betekent: als je knie gebogen is, kan hij niet goed werken (hij is al ingekort aan de bovenkant). Alleen staande/gestrekte knieoefeningen trainen hem effectief.</p>
+      <p><strong>De diepe kuitspier</strong> — zit eronder, loopt alleen van de kuit naar de hiel. Hij heeft niks met je knie te maken. Zittende kuitoefeningen zijn hier juist beter voor.</p>
+    </div>
+    <div class="vs">
+      <div class="vs-box win">
+        <div class="vs-label">Voor de grote kuit (staand)</div>
+        <div class="vs-name">Staande calf raise</div>
+        Grote kuit: <strong>+12.4%</strong><br>
+        Diepe kuit: +2.1%
+      </div>
+      <div class="vs-box lose">
+        <div class="vs-label">Voor de diepe kuit (zittend)</div>
+        <div class="vs-name">Zittende calf raise</div>
+        Grote kuit: slechts +1.7%<br>
+        Diepe kuit: +2.9%
+      </div>
+    </div>
+    <div class="muscle-body">
+      <p><strong>Wat dit betekent:</strong> Als je alleen zittende calf raises doet, groeit je grote kuitspier bijna niet (+1.7%). Altijd een combinatie van staand én zittend. De diepe stretch onderaan (1–3 seconden vasthouden) maakt elke set significant effectiever.</p>
+      <p>Extra bewijs voor volume: een studie vergeleek 6 vs 9 vs 12 sets kuiten per week. 12 sets groeide <span class="stat">14.3%</span> vs <span class="stat amber">8.1%</span> bij 6 sets. Kuiten verdragen en profiteren van meer volume dan de meeste andere spieren.</p>
+    </div>
+    <div class="source">Kinoshita & Maeo 2023 · Frontiers in Physiology · Kassiano et al. 2024</div>
+  </div>
+</div>

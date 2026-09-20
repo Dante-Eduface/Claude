@@ -1,0 +1,221 @@
+<style>
+:root{
+  --ink:#1C1410;--mut:#8A7A6D;--line:#E2D9D0;
+  --card:#FFFAF6;--bg:#F3EDE6;--row:#F8F3EE;
+  --green:#2B6B2B;--red:#B52E2E;--amber:#A86A20;
+  --gfill:rgba(43,107,43,.1);--rfill:rgba(181,46,46,.1);
+  --mono:'SF Mono',Menlo,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font:14px/1.65 system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--ink);padding:24px;max-width:740px}
+h1{font-size:20px;font-weight:700;margin-bottom:4px;letter-spacing:-.02em}
+.sub{font-size:12px;color:var(--mut);margin-bottom:24px}
+.section{margin-bottom:28px}
+.stitle{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--mut);margin-bottom:12px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:3px;padding:14px 16px;margin-bottom:10px}
+.card.good{border-left:3px solid var(--green)}
+.card.bad{border-left:3px solid var(--red)}
+.card.neutral{border-left:3px solid #C8BDB6}
+.ctitle{font-size:15px;font-weight:700;margin-bottom:3px}
+.csub{font-size:11px;color:var(--amber);font-weight:600;margin-bottom:8px}
+.cbody{font-size:13px;line-height:1.75;color:var(--ink)}
+.cbody p{margin-bottom:9px}
+.cbody p:last-child{margin-bottom:0}
+.stat{display:inline-block;font-family:var(--mono);font-size:13px;font-weight:700;background:var(--gfill);border:1px solid rgba(43,107,43,.3);border-radius:3px;padding:1px 7px;color:var(--green);margin:0 2px}
+.stat.red{background:var(--rfill);border-color:rgba(181,46,46,.3);color:var(--red)}
+.stat.amber{background:rgba(168,106,32,.1);border-color:rgba(168,106,32,.3);color:var(--amber)}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0}
+.vbox{border-radius:3px;padding:10px 12px;font-size:12px;line-height:1.6}
+.vbox.win{background:var(--gfill);border:1px solid rgba(43,107,43,.3)}
+.vbox.lose{background:#F5F0EC;border:1px solid #C8BDB6}
+.vbox .vl{font-size:9px;text-transform:uppercase;letter-spacing:.08em;font-weight:700;margin-bottom:4px}
+.vbox.win .vl{color:var(--green)}
+.vbox.lose .vl{color:var(--mut)}
+.vbox .vn{font-weight:700;font-size:13px;margin-bottom:4px}
+.source{font-size:10px;color:var(--mut);font-style:italic;margin-top:8px;padding-top:8px;border-top:1px solid var(--line)}
+.ramp-table{width:100%;border-collapse:collapse;font-size:12px;margin:10px 0;background:var(--row);border-radius:3px;overflow:hidden;border:1px solid var(--line)}
+.ramp-table th{background:var(--line);padding:7px 12px;text-align:left;font-size:10px;text-transform:uppercase;letter-spacing:.07em;color:var(--mut)}
+.ramp-table td{padding:7px 12px;border-bottom:1px solid var(--line)}
+.ramp-table tr:last-child td{border-bottom:none}
+.ramp-table td:first-child{color:var(--mut)}
+.ramp-table tr.work{background:var(--gfill)}
+.ramp-table tr.work td{font-weight:600;color:var(--green)}
+.day-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+.day-box{background:var(--row);border:1px solid var(--line);border-radius:3px;padding:10px 12px}
+.day-title{font-size:11px;font-weight:700;margin-bottom:6px;color:var(--ink)}
+.day-item{font-size:11px;color:var(--mut);padding:2px 0;display:flex;gap:6px;align-items:flex-start;line-height:1.4}
+.day-item::before{content:"→";color:var(--amber);flex-shrink:0;font-size:10px;margin-top:1px}
+</style>
+
+<h1>De opwarming — in gewone taal</h1>
+<p class="sub">Wat het onderzoek zegt, zonder vaktermen</p>
+
+<!-- SECTIE 1: ZWAAR vs LICHT OPWARMEN -->
+<div class="section">
+  <div class="stitle">1. Hoe zwaar moet je opwarmen?</div>
+
+  <div class="card good">
+    <div class="ctitle">Zwaar opwarmen werkt beter dan licht opwarmen</div>
+    <div class="csub">Onderzocht bij squat en bench press</div>
+    <div class="cbody">
+      <p>De meeste mensen warmen op met lichte gewichten en veel herhalingen — denk aan 3×10 op 40% van je werkgewicht. Onderzoek toont dat dit de minst effectieve methode is.</p>
+      <p>Een studie testte drie manieren van opwarmen voordat deelnemers drie zware sets gingen doen. De groep die opwarmde met <strong>één set op 80% van het werkgewicht</strong> presteerde significant beter op de squat dan de groep die alleen licht opwarmde. Voor de bench press werkte een combinatie van 40% gevolgd door 80% het best.</p>
+      <p>Waarom? Een zwaar opwarmset <em>activeert</em> je spieren en zenuwstelsel beter dan lichte sets. Het is alsof je motor echt warm draait in plaats van stationair te laten lopen.</p>
+      <p><strong>Wat dit betekent voor jou:</strong> Je opwarmsets worden zwaarder per set, en de laatste set voor je werkgewicht is bewust zwaar — niet licht.</p>
+    </div>
+    <div class="source">Ribeiro et al. 2020 · Int J Environ Res Public Health · 40 getrainde mannen</div>
+  </div>
+
+  <div class="card neutral">
+    <div class="ctitle">Het praktische opwarmprotocol voor jouw schema</div>
+    <div class="cbody">
+      <p>Alleen de <strong>eerste zware oefening</strong> van de dag heeft een volledig opwarmprotocol nodig. Daarna ben je al warm en heb je veel minder nodig.</p>
+      <p>Voorbeeld voor squat op 100 kg:</p>
+
+      <table class="ramp-table">
+        <thead><tr><th>Set</th><th>Gewicht</th><th>Herhalingen</th><th>Doel</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Lege stang (20 kg)</td><td>8</td><td>Beweging voelen</td></tr>
+          <tr><td>2</td><td>50 kg (50%)</td><td>5</td><td>Gewicht voelen</td></tr>
+          <tr><td>3</td><td>70 kg (70%)</td><td>3</td><td>Dichter bij werkgewicht</td></tr>
+          <tr><td>4</td><td>85 kg (85%)</td><td>1–2</td><td>Zenuwstelsel primen</td></tr>
+          <tr class="work"><td>Werkset</td><td>100 kg</td><td>4–6</td><td>Werkset</td></tr>
+        </tbody>
+      </table>
+
+      <p>Rust tussen opwarmsets: 60–90 seconden (kort). Rust tussen werksets: 2–3 minuten (normaal).</p>
+
+      <p><strong>Tweede oefening van de dag:</strong> 1–2 lichte sets volstaan — je bent al warm.<br>
+      <strong>Isolatieoefeningen</strong> (laterals, curls, kabels): geen opwarmsets nodig, direct naar werkgewicht.</p>
+    </div>
+  </div>
+</div>
+
+<!-- SECTIE 2: DYNAMISCH REKKEN -->
+<div class="section">
+  <div class="stitle">2. Dynamisch bewegen voor de training — werkt het echt?</div>
+
+  <div class="card good">
+    <div class="ctitle">Dynamisch bewegen: ja, het helpt</div>
+    <div class="csub">Maar je hoeft niet lang te doen</div>
+    <div class="cbody">
+      <p>Dynamisch bewegen betekent: beweeglijk rekken terwijl je beweegt — been zwaaien, armcirkels, heupscharnieren. Niet stilhouden.</p>
+      <p>Onderzoek (meta-analyse van 35 studies) toont dat dynamisch bewegen voor de training de prestaties licht verbetert. Het belangrijkste effect: je gewrichten gaan verder in hun bewegingsbereik, wat direct relevant is voor diep squatten en correct drukken.</p>
+      <p>Eén studie ontdekte iets interessants over tempo: dynamisch rekken <strong>zo snel als comfortabel mogelijk</strong> gaf <span class="stat">7.6%</span> betere explosiviteit daarna, terwijl langzaam rekken slechts <span class="stat amber">1.1%</span> gaf. Snelle bewegingen activeren je spieren actiever.</p>
+      <p><strong>Hoe lang?</strong> 3–5 minuten is genoeg. 10–15 herhalingen per beweging, brisk tempo. Niet lang stilhouden — dat is het volgende punt.</p>
+    </div>
+    <div class="source">Esteban-García et al. 2024 · BMC Sports Sci Med Rehabil 2023 · Yamaguchi & Ishii 2014</div>
+  </div>
+</div>
+
+<!-- SECTIE 3: STATISCH REKKEN -->
+<div class="section">
+  <div class="stitle">3. Statisch rekken voor de training — doe dit niet</div>
+
+  <div class="card bad">
+    <div class="ctitle">Lang stilhouden voor de training maakt je zwakker</div>
+    <div class="csub">Bevestigd door meerdere meta-analyses</div>
+    <div class="cbody">
+      <p>Statisch rekken = een spier uitrekken en <strong>stilhouden</strong>. Denk aan je hamstring naar je borst trekken en 30–60 seconden vasthouden.</p>
+      <p>Als je dit langer dan 60 seconden per spier doet vóór je training, daalt je spierkracht significant voor de sessie die erop volgt. De spier is letterlijk iets slaffer gemaakt — alsof je een elastiekje te lang uitrekt voordat je het laat schieten.</p>
+      <p>Kortere holds (&lt;30 seconden) geven nauwelijks effect, dus als je één stijf gebied hebt dat echt hindert, is een korte hold gevolgd door dynamisch bewegen acceptabel. Maar als structureel warming-up ritueel: vermijden.</p>
+      <p><strong>Wanneer dan wel statisch rekken?</strong> Na de training, of op een losse dag. Dan verbeter je flexibiliteit zonder prestaties te schaden.</p>
+    </div>
+    <div class="source">Warneke et al. 2024 meta-analyse · Simic et al. 2013</div>
+  </div>
+</div>
+
+<!-- SECTIE 4: 5 MINUTEN CARDIO -->
+<div class="section">
+  <div class="stitle">4. Die 5 minuten fiets of roeier — noodzakelijk?</div>
+
+  <div class="card neutral">
+    <div class="ctitle">Optioneel, niet verplicht</div>
+    <div class="cbody">
+      <p>Het idee achter cardio als opwarming is logisch: lichaamstemperatuur omhoog, bloed naar de spieren. Een studie vond dat 15 minuten rustige cardio de leg press prestatie verbeterde (~3–4%). Een andere studie vond geen effect op squat en bench.</p>
+      <p>Het punt: de dynamische bewegingen die je daarna toch doet, en de opwarmsets op de compound, doen hetzelfde — ze verhogen ook de temperatuur en activeren de spieren, maar zijn specifiek voor wat je gaat doen.</p>
+
+      <div class="vs">
+        <div class="vbox win">
+          <div class="vl">Doe het als...</div>
+          <div class="vn">Wel aanbevolen</div>
+          Je net de gym in bent uit de kou<br>
+          Je je stijf of koud voelt<br>
+          Je extra "opstart" tijd nodig hebt
+        </div>
+        <div class="vbox lose">
+          <div class="vl">Sla het over als...</div>
+          <div class="vn">Niet noodzakelijk</div>
+          Je al warm aankomt<br>
+          Je weinig tijd hebt<br>
+          Je al actief bent geweest op de dag
+        </div>
+      </div>
+
+      <p><strong>Als je het doet: 3–5 minuten is genoeg.</strong> 20 minuten cardio als opwarming is verspilde energie die je voor je werksets had kunnen gebruiken.</p>
+    </div>
+    <div class="source">Abad et al. 2011 JSCR · Barroso et al. 2013 JSCR</div>
+  </div>
+</div>
+
+<!-- SECTIE 5: PER DAG -->
+<div class="section">
+  <div class="stitle">5. Welke bewegingen per trainingsdag</div>
+
+  <div class="card neutral">
+    <div class="ctitle">Principe: beweeg de gewrichten die je die dag het meest gebruikt</div>
+    <div class="cbody">
+      <p>De specifieke bewegingen zijn geen harde wetenschap — het is gebaseerd op anatomie en coaching ervaring. De logica is simpel: beweeg de gewrichten door het volledige bereik dat je daarna gaat gebruiken, op een manier die ze activeert zonder te vermoeit.</p>
+
+      <div class="day-grid">
+        <div class="day-box">
+          <div class="day-title">Upper A — Incline bench + Pull-up</div>
+          <div class="day-item">Schouder pass-throughs met stang of band — opent de schouder voor het drukken</div>
+          <div class="day-item">Thoracale rotaties (romp draaien) — ruggengraat midden losmaken voor bench en pulls</div>
+          <div class="day-item">Band pull-aparts — schouderbladen activeren voor pull-ups</div>
+          <div class="day-item">Scapula pull-ups (passief hangen → schouderbladen intrekken) — direct voor weighted pull-ups</div>
+          <div class="day-item">Armcirkels — algemene schoudermobiliteit</div>
+        </div>
+        <div class="day-box">
+          <div class="day-title">Upper B — Flat bench + Pendlay row</div>
+          <div class="day-item">Thoracale extensie (ruggengraat achterover, bijv. over een rol of bank) — borstbeen omhoog voor betere bench positie</div>
+          <div class="day-item">Thoracale rotaties — romp losmaken voor rijen</div>
+          <div class="day-item">Band pull-aparts — schouderstabilisatoren activeren</div>
+          <div class="day-item">Bodyweight heupscharnieren (goede morning beweging) — voorbereiding op de Pendlay row vanuit de grond</div>
+          <div class="day-item">Lichte band rows — bewegingspatroon van het rijen activeren</div>
+        </div>
+        <div class="day-box">
+          <div class="day-title">Lower A — Squat (diep)</div>
+          <div class="day-item">Knie naar de muur (enkel mobiliteit) — de #1 beperking voor diep squatten is stijve enkels. 10 reps per kant</div>
+          <div class="day-item">90/90 heupbeweging (heup roteren in en naar buiten liggend) — heupmobiliteit voor squatdiepte</div>
+          <div class="day-item">Goblet squat met licht gewicht, diep zinken — bewegingspatroon openen én enkel- en heupmobiliteit tegelijk</div>
+          <div class="day-item">Been zwaaien (voor-achter en zijwaarts) — heupen losmaken</div>
+          <div class="day-item">Bodyweight squats steeds dieper — bewegingspatroon inslijpen</div>
+        </div>
+        <div class="day-box">
+          <div class="day-title">Lower B — Hack squat + RDL</div>
+          <div class="day-item">Bodyweight heupscharnieren met neutrale rug — het scharnierende bewegingspatroon van de RDL inslijpen</div>
+          <div class="day-item">Been zwaaien (voor-achter) — hamstrings dynamisch oprekken</div>
+          <div class="day-item">Glute bridges (kont activeren) — bilspieren aanzetten voor heupextensie in RDL en hack squat</div>
+          <div class="day-item">Knie naar de muur (enkel mobiliteit) — voor diepte in hack squat en Bulgarian split squat</div>
+          <div class="day-item">Cat-camel (rug afwisselen bol en hol) — wervelkolom losmaken voor geladen heupscharnieren</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTIE 6: TOTAALOVERZICHT -->
+<div class="section">
+  <div class="stitle">6. Samengevat: de opwarming in totaal</div>
+  <div class="card good">
+    <div class="ctitle">De totale opwarming duurt 8–12 minuten per sessie</div>
+    <div class="cbody">
+      <p><strong>Stap 1 — optioneel (0–3 min):</strong> Fiets of roeier als je koud aankomt of stijf bent.</p>
+      <p><strong>Stap 2 — altijd (3–5 min):</strong> 4–5 dynamische bewegingen voor de gewrichten van die dag. 10–15 herhalingen per beweging, brisk tempo. Geen stilhouden.</p>
+      <p><strong>Stap 3 — altijd (3–5 min):</strong> Opwarmsets op de eerste zware compound. Zwaarder per set, laatste set op ~80–85% van werkgewicht. 2–4 sets totaal afhankelijk van hoe zwaar je werkgewicht is.</p>
+      <p><strong>Daarna:</strong> Tweede compound 1–2 lichte sets. Isolatieoefeningen direct naar werkgewicht.</p>
+      <p><strong>Nooit:</strong> Lang stilhouden (>30 seconden) voor je werksets. Tientallen lichte herhalingen opwarmen. 20 minuten cardio als opwarming.</p>
+    </div>
+  </div>
+</div>

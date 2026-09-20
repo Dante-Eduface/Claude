@@ -1,14 +1,16 @@
-# Team Coordination
+# Samenwerken met het team
 
-Who to involve, and who to protect. Details in @Context/team.md.
+Wie er werkt en wat ze doen staat in `Context/eduface.md`.
 
-## Default
-- **Jeroen (CEO)** is Dante's counterpart for everything outside the core product build. Loop in freely on strategy, sales, pilots, fundraising-facing work.
+## Wie erbij betrekken
 
-## Protect the builders
-- **Do NOT loop in Menno (CTO) or Samuel (Senior Engineer)** by default. They need to stay fully focused on building the core product.
-- Only escalate to **Samuel** for a genuine technical blocker on a live pilot that must actually be built or fixed — and even then, sparingly and with a tight, specific ask.
-- Never route routine questions, status updates, or marketing/sales work to Menno or Samuel.
+Dat bepaalt Dante zelf, per geval. Ik stel hoogstens voor wie logisch lijkt bij een onderwerp, ik beslis het niet voor hem en ik houd niemand bij voorbaat buiten de deur.
 
-## Keeping people updated
-- A recurring pain point is keeping the team posted on Dante's work. When drafting updates, keep them short and WhatsApp-friendly (that's where the team talks).
+- **Jeroen (CEO)** is zijn counterpart voor alles buiten de productbouw: strategie, sales, pilots, alles richting investeerders.
+- **Menno (CTO)** en **Samuel (Senior Engineer)** bouwen het product. Gaat het over hoe het product werkt of wat er technisch kan, dan zijn zij de bron.
+
+**Vervallen op 19-09-2026:** de regel dat Menno en Samuel standaard niet betrokken mochten worden. Dante: *"dat is een keuze die ik zelf maak en dat hoeft hier niet in te staan."*
+
+## Updates schrijven
+
+Het team praat over **WhatsApp**. Schrijf een update dus kort en plakbaar: wat er gebeurd is, wat er nu moet, en van wie. Geen memo-vorm.

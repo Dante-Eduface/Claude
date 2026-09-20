@@ -1,133 +1,94 @@
-# Personal — Dante
+# Persoonlijk, Dante
 
-> **Not auto-loaded.** This file is intentionally NOT `@import`ed into CLAUDE.md, so it stays out of the context window during work sessions. Only read it when the task is genuinely personal. Keep work context out of here too, the separation goes both ways.
+> **Wordt niet automatisch geladen.** Dit bestand staat bewust niet als `@import` in `CLAUDE.md`, zodat het tijdens werksessies buiten het contextvenster blijft. Lees het alleen bij een echt persoonlijke taak. Werkcontext hoort hier ook niet thuis: de scheiding werkt twee kanten op.
 >
-> **Source:** life-plan context document Dante shared (self-authored, dated June 2026). Some dates in it look stale (e.g. it references a "September 2025" salary moment that is now in the past) — confirm with Dante rather than assuming. **Do NOT make assumptions on anything flagged as unknown below. These are open questions Dante has not resolved.**
+> **Niets invullen wat je kunt navragen.** Alles wat open is staat in `Context/open-vragen.md`.
 
----
+_Laatst bijgewerkt: 20-09-2026, na twee rondes antwoorden van Dante zelf._
 
-## Background
-- 19 years old, based in Leiden, likely moving to Utrecht around September 2026.
-- MBO diploma, left school at 17 to work at a startup. That first startup shut down, then moved to Eduface and has done nothing else since.
+## Basis
 
-## Work (the personal angle)
-- Role: SDR. Grows pipeline + generates qualified leads, hands off to the founders.
-- His own read: not performing well in this role right now. Gets distracted by side projects outside his core job, jumps between tasks instead of deep focus.
-- Understands constraint-based thinking (find the bottleneck, put everything on it, then move on) but hasn't applied it consistently yet.
-- Comp: currently ~€920/month net, spends all of it, €0 saved. From September: €2,200 gross (~€1,600 net).
-- Equity: ~2%
-- Sees the Eduface experience + network as worth more than the equity outcome.
+- Geboren 17-08-2006, woont in Leiden. Het kantoor is naar Utrecht verhuisd, hij niet. Verhuist waarschijnlijk zelf naar Utrecht of Rotterdam.
+- MBO-4 diploma behaald, Business Administration / Control Specialist. Daarna een startup in, die ging dicht, daarna Eduface.
+- Werkt bij Eduface als Customer Success Manager. Zie `Context/eduface.md`.
+- **Eduface is zijn thuis.** Hij blijft, en denkt niet in exitscenario's, een eigen startup of een route naar oprichter. Die vragen zijn op 19-09-2026 geschrapt, niet uitgesteld.
+- **Geen lange-termijndoelen, bewust niet.** Eén prioriteit, het hele jaar. Niet invullen en niet naar vragen.
+- Nu alleen. Zijn eigen woorden: het alleen zijn gaat hem niet makkelijk af, maar het levert veel tijd op om te focussen en daar is hij oké mee.
 
-**Open questions (do not assume answers):**
-- Q1: What does he do concretely differently as SDR starting now?
-- Q2: Is Eduface a long-term home (3-5 years) or purely a learning platform?
-- Q3: Does he negotiate role clarity + a path to CRO at the September salary moment, or just accept the raise?
+## Sport en lichaam
 
-## American Football
-- Plays at Düsseldorf Panthers (Germany), position Nickel (defensive back).
-- Commutes Leiden to Düsseldorf 3x/week, ~3h each way (15-18 hrs/week travel). Works on the train, so travel isn't fully lost time.
-- Genuinely talented and competitive. Stopped once before and came back because he missed it. Loves it, it's part of his identity.
-- Ambition: play for the best team in Europe in the best league. GFL1 (Germany) is the top-level target.
-- Paid pro football in Europe is possible but needs being based in Germany. He does NOT want to start a startup in Germany (doesn't speak German, no ambition to learn it).
+Gestopt met American football (Düsseldorf Panthers, nickel). Daarmee vervallen de reizen van drie keer per week naar Düsseldorf. **Er komt geen competitieve sport voor in de plaats.**
 
-**Tension to flag, NOT resolved:** top-level paid football AND being CRO of a startup are both near-full-time. They conflict directly at the 5-year mark. One has to be primary. Not decided.
+### Wat hij wil, en wat hij niet wil
 
-**Open questions (do not assume answers):**
-- Q4: After this season — stop, keep as hobby, or go all-in on paid pro football?
-- Q5: If paid football means living in Germany, is he willing to do that knowing it conflicts with the startup/career path?
+Zijn twee prioriteiten voor gezondheid, letterlijk: **goede intensiteit tijdens gymsessies** en **goed eten**. Verder niks.
 
-## Physical / Gym
-- Trains 3x/week minimum. Consistent and non-negotiable, wants to keep it regardless of other changes.
-- After football: wants to move into CrossFit or another competitive sport.
+**Geen metingen meer.** Geen InBody, nu niet en later niet. Gewicht en lichaamsdata interesseren hem niet. Kom dus niet met tracking, grafieken of een dashboard om zijn lichaam te meten, en stel geen doel in kilo's voor: *"ik heb niet echt een gewichtdoel, ik wil gewoon groter worden."*
 
-## Finances
-- Now: ~€2118,46/month net, €0 saved, spends it all.
-- Realistic year-1 savings target (from September): €3,000-5,000, NOT €15,000.
-- Wants: invest in stocks/index funds, build long-term passive income to cover fixed costs + lifestyle.
-- Long-term (10 yr): house in the Netherlands + a second home in Curaçao.
-- Equity (~2%): treat as bonus, not the foundation. 2% of a €5M exit ≈ €100K pre-tax — possible but uncertain, timeline unclear.
+**Geen app bouwen.** De trainingsapp met login en database uit de oude handoff is van de baan.
 
-**Open questions (do not assume answers):**
-- Q7: Exact auto-save amount on payday from September, and into which account?
+### De split
 
-## Learning & Knowledge
-- Does NOT care about formal diplomas (HBO, MBA) for their own sake. Formal HBO→MBA route is explicitly deprioritised.
-- Wants practical knowledge he can apply immediately. Sees Eduface itself as his real business school.
-- Relevant books for his stage: *The Mom Test*, *$100M Offers* (Hormozi), *Zero to One* (Thiel).
-- Toastmasters: mentioned as a communication-skills goal, not started.
+Vier dagen per week, upper/lower. Volumeprioriteit ligt op **lats en laterale deltoid** (het V-taper-frame), de rest op onderhoudsvolume. Hij logt in de **Strong**-app. **Gestopt met WHOOP** (19-09-2026), dus er is geen herstel- of slaapdata meer. De schema's staan in `Personal/fitness/schema/`.
 
-**Open question (do not assume):**
-- Q12: Which single skill does he want to develop most in the next 12 months (sales, marketing, leadership, communication, product thinking)? Not chosen yet.
+| Dag | Training | Tijd |
+|---|---|---|
+| Dinsdag | Lower A | 17:00 tot 19:00 |
+| Donderdag | Upper A | 17:00 tot 19:00 |
+| Zaterdag | Lower B | 13:00 tot 15:00 |
+| Zondag | Upper B | 13:00 tot 15:00 |
 
-## Spanish
-- Current level: 0%. Goal: A2 in 1 year, B2 in 5 years.
-- Wants a weekly online coach, ideally in-person lessons. Can't afford a coach yet.
-- Knows he lacks the discipline to learn fully alone.
-- Free resource available now: girlfriend + her parents are native Spanish speakers.
-- Plan: start now with girlfriend + her parents (free), add a paid coach from September when income rises.
+Consistent en wat hem betreft niet onderhandelbaar. Dat di en do om 17:00 begint, betekent dat hij die dagen de trein van 16:05 pakt en dus eerder stopt met werken. Dat is bewust.
 
-## Relationship
-- Currently exclusive with a girl (name not used).
-- She ticks many boxes. Some important boxes — ones he only found through experience — she does not tick.
-- Only 2 relationships ever: one of 6 years, now this one.
-- Not comfortable being alone. When single, thought about needing a girlfriend multiple times a day.
-- Acknowledges he may be staying partly out of fear of being alone, not full certainty.
-- Interested in building internal confidence ("3% man" idea) so fear of loneliness doesn't drive relationship decisions.
+### Eten
 
-**Open questions (do not assume answers):**
-- Q8: If the fear of being alone is removed, is he still with her?
-- Q9: Which specific boxes does she not tick, and how much do they matter over a 5-10 year horizon? (He may know but hasn't shared.)
+**2.800 kcal per dag**, herzien op 19-09-2026 omdat de oude 3.100 berekend was toen hij nog football speelde. De onderbouwing staat in `Personal/fitness/calorieen.md`.
 
-**Hard rule:** Do NOT assume he will or won't stay with her. Do NOT assume she is or isn't the mother of his future kids. His 10-year goal of wife + 2 kids is real, but who that's with is unknown and unresolved.
+| | |
+|---|---|
+| Calorieën | 2.800 |
+| Eiwit | 180 gram |
+| Vet | 80 gram |
+| Koolhydraten | 340 gram |
 
-## Startup & Entrepreneurship
-- 10-year goal: CEO of a company with €5M revenue at age 29.
-- 5-year goal: CRO of Eduface with his own sales & marketing team of ~10.
-- Believes in winning teams over going solo — a strong team gets you there faster.
-- Recognises a low-capital startup suits him better than one needing heavy funding (given equity uncertainty).
-- Wants to conquer the UK HE market as part of the CRO role, and become a LinkedIn thought leader in UK HE. Wants multiple mentors.
+**Lust hij niet:** feta, walnoten, chiliflakes, chipotle, sambal, gember.
 
-**Open questions (do not assume answers):**
-- Q10: Does he have a specific startup idea/direction, or is it still a feeling without content?
-- Q11: If Eduface doesn't exit, what's his path to founder (bootstrap? raise externally?)? Not answered.
+**Laatste InBody, augustus 2026, en de laatste die er komt:** 89,4 kg, 10,2% vet, 46,8 kg spiermassa, BMR 2.104 kcal.
 
-## Content & Legacy
-- Wants to document his life to inspire other young people with MBO backgrounds. Believes his story (MBO → startup grind → building) is worth telling.
-- YouTube goal: 20K subscribers by year 5. Not starting now because he feels he needs an editor and doesn't want to learn editing himself.
-- LinkedIn content is part of the plan, especially around UK HE. Sees content (editing) as something to outsource, not do himself.
+**Wel: één keer per week op de weegschaal.** Zaterdagochtend, nuchter. Niet om het getal maar om de richting: gaat het harder dan een halve kilo per maand omhoog, dan 200 kcal eraf; beweegt het in twee maanden niet, dan 200 erbij. Dat is het enige signaal waarmee de 2.800 bijgesteld kan worden.
 
-**Open question (do not assume):**
-- Q13: When does he actually start content, and in what form? Waiting for an editor (needs money = September earliest), or start rough on LinkedIn now?
+**Let op:** eten is ook zijn eerste faalpunt op een werkdag. Zijn eigen woorden: *"een dag gaat vooral mis als ik ongezond begin te eten."* Dat maakt dit geen los gezondheidsonderwerp maar een werkonderwerp.
 
-## Housing & Lifestyle
-- Now in Leiden. Company moving to Utrecht → moving there makes sense to cut the commute.
-- Rotterdam was a previous goal, now deprioritised for Utrecht.
-- Long-term (10 yr): house in the Netherlands + second home in Curaçao.
-- 5-year housing (Rotterdam apartment + house in football country) is now uncertain because the football decision is unresolved.
+## Geld
 
----
+Staat apart in **`Context/financien.md`**. Laadt ook niet automatisch.
 
-## The 13 open questions (do not assume answers)
-| # | Topic | Question |
-|---|-------|----------|
-| 1 | Work | What does he do concretely differently as SDR from now? |
-| 2 | Work | Is Eduface a long-term home or a learning platform? |
-| 3 | Work | Does he negotiate role + CRO path at the September salary moment? |
-| 4 | Football | After this season — stop, hobby, or professional? |
-| 5 | Football | If paid football = live in Germany, is he willing? |
-| 6 | Finance | Moving to Utrecht before or after September? |
-| 7 | Finance | Exact auto-save amount + account from September? |
-| 8 | Relationship | If fear of loneliness removed, is he still with her? |
-| 9 | Relationship | Which boxes does she not tick, and how much do they matter long-term? |
-| 10 | Startup | Does he have a specific startup idea/direction yet? |
-| 11 | Startup | If Eduface doesn't exit, what's his path to founder? |
-| 12 | Growth | Which single skill does he prioritise in the next 12 months? |
-| 13 | Content | When does he start, and in what form? |
+## Leren
 
----
+- **Leest in de trein**, heen en terug, ongeveer acht uur per week (20-09-2026).
 
-## Health / Gym
-- Trains 4x/week minimum (see Physical / Gym above). Specific gym targets still to be filled in.
+- Geen HBO of MBA, bewust niet. Wil kennis die hij direct kan toepassen. Eduface is zijn business school.
+- Boeken die bij zijn fase passen: *The Mom Test*, *$100M Offers* (Hormozi), *Zero to One* (Thiel).
+- Leest nu *Deep Work* (Newport). Wat daaruit in zijn werkweek terechtkomt staat in `Context/deep-work.md`.
+- **Welke vaardigheid hij het komende jaar ontwikkelt, volgt uit de leidende maat**, niet uit een aparte keuze. Zijn redenering: de skill die bij de lead metric hoort, dat is waar hij hard in moet worden. Staat nog open als P11.
 
-## Personal Admin
-- _Placeholder._
+## Het weekend
+
+Twee thema's, allebei met dezelfde twee deep-work-blokken erin (06:00 tot 08:00 en 09:00 tot 11:00):
+
+- **Zaterdag is een werkdag.** Week plannen in blok 1, financiele controle om 11:00, gym om 13:00, boodschappen om 15:00.
+- **Zondag is een thuisdag.** LinkedIn-post in blok 1, gym om 13:00, schoonmaken om 15:00, koken om 16:00.
+
+Boodschappen blijven bewust op zaterdag, een dag voor het koken. Zie `Context/deep-work.md` voor de hele week.
+
+## Wat nu geen prioriteit is
+
+Op 19-09-2026 door hemzelf geparkeerd. Niet voorstellen, niet inplannen, niet naar vragen tot hij er zelf over begint:
+
+- **Spaans.**
+- Een eigen startup, een route naar oprichter, en elk exitscenario voor Eduface.
+- Een salarisgesprek of een pad naar CRO. Hij wil er niet over nadenken of praten. Niet opnieuw opbrengen.
+
+## Wat open staat
+
+Alle openstaande persoonlijke vragen staan in `Context/open-vragen.md`.

@@ -9,7 +9,7 @@ ze daar moet vinden. `.claude/` en `.vscode/` zijn configuratie.
 
 | Map | Wat hier hoort | Wat hier **niet** hoort |
 |---|---|---|
-| `Context/` | Wie Dante is, wat Eduface is, het team, prioriteiten, doelen, deze kaart | Projectwerk |
+| `Context/` | Wie Dante is, wat Eduface is, prioriteiten, open vragen, het werkritme, deze kaart | Projectwerk |
 | `GTM/` | Alles sales & marketing | Productkennis, designwerk |
 | `Design/` | Design system, merk-assets, websitewerk | Campagnemateriaal (dat is GTM) |
 | `Platform/` | Het product zelf: claims, vaktermen, onderzoek, usability | Accountspecifieke stukken |
@@ -31,6 +31,10 @@ ze daar moet vinden. `.claude/` en `.vscode/` zijn configuratie.
 
 ## Wat waaruit leest
 
+- **`Context/current-priorities.md`** wint van elk ander contextbestand. Staat er iets elders dat het
+  tegenspreekt, dan is dat elders fout.
+- **`Context/open-vragen.md`** is de enige plek voor wat Claude niet zelf mag invullen. Niet raden,
+  daar neerzetten en navragen.
 - **`Platform/product.md`** is de bron van waarheid voor productclaims. Negen bestanden lezen
   hieruit. Klopt een claim ergens niet, corrigeer hier, niet in de kopie.
 - **`Design/System/`** is verplicht bij alles wat een mens bekijkt. Start bij
@@ -53,8 +57,8 @@ Mappen die jij en ik lezen mogen spaties en hoofdletters hebben, als de naam maa
 duidelijk is: `GTM/Event manager/`, `Design/System/`.
 
 **Eén uitzondering, en die is hard.** Alles onder `.claude/` blijft kleine letters met
-streepjes, want de mapnaam van een skill *is* het commando: `/task-planning` werkt,
-`/task planning` niet. Hetzelfde geldt voor `GTM/ICP/shift/master/`, waar scripts uit lezen.
+streepjes, want de mapnaam van een skill *is* het commando: `/week-plannen` werkt,
+`/week plannen` niet. Hetzelfde geldt voor `GTM/ICP/shift/master/`, waar scripts uit lezen.
 
 Verder:
 
@@ -108,7 +112,7 @@ Staan in `.claude/skills/`, want Claude Code vindt ze alleen daar. Aanroepen met
 ### Overig
 
 - **`/deep-research`** — Diep onderzoek naar een open vraag (markt, concurrent, beleid, trend, technologie, "hoe zit X in...
-- **`/task-planning`** — Daily / weekly / monthly task planning + prioritisation for Dante across Todoist.
+- **`/week-plannen`** : begeleidt het planmoment op zaterdagochtend. Dante bedenkt zelf wat er moet gebeuren, Claude bevraagt het en schrijft het weg in Todoist. Vervangt `/task-planning`, dat op 19-09-2026 naar `Archive/skills-2026-09/` is gegaan.
 - **`/skill-builder`** — Build a new Claude Code skill, or fix/upgrade an existing one.
 - **`/fitness-coach`** — Dante's strength and nutrition coach for his Greek god V-taper lean bulk.
 
