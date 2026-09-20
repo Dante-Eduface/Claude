@@ -4,7 +4,7 @@
 >
 > **Niets invullen wat je kunt navragen.** Alles wat open is staat in `Context/open-vragen.md`.
 
-_Laatst bijgewerkt: 20-09-2026, na twee rondes antwoorden van Dante zelf._
+_Laatst bijgewerkt: 20-09-2026, na drie rondes antwoorden van Dante zelf._
 
 ## Basis
 
@@ -23,9 +23,9 @@ Gestopt met American football (Düsseldorf Panthers, nickel). Daarmee vervallen 
 
 Zijn twee prioriteiten voor gezondheid, letterlijk: **goede intensiteit tijdens gymsessies** en **goed eten**. Verder niks.
 
-**Geen metingen meer.** Geen InBody, nu niet en later niet. Gewicht en lichaamsdata interesseren hem niet. Kom dus niet met tracking, grafieken of een dashboard om zijn lichaam te meten, en stel geen doel in kilo's voor: *"ik heb niet echt een gewichtdoel, ik wil gewoon groter worden."*
+**Geen metingen meer.** Geen InBody, nu niet en later niet, en per 20-09-2026 ook **geen tapemetingen** meer. Gewicht en lichaamsdata interesseren hem niet. Kom dus niet met tracking, grafieken of een dashboard om zijn lichaam te meten, en stel geen doel in kilo's of centimeters voor: *"ik heb niet echt een gewichtdoel, ik wil gewoon groter worden."* De historie blijft staan in `Personal/fitness/data/metingen/metingen.csv`, maar er komt niets meer bij.
 
-**Geen app bouwen.** De trainingsapp met login en database uit de oude handoff is van de baan.
+**Geen app en geen pagina bouwen.** De trainingsapp met login en database is van de baan, en per 20-09-2026 ook de gegenereerde weekmenu-pagina. Vragen over eten en trainen worden in het gesprek beantwoord.
 
 ### De split
 
@@ -39,6 +39,10 @@ Vier dagen per week, upper/lower. Volumeprioriteit ligt op **lats en laterale de
 | Zondag | Upper B | 13:00 tot 15:00 |
 
 Consistent en wat hem betreft niet onderhandelbaar. Dat di en do om 17:00 begint, betekent dat hij die dagen de trein van 16:05 pakt en dus eerder stopt met werken. Dat is bewust.
+
+**De zondagse field day is eruit** per 20-09-2026: geen sprints, plyometrie, ladderwerk of agility meer. Die was overgebleven uit het football-programma. Zondag is alleen Upper B.
+
+De volledige stand van het trainen staat in `Personal/fitness/training.md`, de sessies zelf in `Personal/fitness/schema/volledig_schema.html`.
 
 ### Eten
 
@@ -54,6 +58,8 @@ Consistent en wat hem betreft niet onderhandelbaar. Dat di en do om 17:00 begint
 **Lust hij niet:** feta, walnoten, chiliflakes, chipotle, sambal, gember.
 
 **Laatste InBody, augustus 2026, en de laatste die er komt:** 89,4 kg, 10,2% vet, 46,8 kg spiermassa, BMR 2.104 kcal.
+
+De recepten en de portiegroottes staan in `Personal/fitness/recepten.md`, herschaald naar 2.800.
 
 **Wel: één keer per week op de weegschaal.** Zaterdagochtend, nuchter. Niet om het getal maar om de richting: gaat het harder dan een halve kilo per maand omhoog, dan 200 kcal eraf; beweegt het in twee maanden niet, dan 200 erbij. Dat is het enige signaal waarmee de 2.800 bijgesteld kan worden.
 

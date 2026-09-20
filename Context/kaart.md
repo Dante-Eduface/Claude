@@ -114,7 +114,7 @@ Staan in `.claude/skills/`, want Claude Code vindt ze alleen daar. Aanroepen met
 - **`/deep-research`** — Diep onderzoek naar een open vraag (markt, concurrent, beleid, trend, technologie, "hoe zit X in...
 - **`/week-plannen`** : begeleidt het planmoment op zaterdagochtend. Dante bedenkt zelf wat er moet gebeuren, Claude bevraagt het en schrijft het weg in Todoist. Vervangt `/task-planning`, dat op 19-09-2026 naar `Archive/skills-2026-09/` is gegaan.
 - **`/skill-builder`** — Build a new Claude Code skill, or fix/upgrade an existing one.
-- **`/fitness-coach`** — Dante's strength and nutrition coach for his Greek god V-taper lean bulk.
+- **`/fitness-coach`** : kracht- en voedingscoach. Twee taken, analyse en feedback op het trainen, en eten en koken. Leest de stand elke keer uit `Context/personal.md` en `Personal/fitness/` in plaats van uit eigen bestanden. Herschreven op 20-09-2026, het oude materiaal staat in `Archive/fitness-coach-2026-09/`.
 
 ### Buiten de repo
 
