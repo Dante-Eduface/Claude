@@ -44,8 +44,9 @@ MOET_ERIN = [
     (12, 'blackboard and canvas integration is a precondition'),
     (13, 'demo'),
     (16, 'programmatic expansion'),
-    (16, 'legal and it validation'),
     (16, 'target launch december 2026'),
+    # 'legal and it validation' stond bij Validate in the U.S.; die stap is op
+    # verzoek van Dante van de slide gehaald, dus die tekst hoort hier niet meer.
 ]
 
 
