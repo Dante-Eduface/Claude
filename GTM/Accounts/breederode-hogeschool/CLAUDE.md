@@ -14,6 +14,7 @@ Particuliere hogeschool in Rotterdam, zorg en welzijn, deeltijd voor werkende pr
 - [06-taal-en-haakjes.md](06-taal-en-haakjes.md) — hun vocabulaire en de haakjes met bron
 - [07-beloofde-features.md](07-beloofde-features.md) — alles wat we ze over de tool hebben verteld, met een inschatting of het al bestaat
 - [08-aangeleverd-materiaal.md](08-aangeleverd-materiaal.md) — wat de drie opleidingen voor de testdag aanleverden, per vak, plus de rubric-kwestie bij POH-6
+- [09-beoordelingsstijlen.md](09-beoordelingsstijlen.md) — hoe elke opleiding beoordeelt: schaal, cesuur, feedbackstijl, uit de formulieren zelf
 - `transcripts/` — uitgeschreven gesprekken van 01-09 en 03-09 (Close Notetaker)
 - `bronnen/` — de twee NVAO-visitatierapporten als PDF en als tekst
 - `raw/` — alle 106 pagina's van breederode.nl (WordPress REST-dump van 09-09-2026)

@@ -4,7 +4,9 @@ _Opgesteld 21-09-2026. Bron: de negen Gmail-threads met breederode.nl waarin Dan
 
 **Testdag: woensdag 23 september 2026, 09:00 tot 12:30, op locatie Posthumalaan 120 Rotterdam.** Staat zo in Dantes agenda en zo in de mail.
 
-Vijf mensen leverden tussen 08-09 en 09-09 twintig bijlagen aan, voor drie opleidingen. Dit bestand maakt die stapel navolgbaar.
+Vijf mensen leverden tussen 08-09 en 09-09 **26 bijlagen** aan, waarvan **24 unieke documenten** (Kas stuurde twee bestanden van Marina nog eens mee). Drie opleidingen. Dit bestand maakt die stapel navolgbaar.
+
+**Alles staat in Drive**, in `breederode-hogeschool/test dag/`, per vak in een eigen map. Sinds 21-09 verplaatst en ingedeeld. De beoordelingsstijl per opleiding staat in `09-beoordelingsstijlen.md`.
 
 ## De mailronde in het kort
 
@@ -92,7 +94,7 @@ Drie mensen, elk een ander stuk. Marina het kader, Kas en Selma de beoordeelde v
 |---|---|
 | Studentwerk, **onvoldoende** | `Voorbeeld 1 verslag_resultaat onvoldoende.docx` |
 | Studentwerk, **voldoende** | `Voorbeeld 2 beoordeling goed.docx` |
-| Beoordelingscriteria | `Beoordelingsformulier.docx` |
+| Beoordelingscriteria | `Beoordelingsformulier (Selma, oude rubric).docx` |
 
 Selma leverde een expliciet paar, één onvoldoende en één voldoende. Dat markeert de grens en is daarmee het waardevolste wat binnen is. Zie de rubric-kwestie hieronder.
 
@@ -107,6 +109,8 @@ Marina schreef op 08-09 direct aan Dante:
 > "Zoals je kunt zien, is de beoordelingsrubric voor nieuwe groepen aangepast ten opzichte van de beoordelingsrubric bij deze versies van de CAT."
 
 De lege rubric die we hebben is **versie 4.0 van 10-06-2026** en geldt voor nieuwe groepen. De ingevulde beoordelingen van Kas en Selma zijn gemaakt tegen een **oudere** rubric. Oud en nieuw liggen door elkaar in één stapel.
+
+> **BIJGEWERKT 21-09-2026, na het uitlezen van de formulieren.** De analyse hieronder was te voorzichtig. De nieuwe rubric v4.0 blijkt de oude puntenrubric te zijn met de punten eraf: 4 punten werd Goed, 2 werd Voldoende, 0 werd Onvoldoende, en de descriptortekst in de kolom Voldoende is woordelijk de oude 2-puntenkolom. De acht criteria zijn identiek. Wat echt veranderde is de cesuur, van compenseren naar geen compensatie, en het cijfer is vervallen. De oude ingevulde voorbeelden zijn dus wél bruikbaar met die mapping. De volledige uitwerking staat in `09-beoordelingsstijlen.md`.
 
 ### Niet kalibreren op die stapel
 

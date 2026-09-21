@@ -15,6 +15,7 @@ Account. Particuliere hogeschool in Rotterdam, zorg en welzijn, deeltijd. Sinds 
 - `06-taal-en-haakjes.md` — hun vocabulaire en de haakjes met bron
 - `07-beloofde-features.md` — alles wat we ze over de tool hebben verteld, groen/oranje/rood
 - `08-aangeleverd-materiaal.md` — wat de drie opleidingen voor de testdag aanleverden, per vak, plus de rubric-kwestie bij POH-6
+- `09-beoordelingsstijlen.md` — hoe elke opleiding beoordeelt, uit de formulieren zelf: schaal, cesuur, feedbackstijl
 - `CLAUDE.md` — de regels voor dit account
 - `breederode-testdag-organogram.pdf` — de negen mensen achter het CAT-materiaal, drie takken, stand 21-09-2026
 - `breederode-organogram.pdf` — oudere versie, 16-09-2026

@@ -123,6 +123,30 @@ Een vak inrichten kost de docent drie dingen:
 
 Daarna leveren studenten in zoals altijd. Eduface maakt de feedback, die direct of na goedkeuring naar de student gaat. Cijfers en feedback synchroniseren automatisch terug naar het LMS of VLE.
 
+### De indeling: cursus, opdracht, vak
+
+_Opgegeven door Dante op 21-09-2026._
+
+Het product is opgedeeld in **cursussen**. In een cursus zit een **opdracht**, en dat is één vak. Verkoop je aan een instelling met drie opleidingen die elk een eigen opdracht inleveren, dan zijn dat dus drie cursussen, elk met een eigen tab en een eigen instelling. Opleidingen hoeven niet op dezelfde manier te beoordelen om in hetzelfde systeem te zitten. Dat is een verkoopargument bij elke instelling met meerdere opleidingen.
+
+### Beoordelingsopties, de keuze per opdracht
+
+_Uit de interface, gezien op 21-09-2026._
+
+Onder **Beoordelingsopties** kiest de docent per opdracht één schaal:
+
+| Optie | Wat het doet |
+|---|---|
+| Puntengebaseerde beoordeling | elk criterium een score van 1 tot 10 |
+| Voldoende/Onvoldoende-beoordeling | elk criterium voldoende of onvoldoende |
+| Beschrijvende beoordelingsniveaus | elk criterium Onvoldoende, Voldoende, Goed of Uitstekend |
+| Uitgebreide beschrijvende beoordelingsniveaus | zeven niveaus, van Ruim onvoldoende tot Uitmuntend |
+| Geen beoordeling | criteria alleen voor feedback, er komt geen beoordeling |
+
+**De zeven niveaus zijn gebouwd voor een specifieke use case van Bath Spa University** (Dante, 21-09-2026). Niet standaard voorstellen bij andere instellingen, tenzij hun eigen rubric echt zeven niveaus met omschrijvingen heeft.
+
+Onder **Feedbackopties** staan daarnaast losse schakelaars voor summatieve feedback: algemene feedback per rubriekcriterium met een instelbaar maximum aantal woorden, algemene feedback op de hele opdracht, en specifieke opmerkingen per rubriekcriterium. Die staan los van de schaal, dus **"Geen beoordeling" sluit feedback niet uit**: je kunt de criteria alleen als feedbackkader gebruiken.
+
 ## Formatief en summatief
 
 **Formatief**, feedback tijdens het leren:
