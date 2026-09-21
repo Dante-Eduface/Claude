@@ -32,12 +32,18 @@ BENEFITS = [
     ('ontkoppeld', 'Grading Capacity,\nDecoupled from Headcount',
      'Output no longer rises and falls with instructor headcount.'),
     ('klok', 'More Time to Teach,\nLess Evening Work',
-     'Supports instructor retention.'),
+     'Supports instructor retention. Instructor overtime is one of the '
+     'largest variable cost items for education directors, so reduced '
+     'grading time directly protects budget.'),
     ('trend', 'Scales Without\nProportional Cost',
-     'New campuses and programs, without headcount growing 1:1.'),
+     'New campuses and programs, without headcount growing 1:1. Higher '
+     'course completion rates increase revenue.'),
 ]
 
-ROW_Y = 378
+# Kolom 2 is met de langere tekst zes regels geworden. Vanaf de oude ROW_Y
+# liep die tot y=1006, dwars door de voetlijn; het hele blok schuift daarom
+# omhoog en hangt nu 48px onder de haarlijn.
+ROW_Y = 300
 # Vaste y voor kop en body, zodat de drie kolommen op dezelfde regels landen
 # ook als één kop een regel langer wordt.
 HEAD_Y, BODY_Y = ROW_Y + 178, ROW_Y + 350

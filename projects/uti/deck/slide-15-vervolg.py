@@ -1,50 +1,64 @@
 """Vervolgstappen. Navy, want hij sluit het deck af.
 
-Vier stappen zijn een volgorde, geen rijtje losse kaarten. Daarom staan ze op
-één horizontale as: de lijn loopt door alle vier de tegels, zodat je ziet dat
+Vijf stappen zijn een volgorde, geen rijtje losse kaarten. De as staat
+rechtop: de lijn loopt verticaal door alle vijf de tegels, zodat je ziet dat
 stap 2 pas komt na stap 1. De volgorde zit in de nummering, niet in extra
 woorden als "eerst". Stap 1 staat op een groene tegel omdat dat de enige stap
-is die nu gevraagd wordt; de andere drie zijn het pad daarna.
+is die nu gevraagd wordt; de rest is het pad daarna.
+
+Liggend paste dit niet meer. Met vijf stappen wordt een kolom 298px breed en
+dan zou de langste stap acht regels worden en door de voetlijn lopen; kleiner
+zetten dan 32px mag niet. Rechtop krijgt de tekst een baan van 1100px en
+wordt diezelfde stap twee regels.
 """
-from deckbuild import rect, text, tile, foot, render_html, shoot, cols, \
+from deckbuild import rect, text, tile, foot, render_html, shoot, \
     GREEN, WHITE, INV_SOFT, INV_RULE, INK900, HEAD, BODY, \
-    M, W, TITLE, SUB, TEXT, CAPTION
+    M, W, TITLE, TEXT, CAPTION
 
 els = []
 
 els += [text(M, 88, W - 2 * M, TITLE * 1.3, 'Proposed Next Steps',
              font=HEAD, size=TITLE, bold=True, color=WHITE, align='left', ls=1.04)]
 
-# Regelafbrekingen staan vast: zo houden alle vier de koppen twee regels en
-# loopt de bodytekst overal op dezelfde hoogte door.
 STEPS = [
     ('mensen', 'Confirm Priority\nand Budget',
-     'Gauge with the Executive\nBoard whether this is\na priority now.'),
+     'Gauge with the Executive Board whether this is a priority now.'),
     ('globe', 'Validate\nin the U.S.',
-     'On-site with instructors,\nstudents, and leadership.'),
+     'On-site with instructors, students, and leadership. Legal and IT '
+     'validation, approximately one month or more.'),
     ('vlag', 'Pilot the\nStart Group',
-     'Launch with a\nself-scaling license.'),
+     'Launch with a self-scaling license. On-site instructor training support '
+     'from the Eduface team at pilot start. Target launch December 2026.'),
+    ('route', 'Programmatic\nExpansion',
+     'Roll out to additional programs following pilot success.'),
     ('kalender', 'Full Institutional\nIntegration',
-     'Roll out institution-wide\nfrom next academic year.'),
+     'Roll out institution-wide from next academic year.'),
 ]
 
-c4, w4 = cols(4)
-NUM_Y, TILE_Y, TILE = 320, 372, 112
-HEAD_Y, BODY_Y = 536, 672
+ROW_Y0, ROW_H, TILE = 262, 128, 80
+NUM_X, TILE_X = M, M + 72
+HEAD_X, HEAD_W = TILE_X + TILE + 40, 340
+BODY_X = HEAD_X + HEAD_W + 48
+BODY_W = W - M - BODY_X
+TILE_DY = (ROW_H - TILE) / 2
 
-# de as die de vier stappen tot één volgorde maakt
-els += [rect(c4[0], TILE_Y + TILE / 2, c4[-1] - c4[0], 2, INV_RULE)]
+# De as eerst, zodat de tegels erop liggen in plaats van eronder.
+AXIS_X = TILE_X + TILE / 2
+els += [rect(AXIS_X - 1, ROW_Y0 + ROW_H / 2, 2,
+             (len(STEPS) - 1) * ROW_H, INV_RULE)]
 
-for i, (cx, (icon, head, body)) in enumerate(zip(c4, STEPS)):
+for i, (icon, head, body) in enumerate(STEPS):
+    y = ROW_Y0 + i * ROW_H
     first = i == 0
-    els += tile(cx - TILE / 2, TILE_Y, icon, tone='navy' if first else 'green',
-                fill=GREEN if first else INK900, size=TILE, r=22, ic=56)
-    els += [text(cx - w4 / 2, NUM_Y, w4, 36, f'0{i+1}', font=HEAD, size=CAPTION,
-                 color=GREEN if first else INV_SOFT, align='center', ls=1.0),
-            text(cx - w4 / 2, HEAD_Y, w4, 116, head, font=HEAD, size=SUB,
-                 bold=True, color=WHITE, align='center', ls=1.18),
-            text(cx - w4 / 2, BODY_Y, w4, 150, body, font=BODY, size=TEXT,
-                 color=INV_SOFT, align='center', ls=1.4)]
+    els += tile(TILE_X, y + TILE_DY, icon, tone='navy' if first else 'green',
+                fill=GREEN if first else INK900, size=TILE, r=18, ic=40)
+    els += [text(NUM_X, y + TILE_DY + 22, 56, 36, f'0{i+1}', font=HEAD,
+                 size=CAPTION, color=GREEN if first else INV_SOFT,
+                 align='left', ls=1.0),
+            text(HEAD_X, y + 16, HEAD_W, TEXT * 2.6, head, font=HEAD, size=TEXT,
+                 bold=True, color=WHITE, align='left', ls=1.2),
+            text(BODY_X, y + 16, BODY_W, TEXT * 2.6, body, font=BODY, size=TEXT,
+                 color=INV_SOFT, align='left', ls=1.45)]
 
 els += foot(dark=True, page=15, source='Concept, for discussion.')
 

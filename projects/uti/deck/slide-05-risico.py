@@ -43,11 +43,10 @@ els += tile(X2, TILE_Y, 'instelling', tone='green', fill=INK900, size=TILE, r=20
 els += [text(X2, HEAD_Y, CW, SUB * 2.6, 'Growth Plans\nWiden the Gap',
              font=HEAD, size=SUB, bold=True, color=WHITE, align='left', ls=1.15)]
 
-NUMS = [('12–16', 'new campuses'), ('50–70', 'new programs')]
-# NUM_W moet het getal op één regel houden: op TITLE meet '12–16' met een
-# en-streepje net meer dan 200px, en bij afbreken lopen de twee getallen
-# over elkaar heen.
-NUM_Y, NUM_STEP, NUM_W, NUM_GAP = HEAD_Y + 132, 104, 264, 28
+NUMS = [('2', 'new campuses per year')]
+# NUM_W volgt de breedte van het getal zelf: bij één cijfer zou de oude 264
+# (gemeten op '12–16') een gat van twee tekens tussen cijfer en label laten.
+NUM_Y, NUM_STEP, NUM_W, NUM_GAP = HEAD_Y + 132, 104, 72, 28
 for i, (val, label) in enumerate(NUMS):
     y = NUM_Y + i * NUM_STEP
     # getal en label op één regel: samen één feit, niet twee kolommen
@@ -56,7 +55,7 @@ for i, (val, label) in enumerate(NUMS):
             text(X2 + NUM_W + NUM_GAP, y + 30, CW - NUM_W - NUM_GAP, TEXT * 1.6,
                  label, font=BODY, size=TEXT, color=INV_SOFT, align='left', ls=1.2)]
 
-els += foot(dark=True, page=5, source='North Star Phase II, by FY2029.')
+els += foot(dark=True, page=5, source='North Star strategy target.')
 
 DARK = True
 
