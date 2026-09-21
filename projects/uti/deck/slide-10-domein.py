@@ -41,12 +41,15 @@ els += [rect(NAV_X + NAV_W + 60, NAV_Y0, 1, ROW_H * len(CAPS) - 26, INV_RULE)]
 CONTENT_X = NAV_X + NAV_W + 60 + 80
 CONTENT_W = W - M - CONTENT_X
 
+# Vier regels, hard afgebroken. Let op: een breedte opmeten met PIL onderschat
+# wat de browser nodig heeft, dus regels die op papier passen lopen alsnog om.
+# Deze indeling is gerenderd gecontroleerd, niet berekend.
 els += [text(CONTENT_X, NAV_Y0 - 14, CONTENT_W, HERO * 4.2,
              'Built for\ntechnical fields\nand domain\nknowledge',
              font=HEAD, size=HERO, bold=True, color=WHITE, align='left', ls=0.98)]
 
-# Vier regels claim in plaats van drie, dus de body schuift één regelhoogte mee.
-# 540 houdt de kop-naar-body afstand exact gelijk aan slide 09.
+# Vier regels claim, dus de body schuift één regelhoogte mee ten opzichte van
+# slide 09: de afstand kop-naar-body blijft over het blok gelijk.
 els += [text(CONTENT_X, NAV_Y0 + 540, min(CONTENT_W, 860), 160,
              'Purpose-built for technical, vocational subject matter, '
              'not a generic writing tool.',

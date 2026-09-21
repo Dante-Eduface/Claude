@@ -36,10 +36,10 @@ TILE, IC = 120, 56
 
 # item 1: het getal draagt de slide
 els += tile(X1, ROW_ICON, 'klok', tone='navy', fill=INK50, size=TILE, r=20, ic=IC)
-els += [text(X1, ROW_HEAD, COL1_W, HERO * 1.15, '2–4 hrs', font=HEAD, size=HERO,
+els += [text(X1, ROW_HEAD, COL1_W, HERO * 1.15, '2 – 4 hrs', font=HEAD, size=HERO,
              bold=True, color=NAVY, align='left', ls=0.98),
         # eenheid hangt op de basislijn van het getal, niet eronder
-        text(X1 + 508, ROW_HEAD + 65, 192, SUB * 1.3, 'per day', font=HEAD,
+        text(X1 + 560, ROW_HEAD + 65, 192, SUB * 1.3, 'per day', font=HEAD,
              size=SUB, color=INK500, align='left', ls=1.0),
         text(X1, ROW_BODY, COL1_W - 40, TEXT * 4,
              'Spent grading, per instructor, often in '

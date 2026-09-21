@@ -36,6 +36,24 @@ W, H_, M, GAP = 1920, 1080, 120, 48
 def rect(x, y, w, h, fill, r=0):        return dict(k='rect', x=x, y=y, w=w, h=h, fill=fill, r=r)
 def oval(x, y, d, fill, line=None, lw=0): return dict(k='oval', x=x, y=y, w=d, h=d, fill=fill, line=line, lw=lw)
 def pic(path, x, y, w, h):              return dict(k='pic', p=path, x=x, y=y, w=w, h=h)
+
+def _size(path):
+    from PIL import Image
+    return Image.open(os.path.join(os.path.dirname(os.path.abspath(__file__)), path)).size
+
+def fit(path, x, y, w, h, align='center'):
+    """Past het beeld in het vak met behoud van verhouding.
+
+    De HTML-preview letterboxt vanzelf via object-fit, de pptx rekt op tot het
+    vak dat je opgeeft. Daardoor kon een logo er in de preview goed uitzien en
+    in PowerPoint uitgerekt staan. Door de rechthoek hier één keer uit te
+    rekenen krijgen beide renderers exact dezelfde geometrie.
+    """
+    iw, ih = _size(path)
+    s = min(w / iw, h / ih)
+    fw, fh = iw * s, ih * s
+    fx = x if align == 'left' else x + (w - fw) / 2
+    return pic(path, fx, y + (h - fh) / 2, fw, fh)
 def text(x, y, w, h, t, *, font=BODY, size=TEXT, bold=False, color=NAVY,
          align='center', ls=1.15):
     return dict(k='text', x=x, y=y, w=w, h=h, t=t, font=font, size=size,
@@ -85,18 +103,27 @@ def column(x, y, w, h, icon, head, body, dark=False, pad=48, r=24):
     return out
 
 def lockup(x, y, dark=False, h=40):
-    """Eduface naast de klant. Zodra assets/uti-logo-*.png bestaat pakt hij het
-    logo; tot die tijd staat de naam er uitgeschreven, zodat er geen gat valt."""
-    out = [pic('assets/logo_white.png' if dark else 'assets/logo_navy.png',
-               x, y, 168, h)]
-    uti = f"assets/uti-logo-{'white' if dark else 'navy'}.png"
-    out += [rect(x + 208, y - 2, 1, h + 4, INV_RULE if dark else INK200)]
-    if os.path.exists(os.path.join(os.path.dirname(__file__), uti)):
-        out += [pic(uti, x + 248, y, 190, h)]
-    else:
-        out += [text(x + 248, y + 8, 520, h, 'Universal Technical Institute',
-                     size=CAPTION, color=INV_SOFT if dark else INK500,
-                     align='left', ls=1.2)]
+    """Eduface naast de klant, gescheiden door een dun streepje.
+
+    Beide logo's gaan door fit(), zodat ze nooit uitgerekt kunnen raken. Het
+    UTI-woordmerk is bijna zwart en zou op een navy slide wegvallen, dus daar
+    ligt het op een wit vlakje. Dezelfde oplossing als bij de partnerlogo's in
+    het Windesheim-deck.
+    """
+    out = [fit('assets/logo_white.png' if dark else 'assets/logo_navy.png',
+               x, y, 168, h, align='left')]
+
+    rule_x = x + 190
+    out += [rect(rule_x, y - 2, 1, h + 4, INV_RULE if dark else INK200)]
+
+    # Iets hoger dan het Eduface-woordmerk: UTI is een gestapeld logo van drie
+    # regels, dus op gelijke hoogte oogt het kleiner dan het is.
+    uti = fit('assets/uti-logo.png', rule_x + 40, y - 8, 220, h + 16, align='left')
+    if dark:
+        pad = 14
+        out += [rect(uti['x'] - pad, uti['y'] - pad,
+                     uti['w'] + 2 * pad, uti['h'] + 2 * pad, WHITE, r=10)]
+    out += [uti]
     return out
 
 def foot(dark=False, page=None, source=None):
@@ -115,7 +142,26 @@ def foot(dark=False, page=None, source=None):
     return out
 
 # ---------------------------------------------------------------- renderers
+def audit_pics(slides):
+    """Weigert te bouwen als een afbeelding in een vak staat waarvan de
+    verhouding niet klopt. Stil vervormen mag niet kunnen: precies zo stond het
+    Eduface-logo vijftien slides lang 14% uitgerekt zonder dat de preview dat
+    liet zien."""
+    fouten = []
+    for n, els in enumerate(slides, 1):
+        for el in els:
+            if el['k'] != 'pic':
+                continue
+            iw, ih = _size(el['p'])
+            na, pa = iw / ih, el['w'] / el['h']
+            if abs(pa - na) / na > 0.02:
+                fouten.append(f"slide {n}: {el['p']} is {na:.2f} maar staat in een "
+                              f"vak van {pa:.2f} ({el['w']:.0f}x{el['h']:.0f})")
+    if fouten:
+        raise ValueError('Vervormde afbeeldingen, gebruik fit():\n  ' + '\n  '.join(fouten))
+
 def render_pptx(slides, path):
+    audit_pics(slides)
     from pptx import Presentation
     from pptx.util import Emu, Pt
     from pptx.dml.color import RGBColor
@@ -175,7 +221,12 @@ def render_html(els, path, dark=False, prefix='../'):
                          f'border-radius:50%{line}"></div>')
         elif k == 'pic':
             src = el['p'] if el['p'].startswith(('/', 'http')) else prefix + el['p']
-            parts.append(f'<img src="{src}" style="position:absolute;{st}object-fit:contain">')
+            # Bewust 'fill' en niet 'contain': pptx rekt een afbeelding op tot het
+            # vak dat je opgeeft. Met 'contain' paste de browser het beeld netjes
+            # in en verborg de preview elke vervorming: zo stond het Eduface-logo
+            # vijftien slides lang uitgerekt in de pptx terwijl de preview klopte.
+            # Nu tonen preview en pptx hetzelfde, en zorgt fit() voor de juiste maat.
+            parts.append(f'<img src="{src}" style="position:absolute;{st}object-fit:fill">')
         elif k == 'text':
             parts.append(
                 f'<div style="position:absolute;{st}font-family:\'{el["font"]}\',sans-serif;'
@@ -183,11 +234,17 @@ def render_html(els, path, dark=False, prefix='../'):
                 f'color:#{el["color"]};text-align:{el["align"]};line-height:{el["ls"]};'
                 f'white-space:pre-line">{H.escape(el["t"])}</div>')
     bg = f'#{NAVY}' if dark else '#fff'
+    # De merkfonts komen van schijf, niet van Google Fonts. Het net hier blokkeert
+    # fonts.googleapis.com, dus elke preview werd stilletjes in DejaVu Sans
+    # gerenderd. Daardoor klopten mijn regelafbrekingen en kolombreedtes niet met
+    # wat er in PowerPoint gebeurt, waar de pptx wel League Spartan en Inter pakt.
+    fonts = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'assets', 'fonts')
     open(path, 'w', encoding='utf-8').write(
         '<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">'
-        '<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800'
-        '&family=Inter:wght@400;450;500;600;700&display=swap" rel="stylesheet">'
-        '<style>*{margin:0;padding:0;box-sizing:border-box}html,body{background:#fff}'
+        '<style>'
+        f'@font-face{{font-family:"League Spartan";src:url("file://{fonts}/LeagueSpartan-Bold.ttf");font-weight:400 800}}'
+        f'@font-face{{font-family:"Inter";src:url("file://{fonts}/Inter-Regular.ttf");font-weight:400 700}}'
+        '*{margin:0;padding:0;box-sizing:border-box}html,body{background:#fff}'
         f'.slide{{position:relative;width:1920px;height:1080px;overflow:hidden;background:{bg}}}'
         '</style></head><body><div class="slide">' + ''.join(parts) + '</div></body></html>')
     return path

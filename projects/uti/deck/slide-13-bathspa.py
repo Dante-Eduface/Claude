@@ -23,7 +23,7 @@ els += [text(M, 88, W - 2 * M, TITLE * 2.2,
              font=HEAD, size=TITLE, bold=True, color=NAVY, align='left', ls=1.04)]
 
 # --- dominante vergelijking: twee bereiken op één schaal van 0 tot 30 min ---
-LANE_X, LANE_W = 560, 1000
+LANE_X, LANE_W = 560, 960
 SCALE_MAX = 30
 PXM = LANE_W / SCALE_MAX
 ROW_Y, ROW_H, ROW_GAP = 306, 88, 40
@@ -41,7 +41,7 @@ for i, (label, lo, hi, bar, label_color, value) in enumerate(ROWS):
                  color=label_color, align='right', ls=1.2),
             rect(LANE_X, y, LANE_W, ROW_H, INK50),
             rect(x_at(lo), y, x_at(hi) - x_at(lo), ROW_H, bar),
-            text(LANE_X + LANE_W + 40, y + 20, 260, 56, value, font=HEAD, size=SUB,
+            text(LANE_X + LANE_W + 40, y + 20, 240, 56, value, font=HEAD, size=SUB,
                  bold=True, color=NAVY, align='left', ls=1.0)]
 
 AXIS_TOP, AXIS_BOT = ROW_Y, ROW_Y + 2 * ROW_H + ROW_GAP

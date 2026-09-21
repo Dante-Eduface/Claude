@@ -15,7 +15,7 @@ from deckbuild import rect, text, foot, render_html, shoot, \
 els = []
 
 # --- kop -------------------------------------------------------------------
-els += [text(M, 88, W - 2 * M, TITLE * 1.3, "Today's Agenda",
+els += [text(M, 88, W - 2 * M, TITLE * 1.3, 'Agenda',
              font=HEAD, size=TITLE, bold=True, color=NAVY, align='left', ls=1.04)]
 
 # --- twee kolommen: 5 links, 4 rechts --------------------------------------

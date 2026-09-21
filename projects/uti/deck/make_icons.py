@@ -5,8 +5,10 @@ uitgerend. Zo kan hetzelfde icoon op wit (navy) en op navy (wit of groen)
 staan zonder dat er ergens een los bestandje bij gemaakt hoeft te worden.
 """
 import subprocess, os
+from PIL import Image
 
 CHROME = os.environ.get('CHROME_PATH', '/opt/pw-browsers/chromium')
+SIZE = 296
 TONES = {'navy': '002333', 'white': 'FFFFFF',
          'green': '00E075', 'greendeep': '007B54'}
 
@@ -15,10 +17,11 @@ ICONS = {
     # Vizier in plaats van drie ringen: op 48px liepen de ringen tegen elkaar.
     'doel':       '<circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.6"/>'
                   '<path d="M12 2v3.5M12 18.5V22M2 12h3.5M18.5 12H22"/>',
-    # Tandwiel in plaats van moersleutel: de sleutel viel op klein formaat uiteen.
-    'sleutel':    '<circle cx="12" cy="12" r="3.2"/>'
-                  '<path d="M12 2.5v3M12 18.5v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1'
-                  'M2.5 12h3M18.5 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/>',
+    # Moersleutel. Viel eerder "uit elkaar", maar dat kwam door de afsnij-bug
+    # hieronder en niet door het formaat; met een heel canvas klopt hij.
+    'sleutel':    '<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77'
+                  'a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91'
+                  'a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>',
     # Instellingsgebouw, geen woonhuis: dit gaat over campussen, niet over thuis.
     'instelling': '<path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/>'
                   '<path d="M9 21v-5h6v5"/><path d="M9 9h2M13 9h2M9 12.5h2M13 12.5h2"/>',
@@ -70,16 +73,23 @@ for name, paths in ICONS.items():
         open(tmp, 'w').write(
             '<!DOCTYPE html><html><head><meta charset="utf-8"><style>'
             'html,body{margin:0;padding:0;background:transparent}'
-            'svg{display:block;width:296px;height:296px}'
+            f'svg{{display:block;width:{SIZE}px;height:{SIZE}px}}'
             '</style></head><body>'
             f'<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" '
             f'stroke="#{hexc}" stroke-width="2.2" stroke-linecap="round" '
             f'stroke-linejoin="round">{paths}</svg></body></html>')
+        # Headless Chrome geeft een viewport die ~88px korter is dan het
+        # gevraagde venster. Op 296x296 sneed dat de onderste 30% van elk
+        # icoon weg: de klok had geen onderkant, het gebouw geen voet. Dus
+        # hoger schieten en daarna terugsnijden naar het vierkant.
         subprocess.run([CHROME, '--headless', '--disable-gpu', '--no-sandbox',
-                        f'--screenshot={out}', '--window-size=296,296',
+                        f'--screenshot={out}', f'--window-size={SIZE},{SIZE + 160}',
                         '--default-background-color=00000000',
                         '--hide-scrollbars', '--virtual-time-budget=1500', tmp],
                        capture_output=True)
         os.remove(tmp)
+        im = Image.open(out)
+        if im.size != (SIZE, SIZE):
+            im.crop((0, 0, SIZE, SIZE)).save(out)
 
 print(f'{len(ICONS) * len(TONES)} icons gerenderd')
