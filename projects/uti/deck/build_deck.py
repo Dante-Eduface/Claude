@@ -32,9 +32,10 @@ SLIDES = [
     (10, 'slide-10-domein.py'),
     (11, 'slide-11-instelling.py'),
     (12, 'slide-12-configuratie.py'),
-    (13, 'slide-13-bathspa.py'),
-    (14, 'slide-14-aanbod.py'),
-    (15, 'slide-15-vervolg.py'),
+    (13, 'slide-13-demo.py'),
+    (14, 'slide-14-bathspa.py'),
+    (15, 'slide-15-aanbod.py'),
+    (16, 'slide-16-vervolg.py'),
 ]
 
 OUT = 'UTI-Eduface-deck.pptx'

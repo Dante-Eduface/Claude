@@ -60,10 +60,10 @@ for i, (icon, head, body) in enumerate(STEPS):
             text(BODY_X, y + 16, BODY_W, TEXT * 2.6, body, font=BODY, size=TEXT,
                  color=INV_SOFT, align='left', ls=1.45)]
 
-els += foot(dark=True, page=15, source='Concept, for discussion.')
+els += foot(dark=True, page=16, source='Concept, for discussion.')
 
 DARK = True
 
 if __name__ == '__main__':
-    shoot(render_html(els, 'preview/slide-15.html', dark=DARK), 'preview/slide-15.png')
-    print('preview/slide-15.png')
+    shoot(render_html(els, 'preview/slide-16.html', dark=DARK), 'preview/slide-16.png')
+    print('preview/slide-16.png')

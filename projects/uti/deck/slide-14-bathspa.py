@@ -73,10 +73,10 @@ for i, (cx, (icon, val, lbl)) in enumerate(zip(c3, EVIDENCE)):
             text(cx - w3 / 2 + 144, BAND_Y + 112, w3 - 144, 90, lbl, font=BODY,
                  size=CAPTION, color=INK500, align='left', ls=1.35)]
 
-els += foot(page=13, source='Source: Bath Spa University · Eduface pilot data.')
+els += foot(page=14, source='Source: Bath Spa University · Eduface pilot data.')
 
 DARK = False
 
 if __name__ == '__main__':
-    shoot(render_html(els, 'preview/slide-13.html', dark=DARK), 'preview/slide-13.png')
-    print('preview/slide-13.png')
+    shoot(render_html(els, 'preview/slide-14.html', dark=DARK), 'preview/slide-14.png')
+    print('preview/slide-14.png')

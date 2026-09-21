@@ -31,17 +31,21 @@ W, H, MARGE = 1920, 1080, 120
 REFERENTIE_PDF = ('/root/.claude/uploads/0449f0ab-9edd-598c-b3bd-ed4372c7b86b/'
                   'c8727ba2-UTI_-_Eduface_presentation.pdf')
 
+AANTAL_SLIDES = 16
+
 MOET_ERIN = [
     (2, 'agenda'),
+    (2, 'demo'),
     (4, '2 - 4 hrs'),
     (4, 'tutoring and remedial support'),
     (5, 'new campuses per year'),
     (7, 'largest variable cost items'),
     (7, 'higher course completion rates'),
     (12, 'blackboard and canvas integration is a precondition'),
-    (15, 'programmatic expansion'),
-    (15, 'legal and it validation'),
-    (15, 'target launch december 2026'),
+    (13, 'demo'),
+    (16, 'programmatic expansion'),
+    (16, 'legal and it validation'),
+    (16, 'target launch december 2026'),
 ]
 
 
@@ -58,8 +62,8 @@ def controleer():
     fouten = []
 
     n_slides = len(p.slides._sldIdLst)
-    if n_slides != 15:
-        fouten.append(f'{n_slides} slides in plaats van 15')
+    if n_slides != AANTAL_SLIDES:
+        fouten.append(f'{n_slides} slides in plaats van {AANTAL_SLIDES}')
 
     breedte_inch = round(p.slide_width / 914400, 2)
     if breedte_inch != 13.33:
@@ -110,5 +114,5 @@ if __name__ == '__main__':
         for f in fouten:
             print('  -', f)
         sys.exit(1)
-    print(f'{PPTX} in orde: 15 slides, geen vervormde afbeeldingen, '
+    print(f'{PPTX} in orde: {AANTAL_SLIDES} slides, geen vervormde afbeeldingen, '
           'niets buiten de marge, alle verplichte teksten aanwezig')

@@ -62,10 +62,10 @@ for cx, (icon, label) in zip(c4, RECAP):
     els += [text(x + 92, 840, w4 - 92, 40, label, font=BODY, size=CAPTION,
                  color=INK500, align='left', ls=1.3)]
 
-els += foot(dark=False, page=14)
+els += foot(dark=False, page=15)
 
 DARK = False
 
 if __name__ == '__main__':
-    shoot(render_html(els, 'preview/slide-14.html', dark=DARK), 'preview/slide-14.png')
-    print('preview/slide-14.png')
+    shoot(render_html(els, 'preview/slide-15.html', dark=DARK), 'preview/slide-15.png')
+    print('preview/slide-15.png')

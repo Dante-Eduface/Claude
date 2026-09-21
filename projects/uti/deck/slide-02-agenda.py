@@ -1,6 +1,6 @@
 """Agenda: wegwijzer, geen betoog.
 
-Negen items passen niet in één leesbare kolom, dus twee kolommen van 5 en 4,
+Tien items passen niet in één leesbare kolom, dus twee kolommen van 5,
 gelezen van boven naar beneden en dan naar rechts. Het nummer staat links in de
 rij op caption-formaat in muted, het label draagt de rij op body-formaat in
 navy: zo scant het oog de labels en niet de cijfers. Onder elke rij één
@@ -26,6 +26,7 @@ ITEMS = [
     'The Proposed Model',
     'Benefits',
     'Required Capabilities',
+    'Demo',
     'Proven Results',
     'Our Solution',
     'Next Steps',
