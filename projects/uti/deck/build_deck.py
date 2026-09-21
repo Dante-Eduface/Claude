@@ -48,9 +48,13 @@ def load(path):
     return mod
 
 
-def main(preview=True):
+def main(preview=True, alleen=None, uit=None):
+    """alleen: lijst paginanummers voor een losse export, bijvoorbeeld [2, 13]."""
+    doel = uit or OUT
     built, missing = [], []
     for page, fname in SLIDES:
+        if alleen and page not in alleen:
+            continue
         if not os.path.exists(fname):
             missing.append((page, fname))
             continue
@@ -60,8 +64,8 @@ def main(preview=True):
     if missing:
         print('ONTBREKEND:', ', '.join(f'{p}:{f}' for p, f in missing))
 
-    render_pptx([canvas(dark) + els for _, _, els, dark in built], OUT)
-    print(f'{len(built)} slides -> {OUT}')
+    render_pptx([canvas(dark) + els for _, _, els, dark in built], doel)
+    print(f'{len(built)} slides -> {doel}')
 
     if preview:
         os.makedirs('preview', exist_ok=True)
@@ -72,4 +76,11 @@ def main(preview=True):
 
 
 if __name__ == '__main__':
-    main(preview='--no-preview' not in sys.argv)
+    # python3 build_deck.py                       het hele deck
+    # python3 build_deck.py --only 2,13 --out x.pptx   losse slides als eigen bestand
+    alleen = uit = None
+    if '--only' in sys.argv:
+        alleen = [int(n) for n in sys.argv[sys.argv.index('--only') + 1].split(',')]
+    if '--out' in sys.argv:
+        uit = sys.argv[sys.argv.index('--out') + 1]
+    main(preview='--no-preview' not in sys.argv, alleen=alleen, uit=uit)
