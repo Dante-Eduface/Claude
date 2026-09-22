@@ -1,6 +1,6 @@
 # Eduface
 
-_Laatst bijgewerkt: 2026-09-19._
+_Laatst bijgewerkt: 2026-09-22._
 
 Het bedrijf waar Dante werkt. Juridisch heet het **Blockbook B.V.**, daar komt zijn salaris ook vandaan. Naar buiten is alles Eduface. Dit bestand is alleen het minimum dat elke sessie nodig heeft: wat we verkopen, aan wie, en wie er werkt. Alles wat dieper gaat staat in een eigen bestand, zie **Waar de details staan**.
 
@@ -26,7 +26,9 @@ Noem je een cijfer of een klantervaring, zeg er altijd bij welke van de twee je 
 
 ## Aan wie we verkopen
 
-Universiteiten en hogescholen, én particuliere onderwijsinstellingen. Markten: Nederland, Verenigd Koninkrijk, Verenigde Staten.
+**Sinds 22-09-2026 volledig gericht op particuliere onderwijsinstellingen**, for-profit en non-profit, expliciet niet staatsgesubsidieerd. Nieuwe outreach richting publiek bekostigde universiteiten en hogescholen is afgeschaald. Lopende publieke deals met een champion (Bath Spa, Haagse Hogeschool) lopen door, maar krijgen geen nieuw sourcingbudget. De redenering staat in `Decisions/log.md` bij 22-09-2026.
+
+Markten: Nederland, Verenigd Koninkrijk, Verenigde Staten.
 
 ## Wie er werkt
 
@@ -39,6 +41,16 @@ Universiteiten en hogescholen, én particuliere onderwijsinstellingen. Markten: 
 | **Dante Torbed** | Customer Success Manager. Zie `Context/me.md`. |
 
 Wie eigenaar is van een deal verschilt per deal en staat in Close, bij de opportunity. Niet hier bijhouden.
+
+## Board en investeerders
+
+_Toegevoegd 22-09-2026, uit Jeroen._
+
+De board bestaat uit **ROM**, **Tjarko Kwee** en **Imec**. Jeroen doet de board meetings.
+
+OPEN: de exacte tranche-afspraken en milestones met ROM en Imec staan nergens vastgelegd. In `GTM/Campaigns/uk-outreach/README.md` staat een verwijzing naar een "125.000 second-tranche milestone" gekoppeld aan 2 betaalde Jisc/CHEST-pilots, maar die Jisc-doelen zijn in Q2 bewust geschrapt. Niet gebruiken tot Jeroen de werkelijke voorwaarden aanlevert. Zie `Context/open-vragen.md` (B1).
+
+Financiele cijfers (ARR, burn, runway, break-even) staan niet in deze repo, maar in het Excel financieel model. Zie de skill `eduface-cfo`.
 
 Het team communiceert over **WhatsApp**.
 
