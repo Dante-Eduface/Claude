@@ -2,6 +2,7 @@
 
 **Gesprek:** Dante met Phil Anthony, bij BPP (datum/tijd niet in de repo, gesprek is op korte termijn).
 **Contact:** Phil Anthony. Let op titel: hij heet zelf **"Head of Digital Learning (Education & AI)"**, niet exact "AI Lead and Digital Education Head". Zelfde functie-inhoud, andere officiële bewoording.
+**Eerder contact:** Dante heeft al eerder gesproken met **Joe Harris** en **Joel Mills** bij BPP (22-09-2026, uit de chat). Joe Harris is BPP Product & Technology, zijn Medium-quote over marking-snelheid staat in sectie 1. Joel Mills nog niet losstaand onderzocht.
 **Close CRM:** geen BPP-lead gevonden bij een eerste zoekopdracht. Nog checken/aanmaken.
 
 **Belangrijke kanttekening bij dit hele document:** alle vijf deelonderzoeken liepen tegen een geblokkeerde egress-proxy aan (WebFetch/curl geweigerd op vrijwel elk extern domein: bpp.com, linkedin.com, medium.com, qaa.ac.uk, kent.ac.uk, timeshighereducation.com, trustpilot.com, officeforstudents.org.uk, change.org, researchgate.net, discoveruni.gov.uk, zelfs wikipedia.org en google.com als test). Bijna alle bevindingen komen daarom uit **WebSearch-samenvattingen**, niet uit zelf gelezen brontekst — dat is zwakker bewijs dan de eigen regel van deze skill ("een snippet is geen bron") normaal toestaat. Twee documenten zijn wel volledig gelezen (BPP's eigen "Academic Practice"-beleid en het GenAI-studentendocument, beide op S3 gehost, niet op bpp.com zelf). De rest: behandel als plausibel, niet als geverifieerd, tot iemand met werkende toegang de pagina's zelf opent.
