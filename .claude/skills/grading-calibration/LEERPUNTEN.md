@@ -1,0 +1,35 @@
+# Leerpunten grading-calibration
+
+Append-only. Elke keer dat dit traject op een vak wordt losgelaten en iets oplevert dat de methode zelf scherper maakt, komt het hier, ook als het maar een klein detail is. Lees dit bestand voordat je aan een nieuw vak begint.
+
+Format: `[JJJJ-MM-DD] vak: wat de bevinding was | welke stap van de lus het raakt | wat ermee gedaan is`
+
+## Waarom dit bestand bestaat
+
+Elk vak dat door deze skill heen gaat leert iets over Eduface's eigen gedrag (de generatiestappen, wat wel en niet overleeft, wat de docent echt belangrijk vindt) dat niet vak-specifiek is. Zonder dit bestand vindt de volgende ronde dezelfde valkuilen opnieuw uit. Met dank aan het eerste vak, manuele therapie (CAT diagnostiek, docent Marloes de Graaf), waar de hele methode op gebouwd is.
+
+## Feedback die werkt
+
+Deze skill werkt in stappen. Zeg welke stap het raakt, dan is het te repareren:
+
+| Stap | Wat er dan mis is | Bruikbare feedback klinkt als |
+|---|---|---|
+| **Verzamelen** | een van de 7 materialen ontbreekt of is niet het juiste type | "dit is niet haar officiële beoordeling, dit is een concept" |
+| **Vergelijken** | een mismatch is op maar 1 student getoetst, of de tabel klopt niet | "dat criterium matchte bij de andere student wel, dus geen hotspot" |
+| **Diagnosticeren** | een oorzaak is aangenomen in plaats van uit de AI's eigen tekst gehaald | "dat is jouw interpretatie, niet wat de AI zelf zei" |
+| **Rubric-tekst schrijven** | de fix is te breed, te smal, of raakt de verkeerde zin | "dat maakt het criterium nu te soepel voor een ander geval" |
+| **Modelinstructies schrijven** | de tekst overleeft de generatiestap niet, of is te lang | "dit stuk is er weer uitgevallen na het regenereren" |
+| **Testen** | de varianten zijn niet tegen dezelfde vaste basistekst getest | "die twee opdrachten hadden een andere rubric-basis, dus dit is geen eerlijke vergelijking" |
+| **Concluderen** | de conclusie is op te weinig studenten, of verwart de twee assen (oordeel vs toon) | "dit zegt iets over de toon, niet over of het oordeel klopt" |
+
+Een correctie zonder de stap erbij kost een ronde uitzoeken welke stap het was.
+
+## Log
+
+- [2026-09-22] Manuele therapie (CAT diagnostiek, Breederode Hogeschool, docent Marloes de Graaf): eerste keer dat deze methode volledig is doorlopen, van los materiaal tot een geteste, winnende variant. | Alle stappen. | De hele methode in `SKILL.md` en `reference.md` is hierop gebouwd. Zie `examples/manuele-therapie-case-study.md` voor het volledige verloop, inclusief doodlopende hypotheses (onderwijsniveau bleek geen hefboom, zie hieronder).
+- [2026-09-22] Manuele therapie: de eerste hypothese voor waarom de AI te streng leek was het "onderwijsniveau"-instelling (Universiteit Master vs HBO). Getest door de instelling te wijzigen en dezelfde student opnieuw te laten beoordelen. | Diagnosticeren. | Geen enkel verschil in verdict. Vuistregel: test een hypothese altijd met een controlemeting voor je hem aanneemt, ook als hij plausibel klinkt (Breederode is een Hogeschool, geen Universiteit, dus "Universiteit Master" leek een voor de hand liggende boosdoener, maar bleek het niet te zijn). De echte oorzaak zat in de rubric-tekst zelf, niet in dit soort instellingen.
+- [2026-09-22] Manuele therapie: de rijkste diagnostische bron bleek een document waarin de docent haar eigen conceptcommentaar (Word-comments) had staan naast wat later de AI-comments werden, op dezelfde zinnen van dezelfde inzending. | Verzamelen / Diagnosticeren. | Vraag hier expliciet naar bij een nieuw vak: "heb je ooit zelf commentaar in een Word-versie van een inzending gezet, ook als concept?" Dat leverde het bewijs voor het drempel-mechanisme (zie `reference.md` punt 4), aggregate pass/fail-vergelijking alleen was daar niet genoeg voor.
+- [2026-09-22] Manuele therapie: Eduface's eigen PDF-naar-rubric conversie bleek niet deterministisch, twee keer hetzelfde bronbestand uploaden gaf andere bewoording (en op een paar plekken een net strengere lezing, zoals het woord "navolgbaar" dat er de tweede keer zelf bij kwam). | Testen. | Vanaf toen: altijd een vaste, zelf vastgestelde rubric-tekst in elke opdracht plakken, nooit een verse auto-generatie als "ongewijzigde controle" gebruiken. Staat nu als harde regel in `SKILL.md`.
+- [2026-09-22] Manuele therapie: modelinstructies bleken nooit rechtstreeks bewerkbaar, alleen via "Beschrijf je feedbackstijl" + "Opnieuw genereren". Twee pogingen om een zorgvuldig geschreven tekst daar doorheen te krijgen (eerst met kopjes, toen als lopende tekst, toen met een expliciete "vat niet samen"-instructie) verloren allebei dezelfde onderdelen: de voorbeeldzin, de hele Inline-opmerkingen-sectie, en het grootste deel van Beoordelingsstrengheid. | Modelinstructies schrijven. | Volledige tactiek staat nu in `reference.md` punt 7. Kernles: reken op verlies, schrijf dicht, één voorbeeld niet twee, en verwacht dat Inline opmerkingen via deze route structureel niet te sturen is.
+- [2026-09-22] Manuele therapie: een woordlimiet van 50 woorden op Algemene feedback toegevoegd aan de modelinstructies-tekst. Hertest op dezelfde 2 studenten. | Modelinstructies schrijven / Testen. | Verdicts bleven exact gelijk (geen regressie), en de tekst werd aantoonbaar minder sjabloonmatig (de herhaalde opener "Je deed goed werk met..." verdween volledig). Een harde woordlimiet is dus een goedkope, veilige toevoeging om standaard mee te testen bij een volgend vak.
+- [2026-09-22] Manuele therapie: bij het vergelijken van varianten bleek "alleen modelinstructies" het verdict op geen van de 8 criteria bij geen van de 2 studenten veranderde (0 flips), terwijl "alleen rubric" wel 7/8 en 5/8 haalde, en "beide samen" op allebei 8/8 scoorde. | Concluderen. | Rubric-tekst is de hefboom voor het OORDEEL, modelinstructies voor de TOON. Alleen de combinatie won op beide assen. Zie `reference.md` punt 9, en verwacht dit patroon opnieuw maar neem het niet zomaar aan bij het volgende vak.
