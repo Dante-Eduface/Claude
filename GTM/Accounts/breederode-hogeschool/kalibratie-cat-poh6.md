@@ -6,6 +6,10 @@ _Laatst bijgewerkt: 2026-09-23._ Werkbestand van de skill `grading-calibration`.
 
 Dante noemde dit op 23-09-2026 "Master Kinderfysiotherapie". Al het materiaal is van **POH-6**: de bestandsnaam "POH NLQF niveau 6", groep "POH-6 24 Rotterdam", huisartsenzorg, NHG-standaarden en "het perspectief van de POH". Het MKF-materiaal kwam van Ivonne (08-09) en is iets anders. Zolang dit niet bevestigd is, gaat dit bestand uit van POH-6.
 
+**Update 23-09-2026:** Dante stuurde de rubric van de baseline die live in Eduface staat. Die is van de MKF: 7 criteria (Algemeen, Onzekerheid in de kinderfysiotherapeutische praktijk, Onderzoeksvraagstelling en -doelstelling, Zoekstrategie en scopesearch, Beoordelen van de kwaliteit van artikelen, Conclusies en aanbevelingen, Implicaties voor de kinderfysiotherapiepraktijk). Gewichten 6x 14% en 1x 16%. De rubric en de aangeleverde inzendingen horen dus niet bij elkaar. Een POH-6-CAT kan nooit slagen op "kinderfysiotherapeutische praktijk" of op "flowchart", dus deze combinatie zegt niets over de kalibratie. Te kiezen: óf het MKF-materiaal van Ivonne erbij (inzendingen met haar beoordeling plus het bronformulier), óf een aparte POH-6-opdracht met de vaste rubricbasis hieronder.
+
+Eerste blik op de MKF-rubric, nog zonder bronformulier om naast te leggen: de Pass-teksten eisen alles tegelijk en bevatten strenge woorden: "expliciet", "volledig en controleerbaar", "navolgbaar", "alle beoordeelde artikelen", "afzonderlijk aan bod". De Fail-teksten laten één ontbrekend onderdeel al een Onvoldoende zijn. Dat is het patroon dat bij manuele therapie te streng uitpakte. Of dit de bedoeling van het formulier is, blijkt pas uit het bronformulier.
+
 ## Materiaal (checklist `reference.md` punt 2)
 
 | # | Wat | Stand |
