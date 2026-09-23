@@ -1,13 +1,33 @@
 {
   "slug": "samford-university",
   "close": {
-    "lead_id": null, "naam": "Samford University", "url": null, "lead_status": null,
-    "opportunity_id": null, "fase": null, "fase_type": null, "waarde": null, "valuta": "USD",
-    "confidence": null, "close_date": null, "eigenaar": null,
+    "lead_id": null,
+    "naam": "Samford University",
+    "url": null,
+    "lead_status": null,
+    "opportunity_id": null,
+    "fase": null,
+    "fase_type": null,
+    "waarde": null,
+    "valuta": "USD",
+    "confidence": null,
+    "close_date": null,
+    "eigenaar": null,
     "crm_note": "Nog niet in Close op 2026-09-23. Inbound via Calendly.",
-    "contacten": [{"naam": "Susan Wilbanks", "titel": "Assistant Professor of Kinesiology, School of Health Professions", "email": "swilbank@samford.edu", "id": null}],
-    "gesprekken": [], "open_taken": [], "laatste_gesprek": null,
-    "volgende_afspraak": "2026-09-23 21:00 (14:00 Central)", "aantal_gehad": 0, "gesynct": null
+    "contacten": [
+      {
+        "naam": "Susan Wilbanks",
+        "titel": "Assistant Professor of Kinesiology, School of Health Professions",
+        "email": "swilbank@samford.edu",
+        "id": null
+      }
+    ],
+    "gesprekken": [],
+    "open_taken": [],
+    "laatste_gesprek": null,
+    "volgende_afspraak": "2026-09-23 21:00 (14:00 Central)",
+    "aantal_gehad": 0,
+    "gesynct": null
   },
   "coach": {
     "next_action": {
@@ -32,7 +52,7 @@
         "Which LMS are you on, and who in IT would need to sign off on a new tool that handles student audio?"
       ],
       "risicos": [
-        "Klein geld: interne seed grant van een assistant professor, ver onder 50k en onder de 300-lerenden-drempel. Waarde zit in een US-referentie en een publicatie.",
+        "Klein geld: interne seed grant van een assistant professor. Instellingsbreed is het wel groot: 6.522 studenten (fall 2026) x 36 dollar = ca. 235k per jaar. Deze pilot is de ingang daarvoor.",
         "Oral Examination is beta. Niets beloven over metacognitieve criteria dat niet in Platform/product.md staat.",
         "Privacy: student-audio, FERPA en IRB. Wij claimen alleen AI Act, niets over FERPA.",
         "Prijs voor een losse cursus bestaat niet in het prijsmodel. Niet ter plekke een bedrag noemen."
@@ -44,9 +64,24 @@
       ]
     },
     "meddpicc": {},
-    "gate": {"fase": "discovery", "open": null, "ontbreekt": ["Metrics", "Economic buyer", "Decision process", "Paper process", "Budget grant onbekend"]},
+    "gate": {
+      "fase": "discovery",
+      "open": null,
+      "ontbreekt": [
+        "Metrics",
+        "Economic buyer",
+        "Decision process",
+        "Paper process",
+        "Budget grant onbekend"
+      ]
+    },
     "stakeholders": [
-      {"naam": "Susan Wilbanks", "rol": "champion", "gesproken": false, "noot": "Kandidaat-champion. Assistant Professor Kinesiology sinds 2024, PhD Rehabilitation Science (UAB), onderzoekt scholarship of teaching and learning."}
+      {
+        "naam": "Susan Wilbanks",
+        "rol": "champion",
+        "gesproken": false,
+        "noot": "Kandidaat-champion. Assistant Professor Kinesiology sinds 2024, PhD Rehabilitation Science (UAB), onderzoekt scholarship of teaching and learning."
+      }
     ],
     "calls": [],
     "diagnose": "",

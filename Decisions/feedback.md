@@ -34,3 +34,7 @@ omdat commando's en scripts daarvan afhangen. Vastgelegd in `Context/kaart.md`.
 Overlappende skills samenvoegen in plaats van naast elkaar laten staan. `cro`, `schrijven`,
 `outreach` en `meddpicc` slikten hun dubbelganger op. `sso-grid` bleef apart omdat de
 scheiding met de scoringsskill met opzet is gebouwd.
+
+### 2026-09-23 · toon · regel
+"Stem dat af met Jeroen" in de Samford-prep. Dante: nooit meer, klinkt alsof Jeroen zijn
+baas is. Vastgelegd in `.claude/rules/team-coordination.md`.

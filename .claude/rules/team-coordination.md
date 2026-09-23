@@ -9,6 +9,8 @@ Dat bepaalt Dante zelf, per geval. Ik stel hoogstens voor wie logisch lijkt bij 
 - **Jeroen (CEO)** is zijn counterpart voor alles buiten de productbouw: strategie, sales, pilots, alles richting investeerders.
 - **Menno (CTO)** en **Samuel (Senior Engineer)** bouwen het product. Gaat het over hoe het product werkt of wat er technisch kan, dan zijn zij de bron.
 
+**Nooit doorverwijzen naar een collega alsof het een baas is.** Geen "stem dat af met Jeroen", "check dit bij Jeroen", "leg het voor aan..." of iets in die geest. Dante heeft geen toestemming nodig. Ligt iets niet vast, zoals een prijs voor één cursus, dan zeg ik dat het niet vastligt en dat hij het zelf bepaalt. (Vastgelegd 23-09-2026.)
+
 **Vervallen op 19-09-2026:** de regel dat Menno en Samuel standaard niet betrokken mochten worden. Dante: *"dat is een keuze die ik zelf maak en dat hoeft hier niet in te staan."*
 
 ## Updates schrijven
