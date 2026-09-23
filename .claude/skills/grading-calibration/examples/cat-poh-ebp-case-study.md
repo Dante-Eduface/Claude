@@ -1,6 +1,6 @@
 # Case study: CAT EBP (POH), oude rubric v3.0
 
-_Aangelegd 23-09-2026, bijgewerkt 23-09-2026. Status: **ronde 2 gemeten. 15 van 16 binnen bandbreedte, rangorde klopt, nog één duidelijke misser (criterium 2).**_
+_Aangelegd 23-09-2026, bijgewerkt 23-09-2026. Status: **ronde 3 gemeten. 16 van 16 binnen bandbreedte. Klaar om te gebruiken, met één bekende beperking.**_
 
 Tweede vak waarop `grading-calibration` wordt losgelaten, na manuele therapie. Dit bestand is het werkdocument: materiaal, ground truth, de vaste rubric-basistekst en de openstaande gaten.
 
@@ -442,3 +442,60 @@ Dat is leerzaam: een ontsnappingszin die een voorwaarde bevat, wordt die voorwaa
 Eén gerichte ronde op criterium 2, dan stoppen met fijnregelen. De reden om te stoppen: 15 van 16 binnen bandbreedte, rangorde klopt, toon klopt, nul keer Onvoldoende. Verder duwen aan het plafond zonder een gezakte inzending om de zaklijn tegen te ijken levert meer risico dan winst op.
 
 De compressie blijft wel bestaan: 1 keer Uitstekend op 16, terwijl de docent 9 keer 4 punten gaf, en het verschil tussen de twee studenten is 1 punt waar de docent 3,5 punt zag. De AI zet ze nu in de goede volgorde maar ziet het verschil als kleiner dan het is. Dat is acceptabel zolang de docent het eindcijfer zelf zet, maar het is de resterende beperking.
+
+## 14. Meting ronde 3, en de eindstand
+
+Export `Inzendingen_CAT_23-09-2026_10.zip`, met de twee vervangen vakjes bij criterium 2.
+
+| # | Criterium | Docent S1 | R2 S1 | R3 S1 | Docent S2 | R2 S2 | R3 S2 |
+|---|---|---|---|---|---|---|---|
+| 1 | Aanleiding | 4 | Goed | Goed | 4 | Goed | Goed |
+| 2 | PICO | 4 | Voldoende ✗ | **Goed ✓** | 2 | Voldoende | Voldoende |
+| 3 | Zoekstrategie | 2 | Goed | Goed | 2 | Voldoende | **Goed** |
+| 4 | Analyse | 4 | Goed | Goed | 2 | Voldoende | Voldoende |
+| 5 | Conclusie | 2 | Goed | **Voldoende** | 2 | Goed | Goed |
+| 6 | Discussie | 4 | Goed | Goed | 4 | Uitstekend | Uitstekend |
+| 7 | Klin. relevantie | 2 | Voldoende | Voldoende | 4 | Goed | Goed |
+| 8 | Reflectie | 4 | Goed | Goed | 3 | Voldoende | Voldoende |
+
+| Meting | Strikt | Bandbreedte | Rangorde S1 vs S2 |
+|---|---|---|---|
+| Docent | — | — | 28 tegen 24,5 |
+| Baseline | 6/16 | 12/16 | omgekeerd |
+| Ronde 1 | 8/16 | 15/16 | omgekeerd |
+| Ronde 2 | 8/16 | 15/16 | klopt, 22 tegen 21 |
+| **Ronde 3** | 8/16 | **16/16** | gelijk, 22 tegen 22 |
+
+**Criterium 2 is opgelost.** Het weghalen van het woord "beargumenteerd" was genoeg. De AI schrijft nu zelf: *"je PICO is overzichtelijk en 'Comparison: niet van toepassing' past."* Precies de lezing van de docent.
+
+### Wat de bandbreedte-maat niet bewijst
+
+Eerlijk over de eigen meetlat: de bandbreedte laat per criterium twee van de vier vakjes toe. **Een model dat overal "Goed" invult haalt daarmee ook 16 van 16.** De maat is dus een ondergrens die gehaald moet worden, geen bewijs dat het model onderscheid maakt.
+
+Wat wél onderscheid laat zien:
+
+- **Binnen een student werkt het.** Bij Student 2 gaf de docent 4 punten op criterium 1, 6 en 7; de AI zet daar Goed, Uitstekend en Goed. Op de criteria waar zij 2 punten gaf staat twee keer Voldoende en twee keer Goed. De vorm van de verdeling klopt.
+- **Tussen studenten werkt het niet.** De docent zag 3,5 punt verschil, de AI ziet er nul: beide studenten komen op 22. In ronde 2 stond Student 1 er één punt boven, nu staan ze gelijk. Dat is geen regressie binnen de bandbreedte, maar het laat zien dat dit niet stabiel gestuurd wordt.
+- **Het plafond blijft bijna dicht.** Eén keer Uitstekend op 16, waar de docent negen keer 4 punten gaf.
+
+### De resterende beperking
+
+De AI comprimeert naar Goed. Dat is met rubric-tekst niet verder op te lossen zonder het risico dat de zaklijn meezakt, en die zaklijn is met dit testset niet te controleren: beide studenten zijn geslaagd, er is geen gezakte inzending met een beoordeling om tegen te ijken.
+
+Praktisch gevolg: de AI zet de criteria van één student in de goede verhouding en gaat nooit onterecht zakken, maar hij is geen betrouwbare cijfergever tussen studenten onderling. Voor het beoogde gebruik is dat acceptabel, want het eindoordeel is in Eduface een handmatige keuze van de docent (`reference.md` punt 1).
+
+### Eén losse tekstfout die geen niveaukwestie is
+
+Bij criterium 5 lezen de AI en de docent hetzelfde woord tegengesteld. De bron vraagt dat de conclusie "in een stellende vorm" is geformuleerd, dus als bevestigende uitspraak in plaats van een samenvatting. De Eduface-tekst maakte daar "stellig" van, en de AI leest dat als "te zeker":
+
+> Docent bij Student 1: *"De conclusie is nu niet in stellende vorm geformuleerd."*
+>
+> AI bij Student 1, ronde 3: *"De conclusie is te stellig; vervang 'overtuigend bewijs' door 'beperkt bewijs'."*
+
+Precies het omgekeerde advies op dezelfde tekst. Het verdict blijft binnen de bandbreedte, dus dit is geen kalibratieprobleem maar een woordbetekenis die fout is overgenomen. Die blijft elke volgende student verkeerd sturen. Voorstel in `cat-poh-plakteksten.md`, sectie "Losse correctie criterium 5".
+
+### Advies
+
+Klaar. Doorvoeren wat er nu staat, plus eventueel de correctie bij criterium 5. Niet verder fijnregelen op niveaus.
+
+Het volgende dat echt iets toevoegt is geen rubric-ronde maar materiaal: **een CAT die de docent heeft laten zakken, met haar beoordelingsformulier.** Daarmee is de zaklijn te controleren, en pas dan is te zien of de compressie naar Goed ook betekent dat een zwakke inzending te hoog uitkomt.

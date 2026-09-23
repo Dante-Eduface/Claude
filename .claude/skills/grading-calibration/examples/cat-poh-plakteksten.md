@@ -279,3 +279,17 @@ Er is een beantwoordbare onderzoeksvraag geformuleerd die grotendeels logisch sa
 ## Criterium 2 — Great
 
 Er is een eenduidige en beantwoordbare onderzoeksvraag geformuleerd die logisch voortvloeit uit de aanleiding. De PICO-elementen patiënt of probleem, interventie, controle-interventie en gewenste uitkomst zijn herkenbaar in de vraag opgenomen en consistent doorgetrokken van casus naar PICO naar onderzoeksvraag. Wanneer de vraagstelling geen vergelijking kent, telt "niet van toepassing" bij de controle-interventie als volledig; een toelichting daarop en het toevoegen van een controleconditie zijn niet vereist. De mate waarin de uitkomstmaat is uitgesplitst naar afzonderlijke waarden is niet bepalend: een uitkomst op het niveau waarop de praktijkvraag gesteld is, volstaat. Dit niveau vraagt de onderdelen van het Good-niveau compleet en onderbouwd, niet meer dan de opdracht vraagt. Kleine onvolkomenheden die de kern niet ondermijnen staan dit niveau niet in de weg.
+
+---
+
+# Losse correctie criterium 5 — "stellig" tegenover "stellend"
+
+Geen niveaukwestie maar een woordbetekenis die fout is overgenomen uit de bron. De bron vraagt een conclusie "in een stellende vorm", dus als bevestigende uitspraak in plaats van een samenvatting. De Eduface-tekst maakte daar "stellig" van, en het model leest dat als "te zeker" en adviseert daarop het omgekeerde van wat de docent adviseert.
+
+## Criterium 5 — Good
+
+De conclusie geeft een kort en duidelijk antwoord op de klinische vraagstelling dat grotendeels aansluit op de resultaten. Het antwoord bevat uitsluitend eerder beschreven informatie, maar is niet volledig in stellende vorm geformuleerd of de logische samenhang met de resultaten is niet overal overtuigend. Stellende vorm betekent hier dat de conclusie een bevestigende uitspraak is in plaats van een opsomming of een herhaalde samenvatting van de studies. Het gaat over de vorm van de zin, niet over de mate van zekerheid: een conclusie die het bewijs terecht als beperkt of inconsistent benoemt kan in stellende vorm geschreven zijn.
+
+## Criterium 5 — Great
+
+De conclusie geeft een kort, bondig antwoord op de volledige klinische vraagstelling, in stellende vorm. Het antwoord vloeit logisch voort uit de verkregen resultaten, bevat uitsluitend eerder beschreven informatie en sluit aan op de resultaten van de geselecteerde onderzoeken. Stellende vorm betekent hier dat de conclusie een bevestigende uitspraak is in plaats van een opsomming of een herhaalde samenvatting van de studies. Het gaat over de vorm van de zin, niet over de mate van zekerheid: een conclusie die het bewijs terecht als beperkt of inconsistent benoemt kan in stellende vorm geschreven zijn. Dit niveau vraagt de onderdelen van het Good-niveau compleet en onderbouwd, niet meer dan de opdracht vraagt. Kleine onvolkomenheden die de kern niet ondermijnen staan dit niveau niet in de weg.
