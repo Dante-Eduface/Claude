@@ -100,6 +100,10 @@ Per aanname een vraag. Dit is het onderdeel waar de skill op staat of valt, want
 - **Tutoyeren.** Jij en je, niet u.
 - **Geen versterkers.** Geen "opvallend", "duidelijk", "eigenlijk", "gewoon". Die leggen er een oordeel in.
 
+### Ook voor de koppen
+
+Kort en plat. "Feedback van Eduface", niet "De volledige feedback van Eduface". "Aannames van het model", niet "De aannames die het model doet". Een kop die uitlegt wat eronder staat is een kop te veel, en leest als machinetekst.
+
 ### Zo wel, zo niet
 
 | Niet | Wel |
@@ -132,11 +136,19 @@ Kolomkoppen in de tabel: **Nakijker** en **Eduface**. Niet "wat jullie zeiden".
 
 Bouwen doe je volgens `Design/System/core/` plus `internal/`, en renderen met headless Chromium naar A4. De werkende opzet en het script dat er een genummerd mapje van maakt staan in `GTM/Accounts/breederode-hogeschool/testdag/`.
 
-## Stap 7a: de beoordelingsoptie hoort op het voorblad
+## Stap 7-bis: het formulier volgt de rubriek, niet een sjabloon
+
+Het aantal rubriekcriteria verschilt per vak. Acht bij de een, tien of twintig bij de ander, en soms heet het geen rubriek maar een lijst criteria. **Tel ze in het echte beoordelingsformulier en bouw het blad daarop.**
+
+- Ken je de criteria, druk ze dan voor. Dat scheelt schrijfwerk en voorkomt dat twee mensen hetzelfde criterium anders noemen.
+- Ken je ze niet, zet dan genummerde regels neer met ruimte om het criterium zelf op te schrijven, en zeg erbij dat je ze niet had.
+- Nooit acht rijen neerzetten omdat het vorige vak er acht had.
+
+## Stap 7a: de beoordelingsoptie hoort op blad 1
 
 Eduface heeft per opdracht een beoordelingsoptie aanstaan, en die bepaalt hoe de feedback eruitziet. Staat dat er niet bij, dan weet de lezer niet waar hij naar kijkt en gaat het gesprek over de verkeerde dingen.
 
-Zet op het voorblad van elk mapje:
+Zet onder de naamregel op blad 1 van elk mapje:
 
 | Regel | Wat erin staat |
 |---|---|
@@ -179,7 +191,7 @@ Daaruit volgt:
 | Wat | Aantal | Waarom |
 |---|---|---|
 | **mapjes** | P | een per persoon, niet per student |
-| **bladen per mapje** | 1 + (S x 4) + (aantal andere vakken) | voorblad, vier bladen per studentdossier, een beoordelingsformulier per andere opdracht |
+| **bladen per mapje** | (S x 4) + (aantal andere vakken) | vier bladen per studentdossier, plus een beoordelingsformulier per andere opdracht |
 | **studentenopdrachten** | P x S | los erbij, iedereen krijgt het werk van elke student |
 | **reserve** | +1 mapje per vak | voor wie onaangekondigd aansluit |
 
@@ -195,16 +207,15 @@ Een mapje is wat een deelnemer in handen krijgt: een nette stapel op volgorde, d
 
 | Blad | Wat |
 |---|---|
-| 1 | Voorblad: opleiding, naam- en datumregel, de beoordelingsoptie, en de inhoud van het mapje |
-| 2 tot 5 | Het dossier van student 1 |
-| 6 tot 9 | Het dossier van student 2 |
+| 1 tot 4 | Het dossier van student 1. Blad 1 draagt ook de naamregel en de beoordelingsoptie. |
+| 5 tot 8 | Het dossier van student 2 |
 | daarna | Een beoordelingsformulier per andere opdracht van die dag |
 | los | De opdracht van de student zelf, ongenummerd |
 
-- **Doorlopende nummering over het hele mapje**, als "pagina 3 van 11". Niet per onderdeel opnieuw beginnen, want dan valt de stapel uit elkaar zodra iemand hem neerlegt.
+- **Geen voorblad.** Een inhoudsopgave van zes bladen is een blad dat niemand leest. Begin bij de beoordeling.
+- **Doorlopende nummering over het hele mapje**, als "pagina 3 van 10". Niet per onderdeel opnieuw beginnen, want dan valt de stapel uit elkaar zodra iemand hem neerlegt.
 - **Links in de voet de opleiding**, zodat een los blad terug te vinden is.
-- **Het voorblad noemt elk onderdeel met zijn bladnummer**, inclusief wat er los bij zit. Dat is de enige manier waarop iemand merkt dat er een blad ontbreekt.
-- **De opdracht van de student blijft los.** Die is te dik om in te binden en wordt ernaast gelegd, niet doorgebladerd.
+- **De opdracht van de student blijft los.** Die is te dik om in te binden en wordt ernaast gelegd.
 
 ## Stap 8: terug naar het model
 
@@ -227,3 +238,5 @@ Dat landt in `GTM/Accounts/<instelling>/` en, als het breder geldt dan een inste
 - **De beoordelingsoptie in het Engels op papier zetten.** Pass/fail en descriptive zijn schermtaal, geen printtaal.
 - **Een oplage als totaal opgeven.** Per vak, anders is het niet te stapelen.
 - **Een mapje zonder doorlopende nummering.** Een ongenummerde stapel raakt in de eerste tien minuten door elkaar.
+- **Een vast aantal criteria overnemen van een ander vak.** Tel ze in het echte formulier.
+- **Een voorblad met een inhoudsopgave.** Begin bij de beoordeling.

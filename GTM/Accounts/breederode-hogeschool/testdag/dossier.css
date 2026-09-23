@@ -8,11 +8,8 @@
 html,body{background:#fff;}
 body{font-family:'I',sans-serif;color:var(--ink);-webkit-print-color-adjust:exact;print-color-adjust:exact;}
 .page{width:794px;height:1123px;padding:30px 36px 26px;display:flex;flex-direction:column;background:#fff;}
-.top{display:flex;justify-content:space-between;align-items:flex-start;}
-.bdlogo{display:flex;gap:9px;align-items:center;}
-.bdmark{width:31px;height:31px;border-radius:5px;background:var(--deep);display:flex;align-items:center;justify-content:center;flex:none;}
-.bdname{font-weight:700;font-size:18px;color:var(--deep);line-height:1;letter-spacing:-.01em;}
-.bdsub{font-size:10.5px;color:var(--blue);line-height:1;margin-top:3px;}
+.top{display:flex;justify-content:space-between;align-items:center;}
+img.bdlogo{height:34px;width:auto;display:block;}
 .edu img{height:21px;}
 .rule{height:2px;background:var(--deep);margin-top:11px;}
 h1{font-size:19px;font-weight:700;color:var(--deep);margin-top:13px;line-height:1.15;}

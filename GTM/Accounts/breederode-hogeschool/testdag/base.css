@@ -13,12 +13,8 @@ body{font-family:'I',sans-serif;color:var(--ink);width:794px;min-height:1123px;h
   display:flex;flex-direction:column;}
 
 /* header */
-.top{display:flex;justify-content:space-between;align-items:flex-start;}
-.bdlogo{display:flex;gap:9px;align-items:center;}
-.bdmark{width:31px;height:31px;border-radius:5px;background:var(--deep);
-  display:flex;align-items:center;justify-content:center;flex:none;}
-.bdname{font-weight:700;font-size:18px;color:var(--deep);line-height:1;letter-spacing:-.01em;}
-.bdsub{font-size:10.5px;color:var(--blue);line-height:1;margin-top:3px;letter-spacing:.01em;}
+.top{display:flex;justify-content:space-between;align-items:center;}
+img.bdlogo{height:34px;width:auto;display:block;}
 .edu{display:flex;flex-direction:column;align-items:flex-end;gap:4px;}
 .edu img{height:21px;}
 .edu span{font-size:8px;color:var(--grey);letter-spacing:.09em;text-transform:uppercase;}
