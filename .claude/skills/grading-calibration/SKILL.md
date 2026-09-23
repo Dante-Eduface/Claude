@@ -117,11 +117,11 @@ Dat is geen verwijt aan het model en al helemaal geen compliment aan de nakijker
 
 Een vakdossier is een printbare A4-stapel per vak, niet per persoon. Iedereen die bij dat vak hoort krijgt hetzelfde exemplaar, ook wie zelf niets beoordeeld heeft. Dan heeft de hele groep hetzelfde voor zich.
 
-Vaste opbouw:
+Vaste opbouw per student:
 
-| Pagina | Wat erop staat |
+| Blad | Wat erop staat |
 |---|---|
-| 1 | Kop, naam- en datumregel, de beoordeling naast elkaar met de verschillen gemarkeerd, drie totalen, de letterlijke feedback van de nakijker |
+| 1 | De beoordeling naast elkaar met de verschillen gemarkeerd, drie totalen, de letterlijke feedback van de nakijker, plus ruimte voor aantekeningen |
 | 2 | De volledige feedback van het model, per criterium, letterlijk |
 | 3 | Waar het uiteenloopt: twee of drie plekken, beide teksten eronder, een vraag per plek |
 | 4 | De aannames van het model, met de vriendelijke vragen en schrijfruimte |
@@ -130,7 +130,81 @@ Kop: **Eduface testdag** als titel, daaronder de opleiding, daaronder het vak, d
 
 Kolomkoppen in de tabel: **Nakijker** en **Eduface**. Niet "wat jullie zeiden".
 
-Bouwen doe je volgens `Design/System/core/` plus `internal/`, en renderen met headless Chromium naar A4. De werkende opzet staat in `GTM/Accounts/breederode-hogeschool/testdag/`.
+Bouwen doe je volgens `Design/System/core/` plus `internal/`, en renderen met headless Chromium naar A4. De werkende opzet en het script dat er een genummerd mapje van maakt staan in `GTM/Accounts/breederode-hogeschool/testdag/`.
+
+## Stap 7a: de beoordelingsoptie hoort op het voorblad
+
+Eduface heeft per opdracht een beoordelingsoptie aanstaan, en die bepaalt hoe de feedback eruitziet. Staat dat er niet bij, dan weet de lezer niet waar hij naar kijkt en gaat het gesprek over de verkeerde dingen.
+
+Zet op het voorblad van elk mapje:
+
+| Regel | Wat erin staat |
+|---|---|
+| **Gekozen** | de optie, in het Nederlands, nooit in het Engels |
+| **Wat dat doet** | een zin over wat het model dan wel en niet uitspreekt |
+| **Waarom deze** | **alleen bij descriptief beoordelen**, zie hieronder |
+
+### De opties in het Nederlands
+
+De tool noemt ze in het Engels. Op papier gaan ze in het Nederlands, in de woorden die de opleiding zelf gebruikt.
+
+| In de tool | Op papier | Wanneer |
+|---|---|---|
+| pass/fail grading | **voldaan of niet voldaan**, per rubriekcriterium | als de rubriek van de opleiding zelf ook maar twee standen kent |
+| descriptive grading | **onvoldoende, voldoende, goed of uitstekend**, per rubriekcriterium | als de rubriek kwaliteitsniveaus onderscheidt |
+
+Vertaal ook de labels binnen het dossier mee: geen PASS en FAIL in de tabel, maar voldaan en niet voldaan.
+
+### Waarom alleen bij descriptief
+
+Bij voldaan of niet voldaan is de keuze vanzelfsprekend, want de rubriek doet het zelf al zo. Daar hoort geen uitleg bij, die leest als verantwoording voor iets wat niemand betwist.
+
+Bij descriptief beoordelen is de keuze wel uitlegbaar, en die uitleg hoort erbij. Baseer hem op de rubriek van die opleiding zelf, nooit op een algemeen verhaal:
+- wat onderscheidt hun rubriek dat een vinkje zou weggooien
+- hoeveel niveaus hun rubriek kent, en hoeveel de tool kent
+
+**Lopen die aantallen uiteen, zeg dat er dan bij.** Kent de tool vier niveaus en de rubriek drie, dan is dat geen detail maar de eerste vraag van die ochtend.
+
+## Stap 7b: de oplage, per vak en per student
+
+Reken nooit in een totaal. Een totaal is niet te sorteren op de ochtend zelf. Reken per vak, en lever de tabel op.
+
+Per vak heb je twee getallen nodig:
+
+- **P** = het aantal mensen dat bij dit vak hoort en die dag aansluit
+- **S** = het aantal studenten van wie werk beoordeeld is, meestal twee
+
+Daaruit volgt:
+
+| Wat | Aantal | Waarom |
+|---|---|---|
+| **mapjes** | P | een per persoon, niet per student |
+| **bladen per mapje** | 1 + (S x 4) + (aantal andere vakken) | voorblad, vier bladen per studentdossier, een beoordelingsformulier per andere opdracht |
+| **studentenopdrachten** | P x S | los erbij, iedereen krijgt het werk van elke student |
+| **reserve** | +1 mapje per vak | voor wie onaangekondigd aansluit |
+
+Wie bij geen vak hoort krijgt geen mapje maar losse beoordelingsformulieren, een per opdracht.
+
+Is van een student de output van het model er niet, dan telt die student niet mee in S. Verzin geen dossier, zie stap 5.
+
+Lever het als een tabel met een regel per vak, niet als een zin. Dante print hiervan en moet het in een oogopslag kunnen stapelen.
+
+## Stap 7c: het mapje
+
+Een mapje is wat een deelnemer in handen krijgt: een nette stapel op volgorde, doorlopend genummerd, met de opdracht van de student er los naast.
+
+| Blad | Wat |
+|---|---|
+| 1 | Voorblad: opleiding, naam- en datumregel, de beoordelingsoptie, en de inhoud van het mapje |
+| 2 tot 5 | Het dossier van student 1 |
+| 6 tot 9 | Het dossier van student 2 |
+| daarna | Een beoordelingsformulier per andere opdracht van die dag |
+| los | De opdracht van de student zelf, ongenummerd |
+
+- **Doorlopende nummering over het hele mapje**, als "pagina 3 van 11". Niet per onderdeel opnieuw beginnen, want dan valt de stapel uit elkaar zodra iemand hem neerlegt.
+- **Links in de voet de opleiding**, zodat een los blad terug te vinden is.
+- **Het voorblad noemt elk onderdeel met zijn bladnummer**, inclusief wat er los bij zit. Dat is de enige manier waarop iemand merkt dat er een blad ontbreekt.
+- **De opdracht van de student blijft los.** Die is te dik om in te binden en wordt ernaast gelegd, niet doorgebladerd.
 
 ## Stap 8: terug naar het model
 
@@ -150,3 +224,6 @@ Dat landt in `GTM/Accounts/<instelling>/` en, als het breder geldt dan een inste
 - **De nakijker het onderwerp van de zin maken.** Zie stap 6.
 - **Meer dan drie vragen per pagina.** Drie worden beantwoord, tien worden overgeslagen.
 - **Een verschil wegpoetsen omdat het ongemakkelijk is.** Een groot verschil is de reden dat je er zit.
+- **De beoordelingsoptie in het Engels op papier zetten.** Pass/fail en descriptive zijn schermtaal, geen printtaal.
+- **Een oplage als totaal opgeven.** Per vak, anders is het niet te stapelen.
+- **Een mapje zonder doorlopende nummering.** Een ongenummerde stapel raakt in de eerste tien minuten door elkaar.

@@ -6,9 +6,30 @@ Wat er geprint wordt voor de testochtend bij Breederode Hogeschool, Posthumalaan
 
 | Bestand | Wat het is |
 |---|---|
-| `beoordelingsformulier-testochtend.pdf` | Het standaardblad. 1 A4, identiek voor iedereen, met bovenaan een vinkje voor welke opdracht het blad gaat. |
-| `vakdossier-manuele-therapie.pdf` | 3 A4. Het oordeel van Marloes de Graaf naast dat van Eduface, met de verschillen eruit gelicht. |
+| `mapje-manuele-therapie.pdf` | **Dit is wat er geprint wordt.** 7 doorlopend genummerde A4: voorblad, vier bladen dossier, twee beoordelingsformulieren. |
+| `mapje-manuele-therapie-overzicht.png` | Alle zeven bladen naast elkaar, om te zien wat je in handen krijgt. |
+| `beoordelingsformulier-testochtend.pdf` | Het losse standaardblad, voor wie geen mapje krijgt. 1 A4. |
+| `vakdossier-manuele-therapie.pdf` | Alleen het dossier, 4 A4, zonder voorblad en formulieren. Zit ook in het mapje. |
+| `bouw-map.py` | Zet een dossier plus het standaardblad om in een genummerd mapje. Regelt ook de beoordelingsoptie op het voorblad. |
 | `*.html` en `*.css` | De bron. Renderen met headless Chromium, zie hieronder. |
+
+## De beoordelingsoptie per vak
+
+Staat op het voorblad van elk mapje, in het Nederlands.
+
+| Vak | Optie | Waarom |
+|---|---|---|
+| MSc Manuele Therapie | voldaan of niet voldaan | de rubriek kent zelf ook twee standen, dus geen uitleg nodig |
+| Master Kinderfysiotherapie | voldaan of niet voldaan | idem |
+| POH-6 Huisartsenzorg | onvoldoende, voldoende, goed of uitstekend | de rubriek onderscheidt kwaliteitsniveaus, een vinkje zou dat weggooien. Let op: de tool kent vier niveaus, de rubriek stopt bij goed. |
+
+## De oplage
+
+Per vak, nooit als totaal. P is het aantal mensen bij dat vak, S het aantal studenten van wie werk beoordeeld is.
+
+- mapjes: P, plus 1 reserve
+- bladen per mapje: 1 + (S x 4) + aantal andere vakken
+- studentenopdrachten los: P x S
 
 ## De drie groepen
 
