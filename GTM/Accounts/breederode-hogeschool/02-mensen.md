@@ -17,10 +17,9 @@ _Bijgewerkt 23-09-2026. Mailadressen uit de Close-thread, functietitels uit hun 
 | **Jochem van Schalkwijk** | Programmaleider MSc Manuele Therapie en Extended Scope | j.vanschalkwijk@breederode.nl | Positief en scherp. Pareerde in de demo het hallucinatie-bezwaar met "mensen hallucineren ook". Mogelijk gepasseerd gevoeld toen de vervolgmeeting met anderen werd gepland. Sluit 23-09 om 9:00 aan, heeft daarna les. |
 | **Marina Vinken-Hol** | Manager Opleidingen Huisartsenzorg (vrijdag afwezig) | m.vinken@breederode.nl | Actief. Levert CAT-materiaal POH-6 aan, kan alleen 23 september. |
 | **Marlies van Hell MSc, RN** | Programmamanager/docent hbo-v (ma, di, do) | m.vanhell@breederode.nl · 06 39113945 | Gelooft in tijdbesparing, waarschijnlijk de grootste opleiding. **Doet nu niet mee**: geen docentcapaciteit, de docent onderzoeksvaardigheden gaat in december met pensioen en haar opvolger is net gestart. Wil wel op de hoogte blijven. Gebruikt al **TrainTool** in het curriculum. |
-| **Kas van Kruining** | Onderwijsmanager opleiding POG (Praktijkopleider Gezondheidszorg & Welzijn) | — | **Kritische stem**, mogelijk tegenstander. Betoogde in de demo dat AI niet beter is dan mensen, argument: hallucineren. Levert wel input voor de test. |
-| **Selma de Nijs** | Docent/beoordelaar POH-6 | — | Levert beoordeelde, geanonimiseerde CAT-opdrachten aan. |
-| **Carina Wind** | Onbekend, genoemd als iemand die Ivonne zou bijpraten | — | Nog te plaatsen. |
-| **Twee collega's uit Nijmegen** | Kinderfysiotherapie | — | **Namen onbekend.** Zaten de hele testdag van 23-09 aan tafel bij kinderfysiotherapie. Uitvragen. |
+| **Kas van Kruining** | Onderwijsmanager opleiding POG (Praktijkopleider Gezondheidszorg & Welzijn) | — | **Kritische stem**, mogelijk tegenstander. Betoogde in de demo dat AI niet beter is dan mensen, argument: hallucineren. Levert wel input voor de test. Was niet op de testdag, wordt door Marina bijgepraat en krijgt de feedback van 23-09. Let op: de kritische stem krijgt de resultaten tweedehands. |
+| **Selma de Nijs** | Docent/beoordelaar POH-6 | — | Levert beoordeelde, geanonimiseerde CAT-opdrachten aan. Was niet op de testdag, wordt door Marina bijgepraat en krijgt de feedback van 23-09. |
+| **Carina Wind** | Kinderfysiotherapie | — | **Geplaatst op 23-09-2026**: zat de testdag bij kinderfysiotherapie, ging iets eerder weg. Functie nog onbekend. |
 | **Maud** | Vermoedelijk executive assistant | mailadres heeft Dante | **Verantwoordelijk voor de itslearning-aanvraag**, door Irma aangewezen op 23-09. Dante forwardt haar de aanvraagmail die Samuel al heeft, zij zet de testomgeving op. Dacht dat een blijvende testomgeving geld kost. Achternaam en exacte functie nog onbekend. |
 | **Willemien (Bos?)** en **Denise** | Huisartsenzorg, achtervang voor Marina | huisartsenzorg@breederode.nl | Willemien zei tijdens de demo inhoudelijk niets. |
 
@@ -29,8 +28,8 @@ _Bijgewerkt 23-09-2026. Mailadressen uit de Close-thread, functietitels uit hun 
 | Vak | Wie |
 |---|---|
 | Manuele therapie | Marloes de Graaf (begin tot eind), Jochem van Schalkwijk (vanaf het begin, eerder weg voor les) |
-| Kinderfysiotherapie | voltallig: de twee collega's uit Nijmegen plus hun leider, vermoedelijk Sanne Toonen-Zwinkels (naam niet hard bevestigd) |
-| Huisartsenzorg | alleen Marina Vinken-Hol. Twee collega's stonden in de file en zijn niet meer aangeschoven. Marina is de leider van het vak, dus dekkend |
+| Kinderfysiotherapie | voltallig: **Sanne Toonen-Zwinkels, Ivonne Duiser en Carina Wind**. Carina ging iets eerder weg |
+| Huisartsenzorg | alleen Marina Vinken-Hol. Twee collega's stonden in de file en zijn niet meer aangeschoven. Marina is de leider van het vak, dus dekkend. Zij vroeg of ze de feedback mag delen met **Selma de Nijs en Kas van Kruining**, die zij zelf bijpraat |
 
 **Irma zat niet bij de presentatie.** Even aan het begin, en aan het einde is Dante zelf naar haar toe gelopen voor het contract.
 

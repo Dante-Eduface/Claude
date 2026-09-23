@@ -9,12 +9,12 @@ Testochtend op locatie Rotterdam, gestart rond 9:05. Drie vakken aan tafel. Dant
 | Vak | Wie | Oordeel |
 |---|---|---|
 | Manuele therapie | **Marloes de Graaf** (begin tot eind) en **Jochem van Schalkwijk** (vanaf het begin, eerder weg voor les) | Allebei de leiders van het vak |
-| Kinderfysiotherapie | Voltallig: de twee collega's uit Nijmegen plus hun leider, **vermoedelijk Sanne Toonen-Zwinkels** | Jeroen noemde de naam, Dante bevestigde hem niet hard. Nog checken |
-| Huisartsenzorg | Alleen **Marina Vinken-Hol**. Twee collega's stonden in de file en zijn helemaal niet aangeschoven | Marina is de leider van het vak, dus dekkend |
+| Kinderfysiotherapie | Voltallig: **Sanne Toonen-Zwinkels, Ivonne Duiser en Carina Wind**. Carina ging iets eerder weg | Namen bevestigd door Dante op 23-09. Sanne is de leider, Ivonne en Carina zijn dan de twee die hij eerder "de collega's uit Nijmegen" noemde |
+| Huisartsenzorg | Alleen **Marina Vinken-Hol**. Twee collega's stonden in de file en zijn helemaal niet aangeschoven | Marina is de leider van het vak, dus dekkend. Zij vroeg of ze de feedback mag delen met **Selma de Nijs en Kas van Kruining**, die zij zelf bijpraat |
 
 **Irma zat niet bij de presentatie.** Ze was aan het begin even binnen, en Dante is aan het einde zelf naar haar toe gelopen. Logisch: zij is directeur, de tool zelf is niet haar werk.
 
-De twee collega's uit Nijmegen staan nog nergens bij naam in ons dossier.
+**Kas van Kruining krijgt de resultaten dus tweedehands.** Hij is onze kritischste stem en hij was er niet bij, terwijl Marina hem gaat bijpraten. Dat is de zwakste schakel in de doorvertelling.
 
 ## Voorbereiding (niet de meeting zelf)
 
@@ -125,7 +125,7 @@ Dus het staat in gang, maar de kosten van een blijvende testomgeving zijn niet d
 
 ## Open punten uit deze dag
 
-1. Klopt het dat **Sanne** de leider van kinderfysiotherapie was die erbij zat? En hoe heten de twee collega's uit Nijmegen?
+1. Komen Ivonne en Carina allebei uit Nijmegen? Dat volgt uit twee losse uitspraken van Dante, hij heeft het niet zo gezegd. Ook: wat is Carina's functie?
 2. **Kunnen inline comments qua formulering wel of niet aangestuurd worden** via de modelinstructies? Dante en Jeroen zijn het hier niet over eens.
 3. Kunnen we de **transcriptie onder een kennisclip** inlezen uit het LMS? Terugkoppelen aan Marloes.
 4. Hoeveel courses wilden ze ook alweer inrichten: drie met formatief en summatief gesplitst, plus een losse voor herkansingen, of drie in totaal? Uit de eerste debrief, niet bevestigd in het gesprek met Jeroen.
