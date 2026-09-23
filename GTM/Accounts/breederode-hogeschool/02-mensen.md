@@ -13,7 +13,7 @@ _Bijgewerkt 23-09-2026. Mailadressen uit de Close-thread, functietitels uit hun 
 |---|---|---|---|
 | **Marloes de Graaf** | Coördinator wetenschap / opleidingsmanager | m.degraaf@breederode.nl | **Champion.** Wil dat het systeem inconsistentie in *feedback* tussen docenten signaleert, niet in cijfers. Heeft zelf al met ChatGPT en Claude getest en liep vast op inconsistente beoordelingen. Verwacht vooral makkelijker en veiliger proces, niet per se tijdwinst. |
 | **Ivonne Duiser** | Docent Master Kinderfysiotherapie | i.duiser@breederode.nl | **Champion.** Levert het CAT-materiaal van de MKF aan, inclusief het nieuwe feedbackformulier. Stelt de scherpe vragen over kalibratie en of het een gesloten systeem is. |
-| **Sanne Toonen-Zwinkels** | Programmamanager en docent Master Kinderfysiotherapie (ma, di, do) | s.toonen@breederode.nl | Positief, regelt samen met Ivonne het CAT-materiaal. |
+| **Sanne Toonen-Zwinkels** | Programmamanager en docent Master Kinderfysiotherapie (ma, di, do) | s.toonen@breederode.nl | Positief, regelt samen met Ivonne het CAT-materiaal. Vroeg op de testdag 23-09 of Eduface de literatuur die een student gebruikt direct kan uitlezen, in plaats van dat zij elke bron zelf aanklikt. |
 | **Jochem van Schalkwijk** | Programmaleider MSc Manuele Therapie en Extended Scope | j.vanschalkwijk@breederode.nl | Positief en scherp. Pareerde in de demo het hallucinatie-bezwaar met "mensen hallucineren ook". Mogelijk gepasseerd gevoeld toen de vervolgmeeting met anderen werd gepland. Sluit 23-09 om 9:00 aan, heeft daarna les. |
 | **Marina Vinken-Hol** | Manager Opleidingen Huisartsenzorg (vrijdag afwezig) | m.vinken@breederode.nl | Actief. Levert CAT-materiaal POH-6 aan, kan alleen 23 september. |
 | **Marlies van Hell MSc, RN** | Programmamanager/docent hbo-v (ma, di, do) | m.vanhell@breederode.nl · 06 39113945 | Gelooft in tijdbesparing, waarschijnlijk de grootste opleiding. **Doet nu niet mee**: geen docentcapaciteit, de docent onderzoeksvaardigheden gaat in december met pensioen en haar opvolger is net gestart. Wil wel op de hoogte blijven. Gebruikt al **TrainTool** in het curriculum. |
@@ -21,7 +21,7 @@ _Bijgewerkt 23-09-2026. Mailadressen uit de Close-thread, functietitels uit hun 
 | **Selma de Nijs** | Docent/beoordelaar POH-6 | — | Levert beoordeelde, geanonimiseerde CAT-opdrachten aan. |
 | **Carina Wind** | Onbekend, genoemd als iemand die Ivonne zou bijpraten | — | Nog te plaatsen. |
 | **Twee collega's uit Nijmegen** | Kinderfysiotherapie | — | **Namen onbekend.** Zaten de hele testdag van 23-09 aan tafel bij kinderfysiotherapie. Uitvragen. |
-| **Maud** | Vermoedelijk executive assistant | mailadres heeft Dante | **Route naar itslearning.** Gesproken op de testdag 23-09. Zij gaat itslearning om een testomgeving voor ons vragen. Achternaam en exacte functie nog onbekend. |
+| **Maud** | Vermoedelijk executive assistant | mailadres heeft Dante | **Verantwoordelijk voor de itslearning-aanvraag**, door Irma aangewezen op 23-09. Dante forwardt haar de aanvraagmail die Samuel al heeft, zij zet de testomgeving op. Dacht dat een blijvende testomgeving geld kost. Achternaam en exacte functie nog onbekend. |
 | **Willemien (Bos?)** en **Denise** | Huisartsenzorg, achtervang voor Marina | huisartsenzorg@breederode.nl | Willemien zei tijdens de demo inhoudelijk niets. |
 
 ## Aanwezig op de testdag 23-09-2026
@@ -29,10 +29,14 @@ _Bijgewerkt 23-09-2026. Mailadressen uit de Close-thread, functietitels uit hun 
 | Vak | Wie |
 |---|---|
 | Manuele therapie | Marloes de Graaf (begin tot eind), Jochem van Schalkwijk (vanaf het begin, eerder weg voor les) |
-| Kinderfysiotherapie | de opleidingsmanager plus twee collega's uit Nijmegen (namen niet vastgelegd) |
-| Huisartsenzorg | alleen Marina Vinken-Hol, de rest stond in de file |
+| Kinderfysiotherapie | voltallig: de twee collega's uit Nijmegen plus hun leider, vermoedelijk Sanne Toonen-Zwinkels (naam niet hard bevestigd) |
+| Huisartsenzorg | alleen Marina Vinken-Hol. Twee collega's stonden in de file en zijn niet meer aangeschoven. Marina is de leider van het vak, dus dekkend |
 
-Algemene stemming van de docenten: positief.
+**Irma zat niet bij de presentatie.** Even aan het begin, en aan het einde is Dante zelf naar haar toe gelopen voor het contract.
+
+Algemene stemming: enthousiast, geen rode vlaggen, vooral benieuwd hoe het in de praktijk werkt.
+
+**Champion per opleiding.** Het zijn losse opleidingen en per opleiding is de opleidingsmanager de baas. Binnen manuele therapie is Jochem formeel de baas terwijl Marloes het hardst roept. Je hebt per vak een eigen champion nodig, niet één champion voor de hele instelling.
 
 ## Structuur
 - MT is klein: een algemeen directeur en Irma op onderwijs en kwaliteit. Daaronder domeinen met een manager per domein (huisartsenzorg, verpleegkunde, fysiotherapie/masters, ouderenzorg, onderwijs & persoonlijke ontwikkeling, arbo).

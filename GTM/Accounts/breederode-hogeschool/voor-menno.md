@@ -11,9 +11,17 @@ _Voor Menno, via Jeroen. Opgesteld 10-09-2026 op basis van de gespreksopnames va
 
 ## 1b. Nieuw sinds de testochtend van 23 september
 
-17. **Testomgeving bij itslearning.** We vragen er via Breederode (Maud) een aan. Samuel: wat heb je in die omgeving nodig om de LTI-koppeling te bouwen en te testen, en hoe lang moet hij blijven staan? Let op: Breederode vroeg of er kosten aan zitten, dat is nog niet dichtgetimmerd.
-18. **Rolverdeling voor externe docenten in itslearning.** Er zitten veel externe docenten in vakken die ze niet allemaal horen te zien. De rechten moeten kloppen voordat dit live gaat. Dit hangt aan de LTI-koppeling en is een randvoorwaarde voor go-live.
-19. **Consensus-modus (vier-ogenprincipe, uitgebreid).** Bij hun thesis beoordelen twee docenten onafhankelijk. Wat ze willen: de feedback van beide beoordelaars gaat los naar de student, het cijfer nog niet. Een derde rol, de consensus-docent, weegt beide beoordelingen en stelt het cijfer vast dat de student ziet. Dus bovenop punt 2: een derde rol, en een **gescheiden vrijgavemoment voor feedback en cijfer**. Vraag: is dit blokkerend voor de thesis-use-case vóór 15 oktober?
+_Bijgewerkt na het debriefgesprek met Jeroen op 23-09. Signing date staat op 1 oktober, go-live 15 oktober._
+
+17. **Per docent loggen welk cijfer die gaf.** Bij hun vier-ogenprincipe kijken twee docenten dezelfde inzending na, allebei met feedback en cijfer, en komen ze aan het eind samen tot een consensuscijfer. Jeroens route daarvoor is `sync to LMS: feedback only`, zodat de student wel de feedback ziet en nog niet het cijfer. Dat is gedekt. Wat ontbreekt: als beide docenten in dezelfde tool het cijfer aanpassen, moet loggbaar zijn **wie welk cijfer gaf**, anders is het consensusmoment blind. Dante heeft Breederode gezegd dat we dit kunnen.
+
+18. **Testomgeving bij itslearning.** Samuel heeft de aanvraagmail al, Dante forwardt die naar Maud bij Breederode, zij zet de omgeving op. Twee dingen voor Samuel: wat heb je in die omgeving nodig, en hoe lang moet hij blijven staan? Breederode denkt dat een permanente testomgeving geld kost, wij zeggen dat dat bij andere LMS'en niet zo is. Nog niet dicht.
+
+19. **Rolverdeling voor externe docenten in itslearning.** Er zitten veel externe docenten in vakken die ze niet allemaal horen te zien. De rechten moeten kloppen voordat dit live gaat. Randvoorwaarde voor go-live.
+
+20. **Kan de formulering van inline comments aangestuurd worden via de modelinstructies?** Bij de kalibratie van 22-09 lukte alles behalve dit: het voorbeeld van de docent stond letterlijk in de instructies en het model formuleerde het toch net anders. Dante zegt dat het niet kan, Jeroen zegt van wel. Graag een hard antwoord, want het raakt de kalibratiebelofte.
+
+21. **Wat kan er wel en niet via de modelinstructies?** Breederode denkt dat ze er meer mee kunnen dan het model aankan. Dante maakt een lijst en deelt die met ze. Hulp vanuit engineering scheelt hem veel testwerk en voorkomt dat de test op verwachtingen stukloopt.
 
 ## 2. Ja of nee: bestaat dit al in de tool?
 4. Beoordelingsformulier automatisch omzetten naar succescriteria, inclusief het zelf genereren van de schaal (1-10 of voldoende/onvoldoende).
@@ -32,13 +40,15 @@ _Voor Menno, via Jeroen. Opgesteld 10-09-2026 op basis van de gespreksopnames va
 15. Signaal wanneer een docent de nakijktermijn overschrijdt.
 16. Historische opdrachten opnieuw door het model halen om het effect van een toetswijziging te meten.
 
-## 3b. Gevraagd op 23 september, correct afgekaderd als "hebben we nog niet"
+## 3b. Gevraagd op 23 september, afgekaderd als "hebben we nog niet"
 
-Geen belofte gedaan, wel op hun verlanglijst. Goed om te weten waar het op de roadmap staat:
+Geen harde toezegging, wel op hun verlanglijst.
 
-20. **Artikelen in artikelen kunnen uitlezen.** Bronnen toevoegen en door het model laten lezen. Dante heeft gezegd dat dit eraan komt, dus er ligt wel een verwachting.
-21. **Groei van de student over drie formatieve rondes.** In één oogopslag zien welke feedback er per ronde gegeven is en of de student die verwerkt heeft.
-22. **Transcripties onder kennisclips** zodat het model die content leest. Zij leveren dat zelf aan, geen ontwikkelwerk, wel de vraag in welk formaat we dat willen hebben.
+22. **Context uit het LMS, inclusief kennisclips.** Dit is de belangrijkste van de lijst, want er is plenair gezegd dat Eduface alle context uit het LMS leest en dat klopt niet. Zij hebben veel kennisclips en stelden zelf voor de transcriptie onder de video te zetten. Vraag: kunnen we die beschrijving onder een video wel inlezen? Video's zelf lezen we nu niet. Jeroen staat achter het bouwen hiervan en het punt komt ook uit de Bath Spa-lessen.
+23. **Literatuur van de student uitlezen.** De bronnen die een student in zijn opdracht gebruikt direct laten controleren. Jeroen zegt dat dit ooit gebouwd is in een extern project door een student van Menno. Is daar nog iets van over? Dezelfde use case kwam eerder langs bij de Wageningen-lead via SURF.
+24. **Snelle opmerkingen uploaden.** Een docent uploadt zijn eigen opgebouwde bestand met snelle opmerkingen, Eduface haalt daar de opmerkingen uit. Geen Excel, eerder een Google Doc. Dante heeft gezegd dat we hieraan werken.
+25. **Groei van de student over drie formatieve rondes.** In één oogopslag zien welke feedback er per ronde gegeven is en of de student die verwerkt heeft.
+26. **Andere beoordelingsstijlen**, bijvoorbeeld 3 achievement levels in plaats van 4. Klein, en toegezegd als "dat kunnen we toevoegen".
 
 ## 4. Eén claim om te verifiëren
 "Wij hebben al honderdduizenden beoordelingsformulieren gezien." Klopt die orde van grootte?

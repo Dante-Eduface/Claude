@@ -19,12 +19,22 @@ _Stand 23-09-2026. Bron: Close (lead_8sVUDLRJ6YRVHVD4c0pnmZ8WIoIkku6QnUMSm6aYC8c
 | 08-09-2026 | Materiaal binnen: CAT POH-6 (Marina, met rubric en opdrachtbeschrijving) en CAT MKF (Ivonne, twee voorbeelden, handleiding en nieuw feedbackformulier) |
 | **09-09-2026 14:00** | **"Financiële plaatje in kaart brengen"**, met Irma, georganiseerd door Jeroen |
 | 23-09-2026 | **Testochtend op locatie**, 9:00-12:30. Drie vakken aan tafel, docenten over het algemeen positief. Debrief: `transcripts/2026-09-23-testdag-debrief.md` |
-| 23-09-2026 | **Irma heeft het concept licentieovereenkomst aangepast en naar Marcel gestuurd.** Marcel geeft er naar verwachting goedkeuring op en stuurt het naar ons terug. Dante akkoord met haar aanpassingen |
+| 23-09-2026 | **Irma heeft een kleine aanpassing gemaakt in het concept licentieovereenkomst en het naar Marcel gestuurd.** "Voor de rest is het prima." Dante akkoord |
+| **01-10-2026** | **Beoogde signing date** |
+| **15-10-2026** | Beoogde go-live in itslearning |
+| ~begin november | De meeste vakken starten. Uitzondering: bij Marloes worden over twee weken al de eerste opdrachten ingeleverd |
 
 ## Afgesproken pad
 1. Twee weken testen op bestaande, al nagekeken opdrachten.
 2. Daarna twee weken integratie met itslearning (LTI).
 3. Pilot-scope, looptijd en contract worden met Marcel (Calder) afgestemd.
+
+## De licentie (stand 23-09-2026)
+- **Looptijd 4 maanden.** Dat is de pilotperiode die Irma voor ogen heeft. Een maand zou niets betekenen omdat de meeste vakken pas in november starten.
+- **135 studenten** in die pilot.
+- Signing date 1 oktober, go-live 15 oktober.
+- Als dit doorgaat is het **onze eerste getekende licentie**.
+- Aantal vakken en opdrachten is ongelimiteerd, dus zodra ze de tool hebben gaan ze direct los.
 
 ## Succescriteria (opgehaald bij Marloes en Ivonne, bevestigd 03-09)
 - **Accuraatheid boven 92%** van het model tegenover het docentcijfer.
@@ -55,27 +65,32 @@ Jeroen noemde als thema's ook: beoordeling van de AI-feedback door studenten en 
 
 ## Stand na de testdag 23-09-2026
 
-- **Het contract ligt bij Calder.** Irma heeft het concept licentieovereenkomst aangepast en doorgestuurd naar Marcel Lekkerkerker. Verwachting: goedkeuring, daarna terug naar ons. Dit is de eerste keer dat er papier bij Calder ligt, en het verplaatst de deal van Discovery naar onderhandeling. **Wachten we op hen, dus dat is nu het risico: geen datum.**
-- **Docenten positief.** Geen nieuwe bezwaren opgehaald op de testdag.
-- **Nieuwe functiewensen** uit de testdag staan in `07-beloofde-features.md`. De zwaarste is de consensus-modus voor het vier-ogenprincipe bij de thesis.
-- **Opzet aan hun kant:** drie courses, formatief en summatief uit elkaar, plus een losse course voor herkansingen.
+- **Het contract ligt bij Calder.** Irma heeft een kleine aanpassing gemaakt en het doorgestuurd naar Marcel Lekkerkerker. Verwachting: goedkeuring, daarna terug naar ons. Dit is de eerste keer dat er papier bij Calder ligt en het verplaatst de deal van Discovery naar onderhandeling. Signing date staat op 1 oktober.
+- **Geen rode vlaggen op de testdag.** Iedereen enthousiast en vooral benieuwd hoe het in de praktijk werkt. Dat is precies het signaal dat ze willen starten.
+- **Eerste volumegetal:** Marloes gaat waarschijnlijk **8 losse vakken** inrichten. Kalibreren kost ongeveer een kwartier per vak, dat verraste ze positief.
+- **Champion per opleiding, niet één voor de instelling.** Het zijn losse opleidingen en de opleidingsmanager is per opleiding de baas. Binnen manuele therapie is Jochem formeel de baas terwijl Marloes het hardst roept. In de breedte heb je per vak een eigen champion nodig. Dat is de MEDDPICC-consequentie van deze dag.
+- **Grootste verwachtingsrisico:** ze denken meer met de modelinstructies te kunnen dan het model aankan. Zie `07-beloofde-features.md`.
+- **Grootste overclaim:** dat Eduface alle context uit het LMS leest. Dat hebben we niet. Zie dezelfde file.
+- **Opzet aan hun kant:** drie courses, formatief en summatief uit elkaar, plus een losse course voor herkansingen. Uit de eerste debrief, niet bevestigd.
 
 ## Acties uit de testdag
 
 | Wat | Wie | Status |
 |---|---|---|
-| Mail naar Breederode dat het **Go Live-document** met ze gedeeld is en waar het staat. Ze hadden niet gezien dat het gedeeld was | Dante | open |
-| Mail naar **Maud** met het verzoek dat zij bij itslearning een **testomgeving** aanvraagt die we mogen aanhouden | Dante | open |
-| Mail naar **Samuel** over de itslearning-integratie en wat hij in die testomgeving nodig heeft | Dante | open |
-| **Consensus-modus** voorleggen aan Menno en Samuel: is dit blokkerend voor de thesis-use-case vóór 15 oktober | Dante | open |
-| Afstemmen hoe ze de **transcripties van kennisclips** aanleveren | Dante | open |
+| Los mailtje naar Breederode dat het **Go Live-document** gedeeld is en waar het staat. Niemand wist dat het bestond, terwijl ze het allemaal in de mail hebben gehad | Dante | open |
+| De itslearning-aanvraagmail die **Samuel** al heeft **forwarden naar Maud**, zodat zij de testomgeving opzet | Dante | open |
+| Lijst maken van **wat wel en niet via de modelinstructies aanstuurbaar is**, en die met ze delen. Veel testwerk, maar het dekt het grootste verwachtingsrisico af | Dante | open |
+| Uitzoeken of we de **transcriptie onder een kennisclip** uit het LMS kunnen inlezen, en terugkoppelen aan Marloes | Dante | open |
+| **Per-docent cijferlogging** beleggen bij Menno of Samuel. Toegezegd aan Breederode, nodig voor de vier-ogen-use-case | Dante | open |
+| Uitpraten met Menno of Samuel: **kan de formulering van inline comments aangestuurd worden** via de modelinstructies | Dante | open |
 
 ## Open punten
 - Metrics kwantificeren: hoeveel opdrachten per jaar, hoeveel uur nakijken, hoeveel examinatoren.
 - Hoe een visitatiepanel (AeQui) naar het gebruik van onze tool kijkt. Zelf uitzoeken, niet aan hen vragen alsof wij het niet weten.
 - Wat precies in de pilotscope komt: welke opleidingen, hoe lang, welk resultaat telt als succes. Dat is Marcels vraag.
 - Marlies van Hell en de hbo-v doen nu niet mee. Terugkomen zodra de nieuwe docent onderzoeksvaardigheden is ingewerkt.
-- **Kosten van een itslearning-testomgeving.** Dante zei dat daar bij andere LMS'en geen kosten aan zitten, hun reactie was "dat zullen we zien". Niet dichtgetimmerd.
+- **Kosten van een blijvende itslearning-testomgeving.** Maud dacht dat daar kosten aan zitten, Dante zei dat dat bij andere LMS'en niet zo is, Maud: "dat zullen we zien". Niet dichtgetimmerd.
+- **Kan de formulering van inline comments aangestuurd worden?** Dante zegt van niet op basis van de kalibratie van 22-09, Jeroen zegt van wel. Onbeslist.
 - **Drie of vier courses?** Ze willen drie courses met formatief en summatief gesplitst, plus een losse course voor herkansingen. Onduidelijk of herkansingen de derde is of een vierde.
-- **Wie zaten er namens kinderfysiotherapie op de testdag?** De opleidingsmanager plus twee collega's uit Nijmegen, namen niet vastgelegd. De twee uit Nijmegen staan nog nergens in ons dossier.
+- **Wie zaten er namens kinderfysiotherapie op de testdag?** De leider, vermoedelijk Sanne Toonen-Zwinkels (Jeroen noemde die naam, Dante bevestigde hem niet hard), plus de twee collega's uit Nijmegen die nog nergens bij naam in ons dossier staan.
 - Vraag van Ivonne (08-09): waar wordt op gekalibreerd, is het een gesloten systeem, en waar draait het. Zie het antwoord in de sessie van 09-09.
