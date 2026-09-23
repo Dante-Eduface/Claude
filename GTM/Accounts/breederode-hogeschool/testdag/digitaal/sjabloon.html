@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>__TITEL__</title>
+<style>/*__FONTS__*/</style>
+<style>
+:root{
+  --navy:#002333; --green:#00e075; --green-deep:#007b54;
+  --ink-900:#0a2c3b; --ink-700:#2c4a57; --ink-500:#5b7480; --ink-300:#a9bcc4;
+  --ink-200:#cdd9de; --ink-100:#e7eef0; --ink-50:#f3f7f8; --white:#fff;
+  --amber:#b26a00;
+  --r-sm:6px; --r-md:8px; --r-lg:10px; --r-xl:12px;
+  --sidebar-w:248px; --measure:68ch;
+  --shadow-1:0 1px 2px rgba(0,35,51,.06), 0 1px 3px rgba(0,35,51,.08);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--white); color:var(--navy);
+  font-family:"Inter",ui-sans-serif,system-ui,sans-serif;
+  font-size:15px; line-height:1.5; font-variant-numeric:tabular-nums;
+}
+h1,h2,h3,.display{font-family:"League Spartan","Inter",sans-serif; letter-spacing:-.01em; margin:0}
+a{color:inherit}
+
+/* ---------- raamwerk ---------- */
+.app{display:grid; grid-template-columns:var(--sidebar-w) minmax(0,1fr)}
+.nav{
+  position:sticky; top:0; height:100vh; overflow-y:auto;
+  background:var(--ink-50); border-right:1px solid var(--ink-100); padding:24px 16px 32px;
+}
+.doc{padding:40px 56px 120px; max-width:980px}
+.prose{max-width:var(--measure)}
+
+/* ---------- navigatie ---------- */
+.nav-kop{padding:0 8px 20px; border-bottom:1px solid var(--ink-200); margin-bottom:16px}
+.nav-opleiding{font-size:12px; color:var(--ink-500); margin-bottom:4px}
+.nav-vak{font-family:"League Spartan",sans-serif; font-weight:700; font-size:17px; line-height:1.2}
+.nav-datum{font-size:12px; color:var(--ink-500); margin-top:6px}
+.nav-optie{
+  margin-top:14px; padding:10px 12px; background:var(--white);
+  border:1px solid var(--ink-200); border-radius:var(--r-md); font-size:12px; line-height:1.4
+}
+.nav-optie b{display:block; font-size:13px; margin-bottom:2px}
+.nav-groep{font-size:12px; color:var(--ink-500); padding:16px 8px 6px}
+.nav a.link{
+  display:block; padding:6px 8px; border-radius:var(--r-sm); text-decoration:none;
+  font-size:13px; color:var(--ink-700); border-left:2px solid transparent
+}
+.nav a.link:hover{background:var(--ink-100)}
+.nav a.link.sub{padding-left:16px}
+.nav a.link.actief{background:var(--white); color:var(--navy); font-weight:600; border-left-color:var(--navy)}
+.nav-voet{margin-top:24px; padding:16px 8px 0; border-top:1px solid var(--ink-200)}
+.knop{
+  display:inline-block; width:100%; text-align:center; cursor:pointer;
+  background:var(--navy); color:var(--white); border:0; border-radius:var(--r-md);
+  padding:0 12px; height:32px; font:inherit; font-size:13px; font-weight:500
+}
+.knop:hover{background:var(--ink-900)}
+.nav-voet p{font-size:12px; color:var(--ink-500); margin:10px 0 0}
+
+/* ---------- koppen ---------- */
+.titel{font-size:30px; line-height:1.15; font-weight:700}
+.onderkop{color:var(--ink-500); margin-top:8px; font-size:15px}
+section{scroll-margin-top:24px}
+.sectie{margin-top:56px}
+.sectie > h2{font-size:22px; font-weight:700; margin-bottom:4px}
+.sectie > .bij{color:var(--ink-500); font-size:13px; margin-bottom:20px}
+.student-kop{
+  margin-top:72px; padding-top:24px; border-top:2px solid var(--navy);
+  display:flex; align-items:baseline; gap:12px; flex-wrap:wrap
+}
+.student-kop h2{font-size:26px; font-weight:700}
+.student-kop .casus{color:var(--ink-500); font-size:14px}
+h3.sub{font-size:17px; font-weight:600; margin:40px 0 4px}
+
+/* ---------- totalenregel ---------- */
+.totalen{
+  display:flex; gap:40px; flex-wrap:wrap; margin:20px 0 28px; padding:18px 20px;
+  background:var(--ink-50); border-radius:var(--r-xl)
+}
+.totaal .cijfer{font-family:"League Spartan",sans-serif; font-size:28px; font-weight:700; line-height:1}
+.totaal .wat{font-size:12px; color:var(--ink-500); margin-top:6px}
+
+/* ---------- tabel ---------- */
+table{border-collapse:collapse; width:100%; margin:8px 0 4px}
+th,td{text-align:left; padding:10px 12px; vertical-align:top; font-size:14px}
+thead th{
+  font-size:12px; color:var(--ink-500); font-weight:500;
+  border-bottom:1px solid var(--ink-200); padding-bottom:8px
+}
+tbody tr{border-bottom:1px solid var(--ink-100)}
+tbody td:first-child{font-weight:500; width:32%}
+.oordeel{width:15%}
+.tag{width:38%; font-size:13px; color:var(--ink-700)}
+tr.verschil td:first-child{box-shadow:inset 3px 0 0 var(--navy); padding-left:16px}
+tr.verschil td{background:var(--ink-50)}
+tr.verschil .oordeel{font-weight:600}
+tr.eens .oordeel{color:var(--ink-700)}
+.nvt{color:var(--ink-500)}
+.tabel-voet{font-size:12px; color:var(--ink-500); margin-top:10px}
+
+/* ---------- citaten ---------- */
+.citaat{
+  margin:12px 0; padding:14px 18px; background:var(--ink-50);
+  border-radius:var(--r-lg); font-size:14px; line-height:1.55
+}
+.citaat .wie{display:block; font-size:12px; color:var(--ink-500); margin-bottom:6px}
+.feedbackblok{margin:14px 0 0; padding:0 0 0 16px; border-left:2px solid var(--ink-200)}
+.feedbackblok h4{font-size:14px; font-weight:600; margin:0 0 4px}
+.feedbackblok p{margin:0 0 16px; font-size:14px; color:var(--ink-900); max-width:var(--measure)}
+
+/* ---------- verschil-kaart ---------- */
+.verschil{margin:24px 0; padding:20px 22px; border:1px solid var(--ink-200); border-radius:var(--r-xl)}
+.verschil h4{font-size:16px; font-weight:600; margin:0 0 2px; font-family:"League Spartan",sans-serif}
+.verschil .richting{font-size:13px; color:var(--ink-700); margin-bottom:16px}
+.naast{display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:8px}
+.naast > div{padding:14px 16px; background:var(--ink-50); border-radius:var(--r-lg)}
+.naast .wie{display:block; font-size:12px; color:var(--ink-500); margin-bottom:6px}
+.naast p{margin:0; font-size:14px; line-height:1.5}
+
+/* ---------- vraag-kaart ---------- */
+.vraag{display:grid; grid-template-columns:64px minmax(0,1fr); gap:20px; margin:28px 0; align-items:start}
+.vraag .nr{
+  font-family:"League Spartan",sans-serif; font-weight:700; font-size:24px;
+  color:var(--navy); padding-top:2px
+}
+.vraag .tekst{font-size:17px; line-height:1.45; max-width:var(--measure); font-weight:500}
+.vraag .aanname{font-size:13px; color:var(--ink-700); margin-top:8px; max-width:var(--measure)}
+details.bewijs{margin-top:14px}
+details.bewijs summary{
+  cursor:pointer; font-size:13px; color:var(--ink-700); list-style:none;
+  display:inline-flex; align-items:center; gap:6px
+}
+details.bewijs summary::-webkit-details-marker{display:none}
+details.bewijs summary::before{content:"+"; font-size:14px; width:16px; height:16px; line-height:15px;
+  text-align:center; border:1px solid var(--ink-300); border-radius:var(--r-sm)}
+details.bewijs[open] summary::before{content:"–"}
+details.bewijs .inhoud{margin-top:12px; padding-left:22px; border-left:1px solid var(--ink-100)}
+details.bewijs dl{margin:0; font-size:13px}
+details.bewijs dt{color:var(--ink-500); margin-top:12px}
+details.bewijs dt:first-child{margin-top:0}
+details.bewijs dd{margin:2px 0 0; max-width:var(--measure)}
+
+/* ---------- opmerkingen ---------- */
+.let-op{
+  margin:24px 0; padding:16px 20px; border:1px solid var(--ink-200);
+  border-left:3px solid var(--amber); border-radius:var(--r-md); font-size:14px; max-width:var(--measure)
+}
+.let-op b{font-weight:600}
+.notitie{font-size:13px; color:var(--ink-500); margin:24px 0 0}
+.papier{
+  margin:24px 0 8px; padding:18px 22px; background:var(--navy); color:var(--white);
+  border-radius:var(--r-xl); max-width:var(--measure)
+}
+.papier h3{font-size:16px; font-weight:600; margin-bottom:8px; color:var(--white)}
+.papier p{margin:0; font-size:14px; color:rgba(255,255,255,.78); line-height:1.55}
+.papier b{color:var(--white); font-weight:500}
+ul.lijst{max-width:var(--measure); padding-left:20px; margin:12px 0}
+ul.lijst li{margin-bottom:8px}
+.voet{margin-top:96px; padding-top:20px; border-top:1px solid var(--ink-100); font-size:12px; color:var(--ink-500)}
+
+/* ---------- antwoordblad, alleen bij printen ---------- */
+.antwoordblad{display:none}
+@media print{
+  @page{size:A4; margin:18mm 16mm}
+  .nav,.doc{display:none}
+  .app{display:block}
+  .antwoordblad{display:block; padding:0}
+  .antwoordblad h1{font-size:20pt; font-weight:700}
+  .antwoordblad .meta{font-size:9pt; color:#5b7480; margin:4px 0 18px}
+  .ab-vraag{page-break-inside:avoid; margin-bottom:18pt}
+  .ab-vraag .kop{display:flex; gap:10pt; align-items:baseline}
+  .ab-vraag .nr{font-family:"League Spartan",sans-serif; font-weight:700; font-size:14pt}
+  .ab-vraag .tekst{font-size:10.5pt; line-height:1.35}
+  .ab-regels{margin-top:8pt}
+  .ab-regels div{border-bottom:1px solid #cdd9de; height:22pt}
+}
+
+/* ---------- smal scherm ---------- */
+@media (max-width:1000px){
+  .app{grid-template-columns:1fr}
+  .nav{position:static; height:auto; border-right:0; border-bottom:1px solid var(--ink-100)}
+  .doc{padding:28px 24px 80px}
+  .naast{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+</style>
+</head>
+<body>
+<div class="app">
+  <aside class="nav" id="nav"></aside>
+  <main class="doc" id="doc"></main>
+</div>
+<div class="antwoordblad" id="antwoordblad"></div>
+
+<script>const DOSSIER = /*__DATA__*/;</script>
+<script>
+(function(){
+  var D = DOSSIER;
+  function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){
+    return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c];});}
+  function id(s){return String(s).toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");}
+
+  /* verdict-vergelijking op basis van de rangorde in de data */
+  var rang = D.beoordelingsoptie.rangorde || [];
+  function pos(v){return rang.indexOf(String(v||"").toLowerCase());}
+  /* Welke stand telt als gehaald. Standaard de hoogste, wat klopt bij voldaan/niet voldaan.
+     Bij een schaal met meer standen zet je beoordelingsoptie.drempel op de laagste stand
+     die nog meetelt, bijvoorbeeld "voldoende" bij onvoldoende/voldoende/goed/uitstekend. */
+  var drempelIdx = rang.length - 1;
+  if (D.beoordelingsoptie.drempel){
+    var gevonden = pos(D.beoordelingsoptie.drempel);
+    if (gevonden >= 0) drempelIdx = gevonden;
+  }
+  var drempelLabel = drempelIdx < rang.length - 1
+    ? (rang[drempelIdx] + " of hoger")
+    : (rang[rang.length-1] || "hoogste oordeel");
+  function richting(nakijker, eduface){
+    var a = pos(nakijker), b = pos(eduface);
+    if (a < 0 || b < 0) return {soort:"onbekend", label:"niet te vergelijken"};
+    if (a === b) return {soort:"eens", label:""};
+    return b < a ? {soort:"verschil", label:"model strenger"} : {soort:"verschil", label:"model milder"};
+  }
+
+  /* vraagnummers doorlopend over het hele vak */
+  var vragen = [];
+  function nummer(v, herkomst){
+    var n = "V" + (vragen.length + 1);
+    vragen.push({nr:n, vraag:v.vraag, herkomst:herkomst});
+    return n;
+  }
+
+  /* ---------- opbouw ---------- */
+  var nav = [], doc = [];
+
+  doc.push('<section id="zo-werkt-dit">'
+    + '<h1 class="titel">' + esc(D.titel || "Eduface testdag") + '</h1>'
+    + '<p class="onderkop">' + esc(D.opleiding) + ' &middot; ' + esc(D.vak) + '</p>'
+    + '<div class="papier"><h3>Schrijven doe je op papier</h3><p>Dit bestand is om te lezen. '
+    + 'Je antwoorden schrijf je op je eigen vel. Zet er het <b>nummer</b> bij dat voor de vraag staat, '
+    + 'bijvoorbeeld <b>V3</b>, dan kunnen we ze na afloop terugleggen.</p></div>'
+    + '<ul class="lijst">'
+    + '<li>Het bestand staat los op je laptop. Er is geen internet voor nodig en je kunt niets stukmaken.</li>'
+    + '<li>Links staan de onderdelen. Je hoeft niet op volgorde te lezen.</li>'
+    + '<li>Onder een vraag kun je uitklappen wat het model letterlijk zei, wat de rubriek zegt en wat de nakijker deed.</li>'
+    + '<li>Er staat studentwerk en een beoordeling in. Het bestand is voor vandaag, verwijder het daarna.</li>'
+    + '</ul>');
+
+  if (D.notitie){
+    doc.push('<p class="notitie prose">' + esc(D.notitie) + '</p>');
+  }
+  if (D.beoordelingsoptie.waarschuwing){
+    doc.push('<div class="let-op"><b>Let op.</b> ' + esc(D.beoordelingsoptie.waarschuwing) + '</div>');
+  }
+  doc.push('</section>');
+
+  nav.push('<div class="nav-kop">'
+    + '<div class="nav-opleiding">' + esc(D.opleiding) + '</div>'
+    + '<div class="nav-vak">' + esc(D.vak) + '</div>'
+    + (D.datum_beoordeling ? '<div class="nav-datum">Beoordeeld ' + esc(D.datum_beoordeling) + '</div>' : '')
+    + '<div class="nav-optie"><b>' + esc(D.beoordelingsoptie.gekozen) + '</b>'
+    + esc(D.beoordelingsoptie.wat_dat_doet) + '</div></div>');
+  nav.push('<a class="link" href="#zo-werkt-dit">Zo werkt dit</a>');
+
+  (D.studenten || []).forEach(function(st, i){
+    var basis = "student-" + (i+1);
+    nav.push('<div class="nav-groep">' + esc(st.label) + '</div>');
+
+    doc.push('<div class="student-kop" id="' + basis + '"><h2>' + esc(st.label) + '</h2>'
+      + (st.casus ? '<span class="casus">' + esc(st.casus) + '</span>' : '') + '</div>');
+
+    /* 1. beoordeling naast elkaar */
+    nav.push('<a class="link sub" href="#' + basis + '-beoordeling">Beoordeling</a>');
+    var crit = st.criteria || [];
+    var nVoldaanNakijker = 0, nVoldaanEduface = 0, nEens = 0, nVergelijkbaar = 0;
+    var nBekendNakijker = 0, nBekendEduface = 0;
+    var rijen = crit.map(function(c){
+      var r = richting(c.nakijker, c.eduface);
+      if (pos(c.nakijker) >= 0){ nBekendNakijker++;
+        if (pos(c.nakijker) >= drempelIdx) nVoldaanNakijker++; }
+      if (pos(c.eduface) >= 0){ nBekendEduface++;
+        if (pos(c.eduface) >= drempelIdx) nVoldaanEduface++; }
+      if (r.soort !== "onbekend"){ nVergelijkbaar++; if (r.soort === "eens") nEens++; }
+      return '<tr class="' + (r.soort === "verschil" ? "verschil" : "eens") + '">'
+        + '<td>' + esc(c.naam) + '</td>'
+        + '<td class="oordeel">' + esc(c.nakijker) + '</td>'
+        + '<td class="oordeel' + (pos(c.eduface) < 0 ? ' nvt' : '') + '">' + esc(c.eduface) + '</td>'
+        + '<td class="tag">' + esc(r.label) + '</td></tr>';
+    }).join("");
+
+    doc.push('<section class="sectie" id="' + basis + '-beoordeling">'
+      + '<h2>Beoordeling</h2><p class="bij">De nakijker en Eduface naast elkaar, per rubriekcriterium.</p>'
+      + '<div class="totalen">'
+      + '<div class="totaal"><div class="cijfer">' + nVoldaanNakijker + '/' + nBekendNakijker + '</div>'
+      + '<div class="wat">' + esc(drempelLabel) + ' bij de nakijker</div></div>'
+      + '<div class="totaal"><div class="cijfer">' + nVoldaanEduface + '/' + nBekendEduface + '</div>'
+      + '<div class="wat">' + esc(drempelLabel) + ' bij Eduface</div></div>'
+      + '<div class="totaal score"><div class="cijfer">' + nEens + '/' + nVergelijkbaar + '</div>'
+      + '<div class="wat">criteria waarop ze het eens zijn</div></div></div>'
+      + '<table><thead><tr><th>Criterium</th><th>Nakijker</th><th>Eduface</th><th></th></tr></thead>'
+      + '<tbody>' + rijen + '</tbody></table>'
+      + (st.tabel_voet ? '<p class="tabel-voet">' + esc(st.tabel_voet) + '</p>' : '')
+      + (st.eindoordeel_nakijker ? '<h3 class="sub">Eindoordeel van de nakijker</h3><p class="prose">'
+          + esc(st.eindoordeel_nakijker) + '</p>' : '')
+      + (st.feedback_nakijker ? '<div class="citaat"><span class="wie">Geschreven eindfeedback, letterlijk</span>'
+          + esc(st.feedback_nakijker) + '</div>' : '')
+      + '</section>');
+
+    /* 2. feedback van eduface */
+    if ((st.feedback_eduface || []).length){
+      nav.push('<a class="link sub" href="#' + basis + '-feedback">Feedback Eduface</a>');
+      doc.push('<section class="sectie" id="' + basis + '-feedback">'
+        + '<h2>Feedback Eduface</h2><p class="bij">Per criterium, letterlijk zoals het model het schreef.</p>'
+        + '<div class="feedbackblok">'
+        + st.feedback_eduface.map(function(f){
+            return '<h4>' + esc(f.criterium) + '</h4><p>' + esc(f.tekst) + '</p>';
+          }).join("")
+        + '</div></section>');
+    }
+
+    /* 3. waar het uiteenloopt */
+    if ((st.verschillen || []).length){
+      nav.push('<a class="link sub" href="#' + basis + '-verschillen">Waar het uiteenloopt</a>');
+      doc.push('<section class="sectie" id="' + basis + '-verschillen">'
+        + '<h2>Waar het uiteenloopt</h2><p class="bij">Beide teksten onder elkaar, met een vraag per plek.</p>'
+        + st.verschillen.map(function(v){
+            var nr = nummer(v, st.label + ", " + v.criterium);
+            return '<div class="verschil"><h4>' + esc(v.criterium) + '</h4>'
+              + '<div class="richting">' + esc(v.richting) + '</div>'
+              + '<div class="naast">'
+              + '<div><span class="wie">Nakijker</span><p>' + esc(v.nakijker_tekst) + '</p></div>'
+              + '<div><span class="wie">Eduface</span><p>' + esc(v.eduface_tekst) + '</p></div>'
+              + '</div>'
+              + '<div class="vraag"><div class="nr">' + nr + '</div>'
+              + '<div><div class="tekst">' + esc(v.vraag) + '</div></div></div>'
+              + '</div>';
+          }).join("")
+        + '</section>');
+    }
+
+    /* 4. aannames van het model */
+    if ((st.aannames || []).length){
+      nav.push('<a class="link sub" href="#' + basis + '-aannames">Aannames van het model</a>');
+      doc.push('<section class="sectie" id="' + basis + '-aannames">'
+        + '<h2>Aannames van het model</h2><p class="bij">Wat het model aanneemt, en de vraag die daarbij hoort.</p>'
+        + st.aannames.map(function(a){
+            var nr = nummer(a, st.label + ", " + a.kop);
+            return '<div class="vraag"><div class="nr">' + nr + '</div><div>'
+              + '<div class="tekst">' + esc(a.vraag) + '</div>'
+              + '<div class="aanname">' + esc(a.kop) + '</div>'
+              + '<details class="bewijs"><summary>Waar dit op gebaseerd is</summary><div class="inhoud"><dl>'
+              + '<dt>Het model zegt</dt><dd>' + esc(a.model_zegt) + '</dd>'
+              + '<dt>De rubriek zegt</dt><dd>' + esc(a.rubriek_zegt) + '</dd>'
+              + '<dt>De nakijker deed</dt><dd>' + esc(a.nakijker_deed) + '</dd>'
+              + '</dl></div></details></div></div>';
+          }).join("")
+        + '</section>');
+    }
+
+    /* opdracht van de student */
+    if (st.opdracht){
+      nav.push('<a class="link sub" href="#' + basis + '-opdracht">Opdracht</a>');
+      doc.push('<section class="sectie" id="' + basis + '-opdracht"><h2>Opdracht van de student</h2>'
+        + (st.opdracht.los
+            ? '<p class="bij">Ligt los, niet in dit bestand.</p><p class="prose">' + esc(st.opdracht.los) + '</p>'
+            : '<div class="prose">' + esc(st.opdracht.tekst).split("\n\n").map(function(p){
+                return '<p>' + p.replace(/\n/g, "<br>") + '</p>'; }).join("") + '</div>')
+        + '</section>');
+    }
+  });
+
+  /* vragen over het vak */
+  if ((D.vragen_over_het_vak || []).length){
+    nav.push('<div class="nav-groep">Over het vak</div>');
+    nav.push('<a class="link" href="#over-het-vak">Vragen over het vak</a>');
+    doc.push('<section class="sectie" id="over-het-vak" style="margin-top:72px;padding-top:24px;'
+      + 'border-top:2px solid var(--navy)"><h2>Vragen over het vak</h2>'
+      + '<p class="bij">Niet over een student, wel over hoe het model hier ingesteld staat.</p>'
+      + D.vragen_over_het_vak.map(function(v){
+          var nr = nummer(v, "Over het vak");
+          return '<div class="vraag"><div class="nr">' + nr + '</div><div>'
+            + '<div class="tekst">' + esc(v.vraag) + '</div>'
+            + (v.toelichting ? '<div class="aanname">' + esc(v.toelichting) + '</div>' : '')
+            + '</div></div>';
+        }).join("")
+      + '</section>');
+  }
+
+  doc.push('<p class="voet">' + esc(D.voetregel || (D.opleiding + " &middot; Eduface testdag"))
+    + '<br>De naam van de nakijker staat bewust niet in dit bestand.</p>');
+
+  nav.push('<div class="nav-voet"><button class="knop" onclick="window.print()">Antwoordblad printen</button>'
+    + '<p>Alleen als er een printer is. Een blanco vel met de nummers erop werkt net zo goed.</p></div>');
+
+  document.getElementById("nav").innerHTML = nav.join("");
+  document.getElementById("doc").innerHTML = doc.join("");
+  document.title = (D.vak ? D.vak + " — " : "") + (D.titel || "Eduface testdag");
+
+  /* antwoordblad voor de printer */
+  document.getElementById("antwoordblad").innerHTML =
+    '<h1>' + esc(D.titel || "Eduface testdag") + '</h1>'
+    + '<p class="meta">' + esc(D.opleiding) + ' &middot; ' + esc(D.vak) + ' &middot; naam: ________________</p>'
+    + vragen.map(function(v){
+        return '<div class="ab-vraag"><div class="kop"><span class="nr">' + v.nr + '</span>'
+          + '<span class="tekst">' + esc(v.vraag) + '<br><span style="color:#5b7480">' + esc(v.herkomst)
+          + '</span></span></div><div class="ab-regels"><div></div><div></div><div></div></div></div>';
+      }).join("");
+
+  /* meelopende markering in de navigatie */
+  var links = [].slice.call(document.querySelectorAll(".nav a.link"));
+  var doelen = links.map(function(a){ return document.querySelector(a.getAttribute("href")); });
+  function markeer(){
+    var y = window.scrollY + 120, actief = 0;
+    doelen.forEach(function(el, i){ if (el && el.offsetTop <= y) actief = i; });
+    links.forEach(function(a, i){ a.classList.toggle("actief", i === actief); });
+  }
+  var wacht = false;
+  window.addEventListener("scroll", function(){
+    if (wacht) return; wacht = true;
+    window.requestAnimationFrame(function(){ markeer(); wacht = false; });
+  }, {passive:true});
+  markeer();
+})();
+</script>
+</body>
+</html>

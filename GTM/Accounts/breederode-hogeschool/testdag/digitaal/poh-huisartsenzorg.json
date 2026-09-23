@@ -1,0 +1,242 @@
+{
+  "titel": "Eduface testdag",
+  "opleiding": "Breederode Hogeschool",
+  "vak": "CAT, Praktijkondersteuner Huisartsenzorg",
+  "datum_beoordeling": "nog niet vastgelegd",
+  "notitie": "Alleen de Eduface-kolom is gevuld. De beoordeling van de nakijker over deze twee opdrachten hebben wij niet ontvangen, dus die kolom is bewust leeg gelaten in plaats van ingevuld met een aanname. Vul hem vanochtend samen in, dan rekent dit bestand de verschillen zelf uit.",
+  "beoordelingsoptie": {
+    "gekozen": "Onvoldoende, voldoende, goed of uitstekend, per rubriekcriterium",
+    "wat_dat_doet": "Het model geeft per criterium een van vier standen en schrijft er feedback bij met plussen en minnen. Het zet er een totaal onder, dat totaal is geen optelsom van de gewichten.",
+    "rangorde": [
+      "onvoldoende",
+      "voldoende",
+      "goed",
+      "uitstekend"
+    ],
+    "waarschuwing": "Twee dingen om vooraf te weten. De kolom van de nakijker is leeg, dus er staan hier nog geen verschillen. En het totaal bij de eerste student leest SOUND, een Engels woord dat niet op deze schaal staat; bij de tweede student staat er wel gewoon Goed.",
+    "drempel": "voldoende"
+  },
+  "studenten": [
+    {
+      "label": "Student 1",
+      "casus": "Een vrouw van 66 met een verhoogd LDL-cholesterol wil kurkumacapsules gebruiken om statines te vermijden",
+      "criteria": [
+        {
+          "naam": "Beschrijving van de aanleiding van de klinische vraag vanuit het EBP-principe",
+          "nakijker": "onbekend",
+          "eduface": "goed"
+        },
+        {
+          "naam": "Beschrijving van een eenduidige en methodologische onderzoeksvraag op basis van het PICO-concept",
+          "nakijker": "onbekend",
+          "eduface": "voldoende"
+        },
+        {
+          "naam": "Gebruik van wetenschappelijke databanken en professionele weging van gevonden informatie",
+          "nakijker": "onbekend",
+          "eduface": "voldoende"
+        },
+        {
+          "naam": "Analyse van onderzoeksresultaten binnen de context van het praktijkprobleem",
+          "nakijker": "onbekend",
+          "eduface": "goed"
+        },
+        {
+          "naam": "Formulering van een conclusie vanuit de verkregen resultaten",
+          "nakijker": "onbekend",
+          "eduface": "goed"
+        },
+        {
+          "naam": "Kritische inhoudelijke discussie",
+          "nakijker": "onbekend",
+          "eduface": "goed"
+        },
+        {
+          "naam": "Klinische relevantie en toepasbaarheid van bevindingen en resultaten",
+          "nakijker": "onbekend",
+          "eduface": "voldoende"
+        },
+        {
+          "naam": "Reflectie op werkwijze, resultaten en eigen professionele rolontwikkeling",
+          "nakijker": "onbekend",
+          "eduface": "goed"
+        }
+      ],
+      "tabel_voet": "De kolom van de nakijker is nog leeg. Die vullen we vanochtend samen in, daarna zijn de drie totalen en de verschillen pas te berekenen. Gewichten per criterium: beschrijving 12%, beschrijving 12% en zo verder, met 16 procent op reflectie.",
+      "eindoordeel_nakijker": "Nog niet vastgelegd.",
+      "feedback_nakijker": "Nog niet aangeleverd. Het geschreven oordeel van de nakijker over deze twee opdrachten hebben wij niet.",
+      "feedback_eduface": [
+        {
+          "criterium": "Beschrijving van de aanleiding van de klinische vraag vanuit het EBP-principe",
+          "tekst": "+ Casus, statinewens, klinische vraag en NHG-koppeling zijn concreet uitgewerkt.\n+ Patiënt-, POH- en praktijkperspectief, risico’s, interacties en monitoring zijn herkenbaar beschreven.\n+/- Specificeer gezondheidsclaims met bronnen en koppel risico’s aan patiënt en medicatie.\n+/- Presenteer kurkuma niet vooraf als statinealternatief; benoem beperkte werkzaamheidsbasis en professionele verantwoordelijkheid."
+        },
+        {
+          "criterium": "Beschrijving van een eenduidige en methodologische onderzoeksvraag op basis van het PICO-concept",
+          "tekst": "+ De vraag sluit logisch aan bij de casus over kurkumacapsules en verhoogd LDL-cholesterol.\n+/- De controle ontbreekt in de PICO; voeg “geen supplement of gebruikelijke zorg” toe.\n+/- De populatie wisselt; kies één afbakening en pas inclusiecriteria, zoekstrategie en conclusie aan.\n+/- “Cholesterolwaarde” is te breed; definieer LDL-cholesterol als primaire uitkomst."
+        },
+        {
+          "criterium": "Gebruik van wetenschappelijke databanken en professionele weging van gevonden informatie",
+          "tekst": "- De strategie is beperkt reproduceerbaar door onduidelijke termen (‘AdultsWomen’, ‘CurcumaTurmeric’) en OR/AND-combinaties. Orden per PICO-element correcte MeSH-termen en synoniemen in expliciete haakjesblokken.\n+ De PubMed-zoekactie en selectie van drie artikelen zijn gemotiveerd.\n+/- De populatiebeperking is benoemd, maar bewijskracht en toepasbaarheid onvoldoende vertaald. Benoem dat diabetes, metabool syndroom en tailleomtrek niet gelijkstaan aan geïsoleerd hoog cholesterol bij volwassen vrouwen."
+        },
+        {
+          "criterium": "Analyse van onderzoeksresultaten binnen de context van het praktijkprobleem",
+          "tekst": "+ Je data-extractie en discussie behandelen per artikel design, steekproef en resultaten; je koppelt populatiebeperkingen aan mevrouw Van Kruining. + Je conclusie onderscheidt HDL, LDL en totaalcholesterol. Maar +/- Bespreek ook toewijzing, uitval en selectiebias. +/- Duid afname van 80 naar 35 deelnemers bij De Sousa et al. (2022) en noem Azhdari’s resultaten ‘aanwijzingen’."
+        },
+        {
+          "criterium": "Formulering van een conclusie vanuit de verkregen resultaten",
+          "tekst": "+ Je beantwoordt de klinische vraag, bespreekt de uiteenlopende resultaten van Adibian, Azhdari en De Sousa Guardiano Reis en benoemt relevante beperkingen.\n+/- De synthese is relevant, maar uitspraken over totaalcholesterol zijn niet eenduidig.\n- Formuleer één consistente kernconclusie en schrap herhaling (bijvoorbeeld: ‘Curcumine kan enkele lipidenwaarden verbeteren, maar bewijs voor relevante cholesteroldaling bij volwassen vrouwen is onvoldoende.’)"
+        },
+        {
+          "criterium": "Kritische inhoudelijke discussie",
+          "tekst": "+ Je vergelijkt relevante sterke en zwakke punten per studie en signaleert de spanning tussen de kleine RCT en meta-analyse. +/- Maar verklaar verschillen vanuit dosering, populatie en studieduur. +/- Beoordeel Azhdari et al. en je zoek- en selectieprocedure, en koppel dit aan je standpunt en toepasbaarheid bij vrouwen met geïsoleerde hypercholesterolemie."
+        },
+        {
+          "criterium": "Klinische relevantie en toepasbaarheid van bevindingen en resultaten",
+          "tekst": "+ De aanbeveling positioneert curcumine als aanvulling op leefstijl, niet als vervanging van medicatie; patiëntgericht.\n+/- Onderzoeken tonen beperkte, inconsistente evidentie. Zonder koppeling aan NHG-criteria blijft conclusie onvoldoende onderbouwd. Verbind deze evidentie aan leefstijlbegeleiding, medicatie of informeren.\n+/- Maak monitoring concreet: benoem controletermijn, evaluatiemoment en vervolgactie bij effect of interacties."
+        },
+        {
+          "criterium": "Reflectie op werkwijze, resultaten en eigen professionele rolontwikkeling",
+          "tekst": "+ Je behandelt alle gevraagde onderdelen en trekt een professioneel passende conclusie over curcumine.\n+/- Koppel je terughoudende advies expliciet aan kleine steekproeven, korte studieduur en beperkte toepasbaarheid.\n+/- Maak je reflectie concreter: benoem welke docentfeedback tot welke wijziging leidde en wanneer je zelf literatuur zoekt of collega’s raadpleegt."
+        }
+      ],
+      "verschillen": [],
+      "aannames": [
+        {
+          "kop": "Het model noemt de patiënt bij een naam die in de casus niet staat.",
+          "model_zegt": "In de feedback op criterium 4 staat dat de student de populatiebeperkingen koppelt aan een met naam genoemde mevrouw. Die achternaam komt in de casus nergens voor.",
+          "rubriek_zegt": "Het criterium gaat over de analyse van onderzoeksresultaten binnen de context van het praktijkprobleem.",
+          "nakijker_deed": "Nog niet ingevuld, de kolom van de nakijker is vanochtend aan de beurt.",
+          "vraag": "De casus beschrijft een vrouw van 66 zonder naam, en de achternaam die het model gebruikt staat op de titelpagina van het document. Dit is een bevinding over het model: wij halen de titelpagina weg voor de testperiode, en de vraag is of jullie willen dat het model gegevens buiten de opdrachttekst meeneemt."
+        },
+        {
+          "kop": "Het model beoordeelt in vier standen.",
+          "model_zegt": "Het model geeft per criterium onvoldoende, voldoende, goed of uitstekend, en zet er een totaal onder.",
+          "rubriek_zegt": "Hoeveel standen jullie formulier kent is hier niet vastgesteld.",
+          "nakijker_deed": "Nog niet ingevuld.",
+          "vraag": "Het model werkt met vier standen per criterium. Hoeveel standen kent jullie eigen formulier, en welke daarvan wilt u terugzien?"
+        }
+      ],
+      "opdracht": {
+        "los": "De CAT van deze student staat in een apart bestand. Leg dat ernaast, dan kun je bij elk criterium terug naar de tekst."
+      }
+    },
+    {
+      "label": "Student 2",
+      "casus": "Vitamine-D-suppletie en de vraag of dat zelfstandig tot gewichtsverlies leidt",
+      "criteria": [
+        {
+          "naam": "Beschrijving van de aanleiding van de klinische vraag vanuit het EBP-principe",
+          "nakijker": "onbekend",
+          "eduface": "goed"
+        },
+        {
+          "naam": "Beschrijving van een eenduidige en methodologische onderzoeksvraag op basis van het PICO-concept",
+          "nakijker": "onbekend",
+          "eduface": "voldoende"
+        },
+        {
+          "naam": "Gebruik van wetenschappelijke databanken en professionele weging van gevonden informatie",
+          "nakijker": "onbekend",
+          "eduface": "goed"
+        },
+        {
+          "naam": "Analyse van onderzoeksresultaten binnen de context van het praktijkprobleem",
+          "nakijker": "onbekend",
+          "eduface": "voldoende"
+        },
+        {
+          "naam": "Formulering van een conclusie vanuit de verkregen resultaten",
+          "nakijker": "onbekend",
+          "eduface": "goed"
+        },
+        {
+          "naam": "Kritische inhoudelijke discussie",
+          "nakijker": "onbekend",
+          "eduface": "goed"
+        },
+        {
+          "naam": "Klinische relevantie en toepasbaarheid van bevindingen en resultaten",
+          "nakijker": "onbekend",
+          "eduface": "uitstekend"
+        },
+        {
+          "naam": "Reflectie op werkwijze, resultaten en eigen professionele rolontwikkeling",
+          "nakijker": "onbekend",
+          "eduface": "voldoende"
+        }
+      ],
+      "tabel_voet": "De kolom van de nakijker is nog leeg. Die vullen we vanochtend samen in, daarna zijn de drie totalen en de verschillen pas te berekenen. Gewichten per criterium: beschrijving 12%, beschrijving 12% en zo verder, met 16 procent op reflectie.",
+      "eindoordeel_nakijker": "Nog niet vastgelegd.",
+      "feedback_nakijker": "Nog niet aangeleverd. Het geschreven oordeel van de nakijker over deze twee opdrachten hebben wij niet.",
+      "feedback_eduface": [
+        {
+          "criterium": "Beschrijving van de aanleiding van de klinische vraag vanuit het EBP-principe",
+          "tekst": "+ De praktijkaanleiding is concreet uitgewerkt, met relevante patiëntkenmerken, NHG-bronnen en herkenbare perspectieven van patiënt, POH en praktijk.\n+/- Werk BMI, comorbiditeit en medicatie uit; onderbouw verwachtingen over gewichtsverlies en praktijkgevolgen met bronnen of formuleer ze als onzekerheden.\n+/- Beschrijf benodigde POH-expertise en de uitvoering van monitoring concreet, zodat de begeleiding logisch uit de aanleiding volgt."
+        },
+        {
+          "criterium": "Beschrijving van een eenduidige en methodologische onderzoeksvraag op basis van het PICO-concept",
+          "tekst": "+/- Je PICO bevat populatie, interventie en uitkomst en sluit aan bij de casus.\n- De controleconditie ontbreekt in de onderzoeksvraag; daardoor blijft de effectvergelijking ambigu. Vermeld placebo of geen suppletie.\n- De populatie verschuift tussen casus, PICO en onderzoeksvraag; dit ondermijnt de consistentie. Kies ‘volwassen vrouwen’ of ‘volwassenen’ en pas zoekstrings, inclusiecriteria en artikelkeuze daarop aan."
+        },
+        {
+          "criterium": "Gebruik van wetenschappelijke databanken en professionele weging van gevonden informatie",
+          "tekst": "+ Je zoekstrategie is reconstrueerbaar door MeSH-termen, synoniemen, booleaanse operatoren, filters en criteria; je motiveert ook de artikelkeuze.\n+/- Controleer Perna’s extractie: IPD, calcitriol en databases lijken bij Oussaada te horen. Koppel elk artikel aan de PICO en benoem Oussaada’s indirecte aansluiting door actieve vitamine D."
+        },
+        {
+          "criterium": "Analyse van onderzoeksresultaten binnen de context van het praktijkprobleem",
+          "tekst": "+/- De resultaten koppelen aan de patiëntvraag; het onderscheid tussen gewicht, BMI, vetmassa en tailleomvang ondersteunt synthese. Voeg bij Lotfi-Dizaji et al. (2019) en overige artikelen level of evidence, gevolgen voor betrouwbaarheid, validiteit, generaliseerbaarheid, representativiteit, setting, dataverzameling, belangenverstrengeling en patiëntrelevantie toe voor een betrouwbare conclusie. Corrigeer Perna/Oussaada, controleer tabel en verbind de conclusie aan vitamine D naast leefstijl."
+        },
+        {
+          "criterium": "Formulering van een conclusie vanuit de verkregen resultaten",
+          "tekst": "+ Je beantwoordt de klinische vraag grotendeels en onderscheidt gewichtsverlies van veranderingen in BMI, vetmassa en lichaamssamenstelling. Je verklaart verschillen tussen Lotfi-Dizaji, Perna en Oussaada passend vanuit interventie, studieduur en populatie.\n+/- Maar formuleer de conclusie stelliger: concludeer dat vitamine-D-suppletie geen overtuigend zelfstandig gewichtsverlies veroorzaakt en laat methodologische toelichting daar weg."
+        },
+        {
+          "criterium": "Kritische inhoudelijke discussie",
+          "tekst": "+ Je bespreekt overtuigend de tegenstrijdige resultaten van Lotfi-Dizaji, Perna en Oussaada en koppelt deze aan de PICO-vraag.\n+ Je kritische duiding is helder.\n+/- Maar concretiseer hoe heterogeniteit, de gecombineerde dieetinterventie en vertekening causaliteit en toepasbaarheid beperken.\n- Controleer bij Perna en Oussaada bronkenmerken (‘IPD-meta-analyse’, ‘actieve vitamine D’) en gebruik deze termen consistent."
+        },
+        {
+          "criterium": "Klinische relevantie en toepasbaarheid van bevindingen en resultaten",
+          "tekst": "+ De vertaling van beperkte, inconsistente evidence naar een terughoudende vitamine-D-aanbeveling is helder.\n+ Gevolgen voor patiënt, POH en praktijk zijn concreet verbonden aan samen beslissen, motiverende gespreksvoering en CVRM.\n+ NHG-criteria en €20–30 onderbouwen gericht testen; monitoring omvat relevante uitkomsten en jaarlijkse evaluatie, maar verbind elke aanbeveling expliciet aan de bijbehorende evidence."
+        },
+        {
+          "criterium": "Reflectie op werkwijze, resultaten en eigen professionele rolontwikkeling",
+          "tekst": "+ Je beschrijft aanleiding, CAT-uitvoering, samenwerking en leerpunten concreet, vooral in ‘Actie’ en ‘Reflectie’.\n+/- Maak feedbackverwerking navolgbaar: noem één concrete opmerking en de daaropvolgende wijziging in de conclusie.\n+/- Analyseer hoe zoekkeuzes en samenwerking het eindproduct beïnvloedden en onderbouw je tevredenheid.\n+/- Koppel vaker onderzoek doen aan een vaste zoek- en evaluatiestap bij nieuwe patiëntvragen."
+        }
+      ],
+      "verschillen": [],
+      "aannames": [
+        {
+          "kop": "Twee studenten krijgen op de onderzoeksvraag hetzelfde punt.",
+          "model_zegt": "Bij beide studenten mist het model de controleconditie in de PICO en ziet het de populatie verschuiven tussen casus, PICO en onderzoeksvraag.",
+          "rubriek_zegt": "Het criterium vraagt om een eenduidige en methodologische onderzoeksvraag op basis van het PICO-concept.",
+          "nakijker_deed": "Nog niet ingevuld.",
+          "vraag": "Het model vraagt bij beide studenten om een expliciete controleconditie in de onderzoeksvraag. Verwachten jullie die C altijd in de vraagzin, of mag die uit de opzet blijken?"
+        },
+        {
+          "kop": "Reflectie weegt het zwaarst en zakt het snelst.",
+          "model_zegt": "Reflectie heeft als enige criterium een gewicht van 16 procent, en het model vraagt daar om een concrete opmerking met de wijziging die erop volgde.",
+          "rubriek_zegt": "Het criterium gaat over werkwijze, resultaten en de eigen professionele rolontwikkeling.",
+          "nakijker_deed": "Nog niet ingevuld.",
+          "vraag": "Het model beoordeelt reflectie op navolgbaarheid: welke feedback leidde tot welke wijziging. Is dat ook waar jullie op letten, of weegt de diepgang van de reflectie zwaarder dan de navolgbaarheid?"
+        }
+      ],
+      "opdracht": {
+        "los": "De CAT van deze student staat in een apart bestand. Leg dat ernaast, dan kun je bij elk criterium terug naar de tekst."
+      }
+    }
+  ],
+  "vragen_over_het_vak": [
+    {
+      "vraag": "Het totaal bij de eerste student leest SOUND, bij de tweede Goed. SOUND staat niet op de schaal van vier standen. Dit is een bevinding over het model, die wij meenemen: wilt u het totaal überhaupt zien, of alleen de oordelen per criterium?",
+      "toelichting": "Raakt alleen het totaalveld. De acht oordelen per criterium staan er bij beide studenten wel in de goede woorden."
+    },
+    {
+      "vraag": "Het model komt bij zestien oordelen veertien keer uit op voldoende of goed, een keer op uitstekend en nooit op onvoldoende. Ligt dat aan het werk, of wilt u dat het model de uitersten vaker gebruikt?",
+      "toelichting": "Zonder de kolom van de nakijker is dit niet te toetsen. Het is wel het eerste dat opvalt aan de verdeling."
+    },
+    {
+      "vraag": "Het model schrijft ongeveer vijfenveertig woorden per opmerking in de tekst en stelt daarbij vrijwel nooit een vraag. Welke lengte en welke vorm sluiten aan bij hoe jullie zelf in de kantlijn schrijven?",
+      "toelichting": "Gemeten over eenentwintig opmerkingen bij deze twee opdrachten. Bij een ander vak bleek dit goed bij te sturen."
+    }
+  ],
+  "voetregel": "Breederode Hogeschool &middot; CAT Praktijkondersteuner Huisartsenzorg &middot; Eduface testdag"
+}
