@@ -1,6 +1,6 @@
 # Case study: CAT EBP (POH), oude rubric v3.0
 
-_Aangelegd 23-09-2026. Status: **stap 1 t/m 3 gedeeltelijk af, stap 4 t/m 7 geblokkeerd.** Zie "Wat er nog moet komen"._
+_Aangelegd 23-09-2026, bijgewerkt 23-09-2026. Status: **baseline gemeten, diagnose rond, varianttekst klaar. Stap 5 t/m 7 (testen en concluderen) staan open.**_
 
 Tweede vak waarop `grading-calibration` wordt losgelaten, na manuele therapie. Dit bestand is het werkdocument: materiaal, ground truth, de vaste rubric-basistekst en de openstaande gaten.
 
@@ -23,8 +23,8 @@ Tegen de checklist uit `reference.md` punt 2:
 | 3 | Minstens 2 echte inzendingen | ✅ | Student 1 (5.436 woorden), Student 2 (5.383 woorden), beide compleet en beide geslaagd |
 | 4 | Officiële beoordeling van de docent op diezelfde inzendingen | ✅ | Twee ingevulde beoordelingsformulieren, per criterium punten plus geschreven feedback |
 | 5 | Losse conceptcommentaar van de docent (Word-comments) | ❌ | Geen enkel aangeleverd bestand bevat comments. Gecontroleerd op `word/comments.xml` en op PDF-annotaties: nul. |
-| 6 | Huidige live rubric + modelinstructies in Eduface | ⚠️ half | Rubric aangeleverd 23-09-2026 (Descriptive, 4 vakjes), zie sectie 6. **Modelinstructies ontbreken nog.** |
-| 7 | Huidige AI-uitkomst op diezelfde inzendingen | ❌ | **Blokkerend** |
+| 6 | Huidige live rubric + modelinstructies in Eduface | ⚠️ half | Rubric aangeleverd 23-09-2026 (Descriptive, 4 vakjes), zie sectie 6. Modelinstructies zijn door Dante aangepast maar de **tekst ervan is nog niet aangeleverd**. |
+| 7 | Huidige AI-uitkomst op diezelfde inzendingen | ✅ | Export `Inzendingen_CAT_23-09-2026_3.zip`: per student een Feedback_Summary.pdf plus een Comments.docx met de inline opmerkingen. Zie sectie 8. |
 
 Materiaal 5 is hier minder erg dan bij manuele therapie, want het officiële beoordelingsformulier bevat zélf per criterium uitgeschreven `+` / `+/-` / `-`-commentaar. Dat levert het drempelbewijs dat bij manuele therapie alleen uit de Word-comments te halen was. Zie sectie 4.
 
@@ -146,7 +146,7 @@ Nog niet doorvoeren. Dit zijn de exacte, minimale ingrepen die klaarstaan zodra 
 
 **Gewichten.** Zet alle acht op 12,5%, of laat het zoals het is en noteer dat het bewust afwijkt. Keuze van Dante.
 
-## 7. De toon van de docent, en de modelinstructies-tekst
+## 7. De toon van de docent
 
 Uit haar eigen feedback op beide formulieren:
 
@@ -158,15 +158,130 @@ Uit haar eigen feedback op beide formulieren:
 - **Geen vaste openingszin.** Ze varieert per criterium. Lengte loopt van één zin tot ongeveer 120 woorden.
 - **Vakinhoudelijk concreet.** Ze noemt MeSH-termen, de C uit de PICO, level of evidence, NHG-richtlijnen en APA-plaatsing bij naam.
 
-In te voeren via "Beschrijf je feedbackstijl" en dan "Opnieuw genereren". Dat is de enige route; modelinstructies zijn niet rechtstreeks bewerkbaar. Reken op verlies, zie `reference.md` punt 7: voorbeeldzinnen en de sectie Inline opmerkingen overleefden bij manuele therapie nooit.
+Dit is het kalibratiedoel voor de modelinstructies. De tekst zelf staat in sectie 10, variant I, nu de baseline laat zien wat er precies misgaat.
+
+## 8. De baselinemeting
+
+Export van 23-09-2026 (`Inzendingen_CAT_23-09-2026_3.zip`), op de rubric uit sectie 6 met door Dante aangepaste modelinstructies. Dit is de baseline.
+
+De PDF toont de vakjes in het Nederlands. Unsatisfactory verschijnt als "Onvoldoende", Satisfactory als "Voldoende", Good als "Goed". **Het label voor Great hebben we nog niet gezien, want dat vakje is geen enkele keer gebruikt.**
+
+| # | Criterium | Docent S1 | AI S1 | Docent S2 | AI S2 |
+|---|---|---|---|---|---|
+| 1 | Aanleiding | Great | Good | Great | Good |
+| 2 | PICO | Great | Satisfactory | Satisfactory | Good |
+| 3 | Zoekstrategie | Good | Satisfactory | Good | **Good ✓** |
+| 4 | Analyse | Great | Satisfactory | Satisfactory | **Satisfactory ✓** |
+| 5 | Conclusie | Good | **Good ✓** | Good | **Good ✓** |
+| 6 | Discussie | Great | Good | Great | Good |
+| 7 | Klinische relevantie | Satisfactory | **Satisfactory ✓** | Great | Satisfactory |
+| 8 | Reflectie | Great | Satisfactory | Satisfactory/Good | **Satisfactory ✓** |
+
+Totaalcijfer in beide PDF's: "SOUND". Dat lijkt een onvertaald label, en het is bij beide studenten gelijk.
+
+### Wat goed gaat
+
+**De zaklijn klopt. Nul keer Unsatisfactory, op 16 van de 16 criteriumoordelen.** Dat was de harde eis uit sectie 4 en die is gehaald. De rubric laat beide studenten overal slagen, net als de docent. Dat is het belangrijkste en het is meteen raak.
+
+### Wat niet goed gaat
+
+**1. Het plafond wordt nooit aangeraakt.** De AI gaf 0 keer Great. De docent gaf 9 van de 16 keer 4 punten, dus Great. Alle 16 AI-oordelen zitten in de twee middelste vakjes. Van een vierpuntsschaal blijven er feitelijk twee over.
+
+**2. De rangorde klapt om.** De docent zette Student 1 duidelijk boven Student 2: 26 tegen 23 punten, 8,1 tegen 7,2. De AI geeft Student 1 drie keer Good en vijf keer Satisfactory, en Student 2 vijf keer Good en drie keer Satisfactory. De AI zet de zwakkere CAT dus hoger. Het model onderscheidt de twee studenten niet alleen verkeerd, het draait ze om.
+
+**3. Systematische onderschatting, sterker bij de betere student.** In vakjesstappen geteld (Unsatisfactory 1 tot Great 4) zit Student 1 negen stappen te laag over acht criteria, Student 2 ongeveer drie. Hoe beter de inzending, hoe groter het gat. Dat volgt uit punt 1: wie een 4 verdient kan die niet krijgen.
+
+## 9. Diagnose, uit de eigen tekst van de AI
+
+Conform `reference.md` punt 4: niet raden waaróm het model afwijkt, maar het uit zijn eigen feedback halen. Drie mechanismen, en ze vragen verschillende fixes.
+
+### A. De AI toetst aan een systematic-review-standaard die nergens in de opdracht staat
+
+Wat de AI eist, letterlijk uit de feedback en de inline opmerkingen:
+
+- "Voeg per artikel effectgroottes, betrouwbaarheidsintervallen, uitvalpercentages en een biasbeoordeling toe" (S1, criterium 4)
+- "Specificeer voor elke lipidenparameter de effectgrootte, het betrouwbaarheidsinterval en de p-waarde" (S1, inline)
+- "Noteer per zoekactie syntax, termen, filters, datum en hits" (S1, criterium 3)
+- "vermeld veldlabels, Booleaanse operatoren, filters, zoekdatum en het aantal resultaten per zoekactie" (S1, inline)
+- "controleer per zoekstring haakjes, MeSH-termen, filters, hitcijfers en datum" (S2, criterium 3)
+
+**Geen van deze eisen staat in de rubric, en geen enkele staat in Bijlage 5.1**, het beoordelingsformulier dat de opleiding zelf voorschrijft voor de methodologische kwaliteit. Bijlage 5.1 stelt kwalitatieve vragen: is de steekproef voldoende groot, is die representatief, is data-saturatie bereikt, is er rekening gehouden met vertekening. Nergens een effectgrootte, een betrouwbaarheidsinterval of een formele risk-of-bias-beoordeling.
+
+Dit is mechanisme 1 uit `reference.md` punt 4 in zijn scherpste vorm: het model vult de rubric aan met een externe standaard. **Fix: rubric-tekst, met een expliciete afbakening van wat niet vereist is.**
+
+### B. De AI beoordeelt de klinische juistheid van het advies in plaats van de aanwezigheid van het rubriekonderdeel
+
+Het scherpste voorbeeld is criterium 7 bij Student 2. De docent gaf hier 4 punten en schreef:
+
+> `+ Er wordt een concrete monitoringfrequentie genoemd (jaarlijks). Ook wordt verwezen naar bestaande NHG-criteria, wat de aanbeveling goed integreerbaar maakt in bestaande werkwijzen.`
+
+De AI ziet exact hetzelfde en rekent het aan als tekort:
+
+> "schrap de ononderbouwde jaarlijkse controle als algemene aanbeveling" (inline)
+>
+> "De controlefrequentie en praktische uitvoering blijven onvoldoende eenduidig" (criterium 7, verdict Satisfactory)
+
+Zelfde feit, tegengestelde weging. Het is dus geen leesfout. De rubric vraagt bij Good alleen dat "een wijze van monitoring in de praktijk" **beschreven** is. De AI eist dat die monitoring medisch-inhoudelijk verdedigbaar is. Hetzelfde gebeurt bij "Vervang 'alternatief' door 'mogelijke aanvullende optie'" (S1) en bij de GLP-1-claim (S2): dat is klinische redactie, geen rubriekoordeel.
+
+**Fix: rubric-tekst en de Context-sectie van de modelinstructies.**
+
+### C. Het Great-vakje is zoals geschreven onbereikbaar
+
+Alle vier Great-teksten stapelen absoluten: "volledig en samenhangend", "volledig en overtuigend beschreven", "overtuigend onderbouwd", "aantoonbaar", "volledig en herkenbaar". Een model dat die letterlijk leest vindt altijd wel iets dat niet volledig is, zeker in combinatie met mechanisme A. Dat verklaart nul keer Great op 16 oordelen.
+
+Dat het aan de tekst ligt en niet aan de inzendingen blijkt uit de docent: zij gaf negen keer een 4, met motiveringen als "alle onderdelen van de analyse zijn op correcte wijze geanalyseerd. Complimenten!" en "Je reflectie voldoet aan alle gestelde eisen". Volledigheid binnen de gevraagde onderdelen, niet meer dan gevraagd.
+
+**Fix: rubric-tekst, Great-kolom.**
+
+### D. De toon is een sjabloon
+
+Alle zestien feedbackblokken hebben exact dezelfde driedelige vorm: een lofzin, dan "Echter," met een tekortkoming, dan een gebiedende wijs. "Je deed goed werk door..." opent er vier. Dat is precies de sjabloonopener die bij manuele therapie door de woordlimiet verdween (`LEERPUNTEN.md`, 22-09-2026).
+
+Naast de docent gelegd: zij schrijft losse bullets met `+`, `+/-` en `-`, informeel, met een concreet voorbeeld tussen haakjes bij elk tekort, en een los compliment waar het verdiend is. Nul overeenkomst met het sjabloon.
+
+**Fix: modelinstructies.**
+
+## 10. De varianten
+
+Twee teksten, allebei nog niet getest. Voer ze in aparte Eduface-opdrachten in, naast de ongewijzigde baseline.
+
+### Variant R: de rubric-wijzigingen
+
+Vier ingrepen. De rest van de rubric blijft letterlijk zoals in sectie 6.
+
+**R1. Afbakening bij criterium 3 (zoekstrategie).** Voeg toe aan het einde van zowel de Good- als de Great-tekst:
+
+> Herhaalbaar betekent dat een lezer de zoekactie kan reconstrueren uit de zoektabel en de zoekstrings. Het vermelden van de zoekdatum, het aantal hits per zoekactie, veldlabels of filterinstellingen is niet vereist.
+
+**R2. Afbakening bij criterium 4 (analyse).** Voeg toe aan het einde van zowel de Good- als de Great-tekst:
+
+> De methodologische beoordeling volgt het beoordelingsformulier betrouwbaarheid, validiteit en generaliseerbaarheid van de opleiding en is kwalitatief van aard. Het rapporteren van effectgroottes, betrouwbaarheidsintervallen, p-waarden, uitvalpercentages of een formele risk-of-bias-beoordeling is niet vereist.
+
+**R3. Het plafond bereikbaar maken.** Voeg aan alle vier de Great-teksten dezelfde slotzin toe:
+
+> Dit niveau vraagt dat de onderdelen van het Good-niveau volledig en onderbouwd aanwezig zijn, niet dat er onderdelen buiten de opdracht worden toegevoegd. Kleine onvolkomenheden die de kern niet ondermijnen staan dit niveau niet in de weg.
+
+**R4. De drempelregel terugzetten bij criterium 3, 6 en 7.** Zet vooraan in elk van die drie Unsatisfactory-teksten:
+
+> Dit niveau geldt pas wanneer twee of meer van de onderstaande punten zijn vastgesteld.
+
+De drie Satisfactory-correcties uit sectie 6 blijven ook staan; die raken de zaklijn, die nu goed zit, maar ze kloppen inhoudelijk nog steeds niet met de bron. Doorvoeren kan geen kwaad, maar verwacht er geen verschuiving van.
+
+### Variant I: de modelinstructies
+
+In te voeren via "Beschrijf je feedbackstijl" en dan "Opnieuw genereren". Reken op verlies: bij manuele therapie overleefden voorbeeldzinnen en de sectie Inline opmerkingen nooit (`reference.md` punt 7).
 
 ```
 BELANGRIJK: vat het onderstaande niet samen en laat geen van de onderdelen weg.
 
 Context: dit is een CAT (Critically Appraised Topic) van een student van de opleiding
 praktijkondersteuner huisarts (POH), NLQF niveau 6. Een literatuuronderzoek van maximaal
-6000 woorden naar een vraag uit de eigen huisartsenpraktijk, met PICO, zoekstrategie,
-data-extractietabel, conclusie, discussie, klinische relevantie en reflectie.
+6000 woorden naar een vraag uit de eigen huisartsenpraktijk. Dit is geen systematische
+review en geen wetenschappelijke publicatie. Beoordeel uitsluitend tegen de rubric.
+Vraag niet om effectgroottes, betrouwbaarheidsintervallen, p-waarden, uitvalpercentages,
+risk-of-bias-beoordelingen, zoekdata of hitaantallen: die horen niet bij deze opdracht.
+Beoordeel of het gevraagde onderdeel aanwezig en onderbouwd is, niet of het klinische
+advies van de student medisch-inhoudelijk de beste keuze is.
 
 Algemene feedback: schrijf per criterium een lijst losse bevindingen, geen lopende tekst
 en geen kopjes. Markeer elke bevinding met + wanneer het goed is, +/- wanneer het er is
@@ -175,34 +290,38 @@ informeel en vakinhoudelijk concreet: noem MeSH-termen, PICO-elementen, level of
 evidence, NHG-richtlijnen en APA bij naam. Geef bij elk tekort een concreet voorbeeld of
 een concrete suggestie tussen haakjes, nooit een kale constatering. Benoem sterke en
 zwakke punten binnen hetzelfde criterium naast elkaar. Maximaal 80 woorden per criterium.
+Begin nooit met "Je deed goed werk" en gebruik nooit het woord "Echter" als scharnier.
 Varieer de opening, gebruik nooit twee keer dezelfde openingszin.
 
-Beoordelingsstrengheid: Satisfactory is al een voldoende, niet een waarschuwing. Kies
-Unsatisfactory alleen wanneer de Unsatisfactory-tekst van dat criterium als geheel van
-toepassing is. Een onderdeel dat aanwezig is maar beknopt, of dat op onderdelen beter had
-gekund, is minimaal Satisfactory. Een ontbrekend detail is groeifeedback binnen een
-voldoende, geen reden om een vakje lager te gaan. Bij de criteria zoekstrategie, discussie
-en klinische relevantie geldt Unsatisfactory pas wanneer twee of meer tekortkomingen uit
-die tekst zijn vastgesteld.
+Beoordelingsstrengheid: gebruik de volle schaal, ook het hoogste vakje. Een inzending die
+alle gevraagde onderdelen volledig en onderbouwd bevat verdient het hoogste vakje, ook
+wanneer er nog iets beter had gekund. Satisfactory is al een voldoende, niet een
+waarschuwing. Kies Unsatisfactory alleen wanneer die tekst als geheel van toepassing is.
+Een ontbrekend detail is groeifeedback binnen het huidige vakje, geen reden om een vakje
+lager te gaan.
 ```
 
-## 8. Wat er nog moet komen
+### Wat we van de uitkomst verwachten
 
-**Blokkerend, van Dante:**
+Op grond van manuele therapie (`reference.md` punt 9) en de diagnose hierboven:
 
-1. **De huidige modelinstructies in Eduface** voor dit vak, via "Bekijk modelinstructies", letterlijk overgenomen. De rubric is er nu wel, de instructies nog niet.
-2. **De huidige AI-uitkomst op deze twee inzendingen** onder die configuratie: de `Feedback_Summary.pdf` per student via de knop "Inzendingen". Dat is de baseline waar stap 2 en 3 op draaien. Dante heeft aangekondigd deze aan te leveren.
+- **Variant R** lost naar verwachting het plafond op (mechanisme A en C) en daarmee ook de omgeklapte rangorde, want die komt voort uit het ontbreken van het bovenste vakje.
+- **Variant I** verandert naar verwachting de toon wel en de oordelen nauwelijks.
+- **Variant RI** wint waarschijnlijk op beide assen.
+
+Neem dat niet aan, meet het. Bij manuele therapie klopte dit patroon, maar dat is één vak.
+
+## 11. Wat er nog moet komen
+
+**Van Dante:**
+
+1. **De huidige modelinstructies**, letterlijk, via "Bekijk modelinstructies". Zonder die tekst weten we niet wat deze baseline heeft geproduceerd, en dus ook niet wat variant I precies verandert.
+2. De drie varianten draaien (R, I, RI) op dezelfde twee studenten, en de exports aanleveren.
 
 **Vragen, niet zelf ingevuld:**
 
-3. Blijft reflectie op 16%, of gaan alle acht naar 12,5% zoals in de bron? Zie sectie 6, probleem 3.
-4. Horen de randvoorwaarden (APA-7, max 6000 woorden, inhoudsopgave, lettertype, Word-format) als extra criterium in Eduface, of blijven ze bij de docent? Ze staan in de bron als aparte poortlijst die niet meetelt in het cijfer, en de helft ervan kan de AI niet vaststellen. Nu staan ze nergens in de Eduface-rubric.
-5. "Voorbeeld 1 verslag resultaat onvoldoende" en "Voorbeeld 2 beoordeling goed" horen niet bij elkaar: het eerste is een verslag zonder beoordelingsformulier, het tweede een beoordelingsformulier (30 punten, 9,4) zonder verslag. Klopt dat, en is "Voorbeeld 1" een afgekeurde CAT of een CAT met een zwak hoofdstuk Resultaten?
-6. Is er een inzending die de docent **wel** heeft laten zakken, met haar beoordeling erbij? Zonder die kan dit testset alleen overstrengheid aantonen, geen oversoepelheid.
-7. Is K.J. van Kruining dezelfde docent als "Selma" uit de bestandsnaam van de rubric, of zijn dat twee mensen?
-
-**Daarna, zodra 1 en 2 er zijn:**
-
-Vier Eduface-opdrachten, allemaal vanuit exact dezelfde vaste rubrictekst (baseline, alleen rubric, alleen instructies, beide). Beide studenten door elke variant halen en vergelijken op twee assen apart: klopt het oordeel (harde eis: nul keer Unsatisfactory; zachte eis: het vakje volgt de tabel in sectie 4), en klopt de toon.
-
-**Let op bij het opzetten van de varianten.** De rubric uit sectie 6 is vanaf nu de vaste basistekst. Nooit een verse auto-generatie uit het bronbestand als controle gebruiken, die is elke keer anders (`reference.md` punt 6). Plak in elke opdracht dezelfde letterlijke tekst.
+3. Blijft reflectie op 16%, of gaan alle acht naar 12,5% zoals in de bron?
+4. Horen de randvoorwaarden (APA-7, max 6000 woorden, inhoudsopgave, lettertype, Word-format) als extra criterium in Eduface, of blijven ze bij de docent?
+5. Is er een inzending die de docent **wel** heeft laten zakken, met haar beoordeling erbij? De baseline laat zien dat de zaklijn nu goed zit voor geslaagde studenten, maar of hij niet te laag ligt is met dit testset niet te meten.
+6. Wat betekent "Totaal Cijfer: SOUND" in de export, en is dat instelbaar? Het staat bij beide studenten gelijk terwijl de docent 8,1 en 7,2 gaf.
+7. Is K.J. van Kruining dezelfde docent als "Selma" uit de bestandsnaam van de rubric?
