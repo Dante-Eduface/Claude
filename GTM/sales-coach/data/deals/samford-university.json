@@ -1,0 +1,55 @@
+{
+  "slug": "samford-university",
+  "close": {
+    "lead_id": null, "naam": "Samford University", "url": null, "lead_status": null,
+    "opportunity_id": null, "fase": null, "fase_type": null, "waarde": null, "valuta": "USD",
+    "confidence": null, "close_date": null, "eigenaar": null,
+    "crm_note": "Nog niet in Close op 2026-09-23. Inbound via Calendly.",
+    "contacten": [{"naam": "Susan Wilbanks", "titel": "Assistant Professor of Kinesiology, School of Health Professions", "email": "swilbank@samford.edu", "id": null}],
+    "gesprekken": [], "open_taken": [], "laatste_gesprek": null,
+    "volgende_afspraak": "2026-09-23 21:00 (14:00 Central)", "aantal_gehad": 0, "gesynct": null
+  },
+  "coach": {
+    "next_action": {
+      "wat": "Susan stuurt de grant-call (criteria, bedrag, deadline) plus een opdracht of examenvraag uit een eigen vak; Eduface zet daar een voorbeeld-mondeling op",
+      "wanneer": "Vast te zetten in het gesprek, ruim voor de grant-deadline",
+      "wie": "Susan Wilbanks, Dante",
+      "waarom": "Zonder klantactie is het een continuation. Haar grant-deadline is de natuurlijke dwang."
+    },
+    "prep": {
+      "doel": "Advance: Susan stuurt de grant-call en een eigen opdracht, zodat we een voorbeeld-mondeling voor haar vak bouwen voor de deadline. Plus: begrijpen wat zij onder metacognitief toetsen verstaat.",
+      "openers": [
+        "You mentioned oral exams for metacognitive assessment. What made you think of oral for that, instead of a written reflection?",
+        "Before I show anything: which course do you have in mind, and what does the assessment look like today?"
+      ],
+      "vragen": [
+        "When you say metacognitive assessment, what do you want to see a student do? Explain their reasoning, judge how confident they are, reflect on how they studied?",
+        "Can you walk me through the last time you graded something like this by hand? How long did it take, and what did you miss?",
+        "Tell me about the grant. What does the call ask for, what's the budget, and when is it due?",
+        "Who reviews the applications, and what did the projects that got funded last year look like?",
+        "If this works in your course, who else at Samford would care? The chair, the School of Health Professions, the teaching center?",
+        "Are you planning to publish on this as teaching and learning research? Does that mean IRB approval for using student data?",
+        "Which LMS are you on, and who in IT would need to sign off on a new tool that handles student audio?"
+      ],
+      "risicos": [
+        "Klein geld: interne seed grant van een assistant professor, ver onder 50k en onder de 300-lerenden-drempel. Waarde zit in een US-referentie en een publicatie.",
+        "Oral Examination is beta. Niets beloven over metacognitieve criteria dat niet in Platform/product.md staat.",
+        "Privacy: student-audio, FERPA en IRB. Wij claimen alleen AI Act, niets over FERPA.",
+        "Prijs voor een losse cursus bestaat niet in het prijsmodel. Niet ter plekke een bedrag noemen."
+      ],
+      "bezwaren": [
+        "Is it ready? -> Honest: it's in beta, which is why a grant-funded pilot is a good fit.",
+        "What does it cost? -> Pricing is per student; for a grant pilot we'll put a number together that fits the budget once I know it.",
+        "Is AI grading fair? -> The instructor approves every grade before a student sees it."
+      ]
+    },
+    "meddpicc": {},
+    "gate": {"fase": "discovery", "open": null, "ontbreekt": ["Metrics", "Economic buyer", "Decision process", "Paper process", "Budget grant onbekend"]},
+    "stakeholders": [
+      {"naam": "Susan Wilbanks", "rol": "champion", "gesproken": false, "noot": "Kandidaat-champion. Assistant Professor Kinesiology sinds 2024, PhD Rehabilitation Science (UAB), onderzoekt scholarship of teaching and learning."}
+    ],
+    "calls": [],
+    "diagnose": "",
+    "laatst_gecoacht": "2026-09-23"
+  }
+}
