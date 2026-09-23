@@ -1,6 +1,6 @@
 # Mensen bij Breederode
 
-_Bijgewerkt 09-09-2026. Mailadressen uit de Close-thread, functietitels uit hun eigen handtekeningen._
+_Bijgewerkt 23-09-2026. Mailadressen uit de Close-thread, functietitels uit hun eigen handtekeningen._
 
 ## Beslissers
 | Naam | Rol | Mail | Positie in de deal |
@@ -17,7 +17,7 @@ _Bijgewerkt 09-09-2026. Mailadressen uit de Close-thread, functietitels uit hun 
 | **Jochem van Schalkwijk** | Programmaleider MSc Manuele Therapie en Extended Scope | j.vanschalkwijk@breederode.nl | Positief en scherp. Pareerde in de demo het hallucinatie-bezwaar met "mensen hallucineren ook". Mogelijk gepasseerd gevoeld toen de vervolgmeeting met anderen werd gepland. Sluit 23-09 om 9:00 aan, heeft daarna les. |
 | **Marina Vinken-Hol** | Manager Opleidingen Huisartsenzorg (vrijdag afwezig) | m.vinken@breederode.nl | Actief. Levert CAT-materiaal POH-6 aan, kan alleen 23 september. |
 | **Marlies van Hell MSc, RN** | Programmamanager/docent hbo-v (ma, di, do) | m.vanhell@breederode.nl · 06 39113945 | Gelooft in tijdbesparing, waarschijnlijk de grootste opleiding. **Doet nu niet mee**: geen docentcapaciteit, de docent onderzoeksvaardigheden gaat in december met pensioen en haar opvolger is net gestart. Wil wel op de hoogte blijven. Gebruikt al **TrainTool** in het curriculum. |
-| **Kas van Kruining** | Onderwijsmanager opleiding POG (Praktijkopleider Gezondheidszorg & Welzijn) | — | **Kritische stem**, mogelijk tegenstander. Betoogde in de demo dat AI niet beter is dan mensen, argument: hallucineren. Levert wel input voor de test. |
+| **Kas van Kruining** | Onderwijsmanager opleiding POG (Praktijkopleider Gezondheidszorg & Welzijn) | — | **Kritische stem**, mogelijk tegenstander. Betoogde in de demo dat AI niet beter is dan mensen, argument: hallucineren. Levert wel input voor de test. Is de beoordelaar ("K.J. van Kruining") van de twee POH-6 CAT's uit juni 2025 die we als kalibratiemateriaal kregen (23-09-2026), zie `kalibratie-cat-poh6.md`. |
 | **Selma de Nijs** | Docent/beoordelaar POH-6 | — | Levert beoordeelde, geanonimiseerde CAT-opdrachten aan. |
 | **Carina Wind** | Onbekend, genoemd als iemand die Ivonne zou bijpraten | — | Nog te plaatsen. |
 | **Maud** | Vermoedelijk executive assistant | — | Was bij de demo. |

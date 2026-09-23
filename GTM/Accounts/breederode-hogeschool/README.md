@@ -14,6 +14,8 @@ Account.
 - `06-taal-en-haakjes.md`
 - `07-beloofde-features.md`
 - `CLAUDE.md`
+- `kalibratie-cat-mkf.md`
+- `kalibratie-cat-poh6.md`
 - `breederode-organogram.pdf`
 - `voor-menno.md`
 

@@ -13,6 +13,7 @@ Particuliere hogeschool in Rotterdam, zorg en welzijn, deeltijd voor werkende pr
 - [05-eduface-deal.md](05-eduface-deal.md) — tijdlijn, MEDDPICC, succescriteria, prijs, open punten
 - [06-taal-en-haakjes.md](06-taal-en-haakjes.md) — hun vocabulaire en de haakjes met bron
 - [07-beloofde-features.md](07-beloofde-features.md) — alles wat we ze over de tool hebben verteld, met een inschatting of het al bestaat
+- [kalibratie-cat-poh6.md](kalibratie-cat-poh6.md): kalibratie van de AI-beoordeling op de CAT van POH-6, met de vaste rubricbasis en de ground truth (23-09-2026)
 - `transcripts/` — uitgeschreven gesprekken van 01-09 en 03-09 (Close Notetaker)
 - `bronnen/` — de twee NVAO-visitatierapporten als PDF en als tekst
 - `raw/` — alle 106 pagina's van breederode.nl (WordPress REST-dump van 09-09-2026)
