@@ -265,3 +265,17 @@ De student bespreekt het eigen onderzoek en de onderzoeksresultaten overwegend k
 De student bediscussieert het eigen onderzoek en de onderzoeksresultaten kritisch. De bespreking onderbouwt de validiteit van het eigen onderzoek, beschrijft nieuwe inzichten, verkent conflicterende perspectieven, weegt de belangrijkste methodologische sterke en minder sterke punten van de studies, beschrijft beperkingen en onderbouwt oorzaken en gevolgen voor het resultaat; daarnaast bevat zij een eigen kritische noot. Beoordeeld wordt of deze onderdelen besproken en onderbouwd zijn, niet of het standpunt van de student medisch-inhoudelijk de beste keuze is. Dit niveau vraagt de onderdelen van het Good-niveau compleet en onderbouwd, niet meer dan de opdracht vraagt. Kleine onvolkomenheden die de kern niet ondermijnen staan dit niveau niet in de weg.
 
 De modelinstructies blijven ongewijzigd.
+
+---
+
+# Ronde 3 — twee vakjes, criterium 2
+
+Enige oordeel dat na ronde 2 nog buiten de bandbreedte valt. Twee wijzigingen: "beargumenteerd" eruit (dat woord maakte de ontsnappingszin zelf een eis), en de granulariteit van de uitkomstmaat expliciet buiten de beoordeling.
+
+## Criterium 2 — Good
+
+Er is een beantwoordbare onderzoeksvraag geformuleerd die grotendeels logisch samenhangt met de aanleiding. De interventie, eventuele controle-interventie en gewenste uitkomst zijn opgenomen en de PICO-elementen zijn herkenbaar. Wanneer de vraagstelling geen vergelijking kent, telt "niet van toepassing" bij de controle-interventie als volledig; een toelichting daarop is niet vereist. Beoordeeld wordt de consistentie tussen casus, PICO en onderzoeksvraag. De mate waarin de uitkomstmaat is uitgesplitst naar afzonderlijke waarden is niet bepalend: een uitkomst op het niveau waarop de praktijkvraag gesteld is, volstaat.
+
+## Criterium 2 — Great
+
+Er is een eenduidige en beantwoordbare onderzoeksvraag geformuleerd die logisch voortvloeit uit de aanleiding. De PICO-elementen patiënt of probleem, interventie, controle-interventie en gewenste uitkomst zijn herkenbaar in de vraag opgenomen en consistent doorgetrokken van casus naar PICO naar onderzoeksvraag. Wanneer de vraagstelling geen vergelijking kent, telt "niet van toepassing" bij de controle-interventie als volledig; een toelichting daarop en het toevoegen van een controleconditie zijn niet vereist. De mate waarin de uitkomstmaat is uitgesplitst naar afzonderlijke waarden is niet bepalend: een uitkomst op het niveau waarop de praktijkvraag gesteld is, volstaat. Dit niveau vraagt de onderdelen van het Good-niveau compleet en onderbouwd, niet meer dan de opdracht vraagt. Kleine onvolkomenheden die de kern niet ondermijnen staan dit niveau niet in de weg.

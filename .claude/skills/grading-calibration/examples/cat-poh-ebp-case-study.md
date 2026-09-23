@@ -1,6 +1,6 @@
 # Case study: CAT EBP (POH), oude rubric v3.0
 
-_Aangelegd 23-09-2026, bijgewerkt 23-09-2026. Status: **ronde 1 van variant RI gemeten. Duidelijke winst, drie restpunten open.**_
+_Aangelegd 23-09-2026, bijgewerkt 23-09-2026. Status: **ronde 2 gemeten. 15 van 16 binnen bandbreedte, rangorde klopt, nog één duidelijke misser (criterium 2).**_
 
 Tweede vak waarop `grading-calibration` wordt losgelaten, na manuele therapie. Dit bestand is het werkdocument: materiaal, ground truth, de vaste rubric-basistekst en de openstaande gaten.
 
@@ -376,3 +376,69 @@ Zes vakjes, alle andere blijven zoals ze zijn. Volledige teksten staan in `cat-p
 ### Losse observatie
 
 "Totaal Cijfer" staat bij Student 1 op **SOUND** en bij Student 2 op **Goed**. In de baseline stonden beide op SOUND. Dat lijkt een onvertaald label dat er soms wel en soms niet doorheen komt. Melden bij Menno of Samuel.
+
+## 13. Meting ronde 2
+
+Export `Inzendingen_CAT_23-09-2026_7.zip`, met de zes vervangen vakjes uit ronde 2.
+
+### Eerst een correctie op de meetlat
+
+In sectie 4 heb ik de punten van de docent omgezet naar één verwacht vakje per criterium, bijvoorbeeld "2 punten bij criterium 3 = Good". **Dat was mijn eigen afleiding uit haar geschreven commentaar, geen ground truth.** De ground truth zijn de punten: 4, 2 of 0. Met vier vakjes heeft 2 punten geen enkel juist vakje, maar een bandbreedte.
+
+Vanaf nu twee meetlatten naast elkaar:
+
+- **Strikt:** het vakje uit de tabel in sectie 4. Streng, en deels gebaseerd op mijn interpretatie.
+- **Bandbreedte:** 4 punten mag Goed of Uitstekend zijn, 2 punten mag Voldoende of Goed, 0 punten moet Onvoldoende. Dit volgt rechtstreeks uit de bron en is niet betwistbaar.
+
+De bandbreedte is de maat die telt. De strikte maat laat zien hoeveel fijnregeling er nog in zit.
+
+### De cijfers
+
+| Meting | Strikt | Bandbreedte | Rangorde S1 vs S2 |
+|---|---|---|---|
+| Docent | — | — | 28 tegen 24,5, S1 boven |
+| Baseline | 6/16 | 12/16 | 19 tegen 21, **omgekeerd** |
+| Ronde 1 (RI) | 8/16 | 15/16 | 21 tegen 22, **omgekeerd** |
+| Ronde 2 | 8/16 | **15/16** | 22 tegen 21, **klopt** |
+
+| # | Criterium | Docent S1 | R1 S1 | R2 S1 | Docent S2 | R1 S2 | R2 S2 |
+|---|---|---|---|---|---|---|---|
+| 1 | Aanleiding | 4 | Goed | Goed | 4 | Goed | Goed |
+| 2 | PICO | 4 | Voldoende | **Voldoende ✗** | 2 | Voldoende | Voldoende |
+| 3 | Zoekstrategie | 2 | Voldoende | **Goed ↑** | 2 | Goed | **Voldoende ↓** |
+| 4 | Analyse | 4 | Goed | Goed | 2 | Voldoende | Voldoende |
+| 5 | Conclusie | 2 | Goed | Goed | 2 | Goed | Goed |
+| 6 | Discussie | 4 | Goed | Goed | 4 | Goed | **Uitstekend ↑** |
+| 7 | Klin. relevantie | 2 | Voldoende | Voldoende | 4 | Uitstekend | **Goed ↓** |
+| 8 | Reflectie | 4 | Goed | Goed | 3 | Voldoende | Voldoende |
+
+De vier bewegingen vallen alle vier binnen de bandbreedte, dus geen van de pijlen is een echte regressie. Op de strikte maat wegen ze tegen elkaar weg.
+
+### Wat ronde 2 heeft opgelost
+
+**De omgekeerde rangorde is weg.** Dit was het laatste van de drie restpunten. De docent zette Student 1 boven Student 2; baseline en ronde 1 zetten hem eronder, ronde 2 zet hem er weer boven. Dat kwam van criterium 3, dat bij Student 1 naar Goed ging.
+
+**Criterium 6 haalde voor het eerst Uitstekend** bij Student 2, waar de docent 4 punten gaf. De verzachting van de hoofdzin werkte daar.
+
+### Wat er nog fout is: criterium 2 bij Student 1
+
+Het enige oordeel dat buiten de bandbreedte valt. De docent gaf 4 punten met alleen twee plussen: *"De PICO vloeit geheel logisch uit de casuïstiek en patient vraag"* en *"Onderzoeksvraag vloeit volledig logisch vanuit PICO"*. De AI geeft Voldoende met drie `+/-`-punten:
+
+> `+/- 'Cholesterolwaarde' is te vaag; definieer LDL primair en totaalcholesterol, HDL en triglyceriden afzonderlijk.`
+>
+> `+/- Onderbouw 'geen controle' in PICO, vraag en zoekstrategie.`
+>
+> `+/- Populatie en conclusies verschillen; specificeer de doelgroep.`
+
+Twee van die drie zijn eisen die de docent niet stelt:
+
+1. **De granulariteit van de uitkomstmaat.** Zij accepteert "cholesterolwaarde" zonder opmerking.
+2. **Mijn eigen fix heeft dit deels veroorzaakt.** Ik schreef "een **beargumenteerd** 'niet van toepassing' telt als volledig". Student 1 schreef in haar PICO-tabel kaal `Comparison: Niet van toepassing`, zonder argument, en kreeg 4 punten. Het woord "beargumenteerd" heeft dus een eis toegevoegd die de docent niet heeft. De AI is van "voeg een controle toe" naar "onderbouw dat je er geen hebt" gegaan, precies zoals ik het opschreef, en dat is nog steeds te streng.
+
+Dat is leerzaam: een ontsnappingszin die een voorwaarde bevat, wordt die voorwaarde.
+
+### Advies
+
+Eén gerichte ronde op criterium 2, dan stoppen met fijnregelen. De reden om te stoppen: 15 van 16 binnen bandbreedte, rangorde klopt, toon klopt, nul keer Onvoldoende. Verder duwen aan het plafond zonder een gezakte inzending om de zaklijn tegen te ijken levert meer risico dan winst op.
+
+De compressie blijft wel bestaan: 1 keer Uitstekend op 16, terwijl de docent 9 keer 4 punten gaf, en het verschil tussen de twee studenten is 1 punt waar de docent 3,5 punt zag. De AI zet ze nu in de goede volgorde maar ziet het verschil als kleiner dan het is. Dat is acceptabel zolang de docent het eindcijfer zelf zet, maar het is de resterende beperking.
