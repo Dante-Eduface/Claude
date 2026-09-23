@@ -1,6 +1,6 @@
 # Wat er nu eerst moet
 
-_Laatst bijgewerkt: 2026-09-20. Dit bestand wint van elk ander contextbestand. Verandert de focus, dan verandert dit bestand, niet een zin ergens anders._
+_Laatst bijgewerkt: 2026-09-23. Dit bestand wint van elk ander contextbestand. Verandert de focus, dan verandert dit bestand, niet een zin ergens anders._
 
 ## De prioriteit
 
@@ -55,7 +55,7 @@ Te halen vóór het einde van 2027.
 
 Stond hier tot 19-09-2026. Niet omdat het slechte ideeën zijn, maar omdat alles tegelijk betekent niets af.
 
-- Meta- en LinkedIn-ads. LinkedIn-ads doet hij helemaal niet meer.
+- Meta- en LinkedIn-ads. LinkedIn-ads doet hij helemaal niet meer. Google Ads is ook stopgezet (bevestigd 23-09-2026).
 - SEO en GEO voor eduface.me.
 - De Framer-site herbouwen.
 - De Jisc/CHEST-pilotdoelen uit Q2.
