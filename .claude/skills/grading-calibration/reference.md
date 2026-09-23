@@ -6,7 +6,14 @@ Diepe uitleg achter de lus in `SKILL.md`. Lees dit voor je daadwerkelijk gaat sc
 
 Per vak ("opdracht" in Eduface) zit er een losse koppeling tussen een rubric en modelinstructies. Kopieer je een bronbestand naar een nieuwe opdracht, dan krijgt die zijn eigen (opnieuw gegenereerde) rubric en start met de default modelinstructies. Wil je varianten los van elkaar testen, moet je dus losse opdrachten aanmaken.
 
-**Beoordeling-tab (rubric):** per criterium een gewicht (%, hoeft niet gelijk verdeeld, zwaardere criteria als de kernconclusie kunnen een hoger gewicht krijgen) en een los te bewerken Fail-tekst + Pass-tekst. Klik op het vakje om te bewerken.
+**Beoordeling-tab (rubric):** per criterium een gewicht (%, hoeft niet gelijk verdeeld, zwaardere criteria als de kernconclusie kunnen een hoger gewicht krijgen) plus een los te bewerken tekst per niveau. Klik op het vakje om te bewerken.
+
+Er zijn **twee rubrictypes** (bevestigd 23-09-2026):
+
+- **Binair**, twee vakjes: Fail-tekst + Pass-tekst. Gebruikt bij manuele therapie.
+- **Descriptive**, vier vakjes: Unsatisfactory / Satisfactory / Good / Great. Gebruikt bij CAT EBP (POH).
+
+Kies het type naar het bronformulier: heeft de bron meer dan twee niveaus (bijvoorbeeld puntenkolommen 4/2/0), neem dan Descriptive. Maar leg dan **eerst de zaklijn vast** uit de cesuur van de bron, want vier vakjes over drie bronniveaus verdelen is een keuze die niemand expliciet maakt en die stilzwijgend de hele schaal kan verschuiven. Zie de case study CAT EBP (POH), sectie 3 en 6.
 
 **Feedback-tab (modelinstructies):** een vrij tekstveld "Beschrijf je feedbackstijl" ("Vertel Eduface hoe de AI-feedback moet klinken"), met een knop "Opnieuw genereren" die er de modelinstructies uit genereert. "Bekijk modelinstructies" toont het resultaat, altijd in dezelfde vaste structuur:
 
@@ -46,6 +53,8 @@ pip3 install pypdf cffi
 `cffi` is nodig, anders crasht de `cryptography`-import van pypdf met een Rust-panic. Comments zitten in `page["/Annots"]`, elk object heeft `/Subtype` (`/Text` = sticky note van een mens, `/Highlight` = gemarkeerde tekst met een comment erbij, vaak van AI), `/T` (auteur) en `/Contents` (de tekst). Let op: filter niet alleen op `/Text`, AI-comments zitten soms als `/Highlight`.
 
 **DOCX:** pandoc en python-docx staan niet standaard geïnstalleerd, en pip-install van pandoc werkt niet (het is geen python-package). Fallback: unzip het bestand, lees `word/document.xml` (platte tekst en tabellen, via `xml.etree.ElementTree`) en `word/comments.xml` (de commentaartekst zelf, met auteur). Koppel een comment aan zijn plek in de tekst via `w:commentReference`/`w:id` in `document.xml`.
+
+**Daal daarbij recursief af in `w:sdt`** (content controls). Een parser die alleen de directe kinderen van `w:body` langsloopt, slaat elk hoofdstuk over dat in een content control staat, en dat zijn er in studentverslagen met een automatische inhoudsopgave vaak meerdere. Bij CAT EBP (POH) scheelde dat 1.100 woorden en de complete Inleiding plus Aanleiding, waardoor het materiaal ten onrechte incompleet leek. Controleer altijd het woordenaantal tegen wat je op het oog van het document verwacht.
 
 ## 4. De twee-assen diagnose
 
