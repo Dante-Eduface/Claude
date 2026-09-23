@@ -37,6 +37,25 @@ Algemene stemming: enthousiast, geen rode vlaggen, vooral benieuwd hoe het in de
 
 **Champion per opleiding.** Het zijn losse opleidingen en per opleiding is de opleidingsmanager de baas. Binnen manuele therapie is Jochem formeel de baas terwijl Marloes het hardst roept. Je hebt per vak een eigen champion nodig, niet één champion voor de hele instelling.
 
+## Wie er een mailadres bij ons heeft, en wie niet
+
+_Gecontroleerd op 23-09-2026 over Gmail (alle 12 threads met breederode.nl), Close en de agenda._
+
+**Wel in de mail geweest, negen mensen:** Irma van der Velden, Marloes de Graaf, Jochem van Schalkwijk, Sanne Toonen-Zwinkels, Ivonne Duiser, Marina Vinken-Hol, Marlies van Hell, Selma de Nijs, Kas van Kruining. Dat is de complete lijst, er is niemand bijgekomen sinds de thread "Voorstel test dag Eduface".
+
+**Wel kennisgemaakt met Eduface, geen mailadres bij ons:**
+
+| Wie | Waar ze Eduface hebben gezien | Waarom het uitmaakt |
+|---|---|---|
+| **Carina Wind** | Demo 25-08 en de testdag 23-09 | Zat een hele ochtend aan tafel en staat in geen enkel systeem. Adres opvragen |
+| **Maud** | Demo 25-08, en op 23-09 als route naar itslearning | Dante heeft haar adres wel, het staat alleen nergens vastgelegd. Overtypen |
+| **Marcel Lekkerkerker** | Nooit zelf gesproken | Hij keurt de licentieovereenkomst goed. Alles loopt via Irma |
+| **Willemien en Denise** | Demo 25-08 | Achtervang van Marina, bereikbaar via `huisartsenzorg@breederode.nl`, een gedeelde mailbox |
+
+Let op bij de adressen: Marloes is **m.degraaf@breederode.nl** met punt. Op 26-08 is er een keer naar `mdegraaf@breederode.nl` gemaild, zonder punt. Dat is fout.
+
+Close loopt achter: daar staan maar drie contacten (Ivonne, Irma, Sanne). De agenda-uitnodiging voor de testdag van 23-09 had zelfs helemaal geen genodigden.
+
 ## Structuur
 - MT is klein: een algemeen directeur en Irma op onderwijs en kwaliteit. Daaronder domeinen met een manager per domein (huisartsenzorg, verpleegkunde, fysiotherapie/masters, ouderenzorg, onderwijs & persoonlijke ontwikkeling, arbo).
 - Veel docenten zijn zzp'er of parttimer die er een zorgbaan naast heeft. Opleidingsmanagers sturen die groep aan.
