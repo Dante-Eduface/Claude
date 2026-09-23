@@ -1,9 +1,9 @@
 # Breederode Hogeschool — kennisbank
 
-Alles wat we weten over Breederode Hogeschool, op 09-09-2026. Bedoeld om als eigen Claude Code-venster te gebruiken: open deze map en je hebt het hele account in context.
+Alles wat we weten over Breederode Hogeschool, op 23-09-2026. Bedoeld om als eigen Claude Code-venster te gebruiken: open deze map en je hebt het hele account in context.
 
 ## Wat is dit account
-Particuliere hogeschool in Rotterdam, zorg en welzijn, deeltijd voor werkende professionals. Sinds 2024/2025 onderdeel van **Calder Holding**. **Lopende deal met Eduface**, fase Discovery, testochtend op locatie op **woensdag 23 september 2026, 9:00-12:30**.
+Particuliere hogeschool in Rotterdam, zorg en welzijn, deeltijd voor werkende professionals. Sinds 2024/2025 onderdeel van **Calder Holding**. **Lopende deal met Eduface.** De testochtend van 23 september 2026 is geweest en ging goed. Het **concept licentieovereenkomst ligt sinds 23-09 bij Marcel Lekkerkerker (Calder)** ter goedkeuring. Beoogde go-live in itslearning: 15 oktober.
 
 ## Bestanden
 - [01-organisatie.md](01-organisatie.md) — wie ze zijn, eigenaar, locaties, keurmerken, omvang
@@ -13,7 +13,7 @@ Particuliere hogeschool in Rotterdam, zorg en welzijn, deeltijd voor werkende pr
 - [05-eduface-deal.md](05-eduface-deal.md) — tijdlijn, MEDDPICC, succescriteria, prijs, open punten
 - [06-taal-en-haakjes.md](06-taal-en-haakjes.md) — hun vocabulaire en de haakjes met bron
 - [07-beloofde-features.md](07-beloofde-features.md) — alles wat we ze over de tool hebben verteld, met een inschatting of het al bestaat
-- `transcripts/` — uitgeschreven gesprekken van 01-09 en 03-09 (Close Notetaker)
+- `transcripts/` — uitgeschreven gesprekken van 01-09 en 03-09 (Close Notetaker), plus de debrief van de testdag 23-09 (Dante's eigen weergave, geen opname)
 - `bronnen/` — de twee NVAO-visitatierapporten als PDF en als tekst
 - `raw/` — alle 106 pagina's van breederode.nl (WordPress REST-dump van 09-09-2026)
 

@@ -1,6 +1,6 @@
 # Mensen bij Breederode
 
-_Bijgewerkt 09-09-2026. Mailadressen uit de Close-thread, functietitels uit hun eigen handtekeningen._
+_Bijgewerkt 23-09-2026. Mailadressen uit de Close-thread, functietitels uit hun eigen handtekeningen._
 
 ## Beslissers
 | Naam | Rol | Mail | Positie in de deal |
@@ -20,8 +20,19 @@ _Bijgewerkt 09-09-2026. Mailadressen uit de Close-thread, functietitels uit hun 
 | **Kas van Kruining** | Onderwijsmanager opleiding POG (Praktijkopleider Gezondheidszorg & Welzijn) | — | **Kritische stem**, mogelijk tegenstander. Betoogde in de demo dat AI niet beter is dan mensen, argument: hallucineren. Levert wel input voor de test. |
 | **Selma de Nijs** | Docent/beoordelaar POH-6 | — | Levert beoordeelde, geanonimiseerde CAT-opdrachten aan. |
 | **Carina Wind** | Onbekend, genoemd als iemand die Ivonne zou bijpraten | — | Nog te plaatsen. |
-| **Maud** | Vermoedelijk executive assistant | — | Was bij de demo. |
+| **Twee collega's uit Nijmegen** | Kinderfysiotherapie | — | **Namen onbekend.** Zaten de hele testdag van 23-09 aan tafel bij kinderfysiotherapie. Uitvragen. |
+| **Maud** | Vermoedelijk executive assistant | mailadres heeft Dante | **Route naar itslearning.** Gesproken op de testdag 23-09. Zij gaat itslearning om een testomgeving voor ons vragen. Achternaam en exacte functie nog onbekend. |
 | **Willemien (Bos?)** en **Denise** | Huisartsenzorg, achtervang voor Marina | huisartsenzorg@breederode.nl | Willemien zei tijdens de demo inhoudelijk niets. |
+
+## Aanwezig op de testdag 23-09-2026
+
+| Vak | Wie |
+|---|---|
+| Manuele therapie | Marloes de Graaf (begin tot eind), Jochem van Schalkwijk (vanaf het begin, eerder weg voor les) |
+| Kinderfysiotherapie | de opleidingsmanager plus twee collega's uit Nijmegen (namen niet vastgelegd) |
+| Huisartsenzorg | alleen Marina Vinken-Hol, de rest stond in de file |
+
+Algemene stemming van de docenten: positief.
 
 ## Structuur
 - MT is klein: een algemeen directeur en Irma op onderwijs en kwaliteit. Daaronder domeinen met een manager per domein (huisartsenzorg, verpleegkunde, fysiotherapie/masters, ouderenzorg, onderwijs & persoonlijke ontwikkeling, arbo).

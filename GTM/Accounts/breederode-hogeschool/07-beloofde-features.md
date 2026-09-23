@@ -50,9 +50,27 @@ Kolom **Bewijs**: staat het in `Platform/product.md`, komt het terug in andere d
 ## Nog te verifiëren claim
 - "Wij hebben al honderdduizenden beoordelingsformulieren gezien" (Jeroen, 01-09). Klopt die orde van grootte?
 
+## Nieuw gevraagd op de testdag 23-09-2026
+
+Dit zijn **wensen van hen**, geen toezeggingen van ons. Bij de eerste twee heeft Dante expliciet gezegd dat we het nog niet hebben. Bron: `transcripts/2026-09-23-testdag-debrief.md`.
+
+| Wat ze vragen | Wie | Wat Dante heeft gezegd | Status |
+|---|---|---|---|
+| **Consensus-modus.** Feedback van beoordelaar 1 en 2 gaat los naar de student, het cijfer nog niet. Een derde rol, de consensus-docent, weegt beide beoordelingen en stelt het cijfer vast dat de student ziet | Marloes, manuele therapie | Geen AI-feature, dit hoort een standaardfunctie te zijn | **Nieuw. Scherpt de bestaande oranje toezegging "meerdere onafhankelijke beoordelaars" aan: er is ook een derde rol nodig en gescheiden vrijgave van feedback en cijfer** |
+| **Rolverdeling externe docenten in itslearning.** Veel externe docenten zitten in vakken die ze niet allemaal hoeven te zien | kinderfysiotherapie | — | Randvoorwaarde voor go-live, hangt aan de LTI-integratie |
+| **Artikelen in artikelen kunnen uitlezen.** Bronnen toevoegen en door het model laten lezen | kinderfysiotherapie, via de casus bij een universiteit | "Dit hebben we nog niet, het komt eraan" | Correct afgekaderd. Wel een belofte voor de toekomst, dus niet vergeten |
+| **Groei van de student over drie formatieve rondes.** In één oogopslag zien welke feedback er per ronde is gegeven en of de student die verwerkt heeft | kinderfysiotherapie | "Dit hebben we nog niet", met uitleg waarom | Correct afgekaderd |
+| **Transcripties onder kennisclips**, zodat ons model die content kan lezen | kinderfysiotherapie | — | Zij leveren dit zelf aan, geen ontwikkelwerk. Wel afstemmen hoe |
+| **Testomgeving bij itslearning**, die we mogen aanhouden | via Maud | Bij andere LMS'en zitten daar geen kosten aan | **Kostenrisico.** Hun reactie was "dat zullen we zien". Niet dichtgetimmerd |
+
 ## Wat dit betekent voor de roadmap
-Vóór **23 september** (testochtend) moet werken: rubric-ingest van drie verschillende CAT-formulieren, kalibreren op hun eigen nagekeken opdrachten, annotaties en per-criterium scoring. Dat is groen gebied.
 
-Vóór **15 oktober** (beoogde go-live) moet er zijn: de itslearning/LTI-integratie, meerdere beoordelaars op één inzending, en de tijdmeting, want die is een succescriterium.
+_Bijgewerkt 23-09-2026, na de testochtend._
 
-Kan wachten tot na de pilot, maar is wel verkocht: docentvergelijking, kalibratie-flagging, toetsanalyse, deadlinesignaal, herverwerken van historische opdrachten.
+Vóór **15 oktober** (beoogde go-live) moet er zijn: de itslearning/LTI-integratie inclusief de rolverdeling voor externe docenten, meerdere beoordelaars op één inzending, en de tijdmeting, want die is een succescriterium. Daar komt de **consensus-modus** bij zodra duidelijk is of die voor de thesis-use-case blokkerend is.
+
+Randvoorwaarde die er sinds 23-09 bij staat: een **testomgeving bij itslearning**, aan te vragen via Maud, met de kostenvraag nog open.
+
+Kan wachten tot na de pilot, maar is wel verkocht of in het vooruitzicht gesteld: docentvergelijking, kalibratie-flagging, toetsanalyse, deadlinesignaal, herverwerken van historische opdrachten, artikelen uitlezen, groei over formatieve rondes.
+
+Afgerond: de testochtend van 23 september. Rubric-ingest, kalibratie en per-criterium scoring waren groen gebied en zijn daar getoetst.
