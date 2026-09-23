@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="nl"><head><meta charset="utf-8">
+<title>Kalibreren: Eduface naast de nakijker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=League+Spartan:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#002333; --ink-900:#0a2c3b; --ink-700:#2c4a57; --ink-500:#5b7480;
+  --ink-300:#a9bcc4; --ink-200:#cdd9de; --ink-100:#e7eef0; --ink-50:#f3f7f8;
+  --white:#fff; --green-deep:#007b54;
+}
+@page{ size:A4; margin:18mm 16mm 16mm 16mm; }
+*{box-sizing:border-box}
+html{-webkit-print-color-adjust:exact; print-color-adjust:exact}
+body{
+  font-family:"Inter",system-ui,sans-serif; color:var(--navy);
+  font-size:9.6pt; line-height:1.48; margin:0;
+}
+h1,h2,h3,h4{font-family:"League Spartan","Inter",sans-serif; font-weight:600; line-height:1.15;}
+
+/* ---- titelblok ---- */
+.cover{
+  background:var(--navy); color:var(--white);
+  padding:14mm 12mm; margin:0 0 9mm 0; border-radius:12px;
+  break-after:avoid; break-inside:avoid;
+}
+.cover .eyebrow{
+  font-family:"Inter",sans-serif; font-size:7.6pt; font-weight:600;
+  letter-spacing:.13em; text-transform:uppercase; color:rgba(255,255,255,.62); margin:0 0 5mm 0;
+}
+.cover h1{font-size:25pt; margin:0 0 5mm 0; color:var(--white); letter-spacing:-.01em;}
+.cover p{margin:0; color:rgba(255,255,255,.80); font-size:9.4pt; max-width:62ch; line-height:1.55;}
+.cover .rule{height:3px;width:46px;background:var(--green-deep);border-radius:9999px;margin:0 0 5mm 0}
+
+/* ---- koppen ---- */
+h2{
+  font-size:14pt; margin:9mm 0 2.5mm 0; padding-top:3mm;
+  border-top:2px solid var(--navy); break-after:avoid; break-inside:avoid;
+}
+h2 .step{
+  display:block; font-family:"Inter",sans-serif; font-size:7.6pt; font-weight:700;
+  letter-spacing:.13em; text-transform:uppercase; color:var(--green-deep); margin-bottom:1.6mm;
+}
+h3{font-size:10.6pt; margin:6mm 0 2mm 0; break-after:avoid;}
+h4{font-size:9.6pt; margin:5mm 0 1.5mm 0; break-after:avoid;}
+h2+p,h2+ul,h2+table,h3+p,h3+ul,h3+table,h4+p{margin-top:0}
+
+p{margin:0 0 2.6mm 0; max-width:74ch;}
+ul,ol{margin:0 0 3mm 0; padding-left:4.6mm; max-width:74ch;}
+li{margin:0 0 1.4mm 0;}
+li::marker{color:var(--ink-500)}
+strong{font-weight:600}
+code{
+  font-family:ui-monospace,"SF Mono",Menlo,monospace; font-size:8.4pt;
+  background:var(--ink-50); border:1px solid var(--ink-100);
+  border-radius:4px; padding:.5px 3px; color:var(--ink-900);
+}
+
+/* ---- tabellen ---- */
+table{
+  width:100%; border-collapse:collapse; margin:0 0 4mm 0;
+  font-size:8.8pt; break-inside:avoid;
+}
+thead th{
+  background:var(--navy); color:var(--white); text-align:left;
+  font-family:"Inter",sans-serif; font-weight:600; font-size:7.8pt;
+  letter-spacing:.06em; text-transform:uppercase;
+  padding:2.2mm 2.6mm; vertical-align:bottom;
+}
+thead th:first-child{border-top-left-radius:7px}
+thead th:last-child{border-top-right-radius:7px}
+tbody td{
+  padding:2.2mm 2.6mm; border-bottom:1px solid var(--ink-100);
+  vertical-align:top; line-height:1.42;
+}
+tbody tr:nth-child(even) td{background:var(--ink-50)}
+tbody tr:last-child td{border-bottom:1px solid var(--ink-200)}
+tbody td:first-child{font-weight:500}
+
+/* ---- laatste sectie als checklist ---- */
+h2.nooit{border-top-color:var(--green-deep)}
+h2.nooit + ul{
+  background:var(--ink-50); border:1px solid var(--ink-100); border-left:3px solid var(--navy);
+  border-radius:8px; padding:4mm 5mm 4mm 9mm; max-width:none; break-inside:avoid;
+}
+
+/* ---- weduwen en wezen ---- */
+p,li{orphans:2; widows:2}
+.lead{font-size:10.6pt; line-height:1.55; color:var(--ink-900); max-width:70ch;}
+.cover{page-break-after:avoid}
+ul,ol{break-inside:avoid-page}
+</style></head>
+<body>
+<header class="cover">
+  <p class="eyebrow">Eduface &middot; werkwijze</p>
+  <div class="rule"></div>
+    <p>Legt de beoordeling van Eduface naast die van een nakijker van de instelling en levert een printbaar vakdossier op. Leest de ingevulde beoordelingsformulieren, de rubriek en de Eduface-output zelf uit, haalt de verschillen eruit, benoemt welke aanname het model doet, en schrijft daar vriendelijke vragen bij die de instelling op de testdag kan beantwoorden. Gebruik deze skill bij "kalibreren", "vakdossier", "feedback van Eduface naast die van de docent", "testdag voorbereiden" of wanneer Dante een Eduface-output en een ingevuld formulier aanlevert.</p>
+</header>
+<p class="lead">Het doel is niet aantonen dat het model gelijk heeft. Het doel is <strong>erachter komen welke norm de opleiding hanteert</strong>, door precies die plekken op te zoeken waar het model en de nakijker uit elkaar lopen, en daar een vraag van te maken die de opleiding wil beantwoorden.</p>
+<p>Een verschil is bijna nooit een fout van een van de twee. Het is bijna altijd een <strong>aanname</strong>: het model leest iets in de rubriek dat er letterlijk wel staat maar zo niet bedoeld is, of het legt een standaard aan die in dit vak niet geldt. Die aanname is de hele opbrengst van een testdag. Vind hem, en stel hem als keuze voor.</p>
+<h2>Wanneer</h2>
+<p>Er ligt minimaal:</p>
+<ul><li><strong>de rubriek of het beoordelingsformulier</strong> van de opleiding, blanco of ingevuld</li><li><strong>minstens een ingevuld formulier</strong> van een nakijker over concreet studentwerk</li><li><strong>de Eduface-output</strong> over datzelfde studentwerk</li></ul>
+<p>Ontbreekt de Eduface-output, dan kun je de vergelijking niet maken. Zeg dat, en lever het standaardblad in plaats van een dossier. Verzin geen kolom.</p>
+<h2><span class="step">Stap 1</span>Zelf uitlezen, niet laten aanleveren</h2>
+<p>Ga zelf op zoek voordat je iets vraagt. In deze volgorde:</p>
+<ol><li><strong>De repo.</strong> <code>GTM/Accounts/&lt;instelling&gt;/</code> heeft een bestand met het aangeleverde materiaal en een met de beoordelingsstijlen. Lees die eerst, die vertellen je welk bestand waar staat.</li><li><strong>Google Drive.</strong> <code>search_files</code> op de naam van de instelling en op het vak. <code>read_file_content</code> geeft schone tekst uit docx en pdf, inclusief tabellen. Gebruik dat, geen download.</li><li><strong>Gmail.</strong> De bijlagen zitten in de mailwisseling met de opleiding. Gmail geeft je alleen metadata, geen bytes, dus gebruik de mail om te zien wat er bestaat en haal het bestand daarna uit Drive.</li></ol>
+<p>Vraag pas iets aan Dante als je het echt niet kunt vinden. Zie <code>.claude/rules/credits.md</code>: eerst kijken, dan pas vragen.</p>
+<p>Leg per vak vast wat je gevonden hebt en wat niet, zodat de volgende ronde niet opnieuw zoekt.</p>
+<h2><span class="step">Stap 2</span>De criteria op elkaar leggen</h2>
+<p>De nakijker en het model gebruiken zelden dezelfde namen. Maak eerst een koppeling.</p>
+<ul><li>Tel hoeveel criteria de rubriek heeft en hoeveel onderdelen het model beoordeelt. Zijn die aantallen ongelijk, dan is dat zelf al een bevinding.</li><li>Koppel op inhoud, niet op nummer. &quot;Stap 3&quot; bij de een kan &quot;Zoekstrategie&quot; bij de ander zijn.</li><li>Is de rubriek in een andere versie beoordeeld dan de versie die nu geldt, controleer dan of de criteria echt verschillen of alleen de puntentelling. Dat scheelt een vals verschil.</li><li>Lukt een koppeling niet, laat de regel dan leeg staan met de reden erbij. Een leeg vak is beter dan een gegokt vak.</li></ul>
+<h2><span class="step">Stap 3</span>Het verschil vaststellen</h2>
+<p>Per gekoppeld criterium drie mogelijke uitkomsten:</p>
+<table><thead><tr><th>Uitkomst</th><th>Wat het betekent</th></tr></thead><tbody><tr><td><strong>eens</strong></td><td>beiden voldaan, of beiden niet</td></tr><tr><td><strong>model strenger</strong></td><td>de nakijker keurde goed, het model keurt af</td></tr><tr><td><strong>model milder</strong></td><td>de nakijker keurde af, het model keurt goed</td></tr></tbody></table>
+<p>&quot;Model milder&quot; is het waardevolste geval en wordt het vaakst over het hoofd gezien. Daar zag de nakijker iets dat het model mist, en dat is precies wat er in het model moet.</p>
+<p>Zet er ook een totaal onder: hoeveel criteria voldaan bij de nakijker, hoeveel onderdelen PASS bij het model, en op hoeveel van de criteria ze het eens zijn. Dat laatste getal is de kalibratiescore.</p>
+<h2><span class="step">Stap 4</span>De aanname erachter zoeken</h2>
+<p>Dit is de stap die de skill zijn waarde geeft, en de stap die je niet mag overslaan.</p>
+<p>Neem elk verschil en vraag: <strong>waarom komt het model tot een ander oordeel?</strong> Zoek het antwoord in de tekst van het model zelf, niet in je eigen mening. Terugkerende soorten:</p>
+<table><thead><tr><th>Soort aanname</th><th>Hoe je hem herkent</th></tr></thead><tbody><tr><td><strong>Letterlijk lezen van de rubriek</strong></td><td>de rubriek zegt &quot;hypotheses&quot;, meervoud, en het model vraagt om een vergelijking tussen meerdere oorzaken terwijl de opleiding een goed onderbouwd spoor genoeg vindt</td></tr><tr><td><strong>Een hogere standaard aanleggen</strong></td><td>het model vraagt om onderbouwing van de afgewezen bronnen, de opleiding vindt een gemotiveerde keuze voldoende</td></tr><tr><td><strong>Iets eisen dat in de rubriek niet staat</strong></td><td>het model vraagt naar taalgebruik, herkomst van de tekst of opmaak terwijl de rubriek daar niets over zegt</td></tr><tr><td><strong>Compensatie anders toepassen</strong></td><td>het model laat een onderdeel zakken waar de opleiding het tegen de rest wegstreept</td></tr><tr><td><strong>Een controleerbare bewering doen</strong></td><td>het model noemt een concrete rekenfout, een ontbrekende datum, een verkeerde formule</td></tr></tbody></table>
+<p>Die laatste is een ander soort dan de eerste vier: dat is geen normverschil maar een feit. Behandel hem apart, zie stap 5.</p>
+<p>Schrijf per aanname drie regels op:</p>
+<ol><li>wat het model zegt, letterlijk, tussen aanhalingstekens</li><li>wat de rubriek er letterlijk over zegt</li><li>wat de nakijker in de praktijk deed</li></ol>
+<p>Meer niet. Geen oordeel over wie gelijk heeft.</p>
+<h2><span class="step">Stap 5</span>Controleren voordat het op papier gaat</h2>
+<p>Elke feitelijke bewering van het model gaat eerst door een controle tegen het studentwerk zelf. Klopt de rekenfout? Ontbreekt de zoekdatum echt? Staat die passage er echt?</p>
+<ul><li><strong>Klopt het:</strong> het mag op papier, als feit, met de vindplaats erbij.</li><li><strong>Klopt het niet:</strong> het mag op papier, als bevinding over het model. Dat is nuttige informatie, geen schaamte.</li><li><strong>Kun je het niet controleren:</strong> het gaat <strong>niet</strong> op papier. Je meldt het wel aan Dante, zodat hij weet dat het op het scherm kan opduiken.</li></ul>
+<p>Beweringen over de herkomst van tekst, zoals &quot;dit is met AI geschreven&quot;, zijn extra gevoelig. Die gaan nooit als feit op papier. Hoogstens als vraag: wil de opleiding dat het model hier iets over zegt.</p>
+<h2><span class="step">Stap 6</span>De vragen schrijven</h2>
+<p>Per aanname een vraag. Dit is het onderdeel waar de skill op staat of valt, want een verkeerd geformuleerde vraag maakt van een gesprek een afrekening.</p>
+<h3>De regels</h3>
+<ul><li><strong>Het model is het onderwerp, nooit de nakijker.</strong> &quot;Het model vraagt om X&quot; kan. &quot;De nakijker heeft X niet gedaan&quot; kan niet.</li><li><strong>Eindig in een keuze, niet in een oordeel.</strong> De vraag gaat over wat de opleiding wil, niet over wie gelijk had.</li><li><strong>Geen namen.</strong> In alles wat geprint wordt heet de beoordelaar &quot;nakijker&quot;. Dante noemt er in de zaal wel bij wie het was. Zo blijft het transparant zonder dat er iemand voor de groep wordt gezet.</li><li><strong>Geen tegenstellende voegwoorden.</strong> Geen &quot;maar&quot;, &quot;echter&quot;, &quot;terwijl&quot;, &quot;toch&quot;. Die zetten de twee tegenover elkaar.</li><li><strong>Maximaal twee zinnen.</strong> De eerste stelt de aanname vast, de tweede stelt de vraag.</li><li><strong>Tutoyeren.</strong> Jij en je, niet u.</li><li><strong>Geen versterkers.</strong> Geen &quot;opvallend&quot;, &quot;duidelijk&quot;, &quot;eigenlijk&quot;, &quot;gewoon&quot;. Die leggen er een oordeel in.</li></ul>
+<h3>Ook voor de koppen</h3>
+<p>Kort en plat. &quot;Feedback van Eduface&quot;, niet &quot;De volledige feedback van Eduface&quot;. &quot;Aannames van het model&quot;, niet &quot;De aannames die het model doet&quot;. Een kop die uitlegt wat eronder staat is een kop te veel, en leest als machinetekst.</p>
+<h3>Zo wel, zo niet</h3>
+<table><thead><tr><th>Niet</th><th>Wel</th></tr></thead><tbody><tr><td>&quot;De nakijker keurde dit goed, terwijl er duidelijk een rekenfout in zit.&quot;</td><td>&quot;Het model wijst hier een rekenfout aan in de tabel. Klopt die, en is dit iets wat jullie zelf ook zouden willen zien?&quot;</td></tr><tr><td>&quot;Marloes eist geen differentiaaldiagnose, de rubriek wel.&quot;</td><td>&quot;Het model leest &#x27;hypotheses&#x27; in de rubriek als meervoud en vraagt om een vergelijking tussen meerdere oorzaken. Verwachten jullie dat ook, of is een goed onderbouwd spoor genoeg?&quot;</td></tr><tr><td>&quot;Hier is de student te kort door de bocht gegaan en is dat niet opgemerkt.&quot;</td><td>&quot;Het model vraagt om de afgewezen bronnen erbij. Is dat wat jullie van een student verwachten op dit niveau?&quot;</td></tr><tr><td>&quot;Het model was hier strenger dan jullie.&quot;</td><td>&quot;Op dit onderdeel legt het model de lat hoger dan in deze beoordeling is gebeurd. Waar zou hij volgens jullie moeten liggen?&quot;</td></tr></tbody></table>
+<h3>Waar het model milder was</h3>
+<p>Dat is geen verwijt aan het model en al helemaal geen compliment aan de nakijker. Schrijf het als: &quot;Hier zag de nakijker iets dat het model niet noemt. Wat was dat, zodat we het kunnen meenemen?&quot;</p>
+<h2><span class="step">Stap 7</span>Het dossier bouwen</h2>
+<p>Een vakdossier is een printbare A4-stapel per vak, niet per persoon. Iedereen die bij dat vak hoort krijgt hetzelfde exemplaar, ook wie zelf niets beoordeeld heeft. Dan heeft de hele groep hetzelfde voor zich.</p>
+<p>Vaste opbouw per student:</p>
+<table><thead><tr><th>Blad</th><th>Wat erop staat</th></tr></thead><tbody><tr><td>1</td><td>De beoordeling naast elkaar met de verschillen gemarkeerd, drie totalen, de letterlijke feedback van de nakijker, plus ruimte voor aantekeningen</td></tr><tr><td>2</td><td>De volledige feedback van het model, per criterium, letterlijk</td></tr><tr><td>3</td><td>Waar het uiteenloopt: twee of drie plekken, beide teksten eronder, een vraag per plek</td></tr><tr><td>4</td><td>De aannames van het model, met de vriendelijke vragen en schrijfruimte</td></tr></tbody></table>
+<p>Kop: <strong>Eduface testdag</strong> als titel, daaronder de opleiding, daaronder het vak, de student en de datum van de oorspronkelijke beoordeling. Geen naam van de nakijker.</p>
+<p>Kolomkoppen in de tabel: <strong>Nakijker</strong> en <strong>Eduface</strong>. Niet &quot;wat jullie zeiden&quot;.</p>
+<p>Bouwen doe je volgens <code>Design/System/core/</code> plus <code>internal/</code>, en renderen met headless Chromium naar A4. De werkende opzet en het script dat er een genummerd mapje van maakt staan in <code>GTM/Accounts/breederode-hogeschool/testdag/</code>.</p>
+<h2><span class="step">Stap 7-bis</span>Het formulier volgt de rubriek, niet een sjabloon</h2>
+<p>Het aantal rubriekcriteria verschilt per vak. Acht bij de een, tien of twintig bij de ander, en soms heet het geen rubriek maar een lijst criteria. <strong>Tel ze in het echte beoordelingsformulier en bouw het blad daarop.</strong></p>
+<ul><li>Ken je de criteria, druk ze dan voor. Dat scheelt schrijfwerk en voorkomt dat twee mensen hetzelfde criterium anders noemen.</li><li>Ken je ze niet, zet dan genummerde regels neer met ruimte om het criterium zelf op te schrijven, en zeg erbij dat je ze niet had.</li><li>Nooit acht rijen neerzetten omdat het vorige vak er acht had.</li></ul>
+<h2><span class="step">Stap 7a</span>De beoordelingsoptie hoort op blad 1</h2>
+<p>Eduface heeft per opdracht een beoordelingsoptie aanstaan, en die bepaalt hoe de feedback eruitziet. Staat dat er niet bij, dan weet de lezer niet waar hij naar kijkt en gaat het gesprek over de verkeerde dingen.</p>
+<p>Zet onder de naamregel op blad 1 van elk mapje:</p>
+<table><thead><tr><th>Regel</th><th>Wat erin staat</th></tr></thead><tbody><tr><td><strong>Gekozen</strong></td><td>de optie, in het Nederlands, nooit in het Engels</td></tr><tr><td><strong>Wat dat doet</strong></td><td>een zin over wat het model dan wel en niet uitspreekt</td></tr><tr><td><strong>Waarom deze</strong></td><td><strong>alleen bij descriptief beoordelen</strong>, zie hieronder</td></tr></tbody></table>
+<h3>De opties in het Nederlands</h3>
+<p>De tool noemt ze in het Engels. Op papier gaan ze in het Nederlands, in de woorden die de opleiding zelf gebruikt.</p>
+<table><thead><tr><th>In de tool</th><th>Op papier</th><th>Wanneer</th></tr></thead><tbody><tr><td>pass/fail grading</td><td><strong>voldaan of niet voldaan</strong>, per rubriekcriterium</td><td>als de rubriek van de opleiding zelf ook maar twee standen kent</td></tr><tr><td>descriptive grading</td><td><strong>onvoldoende, voldoende, goed of uitstekend</strong>, per rubriekcriterium</td><td>als de rubriek kwaliteitsniveaus onderscheidt</td></tr></tbody></table>
+<p>Vertaal ook de labels binnen het dossier mee: geen PASS en FAIL in de tabel, maar voldaan en niet voldaan.</p>
+<h3>Waarom alleen bij descriptief</h3>
+<p>Bij voldaan of niet voldaan is de keuze vanzelfsprekend, want de rubriek doet het zelf al zo. Daar hoort geen uitleg bij, die leest als verantwoording voor iets wat niemand betwist.</p>
+<p>Bij descriptief beoordelen is de keuze wel uitlegbaar, en die uitleg hoort erbij. Baseer hem op de rubriek van die opleiding zelf, nooit op een algemeen verhaal:</p>
+<ul><li>wat onderscheidt hun rubriek dat een vinkje zou weggooien</li><li>hoeveel niveaus hun rubriek kent, en hoeveel de tool kent</li></ul>
+<p><strong>Lopen die aantallen uiteen, zeg dat er dan bij.</strong> Kent de tool vier niveaus en de rubriek drie, dan is dat geen detail maar de eerste vraag van die ochtend.</p>
+<h2><span class="step">Stap 7b</span>De oplage, per vak en per student</h2>
+<p>Reken nooit in een totaal. Een totaal is niet te sorteren op de ochtend zelf. Reken per vak, en lever de tabel op.</p>
+<p>Per vak heb je twee getallen nodig:</p>
+<ul><li><strong>P</strong> = het aantal mensen dat bij dit vak hoort en die dag aansluit</li><li><strong>S</strong> = het aantal studenten van wie werk beoordeeld is, meestal twee</li></ul>
+<p>Daaruit volgt:</p>
+<table><thead><tr><th>Wat</th><th>Aantal</th><th>Waarom</th></tr></thead><tbody><tr><td><strong>mapjes</strong></td><td>P</td><td>een per persoon, niet per student</td></tr><tr><td><strong>bladen per mapje</strong></td><td>(S x 4) + (aantal andere vakken)</td><td>vier bladen per studentdossier, plus een beoordelingsformulier per andere opdracht</td></tr><tr><td><strong>studentenopdrachten</strong></td><td>P x S</td><td>los erbij, iedereen krijgt het werk van elke student</td></tr><tr><td><strong>reserve</strong></td><td>+1 mapje per vak</td><td>voor wie onaangekondigd aansluit</td></tr></tbody></table>
+<p>Wie bij geen vak hoort krijgt geen mapje maar losse beoordelingsformulieren, een per opdracht.</p>
+<p>Is van een student de output van het model er niet, dan telt die student niet mee in S. Verzin geen dossier, zie stap 5.</p>
+<p>Lever het als een tabel met een regel per vak, niet als een zin. Dante print hiervan en moet het in een oogopslag kunnen stapelen.</p>
+<h2><span class="step">Stap 7c</span>Het mapje</h2>
+<p>Een mapje is wat een deelnemer in handen krijgt: een nette stapel op volgorde, doorlopend genummerd, met de opdracht van de student er los naast.</p>
+<table><thead><tr><th>Blad</th><th>Wat</th></tr></thead><tbody><tr><td>1 tot 4</td><td>Het dossier van student 1. Blad 1 draagt ook de naamregel en de beoordelingsoptie.</td></tr><tr><td>5 tot 8</td><td>Het dossier van student 2</td></tr><tr><td>daarna</td><td>Een beoordelingsformulier per andere opdracht van die dag</td></tr><tr><td>los</td><td>De opdracht van de student zelf, ongenummerd</td></tr></tbody></table>
+<ul><li><strong>Geen voorblad.</strong> Een inhoudsopgave van zes bladen is een blad dat niemand leest. Begin bij de beoordeling.</li><li><strong>Doorlopende nummering over het hele mapje</strong>, als &quot;pagina 3 van 10&quot;. Niet per onderdeel opnieuw beginnen, want dan valt de stapel uit elkaar zodra iemand hem neerlegt.</li><li><strong>Links in de voet de opleiding</strong>, zodat een los blad terug te vinden is.</li><li><strong>De opdracht van de student blijft los.</strong> Die is te dik om in te binden en wordt ernaast gelegd.</li></ul>
+<h2><span class="step">Stap 8</span>Terug naar het model</h2>
+<p>Wat de testdag oplevert gaat weer het model in. Per vak leg je vast:</p>
+<ul><li>welke aannames de opleiding <strong>bevestigt</strong> (die mag het model houden)</li><li>welke aannames de opleiding <strong>afwijst</strong> (die gaan in de feedbackstijl of de modelinstructie)</li><li>welke feitelijke beweringen <strong>niet klopten</strong> (dat is een modelprobleem, geen instellingsprobleem)</li></ul>
+<p>Dat landt in <code>GTM/Accounts/&lt;instelling&gt;/</code> en, als het breder geldt dan een instelling, als voorstel in <code>Platform/</code>.</p>
+<h2 class="nooit">Wat je nooit doet</h2>
+<ul><li><strong>Een kolom verzinnen omdat de output ontbreekt.</strong> Geen Eduface-output betekent geen dossier voor dat vak.</li><li><strong>Een naam op papier zetten.</strong> De nakijker heet nakijker.</li><li><strong>Een onverifieerde bewering van het model als feit printen.</strong> Zie stap 5.</li><li><strong>De nakijker het onderwerp van de zin maken.</strong> Zie stap 6.</li><li><strong>Meer dan drie vragen per pagina.</strong> Drie worden beantwoord, tien worden overgeslagen.</li><li><strong>Een verschil wegpoetsen omdat het ongemakkelijk is.</strong> Een groot verschil is de reden dat je er zit.</li><li><strong>De beoordelingsoptie in het Engels op papier zetten.</strong> Pass/fail en descriptive zijn schermtaal, geen printtaal.</li><li><strong>Een oplage als totaal opgeven.</strong> Per vak, anders is het niet te stapelen.</li><li><strong>Een mapje zonder doorlopende nummering.</strong> Een ongenummerde stapel raakt in de eerste tien minuten door elkaar.</li><li><strong>Een vast aantal criteria overnemen van een ander vak.</strong> Tel ze in het echte formulier.</li><li><strong>Een voorblad met een inhoudsopgave.</strong> Begin bij de beoordeling.</li></ul>
+</body></html>
