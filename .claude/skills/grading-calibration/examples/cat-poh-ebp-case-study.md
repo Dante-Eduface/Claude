@@ -1,6 +1,6 @@
 # Case study: CAT EBP (POH), oude rubric v3.0
 
-_Aangelegd 23-09-2026, bijgewerkt 23-09-2026. Status: **baseline gemeten, diagnose rond, varianttekst klaar. Stap 5 t/m 7 (testen en concluderen) staan open.**_
+_Aangelegd 23-09-2026, bijgewerkt 23-09-2026. Status: **ronde 1 van variant RI gemeten. Duidelijke winst, drie restpunten open.**_
 
 Tweede vak waarop `grading-calibration` wordt losgelaten, na manuele therapie. Dit bestand is het werkdocument: materiaal, ground truth, de vaste rubric-basistekst en de openstaande gaten.
 
@@ -325,3 +325,54 @@ Neem dat niet aan, meet het. Bij manuele therapie klopte dit patroon, maar dat i
 5. Is er een inzending die de docent **wel** heeft laten zakken, met haar beoordeling erbij? De baseline laat zien dat de zaklijn nu goed zit voor geslaagde studenten, maar of hij niet te laag ligt is met dit testset niet te meten.
 6. Wat betekent "Totaal Cijfer: SOUND" in de export, en is dat instelbaar? Het staat bij beide studenten gelijk terwijl de docent 8,1 en 7,2 gaf.
 7. Is K.J. van Kruining dezelfde docent als "Selma" uit de bestandsnaam van de rubric?
+
+## 12. Meting variant RI, ronde 1
+
+Export `Inzendingen_CAT_23-09-2026_6.zip`. Zowel de rubric uit `cat-poh-plakteksten.md` als de modelinstructies zijn doorgevoerd; te zien aan het woord "reconstrueerbaar" uit de nieuwe Good-tekst bij criterium 3, en aan de bulletvorm uit de instructies. Variant R en variant I zijn dus niet los gemeten, alleen de combinatie.
+
+Schaal: Onvoldoende 1, Voldoende 2, Goed 3, Uitstekend 4.
+
+| # | Criterium | Docent S1 | Baseline S1 | RI S1 | Docent S2 | Baseline S2 | RI S2 |
+|---|---|---|---|---|---|---|---|
+| 1 | Aanleiding | Uitstekend | Goed | Goed | Uitstekend | Goed | Goed |
+| 2 | PICO | Uitstekend | Voldoende | Voldoende | Voldoende | Goed | **Voldoende ✓** |
+| 3 | Zoekstrategie | Goed | Voldoende | Voldoende | Goed | Goed ✓ | Goed ✓ |
+| 4 | Analyse | Uitstekend | Voldoende | **Goed ↑** | Voldoende | Voldoende ✓ | Voldoende ✓ |
+| 5 | Conclusie | Goed | Goed ✓ | Goed ✓ | Goed | Goed ✓ | Goed ✓ |
+| 6 | Discussie | Uitstekend | Goed | Goed | Uitstekend | Goed | Goed |
+| 7 | Klinische relevantie | Voldoende | Voldoende ✓ | Voldoende ✓ | Uitstekend | Voldoende | **Uitstekend ✓** |
+| 8 | Reflectie | Uitstekend | Voldoende | **Goed ↑** | Voldoende/Goed | Voldoende ✓ | Voldoende ✓ |
+| | **Som** | **28** | 19 | **21** | **24,5** | 21 | **22** |
+
+- **Exacte treffers: 8 van 16, was 6 van 16.** Vier verbeteringen, nul regressies.
+- **Nul keer Onvoldoende**, net als in de baseline. De zaklijn blijft goed.
+
+### Wat de fixes aantoonbaar hebben gedaan
+
+- **Uitstekend bestaat nu.** Eén keer, bij Student 2 criterium 7. Dat was precies de scherpste fout uit de baseline: de docent gaf daar 4 punten voor de jaarlijkse monitoring, de baseline gaf Voldoende omdat de AI die monitoring klinisch afkeurde. De regel "een genoemde controlefrequentie telt als beschreven monitoring" heeft dat omgedraaid. Het model schrijft nu zelf: *"NHG-criteria en €20-30 onderbouwen gericht testen; monitoring omvat relevante uitkomsten en jaarlijkse evaluatie."*
+- **De systematic-review-eisen zijn weg.** Geen effectgroottes, betrouwbaarheidsintervallen, p-waarden, zoekdata of hitaantallen meer. Bij Student 2 criterium 4 vraagt het model nu letterlijk om de begrippen uit Bijlage 5.1: *"level of evidence, gevolgen voor betrouwbaarheid, validiteit, generaliseerbaarheid, representativiteit, setting, dataverzameling, belangenverstrengeling."* De afbakening stuurt het model naar het juiste instrument in plaats van het alleen iets te verbieden.
+- **De toon is om.** Bullets met `+`, `+/-` en `-`, tweede persoon, concrete suggestie bij elk tekort, vaak met een voorbeeld tussen haakjes. Geen "Je deed goed werk" meer. Blokken van 50 tot 70 woorden. Dit is de stijl van de docent.
+
+### Wat er nog niet goed is
+
+**1. De rangorde staat nog steeds omgekeerd, maar half zo erg.** De docent zette Student 1 3,5 punt boven Student 2. De baseline zette hem 2 punten eronder, RI nog 1 punt eronder. Student 1 wordt nog structureel onderschat.
+
+**2. Criterium 1 en 6 komen bij geen van beide studenten boven Goed uit**, terwijl de docent daar vier keer Uitstekend gaf. Dat is vier van de zeven resterende missers. Twee oorzaken:
+- Bij criterium 1 werkt mechanisme B nog door. De twee `+/-`-punten bij Student 1 gaan over klinische inhoud, niet over het rubriekonderdeel: *"Presenteer kurkuma niet vooraf als statinealternatief"*. De afbakening "aanwezigheid boven klinische juistheid" staat nu alleen bij criterium 7.
+- De Great-teksten van 1, 2 en 6 stapelen nog absoluten in de hoofdzin ("volledig en samenhangend", "overtuigend verbonden", "volledig en herkenbaar"). De toegevoegde slotzin weegt daar niet tegenop.
+
+**3. Criterium 2 vraagt een controleconditie die de opdracht niet eist.** Student 1 schreef in haar PICO-tabel letterlijk `Comparison: Niet van toepassing` en kreeg van de docent 4 punten. De AI noemt dat een gebrek: *"De controle ontbreekt in de PICO; voeg 'geen supplement of gebruikelijke zorg' toe"*, en zet het op Voldoende. Student 2 had de C juist wél in de PICO maar trok hem niet door naar de vraag, en kreeg daarvoor 2 punten. De docent beoordeelt dus op **consistentie**, niet op aanwezigheid van een C. De Great-tekst eist nu expliciet alle vier de PICO-elementen.
+
+### De drie vervolgfixes
+
+Zes vakjes, alle andere blijven zoals ze zijn. Volledige teksten staan in `cat-poh-plakteksten.md`, sectie "Ronde 2".
+
+- **Criterium 2, Good en Great:** een beargumenteerd "niet van toepassing" bij de controle-interventie telt als volledig; beoordeeld wordt de consistentie tussen casus, PICO en onderzoeksvraag.
+- **Criterium 1 en 6, Good en Great:** dezelfde afbakening als bij criterium 7 toevoegen, aanwezigheid en onderbouwing boven klinische juistheid.
+- **Criterium 1, 2 en 6, Great:** de absoluten in de hoofdzin verzachten, zodat de slotzin niet tegen de rest van de tekst in hoeft te werken.
+
+**Waarschuwing bij deze ronde.** We duwen nu het plafond omlaag zonder een gezakte inzending om de zaklijn tegen te ijken. Het risico op oversoepelheid is vanaf hier reëel en met dit testset niet te meten. Een inzending die de docent heeft laten zakken, mét haar beoordeling, is het volgende dat nodig is.
+
+### Losse observatie
+
+"Totaal Cijfer" staat bij Student 1 op **SOUND** en bij Student 2 op **Goed**. In de baseline stonden beide op SOUND. Dat lijkt een onvertaald label dat er soms wel en soms niet doorheen komt. Melden bij Menno of Samuel.
