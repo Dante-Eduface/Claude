@@ -233,3 +233,35 @@ Haal beide studenten door elke variant en exporteer. Waar we naar kijken:
 4. **Toon.** Bullets met + en +/-, geen "Je deed goed werk", geen "Echter".
 
 Verwachting op grond van manuele therapie: R stuurt het oordeel, I stuurt de toon, alleen RI wint op beide. Meet het, neem het niet aan.
+
+---
+
+# Ronde 2 — zes vakjes vervangen
+
+Na de RI-meting van 23-09-2026. Alleen deze zes vervangen, de rest blijft zoals hierboven. Drie ingrepen: de controle-interventie mag "niet van toepassing" zijn, de afbakening "aanwezigheid boven klinische juistheid" ook bij criterium 1 en 6, en de absoluten in de Great-hoofdzinnen van 1, 2 en 6 verzacht.
+
+## Criterium 1 — Good
+
+De aanleiding van de kritische beroepssituatie bevat een concrete vraag, de belangrijkste relevante kenmerken en een herkenbare beschrijving van relevante richtlijnen of standaarden. De interventie is verkend aan de hand van relevante richtlijnen, standaarden of literatuur en risico's, kanttekeningen en de noodzaak tot verder onderzoek zijn beschreven vanuit de praktijk, de patiëntenpopulatie en de rol van de praktijkondersteuner. Daarnaast beschrijft de student vanuit de eigen expertise implicaties, gevolgen en kansen, maar de onderbouwing daarvan is niet overal volledig. Beoordeeld wordt of deze onderdelen beschreven en onderbouwd zijn, niet of de klinische afweging van de student de beste keuze is. Een geformuleerde verwachting of overweging telt als beschreven, ook wanneer die verderop in de CAT genuanceerd wordt.
+
+## Criterium 1 — Great
+
+De aanleiding is samenhangend beschreven vanuit de kritische beroepssituatie, met onderscheid tussen hoofd- en bijzaken, een concrete vraag, de relevante kenmerken en relevante richtlijnen of standaarden. De eerste verkenning van de interventie is onderbouwd met richtlijnen, standaarden en/of wetenschappelijke literatuur, en risico's, kanttekeningen en de noodzaak tot verder onderzoek zijn verbonden aan de praktijk, de patiëntenpopulatie en het perspectief van de praktijkondersteuner. Vanuit de eigen expertise zijn implicaties, gevolgen en kansen onderbouwd uitgewerkt. Beoordeeld wordt of deze onderdelen beschreven en onderbouwd zijn, niet of de klinische afweging van de student de beste keuze is. Dit niveau vraagt de onderdelen van het Good-niveau compleet en onderbouwd, niet meer dan de opdracht vraagt. Kleine onvolkomenheden die de kern niet ondermijnen staan dit niveau niet in de weg.
+
+## Criterium 2 — Good
+
+Er is een beantwoordbare onderzoeksvraag geformuleerd die grotendeels logisch samenhangt met de aanleiding. De interventie, eventuele controle-interventie en gewenste uitkomst zijn opgenomen en de PICO-elementen zijn herkenbaar. Wanneer de vraagstelling geen vergelijking kent, telt een beargumenteerd "niet van toepassing" bij de controle-interventie als volledig. Beoordeeld wordt de consistentie tussen casus, PICO en onderzoeksvraag, niet of er een controleconditie is toegevoegd.
+
+## Criterium 2 — Great
+
+Er is een eenduidige en beantwoordbare onderzoeksvraag geformuleerd die logisch voortvloeit uit de aanleiding. De PICO-elementen patiënt of probleem, interventie, controle-interventie en gewenste uitkomst zijn herkenbaar in de vraag opgenomen en consistent doorgetrokken van casus naar PICO naar onderzoeksvraag. Wanneer de vraagstelling geen vergelijking kent, telt een beargumenteerd "niet van toepassing" bij de controle-interventie als volledig; het toevoegen van een controleconditie is dan niet vereist. Dit niveau vraagt de onderdelen van het Good-niveau compleet en onderbouwd, niet meer dan de opdracht vraagt. Kleine onvolkomenheden die de kern niet ondermijnen staan dit niveau niet in de weg.
+
+## Criterium 6 — Good
+
+De student bespreekt het eigen onderzoek en de onderzoeksresultaten overwegend kritisch. De validiteit van het onderzoek, nieuwe inzichten, conflicterende perspectieven, relevante methodologische sterke en minder sterke punten, beperkingen en oorzaken en gevolgen voor het resultaat zijn beschreven en grotendeels met argumenten onderbouwd. Beoordeeld wordt of deze onderdelen besproken en onderbouwd zijn, niet of het standpunt van de student medisch-inhoudelijk de beste keuze is.
+
+## Criterium 6 — Great
+
+De student bediscussieert het eigen onderzoek en de onderzoeksresultaten kritisch. De bespreking onderbouwt de validiteit van het eigen onderzoek, beschrijft nieuwe inzichten, verkent conflicterende perspectieven, weegt de belangrijkste methodologische sterke en minder sterke punten van de studies, beschrijft beperkingen en onderbouwt oorzaken en gevolgen voor het resultaat; daarnaast bevat zij een eigen kritische noot. Beoordeeld wordt of deze onderdelen besproken en onderbouwd zijn, niet of het standpunt van de student medisch-inhoudelijk de beste keuze is. Dit niveau vraagt de onderdelen van het Good-niveau compleet en onderbouwd, niet meer dan de opdracht vraagt. Kleine onvolkomenheden die de kern niet ondermijnen staan dit niveau niet in de weg.
+
+De modelinstructies blijven ongewijzigd.
