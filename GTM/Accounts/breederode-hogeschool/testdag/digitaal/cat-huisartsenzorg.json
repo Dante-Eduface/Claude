@@ -1,0 +1,271 @@
+{
+  "titel": "Eduface testdag",
+  "opleiding": "Breederode Hogeschool",
+  "vak": "CAT, opleiding Huisartsenzorg (POH), NLQF 6",
+  "datum_beoordeling": "juni 2025",
+  "notitie": "De Eduface-kolom is de huidige, gekalibreerde versie van 23 september 2026. De nakijker beoordeelde met het beoordelingsformulier CAT versie 3.0, met 4, 2 of 0 punten per criterium.",
+  "beoordelingsoptie": {
+    "gekozen": "Onvoldoende, voldoende, goed of uitstekend, per rubriekcriterium",
+    "wat_dat_doet": "Het model spreekt zich per criterium uit in vier standen en geeft er feedback bij. Het rekent geen cijfer uit en trekt geen eindoordeel.",
+    "rangorde": [
+      "onvoldoende",
+      "voldoende",
+      "goed",
+      "uitstekend"
+    ],
+    "waarschuwing": "Het beoordelingsformulier kent drie standen: 4, 2 of 0 punten, met een cesuur van minimaal 2 punten per criterium. Het model kent er vier. De vertaling die hier is gebruikt: 0 punten is onvoldoende, 2 punten is voldoende, 4 punten is uitstekend. Bij één criterium gaf de nakijker 3 punten, een stand die op het formulier zelf niet bestaat; die staat hier als goed. Of deze vertaling klopt is de eerste vraag van vanochtend."
+  },
+  "studenten": [
+    {
+      "label": "Student 1",
+      "casus": "Kurkumacapsules bij volwassen vrouwen met verhoogd cholesterol",
+      "criteria": [
+        {
+          "naam": "Aanleiding van de klinische vraag vanuit het EBP-principe",
+          "nakijker": "uitstekend",
+          "eduface": "goed"
+        },
+        {
+          "naam": "Eenduidige en methodologische onderzoeksvraag op basis van PICO",
+          "nakijker": "uitstekend",
+          "eduface": "goed"
+        },
+        {
+          "naam": "Wetenschappelijke databanken en weging van de gevonden informatie",
+          "nakijker": "voldoende",
+          "eduface": "goed"
+        },
+        {
+          "naam": "Analyse van onderzoeksresultaten binnen de praktijkcontext",
+          "nakijker": "uitstekend",
+          "eduface": "goed"
+        },
+        {
+          "naam": "Conclusie vanuit de verkregen resultaten",
+          "nakijker": "voldoende",
+          "eduface": "voldoende"
+        },
+        {
+          "naam": "Kritische inhoudelijke discussie",
+          "nakijker": "uitstekend",
+          "eduface": "goed"
+        },
+        {
+          "naam": "Klinische relevantie en toepasbaarheid",
+          "nakijker": "voldoende",
+          "eduface": "voldoende"
+        },
+        {
+          "naam": "Reflectie op werkwijze en eigen professionele rolontwikkeling",
+          "nakijker": "uitstekend",
+          "eduface": "goed"
+        }
+      ],
+      "tabel_voet": "Uitstekend staat hier voor de 4 punten die de nakijker gaf, voldoende voor 2 punten. Het model kwam op geen enkel criterium boven goed uit.",
+      "eindoordeel_nakijker": "Voldaan. 26 van de 32 punten, cijfer 8,1.",
+      "feedback_nakijker": "Een mooie uiteenzetting van de CAT. Gefeliciteerd met het mooie cijfer!",
+      "feedback_eduface": [
+        {
+          "criterium": "Aanleiding van de klinische vraag vanuit het EBP-principe",
+          "tekst": "+ Je koppelt de casus helder aan de NHG-richtlijn, leefstijl en statinebehandeling. + Je benoemt bijwerkingen, interacties, patiëntvoorkeuren, monitoring en de POH-rol. +/- Onderbouw brede claims met gezaghebbendere bronnen dan Pazzox, Dokter Media en “z.d.”; maar verbind ook praktijkgevolgen concreet aan literatuur of richtlijnen."
+        },
+        {
+          "criterium": "Eenduidige en methodologische onderzoeksvraag op basis van PICO",
+          "tekst": "+ Vraag is concreet, beantwoordbaar en casusgericht; je PICO is overzichtelijk en ‘Comparison: niet van toepassing’ past. +/- Stem ‘Adults’, ‘Women’ en deelnemers met diabetes of metabool syndroom op elkaar af voor een consistente populatieafbakening. +/- Kies één interventieterm; verduidelijk het verschil tussen kurkumacapsules en gestandaardiseerde curcuminesupplementen."
+        },
+        {
+          "criterium": "Wetenschappelijke databanken en weging van de gevonden informatie",
+          "tekst": "+ PubMed, PICO-zoektabel en drie artikelen zijn goed gekozen; je weegt design, steekproef, duur en generaliseerbaarheid. +/- Maar koppel elk artikel aan de zoekstring en PICO-termen. - Structureer MeSH-termen en haakjes in blokken en benoem de gedeeltelijke PICO-aansluiting."
+        },
+        {
+          "criterium": "Analyse van onderzoeksresultaten binnen de praktijkcontext",
+          "tekst": "+ Je koppelt de data-extractietabel overtuigend aan de patiëntvraag en onderscheidt HDL-, totaal- en LDL-cholesterol. +/- Je bespreekt kwaliteitsaspecten, maar benoem per artikel level of evidence en analyseer randomisatie, blindering en gevolgen voor betrouwbaarheid en validiteit."
+        },
+        {
+          "criterium": "Conclusie vanuit de verkregen resultaten",
+          "tekst": "+ Je benoemt alle drie onderzoeken en de gemengde resultaten. +/- De conclusie is te stellig; dit belemmert een proportionele interpretatie (vervang ‘overtuigend bewijs’ door ‘beperkt bewijs’). - De doelgroepconclusie ontbreekt; vermeld dat curcumine hooguit aanvullend is en statines niet vervangt."
+        },
+        {
+          "criterium": "Kritische inhoudelijke discussie",
+          "tekst": "+ Je bespreekt studies afzonderlijk en gezamenlijk en benoemt sterke punten, zoals randomisatie en blindering bij Adibian et al. +/- Je weegt tegenstrijdige LDL-bevindingen herkenbaar, maar verklaring en conclusie kunnen analytischer. +/- Vergelijk populatie, dosering, duur, uitgangswaarden en voltooiing."
+        },
+        {
+          "criterium": "Klinische relevantie en toepasbaarheid",
+          "tekst": "+ Curcumine is een leefstijlaanvulling, geen statinevervanger bij ernstig verhoogd cholesterol. +/- ‘Veelbelovend’ overstijgt gemengd, kortdurend, beperkt generaliseerbaar bewijs. - Beschrijf POH- en huisartsacties en monitoring: controle, evaluatiemoment, verantwoordelijke, stopbesluit."
+        },
+        {
+          "criterium": "Reflectie op werkwijze en eigen professionele rolontwikkeling",
+          "tekst": "+ Je behandelt de zoekstrategie, feedback, samenwerking, leeropbrengsten en toekomstige aanpak. +/- Maar verbind je beperkingen expliciet aan het advies. +/- Beschrijf concreet hoe je als POH patiëntvragen, supplementgebruik en overleg voortaan aanpakt."
+        }
+      ],
+      "verschillen": [
+        {
+          "criterium": "Aanleiding van de klinische vraag vanuit het EBP-principe",
+          "richting": "Model strenger: de nakijker gaf haar hoogste stand, het model een stand lager.",
+          "nakijker_tekst": "Vier punten, met vijf pluspunten: het vertrekpunt is helder, de centrale vraag is concreet geformuleerd vanuit het standpunt van de patiënt, alle essentiële kenmerken zijn volledig in kaart gebracht, de meerwaarde van verder onderzoek is consistent onderbouwd en de eigen deskundigheid draagt bij aan de noodzaak voor vervolgonderzoek.",
+          "eduface_tekst": "Noemt dezelfde sterke punten en vraagt daarnaast om gezaghebbendere bronnen dan Pazzox en Dokter Media, en om praktijkgevolgen die concreter aan literatuur of richtlijnen zijn verbonden.",
+          "vraag": "Het model vraagt om zwaardere bronnen bij de aanleiding. Verwachten jullie dat een student in dit hoofdstuk al op bronniveau selecteert, of mag een publiekstoegankelijke bron hier volstaan?"
+        },
+        {
+          "criterium": "Wetenschappelijke databanken en weging van de gevonden informatie",
+          "richting": "Model milder: de nakijker gaf haar laagste geslaagde stand, het model een stand hoger.",
+          "nakijker_tekst": "Twee punten. Noemt de uiteenzetting van MeSH- en vrije zoektermen summier, mist bij de P termen als high cholesterol, elevated cholesterol en lipid disorder, en had meer willen lezen over het gedachtegang achter het stoppen na de laatste zoekstring.",
+          "eduface_tekst": "Goed. Noemt PubMed, de PICO-zoektabel en de drie artikelen goed gekozen, en vraagt om betere structurering van MeSH-termen en haakjes.",
+          "vraag": "Hier zag de nakijker iets dat het model lichter weegt: de volledigheid van de zoektermen bij de P. Wat maakt een zoektermenlijst bij jullie voldoende, en waar begint summier?"
+        },
+        {
+          "criterium": "Reflectie op werkwijze en eigen professionele rolontwikkeling",
+          "richting": "Model strenger: de nakijker gaf haar hoogste stand, het model een stand lager.",
+          "nakijker_tekst": "Vier punten: de reflectie voldoet aan alle gestelde eisen en geeft blijk van zelfinzicht, betrokkenheid en een goed begrip van het leerproces. Het stuk is eerlijk, duidelijk en getuigt van professionele groei.",
+          "eduface_tekst": "Noemt dat alle gevraagde onderdelen behandeld zijn, en vraagt daarnaast om een expliciete koppeling tussen de beperkingen van het onderzoek en het patiëntadvies.",
+          "vraag": "Het model vraagt om een koppeling tussen de methodologische beperkingen en het eigen handelen. Hoort dat bij jullie in de reflectie thuis, of is dat een onderdeel van de discussie?"
+        }
+      ],
+      "aannames": [
+        {
+          "kop": "Het hoogste niveau wordt niet gegeven.",
+          "vraag": "Op vijf criteria gaf de nakijker haar hoogste stand en komt het model een stand lager uit. Wat moet een student volgens jullie laten zien om bij dit vak in het hoogste vak te komen?",
+          "model_zegt": "Op elk van die criteria noemt het model de uitvoering goed en voegt het daarna nog een verbeterpunt toe.",
+          "rubriek_zegt": "De rubriek beschrijft het hoogste niveau met woorden als volledig, samenhangend en overtuigend onderbouwd, zonder te zeggen hoeveel er dan nog open mag staan.",
+          "nakijker_deed": "Gaf vier punten en schreef er enkel pluspunten bij, bij criterium 4 zelfs Complimenten!."
+        }
+      ],
+      "opdracht": {
+        "los": "De CAT van deze student staat in een apart bestand. Open dat in een tweede venster naast dit bestand, dan kun je de beoordeling en het werk naast elkaar lezen."
+      }
+    },
+    {
+      "label": "Student 2",
+      "casus": "Vitamine D-suppletie bij volwassenen met obesitas en een vastgesteld tekort",
+      "criteria": [
+        {
+          "naam": "Aanleiding van de klinische vraag vanuit het EBP-principe",
+          "nakijker": "uitstekend",
+          "eduface": "goed"
+        },
+        {
+          "naam": "Eenduidige en methodologische onderzoeksvraag op basis van PICO",
+          "nakijker": "voldoende",
+          "eduface": "voldoende"
+        },
+        {
+          "naam": "Wetenschappelijke databanken en weging van de gevonden informatie",
+          "nakijker": "voldoende",
+          "eduface": "goed"
+        },
+        {
+          "naam": "Analyse van onderzoeksresultaten binnen de praktijkcontext",
+          "nakijker": "voldoende",
+          "eduface": "voldoende"
+        },
+        {
+          "naam": "Conclusie vanuit de verkregen resultaten",
+          "nakijker": "voldoende",
+          "eduface": "goed"
+        },
+        {
+          "naam": "Kritische inhoudelijke discussie",
+          "nakijker": "uitstekend",
+          "eduface": "uitstekend"
+        },
+        {
+          "naam": "Klinische relevantie en toepasbaarheid",
+          "nakijker": "uitstekend",
+          "eduface": "goed"
+        },
+        {
+          "naam": "Reflectie op werkwijze en eigen professionele rolontwikkeling",
+          "nakijker": "goed",
+          "eduface": "voldoende"
+        }
+      ],
+      "tabel_voet": "Bij het laatste criterium gaf de nakijker 3 punten, een stand die op haar eigen formulier niet bestaat. Die staat hier als goed.",
+      "eindoordeel_nakijker": "Voldaan. 23 van de 32 punten, cijfer 7,2.",
+      "feedback_nakijker": "Geen geschreven eindfeedback op het formulier, alleen het puntentotaal. De onderbouwing staat per criterium.",
+      "feedback_eduface": [
+        {
+          "criterium": "Aanleiding van de klinische vraag vanuit het EBP-principe",
+          "tekst": "+ Je beschrijft een concrete CVRM-casus met vitamine-D-spiegel en patiëntvraag. + Je verbindt richtlijnen, risico’s en onzekerheden aan de rollen van POH, patiënt en praktijk. +/- Onderbouw motivatie, eigen regie en “een natuurlijke aanvulling” met een passende bron. +/- Werk de POH-begeleiding uit in een schema met doel, evaluatiemoment en bijsturing."
+        },
+        {
+          "criterium": "Eenduidige en methodologische onderzoeksvraag op basis van PICO",
+          "tekst": "+ De onderzoeksvraag is duidelijk, beantwoordbaar en gekoppeld aan de patiëntvraag. +/- Populatie en vitamine-D-deficiëntie zijn inconsistent; kies één populatie en hanteer deficiëntie consequent in PICO en selectie. - ‘Geen suppletie’ wijkt af van placebo of actieve controles; stem PICO, zoekstrategie en vraag vóór selectie af."
+        },
+        {
+          "criterium": "Wetenschappelijke databanken en weging van de gevonden informatie",
+          "tekst": "+ De PubMed-zoekactie is doelgericht uitgewerkt met MeSH-termen, synoniemen, booleaanse operatoren, filters en criteria; ook zijn drie artikelen vakinhoudelijk gewogen. +/- De verruiming van ‘geen suppletie’ naar placebo en andere designs vraagt een expliciete bespreking van de gevolgen voor de PICO. - Controleer de haakjes in zoekstring twee."
+        },
+        {
+          "criterium": "Analyse van onderzoeksresultaten binnen de praktijkcontext",
+          "tekst": "+ De tabel bevat design, populatie, interventie, studieduur, resultaten en verschillen; tekortcorrectie versus afslanken is benoemd. +/- Koppel bij Lotfi-Dizaji de dieetcombinatie en kleine steekproef aan interne en externe validiteit. - Beoordeel artikelrepresentativiteit, belangenverstrengeling en vertekening met criteria en vermeld level of evidence."
+        },
+        {
+          "criterium": "Conclusie vanuit de verkregen resultaten",
+          "tekst": "+ Je conclusie beantwoordt de klinische vraag, verbindt de drie onderzoeken en onderscheidt terecht tekortcorrectie van vitamine D als afslankmethode. +/- Formuleer de kern compacter en stelliger: begin direct met het antwoord en schrap passages over de zoekstrategie."
+        },
+        {
+          "criterium": "Kritische inhoudelijke discussie",
+          "tekst": "+ Je bespreekt de zoekstrategie, inclusiecriteria, het indirecte bewijs en de vergelijkingsvaliditeit overtuigend. + Je verklaart tegenstrijdige resultaten concreet vanuit populatie, supplementvorm, dosering, studieduur en uitkomstmaten. + Je weegt methodologische sterke punten, beperkingen en klinische gevolgen zorgvuldig. +/- Controleer de toeschrijving aan Perna’s meta-analyse."
+        },
+        {
+          "criterium": "Klinische relevantie en toepasbaarheid",
+          "tekst": "+ Je vertaalt beperkte evidence helder naar handelingsalternatieven en onderbouwt implicaties met de NHG-Labgids, kosteninschatting, samen beslissen en motiverende gespreksvoering. +/- Je beschrijft monitoring en jaarlijkse bepaling, maar specificeer wie wanneer welke uitkomst beoordeelt en de vervolgstap."
+        },
+        {
+          "criterium": "Reflectie op werkwijze en eigen professionele rolontwikkeling",
+          "tekst": "+ Je beschrijft CAT-aanpak, resultaten en leerpunten concreet, met PubMed en patiëntvriendelijke vertaling. +/- Je noemt peerfeedback, maar koppelt die niet aan een conclusieaanpassing. +/- Je ontwikkeling blijft een voornemen; beschrijf hoe je samen beslissen en motiverende gespreksvoering toepast."
+        }
+      ],
+      "verschillen": [
+        {
+          "criterium": "Klinische relevantie en toepasbaarheid",
+          "richting": "Model strenger: de nakijker gaf haar hoogste stand, het model een stand lager.",
+          "nakijker_tekst": "Vier punten. Noemt de aanbevelingen concreet, uitvoerbaar en gebaseerd op zowel literatuur als de NHG-richtlijn, met expliciete aandacht voor kosten en haalbaarheid, en een concrete monitoringfrequentie van een keer per jaar.",
+          "eduface_tekst": "Noemt diezelfde onderbouwing sterk, en vraagt daarnaast te specificeren wie wanneer welke uitkomst beoordeelt en welke vervolgstap daarop volgt.",
+          "vraag": "Het model vraagt om een monitoringplan met een verantwoordelijke en een vervolgstap. Verwachten jullie dat detailniveau van een student, of is een genoemde controlefrequentie genoeg?"
+        },
+        {
+          "criterium": "Conclusie vanuit de verkregen resultaten",
+          "richting": "Model milder: de nakijker gaf haar laagste geslaagde stand, het model een stand hoger.",
+          "nakijker_tekst": "Twee punten. De conclusie had een stuk stellender geformuleerd mogen worden, en haalt zaken aan die eigenlijk in de discussie aan bod horen te komen.",
+          "eduface_tekst": "Goed. Noemt de conclusie genuanceerd en passend, en vraagt om een compactere kern en het verplaatsen van de methodologische toelichting.",
+          "vraag": "Jullie en het model zien hier hetzelfde punt en wegen het anders zwaar. Wat is bij jullie het verschil tussen een conclusie die nog bijgeschaafd moet worden en een conclusie die het niveau eronder zit?"
+        },
+        {
+          "criterium": "Analyse van onderzoeksresultaten binnen de praktijkcontext",
+          "richting": "Eens: beiden op de laagste geslaagde stand.",
+          "nakijker_tekst": "Twee punten. Noemt setting niet correct ingezet zoals in de les afgesproken, auteursvermelding onjuist bij twee artikelen en APA-verwijzingen niet altijd op de juiste plek.",
+          "eduface_tekst": "Voldoende. Noemt dezelfde inhoudelijke fouten bij Perna en Oussaada en vraagt om level of evidence per artikel.",
+          "vraag": "Hier komen jullie op hetzelfde uit, ook op dezelfde fouten. Is dit het detailniveau dat jullie van de feedback verwachten, of mag het korter?"
+        }
+      ],
+      "aannames": [
+        {
+          "kop": "Fouten in de bronvermelding wegen zwaar.",
+          "vraag": "Het model noemt onjuiste toeschrijvingen bij twee artikelen op drie verschillende criteria. Hoe zwaar weegt een fout in de bronvermelding bij jullie, en hoort die op één plek of overal waar hij doorwerkt?",
+          "model_zegt": "Noemt de verwisseling tussen Perna en Oussaada bij de zoekstrategie, bij de analyse en bij de discussie.",
+          "rubriek_zegt": "De rubriek noemt de juistheid van de bronvermelding niet apart; APA staat alleen bij de randvoorwaarden.",
+          "nakijker_deed": "Noemde het één keer, bij de analyse, en liet het criterium slagen."
+        }
+      ],
+      "opdracht": {
+        "los": "De CAT van deze student staat in een apart bestand. Open dat in een tweede venster naast dit bestand, dan kun je de beoordeling en het werk naast elkaar lezen."
+      }
+    }
+  ],
+  "vragen_over_het_vak": [
+    {
+      "vraag": "Jullie formulier kent drie standen, 4, 2 of 0 punten. Het model kent er vier. Welke vertaling willen jullie: is 4 punten hetzelfde als uitstekend, of ligt jullie 4 dichter bij goed?",
+      "toelichting": "Raakt elk criterium van beide studenten. Zolang dit niet vastligt, is elk verschil in deze dossiers deels een vertaalverschil."
+    },
+    {
+      "vraag": "Bij één criterium is 3 punten gegeven, een stand die op het formulier niet bestaat. Gebruiken jullie tussenstanden vaker, en zo ja, willen jullie die terugzien in het model?",
+      "toelichting": "Student 2, reflectie. Dit is het enige punt waar de nakijker buiten haar eigen schaal stapte."
+    },
+    {
+      "vraag": "De randvoorwaarden, zoals APA, het maximum van 6000 woorden en de inhoudsopgave, staan nu niet in het model. Willen jullie die er als apart onderdeel bij, of houden jullie die zelf?",
+      "toelichting": "Ze tellen op jullie formulier niet mee in het cijfer, en het model kan een deel ervan niet vaststellen."
+    }
+  ],
+  "voetregel": "Breederode Hogeschool &middot; CAT Huisartsenzorg (POH) &middot; Eduface testdag"
+}
