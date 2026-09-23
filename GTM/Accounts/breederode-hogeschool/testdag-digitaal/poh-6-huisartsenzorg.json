@@ -1,0 +1,128 @@
+{
+  "titel": "Eduface testdag",
+  "opleiding": "Breederode Hogeschool",
+  "vak": "CAT EBP, Praktijkondersteuner Huisartsenzorg NLQF niveau 6",
+  "datum_beoordeling": "juni 2025",
+  "notitie": "De Eduface-kolom is de stand na twee kalibratierondes op de rubriektekst en de modelinstructies, niet de ongewijzigde uitgangsversie. Namen van studenten zijn vervangen door Student 1 en Student 2, de naam van de nakijker staat er nergens in.",
+  "beoordelingsoptie": {
+    "gekozen": "Onvoldoende, voldoende, goed of uitstekend, per rubriekcriterium",
+    "wat_dat_doet": "Het model spreekt zich per criterium uit in vier standen en geeft er feedback bij. Het rekent geen cijfer uit en trekt geen eindoordeel.",
+    "rangorde": ["onvoldoende", "voldoende", "goed", "uitstekend"],
+    "waarschuwing": "De brondocument van de opleiding kent drie niveaus per criterium (4, 2 of 0 punten), Eduface is ingesteld op vier vakjes. Er is dus geen exacte vertaling: 2 punten kan zowel voldoende als goed betekenen, afhankelijk van wat er geschreven staat. De nakijker-kolom hieronder is de best mogelijke vertaling, geen letterlijke uitkomst van de opleiding zelf."
+  },
+  "studenten": [
+    {
+      "label": "Student 1",
+      "casus": "Kurkuma/curcumine bij verhoogd cholesterol",
+      "tabel_voet": "De nakijker-kolom is vertaald uit punten (4, 2 of 0) naar vier vakjes: 4 punten is hier gelezen als uitstekend, 2 punten als goed of voldoende, afhankelijk van de tekst die erbij staat. Totaal bij de opleiding: 26 van de 32 punten, geslaagd.",
+      "criteria": [
+        {"naam": "Aanleiding klinische vraag (EBP)", "nakijker": "uitstekend", "eduface": "goed"},
+        {"naam": "Onderzoeksvraag (PICO)", "nakijker": "uitstekend", "eduface": "voldoende"},
+        {"naam": "Zoekstrategie en weging bronnen", "nakijker": "goed", "eduface": "goed"},
+        {"naam": "Analyse in praktijkcontext", "nakijker": "uitstekend", "eduface": "goed"},
+        {"naam": "Conclusie uit de resultaten", "nakijker": "goed", "eduface": "goed"},
+        {"naam": "Kritische inhoudelijke discussie", "nakijker": "uitstekend", "eduface": "goed"},
+        {"naam": "Klinische relevantie en toepasbaarheid", "nakijker": "voldoende", "eduface": "voldoende"},
+        {"naam": "Reflectie op werkwijze en rolontwikkeling", "nakijker": "uitstekend", "eduface": "goed"}
+      ],
+      "eindoordeel_nakijker": "Geslaagd, 26 van de 32 punten.",
+      "feedback_nakijker": "Geen los eindoordeel in tekst. De nakijker schrijft per criterium een reactie met + voor wat sterk is en +/- of - voor wat beter kan, geen samenvattende alinea aan het eind.",
+      "feedback_eduface": [
+        {"criterium": "Onderzoeksvraag (PICO)", "tekst": "'Cholesterolwaarde' is te vaag; definieer LDL primair en totaalcholesterol, HDL en triglyceriden afzonderlijk. Onderbouw 'geen controle' in PICO, vraag en zoekstrategie. Populatie en conclusies verschillen; specificeer de doelgroep."},
+        {"criterium": "Kritische inhoudelijke discussie", "tekst": "De bespreking van methodologische sterke en zwakke punten kan explicieter, met een duidelijkere koppeling aan betrouwbaarheid, validiteit en generaliseerbaarheid van de gebruikte artikelen."}
+      ],
+      "verschillen": [
+        {
+          "criterium": "Onderzoeksvraag (PICO)",
+          "richting": "Model strenger: de nakijker gaf hier het hoogste niveau, het model twee vakjes lager.",
+          "nakijker_tekst": "Vier punten van de vier, met als toelichting dat de PICO geheel logisch uit de casus volgt en de onderzoeksvraag volledig logisch uit de PICO.",
+          "eduface_tekst": "Noemt de uitkomstmaat te vaag, vraagt onderbouwing van de ontbrekende controle-interventie, en vraagt om de populatie preciezer te specificeren.",
+          "vraag": "Het model vraagt hier onder andere een onderbouwing voor een controle-interventie die de student bewust niet gebruikte. Moet een student uitleggen waarom een controle-interventie ontbreekt, of is vermelden dat hij er niet is genoeg?"
+        },
+        {
+          "criterium": "Reflectie op werkwijze en rolontwikkeling",
+          "richting": "Model strenger: de nakijker gaf hier het hoogste niveau, het model één vakje lager.",
+          "nakijker_tekst": "Vier punten van de vier.",
+          "eduface_tekst": "Noemt de reflectie op alle onderdelen aanwezig, maar niet volledig genoeg uitgewerkt om het hoogste niveau te halen.",
+          "vraag": "Het hoogste vakje komt op dit vak bijna nooit voor: op zestien beoordeelde onderdelen één keer, tegenover negen keer bij de nakijker. Ligt de lat voor het hoogste vakje bij jullie op wat er gevraagd wordt, of hoger?"
+        }
+      ],
+      "aannames": [
+        {
+          "kop": "Een beargumenteerde reden wordt een verplicht onderdeel.",
+          "vraag": "Het model vraagt om uit te leggen waarom er geen controle-interventie is, terwijl de student dat alleen hoefde te vermelden. Moet een ontbrekend onderdeel altijd beargumenteerd worden, of mag vermelden dat het bewust ontbreekt genoeg zijn?",
+          "model_zegt": "\"Onderbouw 'geen controle' in PICO, vraag en zoekstrategie.\"",
+          "rubriek_zegt": "De rubriek vraagt op dit niveau dat de PICO-elementen herkenbaar zijn opgenomen, zonder een eis dat een ontbrekend element wordt beargumenteerd.",
+          "nakijker_deed": "Gaf het hoogste aantal punten met als enige toelichting dat de PICO logisch uit de casus volgt. Het ontbreken van een controle-interventie werd niet aangemerkt als tekort."
+        }
+      ],
+      "opdracht": {
+        "los": "De CAT van deze student staat in een apart bestand. Open dat in een tweede venster naast dit bestand, dan kun je de beoordeling en het werk naast elkaar leggen."
+      }
+    },
+    {
+      "label": "Student 2",
+      "casus": "Vitamine D-suppletie bij obesitas",
+      "tabel_voet": "De nakijker-kolom is vertaald uit punten (4, 2 of 0) naar vier vakjes, zie de toelichting bij Student 1. Totaal bij de opleiding: 23 van de 32 punten, geslaagd. Bij reflectie gaf de nakijker 3 punten, een score die niet in haar eigen 4/2/0-schaal past.",
+      "criteria": [
+        {"naam": "Aanleiding klinische vraag (EBP)", "nakijker": "uitstekend", "eduface": "goed"},
+        {"naam": "Onderzoeksvraag (PICO)", "nakijker": "voldoende", "eduface": "voldoende"},
+        {"naam": "Zoekstrategie en weging bronnen", "nakijker": "goed", "eduface": "voldoende"},
+        {"naam": "Analyse in praktijkcontext", "nakijker": "voldoende", "eduface": "voldoende"},
+        {"naam": "Conclusie uit de resultaten", "nakijker": "goed", "eduface": "goed"},
+        {"naam": "Kritische inhoudelijke discussie", "nakijker": "uitstekend", "eduface": "uitstekend"},
+        {"naam": "Klinische relevantie en toepasbaarheid", "nakijker": "uitstekend", "eduface": "goed"},
+        {"naam": "Reflectie op werkwijze en rolontwikkeling", "nakijker": "goed", "eduface": "voldoende"}
+      ],
+      "eindoordeel_nakijker": "Geslaagd, 23 van de 32 punten.",
+      "feedback_nakijker": "Geen los eindoordeel in tekst. De nakijker schrijft per criterium een reactie met + voor wat sterk is en +/- of - voor wat beter kan, geen samenvattende alinea aan het eind.",
+      "feedback_eduface": [
+        {"criterium": "Klinische relevantie en toepasbaarheid", "tekst": "De controlefrequentie en praktische uitvoering blijven onvoldoende eenduidig beschreven."},
+        {"criterium": "Zoekstrategie en weging bronnen", "tekst": "Controleer per zoekstring haakjes, MeSH-termen, filters, hitcijfers en datum."}
+      ],
+      "verschillen": [
+        {
+          "criterium": "Klinische relevantie en toepasbaarheid",
+          "richting": "Model strenger: de nakijker gaf hier het hoogste niveau, het model één vakje lager.",
+          "nakijker_tekst": "Vier punten van de vier, met als toelichting dat er een concrete jaarlijkse controlefrequentie genoemd wordt en dat de aanbeveling aansluit bij bestaande NHG-criteria.",
+          "eduface_tekst": "Noemt de controlefrequentie en de praktische uitvoering onvoldoende eenduidig beschreven.",
+          "vraag": "Het model rekent een genoemde controlefrequentie hier soms aan als tekort, ook wanneer die aansluit bij een bestaande richtlijn. Telt een frequentie met een verwijzing naar de eigen richtlijn als voldoende beschreven, of moet er meer bij staan?"
+        },
+        {
+          "criterium": "Zoekstrategie en weging bronnen",
+          "richting": "Model strenger: de nakijker gaf hier het op een na hoogste niveau, het model één vakje lager.",
+          "nakijker_tekst": "Twee punten, met als toelichting dat er drie artikelen geselecteerd zijn en de keuze onderbouwd wordt.",
+          "eduface_tekst": "Vraagt om per zoekstring de haakjes, MeSH-termen, filters, hitcijfers en zoekdatum te controleren.",
+          "vraag": "Het model vraagt hier om zoekdatum, hitcijfers en filters per zoekactie te vermelden. Is dat iets wat jullie van een student op dit niveau verwachten, of is een herhaalbare zoekstrategie zonder die details voldoende?"
+        }
+      ],
+      "aannames": [
+        {
+          "kop": "Het model toetst een systematic-review-standaard die niet in de opdracht staat.",
+          "vraag": "Het model vraagt bij zoeken en analyseren soms om effectgroottes, betrouwbaarheidsintervallen of een formele risk-of-bias-beoordeling. Hoort dat bij een CAT op dit niveau, of is de kwalitatieve beoordeling uit het eigen beoordelingsformulier betrouwbaarheid/validiteit/generaliseerbaarheid het uitgangspunt?",
+          "model_zegt": "\"Specificeer voor elke lipidenparameter de effectgrootte, het betrouwbaarheidsinterval en de p-waarde\" en \"controleer per zoekstring haakjes, MeSH-termen, filters, hitcijfers en datum\".",
+          "rubriek_zegt": "Het beoordelingsformulier betrouwbaarheid, validiteit en generaliseerbaarheid van de opleiding stelt kwalitatieve vragen: steekproefomvang, representativiteit, dataverzameling, setting, vertekening en actualiteit. Geen effectgrootte, betrouwbaarheidsinterval of formele risk-of-bias-beoordeling.",
+          "nakijker_deed": "Beoordeelde de zoekstrategie en de analyse op basis van dezelfde kwalitatieve criteria als in het eigen beoordelingsformulier, zonder een van deze kwantitatieve maten te noemen of te missen."
+        }
+      ],
+      "opdracht": {
+        "los": "De CAT van deze student staat in een apart bestand. Open dat in een tweede venster naast dit bestand."
+      }
+    }
+  ],
+  "vragen_over_het_vak": [
+    {
+      "vraag": "Het beoordelingsformulier kent drie niveaus per criterium, Eduface is ingesteld op vier vakjes. Sluit de indeling onvoldoende, voldoende, goed en uitstekend aan bij hoe jullie zelf naar dit werk kijken, of past een indeling met minder vakjes beter?",
+      "toelichting": "Raakt alle acht criteria bij beide studenten. Zonder antwoord blijft de nakijker-kolom in dit bestand een vertaling in plaats van een echte uitkomst van de opleiding."
+    },
+    {
+      "vraag": "Reflectie weegt in Eduface nu 16%, de andere zeven criteria elk 12%. In het bronformulier tellen alle acht criteria even zwaar mee. Is dat verschil bewust, of mogen alle acht gelijk gaan wegen?",
+      "toelichting": "Het eindoordeel blijft een handmatige keuze van de nakijker, dus de weging stuurt niets automatisch. Ze bepaalt wel hoe de losse criteriumoordelen worden gelezen."
+    },
+    {
+      "vraag": "Het materiaal dat er nu ligt bevat twee geslaagde inzendingen. Is er een voorbeeld van een student die niet is geslaagd, met de beoordeling erbij, om ook de ondergrens te kunnen toetsen?",
+      "toelichting": "Met alleen geslaagd werk is te zien of het model niet te streng afkeurt, maar niet of het niet te soepel is bij werk dat had moeten zakken."
+    }
+  ],
+  "voetregel": "Breederode Hogeschool &middot; CAT EBP, POH &middot; Eduface testdag"
+}

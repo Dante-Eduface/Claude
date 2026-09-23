@@ -1,0 +1,136 @@
+{
+  "titel": "Eduface testdag",
+  "opleiding": "Breederode Hogeschool",
+  "vak": "CAT diagnostiek, MSc Manuele Therapie",
+  "datum_beoordeling": "december 2025",
+  "notitie": "Dit is het voorbeeldbestand van de skill, gevuld met het echte materiaal van CAT diagnostiek. De Eduface-kolom is de uitgangsversie, van voor de kalibratie. Namen van studenten zijn vervangen door Student 1 en Student 2, de naam van de nakijker staat er nergens in.",
+  "beoordelingsoptie": {
+    "gekozen": "Voldaan of niet voldaan, per rubriekcriterium",
+    "wat_dat_doet": "Het model spreekt zich per criterium uit in twee standen en geeft er feedback bij. Het rekent geen cijfer uit en trekt geen eindoordeel.",
+    "rangorde": ["niet voldaan", "deels voldaan", "voldaan"],
+    "waarschuwing": "Het beoordelingsformulier vinkt binnen een criterium meerdere onderdelen apart af, het model geeft er een oordeel over het hele criterium. Een deel van de verschillen hieronder komt daar vandaan."
+  },
+  "studenten": [
+    {
+      "label": "Student 1",
+      "casus": "Labrumletsel heup, Arlington-test tegenover MRA",
+      "tabel_voet": "Deels voldaan betekent dat de nakijker binnen dat criterium een onderdeel niet heeft aangevinkt. Het model kent die tussenstand niet.",
+      "criteria": [
+        {"naam": "Algemeen", "nakijker": "voldaan", "eduface": "voldaan"},
+        {"naam": "Klinisch scenario", "nakijker": "deels voldaan", "eduface": "voldaan"},
+        {"naam": "Klinische vraagstelling", "nakijker": "voldaan", "eduface": "niet voldaan"},
+        {"naam": "Zoekstrategie", "nakijker": "voldaan", "eduface": "niet voldaan"},
+        {"naam": "Kritische evaluatie kwaliteit", "nakijker": "voldaan", "eduface": "voldaan"},
+        {"naam": "Evidentietabel", "nakijker": "voldaan", "eduface": "voldaan"},
+        {"naam": "Commentaar", "nakijker": "voldaan", "eduface": "voldaan"},
+        {"naam": "Kernconclusie", "nakijker": "voldaan", "eduface": "niet voldaan"}
+      ],
+      "eindoordeel_nakijker": "Voldaan.",
+      "feedback_nakijker": "Hey [naam], deze opdracht heb je afgerond. Je hebt hier en daar wel wat kort door de bocht uitgevoerd. Maar dat is bij deze opdracht nog niet zo'n probleem.",
+      "feedback_eduface": [
+        {"criterium": "Algemeen", "tekst": "Je deed goed werk met de logische opbouw en heldere uitleg van vaktermen."},
+        {"criterium": "Zoekstrategie", "tekst": "Het model noemt de zoekstrategie goed controleerbaar en vraagt daarnaast om een systematische vergelijking tussen de kenmerken van de patiënt en de populatiecriteria van het artikel."},
+        {"criterium": "Kernconclusie", "tekst": "Het model noemt de conclusie te voorwaardelijk en vraagt om een aanbeveling die decisiever is."}
+      ],
+      "verschillen": [
+        {
+          "criterium": "Zoekstrategie",
+          "richting": "Model strenger: de nakijker keurde goed, het model keurt af.",
+          "nakijker_tekst": "Voldaan aangevinkt, zonder geschreven opmerking bij dit criterium.",
+          "eduface_tekst": "Noemt de zoekstrategie zelf goed controleerbaar en vraagt daarnaast om een systematische vergelijking tussen de patiënt en de populatiecriteria van het gekozen artikel.",
+          "vraag": "Het model vraagt om een systematische vergelijking tussen de patiënt en de populatie uit het artikel. Verwachten jullie dat op dit niveau, of is een beargumenteerde keuze voor het gekozen artikel genoeg?"
+        },
+        {
+          "criterium": "Kernconclusie",
+          "richting": "Model strenger: de nakijker keurde goed, het model keurt af.",
+          "nakijker_tekst": "Voldaan aangevinkt. In de eindfeedback staat dat de uitvoering hier en daar kort door de bocht is, zonder gevolg voor het oordeel.",
+          "eduface_tekst": "Noemt de conclusie te voorwaardelijk en vraagt om een decisievere aanbeveling.",
+          "vraag": "Het model leest een conclusie onder voorbehoud als onvoldoende. Mag een kernconclusie bij jullie genuanceerd zijn, zolang er een concrete vervolgstap in staat?"
+        },
+        {
+          "criterium": "Klinisch scenario",
+          "richting": "Model milder: de nakijker liet een onderdeel open, het model keurt goed.",
+          "nakijker_tekst": "Het onderdeel over klinische relevantie en motivatie is niet aangevinkt.",
+          "eduface_tekst": "Beoordeelt het criterium als voldaan en noemt de klinische relevantie niet.",
+          "vraag": "Hier zag de nakijker iets bij de klinische relevantie dat het model niet noemt. Wat was dat, zodat we het kunnen meenemen?"
+        }
+      ],
+      "aannames": [
+        {
+          "kop": "Een gevonden verbeterpunt wordt een onvoldoende.",
+          "vraag": "Het model zet elk verbeterpunt om in een onvoldoende op dat criterium. Waar ligt bij jullie de grens tussen groeifeedback binnen een voldoende en een echte onvoldoende?",
+          "model_zegt": "Op drie criteria noemt het model iets dat beter kan en komt het daarna uit op niet voldaan, ook waar het de uitvoering zelf goed noemt.",
+          "rubriek_zegt": "De rubriek beschrijft per criterium wat voldoende is en zegt niets over hoe zwaar een klein gat weegt.",
+          "nakijker_deed": "Vinkte dezelfde criteria af als voldaan en schreef het verbeterpunt op als groeipunt in de eindfeedback."
+        }
+      ],
+      "opdracht": {
+        "los": "De CAT van deze student staat in een apart bestand. Open dat in een tweede venster naast dit bestand, dan kun je de beoordeling en het werk naast elkaar leggen."
+      }
+    },
+    {
+      "label": "Student 2",
+      "casus": "Lumbale radiculopathie, Slump-test tegenover MRI",
+      "tabel_voet": "Op vier criteria is er geen Eduface-uitkomst. Die zijn niet ingevuld en niet geschat, dus ze tellen niet mee in de vergelijking.",
+      "criteria": [
+        {"naam": "Algemeen", "nakijker": "voldaan", "eduface": "voldaan"},
+        {"naam": "Klinisch scenario", "nakijker": "voldaan", "eduface": "niet voldaan"},
+        {"naam": "Klinische vraagstelling", "nakijker": "voldaan", "eduface": "voldaan"},
+        {"naam": "Zoekstrategie", "nakijker": "voldaan", "eduface": "niet voldaan"},
+        {"naam": "Kritische evaluatie kwaliteit", "nakijker": "niet voldaan", "eduface": "onbekend"},
+        {"naam": "Evidentietabel", "nakijker": "niet voldaan", "eduface": "onbekend"},
+        {"naam": "Commentaar", "nakijker": "deels voldaan", "eduface": "onbekend"},
+        {"naam": "Kernconclusie", "nakijker": "voldaan", "eduface": "onbekend"}
+      ],
+      "eindoordeel_nakijker": "Voldaan, ook met drie criteria die niet voldaan zijn. Het eindoordeel is geen optelsom van de losse criteria.",
+      "feedback_nakijker": "Hi [naam], je hebt een prima CAT geschreven met uitzondering op het methodologisch beoordelen van het hele artikel. Je had echt nog wat beter moeten omschrijven wat de goede en slechte kanten van het artikel waren en of je dus uberhaupt iets kon met de berekening of bevinding.",
+      "feedback_eduface": [
+        {"criterium": "Klinisch scenario", "tekst": "Het model vraagt om een expliciete differentiaaldiagnose en noemt daarbij een vergelijking met perifere zenuwproblematiek en andere oorzaken."},
+        {"criterium": "Zoekstrategie", "tekst": "Het model vraagt om de vijf afgevallen artikelen apart te benoemen, niet alleen het gekozen artikel."}
+      ],
+      "verschillen": [
+        {
+          "criterium": "Klinisch scenario",
+          "richting": "Model strenger: de nakijker keurde goed, het model keurt af.",
+          "nakijker_tekst": "Voldaan aangevinkt. In de eindfeedback gaat het alleen over het methodologisch beoordelen van het artikel.",
+          "eduface_tekst": "Vraagt om een expliciete differentiaaldiagnose, met een vergelijking met perifere zenuwproblematiek en andere oorzaken.",
+          "vraag": "Het model leest hypotheses in de rubriek als meervoud en vraagt om een vergelijking tussen meerdere oorzaken. Verwachten jullie dat ook, of is een goed onderbouwd spoor genoeg?"
+        },
+        {
+          "criterium": "Zoekstrategie",
+          "richting": "Model strenger: de nakijker keurde goed, het model keurt af.",
+          "nakijker_tekst": "Voldaan aangevinkt, zonder geschreven opmerking bij dit criterium.",
+          "eduface_tekst": "Vraagt om de vijf afgevallen artikelen apart te benoemen, naast het artikel dat gekozen is.",
+          "vraag": "Het model vraagt om de afgewezen bronnen erbij. Is dat wat jullie van een student verwachten op dit niveau?"
+        }
+      ],
+      "aannames": [
+        {
+          "kop": "Het zwaarste oordeel van de nakijker valt buiten beeld.",
+          "vraag": "De nakijker keurde de kritische evaluatie en de evidentietabel af, en daar is geen uitkomst van het model naast te leggen. Wat had een student daar volgens jullie moeten laten zien?",
+          "model_zegt": "Voor deze criteria is er geen uitkomst van het model beschikbaar.",
+          "rubriek_zegt": "De rubriek vraagt om een methodologische beoordeling van het hele artikel en om een ingevulde evidentietabel.",
+          "nakijker_deed": "Keurde beide criteria af en schreef in de eindfeedback dat de goede en slechte kanten van het artikel beter beschreven hadden moeten worden."
+        }
+      ],
+      "opdracht": {
+        "los": "De CAT van deze student staat in een apart bestand. Open dat in een tweede venster naast dit bestand."
+      }
+    }
+  ],
+  "vragen_over_het_vak": [
+    {
+      "vraag": "Het model geeft een oordeel over het hele criterium, jullie formulier vinkt er losse onderdelen binnen af. Willen jullie die onderdelen apart terugzien?",
+      "toelichting": "Raakt beide studenten. Het is de verklaring voor de tussenstand deels voldaan die het model niet kent."
+    },
+    {
+      "vraag": "Het onderwijsniveau staat ingesteld op universiteit master, en dit programma is een post-HBO MSc. Welke van de twee sluit het dichtst aan bij wat jullie van een student verwachten?",
+      "toelichting": "De keuze is getest en veranderde geen enkel oordeel. De vraag is wat jullie zelf het meest logisch vinden."
+    },
+    {
+      "vraag": "Het model schrijft ongeveer veertig woorden per opmerking, de nakijker ongeveer acht, vaak in de vorm van een vraag. Welke lengte willen jullie dat een student ziet?",
+      "toelichting": "Dit gaat over toon en niet over het oordeel. Ze zijn los van elkaar in te stellen."
+    }
+  ],
+  "voetregel": "Breederode Hogeschool &middot; CAT diagnostiek &middot; Eduface testdag"
+}
