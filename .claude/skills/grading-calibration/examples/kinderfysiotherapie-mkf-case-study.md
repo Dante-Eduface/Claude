@@ -1,6 +1,6 @@
 # Case study: Master Kinderfysiotherapie (CAT)
 
-Tweede vak waarop `grading-calibration` is losgelaten. **Status: stap 1 t/m 5 gedaan, stap 6 en 7 wachten op de testronde in Eduface.**
+Tweede vak waarop `grading-calibration` is losgelaten. **Status: afgerond op 23-09-2026. 14/14 criteria gelijk aan de docent over twee duo's, en de toon ligt dicht bij de hare.** Eén voorbehoud staat nog open, zie sectie 12.
 
 - **Opleiding:** master Kinderfysiotherapie (MKF), Breederode Hogeschool. Zelfde hogeschool als manuele therapie, andere opleiding en andere docent.
 - **Opdrachttype:** CAT over een onzekerheid of zorgprobleem uit de kinderfysiotherapeutische praktijk, 6 stappen, in een **duo** geschreven, max 1000 woorden, toetscode MKF26-WO1-CAT-1-5. Beoordeeld met voldaan / niet voldaan.
@@ -176,7 +176,44 @@ Nieuw ten opzichte van manuele therapie en vak-specifiek:
 - **criterium-discipline**: beoordeel elk criterium alleen op zijn eigen onderwerp (tegen de lekkage uit sectie 5)
 - inline opmerkingen van gemiddeld acht woorden, bij voorkeur als vraag
 
-## 10. Wat nog moet
+## 10. Resultaat over drie rondes
 
-1. Ivonne vragen om per criterium Voldaan/Niet voldaan plus het eindoordeel per duo. Twee twijfelgevallen expliciet: duo 2's ontbrekende titel, en duo 2's APA-fouten met een verzoek om herstel.
-2. Vier opdrachten opzetten (baseline, rubric, instructies, beide) op de vaste basistekst uit sectie 7, dezelfde twee duo's opnieuw laten beoordelen, en vergelijken op beide assen.
+Twee duo's, zeven criteria, dus 14 oordelen per ronde. "Goed" = gelijk aan het oordeel van de docent, waarbij haar taalregister overal groeifeedback binnen een voldoende is.
+
+| Ronde | Wat er aanstond | Oordeel-as |
+|---|---|---|
+| 1, baseline | ongewijzigde rubric, default modelinstructies | **6/14** |
+| 2 | rubric-variant (criterium 1, 4, 5, 6, 7) plus modelinstructies | **10/14** |
+| 3 | idem, plus caps op criterium 2, 3 en 4 | **14/14** |
+
+Per criterium in de eindronde: alle zeven PASS bij beide duo's.
+
+Wat ronde 2 naar 3 bracht, alle drie in de rubric en geen van de drie in de modelinstructies:
+
+- **criterium 3** (Onderzoeksvraagstelling en -doelstelling) zakte bij beide duo's op de eis van een expliciete doelstelling. Cap: de doelstelling mag blijken uit aanleiding en onderzoeksvraag samen en hoeft geen apart gelabelde doelzin te zijn.
+- **criterium 2** (Onzekerheid) zakte bij duo 1 omdat de AI de onzekerheid als concrete behandelkeuze met dosering wilde. Cap: een inleiding over doelgroep en probleem volstaat, veiligheid en dosering horen bij de conclusie en de implicaties.
+- **criterium 4** (Zoekstrategie) zakte bij duo 2 op mijn eigen cap uit ronde 2, die bevestigend was geformuleerd ("een beschrijving van functie en opbrengst volstaat") en daardoor als eis werd gelezen. Herschreven als ontkenning.
+
+## 11. Toon-as over drie rondes
+
+| | Docent | Ronde 1 | Ronde 2 | Ronde 3 |
+|---|---|---|---|---|
+| Inline opmerkingen, mediaan | 8 woorden | 38 | 9 | **10** |
+| Bevat een vraagteken | 51% | 0% | 58% | **32%** |
+| Algemene feedback boven 50 woorden | n.v.t. | 6/14 | 1/14 | **0/14** |
+| Aanspreekvorm | jullie | je / jouw | jullie | **jullie**, met "je" in 5 van 19 inline opmerkingen |
+
+Twee restjes, allebei cosmetisch: het aandeel vragen zakte van 58% naar 32% terwijl de docent op 51% zit, en in de inline opmerkingen glipt "je" er nog in bij ongeveer een op de vier, terwijl de algemene feedback consequent "jullie" gebruikt.
+
+**Advies: niet repareren.** De modelinstructies zijn door een lossy generatiestap gekomen waarin voor het eerst de Inline-opmerkingen-sectie bleef staan. Opnieuw genereren om "je" te repareren zet dat op het spel, en dat is het zwaarst bevochten deel van de hele kalibratie. De winst is een voornaamwoord, het risico is de hele toon-as.
+
+## 12. Het openstaande voorbehoud
+
+**De docent heeft nergens per criterium Voldaan of Niet voldaan opgeschreven**, en ook geen eindoordeel per duo. De 14/14 is dus gemeten tegen mijn lezing van haar taalregister, niet tegen haar oordeel.
+
+Dat voorbehoud weegt nu zwaarder dan aan het begin. In ronde 1 was het risico dat de AI te streng was, en dan is elke opgeloste onvoldoende winst. Nu alles passeert is het risico gekanteld naar te soepel: als zij op een van de veertien wel Niet voldaan gaf, dan is de rubric daar nu te ruim gemaakt. Twee gevallen om expliciet aan haar voor te leggen:
+
+- duo 2 leverde **geen titel** in, waarop zij schreef "probeer een titel te bedenken die de lading van jullie CAT volledig dekt"
+- duo 2 had echte **APA-fouten** met tweemaal de vraag "willen jullie dit aanpassen?"
+
+Beide klinken als groeifeedback, maar een herstelverzoek kan bij haar net zo goed Niet voldaan betekenen.
