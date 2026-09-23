@@ -1,0 +1,359 @@
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><title>Eduface testdag, MSc Manuele Therapie</title><style>
+@import url("assets/fonts.css");
+
+:root{
+  --navy:#002333; --green-deep:#007b54;
+  --ink-900:#0a2c3b; --ink-700:#2c4a57; --ink-500:#5b7480;
+  --ink-300:#a9bcc4; --ink-200:#cdd9de; --ink-100:#e7eef0; --ink-50:#f3f7f8;
+  --white:#fff;
+  --font-sans:"Inter",system-ui,sans-serif;
+  --font-display:"League Spartan",var(--font-sans);
+}
+
+@page{ size:A4; margin:0 }
+*{ box-sizing:border-box }
+html,body{ margin:0; padding:0 }
+body{
+  font-family:var(--font-sans); color:var(--navy);
+  font-size:9.6pt; line-height:1.45;
+  -webkit-print-color-adjust:exact; print-color-adjust:exact;
+}
+
+.blad{
+  width:210mm; height:297mm; padding:16mm 15mm 11mm;
+  display:flex; flex-direction:column; break-after:page; position:relative;
+}
+.blad:last-child{ break-after:auto }
+
+/* ---- kop ---------------------------------------------------------------- */
+.titel{
+  font-family:var(--font-display); font-weight:700; font-size:19pt;
+  letter-spacing:-.01em; margin:0 0 2mm;
+}
+.naamregel{
+  display:flex; flex-wrap:wrap; gap:0 6mm;
+  font-size:8.6pt; color:var(--ink-700);
+  padding-bottom:2.5mm; border-bottom:1px solid var(--ink-200);
+}
+.naamregel b{ color:var(--navy); font-weight:600 }
+
+.optie{
+  margin-top:3mm; padding:3mm 3.5mm;
+  background:var(--ink-50); border-radius:8px;
+  font-size:8.6pt; line-height:1.4;
+}
+.optie div + div{ margin-top:1.2mm }
+.optie b{ font-weight:600 }
+
+h2{
+  font-family:var(--font-display); font-weight:600; font-size:12pt;
+  margin:6mm 0 2.5mm; letter-spacing:-.005em;
+}
+h2:first-of-type{ margin-top:5mm }
+h3{
+  font-family:var(--font-display); font-weight:600; font-size:10pt;
+  margin:0 0 1.5mm;
+}
+
+/* ---- tabel -------------------------------------------------------------- */
+table{ width:100%; border-collapse:collapse; font-size:9pt }
+th{
+  text-align:left; font-weight:600; font-size:8.2pt;
+  color:var(--ink-700); padding:0 2.5mm 1.8mm 0;
+  border-bottom:1.5px solid var(--navy); vertical-align:bottom;
+}
+td{
+  padding:2mm 2.5mm 2mm 0; border-bottom:1px solid var(--ink-100);
+  vertical-align:top;
+}
+td.c,th.c{ text-align:center; padding-right:0 }
+.crit{ width:44% }
+.gew{ width:8%; color:var(--ink-500) }
+.uit{ width:22% }
+
+tr.verschil td{ background:var(--ink-50) }
+tr.verschil td.crit{ font-weight:600 }
+
+.stand{ font-weight:500 }
+.stand.niet{ color:var(--navy); font-weight:600 }
+.stand.niet::before{ content:"\2715\00a0"; color:var(--ink-500) }
+.stand.deels::before{ content:"\00bd\00a0"; color:var(--ink-500) }
+.eens{ color:var(--green-deep); font-weight:600 }
+.eens::before{
+  content:""; display:inline-block; width:6px; height:6px; border-radius:50%;
+  background:var(--green-deep); margin-right:2mm; vertical-align:middle;
+}
+.milder{ font-weight:600 }
+.milder::before{ content:"\2192\00a0" }
+
+/* ---- totalen ------------------------------------------------------------ */
+.totalen{ display:flex; gap:4mm; margin-top:4mm }
+.totaal{
+  flex:1; padding:3mm 3.5mm; border:1px solid var(--ink-200); border-radius:8px;
+}
+.totaal .cijfer{
+  font-family:var(--font-display); font-weight:700; font-size:16pt;
+  line-height:1.1; display:block;
+}
+.totaal .wat{ font-size:8pt; color:var(--ink-700); margin-top:1mm; display:block }
+
+/* ---- citaat ------------------------------------------------------------- */
+.citaat{
+  border-left:2.5px solid var(--navy); padding:0 0 0 3.5mm;
+  margin:2.5mm 0 0; font-size:9pt; line-height:1.5;
+}
+.detail{ font-size:8.6pt; color:var(--ink-700); margin-top:2mm }
+
+/* ---- feedbackblokken --------------------------------------------------- */
+.fb{ margin-bottom:3.2mm }
+.fb .kop{
+  font-family:var(--font-display); font-weight:600; font-size:9.2pt;
+  margin-bottom:.8mm;
+}
+.fb p{ margin:0; font-size:8.8pt; line-height:1.42 }
+
+/* ---- divergentie / aanname -------------------------------------------- */
+.plek{
+  border:1px solid var(--ink-200); border-radius:10px;
+  padding:3.5mm 4mm; margin-bottom:3.5mm;
+}
+.plek .bovenop{
+  display:flex; justify-content:space-between; align-items:baseline;
+  gap:4mm; margin-bottom:2mm;
+}
+.plek .bovenop h3{ margin:0 }
+.regel{ display:flex; gap:3mm; font-size:8.8pt; margin-top:1.8mm }
+.regel .wie{
+  flex:0 0 26mm; color:var(--ink-700); font-weight:600;
+}
+.regel .wat{ flex:1; line-height:1.42 }
+.regel .wat.leeg{ color:var(--ink-500); font-style:italic }
+.vraag{
+  margin-top:3mm; padding:2.8mm 3.2mm;
+  background:var(--ink-50); border-radius:8px;
+  font-size:9pt; line-height:1.45;
+}
+.vraag b{ font-weight:600 }
+
+/* ---- schrijfruimte ----------------------------------------------------- */
+.lijnen{
+  margin-top:auto; padding-top:3mm;
+  flex:1 1 auto; display:flex; flex-direction:column; min-height:0;
+}
+.lijnen .label{
+  font-size:8pt; color:var(--ink-700); font-weight:600; margin-bottom:2mm;
+}
+.lijnen .veld{
+  flex:1 1 auto;
+  background-image:repeating-linear-gradient(
+    to bottom, transparent 0 28px, var(--ink-200) 28px 29px);
+}
+
+/* ---- voet -------------------------------------------------------------- */
+.voet{
+  position:absolute; left:15mm; right:15mm; bottom:6mm;
+  display:flex; justify-content:space-between;
+  font-size:7.6pt; color:var(--ink-500);
+  padding-top:2mm; border-top:1px solid var(--ink-100);
+}
+
+/* ---- blanco formulier -------------------------------------------------- */
+.leeg-crit td{ padding:2.6mm 2.5mm }
+.vak{
+  display:inline-block; width:5mm; height:5mm;
+  border:1px solid var(--ink-300); border-radius:3px; vertical-align:middle;
+}
+.toelichting{
+  height:11mm;
+  background-image:repeating-linear-gradient(
+    to bottom, transparent 0 20px, var(--ink-200) 20px 21px);
+}
+</style></head><body><section class="blad">
+<div class="titel">Eduface testdag</div>
+<div class="naamregel">
+  <span><b>Opleiding</b> MSc Manuele Therapie</span>
+  <span><b>Vak</b> CAT diagnostiek</span>
+  <span><b>Student</b> Student 1</span>
+  <span><b>Beoordeeld op</b> 9 december 2025</span>
+</div>
+<div class="optie">
+  <div><b>Gekozen</b> voldaan of niet voldaan, per rubriekcriterium</div>
+  <div><b>Wat dat doet</b> Het model spreekt per criterium alleen uit of eraan is voldaan. Het geeft geen kwaliteitsniveau en geen cijfer.</div>
+</div>
+
+<h2>De beoordeling naast elkaar</h2>
+<table>
+<thead><tr><th class="crit">Criterium</th><th class="gew c">Gewicht</th>
+<th class="c">Nakijker</th><th class="c">Eduface</th><th class="uit">Uitkomst</th></tr></thead>
+<tbody><tr><td class="crit">Algemeen</td><td class="gew c">12%</td><td class="c"><span class="stand">voldaan</span></td><td class="c"><span class="stand">voldaan</span></td><td class="uit"><span class="eens">eens</span></td></tr><tr class="verschil"><td class="crit">Klinisch scenario (stap 1)</td><td class="gew c">12%</td><td class="c"><span class="stand deels">deels</span></td><td class="c"><span class="stand">voldaan</span></td><td class="uit"><span class="milder">model milder</span></td></tr><tr><td class="crit">Klinische vraagstelling (stap 2)</td><td class="gew c">12%</td><td class="c"><span class="stand">voldaan</span></td><td class="c"><span class="stand">voldaan</span></td><td class="uit"><span class="eens">eens</span></td></tr><tr><td class="crit">Zoekstrategie (stap 3)</td><td class="gew c">12%</td><td class="c"><span class="stand">voldaan</span></td><td class="c"><span class="stand">voldaan</span></td><td class="uit"><span class="eens">eens</span></td></tr><tr><td class="crit">Kritische evaluatie van kwaliteit (stap 4)</td><td class="gew c">12%</td><td class="c"><span class="stand">voldaan</span></td><td class="c"><span class="stand">voldaan</span></td><td class="uit"><span class="eens">eens</span></td></tr><tr><td class="crit">Evidentietabel (stap 5)</td><td class="gew c">12%</td><td class="c"><span class="stand">voldaan</span></td><td class="c"><span class="stand">voldaan</span></td><td class="uit"><span class="eens">eens</span></td></tr><tr><td class="crit">Commentaar (stap 6)</td><td class="gew c">12%</td><td class="c"><span class="stand">voldaan</span></td><td class="c"><span class="stand">voldaan</span></td><td class="uit"><span class="eens">eens</span></td></tr><tr><td class="crit">Conclusie (stap 7)</td><td class="gew c">16%</td><td class="c"><span class="stand">voldaan</span></td><td class="c"><span class="stand">voldaan</span></td><td class="uit"><span class="eens">eens</span></td></tr></tbody>
+</table>
+
+<div class="totalen">
+  <div class="totaal"><span class="cijfer">7 van 8</span>
+    <span class="wat">voldaan bij de nakijker</span></div>
+  <div class="totaal"><span class="cijfer">8 van 8</span>
+    <span class="wat">voldaan bij Eduface</span></div>
+  <div class="totaal"><span class="cijfer">7 van 8</span>
+    <span class="wat">criteria waarop ze het eens zijn</span></div>
+</div>
+
+<h2>Wat de nakijker schreef</h2>
+<p class="citaat">Hey [...], Deze opdracht heb je afgerond. Je hebt hier en daar wel wat kort door de bocht uitgevoerd. Maar dat is bij deze opdracht nog niet zo&#x27;n probleem.</p>
+<p class="detail">Binnen Klinisch scenario is het onderdeel over de klinische relevantie en de motivatie voor de klinische vraag niet afgevinkt. De overige onderdelen wel. Eindoordeel van de nakijker:
+voldaan. Eindoordeel van Eduface: voldaan.</p>
+
+<div class="lijnen"><div class="label">Aantekeningen</div><div class="veld" style="min-height:32mm"></div></div>
+<div class="voet"><span>Mapje: MSc Manuele Therapie</span><span>pagina 1 van 10</span></div>
+</section><section class="blad">
+<div class="naamregel"><span><b>Feedback van Eduface</b></span>
+<span>CAT diagnostiek</span><span>Student 1</span></div>
+<h2>Per criterium, letterlijk</h2>
+<div class="fb"><div class="kop">1. Algemeen</div><p>Je hebt je CAT logisch opgebouwd, waardoor de redenering goed te volgen is. Maar de tekst is nog niet overal consistent en de overgang van resultaten naar conclusie kan duidelijker. Controleer vaste vaktermen en grammatica, zoals MRA/RMA en labrumletsel. Voeg verbindende zinnen toe die resultaten aan je conclusie koppelen. Ik vindt de feedback wel sterk alleen mist MRA nog een beetje.</p></div><div class="fb"><div class="kop">2. Klinisch scenario (stap 1)</div><p>Je beschrijft de patiënt en haar klachten duidelijk en onderbouwt de hypothese van labrumletsel goed. Maar de presentatie kan nog vloeiender. Formuleer anamnese en onderzoek compacter en sluit af met één zin waarin je uitlegt dat de bevindingen samen de hypothese ondersteunen en de diagnostische vraag motiveren.</p></div><div class="fb"><div class="kop">3. Klinische vraagstelling (stap 2)</div><p>Je hebt een heldere en goed meetbare klinische vraag opgesteld. Maar de onderbouwing van de lage voorkans blijft nog te algemeen. Licht kort toe waarom deze voorkans in de eerstelijn én bij deze patiënt aannemelijk is, en verbind dit niet alleen aan Simpto.nl.</p></div><div class="fb"><div class="kop">4. Zoekstrategie (stap 3)</div><p>Je zoekstrategie is goed navolgbaar en je keuze voor het artikel is logisch gekoppeld aan je patiënt. Maar de toepasbaarheid kan duidelijker. Zet bij de artikelkeuze de publicatiedatum en taal en vergelijk de inclusie- en exclusiecriteria direct met de klachten en voorafkans van jouw patiënt.</p></div><div class="fb"><div class="kop">5. Kritische evaluatie van kwaliteit (stap 4)</div><p>Je hebt de belangrijkste methodologische aandachtspunten helder benoemd en met goede voorbeelden aan de klinische praktijk gekoppeld. Maar het blijft onduidelijk wat het ontbrekende afkappunt betekent voor de betrouwbaarheid van sensitiviteit en specificiteit. Leg dit kort uit en verbind je conclusie daarna expliciet aan de beslissing voor jouw patiënt.</p></div><div class="fb"><div class="kop">6. Evidentietabel (stap 5)</div><p>Je hebt de kengetallen voor de artikelpopulatie en praktijksituatie correct en duidelijk weergegeven; zo wordt de invloed van een lage voorafkans zichtbaar. Maar de berekeningen zijn niet overal controleerbaar, omdat aantallen en percentages door elkaar lopen. Schrijf de tussenstappen consequent uit en vermeld eerst de aantallen, daarna het percentage.</p></div><div class="fb"><div class="kop">7. Commentaar (stap 6)</div><p>Je commentaar koppelt de beperkingen en testkenmerken goed aan deze patiënt. Maar de stap naar de eerstelijns manuele therapiepraktijk kan concreter. Beschrijf wanneer een negatieve test je vervolgbeleid beïnvloedt en formuleer dat de test labrumletsel minder waarschijnlijk maakt, maar niet zelfstandig uitsluit.</p></div><div class="fb"><div class="kop">8. Conclusie (stap 7)</div><p>Je Bottom Line beantwoordt de klinische vraag duidelijk en houdt terecht rekening met de beperkte generaliseerbaarheid. Maar de vervolgstap voor deze patiënt blijft nog te impliciet. Beschrijf concreet dat je geen directe MRA inzet, de patiënt klinisch vervolgt en bij aanhoudende of ernstige klachten herbeoordeelt of verwijst.</p></div>
+<div class="voet"><span>Mapje: MSc Manuele Therapie</span><span>pagina 2 van 10</span></div>
+</section><section class="blad">
+<div class="naamregel"><span><b>Waar het uiteenloopt</b></span>
+<span>CAT diagnostiek</span><span>Student 1</span></div>
+<h2>De plekken met een verschil</h2>
+<div class="plek">
+  <div class="bovenop"><h3>Klinisch scenario (stap 1)</h3>
+    <span class="milder">model milder</span></div>
+  <div class="regel"><div class="wie">Nakijker</div><div class="wat">Het onderdeel over de klinische relevantie en de motivatie voor de klinische vraag is niet afgevinkt. De overige onderdelen van dit criterium wel.</div></div>
+  <div class="regel"><div class="wie">Eduface</div><div class="wat">“Je beschrijft de patiënt en haar klachten duidelijk en onderbouwt de hypothese van labrumletsel goed. Maar de presentatie kan nog vloeiender.” Het model vraagt om een compactere formulering en om één afsluitende zin.</div></div>
+  <div class="regel"><div class="wie">Rubriek</div><div class="wat leeg">De letterlijke rubriektekst van dit onderdeel is hier niet beschikbaar, dus deze regel blijft leeg.</div></div>
+  <div class="vraag">Het model noemt de patiëntpresentatie en de hypothese voldoende en vraagt alleen om een vloeiendere formulering. Wanneer weegt de motivatie voor de klinische vraag bij jullie zwaar genoeg om dit onderdeel niet te laten voldoen?</div>
+</div>
+<div class="lijnen"><div class="label">Aantekeningen</div><div class="veld" style="min-height:26mm"></div></div>
+<div class="voet"><span>Mapje: MSc Manuele Therapie</span><span>pagina 3 van 10</span></div>
+</section><section class="blad">
+<div class="naamregel"><span><b>Aannames van het model</b></span>
+<span>CAT diagnostiek</span><span>Student 1</span></div>
+<h2>Wat het model aanneemt, en wat jullie willen</h2>
+<div class="plek">
+  <h3>Het model beoordeelt een criterium als één geheel</h3>
+  <div class="regel"><div class="wie">Eduface zegt</div><div class="wat">Op Klinisch scenario geeft het model één uitkomst voor het hele criterium.</div></div>
+  <div class="regel"><div class="wie">De rubriek zegt</div><div class="wat">Het beoordelingsformulier splitst dit criterium in meerdere onderdelen, elk met een eigen vinkje.</div></div>
+  <div class="regel"><div class="wie">In de praktijk</div><div class="wat">De nakijker vinkte één van die onderdelen niet af en de andere wel.</div></div>
+  <div class="vraag">Het model geeft per criterium één uitkomst en kan een los onderdeel daarbinnen niet apart laten vervallen. Willen jullie de onderdelen apart beoordeeld zien, of is één uitkomst per criterium genoeg?</div>
+</div><div class="plek">
+  <h3>Het model geeft de aangeleverde feedback terug</h3>
+  <div class="regel"><div class="wie">Eduface zegt</div><div class="wat">De feedback op Algemeen eindigt met: “Ik vindt de feedback wel sterk alleen mist MRA nog een beetje.” Dat is een zin in de eerste persoon over feedback, niet over het werk van de student.</div></div>
+  <div class="regel"><div class="wie">De rubriek zegt</div><div class="wat">Het criterium Algemeen gaat over taalgebruik, samenhang en verwijzingen.</div></div>
+  <div class="regel"><div class="wie">In de praktijk</div><div class="wat">Het bestand dat aan het model is aangeleverd bevatte het commentaar van de nakijker al.</div></div>
+  <div class="vraag">Dit is een bevinding over het model: het neemt commentaar over dat al in het document staat. Wij leveren voor de testperiode de schone versie aan, en de vraag is of jullie willen dat het model bestaand commentaar juist wel meeneemt of juist negeert.</div>
+</div>
+<div class="lijnen"><div class="label">Antwoorden en aanvullingen</div><div class="veld" style="min-height:44mm"></div></div>
+<div class="voet"><span>Mapje: MSc Manuele Therapie</span><span>pagina 4 van 10</span></div>
+</section><section class="blad">
+
+<div class="naamregel">
+  <span><b>Opleiding</b> MSc Manuele Therapie</span>
+  <span><b>Vak</b> CAT diagnostiek</span>
+  <span><b>Student</b> Student 2</span>
+  <span><b>Beoordeeld op</b> 10 december 2025</span>
+</div>
+<div class="optie">
+  <div><b>Gekozen</b> voldaan of niet voldaan, per rubriekcriterium</div>
+  <div><b>Wat dat doet</b> Het model spreekt per criterium alleen uit of eraan is voldaan. Het geeft geen kwaliteitsniveau en geen cijfer.</div>
+</div>
+
+<h2>De beoordeling naast elkaar</h2>
+<table>
+<thead><tr><th class="crit">Criterium</th><th class="gew c">Gewicht</th>
+<th class="c">Nakijker</th><th class="c">Eduface</th><th class="uit">Uitkomst</th></tr></thead>
+<tbody><tr><td class="crit">Algemeen</td><td class="gew c">12%</td><td class="c"><span class="stand">voldaan</span></td><td class="c"><span class="stand">voldaan</span></td><td class="uit"><span class="eens">eens</span></td></tr><tr><td class="crit">Klinisch scenario (stap 1)</td><td class="gew c">12%</td><td class="c"><span class="stand">voldaan</span></td><td class="c"><span class="stand">voldaan</span></td><td class="uit"><span class="eens">eens</span></td></tr><tr><td class="crit">Klinische vraagstelling (stap 2)</td><td class="gew c">12%</td><td class="c"><span class="stand">voldaan</span></td><td class="c"><span class="stand">voldaan</span></td><td class="uit"><span class="eens">eens</span></td></tr><tr><td class="crit">Zoekstrategie (stap 3)</td><td class="gew c">12%</td><td class="c"><span class="stand">voldaan</span></td><td class="c"><span class="stand">voldaan</span></td><td class="uit"><span class="eens">eens</span></td></tr><tr class="verschil"><td class="crit">Kritische evaluatie van kwaliteit (stap 4)</td><td class="gew c">12%</td><td class="c"><span class="stand niet">niet voldaan</span></td><td class="c"><span class="stand">voldaan</span></td><td class="uit"><span class="milder">model milder</span></td></tr><tr class="verschil"><td class="crit">Evidentietabel (stap 5)</td><td class="gew c">12%</td><td class="c"><span class="stand niet">niet voldaan</span></td><td class="c"><span class="stand">voldaan</span></td><td class="uit"><span class="milder">model milder</span></td></tr><tr class="verschil"><td class="crit">Commentaar (stap 6)</td><td class="gew c">12%</td><td class="c"><span class="stand deels">deels</span></td><td class="c"><span class="stand">voldaan</span></td><td class="uit"><span class="milder">model milder</span></td></tr><tr><td class="crit">Conclusie (stap 7)</td><td class="gew c">16%</td><td class="c"><span class="stand">voldaan</span></td><td class="c"><span class="stand">voldaan</span></td><td class="uit"><span class="eens">eens</span></td></tr></tbody>
+</table>
+
+<div class="totalen">
+  <div class="totaal"><span class="cijfer">5 van 8</span>
+    <span class="wat">voldaan bij de nakijker</span></div>
+  <div class="totaal"><span class="cijfer">8 van 8</span>
+    <span class="wat">voldaan bij Eduface</span></div>
+  <div class="totaal"><span class="cijfer">5 van 8</span>
+    <span class="wat">criteria waarop ze het eens zijn</span></div>
+</div>
+
+<h2>Wat de nakijker schreef</h2>
+<p class="citaat">Hi [...], Je hebt een prima CAT geschreven met uitzondering op het methodologisch beoordelen van het hele artikel. Je had echt nog wat beter moeten omschrijven wat de goede en slechte kanten van het artikel waren en of je dus uberhaupt iets kon met de berekening/bevinding.</p>
+<p class="detail">Kritische evaluatie van kwaliteit en Evidentietabel zijn op beide onderdelen niet afgevinkt. Bij Commentaar is de helft van de onderdelen afgevinkt. Het eindoordeel is voldaan. Eindoordeel van de nakijker:
+voldaan. Eindoordeel van Eduface: voldaan.</p>
+
+<div class="lijnen"><div class="label">Aantekeningen</div><div class="veld" style="min-height:32mm"></div></div>
+<div class="voet"><span>Mapje: MSc Manuele Therapie</span><span>pagina 5 van 10</span></div>
+</section><section class="blad">
+<div class="naamregel"><span><b>Feedback van Eduface</b></span>
+<span>CAT diagnostiek</span><span>Student 2</span></div>
+<h2>Per criterium, letterlijk</h2>
+<div class="fb"><div class="kop">1. Algemeen</div><p>Je deed goed werk met de duidelijke opbouw van patiëntsituatie naar klinische vraag, onderzoeksresultaten en conclusie. Maar taalfouten en een onrustige weergave van de zoekstrategie en tabellen maken het lastiger om je redenering te volgen. Corrigeer spelling en vaktermen, zoals ‘symptomen’ en ‘magnetic resonance imaging’, en maak de tabellen overzichtelijk en consistent.</p></div><div class="fb"><div class="kop">2. Klinisch scenario (stap 1)</div><p>Je patiëntpresentatie is kort en duidelijk en leidt logisch naar de hypothese van lumbale radiculopathie. Maar de klinische redenering kan nog scherper. Koppel de belangrijkste bevindingen direct aan de hypothese en vervang ‘spraken’ door ‘sprake’ voor een professionelere formulering.</p></div><div class="fb"><div class="kop">3. Klinische vraagstelling (stap 2)</div><p>Je hebt een duidelijke, meetbare klinische vraag opgesteld met alle belangrijke onderdelen en een onderbouwde prior-kans. Maar de afkorting voor de uitkomstmaat is niet overal hetzelfde. Gebruik consequent ‘PVW’ in de hele CAT, zodat je berekeningen en conclusies helder blijven.</p></div><div class="fb"><div class="kop">4. Zoekstrategie (stap 3)</div><p>Je hebt de zoekstrategie en de koppeling tussen artikel, patiënt en inclusiecriteria duidelijk uitgewerkt. Maar de zoekactie is nog niet goed controleerbaar. Noteer de zoekdatum en database en controleer de zoekregistratie op vervormde termen, zodat iemand je aanpak kan herhalen.</p></div><div class="fb"><div class="kop">5. Kritische evaluatie van kwaliteit (stap 4)</div><p>Je beoordeelt de methodologische kwaliteit zorgvuldig en benoemt zowel sterke punten als relevante beperkingen. Maar de gevolgen daarvan voor je conclusie blijven nog wat onduidelijk. Leg per belangrijkste beperking kort uit wat dit betekent voor de validiteit van het onderzoek en maak duidelijk onderscheid tussen een methodologisch probleem en beperkte toepasbaarheid in de eerstelijn.</p></div><div class="fb"><div class="kop">6. Evidentietabel (stap 5)</div><p>Je hebt de diagnostische uitkomsten helder uitgewerkt en de berekeningen goed navolgbaar gemaakt. Maar de notatie van formules en afrondingen is nog niet overal gelijk. Noteer de berekeningen op dezelfde manier en kies één vaste afronding, zodat de uitkomsten intern consistent en eenvoudig te controleren zijn.</p></div><div class="fb"><div class="kop">7. Commentaar (stap 6)</div><p>Je koppelt de onderzoekspopulatie goed aan de patiënt en gebruikt de PVW en NVW passend voor de klinische interpretatie. Maar de methodologische beperkingen mogen concreter. Licht toe hoe de onbekende testvolgorde en de twee niet-toegewezen deelnemers de betrouwbaarheid en toepasbaarheid voor deze patiënt beïnvloeden.</p></div><div class="fb"><div class="kop">8. Conclusie (stap 7)</div><p>Je Bottom line beantwoordt de klinische vraag helder en koppelt de testuitslag goed aan de praktijk. Maar de concrete vervolgstap ontbreekt nog. Voeg toe wanneer je de patiënt herbeoordeelt en wanneer verwijzing of MRI nodig is bij aanhoudende verdenking.</p></div>
+<div class="voet"><span>Mapje: MSc Manuele Therapie</span><span>pagina 6 van 10</span></div>
+</section><section class="blad">
+<div class="naamregel"><span><b>Waar het uiteenloopt</b></span>
+<span>CAT diagnostiek</span><span>Student 2</span></div>
+<h2>De plekken met een verschil</h2>
+<div class="plek">
+  <div class="bovenop"><h3>Kritische evaluatie van kwaliteit (stap 4)</h3>
+    <span class="milder">model milder</span></div>
+  <div class="regel"><div class="wie">Nakijker</div><div class="wat">Beide onderdelen niet afgevinkt. Uit de eindfeedback: “Je had echt nog wat beter moeten omschrijven wat de goede en slechte kanten van het artikel waren en of je dus uberhaupt iets kon met de berekening/bevinding.”</div></div>
+  <div class="regel"><div class="wie">Eduface</div><div class="wat">“Je beoordeelt de methodologische kwaliteit zorgvuldig en benoemt zowel sterke punten als relevante beperkingen.” Het model vraagt daarna om de gevolgen voor de conclusie.</div></div>
+  <div class="regel"><div class="wie">Rubriek</div><div class="wat leeg">De letterlijke rubriektekst van dit criterium is hier niet beschikbaar, dus deze regel blijft leeg.</div></div>
+  <div class="vraag">Het model noemt hier precies datgene voldoende wat in deze beoordeling niet is afgevinkt. Hier zag de nakijker iets dat het model niet noemt: wat was dat, zodat we het kunnen meenemen?</div>
+</div><div class="plek">
+  <div class="bovenop"><h3>Evidentietabel (stap 5)</h3>
+    <span class="milder">model milder</span></div>
+  <div class="regel"><div class="wie">Nakijker</div><div class="wat">Beide onderdelen niet afgevinkt.</div></div>
+  <div class="regel"><div class="wie">Eduface</div><div class="wat">“Je hebt de diagnostische uitkomsten helder uitgewerkt en de berekeningen goed navolgbaar gemaakt. Maar de notatie van formules en afrondingen is nog niet overal gelijk.” Het model behandelt de notatie als een verbeterpunt binnen een voldoende.</div></div>
+  <div class="regel"><div class="wie">Rubriek</div><div class="wat leeg">De letterlijke rubriektekst van dit criterium is hier niet beschikbaar, dus deze regel blijft leeg.</div></div>
+  <div class="vraag">Het model ziet de notatie van formules en afrondingen als een verbeterpunt en komt op voldaan. Waar ligt voor jullie de grens waarop dit onderdeel niet meer voldoet?</div>
+</div><div class="plek">
+  <div class="bovenop"><h3>Commentaar (stap 6)</h3>
+    <span class="milder">model milder</span></div>
+  <div class="regel"><div class="wie">Nakijker</div><div class="wat">De helft van de onderdelen afgevinkt.</div></div>
+  <div class="regel"><div class="wie">Eduface</div><div class="wat">“Je koppelt de onderzoekspopulatie goed aan de patiënt en gebruikt de PVW en NVW passend voor de klinische interpretatie. Maar de methodologische beperkingen mogen concreter.” Het model geeft één uitkomst voor het hele criterium.</div></div>
+  <div class="regel"><div class="wie">Rubriek</div><div class="wat leeg">De letterlijke rubriektekst van dit criterium is hier niet beschikbaar, dus deze regel blijft leeg.</div></div>
+  <div class="vraag">Het model geeft één uitkomst voor dit criterium en komt op voldaan. In deze beoordeling is de helft van de onderdelen afgevinkt: willen jullie die onderdelen apart beoordeeld zien?</div>
+</div>
+<div class="lijnen"><div class="label">Aantekeningen</div><div class="veld" style="min-height:26mm"></div></div>
+<div class="voet"><span>Mapje: MSc Manuele Therapie</span><span>pagina 7 van 10</span></div>
+</section><section class="blad">
+<div class="naamregel"><span><b>Aannames van het model</b></span>
+<span>CAT diagnostiek</span><span>Student 2</span></div>
+<h2>Wat het model aanneemt, en wat jullie willen</h2>
+<div class="plek">
+  <h3>Het model streept een gevonden punt weg tegen de rest</h3>
+  <div class="regel"><div class="wie">Eduface zegt</div><div class="wat">Op drie criteria noemt het model een verbeterpunt en komt het toch op voldaan.</div></div>
+  <div class="regel"><div class="wie">De rubriek zegt</div><div class="wat">Het formulier kent per onderdeel twee standen en geen tussenstand.</div></div>
+  <div class="regel"><div class="wie">In de praktijk</div><div class="wat">Op diezelfde drie criteria is niet afgevinkt, terwijl het eindoordeel voldaan is.</div></div>
+  <div class="vraag">Het model behandelt een gevonden verbeterpunt als groeifeedback binnen een voldoende. Willen jullie dat een gevonden punt op criteriumniveau zwaarder weegt, en zo ja op welke van de drie?</div>
+</div><div class="plek">
+  <h3>Het model en het eindoordeel staan los van elkaar</h3>
+  <div class="regel"><div class="wie">Eduface zegt</div><div class="wat">Het model komt op alle acht criteria op voldaan en geeft als totaal voldaan.</div></div>
+  <div class="regel"><div class="wie">De rubriek zegt</div><div class="wat">Het eindoordeel is een eigen keuze op het formulier en geen optelsom van de criteria.</div></div>
+  <div class="regel"><div class="wie">In de praktijk</div><div class="wat">Drie criteria zijn niet of deels afgevinkt en het eindoordeel is voldaan.</div></div>
+  <div class="vraag">In deze beoordeling leidt een niet afgevinkt criterium niet tot een onvoldoende eindoordeel. Willen jullie dat het model die twee lagen ook los houdt, of dat het bij het eindoordeel meeweegt?</div>
+</div>
+<div class="lijnen"><div class="label">Antwoorden en aanvullingen</div><div class="veld" style="min-height:44mm"></div></div>
+<div class="voet"><span>Mapje: MSc Manuele Therapie</span><span>pagina 8 van 10</span></div>
+</section><section class="blad">
+<div class="naamregel"><span><b>Beoordelingsformulier</b></span>
+<span>Master Kinderfysiotherapie</span><span>CAT</span>
+<span><b>Student</b> ................</span></div>
+<div class="optie"><div><b>Gekozen</b> voldaan of niet voldaan, per rubriekcriterium</div></div>
+<h2>Per criterium</h2>
+<table>
+<thead><tr><th class="crit">Criterium</th><th class="c">voldaan</th><th class="c">niet voldaan</th><th>Toelichting</th></tr></thead>
+<tbody><tr class="leeg-crit"><td class="crit">1. Algemeen</td><td class="c"><span class="vak"></span></td><td class="c"><span class="vak"></span></td><td><div class="toelichting"></div></td></tr><tr class="leeg-crit"><td class="crit">2. Onzekerheid in de kinderfysiotherapeutische praktijk</td><td class="c"><span class="vak"></span></td><td class="c"><span class="vak"></span></td><td><div class="toelichting"></div></td></tr><tr class="leeg-crit"><td class="crit">3. Onderzoeksvraagstelling en -doelstelling</td><td class="c"><span class="vak"></span></td><td class="c"><span class="vak"></span></td><td><div class="toelichting"></div></td></tr><tr class="leeg-crit"><td class="crit">4. Zoekstrategie en scopesearch</td><td class="c"><span class="vak"></span></td><td class="c"><span class="vak"></span></td><td><div class="toelichting"></div></td></tr><tr class="leeg-crit"><td class="crit">5. Beoordelen van de kwaliteit van artikelen</td><td class="c"><span class="vak"></span></td><td class="c"><span class="vak"></span></td><td><div class="toelichting"></div></td></tr><tr class="leeg-crit"><td class="crit">6. Conclusies en aanbevelingen</td><td class="c"><span class="vak"></span></td><td class="c"><span class="vak"></span></td><td><div class="toelichting"></div></td></tr><tr class="leeg-crit"><td class="crit">7. Implicaties voor de kinderfysiotherapiepraktijk</td><td class="c"><span class="vak"></span></td><td class="c"><span class="vak"></span></td><td><div class="toelichting"></div></td></tr></tbody>
+</table>
+<div class="lijnen"><div class="label">Opmerkingen over het geheel</div><div class="veld" style="min-height:22mm"></div></div>
+<div class="voet"><span>Mapje: MSc Manuele Therapie</span><span>pagina 9 van 10</span></div>
+</section><section class="blad">
+<div class="naamregel"><span><b>Beoordelingsformulier</b></span>
+<span>Praktijkondersteuner Huisartsenzorg</span><span>CAT</span>
+<span><b>Student</b> ................</span></div>
+<div class="optie"><div><b>Gekozen</b> onvoldoende, voldoende, goed of uitstekend, per rubriekcriterium</div></div>
+<h2>Per criterium</h2>
+<table>
+<thead><tr><th class="crit">Criterium</th><th class="c">onvoldoende</th><th class="c">voldoende</th><th class="c">goed</th><th class="c">uitstekend</th><th>Toelichting</th></tr></thead>
+<tbody><tr class="leeg-crit"><td class="crit">1. Beschrijving van de aanleiding van de klinische vraag vanuit het EBP-principe</td><td class="c"><span class="vak"></span></td><td class="c"><span class="vak"></span></td><td class="c"><span class="vak"></span></td><td class="c"><span class="vak"></span></td><td><div class="toelichting"></div></td></tr><tr class="leeg-crit"><td class="crit">2. Beschrijving van een eenduidige en methodologische onderzoeksvraag op basis van het PICO-concept</td><td class="c"><span class="vak"></span></td><td class="c"><span class="vak"></span></td><td class="c"><span class="vak"></span></td><td class="c"><span class="vak"></span></td><td><div class="toelichting"></div></td></tr><tr class="leeg-crit"><td class="crit">3. Gebruik van wetenschappelijke databanken en professionele weging van gevonden informatie</td><td class="c"><span class="vak"></span></td><td class="c"><span class="vak"></span></td><td class="c"><span class="vak"></span></td><td class="c"><span class="vak"></span></td><td><div class="toelichting"></div></td></tr><tr class="leeg-crit"><td class="crit">4. Analyse van onderzoeksresultaten binnen de context van het praktijkprobleem</td><td class="c"><span class="vak"></span></td><td class="c"><span class="vak"></span></td><td class="c"><span class="vak"></span></td><td class="c"><span class="vak"></span></td><td><div class="toelichting"></div></td></tr><tr class="leeg-crit"><td class="crit">5. Formulering van een conclusie vanuit de verkregen resultaten</td><td class="c"><span class="vak"></span></td><td class="c"><span class="vak"></span></td><td class="c"><span class="vak"></span></td><td class="c"><span class="vak"></span></td><td><div class="toelichting"></div></td></tr><tr class="leeg-crit"><td class="crit">6. Kritische inhoudelijke discussie</td><td class="c"><span class="vak"></span></td><td class="c"><span class="vak"></span></td><td class="c"><span class="vak"></span></td><td class="c"><span class="vak"></span></td><td><div class="toelichting"></div></td></tr><tr class="leeg-crit"><td class="crit">7. Klinische relevantie en toepasbaarheid van bevindingen en resultaten</td><td class="c"><span class="vak"></span></td><td class="c"><span class="vak"></span></td><td class="c"><span class="vak"></span></td><td class="c"><span class="vak"></span></td><td><div class="toelichting"></div></td></tr><tr class="leeg-crit"><td class="crit">8. Reflectie op werkwijze, resultaten en eigen professionele rolontwikkeling</td><td class="c"><span class="vak"></span></td><td class="c"><span class="vak"></span></td><td class="c"><span class="vak"></span></td><td class="c"><span class="vak"></span></td><td><div class="toelichting"></div></td></tr></tbody>
+</table>
+<div class="lijnen"><div class="label">Opmerkingen over het geheel</div><div class="veld" style="min-height:22mm"></div></div>
+<div class="voet"><span>Mapje: MSc Manuele Therapie</span><span>pagina 10 van 10</span></div>
+</section></body></html>
