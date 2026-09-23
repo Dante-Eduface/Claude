@@ -1,6 +1,6 @@
 # Open vragen
 
-_Aangelegd 19-09-2026, bijgewerkt 20-09-2026._
+_Aangelegd 19-09-2026, bijgewerkt 23-09-2026._
 
 De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat is een vraag die ik **niet zelf mag invullen**.
 
@@ -25,6 +25,7 @@ De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat 
 | W5 | Na twee weken deep work: welk weektarget zetten we vast? | Het schema staat op 28 uur. De eerste twee weken zijn een nulmeting. | Vanaf 03-10-2026 |
 | P11 | Wordt de vaardigheid van dit jaar "een bericht schrijven waar iemand op reageert"? | Dat volgt uit A5: als de maat geboekte gesprekken is, is dat de vaardigheid die hem bepaalt. | 19-09-2026 |
 | G15 | De actuele standen van je potjes. Je levert hier een nieuw bestand voor. | `Context/financien.md` noemt bewust geen bedragen tot dat er is. | 19-09-2026 |
+| W6 | **SHIFT naar de cloud: nieuwe aparte GitHub-repo aanmaken, of dit een cloud-sessie op deze hoofdrepo laten zijn?** De opdracht van 23-09-2026 ging uit van een lokale Mac-map met een losse `projects/shift/`-repo zonder remote, en een hoofdrepo die nooit gepusht wordt. Vanuit de cloud-sessie bleek: deze hoofdrepo (`Dante-Eduface/Claude`) staat al op GitHub, en er is geen aparte `projects/shift/`-map of -repo. Alle SHIFT-bestanden (skills, agent 3, scripts, `GTM/ICP/shift/`) zitten direct in deze repo, samen met Personal/, Decisions/ en de GTM-deals. | Een cloud-workflow met secrets erin scopen op deze ene repo betekent dat een lek in die workflow in theorie bij je hele context kan, niet alleen bij SHIFT. Een aparte repo isoleert dat, zoals de opdracht ook leek te willen. Ik heb niets aangemaakt of gepusht in afwachting van je keuze. | 23-09-2026 |
 
 ## Later, geen vraag maar een richting
 
