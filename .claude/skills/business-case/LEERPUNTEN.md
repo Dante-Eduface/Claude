@@ -29,4 +29,5 @@ Feedback die een schakel aanwijst kan ik verwerken. "Dit is niet goed" niet: dan
 
 ## Log
 
-- [2026-09-24] algemeen: de skill maakt geen onderscheid tussen vragen voor een mail vooraf (zodat iemand info kan opzoeken en zich voorbereiden) en vragen live in de meeting. Die vragen vragen een andere formulering. | Formulering | Regeltekst voorgelegd aan Dante, wacht op akkoord.
+- [2026-09-24] algemeen: de skill maakt geen onderscheid tussen vragen voor een mail vooraf (zodat iemand info kan opzoeken en zich voorbereiden) en vragen live in de meeting. Die vragen vragen een andere formulering. | Formulering | Akkoord 24-09-2026, met twee aanpassingen van Dante: geen maximumaantal vragen (het aantal volgt uit de fase en hoe warm de persoon is), en de output in zijn taal. In SKILL.md stap 5 gezet.
+- [2026-09-24] test: de output kwam in het Engels terwijl Dante Nederlands schreef. | Formulering | Oorzaak: de regel "tegen een Engelstalige prospect in het Engels" en de Engelse voorbeelden. Taalregel toegevoegd aan SKILL.md, voorbeelden nu in het Nederlands.
