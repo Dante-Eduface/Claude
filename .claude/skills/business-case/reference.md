@@ -112,6 +112,12 @@ _Laatst bijgewerkt: JJJJ-MM-DD. Bronnen: <welke transcripts, mails, Close-items>
 | Metric | Waarde | Herkomst | Ladder | Sterker door |
 
 ## Vragen voor het volgende gesprek
+_Aantal: <één zin waarom dit aantal, op basis van fase en hoe warm de persoon is>._
+
+### Mail vooraf (genummerd, kort)
+1. <directe vraag> , <halve zin waarom> , <bij wie het vermoedelijk ligt>
+
+### Live in de meeting
 **[nu]** <vraag in de spreektaal van het gesprek>
   gat: <welk gat dit dicht>
   anker: <citaat of feit, bron>

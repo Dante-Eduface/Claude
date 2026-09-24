@@ -29,3 +29,4 @@ Feedback die een schakel aanwijst kan ik verwerken. "Dit is niet goed" niet: dan
 
 ## Log
 
+- [2026-09-24] academica: vragen niet gesplitst in mail vooraf en live, geen onderbouwing van het aantal, en Engelse labels in de toelichting | Formulering / Timing | Dante heeft zelf de regels voor kanaal, aantal en taal geschreven; overgenomen in SKILL.md stap 5 en het format in reference.md. Run Academica opnieuw ingedeeld.

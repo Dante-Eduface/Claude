@@ -73,50 +73,40 @@ _Laatst bijgewerkt: 2026-09-24. Bronnen: transcript discovery 24-09-2026 (Wispr 
 | Kosten nieuwe nakijker (BKE + herbeoordeling) | onbekend, "kost heel veel geld" | hun oordeel, zonder getal | UNKNOWN | Uren per nieuwe nakijker × aantal nieuwe per jaar. |
 
 ## Vragen voor het volgende gesprek (donderdag 1 oktober, businesscase samen maken)
+_Aantal: vier cijfers per mail en vier vragen live. Marjolein is een warme champion die zelf cijfers deelt en zelf ideeën aandraagt, maar ze vroeg om tempo en zit vol, dus alleen wat de businesscase donderdag echt nodig heeft. Budget en besluitvorming komen later._
 
-**[nu]** "Voor die eerste 150 studenten: over welke opleidingen hebben we het dan, en hoeveel opdrachten leveren ze per jaar in? Kun je dat uit NEO halen?"
-  gat: scope en volume (blok 2)
-  anker: *"één per module... de ene opleiding heeft 7 modules in de 2 jaar, de andere heeft er 10"* (24-09)
-  wie weet het: Marjolein, of de opleidingscoördinatoren of het LMS-beheer van NEO. Doorvraag: "Wie kan die export voor ons trekken?"
-  door: "Hoeveel daarvan komen terug als herkansing?"
+### Mail vooraf (in de vervolgmail)
+1. Hoeveel schriftelijke opdrachten kijken jullie per jaar na voor die eerste 150 studenten, en binnen welke opleidingen? Dan rekenen we met jullie echte volume. Mogelijk te halen uit NEO LMS.
+   gat: scope en volume (blok 2). anker: *"één per module... 7 modules in de 2 jaar, de andere heeft er 10"* (24-09)
+2. Hoeveel uur rekent jullie normering voor het nakijken van één module-opdracht, en voor een formatieve ronde? Dat is de basis voor de tijdwinst. Staat mogelijk in jullie taakbelastingsmodel.
+   gat: minuten per opdracht (blok 2). anker: *"een deel van je baan is uitvoer: training geven, nakijken"* (24-09)
+3. Hoeveel nieuwe nakijkers deden vorig jaar het BKE-traject, en hoeveel uur begeleiding en herbeoordeling zit er per nakijker in? Zo nemen we de inwerkkosten mee.
+   gat: kosten inwerken (blok 2 en 4). anker: *"omdat we het persoonlijk doen, kost het gewoon veel geld. Want het zijn gewoon uren."* (24-09)
+4. Hoe lang duurt een kalibratiesessie, en met hoeveel mensen? Dan kan ik uitrekenen wat Eduface daar scheelt.
+   gat: kalibratie-uren (blok 2), plus jouw toezegging uit het gesprek. anker: *"sowieso twee keer per jaar"* (24-09)
 
-**[nu]** "Hoeveel uur staat er in jullie normering voor het nakijken van één module-opdracht van 3.000 woorden, en hoeveel voor een formatieve ronde?"
-  gat: minuten per opdracht (blok 2), het belangrijkste ontbrekende getal
-  anker: *"een deel van je baan is uitvoer: training geven, nakijken"* (24-09)
-  wie weet het: Marjolein, of het taakbelastingsmodel bij HR. Doorvraag: "Staat dat ergens vast, of wie kan dat opzoeken?"
-  door: "En hoe vaak loopt het in de praktijk uit boven die norm?"
+### Live in de meeting
+**[nu]** "Je noemde [uren uit antwoord 2] per opdracht. Wat gebeurt er in een blok waarin je te weinig nakijkers hebt?"
+  gat: pijn kwantificeren (blok 1), met het mailantwoord als anker
+  anker: *"waar haal je die competente mensen vandaan?"* (24-09)
+  door: "Wat heeft dat vorig jaar gekost, in uren of in uitgestelde cijfers?"
 
-**[nu]** "Hoeveel nieuwe nakijkers hebben het BKE-traject vorig jaar doorlopen, en hoeveel uur kost het jullie om één nakijker zover te krijgen, met de herbeoordeling erbij?"
-  gat: kosten van het inwerken (blok 2 en 4)
-  anker: *"dat is tijdrovend, kost heel veel geld"* en *"omdat we het persoonlijk doen, kost het gewoon veel geld. Want het zijn gewoon uren."* (24-09)
-  wie weet het: Marjolein, of de kwaliteitsmanager.
-  door: "Wat gebeurt er als je in een blok te weinig nakijkers hebt?"
-
-**[nu]** "Hoe lang duurt zo'n kalibratiesessie, en met hoeveel mensen zitten jullie dan aan tafel?"
-  gat: kalibratie-uren (blok 2), en jouw toezegging over hoeveel tijd Eduface scheelt
-  anker: *"sowieso twee keer per jaar"* (24-09)
-  wie weet het: Marjolein.
-
-**[nu]** "Je noemde dat consistentie van beoordeling bij de nieuwe accreditaties nog rammelt. Staat er iets over in het laatste NVAO-rapport of in jullie kwaliteitsplan?"
+**[nu]** "Je zei dat consistentie van beoordelen bij de nieuwe accreditaties nog rammelt. Waar zie je dat nu aan?"
   gat: prioriteit uit hun eigen document (blok 3)
   anker: *"daar rammelt het nog wel op, vooral consistentie van beoordeling"* (24-09)
-  wie weet het: de kwaliteitsmanager (Sylvia Peters, niet bevestigd) of de examencommissie.
-
-**[nu]** "Als het MT hiernaar kijkt, waar kijken ze dan het eerst naar, en hoe zijn eerdere investeringen zoals Progress daar besloten?"
-  gat: besluitvorming en wie tekent (blok 5), indirect via gewoontes
-  anker: *"Progress hebben we nu 3 jaar"* (24-09)
-  wie weet het: Marjolein, als champion.
-  door: "Wanneer vergadert het MT daar de volgende keer over?"
+  wie weet het: Marjolein, anders de kwaliteitsmanager of examencommissie. Doorvraag: "Staat dat ergens op papier, in het NVAO-rapport of jullie kwaliteitsplan?"
 
 **[nu]** "Je noemde B Corp en de milieukant van AI. Wat moet er in de businesscase staan om dat bij het MT af te dekken?"
-  gat: grootste bezwaar (R)
-  anker: *"Dat is heel ingewikkeld met AI en milieu en dat soort gedoe allemaal."* (24-09)
-  wie weet het: Marjolein. Ons antwoord eerst bij Menno ophalen.
+  gat: grootste bezwaar (R). Ons antwoord eerst bij Menno ophalen.
+  anker: *"Dat is heel ingewikkeld met AI en milieu"* (24-09)
+
+**[nu]** "Als het MT hiernaar kijkt, waar kijken ze dan het eerst naar? En hoe is bijvoorbeeld Progress destijds besloten?"
+  gat: besluitvorming en wie tekent (blok 5), indirect via gewoontes. Nooit per mail.
+  anker: *"Progress hebben we nu 3 jaar"* (24-09)
+  door: "Wanneer vergadert het MT daar de volgende keer over?"
 
 **[later: pas na de techniekcheck van Samuel met Joey]** "Wat heeft jullie IT nodig om de koppeling met NEO goed te keuren?"
-  gat: LMS-risico (R)
-  wie weet het: Joey.
+  gat: LMS-risico (R). wie weet het: Joey.
 
-**[later: via Marjolein, niet rechtstreeks, en pas nadat Tjarko zegt waar je op stuurt]** "Als de businesscase klopt, is er dan ruimte om dit dit studiejaar te starten, of hoort het in de begroting voor volgend jaar?"
-  gat: budget (blok 5), met de "als"-formulering
-  wie weet het: Marjolein, daarna de EB.
+**[later: live, via Marjolein, en pas nadat Tjarko zegt waar je op stuurt]** "Als de businesscase klopt, is er dan ruimte om dit studiejaar te starten, of hoort het in de begroting van volgend jaar?"
+  gat: budget (blok 5), met de "als"-formulering. Nooit per mail.

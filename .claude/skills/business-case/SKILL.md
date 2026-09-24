@@ -34,8 +34,21 @@ Per gat één vraag, met:
 - **timing:** `nu` of `later`, met de reden (fase, gevoelig, de verkeerde persoon, eerst vertrouwen nodig)
 - **wie weet het:** deze persoon, of welke rol of afdeling (zie `reference.md`). Heeft de gesprekspartner het niet, geef dan ook de doorvraag: "Who would have that, and could you get it for us?"
 - **anker:** het citaat of feit uit de bron waar de vraag op leunt
+- **kanaal:** `mail vooraf` of `live`, per gat bepaald (zie hieronder)
 
-Vorm en toon: volg `question-builder` (de vijf toetsen, ankeren, geen ja/nee-vragen). Schrijf zoals Dante praat: neem zijn eigen formuleringen uit de transcripts over als voorbeeld. Tegen een Engelstalige prospect in het Engels, de uitleg in het Nederlands.
+**Kanaal: mail vooraf of live.**
+- **Mail vooraf** voor feiten die iemand moet opzoeken: volumes, tijden, kosten, bestaande data. Doel: ze komen voorbereid, en de meeting gaat over hun cijfers in plaats van over het ophalen ervan.
+  - Direct en concreet, zodat ze het in één keer kunnen opzoeken of doorsturen: "Hoeveel schriftelijke opdrachten kijken jullie per jaar na binnen de opleiding?"
+  - Per vraag in een halve zin waarom je het vraagt, zodat ze het juiste cijfer pakken.
+  - Genummerd, in een mail die kort blijft.
+  - Weten ze het zelf niet, dan zeg je bij wie het vermoedelijk ligt: "dit staat mogelijk in jullie taakbelastingsmodel".
+- **Live** in de meeting voor pijn, prioriteit, oorzaak, en alles wat gevoelig is. Vorm volgens `question-builder`: open vraag, anker, doorvragen, kantelen.
+- Het mailantwoord wordt het anker in de meeting: "Je noemde zo'n 4.000 opdrachten per jaar. Hoe landt dat bij het team in de piekweken?"
+- Budget, wie tekent en tegenstanders gaan nooit per mail.
+
+**Hoeveel vragen:** geen vast maximum. Het aantal volgt uit de situatie, niet uit een getal. Weeg de fase van de deal en hoe warm deze persoon is: uit het transcript of de mails (reageert snel en uitgebreid, deelt zelf cijfers, stelt zelf vragen, of juist kort en afwachtend). Een warme champion in scoping kan veel hebben, een koele eerste kennismaking weinig. Je hoeft niet alles tegelijk te vragen. Zeg in één zin waarom je voor dit aantal kiest.
+
+**Taal:** alles wat ik tegen Dante zeg, inclusief uitleg, labels en toelichting, is in de taal waarin hij schrijft, standaard Nederlands. Alleen de letterlijke vragen die hij aan de prospect stelt of mailt zijn in de taal van dat gesprek: Nederlands bij een Nederlandse prospect, Engels alleen als het gesprek met de prospect in het Engels gaat. Schrijf zoals Dante praat: neem zijn eigen formuleringen uit de transcripts over als voorbeeld.
 
 ### Stap 6. Wegschrijven
 Werk `GTM/Accounts/<slug>/business-case-gaten.md` bij (format in `reference.md`), met een datum bovenaan. In de chat: de fase, de top 3 gaten, en de vragen voor het volgende gesprek. Niet het hele bestand plakken.
