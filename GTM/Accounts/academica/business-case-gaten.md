@@ -1,5 +1,5 @@
 # Business case: Academica University of Applied Sciences
-_Laatst bijgewerkt: 2026-09-24. Bronnen: transcript discovery 24-09-2026 (Wispr Flow, laatste kwartier niet opgenomen), Close-lead en opportunity, Gmail-thread "AI en de schoolleidersopleiding" (13-14 aug), web (vacature AI-onderwijsontwerper, NVAO M Excellent Teaching), debrief Dante in de chat 24-09._
+_Laatst bijgewerkt: 2026-09-24 (scope naar 350 studenten). Bronnen: transcript discovery 24-09-2026 (Wispr Flow, laatste kwartier niet opgenomen), Close-lead en opportunity, Gmail-thread "AI en de schoolleidersopleiding" (13-14 aug), web (vacature AI-onderwijsontwerper, NVAO M Excellent Teaching), debrief Dante in de chat 24-09._
 
 **Fase:** Discovery, gate nog niet gehaald. Pijn en een deel van de spelers zijn er, maar why-now, besluitschema en budget ontbreken, en de bevestigingsmail met vervolgstappen is nog niet verstuurd. (Close zegt: Contacted, dat loopt juist achter op het bewijs, want de discovery is gevoerd.)
 **Gesprekspartner(s):** Marjolein Looij, Directeur Opleidingen over alle geaccrediteerde opleidingen, **champion** (volgens Dante). Brengt de businesscase naar het MT. EB onbekend: het MT of de bestuurder Mirte van den Berg (Dante denkt de bestuurder, navragen bij Tjarko).
@@ -24,7 +24,7 @@ _Laatst bijgewerkt: 2026-09-24. Bronnen: transcript discovery 24-09-2026 (Wispr 
 - ✓ Doorlooptijd: formatief 1 week, summatief 4 weken. (mondeling, 24-09; staat waarschijnlijk in de OER)
 - ✓ Kalibratiesessies: twee keer per jaar. (mondeling, 24-09)
 - ✓ Wie nakijkt: vooral interne medewerkers in dienst, gastdocenten (zzp) geven vooral les. Iedere nieuwe nakijker moet een BKE-traject door, waarna zijn beoordelingen worden herbeoordeeld. (mondeling, 24-09)
-- ✓ Scope jaar 1: de eerste 150 studenten. (Dante, 24-09) Welke opleidingen dat zijn: onbekend.
+- ✓ Scope jaar 1: alle ~350 studenten van de geaccrediteerde opleidingen in één keer, geen gefaseerde start met 150. (Dante, 24-09)
 - ✗ GAT: minuten per opdracht, formatief en summatief. Het belangrijkste ontbrekende getal.
 - ✗ GAT: aantal nakijkers, en hoeveel nieuwe per jaar het BKE-traject doorlopen.
 - ✗ GAT: uren per nieuwe nakijker aan BKE plus herbeoordeling.
@@ -45,7 +45,7 @@ _Laatst bijgewerkt: 2026-09-24. Bronnen: transcript discovery 24-09-2026 (Wispr 
 - ✓ Kans die zij zelf aandroeg: nieuwe nakijkers laten beoordelen en hun oordeel naast de AI leggen in plaats van persoonlijk herbeoordelen. *"Omdat we het persoonlijk doen, kost het gewoon veel geld."* (transcript 24-09) Dit is geen bestaande Eduface-functie.
 - ✗ GAT: verwachte minuten per opdracht na Eduface, en waar de vrijgekomen tijd naartoe gaat.
 - ✗ GAT: de hele doorrekening. Kan pas als blok 2 cijfers heeft.
-- Prijs (`GTM/Pricing/prijsmodel-psu-26-27.md`): 3 euro per student per maand, 12 maanden, **instellingsbreed**, drempel 300 lerenden. Twee open punten voor Dante en Tjarko: (1) scope van 150 studenten ligt onder de drempel; (2) telt "alle studenten" alleen de 300 tot 400 geaccrediteerde studenten of ook de 3.000 tot 6.000 trajectdeelnemers waarvoor niet wordt nagekeken?
+- Prijs (`GTM/Pricing/prijsmodel-psu-26-27.md`): 3 euro per student per maand, 12 maanden, **instellingsbreed**, drempel 300 lerenden. Bij 350 studenten: 350 × 36 = 12.600 euro per jaar, boven de drempel. Open punt voor Dante en Tjarko: telt "alle studenten" alleen de 300 tot 400 geaccrediteerde studenten of ook de 3.000 tot 6.000 trajectdeelnemers waarvoor niet wordt nagekeken?
 
 ### 5. Waarom nu
 - ✓ Groei van ~100 studenten per jaar en de Pabo-accreditatie. (transcript 24-09)
@@ -76,7 +76,7 @@ _Laatst bijgewerkt: 2026-09-24. Bronnen: transcript discovery 24-09-2026 (Wispr 
 _Aantal: vier cijfers per mail en vier vragen live. Marjolein is een warme champion die zelf cijfers deelt en zelf ideeën aandraagt, maar ze vroeg om tempo en zit vol, dus alleen wat de businesscase donderdag echt nodig heeft. Budget en besluitvorming komen later._
 
 ### Mail vooraf (in de vervolgmail)
-1. Hoeveel schriftelijke opdrachten kijken jullie per jaar na voor die eerste 150 studenten, en binnen welke opleidingen? Dan rekenen we met jullie echte volume. Mogelijk te halen uit NEO LMS.
+1. Hoeveel schriftelijke opdrachten kijken jullie per jaar na, per opleiding? Dan rekenen we met jullie echte volume. Mogelijk te halen uit NEO LMS.
    gat: scope en volume (blok 2). anker: *"één per module... 7 modules in de 2 jaar, de andere heeft er 10"* (24-09)
 2. Hoeveel uur rekent jullie normering voor het nakijken van één module-opdracht, en voor een formatieve ronde? Dat is de basis voor de tijdwinst. Staat mogelijk in jullie taakbelastingsmodel.
    gat: minuten per opdracht (blok 2). anker: *"een deel van je baan is uitvoer: training geven, nakijken"* (24-09)
