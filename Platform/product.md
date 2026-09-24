@@ -148,6 +148,14 @@ In de interface staat een label **"Lecturer + AI"** dat duidelijk maakt dat elk 
 - **250.000 onderwijsspecifieke feedbackvoorbeelden.**
 - Het model is bewust klein gehouden. Daardoor kan het binnen de eigen infrastructuur van een instelling draaien, en ligt het energieverbruik per beoordeling flink lager dan bij grote algemene AI-modellen.
 
+## Waarom een minimum van 500 studenten
+
+Toegevoegd 24-09-2026, bevestigd door Dante als claim die naar buiten mag.
+
+- Per instelling richten we AI-capaciteit in (rekenkracht voor ons model). Onder de 500 studenten per jaar komen we met de inkoop van die capaciteit niet uit.
+- Daarnaast vaste kosten per instelling die niet meegroeien met het aantal studenten: de koppeling met het LMS, het afstemmen van het model op hun rubrics en de begeleiding bij de start.
+- De prijs zelf staat in `GTM/Pricing/prijsmodel-psu-26-27.md`, niet hier.
+
 ## Verantwoorde AI en gegevensbescherming
 
 Drie garanties:

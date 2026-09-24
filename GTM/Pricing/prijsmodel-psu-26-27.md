@@ -16,7 +16,7 @@ Gerekend over **12 maanden**, dus 36 per student per jaar.
 
 Bij 500 studenten is dat 18.000 per jaar.
 
-Waarom 500: per instelling maken we vaste kosten die niet meegroeien met het aantal studenten, zoals de koppeling met het LMS, het afstemmen van het model op hun rubrics en de begeleiding bij de start. Onder de 500 wegen die te zwaar. Zo is het ook aan Academica uitgelegd (mail 24-09-2026).
+Waarom 500: per instelling richten we AI-capaciteit in, en onder de 500 studenten komen we met de inkoop daarvan niet uit (claim bevestigd door Dante, staat in `Platform/product.md`). Daarnaast maken we per instelling vaste kosten die niet meegroeien met het aantal studenten, zoals de koppeling met het LMS, het afstemmen van het model op hun rubrics en de begeleiding bij de start. Onder de 500 wegen die te zwaar. Zo is het ook aan Academica uitgelegd (mail 24-09-2026).
 
 Waarom in lerenden en niet in geld: 500 lerenden is in elke markt hetzelfde getal. Let op: `pipeline.py` rekent sinds 17-09-2026 met een omzetdrempel (`DREMPEL_JAARWAARDE = 10000` in de valuta van de markt), niet met lerenden. Die staat nog niet op de nieuwe drempel.
 
