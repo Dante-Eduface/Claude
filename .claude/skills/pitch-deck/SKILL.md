@@ -10,10 +10,9 @@ komt zowel de HTML-preview (voor jezelf, om te controleren) als de bewerkbare pp
 Dante, om in Canva te importeren).
 
 ## Voor je begint
-1. `Design/System/slides/layouts.md` — de soorten slides.
-2. `Design/System/slides/pitch-slides.md` — hoe een pitch-slide eruitziet. **Verplicht.**
-3. `Platform/product.md` — de enige bron voor productclaims. Staat het er niet, dan zet je het niet op een slide.
-4. `reference.md` in deze map — de valkuilen. Scheelt drie rondes.
+1. `Design/System/slides/layouts.md` — de soorten slides, dit is de enige layoutbron. (`pitch-slides.md` stond hier genoemd maar bestaat niet, gecheckt 24-09-2026.)
+2. `Platform/product.md` — de enige bron voor productclaims. Staat het er niet, dan zet je het niet op een slide.
+3. `reference.md` in deze map — de valkuilen. Scheelt drie rondes.
 
 ## De drie poorten
 `Design/System/core/proces.md` geldt ook hier. Nooit in één klap een heel deck:
@@ -50,6 +49,8 @@ Raster is 1920x1080 px, marge 120. `cols(n)` geeft de x-middens en de kolombreed
 Zet in de werkmap een `assets/` met:
 - `logo_navy.png` en `logo_white.png` uit `Design/Merk/logos/`
 - het klantlogo als `klant.png` (schoollogo's staan in `Design/System/Logo van scholen/`)
+- Geen extern klantlogo? Sla `foot()` over of pas hem lokaal aan (zie reference.md), dwing geen `klant.png` af.
+- `LeagueSpartan-Bold.ttf` en `Inter-Regular.ttf` uit `Design/Merk/fonts/`. `render_html` bakt ze zelf in als base64, zonder deze bestanden valt de preview terug op een systeemfont.
 - SVG-logo's eerst naar transparante PNG renderen en de lege rand wegknippen, anders klopt de schaal niet
 
 Iconen: `python3 icons.py verschillen variatie --tint amber`. Nieuw icoon nodig? Paadje toevoegen
@@ -69,4 +70,4 @@ Er is geen automatische layout. Tekst die te lang is, loopt over de volgende reg
 foutmelding. Altijd de PNG bekijken voordat je iets opstuurt.
 
 ## Waar het bestand heen gaat
-`projects/<account>/deck/`. Bewerkbare pptx heet `...-bewerkbaar.pptx`. Previews in `preview/`.
+`GTM/Accounts/<account>/deck/` voor een klantdeck (zo staat het Windesheim-deck erin, niet onder `projects/`). Geen los account, zoals een intern deck? Kies de dichtstbijzijnde bestaande map, bijvoorbeeld `GTM/<onderwerp>/deck/`. Bewerkbare pptx heet `...-bewerkbaar.pptx`. Previews in `preview/`.

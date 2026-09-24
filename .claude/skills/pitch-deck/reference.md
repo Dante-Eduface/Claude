@@ -62,3 +62,25 @@ Werk in de hoofdmap, niet in een worktree, zie de memory `worktree-vinkje-uit`.
 Zet je verzonnen cijfers in een dashboard-achtige slide, dan hoort er letterlijk bij dat het
 een voorbeeld is. Bij een publiek met een IT-architect of compliance officer is dat geen
 formaliteit maar zelfbescherming.
+
+## Een Linux/remote-sessie is geen Mac
+
+Opgedaan bij het board-deck van 24-09-2026, in een sandboxed Claude Code on the web-sessie
+(niet Dante's Mac). `deckbuild.py` corrigeert dit nu zelf, maar goed om te weten waarom.
+
+- **Chrome bestaat hier niet.** Het gekopieerde Mac-pad in `CHROME` klopt niet meer. Er
+  draait wel een Chromium op `/opt/pw-browsers/chromium`. `_find_chrome()` probeert nu
+  beide plus een paar `which`-namen.
+- **Root heeft `--no-sandbox` nodig**, anders weigert Chrome meteen te starten
+  ("Running as root without --no-sandbox is not supported").
+- **De onderste ~90px van elke slide bleef wit**, ook met een navy achtergrond die de hele
+  1920x1080 zou moeten vullen. Headless Chrome reserveert binnen `--window-size` ruimte
+  voor een onzichtbare vensterbalk, dus de echte viewport is korter dan gevraagd. Fix:
+  vraag `--window-size=1920,1200` en snijd terug naar 1920x1080.
+- **Google Fonts laadt hier niet.** Niet een certificaatprobleem (de CA klopt en staat al
+  in de systeemstore), maar een bewuste policy-block op Google-domeinen. Chrome valt dan
+  stil terug op een systeemfont, zonder foutmelding, en de preview lijkt precies goed totdat
+  je goed naar de letters kijkt. Fix: `render_html` bakt `LeagueSpartan-Bold.ttf` en
+  `Inter-Regular.ttf` zelf in als base64 i.p.v. de CDN-link, dus zet die twee bestanden in
+  `assets/` (bron: `Design/Merk/fonts/`). Nooit `--ignore-certificate-errors` gebruiken om
+  hier omheen te werken, dat is geen certificaatfout.

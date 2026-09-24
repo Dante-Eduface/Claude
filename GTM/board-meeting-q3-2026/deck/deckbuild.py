@@ -8,23 +8,7 @@ Zo kunnen preview en pptx niet uit elkaar lopen.
 import html as H, os, subprocess
 
 PX = 6350                     # EMU per ontwerp-pixel op 13,333 inch breed
-
-def _find_chrome():
-    """Mac (lokale sessie) of Linux remote sessie (Playwright-chromium), wat bestaat."""
-    kandidaten = [
-        "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
-        "/opt/pw-browsers/chromium",
-    ]
-    for pad in kandidaten:
-        if os.path.exists(pad):
-            return pad
-    for naam in ("google-chrome", "chromium", "chromium-browser"):
-        gevonden = subprocess.run(["which", naam], capture_output=True, text=True).stdout.strip()
-        if gevonden:
-            return gevonden
-    return kandidaten[0]  # val terug op het oude pad, dan is de foutmelding tenminste duidelijk
-
-CHROME = _find_chrome()
+CHROME = "/opt/pw-browsers/chromium"  # Linux remote sessie, niet het macOS-pad uit de skill
 
 NAVY, AMBER, GREEN_DEEP = '002333', 'E07B00', '007B54'
 GREEN, TINT_A, TINT_G = '00E075', 'FDF0DF', 'E2FBEF'
@@ -156,17 +140,12 @@ def render_html(els, path, dark=False, prefix='../'):
                 f'color:#{el["color"]};text-align:{el["align"]};line-height:{el["ls"]};'
                 f'white-space:pre-line">{H.escape(el["t"])}</div>')
     bg = f'#{NAVY}' if dark else '#fff'
-    # Lokaal ingebed als base64 i.p.v. de Google Fonts CDN: in een remote/sandbox-sessie
-    # is dat domein vaak dichtgezet (policy, geen certificaatprobleem), dan laadt de link
-    # nooit en valt alles terug op een systeemfont. Verwacht assets/LeagueSpartan-Bold.ttf
-    # en assets/Inter-Regular.ttf, zie Assets in SKILL.md.
+    # Lokaal ingebed als base64: deze sessie heeft geen netwerktoegang tot Google Fonts
+    # (policy-block, geen certificaatprobleem), dus de CDN-link laadt hier nooit.
     import base64
-    def _font(bestand):
-        try:
-            with open(bestand, 'rb') as f:
-                return base64.b64encode(f.read()).decode('ascii')
-        except FileNotFoundError:
-            return ''  # geen lettertype gekopieerd: browser valt terug op systeemfont
+    def _font(path_ttf):
+        with open(path_ttf, 'rb') as f:
+            return base64.b64encode(f.read()).decode('ascii')
     fonts_css = (
         f"@font-face{{font-family:'League Spartan';font-weight:700;"
         f"src:url(data:font/ttf;base64,{_font('assets/LeagueSpartan-Bold.ttf')}) format('truetype')}}"
@@ -181,10 +160,10 @@ def render_html(els, path, dark=False, prefix='../'):
     return path
 
 def shoot(html_path, png_path):
-    # --no-sandbox: nodig zodra dit als root draait (remote sessies), onschadelijk lokaal.
-    # window-size vraagt 1200 i.p.v. 1080: headless Chrome reserveert intern ruimte voor
-    # een onzichtbare vensterbalk, waardoor de onderste ~90px van elke slide anders wit
-    # bleef. Extra hoogte aanvragen en terugsnijden naar het echte canvas van 1920x1080.
+    # --no-sandbox: deze Linux-sessie draait als root, waar Chrome's sandbox dat weigert.
+    # Headless Chrome reserveert hier ~90px "vensterbalk"-hoogte binnen --window-size,
+    # ook zonder scrollbars, dus de onderste rand van elke slide bleef wit. Vraag een
+    # hoger venster (1920x1200) en snijd daarna terug naar exact 1920x1080.
     subprocess.run([CHROME, '--headless=new', '--disable-gpu', '--no-sandbox',
                     f'--screenshot={png_path}',
                     '--window-size=1920,1200', '--hide-scrollbars',
