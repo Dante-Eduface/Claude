@@ -253,28 +253,19 @@ def slide_09_beslissing():
     y2 += 30
     els += [text(M, y2, 400, 34, 'DE MARKT ERACHTER', font=BODY, size=19, bold=True, color=INK500, align='left')]
     rows = [
-        ('Nederland, hoger onderwijs', '127.024', '€4,6 mln'),
-        ('VK, hoger onderwijs (particulier)', '250.000-300.000', '£9,0-10,8 mln'),
-        ('VK, apprenticeships (ITP)', '~520.000', '~£18,7 mln'),
-        ('VK, franchise-laag', '167.440', '~£6,0 mln'),
-        ('Verenigde Staten, particulier', '~4,2 mln', '~$150,8 mln'),
-        ('Europa, overig (niet herzien)', '3,6 mln', '~€129,6 mln'),
+        ('Nederland', 'Particuliere hogescholen (NCOI, LOI, Nyenrode e.a.)', '127.024', '€4,6 mln'),
+        ('VK, hoger onderwijs', 'Particuliere universiteiten (BPP, ULaw, Arden e.a.)', '250.000-300.000', '£9,0-10,8 mln'),
+        ('VK, apprenticeships', "Particuliere praktijkopleiders (ITP's)", '~520.000', '~£18,7 mln'),
+        ('VK, franchise', 'Onderwijs uitbesteed aan particuliere partners', '167.440', '~£6,0 mln'),
+        ('Verenigde Staten', 'For-profit en non-profit hoger onderwijs', '~4,2 mln', '~$150,8 mln'),
+        ('Europa, overig', 'Particulier hoger onderwijs, rest van Europa', '3,6 mln', '~€129,6 mln'),
     ]
     tbl, ty = table(
-        ['Markt', 'Omvang', 'ARR-potentie'], rows,
-        x=M, y=y2 + 40, col_x=[M, 700, 1400], col_w=[560, 680, 400],
-        aligns=['left', 'left', 'right'], row_h=42, header_size=19, body_size=25)
+        ['Markt', 'Wat hoort hierbij', 'Omvang', 'ARR-potentie'], rows,
+        x=M, y=y2 + 40, col_x=[M, 460, 1260, 1520], col_w=[320, 760, 230, 280],
+        aligns=['left', 'left', 'right', 'right'], row_h=50, header_size=20, body_size=22)
     els += tbl
-    els += [text(M, ty + 6, 1680, 60,
-                 'Officiele registraties (DUO, HESA) tellen alleen wie zich laat erkennen/designeren en missen grote '
-                 'merken (BPP+ULaw+Arden al 90.000+ VK): NL/VK gebruiken daarom de bredere schatting. 0 particuliere '
-                 'deals gewonnen tot nu toe (Tio, ICM, CMS Vocational alle Lost); dit is TAM, geen omzet.',
-                 font=BODY, size=19, color=INK500, align='left', ls=1.3)]
-    els += board_foot(
-        src='Marktomvang tweemaal herzien op 24-09-2026: officiele DUO/HESA-registraties bleken de markt te '
-            'ondertellen t.o.v. bekende merken (BPP, ULaw, Arden, GBS, NCOI). HESA/NCES/Eurostat grotendeels '
-            'geblokkeerd in de sessie.',
-        page=9)
+    els += board_foot(src='Bronnen: Eurostat, HESA, DfE, NAO, NCES/IPEDS (2022-2025).', page=9)
     return els
 
 
