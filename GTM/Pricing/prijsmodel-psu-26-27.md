@@ -12,11 +12,17 @@ Gerekend over **12 maanden**, dus 36 per student per jaar.
 
 ## De drempel
 
-**Minimaal 300 lerenden per jaar.** Daaronder gaat een opleider niet de outreach in.
+**Minimaal 500 lerenden per jaar** (verhoogd van 300 op 24-09-2026, besluit Dante, geldt voor alle klanten en markten).
 
-Bij 300 studenten is dat 10.800 per jaar, ongeveer waar de oude staffel A op uitkwam. De drempel is dus niet strenger geworden, alleen uitgedrukt in iets dat je kunt opzoeken.
+Bij 500 studenten is dat 18.000 per jaar.
 
-Waarom in lerenden en niet in geld: 300 lerenden is in elke markt hetzelfde getal. De oude geldvloer moest per markt omgerekend worden (NL 10.000 euro, UK 8.500 pond), en dan zijn de markten niet meer naast elkaar te leggen.
+Waarom 500: per instelling maken we vaste kosten die niet meegroeien met het aantal studenten, zoals de koppeling met het LMS, het afstemmen van het model op hun rubrics en de begeleiding bij de start. Onder de 500 wegen die te zwaar. Zo is het ook aan Academica uitgelegd (mail 24-09-2026).
+
+Waarom in lerenden en niet in geld: 500 lerenden is in elke markt hetzelfde getal. Let op: `pipeline.py` rekent sinds 17-09-2026 met een omzetdrempel (`DREMPEL_JAARWAARDE = 10000` in de valuta van de markt), niet met lerenden. Die staat nog niet op de nieuwe drempel.
+
+**OPEN (24-09-2026):**
+- Betaalt een klant onder de 500 lerenden de prijs van 500 (een minimumprijs van 18.000), of valt hij af?
+- Gaat de drempel in de pijplijn ook omhoog naar 18.000 per jaar? Dat haalt alle opleiders tussen ongeveer 280 en 500 lerenden uit de outreach.
 
 ## Wat hiermee verdwenen is
 
@@ -28,7 +34,7 @@ Waarom in lerenden en niet in geld: 300 lerenden is in elke markt hetzelfde geta
 
 `.claude/scripts/pipeline.py`:
 
-- `PRIJS_PER_STUDENT_MAAND = 3`, `MAANDEN_PER_JAAR = 12`, `DREMPEL_LERENDEN = 300`
+- `PRIJS_PER_STUDENT_MAAND = 3`, `MAANDEN_PER_JAAR = 12`, `DREMPEL_LERENDEN = 300` (verouderd, zie de drempel hierboven)
 - `bereken_jaarwaarde(lerenden)` is nu een vermenigvuldiging, geen staffel-opzoeking
 - `omvang_oordeel()` (poort 0d) vergelijkt het aantal lerenden met de drempel, meer niet
 - `SEGMENT_GRENZEN = [(300, "micro"), (1000, "klein"), (3000, "midden")]`, daarboven `groot`
