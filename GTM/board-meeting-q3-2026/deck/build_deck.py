@@ -101,12 +101,12 @@ def slide_05_pipeline():
     # (naam, land, privaat, noot voor twijfelgevallen, in Q3 aangemaakt (True/False/None=onbekend), dealsize, kans)
     rows = [
         ('UTI', 'US', True, None, True, '€400.000', '50%'),
-        ('BPP', 'UK', True, None, None, '€400.000', '10%'),
+        ('BPP', 'UK', True, None, True, '€400.000', '10%'),
         ('Rijksuniversiteit Groningen', 'NL', False, None, True, '€300.000', '20%'),
         ('UADE', 'AR', True, None, True, '€250.000', '20%'),
         ('Windesheim', 'NL', False, None, True, '€200.000', '10%'),
         ('Bristol University', 'UK', False, None, True, '€200.000', '10%'),
-        ('Concorde Career College', 'US', True, None, None, '€200.000', '15%'),
+        ('Concorde Career College', 'US', True, None, True, '€200.000', '15%'),
         ('Goldsmiths', 'UK', False, None, True, '€60.000', '30%'),
         ('Haagse Hogeschool', 'NL', False, None, False, '€20.000', '50%'),
         ('Breederode Hogeschool', 'NL', True, None, True, '€20.000', '70%'),
@@ -129,7 +129,7 @@ def slide_05_pipeline():
     KX, KW = 1610, 190
 
     y0 = 258
-    for h, x, w, al in [('Instelling', IX, IW, 'left'), ('Land', LX, LW, 'left'), ('Privé', PX, PW, 'left'),
+    for h, x, w, al in [('Instelling', IX, IW, 'left'), ('Land', LX, LW, 'left'), ('Privaat', PX, PW, 'left'),
                         ('Q3', QX, QW, 'left'), ('Dealsize', DX, DW, 'right'), ('Kans', KX, KW, 'right')]:
         els += [text(x, y0, w, 28, h, font=BODY, size=17, bold=True, color=INK500, align=al)]
     els += [rect(M, y0 + 28, 1680, 2, INK100)]
@@ -139,8 +139,8 @@ def slide_05_pipeline():
         els += [text(IX, y, IW, 24, name, font=BODY, size=19, color=NAVY, align='left')]
         els += [text(LX, y, LW, 24, land, font=BODY, size=19, color=INK500, align='left')]
         if priv:
-            els += [rect(PX, y - 1, 78, 22, TINT_G, r=6)]
-            els += [text(PX, y + 1, 78, 18, 'PRIVÉ', font=BODY, size=13, bold=True, color=GREEN_DEEP, align='center')]
+            els += [rect(PX, y - 1, 98, 22, TINT_G, r=6)]
+            els += [text(PX, y + 1, 98, 18, 'PRIVAAT', font=BODY, size=13, bold=True, color=GREEN_DEEP, align='center')]
         elif noot:
             els += [text(PX, y, PW, 24, noot, font=BODY, size=16, color=INK500, align='left')]
         if q3 is True:
@@ -160,7 +160,7 @@ def slide_05_pipeline():
 
     els += board_foot(
         src='Q3 board knowledge doc, sep 2026. Afwijkende waarden op enkele regels t.o.v. Close (zie B4, open-vragen.md). '
-            'BPP en Concorde staan niet in Close, aanmaakdatum onbekend. Aanmaakdatum overige regels uit Close, 24-09-2026.',
+            'BPP en Concorde staan niet in Close, Q3-aanmaak bevestigd door Jeroen. Aanmaakdatum overige regels uit Close, 24-09-2026.',
         page=5)
     return els
 
