@@ -19,3 +19,20 @@ Na de haak altijd:
 | 10 | Oliver Brand, dBs Institute | +44 7739 108381 | "Oliver, as Executive Head of Learning, Teaching and Academic Quality at dBs, feedback quality sits with you..." |
 
 Rollen komen uit Lemlist (import 17-09), niet vandaag op LinkedIn gecheckt. Na een ja: lead pauzeren in Lemlist, anders gaat rond 26-27-09 de reminder.
+
+## 11 tot 20
+
+Nummers via de Lemlist-telefoonzoeker (24-09). Bij vier liep de zoektocht nog toen deze lijst gemaakt werd.
+
+| # | Wie | Nummer | Openingszin |
+|---|---|---|---|
+| 11 | Rob Wilson, UCFB | +44 7917 228266 | "Rob, as Dean of Education at UCFB, academic standards and assessment policy sit with you..." |
+| 12 | Janet Rose, Norland | +44 7449 610267 | "Janet, as Vice Chancellor of Norland, academic standards across the university sit with you..." |
+| 13 | Karin Askham, CSVPA | +44 7850 518010 | "Karin, as Rector and Principal of CSVPA, how your students' work is assessed sits with you..." |
+| 14 | Mohammad Islam, Commonwealth College of Excellence | +44 7956 679688 | "Mohammad, as Head of Academics and Quality Control, both marking and its quality sit with you..." |
+| 15 | Charlie Tennant, LSST | +44 20 8331 8159 | "Charlie, as Vice Principal of LSST, feedback and marking across your campuses sit with you..." |
+| 16 | Russell Matthews, Le Cordon Bleu London | +44 20 7400 3910 | "Russell, as Head of Quality and Compliance at Le Cordon Bleu London, assessment quality sits with you..." |
+| 17 | Liz McMullan, Futureworks | nog bezig | "Liz, as Academic Registrar at Futureworks, your assessment policy sits with you..." |
+| 18 | Julie Dearden, Sherwood Psychotherapy Training Institute | nog bezig | "Julie, as Director of Training at Sherwood, how your trainees' work is assessed sits with you..." |
+| 19 | Andy G., JCA London Fashion Academy | nog bezig | "Andy, as Principal and CEO of JCA, the whole assessment side of the academy sits with you..." |
+| 20 | Yarlventhan Visuvaratnam, Apex College | nog bezig | "Yarlventhan, as Academic Director at Apex College, your assessment strategy sits with you..." |
