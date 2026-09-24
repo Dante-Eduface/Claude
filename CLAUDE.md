@@ -23,7 +23,7 @@ Behavioral rules live in `.claude/rules/`. Communication style, team coordinatio
 
 **Credits (`.claude/rules/credits.md`):** het geld zit in ophalen, niet in nadenken. Vraag het script voor je het web vraagt, stop zodra je het antwoord hebt, peil voor je een dure operatie start, en kies het goedkoopste model dat het werk aankan.
 
-Elke SHIFT-agent heeft een `LEERPUNTEN.md` die hij leest voordat hij begint. Feedback uit de chat op agent 1 tot en met 4 schrijf ik daar zelf naartoe en meld ik in één regel; anders maakt de volgende ronde dezelfde fout.
+Elke SHIFT-agent heeft een `LEERPUNTEN.md` die hij leest voordat hij begint. Feedback uit de chat op agent 1 tot en met 4 schrijf ik daar zelf naartoe en meld ik in één regel; anders maakt de volgende ronde dezelfde fout. Hetzelfde geldt voor de skill `business-case` (`.claude/skills/business-case/LEERPUNTEN.md`).
 
 **Plan mode:** elk plan volgt het vaste format uit `.claude/rules/plan-mode.md` (wat ik ga doen, keuzes, twijfels, wat ik niet doe). Kort houden, nadruk op de keuzes.
 
