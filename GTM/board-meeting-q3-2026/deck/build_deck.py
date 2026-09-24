@@ -96,35 +96,72 @@ def slide_04_financien():
 def slide_05_pipeline():
     els = board_title('Pipeline')
     els += subline('€2.157.500 totaal, €489.000 gewogen. 69% van het gewogen bedrag is particulier, 30,5% publiek, 0,5% overig (Noordhoff, uitgever).',
-                    size=23)
+                    size=22)
+
+    # (naam, land, privaat, noot voor twijfelgevallen, in Q3 aangemaakt (True/False/None=onbekend), dealsize, kans)
     rows = [
-        ('UTI', 'US, privaat', '€400.000', '50%'),
-        ('BPP', 'UK, privaat', '€400.000', '10%'),
-        ('Rijksuniversiteit Groningen', 'NL, publiek', '€300.000', '20%'),
-        ('UADE', 'AR, privaat', '€250.000', '20%'),
-        ('Windesheim', 'NL, publiek', '€200.000', '10%'),
-        ('Bristol University', 'UK, publiek', '€200.000', '10%'),
-        ('Concorde Career College', 'US, privaat', '€200.000', '15%'),
-        ('Goldsmiths', 'UK, publiek', '€60.000', '30%'),
-        ('Haagse Hogeschool', 'NL, publiek', '€20.000', '50%'),
-        ('Breederode Hogeschool', 'NL, privaat', '€20.000', '70%'),
-        ('Tilburg University', 'NL, publiek', '€20.000', '15%'),
-        ('UMCG', 'NL, publiek', '€15.000', '50%'),
-        ('Radboud Universiteit', 'NL, publiek', '€15.000', '15%'),
-        ('Hogeschool Rotterdam', 'NL, publiek', '€10.000', '85%'),
-        ('Notenboom', 'NL, privaat', '€10.000', '20%'),
-        ('CMI', 'IE, privaat', '€10.000', '10%'),
-        ('HBMSU', 'AE, quasi-publiek', '€10.000', '10%'),
-        ('Noordhoff', 'uitgever/OEM', '€10.000', '10%'),
-        ('Academica', 'NL, privaat', '€7.500', '10%'),
-        ('Totaal', '', '€2.157.500', '€489.000 gewogen'),
+        ('UTI', 'US', True, None, True, '€400.000', '50%'),
+        ('BPP', 'UK', True, None, None, '€400.000', '10%'),
+        ('Rijksuniversiteit Groningen', 'NL', False, None, True, '€300.000', '20%'),
+        ('UADE', 'AR', True, None, True, '€250.000', '20%'),
+        ('Windesheim', 'NL', False, None, True, '€200.000', '10%'),
+        ('Bristol University', 'UK', False, None, True, '€200.000', '10%'),
+        ('Concorde Career College', 'US', True, None, None, '€200.000', '15%'),
+        ('Goldsmiths', 'UK', False, None, True, '€60.000', '30%'),
+        ('Haagse Hogeschool', 'NL', False, None, False, '€20.000', '50%'),
+        ('Breederode Hogeschool', 'NL', True, None, True, '€20.000', '70%'),
+        ('Tilburg University', 'NL', False, None, False, '€20.000', '15%'),
+        ('UMCG', 'NL', False, None, False, '€15.000', '50%'),
+        ('Radboud Universiteit', 'NL', False, None, False, '€15.000', '15%'),
+        ('Hogeschool Rotterdam', 'NL', False, None, False, '€10.000', '85%'),
+        ('Notenboom', 'NL', True, None, True, '€10.000', '20%'),
+        ('CMI', 'IE', True, None, True, '€10.000', '10%'),
+        ('HBMSU', 'AE', False, 'quasi-publiek', True, '€10.000', '10%'),
+        ('Noordhoff', '—', False, 'uitgever', True, '€10.000', '10%'),
+        ('Academica', 'NL', True, None, True, '€7.500', '10%'),
     ]
-    tbl, _ = table(
-        ['Instelling', 'Markt / segment', 'Dealsize', 'Kans'], rows,
-        x=M, y=260, col_x=[M, 900, 1330, 1600], col_w=[760, 400, 250, 200],
-        aligns=['left', 'left', 'right', 'right'], row_h=26, header_size=17, body_size=19, bold_last=True)
-    els += tbl
-    els += board_foot(src='Q3 board knowledge doc, sep 2026. Zelfde 19 deals staan in Close, met afwijkende waarden op enkele regels (zie B4, open-vragen.md).', page=5)
+
+    IX, IW = M, 480
+    LX, LW = 620, 70
+    PX, PW = 710, 130
+    QX, QW = 860, 90
+    DX, DW = 1350, 230
+    KX, KW = 1610, 190
+
+    y0 = 258
+    for h, x, w, al in [('Instelling', IX, IW, 'left'), ('Land', LX, LW, 'left'), ('Privé', PX, PW, 'left'),
+                        ('Q3', QX, QW, 'left'), ('Dealsize', DX, DW, 'right'), ('Kans', KX, KW, 'right')]:
+        els += [text(x, y0, w, 28, h, font=BODY, size=17, bold=True, color=INK500, align=al)]
+    els += [rect(M, y0 + 28, 1680, 2, INK100)]
+
+    y, row_h = y0 + 40, 26
+    for name, land, priv, noot, q3, dealsize, kans in rows:
+        els += [text(IX, y, IW, 24, name, font=BODY, size=19, color=NAVY, align='left')]
+        els += [text(LX, y, LW, 24, land, font=BODY, size=19, color=INK500, align='left')]
+        if priv:
+            els += [rect(PX, y - 1, 78, 22, TINT_G, r=6)]
+            els += [text(PX, y + 1, 78, 18, 'PRIVÉ', font=BODY, size=13, bold=True, color=GREEN_DEEP, align='center')]
+        elif noot:
+            els += [text(PX, y, PW, 24, noot, font=BODY, size=16, color=INK500, align='left')]
+        if q3 is True:
+            els += [rect(QX, y - 1, 52, 22, TINT_A, r=6)]
+            els += [text(QX, y + 1, 52, 18, 'Q3', font=BODY, size=13, bold=True, color=AMBER, align='center')]
+        elif q3 is None:
+            els += [text(QX, y, QW, 24, 'n.b.', font=BODY, size=16, color=INK500, align='left')]
+        els += [text(DX, y, DW, 24, dealsize, font=BODY, size=19, color=NAVY, align='right')]
+        els += [text(KX, y, KW, 24, kans, font=BODY, size=19, color=NAVY, align='right')]
+        y += row_h
+
+    els += [rect(M, y - 4, 1680, 2, NAVY)]
+    y += 12
+    els += [text(IX, y, IW, 26, 'Totaal', font=BODY, size=19, bold=True, color=NAVY, align='left')]
+    els += [text(DX, y, DW, 26, '€2.157.500', font=BODY, size=19, bold=True, color=NAVY, align='right')]
+    els += [text(KX, y, KW, 26, '€489.000 gewogen', font=BODY, size=16, bold=True, color=NAVY, align='right')]
+
+    els += board_foot(
+        src='Q3 board knowledge doc, sep 2026. Afwijkende waarden op enkele regels t.o.v. Close (zie B4, open-vragen.md). '
+            'BPP en Concorde staan niet in Close, aanmaakdatum onbekend. Aanmaakdatum overige regels uit Close, 24-09-2026.',
+        page=5)
     return els
 
 
