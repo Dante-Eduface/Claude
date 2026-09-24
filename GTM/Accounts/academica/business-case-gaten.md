@@ -41,7 +41,7 @@ _Laatst bijgewerkt: 2026-09-24 (scope naar 350 studenten). Bronnen: transcript d
 
 ### 4. To-be plus kostenonderbouwing
 - ✓ Gewenste to-be in haar woorden: formatief *"helemaal moet gewoon door jullie worden nagekeken"*, met steekproefsgewijze regie en analyse van waar studenten de opdracht niet snappen. (transcript 24-09)
-- ✓ Summatief: Eduface als derde beoordelaar naast het tweeogenprincipe, om sneller consensus en kalibratie te bereiken. Door Dante voorgesteld, zij reageerde met "ja". (transcript 24-09)
+- ✓ Summatief: Eduface als extra beoordelaar (tweede bij de module-opdrachten met één nakijker, derde bij de thesis met twee), om sneller consensus en kalibratie te bereiken. Door Dante voorgesteld, zij reageerde met "ja". (transcript 24-09)
 - ✓ Kans die zij zelf aandroeg: nieuwe nakijkers laten beoordelen en hun oordeel naast de AI leggen in plaats van persoonlijk herbeoordelen. *"Omdat we het persoonlijk doen, kost het gewoon veel geld."* (transcript 24-09) Dit is geen bestaande Eduface-functie.
 - ✗ GAT: verwachte minuten per opdracht na Eduface, en waar de vrijgekomen tijd naartoe gaat.
 - ✗ GAT: de hele doorrekening. Kan pas als blok 2 cijfers heeft.
