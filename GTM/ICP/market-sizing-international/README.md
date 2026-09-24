@@ -202,3 +202,24 @@ HESA, NCES, Eurostat, DUO, NAO, gov.uk, en zelfs Google/Bing waren in deze sessi
 **Tertiair:** NRTO Facts & Figures (branchevereniging, eigen belang) · AELP-cijfers (branchevereniging, inconsistent gebleken) · diverse vendor- en studiekeuze-sites.
 
 Volledige deelvraag-voor-deelvraag bronvermelding (URL + jaartal + brontype per claim) staat in de sessie-transcripten van 24-09-2026, niet apart gearchiveerd in dit bestand.
+
+## CORRECTIE 24-09-2026 (zelfde dag) — de vorige correctie ging de verkeerde kant op
+
+Jeroen prikte er meteen doorheen: BPP alleen al heeft 33.000-38.000 studenten, en dat zou dan al bijna de helft zijn van de "≥71.050" die de heronderzoek-sectie hierboven net voor het VK neerzette. Dat kan niet kloppen, en het bleek ook niet te kloppen.
+
+**Wat er mis was:** DUO's "niet-bekostigd hoger onderwijs"-registratie en HESA's "Alternative Provider"-telling zijn allebei een smalle juridische/bekostigingscategorie, geen telling van de werkelijke instroom. Ze tellen alleen wie zich formeel laat erkennen of designeren (in het VK: voor bekostigingsdoeleinden bij studiefinanciering). Grote merken met veel zelfbetalende of internationale studenten vallen daar grotendeels buiten. Bij de vorige correctie heb ik een smallere, "hardere" officiële bron laten winnen van een bredere schatting, terwijl het net andersom moest: hoe smaller de officiële definitie, hoe groter het risico dat hij de markt ondertelt.
+
+**De check, zelfde dag gedaan:** BPP University 33.000-38.000 studenten (eigen site, Wikipedia) · University of Law 19.730 (2024/25) · Arden University 33.000-40.000+ (deels internationaal/Duitsland) · NCOI (NL) circa 20.000 per jaar. Alleen BPP, ULaw en Arden bij elkaar zijn al 90.000-120.000, ruim boven de "≥71.050" die als VK-totaal werd gepresenteerd. Voor Nederland: NCOI alleen al is bijna de helft van de eerder voorgestelde 46.000-80.000-band.
+
+**Herstelde cijfers:**
+
+| Markt | Vorige poging (heronderzoek) | Hersteld |
+|---|---|---|
+| Nederland, hoger onderwijs | 46.000-80.000 (DUO/NRTO) | **127.024** (Eurostat 2023, terug naar de juli-basis) |
+| VK, hoger onderwijs | ≥71.050 (HESA AP, 2017/18) | **250.000-300.000** (juli-schatting, nu bevestigd door optelsom van BPP+ULaw+Arden+GBS) |
+
+Dit betekent dat de "tegenspraak" die de heronderzoek-sectie hierboven meldde (Eurostat en de oude VK-schatting zouden beide te hoog zijn geweest) **niet stand houdt**. De oorspronkelijke juli-cijfers waren dichter bij de waarheid dan mijn eigen "verdiepende" correctie. Les: een officiële registratie is niet automatisch de betere bron dan een bottom-up schatting uit bekende namen; het hangt af van wat die registratie precies afdekt, en dat moet je checken voor je hem laat winnen.
+
+De apprenticeships-, franchise- en VS-cijfers zijn hierdoor niet geraakt: die komen uit brede administratieve tellingen (DfE, NAO, NCES) die alle deelnemers dekken, niet uit een smalle erkenningsstatus, dus dat onderliggende risico speelt daar niet.
+
+**Bronnen van deze correctie:** BPP University, eigen site en Wikipedia (2025) · University of Law, Wikipedia (2024/25) · Arden University, eigen communicatie en Wikipedia (2024/25) · NCOI Opleidingen, eigen site (ongedateerd, "20.000 studenten per jaar"). Alle vier via WebSearch-synthese, niet zelf gelezen op de brompagina; wel vier onafhankelijke, goed vindbare, redelijk consistente bronnen in plaats van één betwiste officiële telling.

@@ -253,8 +253,8 @@ def slide_09_beslissing():
     y2 += 30
     els += [text(M, y2, 400, 34, 'DE MARKT ERACHTER', font=BODY, size=19, bold=True, color=INK500, align='left')]
     rows = [
-        ('Nederland, hoger onderwijs', '46.000-80.000', '€1,7-2,9 mln'),
-        ('VK, hoger onderwijs (AP)', '≥71.050', '≥£2,6 mln'),
+        ('Nederland, hoger onderwijs', '127.024', '€4,6 mln'),
+        ('VK, hoger onderwijs (particulier)', '250.000-300.000', '£9,0-10,8 mln'),
         ('VK, apprenticeships (ITP)', '~520.000', '~£18,7 mln'),
         ('VK, franchise-laag', '167.440', '~£6,0 mln'),
         ('Verenigde Staten, particulier', '~4,2 mln', '~$150,8 mln'),
@@ -266,13 +266,14 @@ def slide_09_beslissing():
         aligns=['left', 'left', 'right'], row_h=42, header_size=19, body_size=25)
     els += tbl
     els += [text(M, ty + 6, 1680, 60,
-                 'Hoger door het juiste prijsmodel (36/jaar, niet 7,88), niet door een grotere markt: NL en VK hoger '
-                 'onderwijs kwamen bij hercontrole juist lager uit. 0 particuliere deals gewonnen tot nu toe (Tio, '
-                 'ICM, CMS Vocational alle Lost); dit is TAM, geen omzet.',
+                 'Officiele registraties (DUO, HESA) tellen alleen wie zich laat erkennen/designeren en missen grote '
+                 'merken (BPP+ULaw+Arden al 90.000+ VK): NL/VK gebruiken daarom de bredere schatting. 0 particuliere '
+                 'deals gewonnen tot nu toe (Tio, ICM, CMS Vocational alle Lost); dit is TAM, geen omzet.',
                  font=BODY, size=19, color=INK500, align='left', ls=1.3)]
     els += board_foot(
-        src='Marktomvang herzien 24-09-2026: DUO/NRTO, HESA, NCES, eigen pijplijn. HESA/NCES/Eurostat/DUO waren '
-            'geblokkeerd in de sessie, cijfers zijn kruislings gezocht, niet uit brontabellen.',
+        src='Marktomvang tweemaal herzien op 24-09-2026: officiele DUO/HESA-registraties bleken de markt te '
+            'ondertellen t.o.v. bekende merken (BPP, ULaw, Arden, GBS, NCOI). HESA/NCES/Eurostat grotendeels '
+            'geblokkeerd in de sessie.',
         page=9)
     return els
 
