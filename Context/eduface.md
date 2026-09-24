@@ -1,6 +1,6 @@
 # Eduface
 
-_Laatst bijgewerkt: 2026-09-22._
+_Laatst bijgewerkt: 2026-09-24._
 
 Het bedrijf waar Dante werkt. Juridisch heet het **Blockbook B.V.**, daar komt zijn salaris ook vandaan. Naar buiten is alles Eduface. Dit bestand is alleen het minimum dat elke sessie nodig heeft: wat we verkopen, aan wie, en wie er werkt. Alles wat dieper gaat staat in een eigen bestand, zie **Waar de details staan**.
 
@@ -48,9 +48,15 @@ _Toegevoegd 22-09-2026, uit Jeroen._
 
 De board bestaat uit **ROM**, **Tjarko Kwee** en **Imec**. Jeroen doet de board meetings.
 
-OPEN: de exacte tranche-afspraken en milestones met ROM en Imec staan nergens vastgelegd. In `GTM/Campaigns/uk-outreach/README.md` staat een verwijzing naar een "125.000 second-tranche milestone" gekoppeld aan 2 betaalde Jisc/CHEST-pilots, maar die Jisc-doelen zijn in Q2 bewust geschrapt. Niet gebruiken tot Jeroen de werkelijke voorwaarden aanlevert. Zie `Context/open-vragen.md` (B1).
+**De milestones voor de volgende CLA-tranche** (aangeleverd door Jeroen op 24-09-2026, uit het Q3 board meeting knowledge doc). Drie voorwaarden, letterlijk:
 
-Financiele cijfers (ARR, burn, runway, break-even) staan niet in deze repo, maar in het Excel financieel model. Zie de skill `eduface-cfo`.
+1. Minimaal 2 betaalde pilotovereenkomsten met onafhankelijke hoger-onderwijsinstellingen in het VK via het Jisc/CHEST-framework, elk met een minimale contractwaarde van GBP 4.000, met expliciete Critical Success Factors die bij succesvolle evaluatie moeten leiden tot een aanbod voor een volledige institutionele licentie via Jisc.
+2. Minimaal 1 institutionele licentieovereenkomst met een minimale jaarwaarde van EUR 40.000 en een minimale looptijd van 12 maanden.
+3. Minimaal 1 institutionele licentieovereenkomst met een minimale waarde van EUR 10.000 en een minimale looptijd van 12 maanden.
+
+Dit vervangt de oude verwijzing naar een "125.000 second-tranche milestone" in `GTM/Campaigns/uk-outreach/README.md`, die aan de geschrapte Q2 Jisc-doelen hing. Zie `Context/current-priorities.md` voor de urgentie (runway, tranche-deadline).
+
+Financiele cijfers (ARR, burn, runway, break-even) staan niet in deze repo, maar in het Excel financieel model en in het board-knowledge-document per kwartaal. Zie de skill `eduface-cfo`.
 
 Het team communiceert over **WhatsApp**.
 

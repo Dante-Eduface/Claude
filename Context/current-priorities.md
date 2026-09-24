@@ -1,6 +1,14 @@
 # Wat er nu eerst moet
 
-_Laatst bijgewerkt: 2026-09-20. Dit bestand wint van elk ander contextbestand. Verandert de focus, dan verandert dit bestand, niet een zin ergens anders._
+_Laatst bijgewerkt: 2026-09-24. Dit bestand wint van elk ander contextbestand. Verandert de focus, dan verandert dit bestand, niet een zin ergens anders._
+
+## De tranche-deadline, waar alles nu onder hangt
+
+_Toegevoegd 24-09-2026, uit het Q3 board meeting knowledge doc van Jeroen._
+
+**Runway is 3,5 maanden, tot half januari 2027. Een nieuwe tranche is nodig in december.** Die tranche hangt aan drie milestones, letterlijk uitgeschreven in `Context/eduface.md` onder Board en investeerders: 2 betaalde UK-pilots via Jisc/CHEST, 1 institutionele licentie boven 40.000 euro/jaar, 1 institutionele licentie boven 10.000 euro/jaar.
+
+Dit is geen los feit naast de prioriteit hieronder, dit IS waarom de prioriteit nu telt. De 20 salesprocessen per maand en de focus op particuliere instellingen bestaan om deze drie milestones te halen voor december. Granulaire financiele cijfers (cash, burn-verdeling) staan bewust niet in de repo, zie `Context/eduface.md`.
 
 ## De prioriteit
 

@@ -1,6 +1,6 @@
 # Open vragen
 
-_Aangelegd 19-09-2026, bijgewerkt 22-09-2026._
+_Aangelegd 19-09-2026, bijgewerkt 24-09-2026._
 
 De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat is een vraag die ik **niet zelf mag invullen**.
 
@@ -21,9 +21,8 @@ De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat 
 | A8 | **Ruil je de heenreis om van lezen naar schrijven?** Heen schrijven (frisste uur), terug lezen. Nu lees je beide kanten, acht uur per week input zonder output. | Schrijven is het zwaarste denkwerk dat er is en hoort in je beste uur. Lezen houdt prima stand met een halve batterij. | 20-09-2026 |
 | A9 | Waar landt dat schrijven? Apple Notes, een schrift, of een bestand in deze repo? | In de repo betekent dat ik het kan lezen en je context vanzelf actueel blijft. Een schrift is sneller op een trein. Jouw keuze. | 20-09-2026 |
 | A7 | Verhuist schoonmaken van zaterdag 16:00 naar zondag 15:00? | Dan staat alles met het huis op de thuisdag. Boodschappen blijven bewust op zaterdag, een dag voor het koken. | 19-09-2026 |
-| B1 | **Wat zijn de werkelijke tranche-afspraken en milestones met ROM en Imec?** Vraag aan Jeroen. | De board rekent hierop af. De enige verwijzing in de repo (125.000 second tranche via 2 Jisc/CHEST-pilots, `GTM/Campaigns/uk-outreach/README.md`) hangt aan Q2-doelen die bewust geschrapt zijn. Niet zelf invullen. | 22-09-2026 |
-| B2 | Waar staan ARR, burn, runway en break-even? Excel financieel model aanleveren of ontsluiten. | Zonder die cijfers is elk board- of investeerdersstuk half. Skill `eduface-cfo` verwacht ze. | 22-09-2026 |
 | B3 | Schonen we Close voor de board, of tonen we geen deal-niveau detail? | Nul deals op won terwijl er vier betalende klanten zijn, en onze eigen notes noemen Radboud (15k) "nergens op gebaseerd" en Tilburg (25k) "niet te onderbouwen". | 22-09-2026 |
+| B4 | Het Q3 board-knowledge-doc geeft andere dealwaarden dan Close (bv. UADE 250k vs 25k, RUG 300k vs 200k, Windesheim 200k vs 100k). Moet Close bijgewerkt naar deze cijfers, of zijn het bewust twee verschillende dingen (board-schatting vs Close-realiteit)? | Twee bronnen die elkaar tegenspreken zijn erger dan een, en de volgende keer dat iemand de pipeline opzoekt in Close klopt het niet met wat de board heeft gezien. | 24-09-2026 |
 | W4 | Wanneer komt de NPS-meting op Enterprise er? | Tot die er is staat het doel in `current-priorities.md` als niet stuurbaar. Dante weet het nog niet. | 19-09-2026 |
 | W5 | Na twee weken deep work: welk weektarget zetten we vast? | Het schema staat op 28 uur. De eerste twee weken zijn een nulmeting. | Vanaf 03-10-2026 |
 | P11 | Wordt de vaardigheid van dit jaar "een bericht schrijven waar iemand op reageert"? | Dat volgt uit A5: als de maat geboekte gesprekken is, is dat de vaardigheid die hem bepaalt. | 19-09-2026 |
@@ -48,6 +47,8 @@ Blijft staan zodat zichtbaar is wat er al gevraagd is. Alles hieronder is op 19-
 
 | Vraag | Antwoord | Waar het nu staat |
 |---|---|---|
+| Wat zijn de werkelijke tranche-afspraken en milestones met ROM en Imec? | Drie milestones: 2 betaalde UK-pilots via Jisc/CHEST (min GBP 4.000), 1 institutionele licentie boven 40.000 euro/jaar, 1 boven 10.000 euro/jaar. Aangeleverd 24-09-2026 via het Q3 board knowledge doc. | `Context/eduface.md` |
+| Waar staan ARR, burn, runway en break-even? | Runway 3,5 maanden (tot half januari 2027), nieuwe tranche nodig in december. Granulaire cijfers (cash, burn-verdeling) blijven bewust buiten de repo, alleen de urgentie staat in `current-priorities.md`. | `Context/current-priorities.md` |
 | Hoe ziet je werkdag eruit sinds je CSM bent? | De functiewissel veranderde niets, alleen de titel op LinkedIn. Een dag gaat mis als hij ongezond begint te eten. Over een slechte week heeft hij nog niet nagedacht. | `Context/me.md` |
 | Wat is Tjarko Kwee's rol? | Sales adviseur en angel investor in Eduface. | `Context/eduface.md` |
 | Wanneer moeten de 20 salesprocessen gestart zijn? | Maandelijks 20, doorlopend, geen einddatum. | `Context/current-priorities.md` |
