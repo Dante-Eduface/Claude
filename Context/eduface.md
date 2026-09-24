@@ -1,6 +1,6 @@
 # Eduface
 
-_Laatst bijgewerkt: 2026-09-19._
+_Laatst bijgewerkt: 2026-09-24._
 
 Het bedrijf waar Dante werkt. Juridisch heet het **Blockbook B.V.**, daar komt zijn salaris ook vandaan. Naar buiten is alles Eduface. Dit bestand is alleen het minimum dat elke sessie nodig heeft: wat we verkopen, aan wie, en wie er werkt. Alles wat dieper gaat staat in een eigen bestand, zie **Waar de details staan**.
 
@@ -55,5 +55,6 @@ Niet elke sessie lezen, wel altijd naar verwijzen in plaats van uit het hoofd be
 - **Product, wat je wel en niet mag claimen:** `Platform/product.md`. Bevestigd door Dante op 19-09-2026 als dé bron voor elke productclaim. Staat het daar niet, dan beweer je het niet.
 
 - **Prijs:** `GTM/Pricing/prijsmodel-psu-26-27.md`. 3 per student per maand in de valuta van de markt, drempel 300 lerenden. Nooit een prijs uit het hoofd noemen, altijd dit bestand lezen.
+- **Verwerkersovereenkomst (DPA):** `GTM/Knowledge/verwerkersovereenkomst/`. Daar werken we mee (24-09-2026). Vraagt iemand erom, dan sturen wij onze eigen versie mee als bijlage. Dat is onze taak, niet die van de klant.
 - **Salesproces en gates:** `GTM/Knowledge/sales-handbook-v1.md`, `GTM/Knowledge/meddpicc-states-and-gates.md`.
 - **Pipeline en dealstand:** Close, niet een bestand hier.
