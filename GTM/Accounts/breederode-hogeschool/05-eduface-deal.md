@@ -1,6 +1,6 @@
 # De Eduface-deal
 
-_Stand 23-09-2026. Bron: Close (lead_8sVUDLRJ6YRVHVD4c0pnmZ8WIoIkku6QnUMSm6aYC8c), 57 activiteiten._
+_Stand 24-09-2026. Bron: Close (lead_8sVUDLRJ6YRVHVD4c0pnmZ8WIoIkku6QnUMSm6aYC8c), 57 activiteiten._
 
 - **Lead status:** Sales proces (was Prospect tot 03-09-2026)
 - **Opportunity:** Discovery, active, **€20.000 one-time, 50% confidence** (handmatig gezet op verzoek van Dante, 31-08-2026, waarde nog een aanname)
@@ -83,6 +83,28 @@ Jeroen noemde als thema's ook: beoordeling van de AI-feedback door studenten en 
 | Uitzoeken of we de **transcriptie onder een kennisclip** uit het LMS kunnen inlezen, en terugkoppelen aan Marloes | Dante | open |
 | **Per-docent cijferlogging** beleggen bij Menno of Samuel. Toegezegd aan Breederode, nodig voor de vier-ogen-use-case | Dante | open |
 | Uitpraten met Menno of Samuel: **kan de formulering van inline comments aangestuurd worden** via de modelinstructies | Dante | open |
+
+## Reactie Irma, 24-09-2026
+
+Zij heeft zelf alle aanwezigen gesproken en de reacties ongefilterd doorgestuurd. Twee dingen komen daaruit.
+
+**1. De docenten geloofden niet in de tijdwinst.** Letterlijk: *"In financieel besparende zin denk ik dat dit niet heel veel docent-uren reductie op zal leveren, in eerste instantie omdat de docenten eindverantwoordelijk blijven."* En: *"de feedback moet worden gecontroleerd en aangevuld, en het hele stuk moet uiteraard met aandacht worden gelezen, dus ik denk dat dit enigszins beperkt blijft."* Hun conclusie: *"Het lijkt nu met name een mogelijke kwaliteitswinst (op inhoud, uniformiteit en overzicht) en brengt mogelijk comfort."*
+
+Wat ze wel zien: meer overzicht via kalibratie en inzicht, efficienter overleg, meer uniformiteit, en formatieve feedback tussentijds zonder dat het docenturen kost.
+
+**Dit raakt de business case die bij Marcel ligt.** Jeroen heeft op 17-09 aan Irma een plaatje gestuurd met 68.750 euro aan jaarlijkse beoordelingstijd en 48,5% tijdsvermindering. Het Go Live Plan noemt *"meetbare tijdsbesparing bij het nakijken"* als succescriterium en de samenvatting zegt dat de tool *"enorm gaat helpen bij het besparen van tijd"*. De gebruikers voorspellen nu zelf dat dat criterium niet gehaald wordt. Afstemmen met Jeroen voordat Marcel hierover begint.
+
+**2. De kick-offdatum klopt niet.** Irma hoorde van haar mensen dat 25 oktober een kick-off zou zijn en vroeg wat dat inhoudt. In het Go Live Plan staat de kick-off op **15 oktober**, dezelfde dag als de go-live. 25 oktober staat er nergens in. Ergens in de zaal is dat misgegaan.
+
+## Openstaand op het Go Live Plan
+
+Het document is van 04-09 en loopt achter, terwijl Irma er nu naar gaat kijken:
+
+- Testochtend staat nog als "3e week van september, moet nog worden ingepland" en op In Progress
+- Financieel plaatje en concept pilotovereenkomst staan nog op In Progress
+- Het Breederode-team mist Sanne Toonen-Zwinkels, Selma de Nijs, Kas van Kruining en Carina Wind
+- Jochem staat er als Unitmanager Manuele therapie, elders als Programmaleider MSc
+- Kick-off en go-live staan allebei op 15 oktober, dus live gaan en trainen op dezelfde dag
 
 ## Open punten
 - Metrics kwantificeren: hoeveel opdrachten per jaar, hoeveel uur nakijken, hoeveel examinatoren.
