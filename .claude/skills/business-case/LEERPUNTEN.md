@@ -29,3 +29,4 @@ Feedback die een schakel aanwijst kan ik verwerken. "Dit is niet goed" niet: dan
 
 ## Log
 
+- [2026-09-24] algemeen: de skill maakt geen onderscheid tussen vragen voor een mail vooraf (zodat iemand info kan opzoeken en zich voorbereiden) en vragen live in de meeting. Die vragen vragen een andere formulering. | Formulering | Regeltekst voorgelegd aan Dante, wacht op akkoord.
