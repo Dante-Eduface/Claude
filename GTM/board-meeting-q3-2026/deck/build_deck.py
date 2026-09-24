@@ -1,13 +1,18 @@
-"""Board deck Q3 2026 — alle 14 slides. Cover is al goedgekeurd (slide-01-cover.py),
-hier opnieuw gedefinieerd zodat de pptx in één keer uit één bron komt."""
-from deckbuild import (rect, pic, text, title, cols, render_html, render_pptx, shoot,
+"""Board deck Q3 2026 — v2, board-memo stijl.
+Feedback van Jeroen: titels = de echte agendapunten/sectienamen, niet een bedachte
+claim. En veel meer inhoud per slide: dit wordt gelezen en nageslagen, niet vanaf
+een podium gepresenteerd. Zie .claude/skills/pitch-deck/reference.md voor waarom
+dat een andere stijl is dan de pitch-deck-skill standaard aanhoudt."""
+from deckbuild import (rect, pic, text, cols, render_html, render_pptx, shoot,
                         NAVY, AMBER, GREEN_DEEP, TINT_A, TINT_G, INK50, INK100, INK500, HEAD, BODY, M)
 from common import board_foot, LOGO_WIT, LOGO_NAVY
+from board_helpers import board_title, subline, bullets, table
 
 
 def slide_01_cover():
     els = [rect(0, 0, 1920, 1080, NAVY)]
-    els += title('Board Update — Q3 2026', dark=True)
+    els += [text(M, 88, 1920 - 2 * M, 120, 'Board Update — Q3 2026',
+                 font=HEAD, size=96, bold=True, color='FFFFFF', align='center', ls=1.0)]
     els += [text(M, 232, 1680, 60, 'ROM  ·  Tjarko Kwee  ·  Imec',
                  font=BODY, size=40, color='FFFFFFB3', align='left')]
     els += [pic(LOGO_WIT, M, 928, 214, 58)]
@@ -15,250 +20,288 @@ def slide_01_cover():
 
 
 def slide_02_agenda():
-    els = title('Update, geen consultatie.')
+    els = board_title('Agenda')
+    els += subline('Dit is een update, geen consultatie.')
     items = [
-        'Bath Spa: het nieuws',
-        'Waar we nu staan — financiën, pipeline, key accounts',
-        'Van publiek naar privaat',
-        'Hoe we tractie genereren',
-        'Milestones tot de volgende board',
-        'Vragen',
+        ('1', 'Bath Spa', 'Het nieuws: waarom de deal stopt en wat dat niet betekent.'),
+        ('2', 'Financiën', 'Cash, burn, runway en de tranche-deadline.'),
+        ('3', 'Pipeline', 'Alle 19 actieve deals, gewogen, publiek vs. particulier.'),
+        ('4', 'Key accounts', 'HHS, Hogeschool Rotterdam, Breederode, UTI.'),
+        ('5', 'Het patroon', 'Waarom publieke deals vastlopen.'),
+        ('6', 'De Beslissing', 'Volledige focus op particuliere instellingen, en de markt erachter.'),
+        ('7', 'Het product', 'Wat er dit kwartaal is bijgebouwd.'),
+        ('8', 'GTM', 'De nieuwe aanpak, van beurzen naar SHIFT.'),
+        ('9', 'Milestones', 'De drie voorwaarden voor de volgende CLA-tranche.'),
+        ('10', 'Vragen', ''),
     ]
-    y, row_h = 270, 92
-    for i, label in enumerate(items, start=1):
-        cy = y + (i - 1) * row_h
-        els += [rect(M, cy, 56, 56, TINT_A, r=14)]
-        els += [text(M, cy + 4, 56, 48, str(i), font=HEAD, size=28, bold=True, color=AMBER, align='center')]
-        els += [text(M + 80, cy + 4, 1500, 50, label, font=BODY, size=34, color=NAVY, align='left')]
+    y, row_h = 250, 63
+    for num, kop, sub in items:
+        els += [text(M, y, 50, 40, num, font=HEAD, size=24, bold=True, color=AMBER, align='left')]
+        els += [text(M + 60, y, 380, 40, kop, font=HEAD, size=26, bold=True, color=NAVY, align='left')]
+        els += [text(M + 460, y + 2, 1300, 40, sub, font=BODY, size=23, color=INK500, align='left')]
+        y += row_h
     els += board_foot(src='Board meeting Q3 2026.', page=2)
     return els
 
 
 def slide_03_bathspa():
-    els = title('Bath Spa stopt')
-    bullets = [
-        'Pilot afgerond: succescriteria maar deels gehaald, oordeel van hun AI Programme Board.',
-        'Reden is institutionele AI-gereedheid en governance, niet onze productkwaliteit.',
-        'Geen vervolg "at this stage" — pilotfee van £3.280 incl. btw volgt nog.',
-    ]
-    y, row_h = 300, 150
-    for b in bullets:
-        els += [rect(M, y + 14, 14, 14, AMBER, r=7)]
-        els += [text(M + 50, y, 1500, 130, b, font=BODY, size=38, color=NAVY, align='left', ls=1.35)]
-        y += row_h
+    els = board_title('Bath Spa')
+    els += subline('Ze gaan niet door met Eduface. Reden: institutionele AI-gereedheid, niet productkwaliteit.')
+    y = 230
+    els += bullets([
+        'Susanna heeft de pilotdata verzameld en geanalyseerd: Eduface-gebruiksstatistieken, interviews en surveys onder deelnemers.',
+        'Een samenvattend rapport is vorige week besproken door hun AI Programme Board (AIPB).',
+        'Hun conclusie, letterlijk: "we found that the measures of success were only partially met."',
+        '"We are not yet ready to implement an AI assistant tool for assessment and feedback. We won’t be proceeding with Eduface, or other similar product, at this stage."',
+        'Helen King (Director of Learning Innovation, Development & Skills) was oprecht positief: "It has been good working with you and I wish you all the best for the further development of the Eduface tool."',
+    ], M, y, 1680, 92, size=27, dot_color=AMBER, ls=1.3)
+    y2 = y + 5 * 92 + 20
+    els += [rect(M, y2, 1680, 2, INK100)]
+    y2 += 26
+    els += bullets([
+        ('Financieel: Bath Spa betaalt de afgesproken pilotfee van £3.280 incl. btw. Factuur moet nog verstuurd worden.', NAVY),
+        ('Voor ons: de 94% accuraatheidsmeting (435 inzendingen, 13 nakijkers, juni 2026) komt uit deze pilot en blijft feitelijk overeind. Dat cijfer wordt door Bath Spa niet betwist.', GREEN_DEEP),
+    ], M, y2, 1680, 60, size=25, ls=1.3)
     els += board_foot(src='Mail Helen King, Bath Spa University, 21-09-2026.', page=3)
     return els
 
 
 def slide_04_financien():
-    els = title('Runway: 3,5 maanden')
-    els += [text(M, 235, 1680, 50,
-                 'Cash in bank €51.000 · tot half januari 2027 · nieuwe tranche nodig in december',
-                 font=BODY, size=32, color=INK500, align='left')]
+    els = board_title('Financiën')
+    els += subline('Cash in bank €51.000 · runway 3,5 maanden, tot half januari 2027 · nieuwe tranche nodig in december.',
+                    color=NAVY, size=27)
     rows = [
         ('Salarissen', '6.447,57', '42,7%'),
         ('Management fees (excl. btw)', '3.400,00', '22,5%'),
         ('Loonheffing', '1.820,00', '12,1%'),
-        ('Huisvesting', '1.383,03', '9,2%'),
-        ('Overig (7 posten)', '2.034,20', '13,5%'),
+        ('Huisvesting (Dotslash)', '1.383,03', '9,2%'),
+        ('Software', '899,11', '6,0%'),
+        ('Reiskosten (NS Menno)', '399,95', '2,7%'),
+        ('Administratie', '320,86', '2,1%'),
+        ('Google Ads (stopgezet)', '182,20', '1,2%'),
+        ('Rente pre-seed ELF', '132,24', '0,9%'),
+        ('Representatie en attenties', '67,77', '0,4%'),
+        ('Bank en verzekering', '32,07', '0,2%'),
+        ('Totaal', '15.084,80', '100%'),
     ]
-    y0 = 330
-    els += [text(M, y0, 900, 40, 'Post', font=BODY, size=24, bold=True, color=INK500, align='left')]
-    els += [text(1250, y0, 260, 40, 'Per maand', font=BODY, size=24, bold=True, color=INK500, align='right')]
-    els += [text(1560, y0, 220, 40, '%', font=BODY, size=24, bold=True, color=INK500, align='right')]
-    els += [rect(M, y0 + 48, 1920 - 2 * M, 2, INK100)]
-    y, rh = y0 + 68, 62
-    for label, bedrag, pct in rows:
-        els += [text(M, y, 1100, 50, label, font=BODY, size=32, color=NAVY, align='left')]
-        els += [text(1250, y, 260, 50, bedrag, font=BODY, size=32, color=NAVY, align='right')]
-        els += [text(1560, y, 220, 50, pct, font=BODY, size=32, color=NAVY, align='right')]
-        y += rh
-    els += [rect(M, y + 2, 1920 - 2 * M, 2, NAVY)]
-    y += 22
-    els += [text(M, y, 1100, 50, 'Totaal', font=BODY, size=32, bold=True, color=NAVY, align='left')]
-    els += [text(1250, y, 260, 50, '15.084,80', font=BODY, size=32, bold=True, color=NAVY, align='right')]
-    els += [text(1560, y, 220, 50, '100%', font=BODY, size=32, bold=True, color=NAVY, align='right')]
+    tbl, _ = table(
+        ['Post', 'Per maand', '%'], rows,
+        x=M, y=250, col_x=[M, 1300, 1650], col_w=[1100, 300, 170],
+        aligns=['left', 'right', 'right'], row_h=44, header_size=21, body_size=26, bold_last=True)
+    els += tbl
     els += board_foot(src='Eduface financieel model, Q3 board knowledge doc, sep 2026.', page=4)
     return els
 
 
 def slide_05_pipeline():
-    els = title('De pijplijn draait op privé')
-    chip_w = 780
-    els += [rect(M, 250, chip_w, 110, TINT_G, r=20)]
-    els += [text(M + 40, 268, 200, 60, '69%', font=HEAD, size=44, bold=True, color=GREEN_DEEP, align='left')]
-    els += [text(M + 240, 280, chip_w - 280, 60, 'van de gewogen pipeline is particulier',
-                 font=BODY, size=25, color=GREEN_DEEP, align='left', ls=1.2)]
-    x2 = M + chip_w + 40
-    els += [rect(x2, 250, chip_w, 110, INK50, r=20)]
-    els += [text(x2 + 40, 268, 220, 60, '30,5%', font=HEAD, size=44, bold=True, color=INK500, align='left')]
-    els += [text(x2 + 260, 280, chip_w - 300, 60, 'is publiek bekostigd',
-                 font=BODY, size=25, color=INK500, align='left', ls=1.2)]
+    els = board_title('Pipeline')
+    els += subline('€2.157.500 totaal, €489.000 gewogen. 69% van het gewogen bedrag is particulier, 30,5% publiek, 0,5% overig (Noordhoff, uitgever).',
+                    size=23)
     rows = [
-        ('UTI', '€400.000', '50%'), ('BPP', '€400.000', '10%'),
-        ('Rijksuniversiteit Groningen', '€300.000', '20%'), ('UADE', '€250.000', '20%'),
-        ('Windesheim', '€200.000', '10%'), ('Bristol University', '€200.000', '10%'),
-        ('Concorde Career College', '€200.000', '15%'), ('12 overige deals', '€207.500', '—'),
+        ('UTI', 'US, privaat', '€400.000', '50%'),
+        ('BPP', 'UK, privaat', '€400.000', '10%'),
+        ('Rijksuniversiteit Groningen', 'NL, publiek', '€300.000', '20%'),
+        ('UADE', 'AR, privaat', '€250.000', '20%'),
+        ('Windesheim', 'NL, publiek', '€200.000', '10%'),
+        ('Bristol University', 'UK, publiek', '€200.000', '10%'),
+        ('Concorde Career College', 'US, privaat', '€200.000', '15%'),
+        ('Goldsmiths', 'UK, publiek', '€60.000', '30%'),
+        ('Haagse Hogeschool', 'NL, publiek', '€20.000', '50%'),
+        ('Breederode Hogeschool', 'NL, privaat', '€20.000', '70%'),
+        ('Tilburg University', 'NL, publiek', '€20.000', '15%'),
+        ('UMCG', 'NL, publiek', '€15.000', '50%'),
+        ('Radboud Universiteit', 'NL, publiek', '€15.000', '15%'),
+        ('Hogeschool Rotterdam', 'NL, publiek', '€10.000', '85%'),
+        ('Notenboom', 'NL, privaat', '€10.000', '20%'),
+        ('CMI', 'IE, privaat', '€10.000', '10%'),
+        ('HBMSU', 'AE, quasi-publiek', '€10.000', '10%'),
+        ('Noordhoff', 'uitgever/OEM', '€10.000', '10%'),
+        ('Academica', 'NL, privaat', '€7.500', '10%'),
+        ('Totaal', '', '€2.157.500', '€489.000 gewogen'),
     ]
-    y0 = 420
-    els += [text(M, y0, 900, 36, 'Instelling', font=BODY, size=22, bold=True, color=INK500, align='left')]
-    els += [text(1350, y0, 220, 36, 'Dealsize', font=BODY, size=22, bold=True, color=INK500, align='right')]
-    els += [text(1600, y0, 200, 36, 'Kans', font=BODY, size=22, bold=True, color=INK500, align='right')]
-    els += [rect(M, y0 + 42, 1920 - 2 * M, 2, INK100)]
-    y, rh = y0 + 58, 44
-    for label, bedrag, pct in rows:
-        els += [text(M, y, 1300, 38, label, font=BODY, size=27, color=NAVY, align='left')]
-        els += [text(1350, y, 220, 38, bedrag, font=BODY, size=27, color=NAVY, align='right')]
-        els += [text(1600, y, 200, 38, pct, font=BODY, size=27, color=NAVY, align='right')]
-        y += rh
-    els += board_foot(src='Q3 board knowledge doc, sep 2026. Volledige lijst van 19 deals in Close (zie B4, open-vragen.md).', page=5)
+    tbl, _ = table(
+        ['Instelling', 'Markt / segment', 'Dealsize', 'Kans'], rows,
+        x=M, y=260, col_x=[M, 900, 1330, 1600], col_w=[760, 400, 250, 200],
+        aligns=['left', 'left', 'right', 'right'], row_h=26, header_size=17, body_size=19, bold_last=True)
+    els += tbl
+    els += board_foot(src='Q3 board knowledge doc, sep 2026. Zelfde 19 deals staan in Close, met afwijkende waarden op enkele regels (zie B4, open-vragen.md).', page=5)
     return els
 
 
-def _key_accounts_slide(kop, data, page):
-    els = title(kop)
+def _key_accounts_slide(kop, sub, accounts, page):
+    els = board_title(kop)
+    els += subline(sub, size=24)
     xs, w = cols(2)
-    y0 = 270
-    for cx, (name, lines, next_step) in zip(xs, data):
+    y0 = 230
+    for cx, (name, meddpicc, next_step) in zip(xs, accounts):
         x = cx - w / 2
-        els += [text(x, y0, w, 60, name, font=HEAD, size=38, bold=True, color=NAVY, align='left')]
-        ly = y0 + 90
-        for line in lines:
-            els += [text(x, ly, w, 90, line, font=BODY, size=28, color=INK500, align='left', ls=1.35)]
-            ly += 110
-        els += [rect(x, ly + 16, w, 2, INK100)]
-        els += [text(x, ly + 40, w, 100, next_step, font=BODY, size=29, bold=True, color=NAVY, align='left', ls=1.3)]
+        els += [text(x, y0, w, 46, name, font=HEAD, size=34, bold=True, color=NAVY, align='left')]
+        y = y0 + 60
+        for label, val in meddpicc:
+            els += [text(x, y, w, 30, label, font=BODY, size=18, bold=True, color=INK500, align='left')]
+            els += [text(x, y + 26, w, 70, val, font=BODY, size=21, color=NAVY, align='left', ls=1.25)]
+            y += 26 + 22 * ((len(val) // 62) + 1) + 14
+        els += [rect(x, y + 6, w, 2, INK100)]
+        els += [text(x, y + 26, w, 30, 'VOLGENDE STAP', font=BODY, size=16, bold=True, color=AMBER, align='left')]
+        els += [text(x, y + 52, w, 60, next_step, font=BODY, size=23, bold=True, color=NAVY, align='left', ls=1.25)]
     els += board_foot(src='Close, geverifieerd 23-09-2026.', page=page)
     return els
 
 
 def slide_06_keyaccounts1():
-    return _key_accounts_slide('Twee publieke accounts', [
-        ('Haagse Hogeschool', [
-            'Piet en Mario willen door, Theo adviseerde de tool voor het hele jaar te kopen.',
-            'Lectoraat neutraal, wil wel verder.',
-        ], 'Evaluatiemeeting 2 okt — mogelijk Go Live Plan.'),
-        ('Hogeschool Rotterdam', [
-            'Business case en voorstel goedgekeurd, procurement gestart.',
-            'IT staat geen Brightspace-integratie toe voor één opleiding.',
-        ], 'Gesprek met IT over de integratiescope.'),
-    ], 6)
+    return _key_accounts_slide(
+        'Key accounts', 'De twee publieke accounts die het dichtst bij een besluit zitten (1/2).', [
+            ('Haagse Hogeschool', [
+                ('STATUS', 'Theo adviseerde Piet de tool voor het hele jaar te kopen, dan kan het onderzoek een vervolg krijgen. Lectoraat: niet positief, niet negatief, wil wel verder.'),
+                ('BETROKKENEN', 'Piet en Mario (opleidingsmanagers IVK), Marcel (lectoraat), Marco (curriculumcommissie, kan Eduface breder trekken dan taalopleidingen). Faculteitsdirecteur Willem tekent uiteindelijk.'),
+                ('BUDGET', 'Er is een intern potje voor het inkopen van AI-tools beschikbaar.'),
+            ], 'Evaluatiemeeting 2 okt, 14:00-15:00: uitvoering pilot, uitdagingen, onderwijsuitkomsten, analysegegevens lectoraat, vervolgstappen en mogelijk Go Live Plan voor dit studiejaar.'),
+            ('Hogeschool Rotterdam', [
+                ('STATUS', 'Business case en voorstel goedgekeurd (call met Paul, 16 sep), procurement is gestart. Nick (opleidingsdirecteur) houdt Mark Boot hiervoor verantwoordelijk.'),
+                ('BLOKKADE', 'IT staat geen Brightspace-integratie toe voor één losse opleiding. Optie 1: meer opleidingen erbij (duurt lang). Optie 2: standalone werken tot volgend studiejaar.'),
+                ('TROEF', 'Aangeven dat de tool breder gebruikt gaat worden en dit een testcasus is; andere opleidingen kunnen een LOI tekenen.'),
+            ], 'Mark zet ons aan tafel met Marije/Marijke en Sytse van der Zwan (IT). Concept licentieovereenkomst ligt al klaar.'),
+        ], 6)
 
 
 def slide_07_keyaccounts2():
-    return _key_accounts_slide('Van test naar contract', [
-        ('Breederode Hogeschool', [
-            'Testochtend 23 sep. Zelfde dag al: concept licentieovereenkomst gestuurd.',
-            'Irma en Marcel keken hem na, kwamen terug met kleine wijzigingen.',
-        ], 'Wijzigingen verwerken, overeenkomst afronden.'),
-        ('UTI', [
-            'Technische validatie rond: Canvas- en Blackboard-quizzes, Discussions.',
-            'Business case (instructeursverloop, retentie) in opbouw.',
-        ], 'Demo voor campus leadership, 25 sep.'),
-    ], 7)
+    return _key_accounts_slide(
+        'Key accounts', 'De twee accounts die momenteel het hardst versnellen (2/2).', [
+            ('Breederode Hogeschool', [
+                ('STATUS', 'Testochtend 23 sep. Dezelfde dag al concept licentieovereenkomst gestuurd (22 sep, vooruitlopend). Irma en Marcel keken hem zorgvuldig na, kwamen 23 sep terug met kleine wijzigingen.'),
+                ('SUCCESCRITERIA', 'Boven 92% accuraatheid tegenover het docentcijfer, 3,5 van 5 sterren op gebruiksvriendelijkheid (bevestigd 3 sep).'),
+                ('PAD', '2 weken testen op bestaande opdrachten, dan 2 weken itslearning-integratie, dan pilotscope en contract via Marcel (Calder).'),
+            ], 'Wijzigingen in de licentieovereenkomst verwerken en afronden.'),
+            ('UTI', [
+                ('STATUS', 'Technische validatie rond: Canvas-quizzes bevestigd, Blackboard-quizzes bevestigd (al operationeel), Blackboard Discussions ook ondersteund via onze API.'),
+                ('BETROKKENEN', 'Robert Jordan (AVP Instructional Design) vroeg de slides om te delen met campus leaders begin oktober. Bas Schotsman (AVP Academic Operations) enthousiast, ziet ook kans in het beoordelen van Discussions.'),
+                ('BUSINESS CASE', 'Nog nodig: kosten instructeursverloop, gemiddeld uurloon, gemiddelde retentietijd, aantal actieve en vertrokken instructeurs (12 mnd). Go-Live Plan is een gedeeld Google Doc.'),
+            ], 'Demo voor bredere groep campus leadership op 25 sep, daarna richting go/no-go.'),
+        ], 7)
 
 
 def slide_08_patroon():
-    els = title('Publiek: traag en onzeker')
-    bullets = [
-        'Pilots van 6 maanden, met moeite bijeengesprokkeld budget.',
-        'Lastig committeren aan een vervolgstap, ook als we de succesfactoren halen.',
-        'Trage besluitvorming, in commissies.',
-        'Pijn is moeilijk te kwantificeren — dus is ons prijspunt moeilijk te verdedigen.',
-    ]
-    y, row_h = 300, 135
-    for b in bullets:
-        els += [rect(M, y + 14, 14, 14, AMBER, r=7)]
-        els += [text(M + 50, y, 1650, 110, b, font=BODY, size=36, color=NAVY, align='left', ls=1.35)]
-        y += row_h
+    els = board_title('Het patroon')
+    els += subline('Wat we zien bij elke publieke deal in de pipeline.', size=27)
+    y = 230
+    els += bullets([
+        'Publieke instellingen eisen een pilot van 6 maanden, waarvoor ze met moeite budget bijeensprokkelen.',
+        'Ze vinden het lastiger om te committeren aan een duidelijke vervolgstap, ook als we de afgesproken succesfactoren halen.',
+        'Beslissingen gaan in commissies die vaak heel lang duren.',
+        'We hebben op dit moment vooral moeite met het kwantificeren van pijn, waardoor de waarde van de tool lastiger in te schatten is en het moeilijker is om ons prijspunt te verdedigen.',
+    ], M, y, 1680, 96, size=29, dot_color=AMBER, ls=1.3)
+    y2 = y + 4 * 96 + 30
+    els += [rect(M, y2, 1680, 2, INK100)]
+    y2 += 28
+    els += [text(M, y2, 200, 34, 'IN DE PRAKTIJK', font=BODY, size=19, bold=True, color=INK500, align='left')]
+    els += bullets([
+        'RUG: het eigen ontwikkelteam van de universiteit is de concurrent, geen budgethouder in beeld.',
+        'Windesheim: aanbestedingsplicht boven €80k, wacht op een hoog-risico-AI-kader dat er nog niet is.',
+        'Bath Spa: net gestopt na maanden AIPB-proces, ondanks een positieve pilot.',
+    ], M, y2 + 40, 1680, 52, size=24, color=INK500)
     els += board_foot(src='Patroon over de actieve publieke deals, sep 2026.', page=8)
     return els
 
 
 def slide_09_beslissing():
-    els = [rect(0, 0, 1920, 1080, NAVY)]
-    els += [text(M, 410, 1920 - 2 * M, 220,
-                 'Dus focussen we volledig op particuliere instellingen.',
-                 font=HEAD, size=74, bold=True, color='FFFFFF', align='center', ls=1.2)]
-    els += [text(M, 660, 1920 - 2 * M, 60,
-                 'Sneller besluit, meer budget, kleinere implementatie.',
-                 font=BODY, size=34, color='FFFFFFB3', align='center')]
+    els = board_title('De Beslissing')
+    els += subline('Volledige focus op particuliere instellingen: for-profit en non-profit, geen staatsgesubsidieerd.',
+                    size=27, color=NAVY)
+    y = 230
+    els += bullets([
+        ('Bij private instellingen gaan keuzes een stuk sneller en is er meer budget beschikbaar voor een veel kleinere implementatie.', NAVY),
+    ], M, y, 1680, 70, size=29, dot_color=GREEN_DEEP, ls=1.3)
+    y2 = y + 90
+    els += [rect(M, y2, 1680, 2, INK100)]
+    y2 += 30
+    els += [text(M, y2, 400, 34, 'DE MARKT ERACHTER', font=BODY, size=19, bold=True, color=INK500, align='left')]
+    rows = [
+        ('Nederland', '127.024 particuliere studenten', '€1,0 mln'),
+        ('VK, hoger onderwijs', '~275.000 studenten', '€2,17 mln (2,2x NL)'),
+        ('VK, apprenticeships', '761.480 lerenden, 1.305 providers', 'nog niet becijferd'),
+        ('Europa, excl. Turkije', '3,6 mln particuliere studenten', '~€28 mln'),
+    ]
+    tbl, ty = table(
+        ['Markt', 'Omvang', 'ARR-potentie'], rows,
+        x=M, y=y2 + 40, col_x=[M, 700, 1400], col_w=[560, 680, 400],
+        aligns=['left', 'left', 'right'], row_h=48, header_size=19, body_size=25)
+    els += tbl
+    els += [text(M, ty + 6, 1680, 60,
+                 'Interne eerste inschatting o.b.v. Eurostat 2023, niet extern gevalideerd.',
+                 font=BODY, size=19, color=INK500, align='left')]
+    els += board_foot(src='Q3 board knowledge doc + marktomvang-particulier-onderwijs.md, sep 2026.', page=9)
     return els
 
 
-def slide_10_markt():
-    els = [text(M, 260, 1920 - 2 * M, 220, '€28 mln', font=HEAD, size=170, bold=True, color=NAVY, align='center')]
-    els += [text(M, 490, 1920 - 2 * M, 60, 'ARR-potentie particulier onderwijs, Europa excl. Turkije',
-                 font=BODY, size=36, color=INK500, align='center')]
-    els += board_foot(
-        src='Interne eerste inschatting o.b.v. Eurostat 2023, niet extern gevalideerd. '
-            'NL €1,0 mln · VK-apprenticeships 761.480 lerenden, 1.305 providers.', page=10)
-    return els
-
-
-def slide_11_product():
-    els = title('Feedback, in jouw toon')
-    els += [text(M, 235, 1680, 90,
-                 'Grootste uitdaging was de feedbacktoon laten klinken als de docent zelf. Dat is nu eenvoudig geworden.',
-                 font=BODY, size=32, color=INK500, align='left', ls=1.3)]
-    img_h = 430
+def slide_10_product():
+    els = board_title('Het product')
+    els += subline('Feedback verder configureerbaar gemaakt.', size=27)
+    els += bullets([
+        'Grootste uitdaging was de feedback kunnen aanpassen naar hoe de docent het zelf zou zeggen. Dat is nu heel makkelijk gemaakt.',
+    ], M, 230, 1680, 60, size=27)
+    img_h = 480
     img_w = int(img_h * (2048 / 1116))
     img_x = (1920 - img_w) / 2
-    els += [rect(img_x - 4, 356 - 4, img_w + 8, img_h + 8, INK100, r=12)]
-    els += [pic('assets/feedback-style-screenshot.png', img_x, 356, img_w, img_h)]
-    els += board_foot(src='Product-UI, sep 2026.', page=11)
+    img_y = 320
+    els += [rect(img_x - 4, img_y - 4, img_w + 8, img_h + 8, INK100, r=12)]
+    els += [pic('assets/feedback-style-screenshot.png', img_x, img_y, img_w, img_h)]
+    els += board_foot(src='Product-UI, sep 2026.', page=10)
     return els
 
 
-def slide_12_gtm():
-    els = title('Van beurzen naar bellen')
+def slide_11_gtm():
+    els = board_title('GTM')
+    els += subline('De aanpak is sinds vorige board meeting fundamenteel veranderd.', size=27)
     xs, w = cols(2)
     x0, x1 = xs[0] - w / 2, xs[1] - w / 2
-    els += [text(x0, 260, w, 50, 'TOEN', font=BODY, size=26, bold=True, color=INK500, align='left')]
-    els += [text(x0, 320, w, 140, 'Introducties, dure beurzen en evenementen, webinars.',
-                 font=BODY, size=34, color=NAVY, align='left', ls=1.35)]
-    els += [rect(x0, 500, w, 2, INK100)]
-    els += [text(x0, 540, w, 200, 'Eén-op-één, duur per lead, niet herhaalbaar zonder het volgende evenement.',
-                 font=BODY, size=28, color=INK500, align='left', ls=1.4)]
+    y0 = 260
+    els += [text(x0, y0, w, 40, 'TOEN', font=BODY, size=22, bold=True, color=INK500, align='left')]
+    els += bullets([
+        'Introducties via het netwerk.',
+        'Dure beurzen en evenementen.',
+        'Webinars.',
+        'Eén-op-één, duur per lead, niet herhaalbaar zonder het volgende evenement.',
+    ], x0, y0 + 50, w, 66, size=25, dot_color=INK500)
 
-    els += [text(x1, 260, w, 50, 'NU', font=BODY, size=26, bold=True, color=GREEN_DEEP, align='left')]
-    els += [text(x1, 320, w, 140, 'LinkedIn-berichten → mail → warm bellen. De SHIFT-pijplijn.',
-                 font=BODY, size=34, color=NAVY, align='left', ls=1.35)]
-    els += [rect(x1, 500, w, 2, INK100)]
-    els += [text(x1, 540, w, 60, '466', font=HEAD, size=52, bold=True, color=GREEN_DEEP, align='left')]
-    els += [text(x1, 604, w, 50, 'organisaties gescreend, 340 contactpersonen', font=BODY, size=25,
-                 color=INK500, align='left', ls=1.3)]
-
-    els += [text(960 - 40, 300, 80, 100, '→', font=HEAD, size=64, bold=True, color=AMBER, align='center')]
-    els += board_foot(src='SHIFT-pijplijn, sinds vorige board meeting.', page=12)
+    els += [text(x1, y0, w, 40, 'NU: DE SHIFT-PIJPLIJN', font=BODY, size=22, bold=True, color=GREEN_DEEP, align='left')]
+    els += bullets([
+        'LinkedIn-bericht → mail → warm bellen, geautomatiseerd van sourcing tot bericht.',
+        '5 stappen: lead sourcing → contact sourcing → onderzoek → outreach → import in Lemlist.',
+        '466 organisaties gescreend, 340 contactpersonen, 231 dossiers met bewijscitaat.',
+    ], x1, y0 + 50, w, 76, size=25, dot_color=GREEN_DEEP)
+    els += [text(960 - 30, y0 + 200, 60, 60, '→', font=HEAD, size=56, bold=True, color=AMBER, align='center')]
+    els += board_foot(src='SHIFT-pijplijn, sinds vorige board meeting.', page=11)
     return els
 
 
-def slide_13_milestones():
-    els = title('Op weg naar de tranche')
+def slide_12_milestones():
+    els = board_title('Milestones')
+    els += subline('Drie voorwaarden voor de volgende CLA-tranche, nodig in december.', size=27)
     rows = [
-        ('1', '2 betaalde UK-pilots via Jisc/CHEST, elk ≥ £4.000', 'Kandidaten: Bristol, Goldsmiths'),
-        ('2', '1 institutionele licentie ≥ €40.000/jaar', 'UTI'),
-        ('3', '1 institutionele licentie ≥ €10.000/jaar',
-         'Breederode · Hogeschool Rotterdam · Haagse Hogeschool'),
+        ('1', '2 betaalde pilotovereenkomsten met onafhankelijke HE-instellingen in het VK via Jisc/CHEST, elk ≥ £4.000, met Critical Success Factors richting een volledige institutionele licentie.',
+         'Bristol University, Goldsmiths — beide UK, in pipeline, nog geen formele Jisc/CHEST-pilot gestart.'),
+        ('2', '1 institutionele licentie, jaarwaarde ≥ €40.000, looptijd ≥ 12 maanden.',
+         'UTI — technische validatie rond, demo voor campus leadership 25 sep, business case in opbouw.'),
+        ('3', '1 institutionele licentie, waarde ≥ €10.000, looptijd ≥ 12 maanden.',
+         'Drie kandidaten tegelijk: Breederode (licentie in onderhandeling), Hogeschool Rotterdam (procurement gestart), Haagse Hogeschool (evaluatiemeeting 2 okt).'),
     ]
-    y, row_h = 280, 190
+    y, row_h = 250, 170
     for num, cond, cand in rows:
-        els += [rect(M, y, 64, 64, TINT_A, r=16)]
-        els += [text(M, y + 6, 64, 52, num, font=HEAD, size=34, bold=True, color=AMBER, align='center')]
-        els += [text(M + 90, y, 1500, 60, cond, font=BODY, size=34, color=NAVY, align='left', ls=1.3)]
-        els += [text(M + 90, y + 66, 1500, 60, cand, font=BODY, size=28, bold=True, color=GREEN_DEEP, align='left')]
+        els += [rect(M, y, 50, 50, TINT_A, r=13)]
+        els += [text(M, y + 4, 50, 42, num, font=HEAD, size=28, bold=True, color=AMBER, align='center')]
+        els += [text(M + 74, y, 1600, 60, cond, font=BODY, size=25, color=NAVY, align='left', ls=1.3)]
+        els += [text(M + 74, y + 76, 1600, 60, cand, font=BODY, size=23, bold=True, color=GREEN_DEEP, align='left', ls=1.25)]
         y += row_h
     els += board_foot(
         src='CLA-tranche milestones, Q3 board knowledge doc. Koppeling aan deals is een voorstel, nog te bevestigen.',
-        page=13)
+        page=12)
     return els
 
 
-def slide_14_vragen():
+def slide_13_vragen():
     els = [rect(0, 0, 1920, 1080, NAVY)]
-    els += [text(M, 460, 1920 - 2 * M, 160, 'Wat willen jullie weten?',
-                 font=HEAD, size=88, bold=True, color='FFFFFF', align='center')]
+    els += [text(M, 460, 1920 - 2 * M, 160, 'Vragen',
+                 font=HEAD, size=96, bold=True, color='FFFFFF', align='center')]
     els += [pic(LOGO_WIT, M, 928, 214, 58)]
     return els
 
@@ -268,8 +311,8 @@ SLIDES = [
     ('04-financien', slide_04_financien), ('05-pipeline', slide_05_pipeline),
     ('06-keyaccounts1', slide_06_keyaccounts1), ('07-keyaccounts2', slide_07_keyaccounts2),
     ('08-patroon', slide_08_patroon), ('09-beslissing', slide_09_beslissing),
-    ('10-markt', slide_10_markt), ('11-product', slide_11_product), ('12-gtm', slide_12_gtm),
-    ('13-milestones', slide_13_milestones), ('14-vragen', slide_14_vragen),
+    ('10-product', slide_10_product), ('11-gtm', slide_11_gtm), ('12-milestones', slide_12_milestones),
+    ('13-vragen', slide_13_vragen),
 ]
 
 if __name__ == '__main__':
