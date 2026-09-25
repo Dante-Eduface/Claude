@@ -67,6 +67,16 @@ Wensen van hen, plus wat Dante er precies op heeft geantwoord. Bron: `transcript
 | **Groei van de student over drie formatieve rondes.** In één oogopslag zien welke feedback er per ronde is gegeven en of de student die verwerkt heeft | kinderfysiotherapie | "Dit hebben we nog niet", met uitleg waarom | Correct afgekaderd. Alleen uit de eerste debrief |
 | **Testomgeving bij itslearning die permanent blijft staan** | gevraagd aan Maud, namens Samuel | "Bij alle andere LMS'en zitten daar geen kosten aan" | **Kostenrisico.** Maud: "volgens mij zit daar kosten aan verbonden" en daarna "dat zullen we zien" |
 
+## Wat we over de stijl van het model zeggen (vastgelegd 25-09-2026)
+
+Dante's formulering richting Kas en Selma, en meteen de lijn die we moeten aanhouden:
+
+- Het model **schrijft niet zoals de docent** en dat is ook niet het doel. Vergelijk het met een student-assistent die instructies krijgt maar zijn eigen formulering houdt.
+- Waar het **wel** op aankomt: dezelfde zwakke plekken in de studenttekst aanwijzen als de docent.
+- **Voorwaarde:** dat lukt alleen als dat punt scherp in het beoordelingsformulier staat.
+
+Dit is de maatstaf die we bij een vergelijking hanteren: kijk naar de bevindingen, niet naar de woorden. Wie woord voor woord vergelijkt concludeert onterecht dat het model faalt.
+
 ## Verwachtingsrisico: de modelinstructies
 
 Geen feature request, wel het grootste risico van de dag. Ze hebben de modelinstructies gelezen en gingen los: "oh, dan kan ik dit ook, en dat ook." **Ze denken dat ze meer met de modelinstructies kunnen dan het model daadwerkelijk aankan.**
