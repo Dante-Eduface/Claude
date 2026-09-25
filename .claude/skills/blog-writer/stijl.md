@@ -110,18 +110,10 @@ De referenties zijn sterk in stem en opbouw en zwak op een paar punten. Deze fou
 
 **3. Opvulling in de References.** In de AI Act-blog staan Hattie & Timperley en UCU 2016 wel in de lijst maar nergens in de tekst. Elke referentie moet een feit in de tekst dragen.
 
-**4. Claims die niet in `product.md` staan.** Allemaal in W7 van `Context/open-vragen.md`. Tot Dante ze bevestigt, niet gebruiken:
-- "approved supplier on the Jisc/CHEST framework (UK) and the HEAnet framework (Ireland)"
-- "In UK pilots, lecturers changed an average of just 5% of each final grade / 95% alignment". Dit botst met `product.md`: de Bath Spa-meting is **één** UK-pilot met **94%** gemiddelde accuraatheid (98% na afstemmen), en accuraatheid is daar geen overeenstemmingspercentage. Gebruik de `product.md`-formulering.
-- ±0.15 average deviation. Komt uit de studententest in de gids (twee studenten, zes papers, eigen opzet). Mag alleen met die context erbij, en pas als Dante de test als bron bevestigt.
-- een losse "Feedback Tool" / "Feedback"-module. Volgens `product.md` (08-09-2026) is dat de Paper Grader.
-- vier feedbackstijlen (Reflective and Socratic, enz.) en voortgang volgen over concepten
-- Exam Grader met drie agents plus een reconciliatie-agent, "48% more consistent than unaided human marking", "Under 4 min"
-- "blind mode" en "AI-visible mode"
-- "proprietary GPU infrastructure in the Netherlands" (product.md zegt: eigen model, geen externe API's, kan binnen de infrastructuur van de instelling draaien)
-- "Eduface signs a Data Processing Agreement with each institution"
-- prijzen: "free (about 20 assignments per month)", "$25/month Lecturer plan". Prijs komt alleen uit `GTM/Pricing/prijsmodel-psu-26-27.md`.
-- Oral Examination "adapts in response to each student's answers", "across six academic fields"
+**4. Productclaims: sinds 25-09-2026 bevestigd.** Dante bevestigde dat de claims in de referenties kloppen; ze staan nu in `Platform/product.md` (onderaan). Twee aandachtspunten blijven:
+- **"The Feedback Tool" niet als losse module noemen.** Formatieve feedback is onderdeel van de Paper Grader (`product.md`, 08-09-2026). Schrijf "the Paper Grader's formative feedback".
+- **Twee maten, nooit door elkaar.** "Lecturers changed an average of 5% of each final grade" (UK-pilots) is iets anders dan de 94% accuraatheid uit de Bath Spa-meting. Zeg bij elk getal welke maat het is.
+- "5,000+ lecturers" kwam alleen uit zoekresultaten, niet uit de geplakte tekst. Niet gebruiken tot bevestigd.
 
 **5. Kleine stijlglippers.** "Crucially," (Canvas) en "genuinely" (Canvas) staan op onze schraplijst. "Moodle Gradebook" en "Canvas gradebook" wisselend met en zonder hoofdletter: volg de schrijfwijze van het LMS zelf.
 

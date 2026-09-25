@@ -24,7 +24,6 @@ De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat 
 | W4 | Wanneer komt de NPS-meting op Enterprise er? | Tot die er is staat het doel in `current-priorities.md` als niet stuurbaar. Dante weet het nog niet. | 19-09-2026 |
 | W5 | Na twee weken deep work: welk weektarget zetten we vast? | Het schema staat op 28 uur. De eerste twee weken zijn een nulmeting. | Vanaf 03-10-2026 |
 | W6 | **Staan blogs en SEO/GEO weer op de lijst?** In `current-priorities.md` staat "SEO en GEO voor eduface.me" bij wat bewust af is (19-09-2026). Op 25-09-2026 vroeg je een blogskill met SEO en GEO. Is dat een terugkeer, en zo ja als wat: ondersteunend aan de 20 salesprocessen, of een eigen doel? | Zonder antwoord weet ik niet hoeveel tijd blogs mogen kosten tegenover outbound. Het onderzoek zegt: ondersteunend, niet de pijplijnmotor. | 25-09-2026 |
-| W7 | **Kloppen deze claims van de live blogs, en mogen ze in `Platform/product.md`?** Jisc/CHEST- en HEAnet-supplier; "5% of each grade changed, 95% alignment" (botst met de Bath Spa-94% uit `product.md`); ±0.15 uit de studententest in de koopgids; een losse Feedback Tool met vier feedbackstijlen; Exam Grader met drie agents plus reconciliatie, "48% more consistent", "under 4 min"; blind mode en AI-visible mode; GPU-infrastructuur in NL; DPA met elke instelling; prijzen "free ~20/maand" en "$25 Lecturer plan"; "5,000+ lecturers". | Ze staan online maar niet in `product.md`, dus de blogskill mag ze niet gebruiken. Jisc trialt in zijn AI-in-Assessment-pilot Graide, KEATH en TeacherMatic, niet Eduface; een supplier-claim moet dus onderbouwd zijn. | 25-09-2026 |
 | P11 | Wordt de vaardigheid van dit jaar "een bericht schrijven waar iemand op reageert"? | Dat volgt uit A5: als de maat geboekte gesprekken is, is dat de vaardigheid die hem bepaalt. | 19-09-2026 |
 | G15 | De actuele standen van je potjes. Je levert hier een nieuw bestand voor. | `Context/financien.md` noemt bewust geen bedragen tot dat er is. | 19-09-2026 |
 
@@ -43,10 +42,11 @@ Onduidelijk is nog wat het verschil is tussen "fitness" en "gym" in zijn hoofd. 
 
 ## Beantwoord en verwerkt
 
-Blijft staan zodat zichtbaar is wat er al gevraagd is. Alles hieronder is op 19-09-2026 beantwoord.
+Blijft staan zodat zichtbaar is wat er al gevraagd is. Alles hieronder is op 19-09-2026 beantwoord, tenzij er een andere datum bij staat.
 
 | Vraag | Antwoord | Waar het nu staat |
 |---|---|---|
+| Kloppen de claims van de live blogs? (W7, 25-09-2026) | Ja, allemaal, behalve de EU AI Act-datum, die moet bijgewerkt worden. | `Platform/product.md` |
 | Hoe ziet je werkdag eruit sinds je CSM bent? | De functiewissel veranderde niets, alleen de titel op LinkedIn. Een dag gaat mis als hij ongezond begint te eten. Over een slechte week heeft hij nog niet nagedacht. | `Context/me.md` |
 | Wat is Tjarko Kwee's rol? | Sales adviseur en angel investor in Eduface. | `Context/eduface.md` |
 | Wanneer moeten de 20 salesprocessen gestart zijn? | Maandelijks 20, doorlopend, geen einddatum. | `Context/current-priorities.md` |
