@@ -43,3 +43,9 @@ Tweede ronde, zelfde dag: de toon paste niet (kort en hakkelig, veel pijn), geen
 het lab, Roberts team niet noemen, niet op de pijn ingaan. Herschreven in zijn eigen woorden,
 getoetst aan `.claude/skills/linkedin-content/voice-profiles.md`. De regel tegen hakkelige
 zinnen stond al in de schrijfskill; die was niet gevolgd.
+
+### 2026-09-25 · voorleesscript · patroon
+Tweede keer dat Dante niet-gesproken tekst uit het demoscript haalt: eerst de bronnen, daarna
+de klikstappen. In zijn woorden: "het enige wat erin hoeft te staan is de tekst die ik
+daadwerkelijk zeg." Regel voorgesteld voor `.claude/skills/schrijven/voice-by-type.md`,
+wacht op akkoord.
