@@ -40,6 +40,7 @@ Eduface's AI beoordeelt via twee losse instellingen per vak: het **beoordelingsf
 ## Waar het landt
 
 - Rubric-tekst en modelinstructies: plakklaar in de chat, Dante zet ze zelf in Eduface (geen MCP-toegang tot Eduface, dus geen directe API-actie mogelijk).
+- **Elke tekst die Dante in Eduface plakt, staat in een eigen codeblok** (vastgelegd 25-09-2026, op zijn verzoek). Eén blok per veld: Pass-tekst, Fail-tekst, feedback per criterium, modelinstructies. In het blok staat alleen de tekst die in het veld moet, zonder kopje, label of opmaak. Criteriumnaam en verdict staan erboven, buiten het blok. Dan kopieert hij met één klik zonder iets weg te hoeven halen.
 - Bevindingen die de methode zelf verbeteren, ook uit een volgend vak: in `LEERPUNTEN.md`, met datum en vak.
 - Een volledig uitgewerkt voorbeeld met echte teksten en vergelijkingstabellen: `examples/manuele-therapie-case-study.md`.
 
