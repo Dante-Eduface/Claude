@@ -140,6 +140,12 @@ Dat laatste is nieuw en sterk: het laat zien wanneer een individuele beoordelaar
 
 In de interface staat een label **"Lecturer + AI"** dat duidelijk maakt dat elk feedbackpunt door de docent is bekeken voordat de student het ziet.
 
+## Beheer
+
+_Toegevoegd 2026-09-25, bevestigd door Menno via Dante (vraag van UADE)._
+
+- De admin kan per docent een limiet zetten op het aantal examens dat die docent per jaar laat nakijken.
+
 ## Hoe het model getraind is
 
 - **Een eigen model, geen API van OpenAI, Anthropic of een ander foundation model.**
