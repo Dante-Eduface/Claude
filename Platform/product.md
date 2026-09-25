@@ -10,7 +10,9 @@ _Herzien door Dante op 2026-09-08. "AI Feedback" bestaat niet als losse module, 
 Draft-by-draft guidance en beoordelen in een. Eduface leest elke inzending, markeert specifieke passages, en stelt criterium-specifieke opmerkingen op die zijn gegrond in de rubric. Daarnaast volledige rubric-scoring met een uitlegbare cijferopbouw per criterium, plus annotaties in de tekst zelf. **Elke opmerking wordt door de docent bekeken en goedgekeurd voordat de student iets ziet.**
 
 ### AI Exam Grader
-Nakijken van open en gesloten antwoorden op schaal. De AI scoort elk antwoord per criterium tegen het correctiemodel, markeert waar hij onzeker is, en legt elke beslissing terug bij de docent. Inclusief teruggeven van het cijfer aan het gradebook van het LMS/VLE zodra het is goedgekeurd.
+Nakijken van open en gesloten antwoorden op schaal. De AI scoort elk antwoord per criterium tegen het correctiemodel en legt elke beslissing terug bij de docent. Inclusief teruggeven van het cijfer aan het gradebook van het LMS/VLE zodra het is goedgekeurd.
+
+**Niet beweren** dat het model markeert waar het onzeker is. Dat klopt niet (Dante, 2026-09-25).
 
 ### De zes vakmodellen
 _Toegevoegd door Dante op 2026-09-15._
@@ -44,6 +46,8 @@ Eduface integreert in **Moodle, Blackboard, Brightspace, Canvas en elke andere L
 
 **Blackboard-quizzen** (bevestigd door Dante op 2026-09-25): Eduface synchroniseert automatisch met quizzen in Blackboard, dus opdrachten die daar als quiz draaien worden ook ondersteund. Jeroen meldde dit op 21-09 aan UTI.
 
+**Koppeling en terugsynchroniseren** (Dante, 2026-09-25): Eduface is een LTI 1.3-integratie, in Blackboard en in Canvas. Bij het terugsynchroniseren kies je wat er naar het LMS gaat: alleen de feedback, alleen de cijfers, of allebei. Zo kan de student in een formatieve ronde de feedback krijgen zonder het cijfer.
+
 ## Regelgeving
 
 Eduface voldoet aan de AI Act (Dante, 2026-09-08).
@@ -56,7 +60,6 @@ Eduface voldoet aan de AI Act (Dante, 2026-09-08).
 - Feedback per concept, tijdens het schrijven, niet pas achteraf (Paper Grader)
 - De docent keurt elke opmerking goed voordat de student hem ziet
 - Uitlegbare cijferopbouw per criterium en annotaties in de tekst
-- Onzekerheid wordt gemarkeerd in plaats van weggepoetst
 - Het cijfer gaat terug naar het gradebook van het LMS
 - Zes vakmodellen (Law, Economics, Social Sciences, STEM, Humanities, Health Sciences), dus geen generiek model op elk vak
 - Mondelinge examens kunnen ook (beta), dus een opleiding die veel mondeling toetst is niet automatisch een afvaller
@@ -131,6 +134,7 @@ Daarna leveren studenten in zoals altijd. Eduface maakt de feedback, die direct 
 - Feedback op concepten volgens de instructies van de docent
 - Meerdere rondes over eerste concept, tweede concept en eindversie
 - Docent kiest tussen directe feedback of feedback na goedkeuring
+- Ook zonder docent in de flow: de student levert in bij Eduface en krijgt feedback. Je stelt in hoe vaak een student dat mag doen (Dante, 2026-09-25)
 
 **Summatief**, consistent beoordelen op schaal:
 - Volledige rubric-scoring met uitlegbare cijferopbouw per criterium

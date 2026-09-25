@@ -39,3 +39,7 @@ scheiding met de scoringsskill met opzet is gebouwd.
 Voorleesscript voor de UTI-demovideo: "het enige wat erin hoeft te staan is de tekst die ik
 daadwerkelijk zeg." Kliks mogen blijven, bronnen en uitleg eruit. Toegepast op
 `GTM/Accounts/uti/uti-demo-video-script.md`.
+Tweede ronde, zelfde dag: de toon paste niet (kort en hakkelig, veel pijn), geen uitleg over
+het lab, Roberts team niet noemen, niet op de pijn ingaan. Herschreven in zijn eigen woorden,
+getoetst aan `.claude/skills/linkedin-content/voice-profiles.md`. De regel tegen hakkelige
+zinnen stond al in de schrijfskill; die was niet gevolgd.
