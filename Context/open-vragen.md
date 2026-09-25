@@ -1,6 +1,6 @@
 # Open vragen
 
-_Aangelegd 19-09-2026, bijgewerkt 20-09-2026._
+_Aangelegd 19-09-2026, bijgewerkt 25-09-2026._
 
 De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat is een vraag die ik **niet zelf mag invullen**.
 
@@ -23,6 +23,8 @@ De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat 
 | A7 | Verhuist schoonmaken van zaterdag 16:00 naar zondag 15:00? | Dan staat alles met het huis op de thuisdag. Boodschappen blijven bewust op zaterdag, een dag voor het koken. | 19-09-2026 |
 | W4 | Wanneer komt de NPS-meting op Enterprise er? | Tot die er is staat het doel in `current-priorities.md` als niet stuurbaar. Dante weet het nog niet. | 19-09-2026 |
 | W5 | Na twee weken deep work: welk weektarget zetten we vast? | Het schema staat op 28 uur. De eerste twee weken zijn een nulmeting. | Vanaf 03-10-2026 |
+| W6 | **Staan blogs en SEO/GEO weer op de lijst?** In `current-priorities.md` staat "SEO en GEO voor eduface.me" bij wat bewust af is (19-09-2026). Op 25-09-2026 vroeg je een blogskill met SEO en GEO. Is dat een terugkeer, en zo ja als wat: ondersteunend aan de 20 salesprocessen, of een eigen doel? | Zonder antwoord weet ik niet hoeveel tijd blogs mogen kosten tegenover outbound. Het onderzoek zegt: ondersteunend, niet de pijplijnmotor. | 25-09-2026 |
+| W7 | **Kloppen deze claims van de live blogs, en mogen ze in `Platform/product.md`?** "5,000+ lecturers", "Jisc-approved" en "approved supplier on Jisc/CHEST", "±0.15 average deviation", "markers changed 5% of each AI grade", "GPU infrastructure in the Netherlands", een losse "Feedback Tool", "blind mode / AI-visible mode", "DPA on request". | Ze staan online maar niet in `product.md`, dus de blogskill mag ze niet gebruiken. Jisc trialt in zijn AI-in-Assessment-pilot Graide, KEATH en TeacherMatic, niet Eduface; "Jisc-approved" moet dus onderbouwd zijn. | 25-09-2026 |
 | P11 | Wordt de vaardigheid van dit jaar "een bericht schrijven waar iemand op reageert"? | Dat volgt uit A5: als de maat geboekte gesprekken is, is dat de vaardigheid die hem bepaalt. | 19-09-2026 |
 | G15 | De actuele standen van je potjes. Je levert hier een nieuw bestand voor. | `Context/financien.md` noemt bewust geen bedragen tot dat er is. | 19-09-2026 |
 
