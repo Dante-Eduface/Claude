@@ -1,10 +1,10 @@
-Hi, my name is Dante Torbed, and I'm the Customer Success Manager at Eduface. In this video I'll show you two workflows in Blackboard: first the current one, and then the same workflow with Eduface.
+Hi, my name is Dante Torbed, and I'm the Customer Success Manager at Eduface. In this demo, I'll show you a workflow in Blackboard that's fully integrated with Eduface.
 
-Eduface is an AI company that helps instructors give feedback and grades on their students' assignments. We built our own AI model, specifically to read the answer key the instructor already uses and check the student's assignment against it.
+Eduface is an AI company that helps instructors give feedback and grades on their students' assignments. Together with universities, we built and trained our own AI model, specifically to give high-quality and consistent feedback. It reads the answer key or grading scheme the instructor already uses, and checks the student's assignment against it.
 
-Let's start with the current workflow. Blackboard has its own autograder, which checks the words in a student's answer. When those words are off, the student gets a fail, even when the answer could be right. That's why the autograder doesn't work for open-ended exam questions, and it's the reason we started this project.
+We started this project because we found out that Blackboard's autograder can only grade answers that are an exact match. For a lot of open-ended exam questions, that doesn't work. Answers very often differ slightly, and then the student gets a fail, even when the answer could be right.
 
-Now let's look at the same workflow with Eduface. Eduface has gone through the assignment and given feedback and a grade on every question. It looks at what the student means, not just at the exact words.
+Let's look at how Eduface handles this in Blackboard. Here, our model has already gone through the assignment and given feedback and a grade on every question. It looks at what the student means, not just at the exact words.
 
 Once Eduface has given its feedback, the instructor goes through it and approves it, and then it can be sent to the student straight away. The AI assists the instructor, and the instructor decides.
 
