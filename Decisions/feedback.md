@@ -34,3 +34,8 @@ omdat commando's en scripts daarvan afhangen. Vastgelegd in `Context/kaart.md`.
 Overlappende skills samenvoegen in plaats van naast elkaar laten staan. `cro`, `schrijven`,
 `outreach` en `meddpicc` slikten hun dubbelganger op. `sso-grid` bleef apart omdat de
 scheiding met de scoringsskill met opzet is gebouwd.
+
+### 2026-09-25 · demoscript · correctie
+Voorleesscript voor de UTI-demovideo: "het enige wat erin hoeft te staan is de tekst die ik
+daadwerkelijk zeg." Kliks mogen blijven, bronnen en uitleg eruit. Toegepast op
+`GTM/Accounts/uti/uti-demo-video-script.md`.

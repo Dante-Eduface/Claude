@@ -42,6 +42,8 @@ Eduface integreert in **Moodle, Blackboard, Brightspace, Canvas en elke andere L
 - **Het LMS is geen haakje.** Dat iemand het LMS beheert boeit ze niet in een koud bericht, en de integratie op zichzelf ook niet.
 - **Het enige geldige moment om het LMS te noemen** is als je oprechte interesse toont in hún specifieke systeem, bijvoorbeeld "we zijn benieuwd hoe jullie [naam LMS] gebruiken". Dat mag, meer niet. Som nooit de systemen op waar we mee integreren.
 
+**Blackboard-quizzen** (bevestigd door Dante op 2026-09-25): Eduface synchroniseert automatisch met quizzen in Blackboard, dus opdrachten die daar als quiz draaien worden ook ondersteund. Jeroen meldde dit op 21-09 aan UTI.
+
 ## Regelgeving
 
 Eduface voldoet aan de AI Act (Dante, 2026-09-08).
