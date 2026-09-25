@@ -21,3 +21,5 @@ Een losse zin-correctie blijft hier staan. Twee keer dezelfde soort opmerking wo
 ## Punten
 
 [2026-09-25] algemeen: Dante vindt dat vooral de langere blogs goed werken, "vaak ook met een aantal afbeeldingen en visuele elementen" | lengte en opbouw | toegepast op de batch van 8 (law, health, business): lang, met figuren, flowdiagrammen, tabellen en callouts. Nog geen regel; bij een tweede keer voorstellen om de lengterichting in `artikeltypes.md` op te hogen.
+
+[2026-09-25] algemeen: Dante: "neem het op in de skill" | lengte en opbouw | **regel geworden.** Lengterichting opgehoogd en minimum aan visuele elementen vastgelegd in `artikeltypes.md` ("Lengte en visuele elementen"), plus een regel in `SKILL.md` stap 5 en zelfcheck C.

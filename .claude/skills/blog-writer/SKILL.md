@@ -76,6 +76,8 @@ Dante kiest of past aan, dan schrijf je één keer. Zegt hij "gewoon schrijven",
 
 Het format dat `blog-builder` verwacht, met frontmatter erboven. De opbouw volgt de anatomie uit `stijl.md`.
 
+**Lang en visueel is de standaard** (regel van Dante, 25-09-2026): minstens de lengte uit `artikeltypes.md` (2.000 tot 5.000 woorden, afhankelijk van het type), met minimaal twee figuren of flowdiagrammen, twee tabellen en één callout. Lang door diepgang, niet door opvulling.
+
 ```markdown
 ---
 title: <H1>
@@ -145,7 +147,8 @@ Lees daarna de opening en de eerste zin van elke H2 hardop: klinkt het als een c
 **C. SEO en GEO.**
 - [ ] Antwoordblok bovenaan beantwoordt de hoofdvraag in 60 tot 90 woorden, met de entiteiten bij naam
 - [ ] Elke H2 zegt zelf de inhoud en opent met een zin die los klopt
-- [ ] Minstens één tabel waar er iets te vergelijken valt
+- [ ] Lengte binnen de richting uit `artikeltypes.md` voor dit type; zo niet, een ontbrekende deelvraag toegevoegd in plaats van opgerekt
+- [ ] Minimaal twee figuren of flowdiagrammen met onderschrift, twee tabellen en één callout
 - [ ] Minstens één informatiewinst-blok (eigen meting, uitgewerkt voorbeeld, checklist, testopzet)
 - [ ] Eduface en het LMS bij naam in citeerbare zinnen, niet "it"
 - [ ] SEO-titel onder 60 tekens met het onderwerp vooraan; meta 140 tot 160

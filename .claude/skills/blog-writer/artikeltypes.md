@@ -108,15 +108,22 @@ Voorbeeld: `cost-per-assignment-ai-grading-savings`, `what-to-automate-first-ass
 
 ---
 
-## Lengte
+## Lengte en visuele elementen
 
-Geen woordtarget (woordaantal is geen rankingfactor, zie `seo-geo.md`). Wel een richting:
+**Regel (Dante, 25-09-2026): blogs zijn lang en visueel.** Langere blogs met afbeeldingen en visuele elementen werken het best. Dat is de standaard voor elke blog, tenzij Dante zelf om een kortere vraagt.
 
-| Type | Richting |
+| Type | Lengte (lopende tekst, zonder frontmatter) |
 |---|---|
-| Koopgids | 3.000 tot 5.000 woorden (referentie: 4.763), want de test, de tabellen en de profielen zijn het werk |
-| Integratiepagina | 1.400 tot 1.900 (referenties: 1.528 en 1.758) |
-| Regelgeving | 1.700 tot 2.300 (referentie: 2.082) |
-| Vak / werkwijze | 1.000 tot 1.800 |
+| Koopgids | 3.500 tot 5.000 woorden (referentie: 4.763) |
+| Integratiepagina | 2.000 tot 3.000 |
+| Regelgeving | 2.500 tot 3.500 |
+| Vak / werkwijze | 2.500 tot 3.500 |
 
-Stop zodra de vraag beter beantwoord is dan wat nu op pagina 1 staat. Opvulling om een lengte te halen is precies wat de kwaliteitssystemen afstraffen.
+**Visuele elementen, minimaal per blog:**
+- **twee figuren of flowdiagrammen** (`[FIGUUR: ...]`, `[FLOWDIAGRAM]`), elk met een onderschrift dat de kern in één zin zegt
+- **twee tabellen** (vergelijking, stappen, rubric, tijdlijn of beslistabel)
+- **één callout** met een label ("Pilot test for ...", "What to check ...", "What Eduface doesn't do")
+
+Om de twee à drie secties staat er dus iets dat geen lopende tekst is.
+
+**Lang door diepgang, niet door opvulling.** De lengte komt uit meer deelvragen die elk een eigen sectie krijgen, uitgewerkte voorbeelden, een rubric of beslistabel, een pilotprotocol en eerlijke grenzen. Niet uit langere zinnen of herhaling: opvulling is precies wat de kwaliteitssystemen afstraffen (zie `seo-geo.md`). Kom je onder de ondergrens, zoek dan de deelvraag die nog ontbreekt in plaats van bestaande alinea's op te rekken.
