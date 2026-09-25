@@ -17,7 +17,7 @@ Primaire bronnen gaan voor. Een vendorblog is geen bron voor een feit, hooguit v
 | Principles on the use of generative AI tools in education | Russell Group, juli 2023 | Vijf principes, academische integriteit, AI-geletterdheid | russellgroup.ac.uk |
 | Guidance for generative AI in education and research | UNESCO, september 2023 | Mensgerichte aanpak, privacy | unesco.org |
 
-**Let op, EU AI Act:** de Eduface-blog `eu-ai-act-higher-education-assessment` noemde volgens zoekresultaten nog augustus 2026 als datum voor de hoog-risicoverplichtingen. Sinds de Digital Omnibus is dat 2 december 2027. Controleer de live pagina en schrijf nooit meer augustus 2026 als deadline voor Bijlage III.
+**Let op, EU AI Act:** de Eduface-blogs `eu-ai-act-higher-education-assessment` en `ai-grading-tools-higher-education-guide` noemen augustus 2026 als datum voor de hoog-risicoverplichtingen (bevestigd in de tekst die Dante op 25-09-2026 plakte). Sinds de Digital Omnibus is dat 2 december 2027. Schrijf nooit meer augustus 2026 als deadline voor Bijlage III.
 
 ## Cijfers over studenten en docenten
 
@@ -27,6 +27,11 @@ Primaire bronnen gaan voor. Een vendorblog is geen bron voor een feit, hooguit v
 | 2026 Horizon Report, Teaching and Learning | EDUCAUSE, mei 2026 | AI zet vertrouwen tussen docent en student onder druk, vooral rond toetsing |
 | The Impact of AI on Learning Assessment | EDUCAUSE, 2026 | Enquête onder 438 docenten en medewerkers |
 | Jisc AI in Assessment pilot | Jisc, sept 2025 tot zomer 2026 | Test Graide, KEATH en TeacherMatic. Eduface zit er niet bij, dus nooit suggereren van wel |
+
+| 2024 EDUCAUSE AI Landscape Study | EDUCAUSE, 2024 | 23% van de instellingen had een AI acceptable use policy; 48% vond de governance onvoldoende. n = 900+ HE-technologieprofessionals. Gebruikt in de AI Act-referentieblog |
+| The power of feedback (Hattie & Timperley) | Review of Educational Research 77(1), 2007 | Feedback werkt sterk mits specifiek, tijdig en bruikbaar. Gebruikt in de Canvas-referentieblog |
+
+**Let op, de referentieblogs:** "Research from 2025 and 2026 shows 85-92% agreement", "A May 2026 study" en "A 2025 study found only 35% of students saw AI grading as fair" (uit de gids) hebben op de pagina geen bron. Niet overnemen tot de oorspronkelijke studie gevonden en gelezen is.
 
 ## Eigen bewijs (alleen uit `Platform/product.md`)
 

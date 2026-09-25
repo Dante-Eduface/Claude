@@ -1,6 +1,6 @@
 ---
 name: blog-writer
-description: Schrijft Engelstalige blogs voor eduface.me/resources/blog in de Eduface-blogstem (gekalibreerd op de vier beste blogs, de koopgids, de Canvas- en Moodle-integratiepagina's en de EU AI Act-uitlegger) en zo dat ze ranken in Google en opgepikt worden door AI-zoekmachines (SEO en GEO, onderbouwd met onderzoek en zonder de trucs die niet werken). Levert een markdown-concept op dat `blog-builder` daarna live zet. Trigger wanneer Dante zegt "schrijf een blog over", "maak een blogartikel", "blog voor de website", "schrijf een artikel dat rankt op", "we moeten gevonden worden op [zoekterm]", "update/ververs deze blog", "herschrijf deze blog", of een onderwerp of zoekterm voor eduface.me aanlevert. NIET voor LinkedIn-posts (linkedin-content), mails of losse sitecopy (schrijven), of het bouwen en publiceren in Framer (blog-builder).
+description: Schrijft Engelstalige blogs voor eduface.me/resources/blog in de Eduface-blogstem (gekalibreerd op de volledige tekst van de vier beste blogs: de koopgids AI grading tools, de Canvas- en Moodle-integratiepagina's en de EU AI Act-uitlegger) en zo dat ze ranken in Google en opgepikt worden door AI-zoekmachines (SEO en GEO, onderbouwd met onderzoek en zonder de trucs die niet werken). Levert een markdown-concept op dat `blog-builder` daarna live zet. Trigger wanneer Dante zegt "schrijf een blog over", "maak een blogartikel", "blog voor de website", "schrijf een artikel dat rankt op", "we moeten gevonden worden op [zoekterm]", "update/ververs deze blog", "herschrijf deze blog", of een onderwerp of zoekterm voor eduface.me aanlevert. NIET voor LinkedIn-posts (linkedin-content), mails of losse sitecopy (schrijven), of het bouwen en publiceren in Framer (blog-builder).
 ---
 
 # Blog writer
@@ -11,12 +11,13 @@ Deze skill schrijft. `blog-builder` bouwt en publiceert. De grens: deze skill le
 
 ## Eerst lezen, elke keer
 
-1. `stijl.md` : de stem, de patronen uit de referentieblogs, de claims die niet mogen.
-2. `seo-geo.md` : welke regels werken en welke niet.
-3. `artikeltypes.md` : het skelet per type.
-4. `LEERPUNTEN.md` : eerdere feedback van Dante op blogs.
-5. `Platform/product.md` : de enige bron voor claims over Eduface.
-6. `bronnen.md` : alleen als je iets citeert.
+1. `stijl.md` : de stem, de anatomie van een pagina, en wat je uit de referenties niet overneemt.
+2. `referentie/` : de vier referentieblogs letterlijk. Lees minstens de referentie van het type dat je schrijft, helemaal.
+3. `seo-geo.md` : welke regels werken en welke niet.
+4. `artikeltypes.md` : het skelet per type.
+5. `LEERPUNTEN.md` : eerdere feedback van Dante op blogs.
+6. `Platform/product.md` : de enige bron voor claims over Eduface.
+7. `bronnen.md` : alleen als je iets citeert.
 
 ## De loop
 
@@ -73,13 +74,13 @@ Dante kiest of past aan, dan schrijf je één keer. Zegt hij "gewoon schrijven",
 
 ### 5. Schrijf
 
-Het format dat `blog-builder` verwacht, met frontmatter erboven:
+Het format dat `blog-builder` verwacht, met frontmatter erboven. De opbouw volgt de anatomie uit `stijl.md`.
 
 ```markdown
 ---
 title: <H1>
 seo_title: <onder 60 tekens> | Eduface
-meta_description: <140-160 tekens>
+meta_description: <140-160 tekens, mag gelijk zijn aan de dek>
 slug: <kort-met-hoofdterm>
 primary_query: <de zoekvraag>
 secondary_queries: [<deelvragen>]
@@ -90,25 +91,40 @@ review_by: <JJJJ-MM-DD, eerder bij regelgeving en tools>
 status: concept
 ---
 
-# <Titel>
+EYEBROW: <ONDERWERP · SUBONDERWERP>
 
-*By Eduface Team · <Month YYYY> · <X> min read*
+# <H1: hoofdterm vooraan: reikwijdte>
 
-<opening: alinea 1 is het directe antwoord in 40 tot 60 woorden>
+*<Dek: een of twee zinnen>*
 
-## <kop die zelf de inhoud zegt>
-...
+By Eduface · <Month YYYY> · <X> min read · Written for <rol>
+
+<Openingsscène, 2 tot 5 zinnen>
+
+> **<De hoofdvraag letterlijk>**
+> <Antwoordblok, 60 tot 90 woorden>
+
+## <Vraag die de lezer stelt, met de entiteit erin>
+<Eerste zin beantwoordt de vraag.> ...¹
+
+[FLOWDIAGRAM] Stap (toelichting) → Stap (toelichting) → ...
+*<Onderschrift dat de flow in één zin vertelt.>*
+
+> **<Label, bijv. For IT and learning technology teams>**
+> <Eén gedachte.>
 
 ## Frequently asked questions
 
-**<vraag>**
-<antwoord, eerste zin is het antwoord>
+**<Vraag zoals hij ingetypt wordt?>**
+<Yes./No./De stelling.> <Twee tot vier zinnen.>
 
-## Sources
+## References
 
-- <Auteur/uitgever> (<jaar>). <Titel>.
+1. <Auteur/uitgever>. (<jaar>). <Titel>. <Uitgever>. [Key finding: <het feit dat in de tekst staat>]
 ```
 
+- Figuren (`[FLOWDIAGRAM]`, `[FIGUUR: ...]`) beschrijf je als tekst met inhoud en onderschrift. `blog-builder` of `marketing-creatives` maakt er een afbeelding van.
+- Superscript ¹ ² in de tekst verwijst naar het nummer in References. Elke referentie draagt een feit in de tekst, geen opvulling.
 - Bestandsnaam: volgend nummer plus slug, bijvoorbeeld `32-<slug>.md`.
 - Leestijd = woorden gedeeld door 230, afgerond.
 - Links in de lopende tekst als markdown-link met beschrijvende ankertekst. `blog-builder` zet ze om.
@@ -127,7 +143,7 @@ grep -n -i -E "delve|landscape|crucial|pivotal|transformative|seamless|robust|le
 Lees daarna de opening en de eerste zin van elke H2 hardop: klinkt het als een collega die het uitgezocht heeft, of als een folder?
 
 **C. SEO en GEO.**
-- [ ] Alinea 1 beantwoordt de zoekvraag, zonder aanloop
+- [ ] Antwoordblok bovenaan beantwoordt de hoofdvraag in 60 tot 90 woorden, met de entiteiten bij naam
 - [ ] Elke H2 zegt zelf de inhoud en opent met een zin die los klopt
 - [ ] Minstens één tabel waar er iets te vergelijken valt
 - [ ] Minstens één informatiewinst-blok (eigen meting, uitgewerkt voorbeeld, checklist, testopzet)

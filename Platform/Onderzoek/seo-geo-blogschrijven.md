@@ -32,7 +32,7 @@ Blogs zijn ondersteunend aan de prioriteit (20 salesprocessen per maand), geen p
 - Geen conversiedata voor AI-verkeer bij enterprise B2B met lange salescycli.
 - Of eduface.me al door ChatGPT of Perplexity geciteerd wordt: niet vastgesteld. Wel dat het in gewone zoekresultaten staat voor Moodle, Canvas en "AI grading tools".
 - Of Framer de blogpagina's server-rendered levert: generiek bevestigd, niet voor de blog getest.
-- De volledige tekst van de vier referentieblogs (eduface.me geblokkeerd).
+- ~~De volledige tekst van de vier referentieblogs~~: door Dante geplakt op 25-09-2026, staat in `.claude/skills/blog-writer/referentie/`.
 
 ## Bronnen
 
