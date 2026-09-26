@@ -13,3 +13,6 @@ node_modules/
 
 # Losse zip-uploads
 *.zip
+
+# Python-bytecode, ontstaat als een skill pipeline.py importeert
+__pycache__/
