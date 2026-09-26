@@ -115,7 +115,7 @@ Summarise this cold call in at most five bullets, in the language of the call: 1
 | Lerenden per jaar | Getal | Totaal aantal lerenden per jaar over de hele organisatie. Alleen invullen als er een getal genoemd is. Bij een bandbreedte de ondergrens. |
 | Toetsvorm | Keuze, meerdere | Schriftelijke opdrachten, Tentamens, Mondeling. Alleen wat genoemd is. |
 
-Waarom Lerenden per jaar: volgens `GTM/Pricing/prijsmodel-psu-26-27.md` is dat het belangrijkste veld van de pijplijn (prijs, drempel en segment in één), en het was op 16-09-2026 gevuld bij 84 van de 776 organisaties. Dante vraagt het al in zijn calls, nu landt het in een veld in plaats van in een notitie.
+Waarom Lerenden per jaar: volgens `GTM/Pricing/prijsmodel-psu-26-27.md` is dat het belangrijkste veld van de pijplijn (prijs, drempel en segment in één), en het was op 16-09-2026 gevuld bij 84 van de 776 organisaties. Dante vraagt het al in de calls, nu landt het in een veld in plaats van in een notitie.
 
 Waarom Toetsvorm: dat is de fitvraag die Dante na de call met Louis van Dam zelf noemde ("had ik moeten vragen: bestaat het uit schriftelijke opdrachten"). De drie keuzes volgen de modules: Paper Grader, Exam Grader, Oral Examination.
 
