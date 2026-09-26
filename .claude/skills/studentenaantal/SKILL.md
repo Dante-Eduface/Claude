@@ -58,6 +58,7 @@ Van meest naar minst betrouwbaar (Dante, 26-09-2026). Elk contact waarin de klan
 - **Deal value = studenten × 3 × 12, in euro voor elke markt** (Dante, 26-09-2026: Close rekent in euro). Dezelfde prijs als `GTM/Pricing/prijsmodel-psu-26-27.md`, alleen altijd in euro.
 - **Afronden op het eindbedrag, niet op het studentenaantal** (Dante, 26-09-2026): twee significante cijfers, half naar boven. Het studentenaantal blijft exact, want dat is het bewijs. Rekenen met `python3 .claude/skills/studentenaantal/dealwaarde.py <studenten>`: 14.767 wordt €530.000, 800 wordt €29.000, 34.314 wordt €1.200.000.
 - Veld: **Deal value** op de lead, type number, id `cf_ARZgGMDLy9SKpqgHhkd1ePYSjin693PjBasUkXzv76q`. Schrijven met `update_lead`, `custom_fields`.
+- **Ook de opportunity** (Dante, 26-09-2026): heeft de lead een actieve opportunity, dan krijgt die dezelfde Deal value als waarde per jaar (`update_opportunity`, `value` in centen, `value_period` annual). Gewonnen en verloren opportunities niet aanraken. De oude waarde komt in het bewijsbestand, zodat hij terug te zetten is.
 - **Pas schrijven na akkoord van Dante** op de lijst van die run. Leeg is niets schrijven. Een bestaande waarde leegmaken of vervangen alleen na akkoord.
 - Nooit `enrich_field`. Nooit statussen wijzigen of leads diskwalificeren, ook niet onder de 300 studenten.
 
