@@ -34,3 +34,12 @@ omdat commando's en scripts daarvan afhangen. Vastgelegd in `Context/kaart.md`.
 Overlappende skills samenvoegen in plaats van naast elkaar laten staan. `cro`, `schrijven`,
 `outreach` en `meddpicc` slikten hun dubbelganger op. `sso-grid` bleef apart omdat de
 scheiding met de scoringsskill met opzet is gebouwd.
+
+### 2026-09-26 · dealanalyse · correctie
+Over de MEDDPICC-skill: "omdat we enterprise sales doen, is elke deal anders (...) zo
+uiteenlopend en zo creatief dat AI dat werk niet zou kunnen doen." Wat AI wel kan: de
+sterktes en zwaktes van een deal op een rij zetten, plus de vragen die hij moet stellen.
+De zet zelf bedenkt Dante. Botst met wat nu vastligt: `sales-coach` review (één actie
+onderaan), `meddpicc` (next action per regel) en `GTM/Knowledge/meddpicc-states-and-gates.md`
+(één actie per zwak element). Nog niets aangepast: eerst kiest Dante een insteek, daarna
+leg ik de regeltekst voor.
