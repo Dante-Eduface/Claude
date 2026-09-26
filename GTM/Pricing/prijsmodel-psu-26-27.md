@@ -10,6 +10,8 @@ Gerekend over **12 maanden**, dus 36 per student per jaar.
 
 **Alle studenten die de opleider heeft**, niet alleen de studenten van de opleidingen die met Eduface werken. Instellingsbreed dus.
 
+**In de praktijk (Dante, 26-09-2026):** een deal start meestal met een klein aantal studenten dat de klant zelf kiest, en rolt daarna gefaseerd uit. Niet in één keer alle studenten. "Alle studenten x prijs" is daarmee de potentie bij volledige uitrol, niet de waarde van het eerste contract. Wat dat betekent voor de gewogen pipeline in Close: `GTM/Pricing/research/adoptie-en-dealwaarde.md`.
+
 ## De drempel
 
 **Minimaal 300 lerenden per jaar.** Daaronder gaat een opleider niet de outreach in.

@@ -1,6 +1,6 @@
 # Eduface
 
-_Laatst bijgewerkt: 2026-09-19._
+_Laatst bijgewerkt: 2026-09-26._
 
 Het bedrijf waar Dante werkt. Juridisch heet het **Blockbook B.V.**, daar komt zijn salaris ook vandaan. Naar buiten is alles Eduface. Dit bestand is alleen het minimum dat elke sessie nodig heeft: wat we verkopen, aan wie, en wie er werkt. Alles wat dieper gaat staat in een eigen bestand, zie **Waar de details staan**.
 
@@ -19,7 +19,7 @@ Het is dus meer dan schriftelijke feedback en nakijken: mondeling toetsen hoort 
 
 ## Twee versies van het product
 
-- **Enterprise.** De versie waar onze betalende klanten op zitten. Hier geldt het NPS-doel van boven de 50 uit `Context/current-priorities.md`.
+- **Enterprise.** De versie waar onze betalende klanten op zitten. Hier geldt het NPS-doel van boven de 50 uit `Context/current-priorities.md`. Stand 26-09-2026: er zijn alleen kleine pilots gedraaid, maximaal 300 studenten, tegen pilotbedragen. Gebruiksdata (hoeveel docenten en studenten het echt gebruiken) is er nog niet.
 - **PLG** (product led growth). De versie waarop mensen via onze website zelf gratis een account aanmaken. Telt niet mee in de Enterprise-NPS.
 
 Noem je een cijfer of een klantervaring, zeg er altijd bij welke van de twee je bedoelt. Ze door elkaar halen maakt elk getal waardeloos.
