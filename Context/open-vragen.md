@@ -1,6 +1,6 @@
 # Open vragen
 
-_Aangelegd 19-09-2026, bijgewerkt 20-09-2026._
+_Aangelegd 19-09-2026, bijgewerkt 26-09-2026._
 
 De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat is een vraag die ik **niet zelf mag invullen**.
 
@@ -23,6 +23,7 @@ De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat 
 | A7 | Verhuist schoonmaken van zaterdag 16:00 naar zondag 15:00? | Dan staat alles met het huis op de thuisdag. Boodschappen blijven bewust op zaterdag, een dag voor het koken. | 19-09-2026 |
 | W4 | Wanneer komt de NPS-meting op Enterprise er? | Tot die er is staat het doel in `current-priorities.md` als niet stuurbaar. Dante weet het nog niet. | 19-09-2026 |
 | W5 | Na twee weken deep work: welk weektarget zetten we vast? | Het schema staat op 28 uur. De eerste twee weken zijn een nulmeting. | Vanaf 03-10-2026 |
+| W6 | **Verschuift de prioriteit naar lopende deals?** Op 26-09: "belangrijker zijn eigenlijk de mensen die we in de pipeline hebben." Blijft 20 processen per maand starten de ene prioriteit, met deals vooruit krijgen ernaast, of wordt vooruit krijgen zelf de prioriteit? | `Context/current-priorities.md` wint van alles en zegt nu: starten. Wat ik bouw en voorstel volgt dat bestand. | 26-09-2026 |
 | P11 | Wordt de vaardigheid van dit jaar "een bericht schrijven waar iemand op reageert"? | Dat volgt uit A5: als de maat geboekte gesprekken is, is dat de vaardigheid die hem bepaalt. | 19-09-2026 |
 | G15 | De actuele standen van je potjes. Je levert hier een nieuw bestand voor. | `Context/financien.md` noemt bewust geen bedragen tot dat er is. | 19-09-2026 |
 
