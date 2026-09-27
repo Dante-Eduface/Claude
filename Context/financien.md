@@ -36,20 +36,22 @@ Die verdeling voert hij echt uit, het is geen voornemen.
 | Trade Republic | Aandelen. Rekening bestaat al. |
 | Archiefrekening | Slaapt, geen bestemming |
 
-### De stand per 24-09-2026
+### De stand per 27-09-2026
 
-Uit de ABN-export van 27-09-2026, de laatste mutatie per rekening. Dit vervangt open vraag G15.
+De potjes komen uit de ABN-export van 27-09, de betaalrekening uit de ABN-app zelf. Dit vervangt open vraag G15.
 
-| Pot | Rekening | 18-09 | 24-09 |
-|---|---|---|---|
-| Betaalrekening | 882235753 | 31,53 | 59,98 |
-| Uit huis fonds | 884479609 (Savings) | 0,11 | 0,11 |
-| Curaçao | 118499882 | 122,10 | 72,10 |
-| Zorgtoeslag | 142509299 (Zorgverzekering) | 53,00 | 53,00 |
-| Trade Republic | los, handmatig | 0,00 | 0,00 |
-| expired, doet niet mee | 147953219 | 0,00 | 0,00 |
+**Een export loopt achter op de app.** De export van 27-09 eindigde op de laatste mutatie van 24-09, dus het saldo van de betaalrekening stond drie dagen stil terwijl er nog 32,34 af ging. De potjes klopten wel, want daar bewoog niets. Zet daarom nooit een bedrag uit een export onder de datum van vandaag: controleer de betaalrekening in de app.
 
-Samen **185,19** op de rekeningen, min de 950 aan zijn vader is een vermogen van **min 765 euro**. Het doel is 10.000 binnen twaalf maanden. Een week eerder was het min 743, dus het zakt langzaam verder.
+| Pot | Rekening | 18-09 | 24-09 | 27-09 |
+|---|---|---|---|---|
+| Betaalrekening | 882235753 | 31,53 | 59,98 | 27,64 |
+| Uit huis fonds | 884479609 (Savings) | 0,11 | 0,11 | 0,11 |
+| Curaçao | 118499882 | 122,10 | 72,10 | 72,10 |
+| Zorgtoeslag | 142509299 (Zorgverzekering) | 53,00 | 53,00 | 53,00 |
+| Trade Republic | los, handmatig | 0,00 | 0,00 | 0,00 |
+| expired, doet niet mee | 147953219 | 0,00 | 0,00 | 0,00 |
+
+Samen **152,85** op de rekeningen, waarvan 125,21 gespaard. Min de 950 aan zijn vader is dat een vermogen van **min 797 euro**. Het doel is 10.000 binnen twaalf maanden. Op 18-09 was het min 743, op 24-09 min 765, nu min 797. Het zakt elke week verder.
 
 **Er is sinds 03-08-2026 geen salaris binnengekomen (afgelezen 27-09-2026).** De export loopt onafgebroken van 27-08 tot en met 24-09 over de betaalrekening, en er staat in die hele periode geen betaling van Blockbook. De laatste was 2.146,82 op 03-08. Het enige dat binnenkwam was 129 zorgtoeslag op 21-09, het voorschot voor oktober. Dat is bijna acht weken zonder loon en het verklaart alles hieronder: de potjes zijn zijn inkomen geworden. **Niet zelf invullen waarom, staat als G18 open.**
 
