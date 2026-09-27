@@ -67,13 +67,17 @@ Wat er nu aankomt: de vergoeding valt in de komende dagen, daarvan betaalt hij d
 
 **Reizen: reken met wat er van de rekening af gaat, niet met wat een abonnement kost.** Dat is Dante's eigen regel (27-09-2026) en die sluit G16. Gemeten per maand, football eruit want dat is gestopt: juni 176, juli 410, augustus 432, september 258. Gemiddeld 319, over de laatste drie 367. De app staat nu op **350**. Dat is fors minder dan de 800 die ik er zelf van maakte: die 800 kwam uit een te ruime categorie waar meer in viel dan vervoer.
 
+**Curaçao kost 1.700 naast de vlucht, en dat past (27-09-2026).** De vlucht van 947,44 is al betaald en loopt als schuld van 950 aan zijn vader, dus die zit niet in de 1.700. Met 72,10 in het potje moet er nog 1.628 bij.
+
+Oktober levert daar niets voor op: van de 2.261 die binnenkomt gaat 950 naar zijn vader en 841 naar vaste lasten, reizen en boodschappen, waarna er 470 overblijft om van te leven tegen een norm van 497. Blijven november, december en januari over, drie maanden voor 543 per maand. Dat past binnen het spaardeel van 781, waarvan 129 naar de zorgtoeslag gaat. Er blijft dan 109 per maand over voor het uit-huis-fonds, ruim 300 tot aan de reis.
+
 **De zorgpremie loopt niet via het zorgpotje.** De incasso van 129,45 gaat rechtstreeks van de betaalrekening af, en rekening 142509299 krijgt alleen losse stortingen van de zorgtoeslag. Het geld draait dus rond in plaats van op te bouwen. Het doel van 1.548 in de app (twaalf maal 129) hoort daar niet bij. Staat als G17 open.
 
 ## Wat vaststaat
 
 | Wat | Bedrag | Wanneer |
 |---|---|---|
-| Curaçao | 2.030 | Reis staat geboekt, 26-01-2027 |
+| Curaçao | 1.700 | Naast de vlucht, die al betaald is. Reis staat geboekt, 26-01-2027. Bedrag van Dante zelf, 27-09-2026. |
 | Schuld aan zijn vader | 950 | Terugbetalen zodra het salaris binnen is. Was voor het boeken van Curaçao. |
 | Uit huis | 7.500 | Streefdatum 01-08-2027, naar Utrecht of Rotterdam |
 | Vermogen | 10.000 | Binnen 12 maanden. Nog steeds het doel. |

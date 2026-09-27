@@ -24,7 +24,6 @@ De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat 
 | W4 | Wanneer komt de NPS-meting op Enterprise er? | Tot die er is staat het doel in `current-priorities.md` als niet stuurbaar. Dante weet het nog niet. | 19-09-2026 |
 | W5 | Na twee weken deep work: welk weektarget zetten we vast? | Het schema staat op 28 uur. De eerste twee weken zijn een nulmeting. | Vanaf 03-10-2026 |
 | P11 | Wordt de vaardigheid van dit jaar "een bericht schrijven waar iemand op reageert"? | Dat volgt uit A5: als de maat geboekte gesprekken is, is dat de vaardigheid die hem bepaalt. | 19-09-2026 |
-| G19 | **Zit de vlucht van 947,44 in de 2.030 voor Curaçao, of komt die 2.030 er bovenop?** | Dit scheelt 875 euro. Zit de vlucht erin, dan moet er nog 1.010 bij en is dat 202 per maand. Komt het erbovenop, dan is het 1.958 en 392 per maand, en dan gaat er tot februari niets naar het uit-huis-fonds. | 27-09-2026 |
 | G17 | **Waar is rekening 142509299 (Zorgverzekering) voor?** Het parkeren van de zorgtoeslag tot de premie afgeschreven wordt, of een buffer voor een heel jaar premie? | De premie van 129,45 wordt nu rechtstreeks van je betaalrekening geïncasseerd, dus het potje bouwt niets op. Bij parkeren is het doel ongeveer één maandpremie, niet de 1.548 die er nu staat. | 20-09-2026 |
 
 ## Later, geen vraag maar een richting
@@ -76,6 +75,7 @@ Blijft staan zodat zichtbaar is wat er al gevraagd is. Alles hieronder is op 19-
 | Klopt het dat je di en do eerder stopt met werken voor de gym? | Ja, bewust. | `Context/personal.md` |
 | Gewichtdoel 92 tot 96 kg? | Geen gewichtdoel. Hij wil gewoon groter worden. | `Context/personal.md` |
 | Waarom staat Jeroen's naam op je voedingsdocument? | Kladartefact, ze werken in hetzelfde document. De cijfers zijn van Dante. | `Context/personal.md` |
+| G19, zit de vlucht in het Curaçao-bedrag. | Nee. Hij heeft 1.700 nodig naast de vlucht, die al betaald is en als schuld van 950 aan zijn vader loopt. | `Context/financien.md` |
 | G18, waarom er sinds 03-08 geen salaris binnenkwam. | Hij kreeg zijn vergoeding vooruit en liep een maand voor. Augustus en september op één salaris gedaan, daarmee is de schuld bij Eduface afgelost en hoeft hij niet meer vooruit betaald te worden. | `Context/financien.md` |
 | G16, wat reizen echt kost. | Reken met wat er van de rekening af gaat, niet met een abonnement. Gemeten: 176, 410, 432, 258 over juni tot september. App staat op 350. | `Context/financien.md` |
 | G15, de actuele standen van je potjes. | Uit de ABN-export van 20-09-2026: betaalrekening 31,53, Savings 0,11, Curaçao 122,10, Zorgverzekering 53,00, Trade Republic leeg. Samen 206,74, min de 950 aan je vader is een vermogen van min 743. | `Context/financien.md` |

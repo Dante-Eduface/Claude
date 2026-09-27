@@ -249,12 +249,14 @@ const D={
   // Gemeten jun t/m sep 2026: 176, 410, 432, 258. Gemiddeld 319, laatste drie 367.
   inkomen:2132, zorgtoeslag:129, vasteLasten:341, reizen:350,
   pctSparen:55, pctLeven:35, pctAandelen:10,
-  potUitHuis:7500, potCuracao:2030, curacaoDatum:'2027-01-26', uitHuisDatum:'2027-08-01',
+  // potCuracao is wat hij NAAST de vlucht nodig heeft. De vlucht van 947,44 is al
+  // betaald en loopt via schuldPa, dus die zit hier bewust niet in.
+  potUitHuis:7500, potCuracao:1700, curacaoDatum:'2027-01-26', uitHuisDatum:'2027-08-01',
   saldoUH:0.11, saldoCur:72.10, saldoAA:0, saldoZorg:53, schuldPa:950,
   // Saldo van de betaalrekening PER DATUM. Nooit een bedrag uit een export onder
   // de datum van vandaag zetten: een export loopt achter, en dan liegt de kop.
   saldoStart:{'2026-09-24':59.98,'2026-09-27':27.64}, standPer:'2026-09-27',
-  seed10:false, checks:{'2026-08':{zorg:true,cur:true,uh:true,aa:true}},
+  seed11:false, checks:{'2026-08':{zorg:true,cur:true,uh:true,aa:true}},
   daily:{}, saldi:{}, rules:{}, tx:[], eigen:[]
 };
 const CATS=['Inkomen','Vaste lasten','Reizen','Boodschappen','Leven','Sparen','Negeren'];
@@ -588,10 +590,10 @@ function buildSettings(){const el=document.getElementById('settings');el.innerHT
 (async function(){
   await load();
   if(!Object.keys(S.daily).length&&S.saldoStart){Object.assign(S.daily,S.saldoStart);await save(true);}
-  if(!S.seed10){ S.tx=[]; S.saldi={}; S.eigen=[];
+  if(!S.seed11){ S.tx=[]; S.saldi={}; S.eigen=[];
     S.saldoUH=0.11; S.saldoCur=72.10; S.saldoZorg=53; S.saldoAA=0; S.schuldPa=950;
-    S.vasteLasten=341; S.reizen=350; S.inkomen=2132; S.potCuracao=2030; S.curacaoDatum='2027-01-26';
-    S.standPer='2026-09-27'; Object.assign(S.daily,D.saldoStart); S.seed10=true; await save(true); }
+    S.vasteLasten=341; S.reizen=350; S.inkomen=2132; S.potCuracao=1700; S.curacaoDatum='2027-01-26';
+    S.standPer='2026-09-27'; Object.assign(S.daily,D.saldoStart); S.seed11=true; await save(true); }
   buildSettings();
   ['rS','rL','rA'].forEach((id,i)=>{document.getElementById(id).value=[S.pctSparen,S.pctLeven,S.pctAandelen][i];});
   render();
