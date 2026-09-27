@@ -4,7 +4,7 @@
 >
 > **Kijk vooruit, niet achteruit.** Dante op 19-09-2026: *"ik wil dat je niet zo bezig bent met het verleden, de situatie is heel anders."* De historische uitgavenanalyse uit de afschriften is daarom hier niet overgenomen. Gebruik dit bestand voor waar hij naartoe gaat, niet voor wat hij vorig jaar uitgaf.
 
-_Laatst bijgewerkt: 20-09-2026. Bron: Dante zelf, plus zijn geldplan-app._
+_Laatst bijgewerkt: 27-09-2026. Bron: Dante zelf, plus zijn ABN-afschriften._
 
 ## Wat er binnenkomt
 
@@ -36,26 +36,32 @@ Die verdeling voert hij echt uit, het is geen voornemen.
 | Trade Republic | Aandelen. Rekening bestaat al. |
 | Archiefrekening | Slaapt, geen bestemming |
 
-### De stand per 18-09-2026
+### De stand per 24-09-2026
 
-Uit de ABN-export van 20-09-2026, de laatste mutatie per rekening. Dit vervangt open vraag G15.
+Uit de ABN-export van 27-09-2026, de laatste mutatie per rekening. Dit vervangt open vraag G15.
 
-| Pot | Rekening | Stand |
-|---|---|---|
-| Betaalrekening | 882235753 | 31,53 |
-| Uit huis fonds | 884479609 (Savings) | 0,11 |
-| Curaçao | 118499882 | 122,10 |
-| Zorgtoeslag | 142509299 (Zorgverzekering) | 53,00 |
-| Trade Republic | los, handmatig | 0,00 |
-| expired, doet niet mee | 147953219 | 0,00 |
+| Pot | Rekening | 18-09 | 24-09 |
+|---|---|---|---|
+| Betaalrekening | 882235753 | 31,53 | 59,98 |
+| Uit huis fonds | 884479609 (Savings) | 0,11 | 0,11 |
+| Curaçao | 118499882 | 122,10 | 72,10 |
+| Zorgtoeslag | 142509299 (Zorgverzekering) | 53,00 | 53,00 |
+| Trade Republic | los, handmatig | 0,00 | 0,00 |
+| expired, doet niet mee | 147953219 | 0,00 | 0,00 |
 
-Samen **206,74** op de rekeningen, min de 950 aan zijn vader is een vermogen van **min 743 euro**. Het doel is 10.000 binnen twaalf maanden.
+Samen **185,19** op de rekeningen, min de 950 aan zijn vader is een vermogen van **min 765 euro**. Het doel is 10.000 binnen twaalf maanden. Een week eerder was het min 743, dus het zakt langzaam verder.
+
+**Er is sinds 03-08-2026 geen salaris binnengekomen (afgelezen 27-09-2026).** De export loopt onafgebroken van 27-08 tot en met 24-09 over de betaalrekening, en er staat in die hele periode geen betaling van Blockbook. De laatste was 2.146,82 op 03-08. Het enige dat binnenkwam was 129 zorgtoeslag op 21-09, het voorschot voor oktober. Dat is bijna acht weken zonder loon en het verklaart alles hieronder: de potjes zijn zijn inkomen geworden. **Niet zelf invullen waarom, staat als G18 open.**
 
 **De potjes worden leeggehaald, dat is het echte patroon.** Op 8 augustus ging er 219 naar Savings en 529 naar Curaçao. Op 18 september staat Savings op 0,11 en Curaçao op 122,10. Het gaat in kleine bedragen terug naar de betaalrekening: 5, 14, 20, 40, 50 euro per keer. De verdeling van 55/35/10 wordt op salarisdag echt uitgevoerd, en daarna in de weken erna teruggedraaid. Zijn eigen rem, weinig op de rekening houden, werkt daardoor niet: het potje is één tik weg.
 
-**September is een uitzonderingsmaand.** Op 18-09 was het salaris nog niet binnen en de zorgtoeslag ook niet. Wat er in september binnenkwam: 950 van zijn vader (de lening voor de vlucht, dezelfde dag doorbetaald aan KLM, 947,44), 159,26 uit Trade Republic, en 467 uit zijn eigen potjes. **Trade Republic is daarmee leeg.**
+**September is geen uitzonderingsmaand maar een maand zonder loon.** Wat er binnenkwam: 950 van zijn vader (de lening voor de vlucht, dezelfde dag doorbetaald aan KLM, 947,44), 159,26 uit Trade Republic, 129 zorgtoeslag, en de rest uit zijn eigen potjes. **Trade Republic is daarmee leeg.**
 
-**Reizen is de grootste post en veel hoger dan gedacht.** Alleen NS: 139 in juni, 387 in juli, 414 in augustus, 247 in september tot de 18e. Inclusief overig vervoer kwam de categorie in juni tot en met augustus op 886, 898 en 665 per maand. In de app stond 140. Dat verschil alleen al verklaart waarom het plan niet uitkwam. Staat als G16 open.
+**De potjes zijn de boodschappenpot geworden, dat staat letterlijk in de omschrijvingen.** Wat hij er sinds eind augustus uit haalde en waarvoor: 40 Boodschappen, 5 Meal prep bakjes, 100 Boeken van mijn ticket naar Curaçao, 246,90 NS betalen 08 periode, 50 Tanken en boodschappen, 15 Snel binder plus Jeroen betalen, 21 Boodschappen voor kantoor. Het Curaçao-potje ging van 529 op 08-08 naar 72,10 op 20-09.
+
+**Twee daarvan zijn werkkosten die hij zelf voorschiet:** de binder, het betalen van Jeroen en de boodschappen voor kantoor. Samen 36 euro uit het zorgpotje in twee dagen. Klein bedrag, maar het patroon is dat Eduface-uitgaven uit een potje komen dat voor verhuizen bedoeld is, terwijl zijn reiskosten ook al niet vergoed worden.
+
+**Reizen is de grootste post en veel hoger dan gedacht, maar hoeveel precies is nog onzeker.** Alleen NS: 139 in juni, 387 in juli, 414 in augustus, 246,90 in september. Inclusief overig vervoer kwam de categorie in juni tot en met augustus op 886, 898 en 665 per maand, terwijl september op ongeveer 257 uitkwam. In de app stond 140, nu staat er 800, en die 800 is waarschijnlijk te hoog: september was veel lager. De NS-afschrijving heet "08 periode", dus het gaat per periode en niet per maand, wat de maandcijfers scheef trekt. Staat als G16 open, en het antwoord daarop bepaalt het hele plan.
 
 **De zorgpremie loopt niet via het zorgpotje.** De incasso van 129,45 gaat rechtstreeks van de betaalrekening af, en rekening 142509299 krijgt alleen losse stortingen van de zorgtoeslag. Het geld draait dus rond in plaats van op te bouwen. Het doel van 1.548 in de app (twaalf maal 129) hoort daar niet bij. Staat als G17 open.
 

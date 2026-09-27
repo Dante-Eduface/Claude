@@ -1,6 +1,6 @@
 # Open vragen
 
-_Aangelegd 19-09-2026, bijgewerkt 20-09-2026._
+_Aangelegd 19-09-2026, bijgewerkt 27-09-2026._
 
 De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat is een vraag die ik **niet zelf mag invullen**.
 
@@ -24,7 +24,8 @@ De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat 
 | W4 | Wanneer komt de NPS-meting op Enterprise er? | Tot die er is staat het doel in `current-priorities.md` als niet stuurbaar. Dante weet het nog niet. | 19-09-2026 |
 | W5 | Na twee weken deep work: welk weektarget zetten we vast? | Het schema staat op 28 uur. De eerste twee weken zijn een nulmeting. | Vanaf 03-10-2026 |
 | P11 | Wordt de vaardigheid van dit jaar "een bericht schrijven waar iemand op reageert"? | Dat volgt uit A5: als de maat geboekte gesprekken is, is dat de vaardigheid die hem bepaalt. | 19-09-2026 |
-| G16 | **Wat kost reizen je echt per maand?** Je zei 145 aan spitsritten naast Dal Vrij. De afschriften zeggen alleen al aan NS 387 in juli en 414 in augustus, en inclusief overig vervoer kwam de hele post op 665 tot 898 per maand. | Dit is de grootste post na leefgeld en hij stond in de app op 140. Het verschil is ruwweg 660 per maand, en dat is precies het gat in je plan. | 20-09-2026 |
+| G18 | **Waarom is er sinds 03-08-2026 geen salaris binnengekomen?** De afschriften lopen onafgebroken tot 24-09 en er staat geen betaling van Blockbook in. Gaat het naar een andere rekening, is de betaling uitgesteld, of loopt er iets anders? | Dit is niet een detail in zijn geldplan, dit is zijn geldplan. Bijna acht weken zonder loon is waarom de potjes leeg zijn en waarom hij 950 van zijn vader moest lenen. Alles wat ik over sparen of over de 10.000 zeg is zinloos zolang dit niet duidelijk is. | 27-09-2026 |
+| G16 | **Wat kost reizen je echt per maand?** Je zei 145 aan spitsritten naast Dal Vrij. De afschriften zeggen alleen al aan NS 387 in juli en 414 in augustus, en inclusief overig vervoer kwam de hele post op 665 tot 898 per maand. | Dit is de grootste post na leefgeld. Hij stond in de app op 140, staat nu op 800, en die 800 is waarschijnlijk te hoog: september kwam op ongeveer 257. De NS-afschrijving heet "08 periode", dus het loopt per periode en niet per maand. | 20-09-2026 |
 | G17 | **Waar is rekening 142509299 (Zorgverzekering) voor?** Het parkeren van de zorgtoeslag tot de premie afgeschreven wordt, of een buffer voor een heel jaar premie? | De premie van 129,45 wordt nu rechtstreeks van je betaalrekening geïncasseerd, dus het potje bouwt niets op. Bij parkeren is het doel ongeveer één maandpremie, niet de 1.548 die er nu staat. | 20-09-2026 |
 
 ## Later, geen vraag maar een richting

@@ -242,12 +242,12 @@ const MAANDEN={
 const POTREK={'884479609':'saldoUH','118499882':'saldoCur','142509299':'saldoZorg'};
 const REKNAAM={'882235753':'Betaalrekening','884479609':'Savings','118499882':'Curacao','142509299':'Zorgverzekering'};
 const D={
-  // Standen per 18-09-2026, uit de ABN-export. Zie Context/financien.md.
+  // Standen per 24-09-2026, uit de ABN-export van 27-09. Zie Context/financien.md.
   inkomen:2132, zorgtoeslag:129, vasteLasten:341, reizen:800,
   pctSparen:55, pctLeven:35, pctAandelen:10,
   potUitHuis:7500, potCuracao:2030, curacaoDatum:'2027-01-26', uitHuisDatum:'2027-08-01',
-  saldoUH:0.11, saldoCur:122.10, saldoAA:0, saldoZorg:53, schuldPa:950,
-  startSaldo:31.53, seed7:false, checks:{'2026-08':{zorg:true,cur:true,uh:true,aa:true}},
+  saldoUH:0.11, saldoCur:72.10, saldoAA:0, saldoZorg:53, schuldPa:950,
+  startSaldo:59.98, seed8:false, checks:{'2026-08':{zorg:true,cur:true,uh:true,aa:true}},
   daily:{}, saldi:{}, rules:{}, tx:[], eigen:[]
 };
 const CATS=['Inkomen','Vaste lasten','Reizen','Boodschappen','Leven','Sparen','Negeren'];
@@ -576,10 +576,10 @@ function buildSettings(){const el=document.getElementById('settings');el.innerHT
 (async function(){
   await load();
   if(!Object.keys(S.daily).length&&S.startSaldo){S.daily[iso(new Date())]=S.startSaldo;await save(true);}
-  if(!S.seed7){ S.tx=[]; S.saldi={}; S.eigen=[];
-    S.saldoUH=0.11; S.saldoCur=122.10; S.saldoZorg=53; S.saldoAA=0; S.schuldPa=950;
+  if(!S.seed8){ S.tx=[]; S.saldi={}; S.eigen=[];
+    S.saldoUH=0.11; S.saldoCur=72.10; S.saldoZorg=53; S.saldoAA=0; S.schuldPa=950;
     S.vasteLasten=341; S.reizen=800; S.inkomen=2132; S.potCuracao=2030; S.curacaoDatum='2027-01-26';
-    S.daily[iso(new Date())]=31.53; S.seed7=true; await save(true); }
+    S.daily[iso(new Date())]=59.98; S.seed8=true; await save(true); }
   buildSettings();
   ['rS','rL','rA'].forEach((id,i)=>{document.getElementById(id).value=[S.pctSparen,S.pctLeven,S.pctAandelen][i];});
   render();
