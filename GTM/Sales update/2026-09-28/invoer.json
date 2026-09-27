@@ -1,0 +1,11 @@
+{
+  "voorbeeld": true,
+  "gestart_week": 4,
+  "gestart_maand": 12,
+  "uitdaging": "Voorbeeld: eerste gesprekken lopen vast voordat we de beslisser spreken",
+  "uitdaging_toelichting": "Voorbeeldtekst. Hier komen maximaal twee regels context.",
+  "losse_punten": [
+    "Voorbeeldpunt een",
+    "Voorbeeldpunt twee"
+  ]
+}
