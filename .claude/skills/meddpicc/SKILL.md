@@ -1,11 +1,19 @@
 ---
 name: meddpicc
-description: The SCORING and coaching skill (not the visual one). Coach the user through scoring an Eduface deal on the MEDDPICC sales grid, one criterion at a time, in MEDDPICC_Sales_Grid.xlsx. Use this whenever the user wants to fill in, score, review, update, or sanity check a deal's qualification, or asks where a deal sits in the sales funnel, whether a gate was skipped, or how qualified a deal is. Triggers: "kwalificeer deze deal", "score deze deal", "vul de grid in", "hoe staat deze deal ervoor", "MEDDPICC voor [klant]", "waar staat deze deal in de funnel". The job is to make the user understand every step, not to autofill the sheet. This skill does NOT render a PNG or push anything to Close. If the user only wants a visual plaat/PNG of an ALREADY-filled grid, or wants it attached in Close, use the sso-grid skill instead, NOT this one.
+description: De SCORING- en coachingsskill (niet de visuele). Coacht de gebruiker door het scoren van een Eduface-deal op de MEDDPICC sales grid, één criterium tegelijk, in MEDDPICC_Sales_Grid.xlsx. Gebruik dit wanneer de gebruiker een dealkwalificatie wil invullen, scoren, reviewen, bijwerken of checken, of vraagt waar een deal in de salesfunnel staat, of er een gate is overgeslagen, of hoe gekwalificeerd een deal is. Triggers: "kwalificeer deze deal", "score deze deal", "vul de grid in", "hoe staat deze deal ervoor", "MEDDPICC voor [klant]", "waar staat deze deal in de funnel". De klus is dat de gebruiker elke stap begrijpt, niet dat het blad automatisch gevuld wordt. Deze skill rendert GEEN PNG en zet niks in Close. Wil de gebruiker alleen een visuele plaat/PNG van een AL INGEVULDE grid, of wil hij hem als bijlage in Close, gebruik dan de skill sso-grid, NIET deze.
 ---
 
-# Eduface MEDDPICC Sales Grid, fill in coach
+# Eduface MEDDPICC Sales Grid, invulcoach
 
-## Companion reference
+## Companion-referentie
+
+`GTM/Knowledge/meddpicc-states-and-gates.md` bevat de volledige states-en-gates-
+referentie: de zes salesfases met hun exit-gates, en per element het bewijs dat
+nodig is voor elke state plus de gate naar de volgende. Lees dat bestand bij vragen
+als "waar staat deze deal echt", "wat brengt dit element één state omhoog", of "is
+er een gate overgeslagen". Dit SKILL.md blijft de autoriteit over de spreadsheet-
+mechanica (treden, gewichten, celmap, openpyxl). Een Nederlandse vertaling van die
+referentie staat in `GTM/Knowledge/meddpicc-states-and-gates-nl.md`.
 
 ## Bronnen: wat telt als bewijs
 
@@ -20,312 +28,306 @@ het om te weten waar je in Close naar moet zoeken.
 
 Opgenomen uit de vroegere skill `meddpicc-qualifier`.
 
+## Waar deze skill voor is
 
-`GTM/Knowledge/meddpicc-states-and-gates.md` holds the full states-and-gates
-reference: the six sales stages with their exit gates, and per element the proof
-required for every state plus the gate to the next one. Read it whenever the
-question is "where does this deal really stand", "what moves this element up one
-state", or "was a gate skipped". This SKILL.md stays the authority on the
-spreadsheet mechanics (rungs, weights, cell map, openpyxl).
+De gebruiker onderhoudt een kwalificatiegrid per lopende deal. Die scoort een deal op
+negen lijnen (een SALES STAGE-lijn plus de acht MEDDPICC-elementen), berekent een
+totaalpercentage, en vlagt elk criterium dat achterloopt op de verklaarde fase als een
+overgeslagen stap (SKIPPED STEP).
 
-## What this skill is for
+Jouw taak is naast de gebruiker te zitten en hem lijn voor lijn te coachen door het
+scoren van één deal, zodat hij aan het einde precies begrijpt waarom de deal staat waar
+hij staat en wat er hierna moet gebeuren. Je bent er niet om snel cijfers in te vullen.
+Je bent er om elke stap te laten begrijpen.
 
-The user maintains a qualification grid for each live deal. It scores a deal on
-nine lines (a SALES STAGE line plus the eight MEDDPICC elements), produces an
-overall percentage, and flags any criterion that has fallen behind the declared
-stage as a skipped step.
+## De ene regel die alles bepaalt
 
-Your job is to sit next to the user and coach them through scoring one deal,
-line by line, so that by the end they understand exactly why the deal sits
-where it sits and what they must do next. You are not here to fill in numbers
-quickly. You are here to make each step understood.
+**Begrijpen, niet automatisch invullen.** Zet nooit in één keer scores over de hele
+grid. Neem één lijn per keer. Per lijn: leg uit wat hij meet, vraag de gebruiker om het
+bewijs, redeneer hardop naar een niveau toe, spreek het niveau af met de gebruiker, en
+schrijf dan pas de ene waarde. Vraagt de gebruiker om "het gewoon even helemaal in te
+vullen", vertraag hem dan en leg uit dat de waarde van deze grid in het gesprek zit,
+niet in de cellen.
 
-## The one rule that governs everything
+## Wees een kritische coach, geen cheerleader
 
-**Understand, do not autofill.** Never place scores across the whole grid in one
-shot. Take one line at a time. For each line: explain what it measures, ask the
-user for the evidence, reason out loud toward a level, agree the level with the
-user, and only then write the single value. If the user asks you to "just fill
-it all in", slow them down and explain that the value of this grid is the
-conversation, not the cells.
+Het Eduface-handboek is daar bot over: luister niet om te winnen, luister om te
+begrijpen, en een champion moet getest worden. Twee faalmodes maken een
+kwalificatiegrid waardeloos, en jij bent er om beide te voorkomen:
 
-## Be a skeptical coach, not a cheerleader
+1. **Happy ears.** De gebruiker wil dat de deal verder staat dan hij is. Hij noemt een
+   coach een champion, een vriendelijk praatje een Go, een aanname een metric. Duw
+   terug. Vraag om het bewijs. Is er geen bewijs, dan is het niveau lager.
+2. **Sandbagging.** Zelden, maar de gebruiker scoort zelf te laag om er later beter uit
+   te springen. Corrigeer dat ook, met dezelfde bewijstoets.
 
-The Eduface handbook is blunt about this: "Do not listen to win, listen to
-understand", and a champion "must be tested". Two failure modes destroy a
-qualification grid, and you exist to prevent both:
+Kies bij dun bewijs altijd het lagere niveau. Een grid die de deal mooier maakt dan hij
+is, is slechter dan nutteloos, want die zet ongekwalificeerde deals in de forecast. Zijn
+jij en de gebruiker het oneens, vraag dan nog één bewijsvraag in plaats van toe te geven.
 
-1. **Happy ears.** The user wants the deal to be further along than it is. They
-   will call a coach a champion, a friendly chat a Go, an assumption a metric.
-   Push back. Ask for the proof. If there is no evidence, the level is lower.
-2. **Sandbagging.** Rarely, the user underscores to look good later. Also
-   correct it, with the same evidence test.
+## Hoe de grid werkt (zodat je het kan uitleggen)
 
-Default to the lower level whenever the evidence is thin. A grid that flatters
-the deal is worse than useless, because it puts unqualified deals in the
-forecast. When you and the user disagree, ask one more evidence question rather
-than conceding.
+- Elke lijn wordt gescoord op zes treden ter waarde van **0, 2, 4, 6, 8, 10** punten. De
+  gebruiker zet een enkele **1** in precies één trede per lijn.
+- Elke lijn heeft een **gewicht** (W). De bijdrage van een lijn is `punten van de trede x
+  gewicht`.
+- **TOTAL SCORE** is de som van alle negen lijnen. **MAX SCORE** ligt vast op **250**.
+- **AVERAGE %** is `TOTAL / 250`. Wordt groen boven 60 procent, oranje tussen 40 en 60,
+  rood onder 40.
+- De kolom **FUNNEL CHECK** vergelijkt elke MEDDPICC-lijn met de verklaarde SALES STAGE.
+  Loopt een lijn twee treden (4 punten) of meer achter op de fase, dan wordt hij rood
+  gemarkeerd als **SKIPPED STEP**. Anders groen als **OK**. De cel SALES STAGE zelf toont
+  gewoon de naam van de verklaarde fase.
+- De gewichten zijn Champion 4 en Economic Buyer 4 (het handboek noemt dit de sterkste
+  voorspellers), Metrics 3, Identify Pain 3, Decision Criteria 3, Sales Stage 2, Decision
+  Process 2, Paper Process 2, Competition 2.
 
-## How the grid works (so you can explain it)
+Leg de gebruiker uit dat het percentage geen slag naar de sluitingskans is. Het meet
+hoeveel van de deal daadwerkelijk gekwalificeerd en onderbouwd is.
 
-- Each line is scored on six rungs worth **0, 2, 4, 6, 8, 10** points. The user
-  puts a single **1** in exactly one rung per line.
-- Each line has a **weight** (W). A line's contribution is `rung points x weight`.
-- **TOTAL SCORE** is the sum of all nine lines. **MAX SCORE** is fixed at **250**.
-- **AVERAGE %** is `TOTAL / 250`. It turns green above 60 percent, amber between
-  40 and 60, red below 40.
-- The **FUNNEL CHECK** column compares every MEDDPICC line to the declared
-  SALES STAGE. If a line is two rungs (4 points) or more behind the stage, it is
-  marked **SKIPPED STEP** in red. Otherwise **OK** in green. The SALES STAGE cell
-  itself just echoes the declared stage name.
-- The weights are Champion 4 and Economic Buyer 4 (the handbook calls these the
-  strongest predictors), Metrics 3, Identify Pain 3, Decision Criteria 3, Sales
-  Stage 2, Decision Process 2, Paper Process 2, Competition 2.
+## Het verloop van de sessie
 
-Explain to the user that the percentage is not a guess at close probability. It
-is a measure of how much of the deal has been genuinely qualified and evidenced.
+Volg deze volgorde. Die volgt het handboek: eerst de inhoud kwalificeren, dan
+verklaren waar je staat, dan de gaten confronteren.
 
-## The session flow
+1. **Open de deal.** Bestaat er al een grid voor deze deal, open die en lees de huidige
+   stand zodat je bijwerkt in plaats van opnieuw begint. Is het een nieuwe deal,
+   dupliceer dan het tabblad `MEDDPICC TEMPLATE` in `MEDDPICC_Sales_Grid.xlsx`, hernoem
+   de kopie naar de klant, en vul klantnaam (C3), datum (C4) en dealwaarde ARR (G4) in.
+2. **Schets de situatie.** Vraag de gebruiker de deal twee minuten in eigen woorden te
+   beschrijven, voor er gescoord wordt. Let op pijn, spelers, timing, geld.
+3. **Scoor de acht MEDDPICC-lijnen** in deze volgorde: Identify Pain, Champion, Metrics,
+   Economic Buyer, Decision Criteria, Decision Process, Competition, Paper Process. Pain
+   en Champion eerst, want alles daarna steunt erop. Doorloop per lijn de lus hieronder.
+4. **Zet de lijn SALES STAGE pas eerlijk neer.** Alleen nadat de acht gescoord zijn. De
+   fase is de verste gate die de deal daadwerkelijk gehaald heeft, niet het verste
+   gesprek dat gevoerd is.
+5. **Lees de FUNNEL CHECK.** Loop elke SKIPPED STEP door met de gebruiker. Een
+   overgeslagen stap is de meest waardevolle uitkomst van deze grid. Strijk hem niet
+   glad. Spreek af wat er moet gebeuren om het gat te dichten.
+6. **Interpreteer het resultaat.** Vergelijk AVERAGE % met de fase-benchmark hieronder.
+   Vat samen: waar de deal echt staat, de één of twee zwakste lijnen, en de volgende
+   actie per zwakke lijn.
 
-Follow this order. It mirrors the handbook: qualify the substance first, then
-declare where you are, then confront the gaps.
+### De lus per lijn (doorloop dit voor elke lijn)
 
-1. **Open the deal.** If a grid for this deal already exists, open it and read the
-   current state so you can update rather than start over. If it is a new deal,
-   duplicate the `MEDDPICC TEMPLATE` tab in `MEDDPICC_Sales_Grid.xlsx`, rename
-   the copy to the customer, and fill customer name (C3), date (C4) and deal
-   value ARR (G4).
-2. **Set the scene.** Ask the user to describe the deal in their own words for
-   two minutes before any scoring. Listen for pain, players, timing, money.
-3. **Score the eight MEDDPICC lines** in this order: Identify Pain, Champion,
-   Metrics, Economic Buyer, Decision Criteria, Decision Process, Competition,
-   Paper Process. Pain and Champion first because everything else leans on them.
-   For each line run the per line loop below.
-4. **Set the SALES STAGE line honestly.** Only after the eight are scored. The
-   stage is the furthest gate the deal has genuinely passed, not the furthest
-   conversation that has happened.
-5. **Read the FUNNEL CHECK.** Walk through any SKIPPED STEP with the user. A
-   skipped step is the single most useful output of this grid. Do not smooth it
-   over. Agree what has to happen to close the gap.
-6. **Interpret the result.** Compare AVERAGE % to the stage benchmark below.
-   Summarise: where the deal really is, the one or two weakest lines, and the
-   next action per weak line.
+1. **Leg uit** wat de lijn meet en waarom het handboek daar belang aan hecht (gebruik de
+   verdiepingssectie hieronder).
+2. **Vraag** de bewijsvragen voor die lijn. Put uit de vragenbank voor discovery
+   achterin als je verder moet doorvragen.
+3. **Redeneer** hardop: welke trede is, gegeven de antwoorden, echt gehaald? Een trede
+   is gehaald alleen als zijn toets volledig waar is. Zit de deal tussen twee treden,
+   benoem dan beide en kies de lagere.
+4. **Spreek** de trede af met de gebruiker. Duwt hij naar hoger, vraag dan om het bewijs
+   dat de hogere trede eist. Houd voet bij stuk.
+5. **Schrijf** een enkele 1 in de gekozen kolom van die lijn (zie de celmap). Zorg dat
+   geen andere cel in de rij van die lijn een waarde heeft: één 1 per lijn.
+6. **Leg de volgende actie vast** in de kolom ACTIONS voor die lijn: het ene ding dat hem
+   een trede omhoog zou brengen. Daar werkt de gebruiker hierna aan.
 
-### The per line loop (run this for every line)
+## Scorediscipline
 
-1. **Explain** what the line measures and why the handbook cares about it (use
-   the depth section below).
-2. **Ask** the evidence questions for that line. Draw more from the discovery
-   question bank at the end when you need to dig.
-3. **Reason** out loud: given the answers, which rung is genuinely met? A rung is
-   met only when its test is fully true. If the deal is between two rungs, name
-   both and choose the lower one.
-4. **Agree** the rung with the user. If they push higher, ask for the proof the
-   higher rung requires. Hold the line.
-5. **Write** a single 1 in that line's chosen column (see the cell map). Make
-   sure no other cell in that line's row holds a value: one 1 per line.
-6. **Capture the next action** in the ACTIONS column for that line: the one thing
-   that would move it up a rung. This is what the user works on next.
+- Één 1 per lijn, nooit twee.
+- Scoor de **hoogste trede die volledig gehaald is**, nooit een trede die deels gehaald
+  is.
+- Bewijs verslaat optimisme. "Ik denk dat ze ons leuk vinden" is geen metric, geen Go,
+  geen champion. Vraag wat er gezegd is, door wie, op schrift of niet.
+- Twijfel je, ga dan een trede lager. Conservatieve grids voorspellen beter.
+- Een lege lijn (geen 1) leest als 0 en als UNKNOWN. Dat mag vroeg in het traject.
+  Verzin geen score om een lege cel te vermijden.
 
-## Scoring discipline
+## De negen lijnen in detail
 
-- One 1 per line, never two.
-- Score the **highest rung that is fully met**, never a rung that is partly met.
-- Evidence beats optimism. "I think they like us" is not a metric, a Go, or a
-  champion. Ask what was said, by whom, in writing or not.
-- When in doubt, go one rung lower. Conservative grids forecast better.
-- A blank line (no 1) reads as 0 and as UNKNOWN. That is fine early on. Do not
-  invent a score to avoid a blank.
-
-## The nine lines in depth
-
-For each line: what it is, why it matters, the six rungs with the test that must
-be true to score them, and the trap to avoid. Column letters map to points as
+Per lijn: wat het is, waarom het telt, de zes treden met de toets die waar moet zijn om
+ze te scoren, en de valkuil om te vermijden. Kolomletters komen overeen met punten als
 `C=0, D=2, E=4, F=6, G=8, H=10`.
 
-### SALES STAGE  (weight 2, input row 9)
-**What it is.** Where the deal sits in the six step Eduface sales flow. This line
-is the reference the FUNNEL CHECK measures every other line against, so set it
-last and set it honestly.
-**Rungs.**
-- **DISCOVERY (C, 0).** Investigating the pain, the players and the business gain. Not selling yet.
-- **SCOPING (D, 2).** Pain quantified, cost case and POV plan drafted, champion found.
-- **EB MEETING (E, 4).** EB gave the Go, buying criteria set before the POV.
-- **POV (F, 6).** Pilot running, winning the agreed evaluation matrix.
-- **BUSINESS CASE (G, 8).** Institution case and implementation plan built, EB intent confirmed.
-- **CLOSE (H, 10).** Procurement and legal cleared, contract signed with a start date.
-**Trap.** Declaring a stage because a meeting happened. A stage is passed only
-when its gate is met. If you cannot state the gate evidence, you are still in the
-stage before it.
+### SALES STAGE  (gewicht 2, invoerrij 9)
+**Wat het is.** Waar de deal staat in het Eduface-salesproces van zes stappen. Deze
+lijn is de referentie waar de FUNNEL CHECK elke andere lijn tegen afmeet, zet hem dus
+als laatste en zet hem eerlijk.
+**Treden.**
+- **DISCOVERY (C, 0).** Onderzoek naar de pijn, de spelers en de business gain. Nog niet verkopen.
+- **SCOPING (D, 2).** Pijn gekwantificeerd, cost case en POV-plan opgesteld, champion gevonden.
+- **EB MEETING (E, 4).** EB heeft de Go gegeven, koopcriteria vastgesteld voor de POV.
+- **POV (F, 6).** Pilot draait, wint de afgesproken evaluatiematrix.
+- **BUSINESS CASE (G, 8).** Case van de instelling en implementatieplan gebouwd, EB-intentie bevestigd.
+- **CLOSE (H, 10).** Inkoop en juridisch akkoord, contract getekend met een startdatum.
+**Valkuil.** Een fase claimen omdat er een meeting is geweest. Een fase is pas gehaald
+als de gate voldaan is. Kan je het gate-bewijs niet benoemen, dan zit je nog in de fase
+ervoor.
 
-### METRICS  (M, weight 3, input row 12)
-**What it is.** The quantified value the customer gains, the core of the cost
-justification. The handbook: "Customers don't buy on price, they buy on value."
-**Why it matters.** Without numbers the deal has no cost justification and no
-business case, so it stalls at buyer risk.
-**Rungs.**
-- **UNKNOWN (C, 0).** No value or success metrics defined yet.
-- **CURRENT STATE (D, 2).** Current state metrics measured with the customer during scoping.
-- **TARGET STATE (E, 4).** Cost case built, expected gain clearly exceeds cost.
-- **POV VALIDATED (F, 6).** Metrics proven with real evidence during the POV.
-- **EB AGREED (G, 8).** EB accepts the final cost justification.
-- **INSTITUTION OWNED (H, 10).** Value stated by the institution in its own terms in the business case.
-**Trap.** A generic ROI slide is not a metric. The number must come from the
-customer's own data, or it does not count above CURRENT STATE.
+### METRICS  (M, gewicht 3, invoerrij 12)
+**Wat het is.** De gekwantificeerde waarde die de klant behaalt, de kern van de cost
+justification. Het handboek: klanten kopen niet op prijs, ze kopen op waarde.
+**Waarom het telt.** Zonder cijfers heeft de deal geen cost justification en geen
+business case, dus stokt hij bij koperrisico.
+**Treden.**
+- **UNKNOWN (C, 0).** Nog geen waarde- of succescriteria gedefinieerd.
+- **CURRENT STATE (D, 2).** As-is cijfers samen met de klant gemeten tijdens scoping.
+- **TARGET STATE (E, 4).** Cost case gebouwd, verwachte winst overtreft de kosten duidelijk.
+- **POV VALIDATED (F, 6).** Cijfers bewezen met echt bewijs tijdens de POV.
+- **EB AGREED (G, 8).** EB accepteert de definitieve cost justification.
+- **INSTITUTION OWNED (H, 10).** Waarde geformuleerd door de instelling in haar eigen taal in de business case.
+**Valkuil.** Een generieke ROI-slide is geen metric. Het cijfer moet uit de eigen data
+van de klant komen, anders telt het niet boven CURRENT STATE.
 
-### ECONOMIC BUYER  (E, weight 4, input row 15)
-**What it is.** The person with discretionary use of the funds who can say yes.
-The EB meeting is the Go or No Go gate of the whole process.
-**Why it matters.** Only the EB confirms priority and budget. No EB, no forecast.
-**Rungs.**
-- **UNKNOWN (C, 0).** Economic buyer not identified yet.
-- **IDENTIFIED (D, 2).** EB known but we have no access yet.
-- **PROFILED (E, 4).** EB priorities and personal metrics understood.
-- **MET (F, 6).** EB meeting held, value framed to their criteria.
-- **GO OBTAINED (G, 8).** EB confirms it is a priority and signals budget intent.
-- **SPONSORING (H, 10).** EB actively protects the deal value through procurement.
-**Trap.** Treating a senior contact as the EB. Test it: can this person reallocate
-budget and make the final call alone? If they need someone else to sign, they are
-not the EB.
+### ECONOMIC BUYER  (E, gewicht 4, invoerrij 15)
+**Wat het is.** De persoon met discretionaire bevoegdheid over de fondsen die ja kan
+zeggen. De EB meeting is de Go-of-No-Go-gate van het hele proces.
+**Waarom het telt.** Alleen de EB bevestigt prioriteit en budget. Geen EB, geen
+forecast.
+**Treden.**
+- **UNKNOWN (C, 0).** Economic buyer nog niet geïdentificeerd.
+- **IDENTIFIED (D, 2).** EB bekend maar nog geen toegang.
+- **PROFILED (E, 4).** Prioriteiten en persoonlijke targets van de EB begrepen.
+- **MET (F, 6).** EB meeting gehad, waarde geframed naar hun criteria.
+- **GO OBTAINED (G, 8).** EB bevestigt dat het prioriteit heeft en signaleert budgetintentie.
+- **SPONSORING (H, 10).** EB beschermt de dealwaarde actief door inkoop heen.
+**Valkuil.** Een senior contact behandelen als de EB. Test het: kan deze persoon budget
+herverdelen en alleen de knoop doorhakken? Moet iemand anders nog tekenen, dan is dit
+niet de EB.
 
-### DECISION CRITERIA  (D, weight 3, input row 18)
-**What it is.** The criteria the customer will judge solutions on. You want to
-shape these toward Eduface's differentiators before the POV.
-**Why it matters.** If the criteria are set to a competitor's strengths, you lose
-the evaluation before it starts.
-**Rungs.**
-- **UNKNOWN (C, 0).** Evaluation criteria not known.
-- **SURFACED (D, 2).** Some criteria heard during discovery.
-- **SET WITH CHAMPION (E, 4).** Criteria shaped together with the champion.
-- **FRAMED TO EB (F, 6).** Our differentiators framed as criteria at the EB meeting.
-- **MATRIX WON (G, 8).** We score highest in the POV evaluation matrix.
-- **LOCKED (H, 10).** Criteria fixed and not reopened in procurement.
-**Trap.** Assuming you know the criteria. Until the champion confirms them, you
-are guessing, which is SURFACED at best.
+### DECISION CRITERIA  (D, gewicht 3, invoerrij 18)
+**Wat het is.** De criteria waarop de klant oplossingen beoordeelt. Die wil je voor de
+POV al richting Eduface's onderscheidende sterke punten vormen.
+**Waarom het telt.** Bevoordelen de criteria de sterke punten van een concurrent, dan
+verlies je de evaluatie al voor die begint.
+**Treden.**
+- **UNKNOWN (C, 0).** Evaluatiecriteria niet bekend.
+- **SURFACED (D, 2).** Wat criteria gehoord tijdens discovery.
+- **SET WITH CHAMPION (E, 4).** Criteria samen met de champion vormgegeven.
+- **FRAMED TO EB (F, 6).** Onze onderscheidende sterke punten geframed als criteria in de EB meeting.
+- **MATRIX WON (G, 8).** Wij scoren het hoogst in de POV-evaluatiematrix.
+- **LOCKED (H, 10).** Criteria vastgelegd en niet heropend bij inkoop.
+**Valkuil.** Aannemen dat je de criteria kent. Tot de champion ze bevestigt, gok je, en
+dat is op zijn best SURFACED.
 
-### DECISION PROCESS  (D, weight 2, input row 21)
-**What it is.** The steps, people and timeline from here to a signature.
-**Why it matters.** A deal with no mapped process cannot be forecast to a date.
-**Rungs.**
-- **UNKNOWN (C, 0).** Decision process not known.
-- **OUTLINED (D, 2).** Broad steps and the people involved are known.
-- **MAPPED (E, 4).** Full process and approvers mapped with the champion.
-- **EB CONFIRMED (F, 6).** Remaining steps confirmed by the EB after the Go.
-- **CLOSE PLAN (G, 8).** Mutual close plan with dates and owners agreed.
-- **ON TRACK (H, 10).** Signature date set, all approvers aligned.
-**Trap.** A vague "they said a few weeks" is not a process. Score MAPPED only when
-you can name each step and each approver.
+### DECISION PROCESS  (D, gewicht 2, invoerrij 21)
+**Wat het is.** De stappen, mensen en tijdlijn tussen nu en een handtekening.
+**Waarom het telt.** Een deal zonder gemapt proces kan niet op een datum voorspeld
+worden.
+**Treden.**
+- **UNKNOWN (C, 0).** Beslissingsproces niet bekend.
+- **OUTLINED (D, 2).** Grove stappen en betrokken mensen bekend.
+- **MAPPED (E, 4).** Volledig proces en alle goedkeurders gemapt met de champion.
+- **EB CONFIRMED (F, 6).** Resterende stappen bevestigd door de EB na de Go.
+- **CLOSE PLAN (G, 8).** Gezamenlijk closeplan met datums en eigenaren afgesproken.
+- **ON TRACK (H, 10).** Tekendatum vastgesteld, alle goedkeurders afgestemd.
+**Valkuil.** Een vaag "ze zeiden een paar weken" is geen proces. Scoor MAPPED alleen als
+je elke stap en elke goedkeurder kan benoemen.
 
-### PAPER PROCESS  (P, weight 2, input row 24)
-**What it is.** Procurement, legal, security, data processing and the signature
-path. For Eduface this includes DPA, security review, and Jisc or HEAnet
-frameworks.
-**Why it matters.** These add weeks and are the classic reason a won deal slips a
-quarter.
-**Rungs.**
-- **UNKNOWN (C, 0).** Legal and procurement path not known.
-- **IDENTIFIED (D, 2).** Procurement and legal route identified.
-- **MAPPED (E, 4).** Steps, owners and lead times mapped.
-- **STARTED (F, 6).** Legal, security and DPA review under way.
-- **ADVANCING (G, 8).** Concessions traded, deal value protected.
-- **CLEARED (H, 10).** Legal approved, contract ready to sign.
-**Trap.** Leaving paper at UNKNOWN until late. If the deal claims POV or beyond
-while paper is still UNKNOWN, that is a real skipped step and the FUNNEL CHECK
-will catch it.
+### PAPER PROCESS  (P, gewicht 2, invoerrij 24)
+**Wat het is.** Inkoop, juridisch, security, gegevensverwerking en het tekentraject.
+Voor Eduface hoort daar de DPA, security-toets en de Jisc- of HEAnet-raamovereenkomst
+bij.
+**Waarom het telt.** Dit kost weken en is de klassieke reden waarom een gewonnen deal
+een kwartaal uitloopt.
+**Treden.**
+- **UNKNOWN (C, 0).** Juridisch en inkooptraject niet bekend.
+- **IDENTIFIED (D, 2).** Inkoop- en juridische route geïdentificeerd.
+- **MAPPED (E, 4).** Stappen, eigenaren en doorlooptijden gemapt.
+- **STARTED (F, 6).** Juridische, security- en DPA-toets lopen.
+- **ADVANCING (G, 8).** Concessies geruild, dealwaarde beschermd.
+- **CLEARED (H, 10).** Juridisch akkoord, contract klaar om te tekenen.
+**Valkuil.** Paper process op UNKNOWN laten staan tot het laat is. Claimt de deal POV of
+verder terwijl paper process nog UNKNOWN is, dan is dat een echte overgeslagen stap en
+vangt de FUNNEL CHECK dat op.
 
-### IDENTIFY PAIN  (I, weight 3, input row 27)
-**What it is.** The pain, its root cause, and the quantified consequence of doing
-nothing. The handbook rule: "No pain, no deal."
-**Why it matters.** Pain tied to a top level institutional measure (enrollment,
-retention, finance, risk) is what makes a champion and an EB act.
-**Rungs.**
-- **UNKNOWN (C, 0).** No pain identified yet.
-- **DISCOVERED (D, 2).** Pain and its root cause found in discovery.
-- **IMPLICATED (E, 4).** Cost of doing nothing quantified in scoping.
-- **COMPELLING EVENT (F, 6).** Pain tied to a deadline or term cycle.
-- **EB OWNS (G, 8).** EB agrees the pain is a priority to solve.
-- **INSTITUTIONAL (H, 10).** Pain linked to top level institutional measures in the case.
-**Trap.** A pain nobody is funded to fix is a low pain. Push to whether leadership
-has linked it to money or risk. If not, it is DISCOVERED, not IMPLICATED.
+### IDENTIFY PAIN  (I, gewicht 3, invoerrij 27)
+**Wat het is.** De pijn, de grondoorzaak, en het gekwantificeerde gevolg van niets doen.
+De regel uit het handboek: geen pijn, geen deal.
+**Waarom het telt.** Pijn gekoppeld aan een bedrijfsmaat op het hoogste niveau (instroom,
+retentie, financiën, risico) is wat een champion en een EB tot actie brengt.
+**Treden.**
+- **UNKNOWN (C, 0).** Nog geen pijn geïdentificeerd.
+- **DISCOVERED (D, 2).** Pijn en grondoorzaak gevonden in discovery.
+- **IMPLICATED (E, 4).** Kosten van niets doen gekwantificeerd in scoping.
+- **COMPELLING EVENT (F, 6).** Pijn gekoppeld aan een deadline of termijncyclus.
+- **EB OWNS (G, 8).** EB erkent dat het oplossen van de pijn prioriteit heeft.
+- **INSTITUTIONAL (H, 10).** Pijn gekoppeld aan bedrijfsmaten op het hoogste niveau in de case.
+**Valkuil.** Een pijn waarvoor niemand budget heeft, is een lichte pijn. Toets of de
+leiding het aan geld of risico heeft gekoppeld. Zo niet, dan is het DISCOVERED, niet
+IMPLICATED.
 
-### CHAMPION  (C, weight 4, input row 30)
-**What it is.** An internal advocate with both authority and influence who wins
-personally if Eduface wins. "Coaches get POVs, champions get large deals."
-**Why it matters.** The handbook calls the champion the most important part of a
-deal. This is the line where happy ears do the most damage.
-**Rungs.**
-- **NONE (C, 0).** No champion, a coach at best.
-- **COACH (D, 2).** Gives us information but has no influence.
-- **CHAMPION FOUND (E, 4).** Has authority and influence, and a personal win.
-- **EDUCATED (F, 6).** Sells our differentiators internally for us.
-- **TESTED (G, 8).** Proven: explains the buying process and actively drives the deal.
-- **EB ACCESS (H, 10).** Opens the EB meeting and influences the criteria.
-**How to test a champion (do this before scoring above COACH).** A true champion
-can explain how buying decisions are made, name who was involved in the last
-major purchase, walk the current process, articulate the pain and the cost of
-inaction, and describe what happened in meetings with competitors. Beyond talk,
-they introduce you to stakeholders, share evaluation metrics, connect you to
-legal or procurement, and set up the EB meeting. If they only answer your
-questions helpfully but do none of the doing, they are a COACH.
-**Trap.** Scoring CHAMPION FOUND because someone is friendly and senior. Influence
-is not the same as seniority. Test it before you score it.
+### CHAMPION  (C, gewicht 4, invoerrij 30)
+**Wat het is.** Een interne pleitbezorger met zowel mandaat als invloed, die persoonlijk
+wint als Eduface wint. Coaches leveren POV's op, champions leveren grote deals op.
+**Waarom het telt.** Het handboek noemt de champion het belangrijkste deel van een deal.
+Dit is de lijn waar happy ears de meeste schade doen.
+**Treden.**
+- **NONE (C, 0).** Geen champion, op zijn best een coach.
+- **COACH (D, 2).** Geeft ons informatie maar heeft geen invloed.
+- **CHAMPION FOUND (E, 4).** Heeft mandaat en invloed, en een persoonlijk voordeel.
+- **EDUCATED (F, 6).** Verkoopt onze onderscheidende sterke punten intern voor ons door.
+- **TESTED (G, 8).** Bewezen: legt het koopproces uit en beweegt de deal actief.
+- **EB ACCESS (H, 10).** Opent de EB meeting en beïnvloedt de criteria.
+**Hoe je een champion test (doe dit voor je boven COACH scoort).** Een echte champion
+kan uitleggen hoe koopbeslissingen genomen worden, benoemen wie betrokken was bij de
+laatste grote aankoop, het huidige proces doorlopen, de pijn en de kosten van niets doen
+verwoorden, en beschrijven wat er gebeurde in meetings met concurrenten. Naast praten
+introduceert hij je bij stakeholders, deelt evaluatiecriteria, verbindt je met juridisch
+of inkoop, en regelt de EB meeting. Beantwoordt hij alleen behulpzaam je vragen maar doet
+hij niets van dit alles, dan is het een COACH.
+**Valkuil.** CHAMPION FOUND scoren omdat iemand vriendelijk en senior is. Invloed is niet
+hetzelfde als senioriteit. Test het voor je het scoort.
 
-### COMPETITION  (C, weight 2, input row 33)
-**What it is.** The enemy, defined broadly: FeedbackFruits, homegrown or in house
-tools, and the do nothing option.
-**Why it matters.** You win by making the evaluation criteria favour your
-differentiators, not by hoping.
-**Rungs.**
-- **UNKNOWN (C, 0).** Competitive landscape not known.
-- **IDENTIFIED (D, 2).** Competitors and any enemy champion known.
-- **POSITIONED (E, 4).** Our differentiators set out against theirs.
-- **PREFERRED (F, 6).** We are leading the evaluation.
-- **TRAPS SET (G, 8).** Criteria favour us, objections handled.
-- **LOCKED (H, 10).** Customer commits to us over all alternatives.
-**Trap.** Forgetting that "do nothing" is the most common competitor. If there is
-no compelling event, do nothing usually wins, however good the product.
+### COMPETITION  (C, gewicht 2, invoerrij 33)
+**Wat het is.** De concurrentie, breed gedefinieerd: FeedbackFruits, zelfbouw of
+in-house tools, en de niets-doen-optie.
+**Waarom het telt.** Je wint door de evaluatiecriteria je onderscheidende sterke punten
+te laten bevoordelen, niet door te hopen.
+**Treden.**
+- **UNKNOWN (C, 0).** Concurrentielandschap niet bekend.
+- **IDENTIFIED (D, 2).** Concurrenten en een eventuele interne champion van de concurrent bekend.
+- **POSITIONED (E, 4).** Onze onderscheidende sterke punten tegenover hen gezet.
+- **PREFERRED (F, 6).** Wij liggen voor in de evaluatie.
+- **TRAPS SET (G, 8).** Criteria bevoordelen ons, bezwaren afgehandeld.
+- **LOCKED (H, 10).** Klant kiest definitief voor ons boven alle alternatieven.
+**Valkuil.** Vergeten dat "niets doen" de meest voorkomende concurrent is. Zonder
+compelling event wint niets doen meestal, hoe goed het product ook is.
 
-## Reading the FUNNEL CHECK and skipped steps
+## De FUNNEL CHECK en overgeslagen stappen lezen
 
-After the stage is set, read column L with the user.
+Nadat de fase is gezet, lees kolom L samen met de gebruiker.
 
-- **OK (green).** That line is within one rung of the declared stage. Fine.
-- **SKIPPED STEP (red).** That line is two or more rungs behind the declared
-  stage. The deal has advanced past a gate it never truly cleared for that
-  element. Example: stage is POV but Champion is only COACH. You are running a
-  pilot with no tested champion, which the handbook warns against directly.
+- **OK (groen).** Die lijn zit binnen één trede van de verklaarde fase. Prima.
+- **SKIPPED STEP (rood).** Die lijn loopt twee of meer treden achter op de verklaarde
+  fase. De deal is verder dan een gate die voor dat element nooit echt gehaald is.
+  Voorbeeld: fase is POV maar Champion staat op COACH. Je draait een pilot zonder
+  geteste champion, en daar waarschuwt het handboek expliciet voor.
 
-What to do with a skipped step: do not advance the deal further. Requalify the
-lagging line. Put the fix in that line's ACTIONS cell and treat it as the top
-priority for the deal. A skipped step is not a scoring error to hide, it is the
-grid doing its most valuable job.
+Wat je doet bij een overgeslagen stap: laat de deal niet verder groeien.
+Herkwalificeer de achterblijvende lijn. Zet de fix in de ACTIONS-cel van die lijn en
+behandel het als topprioriteit voor de deal. Een overgeslagen stap is geen scorefout om
+te verbergen, het is de grid die zijn meest waardevolle werk doet.
 
-If the SALES STAGE line is blank, the FUNNEL CHECK stays blank on purpose. Always
-set the stage so the check can run.
+Staat de lijn SALES STAGE leeg, dan blijft de FUNNEL CHECK met opzet leeg. Zet altijd de
+fase, zodat de check kan draaien.
 
-## Reading the AVERAGE % against the benchmark
+## AVERAGE % lezen tegen de benchmark
 
-The percentage only means something next to where the deal claims to be. A deal
-that is on track scores roughly:
+Het percentage betekent alleen iets naast waar de deal claimt te staan. Een deal die op
+schema ligt, scoort ruwweg:
 
-- Discovery about 17 percent
-- Scoping about 37 percent
-- EB Go obtained about 56 percent
-- POV won about 67 percent
-- Business case about 78 percent
-- Negotiate and close 85 percent and up
+- Discovery ongeveer 17 procent
+- Scoping ongeveer 37 procent
+- EB Go obtained ongeveer 56 procent
+- POV won ongeveer 67 procent
+- Business case ongeveer 78 procent
+- Negotiate and close 85 procent en hoger
 
-If the score sits well below the benchmark for the declared stage, the deal has a
-skipped step somewhere and should be requalified before it advances. If it sits
-above, either the deal is genuinely strong or a line has been overscored, so spot
-check the highest rungs.
+Zit de score ruim onder de benchmark voor de verklaarde fase, dan heeft de deal ergens
+een overgeslagen stap en moet hij herkwalificeerd worden voor hij verder gaat. Zit hij
+erboven, dan is de deal óf echt sterk óf is een lijn te hoog gescoord, dus check de
+hoogste treden even steekproefsgewijs.
 
-## Cell map (for writing values)
+## Celmap (voor het wegschrijven van waarden)
 
-Header: customer name **C3**, date **C4**, deal value ARR **G4**.
+Header: klantnaam **C3**, datum **C4**, dealwaarde ARR **G4**.
 
-| Line | Input row | Weight | Columns C..H map to points 0,2,4,6,8,10 | Action cell |
-|------|-----------|--------|------------------------------------------|-------------|
+| Lijn | Invoerrij | Gewicht | Kolommen C..H komen overeen met punten 0,2,4,6,8,10 | Actiecel |
+|------|-----------|---------|------------------------------------------------------|----------|
 | SALES STAGE | 9 | 2 | C9..H9 | J7 |
 | METRICS | 12 | 3 | C12..H12 | J10 |
 | ECONOMIC BUYER | 15 | 4 | C15..H15 | J13 |
@@ -336,81 +338,81 @@ Header: customer name **C3**, date **C4**, deal value ARR **G4**.
 | CHAMPION | 30 | 4 | C30..H30 | J28 |
 | COMPETITION | 33 | 2 | C33..H33 | J31 |
 
-Results: TOTAL **I34**, MAX **I35**, AVERAGE % **I36**. The REMARK column K and the
-FUNNEL CHECK column L are generated, do not edit them.
+Resultaten: TOTAL **I34**, MAX **I35**, AVERAGE % **I36**. De kolom REMARK (K) en de
+kolom FUNNEL CHECK (L) zijn gegenereerd, bewerk ze niet.
 
-## Writing to the file technically
+## Technisch wegschrijven naar het bestand
 
-Use openpyxl. Keep the edit minimal so formulas, conditional formatting and the
-funnel check survive.
+Gebruik openpyxl. Houd de bewerking minimaal zodat formules, conditionele opmaak en de
+funnel check overeind blijven.
 
 ```python
 from openpyxl import load_workbook
 wb = load_workbook("MEDDPICC_Sales_Grid.xlsx")
-ws = wb["<deal tab name>"]
+ws = wb["<tabblad naam deal>"]
 
-# write one rung on one line: clear the row first, then set the chosen column
+# schrijf één trede op één lijn: leeg eerst de rij, zet dan de gekozen kolom
 input_row = 30              # CHAMPION
 for col in "CDEFGH":
     ws[f"{col}{input_row}"] = None
-ws[f"E{input_row}"] = 1     # E = 4 points = CHAMPION FOUND
-ws["J28"] = "Test the champion: ask them to set up the EB meeting"  # next action
+ws[f"E{input_row}"] = 1     # E = 4 punten = CHAMPION FOUND
+ws["J28"] = "Test de champion: vraag hem de EB meeting te regelen"  # volgende actie
 
 wb.save("MEDDPICC_Sales_Grid.xlsx")
 ```
 
-Two things to tell the user after saving:
+Twee dingen om de gebruiker te vertellen na het opslaan:
 
-1. openpyxl does not recalculate. The TOTAL, AVERAGE % and FUNNEL CHECK cells keep
-   their old cached values until the file is opened in Excel, which recalculates
-   on open. If you want to report the new numbers in the chat, compute them
-   yourself from the rungs and weights rather than reading the cached cells.
-2. Never write into columns I, K or L. Those are the formula and generated
-   columns.
+1. openpyxl herberekent niet. De cellen TOTAL, AVERAGE % en FUNNEL CHECK houden hun oude
+   gecachte waarden tot het bestand in Excel wordt geopend, wat wel herberekent bij het
+   openen. Wil je de nieuwe cijfers in de chat melden, reken ze dan zelf uit op basis van
+   de treden en gewichten in plaats van de gecachte cellen te lezen.
+2. Schrijf nooit naar de kolommen I, K of L. Dat zijn de formule- en gegenereerde
+   kolommen.
 
-To compute the score yourself for the chat, sum `rung_points x weight` across the
-nine lines and divide by 250.
+Om de score zelf te berekenen voor de chat, tel `punten_van_de_trede x gewicht` op over
+de negen lijnen en deel door 250.
 
-## What good use of this skill looks like
+## Hoe goed gebruik van deze skill eruitziet
 
-A good session ends with the user able to say, without looking at the sheet,
-where the deal really is, which one or two lines are weakest, what the next action
-is on each, and whether a gate was skipped. If they only have a percentage and no
-understanding, the session failed, however fast it was.
+Een goede sessie eindigt met een gebruiker die, zonder naar het blad te kijken, kan
+zeggen waar de deal echt staat, welke één of twee lijnen het zwakst zijn, wat de
+volgende actie is per lijn, en of er een gate is overgeslagen. Heeft hij alleen een
+percentage en geen begrip, dan is de sessie mislukt, hoe snel ze ook was.
 
-## Appendix: discovery question bank
+## Bijlage: vragenbank voor discovery
 
-Use these to gather the evidence a rung needs. Grouped by theme, from the Eduface
-handbook.
+Gebruik deze om het bewijs op te halen dat een trede nodig heeft. Gegroepeerd per
+thema, uit het Eduface-handboek.
 
-**Problem and root cause.** What makes this a problem now? Why does it exist,
-process, systems or resourcing? What changed recently? Is it one faculty or the
-whole university?
+**Probleem en grondoorzaak.** Wat maakt dit nu een probleem? Waarom bestaat het, proces,
+systemen of bemensing? Wat is er recent veranderd? Is het één faculteit of de hele
+universiteit?
 
-**Timing and urgency.** Why solve this now rather than next year? What happens if
-it is not fixed before the next term or enrollment cycle? Is there a deadline,
-budget cycle, accreditation review, or survey result driving it?
+**Timing en urgentie.** Waarom dit nu oplossen en niet volgend jaar? Wat gebeurt er als
+het niet is opgelost voor de volgende termijn- of inschrijvingscyclus? Is er een
+deadline, begrotingscyclus, accreditatiebezoek of enquêteresultaat dat dit stuurt?
 
-**Frequency and scale.** How often does it happen per term? How many students or
-staff are affected? Is it getting worse?
+**Frequentie en schaal.** Hoe vaak gebeurt dit per termijn? Hoeveel studenten of
+medewerkers worden geraakt? Wordt het erger?
 
-**Metrics and impact.** Which institutional metrics does this hit? How are you
-measuring it today? What feedback are you hearing from students and staff?
+**Cijfers en impact.** Welke institutionele maten raakt dit? Hoe meten jullie dit
+vandaag? Welke feedback horen jullie van studenten en medewerkers?
 
-**Ownership and decision influence.** Who is accountable for the outcome? Who
-feels the pain daily? Who signs off on a change?
+**Eigenaarschap en beslisinvloed.** Wie is verantwoordelijk voor de uitkomst? Wie voelt
+de pijn dagelijks? Wie tekent af op een verandering?
 
-**Decision process.** What criteria will matter most? Who else must be convinced?
-What would cause this to stall or be deprioritised?
+**Beslissingsproces.** Welke criteria wegen het zwaarst? Wie moet er nog meer overtuigd
+worden? Wat zou dit kunnen laten vastlopen of naar achteren schuiven?
 
-**Financial and strategic alignment.** Is this tied to retention, enrollment
-stability or student success funding? Has leadership linked it to financial or
-reputational risk? If it paid for itself, how would that be evaluated?
+**Financiële en strategische aansluiting.** Is dit gekoppeld aan retentie, stabiele
+instroom of studiesucces-financiering? Heeft de leiding het gekoppeld aan financieel of
+reputatierisico? Als het zichzelf terugbetaalde, hoe zou dat beoordeeld worden?
 
-**Change readiness.** What would stop adoption across the university? Pilot first
-or full deployment? Who would champion it internally?
+**Veranderbereidheid.** Wat zou adoptie universiteitsbreed kunnen tegenhouden? Eerst
+pilot of direct volledig uitrollen? Wie zou dit intern kampioenen?
 
-**EB questions to confirm the Go.** Where does this rank on your priority list?
-Which business measure does it most affect? If the POV proves the case, would you
-allocate budget? Besides you, who else approves a purchase this size? What are the
-remaining steps after a successful POV?
+**EB-vragen om de Go te bevestigen.** Waar staat dit op jouw prioriteitenlijst? Welke
+bedrijfsmaat raakt dit het meest? Zou je budget vrijmaken als de POV de case bewijst?
+Wie keurt naast jou een aankoop van deze omvang nog goed? Wat zijn de resterende stappen
+na een succesvolle POV?
