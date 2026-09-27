@@ -16,7 +16,15 @@ Gerekend over **12 maanden**, dus 36 per student per jaar.
 
 Bij 300 studenten is dat 10.800 per jaar, ongeveer waar de oude staffel A op uitkwam. De drempel is dus niet strenger geworden, alleen uitgedrukt in iets dat je kunt opzoeken.
 
+_27-09-2026: als prijs achterhaald. Het kleinste contract is 500 studenten, zie hieronder. Of 300 de outreachdrempel blijft staat open._
+
 Waarom in lerenden en niet in geld: 300 lerenden is in elke markt hetzelfde getal. De oude geldvloer moest per markt omgerekend worden (NL 10.000 euro, UK 8.500 pond), en dan zijn de markten niet meer naast elkaar te leggen.
+
+## De kleinste staffel
+
+Dante, 27-09-2026: *"onze kleinste staffel is minimaal 500 studenten."* Het kleinste contract is dus 500 x 36 = **18.000 per jaar**. Dat bedrag staat in Close ook op elke Deal-kaart waarvan de dealwaarde nog onduidelijk is.
+
+OPEN: blijft 300 lerenden de outreachdrempel, en moet `bereken_jaarwaarde` met de ondergrens van 500 rekenen? Tot dat beantwoord is rekent `pipeline.py` zonder ondergrens. Zie W6 in `Context/open-vragen.md`.
 
 ## Wat hiermee verdwenen is
 
