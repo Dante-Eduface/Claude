@@ -24,8 +24,7 @@ De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat 
 | W4 | Wanneer komt de NPS-meting op Enterprise er? | Tot die er is staat het doel in `current-priorities.md` als niet stuurbaar. Dante weet het nog niet. | 19-09-2026 |
 | W5 | Na twee weken deep work: welk weektarget zetten we vast? | Het schema staat op 28 uur. De eerste twee weken zijn een nulmeting. | Vanaf 03-10-2026 |
 | P11 | Wordt de vaardigheid van dit jaar "een bericht schrijven waar iemand op reageert"? | Dat volgt uit A5: als de maat geboekte gesprekken is, is dat de vaardigheid die hem bepaalt. | 19-09-2026 |
-| G18 | **Waarom is er sinds 03-08-2026 geen salaris binnengekomen?** De afschriften lopen onafgebroken tot 24-09 en er staat geen betaling van Blockbook in. Gaat het naar een andere rekening, is de betaling uitgesteld, of loopt er iets anders? | Dit is niet een detail in zijn geldplan, dit is zijn geldplan. Bijna acht weken zonder loon is waarom de potjes leeg zijn en waarom hij 950 van zijn vader moest lenen. Alles wat ik over sparen of over de 10.000 zeg is zinloos zolang dit niet duidelijk is. | 27-09-2026 |
-| G16 | **Wat kost reizen je echt per maand?** Je zei 145 aan spitsritten naast Dal Vrij. De afschriften zeggen alleen al aan NS 387 in juli en 414 in augustus, en inclusief overig vervoer kwam de hele post op 665 tot 898 per maand. | Dit is de grootste post na leefgeld. Hij stond in de app op 140, staat nu op 800, en die 800 is waarschijnlijk te hoog: september kwam op ongeveer 257. De NS-afschrijving heet "08 periode", dus het loopt per periode en niet per maand. | 20-09-2026 |
+| G19 | **Zit de vlucht van 947,44 in de 2.030 voor Curaçao, of komt die 2.030 er bovenop?** | Dit scheelt 875 euro. Zit de vlucht erin, dan moet er nog 1.010 bij en is dat 202 per maand. Komt het erbovenop, dan is het 1.958 en 392 per maand, en dan gaat er tot februari niets naar het uit-huis-fonds. | 27-09-2026 |
 | G17 | **Waar is rekening 142509299 (Zorgverzekering) voor?** Het parkeren van de zorgtoeslag tot de premie afgeschreven wordt, of een buffer voor een heel jaar premie? | De premie van 129,45 wordt nu rechtstreeks van je betaalrekening geïncasseerd, dus het potje bouwt niets op. Bij parkeren is het doel ongeveer één maandpremie, niet de 1.548 die er nu staat. | 20-09-2026 |
 
 ## Later, geen vraag maar een richting
@@ -77,6 +76,8 @@ Blijft staan zodat zichtbaar is wat er al gevraagd is. Alles hieronder is op 19-
 | Klopt het dat je di en do eerder stopt met werken voor de gym? | Ja, bewust. | `Context/personal.md` |
 | Gewichtdoel 92 tot 96 kg? | Geen gewichtdoel. Hij wil gewoon groter worden. | `Context/personal.md` |
 | Waarom staat Jeroen's naam op je voedingsdocument? | Kladartefact, ze werken in hetzelfde document. De cijfers zijn van Dante. | `Context/personal.md` |
+| G18, waarom er sinds 03-08 geen salaris binnenkwam. | Hij kreeg zijn vergoeding vooruit en liep een maand voor. Augustus en september op één salaris gedaan, daarmee is de schuld bij Eduface afgelost en hoeft hij niet meer vooruit betaald te worden. | `Context/financien.md` |
+| G16, wat reizen echt kost. | Reken met wat er van de rekening af gaat, niet met een abonnement. Gemeten: 176, 410, 432, 258 over juni tot september. App staat op 350. | `Context/financien.md` |
 | G15, de actuele standen van je potjes. | Uit de ABN-export van 20-09-2026: betaalrekening 31,53, Savings 0,11, Curaçao 122,10, Zorgverzekering 53,00, Trade Republic leeg. Samen 206,74, min de 950 aan je vader is een vermogen van min 743. | `Context/financien.md` |
 | Trainingsbestanden in de repo? | Ja. | `Personal/fitness/schema/` |
 | Moet er een trainingsapp gebouwd worden? | Nee. | `Context/personal.md` |

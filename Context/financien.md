@@ -53,7 +53,9 @@ De potjes komen uit de ABN-export van 27-09, de betaalrekening uit de ABN-app ze
 
 Samen **152,85** op de rekeningen, waarvan 125,21 gespaard. Min de 950 aan zijn vader is dat een vermogen van **min 797 euro**. Het doel is 10.000 binnen twaalf maanden. Op 18-09 was het min 743, op 24-09 min 765, nu min 797. Het zakt elke week verder.
 
-**Er is sinds 03-08-2026 geen salaris binnengekomen (afgelezen 27-09-2026).** De export loopt onafgebroken van 27-08 tot en met 24-09 over de betaalrekening, en er staat in die hele periode geen betaling van Blockbook. De laatste was 2.146,82 op 03-08. Het enige dat binnenkwam was 129 zorgtoeslag op 21-09, het voorschot voor oktober. Dat is bijna acht weken zonder loon en het verklaart alles hieronder: de potjes zijn zijn inkomen geworden. **Niet zelf invullen waarom, staat als G18 open.**
+**Er kwam sinds 03-08-2026 geen salaris binnen, en dat is goed nieuws (Dante, 27-09-2026).** Hij kreeg zijn vergoeding steeds vooruit van Eduface, waardoor hij een maand voorliep en een schuld bij het bedrijf had staan. Augustus en september heeft hij bewust op één salaris gedaan, 2.146,82 van 03-08. Daarmee is die schuld bij Eduface afgelost en hoeft hij niet meer vooruit betaald te worden. Het leeglopen van de potjes hieronder is dus geen lek maar de prijs van dat inhalen: de buffer deed waar een buffer voor is.
+
+Wat er nu aankomt: de vergoeding valt in de komende dagen, daarvan betaalt hij de 950 aan zijn vader terug, en met de rest moet die maand rond komen.
 
 **De potjes worden leeggehaald, dat is het echte patroon.** Op 8 augustus ging er 219 naar Savings en 529 naar Curaçao. Op 18 september staat Savings op 0,11 en Curaçao op 122,10. Het gaat in kleine bedragen terug naar de betaalrekening: 5, 14, 20, 40, 50 euro per keer. De verdeling van 55/35/10 wordt op salarisdag echt uitgevoerd, en daarna in de weken erna teruggedraaid. Zijn eigen rem, weinig op de rekening houden, werkt daardoor niet: het potje is één tik weg.
 
@@ -63,7 +65,7 @@ Samen **152,85** op de rekeningen, waarvan 125,21 gespaard. Min de 950 aan zijn 
 
 **Twee daarvan zijn werkkosten die hij zelf voorschiet:** de binder, het betalen van Jeroen en de boodschappen voor kantoor. Samen 36 euro uit het zorgpotje in twee dagen. Klein bedrag, maar het patroon is dat Eduface-uitgaven uit een potje komen dat voor verhuizen bedoeld is, terwijl zijn reiskosten ook al niet vergoed worden.
 
-**Reizen is de grootste post en veel hoger dan gedacht, maar hoeveel precies is nog onzeker.** Alleen NS: 139 in juni, 387 in juli, 414 in augustus, 246,90 in september. Inclusief overig vervoer kwam de categorie in juni tot en met augustus op 886, 898 en 665 per maand, terwijl september op ongeveer 257 uitkwam. In de app stond 140, nu staat er 800, en die 800 is waarschijnlijk te hoog: september was veel lager. De NS-afschrijving heet "08 periode", dus het gaat per periode en niet per maand, wat de maandcijfers scheef trekt. Staat als G16 open, en het antwoord daarop bepaalt het hele plan.
+**Reizen: reken met wat er van de rekening af gaat, niet met wat een abonnement kost.** Dat is Dante's eigen regel (27-09-2026) en die sluit G16. Gemeten per maand, football eruit want dat is gestopt: juni 176, juli 410, augustus 432, september 258. Gemiddeld 319, over de laatste drie 367. De app staat nu op **350**. Dat is fors minder dan de 800 die ik er zelf van maakte: die 800 kwam uit een te ruime categorie waar meer in viel dan vervoer.
 
 **De zorgpremie loopt niet via het zorgpotje.** De incasso van 129,45 gaat rechtstreeks van de betaalrekening af, en rekening 142509299 krijgt alleen losse stortingen van de zorgtoeslag. Het geld draait dus rond in plaats van op te bouwen. Het doel van 1.548 in de app (twaalf maal 129) hoort daar niet bij. Staat als G17 open.
 
