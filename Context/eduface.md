@@ -57,4 +57,4 @@ Niet elke sessie lezen, wel altijd naar verwijzen in plaats van uit het hoofd be
 - **Prijs:** `GTM/Pricing/prijsmodel-psu-26-27.md`. 3 per student per maand in de valuta van de markt, drempel 300 lerenden. Nooit een prijs uit het hoofd noemen, altijd dit bestand lezen.
 - **Salesproces en gates:** `GTM/Knowledge/sales-handbook-v1.md`, `GTM/Knowledge/meddpicc-states-and-gates.md`.
 - **Pipeline en dealstand:** Close, niet een bestand hier.
-- **Roadmap en backlog, wat er gebouwd wordt en voor welke instelling:** Google Sheet [Eduface roadmap en backlog](https://docs.google.com/spreadsheets/d/1wWEfaUvBvqQL04Gxfptib7-HQ4ojckNLPvQpPyu5NSc/edit), aangelegd 27-09-2026. Levend document van Dante, Jeroen en Samuel. Wat daar staat is een plan, geen productclaim: claims blijven uit `Platform/product.md`.
+- **Roadmap en backlog, wat er gebouwd wordt en voor welke instelling:** Google Doc [Eduface roadmap en backlog](https://docs.google.com/document/d/1o5OEduJXesQfZXRS4YNlzHqoVLl2aYLQcEoxL4mV6zI/edit), aangelegd 27-09-2026. Levend document van Dante, Jeroen en Samuel. Wat daar staat is een plan, geen productclaim: claims blijven uit `Platform/product.md`.
