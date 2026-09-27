@@ -48,6 +48,13 @@ Het team communiceert over **WhatsApp**.
 
 Aangesloten als MCP in Claude Code: Gmail, Google Calendar, Google Drive, Close, Clay, Framer, Todoist, Lemlist.
 
+## Close: twee pipelines (sinds 27-09-2026)
+
+- **Deal:** de pipeline die Dante gebruikt, en de meest accurate. **Kijk standaard hiernaar.** Notes staan op de Deal-kaart. De kans hangt vast aan de fase: Qualified 10%, Discovery 15%, Scoping 20%, EB meeting 30%, Pilot 40%, Contracting 60%.
+- **Forecast:** de pipeline die Jeroen gebruikt voor investeerders, met zijn eigen inschatting van bedrag en kans per deal. Dante denkt dat die later ook gebruikt gaat worden om deals te prioriteren, dat staat nog niet vast.
+
+Een lead met een deal heeft een kaart in allebei, met dezelfde fasenamen. Welke kaart in welke pipeline zit, zie je aan de `status_id`.
+
 ## Waar de details staan
 
 Niet elke sessie lezen, wel altijd naar verwijzen in plaats van uit het hoofd beweren:
@@ -56,4 +63,4 @@ Niet elke sessie lezen, wel altijd naar verwijzen in plaats van uit het hoofd be
 
 - **Prijs:** `GTM/Pricing/prijsmodel-psu-26-27.md`. 3 per student per maand in de valuta van de markt, drempel 300 lerenden, kleinste staffel minimaal 500 studenten (18.000 per jaar, 27-09-2026). Nooit een prijs uit het hoofd noemen, altijd dit bestand lezen.
 - **Salesproces en gates:** `GTM/Knowledge/sales-handbook-v1.md`, `GTM/Knowledge/meddpicc-states-and-gates.md`.
-- **Pipeline en dealstand:** Close, niet een bestand hier.
+- **Pipeline en dealstand:** Close, in de Deal-pipeline. Niet een bestand hier.
