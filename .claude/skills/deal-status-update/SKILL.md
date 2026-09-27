@@ -90,7 +90,7 @@ Geen "Fase: Pilot". Wel: "Go-deadline 15 aug, IT manager als mede-ondertekenaar 
 
 ## Stap 3: zet het in Close
 
-Het note-veld van de opportunity (niet een losse lead-note):
+Het note-veld van de opportunity **in de Deal-pipeline**, niet de Forecast-kaart en niet een losse lead-note. Sinds 27-09-2026 heeft elke lead een kaart in allebei, met dezelfde fasenamen. Welke in Deal zit zie je aan de `status_id`, te vinden via `find_pipelines_and_opportunity_statuses`. Heeft de lead geen Deal-kaart, schrijf dan niet naar Forecast maar vraag het Dante.
 
 ```bash
 python3 .claude/skills/deal-status-update/scripts/close_write_note.py <opportunity_id> <bestand-met-de-tekst>
@@ -114,3 +114,4 @@ Dit **overschrijft** de bestaande note. Dat is de bedoeling, de note is een leve
 - "Weet waar je meeting-informatie kan vinden." Na twee keer ten onrechte "geen uitkomst vastgelegd" terwijl de notetaker-summary er gewoon was. (20 jul 2026)
 - Geen dagboek. Zie het citaat bij stap 2. Diep onderzoeken, kort opschrijven.
 - Conclusie bovenaan. Inverted pyramid.
+- "De deal pipeline krijgt voortaan de notes." (27-09-2026)
