@@ -40,6 +40,12 @@ Die verdeling voert hij echt uit, het is geen voornemen.
 
 Salaris 2.146,82 binnengekomen. Daarvan meteen de 950 aan zijn vader terugbetaald en 129,45 zorgpremie voldaan. Daarmee is hij schuldenvrij en staat zijn vermogen op ongeveer **1.220 euro**, tegen min 765 een dag eerder. Dat is het eerste positieve getal sinds deze controle loopt.
 
+**Daarna de potjes gevuld (28-09-2026).** 76,45 naar het zorgpotje, dat daarmee op 129,45 staat, precies één maandpremie als buffer. En 323,11 naar Curaçao, dat daarmee op 395,21 staat. Op de betaalrekening blijft ongeveer 695 over voor de rest van de maand. Naar het uit-huis-fonds en naar Trade Republic ging bewust niets: eerst Curaçao rond, dan de rest.
+
+Daarmee zakt wat er nog voor Curaçao moet gebeuren van 543 naar ongeveer 435 per maand in november, december en januari.
+
+**De 55/35/10-verdeling is deze maand bewust overgeslagen**, want een maand waarin 950 schuld wordt afgelost is geen normale maand.
+
 De vaste lasten van september waren op dat moment al voldaan: huur aan zijn moeder 100 op 04-09, Trainmore 30,13 op 24-09, NS 246,90 op 18-09, zorgpremie nu. Er stond dus niets structureels meer open.
 
 **Terugkerende posten en wanneer ze vallen** (gemeten maart t/m september 2026):
@@ -105,6 +111,12 @@ Oktober levert daar niets voor op: van de 2.261 die binnenkomt gaat 950 naar zij
 Elke **zaterdag** staat "Financieel controle" in zijn agenda, wekelijks. Dat is het moment om dit bestand tegen de werkelijkheid te leggen.
 
 **Hoort op 11:00 tot 12:00**, niet om 09:00. Zoals hij nu staat valt hij in deep-work-blok 2, en een financiële controle is shallow werk. Het pauze-uur is geen alternatief, want dat blijft leeg. Na blok 2 en voor de lunch is de plek. Zie `Context/deep-work.md`.
+
+## Hoe we hieraan werken
+
+**Sinds 28-09-2026 gaat het geldwerk via de chat, niet meer via de app.** Dante levert zijn stand of een ABN-export aan, ik reken en adviseer in het gesprek. De app blijft bestaan als naslag en als plek waar de cijfers staan, maar is niet meer de werkplek.
+
+Wat dat betekent voor de dagelijkse saldo-check: die vervalt als appritueel. Wat blijft is de wekelijkse financiële controle op zaterdag, en dan in de chat.
 
 ## De geldplan-app
 
