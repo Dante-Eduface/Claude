@@ -1,12 +1,13 @@
 # Bestaande blogs op eduface.me
 
-_Stand 28-09-2026, uitgelezen van eduface.me/resources/blog: 68 live, plus 8 concepten (32-39) in `GTM/Campaigns/blog-launch/markdown-sources/`. Ververs deze lijst als hij ouder is dan een maand: `curl -s https://eduface.me/resources/blog` en de `./blog/<slug>`-links eruit halen._
+_Stand 28-09-2026, uitgelezen van eduface.me/resources/blog: 68 live, plus 13 concepten (32-44) in `GTM/Campaigns/blog-launch/markdown-sources/`. Ververs deze lijst als hij ouder is dan een maand: `curl -s https://eduface.me/resources/blog` en de `./blog/<slug>`-links eruit halen._
 
 Gebruik bij stap 2 van de skill ("bestaat het al?"). Een nieuwe blog op dezelfde zoekintentie als een bestaande = update voorstellen, geen nieuw artikel.
 
 ## Per cluster
 
 **Vergelijkingen en reviews (onderkant funnel)**
+Concepten: turnitin-vs-eduface · graide-vs-keath-vs-eduface
 ai-grading-tools-higher-education-guide (hub) · eduface-vs-ai-grading-tools · best-ai-grading-tools-moodle-2026 · cograder-review-2026-higher-education · gradescope-review-2026-higher-education · grammarly-for-education-review-2026 · ai-assessment-tool-evaluation-questions
 
 **LMS-integraties**
@@ -21,7 +22,7 @@ ai-grading-law-essays · ai-grading-nursing-clinical-case-studies · ai-grading-
 Concepten: ai-grading-software-law-school-assignments · best-ai-feedback-tool-law-essays · ai-essay-grader-law-students · ai-grading-software-nursing-assignments · best-ai-feedback-tool-medical-students · ai-essay-grader-healthcare-programs · ai-grading-software-business-school-assignments · best-ai-feedback-tool-economics-students
 
 **Integriteit en mondeling**
-academic-integrity-ai-assessment-design · ai-plagiarism-detection-failing-higher-education · ai-paper-grader-vs-plagiarism-checker · plus de vier oral-spokes hierboven. Geen hub voor mondeling toetsen.
+academic-integrity-ai-assessment-design · ai-plagiarism-detection-failing-higher-education · ai-paper-grader-vs-plagiarism-checker · plus de vier oral-spokes hierboven. Concept-hub: ai-oral-examinations-higher-education-guide.
 
 **Feedback en formatief (verzadigd, niet uitbreiden)**
 formative-assessment-higher-education · formative-vs-summative-assessment-ai · ai-feedback-vs-ai-grading · how-ai-delivers-formative-feedback-at-scale · automated-feedback-vs-manual-feedback · faster-feedback-student-performance · scaling-feedback-higher-education · why-ai-feedback-nurtures-creativity · feedback-turnaround-nss-scores
@@ -32,12 +33,10 @@ lecturer-marking-time-higher-education · reducing-marking-workload-without-redu
 **Particuliere opleiders**
 hire-assessor-vs-ai-assisted-marking · marking-resilience-small-training-provider · slow-marking-costs-training-providers · learner-complaints-slow-marking-training-providers · what-to-automate-first-assessment-team · ai-assisted-peer-assessment-group-work
 
-## Gaten (28-09-2026)
+**Rubrics en moderatie**
+Concepten: how-to-write-a-rubric-ai-can-mark-against · ai-moderation-second-marking-external-examiners
 
-- Geen review of vergelijking met **Turnitin**, terwijl vrijwel elke UK-universiteit het heeft
-- Geen vergelijking met de UK-concurrenten uit de Jisc-pilot (**Graide, KEATH**)
-- Niets over **rubrics schrijven** voor AI-beoordeling, terwijl de koopgids de rubric de grootste hefboom noemt
-- Niets over **moderatie, second marking en external examiners**
-- Geen **hub voor mondeling toetsen**; vier LMS-spokes zonder moederpagina
+## Gaten (28-09-2026, na concepten 40-44)
+
 - Vakken zonder blog: STEM en practica, lerarenopleiding (Hogeschool Rotterdam draait daar), social work
 - Geen DPIA-sjabloon voor inkoop en de privacy officer
