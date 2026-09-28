@@ -4,7 +4,7 @@
 >
 > **Kijk vooruit, niet achteruit.** Dante op 19-09-2026: *"ik wil dat je niet zo bezig bent met het verleden, de situatie is heel anders."* De historische uitgavenanalyse uit de afschriften is daarom hier niet overgenomen. Gebruik dit bestand voor waar hij naartoe gaat, niet voor wat hij vorig jaar uitgaf.
 
-_Laatst bijgewerkt: 27-09-2026. Bron: Dante zelf, plus zijn ABN-afschriften._
+_Laatst bijgewerkt: 28-09-2026. Bron: Dante zelf, plus zijn ABN-afschriften._
 
 ## Wat er binnenkomt
 
@@ -35,6 +35,24 @@ Die verdeling voert hij echt uit, het is geen voornemen.
 | Zorgtoeslag | 129 per maand apart, voor de zorgpremie |
 | Trade Republic | Aandelen. Rekening bestaat al. |
 | Archiefrekening | Slaapt, geen bestemming |
+
+### 28-09-2026: salaris binnen, vermogen voor het eerst positief
+
+Salaris 2.146,82 binnengekomen. Daarvan meteen de 950 aan zijn vader terugbetaald en 129,45 zorgpremie voldaan. Daarmee is hij schuldenvrij en staat zijn vermogen op ongeveer **1.220 euro**, tegen min 765 een dag eerder. Dat is het eerste positieve getal sinds deze controle loopt.
+
+De vaste lasten van september waren op dat moment al voldaan: huur aan zijn moeder 100 op 04-09, Trainmore 30,13 op 24-09, NS 246,90 op 18-09, zorgpremie nu. Er stond dus niets structureels meer open.
+
+**Terugkerende posten en wanneer ze vallen** (gemeten maart t/m september 2026):
+
+| Post | Gemiddeld | Meestal rond |
+|---|---|---|
+| NS | 250 tot 415, lumpy per periode | de 13e of de 19e |
+| Zorgpremie Zorg en Zekerheid | 129,45, soms plus 9,07 | de 30e of de 1e |
+| Huur aan zijn moeder | 100 | de 4e |
+| Trainmore | 30 tot 40 | wisselt, 10e tot 24e |
+| Kapper | 60, zegt Dante zelf, niet herkenbaar in de afschriften | onbekend |
+| Apple | 9,99, niet elke maand | wisselt |
+| PayPal | geen vaste last maar een lek, 6 tot 146 per maand | verspreid |
 
 ### De stand per 27-09-2026
 
@@ -78,7 +96,7 @@ Oktober levert daar niets voor op: van de 2.261 die binnenkomt gaat 950 naar zij
 | Wat | Bedrag | Wanneer |
 |---|---|---|
 | Curaçao | 1.700 | Naast de vlucht, die al betaald is. Reis staat geboekt, 26-01-2027. Bedrag van Dante zelf, 27-09-2026. |
-| Schuld aan zijn vader | 950 | Terugbetalen zodra het salaris binnen is. Was voor het boeken van Curaçao. |
+| ~~Schuld aan zijn vader~~ | ~~950~~ | **Afgelost op 28-09-2026**, direct na binnenkomst van het salaris. |
 | Uit huis | 7.500 | Streefdatum 01-08-2027, naar Utrecht of Rotterdam |
 | Vermogen | 10.000 | Binnen 12 maanden. Nog steeds het doel. |
 
