@@ -46,7 +46,8 @@ Mist er iets dat je niet kunt afleiden, vraag het in één regel. De rest vul je
 ### 2. Bestaat het al?
 
 Goedkoop eerst, zoals `.claude/rules/credits.md` vraagt:
-- `ls GTM/Campaigns/blog-launch/markdown-sources/` en de slugs in `GTM/Campaigns/blog-launch/covers/MANIFEST.md`.
+- `bestaande-blogs.md` in deze map: alle live blogs per cluster, plus de gaten. Ververs hem als hij ouder is dan een maand.
+- `ls GTM/Campaigns/blog-launch/markdown-sources/` voor concepten die nog niet live staan.
 - Eén `WebSearch` met `allowed_domains: ["eduface.me"]` op de zoekvraag.
 
 Bestaat er een blog op dezelfde zoekintentie: **stel een update voor in plaats van een nieuw artikel.** Twee bijna-gelijke pagina's concurreren met elkaar en lijken op het spampatroon "scaled content abuse". Een LMS- of vakvariant mag alleen als hij echt eigen inhoud heeft.
