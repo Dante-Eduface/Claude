@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>UTI: features genoemd, niet in product en niet in het document</title>
+<style>
+@font-face { font-family: "Inter"; src: url("../../../Design/Merk/fonts/Inter-Regular.ttf"); font-weight: 400; }
+@font-face { font-family: "League Spartan"; src: url("../../../Design/Merk/fonts/LeagueSpartan-Bold.ttf"); font-weight: 700; }
+@page { size: A4; margin: 18mm 16mm 18mm 16mm; }
+:root {
+  --navy: #002333;
+  --ink-700: #2c4a57;
+  --ink-500: #5b7480;
+  --ink-200: #cdd9de;
+  --ink-100: #e7eef0;
+  --ink-50: #f3f7f8;
+  --danger: #b3261e;
+}
+* { box-sizing: border-box; }
+html { color: var(--navy); font-family: "Inter", sans-serif; font-size: 9.5pt; line-height: 1.5; }
+body { margin: 0; }
+h1, h2, .fname { font-family: "League Spartan", sans-serif; font-weight: 700; color: var(--navy); }
+h1 { font-size: 20pt; line-height: 1.15; margin: 0 0 8px; }
+.meta { color: var(--ink-500); margin: 0 0 16px; }
+.note { background: var(--ink-50); border-radius: 8px; padding: 10px 14px; margin: 0 0 24px; color: var(--ink-700); }
+h2 { font-size: 13pt; margin: 28px 0 8px; break-after: avoid; }
+p.lead { color: var(--ink-700); margin: 0 0 10px; }
+table { width: 100%; border-collapse: collapse; }
+th { text-align: left; font-family: "League Spartan", sans-serif; font-weight: 700; font-size: 8.5pt; color: var(--ink-500); padding: 6px 10px 6px 0; border-bottom: 1px solid var(--navy); }
+td { vertical-align: top; padding: 9px 10px 9px 0; border-bottom: 1px solid var(--ink-100); }
+tr { break-inside: avoid; }
+.fname { font-size: 9.5pt; display: block; }
+li .fname { display: inline; }
+.keep { break-inside: avoid; }
+ul { margin: 0; padding-left: 16px; }
+li { margin: 0 0 7px; padding-left: 2px; break-inside: avoid; }
+li::marker { color: var(--ink-500); }
+.w1 { width: 27%; } .w2 { width: 38%; } .w3 { width: 35%; }
+.quote { color: var(--ink-700); }
+</style>
+</head>
+<body>
+
+<h1>UTI: features die we noemden, niet in het product en niet in het document</h1>
+<p class="meta">Stand 29 september 2026. Bronnen: transcripten 26 aug, 1, 18 en 25 sep, mails, Wispr-notities, deck en go-live plan.</p>
+<p class="note">Afbakening: "niet in het product" is afgeleid uit wat live getoond is en wat jullie intern zeggen, niet uit de code. "Niet in het document" betekent niet in de Breederode-lijst en de adminspec van 26 sep. Het gesprek van 4 sep en de leiderschapsdemo van 21 sep zijn niet opgenomen en zitten er dus niet in.</p>
+
+<h2>1. Aan UTI gezegd, niet in het document, en niet (goed) in het product</h2>
+<table>
+<tr><th class="w1">Feature</th><th class="w2">Wat er gezegd is</th><th class="w3">Waarom dit zeker is</th></tr>
+<tr>
+<td><span class="fname">Cursuscontext uit het LMS als kennisbank (RAG)</span></td>
+<td>26 aug Dante: "we can go into Blackboard and get all the documents… use it for context". 25 sep Jeroen: "will all be taken from the course… as its knowledge base". Robert koos ons juist hierom.</td>
+<td>Breederode-debrief 23 sep, twee dagen eerder: Dante zegt "Dat hebben we niet", Jeroen zegt dat we hier "nog niet aan voldoen". Video's lezen we niet uit. Alleen bijlagen in de opdracht (answer key of rubric-PDF) werken.</td>
+</tr>
+<tr>
+<td><span class="fname">Blackboard- en Canvas-quizzes nakijken</span></td>
+<td>21 sep mail Jeroen aan Bas: "fully operational… fully supported". Videoscript: "works the same way for Blackboard quizzes".</td>
+<td>Test 25 sep: de sync werkt, maar het gaf 0 punten op alles. Punten aanpassen na het nakijken kan nog niet.</td>
+</tr>
+<tr>
+<td><span class="fname">Meerdere opdrachten koppelen en wegen</span></td>
+<td>25 sep vroeg Beth (Concord) erom: outline, concept, eindversie, 40% van het cijfer. Jeroen: "not yet linking… still an area of development".</td>
+<td>Zelf erkend. Er is geen ontwikkeling terug te vinden in de Wispr-notities.</td>
+</tr>
+<tr>
+<td><span class="fname">Answer key automatisch inlezen uit de invulbare PDF</span></td>
+<td>Videoscript: het model leest de answer key. 25 sep Jeroen: "done automatically".</td>
+<td>Dante typte de ISU-answer key met de hand in, want automatisch inlezen is "niet zo optimaal". De test met IS-19 gaf 0 punten. Dit is de kern van de pilot.</td>
+</tr>
+<tr>
+<td><span class="fname">Algemene feedback naar het Gradebook</span></td>
+<td>Go-live plan en videoscript: "grades and feedback sync back".</td>
+<td>25 sep in de demo-prep verscheen de algemene feedback niet in het Gradebook. De stap is niet live getoond. Na verwijderen haalt de integratie alle 6 inzendingen in één keer op, wat herinleveringen raakt.</td>
+</tr>
+</table>
+
+<h2>2. Genoemd, niet in het document, status onbekend (vraag Samuel of Menno)</h2>
+<ul>
+<li><span class="fname">Threaded discussions nakijken en betrokkenheid meten.</span> Jeroen 25 sep: "yes, we can automatically take a threaded discussion". In hetzelfde gesprek: "we've never seen discussions being used before". 23 sep aan Bas: "explore later". Geen test of demo.</li>
+<li><span class="fname">Technisch domeinmodel voor de vakgebieden (HVAC, auto, diesel).</span> Deck: "Purpose-built for technical, vocational subject matter". Jeroen noemde het op 18 sep een vereiste capability. <code>product.md</code> kent zes academische vakmodellen en geen trades-model. Robert noemde dit zelf als criterium.</li>
+<li><span class="fname">Cursussetup kopiëren naar child courses.</span> Charlie, de LMS-admin, vroeg of een bronscursus naar alle rotaties gekopieerd kan worden. Jeroen zei dat het "automatically" meegaat, zonder bewijs.</li>
+<li><span class="fname">Blackboard-instellingen automatisch overnemen</span> (deadline, aantal pogingen, anoniem nakijken, access code). Jeroen 25 sep: ze worden "transferred to Eduface". Niets dat dit onderbouwt.</li>
+<li><span class="fname">Rekenwerk en meetwaarden nakijken.</span> Eén tabelvraag werkte op 1 sep. De nauwkeurigheid op labrekenwerk is nergens gemeten. De 94% komt uit geschreven werk.</li>
+<li><span class="fname">Wat modelinstructies wel en niet kunnen</span> (spelling min 1 punt, strengheid, toon). Dante 23 sep: docenten denken dat het meer kan dan het model aankan. Het lijstje wat wel en niet kan is nog niet gemaakt. De pilot leunt op de eerste twee blokken "prompt refinement".</li>
+</ul>
+
+<h2>3. Roadmap-beloftes van Jeroen (1 sep), niet in het document of alleen als eerste stap</h2>
+<ul>
+<li><span class="fname">Studenten en groepen markeren die achterlopen.</span> Jeroen: "take these three, four students". Het document heeft alleen cohortniveau (#17, §7). Deze belofte zit ook in het campusdeck.</li>
+<li><span class="fname">Eindvaksamenvatting die terugvloeit naar de modelinstructies van volgend jaar.</span> Het document dekt de lessen op cursusniveau, niet die terugkoppeling.</li>
+<li><span class="fname">Tegenstrijdige feedback aan één student flaggen</span>, en feedback afstemmen op het curriculum-groeipad. Feature #15 (Leerprofiel) is bewust alleen opslaan plus een AI-analyseknop. In de app staat alleen een teaser met "Request access".</li>
+<li><span class="fname">Setup-verschillen tussen locaties vergelijken.</span> Jeroen: "flagging the consistency between locations". Het document vergelijkt scores, niet hoe opdrachten zijn ingericht.</li>
+<li><span class="fname">Feedbackdata als retentie-indicator.</span> Een idee van Jeroen, geen harde belofte.</li>
+</ul>
+
+<div class="keep">
+<h2>4. Wel in het document, maar bij UTI als bestaand gepresenteerd</h2>
+<p class="lead">Valt onder het filter, maar is een risico. De spec van 26 sep noemt deze punten "te bouwen". Jeroen sprak er op 25 sep over in de tegenwoordige tijd. Samuel zei dat het nu via PDF loopt.</p>
+<ul>
+<li>Alerts voor de nakijktermijn (#14, #16).</li>
+<li>Instellingsbrede modelinstructies en Manage Rubric verbergen (§1, §3).</li>
+<li>Automatisch synchroniseren op instellingsniveau (§2, zelf gemarkeerd "optioneel").</li>
+<li>Mappen over campussen (§6).</li>
+<li>Native rubric terugschrijven naar het LMS (§2).</li>
+</ul>
+</div>
+
+<h2>5. Geen feature, wel controleren voor Legal en IT</h2>
+<ul>
+<li><span class="fname">SOC 2.</span> Jeroen 25 sep: "not yet in our auditing phase". De Close-samenvatting zegt onterecht "undergoing Type 2 audit". Gebruik nooit de samenvatting.</li>
+<li><span class="fname">Tijdwinst.</span> Het deck zegt 48.5%, Jeroen zei 84,5% op 18 sep. De 435 inzendingen komen uit de Bath Spa-pilot. Uit <code>product.md</code> volgt dat nog niet is uitgezocht of het docentcijfer vóór of ná het AI-voorstel kwam.</li>
+<li><span class="fname">Gegevens verwijderen.</span> Jeroen: "we delete them after". Dat botst met audit trail, historie en leerprofiel, die juist bewaren.</li>
+<li><span class="fname">Alleen IDs, geen namen.</span> Dante zei dit op 26 aug. Er is geen bron voor, en de app heeft een kolom <code>STUDENT</code>.</li>
+<li><span class="fname">AI-detectie.</span> Jeroen zei dat we die niet hebben. De productie-UI heeft wel een kolom <code>AI DETECTION</code>. Vraag Samuel wat die toont.</li>
+<li><span class="fname">Accreditatie.</span> Jeroen 25 sep: "approved as a human assistance tool", "never ran into any negative accreditations". Daar zit geen bewijs bij.</li>
+</ul>
+
+</body>
+</html>

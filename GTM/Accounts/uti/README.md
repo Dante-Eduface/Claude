@@ -10,6 +10,7 @@ Account.
 - `medical-assisting-assessment-form.pdf`
 - `medical-assisting-soap-note-assignment.pdf`
 - `medical-assisting-student-submission-SAMPLE.pdf`
+- `uti-features-niet-in-product.pdf` (bron: `uti-features-niet-in-product.html`, 29-09-2026)
 - `uti-go-live-plan.html`
 - `uti-organogram.pdf`
 - `uti-planned-steps.html`
