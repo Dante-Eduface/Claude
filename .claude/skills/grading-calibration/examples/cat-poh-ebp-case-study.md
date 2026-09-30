@@ -530,3 +530,33 @@ De eerste proef kreeg als reactie *"wat is dit druk en veel informatie"*. Vier d
 4. **Twee bevindingen toegevoegd die eerder alleen in dit dossier stonden:** dat het eindoordeel in Eduface hun cesuur niet toepast (minimaal 18 punten én elk onderdeel minimaal 2), en dat reflectie in Eduface op 16% staat terwijl hun formulier alle acht criteria gelijk weegt. Allebei dingen die zij moeten weten en die verder niemand ze vertelt.
 
 Letter Arial op verzoek van Dante, vier A4. Fout die hierbij aan het licht kwam: sectie 12 van dit dossier telde negen vieren van de docent, het zijn er acht plus één drie. Gecorrigeerd.
+
+## 16. De ondergrens gemeten, 30 september 2026
+
+Export `Inzendingen_CAT_30-09-2026.zip`. Voorbeeld 1, het verslag over rode gist rijst dat Selma als onvoldoende voorbeeld gebruikt, door de gekalibreerde rubriek gehaald. Aan de rubriek is niets veranderd ten opzichte van ronde 3. Er is geen ingevuld beoordelingsformulier bij dit verslag en dat komt er ook niet, dus dit is geen vergelijking met een docentoordeel maar een controle van de modelfeedback tegen het verslag zelf.
+
+**Uitkomst per criterium:** Goed, Goed, Goed, Voldoende, Voldoende, Voldoende, **Onvoldoende**, Voldoende.
+
+Dit is het eerste Onvoldoende dat het model op dit vak geeft, en het valt op criterium 7 (klinische relevantie en toepasbaarheid), bij een verslag waarvan de opleiding zelf zegt dat het niet voldoet. Onder de cesuur van Breederode, elk onderdeel minimaal 2 punten, betekent dat gezakt. Daarmee is het risico dat na ronde 3 overbleef, oversoepelheid zonder een gezakte inzending om tegen te ijken, voor het eerst gemeten in plaats van ingeschat.
+
+**Het Totaal Cijfer van Eduface staat er ondertussen op Voldoende.** Dat bevestigt wat sectie 6 al signaleerde: het eindoordeel is een weging over de acht criteria en geen toepassing van de cesuur van de instelling. Bij een inzending die op één onderdeel zakt, wijzen die twee dus verschillende kanten op. Zolang de docent het cijfer zelf zet verandert het niets aan de uitkomst, maar het is een claim die je nooit moet doen: "Eduface zegt voldoende" is niet hetzelfde als "voldoet aan jullie cesuur".
+
+### Vier gebreken in de feedback zelf
+
+De feedback is tegen het verslag gecontroleerd. Wat het model goed zag: dat de conclusie de vergelijking met statines niet maakt terwijl de onderzoeksvraag daarom vraagt, dat het opgevoerde "conflicterende perspectief" geen tegenstelling is, en dat de plek in de evidencepiramide geen kwaliteitsbewijs is. Alle drie raken de kern van waarom dit verslag niet voldoet.
+
+Wat er nog niet deugt, op volgorde van wat het kost:
+
+1. **Criterium 3 staat op Goed terwijl de zoektabel zichzelf tegenspreekt.** Het aantal hits loopt van 375 naar 9.391.035, dan naar 134, en daarna weer naar 1.528.289. Een regel die met AND wordt uitgebreid kan niet meer resultaten opleveren dan de regel ervoor. Het model ziet de oorzaak wel ("plaats haakjes rond PICO-elementen en licht AND/OR toe") maar behandelt die als vormkwestie en laat het niveau staan. **Leerpunt: een observatie zonder de consequentie ervan is geen beoordeling.** Het model kan het symptoom benoemen en toch het verkeerde vakje kiezen, en dat is met de strikte maat niet te zien, want er is hier geen docentoordeel om tegen af te zetten.
+2. **In één databank gezocht, nergens benoemd**, terwijl het criterium "databanken" in meervoud vraagt en de student in haar eigen reflectie schrijft dat ze een volgende keer meerdere zou gebruiken.
+3. **Hetzelfde punt vier keer** (artikel 1 onderzoekt combinatiegebruik): bij criterium 2, bij criterium 5, en twee losse opmerkingen op dezelfde alinea. De dubbele opmerking op één alinea is dezelfde fout die Dante op 25-09 met de hand moest repareren.
+4. **Twee dingen in de data-extractietabellen blijven onbesproken:** "auteur heeft vaker onderzoek gedaan" als sterk punt, en artikel 3 dat in de tabel op level 1B staat terwijl de tekst zegt dat het bovenaan de piramide staat. Allebei criterium 4.
+
+### Wat er is opgeleverd
+
+Twee documenten, gedeelde opmaak in `stijl.py`:
+
+- `GTM/Accounts/breederode-hogeschool/testdag/vergelijking-poh/vergelijking-cat-poh.pdf` (5 pagina's, voor Kas en Selma samen)
+- `.../onvoldoende-voorbeeld-cat-poh.pdf` (3 pagina's, over dit verslag)
+
+Opmaakregels na Dante's feedback van 30-09: Arial, kaarten om losse tekstblokken, zichtbare lijnen in de tabellen, ruime witregels tussen onderdelen, en elk document opent met de vragen van de lezer en het antwoord eronder. De gespreksagenda is eruit, want ze openen het zelfstandig.
