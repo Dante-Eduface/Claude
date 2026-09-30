@@ -1,6 +1,6 @@
 # Eduface
 
-_Laatst bijgewerkt: 2026-09-27._
+_Laatst bijgewerkt: 2026-09-30._
 
 Het bedrijf waar Dante werkt. Juridisch heet het **Blockbook B.V.**, daar komt zijn salaris ook vandaan. Naar buiten is alles Eduface. Dit bestand is alleen het minimum dat elke sessie nodig heeft: wat we verkopen, aan wie, en wie er werkt. Alles wat dieper gaat staat in een eigen bestand, zie **Waar de details staan**.
 
@@ -34,13 +34,24 @@ Universiteiten en hogescholen, én particuliere onderwijsinstellingen. Markten: 
 |---|---|
 | **Jeroen van Gessel** | CEO en medeoprichter. Strategie, sales, fundraising, alles extern. Dante's belangrijkste counterpart. |
 | **Menno Hahury** | CTO en medeoprichter. Bouwt het product. |
-| **Samuel Rafini** | Senior Engineer. Bouwt het product. Zet in de roadmap of de backend van een feature af is (27-09-2026). |
+| **Samuel Rafini** | Senior Engineer. Bouwt het product. |
 | **Tjarko Kwee** | Sales adviseur en angel investor in Eduface. Wekelijkse sales sessie met Jeroen en Dante. |
-| **Dante Torbed** | Customer Success Manager. Zie `Context/me.md`. Zet de designs voor nieuwe features in de roadmap en houdt bij of de frontend af is (27-09-2026). |
+| **Dante Torbed** | Customer Success Manager. Zie `Context/me.md`. |
 
 Wie eigenaar is van een deal verschilt per deal en staat in Close, bij de opportunity. Niet hier bijhouden.
 
 Het team communiceert over **WhatsApp**.
+
+## Features en roadmap
+
+Het prioriteitsplan van Eduface, vastgelegd 30-09-2026:
+
+1. **Featurelijst delen.** Welke features horen bij welk salesproces, en wat is er beloofd.
+2. **Kijken wat wel en niet kan op korte termijn.**
+3. **Tech bouwt de features, Sales communiceert met de klant.**
+4. **Eén maand feature stop.** Het hele platform weer up-to-date en draaiend, en tegelijk bepalen wat de prioriteit van Eduface wordt. De maand staat nog niet vast (zie W6 in `Context/open-vragen.md`).
+
+Daarna komt er een roadmap: Tech bouwt de roadmap, Sales verkoopt de roadmap. Een extra feature request wordt eerst besproken: past het of niet. Zeg een klant dus geen nieuwe feature toe zonder dat gesprek.
 
 ## Tools
 
@@ -57,4 +68,4 @@ Niet elke sessie lezen, wel altijd naar verwijzen in plaats van uit het hoofd be
 - **Prijs:** `GTM/Pricing/prijsmodel-psu-26-27.md`. 3 per student per maand in de valuta van de markt, drempel 300 lerenden. Nooit een prijs uit het hoofd noemen, altijd dit bestand lezen.
 - **Salesproces en gates:** `GTM/Knowledge/sales-handbook-v1.md`, `GTM/Knowledge/meddpicc-states-and-gates.md`.
 - **Pipeline en dealstand:** Close, niet een bestand hier.
-- **Roadmap en backlog, wat er gebouwd wordt en voor welke instelling:** Google Doc [Eduface roadmap en backlog](https://docs.google.com/document/d/1o5OEduJXesQfZXRS4YNlzHqoVLl2aYLQcEoxL4mV6zI/edit), aangelegd 27-09-2026. Levend document van Dante, Jeroen en Samuel. Wat daar staat is een plan, geen productclaim: claims blijven uit `Platform/product.md`.
+- **Welke features bij welk salesproces horen, en per wanneer:** Google Doc [Features per salesproces](https://docs.google.com/document/d/15RtX3kFqVl_z23d4s5VI3hu8AedI7dwczJmduEC2VLE/edit), stap 1 van het prioriteitsplan en de basis voor het overleg met Menno (30-09-2026, nu nog als proef). AI en software gescheiden, datums zijn een voorstel. Wat daar staat is een plan, geen productclaim: claims blijven uit `Platform/product.md`.
