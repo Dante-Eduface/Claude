@@ -1,10 +1,10 @@
 # Breederode: wat is er verkocht, wat moet er staan
 
-_Voor Menno, via Jeroen. Opgesteld 10-09-2026 op basis van de gespreksopnames van 1 en 3 september._
+_Voor Menno, via Jeroen. Opgesteld 10-09-2026 op basis van de gespreksopnames van 1 en 3 september. Bijgewerkt 30-09-2026: go-live verschoven van 15 naar 20 oktober._
 
-**Situatie:** Breederode Hogeschool (Rotterdam, ruim 800 cursisten, onderdeel van Calder Holding). Testochtend op locatie op **woensdag 23 september**, daarna twee weken test, beoogde **go-live 15 oktober** in itslearning. LMS is Fronter/itslearning, ze hebben LTI.
+**Situatie:** Breederode Hogeschool (Rotterdam, ruim 800 cursisten, onderdeel van Calder Holding). Testochtend op locatie op **woensdag 23 september**, daarna twee weken test, beoogde **go-live 20 oktober** in itslearning (was 15 oktober). LMS is Fronter/itslearning, ze hebben LTI.
 
-## 1. Blokkerend voor go-live op 15 oktober
+## 1. Blokkerend voor go-live op 20 oktober
 1. **LTI-integratie met itslearning/Fronter.** Toegezegd als "twee weken werk na de testperiode". Hebben we dit eerder gedaan op itslearning, of is dit de eerste?
 2. **Meerdere onafhankelijke beoordelaars op dezelfde inzending**, elk met eigen login en eigen complete marking. Hun mastertheses en portfolio's werken standaard met het vier-ogenprincipe, dus zonder dit kan de grootste use case niet live.
 3. **Tijdregistratie van actieve lees- en feedbacktijd per docent.** Is als bestaande functie genoemd en is nu een **afgesproken succescriterium** van de test. Zonder meting kunnen we de test formeel niet afronden.

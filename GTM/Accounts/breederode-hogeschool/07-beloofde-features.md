@@ -53,6 +53,6 @@ Kolom **Bewijs**: staat het in `Platform/product.md`, komt het terug in andere d
 ## Wat dit betekent voor de roadmap
 Vóór **23 september** (testochtend) moet werken: rubric-ingest van drie verschillende CAT-formulieren, kalibreren op hun eigen nagekeken opdrachten, annotaties en per-criterium scoring. Dat is groen gebied.
 
-Vóór **15 oktober** (beoogde go-live) moet er zijn: de itslearning/LTI-integratie, meerdere beoordelaars op één inzending, en de tijdmeting, want die is een succescriterium.
+Vóór **20 oktober** (beoogde go-live, op 30-09-2026 verschoven van 15 oktober) moet er zijn: de itslearning/LTI-integratie, meerdere beoordelaars op één inzending, en de tijdmeting, want die is een succescriterium.
 
 Kan wachten tot na de pilot, maar is wel verkocht: docentvergelijking, kalibratie-flagging, toetsanalyse, deadlinesignaal, herverwerken van historische opdrachten.

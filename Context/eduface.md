@@ -68,4 +68,4 @@ Niet elke sessie lezen, wel altijd naar verwijzen in plaats van uit het hoofd be
 - **Prijs:** `GTM/Pricing/prijsmodel-psu-26-27.md`. 3 per student per maand in de valuta van de markt, drempel 300 lerenden. Nooit een prijs uit het hoofd noemen, altijd dit bestand lezen.
 - **Salesproces en gates:** `GTM/Knowledge/sales-handbook-v1.md`, `GTM/Knowledge/meddpicc-states-and-gates.md`.
 - **Pipeline en dealstand:** Close, niet een bestand hier.
-- **Welke features bij welk salesproces horen, en per wanneer:** Google Doc [Features per salesproces](https://docs.google.com/document/d/15RtX3kFqVl_z23d4s5VI3hu8AedI7dwczJmduEC2VLE/edit), stap 1 van het prioriteitsplan en de basis voor het overleg met Menno (30-09-2026, nu nog als proef). AI en software gescheiden, datums zijn een voorstel. Wat daar staat is een plan, geen productclaim: claims blijven uit `Platform/product.md`.
+- **Wat we per instelling beloofd hebben:** het accountdossier in `GTM/Accounts/<instelling>/`, bij Breederode `07-beloofde-features.md`. Een apart featuredocument is er niet meer (geschrapt 30-09-2026).
