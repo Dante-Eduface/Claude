@@ -499,3 +499,23 @@ Precies het omgekeerde advies op dezelfde tekst. Het verdict blijft binnen de ba
 Klaar. Doorvoeren wat er nu staat, plus eventueel de correctie bij criterium 5. Niet verder fijnregelen op niveaus.
 
 Het volgende dat echt iets toevoegt is geen rubric-ronde maar materiaal: **een CAT die de docent heeft laten zakken, met haar beoordelingsformulier.** Daarmee is de zaklijn te controleren, en pas dan is te zien of de compressie naar Goed ook betekent dat een zwakke inzending te hoog uitkomt.
+
+## 15. Terugleggen bij de beoordelaar, 1 oktober 2026
+
+Na het versturen van de feedback op 25-09 vroegen twee mensen van Breederode om een gesprek: **Kas van Kruining**, die beide CAT's zelf heeft beoordeeld, en **Selma de Nijs**, die het materiaal aanleverde. Kas stelde twee vragen: was zijn feedback grotendeels vergelijkbaar met die van het model, en kan hij er als examinator iets van leren. Gepland op donderdag 1 oktober, 10:00 tot 10:50.
+
+Dat is een stap die nog niet in `SKILL.md` staat: na het kalibreren de vergelijking teruggeven aan de docent zelf. Het is het logische sluitstuk, want de hele methode draait om het achterhalen van hun norm, en dit is het moment waarop je die norm rechtstreeks kunt vragen.
+
+**Wat er is gemaakt:** `GTM/Accounts/breederode-hogeschool/testdag/vergelijking-poh/vergelijking-cat-poh.pdf`, drie A4, in de opmaak van het Breederode Go Live Plan (sectiebalken `#0B4F6C`, co-branded met beide logo's) in plaats van het Eduface design system, omdat het stuk in dezelfde familie moet vallen als wat Jeroen ze eerder stuurde.
+
+**Drie keuzes die de moeite van het onthouden waard zijn:**
+
+1. **Geen vertaling van punten naar vakjes forceren.** De punten van de beoordeling en het woord van het model staan naast elkaar, en er wordt alleen getoetst aan de bandbreedte die de cesuur toelaat. De eerdere mapping "4 punten = uitstekend" leverde "0 van de 8 keer uitstekend bij Eduface" op: technisch verdedigbaar, maar het duwt het gesprek meteen de verkeerde kant op. De vertaalvraag is nu vraag vijf in het document in plaats van een verborgen aanname in de tabel.
+2. **De bijgeschaafde feedback expliciet benoemen.** Een deel van wat Breederode op 25-09 kreeg is met de hand aangepast voordat het de deur uit ging. Dat staat nu in één regel op pagina 1: de formulering is op een paar criteria bijgeschaafd, de oordelen zijn ongewijzigd. Verzwijgen zou bij navraag veel duurder zijn geweest, en het bevestigt juist wat zij belangrijk vinden, namelijk dat de mens het laatste woord houdt.
+3. **Het blok over wat het model zag, is tweezijdig.** Twee constateringen van het model die niet in de beoordeling terugkomen, en drie plekken waar de beoordeling concreter was dan het model. Zonder die tweede helft leest het als een scorekaart over de beoordelaar.
+
+**Wat het testset nog steeds niet kan.** Beide geteste CAT's zijn geslaagd, dus de ondergrens is ongetoetst. Selma heeft op 30-09 haar lesmateriaal gestuurd: een verslag dat zij als onvoldoende voorbeeld gebruikt, een ingevuld formulier met 30 punten en een 9,4, en het blanco formulier. Bij beide voorbeelden ontbreekt precies de andere helft: bij het onvoldoende-verslag het ingevulde formulier, bij het ingevulde formulier het verslag. Het onvoldoende-verslag door het model halen mét haar beoordeling is de vervolgstap die in het document staat.
+
+**Bevestigd op 30-09:** het blanco beoordelingsformulier dat Selma stuurde is inhoudelijk identiek aan het formulier waarop het model is ingericht (versie 3.0, acht criteria, 4/2/0, cesuur 18 plus minimaal 2 per onderdeel). De gekalibreerde rubriek kan dus één op één voor haar opdrachten worden gebruikt.
+
+**Nog open:** het totaalcijfer van student 1 staat in Eduface op `Sound` in plaats van een Nederlandse stand. Dat is zichtbaar in de inzendingenlijst zelf, niet alleen in de geëxporteerde PDF, en is dus handmatig te overschrijven. Melden bij Menno of Samuel.
