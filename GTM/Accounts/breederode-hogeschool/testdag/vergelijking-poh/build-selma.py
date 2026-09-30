@@ -1,126 +1,176 @@
 # -*- coding: utf-8 -*-
-"""Document voor Selma de Nijs: haar onvoldoende-voorbeeld door het model.
+"""Document voor Selma de Nijs: het onvoldoende-voorbeeld, zelf beoordeeld.
 
-Voorbeeld 1 (rode gist rijst, 17 maart 2025), het verslag dat zij als onvoldoende
-voorbeeld gebruikt. Er is geen ingevuld beoordelingsformulier bij, dus dit is geen
-vergelijking maar een controle van de modelfeedback tegen het verslag zelf.
+Voorbeeld 1 (rode gist rijst tegenover statines, 17 maart 2025) beoordeeld tegen
+bijlage 6 versie 3.0, 4/2/0 punten, cesuur 18 punten plus minimaal 2 per onderdeel.
+Het oordeel in dit document is van ons, niet van Eduface. Wat Eduface ervan maakte
+staat alleen in de sectie die laat zien waar het model te mild is.
 Opmaak in stijl.py.
 """
 import pathlib
-from stijl import sectie, kaart, qa, track, pagina, I_ZAK, I_INZET, I_ZIEN, I_BETER
+from stijl import sectie, kaart, qa, track, pagina, I_ZAK, I_INZET, I_HOOGTE, I_FORM
 
-C = ["1. Aanleiding van de klinische vraag",
-     "2. Onderzoeksvraag op basis van PICO",
-     "3. Databanken en weging van informatie",
-     "4. Analyse binnen de praktijkcontext",
-     "5. Conclusie uit de resultaten",
-     "6. Kritische inhoudelijke discussie",
-     "7. Klinische relevantie en toepasbaarheid",
-     "8. Reflectie en rolontwikkeling"]
+# criterium, punten, oordeel in een zin
+OORDEEL = [
+ ("1. Aanleiding van de klinische vraag", 2,
+  "Casus, concrete vraag en de NHG-standaarden staan er. De aanvulling vanuit de eigen expertise, met "
+  "implicaties, gevolgen en kansen, ontbreekt."),
+ ("2. Onderzoeksvraag op basis van PICO", 2,
+  "Alle vier de PICO-elementen zijn herkenbaar in de vraag. De kenmerken uit de casus en de veiligheidsvraag "
+  "uit de aanleiding zijn er onderweg uit gevallen."),
+ ("3. Databanken en weging van informatie", 2,
+  "Zoektabel, in- en exclusiecriteria, drie artikelen en een onderbouwde keuze zijn er. Herhaalbaar is de "
+  "zoekactie niet: de hits lopen na een AND op van 134 naar 1.528.289."),
+ ("4. Analyse binnen de praktijkcontext", 0,
+  "De beoordelingsformulieren voor betrouwbaarheid, validiteit en generaliseerbaarheid zijn op geen enkel "
+  "artikel toegepast, en de genoemde sterke punten zijn niet methodologisch."),
+ ("5. Conclusie uit de resultaten", 0,
+  "De onderzoeksvraag is vergelijkend, de conclusie vergelijkt niet. Bovendien generaliseert zij artikel 1, "
+  "dat de combinatie met statines onderzocht."),
+ ("6. Kritische inhoudelijke discussie", 2,
+  "Alle onderdelen zijn behandeld en de methodologische kanttekeningen zijn raak. Het opgevoerde "
+  "conflicterende perspectief is geen tegenstelling."),
+ ("7. Klinische relevantie en toepasbaarheid", 0,
+  "De twee aanbevelingen vragen om vervolgonderzoek en zijn geen handelingsalternatief. Implicaties, "
+  "haalbaarheid en monitoring ontbreken alle drie."),
+ ("8. Reflectie en rolontwikkeling", 2,
+  "De vijf gevraagde onderdelen staan er, inclusief de verwerkte feedback. Het alternatief, weer op deze "
+  "manier, is niet kritisch."),
+]
+TOTAAL = sum(p for _, p, _ in OORDEEL)
 
-UITKOMST = ["Goed", "Goed", "Goed", "Voldoende", "Voldoende", "Voldoende", "Onvoldoende", "Voldoende"]
+MODEL = ["Goed", "Goed", "Goed", "Voldoende", "Voldoende", "Voldoende", "Onvoldoende", "Voldoende"]
 
-def uitkomsttabel():
+def oordeeltabel():
+    rijen = "".join(
+        f'<tr><td class="s">{n}</td>'
+        f'<td class="p"><b class="{"nul" if p == 0 else ""}">{p}</b></td><td>{t}</td></tr>'
+        for n, p, t in OORDEEL)
+    return (f'<table class="oordeel"><thead><tr><th class="s">Criterium</th><th class="p">Punten</th>'
+            f'<th>Waarom</th></tr></thead><tbody>{rijen}'
+            f'<tr class="tot"><td class="s">Totaal</td><td class="p">{TOTAAL}</td>'
+            f'<td>{TOTAAL} van de 32 punten, cijfer {TOTAAL/32*10:.1f}. Drie onderdelen onder de twee '
+            f'punten. Gezakt op beide voorwaarden van de cesuur.</td></tr></tbody></table>'
+            .replace("cijfer 3.1", "cijfer 3,1"))
+
+def gaptabel():
     kop = "".join(f'<th class="sk">{v}</th>' for v in ["Onvoldoende", "Voldoende", "Goed", "Uitstekend"])
-    body = "".join(f'<tr><td class="s">{n}</td>'
-                   f'<td class="tr" colspan="4">{track(w, grens=True)}</td></tr>'
-                   for n, w in zip(C, UITKOMST))
-    return (f'<table class="zonderpunten"><thead><tr><th class="s">Criterium</th>{kop}</tr></thead>'
-            f'<tbody>{body}<tr class="tot"><td colspan="5">Eindoordeel in Eduface: Voldoende. '
-            f'Onder jullie cesuur: gezakt.</td></tr></tbody></table>')
+    rijen = "".join(
+        f'<tr><td class="s">{n.split(".")[0]}. {n.split(". ",1)[1]}</td><td class="p">{p}</td>'
+        f'<td class="tr" colspan="4">{track(m, punten=p)}</td></tr>'
+        for (n, p, _), m in zip(OORDEEL, MODEL))
+    return (f'<table><thead><tr><th class="s">Criterium</th><th class="p">Punten</th>{kop}</tr></thead>'
+            f'<tbody>{rijen}</tbody></table>')
 
-# ---------------------------------------------------------------- de antwoorden
+# ---------------------------------------------------------------- antwoorden
 antwoorden = sectie("Je twee vragen, hier beantwoord", (
   qa(I_ZAK,
      "Doet het model wat jullie doen bij een verslag dat niet voldoet?",
-     "<b>Ja. Op het verslag dat jij als onvoldoende voorbeeld gebruikt komt het model op een Onvoldoende uit, bij "
-     "criterium 7, klinische relevantie en toepasbaarheid.</b> Onder jullie cesuur is dat zakken, want elk "
-     "onderdeel moet minimaal 2 punten halen, hoe goed de rest ook is. Dit is de eerste keer dat het model op dit "
-     "vak een Onvoldoende geeft, en het gebeurt op de inzending waar dat hoort.",
-     "<b>Let wel op wat Eduface er zelf van maakt.</b> Het eindoordeel bovenaan staat op Voldoende, want dat is "
-     "een weging over de acht criteria en niet jullie cesuur. De examinator zet het cijfer zelf, dus aan de "
-     "uitkomst verandert het niets, maar ga niet op dat ene woord af.")
+     "<b>Voor een deel.</b> Ik heb het verslag zelf tegen bijlage 6 versie 3.0 gelegd en kom uit op "
+     f"<b>{TOTAAL} van de 32 punten</b>, met drie onderdelen op nul: de analyse, de conclusie en de klinische "
+     "relevantie. Gezakt op allebei de voorwaarden van jullie cesuur, dus niet nipt.",
+     "<b>Het model zakt ook, maar op &eacute;&eacute;n onderdeel in plaats van drie.</b> Het geeft alleen bij "
+     "criterium 7 een Onvoldoende. Onder jullie cesuur is dat genoeg om te zakken, dus de eindconclusie klopt. "
+     "Maar bij criterium 4 en 5 komt het op Voldoende uit waar het nul hoort te zijn, en dat maakt het verschil "
+     "tussen een verslag dat op &eacute;&eacute;n punt tekortschiet en een verslag dat er ver vandaan zit.")
   + qa(I_INZET,
      "Waar zouden jullie dit kunnen inzetten?",
      "<b>Op de concepten, in de ronde v&oacute;&oacute;r het inleveren.</b> Het model loopt alle acht criteria "
-     "even consequent langs en zet veertien opmerkingen in de tekst zelf, op de zin waar ze over gaan. Drie "
-     "daarvan raken precies de redeneerfouten die dit verslag onvoldoende maken. Die staan hieronder.",
-     "<b>Niet op het eindoordeel, en nog niet zonder nalezen.</b> Op vier plekken is deze feedback nog niet goed "
-     "genoeg om zo naar een student te gaan. Ook die staan hieronder, met wat eraan zou moeten veranderen.")))
+     "even consequent langs en zet veertien opmerkingen in de tekst zelf, op de zin waar ze over gaan. De "
+     "inhoudelijke observaties kloppen: het ziet dat de conclusie de vergelijking niet maakt, dat het opgevoerde "
+     "conflicterende perspectief er geen is, en dat de plek in de evidencepiramide geen kwaliteitsbewijs is.",
+     "<b>Niet op het eindoordeel.</b> Het probleem zit niet in wat het model ziet, maar in wat het er vervolgens "
+     "aan hangt. Op criterium 4 en 5 schrijft het de reden voor een onvoldoende op en geeft dan een voldoende. "
+     "Dat is een kwestie van de rubriektekst en dus op te lossen, maar het is er nu nog.")))
 
-# ---------------------------------------------------------------- de uitkomst
-uitkomst = sectie("Wat het model op dit verslag doet", (
-  '<p class="lead">Voorbeeld 1, rode gist rijst tegenover statines bij hypercholesterolemie, 17 maart 2025.</p>'
-  '<p class="legend">De stip <span class="d"></span> is het vakje dat het model koos. De dikke lijn '
-  '<span class="z"></span> is jullie zaklijn per onderdeel: alles links daarvan haalt de 2 punten niet.</p>'
-  + kaart(uitkomsttabel())
-  + kaart('<p><b>Wat dit niet is: een vergelijking.</b> Jouw ingevulde beoordelingsformulier bij dit verslag heb '
-          'ik niet, dus criterium voor criterium naast elkaar leggen kan hier niet. Wat hierboven staat is wat het '
-          'model doet. Wat hieronder staat is mijn eigen controle van die feedback tegen het verslag zelf, dus '
-          'niet tegen jullie oordeel.</p>')))
+# ---------------------------------------------------------------- mijn oordeel
+oordeel = sectie("Mijn beoordeling, criterium voor criterium", (
+  '<p class="lead">Voorbeeld 1, rode gist rijst tegenover statines bij hypercholesterolemie, 17 maart 2025. '
+  'Beoordeeld tegen bijlage 6 versie 3.0: per criterium 4, 2 of 0 punten.</p>'
+  + kaart(oordeeltabel())
+  + kaart('<p><b>Waarom gezakt, twee keer.</b> Jullie cesuur vraagt minimaal 18 punten in totaal '
+          f'&eacute;n minimaal 2 punten op elk onderdeel. Dit verslag haalt {TOTAAL} punten en heeft drie '
+          'onderdelen op nul. Elk van die twee is op zichzelf al genoeg.</p>'
+          '<p><b>Wat dit niet is: een vergelijking met jullie oordeel.</b> Jouw ingevulde beoordelingsformulier '
+          'bij dit verslag heb ik niet. Dit is mijn eigen beoordeling, gemaakt met de rubriek in de hand en '
+          'onderbouwd met de tekst van het verslag. Wijkt hij af van die van jullie, dan is dat precies het '
+          'gesprek dat ik zou willen voeren.</p>')))
 
-# ---------------------------------------------------------------- wat het goed zag
-goed = sectie("Wat het model goed zag", (
-  kaart(f'<h3>{I_ZIEN} Drie redeneerfouten, alle drie nagekeken in het verslag</h3>'
-        '<ul>'
-        '<li><b>De conclusie beantwoordt de onderzoeksvraag niet.</b> De vraag is wat rode gist rijst doet '
-        '<i>in vergelijking met statines</i>. De conclusie zegt alleen dat rode gist rijst een positief effect '
-        'heeft op het LDL-cholesterol. Het model benoemt dat bij criterium 5 en verbindt het aan artikel 1, dat '
-        'de combinatie van rode gist rijst met statines onderzocht en dus geen vergelijking oplevert.</li>'
-        '<li><b>Het conflicterende perspectief is er geen.</b> De student zet twee bevindingen tegenover elkaar '
-        'die allebei een LDL-verlaging beschrijven. Het model zegt dat, en zegt erbij wat w&eacute;l een '
-        'tegenstelling zou zijn: werkzaamheid als alternatief voor statines tegenover onzekerheid over de '
-        'veiligheid.</li>'
-        '<li><b>De plek in de evidencepiramide is geen kwaliteitsbewijs.</b> De student gebruikt bij alle drie de '
-        'artikelen "staat bovenaan in de piramide" als argument. Het model zet daar heterogeniteit, dosering, '
-        'aansluiting op de PICO en de Nederlandse toepasbaarheid tegenover.</li>'
-        '</ul>')))
+# ---------------------------------------------------------------- de drie nullen
+def nul(kop, eist, staat, waarom):
+    return kaart(f'<h3>{kop}</h3>'
+                 f'<p><b>Wat de rubriek vraagt.</b> {eist}</p>'
+                 f'<p><b>Wat er staat.</b> {staat}</p>'
+                 f'<p><b>Waarom dat nul is.</b> {waarom}</p>')
 
-# ---------------------------------------------------------------- de verbeterpunten
-def vb(kop, *alineas):
-    return kaart(f'<h3>{kop}</h3>' + "".join(f"<p>{a}</p>" for a in alineas))
+nullen = sectie("De drie onderdelen die op nul staan", (
+  nul("Criterium 4 &middot; analyse binnen de praktijkcontext",
+      "Ook voor twee punten: de artikelen analyseren op level of evidence &eacute;n op methodologische kwaliteit "
+      "met behulp van de beoordelingsformulieren voor betrouwbaarheid, validiteit en generaliseerbaarheid, en per "
+      "artikel benoemen welke onderdelen relevant zijn voor de CAT.",
+      "Drie data-extractietabellen en per artikel een korte toelichting. Als sterke punten staan er: de auteur "
+      "heeft vaker onderzoek gedaan, het onderzoek is van 2024 en het staat hoog in de piramide. Bij artikel 3 is "
+      "het veld Interventie leeg gelaten.",
+      "Het beoordelingsformulier uit bijlage 5.1 is op geen enkel artikel toegepast, en betrouwbaarheid, "
+      "validiteit en generaliseerbaarheid komen per artikel niet voor. Productiviteit van de auteur, het jaartal "
+      "en de plek in de piramide zijn geen methodologische kwaliteit. Daarmee is de onderbouwing van de sterke en "
+      "zwakke punten niet alleen beperkt, maar gaat zij over iets anders dan wat het criterium vraagt.")
+  + nul("Criterium 5 &middot; conclusie uit de resultaten",
+      "Een kort en bondig antwoord op de klinische vraagstelling dat logisch voortvloeit uit de resultaten en "
+      "alleen eerder genoemde informatie bevat. Onvoldoende is het onder meer als er onvoldoende antwoord is "
+      "gegeven om de volledige onderzoeksvraag te beantwoorden.",
+      "De conclusie is dat rode gist rijst een positief effect heeft op de verlaging van het lipidenprofiel en "
+      "het LDL-cholesterol, en dat er verder onderzoek nodig is naar de bijwerkingen.",
+      "De onderzoeksvraag luidt: wat is het effect van rode gist rijst op een daling van het LDL-cholesterol "
+      "<i>in vergelijking met statines</i>. Over die vergelijking zegt de conclusie niets, terwijl het de kern van "
+      "de vraag is. Daar komt bij dat artikel 1 de combinatie van rode gist rijst m&eacute;t statines onderzocht, "
+      "zodat het bewijs de uitspraak over rode gist rijst alleen niet draagt.")
+  + nul("Criterium 7 &middot; klinische relevantie en toepasbaarheid",
+      "Concrete, actiegerichte handelingsalternatieven die uit het bewijs voortvloeien, met de implicaties voor "
+      "patiënt en praktijk, de haalbaarheid, en hoe de aanbeveling gemonitord wordt. Twee of meer daarvan "
+      "ontbreken is onvoldoende.",
+      "Dat de POH de resultaten bespreekbaar kan maken als bekend is dat een patiënt rode gist rijst gebruikt, en "
+      "twee aanbevelingen: vervolgonderzoek naar de veiligheid en vervolgonderzoek naar de bijwerkingen.",
+      "Alle vier ontbreken. Vervolgonderzoek is een aanbeveling aan de wetenschap, niet een handelingsalternatief "
+      "voor de praktijk. Er staat niet wat de POH bespreekt, wanneer, met welke informatie, wat dat voor de "
+      "patiënt betekent, of dat binnen een spreekuur haalbaar is, en er staat geen evaluatiemoment.")))
 
-beter = sectie("Wat er aan deze feedback nog niet deugt", (
-  '<p class="lead">Vier punten, op volgorde van wat ze kosten. Het eerste raakt het niveau van een criterium, '
-  'de andere drie de bruikbaarheid van de opmerkingen.</p>'
-  + vb("1. Criterium 3 staat op Goed terwijl de zoektabel zichzelf tegenspreekt",
-       "In de zoekstrategietabel loopt het aantal hits van 375 naar 9.391.035, dan naar 134, en daarna weer naar "
-       "1.528.289. Een zoekregel die met AND wordt uitgebreid kan niet meer resultaten opleveren dan de regel "
-       "ervoor. Er is dus iets mis met de opbouw van de zoekactie zelf, en dat is precies waar criterium 3 over "
-       "gaat.",
-       "Het model ziet de oorzaak wel: het schrijft <i>plaats haakjes rond PICO-elementen en licht AND/OR toe</i>. "
-       "Maar het behandelt dat als een vormkwestie en laat het niveau op Goed staan. Wat er zou moeten staan: dat "
-       "het aantal hits na het toevoegen van de C-regel van 134 naar ruim anderhalf miljoen springt, dat de OR "
-       "daardoor breder bindt dan bedoeld, en dat de zoekactie zoals opgeschreven niet te herhalen is.")
-  + vb("2. Er is in &eacute;&eacute;n databank gezocht en dat wordt nergens benoemd",
-       "Het criterium heet gebruik van wetenschappelijke databanken, meervoud. Er is alleen in PubMed gezocht. De "
-       "student ziet het zelf: in haar reflectie schrijft ze dat ze een volgende keer meerdere databanken zou "
-       "gebruiken. Het model noemt PubMed wel, maar nergens als beperking, en prijst de zoekstrategie juist.")
-  + vb("3. Hetzelfde punt staat vier keer",
-       "Dat artikel 1 rode gist rijst m&eacute;t statines onderzoekt en dus geen directe vergelijking oplevert, "
-       "staat bij criterium 2, bij criterium 5, en twee keer als losse opmerking op dezelfde alinea in het "
-       "hoofdstuk Resultaten. Die twee opmerkingen zeggen bijna hetzelfde ding op dezelfde plek.",
-       "E&eacute;n plek waar het het niveau bepaalt, plus &eacute;&eacute;n opmerking in de tekst, is genoeg. Vier "
-       "keer leest als drammen en haalt de aandacht weg bij de andere punten.")
-  + vb("4. Twee dingen in de data-extractietabellen blijven onbesproken",
-       "Bij artikel 1 en artikel 2 staat als sterk punt: <i>auteur heeft vaker onderzoek gedaan, dit zegt iets "
-       "over de betrouwbaarheid</i>. Dat is geen kwaliteitscriterium voor een studie, en criterium 4 gaat juist "
-       "over de methodologische analyse.",
-       "Bij artikel 3 staat in de tabel level of evidence 1B, terwijl de tekst erboven zegt dat ook dit artikel "
-       "bovenaan de piramide staat. Het model gaat op geen van beide in.")))
+# ---------------------------------------------------------------- waar het model te mild is
+mild = sectie("Waar het model te mild is", (
+  '<p class="lead">Dezelfde acht criteria, met mijn punten en het vakje dat Eduface koos. De balk is de ruimte '
+  'die bij mijn punten past. Staat de stip rechts van de balk, dan is het model milder dan de rubriek toelaat.</p>'
+  + kaart(gaptabel())
+  + kaart(f'<h3>{I_HOOGTE} Twee keer buiten de band, en allebei op dezelfde manier</h3>'
+        '<p>Op zes van de acht criteria valt het model binnen de ruimte die bij mijn punten past. Op criterium 4 '
+        'en 5 niet: daar geeft het Voldoende waar het nul hoort te zijn.</p>'
+        '<p><b>Het bijzondere is dat het model de reden zelf opschrijft.</b> Bij criterium 5 staat er letterlijk: '
+        '<i>daardoor beantwoord je de volledige PICO-vraag onvoldoende</i>. Dat is bijna woordelijk de voorwaarde '
+        'waaronder de rubriek nul punten voorschrijft. Bij criterium 4 staat er: <i>zonder methodologische '
+        'koppeling blijven kwaliteit en toepasbaarheid onduidelijk</i>. Ook daar is de constatering raak en het '
+        'vakje te hoog.</p>'
+        '<p>Dat is goed nieuws voor de oplossing. Het model mist de observatie niet, het verbindt er de verkeerde '
+        'stand aan. Dat zit in de tekst van de rubriekvakjes en is dus aan te passen, net zoals we dat op de twee '
+        'inzendingen van Kas hebben gedaan.</p>')
+  + kaart(f'<h3>{I_FORM} En &eacute;&eacute;n plek waar het model niet ver genoeg kijkt</h3>'
+        '<p>Bij criterium 3 loopt het aantal hits in de zoektabel van 375 naar 9.391.035, dan naar 134, en daarna '
+        'weer naar 1.528.289. Een zoekregel die met AND wordt uitgebreid kan niet meer resultaten opleveren dan de '
+        'regel ervoor.</p>'
+        '<p>Het model ziet de oorzaak: het schrijft <i>plaats haakjes rond PICO-elementen en licht AND/OR toe</i>. '
+        'Maar het trekt de conclusie niet dat de zoekactie daardoor niet herhaalbaar is. Dat verschil, tussen een '
+        'opmerking over de vorm en een oordeel over de zoekactie, is waarom ik hier op twee punten uitkom.</p>')))
 
-verantwoording = sectie("Hoe dit tot stand is gekomen", kaart(
+verantwoording = sectie("Waarop dit oordeel rust", kaart(
   '<ul>'
-  '<li><b>Wat erin is gegaan.</b> Het verslag Voorbeeld 1 en bijlage 6 versie 3.0 als rubriek. Dat is dezelfde '
-  'rubriek als op jouw blanco formulier staat: acht criteria, 4, 2 of 0 punten, cesuur 18 punten plus minimaal 2 '
-  'per onderdeel.</li>'
-  '<li><b>Waarop de rubriek is geijkt.</b> Op twee CAT\'s uit juni 2025 met de ingevulde formulieren van Kas '
-  'ernaast. Die kalibratie is hier ongewijzigd toegepast: aan de rubriek is voor dit verslag niets veranderd.</li>'
+  '<li><b>Waartegen is beoordeeld.</b> Bijlage 6 versie 3.0, hetzelfde formulier als jouw blanco exemplaar.</li>'
+  '<li><b>Wie het oordeel gaf.</b> Ik, met de rubriek naast het verslag. Elke score in dit stuk is terug te voeren '
+  'op een zin in het verslag en een voorwaarde in de rubriek.</li>'
+  '<li><b>Wat Eduface ermee deed.</b> Hetzelfde verslag is door de rubriek gehaald die op de twee inzendingen van Kas is geijkt. Daaraan is voor dit verslag niets veranderd.</li>'
   '</ul>'))
 
-body = (antwoorden + '<div style="break-before:page"></div>'
-        + uitkomst + goed + beter + verantwoording)
-html = pagina("CAT POH-6: het onvoldoende-voorbeeld door het model", body,
+body = (antwoorden + verantwoording + '<div style="break-before:page"></div>'
+        + oordeel + nullen + mild)
+html = pagina("CAT POH-6: het onvoldoende-voorbeeld beoordeeld", body,
               "logo-breederode.png", "logo-eduface.png")
 pathlib.Path("onvoldoende-voorbeeld-cat-poh.html").write_text(html, encoding="utf-8")
+print("punten:", [p for _, p, _ in OORDEEL], "totaal", TOTAAL, "cijfer", round(TOTAAL/32*10, 1))
 print("html:", len(html) // 1024, "KB")

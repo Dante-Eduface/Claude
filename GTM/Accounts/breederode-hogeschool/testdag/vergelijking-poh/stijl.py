@@ -90,6 +90,9 @@ td.tr{padding:0}
 .grens{position:relative}
 .grens::after{content:"";position:absolute;left:0;top:-2.4mm;bottom:-2.4mm;border-left:2px solid var(--bar)}
 tr.tot td{background:var(--soft);font-weight:bold}
+table.oordeel th.s,table.oordeel td.s{width:52mm}
+table.oordeel th.p,table.oordeel td.p{width:14mm;text-align:center}
+td.p .nul{color:#B71C1C}
 table.zonderpunten th.s,table.zonderpunten td.s{width:84mm}
 table.zonderpunten th.sk,table.zonderpunten td.sk{width:24mm}
 .legend .z{display:inline-block;width:0;height:3.4mm;border-left:2px solid var(--bar);

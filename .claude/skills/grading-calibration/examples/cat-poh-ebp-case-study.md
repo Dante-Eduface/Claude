@@ -548,7 +548,7 @@ De feedback is tegen het verslag gecontroleerd. Wat het model goed zag: dat de c
 Wat er nog niet deugt, op volgorde van wat het kost:
 
 1. **Criterium 3 staat op Goed terwijl de zoektabel zichzelf tegenspreekt.** Het aantal hits loopt van 375 naar 9.391.035, dan naar 134, en daarna weer naar 1.528.289. Een regel die met AND wordt uitgebreid kan niet meer resultaten opleveren dan de regel ervoor. Het model ziet de oorzaak wel ("plaats haakjes rond PICO-elementen en licht AND/OR toe") maar behandelt die als vormkwestie en laat het niveau staan. **Leerpunt: een observatie zonder de consequentie ervan is geen beoordeling.** Het model kan het symptoom benoemen en toch het verkeerde vakje kiezen, en dat is met de strikte maat niet te zien, want er is hier geen docentoordeel om tegen af te zetten.
-2. **In één databank gezocht, nergens benoemd**, terwijl het criterium "databanken" in meervoud vraagt en de student in haar eigen reflectie schrijft dat ze een volgende keer meerdere zou gebruiken.
+2. ~~In één databank gezocht, nergens benoemd, terwijl het criterium "databanken" in meervoud vraagt.~~ **Fout van mij, geschrapt op 30-09.** De rubriek eist in zowel de 4- als de 2-kolom "minimaal 1 wetenschappelijke database". Eén databank is dus formeel genoeg en dit was geen gebrek. Dit is precies de fout waar `SKILL.md` voor waarschuwt: een eis afleiden uit de naam van een criterium in plaats van uit de tekst van de kolom.
 3. **Hetzelfde punt vier keer** (artikel 1 onderzoekt combinatiegebruik): bij criterium 2, bij criterium 5, en twee losse opmerkingen op dezelfde alinea. De dubbele opmerking op één alinea is dezelfde fout die Dante op 25-09 met de hand moest repareren.
 4. **Twee dingen in de data-extractietabellen blijven onbesproken:** "auteur heeft vaker onderzoek gedaan" als sterk punt, en artikel 3 dat in de tabel op level 1B staat terwijl de tekst zegt dat het bovenaan de piramide staat. Allebei criterium 4.
 
@@ -560,3 +560,32 @@ Twee documenten, gedeelde opmaak in `stijl.py`:
 - `.../onvoldoende-voorbeeld-cat-poh.pdf` (3 pagina's, over dit verslag)
 
 Opmaakregels na Dante's feedback van 30-09: Arial, kaarten om losse tekstblokken, zichtbare lijnen in de tabellen, ruime witregels tussen onderdelen, en elk document opent met de vragen van de lezer en het antwoord eronder. De gespreksagenda is eruit, want ze openen het zelfstandig.
+
+### Zelf beoordelen in plaats van de tool citeren, 30-09
+
+Dante: *"Jij mag de feedback geven; laat niet Eduface de feedback geven. Zet jij maar gewoon de criteria goed."* Daarop is Voorbeeld 1 opnieuw beoordeeld, met bijlage 6 versie 3.0 naast het verslag, criterium voor criterium.
+
+| # | Criterium | Mijn punten | Model | Binnen band |
+|---|---|---|---|---|
+| 1 | Aanleiding | 2 | Goed | ja |
+| 2 | PICO | 2 | Goed | ja |
+| 3 | Databanken en weging | 2 | Goed | ja |
+| 4 | Analyse | **0** | Voldoende | **nee** |
+| 5 | Conclusie | **0** | Voldoende | **nee** |
+| 6 | Discussie | 2 | Voldoende | ja |
+| 7 | Klinische relevantie | **0** | Onvoldoende | ja |
+| 8 | Reflectie | 2 | Voldoende | ja |
+| | **Totaal** | **10 van 32, cijfer 3,1** | | |
+
+Drie onderdelen onder de twee punten en 10 van de 32 totaal: gezakt op allebei de voorwaarden van de cesuur. Het model zakt ook, maar op één onderdeel in plaats van drie.
+
+**De belangrijkste vondst van deze hele kalibratie.** Op criterium 4 en 5 schrijft het model de onvoldoende-voorwaarde in zijn eigen woorden op en geeft dan een voldoende:
+
+- Criterium 5: *"Daardoor beantwoord je de volledige PICO-vraag onvoldoende."* De 0-kolom van de rubriek zegt: "er is onvoldoende antwoord gegeven om de volledige onderzoeksvraag te kunnen beantwoorden." Bijna woordelijk dezelfde zin, en toch Voldoende.
+- Criterium 4: *"Zonder methodologische koppeling blijven kwaliteit en toepasbaarheid onduidelijk."* De 2-kolom eist juist de methodologische kwaliteit met bijlage 5.1 erbij, en die is op geen enkel artikel toegepast.
+
+**Leerpunt voor `SKILL.md`: meet niet alleen het vakje, meet ook of de tekst van de AI het vakje draagt.** Een AI die de juiste observatie doet en er de verkeerde stand aan hangt, is met de strikte en de bandbreedte-maat allebei onzichtbaar zolang er geen onafhankelijk oordeel naast ligt. Het gat tussen wat de AI schrijft en wat de AI scoort is een eigen meetpunt, en het wijst direct de rubriekvakjes aan die te ruim geformuleerd zijn: hier de Satisfactory-kolom van criterium 4 en 5.
+
+**Tweede leerpunt: lees de kolomtekst, niet de naam van het criterium.** Ik rekende het aan als gebrek dat er in één databank was gezocht, omdat het criterium "wetenschappelijke databanken" heet. De kolomtekst zegt "minimaal 1 wetenschappelijke database". Gecorrigeerd in sectie 16 hierboven.
+
+Het document voor Selma is daarop herbouwd: het geeft nu ons eigen oordeel per criterium met de onderbouwing, en de vergelijking met Eduface staat in één sectie die laat zien waar het model te mild is.
