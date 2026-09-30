@@ -147,6 +147,8 @@ In de interface staat een label **"Lecturer + AI"** dat duidelijk maakt dat elk 
 - Daarnaast getraind om feedback te geven en te beoordelen zoals echte docenten en assistenten dat doen, op basis van onderzoek uit toonaangevende tijdschriften in pedagogiek en leerwetenschap.
 - **250.000 onderwijsspecifieke feedbackvoorbeelden.**
 - Het model is bewust klein gehouden. Daardoor kan het binnen de eigen infrastructuur van een instelling draaien, en ligt het energieverbruik per beoordeling flink lager dan bij grote algemene AI-modellen.
+- **Het model wordt in Nederland gehost** (Dante, 2026-09-30). Zo mag je het zeggen: "een onderwijskundig AI-model dat in Nederland wordt gehost".
+  - **Nog niet vastgelegd, dus niet beweren:** of dit ook geldt voor instellingen in het VK en de VS, en of studentdata ook in Nederland blijft. Dat laatste is een andere claim dan waar het model draait. Uitzoeken voor je het tegen een UK-prospect zegt.
 
 ## Verantwoorde AI en gegevensbescherming
 

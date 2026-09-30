@@ -24,7 +24,7 @@ De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat 
 | W4 | Wanneer komt de NPS-meting op Enterprise er? | Tot die er is staat het doel in `current-priorities.md` als niet stuurbaar. Dante weet het nog niet. | 19-09-2026 |
 | W5 | Na twee weken deep work: welk weektarget zetten we vast? | Het schema staat op 28 uur. De eerste twee weken zijn een nulmeting. | Vanaf 03-10-2026 |
 | W6 | Is eventmanager een vaste rol naast CSM, of alleen voor de SURF Onderwijsdagen (10-11 nov 2026)? Zo ja, wat valt eronder (beurzen, webinars, allebei)? | Zegt hij op 30-09-2026 in de chat ("ik ben hier eventmanager"). `Context/me.md` noemt alleen CSM. Ik vul het niet zelf in. | 30-09-2026 |
-| W7 | **Is "gehost in Nederland" een vaststaand feit over het Eduface-model?** Noemde je op 30-09-2026 in de websitetekst voor SURF Onderwijsdagen. | `Platform/product.md` zegt alleen dat het model binnen de infrastructuur van een instelling kan draaien, niet waar het gehost wordt. Staat het daar niet, dan beweer ik het niet buiten deze ene tekst. | 30-09-2026 |
+| W8 | **Geldt "gehost in Nederland" ook voor UK- en US-instellingen, en blijft studentdata ook in Nederland?** | Model en data zijn twee claims. UK-prospects vragen naar dataresidentie, en de UK is de eerste prioriteit voor het aannemen van Eduface. Tot dit duidelijk is zeg ik het alleen tegen Nederlandse instellingen. | 30-09-2026 |
 | P11 | Wordt de vaardigheid van dit jaar "een bericht schrijven waar iemand op reageert"? | Dat volgt uit A5: als de maat geboekte gesprekken is, is dat de vaardigheid die hem bepaalt. | 19-09-2026 |
 | G15 | De actuele standen van je potjes. Je levert hier een nieuw bestand voor. | `Context/financien.md` noemt bewust geen bedragen tot dat er is. | 19-09-2026 |
 
@@ -94,3 +94,4 @@ Blijft staan zodat zichtbaar is wat er al gevraagd is. Alles hieronder is op 19-
 | Draag je nog een WHOOP? | Gestopt. Geen herstel- of slaapdata meer. | `Context/personal.md` |
 | Wat doe je in het pauze-uur? | Gecorrigeerd op 20-09-2026: helemaal leeg. Eten en lopen, geen scherm. Shallow werk gaat naar de middag, want dat is werktijd en geen pauze. | `Context/deep-work.md` |
 | "Hulp voor het huis" en de oude uitgaven? | Geschrapt. Kijk vooruit, niet naar het verleden. De situatie is anders. | geschrapt |
+| Is "gehost in Nederland" een vaststaand feit over het Eduface-model? (beantwoord 30-09-2026) | Ja, het model wordt in Nederland gehost. | `Platform/product.md` |
