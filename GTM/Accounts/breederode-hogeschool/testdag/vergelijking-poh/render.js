@@ -8,11 +8,11 @@ const { chromium } = require('playwright');
     path: 'vergelijking-cat-poh.pdf',
     format: 'A4',
     printBackground: true,
-    margin: { top: '18mm', bottom: '16mm', left: '16mm', right: '16mm' },
+    margin: { top: '15mm', bottom: '16mm', left: '15mm', right: '15mm' },
     displayHeaderFooter: true,
     headerTemplate: '<div></div>',
-    footerTemplate: `<div style="width:100%;font-family:Inter,sans-serif;font-size:7.4pt;color:#5b7480;padding:0 16mm;display:flex;justify-content:space-between;">
-      <span>Breederode Hogeschool &middot; CAT POH-6</span>
+    footerTemplate: `<div style="width:100%;font-family:Arial,sans-serif;font-size:7.6pt;color:#4F6269;padding:0 15mm;display:flex;justify-content:space-between;">
+      <span>CAT Praktijkondersteuner Huisartsenzorg &middot; 30 september 2026 &middot; Dante Torbed, Eduface</span>
       <span>pagina <span class="pageNumber"></span> van <span class="totalPages"></span></span></div>`,
   });
   await b.close();

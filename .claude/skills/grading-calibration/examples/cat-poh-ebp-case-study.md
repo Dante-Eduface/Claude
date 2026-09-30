@@ -229,7 +229,7 @@ Zelfde feit, tegengestelde weging. Het is dus geen leesfout. De rubric vraagt bi
 
 Alle vier Great-teksten stapelen absoluten: "volledig en samenhangend", "volledig en overtuigend beschreven", "overtuigend onderbouwd", "aantoonbaar", "volledig en herkenbaar". Een model dat die letterlijk leest vindt altijd wel iets dat niet volledig is, zeker in combinatie met mechanisme A. Dat verklaart nul keer Great op 16 oordelen.
 
-Dat het aan de tekst ligt en niet aan de inzendingen blijkt uit de docent: zij gaf negen keer een 4, met motiveringen als "alle onderdelen van de analyse zijn op correcte wijze geanalyseerd. Complimenten!" en "Je reflectie voldoet aan alle gestelde eisen". Volledigheid binnen de gevraagde onderdelen, niet meer dan gevraagd.
+Dat het aan de tekst ligt en niet aan de inzendingen blijkt uit de docent: zij gaf acht keer een 4 en een keer een 3, met motiveringen als "alle onderdelen van de analyse zijn op correcte wijze geanalyseerd. Complimenten!" en "Je reflectie voldoet aan alle gestelde eisen". Volledigheid binnen de gevraagde onderdelen, niet meer dan gevraagd.
 
 **Fix: rubric-tekst, Great-kolom.**
 
@@ -441,7 +441,7 @@ Dat is leerzaam: een ontsnappingszin die een voorwaarde bevat, wordt die voorwaa
 
 Eén gerichte ronde op criterium 2, dan stoppen met fijnregelen. De reden om te stoppen: 15 van 16 binnen bandbreedte, rangorde klopt, toon klopt, nul keer Onvoldoende. Verder duwen aan het plafond zonder een gezakte inzending om de zaklijn tegen te ijken levert meer risico dan winst op.
 
-De compressie blijft wel bestaan: 1 keer Uitstekend op 16, terwijl de docent 9 keer 4 punten gaf, en het verschil tussen de twee studenten is 1 punt waar de docent 3,5 punt zag. De AI zet ze nu in de goede volgorde maar ziet het verschil als kleiner dan het is. Dat is acceptabel zolang de docent het eindcijfer zelf zet, maar het is de resterende beperking.
+De compressie blijft wel bestaan: 1 keer Uitstekend op 16, terwijl de docent 8 keer 4 punten gaf, en het verschil tussen de twee studenten is 1 punt waar de docent 3,5 punt zag. De AI zet ze nu in de goede volgorde maar ziet het verschil als kleiner dan het is. Dat is acceptabel zolang de docent het eindcijfer zelf zet, maar het is de resterende beperking.
 
 ## 14. Meting ronde 3, en de eindstand
 
@@ -519,3 +519,14 @@ Dat is een stap die nog niet in `SKILL.md` staat: na het kalibreren de vergelijk
 **Bevestigd op 30-09:** het blanco beoordelingsformulier dat Selma stuurde is inhoudelijk identiek aan het formulier waarop het model is ingericht (versie 3.0, acht criteria, 4/2/0, cesuur 18 plus minimaal 2 per onderdeel). De gekalibreerde rubriek kan dus één op één voor haar opdrachten worden gebruikt.
 
 **Nog open:** het totaalcijfer van student 1 staat in Eduface op `Sound` in plaats van een Nederlandse stand. Dat is zichtbaar in de inzendingenlijst zelf, niet alleen in de geëxporteerde PDF, en is dus handmatig te overschrijven. Melden bij Menno of Samuel.
+
+### De definitieve vorm, na feedback van Dante (30-09)
+
+De eerste proef kreeg als reactie *"wat is dit druk en veel informatie"*. Vier dingen zijn daarop veranderd, en drie daarvan zijn methodisch, niet cosmetisch.
+
+1. **Het document opent met de antwoorden, niet met de vergelijking.** Kas en Selma openen het zelfstandig, dus de eerste pagina is niet de tabel maar hun drie vragen met het antwoord eronder. De agenda van het gesprek is eruit: die veronderstelt dat je het stuk in het gesprek doorneemt.
+2. **De kolom "binnen bandbreedte" is weg.** Die stond zestien keer op "ja". Een waarde die overal gelijk is, draagt geen informatie (`Design/System/core/informatie.md`, punt 3). In plaats daarvan staat er per criterium een bandje van vier vakjes met de toegestane ruimte gearceerd en een stip op de keuze van het model. Of de stip in het bandje valt is dan te zien in plaats van te lezen, en de systematiek (bijna altijd links in het bandje) valt pas op in die vorm.
+3. **De kern staat als beeld op pagina 1:** vier balken op een raster van zestien oordelen, elf keer het laagste passende vakje, vier keer het hoogste, één score die de rubriek niet kent, en nul keer oneens. Die laatste balk met de waarde 0 is het eigenlijke antwoord op Kas' eerste vraag.
+4. **Twee bevindingen toegevoegd die eerder alleen in dit dossier stonden:** dat het eindoordeel in Eduface hun cesuur niet toepast (minimaal 18 punten én elk onderdeel minimaal 2), en dat reflectie in Eduface op 16% staat terwijl hun formulier alle acht criteria gelijk weegt. Allebei dingen die zij moeten weten en die verder niemand ze vertelt.
+
+Letter Arial op verzoek van Dante, vier A4. Fout die hierbij aan het licht kwam: sectie 12 van dit dossier telde negen vieren van de docent, het zijn er acht plus één drie. Gecorrigeerd.
