@@ -13,11 +13,14 @@
   .banner{width:796px;height:265px;background:var(--navy);color:var(--white);
     font-family:Inter,sans-serif;position:relative;padding:32px}
   .logo{display:block;height:28px;width:auto}
-  .main{position:absolute;left:32px;top:88px;width:468px}
+  .main{position:absolute;left:32px;top:80px;width:468px}
   h1{font-family:"League Spartan",sans-serif;font-weight:700;font-size:42px;line-height:1.05;
      letter-spacing:-.02em;text-wrap:balance}
   h1 .hl{color:var(--green)}
-  .who{position:absolute;left:32px;bottom:32px;font-size:14px;line-height:1.4;color:var(--soft)}
+  .who{position:absolute;left:32px;bottom:32px;display:flex;align-items:center;gap:16px;
+     font-size:14px;line-height:1.4;color:var(--soft)}
+  .partners{display:flex;align-items:center;gap:16px;background:var(--white);border-radius:8px;padding:8px 16px}
+  .partners img{display:block;height:28px;width:auto}
   .split{position:absolute;left:520px;top:32px;bottom:32px;width:244px;padding-left:32px;
      border-left:1px solid var(--line);display:flex;flex-direction:column;justify-content:flex-end;gap:16px}
   .split p{font-size:14px;line-height:1.4;color:var(--soft)}
@@ -28,7 +31,7 @@
 <div class="banner">
   <img class="logo" src="logo_white_crop.png" alt="Eduface">
   <div class="main"><h1>The <span class="hl">business outcomes</span> of AI marking and feedback</h1></div>
-  <div class="who">Webinar with Jisc and ALT</div>
+  <div class="who"><span>Webinar with</span><div class="partners"><img src="logo_jisc.svg" alt="Jisc"><img src="logo_alt.png" alt="Association for Learning Technology"></div></div>
   <div class="split">
     <p>Two breakout rooms</p>
     <ul><li>Consistency</li><li>Operational efficiency</li></ul>
