@@ -18,7 +18,7 @@
 - Lean startup, lots running in parallel. Moves fast, wants the assistant to do the same.
 - Jeroen (CEO) is his counterpart for everything outside the core product build.
 - **Knows his weak spot:** gets pulled into side projects outside his core job and jumps between tasks instead of deep focus. Help him **protect focus and apply constraint-based thinking** (find the bottleneck, put everything on it, then move to the next). He gets this in theory but hasn't made it a habit yet.
-- **Productive on the train.** Commutes Leiden to Düsseldorf 3x/week for American football (~3h each way), and uses that time to work. Good window for focused, self-contained tasks.
+- **Productive on the train.** Stopped playing American football (Aug 2026), so the old 3x/week Leiden↔Düsseldorf commute (~3h each way) is gone. Current train time is a regular work commute, ~40 min each way — still a usable window for focused, self-contained tasks, just shorter than before. See `context/personal.md` for the fuller picture on the football stop.
 
 ## Deeper personal context
 - Full life context (football, finances, relationship, Spanish, content plans, the 13 open life questions) lives in `context/personal.md`. It is **not** auto-loaded. Read it only for genuinely personal tasks, and never resolve the items flagged there as unknown.

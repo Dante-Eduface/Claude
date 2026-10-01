@@ -12,7 +12,7 @@
 
 ## Daily Routine & Focus (as of 17-09-2026)
 - **Wake-up:** 05:00 every day, including weekends.
-- **Work days:** Mon/Wed/Fri 07:00–18:30. Tue/Thu 07:00–15:30 (shorter — football commute days). No work planned in the evenings otherwise.
+- **Work days:** Mon/Wed/Fri 07:00–18:30. Tue/Thu 07:00–15:30 (shorter — reason not stated; he'd already stopped football by this point, so don't assume it's football-related). No work planned in the evenings otherwise.
 - **Focus blocks:** 07:00–09:00 and 09:30–12:00, back-to-back with barely a real break in between. Knows he should rest in the ~30 min gap but doesn't have a routine for what that rest should look like, so in practice just keeps working through it. Wants to get better at deep work / recovery between blocks.
 - **Eating:** Moved to intermittent fasting — fasts in the morning, first meal at 12:00 (during the second focus block). Main focus killer is a blood-sugar spike from eating carelessly/unhealthily.
 - **Lunch meal-prep staples:** rice, kwark (quark), banana, mandarin. Still figuring out the best order/combination to eat these in without spiking blood sugar — not a settled routine yet.
@@ -36,21 +36,22 @@
 - Q3: Does he negotiate role clarity + a path to CRO at the September salary moment, or just accept the raise?
 
 ## American Football
-- Plays at Düsseldorf Panthers (Germany), position Nickel (defensive back).
-- Commutes Leiden to Düsseldorf 3x/week, ~3h each way (15-18 hrs/week travel). Works on the train, so travel isn't fully lost time.
-- Genuinely talented and competitive. Stopped once before and came back because he missed it. Loves it, it's part of his identity.
-- Ambition: play for the best team in Europe in the best league. GFL1 (Germany) is the top-level target.
-- Paid pro football in Europe is possible but needs being based in Germany. He does NOT want to start a startup in Germany (doesn't speak German, no ambition to learn it).
+- **Stopped playing as of August 2026** (confirmed by Dante 17-09-2026). Was playing at Düsseldorf Panthers (Germany), position Nickel (defensive back), commuting Leiden↔Düsseldorf 3x/week (~3h each way, 15-18 hrs/week travel) — the commute is gone too, not just the games.
+- His own stated reasoning (from a LinkedIn draft, Aug/Sept 2026): compared focus to throwing parties — spreading yourself across football + work + side projects means nothing gets the attention it needs. Chose to consolidate into fewer "rooms." Says he's less busy and getting more done since stopping, a few weeks in.
+- Background: genuinely talented and competitive, had stopped once before and came back because he missed it — football is part of his identity, so this stop is not necessarily final.
+- Prior ambition (status now unclear): play for the best team in Europe (GFL1, Germany) in the best league; paid pro football would require being based in Germany, which conflicted with his no-German-startup stance.
 
-**Tension to flag, NOT resolved:** top-level paid football AND being CRO of a startup are both near-full-time. They conflict directly at the 5-year mark. One has to be primary. Not decided.
+**Previously flagged tension, now paused rather than resolved:** top-level paid football AND being CRO of a startup were both near-full-time and conflicted at the 5-year mark. Stopping football removes the immediate conflict, but doesn't tell us whether this is permanent or a pause — don't assume either.
 
 **Open questions (do not assume answers):**
-- Q4: After this season — stop, keep as hobby, or go all-in on paid pro football?
-- Q5: If paid football means living in Germany, is he willing to do that knowing it conflicts with the startup/career path?
+- Q4: Is stopping permanent, or does he pick it back up as a hobby/competitively later (he's done a stop-and-return before)?
+- Q5: If he ever returns to paid football requiring a Germany base, does that reopen the tension with the startup/CRO path?
 
 ## Physical / Gym
 - Trains 3x/week minimum. Consistent and non-negotiable, wants to keep it regardless of other changes.
 - After football: wants to move into CrossFit or another competitive sport.
+- Already dropped music during workouts to stay fully focused/present (no distraction).
+- **Considering (not decided):** switching from app-based workout tracking to pen-and-paper journaling, to remove his phone as a gym distraction entirely. Trade-off he's weighing: app gives longer-term trend data, but he doesn't actually have time/priority to analyze that dashboard (deep work takes priority on weekends) — so the app's main advantage may be moot for him in practice. Not yet decided which way he's going.
 
 ## Finances
 - Now: ~€2118,46/month net, €0 saved, spends it all.
