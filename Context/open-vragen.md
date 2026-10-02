@@ -1,6 +1,6 @@
 # Open vragen
 
-_Aangelegd 19-09-2026, bijgewerkt 20-09-2026._
+_Aangelegd 19-09-2026, bijgewerkt 02-10-2026._
 
 De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat is een vraag die ik **niet zelf mag invullen**.
 
@@ -25,6 +25,14 @@ De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat 
 | W5 | Na twee weken deep work: welk weektarget zetten we vast? | Het schema staat op 28 uur. De eerste twee weken zijn een nulmeting. | Vanaf 03-10-2026 |
 | P11 | Wordt de vaardigheid van dit jaar "een bericht schrijven waar iemand op reageert"? | Dat volgt uit A5: als de maat geboekte gesprekken is, is dat de vaardigheid die hem bepaalt. | 19-09-2026 |
 | G15 | De actuele standen van je potjes. Je levert hier een nieuw bestand voor. | `Context/financien.md` noemt bewust geen bedragen tot dat er is. | 19-09-2026 |
+| V1 | **Welke Azure-regio('s)?** De DPA zegt "Nederland + EU" en elders "gehost in Nederland". | Een instelling vraagt dit als eerste. Tot het bevestigd is zeggen we alleen "EU". | 02-10-2026 |
+| V3 | **`Platform/product.md` zegt "Studentdata gaat nooit naar externe AI-aanbieders".** Google Cloud OCR verwerkt wel studentdocumenten (in de EU, bevestigd). Blijft die zin staan, en telt OCR als "AI-aanbieder"? | Een instelling leest beide en ziet het verschil. | 02-10-2026 |
+| V7 | Wie is plaatsvervanger voor Jeroen bij een datalek, met 48 uur als termijn? | Eén contactpersoon is een risico op een gemiste termijn. | 02-10-2026 |
+| V8 | Wat staat er precies bij Railway ("interne metadata, tijdelijke verwerkingsgegevens")? Zit er studentdata of een identificeerbare gebruiker in? | Bepaalt of Railway een volwaardige subverwerker is. | 02-10-2026 |
+| V9 | Hoe lang blijven back-ups bewaard nadat een opdracht is verwijderd? | "Verwijderd op verzoek" moet ook voor back-ups kloppen. | 02-10-2026 |
+| V10 | **Risicoprofiel onder de AI Act, per gebruik.** Voorstel: formatieve feedback zonder scores = laag (onderbouwing onder art. 6 lid 3 vastleggen), summatief scoren = hoog (bijlage III, leerresultaten beoordelen). Bevestig je dat, en wat is de situatie bij de RBS? | Een instelling vraagt het letterlijk (RBS-vragenlijst). "Geen scores" alleen is geen vrijbrief, bijlage III noemt ook leerresultaten die het leerproces sturen. | 02-10-2026 |
+| V11 | Werkt alles in de browser zonder lokale installatie, kunnen functies per instelling aan en uit, wat moet een instelling technisch inrichten (LMS-koppeling, SSO, accountbeheer), en kunnen studenten zelf verwijderen? | Staat geel in `GTM/Knowledge/privacy-vragenlijsten/antwoorden-privacy-it-vragen-2026-10-02.docx`. | 02-10-2026 |
+| V12 | Continuïteit van het bedrijf zelf (financiering, team, exit- of escrowregeling) en het aantal getekende verwerkersovereenkomsten met Nederlandse instellingen. | Zelfde vragenlijst, vraag 9 en 12. | 02-10-2026 |
 
 ## Later, geen vraag maar een richting
 
@@ -45,6 +53,11 @@ Blijft staan zodat zichtbaar is wat er al gevraagd is. Alles hieronder is op 19-
 
 | Vraag | Antwoord | Waar het nu staat |
 |---|---|---|
+| Azure en Google Cloud, EU-only? (V2) | Microsoft, Google en Railway werken voor Eduface alleen met EU-infrastructuur. Uitspraak over wat Amerikaans recht daarvoor betekent is er niet. | `.claude/skills/privacy-it/platform-privacykennis.md` |
+| Wordt er getraind op studentdata? (V3, deels) | Nee, nooit. | `.claude/skills/privacy-it/platform-privacykennis.md` |
+| Bevat feedback persoonsgegevens? (V4) | Het model zet er geen in. Zet een docent er zelf een persoonsgegeven in, dan staat het er wel. | `.claude/skills/privacy-it/platform-privacykennis.md` |
+| Waar geldt de 8 jaar voor? (V5) | Voor alles, tenzij de opdracht in Eduface wordt verwijderd, dan verwijdert Eduface hem ook. | `.claude/skills/privacy-it/platform-privacykennis.md` |
+| Is de privacykennis voor de UK? (V6) | Niet specifiek. Het is brede privacykennis over het platform, niet de DPA zelf. | `.claude/skills/privacy-it/SKILL.md` |
 | Hoe ziet je werkdag eruit sinds je CSM bent? | De functiewissel veranderde niets, alleen de titel op LinkedIn. Een dag gaat mis als hij ongezond begint te eten. Over een slechte week heeft hij nog niet nagedacht. | `Context/me.md` |
 | Wat is Tjarko Kwee's rol? | Sales adviseur en angel investor in Eduface. | `Context/eduface.md` |
 | Wanneer moeten de 20 salesprocessen gestart zijn? | Maandelijks 20, doorlopend, geen einddatum. | `Context/current-priorities.md` |
