@@ -1,6 +1,6 @@
 # Open vragen
 
-_Aangelegd 19-09-2026, bijgewerkt 20-09-2026._
+_Aangelegd 19-09-2026, bijgewerkt 02-10-2026._
 
 De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat is een vraag die ik **niet zelf mag invullen**.
 
@@ -25,6 +25,14 @@ De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat 
 | W5 | Na twee weken deep work: welk weektarget zetten we vast? | Het schema staat op 28 uur. De eerste twee weken zijn een nulmeting. | Vanaf 03-10-2026 |
 | P11 | Wordt de vaardigheid van dit jaar "een bericht schrijven waar iemand op reageert"? | Dat volgt uit A5: als de maat geboekte gesprekken is, is dat de vaardigheid die hem bepaalt. | 19-09-2026 |
 | G15 | De actuele standen van je potjes. Je levert hier een nieuw bestand voor. | `Context/financien.md` noemt bewust geen bedragen tot dat er is. | 19-09-2026 |
+| V1 | **Welke Azure-regio('s)?** De DPA zegt "Nederland + EU" en elders "gehost in Nederland". | Een instelling vraagt dit als eerste. Tot het bevestigd is zeggen we alleen "EU". | 02-10-2026 |
+| V2 | **Amerikaanse moederbedrijven** (Microsoft, Google, Railway): is hier een DTIA over gedaan, en wat zeggen we? | Art. 3.1 van de DPA belooft hulp bij DTIA's. Een FG vraagt hier naar. | 02-10-2026 |
+| V3 | **Botsing met `Platform/product.md`**: "studentdata gaat nooit naar externe AI-aanbieders" en "nooit trainen" tegenover Google OCR en "niet zonder toestemming" in de DPA. Welke tekst is leidend? | Een instelling leest beide en ziet het verschil. | 02-10-2026 |
+| V4 | Feedback bevat geen persoonsgegevens, maar de DPA noemt "feedbacktekst" onder wat Azure verwerkt. Ook niet als een docent een naam in een opmerking zet? | Bepaalt of feedback buiten de AVG valt. | 02-10-2026 |
+| V5 | **Waar geldt de bewaartermijn van 8 jaar voor?** Alleen feedback, of ook geuploade opdrachten met naam? De DPA zegt "zolang de docent de opdracht actief gebruikt". | Acht jaar studentwerk met namen is voor een instelling een groot verschil. | 02-10-2026 |
+| V6 | **UK:** wat geldt er voor UK-universiteiten (UK GDPR, eigen DPA van de instelling, doorgifte EU/VK)? Waar rust "voldoet aan de UK GDPR" op? | De prioriteit is UK, de kennisbron is Nederlands. | 02-10-2026 |
+| V7 | Wie is plaatsvervanger voor Jeroen bij een datalek, met 48 uur als termijn? | Eén contactpersoon is een risico op een gemiste termijn. | 02-10-2026 |
+| V8 | Wat staat er precies bij Railway ("interne metadata, tijdelijke verwerkingsgegevens")? Zit er studentdata of een identificeerbare gebruiker in? | Bepaalt of Railway een volwaardige subverwerker is. | 02-10-2026 |
 
 ## Later, geen vraag maar een richting
 
