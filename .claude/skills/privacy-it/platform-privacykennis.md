@@ -60,7 +60,7 @@ Status per feit: **BEVESTIGD** = door Jeroen genoemd met datum. **TOEGEZEGD** = 
 
 ## 7. Menselijke controle
 
-- De docent keurt elk feedbackpunt en elk cijfervoorstel goed voordat de student iets ziet. In de interface staat het label "Lecturer + AI".
+- De docent houdt de regie, "The AI assists. The academic decides." De instelling kiest hoeveel menselijk toezicht ze wil: feedback direct naar de student, of pas nadat de docent hem heeft gelezen en goedgekeurd (`Platform/product.md`). In de interface staat het label "Lecturer + AI" als de docent het heeft bekeken. Let op: `Context/eduface.md` zegt dat de docent elke opmerking goedkeurt, dat is dus een instelling en geen vaste regel.
 - Audit trail die voldoet aan de AI Act, voor alle summatieve beoordelingen (`Platform/product.md`).
 
 ## 8. Beveiliging
@@ -117,7 +117,7 @@ Krijgt Eduface zelf een overheidsverzoek over de gegevens, dan neemt zij direct 
 
 - Verwerking en opslag vinden plaats in de EU, ook bij Microsoft, Google en Railway.
 - Er wordt niet getraind op studentwerk of instellingsdata.
-- De docent beslist, de AI assisteert.
+- De docent beslist, de AI assisteert. De instelling bepaalt of feedback eerst door de docent wordt goedgekeurd.
 - Gegenereerde feedback bevat geen persoonsgegevens, tenzij een docent die er zelf in zet.
 - Standaard 8 jaar bewaard, direct verwijderd als de opdracht uit het systeem gaat, en op verzoek en na afloop van de samenwerking.
 - Een datalek gaat binnen 48 uur naar de instelling.
@@ -142,3 +142,6 @@ Zie ook `Context/open-vragen.md`.
 | V7 | Wie is plaatsvervanger voor Jeroen bij een datalek? |
 | V8 | Wat staat er precies bij Railway? Zit er studentdata of een identificeerbare gebruiker in? |
 | V9 | Hoe lang blijven back-ups bewaard na verwijdering van een opdracht? |
+| V10 | Welk risicoprofiel hanteert Eduface zelf onder de AI Act (laag, midden, hoog)? De AI Act noemt AI die leerresultaten beoordeelt hoog risico (bijlage III). |
+| V11 | Installatie en beheer: werkt alles in de browser zonder lokale installatie? Kunnen losse functies of modules per instelling aan en uit? Wat moet een instelling technisch inrichten (LMS-koppeling, SSO, accountbeheer)? Kunnen studenten zelf verwijderen? |
+| V12 | Continuïteit van het bedrijf zelf (financiering, team, exit- of escrowregeling) en het aantal getekende verwerkersovereenkomsten met Nederlandse instellingen. |
