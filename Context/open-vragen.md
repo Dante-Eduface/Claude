@@ -26,13 +26,10 @@ De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat 
 | P11 | Wordt de vaardigheid van dit jaar "een bericht schrijven waar iemand op reageert"? | Dat volgt uit A5: als de maat geboekte gesprekken is, is dat de vaardigheid die hem bepaalt. | 19-09-2026 |
 | G15 | De actuele standen van je potjes. Je levert hier een nieuw bestand voor. | `Context/financien.md` noemt bewust geen bedragen tot dat er is. | 19-09-2026 |
 | V1 | **Welke Azure-regio('s)?** De DPA zegt "Nederland + EU" en elders "gehost in Nederland". | Een instelling vraagt dit als eerste. Tot het bevestigd is zeggen we alleen "EU". | 02-10-2026 |
-| V2 | **Amerikaanse moederbedrijven** (Microsoft, Google, Railway): is hier een DTIA over gedaan, en wat zeggen we? | Art. 3.1 van de DPA belooft hulp bij DTIA's. Een FG vraagt hier naar. | 02-10-2026 |
-| V3 | **Botsing met `Platform/product.md`**: "studentdata gaat nooit naar externe AI-aanbieders" en "nooit trainen" tegenover Google OCR en "niet zonder toestemming" in de DPA. Welke tekst is leidend? | Een instelling leest beide en ziet het verschil. | 02-10-2026 |
-| V4 | Feedback bevat geen persoonsgegevens, maar de DPA noemt "feedbacktekst" onder wat Azure verwerkt. Ook niet als een docent een naam in een opmerking zet? | Bepaalt of feedback buiten de AVG valt. | 02-10-2026 |
-| V5 | **Waar geldt de bewaartermijn van 8 jaar voor?** Alleen feedback, of ook geuploade opdrachten met naam? De DPA zegt "zolang de docent de opdracht actief gebruikt". | Acht jaar studentwerk met namen is voor een instelling een groot verschil. | 02-10-2026 |
-| V6 | **UK:** wat geldt er voor UK-universiteiten (UK GDPR, eigen DPA van de instelling, doorgifte EU/VK)? Waar rust "voldoet aan de UK GDPR" op? | De prioriteit is UK, de kennisbron is Nederlands. | 02-10-2026 |
+| V3 | **`Platform/product.md` zegt "Studentdata gaat nooit naar externe AI-aanbieders".** Google Cloud OCR verwerkt wel studentdocumenten (in de EU, bevestigd). Blijft die zin staan, en telt OCR als "AI-aanbieder"? | Een instelling leest beide en ziet het verschil. | 02-10-2026 |
 | V7 | Wie is plaatsvervanger voor Jeroen bij een datalek, met 48 uur als termijn? | Eén contactpersoon is een risico op een gemiste termijn. | 02-10-2026 |
 | V8 | Wat staat er precies bij Railway ("interne metadata, tijdelijke verwerkingsgegevens")? Zit er studentdata of een identificeerbare gebruiker in? | Bepaalt of Railway een volwaardige subverwerker is. | 02-10-2026 |
+| V9 | Hoe lang blijven back-ups bewaard nadat een opdracht is verwijderd? | "Verwijderd op verzoek" moet ook voor back-ups kloppen. | 02-10-2026 |
 
 ## Later, geen vraag maar een richting
 
@@ -53,6 +50,11 @@ Blijft staan zodat zichtbaar is wat er al gevraagd is. Alles hieronder is op 19-
 
 | Vraag | Antwoord | Waar het nu staat |
 |---|---|---|
+| Azure en Google Cloud, EU-only? (V2) | Microsoft, Google en Railway werken voor Eduface alleen met EU-infrastructuur. Uitspraak over wat Amerikaans recht daarvoor betekent is er niet. | `.claude/skills/privacy-it/platform-privacykennis.md` |
+| Wordt er getraind op studentdata? (V3, deels) | Nee, nooit. | `.claude/skills/privacy-it/platform-privacykennis.md` |
+| Bevat feedback persoonsgegevens? (V4) | Het model zet er geen in. Zet een docent er zelf een persoonsgegeven in, dan staat het er wel. | `.claude/skills/privacy-it/platform-privacykennis.md` |
+| Waar geldt de 8 jaar voor? (V5) | Voor alles, tenzij de opdracht in Eduface wordt verwijderd, dan verwijdert Eduface hem ook. | `.claude/skills/privacy-it/platform-privacykennis.md` |
+| Is de privacykennis voor de UK? (V6) | Niet specifiek. Het is brede privacykennis over het platform, niet de DPA zelf. | `.claude/skills/privacy-it/SKILL.md` |
 | Hoe ziet je werkdag eruit sinds je CSM bent? | De functiewissel veranderde niets, alleen de titel op LinkedIn. Een dag gaat mis als hij ongezond begint te eten. Over een slechte week heeft hij nog niet nagedacht. | `Context/me.md` |
 | Wat is Tjarko Kwee's rol? | Sales adviseur en angel investor in Eduface. | `Context/eduface.md` |
 | Wanneer moeten de 20 salesprocessen gestart zijn? | Maandelijks 20, doorlopend, geen einddatum. | `Context/current-priorities.md` |

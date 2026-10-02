@@ -54,7 +54,7 @@ Niet elke sessie lezen, wel altijd naar verwijzen in plaats van uit het hoofd be
 
 - **Product, wat je wel en niet mag claimen:** `Platform/product.md`. Bevestigd door Dante op 19-09-2026 als dé bron voor elke productclaim. Staat het daar niet, dan beweer je het niet.
 
-- **Privacy, IT-veiligheid, DPA/DPIA:** skill `privacy-it` (`.claude/skills/privacy-it/`). Bevestigde feiten en open punten staan in `eduface-feiten.md`, de SURF-verwerkersovereenkomst in `dpa-surf-4-0.md`. Niet uit het hoofd beweren waar data staat of hoe lang die bewaard blijft.
+- **Privacy, IT-veiligheid, DPA/DPIA:** skill `privacy-it` (`.claude/skills/privacy-it/`). De kennis staat in `platform-privacykennis.md` in die map. Niet uit het hoofd beweren waar data staat of hoe lang die bewaard blijft.
 - **Prijs:** `GTM/Pricing/prijsmodel-psu-26-27.md`. 3 per student per maand in de valuta van de markt, drempel 300 lerenden. Nooit een prijs uit het hoofd noemen, altijd dit bestand lezen.
 - **Salesproces en gates:** `GTM/Knowledge/sales-handbook-v1.md`, `GTM/Knowledge/meddpicc-states-and-gates.md`.
 - **Pipeline en dealstand:** Close, niet een bestand hier.
