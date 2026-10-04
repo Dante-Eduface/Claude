@@ -4,7 +4,7 @@
 >
 > **Kijk vooruit, niet achteruit.** Dante op 19-09-2026: *"ik wil dat je niet zo bezig bent met het verleden, de situatie is heel anders."* De historische uitgavenanalyse uit de afschriften is daarom hier niet overgenomen. Gebruik dit bestand voor waar hij naartoe gaat, niet voor wat hij vorig jaar uitgaf.
 
-_Laatst bijgewerkt: 28-09-2026. Bron: Dante zelf, plus zijn ABN-afschriften._
+_Laatst bijgewerkt: 04-10-2026. Bron: Dante zelf, plus zijn ABN-afschriften._
 
 ## Wat er binnenkomt
 
@@ -35,6 +35,26 @@ Die verdeling voert hij echt uit, het is geen voornemen.
 | Zorgtoeslag | 129 per maand apart, voor de zorgpremie |
 | Trade Republic | Aandelen. Rekening bestaat al. |
 | Archiefrekening | Slaapt, geen bestemming |
+
+### De stand per 02-10-2026
+
+Uit het MT940-bestand van 04-10-2026, dat alle vijf de rekeningen bevat.
+
+| Pot | Stand | Peildatum |
+|---|---|---|
+| Betaalrekening | 514,18 | 01-10 |
+| Curaçao | 397,85 | 02-10 |
+| Zorgverzekering | 129,30 | 02-10 |
+| Savings (uit huis) | 0,25 | 02-10 |
+| **Vermogen** | **1.041,58** | geen schuld meer |
+
+Hij stortte op 28-09 afgeronde bedragen: 325 naar Curaçao en 76 naar het zorgpotje, niet de 323,11 en 76,45 die ik voorrekende. Verschil is verwaarloosbaar. Daarbovenop kwam de kwartaalrente van 30-09: 0,75 op Curaçao, 0,30 op het zorgpotje, 0,14 op Savings.
+
+Het vermogen zakte van ongeveer 1.220 naar 1.041,58. Daarvan is 129,45 de tweede zorgpremiebetaling hieronder, de rest is gewone uitgaven.
+
+**De zorgpremie is in drie dagen twee keer betaald (28-09 en 30-09), en dat is waarschijnlijk terecht.** De incasso loopt elke maand rond de laatste dag: 30-01, 27-02, 31-03, 30-04, 01-06, 01-07, 02-08, en daarna pas weer 30-09. **Er is geen incasso eind augustus geweest**, dus de premie van september stond open. Op 28-09 betaalde hij 129,45 met de hand via iDEAL, op 30-09 liep de gewone incasso. Twee betalingen, maar vermoedelijk twee verschillende maanden.
+
+Waarom die augustus-incasso niet liep valt niet uit de afschriften te lezen, maar eind augustus en heel september stond er zelden meer dan 30 euro op de betaalrekening. Dat is precies waar het zorgpotje nu voor dient. **Te controleren bij Zorg en Zekerheid: staat het saldo op nul, of is er nog een achterstand.** Staat als G20 open.
 
 ### 28-09-2026: salaris binnen, vermogen voor het eerst positief
 

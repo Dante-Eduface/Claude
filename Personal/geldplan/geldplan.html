@@ -252,15 +252,14 @@ const D={
   // potCuracao is wat hij NAAST de vlucht nodig heeft. De vlucht van 947,44 is al
   // betaald en loopt via schuldPa, dus die zit hier bewust niet in.
   potUitHuis:7500, potCuracao:1700, curacaoDatum:'2027-01-26', uitHuisDatum:'2027-08-01',
-  // 28-09-2026: salaris binnen (2.146,82), vader terugbetaald, schuld is 0.
-  // Daarna gestort: 76,45 naar het zorgpotje (staat nu op een hele premie) en
-  // 323,11 naar Curacao.
-  saldoUH:0.11, saldoCur:395.21, saldoAA:0, saldoZorg:129.45, schuldPa:0,
+  // Standen per 02-10-2026 uit het MT940-bestand. Hij stortte op 28-09 afgeronde
+  // bedragen: 325 naar Curacao en 76 naar het zorgpotje. Plus kwartaalrente.
+  saldoUH:0.25, saldoCur:397.85, saldoAA:0, saldoZorg:129.30, schuldPa:0,
   // Saldo van de betaalrekening PER DATUM. Nooit een bedrag uit een export onder
   // de datum van vandaag zetten: een export loopt achter, en dan liegt de kop.
   // 28-09: 27,64 plus salaris 2.146,82 min 950 vader min 129,45 zorgpremie.
-  saldoStart:{'2026-09-24':59.98,'2026-09-27':27.64,'2026-09-28':695.45}, standPer:'2026-09-28',
-  seed13:false, checks:{'2026-08':{zorg:true,cur:true,uh:true,aa:true}},
+  saldoStart:{'2026-09-27':27.64,'2026-09-28':642.76,'2026-10-01':514.18}, standPer:'2026-10-02',
+  seed14:false, checks:{'2026-08':{zorg:true,cur:true,uh:true,aa:true}},
   daily:{}, saldi:{}, rules:{}, tx:[], eigen:[]
 };
 const CATS=['Inkomen','Vaste lasten','Reizen','Boodschappen','Leven','Sparen','Negeren'];
@@ -594,10 +593,10 @@ function buildSettings(){const el=document.getElementById('settings');el.innerHT
 (async function(){
   await load();
   if(!Object.keys(S.daily).length&&S.saldoStart){Object.assign(S.daily,S.saldoStart);await save(true);}
-  if(!S.seed13){ S.tx=[]; S.saldi={}; S.eigen=[];
-    S.saldoUH=0.11; S.saldoCur=395.21; S.saldoZorg=129.45; S.saldoAA=0; S.schuldPa=0;
+  if(!S.seed14){ S.tx=[]; S.saldi={}; S.eigen=[];
+    S.saldoUH=0.25; S.saldoCur=397.85; S.saldoZorg=129.30; S.saldoAA=0; S.schuldPa=0;
     S.vasteLasten=341; S.reizen=350; S.inkomen=2132; S.potCuracao=1700; S.curacaoDatum='2027-01-26';
-    S.standPer='2026-09-28'; Object.assign(S.daily,D.saldoStart); S.seed13=true; await save(true); }
+    S.standPer='2026-10-02'; Object.assign(S.daily,D.saldoStart); S.seed14=true; await save(true); }
   buildSettings();
   ['rS','rL','rA'].forEach((id,i)=>{document.getElementById(id).value=[S.pctSparen,S.pctLeven,S.pctAandelen][i];});
   render();
