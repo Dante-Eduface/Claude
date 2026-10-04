@@ -58,26 +58,33 @@ Het vermogen zakte van ongeveer 1.220 naar 1.041,58. Daarvan is 129,45 de tweede
 
 Waarom die augustus-incasso niet liep valt niet uit de afschriften te lezen, maar eind augustus en heel september stond er zelden meer dan 30 euro op de betaalrekening. Dat is precies waar het zorgpotje nu voor dient.
 
-### Oktober 2026 sluit, met ongeveer 100 over
+### Oktober 2026 komt op nul uit
 
-Bijgewerkt 04-10-2026 met twee opgaven van Dante: NS schrijft 167 af op 5 oktober, en de kapper is deze maand 90 waarvan 60 al gepind is.
+Stand op 04-10-2026, afgelezen uit de ABN-app: betaalrekening **296,54**, Curaçao 397,85, Zorgverzekering 129,30, Savings 0,25. Samen **823,94**, geen schuld.
 
 | | |
 |---|---|
-| Op de betaalrekening, 01-10 | 514,18 |
-| Zorgtoeslag, rond de 20e | 129,00 |
-| **Beschikbaar** | **643,18** |
+| Op de betaalrekening, 04-10 | 296,54 |
+| Zorgtoeslag, rond de 20e | +129,00 |
+| **Beschikbaar** | **425,54** |
 | NS, 5 oktober | -167,00 |
-| Huur aan zijn moeder, rond de 4e | -100,00 |
-| Boodschappen | -180,00 |
+| Boodschappen, vier weken | -180,00 |
 | Trainmore | -35,00 |
 | Kapper, restant | -30,00 |
 | Klein spul | -30,00 |
-| **Over** | **ongeveer 101** |
+| **Over** | **ongeveer -16** |
 
-De zorgpremie van eind oktober staat er niet in, die komt uit het zorgpotje van 129,30. Dat is 15 cent minder dan de premie van 129,45, dus die moet van de betaalrekening komen.
+De huur van 100 aan zijn moeder is al afgeschreven op 4 oktober en zit in die 296,54. De zorgpremie van eind oktober staat er niet in: die komt uit het zorgpotje van 129,30, dat daarmee leeg raakt.
 
-**De regel die hieruit volgt: wat overblijft gaat pas aan het eind van de maand naar Curaçao, niet nu.** Vooraf wegzetten geeft hem later in de maand een reden om het potje weer open te trekken, en dat is precies het patroon van augustus en september. Blijft er eind oktober 100 staan, dan gaat dat alsnog naar Curaçao en zakt november tot januari van 434 naar ongeveer 400 per maand.
+**Het laagste punt valt rond 18 oktober, net voor de zorgtoeslag, op bijna nul.**
+
+**De kapper betaalt hij contant.** De 60 euro die hij op 3 oktober bij Geldmaat Stille Mare opnam is het kappersgeld. Daarom staat die post nergens als winkelnaam in de afschriften. Er komt deze maand nog 30 bij, dus de kapper is in oktober 90.
+
+**Zaterdag 3 oktober kostte ongeveer 117**: 60 contant, 30 bij Fair Amusement, en de rest aan losse dingen op een festivaldag. Dat is de reden dat oktober van ongeveer 100 over naar ongeveer nul ging. Geen ramp, wel het hele verschil.
+
+**Gevolg voor Curaçao:** er is eind oktober waarschijnlijk niets te vegen. November tot januari blijft dus op 434 per maand staan, niet op 400.
+
+**Loopt het vast, dan komt het uit het zorgpotje en niet uit Curaçao.** Het zorgpotje vul je de maand erna weer aan; een aangebroken Curaçao-potje is in augustus en september binnen zes weken leeg gelopen.
 
 ### 28-09-2026: salaris binnen, vermogen voor het eerst positief
 
