@@ -56,6 +56,27 @@ Het vermogen zakte van ongeveer 1.220 naar 1.041,58. Daarvan is 129,45 de tweede
 
 Waarom die augustus-incasso niet liep valt niet uit de afschriften te lezen, maar eind augustus en heel september stond er zelden meer dan 30 euro op de betaalrekening. Dat is precies waar het zorgpotje nu voor dient. **Te controleren bij Zorg en Zekerheid: staat het saldo op nul, of is er nog een achterstand.** Staat als G20 open.
 
+### Oktober 2026 sluit, met ongeveer 100 over
+
+Bijgewerkt 04-10-2026 met twee opgaven van Dante: NS schrijft 167 af op 5 oktober, en de kapper is deze maand 90 waarvan 60 al gepind is.
+
+| | |
+|---|---|
+| Op de betaalrekening, 01-10 | 514,18 |
+| Zorgtoeslag, rond de 20e | 129,00 |
+| **Beschikbaar** | **643,18** |
+| NS, 5 oktober | -167,00 |
+| Huur aan zijn moeder, rond de 4e | -100,00 |
+| Boodschappen | -180,00 |
+| Trainmore | -35,00 |
+| Kapper, restant | -30,00 |
+| Klein spul | -30,00 |
+| **Over** | **ongeveer 101** |
+
+De zorgpremie van eind oktober staat er niet in, die komt uit het zorgpotje van 129,30. Dat is 15 cent minder dan de premie van 129,45, dus die moet van de betaalrekening komen.
+
+**De regel die hieruit volgt: wat overblijft gaat pas aan het eind van de maand naar Curaçao, niet nu.** Vooraf wegzetten geeft hem later in de maand een reden om het potje weer open te trekken, en dat is precies het patroon van augustus en september. Blijft er eind oktober 100 staan, dan gaat dat alsnog naar Curaçao en zakt november tot januari van 434 naar ongeveer 400 per maand.
+
 ### 28-09-2026: salaris binnen, vermogen voor het eerst positief
 
 Salaris 2.146,82 binnengekomen. Daarvan meteen de 950 aan zijn vader terugbetaald en 129,45 zorgpremie voldaan. Daarmee is hij schuldenvrij en staat zijn vermogen op ongeveer **1.220 euro**, tegen min 765 een dag eerder. Dat is het eerste positieve getal sinds deze controle loopt.
@@ -76,7 +97,7 @@ De vaste lasten van september waren op dat moment al voldaan: huur aan zijn moed
 | Zorgpremie Zorg en Zekerheid | 129,45, soms plus 9,07 | de 30e of de 1e |
 | Huur aan zijn moeder | 100 | de 4e |
 | Trainmore | 30 tot 40 | wisselt, 10e tot 24e |
-| Kapper | 60, zegt Dante zelf, niet herkenbaar in de afschriften | onbekend |
+| Kapper | 60, zegt Dante zelf, niet herkenbaar in de afschriften. In oktober 2026 is het 90: 60 gepind en 30 nog te gaan. Of 90 het nieuwe maandbedrag is, is onduidelijk. | onbekend |
 | Apple | 9,99, niet elke maand | wisselt |
 | PayPal | geen vaste last maar een lek, 6 tot 146 per maand | verspreid |
 
