@@ -54,7 +54,9 @@ Het vermogen zakte van ongeveer 1.220 naar 1.041,58. Daarvan is 129,45 de tweede
 
 **De zorgpremie is in drie dagen twee keer betaald (28-09 en 30-09), en dat is waarschijnlijk terecht.** De incasso loopt elke maand rond de laatste dag: 30-01, 27-02, 31-03, 30-04, 01-06, 01-07, 02-08, en daarna pas weer 30-09. **Er is geen incasso eind augustus geweest**, dus de premie van september stond open. Op 28-09 betaalde hij 129,45 met de hand via iDEAL, op 30-09 liep de gewone incasso. Twee betalingen, maar vermoedelijk twee verschillende maanden.
 
-Waarom die augustus-incasso niet liep valt niet uit de afschriften te lezen, maar eind augustus en heel september stond er zelden meer dan 30 euro op de betaalrekening. Dat is precies waar het zorgpotje nu voor dient. **Te controleren bij Zorg en Zekerheid: staat het saldo op nul, of is er nog een achterstand.** Staat als G20 open.
+**Bevestigd op 04-10-2026: het polissaldo staat op nul.** De twee betalingen waren dus twee verschillende maanden en er valt niets terug te vragen. Hij staat quitte.
+
+Waarom die augustus-incasso niet liep valt niet uit de afschriften te lezen, maar eind augustus en heel september stond er zelden meer dan 30 euro op de betaalrekening. Dat is precies waar het zorgpotje nu voor dient.
 
 ### Oktober 2026 sluit, met ongeveer 100 over
 
