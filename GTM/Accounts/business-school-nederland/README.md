@@ -1,12 +1,13 @@
 # Business School Nederland (BSN)
 
-_Kennisbank van de deal. Bijgewerkt: 2026-09-11. Werk dit bij na elk contact._
+_Kennisbank van de deal. Bijgewerkt: 2026-10-05. Werk dit bij na elk contact._
 
 ## Waar alles staat
 - **Close lead:** Business school Nederland, `lead_lFz9aSPR6J44Mno6glfYsreey7rYBP0rbETGm9s3uqZ`
 - **Close opportunity:** `oppo_tfYM5wFVn615TrGXSlCqDjPDMgwGBnN7PlIXnqjXugD` (fase Scoping, €18.000/jaar, 28%, close 15 feb 2027). De status-update in het vaste format (health / Nodig / Verloop / Gaten) staat op de opportunity.
 - **Notes op de lead:** discovery-vragen (31 aug), cost justification (10 sep), SSO grid 1 (10 sep).
 - **SSO grid:** `sso-grid-bsn.html` + `sso-grid-bsn.png` in deze map. Volgende versie = "SSO grid 2" in Close.
+- **Dissertation, verkorte versie:** `dissertation-verkort.md`. Opdracht plus beoordelingsformulier om in Eduface te zetten, max. 5.000 woorden (05-10-2026).
 - **Transcript gesprek 10 sep:** `Eduface/Archive/Opnamens/2026-09-10 Action Learning Business School Europe.txt` (Dictafoon-opname, 20 min, hoorfouten, geen sprekerscheiding).
 - **Samenhang:** BSN nam Business School Notenboom over in 2025. Notenboom is een aparte lead in Close (SHIFT cold call batch, Tier A). Dossier: `GTM/Campaigns/cold-calling/notenboom-sso-stappenplan.md`.
 
@@ -15,6 +16,7 @@ _Kennisbank van de deal. Bijgewerkt: 2026-09-11. Werk dit bij na elk contact._
 - Deze vestiging is het hoofdkantoor, "alles draait vanuit Nederland". Andere vestigingen internationaal; directeur wil daar later introducties voor doen.
 - Zestig afstudeerders per jaar op deze vestiging. Kleine school, "klein is kwaliteit, daar betaal je extra voor".
 - Studenten leveren niet maandelijks in: 4 tot 6 maanden tussen leerproducten. Acht opleveringen per traject, geen theoretische toetsen.
+- Afstudeerfase volgens de programmapagina: dissertation, zelfreflectierapport en Viva Voce. De dissertation is 100+ pagina's en dat kan de tool niet in één keer aan (Dante, 05-10-2026). Daarom een verkorte versie, zie hierboven.
 - Talen: nu Nederlands en Engels. Chinees en Arabisch komen later, "over een jaar".
 - LMS: vermoedelijk Moodle (vraag 11 uit discovery, antwoord niet vastgelegd).
 

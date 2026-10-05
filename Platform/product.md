@@ -65,6 +65,8 @@ Eduface voldoet aan de AI Act (Dante, 2026-09-08).
 
 **De rubric.** De Paper Grader is gegrond in de rubric en doet volledige rubric-scoring. Zie ook `no-rubric-needed`: het product beweegt naar instrueren zonder rubric, dus toets een prospect op hun eisenkader of leeruitkomsten, niet op de vraag of ze een rubric hebben liggen.
 
+**Lengte van een inzending.** Een dissertation van 100+ pagina's kan de Paper Grader niet in één keer aan (Dante, 05-10-2026, bij Business School Nederland). Waar de grens ligt is niet vastgelegd (open vraag W6), dus beloof een prospect met lange leerproducten niets over lengte. Voorlopige route: een verkorte opdracht, zie `GTM/Accounts/business-school-nederland/dissertation-verkort.md`.
+
 ## Bewijs dat je mag noemen
 
 - **Betaalde klanten (gebruiken het model, mag je zo noemen):** Hogeschool Rotterdam, De Haagse Hogeschool, Tilburg University, Radboud Universiteit.
