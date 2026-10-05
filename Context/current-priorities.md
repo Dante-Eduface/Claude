@@ -58,7 +58,7 @@ Te halen vóór het einde van 2027.
 Stond hier tot 19-09-2026. Niet omdat het slechte ideeën zijn, maar omdat alles tegelijk betekent niets af.
 
 - Meta- en LinkedIn-ads. LinkedIn-ads doet hij helemaal niet meer.
-- SEO en GEO voor eduface.me.
+- SEO en GEO voor eduface.me. **Deels terug:** op 25-09-2026 en 05-10-2026 liet Dante blogs schrijven op zoekwoorden (skill `blog-writer`). Of dat ondersteunend is aan de 20 salesprocessen of een eigen doel, staat open (W6).
 - De Framer-site herbouwen.
 - De Jisc/CHEST-pilotdoelen uit Q2.
 - Het webinar met De Haagse Hogeschool, dat was 23 juni.
