@@ -9,6 +9,13 @@ Contactpersoon ALT: naam nog aanvullen (partnerships/sponsoring, checkt bij haar
 - **Webinar:** de vrijdag voor de conferentie, **11:00 tot 12:00 UK-tijd** (12:00 tot 13:00 NL). Wij hosten in Teams en maken een landingspagina, ALT deelt link plus video naar de ledenlijst. Zij start volgende week met de marketing. Zij woont het webinar zelf bij.
 - **Factuur en subsidie:** gevraagd of de webinar op de factuur op de eventdatum en -locatie kan staan (NL-subsidie voor fysieke aanwezigheid op internationale events). Zij ziet geen probleem, maar **moet dit nog bij haar CEO bevestigen**. Niet als zeker rekenen.
 
+## Webinar, stand 2026-10-05
+- **Datum: 15 oktober 2026, 11:00 UK-tijd** (verschoven van 29 september omdat ALT erbij kwam, zie Jeroens berichten van 16-09-2026). Valt op een donderdag, niet op de vrijdag uit de call van 11-09.
+- **Teams-eventlink:** https://events.teams.microsoft.com/event/4239b958-f045-4d0c-8367-96a44223b992@b817b3d1-ef29-4188-b513-db36a036f9b1?source=copyLinkOneEventsShareDialog
+- Uitnodigingen naar aangemelde LinkedIn-contacten zijn op 05-10-2026 verstuurd door Jeroen.
+- **Proef AACSB-roster:** `aacsb-proef/`. Tien mensen van de AACSB EMEA-roster van 2022, onderzocht door agent 3 met berichten van agent 4.
+- Goede voorbeeldberichten: `.claude/skills/outreach/voorbeelden-alt-webinar.md`.
+
 ## Wat ALT levert (mail toegezegd voor einde dag 2026-09-11)
 - Exhibition package met inhoud, plus de talk-toevoeging (30 min) met prijs
 - Aantal e-mailadressen op de ledenlijst
