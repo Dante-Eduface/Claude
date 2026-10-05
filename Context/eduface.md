@@ -1,6 +1,6 @@
 # Eduface
 
-_Laatst bijgewerkt: 2026-09-19._
+_Laatst bijgewerkt: 2026-10-02._
 
 Het bedrijf waar Dante werkt. Juridisch heet het **Blockbook B.V.**, daar komt zijn salaris ook vandaan. Naar buiten is alles Eduface. Dit bestand is alleen het minimum dat elke sessie nodig heeft: wat we verkopen, aan wie, en wie er werkt. Alles wat dieper gaat staat in een eigen bestand, zie **Waar de details staan**.
 
@@ -32,7 +32,7 @@ Universiteiten en hogescholen, én particuliere onderwijsinstellingen. Markten: 
 
 | Wie | Rol |
 |---|---|
-| **Jeroen van Gessel** | CEO en medeoprichter. Strategie, sales, fundraising, alles extern. Dante's belangrijkste counterpart. |
+| **Jeroen van Gessel** | CEO en medeoprichter. Strategie, sales, fundraising, alles extern. Dante's belangrijkste counterpart. Beheert voor nu ook privacy, IT-veiligheid en de DPA (02-10-2026). |
 | **Menno Hahury** | CTO en medeoprichter. Bouwt het product. |
 | **Samuel Rafini** | Senior Engineer. Bouwt het product. |
 | **Tjarko Kwee** | Sales adviseur en angel investor in Eduface. Wekelijkse sales sessie met Jeroen en Dante. |
@@ -54,6 +54,7 @@ Niet elke sessie lezen, wel altijd naar verwijzen in plaats van uit het hoofd be
 
 - **Product, wat je wel en niet mag claimen:** `Platform/product.md`. Bevestigd door Dante op 19-09-2026 als dé bron voor elke productclaim. Staat het daar niet, dan beweer je het niet.
 
+- **Privacy, IT-veiligheid, DPA/DPIA:** skill `privacy-it` (`.claude/skills/privacy-it/`). De kennis staat in `platform-privacykennis.md` in die map. Niet uit het hoofd beweren waar data staat of hoe lang die bewaard blijft.
 - **Prijs:** `GTM/Pricing/prijsmodel-psu-26-27.md`. 3 per student per maand in de valuta van de markt, drempel 300 lerenden. Nooit een prijs uit het hoofd noemen, altijd dit bestand lezen.
 - **Salesproces en gates:** `GTM/Knowledge/sales-handbook-v1.md`, `GTM/Knowledge/meddpicc-states-and-gates.md`.
 - **Pipeline en dealstand:** Close, niet een bestand hier.
