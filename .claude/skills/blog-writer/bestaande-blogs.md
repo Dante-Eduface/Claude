@@ -10,7 +10,7 @@ Gebruik bij stap 2 van de skill ("bestaat het al?"). Een nieuwe blog op dezelfde
 ai-grading-tools-higher-education-guide (hub) · turnitin-vs-eduface · graide-vs-keath-vs-eduface · eduface-vs-ai-grading-tools · best-ai-grading-tools-moodle-2026 · cograder-review-2026-higher-education · gradescope-review-2026-higher-education · grammarly-for-education-review-2026 · ai-assessment-tool-evaluation-questions
 
 **LMS-integraties**
-Hubs: ai-essay-grader-moodle-lti · ai-essay-grader-canvas-lms-lti · ai-essay-grader-brightspace-d2l · ai-essay-grader-blackboard-lti
+Hubs: ai-essay-grader-moodle-lti · ai-essay-grader-canvas-lms-lti (FAQ "Does Canvas have a built-in AI grader?" klopt niet meer sinds 18-04-2026, IgniteAI Grading Assistance, zie concept 49) · ai-essay-grader-brightspace-d2l · ai-essay-grader-blackboard-lti
 Spokes: ai-feedback-moodle-assignment-drafts · ai-grading-moodle-quiz-essay-questions · ai-grading-moodle-business-case-studies · ai-oral-exams-moodle-verify-authorship · ai-proof-oral-exam-practice-moodle · are-oral-exams-ai-proof-canvas · ai-oral-examiner-styles-brightspace · beyond-ai-detection-oral-verification-blackboard
 
 **Regelgeving en inkoop**
