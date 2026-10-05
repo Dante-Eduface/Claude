@@ -1,6 +1,6 @@
 # Privacykennis over het Eduface-platform
 
-_Laatst bijgewerkt: 2026-10-02. Beheerder: Jeroen van Gessel._
+_Laatst bijgewerkt: 2026-10-05. Beheerder: Jeroen van Gessel._
 
 Opgebouwd uit de concept-verwerkersovereenkomst (SURF-model 4.0) en wat Jeroen daarover in de chat heeft bevestigd. De kennis staat per onderwerp, niet per artikel. Het origineel staat in `Archive/privacy-it-2026-10/dpa-surf-4-0-artikelsgewijs.md`, alleen openen als de letterlijke clausule ertoe doet.
 
@@ -8,10 +8,10 @@ Status per feit: **BEVESTIGD** = door Jeroen genoemd met datum. **TOEGEZEGD** = 
 
 ## 1. Rollen
 
-- De instelling is Verwerkingsverantwoordelijke, Eduface is Verwerker. Eduface is de handelsnaam van Blockbook B.V., Europalaan 93, Utrecht.
+- De instelling is Verwerkingsverantwoordelijke, Eduface is Verwerker. Eduface is de handelsnaam van Blockbook B.V., Europalaan 93, 3526 KP Utrecht.
 - Eduface verwerkt alleen in opdracht van de instelling, volgens haar schriftelijke instructies en alleen voor het afgesproken doel. Is een instructie in strijd met de wet, dan meldt Eduface dat meteen.
 - Jeroen van Gessel is contactpersoon voor privacy en datalekken (jeroen.van.gessel@eduface.me).
-- De PLG-versie (gratis accounts) is hier niet beschreven.
+- De PLG-versie (gratis accounts) is hier verder niet beschreven. Wel BEVESTIGD 05-10-2026: de publieke privacyverklaring geldt ook voor gratis aanmeldingen, en daar is Eduface zelf verwerkingsverantwoordelijke.
 
 ## 2. Welke gegevens
 

@@ -4,7 +4,7 @@ _Laatst bijgewerkt: 2026-10-05._
 
 **Wat:** de publieke Privacy Statement en Terms of Service van Eduface, zoals ze op eduface.me komen.
 
-**Fase:** concept van 05-10-2026, nog niet gepubliceerd. Eerst langs Jeroen (beheert privacy en de DPA).
+**Fase:** goedgekeurd door Dante op 05-10-2026, klaar om in Framer te zetten.
 
 **Bestanden**
 - `eduface-privacy-statement.pdf`, `eduface-terms-of-service.pdf`: de oplevering.
@@ -15,4 +15,4 @@ _Laatst bijgewerkt: 2026-10-05._
 
 **Bewust niet in de publieke tekst:** namen van subverwerkers, regio's, encryptiestandaarden, de 48-uurstermijn bij datalekken, Academic Integrity en Oral Examination. Dat staat in de DPA of is nog OPEN.
 
-**Volgende stap:** postcode Europalaan 93 invullen, Jeroen laten akkoorden, dan in Framer zetten.
+**Volgende stap:** in Framer zetten op eduface.me. De privacyverklaring geldt ook voor gratis aanmeldingen (PLG), daar is Eduface verwerkingsverantwoordelijke.
