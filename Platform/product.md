@@ -34,6 +34,16 @@ De student krijgt kritische vragen over zijn eigen paper en moet zich daar monde
 ### Oral Examination (beta)
 Mondelinge afname over een bepaald onderwerp, met realtime transcriptie en beoordeling.
 
+### Leerprofiel (concept)
+_Toegevoegd door Dante op 2026-10-05._
+
+Een kaart van hoe een student over tijd groeit op de leerdoelen van een vak. **Nog een concept:** laat het nooit zien als een bestaand scherm, en zet bij een mockup altijd dat het een illustratief voorbeeld is.
+
+- **Invoer:** alleen schrijfopdrachten en papers, open vragen, en de feedback die de docent in Eduface geeft.
+- **Geen invoer:** formatieve vragen en oefententamens, en audio (mondeling, presentaties). Presenteren kan het leerprofiel dus niet volgen.
+- **Per datapunt:** score per rubriccriterium, het leerdoel van het vak, en het moment in de tijd.
+- **Niet:** de skills van de opleiding. Het profiel volgt leerdoelen per vak.
+
 ## LMS-integratie
 
 Eduface integreert in **Moodle, Blackboard, Brightspace, Canvas en elke andere LMS**. Maar in een eerste connectieverzoek praat je hier bijna nooit over (Dante 2026-07-24):
