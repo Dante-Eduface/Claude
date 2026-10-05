@@ -7,7 +7,7 @@ _Kennisbank van de deal. Bijgewerkt: 2026-10-05. Werk dit bij na elk contact._
 - **Close opportunity:** `oppo_tfYM5wFVn615TrGXSlCqDjPDMgwGBnN7PlIXnqjXugD` (fase Scoping, €18.000/jaar, 28%, close 15 feb 2027). De status-update in het vaste format (health / Nodig / Verloop / Gaten) staat op de opportunity.
 - **Notes op de lead:** discovery-vragen (31 aug), cost justification (10 sep), SSO grid 1 (10 sep).
 - **SSO grid:** `sso-grid-bsn.html` + `sso-grid-bsn.png` in deze map. Volgende versie = "SSO grid 2" in Close.
-- **Dissertation, verkorte versie:** `dissertation-verkort.md`. Opdracht plus beoordelingsformulier om in Eduface te zetten, max. 5.000 woorden (05-10-2026).
+- **Dissertation, verkorte versie:** `dissertation-verkort.md`. Opdracht plus beoordelingsformulier om in Eduface te zetten, max. 5.000 woorden (05-10-2026). Als pdf: `dissertation-verkort-opdracht.pdf` en `dissertation-verkort-beoordelingsformulier.pdf`, opnieuw te bouwen met `python3 build.py` na een wijziging in de .md.
 - **Transcript gesprek 10 sep:** `Eduface/Archive/Opnamens/2026-09-10 Action Learning Business School Europe.txt` (Dictafoon-opname, 20 min, hoorfouten, geen sprekerscheiding).
 - **Samenhang:** BSN nam Business School Notenboom over in 2025. Notenboom is een aparte lead in Close (SHIFT cold call batch, Tier A). Dossier: `GTM/Campaigns/cold-calling/notenboom-sso-stappenplan.md`.
 
