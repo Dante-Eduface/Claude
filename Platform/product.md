@@ -175,3 +175,31 @@ Verder:
 - "purpose-built model"
 - "Institutions choose how much human oversight they want"
 - **"Accurate", niet "correct"** (Dante, 11-09-2026).
+
+---
+
+# Aanvulling: claims uit de live blogs, bevestigd door Dante (25-09-2026)
+
+Dante op 25-09-2026: de punten die in de vier referentieblogs staan (koopgids AI grading tools, Canvas, Moodle, EU AI Act) kloppen en mogen overgenomen worden. **Uitzondering: de EU AI Act-datum.** "August 2026" is achterhaald, Bijlage III geldt sinds de Digital Omnibus vanaf 2 december 2027. De blogs zelf staan in `.claude/skills/blog-writer/referentie/`.
+
+## Inkoop en data
+- **Approved supplier op het Jisc/CHEST-framework (UK) en het HEAnet-framework (Ierland).**
+- **Eigen GPU-infrastructuur in Nederland.** Geen API's van derden zoals OpenAI; studentdata blijft in de EU.
+- **Eduface tekent met elke instelling een Data Processing Agreement.**
+
+## Accuraatheid en consistentie
+- **"In UK pilots, lecturers changed an average of just 5% of each final grade."** Dat is een andere maat dan de Bath Spa-accuraatheid hierboven (94%, puntverschil tussen voorstel en docentcijfer). Noem ze niet door elkaar en zet er altijd bij welke maat het is.
+- **Onafhankelijke studententest (koopgids, juli 2026):** twee studenten in Nederland (psychologie, rechten), 8 tools, 6 papers met bekend docentcijfer en officiële rubric. Eduface ±0.15 gemiddelde afwijking op 5 psychologiepapers; op een Nederlandstalig staatsrechtessay (docent 4.4) gaf Eduface 5.5, ChatGPT 7.1, Claude 7.2, Gemini 6.8, CoGrader 10.0. Altijd met de opzet en de beperking erbij (klein, richtinggevend).
+- **Exam Grader:** drie onafhankelijke AI-agents beoordelen elk antwoord zonder elkaars uitkomst te zien, een vierde agent vergelijkt. Overeenstemming geeft hoge zekerheid, verschil wordt gemarkeerd voor de docent. "48% more consistent than unaided human marking", "under 4 min from upload to suggested grade". Audit trail per inzending.
+
+## Werkwijze voor de docent
+- **Twee modi:** blind mode (docent beoordeelt eerst zelf, daarna pas het AI-voorstel, tegen anchoring bias) en AI-visible mode (voorstel direct zichtbaar). De instelling kan een modus verplicht stellen.
+- **Feedbackstijlen:** Reflective and Socratic, Constructive and Direct, Went Well and Needs Improvement, Supportive and Encouraging. Voortgang van de student wordt gevolgd over opeenvolgende concepten.
+- **Let op de naamgeving:** de blogs noemen dit een aparte "Feedback Tool". Volgens de herziening van 08-09-2026 hierboven is formatieve feedback onderdeel van de **Paper Grader**. Schrijf in nieuwe content dus "the Paper Grader's formative feedback", niet "the Feedback Tool".
+- **Oral Examination (early access):** de docent configureert een karakter en situatie, bijvoorbeeld een strenge scriptie-examinator, een sceptische investeerder of een patiënt in nood in een gesimuleerd klinisch consult. Het gesprek past zich aan op de antwoorden van de student. Twee toepassingen: formele mondelinge toetsing en integriteitscontrole van ingeleverd werk.
+
+## LMS
+- LTI 1.3 met Moodle (External Tool, Client ID, Deployment ID, endpoint-URL's, "typically one afternoon"), Canvas (Developer Keys), Blackboard, Brightspace. Cijfers terug via LTI Grade Services. Geen aparte studentlogin.
+
+## Prijs voor individuele docenten (PLG)
+- Gratis starten, ongeveer 20 opdrachten per maand. Lecturer plan $25 per maand, ongeveer 200 opdrachten. Instellingsprijs: `GTM/Pricing/prijsmodel-psu-26-27.md`.
