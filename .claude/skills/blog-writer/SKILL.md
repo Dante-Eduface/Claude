@@ -5,7 +5,7 @@ description: Schrijft Engelstalige blogs voor eduface.me/resources/blog in de Ed
 
 # Blog writer
 
-Schrijft het beste antwoord op een echte vraag van een lecturer, programme director, learning technologist of inkoper in het hoger onderwijs, in de Eduface-stem, in een vorm die mensen en machines makkelijk lezen. Dat is de hele SEO- en GEO-strategie; `seo-geo.md` legt uit waarom.
+Schrijft het beste antwoord op een echte vraag van iemand bij een particuliere, bij voorkeur for-profit instelling in het hoger onderwijs (zoals UTI, BPP, Academica): de programme director, het hoofd kwaliteit, de VP of education, de learning technologist of de inkoper. Niet voor UK-universiteiten (doelgroep sinds 05-10-2026, zie `Context/eduface.md`). Dat doe je in de Eduface-stem, in een vorm die mensen en machines makkelijk lezen. Dat is de hele SEO- en GEO-strategie; `seo-geo.md` legt uit waarom.
 
 Deze skill schrijft. `blog-builder` bouwt en publiceert. De grens: deze skill levert een `.md` in `GTM/Campaigns/blog-launch/markdown-sources/`, en pas als Dante zegt "zet live" of "bouw hem" gaat het naar `blog-builder`.
 
@@ -36,7 +36,7 @@ Deze skill schrijft. `blog-builder` bouwt en publiceert. De grens: deze skill le
 Haal uit de vraag van Dante:
 - **Zoekvraag:** de zin die de lezer intypt of aan ChatGPT vraagt. Niet het onderwerp, de vraag.
 - **Lezer:** welke rol, en wat moet die na het lezen kunnen beslissen of doen.
-- **Markt:** standaard UK (Brits Engels). NL of US alleen als Dante het zegt.
+- **Markt:** UK (Brits Engels) of US (Amerikaans Engels), wat de zoekvraag en de lezer zijn. UTI is US, BPP is UK. NL alleen als Dante het zegt.
 - **Type:** koopgids, integratiepagina, regelgeving, vak of toepassing, werkwijze. Zie `artikeltypes.md`.
 
 Mist er iets dat je niet kunt afleiden, vraag het in één regel. De rest vul je zelf in en noem je bij de poort.

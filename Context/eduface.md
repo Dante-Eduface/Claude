@@ -1,6 +1,6 @@
 # Eduface
 
-_Laatst bijgewerkt: 2026-10-02._
+_Laatst bijgewerkt: 2026-10-05._
 
 Het bedrijf waar Dante werkt. Juridisch heet het **Blockbook B.V.**, daar komt zijn salaris ook vandaan. Naar buiten is alles Eduface. Dit bestand is alleen het minimum dat elke sessie nodig heeft: wat we verkopen, aan wie, en wie er werkt. Alles wat dieper gaat staat in een eigen bestand, zie **Waar de details staan**.
 
@@ -26,7 +26,9 @@ Noem je een cijfer of een klantervaring, zeg er altijd bij welke van de twee je 
 
 ## Aan wie we verkopen
 
-Universiteiten en hogescholen, én particuliere onderwijsinstellingen. Markten: Nederland, Verenigd Koninkrijk, Verenigde Staten.
+**Particulier onderwijs, bij voorkeur for-profit instellingen in het hoger onderwijs.** Voorbeelden: UTI (Universal Technical Institute, VS), BPP (VK), Academica University of Applied Sciences (NL). UK-universiteiten zijn niet de doelgroep (Dante, 05-10-2026). Of dat ook geldt voor publieke NL-hogescholen en -universiteiten staat open, zie W8 in `Context/open-vragen.md`.
+
+Markten: Nederland, Verenigd Koninkrijk, Verenigde Staten.
 
 ## Wie er werkt
 

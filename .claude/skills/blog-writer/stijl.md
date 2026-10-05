@@ -81,9 +81,9 @@ Een reeks korte zinnen mag **alleen hier**, om een situatie neer te zetten. In d
 
 ## Taal en register
 
-- **Brits Engels, consequent.** judgement (de gids schrijft soms "judgment", niet overnemen), behaviour, licence, programme, scrutinised, sceptical, personalised, rigour.
+- **Brits Engels voor een UK-lezer, Amerikaans Engels voor een US-lezer, en binnen één blog consequent.** UK: judgement (de gids schrijft soms "judgment", niet overnemen in een UK-blog), behaviour, licence, programme, scrutinised, sceptical, personalised, rigour.
 - **Grading en marking** staan allebei in de referenties. Titel en H1 volgen de zoekterm (meestal "grading"), de lopende tekst mag "marking" gebruiken voor de UK-lezer.
-- **Rollen bij naam:** lecturer, learning technologist, programme director, compliance lead, DVC, marker, assessor.
+- **Rollen bij naam:** de rollen van de doelgroep, particulier en for-profit HE (05-10-2026). UK: programme leader, head of quality, academic registrar, associate lecturer, marker, assessor. US: instructor, program director, campus director, VP of education, director of instructional design. De referenties schrijven voor publieke universiteiten (DVC, NSS, TEF); dat register niet overnemen.
 - **"You" en "your institution"** voor de lezer. **"We"** alleen als Eduface iets doet, test of toegeeft.
 - **Zinslengte** gemiddeld 15 tot 22 woorden, met korte oordeelszinnen ertussen. Alinea's van twee tot vier zinnen.
 - **Geen em-dashes.** De referenties gebruiken ze niet in de lopende tekst; houd dat zo.
