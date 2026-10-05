@@ -58,7 +58,7 @@ def slide_bronnen():
     midden = [TOP + pitch / 2 + i * pitch for i in range(len(BRONNEN))]
     for (naam, label), cy in zip(BRONNEN, midden):
         els += [pic(f'assets/icon-{naam}-navy.png', AX, cy - 20, 40, 40),
-                text(AX + 60, cy - 20, 480, 40, label, size=32, align='left')]
+                text(AX + 60, cy - 20, 520, 40, label, size=32, align='left')]
 
     # -- B: wat er per datapunt wordt vastgelegd ----------------------------
     BX, BW = 790, 420
