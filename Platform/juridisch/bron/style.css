@@ -1,0 +1,40 @@
+@font-face { font-family: "League Spartan"; font-weight: 400; src: url("fonts/LeagueSpartan-400.ttf"); }
+@font-face { font-family: "League Spartan"; font-weight: 700; src: url("fonts/LeagueSpartan-700.ttf"); }
+
+:root {
+  --ink: #111111;
+  --green: #00C46A;
+  --red: #E5383B;
+}
+
+@page { size: A4; margin: 22mm 24mm 20mm 24mm; }
+
+html { background: #ffffff; }
+body {
+  font-family: "League Spartan", Arial, sans-serif;
+  font-size: 10.5pt;
+  line-height: 1.35;
+  color: var(--ink);
+  margin: 0;
+}
+
+.logo { display: block; margin: 0 auto 14pt; height: 34pt; }
+
+h1 { font-weight: 700; font-size: 24pt; margin: 0 0 10pt; }
+h2 { font-weight: 400; font-size: 18pt; margin: 22pt 0 8pt; break-after: avoid; }
+h3 { font-weight: 700; font-size: 11pt; margin: 14pt 0 6pt; break-after: avoid; }
+
+p { margin: 0 0 9pt; }
+.meta { font-weight: 700; margin-bottom: 12pt; }
+.tldr-label { font-weight: 700; margin-bottom: 9pt; }
+
+ul, ol { margin: 0 0 9pt; padding-left: 22pt; }
+li { margin: 0 0 4pt; }
+ol > li { margin-bottom: 8pt; }
+ol > li > strong:first-child { display: block; margin-bottom: 4pt; }
+ol ul { list-style: circle; margin-top: 4pt; }
+li, p { break-inside: avoid; }
+
+.g { color: var(--green); font-weight: 700; }
+.r { color: var(--red); font-weight: 700; }
+strong { font-weight: 700; }
