@@ -251,8 +251,8 @@ Onderwerp: Toetsing herontwerpen onder druk
 
 ---
 
-## 7. Elvira Bolat (werkgever wordt nog gecheckt: Bournemouth of Bedfordshire)
-[LinkedIn](https://www.linkedin.com/in/elvirabolat/) · e-mail en telefoon volgen na de check
+## 7. Elvira Bolat, Bournemouth University (onder voorbehoud)
+[LinkedIn](https://www.linkedin.com/in/elvirabolat/) · ebolat@bournemouth.ac.uk · 01202 968755. Haar BU-profiel staat op 06-10 nog live. Bedfordshire komt maar uit één bron (een LinkedIn-titel zonder functie), waarschijnlijk een nevenrol. **Open haar LinkedIn één keer voor je verstuurt.**
 
 | Stap | Element | Bron |
 |---|---|---|
@@ -269,7 +269,7 @@ Onderwerp: Toetsing herontwerpen onder druk
 > The session is on Thursday 15 October, 11:00 to 12:00 UK time, on Teams. Would you be able to make it? The link is here either way.
 > [link]
 
-**3. Mail** (adres volgt)
+**3. Mail**
 Onderwerp: A sceptical voice in the room
 > Hi Elvira,
 >
@@ -287,7 +287,9 @@ Onderwerp: A sceptical voice in the room
 > Dante Torbed
 > Eduface
 
-**4. Bellen:** nummer volgt na de werkgevercheck.
+**4. Bellen**
+- **Opening:** "Hi Elvira, it's Dante from Eduface. I read your essay on the platform university, the bit about losing the space for critical inquiry and slowness. Can I ask, where do you see AI making that worse, and is there anywhere it could help?"
+- **Daarna:** "That's exactly the kind of view I'd love in the room. We're running an online session this Thursday at 11 on the business outcomes of AI marking and feedback. Would you join?"
 
 ---
 
@@ -377,8 +379,48 @@ Onderwerp: AI and assessment methods at BI
 
 ---
 
-## 10. Bendik Samuelsen, Prorektor for Education, BI
-Onderzoek loopt (agent 3). Berichten volgen.
+## 10. Bendik Samuelsen, Prorektor for utdanning (Provost for Education), BI
+[LinkedIn](https://www.linkedin.com/in/bendik-meling-samuelsen-7b3bb/) (uit een snippet) · bendik.samuelsen@bi.no · +47 464 10 561
+
+| Stap | Element | Bron |
+|---|---|---|
+| 1 | BI werkt aan gezamenlijke richtlijnen voor KI bij "sensur og vurdering av studentarbeider" | Khrono, 31-08-2026 |
+| 2b | mondeling examen is "ressurskrevende", BI wil "nye kreative måter å vurdere studenter muntlig i større skala" | BI's inspraak bij het nationale KI-utvalg, okt 2025 |
+| 3 | zijn eigen woorden: leren "at scale, in a class with more than 90 students", in een vak met AI-feedback op schrijfwerk | BI-nieuws, mei 2025 |
+| 4 | vraag: hoe ver zijn de richtlijnen? | terug naar stap 1 als vraag |
+
+**1. Connectieverzoek** (294)
+> Hi Bendik, I'm Dante from Eduface. I read in Khrono that BI is working on shared guidelines for using AI when grading student work. I'd love to know how you're approaching it. We're hosting an online session on the business outcomes of AI marking and feedback. Would you like a personal invite?
+
+**2b. Geen reactie**
+> Thanks for connecting, Bendik. I also came across BI's input to the national AI committee, the line that oral exams are resource-heavy and that BI should look at new ways to assess students orally at a larger scale. That's one of the harder problems in assessment right now, so it stood out.
+>
+> Our session is on Thursday 15 October, 12:00 to 13:00 Oslo time, on Teams. Would you be able to make it? The link is here either way.
+> [link]
+
+**3. Mail**
+Onderwerp: Learning at scale
+> Hi Bendik,
+>
+> I sent you a LinkedIn request last week about this, so here it is by email as well.
+>
+> When BI gave its teaching award last year, you praised a course for getting students to learn "at scale, in a class with more than 90 students", and that course already gave students feedback on their writing through an AI tool. Scale is exactly where marking and feedback get hard, and it's the angle of our session, The Business Outcomes of AI Marking and Feedback. It's on Thursday 15 October, 12:00 to 13:00 Oslo time, on Teams.
+>
+> Registration is by invitation, and the link is below.
+>
+> [link]
+>
+> Would that time work for you?
+>
+> Best,
+> Dante Torbed
+> Eduface
+
+**4. Bellen**
+- **Opening:** "Hi Bendik, it's Dante from Eduface. I read in Khrono that BI is working on shared guidelines for AI in grading. Can I ask, how far along are you with those?"
+- **Daarna:** "That's helpful. It's partly why I'm calling, we're running an online session this Thursday at 12 your time on the business outcomes of AI marking and feedback. Would you like to join?"
+
+**Twijfels:** de Khrono-zin en de inspraak zijn woorden van BI, niet van hem persoonlijk. Daarom "BI is working on" en "BI's input". **Noem de vacature niet**: zijn eigen post staat sinds 30-09 open.
 
 ---
 

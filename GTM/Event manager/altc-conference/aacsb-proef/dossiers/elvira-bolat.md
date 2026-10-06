@@ -3,13 +3,14 @@
 - **Naam:** Dr Elvira Bolat
 - **Huidige functie:** Associate Professor in Digital Marketing (BU-staffprofiel, Social Science Space maart 2026)
 - **Organisatie:** Bournemouth University Business School. **Let op:** de titel van haar LinkedIn-profiel in Google noemt "University of Bedfordshire" (zie Onzekerheden)
-- **Status:** onzeker. BU-bronnen tot en met maart 2026 bevestigen BU; LinkedIn-titel wijst mogelijk op een overstap of nevenrol
+- **Status:** onzeker, ook na ronde 3 (2026-10-06). Voor BU: het staffprofiel staat op 2026-10-06 nog live met BU-titel, -mail en -telefoon, en haar essay van 04-03-2026 noemt haar BU. Voor Bedfordshire: alleen de LinkedIn-titel in Google ("... - University of Bedfordshire", locatie Poole). Geen tweede bron voor Bedfordshire, en geen functie of startdatum. Zie Onzekerheden
 - **LinkedIn:** https://www.linkedin.com/in/elvirabolat/ (HTTP 999/429, niet geopend)
 - **E-mail:** ebolat@bournemouth.ac.uk · bron: https://staffprofiles.bournemouth.ac.uk/display/ebolat · status: geverifieerd (voor BU; vervalt als ze vertrokken is)
 - **Telefoon:** 01202 968755 · bron: idem
 - **In functie sinds:** niet gevonden
 - **Close:** geen lead op "Bournemouth" (gecheckt 2026-10-05)
 - **Ronde 2 (diepte-modus):** 2026-10-06, circa 22 pagina's
+- **Ronde 3 (werkgever-check + essay):** 2026-10-06, circa 10 pagina's. Close opnieuw gecheckt op "Bolat": geen lead
 
 ## Bronnen
 
@@ -25,6 +26,15 @@ Secundair (alleen zoeksnippets, pagina niet open)
 - https://www.bournemouth.ac.uk/about/our-people/dr-elvira-bolat: Cloudflare 403 voor curl en WebFetch. Volgens het snippet is ze "Principal Academic in Marketing", "Director of Accreditation, leading a portfolio of world-leading accreditations including AACSB, CMI, CIM, and IDM", "the Interim Head of Department of Marketing, Strategy and Innovation", en leidde ze de BSc Marketing, "BU's first inter-faculty degree", 5,5 jaar.
 - LinkedIn-titels in Google: "Dr Elvira Bolat, FIDM, SHEA, Dip MA - University of Bedfordshire" en een oudere "Dr Elvira Bolat, FIDM, SHEA - External Examiner for the Marketing suit of programmes - The Manchester Metropolitan University".
 - LinkedIn-post (2022, alleen titel): "Tate, TikTok and toxic trends: 'Alpha males' are on the rise". Niet gebruikt.
+
+Ronde 3, werkgever-check (2026-10-06)
+- https://staffprofiles.bournemouth.ac.uk/display/ebolat: HTTP 200, nog steeds "Associate Professor in Digital Marketing", "01202 968755", "ebolat at bournemouth dot ac dot uk", en een link naar uk.linkedin.com/in/elvirabolat. Een staffprofiel kan blijven staan na vertrek, dus dit bewijst niet dat ze er nog werkt.
+- ORCID-API (0000-0003-0910-0860), employments: laatste regel "2021-06-02 -> (open) | Bournemouth University The Business School | Associate Professor in Digital Marketing and Director of Accreditation". Laatst bijgewerkt 2021, dus zegt niets over 2026.
+- Google-snippet LinkedIn (opnieuw, 2026-10-06): "Dr Elvira Bolat, FIDM, SHEA, Dip MA - University of Bedfordshire", locatie Poole, "over 15 years of experience in higher education". Functie niet zichtbaar.
+- Bedfordshire Research Portal (researchportal.beds.ac.uk/en/persons/elvira-bolat en /p/en/...): 404. beds.ac.uk/staff/elvira-bolat: time-out (524). Zoeken binnen beds.ac.uk op "Bolat": niets. Zoeken op "Bolat" + Bedfordshire + dean/head/director: niets.
+- bournemouth.ac.uk/about/our-people/dr-elvira-bolat: 403 (Cloudflare), ook via WebFetch. Web Archive: verbinding geweigerd via de proxy.
+- Een zoeksnippet noemde een event op 13-10-2026 in Bridport (Dorset). De PDF van de dorpsraad was niet uit te lezen (font-codering). Niet gebruikt.
+- Essay op Social Science Space opnieuw volledig gelezen (zie Citaten 1).
 
 Geprobeerd, niets
 - Zoeken op "Elvira Bolat" + AI/assessment/assurance of learning/AACSB/podcast: geen eigen uitspraak over AI in beoordelen gevonden.
@@ -46,6 +56,15 @@ Geprobeerd, niets
 > "They are interlinked with broader systemic pressures: the defunding of public education in Argentina, the growing authoritarianism facing academics in Turkey and Hungary, the corporatization of universities across Southeast Asia, and the AI-driven deskilling of academic labor nearly everywhere."
   bron: idem · datum: 2026-03-04 · drager: beoordelaar (academic labor)
   Dit is haar enige publieke uitspraak over AI en academisch werk die ik vond. Ze is er kritisch over. Zie Onzekerheden.
+
+**Ronde 3: de zinnen die haar standpunt het best samenvatten** (essay opnieuw volledig gelezen, 2026-10-06). Let op: AI komt in het hele essay maar één keer voor, in de zin hierboven. Haar onderwerp is platformlogica en branding, niet AI. De drie zinnen samen:
+> "the AI-driven deskilling of academic labor nearly everywhere. In each case, platform culture acts as both a symptom and a survival strategy. We perform the university because the institution itself no longer protects us."
+  bron: idem, sectie "What is lost when education becomes content?" · datum: 2026-03-04 · drager: beoordelaar (academic labor)
+> "What comes after the university, then, may not be a clean break, but a messy overlap, where traditional values flicker within a system increasingly defined by techno-capitalism and digital labour."
+  bron: idem, sectie "After the university?" · datum: 2026-03-04 · drager: organisatie
+> "In such a system, what is lost is not just academic rigor, but the space for critical inquiry, slowness, and collective learning."
+  bron: idem, inleiding · datum: 2026-03-04 · drager: organisatie (de universiteit), en student (collective learning)
+- WHY: het essay is deel van een reeks ("After The University Series") en reageert op de crisis in hoger onderwijs wereldwijd. AI noemt ze als één van vier systeemdrukken, naast bezuinigingen, autoritarisme en commercialisering. Ze heeft het over academisch werk dat ontwaard wordt, niet over nakijken in het bijzonder.
 
 > "Building a personal brand has become a form of reputational insurance in higher education systems marked by job insecurity and relentless performance evaluation. Publications matter, yes, but so do likes, views, and follower counts."
   bron: idem · datum: 2026-03-04 · drager: beoordelaar (academici)
@@ -108,7 +127,7 @@ Geprobeerd, niets
 
 ## Onzekerheden
 
-- **Werkt ze nog bij BU?** De LinkedIn-titel in Google noemt "University of Bedfordshire". Het kan een nieuwe baan zijn, of een nieuwe rol als external examiner: een oudere LinkedIn-titel noemde ook een externe examinerrol (MMU) als laatste functie. BU-bronnen zijn bevestigd tot maart 2026. **Dante: check haar LinkedIn zelf voordat er iets uitgaat.** Is ze weg, dan klopt het BU-mailadres niet en vervalt de AoL-rol als "waarom jij".
+- **Werkt ze nog bij BU? Na ronde 3 nog steeds niet hard.** Er is maar één bron voor Bedfordshire (de LinkedIn-titel in Google) en geen tweede. Er is geen functie, geen startdatum en geen nieuw mailadres of telefoonnummer te vinden, want Bedfordshire heeft geen profiel van haar (404) en noemt haar nergens. Wat ervoor pleit dat het een **nevenrol** is en geen overstap (inferentie): (1) Google zet de werkgever uit de bovenste LinkedIn-functie in de titel, en eerder stond daar ook een external-examinerrol (MMU) terwijl ze bij BU werkte; (2) haar LinkedIn-locatie is Poole, waar BU zit, niet in Bedfordshire; (3) het BU-staffprofiel staat nog live. Wat ertegen pleit: in de snippet staat geen "External Examiner" meer, alleen de universiteit. **Dante: open haar LinkedIn zelf (één klik) voordat er iets uitgaat.** Is ze weg, dan klopt het BU-mailadres niet en vervalt de AoL-rol als "waarom jij". Tot dan: BU-adres gebruiken, met dit voorbehoud.
 - **Zijn de accreditatierollen actueel?** De staffpagina heeft geen datums en gebruikt de oude naam "Faculty of Management". Het snippet van de BU-pagina noemt "Director of Accreditation" en "Interim Head of Department", ook zonder datum.
 - **Rode lijn:** haar enige recente uitspraak over AI en academisch werk is kritisch ("AI-driven deskilling of academic labor"). Een uitnodiging die AI als vervanging van de marker neerzet, botst daarmee. Agent 4: als dit citaat gebruikt wordt, dan eerlijk, als spanning, en met de docent die de beslissing houdt. Niet als instemming.
 - Het essay gaat over branding en platforms, niet over beoordelen. Agent 4 mag haar niet laten zeggen dat nakijken een probleem is.
