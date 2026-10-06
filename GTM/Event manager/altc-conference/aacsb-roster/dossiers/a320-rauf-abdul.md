@@ -123,6 +123,7 @@ Reserve 2b: vóór zijn academische loopbaan werkte hij in HRM, consultancy en "
 - Twee titels door elkaar: "Dean" op de staffpagina, "Head of the School of Business" in elk nieuwsbericht. Waarschijnlijk dezelfde rol.
 - Wittenborg zat in 2024 in het AACSB-traject (formele aanvraag zou volgen, President Birdsall, 30-08-2024). Op de accreditatiepagina staat AACSB in 2026 niet. Hij stond op AACSB EMEA 2022 en 2023.
 - Een particuliere hogeschool die AI-fraude oplost met een mondelinge verdediging bij al het schriftelijke werk. Dat is extra beoordelingswerk, niet minder.
+- Collega's van Wittenborg staan ook op de roster (dossiers a321 Peter Birdsall, President, en a322 Kriszta Kaspers-Rostas, co-auteur van zijn QHE-paper). Agent 4: niet drie losse koude uitnodigingen naar één kleine hogeschool zonder afstemming.
 - Zijn eigen publicatielijst loopt van hotelservice en Pakistaans toerisme tot prompt engineering voor HR (2025) en AI-adoptie in Duitse familiebedrijven (2026).
 
 ## Persoon
