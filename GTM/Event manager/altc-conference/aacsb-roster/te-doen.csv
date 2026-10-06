@@ -1,0 +1,425 @@
+id,naam,land,instelling,jaren
+a001,"Duggan, Joanne E.",United Kingdom,Aston University,2023
+a002,"Fitzpatrick, Tara",United Kingdom,Birmingham City University,2022
+a003,"Roberts, Samantha",United Kingdom,Birmingham City University,2022
+a004,"Tipi, Lucian",United Kingdom,Birmingham City University,2023
+a005,"Roper, James",United Kingdom,Bournemouth University,2022
+a006,"Davies, Julie",United Kingdom,"Brunel Business School, Brunel University of London",2022
+a007,"Mirza, Sabina",United Kingdom,"Brunel Business School, Brunel University of London",2023
+a008,"Brooksbank, David",United Kingdom,Cardiff Metropolitan University,2023
+a009,"Lethbridge, Sarah",United Kingdom,Cardiff University,2022 2023
+a010,"Parkin, Sara",United Kingdom,De Montfort University,2023
+a011,"Abdelsalam, Omneya",United Kingdom,Durham University,2022
+a012,"BARRON, Paul",United Kingdom,Edinburgh Napier University,2023
+a013,"Collison, Rachael",United Kingdom,Edinburgh Napier University,2022 2023
+a014,"Cross, Christine",United Kingdom,Edinburgh Napier University,2022
+a015,"Foster-Pedley, Jon",United Kingdom,"Henley Business School, University of Reading",2023
+a016,"Skellett, Peter",United Kingdom,Heriot-Watt University,2023
+a017,"Tweddle, Karen",United Kingdom,Imperial College London,2022 2023
+a018,"Bambrick, Scott",United Kingdom,Keele University,2022
+a019,"Dani, Samir",United Kingdom,Keele University,2023
+a020,"Simpson, Kathryn",United Kingdom,Keele University,2023
+a021,"Sylvester, Jo",United Kingdom,Keele University,2023
+a022,"Connolly, Emma",United Kingdom,Lancaster University,2022
+a023,"White, Rose",United Kingdom,Lancaster University,2022 2023
+a024,"Royce, Maureen",United Kingdom,Liverpool John Moores University,2022
+a025,"Walsh, Linda",United Kingdom,Liverpool John Moores University,2023
+a026,"Baird, Claire",United Kingdom,Manchester Metropolitan University,2022 2023
+a027,"Bambrick, Joanne",United Kingdom,Manchester Metropolitan University,2023
+a028,"Denning, Poppy",United Kingdom,Manchester Metropolitan University,2022 2023
+a029,"Egan, Anna",United Kingdom,Manchester Metropolitan University,2022
+a030,"Litsiou, Konstantia",United Kingdom,Manchester Metropolitan University,2022 2023
+a031,"Mather, Damian",United Kingdom,Manchester Metropolitan University,2022 2023
+a032,"Tom Dieck, Dario",United Kingdom,Manchester Metropolitan University,2022 2023
+a033,"Warren, Liz",United Kingdom,Manchester Metropolitan University,2022 2023
+a034,"Werner-Masters, Katarzyna",United Kingdom,Manchester Metropolitan University,2022
+a035,"Williams, Jonathan",United Kingdom,Manchester Metropolitan University,2023
+a036,"Gibson, Stephanie",United Kingdom,Newcastle University,2022 2023
+a037,"Weston, Kim",United Kingdom,Newcastle University,2022 2023
+a038,"Yu, Qionglei",United Kingdom,Newcastle University,2023
+a039,"Anderson, Sarah",United Kingdom,Northumbria University,2023
+a040,"Hope, Alex",United Kingdom,Northumbria University,2022 2023
+a041,"Salama, Aly",United Kingdom,Northumbria University,2022 2023
+a042,"Carlisle, Yvonne",United Kingdom,Nottingham Trent University,2022 2023
+a043,"Slaich, Virender",United Kingdom,Nottingham Trent University,2022 2023
+a044,"Boyle, Jennifer",United Kingdom,Queen's University Belfast,2023
+a045,"Coyle, Christopher",United Kingdom,Queen's University Belfast,2022
+a046,"Ravishankar, M.N.",United Kingdom,Queen's University Belfast,2023
+a047,"Saward, Helen",United Kingdom,"Saïd Business School, University of Oxford",2022
+a048,"Campbell, Helen",United Kingdom,Sheffield Hallam University,2022
+a049,"Giove, Sam",United Kingdom,Sheffield Hallam University,2023
+a050,"Ilsley, Kara",United Kingdom,Sheffield Hallam University,2022
+a051,"Brophy, Philip",United Kingdom,Swansea University,2022
+a052,"Bjorn, Claes",United Kingdom,The Open University,2022
+a053,"Durkin, Mark",United Kingdom,The Open University,2022
+a054,"Jackson, William",United Kingdom,The University of Aberdeen,2023
+a055,"Dey, Bidit",United Kingdom,The University of Sheffield,2023
+a056,"Doricic, Suncana",United Kingdom,The University of Sheffield,2023
+a057,"Asamoah, Edna",United Kingdom,"UCL Global Business School for Health, University College London",2023
+a058,"McCann, Keelin",United Kingdom,Ulster University,2023
+a059,"Omar, Amizan",United Kingdom,University of Bradford,2023
+a060,"Forbes, Jennifer",United Kingdom,University of Dundee,2022
+a061,"Park, Deborah J.",United Kingdom,University of Dundee,2022 2023
+a062,"Ritchie, Fiona",United Kingdom,University of Dundee,2023
+a063,"Robson, Ian",United Kingdom,University of Dundee,2022
+a064,"Watson, Alastair",United Kingdom,University of Dundee,2022
+a065,"Loretto, Wendy",United Kingdom,University of Edinburgh,2023
+a066,"Devine, Anthony",United Kingdom,University of Glasgow,2022 2023
+a067,"Shearer, Jan",United Kingdom,University of Glasgow,2022 2023
+a068,"Aldred, Anthony",United Kingdom,University of Leeds,2022
+a069,"Wilmot, Natalie",United Kingdom,University of Lincoln,2022
+a070,"Jones-Davies, Bethan",United Kingdom,University of Liverpool,2023
+a071,"Laws, Jason",United Kingdom,University of Liverpool,2022
+a072,"Mallanaphy, Claire",United Kingdom,University of Liverpool,2022
+a073,"Shuttleworth, Rachel",United Kingdom,University of Salford,2023
+a074,"Barnes, Lucy",United Kingdom,University of Southampton,2022
+a075,"Liston-Heyes, Catherine",United Kingdom,University of Sussex,2022
+a076,"Marks-Dennis, Francesca",United Kingdom,University of Sussex,2023
+a077,"Penfold, Saffron",United Kingdom,University of Sussex,2023
+a078,"Wing, Kelly",United Kingdom,University of Sussex,2023
+a079,"Yassim, Mazia",United Kingdom,University of Westminster,2022 2023
+a080,"Money, Ian",United Kingdom,University of York,2022
+a081,"Gammie, Bob",United Kingdom,York St John University,2023
+a082,"O'Farrell-Follos, Lucy",United Kingdom,York St John University,2022
+a083,"Omari, Maryam",Australia,Edith Cowan University,2022
+a084,"Brändle, Udo",Austria,IMC University of Applied Sciences Krems GmbH,2022
+a085,"Waiguny, Martin",Austria,IMC University of Applied Sciences Krems GmbH,2022
+a086,"Krumay, Barbara",Austria,"JKU Business School, Johannes Kepler University Linz",2022 2023
+a087,"Mayrhofer-Schmirl, Katrin",Austria,"JKU Business School, Johannes Kepler University Linz",2022 2023
+a088,"Koenigsmaier, Heinz",Austria,Karl-Franzens-University Graz,2023
+a089,"Schneider, Georg",Austria,Karl-Franzens-University Graz,2023
+a090,"Sparber, Matthias",Austria,MCI | The Entrepreneurial School®,2023
+a091,"Althammer, Katrin",Austria,WU Vienna University of Economics and Business,2023
+a092,"Al Hawaj, Ammar",Bahrain,Ahlia University,2022
+a093,"Hamdan, Allam M.",Bahrain,Ahlia University,2022
+a094,"Saleh Al Dhaen, Esra",Bahrain,Ahlia University,2022
+a095,"De Beelde, Ignace",Belgium,Ghent University,2022
+a096,"Moreau, Rachel",Belgium,Hasselt University,2023
+a097,"Pauwels, Piet",Belgium,Hasselt University,2022
+a098,"Dumas, Christel",Belgium,Haute Ecole « ICHEC-ECAM-ISFSC »,2022
+a099,"Fox, Mathilde",Belgium,Haute Ecole « ICHEC-ECAM-ISFSC »,2023
+a100,"Osterrieth, Martine",Belgium,Haute Ecole « ICHEC-ECAM-ISFSC »,2022
+a101,"Peters, Sophie A.",Belgium,Haute Ecole « ICHEC-ECAM-ISFSC »,2022
+a102,"Van Vinckenroye, Patrick",Belgium,Haute Ecole « ICHEC-ECAM-ISFSC »,2022
+a103,"Andries, Kathleen",Belgium,University of Antwerp,2022 2023
+a104,"Selimovic, Jasmina",Bosnia and Herzegovina,"School of Economics and Business, University of Sarajevo",2022 2023
+a105,"Arsenault, Christine",Canada,University of Toronto,2023
+a106,"Franco, April",Canada,University of Toronto,2023
+a107,"Drezgic, Sasa",Croatia,"Faculty of Economics and Business, University of Rijeka",2023
+a108,"Dabić, Marina",Croatia,"Faculty of Economics and Business, University of Zagreb",2022 2023
+a109,"Krišto, Jakša",Croatia,"Faculty of Economics and Business, University of Zagreb",2023
+a110,"Krupka, Zoran",Croatia,"Faculty of Economics and Business, University of Zagreb",2022
+a111,"Vlašić, Goran",Croatia,"Faculty of Economics and Business, University of Zagreb",2023
+a112,"Ćorić, Bruno",Croatia,University of Split,2023
+a113,"Barac, Zoran",Croatia,Zagreb School of Economics and Management,2022 2023
+a114,"Clerides, Sofronis",Cyprus,University of Cyprus,2022
+a115,"Agini, Richard",Cyprus,University of Nicosia,2022
+a116,"Tóth, Andrej",Czech Republic,VSE / Prague University of Economics and Business,2022
+a117,"Zubíková, Adéla",Czech Republic,VSE / Prague University of Economics and Business,2023
+a118,"Hammami, Helmi",Egypt,ESLSCA University,2022
+a119,"Morsi, Radwa",Egypt,ESLSCA University,2023
+a120,"Kamel, Sherif H.",Egypt,The American University in Cairo,2022 2023
+a121,"Morshed, Rasha",Egypt,The American University in Cairo,2023
+a122,"Matson, Kadri-Ann",Estonia,Tallinn University of Technology,2022
+a123,"Pevkur, Aive",Estonia,Tallinn University of Technology,2022
+a124,"Semm, Kristin",Estonia,Tallinn University of Technology,2022
+a125,"Barner-Rasmussen, Wilhelm",Finland,Abo Akademi University,2022
+a126,"Brännback, Malin",Finland,Abo Akademi University,2023
+a127,"Krook, Icca",Finland,Abo Akademi University,2023
+a128,"Nyström, Anna-Greta",Finland,Abo Akademi University,2022
+a129,"Schauman, Barbro E.",Finland,Abo Akademi University,2022
+a130,"Eskola, Anne",Finland,JAMK University of Applied Sciences,2023
+a131,"Hiekkataipale, Minna-Maaria",Finland,JAMK University of Applied Sciences,2022
+a132,"Asunta, Laura",Finland,"Jyväskylä University School of Business and Economics, University of Jyväskylä",2023
+a133,"Pesonen, Hanna-Leena",Finland,"Jyväskylä University School of Business and Economics, University of Jyväskylä",2023
+a134,"Armila, Leila",Finland,LUT University,2022 2023
+a135,"Saarenketo, Sami",Finland,LUT University,2022 2023
+a136,"Salojärvi, Hanna",Finland,LUT University,2022 2023
+a137,"Ikonen, Petteri",Finland,South-Eastern Finland University of Applied Sciences,2022
+a138,"Ikonen, Mirjami",Finland,University of Eastern Finland,2023
+a139,"Julkunen, Saara",Finland,University of Eastern Finland,2023
+a140,"Karhapää, Sari-Johanna",Finland,University of Eastern Finland,2022 2023
+a141,"Pesonen, Juho",Finland,University of Eastern Finland,2022
+a142,"Järvinen, Janne",Finland,University of Oulu,2022
+a143,"Nätti, Satu",Finland,University of Oulu,2022
+a144,"Sohlo, Sauli J.",Finland,University of Oulu,2022
+a145,"Järvenpää, Marko",Finland,University of Vaasa,2022 2023
+a146,"Mäkelä, Oskari",Finland,University of Vaasa,2022
+a147,"Meyer, Martin",Finland,University of Vaasa,2022 2023
+a148,"Moshnikova, Maria",Finland,University of Vaasa,2023
+a149,"Rajala, Arto",Finland,University of Vaasa,2022 2023
+a150,"Smale, Adam",Finland,University of Vaasa,2022 2023
+a151,"Elbasha, Tamim",France,Audencia E.E.S.C.,2023
+a152,"Pontet, Luc",France,Brest Business School,2022
+a153,"RAIMBAULT, Sophie",France,Burgundy School of Business,2022
+a154,"Hurst, William",France,EDC Paris Business School,2022 2023
+a155,"M'Baye, Ibrahima",France,EDC Paris Business School,2022 2023
+a156,"Mehmanpazir, Babak",France,EM Strasbourg Business School,2022
+a157,"Prinz, Enrico",France,EM Strasbourg Business School,2023
+a158,"FERROUILLAT, Virginie",France,EMLV Business School,2022
+a159,"Rmadi, Sandra",France,EMLV Business School,2022 2023
+a160,"Wucher, Joëlle",France,EMLV Business School,2023
+a161,"Smith, Mark",France,EMLYON Business School,2022
+a162,"Chauvet, Sandrine",France,ESCP Business School,2022
+a163,"Rattalino, Francesco",France,ESCP Business School,2023
+a164,"Ranc, David",France,ESSCA,2022
+a165,"Esposito-Vinzi, Vincenzo",France,ESSEC Business School,2022
+a166,"Torcheux-Vijitkasem, Isabel",France,ESSEC Business School,2022 2023
+a167,"Triek, Wafa",France,ESSEC Business School,2023
+a168,"Zamorano, Elizabeth",France,ESSEC Business School,2023
+a169,"Bouzerda, Fouziya",France,Grenoble Ecole de Management,2023
+a170,"Perrin-Halot, Julie",France,Grenoble Ecole de Management,2022 2023
+a171,"Herrbach, Olivier",France,IAE Bordeaux,2022 2023
+a172,"Mard, Yves",France,"IAE Clermont Auvergne School of Management, University Clermont Auvergne",2022
+a173,"Milton, Audrey",France,"IAE Clermont Auvergne School of Management, University Clermont Auvergne",2022 2023
+a174,"Collange, Veronique",France,IAE Dijon School of Management,2023
+a175,"Mercier, Samuel",France,IAE Dijon School of Management,2023
+a176,"Wegmann, Gregory C.",France,IAE Dijon School of Management,2023
+a177,"Lamarque, Eric",France,IAE Paris- Sorbonne Business School,2022
+a178,"BRIAL, Berangere",France,"IAE Paris-Est School of Management, University of Paris-Est",2022
+a179,"Peton, Hélène",France,"IAE Paris-Est School of Management, University of Paris-Est",2023
+a180,"Sonnenburg, Stephan",France,ICN Business School,2022
+a181,"Vaughan, Sarah",France,ICN Business School,2023
+a182,"El Kouari, Hanane",France,IESEG School of Management,2022 2023
+a183,"Bryant, Michael",France,IPAG Business School (Paris - France),2022
+a184,"Maillard, Olivier",France,IPAG Business School (Paris - France),2023
+a185,"Schalck, Christophe",France,IPAG Business School (Paris - France),2022
+a186,"Susini, Jean Paul",France,IPAG Business School (Paris - France),2022 2023
+a187,"Sumarriva, Omar",France,ISC Paris,2022
+a188,"Vincent-Boulos, Samia",France,Institut Lyfe,2023
+a189,"Davesne, Céline",France,KEDGE Business School,2022
+a190,"Fagnot, Isabelle J.",France,KEDGE Business School,2023
+a191,"Deighton, Samuel",France,"Montpellier Management, Université de Montpellier",2023
+a192,"Cailleba, Patrice",France,Paris School of Business,2022
+a193,"GABTENI, Héger",France,Paris School of Business,2022
+a194,"Gronqvist, Nicolas",France,Paris School of Business,2022
+a195,"Germain, Christophe",France,SKEMA Business School,2023
+a196,"Tosi, Elise",France,SKEMA Business School,2022 2023
+a197,"Si Abdelkader, El-Houari",France,"South Champagne Business School (Y SCHOOLS), Troyes Aube Formation",2023
+a198,"CHALUS, Marie-Christine",France,"iaelyon School of Management, Université Jean Moulin",2023
+a199,"Dominguez, Noémie",France,"iaelyon School of Management, Université Jean Moulin",2023
+a200,"Plat-Pelazzo, Valérie",France,"iaelyon School of Management, Université Jean Moulin",2023
+a201,"Haddad, Ghada",France,éklore School of Management,2023
+a202,"Matta, Shashi",Germany,Catholic University of Eichstätt-Ingolstadt,2023
+a203,"Werner, Valentina",Germany,ESMT European School of Management and Technology GmbH,2022
+a204,"Bieber, Claudia",Germany,Frankfurt School of Finance & Management gGmbH,2022 2023
+a205,"Orf-Leisinger, Christiane",Germany,Frankfurt School of Finance & Management gGmbH,2023
+a206,"Peer, Dominik",Germany,Frankfurt School of Finance & Management gGmbH,2022
+a207,"Alter, Roland",Germany,Heilbronn University Graduate School,2022 2023
+a208,"Brewer, Mark",Germany,Heilbronn University Graduate School,2023
+a209,"Dillerup, Ralf",Germany,Heilbronn University Graduate School,2022 2023
+a210,"Merlin, Bettina",Germany,Heilbronn University Graduate School,2022
+a211,"Schulz, Carola",Germany,Heilbronn University Graduate School,2022
+a212,"Cordes, Regina",Germany,IU International University of Applied Sciences,2023
+a213,"Vladimirova, Fanny",Germany,IU International University of Applied Sciences,2023
+a214,"Helldorff, Sünje",Germany,Leuphana University of Lüneburg,2022
+a215,"Baldi, Stefan",Germany,Munich Business School,2023
+a216,"Hieke, Sophie",Germany,Munich Business School,2022
+a217,"Cleff, Thomas",Germany,Pforzheim University,2022 2023
+a218,"Rögele, Stefan",Germany,Pforzheim University,2022 2023
+a219,"Strotmann, Harald",Germany,Pforzheim University,2023
+a220,"Lutz, Lotte",Germany,"School of Management and Technology, Leuphana University of Lüneburg",2023
+a221,"Wenzel, Matthias",Germany,"School of Management and Technology, Leuphana University of Lüneburg",2023
+a222,"Lieske, Claudia",Germany,"THI Business School, Technische Hochschule Ingolstadt",2023
+a223,"Locher, Christian",Germany,"THI Business School, Technische Hochschule Ingolstadt",2022 2023
+a224,"Scheed, Bernd",Germany,"THI Business School, Technische Hochschule Ingolstadt",2022
+a225,"Green, Christina",Germany,Technische Universität München,2023
+a226,"Peters, Eva",Germany,University of Cologne,2023
+a227,"Lutz, Joachim",Germany,University of Mannheim,2023
+a228,"Axarloglou, Kostas",Greece,"Alba Graduate Business School, The American College of Greece",2022
+a229,"Gryllaki, Marina",Greece,"Alba Graduate Business School, The American College of Greece",2022
+a230,"Sebestyén, Gabriella",Hungary,Budapest University of Economics and Business,2023
+a231,"Fehér, Péter",Hungary,Corvinus University of Budapest,2022 2023
+a232,"Havran, Dániel",Hungary,Corvinus University of Budapest,2023
+a233,"Csizmadia, Tibor G.",Hungary,"Faculty of Business and Economics, University of Pannonia",2023
+a234,"Raffay, Agnes",Hungary,"Faculty of Business and Economics, University of Pannonia",2023
+a235,"Szucs, Krisztian",Hungary,University of Pécs,2022 2023
+a236,"Zoltayné Paprika, Zita",Hungary,University of Pécs,2022
+a237,"Chauhan, Abhinav",India,Symbiosis International University,2022
+a238,"Coughlan, Joseph",Ireland,Maynooth University,2022 2023
+a239,"McNamara, Peter",Ireland,Maynooth University,2022
+a240,"Byrne, David S.",Ireland,"Trinity Business School, Trinity College Dublin, the University of Dublin",2022 2023
+a241,"Shinnick, Edward",Ireland,University College Cork,2022
+a242,"Pazzaglia, Federica",Ireland,University College Dublin,2023
+a243,"Lavelle, Jonathan",Ireland,University of Limerick,2022
+a244,"Barbieri, Laura",Italy,"Faculty of Economics and Law, Piacenza-Cremona Campus, Università Cattolica del Sacro Cuore",2022
+a245,"Fellegara, Annamaria",Italy,"Faculty of Economics and Law, Piacenza-Cremona Campus, Università Cattolica del Sacro Cuore",2023
+a246,"Manfredini, Angelo",Italy,"Faculty of Economics and Law, Piacenza-Cremona Campus, Università Cattolica del Sacro Cuore",2023
+a247,"Vendramini, Emanuele Antonio",Italy,"Faculty of Economics and Law, Piacenza-Cremona Campus, Università Cattolica del Sacro Cuore",2023
+a248,"Carnini Pulino, Silvia",Italy,John Cabot University,2022 2023
+a249,"Roberts, Ian",Italy,John Cabot University,2023
+a250,"Prencipe, Andrea",Italy,LUISS Guido Carli University,2023
+a251,"Caroli, Matteo",Italy,Luiss Business School,2023
+a252,"Falkenstein, Mathias",Italy,Luiss Business School,2022 2023
+a253,"Gentili, Sara",Italy,Luiss Business School,2023
+a254,"Gimmelli, Rosaria",Italy,Luiss Business School,2022 2023
+a255,"Lechner, Christian",Italy,Luiss Business School,2023
+a256,"Oriani, Raffaele",Italy,Luiss Business School,2023
+a257,"Peruffo, Enzo",Italy,Luiss Business School,2023
+a258,"Silard, Anthony",Italy,Luiss Business School,2023
+a259,"Agasisti, Tommaso",Italy,"Politecnico di Milano School of Management, Politecnico Milano",2022
+a260,"Micheli, Guido Jacopo Luca",Italy,"Politecnico di Milano School of Management, Politecnico Milano",2023
+a261,"Montagano, Angela",Italy,"Politecnico di Milano School of Management, Politecnico Milano",2023
+a262,"Perego, Alessandro",Italy,"Politecnico di Milano School of Management, Politecnico Milano",2022
+a263,"Caselli, Stefano",Italy,"SDA Bocconi School of Management, Università Bocconi",2023
+a264,"Egi, Paola L.",Italy,"SDA Bocconi School of Management, Università Bocconi",2022
+a265,"Errico, Maria",Italy,"SDA Bocconi School of Management, Università Bocconi",2022
+a266,"Falletti, Elena",Italy,Università Carlo Cattaneo - LIUC,2022
+a267,"Puricelli, Andrea",Italy,Università Carlo Cattaneo - LIUC,2022 2023
+a268,"Yassen, Saad G.",Jordan,Al-Zaytoonah University of Jordan,2023
+a269,"Almahadin, Hamed",Jordan,Applied Science Private University,2023
+a270,"Dahabiyeh, Laila A.",Jordan,"School of Business, The University of Jordan",2022
+a271,"Konings, Jozef",Kazakhstan,Nazarbayev University,2022
+a272,"Lewis, Jenifer",Kazakhstan,Nazarbayev University,2022
+a273,"Tabyldiyeva, Elmira",Kazakhstan,Nazarbayev University,2023
+a274,"Mutisya, Charles",Kenya,Strathmore University,2023
+a275,"Otieno, Hellen",Kenya,Strathmore University,2022
+a276,"Khaki, Audil R.",Kuwait,American University of the Middle East,2022
+a277,"Arnaout, Jean-Paul",Kuwait,Gulf University for Science and Technology,2022
+a278,"ElMelegy, Ahmed R.",Kuwait,Gulf University for Science and Technology,2023
+a279,"Sidani, Yusuf",Lebanon,American University of Beirut,2023
+a280,"Khalife-Fraiha, Danielle",Lebanon,Holy Spirit University of Kaslik,2022 2023
+a281,"Sarkis, Nada",Lebanon,Holy Spirit University of Kaslik,2022 2023
+a282,"Naimy, Viviane",Lebanon,Notre Dame University - Louaize,2023
+a283,"Shebaya, Mariam",Lebanon,University of Balamand,2023
+a284,"Frommelt, Eva",Liechtenstein,University of Liechtenstein,2023
+a285,"Stöckl, Sebastian",Liechtenstein,University of Liechtenstein,2022
+a286,"Adomaitiene, Roma",Lithuania,"Faculty of Economics and Business Administration, Vilnius University",2023
+a287,"Rauktienė, Rasa",Lithuania,Kaunas University of Technology,2022 2023
+a288,"Sekliuckiene, Jurgita",Lithuania,Kaunas University of Technology,2022 2023
+a289,"Dogan, Dino",Luxembourg,Luxembourg School of Business,2022 2023
+a290,"Lundberg, Hans M.",Mexico,EGADE Business School,2023
+a291,"Muller, Jean-Philippe",Monaco,International University of Monaco,2022 2023
+a292,"Deisting, Florent",Morocco,"Africa Business School, Mohammed VI Polytechnic University",2023
+a293,"Therin, Francois",Morocco,"Africa Business School, Mohammed VI Polytechnic University",2022
+a294,"Benrqya, Yassine",Morocco,Al Akhawayn University in Ifrane,2023
+a295,"Goel, Lakshmi",Morocco,Al Akhawayn University in Ifrane,2023
+a296,"Ghorfi, Thami",Morocco,ESCA Ecole de Management,2022
+a297,"Haisni, Chourouq",Morocco,ESCA Ecole de Management,2023
+a298,"Mouri, Nacef",Morocco,International University of Rabat,2023
+a299,"Derrabi, Mohamed",Morocco,Mohammed VI Polytechnic University,2022 2023
+a300,"Alibux, Rashied",Netherlands,"Amsterdam School of International Business, Amsterdam University of Applied Sciences",2022
+a301,"van Winden, Willen",Netherlands,Amsterdam University of Applied Sciences,2022
+a302,"Buskermolen, Frank",Netherlands,HU University of Applied Sciences Utrecht,2022
+a303,"Gans, Meinhard",Netherlands,Maastricht University,2022
+a304,"Bemelmans, Patrick",Netherlands,NHL Stenden University of Applied Sciences,2023
+a305,"Dijkstra, Sietse Jan",Netherlands,NHL Stenden University of Applied Sciences,2023
+a306,"Hooijenga, Willy",Netherlands,NHL Stenden University of Applied Sciences,2023
+a307,"Majoor, Barbara",Netherlands,Nyenrode Business Universiteit,2022 2023
+a308,"Gulpers, Liesbeth",Netherlands,Radboud Universiteit Nijmegen,2022
+a309,"Schilders, Koen",Netherlands,Radboud Universiteit Nijmegen,2022
+a310,"Brunnquell de Stachelski, Richard",Netherlands,"Rotterdam School of Management, Erasmus University Rotterdam",2022 2023
+a311,"Giordano, Benito",Netherlands,"TIAS School for Business and Society, Tilburg University",2022
+a312,"Beetsma, Roel",Netherlands,University of Amsterdam,2022
+a313,"den Hertog, Dick",Netherlands,University of Amsterdam,2022
+a314,"Vertelman, Esther",Netherlands,University of Groningen,2022
+a315,"Boter, Jaap",Netherlands,Vrije Universiteit Amsterdam,2022
+a316,"de Crom, Robert",Netherlands,Vrije Universiteit Amsterdam,2022
+a317,"Khapova, Svetlana",Netherlands,Vrije Universiteit Amsterdam,2023
+a318,"Moser, Christine",Netherlands,Vrije Universiteit Amsterdam,2023
+a319,"van Witteloostuijn, Arjen",Netherlands,Vrije Universiteit Amsterdam,2022
+a320,"Abdul, Rauf",Netherlands,Wittenborg University of Applied Sciences,2022 2023
+a321,"Birdsall, Peter",Netherlands,Wittenborg University of Applied Sciences,2022
+a322,"Kaspers-Rostás, Kriszta",Netherlands,Wittenborg University of Applied Sciences,2022 2023
+a323,"David-West, Olayinka",Nigeria,"Lagos Business School, Pan-Atlantic University",2023
+a324,"Santa, Mijalche",North Macedonia,Ss. Cyril and Methodius University in Skopje,2023
+a325,"Trpeski, Predrag",North Macedonia,Ss. Cyril and Methodius University in Skopje,2023
+a326,"Myrtveit, Ingunn",Norway,BI Norwegian Business School,2023
+a327,"Samuelsen, Bendik",Norway,BI Norwegian Business School,2023
+a328,"Narum, Ragnhild",Norway,Inland Norway University of Applied Sciences,2022
+a329,"Roland, Marit",Norway,Inland Norway University of Applied Sciences,2022
+a330,"Alsos, Gry",Norway,Nord University,2023
+a331,"Kanck-Jørgensen, Tore",Norway,The University of Tromsø – The Arctic University of Norway,2022
+a332,"Skallerud, Kare",Norway,The University of Tromsø – The Arctic University of Norway,2022
+a333,"Solnørdal, Mette T.",Norway,The University of Tromsø – The Arctic University of Norway,2022
+a334,"Haus-Reve, Silje",Norway,University of Stavanger,2023
+a335,"Mikkelsen, Aslaug",Norway,University of Stavanger,2023
+a336,"Górska, Anna",Poland,Kozminski University,2022
+a337,"Cimcioch, Blanka",Poland,Poznan University of Economics and Business,2023
+a338,"Gliszczyńska-Świgło, Anna",Poland,Poznan University of Economics and Business,2023
+a339,"Mackow-Wojciechowska, Agata",Poland,Poznan University of Economics and Business,2023
+a340,"Szymczak, Maciej",Poland,Poznan University of Economics and Business,2022 2023
+a341,"Prokop, Jacek",Poland,SGH Warsaw School of Economics,2022 2023
+a342,"Wojtysiak-Kotlarski, Marcin",Poland,SGH Warsaw School of Economics,2022 2023
+a343,"Baron, Marcin",Poland,University of Economics in Katowice,2023
+a344,"Mitręga-Niestrój, Krystyna",Poland,University of Economics in Katowice,2022
+a345,"Postula, Igor",Poland,University of Warsaw,2022
+a346,"Wiśniewska, Agnieszka",Poland,University of Warsaw,2022
+a347,"Drelich-Skulska, Bogusława",Poland,Wroclaw University of Economics and Business,2022
+a348,"Duque, João",Portugal,University of Lisbon,2023
+a349,"Simões, Cláudia",Portugal,University of Minho,2023
+a350,"Abuzayed, Bana",Qatar,Qatar University,2023
+a351,"Sobh, Rana",Qatar,Qatar University,2022
+a352,"Albu, Catalin",Romania,Bucharest University of Economic Studies,2022
+a353,"Cotfas, Liviu-Adrian",Romania,Bucharest University of Economic Studies,2022
+a354,"Profiroiu, Constantin Marius",Romania,Bucharest University of Economic Studies,2023
+a355,"Pinzaru, Florina",Romania,National University of Political Studies and Public Administration,2023
+a356,"Kafaji, Mohammed",Saudi Arabia,Alfaisal University,2022
+a357,"Alwathnani, Abdulaziz",Saudi Arabia,"College of Business, Al Yamamah University",2022
+a358,"Jamal Al-Lail, Haifa R.",Saudi Arabia,"Effat College of Business, Effat University",2022
+a359,"Zuppe, Lisa",Saudi Arabia,"Effat College of Business, Effat University",2022
+a360,"Al-Jabri, Qadri",Saudi Arabia,University of Business and Technology,2023
+a361,"Shoaib, Haneen",Saudi Arabia,University of Business and Technology,2023
+a362,"Taibah, Daliah",Saudi Arabia,University of Business and Technology,2023
+a363,"Alboqami, Hassan A.",Saudi Arabia,University of Tabuk,2022
+a364,"NDAO, Souleymane",Senegal,Groupe ISM,2023
+a365,"Stamenkovic, Mladen",Serbia,"Faculty of Economics and Business, University of Belgrade",2023
+a366,"Peliova, Jana",Slovakia,University of Economics in Bratislava,2022
+a367,"Ramsak, Rok",Slovenia,IEDC - Bled School of Management,2022
+a368,"Cater, Barbara",Slovenia,University of Ljubljana,2022 2023
+a369,"Petek, Nuša",Slovenia,University of Ljubljana,2023
+a370,"Turk, Tomaz",Slovenia,University of Ljubljana,2023
+a371,"Zajec, Lidija",Slovenia,University of Ljubljana,2022
+a372,"Pisnik, Aleksandra",Slovenia,University of Maribor,2023
+a373,"Tominc, Polona",Slovenia,University of Maribor,2023
+a374,"Vrečko, Igor",Slovenia,University of Maribor,2022
+a375,"Mthombeni, Morris",South Africa,"Gordon Institute of Business Science, University of Pretoria",2023
+a376,"Benvenuti, Susan",South Africa,"Graduate School of Business Administration, University of the Witwatersrand",2023
+a377,"Walbrugh-Parsadh, Samantha",South Africa,Stellenbosch University,2022
+a378,"Chitiga-Mabugu, Margaret",South Africa,University of Pretoria,2022 2023
+a379,"Phillips, Roze",South Africa,University of Pretoria,2023
+a380,"Martinez-Sierra, Jose M.",Spain,"Barcelona School of Management, Universitat Pompeu Fabra",2022 2023
+a381,"Alvaro, Adoracion",Spain,CUNEF Universidad,2022 2023
+a382,"Enriquez, Patricia",Spain,CUNEF Universidad,2022
+a383,"Valle, Maria",Spain,CUNEF Universidad,2022
+a384,"Hernández, Lara",Spain,Canary Islands Business School,2022
+a385,"Zabaleta, Carla",Spain,Canary Islands Business School,2022
+a386,"Zabaleta Kaehler, José Ignacio",Spain,Canary Islands Business School,2022
+a387,"Babiloni, Eugenia",Spain,"Facultad de Administración y Dirección de Empresas, Universitat Politècnica de València",2023
+a388,"Simón, Elisa",Spain,IESE Business School,2022
+a389,"Blombäck, Anna",Sweden,"Jönköping International Business School, Jönköping University",2023
+a390,"Kjellander, Björn K.",Sweden,"Jönköping International Business School, Jönköping University",2022
+a391,"Kremel, Anna",Sweden,Örebro University,2023
+a392,"Löfmarck, Erik",Sweden,Örebro University,2022
+a393,"Pasic, Denis",Sweden,Örebro University,2023
+a394,"Kandera, Christoff",Switzerland,Bern University of Applied Sciences,2023
+a395,"Kissling-Naef, Ingrid",Switzerland,Bern University of Applied Sciences,2023
+a396,"Liebrich, Andreas F.",Switzerland,Lucerne University of Applied Sciences and Arts,2022
+a397,"Metzger, Thomas",Switzerland,OST Eastern Switzerland University of Applied Sciences,2023
+a398,"Weis, Franziska",Switzerland,OST Eastern Switzerland University of Applied Sciences,2023
+a399,"Reeson-Morisod, Caroline",Switzerland,School of Management Fribourg HEG-FR,2022 2023
+a400,"Buttery, Robert",Switzerland,University of Applied Sciences and Arts Northwestern Switzerland (FHNW),2022 2023
+a401,"Lutz, Jonas",Switzerland,University of Applied Sciences and Arts Northwestern Switzerland (FHNW),2023
+a402,"Robert, Clémentine",Switzerland,University of St.Gallen,2023
+a403,"Thomas, Adam",Switzerland,University of Zürich,2022 2023
+a404,"Triki, Leila",Tunisia,SMU - South Mediterranean University,2022
+a405,"Gümüşlüoğlu, Lale",Türkiye,Bilkent University,2023
+a406,"Sultanoglu, Banu",Türkiye,Bilkent University,2023
+a407,"Balsari, Cagnur",Türkiye,"Faculty of Business, Dokuz Eylül University",2023
+a408,"Sakhno, Valentyna",Ukraine,"KSE Graduate Business School, Kyiv School of Economics (KSE)",2023
+a409,"Seghir, Karim",United Arab Emirates,Ajman University,2022
+a410,"Farah, Assaad",United Arab Emirates,American University in Dubai,2022 2023
+a411,"Abdul Razzaq, Muthanna G.",United Arab Emirates,American University in the Emirates,2022
+a412,"Kassem, Bassel",United Arab Emirates,American University in the Emirates,2023
+a413,"Schmidt, David A",United Arab Emirates,American University of Ras Al Khaimah,2023
+a414,"Wallis, Joseph L.",United Arab Emirates,American University of Ras Al Khaimah,2023
+a415,"Menassa, Elie",United Arab Emirates,Amity University Dubai,2022
+a416,"Abdullah, Ayesha",United Arab Emirates,Higher Colleges of Technology,2022
+a417,"Bouchon, Frederic",United Arab Emirates,The Emirates Academy of Hospitality Management,2022
+a418,"Bokhari, Kelly",United Arab Emirates,University of Dubai,2023
+a419,"Haak-Saheem, Washika",United Arab Emirates,University of Dubai,2022
+a420,"Triantis, Alexander J.",United States,"Johns Hopkins Carey Business School, Johns Hopkins University",2023
+a421,"Kelepouris, Christos",United States,Palm Beach Atlantic University,2023
+a422,"Baldegger, Rico J.",United States,Sawyer Business School,2022
+a423,"Wang, Yunzeng",United States,"University of California, Riverside",2023
+a424,"Williams, John A.",United States,University of Massachusetts Dartmouth,2022 2023
