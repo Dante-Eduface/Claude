@@ -37,5 +37,57 @@
    "aacsb-roster/berichten/batch-07.md",
    "a020"
   ]
+ },
+ {
+  "first": "Rachael",
+  "last": "Collison",
+  "company": "Liverpool John Moores University",
+  "domain": "ljmu.ac.uk",
+  "li": "https://www.linkedin.com/in/rachael-collison-a3322937/",
+  "email": "",
+  "phone": "",
+  "src": [
+   "aacsb-roster/berichten/top-a.md",
+   "a013"
+  ]
+ },
+ {
+  "first": "Scott",
+  "last": "Bambrick",
+  "company": "Keele University",
+  "domain": "keele.ac.uk",
+  "li": "https://www.linkedin.com/in/scottbambrick/",
+  "email": "s.bambrick@keele.ac.uk",
+  "phone": "",
+  "src": [
+   "aacsb-roster/berichten/top-a.md",
+   "a018"
+  ]
+ },
+ {
+  "first": "Bidit",
+  "last": "Dey",
+  "company": "Northumbria University",
+  "domain": "northumbria.ac.uk",
+  "li": "https://www.linkedin.com/in/bidit-dey-72556527/",
+  "email": "bidit3.dey@northumbria.ac.uk",
+  "phone": "",
+  "src": [
+   "aacsb-roster/berichten/top-a.md",
+   "a055"
+  ]
+ },
+ {
+  "first": "Amizan",
+  "last": "Omar",
+  "company": "University of Bradford",
+  "domain": "bradford.ac.uk",
+  "li": "https://www.linkedin.com/in/amizan-omar/",
+  "email": "A.Omar4@bradford.ac.uk",
+  "phone": "",
+  "src": [
+   "aacsb-roster/berichten/top-a.md",
+   "a059"
+  ]
  }
 ]
