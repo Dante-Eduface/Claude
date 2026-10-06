@@ -89,5 +89,57 @@
    "aacsb-roster/berichten/top-a.md",
    "a059"
   ]
+ },
+ {
+  "first": "Sam",
+  "last": "Giove",
+  "company": "Sheffield Hallam University",
+  "domain": "shu.ac.uk",
+  "li": "https://www.linkedin.com/in/sam-giove-14325422/",
+  "email": "s.giove@shu.ac.uk",
+  "phone": "",
+  "src": [
+   "aacsb-roster/berichten/top-b.md",
+   "a049"
+  ]
+ },
+ {
+  "first": "Björn",
+  "last": "Claes",
+  "company": "The Open University",
+  "domain": "open.ac.uk",
+  "li": "https://www.linkedin.com/in/bclaes/",
+  "email": "bjorn.claes@open.ac.uk",
+  "phone": "",
+  "src": [
+   "aacsb-roster/berichten/top-b.md",
+   "a052"
+  ]
+ },
+ {
+  "first": "Julie",
+  "last": "Davies",
+  "company": "Brunel University of London",
+  "domain": "brunel.ac.uk",
+  "li": "https://www.linkedin.com/in/professor-julie-davies",
+  "email": "julie.davies@brunel.ac.uk",
+  "phone": "+44 1895 265925",
+  "src": [
+   "aacsb-roster/berichten/top-b.md",
+   "a006"
+  ]
+ },
+ {
+  "first": "Mazia",
+  "last": "Yassim",
+  "company": "University of Westminster",
+  "domain": "westminster.ac.uk",
+  "li": "https://uk.linkedin.com/in/maziayassim",
+  "email": "M.Yassim@westminster.ac.uk",
+  "phone": "",
+  "src": [
+   "aacsb-roster/berichten/top-b.md",
+   "a079"
+  ]
  }
 ]
