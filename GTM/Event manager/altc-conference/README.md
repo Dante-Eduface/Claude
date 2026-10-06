@@ -17,6 +17,7 @@ Contactpersoon ALT: naam nog aanvullen (partnerships/sponsoring, checkt bij haar
 - Uitnodigingen naar aangemelde LinkedIn-contacten zijn op 05-10-2026 verstuurd door Jeroen.
 - **Proef AACSB-roster:** `aacsb-proef/`. Tien mensen van de AACSB EMEA-roster van 2022, onderzocht door agent 3 met berichten van agent 4.
 - Goede voorbeeldberichten: `.claude/skills/outreach/voorbeelden-alt-webinar.md`.
+- **Lemlist:** campagne `cam_kM7vngvjiuG7Wda8i` ("The business outcomes of AI marking and feedback", draft). De flow loopt zo: verzoek, dan na 4 dagen bij acceptatie een LinkedIn-bericht plus een belttaak (warm), en anders een mail plus een belttaak (koud). Velden per persoon: `aacsb-proef/lemlist-velden.md`.
 
 ## Wat ALT levert (mail toegezegd voor einde dag 2026-09-11)
 - Exhibition package met inhoud, plus de talk-toevoeging (30 min) met prijs

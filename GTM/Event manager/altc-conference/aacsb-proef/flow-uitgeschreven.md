@@ -1,6 +1,6 @@
 # Volledige flow per persoon, uitgeschreven
 
-_2026-10-06. Elk bericht uit de reeks voluit, per persoon. Bron en redenering per stap staan in `berichten.md`._
+_2026-10-06. **Vervangen door `lemlist-velden.md`**, die de echte Lemlist-flow volgt. Hier staat nog mijn eigen aanname van de volgorde (mail na het LinkedIn-bericht, een laatste LinkedIn-bericht als derde stap)._
 
 [link] = https://events.teams.microsoft.com/event/4239b958-f045-4d0c-8367-96a44223b992@b817b3d1-ef29-4188-b513-db36a036f9b1?source=copyLinkOneEventsShareDialog
 
