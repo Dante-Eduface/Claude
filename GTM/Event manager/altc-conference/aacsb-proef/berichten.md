@@ -1,147 +1,98 @@
-# AACSB-proef: berichten voor het ALT/Jisc-webinar
+# AACSB-proef: berichten voor "The Business Outcomes of AI Marking and Feedback"
 
-> **VEROUDERD, NIET VERSTUREN (06-10-2026).** Deze versie noemt Jisc en ALT, en dat mag niet meer. De nieuwe opbouw staat in `flow-voorbeeld.md`. Na akkoord herschrijf ik de acht hierop.
+_Versie 2, 2026-10-06. Status: concept, wacht op Dante's oordeel. Versie 1 (met Jisc en ALT) staat in de git-geschiedenis._
 
-_Aangemaakt 2026-10-05. Status: concept, wacht op Dante's oordeel._
-
-Tien mensen van de AACSB EMEA-roster (Amsterdam, 2022). Agent 3 deed het onderzoek (dossiers in `dossiers/`), agent 4 schreef de berichten. Kalibratie: `.claude/skills/outreach/voorbeelden-alt-webinar.md`.
-
-**Webinar:** donderdag 15 oktober 2026, 11:00 tot 12:00 UK-tijd, Teams.
+**Sessie:** The Business Outcomes of AI Marking and Feedback · donderdag 15 oktober 2026 · 11:00 tot 12:00 UK-tijd · Teams
 **Link:** https://events.teams.microsoft.com/event/4239b958-f045-4d0c-8367-96a44223b992@b817b3d1-ef29-4188-b513-db36a036f9b1?source=copyLinkOneEventsShareDialog
+**Tijdzones:** 12:00 NL en Noorwegen · 12:00 Pretoria · 14:00 Abu Dhabi
+**Nooit noemen:** Jisc en ALT (niet zeker). Sociaal bewijs alleen "with several universities joining".
 
-**Volgorde per persoon:**
-1. Connectieverzoek, handmatig, uiterlijk 6 oktober.
-2. Geaccepteerd en na 2 werkdagen geen reactie: opvolgbericht op LinkedIn.
-3. Mail-reminder, als er een adres is. Rond 12 oktober.
-4. Bellen, als er een nummer is. 13 of 14 oktober.
+## Hoe de reeks werkt
 
-**Afgevallen:**
-- **Sue Hearsum** (Essex): niet meer te vinden, haar accreditatierol ligt nu bij Carrie Pickett.
-- **Harald Øverby** (BI): wacht op Dante. Hij was provost van 2022 tot 2024 en is nu hoogleraar Data Science. Onderwijs ligt bij Bendik Samuelsen.
+| Stap | Wanneer | Wat erin zit |
+|---|---|---|
+| 1. Connectieverzoek | 6 of 7 okt | het sterkste haakje, plus mijn reactie erop |
+| 2a. Ze zeggen ja | dezelfde dag | de link direct op LinkedIn (drie varianten hieronder) |
+| 2b. Geaccepteerd, geen reactie | na 2 werkdagen | een **tweede, andere** observatie, plus datum en link |
+| 3. Mail | 2 dagen na 2b | een **derde** observatie, plus de link |
+| 4. Bellen | 13 of 14 okt | een echte vraag over hun werk, daarna pas de uitnodiging |
+| 3'. Laatste LinkedIn-bericht | alleen als er geen mail en geen telefoon is | het menselijke detail (2b-niveau), plus de link |
 
----
+Elke stap draagt een ander feit. Niet dezelfde reden in andere woorden.
 
-## 1. Elvira Bolat, Bournemouth University
-Associate Professor in Digital Marketing · [LinkedIn](http://uk.linkedin.com/in/elvirabolat) · ebolat@bournemouth.ac.uk · 01202 968755
+## 2a. Ze zeggen ja: drie varianten
 
-**Waar ik het op baseer:** haar BU-staffprofiel: "AOL Lead for the Department of Marketing, Assurance of Learning (AOL), AACSB". Daarnaast "External Examiner for the Marketing degrees (2020-2024)" bij Manchester Met. Niveau 1+, drager organisatie en panel.
-**Waarom zo:** het Gerwyn-patroon ("I saw ... on your profile"). AoL is een rol die zij zelf op haar profiel zet. Ik noem het "AoL work" en geen titel, want de lijst heeft geen datum.
-**Afgevallen:** "Director of Accreditation", mogelijk een oude rol. De e-assessment-paper uit 2014, waarvan alleen de titel gezien is.
-
-**Connectieverzoek** (291 tekens)
-> Hi Elvira, I'm Dante from Eduface. I saw your Assurance of Learning work for AACSB on your BU profile, so I thought AI assisted marking would be right up your alley. We're hosting an online session on it with Jisc and ALT, with several universities joining. Would you like a personal invite?
-
-**Opvolgbericht LinkedIn**
-> Thanks for connecting, Elvira. Between your AoL work and your years as an external examiner at Manchester Met, I think you'd have a lot to add to the discussion.
->
-> It's on 15 October, 11:00 to 12:00 UK time, on Teams. Would you be able to make it? If so, I'll send over the invite.
-
-**Mail-reminder**
-Onderwerp: Assurance of Learning and AI assisted marking
-> Hi Elvira,
->
-> I sent you a LinkedIn request last week about this, so here it is by email as well. We're hosting an online session with Jisc and the Association for Learning Technology on AI assisted marking and what it means for institutions. It's on 15 October, 11:00 to 12:00 UK time, on Teams.
->
-> I'm inviting you personally because of your Assurance of Learning work at BU. It's by invitation rather than open registration, and the link to join is below.
->
+**A. Kort en praktisch**
+> Great to hear, [voornaam]. Here's the link to register, it's Thursday 15 October, 11:00 to 12:00 UK time.
 > [link]
->
-> Would that time work for you?
->
-> Best,
-> Dante Torbed
-> Eduface
+> Looking forward to having you there 👍
 
-**Bel-opener**
-> Hi Elvira, it's Dante from Eduface. I sent you a note last week about our session with Jisc and ALT on AI assisted marking, on the 15th of October. With your Assurance of Learning work I thought it would be right up your street. Would you like to join? I can send the invite straight to your inbox.
-
-**Twijfels:** is de AoL-rol nog actueel? Check haar LinkedIn voor je verstuurt.
-
----
-
-## 2. Una McMahon-Beattie, Ulster University Business School
-Head of AACSB Accreditation, Full Professor · LinkedIn niet gevonden · geen e-mail · +44 28 9536 5793
-
-**Waar ik het op baseer:** haar Pure-profiel: "Head of AACSB Accreditation". In de PRME-blog (26-06-2025) zegt ze: "Aligning our accreditation and curriculum with these global benchmarks ensures that Ulster University is not just meeting, but exceeding, the demands for responsible leadership." Niveau 1, drager organisatie.
-**Waarom zo:** het Stuart-patroon (rol bij naam plus "squarely in your remit"), het bewezen bericht van Jeroen. Het citaat over global benchmarks bewaar ik voor het opvolgbericht.
-**Afgevallen:** dat Ulster "on a journey toward" AACSB is. Dat komt alleen uit een snippet en is niet gelezen.
-
-**Connectieverzoek** (263 tekens)
-> Hi Una, I'm Dante from Eduface. As Head of AACSB Accreditation at Ulster, I thought AI assisted marking would sit squarely in your remit. We're hosting an online session on it with Jisc and ALT, with several universities joining. Would you like a personal invite?
-
-**Opvolgbericht LinkedIn**
-> Thanks for connecting, Una. I read what you said at the PRME forum about aligning accreditation with global benchmarks, and the session looks at AI assisted marking at that same institutional level.
->
-> It's on 15 October, 11:00 to 12:00 UK time, on Teams. Would you be able to make it? If so, I'll send over the invite.
-
-**Mail-reminder:** geen adres gevonden, overslaan.
-
-**Bel-opener**
-> Hi Una, it's Dante from Eduface. I sent you a note last week about our session with Jisc and ALT on AI assisted marking, on the 15th of October. As Head of AACSB Accreditation I thought it would sit squarely with you. Would you like to join? I can send the invite straight to your inbox.
-
-**Twijfels:** geen LinkedIn-URL, dus zelf zoeken op naam.
-
----
-
-## 3. Kirsteen Daly, Adam Smith Business School, Glasgow
-Accreditations and Reputation Manager · LinkedIn niet gevonden · Kirsteen.Daly@glasgow.ac.uk · geen telefoon
-
-**Waar ik het op baseer:** alleen haar rol, "Accreditations and Reputation Manager (Business School Administration)", van de staffpagina. Rol-alleen, wat bij deze campagne mag.
-**Waarom zo:** zij is professional services, geen docent. Daarom niet "squarely in your remit", maar zachter: "might land on your desk".
-**Afgevallen:** de Herald-award voor het menopauzeprogramma. Menselijk en publiek, maar gevoelig in een koude uitnodiging (advies agent 3).
-
-**Connectieverzoek** (266 tekens)
-> Hi Kirsteen, I'm Dante from Eduface. You look after accreditations at the Adam Smith Business School, so I thought AI assisted marking might land on your desk sooner or later. We're hosting an online session on it with Jisc and ALT. Would you like a personal invite?
-
-**Opvolgbericht LinkedIn**
-> Thanks for connecting, Kirsteen. The session is about what AI assisted marking means for an institution rather than for one marker, which felt close to your accreditation work.
->
-> It's on 15 October, 11:00 to 12:00 UK time, on Teams. Would you be able to make it? If so, I'll send over the invite.
-
-**Mail-reminder**
-Onderwerp: Accreditation and AI assisted marking
-> Hi Kirsteen,
->
-> I sent you a LinkedIn request last week about this, so here it is by email as well. We're hosting an online session with Jisc and the Association for Learning Technology on AI assisted marking and what it means for institutions. It's on 15 October, 11:00 to 12:00 UK time, on Teams.
->
-> I'm inviting you because you look after accreditations at the Adam Smith Business School. If someone in learning and teaching is better placed, I'd be glad to invite them too. The link to join is below.
->
+**B. Met een haak terug naar hun eigen werk** (beste keus als er een sterk haakje is)
+> Brilliant, glad you're joining. Here's the link for Thursday 15 October, 11:00 to 12:00 UK time.
 > [link]
->
-> Would that time work for you?
->
-> Best,
-> Dante Torbed
-> Eduface
+> I'd genuinely love to hear your take on [hun onderwerp, bijv. "the need-versus-get gap"] afterwards.
 
-**Bel-opener:** geen nummer, overslaan.
-
-**Twijfels:** geen LinkedIn-URL. Rol-alleen is het zwakste "waarom jij" van de batch.
+**C. Met ruimte voor een collega** (bij mensen die het misschien doorschuiven)
+> Great, here's the link for Thursday 15 October, 11:00 to 12:00 UK time.
+> [link]
+> If a colleague would get something out of it too, feel free to pass it on.
 
 ---
 
-## 4. Dominic Finn, Strathclyde Business School
-Teaching Fellow, Management Science · LinkedIn niet gevonden · dominic.finn@strath.ac.uk · 0141 548 3621
+## 1. Barry O'Mahony, Provost, Abu Dhabi University
+[LinkedIn](https://www.linkedin.com/in/professor-barry-o-mahony-2b62501b/) · geen e-mail · geen telefoon → stap 1, 2a, 2b, 3'
 
-**Waar ik het op baseer:** zijn talk van 10-09-2026, "Reflective practice, AI and inclusive pedagogy in Management Science education: redesigning MSc capstone reflection" (Pure-profiel, alleen de titel gezien). Daarnaast staat in zijn research interests letterlijk "the role of artificial intelligence in reflective practice". Niveau 2, het sterkste haakje van de batch.
-**Waarom zo:** het Patrick-patroon, iets wat hij zelf deed en dat recent is. "I came across", niet "I saw your talk", want alleen de titel is gezien.
-**Afgevallen:** "Director of T&L MBA", niet meer bevestigd. Zijn carrièreswitch uit bankieren en een start-up: menselijk, maar de brug naar ons is geforceerd.
+| Stap | Element | Bron |
+|---|---|---|
+| 1 | AI bij grading and feedback | ADU Freshman Guide 24-25, p.12 (zelf nagecontroleerd) |
+| 2b | moderatiesysteem voor examens | zelfde interview, p.11 |
+| 3' | begon als leerling-kok | bio p.8 |
 
-**Connectieverzoek** (281 tekens)
-> Hi Dominic, I'm Dante from Eduface. I came across your talk last month on AI and redesigning MSc capstone reflection, so I thought of you. We're hosting an online session with Jisc and ALT on AI assisted marking, with several universities joining. Would you like a personal invite?
+**1. Connectieverzoek** (294)
+> Hi Barry, I'm Dante from Eduface. I read your interview in the ADU freshman guide where you mention using AI for grading and feedback. Not many provosts say that out loud yet. We're hosting an online session on the business outcomes of AI marking and feedback. Would you like a personal invite?
 
-**Opvolgbericht LinkedIn**
-> Thanks for connecting, Dominic. You list the role of AI in reflective practice as one of your research interests, which is why you came to mind for this one.
+**2b. Geen reactie**
+> Thanks for connecting, Barry. Another line from that interview stayed with me, the moderating system you put in place for exams. I'd be curious whether AI plays a part in that too.
 >
-> It's on 15 October, 11:00 to 12:00 UK time, on Teams. Would you be able to make it? If so, I'll send over the invite.
+> The session is on Thursday 15 October, 11:00 to 12:00 UK time (14:00 in Abu Dhabi). Would you be able to make it? The link is here either way.
+> [link]
 
-**Mail-reminder**
-Onderwerp: AI and capstone reflection
+**3'. Laatste bericht** (geen mail of telefoon)
+> Last one from me, Barry, and nothing to do with marking. I read you started out as an apprentice chef in Ireland before the five-star hotels and academia. That might be the best route into a provost's office I've come across. The session is this Thursday at 14:00 your time, in case you'd like to join.
+> [link]
+
+**Twijfels:** het interview is van begin 2025. Daarom geen "recent" en geen "just". Mogelijk ligt AI bij ADU bij de Vice Chancellor for AI, Odhabi, maar Barry zegt het zelf, dus dat is geen probleem.
+
+---
+
+## 2. Dominic Finn, Teaching Fellow, Strathclyde Business School
+Geen bevestigde LinkedIn (kandidaat uk.linkedin.com/in/dominic-finn-a273b312) · dominic.finn@strath.ac.uk · 0141 548 3621
+
+| Stap | Element | Bron |
+|---|---|---|
+| 1 | "AI skills which OR related graduates need and get" | Pure, OR Society, 22-07-2026 (zelf nagecontroleerd) |
+| 2b | onderzoek naar het herontwerp van MSc-capstone-reflectie | Pure, OR68, 10-09-2026 |
+| 3 | "sometimes you don't know what you don't know" | zijn staffpagina |
+| 4 | vraag: wat zeiden de alumni dat er ontbrak? | terug naar stap 1 als vraag |
+
+**1. Connectieverzoek** (287)
+> Hi Dominic, I'm Dante from Eduface. I came across your OR Society session on the AI skills graduates need versus the ones they actually get, and that gap stuck with me. We're hosting an online session on the business outcomes of AI marking and feedback. Would you like a personal invite?
+
+**2b. Geen reactie**
+> Thanks for connecting, Dominic. I also saw you presented early research at OR68 on redesigning MSc capstone reflection. I'd be curious where that's heading.
+>
+> Our session is on Thursday 15 October, 11:00 to 12:00 UK time, on Teams. Would you be able to make it? The link is here either way.
+> [link]
+
+**3. Mail**
+Onderwerp: You don't know what you don't know
 > Hi Dominic,
 >
-> I sent you a LinkedIn request last week about this, so here it is by email as well. We're hosting an online session with Jisc and the Association for Learning Technology on AI assisted marking and what it means for institutions. It's on 15 October, 11:00 to 12:00 UK time, on Teams.
+> I sent you a LinkedIn request last week about this, so here it is by email as well.
 >
-> I thought of you after coming across your talk on AI and redesigning MSc capstone reflection. It's by invitation rather than open registration, and the link to join is below.
+> On your staff page you wrote that moving from banking into higher education showed you that "sometimes you don't know what you don't know". That's a fair description of where a lot of institutions are with AI marking right now, and it's pretty much why we set up this session, The Business Outcomes of AI Marking and Feedback. It's on Thursday 15 October, 11:00 to 12:00 UK time, on Teams.
+>
+> Registration is by invitation, and the link is below.
 >
 > [link]
 >
@@ -151,35 +102,142 @@ Onderwerp: AI and capstone reflection
 > Dante Torbed
 > Eduface
 
-**Bel-opener**
-> Hi Dominic, it's Dante from Eduface. I sent you a note last week about our session with Jisc and ALT on AI assisted marking, on the 15th of October. I came across your talk on AI and capstone reflection, which is why I thought of you. Would you like to join? I can send the invite straight to your inbox.
+**4. Bellen**
+- **Opening:** "Hi Dominic, it's Dante from Eduface. I came across your OR Society session on the AI skills graduates need versus what they get. Can I ask, what did your alumni say was missing?"
+- **Daarna:** "That's really interesting. It's partly why I'm calling, we're running an online session this Thursday at 11 on the business outcomes of AI marking and feedback. Would you like to join? I'll email you the link straight after."
+- **Voicemail:** "Hi Dominic, Dante from Eduface. Quick one about our online session on the business outcomes of AI marking and feedback, this Thursday at 11 UK time. The link is in your inbox, it'd be great to have you there."
 
-**Twijfels:** geen LinkedIn-URL.
+**Twijfels:** LinkedIn kandidaat, zelf even checken. Zijn staffpagina heeft geen datum, maar het is zijn eigen tekst.
 
 ---
 
-## 5. Mirella Kleijnen, VU Amsterdam, School of Business and Economics
-Dean sinds 01-02-2026, daarvoor Vice Dean of Education · LinkedIn niet gevonden · mirella.kleijnen@vu.nl · geen telefoon
+## 3. Simon Mercado, Professor of Management & HE Leadership, ESCP (Londen)
+[LinkedIn](https://linkedin.com/in/simon-anthony-mercado-35ab6118) · smercado@escp.eu · +44 7795 602920 (mobiel, eigen cv)
 
-**Waar ik het op baseer:** haar VU-profiel: "As Vice Dean of Education, she was responsible for the School's full education portfolio, including accreditation, programme renewal, teaching and learning innovation, and quality assurance." En: "she steered the transition to online education, managing a rapid redesign of teaching and assessment under significant pressure." Niveau 1, drager organisatie.
-**Waarom zo:** in het Nederlands, want ze is Nederlands en jij ook. In het verzoek gebruik ik de rol, in het opvolgbericht het coronadetail, dat haar eigen woord "assessment" bevat.
-**Afgevallen:** de Active Blended Learning Philosophy, te ver van nakijken.
+| Stap | Element | Bron |
+|---|---|---|
+| 1 | schools missen de capaciteit voor frontier tech | ESCP Impact Paper, 13-07-2026, p.6 |
+| 2b | de AI-"wipe-out" van instapbanen voor afgestudeerden | zelfde paper, ander punt |
+| 3 | tien jaar external examiner | eigen cv |
+| 4 | vraag: hoe is ChatGPT Edu bij ESCP geland? | ESCP-nieuws, okt 2024 |
 
-**Connectieverzoek** (287 tekens)
-> Hi Mirella, ik ben Dante van Eduface. Als Dean, en daarvoor Vice Dean of Education bij SBE, dacht ik dat AI-ondersteund nakijken echt op jouw terrein ligt. We organiseren er een online sessie over met Jisc en ALT, met verschillende universiteiten erbij. Zal ik je persoonlijk uitnodigen?
+**1. Connectieverzoek** (296)
+> Hi Simon, I'm Dante from Eduface. I read your July paper and the point that business schools can't harness frontier tech the way specialist digital providers can. That's close to what our online session is about, the business outcomes of AI marking and feedback. Would you like a personal invite?
 
-**Opvolgbericht LinkedIn**
-> Dank voor het connecten, Mirella. Op je VU-profiel las ik dat je in de coronatijd het onderwijs en de toetsing in korte tijd opnieuw hebt ingericht. Daarom dacht ik juist aan jou voor deze sessie.
+**2b. Geen reactie**
+> Thanks for connecting, Simon. The other line from your paper I keep coming back to is the "wipe-out" of graduate entry-level roles. If that's where things are going, how schools assess what graduates can actually do matters even more.
 >
-> Hij is op 15 oktober, van 12:00 tot 13:00 Nederlandse tijd, in het Engels via Teams. Past dat in je agenda? Dan stuur ik je de uitnodiging.
+> Our session is on Thursday 15 October, 11:00 to 12:00 UK time, on Teams. Would you be able to make it? The link is here either way.
+> [link]
 
-**Mail-reminder**
-Onderwerp: AI-ondersteund nakijken, sessie met Jisc en ALT
+**3. Mail**
+Onderwerp: Ten years as an external examiner
+> Hi Simon,
+>
+> I sent you a LinkedIn request last week about this, so here it is by email as well.
+>
+> You spent ten years as an external examiner at Newcastle and Hertfordshire, so you've seen marking across institutions from the outside. Our session, The Business Outcomes of AI Marking and Feedback, looks at the same work from the institution's side. It's on Thursday 15 October, 11:00 to 12:00 UK time, on Teams.
+>
+> Registration is by invitation, and the link is below.
+>
+> [link]
+>
+> Would that time work for you?
+>
+> Best,
+> Dante Torbed
+> Eduface
+
+**4. Bellen**
+- **Opening:** "Hi Simon, it's Dante from Eduface. I read your July paper on business schools and frontier tech. Can I ask, how has ChatGPT Edu landed with faculty at ESCP?"
+- **Daarna:** "That's useful to hear. It's partly why I'm calling, we're running an online session this Thursday at 11 on the business outcomes of AI marking and feedback. Would you like to join?"
+
+**Twijfels:** de paper is een niet-gerefereerde draft. Daarom "your July paper", niet "your research". Het nummer is zijn mobiel, dus bellen is jouw keuze.
+
+---
+
+## 4. Karin Barac, Head of Department of Auditing, University of Pretoria
+[LinkedIn](https://www.linkedin.com/in/karin-barac-87042170/) · geen e-mail · +27 12 420 5439 (uit een snippet, niet zelf gezien)
+
+| Stap | Element | Bron |
+|---|---|---|
+| 1 | TUTBuddy, klassen van 542 tot 670, peer review zonder elk stuk te cijferen | Accounting Education, 2021 |
+| 2b | nieuw paper: "procedural and symbolic compliance prevails over substantive quality management" | Meditari, 15-09-2026 |
+| 4 | vraag: hoe toets je "digital acumen", de top-skill uit CA2025? | CA2025-onderzoek |
+
+**1. Connectieverzoek** (295)
+> Hi Karin, I'm Dante from Eduface. I read your TUTBuddy paper, peer review in auditing classes of up to 670 students without marking every piece. A smart way around the numbers. We're hosting an online session on the business outcomes of AI marking and feedback. Would you like a personal invite?
+
+**2b. Geen reactie**
+> Thanks for connecting, Karin. I also saw your new paper on the 13 African audit offices, where procedural and symbolic compliance wins out over substantive quality management. It made me wonder how often the same happens with assessment quality in universities.
+>
+> Our session is on Thursday 15 October, 11:00 to 12:00 UK time (12:00 in Pretoria), on Teams. Would you be able to make it? The link is here either way.
+> [link]
+
+**3. Mail:** geen adres, overslaan.
+
+**4. Bellen**
+- **Opening:** "Hi Karin, it's Dante from Eduface. I read that digital acumen came out on top in your CA2025 research. Can I ask, how do you actually assess that in your students?"
+- **Daarna:** "That's a hard one. It's partly why I'm calling, we're running an online session this Thursday at 12 your time on the business outcomes of AI marking and feedback. Would you like to join? I can send the link straight over."
+
+**Twijfels:** van het paper van 15-09 is alleen de abstract gelezen, dus ik citeer alleen die. TUTBuddy is van 2021, dus niets dat suggereert dat het nieuw is.
+
+---
+
+## 5. Una McMahon-Beattie, Head of AACSB Accreditation, Ulster University Business School
+Geen LinkedIn gevonden, dus zelf zoeken · geen e-mail · +44 28 9536 5793
+
+| Stap | Element | Bron |
+|---|---|---|
+| 1 | technologie die de productiviteit van werkers verhoogt in plaats van ze te vervangen | Yeoman & McMahon-Beattie, april 2026 |
+| 2b | kritisch denken leren met horrormetaforen (en zombies) | conferentiepaper mei 2024 |
+| 4 | vraag: waar staat Ulster op weg naar AACSB? | SIP-rapport aug 2025, zij co-auteur |
+
+**1. Connectieverzoek** (291)
+> Hi Una, I'm Dante from Eduface. I read your piece with Ian Yeoman on technology boosting workers' productivity rather than replacing them. Universities are asking the same about AI marking, which is what our online session on its business outcomes is about. Would you like a personal invite?
+
+**2b. Geen reactie**
+> Thanks for connecting, Una. I have to say, teaching critical thinking through horror metaphors, and zombies before that, is the most memorable thing I've read about hospitality education in a while.
+>
+> Our session is on Thursday 15 October, 11:00 to 12:00 UK time, on Teams. Would you be able to make it? The link is here either way.
+> [link]
+
+**3. Mail:** geen adres, overslaan. Het adres usm.mcmahon@ulster.ac.uk is een gok en niet geverifieerd.
+
+**4. Bellen** (waarschijnlijk het hoofdkanaal, want geen LinkedIn)
+- **Opening:** "Hi Una, it's Dante from Eduface. I read in your PRME report that Ulster is working towards AACSB, and that you're leading it. Can I ask, where are you on that journey now?"
+- **Daarna:** "It's partly why I'm calling, we're running an online session this Thursday at 11 on the business outcomes of AI marking and feedback, with several universities joining. Would you like to join? I'll email you the link if you give me the best address."
+
+---
+
+## 6. Mirella Kleijnen, Dean SBE, VU Amsterdam (Nederlands)
+Geen LinkedIn gevonden, dus zelf zoeken · mirella.kleijnen@vu.nl · geen telefoon
+**Eerst checken:** het VU-spoor in Close (Lusini, Bijker, "Sylvia gebeld" 19-05).
+
+| Stap | Element | Bron |
+|---|---|---|
+| 1 | haar paper als Dean: incentives verschuiven naar interactiekwaliteit | juni 2026, alleen de abstract gelezen |
+| 2b | haar eigen model van weerstand: afwijzen, uitstellen, verzet | 2009, haar meest geciteerde werk |
+| 3 | herontwerp van onderwijs en toetsing onder druk in de coronatijd | haar VU-profiel |
+
+**1. Connectieverzoek** (291)
+> Hi Mirella, ik ben Dante van Eduface. Ik kwam je paper van juni tegen over hoe deans incentives kunnen verschuiven naar interactiekwaliteit en wederzijds leren. Onze online sessie over de business outcomes van AI-nakijken en feedback raakt daar precies aan. Zal ik je persoonlijk uitnodigen?
+
+**2b. Geen reactie**
+> Dank voor het connecten, Mirella. Uit je eerdere werk bleef me het onderscheid bij tussen afwijzen, uitstellen en verzet bij innovaties. Ik ben benieuwd welke van de drie je bij AI-nakijken het vaakst ziet.
+>
+> De sessie is op donderdag 15 oktober, van 12:00 tot 13:00 Nederlandse tijd, in het Engels via Teams. Lukt dat? De link staat hieronder.
+> [link]
+
+**3. Mail**
+Onderwerp: Toetsing herontwerpen onder druk
 > Hi Mirella,
 >
-> Vorige week stuurde ik je hierover een connectieverzoek op LinkedIn, dus bij deze ook per mail. We organiseren met Jisc en de Association for Learning Technology een online sessie over AI-ondersteund nakijken en wat dat voor een instelling betekent. Hij is op 15 oktober, van 12:00 tot 13:00 Nederlandse tijd, in het Engels via Teams.
+> Vorige week stuurde ik je hierover een connectieverzoek op LinkedIn, dus bij deze ook per mail.
 >
-> Ik nodig je persoonlijk uit vanwege je achtergrond als Vice Dean of Education. Deelname gaat op uitnodiging, de link staat hieronder.
+> Op je VU-profiel las ik dat je in de coronatijd het onderwijs en de toetsing in korte tijd opnieuw hebt ingericht. AI-nakijken vraagt een vergelijkbare herbezinning, alleen zonder deadline van buitenaf. Daar gaat onze sessie over, The Business Outcomes of AI Marking and Feedback. Hij is op donderdag 15 oktober, van 12:00 tot 13:00, in het Engels via Teams.
+>
+> Deelname gaat op uitnodiging, de link staat hieronder.
 >
 > [link]
 >
@@ -189,34 +247,37 @@ Onderwerp: AI-ondersteund nakijken, sessie met Jisc en ALT
 > Dante Torbed
 > Eduface
 
-**Bel-opener:** geen nummer, overslaan.
-
-**Twijfels:** **er loopt al een VU-spoor in Close.** Je mailde in maart met Sara Lusini en Kirsten Bijker, en op 19-05 staat de notitie "Sylvia gebeld". Check of een uitnodiging aan de Dean dat kruist.
+**4. Bellen:** geen nummer.
 
 ---
 
-## 6. Simon Mercado, ESCP Business School (campus Londen)
-Professor of Management & HE Leadership · [LinkedIn](https://linkedin.com/in/simon-anthony-mercado-35ab6118) · smercado@escp.eu · +44 7795 602920 (mobiel, van zijn eigen cv)
+## 7. Elvira Bolat (werkgever wordt nog gecheckt: Bournemouth of Bedfordshire)
+[LinkedIn](https://www.linkedin.com/in/elvirabolat/) · e-mail en telefoon volgen na de check
 
-**Waar ik het op baseer:** zijn eigen cv: "Led EQUIS and AACSB international (re-)accreditation across the ESCP Group". En: "External Examiner, University of Hertfordshire (2014-2019)" en "Newcastle University (2010-2015)". Niveau 1 tot zwak 2, drager organisatie en panel.
-**Waarom zo:** twee feiten uit zijn eigen cv samen. Ik schrijf ze in de verleden tijd, want het zijn afgeronde rollen.
-**Afgevallen:** zijn AACSB-keynote van 2022 over internationalisering. Drie jaar oud en een ander onderwerp.
+| Stap | Element | Bron |
+|---|---|---|
+| 1 | haar essay over de "platform university" en "AI-driven deskilling of academic labor", plus dat haar sceptische blik waardevol is | Social Science Space, 04-03-2026 |
+| 2b | haar eigen paper uit 2014: nakijken op tablets, "synchronous updates within the marking team" | ECEL 2014 |
+| 3 | AoL-lead en external examiner | staffprofiel BU |
 
-**Connectieverzoek** (277 tekens)
-> Hi Simon, I'm Dante from Eduface. With ESCP's AACSB and EQUIS accreditation and your years as an external examiner behind you, I thought AI assisted marking would be right up your alley. We're hosting an online session on it with Jisc and ALT. Would you like a personal invite?
+**1. Connectieverzoek** (297)
+> Hi Elvira, I'm Dante from Eduface. I read your essay on the platform university and the AI-driven deskilling of academic labour. We're hosting an online session on the business outcomes of AI marking and feedback, and your sceptical view is exactly what it needs. Would you like a personal invite?
 
-**Opvolgbericht LinkedIn**
-> Thanks for connecting, Simon. You've seen marking from the outside as an external examiner at Newcastle and Hertfordshire, and this session looks at it from the institution's side.
+**2b. Geen reactie**
+> Thanks for connecting, Elvira. Funnily enough, I also found your 2014 paper on marking 300 students' work on tablets, with live updates across the marking team. So you've seen technology in marking from both sides, which is why I'd really value your view in the room.
 >
-> It's on 15 October, 11:00 to 12:00 UK time, on Teams. Would you be able to make it? If so, I'll send over the invite.
+> The session is on Thursday 15 October, 11:00 to 12:00 UK time, on Teams. Would you be able to make it? The link is here either way.
+> [link]
 
-**Mail-reminder**
-Onderwerp: AI assisted marking, from the institution's side
-> Hi Simon,
+**3. Mail** (adres volgt)
+Onderwerp: A sceptical voice in the room
+> Hi Elvira,
 >
-> I sent you a LinkedIn request last week about this, so here it is by email as well. We're hosting an online session with Jisc and the Association for Learning Technology on AI assisted marking and what it means for institutions. It's on 15 October, 11:00 to 12:00 UK time, on Teams.
+> I sent you a LinkedIn request last week about this, so here it is by email as well.
 >
-> I'm inviting you personally because of your accreditation work at ESCP and your years as an external examiner. It's by invitation rather than open registration, and the link to join is below.
+> Most sessions on AI marking end up as one long nod. With your Assurance of Learning and external examiner work, plus what you wrote about deskilling, you'd bring the question most people skip, what it does to academic work itself. Our session is called The Business Outcomes of AI Marking and Feedback, on Thursday 15 October, 11:00 to 12:00 UK time, on Teams.
+>
+> Registration is by invitation, and the link is below.
 >
 > [link]
 >
@@ -226,52 +287,100 @@ Onderwerp: AI assisted marking, from the institution's side
 > Dante Torbed
 > Eduface
 
-**Bel-opener**
-> Hi Simon, it's Dante from Eduface. I sent you a note last week about our session with Jisc and ALT on AI assisted marking, on the 15th of October. With your accreditation work at ESCP I thought it would be right up your alley. Would you like to join? I can send the invite straight to your inbox.
-
-**Twijfels:** er is geen bron uit 2026 dat hij nog bij ESCP zit, dus check LinkedIn. Het nummer is een mobiel nummer van zijn eigen publieke cv. Of je dat belt, beslis jij.
+**4. Bellen:** nummer volgt na de werkgevercheck.
 
 ---
 
-## 7. Barry O'Mahony, Abu Dhabi University
-Provost (was Dean College of Business in 2022) · [LinkedIn](https://www.linkedin.com/in/professor-barry-o-mahony-2b62501b/) · geen e-mail · geen telefoon
+## 8. Kirsteen Daly, Accreditations and Reputation Manager, Adam Smith Business School (zwak haakje, dus de versie zonder haakje)
+[LinkedIn](https://www.linkedin.com/in/kirsteen-daly-cmgr-mcmi-0863388a/) · Kirsteen.Daly@glasgow.ac.uk · 0141 330 4666 (snippet)
 
-**Waar ik het op baseer:** de ADU-catalogus 2026-27 noemt hem Provost, en noemt ook een "Vice Chancellor for AI and Operational Excellence". Niveau 2 via de organisatie, niet via hem persoonlijk.
-**Waarom zo:** in het verzoek het Stuart-patroon (rol bij naam). ALT schrijf ik voluit, want buiten de UK kent men de afkorting waarschijnlijk niet. De AI-functietitel van ADU bewaar ik voor het opvolgbericht.
-**Afgevallen:** Dean of the Year 2022. Drie jaar oud, en een compliment is geen observatie.
+| Stap | Element | Bron |
+|---|---|---|
+| 1 | eerst het onderwerp, dan haar rol (accreditaties) | staffpagina |
+| 2b | ze faciliteerde EFMD Smart Data Management mee (heet nu "...and AI Workshop") | post Stevenin, 13-02-2023 |
+| 3 | ruimte om een collega uit learning and teaching aan te dragen | — |
+| 4 | vraag: wat vragen AACSB en EQUIS nu over AI? | — |
 
-**Connectieverzoek** (278 tekens)
-> Hi Barry, I'm Dante from Eduface. As Provost at ADU, I thought AI assisted marking would sit squarely in your remit. We're hosting an online session on it with Jisc and the Association for Learning Technology, with several universities joining. Would you like a personal invite?
+**1. Connectieverzoek** (296)
+> Hi Kirsteen, I'm Dante from Eduface. We're hosting an online session on the business outcomes of AI marking and feedback, with several universities joining. As you look after accreditations at the Adam Smith Business School, I thought it might be up your street. Would you like a personal invite?
 
-**Opvolgbericht LinkedIn**
-> Thanks for connecting, Barry. I saw ADU has a Vice Chancellor for AI and Operational Excellence, which is pretty much the question this session is about, what AI assisted marking means for an institution.
+**2b. Geen reactie**
+> Thanks for connecting, Kirsteen. I saw you helped run EFMD's Smart Data Management programme, which has since turned into a data and AI workshop. Our session sits right next to that, looking at what AI marking means for an institution rather than for one marker.
 >
-> It's on 15 October, 11:00 to 12:00 UK time (14:00 in Abu Dhabi), on Teams. Would you be able to make it? If so, I'll send over the invite.
+> It's on Thursday 15 October, 11:00 to 12:00 UK time, on Teams. Would you be able to make it? The link is here either way.
+> [link]
 
-**Mail-reminder en bellen:** geen adres en geen nummer, overslaan.
+**3. Mail**
+Onderwerp: The business outcomes of AI marking
+> Hi Kirsteen,
+>
+> I sent you a LinkedIn request last week about this, so here it is by email as well. On Thursday 15 October we're hosting an online session, The Business Outcomes of AI Marking and Feedback, with several universities joining. It runs from 11:00 to 12:00 UK time, on Teams.
+>
+> If a colleague in learning and teaching at the Adam Smith Business School would get more out of it than you, I'd be glad to invite them too. The link is below either way.
+>
+> [link]
+>
+> Would that time work for you?
+>
+> Best,
+> Dante Torbed
+> Eduface
 
-**Twijfels:** of die VC-rol over onderwijs gaat of alleen over bedrijfsvoering, blijkt nergens uit. Daarom zeg ik "the question", niet "your plans".
+**4. Bellen**
+- **Opening:** "Hi Kirsteen, it's Dante from Eduface. You look after accreditations at the school, so can I ask, are AACSB or EQUIS asking you anything about AI yet?"
+- **Daarna:** "It's partly why I'm calling, we're running an online session this Thursday at 11 on the business outcomes of AI marking and feedback. Would you like to join?"
+- **"Niet mijn ding":** "Fair enough. Is there someone in learning and teaching you'd point me to instead?"
+
+**Twijfels:** haar rol in de AI-versie van het EFMD-programma is niet bevestigd. Daarom "has since turned into" en niet "you run". Het nummer komt uit een snippet.
 
 ---
 
-## 8. Karin Barac, University of Pretoria
-Head of Department of Auditing (Deputy Dean onzeker) · [LinkedIn](https://www.linkedin.com/in/karin-barac-87042170/) · geen e-mail · +27 12 420 5439 (uit een snippet)
+## 9. Harald Øverby, Professor Data Science, BI Norwegian Business School
+LinkedIn kandidaat (niet bevestigd) · harald.overby@bi.no · geen telefoon
 
-**Waar ik het op baseer:** "a four-year-long research project led by Professor Karin Barac" achter SAICA's CA2025-competentiekader (vatit.com, 27-10-2022). Niveau 1, drager beroepsgroep.
-**Waarom zo:** haar eigen werk, concreet en herkenbaar. In het opvolgbericht reageer ik erop: CA2025 bepaalt wat er gekund moet worden, de sessie gaat over de andere helft.
-**Afgevallen:** de Deputy Dean-titel, sinds 2019 en niet meer bevestigd.
+| Stap | Element | Bron |
+|---|---|---|
+| 1 | van Provost naar Special Advisor AI & Technology | eigen BI-profiel |
+| 2b | master rechten naast het hoogleraarschap, scriptie over de Android Auto-zaak | UiO, 15-12-2025 |
+| 3 | rector Matsen: "AI is changing how we ... develop effective assessment methods" | BI, 30-09-2026 |
 
-**Connectieverzoek** (285 tekens)
-> Hi Karin, I'm Dante from Eduface. I read that you led the research behind SAICA's CA2025 competency framework, which is why you came to mind. We're hosting an online session with Jisc and the Association for Learning Technology on AI assisted marking. Would you like a personal invite?
+**1. Connectieverzoek** (281)
+> Hi Harald, I'm Dante from Eduface. Going from Provost to Special Advisor on AI and technology at BI, you'll have seen AI in education from just about every angle. We're hosting an online session on the business outcomes of AI marking and feedback. Would you like a personal invite?
 
-**Opvolgbericht LinkedIn**
-> Thanks for connecting, Karin. CA2025 sets out what future CAs need to be able to do, and this session is about the other half, how institutions mark that work with AI.
+**2b. Geen reactie**
+> Thanks for connecting, Harald. Unrelated to the session, but a law master's on the Android Auto case alongside a professorship in data science is quite the side project.
 >
-> It's on 15 October, 11:00 to 12:00 UK time (12:00 in Pretoria), on Teams. Would you be able to make it? If so, I'll send over the invite.
+> The session is on Thursday 15 October, 12:00 to 13:00 Oslo time, on Teams. Would you be able to make it? The link is here either way.
+> [link]
 
-**Mail-reminder:** geen adres, overslaan.
+**3. Mail**
+Onderwerp: AI and assessment methods at BI
+> Hi Harald,
+>
+> I sent you a LinkedIn request last week about this, so here it is by email as well.
+>
+> Your rector put it plainly in BI's latest announcement, AI is changing how BI develops effective assessment methods. Having advised BI on AI and technology, you'll know better than most what that means in practice. Our session, The Business Outcomes of AI Marking and Feedback, is on Thursday 15 October, 12:00 to 13:00 Oslo time, on Teams.
+>
+> Registration is by invitation, and the link is below.
+>
+> [link]
+>
+> Would that time work for you?
+>
+> Best,
+> Dante Torbed
+> Eduface
 
-**Bel-opener**
-> Hi Karin, it's Dante from Eduface. I sent you a note last week about our session with Jisc and the Association for Learning Technology on AI assisted marking, on the 15th of October. With your work on CA2025 I thought it might interest you. Would you like to join? I can send the invite straight to your inbox.
+**4. Bellen:** geen nummer.
 
-**Twijfels:** het nummer komt uit een zoeksnippet en is niet zelf gezien. "How institutions mark that work with AI" is mijn brug. Die moet je goedkeuren.
+**Twijfels:** het citaat van Matsen staat in de vacature voor een nieuwe Provost for Education. Dat ligt mogelijk gevoelig voor een oud-provost, dus ik noem de vacature niet, alleen het citaat.
+
+---
+
+## 10. Bendik Samuelsen, Prorektor for Education, BI
+Onderzoek loopt (agent 3). Berichten volgen.
+
+---
+
+## Afgevallen
+- **Sue Hearsum** (Essex): niet meer te vinden.

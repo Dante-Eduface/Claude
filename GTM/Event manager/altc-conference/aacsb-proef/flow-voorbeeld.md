@@ -1,6 +1,6 @@
 # Flow-voorbeeld: één persoon met haakje, één zonder
 
-_Aangemaakt 2026-10-06. Status: wacht op Dante's oordeel. Na akkoord herschrijf ik de acht uit `berichten.md` volgens deze opbouw._
+_Aangemaakt 2026-10-06. **Vervangen door `berichten.md` versie 2** (zelfde dag). Hier stond 2a nog met een vraag om het e-mailadres en herhaalde 2b de reden uit het verzoek. Bewaard als tussenstap._
 
 **Webinar:** The Business Outcomes of AI Marking and Feedback · donderdag 15 oktober 2026 · 11:00 tot 12:00 UK-tijd · Teams
 **Geen partners noemen** (Jisc en ALT zijn niet zeker). Sociaal bewijs: "with several universities joining".
