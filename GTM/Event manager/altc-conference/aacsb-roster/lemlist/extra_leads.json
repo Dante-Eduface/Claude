@@ -1,4 +1,41 @@
 [
- {"first":"Aly","last":"Salama","company":"Northumbria University","domain":"northumbria.ac.uk","li":"https://www.linkedin.com/in/alysalama/","email":"aly.salama@northumbria.ac.uk","phone":"","src":["aacsb-roster/berichten/batch-10.md","a041"]},
- {"first":"Natalie","last":"Wilmot","company":"University of Lincoln","domain":"lincoln.ac.uk","li":"https://www.linkedin.com/in/nataliewilmot/","email":"","phone":"","src":["aacsb-roster/berichten/top-bambrick-wilmot.md","a069"]}
+ {
+  "first": "Aly",
+  "last": "Salama",
+  "company": "Northumbria University",
+  "domain": "northumbria.ac.uk",
+  "li": "https://www.linkedin.com/in/alysalama/",
+  "email": "aly.salama@northumbria.ac.uk",
+  "phone": "",
+  "src": [
+   "aacsb-roster/berichten/batch-10.md",
+   "a041"
+  ]
+ },
+ {
+  "first": "Natalie",
+  "last": "Wilmot",
+  "company": "University of Lincoln",
+  "domain": "lincoln.ac.uk",
+  "li": "https://www.linkedin.com/in/nataliewilmot/",
+  "email": "",
+  "phone": "",
+  "src": [
+   "aacsb-roster/berichten/top-bambrick-wilmot.md",
+   "a069"
+  ]
+ },
+ {
+  "first": "Kathryn",
+  "last": "Simpson",
+  "company": "Keele University",
+  "domain": "keele.ac.uk",
+  "li": "https://uk.linkedin.com/in/dr-kathryn-simpson-14b08881",
+  "email": "k.simpson@keele.ac.uk",
+  "phone": "",
+  "src": [
+   "aacsb-roster/berichten/batch-07.md",
+   "a020"
+  ]
+ }
 ]
