@@ -40,19 +40,19 @@ Dit kost meer tijd per persoon dan de oude batch-modus. Reken daarop, en zeg het
 
 Werk in blokken (grootte hangt af van hoeveel diepte elke persoon nodig heeft, forceer geen vast aantal). Rapporteer aan het eind van elk blok.
 
-## Huidige campagne (vanaf 17-09-2026): VK werkt licht, niet in diepte-modus
+## Event-uitnodigingen: diepte-modus, met een peiling ervoor
 
-**Geldt alleen voor de VK-markt, en alleen zolang `.claude/skills/outreach/SKILL.md` de kop "Huidige campagne" (ALT-webinar) heeft staan.** Besluit Dante, 17-09-2026: die campagne vraagt fors minder onderzoek dan de diepte-modus hierboven, dus moet hij ook fors minder kosten. Verdwijnt die kop uit de outreach-skill, dan vervalt deze lichte modus automatisch en geldt de diepte-modus weer voor de hele VK-wachtrij.
+**Vastgelegd 06-10-2026, op basis van de AACSB-proef.** Dante liet de keuze aan mij. Dit vervangt de lichte VK-modus van 17-09-2026. Die liet je stoppen bij een titel, en dat leverde geen bruikbaar haakje op.
 
-Reden: bij deze campagne is een rol op zichzelf al een geldig "waarom jij" (zie outreach-skill), en is de CTA overal gesloten. Er is dus geen toetsprogramma-sectie, rare-details-catalogus of getallen-overzicht nodig om een goed bericht te schrijven, dat kostte alleen maar Opus-tokens die agent 4 hier niet gebruikt.
+Geldt voor elke persoonlijke uitnodiging voor een event (nu: "The Business Outcomes of AI Marking and Feedback"), in elke markt.
 
-Voor de VK-wachtrij, zolang deze kop hierboven geldt:
-- **Rol en titel verifiëren blijft verplicht** (twee bronnen), dat draagt het hele "waarom jij" van deze campagne.
-- **Zoek naar 1, hooguit 2 losse citaten** die een concreet feit geven over hun beoordelings-, marking- of feedbackproces (een regel, een cijfer, een termijn), met bron en drager. Twee is beter dan één, dan heeft agent 4 apart materiaal voor mail 1 en de reminder. Eén is genoeg om te schrijven.
-- **Sla over**: het volledige `## Toetsprogramma` als aparte sectie (wat/hoeveel/wie kijkt na volledig uitgeschreven), `## Rare details`, `## Getallen`. Vind je die dingen toevallig terwijl je naar een citaat zoekt, mag je ze kort noteren, maar ga er niet gericht naar op zoek.
-- **Stopcriterium: rol bevestigd plus 1-2 citaten met bron en drager, dan stop je.** Dat is dichter bij de oude batch-modus dan bij de diepte-modus hierboven, met de merkbewaking (bron + drager per citaat) intact.
-- Levert een korte zoektocht (1-2 bronnen) niets specifieks op, lever dan **rol-alleen** aan. Bij deze campagne is dat al genoeg, agent 4 hoeft dan geen apart citaat te verwerken.
-- Omdat dit per persoon aanmerkelijk minder kost, mag het blok weer groter (15-25), zoals vóór de diepte-modus.
+1. **Eerst peilen, drie tot vijf zoekopdrachten.** Heeft deze persoon zelf iets online gezet? Denk aan een talk, paper, interview, essay, eigen post of een eigen zin op een profielpagina. Nee, dan lever je een **rol-alleen**-dossier en stop je. Agent 4 schrijft dan de versie zonder haakje. Zo kost iemand zonder online voetafdruk geen 25 pagina's (zie Daly in de proef).
+2. **Ja, dan diepte-modus.** Je loopt de hele ladder af, met een budget van ongeveer 25 pagina's.
+3. **Bij een geblokkeerde bron zoek je eerst de andere vindplaatsen.** Dat zijn het eventprogramma of de abstract, slides, een opname, posts van co-presentatoren, PDF's op een CDN, repository-API's (DSpace, Pure-activiteits-ID's via de staffpagina, ORCID, NVA) en regionale media. Pas daarna schrijf je "niet gevonden", met een lijst van waar je keek.
+4. **Lees de inhoud en niet de titel.** Een titel is een aanwijzing, geen haakje.
+5. **Lever minstens drie losse, verschillende observaties.** De reeks heeft vier stappen (verzoek, opvolgbericht, mail, belletje) en elke stap draagt een echt nieuw element. Dezelfde observatie in andere woorden telt niet. Menselijk materiaal dat iemand zelf publiek heeft neergezet telt mee als 2b. Geen gezondheid, privé of familie.
+6. **Bovenaan `## Citaten` zet je een lijst "Beste drie voor de reeks"**, elk met niveau.
+7. **Model: Opus.** Een vergelijking met Sonnet op dezelfde persoon (Finn, 06-10-2026) gaf een duidelijk zwakker resultaat. Sonnet kwam niet langs de 403, bevestigde het event niet, miste het beste haakje en gebruikte per persoon niet minder tokens. Besparen doe je met de peiling uit punt 1, niet met een kleiner model.
 
 ## Je wachtrij
 
