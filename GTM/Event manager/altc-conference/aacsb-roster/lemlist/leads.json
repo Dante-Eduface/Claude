@@ -134,5 +134,32 @@
    "Call_script": "Opening: \"Hi Qionglei, it's Dante from Eduface. I reached out earlier about our online session on the business outcomes of AI marking and feedback. You lead Contemporary Trends in Marketing at the moment. Can I ask, has AI changed how you assess that module?\"<br>Uitnodiging: \"That's really interesting, and it's partly why I'm calling. The session is on Thursday 15 October at 11. Would you like to join?\"<br>Bij ja: \"Great, I'll send the link to your Newcastle address straight after this.\"<br>Voicemail: \"Hi Qionglei, Dante from Eduface. Quick one about our online session on the business outcomes of AI marking and feedback, Thursday 15 October at 11 UK time. I've sent you the link, it'd be great to have you there.\""
   },
   "email": "qionglei.yu@ncl.ac.uk"
+ },
+ {
+  "firstName": "Aly",
+  "lastName": "Salama",
+  "companyName": "Northumbria University",
+  "companyDomain": "northumbria.ac.uk",
+  "linkedinUrl": "https://www.linkedin.com/in/alysalama/",
+  "customVariables": {
+   "linkedInConnectionRequest": "Hi Aly, I'm Dante from Eduface. I came across your chapter on reputation and student satisfaction at 142 UK universities. An accounting professor studying his own sector stood out. We're hosting an online session on the business outcomes of AI marking and feedback. Would you like a personal invite?",
+   "linkedInMessage": "Thanks for connecting, Aly. I also saw you chaired the Board of Examiners at Durham and have been an external examiner at a lot of universities. So you've seen marking from the side that checks the grades, and that's a view I'd really value in the room.\n\nThe session is on Thursday 15 October, 11:00 to 12:00 UK time, on Teams. Would you be able to make it? The link is here either way.\nhttps://events.teams.microsoft.com/event/4239b958-f045-4d0c-8367-96a44223b992@b817b3d1-ef29-4188-b513-db36a036f9b1?source=copyLinkOneEventsShareDialog",
+   "firstEmailSubject": "Accreditation and AI marking",
+   "firstEmail": "Hi Aly,<br><br>I sent you a LinkedIn request a few days ago, so here it is by email as well.<br><br>As Director of Accreditation you look after compliance with professional and regulatory standards, and sooner or later the question of how AI fits into assessment lands on that desk. That's the angle of our session, The Business Outcomes of AI Marking and Feedback. It's on Thursday 15 October, 11:00 to 12:00 UK time, on Teams.<br><br>Registration is by invitation, and the link is below.<br><br>https://events.teams.microsoft.com/event/4239b958-f045-4d0c-8367-96a44223b992@b817b3d1-ef29-4188-b513-db36a036f9b1?source=copyLinkOneEventsShareDialog<br><br>Would that time work for you?<br><br>Best,<br>Dante Torbed<br>Eduface",
+   "Call_script": "Opening: \"Hi Aly, it's Dante from Eduface. I reached out earlier about our online session on the business outcomes of AI marking and feedback. You look after accreditation at Newcastle Business School, so can I ask, has AI in assessment come up in that work yet?\"<br>Uitnodiging: \"That's partly why I'm calling. The session is on Thursday 15 October at 11. Would you like to join?\"<br>Bij ja: \"Great, I'll send the link to your Northumbria address straight after this call.\"<br>Voicemail: \"Hi Aly, Dante from Eduface. Quick one about our online session on the business outcomes of AI marking and feedback, Thursday 15 October at 11 UK time. I've sent you the link, it'd be great to have you there.\""
+  },
+  "email": "aly.salama@northumbria.ac.uk"
+ },
+ {
+  "firstName": "Natalie",
+  "lastName": "Wilmot",
+  "companyName": "University of Lincoln",
+  "companyDomain": "lincoln.ac.uk",
+  "linkedinUrl": "https://www.linkedin.com/in/nataliewilmot/",
+  "customVariables": {
+   "linkedInConnectionRequest": "Hi Natalie, I'm Dante from Eduface. As a Dutchman writing in English, I liked your point in The Conversation that being understood beats perfect grammar. We're hosting an online session on the business outcomes of AI marking and feedback. Would you like a personal invite?",
+   "linkedInMessage": "Thanks for connecting, Natalie. I also saw you worked in export sales across southern Europe and Latin America before academia, which isn't the usual route to leading a business school. Our session takes that same business angle on AI marking, what it means for an institution rather than for one marker.\n\nIt's on Thursday 15 October, 11:00 to 12:00 UK time, on Teams. Would you be able to make it? The link is here either way.\nhttps://events.teams.microsoft.com/event/4239b958-f045-4d0c-8367-96a44223b992@b817b3d1-ef29-4188-b513-db36a036f9b1?source=copyLinkOneEventsShareDialog",
+   "Call_script": "Opening: \"Hi Natalie, it's Dante from Eduface. I reached out earlier about our online session on the business outcomes of AI marking and feedback. I saw LIBS was reaccredited with the Small Business Charter last year, 19 out of 19. Can I ask, what made the biggest difference there?\"<br>Uitnodiging: \"Thanks, that's good to hear, and it's partly why I'm calling. The session is on Thursday 15 October at 11, with several universities joining. Would you like to join?\"<br>Niet haar ding: \"Fair enough. Is there someone in learning and teaching at LIBS you'd point me to instead?\"<br>Bij ja: \"Brilliant, what's the best email address to send the link to?\"<br>Voicemail: \"Hi Natalie, Dante from Eduface. Quick one about our online session on the business outcomes of AI marking and feedback, Thursday 15 October at 11 UK time. I'll send you the link on LinkedIn, it'd be great to have you or a colleague there.\""
+  }
  }
 ]

@@ -18,14 +18,14 @@ The session is on Thursday 15 October, 11:00 to 12:00 UK time, on Teams. Would y
 [link]
 
 **firstEmailSubject**
-Taking you at your word
+Accreditation and AI marking
 
 **firstEmail**
 Hi Aly,
 
 I sent you a LinkedIn request a few days ago, so here it is by email as well.
 
-Your staff page ends by saying you welcome discussions, so I'm taking you at your word. As Director of Accreditation you look after compliance with professional and regulatory standards, and sooner or later the question of how AI fits into assessment lands on that desk. That's the angle of our session, The Business Outcomes of AI Marking and Feedback. It's on Thursday 15 October, 11:00 to 12:00 UK time, on Teams.
+As Director of Accreditation you look after compliance with professional and regulatory standards, and sooner or later the question of how AI fits into assessment lands on that desk. That's the angle of our session, The Business Outcomes of AI Marking and Feedback. It's on Thursday 15 October, 11:00 to 12:00 UK time, on Teams.
 
 Registration is by invitation, and the link is below.
 
