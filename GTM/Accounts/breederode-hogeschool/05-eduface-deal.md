@@ -21,9 +21,9 @@ _Stand 09-09-2026. Bron: Close (lead_8sVUDLRJ6YRVHVD4c0pnmZ8WIoIkku6QnUMSm6aYC8c
 | 23-09-2026 | Testochtend op locatie, daarna 2 weken testperiode, daarna 2 weken itslearning-integratie |
 
 ## Implementatie (06-10-2026)
-- Licentieovereenkomst nog niet getekend. Planning start toch nu.
+- Licentieovereenkomst nog niet getekend. Irma akkoord op 02-10, zonder artikel 15.1; Jeroen stuurt de definitieve versie en neemt contact op met itslearning. Planning start nu.
 - **Dante is projecteigenaar** en loopt het contact met Irma zelf, niet meer via Jeroen.
-- Aanpak volgens advies Tjarko: lean gedeeld implementatieplan met acties, eigenaren en deadlines, herinnering 3 dagen voor elke deadline, wekelijkse update aan Irma of haar counterpart. Zie `transcripts/2026-10-06-tjarko-implementatieplan.md`.
+- Aanpak volgens advies Tjarko: lean gedeeld implementatieplan met acties, eigenaren en deadlines, herinnering 3 dagen voor elke deadline, wekelijkse update aan Irma of haar counterpart. Zie `transcripts/2026-10-06-tjarko-implementatieplan.md`. Concept: `implementatieplan.md`.
 - Eerste open taak: rollen in itslearning opschonen, zodat alleen managers het consistentie-dashboard zien.
 
 ## Afgesproken pad
