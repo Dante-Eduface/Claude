@@ -13,7 +13,7 @@ Particuliere hogeschool in Rotterdam, zorg en welzijn, deeltijd voor werkende pr
 - [05-eduface-deal.md](05-eduface-deal.md) — tijdlijn, MEDDPICC, succescriteria, prijs, open punten
 - [06-taal-en-haakjes.md](06-taal-en-haakjes.md) — hun vocabulaire en de haakjes met bron
 - [07-beloofde-features.md](07-beloofde-features.md) — alles wat we ze over de tool hebben verteld, met een inschatting of het al bestaat
-- [implementatieplan.html](implementatieplan.html) — bron van het implementatieplan (drie groepen, gedeeld met Irma, managers en docenten). Google Doc: https://docs.google.com/document/d/1D-WI7ZurKDYkjrXVC4gzRTZy_zomUik5c6o_x-s53hA/edit
+- [implementatieplan.html](implementatieplan.html) — bron van het implementatieplan (drie groepen, bedoeld voor Irma, managers en docenten, nog niet gedeeld). Google Doc: https://docs.google.com/document/d/1D-WI7ZurKDYkjrXVC4gzRTZy_zomUik5c6o_x-s53hA/edit
 - `transcripts/` — uitgeschreven gesprekken van 01-09 en 03-09 (Close Notetaker), plus advies Tjarko 06-10
 - `bronnen/` — de twee NVAO-visitatierapporten als PDF en als tekst
 - `raw/` — alle 106 pagina's van breederode.nl (WordPress REST-dump van 09-09-2026)
