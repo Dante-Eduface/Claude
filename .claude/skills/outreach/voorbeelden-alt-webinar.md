@@ -41,3 +41,10 @@ Later, bij de datumwijziging:
 - **De vraag is "Would you like a personal invite?"** Gesloten, laagdrempelig, en ja is het enige logische antwoord.
 - **Na een ja om het e-mailadres vragen.** De uitnodiging gaat per mail, en zo heb je het adres voor de reminder.
 - **Toon:** licht en vriendelijk, een 👍 in een vervolgbericht mag.
+
+---
+
+## Update 2026-10-06: titel vast, partners eruit
+- Titel: **The Business Outcomes of AI Marking and Feedback**.
+- **Jisc en ALT niet meer noemen**, want niet zeker. In de voorbeelden hierboven staan ze nog, omdat dat de berichten waren zoals ze toen verstuurd zijn. Neem dat deel niet over.
+- Opbouw met en zonder haakje, per stap uitgewerkt: `GTM/Event manager/altc-conference/aacsb-proef/flow-voorbeeld.md` (wacht op akkoord van Dante).

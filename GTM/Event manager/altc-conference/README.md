@@ -10,6 +10,8 @@ Contactpersoon ALT: naam nog aanvullen (partnerships/sponsoring, checkt bij haar
 - **Factuur en subsidie:** gevraagd of de webinar op de factuur op de eventdatum en -locatie kan staan (NL-subsidie voor fysieke aanwezigheid op internationale events). Zij ziet geen probleem, maar **moet dit nog bij haar CEO bevestigen**. Niet als zeker rekenen.
 
 ## Webinar, stand 2026-10-05
+- **Titel: The Business Outcomes of AI Marking and Feedback** (staat vast, Dante 06-10-2026).
+- **Partners niet noemen in outreach.** Of Jisc en ALT meedoen is niet zeker (Dante 06-10-2026).
 - **Datum: 15 oktober 2026, 11:00 UK-tijd** (verschoven van 29 september omdat ALT erbij kwam, zie Jeroens berichten van 16-09-2026). Valt op een donderdag, niet op de vrijdag uit de call van 11-09.
 - **Teams-eventlink:** https://events.teams.microsoft.com/event/4239b958-f045-4d0c-8367-96a44223b992@b817b3d1-ef29-4188-b513-db36a036f9b1?source=copyLinkOneEventsShareDialog
 - Uitnodigingen naar aangemelde LinkedIn-contacten zijn op 05-10-2026 verstuurd door Jeroen.

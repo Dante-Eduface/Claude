@@ -1,5 +1,7 @@
 # AACSB-proef: berichten voor het ALT/Jisc-webinar
 
+> **VEROUDERD, NIET VERSTUREN (06-10-2026).** Deze versie noemt Jisc en ALT, en dat mag niet meer. De nieuwe opbouw staat in `flow-voorbeeld.md`. Na akkoord herschrijf ik de acht hierop.
+
 _Aangemaakt 2026-10-05. Status: concept, wacht op Dante's oordeel._
 
 Tien mensen van de AACSB EMEA-roster (Amsterdam, 2022). Agent 3 deed het onderzoek (dossiers in `dossiers/`), agent 4 schreef de berichten. Kalibratie: `.claude/skills/outreach/voorbeelden-alt-webinar.md`.

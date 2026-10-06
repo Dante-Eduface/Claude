@@ -33,7 +33,9 @@ Dit is Dante's werk tot de Discovery-gate (`scope-discovery-gate`). Daarna hand-
 
 **Zolang deze kop hier staat, schrijf je geen productpitch maar een persoonlijke uitnodiging.** Besluit Jeroen, 17-09-2026. De onderzoeksmethode in de rest van dit bestand (Stap 1 t/m 4, de brontoets, de dragertoets, `haakje-zoeken.md`) blijft ongewijzigd: je zoekt nog steeds naar wat er in het dossier klopt en van henzelf komt. Wat verandert is het **doel** van het bericht en de **drie sjablonen** in Stap 5, die voor deze campagne door de onderstaande versies vervangen worden.
 
-**Het event.** Een online, invite-only sessie die Eduface organiseert met de Association for Learning Technology (ALT) en Jisc, over *the business outcomes of AI marking and feedback for institutions*. Verwacht rond de 60 deelnemers. **Noem het daarom nergens een kleine of intieme sessie en zeg nergens dat het "geen webinar" is** (dat ging op 17-09-2026 al een keer fout), dat is feitelijk onjuist en wordt afgestraft zodra iemand het doorheeft. De exclusiviteit zit in "invite-only" en "op uitnodiging, geen open inschrijving", niet in de omvang van de groep.
+**Het event.** Een online, invite-only sessie van Eduface. De titel staat vast: **The Business Outcomes of AI Marking and Feedback** (Dante, 06-10-2026). Donderdag 15 oktober 2026, 11:00 tot 12:00 UK-tijd, op Teams.
+
+**Noem Jisc en ALT niet in de berichten** (Dante, 06-10-2026). Dat ze meedoen is niet zeker. Het sociale bewijs is "with several universities joining", zoals in Jeroens berichten. Kalibratie, en wat je doet zonder haakje: `voorbeelden-alt-webinar.md`. Verwacht rond de 60 deelnemers. **Noem het daarom nergens een kleine of intieme sessie en zeg nergens dat het "geen webinar" is** (dat ging op 17-09-2026 al een keer fout), dat is feitelijk onjuist en wordt afgestraft zodra iemand het doorheeft. De exclusiviteit zit in "invite-only" en "op uitnodiging, geen open inschrijving", niet in de omvang van de groep.
 
 **Lemlist-campagnenaam: "ALT Webinar".** Agent 5 (`lemlist-import`) gebruikt deze naam voor de campagne in het VK-marktprofiel, niet een andere spelling.
 
@@ -46,7 +48,7 @@ Dit is Dante's werk tot de Discovery-gate (`scope-discovery-gate`). Daarna hand-
 ### Sjabloon connectieverzoek (max 300 tekens)
 ```
 1. Hi [voornaam], a personal invite.
-2. We're hosting an online, invite-only session with ALT and Jisc on the business outcomes of AI marking and feedback for institutions.
+2. We're hosting an online session on the business outcomes of AI marking and feedback, with several universities joining.
 3. [waarom jij: hun rol plus, als het er is, het concrete detail uit het dossier]
 4. [gesloten vraag: Worth the details? / Can I send you the details?]
 ```
@@ -55,7 +57,7 @@ Dit is Dante's werk tot de Discovery-gate (`scope-discovery-gate`). Daarna hand-
 ```
 Hi [voornaam],
 
-We're hosting an online, invite-only session with the Association for Learning Technology and Jisc on the business outcomes of AI marking and feedback for institutions, [wat het concreet betekent: kosten, consistentie, risico op institutioneel niveau, niet de losse beoordelaar].
+On 15 October we're hosting an online session, The Business Outcomes of AI Marking and Feedback, [wat het concreet betekent: kosten, consistentie, risico op institutioneel niveau, niet de losse beoordelaar].
 
 I'm inviting you personally. [rol-redenering, verrijkt met het concrete dossierdetail als dat er is].
 
