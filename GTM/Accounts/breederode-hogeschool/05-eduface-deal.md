@@ -25,6 +25,7 @@ _Stand 09-09-2026. Bron: Close (lead_8sVUDLRJ6YRVHVD4c0pnmZ8WIoIkku6QnUMSm6aYC8c
 - **Dante is projecteigenaar** en loopt het contact met Irma zelf, niet meer via Jeroen.
 - Aanpak volgens advies Tjarko: lean gedeeld implementatieplan met acties, eigenaren en deadlines, herinnering 3 dagen voor elke deadline, wekelijkse update aan Irma of haar counterpart. Zie `transcripts/2026-10-06-tjarko-implementatieplan.md`. Concept: `implementatieplan.md`.
 - Eerste open taak: rollen in itslearning opschonen, zodat alleen managers het consistentie-dashboard zien.
+- Calls 06-10: Irma laat eind deze week weten of Marina het implementatieplan mag invullen. Maud zoekt met IT de itslearning-accountmanager. Met Marina staat woensdag 07-10, 13:00-14:00, een meeting om het plan in te vullen.
 
 ## Afgesproken pad
 1. Twee weken testen op bestaande, al nagekeken opdrachten.

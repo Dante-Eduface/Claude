@@ -20,7 +20,7 @@ _Bijgewerkt 09-09-2026. Mailadressen uit de Close-thread, functietitels uit hun 
 | **Kas van Kruining** | Onderwijsmanager opleiding POG (Praktijkopleider Gezondheidszorg & Welzijn) | — | **Kritische stem**, mogelijk tegenstander. Betoogde in de demo dat AI niet beter is dan mensen, argument: hallucineren. Levert wel input voor de test. |
 | **Selma de Nijs** | Docent/beoordelaar POH-6 | — | Levert beoordeelde, geanonimiseerde CAT-opdrachten aan. |
 | **Carina Wind** | Onbekend, genoemd als iemand die Ivonne zou bijpraten | — | Nog te plaatsen. |
-| **Maud** | Vermoedelijk executive assistant | — | Was bij de demo. |
+| **Maud Sitsen** | Vermoedelijk executive assistant | 06 20417962 | Was bij de demo. Zoekt met IT uit wie hun accountmanager bij itslearning was (call 06-10-2026). |
 | **Willemien (Bos?)** en **Denise** | Huisartsenzorg, achtervang voor Marina | huisartsenzorg@breederode.nl | Willemien zei tijdens de demo inhoudelijk niets. |
 
 ## Structuur
