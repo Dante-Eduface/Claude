@@ -3,35 +3,29 @@
 <title>Banner webinar 796x265</title>
 <style>
   @font-face{font-family:"League Spartan";font-weight:700;src:url("../../../../Design/Merk/fonts/LeagueSpartan-Bold.ttf")}
-  @font-face{font-family:"Inter";font-weight:100 900;src:url("../../../../Design/Merk/fonts/Inter-Regular.ttf")}
-  :root{
-    --navy:#002333; --green:#00e075; --white:#fff;
-    --soft:rgba(255,255,255,.62); --line:rgba(255,255,255,.12);
-  }
+  :root{--navy:#002333;--green:#00e075;--white:#fff;--ink-500:#5b7480;--line:rgba(255,255,255,.12)}
   *{margin:0;padding:0;box-sizing:border-box}
   html,body{width:796px;height:265px;background:var(--navy);overflow:hidden}
-  .banner{width:796px;height:265px;background:var(--navy);color:var(--white);
-    font-family:Inter,sans-serif;position:relative;padding:32px}
-  .logo{display:block;height:28px;width:auto}
-  .main{position:absolute;left:32px;top:80px;width:468px}
-  h1{font-family:"League Spartan",sans-serif;font-weight:700;font-size:42px;line-height:1.05;
-     letter-spacing:-.02em;text-wrap:balance}
-  h1 .hl{color:var(--green)}
-  .who{position:absolute;left:32px;bottom:32px;font-size:14px;line-height:1.4;color:var(--soft)}
-  .split{position:absolute;left:520px;top:32px;bottom:32px;width:244px;padding-left:32px;
-     border-left:1px solid var(--line);display:flex;flex-direction:column;justify-content:flex-end;gap:16px}
-  .split p{font-size:14px;line-height:1.4;color:var(--soft)}
-  .split ul{list-style:none;display:flex;flex-direction:column;gap:12px}
-  .split li{font-family:"League Spartan",sans-serif;font-weight:700;font-size:22px;line-height:1.05;letter-spacing:-.015em}
+  .banner{width:796px;height:265px;background:var(--navy);color:var(--white);position:relative}
+  .panel{position:absolute;top:32px;width:350px}
+  .panel.l{left:32px} .panel.r{left:414px}
+  .panel h2{font-family:"League Spartan",sans-serif;font-weight:700;font-size:22px;line-height:24px;
+     letter-spacing:-.015em;margin-bottom:16px}
+  .panel svg{display:block}
+  .divider{position:absolute;left:398px;top:32px;height:152px;border-left:1px solid var(--line)}
+  .logo{position:absolute;left:32px;bottom:32px;height:20px;width:auto}
 </style></head>
 <body>
 <div class="banner">
+  <div class="panel l"><h2>Consistency</h2>
+    <svg width="342" height="112" viewBox="0 0 342 112" role="img" aria-label="Many different marks converge on one standard">
+      <path d="M4,8 C150,8 220,56 334,56" fill="none" stroke="#5b7480" stroke-width="2"/><path d="M4,22 C150,22 220,56 334,56" fill="none" stroke="#5b7480" stroke-width="2"/><path d="M4,40 C150,40 220,56 334,56" fill="none" stroke="#5b7480" stroke-width="2"/><path d="M4,62 C150,62 220,56 334,56" fill="none" stroke="#5b7480" stroke-width="2"/><path d="M4,74 C150,74 220,56 334,56" fill="none" stroke="#5b7480" stroke-width="2"/><path d="M4,92 C150,92 220,56 334,56" fill="none" stroke="#5b7480" stroke-width="2"/><path d="M4,104 C150,104 220,56 334,56" fill="none" stroke="#5b7480" stroke-width="2"/><circle cx="4" cy="8" r="4" fill="#fff"/><circle cx="4" cy="22" r="4" fill="#fff"/><circle cx="4" cy="40" r="4" fill="#fff"/><circle cx="4" cy="62" r="4" fill="#fff"/><circle cx="4" cy="74" r="4" fill="#fff"/><circle cx="4" cy="92" r="4" fill="#fff"/><circle cx="4" cy="104" r="4" fill="#fff"/><circle cx="334" cy="56" r="8" fill="#00e075"/>
+    </svg></div>
+  <div class="divider"></div>
+  <div class="panel r"><h2>Operational efficiency</h2>
+    <svg width="342" height="112" viewBox="0 0 342 112" role="img" aria-label="The same batch of marking takes a fraction of the time">
+      <rect x="1" y="5" width="340" height="22" rx="11" fill="none" stroke="#5b7480" stroke-width="2" stroke-dasharray="4 4"/><rect x="0" y="4" width="121" height="24" rx="12" fill="#fff"/><rect x="1" y="45" width="340" height="22" rx="11" fill="none" stroke="#5b7480" stroke-width="2" stroke-dasharray="4 4"/><rect x="0" y="44" width="121" height="24" rx="12" fill="#fff"/><rect x="1" y="85" width="340" height="22" rx="11" fill="none" stroke="#5b7480" stroke-width="2" stroke-dasharray="4 4"/><rect x="0" y="84" width="121" height="24" rx="12" fill="#fff"/><rect x="128" y="0" width="4" height="112" rx="2" fill="#00e075"/>
+    </svg></div>
   <img class="logo" src="logo_white_crop.png" alt="Eduface">
-  <div class="main"><h1>The <span class="hl">business outcomes</span> of AI marking and feedback</h1></div>
-  <div class="who">Webinar</div>
-  <div class="split">
-    <p>Two breakout rooms</p>
-    <ul><li>Consistency</li><li>Operational efficiency</li></ul>
-  </div>
 </div>
 </body></html>
