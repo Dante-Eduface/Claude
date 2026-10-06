@@ -20,6 +20,12 @@ _Stand 09-09-2026. Bron: Close (lead_8sVUDLRJ6YRVHVD4c0pnmZ8WIoIkku6QnUMSm6aYC8c
 | **09-09-2026 14:00** | **"Financiële plaatje in kaart brengen"**, met Irma, georganiseerd door Jeroen |
 | 23-09-2026 | Testochtend op locatie, daarna 2 weken testperiode, daarna 2 weken itslearning-integratie |
 
+## Implementatie (06-10-2026)
+- Licentieovereenkomst nog niet getekend. Planning start toch nu.
+- **Dante is projecteigenaar** en loopt het contact met Irma zelf, niet meer via Jeroen.
+- Aanpak volgens advies Tjarko: lean gedeeld implementatieplan met acties, eigenaren en deadlines, herinnering 3 dagen voor elke deadline, wekelijkse update aan Irma of haar counterpart. Zie `transcripts/2026-10-06-tjarko-implementatieplan.md`.
+- Eerste open taak: rollen in itslearning opschonen, zodat alleen managers het consistentie-dashboard zien.
+
 ## Afgesproken pad
 1. Twee weken testen op bestaande, al nagekeken opdrachten.
 2. Daarna twee weken integratie met itslearning (LTI).
