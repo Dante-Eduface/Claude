@@ -1,6 +1,6 @@
 # De Eduface-deal
 
-_Stand 09-09-2026. Bron: Close (lead_8sVUDLRJ6YRVHVD4c0pnmZ8WIoIkku6QnUMSm6aYC8c), 57 activiteiten._
+_Stand 09-09-2026. Bron: Close (lead_8sVUDLRJ6YRVHVD4c0pnmZ8WIoIkku6QnUMSm6aYC8c), 57 activiteiten. Aangevuld 07-10-2026 met scope en werkafspraken, uit de chat met Dante._
 
 - **Lead status:** Sales proces (was Prospect tot 03-09-2026)
 - **Opportunity:** Discovery, active, **€20.000 one-time, 50% confidence** (handmatig gezet op verzoek van Dante, 31-08-2026, waarde nog een aanname)
@@ -24,6 +24,19 @@ _Stand 09-09-2026. Bron: Close (lead_8sVUDLRJ6YRVHVD4c0pnmZ8WIoIkku6QnUMSm6aYC8c
 1. Twee weken testen op bestaande, al nagekeken opdrachten.
 2. Daarna twee weken integratie met itslearning (LTI).
 3. Pilot-scope, looptijd en contract worden met Marcel (Calder) afgestemd.
+
+## Scope tot de go-live (07-10-2026)
+Vastgesteld door Jeroen en Irma: **135 cursisten**.
+- Masterthesis Kinderfysiotherapie en Manuele Therapie: 24
+- CAT-opdrachten, beide masters: 31
+- POH-CAT: 80
+
+Loopt dit goed, dan kunnen er daarna andere vakken bij.
+
+## Werkafspraken implementatie (07-10-2026)
+- Wijzigingen aan beoordelingsformulieren lopen altijd via de programmamanager van dat vak.
+- Herkansingen krijgen een aparte map, ingericht met de programmamanagers en onderwijsondersteuning.
+- Rollen in itslearning: Dante neemt daarover later contact op met Esmee (Planning).
 
 ## Succescriteria (opgehaald bij Marloes en Ivonne, bevestigd 03-09)
 - **Accuraatheid boven 92%** van het model tegenover het docentcijfer.
@@ -55,6 +68,6 @@ Jeroen noemde als thema's ook: beoordeling van de AI-feedback door studenten en 
 ## Open punten
 - Metrics kwantificeren: hoeveel opdrachten per jaar, hoeveel uur nakijken, hoeveel examinatoren.
 - Hoe een visitatiepanel (AeQui) naar het gebruik van onze tool kijkt. Zelf uitzoeken, niet aan hen vragen alsof wij het niet weten.
-- Wat precies in de pilotscope komt: welke opleidingen, hoe lang, welk resultaat telt als succes. Dat is Marcels vraag.
+- Pilotscope: de opleidingen liggen vast (zie Scope tot de go-live, 07-10-2026). Looptijd en wat voor Marcel als succes telt staan hier nog niet.
 - Marlies van Hell en de hbo-v doen nu niet mee. Terugkomen zodra de nieuwe docent onderzoeksvaardigheden is ingewerkt.
 - Vraag van Ivonne (08-09): waar wordt op gekalibreerd, is het een gesloten systeem, en waar draait het. Zie het antwoord in de sessie van 09-09.

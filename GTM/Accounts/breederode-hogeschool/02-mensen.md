@@ -1,6 +1,6 @@
 # Mensen bij Breederode
 
-_Bijgewerkt 09-09-2026. Mailadressen uit de Close-thread, functietitels uit hun eigen handtekeningen._
+_Bijgewerkt 07-10-2026. Mailadressen uit de Close-thread, functietitels uit hun eigen handtekeningen._
 
 ## Beslissers
 | Naam | Rol | Mail | Positie in de deal |
@@ -19,6 +19,7 @@ _Bijgewerkt 09-09-2026. Mailadressen uit de Close-thread, functietitels uit hun 
 | **Marlies van Hell MSc, RN** | Programmamanager/docent hbo-v (ma, di, do) | m.vanhell@breederode.nl · 06 39113945 | Gelooft in tijdbesparing, waarschijnlijk de grootste opleiding. **Doet nu niet mee**: geen docentcapaciteit, de docent onderzoeksvaardigheden gaat in december met pensioen en haar opvolger is net gestart. Wil wel op de hoogte blijven. Gebruikt al **TrainTool** in het curriculum. |
 | **Kas van Kruining** | Onderwijsmanager opleiding POG (Praktijkopleider Gezondheidszorg & Welzijn) | — | **Kritische stem**, mogelijk tegenstander. Betoogde in de demo dat AI niet beter is dan mensen, argument: hallucineren. Levert wel input voor de test. |
 | **Selma de Nijs** | Docent/beoordelaar POH-6 | — | Levert beoordeelde, geanonimiseerde CAT-opdrachten aan. |
+| **Esmee** | Planning | — | Aanspreekpunt voor de rollen in itslearning. Dante neemt later contact op (07-10-2026). |
 | **Carina Wind** | Onbekend, genoemd als iemand die Ivonne zou bijpraten | — | Nog te plaatsen. |
 | **Maud** | Vermoedelijk executive assistant | — | Was bij de demo. |
 | **Willemien (Bos?)** en **Denise** | Huisartsenzorg, achtervang voor Marina | huisartsenzorg@breederode.nl | Willemien zei tijdens de demo inhoudelijk niets. |
