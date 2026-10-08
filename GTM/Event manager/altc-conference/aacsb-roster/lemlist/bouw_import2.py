@@ -22,7 +22,8 @@ for fp in files:
         if not m or "AFGEVALLEN" in sec[:300]: skip.append(head[:60]); continue
         name = m.group(2).strip(); org = m.group(3).split(",")[-1].strip()
         if name.lower() in gedaan: skip.append(name + " (al in campagne)"); continue
-        li = re.search(r"https?://[\w.]*linkedin\.com/in/[^\s)·]+", meta)
+        liseg = meta.split("·")[0]
+        li = None if re.search(r"(?i)niet bevestigd|kandidaat|niet gevonden", liseg) else re.search(r"https?://[\w.]*linkedin\.com/in/[^\s)·]+", liseg)
         segs = [x.strip() for x in meta.split("·")]
         emseg = next((x for x in segs if "@" in x), "")
         em = None if re.search(r"(?i)geen|alleen|niet", emseg.split("@")[0]) else re.search(r"[\w.+-]+@[\w-]+(?:\.[\w-]+)+", emseg)
