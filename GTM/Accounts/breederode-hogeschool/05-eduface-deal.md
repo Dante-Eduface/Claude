@@ -27,6 +27,17 @@ _Stand 09-09-2026. Bron: Close (lead_8sVUDLRJ6YRVHVD4c0pnmZ8WIoIkku6QnUMSm6aYC8c
 - Eerste open taak: rollen in itslearning opschonen, zodat alleen managers het consistentie-dashboard zien.
 - Calls 06-10: Irma laat eind deze week weten of Marina het implementatieplan mag invullen. Maud zoekt met IT de itslearning-accountmanager. Met Marina staat woensdag 07-10, 13:00-14:00, een meeting om het plan in te vullen.
 
+## Implementatie, stand 08-10-2026
+- Contract getekend (Marina, mail 08-10). Opportunity in Close op Rollout (07-10).
+- Scope tot go-live, vastgesteld door Jeroen en Irma: 135 cursisten. Masterthesis MKF + MMT 24, CAT beide masters 31, POH-6 CAT 80.
+- Planning uit meeting Marina 07-10: testomgeving itslearning week van 12 okt, koppeling klaar 23 okt, vakken synchroniseren 28 okt, training 2-6 nov, verfijnen 9-13 nov, go-live 18 nov (niet 16, Irma terug van Aruba). Kick-off van 15 okt vervalt.
+- Vaste afspraken: beoordelingsformulieren staan vast, wijzigen alleen via de programmamanager, en elke groep krijgt dezelfde versie. Herkansingen in een aparte map.
+- Wens Marina/Kas: aantoonbaar maken dat docenten Eduface-feedback geopend en verwerkt hebben, eventueel met een waarschuwing. Staat niet in de productdoc, dus als wens behandelen.
+- Doelbijstelling Marina: 4 van 5 sterren in plaats van 3,5. "Vaste aanstelling" klopt niet voor huisartsenzorg, daar beoordelen ook zzp'ers actief.
+- Extra risico's van Marina: directie bij kostenvragen, zzp-docenten die vergoeding willen voor extra werk, IT in het algemeen.
+- Startmail: van Dante, Irma in CC, aan iedereen van demo en testdag, met het plan erbij en de melding dat 15 okt vervalt. Pas na akkoord Marina.
+- Volgende: maandag 12 okt 12:30, formeel akkoord op het plan.
+
 ## Afgesproken pad
 1. Twee weken testen op bestaande, al nagekeken opdrachten.
 2. Daarna twee weken integratie met itslearning (LTI).

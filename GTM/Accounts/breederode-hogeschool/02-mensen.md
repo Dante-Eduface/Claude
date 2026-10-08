@@ -1,6 +1,6 @@
 # Mensen bij Breederode
 
-_Bijgewerkt 09-09-2026. Mailadressen uit de Close-thread, functietitels uit hun eigen handtekeningen._
+_Bijgewerkt 08-10-2026 (implementatie). Eerder 09-09-2026. Mailadressen uit de Close-thread, functietitels uit hun eigen handtekeningen._
 
 ## Beslissers
 | Naam | Rol | Mail | Positie in de deal |
@@ -31,3 +31,20 @@ _Bijgewerkt 09-09-2026. Mailadressen uit de Close-thread, functietitels uit hun 
 
 ## Wie je niet moet vergeten
 Visitaties worden uitgevoerd door tussenpartijen (bij hen **AeQui**). Die partijen zijn geen klant, maar hun oordeel over onze tool telt intern zwaar. Uit de discovery: vragen hoe zo'n panel onze tool zou beoordelen.
+
+## Implementatie (uit meeting Marina 07-10-2026 en mails 07/08-10)
+| Naam | Rol in de implementatie | Contact |
+|---|---|---|
+| **Marina Vinken-Hol** | Coördinator implementatie, Dante's eerste aanspreekpunt. Manager Opleidingen Huisartsenzorg (POH, POH ouderen, POH GGZ, praktijkmanager, case management). Heeft ~2 dagen totaal voor het project. Afwezig op vrijdag, en 21-25 oktober | m.vinken@breederode.nl |
+| **Jochem van Schalkwijk** | Aanspreekpunt manuele therapie (programmamanager); Marloes zit vooral op de wetenschappelijke leerlijn | j.vanschalkwijk@breederode.nl |
+| **Sanne Toonen** | Aanspreekpunt kinderfysiotherapie | s.toonen@breederode.nl |
+| **Willemien Bos** en **Denise Tompson** | Huisartsenzorg; door Marina gevraagd herkansingsmappen in te richten en beoordelende docenten door te geven | w.bos@breederode.nl, d.tompson@breederode.nl |
+| **Kas** en **Selma** | Beoordelen de POH-CAT en mogen het beoordelingsformulier verfijnen, altijd in overleg met de programmamanager. De POH-CAT heeft meer beoordelaars dan alleen zij | — |
+| **Maud Sitsen** | Manager Operations. Eerste aanspreekpunt voor itslearning, maar regelt geen koppelingen | 06 20417962 |
+| **Esmee** | Planning. Kent rollen toe in itslearning en weet welke docenten bij welk vak horen | adres onzeker, in de meeting verstaan als "blending@breederode.nl" |
+| **Heidi** en **Puck** | Onderwijsondersteuning; richten met de programmamanagers aparte mappen voor herkansingen in | — |
+| **Kevin Coorevits** | IT, Calder Holding. Ontvangt de verwerkersovereenkomst | k.coorevits@calderholding.nl |
+| **Mary** | De onderwijskundige die bij de eerste demo was | — |
+
+- Irma is ongeveer 5 tot 14 november afwezig (Aruba). Go-live niet op 16 november, liever 18 november.
+- Factuur: ter attentie van Irma, naar het factuuradres van Breederode (verstaan als facturen@breederode.nl, nog bevestigen).
