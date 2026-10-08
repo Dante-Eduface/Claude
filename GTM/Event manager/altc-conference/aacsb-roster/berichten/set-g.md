@@ -281,8 +281,8 @@ I'd genuinely love to hear your take on the risk side of it afterwards.
 ## a046 M.N. Ravishankar, Dean and Head of School, Queen's Business School (Queen's University Belfast)
 LinkedIn: niet gevonden · e-mail: mn.ravishankar@qub.ac.uk · telefoon: +44 (0)28 9097 4837
 
-**linkedInConnectionRequest** (282)
-Hi Professor Ravishankar, I read your alumni newsletter foreword. Only the fifth institution on the island of Ireland with triple accreditation is quite the milestone. At Eduface we're hosting an online session on the business outcomes of AI marking and feedback. Worth the details?
+**linkedInConnectionRequest** (297)
+Hi Professor Ravishankar, I read your alumni newsletter foreword. Only the fifth institution on the island of Ireland with triple accreditation is quite the milestone. At Eduface we're hosting an online session on the business outcomes of AI marking and feedback. Would you like a personal invite?
 
 **linkedInMessage**
 Thanks for connecting, Professor Ravishankar. I also came across the title of your EGOS paper on the control-autonomy paradox in AI safety. That tension between control and autonomy is pretty much what institutions run into with AI in marking, so I'd really value your view in the room.
