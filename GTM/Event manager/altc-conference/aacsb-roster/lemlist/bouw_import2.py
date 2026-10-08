@@ -18,6 +18,7 @@ for fp in files:
     txt = open(fp, encoding="utf-8").read()
     for sec in re.split(r"(?m)^## ", txt)[1:]:
         head = sec.split("\n")[0]; meta = sec.split("\n")[1] if "\n" in sec else ""
+        head = re.sub(r"\s*\((?:Nederlands|Engels|Dutch|English)[^)]*\)\s*$", "", head)
         m = re.match(r"(a\d{3}\s+)?([^,]+),(.*)", head)
         if not m or "AFGEVALLEN" in sec[:300]: skip.append(head[:60]); continue
         name = m.group(2).strip(); org = m.group(3).split(",")[-1].strip()

@@ -1,20 +1,26 @@
 # Frank Buskermolen
 
-_Batch 01, agent 3, 2026-10-06. Event: "The Business Outcomes of AI Marking and Feedback" (15-10-2026). AACSB EMEA 2022._
+_Herkansing 2026-10-08, agent 3: **VERTROKKEN** bij HU (mei 2025). Eerdere versie: batch 01, 2026-10-06. Event: "The Business Outcomes of AI Marking and Feedback" (15-10-2026). AACSB EMEA 2022._
 
 | | |
 |---|---|
 | Naam | Frank Buskermolen |
 | Functie | Directeur Instituut voor Communicatie (IvC), Hogeschool Utrecht. In jan en feb 2024 ook interim-directeur van het Institute for International Business Studies (IIBS) |
 | Organisatie | Hogeschool Utrecht (bekostigd) |
-| Status | **niet geverifieerd voor 2025-2026.** Laatste bron: Trajectum, 14-02-2024. Sinds 17-04-2024 heeft IIBS een vaste directeur (Martine Overdijk, kop Trajectum). Of hij nog directeur IvC is, kon ik niet vaststellen |
-| Uitkomst | **ROL-ALLEEN.** Peiling: alleen citaten in de hogeschoolkrant Trajectum, geen eigen talk, paper, post of profieltekst gevonden. Peiling onvolledig, zie Onzekerheden |
-| LinkedIn | niet gevonden (nl.linkedin.com/in/frankbuskermolen en /frank-buskermolen geven 999, dus onbekend of ze bestaan) |
+| Status | **VERTROKKEN.** Bron 1: Trajectum 18-03-2025, "Frank Zuijdam is per 1 april 2025 benoemd tot directeur van het Instituut voor Communicatie en Gebarentaal (ICG)". Bron 2: zijn eigen LinkedIn-post (snippet): "Na ruim 10 jaar neem ik als instituutsdirecteur afscheid van de boeiende Hogeschool Utrecht, met het bereiken van een zekere leeftijd in mei", opvolger Frank Zuijdam. Nu: "Na de zomer blijf ik in een andere rol en een ander ritme actief voor het onderwijs, als adviseur/trainer", vooral leiderschap, MT-begeleiding en strategie |
+| Uitkomst | **AFVALLEN als HU-contact.** Hij werkt niet meer bij een instelling. Als zelfstandig adviseur/trainer buiten de doelgroep van deze uitnodiging. Eerdere uitkomst: ROL-ALLEEN. Peiling: alleen citaten in de hogeschoolkrant Trajectum, geen eigen talk, paper, post of profieltekst gevonden. Peiling onvolledig, zie Onzekerheden |
+| LinkedIn | niet bevestigd. Twee kandidaten (zoeken 2026-10-08): linkedin.com/in/frankbuskermolen (titel "Frank Buskermolen - MILLS Development") en linkedin.com/in/frank-buskermolen-647258b (titel "Frank Buskermolen - De Haagse Hogeschool"). Welke van hem is, niet vast te stellen; de afscheidspost hoort bij een van beide |
 | E-mail | niet gevonden (hu.nl-zoeken rendert met JavaScript, geen persoonspagina) |
 | Telefoon | niet gevonden |
 | Close | lead "Hogeschool Utrecht", status New lead. Mail "Feedback consistentie bij Hogeschool Utrecht" van Dante aan José Akkermans (TeachLab) en Renée Filius (Director of Education, Research and Student Affairs) op 27-03-2026, geen reactie vastgelegd. Ivo Schürmann (instituutssecretaris) schreef zich in voor het HHS-webinar (uitgesteld 22-06-2026). Geen deal. Buskermolen staat niet in Close. |
 
 ## Bronnen
+
+Herkansing 2026-10-08
+- https://trajectum.hu.nl/frank-zuijdam-directeur-instituut-voor-communicatie-en-gebarentaal/ (via de WordPress-API gelezen, 2025-03-18).
+- Twee zoekopdrachten op linkedin.com: zijn afscheidspost (alleen snippet, jaartal niet zichtbaar; mei 2025 afgeleid uit de Trajectum-benoeming per 1 april 2025).
+
+Eerdere ronde
 
 Primair (hogeschoolkrant, via de WordPress-API van trajectum.hu.nl, gelezen 2026-10-06)
 - https://trajectum.hu.nl/plan-voor-oprichting-nieuw-internationaal-instituut/ (19-06-2023)
@@ -72,7 +78,8 @@ Geprobeerd, niets
 
 ## Onzekerheden
 
-- **Werkt hij er nog?** Niet hard te maken. Er zijn geen bronnen na feb 2024 en ik heb geen LinkedIn. Dante, kun je zijn LinkedIn openen?
+- **Opgelost:** hij is weg bij HU (mei 2025). Jaartal van de afscheidspost is afgeleid, niet gezien.
+- Of hij nu (ook) iets bij De Haagse Hogeschool doet: onbekend. Close kent een HHS-relatie (webinar), dus als Dante hem toch wil benaderen, eerst checken.
 - **Peiling onvolledig:** het gedeelde WebSearch-budget was na drie zoekopdrachten op. Een eigen post of talk kan bestaan zonder dat ik hem zag.
 - Geen e-mail. Raad het patroon niet.
 - BKE-citaat: de last ligt bij de beoordelaar, maar het zijn niet zijn woorden en de zorg werd later afgezwakt. Niet als zijn standpunt brengen.

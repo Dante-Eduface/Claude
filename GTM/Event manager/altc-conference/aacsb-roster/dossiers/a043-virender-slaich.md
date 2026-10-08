@@ -1,14 +1,16 @@
 # Virender Slaich
 
+_Herkansing 2026-10-08, agent 3: nog steeds niet te vinden. Gestopt volgens de opdracht._
+
 - **Naam:** Virender Slaich
 - **Huidige functie:** niet gevonden
 - **Organisatie:** Nottingham Business School, Nottingham Trent University (volgens de roster en de NTU-repository, laatste record 2018)
 - **Status:** NIET GEVERIFIEERD. Geen bron uit 2019 of later gevonden. De NTU-repository koppelt hem aan "Schools > Nottingham Business School", maar de jongste item is van 2018; ORCID heeft geen dienstverband
-- **LinkedIn:** niet gevonden
+- **LinkedIn:** niet gevonden (zoekopdracht op linkedin.com, 2026-10-08: geen treffer)
 - **E-mail:** niet gevonden (NTU-staffpagina's geven 403; niet gegokt)
 - **Telefoon:** niet gevonden
 - **AACSB EMEA:** 2022 en 2023
-- **Close:** geen lead op "Nottingham Trent", "Nottingham" of ntu.ac.uk (gecheckt 2026-10-06)
+- **Close:** geen lead op "Nottingham Trent", "Nottingham" of ntu.ac.uk (gecheckt 2026-10-06, niet opnieuw)
 - **Peiling:** ja, maar alleen titels. Vier conferentiebijdragen 2015-2018, waarvan twee op AACSB EMEA. Geen abstract, slides of opname gevonden. Behandeld als ROL-ALLEEN tot status en inhoud hard zijn
 
 ## Bronnen
@@ -20,6 +22,7 @@ Primair
 - AACSB EMEA 2022-agenda via de API (https://www.aacsb.edu/api/event-detail-agenda-page/load-agenda?contextItemId=fd98c272-d84e-452d-9239-320760a1278e, gelezen 2026-10-06). Zijn naam staat er niet in.
 
 Geprobeerd, niets of geblokkeerd
+- 2026-10-08: "Virender Slaich Nottingham" beperkt tot linkedin.com: geen treffer. "Slaich" + Nottingham Business School: geen treffer. OpenAlex: dagbudget op.
 - Twee zoekopdrachten op naam (met en zonder NTU, met varianten Vic/Vir): niets over hem.
 - NTU-staffpagina: NTU geeft 403 op curl en WebFetch (zie a042).
 - Daarna was het zoekbudget van de sessie op: geen verdere zoektocht naar abstracts, slides of LinkedIn.
