@@ -1,5 +1,10 @@
 # Schrijfopdracht agent 4: AACSB-roster (UK en NL)
 
+> **WIJZIGING 08-10-2026 (Dante), gaat voor alles hieronder:**
+> 1. **Geen afsluiting in de mail.** Geen "Best, Dante Torbed, Eduface" en geen andere groet met naam. De handtekening zit in Lemlist. De mail eindigt op de vraag.
+> 2. **Geen afzendernaam, nergens.** Lemlist verdeelt de leads over Dante en Jeroen, dus een lead kan vanaf Jeroens account komen. Dus niet "I'm Dante from Eduface", maar Eduface in de zin verwerken, zoals "At Eduface we're hosting an online session on...". In het belscript: "this is [naam] from Eduface".
+> 3. De limiet is 40 verzoeken per dag (twee accounts). Schrijf dus voor iedereen in je batch.
+
 _2026-10-06. Voor de agent die per batch de Lemlist-velden schrijft. Alles hieronder is door Dante in de proef goedgekeurd of gecorrigeerd._
 
 ## Lees eerst
