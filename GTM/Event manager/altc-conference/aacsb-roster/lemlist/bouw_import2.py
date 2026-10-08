@@ -23,8 +23,13 @@ for fp in files:
         name = m.group(2).strip(); org = m.group(3).split(",")[-1].strip()
         if name.lower() in gedaan: skip.append(name + " (al in campagne)"); continue
         li = re.search(r"https?://[\w.]*linkedin\.com/in/[^\s)·]+", meta)
-        em = re.search(r"[\w.+-]+@[\w-]+(?:\.[\w-]+)+", meta)
-        ph = None if re.search(r"(?i)telefoon:\s*(geen|n\b)|centrale|algeme", meta) else re.search(r"(\+?\(?\d[\d ()]{8,}\d)", meta.split("telefoon")[-1] if "telefoon" in meta else "")
+        segs = [x.strip() for x in meta.split("·")]
+        emseg = next((x for x in segs if "@" in x), "")
+        em = None if re.search(r"(?i)geen|alleen|niet", emseg.split("@")[0]) else re.search(r"[\w.+-]+@[\w-]+(?:\.[\w-]+)+", emseg)
+        telseg = segs[-1] if len(segs) >= 3 else ""
+        num = re.search(r"(\+?\(?\d[\d ()]{8,}\d)", telseg)
+        algemeen = bool(re.search(r"(?i)centrale|algeme|switchboard", telseg))
+        ph = num if (num and not algemeen) else None
         cv = {k: field(sec, k).replace("[link]", LINK) for k in F}
         n = len(cv["linkedInConnectionRequest"])
         if not 0 < n <= 300: fout.append(f"{name}: verzoek {n}")
@@ -42,7 +47,9 @@ for fp in files:
         if li: lead["linkedinUrl"] = li.group(0).rstrip(".,")
         if em: lead["email"] = em.group(0); lead["companyDomain"] = em.group(0).split("@")[1].lower()
         if ph: lead["phone"] = ph.group(1).strip()
-        if not (li or em or ph): skip.append(name + " (geen kanaal)"); continue
+        if not (li or em or ph):
+            if num: lead["phone"] = num.group(1).strip(); lead["customVariables"]["Call_script"] = "(Algemeen nummer, vraag naar " + name + ")<br>" + lead["customVariables"].get("Call_script", "")
+            else: skip.append(name + " (geen kanaal)"); continue
         out.append(lead)
 json.dump(out, open(os.path.join(B, "leads2.json"), "w"), ensure_ascii=False, indent=1)
 cols = ["firstName","lastName","email","phone","companyName","companyDomain","linkedinUrl"] + F
