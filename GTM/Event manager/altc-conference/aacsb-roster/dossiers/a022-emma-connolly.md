@@ -1,6 +1,6 @@
 # Emma Connolly
 
-_Onderzocht 2026-10-06, AACSB-roster batch 07. **Status onzeker, waarschijnlijk niet meer in een LUMS-functie.** Geen peiling gedaan: het gedeelde zoekbudget was op._
+_Onderzocht 2026-10-06, herkansing 2026-10-08. **Niet te vinden in een huidige rol; waarschijnlijk vertrokken bij LUMS.** Gestopt volgens de opdracht._
 
 | | |
 |---|---|
@@ -21,8 +21,8 @@ Gelezen
 - https://www.lancaster.ac.uk/lums/people/emma-connolly : stuurt door naar de algemene stafflijst, dus er is geen profiel.
 - https://www.lancaster.ac.uk/pentland/about/meet-the-team/ (gelezen 2026-10-06): ze staat er niet op.
 
-Niet gedaan
-- Peiling (3 tot 5 zoekopdrachten) en de LinkedIn-check: web search niet beschikbaar, gedeeld budget op.
+Herkansing 2026-10-08
+- Zoekopdracht "Emma Connolly" plus Lancaster University Management School: alleen andere Emma's bij LUMS (Watton, Jupp, Gorman). Geen LinkedIn-treffer met naam plus Lancaster. Geen eigen tekst, talk of post: peiling negatief.
 
 ## Citaten
 

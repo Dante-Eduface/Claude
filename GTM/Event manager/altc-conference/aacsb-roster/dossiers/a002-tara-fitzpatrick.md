@@ -1,29 +1,29 @@
 # Tara Fitzpatrick
 
-- **Naam:** Tara Fitzpatrick
-- **Huidige functie:** niet gevonden
-- **Organisatie volgens roster:** Birmingham City University (AACSB EMEA 2022)
-- **Status:** NIET GEVERIFIEERD. Werkt ze er nog: onbekend
-- **LinkedIn:** niet gevonden
-- **E-mail:** niet gevonden
-- **Telefoon:** niet gevonden
-- **Close:** geen lead op "Birmingham City" of "bcu.ac.uk" (gecheckt 2026-10-06)
-- **Uitkomst:** geen dossier. Het websearch-budget van de sessie was op voor deze persoon aan de beurt was. Vervolgronde nodig.
+_Herkansing 2026-10-08. **Niet te vinden.** Gestopt volgens de opdracht._
+
+| | |
+|---|---|
+| Naam | Tara Fitzpatrick |
+| Functie | niet gevonden |
+| Organisatie | Birmingham City University (roster 2022) |
+| Status | **niet gevonden** |
+| LinkedIn | niet gevonden |
+| E-mail | niet gevonden |
+| Telefoon | niet gevonden |
+| Close | geen lead op de instelling (2026-10-06) |
 
 ## Bronnen
 
-Geprobeerd, niets
-- https://www.bcu.ac.uk/business/about-us/staff/tara-fitzpatrick, .../our-staff/tara-fitzpatrick en /staff/tara-fitzpatrick: alle drie 404.
-- BCU-sitemap (https://www.bcu.ac.uk/sitemap.xml, 19.729 URL's, lastmod tot 2026-10-05): geen URL met "fitzpatrick". Wel 54 staffpagina's onder business-and-management.
-- BCU open-access repository, auteursweergave op haar naam: 404.
+Geprobeerd, niets: "Tara Fitzpatrick" plus Birmingham City University; plus BCU business school/accreditation; plus Birmingham/accreditation/LinkedIn. BCU Pure-portaal /persons/tara-fitzpatrick: 404. Vorige ronde: drie staff-URL's 404, BCU-sitemap zonder "fitzpatrick", repository 404.
 
 ## Citaten
 
-Geen.
+**Beste drie voor de reeks:** geen.
 
 ## Toetsprogramma
 
-Niet gezocht.
+Niet onderzocht.
 
 ## Getallen
 
@@ -31,12 +31,13 @@ Geen.
 
 ## Rare details
 
-- Geen staffpagina op bcu.ac.uk. Kan vertrek betekenen, of een professional-services-rol zonder staffpagina. Inferentie.
+Geen.
 
 ## Persoon
 
-Niets gevonden. Taal: vermoedelijk Engels, niet vastgesteld.
+Niets gevonden.
 
 ## Onzekerheden
 
-- Alles. Eerst twee bronnen voor de huidige werkgever en functie, dan de peiling.
+- Nergens een Tara Fitzpatrick bij BCU of een andere Birminghamse instelling. Vertrokken of nooit publiek vermeld, niet vast te stellen.
+- Alleen te redden als Dante het LinkedIn-profiel zelf opzoekt. Anders laten vallen.
