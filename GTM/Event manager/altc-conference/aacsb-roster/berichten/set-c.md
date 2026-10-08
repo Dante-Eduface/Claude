@@ -10,7 +10,7 @@ _Let op Glasgow: Kirsteen Daly is al benaderd, en hier staan er nog drie van dez
 LinkedIn: niet gevonden (zelf zoeken) · k.tweddle@imperial.ac.uk · telefoon: geen direct nummer (via de centrale van Imperial)
 Haakje per stap: verzoek = examenwerk achter slot tijdens de remote EQUIS-visit, "Examination scripts were locked in offices" (eigen essay, rimaone.com, 23-02-2021); bericht = de gemiste "corridor chats" en "I had never got to know the EFMD staff" (zelfde essay); mail = haar eigen omschrijving van haar rol, "quality assurance, assessment, rankings and accreditations", twintig jaar bij de school (zelfde essay); bellen = programmareviews en haar plek in het Faculty Education Committee 2026/27 (Imperial governance-pagina, QAEC-notulen 06-04-2022)
 
-**linkedInConnectionRequest** (267)
+**linkedInConnectionRequest** (299)
 Hi Karen, I read your piece on Imperial's remote EQUIS visit in 2020. What stuck with me was the exam scripts locked in offices while the rest of the visit moved online. At Eduface we're hosting an online session on the business outcomes of AI marking and feedback. Would you like a personal invite?
 
 **linkedInMessage**
@@ -59,7 +59,7 @@ I'd genuinely love to hear your take on what accreditation visits will want to s
 LinkedIn: niet gevonden (zelf zoeken) · Wendy.Loretto@glasgow.ac.uk · telefoon: geen (via de centrale van Glasgow)
 Haakje per stap: verzoek = Chair van AMBA en BGA terwijl haar school de triple crown met AMBA draagt (Glasgow-nieuws 24-02-2026); bericht = haar Edinburgh-stuk over pioniers die "did not sit around waiting for things to happen" (business-school.ed.ac.uk, circa 2019); mail = haar eigen citaat bij de benoeming, "the current challenging environment for Higher Education" naast "global visibility and recognition" (Glasgow-nieuws 24-02-2026); bellen = de overstap van Edinburgh naar Adam Smith per 20 april 2026 (idem)
 
-**linkedInConnectionRequest** (259)
+**linkedInConnectionRequest** (270)
 Hi Wendy, chairing AMBA while running a triple-crown school means you see accreditation from both sides of the table, which can't be common. At Eduface we're hosting an online session on the business outcomes of AI marking and feedback. Would you like a personal invite?
 
 **linkedInMessage**
@@ -108,8 +108,8 @@ I'd genuinely love to hear your take on it from the AMBA side afterwards.
 LinkedIn: niet gevonden (zelf zoeken) · Anthony.Devine@glasgow.ac.uk · telefoon: geen (via de centrale van Glasgow)
 Haakje per stap: verzoek = zijn AACSB-sessie "Employing AI in AoL", "Simply asking "how" to use AI overlooks "should" and "when"" (aacsb.edu-agenda, mei 2025); bericht = zijn IJME-paper over appreciative assessment, het leerproces wordt belangrijker dan het product (eprints.gla.ac.uk/379217, 17-02-2026); mail = co-chair van de AACSB-conferentie in Londen die opende met de keynote "Keeping Humans in the Loop in the Age of AI" (aacsb.edu, mei 2025); bellen = zijn plek in de AACSB 2026 Global Standards Taskforce (staffpagina)
 
-**linkedInConnectionRequest** (290)
-Hi Anthony, I came across your AACSB session on AI in AoL and the point that asking how to use AI skips should and when. Most AI talk jumps straight to how, so that stuck with me. At Eduface we're hosting an online session on the business outcomes of AI marking and feedback. Would you like a personal invite?
+**linkedInConnectionRequest** (286)
+Hi Anthony, I came across your AACSB session on AI in AoL and the point that asking how to use AI skips should and when. Most AI talk jumps straight to how. At Eduface we're hosting an online session on the business outcomes of AI marking and feedback. Would you like a personal invite?
 
 **linkedInMessage**
 Thanks for connecting, Anthony. I also read your appreciative assessment paper, and the line that as AI gets more sophisticated, showing how students arrive at an outcome matters more than the product itself. That's a big shift for anyone designing assessment, and I'd love to hear you on it.
@@ -157,7 +157,7 @@ I'd genuinely love to hear your take on the should and when afterwards.
 LinkedIn: niet gevonden (zelf zoeken) · Jan.Shearer@glasgow.ac.uk · 0141 330 4535
 Haakje per stap: verzoek = rol, rankings en accreditaties (staffpagina); bericht = wat de sessie behandelt, gekoppeld aan de accreditatiepagina van de school, "AACSB focuses on overall quality and continuous improvement of our degree programmes" (gla.ac.uk, ongedateerd); mail = de ruimte om een collega aan te dragen; bellen = vraag of AI al opduikt in haar werk (rol)
 
-**linkedInConnectionRequest** (252)
+**linkedInConnectionRequest** (271)
 Hi Jan, at Eduface we're hosting an online session on the business outcomes of AI marking and feedback, with several universities joining. With rankings and accreditations on your desk at Adam Smith, I thought it might be up your street. Would you like a personal invite?
 
 **linkedInMessage**
@@ -204,8 +204,8 @@ I'd genuinely love to hear your take on where rankings and accreditation bodies 
 LinkedIn: niet gevonden (zelf zoeken) · F.Marks-Dennis@sussex.ac.uk · +44 (0)1273 877581
 Haakje per stap: verzoek = zij leidde de voorbereiding op het eerste AACSB-bezoek in september 2026, dat de Triple Crown zou afmaken (eigen bio, profiles.sussex.ac.uk); bericht = ze stond al in 2023 op de AACSB EMEA-conferentie, toen de school nog geen AACSB had (profiel, professional activities); mail = collega Gabriella Cagliesi won in juli 2026 een prijs voor lesgeven met AI, "My first instinct was to redesign assessments to protect academic integrity ... I then realised that this was not enough" (sussex.ac.uk-nieuws, 28-07-2026); bellen = vraag of AI in assessment opkwam rond het bezoek (eigen bio)
 
-**linkedInConnectionRequest** (285)
-Hi Francesca, I read that you've been leading your school's preparations for its first AACSB visit this September, the one that would complete the Triple Crown. Quite a September. At Eduface we're hosting an online session on the business outcomes of AI marking and feedback. Would you like a personal invite?
+**linkedInConnectionRequest** (297)
+Hi Francesca, I read you've been leading your school's preparations for its first AACSB visit this September, which would complete the Triple Crown. Quite a September. At Eduface we're hosting an online session on the business outcomes of AI marking and feedback. Would you like a personal invite?
 
 **linkedInMessage**
 Thanks for connecting, Francesca. Funnily enough, you were already at AACSB's EMEA conference back in 2023, three years before the visit, and now you're the one who led the preparations. That's a long runway.
@@ -241,7 +241,7 @@ Brilliant, glad you're joining. Here's the link for Thursday 15 October, 11:00 t
 I'd genuinely love to hear your take on how AACSB looks at assessment afterwards.
 
 **Twijfels:**
-- Uitkomst van het AACSB-bezoek is onbekend. Nergens gefeliciteerd, nergens aangenomen dat het gehaald is; "the one that would complete" volgt haar eigen bio. Weet Dante de uitkomst voor verzending, dan kan "Quite a September" warmer.
+- Uitkomst van het AACSB-bezoek is onbekend. Nergens gefeliciteerd, nergens aangenomen dat het gehaald is; "which would complete" volgt haar eigen bio. Weet Dante de uitkomst voor verzending, dan kan "Quite a September" warmer.
 - Dat het bezoek echt in september plaatsvond is aangenomen uit haar bio (die het nog als toekomst noemt). Is het verschoven, dan klopt "this September" niet.
 - De mail haakt op een collega, niet op haarzelf. Over beoordelen of AI heeft ze zelf niets geschreven.
 - Zelfde school als Saffron Penfold (a077).
@@ -252,7 +252,7 @@ I'd genuinely love to hear your take on how AACSB looks at assessment afterwards
 LinkedIn: niet gevonden (zelf zoeken) · S.Penfold@sussex.ac.uk · +44 (0)1273 606755, toestel 5561 (centrale met toestel)
 Haakje per stap: verzoek = rol plus haar deelname aan UKIAG en de EFMD Conference for Accreditation Professionals (profiel, professional activities, 2023-2024); bericht = haar route via kostuum- en propmakers voor film en tv (eigen bio, profiles.sussex.ac.uk); mail = wat de sessie behandelt plus de ruimte om een collega aan te dragen; bellen = vraag over haar projecten (rol)
 
-**linkedInConnectionRequest** (264)
+**linkedInConnectionRequest** (277)
 Hi Saffron, at Eduface we're hosting an online session on the business outcomes of AI marking and feedback, with several universities joining. As you've been to UKIAG and the EFMD accreditation conference, I thought it might be up your street. Would you like a personal invite?
 
 **linkedInMessage**
@@ -299,7 +299,7 @@ I'd genuinely love to hear your take on it from the project side afterwards.
 LinkedIn: niet gevonden (zelf zoeken) · ian.money@york.ac.uk · +44 (0)1904 325048
 Haakje per stap: verzoek = hij werkt aan de AACSB-accreditatie van de school, "He now works on the project of gaining AACSB accreditation for the School" (staffpagina); bericht = twaalf jaar Ernst and Young voor hij ging lesgeven (staffpagina); mail = oud-Director of Undergraduate Programmes plus het AACSB-project, en de ruimte om een collega aan te dragen (staffpagina); bellen = vraag naar de stand van het AACSB-project (rol)
 
-**linkedInConnectionRequest** (260)
+**linkedInConnectionRequest** (265)
 Hi Ian, at Eduface we're hosting an online session on the business outcomes of AI marking and feedback, with several universities joining. As you're working on the School's AACSB accreditation, I thought it might be up your street. Would you like a personal invite?
 
 **linkedInMessage**
