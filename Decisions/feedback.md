@@ -34,3 +34,8 @@ omdat commando's en scripts daarvan afhangen. Vastgelegd in `Context/kaart.md`.
 Overlappende skills samenvoegen in plaats van naast elkaar laten staan. `cro`, `schrijven`,
 `outreach` en `meddpicc` slikten hun dubbelganger op. `sso-grid` bleef apart omdat de
 scheiding met de scoringsskill met opzet is gebouwd.
+
+### 2026-10-08 · aanspreekvorm · correctie
+"Waarom zeg je Dante in chats. Ik ben Dante." In de chat spreek ik hem aan met je/jij, niet
+in de derde persoon. Oorzaak: de contextbestanden zijn over hem geschreven ("Dante wil...")
+en die vorm nam ik over. Regeltekst voorgelegd, wacht op akkoord.
