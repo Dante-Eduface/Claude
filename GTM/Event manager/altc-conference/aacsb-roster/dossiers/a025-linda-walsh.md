@@ -1,54 +1,58 @@
 # Linda Walsh
 
-_Onderzocht 2026-10-06, AACSB-roster batch 07. **Niet afgerond.** Identiteit en functie niet vastgesteld en geen peiling gedaan, want het gedeelde zoekbudget voor web search was op. Dit is een stub._
+_Herkansing 2026-10-08. Peiling negatief: **ROL-ALLEEN.** Circa 5 pagina's._
 
 | | |
 |---|---|
 | Naam | Linda Walsh |
-| Functie | niet geverifieerd |
-| Organisatie | Liverpool John Moores University, Liverpool Business School (volgens het roster) |
-| Status | **niet vastgesteld** |
+| Functie | Lecturer/Senior Lecturer, Liverpool Business School (LJMU-profiel) |
+| Organisatie | Liverpool John Moores University, Liverpool Business School |
+| Status | **werkt er nog.** Bron 1: https://profiles.ljmu.ac.uk/2264-linda-walsh (gelezen 2026-10-08, positie "2 Sep 1991" zonder einddatum). Bron 2: zoekmachine-cache van het oude LJMU-profiel ("1991 - present"). Beide LJMU, dus geen onafhankelijke tweede bron |
 | LinkedIn | niet gevonden |
-| E-mail | niet gevonden |
+| E-mail | L.Walsh@ljmu.ac.uk · bron: profiles.ljmu.ac.uk · status: geverifieerd |
 | Telefoon | niet gevonden |
-| Close | geen lead op "Liverpool John Moores", "LJMU" of "ljmu.ac.uk" (gecheckt 2026-10-06) |
+| Close | geen lead op "Liverpool John Moores", "LJMU", "ljmu.ac.uk" (2026-10-06) |
 | AACSB | roster 2023 |
 
 ## Bronnen
 
-Geprobeerd, niets gevonden
-- LJMU-staffprofielen op drie URL-patronen onder /about-us/staff-profiles/: allemaal 404.
-- https://www.ljmu.ac.uk/about-us/faculties/liverpool-business-school/staff-profiles : de lijst laadt met JavaScript, er staan geen namen in de HTML.
-- https://researchonline.ljmu.ac.uk/view/creators/ (EPrints-index): naam komt niet voor. Het Pure-patroon /en/persons/linda-walsh gaf 404.
-- Gelezen voor de organisatiecontext: https://www.ljmu.ac.uk/about-us/faculties/liverpool-business-school (2026-10-06).
+Primair, gelezen
+- https://profiles.ljmu.ac.uk/2264-linda-walsh en /professional (gelezen 2026-10-08).
 
-Niet gedaan
-- Peiling (3 tot 5 zoekopdrachten) en de LinkedIn-check: web search niet beschikbaar, gedeeld budget op.
+Peiling (3 zoekopdrachten): geen talk, paper, interview, post of eigen tekst gevonden. Geen outputs op het profiel.
 
 ## Citaten
 
-**Beste drie voor de reeks:** geen.
+**Beste drie voor de reeks:** geen haakje. ROL-ALLEEN.
 
-> "Liverpool Business School is also a member of AACSB International – The Association to Advance Collegiate Schools of Business."
-  bron: https://www.ljmu.ac.uk/about-us/faculties/liverpool-business-school · datum: gelezen 2026-10-06 · drager: organisatie
-  Er staat "member", niet "accredited". LBS is dus lid en (nog) niet geaccrediteerd, voor zover deze pagina zegt.
+Rolfeiten (geen haakje, wel bruikbaar als element per stap):
+> "Link Tutor for Van Lang University, Vietnam. Two undergraduate and one postgraduate degree programme."
+  bron: https://profiles.ljmu.ac.uk/2264-linda-walsh/professional · datum: 2022-09-01 · drager: organisatie
+
+> "Member of Faculty Education and Student Experience Committee"
+  bron: idem · datum: 2000-09-01 · drager: organisatie
+
+> "Member of Faculty International Committee"
+  bron: idem · datum: 2023-09-01 · drager: organisatie
 
 ## Toetsprogramma
 
-Niet onderzocht.
+Niet onderzocht. Als link tutor voor een franchise ziet ze wel de moderatie van werk dat in Vietnam wordt nagekeken (inferentie, niet in de bron).
 
 ## Getallen
 
-- Geen.
+- 35 jaar bij LJMU (sinds 02-09-1991).
+- Van Lang: 2 bachelor- en 1 masteropleiding.
 
 ## Rare details
 
-- Geen.
+- Een economie-docent die sinds 2000 in de faculteitscommissie Education and Student Experience zit, en sinds 2023 in de internationale commissie.
 
 ## Persoon
 
-- Niet vastgesteld.
+- BA (Hons) Economics, Birmingham Polytechnic (1986-1989); MA Economics, University of East Anglia (1989-1990). Kort lecturer De Montfort (1991).
+- Werkplek: Redmonds Building, Liverpool.
 
 ## Onzekerheden
 
-- Werkt Linda Walsh nog bij LJMU, en in welke functie? Dat is volledig open. Neem deze persoon op in een volgende ronde met web search, of laat Dante het LinkedIn-profiel controleren.
+- Waarom ze op het AACSB-roster staat (2023) is onbekend.
