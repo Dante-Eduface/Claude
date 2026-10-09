@@ -90,7 +90,19 @@ Wij zijn niet de eerste. Het model is ontwikkeld met hulp van de Radboud Univers
 Logostrook in één kleur: Hogeschool Rotterdam (onderschrift: lerarenopleiding) · De Haagse Hogeschool · Tilburg University · Radboud Universiteit
 
 _Bron: Platform/product.md (betalende klanten, Hogeschool Rotterdam draait bij de lerarenopleiding). Logo's: Design/Merk/logo-van-scholen/._
-## 8. Wat je erbij krijgt [nog te doen]
+## 8. Wat je erbij krijgt [akkoord]
+_Akkoord 09-10-2026. Twee tegels: tech support en AI-geletterdheid geschrapt._
+
+**WAT WE ERBIJ KRIJGEN**
+**Eduface werkt in NEO, en wij worden erin begeleid**
+
+| LMS-integratie (icoon) | Training (icoon) |
+|---|---|
+| Eduface werkt binnen NEO. Studenten leveren in zoals nu, cijfer en feedback gaan terug naar NEO en daarna naar Progress. | Elke nakijker krijgt een training in het werken met Eduface naast NEO. Per opdracht leggen we de opdracht, de rubric en de feedbackinstructies samen vast. |
+
+_Inbegrepen in de prijs, geen losse kosten._ (Check: geldt dit ook voor de koppelingsweek van Samuel?)
+
+_Bronnen: mail Dante aan Joey 01-10 (LTI 1.3, passback), Marjolein 24-09 en 07-10 (NEO naar Progress, training Eduface naast NEO), Platform/product.md (inrichting per opdracht), Dante 01-10 ("die drie euro zit daarin")._
 ## 9. Privacy en AVG [nog te doen]
 ## 10. Prijs en licentiemodel [nog te doen]
 ## 11. Kosten, baten en ROI [nog te doen]
