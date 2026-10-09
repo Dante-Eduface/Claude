@@ -71,7 +71,15 @@ _Akkoord 09-10-2026. De drie eisen waar Eduface het meest aan bijdraagt._
 _Bij nieuwe accreditaties is consistent beoordelen een aandachtspunt. De Pabo zit nu in accreditatie._
 
 _Bronnen: gesprek 24-09 (steekproef, examencommissie, kalibratie, consistentie bij accreditaties). Productclaims (onderbouwing per criterium, audit trail AI Act, beoordelaarsoverzicht) uit Platform/product.md, nog te bevestigen door Dante; beoordelaarsoverzicht live? navragen bij Menno._
-## 6. Toekomstbestendig onderwijs [nog te doen]
+## 6. Toekomstbestendig onderwijs [akkoord]
+_Akkoord 09-10-2026._
+
+**TOEKOMSTBESTENDIG ONDERWIJS**
+**Docenten leren werken met AI, studenten leren AI goed gebruiken**
+
+| Docent (icoon) | Student (icoon) |
+|---|---|
+| **AI-geletterdheid in het dagelijkse werk.** Docenten werken bij elke beoordeling met AI. Ze zien hoe een voorstel tot stand komt, sturen het bij en houden het laatste woord. Zo leren ze wat AI wel en niet kan. | **Werken met AI, en toch het leerresultaat halen.** Studenten mogen AI gebruiken bij het schrijven. Elke opdracht wordt inhoudelijk en kritisch beoordeeld op de leerdoelen. Aannames zonder onderbouwing en wollige alinea's, waar AI om bekend staat, komen daardoor niet ongemerkt door. |
 ## 7. Social proof [nog te doen]
 ## 8. Wat je erbij krijgt [nog te doen]
 ## 9. Privacy en AVG [nog te doen]
