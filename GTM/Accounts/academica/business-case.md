@@ -3,7 +3,7 @@ _Concept voor Academica University of Applied Sciences, 2026-10-09. Geschreven v
 
 ---
 
-## Managementsamenvatting
+### 1. Managementsamenvatting
 
 Academica groeit met ongeveer 100 studenten per jaar en verwacht de komende jaren boven de 500 studenten te komen. Het beoordelen van praktijkgerichte opdrachten groeit mee. Daarvoor zijn nakijkers nodig die zowel de theorie als de praktijk kennen, en die zijn schaars en duur om in te werken.
 
@@ -23,7 +23,7 @@ We starten met een validatie van twee maanden. Pas als de koppeling met NEO LMS 
 
 ## Waarom
 
-### 1. De pijn, met de workflow nu tegenover die met Eduface
+### 2. De pijn, met de workflow nu tegenover die met Eduface
 
 **De pijn**
 - **Schaarse nakijkers.** Onze opleidingen zijn applied science. Een nakijker moet de theorie én de praktijk kennen, anders is het werk niet goed te beoordelen. Die mensen zijn moeilijk te vinden.
@@ -48,7 +48,7 @@ We starten met een validatie van twee maanden. Pas als de koppeling met NEO LMS 
 
 Doorlooptijd met Eduface: ?
 
-### 2. Aansluiting op het koersplan
+### 3. Aansluiting op het koersplan
 
 Efficiency is een van de zeven grote punten in ons koersplan tot 2030. Beoordelen is een van de grootste structurele taken in onze geaccrediteerde opleidingen. Lukt het om dat slimmer te organiseren, dan slaan we binnen dat koerspunt een grote slag.
 
@@ -59,7 +59,7 @@ Na een jaar evalueren we binnen het koersplan.
 
 ## Wat het oplevert
 
-### 3. Impact: geld, tijd en mensen
+### 4. Impact: geld, tijd en mensen
 
 **Tijd**
 
@@ -83,7 +83,7 @@ Geen besparing rekenen we op het overleg tussen de twee thesis-examinatoren en o
 - Het gesprek in de les gaat over de feedback die de student al heeft, in plaats van over het ophalen ervan.
 - Minder afhankelijkheid van schaarse externe nakijkers.
 
-### 4. Feedbackkwaliteit, voorbeeld van nu en van straks
+### 5. Feedbackkwaliteit, voorbeeld van nu en van straks
 
 **Nu:** de docent vult de rubric in en typt de feedback met de hand. Hoe uitgebreid die is, hangt af van de docent en van de tijd die er is.
 Voorbeeld uit een huidige beoordeling: ?
@@ -91,7 +91,7 @@ Voorbeeld uit een huidige beoordeling: ?
 **Straks:** per rubriccriterium een onderbouwd oordeel, met annotaties in de tekst die verwijzen naar de passage waar het om gaat, en een uitlegbare cijferopbouw. De docent bekijkt en keurt goed, en het label "Lecturer + AI" laat de student zien dat de docent het heeft gezien.
 Voorbeeld van een Eduface-beoordeling op een opdracht van Academica: ? (uit de validatie)
 
-### 5. Volgbaarheid en accreditatie
+### 6. Volgbaarheid en accreditatie
 
 - **Uitlegbare cijferopbouw.** Elk cijfer is per criterium onderbouwd. Dat helpt de examencommissie bij de steekproef.
 - **Audit trail die voldoet aan de AI Act,** voor alle summatieve beoordelingen.
@@ -99,7 +99,7 @@ Voorbeeld van een Eduface-beoordeling op een opdracht van Academica: ? (uit de v
 - **Consistentie bij accreditaties.** Bij nieuwe accreditaties is consistent beoordelen een aandachtspunt. De Pabo zit nu in accreditatie.
 - Hoe de examencommissie en de kwaliteitsmanager tegen AI in beoordelen aankijken: ?
 
-### 6. Toekomstbestendig onderwijs
+### 7. Toekomstbestendig onderwijs
 
 - **Formatieve feedback op schaal.** Een formatieve ronde bij elke module voor elke student kost handmatig ongeveer 275 uur extra per jaar. Met Eduface (bij 50 procent kortere nakijktijd) komt al het nakijkwerk, inclusief die extra rondes, uit op ongeveer 390 uur. Dat is minder dan de ongeveer 520 uur van nu.
 - **Groei.** Het nakijkwerk groeit mee met de studentaantallen. Met Eduface hoeft het aantal nakijkers niet in hetzelfde tempo mee te groeien.
@@ -110,13 +110,13 @@ Voorbeeld van een Eduface-beoordeling op een opdracht van Academica: ? (uit de v
 
 ## Vertrouwen
 
-### 7. Social proof
+### 8. Social proof
 
 - Ontwikkeld met hulp van de Universiteit Leiden en de Radboud Universiteit.
 - Wordt onder andere ingezet bij Hogeschool Rotterdam (lerarenopleiding), De Haagse Hogeschool, Tilburg University en de Radboud Universiteit.
 - Referentiegesprek met een van deze instellingen: ?
 
-### 8. Wat je erbij krijgt: LMS, training en support
+### 9. Wat je erbij krijgt: LMS, training en support
 
 - **LMS.** Koppeling met NEO LMS via LTI 1.3. Cijfers en feedback gaan terug naar NEO, en vandaar naar Progress zoals nu. Een koppeling met Progress is niet nodig. De combinatie Eduface en NEO is nog niet eerder live geweest; die testen we in de validatie.
 - **Inrichting per opdracht.** Per opdracht leggen we de opdrachtbeschrijving, de rubric en de feedbackinstructies vast. Onze bestaande rubrics, docenteninstructies, toetsbeleid en OER kunnen als context dienen.
@@ -124,7 +124,7 @@ Voorbeeld van een Eduface-beoordeling op een opdracht van Academica: ? (uit de v
 - **Support:** ?
 - **Go-live.** Het go-live-document vullen we samen in op ons kantoor in Amsterdam.
 
-### 9. Privacy en AVG
+### 10. Privacy en AVG
 
 - Academica blijft eigenaar van al het studentenwerk en alle instellingsdata.
 - Studentenwerk wordt niet gebruikt om AI-modellen te trainen.
@@ -137,7 +137,7 @@ Voorbeeld van een Eduface-beoordeling op een opdracht van Academica: ? (uit de v
 
 ## Geld
 
-### 10. Prijs en licentiemodel
+### 11. Prijs en licentiemodel
 
 | | |
 |---|---|
@@ -151,7 +151,7 @@ Prijs boven de 400 studenten: ?
 Prijs tijdens de validatie van twee maanden: ?
 Looptijd van het contract: ?
 
-### 11. Kosten en baten met de ROI
+### 12. Kosten en baten met de ROI
 
 | | Per jaar |
 |---|---|
@@ -167,7 +167,7 @@ Looptijd van het contract: ?
 
 ## Starten
 
-### 12. Risico's met maatregelen
+### 13. Risico's met maatregelen
 
 | Risico | Maatregel |
 |---|---|
@@ -178,7 +178,7 @@ Looptijd van het contract: ?
 | Docenten of de examencommissie vertrouwen het niet | De docent beslist altijd, uitlegbare cijferopbouw, audit trail. Draagvlak: ? |
 | Privacy | Verwerkersovereenkomst, geen training op onze data, geen externe AI-aanbieders. |
 
-### 13. Scope: eerst testen, dan uitrollen
+### 14. Scope: eerst testen, dan uitrollen
 
 **Validatie (twee maanden)**
 - Opleiding: ?
@@ -191,7 +191,7 @@ Looptijd van het contract: ?
 - Alle geaccrediteerde opleidingen: SO, MILE, AD-DEP, PMKC, PHKC, MET en MBA. Later de Pabo.
 - Volgorde van uitrol: ?
 
-### 14. Tijdlijn
+### 15. Tijdlijn
 
 | Wanneer | Wat |
 |---|---|
