@@ -12,19 +12,20 @@ _Akkoord 09-10-2026._
 **Docenten zijn minder tijd kwijt aan het formuleren van feedback**
 Bij ongeveer 1.100 opdrachten per jaar is dat 460 uur nakijkwerk. Met Eduface doet het platform de eerste beoordeling en controleert de docent die.
 
-**Nu** · 30 min per opdracht
+**Nu** (paper, module-opdracht van ~3.000 woorden)
 1. Student levert in via NEO (automatisch)
-2. Docent leest, beoordeelt en typt de feedback (30 min)
-3. Cijfer gaat via NEO naar de student en naar Progress (automatisch)
-4. Bij onvoldoende levert de student opnieuw in en begint het proces opnieuw
+2. Docent leest de opdracht (? min)
+3. Docent beoordeelt per criterium en formuleert de feedback (? min)
+4. Docent vult de rubric in, cijfer gaat via NEO naar Progress (? min)
 
-**Met Eduface** · 15 min per opdracht
+**Met Eduface**
 1. Student levert in via NEO (automatisch)
-2. Eduface beoordeelt per criterium en schrijft feedback (automatisch, productbeeld)
-3. Docent controleert, past aan en keurt goed (15 min, productbeeld)
+2. Docent leest de opdracht (? min, gelijk aan nu)
+3. Docent controleert het voorstel van Eduface en past de feedback aan (? min, productbeeld)
 4. Cijfer gaat terug naar NEO en naar Progress (automatisch)
 
-_15 minuten is een aanname, de proof of value meet het echte cijfer._
+_Lezen wordt niet sneller, dat zeggen we expliciet. De claim zit in het formuleren van feedback. Splitsing van de 30 minuten: door Marjolein of een docent te klokken (vijf opdrachten)._
+_Alle minuten zijn aannames van de klant, de proof of value meet dezelfde stappen opnieuw._
 
 **Wat kost niets doen**
 - Het nakijkwerk groeit van 520 naar 710 uur per jaar, door de Pabo, de theses vanaf jaar 2 en de groei van de MET.
@@ -53,9 +54,9 @@ _Akkoord 09-10-2026._
 
 | Geld (icoon) | Tijd (icoon) | Mensen (icoon) |
 |---|---|---|
-| **70 euro** | **255 uur** | **100%** |
-| Vanaf deze kosten per nakijkuur verdient Eduface zich terug op tijd alleen. | Per jaar minder nakijkwerk: 15 in plaats van 30 minuten per opdracht. | Van de studenten krijgt formatieve feedback bij elke module. Nu is dat de helft, in twee modules. |
-| Elke externe beoordeling die we niet hoeven in te kopen, komt hierbovenop: ? | Dat is ruim 6 werkweken die docenten aan onderwijs besteden. | Ook dan ligt het totale nakijkwerk nog ruim 130 uur onder dat van nu. |
+| **? euro** | **? uur** | **100%** |
+| Terugverdienpunt per uur, na klokken. | Minder uren feedback schrijven per jaar. (Getal na klokken: ?) | Van de studenten krijgt formatieve feedback bij elke module. Nu is dat de helft, in twee modules. |
+| Elke externe beoordeling die we niet hoeven in te kopen, komt hierbovenop: ? | Leestijd niet meegerekend. | Ook dan ligt het totale nakijkwerk nog ruim 130 uur onder dat van nu. |
 
 _Aannames: 1.098 opdrachten, 120 formatieve rondes en 10 theses per jaar (tabel 07-10). Nakijktijd 50% korter, te meten in de proof of value. Overleg bij de thesis en inwerken van nakijkers blijven gelijk. De 255 uur geldt bij het huidige aantal formatieve rondes; met formatieve feedback bij elke module (1.098 rondes van 15 min) komt het totaal op ~388 uur, tegen ~521 uur nu._
 
@@ -155,18 +156,22 @@ _Akkoord 09-10-2026. Grafiek volgt zodra het normbedrag per uur bekend is (Marjo
 | AI-capaciteit (icoon) | Toolfee (icoon) | Training (icoon) |
 |---|---|---|
 
+| Opdrachttype | Aantal per jaar | Feedbacktijd nu | Controletijd met Eduface | Besparing per jaar |
+|---|---|---|---|---|
+| Kort (KC) | 350 | ? min | ? min | ? uur |
+| Paper (module-opdracht) | 748 | ? min | ? min | ? uur |
+| Thesis (twee examinatoren) | 10 × 2 | ? min | ? min | ? uur |
+| **Totaal** | | | | **? uur × ons normbedrag = ? euro** |
+
+_Leestijd niet meegerekend. Besparing = (feedbacktijd nu − controletijd met Eduface) × aantal × uurtarief. Voorzichtig scenario; verwacht scenario ernaast na de proof of value._
+
 | | Jaar 1 | Jaar 2 |
 |---|---|---|
-| **Kosten** | | |
 | Licentie | 18.000 | 18.000 (?) |
-| **Baten** | | |
-| Bespaarde uren nakijkwerk | 255 uur | 330 uur |
-| × ons normbedrag per uur | ? | ? |
-| Vermeden externe beoordelingen | ? | ? |
-| **Totaal baten** | ? | ? |
+| Baten (tabel hierboven) | ? | ? |
 | **ROI** | ? | ? |
 
-_Aannames: nakijktijd 50% korter, te meten in de proof of value. In jaar 2 tellen de Pabo, de theses vanaf jaar 2 en de groei van de MET mee. Prijs in jaar 2 hangt af van het aantal studenten boven de 400._
+_Aannames: geklokte tijden van de klant, te bevestigen in de proof of value. In jaar 2 tellen de Pabo, de theses vanaf jaar 2 en de groei van de MET mee. Prijs in jaar 2 hangt af van het aantal studenten boven de 400._
 
 **Ons risico is beperkt:** opzeggen kan na 90 dagen. Het maximale bedrag dat we inzetten om te zien of het werkt, is 4.500 euro.
 
@@ -190,7 +195,7 @@ _Akkoord 09-10-2026. Proof of value 2 weken (was 2 maanden)._
 |---|---|
 | Opleiding: ? | Alle geaccrediteerde opleidingen: SO, MILE, AD-DEP, PMKC, PHKC, MET en MBA |
 | Echte opdrachten met onze eigen rubrics (aantal: ?) | Later de Pabo, na de accreditatie |
-| We meten de nakijktijd vooraf en met Eduface | Formatieve feedback bij elke module |
+| We meten dezelfde stappen als in de business case: lezen, feedback formuleren, cijfer invoeren. Plus kwaliteit: aandeel studenten met feedback per criterium, doorlooptijd, consistentie tussen beoordelaars | Formatieve feedback bij elke module |
 | **Door als:** de koppeling met NEO werkt, inclusief de cijferterugkoppeling, en de beoordeling van ons praktijkgerichte werk voldoet aan de vooraf vastgelegde criteria | |
 
 _Bronnen: go-voorwaarden Marjolein 01-10, opleidingen uit tabel 07-10. Voorstel Dante nog te kiezen: opleiding SO, 20 tot 25 inzendingen van één module-opdracht._

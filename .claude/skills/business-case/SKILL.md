@@ -53,6 +53,10 @@ Per gat één vraag, met:
 ### Stap 6. Wegschrijven
 Werk `GTM/Accounts/<slug>/business-case-gaten.md` bij (format in `reference.md`), met een datum bovenaan. In de chat: de fase, de top 3 gaten, en de vragen voor het volgende gesprek. Niet het hele bestand plakken.
 
+## Altijd eerst: opdrachttypes en geklokte tijden
+
+Bij elke klant vraag ik als eerste naar de twee of drie opdrachttypes die het meeste werk geven (bijvoorbeeld kort, paper, scriptie), met per type het aantal per jaar. En ik vraag een docent vijf opdrachten te klokken, gesplitst in lezen en feedback schrijven. Zonder die split geen tijdclaim. De regels staan in `GTM/Knowledge/business-case/structuur.md`, sectie "Tijd en kwaliteit, twee pijlers". Leestijd claim ik nooit.
+
 ## Stand 2: de business case maken
 
 Alleen op expliciet verzoek. Schrijf `GTM/Accounts/<slug>/business-case.md` vanuit het perspectief van de instelling, alsof zij het zelf geschreven hebben. Gebruik het template in `reference.md`.

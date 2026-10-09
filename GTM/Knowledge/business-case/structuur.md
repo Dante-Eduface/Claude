@@ -56,10 +56,46 @@ Vastgelegd 09-10-2026.
 
 Voorbeeld: "Docenten besteden nu gemiddeld X uur per opdracht aan nakijken. Met Eduface wordt dat Y uur."
 
+## Tijd en kwaliteit, twee pijlers
+
+Vastgelegd 09-10-2026. Niet kiezen tussen tijd en kwaliteit: allebei, met een smalle en eerlijke tijdclaim. Juist door te zeggen wat níet sneller wordt, wordt de rest geloofwaardig.
+
+**Tijd: nakijken in stappen, alleen claimen wat Eduface echt doet**
+
+| Stap | Nu | Met Eduface | Claim |
+|---|---|---|---|
+| Opdracht lezen | X min | X min | Geen. Zeg dat expliciet. |
+| Beoordelen per criterium | Y min | korter, de docent controleert een voorstel | Voorzichtig |
+| Feedback formuleren | Z min | controleren en aanpassen | Hier zit de claim |
+| Cijfer invoeren | paar min | automatisch | Klein maar hard |
+
+- In het workflowdiagram staat "opdracht lezen" in beide rijen als dezelfde gevulde card met dezelfde minuten.
+- Geen range (zoals 5 tot 30 minuten), maar een rij per opdrachttype: twee of drie types die het meeste werk geven (bijvoorbeeld kort, paper, scriptie), elk met een vaste tijd en een aantal per jaar.
+- Rekensom: besparing = (feedbacktijd nu − controletijd met Eduface) × aantal opdrachten per jaar × uurtarief. De leestijd valt erbuiten.
+- Steeds het voorzichtige getal, hooguit een tweede scenario ernaast ("voorzichtig" en "verwacht"). Een MT dat zelf narekent en hoger uitkomt, is overtuigd.
+
+**De getallen komen van de klant, de testperiode bevestigt ze**
+- In discovery: een docent klokt vijf opdrachten, gesplitst in lezen en feedback schrijven.
+- In de business case staan die cijfers als aanname, met de bron erbij.
+- In de proof of value meten we dezelfde stappen opnieuw. De testperiode is zo de toets van de business case.
+
+**Kwaliteit: hard gemaakt, niet in euro's**
+- Aandeel studenten dat feedback per criterium krijgt (nu en met Eduface).
+- Doorlooptijd tot de student feedback heeft.
+- Hoe consequent verschillende beoordelaars dezelfde rubric toepassen.
+Alle drie meetbaar in de proof of value.
+
+**Gevolgen voor de vorm**
+- De tijd-card bij de kerncijfers zegt "minder uren feedback schrijven per jaar", niet "minder nakijkwerk".
+- Het workflowdiagram krijgt "opdracht lezen" als vaste stap in beide rijen.
+- De kosten-batentabel krijgt een rij per opdrachttype en de regel "leestijd niet meegerekend".
+
 ## Open
 
 - Heet de testperiode in dit stuk "proof of value", net als in het go-liveplan? Voorstel: ja. (09-10-2026)
 
 ## Wijzigingen
+
+- [2026-10-09] Tijd en kwaliteit als twee pijlers vastgelegd: tijd per stap en per opdrachttype, leestijd nooit geclaimd, getallen geklokt door de klant en bevestigd in de proof of value.
 
 - [2026-10-09] Onderdeel "Feedbackkwaliteit" geschrapt op verzoek van Dante. Nu 14 onderdelen, nummering opgeschoven.
