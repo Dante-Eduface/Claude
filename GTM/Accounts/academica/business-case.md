@@ -137,7 +137,36 @@ Dit is de vaste licentieprijs, ook tijdens de proof of value. De koppeling met N
 - Looptijd: 1 jaar, met de mogelijkheid om na 90 dagen op te zeggen.
 
 _Bronnen: prijsopzet Dante 08-10 en 09-10 (3,75 euro, minimum 400, 1.500 per maand ook tijdens proof of value, 1 jaar met opt-out na 90 dagen). 350 actieve studenten: document Marjolein 07-10. Wijkt af van GTM/Pricing/prijsmodel-psu-26-27.md (3 euro, minimum 500)._
-## 11. Kosten, baten en ROI [nog te doen]
+## 11. Kosten, baten en ROI [akkoord]
+_Akkoord 09-10-2026. Grafiek volgt zodra het normbedrag per uur bekend is (Marjolein vult in op 22-10)._
+
+**KOSTEN EN BATEN**
+**Eduface verdient zich terug zodra een nakijkuur ons meer dan 70 euro kost**
+
+**Waar de 18.000 euro per jaar uit bestaat**
+
+| AI-capaciteit (icoon) | Toolfee (icoon) | Training (icoon) |
+|---|---|---|
+| **12.600 euro** (70%) | **3.600 euro** (20%) | **1.800 euro** (10%) |
+
+| | Jaar 1 | Jaar 2 |
+|---|---|---|
+| **Kosten** | | |
+| Licentie | 18.000 | 18.000 (?) |
+| **Baten** | | |
+| Bespaarde uren nakijkwerk | 255 uur | 330 uur |
+| × ons normbedrag per uur | ? | ? |
+| Vermeden externe beoordelingen | ? | ? |
+| **Totaal baten** | ? | ? |
+| **ROI** | ? | ? |
+
+_Aannames: nakijktijd 50% korter, te meten in de proof of value. In jaar 2 tellen de Pabo, de theses vanaf jaar 2 en de groei van de MET mee. Prijs in jaar 2 hangt af van het aantal studenten boven de 400._
+
+**Ons risico is beperkt:** opzeggen kan na 90 dagen. Het maximale bedrag dat we inzetten om te zien of het werkt, is 4.500 euro.
+
+_[Grafiek: opgetelde baten en kosten over 24 maanden, terugverdienmoment gemarkeerd. Na invullen normbedrag.]_
+
+_Rekensommen: 70 = 18.000 / 255. 330 = 50% × 661,5 uur (inclusief groei). 4.500 = 3 × 1.500. Kostenopbouw 70/20/10 aangeleverd door Dante 09-10._
 ## 12. Risico's met maatregelen [nog te doen]
 ## 13. Scope [nog te doen]
 ## 14. Tijdlijn [nog te doen]
