@@ -56,7 +56,21 @@ _Akkoord 09-10-2026._
 _Aannames: 1.098 opdrachten, 120 formatieve rondes en 10 theses per jaar (tabel 07-10). Nakijktijd 50% korter, te meten in de proof of value. Overleg bij de thesis en inwerken van nakijkers blijven gelijk. De 255 uur geldt bij het huidige aantal formatieve rondes; met formatieve feedback bij elke module (1.098 rondes van 15 min) komt het totaal op ~388 uur, tegen ~521 uur nu._
 
 _Rekensommen: 255 = 50% × 511,5 uur (summatief 461,5 + formatief 30 + thesisbeoordeling 20). 70 = 18.000 / 255. 6,4 werkweken = 255 / 40._
-## 5. Volgbaarheid en accreditatie [nog te doen]
+## 5. Volgbaarheid en accreditatie [akkoord]
+_Akkoord 09-10-2026. De drie eisen waar Eduface het meest aan bijdraagt._
+
+**VOLGBAARHEID EN ACCREDITATIE**
+**Elke beoordeling blijft navolgbaar, de docent blijft eindverantwoordelijk**
+
+| Eis | Hoe geborgd met Eduface |
+|---|---|
+| Beoordeling is navolgbaar | Elk cijfer heeft een onderbouwing per rubriccriterium. Een audit trail die voldoet aan de AI Act legt elke summatieve beoordeling vast. |
+| Beoordelaars oordelen consistent | Een overzicht toont welke beoordelaar afwijkt van het team. De kalibratie twee keer per jaar blijft. |
+| De examencommissie borgt de kwaliteit | De steekproef blijft. Per beoordeling is de onderbouwing direct in te zien. |
+
+_Bij nieuwe accreditaties is consistent beoordelen een aandachtspunt. De Pabo zit nu in accreditatie._
+
+_Bronnen: gesprek 24-09 (steekproef, examencommissie, kalibratie, consistentie bij accreditaties). Productclaims (onderbouwing per criterium, audit trail AI Act, beoordelaarsoverzicht) uit Platform/product.md, nog te bevestigen door Dante; beoordelaarsoverzicht live? navragen bij Menno._
 ## 6. Toekomstbestendig onderwijs [nog te doen]
 ## 7. Social proof [nog te doen]
 ## 8. Wat je erbij krijgt [nog te doen]
