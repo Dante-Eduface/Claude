@@ -103,7 +103,23 @@ _Akkoord 09-10-2026. Twee tegels: tech support en AI-geletterdheid geschrapt._
 _Inbegrepen in de prijs, geen losse kosten._ (Check: geldt dit ook voor de koppelingsweek van Samuel?)
 
 _Bronnen: mail Dante aan Joey 01-10 (LTI 1.3, passback), Marjolein 24-09 en 07-10 (NEO naar Progress, training Eduface naast NEO), Platform/product.md (inrichting per opdracht), Dante 01-10 ("die drie euro zit daarin")._
-## 9. Privacy en AVG [nog te doen]
+## 9. Privacy en AVG [akkoord]
+_Akkoord 09-10-2026. Geen EU-opslag en geen dataminimalisatie tot bevestigd._
+
+**PRIVACY EN AVG**
+**Studentwerk blijft van ons en wordt niet gebruikt om AI te trainen**
+
+- ✓ Academica blijft eigenaar van al het studentenwerk en alle data.
+- ✓ Studentenwerk wordt niet gebruikt om AI-modellen te trainen.
+- ✓ Studentdata gaat niet naar externe AI-aanbieders.
+- ✓ Verwerking alleen voor het afgesproken onderwijsdoel.
+- ✓ Versleuteld tijdens transport, bewaartermijn volgens afspraak.
+- ✓ De docent ziet en keurt alles goed voordat de student het ziet.
+- ✓ Verwerkersovereenkomst afgesloten (bijlage: "Verwerkersovereenkomst Eduface", versie voor onbekostigde instellingen).
+
+_De verwerkersovereenkomst ligt ter beoordeling bij onze AVG-functionaris._
+
+_Bronnen: Platform/product.md (gegevensbescherming), mail aan AVG-adres 01-10. Open: EU-opslag (Menno), dataminimalisatie vanuit NEO (Samuel: nog niet gebouwd)._
 ## 10. Prijs en licentiemodel [nog te doen]
 ## 11. Kosten, baten en ROI [nog te doen]
 ## 12. Risico's met maatregelen [nog te doen]
