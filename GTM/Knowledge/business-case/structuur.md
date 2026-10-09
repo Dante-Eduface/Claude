@@ -60,4 +60,6 @@ Voorbeeld: "Docenten besteden nu gemiddeld X uur per opdracht aan nakijken. Met 
 
 - Heet de testperiode in dit stuk "proof of value", net als in het go-liveplan? Voorstel: ja. (09-10-2026)
 
+## Wijzigingen
+
 - [2026-10-09] Onderdeel "Feedbackkwaliteit" geschrapt op verzoek van Dante. Nu 14 onderdelen, nummering opgeschoven.
