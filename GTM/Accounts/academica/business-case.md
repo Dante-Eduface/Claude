@@ -80,7 +80,16 @@ _Akkoord 09-10-2026._
 | Docent (icoon) | Student (icoon) |
 |---|---|
 | **AI-geletterdheid in het dagelijkse werk.** Docenten werken bij elke beoordeling met AI. Ze zien hoe een voorstel tot stand komt, sturen het bij en houden het laatste woord. Zo leren ze wat AI wel en niet kan. | **Werken met AI, en toch het leerresultaat halen.** Studenten mogen AI gebruiken bij het schrijven. Elke opdracht wordt inhoudelijk en kritisch beoordeeld op de leerdoelen. Aannames zonder onderbouwing en wollige alinea's, waar AI om bekend staat, komen daardoor niet ongemerkt door. |
-## 7. Social proof [nog te doen]
+## 7. Social proof [akkoord]
+_Akkoord 09-10-2026. Zonder klantcitaat, zonder Leiden._
+
+**ERVARING ELDERS**
+**Eduface draait al bij vier hogescholen en universiteiten in Nederland**
+Wij zijn niet de eerste. Het model is ontwikkeld met hulp van de Radboud Universiteit.
+
+Logostrook in één kleur: Hogeschool Rotterdam (onderschrift: lerarenopleiding) · De Haagse Hogeschool · Tilburg University · Radboud Universiteit
+
+_Bron: Platform/product.md (betalende klanten, Hogeschool Rotterdam draait bij de lerarenopleiding). Logo's: Design/Merk/logo-van-scholen/._
 ## 8. Wat je erbij krijgt [nog te doen]
 ## 9. Privacy en AVG [nog te doen]
 ## 10. Prijs en licentiemodel [nog te doen]
