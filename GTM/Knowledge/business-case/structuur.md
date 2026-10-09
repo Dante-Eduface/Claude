@@ -32,3 +32,19 @@ _Laatst bijgewerkt: 2026-10-09._
 | 15 | Tijdlijn, zonder datums | Go → go-liveplan, met de testperiode tijdens de afronding → implementatieplan |
 
 Rollen en eigenaarschap zitten niet in de business case maar in het implementatieplan.
+
+## Toon
+
+Vastgelegd 09-10-2026.
+
+- **Zakelijk in toon, makkelijk in taal.** Zinnen van hooguit 15 tot 20 woorden. Conclusie eerst, dan onderbouwing.
+- **Getallen in plaats van bijvoeglijke naamwoorden.** "40% minder nakijktijd", niet "aanzienlijk sneller".
+- **Geen jargon zonder uitleg** (rubric, LTI), **geen verkoopwoorden** (revolutionair, naadloos, ontzorgen).
+- **De instelling spreekt.** "Wij" is de instelling, Eduface is de leverancier waarover het gaat. De champion legt het neer als intern stuk, niet als offerte.
+- **Geen aanspreekvorm.** Het stuk beschrijft ("de instelling", "docenten", "wij"). Waar het toch moet: u.
+
+Voorbeeld: "Docenten besteden nu gemiddeld X uur per opdracht aan nakijken. Met Eduface wordt dat Y uur."
+
+## Open
+
+- Heet de testperiode in dit stuk "proof of value", net als in het go-liveplan? Voorstel: ja. (09-10-2026)
