@@ -120,7 +120,23 @@ _Akkoord 09-10-2026. Geen EU-opslag en geen dataminimalisatie tot bevestigd._
 _De verwerkersovereenkomst ligt ter beoordeling bij onze AVG-functionaris._
 
 _Bronnen: Platform/product.md (gegevensbescherming), mail aan AVG-adres 01-10. Open: EU-opslag (Menno), dataminimalisatie vanuit NEO (Samuel: nog niet gebouwd)._
-## 10. Prijs en licentiemodel [nog te doen]
+## 10. Prijs en licentiemodel [akkoord]
+_Akkoord 09-10-2026._
+
+**PRIJS EN LICENTIEMODEL**
+**Eduface kost 1.500 euro per maand, vanaf de eerste dag, alles inbegrepen**
+
+| Studenten | × | Prijs per student per maand | × | Maanden | = | Per jaar |
+|---|---|---|---|---|---|---|
+| 400 (minimum) | × | 3,75 euro | × | 12 | = | **18.000 euro** |
+
+Dit is de vaste licentieprijs, ook tijdens de proof of value. De koppeling met NEO, de inrichting per opdracht en de training zitten in de prijs.
+
+- Wij starten met ongeveer 350 actieve studenten. Tot 400 studenten blijft de prijs gelijk.
+- Boven de 400 studenten: ?
+- Looptijd: 1 jaar, met de mogelijkheid om na 90 dagen op te zeggen.
+
+_Bronnen: prijsopzet Dante 08-10 en 09-10 (3,75 euro, minimum 400, 1.500 per maand ook tijdens proof of value, 1 jaar met opt-out na 90 dagen). 350 actieve studenten: document Marjolein 07-10. Wijkt af van GTM/Pricing/prijsmodel-psu-26-27.md (3 euro, minimum 500)._
 ## 11. Kosten, baten en ROI [nog te doen]
 ## 12. Risico's met maatregelen [nog te doen]
 ## 13. Scope [nog te doen]
