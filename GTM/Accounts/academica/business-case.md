@@ -28,7 +28,19 @@ _15 minuten is een aanname, de proof of value meet het echte cijfer._
 - Elke extra nakijker vraagt een BKE-traject en herbeoordeling, of een externe nakijker tegen een extern tarief.
 
 _Bronnen: tabel Marjolein 07-10 (30 min, ~1.100 opdrachten, 520/710 uur), gesprek 24-09 (workflow, herkansing)._
-## 3. Aansluiting op het koersplan [nog te doen]
+## 3. Aansluiting op het koersplan [akkoord]
+_Akkoord 09-10-2026. Alleen efficiency, als brug naar onderdeel 4._
+
+**AANSLUITING OP ONS KOERSPLAN**
+**Eduface draagt bij aan efficiency, een van de zeven punten in ons koersplan tot 2030**
+
+| Doel uit ons koersplan | Bijdrage van Eduface |
+|---|---|
+| Efficiency: "?" (letterlijk uit het koersplan, aan te leveren) | Minder nakijkwerk per opdracht, en groei opvangen zonder evenredig meer nakijkers. Zie onderdeel 4. |
+
+Na een jaar evalueren we de bijdrage binnen het koerspunt efficiency.
+
+_Bron: gesprek 01-10 (Marjolein: efficiency is een van de zeven punten in het koersplan tot 2030). Letterlijke tekst nog niet ontvangen._
 ## 4. Impact: geld, tijd, people [nog te doen]
 ## 5. Feedbackkwaliteit [nog te doen]
 ## 6. Volgbaarheid en accreditatie [nog te doen]
