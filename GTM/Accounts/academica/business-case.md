@@ -1,12 +1,13 @@
 # Business case Academica: werkbestand
-_Volgt `GTM/Knowledge/business-case/structuur.md`. Per onderdeel: concept in de chat, na akkoord hier. Eerste concept (09-10) staat in `business-case-concept-v1.md`._
+_Volgt `GTM/Knowledge/business-case/structuur.md`, maar zonder tijdlijn (geschrapt voor Academica 09-10). Per onderdeel: concept in de chat, na akkoord hier. Eerste concept (09-10) staat in `business-case-concept-v1.md`._
 
 ## 1. Managementsamenvatting [nog te doen]
+_Label: MANAGEMENTSAMENVATTING. Kop: Nederlands onderwijskundig AI-model voor formatieve feedback._
 ## 2. De pijn, workflow nu tegenover met Eduface [akkoord]
 _Akkoord 09-10-2026._
 
-**DE HUIDIGE SITUATIE**
-**Een docent is nu 30 minuten bezig met één opdracht**
+**HUIDIGE SITUATIE**
+**Docenten zijn minder tijd kwijt aan het formuleren van feedback**
 Bij ongeveer 1.100 opdrachten per jaar is dat 460 uur nakijkwerk. Met Eduface doet het platform de eerste beoordeling en controleert de docent die.
 
 **Nu** · 30 min per opdracht
@@ -31,8 +32,8 @@ _Bronnen: tabel Marjolein 07-10 (30 min, ~1.100 opdrachten, 520/710 uur), gespre
 ## 3. Aansluiting op het koersplan [akkoord]
 _Akkoord 09-10-2026. Alleen efficiency, als brug naar onderdeel 4._
 
-**AANSLUITING OP ONS KOERSPLAN**
-**Eduface draagt bij aan efficiency, een van de zeven punten in ons koersplan tot 2030**
+**KOERSPLAN**
+**Efficiency**
 
 | Doel uit ons koersplan | Bijdrage van Eduface |
 |---|---|
@@ -45,7 +46,6 @@ _Bron: gesprek 01-10 (Marjolein: efficiency is een van de zeven punten in het ko
 _Akkoord 09-10-2026._
 
 **IMPACT**
-**Met Eduface besparen we ruim 6 werkweken nakijkwerk per jaar**
 
 | Geld (icoon) | Tijd (icoon) | Mensen (icoon) |
 |---|---|---|
@@ -59,7 +59,7 @@ _Rekensommen: 255 = 50% × 511,5 uur (summatief 461,5 + formatief 30 + thesisbeo
 ## 5. Volgbaarheid en accreditatie [akkoord]
 _Akkoord 09-10-2026. De drie eisen waar Eduface het meest aan bijdraagt._
 
-**VOLGBAARHEID EN ACCREDITATIE**
+**ACCREDITATIE**
 **Elke beoordeling blijft navolgbaar, de docent blijft eindverantwoordelijk**
 
 | Eis | Hoe geborgd met Eduface |
@@ -83,7 +83,7 @@ _Akkoord 09-10-2026._
 ## 7. Social proof [akkoord]
 _Akkoord 09-10-2026. Zonder klantcitaat, zonder Leiden._
 
-**ERVARING ELDERS**
+**ERVARING**
 **Eduface draait al bij vier hogescholen en universiteiten in Nederland**
 Wij zijn niet de eerste. Het model is ontwikkeld met hulp van de Radboud Universiteit.
 
@@ -93,8 +93,7 @@ _Bron: Platform/product.md (betalende klanten, Hogeschool Rotterdam draait bij d
 ## 8. Wat je erbij krijgt [akkoord]
 _Akkoord 09-10-2026. Twee tegels: tech support en AI-geletterdheid geschrapt._
 
-**WAT WE ERBIJ KRIJGEN**
-**Eduface werkt in NEO, en wij worden erin begeleid**
+**INBEGREPEN IN DE LICENTIE**
 
 | LMS-integratie (icoon) | Training (icoon) |
 |---|---|
@@ -106,8 +105,7 @@ _Bronnen: mail Dante aan Joey 01-10 (LTI 1.3, passback), Marjolein 24-09 en 07-1
 ## 9. Privacy en AVG [akkoord]
 _Akkoord 09-10-2026. Geen EU-opslag en geen dataminimalisatie tot bevestigd._
 
-**PRIVACY EN AVG**
-**Studentwerk blijft van ons en wordt niet gebruikt om AI te trainen**
+**PRIVACY**
 
 - ✓ Academica blijft eigenaar van al het studentenwerk en alle data.
 - ✓ Studentenwerk wordt niet gebruikt om AI-modellen te trainen.
@@ -123,8 +121,7 @@ _Bronnen: Platform/product.md (gegevensbescherming), mail aan AVG-adres 01-10. O
 ## 10. Prijs en licentiemodel [akkoord]
 _Akkoord 09-10-2026._
 
-**PRIJS EN LICENTIEMODEL**
-**Eduface kost 1.500 euro per maand, vanaf de eerste dag, alles inbegrepen**
+**LICENTIEMODEL**
 
 | Studenten | × | Prijs per student per maand | × | Maanden | = | Per jaar |
 |---|---|---|---|---|---|---|
@@ -140,8 +137,7 @@ _Bronnen: prijsopzet Dante 08-10 en 09-10 (3,75 euro, minimum 400, 1.500 per maa
 ## 11. Kosten, baten en ROI [akkoord]
 _Akkoord 09-10-2026. Grafiek volgt zodra het normbedrag per uur bekend is (Marjolein vult in op 22-10)._
 
-**KOSTEN EN BATEN**
-**Eduface verdient zich terug zodra een nakijkuur ons meer dan 70 euro kost**
+**ROI**
 
 **De prijs is opgebouwd uit drie onderdelen**
 
@@ -167,6 +163,7 @@ _[Grafiek: opgetelde baten en kosten over 24 maanden, terugverdienmoment gemarke
 
 _Rekensommen: 70 = 18.000 / 255. 330 = 50% × 661,5 uur (inclusief groei). 4.500 = 3 × 1.500. Kostenopbouw aangeleverd door Dante 09-10 (intern: 70/20/10, bedragen niet tonen)._
 ## 12. Risico's met maatregelen [niet akkoord, later terugkomen]
+_Label: MOGELIJKE RISICO'S._
 _09-10-2026: concept met vijf risico's (NEO-koppeling, praktijkgericht werk, betalen voor niets, vertrouwen, IT-uren) niet akkoord. Wat er anders moet: nog te horen._
 ## 13. Scope [akkoord]
 _Akkoord 09-10-2026. Proof of value 2 weken (was 2 maanden)._
@@ -184,5 +181,3 @@ _Akkoord 09-10-2026. Proof of value 2 weken (was 2 maanden)._
 | **Door als:** de koppeling met NEO werkt, inclusief de cijferterugkoppeling, en de beoordeling van ons praktijkgerichte werk voldoet aan de vooraf vastgelegde criteria | |
 
 _Bronnen: go-voorwaarden Marjolein 01-10, opleidingen uit tabel 07-10. Voorstel Dante nog te kiezen: opleiding SO, 20 tot 25 inzendingen van één module-opdracht._
-## 14. Tijdlijn [overgeslagen 09-10-2026]
-_Volgorde volgens Dante: go, go-liveplan (met proof of value van 2 weken aan het eind), implementatieplan, live. Concept in de chat, niet uitgewerkt op verzoek._
