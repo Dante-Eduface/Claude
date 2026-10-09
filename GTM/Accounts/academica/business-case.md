@@ -168,5 +168,20 @@ _[Grafiek: opgetelde baten en kosten over 24 maanden, terugverdienmoment gemarke
 _Rekensommen: 70 = 18.000 / 255. 330 = 50% × 661,5 uur (inclusief groei). 4.500 = 3 × 1.500. Kostenopbouw aangeleverd door Dante 09-10 (intern: 70/20/10, bedragen niet tonen)._
 ## 12. Risico's met maatregelen [niet akkoord, later terugkomen]
 _09-10-2026: concept met vijf risico's (NEO-koppeling, praktijkgericht werk, betalen voor niets, vertrouwen, IT-uren) niet akkoord. Wat er anders moet: nog te horen._
-## 13. Scope [nog te doen]
+## 13. Scope [akkoord]
+_Akkoord 09-10-2026. Proof of value 2 weken (was 2 maanden)._
+
+**SCOPE**
+**We starten klein, en rollen uit na een geslaagde proof of value**
+
+**Proof of value (2 weken)** → **Uitrol**
+
+| Proof of value | Uitrol |
+|---|---|
+| Opleiding: ? | Alle geaccrediteerde opleidingen: SO, MILE, AD-DEP, PMKC, PHKC, MET en MBA |
+| Echte opdrachten met onze eigen rubrics (aantal: ?) | Later de Pabo, na de accreditatie |
+| We meten de nakijktijd vooraf en met Eduface | Formatieve feedback bij elke module |
+| **Door als:** de koppeling met NEO werkt, inclusief de cijferterugkoppeling, en de beoordeling van ons praktijkgerichte werk voldoet aan de vooraf vastgelegde criteria | |
+
+_Bronnen: go-voorwaarden Marjolein 01-10, opleidingen uit tabel 07-10. Voorstel Dante nog te kiezen: opleiding SO, 20 tot 25 inzendingen van één module-opdracht._
 ## 14. Tijdlijn [nog te doen]
