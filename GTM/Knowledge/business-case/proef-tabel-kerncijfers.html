@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proef tabel en kerncijfers</title>
+<style>
+  /* Klantkleur is een placeholder. Per klant vervangen door de hoofdkleur uit hun huisstijl. */
+  :root {
+    --klant: #1f4e79;
+    --klant-tint: #eef3f8;
+    --tekst: #1d2433;
+    --tekst-zacht: #5b6474;
+    --lijn: #d9dde4;
+    --papier: #ffffff;
+    --achter: #f2f3f5;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--achter); color: var(--tekst);
+         font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 15px; line-height: 1.5; }
+  .uitleg { max-width: 1240px; margin: 32px auto 0; padding: 0 16px; }
+  .uitleg h1 { font-size: 22px; margin: 0 0 8px; }
+  .uitleg p { margin: 0; color: var(--tekst-zacht); max-width: 68ch; }
+  .naast { display: grid; grid-template-columns: repeat(auto-fit, minmax(560px, 1fr));
+           gap: 32px; max-width: 1240px; margin: 24px auto 64px; padding: 0 16px; }
+  .richting-label { font-size: 13px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase;
+                    color: var(--tekst-zacht); margin: 0 0 8px; }
+  .richting-label b { color: var(--tekst); }
+  .a4 { background: var(--papier); min-height: 1100px; padding: 56px 48px; box-shadow: 0 1px 3px rgba(20,30,50,.12); }
+  .a4 h2 { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--klant); margin: 0 0 8px; font-weight: 600; }
+  .a4 h3 { font-size: 22px; line-height: 1.25; margin: 0 0 24px; font-weight: 700; }
+  .a4 p.intro { margin: 0 0 16px; color: var(--tekst-zacht); font-size: 14px; }
+  .sectie { margin-bottom: 48px; }
+  .bron { font-size: 12px; color: var(--tekst-zacht); margin-top: 8px; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 14px; font-variant-numeric: tabular-nums; }
+  caption { text-align: left; font-size: 14px; font-weight: 600; margin-bottom: 8px; }
+  th, td { padding: 8px 8px; vertical-align: top; text-align: left; }
+  th.num, td.num { text-align: right; }
+  th:first-child, td:first-child { padding-left: 0; }
+
+  /* Richting A: licht */
+  .A thead th { font-weight: 600; font-size: 12px; color: var(--tekst-zacht); border-bottom: 2px solid var(--klant); }
+  .A tbody td { border-bottom: 1px solid var(--lijn); }
+  .A tr.totaal td { border-bottom: none; border-top: 2px solid var(--tekst); font-weight: 700; padding-top: 12px; }
+  .A tr.groep td { font-weight: 600; padding-top: 16px; border-bottom: none; color: var(--klant); }
+
+  .A .cijfers { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+  .A .cijfer { border-top: 2px solid var(--klant); padding-top: 16px; }
+  .A .laag { font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--tekst-zacht); }
+  .A .getal { font-size: 30px; font-weight: 700; line-height: 1.1; margin: 8px 0; white-space: nowrap; color: var(--tekst); }
+  .A .label { font-size: 13px; color: var(--tekst-zacht); }
+
+  /* Richting B: blok */
+  .B table { border-radius: 8px; }
+  .B thead th { background: var(--klant); color: #fff; font-weight: 600; font-size: 12px; padding: 10px 12px; }
+  .B th:first-child, .B td:first-child { padding-left: 12px; }
+  .B tbody td { padding: 10px 12px; border-bottom: 1px solid var(--lijn); }
+  .B tr.groep td { background: var(--klant-tint); font-weight: 600; color: var(--klant); padding: 8px 12px; }
+  .B tr.totaal td { background: var(--klant-tint); font-weight: 700; border-bottom: none; }
+
+  .B .cijfers { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+  .B .cijfer { background: var(--klant-tint); border-radius: 10px; padding: 20px; }
+  .B .laag { font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--klant); }
+  .B .getal { font-size: 28px; font-weight: 700; line-height: 1.1; margin: 10px 0 8px; white-space: nowrap; color: var(--klant); }
+  .B .label { font-size: 13px; color: var(--tekst); }
+
+  .voorbeeld { display: inline-block; font-size: 11px; color: var(--tekst-zacht); border: 1px solid var(--lijn); border-radius: 6px; padding: 2px 8px; margin-bottom: 16px; }
+</style>
+</head>
+<body>
+<div class="uitleg">
+  <h1>Proef: tabel en kerncijfers</h1>
+  <p>Twee richtingen naast elkaar op een A4. Links A, licht: lijnen en ruimte, kleur alleen als accent. Rechts B, blok: gekleurde vlakken en kaarten. De blauwe kleur is een placeholder voor de hoofdkleur van de klant. Alle cijfers zijn verzonnen voorbeeldcijfers.</p>
+</div>
+
+<div class="naast">
+  <!-- RICHTING A -->
+  <div>
+    <p class="richting-label"><b>A</b>: licht, lijnen en ruimte</p>
+    <div class="a4 A">
+      <span class="voorbeeld">Voorbeeldcijfers</span>
+      <div class="sectie">
+        <h2>Samenvatting</h2>
+        <h3>Met Eduface besparen wij 1.900 uur nakijktijd per jaar</h3>
+        <div class="cijfers">
+          <div class="cijfer"><div class="laag">Geld</div><div class="getal">€ 84.000</div><div class="label">netto besparing per jaar, vanaf jaar 2</div></div>
+          <div class="cijfer"><div class="laag">Tijd</div><div class="getal">1.900 uur</div><div class="label">minder nakijken per jaar, over 40 docenten</div></div>
+          <div class="cijfer"><div class="laag">People</div><div class="getal">1 week</div><div class="label">tot een student feedback heeft, nu 3 weken</div></div>
+        </div>
+      </div>
+      <div class="sectie">
+        <h2>Kosten en baten</h2>
+        <p class="intro">De investering is in jaar 1 terugverdiend. Bedragen in euro, exclusief btw.</p>
+        <table>
+          <caption>Kosten en baten per jaar</caption>
+          <thead><tr><th>Post</th><th class="num">Jaar 1</th><th class="num">Jaar 2</th><th class="num">Jaar 3</th></tr></thead>
+          <tbody>
+            <tr class="groep"><td colspan="4">Kosten</td></tr>
+            <tr><td>Licenties</td><td class="num">54.000</td><td class="num">54.000</td><td class="num">54.000</td></tr>
+            <tr><td>Implementatie en training</td><td class="num">6.000</td><td class="num">0</td><td class="num">0</td></tr>
+            <tr class="groep"><td colspan="4">Baten</td></tr>
+            <tr><td>Bespaarde nakijkuren</td><td class="num">114.000</td><td class="num">138.000</td><td class="num">138.000</td></tr>
+            <tr class="totaal"><td>Netto</td><td class="num">54.000</td><td class="num">84.000</td><td class="num">84.000</td></tr>
+          </tbody>
+        </table>
+        <p class="bron">Uurtarief docent € 72, op basis van de cao. Aanname: 2 uur besparing per student per jaar.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- RICHTING B -->
+  <div>
+    <p class="richting-label"><b>B</b>: blok, vlakken en kaarten</p>
+    <div class="a4 B">
+      <span class="voorbeeld">Voorbeeldcijfers</span>
+      <div class="sectie">
+        <h2>Samenvatting</h2>
+        <h3>Met Eduface besparen wij 1.900 uur nakijktijd per jaar</h3>
+        <div class="cijfers">
+          <div class="cijfer"><div class="laag">Geld</div><div class="getal">€ 84.000</div><div class="label">netto besparing per jaar, vanaf jaar 2</div></div>
+          <div class="cijfer"><div class="laag">Tijd</div><div class="getal">1.900 uur</div><div class="label">minder nakijken per jaar, over 40 docenten</div></div>
+          <div class="cijfer"><div class="laag">People</div><div class="getal">1 week</div><div class="label">tot een student feedback heeft, nu 3 weken</div></div>
+        </div>
+      </div>
+      <div class="sectie">
+        <h2>Kosten en baten</h2>
+        <p class="intro">De investering is in jaar 1 terugverdiend. Bedragen in euro, exclusief btw.</p>
+        <table>
+          <caption>Kosten en baten per jaar</caption>
+          <thead><tr><th>Post</th><th class="num">Jaar 1</th><th class="num">Jaar 2</th><th class="num">Jaar 3</th></tr></thead>
+          <tbody>
+            <tr class="groep"><td colspan="4">Kosten</td></tr>
+            <tr><td>Licenties</td><td class="num">54.000</td><td class="num">54.000</td><td class="num">54.000</td></tr>
+            <tr><td>Implementatie en training</td><td class="num">6.000</td><td class="num">0</td><td class="num">0</td></tr>
+            <tr class="groep"><td colspan="4">Baten</td></tr>
+            <tr><td>Bespaarde nakijkuren</td><td class="num">114.000</td><td class="num">138.000</td><td class="num">138.000</td></tr>
+            <tr class="totaal"><td>Netto</td><td class="num">54.000</td><td class="num">84.000</td><td class="num">84.000</td></tr>
+          </tbody>
+        </table>
+        <p class="bron">Uurtarief docent € 72, op basis van de cao. Aanname: 2 uur besparing per student per jaar.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
