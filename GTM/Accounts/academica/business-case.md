@@ -2,7 +2,32 @@
 _Volgt `GTM/Knowledge/business-case/structuur.md`. Per onderdeel: concept in de chat, na akkoord hier. Eerste concept (09-10) staat in `business-case-concept-v1.md`._
 
 ## 1. Managementsamenvatting [nog te doen]
-## 2. De pijn, workflow nu tegenover met Eduface [nog te doen]
+## 2. De pijn, workflow nu tegenover met Eduface [akkoord]
+_Akkoord 09-10-2026._
+
+**DE HUIDIGE SITUATIE**
+**Een docent is nu 30 minuten bezig met één opdracht**
+Bij ongeveer 1.100 opdrachten per jaar is dat 460 uur nakijkwerk. Met Eduface doet het platform de eerste beoordeling en controleert de docent die.
+
+**Nu** · 30 min per opdracht
+1. Student levert in via NEO (automatisch)
+2. Docent leest, beoordeelt en typt de feedback (30 min)
+3. Cijfer gaat via NEO naar de student en naar Progress (automatisch)
+4. Bij onvoldoende levert de student opnieuw in en begint het proces opnieuw
+
+**Met Eduface** · 15 min per opdracht
+1. Student levert in via NEO (automatisch)
+2. Eduface beoordeelt per criterium en schrijft feedback (automatisch, productbeeld)
+3. Docent controleert, past aan en keurt goed (15 min, productbeeld)
+4. Cijfer gaat terug naar NEO en naar Progress (automatisch)
+
+_15 minuten is een aanname, de proof of value meet het echte cijfer._
+
+**Wat kost niets doen**
+- Het nakijkwerk groeit van 520 naar 710 uur per jaar, door de Pabo, de theses vanaf jaar 2 en de groei van de MET.
+- Elke extra nakijker vraagt een BKE-traject en herbeoordeling, of een externe nakijker tegen een extern tarief.
+
+_Bronnen: tabel Marjolein 07-10 (30 min, ~1.100 opdrachten, 520/710 uur), gesprek 24-09 (workflow, herkansing)._
 ## 3. Aansluiting op het koersplan [nog te doen]
 ## 4. Impact: geld, tijd, people [nog te doen]
 ## 5. Feedbackkwaliteit [nog te doen]
