@@ -41,7 +41,21 @@ _Akkoord 09-10-2026. Alleen efficiency, als brug naar onderdeel 4._
 Na een jaar evalueren we de bijdrage binnen het koerspunt efficiency.
 
 _Bron: gesprek 01-10 (Marjolein: efficiency is een van de zeven punten in het koersplan tot 2030). Letterlijke tekst nog niet ontvangen._
-## 4. Impact: geld, tijd, people [nog te doen]
+## 4. Impact: geld, tijd, people [akkoord]
+_Akkoord 09-10-2026._
+
+**IMPACT**
+**Met Eduface besparen we ruim 6 werkweken nakijkwerk per jaar**
+
+| Geld (icoon) | Tijd (icoon) | Mensen (icoon) |
+|---|---|---|
+| **70 euro** | **255 uur** | **100%** |
+| Vanaf deze kosten per nakijkuur verdient Eduface zich terug op tijd alleen. | Per jaar minder nakijkwerk: 15 in plaats van 30 minuten per opdracht. | Van de studenten krijgt formatieve feedback bij elke module. Nu is dat de helft, in twee modules. |
+| Elke externe beoordeling die we niet hoeven in te kopen, komt hierbovenop: ? | Dat is ruim 6 werkweken die docenten aan onderwijs besteden. | Ook dan ligt het totale nakijkwerk nog ruim 130 uur onder dat van nu. |
+
+_Aannames: 1.098 opdrachten, 120 formatieve rondes en 10 theses per jaar (tabel 07-10). Nakijktijd 50% korter, te meten in de proof of value. Overleg bij de thesis en inwerken van nakijkers blijven gelijk. De 255 uur geldt bij het huidige aantal formatieve rondes; met formatieve feedback bij elke module (1.098 rondes van 15 min) komt het totaal op ~388 uur, tegen ~521 uur nu._
+
+_Rekensommen: 255 = 50% × 511,5 uur (summatief 461,5 + formatief 30 + thesisbeoordeling 20). 70 = 18.000 / 255. 6,4 werkweken = 255 / 40._
 ## 5. Feedbackkwaliteit [nog te doen]
 ## 6. Volgbaarheid en accreditatie [nog te doen]
 ## 7. Toekomstbestendig onderwijs [nog te doen]
