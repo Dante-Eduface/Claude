@@ -143,11 +143,10 @@ _Akkoord 09-10-2026. Grafiek volgt zodra het normbedrag per uur bekend is (Marjo
 **KOSTEN EN BATEN**
 **Eduface verdient zich terug zodra een nakijkuur ons meer dan 70 euro kost**
 
-**Waar de 18.000 euro per jaar uit bestaat**
+**De prijs is opgebouwd uit drie onderdelen**
 
 | AI-capaciteit (icoon) | Toolfee (icoon) | Training (icoon) |
 |---|---|---|
-| **12.600 euro** (70%) | **3.600 euro** (20%) | **1.800 euro** (10%) |
 
 | | Jaar 1 | Jaar 2 |
 |---|---|---|
@@ -166,7 +165,7 @@ _Aannames: nakijktijd 50% korter, te meten in de proof of value. In jaar 2 telle
 
 _[Grafiek: opgetelde baten en kosten over 24 maanden, terugverdienmoment gemarkeerd. Na invullen normbedrag.]_
 
-_Rekensommen: 70 = 18.000 / 255. 330 = 50% × 661,5 uur (inclusief groei). 4.500 = 3 × 1.500. Kostenopbouw 70/20/10 aangeleverd door Dante 09-10._
+_Rekensommen: 70 = 18.000 / 255. 330 = 50% × 661,5 uur (inclusief groei). 4.500 = 3 × 1.500. Kostenopbouw aangeleverd door Dante 09-10 (intern: 70/20/10, bedragen niet tonen)._
 ## 12. Risico's met maatregelen [nog te doen]
 ## 13. Scope [nog te doen]
 ## 14. Tijdlijn [nog te doen]
