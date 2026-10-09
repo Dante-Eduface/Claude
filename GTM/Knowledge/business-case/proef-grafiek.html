@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proef terugverdiengrafiek</title>
+<style>
+  /* Klantkleur is een placeholder. Per klant vervangen door de hoofdkleur uit hun huisstijl. */
+  :root {
+    --klant: #1f4e79;
+    --klant-tint: #eef3f8;
+    --kosten: #7b8494;
+    --tekst: #1d2433;
+    --tekst-zacht: #5b6474;
+    --lijn: #d9dde4;
+    --raster: #eceef2;
+    --achter: #f2f3f5;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--achter); color: var(--tekst);
+         font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 15px; line-height: 1.5; }
+  .a4 { max-width: 794px; margin: 32px auto; background: #fff; padding: 64px 56px 72px;
+        box-shadow: 0 1px 3px rgba(20,30,50,.12); }
+  .voorbeeld { display: inline-block; font-size: 11px; color: var(--tekst-zacht); border: 1px solid var(--lijn);
+               border-radius: 6px; padding: 2px 8px; margin-bottom: 24px; }
+  h2 { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--klant); margin: 0 0 8px; font-weight: 600; }
+  h1 { font-size: 26px; line-height: 1.25; margin: 0 0 12px; font-weight: 700; max-width: 32ch; }
+  .lead { margin: 0 0 24px; color: var(--tekst-zacht); max-width: 62ch; }
+  figure { margin: 0; }
+  figcaption { font-size: 14px; font-weight: 600; margin-bottom: 4px; }
+  .legenda { display: flex; gap: 20px; font-size: 13px; color: var(--tekst-zacht); margin-bottom: 8px; }
+  .legenda i { display: inline-block; width: 16px; height: 2px; vertical-align: 4px; margin-right: 6px; }
+  svg { display: block; width: 100%; height: auto; overflow: visible; }
+  .as text, .label { font-size: 12px; fill: var(--tekst-zacht); font-variant-numeric: tabular-nums; }
+  .direct { font-size: 13px; font-weight: 600; fill: var(--tekst); }
+  .moment { font-size: 13px; font-weight: 600; fill: var(--tekst); }
+  .bron { font-size: 12px; color: var(--tekst-zacht); margin-top: 12px; }
+</style>
+</head>
+<body>
+<div class="a4">
+  <span class="voorbeeld">Voorbeeldcijfers</span>
+  <h2>Kosten en baten</h2>
+  <h1>De investering is na vier maanden terugverdiend</h1>
+  <p class="lead">Vanaf maand vier leveren de bespaarde docenturen meer op dan de licenties kosten. Na twee jaar staat de instelling € 156.000 in de plus.</p>
+
+  <figure>
+    <figcaption>Opgetelde kosten en baten, per maand, in euro</figcaption>
+    <div class="legenda"><span><i style="background:var(--klant)"></i>Baten: bespaarde docenturen</span><span><i style="background:var(--kosten)"></i>Kosten: licenties en implementatie</span></div>
+    <svg id="grafiek" viewBox="0 0 680 320" role="img" aria-label="Lijngrafiek: opgetelde baten stijgen sneller dan opgetelde kosten en halen die in maand vier in."></svg>
+  </figure>
+  <p class="bron">Kosten: € 6.000 implementatie in maand 1, daarna € 4.500 licenties per maand. Baten: € 6.000 per maand tijdens de testperiode (maand 1 tot 3), daarna € 12.000. De exacte bedragen staan in de tabel kosten en baten.</p>
+</div>
+
+<script>
+  // Voorbeelddata, 24 maanden, cumulatief
+  const M = 24;
+  const kosten = [], baten = [];
+  for (let m = 1; m <= M; m++) {
+    kosten.push(6000 + 4500 * m);
+    baten.push(m <= 3 ? 6000 * m : 18000 + 12000 * (m - 3));
+  }
+  const svg = document.getElementById('grafiek');
+  const W = 680, H = 320, L = 64, R = 150, T = 12, B = 36;
+  const pw = W - L - R, ph = H - T - B, yMax = 300000;
+  const x = m => L + (m - 1) / (M - 1) * pw;
+  const y = v => T + ph - v / yMax * ph;
+  const ns = 'http://www.w3.org/2000/svg';
+  const el = (n, a, t) => { const e = document.createElementNS(ns, n); for (const k in a) e.setAttribute(k, a[k]); if (t) e.textContent = t; svg.appendChild(e); return e; };
+  const fmt = v => v === 0 ? '0' : (v / 1000) + 'k';
+
+  // Raster en y-as
+  const as = el('g', { class: 'as' });
+  for (let v = 0; v <= yMax; v += 50000) {
+    const g = document.createElementNS(ns, 'line');
+    Object.entries({ x1: L, x2: L + pw, y1: y(v), y2: y(v), stroke: v === 0 ? '#9aa3b2' : 'var(--raster)', 'stroke-width': 1 }).forEach(([k, val]) => g.setAttribute(k, val));
+    as.appendChild(g);
+    const t = document.createElementNS(ns, 'text');
+    t.setAttribute('x', L - 10); t.setAttribute('y', y(v) + 4); t.setAttribute('text-anchor', 'end'); t.textContent = fmt(v);
+    as.appendChild(t);
+  }
+  // x-as: maanden
+  [1, 6, 12, 18, 24].forEach(m => el('text', { class: 'label', x: x(m), y: H - 12, 'text-anchor': 'middle' }, 'mnd ' + m));
+
+  // Testperiode als achtergrondband
+  el('rect', { x: x(1), y: T, width: x(3) - x(1), height: ph, fill: 'var(--klant-tint)' });
+  el('text', { class: 'label', x: x(1) + 4, y: T + 14 }, 'testperiode');
+
+  const pad = arr => arr.map((v, i) => (i ? 'L' : 'M') + x(i + 1).toFixed(1) + ' ' + y(v).toFixed(1)).join(' ');
+  el('path', { d: pad(kosten), fill: 'none', stroke: 'var(--kosten)', 'stroke-width': 2, 'stroke-linejoin': 'round' });
+  el('path', { d: pad(baten), fill: 'none', stroke: 'var(--klant)', 'stroke-width': 2.5, 'stroke-linejoin': 'round' });
+
+  // Directe labels aan het eind van elke lijn
+  el('text', { class: 'direct', x: x(M) + 10, y: y(baten[M - 1]) + 4 }, 'Baten € ' + baten[M - 1].toLocaleString('nl-NL'));
+  el('text', { class: 'direct', x: x(M) + 10, y: y(kosten[M - 1]) + 4 }, 'Kosten € ' + kosten[M - 1].toLocaleString('nl-NL'));
+
+  // Terugverdienmoment: eerste maand waarin baten >= kosten
+  const tv = baten.findIndex((b, i) => b >= kosten[i]) + 1;
+  el('line', { x1: x(tv), x2: x(tv), y1: y(baten[tv - 1]) - 6, y2: y(150000), stroke: 'var(--tekst)', 'stroke-width': 1 });
+  el('circle', { cx: x(tv), cy: y(baten[tv - 1]), r: 5, fill: '#fff', stroke: 'var(--tekst)', 'stroke-width': 2 });
+  el('text', { class: 'moment', x: x(tv) + 8, y: y(150000) + 4 }, 'Terugverdiend in maand ' + tv);
+</script>
+</body>
+</html>

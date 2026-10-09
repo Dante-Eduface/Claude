@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proef kerncijfers</title>
+<style>
+  /* Klantkleur is een placeholder. Per klant vervangen door de hoofdkleur uit hun huisstijl. */
+  :root {
+    --klant: #1f4e79;
+    --klant-tint: #eef3f8;
+    --tekst: #1d2433;
+    --tekst-zacht: #5b6474;
+    --lijn: #d9dde4;
+    --achter: #f2f3f5;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--achter); color: var(--tekst);
+         font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 15px; line-height: 1.5; }
+  .a4 { max-width: 794px; margin: 32px auto; background: #fff; padding: 64px 64px 72px;
+        box-shadow: 0 1px 3px rgba(20,30,50,.12); }
+  .voorbeeld { display: inline-block; font-size: 11px; color: var(--tekst-zacht); border: 1px solid var(--lijn);
+               border-radius: 6px; padding: 2px 8px; margin-bottom: 24px; }
+  h2 { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--klant); margin: 0 0 8px; font-weight: 600; }
+  h1 { font-size: 26px; line-height: 1.25; margin: 0 0 12px; font-weight: 700; max-width: 30ch; }
+  .lead { margin: 0 0 32px; color: var(--tekst-zacht); max-width: 62ch; }
+
+  .cijfers { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+  .cijfer { display: grid; grid-template-columns: 48px 210px minmax(0, 1fr); column-gap: 24px;
+            align-items: center; padding: 20px 24px; background: var(--klant-tint); border-radius: 12px; }
+  .icoon { width: 48px; height: 48px; border-radius: 50%; background: #fff;
+           display: grid; place-items: center; color: var(--klant); }
+  .icoon svg { width: 24px; height: 24px; }
+  .getal { color: var(--klant); font-size: 34px; font-weight: 700; line-height: 1.1; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .uitleg { margin: 0; font-size: 14px; }
+  .uitleg b { font-weight: 600; }
+  .uitleg span { display: block; color: var(--tekst-zacht); margin-top: 2px; }
+  /* Toegankelijk: de laag staat als tekst in het icoon-label, niet alleen als plaatje */
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+
+  .besluit { margin-top: 40px; border-left: 4px solid var(--klant); background: var(--klant-tint);
+             padding: 20px 24px; border-radius: 0 8px 8px 0; }
+  .besluit h2 { margin-bottom: 4px; }
+  .besluit p { margin: 0; font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="a4">
+  <span class="voorbeeld">Voorbeeldcijfers</span>
+  <h2>Samenvatting</h2>
+  <h1>Wij stellen voor Eduface in te voeren bij alle opleidingen</h1>
+  <p class="lead">Eduface kijkt schrijfopdrachten en tentamens na met AI. De docent keurt elke opmerking en elk cijfer goed voordat de student iets ziet.</p>
+
+  <ul class="cijfers">
+    <li class="cijfer">
+      <div class="icoon" role="img" aria-label="Geld">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M17 6.5A7 7 0 1 0 17 17.5"/><path d="M4 10h9"/><path d="M4 14h9"/></svg>
+      </div>
+      <div class="getal">€&nbsp;90.000</div>
+      <p class="uitleg"><b>netto per jaar, vanaf jaar 2</b><span>2.000 bespaarde docenturen van €&nbsp;72, min €&nbsp;54.000 aan licenties.</span></p>
+    </li>
+    <li class="cijfer">
+      <div class="icoon" role="img" aria-label="Tijd">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>
+      </div>
+      <div class="getal">2.000 uur</div>
+      <p class="uitleg"><b>minder nakijkwerk per jaar</b><span>50 uur per docent, bij 40 docenten.</span></p>
+    </li>
+    <li class="cijfer">
+      <div class="icoon" role="img" aria-label="Mensen">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19c.6-3.2 2.8-5 5.5-5s4.9 1.8 5.5 5"/><circle cx="17" cy="9" r="2.5"/><path d="M15.8 14.2c2.3.1 4 1.6 4.7 4.3"/></svg>
+      </div>
+      <div class="getal">1 week</div>
+      <p class="uitleg"><b>tot een student feedback krijgt</b><span>Nu is dat drie weken.</span></p>
+    </li>
+  </ul>
+
+  <div class="besluit">
+    <h2>Besluit</h2>
+    <p>Wij vragen het MT akkoord op invoering van Eduface bij alle opleidingen, te beginnen met een testperiode.</p>
+  </div>
+</div>
+</body>
+</html>

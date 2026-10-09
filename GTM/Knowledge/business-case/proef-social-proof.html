@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proef social proof</title>
+<style>
+  /* Klantkleur is een placeholder. Per klant vervangen door de hoofdkleur uit hun huisstijl. */
+  :root {
+    --klant: #1f4e79;
+    --klant-tint: #eef3f8;
+    --tekst: #1d2433;
+    --tekst-zacht: #5b6474;
+    --logo: #8a93a3;
+    --lijn: #d9dde4;
+    --achter: #f2f3f5;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--achter); color: var(--tekst);
+         font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 15px; line-height: 1.5; }
+  .a4 { max-width: 794px; margin: 32px auto; background: #fff; padding: 64px 56px 72px;
+        box-shadow: 0 1px 3px rgba(20,30,50,.12); }
+  .voorbeeld { display: inline-block; font-size: 11px; color: var(--tekst-zacht); border: 1px solid var(--lijn);
+               border-radius: 6px; padding: 2px 8px; margin-bottom: 24px; }
+  h2 { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--klant); margin: 0 0 8px; font-weight: 600; }
+  h1 { font-size: 26px; line-height: 1.25; margin: 0 0 12px; font-weight: 700; max-width: 32ch; }
+  .lead { margin: 0 0 32px; color: var(--tekst-zacht); max-width: 62ch; }
+
+  /* Logo's: allemaal in één grijstint, gelijke optische hoogte, geen kaders */
+  .logos { list-style: none; margin: 0 0 40px; padding: 24px 0; display: grid;
+           grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px 32px; align-items: center;
+           border-top: 1px solid var(--lijn); border-bottom: 1px solid var(--lijn); }
+  .logos li { display: flex; justify-content: center; }
+  .logos svg { height: 36px; width: auto; color: var(--logo); }
+  /* Echte logo's: <img> met filter, zodat elk logo dezelfde grijstint krijgt */
+  .logos img { height: 36px; width: auto; max-width: 100%; filter: grayscale(1) opacity(.7); }
+
+  .citaat { margin: 0; background: var(--klant-tint); border-radius: 12px; padding: 28px 32px;
+            display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 0 20px; }
+  .teken { font-size: 64px; line-height: .8; font-weight: 700; color: var(--klant); }
+  .citaat p { margin: 0 0 16px; font-size: 18px; line-height: 1.45; font-weight: 500; }
+  .wie { display: flex; align-items: center; gap: 12px; }
+  .foto { width: 40px; height: 40px; border-radius: 50%; background: #fff; border: 1px solid var(--lijn); }
+  .wie b { display: block; font-size: 14px; }
+  .wie span { font-size: 13px; color: var(--tekst-zacht); }
+</style>
+</head>
+<body>
+<div class="a4">
+  <span class="voorbeeld">Voorbeeld: logo's en citaat zijn placeholders</span>
+  <h2>Ervaring elders</h2>
+  <h1>Eduface draait al bij [aantal] instellingen in Nederland en het Verenigd Koninkrijk</h1>
+  <p class="lead">Wij zijn niet de eerste. Onderstaande instellingen gebruiken Eduface voor nakijken en feedback.</p>
+
+  <ul class="logos" aria-label="Instellingen die Eduface gebruiken">
+    <li><svg viewBox="0 0 150 36" aria-label="Logo instelling"><rect x="0" y="4" width="28" height="28" rx="4" fill="currentColor"/><text x="38" y="24" font-family="Georgia, serif" font-size="15" fill="currentColor">Hogeschool</text></svg></li>
+    <li><svg viewBox="0 0 150 36" aria-label="Logo instelling"><circle cx="14" cy="18" r="14" fill="currentColor"/><text x="36" y="24" font-family="Arial" font-weight="700" font-size="15" fill="currentColor">UNIVERSITY</text></svg></li>
+    <li><svg viewBox="0 0 150 36" aria-label="Logo instelling"><text x="0" y="24" font-family="Georgia, serif" font-style="italic" font-size="18" fill="currentColor">Academie</text><rect x="92" y="10" width="16" height="16" fill="currentColor"/></svg></li>
+    <li><svg viewBox="0 0 150 36" aria-label="Logo instelling"><path d="M0 32 L14 4 L28 32 Z" fill="currentColor"/><text x="36" y="24" font-family="Arial" font-size="15" fill="currentColor">Business School</text></svg></li>
+    <li><svg viewBox="0 0 150 36" aria-label="Logo instelling"><text x="0" y="25" font-family="Arial" font-weight="700" font-size="20" fill="currentColor">OPLEIDING</text></svg></li>
+    <li><svg viewBox="0 0 150 36" aria-label="Logo instelling"><rect x="0" y="6" width="24" height="24" rx="12" fill="none" stroke="currentColor" stroke-width="4"/><text x="34" y="24" font-family="Georgia, serif" font-size="15" fill="currentColor">College</text></svg></li>
+  </ul>
+
+  <figure class="citaat">
+    <div class="teken" aria-hidden="true">“</div>
+    <div>
+      <p>Onze docenten geven nu feedback per criterium, ook in de drukke toetsweken. Studenten weten eindelijk wat ze moeten verbeteren.</p>
+      <div class="wie"><div class="foto" aria-hidden="true"></div><div><b>[Naam]</b><span>[Functie], [instelling]</span></div></div>
+    </div>
+  </figure>
+</div>
+</body>
+</html>
