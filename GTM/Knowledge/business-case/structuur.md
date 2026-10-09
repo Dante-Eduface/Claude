@@ -41,6 +41,7 @@ Vastgelegd 09-10-2026. Proeven staan in deze map.
 - **Tabellen:** stijl B. Kop gevuld met de klantkleur en witte tekst, groepsrijen en de totaalrij in de tint, getallen rechts uitgelijnd (ook de kop), onder de tabel een regel met de aannames. Zie richting B in `proef-tabel-kerncijfers.html`.
 - **Workflowdiagram (onderdeel 2):** twee rijen van vier stappen, "Nu" en "Met Eduface", met per rij het totaal (minuten per opdracht, weken tot feedback). Werk van de docent is een gevulde card met minuten, wat automatisch gaat een gestippelde card. Stijl goedgekeurd, de stappen zelf zijn nog voorbeeld en worden per klant ingevuld. Zie `proef-diagram.html`.
 - **Checklist (onderdeel 10):** zelfde stijl als de rest, vinkje in de klantkleur per regel, akkoord zonder aparte proef.
+- **Grafiek (onderdeel 12):** twee lijnen over 24 maanden, opgetelde baten in de klantkleur en opgetelde kosten in grijs, testperiode als lichte band, terugverdienmoment gemarkeerd, eindbedragen direct aan de lijnen, aannames eronder. Kop is de conclusie. Baten nooit groen. Contrast per klantkleur controleren. Zie `proef-grafiek.html`.
 - **Besluitkader:** onder de kerncijfers op pagina 1, tint met een balk in de klantkleur links.
 
 ## Toon
