@@ -184,4 +184,5 @@ _Akkoord 09-10-2026. Proof of value 2 weken (was 2 maanden)._
 | **Door als:** de koppeling met NEO werkt, inclusief de cijferterugkoppeling, en de beoordeling van ons praktijkgerichte werk voldoet aan de vooraf vastgelegde criteria | |
 
 _Bronnen: go-voorwaarden Marjolein 01-10, opleidingen uit tabel 07-10. Voorstel Dante nog te kiezen: opleiding SO, 20 tot 25 inzendingen van één module-opdracht._
-## 14. Tijdlijn [nog te doen]
+## 14. Tijdlijn [overgeslagen 09-10-2026]
+_Volgorde volgens Dante: go, go-liveplan (met proof of value van 2 weken aan het eind), implementatieplan, live. Concept in de chat, niet uitgewerkt op verzoek._
