@@ -33,6 +33,14 @@ _Laatst bijgewerkt: 2026-10-09._
 
 Rollen en eigenaarschap zitten niet in de business case maar in het implementatieplan.
 
+## Visuele stijl
+
+Vastgelegd 09-10-2026. Proeven staan in deze map.
+
+- **Kerncijfers:** verticaal onder elkaar, elk in een eigen card (tint van de klantkleur, radius 12). Per card: icoon (geld, tijd, mensen) in plaats van een woord, dan het getal in de klantkleur, dan de onderbouwing met de rekensom. Zie `proef-kerncijfers.html`.
+- **Tabellen:** stijl B. Kop gevuld met de klantkleur en witte tekst, groepsrijen en de totaalrij in de tint, getallen rechts uitgelijnd (ook de kop), onder de tabel een regel met de aannames. Zie richting B in `proef-tabel-kerncijfers.html`.
+- **Besluitkader:** onder de kerncijfers op pagina 1, tint met een balk in de klantkleur links.
+
 ## Toon
 
 Vastgelegd 09-10-2026.

@@ -25,13 +25,13 @@
   h1 { font-size: 26px; line-height: 1.25; margin: 0 0 12px; font-weight: 700; max-width: 30ch; }
   .lead { margin: 0 0 32px; color: var(--tekst-zacht); max-width: 62ch; }
 
-  .cijfers { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--klant); }
+  .cijfers { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
   .cijfer { display: grid; grid-template-columns: 48px 210px minmax(0, 1fr); column-gap: 24px;
-            align-items: center; padding: 24px 0; border-bottom: 1px solid var(--lijn); }
-  .icoon { width: 48px; height: 48px; border-radius: 50%; background: var(--klant-tint);
+            align-items: center; padding: 20px 24px; background: var(--klant-tint); border-radius: 12px; }
+  .icoon { width: 48px; height: 48px; border-radius: 50%; background: #fff;
            display: grid; place-items: center; color: var(--klant); }
   .icoon svg { width: 24px; height: 24px; }
-  .getal { font-size: 34px; font-weight: 700; line-height: 1.1; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .getal { color: var(--klant); font-size: 34px; font-weight: 700; line-height: 1.1; white-space: nowrap; font-variant-numeric: tabular-nums; }
   .uitleg { margin: 0; font-size: 14px; }
   .uitleg b { font-weight: 600; }
   .uitleg span { display: block; color: var(--tekst-zacht); margin-top: 2px; }
@@ -56,8 +56,8 @@
       <div class="icoon" role="img" aria-label="Geld">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M17 6.5A7 7 0 1 0 17 17.5"/><path d="M4 10h9"/><path d="M4 14h9"/></svg>
       </div>
-      <div class="getal">€ 90.000</div>
-      <p class="uitleg"><b>netto per jaar, vanaf jaar 2</b><span>2.000 bespaarde docenturen van € 72, min € 54.000 aan licenties.</span></p>
+      <div class="getal">€&nbsp;90.000</div>
+      <p class="uitleg"><b>netto per jaar, vanaf jaar 2</b><span>2.000 bespaarde docenturen van €&nbsp;72, min €&nbsp;54.000 aan licenties.</span></p>
     </li>
     <li class="cijfer">
       <div class="icoon" role="img" aria-label="Tijd">
