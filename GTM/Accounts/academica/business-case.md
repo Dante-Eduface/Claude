@@ -2,8 +2,10 @@
 _Volgt `GTM/Knowledge/business-case/structuur.md`, maar zonder tijdlijn (geschrapt voor Academica 09-10). Per onderdeel: concept in de chat, na akkoord hier. Eerste concept (09-10) staat in `business-case-concept-v1.md`._
 
 ## 1. Managementsamenvatting [nog te doen]
+_Lezer denkt: "Dit past bij waar we als organisatie naartoe willen."_
 _Label: MANAGEMENTSAMENVATTING. Kop: Nederlands onderwijskundig AI-model voor formatieve feedback._
 ## 2. De pijn, workflow nu tegenover met Eduface [akkoord]
+_Lezer denkt: "Onze docenten zijn hun tijd kwijt aan typwerk in plaats van aan onderwijs."_
 _Akkoord 09-10-2026._
 
 **HUIDIGE SITUATIE**
@@ -30,6 +32,7 @@ _15 minuten is een aanname, de proof of value meet het echte cijfer._
 
 _Bronnen: tabel Marjolein 07-10 (30 min, ~1.100 opdrachten, 520/710 uur), gesprek 24-09 (workflow, herkansing)._
 ## 3. Aansluiting op het koersplan [akkoord]
+_Lezer denkt: "Dit is een concrete invulling van efficiency, niet alleen een plan."_
 _Akkoord 09-10-2026. Alleen efficiency, als brug naar onderdeel 4._
 
 **KOERSPLAN**
@@ -43,6 +46,7 @@ Na een jaar evalueren we de bijdrage binnen het koerspunt efficiency.
 
 _Bron: gesprek 01-10 (Marjolein: efficiency is een van de zeven punten in het koersplan tot 2030). Letterlijke tekst nog niet ontvangen._
 ## 4. Impact: geld, tijd, people [akkoord]
+_Lezer denkt: "De winst zit in tijd, en die tijd gaat terug naar onderwijs."_
 _Akkoord 09-10-2026._
 
 **IMPACT**
@@ -57,6 +61,7 @@ _Aannames: 1.098 opdrachten, 120 formatieve rondes en 10 theses per jaar (tabel 
 
 _Rekensommen: 255 = 50% × 511,5 uur (summatief 461,5 + formatief 30 + thesisbeoordeling 20). 70 = 18.000 / 255. 6,4 werkweken = 255 / 40._
 ## 5. Volgbaarheid en accreditatie [akkoord]
+_Lezer denkt: "Elke beoordeling kunnen we uitleggen als iemand ernaar vraagt."_
 _Akkoord 09-10-2026. De drie eisen waar Eduface het meest aan bijdraagt._
 
 **ACCREDITATIE**
@@ -72,6 +77,7 @@ _Bij nieuwe accreditaties is consistent beoordelen een aandachtspunt. De Pabo zi
 
 _Bronnen: gesprek 24-09 (steekproef, examencommissie, kalibratie, consistentie bij accreditaties). Productclaims (onderbouwing per criterium, audit trail AI Act, beoordelaarsoverzicht) uit Platform/product.md, nog te bevestigen door Dante; beoordelaarsoverzicht live? navragen bij Menno._
 ## 6. Toekomstbestendig onderwijs [akkoord]
+_Lezer denkt: "Onze diploma's blijven iets waard, ook nu studenten AI gebruiken."_
 _Akkoord 09-10-2026._
 
 **TOEKOMSTBESTENDIG ONDERWIJS**
@@ -81,6 +87,7 @@ _Akkoord 09-10-2026._
 |---|---|
 | **AI-geletterdheid in het dagelijkse werk.** Docenten werken bij elke beoordeling met AI. Ze zien hoe een voorstel tot stand komt, sturen het bij en houden het laatste woord. Zo leren ze wat AI wel en niet kan. | **Werken met AI, en toch het leerresultaat halen.** Studenten mogen AI gebruiken bij het schrijven. Elke opdracht wordt inhoudelijk en kritisch beoordeeld op de leerdoelen. Aannames zonder onderbouwing en wollige alinea's, waar AI om bekend staat, komen daardoor niet ongemerkt door. |
 ## 7. Social proof [akkoord]
+_Lezer denkt: "Als het bij de lerarenopleiding van Hogeschool Rotterdam werkt, werkt het bij ons ook."_
 _Akkoord 09-10-2026. Zonder klantcitaat, zonder Leiden._
 
 **ERVARING**
@@ -91,6 +98,7 @@ Logostrook in één kleur: Hogeschool Rotterdam (onderschrift: lerarenopleiding)
 
 _Bron: Platform/product.md (betalende klanten, Hogeschool Rotterdam draait bij de lerarenopleiding). Logo's: Design/Merk/logo-van-scholen/._
 ## 8. Wat je erbij krijgt [akkoord]
+_Lezer denkt: "Onze docenten hoeven niet in een nieuw systeem te werken, alles blijft in NEO."_
 _Akkoord 09-10-2026. Twee tegels: tech support en AI-geletterdheid geschrapt._
 
 **INBEGREPEN IN DE LICENTIE**
@@ -103,6 +111,7 @@ _Inbegrepen in de prijs, geen losse kosten._ (Check: geldt dit ook voor de koppe
 
 _Bronnen: mail Dante aan Joey 01-10 (LTI 1.3, passback), Marjolein 24-09 en 07-10 (NEO naar Progress, training Eduface naast NEO), Platform/product.md (inrichting per opdracht), Dante 01-10 ("die drie euro zit daarin")._
 ## 9. Privacy en AVG [akkoord]
+_Lezer denkt: "Onze AVG-functionaris kan dit snel afvinken."_
 _Akkoord 09-10-2026. Geen EU-opslag en geen dataminimalisatie tot bevestigd._
 
 **PRIVACY**
@@ -119,6 +128,7 @@ _De verwerkersovereenkomst ligt ter beoordeling bij onze AVG-functionaris._
 
 _Bronnen: Platform/product.md (gegevensbescherming), mail aan AVG-adres 01-10. Open: EU-opslag (Menno), dataminimalisatie vanuit NEO (Samuel: nog niet gebouwd)._
 ## 10. Prijs en licentiemodel [akkoord]
+_Lezer denkt: "Het bedrag is helder en vast, ik weet waar ik aan toe ben."_
 _Akkoord 09-10-2026._
 
 **LICENTIEMODEL**
@@ -135,6 +145,7 @@ Dit is de vaste licentieprijs, ook tijdens de proof of value. De koppeling met N
 
 _Bronnen: prijsopzet Dante 08-10 en 09-10 (3,75 euro, minimum 400, 1.500 per maand ook tijdens proof of value, 1 jaar met opt-out na 90 dagen). 350 actieve studenten: document Marjolein 07-10. Wijkt af van GTM/Pricing/prijsmodel-psu-26-27.md (3 euro, minimum 500)._
 ## 11. Kosten, baten en ROI [akkoord]
+_Lezer denkt: "Ik snap waar het geld naartoe gaat."_
 _Akkoord 09-10-2026. Grafiek volgt zodra het normbedrag per uur bekend is (Marjolein vult in op 22-10)._
 
 **ROI**
@@ -163,9 +174,11 @@ _[Grafiek: opgetelde baten en kosten over 24 maanden, terugverdienmoment gemarke
 
 _Rekensommen: 70 = 18.000 / 255. 330 = 50% × 661,5 uur (inclusief groei). 4.500 = 3 × 1.500. Kostenopbouw aangeleverd door Dante 09-10 (intern: 70/20/10, bedragen niet tonen)._
 ## 12. Risico's met maatregelen [niet akkoord, later terugkomen]
+_Lezer denkt: "Er is over nagedacht, dit is geen sprong in het diepe."_
 _Label: MOGELIJKE RISICO'S._
 _09-10-2026: concept met vijf risico's (NEO-koppeling, praktijkgericht werk, betalen voor niets, vertrouwen, IT-uren) niet akkoord. Wat er anders moet: nog te horen._
 ## 13. Scope [akkoord]
+_Lezer denkt: "We beginnen klein en weten binnen twee weken of het werkt."_
 _Akkoord 09-10-2026. Proof of value 2 weken (was 2 maanden)._
 
 **SCOPE**
