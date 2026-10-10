@@ -4,7 +4,7 @@
 >
 > **Kijk vooruit, niet achteruit.** Dante op 19-09-2026: *"ik wil dat je niet zo bezig bent met het verleden, de situatie is heel anders."* De historische uitgavenanalyse uit de afschriften is daarom hier niet overgenomen. Gebruik dit bestand voor waar hij naartoe gaat, niet voor wat hij vorig jaar uitgaf.
 
-_Laatst bijgewerkt: 04-10-2026. Bron: Dante zelf, plus zijn ABN-afschriften._
+_Laatst bijgewerkt: 10-10-2026. Bron: Dante zelf, plus zijn ABN-afschriften._
 
 ## Wat er binnenkomt
 
@@ -58,7 +58,19 @@ Het vermogen zakte van ongeveer 1.220 naar 1.041,58. Daarvan is 129,45 de tweede
 
 Waarom die augustus-incasso niet liep valt niet uit de afschriften te lezen, maar eind augustus en heel september stond er zelden meer dan 30 euro op de betaalrekening. Dat is precies waar het zorgpotje nu voor dient.
 
-### Oktober 2026 komt op nul uit
+### Stand 08-10-2026: NS van 167 is nog niet afgeschreven
+
+Uit het MT940 van 10-10-2026. Betaalrekening **160,63** per 08-10, Curaçao 397,85, Zorgverzekering 129,30, Savings 0,25. Samen **688,03**.
+
+**De NS-afschrijving van 167 staat er niet in.** Dante zei op 4 oktober dat die op de 5e zou gaan. Het afschrift loopt door tot 8 oktober en er staat geen NS-boeking in oktober. Die komt dus nog, tegen een saldo van 160,63. Dat is zeven euro te weinig, voor hij ook maar iets anders uitgeeft.
+
+**Bevestigd waarom de zorgpremie twee keer betaald is.** De omschrijving van de handmatige betaling van 28-09 zegt letterlijk *"INCASSO MISLUKT"*. De automatische incasso van eind augustus is dus geweigerd, vrijwel zeker wegens saldotekort, en die achterstand heeft hij met de hand ingelopen. De incasso van 30-09 draagt de omschrijving *"OKTOBER 2026 T/M OKTOBER 2026"*.
+
+**Daaruit volgt iets bruikbaars: oktober is al betaald en de volgende incasso valt pas eind oktober, na zijn salaris.** Het zorgpotje van 129,30 is tot die tijd vrij inzetbaar. Dat is de plek om de NS-betaling van te overbruggen, niet Curaçao. Voorwaarde: op salarisdag meteen terugstorten, want een leeg zorgpotje op 30 oktober is precies hoe het in augustus misging.
+
+Het grotere beeld voor oktober: met 160,63 plus 129 zorgtoeslag tegenover NS 167, drie weken boodschappen, Trainmore en de kapper komt hij ongeveer 120 tekort. Dat gat is precies het bedrag dat zaterdag 3 oktober kostte.
+
+### De begroting van 04-10, achterhaald
 
 Stand op 04-10-2026, afgelezen uit de ABN-app: betaalrekening **296,54**, Curaçao 397,85, Zorgverzekering 129,30, Savings 0,25. Samen **823,94**, geen schuld.
 
