@@ -4,7 +4,7 @@
 >
 > **Kijk vooruit, niet achteruit.** Dante op 19-09-2026: *"ik wil dat je niet zo bezig bent met het verleden, de situatie is heel anders."* De historische uitgavenanalyse uit de afschriften is daarom hier niet overgenomen. Gebruik dit bestand voor waar hij naartoe gaat, niet voor wat hij vorig jaar uitgaf.
 
-_Laatst bijgewerkt: 10-10-2026. Bron: Dante zelf, plus zijn ABN-afschriften._
+_Laatst bijgewerkt: 11-10-2026. Bron: Dante zelf, plus zijn ABN-afschriften._
 
 ## Wat er binnenkomt
 
@@ -62,7 +62,9 @@ Waarom die augustus-incasso niet liep valt niet uit de afschriften te lezen, maa
 
 Uit het MT940 van 10-10-2026. Betaalrekening **160,63** per 08-10, Curaçao 397,85, Zorgverzekering 129,30, Savings 0,25. Samen **688,03**.
 
-**De NS-afschrijving van 167 staat er niet in.** Dante zei op 4 oktober dat die op de 5e zou gaan. Het afschrift loopt door tot 8 oktober en er staat geen NS-boeking in oktober. Die komt dus nog, tegen een saldo van 160,63. Dat is zeven euro te weinig, voor hij ook maar iets anders uitgeeft.
+**NS is betaald, zegt Dante op 11-10-2026.** De boeking staat niet in het afschrift omdat dat tot 8 oktober loopt. Wel een openstaand raadsel: op 8 oktober stond er 160,63 en de betaling is 167. Dat past niet, dus er is iets bijgekomen of het is uit een potje betaald. Zijn actuele saldo is nog niet bekend.
+
+**Vuistregel die hier twee keer is misgegaan, nu vastgelegd: kijk altijd eerst naar de einddatum van een export voordat je zegt dat iets niet gebeurd is.** Een ABN-export loopt een paar dagen achter op vandaag. Ontbreekt een boeking die verwacht werd, dan is "nog niet in deze export" het juiste antwoord, niet "nog niet gebeurd". Dit ging mis op 4 oktober (XLS met één regel) en op 10 oktober (NS).
 
 **Bevestigd waarom de zorgpremie twee keer betaald is.** De omschrijving van de handmatige betaling van 28-09 zegt letterlijk *"INCASSO MISLUKT"*. De automatische incasso van eind augustus is dus geweigerd, vrijwel zeker wegens saldotekort, en die achterstand heeft hij met de hand ingelopen. De incasso van 30-09 draagt de omschrijving *"OKTOBER 2026 T/M OKTOBER 2026"*.
 
