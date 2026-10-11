@@ -1,6 +1,6 @@
 # Wat er nu eerst moet
 
-_Laatst bijgewerkt: 2026-09-20. Dit bestand wint van elk ander contextbestand. Verandert de focus, dan verandert dit bestand, niet een zin ergens anders._
+_Laatst bijgewerkt: 2026-10-11. Dit bestand wint van elk ander contextbestand. Verandert de focus, dan verandert dit bestand, niet een zin ergens anders._
 
 ## De prioriteit
 
@@ -15,6 +15,12 @@ Enkelvoud, en dat is het punt. Dante op 19-09-2026: *"bepaal gewoon één priori
 **NPS boven de 50 op de Enterprise-versie**, dus de betalende instellingen. De PLG-versie (gratis accounts via de site) telt niet mee.
 
 **Die meting bestaat nog niet.** Tot die er is, is dit een doel en geen stuurknop: niet in een weekplanning opnemen, geen taken op baseren, geen voortgang op claimen. Zodra er gemeten wordt, staat dat als W4 in `Context/open-vragen.md`.
+
+## Leren als hefboom
+
+Dante op 11-10-2026: investeren in zijn eigen kennis is volgens hem zijn grootste hefboom, omdat hij dan uit elke meeting meer haalt. Concreet: meetings terugkijken, meer leren over het product, een betere CSM worden, boeken bestuderen. Hij wil daar vaste tijd voor in de week, en ook vaste tijd voor design.
+
+Dit is geen tweede prioriteit maar een manier om de eerste te halen: betere gesprekken zijn meer gestarte salesprocessen. De lag-maat noemt hij zelf nog onbekend (11-10-2026), de leidende maat blijft deep focus.
 
 ## De leidende maat
 
