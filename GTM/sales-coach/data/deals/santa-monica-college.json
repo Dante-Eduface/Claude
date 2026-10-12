@@ -1,0 +1,89 @@
+{
+ "slug": "santa-monica-college",
+ "close": {
+  "lead_id": null,
+  "naam": "Santa Monica College",
+  "url": null,
+  "lead_status": "Nog niet in Close",
+  "opportunity_id": null,
+  "fase": null,
+  "fase_type": null,
+  "waarde": null,
+  "valuta": "USD",
+  "confidence": null,
+  "close_date": null,
+  "eigenaar": "Dante",
+  "crm_note": "",
+  "contacten": [
+   {
+    "naam": "Terry Vendlinski",
+    "titel": "onbekend",
+    "email": "vendlinski_terry@smc.edu",
+    "id": null
+   }
+  ],
+  "gesprekken": [
+   {
+    "id": null,
+    "soort": "meeting",
+    "datum": "2026-10-12",
+    "titel": "Eduface intro (Calendly), 19:30",
+    "duur_min": 30,
+    "status": "upcoming",
+    "komend": true
+   }
+  ]
+ },
+ "coach": {
+  "next_action": {
+   "wat": "Terry stuurt één echte opdracht plus rubric uit een vak waar hij formatieve feedback wil, en noemt wie er over een pilot beslist",
+   "wanneer": "voor het vervolggesprek",
+   "wie": "Terry",
+   "waarom": "Zonder eigen materiaal en zonder naam van de beslisser is een tweede gesprek een continuation"
+  },
+  "prep": {
+   "doel": "Advance: Terry levert een opdracht plus rubric aan voor een demo op eigen materiaal, en noemt wie naast hem beslist. Vervolgafspraak met die persoon erbij.",
+   "openers": [
+    "Je schreef bij het boeken: formative feedback and student test preparation. Wat gebeurde er dat je juist nu boekte? Je plande al in augustus."
+   ],
+   "vragen": [
+    "Wat is jouw rol, en voor wie zoek je dit: je eigen vakken, een afdeling, of de hele college?",
+    "Bij 'test preparation': wat doen studenten nu om zich voor te bereiden, en waar loopt dat vast?",
+    "Hoeveel formatieve feedback krijgt een student nu voor een toets, en wat zou er gebeuren als dat verdubbelt?",
+    "Wat gebeurt er als dit volgend semester nog niet opgelost is?",
+    "Wie heeft hier eerder naar gekeken, en welke tools zijn al geprobeerd of al in Canvas aanwezig?",
+    "Als je dit morgen zou willen proberen, wie moet er dan ja zeggen, en wie kan nee zeggen?"
+   ],
+   "risicos": [
+    "Terry's rol is onbekend, niets online gevonden. Eerste vraag dus: wie ben je en voor wie zoek je dit.",
+    "Calendly geboekt op 20 augustus voor 12 oktober: lange aanloop, kan nieuwsgierigheid zijn zonder pijn of budget.",
+    "Valkuil: meteen de demo in. Eerst pijn en scope, dan pas laten zien."
+   ],
+   "bezwaren": [
+    "Academic integrity / AI-angst bij faculty: de docent keurt alles goed voordat de student iets ziet.",
+    "Prijs: niet zelf noemen in een eerste gesprek. Vraagt hij ernaar: 3 dollar per student per maand, instellingsbreed (GTM/Pricing/prijsmodel-psu-26-27.md).",
+    "Canvas: integreert met Canvas, cijfer en feedback terug naar het gradebook."
+   ]
+  },
+  "meddpicc": {},
+  "gate": {
+   "fase": "Discovery",
+   "open": null,
+   "ontbreekt": [
+    "Identify Pain",
+    "Champion",
+    "Economic Buyer"
+   ]
+  },
+  "stakeholders": [
+   {
+    "naam": "Terry Vendlinski",
+    "rol": "onbekend",
+    "gesproken": false
+   }
+  ],
+  "calls": [],
+  "diagnose": "",
+  "laatst_gecoacht": "2026-10-12"
+ }
+}
