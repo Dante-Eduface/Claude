@@ -4,7 +4,7 @@
 >
 > **Niets invullen wat je kunt navragen.** Alles wat open is staat in `Context/open-vragen.md`.
 
-_Laatst bijgewerkt: 20-09-2026, na twee rondes antwoorden van Dante zelf._
+_Laatst bijgewerkt: 13-10-2026._
 
 ## Basis
 
@@ -50,6 +50,10 @@ Consistent en wat hem betreft niet onderhandelbaar. Dat di en do om 17:00 begint
 | Eiwit | 180 gram |
 | Vet | 80 gram |
 | Koolhydraten | 340 gram |
+
+**Neemt whey-shakes** en eet dagelijks veel kwark, skyr en melk (13-10-2026).
+
+**Huid:** mee-eters op voorhoofd, haarlijn en wangen, sinds de puberteit (13-10-2026).
 
 **Lust hij niet:** feta, walnoten, chiliflakes, chipotle, sambal, gember.
 
