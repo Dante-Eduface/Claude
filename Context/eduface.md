@@ -1,6 +1,6 @@
 # Eduface
 
-_Laatst bijgewerkt: 2026-10-02._
+_Laatst bijgewerkt: 2026-10-13._
 
 Het bedrijf waar Dante werkt. Juridisch heet het **Blockbook B.V.**, daar komt zijn salaris ook vandaan. Naar buiten is alles Eduface. Dit bestand is alleen het minimum dat elke sessie nodig heeft: wat we verkopen, aan wie, en wie er werkt. Alles wat dieper gaat staat in een eigen bestand, zie **Waar de details staan**.
 
@@ -27,6 +27,8 @@ Noem je een cijfer of een klantervaring, zeg er altijd bij welke van de twee je 
 ## Aan wie we verkopen
 
 Universiteiten en hogescholen, én particuliere onderwijsinstellingen. Markten: Nederland, Verenigd Koninkrijk, Verenigde Staten.
+
+**Focus sinds augustus 2026: private onderwijsinstellingen.** Volgens Dante gaan deals daar veel sneller, omdat ze niet langs een reeks commissies hoeven. Eerste getekende licentie in die hoek: Breederode Hogeschool (oktober 2026).
 
 ## Wie er werkt
 
