@@ -53,7 +53,7 @@ Consistent en wat hem betreft niet onderhandelbaar. Dat di en do om 17:00 begint
 
 **Neemt whey-shakes** en eet dagelijks veel kwark, skyr en melk (13-10-2026).
 
-**Huid:** mee-eters op voorhoofd, haarlijn en wangen, sinds de puberteit. Routine: 2x per dag reiniger (Balea hautrein Reinigungsschaum, AHA/BHA) en moisturizer (Balea Aqua Creme-Gel), 's ochtends zonnebrand (Balea UV-Protection Fluid SPF 50+), om de avond retinol (CeraVe Resurfacing Retinol Serum), douchen direct na de gym, kussensloop 1x per week. Geen haarproducten (13-10-2026).
+**Huid:** mee-eters plus ontstoken puistjes en donkere vlekjes die erna achterblijven (zo te zien op foto's, geen diagnose), op voorhoofd, slapen en wangen, sinds de puberteit. Routine: 2x per dag reiniger (Balea hautrein Reinigungsschaum, AHA/BHA) en moisturizer (Balea Aqua Creme-Gel), 's ochtends zonnebrand (Balea UV-Protection Fluid SPF 50+), om de avond retinol (CeraVe Resurfacing Retinol Serum), douchen direct na de gym, kussensloop 1x per week. Geen haarproducten (13-10-2026).
 
 **Lust hij niet:** feta, walnoten, chiliflakes, chipotle, sambal, gember.
 
