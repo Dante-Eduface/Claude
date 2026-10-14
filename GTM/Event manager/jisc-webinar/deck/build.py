@@ -226,6 +226,34 @@ def s_jisc_pilot():
     return els, False
 
 
+JISC_VRAGEN = [
+    'What do you see institutions struggling with most right now when it comes to AI?',
+    'What made Jisc decide to start the AI in marking and feedback pilot?',
+    'The pilot points towards formative feedback. What makes AI so valuable there?',
+    'Where do institutions tend to get stuck when they try it?',
+    "What's one piece of advice you'd give an institution starting next term?",
+]
+
+
+def jisc_vraag(n):
+    """Eén vraag per slide, zodat niemand vooruit leest."""
+    def slide():
+        els = eyebrow(f'In conversation with Jisc  ·  {n} of {len(JISC_VRAGEN)}')
+        els += [text(M, 300, 1500, 420, JISC_VRAGEN[n - 1], font=HEAD, size=88, bold=True,
+                     color=NAVY, align='left', ls=1.1)]
+        # voortgang: vijf stippen, de huidige groen en breder
+        x = M
+        for i in range(1, len(JISC_VRAGEN) + 1):
+            w = 64 if i == n else 20
+            kleur = GREEN if i == n else (GREEN_DEEP if i < n else INK100)
+            els.append(rect(x, 800, w, 20, kleur, r=10))
+            x += w + 14
+        els += voet(0)
+        return els, False
+    slide.__name__ = f's_jisc_q{n}'
+    return slide
+
+
 # ---------------------------------------------------------------- deel 2
 def s_not_a_demo():
     return statement('This is not a product demo.\nThese are the patterns we saw.')
@@ -621,7 +649,8 @@ def s_close():
     return els, True
 
 
-DECK = [s_opening, s_agenda, s_jisc, s_jisc_pilot, s_logos, s_not_a_demo, s_three_reasons,
+DECK = [s_opening, s_agenda, s_jisc, jisc_vraag(1), jisc_vraag(2), s_jisc_pilot,
+        jisc_vraag(3), jisc_vraag(4), jisc_vraag(5), s_logos, s_not_a_demo, s_three_reasons,
         s_data_risk, s_ban,
         s_sec_consistency, s_consistency_layers, s_nine_of_twenty, s_where_it_hurts, s_builds,
         s_endgoal_consistency, s_llm_vs_model, s_cases_consistency, s_moderation,
