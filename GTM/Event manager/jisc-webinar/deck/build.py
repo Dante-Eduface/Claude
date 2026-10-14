@@ -13,6 +13,8 @@ D.CHROME = os.environ.get('CHROME', '/tmp/claude-0/-home-user-Claude/'
                           '20e016e8-029a-5cf3-abfb-844a148874f6/scratchpad/chrome.sh')
 
 W, H = 1920, 1080
+JISC_LOGO = 'assets/logo_jisc.png' if os.path.exists('assets/logo_jisc.png') else 'assets/logo_jisc_placeholder.png'
+JISC_R = 330 / 120   # breedte/hoogte; aanpassen aan het echte logo
 
 
 def shoot(html_path, png_path):
@@ -73,8 +75,22 @@ def voet(page, dark=False, src=None):
     if src:
         out.append(text(M, 1000, 1400, 36, src, size=22,
                         color='8FA9B4' if dark else INK500, align='left'))
-    lg = 'assets/logo_white_c.png' if dark else 'assets/logo_navy_c.png'
-    out.append(pic(lg, 1800 - 148, 996, 148, 40))
+    out += logopaar(dark)
+    return out
+
+
+def logopaar(dark=False, y=992):
+    """Eduface en Jisc rechtsonder. Op navy op een wit vlak, anders valt het Jisc-logo weg."""
+    jh = 44; jw = jh * JISC_R
+    x_jisc = 1800 - jw
+    x_lijn = x_jisc - 24
+    x_edu = x_lijn - 24 - 148
+    out = []
+    if dark:
+        out.append(rect(x_edu - 24, y - 14, 1800 - x_edu + 48, jh + 28, WHITE, r=18))
+    out += [pic('assets/logo_navy_c.png', x_edu, y + 2, 148, 40),
+            rect(x_lijn, y, 2, jh, INK200),
+            pic(JISC_LOGO, x_jisc, y, jw, jh)]
     return out
 
 
@@ -86,11 +102,14 @@ def s_opening():
             oval(1520, 400, 480, '0F4C57', '0F4C57', 0),
             oval(1660, 540, 200, GREEN, GREEN, 0)]
     els += eyebrow('Jisc  ×  Eduface  ·  Webinar', y=300, dark=True)
-    els += [text(M, 360, 1200, 330, 'What 20+ AI feedback\nimplementations taught us',
+    els += [text(M, 360, 1200, 330, 'The business outcomes of\nAI marking and feedback',
                  font=HEAD, size=96, bold=True, color=WHITE, align='left', ls=1.05)]
-    els += [text(M, 600, 1100, 60, 'Consistency, efficiency and the risk nobody planned for',
+    els += [text(M, 600, 1100, 60, 'Lessons from 20+ pilots and implementations',
                  size=36, color='B9CBD2', align='left')]
-    els += [pic('assets/logo_white_c.png', M, 940, 222, 60)]
+    els += [rect(M - 28, 912, 222 + 50 + 60 * JISC_R + 56, 116, WHITE, r=22),
+            pic('assets/logo_navy_c.png', M, 940, 222, 60),
+            rect(M + 222 + 24, 934, 2, 72, INK200),
+            pic(JISC_LOGO, M + 222 + 50, 940, 60 * JISC_R, 60)]
     return els, True
 
 
@@ -201,8 +220,8 @@ def s_agenda():
 def s_jisc():
     els = [rect(0, 0, W, H, NAVY)]
     els += eyebrow('In conversation', y=300, dark=True)
-    els += [text(M, 350, 1100, 120, '[Name]', font=HEAD, size=110, bold=True, color=WHITE, align='left'),
-            text(M, 490, 1100, 60, '[Role], Jisc', size=40, color='B9CBD2', align='left')]
+    els += [text(M, 350, 1100, 120, 'Hannah Lawrence', font=HEAD, size=110, bold=True, color=WHITE, align='left'),
+            text(M, 490, 1100, 60, 'Licence Manager, Jisc', size=40, color='B9CBD2', align='left')]
     els += [oval(1260, 250, 520, '0F4C57', '0F4C57', 0),
             text(1260, 490, 520, 40, 'photo', size=28, color='8FA9B4')]
     els += [text(M, 640, 1000, 120, 'What does the sector expect from AI feedback,\nand what is actually working?',
@@ -377,7 +396,7 @@ def s_endgoal_consistency():
     for x, t in [(220, 'Year 1'), (820, 'Year 2'), (1420, 'Year 3')]:
         els += [text(x - 100, 890, 200, 40, t, size=28, color='B9CBD2')]
     els += [text(M, 960, 1200, 36, 'Illustration', size=22, color='8FA9B4', align='left')]
-    els += [pic('assets/logo_white_c.png', 1800 - 148, 996, 148, 40)]
+    els += logopaar(dark=True)
     return els, True
 
 
@@ -645,7 +664,7 @@ def s_close():
                  color=WHITE, align='left', ls=1.05),
             text(M, 620, 1500, 50, 'Slides and sources follow by email.', size=36, color='B9CBD2', align='left'),
             text(M, 700, 1500, 50, 'info@eduface.me  ·  eduface.me', size=32, color=GREEN, align='left')]
-    els += [pic('assets/logo_white_c.png', M, 940, 222, 60)]
+    els += logopaar(dark=True)
     return els, True
 
 
@@ -665,7 +684,7 @@ def build(fns, naam):
     for i, fn in enumerate(fns, 1):
         els, dark = fn()
         if 1 < i < len(fns):   # paginanummer links van het logo
-            els = els + [text(1560, 1004, 60, 30, str(i), size=22,
+            els = els + [text(1330, 1004, 60, 30, str(i), size=22,
                               color='8FA9B4' if dark else '9AAFB8', align='right')]
         h = D.render_html(els, f'preview/{i:02d}-{fn.__name__[2:]}.html', dark=dark)
         shoot(os.path.abspath(h), h[:-5] + '.png')
