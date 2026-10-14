@@ -3,8 +3,8 @@
 _Aangelegd 2026-10-14._
 
 **Wat:** webinar met Jisc over wat we leerden uit 20+ AI-feedbackimplementaties. Informerend, geen productpitch.
-**Fase:** poort 2 (proef). Drie proefslides staan in `deck/preview/`, wachten op akkoord voor de stijl.
-**Volgende stap:** akkoord op stijl, dan de rest van het deck bouwen met `deck/build.py`.
+**Fase:** poort 3. Volledig deck (32 slides) gebouwd op 14-10-2026, stijl goedgekeurd.
+**Volgende stap:** placeholders invullen (Jisc-spreker, Bath Spa- en 7e logo, naam host efficiency-kamer), dan in Canva importeren.
 **Leest hieruit:** skill `pitch-deck`.
 
 ## Opbouw (afgesproken in de chat van 14-10-2026)

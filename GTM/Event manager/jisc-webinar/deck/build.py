@@ -25,6 +25,40 @@ def shoot(html_path, png_path):
     Image.open(png_path).crop((0, 0, W, H)).save(png_path)
 
 
+# ---------------------------------------------------------------- iconen
+sys.path.insert(0, '/home/user/Claude/.claude/skills/pitch-deck')
+import icons as I
+I.ICONS.update({
+    'maan': '<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/>',
+    'deur': '<path d="M3 21h18"/><path d="M6 21V3h12v18"/><path d="M14.5 12h.01"/>',
+    'slot': '<rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>',
+    'krant': '<path d="M4 4h13v16H6a2 2 0 0 1-2-2Z"/><path d="M17 8h3v10a2 2 0 0 1-2 2"/><path d="M7 8h7M7 12h7M7 16h4"/>',
+    'vlag': '<path d="M5 21V4"/><path d="M5 4h12l-2 4 2 4H5"/>',
+})
+
+
+def icon(naam, tint='navy'):
+    """Rendert een icoon (transparant) naar assets/; ruim geschoten en bijgeknipt."""
+    import subprocess
+    from PIL import Image
+    uit = f'assets/icon-{naam}-{tint}.png'
+    if os.path.exists(uit):
+        return uit
+    tmp = os.path.abspath(f'assets/_{naam}.html')
+    open(tmp, 'w').write(
+        "<!DOCTYPE html><html><head><style>html,body{margin:0;background:transparent}"
+        "svg{display:block;width:296px;height:296px}</style></head><body>"
+        f"<svg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' fill='none' "
+        f"stroke='#{I.TINTS[tint]}' stroke-width='1.9' stroke-linecap='round' "
+        f"stroke-linejoin='round'>{I.ICONS[naam]}</svg></body></html>")
+    subprocess.run([D.CHROME, '--headless', '--disable-gpu', f'--screenshot={uit}',
+                    '--window-size=600,600', '--default-background-color=00000000',
+                    '--hide-scrollbars', tmp], capture_output=True)
+    os.remove(tmp)
+    Image.open(uit).crop((0, 0, 296, 296)).save(uit)
+    return uit
+
+
 # ---------------------------------------------------------------- bouwstenen
 def eyebrow(t, y=96, dark=False):
     return [text(M, y, 1200, 40, t.upper(), font=BODY, size=26, bold=True,
@@ -113,7 +147,487 @@ def s_consistency_layers():
     return els, False
 
 
-PROEF = [s_opening, s_logos, s_consistency_layers]
+# ---------------------------------------------------------------- herbruikbaar
+TONE = {'amber': TINT_A, 'green': TINT_G, 'navy': INK50}
+PLACE = 'F9E3C2'   # amber vlak: alles wat Jeroen/Dante nog moeten invullen
+
+
+def itile(cx, y, naam, tone='green', size=140):
+    ic = int(size * 0.5)
+    return [rect(cx - size / 2, y, size, size, TONE[tone], r=size * 0.24),
+            pic(icon(naam, tone), cx - ic / 2, y + (size - ic) / 2, ic, ic)]
+
+
+def statement(t, sub=None, dark=True, size=88):
+    els = [rect(0, 0, W, H, NAVY)] if dark else []
+    els += [text(M, 330, 1680, 320, t, font=HEAD, size=size, bold=True,
+                 color=WHITE if dark else NAVY, align='left', ls=1.08)]
+    if sub:
+        els += [text(M, 700, 1500, 60, sub, size=36, color='B9CBD2' if dark else INK500, align='left')]
+    els += voet(0, dark=dark)
+    return els, dark
+
+
+def section(nr, t, sub):
+    els = [rect(0, 0, W, H, NAVY)]
+    els += [text(M, 250, 600, 260, nr, font=HEAD, size=240, bold=True, color=GREEN, align='left', ls=1.0),
+            text(M, 540, 1600, 120, t, font=HEAD, size=104, bold=True, color=WHITE, align='left', ls=1.0),
+            text(M, 690, 1500, 60, sub, size=36, color='B9CBD2', align='left')]
+    els += voet(0, dark=True)
+    return els, True
+
+
+def card(x, y, w, h, fill=INK50):
+    return [rect(x, y, w, h, fill, r=28)]
+
+
+# ---------------------------------------------------------------- deel 0 en 1
+def s_agenda():
+    els = eyebrow('Today')
+    els += kop('Four parts')
+    stappen = [('gesprek', 'In conversation\nwith Jisc'), ('lamp', 'What we learned\nin 20+ implementations'),
+               ('deur', 'Breakout rooms:\nyou choose'), ('check', 'Wrap-up\ntogether')]
+    xs, w = D.cols(4)
+    els += [rect(xs[0], 520, xs[-1] - xs[0], 4, INK100)]
+    for i, (ic, t) in enumerate(stappen):
+        tone = 'amber' if i == 2 else 'green'
+        els += itile(xs[i], 450, ic, tone)
+        els += [text(xs[i] - w / 2, 630, w, 120, t, size=34, bold=i == 2, color=NAVY, ls=1.25)]
+    els += [text(xs[2] - w / 2, 760, w, 50, 'Consistency  or  Efficiency', size=26, color=AMBER, bold=True)]
+    els += voet(2)
+    return els, False
+
+
+def s_jisc():
+    els = [rect(0, 0, W, H, NAVY)]
+    els += eyebrow('In conversation', y=300, dark=True)
+    els += [text(M, 350, 1100, 120, '[Name]', font=HEAD, size=110, bold=True, color=WHITE, align='left'),
+            text(M, 490, 1100, 60, '[Role], Jisc', size=40, color='B9CBD2', align='left')]
+    els += [oval(1260, 250, 520, '0F4C57', '0F4C57', 0),
+            text(1260, 490, 520, 40, 'photo', size=28, color='8FA9B4')]
+    els += [text(M, 640, 1000, 120, 'What does the sector expect from AI feedback,\nand what is actually working?',
+                 size=34, color=GREEN, align='left', ls=1.3)]
+    els += voet(0, dark=True)
+    return els, True
+
+
+def s_jisc_pilot():
+    els = eyebrow('Context')
+    els += [text(M, 250, 900, 260, '38', font=HEAD, size=260, bold=True, color=GREEN_DEEP, align='left', ls=1.0),
+            text(M, 540, 820, 140, "colleges and universities in Jisc's\nAI in marking and feedback pilot",
+                 size=40, color=NAVY, align='left', ls=1.25),
+            text(M, 700, 820, 50, 'September 2025 to August 2026', size=30, color=INK500, align='left')]
+    els += card(1060, 250, 740, 520, INK50)
+    els += [text(1120, 300, 640, 50, '“', font=HEAD, size=120, bold=True, color=GREEN, align='left', ls=1.0),
+            text(1120, 390, 640, 260, "These tools shouldn't be used as a final marker. Humans should always be reviewing the feedback.",
+                 size=38, color=NAVY, align='left', ls=1.3),
+            text(1120, 680, 640, 40, 'Tom Moule, Jisc', size=28, bold=True, color=NAVY, align='left')]
+    els += voet(0, src='Jisc National Centre for AI, May 2026 · Times Higher Education, 27 March 2026')
+    return els, False
+
+
+# ---------------------------------------------------------------- deel 2
+def s_not_a_demo():
+    return statement('This is not a product demo.\nThese are the patterns we saw.')
+
+
+def s_three_reasons():
+    els = eyebrow('Why institutions bring us in')
+    els += kop('Three reasons')
+    items = [('slot', 'amber', 'Data risk', 'Staff already use AI to mark,\noutside policy'),
+             ('weegschaal', 'green', 'Consistency', 'Grading and feedback,\nformative and summative'),
+             ('klok', 'navy', 'Efficiency', 'Time back for\nlecturers')]
+    xs, w = D.cols(3)
+    for i, (ic, tone, t, sub) in enumerate(items):
+        els += card(xs[i] - w / 2, 320, w, 520, TONE[tone])
+        els += [text(xs[i] - w / 2 + 48, 360, 120, 80, str(i + 1), font=HEAD, size=64, bold=True,
+                     color=INK500, align='left')]
+        els += [pic(icon(ic, tone), xs[i] - 60, 440, 120, 120)]
+        els += [text(xs[i] - w / 2, 610, w, 70, t, font=HEAD, size=56, bold=True, color=NAVY),
+                text(xs[i] - w / 2, 700, w, 100, sub, size=30, color=INK500, ls=1.3)]
+    els += voet(0)
+    return els, False
+
+
+# ---------------------------------------------------------------- datarisico
+def s_data_risk():
+    els = eyebrow('1 · Data risk', y=96)
+    els += kop('Staff are already\nusing AI to mark', w=760)
+    # twee nieuwskoppen als kaartjes, licht gedraaid kan niet in pptx, dus verspringend
+    koppen = [(980, 200, 'Omroep Brabant · early 2026',
+               'Docent bouwt AI-tool die studentgegevens naar ChatGPT stuurt',
+               'Lecturer builds AI tool that sends student data to ChatGPT'),
+              (1060, 560, 'The New York Times · May 2025',
+               "The Professors Are Using ChatGPT, and Some Students Aren't Happy About It", None)]
+    for x, y, bron, kop_, vert in koppen:
+        els += [rect(x + 12, y + 14, 740, 300, INK100, r=20), rect(x, y, 740, 300, WHITE, r=20),
+                rect(x, y, 740, 300, 'FFFFFF', r=20)]
+        els += [rect(x, y, 740, 6, AMBER),
+                text(x + 40, y + 36, 660, 40, bron.upper(), size=22, bold=True, color=INK500, align='left'),
+                text(x + 40, y + 84, 660, 160, kop_, font=HEAD, size=40, bold=True, color=NAVY, align='left', ls=1.15)]
+        if vert:
+            els += [text(x + 40, y + 236, 660, 40, vert, size=24, color=INK500, align='left')]
+    els += [text(M, 560, 760, 200, 'When it reaches the press,\nit is no longer an IT issue.',
+                 size=36, color=NAVY, align='left', ls=1.3)]
+    els += voet(0, src='omroepbrabant.nl/nieuws/6002910 · nytimes.com, 14 May 2025')
+    return els, False
+
+
+def s_ban():
+    return statement("Banning it doesn't stop it.\nA safe alternative does.")
+
+
+# ---------------------------------------------------------------- consistentie
+def s_sec_consistency():
+    return section('01', 'Consistency', 'Grading and feedback, formative and summative')
+
+
+def s_nine_of_twenty():
+    els = eyebrow('The problem is old')
+    els += [text(M, 220, 1100, 300, '9 of 20', font=HEAD, size=240, bold=True, color=NAVY, align='left', ls=1.0)]
+    els += [text(M, 500, 1000, 160, 'assignments were ranked both best and worst\nby different experienced examiners',
+                 size=42, color=NAVY, align='left', ls=1.3)]
+    # 20 stippen, 9 ervan amber
+    for i in range(20):
+        r_, c_ = divmod(i, 5)
+        fill = AMBER if i in (0, 2, 3, 6, 9, 11, 14, 15, 18) else INK100
+        els.append(oval(1300 + c_ * 92, 260 + r_ * 92, 64, fill, fill, 0))
+    els += [text(1300, 650, 460, 40, 'Same work, opposite rankings', size=28, color=INK500, align='left')]
+    els += voet(0, src='Bloxham et al., Assessment & Evaluation in Higher Education, 2016 · 24 examiners, 20 UK universities')
+    return els, False
+
+
+def s_where_it_hurts():
+    els = eyebrow('Consistency')
+    els += kop('Where inconsistency hurts')
+    items = [('groep', 'Many markers,\none module'), ('historie', 'Paper 80 is marked\ndifferently from paper 5'),
+             ('ongelijk', 'Students compare,\nthen appeal'), ('oogdicht', 'Moderation only\nsees a sample')]
+    xs, w = D.cols(4)
+    for i, (ic, t) in enumerate(items):
+        els += card(xs[i] - w / 2, 360, w, 400, INK50)
+        els += itile(xs[i], 430, ic, 'amber' if i else 'green')
+        els += [text(xs[i] - w / 2 + 20, 620, w - 40, 140, t, size=32, color=NAVY, bold=True, ls=1.3)]
+    els += voet(0)
+    return els, False
+
+
+def s_builds():
+    els = eyebrow('Why it matters to us')
+    els += kop('Consistent feedback\ncan build on itself', w=1100)
+    stappen = ['Draft 1', 'Draft 2', 'Final']
+    crit = ['Argument', 'Evidence', 'Structure']
+    xs, w = D.cols(3)
+    for i, st in enumerate(stappen):
+        els += card(xs[i] - w / 2, 420, w, 400, INK50)
+        els += [text(xs[i] - w / 2 + 40, 450, w, 50, st, font=HEAD, size=40, bold=True, color=NAVY, align='left')]
+        for j, c in enumerate(crit):
+            on = j <= i
+            els += [rect(xs[i] - w / 2 + 40, 530 + j * 86, w - 80, 66, TINT_G if on else WHITE, r=33),
+                    text(xs[i] - w / 2 + 70, 548 + j * 86, 300, 36, c, size=28, color=GREEN_DEEP if on else INK500, align='left'),
+                    text(xs[i] + w / 2 - 140, 548 + j * 86, 70, 36, '✓' if on else '·', size=30, bold=True,
+                         color=GREEN_DEEP if on else INK200, align='right')]
+        if i < 2:
+            els += [text(xs[i] + w / 2 - 10, 600, 92, 60, '→', font=HEAD, size=56, bold=True, color=INK200)]
+    els += voet(0)
+    return els, False
+
+
+def s_endgoal_consistency():
+    els = [rect(0, 0, W, H, NAVY)]
+    els += eyebrow('Where we want to get to', dark=True)
+    els += kop('A student sees their own\ngrowth across the degree', dark=True, w=1300)
+    # groeilijn, illustratief
+    pts = [(220, 840), (520, 790), (820, 720), (1120, 640), (1420, 560), (1700, 470)]
+    for (x1, y1), (x2, y2) in zip(pts, pts[1:]):
+        n = 24
+        for k in range(n):
+            t = k / n
+            els.append(oval(x1 + (x2 - x1) * t - 4, y1 + (y2 - y1) * t - 4, 8, '2D6470', '2D6470', 0))
+    for i, (x, y) in enumerate(pts):
+        d = 34 + i * 8
+        els.append(oval(x - d / 2, y - d / 2, d, GREEN, GREEN, 0))
+    for x, t in [(220, 'Year 1'), (820, 'Year 2'), (1420, 'Year 3')]:
+        els += [text(x - 100, 890, 200, 40, t, size=28, color='B9CBD2')]
+    els += [text(M, 960, 1200, 36, 'Illustration', size=22, color='8FA9B4', align='left')]
+    els += [pic('assets/logo_white_c.png', 1800 - 148, 996, 148, 40)]
+    return els, True
+
+
+def s_llm_vs_model():
+    import random
+    random.seed(7)
+    els = eyebrow('Our lesson')
+    els += kop('We started with general LLMs.\nThen we built our own model.', size=72)
+    for i, (cx, spread, kleur, t, sub) in enumerate([
+            (560, 260, INK200, 'General LLM', 'Same paper, different focus each run'),
+            (1360, 110, GREEN_DEEP, 'Purpose-built model', 'Same paper, same criteria, same voice')]):
+        els += card(cx - 380, 360, 760, 480, INK50 if i == 0 else TINT_G)
+        for _ in range(26):
+            x = cx + random.gauss(0, spread * 0.5); y = 560 + random.gauss(0, spread * 0.35)
+            x = max(cx - 330, min(cx + 310, x)); y = max(390, min(700, y))
+            els.append(oval(x, y, 22, kleur, kleur, 0))
+        els += [text(cx - 380, 730, 760, 50, t, font=HEAD, size=42, bold=True, color=NAVY),
+                text(cx - 380, 786, 760, 40, sub, size=28, color=INK500)]
+    els += voet(0, src='Illustration, not a measurement. Model trained on 250,000 education-specific feedback examples.')
+    return els, False
+
+
+def s_cases_consistency():
+    els = eyebrow('What institutions learned')
+    els += kop('Two lessons on consistency')
+    cases = [('rubric', 'green', 'The gap was in the rubric,\nnot in the markers',
+              'Six markers, one module. One marked\n“critical analysis” lower every time:\nthey read the descriptor differently.'),
+             ('studenten', 'amber', 'Students act on feedback\nthey recognise',
+              'Three formative rounds, a different\nfocus each time: students ignored it.\nSame criteria every round: they used it.')]
+    xs, w = D.cols(2)
+    for i, (ic, tone, t, sub) in enumerate(cases):
+        x = xs[i] - w / 2
+        els += card(x, 320, w, 520, TONE[tone])
+        els += [pic(icon(ic, tone), x + 56, 370, 96, 96),
+                text(x + 56, 500, w - 112, 130, t, font=HEAD, size=46, bold=True, color=NAVY, align='left', ls=1.1),
+                text(x + 56, 650, w - 112, 160, sub, size=30, color=NAVY, align='left', ls=1.35)]
+    els += voet(0, src='Typical scenarios from our implementations, institutions not named.')
+    return els, False
+
+
+def s_moderation():
+    els = eyebrow('When AI grading is a step too far')
+    els += kop('Not ready for AI grades?\nUse it to moderate.', w=1300)
+    # verdeling van cijfers, één uitschieter gemarkeerd
+    import math
+    base_y = 800
+    for i in range(28):
+        x = 220 + i * 54
+        hgt = 60 + 200 * math.exp(-((i - 13) ** 2) / 40)
+        out = i == 23
+        if out:
+            hgt = 330
+        els.append(rect(x, base_y - hgt, 36, hgt, AMBER if out else INK100, r=8))
+    els += [pic(icon('vlag', 'amber'), 220 + 23 * 54 - 12, base_y - 330 - 80, 60, 60),
+            text(220 + 23 * 54 + 70, base_y - 400, 300, 100, 'Flagged:\nfar from expected', size=30,
+                 bold=True, color=AMBER, align='left', ls=1.25)]
+    els += [rect(M, base_y + 2, 1680, 3, INK200),
+            text(M, base_y + 30, 1680, 40, 'AI grade stays hidden. Only large deviations reach the moderator.',
+                 size=30, color=INK500, align='left')]
+    els += voet(0)
+    return els, False
+
+
+# ---------------------------------------------------------------- efficiency
+def s_sec_efficiency():
+    return section('02', 'Operational efficiency', 'Time saved on marking and feedback')
+
+
+def s_two_flavours():
+    els = eyebrow('Efficiency')
+    els += kop('Two flavours')
+    xs, w = D.cols(2)
+    data = [('maan', 'navy', 'Formative', '03:00', 'Student asks for feedback\nwhen it suits them',
+             'No human in the loop'),
+            ('usercheck', 'green', 'Summative', 'Lecturer + AI', 'Time saved on writing,\nnot on reading',
+             'Human in the loop')]
+    for i, (ic, tone, t, big, sub, tag) in enumerate(data):
+        x = xs[i] - w / 2
+        bg = NAVY if i == 0 else TINT_G
+        fg = WHITE if i == 0 else NAVY
+        els += card(x, 300, w, 560, bg)
+        els += [pic(icon(ic, 'mint' if i == 0 else 'green'), x + 56, 350, 80, 80),
+                text(x + 160, 362, 500, 60, t, font=HEAD, size=48, bold=True, color=fg, align='left'),
+                text(x + 56, 480, w - 112, 140, big, font=HEAD, size=120 if i == 0 else 96, bold=True,
+                     color=GREEN if i == 0 else GREEN_DEEP, align='left', ls=1.0),
+                text(x + 56, 640, w - 112, 110, sub, size=32, color=fg, align='left', ls=1.3),
+                rect(x + 56, 778, 360, 52, '0F4C57' if i == 0 else WHITE, r=26),
+                text(x + 56, 788, 360, 36, tag, size=24, bold=True, color=GREEN if i == 0 else GREEN_DEEP)]
+    els += voet(0)
+    return els, False
+
+
+def s_hours():
+    els = eyebrow('Where the time goes')
+    els += kop('Academics already work\nfar beyond contract', w=1300)
+    rows = [('Contract', 37.5, INK200), ('Actual average', 50.9, AMBER)]
+    for i, (t, v, kleur) in enumerate(rows):
+        y = 470 + i * 170
+        bw = v / 52 * 1280
+        els += [text(M, y + 20, 360, 50, t, size=32, color=NAVY, bold=i == 1, align='left'),
+                rect(M + 380, y, bw, 100, kleur, r=14),
+                text(M + 380 + bw - 260, y + 22, 230, 60, f'{v:g} h', font=HEAD, size=52, bold=True,
+                     color=NAVY if i == 0 else WHITE, align='right')]
+    els += [text(M + 380, 820, 1200, 40, '+13.4 hours a week beyond contract', size=32, bold=True, color=AMBER, align='left')]
+    els += voet(0, src='UCU workload survey, 2016, n ≈ 12,100 (older data)')
+    return els, False
+
+
+def s_pains():
+    els = eyebrow('What we hear from institutions')
+    els += kop('The cost of no time')
+    groepen = [('For lecturers', 'green', [('schoolbord', 'Marking instead of mentoring'), ('klok', 'Structural overtime')]),
+               ('For institutions', 'amber', [('pen', 'No formative feedback at all'), ('prijs', 'Paying external markers'),
+                                              ('studenten', 'Fewer staff, more students')])]
+    xs, w = D.cols(2)
+    for i, (t, tone, items) in enumerate(groepen):
+        x = xs[i] - w / 2
+        els += [text(x, 320, w, 50, t.upper(), size=26, bold=True, color=GREEN_DEEP if i == 0 else AMBER, align='left')]
+        for j, (ic, it) in enumerate(items):
+            y = 390 + j * 150
+            els += card(x, y, w, 126, TONE[tone])
+            els += [pic(icon(ic, tone), x + 36, y + 31, 64, 64),
+                    text(x + 130, y + 40, w - 160, 50, it, size=34, bold=True, color=NAVY, align='left')]
+    els += voet(0)
+    return els, False
+
+
+def s_accuracy():
+    els = eyebrow('Why accuracy matters to us')
+    els += kop('Time saved depends\non accuracy', w=1300)
+    stappen = [('rubric', 'Your rubric and\ninstructions'), ('model', 'The model\nfollows them'),
+               ('filepen', 'Feedback you\nwould give'), ('check', 'Approve,\ndon\'t rewrite')]
+    xs, w = D.cols(4)
+    for i, (ic, t) in enumerate(stappen):
+        tone = 'green' if i == 3 else 'navy'
+        els += itile(xs[i], 450, ic, tone, size=150)
+        els += [text(xs[i] - w / 2, 630, w, 110, t, size=32, color=NAVY, bold=i == 3, ls=1.3)]
+        if i < 3:
+            els += [text(xs[i] + 90, 490, w - 180 + 72, 70, '→', font=HEAD, size=60, bold=True, color=INK200)]
+    els += [text(M, 800, 1680, 50, 'Inaccurate feedback costs more time to fix than to write yourself.',
+                 size=32, color=AMBER, bold=True, align='left')]
+    els += voet(0)
+    return els, False
+
+
+def s_tuning():
+    els = eyebrow('Our lessons')
+    els += kop('Tuning is the investment', w=1300)
+    xs, w = D.cols(3)
+    stats = [('~6', 'points from the lecturer’s\nmark, on average', INK500),
+             ('~2', 'points for lecturers who\ntuned the model', GREEN_DEEP),
+             ('2–3', 'minutes review time\nper submission', NAVY)]
+    for i, (n, t, kleur) in enumerate(stats):
+        els += card(xs[i] - w / 2, 330, w, 460, TINT_G if i == 1 else INK50)
+        els += [text(xs[i] - w / 2, 380, w, 220, n, font=HEAD, size=180, bold=True, color=kleur, ls=1.0),
+                text(xs[i] - w / 2 + 30, 620, w - 60, 110, t, size=32, color=NAVY, ls=1.3)]
+    els += voet(0, src='One pilot, Bath Spa University, June 2026: 435 submissions, 6 modules, 13 markers.')
+    return els, False
+
+
+def s_endgoal_efficiency():
+    els = eyebrow('Where we want to get to')
+    els += kop('Lecturer time moves from\ntyping to teaching', w=1300)
+    rows = [('Today', [(0.62, AMBER, 'Writing feedback'), (0.38, INK200, 'Teaching & mentoring')]),
+            ('With AI', [(0.25, AMBER, 'Checking'), (0.75, GREEN, 'Teaching & mentoring')])]
+    for i, (t, parts) in enumerate(rows):
+        y = 480 + i * 180
+        els += [text(M, y + 30, 240, 50, t, size=34, bold=True, color=NAVY, align='left')]
+        x = M + 260
+        for frac, kleur, lab in parts:
+            bw = 1420 * frac
+            els += [rect(x, y, bw - 8, 110, kleur, r=14),
+                    text(x + 28, y + 34, bw - 50, 44, lab, size=30, bold=True,
+                         color=NAVY if kleur != AMBER else WHITE, align='left')]
+            x += bw
+    els += voet(0, src='Illustration, not a measurement.')
+    return els, False
+
+
+def s_objection():
+    return statement('“Won’t lecturers just\nclick approve?”', sub='The question we always get.')
+
+
+def s_objection_answer():
+    els = eyebrow('Our answer')
+    els += kop('Approving is still judging')
+    items = [('wisselend', 'amber', 'The alternative today is\noften no feedback at all'),
+             ('rubric', 'green', 'It gives the feedback\nthe lecturer set up'),
+             ('historie', 'navy', 'Every edit is logged\nin the audit trail')]
+    xs, w = D.cols(3)
+    for i, (ic, tone, t) in enumerate(items):
+        els += card(xs[i] - w / 2, 330, w, 400, TONE[tone])
+        els += [pic(icon(ic, tone), xs[i] - 50, 390, 100, 100),
+                text(xs[i] - w / 2 + 30, 540, w - 60, 140, t, size=32, bold=True, color=NAVY, ls=1.3)]
+    els += [text(M, 790, 1680, 60, 'The AI assists. The academic decides.', font=HEAD, size=48, bold=True,
+                 color=GREEN_DEEP, align='left')]
+    els += voet(0)
+    return els, False
+
+
+# ---------------------------------------------------------------- breakouts en afsluiting
+def s_choose_room():
+    els = eyebrow('Breakout rooms')
+    els += kop('Choose your room')
+    xs, w = D.cols(2)
+    data = [('weegschaal', 'green', 'Consistency', 'with Dante'), ('klok', 'navy', 'Operational efficiency', 'with [name]')]
+    for i, (ic, tone, t, who) in enumerate(data):
+        x = xs[i] - w / 2
+        els += [rect(x, 320, w, 540, TONE[tone], r=28)]
+        els += [pic(icon('deur', tone), x + w / 2 - 70, 470, 140, 140),
+                text(x, 650, w, 60, t, font=HEAD, size=46, bold=True, color=NAVY),
+                text(x, 720, w, 40, who, size=30, color=INK500)]
+    els += [text(M, 900, 1680, 40, 'Statements · vote · discuss · short talk · questions', size=28, color=INK500, align='left')]
+    els += voet(0)
+    return els, False
+
+
+def statements(room, items):
+    els = eyebrow(f'Room · {room}')
+    els += kop('Agree or disagree?')
+    for i, t in enumerate(items):
+        y = 330 + i * 190
+        els += card(M, y, 1680, 160, INK50)
+        els += [text(M + 40, y + 40, 80, 80, str(i + 1), font=HEAD, size=64, bold=True, color=GREEN_DEEP, align='left'),
+                text(M + 140, y + 50, 1150, 70, t, size=36, bold=True, color=NAVY, align='left', ls=1.2),
+                rect(M + 1330, y + 50, 140, 60, TINT_G, r=30),
+                text(M + 1330, y + 62, 140, 36, 'Agree', size=26, bold=True, color=GREEN_DEEP),
+                rect(M + 1490, y + 50, 160, 60, TINT_A, r=30),
+                text(M + 1490, y + 62, 160, 36, 'Disagree', size=26, bold=True, color=AMBER)]
+    els += voet(0)
+    return els, False
+
+
+def s_room_consistency():
+    return statements('Consistency', [
+        'Same grade with different feedback is consistent enough.',
+        'Students care more about fair grades than consistent feedback.',
+        'AI should flag unusual marks, not propose them.'])
+
+
+def s_room_efficiency():
+    return statements('Operational efficiency', [
+        'Formative feedback no lecturer has read first is acceptable.',
+        'Time saved on marking will be cut, not given back to students.',
+        'Approving AI feedback with small edits is still my feedback.'])
+
+
+def s_what_we_heard():
+    els = eyebrow('Back together')
+    els += kop('What we heard')
+    xs, w = D.cols(2)
+    for i, t in enumerate(['Consistency', 'Operational efficiency']):
+        x = xs[i] - w / 2
+        els += card(x, 320, w, 540, TINT_G if i == 0 else INK50)
+        els += [text(x + 48, 360, w - 96, 60, t, font=HEAD, size=44, bold=True, color=NAVY, align='left')]
+        for j in range(3):
+            els += [rect(x + 48, 470 + j * 120, w - 96, 3, INK200)]
+    els += voet(0)
+    return els, False
+
+
+def s_close():
+    els = [rect(0, 0, W, H, NAVY)]
+    els += [text(M, 330, 1500, 260, 'Which of these would\nyou test first?', font=HEAD, size=96, bold=True,
+                 color=WHITE, align='left', ls=1.05),
+            text(M, 620, 1500, 50, 'Slides and sources follow by email.', size=36, color='B9CBD2', align='left'),
+            text(M, 700, 1500, 50, 'info@eduface.me  ·  eduface.me', size=32, color=GREEN, align='left')]
+    els += [pic('assets/logo_white_c.png', M, 940, 222, 60)]
+    return els, True
+
+
+DECK = [s_opening, s_agenda, s_jisc, s_jisc_pilot, s_logos, s_not_a_demo, s_three_reasons,
+        s_data_risk, s_ban,
+        s_sec_consistency, s_consistency_layers, s_nine_of_twenty, s_where_it_hurts, s_builds,
+        s_endgoal_consistency, s_llm_vs_model, s_cases_consistency, s_moderation,
+        s_sec_efficiency, s_two_flavours, s_hours, s_pains, s_accuracy, s_tuning,
+        s_endgoal_efficiency, s_objection, s_objection_answer,
+        s_choose_room, s_room_consistency, s_room_efficiency, s_what_we_heard, s_close]
 
 
 def build(fns, naam):
@@ -121,11 +635,15 @@ def build(fns, naam):
     slides = []
     for i, fn in enumerate(fns, 1):
         els, dark = fn()
-        h = D.render_html(els, f'preview/{fn.__name__}.html', dark=dark)
-        shoot(os.path.abspath(h), f'preview/{fn.__name__}.png')
+        if 1 < i < len(fns):   # paginanummer links van het logo
+            els = els + [text(1560, 1004, 60, 30, str(i), size=22,
+                              color='8FA9B4' if dark else '9AAFB8', align='right')]
+        h = D.render_html(els, f'preview/{i:02d}-{fn.__name__[2:]}.html', dark=dark)
+        shoot(os.path.abspath(h), h[:-5] + '.png')
+        os.remove(h)
         slides.append(els)
     D.render_pptx(slides, f'{naam}-bewerkbaar.pptx')
 
 
 if __name__ == '__main__':
-    build(PROEF, 'jisc-webinar-proef')
+    build(DECK, 'jisc-webinar')
