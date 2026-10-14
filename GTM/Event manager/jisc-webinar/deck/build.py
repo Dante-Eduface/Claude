@@ -224,7 +224,7 @@ def s_jisc():
             text(M, 490, 1100, 60, 'Licence Manager, Jisc', size=40, color='B9CBD2', align='left')]
     els += [oval(1260, 250, 520, '0F4C57', '0F4C57', 0),
             text(1260, 490, 520, 40, 'photo', size=28, color='8FA9B4')]
-    els += [text(M, 640, 1000, 120, 'What does the sector expect from AI feedback,\nand what is actually working?',
+    els += [text(M, 640, 1000, 120, 'Why AI marking and feedback has a place\nin Jisc’s new digital assessment framework',
                  size=34, color=GREEN, align='left', ls=1.3)]
     els += voet(0, dark=True)
     return els, True
@@ -247,11 +247,21 @@ def s_jisc_pilot():
 
 JISC_VRAGEN = [
     'What do you see institutions struggling with most right now when it comes to AI?',
-    'What made Jisc decide to start the AI in marking and feedback pilot?',
-    'The pilot points towards formative feedback. What makes AI so valuable there?',
-    'Where do institutions tend to get stuck when they try it?',
+    'Why did Jisc decide to include AI marking and feedback in the new digital assessment framework?',
+    'What does a framework like this make easier for institutions?',
+    'What should institutions look for when they choose an AI marking and feedback tool?',
     "What's one piece of advice you'd give an institution starting next term?",
 ]
+
+
+def s_hannah_asks():
+    """Hannah stelt de vraag terug aan Eduface; brug naar ons deel."""
+    els = eyebrow('Hannah asks Eduface')
+    els += [text(M, 300, 1500, 420, 'Where do institutions tend to get stuck when they try it?',
+                 font=HEAD, size=88, bold=True, color=NAVY, align='left', ls=1.1)]
+    els += [rect(M, 800, 64, 20, AMBER, r=10)]
+    els += voet(0)
+    return els, False
 
 
 def jisc_vraag(n):
@@ -685,8 +695,8 @@ def s_close():
     return els, True
 
 
-DECK = [s_opening, s_agenda, s_jisc, jisc_vraag(1), jisc_vraag(2), s_jisc_pilot,
-        jisc_vraag(3), jisc_vraag(4), jisc_vraag(5), s_logos, s_not_a_demo, s_three_reasons,
+DECK = [s_opening, s_agenda, s_jisc, jisc_vraag(1), jisc_vraag(2),
+        jisc_vraag(3), jisc_vraag(4), jisc_vraag(5), s_hannah_asks, s_logos, s_not_a_demo, s_three_reasons,
         s_data_risk, s_ban,
         s_sec_consistency, s_consistency_layers, s_nine_of_twenty, s_where_it_hurts, s_builds,
         s_endgoal_consistency, s_llm_vs_model, s_cases_consistency, s_policy_objection, s_moderation,
