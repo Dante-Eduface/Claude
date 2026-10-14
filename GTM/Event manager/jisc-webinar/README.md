@@ -3,7 +3,7 @@
 _Aangelegd 2026-10-14._
 
 **Wat:** webinar "The business outcomes of AI marking and feedback" met Jisc (spreker: Hannah Lawrence, Licence Manager). Informerend, geen productpitch.
-**Fase:** poort 3. Volledig deck (37 slides, incl. 5 Jisc-vraagslides) gebouwd op 14-10-2026, stijl goedgekeurd.
+**Fase:** poort 3. Volledig deck (36 slides). Breakout-stellingen gaan naar aparte decks per kamer gebouwd op 14-10-2026, stijl goedgekeurd.
 **Volgende stap:** foto Hannah, Bath Spa- en 7e logo, naam host efficiency-kamer. Dan in Canva importeren. Jisc-logo staat in `deck/assets/logo_jisc.png` (aangeleverd 14-10-2026).
 **Leest hieruit:** skill `pitch-deck`.
 
@@ -26,3 +26,6 @@ _Aangelegd 2026-10-14._
 - Tom Moule (Jisc) in THE, 27-03-2026: "These tools shouldn't be used as a final marker – humans should always be reviewing the feedback." https://www.timeshighereducation.com/news/jisc-ai-marking-trial-not-looking-displace-humans
 
 Niet gevonden: een staffsurvey over hoeveel docenten al AI gebruiken om na te kijken.
+- The Guardian, 20-11-2025: studenten University of Staffordshire klagen over een cursus die grotendeels door AI werd gegeven. Geen datalek en geen nakijken, wel UK. https://www.theguardian.com/education/2025/nov/20/university-of-staffordshire-course-taught-in-large-part-by-ai-artificial-intelligence
+
+Niet gevonden (14-10-2026): een Brits incident waarbij een docent studentdata in AI plakte om na te kijken, en landelijke cijfers over werkuren in het Britse HO van 2023 of later. De uren-slide is daarom uit het deck gehaald.

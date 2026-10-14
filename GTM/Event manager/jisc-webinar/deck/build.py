@@ -74,7 +74,7 @@ def kop(t, y=140, dark=False, size=80, w=1680):
 def voet(page, dark=False, src=None):
     out = []
     if src:
-        out.append(text(M, 1000, 1400, 36, src, size=22,
+        out.append(text(M, 1000, 1180, 36, src, size=22,
                         color='8FA9B4' if dark else INK500, align='left'))
     out += logopaar(dark)
     return out
@@ -146,24 +146,23 @@ def s_logos():
 
 def s_consistency_layers():
     els = eyebrow('Consistency')
-    els += kop('Consistency is more than\nthe same grade', size=80, w=900)
-    # drie concentrische cirkels, rechts
-    cx, cy = 1360, 580
-    rings = [(740, INK50, 'Same voice', 'Feedback in the same style, every time'),
-             (500, TINT_G, 'Same criteria', 'The same parts of the work get comment'),
-             (270, NAVY, 'Same grade', None)]
-    for d, fill, *_ in rings:
-        els.append(oval(cx - d / 2, cy - d / 2, d, fill, fill, 0))
-    els += [text(cx - 135, cy - 26, 270, 52, 'Same grade', font=HEAD, size=44, bold=True, color=WHITE),
-            text(cx - 250, cy - 215, 500, 52, 'Same criteria', font=HEAD, size=44, bold=True, color=GREEN_DEEP),
-            text(cx - 370, cy - 330, 740, 52, 'Same voice', font=HEAD, size=44, bold=True, color=NAVY)]
-    # aantekening links: waar de meeste evaluaties stoppen
-    els += [rect(M + 640, 634, cx - 135 - M - 640 - 20, 3, AMBER),
-            oval(cx - 135 - 26, 626, 18, AMBER, AMBER, 0),
-            rect(M, 560, 6, 150, AMBER),
-            text(M + 36, 560, 640, 150, 'Where most evaluations stop:\nrun it twice, compare the mark.',
-                 size=34, color=NAVY, align='left', ls=1.3)]
-    els += voet(8)
+    els += kop('Consistency is more than\nthe same grade', w=1300)
+    lagen = [('1', 'Same mark', 'Run the same assignment twice, get the same grade', INK50, INK500),
+             ('2', 'Same focus', 'The feedback addresses the same parts of the work', TINT_G, GREEN_DEEP),
+             ('3', 'Same style', 'The feedback is written the same way, every time', TINT_G, GREEN_DEEP)]
+    x0, bw = M + 300, 1380
+    for i, (nr, t, sub, fill, kleur) in enumerate(lagen):
+        y = 350 + i * 170
+        els += [rect(x0, y, bw, 140, fill, r=24),
+                text(x0 + 40, y + 34, 80, 80, nr, font=HEAD, size=64, bold=True, color=kleur, align='left'),
+                text(x0 + 140, y + 30, 420, 60, t, font=HEAD, size=46, bold=True, color=NAVY, align='left'),
+                text(x0 + 560, y + 46, 780, 50, sub, size=30, color=NAVY, align='left')]
+    # haken links: wat de meesten toetsen, wat wij ook toetsen
+    els += [rect(M + 250, 360, 4, 120, INK200),
+            text(M, 380, 230, 90, 'What most\npeople check', size=26, bold=True, color=INK500, align='right', ls=1.2),
+            rect(M + 250, 530, 4, 290, GREEN),
+            text(M, 630, 230, 90, 'What we\nalso check', size=26, bold=True, color=GREEN_DEEP, align='right', ls=1.2)]
+    els += voet(0)
     return els, False
 
 
@@ -300,13 +299,14 @@ def s_three_reasons():
 # ---------------------------------------------------------------- datarisico
 def s_data_risk():
     els = eyebrow('1 · Data risk', y=96)
-    els += kop('Staff are already\nusing AI to mark', w=760)
+    els += kop('Staff already use AI,\noutside policy', w=760)
     # twee nieuwskoppen als kaartjes, licht gedraaid kan niet in pptx, dus verspringend
-    koppen = [(980, 200, 'Omroep Brabant · early 2026',
+    koppen = [(980, 200, 'The Guardian · 20 November 2025',
+               "'We could have asked ChatGPT': students fight back over course taught by AI",
+               'University of Staffordshire'),
+              (1060, 560, 'Omroep Brabant (NL) · early 2026',
                'Docent bouwt AI-tool die studentgegevens naar ChatGPT stuurt',
-               'Lecturer builds AI tool that sends student data to ChatGPT'),
-              (1060, 560, 'The New York Times · May 2025',
-               "The Professors Are Using ChatGPT, and Some Students Aren't Happy About It", None)]
+               'Lecturer builds AI tool that sends student data to ChatGPT')]
     for x, y, bron, kop_, vert in koppen:
         els += [rect(x + 12, y + 14, 740, 300, INK100, r=20), rect(x, y, 740, 300, WHITE, r=20),
                 rect(x, y, 740, 300, 'FFFFFF', r=20)]
@@ -317,7 +317,7 @@ def s_data_risk():
             els += [text(x + 40, y + 236, 660, 40, vert, size=24, color=INK500, align='left')]
     els += [text(M, 560, 760, 200, 'When it reaches the press,\nit is no longer an IT issue.',
                  size=36, color=NAVY, align='left', ls=1.3)]
-    els += voet(0, src='omroepbrabant.nl/nieuws/6002910 · nytimes.com, 14 May 2025')
+    els += voet(0, src='theguardian.com/education/2025/nov/20 · omroepbrabant.nl/nieuws/6002910')
     return els, False
 
 
@@ -438,6 +438,10 @@ def s_cases_consistency():
     return els, False
 
 
+def s_policy_objection():
+    return statement('“AI grading isn’t aligned\nwith our policy.”', sub='An objection we hear often.')
+
+
 def s_moderation():
     els = eyebrow('When AI grading is a step too far')
     els += kop('Not ready for AI grades?\nUse it to moderate.', w=1300)
@@ -525,20 +529,32 @@ def s_pains():
     return els, False
 
 
+def s_editing_cost():
+    els = eyebrow('Our lesson')
+    els += kop('Editing AI feedback can cost more\ntime than writing it yourself', size=72, w=1600)
+    rows = [('Writing feedback yourself', 0.55, INK200, NAVY),
+            ('Fixing inaccurate AI feedback', 0.85, AMBER, WHITE),
+            ('Approving accurate AI feedback', 0.22, GREEN, NAVY)]
+    for i, (t, frac, kleur, tk) in enumerate(rows):
+        y = 420 + i * 150
+        els += [text(M, y + 28, 520, 50, t, size=32, bold=i == 1, color=NAVY, align='left'),
+                rect(M + 560, y, 1120 * frac, 104, kleur, r=14)]
+    els += voet(0, src='Illustration of time per assignment, not a measurement.')
+    return els, False
+
+
 def s_accuracy():
-    els = eyebrow('Why accuracy matters to us')
-    els += kop('Time saved depends\non accuracy', w=1300)
+    els = eyebrow('Therefore')
+    els += kop('Accuracy is the most\nimportant factor', w=1300)
     stappen = [('rubric', 'Your rubric and\ninstructions'), ('model', 'The model\nfollows them'),
                ('filepen', 'Feedback you\nwould give'), ('check', 'Approve,\ndon\'t rewrite')]
     xs, w = D.cols(4)
     for i, (ic, t) in enumerate(stappen):
         tone = 'green' if i == 3 else 'navy'
-        els += itile(xs[i], 450, ic, tone, size=150)
-        els += [text(xs[i] - w / 2, 630, w, 110, t, size=32, color=NAVY, bold=i == 3, ls=1.3)]
+        els += itile(xs[i], 470, ic, tone, size=150)
+        els += [text(xs[i] - w / 2, 650, w, 110, t, size=32, color=NAVY, bold=i == 3, ls=1.3)]
         if i < 3:
-            els += [text(xs[i] + 90, 490, w - 180 + 72, 70, '→', font=HEAD, size=60, bold=True, color=INK200)]
-    els += [text(M, 800, 1680, 50, 'Inaccurate feedback costs more time to fix than to write yourself.',
-                 size=32, color=AMBER, bold=True, align='left')]
+            els += [text(xs[i] + 90, 510, w - 180 + 72, 70, '→', font=HEAD, size=60, bold=True, color=INK200)]
     els += voet(0)
     return els, False
 
@@ -547,14 +563,14 @@ def s_tuning():
     els = eyebrow('Our lessons')
     els += kop('Tuning is the investment', w=1300)
     xs, w = D.cols(3)
-    stats = [('~6', 'points from the lecturer’s\nmark, on average', INK500),
-             ('~2', 'points for lecturers who\ntuned the model', GREEN_DEEP),
-             ('2–3', 'minutes review time\nper submission', NAVY)]
+    stats = [('94%', 'accuracy on average', INK500),
+             ('98%', 'accuracy for lecturers\nwho tuned the model', GREEN_DEEP),
+             ('−85%', 'time spent typing feedback,\nup to 20 min per assignment', NAVY)]
     for i, (n, t, kleur) in enumerate(stats):
         els += card(xs[i] - w / 2, 330, w, 460, TINT_G if i == 1 else INK50)
-        els += [text(xs[i] - w / 2, 380, w, 220, n, font=HEAD, size=180, bold=True, color=kleur, ls=1.0),
+        els += [text(xs[i] - w / 2, 390, w, 220, n, font=HEAD, size=150, bold=True, color=kleur, ls=1.0),
                 text(xs[i] - w / 2 + 30, 620, w - 60, 110, t, size=32, color=NAVY, ls=1.3)]
-    els += voet(0, src='One pilot, Bath Spa University, June 2026: 435 submissions, 6 modules, 13 markers.')
+    els += voet(0, src='Accuracy: Bath Spa pilot, June 2026 (435 submissions, 13 markers). Typing time: Eduface implementations.')
     return els, False
 
 
@@ -673,10 +689,10 @@ DECK = [s_opening, s_agenda, s_jisc, jisc_vraag(1), jisc_vraag(2), s_jisc_pilot,
         jisc_vraag(3), jisc_vraag(4), jisc_vraag(5), s_logos, s_not_a_demo, s_three_reasons,
         s_data_risk, s_ban,
         s_sec_consistency, s_consistency_layers, s_nine_of_twenty, s_where_it_hurts, s_builds,
-        s_endgoal_consistency, s_llm_vs_model, s_cases_consistency, s_moderation,
-        s_sec_efficiency, s_two_flavours, s_hours, s_pains, s_accuracy, s_tuning,
+        s_endgoal_consistency, s_llm_vs_model, s_cases_consistency, s_policy_objection, s_moderation,
+        s_sec_efficiency, s_two_flavours, s_pains, s_editing_cost, s_accuracy, s_tuning,
         s_endgoal_efficiency, s_objection, s_objection_answer,
-        s_choose_room, s_room_consistency, s_room_efficiency, s_what_we_heard, s_close]
+        s_choose_room, s_what_we_heard, s_close]
 
 
 def build(fns, naam):
