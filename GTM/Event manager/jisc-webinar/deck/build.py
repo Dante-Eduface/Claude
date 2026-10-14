@@ -14,7 +14,8 @@ D.CHROME = os.environ.get('CHROME', '/tmp/claude-0/-home-user-Claude/'
 
 W, H = 1920, 1080
 JISC_LOGO = 'assets/logo_jisc.png' if os.path.exists('assets/logo_jisc.png') else 'assets/logo_jisc_placeholder.png'
-JISC_R = 330 / 120   # breedte/hoogte; aanpassen aan het echte logo
+from PIL import Image as _Img
+JISC_R = _Img.open(JISC_LOGO).size[0] / _Img.open(JISC_LOGO).size[1]   # breedte/hoogte
 
 
 def shoot(html_path, png_path):
@@ -79,16 +80,16 @@ def voet(page, dark=False, src=None):
     return out
 
 
-def logopaar(dark=False, y=992):
+def logopaar(dark=False, y=986):
     """Eduface en Jisc rechtsonder. Op navy op een wit vlak, anders valt het Jisc-logo weg."""
-    jh = 44; jw = jh * JISC_R
+    jh = 56; jw = jh * JISC_R   # vierkant Jisc-blok iets groter dan het woordmerk, anders oogt het klein
     x_jisc = 1800 - jw
     x_lijn = x_jisc - 24
     x_edu = x_lijn - 24 - 148
     out = []
     if dark:
         out.append(rect(x_edu - 24, y - 14, 1800 - x_edu + 48, jh + 28, WHITE, r=18))
-    out += [pic('assets/logo_navy_c.png', x_edu, y + 2, 148, 40),
+    out += [pic('assets/logo_navy_c.png', x_edu, y + 8, 148, 40),
             rect(x_lijn, y, 2, jh, INK200),
             pic(JISC_LOGO, x_jisc, y, jw, jh)]
     return out
@@ -106,10 +107,10 @@ def s_opening():
                  font=HEAD, size=96, bold=True, color=WHITE, align='left', ls=1.05)]
     els += [text(M, 600, 1100, 60, 'Lessons from 20+ pilots and implementations',
                  size=36, color='B9CBD2', align='left')]
-    els += [rect(M - 28, 912, 222 + 50 + 60 * JISC_R + 56, 116, WHITE, r=22),
+    els += [rect(M - 28, 904, 222 + 50 + 80 * JISC_R + 56, 132, WHITE, r=22),
             pic('assets/logo_navy_c.png', M, 940, 222, 60),
             rect(M + 222 + 24, 934, 2, 72, INK200),
-            pic(JISC_LOGO, M + 222 + 50, 940, 60 * JISC_R, 60)]
+            pic(JISC_LOGO, M + 222 + 50, 930, 80 * JISC_R, 80)]
     return els, True
 
 

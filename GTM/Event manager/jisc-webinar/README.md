@@ -4,7 +4,7 @@ _Aangelegd 2026-10-14._
 
 **Wat:** webinar "The business outcomes of AI marking and feedback" met Jisc (spreker: Hannah Lawrence, Licence Manager). Informerend, geen productpitch.
 **Fase:** poort 3. Volledig deck (37 slides, incl. 5 Jisc-vraagslides) gebouwd op 14-10-2026, stijl goedgekeurd.
-**Volgende stap:** Jisc-logo als `deck/assets/logo_jisc.png` neerzetten en `build.py` draaien; foto Hannah, Bath Spa- en 7e logo, naam host efficiency-kamer. Dan in Canva importeren.
+**Volgende stap:** foto Hannah, Bath Spa- en 7e logo, naam host efficiency-kamer. Dan in Canva importeren. Jisc-logo staat in `deck/assets/logo_jisc.png` (aangeleverd 14-10-2026).
 **Leest hieruit:** skill `pitch-deck`.
 
 ## Opbouw (afgesproken in de chat van 14-10-2026)
