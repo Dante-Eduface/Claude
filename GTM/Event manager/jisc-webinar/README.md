@@ -13,7 +13,7 @@ _Aangelegd 2026-10-14._
 3. Lessen uit 20+ pilots: 7 logo's + "+20"
 4. Drie redenen: datarisico, consistentie, efficiency
 5. Datarisico kort, consistentie en efficiency als deep dive
-6. Breakouts: consistentie (Dante) en operational efficiency, met stellingen
+6. Breakouts: aparte decks. Consistency (Dante): `deck/build_consistency.py`, 17 slides (stellingen, demo consistency check, discussie). Efficiency: nog te maken
 7. Plenair afsluiten
 
 ## Bronnen die gevonden zijn (14-10-2026)
