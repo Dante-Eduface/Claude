@@ -9,7 +9,7 @@ _Aangelegd 2026-10-14._
 
 ## Opbouw (afgesproken in de chat van 14-10-2026)
 1. Opening, agenda
-2. Gesprek met Jisc (vragen nog te draften)
+2. Gesprek met Jisc, vragen in `jisc-openingsvragen.md`
 3. Lessen uit 20+ pilots: 7 logo's + "+20"
 4. Drie redenen: datarisico, consistentie, efficiency
 5. Datarisico kort, consistentie en efficiency als deep dive
