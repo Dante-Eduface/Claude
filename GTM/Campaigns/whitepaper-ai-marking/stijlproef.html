@@ -23,7 +23,7 @@
   body { background: #d9e2e6; font-family: var(--sans); color: var(--navy); -webkit-font-smoothing: antialiased; }
   .page {
     width: 297mm; height: 210mm; margin: 0 auto 24px; background: var(--ink-50);
-    display: grid; grid-template-columns: 52mm 1fr; overflow: hidden; page-break-after: always;
+    display: grid; grid-template-columns: 56px 1fr; overflow: hidden; page-break-after: always;
   }
   @media print { body { background: none; } .page { margin: 0; } }
 
@@ -44,38 +44,39 @@
   .top { height: 40px; background: var(--white); border-bottom: 1px solid var(--ink-100); display: flex; align-items: center; padding: 0 24px; font-size: 12px; color: var(--ink-500); gap: 6px; }
   .top b { color: var(--navy); font-weight: 500; }
   .top .pg { margin-left: auto; }
-  .content { padding: 24px; flex: 1; display: flex; flex-direction: column; gap: 16px; min-height: 0; }
+  .content { padding: 16px 24px; flex: 1; display: flex; flex-direction: column; gap: 12px; min-height: 0; }
   .card { background: var(--white); border: 1px solid var(--ink-100); border-radius: var(--r-xl); box-shadow: var(--shadow-sm); }
 
   .chip { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 500; padding: 3px 10px; border-radius: var(--r-full); border: 1px solid var(--ink-200); color: var(--ink-700); white-space: nowrap; }
   .chip.wait { color: var(--warning); border-color: #f1d4a6; background: var(--warning-bg); }
   .chip.ai { color: var(--green-deep); border-color: #a8e8c8; background: #effcf5; }
   .tabs { display: flex; gap: 24px; border-bottom: 1px solid var(--ink-100); padding: 0 24px; font-size: 13px; }
-  .tabs span { padding: 12px 0; color: var(--ink-500); }
+  .tabs span { padding: 8px 0; color: var(--ink-500); }
   .tabs span.on { color: var(--navy); font-weight: 600; box-shadow: inset 0 -2px 0 var(--navy); }
   .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 36px; padding: 0 16px; border-radius: var(--r-md); font-size: 13px; font-weight: 600; background: var(--navy); color: var(--white); }
   .btn.ghost { background: var(--white); color: var(--navy); border: 1px solid var(--ink-200); }
 
   /* ---- P1 cover ---- */
-  .sub-head { padding: 24px 24px 20px; display: flex; gap: 24px; align-items: flex-start; }
-  .sub-head h1 { font-family: var(--display); font-weight: 700; font-size: 38px; line-height: 1.05; letter-spacing: -.01em; max-width: 22ch; }
+  .sub-head { padding: 20px 24px 16px; display: flex; gap: 24px; align-items: flex-start; }
+  .sub-head h1 { font-family: var(--display); font-weight: 700; font-size: 34px; line-height: 1.05; letter-spacing: -.01em; max-width: 22ch; }
   .meta { display: flex; gap: 16px; margin-top: 12px; font-size: 12px; color: var(--ink-500); align-items: center; }
   .meta b { color: var(--navy); font-weight: 500; }
-  .mark { margin-left: auto; width: 200px; flex: none; border: 1px solid var(--ink-100); border-radius: var(--r-lg); padding: 16px; display: flex; flex-direction: column; gap: 12px; }
+  .mark { margin-left: auto; flex: none; border: 1px solid var(--ink-100); border-radius: var(--r-lg); padding: 12px 16px; display: grid; grid-template-columns: auto auto; column-gap: 16px; row-gap: 4px; align-items: center; }
+  .mark .lbl { grid-column: 1 / -1; }
   .mark .lbl { font-size: 12px; color: var(--ink-500); }
-  .mark .val { font-family: var(--display); font-size: 40px; font-weight: 700; color: var(--ink-300); line-height: 1; }
+  .mark .val { font-family: var(--display); font-size: 30px; font-weight: 700; color: var(--ink-300); line-height: 1; }
   .mark .val small { font-size: 18px; }
 
   .rubric { padding: 0 24px 24px; display: flex; flex-direction: column; gap: 12px; }
   .crit { display: grid; grid-template-columns: 170px 1fr 1fr; border: 1px solid var(--ink-100); border-radius: var(--r-lg); overflow: hidden; }
-  .crit .name { padding: 16px; background: var(--ink-50); display: flex; flex-direction: column; gap: 8px; border-right: 1px solid var(--ink-100); }
+  .crit .name { padding: 12px 16px; background: var(--ink-50); display: flex; flex-direction: column; gap: 8px; border-right: 1px solid var(--ink-100); }
   .crit .name b { font-size: 15px; font-weight: 600; }
   .weight { align-self: flex-start; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: var(--r-full); background: #effcf5; color: var(--green-deep); border: 1px solid #a8e8c8; }
   .bar { height: 6px; border-radius: var(--r-full); background: var(--ink-100); overflow: hidden; margin-top: auto; }
   .bar i { display: block; height: 100%; background: var(--navy); }
-  .finding { padding: 16px 20px; display: flex; gap: 16px; align-items: center; }
+  .finding { padding: 12px 20px; display: flex; gap: 16px; align-items: center; }
   .finding + .finding { border-left: 1px solid var(--ink-100); }
-  .finding .num { font-family: var(--display); font-weight: 700; font-size: 44px; line-height: 1; letter-spacing: -.02em; white-space: nowrap; }
+  .finding .num { font-family: var(--display); font-weight: 700; font-size: 40px; line-height: 1; letter-spacing: -.02em; white-space: nowrap; }
   .finding .num small { font-size: 22px; }
   .finding p { font-size: 13px; line-height: 1.4; color: var(--ink-700); }
   .finding .to { display: block; font-size: 11px; color: var(--ink-500); margin-top: 6px; }
@@ -124,24 +125,45 @@
 .teaser { display: flex; flex-direction: column; gap: 12px; }
   .teaser .row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
   .teaser .to { font-size: 11px; color: var(--ink-500); margin-top: auto; }
+  .rail { background: var(--white); border-right: 1px solid var(--ink-100); display: flex; flex-direction: column; align-items: center; gap: 20px; padding: 16px 0; }
+  .rail .inst-logo { width: 30px; height: 30px; }
+  .rail svg { width: 20px; height: 20px; fill: none; stroke: var(--ink-500); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+  .rail svg.on { stroke: var(--navy); background: var(--ink-50); box-sizing: content-box; padding: 7px; border-radius: var(--r-md); }
+  .chip.doc { height: 22px; padding: 0 10px; align-self: center; background: var(--navy); color: var(--white); border-color: var(--navy); margin-right: 8px; }
+  .legend { margin-left: auto; display: flex; align-items: center; gap: 6px; font-size: 11px; color: var(--ink-700); }
+  .legend i { width: 10px; height: 10px; border-radius: 3px; display: inline-block; margin-left: 10px; }
+  .legend i.g { background: var(--green); } .legend i.a { background: #e7b25c; }
+  .top .pg { margin-left: 16px; }
+  .tlogo { height: 16px; margin-left: 16px; }
+  .guide { display: flex; align-items: center; gap: 24px; background: var(--navy); color: var(--white); border-radius: var(--r-xl); padding: 12px 20px; font-size: 12.5px; }
+  .guide b { font-family: var(--display); font-size: 15px; font-weight: 700; white-space: nowrap; }
+  .guide span { display: flex; align-items: center; gap: 8px; line-height: 1.35; }
+  em.pin, .guide em, em.pin-i { font-style: normal; font-weight: 700; font-size: 11px; width: 20px; height: 20px; flex: none; border-radius: var(--r-full); display: inline-grid; place-items: center; background: var(--green); color: var(--navy); }
+  em.pin-i { margin-right: 8px; vertical-align: middle; }
+  .rubric { position: relative; }
+  em.pin.p1 { position: absolute; left: 12px; top: 8px; }
+  .take { font-size: 15px; font-weight: 600; line-height: 1.4; max-width: 60ch; padding-left: 12px; border-left: 3px solid var(--green); }
 </style>
 </head>
 <body>
 
 <!-- =========================== P1 COVER =========================== -->
 <section class="page">
-  <aside class="side">
-    <div class="inst"><div class="inst-logo"></div><div><b>Your institution</b><span>Marker</span></div></div>
-    <div class="nav">
-      <div class="nav-label">Platform</div>
-      <a class="on">Courses</a>
-      <a class="sub">Webinar, Oct 2026</a>
-    </div>
-    <div class="powered">Submitted in<img src="../../../Design/Merk/logos/logo_navy.png" alt="Eduface"></div>
+  <aside class="rail">
+    <div class="inst-logo" title="Your institution"></div>
+    <svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    <svg class="on" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg>
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 15-4 16 0"/></svg>
   </aside>
   <div class="main">
-    <div class="top">Courses <span>/</span> Webinar, Oct 2026 <span>/</span> <b>Business outcomes of AI marking</b><span class="pg">Page 1 of 7</span></div>
+    <div class="top"><span class="chip doc">Whitepaper</span>Courses <span>/</span> Webinar, Oct 2026 <span>/</span> <b>Business outcomes of AI marking</b><span class="legend"><i class="g"></i>Eduface evidence<i class="a"></i>What the room asked</span><span class="pg">1 / 7</span><img class="tlogo" src="../../../Design/Merk/logos/logo_navy.png" alt="Eduface"></div>
     <div class="content">
+      <div class="guide">
+        <b>How to read this whitepaper</b>
+        <span><em>1</em>We submitted what we learned from 20+ implementations, as an assignment.</span>
+        <span><em>2</em>The webinar room marked it. Their questions are the comments.</span>
+        <span><em>3</em>You give the final mark.</span>
+      </div>
       <div class="card">
         <div class="sub-head">
           <div>
@@ -149,31 +171,31 @@
             <div class="meta"><span>Submitted by <b>Eduface</b></span><span>Evidence from <b>20+ implementations</b></span><span class="chip wait">● Awaiting your approval</span></div>
           </div>
           <div class="mark">
-            <span class="lbl">Your mark</span>
+            <span class="lbl"><em class="pin-i">3</em>Your mark</span>
             <span class="val">– <small>/ 10</small></span>
             <span class="btn">Approve</span>
           </div>
         </div>
         <div class="tabs"><span class="on">Grading</span><span>Feedback</span></div>
-        <div class="rubric" style="padding-top:20px">
+        <div class="rubric" style="padding-top:16px"><em class="pin p1">1</em>
           <div class="crit">
             <div class="name"><b>Consistency</b><span class="weight">60%</span><div class="bar"><i style="width:60%"></i></div></div>
-            <div class="finding"><span class="num">9<small>/20</small></span><p>essays ranked both best and worst by experienced examiners<span class="to">Page 2</span></p></div>
-            <div class="finding"><span class="num">0</span><p>AI grades shown, and every paper still checked<span class="to">Page 4</span></p></div>
+            <div class="finding"><span class="num">9<small>/20</small></span><p>essays ranked both best and worst by experienced examiners<span class="to">Answered on page 2 →</span></p></div>
+            <div class="finding"><span class="num">0</span><p>AI grades shown, and every paper still checked<span class="to">Answered on page 4 →</span></p></div>
           </div>
           <div class="crit">
             <div class="name"><b>Efficiency</b><span class="weight">40%</span><div class="bar"><i style="width:40%"></i></div></div>
-            <div class="finding"><span class="num">−85%</span><p>time spent typing feedback, up to 20 min per assignment<span class="to">Page 5</span></p></div>
-            <div class="finding"><span class="num">97%</span><p>of lecturers still add their own word to the AI draft<span class="to">Page 6</span></p></div>
+            <div class="finding"><span class="num">−85%</span><p>time spent typing feedback, up to 20 min per assignment<span class="to">Page 5 →</span></p></div>
+            <div class="finding"><span class="num">97%</span><p>of lecturers still add their own word to the AI draft<span class="to">Answered on page 6 →</span></p></div>
           </div>
         </div>
       </div>
       <div class="teaser">
-        <div class="c-head">Comments from the second marker <span class="chip">9</span></div>
+        <div class="c-head"><span><em class="pin-i">2</em>What the room asked</span><span class="chip">9</span></div>
         <div class="row">
-          <div class="cmt marker"><div class="who"><span class="av m">2</span>Webinar attendee</div><q>Should we have started this conversation by defining consistency?</q><span class="to">Page 2</span></div>
-          <div class="cmt marker"><div class="who"><span class="av m">2</span>Webinar attendee</div><q>Is it better and more accurate than Excel?</q><span class="to">Page 4</span></div>
-          <div class="cmt marker"><div class="who"><span class="av m">2</span>Webinar attendee</div><q>Our students have explicitly said they don't want AI involved in marking and feedback.</q><span class="to">Page 6</span></div>
+          <div class="cmt marker"><div class="who"><span class="av m">Q</span>Webinar attendee</div><q>Should we have started this conversation by defining consistency?</q><span class="to">Answered on page 2 →</span></div>
+          <div class="cmt marker"><div class="who"><span class="av m">Q</span>Webinar attendee</div><q>Is it better and more accurate than Excel?</q><span class="to">Answered on page 4 →</span></div>
+          <div class="cmt marker"><div class="who"><span class="av m">Q</span>Webinar attendee</div><q>Our students have explicitly said they don't want AI involved in marking and feedback.</q><span class="to">Answered on page 6 →</span></div>
         </div>
       </div>
     </div>
@@ -182,22 +204,20 @@
 
 <!-- =========================== P4 CONSISTENCY =========================== -->
 <section class="page">
-  <aside class="side">
-    <div class="inst"><div class="inst-logo"></div><div><b>Your institution</b><span>Marker</span></div></div>
-    <div class="nav">
-      <div class="nav-label">Platform</div>
-      <a class="on">Courses</a>
-      <a class="sub">Webinar, Oct 2026</a>
-    </div>
-    <div class="powered">Submitted in<img src="../../../Design/Merk/logos/logo_navy.png" alt="Eduface"></div>
+  <aside class="rail">
+    <div class="inst-logo" title="Your institution"></div>
+    <svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    <svg class="on" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg>
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 15-4 16 0"/></svg>
   </aside>
   <div class="main">
-    <div class="top">Courses <span>/</span> Webinar, Oct 2026 <span>/</span> <b>Business outcomes of AI marking</b><span class="pg">Page 4 of 7</span></div>
+    <div class="top"><span class="chip doc">Whitepaper</span>Courses <span>/</span> Webinar, Oct 2026 <span>/</span> <b>Business outcomes of AI marking</b><span class="legend"><i class="g"></i>Eduface evidence<i class="a"></i>What the room asked</span><span class="pg">4 / 7</span><img class="tlogo" src="../../../Design/Merk/logos/logo_navy.png" alt="Eduface"></div>
     <div class="content">
       <div class="split">
         <div class="card doc">
           <span class="crit-label">Criterion · Consistency</span>
           <h2>Every paper read. No AI grade shown.</h2>
+          <p class="take">In short: the check flags marks that don't fit the paper, so moderation looks at 3 flags instead of a random 10.</p>
           <p class="hl">Placeholder text. <mark>The check compares the mark with the paper, not marks with marks.</mark><sup>1</sup> The rest of this paragraph comes later.</p>
           <div>
             <table class="marks">
@@ -217,9 +237,9 @@
         </div>
 
         <div class="comments">
-          <div class="c-head">Comments <span class="chip">3</span></div>
+          <div class="c-head">Comments on this page <span class="chip">3</span></div>
           <div class="cmt marker">
-            <div class="who"><span class="av m">2</span>Second marker · webinar attendee</div>
+            <div class="who"><span class="av m">Q</span>The room asked</div>
             <q>Is AI needed to find the grades outside the expected range? Is it better than Excel?</q>
             <div class="reply">
               <div class="who"><span class="av e">E</span>Eduface</div>
@@ -233,7 +253,7 @@
             <div class="actions"><span class="ok">Approve</span><span>Edit</span></div>
           </div>
           <div class="cmt marker">
-            <div class="who"><span class="av m">2</span>Second marker · webinar attendee</div>
+            <div class="who"><span class="av m">Q</span>The room asked</div>
             <q>Could we trust the statistical probability of an AI model?</q>
           </div>
         </div>
