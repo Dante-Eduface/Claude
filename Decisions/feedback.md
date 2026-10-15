@@ -34,3 +34,8 @@ omdat commando's en scripts daarvan afhangen. Vastgelegd in `Context/kaart.md`.
 Overlappende skills samenvoegen in plaats van naast elkaar laten staan. `cro`, `schrijven`,
 `outreach` en `meddpicc` slikten hun dubbelganger op. `sso-grid` bleef apart omdat de
 scheiding met de scoringsskill met opzet is gebouwd.
+
+### 2026-10-15 · Close-notes webinar · correctie
+Webinar-notes in Close: in het Nederlands. Functie gaat in het titelveld van het contact,
+niet in de note. Aanmeldvragen die iemand niet heeft beantwoord weglaten. Geen eigen
+"lezing" of interpretatie toevoegen. Instellingsnaam eerst opzoeken voordat ik iets voorleg.
