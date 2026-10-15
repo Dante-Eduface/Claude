@@ -34,6 +34,9 @@ De student krijgt kritische vragen over zijn eigen paper en moet zich daar monde
 ### Oral Examination (beta)
 Mondelinge afname over een bepaald onderwerp, met realtime transcriptie en beoordeling.
 
+### Consistency check (beta)
+Aangevuld door Dante op 2026-10-15. Leest elke ingeleverde paper op de achtergrond en markeert cijfers van de docent die buiten de verwachte bandbreedte vallen. Het AI-cijfer blijft verborgen, het cijfer van de docent wordt niet aangepast en de check neemt geen besluiten. **Staat in beta en is nog niet volledig productierijp.** Noemen mag, maar altijd met "beta" erbij.
+
 ## LMS-integratie
 
 Eduface integreert in **Moodle, Blackboard, Brightspace, Canvas en elke andere LMS**. Maar in een eerste connectieverzoek praat je hier bijna nooit over (Dante 2026-07-24):
