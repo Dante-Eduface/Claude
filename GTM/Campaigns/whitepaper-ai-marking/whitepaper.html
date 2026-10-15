@@ -157,6 +157,40 @@
   .cmt .reply { border-top: 1px solid var(--ink-100); padding-top: 6px; margin-top: 2px; display: flex; flex-direction: column; gap: 4px; }
   .mini .cmt { font-size: 10px; } .mini .cmt p { font-size: 10px; } .mini .who { font-size: 9px; }
   .beta { display: inline-block; margin-left: 6px; font-size: 10px; font-weight: 600; padding: 1px 7px; border-radius: 9999px; border: 1px solid var(--ink-200); color: var(--ink-700); vertical-align: 1px; }
+  .row3 { display: grid; grid-template-columns: 300px 1fr; gap: 40px; margin-top: 20px; align-items: start; }
+  .why { display: flex; flex-direction: column; gap: 10px; }
+  .why b { font-family: var(--display); font-size: 14.5px; font-weight: 700; display: block; }
+  .why span { font-size: 11.5px; color: var(--ink-500); line-height: 1.35; }
+  .shot { margin-top: 22px; border: 1px solid var(--ink-200); border-radius: var(--r-lg); overflow: hidden; background: var(--ink-50); box-shadow: 0 6px 20px rgba(0,35,51,.08); }
+  .shot-bar { background: var(--white); border-bottom: 1px solid var(--ink-100); display: flex; align-items: center; gap: 4px; padding: 8px 14px; font-size: 12px; }
+  .shot-bar b { font-weight: 600; }
+  .shot-path { margin-left: auto; color: var(--ink-500); font-size: 11px; }
+  .shot-body { padding: 12px 14px; display: flex; flex-direction: column; gap: 6px; }
+  .shot-tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 6px; }
+  .shot-tiles div { background: var(--white); border: 1px solid var(--ink-100); border-radius: var(--r-md); padding: 8px 10px; display: flex; align-items: baseline; gap: 8px; }
+  .shot-tiles b { font-family: var(--display); font-size: 20px; font-weight: 700; }
+  .shot-tiles span { font-size: 11px; color: var(--ink-500); }
+  .mk { display: grid; grid-template-columns: 80px 1fr 44px; gap: 12px; align-items: center; font-size: 11.5px; }
+  .mk.head { font-size: 10.5px; color: var(--ink-500); }
+  .mk span:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+  .mk.off span:last-child { color: var(--warn); font-weight: 600; }
+  .trk { position: relative; height: 12px; background: var(--white); border-radius: 3px; border: 1px solid var(--ink-100); }
+  .trk i { position: absolute; top: 0; bottom: 0; border-radius: 2px; }
+  .trk .band { background: var(--ink-100); }
+  .trk .rng { top: 3px; bottom: 3px; background: var(--navy); }
+  .mk.off .rng { background: var(--warn); }
+  .lnk { font-size: 11px; color: var(--green-deep); font-weight: 600; }
+  .stairs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 26px; align-items: end; }
+  .stairs div { display: flex; flex-direction: column; gap: 4px; }
+  .stairs i { display: block; background: var(--navy); border-radius: 3px; margin-bottom: 8px; align-self: stretch; }
+  .stairs div:nth-child(1) i { background: var(--ink-300); }
+  .stairs div:nth-child(2) i { background: var(--ink-500); }
+  .stairs b { font-family: var(--display); font-size: 19px; font-weight: 700; }
+  .stairs p { font-size: 12px; line-height: 1.45; color: var(--ink-700); min-height: 52px; }
+  .starts { margin-top: 22px; border-top: 1px solid var(--ink-200); padding-top: 12px; }
+  .two-s { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 6px; }
+  .two-s p { font-size: 13px; font-weight: 600; line-height: 1.4; }
+  .close { font-family: var(--display); font-size: 19px; font-weight: 700; line-height: 1.25; margin-top: 26px; max-width: 42ch; padding-left: 14px; border-left: 3px solid var(--green); }
 </style>
 </head>
 <body>
@@ -185,7 +219,7 @@
       <div>
         <div class="cmt" style="margin-top:92px">
           <div class="who"><span class="av">W</span>Webinar attendee</div>
-          <p>Should we have started by defining consistency?</p>
+          <p>Students worry whether they get the same marks for saying the same things as peers.</p>
           <div class="reply"><div class="who"><span class="av e">E</span>Eduface</div></div>
         </div>
       </div>
@@ -218,13 +252,7 @@
       </div>
       <div class="foot"><img src="../../../Design/Merk/logos/logo_navy.png" alt="Eduface"><span>2</span></div>
     </article>
-    <aside class="margin" style="padding-top:120px">
-      <div class="cmt">
-        <div class="who"><span class="av">W</span>Webinar attendee</div>
-        <p>Should we have started this conversation by defining consistency?</p>
-        <div class="reply"><div class="who"><span class="av e">E</span>Eduface</div><p>Yes. So that is where this paper starts.</p></div>
-      </div>
-    </aside>
+    <aside class="margin"></aside>
   </div>
 </section>
 
@@ -236,8 +264,8 @@
     <article class="sheet">
       <div class="kicker"><span>Consistency · 1 of 2</span><span>Eduface</span></div>
       <h2>Same essay, opposite grades.</h2>
-      <p class="lede">24 experienced examiners from 20 UK universities marked the same 20 essays. <mark>Nine were ranked among both the best and the worst.</mark> Moderation is meant to catch this, but it only sees a sample.</p>
-      <div class="row2">
+      <p class="lede">24 experienced examiners from 20 UK universities marked the same 20 essays. <mark>Nine were ranked among both the best and the worst.</mark></p>
+      <div class="row3">
         <div>
           <div class="g20">
             <i class="x"></i><i></i><i class="x"></i><i></i><i></i><i class="x"></i><i></i><i class="x"></i><i></i><i></i>
@@ -245,17 +273,24 @@
           </div>
           <div class="cap"><b>9/20</b><span>essays ranked both<br>best and worst</span></div>
         </div>
-        <div>
-          <div class="g200" id="g200"></div>
-          <div class="cap"><b>10/200</b><span>papers a typical moderation<br>sample sees (illustration)</span></div>
+        <div class="why">
+          <div><b>Many markers, one module</b><span>Each marker reads the rubric a little differently.</span></div>
+          <div><b>Paper 80 is not paper 5</b><span>The same marker marks the eightieth paper differently from the fifth.</span></div>
+          <div><b>Moderation sees a sample</b><span>The other papers are never compared.</span></div>
         </div>
       </div>
-      <div class="causes">
-        <div><b>Many markers, one module</b><span>Each marker reads the rubric a little differently.</span></div>
-        <div><b>Paper 80 is not paper 5</b><span>The same marker marks the eightieth paper differently from the fifth.</span></div>
-        <div><b>Moderation sees a sample</b><span>The other papers are never compared.</span></div>
+      <div class="shot">
+        <div class="shot-bar"><b>Consistency overview</b><span class="beta">Beta</span><span class="shot-path">Module EDU201 · Essay 2</span></div>
+        <div class="shot-body">
+          <div class="shot-tiles"><div><b>212</b><span>papers read</span></div><div><b>4</b><span>markers</span></div><div><b>6</b><span>marks outside expected range</span></div></div>
+          <div class="mk head"><span>Marker</span><span>Marks against the expected range</span><span>Flags</span></div>
+          <div class="mk"><span>Marker A</span><span class="trk"><i class="band" style="left:30%;width:40%"></i><i class="rng" style="left:33%;width:34%"></i></span><span>0</span></div>
+          <div class="mk"><span>Marker B</span><span class="trk"><i class="band" style="left:30%;width:40%"></i><i class="rng" style="left:30%;width:38%"></i></span><span>1</span></div>
+          <div class="mk"><span>Marker C</span><span class="trk"><i class="band" style="left:30%;width:40%"></i><i class="rng" style="left:36%;width:32%"></i></span><span>0</span></div>
+          <div class="mk off"><span>Marker D</span><span class="trk"><i class="band" style="left:30%;width:40%"></i><i class="rng" style="left:44%;width:40%"></i></span><span>▲ 5</span></div>
+        </div>
       </div>
-      <div class="foot"><span class="src">Bloxham et al., Assessment &amp; Evaluation in Higher Education, 2016.</span><span>3</span></div>
+      <div class="foot"><span class="src">Bloxham et al., Assessment &amp; Evaluation in Higher Education, 2016. Consistency overview: illustrative screen, fictional data, in beta.</span><span>3</span></div>
     </article>
     <aside class="margin" style="padding-top:96px">
       <div class="cmt">
@@ -263,10 +298,10 @@
         <p>Students worry whether they get the same marks for saying the same things as peers who were marked by someone else.</p>
         <div class="reply"><div class="who"><span class="av e">E</span>Eduface</div><p>This is consistency as students feel it.</p></div>
       </div>
-      <div class="cmt">
+      <div class="cmt" style="margin-top:96px">
         <div class="who"><span class="av">W</span>Webinar attendee</div>
         <p>Why should complete consistency be the ideal in an activity that relies on expert judgement?</p>
-        <div class="reply"><div class="who"><span class="av e">E</span>Eduface</div><p>It shouldn't be. Consistency means the same criteria are applied. Markers can still disagree, and now you can see where they do.</p></div>
+        <div class="reply"><div class="who"><span class="av e">E</span>Eduface</div><p>It shouldn't be. Consistency means the same criteria are applied. Markers can still disagree, and the consistency overview shows where they do.</p><span class="lnk">↓ Consistency overview</span></div>
       </div>
     </aside>
   </div>
@@ -297,14 +332,16 @@
     </article>
     <aside class="margin" style="padding-top:96px">
       <div class="cmt">
-        <div class="who"><span class="av">W</span>Webinar attendee</div>
-        <p>Is AI needed to find the grades outside the expected range? Is it better and more accurate than Excel?</p>
-        <div class="reply"><div class="who"><span class="av e">E</span>Eduface</div><p>Excel only sees the numbers. The check reads the work behind them.</p></div>
+        <div class="who"><span class="av e">E</span>Eduface · how the check works</div>
+        <p><b>1.</b> It analyses every submission in the background, while the marker marks as usual.</p>
       </div>
       <div class="cmt">
-        <div class="who"><span class="av">W</span>Webinar attendee</div>
-        <p>Doesn't optimising for consistency remove the diversity of viewpoints moderation is meant to provide?</p>
-        <div class="reply"><div class="who"><span class="av e">E</span>Eduface</div><p>No viewpoint is removed. Moderators get pointed to the papers where views split.</p></div>
+        <div class="who"><span class="av e">E</span>Eduface · how the check works</div>
+        <p><b>2.</b> It only raises a signal when a mark falls outside the expected range for that paper.</p>
+      </div>
+      <div class="cmt">
+        <div class="who"><span class="av e">E</span>Eduface · how the check works</div>
+        <p><b>3.</b> It never shows an AI grade, never changes a mark and makes no decision. It can add comments, if you want them.</p>
       </div>
     </aside>
   </div>
@@ -373,10 +410,8 @@
     </article>
     <aside class="margin" style="padding-top:96px">
       <div class="cmt">
-        <div class="who"><span class="av">W</span>Webinar attendee</div>
-        <p>Our students have explicitly said they don't want AI involved in marking and feedback.</p>
-        <div class="reply"><div class="who"><span class="av">W</span>Webinar attendee</div><p>Students might be prepared to do this in partnership.</p></div>
-        <div class="reply"><div class="who"><span class="av e">E</span>Eduface</div><p>Agreed. Students only ever see feedback their lecturer approved.</p></div>
+        <div class="who"><span class="av e">E</span>Eduface</div>
+        <p>Students only ever see feedback their lecturer approved.</p>
       </div>
     </aside>
   </div>
@@ -389,35 +424,29 @@
   <div class="stage">
     <article class="sheet">
       <div class="kicker"><span>Next step</span><span>Eduface</span></div>
-      <h2>Start with one module.</h2>
-      <p class="lede">Pick the outcome that matters most to you, test it on one module, and measure it against how you work today.</p>
-      <div class="routes">
-        <div class="route"><span class="label">Route 1 <span class="beta">Beta</span></span><b>Consistency first</b><p>Run the consistency check on a module you already marked. No AI grade is shown to anyone.</p></div>
-        <div class="route"><span class="label">Route 2</span><b>Efficiency first</b><p>Give AI-drafted feedback on one assignment, tuned to your rubric and approved by the lecturer.</p></div>
+      <h2>Start small. Then roll out what works.</h2>
+      <p class="lede">Jisc's advice to institutions starting with AI in assessment: <mark>begin small, with a pilot</mark>. It matches what we have learned across 20+ implementations.</p>
+      <div class="stairs">
+        <div><i style="height:28px"></i><span class="label">Phase 1</span><b>A small group</b><p>A few lecturers, one module, one use case. The model is tuned to their rubric.</p></div>
+        <div><i style="height:56px"></i><span class="label">Phase 2</span><b>Proven use cases</b><p>What worked moves to more modules and more markers.</p></div>
+        <div><i style="height:84px"></i><span class="label">Phase 3</span><b>Gradual roll-out</b><p>The next use cases are added one at a time, when the institution is ready.</p></div>
       </div>
-      <div class="measure">
-        <div><span class="label">Measure</span><br>Moderation flags</div>
-        <div><span class="label">Measure</span><br>Marking hours per assignment</div>
-        <div><span class="label">Measure</span><br>Feedback turnaround</div>
+      <div class="starts">
+        <span class="label">Where institutions often start</span>
+        <div class="two-s"><p>The consistency check on a module that is already marked <span class="beta">Beta</span></p><p>AI-drafted formative feedback on one assignment</p></div>
       </div>
-      <div class="cta"><div><b>Choose your module in 30 minutes.</b><br><span>A short call to pick the route and the module.</span></div><span class="go">eduface.me</span></div>
-      <div class="foot"><img src="../../../Design/Merk/logos/logo_navy.png" alt="Eduface"><span>7</span></div>
+      <p class="close">We have experience starting small and deliberately with a smaller group, and rolling out the use cases an institution wants step by step.</p>
+      <div class="foot"><span class="src">Advice: Jisc, webinar October 2026.</span><span>7</span></div>
     </article>
     <aside class="margin" style="padding-top:96px">
       <div class="cmt">
         <div class="who"><span class="av">W</span>Webinar attendee</div>
         <p>I'm sure there is something to investigate here, but it's not straightforward.</p>
-        <div class="reply"><div class="who"><span class="av e">E</span>Eduface</div><p>Agreed. That is why we start with one module.</p></div>
+        <div class="reply"><div class="who"><span class="av e">E</span>Eduface</div><p>Agreed. That is why we start small.</p></div>
       </div>
     </aside>
   </div>
 </section>
 
-<script>
-  // 200 papers, 10 of them in the moderation sample
-  const g = document.getElementById('g200');
-  const s = new Set([7, 23, 41, 66, 88, 104, 129, 147, 171, 193]);
-  for (let i = 0; i < 200; i++) { const el = document.createElement('i'); if (s.has(i)) el.className = 's'; g.appendChild(el); }
-</script>
 </body>
 </html>
