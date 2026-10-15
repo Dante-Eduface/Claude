@@ -318,6 +318,34 @@
   .cards.f4 .rows > div { grid-template-columns: 38px 1fr; column-gap: 14px; }
   .cards.f4 .rows .ic { width: 38px; height: 38px; border-radius: 10px; } .cards.f4 .rows .ic svg { width: 19px; height: 19px; }
   .cards.f4 .rows b { font-size: 15.5px; } .cards.f4 .rows span:not(.ic):not(.beta) { font-size: 13.5px; }
+  .cards.grow { flex: 1; margin-bottom: 10px; gap: 14px; }
+  .cards.grow > .card, .cards.grow > .nums, .cards.grow > .phases { flex: 1; }
+  .cards.grow .card { display: flex; flex-direction: column; justify-content: center; padding: 18px 22px; }
+  .cards.grow .lbl { font-size: 12.5px; }
+  .cards.grow .ic { width: 40px; height: 40px; border-radius: 10px; } .cards.grow .ic svg { width: 20px; height: 20px; }
+  /* p5 */
+  .f5 .bars2 { grid-template-columns: 240px 1fr; row-gap: 14px; margin: 14px 0 8px; }
+  .f5 .bars2 span { font-size: 14.5px; } .f5 .bars2 i { height: 24px; border-radius: 5px; }
+  .f5 .flow2 div { font-size: 13.5px; gap: 10px; } .f5 .flow2 em { font-size: 18px; padding-top: 10px; }
+  .f5 .nums { display: grid; } .f5 .nums .card { justify-content: center; }
+  .f5 .nums .card b { font-size: 46px; } .f5 .nums .card span { font-size: 13.5px; }
+  /* p6 */
+  .f6 .flow3 div { grid-template-columns: 40px 1fr; column-gap: 12px; }
+  .f6 .flow3 b { font-size: 15.5px; } .f6 .flow3 span:not(.ic) { font-size: 13px; } .f6 .flow3 em { font-size: 18px; }
+  .f6 .card.navy { flex-direction: row; align-items: center; justify-content: flex-start; gap: 32px; padding: 22px 30px; }
+  .f6 .big2 { font-size: 84px; } .f6 .card.navy p { font-size: 16px; max-width: 44ch; }
+  .f6 .checks2 { gap: 8px; margin: 14px 0 12px; } .f6 .checks2 i { width: 32px; height: 32px; font-size: 15px; }
+  .f6 .card .d { font-size: 14.5px; max-width: 70ch; }
+  /* p7 */
+  .f7 .phases { display: flex; flex-direction: column; gap: 10px; }
+  .f7 .phases .card { flex: 1; display: grid; grid-template-columns: 40px 1fr; gap: 16px; align-items: center; padding: 14px 20px; }
+  .f7 .phases b { font-size: 19px; } .f7 .phases span:not(.lbl):not(.ic) { font-size: 14px; }
+  .f7 .card.mint .rows { gap: 12px; } .f7 .card.mint .rows > div { grid-template-columns: 40px 1fr; } .f7 .card.mint .rows b { font-size: 15px; }
+  .f7 ~ .close { font-size: 17px; margin: 4px 0 6px; }
+  .f6 > .card:first-child { flex: none; padding: 22px; }
+  .f7 > .card.mint { flex: none; }
+  .f7 .card.mint .rows .ic { grid-row: auto; align-self: center; }
+  .f7 .phases .card > div { display: flex; flex-direction: column; gap: 2px; }
 </style>
 </head>
 <body>
@@ -483,7 +511,7 @@
     <article class="sheet">
       <div class="kicker"><span>Operational efficiency · 1 of 2</span><span>Eduface</span></div>
       <h2>Accuracy saves the time</h2>
-      <div class="cards">
+      <div class="cards f5 grow">
         <section class="card">
           <span class="lbl">Time per assignment</span>
           <div class="bars2">
@@ -527,7 +555,7 @@
     <article class="sheet">
       <div class="kicker"><span>Operational efficiency · 2 of 2</span><span>Eduface</span></div>
       <h2>The lecturer decides</h2>
-      <div class="cards">
+      <div class="cards f6 grow">
         <section class="card">
           <div class="flow3">
             <div><span class="ic "><svg viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9Z"/><path d="M14 3v6h6"/><path d="M9 16l5-5 2 2-5 5H9Z"/></svg></span><b>AI drafts</b><span>a comment per rubric criterion</span></div><em>→</em>
@@ -565,7 +593,7 @@
       <div class="kicker"><span>Next step</span><span>Eduface</span></div>
       <h2>Start small</h2>
       <p class="lede">Jisc's advice to institutions starting with AI in assessment: <mark>begin small, with a pilot</mark>. It matches what we have learned across 20+ implementations.</p>
-      <div class="cards">
+      <div class="cards f7 grow">
         <div class="phases">
           <section class="card"><span class="ic "><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c.8-4 4-6 8-6s7.2 2 8 6"/></svg></span><div><span class="lbl">Phase 1</span><b>A small group</b><span>A few lecturers, one module, one use case. The model is tuned to their rubric.</span></div></section>
           <section class="card"><span class="ic "><svg viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5Z"/><path d="m3 13 9 5 9-5"/></svg></span><div><span class="lbl">Phase 2</span><b>Proven use cases</b><span>What worked moves to more modules and more markers.</span></div></section>
