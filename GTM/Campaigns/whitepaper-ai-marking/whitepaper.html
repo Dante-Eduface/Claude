@@ -277,6 +277,21 @@
   .phases b { font-family: var(--display); font-size: 16px; font-weight: 700; display: block; }
   .phases span:not(.lbl):not(.ic) { font-size: 12px; color: var(--ink-700); }
   .close { font-size: 15px; margin-top: 16px; }
+  .stage.solo { grid-template-columns: 1fr; padding-right: 32px; }
+  .cards.fill { flex: 1; margin-bottom: 8px; gap: 16px; }
+  .cards.fill .card { flex: 1; display: flex; flex-direction: column; padding: 22px 26px; }
+  .cards.fill .ch { grid-template-columns: 52px 1fr; gap: 18px; }
+  .cards.fill .ic.lg { width: 52px; height: 52px; border-radius: 12px; } .cards.fill .ic.lg svg { width: 26px; height: 26px; }
+  .cards.fill .ch h3 { font-size: 30px; }
+  .cards.fill .ch .k { font-size: 16px; margin-top: 4px; }
+  .cards.fill .ch ~ .d { font-size: 14.5px; margin: 12px 0 0 70px; max-width: 70ch; }
+  .cards.fill .trio { margin: 18px 0 0 70px; gap: 12px; }
+  .cards.fill .trio div { padding: 12px 14px; gap: 12px; }
+  .cards.fill .trio .ic { width: 34px; height: 34px; } .cards.fill .trio .ic svg { width: 18px; height: 18px; }
+  .cards.fill .trio b { font-size: 14.5px; }
+  .stat-b { margin: auto 0 0 70px; padding-top: 14px; border-top: 1px solid rgba(0,35,51,.10); display: flex; align-items: baseline; gap: 16px; }
+  .stat-b b { font-family: var(--display); font-size: 40px; font-weight: 700; line-height: 1; }
+  .stat-b span { font-size: 13.5px; color: var(--ink-700); }
 </style>
 </head>
 <body>
@@ -317,33 +332,34 @@
 <section class="page viewer">
   <aside class="rail"><div class="inst"></div><svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg><svg class="on" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></aside>
   <div class="top">Courses <span>/</span> Webinar, Oct 2026 <span>/</span> <b>Whitepaper.pdf</b><div class="right"><span>Page 2 of 7</span><span class="btn">Approve</span></div></div>
-  <div class="stage">
+  <div class="stage solo">
     <article class="sheet">
       <div class="kicker"><span>From 20+ implementations</span><span>Eduface</span></div>
       <h2>Two outcomes</h2>
-      <div class="cards">
+      <div class="cards fill">
         <section class="card mint">
-          <div class="ch"><span class="ic lg"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg></span><div><h3>Consistency</h3><p class="k">Students are judged on their work, not on who marked it.</p></div><div class="stat-r"><b>9/20</b><span>essays ranked both best and worst</span></div></div>
+          <div class="ch"><span class="ic lg"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg></span><div><h3>Consistency</h3><p class="k">Students are judged on their work, not on who marked it.</p></div></div>
           <p class="d">Every paper is marked against the same criteria in the same way, whoever marks it.</p>
           <div class="trio">
             <div><span class="ic "><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg></span><b>Same mark</b></div>
             <div><span class="ic "><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg></span><b>Same focus</b></div>
             <div><span class="ic "><svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></span><b>Same style</b></div>
           </div>
+          <div class="stat-b"><b>9/20</b><span>essays ranked both best and worst by experienced examiners</span></div>
         </section>
         <section class="card">
-          <div class="ch"><span class="ic lg"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><h3>Operational efficiency</h3><p class="k">Lecturer time moves from typing feedback to teaching.</p></div><div class="stat-r"><b>−85%</b><span>time spent typing feedback</span></div></div>
+          <div class="ch"><span class="ic lg"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><h3>Operational efficiency</h3><p class="k">Lecturer time moves from typing feedback to teaching.</p></div></div>
           <p class="d">Less staff time per assignment for the same or better feedback, while the lecturer still approves every comment and every mark.</p>
           <div class="trio">
             <div><span class="ic "><svg viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9Z"/><path d="M14 3v6h6"/><path d="M9 16l5-5 2 2-5 5H9Z"/></svg></span><b>Less typing</b></div>
             <div><span class="ic "><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="4"/><path d="M2 21c.7-4 3.5-6 7-6 1.8 0 3.3.5 4.5 1.4"/><path d="m16 17 2 2 4-4"/></svg></span><b>Lecturer approves</b></div>
             <div><span class="ic "><svg viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></span><b>More teaching</b></div>
           </div>
+          <div class="stat-b"><b>−85%</b><span>time spent typing feedback, up to 20 minutes per assignment</span></div>
         </section>
       </div>
       <div class="foot"><img src="../../../Design/Merk/logos/logo_navy.png" alt="Eduface"><span>2</span></div>
     </article>
-    <aside class="margin"></aside>
   </div>
 </section>
 
