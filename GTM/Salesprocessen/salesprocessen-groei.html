@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gestarte salesprocessen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  /* Tokens uit Design/System/core/tokens.css */
+  :root {
+    --bg: #ffffff;
+    --surface: #f3f7f8;
+    --fg: #002333;
+    --muted: #5b7480;
+    --border: #e7eef0;
+    --border-strong: #cdd9de;
+    --s-out: #002333;     /* outbound: navy */
+    --s-in: #006754;      /* inbound: green-700 */
+    --s-event: #5b7480;   /* beurzen en evenementen: ink-500 */
+    --s-intro: #a9bcc4;   /* introducties en partners: ink-300 */
+    --tag-bg: #e7eef0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #002333; --surface: #0a2c3b; --fg: #ffffff; --muted: #a9bcc4;
+      --border: rgba(255,255,255,.12); --border-strong: rgba(255,255,255,.2);
+      --s-out: #e7eef0; --s-in: #00e075; --s-event: #5b7480; --s-intro: #2c4a57;
+      --tag-bg: #0a2c3b;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #002333; --surface: #0a2c3b; --fg: #ffffff; --muted: #a9bcc4;
+    --border: rgba(255,255,255,.12); --border-strong: rgba(255,255,255,.2);
+    --s-out: #e7eef0; --s-in: #00e075; --s-event: #5b7480; --s-intro: #2c4a57;
+    --tag-bg: #0a2c3b;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-font-smoothing: antialiased; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+    font-size: 15px; line-height: 1.5;
+  }
+  main { max-width: 960px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1, h2 { font-family: "League Spartan", "Inter", sans-serif; margin: 0; text-wrap: balance; }
+  h1 { font-size: 32px; line-height: 1.1; font-weight: 600; letter-spacing: -0.01em; }
+  h2 { font-size: 20px; line-height: 1.2; font-weight: 600; }
+  p { margin: 0; text-wrap: pretty; }
+  .muted { color: var(--muted); }
+
+  .tag {
+    display: inline-block; font-size: 12px; font-weight: 500; color: var(--muted);
+    background: var(--tag-bg); border-radius: 9999px; padding: 2px 10px; margin-bottom: 16px;
+  }
+  header p { margin-top: 8px; max-width: 68ch; }
+
+  .kpis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin: 48px 0 32px; }
+  .kpi .n { font-family: "League Spartan", sans-serif; font-size: 40px; line-height: 1; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .kpi .l { margin-top: 8px; font-size: 13px; color: var(--muted); }
+
+  .legend { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-bottom: 16px; font-size: 13px; }
+  .legend span { display: inline-flex; align-items: center; gap: 8px; }
+  .sw { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+
+  .chart { width: 100%; height: auto; display: block; overflow: visible; }
+  .chart text { font-family: "Inter", sans-serif; fill: var(--muted); font-size: 11px; }
+  .chart .val { fill: var(--fg); font-weight: 600; font-size: 12px; font-variant-numeric: tabular-nums; }
+  .chart .grid { stroke: var(--border); }
+  .chart .base { stroke: var(--border-strong); }
+  .chart .divider { stroke: var(--border-strong); stroke-dasharray: 3 3; }
+  .chart rect.seg { stroke: var(--bg); stroke-width: 1.5; }
+  .chart .hit { fill: transparent; cursor: default; }
+  .chart .col:hover rect.seg { opacity: .85; }
+
+  .note { font-size: 13px; color: var(--muted); margin-top: 16px; max-width: 68ch; }
+
+  section.mix { margin-top: 64px; padding-top: 32px; border-top: 1px solid var(--border); }
+  section.mix > p { margin-top: 8px; }
+  .rows { margin-top: 24px; display: grid; gap: 24px; }
+  .row .head { display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 8px; }
+  .row .head b { font-weight: 600; }
+  .bar { display: flex; height: 28px; border-radius: 6px; overflow: hidden; gap: 2px; }
+  .bar div { height: 100%; }
+  .row .parts { display: flex; flex-wrap: wrap; gap: 4px 16px; margin-top: 8px; font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+
+  #tip {
+    position: fixed; pointer-events: none; opacity: 0; transition: opacity .1s;
+    background: var(--fg); color: var(--bg); font-size: 12px; line-height: 1.5;
+    padding: 8px 12px; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,35,51,.08);
+    font-variant-numeric: tabular-nums; z-index: 10;
+  }
+  #tip b { font-weight: 600; }
+
+  @media (max-width: 640px) {
+    main { padding-top: 32px; }
+    h1 { font-size: 26px; }
+    .kpis { grid-template-columns: 1fr 1fr; gap: 24px; }
+    .kpi .n { font-size: 32px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <span class="tag">Fictieve data, ontwerpvoorstel</span>
+    <h1>Gestarte salesprocessen</h1>
+    <p class="muted">Een salesproces telt als gestart op de dag van de eerste meeting met die instelling. Tot en met juni 2026 per kwartaal, vanaf juli per maand.</p>
+  </header>
+
+  <div class="kpis" id="kpis"></div>
+
+  <div class="legend" id="legend"></div>
+  <svg class="chart" id="chart" role="img" aria-label="Gestarte salesprocessen per maand, gestapeld naar bron"></svg>
+  <p class="note">De hoogte is het aantal per maand. Een kwartaalbalk is drie maanden breed en toont het gemiddelde per maand, met het kwartaaltotaal eronder. Zo zijn kwartalen en maanden eerlijk te vergelijken.</p>
+
+  <section class="mix">
+    <h2>Waar ze vandaan komen</h2>
+    <p class="muted">Dezelfde processen, verdeeld naar bron.</p>
+    <div class="rows" id="rows"></div>
+  </section>
+</main>
+<div id="tip"></div>
+
+<script>
+const SOURCES = [
+  { key: "out",   label: "Outbound",                 color: "var(--s-out)" },
+  { key: "in",    label: "Inbound (ons gevonden)",   color: "var(--s-in)" },
+  { key: "event", label: "Beurzen en evenementen",   color: "var(--s-event)" },
+  { key: "intro", label: "Introducties en partners", color: "var(--s-intro)" },
+];
+
+// Fictief. months = lengte van de periode, start = maandindex vanaf jan 2025 (0).
+const PERIODS = [
+  { label: "Q1",  year: 2025, start: 0,  months: 3, out: 2,  in: 2, event: 1, intro: 1 },
+  { label: "Q2",  year: 2025, start: 3,  months: 3, out: 3,  in: 2, event: 1, intro: 1 },
+  { label: "Q3",  year: 2025, start: 6,  months: 3, out: 2,  in: 1, event: 1, intro: 1 },
+  { label: "Q4",  year: 2025, start: 9,  months: 3, out: 3,  in: 2, event: 2, intro: 1 },
+  { label: "Q1",  year: 2026, start: 12, months: 3, out: 4,  in: 3, event: 1, intro: 1 },
+  { label: "Q2",  year: 2026, start: 15, months: 3, out: 4,  in: 3, event: 2, intro: 1 },
+  { label: "jul", year: 2026, start: 18, months: 1, out: 1,  in: 1, event: 0, intro: 1 },
+  { label: "aug", year: 2026, start: 19, months: 1, out: 5,  in: 2, event: 1, intro: 1 },
+  { label: "sep", year: 2026, start: 20, months: 1, out: 8,  in: 3, event: 2, intro: 1 },
+  { label: "okt", year: 2026, start: 21, months: 1, out: 11, in: 4, event: 2, intro: 2 },
+];
+PERIODS.forEach(p => p.total = SOURCES.reduce((s, x) => s + p[x.key], 0));
+
+const fmt = n => n.toLocaleString("nl-NL", { maximumFractionDigits: 1 });
+const sum = (arr, k) => arr.reduce((s, p) => s + p[k], 0);
+
+// KPI's
+const y2025 = PERIODS.filter(p => p.year === 2025);
+const sinceAug = PERIODS.filter(p => p.year === 2026 && p.start >= 19);
+const avg2025 = sum(y2025, "total") / 12;
+const avgAug = sum(sinceAug, "total") / sinceAug.length;
+const last = PERIODS[PERIODS.length - 1];
+document.getElementById("kpis").innerHTML = `
+  <div class="kpi"><div class="n">${fmt(avg2025)}</div><div class="l">per maand in 2025</div></div>
+  <div class="kpi"><div class="n">${fmt(avgAug)}</div><div class="l">per maand sinds augustus 2026</div></div>
+  <div class="kpi"><div class="n">${last.total}</div><div class="l">in oktober 2026</div></div>`;
+
+document.getElementById("legend").innerHTML = SOURCES.map(s =>
+  `<span><i class="sw" style="background:${s.color}"></i>${s.label}</span>`).join("");
+
+// Grafiek
+const W = 880, H = 360, M = { t: 24, r: 8, b: 56, l: 32 };
+const totalMonths = 22;
+const iw = W - M.l - M.r, ih = H - M.t - M.b;
+const yMax = 20;
+const x = m => M.l + (m / totalMonths) * iw;
+const y = v => M.t + ih - (v / yMax) * ih;
+const GAP = 4;
+let svg = "";
+for (let v = 0; v <= yMax; v += 5) {
+  svg += `<line class="${v ? "grid" : "base"}" x1="${M.l}" x2="${W - M.r}" y1="${y(v)}" y2="${y(v)}"/>`;
+  svg += `<text x="${M.l - 8}" y="${y(v) + 4}" text-anchor="end">${v}</text>`;
+}
+// overgang kwartaal naar maand
+svg += `<line class="divider" x1="${x(18)}" x2="${x(18)}" y1="${M.t - 8}" y2="${M.t + ih}"/>`;
+svg += `<text x="${x(18) + 6}" y="${M.t - 4}">per maand</text>`;
+svg += `<text x="${x(18) - 6}" y="${M.t - 4}" text-anchor="end">per kwartaal, gemiddeld per maand</text>`;
+
+PERIODS.forEach((p, i) => {
+  const x0 = x(p.start) + GAP / 2, x1 = x(p.start + p.months) - GAP / 2, w = x1 - x0;
+  let acc = 0;
+  svg += `<g class="col" data-i="${i}">`;
+  SOURCES.forEach(s => {
+    const v = p[s.key] / p.months;
+    if (!v) return;
+    svg += `<rect class="seg" x="${x0}" y="${y(acc + v)}" width="${w}" height="${y(acc) - y(acc + v)}" style="fill:${s.color}"/>`;
+    acc += v;
+  });
+  svg += `<text class="val" x="${x0 + w / 2}" y="${y(acc) - 8}" text-anchor="middle">${fmt(acc)}</text>`;
+  svg += `<text x="${x0 + w / 2}" y="${M.t + ih + 18}" text-anchor="middle" style="fill:var(--fg)">${p.label}</text>`;
+  if (p.months > 1) svg += `<text x="${x0 + w / 2}" y="${M.t + ih + 34}" text-anchor="middle">${p.total} totaal</text>`;
+  svg += `<rect class="hit" x="${x0}" y="${M.t}" width="${w}" height="${ih}"/></g>`;
+});
+// jaartallen
+svg += `<text x="${x(6)}" y="${H - 4}" text-anchor="middle" style="font-weight:600">2025</text>`;
+svg += `<text x="${x(17)}" y="${H - 4}" text-anchor="middle" style="font-weight:600">2026</text>`;
+svg += `<line class="base" x1="${x(12)}" x2="${x(12)}" y1="${M.t + ih}" y2="${H - 2}"/>`;
+
+const chart = document.getElementById("chart");
+chart.setAttribute("viewBox", `0 0 ${W} ${H}`);
+chart.innerHTML = svg;
+
+// Tooltip
+const tip = document.getElementById("tip");
+chart.querySelectorAll(".col").forEach(g => {
+  const p = PERIODS[+g.dataset.i];
+  const name = p.months > 1 ? `${p.label} ${p.year}` : `${p.label} ${p.year}`;
+  g.addEventListener("mousemove", e => {
+    tip.innerHTML = `<b>${name}: ${p.total} gestart</b><br>` +
+      SOURCES.map(s => `${s.label}: ${p[s.key]}`).join("<br>");
+    tip.style.left = Math.min(e.clientX + 12, innerWidth - 220) + "px";
+    tip.style.top = (e.clientY + 12) + "px";
+    tip.style.opacity = 1;
+  });
+  g.addEventListener("mouseleave", () => tip.style.opacity = 0);
+});
+
+// Bronverdeling: 2025 tegenover sinds augustus 2026
+const groups = [
+  { label: "2025", periods: y2025 },
+  { label: "Sinds augustus 2026", periods: sinceAug },
+];
+document.getElementById("rows").innerHTML = groups.map(g => {
+  const tot = sum(g.periods, "total");
+  const parts = SOURCES.map(s => ({ ...s, n: sum(g.periods, s.key) }));
+  return `<div class="row">
+    <div class="head"><b>${g.label}</b><span class="muted">${tot} processen</span></div>
+    <div class="bar">${parts.map(s => `<div style="flex:${s.n};background:${s.color}" title="${s.label}: ${s.n}"></div>`).join("")}</div>
+    <div class="parts">${parts.map(s => `<span>${s.label} ${s.n} (${Math.round(s.n / tot * 100)}%)</span>`).join("")}</div>
+  </div>`;
+}).join("");
+</script>
+</body>
+</html>

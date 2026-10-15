@@ -1,0 +1,11 @@
+# Salesprocessen
+
+_Aangelegd 2026-10-15._
+
+**Wat:** grafiek met gestarte salesprocessen sinds 2025. Een proces telt als gestart op de dag van de eerste meeting met die instelling. Per kwartaal tot en met juni 2026, vanaf juli per maand, gestapeld naar bron (outbound, inbound, beurzen en evenementen, introducties en partners).
+
+**Fase:** ontwerpvoorstel met fictieve data (`salesprocessen-groei.html`).
+
+**Volgende stap:** echte data. Vóór de overstap uit een HubSpot-export (custom report Meetings + Companies), daarna uit Close (velden `Bron` en `Type` op de lead). Ontdubbelen op domein, de vroegste meeting telt.
+
+**Wie leest hieruit:** Dante en Jeroen.
