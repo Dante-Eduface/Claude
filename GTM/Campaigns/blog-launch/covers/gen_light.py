@@ -1100,6 +1100,31 @@ SCENES["ai-grading-accounting-finance-coursework"] = '''
   <g fill="#ffffff"><rect x="686" y="324" width="286" height="22" rx="11"/><rect x="686" y="382" width="236" height="22" rx="11"/><rect x="686" y="440" width="286" height="22" rx="11"/></g>
 '''
 
+SCENES["how-to-use-chatgpt-to-grade-essays"] = '''
+  <ellipse cx="600" cy="812" rx="400" ry="30" fill="#dbe6ea"/>
+  <rect x="150" y="210" width="400" height="500" rx="26" fill="#ffffff" stroke="#002333" stroke-width="16"/>
+  <g fill="#cdd9de"><rect x="200" y="270" width="300" height="22" rx="11"/><rect x="200" y="330" width="260" height="22" rx="11"/><rect x="200" y="390" width="300" height="22" rx="11"/><rect x="200" y="450" width="220" height="22" rx="11"/><rect x="200" y="510" width="280" height="22" rx="11"/><rect x="200" y="570" width="240" height="22" rx="11"/></g>
+  <rect x="190" y="372" width="250" height="58" rx="12" fill="#00d563" opacity="0.35"/>
+  <path d="M672 230 H1000 A30 30 0 0 1 1030 260 V470 A30 30 0 0 1 1000 500 H812 L752 562 V500 H672 A30 30 0 0 1 642 470 V260 A30 30 0 0 1 672 230 Z" fill="#00d563" stroke="#002333" stroke-width="16" stroke-linejoin="round"/>
+  <g fill="#ffffff"><rect x="690" y="290" width="290" height="22" rx="11"/><rect x="690" y="346" width="230" height="22" rx="11"/><rect x="690" y="402" width="270" height="22" rx="11"/></g>
+  <circle cx="830" cy="648" r="70" fill="#ffffff" stroke="#002333" stroke-width="16"/>
+  <line x1="880" y1="700" x2="950" y2="770" stroke="#002333" stroke-width="22" stroke-linecap="round"/>
+  <path d="M798 648 L822 672 L866 626" stroke="#00b85f" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+'''
+
+SCENES["competency-based-assessment"] = '''
+  <ellipse cx="600" cy="812" rx="420" ry="30" fill="#dbe6ea"/>
+  <rect x="200" y="560" width="250" height="220" rx="22" fill="#ffffff" stroke="#002333" stroke-width="16"/>
+  <rect x="450" y="420" width="250" height="360" rx="22" fill="#ffffff" stroke="#002333" stroke-width="16"/>
+  <rect x="700" y="280" width="250" height="500" rx="22" fill="#00d563" stroke="#002333" stroke-width="16"/>
+  <g fill="#cdd9de"><rect x="250" y="620" width="150" height="20" rx="10"/><rect x="500" y="480" width="150" height="20" rx="10"/></g>
+  <g fill="#ffffff"><rect x="750" y="340" width="150" height="20" rx="10"/></g>
+  <line x1="825" y1="280" x2="825" y2="120" stroke="#002333" stroke-width="16" stroke-linecap="round"/>
+  <path d="M833 128 H960 L925 170 L960 212 H833 Z" fill="#ffffff" stroke="#002333" stroke-width="14" stroke-linejoin="round"/>
+  <circle cx="1010" cy="600" r="62" fill="#ffffff" stroke="#002333" stroke-width="16"/>
+  <path d="M982 602 L1002 622 L1040 582" stroke="#00b85f" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+'''
+
 for slug, scene in SCENES.items():
     html = WRAP_HEAD + scene.strip("\n") + WRAP_TAIL
     with open(os.path.join(OUT, slug + ".html"), "w") as f:
