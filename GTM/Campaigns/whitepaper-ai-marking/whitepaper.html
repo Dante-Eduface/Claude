@@ -202,6 +202,81 @@
   .duo .s { margin-top: 32px; padding-top: 14px; border-top: 1px solid var(--ink-200); display: flex; align-items: baseline; gap: 14px; }
   .duo .s .n { font-family: var(--display); font-weight: 700; font-size: 30px; line-height: 1; white-space: nowrap; }
   .duo .s span:last-child { font-size: 12px; line-height: 1.4; color: var(--ink-500); }
+
+  /* ===== v2: cards, icons, stacked ===== */
+  :root { --mint: #e9fbf2; --mint-line: #c9f1dd; --peach: #fdf1e2; }
+  .sheet { padding: 34px 52px 0; }
+  .sheet h2 { font-size: 30px; margin-top: 10px; }
+  .sheet .lede { font-size: 13.5px; margin-top: 8px; }
+  .cards { display: flex; flex-direction: column; gap: 12px; margin-top: 18px; }
+  .card { border: 1px solid var(--ink-100); background: var(--ink-50); border-radius: 12px; padding: 16px 18px; }
+  .card.mint { background: var(--mint); border-color: var(--mint-line); }
+  .card.navy { background: var(--navy); border-color: var(--navy); color: var(--white); display: flex; align-items: center; gap: 22px; }
+  .card.navy p { font-size: 13.5px; line-height: 1.5; color: rgba(255,255,255,.82); max-width: 48ch; }
+  .card.tight { padding: 0; overflow: hidden; background: var(--white); }
+  .ic { width: 30px; height: 30px; border-radius: 8px; background: var(--white); border: 1px solid var(--ink-100); display: inline-grid; place-items: center; flex: none; }
+  .ic svg { width: 16px; height: 16px; fill: none; stroke: var(--navy); stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+  .ic.lg { width: 40px; height: 40px; border-radius: 10px; } .ic.lg svg { width: 20px; height: 20px; }
+  .ic.mintic { background: var(--mint); border-color: var(--mint-line); } .ic.mintic svg { stroke: var(--green-deep); }
+  .ic.xs { width: auto; height: auto; border: 0; background: none; margin-right: 6px; vertical-align: -3px; } .ic.xs svg { width: 13px; height: 13px; stroke: var(--ink-300); }
+  .ic.xs.warn svg { stroke: var(--warn); }
+  .lbl { font-size: 11px; color: var(--ink-500); font-weight: 500; display: block; }
+  .d { font-size: 12.5px; line-height: 1.5; color: var(--ink-700); }
+
+  .ch { display: grid; grid-template-columns: 40px 1fr auto; gap: 14px; align-items: center; }
+  .ch h3 { font-family: var(--display); font-size: 22px; font-weight: 700; line-height: 1.1; }
+  .ch .k { font-size: 13px; font-weight: 600; margin-top: 3px; color: var(--navy); }
+  .stat-r { text-align: right; } .stat-r b { font-family: var(--display); font-size: 30px; font-weight: 700; display: block; line-height: 1; }
+  .stat-r span { font-size: 10.5px; color: var(--ink-500); }
+  .ch ~ .d { margin: 10px 0 0 54px; max-width: 64ch; }
+  .trio { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 14px 0 0 54px; }
+  .trio div { display: flex; align-items: center; gap: 10px; background: var(--white); border: 1px solid var(--ink-100); border-radius: 10px; padding: 8px 10px; }
+  .trio b { font-size: 12.5px; font-weight: 600; }
+
+  .strip { display: grid; grid-template-columns: repeat(20, 1fr); gap: 4px; margin-top: 10px; }
+  .strip i { aspect-ratio: 1; border-radius: 3px; background: var(--white); border: 1px solid var(--ink-100); }
+  .strip i.x { background: var(--navy); border-color: var(--navy); }
+  .cap2 { font-size: 13px; color: var(--ink-700); margin-top: 10px; } .cap2 b { color: var(--navy); }
+  .rows { display: flex; flex-direction: column; gap: 10px; }
+  .rows > div { display: grid; grid-template-columns: 30px 1fr; column-gap: 12px; align-items: center; }
+  .rows > div .ic { grid-row: span 2; align-self: start; }
+  .rows b { font-size: 13px; font-weight: 600; }
+  .rows span:not(.ic):not(.beta) { font-size: 12px; color: var(--ink-500); line-height: 1.35; grid-column: 2; }
+  .card.mint .rows { margin-top: 8px; }
+
+  .shot2 { padding: 0; overflow: hidden; background: var(--white); }
+  .shot2 .scat { height: 112px; }
+  .shot-bar { padding: 8px 14px; }
+  .card.tight table.marks { margin: 0; }
+  .card.tight .marks th, .card.tight .marks td { padding: 6px 14px; }
+
+  .bars2 { display: grid; grid-template-columns: 200px 1fr; row-gap: 8px; column-gap: 14px; align-items: center; margin: 10px 0 6px; }
+  .bars2 span { font-size: 12.5px; color: var(--ink-700); }
+  .bars2 i { display: block; height: 16px; border-radius: 4px; background: var(--ink-200); }
+  .bars2 i.fix { background: var(--warn); } .bars2 i.ok { background: var(--navy); }
+  .flow2 { display: grid; grid-template-columns: 1fr 16px 1fr 16px 1fr 16px 1fr; align-items: start; text-align: center; }
+  .flow2 div { display: flex; flex-direction: column; align-items: center; gap: 6px; font-size: 11.5px; color: var(--ink-700); line-height: 1.3; }
+  .flow2 em { font-style: normal; color: var(--ink-300); font-weight: 700; padding-top: 6px; }
+  .nums { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .nums .card b { font-family: var(--display); font-size: 34px; font-weight: 700; display: block; line-height: 1; }
+  .nums .card span { font-size: 11.5px; color: var(--ink-700); line-height: 1.35; display: block; margin-top: 8px; }
+
+  .flow3 { display: grid; grid-template-columns: 1fr 20px 1fr 20px 1fr; align-items: center; }
+  .flow3 div { display: grid; grid-template-columns: 30px 1fr; column-gap: 10px; align-items: center; }
+  .flow3 .ic { grid-row: span 2; }
+  .flow3 b { font-size: 13px; } .flow3 span:not(.ic) { font-size: 11.5px; color: var(--ink-500); }
+  .flow3 em { font-style: normal; color: var(--ink-300); text-align: center; }
+  .big2 { font-family: var(--display); font-size: 54px; font-weight: 700; line-height: 1; color: var(--white); }
+  .checks2 { display: flex; gap: 5px; margin: 10px 0 8px; }
+  .checks2 i { width: 22px; height: 22px; border-radius: 99px; background: var(--mint); border: 1px solid var(--mint-line); display: grid; place-items: center; font-style: normal; font-size: 11px; color: var(--green-deep); }
+  .checks2 i.q { background: var(--peach); border-color: #f3d3a8; color: var(--warn); font-weight: 700; }
+
+  .phases { display: flex; flex-direction: column; gap: 8px; }
+  .phases .card { display: grid; grid-template-columns: 30px 1fr; gap: 14px; align-items: center; padding: 12px 16px; }
+  .phases .card:nth-child(2) { margin-left: 24px; } .phases .card:nth-child(3) { margin-left: 48px; }
+  .phases b { font-family: var(--display); font-size: 16px; font-weight: 700; display: block; }
+  .phases span:not(.lbl):not(.ic) { font-size: 12px; color: var(--ink-700); }
+  .close { font-size: 15px; margin-top: 16px; }
 </style>
 </head>
 <body>
@@ -244,16 +319,27 @@
   <div class="top">Courses <span>/</span> Webinar, Oct 2026 <span>/</span> <b>Whitepaper.pdf</b><div class="right"><span>Page 2 of 7</span><span class="btn">Approve</span></div></div>
   <div class="stage">
     <article class="sheet">
-      <div class="kicker"><span>The two outcomes, from 20+ implementations</span><span>Eduface</span></div>
-      <div class="duo">
-        <h2 class="w">Consistency</h2>
-        <h2 class="w">Operational efficiency</h2>
-        <p class="k">Students are judged on their work, not on who marked it.</p>
-        <p class="k">Lecturer time moves from typing feedback to teaching.</p>
-        <p class="d">Every paper is marked against the same criteria in the same way: the same mark, the same focus and the same style of feedback, whoever marks it.</p>
-        <p class="d">Less staff time per assignment for the same or better feedback, while the lecturer still approves every comment and every mark.</p>
-        <div class="s"><span class="n">9/20</span><span>essays ranked both best and worst by experienced examiners</span></div>
-        <div class="s"><span class="n">−85%</span><span>time spent typing feedback, up to 20 minutes per assignment</span></div>
+      <div class="kicker"><span>From 20+ implementations</span><span>Eduface</span></div>
+      <h2>Two outcomes</h2>
+      <div class="cards">
+        <section class="card mint">
+          <div class="ch"><span class="ic lg"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg></span><div><h3>Consistency</h3><p class="k">Students are judged on their work, not on who marked it.</p></div><div class="stat-r"><b>9/20</b><span>essays ranked both best and worst</span></div></div>
+          <p class="d">Every paper is marked against the same criteria in the same way, whoever marks it.</p>
+          <div class="trio">
+            <div><span class="ic "><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg></span><b>Same mark</b></div>
+            <div><span class="ic "><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg></span><b>Same focus</b></div>
+            <div><span class="ic "><svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></span><b>Same style</b></div>
+          </div>
+        </section>
+        <section class="card">
+          <div class="ch"><span class="ic lg"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><h3>Operational efficiency</h3><p class="k">Lecturer time moves from typing feedback to teaching.</p></div><div class="stat-r"><b>−85%</b><span>time spent typing feedback</span></div></div>
+          <p class="d">Less staff time per assignment for the same or better feedback, while the lecturer still approves every comment and every mark.</p>
+          <div class="trio">
+            <div><span class="ic "><svg viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9Z"/><path d="M14 3v6h6"/><path d="M9 16l5-5 2 2-5 5H9Z"/></svg></span><b>Less typing</b></div>
+            <div><span class="ic "><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="4"/><path d="M2 21c.7-4 3.5-6 7-6 1.8 0 3.3.5 4.5 1.4"/><path d="m16 17 2 2 4-4"/></svg></span><b>Lecturer approves</b></div>
+            <div><span class="ic "><svg viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></span><b>More teaching</b></div>
+          </div>
+        </section>
       </div>
       <div class="foot"><img src="../../../Design/Merk/logos/logo_navy.png" alt="Eduface"><span>2</span></div>
     </article>
@@ -268,29 +354,27 @@
   <div class="stage">
     <article class="sheet">
       <div class="kicker"><span>Consistency · 1 of 2</span><span>Eduface</span></div>
-      <h2>Same essay, opposite grades.</h2>
-      <p class="lede">24 experienced examiners from 20 UK universities marked the same 20 essays. <mark>Nine were ranked among both the best and the worst.</mark></p>
-      <div class="row3">
-        <div>
-          <div class="g20">
-            <i class="x"></i><i></i><i class="x"></i><i></i><i></i><i class="x"></i><i></i><i class="x"></i><i></i><i></i>
-            <i></i><i class="x"></i><i></i><i></i><i class="x"></i><i></i><i class="x"></i><i></i><i class="x"></i><i></i>
+      <h2>Same essay, opposite grades</h2>
+      <div class="cards">
+        <section class="card">
+          <div class="row-h"><span class="lbl">24 experienced examiners · 20 UK universities · the same 20 essays</span></div>
+          <div class="strip"><i class="x"></i><i></i><i class="x"></i><i></i><i></i><i class="x"></i><i></i><i class="x"></i><i></i><i class="x"></i><i></i><i class="x"></i><i></i><i></i><i class="x"></i><i></i><i class="x"></i><i></i><i class="x"></i><i></i></div>
+          <p class="cap2"><b>9 of 20</b> essays were ranked among both the best and the worst.</p>
+        </section>
+        <section class="card">
+          <div class="rows">
+            <div><span class="ic "><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.5 3.5-5 6.5-5s5.7 1.5 6.5 5"/><circle cx="17" cy="9" r="2.5"/><path d="M17 14.5c2.4.3 4 1.8 4.5 4.5"/></svg></span><b>Many markers, one module</b><span>Each marker reads the rubric a little differently.</span></div>
+            <div><span class="ic "><svg viewBox="0 0 24 24"><rect x="7" y="3" width="13" height="15" rx="2"/><path d="M4 7v12a2 2 0 0 0 2 2h10"/></svg></span><b>Paper 80 is not paper 5</b><span>The same marker marks the eightieth paper differently from the fifth.</span></div>
+            <div><span class="ic "><svg viewBox="0 0 24 24"><path d="M3 5h18l-7 8v6l-4 2v-8Z"/></svg></span><b>Moderation sees a sample</b><span>The other papers are never compared.</span></div>
           </div>
-          <div class="cap"><b>9/20</b><span>essays ranked both<br>best and worst</span></div>
-        </div>
-        <div class="why">
-          <div><b>Many markers, one module</b><span>Each marker reads the rubric a little differently.</span></div>
-          <div><b>Paper 80 is not paper 5</b><span>The same marker marks the eightieth paper differently from the fifth.</span></div>
-          <div><b>Moderation sees a sample</b><span>The other papers are never compared.</span></div>
-        </div>
-      </div>
-      <div class="shot">
-        <div class="shot-bar"><b>Consistency overview</b><span class="beta">Beta</span><span class="shot-path">Module EDU201 · Essay 2</span></div>
-        <div class="shot-body">
-          <div class="shot-tiles"><div><b>212</b><span>papers read</span></div><div><b>206</b><span>within range</span></div><div class="w"><b>6</b><span>outside expected range</span></div></div>
-          <p class="scat-cap">Each dot is one paper. The band is the expected range for that paper. <b>6 papers</b> fall outside it.</p>
-          <svg class="scat" viewBox="0 0 540 150" preserveAspectRatio="none"><rect x="0" y="0" width="540" height="150" rx="4" fill="#fff"/><clipPath id="cp"><rect x="0" y="0" width="540" height="150" rx="4"/></clipPath><polygon points="8.0,156.61818181818182 532.0,22.618181818181824 532.0,-6.618181818181824 8.0,127.38181818181818" fill="#e7eef0" clip-path="url(#cp)"/><circle cx="213.8" cy="84.0" r="2.6" fill="#002333"/><circle cx="113.2" cy="107.6" r="2.6" fill="#002333"/><circle cx="298.6" cy="69.1" r="2.6" fill="#002333"/><circle cx="287.3" cy="68.9" r="2.6" fill="#002333"/><circle cx="99.2" cy="120.9" r="2.6" fill="#002333"/><circle cx="120.5" cy="112.3" r="2.6" fill="#002333"/><circle cx="254.1" cy="77.6" r="2.6" fill="#002333"/><circle cx="173.5" cy="102.6" r="2.6" fill="#002333"/><circle cx="335.3" cy="50.4" r="2.6" fill="#002333"/><circle cx="242.9" cy="84.6" r="2.6" fill="#002333"/><circle cx="474.9" cy="10.6" r="2.6" fill="#002333"/><circle cx="200.1" cy="89.3" r="2.6" fill="#002333"/><circle cx="141.9" cy="103.7" r="2.6" fill="#002333"/><circle cx="410.8" cy="35.3" r="2.6" fill="#002333"/><circle cx="156.5" cy="111.9" r="2.6" fill="#002333"/><circle cx="233.2" cy="88.8" r="2.6" fill="#002333"/><circle cx="303.4" cy="64.4" r="2.6" fill="#002333"/><circle cx="166.6" cy="100.6" r="2.6" fill="#002333"/><circle cx="356.5" cy="57.8" r="2.6" fill="#002333"/><circle cx="318.5" cy="60.2" r="2.6" fill="#002333"/><circle cx="265.6" cy="79.6" r="2.6" fill="#002333"/><circle cx="363.9" cy="40.3" r="2.6" fill="#002333"/><circle cx="181.9" cy="104.4" r="2.6" fill="#002333"/><circle cx="434.4" cy="36.4" r="2.6" fill="#002333"/><circle cx="376.1" cy="52.1" r="2.6" fill="#002333"/><circle cx="131.5" cy="93.2" r="2.6" fill="#002333"/><circle cx="251.5" cy="79.6" r="2.6" fill="#002333"/><circle cx="279.9" cy="76.1" r="2.6" fill="#002333"/><circle cx="99.9" cy="123.8" r="2.6" fill="#002333"/><circle cx="313.5" cy="73.3" r="2.6" fill="#002333"/><circle cx="434.5" cy="36.7" r="2.6" fill="#002333"/><circle cx="322.1" cy="52.7" r="2.6" fill="#002333"/><circle cx="316.3" cy="74.8" r="2.6" fill="#002333"/><circle cx="462.2" cy="22.5" r="2.6" fill="#002333"/><circle cx="273.9" cy="75.1" r="2.6" fill="#002333"/><circle cx="364.9" cy="52.7" r="2.6" fill="#002333"/><circle cx="343.2" cy="44.5" r="2.6" fill="#002333"/><circle cx="198.1" cy="93.9" r="2.6" fill="#002333"/><circle cx="238.6" cy="83.7" r="2.6" fill="#002333"/><circle cx="269.0" cy="76.4" r="2.6" fill="#002333"/><circle cx="151.5" cy="103.7" r="2.6" fill="#002333"/><circle cx="391.6" cy="42.4" r="2.6" fill="#002333"/><circle cx="136.0" cy="109.2" r="2.6" fill="#002333"/><circle cx="432.9" cy="27.0" r="2.6" fill="#002333"/><circle cx="116.5" cy="121.9" r="2.6" fill="#002333"/><circle cx="437.7" cy="29.6" r="2.6" fill="#002333"/><circle cx="412.0" cy="35.3" r="2.6" fill="#002333"/><circle cx="250.4" cy="83.9" r="2.6" fill="#002333"/><circle cx="227.8" cy="73.9" r="2.6" fill="#002333"/><circle cx="144.6" cy="117.7" r="2.6" fill="#002333"/><circle cx="154.7" cy="104.0" r="2.6" fill="#002333"/><circle cx="278.3" cy="68.3" r="2.6" fill="#002333"/><circle cx="320.0" cy="62.3" r="2.6" fill="#002333"/><circle cx="251.9" cy="79.1" r="2.6" fill="#002333"/><circle cx="232.0" cy="99.1" r="2.6" fill="#002333"/><circle cx="360.5" cy="58.2" r="2.6" fill="#002333"/><circle cx="290.5" cy="76.8" r="2.6" fill="#002333"/><circle cx="105.8" cy="123.4" r="2.6" fill="#002333"/><circle cx="444.2" cy="28.0" r="2.6" fill="#002333"/><circle cx="403.5" cy="53.5" r="2.6" fill="#002333"/><circle cx="241.2" cy="84.7" r="2.6" fill="#002333"/><circle cx="338.0" cy="55.8" r="2.6" fill="#002333"/><circle cx="109.1" cy="112.2" r="2.6" fill="#002333"/><circle cx="149.2" cy="104.1" r="2.6" fill="#002333"/><circle cx="220.3" cy="87.6" r="2.6" fill="#002333"/><circle cx="144.7" cy="107.0" r="2.6" fill="#002333"/><circle cx="124.8" cy="113.1" r="2.6" fill="#002333"/><circle cx="434.1" cy="32.0" r="2.6" fill="#002333"/><circle cx="329.9" cy="56.8" r="2.6" fill="#002333"/><circle cx="223.2" cy="83.1" r="2.6" fill="#002333"/><circle cx="229.9" cy="76.4" r="2.6" fill="#002333"/><circle cx="481.6" cy="12.3" r="2.6" fill="#002333"/><circle cx="270.7" cy="77.5" r="2.6" fill="#002333"/><circle cx="125.1" cy="111.8" r="2.6" fill="#002333"/><circle cx="221.3" cy="88.6" r="2.6" fill="#002333"/><circle cx="148.8" cy="94.1" r="2.6" fill="#002333"/><circle cx="93.5" cy="112.7" r="2.6" fill="#002333"/><circle cx="142.9" cy="109.9" r="2.6" fill="#002333"/><circle cx="301.6" cy="59.3" r="2.6" fill="#002333"/><circle cx="475.8" cy="21.1" r="2.6" fill="#002333"/><circle cx="429.7" cy="35.8" r="2.6" fill="#002333"/><circle cx="231.0" cy="89.6" r="2.6" fill="#002333"/><circle cx="151.1" cy="104.3" r="2.6" fill="#002333"/><circle cx="396.0" cy="50.5" r="2.6" fill="#002333"/><circle cx="216.1" cy="86.8" r="2.6" fill="#002333"/><circle cx="478.3" cy="10.3" r="2.6" fill="#002333"/><circle cx="425.4" cy="31.2" r="2.6" fill="#002333"/><circle cx="380.3" cy="57.8" r="2.6" fill="#002333"/><circle cx="174.9" cy="105.2" r="2.6" fill="#002333"/><circle cx="95.8" cy="120.2" r="2.6" fill="#002333"/><circle cx="408.1" cy="98.1" r="4.6" fill="#b26a00" stroke="#fff" stroke-width="1.5"/><circle cx="351.0" cy="103.0" r="4.6" fill="#b26a00" stroke="#fff" stroke-width="1.5"/><circle cx="150.9" cy="64.0" r="4.6" fill="#b26a00" stroke="#fff" stroke-width="1.5"/><circle cx="465.3" cy="73.8" r="4.6" fill="#b26a00" stroke="#fff" stroke-width="1.5"/><circle cx="217.6" cy="44.5" r="4.6" fill="#b26a00" stroke="#fff" stroke-width="1.5"/><circle cx="293.8" cy="115.2" r="4.6" fill="#b26a00" stroke="#fff" stroke-width="1.5"/></svg>
-        </div>
+        </section>
+        <section class="card shot2">
+          <div class="shot-bar"><b>Consistency overview</b><span class="beta">Beta</span><span class="shot-path">Module EDU201 · Essay 2</span></div>
+          <div class="shot-body">
+            <p class="scat-cap">Each dot is one paper. The band is the expected range for that paper. <b>6 papers</b> fall outside it.</p>
+            <svg class="scat" viewBox="0 0 540 150" preserveAspectRatio="none"><rect x="0" y="0" width="540" height="150" rx="4" fill="#fff"/><clipPath id="cp"><rect x="0" y="0" width="540" height="150" rx="4"/></clipPath><polygon points="8.0,156.61818181818182 532.0,22.618181818181824 532.0,-6.618181818181824 8.0,127.38181818181818" fill="#e7eef0" clip-path="url(#cp)"/><circle cx="213.8" cy="84.0" r="2.6" fill="#002333"/><circle cx="113.2" cy="107.6" r="2.6" fill="#002333"/><circle cx="298.6" cy="69.1" r="2.6" fill="#002333"/><circle cx="287.3" cy="68.9" r="2.6" fill="#002333"/><circle cx="99.2" cy="120.9" r="2.6" fill="#002333"/><circle cx="120.5" cy="112.3" r="2.6" fill="#002333"/><circle cx="254.1" cy="77.6" r="2.6" fill="#002333"/><circle cx="173.5" cy="102.6" r="2.6" fill="#002333"/><circle cx="335.3" cy="50.4" r="2.6" fill="#002333"/><circle cx="242.9" cy="84.6" r="2.6" fill="#002333"/><circle cx="474.9" cy="10.6" r="2.6" fill="#002333"/><circle cx="200.1" cy="89.3" r="2.6" fill="#002333"/><circle cx="141.9" cy="103.7" r="2.6" fill="#002333"/><circle cx="410.8" cy="35.3" r="2.6" fill="#002333"/><circle cx="156.5" cy="111.9" r="2.6" fill="#002333"/><circle cx="233.2" cy="88.8" r="2.6" fill="#002333"/><circle cx="303.4" cy="64.4" r="2.6" fill="#002333"/><circle cx="166.6" cy="100.6" r="2.6" fill="#002333"/><circle cx="356.5" cy="57.8" r="2.6" fill="#002333"/><circle cx="318.5" cy="60.2" r="2.6" fill="#002333"/><circle cx="265.6" cy="79.6" r="2.6" fill="#002333"/><circle cx="363.9" cy="40.3" r="2.6" fill="#002333"/><circle cx="181.9" cy="104.4" r="2.6" fill="#002333"/><circle cx="434.4" cy="36.4" r="2.6" fill="#002333"/><circle cx="376.1" cy="52.1" r="2.6" fill="#002333"/><circle cx="131.5" cy="93.2" r="2.6" fill="#002333"/><circle cx="251.5" cy="79.6" r="2.6" fill="#002333"/><circle cx="279.9" cy="76.1" r="2.6" fill="#002333"/><circle cx="99.9" cy="123.8" r="2.6" fill="#002333"/><circle cx="313.5" cy="73.3" r="2.6" fill="#002333"/><circle cx="434.5" cy="36.7" r="2.6" fill="#002333"/><circle cx="322.1" cy="52.7" r="2.6" fill="#002333"/><circle cx="316.3" cy="74.8" r="2.6" fill="#002333"/><circle cx="462.2" cy="22.5" r="2.6" fill="#002333"/><circle cx="273.9" cy="75.1" r="2.6" fill="#002333"/><circle cx="364.9" cy="52.7" r="2.6" fill="#002333"/><circle cx="343.2" cy="44.5" r="2.6" fill="#002333"/><circle cx="198.1" cy="93.9" r="2.6" fill="#002333"/><circle cx="238.6" cy="83.7" r="2.6" fill="#002333"/><circle cx="269.0" cy="76.4" r="2.6" fill="#002333"/><circle cx="151.5" cy="103.7" r="2.6" fill="#002333"/><circle cx="391.6" cy="42.4" r="2.6" fill="#002333"/><circle cx="136.0" cy="109.2" r="2.6" fill="#002333"/><circle cx="432.9" cy="27.0" r="2.6" fill="#002333"/><circle cx="116.5" cy="121.9" r="2.6" fill="#002333"/><circle cx="437.7" cy="29.6" r="2.6" fill="#002333"/><circle cx="412.0" cy="35.3" r="2.6" fill="#002333"/><circle cx="250.4" cy="83.9" r="2.6" fill="#002333"/><circle cx="227.8" cy="73.9" r="2.6" fill="#002333"/><circle cx="144.6" cy="117.7" r="2.6" fill="#002333"/><circle cx="154.7" cy="104.0" r="2.6" fill="#002333"/><circle cx="278.3" cy="68.3" r="2.6" fill="#002333"/><circle cx="320.0" cy="62.3" r="2.6" fill="#002333"/><circle cx="251.9" cy="79.1" r="2.6" fill="#002333"/><circle cx="232.0" cy="99.1" r="2.6" fill="#002333"/><circle cx="360.5" cy="58.2" r="2.6" fill="#002333"/><circle cx="290.5" cy="76.8" r="2.6" fill="#002333"/><circle cx="105.8" cy="123.4" r="2.6" fill="#002333"/><circle cx="444.2" cy="28.0" r="2.6" fill="#002333"/><circle cx="403.5" cy="53.5" r="2.6" fill="#002333"/><circle cx="241.2" cy="84.7" r="2.6" fill="#002333"/><circle cx="338.0" cy="55.8" r="2.6" fill="#002333"/><circle cx="109.1" cy="112.2" r="2.6" fill="#002333"/><circle cx="149.2" cy="104.1" r="2.6" fill="#002333"/><circle cx="220.3" cy="87.6" r="2.6" fill="#002333"/><circle cx="144.7" cy="107.0" r="2.6" fill="#002333"/><circle cx="124.8" cy="113.1" r="2.6" fill="#002333"/><circle cx="434.1" cy="32.0" r="2.6" fill="#002333"/><circle cx="329.9" cy="56.8" r="2.6" fill="#002333"/><circle cx="223.2" cy="83.1" r="2.6" fill="#002333"/><circle cx="229.9" cy="76.4" r="2.6" fill="#002333"/><circle cx="481.6" cy="12.3" r="2.6" fill="#002333"/><circle cx="270.7" cy="77.5" r="2.6" fill="#002333"/><circle cx="125.1" cy="111.8" r="2.6" fill="#002333"/><circle cx="221.3" cy="88.6" r="2.6" fill="#002333"/><circle cx="148.8" cy="94.1" r="2.6" fill="#002333"/><circle cx="93.5" cy="112.7" r="2.6" fill="#002333"/><circle cx="142.9" cy="109.9" r="2.6" fill="#002333"/><circle cx="301.6" cy="59.3" r="2.6" fill="#002333"/><circle cx="475.8" cy="21.1" r="2.6" fill="#002333"/><circle cx="429.7" cy="35.8" r="2.6" fill="#002333"/><circle cx="231.0" cy="89.6" r="2.6" fill="#002333"/><circle cx="151.1" cy="104.3" r="2.6" fill="#002333"/><circle cx="396.0" cy="50.5" r="2.6" fill="#002333"/><circle cx="216.1" cy="86.8" r="2.6" fill="#002333"/><circle cx="478.3" cy="10.3" r="2.6" fill="#002333"/><circle cx="425.4" cy="31.2" r="2.6" fill="#002333"/><circle cx="380.3" cy="57.8" r="2.6" fill="#002333"/><circle cx="174.9" cy="105.2" r="2.6" fill="#002333"/><circle cx="95.8" cy="120.2" r="2.6" fill="#002333"/><circle cx="408.1" cy="98.1" r="4.6" fill="#b26a00" stroke="#fff" stroke-width="1.5"/><circle cx="351.0" cy="103.0" r="4.6" fill="#b26a00" stroke="#fff" stroke-width="1.5"/><circle cx="150.9" cy="64.0" r="4.6" fill="#b26a00" stroke="#fff" stroke-width="1.5"/><circle cx="465.3" cy="73.8" r="4.6" fill="#b26a00" stroke="#fff" stroke-width="1.5"/><circle cx="217.6" cy="44.5" r="4.6" fill="#b26a00" stroke="#fff" stroke-width="1.5"/><circle cx="293.8" cy="115.2" r="4.6" fill="#b26a00" stroke="#fff" stroke-width="1.5"/></svg>
+          </div>
+        </section>
       </div>
       <div class="foot"><span class="src">Bloxham et al., Assessment &amp; Evaluation in Higher Education, 2016. Consistency overview: illustrative screen, fictional data, in beta.</span><span>3</span></div>
     </article>
@@ -316,19 +400,19 @@
   <div class="stage">
     <article class="sheet">
       <div class="kicker"><span>Consistency · 2 of 2 <span class="beta">Beta</span></span><span>Eduface</span></div>
-      <h2>Every paper read. No AI grade shown.</h2>
-      <p class="lede">Not ready for AI grades? The consistency check, now in beta, reads every paper in the background and <mark>flags marks outside the expected range</mark>. The marker keeps the mark, and the AI grade stays hidden.</p>
-      <table class="marks">
-        <tr><th>Submission</th><th>Your mark</th><th>AI grade</th><th>Consistency signal</th></tr>
-        <tr><td>#1042</td><td class="n">65</td><td class="hid">Hidden</td><td class="hid">–</td></tr>
-        <tr><td>#1043</td><td class="n">58</td><td class="hid">Hidden</td><td class="hid">–</td></tr>
-        <tr><td>#1044</td><td class="n">72</td><td class="hid">Hidden</td><td class="hid">–</td></tr>
-        <tr class="flag"><td>#1045</td><td class="n">41</td><td class="hid">Hidden</td><td class="sig">▲ Outside expected range</td></tr>
-        <tr><td>#1046</td><td class="n">67</td><td class="hid">Hidden</td><td class="hid">–</td></tr>
-      </table>
-      <div class="vs">
-        <div><span class="label">A spreadsheet</span><p>Compares marks with marks.</p><span>A 41 looks low next to a 65. It can't tell if the paper deserved it.</span></div>
-        <div><span class="label">The consistency check</span><p>Compares the mark with the paper.</p><span>A 41 on a weak paper stays quiet. A 41 on a strong paper gets flagged.</span></div>
+      <h2>No AI grade shown</h2>
+      <p class="lede">Not ready for AI grades? The consistency check reads every paper in the background and <mark>flags marks outside the expected range</mark>.</p>
+      <div class="cards">
+        <section class="card tight">
+          <div class="shot-bar"><b>Essay 2 · Module EDU201</b><span class="shot-path">Your marking</span></div>
+          <table class="marks"><tr><th>Submission</th><th>Your mark</th><th>AI grade</th><th>Consistency signal</th></tr><tr class=""><td>#1042</td><td class="n">65</td><td class="hid"><span class="ic xs"><svg viewBox="0 0 24 24"><path d="M3 3l18 18"/><path d="M10.6 6.1A9.9 9.9 0 0 1 12 6c5 0 9 4.5 10 6-.4.6-1.3 1.8-2.6 3"/><path d="M6.6 6.6C4.4 8 2.8 10.2 2 12c1 1.5 5 6 10 6 1.7 0 3.2-.5 4.5-1.2"/><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg></span>Hidden</td><td class="hid">–</td></tr><tr class=""><td>#1043</td><td class="n">58</td><td class="hid"><span class="ic xs"><svg viewBox="0 0 24 24"><path d="M3 3l18 18"/><path d="M10.6 6.1A9.9 9.9 0 0 1 12 6c5 0 9 4.5 10 6-.4.6-1.3 1.8-2.6 3"/><path d="M6.6 6.6C4.4 8 2.8 10.2 2 12c1 1.5 5 6 10 6 1.7 0 3.2-.5 4.5-1.2"/><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg></span>Hidden</td><td class="hid">–</td></tr><tr class=""><td>#1044</td><td class="n">72</td><td class="hid"><span class="ic xs"><svg viewBox="0 0 24 24"><path d="M3 3l18 18"/><path d="M10.6 6.1A9.9 9.9 0 0 1 12 6c5 0 9 4.5 10 6-.4.6-1.3 1.8-2.6 3"/><path d="M6.6 6.6C4.4 8 2.8 10.2 2 12c1 1.5 5 6 10 6 1.7 0 3.2-.5 4.5-1.2"/><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg></span>Hidden</td><td class="hid">–</td></tr><tr class="flag"><td>#1045</td><td class="n">41</td><td class="hid"><span class="ic xs"><svg viewBox="0 0 24 24"><path d="M3 3l18 18"/><path d="M10.6 6.1A9.9 9.9 0 0 1 12 6c5 0 9 4.5 10 6-.4.6-1.3 1.8-2.6 3"/><path d="M6.6 6.6C4.4 8 2.8 10.2 2 12c1 1.5 5 6 10 6 1.7 0 3.2-.5 4.5-1.2"/><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg></span>Hidden</td><td class="sig"><span class="ic xs warn"><svg viewBox="0 0 24 24"><path d="M5 21V4"/><path d="M5 4h11l-2 4 2 4H5"/></svg></span>Outside expected range</td></tr><tr class=""><td>#1046</td><td class="n">67</td><td class="hid"><span class="ic xs"><svg viewBox="0 0 24 24"><path d="M3 3l18 18"/><path d="M10.6 6.1A9.9 9.9 0 0 1 12 6c5 0 9 4.5 10 6-.4.6-1.3 1.8-2.6 3"/><path d="M6.6 6.6C4.4 8 2.8 10.2 2 12c1 1.5 5 6 10 6 1.7 0 3.2-.5 4.5-1.2"/><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg></span>Hidden</td><td class="hid">–</td></tr></table>
+        </section>
+        <section class="card">
+          <div class="rows">
+            <div><span class="ic "><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M3 15h18M9 4v16"/></svg></span><b>A spreadsheet compares marks with marks.</b><span>A 41 looks low next to a 65. It can't tell if the paper deserved it.</span></div>
+            <div><span class="ic mintic"><svg viewBox="0 0 24 24"><path d="M4 8V5a1 1 0 0 1 1-1h3M16 4h3a1 1 0 0 1 1 1v3M20 16v3a1 1 0 0 1-1 1h-3M8 20H5a1 1 0 0 1-1-1v-3"/><path d="M8 9h8M8 12h8M8 15h5"/></svg></span><b>The check compares the mark with the paper.</b><span>A 41 on a weak paper stays quiet. A 41 on a strong paper gets flagged.</span></div>
+          </div>
+        </section>
       </div>
       <div class="foot"><span class="src">Illustrative screen, fictional data. The consistency check is in beta and not yet generally available.</span><span>4</span></div>
     </article>
@@ -356,18 +440,30 @@
   <div class="stage">
     <article class="sheet">
       <div class="kicker"><span>Operational efficiency · 1 of 2</span><span>Eduface</span></div>
-      <h2>Bad AI feedback costs more time than no AI.</h2>
-      <p class="lede">Fixing inaccurate feedback is slower than writing your own. <mark>Accuracy is the business case</mark>, and tuning the model to your rubric is the investment that pays for it.</p>
-      <div class="bars">
-        <span>Writing feedback yourself</span><i style="width:62%"></i>
-        <span>Fixing inaccurate AI feedback</span><i class="fix" style="width:88%"></i>
-        <span>Approving accurate AI feedback</span><i class="ok" style="width:18%"></i>
-      </div>
-      <p class="src" style="margin-top:8px">Time per assignment. Illustration, not a measurement.</p>
-      <div class="stats3">
-        <div><span class="n">94%</span><p>average accuracy, 435 submissions and 13 markers</p></div>
-        <div><span class="n">98%</span><p>for markers who tuned the model to their rubric</p></div>
-        <div><span class="n">−85%</span><p>time spent typing feedback, up to 20 minutes per assignment</p></div>
+      <h2>Accuracy saves the time</h2>
+      <div class="cards">
+        <section class="card">
+          <span class="lbl">Time per assignment</span>
+          <div class="bars2">
+            <span>Writing feedback yourself</span><i style="width:58%"></i>
+            <span>Fixing inaccurate AI feedback</span><i class="fix" style="width:92%"></i>
+            <span>Approving accurate AI feedback</span><i class="ok" style="width:22%"></i>
+          </div>
+          <p class="src">Illustration, not a measurement.</p>
+        </section>
+        <section class="card">
+          <div class="flow2">
+            <div><span class="ic "><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h10M4 18h13"/></svg></span><span>Your rubric and instructions</span></div><em>+</em>
+            <div><span class="ic "><svg viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8Z"/></svg></span><span>The model follows them</span></div><em>=</em>
+            <div><span class="ic "><svg viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9Z"/><path d="M14 3v6h6"/><path d="M9 16l5-5 2 2-5 5H9Z"/></svg></span><span>Feedback you would give</span></div><em>→</em>
+            <div><span class="ic mintic"><svg viewBox="0 0 24 24"><path d="m5 12 5 5 9-10"/></svg></span><span><b>Approve, don't rewrite</b></span></div>
+          </div>
+        </section>
+        <div class="nums">
+          <section class="card"><b>94%</b><span>average accuracy, 435 submissions and 13 markers</span></section>
+          <section class="card mint"><b>98%</b><span>for markers who tuned the model to their rubric</span></section>
+          <section class="card"><b>−85%</b><span>time spent typing feedback, up to 20 min per assignment</span></section>
+        </div>
       </div>
       <div class="foot"><span class="src">Accuracy is how close the AI's grade proposal is to the marker's own grade, on average. It is not a match rate. Accuracy measured in one of our implementations, typing time across our implementations.</span><span>5</span></div>
     </article>
@@ -388,25 +484,24 @@
   <div class="stage">
     <article class="sheet">
       <div class="kicker"><span>Operational efficiency · 2 of 2</span><span>Eduface</span></div>
-      <h2>The AI drafts. The lecturer decides.</h2>
-      <p class="lede">Time is saved on writing, not on judging. <mark>Nothing reaches the student without the lecturer</mark>, and every edit is logged.</p>
-      <div class="flow">
-        <div class="st"><b>AI drafts</b><span>A comment per rubric criterion</span></div>
-        <div class="arr">→</div>
-        <div class="st me"><b>Lecturer decides</b><span>Approves, edits or adds</span></div>
-        <div class="arr">→</div>
-        <div class="st"><b>Student receives</b><span>Only approved feedback</span></div>
-      </div>
-      <div class="p6low">
-        <div>
-          <span class="big">97%</span>
-          <p class="txt">of summative assignments get extra feedback from the lecturer, on top of the AI draft. Lecturers don't outsource their judgement.</p>
-        </div>
-        <div>
-          <span class="label">A nudge against rubber-stamping</span>
-          <div class="checks"><i>✓</i><i>✓</i><i>✓</i><i>✓</i><i>✓</i><i>✓</i><i>✓</i><i>✓</i><i>✓</i><i>✓</i><i class="q">?</i></div>
-          <p class="txt">After a long run of drafts approved untouched, the platform asks the lecturer a question about one specific assignment.</p>
-        </div>
+      <h2>The lecturer decides</h2>
+      <div class="cards">
+        <section class="card">
+          <div class="flow3">
+            <div><span class="ic "><svg viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9Z"/><path d="M14 3v6h6"/><path d="M9 16l5-5 2 2-5 5H9Z"/></svg></span><b>AI drafts</b><span>a comment per rubric criterion</span></div><em>→</em>
+            <div><span class="ic mintic"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="4"/><path d="M2 21c.7-4 3.5-6 7-6 1.8 0 3.3.5 4.5 1.4"/><path d="m16 17 2 2 4-4"/></svg></span><b>Lecturer decides</b><span>approves, edits or adds</span></div><em>→</em>
+            <div><span class="ic "><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c.8-4 4-6 8-6s7.2 2 8 6"/></svg></span><b>Student receives</b><span>only approved feedback</span></div>
+          </div>
+        </section>
+        <section class="card navy">
+          <b class="big2">97%</b>
+          <p>of summative assignments get extra feedback from the lecturer, on top of the AI draft. Lecturers don't outsource their judgement.</p>
+        </section>
+        <section class="card">
+          <span class="lbl">A nudge against rubber-stamping</span>
+          <div class="checks2"><i>✓</i><i>✓</i><i>✓</i><i>✓</i><i>✓</i><i>✓</i><i>✓</i><i>✓</i><i>✓</i><i>✓</i><i class="q">?</i></div>
+          <p class="d">After a long run of drafts approved untouched, the platform asks the lecturer a question about one specific assignment.</p>
+        </section>
       </div>
       <div class="foot"><span class="src">Edit rate: Eduface implementations.</span><span>6</span></div>
     </article>
@@ -426,16 +521,21 @@
   <div class="stage">
     <article class="sheet">
       <div class="kicker"><span>Next step</span><span>Eduface</span></div>
-      <h2>Start small. Then roll out what works.</h2>
+      <h2>Start small</h2>
       <p class="lede">Jisc's advice to institutions starting with AI in assessment: <mark>begin small, with a pilot</mark>. It matches what we have learned across 20+ implementations.</p>
-      <div class="stairs">
-        <div><i style="height:28px"></i><span class="label">Phase 1</span><b>A small group</b><p>A few lecturers, one module, one use case. The model is tuned to their rubric.</p></div>
-        <div><i style="height:56px"></i><span class="label">Phase 2</span><b>Proven use cases</b><p>What worked moves to more modules and more markers.</p></div>
-        <div><i style="height:84px"></i><span class="label">Phase 3</span><b>Gradual roll-out</b><p>The next use cases are added one at a time, when the institution is ready.</p></div>
-      </div>
-      <div class="starts">
-        <span class="label">Where institutions often start</span>
-        <div class="two-s"><p>The consistency check on a module that is already marked <span class="beta">Beta</span></p><p>AI-drafted formative feedback on one assignment</p></div>
+      <div class="cards">
+        <div class="phases">
+          <section class="card"><span class="ic "><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c.8-4 4-6 8-6s7.2 2 8 6"/></svg></span><div><span class="lbl">Phase 1</span><b>A small group</b><span>A few lecturers, one module, one use case. The model is tuned to their rubric.</span></div></section>
+          <section class="card"><span class="ic "><svg viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5Z"/><path d="m3 13 9 5 9-5"/></svg></span><div><span class="lbl">Phase 2</span><b>Proven use cases</b><span>What worked moves to more modules and more markers.</span></div></section>
+          <section class="card"><span class="ic "><svg viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span><div><span class="lbl">Phase 3</span><b>Gradual roll-out</b><span>The next use cases are added one at a time, when the institution is ready.</span></div></section>
+        </div>
+        <section class="card mint">
+          <span class="lbl">Where institutions often start</span>
+          <div class="rows">
+            <div><span class="ic "><svg viewBox="0 0 24 24"><path d="M4 8V5a1 1 0 0 1 1-1h3M16 4h3a1 1 0 0 1 1 1v3M20 16v3a1 1 0 0 1-1 1h-3M8 20H5a1 1 0 0 1-1-1v-3"/><path d="M8 9h8M8 12h8M8 15h5"/></svg></span><b>The consistency check on a module that is already marked <span class="beta">Beta</span></b></div>
+            <div><span class="ic "><svg viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9Z"/><path d="M14 3v6h6"/><path d="M9 16l5-5 2 2-5 5H9Z"/></svg></span><b>AI-drafted formative feedback on one assignment</b></div>
+          </div>
+        </section>
       </div>
       <p class="close">We have experience starting small and deliberately with a smaller group, and rolling out the use cases an institution wants step by step.</p>
       <div class="foot"><span class="src">Advice: Jisc, webinar October 2026.</span><span>7</span></div>
