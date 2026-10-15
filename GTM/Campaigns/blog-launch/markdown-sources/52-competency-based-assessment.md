@@ -53,7 +53,7 @@ If you run programs in the UK, you will know the same idea as competence-based a
 
 A competency-based assessment model is a chain of five decisions: what the competency is, what criteria define it, what evidence shows it, who evaluates that evidence, and what happens after "not yet".
 
-The most useful public map of those choices comes from the American Institutes for Research, built with the Competency-Based Education Network (C-BEN). Its CBE Program Model Map Framework describes competency-based programs as "designing curricula around specific competencies; advancing learners based on demonstration and mastery of competency; and allowing variation in the time it takes for learners to demonstrate a competency."² It groups design features into 10 categories that "generally align with the eight elements in C-BEN's CBE Quality Framework", and it deliberately makes no judgment about which choice is better.²
+The most useful public map of those choices comes from the American Institutes for Research, built with the Competency-Based Education Network (C-BEN). Its CBE Program Model Map Framework describes competency-based programs as "designing curricula around specific competencies; advancing learners based on demonstration and mastery of competency; and allowing variation in the time it takes for learners to demonstrate a competency."² It groups design features into 10 categories that "generally align with the eight elements in C-BEN's CBE Quality Framework".²
 
 For assessment, the framework lists the options programs actually choose between:²
 
@@ -82,7 +82,7 @@ Six evidence types cover most competency-based programs at career colleges, onli
 
 *Table 2: AI can help wherever the evidence is written and the criteria are stated. Observation and sign-off stay human.*
 
-If most of your evidence comes from workshops and job sheets, our article on [AI in vocational education and what stays with the assessor](/resources/blog/ai-in-vocational-education) covers that split in detail, including end-point assessment. This article focuses on programs where written artifacts and projects carry a large share of the evidence, as they do in most online competency-based degrees and certificates.
+If most of your evidence comes from workshops and job sheets, our article on [AI in vocational education and what stays with the assessor](/resources/blog/ai-in-vocational-education) covers that split, including end-point assessment. This article focuses on programs where written artifacts and projects carry much of the evidence, as in most online competency-based degrees.
 
 ## Worked example: one competency, one rubric, two attempts
 
@@ -112,7 +112,7 @@ The clearest way to see competency-based assessment in practice is to follow one
 
 The evaluator reads the memo, agrees with both "Not yet" suggestions, and rewrites the criterion 3 comment as a question: "Where in the process do the late orders lose their time?" They approve the evaluation. The competency is recorded as Not yet, and the student has criterion-level feedback the same day.
 
-**Attempt 2.** The student adds a stage-by-stage breakdown. Most of the delay sits between packing and the single daily carrier pickup, not in packing itself. The memo now recommends a second carrier pickup window and names on-time shipping rate as the success measure, with a rough cost estimate. The AI draft suggests Competent on criteria 1, 2 and 4, and Exceeds on criterion 3 because of the cost estimate.
+**Attempt 2.** A stage-by-stage breakdown now shows most of the delay sits between packing and the single daily carrier pickup. The memo now recommends a second carrier pickup window and names on-time shipping rate as the success measure, with a rough cost estimate. The AI draft suggests Competent on criteria 1, 2 and 4, and Exceeds on criterion 3 because of the cost estimate.
 
 The evaluator disagrees on criterion 3. The memo names a risk (the carrier may charge for a second pickup) but offers no mitigation, so it does not meet the Exceeds descriptor. The evaluator changes criterion 3 to Competent and signs off BUS-210 as Competent.
 
@@ -125,7 +125,7 @@ The rubric did the heavy lifting: each descriptor named something visible in the
 
 Competency-based assessment is hard to run at scale because the work never arrives in batches, every reattempt is a full evaluation, and students cannot progress until someone evaluates their work.
 
-**Rolling submissions.** With flexible pacing, the framework's most flexible option lets learners complete a competency "more quickly or slowly than in a traditional term".² There is no marking week. Evaluation is a permanent queue, and its length changes with enrollment, not with the calendar.
+**Rolling submissions.** With flexible pacing, the framework's most flexible option lets learners complete a competency "more quickly or slowly than in a traditional term".² There is no grading week. Evaluation is a permanent queue, and its length changes with enrollment, not with the calendar.
 
 **Multiple attempts per competency.** Every "not yet" generates another submission, and each one needs the same care as the first.
 
@@ -189,7 +189,7 @@ AI fits competency-based assessment at the point where written evidence meets a 
 
 **Many evaluators: the grader comparison dashboard.** The dashboard shows when an individual evaluator deviates from the rest of the team or from the AI suggestion, without anyone re-reading individual submissions. For a large pool of part-time or assessment-only faculty, that is a consistency check most programs now do by hand, if at all.
 
-**Knowledge checks: the Exam Grader.** For open and closed answers, Eduface's Exam Grader scores each answer per criterion against the mark scheme. Three independent AI agents grade each answer without seeing each other's result, and a fourth compares them: agreement means high confidence, disagreement is flagged for the instructor. Eduface reports that the Exam Grader is 48% more consistent than unaided human marking and takes under 4 minutes from upload to suggested grade; the setup behind those figures is not published, so test them in your own pilot.
+**Knowledge checks: the Exam Grader.** For open and closed answers, Eduface's Exam Grader scores each answer per criterion against the answer key. Three independent AI agents grade each answer without seeing each other's result, and a fourth compares them: agreement means high confidence, disagreement is flagged for the instructor. Eduface reports that the Exam Grader is 48% more consistent than unaided human marking and takes under 4 minutes from upload to suggested grade; the setup behind those figures is not published, so test them in your own pilot.
 
 **The record.** Eduface connects to Moodle, Canvas, Blackboard and Brightspace through LTI 1.3, so students submit where they already do, with no separate login, and the approved grade returns to the LMS gradebook. Each submission keeps an audit trail that meets AI Act requirements for summative assessments. Student data is processed in the EU, never used to train AI models, and Eduface uses no third-party APIs such as OpenAI.
 
@@ -215,10 +215,10 @@ If you do pilot, use one competency with written evidence and 30 to 50 submissio
 ## Frequently asked questions
 
 **Is competency-based assessment the same as competency-based education?**
-No. Competency-based education is the whole program design: curriculum, pacing, support and assessment. Competency-based assessment is the assessment part, and it can also run inside a term-based program that keeps credit hours. A course can assess against competencies with a not-yet-and-retry loop without becoming a direct assessment program.
+No. Competency-based education is the whole program design: curriculum, pacing, support and assessment. Competency-based assessment is the assessment part, and it can also run inside a term-based program that keeps credit hours.
 
 **Can a multiple-choice test count as competency-based assessment?**
-Yes, for the knowledge a competency rests on. The AIR and C-BEN framework lists selected-response and multiple-choice assessment as one option for summative assessment, next to projects, performance tasks and papers. Most competencies about doing something also need evidence of performance, so a knowledge check is rarely the only evidence.
+Yes, for the knowledge a competency rests on. The AIR and C-BEN framework lists selected-response and multiple-choice assessment as one option for summative assessment, next to projects, performance tasks and papers. Competencies about doing something also need performance evidence.
 
 **How many attempts should students get per competency?**
 That is a program decision with no single right answer. The AIR framework describes three options: unrestricted attempts, attempts with restrictions such as delays or revisiting material, and no reattempts without restarting the competency. Whatever you choose, budget evaluator time for it.
