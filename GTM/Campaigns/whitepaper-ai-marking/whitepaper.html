@@ -195,6 +195,13 @@
   .scat-cap { font-size: 11.5px; color: var(--ink-700); margin-bottom: 2px; }
   .scat-cap b { color: var(--warn); }
   .shot-tiles .w b { color: var(--warn); }
+  .duo { flex: 1; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto auto auto; column-gap: 56px; row-gap: 0; align-content: center; padding-bottom: 24px; }
+  .duo .w { font-family: var(--display); font-weight: 700; font-size: 44px; line-height: 1; letter-spacing: -.02em; margin: 0; max-width: none; align-self: end; }
+  .duo .k { font-family: var(--display); font-weight: 600; font-size: 21px; line-height: 1.2; margin-top: 20px; }
+  .duo .d { font-size: 13.5px; line-height: 1.55; color: var(--ink-700); margin-top: 12px; }
+  .duo .s { margin-top: 32px; padding-top: 14px; border-top: 1px solid var(--ink-200); display: flex; align-items: baseline; gap: 14px; }
+  .duo .s .n { font-family: var(--display); font-weight: 700; font-size: 30px; line-height: 1; white-space: nowrap; }
+  .duo .s span:last-child { font-size: 12px; line-height: 1.4; color: var(--ink-500); }
 </style>
 </head>
 <body>
@@ -237,22 +244,16 @@
   <div class="top">Courses <span>/</span> Webinar, Oct 2026 <span>/</span> <b>Whitepaper.pdf</b><div class="right"><span>Page 2 of 7</span><span class="btn">Approve</span></div></div>
   <div class="stage">
     <article class="sheet">
-      <div class="kicker"><span>The two outcomes</span><span>Eduface</span></div>
-      <h2>Two outcomes, from 20+ implementations.</h2>
-      <p class="lede">Institutions bring in AI marking and feedback for many reasons. The results we can measure come down to two: <mark>consistency</mark> and <mark>operational efficiency</mark>.</p>
-      <div class="two">
-        <div class="out">
-          <h3>Consistency <span>pages 3 to 4</span></h3>
-          <p class="core">Students are judged on their work, not on who marked it.</p>
-          <div class="def"><span class="label">Definition</span><p>Every paper is marked against the same criteria in the same way: the same mark, the same focus and the same style of feedback, whoever marks it.</p></div>
-          <div class="stat"><span class="n">9<small>/20</small></span><p>essays ranked both best and worst by experienced examiners</p></div>
-        </div>
-        <div class="out">
-          <h3>Operational efficiency <span>pages 5 to 6</span></h3>
-          <p class="core">Lecturer time moves from typing feedback to teaching.</p>
-          <div class="def"><span class="label">Definition</span><p>Less staff time per assignment for the same or better feedback, while the lecturer still approves every comment and every mark.</p></div>
-          <div class="stat"><span class="n">−85%</span><p>time spent typing feedback, up to 20 minutes per assignment</p></div>
-        </div>
+      <div class="kicker"><span>The two outcomes, from 20+ implementations</span><span>Eduface</span></div>
+      <div class="duo">
+        <h2 class="w">Consistency</h2>
+        <h2 class="w">Operational efficiency</h2>
+        <p class="k">Students are judged on their work, not on who marked it.</p>
+        <p class="k">Lecturer time moves from typing feedback to teaching.</p>
+        <p class="d">Every paper is marked against the same criteria in the same way: the same mark, the same focus and the same style of feedback, whoever marks it.</p>
+        <p class="d">Less staff time per assignment for the same or better feedback, while the lecturer still approves every comment and every mark.</p>
+        <div class="s"><span class="n">9/20</span><span>essays ranked both best and worst by experienced examiners</span></div>
+        <div class="s"><span class="n">−85%</span><span>time spent typing feedback, up to 20 minutes per assignment</span></div>
       </div>
       <div class="foot"><img src="../../../Design/Merk/logos/logo_navy.png" alt="Eduface"><span>2</span></div>
     </article>
