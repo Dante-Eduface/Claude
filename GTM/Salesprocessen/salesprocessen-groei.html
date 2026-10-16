@@ -18,11 +18,13 @@
     --border-strong: #cdd9de;
     --accent: #00e075;
     --accent-text: #007b54;
-    --s-in: #006754;      /* inbound: green-700 */
-    --s-out: #002333;     /* outbound: navy */
+    --s-in: #002333;      /* inbound: navy */
+    --s-out: #2c4a57;     /* outbound: ink-700 */
     --s-event: #5b7480;   /* beurzen en evenementen: ink-500 */
     --s-intro: #a9bcc4;   /* introducties en partners: ink-300 */
     --s-unk: #e7eef0;     /* onbekend: ink-100 */
+    --dot-priv: #00e075;  /* privaat: Eduface-groen */
+    --dot-pub: #cdd9de;   /* publiek: ink-200 */
     --tag-bg: #e7eef0;
   }
   @media (prefers-color-scheme: dark) {
@@ -30,7 +32,7 @@
       --bg: #002333; --surface: #0a2c3b; --fg: #ffffff; --muted: #a9bcc4;
       --border: rgba(255,255,255,.12); --border-strong: rgba(255,255,255,.24);
       --accent-text: #00e075;
-      --s-in: #00e075; --s-out: #e7eef0; --s-event: #5b7480; --s-intro: #2c4a57; --s-unk: #0a2c3b;
+      --s-in: #e7eef0; --s-out: #a9bcc4; --s-event: #5b7480; --s-intro: #2c4a57; --s-unk: #0a2c3b; --dot-pub: #cdd9de;
       --tag-bg: #0a2c3b;
     }
   }
@@ -38,7 +40,7 @@
     --bg: #002333; --surface: #0a2c3b; --fg: #ffffff; --muted: #a9bcc4;
     --border: rgba(255,255,255,.12); --border-strong: rgba(255,255,255,.24);
     --accent-text: #00e075;
-    --s-in: #00e075; --s-out: #e7eef0; --s-event: #5b7480; --s-intro: #2c4a57; --s-unk: #0a2c3b;
+    --s-in: #e7eef0; --s-out: #a9bcc4; --s-event: #5b7480; --s-intro: #2c4a57; --s-unk: #0a2c3b; --dot-pub: #cdd9de;
     --tag-bg: #0a2c3b;
   }
 
@@ -68,6 +70,8 @@
 
   .legend { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-bottom: 16px; font-size: 13px; }
   .legend span { display: inline-flex; align-items: center; gap: 8px; }
+  .legend .sep { flex-basis: 100%; height: 0; }
+  .dt { width: 10px; height: 10px; border-radius: 9999px; display: inline-block; }
   .sw { width: 10px; height: 10px; border-radius: 2px; display: inline-block; box-shadow: inset 0 0 0 1px var(--border-strong); }
 
   .chart { width: 100%; height: auto; display: block; overflow: visible; }
@@ -85,6 +89,7 @@
   .chart .band-t { fill: var(--fg); font-weight: 600; font-size: 12px; }
   .chart rect.seg { stroke: var(--bg); stroke-width: 1.5; }
   .chart rect.unk { stroke: var(--border-strong); stroke-width: 1; }
+  .chart .dot { stroke: var(--bg); stroke-width: 1.5; }
   .chart .hit { fill: transparent; }
   .chart .col:hover rect.seg { opacity: .85; }
 
@@ -130,14 +135,9 @@
   <div class="kpis" id="kpis"></div>
 
   <div class="legend" id="legend"></div>
-  <svg class="chart" id="chart" role="img" aria-label="Eerste meetings gehouden per maand, gestapeld naar bron"></svg>
-  <p class="note">De hoogte is het aantal per maand. Een kwartaalbalk is drie maanden breed en toont het gemiddelde per maand, met het kwartaaltotaal eronder. De stippellijnen zijn het gemiddelde per maand vóór en sinds de pivot op 1 augustus. Oktober loopt nog.</p>
+  <svg class="chart" id="chart" role="img" aria-label="Eerste meetings gehouden per maand, gestapeld naar bron, elke instelling een bolletje"></svg>
+  <p class="note">De hoogte is het aantal per maand. Een kwartaalbalk is drie maanden breed en toont het gemiddelde per maand, met het kwartaaltotaal eronder. Elk bolletje is één instelling: groen is privaat, grijs is publiek. De stippellijnen zijn het gemiddelde per maand vóór en sinds de pivot op 1 augustus. Oktober loopt nog.</p>
 
-  <section class="mix">
-    <h2>Waar ze vandaan komen</h2>
-    <p class="muted">Dezelfde eerste meetings, verdeeld naar bron, vóór en sinds de pivot op 1 augustus 2026.</p>
-    <div class="rows" id="rows"></div>
-  </section>
 
   <footer>
     <p>Bron: HubSpot-meetings (peildatum 15-10-2026), aangevuld met Close-meetings (peildatum 16-10-2026). Eén telling per instelling. Partners, investeerders, interne afspraken en no-shows zijn niet meegeteld.</p>
@@ -155,8 +155,8 @@ const SOURCES = [
   { key: "unk",   label: "Onbekend",                 color: "var(--s-unk)" },
 ];
 
-// Per periode de leads [naam, bron], uit Eduface_nieuwe_leads_2025_2026.xlsx
-const LEADS = {"2025 Q1": [["Avans Hogeschool", "event"], ["Open University of Israel", "event"], ["Radboud Universiteit", "intro"], ["UMCG / Scorion", "intro"], ["University of Ferrara", "event"], ["Drieam", "unk"], ["BPP University", "event"], ["Haagse Hogeschool", "out"]], "2025 Q2": [["Teylingen College", "out"], ["MBO Amersfoort", "out"]], "2025 Q3": [["Hogeschool Rotterdam", "out"], ["Tio Business School", "in"]], "2025 Q4": [["Sport & People", "in"], ["TU Eindhoven", "in"], ["CMS Vocational Training", "in"]], "2026 Q1": [["Bath Spa University", "event"], ["Graafschap College", "event"]], "2026 Q2": [["Queen's University Belfast", "out"], ["University of Sunderland in London", "in"], ["TU Delft", "out"], ["Goldsmiths, University of London", "in"], ["North-West University", "event"], ["ICM Opleidingen", "event"], ["Rijksuniversiteit Groningen", "in"]], "2026 jul": [["Capabel Onderwijs", "in"], ["CMI Ireland", "in"]], "2026 aug": [["HBMSU", "in"], ["University of Bristol", "in"], ["Business School Notenboom", "out"], ["LSBF", "intro"], ["Windesheim", "in"], ["Breederode Hogeschool", "out"], ["Universal Technical Institute", "in"], ["UADE", "event"], ["Business School Nederland", "out"]], "2026 sep": [["Hogeschool van Amsterdam", "in"], ["Academica", "out"], ["Concorde Career College", "intro"]], "2026 okt": [["PHOV", "out"], ["CEI", "in"], ["Learnforwork", "in"], ["Santa Monica College", "in"]]};
+// Per periode de leads [naam, bron, privaat of publiek], uit Eduface_nieuwe_leads_2025_2026.xlsx
+const LEADS = {"2025 Q1": [["Avans Hogeschool", "event", "pub"], ["Open University of Israel", "event", "pub"], ["Radboud Universiteit", "intro", "pub"], ["UMCG / Scorion", "intro", "pub"], ["University of Ferrara", "event", "pub"], ["Drieam", "unk", "priv"], ["BPP University", "event", "priv"], ["Haagse Hogeschool", "out", "pub"]], "2025 Q2": [["Teylingen College", "out", "pub"], ["MBO Amersfoort", "out", "pub"]], "2025 Q3": [["Hogeschool Rotterdam", "out", "pub"], ["Tio Business School", "in", "priv"]], "2025 Q4": [["Sport & People", "in", "priv"], ["TU Eindhoven", "in", "pub"], ["CMS Vocational Training", "in", "priv"]], "2026 Q1": [["Bath Spa University", "event", "pub"], ["Graafschap College", "event", "pub"]], "2026 Q2": [["Queen's University Belfast", "out", "pub"], ["University of Sunderland in London", "in", "pub"], ["TU Delft", "out", "pub"], ["Goldsmiths, University of London", "in", "pub"], ["North-West University", "event", "pub"], ["ICM Opleidingen", "event", "priv"], ["Rijksuniversiteit Groningen", "in", "pub"]], "2026 jul": [["Capabel Onderwijs", "in", "priv"], ["CMI Ireland", "in", "priv"]], "2026 aug": [["HBMSU", "in", "priv"], ["University of Bristol", "in", "pub"], ["Business School Notenboom", "out", "priv"], ["LSBF", "intro", "priv"], ["Windesheim", "in", "pub"], ["Breederode Hogeschool", "out", "priv"], ["Universal Technical Institute", "in", "priv"], ["UADE", "event", "priv"], ["Business School Nederland", "out", "priv"]], "2026 sep": [["Hogeschool van Amsterdam", "in", "pub"], ["Academica", "out", "priv"], ["Concorde Career College", "intro", "priv"]], "2026 okt": [["PHOV", "out", "priv"], ["CEI", "in", "priv"], ["Learnforwork", "in", "priv"], ["Santa Monica College", "in", "pub"]]};
 
 // start = maandindex vanaf jan 2025, months = lengte van de periode
 const PERIODS = [
@@ -194,8 +194,12 @@ document.getElementById("kpis").innerHTML = `
   <div class="kpi"><div class="n">${fmt(avgBefore)}</div><div class="l">per maand, jan 2025 t/m jul 2026</div></div>
   <div class="kpi"><div class="n">${nBefore + nAfter}</div><div class="l">eerste meetings sinds januari 2025, waarvan ${nAfter} sinds augustus</div></div>`;
 
+const nPriv = PERIODS.reduce((s, p) => s + p.leads.filter(l => l[2] === "priv").length, 0);
+const nPub = PERIODS.reduce((s, p) => s + p.leads.filter(l => l[2] === "pub").length, 0);
 document.getElementById("legend").innerHTML = SOURCES.map(s =>
-  `<span><i class="sw" style="background:${s.color}"></i>${s.label}</span>`).join("");
+  `<span><i class="sw" style="background:${s.color}"></i>${s.label}</span>`).join("") +
+  `<i class="sep"></i><span><i class="dt" style="background:var(--dot-priv)"></i>Privaat (${nPriv})</span>` +
+  `<span><i class="dt" style="background:var(--dot-pub);box-shadow:inset 0 0 0 1px var(--border-strong)"></i>Publiek (${nPub})</span>`;
 
 // Grafiek
 const W = 880, H = 380, M = { t: 40, r: 8, b: 56, l: 28 };
@@ -205,7 +209,7 @@ const yMax = 10;
 const x = m => M.l + (m / totalMonths) * iw;
 const y = v => M.t + ih - (v / yMax) * ih;
 const GAP = 4;
-let svg = ``;
+let svg = ``, dots = ``;
 
 // band sinds de pivot
 svg += `<rect class="band" x="${x(PIVOT)}" y="${M.t - 32}" width="${x(22) - x(PIVOT) + M.r}" height="${ih + 32}" rx="8"/>`;
@@ -224,7 +228,17 @@ PERIODS.forEach((p, i) => {
   SOURCES.forEach(s => {
     const v = p[s.key] / p.months;
     if (!v) return;
-    svg += `<rect class="seg${s.key === "unk" ? " unk" : ""}" x="${x0}" y="${y(acc + v)}" width="${w}" height="${y(acc) - y(acc + v)}" style="fill:${s.color}"/>`;
+    const top = y(acc + v), segH = y(acc) - y(acc + v);
+    svg += `<rect class="seg${s.key === "unk" ? " unk" : ""}" x="${x0}" y="${top}" width="${w}" height="${segH}" style="fill:${s.color}"/>`;
+    // één bolletje per instelling, privaat eerst
+    const ls = p.leads.filter(l => l[1] === s.key).sort((a, b) => (a[2] === "priv" ? 0 : 1) - (b[2] === "priv" ? 0 : 1));
+    const cols = p.months, rows = Math.ceil(ls.length / cols), cellH = segH / rows;
+    ls.forEach((l, k) => {
+      const r = Math.floor(k / cols), inRow = Math.min(cols, ls.length - r * cols), c = k % cols;
+      const cx = x0 + w / 2 + (c - (inRow - 1) / 2) * (w / cols);
+      const cy = top + segH - cellH * (r + 0.5);
+      dots += `<circle class="dot" cx="${cx}" cy="${cy}" r="4.5" style="fill:var(--dot-${l[2]})"/>`;
+    });
     acc += v;
   });
   p.x0 = x0; p.w = w; p.top = acc;
@@ -237,6 +251,7 @@ PERIODS.forEach((p, i) => {
 // gemiddelden, boven de balken en onder de waardes
 svg += `<line class="avg" x1="${x(0)}" x2="${x(PIVOT) - GAP}" y1="${y(avgBefore)}" y2="${y(avgBefore)}"/>`;
 svg += `<line class="avg-after" x1="${x(PIVOT) + GAP}" x2="${x(22)}" y1="${y(avgAfter)}" y2="${y(avgAfter)}"/>`;
+svg += dots;
 PERIODS.forEach(p => {
   svg += `<text class="val${p.start >= PIVOT ? " in-band" : ""}" x="${p.x0 + p.w / 2}" y="${y(p.top) - 8}" text-anchor="middle">${fmt(p.top)}</text>`;
 });
@@ -257,7 +272,7 @@ chart.querySelectorAll(".col").forEach(g => {
   const p = PERIODS[+g.dataset.i];
   const name = p.months > 1 ? `${p.label} ${p.year}` : `${p.label} ${p.year}${p.live ? " (t/m 16 okt)" : ""}`;
   const list = SOURCES.filter(s => p[s.key]).map(s =>
-    `${s.label} (${p[s.key]}): ${p.leads.filter(l => l[1] === s.key).map(l => esc(l[0])).join(", ")}`).join("<br>");
+    `${s.label} (${p[s.key]}): ${p.leads.filter(l => l[1] === s.key).map(l => `${esc(l[0])} (${l[2] === "priv" ? "privaat" : "publiek"})`).join(", ")}`).join("<br>");
   g.addEventListener("mousemove", e => {
     tip.innerHTML = `<b>${name}: ${p.total} eerste meetings</b><br>${list}`;
     tip.style.left = Math.min(e.clientX + 12, innerWidth - 300) + "px";
@@ -267,20 +282,6 @@ chart.querySelectorAll(".col").forEach(g => {
   g.addEventListener("mouseleave", () => tip.style.opacity = 0);
 });
 
-// Bronverdeling voor en na de pivot
-const groups = [
-  { label: "Januari 2025 t/m juli 2026", periods: before },
-  { label: "Sinds de pivot, 1 augustus 2026", periods: after },
-];
-document.getElementById("rows").innerHTML = groups.map(g => {
-  const tot = sum(g.periods, "total");
-  const parts = SOURCES.map(s => ({ ...s, n: sum(g.periods, s.key) })).filter(s => s.n);
-  return `<div class="row">
-    <div class="head"><b>${g.label}</b><span class="muted">${tot} eerste meetings</span></div>
-    <div class="bar">${parts.map(s => `<div style="flex:${s.n};background:${s.color}${s.key === "unk" ? ";box-shadow:inset 0 0 0 1px var(--border-strong)" : ""}" title="${s.label}: ${s.n}"></div>`).join("")}</div>
-    <div class="parts">${parts.map(s => `<span>${s.label} ${s.n} (${Math.round(s.n / tot * 100)}%)</span>`).join("")}</div>
-  </div>`;
-}).join("");
 </script>
 </body>
 </html>
