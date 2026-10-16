@@ -2,7 +2,7 @@
 
 _Aangelegd 2026-10-15._
 
-**Wat:** grafiek met gestarte salesprocessen sinds 2025. Een proces telt als gestart op de dag van de eerste meeting met die instelling. Per kwartaal tot en met juni 2026, vanaf juli per maand, gestapeld naar bron (outbound, inbound, beurzen en evenementen, introducties en partners).
+**Wat:** grafiek "Eerste meeting gehouden" sinds 2025. Per instelling telt de eerste gehouden meeting. Per kwartaal tot en met juni 2026, juli los, vanaf de pivot (augustus 2026) per maand, gestapeld naar bron (outbound, inbound, beurzen en evenementen, introducties en partners).
 
 **Fase:** ontwerpvoorstel met fictieve data (`salesprocessen-groei.html`).
 

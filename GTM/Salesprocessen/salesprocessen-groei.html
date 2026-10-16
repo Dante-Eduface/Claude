@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gestarte salesprocessen</title>
+<title>Eerste meetings gehouden</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -123,19 +123,19 @@
 <main>
   <header>
     <div class="eyebrow">Eduface, januari 2025 t/m 16 oktober 2026</div>
-    <h1>Gestarte salesprocessen</h1>
-    <p class="muted">Een salesproces telt als gestart op de dag van de eerste gehouden meeting met die instelling. Tot en met juni 2026 per kwartaal en juli als losse maand. Vanaf augustus 2026, de maand van de pivot, per maand.</p>
+    <h1>Eerste meeting gehouden</h1>
+    <p class="muted">Per instelling telt alleen de eerste gehouden meeting, op de dag dat die plaatsvond. Tot en met juni 2026 per kwartaal en juli als losse maand. Vanaf augustus 2026, de maand van de pivot, per maand.</p>
   </header>
 
   <div class="kpis" id="kpis"></div>
 
   <div class="legend" id="legend"></div>
-  <svg class="chart" id="chart" role="img" aria-label="Gestarte salesprocessen per maand, gestapeld naar bron"></svg>
+  <svg class="chart" id="chart" role="img" aria-label="Eerste meetings gehouden per maand, gestapeld naar bron"></svg>
   <p class="note">De hoogte is het aantal per maand. Een kwartaalbalk is drie maanden breed en toont het gemiddelde per maand, met het kwartaaltotaal eronder. De stippellijnen zijn het gemiddelde per maand vóór en sinds de pivot op 1 augustus. Oktober loopt nog.</p>
 
   <section class="mix">
     <h2>Waar ze vandaan komen</h2>
-    <p class="muted">Dezelfde processen, verdeeld naar bron, vóór en sinds de pivot op 1 augustus 2026.</p>
+    <p class="muted">Dezelfde eerste meetings, verdeeld naar bron, vóór en sinds de pivot op 1 augustus 2026.</p>
     <div class="rows" id="rows"></div>
   </section>
 
@@ -192,7 +192,7 @@ const factor = Math.round(avgAfter / avgBefore * 10) / 10;
 document.getElementById("kpis").innerHTML = `
   <div class="kpi lead"><div class="n">${fmt(avgAfter)}<span class="x">${fmt(factor)}x zo veel</span></div><div class="l">per maand sinds de pivot, 1 augustus 2026</div></div>
   <div class="kpi"><div class="n">${fmt(avgBefore)}</div><div class="l">per maand, jan 2025 t/m jul 2026</div></div>
-  <div class="kpi"><div class="n">${nBefore + nAfter}</div><div class="l">gestart sinds januari 2025, waarvan ${nAfter} sinds augustus</div></div>`;
+  <div class="kpi"><div class="n">${nBefore + nAfter}</div><div class="l">eerste meetings sinds januari 2025, waarvan ${nAfter} sinds augustus</div></div>`;
 
 document.getElementById("legend").innerHTML = SOURCES.map(s =>
   `<span><i class="sw" style="background:${s.color}"></i>${s.label}</span>`).join("");
@@ -259,7 +259,7 @@ chart.querySelectorAll(".col").forEach(g => {
   const list = SOURCES.filter(s => p[s.key]).map(s =>
     `${s.label} (${p[s.key]}): ${p.leads.filter(l => l[1] === s.key).map(l => esc(l[0])).join(", ")}`).join("<br>");
   g.addEventListener("mousemove", e => {
-    tip.innerHTML = `<b>${name}: ${p.total} gestart</b><br>${list}`;
+    tip.innerHTML = `<b>${name}: ${p.total} eerste meetings</b><br>${list}`;
     tip.style.left = Math.min(e.clientX + 12, innerWidth - 300) + "px";
     tip.style.top = (e.clientY + 12) + "px";
     tip.style.opacity = 1;
@@ -276,7 +276,7 @@ document.getElementById("rows").innerHTML = groups.map(g => {
   const tot = sum(g.periods, "total");
   const parts = SOURCES.map(s => ({ ...s, n: sum(g.periods, s.key) })).filter(s => s.n);
   return `<div class="row">
-    <div class="head"><b>${g.label}</b><span class="muted">${tot} processen</span></div>
+    <div class="head"><b>${g.label}</b><span class="muted">${tot} eerste meetings</span></div>
     <div class="bar">${parts.map(s => `<div style="flex:${s.n};background:${s.color}${s.key === "unk" ? ";box-shadow:inset 0 0 0 1px var(--border-strong)" : ""}" title="${s.label}: ${s.n}"></div>`).join("")}</div>
     <div class="parts">${parts.map(s => `<span>${s.label} ${s.n} (${Math.round(s.n / tot * 100)}%)</span>`).join("")}</div>
   </div>`;
