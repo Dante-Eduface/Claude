@@ -1,6 +1,6 @@
 # Eduface
 
-_Laatst bijgewerkt: 2026-10-02._
+_Laatst bijgewerkt: 2026-10-16._
 
 Het bedrijf waar Dante werkt. Juridisch heet het **Blockbook B.V.**, daar komt zijn salaris ook vandaan. Naar buiten is alles Eduface. Dit bestand is alleen het minimum dat elke sessie nodig heeft: wat we verkopen, aan wie, en wie er werkt. Alles wat dieper gaat staat in een eigen bestand, zie **Waar de details staan**.
 
@@ -23,6 +23,10 @@ Het is dus meer dan schriftelijke feedback en nakijken: mondeling toetsen hoort 
 - **PLG** (product led growth). De versie waarop mensen via onze website zelf gratis een account aanmaken. Telt niet mee in de Enterprise-NPS.
 
 Noem je een cijfer of een klantervaring, zeg er altijd bij welke van de twee je bedoelt. Ze door elkaar halen maakt elk getal waardeloos.
+
+## Pivot augustus 2026
+
+Op 1 augustus 2026 heeft Eduface een pivot gemaakt (Dante, 16-10-2026). Sindsdien rapporteren we gestarte salesprocessen per maand, zie `GTM/Salesprocessen/`. Wat de pivot inhoudt: OPEN, zie `Context/open-vragen.md` (W6).
 
 ## Aan wie we verkopen
 
