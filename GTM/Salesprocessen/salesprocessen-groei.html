@@ -16,24 +16,29 @@
     --muted: #5b7480;
     --border: #e7eef0;
     --border-strong: #cdd9de;
-    --s-out: #002333;     /* outbound: navy */
+    --accent: #00e075;
+    --accent-text: #007b54;
     --s-in: #006754;      /* inbound: green-700 */
+    --s-out: #002333;     /* outbound: navy */
     --s-event: #5b7480;   /* beurzen en evenementen: ink-500 */
     --s-intro: #a9bcc4;   /* introducties en partners: ink-300 */
+    --s-unk: #e7eef0;     /* onbekend: ink-100 */
     --tag-bg: #e7eef0;
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
       --bg: #002333; --surface: #0a2c3b; --fg: #ffffff; --muted: #a9bcc4;
-      --border: rgba(255,255,255,.12); --border-strong: rgba(255,255,255,.2);
-      --s-out: #e7eef0; --s-in: #00e075; --s-event: #5b7480; --s-intro: #2c4a57;
+      --border: rgba(255,255,255,.12); --border-strong: rgba(255,255,255,.24);
+      --accent-text: #00e075;
+      --s-in: #00e075; --s-out: #e7eef0; --s-event: #5b7480; --s-intro: #2c4a57; --s-unk: #0a2c3b;
       --tag-bg: #0a2c3b;
     }
   }
   :root[data-theme="dark"] {
     --bg: #002333; --surface: #0a2c3b; --fg: #ffffff; --muted: #a9bcc4;
-    --border: rgba(255,255,255,.12); --border-strong: rgba(255,255,255,.2);
-    --s-out: #e7eef0; --s-in: #00e075; --s-event: #5b7480; --s-intro: #2c4a57;
+    --border: rgba(255,255,255,.12); --border-strong: rgba(255,255,255,.24);
+    --accent-text: #00e075;
+    --s-in: #00e075; --s-out: #e7eef0; --s-event: #5b7480; --s-intro: #2c4a57; --s-unk: #0a2c3b;
     --tag-bg: #0a2c3b;
   }
 
@@ -51,34 +56,42 @@
   p { margin: 0; text-wrap: pretty; }
   .muted { color: var(--muted); }
 
-  .tag {
-    display: inline-block; font-size: 12px; font-weight: 500; color: var(--muted);
-    background: var(--tag-bg); border-radius: 9999px; padding: 2px 10px; margin-bottom: 16px;
-  }
+  .eyebrow { font-size: 13px; font-weight: 500; color: var(--muted); margin-bottom: 8px; }
   header p { margin-top: 8px; max-width: 68ch; }
 
-  .kpis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin: 48px 0 32px; }
+  .kpis { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 32px; margin: 48px 0 40px; align-items: end; }
   .kpi .n { font-family: "League Spartan", sans-serif; font-size: 40px; line-height: 1; font-weight: 600; font-variant-numeric: tabular-nums; }
   .kpi .l { margin-top: 8px; font-size: 13px; color: var(--muted); }
+  .kpi.lead .n { font-size: 56px; }
+  .kpi.lead .l { color: var(--fg); }
+  .kpi.lead .x { display: inline-block; margin-left: 8px; font-size: 13px; font-weight: 600; color: var(--fg); background: var(--surface); border-radius: 9999px; padding: 2px 10px; vertical-align: 10px; font-family: "Inter", sans-serif; }
 
   .legend { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-bottom: 16px; font-size: 13px; }
   .legend span { display: inline-flex; align-items: center; gap: 8px; }
-  .sw { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+  .sw { width: 10px; height: 10px; border-radius: 2px; display: inline-block; box-shadow: inset 0 0 0 1px var(--border-strong); }
 
   .chart { width: 100%; height: auto; display: block; overflow: visible; }
   .chart text { font-family: "Inter", sans-serif; fill: var(--muted); font-size: 11px; }
-  .chart .val { fill: var(--fg); font-weight: 600; font-size: 12px; font-variant-numeric: tabular-nums; }
+  .chart .val { fill: var(--fg); font-weight: 600; font-size: 12px; font-variant-numeric: tabular-nums; paint-order: stroke; stroke: var(--bg); stroke-width: 5px; stroke-linejoin: round; }
+  .chart .val.in-band { stroke: var(--surface); }
+  .chart .lbl { fill: var(--fg); }
   .chart .grid { stroke: var(--border); }
   .chart .base { stroke: var(--border-strong); }
-  .chart .divider { stroke: var(--border-strong); stroke-dasharray: 3 3; }
+  .chart .band { fill: var(--surface); }
+  .chart .avg { stroke: var(--fg); stroke-width: 1.5; stroke-dasharray: 4 3; }
+  .chart .avg-after { stroke: var(--fg); stroke-width: 2; stroke-dasharray: 4 3; }
+  .chart .avg-t { fill: var(--fg); font-weight: 600; }
+  .chart .avg-t-after { fill: var(--fg); font-weight: 700; }
+  .chart .band-t { fill: var(--fg); font-weight: 600; font-size: 12px; }
   .chart rect.seg { stroke: var(--bg); stroke-width: 1.5; }
-  .chart .hit { fill: transparent; cursor: default; }
+  .chart rect.unk { stroke: var(--border-strong); stroke-width: 1; }
+  .chart .hit { fill: transparent; }
   .chart .col:hover rect.seg { opacity: .85; }
 
   .note { font-size: 13px; color: var(--muted); margin-top: 16px; max-width: 68ch; }
 
   section.mix { margin-top: 64px; padding-top: 32px; border-top: 1px solid var(--border); }
-  section.mix > p { margin-top: 8px; }
+  section.mix > p { margin-top: 8px; max-width: 68ch; }
   .rows { margin-top: 24px; display: grid; gap: 24px; }
   .row .head { display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 8px; }
   .row .head b { font-weight: 600; }
@@ -86,11 +99,13 @@
   .bar div { height: 100%; }
   .row .parts { display: flex; flex-wrap: wrap; gap: 4px 16px; margin-top: 8px; font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
 
+  footer { margin-top: 48px; font-size: 12px; color: var(--muted); max-width: 68ch; display: grid; gap: 4px; }
+
   #tip {
     position: fixed; pointer-events: none; opacity: 0; transition: opacity .1s;
     background: var(--fg); color: var(--bg); font-size: 12px; line-height: 1.5;
     padding: 8px 12px; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,35,51,.08);
-    font-variant-numeric: tabular-nums; z-index: 10;
+    max-width: 280px; z-index: 10;
   }
   #tip b { font-weight: 600; }
 
@@ -98,89 +113,108 @@
     main { padding-top: 32px; }
     h1 { font-size: 26px; }
     .kpis { grid-template-columns: 1fr 1fr; gap: 24px; }
+    .kpi.lead { grid-column: 1 / -1; }
     .kpi .n { font-size: 32px; }
+    .kpi.lead .n { font-size: 48px; }
   }
 </style>
 </head>
 <body>
 <main>
   <header>
-    <span class="tag">Fictieve data, ontwerpvoorstel</span>
+    <div class="eyebrow">Eduface, januari 2025 t/m 16 oktober 2026</div>
     <h1>Gestarte salesprocessen</h1>
-    <p class="muted">Een salesproces telt als gestart op de dag van de eerste meeting met die instelling. Tot en met juni 2026 per kwartaal, vanaf juli per maand.</p>
+    <p class="muted">Een salesproces telt als gestart op de dag van de eerste gehouden meeting met die instelling. Tot en met juni 2026 per kwartaal, vanaf juli per maand.</p>
   </header>
 
   <div class="kpis" id="kpis"></div>
 
   <div class="legend" id="legend"></div>
   <svg class="chart" id="chart" role="img" aria-label="Gestarte salesprocessen per maand, gestapeld naar bron"></svg>
-  <p class="note">De hoogte is het aantal per maand. Een kwartaalbalk is drie maanden breed en toont het gemiddelde per maand, met het kwartaaltotaal eronder. Zo zijn kwartalen en maanden eerlijk te vergelijken.</p>
+  <p class="note">De hoogte is het aantal per maand. Een kwartaalbalk is drie maanden breed en toont het gemiddelde per maand, met het kwartaaltotaal eronder. De stippellijnen zijn het gemiddelde per maand vóór en sinds 1 juli. Oktober loopt nog.</p>
 
   <section class="mix">
     <h2>Waar ze vandaan komen</h2>
-    <p class="muted">Dezelfde processen, verdeeld naar bron.</p>
+    <p class="muted">Dezelfde processen, verdeeld naar bron, vóór en sinds 1 juli 2026.</p>
     <div class="rows" id="rows"></div>
   </section>
+
+  <footer>
+    <p>Bron: HubSpot-meetings (peildatum 15-10-2026), aangevuld met Close-meetings (peildatum 16-10-2026). Eén telling per instelling. Partners, investeerders, interne afspraken en no-shows zijn niet meegeteld.</p>
+    <p>Close-bronnen omgezet: PLG, Calendly en webinar tellen als inbound; cold call en LinkedIn als outbound; doorverwijzing als introductie of partner.</p>
+  </footer>
 </main>
 <div id="tip"></div>
 
 <script>
 const SOURCES = [
-  { key: "out",   label: "Outbound",                 color: "var(--s-out)" },
   { key: "in",    label: "Inbound (ons gevonden)",   color: "var(--s-in)" },
+  { key: "out",   label: "Outbound",                 color: "var(--s-out)" },
   { key: "event", label: "Beurzen en evenementen",   color: "var(--s-event)" },
   { key: "intro", label: "Introducties en partners", color: "var(--s-intro)" },
+  { key: "unk",   label: "Onbekend",                 color: "var(--s-unk)" },
 ];
 
-// Fictief. months = lengte van de periode, start = maandindex vanaf jan 2025 (0).
+// Per periode de leads [naam, bron], uit Eduface_nieuwe_leads_2025_2026.xlsx
+const LEADS = {"2025 Q1": [["Avans Hogeschool", "event"], ["Open University of Israel", "event"], ["Radboud Universiteit", "intro"], ["UMCG / Scorion", "intro"], ["University of Ferrara", "event"], ["Drieam", "unk"], ["BPP University", "event"], ["Haagse Hogeschool", "out"]], "2025 Q2": [["Teylingen College", "out"], ["MBO Amersfoort", "out"]], "2025 Q3": [["Hogeschool Rotterdam", "out"], ["Tio Business School", "in"]], "2025 Q4": [["Sport & People", "in"], ["TU Eindhoven", "in"], ["CMS Vocational Training", "in"]], "2026 Q1": [["Bath Spa University", "event"], ["Graafschap College", "event"]], "2026 Q2": [["Queen's University Belfast", "out"], ["University of Sunderland in London", "in"], ["TU Delft", "out"], ["Goldsmiths, University of London", "in"], ["North-West University", "event"], ["ICM Opleidingen", "event"], ["Rijksuniversiteit Groningen", "in"]], "2026 jul": [["Capabel Onderwijs", "in"], ["CMI Ireland", "in"]], "2026 aug": [["HBMSU", "in"], ["University of Bristol", "in"], ["Business School Notenboom", "out"], ["LSBF", "intro"], ["Windesheim", "in"], ["Breederode Hogeschool", "out"], ["Universal Technical Institute", "in"], ["UADE", "event"], ["Business School Nederland", "out"]], "2026 sep": [["Hogeschool van Amsterdam", "in"], ["Academica", "out"], ["Concorde Career College", "intro"]], "2026 okt": [["PHOV", "out"], ["Universiteit Tilburg / SURF", "out"], ["CEI", "in"], ["Learnforwork", "in"], ["Santa Monica College", "in"]]};
+
+// start = maandindex vanaf jan 2025, months = lengte van de periode
 const PERIODS = [
-  { label: "Q1",  year: 2025, start: 0,  months: 3, out: 2,  in: 2, event: 1, intro: 1 },
-  { label: "Q2",  year: 2025, start: 3,  months: 3, out: 3,  in: 2, event: 1, intro: 1 },
-  { label: "Q3",  year: 2025, start: 6,  months: 3, out: 2,  in: 1, event: 1, intro: 1 },
-  { label: "Q4",  year: 2025, start: 9,  months: 3, out: 3,  in: 2, event: 2, intro: 1 },
-  { label: "Q1",  year: 2026, start: 12, months: 3, out: 4,  in: 3, event: 1, intro: 1 },
-  { label: "Q2",  year: 2026, start: 15, months: 3, out: 4,  in: 3, event: 2, intro: 1 },
-  { label: "jul", year: 2026, start: 18, months: 1, out: 1,  in: 1, event: 0, intro: 1 },
-  { label: "aug", year: 2026, start: 19, months: 1, out: 5,  in: 2, event: 1, intro: 1 },
-  { label: "sep", year: 2026, start: 20, months: 1, out: 8,  in: 3, event: 2, intro: 1 },
-  { label: "okt", year: 2026, start: 21, months: 1, out: 11, in: 4, event: 2, intro: 2 },
+  { id: "2025 Q1", label: "Q1", year: 2025, start: 0,  months: 3 },
+  { id: "2025 Q2", label: "Q2", year: 2025, start: 3,  months: 3 },
+  { id: "2025 Q3", label: "Q3", year: 2025, start: 6,  months: 3 },
+  { id: "2025 Q4", label: "Q4", year: 2025, start: 9,  months: 3 },
+  { id: "2026 Q1", label: "Q1", year: 2026, start: 12, months: 3 },
+  { id: "2026 Q2", label: "Q2", year: 2026, start: 15, months: 3 },
+  { id: "2026 jul", label: "jul", year: 2026, start: 18, months: 1 },
+  { id: "2026 aug", label: "aug", year: 2026, start: 19, months: 1 },
+  { id: "2026 sep", label: "sep", year: 2026, start: 20, months: 1 },
+  { id: "2026 okt", label: "okt", year: 2026, start: 21, months: 1, live: true },
 ];
-PERIODS.forEach(p => p.total = SOURCES.reduce((s, x) => s + p[x.key], 0));
+PERIODS.forEach(p => {
+  p.leads = LEADS[p.id] || [];
+  p.total = p.leads.length;
+  SOURCES.forEach(s => p[s.key] = p.leads.filter(l => l[1] === s.key).length);
+});
 
 const fmt = n => n.toLocaleString("nl-NL", { maximumFractionDigits: 1 });
 const sum = (arr, k) => arr.reduce((s, p) => s + p[k], 0);
 
-// KPI's
-const y2025 = PERIODS.filter(p => p.year === 2025);
-const sinceAug = PERIODS.filter(p => p.year === 2026 && p.start >= 19);
-const avg2025 = sum(y2025, "total") / 12;
-const avgAug = sum(sinceAug, "total") / sinceAug.length;
-const last = PERIODS[PERIODS.length - 1];
+// Voor en na 1 juli 2026. Oktober telt t/m 16 okt, dus de periode sinds juli is 3,5 maand.
+const before = PERIODS.filter(p => p.start < 18);
+const after = PERIODS.filter(p => p.start >= 18);
+const nBefore = sum(before, "total"), nAfter = sum(after, "total");
+const avgBefore = nBefore / 18;
+const avgAfter = nAfter / 3.5;
+const factor = Math.round(avgAfter / avgBefore * 10) / 10;
+
 document.getElementById("kpis").innerHTML = `
-  <div class="kpi"><div class="n">${fmt(avg2025)}</div><div class="l">per maand in 2025</div></div>
-  <div class="kpi"><div class="n">${fmt(avgAug)}</div><div class="l">per maand sinds augustus 2026</div></div>
-  <div class="kpi"><div class="n">${last.total}</div><div class="l">in oktober 2026</div></div>`;
+  <div class="kpi lead"><div class="n">${fmt(avgAfter)}<span class="x">${fmt(factor)}x zo veel</span></div><div class="l">per maand sinds 1 juli 2026</div></div>
+  <div class="kpi"><div class="n">${fmt(avgBefore)}</div><div class="l">per maand, jan 2025 t/m jun 2026</div></div>
+  <div class="kpi"><div class="n">${nBefore + nAfter}</div><div class="l">gestart sinds januari 2025, waarvan ${nAfter} sinds juli</div></div>`;
 
 document.getElementById("legend").innerHTML = SOURCES.map(s =>
   `<span><i class="sw" style="background:${s.color}"></i>${s.label}</span>`).join("");
 
 // Grafiek
-const W = 880, H = 360, M = { t: 24, r: 8, b: 56, l: 32 };
+const W = 880, H = 380, M = { t: 40, r: 8, b: 56, l: 28 };
 const totalMonths = 22;
 const iw = W - M.l - M.r, ih = H - M.t - M.b;
-const yMax = 20;
+const yMax = 10;
 const x = m => M.l + (m / totalMonths) * iw;
 const y = v => M.t + ih - (v / yMax) * ih;
 const GAP = 4;
-let svg = "";
-for (let v = 0; v <= yMax; v += 5) {
+let svg = ``;
+
+// band sinds juli
+svg += `<rect class="band" x="${x(18)}" y="${M.t - 32}" width="${x(22) - x(18) + M.r}" height="${ih + 32}" rx="8"/>`;
+svg += `<text class="band-t" x="${x(18) + 8}" y="${M.t - 14}">Per maand, <tspan class="avg-t-after">gem. ${fmt(avgAfter)}</tspan></text>`;
+svg += `<text x="${x(18) - 8}" y="${M.t - 14}" text-anchor="end">Per kwartaal, gemiddeld per maand. <tspan class="avg-t">Gem. ${fmt(avgBefore)}</tspan></text>`;
+
+for (let v = 0; v <= yMax; v += 2) {
   svg += `<line class="${v ? "grid" : "base"}" x1="${M.l}" x2="${W - M.r}" y1="${y(v)}" y2="${y(v)}"/>`;
   svg += `<text x="${M.l - 8}" y="${y(v) + 4}" text-anchor="end">${v}</text>`;
 }
-// overgang kwartaal naar maand
-svg += `<line class="divider" x1="${x(18)}" x2="${x(18)}" y1="${M.t - 8}" y2="${M.t + ih}"/>`;
-svg += `<text x="${x(18) + 6}" y="${M.t - 4}">per maand</text>`;
-svg += `<text x="${x(18) - 6}" y="${M.t - 4}" text-anchor="end">per kwartaal, gemiddeld per maand</text>`;
 
 PERIODS.forEach((p, i) => {
   const x0 = x(p.start) + GAP / 2, x1 = x(p.start + p.months) - GAP / 2, w = x1 - x0;
@@ -189,14 +223,23 @@ PERIODS.forEach((p, i) => {
   SOURCES.forEach(s => {
     const v = p[s.key] / p.months;
     if (!v) return;
-    svg += `<rect class="seg" x="${x0}" y="${y(acc + v)}" width="${w}" height="${y(acc) - y(acc + v)}" style="fill:${s.color}"/>`;
+    svg += `<rect class="seg${s.key === "unk" ? " unk" : ""}" x="${x0}" y="${y(acc + v)}" width="${w}" height="${y(acc) - y(acc + v)}" style="fill:${s.color}"/>`;
     acc += v;
   });
-  svg += `<text class="val" x="${x0 + w / 2}" y="${y(acc) - 8}" text-anchor="middle">${fmt(acc)}</text>`;
-  svg += `<text x="${x0 + w / 2}" y="${M.t + ih + 18}" text-anchor="middle" style="fill:var(--fg)">${p.label}</text>`;
+  p.x0 = x0; p.w = w; p.top = acc;
+  svg += `<text class="lbl" x="${x0 + w / 2}" y="${M.t + ih + 18}" text-anchor="middle">${p.label}</text>`;
   if (p.months > 1) svg += `<text x="${x0 + w / 2}" y="${M.t + ih + 34}" text-anchor="middle">${p.total} totaal</text>`;
+  if (p.live) svg += `<text x="${x0 + w / 2}" y="${M.t + ih + 34}" text-anchor="middle">t/m 16 okt</text>`;
   svg += `<rect class="hit" x="${x0}" y="${M.t}" width="${w}" height="${ih}"/></g>`;
 });
+
+// gemiddelden, boven de balken en onder de waardes
+svg += `<line class="avg" x1="${x(0)}" x2="${x(18) - GAP}" y1="${y(avgBefore)}" y2="${y(avgBefore)}"/>`;
+svg += `<line class="avg-after" x1="${x(18) + GAP}" x2="${x(22)}" y1="${y(avgAfter)}" y2="${y(avgAfter)}"/>`;
+PERIODS.forEach(p => {
+  svg += `<text class="val${p.start >= 18 ? " in-band" : ""}" x="${p.x0 + p.w / 2}" y="${y(p.top) - 8}" text-anchor="middle">${fmt(p.top)}</text>`;
+});
+
 // jaartallen
 svg += `<text x="${x(6)}" y="${H - 4}" text-anchor="middle" style="font-weight:600">2025</text>`;
 svg += `<text x="${x(17)}" y="${H - 4}" text-anchor="middle" style="font-weight:600">2026</text>`;
@@ -206,32 +249,34 @@ const chart = document.getElementById("chart");
 chart.setAttribute("viewBox", `0 0 ${W} ${H}`);
 chart.innerHTML = svg;
 
-// Tooltip
+// Tooltip met de instellingen per periode
 const tip = document.getElementById("tip");
+const esc = t => t.replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 chart.querySelectorAll(".col").forEach(g => {
   const p = PERIODS[+g.dataset.i];
-  const name = p.months > 1 ? `${p.label} ${p.year}` : `${p.label} ${p.year}`;
+  const name = p.months > 1 ? `${p.label} ${p.year}` : `${p.label} ${p.year}${p.live ? " (t/m 16 okt)" : ""}`;
+  const list = SOURCES.filter(s => p[s.key]).map(s =>
+    `${s.label} (${p[s.key]}): ${p.leads.filter(l => l[1] === s.key).map(l => esc(l[0])).join(", ")}`).join("<br>");
   g.addEventListener("mousemove", e => {
-    tip.innerHTML = `<b>${name}: ${p.total} gestart</b><br>` +
-      SOURCES.map(s => `${s.label}: ${p[s.key]}`).join("<br>");
-    tip.style.left = Math.min(e.clientX + 12, innerWidth - 220) + "px";
+    tip.innerHTML = `<b>${name}: ${p.total} gestart</b><br>${list}`;
+    tip.style.left = Math.min(e.clientX + 12, innerWidth - 300) + "px";
     tip.style.top = (e.clientY + 12) + "px";
     tip.style.opacity = 1;
   });
   g.addEventListener("mouseleave", () => tip.style.opacity = 0);
 });
 
-// Bronverdeling: 2025 tegenover sinds augustus 2026
+// Bronverdeling voor en na 1 juli
 const groups = [
-  { label: "2025", periods: y2025 },
-  { label: "Sinds augustus 2026", periods: sinceAug },
+  { label: "Januari 2025 t/m juni 2026", periods: before },
+  { label: "Sinds 1 juli 2026", periods: after },
 ];
 document.getElementById("rows").innerHTML = groups.map(g => {
   const tot = sum(g.periods, "total");
-  const parts = SOURCES.map(s => ({ ...s, n: sum(g.periods, s.key) }));
+  const parts = SOURCES.map(s => ({ ...s, n: sum(g.periods, s.key) })).filter(s => s.n);
   return `<div class="row">
     <div class="head"><b>${g.label}</b><span class="muted">${tot} processen</span></div>
-    <div class="bar">${parts.map(s => `<div style="flex:${s.n};background:${s.color}" title="${s.label}: ${s.n}"></div>`).join("")}</div>
+    <div class="bar">${parts.map(s => `<div style="flex:${s.n};background:${s.color}${s.key === "unk" ? ";box-shadow:inset 0 0 0 1px var(--border-strong)" : ""}" title="${s.label}: ${s.n}"></div>`).join("")}</div>
     <div class="parts">${parts.map(s => `<span>${s.label} ${s.n} (${Math.round(s.n / tot * 100)}%)</span>`).join("")}</div>
   </div>`;
 }).join("");
