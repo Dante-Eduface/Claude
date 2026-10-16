@@ -24,9 +24,9 @@ Het is dus meer dan schriftelijke feedback en nakijken: mondeling toetsen hoort 
 
 Noem je een cijfer of een klantervaring, zeg er altijd bij welke van de twee je bedoelt. Ze door elkaar halen maakt elk getal waardeloos.
 
-## Pivot augustus 2026
+## Switch naar privaat onderwijs, augustus 2026
 
-Op 1 augustus 2026 heeft Eduface een pivot gemaakt (Dante, 16-10-2026). Sindsdien rapporteren we gestarte salesprocessen per maand, zie `GTM/Salesprocessen/`. Wat de pivot inhoudt: OPEN, zie `Context/open-vragen.md` (W6).
+Op 1 augustus 2026 verlegde Eduface de focus van publiek naar privaat onderwijs (Dante, 16-10-2026). Noem het "de switch naar privaat onderwijs", niet "pivot". Sindsdien rapporteren we eerste meetings per maand, zie `GTM/Salesprocessen/`.
 
 ## Aan wie we verkopen
 

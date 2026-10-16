@@ -22,7 +22,6 @@ De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat 
 | A9 | Waar landt dat schrijven? Apple Notes, een schrift, of een bestand in deze repo? | In de repo betekent dat ik het kan lezen en je context vanzelf actueel blijft. Een schrift is sneller op een trein. Jouw keuze. | 20-09-2026 |
 | A7 | Verhuist schoonmaken van zaterdag 16:00 naar zondag 15:00? | Dan staat alles met het huis op de thuisdag. Boodschappen blijven bewust op zaterdag, een dag voor het koken. | 19-09-2026 |
 | W4 | Wanneer komt de NPS-meting op Enterprise er? | Tot die er is staat het doel in `current-priorities.md` als niet stuurbaar. Dante weet het nog niet. | 19-09-2026 |
-| W6 | Wat hield de pivot van 1 augustus 2026 in? Andere doelgroep, ander aanbod, andere salesaanpak? | Staat nu als ankerpunt in de groeigrafiek. Wie hem leest, vraagt wat er veranderde. | 16-10-2026 |
 | W5 | Na twee weken deep work: welk weektarget zetten we vast? | Het schema staat op 28 uur. De eerste twee weken zijn een nulmeting. | Vanaf 03-10-2026 |
 | P11 | Wordt de vaardigheid van dit jaar "een bericht schrijven waar iemand op reageert"? | Dat volgt uit A5: als de maat geboekte gesprekken is, is dat de vaardigheid die hem bepaalt. | 19-09-2026 |
 | G15 | De actuele standen van je potjes. Je levert hier een nieuw bestand voor. | `Context/financien.md` noemt bewust geen bedragen tot dat er is. | 19-09-2026 |
@@ -54,6 +53,7 @@ Blijft staan zodat zichtbaar is wat er al gevraagd is. Alles hieronder is op 19-
 
 | Vraag | Antwoord | Waar het nu staat |
 |---|---|---|
+| Wat hield de pivot van 1 augustus 2026 in? (W6, 16-10-2026) | De switch van publiek naar privaat onderwijs. | `Context/eduface.md` |
 | Azure en Google Cloud, EU-only? (V2) | Microsoft, Google en Railway werken voor Eduface alleen met EU-infrastructuur. Uitspraak over wat Amerikaans recht daarvoor betekent is er niet. | `.claude/skills/privacy-it/platform-privacykennis.md` |
 | Wordt er getraind op studentdata? (V3, deels) | Nee, nooit. | `.claude/skills/privacy-it/platform-privacykennis.md` |
 | Bevat feedback persoonsgegevens? (V4) | Het model zet er geen in. Zet een docent er zelf een persoonsgegeven in, dan staat het er wel. | `.claude/skills/privacy-it/platform-privacykennis.md` |
