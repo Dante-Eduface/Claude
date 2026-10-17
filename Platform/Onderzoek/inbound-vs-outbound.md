@@ -33,18 +33,16 @@ De vraag is niet inbound óf outbound, maar hoe je ze aan elkaar knoopt. Dat is 
 
 ## Onze eigen data (Close, 17-10-2026)
 
-Bron is ingevuld bij 69 leads. "Afspraak gepland" telt als inbound (Dante, 17-10-2026).
+Bron is ingevuld bij 69 leads.
+
+**Onze definitie (Dante, 17-10-2026):** inbound = Inbound, Afspraak gepland en PLG. Alle andere bronnen tellen als outbound, dus ook webinar, beurs en doorverwijzing. Dat wijkt af van de gangbare theorie hierboven (die noemt webinars hybride en doorverwijzingen inbound). Voor onze cijfers geldt onze definitie.
 
 | Bron | Leads |
 |---|---|
-| Inbound (Inbound 1 + Afspraak gepland 5) | 6 |
-| Webinar | 30 |
-| Beurs | 9 |
-| Outbound (cold call 4, cold email 5, LinkedIn 5) | 14 |
-| Doorverwijzing | 5 |
-| PLG | 5 |
+| **Inbound** (Inbound 1, Afspraak gepland 5, PLG 5) | **11** |
+| **Outbound** (webinar 30, beurs 9, cold call 4, cold email 5, LinkedIn 5, doorverwijzing 5) | **58** |
 
-Gewonnen: 1 deal, Breederode, bron cold call. Te weinig deals om conversie per bron te meten. Dit getal wordt pas bruikbaar als het Bron-veld bij elke nieuwe lead wordt ingevuld.
+Ongeveer 1 op 6 leads met een bekende bron is inbound. Gewonnen: 1 deal, Breederode, bron cold call, dus outbound. Te weinig deals om conversie per bron te meten. Dit getal wordt pas bruikbaar als het Bron-veld bij elke nieuwe lead wordt ingevuld.
 
 ## Waar bronnen elkaar tegenspreken
 
