@@ -2,193 +2,438 @@
 
 _Laatst bijgewerkt: 2026-10-18._
 
-Bron: het ICP-document (particuliere instellingen, klein tot middelgroot en groot) plus wat particuliere opleiders zelf in Close zeiden (`GTM/ICP/pijn-oplossing/items.json`, segment `particulier`). Productclaims komen alleen uit `Platform/product.md`.
-
-**Bronnamen hieronder zijn intern.** TIO Business School en ICM Opleidingen nooit naar buiten noemen.
-
-Labels bij elke oplossing:
-- **[product]** = staat in `Platform/product.md`, mag je zo zeggen
-- **[aanbod]** = een belofte die wij erbij doen (inrichting, sessie, garantie). Bestaat pas als Jeroen akkoord is, zie S1 in `Context/open-vragen.md`
-
----
-
-## De waardevergelijking in één regel
+Voor wie: **beslissers bij particuliere onderwijsinstellingen** (directeur, opleidingsmanager, hoofd onderwijsbureau). De ICP staat in het ICP-document. Productclaims komen alleen uit `Platform/product.md`.
 
 **Waarde = (droomuitkomst x waargenomen kans) / (tijd tot resultaat x moeite)**
 
-Bovenkant omhoog, onderkant omlaag. Focus op de onderkant, die is het makkelijkst te verlagen. Bij deze ICP geldt extra: de onderkant is hun grootste angst. Bijna elk "nee" in Close was een tijd- of moeite-nee ("timing", "geen capaciteit", "na de audit"), geen "het werkt niet".
+Labels bij elke optie:
+- **[product]** staat in `Platform/product.md` en mag je zo zeggen
+- **[aanbod]** is een belofte van ons (een sessie, inrichting, een garantie). Pas geldig na akkoord van Jeroen (S1 in `Context/open-vragen.md`)
+- **[bouwen]** bestaat nog niet en moet in de tool of als systeem gebouwd worden
 
 ---
 
-## 1. De droomuitkomst
+## 1. Droomuitkomst (nog te kiezen)
 
-### Wat ze echt willen (uit hun eigen woorden)
+Formule: *We helpen [beslissers bij particuliere opleiders] [uitkomst] in [tijd] zonder [pijn].*
 
-Niet "tijd besparen". Twee opleiders zeiden letterlijk dat tijdwinst geen prioriteit is. Wat wel terugkomt:
+1. We helpen directeuren van particuliere opleiders meer deelnemers in te schrijven met hetzelfde docententeam, binnen één onderwijsperiode, zonder extra docenten in te huren. **(voorkeur)**
+2. We helpen directeuren van particuliere opleiders bij elke visitatie en elk bezwaar te laten zien hoe een cijfer tot stand kwam, binnen 30 dagen, zonder extra kalibratiesessies.
+3. We helpen opleidingsmanagers elke deelnemer binnen 5 werkdagen feedback te geven, vanaf de eerste opdracht, zonder dat docenten er een uur extra aan kwijt zijn.
+4. We helpen directeuren van particuliere opleiders elke deelnemer dezelfde beoordeling te geven, welke ZZP-docent ook nakijkt, binnen één onderwijsperiode, zonder dat docenten een nieuw systeem moeten leren.
 
-- **Elk cijfer is te verantwoorden.** Bij de examencommissie, de NVAO/visitatie, en de student die bezwaar maakt. Nu controleren ze steekproefsgewijs en horen ze het pas bij een klacht.
-- **Elke deelnemer krijgt dezelfde kwaliteit feedback**, ongeacht welke (ZZP-)docent nakijkt. "De ene geeft een 7, de ander een 6 voor identiek werk."
-- **Feedback binnen de beloofde termijn.** Nu wordt die termijn niet altijd gehaald.
-- **Deelnemers die doorstromen.** Deelnemers betalen, doorstroom is omzet. Altijd verzachten: "kan uitval tegengaan", nooit beloven.
-
-### De specifieke droomuitkomst
-
-> Elke deelnemer krijgt per opdracht feedback die past bij jullie eisenkader en jullie niveau, binnen de beloofde termijn, en elk cijfer heeft een uitlegbare opbouw per criterium waar de docent voor getekend heeft.
-
-### De formule, per subsegment
-
-**Klein tot middelgroot (NL)**
-> We helpen particuliere opleiders met een onderwijskundig AI-model dat feedback en cijfervoorstellen schrijft volgens jullie eigen beoordelingscriteria, zodat elke deelnemer dezelfde kwaliteit feedback krijgt, ongeacht welke docent nakijkt, vanaf de eerste inleverronde, zonder dat je docenten een nieuw systeem moeten leren of AI het laatste woord krijgt.
-
-**Groot, meerdere merken of vestigingen (NL)**
-> We helpen grote particuliere opleiders met een onderwijskundig AI-model dat elk cijfer een uitlegbare opbouw per criterium geeft, zodat je bij elke visitatie en elk bezwaar kunt laten zien hoe een beoordeling tot stand kwam, binnen één onderwijsperiode, zonder een aanbesteding, een maandenlange implementatie of studentdata bij big tech.
-
-**UK (large private providers: BPP, Kaplan, QA, University of Law)**
-> We help private providers give every learner consistent, criterion-level feedback, whichever marker picks up the script, from the very first submission window, without asking markers to learn a new system or letting AI make the final call.
-
-Kortere variant voor een connectieverzoek of onderwerpregel:
-> Dezelfde feedback van elke docent, vanaf de eerste opdracht, zonder nieuw systeem.
-
-**Over de tijdsperiode:** "vanaf de eerste inleverronde" en "binnen één onderwijsperiode" zijn veilig, want ze hangen aan hun eigen ritme en niet aan een getal. Een harde termijn ("binnen 14 dagen live") is sterker, maar die moeten we kunnen waarmaken. Staat als S2 in `Context/open-vragen.md`.
+Termijnen (30 dagen, 5 werkdagen, één periode) zijn niet bevestigd, zie S2.
 
 ---
 
-## 2. Alle obstakels, ingedeeld
+## 2. De problemen
 
-D = droomuitkomst · K = kans dat ze het bereiken · T = tijd tot resultaat · M = moeite
+Vastgesteld door Dante op 18-10-2026. D = droomuitkomst · K = kans · T = tijd · M = moeite
 
-| # | Obstakel (zoals zij het zien) | Var. | Waar het vandaan komt |
-|---|---|---|---|
-| 1 | Het beoordelingsformulier moet AI-proof gemaakt worden, het model instrueren is werk | M | jouw lijst, UvA Minds (criteria herschrijven) |
-| 2 | Goede criteria schrijven is lastig, en wij hebben ze niet strak liggen | M | Breederode |
-| 3 | Tijd reserveren voor een live training | T | jouw lijst |
-| 4 | Docenten moeten een nieuw platform leren | M | jouw lijst |
-| 5 | Onze ZZP-docenten willen geen extra voorbereidingsuren | M | Notenboom, Breederode |
-| 6 | Het onderwijsbureau moet het inrichten en heeft daar geen tijd voor | M | Notenboom |
-| 7 | We moeten studenten uitleggen dat er AI-feedback komt | M | jouw lijst |
-| 8 | Docenten overtuigen is te moeilijk, er zit altijd een kritische stem | K | jouw lijst, Breederode ("hallucineren") |
-| 9 | De adoptie onder docenten wordt te laag | K | jouw lijst |
-| 10 | AI snapt ons vak niet, de feedback past niet bij de opdracht of het niveau | K | Breederode |
-| 11 | Zwarte doos, er worden fouten gemaakt die we niet zien | K | Notenboom |
-| 12 | AI komt tussen docent en deelnemer in | K | Capabel |
-| 13 | Past niet bij onze visie, wij beoordelen holistisch, niet per puntje | K | Capabel |
-| 14 | Studenten vertrouwen AI-feedback niet | K | eigen toevoeging |
-| 15 | Kan dit niet gewoon met Copilot? | K | UvA Minds |
-| 16 | Privacy en legal: AVG, verwerkersovereenkomst, waar staat de data | K + T | Notenboom, Noordhoff, ICM |
-| 17 | We zijn te klein, het loont niet voor ons volume | D | SDO, Capabel |
-| 18 | Tijdwinst is niet wat we zoeken | D | Capabel, TIO |
-| 19 | We zien niet wat het oplevert, geen zicht op kosten en rendement | D | Noordhoff, Breederode |
-| 20 | De droomuitkomst duurt te lang | T | jouw lijst |
-| 21 | Verkeerde timing: te veel projecten, fusie, audit eerst | T | Babel, NOVI, SDO, ICM |
-| 22 | Twee maanden aanlooptijd voor we kunnen starten | T | Notenboom |
-| 23 | Budget is vastgelegd tot het volgende studiejaar | T | Notenboom |
-| 24 | We moeten eerst een business case maken voor de directie of holding | M + T | Breederode |
-| 25 | Een prijs per docent past niet bij veel parttimers | M | TIO |
-| 26 | Kalibratiesessies kosten nu al te veel tijd, en dit komt erbij | M | Breederode |
-| 27 | Inkoop loopt centraal via de moedergroep | T | UK-groep in Close |
+| # | Probleem | Var. |
+|---|---|---|
+| P1 | Tijd reserveren om het beoordelingsformulier AI-proof te maken | M |
+| P2 | Tijd reserveren om de feedback te laten klinken zoals de docent hem zelf schrijft | M |
+| P3 | Een nieuw platform leren kennen | M |
+| P4 | Studenten informeren over AI-beoordeling | M |
+| P5 | Alle docenten meekrijgen | K |
+| P6 | Zorgen dat alle docenten het blijven gebruiken | K |
+| P7 | Bewijzen dat het model kwalitatieve feedback geeft op hún specifieke opdrachten | K |
+| P8a | Beslisser: docenten verliezen zicht op hun deelnemers | K |
+| P8b | Docent: mijn rol in het beoordelen wordt kleiner | K |
+| P9 | Wat maakt jullie uniek ten opzichte van een ander AI-model | K |
+| P10 | Hoe gaan jullie om met gevoelige data | K |
+| P11 | We hebben niet heel veel opdrachten die nagekeken moeten worden | D |
+| P12 | Tijdwinst is een bijkomstigheid, niet waar we naar zoeken | D |
+| P13 | Het is niet duidelijk hoe jullie unieke punten onze pijn oplossen | D |
+| P14 | Het verminderen van uitval duurt te lang | T |
+| P15 | Te groot project om naast onze huidige projecten te starten | M + T |
+| P16 | Het budget is al vastgesteld voor dit jaar | T |
 
-**Wat opvalt:** 13 van de 27 zitten aan de onderkant (T of M). En de K-obstakels gaan bijna allemaal over één angst: de controle kwijtraken. Daar heeft het product al het antwoord op, "The AI assists. The academic decides."
+**Wat opvalt:** P1 tot en met P6 en P15 zijn allemaal hetzelfde soort probleem, onze tijd tegen hun tijd. Wie die zeven goed oplost, heeft het grootste deel van de onderkant gedaan.
 
 ---
 
-## 3. Per obstakel een antwoord
+## 3. Opties per probleem
 
-Geformuleerd zoals je het tegen ze zegt. Eerst laten zien dat je de zorg snapt, dan het antwoord.
+Groepen: **1** schaal (1-op-1, kleine groep, grote groep) · **2** wie doet het werk (uitbesteed, samen, zelfstandig) · **3** support (mail, telefoon, videocall, AI-agent, op locatie) · **4** vorm (live, video, tekst, audio) · **5** wanneer en hoe snel. Een groep die niet past bij het probleem is weggelaten.
 
-### Moeite omlaag
+### P1. Het beoordelingsformulier AI-proof maken (M)
 
-**1. Beoordelingsformulier AI-proof maken**
-> Je hoeft niks om te bouwen. Je geeft ons de opdracht, je beoordelingscriteria en hoe je de feedback wilt hebben, en wij richten het model in. Jij kijkt alleen of het klopt. **[product: drie dingen aanleveren]** **[aanbod: wij doen de inrichting]**
+*Wat ze denken: "Ons formulier is niet gemaakt voor AI, dat ombouwen is een project."*
 
-**2. Criteria zijn niet strak**
-> Geen strakke rubric? Geen probleem. Eduface maakt er een uit je opdrachtbeschrijving, en die pas je aan tot hij klopt met hoe jullie beoordelen. **[product]**
+**1. Schaal**
+- 1-op-1: Dante zit live naast de docent en geeft feedback op het formulier terwijl hij het invult. Hoogste waarde, kost het meeste tijd.
+- Kleine groep: één meeting per docent om het uit te leggen, daarna doet hij het in zijn eigen tijd.
+- Grote groep: een kalibratiemodus in de tool **[bouwen]**, een opname, en kant-en-klare voorbeelden per vakmodel. Eerst vraagt de docent het aan de AI, dan aan een getrainde collega, en pas daarna aan ons.
 
-**4. Nieuw platform leren**
-> Je deelnemers leveren in zoals altijd, in jullie eigen LMS. Cijfers en feedback gaan daar ook weer naartoe. Je docent opent het, leest het voorstel en keurt goed of past aan. **[product]**
+**2. Wie doet het werk**
+- Uitbesteed: de klant stuurt opdracht, criteria en instructies, en wij leveren het ingerichte formulier terug. **[aanbod]**
+- Samen: één sessie waarin we de eerste opdracht samen inrichten, daarna doen ze de volgende zelf.
+- Zelfstandig: de docent levert drie dingen aan (opdracht, rubric, feedbackinstructies). Heeft hij geen rubric, dan maakt Eduface er een. **[product]**
 
-**5. ZZP-docenten zonder extra uren**
-> Je docenten hoeven niks voor te bereiden. De inrichting doen wij met één persoon van jullie. De docent leest het voorstel en tekent af: bij Bath Spa kostte dat 2 tot 3 minuten per inzending. **[product: Bath Spa-cijfer]** **[aanbod: inrichting]**
+**3. Support**
+- Mail met een vaste reactietijd, videocall op afspraak, en een AI-agent in de tool die uitlegt waarom een criterium onduidelijk is voor het model. **[bouwen]**
 
-**6. Onderwijsbureau heeft geen tijd**
-> Het bureau hoeft het niet zelf te doen. Wij richten de eerste opdrachten in, het bureau keurt goed. Zo kost het jullie een uur, geen project. **[aanbod]**
+**4. Vorm**
+- Een video van 3 minuten: "een formulier AI-proof maken".
+- Een checklist van één A4: wat een criterium voor het model leesbaar maakt.
+- Een voorbeeldformulier, voor en na.
 
-**7. Studenten uitleggen**
-> Je krijgt van ons een kort bericht voor je deelnemers dat je zo kunt doorsturen. En in de feedback zelf staat "Lecturer + AI", dus ze zien dat hun docent elk punt gelezen heeft. **[product: label]** **[aanbod: bericht]**
+**5. Wanneer en hoe snel**
+- Een ingestuurd formulier staat binnen 2 werkdagen ingericht klaar. **[aanbod]** (termijn S2)
 
-**24. Business case voor de directie**
-> De business case maken wij, met jullie eigen aantallen. Jij hoeft hem alleen voor te leggen. **[aanbod]**
+**10x (30 per student per maand)**
+- Een vaste kalibratie-expert per instelling die alle formulieren van alle opleidingen ombouwt, plus een rapport "zo leest de AI jullie formulier", met verbeterpunten die ze ook zonder AI beter maken. Ze kopen dan een beter beoordelingsbeleid, niet een tool.
 
-**25. Prijs per docent**
-> We rekenen per deelnemer, niet per docent. Hoeveel parttimers je hebt maakt dus niet uit. **[product: prijsmodel]** Prijs altijd uit `GTM/Pricing/prijsmodel-psu-26-27.md`.
+**10/1 (0,30 per student per maand)**
+- Een formulier-checker in de tool die bij het uploaden zegt welke criteria te vaag zijn en een betere formulering voorstelt. Eén keer bouwen. **[bouwen]**
+- Een bibliotheek met goedgekeurde formulieren per vakmodel om op voort te bouwen.
 
-**26. Kalibratie kost al te veel tijd**
-> Dit vervangt een deel van dat werk. Het grader comparison dashboard laat in één oogopslag zien welke beoordelaar afwijkt, zonder dat je losse inzendingen naloopt. **[product]**
+### P2. De feedback laten klinken zoals de docent hem schrijft (M)
 
-### Tijd omlaag
+*Wat ze denken: "Het duurt eeuwen voor het klinkt als ik."*
 
-**3. Tijd voor een live training** (jouw voorbeeld, aangescherpt)
-> We plannen een 1-op-1 van 15 minuten, op de dag en het tijdstip dat jou uitkomt. Daarna weet je hoe je Eduface inzet, en geef je met hulp van AI sneller feedback waar je trots op bent. **[aanbod]**
+**1. Schaal**
+- 1-op-1: de docent levert 3 eigen feedbacks aan, wij stemmen live af tot hij zegt "dit had ik kunnen schrijven".
+- Kleine groep: per opleiding één stemprofiel dat alle docenten delen.
+- Grote groep: elke docent stelt zelf een stem in met schuifjes (toon, lengte, direct of coachend). **[bouwen]**
 
-Wat ik veranderde: korter, en "voortaan" eruit. De belofte is 15 minuten, dat moet het zwaarst landen.
+**2. Wie doet het werk**
+- Uitbesteed: de docent stuurt eerder gegeven feedback in, wij zetten de feedbackinstructies op. **[aanbod]**
+- Samen: de docent beoordeelt 5 voorstellen, en wij passen de instructies aan op zijn correcties.
+- Zelfstandig: de docent bepaalt in de feedbackinstructies hoe de feedback geformuleerd wordt. **[product]**
 
-**20. De droomuitkomst duurt te lang**
-> Je ziet het resultaat bij de eerste inleverronde, niet na een jaar. We beginnen met één opdracht, en je deelnemers krijgen feedback zodra hun docent hem heeft goedgekeurd. **[product]** Harde termijn: S2.
+**3. Support**
+- Een AI-agent in de tool: de docent zegt "korter" of "minder formeel" en de instructie past zich aan. **[bouwen]**
 
-**21. Verkeerde timing, audit eerst**
-> Juist voor een audit helpt het. Elke summatieve beoordeling heeft een audit trail die voldoet aan de AI Act en een uitlegbare cijferopbouw per criterium, dat is precies wat een visitatie vraagt. **[product]**
-> Te veel projecten? We beginnen met één opdracht bij één opleiding. Dat past naast wat er al loopt. **[aanbod: pilotvorm]**
+**4. Vorm**
+- Video: dezelfde inzending met drie verschillende stemmen.
 
-**22. Twee maanden aanlooptijd**
-> Die aanlooptijd zit in de inrichting, en die nemen wij over. **[aanbod]**
+**5. Wanneer en hoe snel**
+- Elke aanpassing is direct zichtbaar bij de volgende inzending.
 
-**23. Budget vastgelegd**
-> Start met een pilot op één opdracht dit studiejaar, dan heb je de resultaten in handen als het nieuwe budget gemaakt wordt. **[aanbod]** Pilotprijs met Jeroen afstemmen.
+**10x**
+- Het model leert van elke correctie van de docent, zodat het na een periode schrijft zoals hij. Plus een maandrapport: "zo vaak paste je de feedback aan, en zo vaak hoefde dat niet meer". **[bouwen]** Niet beweren tot het bestaat.
 
-**16. Privacy en legal** (ook K)
-> De verwerkersovereenkomst en het securitypakket liggen klaar, je legal team kan ze meteen doornemen. Studentdata gaat niet naar big tech: het is een eigen model, geen API van OpenAI of Anthropic. Jullie data blijft van jullie en er wordt niet op getraind. **[product]** Hosting zeg je als "EU", niet "Nederland" (V1). Details via `/privacy-it`.
+**10/1**
+- Een stembibliotheek met 10 vaste profielen (bijvoorbeeld "coachend HBO", "zakelijk beroepsopleiding"). De docent kiest er een en past hem alleen nog aan.
 
-**27. Inkoop via de moedergroep**
-> Begin bij één merk, dan heeft de groep bewijs uit eigen huis voor ze centraal beslissen. **[aanbod]**
+### P3. Een nieuw platform leren kennen (M)
 
-### Kans omhoog
+*Wat ze denken: "Weer een systeem erbij."*
 
-**8. Docenten overtuigen** en **9. lage adoptie**
-> Laat je docenten het zelf toetsen. Ze leveren werk in dat ze al beoordeeld hebben en zien hun eigen cijfer naast het voorstel van het model. Dan gaat het niet meer over of AI het kan, maar over hoe dicht het bij hen zit. **[aanbod: vergelijkingstest]**
-> En de docent hoeft niks uit handen te geven: AI stelt voor, de docent tekent af. **[product]**
+**1. Schaal**
+- 1-op-1: 15 minuten, op de dag en het tijdstip dat de docent uitkomt.
+- Kleine groep: een kick-off van 30 minuten per opleiding.
+- Grote groep: een opgenomen demo plus een rondleiding in de tool zelf bij de eerste keer inloggen. **[bouwen]**
 
-**10. AI snapt ons vak niet**
-> Het is geen generiek model. Er zijn zes vakmodellen, elk getraind op de conventies van zijn eigen vakgebied, en je instrueert het op je eigen opdracht. Over 435 opdrachten en 13 nakijkers kwam het uit op 94% accuraatheid, en docenten die het model hadden afgestemd op 98%. **[product]** In gesprek: definitie geven (puntenverschil, geen overeenstemmingspercentage).
+**2. Wie doet het werk**
+- Uitbesteed: de docent hoeft niets te leren. Deelnemers leveren in zoals altijd in het LMS, en de cijfers gaan daar ook weer naartoe. De docent leest alleen het voorstel en keurt het goed. **[product]**
+- Zelfstandig: een korte uitleg in de tool, verder niets.
 
-**11. Zwarte doos**
-> Elk cijfer heeft een uitlegbare opbouw per criterium, met annotaties in de tekst. Waar het model twijfelt, markeert het dat in plaats van het weg te poetsen. **[product]**
+**3. Support**
+- Een chatknop in de tool, een AI-agent die eerst antwoordt en daarna doorzet naar Dante. **[bouwen]**
 
-**12. AI tussen docent en deelnemer**
-> De docent blijft de afzender. Niks gaat naar de deelnemer voordat de docent het gelezen en goedgekeurd heeft, en jullie kiezen zelf hoeveel toezicht er is. **[product]**
+**4. Vorm**
+- Video's van 60 seconden per handeling: openen, goedkeuren, aanpassen.
 
-**13. Holistisch beoordelen**
-> De docent bepaalt hoe de feedback geformuleerd wordt. Wil je geen puntentelling maar feedback op groei, dan instrueer je het zo, en formatief kan zonder cijfer. **[product: feedbackinstructies, formatief]** Niet beweren dat het model groei over tijd volgt, dat staat niet in `product.md`.
+**5. Wanneer en hoe snel**
+- Reactie binnen een werkdag, van ma tot vr, 9 tot 5.
 
-**14. Studenten vertrouwen het niet**
-> Ze krijgen geen AI-feedback, ze krijgen feedback van hun docent die door AI is voorbereid. Dat staat er ook bij: "Lecturer + AI". **[product]**
+**10x**
+- Op locatie: Dante is de eerste inleverweek op de vestiging en kijkt de eerste ronde samen met de docenten na. Ze gaan naar huis met "dit kan ik".
 
-**15. Kan het niet met Copilot?**
-> Copilot is een algemene assistent. Dit is een onderwijskundig model, getraind op 250.000 onderwijsspecifieke feedbackvoorbeelden, dat beoordeelt tegen jullie criteria en het cijfer terugzet in het LMS. **[product]**
+**10/1**
+- Omdat alles in het LMS gebeurt, is er bijna niets te leren. Daarbovenop één set van vijf video's die voor elke klant hetzelfde is.
 
-### Droomuitkomst omhoog
+### P4. Studenten informeren over AI-beoordeling (M)
 
-**17. We zijn te klein**
-> Eerlijk antwoord: onder de 300 deelnemers per jaar zijn we niet de juiste partij. Daarboven werkt het juist goed bij een klein team, omdat je met weinig docenten veel nakijkt. **[product: drempel]**
+*Wat ze denken: "Hoe leg ik dit uit zonder dat deelnemers boos worden of het niet vertrouwen?"*
 
-**18. Tijdwinst is niet wat we zoeken**
-> Dan begin je er ook niet mee. Waar het om gaat is dat elke deelnemer dezelfde kwaliteit krijgt, welke docent er ook nakijkt, en dat je elk cijfer kunt uitleggen. Tijd is een bijeffect. **[product]**
+**2. Wie doet het werk**
+- Uitbesteed: wij leveren een kant-en-klaar bericht plus een FAQ in de huisstijl van de instelling. **[aanbod]**
+- Samen: we schrijven samen het bericht en stemmen het af op hun onderwijsvisie.
+- Zelfstandig: een sjabloon dat ze zelf aanpassen.
 
-**19. Geen zicht op wat het oplevert**
-> Bij jullie is doorstroom omzet. Snellere, consistente feedback tijdens het leren kan uitval tegengaan, en wij rekenen met jullie eigen aantallen uit wat één deelnemer meer die doorstroomt waard is. **[aanbod: business case]** Nooit beloven dat er minder deelnemers afhaken.
+**3. Support**
+- Een vaste mail voor deelnemers met vragen, of een FAQ-pagina.
+
+**4. Vorm**
+- Tekst: een bericht van een halve pagina voor de LMS-mededeling.
+- Video: 60 seconden "zo wordt jouw werk beoordeeld", die de instelling kan delen.
+- In de feedback zelf: het label "Lecturer + AI", zodat de deelnemer ziet dat zijn docent elk punt gelezen heeft. **[product]**
+
+**10x**
+- Een introductiesessie voor deelnemers, gegeven door ons, over hoe ze AI-feedback goed gebruiken om beter te schrijven. De instelling presenteert dat als extra service.
+
+**10/1**
+- Eén pakket (bericht, FAQ, video) dat voor elke klant hetzelfde is, alleen met hun logo erop.
+
+### P5. Alle docenten meekrijgen (K)
+
+*Wat ze denken: "Er zit altijd een kritische stem in het team, en die trekt de rest mee."*
+
+**1. Schaal**
+- 1-op-1: een gesprek met de kritische docent, vóór de teamsessie, om zijn bezwaar serieus te nemen.
+- Kleine groep: start met 2 of 3 docenten die al enthousiast zijn, en laat hun resultaten aan de rest zien.
+- Grote groep: een teamsessie waarin docenten hun eigen eerder beoordeelde werk naast het voorstel van het model zien. **[aanbod: vergelijkingstest]**
+
+**2. Wie doet het werk**
+- Samen: wij doen de vergelijkingstest, de opleidingsmanager kiest de docenten.
+
+**4. Vorm**
+- Live: de vergelijking in de teamsessie zelf, niet als rapport achteraf.
+- Tekst: een one-pager "wat de docent blijft doen", met de kernzin "AI stelt voor, de docent tekent af". **[product]**
+
+**10x**
+- Een accuraatheidsrapport per docent: hoe dicht het model bij zijn eigen oordeel zat, op zijn eigen werk. Dan gaat het niet meer over of AI het kan.
+
+**10/1**
+- Een standaard vergelijkingstest in de tool: upload 10 beoordeelde inzendingen, krijg het verschil per inzending terug. **[bouwen]**
+
+### P6. Zorgen dat docenten het blijven gebruiken (K)
+
+*Wat ze denken: "Na de pilot zakt het in, net als bij de vorige tool."*
+
+**1. Schaal**
+- 1-op-1: een check-in van 15 minuten na de eerste en na de derde inleverronde.
+- Kleine groep: een maandelijks halfuur per opleiding.
+- Grote groep: een dashboard voor de opleidingsmanager met wie het gebruikt en wie niet. **[bouwen]**
+
+**3. Support**
+- Een vaste contactpersoon (Dante als CSM) die zelf aan de bel trekt als het gebruik zakt.
+
+**4. Vorm**
+- Een maandmail met wat het die maand opleverde.
+
+**5. Wanneer en hoe snel**
+- Ruim voor elke inleverronde een reminder dat de opdracht klaarstaat.
+
+**10x**
+- Een kwartaalreview met de directie: gebruik, accuraatheid, afwijkingen tussen beoordelaars, en wat er volgende periode beter kan.
+
+**10/1**
+- Automatische signalen: een docent die twee rondes niets goedkeurt, krijgt vanzelf een bericht. **[bouwen]**
+
+### P7. Bewijzen dat het werkt op hún specifieke opdrachten (K)
+
+*Wat ze denken: "Bij Bath Spa misschien, maar onze opdrachten zijn anders."*
+
+**1. Schaal**
+- 1-op-1: één opdracht van de beslisser zelf, live door het model, in het eerste gesprek.
+- Kleine groep: een proef op 10 eerder beoordeelde inzendingen van één opleiding.
+- Grote groep: een pilot op één opdracht per opleiding.
+
+**2. Wie doet het werk**
+- Uitbesteed: zij sturen 10 beoordeelde inzendingen, wij leveren het verschil per inzending terug. **[aanbod]**
+
+**4. Vorm**
+- Het cijfer naast het docentcijfer, per criterium. Uitleg: accuraatheid is het puntenverschil, geen overeenstemmingspercentage.
+- Bewijs dat er al is: over 435 opdrachten en 13 nakijkers 94% accuraatheid, bij docenten die het model afstemden 98% (Bath Spa). Zes vakmodellen, dus geen generiek model. **[product]**
+
+**5. Wanneer en hoe snel**
+- De proef ligt binnen een week terug. **[aanbod]** (termijn S2)
+
+**10x**
+- Een garantie: haalt het model op hun opdracht niet een afgesproken accuraatheid na afstemming, dan betalen ze niet. **[aanbod]**
+
+**10/1**
+- Een publieke demo-omgeving waar een beslisser zelf een opdracht uploadt en het voorstel ziet, zonder ons. **[bouwen]**
+
+### P8a. Beslisser: docenten verliezen zicht op hun deelnemers (K)
+
+*Wat ze denken: "Als de AI het werk leest, kent de docent zijn deelnemers niet meer."*
+
+**2. Wie doet het werk**
+- De docent leest en keurt elk feedbackpunt goed voordat de deelnemer het ziet. Hij leest dus nog steeds alles, alleen schrijft hij niet meer vanaf nul. **[product]**
+- De instelling kiest zelf hoeveel toezicht er is: direct naar de deelnemer, of pas na goedkeuring. **[product]**
+
+**4. Vorm**
+- Een overzicht per docent van zijn deelnemers en waar ze staan. **[bouwen]** Niet beweren tot het bestaat.
+
+**10x**
+- Een overzicht per groep van de fouten die veel deelnemers maken, zodat de docent zijn les erop kan aanpassen. Dan ziet de docent meer van zijn deelnemers dan nu. **[bouwen]** Staat als differentiator in het ICP-document, niet in `product.md`.
+
+**10/1**
+- De tijd die de docent overhoudt, krijgt een vaste plek: een standaard voorstel "besteed die tijd aan één gesprek per deelnemer per periode". Kost ons niets.
+
+### P8b. Docent: mijn rol wordt kleiner (K)
+
+*Wat hij denkt: "Straks ben ik alleen nog de man die op goedkeuren klikt."*
+
+**1. Schaal**
+- 1-op-1: het gesprek over wat hij blijft doen, voordat hij de tool ziet.
+- Kleine groep: docenten die het al gebruiken vertellen het zelf aan collega's.
+
+**2. Wie doet het werk**
+- De docent bepaalt de criteria, de toon en het eindoordeel. "The AI assists. The academic decides." **[product]**
+
+**4. Vorm**
+- Het label "Lecturer + AI" maakt voor de deelnemer zichtbaar dat de docent de afzender is. **[product]**
+
+**10x**
+- De docent wordt erkend als "kalibratie-expert" van zijn opleiding. Hij stelt het model af voor collega's en krijgt daar een rol en een titel voor.
+
+**10/1**
+- Een korte video van een docent die het gebruikt: wat hij nu doet met de tijd die vrijkwam.
+
+### P9. Wat maakt jullie uniek ten opzichte van een ander AI-model (K)
+
+*Wat ze denken: "Kan dit niet gewoon met Copilot of ChatGPT?"*
+
+**4. Vorm**
+- Tekst, één A4, naast elkaar: algemene assistent tegenover Eduface. **[product]**
+  - Een eigen model, geen API van OpenAI, Anthropic of een ander foundation model.
+  - Getraind op 250.000 onderwijsspecifieke feedbackvoorbeelden.
+  - Zes vakmodellen.
+  - Beoordeelt tegen hun criteria, met uitlegbare cijferopbouw.
+  - Het cijfer gaat terug naar het LMS.
+  - Audit trail die voldoet aan de AI Act.
+- Live: dezelfde opdracht door ChatGPT en door Eduface, naast elkaar in het gesprek.
+
+**10x**
+- Een vergelijkingsrapport op hun eigen opdracht: ChatGPT, Copilot en Eduface naast het docentcijfer.
+
+**10/1**
+- Eén video van 2 minuten met de live vergelijking, voor elke klant hetzelfde.
+
+### P10. Hoe gaan jullie om met gevoelige data (K)
+
+*Wat ze denken: "Ons legal team gaat hier maanden over doen."*
+
+**2. Wie doet het werk**
+- Uitbesteed: de verwerkersovereenkomst en het securitypakket liggen klaar, wij vullen hun vragenlijst in. **[aanbod]** Antwoorden via `/privacy-it`.
+
+**3. Support**
+- Een videocall met Jeroen en hun privacy officer.
+
+**4. Vorm**
+- Tekst, één pagina: de data blijft van hen, er wordt niet op getraind, voldoet aan de UK GDPR, hosting in de EU. **[product]** Zeg "EU", niet "Nederland" (V1).
+
+**5. Wanneer en hoe snel**
+- Een ingestuurde vragenlijst ligt binnen een week terug. **[aanbod]**
+
+**10x**
+- Wij leveren een ingevulde DPIA aan op hun situatie, klaar om te ondertekenen. **[aanbod]**
+
+**10/1**
+- Een trust-pagina op de site met alle documenten om te downloaden, plus een vaste set antwoorden op de standaardvragenlijsten. Eén keer maken.
+
+### P11. We hebben niet veel opdrachten om na te kijken (D)
+
+*Wat ze denken: "Voor die paar opdrachten loont het niet."*
+
+**2. Wie doet het werk**
+- Eerlijk antwoord: onder de 300 deelnemers per jaar zijn we niet de juiste partij. **[product: drempel]**
+- De prijs is per deelnemer, niet per opdracht. Elke opdracht die erbij komt kost dus niets extra. **[product: prijsmodel]**
+
+**4. Vorm**
+- Formatieve rondes tellen mee: één opdracht met feedback op het eerste concept, het tweede concept en de eindversie is drie feedbackmomenten. **[product]**
+- Ook mondeling en examens: Exam Grader is live, Oral Examination staat in beta. **[product]**
+
+**10x**
+- Wij helpen het toetsprogramma herontwerpen: meer kleine formatieve momenten zonder extra werk voor de docent.
+
+**10/1**
+- Een rekentool: aantal deelnemers maal opdrachten maal rondes, en wat dat per feedbackmoment kost.
+
+### P12. Tijdwinst is een bijkomstigheid (D)
+
+*Wat ze denken: "We zoeken kwaliteit, niet snelheid."*
+
+**4. Vorm**
+- Je opent niet met tijd. Je opent met consistentie en verantwoording: dezelfde kwaliteit van elke docent, en elk cijfer met een uitlegbare opbouw per criterium. **[product]**
+- Het grader comparison dashboard laat zien welke beoordelaar afwijkt. **[product]**
+
+**10x**
+- Een kwaliteitsrapport per periode voor de examencommissie en de visitatie: afwijkingen tussen beoordelaars, onderbouwing per cijfer.
+
+**10/1**
+- Een export van het dashboard als vast sjabloon voor het visitatiedossier. **[bouwen]**
+
+### P13. Het is niet duidelijk hoe jullie unieke punten onze pijn oplossen (D)
+
+*Wat ze denken: "Mooie lijst, maar wat heb ik eraan?"*
+
+**Eerst intern:** van de 9 differentiators in het ICP-document staan er 4 niet in `product.md`: eerdere feedback meenemen, foutclustering over gebruikers, foutclustering over docenten, en het leerprofiel over tijd. Die mogen we niet beweren tot Menno of Samuel bevestigt dat ze er zijn (S3).
+
+**1. Schaal**
+- 1-op-1: in discovery hun pijn eerst laten benoemen, en alleen het ene punt laten zien dat erop past.
+
+**4. Vorm**
+- Tekst: één tabel "jullie zeggen, wij doen" met hun eigen woorden links en de functie rechts.
+- Video: per pijn een clip van 30 seconden.
+
+**10x**
+- Een persoonlijk rapport na discovery: hun drie grootste pijnpunten, wat ze nu kosten, en per pijn hoe het opgelost wordt.
+
+**10/1**
+- Een vaste bibliotheek van pijnpunt naar functie (`GTM/ICP/pijn-oplossing/`), die bij elk gesprek de juiste regel geeft.
+
+### P14. Het verminderen van uitval duurt te lang (T)
+
+*Wat ze denken: "Dat zien we pas over een jaar of twee."*
+
+**Let op:** nooit beloven dat er minder deelnemers afhaken. Wel: "kan uitval tegengaan".
+
+**4. Vorm**
+- Een voorlopende maat in plaats van uitval: binnen één periode zichtbaar, bijvoorbeeld feedback binnen de termijn, het aantal formatieve rondes per deelnemer, of minder bezwaren.
+
+**5. Wanneer en hoe snel**
+- De eerste feedback is er bij de eerste inleverronde. **[product]** Het effect op uitval meet je later.
+
+**10x**
+- Een vroeg signaal per deelnemer die feedback niet oppakt, zodat de opleider op tijd kan bellen. **[bouwen]** Niet beweren.
+
+**10/1**
+- Een standaard nulmeting bij de start (termijn, aantal rondes, bezwaren), die we na één periode herhalen.
+
+### P15. Te groot project naast onze huidige projecten (M + T)
+
+*Wat ze denken: "We zitten in een fusie, een audit of een LMS-migratie. Dit kan er niet bij."*
+
+**1. Schaal**
+- Kleine groep: één opdracht, bij één opleiding, met twee docenten. Dat is geen project.
+
+**2. Wie doet het werk**
+- Uitbesteed: wij richten in, zij keuren goed. Het kost ze één uur. **[aanbod]**
+
+**4. Vorm**
+- Een pilotplan van één pagina met precies wat het hen kost: wie, hoeveel uur, wanneer.
+
+**5. Wanneer en hoe snel**
+- Start wanneer het hen uitkomt, en de inrichting is klaar vóór hun eerste inleverronde.
+- Bij een audit draaien we het om: de audit trail en de uitlegbare cijferopbouw helpen juist bij de audit. **[product]**
+
+**10x**
+- Een vaste projectleider van onze kant die alles regelt, inclusief hun interne communicatie. Zij hoeven alleen ja te zeggen.
+
+**10/1**
+- Een vast pilotformat (één opdracht, één opleiding, zes weken) dat voor elke klant hetzelfde is.
+
+### P16. Het budget is al vastgesteld voor dit jaar (T)
+
+*Wat ze denken: "Leuk, maar pas volgend studiejaar."*
+
+**2. Wie doet het werk**
+- Wij maken de business case met hun eigen aantallen, zodat hij klaarligt als het nieuwe budget gemaakt wordt. **[aanbod]**
+
+**5. Wanneer en hoe snel**
+- Een kleine pilot dit jaar en de facturering vanaf het nieuwe budgetjaar. **[aanbod]** Met Jeroen afstemmen.
+- Of de inrichting dit jaar doen, zodat ze op dag één van het nieuwe studiejaar live zijn.
+- Een ander budget aanwijzen: kwaliteitszorg of accreditatie in plaats van onderwijs.
+
+**10x**
+- Wij presenteren de business case zelf aan de directie of de holding.
+
+**10/1**
+- Een rekentool die met hun aantallen de business case maakt, één keer gebouwd.
 
 ---
 
-## Wat je hier direct mee kunt
+## 4. Wat het meeste oplevert
 
-- **Outreach (agent 4):** de korte formule en de antwoorden op 10, 12 en 18 zijn de sterkste haakjes voor deze ICP. Nog niet in het marktprofiel gezet, dat is een keuze voor jou.
-- **Discovery:** vraag naar 5, 6 en 21 voor je het product laat zien. Zijn de onderkant-obstakels vroeg benoemd, dan sneuvelt de deal niet op "timing".
-- **De [aanbod]-regels** zijn het grootste hefboompunt en tegelijk het grootste risico: ze kosten ons tijd per deal. Eerst akkoord van Jeroen.
+- **10/1, één keer bouwen, overal gebruiken:** de vergelijkingstest in de tool (P5, P7), de AI-supportagent (P1, P2, P3), en het vaste pakket voor deelnemers (P4). Die drie raken samen zes problemen.
+- **10x, de beleving:** een garantie op accuraatheid (P7) en een kwaliteitsrapport voor de visitatie (P12). Beide kosten weinig, en voelen als een ander product.
+- **Alles met [aanbod]** kost ons uren per deal. Eerst akkoord van Jeroen (S1).
