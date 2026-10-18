@@ -26,6 +26,36 @@ Termijnen (30 dagen, 5 werkdagen, één periode) zijn niet bevestigd, zie S2.
 
 ---
 
+## Gekozen: de kernproblemen en hun oplossing
+
+Vastgesteld door Dante op 18-10-2026. Dit wint van de optiebank in sectie 2 en 3, die blijft staan als bron.
+
+**Tijd reserveren om het beoordelingsformulier AI-proof te maken**
+Oplossing: de docent maakt zijn beoordelingsformulier zelfstandig AI-proof in de kalibratiemodus, binnen [termijn, nog te bepalen]. **[bouwen]**
+
+**Tijd reserveren om de feedback te laten klinken zoals de docent hem schrijft**
+Oplossing: het model leert van elke correctie van de docent, zodat het na een periode schrijft zoals hij. **[bouwen]**
+
+**Een nieuw platform leren kennen**
+Oplossing: wij zijn de eerste inleverweek op de vestiging en kijken de eerste ronde samen met de docenten na. Ze gaan naar huis met "dit kan ik". **[aanbod]**
+
+**Bewijzen dat ons model kwalitatieve feedback geeft op hun specifieke opdrachten**
+Oplossing: een garantie. Haalt het model op hun opdracht na afstemming niet de afgesproken accuraatheid, dan betalen ze alleen de AI-kosten. **[aanbod]**
+
+**Wat maakt jullie uniek ten opzichte van een ander AI-model**
+Oplossing: we zetten in het gesprek dezelfde inzending van hun eigen opdracht door ChatGPT en door Eduface, naast het cijfer dat hun docent gaf. Ze zien zelf het verschil: een onderwijskundig model, beoordeeld tegen hun criteria, met een uitlegbare cijferopbouw. **[product]**
+
+**Het is niet duidelijk hoe jullie unieke punten onze pijn oplossen**
+Oplossing: na discovery een persoonlijk rapport met hun drie grootste pijnpunten, wat die nu kosten, en per pijnpunt hoe het opgelost wordt. **[aanbod]**
+
+**Te groot project om naast onze huidige projecten te starten**
+Oplossing: een vaste projectleider van onze kant die alles regelt, ook hun interne communicatie. Zij hoeven alleen ja te zeggen. **[aanbod]**
+
+**Inconsistente beoordeling tussen docenten, naar een uniforme beoordeling**
+Oplossing: het grader comparison dashboard laat per periode zien welke docent afwijkt van het team en van het AI-voorstel, zodat de opleidingsmanager kan bijsturen voordat een deelnemer bezwaar maakt. **[product]**
+
+---
+
 ## 2. De problemen
 
 Vastgesteld door Dante op 18-10-2026. D = droomuitkomst · K = kans · T = tijd · M = moeite
