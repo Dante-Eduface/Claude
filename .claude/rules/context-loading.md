@@ -9,7 +9,7 @@ Deze laden elke sessie automatisch, via `CLAUDE.md`:
 | Bestand | Wat erin staat |
 |---|---|
 | `Context/me.md` | Wie Dante is, zijn rol, zijn weekritme |
-| `Context/eduface.md` | Wat Eduface is, wie er werken, welke tools |
+| `Context/eduface.md` | Wat Eduface is, welke tools |
 | `Context/current-priorities.md` | De twee doelen en de leidende maat. Wint van alle andere bestanden. |
 | `Context/open-vragen.md` | Wat ik niet zelf mag invullen |
 

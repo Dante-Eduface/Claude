@@ -1,8 +1,8 @@
 # Eduface
 
-_Laatst bijgewerkt: 2026-10-02._
+_Laatst bijgewerkt: 2026-10-18._
 
-Het bedrijf waar Dante werkt. Juridisch heet het **Blockbook B.V.**, daar komt zijn salaris ook vandaan. Naar buiten is alles Eduface. Dit bestand is alleen het minimum dat elke sessie nodig heeft: wat we verkopen, aan wie, en wie er werkt. Alles wat dieper gaat staat in een eigen bestand, zie **Waar de details staan**.
+Het bedrijf waar Dante werkt. Juridisch heet het **Blockbook B.V.**, daar komt zijn salaris ook vandaan. Naar buiten is alles Eduface. Dit bestand is alleen het minimum dat elke sessie nodig heeft: wat we verkopen en aan wie. Alles wat dieper gaat staat in een eigen bestand, zie **Waar de details staan**.
 
 ## Wat Eduface doet
 
@@ -28,19 +28,10 @@ Noem je een cijfer of een klantervaring, zeg er altijd bij welke van de twee je 
 
 Universiteiten en hogescholen, én particuliere onderwijsinstellingen. Markten: Nederland, Verenigd Koninkrijk, Verenigde Staten.
 
-## Wie er werkt
+## Tjarko en dealeigenaarschap
 
-| Wie | Rol |
-|---|---|
-| **Jeroen van Gessel** | CEO en medeoprichter. Strategie, sales, fundraising, alles extern. Dante's belangrijkste counterpart. Beheert voor nu ook privacy, IT-veiligheid en de DPA (02-10-2026). |
-| **Menno Hahury** | CTO en medeoprichter. Bouwt het product. |
-| **Samuel Rafini** | Senior Engineer. Bouwt het product. |
-| **Tjarko Kwee** | Sales adviseur en angel investor in Eduface. Wekelijkse sales sessie met Jeroen en Dante. |
-| **Dante Torbed** | Customer Success Manager. Zie `Context/me.md`. |
-
-Wie eigenaar is van een deal verschilt per deal en staat in Close, bij de opportunity. Niet hier bijhouden.
-
-Het team communiceert over **WhatsApp**.
+- **Tjarko Kwee** is sales-adviseur en angel investor in Eduface. Wekelijkse salessessie met Jeroen en Dante.
+- **Wie eigenaar is van een deal** verschilt per deal en staat in Close, bij de opportunity. Niet hier bijhouden.
 
 ## Tools
 
