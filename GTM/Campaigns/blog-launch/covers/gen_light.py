@@ -1125,6 +1125,46 @@ SCENES["competency-based-assessment"] = '''
   <path d="M982 602 L1002 622 L1040 582" stroke="#00b85f" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
 '''
 
+SCENES["how-to-grade-assignments-in-blackboard-ultra"] = '''
+  <ellipse cx="600" cy="812" rx="420" ry="30" fill="#dbe6ea"/>
+  <rect x="170" y="190" width="430" height="540" rx="26" fill="#ffffff" stroke="#002333" stroke-width="16"/>
+  <g fill="#cdd9de"><rect x="222" y="260" width="250" height="22" rx="11"/><rect x="222" y="350" width="250" height="22" rx="11"/><rect x="222" y="440" width="250" height="22" rx="11"/><rect x="222" y="530" width="250" height="22" rx="11"/><rect x="222" y="620" width="190" height="22" rx="11"/></g>
+  <g fill="#00d563" stroke="#002333" stroke-width="10"><circle cx="520" cy="271" r="30"/><circle cx="520" cy="361" r="30"/><circle cx="520" cy="451" r="30"/></g>
+  <g stroke="#002333" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M505 271 L517 283 L536 258"/><path d="M505 361 L517 373 L536 348"/><path d="M505 451 L517 463 L536 438"/></g>
+  <rect x="800" y="250" width="70" height="40" rx="12" fill="#002333"/>
+  <circle cx="830" cy="520" r="190" fill="#ffffff" stroke="#002333" stroke-width="18"/>
+  <path d="M830 520 L830 350 A170 170 0 0 1 977 435 Z" fill="#00d563"/>
+  <circle cx="830" cy="520" r="190" fill="none" stroke="#002333" stroke-width="18"/>
+  <line x1="830" y1="520" x2="830" y2="385" stroke="#002333" stroke-width="16" stroke-linecap="round"/>
+  <line x1="830" y1="520" x2="925" y2="570" stroke="#002333" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="830" cy="520" r="20" fill="#002333"/>
+'''
+
+SCENES["how-to-create-and-use-a-rubric-in-blackboard-ultra"] = '''
+  <ellipse cx="600" cy="812" rx="440" ry="30" fill="#dbe6ea"/>
+  <rect x="170" y="200" width="860" height="520" rx="26" fill="#ffffff" stroke="#002333" stroke-width="16"/>
+  <path d="M170 226 A26 26 0 0 1 196 200 H1004 A26 26 0 0 1 1030 226 V300 H170 Z" fill="#002333"/>
+  <g stroke="#002333" stroke-width="12"><line x1="170" y1="420" x2="1030" y2="420"/><line x1="170" y1="570" x2="1030" y2="570"/><line x1="410" y1="300" x2="410" y2="720"/><line x1="650" y1="300" x2="650" y2="720"/><line x1="850" y1="300" x2="850" y2="720"/></g>
+  <g fill="#ffffff"><rect x="450" y="240" width="160" height="20" rx="10"/><rect x="690" y="240" width="120" height="20" rx="10"/><rect x="886" y="240" width="110" height="20" rx="10"/></g>
+  <g fill="#cdd9de"><rect x="210" y="350" width="150" height="20" rx="10"/><rect x="210" y="480" width="150" height="20" rx="10"/><rect x="210" y="630" width="150" height="20" rx="10"/></g>
+  <rect x="656" y="426" width="188" height="138" fill="#00d563"/>
+  <g stroke="#002333" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M700 495 L735 530 L800 460"/></g>
+  <g fill="#9fb3bb"><rect x="440" y="350" width="130" height="18" rx="9"/><rect x="690" y="640" width="110" height="18" rx="9"/><rect x="886" y="480" width="100" height="18" rx="9"/></g>
+'''
+
+SCENES["blackboard-ultra-ai-grading"] = '''
+  <defs><clipPath id="lens"><circle cx="740" cy="450" r="240"/></clipPath></defs>
+  <ellipse cx="600" cy="812" rx="440" ry="30" fill="#dbe6ea"/>
+  <circle cx="740" cy="450" r="240" fill="#00d563"/>
+  <circle cx="460" cy="450" r="240" fill="#ffffff"/>
+  <circle cx="460" cy="450" r="240" fill="#00b85f" clip-path="url(#lens)"/>
+  <circle cx="460" cy="450" r="240" fill="none" stroke="#002333" stroke-width="16"/>
+  <circle cx="740" cy="450" r="240" fill="none" stroke="#002333" stroke-width="16"/>
+  <path d="M600 345 C606 410 620 424 685 450 C620 476 606 490 600 555 C594 490 580 476 515 450 C580 424 594 410 600 345 Z" fill="#ffffff" stroke="#002333" stroke-width="12" stroke-linejoin="round"/>
+  <g fill="#cdd9de"><rect x="330" y="400" width="130" height="18" rx="9"/><rect x="330" y="450" width="150" height="18" rx="9"/><rect x="330" y="500" width="110" height="18" rx="9"/></g>
+  <g stroke="#ffffff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M760 470 L790 500 L850 425"/></g>
+'''
+
 for slug, scene in SCENES.items():
     html = WRAP_HEAD + scene.strip("\n") + WRAP_TAIL
     with open(os.path.join(OUT, slug + ".html"), "w") as f:

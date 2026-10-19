@@ -1,0 +1,1204 @@
+{
+ "slug": "blackboard-ultra-ai-grading",
+ "path": "/resources/blog/blackboard-ultra-ai-grading",
+ "category": "Integrations",
+ "readTime": "23 min read",
+ "cardTitle": "AI Grading in Blackboard Ultra: What Blackboard AI Does and What Eduface Adds",
+ "seoTitle": "Blackboard Ultra AI Grading: What Exists | Eduface",
+ "seoDesc": "Does Blackboard Ultra have AI grading? What the AI Design Assistant and AVA do, what needs a license since July 2026, and where a dedicated tool adds value.",
+ "excerpt": "Blackboard's AI can draft a rubric, write a test question and polish your feedback comments. Whether it can grade is a different question. Here is what each feature does, what needs a license since July 2026, where the data goes, and when a dedicated tool earns its place.",
+ "publishedDate": "2026-10-15T00:00:00.000Z",
+ "hero": {
+  "eyebrow": "BLACKBOARD ULTRA · AI GRADING",
+  "h1": "AI Grading in Blackboard Ultra: What Blackboard AI Does and What Eduface Adds",
+  "subtitle": "Blackboard's AI can draft a rubric, write a test question and polish your feedback comments. Whether it can grade is a different question. Here is what each feature does, what needs a license since July 2026, where the data goes, and when a dedicated tool earns its place.",
+  "meta": "By Eduface · October 2026 · 23 min read"
+ },
+ "blocks": [
+  {
+   "t": "p",
+   "x": "Your admin switched on the AI Design Assistant, and instructors found the Generate button for rubrics. Then an email arrived about something called AVA, a colleague said Blackboard now helps write feedback, and someone mentioned that AI in Blackboard needs a license. Your program director asks the question you expected: does Blackboard grade with AI now, and if it does, why would we look at anything else?"
+  },
+  {
+   "t": "callout",
+   "title": "Does Blackboard Ultra have AI grading?",
+   "x": "Not in the documentation we read. Blackboard's AI helps instructors build and word things: the AI Design Assistant generates rubrics, prompts and test questions, and AVA, which has needed a specific license since July 1, 2026, can summarize or rewrite feedback from the rubric levels and comments you have already entered. None of these reads a student submission and proposes a grade or a rubric rating. Scoring and drafting feedback against your rubric is what a dedicated tool such as Eduface adds through LTI 1.3."
+  },
+  {
+   "t": "callout",
+   "title": "Key takeaways",
+   "x": "- Blackboard's documented AI helps you build (rubrics, prompts, test questions) and word (summarize or rewrite feedback). It does not score a submission.\n- AVA, which includes the feedback Summarize and Rewrite options, has needed a specific license since July 1, 2026. The AI Design Assistant is listed separately.\n- Both run on Microsoft's Azure OpenAI Service, hosted primarily in the United States, and Anthology says your data is not used to train the models.\n- For rubric and prompt drafting and for polishing comments, Blackboard's own AI is often enough.\n- Scoring against your rubric, draft feedback, consistency across graders and an audit trail are where a dedicated tool earns its place."
+  },
+  {
+   "t": "cards",
+   "cols": 3,
+   "items": [
+    {
+     "title": "What Blackboard AI does",
+     "x": "Every documented feature in one table, what it does not do, and where Anthology documents it."
+    },
+    {
+     "title": "License, data and what is coming",
+     "x": "What needs an AVA license today, where the data goes, and what Anthology has announced for the rest of 2026."
+    },
+    {
+     "title": "Blackboard versus Eduface",
+     "x": "A side-by-side table, a decision table and a pilot you can run on 25 to 40 submissions."
+    }
+   ]
+  },
+  {
+   "t": "h2",
+   "x": "What AI features does Blackboard Ultra have today?"
+  },
+  {
+   "t": "p",
+   "x": "Blackboard Ultra has three families of AI features: tools that help you build a course, an AI persona your students talk to, and helpers in the feedback panel while you grade. Anthology's help pages call the first family the AI Design Assistant. It generates course structure, discussions, journals, assignment prompts, test questions, question banks, rubrics, AI Conversations, images and document layouts, at ten complexity levels from early primary school to advanced PhD.¹"
+  },
+  {
+   "t": "p",
+   "x": "The second family is the AI Conversation activity, where students practice Socratic questioning or role-play with a persona you design.² The third belongs to AVA, Anthology's AI Virtual Assistant: a rubric feedback summary, a feedback rewrite, automatic replies to student messages and an AI Playground.³ Notice what the list is built around. Every item supports the instructor's own work, the student's practice or open exploration. None is built around reading a submission and judging it."
+  },
+  {
+   "t": "img",
+   "src": "local:58-f1-assessment-cycle.png",
+   "aspect": 1.9967,
+   "alt": "Where Blackboard AI touches the assessment cycle in Ultra, schematic"
+  },
+  {
+   "t": "p",
+   "x": "Figure 1: Blackboard's documented AI sits before and after the scoring step; the step in the middle stays with the instructor."
+  },
+  {
+   "t": "table",
+   "weights": [
+    1.3,
+    1,
+    1,
+    1
+   ],
+   "head": [
+    "Feature",
+    "What it does",
+    "What it does not do",
+    "Documented in"
+   ],
+   "rows": [
+    [
+     "AI Design Assistant: rubric generation",
+     "Drafts a rubric from your description, in one of five rubric types; you edit each cell⁴",
+     "Does not apply the rubric to student work",
+     "Create or Generate Rubrics"
+    ],
+    [
+     "AI Design Assistant: prompts and test items",
+     "Generates assignment prompts, discussions, journals, test questions and question banks¹",
+     "Does not review or grade responses",
+     "AI Design Assistant"
+    ],
+    [
+     "AI Conversation, including Pulse Quiz",
+     "Students talk with a persona you set up; you review the transcript and the student's reflection²",
+     "A Pulse Quiz result is not passed to the gradebook; you give the feedback and grade²",
+     "AI Conversation"
+    ],
+    [
+     "AVA: Summarize rubric feedback",
+     "Drafts overall feedback from the rubric levels you selected, their descriptions and your criterion comments³",
+     "Does not list the submission among its inputs",
+     "AVA – AI Virtual Assistant"
+    ],
+    [
+     "AVA: Rewrite",
+     "Rewords your own overall or per-question feedback, once you have typed at least 30 characters³",
+     "Does not write feedback from nothing",
+     "AVA – AI Virtual Assistant"
+    ],
+    [
+     "AVA: Responses to student messages",
+     "Answers common questions from course content the student can see³",
+     "Does not grade; replies about due dates, grades and content the student can see",
+     "AVA – AI Virtual Assistant"
+    ],
+    [
+     "AVA: AI Playground",
+     "Chat with selected AI models inside Blackboard³",
+     "Per the help page, not connected to assessments, grades or instructor workflows",
+     "AVA – AI Virtual Assistant"
+    ]
+   ]
+  },
+  {
+   "t": "p",
+   "x": "Table 1: Every Blackboard AI feature we found in Anthology's help pages, with its limit. Read October 19, 2026."
+  },
+  {
+   "t": "h2",
+   "x": "Can Blackboard AI give feedback or a grade on a student's work?"
+  },
+  {
+   "t": "p",
+   "x": "No. Blackboard AI can help you write feedback about a submission, but none of the inputs the help page lists is the student's submission, and it never proposes a score. The Summarize option works from the rubric criteria, the performance levels you selected, their descriptions, any criterion-level feedback you wrote, and whatever is already in the overall feedback box.³"
+  },
+  {
+   "t": "p",
+   "x": "Here is the path in Flexible Grading. From the assignment's Submissions page you select a student, open the feedback panel, complete the rubric, and select Summarize rubric feedback (the AVA page calls the same option Summarize). A banner marks the suggestion as AI-generated, and you accept, reject or regenerate it.⁵ ³ Rewrite works the same way on text you typed yourself.³"
+  },
+  {
+   "t": "img",
+   "src": "local:58-f2-summarize-flow.png",
+   "aspect": 1.9262,
+   "alt": "The Summarize workflow in Flexible Grading, schematic"
+  },
+  {
+   "t": "p",
+   "x": "Figure 2: The Summarize workflow in Flexible Grading (schematic). The judgment about the work happens before the AI step, and the instructor still decides what students see."
+  },
+  {
+   "t": "p",
+   "x": "Anthology is explicit that this is by design. The transparency note for these features says Blackboard has \"intentionally omitted potentially high-stakes functionalities\", and that the feature \"does not include any automated decision-making that could have a legal or otherwise significant effect on learners or other individuals.\"⁶ That is a reasonable position for an LMS vendor, and it answers the question this guide started with."
+  },
+  {
+   "t": "callout",
+   "title": "A practical reading",
+   "x": "Because Summarize is built from your rubric selections and criterion comments, its output can only be as specific as the notes you give it. Our reading, not Anthology's claim: it saves you writing time, not reading time. You still read every submission and rate every criterion yourself."
+  },
+  {
+   "t": "p",
+   "x": "What do Rewrite and Summarize look like in practice? Anthology says Rewrite turns \"rough notes, bullet points, or complete sentences\" into more polished, student-friendly language, and that you can run it several times on the same feedback.³ The example below is illustrative wording, not captured output, so your results will differ."
+  },
+  {
+   "t": "callout",
+   "title": "EXAMPLE: the kind of rewrite Rewrite aims at",
+   "x": "*Instructor's rough notes:* \"Method clear. No error analysis. Units missing table 2. Conclusion just repeats intro.\"\n*A polished version might read:* \"Your method section is clear and easy to follow. To strengthen the report, add an error analysis, include units in Table 2, and use the conclusion to say what your results show instead of repeating the introduction.\"\n*What stays with you:* deciding the notes are right. Rewrite changes the wording, not the judgment."
+  },
+  {
+   "t": "h2",
+   "x": "What can the AI Design Assistant do for grading?"
+  },
+  {
+   "t": "p",
+   "x": "The AI Design Assistant helps before grading starts: it drafts the rubric, the assignment prompt and the test items you will grade against. Anthology describes rubric generation as one of its common classroom tasks, available if your institution has turned the AI Design Assistant on.¹ ⁴"
+  },
+  {
+   "t": "cards",
+   "cols": 3,
+   "items": [
+    {
+     "title": "Good use",
+     "x": "A first-draft rubric for a new assignment, with the criteria and level structure already in place.⁴ Choose a rubric type, set the number of rows and columns, and generate."
+    },
+    {
+     "title": "Needs you",
+     "x": "The level descriptors. Anthology's own instruction is to review each cell for accuracy and edit as needed, and the editor limits criterion and description cells to 1,000 characters of plain text.⁴"
+    },
+    {
+     "title": "Not its job",
+     "x": "Reading student work, rating it against the rubric, or drafting comments about it. It generates the instrument, not the judgment."
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "x": "The click path is short:"
+  },
+  {
+   "t": "p",
+   "runs": [
+    [
+     "1. ",
+     false
+    ],
+    [
+     "Open the Course Rubrics page",
+     true
+    ],
+    [
+     " from Gradebook Settings (Manage Course Rubrics) or from Assignment Settings (Add Rubric, in the Grading & Submissions section).",
+     false
+    ]
+   ]
+  },
+  {
+   "t": "p",
+   "runs": [
+    [
+     "2. ",
+     false
+    ],
+    [
+     "Describe the rubric.",
+     true
+    ],
+    [
+     " Enter a description to narrow the focus, then pick the rubric type: percentage, percentage range, points, point range, or no points.",
+     false
+    ]
+   ]
+  },
+  {
+   "t": "p",
+   "runs": [
+    [
+     "3. ",
+     false
+    ],
+    [
+     "Set the shape.",
+     true
+    ],
+    [
+     " Adjust the complexity, the number of columns and rows, and optionally the output language under Advanced options.",
+     false
+    ]
+   ]
+  },
+  {
+   "t": "p",
+   "runs": [
+    [
+     "4. ",
+     false
+    ],
+    [
+     "Select Generate,",
+     true
+    ],
+    [
+     " review each cell, then select Continue to save the rubric.⁴",
+     false
+    ]
+   ]
+  },
+  {
+   "t": "p",
+   "runs": [
+    [
+     "Only one rubric can be associated with an item, so the rubric you attach to the assignment is the one a human or an AI will be held to.⁴ Our guide to ",
+     false
+    ],
+    [
+     "creating and using a rubric in Blackboard Ultra",
+     true,
+     "/resources/blog/how-to-create-and-use-a-rubric-in-blackboard-ultra"
+    ],
+    [
+     " covers the rubric types and the grading screen in detail. If the rubric will also be read by an AI grader, ",
+     false
+    ],
+    [
+     "how to write a rubric AI can mark against",
+     true,
+     "/resources/blog/how-to-write-a-rubric-ai-can-mark-against"
+    ],
+    [
+     " shows what level descriptors need to say.",
+     false
+    ]
+   ]
+  },
+  {
+   "t": "h2",
+   "x": "Is the AI Conversation a way to assess students?"
+  },
+  {
+   "t": "p",
+   "x": "The AI Conversation is a practice and reflection activity, not a grading tool. Anthology describes three types: Socratic Questioning, Role-play and Pulse Quiz, each with a reflection question where students can say what they thought and flag any bias or errors from the AI.² It is a formative assessment by default. On submission you read the conversation transcript and the student's reflection, then give the feedback and the grade yourself.²"
+  },
+  {
+   "t": "p",
+   "x": "Pulse Quiz needs a closer look. Its questions are generated during the conversation, so each student gets a slightly different set and you do not review them in advance. The quiz reports how many questions a student answered correctly, but that result is not passed to the gradebook.² Anthology's own advice is that if you need to verify specific questions in advance, you should use a test. For a formal oral assessment, where you need a rubric-based evaluation of what a student can explain, that is a different job. Eduface's Oral Examination (in beta) is built for it, with realtime transcription and assessment of a configured scenario."
+  },
+  {
+   "t": "h2",
+   "x": "What does Blackboard AI cost, and what do you need to switch it on?"
+  },
+  {
+   "t": "p",
+   "x": "Blackboard AI is not one license: AVA has needed a specific license since July 1, 2026, and the pages we read do not say the AI Design Assistant needs one. If you heard that Blackboard's AI tools were free until June 2026, that is accurate for AVA. Anthology announced AVA on July 15, 2025 as a free trial for current Blackboard customers through June 30, 2026.⁷ Its administrator documentation says AVA features are included in your license until that date and that \"a specific AVA license will be required to continue using these features.\"⁸"
+  },
+  {
+   "t": "p",
+   "x": "On September 23, 2026, Anthology repeated it in plain terms: \"As of 1st July 2026, AVA is a premium capability that requires a specific license,\" and institutions without one can still try the tools in their test or stage environment until the end of 2026.⁹ The same post says the Socratic Questioning and Role-play AI Conversations remain part of the core license, while Pulse Quiz is exclusive to AVA institutions.⁹"
+  },
+  {
+   "t": "img",
+   "src": "local:58-f3-ava-licensing.png",
+   "aspect": 1.9324,
+   "alt": "Blackboard AVA licensing timeline as documented, schematic, not to scale"
+  },
+  {
+   "t": "p",
+   "x": "Figure 3: The June 30, 2026 date belongs to AVA. It is not a date for the AI Design Assistant or the core AI Conversation activities."
+  },
+  {
+   "t": "table",
+   "weights": [
+    1.3,
+    1,
+    1
+   ],
+   "head": [
+    "Feature",
+    "Status in the pages we read",
+    "Admin switch"
+   ],
+   "rows": [
+    [
+     "AI Design Assistant, including rubric generation",
+     "Not tied to the AVA license in the pages we read. The Documents version was announced as part of the core license in 2025.⁷ ⁸ ⁹",
+     "Building block AI Design Assistant and Unsplash; privilege Use AI Design Assistant¹⁰"
+    ],
+    [
+     "AI Conversation: Socratic, Role-play",
+     "Part of the core license⁹",
+     "Not covered in the pages we read"
+    ],
+    [
+     "AI Conversation: Pulse Quiz",
+     "Requires an AVA license; off by default² ⁹",
+     "Ask your Blackboard administrator²"
+    ],
+    [
+     "AVA: Summarize and Rewrite feedback",
+     "Specific AVA license since July 1, 2026⁶ ⁸ ⁹",
+     "Same building block, AVA section, off by default; privilege Generate AI Feedback Changes⁸"
+    ],
+    [
+     "AVA: Responses to student messages, AI Playground",
+     "Specific AVA license since July 1, 2026⁸ ⁹",
+     "Same building block, AVA section, off by default⁸"
+    ]
+   ]
+  },
+  {
+   "t": "p",
+   "x": "Table 2: What each feature needs, according to Anthology's pages as read October 19, 2026."
+  },
+  {
+   "t": "callout",
+   "title": "For Blackboard administrators",
+   "x": "The switches sit in the Administrator Panel: in the Integrations section under Building Blocks, select Installed Tools, then AI Design Assistant and Unsplash. You can turn features on one by one, and you must assign the matching privilege to course roles such as Instructor. AVA settings are in the same building block under an AVA section.⁸"
+  },
+  {
+   "t": "callout",
+   "title": "Licensing status as of October 19, 2026, and what we could not confirm",
+   "x": "We found no price for AVA in any Anthology page we read. We could not confirm whether your contract treats the AI Design Assistant as included, because the pages we read tie the June 30, 2026 end date to AVA only. We did not open the October 2026 release notes. Ask your Anthology account representative to confirm in writing which AI features your contract includes and what they cost at your enrollment."
+  },
+  {
+   "t": "h2",
+   "x": "Where does student data go when you use Blackboard AI?"
+  },
+  {
+   "t": "p",
+   "x": "Both Blackboard AI families send limited course information to Microsoft's Azure OpenAI Service, which Anthology says does not train on your data.¹⁰ ⁶ What differs is what they send, and in both cases the AI also processes whatever an instructor chooses to type in."
+  },
+  {
+   "t": "cards",
+   "cols": 3,
+   "items": [
+    {
+     "title": "What is sent",
+     "x": "AI Design Assistant: limited course information, such as the course title and description, plus any extra context the instructor adds to the prompt.¹⁰ AVA Assisted Feedback: limited course, rubric and feedback information.⁶"
+    },
+    {
+     "title": "Where it runs",
+     "x": "Multiple global Azure OpenAI instances. The primary one is hosted in the United States, and at times Blackboard uses resources in Canada, the United Kingdom or France. Input and output are stored in your Blackboard LMS database.¹⁰ ⁶"
+    },
+    {
+     "title": "What is promised",
+     "x": "No retraining on your input or output. Microsoft reviews prompts and output for content filtering and stores them for up to 30 days.¹⁰ ⁶"
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "x": "For most US colleges this is a familiar profile: a general-purpose model, reached through a vendor you already contract with. If your policies or your learners' country call for EU processing, that is a question for your privacy officer, not something the documentation settles either way."
+  },
+  {
+   "t": "p",
+   "x": "One more thing changes the picture. A grading tool reads the whole submission, so its data terms deserve a closer look than a feature that sees rubric entries. Eduface processes student data in the EU, never uses student work to train AI models, uses no third-party AI API such as OpenAI's, and signs a data processing agreement with every institution."
+  },
+  {
+   "t": "callout",
+   "title": "Questions for your privacy officer",
+   "x": "Which Azure region will serve our requests? Do instructors type student names or identifiers into prompts or feedback? Who can see the stored input and output in our Blackboard database, and for how long? What is our policy if we add a tool that reads full submissions?"
+  },
+  {
+   "t": "h2",
+   "x": "What is coming next in Blackboard AI?"
+  },
+  {
+   "t": "p",
+   "x": "Anthology has announced three more AVA capabilities for the rest of 2026, and one of them touches draft feedback. AVA Formative Feedback would let students check their work against the grading rubric before they submit, while the instructor still grades the final submission and can see how the draft evolved.⁹ The September post labels it \"Next: 3-6 months\", behind the Pulse Quiz (\"Now: 1-3 months\") and alongside an AVA Virtual Assistant for students; the July roadmap lists AI Flashcards as part of the core license.⁹ ¹¹ Anthology notes that release timings and details are subject to change, and we found no release notes confirming any of the three has shipped."
+  },
+  {
+   "t": "p",
+   "x": "For readers weighing a dedicated tool, this is the one to watch. It would cover part of the ground that draft-by-draft feedback covers today, for institutions that buy an AVA license. Anthology has not published details we can compare yet, such as who writes the feedback instructions, which feedback styles exist, or whether subject-specific models are involved. The right time to compare is when it reaches your test environment, using the pilot below."
+  },
+  {
+   "t": "h2",
+   "x": "What does Eduface add inside a Blackboard Ultra course?"
+  },
+  {
+   "t": "p",
+   "runs": [
+    [
+     "Eduface adds the step Blackboard's AI leaves to the instructor: reading each submission, scoring it against your rubric and drafting feedback, with the instructor approving before anything reaches a student or the gradebook. It connects to Blackboard through LTI 1.3. The instructor works from inside Blackboard to open Eduface, reviews the suggestions in the Eduface interface, and the approved grade returns to the Blackboard gradebook through LTI Grade Services. Students need no separate login. The setup steps live in our guide to the ",
+     false
+    ],
+    [
+     "AI essay grader for Blackboard via LTI 1.3",
+     true,
+     "/resources/blog/ai-essay-grader-blackboard-lti"
+    ],
+    [
+     ", so we do not repeat them here.",
+     false
+    ]
+   ]
+  },
+  {
+   "t": "p",
+   "runs": [
+    [
+     "- ",
+     false
+    ],
+    [
+     "Scoring against your rubric, criterion by criterion.",
+     true
+    ],
+    [
+     " The Paper Grader reads each submission, marks specific passages, scores each criterion with an explainable breakdown, adds annotations in the text and flags where it is uncertain. You bring your rubric criteria and levels; if you have none, Eduface can generate a rubric.",
+     false
+    ]
+   ]
+  },
+  {
+   "t": "p",
+   "runs": [
+    [
+     "- ",
+     false
+    ],
+    [
+     "Feedback on drafts.",
+     true
+    ],
+    [
+     " The Paper Grader's formative feedback covers the first draft, the second draft and the final version, and tracks progress across drafts. The instructor writes the feedback instructions, picks a style (Reflective and Socratic, Constructive and Direct, Went Well and Needs Improvement, or Supportive and Encouraging) and decides whether feedback goes to the student directly or after approval.",
+     false
+    ]
+   ]
+  },
+  {
+   "t": "p",
+   "runs": [
+    [
+     "- ",
+     false
+    ],
+    [
+     "Exam answers at scale.",
+     true
+    ],
+    [
+     " In the Exam Grader, three independent AI agents grade each answer without seeing each other's result, and a fourth compares them. Agreement means high confidence; disagreement is flagged for the instructor. Eduface reports this is 48% more consistent than unaided human marking, with under 4 minutes from upload to suggested grade; the measurement setup is not public.",
+     false
+    ]
+   ]
+  },
+  {
+   "t": "p",
+   "runs": [
+    [
+     "- ",
+     false
+    ],
+    [
+     "Subject models.",
+     true
+    ],
+    [
+     " The Paper Grader has six subject models: Law, Economics, Social Sciences, STEM, Humanities and Health Sciences.",
+     false
+    ]
+   ]
+  },
+  {
+   "t": "p",
+   "runs": [
+    [
+     "- ",
+     false
+    ],
+    [
+     "Consistency across graders.",
+     true
+    ],
+    [
+     " A grader comparison dashboard shows when an individual grader departs from the team or from the AI suggestion. Blind mode lets the instructor grade first and see the AI suggestion afterward; AI-visible mode shows it from the start. The institution can require one.",
+     false
+    ]
+   ]
+  },
+  {
+   "t": "p",
+   "runs": [
+    [
+     "- ",
+     false
+    ],
+    [
+     "A record.",
+     true
+    ],
+    [
+     " Eduface keeps an audit trail per submission that meets AI Act requirements for summative assessments.",
+     false
+    ]
+   ]
+  },
+  {
+   "t": "img",
+   "src": "local:58-f4-eduface-beside-ultra.png",
+   "aspect": 2.454,
+   "alt": "How Eduface sits next to Blackboard Ultra, schematic"
+  },
+  {
+   "t": "p",
+   "x": "Figure 4: How Eduface sits next to Ultra (schematic). Nothing reaches the student or the gradebook until the instructor approves."
+  },
+  {
+   "t": "callout",
+   "title": "What Eduface doesn't do",
+   "x": "Eduface is not a course-design assistant: it does not draft modules, question banks or AI Conversations, and Blackboard's AI Design Assistant is the right tool for that. Instructors review suggestions in the Eduface interface, not inside Blackboard's Flexible Grading page. It is one more vendor for IT and procurement to review. Academic Integrity and Oral Examination are still in beta. If Blackboard's tools already cover what your instructors need, those costs are not worth paying."
+  },
+  {
+   "t": "h2",
+   "x": "How do Blackboard AI and Eduface compare side by side?"
+  },
+  {
+   "t": "p",
+   "x": "Blackboard's AI builds and words; Eduface scores and drafts. The two answer different questions, and the table puts them on the same rows."
+  },
+  {
+   "t": "table",
+   "weights": [
+    1.3,
+    1,
+    1
+   ],
+   "head": [
+    "",
+    "Blackboard AI (AI Design Assistant and AVA)",
+    "Eduface via LTI 1.3"
+   ],
+   "rows": [
+    [
+     "Main job",
+     "Draft course content, rubrics and prompts; reword or summarize feedback¹ ³",
+     "Score submissions against your rubric and draft feedback"
+    ],
+    [
+     "Rating or grade for a submission",
+     "None documented",
+     "Per criterion, with an explainable breakdown"
+    ],
+    [
+     "Draft-to-draft feedback for students",
+     "Announced for AVA, not yet released as far as we read⁹",
+     "Paper Grader's formative feedback; four styles; progress across drafts"
+    ],
+    [
+     "Where the instructor works",
+     "Inside Blackboard",
+     "In Eduface, opened from Blackboard"
+    ],
+    [
+     "Consistency across graders",
+     "No AI feature documented for comparing graders",
+     "Grader comparison dashboard; blind or AI-visible mode"
+    ],
+    [
+     "Record of AI use",
+     "Output metadata flags auto-generated content and whether the instructor edited it⁶",
+     "Audit trail per submission for summative assessments"
+    ],
+    [
+     "Model and data",
+     "Azure OpenAI, primarily hosted in the US; no retraining⁶ ¹⁰",
+     "Own model, no third-party AI API; EU processing; DPA with every institution"
+    ],
+    [
+     "License",
+     "AVA features need a specific AVA license; AI Design Assistant not tied to it in the pages we read⁸ ⁹",
+     "Ask for pricing at your volume"
+    ]
+   ]
+  },
+  {
+   "t": "p",
+   "x": "Table 3: Blackboard AI and Eduface on the same rows. Blackboard facts from Anthology, read October 19, 2026."
+  },
+  {
+   "t": "h2",
+   "x": "When is Blackboard's own AI enough?"
+  },
+  {
+   "t": "p",
+   "x": "For many instructors it is enough, and that is where to start. A rubric first draft, an assignment prompt, a set of test questions and a rewrite of rough comments all live where your instructors already work, and none of them adds a vendor to review. Blackboard's own AI fits when:"
+  },
+  {
+   "t": "p",
+   "runs": [
+    [
+     "- ",
+     false
+    ],
+    [
+     "One instructor grades one section",
+     true
+    ],
+    [
+     " against a rubric they wrote, so consistency between graders is not the problem.",
+     false
+    ]
+   ]
+  },
+  {
+   "t": "p",
+   "runs": [
+    [
+     "- ",
+     false
+    ],
+    [
+     "The pain is in writing, not scoring.",
+     true
+    ],
+    [
+     " The instructor knows the grade at a glance and loses the time turning notes into comments. That is what Summarize and Rewrite are for, if your institution has the AVA license.",
+     false
+    ]
+   ]
+  },
+  {
+   "t": "p",
+   "runs": [
+    [
+     "- ",
+     false
+    ],
+    [
+     "The work is low-stakes:",
+     true
+    ],
+    [
+     " reflections, discussion posts, practice assignments.",
+     false
+    ]
+   ]
+  },
+  {
+   "t": "p",
+   "runs": [
+    [
+     "- ",
+     false
+    ],
+    [
+     "You are building a new course",
+     true
+    ],
+    [
+     " and want first drafts of rubrics and prompts.",
+     false
+    ]
+   ]
+  },
+  {
+   "t": "p",
+   "runs": [
+    [
+     "- ",
+     false
+    ],
+    [
+     "There is no budget for another tool this year.",
+     true
+    ],
+    [
+     " A feature instructors use beats a better tool nobody approves.",
+     false
+    ]
+   ]
+  },
+  {
+   "t": "p",
+   "x": "A dedicated tool earns its place when the problem moves from one instructor's time to the program's consistency, evidence and feedback loop. That is common at private and for-profit colleges: several campuses or intakes a year, part-time instructors grading the same capstone, accreditors asking how a grade was reached."
+  },
+  {
+   "t": "p",
+   "x": "Here is how that can look in practice. EXAMPLE scenario: a multi-campus technical college runs the same capstone at four campuses, with nine part-time instructors and three intakes a year. Instructional designers use the AI Design Assistant to draft rubrics and assignment prompts for new courses (build). Full-time faculty use Summarize and Rewrite on weekly assignments, if the college buys the AVA license (word). The program director pilots a dedicated tool only on the capstone, because the problem there is not speed but whether nine graders give the same grade for the same work (score)."
+  },
+  {
+   "t": "table",
+   "weights": [
+    1.3,
+    1
+   ],
+   "head": [
+    "If your situation is",
+    "Start with"
+   ],
+   "rows": [
+    [
+     "Building rubrics, prompts and test questions for a new course",
+     "Blackboard AI Design Assistant"
+    ],
+    [
+     "Instructors who know the grade but spend the time on wording",
+     "AVA Summarize and Rewrite, if licensed"
+    ],
+    [
+     "Many part-time instructors grading the same assessment across campuses",
+     "A dedicated tool with grader comparison"
+    ],
+    [
+     "Open-answer exams at volume",
+     "Eduface Exam Grader"
+    ],
+    [
+     "Feedback on drafts before the final submission",
+     "Eduface's formative feedback; compare with AVA Formative Feedback when it ships"
+    ],
+    [
+     "Summative work where you must show how each grade was reached",
+     "A dedicated tool with an audit trail"
+    ]
+   ]
+  },
+  {
+   "t": "p",
+   "x": "Table 4: A starting point by situation, not a verdict. Many programs will use both."
+  },
+  {
+   "t": "img",
+   "src": "local:58-f5-which-ai.png",
+   "aspect": 1.4634,
+   "alt": "Decision tree: which AI do you need for this assessment in Blackboard Ultra"
+  },
+  {
+   "t": "p",
+   "x": "Figure 5: Start from the pain, not the product. Two of the four exits are Blackboard's own tools."
+  },
+  {
+   "t": "h2",
+   "x": "How do you pilot the two side by side?"
+  },
+  {
+   "t": "p",
+   "x": "Run each tool on the job it claims to do, record the instructor's own work first, and compare a few numbers. A demo cannot answer this; your submissions and your rubric can."
+  },
+  {
+   "t": "p",
+   "runs": [
+    [
+     "1. ",
+     false
+    ],
+    [
+     "Pick one real assessment",
+     true
+    ],
+    [
+     " with a rubric whose levels have descriptors. Twenty-five to forty submissions is enough to see a pattern.",
+     false
+    ]
+   ]
+  },
+  {
+   "t": "p",
+   "runs": [
+    [
+     "2. ",
+     false
+    ],
+    [
+     "Use submissions you are allowed to use,",
+     true
+    ],
+    [
+     " within your policy and each vendor's data agreement.",
+     false
+    ]
+   ]
+  },
+  {
+   "t": "p",
+   "runs": [
+    [
+     "3. ",
+     false
+    ],
+    [
+     "Record the instructor's ratings and grade first,",
+     true
+    ],
+    [
+     " before anyone sees an AI output. Otherwise you measure agreement with a number the instructor has already seen.",
+     false
+    ]
+   ]
+  },
+  {
+   "t": "p",
+   "runs": [
+    [
+     "4. ",
+     false
+    ],
+    [
+     "Test Blackboard's wording tools",
+     true
+    ],
+    [
+     " on a sample of the submissions: note minutes per submission and the share of AI-drafted comments sent without edits.",
+     false
+    ]
+   ]
+  },
+  {
+   "t": "p",
+   "runs": [
+    [
+     "5. ",
+     false
+    ],
+    [
+     "Test the dedicated tool",
+     true
+    ],
+    [
+     " on the same submissions and rubric: note the points difference from the instructor, the share of criteria where the rating matches, and minutes per submission including review.",
+     false
+    ]
+   ]
+  },
+  {
+   "t": "p",
+   "runs": [
+    [
+     "6. ",
+     false
+    ],
+    [
+     "Add a second grader if you can.",
+     true
+    ],
+    [
+     " If two instructors differ more than either tool does, consistency is the bigger problem.",
+     false
+    ]
+   ]
+  },
+  {
+   "t": "table",
+   "weights": [
+    1.3,
+    1,
+    1
+   ],
+   "head": [
+    "Measure",
+    "How to record it",
+    "Applies to"
+   ],
+   "rows": [
+    [
+     "Minutes per submission",
+     "Stopwatch from opening the submission to approving the feedback",
+     "Both"
+    ],
+    [
+     "Comments sent unedited",
+     "Count of AI-drafted comments posted without changes",
+     "Both"
+    ],
+    [
+     "Points difference from the instructor",
+     "AI suggestion minus the instructor's grade, per submission",
+     "Scoring tools only"
+    ],
+    [
+     "Criterion match rate",
+     "Share of criteria where the AI rating equals the instructor's",
+     "Scoring tools only"
+    ],
+    [
+     "Second-grader gap",
+     "Difference between two instructors on the same submissions",
+     "Reference point"
+    ]
+   ]
+  },
+  {
+   "t": "p",
+   "x": "Table 5: A pilot recording sheet. Blackboard's wording tools do not produce a grade, so only the first two rows apply to them."
+  },
+  {
+   "t": "img",
+   "src": "local:58-f6-where-minutes-go.png",
+   "aspect": 1.9802,
+   "alt": "Example: where the minutes go on one 1,500-word essay"
+  },
+  {
+   "t": "p",
+   "x": "Figure 6: EXAMPLE numbers. A wording tool can only shrink the writing segment; reading and rating stay with you, which is the segment a scoring tool targets."
+  },
+  {
+   "t": "p",
+   "runs": [
+    [
+     "On evidence, be careful with every vendor claim, including ours. In the pages we read, Anthology publishes no accuracy figures for its feedback features, which is expected for tools that do not grade. Eduface's evidence is one pilot at one institution: at Bath Spa University in June 2026, across 435 submissions in 6 subjects and 13 markers, Eduface's suggested grade was on average about 6 points from the lecturer's grade, and about 2 points for lecturers who had tuned the model. Review took 2 to 3 minutes per submission. It is not known whether lecturers graded before or after seeing the suggestion, which is why step 3 above records the instructor's work first. Our ",
+     false
+    ],
+    [
+     "guide to AI grading tools",
+     true,
+     "/resources/blog/ai-grading-tools-higher-education-guide"
+    ],
+    [
+     " covers what else to compare.",
+     false
+    ]
+   ]
+  },
+  {
+   "t": "h2",
+   "x": "What should you tell students about AI in grading?"
+  },
+  {
+   "t": "p",
+   "x": "Tell them which tools touch their work, who decides the grade, and where their data goes. Blackboard's documentation helps with the first part: the Summarize and Rewrite suggestions carry an AI-generated banner for the instructor, and the output metadata records that content was auto-generated and whether the instructor edited it.³ ⁶ We did not find a student-facing label in the pages we read, so the disclosure is yours to write. Anthology encourages institutions to be transparent about AI use with instructors and other stakeholders.⁶ In Eduface, the interface shows a \"Lecturer + AI\" label to make clear that each feedback point was reviewed by the instructor before the student sees it."
+  },
+  {
+   "t": "callout",
+   "title": "Copy-ready syllabus wording (adapt it)",
+   "x": "\"In this course, your instructor may use [tool name] to draft or reword feedback on your work. Your instructor reads every submission and decides every grade. [Tool name] processes [what is sent] in [where]. If you have a question about a grade, contact [name] within [number] days.\""
+  },
+  {
+   "t": "h2",
+   "x": "What to do next"
+  },
+  {
+   "t": "p",
+   "x": "Four actions will settle most of this inside a month."
+  },
+  {
+   "t": "p",
+   "runs": [
+    [
+     "1. ",
+     false
+    ],
+    [
+     "Ask your Anthology account representative for the license position in writing:",
+     true
+    ],
+    [
+     " which AI features your contract includes, whether AVA is licensed or in the test environment only, and the price at your enrollment.",
+     false
+    ]
+   ]
+  },
+  {
+   "t": "p",
+   "runs": [
+    [
+     "2. ",
+     false
+    ],
+    [
+     "Switch on the AI Design Assistant for one program",
+     true
+    ],
+    [
+     " and have an instructional designer generate a rubric for one real assignment. Review every cell, then compare it with the rubric your instructors already trust.",
+     false
+    ]
+   ]
+  },
+  {
+   "t": "p",
+   "runs": [
+    [
+     "3. ",
+     false
+    ],
+    [
+     "Decide which problem you actually have:",
+     true
+    ],
+    [
+     " building, wording, or scoring and consistency. Use Table 4 and Figure 5.",
+     false
+    ]
+   ]
+  },
+  {
+   "t": "p",
+   "runs": [
+    [
+     "4. ",
+     false
+    ],
+    [
+     "If scoring or consistency is the problem, run the pilot above",
+     true
+    ],
+    [
+     " with success criteria agreed before you start, and read our guide to ",
+     false
+    ],
+    [
+     "grading assignments faster in Blackboard Ultra",
+     true,
+     "/resources/blog/how-to-grade-assignments-in-blackboard-ultra"
+    ],
+    [
+     " first so the baseline is a well-run manual process.",
+     false
+    ]
+   ]
+  },
+  {
+   "t": "h2",
+   "x": "Frequently asked questions"
+  },
+  {
+   "t": "pb",
+   "x": "Does Blackboard Ultra have AI grading?"
+  },
+  {
+   "t": "p",
+   "x": "No, not in the Anthology documentation we read on October 19, 2026. Blackboard's AI generates course content and rubrics, and the AVA feedback options summarize or rewrite feedback from the rubric levels and comments you entered. None proposes a grade or a rubric rating for a submission. Anthology says it has \"intentionally omitted potentially high-stakes functionalities\" from these feedback tools."
+  },
+  {
+   "t": "pb",
+   "x": "Is Blackboard AI free?"
+  },
+  {
+   "t": "p",
+   "x": "Not all of it. AVA, which includes the Summarize and Rewrite feedback options, was free for current customers through June 30, 2026 and has needed a specific license since July 1, 2026. The pages we read do not say the AI Design Assistant needs that license, but we found no price or contract terms, so confirm with your Anthology account representative."
+  },
+  {
+   "t": "pb",
+   "x": "Can the Blackboard AI Design Assistant generate a rubric?"
+  },
+  {
+   "t": "p",
+   "x": "Yes. If your institution has turned the AI Design Assistant on, you can generate a rubric from the Course Rubrics page by describing it, choosing the type (percentage, percentage range, points, point range or no points), setting the size and selecting Generate. Anthology tells you to review each cell for accuracy before saving."
+  },
+  {
+   "t": "pb",
+   "x": "Does Blackboard use student data to train its AI?"
+  },
+  {
+   "t": "p",
+   "x": "No, according to Anthology. Its transparency notes say Microsoft contractually commits not to use input or output of the Azure OpenAI Service to retrain the models, and that Blackboard does not fine-tune the models with client data. Microsoft stores prompts and output for up to 30 days for content filtering, and the primary instance is hosted in the United States."
+  },
+  {
+   "t": "pb",
+   "x": "Can we use AVA and Eduface in the same Blackboard course?"
+  },
+  {
+   "t": "p",
+   "x": "Yes, split by job. AVA Summarize or Rewrite can polish comments on assignments an instructor grades by hand, and Eduface can handle the major paper or exam through LTI 1.3, with the approved grade returning to the Blackboard gradebook. Agree in advance which tool handles which assessment so students see one consistent process."
+  },
+  {
+   "t": "pb",
+   "x": "Does Eduface work in Blackboard Ultra Course View?"
+  },
+  {
+   "t": "p",
+   "runs": [
+    [
+     "Yes. Eduface connects to Blackboard through LTI 1.3, and approved grades return to the gradebook through LTI Grade Services. Students need no separate login. The one-time setup for your administrator is covered in our guide to the ",
+     false
+    ],
+    [
+     "AI essay grader for Blackboard",
+     true,
+     "/resources/blog/ai-essay-grader-blackboard-lti"
+    ],
+    [
+     ".",
+     false
+    ]
+   ]
+  },
+  {
+   "t": "pb",
+   "x": "What is Anthology adding to Blackboard AI next?"
+  },
+  {
+   "t": "p",
+   "x": "Anthology's roadmap lists AVA Formative Feedback, which lets students check their work against the rubric before submitting, plus an AVA Virtual Assistant and the Pulse Quiz, with timings from one to six months out as of September 2026. Anthology says timings are subject to change, and we found no release notes confirming that any of the three has shipped."
+  },
+  {
+   "t": "h2",
+   "x": "Sources"
+  },
+  {
+   "t": "p",
+   "x": "1. Anthology. (2026). \"AI Design Assistant.\" Blackboard Help for Instructors. help.anthology.com/blackboard/instructor/en/course-and-content-management/ai-design-assistant.html. Accessed October 19, 2026. [Key finding: the AI Design Assistant generates course structure, discussions, journals, assignment prompts, test questions, question banks, rubrics, AI Conversations, images and document layouts, at ten complexity levels from early primary school to advanced PhD; partnered with Microsoft.]"
+  },
+  {
+   "t": "p",
+   "x": "2. Anthology. (2026). \"AI Conversation.\" Blackboard Help for Instructors. help.anthology.com/blackboard/instructor/en/course-and-content-management/add-content/ai-conversation.html. Accessed October 19, 2026. [Key finding: Socratic Questioning, Role-play and Pulse Quiz; Pulse Quiz requires an AVA license and is off by default; Pulse Quiz results are not graded automatically or passed to the gradebook; instructors review the transcript and reflection.]"
+  },
+  {
+   "t": "p",
+   "x": "3. Anthology. (2026). \"AVA – AI Virtual Assistant.\" Blackboard Help for Instructors. help.anthology.com/blackboard/instructor/en/course-and-content-management/ava---ai-virtual-assistant.html. Accessed October 19, 2026. [Key finding: AI Playground, responses to student messages, Summarize from a completed rubric (inputs: criteria, selected levels, descriptions, criterion feedback, existing overall feedback), Rewrite (at least 30 characters); accept, reject or regenerate; the Playground is not connected to assessments or grades.]"
+  },
+  {
+   "t": "p",
+   "x": "4. Anthology. (2026). \"Create or Generate Rubrics.\" Blackboard Help for Instructors. help.anthology.com/blackboard/instructor/en/grading/rubrics/create-or-generate-rubrics.html. Accessed October 19, 2026. [Key finding: rubric generation steps, five rubric types (percentage, percentage range, points, point range, no points), review each cell, only one rubric per item, 1,000-character cell limit, plain text only.]"
+  },
+  {
+   "t": "p",
+   "x": "5. Anthology. (2026). \"Grade Assessments With Flexible Grading.\" Blackboard Help for Instructors. help.anthology.com/blackboard/instructor/en/grading/grading-assessments/grade-assessments-with-flexible-grading.html. Accessed October 19, 2026. [Key finding: the grading path from the Submissions page to the feedback panel and the Summarize rubric feedback option.]"
+  },
+  {
+   "t": "p",
+   "x": "6. Blackboard Trust Center. (2026, last updated February 27). \"AVA Assisted Feedback – Transparency Note.\" anthology.com/trust-center/ava-assisted-feedback-transparency-note. Accessed October 19, 2026. [Key finding: premium capabilities license; Azure OpenAI Service; hosted primarily in the United States, at times Canada, the UK or France; stored in the client's Blackboard database; Microsoft stores prompts and output up to 30 days; no retraining; \"intentionally omitted potentially high-stakes functionalities\"; no automated decision-making with significant effect.]"
+  },
+  {
+   "t": "p",
+   "x": "7. Anthology. (2025, July 15). \"Anthology Unveils Next-Generation AI and Immersive Learning Innovations in Blackboard.\" anthology.com/news. Accessed October 19, 2026. [Key finding: AVA capabilities offered as a free trial to current Blackboard customers through June 30, 2026; AI Design Assistant for Documents part of the core license.]"
+  },
+  {
+   "t": "p",
+   "x": "8. Anthology. (2026). \"AI Design Assistant and Unsplash Configuration.\" Blackboard Help for Administrators. help.anthology.com/blackboard/administrator/en/integrations/ai-design-assistant-and-unsplash-configuration.html. Accessed October 19, 2026. [Key finding: \"AVA features are included in your Blackboard LMS license until 30 June 2026. After that date, a specific AVA license will be required\"; settings in the AI Design Assistant and Unsplash building block, off by default; privilege Generate AI Feedback Changes.]"
+  },
+  {
+   "t": "p",
+   "x": "9. Blackboard Community. (2026, September 23). \"The latest in AI-powered pedagogy: Three great new capabilities on the way for AVA.\" community.blackboard.com. Accessed October 19, 2026. [Key finding: as of July 1, 2026 AVA is a premium capability needing a specific license; test and stage access until end of 2026; Socratic and Role-play remain core; Pulse Quiz AVA-only; AVA Formative Feedback lets students check work against the rubric before submission; timings subject to change.]"
+  },
+  {
+   "t": "p",
+   "x": "10. Anthology. (n.d.). \"Blackboard AI Design Assistant.\" Blackboard Help for Administrators. help.anthology.com/blackboard/administrator/en/tools-management/blackboard-ai-design-assistant.html. Accessed October 19, 2026. [Key finding: Azure OpenAI Service; limited course information plus instructor-added prompt context; primary instance in the United States; no retraining; opt-in; privilege Use AI Design Assistant.]"
+  },
+  {
+   "t": "p",
+   "x": "11. Blackboard Community. (2026, July 31). \"Doubling Down on Usability: Major Enhancements in the Blackboard LMS Roadmap.\" community.blackboard.com. Accessed October 19, 2026. [Key finding: AVA Formative Feedback listed as Next: 3-6 months; AI Flashcards part of the core license; dates subject to change.]"
+  }
+ ],
+ "cta": {
+  "title": "Talk to Eduface about AI-assisted grading",
+  "desc": "See how instructors grade against their own rubric, approve every grade and send it back to the LMS gradebook."
+ }
+}
