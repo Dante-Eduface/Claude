@@ -1,5 +1,6 @@
 # Business case Academica: werkbestand
 _Volgt `GTM/Knowledge/business-case/structuur.md`, maar zonder tijdlijn (geschrapt voor Academica 09-10). Per onderdeel: concept in de chat, na akkoord hier. Eerste concept (09-10) staat in `business-case-concept-v1.md`._
+_PDF-concept (20-10-2026): `business-case-academica.pdf`, bron `business-case-academica.html`. Open velden staan als gestippeld vraagteken._
 
 ## 1. Managementsamenvatting [nog te doen]
 _Lezer denkt: "Dit past bij waar we als organisatie naartoe willen."_
