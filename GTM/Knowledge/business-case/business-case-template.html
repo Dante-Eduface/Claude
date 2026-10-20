@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Business case Eduface</title>
+<style>
+  /* Per klant aanpassen: --klant, --klant-tint en het logo op de cover. */
+  :root {
+    --klant: #1f4e79;
+    --klant-tint: #eef3f8;
+    --kosten: #7b8494;
+    --tekst: #1d2433;
+    --tekst-zacht: #5b6474;
+    --lijn: #d9dde4;
+    --raster: #eceef2;
+    --logo: #8a93a3;
+  }
+  @page { size: A4; margin: 18mm 18mm 20mm; }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { margin: 0; color: var(--tekst); background: #fff;
+         font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 10.5pt; line-height: 1.5; }
+  .pagina { break-before: page; }
+  section { break-inside: avoid; margin-bottom: 30px; }
+  h2.label { font-size: 8.5pt; letter-spacing: .08em; text-transform: uppercase; color: var(--klant); margin: 0 0 6px; font-weight: 600; }
+  h2.label .nr { color: var(--tekst-zacht); margin-right: 6px; }
+  h1 { font-size: 18pt; line-height: 1.25; margin: 0 0 8px; font-weight: 700; max-width: 34ch; }
+  .lead { margin: 0 0 18px; color: var(--tekst-zacht); max-width: 66ch; }
+  .bron { font-size: 8.5pt; color: var(--tekst-zacht); margin-top: 8px; }
+  .ph { background: #fff6d6; padding: 0 3px; border-radius: 3px; }
+
+  /* Cover */
+  .cover { height: 250mm; display: flex; flex-direction: column; }
+  .klantlogo { width: 150px; height: 56px; border: 1.5px dashed var(--lijn); border-radius: 8px; display: grid; place-items: center;
+               color: var(--tekst-zacht); font-size: 9pt; }
+  .cover .titel { margin-top: 70mm; }
+  .cover .soort { font-size: 10pt; letter-spacing: .08em; text-transform: uppercase; color: var(--klant); font-weight: 600; }
+  .cover h1 { font-size: 30pt; max-width: 18ch; margin: 8px 0 16px; }
+  .cover .sub { font-size: 12pt; color: var(--tekst-zacht); max-width: 46ch; }
+  .cover .meta { margin-top: auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; border-top: 2px solid var(--klant); padding-top: 14px; font-size: 9.5pt; }
+  .cover .meta b { display: block; font-size: 8pt; color: var(--tekst-zacht); font-weight: 600; text-transform: uppercase; letter-spacing: .06em; }
+  .afzender { margin-top: 18px; font-size: 8.5pt; color: var(--tekst-zacht); }
+  .afzender img { height: 14px; vertical-align: -2px; margin-left: 4px; }
+
+  /* Kerncijfers */
+  .cijfers { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+  .cijfer { display: grid; grid-template-columns: 44px 170px minmax(0, 1fr); column-gap: 20px; align-items: center;
+            padding: 16px 20px; background: var(--klant-tint); border-radius: 12px; }
+  .icoon { width: 44px; height: 44px; border-radius: 50%; background: #fff; display: grid; place-items: center; color: var(--klant); }
+  .icoon svg { width: 22px; height: 22px; }
+  .getal { color: var(--klant); font-size: 22pt; font-weight: 700; line-height: 1.1; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .uitleg { margin: 0; font-size: 9.5pt; }
+  .uitleg b { font-weight: 600; }
+  .uitleg span { display: block; color: var(--tekst-zacht); margin-top: 2px; }
+
+  /* Kaders */
+  .kader { border-left: 4px solid var(--klant); background: var(--klant-tint); padding: 16px 20px; border-radius: 0 8px 8px 0; margin-top: 22px; }
+  .kader .kop { font-size: 8.5pt; letter-spacing: .08em; text-transform: uppercase; color: var(--klant); font-weight: 600; margin-bottom: 2px; }
+  .kader p { margin: 0; font-weight: 600; }
+  .kader.citaat p { font-weight: 400; font-style: italic; font-size: 11pt; }
+  .kader.citaat footer { font-size: 8.5pt; color: var(--tekst-zacht); margin-top: 4px; }
+
+  /* Tabellen, stijl B */
+  table { width: 100%; border-collapse: collapse; font-size: 9.5pt; font-variant-numeric: tabular-nums; border-radius: 8px; overflow: hidden; }
+  caption { text-align: left; font-size: 9.5pt; font-weight: 600; margin-bottom: 6px; }
+  th, td { padding: 8px 10px; vertical-align: top; text-align: left; }
+  th.num, td.num { text-align: right; }
+  thead th { background: var(--klant); color: #fff; font-weight: 600; font-size: 8.5pt; }
+  tbody td { border-bottom: 1px solid var(--lijn); }
+  tr.groep td { background: var(--klant-tint); font-weight: 600; color: var(--klant); padding: 6px 10px; }
+  tr.totaal td { background: var(--klant-tint); font-weight: 700; border-bottom: none; }
+  td.zacht { color: var(--tekst-zacht); }
+
+  /* Workflow */
+  .stroom { margin-bottom: 16px; }
+  .stroom-kop { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; }
+  .stroom-kop h3 { margin: 0; font-size: 11pt; }
+  .stroom-kop .totaal { font-size: 9.5pt; font-weight: 600; }
+  .stroom-kop .totaal span { color: var(--tekst-zacht); font-weight: 400; }
+  .stappen { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; }
+  .stap { position: relative; border-radius: 10px; padding: 10px 10px 8px; display: flex; flex-direction: column; min-height: 96px; }
+  .stap + .stap::before { content: ""; position: absolute; left: -12px; top: 50%; width: 8px; height: 8px;
+                          border-top: 2px solid var(--tekst-zacht); border-right: 2px solid var(--tekst-zacht); transform: translateY(-50%) rotate(45deg); }
+  .stap .nr { font-size: 8pt; font-weight: 600; color: var(--tekst-zacht); }
+  .stap .wat { font-size: 9pt; font-weight: 600; line-height: 1.3; margin: 2px 0 auto; }
+  .stap .tijd { margin-top: 8px; font-size: 8.5pt; }
+  .docent { background: var(--klant-tint); }
+  .docent .tijd { font-weight: 700; color: var(--klant); }
+  .auto { border: 1.5px dashed var(--lijn); }
+  .auto .tijd { color: var(--tekst-zacht); }
+  .legenda { display: flex; gap: 20px; font-size: 8.5pt; color: var(--tekst-zacht); }
+  .legenda i { display: inline-block; width: 14px; height: 10px; border-radius: 3px; vertical-align: -1px; margin-right: 6px; }
+  .l-docent { background: var(--klant-tint); } .l-auto { border: 1.5px dashed var(--lijn); }
+
+  /* Blokken met icoon */
+  .blokken { display: grid; gap: 12px; }
+  .blokken.twee { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .blokken.vier { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .blok { background: var(--klant-tint); border-radius: 12px; padding: 16px 18px; }
+  .blok .icoon { margin-bottom: 10px; }
+  .blok h3 { margin: 0 0 4px; font-size: 11pt; }
+  .blok p { margin: 0; font-size: 9.5pt; }
+
+  /* Feedbackvoorbeeld */
+  .vergelijk { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .fb { border-radius: 12px; padding: 16px 18px; font-size: 9.5pt; }
+  .fb.nu { border: 1.5px solid var(--lijn); }
+  .fb.straks { background: var(--klant-tint); }
+  .fb h3 { margin: 0 0 8px; font-size: 10pt; }
+  .fb .crit { font-weight: 600; margin-top: 8px; }
+  .fb p { margin: 2px 0 0; }
+
+  /* Checklist */
+  .check { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+  .check li { display: grid; grid-template-columns: 22px minmax(0, 1fr); gap: 10px; padding: 10px 14px; border-radius: 8px; background: var(--klant-tint); }
+  .check svg { width: 20px; height: 20px; color: var(--klant); }
+  .check b { display: block; font-size: 10pt; }
+  .check span { font-size: 9pt; color: var(--tekst-zacht); }
+
+  /* Social proof */
+  .logos { list-style: none; margin: 0 0 16px; padding: 16px 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+           gap: 18px 24px; align-items: center; border-top: 1px solid var(--lijn); border-bottom: 1px solid var(--lijn); }
+  .logos li { display: flex; justify-content: center; }
+  .logos svg { height: 28px; width: auto; color: var(--logo); }
+
+  /* Scope */
+  .fasen { display: grid; grid-template-columns: minmax(0, 1fr) 28px minmax(0, 1fr); align-items: stretch; }
+  .fasen .pijl { display: grid; place-items: center; color: var(--tekst-zacht); font-size: 16pt; }
+  .fasen .blok h3 { margin-bottom: 6px; }
+  .fasen ul { margin: 6px 0 0; padding-left: 16px; font-size: 9.5pt; }
+
+  /* Tijdlijn */
+  .tijdlijn { display: grid; grid-template-columns: 110px minmax(0, 1fr) minmax(0, 1fr); }
+  .spoor { grid-column: 1 / -1; display: grid; grid-template-columns: subgrid; align-items: center; height: 36px; position: relative; margin-top: 22px; }
+  .spoor::before { content: ""; position: absolute; left: 18px; right: 0; top: 50%; border-top: 2px solid var(--lijn); }
+  .go { position: relative; width: 36px; height: 36px; border-radius: 50%; background: var(--klant); color: #fff; display: grid; place-items: center; font-size: 8.5pt; font-weight: 700; }
+  .fase { position: relative; height: 10px; background: var(--klant); border-radius: 5px; margin: 0 5px; }
+  .test { position: absolute; top: -24px; right: 5px; width: 48%; height: 18px; border-radius: 5px; border: 1.5px dashed var(--klant);
+          background: var(--klant-tint); font-size: 8pt; font-weight: 600; color: var(--klant); display: grid; place-items: center; }
+  .tkaart { padding: 12px 10px 0 5px; }
+  .tkaart:first-child { padding-left: 0; padding-right: 14px; }
+  .tkaart .stapnr { font-size: 8pt; font-weight: 600; color: var(--tekst-zacht); }
+  .tkaart .naam { font-size: 11pt; font-weight: 700; margin: 2px 0 4px; }
+  .tkaart p { margin: 0; font-size: 9.5pt; }
+  .tkaart ul { margin: 6px 0 0; padding-left: 16px; font-size: 9pt; color: var(--tekst-zacht); }
+
+  /* Grafiek */
+  .grafiek-legenda { display: flex; gap: 18px; font-size: 8.5pt; color: var(--tekst-zacht); margin-bottom: 6px; }
+  .grafiek-legenda i { display: inline-block; width: 14px; height: 2px; vertical-align: 3px; margin-right: 6px; }
+  svg.grafiek { display: block; width: 100%; height: auto; overflow: visible; }
+  .as text, .glabel { font-size: 11px; fill: var(--tekst-zacht); font-variant-numeric: tabular-nums; }
+  .direct { font-size: 12px; font-weight: 600; fill: var(--tekst); }
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<div class="cover">
+  <div class="klantlogo">Logo [instelling]</div>
+  <div class="titel">
+    <div class="soort">Business case</div>
+    <h1>Invoering van Eduface bij <span class="ph">[instelling]</span></h1>
+    <p class="sub">AI-ondersteuning bij nakijken en feedback, met de docent als eindverantwoordelijke.</p>
+  </div>
+  <div class="meta">
+    <div><b>Voor</b>Managementteam <span class="ph">[instelling]</span></div>
+    <div><b>Opgesteld door</b><span class="ph">[naam, functie]</span></div>
+    <div><b>Datum</b><span class="ph">[datum]</span></div>
+  </div>
+  <div class="afzender">In samenwerking met Eduface</div>
+</div>
+
+<!-- 1 MANAGEMENTSAMENVATTING -->
+<div class="pagina">
+<section>
+  <h2 class="label"><span class="nr">1</span>Samenvatting</h2>
+  <h1>Wij stellen voor Eduface in te voeren bij alle opleidingen</h1>
+  <p class="lead">Eduface doet een eerste beoordeling van schriftelijke opdrachten en schrijft de feedback per criterium. De docent leest de opdracht zelf, controleert het voorstel en keurt elke opmerking en elk cijfer goed voordat de student iets ziet.</p>
+  <ul class="cijfers">
+    <li class="cijfer">
+      <div class="icoon" role="img" aria-label="Geld"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M17 6.5A7 7 0 1 0 17 17.5"/><path d="M4 10h9"/><path d="M4 14h9"/></svg></div>
+      <div class="getal">€&nbsp;32.040</div>
+      <p class="uitleg"><b>netto per jaar, vanaf jaar 2</b><span>745 bespaarde docenturen van €&nbsp;72, min €&nbsp;21.600 aan licenties.</span></p>
+    </li>
+    <li class="cijfer">
+      <div class="icoon" role="img" aria-label="Tijd"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></div>
+      <div class="getal">745 uur</div>
+      <p class="uitleg"><b>minder feedback schrijven per jaar</b><span>Leestijd niet meegerekend. Ruim 18 uur per docent, bij 40 docenten.</span></p>
+    </li>
+    <li class="cijfer">
+      <div class="icoon" role="img" aria-label="Mensen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19c.6-3.2 2.8-5 5.5-5s4.9 1.8 5.5 5"/><circle cx="17" cy="9" r="2.5"/><path d="M15.8 14.2c2.3.1 4 1.6 4.7 4.3"/></svg></div>
+      <div class="getal">1 week</div>
+      <p class="uitleg"><b>tot een student feedback krijgt</b><span>Nu is dat drie weken.</span></p>
+    </li>
+  </ul>
+  <div class="kader">
+    <div class="kop">Besluit</div>
+    <p>Wij vragen het MT akkoord op invoering van Eduface bij alle opleidingen, te beginnen met een testperiode.</p>
+  </div>
+  <p class="bron">Alle cijfers in dit document zijn voorbeeldcijfers. Ze worden per instelling vervangen door eigen metingen.</p>
+</section>
+</div>
+
+<!-- 2 PIJN EN WORKFLOW -->
+<div class="pagina">
+<section>
+  <h2 class="label"><span class="nr">2</span>De huidige situatie</h2>
+  <h1>Een docent besteedt nu meer tijd aan feedback schrijven dan aan lezen</h1>
+  <p class="lead">Het lezen van een opdracht blijft altijd werk van de docent. De winst zit in wat daarna komt: beoordelen per criterium, de feedback formuleren en het cijfer verwerken. Voorbeeld voor een paper.</p>
+  <div class="stroom">
+    <div class="stroom-kop"><h3>Nu</h3><div class="totaal">40 min per paper <span>· 3 weken tot feedback</span></div></div>
+    <ol class="stappen">
+      <li class="stap auto"><span class="nr">1</span><span class="wat">Student levert in via het LMS</span><span class="tijd">automatisch</span></li>
+      <li class="stap docent"><span class="nr">2</span><span class="wat">Docent leest de opdracht</span><span class="tijd">12 min</span></li>
+      <li class="stap docent"><span class="nr">3</span><span class="wat">Docent beoordeelt per criterium</span><span class="tijd">6 min</span></li>
+      <li class="stap docent"><span class="nr">4</span><span class="wat">Docent schrijft de feedback</span><span class="tijd">20 min</span></li>
+      <li class="stap docent"><span class="nr">5</span><span class="wat">Docent zet het cijfer in het LMS</span><span class="tijd">2 min</span></li>
+    </ol>
+  </div>
+  <div class="stroom">
+    <div class="stroom-kop"><h3>Met Eduface</h3><div class="totaal">25 min per paper <span>· 1 week tot feedback</span></div></div>
+    <ol class="stappen">
+      <li class="stap auto"><span class="nr">1</span><span class="wat">Student levert in via het LMS</span><span class="tijd">automatisch</span></li>
+      <li class="stap docent"><span class="nr">2</span><span class="wat">Docent leest de opdracht</span><span class="tijd">12 min</span></li>
+      <li class="stap auto"><span class="nr">3</span><span class="wat">Eduface doet een voorstel per criterium, met feedback</span><span class="tijd">automatisch</span></li>
+      <li class="stap docent"><span class="nr">4</span><span class="wat">Docent controleert, past aan en keurt goed</span><span class="tijd">13 min</span></li>
+      <li class="stap auto"><span class="nr">5</span><span class="wat">Cijfer gaat terug naar het LMS</span><span class="tijd">automatisch</span></li>
+    </ol>
+  </div>
+  <div class="legenda"><span><i class="l-docent"></i>Werk van de docent</span><span><i class="l-auto"></i>Gaat automatisch</span></div>
+  <div class="kader citaat">
+    <p>"In de toetsweken kijk ik 's avonds na. Feedback schrijven is dan het eerste dat korter wordt."</p>
+    <footer><span class="ph">[Docent, opleiding]</span></footer>
+  </div>
+  <p class="bron">Wat niets doen kost: bij gelijkblijvende studentaantallen blijft de feedbacktijd per jaar gelijk, en groeit hij mee met elke extra student. <span class="ph">[aanvullen met eigen cijfers]</span></p>
+</section>
+</div>
+
+<!-- 3 KOERSPLAN -->
+<div class="pagina">
+<section>
+  <h2 class="label"><span class="nr">3</span>Aansluiting op ons koersplan</h2>
+  <h1>Eduface draagt bij aan drie doelen uit het koersplan</h1>
+  <p class="lead">De doelen staan hieronder letterlijk zoals in <span class="ph">[naam koersplan, jaartal]</span>.</p>
+  <table>
+    <caption>Doelen uit het koersplan en de bijdrage van Eduface</caption>
+    <thead><tr><th style="width:45%">Doel uit het koersplan</th><th>Bijdrage van Eduface</th></tr></thead>
+    <tbody>
+      <tr><td><span class="ph">"[citaat doel 1]"</span></td><td>Elke student krijgt feedback per criterium, ook in drukke periodes.</td></tr>
+      <tr><td><span class="ph">"[citaat doel 2]"</span></td><td>Docenten besteden minder tijd aan het formuleren van feedback en meer aan begeleiding.</td></tr>
+      <tr><td><span class="ph">"[citaat doel 3]"</span></td><td>Beoordelingen zijn per criterium vastgelegd en terug te vinden.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- 4 IMPACT -->
+<section>
+  <h2 class="label"><span class="nr">4</span>Impact</h2>
+  <h1>Wat Eduface oplevert in geld, tijd en voor mensen</h1>
+  <p class="lead">De besparing is alleen gerekend op beoordelen, feedback formuleren en cijfers verwerken. Het lezen van de opdracht blijft gelijk en telt niet mee.</p>
+  <table>
+    <caption>Bespaarde tijd per opdrachttype, per jaar</caption>
+    <thead><tr><th>Opdrachttype</th><th class="num">Aantal per jaar</th><th class="num">Nu</th><th class="num">Met Eduface</th><th class="num">Bespaard</th></tr></thead>
+    <tbody>
+      <tr><td>Korte opdracht</td><td class="num">1.200</td><td class="num">8 min</td><td class="num">2 min</td><td class="num">120 uur</td></tr>
+      <tr><td>Paper</td><td class="num">1.600</td><td class="num">28 min</td><td class="num">13 min</td><td class="num">400 uur</td></tr>
+      <tr><td>Eindwerk</td><td class="num">300</td><td class="num">60 min</td><td class="num">15 min</td><td class="num">225 uur</td></tr>
+      <tr class="totaal"><td>Totaal</td><td class="num">3.100</td><td></td><td></td><td class="num">745 uur</td></tr>
+    </tbody>
+  </table>
+  <p class="bron">Tijden per opdracht zonder leestijd, geklokt door <span class="ph">[aantal]</span> docenten op <span class="ph">[datum]</span>. De testperiode meet dezelfde stappen opnieuw.</p>
+  <div class="blokken twee" style="grid-template-columns:repeat(3,minmax(0,1fr));margin-top:16px">
+    <div class="blok">
+      <div class="icoon" role="img" aria-label="Geld"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M17 6.5A7 7 0 1 0 17 17.5"/><path d="M4 10h9"/><path d="M4 14h9"/></svg></div>
+      <h3>Geld</h3><p>€&nbsp;32.040 netto per jaar vanaf jaar 2. De rekensom staat in hoofdstuk 12.</p>
+    </div>
+    <div class="blok">
+      <div class="icoon" role="img" aria-label="Tijd"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></div>
+      <h3>Tijd</h3><p>745 uur per jaar minder feedback schrijven. Dat is ruim 18 uur per docent.</p>
+    </div>
+    <div class="blok">
+      <div class="icoon" role="img" aria-label="Mensen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19c.6-3.2 2.8-5 5.5-5s4.9 1.8 5.5 5"/><circle cx="17" cy="9" r="2.5"/><path d="M15.8 14.2c2.3.1 4 1.6 4.7 4.3"/></svg></div>
+      <h3>Mensen</h3><p>Minder avondwerk in toetsweken. Studenten krijgen feedback in één week in plaats van drie.</p>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- 5 FEEDBACKKWALITEIT -->
+<div class="pagina">
+<section>
+  <h2 class="label"><span class="nr">5</span>Kwaliteit van feedback</h2>
+  <h1>Elke student krijgt feedback per criterium</h1>
+  <p class="lead">Hieronder dezelfde paper, twee keer beoordeeld. <span class="ph">[Vervangen door een echt geanonimiseerd voorbeeld uit de eigen opleiding]</span></p>
+  <div class="vergelijk">
+    <div class="fb nu">
+      <h3>Nu</h3>
+      <p>"Goed onderzoek, maar de analyse kan dieper. Let op je bronvermelding. Cijfer: 6,5."</p>
+    </div>
+    <div class="fb straks">
+      <h3>Met Eduface, na controle door de docent</h3>
+      <div class="crit">Probleemstelling · voldoende</div><p>De vraag is helder, maar de afbakening ontbreekt. Noem welke doelgroep je onderzoekt.</p>
+      <div class="crit">Analyse · onvoldoende</div><p>In paragraaf 3 trek je een conclusie zonder bron. Onderbouw die met de data uit tabel 2.</p>
+      <div class="crit">Bronnen · voldoende</div><p>Drie van de vijf verwijzingen missen een paginanummer.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 6 VOLGBAARHEID -->
+<section>
+  <h2 class="label"><span class="nr">6</span>Volgbaarheid en accreditatie</h2>
+  <h1>Elke beoordeling is per criterium vastgelegd en terug te vinden</h1>
+  <table>
+    <caption>Hoe Eduface de borging ondersteunt</caption>
+    <thead><tr><th style="width:42%">Eis bij accreditatie</th><th>Hoe dat geborgd is</th></tr></thead>
+    <tbody>
+      <tr><td>Beoordeling is transparant en navolgbaar</td><td>Per criterium staan de score en de onderbouwing vast, gekoppeld aan de rubric.</td></tr>
+      <tr><td>Beoordelaars beoordelen consistent</td><td>Elke opdracht wordt langs dezelfde criteria beoordeeld. Afwijkingen tussen docenten zijn zichtbaar.</td></tr>
+      <tr><td>Studenten krijgen bruikbare feedback</td><td>Feedback per criterium, met een concreet verbeterpunt.</td></tr>
+      <tr><td><span class="ph">[eis van eigen accreditatiekader]</span></td><td><span class="ph">[aanvullen]</span></td></tr>
+    </tbody>
+  </table>
+</section>
+</div>
+
+<!-- 7 TOEKOMSTBESTENDIG -->
+<div class="pagina">
+<section>
+  <h2 class="label"><span class="nr">7</span>Toekomstbestendig onderwijs</h2>
+  <h1>Studenten mogen AI gebruiken, en worden toch inhoudelijk beoordeeld</h1>
+  <p class="lead">AI schrijft vlot, maar vaak met aannames en algemene alinea's. Een beoordeling per criterium haalt dat er direct uit.</p>
+  <div class="blokken twee">
+    <div class="blok">
+      <div class="icoon" role="img" aria-label="Docent"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-5 9 5-9 5-9-5z"/><path d="M7 11v5c3 2 7 2 10 0v-5"/></svg></div>
+      <h3>Docenten</h3><p>Docenten werken dagelijks met AI en leren waar het goed in is en waar niet. Dat bouwt AI-geletterdheid op binnen het team.</p>
+    </div>
+    <div class="blok">
+      <div class="icoon" role="img" aria-label="Student"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5V5a1 1 0 0 1 1-1h11l4 4v11.5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1z"/><path d="M8 12h8M8 16h5"/></svg></div>
+      <h3>Studenten</h3><p>Een student die AI gebruikt, moet nog steeds aan elk criterium voldoen. Aannames en wollige alinea's vallen op en kosten punten.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 8 SOCIAL PROOF -->
+<section>
+  <h2 class="label"><span class="nr">8</span>Ervaring elders</h2>
+  <h1>Eduface draait al bij <span class="ph">[aantal]</span> instellingen</h1>
+  <ul class="logos" aria-label="Instellingen die Eduface gebruiken">
+    <li><svg viewBox="0 0 150 36"><rect x="0" y="4" width="28" height="28" rx="4" fill="currentColor"/><text x="38" y="24" font-family="Georgia, serif" font-size="15" fill="currentColor">Hogeschool</text></svg></li>
+    <li><svg viewBox="0 0 150 36"><circle cx="14" cy="18" r="14" fill="currentColor"/><text x="36" y="24" font-family="Arial" font-weight="700" font-size="15" fill="currentColor">UNIVERSITY</text></svg></li>
+    <li><svg viewBox="0 0 150 36"><text x="0" y="24" font-family="Georgia, serif" font-style="italic" font-size="18" fill="currentColor">Academie</text><rect x="92" y="10" width="16" height="16" fill="currentColor"/></svg></li>
+    <li><svg viewBox="0 0 150 36"><path d="M0 32 L14 4 L28 32 Z" fill="currentColor"/><text x="36" y="24" font-family="Arial" font-size="15" fill="currentColor">Business School</text></svg></li>
+    <li><svg viewBox="0 0 150 36"><text x="0" y="25" font-family="Arial" font-weight="700" font-size="20" fill="currentColor">OPLEIDING</text></svg></li>
+    <li><svg viewBox="0 0 150 36"><rect x="0" y="6" width="24" height="24" rx="12" fill="none" stroke="currentColor" stroke-width="4"/><text x="34" y="24" font-family="Georgia, serif" font-size="15" fill="currentColor">College</text></svg></li>
+  </ul>
+  <div class="kader citaat">
+    <p>"<span class="ph">[citaat van een klant]</span>"</p>
+    <footer><span class="ph">[Naam, functie, instelling]</span></footer>
+  </div>
+</section>
+</div>
+
+<!-- 9 ONDERSTEUNING -->
+<div class="pagina">
+<section>
+  <h2 class="label"><span class="nr">9</span>Ondersteuning bij invoering</h2>
+  <h1>Eduface levert meer dan het platform</h1>
+  <p class="lead"><span class="ph">[Bevestigen: wat zit standaard in de licentie en wat niet]</span></p>
+  <div class="blokken vier">
+    <div class="blok"><div class="icoon" role="img" aria-label="LMS"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 7H6a3 3 0 0 0 0 6h3M15 7h3a3 3 0 0 1 0 6h-3M8 10h8"/></svg></div><h3>Koppeling met het LMS</h3><p>Opdrachten en cijfers lopen via <span class="ph">[Canvas / Brightspace / Moodle / Blackboard]</span>.</p></div>
+    <div class="blok"><div class="icoon" role="img" aria-label="Training"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></div><h3>Training</h3><p>Docenten leren werken met het platform en de rubrics.</p></div>
+    <div class="blok"><div class="icoon" role="img" aria-label="Support"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13v-1a8 8 0 0 1 16 0v1"/><rect x="3" y="13" width="4" height="6" rx="1.5"/><rect x="17" y="13" width="4" height="6" rx="1.5"/></svg></div><h3>Technische support</h3><p>Vragen van docenten en IT worden opgevolgd door Eduface.</p></div>
+    <div class="blok"><div class="icoon" role="img" aria-label="AI-geletterdheid"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.4 1 1.1 1 1.8V16h5v-.3c0-.7.4-1.4 1-1.8A6 6 0 0 0 12 3z"/></svg></div><h3>AI-geletterdheid</h3><p>Docenten krijgen inzicht in wat AI wel en niet goed beoordeelt.</p></div>
+  </div>
+</section>
+
+<!-- 10 PRIVACY -->
+<section>
+  <h2 class="label"><span class="nr">10</span>Privacy en AVG</h2>
+  <h1>Privacy en gegevensverwerking zijn vastgelegd</h1>
+  <ul class="check">
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg><div><b>Data blijft in de EU</b><span>Alle verwerking op EU-infrastructuur.</span></div></li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg><div><b>Geen training op studentdata</b><span>Werk van studenten wordt nooit gebruikt om modellen te trainen.</span></div></li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg><div><b>Verwerkersovereenkomst</b><span>Opgenomen als bijlage bij dit document.</span></div></li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg><div><b>De docent beslist</b><span>Geen cijfer of opmerking bereikt de student zonder akkoord van de docent.</span></div></li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg><div><b>AI Act</b><span class="ph">[risicoprofiel bevestigen]</span></div></li>
+  </ul>
+</section>
+</div>
+
+<!-- 11 PRIJS -->
+<div class="pagina">
+<section>
+  <h2 class="label"><span class="nr">11</span>Prijs en licentiemodel</h2>
+  <h1>Eén licentie per student per maand</h1>
+  <p class="lead">De kosten groeien mee met het aantal studenten. Er zijn geen kosten per docent of per opdracht.</p>
+  <table>
+    <caption>Rekenvoorbeeld</caption>
+    <thead><tr><th>Onderdeel</th><th class="num">Waarde</th></tr></thead>
+    <tbody>
+      <tr><td>Aantal studenten</td><td class="num"><span class="ph">600</span></td></tr>
+      <tr><td>Prijs per student per maand</td><td class="num"><span class="ph">€&nbsp;3</span></td></tr>
+      <tr><td>Maanden per jaar</td><td class="num">12</td></tr>
+      <tr class="totaal"><td>Kosten per jaar</td><td class="num">€&nbsp;21.600</td></tr>
+    </tbody>
+  </table>
+  <p class="bron">Bedragen exclusief btw. <span class="ph">[Prijs en eventuele implementatiekosten aan te leveren]</span></p>
+</section>
+
+<!-- 12 KOSTEN EN BATEN -->
+<section>
+  <h2 class="label"><span class="nr">12</span>Kosten en baten</h2>
+  <h1>De investering is na vier maanden terugverdiend</h1>
+  <table>
+    <caption>Kosten en baten per jaar, in euro</caption>
+    <thead><tr><th>Post</th><th class="num">Jaar 1</th><th class="num">Jaar 2</th><th class="num">Jaar 3</th></tr></thead>
+    <tbody>
+      <tr class="groep"><td colspan="4">Kosten</td></tr>
+      <tr><td>Licenties</td><td class="num">21.600</td><td class="num">21.600</td><td class="num">21.600</td></tr>
+      <tr class="groep"><td colspan="4">Baten</td></tr>
+      <tr><td>Bespaarde docenturen</td><td class="num">44.250</td><td class="num">53.640</td><td class="num">53.640</td></tr>
+      <tr class="totaal"><td>Netto</td><td class="num">22.650</td><td class="num">32.040</td><td class="num">32.040</td></tr>
+    </tbody>
+  </table>
+  <p class="bron">745 uur × €&nbsp;72 = €&nbsp;53.640 per jaar. Jaar 1 lager door de testperiode: drie maanden op 30%. Uurtarief op basis van <span class="ph">[cao of eigen tarief]</span>.</p>
+
+  <div style="margin-top:22px">
+    <div class="grafiek-legenda"><span><i style="background:var(--klant)"></i>Baten: bespaarde docenturen</span><span><i style="background:var(--kosten)"></i>Kosten: licenties</span></div>
+    <svg id="grafiek" class="grafiek" viewBox="0 0 680 280" role="img" aria-label="Opgetelde baten halen de opgetelde kosten in maand vier in."></svg>
+  </div>
+</section>
+</div>
+
+<!-- 13 RISICO'S -->
+<div class="pagina">
+<section>
+  <h2 class="label"><span class="nr">13</span>Risico's en maatregelen</h2>
+  <h1>De grootste risico's zijn voorzien</h1>
+  <table>
+    <caption>Risico's, maatregelen en eigenaar</caption>
+    <thead><tr><th style="width:30%">Risico</th><th>Maatregel</th><th style="width:22%">Eigenaar</th></tr></thead>
+    <tbody>
+      <tr><td>Implementatie loopt uit</td><td>Testperiode bij een beperkt aantal opleidingen, uitrol in fasen.</td><td><span class="ph">[naam]</span></td></tr>
+      <tr><td>Docenten gebruiken het platform niet</td><td>Training voor de start, vaste contactpersoon per opleiding.</td><td><span class="ph">[naam]</span></td></tr>
+      <tr><td>De besparing valt lager uit</td><td>De testperiode meet de tijd per stap opnieuw. De uitrol volgt de gemeten cijfers.</td><td><span class="ph">[naam]</span></td></tr>
+      <tr><td>Onduidelijk eigenaarschap van data en processen</td><td>Eigenaar per proces vastgelegd in het go-liveplan.</td><td><span class="ph">[naam]</span></td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- 14 SCOPE -->
+<section>
+  <h2 class="label"><span class="nr">14</span>Scope</h2>
+  <h1>Eerst een testperiode, daarna de uitrol</h1>
+  <div class="fasen">
+    <div class="blok">
+      <h3>Testperiode</h3>
+      <p><span class="ph">[aantal]</span> opleidingen, <span class="ph">[aantal]</span> docenten, <span class="ph">[aantal]</span> weken.</p>
+      <ul><li>tijd per stap opnieuw meten</li><li>feedbackkwaliteit vergelijken</li><li>ervaring van docenten ophalen</li></ul>
+    </div>
+    <div class="pijl" aria-hidden="true">→</div>
+    <div class="blok">
+      <h3>Uitrol</h3>
+      <p>Alle opleidingen, volgens het implementatieplan.</p>
+      <ul><li>planning per opleiding</li><li>training van alle docenten</li><li>vaste evaluatiemomenten</li></ul>
+    </div>
+  </div>
+</section>
+
+<!-- 15 TIJDLIJN -->
+<section>
+  <h2 class="label"><span class="nr">15</span>Tijdlijn</h2>
+  <h1>Na een go van het MT starten wij direct met het go-liveplan</h1>
+  <p class="lead">De datums leggen wij samen met Eduface vast in het go-liveplan. De testperiode valt in de afronding van dat plan.</p>
+  <div class="tijdlijn">
+    <div class="spoor">
+      <div class="go" aria-hidden="true">Go</div>
+      <div class="fase"></div>
+      <div class="fase"><div class="test" style="left:-52%;right:auto;width:48%">testperiode</div></div>
+    </div>
+    <div class="tkaart"><div class="stapnr">Besluit</div><div class="naam">Go van het MT</div><p>Akkoord op deze business case.</p></div>
+    <div class="tkaart"><div class="stapnr">Stap 1</div><div class="naam">Go-liveplan</div><p>Wie doet wat en wanneer.</p><ul><li>koppeling met het LMS</li><li>training eerste docenten</li><li>testperiode</li></ul></div>
+    <div class="tkaart"><div class="stapnr">Stap 2</div><div class="naam">Implementatieplan</div><p>Uitrol naar alle opleidingen.</p><ul><li>planning per opleiding</li><li>training alle docenten</li><li>vaste evaluatiemomenten</li></ul></div>
+  </div>
+</section>
+</div>
+
+<script>
+  const M = 24, kosten = [], baten = [];
+  for (let m = 1; m <= M; m++) { kosten.push(1800 * m); baten.push(m <= 3 ? 1341 * m : 4023 + 4470 * (m - 3)); }
+  const svg = document.getElementById('grafiek');
+  const W = 680, H = 280, L = 60, R = 140, T = 10, B = 32, pw = W - L - R, ph = H - T - B, yMax = 100000;
+  const x = m => L + (m - 1) / (M - 1) * pw, y = v => T + ph - v / yMax * ph;
+  const ns = 'http://www.w3.org/2000/svg';
+  const el = (n, a, t) => { const e = document.createElementNS(ns, n); for (const k in a) e.setAttribute(k, a[k]); if (t) e.textContent = t; svg.appendChild(e); return e; };
+  for (let v = 0; v <= yMax; v += 25000) {
+    el('line', { x1: L, x2: L + pw, y1: y(v), y2: y(v), stroke: v === 0 ? '#9aa3b2' : '#eceef2' });
+    el('text', { class: 'glabel', x: L - 8, y: y(v) + 4, 'text-anchor': 'end' }, v === 0 ? '0' : (v / 1000) + 'k');
+  }
+  [1, 6, 12, 18, 24].forEach(m => el('text', { class: 'glabel', x: x(m), y: H - 8, 'text-anchor': 'middle' }, 'mnd ' + m));
+  el('rect', { x: x(1), y: T, width: x(3) - x(1), height: ph, fill: 'var(--klant-tint)' });
+  el('text', { class: 'glabel', x: x(1) + 4, y: T + 13 }, 'testperiode');
+  const pad = a => a.map((v, i) => (i ? 'L' : 'M') + x(i + 1).toFixed(1) + ' ' + y(v).toFixed(1)).join(' ');
+  el('path', { d: pad(kosten), fill: 'none', stroke: 'var(--kosten)', 'stroke-width': 2 });
+  el('path', { d: pad(baten), fill: 'none', stroke: 'var(--klant)', 'stroke-width': 2.5 });
+  el('text', { class: 'direct', x: x(M) + 8, y: y(baten[M - 1]) + 4 }, 'Baten € ' + baten[M - 1].toLocaleString('nl-NL'));
+  el('text', { class: 'direct', x: x(M) + 8, y: y(kosten[M - 1]) + 4 }, 'Kosten € ' + kosten[M - 1].toLocaleString('nl-NL'));
+  const tv = baten.findIndex((b, i) => b >= kosten[i]) + 1;
+  el('line', { x1: x(tv), x2: x(tv), y1: y(baten[tv - 1]) - 6, y2: y(50000), stroke: 'var(--tekst)' });
+  el('circle', { cx: x(tv), cy: y(baten[tv - 1]), r: 5, fill: '#fff', stroke: 'var(--tekst)', 'stroke-width': 2 });
+  el('text', { class: 'direct', x: x(tv) + 8, y: y(50000) + 4 }, 'Terugverdiend in maand ' + tv);
+</script>
+</body>
+</html>
