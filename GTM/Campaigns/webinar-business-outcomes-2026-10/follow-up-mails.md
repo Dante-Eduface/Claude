@@ -29,18 +29,20 @@ _Bijgewerkt 2026-10-20. Template van Dante, per persoon ingevuld. Afzender Jeroe
 
 ## 2. Paul Wright
 
+*Eigen versie (20-10-2026): collega Paul Folan kreeg de standaardmail al.*
+
 **To:** paul.wright@mla.ac.uk  
-**Subject:** White paper from our webinar on AI marking and feedback
+**Subject:** The cost-benefit side of AI marking, for MLA College
 
 > Hi Paul,
 >
-> Thanks for joining our webinar "The business outcomes of AI marking and feedback". You were in the Operational efficiency room, so you didn't hear what came up in the Consistency room. We've put both rooms into one white paper, which I've attached.
+> Thanks for joining our webinar "The business outcomes of AI marking and feedback". You were with me in the Operational efficiency room, while your colleague Paul Folan was in Consistency. I've sent him the white paper too. It covers both rooms, and I've attached it here.
 >
-> When you signed up, you mentioned the cost-benefit of marking and feedback. That's where the report below would focus.
+> When you signed up, you said you're advising on AI strategy and want to understand the cost-benefit of marking and feedback. That's the part we'd like to work out for MLA College: a free report on what Eduface could mean in time and cost, something you can share internally, including with Paul.
 >
-> If you want to go back over the key points, here's a 20-minute summary of the webinar: [Webinar in Google Drive]
+> If you want to go back over the key points first, here's a 20-minute summary of the webinar: [Webinar in Google Drive]
 >
-> We'd also like to put together a free report for you on what Eduface could mean for MLA College, something you can share with colleagues internally. I'll give you a call in the coming week to talk it through. If you already know it's a yes, or that now isn't the right time, just reply here.
+> I'll give you a call in the coming week to talk it through. If you already know it's a yes, or that now isn't the right time, just reply here.
 >
 > Best,
 >
