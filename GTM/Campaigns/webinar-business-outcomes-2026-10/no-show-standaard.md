@@ -29,21 +29,6 @@ _Concept 2026-10-20. Afzender Jeroen. Bel-zin alleen bij een UK- of NL-nummer in
 | Alex Jackson | ajackson@stdavidscollege.ac.uk | St David's Catholic College | nee, nummer is +1 (VS) |
 | David Weale | d.weale@ucfb.ac.uk | UCFB | nee, nummer is +1 (VS) |
 
-## NHA (Nederlands, één mail aan beide)
+## NHA
 
-**To:** r.luiten@nha.nl  
-**Cc:** b.crijnen@nha.nl  
-**Onderwerp:** Whitepaper van ons webinar over AI-nakijken
-
-> Hoi Rowan en Bart,
->
-> Jullie konden vorige week helaas niet bij ons webinar "The business outcomes of AI marking and feedback". We hebben beide breakout rooms, Operational efficiency en Consistency, in één whitepaper gezet, die ik heb bijgevoegd.
->
-> Willen jullie de belangrijkste punten terugzien, hier is een samenvatting van 20 minuten: [Webinar in Google Drive]
->
-> We maken ook graag een gratis rapport over wat Eduface voor NHA kan betekenen, iets wat jullie intern kunnen delen. Ik bel Rowan komende week om het door te nemen. Weten jullie al dat het een ja is, of is het nu niet het goede moment, laat het dan hier weten.
->
-> Met vriendelijke groet,
->
-> Jeroen van Gessel  
-> Eduface
+Rowan Luiten en Bart Crijnen krijgen deze mail niet: ze zijn al via een ander kanaal benaderd (Dante, 20-10-2026).
