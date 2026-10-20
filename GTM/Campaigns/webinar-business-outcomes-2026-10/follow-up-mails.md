@@ -1,6 +1,6 @@
 # Follow-up mails attendees, webinar 15-10-2026
 
-_Bijgewerkt 2026-10-20. Template van Dante, per persoon ingevuld. Afzender Jeroen. Pete Lonsdale al verstuurd. Geen telefoonnummers in Close, dus de bel-zin is overal weggelaten. Vóór versturen: bijlage en Drive-link toevoegen._
+_Bijgewerkt 2026-10-20. Template van Dante, per persoon ingevuld. Afzender Jeroen. Pete Lonsdale al verstuurd. Bel-zin alleen bij wie een telefoonnummer in Close heeft (gecheckt 20-10-2026). Vóór versturen: bijlage en Drive-link toevoegen._
 
 ---
 
@@ -17,7 +17,7 @@ _Bijgewerkt 2026-10-20. Template van Dante, per persoon ingevuld. Afzender Jeroe
 >
 > If you want to go back over the key points, here's a 20-minute summary of the webinar: [Webinar in Google Drive]
 >
-> We'd also like to put together a free report for you on what Eduface could mean for Regent College London, something you can share with colleagues internally. If you already know it's a yes, or that now isn't the right time, just reply here.
+> We'd also like to put together a free report for you on what Eduface could mean for Regent College London, something you can share with colleagues internally. I'll give you a call in the coming week to talk it through. If you already know it's a yes, or that now isn't the right time, just reply here.
 >
 > Best,
 >
@@ -40,7 +40,7 @@ _Bijgewerkt 2026-10-20. Template van Dante, per persoon ingevuld. Afzender Jeroe
 >
 > If you want to go back over the key points, here's a 20-minute summary of the webinar: [Webinar in Google Drive]
 >
-> We'd also like to put together a free report for you on what Eduface could mean for MLA College, something you can share with colleagues internally. If you already know it's a yes, or that now isn't the right time, just reply here.
+> We'd also like to put together a free report for you on what Eduface could mean for MLA College, something you can share with colleagues internally. I'll give you a call in the coming week to talk it through. If you already know it's a yes, or that now isn't the right time, just reply here.
 >
 > Best,
 >
@@ -86,7 +86,7 @@ _Bijgewerkt 2026-10-20. Template van Dante, per persoon ingevuld. Afzender Jeroe
 >
 > If you want to go back over the key points, here's a 20-minute summary of the webinar: [Webinar in Google Drive]
 >
-> We'd also like to put together a free report for you on what Eduface could mean for Goldsmiths, something you can share with colleagues internally. If you already know it's a yes, or that now isn't the right time, just reply here.
+> We'd also like to put together a free report for you on what Eduface could mean for Goldsmiths, something you can share with colleagues internally. I'll give you a call in the coming week to talk it through. If you already know it's a yes, or that now isn't the right time, just reply here.
 >
 > Best,
 >
@@ -155,7 +155,7 @@ _Bijgewerkt 2026-10-20. Template van Dante, per persoon ingevuld. Afzender Jeroe
 >
 > If you want to go back over the key points, here's a 20-minute summary of the webinar: [Webinar in Google Drive]
 >
-> We'd also like to put together a free report for you on what Eduface could mean for MLA College, something you can share with colleagues internally. If you already know it's a yes, or that now isn't the right time, just reply here.
+> We'd also like to put together a free report for you on what Eduface could mean for MLA College, something you can share with colleagues internally. I'll give you a call in the coming week to talk it through. If you already know it's a yes, or that now isn't the right time, just reply here.
 >
 > Best,
 >
@@ -178,7 +178,7 @@ _Bijgewerkt 2026-10-20. Template van Dante, per persoon ingevuld. Afzender Jeroe
 >
 > If you want to go back over the key points, here's a 20-minute summary of the webinar: [Webinar in Google Drive]
 >
-> We'd also like to put together a free report for you on what Eduface could mean for the University of Edinburgh, something you can share with colleagues internally. If you already know it's a yes, or that now isn't the right time, just reply here.
+> We'd also like to put together a free report for you on what Eduface could mean for the University of Edinburgh, something you can share with colleagues internally. I'll give you a call in the coming week to talk it through. If you already know it's a yes, or that now isn't the right time, just reply here.
 >
 > Best,
 >
@@ -201,7 +201,7 @@ _Bijgewerkt 2026-10-20. Template van Dante, per persoon ingevuld. Afzender Jeroe
 >
 > If you want to go back over the key points, here's a 20-minute summary of the webinar: [Webinar in Google Drive]
 >
-> We'd also like to put together a free report for you on what Eduface could mean for the University of Strathclyde, something you can share with colleagues internally. If you already know it's a yes, or that now isn't the right time, just reply here.
+> We'd also like to put together a free report for you on what Eduface could mean for the University of Strathclyde, something you can share with colleagues internally. I'll give you a call in the coming week to talk it through. If you already know it's a yes, or that now isn't the right time, just reply here.
 >
 > Best,
 >
@@ -222,7 +222,7 @@ _Bijgewerkt 2026-10-20. Template van Dante, per persoon ingevuld. Afzender Jeroe
 >
 > If you want to go back over the key points, here's a 20-minute summary of the webinar: [Webinar in Google Drive]
 >
-> We'd also like to put together a free report for you on what Eduface could mean for The University of Law, something you can share with colleagues internally. If you already know it's a yes, or that now isn't the right time, just reply here.
+> We'd also like to put together a free report for you on what Eduface could mean for The University of Law, something you can share with colleagues internally. I'll give you a call in the coming week to talk it through. If you already know it's a yes, or that now isn't the right time, just reply here.
 >
 > Best,
 >
@@ -243,7 +243,7 @@ _Bijgewerkt 2026-10-20. Template van Dante, per persoon ingevuld. Afzender Jeroe
 >
 > If you want to go back over the key points, here's a 20-minute summary of the webinar: [Webinar in Google Drive]
 >
-> We'd also like to put together a free report for you on what Eduface could mean for UWE Bristol, something you can share with colleagues internally. If you already know it's a yes, or that now isn't the right time, just reply here.
+> We'd also like to put together a free report for you on what Eduface could mean for UWE Bristol, something you can share with colleagues internally. I'll give you a call in the coming week to talk it through. If you already know it's a yes, or that now isn't the right time, just reply here.
 >
 > Best,
 >
@@ -264,7 +264,7 @@ _Bijgewerkt 2026-10-20. Template van Dante, per persoon ingevuld. Afzender Jeroe
 >
 > If you want to go back over the key points, here's a 20-minute summary of the webinar: [Webinar in Google Drive]
 >
-> We'd also like to put together a free report for you on what Eduface could mean for Ulster University, something you can share with colleagues internally. If you already know it's a yes, or that now isn't the right time, just reply here.
+> We'd also like to put together a free report for you on what Eduface could mean for Ulster University, something you can share with colleagues internally. I'll give you a call in the coming week to talk it through. If you already know it's a yes, or that now isn't the right time, just reply here.
 >
 > Best,
 >
@@ -306,7 +306,7 @@ _Bijgewerkt 2026-10-20. Template van Dante, per persoon ingevuld. Afzender Jeroe
 >
 > If you want to go back over the key points, here's a 20-minute summary of the webinar: [Webinar in Google Drive]
 >
-> We'd also like to put together a free report for you on what Eduface could mean for the University of Stirling, something you can share with colleagues internally. If you already know it's a yes, or that now isn't the right time, just reply here.
+> We'd also like to put together a free report for you on what Eduface could mean for the University of Stirling, something you can share with colleagues internally. I'll give you a call in the coming week to talk it through. If you already know it's a yes, or that now isn't the right time, just reply here.
 >
 > Best,
 >
@@ -327,7 +327,7 @@ _Bijgewerkt 2026-10-20. Template van Dante, per persoon ingevuld. Afzender Jeroe
 >
 > If you want to go back over the key points, here's a 20-minute summary of the webinar: [Webinar in Google Drive]
 >
-> We'd also like to put together a free report for you on what Eduface could mean for LSBF, something you can share with colleagues internally. If you already know it's a yes, or that now isn't the right time, just reply here.
+> We'd also like to put together a free report for you on what Eduface could mean for LSBF, something you can share with colleagues internally. I'll give you a call in the coming week to talk it through. If you already know it's a yes, or that now isn't the right time, just reply here.
 >
 > Best,
 >
@@ -346,7 +346,7 @@ _Bijgewerkt 2026-10-20. Template van Dante, per persoon ingevuld. Afzender Jeroe
 
 > Hi Byeshwar,
 >
-> Thanks for joining our webinar "The business outcomes of AI marking and feedback". You left before the breakout rooms, so you missed both Operational efficiency and Consistency. We've put both rooms into one white paper, which I've attached.
+> Thanks for joining our webinar "The business outcomes of AI marking and feedback". You stayed in the main session during the breakouts, so you missed both Operational efficiency and Consistency. We've put both rooms into one white paper, which I've attached.
 >
 > If you want to go back over the key points, here's a 20-minute summary of the webinar: [Webinar in Google Drive]
 >
