@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proef prijsopbouw</title>
+<style>
+  /* Klantkleur is een placeholder. Drie tinten van dezelfde kleur: donker = grootste post. */
+  :root {
+    --klant: #0b1533;
+    --mid: #5a6f9c;
+    --licht: #c9d3e6;
+    --tint: #eef1f7;
+    --tekst: #1d2433;
+    --zacht: #5b6474;
+    --lijn: #d9dde4;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f2f3f5; color: var(--tekst); font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 15px; line-height: 1.5; }
+  .vel { width: 900px; margin: 0 auto 24px; background: #fff; padding: 48px 56px 52px; }
+  .variant { display: inline-block; font-size: 11px; color: var(--zacht); border: 1px solid var(--lijn); border-radius: 6px; padding: 2px 8px; margin-bottom: 20px; }
+  h2 { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--klant); margin: 0 0 6px; font-weight: 600; }
+  h1 { font-size: 26px; line-height: 1.25; margin: 0 0 8px; font-weight: 700; }
+  .lead { margin: 0 0 28px; color: var(--zacht); max-width: 62ch; }
+  .noot { font-size: 12px; color: var(--zacht); margin-top: 16px; }
+
+  /* Gestapelde balk */
+  .rij { display: grid; grid-template-columns: 70px 1fr; align-items: center; gap: 16px; margin-bottom: 12px; }
+  .rij .jaar { font-weight: 600; font-size: 14px; }
+  .balk { display: flex; height: 52px; border-radius: 10px; overflow: hidden; gap: 2px; background: #fff; }
+  .seg { display: flex; align-items: center; padding: 0 14px; font-weight: 700; font-size: 15px; white-space: nowrap; }
+  .ai { background: var(--klant); color: #fff; }
+  .lic { background: var(--mid); color: #fff; }
+  .tr { background: var(--licht); color: var(--tekst); }
+  .seg small { font-weight: 500; font-size: 12px; margin-left: 8px; opacity: .9; }
+
+  .uitleg { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 24px; }
+  .uitleg div { border-top: 4px solid; padding-top: 10px; font-size: 13px; }
+  .uitleg b { display: block; font-size: 14px; margin-bottom: 2px; }
+  .uitleg .k-ai { border-color: var(--klant); } .uitleg .k-lic { border-color: var(--mid); } .uitleg .k-tr { border-color: var(--licht); }
+
+  /* Kaarten */
+  .kaarten { display: grid; grid-template-columns: 1.6fr 1fr 1fr; gap: 14px; }
+  .kaart { border-radius: 12px; padding: 22px; }
+  .kaart.ai { background: var(--klant); color: #fff; }
+  .kaart.lic, .kaart.tr { background: var(--tint); color: var(--tekst); }
+  .kaart .naam { font-size: 14px; font-weight: 700; }
+  .kaart .pct { font-size: 44px; font-weight: 700; line-height: 1.1; margin: 10px 0 4px; font-variant-numeric: tabular-nums; }
+  .kaart .jr { font-size: 12px; opacity: .8; }
+  .kaart p { margin: 12px 0 0; font-size: 13px; }
+  .kaart .twee { display: flex; gap: 20px; }
+  .kaart .twee .pct { font-size: 32px; }
+
+  /* Tabel stijl B */
+  table { width: 100%; border-collapse: collapse; font-size: 14px; border-radius: 8px; overflow: hidden; font-variant-numeric: tabular-nums; }
+  th, td { padding: 10px 12px; text-align: left; vertical-align: top; }
+  th.num, td.num { text-align: right; }
+  thead th { background: var(--klant); color: #fff; font-size: 12px; font-weight: 600; }
+  tbody td { border-bottom: 1px solid var(--lijn); }
+  td .stip { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 8px; vertical-align: 0; }
+  tr.ai-rij td { background: var(--tint); font-weight: 600; }
+  td.zacht { color: var(--zacht); font-weight: 400; }
+  tr.totaal td { font-weight: 700; border-bottom: none; }
+  .minibalk { display: flex; height: 14px; border-radius: 7px; overflow: hidden; gap: 2px; margin: 0 0 20px; }
+</style>
+</head>
+<body>
+
+<!-- VARIANT A: gestapelde balk per jaar -->
+<div class="vel" id="a">
+  <span class="variant">Variant A · balk per jaar</span>
+  <h2>Prijsopbouw</h2>
+  <h1>Het grootste deel van de prijs is AI-capaciteit</h1>
+  <p class="lead">De prijs bestaat uit drie onderdelen. Twee derde gaat naar de rekenkracht van de AI. Training valt alleen in het eerste jaar, daarna blijft support.</p>
+  <div class="rij"><div class="jaar">Jaar 1</div>
+    <div class="balk"><div class="seg ai" style="flex:67">67%<small>AI-capaciteit</small></div><div class="seg lic" style="flex:23">23%<small>licentie</small></div><div class="seg tr" style="flex:10">10%</div></div></div>
+  <div class="rij"><div class="jaar">Jaar 2</div>
+    <div class="balk"><div class="seg ai" style="flex:67">67%<small>AI-capaciteit</small></div><div class="seg lic" style="flex:28">28%<small>licentie</small></div><div class="seg tr" style="flex:5">5%</div></div></div>
+  <div class="uitleg">
+    <div class="k-ai"><b>AI-capaciteit</b>Gereserveerde rekenkracht voor het nakijken. Schaalt mee met het aantal studenten.</div>
+    <div class="k-lic"><b>Licentie</b>Platform, updates, koppeling met de leeromgeving en accountmanagement.</div>
+    <div class="k-tr"><b>Training en support</b>Jaar 1: onboarding en training van docenten. Daarna: doorlopende support.</div>
+  </div>
+  <p class="noot">Verdeling bij <span>[aantal]</span> studenten per jaar. Bij meer studenten wordt het aandeel AI-capaciteit groter.</p>
+</div>
+
+<!-- VARIANT B: kaarten -->
+<div class="vel" id="b">
+  <span class="variant">Variant B · kaarten</span>
+  <h2>Prijsopbouw</h2>
+  <h1>Het grootste deel van de prijs is AI-capaciteit</h1>
+  <p class="lead">De prijs bestaat uit drie onderdelen. Twee derde gaat naar de rekenkracht van de AI. Training valt alleen in het eerste jaar, daarna blijft support.</p>
+  <div class="kaarten">
+    <div class="kaart ai"><div class="naam">AI-capaciteit</div><div class="pct">67%</div><div class="jr">jaar 1 en jaar 2</div><p>Gereserveerde rekenkracht voor het nakijken. Schaalt mee met het aantal studenten.</p></div>
+    <div class="kaart lic"><div class="naam">Licentie</div><div class="twee"><div><div class="pct">23%</div><div class="jr">jaar 1</div></div><div><div class="pct">28%</div><div class="jr">jaar 2</div></div></div><p>Platform, updates, koppeling met de leeromgeving, accountmanagement.</p></div>
+    <div class="kaart tr"><div class="naam">Training en support</div><div class="twee"><div><div class="pct">10%</div><div class="jr">jaar 1</div></div><div><div class="pct">5%</div><div class="jr">jaar 2</div></div></div><p>Jaar 1 training van docenten, daarna support.</p></div>
+  </div>
+  <p class="noot">Verdeling bij <span>[aantal]</span> studenten per jaar. Bij meer studenten wordt het aandeel AI-capaciteit groter.</p>
+</div>
+
+<!-- VARIANT C: tabel met minibalk -->
+<div class="vel" id="c">
+  <span class="variant">Variant C · tabel</span>
+  <h2>Prijsopbouw</h2>
+  <h1>Het grootste deel van de prijs is AI-capaciteit</h1>
+  <p class="lead">De prijs bestaat uit drie onderdelen. Training valt alleen in het eerste jaar, daarna blijft support.</p>
+  <div class="minibalk"><div class="ai" style="flex:67"></div><div class="lic" style="flex:23"></div><div class="tr" style="flex:10"></div></div>
+  <table>
+    <thead><tr><th>Onderdeel</th><th>Wat zit erin</th><th class="num">Jaar 1</th><th class="num">Jaar 2</th></tr></thead>
+    <tbody>
+      <tr class="ai-rij"><td><span class="stip" style="background:var(--klant)"></span>AI-capaciteit</td><td class="zacht">Gereserveerde rekenkracht voor het nakijken, schaalt mee met het aantal studenten</td><td class="num">67%</td><td class="num">67%</td></tr>
+      <tr><td><span class="stip" style="background:var(--mid)"></span>Licentie</td><td class="zacht">Platform, updates, koppeling met de leeromgeving, accountmanagement</td><td class="num">23%</td><td class="num">28%</td></tr>
+      <tr><td><span class="stip" style="background:var(--licht)"></span>Training en support</td><td class="zacht">Jaar 1 training van docenten, daarna support</td><td class="num">10%</td><td class="num">5%</td></tr>
+      <tr class="totaal"><td>Totaal</td><td></td><td class="num">100%</td><td class="num">100%</td></tr>
+    </tbody>
+  </table>
+  <p class="noot">Verdeling bij <span>[aantal]</span> studenten per jaar. Bij meer studenten wordt het aandeel AI-capaciteit groter.</p>
+</div>
+</body>
+</html>
