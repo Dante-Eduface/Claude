@@ -3,14 +3,23 @@
 body{width:1080px;height:1920px;background:#fff}
 .board{position:relative;width:1080px;height:1920px;border-radius:48px;overflow:hidden;background:#000}
 .t{position:absolute;overflow:hidden}
-.t img{width:100%;height:100%;object-fit:cover;display:block}
-.q{display:flex;align-items:center;justify-content:center;padding:32px}
-.q img{width:100%;height:auto;object-fit:contain}
-.zwev{box-shadow:0 16px 48px rgba(0,0,0,.45);border-radius:6px}
+.t>img{width:100%;height:100%;object-fit:cover;display:block}
+.q{background:#000;display:flex;justify-content:center}
+.q>img{height:auto;object-fit:contain}
+.zweef{box-shadow:0 16px 40px rgba(0,0,0,.5);border-radius:8px}
 </style></head><body><div class="board">
- <div class="t" style="left:0;top:0;width:560px;height:920px"><img src="bron/zee-laptop.jpg" style="object-position:35% 50%"></div>
- <div class="t q" style="left:560px;top:0;width:520px;height:460px;background:#000"><img src="bron/quote-1.png"></div>
- <div class="t q" style="left:560px;top:460px;width:520px;height:460px;background:#000"><img src="bron/quote-3.png" style="border-radius:12px"></div>
- <div class="t" style="left:0;top:920px;width:1080px;height:1000px"><img src="bron/curacao.jpg" style="object-position:50% 70%"></div>
- <div class="t zwev" style="left:520px;top:840px;width:500px;height:150px;background:#fff;display:flex;align-items:center;justify-content:center"><img src="bron/quote-2.png" style="width:88%;height:auto"></div>
+ <!-- rij 1: foto's -->
+ <div class="t" style="left:0;top:0;width:430px;height:700px"><img src="bron/zee-laptop.jpg" style="object-position:40% 50%"></div>
+ <div class="t" style="left:430px;top:0;width:650px;height:700px"><img src="bron/camera-laptop.jpg" style="object-position:50% 40%"></div>
+ <!-- rij 2: zwart tekstpaneel -->
+ <div class="t q" style="left:0;top:700px;width:760px;height:270px;align-items:center"><img src="bron/quote-1.png" style="width:680px"></div>
+ <div class="t q" style="left:0;top:970px;width:760px;height:290px;align-items:flex-start;padding-top:8px"><img src="bron/quote-eq.png" style="width:600px"></div>
+ <div class="t q" style="left:760px;top:700px;width:320px;height:560px;align-items:flex-end;padding-bottom:24px"><img src="bron/quote-possible.png" style="width:260px"></div>
+ <!-- rij 3: foto's -->
+ <div class="t" style="left:0;top:1260px;width:500px;height:660px"><img src="bron/curacao.jpg" style="object-position:55% 60%"></div>
+ <div class="t" style="left:500px;top:1260px;width:580px;height:660px"><img src="bron/lean-is-law.jpg" style="object-position:50% 45%"></div>
+ <!-- zwevende kaartjes -->
+ <div class="t zweef" style="left:600px;top:596px;width:450px;height:137px"><img src="bron/quote-3.png"></div>
+ <div class="t zweef" style="left:40px;top:1232px;width:420px;height:104px;background:#fff;display:flex;align-items:center;justify-content:center"><img src="bron/quote-2.png" style="width:380px;height:auto"></div>
+ <div class="t zweef" style="left:720px;top:1296px;width:330px;height:72px;background:#000;display:flex;align-items:center;justify-content:center;border:1px solid #333"><img src="bron/quote-4am.png" style="width:300px;height:auto"></div>
 </div></body></html>
