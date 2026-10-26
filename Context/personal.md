@@ -4,7 +4,7 @@
 >
 > **Niets invullen wat je kunt navragen.** Alles wat open is staat in `Context/open-vragen.md`.
 
-_Laatst bijgewerkt: 20-09-2026, na twee rondes antwoorden van Dante zelf._
+_Laatst bijgewerkt: 26-10-2026._
 
 ## Basis
 
@@ -80,6 +80,8 @@ Twee thema's, allebei met dezelfde twee deep-work-blokken erin (06:00 tot 08:00 
 - **Zondag is een thuisdag.** LinkedIn-post in blok 1, gym om 13:00, schoonmaken om 15:00, koken om 16:00.
 
 Boodschappen blijven bewust op zaterdag, een dag voor het koken. Zie `Context/deep-work.md` voor de hele week.
+
+**Boodschappen gaan via Picnic** (26-10-2026), om tijd te sparen. Het zaterdagse boodschappenuur valt daarmee grotendeels weg. Hij overweegt daarnaast kant-en-klare maaltijden te bestellen in plaats van zelf te leren koken. Nog geen besluit.
 
 ## Wat nu geen prioriteit is
 
