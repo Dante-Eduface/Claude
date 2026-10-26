@@ -40,7 +40,7 @@ Dante wil op termijn **losse vensters** voor een paar onderdelen van zijn leven,
 
 - geld
 - fitness
-- koken
+- **koken (geopend op 20-09-2026, Dante begon er zelf over)**
 - gym, apart van fitness
 
 Zijn eigen woorden op 19-09-2026: *"ik wil wel langzaam tot dat punt komen, ik denk dat we nu heel erg aan het optimaliseren zijn."* Dus niet nu beginnen. Wel oppakken zodra hij erover begint, en dan één onderdeel tegelijk.
@@ -58,6 +58,8 @@ Blijft staan zodat zichtbaar is wat er al gevraagd is. Alles hieronder is op 19-
 | Bevat feedback persoonsgegevens? (V4) | Het model zet er geen in. Zet een docent er zelf een persoonsgegeven in, dan staat het er wel. | `.claude/skills/privacy-it/platform-privacykennis.md` |
 | Waar geldt de 8 jaar voor? (V5) | Voor alles, tenzij de opdracht in Eduface wordt verwijderd, dan verwijdert Eduface hem ook. | `.claude/skills/privacy-it/platform-privacykennis.md` |
 | Is de privacykennis voor de UK? (V6) | Niet specifiek. Het is brede privacykennis over het platform, niet de DPA zelf. | `.claude/skills/privacy-it/SKILL.md` |
+| Weekmenu naar zaterdagochtend, voor de boodschappen? | Ja. Menu plus boodschappenlijstje maakt hij zaterdag, en daar gebruikt hij mij voor. | `Context/personal.md` |
+| Op di en do botsen de gym en klaar met eten om 19:30. | Geen botsing. Hij eet **na** de gym, en dat is een grote avondmaaltijd. Geen pre-gym feed. | `Context/personal.md` |
 | Hoe ziet je werkdag eruit sinds je CSM bent? | De functiewissel veranderde niets, alleen de titel op LinkedIn. Een dag gaat mis als hij ongezond begint te eten. Over een slechte week heeft hij nog niet nagedacht. | `Context/me.md` |
 | Wat is Tjarko Kwee's rol? | Sales adviseur en angel investor in Eduface. | `Context/eduface.md` |
 | Wanneer moeten de 20 salesprocessen gestart zijn? | Maandelijks 20, doorlopend, geen einddatum. | `Context/current-priorities.md` |

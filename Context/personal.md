@@ -4,7 +4,7 @@
 >
 > **Niets invullen wat je kunt navragen.** Alles wat open is staat in `Context/open-vragen.md`.
 
-_Laatst bijgewerkt: 20-09-2026, na twee rondes antwoorden van Dante zelf._
+_Laatst bijgewerkt: 20-09-2026, na drie rondes antwoorden van Dante zelf._
 
 ## Basis
 
@@ -50,6 +50,31 @@ Consistent en wat hem betreft niet onderhandelbaar. Dat di en do om 17:00 begint
 | Eiwit | 180 gram |
 | Vet | 80 gram |
 | Koolhydraten | 340 gram |
+
+**Geen verschil tussen lunch en diner.** Hij eet twee keer warm per dag en het maakt niet uit welk gerecht waar staat. Wat officieel een diner is eet hij net zo goed om 12:00 (20-09-2026).
+
+**Hij vast tot 12:00**, en dat doet hij nu al echt (bevestigd 20-09-2026). Reden: eten zakt zijn focus in, en de deep-work-blokken liggen van 07:00 tot 12:00. Hij wordt niet snel vol, dus grote porties in een kort venster gaan hem makkelijk af.
+
+**Vier eetmomenten, en maar een tussendoortje per dag.**
+
+| Wanneer | Wat |
+|---|---|
+| 12:00 | Bakje volle kwark met pindakaas, honing en rozijnen, plus warme maaltijd 1 |
+| Halverwege de middag | **Een** tussendoortje: of een bakje scrambled eggs, of een bakje overnight oats. Nooit allebei. |
+| 16:00, alleen gymdagen | Crackers met pindakaas, honing en banaan |
+| 17:30 op ma, wo en vr | Warme maaltijd 2 |
+| Na de gym op di, do, za en zo | Warme maaltijd 2, rond 19:30 |
+
+
+**De weekindeling van het tussendoortje**, door Dante zelf voorgesteld op 20-09-2026: zondag kookt hij 8 eieren, die eet hij maandag en dinsdag (vier per dag, met lente-ui en cherrytomaat). Woensdag, donderdag en vrijdag overnight oats. Zaterdag en zondag staan nog open.
+
+De basis boodschappenlijst staat in `Personal/fitness/boodschappen-basis.md`.
+
+**Op alle vier de gymdagen eet hij warm na de gym.** Op ma, wo en vr staat de tweede warme maaltijd om 17:30 (bevestigd 20-09-2026).
+
+**Het weekmenu en het boodschappenlijstje maakt hij op zaterdag**, voor de boodschappen van 15:00. Niet op zondag, dat is een dag te laat (20-09-2026).
+
+**Waar eten voor dient:** genoeg eten om het fysiek op te bouwen dat hij wil. Niet goedkoper, niet sneller, niet minder herhaling. Die vraag heeft hij expliciet weggewuifd.
 
 **Lust hij niet:** feta, walnoten, chiliflakes, chipotle, sambal, gember.
 
