@@ -1,6 +1,6 @@
 # Open vragen
 
-_Aangelegd 19-09-2026, bijgewerkt 02-10-2026._
+_Aangelegd 19-09-2026, bijgewerkt 26-10-2026._
 
 De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat is een vraag die ik **niet zelf mag invullen**.
 
@@ -20,6 +20,7 @@ De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat 
 | A6 | Verhuist de financiele controle van zaterdag 09:00 naar 11:00? | Nu valt hij in blok 2, terwijl het shallow werk is. De pauze is geen alternatief, die blijft leeg. | 20-09-2026 |
 | A8 | **Ruil je de heenreis om van lezen naar schrijven?** Heen schrijven (frisste uur), terug lezen. Nu lees je beide kanten, acht uur per week input zonder output. | Schrijven is het zwaarste denkwerk dat er is en hoort in je beste uur. Lezen houdt prima stand met een halve batterij. | 20-09-2026 |
 | A9 | Waar landt dat schrijven? Apple Notes, een schrift, of een bestand in deze repo? | In de repo betekent dat ik het kan lezen en je context vanzelf actueel blijft. Een schrift is sneller op een trein. Jouw keuze. | 20-09-2026 |
+| A10 | Schuift het afsluiten van 20:00 naar 19:30, nu je om 04:00 opstaat? | Om 20:30 slapen laat na het afsluiten maar een kwartier over. Anders wordt het korter dan 7,5 uur slaap. | 26-10-2026 |
 | A7 | Verhuist schoonmaken van zaterdag 16:00 naar zondag 15:00? | Dan staat alles met het huis op de thuisdag. Boodschappen blijven bewust op zaterdag, een dag voor het koken. | 19-09-2026 |
 | W4 | Wanneer komt de NPS-meting op Enterprise er? | Tot die er is staat het doel in `current-priorities.md` als niet stuurbaar. Dante weet het nog niet. | 19-09-2026 |
 | W5 | Na twee weken deep work: welk weektarget zetten we vast? | Het schema staat op 28 uur. De eerste twee weken zijn een nulmeting. | Vanaf 03-10-2026 |
