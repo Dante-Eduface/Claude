@@ -4,7 +4,7 @@ from pptx import Presentation
 from pptx.util import Emu, Pt
 from pptx.dml.color import RGBColor
 from pptx.enum.shapes import MSO_SHAPE
-from pptx.enum.text import MSO_ANCHOR
+from pptx.enum.text import MSO_ANCHOR, PP_ALIGN
 import sys
 
 PX = 6350
@@ -34,42 +34,42 @@ def tekst(x, y, w, h, regels, anchor=MSO_ANCHOR.TOP):
         p.space_before = Pt(voor)
         r = p.add_run(); r.text = t
         r.font.name, r.font.size, r.font.bold, r.font.color.rgb = FONT, Pt(size), bold, kleur
+    return tb
 
 L, B = 120, 1680
 tekst(L, 70, B, 30, [('KOSTEN', 11, True, KLANT, 0)])
 tekst(L, 104, B, 70, [('Dit kost Eduface', 30, True, TEKST, 0)])
 
-blok(L, 210, B, 320, KLANT, 0.07)
-tekst(L + 90, 210, B - 180, 320, [('€ 1.500', 68, True, WIT, 0),
-                                   ('per maand, vooraf betaald', 20, False, WIT, 8),
-                                   ('€ 18.000 per jaar, exclusief btw', 14, False, WITZACHT, 4)], anchor=MSO_ANCHOR.MIDDLE)
+# Prijsblok: bedrag links, prijsregel rechts in hetzelfde blok
+blok(L, 190, B, 280, KLANT, 0.08)
+tekst(L + 70, 190, 760, 280, [('€ 1.500', 56, True, WIT, 0),
+                               ('per maand, vooraf betaald', 18, False, WIT, 6),
+                               ('€ 18.000 per jaar, exclusief btw', 13, False, WITZACHT, 4)], anchor=MSO_ANCHOR.MIDDLE)
+scheid = s.shapes.add_connector(1, E(L + 900), E(234), E(L + 900), E(426))
+scheid.line.color.rgb = RGBColor(0x3A, 0x45, 0x66); scheid.line.width = Pt(1)
+tekst(L + 960, 190, B - 1020, 280, [('Eerste 400 studenten', 16, True, WIT, 0),
+                                     ('€ 3,75 per student per maand, samen € 1.500', 13, False, WITZACHT, 2),
+                                     ('Elke student daarboven', 16, True, WIT, 18),
+                                     ('€ 3 per student per maand', 13, False, WITZACHT, 2)], anchor=MSO_ANCHOR.MIDDLE)
 
-W = (B - 24) / 2
-for i, (kop, sub) in enumerate([('Eerste 400 studenten', '€ 3,75 per student per maand, samen € 1.500'),
-                                ('Elke student daarboven', '€ 3 per student per maand')]):
-    x = L + i * (W + 24)
-    blok(x, 548, W, 124, TINT, 0.12)
-    tekst(x + 44, 548, W - 88, 124, [(kop, 18, True, KLANT, 0), (sub, 13, False, TEKST, 4)], anchor=MSO_ANCHOR.MIDDLE)
-
-# Wat de instelling ervoor krijgt
+# Wat de instelling ervoor krijgt: drie brede kaarten onder elkaar
 import os
 HIER = os.path.dirname(os.path.abspath(__file__))
-LIJNKLR = RGBColor(0xD9, 0xDD, 0xE4)
-tekst(L, 712, B, 30, [('WAT DE INSTELLING ERVOOR KRIJGT', 11, True, KLANT, 0)])
-RIJ, GAP = 84, 12
-for i, (icoon, kop, sub) in enumerate([
-        ('consistent', 'Uniforme beoordeling', 'Elke opdracht wordt langs dezelfde criteria beoordeeld, door elke beoordelaar.'),
-        ('koppeling', 'Integratie in NEO LMS', 'Opdrachten en cijfers lopen via NEO. Docenten en studenten werken in de omgeving die ze kennen.'),
-        ('feedback', 'Formatieve feedback van 50% naar 100%', 'Elke student krijgt formatieve feedback. Nu is dat de helft.')]):
-    y = 748 + i * (RIJ + GAP)
-    v = s.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, E(L), E(y), E(B), E(RIJ))
-    v.adjustments[0] = 0.18; v.fill.solid(); v.fill.fore_color.rgb = WIT
-    v.line.color.rgb = LIJNKLR; v.line.width = Pt(1); v.shadow.inherit = False
-    rondje = s.shapes.add_shape(MSO_SHAPE.OVAL, E(L + 24), E(y + 14), E(56), E(56))
-    rondje.fill.solid(); rondje.fill.fore_color.rgb = TINT; rondje.line.fill.background(); rondje.shadow.inherit = False
-    s.shapes.add_picture(os.path.join(HIER, 'assets', icoon + '.png'), E(L + 38), E(y + 28), E(28), E(28))
-    tekst(L + 108, y, 660, RIJ, [(kop, 16, True, TEKST, 0)], anchor=MSO_ANCHOR.MIDDLE)
-    tekst(L + 790, y, B - 820, RIJ, [(sub, 13, False, TEKST, 0)], anchor=MSO_ANCHOR.MIDDLE)
+tekst(L, 500, B, 30, [('WAT DE INSTELLING ERVOOR KRIJGT', 11, True, KLANT, 0)])
+RIJ, GAP = 150, 16
+for i, (icoon, kop, sub, accent) in enumerate([
+        ('consistent', 'Uniforme beoordeling', 'Elke opdracht wordt langs dezelfde criteria beoordeeld, door elke beoordelaar.', None),
+        ('koppeling', 'Integratie in NEO LMS', 'Opdrachten en cijfers lopen via NEO. Docenten en studenten werken in de omgeving die ze kennen.', None),
+        ('feedback', 'Formatieve feedback voor elke student', 'Nu krijgt de helft van de studenten formatieve feedback. Met Eduface is dat iedereen.', '50% → 100%')]):
+    y = 538 + i * (RIJ + GAP)
+    blok(L, y, B, RIJ, TINT, 0.14)
+    rondje = s.shapes.add_shape(MSO_SHAPE.OVAL, E(L + 40), E(y + 27), E(96), E(96))
+    rondje.fill.solid(); rondje.fill.fore_color.rgb = WIT; rondje.line.fill.background(); rondje.shadow.inherit = False
+    s.shapes.add_picture(os.path.join(HIER, 'assets', icoon + '.png'), E(L + 64), E(y + 51), E(48), E(48))
+    breed = 900 if accent else B - 220
+    tekst(L + 176, y, breed, RIJ, [(kop, 20, True, TEKST, 0), (sub, 14, False, TEKST, 6)], anchor=MSO_ANCHOR.MIDDLE)
+    if accent:
+        tekst(L + 1100, y, B - 1140, RIJ, [(accent, 32, True, KLANT, 0)], anchor=MSO_ANCHOR.MIDDLE).text_frame.paragraphs[0].alignment = PP_ALIGN.RIGHT
 
 out = sys.argv[1]; prs.save(out)
 p = Presentation(out)
