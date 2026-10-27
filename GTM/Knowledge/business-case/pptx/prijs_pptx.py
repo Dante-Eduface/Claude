@@ -36,20 +36,39 @@ def tekst(x, y, w, h, regels, anchor=MSO_ANCHOR.TOP):
         r.font.name, r.font.size, r.font.bold, r.font.color.rgb = FONT, Pt(size), bold, kleur
 
 L, B = 120, 1680
-tekst(L, 90, B, 30, [('KOSTEN', 11, True, KLANT, 0)])
-tekst(L, 124, B, 70, [('Dit kost Eduface', 30, True, TEKST, 0)])
+tekst(L, 70, B, 30, [('KOSTEN', 11, True, KLANT, 0)])
+tekst(L, 104, B, 70, [('Dit kost Eduface', 30, True, TEKST, 0)])
 
-blok(L, 250, B, 430, KLANT, 0.06)
-tekst(L + 90, 250, B - 180, 430, [('€ 1.500', 96, True, WIT, 0),
-                                   ('per maand, vooraf betaald', 22, False, WIT, 10),
-                                   ('€ 18.000 per jaar, exclusief btw', 15, False, WITZACHT, 6)], anchor=MSO_ANCHOR.MIDDLE)
+blok(L, 210, B, 320, KLANT, 0.07)
+tekst(L + 90, 210, B - 180, 320, [('€ 1.500', 68, True, WIT, 0),
+                                   ('per maand, vooraf betaald', 20, False, WIT, 8),
+                                   ('€ 18.000 per jaar, exclusief btw', 14, False, WITZACHT, 4)], anchor=MSO_ANCHOR.MIDDLE)
 
 W = (B - 24) / 2
 for i, (kop, sub) in enumerate([('Eerste 400 studenten', '€ 3,75 per student per maand, samen € 1.500'),
                                 ('Elke student daarboven', '€ 3 per student per maand')]):
     x = L + i * (W + 24)
-    blok(x, 708, W, 190, TINT, 0.1)
-    tekst(x + 44, 708, W - 88, 190, [(kop, 22, True, KLANT, 0), (sub, 14, False, TEKST, 6)], anchor=MSO_ANCHOR.MIDDLE)
+    blok(x, 548, W, 124, TINT, 0.12)
+    tekst(x + 44, 548, W - 88, 124, [(kop, 18, True, KLANT, 0), (sub, 13, False, TEKST, 4)], anchor=MSO_ANCHOR.MIDDLE)
+
+# Wat de instelling ervoor krijgt
+import os
+HIER = os.path.dirname(os.path.abspath(__file__))
+LIJNKLR = RGBColor(0xD9, 0xDD, 0xE4)
+tekst(L, 712, B, 30, [('WAT DE INSTELLING ERVOOR KRIJGT', 11, True, KLANT, 0)])
+W3 = (B - 2 * 24) / 3
+for i, (icoon, kop, sub) in enumerate([
+        ('consistent', 'Uniforme beoordeling', 'Elke opdracht wordt langs dezelfde criteria beoordeeld, door elke beoordelaar.'),
+        ('koppeling', 'Integratie in NEO LMS', 'Opdrachten en cijfers lopen via NEO. Docenten en studenten werken in de omgeving die ze kennen.'),
+        ('feedback', 'Formatieve feedback van 50% naar 100%', 'Elke student krijgt formatieve feedback. Nu is dat de helft.')]):
+    x = L + i * (W3 + 24)
+    v = s.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, E(x), E(752), E(W3), E(270))
+    v.adjustments[0] = 0.08; v.fill.solid(); v.fill.fore_color.rgb = WIT
+    v.line.color.rgb = LIJNKLR; v.line.width = Pt(1); v.shadow.inherit = False
+    rondje = s.shapes.add_shape(MSO_SHAPE.OVAL, E(x + 36), E(788), E(72), E(72))
+    rondje.fill.solid(); rondje.fill.fore_color.rgb = TINT; rondje.line.fill.background(); rondje.shadow.inherit = False
+    s.shapes.add_picture(os.path.join(HIER, 'assets', icoon + '.png'), E(x + 52), E(804), E(40), E(40))
+    tekst(x + 36, 880, W3 - 72, 130, [(kop, 16, True, TEKST, 0), (sub, 12, False, TEKST, 4)])
 
 out = sys.argv[1]; prs.save(out)
 p = Presentation(out)
