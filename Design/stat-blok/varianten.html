@@ -1,0 +1,57 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:'League Spartan';src:url('../Merk/fonts/LeagueSpartan-Bold.ttf');font-weight:700}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;font-family:Inter,sans-serif;color:#002333}
+.v{width:1720px;padding:48px;background:#fff}
+.num{font-family:'League Spartan';font-weight:700;letter-spacing:-0.02em;line-height:1}
+.lab{font-size:22px;font-weight:600;color:#5b7480;text-transform:uppercase;letter-spacing:.08em}
+.sub{font-size:26px;color:#2c4a57;line-height:1.35}
+/* A */
+#A .row{display:grid;grid-template-columns:1fr 1fr;border:2px solid #e7eef0;border-radius:20px}
+#A .cell{padding:56px 64px}
+#A .cell+.cell{border-left:2px solid #e7eef0}
+#A .num{font-size:140px;margin:20px 0 20px}
+/* B */
+#B .row{display:grid;grid-template-columns:1fr 1fr;background:#002333;border-radius:20px;padding:64px 0}
+#B .cell{padding:0 72px}
+#B .cell+.cell{border-left:1px solid rgba(255,255,255,.18)}
+#B .num{font-size:150px;color:#fff;margin:20px 0}
+#B .lab{color:rgba(255,255,255,.62)}
+#B .sub{color:rgba(255,255,255,.80)}
+/* C */
+#C .row{display:grid;grid-template-columns:1fr 96px 1fr;align-items:stretch}
+#C .card{border-radius:20px;padding:56px 64px}
+#C .nu{background:#f3f7f8}
+#C .met{background:#002333}
+#C .met .num,#C .met .sub{color:#fff}
+#C .met .lab{color:rgba(255,255,255,.62)}
+#C .num{font-size:140px;margin:20px 0}
+#C .arr{display:flex;align-items:center;justify-content:center}
+/* D */
+#D .item{display:grid;grid-template-columns:640px 1fr;align-items:center;padding:44px 8px;border-bottom:2px solid #e7eef0}
+#D .item:first-child{border-top:2px solid #e7eef0}
+#D .num{font-size:128px}
+#D .t{font-size:34px;font-weight:600;margin-bottom:10px}
+</style></head><body>
+
+<div class="v" id="A"><div class="row">
+ <div class="cell"><div class="lab">Wat nakijken nu kost</div><div class="num">€ 37.000</div><div class="sub">Docenturen aan nakijken, omgerekend naar geld</div></div>
+ <div class="cell"><div class="lab">Rendement</div><div class="num">106%</div><div class="sub">Return on investment met Eduface</div></div>
+</div></div>
+
+<div class="v" id="B"><div class="row">
+ <div class="cell"><div class="lab">Wat nakijken nu kost</div><div class="num">€ 37.000</div><div class="sub">Docenturen aan nakijken, omgerekend naar geld</div></div>
+ <div class="cell"><div class="lab">Rendement</div><div class="num">106%</div><div class="sub">Return on investment met Eduface</div></div>
+</div></div>
+
+<div class="v" id="C"><div class="row">
+ <div class="card nu"><div class="lab">Nu</div><div class="num">€ 37.000</div><div class="sub">Wat nakijken de opleiding nu kost</div></div>
+ <div class="arr"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#002333" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+ <div class="card met"><div class="lab">Met Eduface</div><div class="num">106%</div><div class="sub">Rendement op de investering</div></div>
+</div></div>
+
+<div class="v" id="D">
+ <div class="item"><div class="num">€ 37.000</div><div><div class="t">Wat nakijken nu kost</div><div class="sub">Docenturen aan nakijken, omgerekend naar geld</div></div></div>
+ <div class="item"><div class="num">106%</div><div><div class="t">Rendement op de investering</div><div class="sub">Wat Eduface oplevert tegenover wat het kost</div></div></div>
+</div>
+</body></html>
