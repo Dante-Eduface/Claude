@@ -1,0 +1,254 @@
+<title>Eduface in itslearning</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;700&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: één leeskolom. Screenshot met genummerde punten bovenaan, daaronder dezelfde nummers als invullijst.
+   Tokens uit Design/System/core/tokens.css. Bewust alleen licht: dit wordt ook uitgeprint en doorgestuurd. */
+:root {
+  --navy: #002333;
+  --ink-700: #2c4a57;
+  --ink-500: #5b7480;
+  --ink-200: #cdd9de;
+  --ink-100: #e7eef0;
+  --ink-50: #f3f7f8;
+  --white: #ffffff;
+  --green: #00e075;
+  --green-deep: #007b54;
+  --warning: #b26a00;
+  --warning-bg: #fdf3e3;
+  --font-display: "League Spartan", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-xl: 12px;
+  --shadow-md: 0 4px 16px rgba(0, 35, 51, 0.08);
+  color-scheme: light;
+}
+body {
+  background: var(--white);
+  color: var(--navy);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding-block: 48px 96px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid;
+  gap: 48px;
+}
+h1, h2 { font-family: var(--font-display); text-wrap: balance; margin: 0; line-height: 1.1; }
+h1 { font-size: 40px; font-weight: 700; }
+h2 { font-size: 24px; font-weight: 600; }
+p { margin: 0; text-wrap: pretty; max-width: 68ch; }
+.eyebrow { font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-500); }
+
+header { display: grid; gap: 16px; }
+.lead { font-size: 18px; color: var(--ink-700); }
+
+section { display: grid; gap: 24px; }
+
+/* Screenshot met punten */
+.shot { position: relative; border: 1px solid var(--ink-100); border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-md); background: var(--ink-50); }
+.shot img { display: block; width: 100%; height: auto; }
+.pin {
+  position: absolute; transform: translate(-50%, -50%);
+  width: 26px; height: 26px; border-radius: 9999px;
+  background: var(--navy); color: var(--white);
+  font: 600 12px/26px var(--font-sans); text-align: center;
+  border: 2px solid var(--white); cursor: pointer; padding: 0;
+  font-variant-numeric: tabular-nums;
+}
+.pin.active, .pin:hover { background: var(--green); color: var(--navy); }
+.caption { font-size: 14px; color: var(--ink-500); }
+
+/* Invullijst */
+ol.fields { list-style: none; margin: 0; padding: 0; display: grid; border-top: 1px solid var(--ink-100); }
+.field {
+  display: grid; grid-template-columns: 32px minmax(0, 1fr); gap: 16px;
+  padding-block: 16px; border-bottom: 1px solid var(--ink-100);
+  scroll-margin-top: 24px;
+}
+.field.active { background: linear-gradient(to right, var(--ink-50), var(--white)); }
+.num {
+  width: 26px; height: 26px; border-radius: 9999px; background: var(--navy); color: var(--white);
+  font: 600 12px/26px var(--font-sans); text-align: center; font-variant-numeric: tabular-nums; margin-top: 1px;
+}
+.body { display: grid; gap: 8px; min-width: 0; }
+.head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 12px; }
+.label { font-weight: 600; }
+.action { font-size: 13px; font-weight: 500; color: var(--ink-500); }
+.note { font-size: 14px; color: var(--ink-700); }
+
+.value {
+  display: flex; align-items: center; gap: 8px;
+  background: var(--ink-50); border: 1px solid var(--ink-100); border-radius: var(--radius-md);
+  padding: 8px 8px 8px 12px; min-width: 0;
+}
+.value code { font: 14px/1.4 var(--font-mono); flex: 1; min-width: 0; overflow-wrap: anywhere; color: var(--navy); }
+.copy {
+  flex: none; font: 500 13px var(--font-sans); color: var(--white); background: var(--navy);
+  border: 0; border-radius: var(--radius-sm); padding: 6px 12px; cursor: pointer;
+}
+.copy:hover { background: var(--ink-700); }
+.copy.done { background: var(--green-deep); }
+.copy:focus-visible, .pin:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
+
+.choice { font-weight: 600; }
+.empty { color: var(--ink-500); font-style: italic; }
+
+.todo {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 12px; font-weight: 600; color: var(--warning);
+  background: var(--warning-bg); border-radius: 9999px; padding: 2px 10px;
+}
+.todo::before { content: "!"; font-weight: 700; }
+.value.missing { border-style: dashed; border-color: var(--warning); background: var(--warning-bg); }
+.value.missing code { color: var(--warning); font-family: var(--font-sans); font-style: italic; }
+
+.after { background: var(--ink-50); border-radius: var(--radius-xl); padding: 24px; display: grid; gap: 16px; justify-items: start; }
+.after ul { margin: 0; padding-left: 20px; display: grid; gap: 8px; }
+
+footer { font-size: 14px; color: var(--ink-500); border-top: 1px solid var(--ink-100); padding-top: 24px; }
+
+@media (max-width: 520px) {
+  h1 { font-size: 32px; }
+  .pin { width: 20px; height: 20px; font-size: 10px; line-height: 20px; border-width: 1px; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+</style>
+
+<div class="wrap">
+  <header>
+    <span class="eyebrow">Handleiding voor docenten</span>
+    <h1>Eduface toevoegen aan je itslearning-cursus</h1>
+    <p class="lead">Je vult één keer een formulier in itslearning in. Hieronder staat per veld wat erin moet. Waar een waarde staat, klik je op Kopieer en plak je hem in het veld. Duurt ongeveer vijf minuten.</p>
+  </header>
+
+  <section>
+    <h2>Waar vind je het formulier</h2>
+    <p>Open je cursus in itslearning, ga naar <strong>Resources</strong>, klik op <strong>Add</strong> en kies <strong>Tool</strong>. Dan zie je het scherm hieronder. De nummers horen bij de lijst eronder; klik op een nummer om naar dat veld te springen.</p>
+    <figure class="shot" style="margin:0">
+      <img src="formulier.png" alt="Het formulier Add Tool in itslearning, met genummerde velden" width="1442" height="1190">
+      <div id="pins"></div>
+    </figure>
+    <p class="caption">Voorbeeldscherm. Bij jou kunnen de velden nog leeg zijn.</p>
+  </section>
+
+  <section>
+    <h2>Wat je per veld invult</h2>
+    <ol class="fields" id="fields"></ol>
+  </section>
+
+  <section class="after">
+    <h2>Na het opslaan</h2>
+    <span class="todo">Waarde volgt</span>
+    <p>Hier komt wat je na het opslaan moet doen, bijvoorbeeld welke gegevens itslearning laat zien en naar wie je die stuurt.</p>
+  </section>
+
+  <footer>Kom je ergens niet uit? Mail Eduface en zet er een screenshot van je scherm bij. <span class="todo">Contactadres volgt</span></footer>
+</div>
+
+<script>
+// type: copy = waarde plakken, choice = iets kiezen of aanvinken, empty = leeg laten, missing = waarde nog niet bekend
+// todo: deze instructie is nog niet bevestigd
+const FIELDS = [
+  { label: "Name", type: "copy", value: "Eduface", y: 13.7 },
+  { label: "Description", type: "copy", value: "AI-feedback en beoordeling", note: "Mag je zelf kiezen. Alleen jij ziet dit.", y: 20.8 },
+  { label: "Tool Version", type: "choice", value: "1.3", y: 26.4 },
+  { label: "RSA Key type", type: "choice", value: "JWKS Url", note: "Niet Public Key.", todo: true, y: 29.7 },
+  { label: "RSA key", type: "empty", note: "Blijft leeg omdat je bij 4 JWKS Url hebt gekozen.", todo: true, y: 36.6 },
+  { label: "JWKS Url", type: "missing", y: 44.3 },
+  { label: "OIDC Url", type: "missing", y: 50.0 },
+  { label: "Deep Linking Url", type: "missing", y: 55.7 },
+  { label: "Url", type: "missing", note: "Let op: dit is een ander adres dan bij 6, 7 en 8.", y: 61.3 },
+  { label: "Params", type: "empty", todo: true, y: 68.5 },
+  { label: "Enable Deep Linking", type: "choice", value: "Aanvinken: for teachers", todo: true, y: 75.3 },
+  { label: "Unique deployments", type: "choice", value: "Aangevinkt laten", todo: true, y: 78.5 },
+  { label: "Optional OIDC parameters", type: "choice", value: "None", y: 82.0 },
+  { label: "Subject", type: "choice", value: "Het vak van je cursus", y: 87.6 },
+  { label: "Library", type: "choice", value: "Personal", todo: true, y: 90.9 },
+  { label: "Save", type: "click", value: "Klik op Save", note: "Rechtsonder in het formulier.", y: 95.4, x: 81.4 }
+];
+
+const ACTION = { copy: "Kopieer en plak", choice: "Kies", click: "Klik", empty: "Leeg laten", missing: "Kopieer en plak" };
+const list = document.getElementById("fields");
+const pins = document.getElementById("pins");
+
+FIELDS.forEach((f, i) => {
+  const n = i + 1;
+  const li = document.createElement("li");
+  li.className = "field";
+  li.id = "veld-" + n;
+
+  let value = "";
+  if (f.type === "copy") {
+    value = `<div class="value"><code>${f.value}</code><button class="copy" type="button" data-v="${f.value}">Kopieer</button></div>`;
+  } else if (f.type === "missing") {
+    value = `<div class="value missing"><code>Waarde volgt</code></div>`;
+  } else if (f.type === "choice" || f.type === "click") {
+    value = `<div class="choice">${f.value}</div>`;
+  } else {
+    value = `<div class="empty">Niets invullen</div>`;
+  }
+
+  li.innerHTML = `
+    <span class="num">${n}</span>
+    <div class="body">
+      <div class="head">
+        <span class="label">${f.label}</span>
+        <span class="action">${ACTION[f.type]}</span>
+        ${f.todo ? '<span class="todo">Nog bevestigen</span>' : ""}
+      </div>
+      ${value}
+      ${f.note ? `<p class="note">${f.note}</p>` : ""}
+    </div>`;
+  list.appendChild(li);
+
+  const pin = document.createElement("button");
+  pin.className = "pin";
+  pin.type = "button";
+  pin.textContent = n;
+  pin.setAttribute("aria-label", "Ga naar veld " + n + ": " + f.label);
+  pin.style.left = (f.x ?? 80.2) + "%";
+  pin.style.top = f.y + "%";
+  pin.addEventListener("click", () => {
+    li.scrollIntoView({ block: "center" });
+    setActive(n);
+  });
+  pins.appendChild(pin);
+
+  li.addEventListener("mouseenter", () => setActive(n));
+});
+
+function setActive(n) {
+  document.querySelectorAll(".field").forEach((el, i) => el.classList.toggle("active", i + 1 === n));
+  document.querySelectorAll(".pin").forEach((el, i) => el.classList.toggle("active", i + 1 === n));
+}
+
+list.addEventListener("click", async (e) => {
+  const btn = e.target.closest(".copy");
+  if (!btn) return;
+  try {
+    await navigator.clipboard.writeText(btn.dataset.v);
+    btn.textContent = "Gekopieerd";
+    btn.classList.add("done");
+    setTimeout(() => { btn.textContent = "Kopieer"; btn.classList.remove("done"); }, 1600);
+  } catch {
+    const code = btn.previousElementSibling;
+    const r = document.createRange();
+    r.selectNodeContents(code);
+    const s = getSelection();
+    s.removeAllRanges();
+    s.addRange(r);
+    btn.textContent = "Geselecteerd, druk Ctrl+C";
+  }
+});
+</script>
