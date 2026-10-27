@@ -1,5 +1,5 @@
 """Kostenpagina (variant A) van de business case als bewerkbare pptx.
-De grafiek is een echte PowerPoint-grafiek: rechtsklik > Gegevens bewerken om cijfers aan te passen.
+De grafiek is een afbeelding uit assets/kosten-grafiek.html (zelfde als de PNG-proef, breder). Andere cijfers: die aanpassen en opnieuw renderen.
 Gebruik: python3 kosten_pptx.py uitvoer.pptx"""
 from pptx import Presentation
 from pptx.util import Emu, Pt
@@ -66,41 +66,10 @@ for i, (getal, label) in enumerate([(eur(EDUFACE_MAAND), 'per maand, vooraf'), (
                                     (eur(TARIEF), 'gemiddeld per opdracht nu')]):
     tekst(L + i * 340, 266, 320, 80, [(getal, 20, True, TEKST), (label, 12, False, ZACHT)])
 
-# Grafiek
-tekst(L, 372, B, 30, [(f'Opgeteld na twee jaar: nakijken nu {eur(nu_cum[-1])}, Eduface {eur(ed_cum[-1])}. '
-                       f'Verschil {eur(nu_cum[-1] - ed_cum[-1])}.', 13, True, TEKST)])
-cd = CategoryChartData()
-cd.categories = [f'mnd {m}' if m in (1, 6, 12, 18, 24) else ' ' * m for m in range(1, 25)]
-cd.add_series('Nakijken nu', nu_cum)
-cd.add_series('Eduface', ed_cum)
-gf = s.shapes.add_chart(XL_CHART_TYPE.LINE, E(L - 10), E(410), E(B + 10), E(440), cd)
-ch = gf.chart
-ch.has_legend = True; ch.legend.position = XL_LEGEND_POSITION.TOP; ch.legend.include_in_layout = False
-ch.legend.font.size = Pt(11); ch.legend.font.color.rgb = ZACHT; ch.legend.font.name = FONT
-va = ch.value_axis
-va.maximum_scale, va.minimum_scale, va.major_unit = 90000, 0, 30000
-va.tick_labels.number_format = '#,##0'; va.tick_labels.number_format_is_linked = False
-va.tick_labels.font.size = Pt(10); va.tick_labels.font.color.rgb = ZACHT
-va.major_gridlines.format.line.color.rgb = RGBColor(0xEC, 0xEE, 0xF2)
-va.format.line.fill.background()
-ca = ch.category_axis
-ca.tick_labels.font.size = Pt(10); ca.tick_labels.font.color.rgb = ZACHT
-ca.format.line.color.rgb = NU
-from pptx.oxml.ns import qn
-from lxml import etree
-skip = etree.Element(qn('c:tickLblSkip')); skip.set('val', '6')
-anker = ca._element.find(qn('c:noMultiLvlLbl'))
-if anker is not None: anker.addprevious(skip)
-else: ca._element.append(skip)
-for serie, kleur, breed in [(ch.plots[0].series[0], NU, 2.5), (ch.plots[0].series[1], KLANT, 2.5)]:
-    serie.format.line.color.rgb = kleur; serie.format.line.width = Pt(breed); serie.smooth = False
-    serie.marker.style = None
-    from pptx.enum.chart import XL_MARKER_STYLE
-    serie.marker.style = XL_MARKER_STYLE.NONE
-    pt = serie.points[23]
-    dl = pt.data_label; dl.position = XL_LABEL_POSITION.RIGHT
-    r = dl.text_frame.paragraphs[0].add_run(); r.text = eur(serie.values[23])
-    r.font.size = Pt(11); r.font.bold = True; r.font.color.rgb = TEKST; r.font.name = FONT
+# Grafiek: afbeelding van de PNG-proef (proef-kosten.html, variant A), geen bewerkbare grafiek
+import os
+s.shapes.add_picture(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'assets', 'kosten-grafiek.png'),
+                     E(L), E(376), height=E(480))
 
 # Kader
 vorm(MSO_SHAPE.RECTANGLE, L, 872, 8, 92, KLANT)
