@@ -52,9 +52,9 @@ Vastgelegd 27-10-2026, op basis van wat de champion zelf voorstelde.
 - **Het gaat om geld, niet om tijd.** Vergelijk de totale kosten van nakijken nu met de prijs van Eduface. Geen besparingspercentage op tijd.
 - **Eén gemiddeld tarief per opdracht,** gewogen over alle opdrachttypes (goedkope kennischecks tot dure theses). De champion berekent dat tarief zelf.
 - **Intern en extern nakijken tellen allebei mee.** Uren van eigen docenten kosten ook geld: die kunnen niet naar lesgeven of training, en dat levert op.
-- **Groei laten zien:** meer opdrachten, gelijke prijs, dus Eduface per opdracht wordt goedkoper. Noot: zolang het studentaantal binnen dezelfde staffel blijft.
+- **Geen groeiclaim.** Geschrapt 27-10-2026: meer opdrachten betekent meer studenten, en de prijs schaalt mee per student. Het tarief van € 35 per opdracht verandert ook niet. Ze groeien dus allebei mee.
+- **Simpel en groot:** wat Eduface kost als één groot bedrag per maand. Prijsregel eronder, en eventueel naast de kosten van nakijken nu. Proeven: `proef-kosten-simpel.html`.
 - **Betaling:** per maand, vooraf.
-- Proeven: `proef-kosten.html` (A opgeteld over twee jaar, B per jaar en per opdracht).
 
 ## Toon
 

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proef kosten simpel</title>
+<style>
+  :root { --klant: #0b1533; --tint: #eef1f7; --nu: #9aa3b2; --tekst: #1d2433; --zacht: #5b6474; --lijn: #d9dde4; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f2f3f5; color: var(--tekst); font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 15px; line-height: 1.5; }
+  .vel { width: 900px; margin: 0 auto 24px; background: #fff; padding: 48px 56px 52px; }
+  .variant { display: inline-block; font-size: 11px; color: var(--zacht); border: 1px solid var(--lijn); border-radius: 6px; padding: 2px 8px; margin-bottom: 20px; }
+  h2 { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--klant); margin: 0 0 6px; font-weight: 600; }
+  h1 { font-size: 26px; line-height: 1.25; margin: 0 0 28px; font-weight: 700; }
+  .groot { background: var(--klant); color: #fff; border-radius: 16px; padding: 40px 44px; }
+  .groot .bedrag { font-size: 84px; font-weight: 700; line-height: 1; font-variant-numeric: tabular-nums; }
+  .groot .per { font-size: 22px; margin-top: 10px; }
+  .groot .klein { font-size: 15px; opacity: .8; margin-top: 4px; }
+  .regels { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 12px; }
+  .regel { background: var(--tint); border-radius: 12px; padding: 18px 20px; font-size: 14px; }
+  .regel b { display: block; font-size: 22px; color: var(--klant); font-variant-numeric: tabular-nums; }
+  .naast { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .vak { border-radius: 16px; padding: 32px 34px; }
+  .vak.nu { border: 1.5px solid var(--lijn); }
+  .vak.ed { background: var(--klant); color: #fff; }
+  .vak .wat { font-size: 15px; font-weight: 600; }
+  .vak .bedrag { font-size: 56px; font-weight: 700; line-height: 1.1; margin: 10px 0 6px; font-variant-numeric: tabular-nums; }
+  .vak .sub { font-size: 14px; opacity: .85; }
+  .noot { font-size: 12px; color: var(--zacht); margin-top: 14px; }
+</style>
+</head>
+<body>
+
+<div class="vel" id="a">
+  <span class="variant">Variant A · alleen de prijs</span>
+  <h2>Kosten</h2>
+  <h1>Dit kost Eduface</h1>
+  <div class="groot">
+    <div class="bedrag">€ 1.500</div>
+    <div class="per">per maand, vooraf betaald</div>
+    <div class="klein">€ 18.000 per jaar, exclusief btw</div>
+  </div>
+  <div class="regels">
+    <div class="regel"><b>Tot 500 studenten</b>vast € 1.500 per maand</div>
+    <div class="regel"><b>Daarboven</b>€ 3 per student per maand</div>
+  </div>
+</div>
+
+<div class="vel" id="b">
+  <span class="variant">Variant B · prijs naast de kosten van nu</span>
+  <h2>Kosten</h2>
+  <h1>Eduface kost de helft van wat nakijken nu kost</h1>
+  <div class="naast">
+    <div class="vak nu"><div class="wat">Nakijken nu</div><div class="bedrag">€ 37.000</div><div class="sub">per jaar, intern en extern samen</div></div>
+    <div class="vak ed"><div class="wat">Eduface</div><div class="bedrag">€ 18.000</div><div class="sub">per jaar, € 1.500 per maand vooraf</div></div>
+  </div>
+  <div class="regels">
+    <div class="regel"><b>Tot 500 studenten</b>vast € 1.500 per maand</div>
+    <div class="regel"><b>Daarboven</b>€ 3 per student per maand</div>
+  </div>
+  <p class="noot">Nakijken nu: gemiddeld € 35 per opdracht, over alle opdrachttypes, intern en extern. Bedragen exclusief btw.</p>
+</div>
+</body>
+</html>
