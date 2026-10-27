@@ -47,6 +47,10 @@
   /* ---------- Cover ---------- */
   .cover-kop { display: flex; justify-content: space-between; align-items: center; margin-bottom: 44px; }
   .cover-kop img { height: 34px; }
+  /* Pagina 1 vult het blad: logostrook onderaan (A4 297mm min marges 38mm) */
+  .cover { display: flex; flex-direction: column; min-height: 258mm; }
+  .cover-voet { margin-top: auto; }
+  .cover .logos li { justify-content: center; }
   .cover-kop .afzender { font-size: 8.5pt; color: var(--tekst-zacht); text-align: right; }
   .concept { display: inline-block; font-size: 8pt; color: var(--tekst-zacht); border: 1px solid var(--lijn);
              border-radius: 6px; padding: 2px 8px; margin-bottom: 18px; }
@@ -175,44 +179,42 @@
     <symbol id="i-training" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H11v15H5.5A1.5 1.5 0 0 0 4 20.5Z"/><path d="M20 5.5A1.5 1.5 0 0 0 18.5 4H13v15h5.5a1.5 1.5 0 0 1 1.5 1.5Z"/></symbol>
     <symbol id="i-ai" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M10 10h4v4h-4z"/><path d="M9 3v3M15 3v3M9 18v3M15 18v3M3 9h3M3 15h3M18 9h3M18 15h3"/></symbol>
     <symbol id="i-tool" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="15" rx="2"/><path d="M3 9h18"/><path d="M7 13.5h5M7 16h8"/></symbol>
+    <symbol id="i-rendement" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 17.5l6-6 4 4 7-7.5"/><path d="M15 8h5.5v5.5"/></symbol>
     <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"/></symbol>
     <symbol id="i-pijl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15"/><path d="M13 6l6 6-6 6"/></symbol>
   </defs>
 </svg>
 
 <!-- ================= 1. Managementsamenvatting ================= -->
-<div class="pagina">
+<div class="pagina cover">
   <div class="cover-kop">
     <img src="academica-logo.svg" alt="Academica University of Applied Sciences">
-    <div class="afzender">Business case<br>opgesteld met Eduface</div>
   </div>
 
-  <span class="concept">Concept voor 22 oktober 2026 · <span class="open">?</span> = nog in te vullen</span>
   <p class="label">Managementsamenvatting</p>
   <h1>Nederlands onderwijskundig AI-model voor formatieve feedback</h1>
   <p class="lead">Wij stellen voor Eduface in te voeren bij alle geaccrediteerde opleidingen. Eduface doet bij elke opdracht een eerste beoordeling en een feedbackvoorstel per criterium. De docent controleert dat voorstel, past het aan en houdt het laatste woord. Zo besteden docenten minder tijd aan het formuleren van feedback, krijgt elke student formatieve feedback, en vangen we de groei op zonder evenredig meer nakijkers. Dat is een concrete invulling van het koerspunt efficiency.</p>
 
   <ul class="cijfers">
     <li class="cijfer">
+      <div class="icoon" role="img" aria-label="Rendement"><svg><use href="#i-rendement"/></svg></div>
+      <div class="getal">106%</div>
+      <p class="uitleg"><b>van de licentie terugverdiend</b><span>€&nbsp;19.000 besparing tegen €&nbsp;18.000 licentie per jaar.</span></p>
+    </li>
+    <li class="cijfer">
       <div class="icoon" role="img" aria-label="Geld"><svg><use href="#i-geld"/></svg></div>
-      <div class="getal">€&nbsp;<span class="open">?</span></div>
-      <p class="uitleg"><b>besparing per jaar</b><span>Bespaarde uren feedback schrijven × ons normbedrag per uur, tegen een licentie van €&nbsp;18.000 per jaar.</span></p>
-    </li>
-    <li class="cijfer">
-      <div class="icoon" role="img" aria-label="Tijd"><svg><use href="#i-tijd"/></svg></div>
-      <div class="getal"><span class="open">?</span>&nbsp;uur</div>
-      <p class="uitleg"><b>minder uren feedback schrijven per jaar</b><span>Over ongeveer 1.100 opdrachten. Leestijd niet meegerekend.</span></p>
-    </li>
-    <li class="cijfer">
-      <div class="icoon" role="img" aria-label="Mensen"><svg><use href="#i-mensen"/></svg></div>
-      <div class="getal">100%</div>
-      <p class="uitleg"><b>van de studenten krijgt formatieve feedback</b><span>Bij elke module. Nu is dat de helft, in twee modules.</span></p>
+      <div class="getal">€&nbsp;19.000</div>
+      <p class="uitleg"><b>besparing per jaar</b><span>Ruim de helft van wat nakijken nu kost: €&nbsp;37.000 per jaar.</span></p>
     </li>
   </ul>
 
-  <div class="besluit">
-    <p class="label">Besluit</p>
-    <p>Wij vragen het MT akkoord op invoering van Eduface bij alle geaccrediteerde opleidingen, te beginnen met een proof of value van twee weken.</p>
+  <div class="cover-voet">
+    <ul class="logos" aria-label="Instellingen die Eduface gebruiken">
+      <li><img src="../../../Design/Merk/logo-van-scholen/Logo's/NL scholen/Hogeschool Rotterdam.svg" alt="Hogeschool Rotterdam"></li>
+      <li><img src="../../../Design/Merk/logo-van-scholen/Logo's/NL scholen/Breederode Hogeschool.svg" alt="Breederode Hogeschool" style="filter: grayscale(1) opacity(.5)"></li>
+      <li><span class="crop-tilburg"><img src="../../../Design/Merk/logo-van-scholen/Logo's/SVG niet cropped/Tilburg universiteit.svg" alt="Tilburg University"></span></li>
+      <li><img src="../../../Design/Merk/logo-van-scholen/Logo's/NL scholen/Radboud universiteit- Cropped.svg" alt="Radboud Universiteit"></li>
+    </ul>
   </div>
 </div>
 
@@ -342,7 +344,7 @@
     <p class="lead">Wij zijn niet de eerste. Het model is ontwikkeld met hulp van de Radboud Universiteit.</p>
     <ul class="logos" aria-label="Instellingen die Eduface gebruiken">
       <li><img src="../../../Design/Merk/logo-van-scholen/Logo's/NL scholen/Hogeschool Rotterdam.svg" alt="Hogeschool Rotterdam"><small>lerarenopleiding</small></li>
-      <li><img src="../../../Design/Merk/logo-van-scholen/overdehaagse-mediakit-hhsnlgroenhexpng.png" alt="De Haagse Hogeschool"><small>&nbsp;</small></li>
+      <li><img src="../../../Design/Merk/logo-van-scholen/Logo's/NL scholen/Breederode Hogeschool.svg" alt="Breederode Hogeschool" style="filter: grayscale(1) opacity(.5)"><small>&nbsp;</small></li>
       <li><span class="crop-tilburg"><img src="../../../Design/Merk/logo-van-scholen/Logo's/SVG niet cropped/Tilburg universiteit.svg" alt="Tilburg University"></span><small>&nbsp;</small></li>
       <li><img src="../../../Design/Merk/logo-van-scholen/Logo's/NL scholen/Radboud universiteit- Cropped.svg" alt="Radboud Universiteit"><small>&nbsp;</small></li>
     </ul>
