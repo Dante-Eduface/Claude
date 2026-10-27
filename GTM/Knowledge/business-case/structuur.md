@@ -45,6 +45,17 @@ Vastgelegd 09-10-2026. Proeven staan in deze map.
 - **Tijdlijn (onderdeel 15):** go-punt, daarna twee fasebalken (go-liveplan, implementatieplan) zonder datums. Testperiode als gestippeld label boven het einde van het go-liveplan. Per fase één zin plus drie punten. Zie `proef-tijdlijn.html`.
 - **Besluitkader:** onder de kerncijfers op pagina 1, tint met een balk in de klantkleur links.
 
+## Kostenonderbouwing
+
+Vastgelegd 27-10-2026, op basis van wat de champion zelf voorstelde.
+
+- **Het gaat om geld, niet om tijd.** Vergelijk de totale kosten van nakijken nu met de prijs van Eduface. Geen besparingspercentage op tijd.
+- **Eén gemiddeld tarief per opdracht,** gewogen over alle opdrachttypes (goedkope kennischecks tot dure theses). De champion berekent dat tarief zelf.
+- **Intern en extern nakijken tellen allebei mee.** Uren van eigen docenten kosten ook geld: die kunnen niet naar lesgeven of training, en dat levert op.
+- **Groei laten zien:** meer opdrachten, gelijke prijs, dus Eduface per opdracht wordt goedkoper. Noot: zolang het studentaantal binnen dezelfde staffel blijft.
+- **Betaling:** per maand, vooraf.
+- Proeven: `proef-kosten.html` (A opgeteld over twee jaar, B per jaar en per opdracht).
+
 ## Toon
 
 Vastgelegd 09-10-2026.
