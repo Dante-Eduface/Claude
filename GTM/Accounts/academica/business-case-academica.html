@@ -150,6 +150,11 @@
   .drie-icoon .icoon { width: 38px; height: 38px; }
   .drie-icoon .icoon svg { width: 19px; height: 19px; }
 
+  /* Koersplan: steekwoorden verticaal, elk in een eigen card met icoon */
+  .steekwoorden { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+  .steekwoorden li { display: flex; align-items: center; gap: 18px; padding: 12px 20px; background: var(--klant-tint);
+                     border-radius: 12px; font-size: 13pt; font-weight: 700; color: var(--klant); }
+
   .placeholder { border: 1.5px dashed var(--lijn); border-radius: 12px; padding: 20px; color: var(--tekst-zacht); }
 
   /* ---------- Scope ---------- */
@@ -180,6 +185,9 @@
     <symbol id="i-ai" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M10 10h4v4h-4z"/><path d="M9 3v3M15 3v3M9 18v3M15 18v3M3 9h3M3 15h3M18 9h3M18 15h3"/></symbol>
     <symbol id="i-tool" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="15" rx="2"/><path d="M3 9h18"/><path d="M7 13.5h5M7 16h8"/></symbol>
     <symbol id="i-rendement" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 17.5l6-6 4 4 7-7.5"/><path d="M15 8h5.5v5.5"/></symbol>
+    <symbol id="i-it" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="12" rx="2"/><path d="M8.5 20h7"/><path d="M12 16.5V20"/></symbol>
+    <symbol id="i-proces" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3.5" width="7" height="6" rx="1.5"/><rect x="14" y="14.5" width="7" height="6" rx="1.5"/><path d="M6.5 9.5v3.5a2 2 0 0 0 2 2H14"/><path d="M11.5 12.5 14 15l-2.5 2.5"/></symbol>
+    <symbol id="i-data" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16"/><path d="M7 16.5v-5"/><path d="M12 16.5V7"/><path d="M17 16.5v-8"/></symbol>
     <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"/></symbol>
     <symbol id="i-pijl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15"/><path d="M13 6l6 6-6 6"/></symbol>
   </defs>
@@ -264,14 +272,14 @@
 <div class="pagina">
   <section>
     <p class="label">Koersplan</p>
-    <h1>Efficiency</h1>
-    <table>
-      <thead><tr><th>Doel uit ons koersplan</th><th>Bijdrage van Eduface</th></tr></thead>
-      <tbody>
-        <tr><td class="eis">Efficiency: "<span class="open">?</span>"</td><td>Minder nakijkwerk per opdracht, en groei opvangen zonder evenredig meer nakijkers.</td></tr>
-      </tbody>
-    </table>
-    <p class="aanname">Na een jaar evalueren we de bijdrage binnen het koerspunt efficiency.</p>
+    <h1>Efficiency en organisatie als voorwaarde</h1>
+    <p class="lead">Op deze onderdelen van ons koersplan heeft Eduface impact.</p>
+    <ul class="steekwoorden">
+      <li><span class="icoon" aria-hidden="true"><svg><use href="#i-it"/></svg></span>Inzet op IT</li>
+      <li><span class="icoon" aria-hidden="true"><svg><use href="#i-proces"/></svg></span>Betere processen</li>
+      <li><span class="icoon" aria-hidden="true"><svg><use href="#i-data"/></svg></span>Datagedreven</li>
+      <li><span class="icoon" aria-hidden="true"><svg><use href="#i-mensen"/></svg></span>Een stevig kernteam</li>
+    </ul>
   </section>
 
   <section>

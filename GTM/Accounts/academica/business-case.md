@@ -48,10 +48,7 @@ Na een jaar evalueren we de bijdrage binnen het koerspunt efficiency.
 
 _Bron: gesprek 01-10 (Marjolein: efficiency is een van de zeven punten in het koersplan tot 2030). Letterlijke tekst nog niet ontvangen._
 
-_27-10-2026, koersplan aangeleverd door Dante. Twee punten passen, de rest niet:_
-- _**Efficiency en organisatie als voorwaarde:** inzet op IT, betere processen, datagedreven._
-- _**Een stevig kernteam:** het kernteam (de docenten in dienst, op kantoor) hoeft niet zelf na te kijken maar monitort._
-_Ontwerp in twee opties: `proef-koersplan.png`. Wacht op keuze. "Datagedreven" leunt op het beoordelaarsoverzicht, nog te bevestigen bij Menno._
+_27-10-2026, gecorrigeerd door Dante: efficiency is één koerspunt, "Efficiency en organisatie als voorwaarde", met vier steekwoorden: inzet op IT, betere processen, datagedreven, een stevig kernteam (de docenten in dienst). Alleen de steekwoorden tonen, geen onderbouwing: de bestuurders vullen dat zelf in. Vorm: verticaal, elk in een card met icoon. Staat zo in de PDF, pagina 3. De opties in `proef-koersplan.png` zijn vervallen._
 ## 4. Impact: geld, tijd, people [akkoord]
 _Lezer denkt: "De winst zit in tijd, en die tijd gaat terug naar onderwijs."_
 _Akkoord 09-10-2026._
