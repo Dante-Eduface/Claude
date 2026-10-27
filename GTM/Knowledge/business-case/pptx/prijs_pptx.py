@@ -56,19 +56,20 @@ import os
 HIER = os.path.dirname(os.path.abspath(__file__))
 LIJNKLR = RGBColor(0xD9, 0xDD, 0xE4)
 tekst(L, 712, B, 30, [('WAT DE INSTELLING ERVOOR KRIJGT', 11, True, KLANT, 0)])
-W3 = (B - 2 * 24) / 3
+RIJ, GAP = 84, 12
 for i, (icoon, kop, sub) in enumerate([
         ('consistent', 'Uniforme beoordeling', 'Elke opdracht wordt langs dezelfde criteria beoordeeld, door elke beoordelaar.'),
         ('koppeling', 'Integratie in NEO LMS', 'Opdrachten en cijfers lopen via NEO. Docenten en studenten werken in de omgeving die ze kennen.'),
         ('feedback', 'Formatieve feedback van 50% naar 100%', 'Elke student krijgt formatieve feedback. Nu is dat de helft.')]):
-    x = L + i * (W3 + 24)
-    v = s.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, E(x), E(752), E(W3), E(270))
-    v.adjustments[0] = 0.08; v.fill.solid(); v.fill.fore_color.rgb = WIT
+    y = 748 + i * (RIJ + GAP)
+    v = s.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, E(L), E(y), E(B), E(RIJ))
+    v.adjustments[0] = 0.18; v.fill.solid(); v.fill.fore_color.rgb = WIT
     v.line.color.rgb = LIJNKLR; v.line.width = Pt(1); v.shadow.inherit = False
-    rondje = s.shapes.add_shape(MSO_SHAPE.OVAL, E(x + 36), E(788), E(72), E(72))
+    rondje = s.shapes.add_shape(MSO_SHAPE.OVAL, E(L + 24), E(y + 14), E(56), E(56))
     rondje.fill.solid(); rondje.fill.fore_color.rgb = TINT; rondje.line.fill.background(); rondje.shadow.inherit = False
-    s.shapes.add_picture(os.path.join(HIER, 'assets', icoon + '.png'), E(x + 52), E(804), E(40), E(40))
-    tekst(x + 36, 880, W3 - 72, 130, [(kop, 16, True, TEKST, 0), (sub, 12, False, TEKST, 4)])
+    s.shapes.add_picture(os.path.join(HIER, 'assets', icoon + '.png'), E(L + 38), E(y + 28), E(28), E(28))
+    tekst(L + 108, y, 660, RIJ, [(kop, 16, True, TEKST, 0)], anchor=MSO_ANCHOR.MIDDLE)
+    tekst(L + 790, y, B - 820, RIJ, [(sub, 13, False, TEKST, 0)], anchor=MSO_ANCHOR.MIDDLE)
 
 out = sys.argv[1]; prs.save(out)
 p = Presentation(out)
