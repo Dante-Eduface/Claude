@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Proef koersplan Academica</title>
+<style>
+  /* Proef voor onderdeel 3. Zelfde tokens als business-case-academica.html. */
+  @font-face { font-family: "Inter"; src: url("../../../Design/Merk/fonts/Inter-variable.woff2") format("woff2"); font-weight: 100 900; }
+  :root {
+    --klant: #000326; --klant-tint: #eaf3fb; --klant-tint-2: #cfe4f6;
+    --tekst: #1d2433; --tekst-zacht: #5b6474; --lijn: #d9dde4; --achter: #f2f3f5;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--achter); color: var(--tekst); font-family: Inter, Arial, sans-serif; font-size: 13.5px; line-height: 1.5; }
+  .naast { display: grid; grid-template-columns: repeat(2, 794px); gap: 32px; padding: 32px; width: max-content; }
+  .optie { font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--tekst-zacht); margin: 0 0 8px; }
+  .a4 { background: #fff; padding: 56px 64px; min-height: 620px; box-shadow: 0 1px 3px rgba(20,30,50,.12); }
+  .label { font-size: 11.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--klant); margin: 0 0 6px; font-weight: 700; }
+  h1 { font-size: 27px; line-height: 1.2; margin: 0 0 10px; font-weight: 700; max-width: 30ch; }
+  .lead { margin: 0 0 24px; color: var(--tekst-zacht); max-width: 62ch; font-size: 14px; }
+  .aanname { font-size: 11.5px; color: var(--tekst-zacht); margin: 10px 0 0; }
+
+  /* Optie A: tabel stijl B */
+  table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 13px; }
+  th, td { padding: 12px 14px; vertical-align: top; text-align: left; }
+  thead th { background: var(--klant); color: #fff; font-weight: 600; font-size: 11.5px; }
+  thead th:first-child { border-radius: 8px 0 0 0; } thead th:last-child { border-radius: 0 8px 0 0; }
+  tbody td { border-bottom: 1px solid var(--lijn); }
+  td.punt { font-weight: 700; width: 34%; }
+  td.punt span { display: block; font-weight: 400; color: var(--tekst-zacht); font-size: 12px; margin-top: 4px; }
+  dl { margin: 0; display: grid; grid-template-columns: 112px 1fr; gap: 8px 12px; }
+  dt { font-weight: 600; } dd { margin: 0; }
+
+  /* Optie B: twee koerspunten als blok */
+  .punten { display: grid; gap: 14px; }
+  .punt-blok { background: var(--klant-tint); border-radius: 12px; padding: 20px 22px; }
+  .punt-kop { display: flex; align-items: baseline; gap: 12px; margin-bottom: 14px; }
+  .nr { font-size: 12px; font-weight: 700; color: #fff; background: var(--klant); border-radius: 999px; width: 22px; height: 22px; display: grid; place-items: center; flex: none; transform: translateY(-1px); }
+  .punt-kop h3 { margin: 0; font-size: 16px; }
+  .drie { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+  .drie div { background: #fff; border-radius: 8px; padding: 12px 14px; font-size: 12.5px; }
+  .drie b { display: block; color: var(--klant); margin-bottom: 4px; font-size: 13px; }
+  .verschuiving { display: grid; grid-template-columns: 1fr 28px 1fr; align-items: center; gap: 8px; }
+  .verschuiving div { background: #fff; border-radius: 8px; padding: 12px 14px; font-size: 12.5px; }
+  .verschuiving .van { border: 1.5px dashed var(--lijn); background: transparent; color: var(--tekst-zacht); }
+  .verschuiving b { display: block; font-size: 13px; color: var(--tekst); margin-bottom: 2px; }
+  .verschuiving .naar b { color: var(--klant); }
+  .verschuiving .pijl { color: var(--klant); display: grid; place-items: center; background: none; padding: 0; }
+  .uitleg { margin: 12px 0 0; font-size: 12.5px; }
+</style>
+</head>
+<body>
+<div class="naast">
+
+  <div>
+    <p class="optie">Optie A · tabel, zelfde stijl als de rest</p>
+    <div class="a4">
+      <p class="label">Koersplan</p>
+      <h1>Eduface draagt bij aan twee punten uit ons koersplan</h1>
+      <p class="lead">Van de zeven punten in ons koersplan tot 2030 sluiten er twee direct aan.</p>
+      <table>
+        <thead><tr><th>Koerspunt</th><th>Bijdrage van Eduface</th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="punt">Efficiency en organisatie als voorwaarde<span>Inzet op IT, betere processen, datagedreven</span></td>
+            <td><dl>
+              <dt>IT</dt><dd>Eduface werkt binnen NEO. Cijfers gaan automatisch door naar Progress.</dd>
+              <dt>Processen</dt><dd>Elke opdracht volgt dezelfde rubric en dezelfde feedbackinstructies.</dd>
+              <dt>Datagedreven</dt><dd>Per criterium en per beoordelaar is te zien waar beoordelingen afwijken.</dd>
+            </dl></td>
+          </tr>
+          <tr>
+            <td class="punt">Een stevig kernteam<span>Onze docenten in dienst</span></td>
+            <td>Het kernteam kijkt niet meer elke opdracht vanaf nul na. Het controleert de voorstellen van Eduface en bewaakt de kwaliteit.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="aanname">Na een jaar evalueren we de bijdrage aan beide koerspunten.</p>
+    </div>
+  </div>
+
+  <div>
+    <p class="optie">Optie B · twee blokken, de verschuiving zichtbaar</p>
+    <div class="a4">
+      <p class="label">Koersplan</p>
+      <h1>Eduface draagt bij aan twee punten uit ons koersplan</h1>
+      <p class="lead">Van de zeven punten in ons koersplan tot 2030 sluiten er twee direct aan.</p>
+      <div class="punten">
+        <div class="punt-blok">
+          <div class="punt-kop"><span class="nr">1</span><h3>Efficiency en organisatie als voorwaarde</h3></div>
+          <div class="drie">
+            <div><b>Inzet op IT</b>Eduface werkt binnen NEO. Cijfers gaan automatisch door naar Progress.</div>
+            <div><b>Betere processen</b>Elke opdracht volgt dezelfde rubric en dezelfde feedbackinstructies.</div>
+            <div><b>Datagedreven</b>Per criterium en per beoordelaar is te zien waar beoordelingen afwijken.</div>
+          </div>
+        </div>
+        <div class="punt-blok">
+          <div class="punt-kop"><span class="nr">2</span><h3>Een stevig kernteam</h3></div>
+          <div class="verschuiving">
+            <div class="van"><b>Nu</b>Onze docenten kijken elke opdracht zelf na, vanaf nul.</div>
+            <div class="pijl"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15"/><path d="M13 6l6 6-6 6"/></svg></div>
+            <div class="naar"><b>Met Eduface</b>Ze controleren de voorstellen en bewaken de kwaliteit.</div>
+          </div>
+        </div>
+      </div>
+      <p class="aanname">Na een jaar evalueren we de bijdrage aan beide koerspunten.</p>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
