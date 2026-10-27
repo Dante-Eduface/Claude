@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proef kostenpagina</title>
+<style>
+  /* Klantkleur is een placeholder. Nu = grijs, Eduface = klantkleur. */
+  :root { --klant: #0b1533; --tint: #eef1f7; --nu: #9aa3b2; --tekst: #1d2433; --zacht: #5b6474; --lijn: #d9dde4; --raster: #eceef2; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f2f3f5; color: var(--tekst); font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 15px; line-height: 1.5; }
+  .vel { width: 900px; margin: 0 auto 24px; background: #fff; padding: 48px 56px 52px; }
+  .variant { display: inline-block; font-size: 11px; color: var(--zacht); border: 1px solid var(--lijn); border-radius: 6px; padding: 2px 8px; margin-bottom: 20px; }
+  h2 { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--klant); margin: 0 0 6px; font-weight: 600; }
+  h1 { font-size: 26px; line-height: 1.25; margin: 0 0 8px; font-weight: 700; max-width: 30ch; }
+  .lead { margin: 0 0 22px; color: var(--zacht); max-width: 64ch; }
+  .noot { font-size: 12px; color: var(--zacht); margin-top: 14px; }
+  .legenda { display: flex; gap: 20px; font-size: 13px; color: var(--zacht); margin-bottom: 6px; }
+  .legenda i { display: inline-block; width: 16px; height: 3px; vertical-align: 4px; margin-right: 6px; }
+  .legenda i.blok { height: 12px; width: 12px; border-radius: 3px; vertical-align: -1px; }
+  svg { display: block; width: 100%; height: auto; overflow: visible; }
+  .as { font-size: 12px; fill: var(--zacht); font-variant-numeric: tabular-nums; }
+  .direct { font-size: 13px; font-weight: 600; fill: var(--tekst); }
+  .kader { border-left: 4px solid var(--klant); background: var(--tint); padding: 14px 18px; border-radius: 0 8px 8px 0; margin-top: 20px; }
+  .kader .kop { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--klant); font-weight: 600; }
+  .kader p { margin: 2px 0 0; font-weight: 600; }
+  .betaling { display: flex; gap: 32px; padding: 14px 0; border-top: 1px solid var(--lijn); border-bottom: 1px solid var(--lijn); margin-bottom: 22px; font-size: 13px; color: var(--zacht); }
+  .betaling b { display: block; font-size: 20px; color: var(--tekst); font-variant-numeric: tabular-nums; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; border-radius: 8px; overflow: hidden; font-variant-numeric: tabular-nums; margin-top: 22px; }
+  th, td { padding: 9px 12px; text-align: left; }
+  th.num, td.num { text-align: right; }
+  thead th { background: var(--klant); color: #fff; font-size: 12px; font-weight: 600; }
+  tbody td { border-bottom: 1px solid var(--lijn); }
+  tr.totaal td { background: var(--tint); font-weight: 700; border-bottom: none; }
+  .cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 18px; }
+  .card { background: var(--tint); border-radius: 12px; padding: 16px 18px; }
+  .card .wat { font-size: 12px; color: var(--zacht); }
+  .card .getal { font-size: 28px; font-weight: 700; color: var(--klant); font-variant-numeric: tabular-nums; }
+  .card .sub { font-size: 12px; }
+</style>
+</head>
+<body>
+
+<div class="vel" id="a">
+  <span class="variant">Variant A · opgeteld over twee jaar</span>
+  <h2>Kosten</h2>
+  <h1>Eduface kost de helft van wat nakijken nu kost</h1>
+  <p class="lead">Nakijken kost nu € 35 per opdracht. Eduface kost een vast bedrag per maand, ook als het aantal opdrachten groeit.</p>
+  <div class="betaling"><div><b>€ 1.500</b>per maand, vooraf</div><div><b>€ 18.000</b>per jaar</div><div><b>€ 35</b>per opdracht nu</div></div>
+  <div class="legenda"><span><i style="background:var(--nu)"></i>Nakijken nu</span><span><i style="background:var(--klant)"></i>Eduface</span></div>
+  <svg id="ga" viewBox="0 0 680 300" role="img" aria-label="Opgetelde kosten over 24 maanden: nakijken nu loopt op tot 82.740 euro, Eduface tot 36.000 euro."></svg>
+  <div class="kader"><div class="kop">Bij groei</div><p>Jaar 2 telt 250 opdrachten meer. De kosten van nakijken stijgen mee, de prijs van Eduface blijft gelijk.</p></div>
+  <p class="noot">Jaar 1: 1.057 opdrachten, jaar 2: 1.307 opdrachten. Prijs blijft gelijk zolang het aantal studenten binnen dezelfde staffel valt.</p>
+</div>
+
+<div class="vel" id="b">
+  <span class="variant">Variant B · per jaar en per opdracht</span>
+  <h2>Kosten</h2>
+  <h1>Eduface kost de helft van wat nakijken nu kost</h1>
+  <p class="lead">Nakijken kost nu € 35 per opdracht. Eduface kost € 1.500 per maand, vooraf betaald, ook als het aantal opdrachten groeit.</p>
+  <div class="legenda"><span><i class="blok" style="background:var(--nu)"></i>Nakijken nu</span><span><i class="blok" style="background:var(--klant)"></i>Eduface</span></div>
+  <svg id="gb" viewBox="0 0 680 200" role="img" aria-label="Per jaar: nakijken nu 36.995 en 45.745 euro, Eduface 18.000 euro."></svg>
+  <div class="cards">
+    <div class="card"><div class="wat">Nu, per opdracht</div><div class="getal">€ 35,00</div><div class="sub">elk jaar</div></div>
+    <div class="card"><div class="wat">Eduface, per opdracht, jaar 1</div><div class="getal">€ 17,03</div><div class="sub">bij 1.057 opdrachten</div></div>
+    <div class="card"><div class="wat">Eduface, per opdracht, jaar 2</div><div class="getal">€ 13,77</div><div class="sub">bij 1.307 opdrachten</div></div>
+  </div>
+  <table>
+    <thead><tr><th>Post</th><th class="num">Jaar 1</th><th class="num">Jaar 2</th></tr></thead>
+    <tbody>
+      <tr><td>Opdrachten</td><td class="num">1.057</td><td class="num">1.307</td></tr>
+      <tr><td>Nakijken nu</td><td class="num">€ 36.995</td><td class="num">€ 45.745</td></tr>
+      <tr><td>Eduface</td><td class="num">€ 18.000</td><td class="num">€ 18.000</td></tr>
+      <tr class="totaal"><td>Verschil</td><td class="num">€ 18.995</td><td class="num">€ 27.745</td></tr>
+    </tbody>
+  </table>
+  <p class="noot">Prijs blijft gelijk zolang het aantal studenten binnen dezelfde staffel valt.</p>
+</div>
+
+<script>
+const ns='http://www.w3.org/2000/svg';
+function mk(svg){return (n,a,t)=>{const e=document.createElementNS(ns,n);for(const k in a)e.setAttribute(k,a[k]);if(t)e.textContent=t;svg.appendChild(e);return e;};}
+const eur=v=>'€ '+Math.round(v).toLocaleString('nl-NL');
+
+// A: opgeteld over 24 maanden
+{const svg=document.getElementById('ga'),el=mk(svg);const M=24,W=680,H=300,L=60,R=150,T=10,B=32,pw=W-L-R,ph=H-T-B,yMax=90000;
+ const nu=[],ed=[];let a=0,b=0;for(let m=1;m<=M;m++){a+=(m<=12?36995:45745)/12;b+=1500;nu.push(a);ed.push(b);}
+ const x=m=>L+(m-1)/(M-1)*pw,y=v=>T+ph-v/yMax*ph;
+ for(let v=0;v<=yMax;v+=30000){el('line',{x1:L,x2:L+pw,y1:y(v),y2:y(v),stroke:v?'var(--raster)':'#9aa3b2'});el('text',{class:'as',x:L-8,y:y(v)+4,'text-anchor':'end'},v?(v/1000)+'k':'0');}
+ [1,6,12,18,24].forEach(m=>el('text',{class:'as',x:x(m),y:H-8,'text-anchor':'middle'},'mnd '+m));
+ el('line',{x1:x(13),x2:x(13),y1:T,y2:T+ph,stroke:'var(--lijn)','stroke-dasharray':'4 4'});
+ el('text',{class:'as',x:x(13)+6,y:T+14},'jaar 2: +250 opdrachten');
+ const pad=arr=>arr.map((v,i)=>(i?'L':'M')+x(i+1).toFixed(1)+' '+y(v).toFixed(1)).join(' ');
+ el('path',{d:pad(nu)+` L${x(M)} ${y(ed[M-1])} `+ed.map((v,i)=>'L'+x(M-i).toFixed(1)+' '+y(ed[M-1-i]).toFixed(1)).join(' ')+' Z',fill:'var(--tint)'});
+ el('path',{d:pad(nu),fill:'none',stroke:'var(--nu)','stroke-width':2.5});
+ el('path',{d:pad(ed),fill:'none',stroke:'var(--klant)','stroke-width':2.5});
+ el('text',{class:'direct',x:x(M)+8,y:y(nu[M-1])+4},'Nu '+eur(nu[M-1]));
+ el('text',{class:'direct',x:x(M)+8,y:y(ed[M-1])+4},'Eduface '+eur(ed[M-1]));
+ el('text',{class:'direct',x:x(19),y:y((nu[18]+ed[18])/2)+4,'text-anchor':'middle'},eur(nu[M-1]-ed[M-1])+' verschil na 2 jaar');}
+
+// B: staven per jaar
+{const svg=document.getElementById('gb'),el=mk(svg);const W=680,L=70,R=110,pw=W-L-R,max=50000;const sx=v=>v/max*pw;
+ const rows=[['Jaar 1',36995,18000],['Jaar 2',45745,18000]];
+ rows.forEach(([j,n,e],i)=>{const y0=10+i*96;
+  el('text',{class:'direct',x:0,y:y0+30},j);
+  el('rect',{x:L,y:y0,width:sx(n),height:30,rx:4,fill:'var(--nu)'});
+  el('text',{class:'direct',x:L+sx(n)+8,y:y0+20},eur(n));
+  el('rect',{x:L,y:y0+34,width:sx(e),height:30,rx:4,fill:'var(--klant)'});
+  el('text',{class:'direct',x:L+sx(e)+8,y:y0+54},eur(e));});}
+</script>
+</body>
+</html>
