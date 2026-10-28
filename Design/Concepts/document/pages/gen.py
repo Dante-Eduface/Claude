@@ -1,3 +1,4 @@
+import re
 """Genereert de zes pagina's op één stylesheet."""
 IC = {
  'scale':'<path d="M12 3v18M7 21h10M5 7h14M5 7l-3 7a3 3 0 0 0 6 0zM19 7l-3 7a3 3 0 0 0 6 0z"/>',
@@ -18,10 +19,16 @@ def dots(k): return '<div class="dots">' + ''.join(f'<i class="{"on" if i < k el
 def hbar(lbl, pct, val, on=False, avg=None):
     a = f'<span style="position:absolute;top:-1.5mm;bottom:-1.5mm;left:{avg}%;width:0.5mm;background:var(--muted)"></span>' if avg else ''
     return f'<div class="hbar{" on" if on else ""}"><span>{lbl}</span><div class="track"><div class="fill" style="width:{pct}%"></div>{a}</div><b>{val}</b></div>'
+# Per onderdeel een eigen tint (hoofdkaart, tweede kaart), om en om een lichte en een donkere pagina
+TINT = {1: ('#e3e6f4', '#f1f2f9'), 2: ('#e4e0f5', '#f1eff9'), 3: ('#dfe8f3', '#eef3f9'),
+        4: ('#e0eaf0', '#eff5f8'), 5: ('#dde4f7', '#edf1fb'), 6: ('#e6e8ee', '#f3f4f7')}
 def page(name, body, first=False):
+    nr = int(name.split('-')[0])
+    body = re.sub(r'<h1>(.*?)</h1>', lambda m: f'<header class="kop"><div class="label">{nr:02d}</div><h1>{m.group(1)}</h1></header>', body, count=1)
+    t, ts = TINT[nr]
     open(f'{name}.html', 'w').write(f'''<!doctype html><html lang="nl"><head><meta charset="utf-8"><title>{name}</title>
 <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css"></head><body{' class="first"' if first else ''}>{body}</body></html>''')
+<link rel="stylesheet" href="style.css"><style>:root{{--tint:{t};--tint-soft:{ts}}}</style></head><body{' class="dark"' if nr % 2 == 0 else ''}>{body}</body></html>''')
 
 page('1-opening', f'''
 <h1>Managementsamenvatting</h1>
@@ -34,7 +41,7 @@ page('1-opening', f'''
   </div>
   <p class="small" style="margin-top:3mm">Elke stip is 5% van de studenten.</p>
   <section class="card secondary"><div class="num">76% goedkoper</div><p class="desc">per student die feedback krijgt</p></section>
-</div>''', first=True)
+</div>''')
 
 page('2-kosten', f'''
 <h1>Kosten</h1>
@@ -55,7 +62,7 @@ lens = lambda title, sub, pos, on: f'''<div class="panel" style="margin-top:0"><
 <div style="position:relative;margin-top:6mm;height:6mm"><span style="position:absolute;left:0;right:0;top:2.8mm;height:0.4mm;background:var(--blue-200)"></span>{''.join(f'<span style="position:absolute;top:0.9mm;left:calc({p}% - 2.1mm);width:4.2mm;height:4.2mm;border-radius:50%;box-sizing:border-box;border:0.6mm solid var(--accent);background:{"var(--accent)" if on else "#fff"}"></span>' for p in pos)}</div>
 <div class="small" style="display:flex;justify-content:space-between;margin-top:2mm"><span>Strenger</span><span>Milder</span></div></div>'''
 page('3-instelling', f'''
-<h1>Wat de instelling ervoor krijgt</h1>
+<h1>Opbrengst</h1>
 <div class="stack">
   <section class="card primary">{ttl("scale","Uniforme beoordeling")}
     <p class="desc">Elke opdracht wordt langs dezelfde criteria beoordeeld, door elke beoordelaar.</p>

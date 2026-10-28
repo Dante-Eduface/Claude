@@ -16,6 +16,9 @@ const pages = process.argv.slice(2);
         return {hex: [r,g,b_].map(v=>(+v).toString(16).padStart(2,'0')).join(''), a: +a}; };
       const box = el => { const r = el.getBoundingClientRect(); return {x:r.left,y:r.top,w:r.width,h:r.height}; };
       const consumed = new Set();
+      // Paginakleur als eerste vlak, zodat donkere pagina's ook in de pptx donker zijn
+      const bodyBg = col(getComputedStyle(document.body).backgroundColor);
+      if (bodyBg && bodyBg.hex !== 'ffffff') items.push({k:'rect', x:0, y:0, w:794, h:1123, fill: bodyBg, line:null, lw:0, r:0});
       const all = [...document.body.querySelectorAll('*')];
       for (const el of all) {
         if (el.closest('svg') && el.tagName !== 'svg') continue;
@@ -49,7 +52,7 @@ const pages = process.argv.slice(2);
                     align: cs.textAlign === 'right' ? 'right' : cs.textAlign === 'center' ? 'center' : 'left', lh,
                     ls: parseFloat(cs.letterSpacing) || 0});
       }
-      return {items, svgs};
+      return {items, svgs, dark: document.body.classList.contains('dark')};
     });
     for (const s of data.svgs) {
       const el = (await p.$$('svg'))[s.idx];
@@ -58,7 +61,7 @@ const pages = process.argv.slice(2);
       s.file = f;
     }
     data.items.forEach(it => { if (it.k === 'svg') it.file = data.svgs[it.idx].file; });
-    out.push(data.items);
+    out.push({dark: data.dark, items: data.items});
     await p.close();
   }
   fs.writeFileSync('layout.json', JSON.stringify(out));

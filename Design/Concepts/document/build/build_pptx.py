@@ -20,7 +20,8 @@ def blend(c):
 
 prs = Presentation()
 prs.slide_width, prs.slide_height = E(794), E(1123)
-for nr, items in enumerate(json.load(open('layout.json')), 1):
+for nr, pg in enumerate(json.load(open('layout.json')), 1):
+    items, dark = pg['items'], pg['dark']
     s = prs.slides.add_slide(prs.slide_layouts[6])
     for it in items:
         if it['k'] == 'rect':
@@ -69,15 +70,17 @@ for nr, items in enumerate(json.load(open('layout.json')), 1):
                     r = p.add_run(); r.text = t.upper() if ru['upper'] else t
                     f = r.font; f.name = ru['font']; f.size = Pt(ru['size'] * 0.75); f.bold = ru['bold']
                     f.color.rgb = RGBColor.from_string(ru['color'])
-    # Logo Academica: groot boven de opening, klein linksonder op de rest (verhouding 1648 x 320)
-    if nr == 1:
-        s.shapes.add_picture('academica.png', E(76), E(40), height=E(32))
-    else:
-        s.shapes.add_picture('academica.png', E(76), E(1123 - 54), height=E(16))
+    # Logo Academica linksonder. Op een donkere pagina op een wit vlak, anders valt de zwarte tekst weg.
+    if dark:
+        pill = s.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, E(70), E(1123 - 60), E(95), E(28))
+        pill.fill.solid(); pill.fill.fore_color.rgb = RGBColor.from_string('ffffff'); pill.line.fill.background()
+        pill.adjustments[0] = 0.3
+        for ref in pill._element.iter(qn('a:effectRef')): ref.set('idx', '0')
+    s.shapes.add_picture('academica.png', E(78), E(1123 - 54), height=E(16))
     # Paginanummer rechtsonder, in de marge van 20 mm
     tb = s.shapes.add_textbox(E(794 - 76 - 60), E(1123 - 52), E(60), E(16))
     tf = tb.text_frame; tf.margin_left = tf.margin_right = tf.margin_top = tf.margin_bottom = 0
     p = tf.paragraphs[0]; p.alignment = PP_ALIGN.RIGHT
     r = p.add_run(); r.text = str(nr)
-    r.font.name = 'Inter'; r.font.size = Pt(8); r.font.color.rgb = RGBColor.from_string('555a78')
+    r.font.name = 'Inter'; r.font.size = Pt(8); r.font.color.rgb = RGBColor.from_string('b3b5c6' if dark else '555a78')
 prs.save('../eduface-document-bewerkbaar.pptx')
