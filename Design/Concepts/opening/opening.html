@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Opening</title>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  @page { size: A4; margin: 0; }
+  :root { --accent:#000326; --blue-200:#d6d9ea; --blue-100:#e3e6f4; --blue-50:#f1f2f9; --muted:#555a78; }
+  * { box-sizing: border-box; margin: 0; }
+  html, body { background: #fff; }
+  body { width: 210mm; height: 297mm; padding: 28mm 20mm 24mm; color: var(--accent);
+         font-family: Inter, sans-serif; -webkit-font-smoothing: antialiased; display: flex; flex-direction: column; }
+  h1, .big { font-family: "League Spartan", sans-serif; font-weight: 700; letter-spacing: -0.015em; }
+  h1 { font-size: 40pt; line-height: 1.02; max-width: 160mm; }
+  .lead { margin-top: 7mm; font-size: 12.5pt; line-height: 1.55; color: var(--muted); max-width: 150mm; }
+
+  .duo { margin-top: 16mm; display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; }
+  .card { border-radius: 6mm; padding: 9mm; }
+  .now { border: 0.3mm solid var(--blue-200); }
+  .edu { background: var(--blue-100); }
+  .k { font-size: 9pt; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+  .big { margin-top: 3mm; font-size: 40pt; line-height: 1; }
+  .card p { margin-top: 2mm; font-size: 10.5pt; color: var(--muted); }
+  .dots { margin-top: 8mm; display: grid; grid-template-columns: repeat(10, 1fr); gap: 2.4mm; }
+  .dots i { aspect-ratio: 1; border-radius: 50%; border: 0.5mm solid var(--blue-200); }
+  .dots i.on { background: var(--accent); border-color: var(--accent); }
+  .legend { margin-top: 3mm; font-size: 9pt; color: var(--muted); }
+
+  .result { margin-top: 6mm; border-radius: 6mm; background: var(--blue-50); padding: 9mm;
+            display: flex; align-items: center; gap: 8mm; }
+  .result .big { margin: 0; font-size: 64pt; }
+  .result p { font-size: 12pt; line-height: 1.4; }
+  .result p b { display: block; font-size: 14pt; }
+</style>
+</head>
+<body>
+  <h1>Twee keer zoveel feedback, voor de helft van het geld</h1>
+  <p class="lead">Nu krijgt de helft van de studenten formatieve feedback. Met Eduface krijgt iedereen het.</p>
+
+  <div class="duo">
+    <section class="card now">
+      <div class="k">Nu</div>
+      <div class="big">€ 37.000</div>
+      <p>Feedback voor de helft</p>
+      <div class="dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div>
+    </section>
+    <section class="card edu">
+      <div class="k">Met Eduface</div>
+      <div class="big">€ 18.000</div>
+      <p>Feedback voor elke student</p>
+      <div class="dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div>
+    </section>
+  </div>
+  <div class="legend">Elke stip is 5% van de studenten.</div>
+
+  <section class="result">
+    <div class="big">76%</div>
+    <p><b>goedkoper</b>per student die feedback krijgt</p>
+  </section>
+</body>
+</html>
