@@ -31,7 +31,7 @@ def page(name, body, first=False):
 <link rel="stylesheet" href="style.css"><style>:root{{--tint:{t};--tint-soft:{ts}}}</style></head><body{' class="dark"' if nr % 2 == 0 else ''}>{body}</body></html>''')
 
 page('1-opening', f'''
-<h1>Managementsamenvatting</h1>
+<h1>Voorstel</h1>
 <p class="lead">Eduface is een onderwijskundig AI-model, ontwikkeld met hulp van de Universiteit Leiden en de Radboud Universiteit, dat formatieve en summatieve feedback geeft op studentopdrachten. Docenten besteden daardoor minder tijd aan het formuleren van feedback, elke student krijgt formatieve feedback, en een groeiend aantal studenten vraagt niet om evenredig meer nakijkers.</p>
 <p class="statement">Dat is een concrete invulling van het koerspunt efficiëntie.</p>
 <div class="stack">
