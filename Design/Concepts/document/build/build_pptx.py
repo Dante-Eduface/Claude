@@ -41,9 +41,13 @@ for nr, items in enumerate(json.load(open('layout.json')), 1):
             s.shapes.add_picture(it['file'], E(it['x']), E(it['y']), E(it['w']), E(it['h']))
         else:
             # Iets ruimer dan in de browser, zodat afwijkende fontmetriek niet tot een extra regel leidt
-            # Breedte van het eigen blok, plus marge: fontmetriek verschilt per programma
-            w = max(it['blockW'], it['w'] * 1.12 + 6)
+            # Lopende tekst houdt de breedte van zijn blok, zodat hij binnen de marges afbreekt.
+            # Korte regels krijgen wat speling, want fontmetriek verschilt per programma.
+            lines = round(it['h'] / it['lh'])
+            w = it['w'] if lines > 1 else it['w'] * 1.12 + 6
             x = it['x'] if it['align'] == 'left' else it['x'] - (w - it['w']) if it['align'] == 'right' else it['x'] - (w - it['w']) / 2
+            # Nooit voorbij de paginamarge van 20 mm
+            x = max(x, 76); w = min(w, 794 - 76 - x)
             tb = s.shapes.add_textbox(E(x), E(it['y']), E(w), E(it['h']))
             tf = tb.text_frame; tf.word_wrap = True; tf.vertical_anchor = MSO_ANCHOR.TOP
             # Nooit laten krimpen: elke titel houdt overal dezelfde grootte
