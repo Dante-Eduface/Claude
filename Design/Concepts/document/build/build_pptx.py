@@ -4,7 +4,7 @@ from pptx import Presentation
 from pptx.util import Emu, Pt
 from pptx.dml.color import RGBColor
 from pptx.enum.shapes import MSO_SHAPE
-from pptx.enum.text import PP_ALIGN, MSO_ANCHOR
+from pptx.enum.text import PP_ALIGN, MSO_ANCHOR, MSO_AUTO_SIZE
 from pptx.oxml.ns import qn
 
 PX = 9525  # EMU per CSS-pixel (96 dpi)
@@ -46,6 +46,8 @@ for nr, items in enumerate(json.load(open('layout.json')), 1):
             x = it['x'] if it['align'] == 'left' else it['x'] - (w - it['w']) if it['align'] == 'right' else it['x'] - (w - it['w']) / 2
             tb = s.shapes.add_textbox(E(x), E(it['y']), E(w), E(it['h']))
             tf = tb.text_frame; tf.word_wrap = True; tf.vertical_anchor = MSO_ANCHOR.TOP
+            # Nooit laten krimpen: elke titel houdt overal dezelfde grootte
+            tf.auto_size = MSO_AUTO_SIZE.NONE
             tf.margin_left = tf.margin_right = tf.margin_top = tf.margin_bottom = 0
             p = tf.paragraphs[0]; p.alignment = ALIGN[it['align']]; p.line_spacing = Pt(it['lh'] * 0.75)
             runs = it['runs']
