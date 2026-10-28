@@ -57,22 +57,19 @@
     display: grid; gap: 16px;
   }
   .graders-head { font-size: 13px; color: var(--muted-inverse); display: flex; justify-content: space-between; }
-  .chart {
-    position: relative; height: 200px;
-    display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; align-items: end;
+  .chart { position: relative; display: grid; gap: 16px; }
+  .hrow { display: grid; grid-template-columns: 80px 1fr 40px; align-items: center; gap: 16px; font-size: 15px; }
+  .hrow .name { color: var(--muted-inverse); }
+  .hrow .score { text-align: right; font-weight: 600; }
+  .track { position: relative; height: 20px; border-radius: 6px; background: rgba(255,255,255,0.08); }
+  .fill { height: 100%; border-radius: 6px; background: rgba(255,255,255,0.85); }
+  .hrow.off .name { color: #fff; font-weight: 600; }
+  .hrow.off .fill {
+    border: 2px solid #fff; background: transparent;
+    background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.3) 0 6px, transparent 6px 12px);
   }
-  /* teamgemiddelde als stippellijn, op de hoogte van 7,1 */
-  .avg {
-    position: absolute; left: 0; right: 0; bottom: calc(71% * 0.8 + 24px);
-    border-top: 2px dashed rgba(255,255,255,0.35);
-  }
-  .avg span { position: absolute; right: 0; top: -22px; font-size: 12px; color: var(--muted-inverse); }
-  .col { display: flex; flex-direction: column; align-items: center; gap: 8px; height: 100%; justify-content: flex-end; }
-  .col .score { font-size: 15px; font-weight: 600; }
-  .col .bar { width: 100%; max-width: 72px; border-radius: 8px 8px 4px 4px; background: rgba(255,255,255,0.85); }
-  .col .name { font-size: 13px; color: var(--muted-inverse); height: 16px; }
-  .col.off .bar { background: transparent; border: 2px solid #fff; background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.25) 0 6px, transparent 6px 12px); }
-  .col.off .name { color: #fff; font-weight: 600; }
+  /* teamgemiddelde 7,1 op een schaal van 10, als verticale stippellijn */
+  .avg { position: absolute; top: -8px; bottom: -8px; left: 71%; border-left: 2px dashed rgba(255,255,255,0.45); }
   .flag {
     font-size: 13px; font-weight: 500; color: #fff;
     display: inline-flex; align-items: center; gap: 6px;
@@ -115,12 +112,11 @@
       <p>Zie in één overzicht wie afwijkt van het team.</p>
 
       <div class="graders" aria-label="Voorbeeld: gemiddeld cijfer per beoordelaar">
-        <div class="graders-head"><span>Gemiddeld cijfer per beoordelaar</span><span>Voorbeeld</span></div>
+        <div class="graders-head"><span>Gemiddeld cijfer per beoordelaar</span><span>- - - teamgemiddelde</span></div>
         <div class="chart">
-          <div class="avg"><span>Teamgemiddelde</span></div>
-          <div class="col"><span class="score">7,2</span><div class="bar" style="height:calc(72% * 0.8)"></div><span class="name">Docent A</span></div>
-          <div class="col"><span class="score">7,0</span><div class="bar" style="height:calc(70% * 0.8)"></div><span class="name">Docent B</span></div>
-          <div class="col off"><span class="score">5,6</span><div class="bar" style="height:calc(56% * 0.8)"></div><span class="name">Docent C</span></div>
+          <div class="hrow"><span class="name">Docent A</span><div class="track"><div class="fill" style="width:72%"></div><div class="avg"></div></div><span class="score">7,2</span></div>
+          <div class="hrow"><span class="name">Docent B</span><div class="track"><div class="fill" style="width:70%"></div><div class="avg"></div></div><span class="score">7,0</span></div>
+          <div class="hrow off"><span class="name">Docent C</span><div class="track"><div class="fill" style="width:56%"></div><div class="avg"></div></div><span class="score">5,6</span></div>
         </div>
         <span class="flag">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/><circle cx="12" cy="12" r="9"/></svg>
