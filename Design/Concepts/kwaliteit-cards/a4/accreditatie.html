@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Accreditatie</title>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  @page { size: A4; margin: 0; }
+  :root { --navy:#002333; --panel:#0a2c3b; --track:#1b3b4a; --muted:#5b7480; --muted-inv:#a9bcc4;
+          --ink50:#f3f7f8; --ink100:#e7eef0; --ink200:#cdd9de; }
+  * { box-sizing: border-box; margin: 0; }
+  html, body { background: #fff; }
+  body { width: 210mm; height: 297mm; padding: 24mm 20mm; color: var(--navy);
+         font-family: Inter, sans-serif; -webkit-font-smoothing: antialiased;
+         display: flex; flex-direction: column; }
+  h1, h2 { font-family: "League Spartan", sans-serif; font-weight: 700; letter-spacing: -0.01em; }
+  h1 { font-size: 34pt; line-height: 1; }
+
+  /* 1. Belangrijkst */
+  .c1 { margin-top: 16mm; background: var(--navy); color: #fff; border-radius: 6mm; padding: 10mm;
+        display: grid; grid-template-columns: 1fr 1.25fr; gap: 9mm; align-items: center; }
+  .c1 h2 { font-size: 22pt; line-height: 1.1; }
+  .c1 p { margin-top: 4mm; font-size: 11pt; line-height: 1.45; color: var(--muted-inv); }
+  .chart { background: var(--panel); border-radius: 3mm; padding: 6mm; display: grid; gap: 4mm; }
+  .head { display: flex; justify-content: space-between; font-size: 9pt; color: var(--muted-inv); }
+  .rows { position: relative; display: grid; gap: 3.5mm; }
+  .row { display: grid; grid-template-columns: 17mm 1fr 8mm; align-items: center; gap: 3mm; font-size: 10pt; color: var(--muted-inv); }
+  .row b { text-align: right; }
+  .track { height: 2.2mm; border-radius: 9px; background: var(--track); }
+  .fill { height: 100%; border-radius: inherit; background: var(--muted); }
+  .row.off { color: #fff; font-weight: 600; }
+  .row.off .fill { background: #fff; }
+  /* gemiddelde 7,1: kolom 2 begint op 17mm+3mm en is (100% - 31mm) breed */
+  .avg { position: absolute; top: -1.5mm; bottom: -1.5mm; width: 0.5mm; background: var(--muted-inv);
+         left: calc(20mm + (100% - 31mm) * 0.71); }
+
+  /* 2 en 3 */
+  .duo { margin-top: 8mm; display: grid; grid-template-columns: 1.3fr 1fr; gap: 8mm; }
+  .card { border-radius: 6mm; padding: 9mm; }
+  .c2 { border: 0.3mm solid var(--ink200); }
+  .c2 h2 { font-size: 17pt; line-height: 1.15; }
+  .c3 { background: var(--ink100); }
+  .c3 h2 { font-size: 14pt; line-height: 1.2; }
+  .card p { margin-top: 3mm; font-size: 10.5pt; line-height: 1.45; color: var(--muted); }
+  .tag { display: inline-block; margin-top: 5mm; padding: 1.5mm 4mm; border-radius: 99px;
+         background: var(--ink50); font-size: 9.5pt; font-weight: 600; }
+
+  /* Aanvulling, ondergeschikt */
+  .note { margin-top: 14mm; padding-left: 5mm; border-left: 0.6mm solid var(--ink200);
+          font-size: 10.5pt; line-height: 1.6; max-width: 150mm; }
+</style>
+</head>
+<body>
+  <h1>Accreditatie</h1>
+
+  <section class="c1">
+    <div>
+      <h2>Beoordelaars oordelen consistent</h2>
+      <p>Zie in één overzicht wie afwijkt van het team.</p>
+    </div>
+    <div class="chart">
+      <div class="head"><span>Voorbeeld per docent</span><span>Gemiddelde 7,1</span></div>
+      <div class="rows">
+        <div class="row"><span>Docent A</span><div class="track"><div class="fill" style="width:72%"></div></div><b>7,2</b></div>
+        <div class="row"><span>Docent B</span><div class="track"><div class="fill" style="width:70%"></div></div><b>7,0</b></div>
+        <div class="row off"><span>Docent C</span><div class="track"><div class="fill" style="width:56%"></div></div><b>5,6</b></div>
+        <div class="avg"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="duo">
+    <section class="card c2">
+      <h2>Elk cijfer is navolgbaar</h2>
+      <p>Onderbouwing per rubriccriterium.</p>
+      <span class="tag">AI Act audit trail</span>
+    </section>
+    <section class="card c3">
+      <h2>De examencommissie borgt de kwaliteit</h2>
+      <p>Elke onderbouwing direct in te zien.</p>
+    </section>
+  </div>
+
+  <p class="note">Consistent beoordelen is een speerpunt van dit project. Daarmee helpt het om de eisen van de accreditatiepartij hierboven steviger te borgen, en dat kan een positieve impact hebben op de pabo, die nu in de accreditatie zit.</p>
+</body>
+</html>
