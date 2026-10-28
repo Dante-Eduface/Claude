@@ -9,89 +9,130 @@
 <style>
   :root {
     --navy: #002333;
+    --navy-2: #0a2c3b;
     --muted: #5b7480;
+    --muted-inverse: #a9bcc4;
     --surface: #f3f7f8;
+    --surface-2: #e7eef0;
     --border: #e7eef0;
-    --green-deep: #007b54;
     --shadow-md: 0 4px 16px rgba(0, 35, 51, 0.08);
     --shadow-lg: 0 12px 40px rgba(0, 35, 51, 0.10);
     --r-card: 20px;
-    --pad: 24px;
   }
   * { box-sizing: border-box; margin: 0; }
   body {
-    min-height: 100vh; display: grid; place-items: center; padding: 64px 16px;
-    background: var(--surface); color: var(--navy);
+    min-height: 100vh; display: grid; place-items: center; padding: 96px 16px;
+    background: #fff; color: var(--navy);
     font-family: Inter, system-ui, sans-serif; -webkit-font-smoothing: antialiased;
   }
 
+  /* Bento: de belangrijkste kaart pakt twee kolommen en twee rijen */
   .grid {
-    width: 100%; max-width: 1080px;
-    display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    width: 100%; max-width: 1200px;
+    display: grid; gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, minmax(280px, auto));
   }
-
   .card {
-    display: flex; flex-direction: column; padding: var(--pad);
-    background: #fff; border-radius: var(--r-card); box-shadow: var(--shadow-md);
-    transition: box-shadow .2s, transform .2s;
+    display: flex; flex-direction: column; padding: 32px;
+    border-radius: var(--r-card);
   }
-  .card:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); }
-
   .icon {
-    width: 48px; height: 48px; display: grid; place-items: center;
-    border-radius: 12px; background: var(--surface); color: var(--navy);
+    width: 48px; height: 48px; display: grid; place-items: center; border-radius: 12px;
   }
-
   h3 {
-    margin-top: 24px; font-family: "League Spartan", Inter, sans-serif;
-    font-size: 22px; line-height: 1.2; font-weight: 700; letter-spacing: -0.01em;
-    text-wrap: balance;
+    font-family: "League Spartan", Inter, sans-serif; font-weight: 700;
+    letter-spacing: -0.01em; text-wrap: balance;
   }
+  p { font-size: 17px; line-height: 1.5; max-width: 40ch; }
 
-  /* Ingezet vlak, zoals in de referentie. Geneste hoek: 20 - 24 < 0, dus vaste 12 */
-  .proof {
-    margin-top: 16px; padding: 16px; border-radius: 12px; background: var(--surface);
-    font-size: 15px; line-height: 1.5; color: var(--navy);
-    flex: 1;
+  /* 1. Belangrijkst: inverse navy, groot, met een stukje product */
+  .c1 { grid-column: 1 / 3; grid-row: 1 / 3; background: var(--navy); color: #fff; padding: 48px; }
+  .c1 .icon { background: rgba(255,255,255,0.08); color: #fff; }
+  .c1 h3 { margin-top: 32px; font-size: 44px; line-height: 1.05; max-width: 14ch; }
+  .c1 p { margin-top: 16px; color: var(--muted-inverse); font-size: 19px; }
+
+  .graders {
+    margin-top: auto; padding: 24px; border-radius: 12px; background: var(--navy-2);
+    display: grid; gap: 16px;
   }
-
-  .tag {
-    margin-top: 16px; align-self: flex-start;
+  .graders-head { font-size: 13px; color: var(--muted-inverse); display: flex; justify-content: space-between; }
+  .row { display: grid; grid-template-columns: 80px 1fr 40px; align-items: center; gap: 16px; font-size: 15px; }
+  .row .name { color: var(--muted-inverse); }
+  .bar { height: 8px; border-radius: 9999px; background: rgba(255,255,255,0.08); position: relative; }
+  .bar span { position: absolute; inset: 0 auto 0 0; border-radius: inherit; background: #fff; opacity: .85; }
+  .row .score { text-align: right; font-weight: 600; }
+  .row.off .name, .row.off .score { color: #fff; }
+  .row.off .bar span { background: transparent; border: 2px solid #fff; opacity: 1; }
+  .flag {
+    justify-self: start; grid-column: 2; margin-top: -8px;
+    font-size: 13px; font-weight: 500; color: #fff;
     display: inline-flex; align-items: center; gap: 6px;
-    padding: 4px 10px; border-radius: 9999px; border: 1px solid var(--border);
-    font-size: 13px; font-weight: 500; color: var(--muted);
+  }
+
+  /* 2. Tweede: wit met rand en schaduw */
+  .c2 { background: #fff; border: 1px solid var(--border); box-shadow: var(--shadow-md); }
+  .c2 .icon { background: var(--surface); color: var(--navy); }
+  .c2 h3 { margin-top: auto; padding-top: 32px; font-size: 28px; line-height: 1.15; }
+  .c2 p { margin-top: 8px; color: var(--muted); font-size: 16px; }
+  .tag {
+    margin-top: 16px; align-self: flex-start; display: inline-flex; align-items: center; gap: 6px;
+    padding: 4px 10px; border-radius: 9999px; background: var(--surface);
+    font-size: 13px; font-weight: 500; color: var(--navy);
+  }
+
+  /* 3. Derde: getint vlak, geen schaduw, stapje terug */
+  .c3 { background: var(--surface-2); }
+  .c3 .icon { background: #fff; color: var(--navy); }
+  .c3 h3 { margin-top: auto; padding-top: 32px; font-size: 24px; line-height: 1.2; }
+  .c3 p { margin-top: 8px; color: var(--muted); font-size: 16px; }
+
+  @media (max-width: 860px) {
+    .grid { grid-template-columns: 1fr; grid-template-rows: none; }
+    .c1, .c2, .c3 { grid-column: auto; grid-row: auto; }
+    .c1 { padding: 32px; }
+    .c1 h3 { font-size: 34px; }
+    .graders { margin-top: 32px; }
   }
 </style>
 </head>
 <body>
   <div class="grid">
 
-    <article class="card">
-      <div class="icon" aria-hidden="true">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg>
-      </div>
-      <h3>Elk cijfer is navolgbaar</h3>
-      <p class="proof">Onderbouwing per rubriccriterium.</p>
-      <span class="tag">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v6c0 4 3 7 7 9 4-2 7-5 7-9V6z"/></svg>
-        Audit trail volgens de AI Act
-      </span>
-    </article>
-
-    <article class="card">
+    <article class="card c1">
       <div class="icon" aria-hidden="true">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M7 21h10M5 7h14M5 7l-3 7a3 3 0 0 0 6 0zM19 7l-3 7a3 3 0 0 0 6 0z"/></svg>
       </div>
       <h3>Beoordelaars oordelen consistent</h3>
-      <p class="proof">Zie in één overzicht wie afwijkt van het team.</p>
+      <p>Zie in één overzicht wie afwijkt van het team.</p>
+
+      <div class="graders" aria-label="Voorbeeld: gemiddeld cijfer per beoordelaar">
+        <div class="graders-head"><span>Gemiddeld cijfer per beoordelaar</span><span>Voorbeeld</span></div>
+        <div class="row"><span class="name">Docent A</span><div class="bar"><span style="width:72%"></span></div><span class="score">7,2</span></div>
+        <div class="row"><span class="name">Docent B</span><div class="bar"><span style="width:70%"></span></div><span class="score">7,0</span></div>
+        <div class="row off"><span class="name">Docent C</span><div class="bar"><span style="width:56%"></span></div><span class="score">5,6</span></div>
+        <span class="flag">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/><circle cx="12" cy="12" r="9"/></svg>
+          Wijkt af van het team
+        </span>
+      </div>
     </article>
 
-    <article class="card">
+    <article class="card c2">
+      <div class="icon" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg>
+      </div>
+      <h3>Elk cijfer is navolgbaar</h3>
+      <p>Onderbouwing per rubriccriterium.</p>
+      <span class="tag">Audit trail volgens de AI Act</span>
+    </article>
+
+    <article class="card c3">
       <div class="icon" aria-hidden="true">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v6c0 4 3 7 7 9 4-2 7-5 7-9V6z"/><path d="m9 12 2 2 4-4"/></svg>
       </div>
       <h3>De examencommissie borgt de kwaliteit</h3>
-      <p class="proof">Elke onderbouwing direct in te zien.</p>
+      <p>Elke onderbouwing direct in te zien.</p>
     </article>
 
   </div>
