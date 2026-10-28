@@ -70,8 +70,6 @@ page('3-instelling', f'''
   </section>
   <section class="card secondary">{ttl("chat","Formatieve feedback voor elke student")}
     <p class="desc">Nu krijgt de helft van de studenten formatieve feedback. Met Eduface is dat iedereen.</p>
-    <div class="hbars">{hbar("Nu, voor de helft", 50, "€ 36.000")}{hbar("Voor alle studenten", 100, "€ 72.000", on=True)}</div>
-    <p class="strong" style="margin-top:5mm">De feitelijke kosten om iedereen te bedienen liggen dus twee keer zo hoog.</p>
   </section>
   <section class="card tertiary">{ttl("link","Integratie in NEO LMS")}
     <p class="desc">Opdrachten en cijfers lopen via NEO. Docenten en studenten werken in de omgeving die ze kennen.</p>
