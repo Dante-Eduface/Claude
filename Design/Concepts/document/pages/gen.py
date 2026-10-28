@@ -17,7 +17,14 @@ def ttl(k, t): return f'<div class="ttl">{icon(k)}<h2>{t}</h2></div>'
 CHECK = '<span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span>'
 # Een mensje per 5% van de studenten: gevuld krijgt feedback, met alleen een rand niet
 PERSON = '<circle cx="12" cy="7.5" r="4"/><path d="M4 21.5c0-4.7 3.6-8 8-8s8 3.3 8 8z"/>'
-def dots(k): return '<div class="dots">' + ''.join(f'<svg class="{"on" if i < k else ""}" viewBox="0 0 24 24">{PERSON}</svg>' for i in range(20)) + '</div>'
+def dots(k):
+    # Twee rijen van tien. Een rij zonder feedback krijgt een kader, zodat de lege plekken opvallen.
+    rows = []
+    for r in range(2):
+        figs = ''.join(f'<svg class="{"on" if r * 10 + i < k else ""}" viewBox="0 0 24 24">{PERSON}</svg>' for i in range(10))
+        empty = r * 10 >= k
+        rows.append(f'<div class="dots{" empty" if empty else ""}">{figs}</div>' + ('<div class="small" style="margin-top:1.5mm">Krijgt nu geen feedback</div>' if empty else ''))
+    return '<div style="margin-top:6mm">' + ''.join(rows) + '</div>'
 def hbar(lbl, pct, val, on=False, avg=None):
     a = f'<span style="position:absolute;top:-1.5mm;bottom:-1.5mm;left:{avg}%;width:0.5mm;background:var(--muted)"></span>' if avg else ''
     return f'<div class="hbar{" on" if on else ""}"><span>{lbl}</span><div class="track"><div class="fill" style="width:{pct}%"></div>{a}</div><b>{val}</b></div>'
