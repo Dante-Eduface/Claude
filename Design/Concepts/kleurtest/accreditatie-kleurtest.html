@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Accreditatie</title>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  @page { size: A4; margin: 0; }
+  :root { --navy:#000326; --panel:#0c1040; --track:#1d2152; --muted:#62657e; --muted-inv:#b3b5c6;
+          --ink50:#f4f4f7; --ink100:#e8e8ee; --ink200:#d0d1dc; }
+  * { box-sizing: border-box; margin: 0; }
+  html, body { background: #fff; }
+  body { width: 210mm; height: 297mm; padding: 24mm 20mm; color: var(--navy);
+         font-family: Inter, sans-serif; -webkit-font-smoothing: antialiased;
+         display: flex; flex-direction: column; }
+  h1, h2 { font-family: "League Spartan", sans-serif; font-weight: 700; letter-spacing: -0.01em; }
+  h1 { font-size: 34pt; line-height: 1; }
+
+  /* 1. Belangrijkst */
+  .c1 { margin-top: 14mm; background: var(--navy); color: #fff; border-radius: 6mm; padding: 10mm;
+        display: grid; gap: 8mm; }
+  .c1 h2 { font-size: 24pt; line-height: 1.1; }
+  .c1 p { margin-top: 4mm; font-size: 11pt; line-height: 1.45; color: var(--muted-inv); }
+  .chart { background: var(--panel); border-radius: 3mm; padding: 6mm; display: grid; gap: 4mm; }
+  .head { display: flex; justify-content: space-between; font-size: 9pt; color: var(--muted-inv); }
+  .rows { position: relative; display: grid; gap: 3.5mm; }
+  .row { display: grid; grid-template-columns: 17mm 1fr 8mm; align-items: center; gap: 3mm; font-size: 10pt; color: var(--muted-inv); }
+  .row b { text-align: right; }
+  .track { height: 2.2mm; border-radius: 9px; background: var(--track); }
+  .fill { height: 100%; border-radius: inherit; background: var(--muted); }
+  .row.off { color: #fff; font-weight: 600; }
+  .row.off .fill { background: #fff; }
+  /* gemiddelde 7,1: kolom 2 begint op 17mm+3mm en is (100% - 31mm) breed */
+  .avg { position: absolute; top: -1.5mm; bottom: -1.5mm; width: 0.5mm; background: var(--muted-inv);
+         left: calc(20mm + (100% - 31mm) * 0.71); }
+
+  .icon { display: grid; place-items: center; width: 12mm; height: 12mm; border-radius: 3mm; flex: none; }
+  .ttl { display: flex; align-items: center; gap: 5mm; }
+  .icon svg { width: 6mm; height: 6mm; }
+  .c1 .icon { background: rgba(255,255,255,0.08); color: #fff; }
+  .c2 .icon { background: var(--ink50); color: var(--navy); }
+  .c3 .icon { background: #fff; color: var(--navy); width: 10mm; height: 10mm; }
+  .c3 .icon svg { width: 5mm; height: 5mm; }
+
+  /* 2 en 3 */
+  .duo { margin-top: 8mm; display: grid; grid-template-columns: 1fr; gap: 6mm; }
+  .card { border-radius: 6mm; padding: 9mm; }
+  .c2 { border: 0.3mm solid var(--ink200); }
+  .c2 h2 { font-size: 17pt; line-height: 1.15; }
+  .c3 { background: var(--ink100); }
+  .c3 h2 { font-size: 14pt; line-height: 1.2; }
+  .card p { margin-top: 3mm; font-size: 10.5pt; line-height: 1.45; color: var(--muted); }
+  .tag { display: inline-block; margin-top: 5mm; padding: 1.5mm 4mm; border-radius: 99px;
+         background: var(--ink50); font-size: 9.5pt; font-weight: 600; }
+
+  /* Aanvulling, ondergeschikt */
+  .note { margin-top: 12mm; padding-left: 5mm; border-left: 0.6mm solid var(--ink200);
+          font-size: 10.5pt; line-height: 1.6; max-width: 150mm; }
+
+  /* TEST: rood als accent, alleen op de icoontegels */
+  .icon, .c1 .icon, .c2 .icon, .c3 .icon { background: #73071b !important; color: #fff !important; }
+</style>
+</head>
+<body>
+  <h1>Accreditatie</h1>
+
+  <section class="c1">
+    <div>
+      <div class="ttl"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M7 21h10M5 7h14M5 7l-3 7a3 3 0 0 0 6 0zM19 7l-3 7a3 3 0 0 0 6 0z"/></svg></span><h2>Beoordelaars oordelen consistent</h2></div>
+      <p>Zie in één overzicht wie afwijkt van het team.</p>
+    </div>
+    <div class="chart">
+      <div class="head"><span>Voorbeeld per docent</span><span>Gemiddelde 7,1</span></div>
+      <div class="rows">
+        <div class="row"><span>Docent A</span><div class="track"><div class="fill" style="width:72%"></div></div><b>7,2</b></div>
+        <div class="row"><span>Docent B</span><div class="track"><div class="fill" style="width:70%"></div></div><b>7,0</b></div>
+        <div class="row off"><span>Docent C</span><div class="track"><div class="fill" style="width:56%"></div></div><b>5,6</b></div>
+        <div class="avg"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="duo">
+    <section class="card c2">
+      <div class="ttl"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg></span><h2>Elk cijfer is navolgbaar</h2></div>
+      <p>Onderbouwing per rubriccriterium.</p>
+      <span class="tag">AI Act audit trail</span>
+    </section>
+    <section class="card c3">
+      <div class="ttl"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v6c0 4 3 7 7 9 4-2 7-5 7-9V6z"/><path d="m9 12 2 2 4-4"/></svg></span><h2>De examencommissie borgt de kwaliteit</h2></div>
+      <p>Elke onderbouwing direct in te zien.</p>
+    </section>
+  </div>
+
+  <p class="note">Consistent beoordelen is een speerpunt van dit project. Daarmee helpt het om de eisen van de accreditatiepartij hierboven steviger te borgen, en dat kan een positieve impact hebben op de pabo, die nu in de accreditatie zit.</p>
+</body>
+</html>
