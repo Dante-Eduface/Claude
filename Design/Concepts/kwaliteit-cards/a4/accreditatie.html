@@ -34,6 +34,14 @@
   .avg { position: absolute; top: -1.5mm; bottom: -1.5mm; width: 0.5mm; background: var(--muted-inv);
          left: calc(20mm + (100% - 31mm) * 0.71); }
 
+  .icon { display: grid; place-items: center; width: 12mm; height: 12mm; border-radius: 3mm; flex: none; }
+  .ttl { display: flex; align-items: center; gap: 5mm; }
+  .icon svg { width: 6mm; height: 6mm; }
+  .c1 .icon { background: rgba(255,255,255,0.08); color: #fff; }
+  .c2 .icon { background: var(--ink50); color: var(--navy); }
+  .c3 .icon { background: #fff; color: var(--navy); width: 10mm; height: 10mm; }
+  .c3 .icon svg { width: 5mm; height: 5mm; }
+
   /* 2 en 3 */
   .duo { margin-top: 8mm; display: grid; grid-template-columns: 1fr; gap: 6mm; }
   .card { border-radius: 6mm; padding: 9mm; }
@@ -55,7 +63,7 @@
 
   <section class="c1">
     <div>
-      <h2>Beoordelaars oordelen consistent</h2>
+      <div class="ttl"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M7 21h10M5 7h14M5 7l-3 7a3 3 0 0 0 6 0zM19 7l-3 7a3 3 0 0 0 6 0z"/></svg></span><h2>Beoordelaars oordelen consistent</h2></div>
       <p>Zie in één overzicht wie afwijkt van het team.</p>
     </div>
     <div class="chart">
@@ -71,12 +79,12 @@
 
   <div class="duo">
     <section class="card c2">
-      <h2>Elk cijfer is navolgbaar</h2>
+      <div class="ttl"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg></span><h2>Elk cijfer is navolgbaar</h2></div>
       <p>Onderbouwing per rubriccriterium.</p>
       <span class="tag">AI Act audit trail</span>
     </section>
     <section class="card c3">
-      <h2>De examencommissie borgt de kwaliteit</h2>
+      <div class="ttl"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v6c0 4 3 7 7 9 4-2 7-5 7-9V6z"/><path d="m9 12 2 2 4-4"/></svg></span><h2>De examencommissie borgt de kwaliteit</h2></div>
       <p>Elke onderbouwing direct in te zien.</p>
     </section>
   </div>
