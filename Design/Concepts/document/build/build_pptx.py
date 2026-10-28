@@ -63,6 +63,11 @@ for nr, items in enumerate(json.load(open('layout.json')), 1):
                     r = p.add_run(); r.text = t.upper() if ru['upper'] else t
                     f = r.font; f.name = ru['font']; f.size = Pt(ru['size'] * 0.75); f.bold = ru['bold']
                     f.color.rgb = RGBColor.from_string(ru['color'])
+    # Logo Academica: groot boven de opening, klein linksonder op de rest (verhouding 1648 x 320)
+    if nr == 1:
+        s.shapes.add_picture('academica.png', E(76), E(40), height=E(32))
+    else:
+        s.shapes.add_picture('academica.png', E(76), E(1123 - 54), height=E(16))
     # Paginanummer rechtsonder, in de marge van 20 mm
     tb = s.shapes.add_textbox(E(794 - 76 - 60), E(1123 - 52), E(60), E(16))
     tf = tb.text_frame; tf.margin_left = tf.margin_right = tf.margin_top = tf.margin_bottom = 0
