@@ -49,9 +49,9 @@ h1 + * { margin-top: 10mm; }
 .secondary .track { background: #fff; }
 .fill { height: 100%; border-radius: inherit; background: var(--blue-200); }
 .on .fill { background: var(--accent); }
-.dots { margin-top: 6mm; display: grid; grid-template-columns: repeat(10, 1fr); gap: 2.4mm; }
-.dots i { aspect-ratio: 1; border-radius: 50%; border: 0.5mm solid var(--blue-200); }
-.dots i.on { background: var(--accent); border-color: var(--accent); }
+.dots { margin-top: 6mm; display: grid; grid-template-columns: repeat(10, 1fr); gap: 1.6mm 1.2mm; }
+.dots svg { width: 100%; height: auto; fill: #fff; stroke: var(--muted); stroke-width: 1.4; stroke-linejoin: round; }
+.dots svg.on { fill: var(--accent); stroke: var(--accent); }
 .list { list-style: none; padding: 0; margin-top: 4mm; }
 .list li { display: flex; gap: 3.5mm; align-items: flex-start; padding: 2.5mm 0; font-size: 11pt; line-height: 1.45; }
 .check { flex: none; width: 5mm; height: 5mm; margin-top: 0.4mm; }

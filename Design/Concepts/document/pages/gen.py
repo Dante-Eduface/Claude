@@ -15,7 +15,9 @@ IC = {
 def icon(k): return f'<span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">{IC[k]}</svg></span>'
 def ttl(k, t): return f'<div class="ttl">{icon(k)}<h2>{t}</h2></div>'
 CHECK = '<span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span>'
-def dots(k): return '<div class="dots">' + ''.join(f'<i class="{"on" if i < k else ""}"></i>' for i in range(20)) + '</div>'
+# Een mensje per 5% van de studenten: gevuld krijgt feedback, met alleen een rand niet
+PERSON = '<circle cx="12" cy="7.5" r="4"/><path d="M4 21.5c0-4.7 3.6-8 8-8s8 3.3 8 8z"/>'
+def dots(k): return '<div class="dots">' + ''.join(f'<svg class="{"on" if i < k else ""}" viewBox="0 0 24 24">{PERSON}</svg>' for i in range(20)) + '</div>'
 def hbar(lbl, pct, val, on=False, avg=None):
     a = f'<span style="position:absolute;top:-1.5mm;bottom:-1.5mm;left:{avg}%;width:0.5mm;background:var(--muted)"></span>' if avg else ''
     return f'<div class="hbar{" on" if on else ""}"><span>{lbl}</span><div class="track"><div class="fill" style="width:{pct}%"></div>{a}</div><b>{val}</b></div>'
@@ -39,7 +41,7 @@ page('1-opening', f'''
     <section class="card tertiary"><div class="label">Nu</div><div class="num" style="margin-top:3mm">€ 37.000</div><p class="desc">Feedback voor de helft</p>{dots(10)}</section>
     <section class="card primary"><div class="label">Met Eduface</div><div class="num" style="margin-top:3mm">€ 18.000</div><p class="desc">Feedback voor elke student</p>{dots(20)}</section>
   </div>
-  <p class="small" style="margin-top:3mm">Elke stip is 5% van de studenten.</p>
+  <p class="small" style="margin-top:3mm">Elk poppetje staat voor 5% van de studenten.</p>
   <section class="card secondary"><div class="num">76% goedkoper</div><p class="desc">per student die feedback krijgt</p></section>
 </div>''')
 
