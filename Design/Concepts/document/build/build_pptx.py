@@ -20,7 +20,7 @@ def blend(c):
 
 prs = Presentation()
 prs.slide_width, prs.slide_height = E(794), E(1123)
-for items in json.load(open('layout.json')):
+for nr, items in enumerate(json.load(open('layout.json')), 1):
     s = prs.slides.add_slide(prs.slide_layouts[6])
     for it in items:
         if it['k'] == 'rect':
@@ -63,4 +63,10 @@ for items in json.load(open('layout.json')):
                     r = p.add_run(); r.text = t.upper() if ru['upper'] else t
                     f = r.font; f.name = ru['font']; f.size = Pt(ru['size'] * 0.75); f.bold = ru['bold']
                     f.color.rgb = RGBColor.from_string(ru['color'])
+    # Paginanummer rechtsonder, in de marge van 20 mm
+    tb = s.shapes.add_textbox(E(794 - 76 - 60), E(1123 - 52), E(60), E(16))
+    tf = tb.text_frame; tf.margin_left = tf.margin_right = tf.margin_top = tf.margin_bottom = 0
+    p = tf.paragraphs[0]; p.alignment = PP_ALIGN.RIGHT
+    r = p.add_run(); r.text = str(nr)
+    r.font.name = 'Inter'; r.font.size = Pt(8); r.font.color.rgb = RGBColor.from_string('555a78')
 prs.save('../eduface-document-bewerkbaar.pptx')
