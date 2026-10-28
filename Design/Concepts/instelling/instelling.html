@@ -31,7 +31,7 @@
   .lens .lbl { font-size: 9.5pt; color: var(--muted); }
   .lens .lbl b { display: block; margin-bottom: 1mm; font-size: 10.5pt; color: var(--accent); }
   .line { position: relative; margin-top: 7mm; height: 6mm; }
-  .line::before { content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 0.4mm; background: var(--blue-200); }
+  .line .rule { position: absolute; left: 0; right: 0; top: 50%; height: 0.4mm; background: var(--blue-200); }
   .dot { position: absolute; top: 50%; width: 4.2mm; height: 4.2mm; margin: -2.1mm 0 0 -2.1mm; border-radius: 50%;
          background: #fff; border: 0.6mm solid var(--accent); }
   .tight .dot { background: var(--accent); }
@@ -68,12 +68,12 @@
     <div class="lens">
       <div>
         <div class="lbl"><b>Zonder</b>Elke beoordelaar met een eigen blik</div>
-        <div class="line"><span class="dot" style="left:14%"></span><span class="dot" style="left:42%"></span><span class="dot" style="left:63%"></span><span class="dot" style="left:88%"></span></div>
+        <div class="line"><span class="rule"></span><span class="dot" style="left:14%"></span><span class="dot" style="left:42%"></span><span class="dot" style="left:63%"></span><span class="dot" style="left:88%"></span></div>
         <div class="axis"><span>Strenger</span><span>Milder</span></div>
       </div>
       <div class="tight">
         <div class="lbl"><b>Met Eduface</b>Iedereen langs dezelfde criteria</div>
-        <div class="line"><span class="dot" style="left:44%"></span><span class="dot" style="left:50%"></span><span class="dot" style="left:56%"></span><span class="dot" style="left:62%"></span></div>
+        <div class="line"><span class="rule"></span><span class="dot" style="left:44%"></span><span class="dot" style="left:50%"></span><span class="dot" style="left:56%"></span><span class="dot" style="left:62%"></span></div>
         <div class="axis"><span>Strenger</span><span>Milder</span></div>
       </div>
     </div>
