@@ -22,9 +22,9 @@
   .chart { margin-top: 9mm; background: #fff; border-radius: 3.5mm; padding: 6mm 6mm 5mm; }
   .chart .lbl { font-size: 10.5pt; font-weight: 600; }
   .chart .sub { margin-top: 1mm; font-size: 9.5pt; color: var(--muted); }
-  .cols { margin-top: 6mm; height: 46mm; display: grid; grid-template-columns: repeat(5, 1fr); gap: 6mm; align-items: end; }
+  .cols { margin-top: 6mm; height: 46mm; display: grid; grid-template-columns: repeat(2, 1fr); gap: 12mm; padding: 0 20mm; align-items: end; }
   .col { height: 100%; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; gap: 2mm; }
-  .col .b { width: 100%; max-width: 16mm; border-radius: 2mm 2mm 1mm 1mm; background: var(--blue-200); flex: none; }
+  .col .b { width: 100%; max-width: 34mm; border-radius: 2mm 2mm 1mm 1mm; background: var(--blue-200); flex: none; }
   .col:first-child .b { background: var(--accent); }
   .col .v { font-size: 10pt; font-weight: 600; }
   .col .n { font-size: 9pt; color: var(--muted); }
@@ -46,22 +46,22 @@
 
     <div class="chart">
       <div class="lbl">Hoe meer studenten, hoe lager de prijs per student</div>
-      <div class="sub">Gemiddelde prijs per student per maand</div>
-      <div class="cols"><div class="col"><span class="v">€ 3,75</span><div class="b" style="height:34.0mm"></div><span class="n">400</span></div><div class="col"><span class="v">€ 3,38</span><div class="b" style="height:30.6mm"></div><span class="n">800</span></div><div class="col"><span class="v">€ 3,25</span><div class="b" style="height:29.5mm"></div><span class="n">1.200</span></div><div class="col"><span class="v">€ 3,15</span><div class="b" style="height:28.6mm"></div><span class="n">2.000</span></div><div class="col"><span class="v">€ 3,08</span><div class="b" style="height:27.9mm"></div><span class="n">4.000</span></div></div>
+      <div class="sub">Prijs per student per maand</div>
+      <div class="cols"><div class="col"><span class="v">€ 3,75</span><div class="b" style="height:34mm"></div><span class="n">Tot en met 400</span></div><div class="col"><span class="v">€ 3,00</span><div class="b" style="height:27.2mm"></div><span class="n">Meer dan 400</span></div></div>
       <div class="axis">Aantal studenten</div>
     </div>
   </section>
 
   <div class="duo">
     <section class="card">
-      <div class="k">Eerste 400 studenten</div>
+      <div class="k">Tot en met 400 studenten</div>
       <h2>€ 3,75</h2>
-      <p>per student per maand, samen € 1.500</p>
+      <p>per student per maand</p>
     </section>
     <section class="card">
-      <div class="k">Elke student daarboven</div>
+      <div class="k">Meer dan 400 studenten</div>
       <h2>€ 3,00</h2>
-      <p>per student per maand</p>
+      <p>per student per maand, voor alle studenten</p>
     </section>
   </div>
 </body>
