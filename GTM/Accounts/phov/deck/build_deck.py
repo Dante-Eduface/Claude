@@ -16,19 +16,28 @@ S = []
 def add(naam, els, notes='', dark=False): S.append((naam, els, notes, dark))
 
 # ---------------------------------------------------------------- 1 aanleiding
-# Boven het advies dat ze al kenden, grijs. Onder wat ze echt wilden, groen.
+# Geen kop. Boven het advies van het bureau, grijs, want dat wisten ze al.
+# Onder wat PHOV echt wilde, in groen: daar gaat de rest van het deck over.
 c3, w3 = cols(3)
-els = title('Aanleiding')
-els += [text(M, 262, 400, 44, 'Advies', font=HEAD, size=40, bold=True, align='left', ls=1.0)]
-for x, w, lbl in [(420, 470, 'Toetstermen aanpassen'), (920, 430, 'Docenten meenemen')]:
-    els += [rect(x, 248, w, 72, INK50, r=36),
-            text(x, 266, w, 40, lbl, size=32, color=INK500, ls=1.0)]
-els += [rect(M, 384, 1920 - 2 * M, 2, INK100),
-        text(M, 430, 400, 44, 'Wens', font=HEAD, size=40, bold=True, align='left', ls=1.0)]
-for cx, (ic, lbl) in zip(c3, [('docenten', 'AI in het vak'), ('boek', 'Open boek blijft'),
-                              ('lagen', 'Curriculum')]):
-    els += tile(cx, 520, ic, 'green')
-    els += [text(cx - w3 / 2, 694, w3, 50, lbl, font=HEAD, size=46, bold=True, ls=1.0)]
+els = [text(M, 120, 1200, 40, 'Advies van het bureau, anderhalf jaar geleden', font=HEAD,
+            size=36, bold=True, color=INK500, align='left', ls=1.0)]
+x = M
+for lbl, w in [('Toetstermen aanpassen', 470), ('Docenten meenemen', 420)]:
+    els += [rect(x, 184, w, 76, INK50, r=38),
+            text(x, 203, w, 40, lbl, size=34, color=INK500, ls=1.0)]
+    x += w + 28
+els += [text(x + 20, 203, 400, 40, 'Al bekend.', size=34, bold=True, color=NAVY,
+             align='left', ls=1.0),
+        rect(M, 330, 1920 - 2 * M, 2, INK100),
+        text(M, 380, 1200, 40, 'Wat PHOV wil', font=HEAD, size=36, bold=True,
+             color=INK500, align='left', ls=1.0)]
+for cx, (ic, kop, wat) in zip(c3, [
+        ('docenten', 'AI in het vak', 'met een pragmatische\npartner ernaast'),
+        ('boek', 'Open boek', 'tentamens behouden,\nmet AI-detectie'),
+        ('lagen', 'Curriculum', 'verder ontwikkelen')]):
+    els += tile(cx, 456, ic, 'green')
+    els += [text(cx - w3 / 2, 626, w3, 50, kop, font=HEAD, size=46, bold=True, ls=1.0),
+            text(cx - w3 / 2, 688, w3, 90, wat, size=32, color=INK500, ls=1.2)]
 els += foot(page=1)
 add('01-aanleiding', els, notes="""Anderhalf jaar geleden heeft PHOV een bureau ingehuurd. De vraag was hoe ze AI in hun onderwijs kunnen inzetten en hoe ze docenten daarbij helpen.
 Het advies was "toetstermen aanpassen" en "docenten meenemen". Dat wisten ze al.
