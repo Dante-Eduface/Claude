@@ -15,81 +15,79 @@ from deckbuild import (rect, oval, pic, text, title, tile, foot, cols,
 S = []
 def add(naam, els, notes='', dark=False): S.append((naam, els, notes, dark))
 
+# Elke slide begint met een korte titel (Dante, 29-10-2026). Daaronder alleen
+# wat het publiek moet zien; wat Dante vertelt staat in de notities.
+
 # ---------------------------------------------------------------- 1 aanleiding
-# Geen kop. Boven het advies van het bureau, grijs, want dat wisten ze al.
-# Onder wat PHOV echt wilde, in groen: daar gaat de rest van het deck over.
-c3, w3 = cols(3)
-els = [text(M, 96, 1400, 40, 'Aan een bureau, anderhalf jaar geleden', font=HEAD,
-            size=36, bold=True, color=INK500, align='left', ls=1.0),
-       text(M, 152, 1680, 46, 'Vraag: hoe zetten we AI in ons onderwijs in, '
-            'en hoe helpen we docenten daarbij?', size=36, color=NAVY, align='left', ls=1.0)]
-# Advies in navy, net zo leesbaar als de rest. Het verschil met "Al bekend."
-# zit in het gewicht, niet in de kleur (core/regels.md).
-els += [text(M, 241, 160, 40, 'Advies:', size=34, color=NAVY, align='left', ls=1.0)]
-x = M + 150
-for lbl, w in [('Toetstermen aanpassen', 450), ('Docenten meenemen', 400)]:
-    els += [rect(x, 222, w, 76, INK50, r=38),
-            text(x, 241, w, 40, lbl, size=34, color=NAVY, ls=1.0)]
+# De vraag aan het bureau, en het advies dat ze al kenden. Advies in navy:
+# het verschil met "Al bekend." zit in het gewicht, niet in de kleur.
+els = title('Aanleiding')
+els += [text(M, 330, 1920 - 2 * M, 140, 'Hoe zetten we AI in ons onderwijs in,\n'
+             'en hoe helpen we docenten daarbij?', font=HEAD, size=56, bold=True, ls=1.2)]
+PILLEN = [('Toetstermen aanpassen', 450), ('Docenten meenemen', 400)]
+AB = 'Al bekend.'
+x = (1920 - (sum(w for _, w in PILLEN) + 28 * len(PILLEN) + 200)) / 2
+for lbl, w in PILLEN:
+    els += [rect(x, 590, w, 76, INK50, r=38),
+            text(x, 609, w, 40, lbl, size=34, color=NAVY, ls=1.0)]
     x += w + 28
-els += [text(x + 20, 241, 400, 40, 'Al bekend.', size=34, bold=True, color=NAVY,
-             align='left', ls=1.0),
-        rect(M, 350, 1920 - 2 * M, 2, INK100),
-        text(M, 396, 1200, 40, 'Wat PHOV wil', font=HEAD, size=36, bold=True,
-             color=INK500, align='left', ls=1.0)]
-for cx, (ic, kop, wat) in zip(c3, [
-        ('lesgeven', 'Docenten met AI', 'in hun eigen vak, met een\npragmatische partner ernaast'),
-        ('boek', 'Open boek', 'tentamens behouden,\nmet AI-detectie'),
-        ('lagen', 'Curriculum', 'ontwikkelen')]):
-    els += tile(cx, 470, ic, 'green')
-    els += [text(cx - w3 / 2 - 30, 640, w3 + 60, 50, kop, font=HEAD, size=46, bold=True, ls=1.0),
-            text(cx - w3 / 2 - 30, 702, w3 + 60, 90, wat, size=32, color=INK500, ls=1.2)]
+els += [text(x + 12, 609, 200, 40, AB, size=34, bold=True, color=NAVY, align='left', ls=1.0)]
 els += foot(page=1)
 add('01-aanleiding', els, notes="""Anderhalf jaar geleden heeft PHOV een bureau ingehuurd. De vraag was hoe ze AI in hun onderwijs kunnen inzetten en hoe ze docenten daarbij helpen.
-Het advies was "toetstermen aanpassen" en "docenten meenemen". Dat wisten ze al.
+Het advies was "toetstermen aanpassen" en "docenten meenemen". Dat wisten ze al.""")
 
-Wat ze wilden:
+# ---------------------------------------------------------------- 2 doel
+c3, w3 = cols(3)
+els = title('Doel')
+for cx, (ic, kop) in zip(c3, [('lesgeven', 'Docenten met AI'), ('boek', 'Open boek'),
+                              ('lagen', 'Curriculum')]):
+    els += tile(cx, 380, ic, 'green', 180)
+    els += [text(cx - w3 / 2 - 30, 600, w3 + 60, 60, kop, font=HEAD, size=52, bold=True, ls=1.0)]
+els += foot(page=2)
+add('02-doel', els, notes="""Wat ze wilden:
 1. Docenten die AI in hun vakgebied gebruiken, met een pragmatische partner ernaast
 2. Open-boek tentamens behouden (AI-detectie)
 3. Curriculumontwikkeling""")
 
-# ---------------------------------------------------------------- 2 huidige situatie
-# Geen kop: de twee stromen dragen de slide. Per stap wie en wat er gebeurt.
+# ---------------------------------------------------------------- 3 huidige situatie
+# Per stap wie en wat er gebeurt.
 # Zes kolommen, zodat moduleleider en "cijfer vastgesteld" recht onder elkaar
 # staan, net als de twee cursusbureaus. Alles neutraal: dit beschrijft, het
-# oordeel komt op slide 3.
+# oordeel komt op de probleemslide.
 c6, w6 = cols(6)
-TS = 112
+TS = 96
 
 def strook(y, label, stappen):
     out = [text(M, y, 600, 40, label, font=HEAD, size=36, bold=True, color=INK500,
                 align='left', ls=1.0)]
-    ty = y + 72
+    ty = y + 58
     out.append(rect(c6[0], ty + TS / 2 - 2, c6[len(stappen) - 1] - c6[0], 4, INK100))
     for cx, (ic, rol, wat) in zip(c6, stappen):
         out += [rect(cx - 70, ty - 6, 140, TS + 12, WHITE)]
         out += tile(cx, ty, ic, 'navy', TS)
-        out += [text(cx - 146, ty + TS + 16, 292, 40, rol, font=HEAD, size=34,
+        out += [text(cx - 146, ty + TS + 14, 292, 40, rol, font=HEAD, size=34,
                      bold=True, ls=1.0),
-                text(cx - 146, ty + TS + 62, 292, 120, wat, size=32, color=INK500,
+                text(cx - 170, ty + TS + 56, 340, 90, wat, size=32, color=INK500,
                      ls=1.2)]
     return out
 
-els = strook(96, 'Tentamens', [
-    ('pen', 'Student', 'maakt het\ntentamen'),
-    ('cijfers', 'Docent', 'geeft punten\nen feedback'),
-    ('usercheck', 'Moduleleider', 'controleert en\nstelt cijfer vast'),
-    ('data', 'Cursusbureau', 'ontvangt het\neindcijfer'),
+els = title('Huidige situatie')
+els += strook(236, 'Tentamens', [
+    ('pen', 'Student', 'maakt toets'),
+    ('cijfers', 'Docent', 'punten, feedback'),
+    ('usercheck', 'Moduleleider', 'stelt cijfer vast'),
+    ('data', 'Cursusbureau', 'krijgt eindcijfer'),
 ])
-els += strook(480, 'Schrijfopdrachten', [
-    ('inleveren', 'Student', 'levert in: solo,\nduo of groep'),
-    ('filepen', 'Docent', 'feedback in eigen\nformat, elke\nopdracht anders'),
-    ('aftekenen', 'Cijfer', 'wordt\nvastgesteld'),
-    ('check', 'Cursusbureau', 'checkt taal en\nrariteiten'),
+els += strook(570, 'Schrijfopdrachten', [
+    ('inleveren', 'Student', 'levert in'),
+    ('filepen', 'Docent', 'wisselend format'),
+    ('aftekenen', 'Cijfer', 'vastgesteld'),
+    ('check', 'Cursusbureau', 'checkt taal'),
     ('mail', 'Secretariaat', 'zet het open'),
-    ('studenten', 'Student', 'ziet cijfer\nen feedback'),
+    ('studenten', 'Student', 'ziet resultaat'),
 ])
-els += foot(page=2)
-add('02-nu', els, notes="""Tentamens
+els += foot(page=3)
+add('03-nu', els, notes="""Tentamens
 1. Studenten maken het tentamen
 2. Het antwoord van de student gaat terug naar de docent, die punten en feedback geeft
 3. De moduleleider controleert en stelt het cijfer vast
