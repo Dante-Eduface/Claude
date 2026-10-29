@@ -15,49 +15,79 @@ from deckbuild import (rect, oval, pic, text, title, tile, foot, cols,
 S = []
 def add(naam, els, notes='', dark=False): S.append((naam, els, notes, dark))
 
-# ---------------------------------------------------------------- 2 nu
-# Wie raakt het werk aan, in volgorde. Beide stroken op hetzelfde raster, zodat
-# student, docent en cursusbureau recht onder elkaar staan. De docent staat in
-# amber: daar zitten de uren, dat is slide 3. De rest vertelt Dante erbij.
-c4, w4 = cols(4)
-TS = 128
+# ---------------------------------------------------------------- 1 aanleiding
+# Boven het advies dat ze al kenden, grijs. Onder wat ze echt wilden, groen.
+c3, w3 = cols(3)
+els = title('Aanleiding')
+els += [text(M, 262, 400, 44, 'Advies', font=HEAD, size=40, bold=True, align='left', ls=1.0)]
+for x, w, lbl in [(420, 470, 'Toetstermen aanpassen'), (920, 430, 'Docenten meenemen')]:
+    els += [rect(x, 248, w, 72, INK50, r=36),
+            text(x, 266, w, 40, lbl, size=32, color=INK500, ls=1.0)]
+els += [rect(M, 384, 1920 - 2 * M, 2, INK100),
+        text(M, 430, 400, 44, 'Wens', font=HEAD, size=40, bold=True, align='left', ls=1.0)]
+for cx, (ic, lbl) in zip(c3, [('docenten', 'AI in het vak'), ('boek', 'Open boek blijft'),
+                              ('lagen', 'Curriculum')]):
+    els += tile(cx, 520, ic, 'green')
+    els += [text(cx - w3 / 2, 694, w3, 50, lbl, font=HEAD, size=46, bold=True, ls=1.0)]
+els += foot(page=1)
+add('01-aanleiding', els, notes="""Anderhalf jaar geleden heeft PHOV een bureau ingehuurd. De vraag was hoe ze AI in hun onderwijs kunnen inzetten en hoe ze docenten daarbij helpen.
+Het advies was "toetstermen aanpassen" en "docenten meenemen". Dat wisten ze al.
+
+Wat ze wilden:
+1. Docenten die AI in hun vakgebied gebruiken, met een pragmatische partner ernaast
+2. Open-boek tentamens behouden (AI-detectie)
+3. Curriculumontwikkeling""")
+
+# ---------------------------------------------------------------- 2 huidige situatie
+# Geen kop: de twee stromen dragen de slide. Per stap wie en wat er gebeurt.
+# Zes kolommen, zodat moduleleider en "cijfer vastgesteld" recht onder elkaar
+# staan, net als de twee cursusbureaus. Alles neutraal: dit beschrijft, het
+# oordeel komt op slide 3.
+c6, w6 = cols(6)
+TS = 112
 
 def strook(y, label, stappen):
-    out = [text(M, y, 600, 44, label, font=HEAD, size=40, bold=True, align='left', ls=1.0)]
-    ty = y + 86
-    out.append(rect(c4[0], ty + TS / 2 - 2, c4[len(stappen) - 1] - c4[0], 4, INK100))
-    for cx, (ic, rol) in zip(c4, stappen):
-        tone = 'amber' if rol == 'Docent' else 'navy'
-        out += [rect(cx - 80, ty - 6, 160, TS + 12, WHITE)]
-        out += tile(cx, ty, ic, tone, TS)
-        out += [text(cx - w4 / 2, ty + TS + 18, w4, 40, rol, font=HEAD, size=34,
-                     bold=True, color=NAVY, ls=1.0)]
+    out = [text(M, y, 600, 40, label, font=HEAD, size=36, bold=True, color=INK500,
+                align='left', ls=1.0)]
+    ty = y + 72
+    out.append(rect(c6[0], ty + TS / 2 - 2, c6[len(stappen) - 1] - c6[0], 4, INK100))
+    for cx, (ic, rol, wat) in zip(c6, stappen):
+        out += [rect(cx - 70, ty - 6, 140, TS + 12, WHITE)]
+        out += tile(cx, ty, ic, 'navy', TS)
+        out += [text(cx - 146, ty + TS + 16, 292, 40, rol, font=HEAD, size=34,
+                     bold=True, ls=1.0),
+                text(cx - 146, ty + TS + 62, 292, 120, wat, size=32, color=INK500,
+                     ls=1.2)]
     return out
 
-els = title('Nu')
-els += strook(250, 'Tentamens', [('pen', 'Student'), ('cijfers', 'Docent'),
-                                  ('instelling', 'Cursusbureau')])
-# De moduleleider zit niet in de lijn maar kijkt mee over de schouder van de docent.
-PW, PY = 470, 236
-els += [rect(c4[1] - PW / 2, PY, PW, 64, INK50, r=32),
-        pic('assets/icon-usercheck-navy.png', c4[1] - PW / 2 + 22, PY + 12, 40, 40),
-        text(c4[1] - PW / 2 + 74, PY + 15, PW - 84, 40, 'Moduleleider kijkt mee',
-             size=32, color=NAVY, align='left', ls=1.0),
-        rect(c4[1] - 1.5, PY + 64, 3, 336 - PY - 64 - 8, INK200)]
-els += strook(560, 'Schrijfopdrachten', [('inleveren', 'Student'), ('gesprek', 'Docent'),
-                                         ('instelling', 'Cursusbureau'), ('mail', 'Secretariaat')])
+els = strook(96, 'Tentamens', [
+    ('pen', 'Student', 'maakt het\ntentamen'),
+    ('cijfers', 'Docent', 'geeft punten\nen feedback'),
+    ('usercheck', 'Moduleleider', 'controleert en\nstelt cijfer vast'),
+    ('data', 'Cursusbureau', 'ontvangt het\neindcijfer'),
+])
+els += strook(480, 'Schrijfopdrachten', [
+    ('inleveren', 'Student', 'levert in: solo,\nduo of groep'),
+    ('filepen', 'Docent', 'feedback in eigen\nformat, elke\nopdracht anders'),
+    ('aftekenen', 'Cijfer', 'wordt\nvastgesteld'),
+    ('check', 'Cursusbureau', 'checkt taal en\nrariteiten'),
+    ('mail', 'Secretariaat', 'zet het open'),
+    ('studenten', 'Student', 'ziet cijfer\nen feedback'),
+])
 els += foot(page=2)
 add('02-nu', els, notes="""Tentamens
 1. Studenten maken het tentamen
-2. Het antwoord gaat terug naar de docent, die punten en feedback geeft
-3. Daarna gaat het naar het cursusbureau
-De moduleleider kijkt mee: controleert en stelt het cijfer vast.
+2. Het antwoord van de student gaat terug naar de docent, die punten en feedback geeft
+3. De moduleleider controleert en stelt het cijfer vast
+4. Daarna gaat het naar het cursusbureau
 
 Schrijfopdrachten
 1. De student levert in via de leeromgeving (individueel, duo of groep)
-2. Elke docent geeft feedback in zijn eigen format, en elke opdracht heeft weer een ander format. Dat uploadt hij.
-3. Het cursusbureau kijkt het nog na op taal en rariteiten
-4. Het secretariaat zet het open en de student ziet zijn cijfer en feedback""")
+2. De docent krijgt een melding dat hij kan nakijken
+3. Elke docent geeft feedback in zijn eigen format, en elke opdracht heeft weer een ander format. Dat uploadt hij.
+4. Het cijfer wordt vastgesteld
+5. Het cursusbureau kijkt het nog na op taal en rariteiten
+6. Het secretariaat zet het open en de student ziet zijn cijfer en feedback""")
 
 # ---------------------------------------------------------------- render
 alleen = sys.argv[1:]
