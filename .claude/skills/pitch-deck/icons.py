@@ -14,6 +14,10 @@ CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 TINTS = {"amber": "E07B00", "green": "007B54", "navy": "002333", 'mint': '00E075'}
 
 ICONS = {
+    # -- toegevoegd bij het PHOV-deck, oktober 2026: docent voor een bord
+    'lesgeven': '<path d="M9.5 3.5h11.5v9H13"/><circle cx="6" cy="8.5" r="2.6"/>'
+                '<path d="M1.8 21v-2.2A3.8 3.8 0 0 1 5.6 15h.8a3.8 3.8 0 0 1 3.8 3.8V21"/>'
+                '<path d="M9 13.2l4.6-3.8"/>',
     'gebouwen': '<path d="M2.6 20.8h18.8"/><path d="M5 20.8V6.6l6-2.9v17.1"/>'
                 '<path d="M11 20.8V10.6l7 3v7.2"/>'
                 '<path d="M7.4 9.2h1.1M7.4 12.6h1.1M7.4 16h1.1M14 15.2h1.1M14 17.9h1.1"/>',

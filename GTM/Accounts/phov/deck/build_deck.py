@@ -19,25 +19,30 @@ def add(naam, els, notes='', dark=False): S.append((naam, els, notes, dark))
 # Geen kop. Boven het advies van het bureau, grijs, want dat wisten ze al.
 # Onder wat PHOV echt wilde, in groen: daar gaat de rest van het deck over.
 c3, w3 = cols(3)
-els = [text(M, 120, 1200, 40, 'Advies van het bureau, anderhalf jaar geleden', font=HEAD,
-            size=36, bold=True, color=INK500, align='left', ls=1.0)]
-x = M
-for lbl, w in [('Toetstermen aanpassen', 470), ('Docenten meenemen', 420)]:
-    els += [rect(x, 184, w, 76, INK50, r=38),
-            text(x, 203, w, 40, lbl, size=34, color=INK500, ls=1.0)]
+els = [text(M, 96, 1400, 40, 'Aan een bureau, anderhalf jaar geleden', font=HEAD,
+            size=36, bold=True, color=INK500, align='left', ls=1.0),
+       text(M, 152, 1680, 46, 'Vraag: hoe zetten we AI in ons onderwijs in, '
+            'en hoe helpen we docenten daarbij?', size=36, color=NAVY, align='left', ls=1.0)]
+# Advies in navy, net zo leesbaar als de rest. Het verschil met "Al bekend."
+# zit in het gewicht, niet in de kleur (core/regels.md).
+els += [text(M, 241, 160, 40, 'Advies:', size=34, color=NAVY, align='left', ls=1.0)]
+x = M + 150
+for lbl, w in [('Toetstermen aanpassen', 450), ('Docenten meenemen', 400)]:
+    els += [rect(x, 222, w, 76, INK50, r=38),
+            text(x, 241, w, 40, lbl, size=34, color=NAVY, ls=1.0)]
     x += w + 28
-els += [text(x + 20, 203, 400, 40, 'Al bekend.', size=34, bold=True, color=NAVY,
+els += [text(x + 20, 241, 400, 40, 'Al bekend.', size=34, bold=True, color=NAVY,
              align='left', ls=1.0),
-        rect(M, 330, 1920 - 2 * M, 2, INK100),
-        text(M, 380, 1200, 40, 'Wat PHOV wil', font=HEAD, size=36, bold=True,
+        rect(M, 350, 1920 - 2 * M, 2, INK100),
+        text(M, 396, 1200, 40, 'Wat PHOV wil', font=HEAD, size=36, bold=True,
              color=INK500, align='left', ls=1.0)]
 for cx, (ic, kop, wat) in zip(c3, [
-        ('docenten', 'AI in het vak', 'met een pragmatische\npartner ernaast'),
+        ('lesgeven', 'Docenten met AI', 'in hun eigen vak, met een\npragmatische partner ernaast'),
         ('boek', 'Open boek', 'tentamens behouden,\nmet AI-detectie'),
-        ('lagen', 'Curriculum', 'verder ontwikkelen')]):
-    els += tile(cx, 456, ic, 'green')
-    els += [text(cx - w3 / 2, 626, w3, 50, kop, font=HEAD, size=46, bold=True, ls=1.0),
-            text(cx - w3 / 2, 688, w3, 90, wat, size=32, color=INK500, ls=1.2)]
+        ('lagen', 'Curriculum', 'ontwikkelen')]):
+    els += tile(cx, 470, ic, 'green')
+    els += [text(cx - w3 / 2 - 30, 640, w3 + 60, 50, kop, font=HEAD, size=46, bold=True, ls=1.0),
+            text(cx - w3 / 2 - 30, 702, w3 + 60, 90, wat, size=32, color=INK500, ls=1.2)]
 els += foot(page=1)
 add('01-aanleiding', els, notes="""Anderhalf jaar geleden heeft PHOV een bureau ingehuurd. De vraag was hoe ze AI in hun onderwijs kunnen inzetten en hoe ze docenten daarbij helpen.
 Het advies was "toetstermen aanpassen" en "docenten meenemen". Dat wisten ze al.
