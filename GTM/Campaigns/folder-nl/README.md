@@ -11,4 +11,6 @@ Gevouwen A4-folder (liggend, dubbelgevouwen tot A5) voor Nederlandse instellinge
 
 - `folder-v4.html` / `folder-v4.pdf`: binnenkant herzien (30-10-2026). Links: geen ChatGPT/Gemini/Claude (logo's uit simple-icons, `logos-ai/`), waarop het model getraind is, 250.000. Rechts: Paper Grader en Exam Grader als hoofdzaak, dan explainability en auditability, vakgebieden als grijze voetregel.
 
-Fase: v4 ter review bij Dante. Nog in te vullen: QR-link, en de echte logo's voor instellingen, LMS'en (ChatGPT/Gemini/Claude staan er sinds v4 echt in).
+- `folder-v5.html` / `folder-v5.pdf`: linkerbinnenpagina herzien (30-10-2026). Kop rustig "Eigen model", trainingsbronnen in volgorde van belang (docenten beoordelen > publicaties > feedbackvoorbeelden), het Eduface-model als witte kaart met netwerkicoon. Logo en Leiden/Radboud-regel eruit.
+
+Fase: v5 ter review bij Dante. Nog in te vullen: QR-link, en de echte logo's voor instellingen, LMS'en (ChatGPT/Gemini/Claude staan er sinds v4 echt in).
