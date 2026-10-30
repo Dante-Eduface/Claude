@@ -18,6 +18,7 @@ Een document van een paar A4-pagina's voor het MT van een instelling. Elke pagin
    - `page(map, 'N-naam', body)`: maakt pagina N; de eerste `<h1>` wordt de kop met nummer, even nummers worden donker.
    - `ttl(icoon, titel)`, `icon()`, `hbar()`, `dots(k)` (poppetjes), `lens()`, `item()`, `lst()`.
    - Kaarten: `card primary` (belangrijkst), `card secondary`, `card tertiary`.
+   - Risico-rijen (`.risk` met `.meter`): zie `Design/Concepts/risicoanalyse/risicoanalyse.py`.
 3. **Bouw**: `bash .claude/skills/business-case-design/motor/bouw.sh <werkmap> <uit.pptx> <logo-instelling.png>`
 4. **Kijk naar de controleplaat** (`<werkmap>/build/controle.png`) en de margecheck in de uitvoer. Nooit opleveren zonder de plaat bekeken te hebben.
 5. **Lever de pptx** met `SendUserFile`. Geen Artifact, geen PDF tenzij gevraagd.

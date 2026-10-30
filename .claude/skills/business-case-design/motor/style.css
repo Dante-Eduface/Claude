@@ -75,3 +75,15 @@ body.dark .kop .label { color: rgba(255,255,255,0.7); }
 body.dark .card { color: var(--accent); }
 body.dark .tertiary { background: #fff; border-color: #fff; }
 body.dark > .small, body.dark > .note { color: rgba(255,255,255,0.75); }
+
+/* Risico-rij: titel en restrisico links, maatregelen rechts */
+.risk { display: grid; grid-template-columns: 52mm 1fr; gap: 6mm; align-items: start; border-radius: 4mm; padding: 4.5mm 6mm; }
+.risk + .risk { margin-top: 2mm; }
+.risk h2 { font-size: 14pt; }
+.risk .list { margin-top: 0; }
+.risk .list li { padding: 0.8mm 0; font-size: 10pt; }
+.meter { margin-top: 2mm; display: flex; flex-wrap: wrap; align-items: center; gap: 1.2mm; }
+.meter i { position: relative; overflow: hidden; width: 7mm; height: 1.6mm; border-radius: 99px; background: var(--blue-200); }
+.meter i.on { background: var(--accent); }
+.meter i b { position: absolute; left: 0; top: 0; bottom: 0; width: 50%; background: var(--accent); }
+.meter span { flex-basis: 100%; margin-top: 0.8mm; font-size: 9pt; font-weight: 600; }

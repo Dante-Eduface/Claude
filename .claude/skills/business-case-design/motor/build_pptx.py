@@ -25,8 +25,8 @@ prs = Presentation()
 prs.slide_width, prs.slide_height = E(794), E(1123)
 LAYOUT, UIT = sys.argv[1], sys.argv[2]
 LOGO = sys.argv[3] if len(sys.argv) > 3 else None
-for nr, pg in enumerate(json.load(open(LAYOUT)), 1):
-    items, dark = pg['items'], pg['dark']
+for pg in json.load(open(LAYOUT)):
+    items, dark, nr = pg['items'], pg['dark'], pg['nr']
     s = prs.slides.add_slide(prs.slide_layouts[6])
     for it in items:
         if it['k'] == 'rect':
@@ -49,7 +49,7 @@ for nr, pg in enumerate(json.load(open(LAYOUT)), 1):
             # Lopende tekst houdt de breedte van zijn blok, zodat hij binnen de marges afbreekt.
             # Korte regels krijgen wat speling, want fontmetriek verschilt per programma.
             lines = round(it['h'] / it['lh'])
-            w = it['w'] if lines > 1 else it['w'] * 1.12 + 6
+            w = it['blockW'] if lines > 1 else it['w'] * 1.12 + 6
             x = it['x'] if it['align'] == 'left' else it['x'] - (w - it['w']) if it['align'] == 'right' else it['x'] - (w - it['w']) / 2
             # Nooit voorbij de paginamarge van 20 mm
             x = max(x, 76); w = min(w, 794 - 76 - x)

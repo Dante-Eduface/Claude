@@ -61,7 +61,7 @@ const pages = process.argv.slice(2);
       s.file = f;
     }
     data.items.forEach(it => { if (it.k === 'svg') it.file = data.svgs[it.idx].file; });
-    out.push({dark: data.dark, items: data.items});
+    out.push({dark: data.dark, items: data.items, nr: parseInt(path.basename(file)) || i + 1});
     await p.close();
   }
   fs.writeFileSync('layout.json', JSON.stringify(out));
