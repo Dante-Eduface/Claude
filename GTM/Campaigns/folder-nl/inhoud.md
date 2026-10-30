@@ -98,6 +98,19 @@ Nooit TIO of ICM.
 
 Uren zijn concreter dan "wat het kost". Kan het rapport geen uren leveren, dan past deze zin niet.
 
+**Tien CTA-opties (30-10-2026).** Gemarkeerd met wat er vast moet liggen voordat de zin kan.
+
+1. Wij rekenen gratis uit hoeveel uur jullie docenten nu kwijt zijn aan nakijken. *(rapport levert uren)*
+2. Laat één van jullie eigen opdrachten door Eduface nakijken en leg het cijfer naast dat van jullie docent. *(aanbod: test op eigen werk)*
+3. Stuur ons jullie rubric en een geanonimiseerd paper, dan krijg je binnen een week de feedback van Eduface terug. *(aanbod + termijn + privacy)*
+4. Plan een demo van 30 minuten waarin we een paper uit jullie vakgebied nakijken. *(duur demo)*
+5. Maak gratis een account aan en kijk vandaag nog je eigen opdracht na. *(PLG-versie, kan nu al)*
+6. Scan de code en zie in twee minuten hoe een paper wordt nagekeken. *(video bestaat)*
+7. Ontdek hoeveel de cijfers van jullie docenten nu uit elkaar liggen. *(analyse die we nog niet aanbieden, risico)*
+8. Vraag een gratis rapport aan over welke opleiding bij jullie het meeste tijd kwijt is aan nakijken. *(rapport-inhoud)*
+9. Zie hoe De Haagse Hogeschool en Tilburg University nakijken met Eduface. *(klant akkoord om getoond te worden)*
+10. Kom naar onze stand en zie een paper live nakijken. *(alleen op de beurs zelf, niet thuis)*
+
 **QR-code + contact.**
 - OPEN: waar leidt de QR heen?
 - OPEN: wiens naam, mail en telefoonnummer?

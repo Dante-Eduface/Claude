@@ -105,6 +105,7 @@ Deze regels gelden voor elk klant-gericht bericht, niet per kanaal apart.
 - Verkoopt een **gevoel of een pijn**, geen feature-lijst.
 - Eén hook, geen opsomming van alles wat we kunnen.
 - Vermijd opgeblazen woorden (`outreach-plain-language`).
+- **De beurstoets** (Dante, 30-10-2026). Elke regel moet in één keer te snappen zijn voor iemand die vijftig stands langsloopt. Geen abstracte woorden die de lezer zelf moet vertalen (maatstaf, consistentie, transparant, efficiëntie). Zeg wat Eduface doet, met wat, en voor wie. Getallen krijgen hun schaal erbij.
 
 ## Cold outreach
 (Lemlist, eerste koude mail/DM)
