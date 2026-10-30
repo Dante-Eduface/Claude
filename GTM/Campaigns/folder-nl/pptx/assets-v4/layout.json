@@ -1,0 +1,634 @@
+{
+ "panel": {
+  "w": 561.25,
+  "h": 793.6875,
+  "bg": "rgb(0, 35, 51)"
+ },
+ "shapes": [
+  {
+   "x": 40,
+   "y": 190.75,
+   "w": 152.40625,
+   "h": 68,
+   "bg": "rgba(255, 255, 255, 0.06)",
+   "bc": "rgba(255, 255, 255, 0.14)",
+   "bw": 1,
+   "bs": "solid",
+   "r": 12
+  },
+  {
+   "x": 204.40625,
+   "y": 190.75,
+   "w": 152.421875,
+   "h": 68,
+   "bg": "rgba(255, 255, 255, 0.06)",
+   "bc": "rgba(255, 255, 255, 0.14)",
+   "bw": 1,
+   "bs": "solid",
+   "r": 12
+  },
+  {
+   "x": 368.828125,
+   "y": 190.75,
+   "w": 152.421875,
+   "h": 68,
+   "bg": "rgba(255, 255, 255, 0.06)",
+   "bc": "rgba(255, 255, 255, 0.14)",
+   "bw": 1,
+   "bs": "solid",
+   "r": 12
+  },
+  {
+   "x": 40,
+   "y": 303.75,
+   "w": 481.25,
+   "h": 62,
+   "bg": "rgba(255, 255, 255, 0.06)",
+   "bc": "rgba(255, 255, 255, 0.14)",
+   "bw": 1,
+   "bs": "solid",
+   "r": 12
+  },
+  {
+   "x": 57,
+   "y": 317.75,
+   "w": 34,
+   "h": 34,
+   "bg": "rgba(255, 255, 255, 0.06)",
+   "bc": "rgba(255, 255, 255, 0.14)",
+   "bw": 1,
+   "bs": "solid",
+   "r": 9
+  },
+  {
+   "x": 40,
+   "y": 373.75,
+   "w": 481.25,
+   "h": 62,
+   "bg": "rgba(255, 255, 255, 0.06)",
+   "bc": "rgba(255, 255, 255, 0.14)",
+   "bw": 1,
+   "bs": "solid",
+   "r": 12
+  },
+  {
+   "x": 57,
+   "y": 387.75,
+   "w": 34,
+   "h": 34,
+   "bg": "rgba(255, 255, 255, 0.06)",
+   "bc": "rgba(255, 255, 255, 0.14)",
+   "bw": 1,
+   "bs": "solid",
+   "r": 9
+  },
+  {
+   "x": 40,
+   "y": 443.75,
+   "w": 481.25,
+   "h": 62,
+   "bg": "rgba(255, 255, 255, 0.06)",
+   "bc": "rgba(255, 255, 255, 0.14)",
+   "bw": 1,
+   "bs": "solid",
+   "r": 12
+  },
+  {
+   "x": 57,
+   "y": 457.75,
+   "w": 34,
+   "h": 34,
+   "bg": "rgba(255, 255, 255, 0.06)",
+   "bc": "rgba(255, 255, 255, 0.14)",
+   "bw": 1,
+   "bs": "solid",
+   "r": 9
+  },
+  {
+   "x": 40,
+   "y": 543.75,
+   "w": 481.25,
+   "h": 138,
+   "bg": "rgba(0, 224, 117, 0.08)",
+   "bc": "rgb(0, 224, 117)",
+   "bw": 2,
+   "bs": "solid",
+   "r": 14
+  },
+  {
+   "x": 179.40625,
+   "y": 181.75,
+   "w": 22,
+   "h": 22,
+   "bg": "rgb(179, 38, 30)",
+   "bc": "rgb(0, 35, 51)",
+   "bw": 2,
+   "bs": "solid",
+   "r": 11,
+   "cross": true
+  },
+  {
+   "x": 343.828125,
+   "y": 181.75,
+   "w": 22,
+   "h": 22,
+   "bg": "rgb(179, 38, 30)",
+   "bc": "rgb(0, 35, 51)",
+   "bw": 2,
+   "bs": "solid",
+   "r": 11,
+   "cross": true
+  },
+  {
+   "x": 508.25,
+   "y": 181.75,
+   "w": 22,
+   "h": 22,
+   "bg": "rgb(179, 38, 30)",
+   "bc": "rgb(0, 35, 51)",
+   "bw": 2,
+   "bs": "solid",
+   "r": 11,
+   "cross": true
+  }
+ ],
+ "texts": [
+  {
+   "x": 40,
+   "y": 34,
+   "w": 481.25,
+   "h": 14,
+   "color": "rgb(0, 224, 117)",
+   "size": 11,
+   "weight": "600",
+   "family": "Inter, system-ui, sans-serif",
+   "lh": "normal",
+   "align": "start",
+   "runs": [
+    {
+     "t": "ZO WERKT EDUFACE",
+     "color": "rgb(0, 224, 117)",
+     "size": 11,
+     "weight": "600",
+     "family": "Inter, system-ui, sans-serif",
+     "lh": "normal",
+     "align": "start"
+    }
+   ]
+  },
+  {
+   "x": 40,
+   "y": 56,
+   "w": 481.25,
+   "h": 89.75,
+   "color": "rgb(255, 255, 255)",
+   "size": 44,
+   "weight": "700",
+   "family": "\"League Spartan\", Inter, sans-serif",
+   "lh": "44.88px",
+   "align": "start",
+   "runs": [
+    {
+     "t": "Geen ChatGPT.",
+     "color": "rgb(255, 255, 255)",
+     "size": 44,
+     "weight": "700",
+     "family": "\"League Spartan\", Inter, sans-serif",
+     "lh": "44.88px",
+     "align": "start"
+    },
+    {
+     "br": true
+    },
+    {
+     "t": "Een eigen model.",
+     "color": "rgb(0, 224, 117)",
+     "size": 44,
+     "weight": "700",
+     "family": "\"League Spartan\", Inter, sans-serif",
+     "lh": "44.88px",
+     "align": "start"
+    }
+   ]
+  },
+  {
+   "x": 40,
+   "y": 165.75,
+   "w": 481.25,
+   "h": 15,
+   "color": "rgba(255, 255, 255, 0.7)",
+   "size": 12,
+   "weight": "600",
+   "family": "Inter, system-ui, sans-serif",
+   "lh": "normal",
+   "align": "start",
+   "runs": [
+    {
+     "t": "Wij draaien niet op",
+     "color": "rgba(255, 255, 255, 0.7)",
+     "size": 12,
+     "weight": "600",
+     "family": "Inter, system-ui, sans-serif",
+     "lh": "normal",
+     "align": "start"
+    }
+   ]
+  },
+  {
+   "x": 101.375,
+   "y": 216.25,
+   "w": 60.640625,
+   "h": 17,
+   "color": "rgba(255, 255, 255, 0.75)",
+   "size": 14,
+   "weight": "600",
+   "family": "Inter, system-ui, sans-serif",
+   "lh": "normal",
+   "align": "center",
+   "runs": [
+    {
+     "t": "ChatGPT",
+     "color": "rgba(255, 255, 255, 0.75)",
+     "size": 14,
+     "weight": "600",
+     "family": "Inter, system-ui, sans-serif",
+     "lh": "normal",
+     "align": "center"
+    }
+   ]
+  },
+  {
+   "x": 272.484375,
+   "y": 216.25,
+   "w": 47.265625,
+   "h": 17,
+   "color": "rgba(255, 255, 255, 0.75)",
+   "size": 14,
+   "weight": "600",
+   "family": "Inter, system-ui, sans-serif",
+   "lh": "normal",
+   "align": "center",
+   "runs": [
+    {
+     "t": "Gemini",
+     "color": "rgba(255, 255, 255, 0.75)",
+     "size": 14,
+     "weight": "600",
+     "family": "Inter, system-ui, sans-serif",
+     "lh": "normal",
+     "align": "center"
+    }
+   ]
+  },
+  {
+   "x": 436.734375,
+   "y": 216.25,
+   "w": 47.609375,
+   "h": 17,
+   "color": "rgba(255, 255, 255, 0.75)",
+   "size": 14,
+   "weight": "600",
+   "family": "Inter, system-ui, sans-serif",
+   "lh": "normal",
+   "align": "center",
+   "runs": [
+    {
+     "t": "Claude",
+     "color": "rgba(255, 255, 255, 0.75)",
+     "size": 14,
+     "weight": "600",
+     "family": "Inter, system-ui, sans-serif",
+     "lh": "normal",
+     "align": "center"
+    }
+   ]
+  },
+  {
+   "x": 40,
+   "y": 278.75,
+   "w": 481.25,
+   "h": 15,
+   "color": "rgba(255, 255, 255, 0.7)",
+   "size": 12,
+   "weight": "600",
+   "family": "Inter, system-ui, sans-serif",
+   "lh": "normal",
+   "align": "start",
+   "runs": [
+    {
+     "t": "Maar op een eigen model, getraind op",
+     "color": "rgba(255, 255, 255, 0.7)",
+     "size": 12,
+     "weight": "600",
+     "family": "Inter, system-ui, sans-serif",
+     "lh": "normal",
+     "align": "start"
+    }
+   ]
+  },
+  {
+   "x": 103,
+   "y": 317.75,
+   "w": 401.25,
+   "h": 19,
+   "color": "rgb(255, 255, 255)",
+   "size": 15,
+   "weight": "700",
+   "family": "Inter, system-ui, sans-serif",
+   "lh": "normal",
+   "align": "start",
+   "runs": [
+    {
+     "t": "Wetenschappelijke publicaties",
+     "color": "rgb(255, 255, 255)",
+     "size": 15,
+     "weight": "700",
+     "family": "Inter, system-ui, sans-serif",
+     "lh": "normal",
+     "align": "start"
+    }
+   ]
+  },
+  {
+   "x": 103,
+   "y": 336.75,
+   "w": 401.25,
+   "h": 15,
+   "color": "rgba(255, 255, 255, 0.7)",
+   "size": 12.5,
+   "weight": "400",
+   "family": "Inter, system-ui, sans-serif",
+   "lh": "normal",
+   "align": "start",
+   "runs": [
+    {
+     "t": "Papers en peer-reviewed artikelen, per vakgebied",
+     "color": "rgba(255, 255, 255, 0.7)",
+     "size": 12.5,
+     "weight": "400",
+     "family": "Inter, system-ui, sans-serif",
+     "lh": "normal",
+     "align": "start"
+    }
+   ]
+  },
+  {
+   "x": 103,
+   "y": 387.75,
+   "w": 401.25,
+   "h": 19,
+   "color": "rgb(255, 255, 255)",
+   "size": 15,
+   "weight": "700",
+   "family": "Inter, system-ui, sans-serif",
+   "lh": "normal",
+   "align": "start",
+   "runs": [
+    {
+     "t": "Hoe docenten beoordelen",
+     "color": "rgb(255, 255, 255)",
+     "size": 15,
+     "weight": "700",
+     "family": "Inter, system-ui, sans-serif",
+     "lh": "normal",
+     "align": "start"
+    }
+   ]
+  },
+  {
+   "x": 103,
+   "y": 406.75,
+   "w": 401.25,
+   "h": 15,
+   "color": "rgba(255, 255, 255, 0.7)",
+   "size": 12.5,
+   "weight": "400",
+   "family": "Inter, system-ui, sans-serif",
+   "lh": "normal",
+   "align": "start",
+   "runs": [
+    {
+     "t": "Onderzoek uit pedagogiek en leerwetenschap",
+     "color": "rgba(255, 255, 255, 0.7)",
+     "size": 12.5,
+     "weight": "400",
+     "family": "Inter, system-ui, sans-serif",
+     "lh": "normal",
+     "align": "start"
+    }
+   ]
+  },
+  {
+   "x": 103,
+   "y": 457.75,
+   "w": 401.25,
+   "h": 19,
+   "color": "rgb(255, 255, 255)",
+   "size": 15,
+   "weight": "700",
+   "family": "Inter, system-ui, sans-serif",
+   "lh": "normal",
+   "align": "start",
+   "runs": [
+    {
+     "t": "Feedbackvoorbeelden",
+     "color": "rgb(255, 255, 255)",
+     "size": 15,
+     "weight": "700",
+     "family": "Inter, system-ui, sans-serif",
+     "lh": "normal",
+     "align": "start"
+    }
+   ]
+  },
+  {
+   "x": 103,
+   "y": 476.75,
+   "w": 401.25,
+   "h": 15,
+   "color": "rgba(255, 255, 255, 0.7)",
+   "size": 12.5,
+   "weight": "400",
+   "family": "Inter, system-ui, sans-serif",
+   "lh": "normal",
+   "align": "start",
+   "runs": [
+    {
+     "t": "Specifiek voor het onderwijs",
+     "color": "rgba(255, 255, 255, 0.7)",
+     "size": 12.5,
+     "weight": "400",
+     "family": "Inter, system-ui, sans-serif",
+     "lh": "normal",
+     "align": "start"
+    }
+   ]
+  },
+  {
+   "x": 40,
+   "y": 513.75,
+   "w": 481.25,
+   "h": 22,
+   "color": "rgb(0, 224, 117)",
+   "size": 22,
+   "weight": "400",
+   "family": "Inter, system-ui, sans-serif",
+   "lh": "22px",
+   "align": "center",
+   "runs": [
+    {
+     "t": "↓",
+     "color": "rgb(0, 224, 117)",
+     "size": 22,
+     "weight": "400",
+     "family": "Inter, system-ui, sans-serif",
+     "lh": "22px",
+     "align": "center"
+    }
+   ]
+  },
+  {
+   "x": 62,
+   "y": 566.75,
+   "w": 127.421875,
+   "h": 14,
+   "color": "rgb(0, 224, 117)",
+   "size": 11,
+   "weight": "600",
+   "family": "Inter, system-ui, sans-serif",
+   "lh": "normal",
+   "align": "start",
+   "runs": [
+    {
+     "t": "HET EDUFACE-MODEL",
+     "color": "rgb(0, 224, 117)",
+     "size": 11,
+     "weight": "600",
+     "family": "Inter, system-ui, sans-serif",
+     "lh": "normal",
+     "align": "start"
+    }
+   ]
+  },
+  {
+   "x": 62,
+   "y": 587.75,
+   "w": 261.140625,
+   "h": 52,
+   "color": "rgb(255, 255, 255)",
+   "size": 52,
+   "weight": "700",
+   "family": "\"League Spartan\", Inter, sans-serif",
+   "lh": "52px",
+   "align": "start",
+   "runs": [
+    {
+     "t": "250.000",
+     "color": "rgb(255, 255, 255)",
+     "size": 52,
+     "weight": "700",
+     "family": "\"League Spartan\", Inter, sans-serif",
+     "lh": "52px",
+     "align": "start"
+    }
+   ]
+  },
+  {
+   "x": 62,
+   "y": 646.75,
+   "w": 261.140625,
+   "h": 16,
+   "color": "rgba(255, 255, 255, 0.7)",
+   "size": 13,
+   "weight": "400",
+   "family": "Inter, system-ui, sans-serif",
+   "lh": "normal",
+   "align": "start",
+   "runs": [
+    {
+     "t": "onderwijsspecifieke feedbackvoorbeelden",
+     "color": "rgba(255, 255, 255, 0.7)",
+     "size": 13,
+     "weight": "400",
+     "family": "Inter, system-ui, sans-serif",
+     "lh": "normal",
+     "align": "start"
+    }
+   ]
+  },
+  {
+   "x": 40,
+   "y": 734.6875,
+   "w": 481.25,
+   "h": 27,
+   "color": "rgba(255, 255, 255, 0.7)",
+   "size": 12,
+   "weight": "400",
+   "family": "Inter, system-ui, sans-serif",
+   "lh": "normal",
+   "align": "start",
+   "runs": [
+    {
+     "t": "Ontwikkeld met hulp van de Universiteit Leiden en de Radboud Universiteit.",
+     "color": "rgba(255, 255, 255, 0.7)",
+     "size": 12,
+     "weight": "400",
+     "family": "Inter, system-ui, sans-serif",
+     "lh": "normal",
+     "align": "start"
+    }
+   ]
+  }
+ ],
+ "icons": [
+  {
+   "id": "i0",
+   "x": 70.375,
+   "y": 213.75,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "i1",
+   "x": 241.484375,
+   "y": 213.75,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "i2",
+   "x": 405.734375,
+   "y": 213.75,
+   "w": 22,
+   "h": 22
+  },
+  {
+   "id": "i3",
+   "x": 65.5,
+   "y": 326.25,
+   "w": 17,
+   "h": 17
+  },
+  {
+   "id": "i4",
+   "x": 65.5,
+   "y": 396.25,
+   "w": 17,
+   "h": 17
+  },
+  {
+   "id": "i5",
+   "x": 65.5,
+   "y": 466.25,
+   "w": 17,
+   "h": 17
+  },
+  {
+   "id": "i6",
+   "x": 397.5625,
+   "y": 597.75,
+   "w": 101.6875,
+   "h": 30
+  }
+ ]
+}
