@@ -34,3 +34,11 @@ omdat commando's en scripts daarvan afhangen. Vastgelegd in `Context/kaart.md`.
 Overlappende skills samenvoegen in plaats van naast elkaar laten staan. `cro`, `schrijven`,
 `outreach` en `meddpicc` slikten hun dubbelganger op. `sso-grid` bleef apart omdat de
 scheiding met de scoringsskill met opzet is gebouwd.
+
+### 2026-10-30 · folder SURF Onderwijsdagen · correctie
+Bewijs moet de hook dekken: de 94% meet voorstel tegen docent, niet docent tegen docent, dus
+consistentie onderbouwen met het mechanisme (zelfde rubric, cijferopbouw per criterium). Op
+rustig gelezen materiaal het puntenverschil, niet de kale 94%. Geen "fractie van de tijd" zonder
+nulmeting. Resultaten en klanten visueel gescheiden. Claims zonder bron eruit, niet "tot het
+bevestigd is". Bath Spa noemen is een toestemmingsvraag voor Dante. Toegepast in
+`GTM/Campaigns/folder-nl/inhoud.md`.

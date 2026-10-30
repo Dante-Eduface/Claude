@@ -34,6 +34,7 @@ De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat 
 | V11 | Werkt alles in de browser zonder lokale installatie, kunnen functies per instelling aan en uit, wat moet een instelling technisch inrichten (LMS-koppeling, SSO, accountbeheer), en kunnen studenten zelf verwijderen? | Staat geel in `GTM/Knowledge/privacy-vragenlijsten/antwoorden-privacy-it-vragen-2026-10-02.docx`. | 02-10-2026 |
 | V12 | Continuïteit van het bedrijf zelf (financiering, team, exit- of escrowregeling) en het aantal getekende verwerkersovereenkomsten met Nederlandse instellingen. | Zelfde vragenlijst, vraag 9 en 12. | 02-10-2026 |
 | V13 | **48,5% tijdsbesparing bij nakijken: waar komt het vandaan en wat is gemeten?** Staat niet in `Platform/product.md`, wel in Menno's post (Radboud) en in Close (Breederode). | Moet bevestigd zijn voor het op de folder of in een deck komt. | 30-10-2026 |
+| V14 | **94% accuraatheid: gaf de docent zijn cijfer vóór of ná het zien van het AI-voorstel?** Check bij Menno of Samuel. | Bepaalt of de meting onafhankelijk is. Blokkeert de SURF-folder. | 30-10-2026 |
 
 ## Later, geen vraag maar een richting
 
