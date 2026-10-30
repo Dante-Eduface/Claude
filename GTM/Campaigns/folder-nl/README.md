@@ -15,5 +15,6 @@ Gevouwen A4-folder (liggend, dubbelgevouwen tot A5) voor Nederlandse instellinge
 - `pptx/eigen-model-v4-bewerkbaar.pptx` en `pptx/eigen-model-v5-bewerkbaar.pptx`: de 'Eigen model'-pagina uit v4 en v5 als bewerkbare pptx (A5 staand). Opnieuw bouwen: `node pptx/extract.js folder-vX.html pptx/assets-vX` en `python3 pptx/build_pptx.py pptx/assets-vX pptx/<naam>.pptx`. De eerste losse versie staat in `Archive/folder-nl-pptx-2026-10/`.
 - `folder-v6.html` / `folder-v6.pdf`: verder op v4, Dantes favoriet (30-10-2026). Vakgebieden onder 'Wetenschappelijke publicaties' (en weg van de rechterpagina), dan 'Hoe docenten beoordelen', dan het Eduface-model met robot-icoon. `modelicoon-opties.png`: vijf icoonvarianten om uit te kiezen.
 - `folder-v7a` en `folder-v7b` (.html/.pdf): onderwijschip-icoon, vakgebieden als blokjes binnen 'Wetenschappelijke publicaties', geen logo in de modelkaart, '250.000 datapunten'. v7a met de regel 'Het Eduface-model', v7b zonder.
+- `folder-v8.html` / `.pdf`: op v7b, met de kop 'Het [Eduface-logo] model' boven de modelkaart in wit (30-10-2026).
 
-Fase: v7 ter review, keuze a of b open bij Dante. Nog in te vullen: QR-link, en de echte logo's voor instellingen, LMS'en (ChatGPT/Gemini/Claude staan er sinds v4 echt in).
+Fase: v8 ter review bij Dante. Nog in te vullen: QR-link, en de echte logo's voor instellingen, LMS'en (ChatGPT/Gemini/Claude staan er sinds v4 echt in).
