@@ -1,6 +1,6 @@
 # Folder SURF Onderwijsdagen, inhoud per paneel
 
-_Laatst bijgewerkt: 2026-10-30. Opgesteld uit het gesprek Dante en Jeroen van 30-10-2026, herzien na Dante's feedback dezelfde dag. Alles in het Nederlands._
+_Laatst bijgewerkt: 2026-10-30. Opgesteld uit het gesprek Dante en Jeroen van 30-10-2026, herzien na Dante's feedback dezelfde dag (bewijs, daarna vaagheid). Alles in het Nederlands._
 
 Elke claim komt uit `Platform/product.md` of `.claude/skills/privacy-it/platform-privacykennis.md`. Wat daar niet staat, staat niet op de folder. Geen "tot het bevestigd is": een folder ligt gedrukt voordat iemand iets bevestigt.
 
@@ -20,82 +20,93 @@ Elke claim komt uit `Platform/product.md` of `.claude/skills/privacy-it/platform
 
 ---
 
+## De toets voor elke regel
+
+Iemand loopt langs vijftig stands en krijgt dit in zijn hand. Begrijpt hij de regel zonder na te denken? Woorden als "maatstaf", "consistentie" of "transparant" moet hij zelf vertalen naar wat er gebeurt, dus die staan er niet. Elke regel zegt wat Eduface doet, met wat, en voor wie.
+
+---
+
 ## Paneel 1, voorkant
 
-**Hook.** Eén probleem: consistentie tussen beoordelaars.
+**Hook:**
+> Twee docenten. Eén paper. Twee verschillende cijfers.
 
-> Twee beoordelaars. Eén paper. Twee verschillende cijfers.
+"Docenten" in plaats van "beoordelaars": dat woord gebruikt de bezoeker zelf.
 
-Drie korte zinnen achter elkaar is hier een bewuste keuze. Dat ritme komt verder nergens op de folder terug.
+**Headline, voorkeur A:**
+- A. *AI kijkt elk paper na op jullie rubric. De docent keurt het cijfer goed.*
+- B. *AI die nakijkt op jullie rubric, met per criterium uitleg bij het cijfer.*
 
-**Headline:**
-> Dezelfde maatstaf voor elke inzending.
+A zegt in één keer wat het is (AI die nakijkt), waar het op draait (jullie rubric) en wie beslist (de docent). Het antwoord op de hook zit in "elk paper op jullie rubric".
 
 **Subline:**
-> Eduface stelt feedback en een cijfervoorstel op volgens jullie rubric, met een eigen onderwijskundig AI-model. De docent bekijkt elk punt, past het aan waar nodig en keurt het goed.
+> Per criterium zie je hoe een cijfer is opgebouwd. Zo leg je de cijfers van verschillende docenten naast elkaar.
 
 **Visual:** productbeeld van de reader, met opmerkingen die eruitzien alsof ze nog geschreven worden. Bestaande beelden: `Design/Merk/product/`.
 
-**LMS-strook:** *Geïntegreerd in jullie LMS* + logo's Moodle, Blackboard, Brightspace, Canvas.
+**LMS-strook:** *Werkt in jullie LMS* + logo's Moodle, Blackboard, Brightspace, Canvas.
 - OPEN: LMS-logo's staan nog niet in `Design/Merk/`.
 
 ---
 
-## Paneel 2-3, binnenkant: zo werkt Eduface
+## Paneel 2-3, binnenkant
 
-### 1. Dezelfde rubric, elke inzending
-Dit blok draagt de hook. Het bewijs voor consistentie is het mechanisme, geen percentage.
-> Elke inzending wordt langs dezelfde rubric gescoord, met een uitlegbare cijferopbouw per criterium. Zo zie je bij elk cijfer waar het vandaan komt, en waar twee beoordelaars uit elkaar lopen. Het dashboard dat beoordelaars vergelijkt laat in één oogopslag zien wie afwijkt van het team of van het AI-voorstel.
+### Elk cijfer met uitleg per criterium
+> Eduface scoort elk paper op jullie rubric en laat per criterium zien hoe het cijfer is opgebouwd. Een dashboard laat zien welke docent anders nakijkt dan de rest van het team.
 
-### 2. Een eigen model
-> Eduface draait niet op OpenAI, Anthropic of een ander algemeen model. Het is getraind op 250.000 onderwijsspecifieke feedbackvoorbeelden en op peer-reviewed onderzoek naar hoe docenten beoordelen.
+### Geen ChatGPT, een eigen model
+> Een Nederlands onderwijskundig AI-model, ontwikkeld met hulp van de Universiteit Leiden en de Radboud Universiteit. Getraind op 250.000 voorbeelden van feedback uit het onderwijs.
 
-### 3. Een model per vakgebied
-> Zes vakmodellen, elk getraind op de conventies van het eigen vakgebied: Recht, Economie, Sociale Wetenschappen, STEM, Geesteswetenschappen en Gezondheidswetenschappen.
+"Geen ChatGPT" is de vraag die een bezoeker als eerste heeft. `product.md`: geen API van OpenAI, Anthropic of een ander foundation model.
 
-- Niet beweren wat elk submodel per vak precies kent, dat is nog niet bevestigd.
-- OPEN: Dante levert de vakgebieden nog aan. In `product.md` staan deze zes. Zelfde lijst?
+### Een model dat jullie vak kent
+> Je kiest het vakgebied, en het model kent de manier van redeneren en de bronnen die daarbij horen: Recht, Economie, Sociale Wetenschappen, STEM, Geesteswetenschappen of Gezondheidswetenschappen.
 
-### 4. Paper Grader en Exam Grader
-- **AI Paper Grader:** feedback per concept tijdens het schrijven, plus volledige beoordeling op de rubric met annotaties in de tekst.
-- **AI Exam Grader:** open en gesloten vragen nakijken op schaal. Hij markeert waar hij twijfelt, en het cijfer gaat na goedkeuring terug naar het LMS.
+- Formulering komt letterlijk uit `product.md`. Niet verder uitschrijven per vak, dat is niet bevestigd.
+- OPEN: Dante levert de vakgebieden nog aan. Zelfde zes als in `product.md`?
 
-### 5. De docent beslist
-> De AI assisteert, de docent beslist. De docent ziet en keurt elk punt voordat de student het leest. De instelling kiest zelf hoeveel toezicht ze wil. Voor summatieve beoordelingen houdt Eduface een audit trail bij volgens de AI Act.
+### Papers en tentamens
+- **Papers:** feedback op elke conceptversie terwijl de student schrijft, en een cijfervoorstel per criterium op de eindversie.
+- **Tentamens:** open en gesloten vragen nakijken tegen jullie antwoordmodel. Waar het model twijfelt, markeert het dat. Na goedkeuring gaat het cijfer naar het LMS.
+
+De productnamen (Paper Grader, Exam Grader) zeggen een bezoeker niets, dus de kop zegt wat er wordt nagekeken. De namen kunnen klein eronder.
+
+### De docent beslist
+> De AI stelt een cijfer voor, de docent beslist. Jullie kiezen of feedback direct naar de student gaat of pas nadat de docent hem heeft gelezen. Bij summatieve toetsen wordt vastgelegd hoe elk cijfer tot stand kwam, in een audit trail die voldoet aan de AI Act.
 
 ### Resultaten (eigen blok, visueel los van de klanten)
-Label: *pilot bij één instelling, juni 2026*. Instellingsnaam afhankelijk van blokkerend punt 3.
+Label: *pilot bij één instelling, juni 2026*. Naam afhankelijk van blokkerend punt 3.
 
-- **Hoe dicht het voorstel bij de docent zit:** over 435 opdrachten en 13 docenten lag het cijfervoorstel gemiddeld ongeveer 6 punten van het cijfer van de docent. Bij docenten die het model hadden afgestemd was dat ongeveer 2 punten.
-  - De 2 punten zijn het sterkste stuk: het model wordt beter zodra de docent stuurt.
-  - Alleen als percentage als het moet, en dan met dragers: *94% accuraatheid, 98% bij afgestemde modellen, over 435 opdrachten en 13 docenten.* Nooit kaal.
-  - Afhankelijk van blokkerend punt 1.
-- **Reviewtijd per inzending in de pilot:** 2 tot 3 minuten. Als los feit, geen vergelijking met "zonder Eduface", want die nulmeting is er niet.
+> In een pilot met 435 opdrachten en 13 docenten lag het cijfervoorstel gemiddeld 6 punten naast het cijfer van de docent, op een schaal van 100. Docenten die het model hadden afgestemd kwamen op 2 punten.
+
+> Een docent was 2 tot 3 minuten bezig met het controleren van een inzending.
+
+- **"Op een schaal van 100" moet erbij.** Een Nederlandse docent denkt in een 1 tot 10. Zonder die toevoeging leest hij "6 punten ernaast" als een ramp.
+- Afhankelijk van blokkerend punt 1.
 
 ### Klanten (eigen blok)
-> Gebruikt door Hogeschool Rotterdam, De Haagse Hogeschool, Tilburg University en Radboud Universiteit.
+> Eduface wordt onder andere gebruikt bij Hogeschool Rotterdam, De Haagse Hogeschool, Tilburg University en Radboud Universiteit.
 
 Nooit TIO of ICM.
 
 ---
 
-## Paneel 4, achterkant: call to action
+## Paneel 4, achterkant
 
-**CTA.** Moet zeggen wat je krijgt. Richting, pas definitief als blokkerend punt 2 is opgelost:
-> Wij rekenen uit wat nakijken jullie opleiding nu kost.
+**CTA, richting** (definitief pas als blokkerend punt 2 is opgelost):
+> Wij rekenen gratis uit hoeveel uur jullie docenten nu kwijt zijn aan nakijken.
 
-Gevolgd door één zin over wat er in het rapport staat en hoe je het aanvraagt.
+Uren zijn concreter dan "wat het kost". Kan het rapport geen uren leveren, dan past deze zin niet.
 
 **QR-code + contact.**
 - OPEN: waar leidt de QR heen?
 - OPEN: wiens naam, mail en telefoonnummer?
 
 **Vertrouwensregel:**
-> Jullie data blijft in de EU. Er wordt nooit getraind op jullie data.
+> Jullie data blijft in de EU en wordt nooit gebruikt om AI te trainen.
 
-- Beide bevestigd in `platform-privacykennis.md` (02-10-2026).
-- "Nederland" niet, alleen "EU" tot de Azure-regio vaststaat (V1).
-- Eventueel erbij: *beleid sluit aan op de AVG*. Nooit "voldoet aan de AVG", dat is geen certificering.
+- Beide bevestigd in `platform-privacykennis.md` (02-10-2026). Alleen "EU", niet "Nederland" (V1).
+- Eventueel erbij: *beleid sluit aan op de AVG*. Nooit "voldoet aan de AVG".
 
 ---
 
