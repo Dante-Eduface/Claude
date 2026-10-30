@@ -9,4 +9,6 @@ Gevouwen A4-folder (liggend, dubbelgevouwen tot A5) voor Nederlandse instellinge
 
 - `folder-v3.html` / `folder-v3.pdf`: de huidige versie (30-10-2026). Kleurritme wit, navy, wit, navy in leesvolgorde: voorkant wit, binnen links navy (eigen model), binnen rechts wit, achterkant navy (cijferopbouw, logo's, contact).
 
-Fase: v3 ter review bij Dante. Nog in te vullen: QR-link, en de echte logo's voor instellingen, LMS'en en ChatGPT/Gemini/Claude (nu placeholders).
+- `folder-v4.html` / `folder-v4.pdf`: binnenkant herzien (30-10-2026). Links: geen ChatGPT/Gemini/Claude (logo's uit simple-icons, `logos-ai/`), waarop het model getraind is, 250.000. Rechts: Paper Grader en Exam Grader als hoofdzaak, dan explainability en auditability, vakgebieden als grijze voetregel.
+
+Fase: v4 ter review bij Dante. Nog in te vullen: QR-link, en de echte logo's voor instellingen, LMS'en (ChatGPT/Gemini/Claude staan er sinds v4 echt in).
