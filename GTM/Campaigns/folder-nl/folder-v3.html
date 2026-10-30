@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Eduface folder v3</title>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #002333; --navy-2: #0a2c3b; --green: #00e075; --green-deep: #007b54;
+    --ink-700: #2c4a57; --ink-500: #5b7480; --ink-300: #a9bcc4; --ink-200: #cdd9de; --ink-100: #e7eef0; --ink-50: #f3f7f8; --white: #fff;
+    --mint: #e9fbf2; --mint-line: #c9f1dd; --hl: rgba(0,224,117,.22);
+    --soft: rgba(255,255,255,.70); --line-inv: rgba(255,255,255,.14); --fill-inv: rgba(255,255,255,.06);
+    --display: "League Spartan", "Inter", sans-serif; --sans: "Inter", system-ui, sans-serif;
+  }
+  @page { size: 297mm 210mm; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #d9e2e6; font-family: var(--sans); color: var(--navy); -webkit-font-smoothing: antialiased; }
+  .sheet { width: 297mm; height: 210mm; margin: 0 auto 24px; display: grid; grid-template-columns: 1fr 1fr; overflow: hidden; page-break-after: always; }
+  @media print { body { background: none; } .sheet { margin: 0; } }
+  .panel { display: flex; flex-direction: column; padding: 34px 40px 32px; min-height: 0; position: relative; background: var(--white); }
+  .panel.dark { background: var(--navy); color: var(--white); }
+
+  .kick { font-size: 11px; font-weight: 600; letter-spacing: .04em; color: var(--green-deep); }
+  .dark .kick { color: var(--green); }
+  h1 { font-family: var(--display); font-weight: 700; font-size: 40px; line-height: 1.02; letter-spacing: -.02em; }
+  h2 { font-family: var(--display); font-weight: 700; font-size: 34px; line-height: 1.02; letter-spacing: -.015em; margin-top: 6px; }
+  h3 { font-family: var(--display); font-weight: 700; font-size: 17px; line-height: 1.15; }
+  .body { font-size: 12.5px; line-height: 1.5; color: var(--ink-700); }
+  .dark .body { color: var(--soft); }
+  .lead { font-size: 15px; font-weight: 600; line-height: 1.35; }
+  .lbl { font-size: 11px; color: var(--ink-500); font-weight: 500; }
+  .dark .lbl { color: var(--soft); }
+  mark { background: var(--hl); color: inherit; border-radius: 2px; padding: 0 1px; }
+
+  .card { border: 1px solid var(--ink-100); background: var(--ink-50); border-radius: 12px; padding: 14px 16px; }
+  .row { display: grid; grid-template-columns: 34px 1fr; column-gap: 12px; align-items: start; }
+  .ic { width: 34px; height: 34px; border-radius: 9px; background: var(--white); border: 1px solid var(--ink-100); display: grid; place-items: center; flex: none; }
+  .ic svg { width: 17px; height: 17px; fill: none; stroke: var(--navy); stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+  .ic.sm { width: 26px; height: 26px; border-radius: 7px; } .ic.sm svg { width: 14px; height: 14px; }
+  .ic.inv { background: var(--fill-inv); border-color: var(--line-inv); } .ic.inv svg { stroke: var(--white); }
+  .ic.gr { background: rgba(0,224,117,.12); border-color: rgba(0,224,117,.35); } .ic.gr svg { stroke: var(--green); }
+  .ok { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 600; color: var(--green-deep); }
+  .ok i { width: 16px; height: 16px; border-radius: 99px; background: var(--green); display: grid; place-items: center; font-style: normal; color: var(--navy); font-size: 10px; font-weight: 700; }
+  .ph { border: 1.5px dashed var(--ink-200); border-radius: 10px; display: grid; place-items: center; text-align: center; font-size: 11px; font-weight: 600; color: var(--ink-500); line-height: 1.2; padding: 6px; }
+  .ph small { display: block; font-weight: 400; font-size: 9px; color: var(--ink-300); margin-top: 2px; }
+  .dark .ph { border-color: rgba(255,255,255,.28); color: var(--white); background: var(--fill-inv); }
+  .dark .ph small { color: var(--soft); }
+
+  /* ===== FRONT (white) ===== */
+  .front .logo { height: 26px; align-self: flex-start; }
+  .front h1 { margin-top: 24px; font-size: 42px; }
+  .front .lead { margin-top: 14px; max-width: 34ch; }
+  .front .body { margin-top: 8px; max-width: 46ch; }
+  .shot { margin-top: 18px; flex: 1; min-height: 0; border: 1px solid var(--ink-200); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 10px 30px rgba(0,35,51,.10); background: var(--white); }
+  .shot-bar { display: flex; align-items: center; gap: 8px; padding: 9px 14px; border-bottom: 1px solid var(--ink-100); font-size: 11px; color: var(--ink-500); }
+  .shot-bar b { color: var(--navy); font-weight: 600; }
+  .dots { display: flex; gap: 4px; } .dots i { width: 7px; height: 7px; border-radius: 99px; background: var(--ink-200); }
+  .shot-body { flex: 1; display: grid; grid-template-columns: 1fr 176px; min-height: 0; }
+  .essay { padding: 14px 16px; font-size: 11.5px; line-height: 1.6; color: var(--ink-700); }
+  .essay b { display: block; font-size: 12.5px; color: var(--navy); margin-bottom: 6px; }
+  .cmts { background: var(--ink-50); border-left: 1px solid var(--ink-100); padding: 12px 10px; display: flex; flex-direction: column; gap: 8px; }
+  .cm { background: var(--white); border: 1px solid var(--ink-100); border-radius: 10px; padding: 9px 10px; display: flex; flex-direction: column; gap: 5px; }
+  .cm b { font-size: 11px; } .cm p { font-size: 10.5px; line-height: 1.4; color: var(--ink-700); }
+  .cm .ok { font-size: 9.5px; } .cm .ok i { width: 14px; height: 14px; font-size: 9px; }
+  .lms { margin-top: 14px; }
+  .lms-h { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+  .lms-h b { font-size: 12.5px; } .lms-h span { font-size: 11px; color: var(--ink-500); }
+  .lms-row { display: grid; grid-template-columns: repeat(6, minmax(0,1fr)); gap: 6px; margin-top: 8px; }
+  .lms-row .ph { height: 36px; font-size: 10px; }
+
+  /* ===== INSIDE LEFT (navy): eigen model ===== */
+  .model h2 { font-size: 46px; margin-top: 10px; }
+  .model h2 span { color: var(--green); }
+  .notthis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 26px; }
+  .notthis div { position: relative; height: 64px; border-radius: 12px; border: 1.5px dashed rgba(255,255,255,.28); background: var(--fill-inv); display: grid; place-items: center; text-align: center; font-size: 13px; font-weight: 600; color: rgba(255,255,255,.55); }
+  .notthis div small { display: block; font-size: 9px; font-weight: 400; color: rgba(255,255,255,.4); margin-top: 2px; }
+  .notthis div::after { content: "×"; position: absolute; top: -8px; right: -8px; width: 20px; height: 20px; border-radius: 99px; background: var(--navy); border: 1.5px solid rgba(255,255,255,.4); color: var(--white); display: grid; place-items: center; font-size: 13px; line-height: 1; }
+  .arrow { display: grid; place-items: center; height: 34px; color: var(--green); font-size: 22px; }
+  .ours { border-radius: 14px; border: 2px solid var(--green); background: rgba(0,224,117,.08); padding: 18px 20px; display: flex; align-items: center; gap: 18px; }
+  .ours img { height: 34px; }
+  .ours span { font-size: 13px; color: var(--soft); line-height: 1.4; border-left: 1px solid var(--line-inv); padding-left: 18px; }
+  .facts { margin-top: auto; display: flex; flex-direction: column; gap: 14px; }
+  .big250 { display: flex; align-items: baseline; gap: 14px; padding-top: 18px; border-top: 1px solid var(--line-inv); }
+  .big250 b { font-family: var(--display); font-size: 54px; font-weight: 700; line-height: 1; color: var(--white); }
+  .big250 span { font-size: 14px; color: var(--soft); line-height: 1.35; }
+  .facts .row { grid-template-columns: 34px 1fr; align-items: center; }
+  .facts .row p { font-size: 13.5px; line-height: 1.4; color: var(--white); }
+
+  /* ===== INSIDE RIGHT (white) ===== */
+  .how h2 { margin-bottom: 16px; }
+  .points { display: flex; flex-direction: column; gap: 12px; }
+  .points .row { grid-template-columns: 36px 1fr; }
+  .points .ic { width: 36px; height: 36px; }
+  .points h3 { font-size: 15.5px; margin-bottom: 2px; }
+  .vak { margin-top: 18px; }
+  .vak h3 { font-size: 17px; }
+  .subjects { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 8px; margin-top: 10px; }
+  .subjects div { display: flex; align-items: center; gap: 8px; background: var(--ink-50); border: 1px solid var(--ink-100); border-radius: 10px; padding: 8px 10px; font-size: 12px; font-weight: 600; line-height: 1.2; }
+  .mods { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: auto; }
+  .mods .card { display: flex; flex-direction: column; gap: 8px; }
+  .mods .head { display: flex; align-items: center; gap: 10px; }
+
+  /* ===== BACK (navy) ===== */
+  .back .grade { background: var(--white); color: var(--navy); border-radius: 12px; padding: 12px 16px; box-shadow: 0 18px 40px rgba(0,0,0,.25); margin-top: 12px; }
+  .grade-h { display: flex; justify-content: space-between; align-items: baseline; padding-bottom: 8px; border-bottom: 1px solid var(--ink-100); }
+  .grade-h span { font-size: 12px; font-weight: 600; } .grade-h b { font-family: var(--display); font-size: 28px; font-weight: 700; line-height: 1; }
+  .crit { display: grid; grid-template-columns: 1fr auto; gap: 1px 12px; padding: 7px 0; border-bottom: 1px solid var(--ink-100); }
+  .crit b { font-size: 12px; } .crit p { font-size: 10.5px; color: var(--ink-700); line-height: 1.35; grid-column: 1; }
+  .pill { grid-row: 1 / span 2; grid-column: 2; align-self: center; font-size: 11px; font-weight: 600; border: 1px solid var(--mint-line); background: var(--mint); color: var(--green-deep); border-radius: 99px; padding: 2px 9px; white-space: nowrap; }
+  .grade .ok { margin-top: 8px; }
+  .result { display: grid; grid-template-columns: 1fr auto; gap: 16px; align-items: end; margin-top: 14px; }
+  .result h3 { font-size: 16px; color: var(--white); }
+  .result .body { font-size: 12px; margin-top: 3px; }
+  .result .stat { text-align: right; } .result .stat b { font-family: var(--display); font-size: 30px; font-weight: 700; display: block; line-height: 1; white-space: nowrap; }
+  .result .stat span { font-size: 10.5px; color: var(--soft); }
+  .used { margin-top: 16px; }
+  .logos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 8px; }
+  .logos .ph { height: 46px; }
+  .cta { margin-top: auto; padding-top: 18px; border-top: 1px solid var(--line-inv); display: grid; grid-template-columns: 1fr 96px; gap: 8px 18px; }
+  .cta h3 { grid-column: 1 / -1; font-size: 22px; line-height: 1.12; color: var(--white); margin-bottom: 6px; }
+  .contact { display: flex; flex-direction: column; gap: 8px; justify-content: center; }
+  .contact div { display: flex; align-items: center; gap: 10px; font-size: 13px; }
+  .qr { width: 96px; height: 96px; background: var(--white); border-radius: 10px; display: grid; place-items: center; color: var(--ink-500); font-size: 11px; text-align: center; }
+  .trust { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 14px; font-size: 10.5px; color: var(--soft); }
+  .trust span { display: inline-flex; align-items: center; gap: 5px; }
+  .trust svg { width: 12px; height: 12px; fill: none; stroke: var(--green); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  /* fill tuning */
+  .model h2 { font-size: 54px; }
+  .notthis { margin-top: 34px; gap: 14px; }
+  .notthis div { height: 104px; font-size: 16px; border-radius: 14px; }
+  .notthis div::after { width: 24px; height: 24px; font-size: 15px; top: -10px; right: -10px; }
+  .arrow { height: 64px; font-size: 30px; }
+  .ours { padding: 28px 26px; gap: 22px; }
+  .ours img { height: 46px; }
+  .ours span { font-size: 15.5px; padding-left: 22px; }
+  .facts .row p { font-size: 15px; }
+  .big250 b { font-size: 64px; } .big250 span { font-size: 16px; }
+  .back .grade { padding: 14px 18px; }
+  .logos .ph { height: 62px; font-size: 12px; }
+  .used { margin-top: 20px; }
+</style>
+</head>
+<body>
+
+<!-- ======================= OUTSIDE: back (navy) | front (white) ======================= -->
+<section class="sheet">
+
+  <div class="panel dark back">
+    <span class="kick">WAT HET OPLEVERT</span>
+    <div class="grade">
+      <div class="grade-h"><span>Cijferopbouw · Essay Toetsbeleid</span><b>7,2</b></div>
+      <div class="crit"><b>Probleemstelling</b><span class="pill">8 / 10</span><p>Vraag is scherp afgebakend en sluit aan op de opdracht. Zie alinea 1.</p></div>
+      <div class="crit"><b>Analyse</b><span class="pill">7 / 10</span><p>Goede observatie over controle achteraf, onderbouwing met bronnen ontbreekt. Zie alinea 2.</p></div>
+      <div class="crit"><b>Argumentatie</b><span class="pill">6 / 10</span><p>Conclusie volgt niet volledig uit het betoog. Zie alinea 4.</p></div>
+      <span class="ok"><i>✓</i>Voorstel bekeken en goedgekeurd door docent</span>
+    </div>
+    <div class="result">
+      <div><h3>Elk paper op dezelfde criteria</h3><p class="body">Iedere inzending wordt gescoord op jullie rubric, met per criterium de onderbouwing. Zo leg je twee cijfers naast elkaar en zie je waar ze verschillen.</p></div>
+      <div class="stat"><b>2 tot 3 min</b><span>reviewtijd per inzending<br>Pilot bij één instelling, juni 2026</span></div>
+    </div>
+    <div class="used">
+      <span class="lbl">Gebruikt door</span>
+      <div class="logos">
+        <div class="ph">Hogeschool Rotterdam<small>logo</small></div>
+        <div class="ph">Tilburg University<small>logo</small></div>
+        <div class="ph">Radboud Universiteit<small>logo</small></div>
+      </div>
+    </div>
+    <div class="cta">
+      <h3>Laat één van jullie eigen opdrachten nakijken en leg het cijfer naast dat van jullie docent.</h3>
+      <div class="contact">
+        <div><span class="ic sm inv"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>dante.torbed@eduface.me</div>
+        <div><span class="ic sm inv"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span>+31 6394 090 99</div>
+        <div><span class="ic sm inv"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span>eduface.me</div>
+      </div>
+      <div class="qr">QR<br>[link]</div>
+    </div>
+    <div class="trust">
+      <span><svg viewBox="0 0 24 24"><path d="m5 12 5 5 9-10"/></svg>Data blijft in de EU</span>
+      <span><svg viewBox="0 0 24 24"><path d="m5 12 5 5 9-10"/></svg>Niet getraind op jullie data</span>
+      <span><svg viewBox="0 0 24 24"><path d="m5 12 5 5 9-10"/></svg>Beleid sluit aan op de AVG</span>
+      <span><svg viewBox="0 0 24 24"><path d="m5 12 5 5 9-10"/></svg>Audit trail volgens de AI Act</span>
+    </div>
+  </div>
+
+  <div class="panel front">
+    <img class="logo" src="../../../Design/Merk/logos/logo_navy.png" alt="Eduface">
+    <h1>Twee docenten.<br>Eén paper.<br>Twee verschillende cijfers.</h1>
+    <p class="lead">AI kijkt elk paper na op jullie rubric. De docent keurt het cijfer goed.</p>
+    <p class="body">Per criterium zie je hoe een cijfer is opgebouwd. Zo leg je de cijfers van verschillende docenten naast elkaar.</p>
+    <div class="shot">
+      <div class="shot-bar"><span class="dots"><i></i><i></i><i></i></span><b>Essay</b> · De rol van de examencommissie bij borging</div>
+      <div class="shot-body">
+        <div class="essay">
+          <b>De rol van de examencommissie bij borging</b>
+          Examencommissies hebben sinds de WHW-wijziging een zwaardere rol gekregen in het borgen van de kwaliteit van toetsing. <mark>In de praktijk blijkt dat commissies vooral achteraf controleren</mark>, terwijl de wet ook om sturing vooraf vraagt. Dit essay betoogt dat steekproeven onvoldoende zicht geven op de spreiding tussen beoordelaars. <mark>Zonder gedeelde ankerpunten verschuift de cesuur per docent</mark>, wat voor studenten moeilijk te verklaren is.
+        </div>
+        <div class="cmts">
+          <div class="cm"><b>Criterium 2 · Analyse</b><p>Sterke observatie. Onderbouw met een bron welke vorm die controle achteraf aanneemt.</p><span class="ok"><i>✓</i>Goedgekeurd door docent</span></div>
+          <div class="cm"><b>Criterium 3 · Argumentatie</b><p>Hier ontbreekt een voorbeeld. Laat zien hoe ankerpunten de spreiding verkleinen.</p><span class="ok"><i>✓</i>Goedgekeurd door docent</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="lms">
+      <div class="lms-h"><b>Werkt in jullie LMS</b><span>Cijfers en feedback gaan automatisch terug.</span></div>
+      <div class="lms-row">
+        <div class="ph">Moodle</div><div class="ph">Blackboard</div><div class="ph">Brightspace</div><div class="ph">Canvas</div><div class="ph">itslearning</div><div class="ph">NEO LMS</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= INSIDE: left (navy) | right (white) ======================= -->
+<section class="sheet">
+
+  <div class="panel dark model">
+    <span class="kick">ZO WERKT EDUFACE</span>
+    <h2>Geen ChatGPT.<br><span>Een eigen model.</span></h2>
+    <div class="notthis">
+      <div>ChatGPT<small>logo</small></div>
+      <div>Gemini<small>logo</small></div>
+      <div>Claude<small>logo</small></div>
+    </div>
+    <div class="arrow">↓</div>
+    <div class="ours">
+      <img src="logo-white-crop.png" alt="Eduface">
+      <span>Een Nederlands onderwijskundig AI-model, gebouwd voor beoordelen en feedback.</span>
+    </div>
+    <div class="facts">
+      <div class="row"><span class="ic inv"><svg viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></span><p>Ontwikkeld met hulp van de Universiteit Leiden en de Radboud Universiteit.</p></div>
+      <div class="big250"><b>250.000</b><span>voorbeelden van feedback<br>uit het onderwijs</span></div>
+    </div>
+  </div>
+
+  <div class="panel how">
+    <h2>AI stelt voor.<br>De docent beslist.</h2>
+    <div class="card points">
+      <span class="lbl">Elk cijfer is controleerbaar</span>
+      <div class="row"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h10M4 18h13"/></svg></span><div><h3>Uitleg per criterium</h3><p class="body">Bij elk criterium uit jullie rubric staat de score, gekoppeld aan de passage in de tekst.</p></div></div>
+      <div class="row"><span class="ic"><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l3 2"/></svg></span><div><h3>Alles vastgelegd</h3><p class="body">Bij summatieve toetsen wordt elke stap bewaard, in een audit trail die voldoet aan de AI Act.</p></div></div>
+      <div class="row"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="4"/><path d="M2 21c.7-4 3.5-6 7-6 1.8 0 3.3.5 4.5 1.4"/><path d="m16 17 2 2 4-4"/></svg></span><div><h3>De docent beslist</h3><p class="body">Jullie kiezen of feedback direct naar de student gaat of pas nadat de docent hem heeft gelezen.</p></div></div>
+    </div>
+    <div class="vak">
+      <h3>Een model dat jullie vak kent</h3>
+      <p class="body" style="margin-top:3px">Het model kent de manier van redeneren en de bronnen die bij het vakgebied horen.</p>
+      <div class="subjects">
+        <div><span class="ic sm"><svg viewBox="0 0 24 24"><path d="M12 3v18M7 21h10M5 7h14"/><path d="m5 7-3 6a3 3 0 0 0 6 0Z"/><path d="m19 7-3 6a3 3 0 0 0 6 0Z"/></svg></span>Recht</div>
+        <div><span class="ic sm"><svg viewBox="0 0 24 24"><path d="M5 20V11M11 20V5M17 20v-7M3 20h18"/></svg></span>Economie</div>
+        <div><span class="ic sm"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.5 3.5-5 6.5-5s5.7 1.5 6.5 5"/><circle cx="17" cy="9" r="2.5"/><path d="M17 14.5c2.4.3 4 1.8 4.5 4.5"/></svg></span>Sociale Wetenschappen</div>
+        <div><span class="ic sm"><svg viewBox="0 0 24 24"><path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3"/></svg></span>STEM</div>
+        <div><span class="ic sm"><svg viewBox="0 0 24 24"><path d="M2 5h6a4 4 0 0 1 4 4v11a3 3 0 0 0-3-3H2Z"/><path d="M22 5h-6a4 4 0 0 0-4 4v11a3 3 0 0 1 3-3h7Z"/></svg></span>Geestes­wetenschappen</div>
+        <div><span class="ic sm"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 10c0 5.5-7 10-7 10Z"/></svg></span>Gezondheids­wetenschappen</div>
+      </div>
+    </div>
+    <div class="mods">
+      <div class="card"><div class="head"><span class="ic"><svg viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9Z"/><path d="M14 3v6h6"/><path d="M9 16l5-5 2 2-5 5H9Z"/></svg></span><h3>Papers</h3></div><p class="body">Feedback op elke conceptversie, op basis van het beoordelingsformulier, en een cijfervoorstel per criterium op de eindversie.</p></div>
+      <div class="card"><div class="head"><span class="ic"><svg viewBox="0 0 24 24"><path d="M10 6h11M10 12h11M10 18h11"/><path d="m3 6 1.5 1.5L7 5M3 12l1.5 1.5L7 11M3 18l1.5 1.5L7 17"/></svg></span><h3>Tentamens</h3></div><p class="body">Open vragen nakijken tegen jullie correctiemodel. Twijfel wordt gemarkeerd.</p></div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
