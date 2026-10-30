@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="nl"><head><meta charset="utf-8"><title>Folder SURF v2</title>
+<style>
+@font-face{font-family:Spartan;src:url(../../../../Design/Merk/fonts/LeagueSpartan-Bold.ttf);font-weight:700}
+@font-face{font-family:Inter;src:url(../../../../Design/Merk/fonts/Inter-Regular.ttf)}
+:root{--navy:#002333;--green:#00e075;--gdeep:#007b54;--ink700:#2c4a57;--ink500:#5b7480;--ink200:#cdd9de;--ink100:#e7eef0;--ink50:#f3f7f8}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#888;font-family:Inter,sans-serif;color:var(--navy)}
+.sheet{width:297mm;height:210mm;display:flex;background:#fff;margin:0 auto 10mm;position:relative}
+.panel{width:148.5mm;height:210mm;padding:13mm 12mm;position:relative;overflow:hidden;display:flex;flex-direction:column}
+.fold{position:absolute;left:148.5mm;top:0;bottom:0;border-left:1px dashed #cdd9de}
+h1,h2,h3{font-family:Spartan,sans-serif;font-weight:700;letter-spacing:-.01em}
+.logo{height:7mm;width:auto;align-self:flex-start}
+.eyebrow{font-size:8pt;text-transform:uppercase;letter-spacing:.12em;color:var(--ink500);margin-bottom:3mm}
+p{font-size:9pt;line-height:1.5;color:var(--ink700)}
+.check{display:inline-flex;width:4.2mm;height:4.2mm;border-radius:50%;background:var(--green);color:var(--navy);font-size:7pt;align-items:center;justify-content:center;font-weight:700;flex:none}
+/* front */
+.hook{font-size:25pt;line-height:1.05;margin:9mm 0 5mm}
+.headline{font-size:12.5pt;line-height:1.3;margin-bottom:2.5mm}
+.reader{margin-top:6mm;margin-right:-4mm;border:1px solid var(--ink100);border-radius:3mm;box-shadow:0 2mm 6mm rgba(0,35,51,.08);background:#fff;display:flex;flex:1;min-height:0}
+.doc{flex:1.15;padding:5mm 4.5mm;font-size:8pt;line-height:1.6;color:var(--ink700);border-right:1px solid var(--ink100)}
+.doc .t{font-family:Spartan;font-size:9pt;color:var(--navy);margin-bottom:2mm}
+mark{background:rgba(0,224,117,.22);color:var(--navy);padding:0 .5mm;text-decoration:underline;text-decoration-thickness:.35mm;text-underline-offset:.6mm}
+.vb{display:block;margin-bottom:2mm;font-size:8pt;color:var(--ink500);text-transform:uppercase;letter-spacing:.1em}
+.reader,.grade{position:relative}
+.side{flex:1;padding:5mm 4mm;background:var(--ink50);display:flex;flex-direction:column;gap:3mm}
+.cmt{background:#fff;border:1px solid var(--ink100);border-radius:2mm;padding:2.5mm 3mm;font-size:8pt;line-height:1.5;color:var(--ink700)}
+.cmt b{display:block;color:var(--navy);font-size:8pt;margin-bottom:.8mm}
+.ok{display:flex;gap:1.5mm;align-items:center;margin-top:1.5mm;font-size:8pt;color:var(--gdeep)}
+.band{margin:6mm -12mm -13mm;background:var(--navy);color:#fff;padding:5mm 12mm}
+.band .l{font-family:Spartan;font-size:10.5pt;margin-bottom:1.2mm}
+.band .s{font-size:8pt;color:rgba(255,255,255,.7)}
+/* back */
+.outc{display:grid;grid-template-columns:1fr 1fr;gap:6mm;margin-top:6mm}
+.big{font-family:Spartan;font-size:30pt;line-height:1;margin-bottom:2mm}
+.big.s{font-size:15pt;line-height:1.15;margin-bottom:2.5mm}
+.lbl{font-size:8pt;color:var(--ink500);line-height:1.4;margin-top:1.5mm}
+.cust{margin-top:14mm;padding-top:5mm;border-top:1px solid var(--ink100)}
+.cta{margin:auto -12mm -13mm;background:var(--navy);color:#fff;padding:9mm 12mm 7mm}
+.cta h2{font-size:17pt;line-height:1.15;margin-bottom:4mm;max-width:88mm}
+.ctarow{display:flex;justify-content:space-between;align-items:flex-end}
+.qr{width:24mm;height:24mm;background:#fff;border-radius:2mm;display:flex;align-items:center;justify-content:center;color:var(--navy);font-size:7pt;text-align:center}
+.contact{font-size:8.5pt;line-height:1.6;color:#fff}
+.trust{margin-top:6mm;padding-top:3mm;border-top:1px solid rgba(255,255,255,.15);font-size:8pt;line-height:1.5;color:rgba(255,255,255,.65)}
+/* inside */
+.inside h1{font-size:26pt;margin-bottom:12mm}
+.blk{margin-bottom:12mm}
+.blk h3{font-size:14pt;margin-bottom:3mm}
+ul.pts{list-style:none;margin-top:3mm}
+ul.pts li{display:flex;gap:2.5mm;font-size:9.5pt;margin-bottom:4mm;line-height:1.45;color:var(--ink700);margin-bottom:2.5mm}
+ul.pts li b{color:var(--navy)}
+.grade{border:1px solid var(--ink100);border-radius:3mm;box-shadow:0 2mm 6mm rgba(0,35,51,.08);padding:5mm;margin-top:1mm}
+.grade .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:3.5mm}
+.grade .top h4{font-family:Spartan;font-size:9pt}
+.grade .tot{font-family:Spartan;font-size:16pt}
+.crit{border:1px solid var(--ink100);border-radius:2mm;padding:2.6mm 3mm;margin-bottom:2mm}
+.crit .r{display:flex;justify-content:space-between;align-items:center;font-size:9pt;color:var(--navy);margin-bottom:.8mm}
+.pill{border:1px solid var(--gdeep);color:var(--gdeep);border-radius:9mm;padding:.3mm 2mm;font-size:8pt}
+.crit p{font-size:8pt;line-height:1.45}
+.apr{display:flex;gap:1.5mm;align-items:center;font-size:8pt;color:var(--gdeep);margin-top:3mm}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:2mm;margin-top:3mm}
+.tile{border:1px solid var(--ink200);border-radius:2mm;padding:3mm 2.5mm;font-size:7.6pt;font-family:Spartan;text-align:center}
+.strip{margin-top:8mm;display:grid;grid-template-columns:1fr 1fr;gap:5mm;padding-top:4mm;border-top:1px solid var(--ink100)}
+.strip h4{font-family:Spartan;font-size:8.5pt;margin-bottom:1mm}
+.strip p{font-size:8.5pt}
+.tag{position:absolute;top:3mm;font-size:6pt;color:#b26a00;letter-spacing:.05em}
+</style></head><body>
+
+<!-- BUITENKANT: links paneel 4 (achterkant), rechts paneel 1 (voorkant) -->
+<div class="sheet" id="buiten"><div class="fold"></div>
+ <div class="panel">
+  <div class="eyebrow">Wat het oplevert</div>
+  <div class="outc">
+   <div><div class="big s">Elk paper op dezelfde criteria</div>
+    <p>Op jullie rubric, met bij elk criterium de onderbouwing van de score.</p></div>
+   <div><div class="big">2 tot 3 min</div>
+    <p>reviewtijd per inzending voor de docent</p>
+    <div class="lbl">Pilot bij één instelling, juni 2026</div></div>
+  </div>
+  <div class="cust"><div class="eyebrow">Gebruikt door</div>
+   <p style="font-size:9.5pt;color:var(--navy)">Hogeschool Rotterdam · De Haagse Hogeschool · Tilburg University · Radboud Universiteit</p></div>
+  <div class="cta">
+   <h2>Laat één van jullie eigen opdrachten nakijken en leg het cijfer naast dat van jullie docent.</h2>
+   <div class="ctarow">
+    <div class="contact">[Naam]<br>[mail]@eduface.me<br>[telefoon]<br>eduface.me</div>
+    <div class="qr">QR<br>[link]</div>
+   </div>
+   <div class="trust">Data blijft in de EU · Niet getraind op jullie data · Beleid sluit aan op de AVG · Audit trail volgens de AI Act</div>
+  </div>
+ </div>
+ <div class="panel">
+  <img class="logo" src="../../../../Design/Merk/logos/logo_navy.png" alt="Eduface">
+  <h1 class="hook">Twee docenten.<br>Eén paper.<br>Twee verschillende cijfers.</h1>
+  <h2 class="headline">AI stelt een cijfer voor op jullie rubric. De docent beslist.</h2>
+  <p>Per criterium zie je hoe het cijfer is opgebouwd.</p>
+  <div class="reader">
+   <div class="doc"><span class="vb">Voorbeeld</span><div class="t">De rol van de examencommissie bij borging</div>
+    Examencommissies hebben een zwaardere rol gekregen in het borgen van de kwaliteit van toetsing. <mark>In de praktijk controleren commissies vooral achteraf</mark>, terwijl ook sturing vooraf nodig is. <mark>Zonder gedeelde ankerpunten verschuift de cesuur per docent.</mark></div>
+   <div class="side">
+    <div class="cmt"><b>Criterium 2 · Analyse</b>Sterke observatie. Onderbouw met een bron hoe die controle eruitziet.<div class="ok"><span class="check">✓</span>Goedgekeurd door docent</div></div>
+    <div class="cmt"><b>Criterium 3 · Argumentatie</b>Geef een voorbeeld van zo'n ankerpunt.<div class="ok"><span class="check">✓</span>Goedgekeurd door docent</div></div>
+   </div>
+  </div>
+  <div class="band"><div class="l">Werkt in Moodle, Blackboard, Brightspace en Canvas</div><div class="s">Cijfers en feedback gaan automatisch terug naar jullie LMS.</div></div>
+ </div>
+</div>
+
+<!-- BINNENKANT: paneel 2 en 3 -->
+<div class="sheet inside" id="binnen"><div class="fold"></div>
+ <div class="panel">
+  <div class="eyebrow">Zo werkt Eduface</div>
+  <h1>AI stelt voor.<br>De docent beslist.</h1>
+  <div class="blk"><h3>Geen ChatGPT, een eigen model</h3>
+   <p>Een onderwijskundig AI-model, ontwikkeld met hulp van de Universiteit Leiden en de Radboud Universiteit. Getraind op 250.000 voorbeelden van feedback uit het onderwijs.</p></div>
+  <div class="blk"><h3>Elk cijfer is controleerbaar</h3>
+   <ul class="pts">
+    <li><span class="check">✓</span><span><b>Uitleg per criterium.</b> Bij elk criterium uit jullie rubric staat de score, gekoppeld aan de passage in de tekst.</span></li>
+    <li><span class="check">✓</span><span><b>Alles vastgelegd.</b> Bij summatieve toetsen houdt Eduface een audit trail bij volgens de AI Act.</span></li>
+    <li><span class="check">✓</span><span><b>De docent beslist.</b> Een cijfer gaat pas naar de student als de docent het heeft goedgekeurd.</span></li>
+   </ul></div>
+ </div>
+ <div class="panel">
+  <div class="grade"><span class="vb">Voorbeeld</span>
+   <div class="top"><h4>Cijferopbouw · Essay Toetsbeleid</h4><span class="tot">7,0</span></div>
+   <div class="crit"><div class="r">Probleemstelling<span class="pill">8 / 10</span></div><p>Vraag is scherp afgebakend en sluit aan op de opdracht. Zie alinea 1.</p></div>
+   <div class="crit"><div class="r">Analyse<span class="pill">7 / 10</span></div><p>Goede observatie over controle achteraf, onderbouwing met bronnen ontbreekt. Zie alinea 2.</p></div>
+   <div class="crit"><div class="r">Argumentatie<span class="pill">6 / 10</span></div><p>Conclusie volgt niet volledig uit het betoog. Zie alinea 4.</p></div>
+   <div class="apr"><span class="check">✓</span>Voorstel bekeken en goedgekeurd door docent</div>
+  </div>
+  <div class="blk" style="margin-top:7mm;margin-bottom:0"><h3>Zes vakmodellen, geen generiek model</h3>
+   <p>Je kiest het vakgebied, en het model kent de manier van redeneren en de bronconventies die daarbij horen.</p>
+   <div class="tiles"><div class="tile">Recht</div><div class="tile">Economie</div><div class="tile">Sociale Wetenschappen</div><div class="tile">STEM</div><div class="tile">Geestes&shy;wetenschappen</div><div class="tile">Gezondheids&shy;wetenschappen</div></div></div>
+  <div class="strip">
+   <div><h4>Papers</h4><p>Feedback op elke conceptversie, en een cijfervoorstel per criterium op de eindversie.</p></div>
+   <div><h4>Tentamens</h4><p>Open en gesloten antwoorden nakijken op schaal, per criterium tegen het correctiemodel. Waar het model onzeker is, markeert het dat. Na goedkeuring gaat het cijfer naar het LMS.</p></div>
+  </div>
+ </div>
+</div>
+</body></html>
