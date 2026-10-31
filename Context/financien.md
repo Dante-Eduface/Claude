@@ -77,7 +77,22 @@ Salaris oktober 2.146,82 binnen op 28-10. De zorgpremie voor november (129,45) i
 - **Zorgpotje: 129 eruit op 21-10 om de NS-rekening van 167,60 te betalen.** Dat was het plan, en het werkte. Maar hij is nooit teruggestort, en de novemberpremie ging op 30-10 alsnog goed omdat het salaris twee dagen eerder binnenkwam. Dat was timing, geen buffer. Het potje staat nu op 0,30.
 - **Curaçao: 160 eruit tussen 18 en 27 oktober**, in zes stukjes met omschrijvingen als boodschappen, ei, friet voor de fam, eerste Picnic-bestelling en broek laten maken. Dat is precies het patroon van augustus en september: het potje wordt de boodschappenpot zodra de rekening krap staat.
 
-**Curaçao staat op 237,85 van de 1.700.** Nog 1.462 te gaan voor 26 januari. Over november, december en januari is dat 487 per maand, tegen de 434 van een maand geleden.
+### 31-10-2026: potjes bijgevuld uit het oktobersalaris
+
+Dante heeft 129,45 naar het zorgpotje gezet en 700 naar Curaçao.
+
+| Pot | Nu |
+|---|---|
+| Betaalrekening | 1.192,60 |
+| Curaçao | 937,85 |
+| Zorgverzekering | 129,75 |
+| Savings | 0,25 |
+
+Curaçao staat daarmee op 937,85 van de 1.700, dus nog **762,15** te gaan.
+
+**Let op de timing: het januarisalaris komt ná het vertrek.** Het salaris valt rond de 28e van de maand (01-07, 03-08, 28-09, 28-10) en de reis is op 26-01-2027. Het salaris van januari landt dus twee dagen te laat. **Er zijn nog precies twee salarismomenten voor de reis: eind november en eind december.** Dat is 381 per keer, en er is geen inhaalmaand meer. Mist hij er een, dan is het gat niet meer te dichten voor vertrek.
+
+Voor november houdt hij 1.192,60 over, plus ongeveer 130 zorgtoeslag rond de 20e. Tegenover een oktoberverbruik van 1.062 is dat marge.
 
 ### Stand 08-10-2026, afgehandeld
 
