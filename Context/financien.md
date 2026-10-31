@@ -4,7 +4,7 @@
 >
 > **Kijk vooruit, niet achteruit.** Dante op 19-09-2026: *"ik wil dat je niet zo bezig bent met het verleden, de situatie is heel anders."* De historische uitgavenanalyse uit de afschriften is daarom hier niet overgenomen. Gebruik dit bestand voor waar hij naartoe gaat, niet voor wat hij vorig jaar uitgaf.
 
-_Laatst bijgewerkt: 11-10-2026. Bron: Dante zelf, plus zijn ABN-afschriften._
+_Laatst bijgewerkt: 31-10-2026. Bron: Dante zelf, plus zijn ABN-afschriften._
 
 ## Wat er binnenkomt
 
@@ -58,7 +58,28 @@ Het vermogen zakte van ongeveer 1.220 naar 1.041,58. Daarvan is 129,45 de tweede
 
 Waarom die augustus-incasso niet liep valt niet uit de afschriften te lezen, maar eind augustus en heel september stond er zelden meer dan 30 euro op de betaalrekening. Dat is precies waar het zorgpotje nu voor dient.
 
-### Stand 08-10-2026: NS van 167 is nog niet afgeschreven
+### Oktober afgesloten, stand per 30-10-2026
+
+| Pot | Stand |
+|---|---|
+| Betaalrekening | 2.022,05 |
+| Curaçao | 237,85 |
+| Zorgverzekering | 0,30 |
+| Savings (uit huis) | 0,25 |
+| **Totaal** | **2.260,45** |
+
+Salaris oktober 2.146,82 binnen op 28-10. De zorgpremie voor november (129,45) is er op 30-10 al af.
+
+**Wat oktober echt kostte: 1.062,45.** Vaste lasten 309 (premie 129, huur aan zijn moeder 148 in twee delen, Trainmore 31), reizen 186 (NS 167,60 plus klein vervoer), boodschappen 386, overig 182 waaronder 60 contant voor de kapper. Dat is een krappe maand geweest, want van 5 tot 28 oktober stond er zelden meer dan 130 op de rekening. Behandel 1.062 dus als ondergrens, niet als normaal.
+
+**Beide potjes zijn in oktober aangebroken.**
+
+- **Zorgpotje: 129 eruit op 21-10 om de NS-rekening van 167,60 te betalen.** Dat was het plan, en het werkte. Maar hij is nooit teruggestort, en de novemberpremie ging op 30-10 alsnog goed omdat het salaris twee dagen eerder binnenkwam. Dat was timing, geen buffer. Het potje staat nu op 0,30.
+- **Curaçao: 160 eruit tussen 18 en 27 oktober**, in zes stukjes met omschrijvingen als boodschappen, ei, friet voor de fam, eerste Picnic-bestelling en broek laten maken. Dat is precies het patroon van augustus en september: het potje wordt de boodschappenpot zodra de rekening krap staat.
+
+**Curaçao staat op 237,85 van de 1.700.** Nog 1.462 te gaan voor 26 januari. Over november, december en januari is dat 487 per maand, tegen de 434 van een maand geleden.
+
+### Stand 08-10-2026, afgehandeld
 
 Uit het MT940 van 10-10-2026. Betaalrekening **160,63** per 08-10, Curaçao 397,85, Zorgverzekering 129,30, Savings 0,25. Samen **688,03**.
 
