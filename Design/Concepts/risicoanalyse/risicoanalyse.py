@@ -21,28 +21,21 @@ page(MAP, '7-risicoanalyse', f'''
 <p class="lead">Welke risico's instellingen benoemen bij het gebruik van Eduface en welke maatregelen ze nemen, op basis van onze samenwerkingen en hun DPIA's.</p>
 <div class="stack" style="margin-top:8mm">
 ''' + risk('Persoonsgegevens in opdrachten', [
-    'Verwerkersovereenkomst over persoonsgegevens.',
-    'Alleen betrokken docenten zien de opdrachten.',
-    'Inzendingen worden niet onderling vergeleken.'], 'Laag')
+    'Verwerkersovereenkomst over persoonsgegevens.'], 'Laag')
 + risk('Onjuiste of eenzijdige feedback', [
     'Docent is eindverantwoordelijk en past alles aan.',
     'Training voor docenten in het werken met Eduface.',
     'Tweede beoordeling of moderatie waar nodig.'], 'Laag')
 + risk('Gebruik voor andere doelen', [
     'Opdrachten worden niet gebruikt voor training.',
-    'Geen verzameling van inzendingen.',
-    'Vastgelegd in de licentieovereenkomst.'], 'Laag')
+    'Geen verzameling van inzendingen.'], 'Laag')
 + risk('Verwerking buiten de EU', [
     'Alle opslag en verwerking binnen de EER.',
-    'Geen doorgifte naar landen buiten de EER.',
-    'Vastgelegd in de verwerkersovereenkomst.'], 'Laag')
+    'Geen doorgifte naar landen buiten de EER.'], 'Laag')
 + risk('Datalek of onvoldoende beveiliging', [
     'Versleuteld opgeslagen en verzonden, in de EU.',
-    'Een datalek wordt binnen 48 uur gemeld.',
     'Beveiligingscheck door eigen IT vooraf.'], 'Laag')
 + risk('Nieuwe AI-wetgeving', [
     'AI Act: hoog risico, verplichtingen vanaf eind 2027.',
-    'Menselijke controle op elke beoordeling.',
-    'AI-geletterdheid docenten, verplicht sinds feb. 2025.',
-    'Documentatie en ondersteuning vanuit Eduface.'], 'Laag tot middel', 'secondary')
+    'AI-geletterdheid docenten, verplicht sinds feb. 2025.'], 'Laag tot middel', 'secondary')
 + '\n</div>')
