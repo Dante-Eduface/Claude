@@ -41,6 +41,7 @@ Nergens een andere maat. Een titel is overal even groot, ook als de kaart minder
 ## Pptx
 - Altijd bewerkbare tekstvakken, nooit platte plaatjes van de pagina. Iconen en poppetjes zijn plaatjes.
 - Tekstvakken nooit laten krimpen en nooit voorbij de marge laten lopen; korte regels krijgen wat speling omdat fontbreedte per programma verschilt.
+- Zet een titel nooit naast iets dat eronder vastzit (meter, label). Andere programma's tonen League Spartan breder, dan breekt de titel een regel extra af en schuift hij eroverheen. Titel op een eigen regel over de volle breedte (gecorrigeerd 01-11-2026, risicoanalyse).
 - Geen schaduwen (het standaardthema zet ze anders onder elk vlak).
 - Paginanummer rechtsonder, logo instelling linksonder.
 - Werkt het best in Canva; daar zitten League Spartan en Inter standaard in.

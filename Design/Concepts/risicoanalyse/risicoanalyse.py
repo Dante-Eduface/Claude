@@ -14,7 +14,7 @@ def meter(niveau):
     return '<div class="meter">' + ''.join(f'<i class="{c}">{"<b></b>" if c == "half" else ""}</i>' for c in stappen) + f'<span>Restrisico {niveau.lower()}</span></div>'
 
 def risk(titel, maatregelen, niveau, soort='tertiary'):
-    return f'<section class="risk {soort}"><div><h2>{titel}</h2>{meter(niveau)}</div>{lst(maatregelen)}</section>'
+    return f'<section class="risk {soort}"><h2>{titel}</h2><div class="risk-body">{meter(niveau)}{lst(maatregelen)}</div></section>'
 
 page(MAP, '7-risicoanalyse', f'''
 <h1>Risicoanalyse</h1>
