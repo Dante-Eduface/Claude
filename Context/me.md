@@ -1,6 +1,6 @@
 # Dante
 
-_Laatst bijgewerkt: 2026-09-20._
+_Laatst bijgewerkt: 2026-11-01._
 
 - **Naam:** Dante Torbed
 - **Geboren:** 17-08-2006. Leeftijd zelf uitrekenen tegen de datum van vandaag, nooit een getal hier neerzetten. (Op 19-09-2026: 20.)
@@ -39,7 +39,7 @@ Bijgewerkt 19-09-2026, uit zijn eigen woorden.
 - **De functiewisseling naar CSM veranderde niets aan zijn werkdag.** Alleen zijn titel op LinkedIn is aangepast. Behandel zijn werk dus niet als iets nieuws.
 - **Een dag gaat mis bij het eten, niet bij de planning.** Zijn eigen antwoord op waar het op stuk loopt: *"een dag gaat vooral mis als ik ongezond begin te eten."* Dat is het eerste om naar te kijken als een dag ontspoort, niet zijn takenlijst.
 - **Over een slechte week heeft hij nog niet nagedacht.** Niet zelf invullen.
-- **Eduface is zijn thuis.** Hij blijft, en denkt niet in exitscenario's of een eigen startup. Dat is voor nu geen open vraag maar een gepasseerd station.
+- **Hij wil later zelf founder worden** (01-11-2026). Dat vervangt de notitie van 19-09-2026 dat een eigen startup een gepasseerd station was. Wanneer, en hoe dat zich tot Eduface verhoudt, is open: zie P12 in `Context/open-vragen.md`. De prioriteit in `Context/current-priorities.md` blijft staan.
 
 Zijn leidende maat is **uren deep work**, met een voorstel om die te verschuiven naar geboekte eerste gesprekken per week. De redenering, het schema en het plafond staan in `Context/deep-work.md`.
 

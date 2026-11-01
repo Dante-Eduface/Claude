@@ -4,14 +4,14 @@
 >
 > **Niets invullen wat je kunt navragen.** Alles wat open is staat in `Context/open-vragen.md`.
 
-_Laatst bijgewerkt: 20-09-2026, na twee rondes antwoorden van Dante zelf._
+_Laatst bijgewerkt: 01-11-2026._
 
 ## Basis
 
 - Geboren 17-08-2006, woont in Leiden. Het kantoor is naar Utrecht verhuisd, hij niet. Verhuist waarschijnlijk zelf naar Utrecht of Rotterdam.
 - MBO-4 diploma behaald, Business Administration / Control Specialist. Daarna een startup in, die ging dicht, daarna Eduface.
 - Werkt bij Eduface als Customer Success Manager. Zie `Context/eduface.md`.
-- **Eduface is zijn thuis.** Hij blijft, en denkt niet in exitscenario's, een eigen startup of een route naar oprichter. Die vragen zijn op 19-09-2026 geschrapt, niet uitgesteld.
+- **Hij wil later zelf founder worden** (01-11-2026, vervangt de notitie van 19-09-2026). Wanneer en hoe zich dat tot Eduface verhoudt: OPEN, zie P12 in `Context/open-vragen.md`.
 - **Geen lange-termijndoelen, bewust niet.** Eén prioriteit, het hele jaar. Niet invullen en niet naar vragen.
 - Nu alleen. Zijn eigen woorden: het alleen zijn gaat hem niet makkelijk af, maar het levert veel tijd op om te focussen en daar is hij oké mee.
 
@@ -86,7 +86,6 @@ Boodschappen blijven bewust op zaterdag, een dag voor het koken. Zie `Context/de
 Op 19-09-2026 door hemzelf geparkeerd. Niet voorstellen, niet inplannen, niet naar vragen tot hij er zelf over begint:
 
 - **Spaans.**
-- Een eigen startup, een route naar oprichter, en elk exitscenario voor Eduface.
 - Een salarisgesprek of een pad naar CRO. Hij wil er niet over nadenken of praten. Niet opnieuw opbrengen.
 
 ## Wat open staat
