@@ -54,13 +54,14 @@ page(MAP, '3-kosten', f'''
 <div class="stack">
   <section class="card primary">
     <div class="num">€ 3,75</div>
-    <p class="desc">per student per maand* · exclusief btw</p>
+    <p class="desc">per student** per maand* · exclusief btw</p>
     <div class="panel">
       <div class="strong">Hoe meer studenten, hoe lager de prijs per student</div>
       <div class="small">Prijs per student per maand</div>
       <div class="hbars">{hbar("Tot en met 400", 100, "€ 3,75", on=True)}{hbar("Meer dan 400", 80, "€ 3,00")}</div>
     </div>
     <p class="small" style="margin-top:4mm">* Minimaal € 1.500 per maand, dat dekt de eerste 400 studenten.</p>
+    <p class="small" style="margin-top:1mm">** Het aantal actieve studenten houden we bij in NEO LMS.</p>
   </section>
 </div>''')
 
@@ -100,8 +101,7 @@ page(MAP, '5-kwaliteit', f'''
     {route("Tweeogenprincipe: een docent ertussen", [("upload","Inleveren"),("spark","Eduface"),("edit","Docent"),("grad","Student")])}
     {route("Vierogenprincipe: standaard bij de thesis", [("upload","Inleveren"),("spark","Eduface"),("edit","Beoordelaar 1"),("edit","Beoordelaar 2"),("grad","Student")])}
     <div class="strong" style="margin-top:4mm">Zo werkt het vierogenprincipe in Eduface</div>
-    <div class="duo" style="gap:0 6mm">{lst(["Twee of drie beoordelaars kijken los van elkaar na.","Externe beoordelaars zien alleen hun opdrachten."])}{lst(["De moduleleider ziet wie wat beoordeelt en leest mee.","De moduleleider kiest of eerdere feedback zichtbaar is."])}</div>
-    <p class="small" style="margin-top:1mm">Verschillende instellingen gebruiken Eduface op deze manier.</p>
+    <div class="duo" style="gap:0 6mm">{lst(["Twee of drie beoordelaars kijken los van elkaar na."])}{lst(["De moduleleider ziet wie wat beoordeelt en leest mee."])}</div>
   </section>
 </div>''')
 
