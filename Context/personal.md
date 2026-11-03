@@ -4,7 +4,7 @@
 >
 > **Niets invullen wat je kunt navragen.** Alles wat open is staat in `Context/open-vragen.md`.
 
-_Laatst bijgewerkt: 20-09-2026, na twee rondes antwoorden van Dante zelf._
+_Laatst bijgewerkt: 03-11-2026._
 
 ## Basis
 
@@ -18,6 +18,8 @@ _Laatst bijgewerkt: 20-09-2026, na twee rondes antwoorden van Dante zelf._
 ## Sport en lichaam
 
 Gestopt met American football (Düsseldorf Panthers, nickel). Daarmee vervallen de reizen van drie keer per week naar Düsseldorf. **Er komt geen competitieve sport voor in de plaats.**
+
+Op 03-11-2026 benaderde Coach Schacht hem over volgend seizoen. Dante gaat het gesprek aan om te horen wat er geboden wordt, maar is niet van plan terug te gaan: hij wil "lock in blijven in het creëren van een mooi leven".
 
 ### Wat hij wil, en wat hij niet wil
 

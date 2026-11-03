@@ -34,7 +34,6 @@ De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat 
 | V11 | Werkt alles in de browser zonder lokale installatie, kunnen functies per instelling aan en uit, wat moet een instelling technisch inrichten (LMS-koppeling, SSO, accountbeheer), en kunnen studenten zelf verwijderen? | Staat geel in `GTM/Knowledge/privacy-vragenlijsten/antwoorden-privacy-it-vragen-2026-10-02.docx`. | 02-10-2026 |
 | V12 | Continuïteit van het bedrijf zelf (financiering, team, exit- of escrowregeling) en het aantal getekende verwerkersovereenkomsten met Nederlandse instellingen. | Zelfde vragenlijst, vraag 9 en 12. | 02-10-2026 |
 | W6 | Heeft Eduface naast Utrecht ook een kantoor in Leiden? Dante schreef op 02-11-2026 over reizen "van ons kantoor in Utrecht naar dat in Leiden". | `Context/me.md` en `Context/eduface.md` noemen alleen Utrecht. Niet zelf invullen. | 02-11-2026 |
-| P12 | Overweeg je volgend jaar weer competitief te spelen? Op 03-11-2026 schreef je aan Coach Schacht dat je "some teams I could go play for next year" hebt. | Hier staat nog: gestopt met American football, geen competitieve sport naast de gym. Niet zelf invullen. | 03-11-2026 |
 
 ## Later, geen vraag maar een richting
 
@@ -96,6 +95,7 @@ Blijft staan zodat zichtbaar is wat er al gevraagd is. Alles hieronder is op 19-
 | Hoeveel zet je automatisch opzij? | Niets automatisch, hij doet het met de hand. | `Context/financien.md` |
 | Verhuis je zelf naar Utrecht? | Nog niet. Kantoor is verhuisd, hij woont in Leiden. | `Context/me.md` |
 | Stop je met American football? | Gestopt. | `Context/personal.md` |
+| Weer competitief spelen volgend jaar? (P12, 03-11-2026) | Nee. Gaat het gesprek met Coach Schacht wel aan om te horen wat er geboden wordt, maar blijft gefocust. | `Context/personal.md` |
 | De relatievragen. | Geschrapt op zijn verzoek. Niet meer opbrengen. | geschrapt |
 | Heb je een rustdag nodig bij 7 dagen deep work? | Nee, mits de dagelijkse grens en het afsluitritueel echt zijn. Newport schrijft geen rustdag voor, wel een harde eindtijd. | `Context/deep-work.md` |
 | De trein tegen blok 1? | Opgelost. Hij pakt nu de trein van 05:53 en staat om 05:00 op. | `Context/deep-work.md` |
