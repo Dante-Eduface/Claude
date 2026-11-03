@@ -24,6 +24,8 @@ const pages = process.argv.slice(2);
         if (el.closest('svg') && el.tagName !== 'svg') continue;
         const cs = getComputedStyle(el), r = box(el);
         if (r.w === 0 || r.h === 0 || cs.display === 'none') continue;
+        // Afbeeldingen (logo's, productbeeld) gaan als plaatje mee
+        if (el.tagName === 'IMG') { items.push({k:'img', ...r, file: decodeURIComponent(new URL(el.src).pathname)}); continue; }
         if (el.tagName === 'svg') { svgs.push({...r, idx: svgs.length}); el.dataset.svgIdx = svgs.length-1; items.push({k:'svg', ...r, idx: svgs.length-1}); continue; }
         const bg = col(cs.backgroundColor), bw = parseFloat(cs.borderTopWidth), bc = col(cs.borderTopColor);
         const bl = parseFloat(cs.borderLeftWidth), blc = col(cs.borderLeftColor);

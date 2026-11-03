@@ -43,7 +43,7 @@ for pg in json.load(open(LAYOUT)):
             if shp == MSO_SHAPE.ROUNDED_RECTANGLE:
                 sh.adjustments[0] = min(0.5, it['r'] / min(it['w'], it['h']))
             sh.text_frame.text = ''
-        elif it['k'] == 'svg':
+        elif it['k'] in ('svg', 'img'):
             s.shapes.add_picture(it['file'], E(it['x']), E(it['y']), E(it['w']), E(it['h']))
         else:
             # Lopende tekst houdt de breedte van zijn blok, zodat hij binnen de marges afbreekt.

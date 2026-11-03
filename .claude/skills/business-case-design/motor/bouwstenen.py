@@ -89,3 +89,7 @@ def meter(niveau):
 def risk(titel, maatregelen, niveau, soort='tertiary'):
     """Risico-rij: titel over de volle breedte, daaronder meter en maatregelen."""
     return f'<section class="risk {soort}"><h2>{titel}</h2><div class="risk-body">{meter(niveau)}{lst(maatregelen)}</div></section>'
+
+def todo(tekst, label='Open punt'):
+    """Geel blok voor iets dat de champion nog moet aanvullen of waar meer duidelijkheid over moet komen."""
+    return f'<div class="todo"><b>{label}</b>{tekst}</div>'

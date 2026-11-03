@@ -26,4 +26,4 @@ Lopende deal. Businesscase in A4-vorm, gebouwd met de skill `/business-case-desi
 - Vervolgstappen: testen met docenten, training, hoe ze zien dat het werkt.
 
 ## Volgende stap
-Versie met elf pagina's gebouwd (03-11-2026). Open: casestudy Hogeschool Rotterdam (Dante levert), productbeeld van het dashboard, go-live-plan voor Vervolgstappen.
+Versie met elf pagina's gebouwd (03-11-2026). Bijgewerkt met de casestudy BDK en het nagebouwde NEO-scherm. Gaat eerst naar Marjolein, met gele open punten: de € 37.000 bij de controller navragen, onze ervaring met het vierogenprincipe (volgt van Eduface), en welke docenten en modules mee kunnen testen. Go-live-plan voor Vervolgstappen volgt.

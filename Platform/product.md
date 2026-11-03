@@ -68,7 +68,7 @@ Eduface voldoet aan de AI Act (Dante, 2026-09-08).
 ## Bewijs dat je mag noemen
 
 - **Betaalde klanten (gebruiken het model, mag je zo noemen):** Hogeschool Rotterdam, De Haagse Hogeschool, Tilburg University, Radboud Universiteit.
-- **Waar het draait, wees precies:** bij Hogeschool Rotterdam draait Eduface bij de **lerarenopleiding**. Claim nooit dat het bij een andere opleiding van die klant draait dan waar het echt draait. Zegt "daar" of een programmanaam per ongeluk deployment op de verkeerde plek, dan is dat een verzonnen productclaim (Irma-geval, 2026-07-24).
+- **Waar het draait, wees precies:** bij Hogeschool Rotterdam draait Eduface bij de **lerarenopleiding**. Daarnaast liep er een **pilot bij Bedrijfskunde (BDK, Rotterdam Business School)**: formatieve feedback op teamrapporten van 20+ pagina's, 79% van de studenten positief of neutraal. Bron: casestudy-concept van Dante, 03-11-2026. Claim nooit dat het bij een andere opleiding van die klant draait dan waar het echt draait. Zegt "daar" of een programmanaam per ongeluk deployment op de verkeerde plek, dan is dat een verzonnen productclaim (Irma-geval, 2026-07-24).
 - **Bouwden mee aan het model:** Universiteit Leiden, Radboud Universiteit.
 - **TIO Business School en ICM Opleidingen mogen NOOIT genoemd worden** (Dante, 02-09-2026). Dit draait de herziening van 21-08-2026 terug, die ze juist wel toestond bij particuliere opleiders. Geldt overal: mail, LinkedIn, belscript, deck. Er is dus geen aparte klantenlijst meer voor particuliere opleiders; overal gelden Hogeschool Rotterdam, De Haagse Hogeschool en Tilburg University.
 

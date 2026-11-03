@@ -19,6 +19,7 @@ Vastgelegd 29-10-2026, uit Dantes feedback tijdens het Academica-voorstel. Alles
 - Donkerblauw `#000326` is **accent**: tekst, iconentegels, de balk waar het om gaat, en de achtergrond van donkere pagina's. Nooit als groot vlak op een witte pagina.
 - Verder alleen lichtere varianten van dat blauw en wit.
 - **Geen rood, groen of oranje.** Ook niet om een afwijking te markeren: gebruik donker tegenover licht, vet tegenover normaal.
+- **Eén uitzondering: open punten.** Gaat het document eerst naar de champion, dan krijgt alles wat zij nog moet aanvullen of waar meer duidelijkheid over moet komen een geel blok (`todo()` in `motor/bouwstenen.py`). Zo valt het meteen op (Dante, 03-11-2026).
 - Logo's van instellingen houden hun eigen kleuren. Op een donkere pagina staat het logo op een wit vlak.
 
 ## Typografie (vast, staat in `motor/style.css`)
