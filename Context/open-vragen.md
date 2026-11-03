@@ -1,6 +1,6 @@
 # Open vragen
 
-_Aangelegd 19-09-2026, bijgewerkt 02-11-2026._
+_Aangelegd 19-09-2026, bijgewerkt 03-11-2026._
 
 De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat is een vraag die ik **niet zelf mag invullen**.
 
@@ -34,6 +34,7 @@ De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat 
 | V11 | Werkt alles in de browser zonder lokale installatie, kunnen functies per instelling aan en uit, wat moet een instelling technisch inrichten (LMS-koppeling, SSO, accountbeheer), en kunnen studenten zelf verwijderen? | Staat geel in `GTM/Knowledge/privacy-vragenlijsten/antwoorden-privacy-it-vragen-2026-10-02.docx`. | 02-10-2026 |
 | V12 | Continuïteit van het bedrijf zelf (financiering, team, exit- of escrowregeling) en het aantal getekende verwerkersovereenkomsten met Nederlandse instellingen. | Zelfde vragenlijst, vraag 9 en 12. | 02-10-2026 |
 | W6 | Heeft Eduface naast Utrecht ook een kantoor in Leiden? Dante schreef op 02-11-2026 over reizen "van ons kantoor in Utrecht naar dat in Leiden". | `Context/me.md` en `Context/eduface.md` noemen alleen Utrecht. Niet zelf invullen. | 02-11-2026 |
+| P12 | Overweeg je volgend jaar weer competitief te spelen? Op 03-11-2026 schreef je aan Coach Schacht dat je "some teams I could go play for next year" hebt. | Hier staat nog: gestopt met American football, geen competitieve sport naast de gym. Niet zelf invullen. | 03-11-2026 |
 
 ## Later, geen vraag maar een richting
 
