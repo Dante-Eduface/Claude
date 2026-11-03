@@ -2,6 +2,17 @@
 import os, re, shutil
 
 IC = {
+ 'monitor':'<rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/>',
+ 'upload':'<path d="M12 16V4M7 9l5-5 5 5"/><path d="M4 16v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/>',
+ 'spark':'<path d="M12 3l2.2 5.8L20 11l-5.8 2.2L12 19l-2.2-5.8L4 11l5.8-2.2z"/>',
+ 'edit':'<path d="M4 20h4L19 9l-4-4L4 16z"/><path d="m13.5 6.5 4 4"/>',
+ 'return':'<path d="M9 14 4 9l5-5"/><path d="M4 9h11a5 5 0 0 1 0 10h-3"/>',
+ 'bell':'<path d="M6 16V11a6 6 0 0 1 12 0v5l2 2H4z"/><path d="M10 20a2 2 0 0 0 4 0"/>',
+ 'eye':'<path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>',
+ 'flag':'<path d="M5 21V4h11l-2 4 2 4H5"/>',
+ 'grad':'<path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2 9 2 12 0v-5"/>',
+ 'clock':'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+ 'rocket':'<path d="M5 15c-1.5 1.5-2 5-2 5s3.5-.5 5-2"/><path d="M9 15l-2-2c1-5 5-9 12-10-1 7-5 11-10 12z"/><circle cx="14.5" cy="9.5" r="1.5"/>',
  'scale':'<path d="M12 3v18M7 21h10M5 7h14M5 7l-3 7a3 3 0 0 0 6 0zM19 7l-3 7a3 3 0 0 0 6 0z"/>',
  'doc':'<path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/>',
  'shield':'<path d="M12 3 5 6v6c0 4 3 7 7 9 4-2 7-5 7-9V6z"/><path d="m9 12 2 2 4-4"/>',
@@ -57,3 +68,24 @@ def item(k, t):
 def lst(items):
     """Lijst met vinkjes."""
     return '<ul class="list">' + ''.join(f'<li>{CHECK}<span>{t}</span></li>' for t in items) + '</ul>'
+
+ARROW = '<span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>'
+
+def flow(steps, compact=False):
+    """Stappen naast elkaar met pijlen: [(icoon of None, tekst), ...]."""
+    cells = [f'<div class="step">{icon(k) if k else ""}<div class="strong">{t}</div></div>' for k, t in steps]
+    return f'<div class="flow{" compact" if compact else ""}">' + ARROW.join(cells) + '</div>'
+
+def placeholder(tekst, hoogte_mm=40):
+    """Vlak voor een productbeeld of inhoud die nog volgt. Meerdere regels als lijst: elke regel een eigen blok, want een <br> overleeft de pptx niet."""
+    regels = tekst if isinstance(tekst, list) else [tekst]
+    return f'<div class="ph" style="height:{hoogte_mm}mm"><div>' + ''.join(f'<div>{r}</div>' for r in regels) + '</div></div>'
+
+def meter(niveau):
+    """Restrisico in drie stappen: laag, middel, hoog. 'Laag tot middel' vult de tweede half."""
+    stappen = {'Laag': ['on', '', ''], 'Laag tot middel': ['on', 'half', ''], 'Middel': ['on', 'on', '']}[niveau]
+    return '<div class="meter">' + ''.join(f'<i class="{c}">{"<b></b>" if c == "half" else ""}</i>' for c in stappen) + f'<span>Restrisico {niveau.lower()}</span></div>'
+
+def risk(titel, maatregelen, niveau, soort='tertiary'):
+    """Risico-rij: titel over de volle breedte, daaronder meter en maatregelen."""
+    return f'<section class="risk {soort}"><h2>{titel}</h2><div class="risk-body">{meter(niveau)}{lst(maatregelen)}</div></section>'

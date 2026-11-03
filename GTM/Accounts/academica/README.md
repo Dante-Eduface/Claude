@@ -3,7 +3,7 @@
 _Laatst bijgewerkt: 2026-11-03._
 
 ## Wat is dit
-Lopende deal. Businesscase in A4-vorm, gebouwd met de skill `/business-case-design`. Pagina's en pptx staan voorlopig in `Design/Concepts/document/` en `Design/Concepts/risicoanalyse/`. Dealstand en eigenaar: Close.
+Lopende deal. Businesscase in A4-vorm, gebouwd met de skill `/business-case-design`: `Design/Concepts/academica-voorstel/` (elf pagina's, versie 03-11-2026). Dealstand en eigenaar: Close.
 
 ## Wie
 - **Marjolein Looij**: champion, gaf op 03-11-2026 feedback op de businesscase.
@@ -26,4 +26,4 @@ Lopende deal. Businesscase in A4-vorm, gebouwd met de skill `/business-case-desi
 - Vervolgstappen: testen met docenten, training, hoe ze zien dat het werkt.
 
 ## Volgende stap
-Suggesties voor de nieuwe pagina's liggen bij Dante (03-11-2026).
+Versie met elf pagina's gebouwd (03-11-2026). Open: casestudy Hogeschool Rotterdam (Dante levert), productbeeld van het dashboard, go-live-plan voor Vervolgstappen.

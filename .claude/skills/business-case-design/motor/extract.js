@@ -27,7 +27,8 @@ const pages = process.argv.slice(2);
         if (el.tagName === 'svg') { svgs.push({...r, idx: svgs.length}); el.dataset.svgIdx = svgs.length-1; items.push({k:'svg', ...r, idx: svgs.length-1}); continue; }
         const bg = col(cs.backgroundColor), bw = parseFloat(cs.borderTopWidth), bc = col(cs.borderTopColor);
         const bl = parseFloat(cs.borderLeftWidth), blc = col(cs.borderLeftColor);
-        const rad = parseFloat(cs.borderTopLeftRadius) || 0;
+        // Een straal in procenten (50% = cirkel) omrekenen naar pixels
+        const rr = cs.borderTopLeftRadius; const rad = rr.endsWith('%') ? parseFloat(rr) / 100 * Math.min(r.w, r.h) : (parseFloat(rr) || 0);
         const sides = ['Top','Right','Bottom','Left'].map(k => parseFloat(cs['border'+k+'Width']));
         const full = sides.every(v => v > 0) && bc;
         if (bg || full) items.push({k:'rect', ...r, fill: bg, line: full ? bc : null, lw: full ? bw : 0, r: rad});
