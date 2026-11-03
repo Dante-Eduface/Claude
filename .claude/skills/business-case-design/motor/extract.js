@@ -51,16 +51,18 @@ const pages = process.argv.slice(2);
         walk(el, el);
         const range = document.createRange(); range.selectNodeContents(el); const tr = range.getBoundingClientRect();
         const lh = parseFloat(cs.lineHeight) || parseFloat(cs.fontSize) * 1.2;
-        items.push({k:'text', x: tr.left, y: tr.top, w: Math.max(tr.width, 1), h: tr.height, blockW: r.w, runs,
+        items.push({k:'text', x: tr.left, y: tr.top, w: Math.max(tr.width, 1), h: tr.height, blockW: r.w - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight), runs,
                     align: cs.textAlign === 'right' ? 'right' : cs.textAlign === 'center' ? 'center' : 'left', lh,
                     ls: parseFloat(cs.letterSpacing) || 0});
       }
       return {items, svgs, dark: document.body.classList.contains('dark')};
     });
     for (const s of data.svgs) {
-      const el = (await p.$$('svg'))[s.idx];
+      // Op het merkteken zoeken, niet op volgorde: onzichtbare svg's tellen anders mee en schuift alles op
+      const el = await p.$(`svg[data-svg-idx="${s.idx}"]`);
       const f = `svg-${i}-${s.idx}.png`;
-      await el.screenshot({path: f, omitBackground: true});
+      try { await el.screenshot({path: f, omitBackground: true, timeout: 3000}); }
+      catch { await p.screenshot({path: f, omitBackground: true, clip: {x: s.x, y: s.y, width: s.w, height: s.h}}); }
       s.file = f;
     }
     data.items.forEach(it => { if (it.k === 'svg') it.file = data.svgs[it.idx].file; });
