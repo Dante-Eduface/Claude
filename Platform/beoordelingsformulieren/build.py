@@ -46,11 +46,22 @@ FORMULIEREN = [
         "bron": "criteria-ma-earn-out.md",
         "basis": "beoordelingsformulier-ma-earn-out",
         "titel": "Beoordelingsformulier Mergers & Acquisitions: earn-outs",
-        "ondertitel": "Analytisch essay, bachelor/master Economie · oefenformulier",
-        "kopvelden": ["Naam student", "Studentnummer", "Beoordelaar", "Datum"],
+        "ondertitel": None,
+        "kopvelden": [],
         "oordeelkop": "Voldoende / Onvoldoende",
         "oordeelbreedte": 0.24,
         "rijhoogte_cm": None,
+        "slotvelden": ["Eindresultaat", "Feedback"],
+    },
+    {
+        # Zelfde bron, maar met per criterium de Voldoende- en Onvoldoende-beschrijving
+        # in plaats van een lege oordeelkolom. Liggend, anders past de tekst niet.
+        "bron": "criteria-ma-earn-out.md",
+        "basis": "beoordelingsformulier-ma-earn-out-beschreven",
+        "titel": "Beoordelingsformulier Mergers & Acquisitions: earn-outs",
+        "ondertitel": None,
+        "kopvelden": [],
+        "beschreven": True,
         "slotvelden": ["Eindresultaat", "Feedback"],
     },
 ]
@@ -66,6 +77,11 @@ def lees_criteria(pad):
         elif regel.startswith("- ") and secties:
             secties[-1][1].append(regel[2:].strip())
     return secties
+
+
+def delen(criterium):
+    """'criterium | voldoende | onvoldoende' wordt een lijst van drie; zonder | blijft het één."""
+    return [d.strip() for d in criterium.split(" | ")]
 
 
 def splits_veld(veld):
@@ -106,6 +122,14 @@ def zet_tekst(cel, tekst, vet=False, grootte=10, midden=False):
 
 def bouw_docx(vorm, secties, pad):
     doc = Document()
+    beschreven = vorm.get("beschreven", False)
+    tekstbreedte = TEKSTBREEDTE_CM
+    if beschreven:
+        from docx.enum.section import WD_ORIENT
+        sectie = doc.sections[0]
+        sectie.orientation = WD_ORIENT.LANDSCAPE
+        sectie.page_width, sectie.page_height = sectie.page_height, sectie.page_width
+        tekstbreedte = 29.7 - 4.0
     for sectie in doc.sections:
         sectie.top_margin = Cm(2)
         sectie.bottom_margin = Cm(2)
@@ -136,30 +160,40 @@ def bouw_docx(vorm, secties, pad):
         if waarde:
             alinea.add_run(waarde)
 
-    doc.add_paragraph().paragraph_format.space_after = Pt(0)
+    if vorm["kopvelden"]:
+        doc.add_paragraph().paragraph_format.space_after = Pt(0)
 
-    tabel = doc.add_table(rows=1, cols=2)
+    if beschreven:
+        koppen = ["Beoordelingscriteria", "Voldoende", "Onvoldoende"]
+        breedtes = [Cm(tekstbreedte * f) for f in (0.30, 0.35, 0.35)]
+    else:
+        oordeel_cm = tekstbreedte * vorm["oordeelbreedte"]
+        koppen = ["Beoordelingscriteria", vorm["oordeelkop"]]
+        breedtes = [Cm(tekstbreedte - oordeel_cm), Cm(oordeel_cm)]
+    tabel = doc.add_table(rows=1, cols=len(koppen))
     tabel.style = "Table Grid"
     tabel.autofit = False
-    oordeel_cm = TEKSTBREEDTE_CM * vorm["oordeelbreedte"]
-    breedtes = (Cm(TEKSTBREEDTE_CM - oordeel_cm), Cm(oordeel_cm))
 
     koprij = tabel.rows[0]
-    zet_tekst(koprij.cells[0], "Beoordelingscriteria", vet=True)
-    zet_tekst(koprij.cells[1], vorm["oordeelkop"], vet=True, midden=True)
-    for cel in koprij.cells:
-        arceer(cel, "D9D9D9")
+    for i, kop in enumerate(koppen):
+        zet_tekst(koprij.cells[i], kop, vet=True, midden=(i > 0 and not beschreven))
+        arceer(koprij.cells[i], "D9D9D9")
 
     for sectietitel, criteria in secties:
         rij = tabel.add_row()
-        cel = rij.cells[0].merge(rij.cells[1])
+        cel = rij.cells[0].merge(rij.cells[-1])
         zet_tekst(cel, sectietitel, vet=True)
         arceer(cel, "F2F2F2")
         for criterium in criteria:
             rij = tabel.add_row()
-            zet_tekst(rij.cells[0], criterium)
-            zet_tekst(rij.cells[1], "")
-            if vorm["rijhoogte_cm"]:
+            stukken = delen(criterium)
+            if beschreven:
+                for i in range(3):
+                    zet_tekst(rij.cells[i], stukken[i] if i < len(stukken) else "", grootte=9)
+            else:
+                zet_tekst(rij.cells[0], stukken[0])
+                zet_tekst(rij.cells[1], "")
+            if vorm.get("rijhoogte_cm"):
                 zet_hoogte(rij, vorm["rijhoogte_cm"])
 
     for rij in tabel.rows:
@@ -181,7 +215,7 @@ def bouw_docx(vorm, secties, pad):
 HTML_SJABLOON = """<!doctype html>
 <html lang="nl"><head><meta charset="utf-8"><title>{titel}</title>
 <style>
-  @page {{ size: A4; margin: 20mm; }}
+  @page {{ size: A4 {orientatie}; margin: {marge}mm; }}
   body {{ font-family: Calibri, Carlito, Arial, sans-serif; font-size: 10pt; color: #000; margin: 0; }}
   h1 {{ font-size: 16pt; margin: 0 0 4px; }}
   .ondertitel {{ font-size: 10pt; margin: 0 0 12px; }}
@@ -191,6 +225,8 @@ HTML_SJABLOON = """<!doctype html>
   th {{ background: #d9d9d9; font-weight: 700; }}
   td.oordeel, th.oordeel {{ width: {oordeelbreedte}%; text-align: center; }}
   td.oordeel {{ height: {rijhoogte}mm; }}
+  table.beschreven td, table.beschreven th {{ font-size: 9pt; vertical-align: top; }}
+  table.beschreven tr.sectie td {{ font-size: 10pt; }}
   tr.sectie td {{ background: #f2f2f2; font-weight: 700; }}
   tr.sectie {{ break-after: avoid; page-break-after: avoid; }}
   tr {{ page-break-inside: avoid; }}
@@ -200,8 +236,8 @@ HTML_SJABLOON = """<!doctype html>
 <h1>{titel}</h1>
 {ondertitel}
 {velden}
-<table>
-<tr><th>Beoordelingscriteria</th><th class="oordeel">{oordeelkop}</th></tr>
+<table class="{tabelklasse}">
+{koprij}
 {rijen}
 </table>
 <div class="slot">{slot}</div>
@@ -220,11 +256,24 @@ def maak_html(vorm, secties):
         staart = f" {ontsnap(waarde)}" if waarde else ""
         velden.append(f'<div class="veld"><b>{ontsnap(label)}:</b>{staart}</div>')
 
+    beschreven = vorm.get("beschreven", False)
     rijen = []
     for sectietitel, criteria in secties:
-        rijen.append(f'<tr class="sectie"><td colspan="2">{ontsnap(sectietitel)}</td></tr>')
+        rijen.append(f'<tr class="sectie"><td colspan="{3 if beschreven else 2}">{ontsnap(sectietitel)}</td></tr>')
         for criterium in criteria:
-            rijen.append(f'<tr><td>{ontsnap(criterium)}</td><td class="oordeel"></td></tr>')
+            stukken = delen(criterium) + ["", ""]
+            if beschreven:
+                cellen = "".join(f"<td>{ontsnap(d)}</td>" for d in stukken[:3])
+                rijen.append(f"<tr>{cellen}</tr>")
+            else:
+                rijen.append(f'<tr><td>{ontsnap(stukken[0])}</td><td class="oordeel"></td></tr>')
+
+    if beschreven:
+        koprij = ('<tr><th style="width:30%">Beoordelingscriteria</th>'
+                  '<th style="width:35%">Voldoende</th><th style="width:35%">Onvoldoende</th></tr>')
+    else:
+        koprij = (f'<tr><th>Beoordelingscriteria</th>'
+                  f'<th class="oordeel">{ontsnap(vorm["oordeelkop"])}</th></tr>')
 
     ondertitel = ""
     if vorm["ondertitel"]:
@@ -234,9 +283,12 @@ def maak_html(vorm, secties):
         titel=ontsnap(vorm["titel"]),
         ondertitel=ondertitel,
         velden="\n".join(velden),
-        oordeelkop=ontsnap(vorm["oordeelkop"]),
-        oordeelbreedte=round(vorm["oordeelbreedte"] * 100),
-        rijhoogte=round((vorm["rijhoogte_cm"] or 0.6) * 10),
+        orientatie="landscape" if beschreven else "",
+        marge=15 if beschreven else 20,
+        tabelklasse="beschreven" if beschreven else "",
+        koprij=koprij,
+        oordeelbreedte=round(vorm.get("oordeelbreedte", 0.24) * 100),
+        rijhoogte=round((vorm.get("rijhoogte_cm") or 0.6) * 10),
         rijen="\n".join(rijen),
         slot="\n".join(f"<p><b>{ontsnap(v)}:</b></p>" for v in vorm["slotvelden"]),
     )

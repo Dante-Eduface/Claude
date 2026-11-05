@@ -1,42 +1,48 @@
 # M&A en earn-outs, beoordelingscriteria
 
-_Aangemaakt 2026-11-05. Oefenformulier, geen bron van een echte instelling. Gemaakt zodat Dante kan zien hoe een beoordelingsformulier voor een economische schrijfopdracht op universitair niveau in elkaar zit en hoe Eduface daar een rubric van maakt._
+_Aangemaakt 2026-11-05, bijgewerkt 2026-11-05. Oefenformulier, geen bron van een echte instelling. Gemaakt zodat Dante kan testen hoe Eduface een beoordelingsformulier voor een economische schrijfopdracht op universitair niveau omzet in een rubric._
 
-De opdracht waar dit formulier bij hoort: een analytisch essay (2.000 tot 2.500 woorden) over een overname waarin de founder bij verkoop aan KPN een earn-out krijgt, met een analyse van de salespijplijn via MEDDPICC. De casus, de opdrachtomschrijving en de answer key zitten er bewust niet bij.
+De opdracht waar dit formulier bij hoort: een analytisch essay (2.000 tot 2.500 woorden) over een overname waarin de founder bij verkoop aan KPN een earn-out krijgt, met een grafiek en een analyse van de salespijplijn via MEDDPICC. De casus, de opdrachtomschrijving en de answer key zitten er bewust niet bij.
 
-Elk criterium wordt beoordeeld als Voldoende of Onvoldoende. Het gewicht staat bij de sectietitel en telt op tot 100%. Een criterium is Voldoende als de kern overtuigend is uitgewerkt, ook met kleine onvolkomenheden; Onvoldoende alleen bij een ontbrekend onderdeel, een onbeantwoorde kernvraag of een economisch onjuiste redenering.
+**Eén bron, twee formulieren.** `build.py` maakt hier twee formulieren van, om in Eduface te vergelijken welke beter werkt:
+
+- `beoordelingsformulier-ma-earn-out`: alleen de criteria, met een lege kolom Voldoende / Onvoldoende.
+- `beoordelingsformulier-ma-earn-out-beschreven`: dezelfde criteria, met per criterium uitgeschreven wanneer het Voldoende en wanneer het Onvoldoende is.
+
+Elke criteriumregel heeft drie delen, gescheiden door ` | `: het criterium, de Voldoende-beschrijving en de Onvoldoende-beschrijving. Het eerste formulier gebruikt alleen het eerste deel. Het gewicht staat bij de sectietitel en telt op tot 100%.
 
 ## 1. Probleemstelling en opbouw (10%)
-- Heldere centrale vraag die over de dealstructuur gaat, niet alleen over de casus samenvatten
-- Logische opbouw: van rationale via waardering en earn-out naar sales en conclusie
-- Binnen de woordgrens (2.000 tot 2.500 woorden, exclusief bronnenlijst en bijlagen)
+- Heldere centrale vraag die over de dealstructuur gaat, niet alleen over de casus samenvatten | De centrale vraag is expliciet geformuleerd, gaat over het ontwerp of de gevolgen van de dealstructuur en wordt in het essay daadwerkelijk beantwoord. Een wat brede of omslachtige formulering staat een voldoende niet in de weg. | Er is geen centrale vraag, of de vraag is louter beschrijvend ("wat gebeurde er bij deze overname?"), waardoor het essay een samenvatting van de casus wordt.
+- Logische opbouw: van rationale via waardering en earn-out naar sales en conclusie | De onderdelen volgen een herkenbare lijn en elke paragraaf bouwt voort op de vorige. Een andere volgorde mag, zolang de redenering te volgen is. | Een of meer hoofdonderdelen ontbreken, of de onderdelen staan los van elkaar en de lezer moet zelf de verbanden leggen.
+- Binnen de woordgrens (2.000 tot 2.500 woorden, exclusief bronnenlijst en bijlagen) | Het essay valt binnen de woordgrens; een afwijking tot 10% is acceptabel. | Het essay wijkt meer dan 10% af van de woordgrens.
 
 ## 2. Strategische rationale van de overname (15%)
-- Benoemt waarom KPN deze onderneming koopt (synergieën, markttoegang, technologie of capaciteit) en onderbouwt dat met casusgegevens
-- Maakt onderscheid tussen kostensynergieën en omzetsynergieën en schat in welke realistisch zijn
-- Benoemt het integratievraagstuk (bijvoorbeeld absorptie of behoud van autonomie) en de gevolgen daarvan voor de verkochte onderneming
+- Benoemt waarom KPN deze onderneming koopt (synergieën, markttoegang, technologie of capaciteit) en onderbouwt dat met casusgegevens | Minstens twee concrete redenen voor de koop, elk onderbouwd met gegevens uit de casus (bijvoorbeeld het klantenbestand of het aandeel van de omzet dat al via de koper loopt). | De redenen zijn algemeen ("groei", "synergie") zonder koppeling aan de casus, of ontbreken.
+- Maakt onderscheid tussen kostensynergieën en omzetsynergieën en schat in welke realistisch zijn | Kosten- en omzetsynergieën worden onderscheiden, met per soort een inschatting van de haalbaarheid. Een kwalitatieve inschatting volstaat; kwantificeren is niet vereist. | Synergieën worden niet onderscheiden, of alle synergieën worden als even zeker gepresenteerd.
+- Benoemt het integratievraagstuk (bijvoorbeeld absorptie of behoud van autonomie) en de gevolgen daarvan voor de verkochte onderneming | De gekozen integratievorm wordt benoemd, bij voorkeur met een theoretisch kader, en de student legt uit wat die vorm betekent voor de verkochte onderneming. | Integratie komt niet aan bod, of wordt alleen genoemd zonder gevolgen.
 
 ## 3. Waardering en dealstructuur (20%)
-- Berekent of beoordeelt de koopprijs met minstens één onderbouwde methode (multiple, DCF of vergelijkbare transacties)
-- Splitst de vergoeding correct in een vast deel en een voorwaardelijk deel en rekent de verwachte waarde van de earn-out uit, met een verantwoorde disconteringsvoet
-- Legt uit waarom koper en verkoper een earn-out kiezen in plaats van één vaste prijs (waarderingskloof, informatieasymmetrie, behoud van de founder)
+- Berekent of beoordeelt de koopprijs met minstens één onderbouwde methode (multiple, DCF of vergelijkbare transacties) | Minstens één methode is correct toegepast, met een juiste berekening en een oordeel over de uitkomst (hoog, laag of marktconform). Waarom een andere methode niet is gebruikt, hoeft alleen kort verantwoord te worden. | Er is geen methode gebruikt, er zit een rekenfout in die de conclusie verandert, of er staat een multiple zonder vergelijkingsbasis.
+- Splitst de vergoeding correct in een vast deel en een voorwaardelijk deel en rekent de verwachte waarde van de earn-out uit, met een verantwoorde disconteringsvoet | Vast en voorwaardelijk deel zijn correct gescheiden, en de verwachte waarde is berekend met expliciete kansinschattingen en een disconteringsvoet die wordt verantwoord vanuit het risico van de earn-out. | De earn-out wordt tegen nominale waarde bij de koopprijs opgeteld, er is geen kansinschatting, of de disconteringsvoet heeft geen inhoudelijke onderbouwing ("gangbaar" is geen onderbouwing).
+- Legt uit waarom koper en verkoper een earn-out kiezen in plaats van één vaste prijs (waarderingskloof, informatieasymmetrie, behoud van de founder) | Minstens twee van de drie verklaringen worden toegepast op de casus. | Hoogstens één verklaring, of alleen theorie zonder toepassing op de casus.
+- Bevat een grafiek die de ontwikkeling van de prestatiemaatstaf (ARR) afzet tegen de earn-out-doelen en drempels, met titel, gelabelde assen met eenheid, legenda en bronvermelding; de waarden in de grafiek komen overeen met de tekst en de tabellen | De grafiek is aanwezig en volledig opgemaakt (titel, assen met eenheid, legenda, bron), alle waarden komen overeen met de tekst en de tabellen, er wordt in de tekst naar verwezen en de conclusie die de student eruit trekt klopt. Een kleine opmaakfout staat een voldoende niet in de weg, zolang de cijfers kloppen. | De grafiek ontbreekt, een of meer waarden in de grafiek wijken af van de tekst of de tabellen, of de student trekt uit de grafiek een conclusie die met de juiste cijfers niet klopt.
 
 ## 4. Earn-out: ontwerp, prikkels en risico's (20%)
-- Analyseert de gekozen prestatiemaatstaf (omzet, ARR of EBITDA) en de meetperiode, inclusief wat die maatstaf wel en niet stuurt
-- Benoemt de prikkels voor de founder en de koper en waar die botsen (agency-problematiek, kortetermijngedrag, manipulatie van de maatstaf)
-- Benoemt het geschilrisico na de closing (controle over budget, prijzen en verkoopkanalen, toerekening van omzet) en stelt contractuele waarborgen voor
-- Verbindt de analyse met academische literatuur over earn-outs
+- Analyseert de gekozen prestatiemaatstaf (omzet, ARR of EBITDA) en de meetperiode, inclusief wat die maatstaf wel en niet stuurt | De student bespreekt voor- en nadelen van de maatstaf en de meetperiode, inclusief wat de maatstaf niet beloont (bijvoorbeeld winstgevendheid of investeringen op lange termijn). | De maatstaf wordt alleen beschreven, niet geanalyseerd.
+- Benoemt de prikkels voor de founder en de koper en waar die botsen (agency-problematiek, kortetermijngedrag, manipulatie van de maatstaf) | Minstens één concreet conflict tussen de belangen van founder en koper, gekoppeld aan agency-theorie of een vergelijkbaar kader. | Prikkels komen niet aan bod, of worden besproken zonder verbinding met de casus.
+- Benoemt het geschilrisico na de closing (controle over budget, prijzen en verkoopkanalen, toerekening van omzet) en stelt contractuele waarborgen voor | Minstens twee concrete geschilrisico's, met per risico een passende contractuele waarborg. Juridische precisie is niet vereist. | Er worden risico's genoemd zonder waarborgen, of de voorgestelde waarborgen raken het risico niet.
+- Verbindt de analyse met academische literatuur over earn-outs | Minstens twee wetenschappelijke bronnen over earn-outs worden inhoudelijk gebruikt om een argument te onderbouwen. | Er is geen literatuur over earn-outs gebruikt, of de verwijzingen zijn decoratief en dragen geen argument.
 
 ## 5. Sales en integratie: MEDDPICC-analyse (15%)
-- Past MEDDPICC toe op concrete deals uit de pijplijn, niet alleen een uitleg van de acht letters
-- Laat zien hoe de overname het salesproces verandert (bijvoorbeeld paper process, economic buyer, concurrentie binnen het eigen concern)
-- Koppelt de pijplijnanalyse aan de haalbaarheid van de earn-out-doelen in de meetperiode
+- Past MEDDPICC toe op concrete deals uit de pijplijn, niet alleen een uitleg van de acht letters | MEDDPICC wordt toegepast op minstens twee concrete deals, met per deal de elementen die voor die deal het verschil maken. Niet elke letter hoeft per deal ingevuld te zijn. | Alleen een uitleg van de methode, of slechts één deal die oppervlakkig wordt behandeld.
+- Laat zien hoe de overname het salesproces verandert (bijvoorbeeld paper process, economic buyer, concurrentie binnen het eigen concern) | Minstens één concrete verandering in het salesproces door de overname wordt benoemd en met de casus onderbouwd. | De overname en het salesproces worden los van elkaar behandeld.
+- Koppelt de pijplijnanalyse aan de haalbaarheid van de earn-out-doelen in de meetperiode | De pijplijnanalyse leidt tot een uitspraak over de haalbaarheid van minstens één earn-out-doel, bij voorkeur met een berekening. | De pijplijn en de earn-out-doelen worden niet met elkaar verbonden.
 
 ## 6. Conclusie en aanbeveling (10%)
-- Beantwoordt de centrale vraag in lijn met de analyse, zonder nieuwe argumenten
-- Doet een concrete, onderbouwde aanbeveling (aan founder, koper of beide) en benoemt de belangrijkste beperking van de analyse
+- Beantwoordt de centrale vraag in lijn met de analyse, zonder nieuwe argumenten | De conclusie geeft een duidelijk antwoord op de centrale vraag dat volgt uit de analyse in het essay. | De centrale vraag wordt niet beantwoord, het antwoord spreekt de analyse tegen, of de conclusie leunt op argumenten die niet eerder in het essay zijn behandeld.
+- Doet een concrete, onderbouwde aanbeveling (aan founder, koper of beide) en benoemt de belangrijkste beperking van de analyse | De aanbeveling is concreet, gericht aan een partij en onderbouwd vanuit de analyse, en er wordt minstens één beperking van de analyse genoemd. | De aanbeveling is vaag ("partijen moeten goed communiceren"), niet onderbouwd, of er wordt geen beperking genoemd.
 
 ## 7. Academische kwaliteit (10%)
-- Gebruikt minstens vier relevante wetenschappelijke of vakbronnen en verwijst correct volgens APA (7e editie)
-- Helder, zakelijk en foutloos taalgebruik; begrippen worden correct gebruikt
-- Aannames en berekeningen zijn navolgbaar (tabel of bijlage met de rekenstappen)
+- Gebruikt minstens vier relevante wetenschappelijke of vakbronnen en verwijst correct volgens APA (7e editie) | Minstens vier relevante bronnen, met verwijzingen in de tekst en een literatuurlijst die op hoofdlijnen aan APA voldoen. Kleine opmaakfouten in de lijst staan een voldoende niet in de weg. | Minder dan vier relevante bronnen, verwijzingen in de tekst die niet in de literatuurlijst staan, of herhaaldelijk claims zonder bron.
+- Helder, zakelijk en foutloos taalgebruik; begrippen worden correct gebruikt | Zakelijk en goed leesbaar, met hooguit enkele taalfouten, en vakbegrippen worden juist gebruikt. | Taalfouten belemmeren het begrip, of vakbegrippen worden verkeerd gebruikt.
+- Aannames en berekeningen zijn navolgbaar (tabel of bijlage met de rekenstappen) | Aannames zijn expliciet benoemd en de rekenstappen staan in een tabel of bijlage, zodat de lezer elke uitkomst kan narekenen. | Uitkomsten worden genoemd zonder rekenstappen of zonder de aannames waarop ze rusten.

@@ -4,7 +4,7 @@ subtitle: "Een analyse van de earn-out bij de overname van Veltra Connect door K
 author: "Student: Lotte Verhagen (fictief) · Studentnummer 4821937 · Mergers & Acquisitions, Economie"
 ---
 
-_Fictieve inzending, gemaakt op 2026-11-05 als oefenmateriaal voor het beoordelingsformulier `beoordelingsformulier-ma-earn-out`. Veltra Connect, de founder, de klanten en alle cijfers zijn verzonnen; de overname door KPN heeft niet plaatsgevonden. De bronnen in de literatuurlijst bestaan wel. Deze toelichting hoort niet bij de inzending zelf: haal hem weg voor je het document in Eduface uploadt._
+_Fictieve inzending, gemaakt op 2026-11-05 als oefenmateriaal voor de beoordelingsformulieren `beoordelingsformulier-ma-earn-out` en `-beschreven`. Bewuste fout in figuur 1: het doel voor 2027 staat op €24,0 mln in plaats van €22,0 mln, en de student concludeert daaruit ten onrechte dat 2027 de grootste sprong is (in werkelijkheid +29%, minder dan de +35% van 2026). Veltra Connect, de founder, de klanten en alle cijfers zijn verzonnen; de overname door KPN heeft niet plaatsgevonden. De bronnen in de literatuurlijst bestaan wel. Deze toelichting hoort niet bij de inzending zelf: haal hem weg voor je het document in Eduface uploadt._
 
 ## 1. Inleiding
 
@@ -54,6 +54,12 @@ De earn-out bestaat uit drie tranches van maximaal 6 miljoen euro. Elke tranche 
 | 31-12-2028 | €28,0 mln | +27% | €22,4 mln |
 
 Onder 80% van het doel wordt niets uitgekeerd, tussen 80% en 100% loopt de uitkering lineair op. Daarnaast geldt een voorwaarde: de EBITDA-marge moet in het betreffende jaar minstens 15% zijn.
+
+Figuur 1 zet de gerealiseerde ARR af tegen de doelen en de drempels.
+
+![](figuur-1-arr.png){width=16cm}
+
+Wat in figuur 1 opvalt, is dat de sprong tussen het doel voor 2026 en het doel voor 2027 de grootste is van de hele earn-out-periode: het doel stijgt daar met ruim 40%. De tweede tranche is daarmee de moeilijkste om volledig te halen. Tegelijk laat de figuur zien dat de gerealiseerde ARR tot nu toe vrij recht op het doel voor 2026 afkoerst, waardoor de eerste tranche het meest kansrijk is.
 
 Om de verwachte waarde te berekenen heb ik per tranche ingeschat welk deel van het maximum waarschijnlijk wordt uitgekeerd. Voor 2026 schat ik 80%: op het moment van de casus (juni 2026) staat de ARR al op 14,9 miljoen euro, boven de drempel, en twee grote deals in de pijplijn zouden het doel bijna halen (zie paragraaf 5). Voor 2027 en 2028 schat ik 60% en 40%, omdat de vereiste groei hoog blijft terwijl het bedrijf groter wordt. Met een disconteringsvoet van 10%, die gangbaar is voor dit soort berekeningen, kom ik op het volgende:
 
