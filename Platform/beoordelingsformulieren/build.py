@@ -42,6 +42,17 @@ FORMULIEREN = [
         "rijhoogte_cm": 1.1,
         "slotvelden": ["Eindoordeel (voldaan / niet voldaan)"],
     },
+    {
+        "bron": "criteria-ma-earn-out.md",
+        "basis": "beoordelingsformulier-ma-earn-out",
+        "titel": "Beoordelingsformulier Mergers & Acquisitions: earn-outs",
+        "ondertitel": "Analytisch essay, bachelor/master Economie · oefenformulier",
+        "kopvelden": ["Naam student", "Studentnummer", "Beoordelaar", "Datum"],
+        "oordeelkop": "Voldoende / Onvoldoende",
+        "oordeelbreedte": 0.24,
+        "rijhoogte_cm": None,
+        "slotvelden": ["Eindresultaat", "Feedback"],
+    },
 ]
 
 
