@@ -52,6 +52,34 @@ tr:last-child .cel{border-bottom:none}
 text-overflow:ellipsis}
 .b{font-size:11.5px;font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
 
+
+/* secties onder de kalender */
+h2{font-size:19px;font-weight:700;letter-spacing:-.02em;margin:34px 0 4px}
+.bij{font-size:13px;color:var(--mut);margin:0 0 14px}
+.kaart{background:var(--card);border-radius:18px;padding:22px;
+box-shadow:0 1px 2px rgba(23,19,16,.05),0 8px 24px rgba(23,19,16,.05)}
+.rij3{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.pot .nm{font-size:13.5px;color:var(--mut);margin-bottom:6px}
+.pot .bd{font-size:28px;font-weight:700;letter-spacing:-.03em;line-height:1;
+font-variant-numeric:tabular-nums}
+.pot .bd s{text-decoration:none;color:#BDB5AE}
+.pot .van{font-size:12.5px;color:var(--mut);margin-top:5px;font-variant-numeric:tabular-nums}
+.meter{height:8px;background:#EDE7E0;border-radius:4px;overflow:hidden;margin-top:11px}
+.meter i{display:block;height:100%;background:var(--c)}
+.brand{font-size:clamp(34px,6vw,46px);font-weight:700;letter-spacing:-.035em;line-height:1;
+font-variant-numeric:tabular-nums}
+.brand s{text-decoration:none;color:#BDB5AE}
+.onder{font-size:15px;color:var(--mut);margin:8px 0 0}
+.onder b{color:var(--ink);font-weight:600;font-variant-numeric:tabular-nums}
+.duiding{border-left:4px solid var(--bood);padding:2px 0 2px 16px;margin:20px 0 0}
+.duiding p{margin:0;font-size:15.5px;line-height:1.55}
+.duiding b{font-variant-numeric:tabular-nums}
+.stap{width:100%;border-collapse:collapse;font-size:14.5px;margin-top:18px}
+.stap td{padding:10px 0;border-bottom:1px solid #F4F0EB}
+.stap tr:last-child td{border-bottom:none}
+.stap .wn2{color:var(--mut);width:140px;white-space:nowrap}
+.stap .n{text-align:right;font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+
 /* weekweergave */
 .wkgrid{display:grid;grid-template-columns:repeat(7,1fr)}
 .wkcel{border-right:1px solid #F4F0EB;padding:14px 12px 18px;min-height:280px}
@@ -97,6 +125,60 @@ gap:14px}
     <div class="som" id="som"></div>
   </div>
   <div class="paneel" id="paneel"></div>
+
+  <h2>Je potjes</h2>
+  <p class="bij">Stand van 6 november. Alleen ter inzage, ik werk ze bij na elke controle.</p>
+  <div class="rij3">
+    <div class="kaart pot" style="--c:var(--bood)">
+      <div class="nm">Cura&ccedil;ao</div>
+      <div class="bd">&euro;937<s>,85</s></div>
+      <div class="meter"><i style="width:55%"></i></div>
+      <div class="van">55% van &euro;1.700 &middot; nog &euro;762 te gaan</div>
+    </div>
+    <div class="kaart pot" style="--c:var(--vast)">
+      <div class="nm">Zorgverzekering</div>
+      <div class="bd">&euro;129<s>,75</s></div>
+      <div class="meter"><i style="width:100%"></i></div>
+      <div class="van">Vol. E&eacute;n premie van &euro;129,45 op de plank</div>
+    </div>
+    <div class="kaart pot" style="--c:#1F5F7A">
+      <div class="nm">Uit huis</div>
+      <div class="bd">&euro;0<s>,25</s></div>
+      <div class="meter"><i style="width:0.5%"></i></div>
+      <div class="van">Slaapt tot Cura&ccedil;ao rond is &middot; doel &euro;7.500</div>
+    </div>
+  </div>
+
+  <h2>Cura&ccedil;ao</h2>
+  <p class="bij">Vertrek 26 januari 2027.</p>
+  <div class="kaart">
+    <div class="brand">&euro;762<s>,15</s></div>
+    <p class="onder">te gaan, en je hebt nog <b>twee</b> salarismomenten.</p>
+    <div class="duiding">
+      <p>Je salaris valt rond de 28e. Dat van <b>januari</b> komt twee dagen n&aacute;
+         je vertrek, dus eind november en eind december zijn alles wat je hebt.
+         Mis je er een, dan is het gat niet meer te dichten.</p>
+    </div>
+    <table class="stap"><tbody>
+      <tr><td class="wn2">28 november</td><td>naar Cura&ccedil;ao</td><td class="n">&euro;381</td></tr>
+      <tr><td class="wn2">28 december</td><td>naar Cura&ccedil;ao</td><td class="n">&euro;381</td></tr>
+      <tr><td class="wn2">elke salarisdag</td><td>zorgpotje aanvullen tot &eacute;&eacute;n premie</td><td class="n">&euro;129</td></tr>
+    </tbody></table>
+  </div>
+
+  <h2>Naar 10.000</h2>
+  <p class="bij">Je vermogen is alles op je rekeningen samen. Je hebt geen schulden meer.</p>
+  <div class="kaart">
+    <div class="brand">&euro;1.932<s>,10</s></div>
+    <p class="onder">van de <b>&euro;10.000</b>. Nog <b>&euro;8.068</b> te gaan.</p>
+    <div class="meter" style="--c:var(--bood);margin-top:16px"><i style="width:19%"></i></div>
+    <div class="duiding">
+      <p>Over twaalf maanden is dat <b>&euro;672</b> per maand. In oktober hield je
+         <b>&euro;1.207</b> over, maar dat was een krappe maand waarin je rekening
+         bijna leeg stond. E&eacute;n maand is nog geen lijn.</p>
+    </div>
+  </div>
+
   <div class="uitleg">
     <div class="uit" style="--c:var(--vast)"><h3>Vast</h3>
       <p>Komt elke maand, of je nu iets doet of niet: NS, 100 huur aan je moeder,
