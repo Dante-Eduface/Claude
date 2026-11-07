@@ -4,7 +4,7 @@
 >
 > **Kijk vooruit, niet achteruit.** Dante op 19-09-2026: *"ik wil dat je niet zo bezig bent met het verleden, de situatie is heel anders."* De historische uitgavenanalyse uit de afschriften is daarom hier niet overgenomen. Gebruik dit bestand voor waar hij naartoe gaat, niet voor wat hij vorig jaar uitgaf.
 
-_Laatst bijgewerkt: 31-10-2026. Bron: Dante zelf, plus zijn ABN-afschriften._
+_Laatst bijgewerkt: 07-11-2026. Bron: Dante zelf, plus zijn ABN-afschriften._
 
 ## Wat er binnenkomt
 
@@ -76,6 +76,22 @@ Salaris oktober 2.146,82 binnen op 28-10. De zorgpremie voor november (129,45) i
 
 - **Zorgpotje: 129 eruit op 21-10 om de NS-rekening van 167,60 te betalen.** Dat was het plan, en het werkte. Maar hij is nooit teruggestort, en de novemberpremie ging op 30-10 alsnog goed omdat het salaris twee dagen eerder binnenkwam. Dat was timing, geen buffer. Het potje staat nu op 0,30.
 - **Curaçao: 160 eruit tussen 18 en 27 oktober**, in zes stukjes met omschrijvingen als boodschappen, ei, friet voor de fam, eerste Picnic-bestelling en broek laten maken. Dat is precies het patroon van augustus en september: het potje wordt de boodschappenpot zodra de rekening krap staat.
+
+### Stand 06-11-2026: eerste schone maand
+
+| Pot | Stand |
+|---|---|
+| Betaalrekening | 864,25 |
+| Curaçao | 937,85 |
+| Zorgverzekering | 129,75 |
+| Savings | 0,25 |
+| **Totaal** | **1.932,10** |
+
+**De potjes zijn sinds 31 oktober niet aangeraakt.** Dat is nieuw. In augustus, september en oktober stond er op dag zes van de maand al een overboeking uit Curaçao tegenover. Nu niet.
+
+Al betaald in november: huur aan zijn moeder 100 op de 4e, NS 216,70 op de 5e.
+
+**NS loopt op en dat is de grootste variabele post.** Per maand gemeten: juni 139, juli 387, augustus 414, september 247, oktober 174, november 216,70. Gemiddeld ruim 260, met grote uitschieters, en de reiskosten worden niet vergoed. In de app staat `reizen` op 350 inclusief overig vervoer; dat blijft een redelijke schatting.
 
 ### 31-10-2026: potjes bijgevuld uit het oktobersalaris
 
