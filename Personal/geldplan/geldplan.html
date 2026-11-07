@@ -1,302 +1,784 @@
-<!doctype html>
-<html lang="nl"><head><meta charset="utf-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Geldplan</title>
 <style>
-:root{--bg:#F4F2EF;--card:#fff;--ink:#171310;--mut:#7C736C;--line:#E7E2DC;
---vast:#8A8078;--bood:#C4552A;--rest:#E39B4A;
---sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif}
+:root{
+  --bg:#F4F2EF;--card:#fff;--ink:#171310;--mut:#7C736C;--line:#E7E2DC;
+  --g1:#8E2B18;--g2:#C4552A;--g3:#E39B4A;
+  --blue:#1F5F7A;--green:#2E7D5B;--red:#B4331B;--slate:#8A8078;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif;
+}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);
-font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
-.wrap{max-width:1240px;margin:0 auto;padding:28px 20px 48px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+.hero{background:linear-gradient(135deg,var(--g1),var(--g2) 52%,var(--g3));padding:26px 20px 96px;color:#fff}
+.hero .in{max-width:1040px;margin:0 auto}
+.kicker{font-size:13px;opacity:.82;margin:0 0 6px}
+.hero h1{font-size:clamp(24px,4.6vw,38px);font-weight:700;letter-spacing:-.025em;margin:0 0 16px;line-height:1.1}
+.wrap{max-width:1040px;margin:-76px auto 0;padding:0 20px 80px}
+.grid{display:grid;gap:16px}
+.c2{grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+.c3{grid-template-columns:repeat(auto-fit,minmax(215px,1fr))}
+.card{background:var(--card);border-radius:20px;padding:20px;box-shadow:0 1px 2px rgba(23,19,16,.05),0 8px 24px rgba(23,19,16,.05)}
+.lbl{font-size:13px;color:var(--mut);margin:0 0 8px;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.big{font-size:clamp(28px,5.6vw,40px);font-weight:700;letter-spacing:-.03em;line-height:1;font-variant-numeric:tabular-nums}
+.big s,.mid s{text-decoration:none;color:#BDB5AE}
+.mid{font-size:24px;font-weight:700;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.pos{color:var(--green)} .neg{color:var(--red)}
+.delta{font-size:12.5px;font-weight:600;margin-top:6px}
+h2{font-size:19px;font-weight:700;letter-spacing:-.02em;margin:32px 0 14px}
+.hint{font-size:12.5px;color:var(--mut);margin:12px 0 0}
 
-.balk{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:18px}
-.nav{display:flex;align-items:center;gap:4px}
-button{font:inherit;cursor:pointer;border:1px solid var(--line);background:var(--card);
+.checkin{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.checkin input{border:none;border-radius:14px;padding:14px 16px;font-size:21px;font-weight:700;width:180px;font-variant-numeric:tabular-nums;background:rgba(255,255,255,.95);color:var(--ink);outline:none}
+.checkin button{border:none;border-radius:14px;padding:14px 22px;font-size:15px;font-weight:600;background:#171310;color:#fff;cursor:pointer}
+.streak{display:flex;gap:4px;margin-top:12px}
+.streak i{width:9px;height:22px;border-radius:3px;background:#EDE7E0;display:block}
+.streak i.on{background:var(--g2)}
+
+.coach{border-left:5px solid var(--blue)}
+.coach.warn{border-left-color:var(--red)} .coach.good{border-left-color:var(--green)}
+.coach h3{margin:0 0 8px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);font-weight:700}
+.coach p{margin:0 0 8px;font-size:16px;line-height:1.5} .coach p:last-child{margin:0}
+
+/* potjes */
+.pot{text-align:center;display:flex;flex-direction:column;align-items:center;border-top:4px solid var(--pc);position:relative;overflow:hidden}
+.pot::after{content:'';position:absolute;inset:0;background:var(--pc);opacity:.045;pointer-events:none}
+.pot>*{position:relative;z-index:1}
+.pot .nm{font-size:13.5px;color:var(--pc);margin-bottom:12px;font-weight:700;letter-spacing:.01em}
+.pot .ring{position:relative;width:140px;height:140px}
+.pot .ring .mid2{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.pot .ring .amt2{font-size:24px;font-weight:700;letter-spacing:-.025em;font-variant-numeric:tabular-nums;line-height:1;color:var(--pc)}
+.pot .ring .pct2{font-size:11.5px;color:var(--mut);margin-top:4px;font-variant-numeric:tabular-nums}
+.pot .sb{font-size:12.5px;color:var(--mut);margin-top:12px;line-height:1.4}
+.pot .edit{margin-top:10px;display:flex;gap:6px;align-items:center;justify-content:center}
+.pot .edit input{width:96px;border:1px solid var(--line);border-radius:9px;padding:6px 9px;font:inherit;font-size:13px;font-variant-numeric:tabular-nums;text-align:right}
+.pot .edit button{border:none;background:var(--ink);color:#fff;border-radius:9px;padding:7px 12px;font:inherit;font-size:12px;cursor:pointer}
+
+/* tegels */
+.tile .ic{float:right;opacity:.32;font-size:17px}
+.tile .nm{font-size:14px;color:var(--mut);margin-bottom:9px}
+
+/* tabellen */
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{text-align:left;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);font-weight:700;padding:0 8px 8px;border-bottom:1px solid var(--line)}
+td{padding:9px 8px;border-bottom:1px solid #F1EDE8}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr:last-child td{border-bottom:none}
+tr.hl td{background:#FBF7F2;font-weight:600}
+
+/* fase */
+.fase{border:1px solid var(--line);border-radius:16px;padding:16px;margin-bottom:12px}
+.fase h4{margin:0 0 3px;font-size:15px;font-weight:700}
+.fase .per{font-size:12.5px;color:var(--mut);margin-bottom:12px}
+.fbar{display:flex;height:26px;border-radius:8px;overflow:hidden;margin-bottom:11px}
+.fbar div{display:flex;align-items:center;justify-content:center;color:#fff;font-size:11px;font-weight:700}
+
+/* checklist */
+.chk{display:flex;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid #F1EDE8;cursor:pointer;user-select:none}
+.chk:last-child{border-bottom:none}
+.chk .box{width:24px;height:24px;border-radius:8px;border:2px solid var(--line);flex:0 0 24px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:14px}
+.chk.on .box{background:var(--green);border-color:var(--green)}
+.chk .nm{flex:1} .chk.on .nm{color:var(--mut);text-decoration:line-through}
+.chk .amt{font-weight:700;font-variant-numeric:tabular-nums}
+
+/* sliders */
+.sl{margin-bottom:16px}
+.sl .top{display:flex;justify-content:space-between;font-size:14px;margin-bottom:6px}
+.sl .top b{font-variant-numeric:tabular-nums}
+input[type=range]{width:100%;-webkit-appearance:none;height:6px;border-radius:4px;background:#E7E2DC;outline:none}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;border-radius:50%;background:var(--ink);cursor:pointer;border:3px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.2)}
+input[type=range]::-moz-range-thumb{width:22px;height:22px;border-radius:50%;background:var(--ink);cursor:pointer;border:3px solid #fff}
+.sumbox{background:#FBF7F2;border-radius:14px;padding:14px 16px;margin-top:4px}
+.strat{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
+.sb1{border-radius:16px;padding:16px;border-top:4px solid var(--sc);background:var(--card);box-shadow:0 1px 2px rgba(23,19,16,.05)}
+.sb1 .p{font-size:34px;font-weight:800;letter-spacing:-.03em;color:var(--sc);line-height:1}
+.sb1 .t{font-size:15px;font-weight:700;margin:2px 0 6px}
+.sb1 .w{font-size:13px;color:var(--mut);line-height:1.45}
+.sb1 .e{font-size:13px;font-weight:700;margin-top:9px;font-variant-numeric:tabular-nums}
+.sub3{margin-top:12px;border-top:1px dashed var(--line);padding-top:11px}
+.sub3 .h{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);font-weight:700;margin-bottom:8px}
+.sub3 .r{display:flex;justify-content:space-between;align-items:center;font-size:13.5px;padding:4px 0}
+.sub3 .r i{width:8px;height:8px;border-radius:2px;display:inline-block;margin-right:8px}
+.sub3 .r b{font-variant-numeric:tabular-nums}
+input[type=number],input[type=date]{border:1px solid var(--line);border-radius:10px;padding:8px 10px;background:#fff;font:inherit;font-size:14px;width:125px;font-variant-numeric:tabular-nums}
+.fld{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:5px 0;font-size:14px}
+.fld label{color:var(--mut)}
+.settings{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2px 24px}
+button.act{background:var(--ink);color:#fff;border:none;border-radius:12px;padding:10px 18px;font:inherit;font-weight:600;cursor:pointer}
+button.gh{background:none;border:1px solid var(--line);border-radius:10px;padding:7px 12px;font:inherit;font-size:13px;color:var(--mut);cursor:pointer}
+.drop{border:2px dashed var(--line);border-radius:16px;padding:22px;text-align:center;cursor:pointer}
+.drop:hover{border-color:var(--g2);background:#FBF6F1}
+.drop strong{display:block;margin-bottom:3px}
+.drop span{font-size:13px;color:var(--mut)}
+select{border:1px solid var(--line);border-radius:9px;padding:5px 8px;font:inherit;font-size:13px;background:#fff}
+.chip{font-size:12px;border:1px solid var(--line);border-radius:999px;padding:4px 11px;background:#fff}
+.chip b{cursor:pointer;color:var(--red);margin-left:6px}
+.rules{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+details summary{cursor:pointer;font-weight:600}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:24px;background:var(--ink);color:#fff;padding:11px 20px;border-radius:999px;font-size:14px;opacity:0;pointer-events:none;transition:.25s;z-index:9}
+.toast.on{opacity:1}
+.herosub{font-size:14.5px;opacity:.85;margin:0;max-width:52ch}
+.vbar{height:8px;background:#E7E2DC;border-radius:4px;overflow:hidden}
+.vbar i{display:block;height:100%}
+/* agenda */
+.agbalk{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+.agbalk button{font:inherit;cursor:pointer;border:1px solid var(--line);background:#fff;
 color:var(--ink);border-radius:10px;padding:8px 12px;line-height:1}
-button:hover{background:#FBF7F2}
-.pijl{width:36px;height:36px;display:flex;align-items:center;justify-content:center;
+.agbalk button:hover{background:#FBF7F2}
+.agpijl{width:34px;height:34px;display:flex;align-items:center;justify-content:center;
 font-size:17px;padding:0}
-.vandaag{border-radius:999px;padding:9px 16px}
-.titel{font-size:21px;font-weight:700;letter-spacing:-.02em;margin:0 6px;min-width:190px}
-.schakel{display:flex;border:1px solid var(--line);border-radius:10px;overflow:hidden}
-.schakel button{border:none;border-radius:0;padding:9px 16px;color:var(--mut)}
-.schakel button[aria-pressed="true"]{background:var(--ink);color:#fff}
-.som{margin-left:auto;font-size:21px;font-weight:700;letter-spacing:-.02em;
-font-variant-numeric:tabular-nums}
-
-.paneel{background:var(--card);border-radius:18px;overflow:hidden;
+.agnu{border-radius:999px;padding:9px 15px}
+.agtitel{font-size:18px;font-weight:700;letter-spacing:-.02em;margin:0 4px;min-width:175px}
+.agschakel{display:flex;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.agschakel button{border:none;border-radius:0;padding:9px 15px;color:var(--mut)}
+.agschakel button[aria-pressed="true"]{background:var(--ink);color:#fff}
+.agsom{margin-left:auto;font-size:19px;font-weight:700;font-variant-numeric:tabular-nums}
+.agpaneel{background:#fff;border-radius:20px;overflow:hidden;
 box-shadow:0 1px 2px rgba(23,19,16,.05),0 8px 24px rgba(23,19,16,.05)}
-table{width:100%;border-collapse:separate;border-spacing:0}
-thead th{font-size:11.5px;letter-spacing:.09em;color:var(--mut);font-weight:700;
-padding:13px 0 11px;border-bottom:1px solid var(--line);text-align:center}
-thead th.gut{border-right:1px solid var(--line)}
-.gut{width:92px;border-right:1px solid var(--line);vertical-align:top;padding:11px 13px;
+.agpaneel table{width:100%;border-collapse:separate;border-spacing:0;font-size:inherit}
+.agpaneel thead th{font-size:11px;letter-spacing:.09em;color:var(--mut);font-weight:700;
+padding:12px 0 10px;border-bottom:1px solid var(--line);text-align:center}
+.aggut{width:84px;border-right:1px solid var(--line);vertical-align:top;padding:10px 12px;
 text-align:left;background:#FBF9F7}
-.wn{display:block;font-size:11.5px;color:var(--mut);font-weight:600}
-.ws{display:block;font-size:18px;font-weight:700;letter-spacing:-.02em;margin-top:2px;
-font-variant-numeric:tabular-nums}
-.cel{vertical-align:top;padding:9px 10px 11px;border-bottom:1px solid #F1EDE8;
-border-right:1px solid #F4F0EB;height:100px}
-tr:last-child .cel{border-bottom:none}
-.cel:last-child{border-right:none}
-.dk{display:flex;align-items:baseline;justify-content:space-between;gap:6px;margin-bottom:6px}
-.dn{font-size:16px;font-weight:700;font-variant-numeric:tabular-nums}
-.dt{font-size:13px;font-weight:700;font-variant-numeric:tabular-nums}
-.buiten .dn,.buiten .dt,.buiten .l,.buiten .b{color:#B5ADA6}
-.nu .dn{background:var(--ink);color:#fff;border-radius:999px;padding:1px 8px}
-.r{display:flex;align-items:center;gap:6px;padding:2px 0}
-.dot{width:7px;height:7px;border-radius:2px;flex:0 0 7px}
-.l{font-size:11.5px;color:var(--mut);flex:1;white-space:nowrap;overflow:hidden;
-text-overflow:ellipsis}
-.b{font-size:11.5px;font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
-
-
-/* secties onder de kalender */
-h2{font-size:19px;font-weight:700;letter-spacing:-.02em;margin:34px 0 4px}
-.bij{font-size:13px;color:var(--mut);margin:0 0 14px}
-.kaart{background:var(--card);border-radius:18px;padding:22px;
-box-shadow:0 1px 2px rgba(23,19,16,.05),0 8px 24px rgba(23,19,16,.05)}
-.rij3{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
-.pot .nm{font-size:13.5px;color:var(--mut);margin-bottom:6px}
-.pot .bd{font-size:28px;font-weight:700;letter-spacing:-.03em;line-height:1;
-font-variant-numeric:tabular-nums}
-.pot .bd s{text-decoration:none;color:#BDB5AE}
-.pot .van{font-size:12.5px;color:var(--mut);margin-top:5px;font-variant-numeric:tabular-nums}
-.meter{height:8px;background:#EDE7E0;border-radius:4px;overflow:hidden;margin-top:11px}
-.meter i{display:block;height:100%;background:var(--c)}
-.brand{font-size:clamp(34px,6vw,46px);font-weight:700;letter-spacing:-.035em;line-height:1;
-font-variant-numeric:tabular-nums}
-.brand s{text-decoration:none;color:#BDB5AE}
-.onder{font-size:15px;color:var(--mut);margin:8px 0 0}
-.onder b{color:var(--ink);font-weight:600;font-variant-numeric:tabular-nums}
-.duiding{border-left:4px solid var(--bood);padding:2px 0 2px 16px;margin:20px 0 0}
-.duiding p{margin:0;font-size:15.5px;line-height:1.55}
-.duiding b{font-variant-numeric:tabular-nums}
-.stap{width:100%;border-collapse:collapse;font-size:14.5px;margin-top:18px}
-.stap td{padding:10px 0;border-bottom:1px solid #F4F0EB}
-.stap tr:last-child td{border-bottom:none}
-.stap .wn2{color:var(--mut);width:140px;white-space:nowrap}
-.stap .n{text-align:right;font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
-
-/* weekweergave */
-.wkgrid{display:grid;grid-template-columns:repeat(7,1fr)}
-.wkcel{border-right:1px solid #F4F0EB;padding:14px 12px 18px;min-height:280px}
-.wkcel:last-child{border-right:none}
-.wkkop{border-bottom:1px solid var(--line);padding-bottom:9px;margin-bottom:10px}
-.wkdag{font-size:11.5px;letter-spacing:.09em;color:var(--mut);font-weight:700}
-.wknr{font-size:22px;font-weight:700;letter-spacing:-.02em;font-variant-numeric:tabular-nums;
-display:block;margin-top:1px}
-.wktot{font-size:14px;font-weight:700;font-variant-numeric:tabular-nums;margin-top:2px}
-.wkleeg{font-size:12.5px;color:#B5ADA6}
-.post{display:grid;grid-template-columns:1fr auto;gap:0 8px;padding:7px 0;
+.agwn{display:block;font-size:11px;color:var(--mut);font-weight:600}
+.agws{display:block;font-size:17px;font-weight:700;margin-top:2px;font-variant-numeric:tabular-nums}
+.agcel{vertical-align:top;padding:8px 9px 10px;border-bottom:1px solid #F1EDE8;
+border-right:1px solid #F4F0EB;height:92px}
+.agpaneel tbody tr:last-child .agcel{border-bottom:none}
+.agcel:last-child{border-right:none}
+.agdk{display:flex;align-items:baseline;justify-content:space-between;gap:5px;margin-bottom:5px}
+.agdn{font-size:15px;font-weight:700;font-variant-numeric:tabular-nums}
+.agdt{font-size:12.5px;font-weight:700;font-variant-numeric:tabular-nums}
+.agbuiten .agdn,.agbuiten .agdt,.agbuiten .agl,.agbuiten .agb{color:#B5ADA6}
+.agnu2 .agdn{background:var(--ink);color:#fff;border-radius:999px;padding:1px 7px}
+.agr{display:flex;align-items:center;gap:6px;padding:1.5px 0}
+.agdot{width:7px;height:7px;border-radius:2px;flex:0 0 7px}
+.agl{font-size:11px;color:var(--mut);flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.agb{font-size:11px;font-weight:600;font-variant-numeric:tabular-nums}
+.agwk{display:grid;grid-template-columns:repeat(7,1fr)}
+.agwkc{border-right:1px solid #F4F0EB;padding:13px 11px 16px;min-height:250px}
+.agwkc:last-child{border-right:none}
+.agwkk{border-bottom:1px solid var(--line);padding-bottom:8px;margin-bottom:9px}
+.agwkd{font-size:11px;letter-spacing:.09em;color:var(--mut);font-weight:700}
+.agwknr{font-size:20px;font-weight:700;display:block;margin-top:1px;font-variant-numeric:tabular-nums}
+.agwkt{font-size:13.5px;font-weight:700;margin-top:2px;font-variant-numeric:tabular-nums}
+.agleeg{font-size:12.5px;color:#B5ADA6}
+.agpost{display:grid;grid-template-columns:1fr auto;gap:0 8px;padding:6px 0;
 border-top:1px solid #F7F4F0}
-.post .pn{font-size:13px;line-height:1.3}
-.post .pb{font-size:13px;font-weight:600;text-align:right;font-variant-numeric:tabular-nums}
-.post .pc{grid-column:1/-1;font-size:10.5px;color:var(--mut);display:flex;
-align-items:center;gap:5px;margin-top:1px}
-.post .pc::before{content:"";width:6px;height:6px;border-radius:2px;background:var(--c)}
+.agpn{font-size:12.5px;line-height:1.3}
+.agpb{font-size:12.5px;font-weight:600;text-align:right;font-variant-numeric:tabular-nums}
+.agpc{grid-column:1/-1;font-size:10.5px;color:var(--mut);display:flex;align-items:center;
+gap:5px;margin-top:1px}
+.agpc::before{content:"";width:6px;height:6px;border-radius:2px;background:var(--c)}
+.aggeen{padding:40px 22px;text-align:center}
+.aggeen .agmt{font-size:28px;font-weight:700;margin-bottom:6px;font-variant-numeric:tabular-nums}
+.aggeen small{color:var(--mut);font-size:13px}
+</style>
 
-.geen{padding:44px 24px;text-align:center}
-.geen p{margin:0 0 6px;font-size:15px}
-.geen .mt{font-size:30px;font-weight:700;letter-spacing:-.03em;margin-bottom:8px;
-font-variant-numeric:tabular-nums}
-.geen small{color:var(--mut);font-size:13px}
+<div class="hero"><div class="in">
+  <p class="kicker" id="datum"></p>
+  <h1 id="groet">Goedemorgen</h1>
+  <p class="herosub" id="herosub"></p>
+</div></div>
 
-.uitleg{margin-top:20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-gap:14px}
-.uit{border-left:4px solid var(--c);padding-left:14px}
-.uit h3{margin:0 0 3px;font-size:13.5px;font-weight:700}
-.uit p{margin:0;font-size:12.5px;color:var(--mut);line-height:1.45}
-</style></head><body>
 <div class="wrap">
-  <div class="balk">
-    <div class="nav">
-      <button class="pijl" id="vorig" aria-label="Vorige">&#8249;</button>
-      <button class="pijl" id="volgend" aria-label="Volgende">&#8250;</button>
+  <h2 style="margin-top:0">Waar je geld heen ging</h2>
+  <div class="agbalk">
+    <button class="agpijl" id="agVorig" aria-label="Vorige">&#8249;</button>
+    <button class="agpijl" id="agVolgend" aria-label="Volgende">&#8250;</button>
+    <button class="agnu" id="agNu">Vandaag</button>
+    <h3 class="agtitel" id="agTitel"></h3>
+    <div class="agschakel">
+      <button id="agMaand" aria-pressed="true">Maand</button>
+      <button id="agWeek" aria-pressed="false">Week</button>
     </div>
-    <button class="vandaag" id="nu">Vandaag</button>
-    <h1 class="titel" id="titel"></h1>
-    <div class="schakel">
-      <button id="bmaand" aria-pressed="true">Maand</button>
-      <button id="bweek" aria-pressed="false">Week</button>
-    </div>
-    <div class="som" id="som"></div>
+    <div class="agsom" id="agSom"></div>
   </div>
-  <div class="paneel" id="paneel"></div>
+  <div class="agpaneel" id="agPaneel"></div>
+  <p class="hint" style="margin-bottom:28px"><b>Vast</b> komt elke maand hoe dan ook:
+     NS, 100 huur aan je moeder, 129,45 zorgpremie, Trainmore en de kapper die je contant pint.
+     <b>Boodschappen</b> is eten en huishouden. <b>Rest</b> is alles waar je per keer voor kiest.</p>
+
+  <div class="card" style="margin-bottom:16px">
+    <p class="lbl">Op je rekening <span id="dagLbl"></span></p>
+    <div class="big" id="saldoNu">&euro;0<s>,00</s></div>
+    <div class="delta" id="saldoDelta"></div>
+  </div>
+
+  <div class="grid c2">
+    <div class="card">
+      <p class="lbl">Je vermogen <span id="nwPct"></span></p>
+      <div class="big" id="nw">&euro;0<s>,00</s></div>
+      <div class="delta" id="nwSub"></div>
+      <div style="height:8px;background:#EDE7E0;border-radius:6px;margin-top:14px;overflow:hidden">
+        <i id="nwBar" style="display:block;height:100%;width:0;background:var(--g2)"></i>
+      </div>
+    </div>
+    <div class="card coach" id="coach"><h3>Je CFO</h3><p>Vul je saldo in.</p></div>
+  </div>
 
   <h2>Je potjes</h2>
-  <p class="bij">Stand van 6 november. Alleen ter inzage, ik werk ze bij na elke controle.</p>
-  <div class="rij3">
-    <div class="kaart pot" style="--c:var(--bood)">
-      <div class="nm">Cura&ccedil;ao</div>
-      <div class="bd">&euro;937<s>,85</s></div>
-      <div class="meter"><i style="width:55%"></i></div>
-      <div class="van">55% van &euro;1.700 &middot; nog &euro;762 te gaan</div>
-    </div>
-    <div class="kaart pot" style="--c:var(--vast)">
-      <div class="nm">Zorgverzekering</div>
-      <div class="bd">&euro;129<s>,75</s></div>
-      <div class="meter"><i style="width:100%"></i></div>
-      <div class="van">Vol. E&eacute;n premie van &euro;129,45 op de plank</div>
-    </div>
-    <div class="kaart pot" style="--c:#1F5F7A">
-      <div class="nm">Uit huis</div>
-      <div class="bd">&euro;0<s>,25</s></div>
-      <div class="meter"><i style="width:0.5%"></i></div>
-      <div class="van">Slaapt tot Cura&ccedil;ao rond is &middot; doel &euro;7.500</div>
+  <p class="hint" id="potsHint" style="margin:-8px 0 12px"></p>
+  <div class="grid c3" id="pots"></div>
+
+  <h2>Je strategie</h2>
+  <div class="strat" id="strat"></div>
+
+  <div class="grid c2" style="margin-top:16px">
+    <div class="card">
+      <p class="lbl">Leefgeld <span id="leefDag"></span></p>
+      <div class="mid" id="leefRest">&euro;0<s>,00</s></div>
+      <div class="delta" id="leefSub"></div>
+      <div style="height:8px;background:#EDE7E0;border-radius:6px;margin-top:12px;overflow:hidden">
+        <i id="leefBar" style="display:block;height:100%;width:0;background:var(--g2)"></i>
+      </div>
     </div>
   </div>
 
-  <h2>Cura&ccedil;ao</h2>
-  <p class="bij">Vertrek 26 januari 2027.</p>
-  <div class="kaart">
-    <div class="brand">&euro;762<s>,15</s></div>
-    <p class="onder">te gaan, en je hebt nog <b>twee</b> salarismomenten.</p>
-    <div class="duiding">
-      <p>Je salaris valt rond de 28e. Dat van <b>januari</b> komt twee dagen n&aacute;
-         je vertrek, dus eind november en eind december zijn alles wat je hebt.
-         Mis je er een, dan is het gat niet meer te dichten.</p>
-    </div>
-    <table class="stap"><tbody>
-      <tr><td class="wn2">28 november</td><td>naar Cura&ccedil;ao</td><td class="n">&euro;381</td></tr>
-      <tr><td class="wn2">28 december</td><td>naar Cura&ccedil;ao</td><td class="n">&euro;381</td></tr>
-      <tr><td class="wn2">elke salarisdag</td><td>zorgpotje aanvullen tot &eacute;&eacute;n premie</td><td class="n">&euro;129</td></tr>
-    </tbody></table>
+  <h2>Wat je per maand overhoudt</h2>
+  <div class="card">
+    <svg id="over" viewBox="0 0 620 210" style="width:100%;height:220px;display:block"></svg>
+    <div class="sumbox" id="overTxt" style="margin-top:14px"></div>
+    <table style="margin-top:16px"><thead><tr><th>Maand</th><th class="n">Binnen</th><th class="n">Uitgaven</th><th class="n">Over</th></tr></thead><tbody id="overTab"></tbody></table>
   </div>
 
-  <h2>Naar 10.000</h2>
-  <p class="bij">Je vermogen is alles op je rekeningen samen. Je hebt geen schulden meer.</p>
-  <div class="kaart">
-    <div class="brand">&euro;1.932<s>,10</s></div>
-    <p class="onder">van de <b>&euro;10.000</b>. Nog <b>&euro;8.068</b> te gaan.</p>
-    <div class="meter" style="--c:var(--bood);margin-top:16px"><i style="width:19%"></i></div>
-    <div class="duiding">
-      <p>Over twaalf maanden is dat <b>&euro;672</b> per maand. In oktober hield je
-         <b>&euro;1.207</b> over, maar dat was een krappe maand waarin je rekening
-         bijna leeg stond. E&eacute;n maand is nog geen lijn.</p>
+  <h2>Per categorie</h2>
+  <div class="grid c3" id="tiles"></div>
+  <p class="hint" id="tilesHint"></p>
+
+  <h2>Wat moet je verdienen voor 10.000</h2>
+  <div class="card">
+    <svg id="proj" viewBox="0 0 620 230" style="width:100%;height:240px;display:block"></svg>
+    <div class="legend" style="display:flex;gap:18px;flex-wrap:wrap;font-size:12.5px;color:var(--mut);margin-top:10px">
+      <span><i style="display:inline-block;width:16px;height:3px;background:var(--g2);margin-right:6px;vertical-align:middle"></i>Bij je huidige inkomen en uitgaven</span>
+      <span><i style="display:inline-block;width:16px;height:3px;background:var(--blue);margin-right:6px;vertical-align:middle;border-top:2px dashed var(--blue)"></i>Wat nodig is voor 10.000</span>
     </div>
+    <div class="sumbox" id="projTxt" style="margin-top:14px"></div>
   </div>
 
-  <div class="uitleg">
-    <div class="uit" style="--c:var(--vast)"><h3>Vast</h3>
-      <p>Komt elke maand, of je nu iets doet of niet: NS, 100 huur aan je moeder,
-         129,45 zorgpremie, Trainmore en de kapper die je contant pint.</p></div>
-    <div class="uit" style="--c:var(--bood)"><h3>Boodschappen</h3>
-      <p>Eten en huishouden. Supermarkt, bakker, Picnic, drogist, apotheek.</p></div>
-    <div class="uit" style="--c:var(--rest)"><h3>Rest</h3>
-      <p>Alles waar je per keer voor kiest. Uit eten, cafe, tanken, bol.com,
-         kleermaker, een dagje weg.</p></div>
+  <h2>Je plan in fases</h2>
+  <div id="fases"></div>
+
+  <h2>Salarisdag</h2>
+  <div class="card">
+    <p class="lbl">Deze maand overmaken <span id="chkTeller"></span></p>
+    <div id="chklist"></div>
+    <p class="hint">Doe dit op de dag dat je vergoeding binnenkomt.</p>
   </div>
+
+  <h2>Instellingen</h2>
+  <details class="card"><summary>Bedragen, datums en verdeling</summary>
+    <div class="settings" style="margin-top:14px" id="settings"></div>
+    <h4 style="margin:22px 0 12px;font-size:15px">Verdeling van je vrije geld</h4>
+
+    <div class="sl"><div class="top"><span>Sparen</span><b><span id="vS">55</span>% is <span id="eS">&euro;0</span></b></div>
+      <div class="vbar"><i id="bS" style="background:var(--blue)"></i></div></div>
+    <div class="sl"><div class="top"><span>Leven</span><b><span id="vL">35</span>% is <span id="eL">&euro;0</span></b></div>
+      <div class="vbar"><i id="bL" style="background:var(--slate)"></i></div></div>
+    <div class="sl"><div class="top"><span>Aandelen</span><b><span id="vA">10</span>% is <span id="eA">&euro;0</span></b></div>
+      <div class="vbar"><i id="bA" style="background:var(--green)"></i></div></div>
+    <div class="sumbox" id="slAdvies"></div>
+  </details>
+
 </div>
-<script>
-// DAG wordt bij het publiceren gevuld door bouw.py uit een ABN-export.
-// Hier bewust leeg: transactieregels horen niet in de repo (besluit 19-09-2026).
-const DAG={}, MAANDTOT={"2026-03":1062,"2026-04":1290,"2026-05":2524,"2026-06":2517,"2026-07":2420,"2026-08":2045};
-const MN=['januari','februari','maart','april','mei','juni','juli','augustus',
-          'september','oktober','november','december'];
-const DG=['MA','DI','WO','DO','VR','ZA','ZO'];
-const KL={vast:'var(--vast)',bood:'var(--bood)',rest:'var(--rest)'};
-const NM={vast:'vast',bood:'boodschappen',rest:'rest'};
-const VANDAAG=new Date();
-let modus='maand', anker=new Date(VANDAAG.getFullYear(),VANDAAG.getMonth(),1);
+<div class="toast" id="toast"></div>
 
-const sl=d=>d.getFullYear()+String(d.getMonth()+1).padStart(2,'0')+String(d.getDate()).padStart(2,'0');
-const E=n=>'€'+Math.round(n).toLocaleString('nl-NL');
-function maandag(d){const x=new Date(d);const k=(x.getDay()+6)%7;x.setDate(x.getDate()-k);return x;}
-function weeknr(d){const x=new Date(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate()));
+<script>
+const KEY='eduface.geldplan.v1';
+const BOODSCHAPPEN=150;
+// Uit de ABN-export van 20-09-2026, herberekend over de betaalrekening.
+// 'in' is alles wat extern binnenkwam (salaris, zorgtoeslag en geld dat mensen
+// terugbetaalden), niet alleen salaris, anders klopt 'over' niet. Overboekingen
+// tussen eigen rekeningen en Trade Republic tellen niet mee.
+// 'leven' is de restpost: alles wat geen vaste last, reis of boodschap is. Daar
+// zit ook het geld in dat hij voor anderen voorschiet.
+// September staat er bewust niet in, die maand is nog niet af en het salaris
+// was op 18-09 nog niet binnen.
+const MAANDEN={
+ '2026-03':{in:2350,vast:384,reizen:237,bood:128,leven:1637,zorgtoeslag:129,salaris:1062},
+ '2026-04':{in:1622,vast:265,reizen:459,bood:173,leven:393,zorgtoeslag:129,salaris:1062},
+ '2026-05':{in:2190,vast:437,reizen:470,bood:87,leven:1530,zorgtoeslag:343,salaris:1062},
+ '2026-06':{in:2652,vast:363,reizen:886,bood:288,leven:980,zorgtoeslag:129,salaris:2118},
+ '2026-07':{in:2367,vast:588,reizen:898,bood:310,leven:624,zorgtoeslag:129,salaris:2118},
+ '2026-08':{in:2596,vast:278,reizen:665,bood:265,leven:837,zorgtoeslag:129,salaris:2147},
+ '2026-10':{in:2277,vast:309,reizen:186,bood:393,leven:182,zorgtoeslag:130,salaris:2147}
+};// Potje in de app -> ABN-rekening. 147953219 staat op expired en doet niet mee.
+// Trade Republic heeft geen ABN-nummer en vul je met de hand in.
+const POTREK={'884479609':'saldoUH','118499882':'saldoCur','142509299':'saldoZorg'};
+const REKNAAM={'882235753':'Betaalrekening','884479609':'Savings','118499882':'Curacao','142509299':'Zorgverzekering'};
+const D={
+  // Zie Context/financien.md, dat is de bron. Ik werk D bij na elke controle.
+  // reizen is wat er echt van de rekening af gaat, niet wat een abonnement kost.
+  // Gemeten jun t/m sep 2026: 176, 410, 432, 258. Gemiddeld 319, laatste drie 367.
+  inkomen:2132, zorgtoeslag:129, vasteLasten:341, reizen:350,
+  pctSparen:55, pctLeven:35, pctAandelen:10,
+  // potCuracao is wat hij NAAST de vlucht nodig heeft. De vlucht van 947,44 is al
+  // betaald en loopt via schuldPa, dus die zit hier bewust niet in.
+  potUitHuis:7500, potCuracao:1700, curacaoDatum:'2027-01-26', uitHuisDatum:'2027-08-01',
+  // Standen per 06-11-2026. Potjes onaangeroerd sinds de storting van 31-10.
+  saldoUH:0.25, saldoCur:937.85, saldoAA:0, saldoZorg:129.75, schuldPa:0,
+  // Saldo van de betaalrekening PER DATUM. Nooit een bedrag uit een export onder
+  // de datum van vandaag zetten: een export loopt achter, en dan liegt de kop.
+  // 28-09: 27,64 plus salaris 2.146,82 min 950 vader min 129,45 zorgpremie.
+  saldoStart:{'2026-10-30':2022.05,'2026-10-31':1185.33,'2026-11-06':864.25}, standPer:'2026-11-06',
+  checks:{'2026-08':{zorg:true,cur:true,uh:true,aa:true}},
+  daily:{}, saldi:{}, rules:{}, tx:[], eigen:[]
+};
+const CATS=['Inkomen','Vaste lasten','Reizen','Boodschappen','Leven','Sparen','Negeren'];
+// Let op: 'lindeborg' staat hier bewust niet in. Geld naar zijn moeder is huur
+// (vaste last), geld van haar is inkomen. Een naam alleen bepaalt dat niet, de
+// richting van het bedrag wel.
+const BR={
+ 'blockbook':'Inkomen','belastingdienst':'Inkomen','toeslagen':'Inkomen','salaris':'Inkomen',
+ 'zorg en ze':'Vaste lasten','zorgverzeker':'Vaste lasten','trainmore':'Vaste lasten','apple.com':'Vaste lasten',
+ 'abn amro':'Vaste lasten','spotify':'Vaste lasten','audible':'Vaste lasten',
+ 'netflix':'Vaste lasten','creditren':'Vaste lasten','rente en/of kosten':'Vaste lasten','odido':'Vaste lasten',
+ 'vodafone':'Vaste lasten','kpn':'Vaste lasten','ziggo':'Vaste lasten','adobe':'Vaste lasten',
+ 'ns groep':'Reizen','ns reizigers':'Reizen','ns internationaal':'Reizen','nsinternational':'Reizen',
+ 'rheinbahn':'Reizen','lime*':'Reizen','ov-chip':'Reizen','ovpay':'Reizen','u-ov':'Reizen','uber':'Reizen',
+ 'shell':'Reizen','aral':'Reizen','tango':'Reizen','esso':'Reizen','tinq':'Reizen',
+ 'parkeer':'Reizen','parking':'Reizen','afc':'Reizen','flixbus':'Reizen',
+ 'dirk':'Boodschappen','lidl':'Boodschappen','albert heijn':'Boodschappen','ah to go':'Boodschappen',
+ 'jumbo':'Boodschappen','aldi':'Boodschappen','edeka':'Boodschappen','rewe':'Boodschappen','conad':'Boodschappen',
+ 'vomar':'Boodschappen','coop':'Boodschappen','picnic':'Boodschappen','crisp':'Boodschappen',
+ 'dm drogerie':'Boodschappen','kruidvat':'Boodschappen','etos':'Boodschappen','medina':'Boodschappen',
+ 'paypal':'Leven','geldmaa':'Leven','gea,':'Leven','kiosk':'Leven','lebkov':'Leven','starbucks':'Leven',
+ 'mcdonald':'Leven','burger king':'Leven','kfc':'Leven','subway':'Leven','dominos':'Leven','thuisbezorgd':'Leven',
+ 'febo':'Leven','ikea':'Leven','apotheek':'Leven','action':'Leven','klarna':'Leven','marktplaats':'Leven','bol.com':'Leven','coolblue':'Leven','zalando':'Leven',
+ 'savings':'Negeren','correctieboeking':'Negeren'
+};
+let S=null,tt=null;
+(function(){
+
+// Kijkpagina: geen opslag en geen invoer. Alles komt uit D, dat ik bijwerk
+// na elke controle. Zie Context/financien.md, dat is de bron.
+function load(){S=JSON.parse(JSON.stringify(D));Object.assign(S.daily,D.saldoStart);}
+function toast(m){const t=document.getElementById('toast');t.textContent=m;t.classList.add('on');clearTimeout(tt);tt=setTimeout(()=>t.classList.remove('on'),2400);}
+const E=n=>'\u20AC'+Math.round(n).toLocaleString('nl-NL');
+function E2(n){const a=Math.abs(n).toLocaleString('nl-NL',{minimumFractionDigits:2,maximumFractionDigits:2}).split(',');return (n<0?'-':'')+'\u20AC'+a[0]+'<s>,'+a[1]+'</s>';}
+function num(s){if(s==null)return 0;s=String(s).replace(/[\u20AC\s]/g,'').replace(/\./g,'').replace(',','.');const v=parseFloat(s);return isNaN(v)?0:v;}
+const iso=d=>d.toISOString().slice(0,10);
+const dim=d=>new Date(d.getFullYear(),d.getMonth()+1,0).getDate();
+const rekening=()=>{const k=Object.keys(S.daily).sort();return k.length?S.daily[k[k.length-1]]:0;};
+function potSaldo(k){ return +S[k]||0; }
+const vermogen=()=>rekening()+potSaldo('saldoUH')+(+S.saldoAA)+potSaldo('saldoZorg')+potSaldo('saldoCur')-(+S.schuldPa||0);
+
+function plan(){
+  const inkomen=+S.inkomen + +S.zorgtoeslag;
+  const verplicht=+S.vasteLasten + +S.reizen + BOODSCHAPPEN;
+  const vrij=Math.max(0,inkomen-verplicht);
+  const sparen=vrij*S.pctSparen/100, leven=vrij*S.pctLeven/100, aandelen=vrij*S.pctAandelen/100;
+  const nu=new Date(), cur=new Date(S.curacaoDatum);
+  const curMnd=Math.max(1,(cur.getFullYear()-nu.getFullYear())*12+(cur.getMonth()-nu.getMonth())+1);
+  // Het salaris valt rond de 28e. Tel alleen de salarisdagen die nog VOOR het
+  // vertrek vallen: die van januari komt twee dagen te laat.
+  let sm=0, loop=new Date(nu.getFullYear(),nu.getMonth(),1);
+  while(loop<cur){ const sal=new Date(loop.getFullYear(),loop.getMonth(),28);
+    if(sal>=nu && sal<cur) sm++; loop=new Date(loop.getFullYear(),loop.getMonth()+1,1); }
+  const salMnd=Math.max(1,sm);
+  const perCur=Math.max(0,(+S.potCuracao - +S.saldoCur))/salMnd;
+  const zorg=+S.zorgtoeslag;
+  const uh1=Math.max(0,sparen-zorg-perCur), uh2=Math.max(0,sparen-zorg);
+  return {inkomen,verplicht,vrij,sparen,leven,aandelen,zorg,perCur,curMnd,salMnd,uh1,uh2};
+}
+
+function leefgeld(P){
+  const nu=new Date(), mk=iso(nu).slice(0,7), ds=Object.keys(S.daily).sort();
+  let gebruikt=0,delta=null;
+  for(let i=1;i<ds.length;i++){ if(ds[i].slice(0,7)!==mk)continue;
+    const d=S.daily[ds[i]]-S.daily[ds[i-1]]; if(d<0&&d>-150) gebruikt+=-d; }
+  if(ds.length>1) delta=S.daily[ds[ds.length-1]]-S.daily[ds[ds.length-2]];
+  const dag=nu.getDate(), tot=dim(nu), over=tot-dag+1;
+  const budget=Math.max(0,P.leven-gebruikt), saldo=rekening();
+  const rest=Math.min(budget,Math.max(0,saldo));
+  return {gebruikt,budget,saldo,rest,krap:saldo<budget,delta,dag,tot,over,
+    perDag:rest/Math.max(1,over),verwacht:P.leven*(dag/tot)};
+}
+
+function analyse(){
+  const m={}; for(const k in MAANDEN) m[k]=Object.assign({},MAANDEN[k]);
+  return {m,onb:[]};
+}
+function gemiddelde(n){
+  const ks=Object.keys(MAANDEN).sort().slice(-n);
+  const a={in:0,vast:0,reizen:0,bood:0,leven:0,zorgtoeslag:0};
+  for(const k of ks) for(const x in a) a[x]+=MAANDEN[k][x];
+  for(const x in a) a[x]=a[x]/ks.length;
+  a.uit=a.vast+a.reizen+a.bood+a.leven;
+  return a;
+}
+/* render */
+
+function render(){
+  const P=plan(), L=leefgeld(P), {m,onb}=analyse(), nu=new Date();
+  document.getElementById('datum').textContent=nu.toLocaleDateString('nl-NL',{weekday:'long',day:'numeric',month:'long'});
+  const u=nu.getHours();
+  document.getElementById('groet').textContent='Je geldplan';
+  document.getElementById('herosub').textContent=
+    'Stand van '+new Date(S.standPer).toLocaleDateString('nl-NL',{day:'numeric',month:'long'})+
+    '. Alleen om naar te kijken; ik werk hem bij na elke controle.';
+
+  // vermogen
+  const v=vermogen(), doel=+S.potUitHuis;
+  document.getElementById('nw').innerHTML=E2(v);
+  document.getElementById('nwPct').textContent=Math.round(v/Math.max(1,doel)*100)+'% van '+E(doel);
+  document.getElementById('nwBar').style.width=Math.min(100,v/Math.max(1,doel)*100)+'%';
+  document.getElementById('nwSub').innerHTML='rekening '+E(rekening())+' plus potjes '+E(v+(+S.schuldPa||0)-rekening())+((+S.schuldPa)?' <span class="neg">min '+E(S.schuldPa)+' schuld aan pa</span>':'');
+
+  // saldo
+  document.getElementById('saldoNu').innerHTML=E2(rekening());
+  const ds=Object.keys(S.daily).sort();
+  const laatsteDag=ds.length?ds[ds.length-1]:null;
+  document.getElementById('dagLbl').innerHTML=!laatsteDag?'':
+    (laatsteDag===iso(nu)?new Date(laatsteDag).toLocaleDateString('nl-NL')
+     :'<b style="color:var(--red)">stand van '+new Date(laatsteDag).toLocaleDateString('nl-NL')+', niet van vandaag</b>');
+  const de=document.getElementById('saldoDelta');
+  de.className='delta '+(L.delta>=0?'pos':'neg');
+  de.textContent=L.delta===null?'':(L.delta>=0?'+':'-')+E(Math.abs(L.delta))+' sinds je vorige check';
+
+  strategie(P);
+  coach(P,L);
+
+  // potjes met bewerkbaar saldo
+  const pots=[
+    {k:'saldoUH',n:'Uit huis fonds',doel:+S.potUitHuis,c:'var(--blue)',pm:P.uh1},
+    {k:'saldoCur',n:'Cura\u00e7ao',doel:+S.potCuracao,c:'var(--g2)',pm:P.perCur},
+    {k:'saldoAA',n:'Aandelen',doel:0,c:'var(--green)',pm:0,slaapt:'Slaapt tot Cura\u00e7ao rond is'},
+    {k:'saldoZorg',n:'Zorgbuffer',doel:129.45,c:'var(--slate)',pm:P.zorg,
+     klaar:'Vol: \u00e9\u00e9n premie op de plank'}
+  ];
+  document.getElementById('potsHint').textContent='Laatst tegen de ABN-app gelegd op '+
+    new Date(S.standPer||iso(nu)).toLocaleDateString('nl-NL')+'.';
+  const pe=document.getElementById('pots');pe.innerHTML='';
+  for(const p of pots){
+    const nu2=p.tr?(+S[p.k]):potSaldo(p.k);
+    const doel=p.doel||Math.max(1,p.pm*12);
+    const pct=p.slaapt?0:Math.min(100,nu2/doel*100);
+    const r=62,C=2*Math.PI*r;
+    const el=document.createElement('div');el.className='card pot';
+    el.style.setProperty('--pc',p.c);
+    el.innerHTML='<div class="nm">'+p.n+'</div>'+
+      '<div class="ring"><svg width="140" height="140" viewBox="0 0 140 140">'+
+      '<circle cx="70" cy="70" r="'+r+'" fill="none" stroke="'+p.c+'" stroke-opacity=".16" stroke-width="9"/>'+
+      '<circle cx="70" cy="70" r="'+r+'" fill="none" stroke="'+p.c+'" stroke-width="9" stroke-linecap="round" stroke-dasharray="'+C+'" stroke-dashoffset="'+(C-C*pct/100)+'" transform="rotate(-90 70 70)"/></svg>'+
+      '<div class="mid2"><div class="amt2">'+E(nu2)+'</div>'+
+      (p.slaapt?'':'<div class="pct2">'+Math.round(pct)+'% van '+E(doel)+'</div>')+'</div></div>'+
+      '<div class="sb">'+(p.slaapt?p.slaapt:
+        (p.klaar&&nu2>=doel-0.5?p.klaar:
+          E(p.pm)+(p.k==='saldoCur'?' per salarisdag':' per maand')+
+          (nu2<doel?'<br>nog '+E(doel-nu2)+' te gaan':'<br>doel gehaald')))+'</div>'+
+      '';
+    pe.appendChild(el);
+  }
+
+
+  // leefgeld
+  document.getElementById('leefRest').innerHTML=E2(L.rest);
+  document.getElementById('leefDag').textContent='dag '+L.dag+' van '+L.tot;
+  document.getElementById('leefSub').innerHTML='<span class="'+(L.krap?'neg':'pos')+'">'+E(L.perDag*7)+' per week, nog '+L.over+' dagen te gaan</span>'+
+    (L.krap?'<div class="hint" style="margin-top:5px">Budget zegt '+E(L.budget)+', op je rekening staat '+E(L.saldo)+'.</div>':'');
+  document.getElementById('leefBar').style.width=Math.min(100,L.gebruikt/Math.max(1,P.leven)*100)+'%';
+
+  // tegels
+  const mk=Object.keys(m).sort(), c=mk[mk.length-1], pr=mk[mk.length-2];
+  const te=document.getElementById('tiles');te.innerHTML='';
+  const defs=[['Binnengekomen','in','\u{1F4B0}'],['Vaste lasten','vast','\u{1F4C5}'],['Reizen','reizen','\u{1F686}'],['Boodschappen','bood','\u{1F6D2}'],['Leefgeld','leven','\u{1F4B3}']];
+  if(!c){ document.getElementById('tilesHint').textContent='Nog geen maandcijfers. Die staan als MAANDEN-constante in de code.'; }
+  else{
+    document.getElementById('tilesHint').textContent=new Date(c+'-01').toLocaleDateString('nl-NL',{month:'long',year:'numeric'})+(pr?', vergeleken met de maand ervoor':'');
+    for(const [n,k,ic] of defs){
+      const val=m[c][k], pv=pr?m[pr][k]:0, ch=pv?((val-pv)/pv*100):null;
+      const goed = (k==='in') ? (ch>=0) : (ch<=0);
+      const el=document.createElement('div');el.className='card tile';
+      el.innerHTML='<span class="ic">'+ic+'</span><div class="nm">'+n+'</div><div class="mid">'+E2(val)+'</div>'+
+        (ch===null?'':'<div class="delta '+(goed?'pos':'neg')+'">'+(ch>=0?'+':'-')+Math.abs(ch).toFixed(0)+'% tegenover vorige maand</div>');
+      te.appendChild(el);}
+  }
+
+  // fases
+  const cur=new Date(S.curacaoDatum);
+  const f=document.getElementById('fases');f.innerHTML='';
+  const fases=[
+    {t:'Nu tot Cura\u00e7ao',per:P.salMnd+' salarismomenten voor je vertrek, want dat van januari valt erna',
+     rows:[['Cura\u00e7ao',P.perCur],['Uit huis fonds',P.uh1],['Aandelen',P.aandelen],['Zorgtoeslag',P.zorg],['Leefgeld',P.leven]],
+     eind:vermogen()+(P.uh1+P.aandelen+P.zorg)*P.curMnd},
+    {t:'Na Cura\u00e7ao',per:'vanaf februari 2027',
+     rows:[['Uit huis fonds',P.uh2],['Aandelen',P.aandelen],['Zorgtoeslag',P.zorg],['Leefgeld',P.leven]],
+     eind:vermogen()+(P.uh1+P.aandelen+P.zorg)*P.curMnd+(P.uh2+P.aandelen+P.zorg)*Math.max(0,12-P.curMnd)}
+  ];
+  for(const x of fases){
+    const tot=x.rows.reduce((s,r)=>s+r[1],0);
+    const kl={'Cura\u00e7ao':'var(--g2)','Uit huis fonds':'var(--blue)','Aandelen':'var(--green)','Zorgtoeslag':'var(--slate)','Leefgeld':'#C9C2BA'};
+    const d=document.createElement('div');d.className='fase';
+    d.innerHTML='<h4>'+x.t+'</h4><div class="per">'+x.per+'</div>'+
+      '<div class="fbar">'+x.rows.map(r=>'<div style="background:'+kl[r[0]]+';width:'+(r[1]/tot*100)+'%" title="'+r[0]+'">'+(r[1]/tot>0.09?Math.round(r[1]/tot*100)+'%':'')+'</div>').join('')+'</div>'+
+      '<table><tbody>'+x.rows.map(r=>'<tr><td><span style="display:inline-block;width:9px;height:9px;border-radius:3px;background:'+kl[r[0]]+';margin-right:9px"></span>'+r[0]+'</td><td class="n" style="color:var(--mut);width:52px">'+Math.round(r[1]/tot*100)+'%</td><td class="n">'+E(r[1])+'</td></tr>').join('')+
+      '<tr class="hl"><td>Vermogen aan het eind</td><td class="n"></td><td class="n pos">'+E(x.eind)+'</td></tr></tbody></table>';
+    f.appendChild(d);
+  }
+
+  // checklist
+  const mkey=iso(nu).slice(0,7); S.checks[mkey]=S.checks[mkey]||{};
+  const items=[['zorg','Zorgtoeslag apart zetten',P.zorg],['cur','Cura\u00e7ao potje',P.perCur],
+               ['uh','Uit huis fonds',P.uh1],['aa','Trade Republic',P.aandelen]];
+  const cl=document.getElementById('chklist');cl.innerHTML='';let gd=0;
+  for(const [k,lab,bd] of items){ if(bd<=0)continue;
+    const on=!!S.checks[mkey][k]; if(on)gd++;
+    const d=document.createElement('div');d.className='chk'+(on?' on':'');
+    d.innerHTML='<span class="box">'+(on?'\u2713':'')+'</span><span class="nm">'+lab+'</span><span class="amt">'+E(bd)+'</span>';
+    cl.appendChild(d);}
+  document.getElementById('chkTeller').textContent=gd+' van '+items.filter(i=>i[2]>0).length+' gedaan';
+
+  overzicht();
+  projectie(P);
+  sliders(P);
+}
+
+function overzicht(){
+  const ks=Object.keys(MAANDEN).sort();
+  const rows=ks.map(k=>{const x=MAANDEN[k];
+    const uit=x.vast+x.reizen+x.bood+x.leven;
+    return {k,in:x.in,uit,over:x.in-uit};});
+  const svg=document.getElementById('over');
+  const pad={l:50,r:12,t:14,b:30},W=620,H=210;
+  const mx=Math.max(...rows.map(r=>Math.abs(r.over)),100)*1.25;
+  const bw=(W-pad.l-pad.r)/rows.length;
+  const zero=pad.t+(H-pad.t-pad.b)/2;
+  const sc=(H-pad.t-pad.b)/2/mx;
+  let h='<line x1="'+pad.l+'" y1="'+zero+'" x2="'+(W-pad.r)+'" y2="'+zero+'" stroke="#D6CEC6"/>';
+  h+='<text x="'+(pad.l-8)+'" y="'+(zero+4)+'" text-anchor="end" font-size="10" fill="#9C948C">0</text>';
+  rows.forEach((r,i)=>{
+    const x=pad.l+i*bw+bw*0.2, w=bw*0.6, hh=Math.abs(r.over)*sc;
+    const y=r.over>=0?zero-hh:zero;
+    h+='<rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+Math.max(2,hh)+'" rx="4" fill="'+(r.over>=0?'#2E7D5B':'#B4331B')+'"/>';
+    h+='<text x="'+(x+w/2)+'" y="'+(r.over>=0?y-6:y+hh+14)+'" text-anchor="middle" font-size="11" font-weight="700" fill="'+(r.over>=0?'#2E7D5B':'#B4331B')+'">'+(r.over>=0?'+':'')+Math.round(r.over)+'</text>';
+    h+='<text x="'+(x+w/2)+'" y="'+(H-8)+'" text-anchor="middle" font-size="10" fill="#9C948C">'+new Date(r.k+'-01').toLocaleDateString('nl-NL',{month:'short'})+'</text>';
+  });
+  svg.innerHTML=h;
+  const l3=rows.slice(-3), gem=l3.reduce((a,r)=>a+r.over,0)/l3.length;
+  const laatste=rows[rows.length-1], vorige=rows[rows.length-2];
+  const trend=vorige?laatste.over-vorige.over:0;
+  document.getElementById('overTxt').innerHTML=
+    '<b>Laatste maand hield je '+E(laatste.over)+' over</b>'+(vorige?', dat is <span class="'+(trend>=0?'pos':'neg')+'">'+(trend>=0?'+':'')+E(trend)+'</span> tegenover de maand ervoor':'')+'. '+
+    'Over de laatste drie maanden gemiddeld <b>'+E(gem)+'</b> per maand.';
+  document.getElementById('overTab').innerHTML=rows.slice().reverse().map(r=>
+    '<tr><td>'+new Date(r.k+'-01').toLocaleDateString('nl-NL',{month:'long',year:'numeric'})+'</td>'+
+    '<td class="n">'+E(r.in)+'</td><td class="n">'+E(r.uit)+'</td>'+
+    '<td class="n '+(r.over>=0?'pos':'neg')+'"><b>'+(r.over>=0?'+':'')+E(r.over)+'</b></td></tr>').join('');
+}
+function projectie(P){
+  const g=gemiddelde(3), v0=vermogen(), doel=10000, N=12;
+  const overNu=g.in-g.uit;
+  const nodigPM=(doel-v0)/N;
+  const extra=Math.max(0,nodigPM-overNu);
+  const svg=document.getElementById('proj');
+  const pad={l:52,r:14,t:14,b:26}, W=620,H=230;
+  const x=i=>pad.l+i*((W-pad.l-pad.r)/N);
+  const top=Math.max(doel,v0+overNu*N)*1.08;
+  const y=v=>H-pad.b-(v/top)*(H-pad.t-pad.b);
+  let l1='',l2='';
+  for(let i=0;i<=N;i++){
+    l1+=(i?'L':'M')+x(i)+' '+y(v0+overNu*i);
+    l2+=(i?'L':'M')+x(i)+' '+y(v0+nodigPM*i);
+  }
+  const nu=new Date(); let labs='';
+  for(let i=0;i<=N;i+=2){ const d=new Date(nu.getFullYear(),nu.getMonth()+i,1);
+    labs+='<text x="'+x(i)+'" y="'+(H-8)+'" text-anchor="middle" font-size="10" fill="#9C948C">'+d.toLocaleDateString('nl-NL',{month:'short'})+'</text>'; }
+  let grid='';
+  for(const gv of [0,2500,5000,7500,10000]){ if(gv>top)continue;
+    grid+='<line x1="'+pad.l+'" y1="'+y(gv)+'" x2="'+(W-pad.r)+'" y2="'+y(gv)+'" stroke="#EDE7E0"/>'+
+      '<text x="'+(pad.l-8)+'" y="'+(y(gv)+4)+'" text-anchor="end" font-size="10" fill="#9C948C">'+(gv/1000)+'k</text>'; }
+  svg.innerHTML=grid+
+    '<path d="'+l2+'" fill="none" stroke="#1F5F7A" stroke-width="2" stroke-dasharray="6 5"/>'+
+    '<path d="'+l1+'" fill="none" stroke="#C4552A" stroke-width="3" stroke-linejoin="round"/>'+
+    '<circle cx="'+x(N)+'" cy="'+y(v0+overNu*N)+'" r="4" fill="#C4552A"/>'+labs;
+  const eind=v0+overNu*N;
+  const box=document.getElementById('projTxt');
+  box.innerHTML='<b>Je houdt nu gemiddeld '+E(overNu)+' per maand over</b> bij een inkomen van '+E(g.in)+' en uitgaven van '+E(g.uit)+'. '+
+    'Zo kom je over twaalf maanden op <b class="'+(eind>=doel?'pos':'neg')+'">'+E(eind)+'</b>.'+
+    (eind>=doel
+      ? '<br>Je haalt de 10.000 met '+E(eind-doel)+' over.'
+      : '<br>Je moet '+E(nodigPM)+' per maand overhouden, dus <b class="neg">'+E(extra)+' meer</b>. Dat haal je door je inkomen naar <b>'+E(g.in+extra)+'</b> te brengen, of door je uitgaven naar <b>'+E(g.uit-extra)+'</b> te verlagen.');
+}
+function strategie(P){
+  const el=document.getElementById('strat');
+  const blok=[
+   {p:S.pctSparen,c:'var(--blue)',t:'Sparen',w:'Het grootste deel, omdat je binnen een jaar uit huis wilt. Geld dat je snel nodig hebt hoort op een rekening, niet in de markt.',
+    sub:[['Uit huis fonds',P.uh1,'var(--blue)'],['Cura\u00e7ao',P.perCur,'var(--g2)'],['Zorgtoeslag',P.zorg,'var(--slate)']]},
+   {p:S.pctLeven,c:'var(--slate)',t:'Leven',w:'Het enige getal dat je vanaf het begin niet hebt aangeraakt. Je anker: genoeg om normaal te leven zonder dat het weglekt.'},
+   {p:S.pctAandelen,c:'var(--green)',t:'Aandelen',w:'Verlaagd van 20 naar 10 toen je koos voor uit huis binnen een jaar. Gaat weer omhoog zodra je woont.'}
+  ];
+  el.innerHTML=blok.map(b=>{
+    const bedrag=P.vrij*b.p/100;
+    return '<div class="sb1" style="--sc:'+b.c+'">'+
+      '<div class="p">'+b.p+'%</div><div class="t">'+b.t+'</div>'+
+      '<div class="w">'+b.w+'</div>'+
+      '<div class="e">'+E(bedrag)+' per maand</div>'+
+      (b.sub?'<div class="sub3"><div class="h">Splitst zich in</div>'+
+        b.sub.map(x=>'<div class="r"><span><i style="background:'+x[2]+'"></i>'+x[0]+'</span><b>'+E(x[1])+'</b></div>').join('')+
+        '</div>':'')+
+    '</div>';
+  }).join('');
+}
+function coach(P,L){
+  const el=document.getElementById('coach');el.className='card coach';
+  const lines=[];
+  const dCur=Math.round((new Date(S.curacaoDatum)-new Date())/864e5);
+  if(dCur>0){
+    const nog=Math.max(0,+S.potCuracao - +S.saldoCur);
+    lines.push('Nog <b>'+dCur+' dagen</b> tot Cura\u00e7ao. Er staat '+E(S.saldoCur)+
+      ' van de '+E(S.potCuracao)+', dus nog '+E(nog)+' te gaan.');
+    if(nog>0) lines.push('Dat is <b>'+E(P.perCur)+'</b> op elk van je '+P.salMnd+
+      ' salarisdagen voor je vertrek. Die van januari valt erna, dus die telt niet mee.');
+    else { el.classList.add('good'); lines.push('Cura\u00e7ao is rond.'); }
+  }
+  const buf=+S.saldoZorg;
+  if(buf<129.45-0.5){ el.classList.add('warn');
+    lines.push('Je zorgbuffer staat op '+E(buf)+' en een premie is '+E(129.45)+
+      '. Vul hem aan op je eerstvolgende salarisdag.'); }
+  const dUH=Math.round((new Date(S.uitHuisDatum)-new Date())/864e5);
+  if(dUH>0) lines.push('Nog <b>'+Math.round(dUH/30)+' maanden</b> tot je streefdatum uit huis. '+
+    'Je vermogen staat op '+E(vermogen())+' van de 10.000.');
+  el.innerHTML='<h3>Je CFO</h3>'+lines.slice(0,3).map(x=>'<p>'+x+'</p>').join('');
+}
+
+function sliders(P){
+  const s=+S.pctSparen, l=+S.pctLeven, a=+S.pctAandelen;
+  document.getElementById('bS').style.width=s+'%';
+  document.getElementById('bL').style.width=l+'%';
+  document.getElementById('bA').style.width=a+'%';
+  document.getElementById('vS').textContent=s; document.getElementById('vL').textContent=l; document.getElementById('vA').textContent=a;
+  document.getElementById('eS').textContent=E(P.vrij*s/100);
+  document.getElementById('eL').textContent=E(P.vrij*l/100);
+  document.getElementById('eA').textContent=E(P.vrij*a/100);
+  const tot=s+l+a, box=document.getElementById('slAdvies');
+  if(tot!==100){ box.innerHTML='<b class="neg">Samen '+tot+'%.</b> Dat moet 100 zijn, er is nu '+(tot>100?E(P.vrij*(tot-100)/100)+' te veel':E(P.vrij*(100-tot)/100)+' niet verdeeld')+'.'; return; }
+  const uh=P.vrij*s/100-P.zorg-P.perCur, jaar=(P.vrij*s/100-P.zorg)*12+P.vrij*a/100*12;
+  box.innerHTML='<b>Bij deze verdeling:</b> '+E(uh)+' per maand naar je uit huis fonds tot december, '+E(P.vrij*l/100)+' om van te leven en '+E(P.vrij*a/100)+' naar aandelen. Over twaalf maanden bouw je zo ongeveer '+E(jaar)+' op.'+
+    (l<30?'<br><span class="neg">Onder 30% leefgeld wordt het krap; je gaf de afgelopen maanden gemiddeld ruim 500 uit.</span>':'')+
+    (a>20?'<br><span class="neg">Boven 20% aandelen is riskant zolang je binnen een jaar wilt verhuizen.</span>':'');
+}
+
+const F=[['inkomen','Netto inkomen'],['zorgtoeslag','Zorgtoeslag'],['vasteLasten','Vaste lasten'],['reizen','Reizen totaal'],['potUitHuis','Doel uit huis'],['potCuracao','Doel Cura\u00e7ao'],['schuldPa','Schuld aan pa']];
+function buildSettings(){const el=document.getElementById('settings');el.innerHTML='';
+  for(const [k,l] of F){const d=document.createElement('div');d.className='fld';
+    d.innerHTML='<label>'+l+'</label><b>'+E(S[k])+'</b>';el.appendChild(d);}
+  [['curacaoDatum','Vertrek Cura\u00e7ao'],['uitHuisDatum','Streefdatum uit huis']].forEach(([k,l])=>{
+    const d=document.createElement('div');d.className='fld';
+    d.innerHTML='<label>'+l+'</label><b>'+new Date(S[k]).toLocaleDateString('nl-NL')+'</b>';
+    el.appendChild(d);});}
+
+/* ---- Agenda: waar je geld heen ging. Eigen namen, want dit deelt scope
+   met de rest van de pagina. aDAG wordt bij publiceren gevuld door bouw.py. ---- */
+const aDAG={};
+const aMAANDTOT={'2026-03':1062,'2026-04':1290,'2026-05':2524,'2026-06':2517,
+                 '2026-07':2420,'2026-08':2045};
+const aMN=['januari','februari','maart','april','mei','juni','juli','augustus',
+           'september','oktober','november','december'];
+const aDG=['MA','DI','WO','DO','VR','ZA','ZO'];
+const aKL={vast:'var(--slate)',bood:'var(--g2)',rest:'var(--g3)'};
+const aNM={vast:'vast',bood:'boodschappen',rest:'rest'};
+const aNU=new Date();
+let aModus='maand', aAnker=new Date(aNU.getFullYear(),aNU.getMonth(),1);
+const aSl=d=>d.getFullYear()+String(d.getMonth()+1).padStart(2,'0')+String(d.getDate()).padStart(2,'0');
+function aMa(d){const x=new Date(d);x.setDate(x.getDate()-((x.getDay()+6)%7));return x;}
+function aWk(d){const x=new Date(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate()));
   x.setUTCDate(x.getUTCDate()+4-(x.getUTCDay()||7));
   return Math.ceil(((x-Date.UTC(x.getUTCFullYear(),0,1))/864e5+1)/7);}
-const posten=d=>DAG[sl(d)]||[];
-const dagtot=d=>posten(d).reduce((s,x)=>s+x.b,0);
-function groepen(d){const g={};posten(d).forEach(x=>g[x.c]=(g[x.c]||0)+x.b);return g;}
+const aPost=d=>aDAG[aSl(d)]||[];
+const aTot=d=>aPost(d).reduce((s,x)=>s+x.b,0);
+function aGroep(d){const g={};aPost(d).forEach(x=>g[x.c]=(g[x.c]||0)+x.b);return g;}
 
-function maandView(){
-  const j=anker.getFullYear(), m=anker.getMonth();
-  let cur=maandag(new Date(j,m,1)), rijen='', totaal=0;
-  const laatste=new Date(j,m+1,0);
-  while(cur<=laatste){
+function aMaandView(){
+  const j=aAnker.getFullYear(), m=aAnker.getMonth();
+  const sleutel=j+String(m+1).padStart(2,'0');
+  if(!Object.keys(aDAG).some(k=>k.startsWith(sleutel))){
+    const mt=aMAANDTOT[j+'-'+String(m+1).padStart(2,'0')];
+    return {html:'<div class="aggeen">'+(mt?'<div class="agmt">'+E(mt)+'</div>'+
+      '<p>Alleen het maandtotaal is bekend voor '+aMN[m]+' '+j+'.</p>':
+      '<p>Geen gegevens voor '+aMN[m]+' '+j+'.</p>')+
+      '<small>Stuur me een ABN-export van deze maand, dan vul ik de dagen in.</small></div>',
+      som:mt||0};
+  }
+  let cur=aMa(new Date(j,m,1)), rijen='', totaal=0;
+  const eind=new Date(j,m+1,0);
+  while(cur<=eind){
     let cellen='', wsom=0;
     for(let i=0;i<7;i++){
       const d=new Date(cur); d.setDate(cur.getDate()+i);
-      const t=dagtot(d); wsom+=t;
-      if(d.getMonth()===m) totaal+=t;
-      const buiten=d.getMonth()!==m?' buiten':'';
-      const isnu=sl(d)===sl(VANDAAG)?' nu':'';
-      const g=groepen(d);
+      const tt2=aTot(d); wsom+=tt2;
+      if(d.getMonth()===m) totaal+=tt2;
+      const g=aGroep(d);
       const rr=['vast','bood','rest'].filter(k=>g[k]).map(k=>
-        `<div class="r"><span class="dot" style="background:${KL[k]}"></span>`+
-        `<span class="l">${NM[k]}</span><span class="b">${E(g[k])}</span></div>`).join('');
-      cellen+=`<td class="cel${buiten}${isnu}"><div class="dk"><span class="dn">${d.getDate()}</span>`+
-              (t?`<span class="dt">${E(t)}</span>`:'')+`</div>${rr}</td>`;
+        '<div class="agr"><span class="agdot" style="background:'+aKL[k]+'"></span>'+
+        '<span class="agl">'+aNM[k]+'</span><span class="agb">'+E(g[k])+'</span></div>').join('');
+      cellen+='<td class="agcel'+(d.getMonth()!==m?' agbuiten':'')+
+        (aSl(d)===aSl(aNU)?' agnu2':'')+'"><div class="agdk">'+
+        '<span class="agdn">'+d.getDate()+'</span>'+
+        (tt2?'<span class="agdt">'+E(tt2)+'</span>':'')+'</div>'+rr+'</td>';
     }
-    rijen+=`<tr><th class="gut"><span class="wn">week ${weeknr(cur)}</span>`+
-           `<span class="ws">${E(wsom)}</span></th>${cellen}</tr>`;
+    rijen+='<tr><th class="aggut"><span class="agwn">week '+aWk(cur)+'</span>'+
+           '<span class="agws">'+E(wsom)+'</span></th>'+cellen+'</tr>';
     cur.setDate(cur.getDate()+7);
   }
-  const sleutel=j+'-'+String(m+1).padStart(2,'0');
-  const heeftdag=Object.keys(DAG).some(k=>k.startsWith(sleutel.replace('-','')));
-  if(!heeftdag){
-    const mt=MAANDTOT[sleutel];
-    return {html:`<div class="geen">`+(mt?`<div class="mt">${E(mt)}</div>
-      <p>Alleen het maandtotaal is bekend voor ${MN[m]} ${j}.</p>
-      <small>Stuur me een ABN-export van deze maand, dan vul ik de dagen in.</small>`
-      :`<p>Geen gegevens voor ${MN[m]} ${j}.</p>
-        <small>Stuur me een ABN-export van deze maand.</small>`)+`</div>`, som:mt||0};
-  }
-  return {html:`<table><thead><tr><th class="gut"></th>`+
-    DG.map(d=>`<th>${d}</th>`).join('')+`</tr></thead><tbody>${rijen}</tbody></table>`,
+  return {html:'<table><thead><tr><th class="aggut"></th>'+
+    aDG.map(d=>'<th>'+d+'</th>').join('')+'</tr></thead><tbody>'+rijen+'</tbody></table>',
     som:totaal};
 }
 
-function weekView(){
-  const ma=maandag(anker); let cel='', som=0;
+function aWeekView(){
+  const ma=aMa(aAnker); let cel='', som=0;
   for(let i=0;i<7;i++){
     const d=new Date(ma); d.setDate(ma.getDate()+i);
-    const p=posten(d), t=dagtot(d); som+=t;
-    const isnu=sl(d)===sl(VANDAAG)?' nu':'';
+    const p=aPost(d), tt2=aTot(d); som+=tt2;
     const lijst=p.length?p.map(x=>
-      `<div class="post"><span class="pn">${x.n}</span>`+
-      `<span class="pb">${E(x.b)}</span>`+
-      `<span class="pc" style="--c:${KL[x.c]}">${NM[x.c]}</span></div>`).join('')
-      :`<div class="wkleeg">niets uitgegeven</div>`;
-    cel+=`<div class="wkcel${isnu}"><div class="wkkop"><span class="wkdag">${DG[i]}</span>`+
-         `<span class="wknr">${d.getDate()} ${MN[d.getMonth()].slice(0,3)}</span>`+
-         (t?`<div class="wktot">${E(t)}</div>`:'')+`</div>${lijst}</div>`;
+      '<div class="agpost"><span class="agpn">'+x.n+'</span>'+
+      '<span class="agpb">'+E(x.b)+'</span>'+
+      '<span class="agpc" style="--c:'+aKL[x.c]+'">'+aNM[x.c]+'</span></div>').join('')
+      :'<div class="agleeg">niets uitgegeven</div>';
+    cel+='<div class="agwkc'+(aSl(d)===aSl(aNU)?' agnu2':'')+'"><div class="agwkk">'+
+      '<span class="agwkd">'+aDG[i]+'</span><span class="agwknr">'+d.getDate()+' '+
+      aMN[d.getMonth()].slice(0,3)+'</span>'+
+      (tt2?'<div class="agwkt">'+E(tt2)+'</div>':'')+'</div>'+lijst+'</div>';
   }
-  return {html:`<div class="wkgrid">${cel}</div>`, som:som};
+  return {html:'<div class="agwk">'+cel+'</div>', som:som};
 }
 
-function teken(){
-  const r = modus==='maand' ? maandView() : weekView();
-  document.getElementById('paneel').innerHTML=r.html;
-  document.getElementById('som').textContent=E(r.som);
-  if(modus==='maand'){
-    document.getElementById('titel').textContent=
-      MN[anker.getMonth()].replace(/^./,c=>c.toUpperCase())+' '+anker.getFullYear();
+function tekenAgenda(){
+  const r = aModus==='maand' ? aMaandView() : aWeekView();
+  document.getElementById('agPaneel').innerHTML=r.html;
+  document.getElementById('agSom').textContent=E(r.som);
+  if(aModus==='maand'){
+    document.getElementById('agTitel').textContent=
+      aMN[aAnker.getMonth()].replace(/^./,c=>c.toUpperCase())+' '+aAnker.getFullYear();
   }else{
-    const ma=maandag(anker), zo=new Date(ma); zo.setDate(ma.getDate()+6);
-    document.getElementById('titel').textContent=
-      `Week ${weeknr(ma)} · ${ma.getDate()} ${MN[ma.getMonth()].slice(0,3)} tot `+
-      `${zo.getDate()} ${MN[zo.getMonth()].slice(0,3)}`;
+    const ma=aMa(aAnker), zo=new Date(ma); zo.setDate(ma.getDate()+6);
+    document.getElementById('agTitel').textContent='Week '+aWk(ma)+' \u00b7 '+
+      ma.getDate()+' '+aMN[ma.getMonth()].slice(0,3)+' tot '+
+      zo.getDate()+' '+aMN[zo.getMonth()].slice(0,3);
   }
-  document.getElementById('bmaand').setAttribute('aria-pressed',modus==='maand');
-  document.getElementById('bweek').setAttribute('aria-pressed',modus==='week');
+  document.getElementById('agMaand').setAttribute('aria-pressed',aModus==='maand');
+  document.getElementById('agWeek').setAttribute('aria-pressed',aModus==='week');
 }
-document.getElementById('vorig').onclick=()=>{
-  if(modus==='maand') anker=new Date(anker.getFullYear(),anker.getMonth()-1,1);
-  else anker.setDate(anker.getDate()-7);
-  teken();};
-document.getElementById('volgend').onclick=()=>{
-  if(modus==='maand') anker=new Date(anker.getFullYear(),anker.getMonth()+1,1);
-  else anker.setDate(anker.getDate()+7);
-  teken();};
-document.getElementById('nu').onclick=()=>{
-  anker = modus==='maand' ? new Date(VANDAAG.getFullYear(),VANDAAG.getMonth(),1)
-                          : new Date(VANDAAG); teken();};
-document.getElementById('bmaand').onclick=()=>{modus='maand';
-  anker=new Date(anker.getFullYear(),anker.getMonth(),1); teken();};
-document.getElementById('bweek').onclick=()=>{modus='week'; teken();};
-teken();
-</script></body></html>
+document.getElementById('agVorig').onclick=()=>{
+  if(aModus==='maand') aAnker=new Date(aAnker.getFullYear(),aAnker.getMonth()-1,1);
+  else aAnker.setDate(aAnker.getDate()-7);
+  tekenAgenda();};
+document.getElementById('agVolgend').onclick=()=>{
+  if(aModus==='maand') aAnker=new Date(aAnker.getFullYear(),aAnker.getMonth()+1,1);
+  else aAnker.setDate(aAnker.getDate()+7);
+  tekenAgenda();};
+document.getElementById('agNu').onclick=()=>{
+  aAnker = aModus==='maand' ? new Date(aNU.getFullYear(),aNU.getMonth(),1) : new Date(aNU);
+  tekenAgenda();};
+document.getElementById('agMaand').onclick=()=>{aModus='maand';
+  aAnker=new Date(aAnker.getFullYear(),aAnker.getMonth(),1); tekenAgenda();};
+document.getElementById('agWeek').onclick=()=>{aModus='week'; tekenAgenda();};
+
+load();
+buildSettings();
+render();
+tekenAgenda();
+})();
+</script>

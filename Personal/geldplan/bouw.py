@@ -101,9 +101,9 @@ if __name__ == '__main__':
     hier = pathlib.Path(__file__).parent
     data = bouw(sys.argv[1])
     pagina = (hier / 'geldplan.html').read_text()
-    gevuld = re.sub(r'const DAG=\{\}',
-                    'const DAG=' + json.dumps(data, ensure_ascii=False,
-                                              separators=(',', ':')),
+    gevuld = re.sub(r'const aDAG=\{\}',
+                    'const aDAG=' + json.dumps(data, ensure_ascii=False,
+                                               separators=(',', ':')),
                     pagina, count=1)
     uit = pathlib.Path(sys.argv[2] if len(sys.argv) > 2 else '/tmp/geldplan-gevuld.html')
     uit.write_text(gevuld)
