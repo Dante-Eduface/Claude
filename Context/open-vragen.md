@@ -1,6 +1,6 @@
 # Open vragen
 
-_Aangelegd 19-09-2026, bijgewerkt 02-10-2026._
+_Aangelegd 19-09-2026, bijgewerkt 08-11-2026._
 
 De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat is een vraag die ik **niet zelf mag invullen**.
 
@@ -24,6 +24,7 @@ De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat 
 | W4 | Wanneer komt de NPS-meting op Enterprise er? | Tot die er is staat het doel in `current-priorities.md` als niet stuurbaar. Dante weet het nog niet. | 19-09-2026 |
 | W5 | Na twee weken deep work: welk weektarget zetten we vast? | Het schema staat op 28 uur. De eerste twee weken zijn een nulmeting. | Vanaf 03-10-2026 |
 | P11 | Wordt de vaardigheid van dit jaar "een bericht schrijven waar iemand op reageert"? | Dat volgt uit A5: als de maat geboekte gesprekken is, is dat de vaardigheid die hem bepaalt. | 19-09-2026 |
+| P12 | **Wat is PLNT, en wat is Utrecht als derde locatie?** Je noemt PLNT je kantoor, maar in de repo staat het kantoor in Utrecht en is PLNT het gebouw aan de Langegracht in Leiden. | De boodschappenlijst (`Personal/boodschappen/standaardlijst.md`) heeft drie locaties: Thuis, PLNT, Utrecht. Ik weet niet wat waar staat. | 08-11-2026 |
 | G15 | De actuele standen van je potjes. Je levert hier een nieuw bestand voor. | `Context/financien.md` noemt bewust geen bedragen tot dat er is. | 19-09-2026 |
 | V1 | **Welke Azure-regio('s)?** De DPA zegt "Nederland + EU" en elders "gehost in Nederland". | Een instelling vraagt dit als eerste. Tot het bevestigd is zeggen we alleen "EU". | 02-10-2026 |
 | V3 | **`Platform/product.md` zegt "Studentdata gaat nooit naar externe AI-aanbieders".** Google Cloud OCR verwerkt wel studentdocumenten (in de EU, bevestigd). Blijft die zin staan, en telt OCR als "AI-aanbieder"? | Een instelling leest beide en ziet het verschil. | 02-10-2026 |
