@@ -1,28 +1,28 @@
 # Scrolling before sleep
 
-**The relationship between social media use and sleep quality among students**
+**The relationship between social media use and sleep quality among adolescents**
 
-**Student:** Lisa van Dijk   **Student number:** s3981204   **Programme:** BSc Psychology   **Ethics committee:** reference 2026-PSY-0412
+**Student:** Lisa   **Programme:** BSc Psychology   **In collaboration with:** De Loods youth centre   **Ethics committee:** reference 2026-PSY-0412
 
 ## Abstract
 
-Students sleep worse on average than other adults, and social media are often mentioned as a possible cause. This study examined, in 212 students, how total daily social media use and social media use in the hour before sleep relate to sleep quality, measured with the Pittsburgh Sleep Quality Index (PSQI). Use in the hour before sleep was associated with poorer sleep quality (β = .27, p < .001), also after controlling for age and gender. Total daily use was not associated with sleep quality after controlling for these variables. Social media use before sleep therefore causes poorer sleep.
+Adolescents often sleep too little or poorly, and social media are often mentioned as a possible cause. This study examined, in 212 adolescents, how total daily social media use and social media use in the hour before sleep relate to sleep quality, measured with the Pittsburgh Sleep Quality Index (PSQI). Use in the hour before sleep was associated with poorer sleep quality (β = .27, p < .001), also after controlling for age and gender. Total daily use was not associated with sleep quality after controlling for these variables. Social media use before sleep therefore causes poorer sleep.
 
 ## Introduction
 
-About half of all students report sleep problems. Poor sleep is associated with lower academic performance, more stress and low mood (Hale & Guan, 2015). At the same time, students spend several hours a day on social media on average, often in bed.
+A large share of 15- to 18-year-olds sleep less than the recommended eight hours a night. Poor sleep is associated with lower academic performance, more stress and low mood (Hale & Guan, 2015). At the same time, adolescents spend several hours a day on social media on average, often in bed. Youth workers at De Loods youth centre notice that young people arrive tired in the afternoon and say they stay on their phones until late; this was the reason for this study.
 
 Three mechanisms have been described through which screen use may affect sleep (Cain & Gradisar, 2010). First, screen time takes time away from sleep (displacement). Second, the content keeps the user mentally and emotionally engaged, which makes it harder to fall asleep (arousal). Third, blue light from the screen suppresses melatonin production. Two of these three mechanisms apply mainly to use shortly before sleep, not to use during the day.
 
 Previous research confirms an association. Levenson et al. (2016) found in almost 1,800 young adults that more social media use was associated with more sleep disturbance. Woods and Scott (2016) found in secondary school pupils that evening use and emotional investment in particular were associated with poorer sleep quality. What has been studied less is whether use shortly before sleep explains more than the total amount of use.
 
-**Research question.** To what extent are total daily social media use and use in the hour before sleep associated with students' sleep quality?
+**Research question.** To what extent are total daily social media use and use in the hour before sleep associated with adolescents' sleep quality?
 
 **Hypotheses.** H1: More daily social media use is associated with poorer sleep quality. H2: Use in the hour before sleep is more strongly associated with sleep quality than total daily use.
 
 ## Method
 
-**Design and participants.** The study used a cross-sectional correlational design. Participants were recruited through the faculty participant pool and through social media. Inclusion criteria were: enrolled as a student and aged 18 to 30. In total, 212 students completed the full questionnaire (68% female, age M = 20.8, SD = 2.1).
+**Design and participants.** The study used a cross-sectional correlational design. Participants were recruited through De Loods youth centre and two secondary schools in the same city. The inclusion criterion was an age of 15 to 18. For participants under 16, a parent gave written consent. In total, 212 adolescents completed the full questionnaire (62% girls, age M = 16.4, SD = 1.0).
 
 **Instruments.** *Sleep quality* was measured with the PSQI (Buysse et al., 1989): nineteen items about the past month, with a total score from 0 to 21, where a higher score indicates poorer sleep. A score above 5 indicates poor sleep. Reliability in this sample was adequate (α = .74). *Daily use* was measured as the self-reported number of hours per day, checked against the screen-time function on the participant's phone. *Use before sleep* was measured with the question how many minutes the participant spends on social media on average in the hour before going to bed (0 to 60).
 
@@ -42,7 +42,7 @@ Daily use correlated with the PSQI score (r = .19, p = .008), and use before sle
 |---|---|---|---|---|
 | Step 1 | | | | |
 | Age | −0.08 | 0.10 | −.05 | .44 |
-| Gender (female = 1) | 0.61 | 0.46 | .09 | .19 |
+| Gender (girl = 1) | 0.61 | 0.46 | .09 | .19 |
 | Step 2 | | | | |
 | Daily use (hours) | 0.17 | 0.14 | .09 | .23 |
 | Use before sleep (min) | 0.05 | 0.01 | .27 | < .001 |
@@ -55,9 +55,9 @@ In step 2, use before sleep significantly predicted sleep quality, whereas daily
 
 This study shows that social media use in the hour before sleep in particular is associated with poorer sleep quality, and that the total amount of use adds little once this is taken into account. This is in line with Woods and Scott (2016) and with the arousal and light mechanisms described by Cain and Gradisar (2010), which mainly operate shortly before sleep.
 
-The main insight is therefore that social media use before sleep leads to poorer sleep. Students who put their phone away an hour before bed will sleep better as a result. Universities should actively recommend this in their student wellbeing information.
+The main insight is therefore that social media use before sleep leads to poorer sleep. Adolescents who put their phone away an hour before bed will sleep better as a result. Schools and youth centres such as De Loods should actively recommend this.
 
-The study also has limitations. Use before sleep was self-reported and is therefore sensitive to recall errors. The sample consisted largely of psychology students and women, which limits generalisability.
+The study also has limitations. Use before sleep was self-reported and is therefore sensitive to recall errors. The sample came from one city and included more girls than boys, which limits generalisability.
 
 Further research could use objective measures of sleep, such as a sleep tracker, and longer measurement periods.
 

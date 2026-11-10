@@ -2,7 +2,7 @@
 
 **Een praktijkgericht onderzoek naar social media en zelfbeeld bij meiden van Jongerencentrum De Loods**
 
-**Student:** Noor Hendriks   **Opleiding:** Toegepaste Psychologie   **Opdrachtgever:** Jongerencentrum De Loods
+**Student:** Lisa   **Opleiding:** Toegepaste Psychologie   **Opdrachtgever:** Jongerencentrum De Loods
 
 ## 1. Inleiding
 

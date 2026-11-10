@@ -1,6 +1,6 @@
 # Stageverslag periode 2
 
-**Naam:** Yasmina El Idrissi   **Opleiding:** Sociaal werk, niveau 4, leerjaar 2
+**Naam:** Lisa   **Opleiding:** Sociaal werk, niveau 4, leerjaar 2
 
 **Stageplek:** Jongerencentrum De Loods   **Praktijkbegeleider:** Marco (naam aangepast)
 
