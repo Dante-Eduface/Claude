@@ -1,0 +1,15 @@
+# Beoordelingsformulier stageverslag jongerencentrum
+
+MBO niveau 4, Sociaal werk. Beoordeling: cijfer 1 tot 10 per criterium. Het eindcijfer is het gewogen gemiddelde.
+
+**Toelichting voor de beoordelaar.** Beoordeel op het niveau van een tweedejaars MBO-4-student, niet op HBO-niveau. Een verslag dat de kern van een criterium goed laat zien, krijgt minstens een 6, ook als er kleine onvolkomenheden in zitten. Staat er een echte of herleidbare naam van een jongere in het verslag (bijvoorbeeld voor- en achternaam, of naam met wijk of school), dan krijgt criterium 7 maximaal een 5.
+
+| Criterium | 1 tot 3 | 4 en 5 | 6 en 7 | 8 tot 10 |
+|---|---|---|---|---|
+| **1. Stageplek en doelgroep** (10%) | Stageplek of doelgroep ontbreekt. | Stageplek en doelgroep genoemd, maar vaag. De eigen rol is niet duidelijk. | Duidelijk wat de organisatie doet, voor wie, en wat de rol van de student is. | Als bij 6 en 7, plus wat de doelgroep nodig heeft en hoe de organisatie daarop inspeelt. |
+| **2. Wat zie je bij jongeren en social media** (15%) | Geen observaties, alleen algemene meningen. | Een paar observaties, maar feiten en mening lopen door elkaar. | Concrete observaties (wat zag of hoorde de student), meestal gescheiden van de eigen mening. | Concrete observaties, feiten en mening steeds gescheiden, en de student zoekt naar een verklaring of verband. |
+| **3. Leerdoelen** (15%) | Geen leerdoelen. | Twee leerdoelen, maar niet SMART: vaag of niet meetbaar. | Twee leerdoelen die grotendeels SMART zijn; bij één ontbreekt een onderdeel, zoals tijd of meetbaarheid. | Twee volledig SMART leerdoelen die passen bij de stageplek. |
+| **4. Situatie met STARR** (25%) | Geen situatie, of alleen een verhaal zonder opbouw. | STARR gebruikt, maar een of meer stappen ontbreken of zijn heel kort. | Alle vijf stappen aanwezig en de actie is concreet. Resultaat of reflectie is nog wat oppervlakkig. | Alle stappen concreet uitgewerkt. De student laat zien wat het eigen aandeel was en wat het opleverde. |
+| **5. Reflectie** (20%) | Geen reflectie, alleen beschrijving. | Benoemt wat goed ging en wat beter kan, maar zonder voorbeeld of zonder feedback van de praktijkbegeleider. | Concrete punten met een voorbeeld, en de feedback van de praktijkbegeleider wordt gebruikt. | Als bij 6 en 7, plus de student legt uit waarom iets ging zoals het ging en wat die volgende keer anders doet. |
+| **6. Conclusie en nieuwe leerdoelen** (10%) | Ontbreekt. | Conclusie zonder terug te komen op de leerdoelen. | Per leerdoel gezegd of het gehaald is, en nieuwe leerdoelen genoemd. | Als bij 6 en 7, onderbouwd met voorbeelden uit het verslag. De nieuwe leerdoelen volgen logisch uit de reflectie. |
+| **7. Taal, opbouw en privacy** (5%) | Veel taalfouten, geen hoofdstukindeling, of meerdere herleidbare namen. | Hoofdstukken aanwezig, regelmatig taalfouten, of één herleidbare naam van een jongere. | Duidelijke opbouw, enkele taalfouten, privacy in orde. | Duidelijke opbouw, vrijwel foutloos, privacy in orde en binnen de woordgrens. |
