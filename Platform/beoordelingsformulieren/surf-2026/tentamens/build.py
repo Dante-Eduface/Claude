@@ -24,10 +24,10 @@ sys.path.insert(0, str(HIER))
 
 COURSES = {
     # Mapnaam = de titel in Eduface, met " - " in plaats van ":" (Windows staat geen dubbele punt toe).
-    "mbo": ("MBO", "7. Business - tentamen micro-economie (punten)"),
-    "hbo": ("HBO", "7. Economie, Recht en Organisatie - tentamen micro-economie (punten)"),
-    "wo": ("WO", "7. Governance and Global Affairs - tentamen micro-economie (punten)"),
-    "wo_en": ("WO English", "7. Governance and Global Affairs - microeconomics exam (points)"),
+    "mbo": ("MBO", "7. Tentamen micro-economie"),
+    "hbo": ("HBO", "7. Tentamen micro-economie"),
+    "wo": ("WO", "7. Tentamen micro-economie"),
+    "wo_en": ("WO English", "7. Microeconomics exam"),
 }
 
 TEKST = {
