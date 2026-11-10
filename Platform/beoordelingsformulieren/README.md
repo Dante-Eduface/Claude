@@ -2,7 +2,7 @@
 
 Lege beoordelingsformulieren om het AI-nakijken mee te voeden of te demonstreren: de criteria staan erin, de oordelen niet.
 
-**Fase:** vier formulieren. Twee uit een aangeleverd ingevuld exemplaar (23-09-2026), twee zelf opgesteld als oefenformulier uit één bron (05-11-2026), om in Eduface te vergelijken of uitgeschreven Voldoende/Onvoldoende-teksten beter werken dan alleen criteria.
+**Fase:** zes formulieren (bijgewerkt 10-11-2026). Twee uit een aangeleverd ingevuld exemplaar (23-09-2026), twee zelf opgesteld als oefenformulier uit één bron (05-11-2026), om in Eduface te vergelijken of uitgeschreven Voldoende/Onvoldoende-teksten beter werken dan alleen criteria.
 **Volgende stap:** afwachten welk formulier Dante hierna aanlevert. Elk formulier krijgt een eigen criteria-bestand plus een regel in `FORMULIEREN` in `build.py`.
 
 | Formulier | Bron | Oordeelkolom |
@@ -11,6 +11,7 @@ Lege beoordelingsformulieren om het AI-nakijken mee te voeden of te demonstreren
 | `beoordelingsformulier-cat-mkf` | CAT MKF handleiding en feedbackformulier, Breederode Hogeschool, toetscode MKF26-WO1-CAT-1-5 | Feedback per criterium, eindoordeel onderaan |
 | `beoordelingsformulier-ma-earn-out` | zelf opgesteld oefenformulier (05-11-2026): economie-essay over een overname door KPN met earn-out, grafiek en MEDDPICC, gewicht per sectie | Lege kolom Voldoende / Onvoldoende per criterium |
 | `beoordelingsformulier-ma-earn-out-beschreven` | zelfde bron (`criteria-ma-earn-out.md`), liggend | Per criterium uitgeschreven wanneer het Voldoende en wanneer het Onvoldoende is |
+| `beoordelingsformulier-ma-earn-out-simpel` (+ `-beschreven`) | simpele versie (10-11-2026): opdracht van 3 kantjes, zelfde casus zonder waarderingsmethodes en disconteringsvoet, bron `criteria-ma-earn-out-simpel.md` | Lege kolom, of per criterium uitgeschreven Voldoende/Onvoldoende |
 
 Die twee verschillen niet omdat het mooier stond, maar omdat de bronnen verschillen: de eerste vinkt per criterium af, de tweede schrijft per criterium feedback en beoordeelt de CAT als geheel met voldaan of niet voldaan.
 

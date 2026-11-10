@@ -64,6 +64,26 @@ FORMULIEREN = [
         "beschreven": True,
         "slotvelden": ["Eindresultaat", "Feedback"],
     },
+    {
+        "bron": "criteria-ma-earn-out-simpel.md",
+        "basis": "beoordelingsformulier-ma-earn-out-simpel",
+        "titel": "Beoordelingsformulier Overnames: de earn-out",
+        "ondertitel": None,
+        "kopvelden": [],
+        "oordeelkop": "Voldoende / Onvoldoende",
+        "oordeelbreedte": 0.24,
+        "rijhoogte_cm": None,
+        "slotvelden": ["Eindresultaat", "Feedback"],
+    },
+    {
+        "bron": "criteria-ma-earn-out-simpel.md",
+        "basis": "beoordelingsformulier-ma-earn-out-simpel-beschreven",
+        "titel": "Beoordelingsformulier Overnames: de earn-out",
+        "ondertitel": None,
+        "kopvelden": [],
+        "beschreven": True,
+        "slotvelden": ["Eindresultaat", "Feedback"],
+    },
 ]
 
 
@@ -220,7 +240,7 @@ HTML_SJABLOON = """<!doctype html>
   h1 {{ font-size: 16pt; margin: 0 0 4px; }}
   .ondertitel {{ font-size: 10pt; margin: 0 0 12px; }}
   .veld {{ font-size: 11pt; margin-bottom: 3px; }}
-  table {{ width: 100%; border-collapse: collapse; margin-top: 14px; table-layout: fixed; }}
+  table {{ width: 99.6%; border-collapse: collapse; margin-top: 14px; table-layout: fixed; }}
   th, td {{ border: 1px solid #000; padding: 4px 6px; vertical-align: middle; text-align: left; }}
   th {{ background: #d9d9d9; font-weight: 700; }}
   td.oordeel, th.oordeel {{ width: {oordeelbreedte}%; text-align: center; }}
