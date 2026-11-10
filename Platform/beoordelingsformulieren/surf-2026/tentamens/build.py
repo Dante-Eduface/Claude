@@ -23,10 +23,11 @@ CHROMIUM = "/opt/pw-browsers/chromium"
 sys.path.insert(0, str(HIER))
 
 COURSES = {
-    "mbo": ("MBO", "7. Economie, tentamen micro-economie (punten)"),
-    "hbo": ("HBO", "7. Economie, tentamen micro-economie (punten)"),
-    "wo": ("WO", "7. Economie, tentamen micro-economie (punten)"),
-    "wo_en": ("WO English", "7. Economics, microeconomics exam (points)"),
+    # Mapnaam = de titel in Eduface, met " - " in plaats van ":" (Windows staat geen dubbele punt toe).
+    "mbo": ("MBO", "7. Business - tentamen micro-economie (punten)"),
+    "hbo": ("HBO", "7. Economie, Recht en Organisatie - tentamen micro-economie (punten)"),
+    "wo": ("WO", "7. Governance and Global Affairs - tentamen micro-economie (punten)"),
+    "wo_en": ("WO English", "7. Governance and Global Affairs - microeconomics exam (points)"),
 }
 
 TEKST = {
