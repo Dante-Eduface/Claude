@@ -11,8 +11,8 @@ TENTAMEN = {
     "titel": "Tentamen micro-economie",
     "niveau": "MBO niveau 4, vak Economie",
     "tijd": "60 minuten",
-    "student": "Daan Jansen",
-    "studentnummer": "MBO-238471",
+    "student": "Noor",
+    "studentnummer": "",
     "vragen": [
         {
             "nr": 1, "punten": 2, "onderwerp": "Opofferingskosten",

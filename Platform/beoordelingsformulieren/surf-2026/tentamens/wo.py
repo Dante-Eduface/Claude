@@ -7,8 +7,8 @@ TENTAMEN = {
     "titel": "Tentamen micro-economie",
     "niveau": "WO, bachelor Economie, eerste jaar",
     "tijd": "120 minuten",
-    "student": "Thomas Bakker",
-    "studentnummer": "s4417820",
+    "student": "Noor",
+    "studentnummer": "",
     "vragen": [
         {
             "nr": 1, "punten": 3, "onderwerp": "Opofferingskosten en verzonken kosten",

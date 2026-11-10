@@ -6,8 +6,8 @@ TENTAMEN = {
     "titel": "Tentamen micro-economie",
     "niveau": "HBO, propedeuse Bedrijfseconomie",
     "tijd": "90 minuten",
-    "student": "Mila de Boer",
-    "studentnummer": "HBO-5520193",
+    "student": "Noor",
+    "studentnummer": "",
     "vragen": [
         {
             "nr": 1, "punten": 2, "onderwerp": "Opofferingskosten",

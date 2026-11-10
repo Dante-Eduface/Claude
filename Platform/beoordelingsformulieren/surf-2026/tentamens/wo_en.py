@@ -7,8 +7,8 @@ TENTAMEN = {
     "titel": "Microeconomics exam",
     "niveau": "University, BSc Economics, year 1",
     "tijd": "120 minutes",
-    "student": "Thomas Bakker",
-    "studentnummer": "s4417820",
+    "student": "Noor",
+    "studentnummer": "",
     "vragen": [
         {
             "nr": 1, "punten": 3, "onderwerp": "Opportunity cost and sunk cost",

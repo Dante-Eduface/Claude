@@ -108,7 +108,7 @@ def md_correctiemodel(tn, t, totaal):
 
 def md_inzending(tn, t):
     md = f"# {t['uitwerking']} {tn['titel'].lower() if tn['taal'] == 'nl' else tn['titel'].lower()}\n\n"
-    md += f"**{t['naam']}:** {tn['student']}   **{t['nummer']}:** {tn['studentnummer']}\n\n{tn['niveau']}\n\n"
+    md += f"**{t['naam']}:** {tn['student']}\n\n{tn['niveau']}\n\n"
     for v in tn["vragen"]:
         md += f"## {t['vraag']} {v['nr']}\n\n{v['student']}\n\n"
     return md
@@ -144,8 +144,7 @@ def schrijf(md, basis):
     basis.parent.mkdir(parents=True, exist_ok=True)
     bron = basis.with_suffix(".md")
     bron.write_text(md, encoding="utf-8")
-    subprocess.run(["pandoc", str(bron), "-o", str(basis.with_suffix(".docx"))], check=True)
-    randen(basis.with_suffix(".docx"))
+    # Sinds 10-11-2026 alleen pdf (Dante wil geen docx meer).
     css = basis.parent / "_stijl.css"
     css.write_text(CSS, encoding="utf-8")
     html = basis.with_suffix(".html")
@@ -161,10 +160,8 @@ def schrijf(md, basis):
 def bestandsnamen(tn):
     niveau = COURSES[tn["code"]][0].replace(" English", "")
     if tn["taal"] == "nl":
-        return (f"Tentamen micro-economie {niveau}", f"Correctiemodel micro-economie {niveau}",
-                f"Inzending {tn['student']}")
-    return (f"Microeconomics exam {niveau}", f"Marking scheme microeconomics {niveau}",
-            f"Submission {tn['student']}")
+        return ("Correctiemodel", f"Inzending {tn['student']}")
+    return ("Marking scheme", f"Submission {tn['student']}")
 
 
 if __name__ == "__main__":
@@ -174,8 +171,8 @@ if __name__ == "__main__":
         totaal = sum(v["punten"] for v in tn["vragen"])
         course, assignment = COURSES[code]
         map_ = UIT / course / assignment
-        n_tent, n_corr, n_inz = bestandsnamen(tn)
-        schrijf(md_tentamen(tn, t, totaal), map_ / n_tent)
+        # Eduface heeft alleen het correctiemodel en de inzending nodig (feedback 10-11-2026).
+        n_corr, n_inz = bestandsnamen(tn)
         schrijf(md_correctiemodel(tn, t, totaal), map_ / n_corr)
         schrijf(md_inzending(tn, t), map_ / n_inz)
         verwacht = sum(tn["verwacht"].values())

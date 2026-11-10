@@ -65,7 +65,7 @@ th {{ background: #d9d9d9; }} tr {{ page-break-inside: avoid; }} img {{ max-widt
 
 
 def mapnaam(titel):
-    return titel.replace(":", " -")
+    return titel.replace(":", " -").replace("/", "-")
 
 
 def liggend(bron):
