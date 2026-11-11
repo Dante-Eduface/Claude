@@ -1,6 +1,6 @@
 # Open vragen
 
-_Aangelegd 19-09-2026, bijgewerkt 04-10-2026._
+_Aangelegd 19-09-2026, bijgewerkt 11-11-2026._
 
 De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat is een vraag die ik **niet zelf mag invullen**.
 
@@ -24,6 +24,7 @@ De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat 
 | W4 | Wanneer komt de NPS-meting op Enterprise er? | Tot die er is staat het doel in `current-priorities.md` als niet stuurbaar. Dante weet het nog niet. | 19-09-2026 |
 | W5 | Na twee weken deep work: welk weektarget zetten we vast? | Het schema staat op 28 uur. De eerste twee weken zijn een nulmeting. | Vanaf 03-10-2026 |
 | P11 | Wordt de vaardigheid van dit jaar "een bericht schrijven waar iemand op reageert"? | Dat volgt uit A5: als de maat geboekte gesprekken is, is dat de vaardigheid die hem bepaalt. | 19-09-2026 |
+| G21 | **Wanneer kom je terug van Curaçao?** Je vertrekt 26 januari en je salaris valt op de 28e, dus dat landt terwijl je weg bent. | Bepaalt of je de huurauto van 650 vóór vertrek al rond moet hebben, of dat je er in februari nog bij kunt. | 11-11-2026 |
 | G17 | **Waar is rekening 142509299 (Zorgverzekering) voor?** Het parkeren van de zorgtoeslag tot de premie afgeschreven wordt, of een buffer voor een heel jaar premie? | De premie van 129,45 wordt nu rechtstreeks van je betaalrekening geïncasseerd, dus het potje bouwt niets op. Bij parkeren is het doel ongeveer één maandpremie, niet de 1.548 die er nu staat. | 20-09-2026 |
 
 ## Later, geen vraag maar een richting

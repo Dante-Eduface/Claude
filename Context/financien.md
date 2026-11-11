@@ -4,7 +4,7 @@
 >
 > **Kijk vooruit, niet achteruit.** Dante op 19-09-2026: *"ik wil dat je niet zo bezig bent met het verleden, de situatie is heel anders."* De historische uitgavenanalyse uit de afschriften is daarom hier niet overgenomen. Gebruik dit bestand voor waar hij naartoe gaat, niet voor wat hij vorig jaar uitgaf.
 
-_Laatst bijgewerkt: 07-11-2026. Bron: Dante zelf, plus zijn ABN-afschriften._
+_Laatst bijgewerkt: 11-11-2026. Bron: Dante zelf, plus zijn ABN-afschriften._
 
 ## Wat er binnenkomt
 
@@ -76,6 +76,16 @@ Salaris oktober 2.146,82 binnen op 28-10. De zorgpremie voor november (129,45) i
 
 - **Zorgpotje: 129 eruit op 21-10 om de NS-rekening van 167,60 te betalen.** Dat was het plan, en het werkte. Maar hij is nooit teruggestort, en de novemberpremie ging op 30-10 alsnog goed omdat het salaris twee dagen eerder binnenkwam. Dat was timing, geen buffer. Het potje staat nu op 0,30.
 - **Curaçao: 160 eruit tussen 18 en 27 oktober**, in zes stukjes met omschrijvingen als boodschappen, ei, friet voor de fam, eerste Picnic-bestelling en broek laten maken. Dat is precies het patroon van augustus en september: het potje wordt de boodschappenpot zodra de rekening krap staat.
+
+### 11-11-2026: huurauto van 650 in februari
+
+Dante moet midden februari 2027 een huurauto van 650 betalen. Advies: **217 per salarisdag op 28 november, 28 december en 28 januari**, naast de 381 die dan al naar Curaçao gaat.
+
+Waarom niet later uit het januarisalaris in één keer: dat salaris landt op 28 januari, terwijl hij op Curaçao zit. Geld dat los op de betaalrekening staat terwijl hij op reis is, is precies het scenario waarin het in augustus, september en oktober verdween. Het salaris van februari komt pas na de betaaldatum, dus 28 januari is de laatste bruikbare salarisdag.
+
+Waarom het past: op 28 november en 28 december gaat er dan 598 weg van 2.277 die binnenkomt. Bij een maandverbruik van 1.070 tot 1.300 blijft er 380 tot 600 over. December is de krapste van de twee vanwege de feestdagen.
+
+Plek: de Savings-rekening, die op 0,25 staat en tot Curaçao rond is toch niets doet. Wel apart benoemen, want het is geen uit-huis-geld.
 
 ### Stand 06-11-2026: eerste schone maand
 
@@ -219,6 +229,7 @@ Oktober levert daar niets voor op: van de 2.261 die binnenkomt gaat 950 naar zij
 |---|---|---|
 | Curaçao | 1.700 | Naast de vlucht, die al betaald is. Reis staat geboekt, 26-01-2027. Bedrag van Dante zelf, 27-09-2026. |
 | ~~Schuld aan zijn vader~~ | ~~950~~ | **Afgelost op 28-09-2026**, direct na binnenkomst van het salaris. |
+| Huurauto | 650 | Te betalen midden februari 2027. Opgegeven door Dante op 11-11-2026. |
 | Uit huis | 7.500 | Streefdatum 01-08-2027, naar Utrecht of Rotterdam |
 | Vermogen | 10.000 | Binnen 12 maanden. Nog steeds het doel. |
 
