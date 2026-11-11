@@ -77,15 +77,21 @@ Salaris oktober 2.146,82 binnen op 28-10. De zorgpremie voor november (129,45) i
 - **Zorgpotje: 129 eruit op 21-10 om de NS-rekening van 167,60 te betalen.** Dat was het plan, en het werkte. Maar hij is nooit teruggestort, en de novemberpremie ging op 30-10 alsnog goed omdat het salaris twee dagen eerder binnenkwam. Dat was timing, geen buffer. Het potje staat nu op 0,30.
 - **Curaçao: 160 eruit tussen 18 en 27 oktober**, in zes stukjes met omschrijvingen als boodschappen, ei, friet voor de fam, eerste Picnic-bestelling en broek laten maken. Dat is precies het patroon van augustus en september: het potje wordt de boodschappenpot zodra de rekening krap staat.
 
-### 11-11-2026: huurauto van 650 in februari
+### 11-11-2026: huurauto van 650, en de reis duurt drie weken
 
-Dante moet midden februari 2027 een huurauto van 650 betalen. Advies: **217 per salarisdag op 28 november, 28 december en 28 januari**, naast de 381 die dan al naar Curaçao gaat.
+**Curaçao is 26 januari tot 16 februari 2027.** Opgegeven door Dante op 11-11-2026. Drie weken.
 
-Waarom niet later uit het januarisalaris in één keer: dat salaris landt op 28 januari, terwijl hij op Curaçao zit. Geld dat los op de betaalrekening staat terwijl hij op reis is, is precies het scenario waarin het in augustus, september en oktober verdween. Het salaris van februari komt pas na de betaaldatum, dus 28 januari is de laatste bruikbare salarisdag.
+De huurauto van 650 moet midden februari betaald worden, dus **terwijl hij nog weg is of op de dag dat hij terugkomt**. Daarmee vervalt het idee om dat uit het januarisalaris te doen zodra hij thuis is.
 
-Waarom het past: op 28 november en 28 december gaat er dan 598 weg van 2.277 die binnenkomt. Bij een maandverbruik van 1.070 tot 1.300 blijft er 380 tot 600 over. December is de krapste van de twee vanwege de feestdagen.
+**Advies: 325 per salarisdag op 28 november en 28 december**, naast de 381 die dan al naar Curaçao gaat. Dan staat de 650 compleet vóór hij vertrekt en hoeft hij vanaf het eiland alleen nog over te maken.
+
+Waarom niet over drie salarisdagen uitsmeren: de derde is 28 januari en die landt terwijl hij op Curaçao zit. Geld dat dan los op de betaalrekening staat is precies het scenario waarin het in augustus, september en oktober verdween.
+
+Waarom het past: op beide salarisdagen gaat er 706 weg van de 2.277 die binnenkomt. In november blijft er ruim over. December is de krapste, want feestdagen plus Sinterklaasavond en het Amsterdam Throwdown-event; reken daar op 1.300 verbruik en het blijft net passen.
 
 Plek: de Savings-rekening, die op 0,25 staat en tot Curaçao rond is toch niets doet. Wel apart benoemen, want het is geen uit-huis-geld.
+
+**Openstaand punt bij de reis zelf:** de 1.700 is bedoeld voor drie weken, dus ongeveer 81 per dag. Of dat klopt hangt ervan af of het verblijf al betaald is. Staat als G22 open.
 
 ### Stand 06-11-2026: eerste schone maand
 
