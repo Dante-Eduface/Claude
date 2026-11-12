@@ -17,7 +17,7 @@ _Laatst bijgewerkt: 12-11-2026._
 
 ## Sport en lichaam
 
-Gestopt met American football (Düsseldorf Panthers, nickel). Niet professioneel: speelde in het eerste jeugdteam, in de Duitse topcompetitie voor de jeugd. "Ex American football player" klopt, "ex pro" niet (12-11-2026). Daarmee vervallen de reizen van drie keer per week naar Düsseldorf. **Er komt geen competitieve sport voor in de plaats.**
+Gestopt met American football (Düsseldorf Panthers, nickel). Niet professioneel: speelde in het eerste jeugdteam, in de Duitse topcompetitie voor de jeugd. Loopbaan (12-11-2026): begonnen op 14 bij een lokale club in zijn eigen stad, op 16 naar een sterker Nederlands team, op 17 aanvoerder van het Nederlands team, op 19 in Duitsland met drie keer per week drie uur reizen. Kreeg een aanbod om college football in de VS te spelen, sloeg dat af en stopte helemaal om zich op Eduface te richten. "Ex American football player" klopt, "ex pro" niet (12-11-2026). Daarmee vervallen de reizen van drie keer per week naar Düsseldorf. **Er komt geen competitieve sport voor in de plaats.**
 
 ### Wat hij wil, en wat hij niet wil
 
