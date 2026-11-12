@@ -4,7 +4,7 @@
 >
 > **Niets invullen wat je kunt navragen.** Alles wat open is staat in `Context/open-vragen.md`.
 
-_Laatst bijgewerkt: 20-09-2026, na twee rondes antwoorden van Dante zelf._
+_Laatst bijgewerkt: 12-11-2026._
 
 ## Basis
 
@@ -24,6 +24,8 @@ Gestopt met American football (Düsseldorf Panthers, nickel). Daarmee vervallen 
 Zijn twee prioriteiten voor gezondheid, letterlijk: **goede intensiteit tijdens gymsessies** en **goed eten**. Verder niks.
 
 **Geen metingen meer.** Geen InBody, nu niet en later niet. Gewicht en lichaamsdata interesseren hem niet. Kom dus niet met tracking, grafieken of een dashboard om zijn lichaam te meten, en stel geen doel in kilo's voor: *"ik heb niet echt een gewichtdoel, ik wil gewoon groter worden."*
+
+**Wat hij nu wil (12-11-2026):** tevreden met zijn lichaam, wil naar het volgende niveau: grotere spieren, strak en lean, zonder een vetpercentage als doel. Geen cardio. De core ziet hij zelf als grootste aandachtspunt.
 
 **Geen app bouwen.** De trainingsapp met login en database uit de oude handoff is van de baan.
 
