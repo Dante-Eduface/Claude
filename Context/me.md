@@ -1,10 +1,11 @@
 # Dante
 
-_Laatst bijgewerkt: 2026-09-20._
+_Laatst bijgewerkt: 2026-11-12._
 
 - **Naam:** Dante Torbed
 - **Geboren:** 17-08-2006. Leeftijd zelf uitrekenen tegen de datum van vandaag, nooit een getal hier neerzetten. (Op 19-09-2026: 20.)
 - **Rol:** Customer Success Manager bij Eduface. Wat Eduface is en wie er werken: `Context/eduface.md`.
+- **Eerste medewerker van Eduface** en heeft 500+ meetings met mensen uit het onderwijs gevoerd (12-11-2026). Op LinkedIn mag hij "founding team" gebruiken.
 - **Woont:** Leiden. Kantoor staat in Utrecht, die verhuizing is achter de rug.
 - **Tijdzone:** Europe/Amsterdam
 - **Opleiding:** MBO-4 diploma behaald, Business Administration / Control Specialist. Geen HBO of MBA, bewust niet: hij wil kennis die hij nu kan toepassen, niet een papiertje. Eduface is zijn business school.

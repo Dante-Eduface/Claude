@@ -1,6 +1,6 @@
 # Eduface
 
-_Laatst bijgewerkt: 2026-10-02._
+_Laatst bijgewerkt: 2026-11-12._
 
 Het bedrijf waar Dante werkt. Juridisch heet het **Blockbook B.V.**, daar komt zijn salaris ook vandaan. Naar buiten is alles Eduface. Dit bestand is alleen het minimum dat elke sessie nodig heeft: wat we verkopen, aan wie, en wie er werkt. Alles wat dieper gaat staat in een eigen bestand, zie **Waar de details staan**.
 
@@ -36,7 +36,9 @@ Universiteiten en hogescholen, én particuliere onderwijsinstellingen. Markten: 
 | **Menno Hahury** | CTO en medeoprichter. Bouwt het product. |
 | **Samuel Rafini** | Senior Engineer. Bouwt het product. |
 | **Tjarko Kwee** | Sales adviseur en angel investor in Eduface. Wekelijkse sales sessie met Jeroen en Dante. |
-| **Dante Torbed** | Customer Success Manager. Zie `Context/me.md`. |
+| **Dante Torbed** | Customer Success Manager, eerste medewerker (12-11-2026). Zie `Context/me.md`. |
+
+**Op Dante's LinkedIn-profiel geen instelling of investeerder bij naam noemen** (12-11-2026). Geldt voor zijn profiel, niet automatisch voor andere uitingen.
 
 Wie eigenaar is van een deal verschilt per deal en staat in Close, bij de opportunity. Niet hier bijhouden.
 
