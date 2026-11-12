@@ -5,7 +5,7 @@ _Laatst bijgewerkt: 2026-11-12._
 - **Naam:** Dante Torbed
 - **Geboren:** 17-08-2006. Leeftijd zelf uitrekenen tegen de datum van vandaag, nooit een getal hier neerzetten. (Op 19-09-2026: 20.)
 - **Rol:** Customer Success Manager bij Eduface. Wat Eduface is en wie er werken: `Context/eduface.md`.
-- **Eerste medewerker van Eduface** en heeft in de afgelopen 3+ jaar 500+ meetings met mensen uit het onderwijs gevoerd (12-11-2026). Op LinkedIn mag hij "founding team" gebruiken. De founders hebben hem gerekruteerd bij Cliq Talents, waar hij parttime Business Developer was (aug 2023 tot mei 2024).
+- **Eerste medewerker van Eduface** en heeft in de afgelopen 3+ jaar 500+ meetings met mensen uit het onderwijs gevoerd (12-11-2026). Op LinkedIn mag hij "founding team" gebruiken. Begonnen bij Eduface in december 2023. De founders hebben hem gerekruteerd bij Cliq Talents, waar hij in augustus 2023 begon als parttime Business Developer (tot mei 2024).
 - **Eerste onderneming:** begon op 14 met het verkopen van sneakers (12-11-2026).
 - **Woont:** Leiden. Kantoor staat in Utrecht, die verhuizing is achter de rug.
 - **Tijdzone:** Europe/Amsterdam
