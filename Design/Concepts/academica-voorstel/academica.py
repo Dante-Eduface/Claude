@@ -17,12 +17,9 @@ page(MAP, '1-voorstel', f'''
 <p class="statement">Dat is een concrete invulling van het koerspunt efficiëntie.</p>
 <div class="stack">
   <div class="duo">
-    <section class="card tertiary"><div class="label">Nu</div><div class="num" style="margin-top:3mm">€ 37.000</div><p class="desc">Feedback voor de helft</p>{dots(10)}</section>
-    <section class="card primary"><div class="label">Met Eduface</div><div class="num" style="margin-top:3mm">€ 18.000</div><p class="desc">Feedback voor elke student</p>{dots(20)}</section>
+    <section class="card tertiary"><div class="label">Nu</div><div class="num" style="margin-top:3mm">€ 32.400</div><p class="desc">Wat het nakijken nu per jaar kost</p></section>
+    <section class="card primary"><div class="label">Met Eduface</div><div class="num" style="margin-top:3mm">€ 18.000</div><p class="desc">Starttarief op jaarbasis: € 3,75 per student per maand</p></section>
   </div>
-  <p class="small" style="margin-top:3mm">Elk poppetje staat voor 5% van de studenten.</p>
-  <section class="card secondary"><div class="num">76% goedkoper</div><p class="desc">per student die feedback krijgt</p></section>
-  {todo("De € 37.000 is uitgerekend met een model. Tot de EB-meeting hebben we wat meer tijd, dus kunnen we nauwkeuriger in kaart brengen hoeveel Eduface bespaart. Voorstel: samen met de controller bekijken wat het nakijken nu intern en extern kost. Die cijfers vervangen dan de bedragen hierboven.")}
 </div>''')
 
 # 02 Uitdaging (nieuw): het nakijkprobleem, met theorie en praktijk als blikvanger
@@ -45,7 +42,6 @@ page(MAP, '2-uitdaging', f'''
     <p class="desc">Nieuwe nakijkers trainen duurt lang, en de uren lopen op.</p>
   </section>
   <p class="note" style="margin-top:10mm">De huidige doorlooptijd is 1 week voor formatieve feedback op conceptstukken en 4 weken voor een summatieve beoordeling. Met Eduface kan die mogelijk aanzienlijk korter worden.</p>
-  {todo("Tijdens de meeting vroegen we wat de uitdaging is. Je antwoord was: feedback voor iedereen. Dat is nog te weinig om de huidige uitdaging goed in kaart te brengen. Wat hierboven staat komt uit onze eerste meeting. Kun je het aanvullen? Dan komt het hier te staan.")}
 </div>''')
 
 # 03 Kosten (ongewijzigd)
@@ -212,8 +208,16 @@ page(MAP, '10-risicoanalyse', f'''
 + risk('Nieuwe AI-wetgeving', ['AI Act: hoog risico, verplichtingen vanaf eind 2027.', 'AI-geletterdheid docenten, verplicht sinds feb. 2025.'], 'Laag tot middel', 'secondary')
 + '\n</div>')
 
-# 11 Vervolgstappen: leeg tot het go-live-plan er is
+# 11 Vervolgstappen: afspraken uit de agenda (12-11-2026)
+def stap(datum, titel, tekst, soort='tertiary'):
+    return f'''<section class="card {soort}" style="display:grid;grid-template-columns:34mm 1fr;gap:6mm;align-items:start;padding:7mm 9mm">
+  <div><div class="label">Maandag</div><div class="num" style="font-size:24pt;margin-top:1mm">{datum}</div></div>
+  <div><h2>{titel}</h2><p class="desc">{tekst}</p></div>
+</section>'''
 page(MAP, '11-vervolgstappen', f'''
 <h1>Vervolgstappen</h1>
-{todo("Hier komen onderdelen uit het go-live-plan. Die staan in de definitieve businesscase.", "Volgt")}
-''')
+<div class="stack">
+  {stap("16 nov", "De vervolgstappen in kaart", "Marjolein en Dante brengen samen de rest van de vervolgstappen in kaart.", "secondary")}
+  {stap("23 nov", "Businesscase en besluit", "Academica en Eduface bespreken de businesscase en besluiten over de vervolgstappen.", "primary")}
+  {stap("30 nov", "Testochtend", "Eduface-testochtend bij Academica, Weteringschans 28 in Amsterdam, van 09:30 tot 11:00.")}
+</div>''')

@@ -1,6 +1,6 @@
 # Academica University of Applied Sciences
 
-_Laatst bijgewerkt: 2026-11-03._
+_Laatst bijgewerkt: 2026-11-12._
 
 ## Wat is dit
 Lopende deal. Businesscase in A4-vorm, gebouwd met de skill `/business-case-design`: `Design/Concepts/academica-voorstel/` (elf pagina's, versie 03-11-2026). Dealstand en eigenaar: Close.
@@ -25,5 +25,10 @@ Lopende deal. Businesscase in A4-vorm, gebouwd met de skill `/business-case-desi
 - Inhoudelijke ervaringen van andere instellingen (case Hogeschool Rotterdam, lerarenopleiding).
 - Vervolgstappen: testen met docenten, training, hoe ze zien dat het werkt.
 
+## Afspraken
+- 16-11-2026: Marjolein en Dante brengen de rest van de vervolgstappen in kaart.
+- 23-11-2026: businesscase en besluit over de vervolgstappen.
+- 30-11-2026: Eduface-testochtend bij Academica, Weteringschans 28, Amsterdam, 09:30 tot 11:00.
+
 ## Volgende stap
-Versie met elf pagina's gebouwd (03-11-2026). Bijgewerkt met de casestudy BDK en het nagebouwde NEO-scherm. Gaat eerst naar Marjolein, met gele open punten: de € 37.000 bij de controller navragen, onze ervaring met het vierogenprincipe (volgt van Eduface), en welke docenten en modules mee kunnen testen. Go-live-plan voor Vervolgstappen volgt.
+Definitieve businesscase opgeleverd op 12-11-2026 (`Design/Concepts/academica-voorstel/academica-businesscase-definitief.pdf` en `-bewerkbaar.pptx`). Kosten nu volgens Marjolein: € 32.400. Met Eduface: € 18.000 starttarief op jaarbasis.
