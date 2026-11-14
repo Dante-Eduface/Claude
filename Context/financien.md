@@ -4,7 +4,7 @@
 >
 > **Kijk vooruit, niet achteruit.** Dante op 19-09-2026: *"ik wil dat je niet zo bezig bent met het verleden, de situatie is heel anders."* De historische uitgavenanalyse uit de afschriften is daarom hier niet overgenomen. Gebruik dit bestand voor waar hij naartoe gaat, niet voor wat hij vorig jaar uitgaf.
 
-_Laatst bijgewerkt: 11-11-2026. Bron: Dante zelf, plus zijn ABN-afschriften._
+_Laatst bijgewerkt: 14-11-2026. Bron: Dante zelf, plus zijn ABN-afschriften._
 
 ## Wat er binnenkomt
 
@@ -76,6 +76,24 @@ Salaris oktober 2.146,82 binnen op 28-10. De zorgpremie voor november (129,45) i
 
 - **Zorgpotje: 129 eruit op 21-10 om de NS-rekening van 167,60 te betalen.** Dat was het plan, en het werkte. Maar hij is nooit teruggestort, en de novemberpremie ging op 30-10 alsnog goed omdat het salaris twee dagen eerder binnenkwam. Dat was timing, geen buffer. Het potje staat nu op 0,30.
 - **Curaçao: 160 eruit tussen 18 en 27 oktober**, in zes stukjes met omschrijvingen als boodschappen, ei, friet voor de fam, eerste Picnic-bestelling en broek laten maken. Dat is precies het patroon van augustus en september: het potje wordt de boodschappenpot zodra de rekening krap staat.
+
+### Stand 12-11-2026
+
+| Pot | Stand |
+|---|---|
+| Betaalrekening | 512,83 |
+| Curaçao | 937,85 |
+| Zorgverzekering | 129,75 |
+| Savings | 0,25 |
+| **Totaal** | **1.580,68** |
+
+**De potjes staan nog steeds onaangeroerd sinds 31 oktober.** Tweede maand op rij.
+
+November tot nu: 672,50 uitgegeven, waarvan 383 vast (NS 223 in twee termijnen, huur 100, kapper 60), 49 boodschappen en 241 rest.
+
+**Die 241 rest is bijna helemaal één post: een zorgnota van Infomedics van 189,03 op 9 november.** Daar komen rekeningen van tandarts, fysio en dergelijke doorheen. Zonder die nota is zijn vrije uitgave deze maand 52 euro in twaalf dagen, dus ruim onder zijn gemiddelde van 119 per week. **Te checken: is die nota ingediend bij de zorgverzekeraar.** Staat als G23 open.
+
+Het plan voor 28 november blijft staan: 381 naar Curaçao en 325 naar de huurauto. Met 512,83 nu en nog zestien dagen te gaan haalt hij de salarisdag ruim.
 
 ### 11-11-2026: huurauto van 650, en de reis duurt drie weken
 

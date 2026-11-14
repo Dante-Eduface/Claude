@@ -30,7 +30,11 @@ NAAM = [('ns groep', 'NS'), ('ns reizigers', 'NS'), ('nl56deut0265186420', 'NS')
         ('she ceo', 'She CEO'), ('north end', 'Café'), ('kraantj', 'Café'),
         ('copa', 'Café'), ('hasta la vista', 'Café'), ('oliebollen', 'Oliebollen'),
         ('one hundred', 'Café'), ('sinai', 'Steakhouse'), ('digros', 'Digros'),
-        ('gofast', 'Fietsenwinkel'), ('tivoli', 'TivoliVredenburg')]
+        ('gofast', 'Fietsenwinkel'), ('tivoli', 'TivoliVredenburg'),
+        ('nl34abna0243240058', 'Infomedics (zorgnota)'),
+        ('infomedics', 'Infomedics (zorgnota)'), ('zalando', 'Zalando'),
+        ('bruna', 'Bruna'), ('tikkie', 'Tikkie'), ('klm', 'KLM'),
+        ('paylogic', 'Tickets'), ('bol.com', 'bol.com')]
 # eigen rekeningen: overboekingen hiertussen zijn geen uitgave
 EIGEN = ['0882235753', '0884479609', '0118499882', '0142509299']
 BETAAL = '882235753'
@@ -74,8 +78,10 @@ def lees(map_):
 
 def naam(oms):
     laag = oms.lower()
+    # MT940 breekt regels af midden in een woord of IBAN; zoek ook zonder spaties
+    plat = laag.replace(' ', '')
     for sleutel, label in NAAM:
-        if sleutel in laag:
+        if sleutel in laag or sleutel.replace(' ', '') in plat:
             return label
     m = re.search(r'BEA,?\s*(?:Apple Pay|Betaalpas|APPLE PAY|BETAALPAS)\s+'
                   r'([A-Za-z0-9*.\' -]{3,22})', oms)

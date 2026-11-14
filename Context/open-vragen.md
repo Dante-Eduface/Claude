@@ -1,6 +1,6 @@
 # Open vragen
 
-_Aangelegd 19-09-2026, bijgewerkt 11-11-2026._
+_Aangelegd 19-09-2026, bijgewerkt 14-11-2026._
 
 De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat is een vraag die ik **niet zelf mag invullen**.
 
@@ -24,6 +24,7 @@ De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat 
 | W4 | Wanneer komt de NPS-meting op Enterprise er? | Tot die er is staat het doel in `current-priorities.md` als niet stuurbaar. Dante weet het nog niet. | 19-09-2026 |
 | W5 | Na twee weken deep work: welk weektarget zetten we vast? | Het schema staat op 28 uur. De eerste twee weken zijn een nulmeting. | Vanaf 03-10-2026 |
 | P11 | Wordt de vaardigheid van dit jaar "een bericht schrijven waar iemand op reageert"? | Dat volgt uit A5: als de maat geboekte gesprekken is, is dat de vaardigheid die hem bepaalt. | 19-09-2026 |
+| G23 | **Heb je de zorgnota van Infomedics van 189,03 ingediend?** Afgeschreven op 9 november. | Infomedics int voor tandarts, fysio en dergelijke. Afhankelijk van je polis krijg je er iets of alles van terug, en 189 is bijna een hele maand vrij besteedbaar geld. | 14-11-2026 |
 | G22 | **Zit het verblijf op Curaçao al in de 1.700, of komt dat er nog bij?** De reis duurt drie weken, dus 1.700 is ongeveer 81 per dag. | Met verblijf erin is dat krap, zonder verblijf is het ruim. Het verschil bepaalt of je in december nog moet bijsparen. | 11-11-2026 |
 | G17 | **Waar is rekening 142509299 (Zorgverzekering) voor?** Het parkeren van de zorgtoeslag tot de premie afgeschreven wordt, of een buffer voor een heel jaar premie? | De premie van 129,45 wordt nu rechtstreeks van je betaalrekening geïncasseerd, dus het potje bouwt niets op. Bij parkeren is het doel ongeveer één maandpremie, niet de 1.548 die er nu staat. | 20-09-2026 |
 
