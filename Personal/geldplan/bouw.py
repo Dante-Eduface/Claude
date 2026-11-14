@@ -31,8 +31,8 @@ NAAM = [('ns groep', 'NS'), ('ns reizigers', 'NS'), ('nl56deut0265186420', 'NS')
         ('copa', 'Café'), ('hasta la vista', 'Café'), ('oliebollen', 'Oliebollen'),
         ('one hundred', 'Café'), ('sinai', 'Steakhouse'), ('digros', 'Digros'),
         ('gofast', 'Fietsenwinkel'), ('tivoli', 'TivoliVredenburg'),
-        ('nl34abna0243240058', 'Infomedics (zorgnota)'),
-        ('infomedics', 'Infomedics (zorgnota)'), ('zalando', 'Zalando'),
+        ('nl34abna0243240058', 'Tandarts (Infomedics)'),
+        ('infomedics', 'Tandarts (Infomedics)'), ('zalando', 'Zalando'),
         ('bruna', 'Bruna'), ('tikkie', 'Tikkie'), ('klm', 'KLM'),
         ('paylogic', 'Tickets'), ('bol.com', 'bol.com')]
 # eigen rekeningen: overboekingen hiertussen zijn geen uitgave
