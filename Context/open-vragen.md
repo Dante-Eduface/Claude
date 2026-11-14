@@ -24,7 +24,6 @@ De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat 
 | W4 | Wanneer komt de NPS-meting op Enterprise er? | Tot die er is staat het doel in `current-priorities.md` als niet stuurbaar. Dante weet het nog niet. | 19-09-2026 |
 | W5 | Na twee weken deep work: welk weektarget zetten we vast? | Het schema staat op 28 uur. De eerste twee weken zijn een nulmeting. | Vanaf 03-10-2026 |
 | P11 | Wordt de vaardigheid van dit jaar "een bericht schrijven waar iemand op reageert"? | Dat volgt uit A5: als de maat geboekte gesprekken is, is dat de vaardigheid die hem bepaalt. | 19-09-2026 |
-| G23 | **Heb je een aanvullende tandartsverzekering bij Zorg en Zekerheid?** De tandartsnota van 189,03 op 9 november is via Infomedics betaald. | Voor volwassenen zit de tandarts niet in de basisverzekering. Heb je geen aanvullende dekking, dan valt er niets te declareren en is dit een jaarlijkse kostenpost die in je plan hoort. Heb je die wel, dan staat er geld voor je klaar. | 14-11-2026 |
 | G22 | **Zit het verblijf op Curaçao al in de 1.700, of komt dat er nog bij?** De reis duurt drie weken, dus 1.700 is ongeveer 81 per dag. | Met verblijf erin is dat krap, zonder verblijf is het ruim. Het verschil bepaalt of je in december nog moet bijsparen. | 11-11-2026 |
 | G17 | **Waar is rekening 142509299 (Zorgverzekering) voor?** Het parkeren van de zorgtoeslag tot de premie afgeschreven wordt, of een buffer voor een heel jaar premie? | De premie van 129,45 wordt nu rechtstreeks van je betaalrekening geïncasseerd, dus het potje bouwt niets op. Bij parkeren is het doel ongeveer één maandpremie, niet de 1.548 die er nu staat. | 20-09-2026 |
 
@@ -77,6 +76,7 @@ Blijft staan zodat zichtbaar is wat er al gevraagd is. Alles hieronder is op 19-
 | Klopt het dat je di en do eerder stopt met werken voor de gym? | Ja, bewust. | `Context/personal.md` |
 | Gewichtdoel 92 tot 96 kg? | Geen gewichtdoel. Hij wil gewoon groter worden. | `Context/personal.md` |
 | Waarom staat Jeroen's naam op je voedingsdocument? | Kladartefact, ze werken in hetzelfde document. De cijfers zijn van Dante. | `Context/personal.md` |
+| G23, heb je een aanvullende tandartsverzekering. | Nee. Alleen de Zorg Gemak Polis, de basisverzekering. Tandarts en mondhygiënist zijn volledig eigen rekening, declareren heeft geen zin. | `Context/financien.md` |
 | G21, wanneer kom je terug van Curaçao. | 16 februari 2027. De reis duurt dus drie weken, van 26 januari tot 16 februari. | `Context/financien.md` |
 | G20, klopte de dubbele zorgpremie van 28 en 30 september. | Ja. Het polissaldo staat op nul, dus het waren twee verschillende maanden en er valt niets terug te vragen. | `Context/financien.md` |
 | G19, zit de vlucht in het Curaçao-bedrag. | Nee. Hij heeft 1.700 nodig naast de vlucht, die al betaald is en als schuld van 950 aan zijn vader loopt. | `Context/financien.md` |

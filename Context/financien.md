@@ -93,9 +93,42 @@ November tot nu: 672,50 uitgegeven, waarvan 383 vast (NS 223 in twee termijnen, 
 
 **Die 241 rest is bijna helemaal één post: de tandarts, 189,03 op 9 november via Infomedics** (bevestigd door Dante op 14-11-2026). Zonder die nota is zijn vrije uitgave deze maand 52 euro in twaalf dagen, dus ruim onder zijn gemiddelde van 119 per week.
 
-**De tandarts zit voor volwassenen niet in de basisverzekering.** Alleen met een aanvullende tandartsverzekering krijgt hij hier iets van terug. Of hij die heeft is niet bekend en staat als G23 open. Zonder aanvullende dekking is indienen zinloos en is dit gewoon een kostenpost.
+**Hij heeft geen aanvullende tandartsverzekering** (G23 beantwoord op 14-11-2026). Alleen de Zorg Gemak Polis, de basisverzekering van 129,45 per maand bij Zorg en Zekerheid. Op hun vergoedingenpagina staat bij "Tandarts en mondhygiënist vanaf 18 jaar" voor 2026: geen vergoeding. **Tandarts en mondhygiënist zijn dus volledig eigen rekening, declareren heeft geen zin.** Niet opnieuw voorstellen om een nota in te dienen.
 
-**Behandel de tandarts als een jaarlijkse vaste post, niet als een verrassing.** Eén of twee bezoeken per jaar van rond de 190 is ruwweg 16 tot 32 euro per maand. Nu viel het in een maand waarin al 706 vastligt voor Curaçao en de huurauto; dat ging goed, maar niet omdat het gepland was.
+**De factuur van 189,03 is al betaald**, op 9 november via iDEAL. De 9 december op de factuur was de uiterste datum, niet een openstaande post. Opbouw, exact de NZa-maximumtarieven: intake C001 57,01 + kaakoverzichtsfoto X21 90,02 + twee kleine röntgenfoto's X10 2x 21,00.
+
+### Wat de tandarts hem per jaar kost
+
+Tarieven uit de NZa-tariefbeschikking TB/REG-26616-01, geldig 1 januari tot 31 december 2026. Dit zijn maximumtarieven en zijn praktijk rekent ze precies zo, want de factuur klopt tot de cent.
+
+| Prestatie | Code | Tarief |
+|---|---|---|
+| Periodieke controle | C002 | 28,51 |
+| Kleine röntgenfoto | X10 | 21,00 |
+| Mondhygiëne, per vijf minuten | M01, M02, M03 | 16,82 |
+
+**De mondhygiënist rekent per vijf minuten, dus 201,84 per uur.** Een halfuur behandeltijd is 100,92, drie kwartier is 151,38. Dat maakt de mondhygiënist zijn grootste tandpost, groter dan de controles.
+
+Zijn eigen plan (14-11-2026): controle om het jaar, mondhygiëne 1x per jaar. Zijn tandarts zet standaard elk halfjaar een controle, en er staat er al een over zes maanden.
+
+- Twee controles plus één mondhygiënist: **ongeveer 170 tot 220 per jaar**
+- Eén controle per twee jaar plus één mondhygiënist: **ongeveer 115 tot 165 per jaar**
+
+Reken op **20 euro per maand** als vaste post. Dat dekt de bovenkant en bouwt in een rustig jaar buffer op.
+
+### Waarom geen aanvullende tandartsverzekering (advies 14-11-2026)
+
+De pakketten van Zorg en Zekerheid voor 2027, dekking tandarts per jaar: AV-Gemak 75% tot 250 (het pakket dat bij de Zorg Gemak Polis hoort), AV-Standaard en AV-Sure controles 100% en rest 75% tot 150, AV-Top tot 500. **De premies voor 2027 stonden op 14-11-2026 nog op "nnb".**
+
+Drie redenen om het niet te doen, die niet van de premie afhangen:
+
+1. **Bij 75% vergoeding loont het alleen als de premie onder 0,75 x zijn jaaruitgave blijft.** Bij 170 per jaar is dat 10,60 per maand, bij 220 per jaar 13,75. Die pakketten zitten daar historisch boven.
+2. **Het plafond maakt het zinloos als ramppolis.** Een kroon of wortelkanaal kost 300 tot 800 en meer. AV-Gemak stopt bij 250. Het dekt dus precies niet het enige tandartsgeval dat zijn plan echt zou breken.
+3. **Geen enkel pakket noemt de mondhygiënist**, en dat is zijn grootste post. Alleen "tandarts" staat er. Is de mondhygiënist niet gedekt, dan verzekert hij 57 euro controles per jaar.
+
+**Alternatief: zelf verzekeren via het zorgpotje.** Dat potje staat op 129,75 en is "vol" met één maandpremie, dus het doet nu niets. Tandarts erbij als tweede taak, 20 per maand, geen plafond en geen premie die weg is. Hangt samen met G17, wat dat potje precies is.
+
+Zou de premie van AV-Gemak onder de 10 euro per maand uitkomen, dan is het het narekenen waard. Aanpassen of overstappen kan tot en met 31 december 2026.
 
 Het plan voor 28 november blijft staan: 381 naar Curaçao en 325 naar de huurauto. Met 512,83 nu en nog zestien dagen te gaan haalt hij de salarisdag ruim.
 
