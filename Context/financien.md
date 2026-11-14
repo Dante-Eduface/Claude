@@ -91,7 +91,11 @@ Salaris oktober 2.146,82 binnen op 28-10. De zorgpremie voor november (129,45) i
 
 November tot nu: 672,50 uitgegeven, waarvan 383 vast (NS 223 in twee termijnen, huur 100, kapper 60), 49 boodschappen en 241 rest.
 
-**Die 241 rest is bijna helemaal één post: een zorgnota van Infomedics van 189,03 op 9 november.** Daar komen rekeningen van tandarts, fysio en dergelijke doorheen. Zonder die nota is zijn vrije uitgave deze maand 52 euro in twaalf dagen, dus ruim onder zijn gemiddelde van 119 per week. **Te checken: is die nota ingediend bij de zorgverzekeraar.** Staat als G23 open.
+**Die 241 rest is bijna helemaal één post: de tandarts, 189,03 op 9 november via Infomedics** (bevestigd door Dante op 14-11-2026). Zonder die nota is zijn vrije uitgave deze maand 52 euro in twaalf dagen, dus ruim onder zijn gemiddelde van 119 per week.
+
+**De tandarts zit voor volwassenen niet in de basisverzekering.** Alleen met een aanvullende tandartsverzekering krijgt hij hier iets van terug. Of hij die heeft is niet bekend en staat als G23 open. Zonder aanvullende dekking is indienen zinloos en is dit gewoon een kostenpost.
+
+**Behandel de tandarts als een jaarlijkse vaste post, niet als een verrassing.** Eén of twee bezoeken per jaar van rond de 190 is ruwweg 16 tot 32 euro per maand. Nu viel het in een maand waarin al 706 vastligt voor Curaçao en de huurauto; dat ging goed, maar niet omdat het gepland was.
 
 Het plan voor 28 november blijft staan: 381 naar Curaçao en 325 naar de huurauto. Met 512,83 nu en nog zestien dagen te gaan haalt hij de salarisdag ruim.
 
