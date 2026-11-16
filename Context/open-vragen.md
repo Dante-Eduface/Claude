@@ -1,6 +1,6 @@
 # Open vragen
 
-_Aangelegd 19-09-2026, bijgewerkt 02-10-2026._
+_Aangelegd 19-09-2026, bijgewerkt 16-11-2026._
 
 De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat is een vraag die ik **niet zelf mag invullen**.
 
@@ -32,6 +32,9 @@ De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat 
 | V9 | Hoe lang blijven back-ups bewaard nadat een opdracht is verwijderd? | "Verwijderd op verzoek" moet ook voor back-ups kloppen. | 02-10-2026 |
 | V10 | **Risicoprofiel onder de AI Act, per gebruik.** Voorstel: formatieve feedback zonder scores = laag (onderbouwing onder art. 6 lid 3 vastleggen), summatief scoren = hoog (bijlage III, leerresultaten beoordelen). Bevestig je dat, en wat is de situatie bij de RBS? | Een instelling vraagt het letterlijk (RBS-vragenlijst). "Geen scores" alleen is geen vrijbrief, bijlage III noemt ook leerresultaten die het leerproces sturen. | 02-10-2026 |
 | V11 | Werkt alles in de browser zonder lokale installatie, kunnen functies per instelling aan en uit, wat moet een instelling technisch inrichten (LMS-koppeling, SSO, accountbeheer), en kunnen studenten zelf verwijderen? | Staat geel in `GTM/Knowledge/privacy-vragenlijsten/antwoorden-privacy-it-vragen-2026-10-02.docx`. | 02-10-2026 |
+| PR1 | **Instellingsbreed of per actieve student?** `GTM/Pricing/prijsmodel-psu-26-27.md` zegt "alle studenten van de opleider", het contract (art. 5) rekent alleen studenten met een verwerkte inlevering. Welke geldt? | Bepaalt of de dealwaarde N × 36 is of N × p × m × 3. Zie `GTM/Pricing/dealwaarde-berekening.md`. | 16-11-2026 |
+| PR2 | **Is art. 5.4 zo bedoeld?** Met LMS-koppeling blijft een student tellen zolang hij ingeschreven staat, ook zonder inleveringen. Zonder koppeling tot 6 maanden na de laatste inlevering. | Een student van 3 maanden kost de klant dan 9 tot 12 maanden. Gunstig voor ons, maar een inkoper die het leest gaat erop duwen. | 16-11-2026 |
+| PR3 | Gaat de gemiddelde dealwaarde van 50.000 over jaar 1, over de looptijd, of over het plafond? | Met realistische adoptie in jaar 1 vraagt 50.000 zo'n 8.300 studenten in plaats van 1.389. | 16-11-2026 |
 | V12 | Continuïteit van het bedrijf zelf (financiering, team, exit- of escrowregeling) en het aantal getekende verwerkersovereenkomsten met Nederlandse instellingen. | Zelfde vragenlijst, vraag 9 en 12. | 02-10-2026 |
 
 ## Later, geen vraag maar een richting
