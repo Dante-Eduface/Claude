@@ -21,7 +21,7 @@
     ],
     [
       "Beoogde go-livedatum",
-      "Te bevestigen na de Eduface-testochtend op 30 nov 2026. Eerst met een selecte groep docenten of studenten. Academica heeft ongeveer 350 actieve studenten."
+      "Te bevestigen na de Eduface-testochtend op 30 nov 2026. Eerst met de vakken die als eerste met Eduface werken. Academica heeft ongeveer 350 actieve studenten."
     ],
     [
       "Prijs per student per maand",
@@ -115,14 +115,14 @@
       "Afgerond"
     ],
     [
-      "Prijs en testaanpak besproken: de koppeling met NEO LMS en feedback op praktijkgerichte opdrachten valideren",
+      "Prijs en testaanpak besproken",
       "Marjolein Looij en Dante Torbed",
       "1 okt 2026",
       "Afgerond"
     ],
     [
       "Technische vragen over de koppeling met NEO LMS beantwoord",
-      "Dante Torbed",
+      "Samuel Rafini",
       "1 okt 2026",
       "Afgerond"
     ],
@@ -151,7 +151,7 @@
       "Afgerond"
     ],
     [
-      "Aantallen opdrachten en nakijkkosten gedeeld, business case en testochtend besproken",
+      "Business case en testochtend besproken",
       "Marjolein Looij en Dante Torbed",
       "22 okt 2026",
       "Afgerond"
@@ -163,7 +163,7 @@
       "Afgerond"
     ],
     [
-      "Gebruiksgemak van de koppeling besproken: hoe docenten Eduface in een cursus krijgen",
+      "Gebruiksgemak van de koppeling besproken",
       "Joey van Gessel en Dante Torbed",
       "27 okt 2026",
       "Afgerond"
@@ -211,6 +211,12 @@
       "Bezig"
     ],
     [
+      "Definitief go-liveplan gedeeld en goedgekeurd",
+      "Dante Torbed",
+      "Te bevestigen",
+      "Gepland"
+    ],
+    [
       "Walkthrough van de Eduface-opdracht in een cursussjabloon in NEO LMS",
       "Joey van Gessel, Florentine van Tinteren en Dante Torbed",
       "18 nov 2026",
@@ -223,7 +229,7 @@
       "Gepland"
     ],
     [
-      "Voorbeeldopdrachten voor de testochtend aangeleverd: praktijkgerichte opdrachten, beoordelingsformulier en opdrachtomschrijving",
+      "Voorbeeldopdrachten en beoordelingsformulieren aangeleverd voor de testochtend",
       "Marjolein Looij",
       "Voor de testochtend",
       "Gepland"
@@ -247,24 +253,6 @@
       "Gepland"
     ],
     [
-      "Selecte groep docenten of studenten gekozen die als eerste met Eduface werkt",
-      "Marjolein Looij",
-      "Na de testochtend",
-      "Te bevestigen"
-    ],
-    [
-      "Lijst met beoordelende docenten per opdracht voor de eerste groep",
-      "Marjolein Looij",
-      "Na de testochtend",
-      "Gepland"
-    ],
-    [
-      "Key users benoemd: het vaste aanspreekpunt voor de andere docenten",
-      "Marjolein Looij",
-      "Na de testochtend",
-      "Gepland"
-    ],
-    [
       "Afspreken welke rollen in NEO LMS toegang krijgen tot Eduface en meetellen als actieve student",
       "Marjolein Looij, Florentine van Tinteren en Dante Torbed",
       "Voor go-live",
@@ -277,14 +265,20 @@
       "Gepland"
     ],
     [
-      "Key users trainen: wie het beoordelingsformulier inricht en aanpast",
-      "Dante Torbed en de key users van Academica",
+      "In kaart brengen welke vakken als eerste met Eduface werken",
+      "Marjolein Looij",
       "Voor go-live",
       "Gepland"
     ],
     [
-      "Beoordelingsformulier per opdracht ingericht",
-      "Key users van Academica",
+      "Key users benoemd",
+      "Marjolein Looij",
+      "Voor go-live",
+      "Gepland"
+    ],
+    [
+      "Key users trainen: wie het beoordelingsformulier inricht en aanpast",
+      "Dante Torbed en de key users van Academica",
       "Voor go-live",
       "Gepland"
     ],
@@ -295,13 +289,7 @@
       "Gepland"
     ],
     [
-      "Beoordelaars trainen",
-      "Dante Torbed en iedere beoordelaar van de eerste groep",
-      "Voor go-live",
-      "Gepland"
-    ],
-    [
-      "Go-live met de eerste groep, plus online kick-off",
+      "Go-live",
       "Dante Torbed",
       "Te bevestigen",
       "Gepland"
@@ -309,12 +297,6 @@
     [
       "Eerste opdrachten live, klaar voor inleveringen van studenten",
       "Dante Torbed en de key users van Academica",
-      "Na go-live",
-      "Gepland"
-    ],
-    [
-      "Maandelijkse check-in",
-      "Marjolein Looij en Dante Torbed",
       "Na go-live",
       "Gepland"
     ]
@@ -325,7 +307,7 @@
       [
         "Ma",
         "30 nov 2026, 09:30 - 11:00",
-        "Docenten en opleidingsmanagers halen praktijkgerichte opdrachten door Eduface in NEO LMS en beoordelen de feedback op hun eigen materiaal. We kijken ook vanuit de student: hoe de feedback en het cijfer in NEO verschijnen. Zijn jullie tevreden over de feedback, dan gaan we door met een selecte groep docenten of studenten die als eerste met Eduface werkt.",
+        "Docenten en opleidingsmanagers halen praktijkgerichte opdrachten door Eduface in NEO LMS en beoordelen de feedback op hun eigen materiaal. We kijken ook vanuit de student: hoe de feedback en het cijfer in NEO verschijnen. Zijn jullie tevreden over de feedback, dan gaan we door met de vakken die als eerste met Eduface werken.",
         "Gepland"
       ]
     ]
