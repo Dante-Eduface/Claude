@@ -25,7 +25,7 @@
     ],
     [
       "Prijs per student per maand",
-      "€ 3,75 per student per maand excl. 21% btw (€ 4,54 incl. btw), starttarief € 18.000 per jaar excl. btw (€ 21.780 incl. btw). Minimaal € 1.500 per maand excl. btw (€ 1.815 incl. btw), dat dekt de eerste 400 studenten; boven de 400 € 3,00 per student excl. btw (€ 3,63 incl. btw)."
+      "€ 3,75 excl. btw, starttarief € 18.000 per jaar. Minimaal € 1.500 per maand, dat dekt de eerste 400 studenten; boven de 400 € 3,00 per student."
     ]
   ],
   "summary": [
@@ -348,7 +348,7 @@
     [
       "Licentieovereenkomst",
       "Te delen",
-      "Concept volgt, met de verwerkersovereenkomst als bijlage. Alle bedragen excl. 21% btw."
+      "Concept volgt, met de verwerkersovereenkomst als bijlage."
     ],
     [
       "SLA",
@@ -371,11 +371,6 @@
       "Moeten de LTI-instellingen voor elke cursus opnieuw worden ingevuld?",
       "Joey",
       "Nee. Eduface staat één keer centraal ingesteld in NEO LMS. Een Eduface-opdracht in het cursussjabloon gaat mee naar elke nieuwe cursus, zoals NEO Support bevestigde."
-    ],
-    [
-      "Zijn de bedragen inclusief btw?",
-      "Marjolein",
-      "Nee. Alle bedragen zijn exclusief btw; daar komt 21% btw bovenop. In dit plan staat bij elk bedrag ook het bedrag inclusief btw."
     ]
   ]
 }
