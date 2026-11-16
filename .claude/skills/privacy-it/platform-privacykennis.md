@@ -86,6 +86,7 @@ In de concept-DPA staan 14 maatregelen die Eduface toezegt. Per maatregel is nie
 ## 9. Datalekken
 
 - Eduface meldt een datalek of redelijk vermoeden daarvan **binnen 48 uur na ontdekking** aan de instelling. Stapsgewijs mag, als niet alles meteen bekend is.
+- **Let op:** volgens Marjolein Looij (Academica) is de termijn sinds de zomer van 2026 officieel 72 uur (doorgegeven door Dante, 16-11-2026). Nog niet bevestigd door Jeroen, zie V13. Noem tot dan geen termijn naar buiten.
 - De melding bevat minimaal wat het Meldloket datalekken van de Autoriteit Persoonsgegevens vraagt.
 - Eduface meldt **niet zelf** aan de Autoriteit Persoonsgegevens of aan betrokkenen, tenzij de instelling dat uitdrukkelijk schriftelijk vraagt.
 - Eduface neemt zo snel mogelijk maatregelen om de oorzaak weg te nemen en de gevolgen te beperken.
@@ -120,7 +121,7 @@ Krijgt Eduface zelf een overheidsverzoek over de gegevens, dan neemt zij direct 
 - De docent beslist, de AI assisteert. De instelling bepaalt of feedback eerst door de docent wordt goedgekeurd.
 - Gegenereerde feedback bevat geen persoonsgegevens, tenzij een docent die er zelf in zet.
 - Standaard 8 jaar bewaard, direct verwijderd als de opdracht uit het systeem gaat, en op verzoek en na afloop van de samenwerking.
-- Een datalek gaat binnen 48 uur naar de instelling.
+- Een datalek wordt gemeld aan de instelling. Noem de termijn (48 of 72 uur) pas als V13 beantwoord is.
 
 ## 14. Wat je niet mag zeggen
 

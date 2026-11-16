@@ -14,8 +14,10 @@ EDUFACE = "/home/user/Claude/Design/Merk/logos/logo_navy.png"
 page(MAP, '1-voorstel', f'''
 <h1>Voorstel</h1>
 <p class="lead">Eduface is een onderwijskundig AI-model, ontwikkeld met hulp van de Universiteit Leiden en de Radboud Universiteit, dat formatieve en summatieve feedback geeft op studentopdrachten. Docenten besteden daardoor minder tijd aan het formuleren van feedback, elke student krijgt formatieve feedback, en een groeiend aantal studenten vraagt niet om evenredig meer nakijkers.</p>
-<p class="statement">Dat is een concrete invulling van het koerspunt efficiëntie.</p>
-<div class="stack">
+<div class="label" style="margin-top:8mm">Jullie vraag</div>
+<p class="statement" style="margin-top:2mm">Te allen tijde feedback kunnen geven.</p>
+<div class="duo" style="margin-top:4mm;gap:0 6mm">{lst(["Efficiënter beoordelen","Sneller beoordelen"])}{lst(["Minder externe beoordelaars inhuren","Accurater beoordelen"])}</div>
+<div class="stack" style="margin-top:10mm">
   <div class="duo">
     <section class="card tertiary"><div class="label">Nu</div><div class="num" style="margin-top:3mm">€ 32.400</div><p class="desc">Wat het nakijken nu per jaar kost</p></section>
     <section class="card primary"><div class="label">Met Eduface</div><div class="num" style="margin-top:3mm">€ 18.000</div><p class="desc">Starttarief op jaarbasis: € 3,75 per student per maand</p></section>
@@ -39,7 +41,7 @@ page(MAP, '2-uitdaging', f'''
     {venn}
   </section>
   <section class="card secondary">{ttl("clock","Inwerken kost tijd en geld")}
-    <p class="desc">Nieuwe nakijkers trainen duurt lang, en de uren lopen op.</p>
+    <p class="desc">Beoordelaars hebben toetsbekwaamheid nodig. Met Eduface hoef je minder beoordelaars op te leiden.</p>
   </section>
   <p class="note" style="margin-top:10mm">De huidige doorlooptijd is 1 week voor formatieve feedback op conceptstukken en 4 weken voor een summatieve beoordeling. Met Eduface kan die mogelijk aanzienlijk korter worden.</p>
 </div>''')
@@ -97,7 +99,7 @@ page(MAP, '5-kwaliteit', f'''
     {route("Tweeogenprincipe: een docent ertussen", [("upload","Inleveren"),("spark","Eduface"),("edit","Docent"),("grad","Student")])}
     {route("Vierogenprincipe: standaard bij de thesis", [("upload","Inleveren"),("spark","Eduface"),("edit","Beoordelaar 1"),("edit","Beoordelaar 2"),("grad","Student")])}
     <div class="strong" style="margin-top:4mm">Zo werkt het vierogenprincipe in Eduface</div>
-    <div class="duo" style="gap:0 6mm">{lst(["Twee of drie beoordelaars kijken los van elkaar na."])}{lst(["De moduleleider ziet wie wat beoordeelt en leest mee."])}</div>
+    <div class="duo" style="gap:0 6mm">{lst(["Eén of twee beoordelaars kijken los van elkaar na."])}{lst(["De moduleleider ziet wie wat beoordeelt en leest mee."])}</div>
   </section>
 </div>''')
 
@@ -192,7 +194,7 @@ page(MAP, '9-privacy', f'''
   <section class="card primary">{ttl("shield","Academica blijft eigenaar van al het studentenwerk en alle data.")}</section>
   <section class="card tertiary">{ttl("lock","Gebruik van de data")}{lst(["Studentenwerk wordt nooit gebruikt om AI-modellen te trainen.","Verwerking alleen voor het afgesproken onderwijsdoel, in opdracht van Academica."])}</section>
   <section class="card tertiary">{ttl("globe","Waar de data staat")}{lst(["Data alleen in de EU, ook bij Microsoft, Google en Railway.","Eigen model, geen koppeling met een extern AI-model."])}</section>
-  <section class="card tertiary">{ttl("scale","Wet en regie")}{lst(["AVG: verwerkersovereenkomst, een datalek binnen 48 uur gemeld.","AI Act: audit trail voor elke summatieve beoordeling.","De docent beslist, de AI assisteert."])}</section>
+  <section class="card tertiary">{ttl("scale","Wet en regie")}{lst(["AVG: verwerkersovereenkomst.","AI Act: audit trail voor elke summatieve beoordeling.","De docent beslist, de AI assisteert."])}</section>
 </div>''')
 
 # 10 Risicoanalyse (plus de koppeling met NEO)

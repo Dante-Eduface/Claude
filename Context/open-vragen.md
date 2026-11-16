@@ -1,6 +1,6 @@
 # Open vragen
 
-_Aangelegd 19-09-2026, bijgewerkt 02-10-2026._
+_Aangelegd 19-09-2026, bijgewerkt 16-11-2026._
 
 De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat is een vraag die ik **niet zelf mag invullen**.
 
@@ -33,6 +33,7 @@ De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat 
 | V10 | **Risicoprofiel onder de AI Act, per gebruik.** Voorstel: formatieve feedback zonder scores = laag (onderbouwing onder art. 6 lid 3 vastleggen), summatief scoren = hoog (bijlage III, leerresultaten beoordelen). Bevestig je dat, en wat is de situatie bij de RBS? | Een instelling vraagt het letterlijk (RBS-vragenlijst). "Geen scores" alleen is geen vrijbrief, bijlage III noemt ook leerresultaten die het leerproces sturen. | 02-10-2026 |
 | V11 | Werkt alles in de browser zonder lokale installatie, kunnen functies per instelling aan en uit, wat moet een instelling technisch inrichten (LMS-koppeling, SSO, accountbeheer), en kunnen studenten zelf verwijderen? | Staat geel in `GTM/Knowledge/privacy-vragenlijsten/antwoorden-privacy-it-vragen-2026-10-02.docx`. | 02-10-2026 |
 | V12 | Continuïteit van het bedrijf zelf (financiering, team, exit- of escrowregeling) en het aantal getekende verwerkersovereenkomsten met Nederlandse instellingen. | Zelfde vragenlijst, vraag 9 en 12. | 02-10-2026 |
+| V13 | **Meldtermijn datalek: 48 of 72 uur?** De concept-DPA zegt 48 uur, Marjolein (Academica) zegt dat het sinds de zomer officieel 72 uur is. | Een instelling houdt je aan de termijn die in het document staat. Tot het bevestigd is noemen we geen termijn. | 16-11-2026 |
 
 ## Later, geen vraag maar een richting
 
