@@ -25,6 +25,7 @@ Het script `scripts/build.py` leest één JSON per account en bouwt daaruit de .
 - `campus`: `null` als er geen bezoek op locatie is; de hele tabel valt dan weg.
 - `resources`: een vierde veld met een URL maakt de naam een link. Gebruik dat alleen voor de gedeelde map.
 - Lege cel: `""`.
+- Optioneel (16-11-2026, Academica): `"lang": "nl"` vertaalt de vaste koppen en de titel naar het Nederlands; statussen schrijf je dan zelf in het Nederlands (Afgerond, Bezig, Gepland, Te bevestigen, Te delen, Gedeeld, Samen in te plannen, "Wacht op ..."), met dezelfde kleuren als de Engelse. `"palette": "business-case"` geeft koppen en zebra de kleuren en fonts van het A4-voorstel; de statuskleuren blijven die van UTI. `"summary_bullets": true` zet de samenvatting als bullets.
 
 ## Statussen en kleuren
 

@@ -23,30 +23,40 @@ STATUS = {
 PLAIN_FILLS = ("auto", ZEBRA, "ffffff")
 
 # Palet "business-case": de kleuren van het A4-voorstel (business-case-design/huisstijl.md).
-# Donkerblauw 000326 plus lichtere blauwtinten, geen groen of oranje. Geel alleen voor
-# wat nog bevestigd moet worden (de uitzondering voor open punten).
+# Donkerblauw 000326 plus lichtere blauwtinten voor koppen en zebra. De statuskleuren
+# blijven die van het UTI-plan (groen, oranje, geel), op verzoek van Dante (16-11-2026).
 BC = {
     "fills": {"003a5d": "000326", "006ba8": "262a5e"},
     "zebra": "f1f2f9",
-    "status": {"Done": "000326", "In progress": "262a5e", "Proposed": "d6d9ea",
-               "To confirm": "fff3cd", "To share": "fff3cd", "Shared": "e3e6f4",
-               "To plan together": "fff3cd", "Waiting": "262a5e"},
-    "dark_text": ("d6d9ea", "fff3cd", "e3e6f4"),
     "fonts": {"Arial": "Inter", "Georgia": "League Spartan"},
 }
-DARK_TEXT = ()
+TIGHT = False
+
+# Nederlandse statusnamen, zelfde kleuren als de Engelse
+STATUS_NL = {"Afgerond": "Done", "Bezig": "In progress", "Gepland": "Proposed",
+             "Te bevestigen": "To confirm", "Te delen": "To share", "Gedeeld": "Shared",
+             "Samen in te plannen": "To plan together"}
+
+# Vaste koppen uit het sjabloon, voor een plan in het Nederlands ("lang": "nl")
+KOPPEN_NL = {
+    "Information": "Informatie", "Brief summary": "Samenvatting", "Who is involved": "Wie zijn er betrokken",
+    "Planned steps and key events": "Geplande stappen en mijlpalen", "Action": "Actie", "Owner": "Eigenaar",
+    "When": "Wanneer", "Status": "Status", "Day": "Dag", "Date": "Datum", "What happens": "Wat er gebeurt",
+    "Where everything lives": "Waar alles staat", "Resource": "Document", "Detail": "Toelichting",
+    "Questions and answers": "Vragen en antwoorden", "Question": "Vraag", "Asked by": "Gesteld door",
+    "Answer": "Antwoord",
+}
 
 
 def use_palette(name):
     """Zet de globale kleuren om naar een ander palet. Leeg of 'uti' = het sjabloon zoals het is."""
-    global ZEBRA, SH, STATUS, PLAIN_FILLS, DARK_TEXT
+    global ZEBRA, SH, PLAIN_FILLS, TIGHT
     if name != "business-case":
         return
     ZEBRA = BC["zebra"]
     SH = f'<w:shd w:fill="{ZEBRA}" w:val="clear"/>'
-    STATUS = {k: v for k, v in BC["status"].items() if k != "Waiting"}
     PLAIN_FILLS = ("auto", ZEBRA, "ffffff", "ebf5ff")
-    DARK_TEXT = BC["dark_text"]
+    TIGHT = True
 
 
 def palette_xml(s, name):
@@ -61,10 +71,13 @@ def palette_xml(s, name):
 
 
 def status_color(t):
+    t = STATUS_NL.get(t, t)
+    if t.startswith("Wacht op"):
+        return "f59e0b"
     if t in STATUS:
         return STATUS[t]
     if t.startswith("Waiting"):
-        return BC["status"]["Waiting"] if DARK_TEXT else "f59e0b"
+        return "f59e0b"
     return None
 
 
@@ -109,14 +122,10 @@ def cellfix(c, zebra):
         col = status_color(t)
         if col:
             c = re.sub(r'w:fill="\w+"', f'w:fill="{col}"', c, count=1)
-            if DARK_TEXT:  # Inter is breder dan Arial: krappere marge en 9 pt, anders breekt "Proposed"
+            if TIGHT:  # Inter is breder dan Arial: krappere marge en 9 pt, anders breekt "Proposed"
                 c = re.sub(r'(<w:(?:left|right) w:w=")140(?:\.0)?(")', r'\g<1>50\2', c)
                 if '<w:sz w:val="18"/>' not in c:
                     c = c.replace('<w:rtl w:val="0"/></w:rPr>', '<w:sz w:val="18"/><w:szCs w:val="18"/><w:rtl w:val="0"/></w:rPr>')
-            if col in DARK_TEXT:
-                c = c.replace('w:color w:val="ffffff"', 'w:color w:val="000326"')
-            elif DARK_TEXT:
-                c = c.replace('w:color w:val="000326"', 'w:color w:val="ffffff"')
         return c
     c = re.sub(r"<w:shd [^>]*/>(?=(?:(?!<w:tcPr>).)*?</w:tcPr>)", "", c, flags=re.S)
     if zebra:
@@ -164,8 +173,11 @@ def build(plan, template, out_docx):
 
     # 1 titel + laatst bijgewerkt
     t = T[1].group(0); rs = rows(t)
-    new[1] = body(t, 0, [settexts(rs[0], [f"{plan['client']} Go Live Plan"]),
-                         settexts(rs[1], [f"Last updated {plan['last_updated']} by {plan.get('author', 'Dante Torbed')}"])])
+    nl = plan.get("lang") == "nl"
+    titel = f"Go-liveplan {plan['client']}" if nl else f"{plan['client']} Go Live Plan"
+    bij = (f"Laatst bijgewerkt op {plan['last_updated']} door {plan.get('author', 'Dante Torbed')}" if nl
+           else f"Last updated {plan['last_updated']} by {plan.get('author', 'Dante Torbed')}")
+    new[1] = body(t, 0, [settexts(rs[0], [titel]), settexts(rs[1], [bij])])
 
     # 2 information
     t = T[2].group(0); rs = rows(t)
@@ -177,10 +189,12 @@ def build(plan, template, out_docx):
     rpr = re.search(r"<w:r>(<w:rPr>.*?</w:rPr>)", p, re.S)
     rpr = rpr.group(1) if rpr else ""
     runs = []
+    bullets = plan.get("summary_bullets", False)
     for i, para in enumerate(plan["summary"]):
         if i:
-            runs.append(f"<w:r>{rpr}<w:br/><w:br/></w:r>")
-        runs.append(f'<w:r>{rpr}<w:t xml:space="preserve">{esc(para)}</w:t></w:r>')
+            runs.append(f"<w:r>{rpr}<w:br/>{'' if bullets else '<w:br/>'}</w:r>")
+        txt = f"•  {para}" if bullets else para
+        runs.append(f'<w:r>{rpr}<w:t xml:space="preserve">{esc(txt)}</w:t></w:r>')
     ppr = re.search(r"<w:pPr>.*?</w:pPr>", p, re.S)
     np_ = p[:p.index(">") + 1] + (ppr.group(0) if ppr else "") + "".join(runs) + "</w:p>"
     new[3] = t.replace(r, r.replace(p, np_), 1)
@@ -242,6 +256,9 @@ def build(plan, template, out_docx):
     for k in sorted(new, reverse=True):
         m = T[k]
         out = out[:m.start()] + new[k] + out[m.end():]
+    if plan.get("lang") == "nl":
+        for en, nl_ in KOPPEN_NL.items():
+            out = re.sub(rf"(<w:t[^>]*>){re.escape(en)}(</w:t>)", lambda m: m.group(1) + nl_ + m.group(2), out)
     doc.write_text(palette_xml(out, plan.get("palette", "")))
     st = work / "word" / "styles.xml"
     st.write_text(palette_xml(st.read_text(), plan.get("palette", "")))
