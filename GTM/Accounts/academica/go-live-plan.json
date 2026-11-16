@@ -21,18 +21,18 @@
     ],
     [
       "Beoogde go-livedatum",
-      "18 jan 2027"
+      "Week van 18 jan 2027. Eerst met de Schoolleidersopleiding en MILE."
     ],
     [
       "Prijs per student per maand",
-      "€ 3,75 excl. btw, starttarief € 18.000 per jaar. Minimaal € 1.500 per maand, dat dekt de eerste 400 studenten; boven de 400 € 3,00 per student."
+      "€ 3,75 per student per maand excl. 21% btw (€ 4,54 incl. btw), starttarief € 18.000 per jaar excl. btw (€ 21.780 incl. btw). Minimaal € 1.500 per maand excl. btw (€ 1.815 incl. btw), dat dekt de eerste 400 studenten; boven de 400 € 3,00 per student excl. btw (€ 3,63 incl. btw)."
     ]
   ],
   "summary": [
     "Applied science beoordelen vraagt nakijkers die de theorie én de praktijk kennen, en die combinatie is schaars.",
     "Eduface is een onderwijskundig AI-model dat formatieve en summatieve feedback geeft op studentopdrachten binnen NEO LMS. Cijfers en feedback komen automatisch terug in NEO. De docent leest, past aan en geeft vrij.",
     "Het doel: te allen tijde feedback kunnen geven. Efficiënter, sneller en accurater beoordelen, met minder externe beoordelaars.",
-    "Ons gezamenlijke doel is op 18 januari 2027 live gaan in NEO LMS met een eerste groep, mits de Eduface-testochtend laat zien dat de koppeling werkt en de feedback op praktijkgerichte opdrachten goed is."
+    "Ons gezamenlijke doel is in de week van 18 januari 2027 live gaan in NEO LMS met een eerste groep, mits de Eduface-testochtend laat zien dat de koppeling werkt en de feedback op praktijkgerichte opdrachten goed is."
   ],
   "eduface_team": [
     [
@@ -70,7 +70,7 @@
     [
       "Sabine van den Uijl",
       "s.uijl@academica-group.com",
-      "Kwaliteitsmanager opleidingen"
+      "Kwaliteitsmedewerker, onderwijsontwerp en kwaliteit"
     ],
     [
       "Florentine van Tinteren",
@@ -209,6 +209,12 @@
       "Bezig"
     ],
     [
+      "Eerste vakken gekozen: Schoolleidersopleiding en MILE",
+      "Marjolein Looij",
+      "16 nov 2026",
+      "Afgerond"
+    ],
+    [
       "Definitief go-live plan gedeeld en goedgekeurd",
       "Dante Torbed",
       "23 nov 2026 (voorstel)",
@@ -222,20 +228,26 @@
     ],
     [
       "Business case bespreken en besluit over de vervolgstappen",
-      "Mirte van den Berg, Marjolein Looij, Sabine van den Uijl en Dante Torbed",
+      "Mirte van den Berg, Marjolein Looij, Sabine van den Uijl, Jeroen van Gessel en Dante Torbed",
       "23 nov 2026",
       "Gepland"
     ],
     [
-      "Voorbeeldopdrachten en beoordelingsformulieren aangeleverd voor de testochtend",
-      "Marjolein Looij",
-      "25 nov 2026 (voorstel)",
+      "Voorbeelden aangeleverd voor de testochtend: per opdracht een beoordelingsformulier en een ingevulde, geanonimiseerde studentopdracht (zonder opdrachtbeschrijving), als PDF of DOCX, minimaal 10 en mogelijk 15",
+      "Marjolein Looij en vijf docenten",
+      "23 nov 2026",
       "Gepland"
     ],
     [
       "Eduface-testochtend bij Academica (zie de tabel hieronder)",
       "Marjolein Looij en Dante Torbed",
       "30 nov 2026",
+      "Gepland"
+    ],
+    [
+      "Concept van de licentieovereenkomst en de SLA gestuurd",
+      "Dante Torbed",
+      "Te bevestigen",
       "Gepland"
     ],
     [
@@ -254,6 +266,12 @@
       "Key users trainen: wie het beoordelingsformulier inricht en aanpast",
       "Dante Torbed en de key users van Academica",
       "7 - 17 dec 2026 (voorstel)",
+      "Gepland"
+    ],
+    [
+      "Digitale voortgangsupdate aan Marjolein tijdens de key-userfase",
+      "Dante Torbed",
+      "Te bevestigen",
       "Gepland"
     ],
     [
@@ -283,13 +301,19 @@
     [
       "Go-live",
       "Dante Torbed",
-      "18 jan 2027",
+      "Week van 18 jan 2027",
       "Gepland"
     ],
     [
       "Eerste opdrachten live, klaar voor inleveringen van studenten",
       "Dante Torbed en de key users van Academica",
       "1 feb 2027 (voorstel)",
+      "Gepland"
+    ],
+    [
+      "Evaluatie na go-live: doet Eduface wat beloofd is en kan het de aantallen opdrachten aan, ook bij opschalen",
+      "Marjolein Looij en Dante Torbed",
+      "Te bevestigen",
       "Gepland"
     ]
   ],
@@ -299,7 +323,7 @@
       [
         "Ma",
         "30 nov 2026, 09:30 - 11:00",
-        "Docenten en opleidingsmanagers halen praktijkgerichte opdrachten door Eduface in NEO LMS en beoordelen de feedback op hun eigen materiaal. We kijken ook vanuit de student: hoe de feedback en het cijfer in NEO verschijnen. Zijn jullie tevreden over de feedback, dan gaan we door met de vakken die als eerste met Eduface werken.",
+        "Docenten en opleidingsmanagers halen praktijkgerichte opdrachten door Eduface in NEO LMS en beoordelen de feedback op hun eigen materiaal. We kijken ook vanuit de student: hoe de feedback en het cijfer in NEO verschijnen. Zijn jullie tevreden over de feedback, dan gaan we door met de Schoolleidersopleiding en MILE.",
         "Gepland"
       ]
     ]
@@ -324,12 +348,12 @@
     [
       "Licentieovereenkomst",
       "Te delen",
-      "Met de verwerkersovereenkomst als bijlage."
+      "Concept volgt, met de verwerkersovereenkomst als bijlage. Alle bedragen excl. 21% btw."
     ],
     [
       "SLA",
       "Te delen",
-      "De service level agreement van Eduface."
+      "De service level agreement van Eduface, met de afspraken over support. Volgt samen met het concept van de licentieovereenkomst."
     ]
   ],
   "qa": [
@@ -347,6 +371,11 @@
       "Moeten de LTI-instellingen voor elke cursus opnieuw worden ingevuld?",
       "Joey",
       "Nee. Eduface staat één keer centraal ingesteld in NEO LMS. Een Eduface-opdracht in het cursussjabloon gaat mee naar elke nieuwe cursus, zoals NEO Support bevestigde."
+    ],
+    [
+      "Zijn de bedragen inclusief btw?",
+      "Marjolein",
+      "Nee. Alle bedragen zijn exclusief btw; daar komt 21% btw bovenop. In dit plan staat bij elk bedrag ook het bedrag inclusief btw."
     ]
   ]
 }
