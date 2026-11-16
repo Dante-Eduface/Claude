@@ -9,32 +9,30 @@
   "info": [
     [
       "Instelling",
-      "Academica University of Applied Sciences, Weteringschans 28, Amsterdam"
+      "Academica University of Applied Sciences"
     ],
     [
       "Contractpartij (Eduface)",
-      "Blockbook B.V., handelend onder de naam Eduface, Utrecht"
+      "Blockbook B.V., handelend onder de naam Eduface"
     ],
     [
       "Beoogde datum ondertekening",
-      "Na de Eduface-testochtend, datum nog te bepalen"
+      "17 dec 2026 (voorstel), na de Eduface-testochtend"
     ],
     [
       "Beoogde go-livedatum",
-      "Te bevestigen na de Eduface-testochtend op 30 nov 2026. Eerst met de vakken die als eerste met Eduface werken. Academica heeft ongeveer 350 actieve studenten."
+      "18 jan 2027"
     ],
     [
       "Prijs per student per maand",
-      "€ 3,75 excl. btw, starttarief € 18.000 per jaar. Minimaal € 1.500 per maand, dat dekt de eerste 400 studenten; boven de 400 € 3,00 per student. Maandelijks gefactureerd op basis van het aantal actieve studenten in NEO LMS."
+      "€ 3,75 excl. btw, starttarief € 18.000 per jaar. Minimaal € 1.500 per maand, dat dekt de eerste 400 studenten; boven de 400 € 3,00 per student."
     ]
   ],
   "summary": [
-    "De opleidingen van Academica zijn praktijkgericht. Applied science beoordelen vraagt nakijkers die de theorie én de praktijk kennen, en die combinatie is schaars.",
-    "Beoordelaars hebben toetsbekwaamheid nodig. Nieuwe beoordelaars opleiden kost tijd en geld.",
-    "Nakijken kost Academica nu € 32.400 per jaar. Formatieve feedback op conceptstukken duurt een week, een summatieve beoordeling vier weken.",
-    "Eduface is een onderwijskundig AI-model dat formatieve en summatieve feedback geeft op studentopdrachten, binnen NEO LMS. Cijfers en feedback komen automatisch terug in NEO. De docent leest, past aan en geeft vrij.",
+    "Applied science beoordelen vraagt nakijkers die de theorie én de praktijk kennen, en die combinatie is schaars.",
+    "Eduface is een onderwijskundig AI-model dat formatieve en summatieve feedback geeft op studentopdrachten binnen NEO LMS. Cijfers en feedback komen automatisch terug in NEO. De docent leest, past aan en geeft vrij.",
     "Het doel: te allen tijde feedback kunnen geven. Efficiënter, sneller en accurater beoordelen, met minder externe beoordelaars.",
-    "Ons gezamenlijke doel is live gaan in NEO LMS met een eerste groep, zodra de Eduface-testochtend laat zien dat de koppeling werkt en de feedback op praktijkgerichte opdrachten goed is."
+    "Ons gezamenlijke doel is op 18 januari 2027 live gaan in NEO LMS met een eerste groep, mits de Eduface-testochtend laat zien dat de koppeling werkt en de feedback op praktijkgerichte opdrachten goed is."
   ],
   "eduface_team": [
     [
@@ -65,7 +63,7 @@
       "Directeur Opleidingen"
     ],
     [
-      "Myrthe van den Berg",
+      "Mirte van den Berg",
       "m.vandenberg@academica-group.com",
       "Bestuurder"
     ],
@@ -205,15 +203,15 @@
       "Afgerond"
     ],
     [
-      "Go-liveplan samen opgesteld",
+      "Go-live plan samen opgesteld",
       "Marjolein Looij en Dante Torbed",
       "16 nov 2026",
       "Bezig"
     ],
     [
-      "Definitief go-liveplan gedeeld en goedgekeurd",
+      "Definitief go-live plan gedeeld en goedgekeurd",
       "Dante Torbed",
-      "Te bevestigen",
+      "23 nov 2026 (voorstel)",
       "Gepland"
     ],
     [
@@ -224,14 +222,14 @@
     ],
     [
       "Business case bespreken en besluit over de vervolgstappen",
-      "Myrthe van den Berg, Marjolein Looij, Sabine van den Uijl en Dante Torbed",
+      "Mirte van den Berg, Marjolein Looij, Sabine van den Uijl en Dante Torbed",
       "23 nov 2026",
       "Gepland"
     ],
     [
       "Voorbeeldopdrachten en beoordelingsformulieren aangeleverd voor de testochtend",
       "Marjolein Looij",
-      "Voor de testochtend",
+      "25 nov 2026 (voorstel)",
       "Gepland"
     ],
     [
@@ -241,63 +239,63 @@
       "Gepland"
     ],
     [
-      "Verwerkersovereenkomst akkoord",
-      "David van Lent en Jeroen van Gessel",
-      "Te bevestigen",
-      "Bezig"
-    ],
-    [
-      "Licentieovereenkomst getekend, met de verwerkersovereenkomst als bijlage",
-      "Jeroen van Gessel en Academica (ondertekenaar te bevestigen)",
-      "Na de testochtend",
+      "In kaart brengen welke vakken als eerste met Eduface werken",
+      "Marjolein Looij",
+      "3 dec 2026 (voorstel)",
       "Gepland"
     ],
     [
       "Afspreken welke rollen in NEO LMS toegang krijgen tot Eduface en meetellen als actieve student",
       "Marjolein Looij, Florentine van Tinteren en Dante Torbed",
-      "Voor go-live",
-      "Gepland"
-    ],
-    [
-      "Controleren wie als student in NEO LMS staat en meetelt voor de kosten",
-      "Dante Torbed",
-      "Voor go-live",
-      "Gepland"
-    ],
-    [
-      "In kaart brengen welke vakken als eerste met Eduface werken",
-      "Marjolein Looij",
-      "Voor go-live",
+      "3 dec 2026 (voorstel)",
       "Gepland"
     ],
     [
       "Key users benoemd",
       "Marjolein Looij",
-      "Voor go-live",
+      "3 dec 2026 (voorstel)",
       "Gepland"
     ],
     [
       "Key users trainen: wie het beoordelingsformulier inricht en aanpast",
       "Dante Torbed en de key users van Academica",
-      "Voor go-live",
+      "7 - 17 dec 2026 (voorstel)",
+      "Gepland"
+    ],
+    [
+      "Verwerkersovereenkomst akkoord",
+      "David van Lent en Jeroen van Gessel",
+      "10 dec 2026 (voorstel)",
+      "Bezig"
+    ],
+    [
+      "Controleren wie als student in NEO LMS staat en meetelt voor de kosten",
+      "Dante Torbed",
+      "10 dec 2026 (voorstel)",
+      "Gepland"
+    ],
+    [
+      "Licentieovereenkomst getekend, met de verwerkersovereenkomst als bijlage",
+      "Jeroen van Gessel en Academica (ondertekenaar te bevestigen)",
+      "17 dec 2026 (voorstel)",
       "Gepland"
     ],
     [
       "Demovideo in NEO LMS",
       "Dante Torbed",
-      "Voor go-live",
+      "11 jan 2027 (voorstel)",
       "Gepland"
     ],
     [
       "Go-live",
       "Dante Torbed",
-      "Te bevestigen",
+      "18 jan 2027",
       "Gepland"
     ],
     [
       "Eerste opdrachten live, klaar voor inleveringen van studenten",
       "Dante Torbed en de key users van Academica",
-      "Na go-live",
+      "1 feb 2027 (voorstel)",
       "Gepland"
     ]
   ],
@@ -315,7 +313,7 @@
   "resources": [
     [
       "Gedeelde map",
-      "Te delen",
+      "Gedeeld",
       "Alles hieronder komt hierin te staan.",
       "https://drive.google.com/drive/folders/1F6DAqslFrDvfBtDiqVxqHuHxvT-r3sPd"
     ],
