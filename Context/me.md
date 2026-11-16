@@ -20,7 +20,7 @@ Uit de agenda gelezen op 19-09-2026. Dit is de vorm van zijn week, niet een afsp
 
 | Wanneer | Wat |
 |---|---|
-| Elke dag 05:00 | Op |
+| Elke dag 04:00 | Op (bevestigd 16-11-2026) |
 | Ma t/m do 05:53 | Trein naar Utrecht, ~07:05 op kantoor |
 | Ma en wo | Terugtrein 18:35, thuis ~19:25 |
 | Di en do | Gym om 16:00. Welke terugtrein: OPEN (16-11-2026) |
