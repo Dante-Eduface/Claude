@@ -4,7 +4,7 @@
 >
 > **Niets invullen wat je kunt navragen.** Alles wat open is staat in `Context/open-vragen.md`.
 
-_Laatst bijgewerkt: 20-09-2026, na twee rondes antwoorden van Dante zelf._
+_Laatst bijgewerkt: 16-11-2026._
 
 ## Basis
 
@@ -33,12 +33,12 @@ Vier dagen per week, upper/lower. Volumeprioriteit ligt op **lats en laterale de
 
 | Dag | Training | Tijd |
 |---|---|---|
-| Dinsdag | Lower A | 17:00 tot 19:00 |
-| Donderdag | Upper A | 17:00 tot 19:00 |
-| Zaterdag | Lower B | 13:00 tot 15:00 |
-| Zondag | Upper B | 13:00 tot 15:00 |
+| Dinsdag | Upper | 16:00 tot 18:00 |
+| Donderdag | Lower | 16:00 tot 18:00 |
+| Zaterdag | Upper | 16:00 tot 18:00 |
+| Zondag | Lower | 16:00 tot 18:00 |
 
-Consistent en wat hem betreft niet onderhandelbaar. Dat di en do om 17:00 begint, betekent dat hij die dagen de trein van 16:05 pakt en dus eerder stopt met werken. Dat is bewust.
+Zo staat het in Todoist, en dat klopt (bevestigd 16-11-2026). Consistent en wat hem betreft niet onderhandelbaar. Welke trein hij di en do pakt nu de gym om 16:00 begint: OPEN.
 
 ### Eten
 
@@ -76,8 +76,8 @@ Staat apart in **`Context/financien.md`**. Laadt ook niet automatisch.
 
 Twee thema's, allebei met dezelfde twee deep-work-blokken erin (06:00 tot 08:00 en 09:00 tot 11:00):
 
-- **Zaterdag is een werkdag.** Week plannen in blok 1, financiele controle om 11:00, gym om 13:00, boodschappen om 15:00.
-- **Zondag is een thuisdag.** LinkedIn-post in blok 1, gym om 13:00, schoonmaken om 15:00, koken om 16:00.
+- **Zaterdag:** week plannen 06:00 tot 07:00, financiele controle 14:00, boodschappen 14:30, gym 16:00, schoonmaken 19:00 (Todoist, 16-11-2026).
+- **Zondag:** gym 16:00, koken 18:00 tot 20:00 (Todoist, 16-11-2026).
 
 Boodschappen blijven bewust op zaterdag, een dag voor het koken. Zie `Context/deep-work.md` voor de hele week.
 
