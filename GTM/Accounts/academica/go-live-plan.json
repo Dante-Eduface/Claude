@@ -1,0 +1,84 @@
+{
+  "client": "Academica University of Applied Sciences",
+  "last_updated": "16 November 2026",
+  "author": "Dante Torbed",
+  "client_logo": "academica-logo.png",
+  "palette": "business-case",
+  "info": [
+    ["Company", "Academica University of Applied Sciences, Weteringschans 28, Amsterdam"],
+    ["Contracting party (Eduface)", "Blockbook B.V., doing business as Eduface, Utrecht, the Netherlands"],
+    ["Target contractual signing date", "Before go-live, date to be set"],
+    ["Target go-live date", "To confirm after the test morning on 30 Nov 2026. First programmes to be chosen together, around 350 active students."],
+    ["Price per student per month", "€3.75 excl. VAT, starting rate of €18,000 per year. Minimum €1,500 per month, covering the first 400 students; €3.00 per student above 400. Invoiced monthly, based on active students in NEO LMS."]
+  ],
+  "summary": [
+    "Academica's programmes are practice-oriented. Assessing applied science work takes assessors who understand both the theory and the practice, and that combination is scarce. New assessors need assessment competence, and training them takes time and money. Marking currently costs Academica €32,400 a year. Formative feedback on drafts takes a week, a summative assessment four weeks.",
+    "Eduface is an educational AI model that gives formative and summative feedback on student assignments, inside NEO LMS. Students hand in as they always do, and grades and feedback sync back to NEO. Teachers read, adjust and release every grade. The goal for Academica is to be able to give feedback at any time: assessing more efficiently, faster and more accurately, with fewer external assessors hired in. This is a concrete step in the efficiency theme of Academica's course plan to 2030.",
+    "Our mutual aim is to go live in NEO LMS with the first programmes once the test morning has confirmed the two requirements: a working NEO LMS connection, and good feedback on practice-oriented assignments. This document is the shared plan to get there, and both teams keep it up to date."
+  ],
+  "eduface_team": [
+    ["Dante Torbed (DT)", "dante.torbed@eduface.me", "Customer Success Manager"],
+    ["Jeroen van Gessel (JG)", "jeroen.van.gessel@eduface.me", "CEO and co-founder"],
+    ["Menno Hahury (MH)", "menno.hahury@eduface.me", "CTO and co-founder"],
+    ["Samuel Rafini (SR)", "samuel.rafini@eduface.me", "Senior Engineer, integrations"]
+  ],
+  "client_team": [
+    ["Marjolein Looij", "m.looij@academica-group.com", "Director of Education"],
+    ["Myrthe van den Berg", "m.vandenberg@academica-group.com", "Executive Director"],
+    ["Sabine van den Uijl", "s.uijl@academica-group.com", "Quality Manager, programmes"],
+    ["Florentine van Tinteren", "f.vantinteren@academica-group.com", "NEO LMS administrator"],
+    ["Joey van Gessel", "j.vangessel@academica-group.com", "IT and NEO LMS consultant"],
+    ["David van Lent", "avg@academica-group.com", "Data protection (GDPR)"],
+    ["Laura Smudde", "l.smudde@academica-group.com", ""]
+  ],
+  "steps": [
+    ["Initial meeting", "Marjolein Looij and Dante Torbed", "24 Sep 2026", "Done"],
+    ["Test approach agreed: validate the NEO LMS connection and feedback on practice-oriented assignments", "Marjolein Looij and Dante Torbed", "1 Oct 2026", "Done"],
+    ["Eduface data processing agreement sent", "Dante Torbed", "1 Oct 2026", "Done"],
+    ["Academica shares assignment volumes and marking costs", "Marjolein Looij", "22 Oct 2026", "Done"],
+    ["First technical validation of the NEO LMS connection", "Joey van Gessel and Samuel Rafini", "22 Oct 2026", "Done"],
+    ["Academica shares its own data processing agreement", "David van Lent", "27 Oct 2026", "Done"],
+    ["Data processing agreement returned with comments", "Jeroen van Gessel", "29 Oct 2026", "Done"],
+    ["Eduface configured once, centrally, as LTI 1.3 tool in NEO LMS", "Joey van Gessel", "30 Oct 2026", "Done"],
+    ["Business case reviewed together", "Marjolein Looij and Dante Torbed", "2 Nov 2026", "Done"],
+    ["Final business case shared", "Dante Torbed", "16 Nov 2026", "Done"],
+    ["Go-live plan drawn up together", "Marjolein Looij and Dante Torbed", "16 Nov 2026", "In progress"],
+    ["Walkthrough of the Eduface assignment in a NEO course template", "Joey van Gessel, Florentine van Tinteren and Dante Torbed", "18 Nov 2026", "Proposed"],
+    ["Business case discussed and decision on the next steps", "Myrthe van den Berg, Marjolein Looij, Sabine van den Uijl and Dante Torbed", "23 Nov 2026", "Proposed"],
+    ["Test morning at Academica (see the table below)", "Marjolein Looij and Dante Torbed", "30 Nov 2026", "Proposed"],
+    ["Data processing agreement agreed", "David van Lent and Jeroen van Gessel", "To confirm", "In progress"],
+    ["First programmes and courses chosen", "Marjolein Looij", "To confirm", "To confirm"],
+    ["Agree which NEO LMS roles get access to Eduface and count as active students", "Marjolein Looij, Florentine van Tinteren and Dante Torbed", "Before go-live", "Proposed"],
+    ["Course setup call for the first courses", "Dante Torbed and the teachers of the first courses", "To confirm", "Proposed"],
+    ["Fine-tuning, round 1", "Dante Torbed and the teachers of the first courses", "To confirm", "Proposed"],
+    ["Fine-tuning, round 2", "Dante Torbed and the teachers of the first courses", "To confirm", "Proposed"],
+    ["End test", "Dante Torbed and the teachers of the first courses", "To confirm", "Proposed"],
+    ["Four-eyes route set up for the thesis", "Dante Torbed and Sabine van den Uijl", "Before go-live", "Proposed"],
+    ["Training for teachers and programme coordinators", "Dante Torbed", "Before go-live", "Proposed"],
+    ["Licence agreement signed, with the data processing agreement as an annex", "Jeroen van Gessel and Academica (signatory to confirm)", "Before go-live", "Proposed"],
+    ["Implementation plan shared", "Dante Torbed", "Just before go-live", "Proposed"],
+    ["Go live", "Marjolein Looij", "To confirm", "Proposed"],
+    ["Hands-on onboarding for the participating teachers, in their own NEO course", "Dante Torbed", "At go-live", "Proposed"]
+  ],
+  "campus": {
+    "title": "Test morning at Academica, Weteringschans 28, Amsterdam",
+    "days": [
+      ["Day 1", "30 Nov 2026, 09:30 - 11:00", "Teachers and programme managers run real practice-oriented assignments through Eduface inside NEO LMS and judge the feedback on their own material. We also look at it from the student's side: how the feedback and grade show up in NEO. This morning tests both requirements, and if both hold, we can move straight on to the first programmes.", "To plan together"]
+    ]
+  },
+  "resources": [
+    ["Shared folder", "To share", "Everything below will sit in here."],
+    ["Business case", "Shared", "Final version shared on 16 November, with Marjolein's latest changes."],
+    ["Data processing agreement", "In progress", "Academica's own agreement, returned by Eduface with comments on 29 October."],
+    ["Licence agreement", "To share", "With the data processing agreement as an annex."],
+    ["NEO LMS guide", "To share", "How Eduface is added through the course template, and what the LMS administrator does."],
+    ["Implementation plan", "", "Timeline"]
+  ],
+  "qa": [
+    ["Are the LMS connection and fitting the model to our rubrics charged on top?", "Marjolein", "No. Both are included in the price per student."],
+    ["Can we use the SURF data processing agreement?", "Marjolein", "No, since Academica is not publicly funded. We work with Academica's own data processing agreement instead."],
+    ["How does billing work when student numbers go up and down?", "Marjolein", "We invoice monthly, in advance, based on the number of active students in NEO LMS that month. The minimum of €1,500 covers the first 400 students."],
+    ["Do the LTI settings have to be filled in again for every course?", "Joey", "No. Eduface is configured once, centrally, in NEO LMS. An Eduface assignment in the course template is copied into every new course, as NEO Support confirmed."],
+    ["Can a thesis go straight to the student?", "Marjolein", "No. Teachers read, adjust and release every grade. For the thesis the four-eyes route applies, so the grade stays on hold until it is released."]
+  ]
+}
