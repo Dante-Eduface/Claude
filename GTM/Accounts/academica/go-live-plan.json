@@ -34,8 +34,7 @@
     "Nakijken kost Academica nu € 32.400 per jaar. Formatieve feedback op conceptstukken duurt een week, een summatieve beoordeling vier weken.",
     "Eduface is een onderwijskundig AI-model dat formatieve en summatieve feedback geeft op studentopdrachten, binnen NEO LMS. Cijfers en feedback komen automatisch terug in NEO. De docent leest, past aan en geeft vrij.",
     "Het doel: te allen tijde feedback kunnen geven. Efficiënter, sneller en accurater beoordelen, met minder externe beoordelaars.",
-    "Dit is een concrete invulling van het koerspunt efficiëntie uit het koersplan tot 2030.",
-    "Ons gezamenlijke doel is live gaan in NEO LMS met een eerste groep, zodra de Eduface-testdag laat zien dat de koppeling werkt en de feedback op praktijkgerichte opdrachten goed is. Dit is het gedeelde plan om daar te komen, en beide teams houden het bij."
+    "Ons gezamenlijke doel is live gaan in NEO LMS met een eerste groep, zodra de Eduface-testdag laat zien dat de koppeling werkt en de feedback op praktijkgerichte opdrachten goed is."
   ],
   "eduface_team": [
     [
@@ -200,6 +199,12 @@
       "Te bevestigen"
     ],
     [
+      "Lijst met beoordelende docenten per opdracht voor de eerste groep",
+      "Marjolein Looij",
+      "Na de testdag",
+      "Gepland"
+    ],
+    [
       "Afspreken welke rollen in NEO LMS toegang krijgen tot Eduface en meetellen als actieve student",
       "Marjolein Looij, Florentine van Tinteren en Dante Torbed",
       "Voor go-live",
@@ -207,38 +212,38 @@
     ],
     [
       "Controleren wie als student in NEO LMS staat en meetelt voor de kosten",
-      "Florentine van Tinteren en Dante Torbed",
-      "Voor go-live",
-      "Gepland"
-    ],
-    [
-      "Inrichtingsgesprek voor de cursussen van de eerste groep",
-      "Dante Torbed en de docenten van de eerste groep",
-      "Te bevestigen",
-      "Gepland"
-    ],
-    [
-      "Training voor docenten en opleidingscoördinatoren",
       "Dante Torbed",
       "Voor go-live",
       "Gepland"
     ],
     [
-      "Implementatieplan gedeeld",
-      "Dante Torbed",
-      "Vlak voor go-live",
+      "Key users trainen: wie het beoordelingsformulier inricht en aanpast",
+      "Dante Torbed en de key users van Academica",
+      "Voor go-live",
       "Gepland"
     ],
     [
-      "Go-live met de eerste groep",
-      "Marjolein Looij",
+      "Beoordelingsformulier per opdracht ingericht",
+      "Key users van Academica",
+      "Voor go-live",
+      "Gepland"
+    ],
+    [
+      "Demovideo in NEO LMS",
+      "Dante Torbed",
+      "Voor go-live",
+      "Gepland"
+    ],
+    [
+      "Beoordelaars trainen",
+      "Dante Torbed en iedere beoordelaar van de eerste groep",
+      "Voor go-live",
+      "Gepland"
+    ],
+    [
+      "Go-live met de eerste groep, plus online kick-off",
+      "Dante Torbed",
       "Te bevestigen",
-      "Gepland"
-    ],
-    [
-      "Hands-on onboarding voor de deelnemende docenten, in hun eigen cursus in NEO",
-      "Dante Torbed",
-      "Bij go-live",
       "Gepland"
     ]
   ],
@@ -248,7 +253,7 @@
       [
         "Ma",
         "30 nov 2026, 09:30 - 11:00",
-        "Docenten en opleidingsmanagers halen echte praktijkgerichte opdrachten door Eduface in NEO LMS en beoordelen de feedback op hun eigen materiaal. We kijken ook vanuit de student: hoe de feedback en het cijfer in NEO verschijnen. Zijn jullie tevreden over de feedback, dan gaan we door met een selecte groep docenten of studenten die als eerste met Eduface werkt.",
+        "Docenten en opleidingsmanagers halen praktijkgerichte opdrachten door Eduface in NEO LMS en beoordelen de feedback op hun eigen materiaal. We kijken ook vanuit de student: hoe de feedback en het cijfer in NEO verschijnen. Zijn jullie tevreden over de feedback, dan gaan we door met een selecte groep docenten of studenten die als eerste met Eduface werkt.",
         "Gepland"
       ]
     ]
@@ -274,6 +279,11 @@
       "Licentieovereenkomst",
       "Te delen",
       "Met de verwerkersovereenkomst als bijlage."
+    ],
+    [
+      "SLA",
+      "Te delen",
+      "De service level agreement van Eduface."
     ]
   ],
   "qa": [
