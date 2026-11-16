@@ -17,11 +17,11 @@
     ],
     [
       "Beoogde datum ondertekening",
-      "Na de Eduface-testdag, datum nog te bepalen"
+      "Na de Eduface-testochtend, datum nog te bepalen"
     ],
     [
       "Beoogde go-livedatum",
-      "Te bevestigen na de Eduface-testdag op 30 nov 2026. Eerst met een selecte groep docenten of studenten. Academica heeft ongeveer 350 actieve studenten."
+      "Te bevestigen na de Eduface-testochtend op 30 nov 2026. Eerst met een selecte groep docenten of studenten. Academica heeft ongeveer 350 actieve studenten."
     ],
     [
       "Prijs per student per maand",
@@ -34,7 +34,7 @@
     "Nakijken kost Academica nu € 32.400 per jaar. Formatieve feedback op conceptstukken duurt een week, een summatieve beoordeling vier weken.",
     "Eduface is een onderwijskundig AI-model dat formatieve en summatieve feedback geeft op studentopdrachten, binnen NEO LMS. Cijfers en feedback komen automatisch terug in NEO. De docent leest, past aan en geeft vrij.",
     "Het doel: te allen tijde feedback kunnen geven. Efficiënter, sneller en accurater beoordelen, met minder externe beoordelaars.",
-    "Ons gezamenlijke doel is live gaan in NEO LMS met een eerste groep, zodra de Eduface-testdag laat zien dat de koppeling werkt en de feedback op praktijkgerichte opdrachten goed is."
+    "Ons gezamenlijke doel is live gaan in NEO LMS met een eerste groep, zodra de Eduface-testochtend laat zien dat de koppeling werkt en de feedback op praktijkgerichte opdrachten goed is."
   ],
   "eduface_team": [
     [
@@ -97,14 +97,32 @@
   ],
   "steps": [
     [
+      "Eerste contact per mail",
+      "Dante Torbed",
+      "13 aug 2026",
+      "Afgerond"
+    ],
+    [
       "Kennismaking",
       "Marjolein Looij en Dante Torbed",
       "24 sep 2026",
       "Afgerond"
     ],
     [
-      "Testaanpak afgesproken: de koppeling met NEO LMS en feedback op praktijkgerichte opdrachten valideren",
+      "Marjolein brengt Eduface in contact met Joey voor de IT-check",
+      "Marjolein Looij",
+      "29 sep 2026",
+      "Afgerond"
+    ],
+    [
+      "Prijs en testaanpak besproken: de koppeling met NEO LMS en feedback op praktijkgerichte opdrachten valideren",
       "Marjolein Looij en Dante Torbed",
+      "1 okt 2026",
+      "Afgerond"
+    ],
+    [
+      "Technische vragen over de koppeling met NEO LMS beantwoord",
+      "Dante Torbed",
       "1 okt 2026",
       "Afgerond"
     ],
@@ -115,14 +133,26 @@
       "Afgerond"
     ],
     [
-      "Academica deelt aantallen opdrachten en nakijkkosten",
+      "Opzet voor de business case gedeeld",
       "Marjolein Looij",
+      "7 okt 2026",
+      "Afgerond"
+    ],
+    [
+      "Eerste technische sessie: Eduface geregistreerd in een afgeschermde testcursus in NEO LMS",
+      "Joey van Gessel, Samuel Rafini en Dante Torbed",
+      "20 okt 2026",
+      "Afgerond"
+    ],
+    [
+      "Eerste fase van de technische validatie van de koppeling afgerond",
+      "Joey van Gessel, Samuel Rafini en Dante Torbed",
       "22 okt 2026",
       "Afgerond"
     ],
     [
-      "Eerste technische validatie van de koppeling met NEO LMS",
-      "Joey van Gessel en Samuel Rafini",
+      "Aantallen opdrachten en nakijkkosten gedeeld, business case en testochtend besproken",
+      "Marjolein Looij en Dante Torbed",
       "22 okt 2026",
       "Afgerond"
     ],
@@ -133,13 +163,19 @@
       "Afgerond"
     ],
     [
+      "Gebruiksgemak van de koppeling besproken: hoe docenten Eduface in een cursus krijgen",
+      "Joey van Gessel en Dante Torbed",
+      "27 okt 2026",
+      "Afgerond"
+    ],
+    [
       "Verwerkersovereenkomst met opmerkingen teruggestuurd",
       "Jeroen van Gessel",
       "29 okt 2026",
       "Afgerond"
     ],
     [
-      "Eduface eenmalig centraal ingesteld als LTI 1.3-tool in NEO LMS",
+      "Eduface eenmalig centraal ingesteld als LTI 1.3-tool in NEO LMS, bevestigd door NEO Support",
       "Joey van Gessel",
       "30 okt 2026",
       "Afgerond"
@@ -148,6 +184,18 @@
       "Business case samen doorgenomen",
       "Marjolein Looij en Dante Torbed",
       "2 nov 2026",
+      "Afgerond"
+    ],
+    [
+      "Conceptversie van de business case gedeeld",
+      "Dante Torbed",
+      "3 nov 2026",
+      "Afgerond"
+    ],
+    [
+      "Feedback van Marjolein op de business case verwerkt",
+      "Dante Torbed",
+      "12 nov 2026",
       "Afgerond"
     ],
     [
@@ -175,7 +223,13 @@
       "Gepland"
     ],
     [
-      "Eduface-testdag bij Academica (zie de tabel hieronder)",
+      "Voorbeeldopdrachten voor de testochtend aangeleverd: praktijkgerichte opdrachten, beoordelingsformulier en opdrachtomschrijving",
+      "Marjolein Looij",
+      "Voor de testochtend",
+      "Gepland"
+    ],
+    [
+      "Eduface-testochtend bij Academica (zie de tabel hieronder)",
       "Marjolein Looij en Dante Torbed",
       "30 nov 2026",
       "Gepland"
@@ -189,19 +243,25 @@
     [
       "Licentieovereenkomst getekend, met de verwerkersovereenkomst als bijlage",
       "Jeroen van Gessel en Academica (ondertekenaar te bevestigen)",
-      "Na de testdag",
+      "Na de testochtend",
       "Gepland"
     ],
     [
       "Selecte groep docenten of studenten gekozen die als eerste met Eduface werkt",
       "Marjolein Looij",
-      "Na de testdag",
+      "Na de testochtend",
       "Te bevestigen"
     ],
     [
       "Lijst met beoordelende docenten per opdracht voor de eerste groep",
       "Marjolein Looij",
-      "Na de testdag",
+      "Na de testochtend",
+      "Gepland"
+    ],
+    [
+      "Key users benoemd: het vaste aanspreekpunt voor de andere docenten",
+      "Marjolein Looij",
+      "Na de testochtend",
       "Gepland"
     ],
     [
@@ -245,10 +305,22 @@
       "Dante Torbed",
       "Te bevestigen",
       "Gepland"
+    ],
+    [
+      "Eerste opdrachten live, klaar voor inleveringen van studenten",
+      "Dante Torbed en de key users van Academica",
+      "Na go-live",
+      "Gepland"
+    ],
+    [
+      "Maandelijkse check-in",
+      "Marjolein Looij en Dante Torbed",
+      "Na go-live",
+      "Gepland"
     ]
   ],
   "campus": {
-    "title": "Eduface-testdag bij Academica, Weteringschans 28, Amsterdam",
+    "title": "Eduface-testochtend bij Academica, Weteringschans 28, Amsterdam",
     "days": [
       [
         "Ma",
