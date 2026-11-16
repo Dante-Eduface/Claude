@@ -8,6 +8,8 @@ Besluit Dante, 16-09-2026. Vervangt `prijsmodel-nl-opleiding-26-27.md` (staffel 
 
 Gerekend over **12 maanden**, dus 36 per student per jaar.
 
+**Facturatie is maandelijks** (Dante, 16-11-2026). De klant krijgt elke maand een factuur van lerenden × 3. In Close staat de opportunity daarom als maandbedrag met `value_period` monthly.
+
 **Alle studenten die de opleider heeft**, niet alleen de studenten van de opleidingen die met Eduface werken. Instellingsbreed dus.
 
 ## De drempel
