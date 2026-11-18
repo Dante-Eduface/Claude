@@ -4,7 +4,7 @@
 >
 > **Niets invullen wat je kunt navragen.** Alles wat open is staat in `Context/open-vragen.md`.
 
-_Laatst bijgewerkt: 20-09-2026, na twee rondes antwoorden van Dante zelf._
+_Laatst bijgewerkt: 18-11-2026 (huid toegevoegd). Daarvoor 20-09-2026, na twee rondes antwoorden van Dante zelf._
 
 ## Basis
 
@@ -56,6 +56,10 @@ Consistent en wat hem betreft niet onderhandelbaar. Dat di en do om 17:00 begint
 **Laatste InBody, augustus 2026, en de laatste die er komt:** 89,4 kg, 10,2% vet, 46,8 kg spiermassa, BMR 2.104 kcal.
 
 **Wel: één keer per week op de weegschaal.** Zaterdagochtend, nuchter. Niet om het getal maar om de richting: gaat het harder dan een halve kilo per maand omhoog, dan 200 kcal eraf; beweegt het in twee maanden niet, dan 200 erbij. Dat is het enige signaal waarmee de 2.800 bijgesteld kan worden.
+
+### Huid
+
+Op 18-11-2026 zelf bepaald met de bare-face test: aan het einde van de dag een vettig voorhoofd en droge wangen. Dat is een **combinatiehuid** (hij noemde het zelf "olie"). Nog niet nagevraagd: gevoeligheid, acne, wat hij nu gebruikt.
 
 **Let op:** eten is ook zijn eerste faalpunt op een werkdag. Zijn eigen woorden: *"een dag gaat vooral mis als ik ongezond begin te eten."* Dat maakt dit geen los gezondheidsonderwerp maar een werkonderwerp.
 
