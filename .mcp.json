@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "octoparse": {
+      "type": "http",
+      "url": "https://mcp.octoparse.com",
+      "headers": {
+        "x-api-key": "${OCTOPARSE_API_KEY}"
+      }
+    }
+  }
+}
