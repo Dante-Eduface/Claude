@@ -13,7 +13,7 @@ _Laatst bijgewerkt: 20-11-2026._
 - Werkt bij Eduface als Customer Success Manager. Zie `Context/eduface.md`.
 - **Eduface is zijn thuis.** Hij blijft, en denkt niet in exitscenario's, een eigen startup of een route naar oprichter. Die vragen zijn op 19-09-2026 geschrapt, niet uitgesteld.
 - **Geen lange-termijndoelen, bewust niet.** Eén prioriteit, het hele jaar. Niet invullen en niet naar vragen.
-- **Familie** (20-11-2026, uit zijn visie): mama, papa en zijn broer Eliandro. Een deel van de familie woont op Curaçao, ook de moeder en de zus van zijn vader.
+- **Familie** (20-11-2026, uit zijn visie): mama, papa en zijn broer Eliandro, die een vriendin heeft, Megan. Diva en Giale zijn zijn nichtjes. Een deel van de familie woont op Curaçao, ook de moeder en de zus van zijn vader.
 - Nu alleen. Zijn eigen woorden: het alleen zijn gaat hem niet makkelijk af, maar het levert veel tijd op om te focussen en daar is hij oké mee.
 
 ## Sport en lichaam
