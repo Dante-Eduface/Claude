@@ -18,10 +18,11 @@ Enkelvoud, en dat is het punt. Dante op 19-09-2026: *"bepaal gewoon één priori
 
 ## De leidende maat
 
-| Dag | Blok 1 | Pauze | Blok 2 |
-|---|---|---|---|
-| Ma t/m vr | 07:00 tot 09:00 | 09:00 tot 10:00 | 10:00 tot 12:00 |
-| Za en zo | 06:00 tot 08:00 | 08:00 tot 09:00 | 09:00 tot 11:00 |
+| Blok 1 | Pauze | Blok 2 |
+|---|---|---|
+| 05:00 tot 07:00 | 07:00 tot 08:00 | 08:00 tot 10:00 |
+
+Zo opgegeven door Dante op 22-11-2026, vervangt de oude tijden (door de week 07:00 tot 12:00, weekend 06:00 tot 11:00). OPEN: geldt dit ook voor het weekend, en hoe valt blok 1 op ma en wo samen met de trein?
 
 **28 uur per week**, zeven dagen, vier uur per dag. Hij gaat alleen op ma en wo met de trein naar kantoor (22-11-2026).
 
