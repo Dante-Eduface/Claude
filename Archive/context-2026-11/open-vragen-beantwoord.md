@@ -59,3 +59,22 @@ Blijft staan zodat zichtbaar is wat er al gevraagd is. Alles hieronder is op 19-
 | Draag je nog een WHOOP? | Gestopt. Geen herstel- of slaapdata meer. | `Context/personal.md` |
 | Wat doe je in het pauze-uur? | Gecorrigeerd op 20-09-2026: helemaal leeg. Eten en lopen, geen scherm. Shallow werk gaat naar de middag, want dat is werktijd en geen pauze. | `Context/deep-work.md` |
 | "Hulp voor het huis" en de oude uitgaven? | Geschrapt. Kijk vooruit, niet naar het verleden. De situatie is anders. | geschrapt |
+
+## Beantwoord op 22-11-2026
+
+| Vraag | Antwoord | Waar het nu staat |
+|---|---|---|
+| Wordt de leidende maat "geboekte eerste gesprekken per week"? (A5) | Nee. Uren deep work blijft het scorebord en de leidende maat. | `Context/current-priorities.md` |
+| Verhuist de financiële controle naar zaterdag 11:00? (A6) | Beantwoord door Todoist: zaterdag 14:00. | `Context/me.md` |
+| Verhuist schoonmaken naar zondag 15:00? (A7) | Beantwoord door Todoist: zaterdag 19:00. Boodschappen zaterdag 14:30, koken zondag 18:00. | `Context/me.md` |
+| Ruil je de heenreis om van lezen naar schrijven? (A8) | Ma en wo heen schrijven, terug lezen. De rest van de week bepaalt hij zelf, alleen als het nodig is. | `Context/current-priorities.md`, `Context/deep-work.md` |
+| Waar landt het schrijven? (A9) | In een schrift. | `Context/current-priorities.md` |
+| Wanneer komt de NPS-meting op Enterprise? (W4) | Nog lang niet, niet belangrijk. Het NPS-doel vervalt. | `Archive/context-2026-11/nps-doel-vervallen.md` |
+| Welk weektarget na de nulmeting? (W5) | 14 uur. Meten lukt nog niet goed (zie A10). | `Context/current-priorities.md` |
+| Wordt de vaardigheid van dit jaar "een bericht schrijven waar iemand op reageert"? (P11) | Meerdere dingen, met Cold Caller als de vaardigheid om te noteren. | `Context/personal.md` |
+| De actuele standen van de potjes? (G15) | Krijg ik elke zaterdag van Dante. | `Context/financien.md` |
+| Welke Azure-regio('s)? (V1) | Nederland plus EU. | `.claude/skills/privacy-it/platform-privacykennis.md` |
+| Blijft de zin "studentdata gaat nooit naar externe AI-aanbieders", en telt OCR als AI-aanbieder? (V3) | De zin klopt. OCR telt niet als AI-aanbieder. | `.claude/skills/privacy-it/platform-privacykennis.md` |
+| Wie is plaatsvervanger voor Jeroen bij een datalek? (V7) | Niemand. Het blijft Jeroen. | `.claude/skills/privacy-it/platform-privacykennis.md` |
+| Wat staat er bij Railway, hoe lang blijven back-ups bewaard, hoe werkt installatie en beheer? (V8, V9, V11) | Geschrapt als vraag aan Dante: dit staat in de licentieovereenkomst. Back-ups en beheer opgezocht in het sjabloon, Railway staat in geen enkele overeenkomst in Drive. | `.claude/skills/privacy-it/platform-privacykennis.md` |
+| Wat is het verschil tussen fitness en gym? | Geen verschil. Het wordt "sporten". | `Context/open-vragen.md` (Later) |

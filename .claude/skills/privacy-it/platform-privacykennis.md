@@ -1,8 +1,10 @@
 # Privacykennis over het Eduface-platform
 
-_Laatst bijgewerkt: 2026-10-02. Beheerder: Jeroen van Gessel._
+_Laatst bijgewerkt: 2026-11-22. Beheerder: Jeroen van Gessel._
 
 Opgebouwd uit de concept-verwerkersovereenkomst (SURF-model 4.0) en wat Jeroen daarover in de chat heeft bevestigd. De kennis staat per onderwerp, niet per artikel. Het origineel staat in `Archive/privacy-it-2026-10/dpa-surf-4-0-artikelsgewijs.md`, alleen openen als de letterlijke clausule ertoe doet.
+
+Contractuele feiten (back-ups, beheer, termijnen) staan in de licentieovereenkomst. Bron in Drive: `Eduface_Licentieovereenkomst_Template - Tjarko .docx`, Bijlage 3 en 4. Waarden tussen vierkante haken in dat sjabloon zijn standaardwaarden, geen afspraken per klant.
 
 Status per feit: **BEVESTIGD** = door Jeroen genoemd met datum. **TOEGEZEGD** = staat in de concept-DPA, niet apart bevestigd. **OPEN** = zie onderaan. Alles geldt voor de Enterprise-versie en voor Paper Grader en Exam Grader. Orale examens en Academic Integrity (beta) zijn niet vastgelegd.
 
@@ -36,9 +38,9 @@ Status per feit: **BEVESTIGD** = door Jeroen genoemd met datum. **TOEGEZEGD** = 
 
 | Verwerker | Wat | Waar |
 |---|---|---|
-| Microsoft Azure | Hosting van de AI-verwerking: compute, database, opslag. Documenten, rubrics, feedbacktekst, audit logs. | "Nederland + EU". Exacte regio OPEN (V1). |
+| Microsoft Azure | Hosting van de AI-verwerking: compute, database, opslag. Documenten, rubrics, feedbacktekst, audit logs. | "Nederland + EU". BEVESTIGD 22-11-2026 (Dante). |
 | Google Cloud | OCR van geüploade documenten en afbeeldingen. | europe-west4 (Eemshaven/Rotterdam). BEVESTIGD. |
-| Railway | Databasehosting voor ondersteunende diensten. Interne metadata en tijdelijke verwerkingsgegevens. | Amsterdam. Wat er precies in staat is OPEN (V8). |
+| Railway | Databasehosting voor ondersteunende diensten. Interne metadata en tijdelijke verwerkingsgegevens. | Amsterdam. Wat er precies in staat is niet vastgelegd: Railway komt in geen enkele licentieovereenkomst in Drive voor (22-11-2026). Noem alleen de omschrijving hiernaast. |
 
 - **Alle drie werken voor Eduface alleen met EU-infrastructuur.** BEVESTIGD 02-10-2026. Er gaat niets naar derde landen.
 - De instelling geeft algemene toestemming voor deze verwerkers. Eduface blijft volledig aansprakelijk voor wat zij doen en legt hen dezelfde verplichtingen contractueel op.
@@ -50,7 +52,8 @@ Status per feit: **BEVESTIGD** = door Jeroen genoemd met datum. **TOEGEZEGD** = 
 - **Wordt een opdracht in het Eduface-systeem verwijderd, dan verwijdert Eduface hem ook.** BEVESTIGD 02-10-2026.
 - Daarnaast wordt verwijderd op verzoek van de instelling en na afloop van de samenwerking.
 - Na afloop van de overeenkomst vernietigt of retourneert Eduface binnen één maand alle persoonsgegevens, ook kopieën bij verwerkers. Kiest de instelling voor teruggave, dan in een gangbaar formaat aan haar of een aangewezen partij. Op verzoek bevestigt Eduface schriftelijk dat dat gedaan is.
-- Back-ups zijn automatisch en hebben een beperkte bewaartermijn. Die termijn is niet vastgelegd (V9).
+- Back-ups: dagelijks, 30 dagen bewaard, doorlopend (licentie-sjabloon Bijlage 3 punt 8 en Bijlage 4A, 22-11-2026).
+- **LET OP, botsing (22-11-2026).** Het licentie-sjabloon zegt: Klantdata blijft tot uiterlijk 60 dagen na het einde van de overeenkomst (art. 12.3, Bijlage 4A), logbestanden 12 maanden, en een datalek gaat binnen 36 uur naar de instelling (Bijlage 4 punt 9). Hierboven en in sectie 13 staan 8 jaar bewaren en 48 uur melden (Jeroen en de SURF-DPA, 02-10-2026). Noem naar een instelling geen bewaartermijn of meldtermijn tot Dante zegt welke geldt.
 
 ## 6. Training en hergebruik
 
@@ -115,19 +118,19 @@ Krijgt Eduface zelf een overheidsverzoek over de gegevens, dan neemt zij direct 
 
 ## 13. Wat je wel mag zeggen
 
-- Verwerking en opslag vinden plaats in de EU, ook bij Microsoft, Google en Railway.
+- Verwerking en opslag vinden plaats in Nederland en de EU (Azure: Nederland + EU), ook bij Google en Railway.
+- Studentdata gaat nooit naar externe AI-aanbieders. Google Cloud OCR (europe-west4) leest alleen de tekst uit documenten en telt niet als AI-aanbieder (Dante, 22-11-2026), maar blijft wel een genoemde verwerker.
 - Er wordt niet getraind op studentwerk of instellingsdata.
 - De docent beslist, de AI assisteert. De instelling bepaalt of feedback eerst door de docent wordt goedgekeurd.
 - Gegenereerde feedback bevat geen persoonsgegevens, tenzij een docent die er zelf in zet.
-- Standaard 8 jaar bewaard, direct verwijderd als de opdracht uit het systeem gaat, en op verzoek en na afloop van de samenwerking.
-- Een datalek gaat binnen 48 uur naar de instelling.
+- Standaard 8 jaar bewaard, direct verwijderd als de opdracht uit het systeem gaat, en op verzoek en na afloop van de samenwerking. (Botst met het licentie-sjabloon, zie sectie 5.)
+- Een datalek gaat binnen 48 uur naar de instelling. (Botst met het licentie-sjabloon, zie sectie 5.) Contactpersoon bij Eduface is Jeroen van Gessel, er is geen plaatsvervanger (Dante, 22-11-2026).
 
 ## 14. Wat je niet mag zeggen
 
 - Een certificering of auditrapport, tot dat er is.
-- "Alles staat in Nederland". Alleen "EU" tot de Azure-regio bevestigd is (V1).
+- "Alles staat in Nederland". Bevestigd is "Nederland + EU" (22-11-2026), dus niet alles in Nederland.
 - Dat Amerikaans recht er niets mee te maken heeft. Er is bevestigd dat de infrastructuur EU-only is, niet wat dat betekent voor de Amerikaanse moederbedrijven.
-- "Studentdata gaat nooit naar externe AI-aanbieders" (staat in `Platform/product.md`). Google OCR is een externe verwerker, of dat een "AI-aanbieder" is, is OPEN (V3).
 - Iets over orale examens of Academic Integrity en gegevens.
 - Een fallbackpositie. Die zijn er niet.
 
@@ -137,11 +140,17 @@ Zie ook `Context/open-vragen.md`.
 
 | # | Punt |
 |---|---|
-| V1 | Welke Azure-regio('s)? De DPA zegt zowel "Nederland + EU" als "gehost in Nederland". |
-| V3 | `Platform/product.md` zegt "Studentdata gaat nooit naar externe AI-aanbieders". Google Cloud OCR verwerkt wel studentdocumenten. Blijft die zin staan, en telt OCR als "AI-aanbieder"? |
-| V7 | Wie is plaatsvervanger voor Jeroen bij een datalek? |
-| V8 | Wat staat er precies bij Railway? Zit er studentdata of een identificeerbare gebruiker in? |
-| V9 | Hoe lang blijven back-ups bewaard na verwijdering van een opdracht? |
 | V10 | Welk risicoprofiel hanteert Eduface zelf onder de AI Act (laag, midden, hoog)? De AI Act noemt AI die leerresultaten beoordeelt hoog risico (bijlage III). |
-| V11 | Installatie en beheer: werkt alles in de browser zonder lokale installatie? Kunnen losse functies of modules per instelling aan en uit? Wat moet een instelling technisch inrichten (LMS-koppeling, SSO, accountbeheer)? Kunnen studenten zelf verwijderen? |
 | V12 | Continuïteit van het bedrijf zelf (financiering, team, exit- of escrowregeling) en het aantal getekende verwerkersovereenkomsten met Nederlandse instellingen. |
+
+## 16. Installatie en beheer
+
+Uit het licentie-sjabloon (22-11-2026). Beantwoordt wat eerder V11 heette, voor zover het sjabloon het zegt.
+
+- Het platform is een online webapplicatie (art. 1.13). Een lokale installatie wordt nergens genoemd.
+- Standaardimplementatie: één LMS-koppeling en één online kick-off en training van maximaal twee uur (art. 8.2). Het sjabloon noemt Brightspace, Canvas, Moodle, Blackboard en ItsLearning.
+- De instelling wijst één of twee Key users met beheerrol aan, beheert zelf de toegang van gebruikers en moet tijdig meewerken aan de LMS-koppeling met beheerrechten en een technisch contactpersoon (art. 9.1 en 9.2).
+- Via het beheerdersdashboard of de LMS-koppeling kan de instelling cursisten deactiveren (art. 5.2).
+- SSO staat als optie tussen haakjes in Bijlage 4B, niet als standaard vastgelegd.
+- Functies per instelling aan en uit zetten staat niet in het sjabloon. Bèta-functies worden aangeboden zoals ze zijn (art. 3.5).
+- Studenten verwijderen zichzelf niet. Verzoeken van betrokkenen lopen via de instelling (Bijlage 4 punt 7). De instelling kan Klantdata exporteren, en Eduface verwijdert uiterlijk 60 dagen na afloop (art. 12.3).

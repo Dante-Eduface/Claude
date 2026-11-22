@@ -36,7 +36,7 @@ Die verdeling voert hij echt uit, het is geen voornemen.
 | Trade Republic | Aandelen. Rekening bestaat al. |
 | Archiefrekening | Slaapt, geen bestemming |
 
-**Actuele standen: nog niet bekend.** Dante vult de potjes opnieuw aan en levert een nieuw bestand met de standen. Tot dat er is, geen bedragen noemen. De cijfers in de geldplan-app zijn achterhaald.
+**Actuele standen krijg ik elke zaterdag van Dante** (22-11-2026). Zonder stand van die week noem ik geen bedragen. De cijfers in de geldplan-app zijn achterhaald.
 
 ## Wat vaststaat
 

@@ -1,6 +1,6 @@
 # Dante
 
-_Laatst bijgewerkt: 2026-09-20._
+_Laatst bijgewerkt: 2026-11-22._
 
 - **Naam:** Dante Torbed
 - **Geboren:** 17-08-2006. Leeftijd zelf uitrekenen tegen de datum van vandaag, nooit een getal hier neerzetten. (Op 19-09-2026: 20.)
@@ -16,19 +16,25 @@ Per deal wordt bepaald wie de eigenaar is. Dat staat in Close bij de opportunity
 
 ## Weekritme
 
-Uit de agenda gelezen op 19-09-2026. Dit is de vorm van zijn week, niet een afspraak. Verandert het, dan hoort dit bestand mee te veranderen.
+**Bron: Todoist, terugkerende taken.** Vragen over zijn agenda en weekritme beantwoord ik door daar te kijken (filter `recurring`), niet uit dit bestand en niet uit zijn kalender. Dante op 22-11-2026: *"alle vragen omtrent mijn agenda wil ik dat je in de to-do list kijkt, en dan kijk je naar welke terugkomende taken erin staan op een bepaald moment."* Hieronder de stand van 22-11-2026, een momentopname.
 
 | Wanneer | Wat |
 |---|---|
-| Elke dag 05:00 | Op |
-| Ma t/m do 05:53 | Trein naar Utrecht, ~07:05 op kantoor |
-| Ma en wo | Terugtrein 18:35, thuis ~19:25 |
-| Di en do | Terugtrein 16:05, want gym om 17:00 |
-| Vrijdag | Thuis, geen reistijd |
-| Elke dag 20:00 | Dag afsluiten |
-| Gym 4x per week | Di en do 17:00, za en zo 13:00, 2 uur per keer |
+| Elke dag | 04:00 🔋 (alleen een icoon, zie A11) · 12:00 Lunch · 20:00 🪫 |
+| Ma en wo | 06:14 🚆 & 📝 heenreis, schrijven (1u16) · 16:05 🚆 & 📖 terugreis, lezen (50 min) |
+| Ma | 14:00 Pruning the sales machine (1u) |
+| Ma t/m vr | 10:00 Cold calls (1u) · 11:00 Pipeline review + Close taken (1u) |
+| Vr | 10:30 MT meeting voorbereiden (15 min) · 14:00 Tjarko update doornemen (30 min) · 14:00 Menno / Dante meeting voorbereiden (30 min) |
+| Di, do, vr, za, zo | 07:00 Pauze (1u) · 15:00 📖 lezen (1u) |
+| Di en za | 16:00 Upper (1u30) |
+| Do en zo | 16:00 Lower (2u) |
+| Za | 07:00 Aankomende week plannen (1u) · 14:00 Financieel controle (30 min) · 14:30 Boodschappen (30 min) · 19:00 Schoon maken (30 min) |
+| Zo | 18:00 Koken (2u) |
+| Za en zo | Persoonlijke mail openen |
 
-In de trein leest hij boeken, heen en terug, acht uur per week (20-09-2026). Voorstel dat openstaat: de heenreis wordt het schrijfblok en de terugreis blijft lezen, omdat de ochtend zijn frisste uur is. Zie `Context/deep-work.md`.
+Wat hier niet staat, staat niet als terugkerende taak in Todoist: de deep-work-blokken zelf (tijden in `Context/current-priorities.md` zijn van 19-09-2026 en wijken af, zie A11), opstaan, en wanneer hij op kantoor is. Niet invullen.
+
+**Trein:** op maandag en woensdag schrijft hij op de heenreis (in een schrift) en leest hij op de terugreis. De rest van de week bepaalt hij zelf wanneer hij schrijft, alleen als het nodig is (22-11-2026). Zie `Context/deep-work.md`.
 
 ## Hoe hij werkt
 

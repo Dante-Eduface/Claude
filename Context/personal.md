@@ -33,12 +33,12 @@ Vier dagen per week, upper/lower. Volumeprioriteit ligt op **lats en laterale de
 
 | Dag | Training | Tijd |
 |---|---|---|
-| Dinsdag | Lower A | 17:00 tot 19:00 |
-| Donderdag | Upper A | 17:00 tot 19:00 |
-| Zaterdag | Lower B | 13:00 tot 15:00 |
-| Zondag | Upper B | 13:00 tot 15:00 |
+| Dinsdag | Upper | 16:00 tot 17:30 |
+| Donderdag | Lower | 16:00 tot 18:00 |
+| Zaterdag | Upper | 16:00 tot 17:30 |
+| Zondag | Lower | 16:00 tot 18:00 |
 
-Consistent en wat hem betreft niet onderhandelbaar. Dat di en do om 17:00 begint, betekent dat hij die dagen de trein van 16:05 pakt en dus eerder stopt met werken. Dat is bewust.
+Consistent en wat hem betreft niet onderhandelbaar. Tijden en duur komen uit Todoist (22-11-2026), de oude indeling was di en do 17:00 en za en zo 13:00, twee uur. Of dit Upper A/B en Lower A/B is, volgt uit `Personal/fitness/schema/`, niet uit Todoist.
 
 ### Eten
 
@@ -65,21 +65,21 @@ Staat apart in **`Context/financien.md`**. Laadt ook niet automatisch.
 
 ## Leren
 
-- **Leest in de trein**, heen en terug, ongeveer acht uur per week (20-09-2026).
+- **Trein op maandag en woensdag:** heen schrijven in een schrift, terug lezen. Daarnaast staat 📖 om 15:00 op di, do, vr, za en zo (1 uur), volgens Todoist (22-11-2026).
 
 - Geen HBO of MBA, bewust niet. Wil kennis die hij direct kan toepassen. Eduface is zijn business school.
 - Boeken die bij zijn fase passen: *The Mom Test*, *$100M Offers* (Hormozi), *Zero to One* (Thiel).
 - Leest nu *Deep Work* (Newport). Wat daaruit in zijn werkweek terechtkomt staat in `Context/deep-work.md`.
-- **Welke vaardigheid hij het komende jaar ontwikkelt, volgt uit de leidende maat**, niet uit een aparte keuze. Zijn redenering: de skill die bij de lead metric hoort, dat is waar hij hard in moet worden. Staat nog open als P11.
+- **Vaardigheid van dit jaar:** het worden meerdere dingen, met **Cold Caller** als de vaardigheid die ik voor dit jaar noteer (22-11-2026).
 
 ## Het weekend
 
-Twee thema's, allebei met dezelfde twee deep-work-blokken erin (06:00 tot 08:00 en 09:00 tot 11:00):
+Twee thema's (tijden uit Todoist, 22-11-2026):
 
-- **Zaterdag is een werkdag.** Week plannen in blok 1, financiele controle om 11:00, gym om 13:00, boodschappen om 15:00.
-- **Zondag is een thuisdag.** LinkedIn-post in blok 1, gym om 13:00, schoonmaken om 15:00, koken om 16:00.
+- **Zaterdag is een werkdag.** 07:00 aankomende week plannen, 14:00 financieel controle, 14:30 boodschappen, 16:00 gym (Upper), 19:00 schoonmaken.
+- **Zondag is een thuisdag.** 16:00 gym (Lower), 18:00 koken.
 
-Boodschappen blijven bewust op zaterdag, een dag voor het koken. Zie `Context/deep-work.md` voor de hele week.
+Boodschappen op zaterdag, koken op zondag. De hele week staat in `Context/me.md`.
 
 ## Wat nu geen prioriteit is
 
