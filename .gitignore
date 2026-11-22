@@ -11,5 +11,9 @@ node_modules/
 */temporary screenshots/
 **/temporary screenshots/
 
+# Python-bytecode
+__pycache__/
+*.pyc
+
 # Losse zip-uploads
 *.zip
