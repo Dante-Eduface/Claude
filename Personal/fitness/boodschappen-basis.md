@@ -33,6 +33,25 @@ Feta, walnoten, chiliflakes, chipotle, sambal, gember. Lust hij niet.
 
 Let op bij recepten met **hot honey**: dat is honing met chili. Vervang door gewone honing plus zoet gerookt paprikapoeder.
 
+## Heeft hij altijd in huis, niet op de lijst zetten
+
+Opgegeven door Dante op 22-11-2026, bij het doornemen van een lijst. Vraag niet opnieuw, zet het niet op de lijst:
+
+- Knoflook
+- Eieren
+- Olie (neutraal)
+- Peper en zout
+- Paprikapoeder, kurkuma
+- Rijst
+- Citroen
+- Ketjap manis
+- Donkere basterdsuiker
+- Pindakaas
+
+**Lente-ui koopt hij wel apart**, ook al staat die in de basislijst hierboven.
+
+Let op: ketjap manis en tomatenketchup zijn twee verschillende dingen. Ketjap heeft hij, ketchup niet per se.
+
 ## Wat er per week bovenop komt
 
 Alleen wat de gekozen gerechten vragen. Die lijst maken we op **zaterdagochtend**, voor de boodschappen van 15:00.
