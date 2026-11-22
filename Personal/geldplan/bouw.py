@@ -10,7 +10,7 @@ Leest .TAB (ABN tabgescheiden) en .STA (MT940).
 """
 import re, sys, json, glob, pathlib, collections
 
-VAST = {'NS', 'Huur aan je moeder', 'Zorgpremie', 'Trainmore', 'Kapper (gepind)'}
+VAST = {'NS', 'Huur aan je moeder', 'Zorgpremie', 'Trainmore'}
 BOOD = {'Lidl', 'Dirk', 'Medina', 'Albert Heijn', 'AH to go', 'Jumbo', 'Picnic',
         'Hoogvliet', 'Bakker', 'Vomar', 'Kruidvat', 'Etos', 'Action', 'Apotheek',
         'Primera', 'HEMA', 'Digros'}
@@ -18,13 +18,19 @@ BOOD = {'Lidl', 'Dirk', 'Medina', 'Albert Heijn', 'AH to go', 'Jumbo', 'Picnic',
 NAAM = [('ns groep', 'NS'), ('ns reizigers', 'NS'), ('nl56deut0265186420', 'NS'),
         ('nl03zzz301243580000', 'NS'), ('lindeborg', 'Huur aan je moeder'),
         ('zorg en zeker', 'Zorgpremie'), ('zorgverzekeraar', 'Zorgpremie'),
-        ('trainmore', 'Trainmore'), ('geldmaat', 'Kapper (gepind)'),
+        ('trainmore', 'Trainmore'), ('geldmaat', 'Contant opgenomen'),
+        ('gea, betaalpas', 'Contant opgenomen'),
         ('lidl', 'Lidl'), ('dirk', 'Dirk'), ('medina', 'Medina'),
         ('albert heijn', 'Albert Heijn'), ('ah to go', 'AH to go'), ('jumbo', 'Jumbo'),
         ('picnic', 'Picnic'), ('hoogvliet', 'Hoogvliet'), ('tercih', 'Bakker'),
         ('vomar', 'Vomar'), ('kruidvat', 'Kruidvat'), ('etos', 'Etos'),
         ('action', 'Action'), ('apotheek', 'Apotheek'), ('primera', 'Primera'),
         ('hema', 'HEMA'), ('bol.co', 'bol.com'), ('tango', 'Tanken'),
+        ('dienst uitvoering onderwijs', 'DUO (studieschuld)'),
+        ('duo hoofdrekening', 'DUO (studieschuld)'),
+        ('torbed', 'Familie'), ('van gessel', 'Jeroen'),
+        ('lufthansa', 'Vliegticket'), ('klm', 'Vliegticket'),
+        ('corendon', 'Reis'), ('booking', 'Reis'), ('airbnb', 'Reis'),
         ('fair amusement', 'Kermis'), ('lib festival', 'Festival'),
         ('voetballen', 'Voetballen'), ('goede schaar', 'Kleermaker'),
         ('she ceo', 'She CEO'), ('north end', 'Café'), ('kraantj', 'Café'),
@@ -36,7 +42,13 @@ NAAM = [('ns groep', 'NS'), ('ns reizigers', 'NS'), ('nl56deut0265186420', 'NS')
         ('bruna', 'Bruna'), ('tikkie', 'Tikkie'), ('klm', 'KLM'),
         ('paylogic', 'Tickets'), ('bol.com', 'bol.com')]
 # eigen rekeningen: overboekingen hiertussen zijn geen uitgave
-EIGEN = ['0882235753', '0884479609', '0118499882', '0142509299']
+# Eigen rekeningen en eigen beleggingsrekeningen: een overboeking hiernaartoe is
+# sparen of beleggen, geen uitgave. 0147953219 is het oude DIRECT SPAREN-potje,
+# de DE- en TRBK-nummers zijn Trade Republic (incl. drie teruggeboekte pogingen
+# in juni en juli 2026, en de mislukte 159 van 08-08 die op 06-09 terugkwam).
+EIGEN = ['0882235753', '0884479609', '0118499882', '0142509299', '0147953219',
+         'de71502109007021460375', 'de21502109000220191427',
+         'de87100123450909549601', 'nl48trbk0909549611']
 BETAAL = '882235753'
 
 num = lambda s: float(s.replace('.', '').replace(',', '.'))

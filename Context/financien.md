@@ -4,7 +4,7 @@
 >
 > **Kijk vooruit, niet achteruit.** Dante op 19-09-2026: *"ik wil dat je niet zo bezig bent met het verleden, de situatie is heel anders."* De historische uitgavenanalyse uit de afschriften is daarom hier niet overgenomen. Gebruik dit bestand voor waar hij naartoe gaat, niet voor wat hij vorig jaar uitgaf.
 
-_Laatst bijgewerkt: 14-11-2026. Bron: Dante zelf, plus zijn ABN-afschriften._
+_Laatst bijgewerkt: 22-11-2026. Bron: Dante zelf, plus zijn ABN-afschriften._
 
 ## Wat er binnenkomt
 
@@ -76,6 +76,38 @@ Salaris oktober 2.146,82 binnen op 28-10. De zorgpremie voor november (129,45) i
 
 - **Zorgpotje: 129 eruit op 21-10 om de NS-rekening van 167,60 te betalen.** Dat was het plan, en het werkte. Maar hij is nooit teruggestort, en de novemberpremie ging op 30-10 alsnog goed omdat het salaris twee dagen eerder binnenkwam. Dat was timing, geen buffer. Het potje staat nu op 0,30.
 - **Curaçao: 160 eruit tussen 18 en 27 oktober**, in zes stukjes met omschrijvingen als boodschappen, ei, friet voor de fam, eerste Picnic-bestelling en broek laten maken. Dat is precies het patroon van augustus en september: het potje wordt de boodschappenpot zodra de rekening krap staat.
+
+### Stand 20-11-2026, en achttien maanden historie
+
+Uit de export van 22-11-2026, die teruggaat tot mei 2025. Dat is de jaarhistorie waar ik sinds oktober om vroeg.
+
+| Pot | Stand | Peildatum |
+|---|---|---|
+| Betaalrekening | 297,73 | 20-11-2026 |
+| Curacao | 937,85 | 31-10-2026 |
+| Zorgverzekering | 129,75 | 31-10-2026 |
+| Savings | 0,25 | 02-10-2026 |
+| **Totaal** | **1.365,58** | |
+
+**De potjes staan op 31 oktober, niet op 20 november.** De export bevat die rekeningen niet verder dan 31-10. De standen kloppen met de overboekingen van die dag, dus er is geen aanwijzing dat er iets af is. Zeker is het niet.
+
+**Sinds 12 november: 345 uit, 130 in** (de zorgtoeslag rond de 20e). Betaalrekening dus van 512,83 naar 297,73.
+
+**Een enkele dag halverwege de maand kostte 270 euro**, verspreid over kleding, een gemeentenota en boodschappen. Geen van die posten is fout, maar ze vielen wel samen, vier dagen na de tandartsnota. Dat is het patroon om in de gaten te houden: niet het tempo, maar de stapeling.
+
+**Haalt hij de 28e?** Met 297,73 en acht dagen te gaan, waarvan de zorgpremie van 129,45 nog moet. Dat laat ongeveer 168 euro voor acht dagen, tegen een normaal tempo van 119 per week. Krap maar het past, mits er geen tweede stapeldag tussen zit.
+
+**Het plan voor 28 november blijft staan: 381 naar Curacao en 325 naar de huurauto.** Curacao staat op 937,85 van de 1.700, dus er moet nog 762 bij in twee salarismomenten. De huurauto staat op nul van de 650. Samen 706 per salarisdag, op 28-11 en 28-12, en dan is alles rond voor hij op 26 januari vertrekt.
+
+### Wat de achttien maanden leren over de categorieen
+
+De namenlijst in `bouw.py` was op een maand getuned en viel door de mand op achttien. Drie dingen gerepareerd op 22-11-2026:
+
+1. **Contante opnames werden als kapper gelabeld.** Dat klopte voor de 60 euro die hij voor de kapper pint, maar niet voor een opname van honderden euro's. Alle opnames heten nu "Contant opgenomen" en gelden niet meer als vaste last.
+2. **Vijf eigen rekeningen ontbraken in het filter**, dus overboekingen naar zijn oude spaarpotje en naar Trade Republic werden als uitgave geteld. Inclusief drie pogingen die direct zijn teruggeboekt en een mislukte overboeking die een maand later terugkwam.
+3. **Het grootste deel van de historie viel onder "Overig".** Dat is met driekwart gezakt door labels voor DUO, familie-overboekingen, vliegtickets en reizen.
+
+Wat er niet opgelost is: er blijft een lange staart van kleine posten, en contante opnames zijn per definitie blind. **Voor alles voor oktober 2026 is de verdeling vast, boodschappen, rest dus grof.** De dagtotalen kloppen, de categorieen niet overal.
 
 ### Stand 12-11-2026
 
