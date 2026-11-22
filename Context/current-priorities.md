@@ -26,7 +26,7 @@ Zo opgegeven door Dante op 22-11-2026, vervangt de oude tijden (door de week 07:
 
 **28 uur per week**, zeven dagen, vier uur per dag. Hij gaat alleen op ma en wo met de trein naar kantoor (22-11-2026).
 
-**Een geboekte meeting wint altijd van een blok.** Calendly blijft open, ook 's ochtends. Dat is een bewuste keuze: liever een meeting dan een blok. Blokken die daardoor sneuvelen zijn geen falen.
+**Nieuwe meetings boekt hij alleen tussen 13:00 en 15:00** (22-11-2026). Vervangt de oude regel dat Calendly ook 's ochtends open bleef en een meeting altijd van een blok won. Of een meeting buiten dat venster nog een blok mag verdringen, bijvoorbeeld als een prospect echt niet anders kan: OPEN.
 
 In een blok past **één** taak, die de avond ervoor bij het afsluiten van 20:00 gekozen is. De telefoon ligt buiten de kamer.
 
