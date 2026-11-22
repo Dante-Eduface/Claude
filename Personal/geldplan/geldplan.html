@@ -678,8 +678,9 @@ const aMAANDTOT={'2026-03':1062,'2026-04':1290,'2026-05':2524,'2026-06':2517,
 const aMN=['januari','februari','maart','april','mei','juni','juli','augustus',
            'september','oktober','november','december'];
 const aDG=['MA','DI','WO','DO','VR','ZA','ZO'];
-const aKL={vast:'var(--slate)',bood:'var(--g2)',rest:'var(--g3)'};
-const aNM={vast:'vast',bood:'boodschappen',rest:'rest'};
+const aKL={vast:'var(--slate)',bood:'var(--g2)',een:'var(--blue)',rest:'var(--g3)'};
+const aNM={vast:'vast',bood:'boodschappen',een:'eenmalig',rest:'rest'};
+const aCAT=['vast','bood','een','rest'];
 const aNU=new Date();
 let aModus='maand', aAnker=new Date(aNU.getFullYear(),aNU.getMonth(),1);
 const aSl=d=>d.getFullYear()+String(d.getMonth()+1).padStart(2,'0')+String(d.getDate()).padStart(2,'0');
@@ -711,7 +712,7 @@ function aMaandView(){
       const tt2=aTot(d); wsom+=tt2;
       if(d.getMonth()===m) totaal+=tt2;
       const g=aGroep(d);
-      const rr=['vast','bood','rest'].filter(k=>g[k]).map(k=>
+      const rr=aCAT.filter(k=>g[k]).map(k=>
         '<div class="agr"><span class="agdot" style="background:'+aKL[k]+'"></span>'+
         '<span class="agl">'+aNM[k]+'</span><span class="agb">'+E(g[k])+'</span></div>').join('');
       cellen+='<td class="agcel'+(d.getMonth()!==m?' agbuiten':'')+

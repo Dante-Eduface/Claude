@@ -11,6 +11,12 @@ Leest .TAB (ABN tabgescheiden) en .STA (MT940).
 import re, sys, json, glob, pathlib, collections
 
 VAST = {'NS', 'Huur aan je moeder', 'Zorgpremie', 'Trainmore'}
+# Eenmalig: hoort niet in het leefgeld van 497 per maand. Een vliegticket, geld
+# terug naar familie, een aflossing of de jaarlijkse tandarts zijn doelgeld.
+# Zonder deze splitsing was september 2.379 "leefgeld", inclusief de vlucht van
+# 947 en de 950 aan zijn vader.
+EENMALIG = {'Vliegticket', 'Reis', 'Familie', 'DUO (studieschuld)',
+            'Tandarts (Infomedics)'}
 BOOD = {'Lidl', 'Dirk', 'Medina', 'Albert Heijn', 'AH to go', 'Jumbo', 'Picnic',
         'Hoogvliet', 'Bakker', 'Vomar', 'Kruidvat', 'Etos', 'Action', 'Apotheek',
         'Primera', 'HEMA', 'Digros'}
@@ -108,7 +114,8 @@ def bouw(map_):
         if any(e in oms.lower().replace(' ', '') for e in EIGEN):
             continue  # overboeking naar een eigen potje, geen uitgave
         n = naam(oms)
-        groep = 'vast' if n in VAST else ('bood' if n in BOOD else 'rest')
+        groep = ('vast' if n in VAST else 'bood' if n in BOOD
+                 else 'een' if n in EENMALIG else 'rest')
         dagen[datum].append({'n': n, 'b': round(-bedrag, 2), 'c': groep})
     return {d: sorted(v, key=lambda x: -x['b']) for d, v in sorted(dagen.items())}
 
