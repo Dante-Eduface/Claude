@@ -70,7 +70,7 @@ Newport noemt vier manieren om deep work in een leven te passen:
 
 **28 uur per week**, zeven dagen. Daarna eten.
 
-Hij staat elke dag om 04:00 op (16-11-2026) en sluit om 20:00 af. Op ma t/m do pakt hij de trein van **05:53**, is 06:53 op het station en rond 07:05 op kantoor. Daarmee is de botsing met blok 1 opgelost: hij zit er vijf minuten voor de start.
+Hij staat elke dag om 04:00 op (16-11-2026) en sluit om 20:00 af. Hij gaat alleen op ma en wo met de trein (22-11-2026). Daarmee is de botsing met blok 1 opgelost: hij zit er vijf minuten voor de start.
 
 ### Heb je een rustdag nodig
 
@@ -145,7 +145,7 @@ Op vrijdag en in het weekend is er geen trein. Dan zijn het de **eerste 20 minut
 | | Ma t/m vr | Zaterdag | Zondag |
 |---|---|---|---|
 | 04:00 | Op | Op | Op |
-| 05:53 | Trein (ma t/m do) | | |
+| 05:53 | Trein (ma en wo, 22-11-2026) | | |
 | Blok 1 | 07:00 tot 09:00 | 06:00 tot 08:00, week plannen | 06:00 tot 08:00, LinkedIn-post |
 | Pauze | 09:00 tot 10:00, leeg | 08:00 tot 09:00, leeg | 08:00 tot 09:00, leeg |
 | Blok 2 | 10:00 tot 12:00 | 09:00 tot 11:00 | 09:00 tot 11:00 |

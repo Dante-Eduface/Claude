@@ -1,6 +1,6 @@
 # Wat er nu eerst moet
 
-_Laatst bijgewerkt: 2026-09-20. Dit bestand wint van elk ander contextbestand. Verandert de focus, dan verandert dit bestand, niet een zin ergens anders._
+_Laatst bijgewerkt: 2026-11-22. Dit bestand wint van elk ander contextbestand. Verandert de focus, dan verandert dit bestand, niet een zin ergens anders._
 
 ## De prioriteit
 
@@ -23,7 +23,7 @@ Enkelvoud, en dat is het punt. Dante op 19-09-2026: *"bepaal gewoon één priori
 | Ma t/m vr | 07:00 tot 09:00 | 09:00 tot 10:00 | 10:00 tot 12:00 |
 | Za en zo | 06:00 tot 08:00 | 08:00 tot 09:00 | 09:00 tot 11:00 |
 
-**28 uur per week**, zeven dagen, vier uur per dag. Op ma t/m do pakt hij de trein van 05:53 en zit rond 07:05 op kantoor.
+**28 uur per week**, zeven dagen, vier uur per dag. Hij gaat alleen op ma en wo met de trein naar kantoor (22-11-2026).
 
 **Een geboekte meeting wint altijd van een blok.** Calendly blijft open, ook 's ochtends. Dat is een bewuste keuze: liever een meeting dan een blok. Blokken die daardoor sneuvelen zijn geen falen.
 
@@ -31,7 +31,7 @@ In een blok past **één** taak, die de avond ervoor bij het afsluiten van 20:00
 
 **Het pauze-uur is leeg.** Eten, lopen, geen scherm. Geen mail, geen Close. Shallow werk gaat naar de middag, want dat is werktijd en geen pauze (gecorrigeerd 20-09-2026).
 
-**De trein van 05:53 is het schrijfblok**, ma t/m do. Denken en schrijven over werk en persoonlijke dingen door elkaar. Telt niet mee in de deep-work-uren. Op vrijdag en in het weekend zijn het de eerste 20 minuten van blok 1.
+**De trein is het schrijfblok**, ma en wo (22-11-2026). Denken en schrijven over werk en persoonlijke dingen door elkaar. Telt niet mee in de deep-work-uren. Op di, do, vr en in het weekend zijn het de eerste 20 minuten van blok 1.
 
 Hoe je de blokken intens maakt staat in `Context/deep-work.md`.
 
