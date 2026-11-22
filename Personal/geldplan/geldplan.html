@@ -416,8 +416,7 @@ function render(){
   const u=nu.getHours();
   document.getElementById('groet').textContent='Je geldplan';
   document.getElementById('herosub').textContent=
-    'Stand van '+new Date(S.standPer).toLocaleDateString('nl-NL',{day:'numeric',month:'long'})+
-    '. Alleen om naar te kijken; ik werk hem bij na elke controle.';
+    'Alleen om naar te kijken; ik werk hem bij na elke controle.';
 
   // vermogen
   const v=vermogen(), doel=+S.potUitHuis;
@@ -430,9 +429,11 @@ function render(){
   document.getElementById('saldoNu').innerHTML=E2(rekening());
   const ds=Object.keys(S.daily).sort();
   const laatsteDag=ds.length?ds[ds.length-1]:null;
+  // De datum staat er altijd bij, maar schreeuwt pas als hij echt oud is.
+  const oudDg=laatsteDag?Math.round((nu-new Date(laatsteDag))/864e5):0;
   document.getElementById('dagLbl').innerHTML=!laatsteDag?'':
-    (laatsteDag===iso(nu)?new Date(laatsteDag).toLocaleDateString('nl-NL')
-     :'<b style="color:var(--red)">stand van '+new Date(laatsteDag).toLocaleDateString('nl-NL')+', niet van vandaag</b>');
+    (oudDg<=4?new Date(laatsteDag).toLocaleDateString('nl-NL',{day:'numeric',month:'short'})
+     :'<b style="color:var(--red)">'+oudDg+' dagen oud, geef me een nieuw saldo</b>');
   const de=document.getElementById('saldoDelta');
   de.className='delta '+(L.delta>=0?'pos':'neg');
   de.textContent=L.delta===null?'':(L.delta>=0?'+':'-')+E(Math.abs(L.delta))+' sinds je vorige check';
