@@ -1,7 +1,7 @@
 {
   "client": "Academica University of Applied Sciences",
   "lang": "nl",
-  "last_updated": "16 november 2026",
+  "last_updated": "23 november 2026",
   "author": "Dante Torbed",
   "client_logo": "academica-logo.png",
   "palette": "business-case",
@@ -10,10 +10,6 @@
     [
       "Instelling",
       "Academica University of Applied Sciences"
-    ],
-    [
-      "Contractpartij (Eduface)",
-      "Blockbook B.V., handelend onder de naam Eduface"
     ],
     [
       "Beoogde datum ondertekening",
@@ -30,7 +26,7 @@
   ],
   "summary": [
     "Applied science beoordelen vraagt nakijkers die de theorie én de praktijk kennen, en die combinatie is schaars.",
-    "Eduface is een onderwijskundig AI-model dat formatieve en summatieve feedback geeft op studentopdrachten binnen NEO LMS. Cijfers en feedback komen automatisch terug in NEO. De docent leest, past aan en geeft vrij.",
+    "Eduface is een onderwijskundig AI-model dat formatieve en summatieve feedback geeft op studentopdrachten binnen NEO LMS. Cijfers en feedback komen automatisch terug in NEO.",
     "Het doel: te allen tijde feedback kunnen geven. Efficiënter, sneller en accurater beoordelen, met minder externe beoordelaars.",
     "Ons gezamenlijke doel is in de week van 18 januari 2027 live gaan in NEO LMS met een eerste groep, mits de Eduface-test ochtend laat zien dat de koppeling werkt en de feedback op praktijkgerichte opdrachten goed is."
   ],
@@ -70,7 +66,7 @@
     [
       "Sabine van den Uijl",
       "s.uijl@academica-group.com",
-      "Kwaliteitsmedewerker, onderwijsontwerp en kwaliteit"
+      "Manager kwaliteit en onderwijsinnovatie"
     ],
     [
       "Florentine van Tinteren",
@@ -80,7 +76,7 @@
     [
       "Joey van Gessel",
       "j.vangessel@academica-group.com",
-      "IT- en NEO LMS-consultant"
+      "IT- en NEO LMS"
     ],
     [
       "David van Lent",
@@ -90,7 +86,7 @@
     [
       "Laura Smudde",
       "l.smudde@academica-group.com",
-      ""
+      "Beheerder NEO LMS"
     ]
   ],
   "steps": [
@@ -137,7 +133,7 @@
       "Afgerond"
     ],
     [
-      "Eerste technische sessie: Eduface geregistreerd in een afgeschermde testcursus in NEO LMS",
+      "Eerste technische sessie: Eduface geregistreerd in een afgeschermde test cursus in NEO LMS",
       "Joey van Gessel, Samuel Rafini en Dante Torbed",
       "20 okt 2026",
       "Afgerond"
@@ -203,63 +199,81 @@
       "Afgerond"
     ],
     [
-      "Go-live plan samen opgesteld",
-      "Marjolein Looij en Dante Torbed",
-      "16 nov 2026",
-      "Bezig"
-    ],
-    [
       "Eerste vakken gekozen: Schoolleidersopleiding en MILE",
       "Marjolein Looij",
       "16 nov 2026",
       "Afgerond"
     ],
     [
-      "Definitief go-live plan gedeeld en goedgekeurd",
-      "Dante Torbed",
-      "23 nov 2026 (voorstel)",
-      "Gepland"
+      "Go-live plan samen opgesteld",
+      "Marjolein Looij en Dante Torbed",
+      "16 nov 2026",
+      "Bezig"
     ],
     [
       "Walkthrough van de Eduface-opdracht in een cursussjabloon in NEO LMS",
       "Joey van Gessel, Florentine van Tinteren en Dante Torbed",
       "18 nov 2026",
-      "Gepland"
+      "Afgerond"
+    ],
+    [
+      "Concept van de licentieovereenkomst en de SLA gestuurd",
+      "Jeroen van Gessel",
+      "18 nov 2026",
+      "Afgerond"
     ],
     [
       "Business case bespreken en besluit over de vervolgstappen",
       "Mirte van den Berg, Marjolein Looij, Sabine van den Uijl, Jeroen van Gessel en Dante Torbed",
       "23 nov 2026",
-      "Gepland"
+      "Afgerond"
     ],
     [
-      "Voorbeelden aangeleverd voor de test ochtend: per opdracht een beoordelingsformulier en een ingevulde, geanonimiseerde studentopdracht",
-      "Marjolein Looij en vijf docenten",
+      "Definitief go-live plan gedeeld en goedgekeurd",
+      "Dante Torbed",
       "23 nov 2026",
       "Gepland"
     ],
     [
-      "Eduface-test ochtend bij Academica (zie de tabel hieronder)",
+      "Verwerkersovereenkomst ondertekend terug ontvangen",
+      "Marjolein Looij en Jeroen van Gessel",
+      "27 nov 2026 (voorstel)",
+      "Bezig"
+    ],
+    [
+      "Voorbeelden aangeleverd voor de test ochtend: per opdracht een beoordelingsformulier en geanonimiseerde studentenopdracht",
+      "Marjolein Looij en docenten",
+      "27 nov 2026",
+      "Gepland"
+    ],
+    [
+      "Eduface-test ochtend bij Academica, Weteringschans 28, Amsterdam",
       "Marjolein Looij en Dante Torbed",
       "30 nov 2026",
       "Gepland"
     ],
     [
-      "Concept van de licentieovereenkomst en de SLA gestuurd",
+      "Key users benoemd",
+      "Marjolein Looij",
+      "30 nov 2026 (voorstel)",
+      "Gepland"
+    ],
+    [
+      "Licentieovereenkomst getekend, met de SLA als bijlage",
+      "Jeroen van Gessel en Academica (ondertekenaar te bevestigen)",
+      "4 dec 2026 (voorstel)",
+      "Gepland"
+    ],
+    [
+      "Demovideo in NEO LMS",
       "Dante Torbed",
-      "Te bevestigen",
+      "4 dec 2026 (voorstel)",
       "Gepland"
     ],
     [
       "Afspreken welke rollen in NEO LMS toegang krijgen tot Eduface",
       "Marjolein Looij, Florentine van Tinteren en Dante Torbed",
-      "3 dec 2026 (voorstel)",
-      "Gepland"
-    ],
-    [
-      "Key users benoemd",
-      "Marjolein Looij",
-      "3 dec 2026 (voorstel)",
+      "7 dec 2026 (voorstel)",
       "Gepland"
     ],
     [
@@ -271,100 +285,35 @@
     [
       "Digitale voortgang update aan Marjolein tijdens de key-user fase",
       "Dante Torbed",
-      "Te bevestigen",
+      "11 dec 2026 (voorstel)",
       "Gepland"
     ],
     [
-      "Verwerkersovereenkomst akkoord",
-      "David van Lent en Jeroen van Gessel",
-      "Te bevestigen",
-      "Bezig"
-    ],
-    [
-      "Licentieovereenkomst getekend, met de verwerkersovereenkomst als bijlage",
-      "Jeroen van Gessel en Academica (ondertekenaar te bevestigen)",
-      "Te bevestigen",
+      "Implementatieplan samen opstellen",
+      "Marjolein Looij, Dante Torbed en de toegewezen persoon van Academica",
+      "11 dec 2026 (voorstel)",
       "Gepland"
     ],
     [
-      "Demovideo in NEO LMS",
-      "Dante Torbed",
-      "11 jan 2027 (voorstel)",
-      "Gepland"
-    ],
-    [
-      "Eerste opdrachten live, klaar voor inleveringen van studenten",
-      "Dante Torbed en de key users van Academica",
-      "14 jan 2027 (voorstel)",
-      "Gepland"
-    ],
-    [
-      "Go-live",
+      "Go-live: eerste studenten ontvangen feedback met Eduface",
       "Dante Torbed",
       "Week van 18 jan 2027",
       "Gepland"
     ],
     [
-      "Evaluatie na go-live: doet Eduface wat beloofd is en kan het de aantallen opdrachten aan, ook bij opschalen",
+      "Start aan het implementatieplan delen",
+      "Dante Torbed en de key users van Academica",
+      "1 feb 2027 (voorstel)",
+      "Gepland"
+    ],
+    [
+      "Evaluatie na go-live: doet Eduface wat beloofd is",
       "Marjolein Looij en Dante Torbed",
-      "Te bevestigen",
+      "15 feb 2027 (voorstel)",
       "Gepland"
     ]
   ],
-  "campus": {
-    "title": "Eduface-test ochtend bij Academica, Weteringschans 28, Amsterdam",
-    "days": [
-      [
-        "Ma",
-        "30 nov 2026, 09:30 - 11:00",
-        "Docenten en medewerkers van onderwijsontwerp en kwaliteit bekijken de feedback die Eduface geeft op hun eigen praktijkopdrachten, die ze vooraf hebben aangeleverd. We kijken ook vanuit de student: hoe de feedback en het cijfer in NEO verschijnen. Zijn jullie tevreden over de feedback, dan gaan we door met de Schoolleidersopleiding en MILE.",
-        "Gepland"
-      ]
-    ]
-  },
-  "resources": [
-    [
-      "Gedeelde map",
-      "Gedeeld",
-      "Alles hieronder komt hierin te staan.",
-      "https://drive.google.com/drive/folders/1F6DAqslFrDvfBtDiqVxqHuHxvT-r3sPd"
-    ],
-    [
-      "Business case",
-      "Gedeeld",
-      "Definitieve versie gedeeld op 16 november, met de laatste aanpassingen van Marjolein."
-    ],
-    [
-      "Verwerkers­overeenkomst",
-      "Bezig",
-      "De overeenkomst van Academica, op 29 oktober met opmerkingen teruggestuurd door Eduface."
-    ],
-    [
-      "Licentieovereenkomst",
-      "Te delen",
-      "Concept volgt, met de verwerkersovereenkomst als bijlage."
-    ],
-    [
-      "SLA",
-      "Te delen",
-      "De service level agreement van Eduface, met de afspraken over support. Volgt samen met het concept van de licentieovereenkomst."
-    ]
-  ],
-  "qa": [
-    [
-      "Zijn de koppeling met het LMS en het afstemmen van het model op onze rubrics extra kosten?",
-      "Marjolein",
-      "Nee. Beide zitten in de prijs per student."
-    ],
-    [
-      "Hoe werkt de facturatie als het aantal studenten op en neer gaat?",
-      "Marjolein",
-      "We factureren maandelijks vooraf, op basis van het aantal actieve studenten in NEO LMS die maand. Het minimum van € 1.500 dekt de eerste 400 studenten."
-    ],
-    [
-      "Moeten de LTI-instellingen voor elke cursus opnieuw worden ingevuld?",
-      "Joey",
-      "Nee. Eduface staat één keer centraal ingesteld in NEO LMS. Een Eduface-opdracht in het cursussjabloon gaat mee naar elke nieuwe cursus, zoals NEO Support bevestigde."
-    ]
-  ]
+  "campus": null,
+  "resources": null,
+  "qa": null
 }

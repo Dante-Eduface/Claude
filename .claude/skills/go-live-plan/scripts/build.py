@@ -213,7 +213,7 @@ def build(plan, template, out_docx):
     # 5 planned steps
     t = T[5].group(0); rs = rows(t); proto = rs[2]
     steps = [keep_whole(shade(settexts(proto, [str(i + 1)] + list(st)), i % 2 == 1)) for i, st in enumerate(plan["steps"])]
-    new[5] = body(t, 2, steps)
+    new[5] = body(t, 0, [keep_next(rs[0]), keep_next(rs[1])] + steps)  # kop nooit los van de tabel
 
     # 6 days on campus (optioneel)
     t = T[6].group(0)
@@ -225,8 +225,10 @@ def build(plan, template, out_docx):
     else:
         new[6] = ""
 
-    # 7 where everything lives
+    # 7 where everything lives (optioneel: null laat de tabel weg)
     t = T[7].group(0); rs = rows(t)
+    if not plan.get("resources"):
+        plan["resources"] = []
     link = next(r for r in rs[2:] if "<w:hyperlink" in r)
     colored = next(r for r in rs[2:] if "<w:hyperlink" not in r and fill_of(cells(r)[1]) not in PLAIN_FILLS)
     plain = next(r for r in rs[2:] if "<w:hyperlink" not in r and fill_of(cells(r)[1]) in PLAIN_FILLS)
@@ -245,12 +247,12 @@ def build(plan, template, out_docx):
         else:
             proto = colored if status_color(status) else plain
         res.append(keep_whole(shade(settexts(proto, [name, status, detail]), i % 2 == 1)))
-    new[7] = body(t, 0, [keep_next(rs[0]), keep_next(rs[1])] + res)
+    new[7] = body(t, 0, [keep_next(rs[0]), keep_next(rs[1])] + res) if res else ""
 
     # 8 questions and answers
     t = T[8].group(0); rs = rows(t)
-    qa = [keep_whole(shade(settexts(rs[2], list(q)), i % 2 == 1)) for i, q in enumerate(plan["qa"])]
-    new[8] = body(t, 0, [keep_next(rs[0]), keep_next(rs[1])] + qa)
+    qa = [keep_whole(shade(settexts(rs[2], list(q)), i % 2 == 1)) for i, q in enumerate(plan.get("qa") or [])]
+    new[8] = body(t, 0, [keep_next(rs[0]), keep_next(rs[1])] + qa) if qa else ""
 
     out = s
     for k in sorted(new, reverse=True):
