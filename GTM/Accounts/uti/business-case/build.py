@@ -1,4 +1,4 @@
-"""Bouwt de UTI business case (expected case en high case in een document) als PDF.
+"""Bouwt de UTI business case (low, expected en high case in een document) als PDF.
 
 Alle cijfers komen uit GTM/Accounts/uti/business-case-berekening.xlsx (gecachte waarden),
 zodat het document nooit afwijkt van het model.
@@ -42,8 +42,13 @@ COST = B["B31"].value
 WIN = R["H35"].value
 WIN_AM, WIN_EVE = R["H33"].value, R["H34"].value
 SINGLE_WIN = [R.cell(r, 8).value for r in (30, 31, 32)]
+# Samenvatting: B = Low (alleen overloop), C = Expected (alle tijdwinst, r = 50%), D = High (bullish, r = 70%)
+LOW = dict(cash_h=M["B14"].value, sav=M["B15"].value, ratio=M["B18"].value)
 EXP = dict(cash_h=M["C14"].value, sav=M["C15"].value, ratio=M["C18"].value)
 HIGH = dict(cash_h=M["D14"].value, sav=M["D15"].value, ratio=M["D18"].value)
+RED_H = M["D6"].value      # reductie in de high case
+SAVED_H_HIGH = TOTAL_H * RED_H
+SAVED_MULTI_HIGH = SAVED_MULTI * RED_H / RED
 
 DD, TD = SEC2 / 2, SEC3 / 3
 INSTR_DAYS = (DD + TD) * D
@@ -52,7 +57,7 @@ OVER3 = max(0.0, 3 * G - WIN)
 CEIL_H = (DD * OVER2 + TD * OVER3) * D
 NEED_H = COST / RATE
 NEED_MIN = NEED_H / INSTR_DAYS * 60
-for c in (EXP, HIGH):
+for c in (LOW, EXP, HIGH):
     c["min"] = c["cash_h"] / INSTR_DAYS * 60
 
 
@@ -102,9 +107,11 @@ def cg(widths):
 def chart():
     rows = [
         ("Grading time today", TOTAL_H, "ctx", False),
-        (f"Time the tool takes off ({pct(RED)} of grading time)", SAVED_H, "ctx", False),
-        ("High case: all hours saved in two- and three-section shifts", HIGH["cash_h"], "key", True),
-        ("Expected case: only grading outside scheduled hours", EXP["cash_h"], "key", True),
+        (f"Time the tool takes off, low and expected case ({pct(RED)})", SAVED_H, "ctx", False),
+        (f"Time the tool takes off, high case ({pct(RED_H)})", SAVED_H_HIGH, "ctx", False),
+        (f"High case: all saved hours in two- and three-section shifts, at {pct(RED_H)}", HIGH["cash_h"], "key", True),
+        (f"Expected case: all saved hours in two- and three-section shifts, at {pct(RED)}", EXP["cash_h"], "key", True),
+        ("Low case: only grading outside scheduled hours", LOW["cash_h"], "key", True),
         (f"Hours needed to cover the licence ({usd100(COST)} at ${RATE:.0f} an hour)", NEED_H, "gate", False),
     ]
     out = []
@@ -123,15 +130,19 @@ def build():
     # --- first page
     p1 = ("UTI's HVAC program grew from about 29 to about 98 sections per course start in twelve months. The share of instructors teaching two or "
           "three sections went from 14% to 42%, and they grade more than their shift schedule leaves room for.")
-    p2 = (f"Eduface proposes a score and written feedback for each lab submission, and the instructor reviews and approves it. We expect this to "
-          f"take about {pct(RED)} off the grading time. This document shows an expected case and a high case. The high case is an upper bound, not a "
-          f"forecast. Both are estimates until the pilot measures them.")
+    p2 = (f"Eduface proposes a score and written feedback for each lab submission, and the instructor reviews and approves it. This document shows three cases. "
+          f"The low case counts only the grading that now happens outside scheduled hours. The expected case counts all the time the tool saves in two- and "
+          f"three-section shifts, with the tool taking {pct(RED)} off the grading time. The high case is the bullish scenario: the same, with the tool taking "
+          f"{pct(RED_H)} off. The expected and high cases assume the freed time becomes real payroll savings, through less overtime, shorter shifts or fewer hires. "
+          f"All three are estimates until the pilot measures them.")
 
+    CASES = (LOW, EXP, HIGH)
     glance = (
-        f"<tr><td>Payroll savings a year</td><td class='n'>{usd100(EXP['sav'])}</td><td class='n'>{usd100(HIGH['sav'])}</td></tr>"
-        f"<tr><td>Licence cost a year</td><td class='n'>{usd100(COST)}</td><td class='n'>{usd100(COST)}</td></tr>"
-        f"<tr class='total'><td>Net result a year</td><td class='n'>{net_text(EXP['sav'], COST)}</td><td class='n'>{net_text(HIGH['sav'], COST)}</td></tr>"
-        f"<tr><td>Back for every $1 spent</td><td class='n'>${EXP['ratio']:.2f}</td><td class='n'>${HIGH['ratio']:.2f}</td></tr>"
+        "<tr><td>Time the tool takes off</td>" + "".join(f"<td class='n'>{pct(x)}</td>" for x in (RED, RED, RED_H)) + "</tr>"
+        "<tr><td>Payroll savings a year</td>" + "".join(f"<td class='n'>{usd100(c['sav'])}</td>" for c in CASES) + "</tr>"
+        "<tr><td>Licence cost a year</td>" + "".join(f"<td class='n'>{usd100(COST)}</td>" for c in CASES) + "</tr>"
+        "<tr class='total'><td>Net result a year</td>" + "".join(f"<td class='n'>{net_text(c['sav'], COST)}</td>" for c in CASES) + "</tr>"
+        "<tr><td>Back for every $1 spent</td>" + "".join(f"<td class='n'>${c['ratio']:.2f}</td>" for c in CASES) + "</tr>"
     )
 
     today_rows = [
@@ -154,39 +165,45 @@ def build():
         f"<tr><td>Three sections</td><td class='n'>{pct(SEC3 / S)}</td><td>No fixed limit</td><td class='n'>{need3:.0f} min</td><td>All of it</td></tr>"
     )
 
-    # --- calculation table: both cases side by side
-    step4_exp = (f"<strong>Expected:</strong> only grading that falls outside scheduled hours, about {OVER2 * 60:.0f} of the {RED * 2 * G * 60:.0f} minutes saved "
-                 f"per day for a two-section instructor, all saved time for three sections. <strong>High:</strong> all saved time in these shifts.")
+    # --- calculation table: three cases side by side
+    step4 = (f"<strong>Low:</strong> only grading that falls outside scheduled hours, about {OVER2 * 60:.0f} of the {RED * 2 * G * 60:.0f} minutes saved "
+             f"per day for a two-section instructor, all saved time for three sections. <strong>Expected and high:</strong> all saved time in these shifts.")
+    n3 = lambda *xs: "".join(f"<td class='n'>{x}</td>" for x in xs)
     calc = (
-        f"<tr><td>1</td><td>Grading time today</td><td>{S:.0f} sections × {G:g} h × {D:.0f} days</td><td class='n' colspan='2'>{h10(TOTAL_H)} h, both cases</td><td>UTI Operations: 30 to 60 minutes, midpoint. Not measured.</td></tr>"
-        f"<tr><td>2</td><td>Time the tool takes off</td><td>{pct(RED)} of step 1</td><td class='n' colspan='2'>{h10(SAVED_H)} h, both cases</td><td>Eduface assumption. Measured in the pilot.</td></tr>"
-        f"<tr><td>3</td><td>In two- and three-section shifts</td><td>{pct(SHARE)} of sections (Oct 2026)</td><td class='n' colspan='2'>{h10(SAVED_MULTI)} h, both cases</td><td>HVAC data export. The other {h10(SAVED_SINGLE)} h fall in single-section shifts, paid 8 hours either way.</td></tr>"
-        f"<tr><td>4</td><td>Becomes payroll savings</td><td>{step4_exp}</td><td class='n'>{h10(EXP['cash_h'])} h</td><td class='n'>{h10(HIGH['cash_h'])} h</td><td>UTI example shift schedules, 13 Nov 2026</td></tr>"
-        f"<tr><td>5</td><td>Value</td><td>Hours × ${RATE:.0f}</td><td class='n'>{usd100(EXP['sav'])}</td><td class='n'>{usd100(HIGH['sav'])}</td><td>UTI Operations, 10 Nov 2026</td></tr>"
-        f"<tr><td>6</td><td>Licence cost</td><td>{IN_CLASS:,.0f} students × ${PRICE:.2f} × 12 months</td><td class='n' colspan='2'>{usd100(COST)}, both cases</td><td>Draft licence agreement, sent 16 Nov 2026, Article 5.1</td></tr>"
-        f"<tr class='total'><td></td><td>Net result per year</td><td>Step 5 minus step 6</td><td class='n'>{net_text(EXP['sav'], COST)}</td><td class='n'>{net_text(HIGH['sav'], COST)}</td><td></td></tr>"
-        f"<tr><td></td><td>Back for every $1 spent</td><td>Step 5 divided by step 6</td><td class='n'>${EXP['ratio']:.2f}</td><td class='n'>${HIGH['ratio']:.2f}</td><td></td></tr>"
+        f"<tr><td>1</td><td>Grading time today</td><td>{S:.0f} sections × {G:g} h × {D:.0f} days</td><td class='n' colspan='3'>{h10(TOTAL_H)} h, all cases</td><td>UTI Operations: 30 to 60 minutes, midpoint. Not measured.</td></tr>"
+        f"<tr><td>2</td><td>Time the tool takes off</td><td>{pct(RED)} of step 1 (high case: {pct(RED_H)})</td>{n3(h10(SAVED_H) + ' h', h10(SAVED_H) + ' h', h10(SAVED_H_HIGH) + ' h')}<td>Eduface assumption. High case is the bullish scenario. Measured in the pilot.</td></tr>"
+        f"<tr><td>3</td><td>In two- and three-section shifts</td><td>{pct(SHARE)} of sections (Oct 2026)</td>{n3(h10(SAVED_MULTI) + ' h', h10(SAVED_MULTI) + ' h', h10(SAVED_MULTI_HIGH) + ' h')}<td>HVAC data export. The rest falls in single-section shifts, paid 8 hours either way.</td></tr>"
+        f"<tr><td>4</td><td>Becomes payroll savings</td><td>{step4}</td>{n3(h10(LOW['cash_h']) + ' h', h10(EXP['cash_h']) + ' h', h10(HIGH['cash_h']) + ' h')}<td>UTI example shift schedules, 13 Nov 2026</td></tr>"
+        f"<tr><td>5</td><td>Value</td><td>Hours × ${RATE:.0f}</td>{n3(usd100(LOW['sav']), usd100(EXP['sav']), usd100(HIGH['sav']))}<td>UTI Operations, 10 Nov 2026</td></tr>"
+        f"<tr><td>6</td><td>Licence cost</td><td>{IN_CLASS:,.0f} students × ${PRICE:.2f} × 12 months</td><td class='n' colspan='3'>{usd100(COST)}, all cases</td><td>Draft licence agreement, sent 16 Nov 2026, Article 5.1</td></tr>"
+        f"<tr class='total'><td></td><td>Net result per year</td><td>Step 5 minus step 6</td>{n3(*(net_text(c['sav'], COST) for c in (LOW, EXP, HIGH)))}<td></td></tr>"
+        f"<tr><td></td><td>Back for every $1 spent</td><td>Step 5 divided by step 6</td>{n3(*('$%.2f' % c['ratio'] for c in (LOW, EXP, HIGH)))}<td></td></tr>"
     )
 
-    # --- sensitivity, both cases
-    base_e, base_h = EXP["sav"], HIGH["sav"]
+    # --- sensitivity, three cases: (low, expected, high) savings, None = not applicable
+    def three(g=G, r=RED, rh=RED_H, m=1.0):
+        return (lens1(g, r, m), lens2(g, r, m), lens2(g, rh, m))
+    base = (LOW["sav"], EXP["sav"], HIGH["sav"])
+    low30 = lens1(G, 0.3)
     sens = [
-        ("Base case", base_e, base_h, COST),
-        ("Grading takes 30 minutes per section instead of 45", lens1(0.5, RED), lens2(0.5, RED), COST),
-        ("Grading takes 60 minutes per section instead of 45", lens1(1.0, RED), lens2(1.0, RED), COST),
-        ("The tool removes 30% of grading time instead of 50%", lens1(G, 0.3), lens2(G, 0.3), COST),
-        (f"Hours are paid at time and a half (${RATE * 1.5:.0f} an hour)", lens1(G, RED, 1.5), lens2(G, RED, 1.5), COST),
-        (f"2,500 students instead of {LICENSED:,.0f} (sections keep growing)", base_e, base_h, 2500 * PRICE * 12),
+        ("Base case", base, COST),
+        ("Grading takes 30 minutes per section instead of 45", three(g=0.5), COST),
+        ("Grading takes 60 minutes per section instead of 45", three(g=1.0), COST),
+        (f"The tool removes 30% of grading time instead of {pct(RED)} (high case: {pct(RED_H)})", three(r=0.3, rh=0.3), COST),
+        ("Only half of the saved hours in step 4 reduce payroll", (None, EXP["sav"] / 2, HIGH["sav"] / 2), COST),
+        (f"Hours are paid at time and a half (${RATE * 1.5:.0f} an hour)", three(m=1.5), COST),
+        (f"2,500 students instead of {LICENSED:,.0f} (sections keep growing)", base, 2500 * PRICE * 12),
     ]
+    def cell(v, cost):
+        return "<td class='n'>n/a</td><td class='n'>n/a</td>" if v is None else f"<td class='n'>{usd100(v)}</td><td class='n'>{net_text(v, cost)}</td>"
     sens_rows = "".join(
-        f"<tr{' class=total' if i == 0 else ''}><td>{e(lab)}</td><td class='n'>{usd100(a)}</td><td class='n'>{net_text(a, cost)}</td>"
-        f"<td class='n'>{usd100(b)}</td><td class='n'>{net_text(b, cost)}</td></tr>"
-        for i, (lab, a, b, cost) in enumerate(sens)
+        f"<tr{' class=total' if i == 0 else ''}><td>{e(lab)}</td>" + "".join(cell(v, cost) for v in vals) + "</tr>"
+        for i, (lab, vals, cost) in enumerate(sens)
     )
-    sens_note = ("In the expected case the result depends most on how long grading really takes. At 30 minutes per section it fits inside the scheduled time "
-                 "and leaves little to save in payroll. Once the tool removes more than about 30% of grading time, the expected case no longer depends on "
-                 "that percentage, because the grading outside scheduled hours is already gone. The high case moves in proportion to grading time, the share "
-                 "the tool removes and the hourly rate, because it counts every saved hour as money.")
+    sens_note = ("The low case depends most on how long grading really takes: at 30 minutes per section it fits inside the scheduled time and leaves little "
+                 "to save in payroll. The expected and high cases move in proportion to grading time, the share the tool removes and the hourly rate, because "
+                 "they count every saved hour in these shifts as money. That only holds if the freed time really lowers payroll; the half-of-the-hours row "
+                 "shows the result if it does for half of it (not applicable to the low case).")
 
     fte = SAVED_SINGLE / 2080
     leavers = 66 * 0.20
@@ -196,15 +213,15 @@ def build():
 <link rel="stylesheet" href="file://{HERE}/style.css"></head><body>
 <img class="brand" src="file://{LOGO}" alt="Eduface">
 <h1>Eduface in HVAC: business case for Universal Technical Institute</h1>
-<p class="case">Expected case and high case</p>
-<p class="status">Draft for validation by UTI, 24 Nov 2026. Prepared by Eduface from figures supplied by UTI Operations. Every input names its source.</p>
+<p class="case">Low case, expected case and high case</p>
+<p class="status">Draft for validation by UTI, 24 Nov 2026. Prepared by Eduface from figures supplied by UTI Operations. Every input names its source. Hours are rounded to 10, dollars to $100. Contact: Dante Torbed, Customer Success Manager, dante.torbed@eduface.me. The model is available on request.</p>
 
 <p class="lead">{e(p1)}</p>
 <p>{e(p2)}</p>
 {chart()}
 
-<table class="keep"><caption>The two cases at a glance</caption>{cg((46, 27, 27))}
-<thead><tr><th></th><th>Expected case</th><th>High case</th></tr></thead><tbody>{glance}</tbody></table>
+<table class="keep"><caption>The three cases at a glance</caption>{cg((40, 20, 20, 20))}
+<thead><tr><th></th><th class="n">Low case</th><th class="n">Expected case</th><th class="n">High case</th></tr></thead><tbody>{glance}</tbody></table>
 
 <h2>Customer context</h2>
 <h3>What UTI is working toward</h3>
@@ -250,25 +267,25 @@ def build():
 </tbody></table>
 
 <h2>Cost justification</h2>
-<table><caption>How the savings are calculated, expected case and high case</caption>{cg((5, 15, 27, 11, 11, 31))}
-<thead><tr><th>Step</th><th>What</th><th>Calculation</th><th class="n">Expected case</th><th class="n">High case</th><th>Basis</th></tr></thead><tbody>{calc}</tbody></table>
+<table><caption>How the savings are calculated, low, expected and high case</caption>{cg((5, 13, 23, 11, 11, 11, 26))}
+<thead><tr><th>Step</th><th>What</th><th>Calculation</th><th class="n">Low</th><th class="n">Expected</th><th class="n">High</th><th>Basis</th></tr></thead><tbody>{calc}</tbody></table>
 <p class="src">The licence cost is the number of students times ${PRICE:.2f} per student per month (Article 5.1). Every 100 students adds {usd(100 * PRICE * 12)} a year. Onboarding, one LMS integration, training for up to 50 users and standard support are included (Article 8.2). No fee accrues in months without students (Article 5.3).</p>
 
-<table class="keep"><caption>What moves the result</caption>{cg((44, 14, 14, 14, 14))}
-<thead><tr><th>If this changes</th><th class="n">Expected: savings</th><th class="n">Expected: net</th><th class="n">High: savings</th><th class="n">High: net</th></tr></thead><tbody>{sens_rows}</tbody></table>
+<table class="keep"><caption>What moves the result</caption>{cg((25, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5))}
+<thead><tr><th>If this changes</th><th class="n">Low: savings</th><th class="n">Low: net</th><th class="n">Expected: savings</th><th class="n">Expected: net</th><th class="n">High: savings</th><th class="n">High: net</th></tr></thead><tbody>{sens_rows}</tbody></table>
 <p class="src">Savings are payroll savings a year; net is after the licence cost. {e(sens_note)} Other inputs as in the base case.</p>
 
 <h3>Not counted in the numbers</h3>
 <ul>
 <li><strong>Time returned in single-section shifts.</strong> About {h10(SAVED_SINGLE)} hours a year, roughly {fte:.1f} full-time equivalents (2,080 hours each). Single-section instructors are paid 8 hours either way, so it is not a payroll saving. It is time for preparation, training aids and tutoring.</li>
-<li><strong>Turnover.</strong> Last year 37% of HVAC instructors left (25 of 66); UTI Operations suggests 20% as a planning figure (18 Nov 2026). At 20%, about {leavers:.0f} leave a year, and replacing an instructor costs $10,000 to $15,000 (10 Nov 2026), so $132,000 to $198,000. If better workload kept one in ten of them, that is $13,000 to $20,000 a year. UTI Operations links turnover to HVAC growth, and there is no evidence yet that grading load causes departures, so none is counted.</li>
+<li><strong>Turnover.</strong> Last year 37% of HVAC instructors left (25 of 66); UTI Operations suggests 20% as a planning figure (18 Nov 2026). At 20%, about {leavers:.0f} leave a year, and replacing an instructor costs $10,000 to $15,000 (10 Nov 2026), so $132,000 to $198,000. If better workload kept one in ten of them, that is $13,000 to $20,000 a year. There is no evidence yet that grading load causes departures, so none is counted.</li>
 <li><strong>Quality and completion.</strong> Consistent written feedback on every submission, and the effect of freed instructor time on course completion, which UTI tracks and Eduface has not seen.</li>
 </ul>
 
 <h2>Validation and plan</h2>
 <table class="keep"><caption>What the pilot measures</caption>{cg((24, 50, 26))}
 <thead><tr><th>Measure</th><th>How</th><th>Tests</th></tr></thead><tbody>
-<tr><td>Grading time per section per day</td><td>A control group of instructors logs grading time for 1 to 2 weeks before the pilot, then during it (agreed in principle by UTI Operations, 13 Nov 2026).</td><td>The 45 minutes and the {pct(RED)}</td></tr>
+<tr><td>Grading time per section per day</td><td>A control group of instructors logs grading time for 1 to 2 weeks before the pilot, then during it (agreed in principle by UTI Operations, 13 Nov 2026).</td><td>The 45 minutes and the {pct(RED)} (high case: {pct(RED_H)})</td></tr>
 <tr><td>Grading outside scheduled hours</td><td>The same group, per course start, for instructors with one, two and three sections.</td><td>The gap of about {OVER2 * 60:.0f} minutes</td></tr>
 <tr><td>Pay rules for two- and three-section shifts</td><td>UTI Operations confirms how the hours are paid and at what rate.</td><td>Whether the gap is paid time, and the hourly rate</td></tr>
 <tr><td>Accuracy</td><td>Difference between the score Eduface proposes and the instructor's final score on pilot submissions.</td><td>The 90% criterion</td></tr>
@@ -276,7 +293,7 @@ def build():
 <p class="src">Sector evidence for the accuracy criterion, not UTI evidence: a UK university pilot in June 2026 (435 assignments, 13 instructors) averaged about 6 points from the instructor's grade, and about 2 points where instructors had tuned the model. That was written work, not lab short answers.</p>
 
 <h3>Decision rule</h3>
-<p>The licence pays for itself if the pilot shows about {NEED_MIN:.0f} minutes a day less paid or overtime grading per instructor with two or three sections. Across HVAC that is about {h10(NEED_H)} hours a year at ${RATE:.0f}. The expected case assumes {EXP['min']:.0f} minutes, the high case {HIGH['min']:.0f}. After the pilot we replace the assumptions with the measured values and update this document.</p>
+<p>The licence pays for itself if the pilot shows about {NEED_MIN:.0f} minutes a day less paid or overtime grading per instructor with two or three sections. Across HVAC that is about {h10(NEED_H)} hours a year at ${RATE:.0f}. The low case assumes {LOW['min']:.0f} minutes, the expected case {EXP['min']:.0f} and the high case {HIGH['min']:.0f}. The high case also needs the pilot to show the tool removing {pct(RED_H)} or more of the grading time. After the pilot we replace the assumptions with the measured values and update this document.</p>
 
 <table><caption>Plan</caption>{cg((46, 32, 22))}
 <thead><tr><th>Step</th><th>Who</th><th>When</th></tr></thead><tbody>
@@ -295,12 +312,10 @@ def build():
 <h3>Assumptions to validate</h3>
 <ol>
 <li>Grading takes 45 minutes per section per day. UTI Operations estimates 30 to 60 and does not track it.</li>
-<li>The tool removes about {pct(RED)} of that time. Eduface has not yet measured this on UTI's labs.</li>
-<li>Expected case: grading outside scheduled hours is paid time, at $38 an hour. High case: every saved hour in two- and three-section shifts reduces paid hours, at $38 an hour. How these hours are paid is not yet confirmed.</li>
+<li>The tool removes {pct(RED)} of that time in the low and expected cases, and {pct(RED_H)} in the high case (bullish scenario). Eduface has not yet measured this on UTI's labs.</li>
+<li>Low case: grading outside scheduled hours is paid time, at $38 an hour. Expected and high case: every saved hour in two- and three-section shifts reduces paid hours, through less overtime, shorter shifts or fewer hires, at $38 an hour. How these hours are paid is not yet confirmed.</li>
 <li>HVAC runs at about 100 sections and about {IN_CLASS:,.0f} students across the year, with the mix of Oct 2026. Growth raises both the licence cost and the gap.</li>
-<li>The licence terms in the draft agreement of 16 Nov 2026 stay as sent.</li>
 </ol>
-<p class="src">Contact: Dante Torbed, Customer Success Manager, Eduface, dante.torbed@eduface.me. Figures are rounded: hours to the nearest 10, dollars to the nearest $100. The model behind this document is available on request.</p>
 </body></html>"""
 
 

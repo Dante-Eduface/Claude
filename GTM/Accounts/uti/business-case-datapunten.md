@@ -204,34 +204,36 @@ Het model staat in `GTM/Accounts/uti/business-case-berekening.xlsx` (formules, b
 
 ### De oude berekening klopt, en zit in het model
 
-De oude chat gaf: 100 secties x 45 minuten x 255 dagen = 19.125 uur, x $38 = $727k per jaar. Eduface halveert dat, maar alleen bij doubles en triples (60% van de secties) wordt het geld. Dat is **$218k bruto**, tegen $79,2k kosten dus **$138k netto** en 2,74x bruto terug. Het model geeft dezelfde bruto besparing als variant "Hoog" ($217.276), netto **$138.076**.
+De oude chat gaf: 100 secties x 45 minuten x 255 dagen = 19.125 uur, x $38 = $727k per jaar. Eduface halveert dat, maar alleen bij doubles en triples (60% van de secties) wordt het geld. Dat is **$218k bruto**, tegen $79,2k kosten dus **$138k netto** en 2,74x bruto terug. Het model geeft dezelfde bruto besparing als variant "Verwacht" ($217.276, sinds 24 nov de oude Hoog), netto **$138.076**.
 
 - **$139k is netto, en gebaseerd op $79k kosten.** In de sales-sessie van 16 nov werd het als bruto besparing gelezen ("$139k tegenover $79k kosten") en daardoor naar 76% ROI "bijgesteld". Dat was een misverstand over het getal. Zeg er altijd bij of een bedrag bruto of netto is. Met de $79.200 uit het model komt het op $138k netto, dus de oude chat klopte.
 - **Wat de oude berekening aanneemt:** alle bespaarde tijd bij doubles en triples wordt geld, en 45 minuten per sectie. Dat is het optimistische einde, niet het meest waarschijnlijke.
 - **Break-even:** 2.084 uur per jaar tegen $79.200 kosten, ongeveer 8,5 tot 9 minuten per sectie per dag bij doubles en triples, of 17 minuten per instructeur met twee of drie secties per dag. Dat geldt alleen als alle bespaarde tijd geld wordt. Als de helft geld wordt, is het twee keer zoveel.
 
-### Vier varianten (tabblad Samenvatting)
+### Drie cases plus stresstest (tabblad Samenvatting), herschikt op 24 nov
 
-| | Laag | **Verwacht** | Hoog (oude berekening) | Hoog + overwerktarief |
+Dante: de oude Verwacht is nu **Laag**, de oude Hoog is nu **Verwacht**, en **Hoog** is Verwacht met 70% in plaats van 50% tijdwinst (bullish scenario, geen target). Alle drie staan als kolom in het document. Kosten overal $79.200, overuurmultiplier 1,0.
+
+| | **Laag** | **Verwacht** | **Hoog (bullish)** | Stresstest (oude Laag) |
 |---|---|---|---|---|
-| Nakijktijd per sectie (g) | 0,5 uur | **0,75 uur** | 0,75 uur | 0,75 uur |
-| Reductie door de tool (r) | 30% | **50%** | 50% | 50% |
-| Wat wordt kas (kaslens) | overloop boven het venster | **overloop boven het venster** | alle tijdwinst | alle tijdwinst |
-| Overuurmultiplier (m) | 1,0 | **1,0** | 1,0 | 1,5 ($57) |
-| Bespaarde uren (tijd) | 3.825 | **9.562** | 9.562 | 9.562 |
-| Waarvan kas | 219 uur | **3.439 uur** | 5.718 uur | 5.718 uur |
-| **Kasbesparing per jaar (bruto)** | $8.325 | **$130.698** | $217.276 | $325.914 |
-| Kosten Eduface | $79.200 | **$79.200** | $79.200 | $79.200 |
-| Netto | $-70.875 | **+$51.498** | +$138.076 | +$246.714 |
-| Bruto terugverdiend | 0.11x | **1.65x** | 2.74x | 4.11x |
-| Vrijkomende uren zonder kas (capaciteit) | 3.606 | **6.123** | 3.845 | 3.845 |
+| Nakijktijd per sectie (g) | 0,75 uur | 0,75 uur | 0,75 uur | 0,5 uur |
+| Reductie door de tool (r) | 50% | 50% | **70%** | 30% |
+| Wat wordt kas (kaslens) | overloop boven het venster | alle tijdwinst bij doubles en triples | alle tijdwinst bij doubles en triples | overloop |
+| Bespaarde uren (tijd) | 9.562 | 9.562 | 13.388 | 3.825 |
+| Waarvan kas | 3.439 uur | 5.718 uur | 8.005 uur | 219 uur |
+| **Kasbesparing per jaar (bruto)** | **$130.698** | **$217.276** | **$304.186** | $8.325 |
+| Kosten Eduface | $79.200 | $79.200 | $79.200 | $79.200 |
+| Netto | +$51.498 | +$138.076 | +$224.986 | -$70.875 |
+| Bruto terugverdiend | 1,65x | 2,74x | 3,84x | 0,11x |
 
-### Waarom Verwacht de rooster-lens gebruikt
+Realisme: Verwacht en Hoog nemen aan dat de vrijgekomen tijd echt payroll verlaagt (minder overuren, kortere diensten of minder aanname). Dat is in het document benoemd, met een gevoeligheidsrij waarin maar de helft van de uren geld wordt (Verwacht +$29.400 netto, Hoog +$72.900). 70% heeft geen bron in UTI-data (Jeroens 84,5% is een claim, de 94% van de UK-pilot is nauwkeurigheid), dus de pilot moet het aantonen en het document zegt dat.
+
+### Waarom Laag de rooster-lens gebruikt (de strengste lens)
 
 - Een double heeft een venster van gemiddeld 65 minuten voor twee secties. Bij 0,75 uur nakijken per sectie (90 minuten) loopt het ~25 minuten uit. Dat uitlopen is werk buiten het rooster, dus overwerk of onbetaald. **Alleen die overloop wordt kas.** Wat binnen het venster past, wordt voorbereidingstijd, geen geld, tenzij UTI de dienst korter maakt.
 - Bij triples ("zoveel tijd als nodig") wordt alle bespaarde tijd kas.
 - Bij 0,75 uur ligt de uitkomst ($130.698) bijna op het kasplafond ($131.531). **Zodra de reductie boven ongeveer 30% ligt, hangt het resultaat dus niet meer af van de reductie, maar van de nakijktijd (g), het venster en of de overloop betaald wordt.** Dat is goed nieuws, want de reductie is het getal dat we het minst kunnen onderbouwen.
-- Dit komt overeen met jouw "Voorzichtig" ($126k, 26 doubles x 30 minuten tekort, tegen $38). Jouw "Midden" ($211k, 58 secties x 22,5 min) is kaslens 2, en jouw "Hoog" ($316k) is kaslens 2 tegen $57. Kleine verschillen: ik reken met 100 secties (59,8%) in plaats van 97 (58 secties), ik tel de triples mee in de overloop en meet het venster uit de kloktijden (50 en 80 minuten, jij had 40 tot 80).
+- Dit is de Laag-case en komt overeen met jouw "Voorzichtig" ($126k, 26 doubles x 30 minuten tekort, tegen $38). Jouw "Midden" ($211k, 58 secties x 22,5 min) is kaslens 2 (de Verwacht-case), en jouw "Hoog" ($316k) is kaslens 2 tegen $57. Kleine verschillen: ik reken met 100 secties (59,8%) in plaats van 97 (58 secties), ik tel de triples mee in de overloop en meet het venster uit de kloktijden (50 en 80 minuten, jij had 40 tot 80).
 
 ### Wat de uitkomst bepaalt
 
@@ -248,7 +250,7 @@ De oude chat gaf: 100 secties x 45 minuten x 255 dagen = 19.125 uur, x $38 = $72
 
   Bij 0,5 uur past het nakijken bijna in het venster en levert deze lens bijna niets op. Bij 1,0 uur is het $268k.
 - **Kaslens 2 (vast aandeel c bespaarde uren wordt kas), huidige mix** (tabblad Scenarios): g = 0,75, r = 50%: c = 50% geeft $109k, c = 100% geeft $217k. Break-even reductie bij g = 0,75 en $79.200 kosten: 36% (c = 50%) of 18% (c = 100%).
-- **Overuurmultiplier:** bij 1,5 worden alle kasbedragen 50% hoger ($57 per uur). Niet in Verwacht, want het is onbekend hoe doubles worden betaald.
+- **Overuurmultiplier:** bij 1,5 worden alle kasbedragen 50% hoger ($57 per uur). In geen enkele case, want het is onbekend hoe doubles worden betaald. In het document staat het als gevoeligheidsrij.
 
 ### Los van de kas
 
@@ -259,8 +261,8 @@ De oude chat gaf: 100 secties x 45 minuten x 255 dagen = 19.125 uur, x $38 = $72
 
 ### Hoe ik dit weeg
 
-- **Verwacht: 1,65x bruto, +$51.498 netto per jaar.** Laag 0,11x, hoog 2,74x, hoog met overwerktarief 4,11x.
-- Het verschil tussen laag en verwacht zit in de nakijktijd: bij 30 minuten per sectie past alles in het venster en is er nauwelijks kas. Dat is te meten met de controlegroep die Bas voorstelt.
+- **Laag 1,65x bruto (+$51.498 netto), Verwacht 2,74x (+$138.076), Hoog 3,84x (+$224.986).** Stresstest (oude Laag) 0,11x.
+- Het verschil tussen Laag en de stresstest zit in de nakijktijd: bij 30 minuten per sectie past alles in het venster en is er nauwelijks kas. Dat is te meten met de controlegroep die Bas voorstelt.
 - De kostenkant is bewust de eenvoudige: studenten x $3 x 12. De verstuurde licentie kan feitelijk meer factureren (staartje, afronding), zie sectie 5.
 - De oude berekening is het optimistische einde, niet fout. De sample van 12 nov ($228k tot $456k) was te hoog: dat negeerde singles en rekende alle uren als geld.
 - Niet te kwantificeren, wel genoemd: bijles (Nikki), voltooiingspercentage en omzet per student, reiskosten van overgevlogen instructeurs, consistentie tussen campussen, mondelinge studentenfeedback.
