@@ -194,22 +194,34 @@ Problemen, op volgorde van gewicht:
 
 ## 8. De berekening (**berekening**, niet gevalideerd)
 
-Het model staat in `GTM/Accounts/uti/business-case-berekening.xlsx` (formules, blauwe cellen zijn invoer, elk getal heeft bron en status). Tabbladen: Aannames, Berekening, Scenarios, Sample_vs_model, Rooster, Data_export. De uitkomsten zijn onafhankelijk nagerekend in Python en komen exact overeen.
+Het model staat in `GTM/Accounts/uti/business-case-berekening.xlsx` (formules, blauwe cellen zijn invoer, elk getal heeft bron en status). Tabbladen: Samenvatting, Aannames, Berekening, Scenarios, Sample_vs_model, Rooster, Data_export. De uitkomsten zijn onafhankelijk nagerekend in Python en komen exact overeen.
 
 **Invoer die vaststaat (UTI schriftelijk):** 100 secties per dag, 255 dagen, $38 per uur, 22 studenten per sectie, huidige mix 58/39/3% (1 / 2 / 3 secties).
 **Kosten Eduface voor de hele HVAC:** 2.200 studenten x $3 x 12 = **$79.200 per jaar** (Jeroens $79.000).
 
-**Basiscase** (voorzichtig: 0,5 uur nakijken per sectie, tool neemt 50% weg, de helft van de bespaarde uren bij doubles en triples wordt kas, overuurmultiplier 1,0):
+**Drie varianten (tabblad Samenvatting).** Verwacht is mijn beste schatting. Laag en hoog laten zien hoe ver het kan afwijken.
 
-| | |
-|---|---|
-| Bespaarde uren per jaar (tijd) | 6.375 |
-| Waarvan kas (alleen doubles en triples, de helft) | 1.906 uur |
-| **Kasbesparing** | **$72.400** |
-| Kosten Eduface | $79.200 |
-| Voordeel gedeeld door kosten | **0,91x** (netto -$6.800) |
-| Break-even reductie van nakijktijd | 55% |
-| Tijd die vrijkomt maar geen kas is (capaciteit, vooral bij singles) | 4.469 uur |
+| | Laag | **Verwacht** | Hoog |
+|---|---|---|---|
+| Nakijktijd per sectie (g) | 0,5 uur | **0,75 uur** | 1,0 uur |
+| Reductie door de tool (r) | 30% | **50%** | 50% |
+| Aandeel bespaarde uren bij doubles en triples dat kas wordt (c) | 25% | **50%** | 100% |
+| Overuurmultiplier (m) | 1,0 | **1,0** | 1,0 |
+| Bespaarde uren per jaar (tijd) | 3.825 | **9.563** | 12.750 |
+| Waarvan kas | 572 uur | **2.859 uur** | 7.624 uur |
+| **Kasbesparing per jaar** | $21.700 | **$108.600** | $289.700 |
+| Kosten Eduface | $79.200 | **$79.200** | $79.200 |
+| Netto | -$57.500 | **+$29.400** | +$210.500 |
+| Voordeel gedeeld door kosten | 0,27x | **1,37x** | 3,66x |
+| Break-even reductie | niet haalbaar | **37%** | 14% |
+| Vrijkomende uren zonder kas (capaciteit) | 3.253 | **6.704** | 5.126 |
+
+**Waarom dit de verwachte invoer is:**
+- **g = 0,75:** het midden van Bas' range (30 tot 60 minuten, niet gemeten). Robert (2 tot 4 uur per dag bij doubles) wijst hoger, het voorbeeldrooster wijst lager (past bij 30 tot 40 minuten). Het midden weegt die drie tegen elkaar.
+- **r = 50%:** nog niet gemeten. 84,5% is een Eduface-claim zonder bron en Bath Spa is geschreven werk, geen korte antwoorden tegen een antwoordsleutel.
+- **c = 50%:** tussen de strenge rooster-lens (ongeveer een kwart van de bespaarde uren wordt kas) en alles. Bas zegt zelf dat het geld bij doubles en triples zit. Hoe doubles worden betaald weten we niet.
+- **m = 1,0 en geen verloopbesparing:** geen bewijs, dus niet meegenomen. Het is upside, geen basis.
+- **Huidige mix (60% van de secties bij doubles en triples):** past bij Bas' eigen headcount, het 19-starts gemiddelde niet.
 
 **Kasbesparing per jaar, huidige mix** (kolom c: welk deel van de bespaarde uren bij doubles en triples kas wordt):
 
@@ -239,7 +251,7 @@ Dit model neemt aan dat een double altijd een vaste dienst van 12 uur heeft. Pas
 
 **Verloop, los daarvan:** 20% van 66 is 13 vertrekkers, $132k tot $198k wervingskosten per jaar (37%: $250k tot $375k). Om Eduface alleen via verloop terug te verdienen moeten 5 tot 8 instructeurs per jaar blijven, 40 tot 60% van de vertrekkers. Verloop vult de case aan, draagt hem niet. Basis in het model: 0%, want er is geen bewijs dat werklast het vertrek veroorzaakt.
 
-**Pilot (Bloomfield, 125 studenten):** $375 per maand. Kasbesparing op jaarbasis ~$3.400 tegen $4.500 kosten (0,76x). De pilot is bedoeld om te meten, niet om terug te verdienen.
+**Pilot (Bloomfield, 125 studenten):** $375 per maand. Kasbesparing op jaarbasis ~$5.200 tegen $4.500 kosten (1,15x) bij de verwachte invoer. De pilot is bedoeld om te meten, niet om terug te verdienen.
 
 **Hoe ik dit weeg:**
 - **Wat vaststaat:** secties, dagen, tarief, studenten per sectie, mix, kosten. Die geven geen onzekerheid.
@@ -247,7 +259,7 @@ Dit model neemt aan dat een double altijd een vaste dienst van 12 uur heeft. Pas
 - **Jeroens $139k** komt dicht bij mijn "g = 0,5, r = 50%, c = 100%" ($145k). Dat is mijn reconstructie: alle bespaarde tijd bij doubles en triples wordt kas. Het rooster maakt dat bij 30 minuten per sectie te gul.
 - **Vergelijking met de sample:** de $228k tot $456k van de sample wordt in drie stappen $72k tot $145k (tabblad Sample_vs_model): alleen secties bij doubles en triples (-40%), en alleen de helft daarvan als kas (-50%), met 255 in plaats van 240 dagen (+6%). Afwijking: -68%.
 - **Overuurmultiplier:** bij 1,5 worden alle kasbedragen 50% hoger. Dat is niet meegenomen omdat het onbekend is hoe doubles worden betaald.
-- **Eerlijke conclusie op dit moment:** bij voorzichtige aannames is de pure kasbesparing ongeveer break-even met de licentie. De business case zit in de bandbreedte, de groei (secties 3,4x in een jaar, kosten en voordeel groeien samen) en wat niet in geld te zetten is: bijles, kwaliteit, consistentie tussen campussen.
+- **Eerlijke conclusie op dit moment:** verwacht 1,37x (+$29.400 per jaar) op kasbesparing alleen, met een range van 0,27x tot 3,66x. De pure kasbesparing is dus positief maar dun. De case rust daarnaast op groei (secties 3,4x in een jaar, kosten en voordeel groeien samen, het aandeel doubles groeit ook) en op wat niet in geld te zetten is: bijles, kwaliteit, consistentie tussen campussen. De pilot moet g, r en c meten voordat dit meer is dan een onderbouwde schatting.
 - **Niet te kwantificeren, wel genoemd:** ruimte voor bijles (Nikki), voltooiingspercentage en omzet per student (Nikki, Robert), reiskosten van overgevlogen instructeurs, consistentie tussen campussen (Nikki, Jeroen), studentenfeedback die nu mondeling is.
 
 ---
