@@ -149,13 +149,13 @@ Export van 1.219 records, 19 cursusstarts (okt 2025 tot okt 2026), 14 campussen,
 | Aan UTI gecommuniceerd | $3 per student per maand, jaarlijkse licentie op gemiddeld aantal actieve studenten, meerjarenkorting | 4 en 18 sep, go-live plan |
 | **In de verstuurde licentie (16 nov)** | USD 3,00 per Licensed Student per maand, zonder minimum (art. 5.1). **Licensed Student = student met een inzending in die maand of de drie maanden ervoor** (art. 1.1). Het aantal wordt omhoog afgerond: naar 100 tot 2.000, naar 250 tot 5.000, naar 500 tot 10.000, daarboven 1.000 (art. 5.4). Geen kosten in maanden zonder studenten (5.3). Onboarding, 1 LMS-integratie, training tot 50 gebruikers en standaard support zijn inbegrepen (8.2). Eerste termijn tot 30 sep 2027, daarna automatische verlenging, geen tussentijdse opzegging (4.2 tot 4.4). Jaarcommitment: $3,00 tot 4.999 studenten (bijlage 3). Fair use: gemiddeld maximaal 100 AI-feedbackrondes per Licensed Student per fiscaal jaar (3.3). | Gmail, bijlage bij Jeroens mail van 16 nov |
 | Start Date | De verstuurde licentie noemt **1 dec 2026** (art. 1.1), terwijl go-live in januari is en de MT op 18 nov de startdatum op 18 jan wilde zetten. Kosten lopen vanaf de eerste student (5.3). | Gmail, Wispr 18 nov |
-| Pilot | 125 studenten wordt afgerond naar 200: $600 per maand (art. 5.4). Intern was "$375, te weinig" besproken. | Berekening op de licentie |
+| Pilot | 125 studenten x $3 = $375 per maand. Intern was "$375, te weinig" besproken. (De verstuurde licentie rondt omhoog af, naar 200 studenten = $600 per maand, art. 5.4. Buiten de business case gelaten, besluit Dante 24 nov.) | Berekening |
 | Intern, niet in de UTI-licentie | Minimaal EUR 1.500 per maand, daarboven EUR 3 per student; integratiekosten EUR 999 per Blackboard-installatie. Staffel grote klanten: EUR 2,75 per 10.000 studenten, EUR 2,50 bij 35.000. | Tjarko-sessie 9 nov, MT 13 nov |
 | Open | Nov 18 MT-notitie noemt "EUR 3,75 per student, minimaal 1.500". Het is niet duidelijk of dat UTI of Academica is. Academica staat op EUR 3,75. | Wispr 18 nov |
 
-**Berekening kosten volledige HVAC-uitrol:** ~2.200 studenten in de klas (100 secties x 22). Plus ~290 die in de afgelopen 3 maanden klaar zijn (cursus 013 heeft 3 secties per start, 66 studenten per 3 weken, ~95 per maand) = ~2.490 Licensed Students, afgerond naar **2.500**. x $36 = **$90.000 per jaar**. Jeroens $79.000 telde alleen de studenten in de klas, zonder het 3-maandenstaartje en de afronding. **Studenten die vroegtijdig stoppen zijn niet meegeteld** (geen data), dus het kan hoger zijn: elke 250 extra Licensed Students is $9.000 per jaar, bij 3.000 is het $108.000. Het groeit mee: de HVAC-secties groeiden 3,4x in een jaar.
+**Berekening kosten volledige HVAC-uitrol (besluit Dante, 24 nov):** ~2.200 studenten in de klas (100 secties x 22) x $3 x 12 maanden = **$79.200 per jaar**. Zonder het 3-maandenstaartje van de verstuurde licentie (art. 1.1) en zonder de afronding (art. 5.4). De verstuurde licentie telt wel een student mee voor de maand van een inzending plus de drie maanden erna en rondt het aantal omhoog af, dus de feitelijke factuur kan hoger uitvallen (indicatie eerder: ~2.500 Licensed Students = $90.000). Dat staat bewust niet in het UTI-document, maar Jeroen moet het weten. Het groeit mee: de HVAC-secties groeiden 3,4x in een jaar; elke 100 studenten extra is $3.600 per jaar.
 
-**Berekening alle UTI-studenten:** 20.000 x $36 = $720.000 (lijstprijs, zonder staartje en afronding). Met Concorde 25 tot 30.000: $900.000 tot $1,08 miljoen.
+**Berekening alle UTI-studenten:** 20.000 x $36 = $720.000 (lijstprijs). Met Concorde 25 tot 30.000: $900.000 tot $1,08 miljoen.
 
 ---
 
@@ -197,18 +197,18 @@ Problemen, op volgorde van gewicht:
 
 ## 8. De berekening (**berekening**, niet gevalideerd)
 
-Het model staat in `GTM/Accounts/uti/business-case-berekening.xlsx` (formules, blauwe cellen zijn invoer, elk getal heeft bron en status). Tabbladen: Samenvatting, Aannames, Berekening, Scenarios, Sample_vs_model, Rooster, Data_export. De uitkomsten zijn onafhankelijk nagerekend in Python en komen exact overeen. De twee business case documents (`UTI_Business_Case_Expected.pdf` en `UTI_Business_Case_High.pdf`) lezen hun cijfers uit dit model, gebouwd met `business-case/build.py`.
+Het model staat in `GTM/Accounts/uti/business-case-berekening.xlsx` (formules, blauwe cellen zijn invoer, elk getal heeft bron en status). Tabbladen: Samenvatting, Aannames, Berekening, Scenarios, Sample_vs_model, Rooster, Data_export. De uitkomsten zijn onafhankelijk nagerekend in Python en komen exact overeen. De twee business case documents (het ene document `UTI_Business_Case.pdf` met expected case en high case; de eerdere twee losse PDF's staan in `Archive/business-case-uti-2026-11-24/`) leest zijn cijfers uit dit model, gebouwd met `business-case/build.py`.
 
 **Vaste invoer (UTI schriftelijk):** 100 secties per dag, 255 dagen, $38 per uur, 22 studenten per sectie, huidige mix 58/39/3% (1 / 2 / 3 secties).
-**Kosten Eduface voor de hele HVAC: $90.000 per jaar**, 2.500 Licensed Students x $3 x 12. Zie sectie 5: de verstuurde licentie telt ook studenten van de afgelopen 3 maanden mee en rondt omhoog af. Jeroens eerdere $79.000 telde alleen de 2.200 studenten in de klas.
+**Kosten Eduface voor de hele HVAC: $79.200 per jaar**, 2.200 studenten x $3 x 12 (besluit Dante, 24 nov). Zie sectie 5 voor wat de verstuurde licentie daar feitelijk bovenop kan zetten.
 
 ### De oude berekening klopt, en zit in het model
 
-De oude chat gaf: 100 secties x 45 minuten x 255 dagen = 19.125 uur, x $38 = $727k per jaar. Eduface halveert dat, maar alleen bij doubles en triples (60% van de secties) wordt het geld. Dat is **$218k bruto**, tegen $79k kosten dus **$139k netto** en 2,75x bruto terug. Het model geeft dezelfde bruto besparing als variant "Hoog" ($217.276). Tegen de kosten uit de verstuurde licentie ($90.000) is dat **$127.276 netto en 2.41x**.
+De oude chat gaf: 100 secties x 45 minuten x 255 dagen = 19.125 uur, x $38 = $727k per jaar. Eduface halveert dat, maar alleen bij doubles en triples (60% van de secties) wordt het geld. Dat is **$218k bruto**, tegen $79,2k kosten dus **$138k netto** en 2,74x bruto terug. Het model geeft dezelfde bruto besparing als variant "Hoog" ($217.276), netto **$138.076**.
 
-- **$139k is netto, en gebaseerd op $79k kosten.** In de sales-sessie van 16 nov werd het als bruto besparing gelezen ("$139k tegenover $79k kosten") en daardoor naar 76% ROI "bijgesteld". Dat was een misverstand over het getal. Zeg er altijd bij of een bedrag bruto of netto is. Met de kosten uit de verstuurde licentie is het nu $127k netto.
+- **$139k is netto, en gebaseerd op $79k kosten.** In de sales-sessie van 16 nov werd het als bruto besparing gelezen ("$139k tegenover $79k kosten") en daardoor naar 76% ROI "bijgesteld". Dat was een misverstand over het getal. Zeg er altijd bij of een bedrag bruto of netto is. Met de $79.200 uit het model komt het op $138k netto, dus de oude chat klopte.
 - **Wat de oude berekening aanneemt:** alle bespaarde tijd bij doubles en triples wordt geld, en 45 minuten per sectie. Dat is het optimistische einde, niet het meest waarschijnlijke.
-- **Break-even:** 2.368 uur per jaar tegen $90.000 kosten, ongeveer 9 minuten per sectie per dag bij doubles en triples, of 19 minuten per instructeur per dag. Dat geldt alleen als alle bespaarde tijd geld wordt. Als de helft geld wordt, is het twee keer zoveel.
+- **Break-even:** 2.084 uur per jaar tegen $79.200 kosten, ongeveer 8,5 tot 9 minuten per sectie per dag bij doubles en triples, of 17 minuten per instructeur met twee of drie secties per dag. Dat geldt alleen als alle bespaarde tijd geld wordt. Als de helft geld wordt, is het twee keer zoveel.
 
 ### Vier varianten (tabblad Samenvatting)
 
@@ -221,9 +221,9 @@ De oude chat gaf: 100 secties x 45 minuten x 255 dagen = 19.125 uur, x $38 = $72
 | Bespaarde uren (tijd) | 3.825 | **9.562** | 9.562 | 9.562 |
 | Waarvan kas | 219 uur | **3.439 uur** | 5.718 uur | 5.718 uur |
 | **Kasbesparing per jaar (bruto)** | $8.325 | **$130.698** | $217.276 | $325.914 |
-| Kosten Eduface | $90.000 | **$90.000** | $90.000 | $90.000 |
-| Netto | $-81.675 | **+$40.698** | +$127.276 | +$235.914 |
-| Bruto terugverdiend | 0.09x | **1.45x** | 2.41x | 3.62x |
+| Kosten Eduface | $79.200 | **$79.200** | $79.200 | $79.200 |
+| Netto | $-70.875 | **+$51.498** | +$138.076 | +$246.714 |
+| Bruto terugverdiend | 0.11x | **1.65x** | 2.74x | 4.11x |
 | Vrijkomende uren zonder kas (capaciteit) | 3.606 | **6.123** | 3.845 | 3.845 |
 
 ### Waarom Verwacht de rooster-lens gebruikt
@@ -235,8 +235,8 @@ De oude chat gaf: 100 secties x 45 minuten x 255 dagen = 19.125 uur, x $38 = $72
 
 ### Wat de uitkomst bepaalt
 
-- **Vast:** secties, dagen, tarief, studenten per sectie, mix, en de licentieprijs per Licensed Student.
-- **Nog onzeker aan de kostenkant:** hoeveel Licensed Students UTI betaalt. Het staartje van studenten die klaar zijn is geschat op ~290. Uitvallers ontbreken, dus de kosten kunnen hoger zijn ($108.000 bij 3.000).
+- **Vast:** secties, dagen, tarief, studenten per sectie, mix, en de licentieprijs per student per maand.
+- **Kostenkant:** 2.200 studenten in de klas. Groeit het aantal, dan telt elke 100 studenten $3.600 per jaar. Wat de verstuurde licentie (staartje, afronding) feitelijk factureert, zit niet in het model.
 - **Wat de baten bepaalt en alleen in de pilot te meten is:** nakijktijd per sectie (g), hoe doubles worden betaald (en dus of de overloop geld is, en tegen welk tarief), en de reductie alleen als die onder ~30% uitkomt.
 - **Rooster-lens bij andere nakijktijd** (tabblad Rooster, kasbesparing per jaar):
 
@@ -247,7 +247,7 @@ De oude chat gaf: 100 secties x 45 minuten x 255 dagen = 19.125 uur, x $38 = $72
 | 1,0 | $174k | $268k | $276k |
 
   Bij 0,5 uur past het nakijken bijna in het venster en levert deze lens bijna niets op. Bij 1,0 uur is het $268k.
-- **Kaslens 2 (vast aandeel c bespaarde uren wordt kas), huidige mix** (tabblad Scenarios): g = 0,75, r = 50%: c = 50% geeft $109k, c = 100% geeft $217k. Break-even reductie bij g = 0,75 en $90.000 kosten: 41% (c = 50%) of 21% (c = 100%).
+- **Kaslens 2 (vast aandeel c bespaarde uren wordt kas), huidige mix** (tabblad Scenarios): g = 0,75, r = 50%: c = 50% geeft $109k, c = 100% geeft $217k. Break-even reductie bij g = 0,75 en $79.200 kosten: 36% (c = 50%) of 18% (c = 100%).
 - **Overuurmultiplier:** bij 1,5 worden alle kasbedragen 50% hoger ($57 per uur). Niet in Verwacht, want het is onbekend hoe doubles worden betaald.
 
 ### Los van de kas
@@ -255,13 +255,13 @@ De oude chat gaf: 100 secties x 45 minuten x 255 dagen = 19.125 uur, x $38 = $72
 - **Singles:** de tijdwinst bij docenten met 1 sectie wordt niet als geld geteld (Bas: 8 uur betaald ongeacht). Dat is ongeveer 3.800 uur per jaar aan voorbereiding en kwaliteit, ongeveer 1,8 FTE.
 - **Verloop:** 13 vertrekkers per jaar bij 20% ($132k tot $198k wervingskosten), 25 bij 37% ($250k tot $375k). Elke 10% die blijft is $13k tot $20k. Niet in de basis meegeteld: er is geen bewijs dat werklast het vertrek veroorzaakt (Bas koppelt het aan snelle groei). De stelling dat hoge werkdruk in doubles een bekende vertrekreden is, is voor UTI niet gevalideerd.
 - **Groei:** het aandeel instructeurs met 2 of 3 secties ging in een jaar van 14% naar 42%, het aantal instructeurs per start van 22 naar 67. Een extra instructeur kost ongeveer $78k (8 uur, Bas) tot $82k (8,5 uur) per jaar plus $10k tot $15k werving. Als de tool doubles werkbaar maakt, hoeft UTI mogelijk minder mensen aan te nemen. Dit is upside en niet gekwantificeerd, want het hangt af van hoeveel doubles een bezettingsprobleem zijn.
-- **Pilot (Bloomfield, 125 studenten):** $600 per maand na afronding naar 200 (art. 5.4), $7.200 per jaar-equivalent. Kasbesparing op jaarbasis ~$6.210 (0.86x). De pilot is bedoeld om te meten.
+- **Pilot (Bloomfield, 125 studenten):** $375 per maand, $4.500 per jaar-equivalent. Kasbesparing op jaarbasis ~$6.210 (1,38x). De pilot is bedoeld om te meten.
 
 ### Hoe ik dit weeg
 
-- **Verwacht: 1.45x bruto, +$40.698 netto per jaar.** Laag 0.09x, hoog 2.41x, hoog met overwerktarief 3.62x.
+- **Verwacht: 1,65x bruto, +$51.498 netto per jaar.** Laag 0,11x, hoog 2,74x, hoog met overwerktarief 4,11x.
 - Het verschil tussen laag en verwacht zit in de nakijktijd: bij 30 minuten per sectie past alles in het venster en is er nauwelijks kas. Dat is te meten met de controlegroep die Bas voorstelt.
-- De kostenkant is minder zeker dan hij leek: de verstuurde licentie maakt van $79k gemakkelijk $90k of meer.
+- De kostenkant is bewust de eenvoudige: studenten x $3 x 12. De verstuurde licentie kan feitelijk meer factureren (staartje, afronding), zie sectie 5.
 - De oude berekening is het optimistische einde, niet fout. De sample van 12 nov ($228k tot $456k) was te hoog: dat negeerde singles en rekende alle uren als geld.
 - Niet te kwantificeren, wel genoemd: bijles (Nikki), voltooiingspercentage en omzet per student, reiskosten van overgevlogen instructeurs, consistentie tussen campussen, mondelinge studentenfeedback.
 
@@ -277,9 +277,9 @@ De oude chat gaf: 100 secties x 45 minuten x 255 dagen = 19.125 uur, x $38 = $72
 | Verloop 37% (feit) of 20% (Bas' redelijke aanname)? | 20% als basis, 37% als gevoeligheidscase. Bas koppelt het verloop zelf aan snelle groei, niet aan werklast. |
 | Kosten in dollars of euro's, per student per maand of staffel met minimum? | Aan UTI is $3 per student per maand gecommuniceerd. Gebruik dat en laat intern minimum/staffels uit de UTI-versie. Nog afstemmen met Jeroen. |
 | Business case als besparing ("2 tot 4 uur") versus "AI vervangt werk". | Debrief 22 sep waarschuwt hier zelf voor: sturen op kwaliteit, capaciteit voor bijles en overuren, niet op minder mensen. |
-| UTI wil volledige uitrol, maar budget is er niet. | Pilot is gedekt (~$600 per maand na afronding). Volledige HVAC-uitrol (~$90.000 per jaar) heeft geen budget voor FY28 (okt 2027), tenzij een campus zelf financiert. Business case moet dat besluit voorbereiden, niet doen alsof het al genomen is. |
+| UTI wil volledige uitrol, maar budget is er niet. | Pilot is gedekt ($375 per maand). Volledige HVAC-uitrol ($79.200 per jaar) heeft geen budget voor FY28 (okt 2027), tenzij een campus zelf financiert. Business case moet dat besluit voorbereiden, niet doen alsof het al genomen is. |
 
-Close heeft twee opportunities: **EUR 18.000 per maand** (pipeline Deal, 20%, = EUR 216k per jaar) en **EUR 500.000 per jaar** (pipeline Forecast, 50%, Tjarko betrokken). De HVAC-berekening geeft ~$90.000 per jaar aan kosten. EUR 500k komt overeen met bijna 14.000 studenten tegen lijstprijs, dus de hele organisatie. De MEDDPICC-review van 28 sep vond ook al dat dit niet in de forecast hoort.
+Close heeft twee opportunities: **EUR 18.000 per maand** (pipeline Deal, 20%, = EUR 216k per jaar) en **EUR 500.000 per jaar** (pipeline Forecast, 50%, Tjarko betrokken). De HVAC-berekening geeft $79.200 per jaar aan kosten. EUR 500k komt overeen met bijna 14.000 studenten tegen lijstprijs, dus de hele organisatie. De MEDDPICC-review van 28 sep vond ook al dat dit niet in de forecast hoort.
 
 ---
 
@@ -292,11 +292,11 @@ Close heeft twee opportunities: **EUR 18.000 per maand** (pipeline Deal, 20%, = 
 5. **Voltooiingsdata en omzet per student** (Robert: "a ton of data"). Nooit gevraagd, en het kan de grootste post zijn.
 6. **Welk deel van het nakijken is digitale labdocumenten** en welk deel praktijk. Bepaalt het bereik van de tool.
 7. **Uitkomst ED-summit 8 okt.** Niet gevonden.
-8. **Wat telt als "actieve student" voor de factuur** (3-maanden-regel, 12 maanden inactiviteit, staffels) en of de pilot betaald is.
+8. **Wat telt als "actieve student" voor de factuur** (de verstuurde licentie telt 3 maanden extra mee en rondt omhoog af, dit rekent de business case niet door) en of de pilot betaald is.
 9. **Huidige productstatus** voor korte-antwoordvragen en quizzen (Menno/Samuel). De notitie van 29 sep noemt features die genoemd zijn maar nog niet gebouwd zijn.
 10. **De bron van "~1.500 instructeurs"** in het go-live plan. In geen enkele meeting gevonden. Alleen de 66 HVAC-instructeurs zijn schriftelijk bevestigd.
 11. **De 62 secties zonder instructeur** in de export (Long Beach, Phoenix, Bloomfield), en wat TTEV betekent in het rooster.
-12. **Hoeveel studenten stoppen vroegtijdig.** Elke uitvaller blijft 3 maanden meetellen als Licensed Student (art. 1.1). Het staartje is nu alleen geschat op studenten die klaar zijn (~290).
+12. ~~Uitvallers en het 3-maandenstaartje~~ Vervallen 24 nov: de business case rekent met 2.200 x $3 x 12.
 13. **De Start Date in de verstuurde licentie** (1 dec 2026) klopt niet met go-live in januari en met wat de MT op 18 nov besprak (18 jan).
 
 ---

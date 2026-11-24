@@ -26,9 +26,9 @@ p { margin: 0 0 var(--s2); max-width: var(--measure); text-wrap: pretty; orphans
 ul { margin: 0 0 var(--s2); padding-left: var(--s3); max-width: var(--measure); }
 li { margin-bottom: var(--s1); }
 ol { margin: 0 0 var(--s2); padding-left: var(--s3); max-width: var(--measure); }
-.brand { height: 24px; display: block; margin-bottom: var(--s4); }
-.case { font-family: var(--font-display); font-weight: 700; font-size: 20px; line-height: 1.4; margin: var(--s2) 0 var(--s1); }
-.status { font-size: 14px; line-height: 1.5; color: var(--ink-700); margin-bottom: var(--s3); max-width: 80ch; }
+.brand { height: 24px; display: block; margin-bottom: var(--s3); }
+.case { font-family: var(--font-display); font-weight: 700; font-size: 20px; line-height: 1.4; margin: var(--s1) 0 var(--s1); }
+.status { font-size: 14px; line-height: 1.5; color: var(--ink-700); margin-bottom: var(--s2); max-width: 80ch; }
 .lead { margin-bottom: var(--s2); }
 .src { font-size: 12px; line-height: 1.4; color: var(--ink-500); margin: var(--s1) 0 var(--s3); max-width: 90ch; }
 table { table-layout: fixed; width: 100%; border-collapse: collapse; font-size: 14px; line-height: 1.5; margin-top: var(--s2); }
@@ -45,7 +45,7 @@ tr.total td { border-bottom: 2px solid var(--navy); font-family: var(--font-disp
 td.k { font-family: var(--font-display); font-weight: 700; }
 /* hours-to-dollars chart: een label-baan, een plot-baan, een waarde-baan */
 figure.bars { margin: var(--s3) 0 0; break-inside: avoid; }
-figure.bars .row { display: grid; grid-template-columns: 248px 1fr 80px; column-gap: var(--s2); align-items: center; min-height: 36px; border-bottom: 1px solid var(--ink-100); padding: 4px 0; }
+figure.bars .row { display: grid; grid-template-columns: 272px 1fr 80px; column-gap: var(--s2); align-items: center; min-height: 32px; border-bottom: 1px solid var(--ink-100); padding: 4px 0; }
 figure.bars .lab { font-size: 14px; line-height: 1.4; }
 figure.bars .track { height: 20px; position: relative; }
 figure.bars .bar { height: 20px; border-radius: 0; }
