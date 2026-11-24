@@ -14,7 +14,12 @@ _Concept van 24-11-2026, bijgewerkt na antwoorden van Dante. Ingevuld uit bestaa
 - **Started:** OPEN
 - **Paying customers:** 0 betalend, 1 getekend (Breederode, nog niet actief), per 24-11-2026, bron Dante. Enterprise en PLG apart tellen (zie `Context/eduface.md`).
 - **MRR:** 0, per 24-11-2026, bron Dante. Het wordt pas iets zodra Breederode live gaat.
+- **Type:** enterprise startup. Langere salescycli, grotere deals (Dante, 24-11-2026). PLG is niet hoe Eduface groeit. Zet de cyclustijd mee in elke scorecard en vergelijk niet met een kleine-dealstartup.
 - **Where we are:** OPEN. PULL found, één case study, herhaalbaar (3 tot 5) of factory?
+
+## Hoe we groeien
+
+Lemlist founder-magic-campagne, dan leads in Close (Dante, 24-11-2026). Close is meestal up to date. Wijkt het af van wat Dante zegt, dan wordt Close aangepast, niet andersom.
 
 ## The one goal
 
@@ -37,8 +42,8 @@ Alleen wat in `Context/eduface.md` staat als aangesloten, of OPEN.
 |---|---|---|
 | PULL brain | AI Rob (Skillfully MCP) | actief sinds 24-11-2026 |
 | LinkedIn outreach | Lemlist en LinkedIn | SHIFT-pijplijn, `GTM/ICP/shift/` |
-| Call recording | Close (meetings) en Wispr Flow | Transcripten staan in beide (Dante, 24-11-2026) |
-| Billing | OPEN | geen Stripe bekend |
-| Product analytics | OPEN | |
+| Call recording | Close (meetings) en Wispr Flow | Transcripten staan in beide. Wispr Flow houdt meetings ook bij naast Close (Dante, 24-11-2026) |
+| Billing | geen | Facturen worden zelf verstuurd, niet via een provider (Dante, 24-11-2026). De skills vragen dus om de stand van betaling en lezen die nergens uit. |
+| Product analytics | Framer (website, via MCP) en Google Search Console | Alleen websiteverkeer. Geen productgebruik-analytics. PLG-aanmeldingen tellen niet mee voor de PULL-score. |
 | Lead sourcing | Clay, plus de SHIFT-agents | `lead-sourcing` en `contact-sourcing` bestaan al en overlappen met `/pull-lead-gen` |
-| CRM | Close | dealeigenaar staat per opportunity in Close |
+| CRM | Close | Leads uit Lemlist komen hier. Dealeigenaar staat per opportunity in Close. Meestal up to date, anders aanpassen. |

@@ -1,6 +1,6 @@
 # Eduface
 
-_Laatst bijgewerkt: 2026-10-02._
+_Laatst bijgewerkt: 2026-11-24._
 
 Het bedrijf waar Dante werkt. Juridisch heet het **Blockbook B.V.**, daar komt zijn salaris ook vandaan. Naar buiten is alles Eduface. Dit bestand is alleen het minimum dat elke sessie nodig heeft: wat we verkopen, aan wie, en wie er werkt. Alles wat dieper gaat staat in een eigen bestand, zie **Waar de details staan**.
 
@@ -44,7 +44,7 @@ Het team communiceert over **WhatsApp**.
 
 ## Tools
 
-**Close** (CRM) · **Lemlist** (cold outreach) · **Google Workspace** (Gmail, Agenda, Drive) · **Framer** (eduface.me) · **Todoist** · **LinkedIn** (outreach, geen ads meer) · **Apple Notes**
+**Close** (CRM) · **Lemlist** (cold outreach) · **Google Workspace** (Gmail, Agenda, Drive) · **Framer** (eduface.me) · **Google Search Console** · **Todoist** · **LinkedIn** (outreach, geen ads meer) · **Apple Notes**
 
 Aangesloten als MCP in Claude Code: Gmail, Google Calendar, Google Drive, Close, Clay, Framer, Todoist, Lemlist.
 
