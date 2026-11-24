@@ -1,12 +1,12 @@
 # Company
 
-_Concept van 24-11-2026, bijgewerkt na antwoorden van Dante. Ingevuld uit bestaande contextbestanden, wat OPEN staat vult Dante zelf in. Niets is geraden._
+_Bijgewerkt 24-11-2026 met antwoorden van Dante. Wat OPEN staat vult Dante zelf in. Niets is geraden._
 
 ## What we sell
 
 - **Product:** een onderwijskundig AI-platform voor beoordelen en feedback in het hoger onderwijs: AI Paper Grader en AI Exam Grader (live), Academic Integrity en Oral Examination (beta). De docent keurt elke opmerking en elk cijfervoorstel goed voordat de student iets ziet. Bron: `Platform/product.md`.
 - **Price:** 3 per student per maand, in de valuta van de markt, gerekend over 12 maanden, alle studenten van de instelling. Drempel 300 lerenden per jaar. Bron: `GTM/Pricing/prijsmodel-psu-26-27.md`, besluit 16-09-2026.
-- **Contract size band:** moderate (25.000 tot 99.999). Streefgemiddelde dealwaarde is 50.000 euro, bron `Context/current-priorities.md` (20-09-2026). Dat is een doel, geen gemeten gemiddelde. OPEN: klopt de band met wat er echt getekend is?
+- **Contract size band:** 18.000 tot meer dan 1 miljoen per jaar (Dante, 24-11-2026). Boven de miljoen gaat het om UADE en UTI, als zij ook Concorde als klant meebrengen voor 35.000 studenten (35.000 x 3 x 12 = 1,26 miljoen). Streefgemiddelde dealwaarde is 50.000 euro (`Context/current-priorities.md`, 20-09-2026), een doel en geen gemeten gemiddelde. OPEN: welke band zetten we voor de scorecard? De template kent big, moderate en small, en dit bestrijkt alle drie.
 - **Who has paid so far:** niemand (24-11-2026). Breederode Hogeschool heeft getekend maar is nog niet live, de implementatie wordt opgezet. Betaling start bij live gaan, tegen 3 per student per maand. Dealmap: `GTM/Accounts/breederode-hogeschool/`.
 
 ## Stage
@@ -15,7 +15,7 @@ _Concept van 24-11-2026, bijgewerkt na antwoorden van Dante. Ingevuld uit bestaa
 - **Paying customers:** 0 betalend, 1 getekend (Breederode, nog niet actief), per 24-11-2026, bron Dante. Enterprise en PLG apart tellen (zie `Context/eduface.md`).
 - **MRR:** 0, per 24-11-2026, bron Dante. Het wordt pas iets zodra Breederode live gaat.
 - **Type:** enterprise startup. Langere salescycli, grotere deals (Dante, 24-11-2026). PLG is niet hoe Eduface groeit. Zet de cyclustijd mee in elke scorecard en vergelijk niet met een kleine-dealstartup.
-- **Where we are:** OPEN. PULL found, één case study, herhaalbaar (3 tot 5) of factory?
+- **Where we are:** PULL zoeken. Er is nog geen volledige case study (Dante, 24-11-2026). Eerste stap van de review is dus er een schrijven.
 
 ## Hoe we groeien
 
@@ -30,8 +30,8 @@ Lemlist founder-magic-campagne, dan leads in Close (Dante, 24-11-2026). Close is
 ## Constraints
 
 - **Weekreview:** maandag en vrijdag vóór 07:00, plus wanneer Dante of Jeroen erom vraagt (Dante, 24-11-2026).
-- **Time on sales per week:** OPEN. Dante heeft 28 uur deep work per week (zeven dagen, vier uur), maar dat is niet hetzelfde als tijd voor sales.
-- **Runway:** OPEN
+- **Time on sales per week:** Dante en Jeroen elk 20+ uur, samen ongeveer 60 uur (schatting Dante, 24-11-2026). Dante's 28 uur deep work per week valt daar binnen of ernaast, dat is niet uitgezocht.
+- **Runway:** tot april 2027 als er geen omzet komt (Dante, 24-11-2026).
 - **We won't:** Meta- en LinkedIn-ads, SEO en GEO, de Framer-site herbouwen, de Jisc/CHEST-pilotdoelen uit Q2 (allemaal bewust af sinds 19-09-2026). LinkedIn voor outreach blijft wel.
 
 ## Tools connected
