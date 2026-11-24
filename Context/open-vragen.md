@@ -16,7 +16,6 @@ De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat 
 
 | # | Vraag | Waarom het uitmaakt | Sinds |
 |---|---|---|---|
-| PL1 | **Hoe krijgen we weer toegang tot `ai-rob`?** Skillfully meldt: toegang verlopen (gift). Zonder AI Rob stoppen alle vijf `pull-` skills. | Zie `GTM/pull-lab/README.md`. De skills zijn geïnstalleerd maar doen nu niets. | 24-11-2026 |
 | PL2 | **Past PULL Lab bij de ene prioriteit, en wanneer draait de weekreview?** De template is gemaakt voor pre-PMF, met een vrijdagreview en één case study. Vrijdag staat niet in je weekritme, zaterdag 06:00 is al `/week-plannen`. En `context/company.md` moet gevuld: prijs, contractband, betalende klanten, doel. | Past het niet bij 20 gestarte salesprocessen per maand, dan is het antwoord volgens `current-priorities.md` nee. | 24-11-2026 |
 | A5 | **Wordt de leidende maat "geboekte eerste gesprekken per week", vijf stuks?** Uren deep work blijven dan het scorebord, de gesprekken worden de knop waar je op stuurt. | Uren zijn beinvloedbaar maar matig voorspellend: je kunt 28 uur aan het verkeerde werk besteden. Zie `Context/deep-work.md`. | 19-09-2026 |
 | A6 | Verhuist de financiele controle van zaterdag 09:00 naar 11:00? | Nu valt hij in blok 2, terwijl het shallow werk is. De pauze is geen alternatief, die blijft leeg. | 20-09-2026 |
@@ -51,10 +50,11 @@ Onduidelijk is nog wat het verschil is tussen "fitness" en "gym" in zijn hoofd. 
 
 ## Beantwoord en verwerkt
 
-Blijft staan zodat zichtbaar is wat er al gevraagd is. Alles hieronder is op 19-09-2026 beantwoord.
+Blijft staan zodat zichtbaar is wat er al gevraagd is. Alles hieronder is beantwoord, de meeste op 19-09-2026.
 
 | Vraag | Antwoord | Waar het nu staat |
 |---|---|---|
+| Toegang tot `ai-rob` weer actief? (PL1) | Ja, Skillfully meldt `paid_entitlement` (24-11-2026). De `pull-` skills kunnen draaien. | `GTM/pull-lab/README.md` |
 | Azure en Google Cloud, EU-only? (V2) | Microsoft, Google en Railway werken voor Eduface alleen met EU-infrastructuur. Uitspraak over wat Amerikaans recht daarvoor betekent is er niet. | `.claude/skills/privacy-it/platform-privacykennis.md` |
 | Wordt er getraind op studentdata? (V3, deels) | Nee, nooit. | `.claude/skills/privacy-it/platform-privacykennis.md` |
 | Bevat feedback persoonsgegevens? (V4) | Het model zet er geen in. Zet een docent er zelf een persoonsgegeven in, dan staat het er wel. | `.claude/skills/privacy-it/platform-privacykennis.md` |

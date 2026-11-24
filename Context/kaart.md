@@ -90,7 +90,7 @@ Staan in `.claude/skills/`, want Claude Code vindt ze alleen daar. Aanroepen met
 
 ### PULL Lab (sinds 24-11-2026)
 
-Data in `GTM/pull-lab/`. Alle oordelen komen van `ai-rob` via Skillfully, toegang is verlopen (PL1).
+Data in `GTM/pull-lab/`. Alle oordelen komen van `ai-rob` via Skillfully, toegang actief sinds 24-11-2026.
 
 - **`/pull-lead-gen`**: weekquotum aan mensen om te benaderen, warmste eerst.
 - **`/pull-outbound-setup`**: goedgekeurde lijst importeren en een sequentie als concept schrijven.
