@@ -62,15 +62,18 @@ Bas: financieel voordeel is er alleen bij 2 of 3 secties, "30% of the instructor
 
 **Het dienstrooster (`Skilled Trade Schedule ex. Calf.xlsx`), opnieuw doorgerekend uit de kloktijden.** Het bestand heeft typefouten (bijvoorbeeld "Out 23:30" bij een dienst die om 11:30 eindigt, lunch "3:00", een avonddienst die als "AM" is gelabeld). Het is een voorbeeldrooster, geen bewijs van werkelijke uren.
 
-| Dienst | Secties | Betaalde uren (zonder lunch) | Niet-les tijd (prep, nakijken, TTEV) | Per sectie |
+| Dienst | Secties | Betaalde uren (zonder lunch) | Venster voor nakijken, prep en TTEV | Per sectie |
 |---|---|---|---|---|
-| Single AM / MID / EVE | 1 | 8,0 | 3,0 / 2,8 / 2,7 uur | ~2,7 tot 3,0 uur |
-| Double AM/MID en MID/EVE | 2 | 11,5 | 1,3 uur | 0,67 uur |
+| Single AM / MID / EVE | 1 | 8,0 | 2,5 / 2,8 / 2,7 uur | 2,5 tot 2,8 uur |
+| Double AM/MID | 2 | 11,5 | 0,83 uur (50 min) | 0,42 uur |
+| Double MID/EVE | 2 | 11,5 | 1,33 uur (80 min) | 0,67 uur |
 
-- Een single heeft ruim 2,5 uur slack. Bij 0,5 tot 1,0 uur nakijken blijft er ongeveer 1,7 tot 2,5 uur over voor voorbereiding en reparatie. Dat bevestigt Bas: daar valt geen kas te besparen.
-- Een double heeft 1,3 uur niet-les tijd voor twee secties samen. Bij 0,5 uur nakijken per sectie vult nakijken al 75% daarvan. Bij 1,0 uur per sectie past het niet meer (2,0 uur nodig, 1,3 beschikbaar). **Dan moet het buiten het rooster gebeuren, dus als niet-geroosterde tijd of overuren.**
-- **Berekening/interpretatie:** de bovenkant van Bas' range (60 minuten) is dus alleen mogelijk als er overuren of onbetaald werk zijn. De onderkant (30 minuten) past in het rooster. Het rooster bewijst niets, maar het maakt 30 tot 45 minuten per sectie waarschijnlijker dan 60.
-- **Onbekend:** wat TTEV betekent, hoe doubles worden betaald (11,5 uur betaalde dienst per dag, met of zonder overuurtoeslag), en of "ex. Calf." Californie betekent (Long Beach, Rancho Cucamonga, Sacramento).
+Het venster is de blokken "Lab grading, prep, TTEV" en "Attendance, grading". De 30 minuten voorbereiding vooraf bij AM/MID is geen nakijktijd en telt niet mee. Gemiddeld is het venster van een double 65 minuten voor twee secties samen.
+
+- Een single heeft bij 0,5 tot 1,0 uur nakijken nog 1,5 tot 2,3 uur over voor voorbereiding en reparatie. Dat bevestigt Bas: daar valt geen kas te besparen.
+- Bij een double past 0,5 uur nakijken per sectie nog net (92% van het venster). Bij 0,75 uur is er een tekort van ~25 minuten, bij 1,0 uur ~55 minuten. **Dat tekort gebeurt buiten het rooster, dus als overwerk of onbetaalde tijd.** Dat komt overeen met de eerdere inschatting van ~30 minuten tekort per double.
+- **Berekening/interpretatie:** het rooster past bij 30 tot 45 minuten per sectie. De bovenkant van Bas' range (60 minuten) kan alleen met overwerk of onbetaald werk.
+- **Onbekend:** wat TTEV betekent, hoe doubles worden betaald (11,5 betaalde uren per dag, met of zonder overuurtoeslag), en of "ex. Calf." Californie betekent (Long Beach, Rancho Cucamonga, Sacramento). Het bestand zelf heeft typefouten: "Out 23:30" bij een dienst die om 11:30 eindigt, lunch "3:00", een avonddienst die als "AM" is gelabeld, en ':40' waar de kloktijden 50 minuten geven.
 
 ---
 
@@ -168,7 +171,7 @@ De presentatie van 6 oktober (9 slides) bevat geen prijs en geen UTI-cijfers. Sl
 | 15 tot 20 uur bespaard per 60-studenten-cohort | Slide 9 | **Eduface-claim.** |
 | 2 tot 4 uur nakijken per dag, "leading driver of attrition" | Slide 2 | Het eerste is **UTI gesproken** (Robert). De uitspraak over verloop is niet gevalideerd: Bas meet verloop niet, onze vraag of workload een vertrekreden is staat open. |
 | 12 tot 16 nieuwe campussen, 50 tot 70 programma's | 18 sep presentatie | **Gecorrigeerd door Robert:** 2 campussen per jaar. Niet gebruiken. |
-| 3x ROI | Jeroen, 16 nov | **Gecorrigeerd ter plekke.** $139k besparing tegenover $79k kosten is 1,76x terugverdiend, netto ROI ~76%. |
+| 3x terugverdiend | Jeroen, 16 nov | **Klopt bijna op de oude berekening:** $218k bruto, $139k netto, 2,75x bruto, mits alle tijdwinst bij doubles en triples geld wordt. In de Tjarko-sessie werd $139k als bruto gelezen en naar 76% 'bijgesteld', dat was een misverstand over het getal. In mijn verwachte case is het 1,65x. |
 | Blackboard-quiz "fully operational" | Mail 21 sep aan Bas | **Eerder tegengesproken:** interne test 25 sep gaf 0 punten, feedback-sync naar gradebook faalde vlak voor de demo (MEDDPICC-review 28 sep). Huidige stand niet gecontroleerd. |
 
 `Platform/product.md` zegt ook: Bath Spa is "sectorvalidatie, niet bewijs bij de instelling waar je zit". Dat geldt hier extra: Bath Spa is lang geschreven werk, UTI is korte antwoorden en datatabellen tegen een antwoordsleutel, plus handson labs die geen enkel model kan nakijken.
@@ -188,7 +191,7 @@ Problemen, op volgorde van gewicht:
 5. **Gemiddelde over 66 instructeurs ("45 tot 90 min per instructeur")** verhult dat de mix scheef is en verschuift.
 6. **De sample negeert verloop en kwaliteit**, terwijl de sample zelf zegt dat dat de upside is.
 
-**Gevolg:** de sample overschat de harde besparing met een factor 1,6 (als alle bespaarde tijd bij doubles en triples kas wordt) tot 3,1 (als de helft dat wordt). De terechte reactie van Bas ("the outcome is impressive, however...") was correct. De $139k van Jeroen op 16 nov is al een aangepaste versie.
+**Gevolg:** de sample overschat de harde besparing met een factor 1,6 (als alle bespaarde tijd bij doubles en triples kas wordt) tot 3,1 (als de helft dat wordt). De terechte reactie van Bas ("the outcome is impressive, however...") was correct. De oude berekening ($218k bruto, $139k netto) is wel al gecorrigeerd voor singles (alleen 60% van de secties).
 
 ---
 
@@ -196,71 +199,68 @@ Problemen, op volgorde van gewicht:
 
 Het model staat in `GTM/Accounts/uti/business-case-berekening.xlsx` (formules, blauwe cellen zijn invoer, elk getal heeft bron en status). Tabbladen: Samenvatting, Aannames, Berekening, Scenarios, Sample_vs_model, Rooster, Data_export. De uitkomsten zijn onafhankelijk nagerekend in Python en komen exact overeen.
 
-**Invoer die vaststaat (UTI schriftelijk):** 100 secties per dag, 255 dagen, $38 per uur, 22 studenten per sectie, huidige mix 58/39/3% (1 / 2 / 3 secties).
-**Kosten Eduface voor de hele HVAC:** 2.200 studenten x $3 x 12 = **$79.200 per jaar** (Jeroens $79.000).
+**Vaste invoer (UTI schriftelijk):** 100 secties per dag, 255 dagen, $38 per uur, 22 studenten per sectie, huidige mix 58/39/3% (1 / 2 / 3 secties). **Kosten Eduface voor de hele HVAC:** 2.200 studenten x $3 x 12 = **$79.200 per jaar**.
 
-**Drie varianten (tabblad Samenvatting).** Verwacht is mijn beste schatting. Laag en hoog laten zien hoe ver het kan afwijken.
+### De oude berekening klopt, en zit in het model
 
-| | Laag | **Verwacht** | Hoog |
-|---|---|---|---|
-| Nakijktijd per sectie (g) | 0,5 uur | **0,75 uur** | 1,0 uur |
-| Reductie door de tool (r) | 30% | **50%** | 50% |
-| Aandeel bespaarde uren bij doubles en triples dat kas wordt (c) | 25% | **50%** | 100% |
-| Overuurmultiplier (m) | 1,0 | **1,0** | 1,0 |
-| Bespaarde uren per jaar (tijd) | 3.825 | **9.563** | 12.750 |
-| Waarvan kas | 572 uur | **2.859 uur** | 7.624 uur |
-| **Kasbesparing per jaar** | $21.700 | **$108.600** | $289.700 |
-| Kosten Eduface | $79.200 | **$79.200** | $79.200 |
-| Netto | -$57.500 | **+$29.400** | +$210.500 |
-| Voordeel gedeeld door kosten | 0,27x | **1,37x** | 3,66x |
-| Break-even reductie | niet haalbaar | **37%** | 14% |
-| Vrijkomende uren zonder kas (capaciteit) | 3.253 | **6.704** | 5.126 |
+De oude chat gaf: 100 secties x 45 minuten x 255 dagen = 19.125 uur, x $38 = $727k per jaar. Eduface halveert dat, maar alleen bij doubles en triples (60% van de secties) wordt het geld. Dat is **$218k bruto**, tegen $79k kosten dus **$139k netto** en 2,75x bruto terug. Het model geeft dit exact als variant "Hoog": $217.276 bruto, $138.076 netto, 2.74x.
 
-**Waarom dit de verwachte invoer is:**
-- **g = 0,75:** het midden van Bas' range (30 tot 60 minuten, niet gemeten). Robert (2 tot 4 uur per dag bij doubles) wijst hoger, het voorbeeldrooster wijst lager (past bij 30 tot 40 minuten). Het midden weegt die drie tegen elkaar.
-- **r = 50%:** nog niet gemeten. 84,5% is een Eduface-claim zonder bron en Bath Spa is geschreven werk, geen korte antwoorden tegen een antwoordsleutel.
-- **c = 50%:** tussen de strenge rooster-lens (ongeveer een kwart van de bespaarde uren wordt kas) en alles. Bas zegt zelf dat het geld bij doubles en triples zit. Hoe doubles worden betaald weten we niet.
-- **m = 1,0 en geen verloopbesparing:** geen bewijs, dus niet meegenomen. Het is upside, geen basis.
-- **Huidige mix (60% van de secties bij doubles en triples):** past bij Bas' eigen headcount, het 19-starts gemiddelde niet.
+- **$139k is netto.** In de sales-sessie van 16 nov werd het als bruto besparing gelezen ("$139k tegenover $79k kosten") en daardoor naar 76% ROI "bijgesteld". Dat was een misverstand over het getal. Zeg er altijd bij of een bedrag bruto of netto is.
+- **Wat de oude berekening aanneemt:** alle bespaarde tijd bij doubles en triples wordt geld, en 45 minuten per sectie. Dat is het optimistische einde, niet het meest waarschijnlijke.
+- **Break-even in de oude berekening klopt ook:** 2.079 uur per jaar, 8,5 minuten per sectie per dag bij doubles en triples ($57 per uur: 5,6 minuten). Dat geldt alleen als alle bespaarde tijd geld wordt. Als de helft geld wordt, is het 17 minuten.
 
-**Kasbesparing per jaar, huidige mix** (kolom c: welk deel van de bespaarde uren bij doubles en triples kas wordt):
+### Vier varianten (tabblad Samenvatting)
 
-| g (uur/sectie) | Reductie r | c = 50% | c = 100% |
-|---|---|---|---|
-| 0,5 | 30% | $43k | $87k |
-| 0,5 | 50% | **$72k** | **$145k** |
-| 0,5 | 84,5% | $122k | $245k |
-| 0,75 | 50% | $109k | $217k |
-| 1,0 | 30% | $87k | $174k |
-| 1,0 | 50% | $145k | $290k |
-| 1,0 | 84,5% | $245k | $490k |
+| | Laag | **Verwacht** | Hoog (oude berekening) | Hoog + overwerktarief |
+|---|---|---|---|---|
+| Nakijktijd per sectie (g) | 0,5 uur | **0,75 uur** | 0,75 uur | 0,75 uur |
+| Reductie door de tool (r) | 30% | **50%** | 50% | 50% |
+| Wat wordt kas (kaslens) | overloop boven het venster | **overloop boven het venster** | alle tijdwinst | alle tijdwinst |
+| Overuurmultiplier (m) | 1,0 | **1,0** | 1,0 | 1,5 ($57) |
+| Bespaarde uren (tijd) | 3.825 | **9.562** | 9.562 | 9.562 |
+| Waarvan kas | 219 uur | **3.439 uur** | 5.718 uur | 5.718 uur |
+| **Kasbesparing per jaar (bruto)** | $8.325 | **$130.698** | $217.276 | $325.914 |
+| Kosten Eduface | $79.200 | **$79.200** | $79.200 | $79.200 |
+| Netto | $-70.875 | **+$51.498** | +$138.076 | +$246.714 |
+| Bruto terugverdiend | 0.11x | **1.65x** | 2.74x | 4.12x |
+| Vrijkomende uren zonder kas (capaciteit) | 3.606 | **6.123** | 3.845 | 3.845 |
 
-Met het gemiddelde van 19 starts in plaats van de huidige mix is alles ~20% lager. Kosten $79.200.
+### Waarom Verwacht de rooster-lens gebruikt
 
-**Break-even reductie** (alleen kas, huidige mix): g = 0,5: 55% (c 50%) of 27% (c 100%). g = 0,75: 37% / 18%. g = 1,0: 27% / 14%.
+- Een double heeft een venster van gemiddeld 65 minuten voor twee secties. Bij 0,75 uur nakijken per sectie (90 minuten) loopt het ~25 minuten uit. Dat uitlopen is werk buiten het rooster, dus overwerk of onbetaald. **Alleen die overloop wordt kas.** Wat binnen het venster past, wordt voorbereidingstijd, geen geld, tenzij UTI de dienst korter maakt.
+- Bij triples ("zoveel tijd als nodig") wordt alle bespaarde tijd kas.
+- Bij 0,75 uur ligt de uitkomst ($130.698) bijna op het kasplafond ($131.531). **Zodra de reductie boven ongeveer 30% ligt, hangt het resultaat dus niet meer af van de reductie, maar van de nakijktijd (g), het venster en of de overloop betaald wordt.** Dat is goed nieuws, want de reductie is het getal dat we het minst kunnen onderbouwen.
+- Dit komt overeen met jouw "Voorzichtig" ($126k, 26 doubles x 30 minuten tekort, tegen $38). Jouw "Midden" ($211k, 58 secties x 22,5 min) is kaslens 2, en jouw "Hoog" ($316k) is kaslens 2 tegen $57. Kleine verschillen: ik reken met 100 secties (59,8%) in plaats van 97 (58 secties), ik tel de triples mee in de overloop en meet het venster uit de kloktijden (50 en 80 minuten, jij had 40 tot 80).
 
-**Strengere lens uit het rooster (alleen overloop boven het geroosterde venster wordt kas):**
+### Wat de uitkomst bepaalt
+
+- **Vast:** secties, dagen, tarief, studenten per sectie, mix, kosten.
+- **Wat de uitkomst bepaalt en alleen in de pilot te meten is:** nakijktijd per sectie (g), hoe doubles worden betaald (en dus of de overloop geld is, en tegen welk tarief), en de reductie alleen als die onder ~30% uitkomt.
+- **Rooster-lens bij andere nakijktijd** (tabblad Rooster, kasbesparing per jaar):
 
 | g (uur/sectie) | r = 30% | r = 50% | r = 84,5% |
 |---|---|---|---|
-| 0,5 | $3k | $3k | $3k |
-| 0,75 | $57k | $62k | $62k |
-| 1,0 | $174k | $203k | $206k |
+| 0,5 | $8k | $8k | $8k |
+| 0,75 | $122k | $131k | $132k |
+| 1,0 | $174k | $268k | $276k |
 
-Dit model neemt aan dat een double altijd een vaste dienst van 12 uur heeft. Past nakijken binnen het venster (g = 0,5), dan levert minder nakijken alleen voorbereidingstijd op, tenzij de dienst korter wordt. Pas boven het venster komt er kas vrij.
+  Bij 0,5 uur past het nakijken bijna in het venster en levert deze lens bijna niets op. Bij 1,0 uur is het $268k.
+- **Kaslens 2 (vast aandeel c bespaarde uren wordt kas), huidige mix** (tabblad Scenarios): g = 0,75, r = 50%: c = 50% geeft $109k, c = 100% geeft $217k. Break-even reductie bij g = 0,75: 37% (c = 50%) of 18% (c = 100%).
+- **Overuurmultiplier:** bij 1,5 worden alle kasbedragen 50% hoger ($57 per uur). Niet in Verwacht, want het is onbekend hoe doubles worden betaald.
 
-**Verloop, los daarvan:** 20% van 66 is 13 vertrekkers, $132k tot $198k wervingskosten per jaar (37%: $250k tot $375k). Om Eduface alleen via verloop terug te verdienen moeten 5 tot 8 instructeurs per jaar blijven, 40 tot 60% van de vertrekkers. Verloop vult de case aan, draagt hem niet. Basis in het model: 0%, want er is geen bewijs dat werklast het vertrek veroorzaakt.
+### Los van de kas
 
-**Pilot (Bloomfield, 125 studenten):** $375 per maand. Kasbesparing op jaarbasis ~$5.200 tegen $4.500 kosten (1,15x) bij de verwachte invoer. De pilot is bedoeld om te meten, niet om terug te verdienen.
+- **Singles:** de tijdwinst bij docenten met 1 sectie wordt niet als geld geteld (Bas: 8 uur betaald ongeacht). Dat is ongeveer 3.800 uur per jaar aan voorbereiding en kwaliteit, ongeveer 1,8 FTE.
+- **Verloop:** 13 vertrekkers per jaar bij 20% ($132k tot $198k wervingskosten), 25 bij 37% ($250k tot $375k). Elke 10% die blijft is $13k tot $20k. Niet in de basis meegeteld: er is geen bewijs dat werklast het vertrek veroorzaakt (Bas koppelt het aan snelle groei). De stelling dat hoge werkdruk in doubles een bekende vertrekreden is, is voor UTI niet gevalideerd.
+- **Groei:** het aandeel instructeurs met 2 of 3 secties ging in een jaar van 14% naar 42%, het aantal instructeurs per start van 22 naar 67. Een extra instructeur kost ongeveer $78k (8 uur, Bas) tot $82k (8,5 uur) per jaar plus $10k tot $15k werving. Als de tool doubles werkbaar maakt, hoeft UTI mogelijk minder mensen aan te nemen. Dit is upside en niet gekwantificeerd, want het hangt af van hoeveel doubles een bezettingsprobleem zijn.
+- **Pilot (Bloomfield, 125 studenten):** $375 per maand, $4.500 per jaar-equivalent. Kasbesparing op jaarbasis ~$6.210 (1.38x). De pilot is bedoeld om te meten.
 
-**Hoe ik dit weeg:**
-- **Wat vaststaat:** secties, dagen, tarief, studenten per sectie, mix, kosten. Die geven geen onzekerheid.
-- **Wat de uitkomst bepaalt, en alleen in de pilot te meten is:** nakijktijd per sectie (g), reductie door de tool (r), welk deel kas wordt (c) en de overuurmultiplier (m). Samen geven die een range van ~$3k tot ~$490k. Ze zijn allemaal te meten met de controlegroep die Bas zelf voorstelt.
-- **Jeroens $139k** komt dicht bij mijn "g = 0,5, r = 50%, c = 100%" ($145k). Dat is mijn reconstructie: alle bespaarde tijd bij doubles en triples wordt kas. Het rooster maakt dat bij 30 minuten per sectie te gul.
-- **Vergelijking met de sample:** de $228k tot $456k van de sample wordt in drie stappen $72k tot $145k (tabblad Sample_vs_model): alleen secties bij doubles en triples (-40%), en alleen de helft daarvan als kas (-50%), met 255 in plaats van 240 dagen (+6%). Afwijking: -68%.
-- **Overuurmultiplier:** bij 1,5 worden alle kasbedragen 50% hoger. Dat is niet meegenomen omdat het onbekend is hoe doubles worden betaald.
-- **Eerlijke conclusie op dit moment:** verwacht 1,37x (+$29.400 per jaar) op kasbesparing alleen, met een range van 0,27x tot 3,66x. De pure kasbesparing is dus positief maar dun. De case rust daarnaast op groei (secties 3,4x in een jaar, kosten en voordeel groeien samen, het aandeel doubles groeit ook) en op wat niet in geld te zetten is: bijles, kwaliteit, consistentie tussen campussen. De pilot moet g, r en c meten voordat dit meer is dan een onderbouwde schatting.
-- **Niet te kwantificeren, wel genoemd:** ruimte voor bijles (Nikki), voltooiingspercentage en omzet per student (Nikki, Robert), reiskosten van overgevlogen instructeurs, consistentie tussen campussen (Nikki, Jeroen), studentenfeedback die nu mondeling is.
+### Hoe ik dit weeg
+
+- **Verwacht: 1.65x bruto, +$51.498 netto per jaar.** Laag 0.11x, hoog 2.74x, hoog met overwerktarief 4.12x.
+- Het verschil tussen laag en verwacht zit in de nakijktijd: bij 30 minuten per sectie past alles in het venster en is er nauwelijks kas. Dat is te meten met de controlegroep die Bas voorstelt.
+- De oude berekening is het optimistische einde, niet fout. De sample van 12 nov ($228k tot $456k) was te hoog: dat negeerde singles en rekende alle uren als geld.
+- Niet te kwantificeren, wel genoemd: bijles (Nikki), voltooiingspercentage en omzet per student, reiskosten van overgevlogen instructeurs, consistentie tussen campussen, mondelinge studentenfeedback.
 
 ---
 
@@ -282,7 +282,7 @@ Close heeft twee opportunities: **EUR 18.000 per maand** (pipeline Deal, 20%, = 
 
 ## 10. Wat nog ontbreekt (volgorde van belang)
 
-1. **Jeroens rekenmodel achter de $139k.** Zonder dat kun je niet zien welke aannames erin zitten.
+1. **Bevestiging dat $139k netto is** ($218k bruto min $79k kosten). Zijn eigen sheet heb ik niet gezien, maar de oude berekening reproduceert het exact, en in de Tjarko-sessie van 16 nov werd het door elkaar gehaald.
 2. **Baseline van nakijktijd** (controlegroep, 1 tot 2 weken). Dit is wat Bas zelf voorstelt.
 3. **Hoe doubles worden betaald** (11,5 betaalde uren per dag: met of zonder overuurtoeslag, daggrens of weekgrens), het overuurtarief, en of het voorbeeldrooster voor alle campussen geldt. Payroll-data zijn onbruikbaar volgens Bas, dus alleen de controlegroep of een directe vraag aan Bas lost dit op. Dit bepaalt c en m.
 4. **Aantal aangenomen HVAC-instructeurs en of workload een vertrekreden is** (uit exitgesprekken). Aangevraagd op 13 nov.
