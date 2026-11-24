@@ -18,6 +18,7 @@ Two halves. The top is the context you'd want before talking to them again, kept
 ---
 stage: prospect | trial | customer | former-trial | former-customer | peer | partner
 pull: yes | partial | no
+band: big | moderate | small | unknown
 ---
 
 # Jane Doe / Acme
@@ -54,6 +55,7 @@ pull: yes | partial | no
 - **Timeline** only grows.
 - **Deal reviews** follow AI Rob's deal review format. Each new review goes on top; older ones are never edited. Only live opportunities get them: for someone with no demand, a peer or a partner, the context is enough.
 - **Each call** also gets a row in [gtm/sales.md](../gtm/README.md), which feeds the weekly scorecard.
+- **`band`** is the size of this one deal, from first-year value (learners x 3 x 12): big from 100k, moderate 25k to 99.9k, small under 25k. `unknown` until there is a learner count. The weekly review reads it to judge cycle time and close rate per band. Set from `GTM/pull-lab/context/company.md`.
 - **`stage` and `pull`** in the frontmatter let the weekly review see what moved (prospect to trial, no PULL to PULL) from the git history.
 
 See [examples/honeypot/deals/](../examples/honeypot/deals/) for six filled-in deals, from a paying grizzly to a partnership pitch.

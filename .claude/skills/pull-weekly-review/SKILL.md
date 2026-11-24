@@ -69,7 +69,7 @@ Load AI Rob. Give it evidence, not conclusions: its memory files from step 2, th
 Ask it for its weekly scorecard and plan:
 
 - Which gate of its sequence the founder is at (who has PULL, one case study, repeats 3 to 5, factory), and why.
-- The six standards, scored for this week against the bars for this company's contract size: this week's number, the bar, pass / miss / unknown.
+- The six standards, scored for this week: this week's number, the bar, pass / miss / unknown. This company has no single contract size: size is set per deal (`band` in each deal's frontmatter, see `GTM/pull-lab/context/company.md`). Give AI Rob each deal's band with its cycle time and outcome, and ask it to judge cycle time and close rate per band. Standards that are counted over the week across all deals (such as first meetings) go to AI Rob with the band mix of those meetings. Say in the review which bars AI Rob applied and to what, never pick a bar yourself.
 - The **one** bottleneck, and why it's that one and not the others.
 - The one comparison that proves it (for example, who this week's meetings were with and which pulled, or requests sent against the weekly cap). It becomes visual 3.
 - The move: what to change, the one-hour action for today, and what to do if that stalls.

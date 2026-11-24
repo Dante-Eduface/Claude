@@ -35,7 +35,7 @@ If `GTM/pull-lab/gtm/sales.md` doesn't exist yet, create it from AI Rob's own te
 
 Follow the structure in [GTM/pull-lab/deals/README.md](../../../GTM/pull-lab/deals/README.md):
 
-- **Frontmatter:** `stage` from billing first (Stripe is the truth for customer, trial and former), then the conversation; `pull` from AI Rob's read.
+- **Frontmatter:** `stage` from billing first (Stripe is the truth for customer, trial and former), then the conversation; `pull` from AI Rob's read; `band` from the deal's first-year value as set out in `GTM/pull-lab/context/company.md` (big, moderate, small), or `unknown` when there is no learner count yet. Never guess a learner count: ask, or note it as open.
   - Create a new folder only for someone above the bar in [What's worth a deal](#whats-worth-a-deal); anyone below it goes in the report instead.
 - **Context:** who, source, what they used before us, links. Add what's new; fix what's wrong.
 - **PULL (latest read):** replace it with AI Rob's new read, dated: the two verdict lines, then the P, U and L table with the buyer's own words. Never the founder's words.
