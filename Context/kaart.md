@@ -27,6 +27,7 @@ ze daar moet vinden. `.claude/` en `.vscode/` zijn configuratie.
 | `ICP/` | Wie moet je hebben. Inclusief `shift/`, de opleiderspijplijn |
 | `Knowledge/` | Playbooks, handboeken en templates |
 | `Pricing/` | Prijsmodellen |
+| `pull-lab/` | PULL Lab: geheugen van de `pull-` skills (case study, gesprekslog, deals, weekreviews) |
 | `sales-coach/` | Levend CRM plus coachingsapp |
 
 ## Wat waaruit leest
@@ -86,6 +87,16 @@ Staan in `.claude/skills/`, want Claude Code vindt ze alleen daar. Aanroepen met
 - **`/deal-status-update`** — Schrijft een korte status-update per deal/account uit Close CRM en zet die in het note-veld van...
 - **`/meeting-prep-tasks`** — Zet de voorbereidingstaken voor een aankomende meeting automatisch in Todoist.
 - **`/person-research`** — Diepgaand, bronnen-gevalideerd onderzoek naar één persoon (prospect, stakeholder, champion,...
+
+### PULL Lab (sinds 24-11-2026)
+
+Data in `GTM/pull-lab/`. Alle oordelen komen van `ai-rob` via Skillfully, toegang is verlopen (PL1).
+
+- **`/pull-lead-gen`**: weekquotum aan mensen om te benaderen, warmste eerst.
+- **`/pull-outbound-setup`**: goedgekeurde lijst importeren en een sequentie als concept schrijven.
+- **`/pull-call-prep`**: gesprek voorbereiden, live volgen, debriefen.
+- **`/pull-deal-review`**: na elk contact het dealbestand en het gesprekslog bijwerken.
+- **`/pull-weekly-review`**: de vrijdagreview met één bottleneck. Staat niet in Dantes weekritme (PL2).
 
 ### SHIFT-pijplijn
 

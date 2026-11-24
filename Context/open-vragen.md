@@ -1,6 +1,6 @@
 # Open vragen
 
-_Aangelegd 19-09-2026, bijgewerkt 02-10-2026._
+_Aangelegd 19-09-2026, bijgewerkt 24-11-2026._
 
 De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat is een vraag die ik **niet zelf mag invullen**.
 
@@ -16,6 +16,8 @@ De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat 
 
 | # | Vraag | Waarom het uitmaakt | Sinds |
 |---|---|---|---|
+| PL1 | **Hoe krijgen we weer toegang tot `ai-rob`?** Skillfully meldt: toegang verlopen (gift). Zonder AI Rob stoppen alle vijf `pull-` skills. | Zie `GTM/pull-lab/README.md`. De skills zijn geïnstalleerd maar doen nu niets. | 24-11-2026 |
+| PL2 | **Past PULL Lab bij de ene prioriteit, en wanneer draait de weekreview?** De template is gemaakt voor pre-PMF, met een vrijdagreview en één case study. Vrijdag staat niet in je weekritme, zaterdag 06:00 is al `/week-plannen`. En `context/company.md` moet gevuld: prijs, contractband, betalende klanten, doel. | Past het niet bij 20 gestarte salesprocessen per maand, dan is het antwoord volgens `current-priorities.md` nee. | 24-11-2026 |
 | A5 | **Wordt de leidende maat "geboekte eerste gesprekken per week", vijf stuks?** Uren deep work blijven dan het scorebord, de gesprekken worden de knop waar je op stuurt. | Uren zijn beinvloedbaar maar matig voorspellend: je kunt 28 uur aan het verkeerde werk besteden. Zie `Context/deep-work.md`. | 19-09-2026 |
 | A6 | Verhuist de financiele controle van zaterdag 09:00 naar 11:00? | Nu valt hij in blok 2, terwijl het shallow werk is. De pauze is geen alternatief, die blijft leeg. | 20-09-2026 |
 | A8 | **Ruil je de heenreis om van lezen naar schrijven?** Heen schrijven (frisste uur), terug lezen. Nu lees je beide kanten, acht uur per week input zonder output. | Schrijven is het zwaarste denkwerk dat er is en hoort in je beste uur. Lezen houdt prima stand met een halve batterij. | 20-09-2026 |

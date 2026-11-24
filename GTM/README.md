@@ -10,4 +10,5 @@ Alles sales & marketing, net als de GTM-sectie in Todoist.
 | `ICP/` | Wie moet je hebben, inclusief de SHIFT-pijplijn |
 | `Knowledge/` | Playbooks, handboeken en templates |
 | `Pricing/` | Prijsmodellen |
+| `pull-lab/` | PULL-framework (Rob Snyder): case study, gesprekslog, deals, weekreview |
 | `sales-coach/` | Levend CRM plus coachingsapp |
