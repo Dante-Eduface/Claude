@@ -31,8 +31,24 @@ Thread "Eduface numbers on impact", 10, 13 en 18 november. Alles **UTI schriftel
 | Kosten nieuwe instructeur werven | $10.000 tot $15.000 | 10 nov | |
 | Verloop HVAC-instructeurs vorig jaar | 37% (25 van 66) | 18 nov | Komt vooral van nieuwe campussen waar HVAC snel groeit. Bas: "fair to use 20%" als het rustiger wordt. |
 | Overuren | Niet bruikbaar | 18 nov | Payroll-data "not a great representation"; blanket-categorisering. Bas stelt voor een controlegroep in de pilot te gebruiken. |
-| Aantal aangenomen instructeurs vorig jaar, en of workload een vertrekreden is | Aangevraagd | 13 nov | Nog niet geleverd. |
+| Aantal aangenomen instructeurs vorig jaar | ~25 (afgeleid: "25 out of 66 left us and were replaced") | 18 nov | Hij noemt het niet als aparte hirecijfer. |
+| Of workload een vertrekreden is | **Niet beantwoord** | 18 nov | Bas koppelt het hoge verloop aan snelle groei van HVAC, niet aan werklast. Jeroens vraag staat open. |
 | Nulmeting nakijktijd (1 tot 2 weken loggen) | Akkoord | 13 nov | "once we can start planning for a pilot". |
+
+### Alle mails van Bas in Close (volledigheidscheck, 24 nov)
+
+Bas heeft zes mails in Close. Geen enkele nieuwe sinds 18 november. Er zijn ook geen notes of transcripten na het gesprek van 19 november. Vanaf 20 november staat er alleen een statuswijziging op de opportunity (Scoping naar Scoping).
+
+| Datum | Inhoud | Cijfers? |
+|---|---|---|
+| 21 sep | Beantwoordt Jeroens vraag over Blackboard Discussions. Gebruikt in blended en online cursussen, instructeurs beoordelen deelname. Vereiste "Regular and Substantive Interaction" (US Department of Education). "Not the primary reason we are interested", maar hij vraagt of daar ook hulp bij kan. | Nee. Wel een mogelijk tweede toepassing die nu niet in de business case zit. |
+| 6 okt | Op summit, "ballpark numbers next week". | Nee. |
+| 16 okt | Werkt aan een NDA om cijfers "more freely" te kunnen delen. | Nee. |
+| 10 nov | Eerste cijfers (headcount, $38, secties, nakijktijd, wervingskosten). | Ja |
+| 13 nov | Antwoorden op Jeroens vragen plus de instructeursmix en twee bijlagen. | Ja |
+| 18 nov | Verloop 37%, aanname 20%, overuren onbruikbaar. | Ja |
+
+Jeroen vroeg op 12 nov om een overurenlog, het aantal aangenomen instructeurs en een nulmeting. Wat daarvan open staat: de overuren (payrolldata volgens Bas op 18 nov niet representatief, hij stelt de controlegroep in de pilot voor) en de nulmeting (pas bij pilotplanning).
 
 ### De instructeursmix (Bas, 13 nov, plus bijlage HVAC Data.xlsx)
 
