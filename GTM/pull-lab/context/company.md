@@ -11,7 +11,7 @@ _Concept van 24-11-2026, bijgewerkt na antwoorden van Dante. Ingevuld uit bestaa
 
 ## Stage
 
-- **Started:** OPEN
+- **Started:** verkoop aan particuliere onderwijsinstellingen sinds augustus 2026 (Dante, 24-11-2026). OPEN: wanneer het bedrijf zelf begon, dat is een andere datum.
 - **Paying customers:** 0 betalend, 1 getekend (Breederode, nog niet actief), per 24-11-2026, bron Dante. Enterprise en PLG apart tellen (zie `Context/eduface.md`).
 - **MRR:** 0, per 24-11-2026, bron Dante. Het wordt pas iets zodra Breederode live gaat.
 - **Type:** enterprise startup. Langere salescycli, grotere deals (Dante, 24-11-2026). PLG is niet hoe Eduface groeit. Zet de cyclustijd mee in elke scorecard en vergelijk niet met een kleine-dealstartup.
