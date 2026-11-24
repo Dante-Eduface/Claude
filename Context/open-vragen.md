@@ -16,6 +16,9 @@ De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat 
 
 | # | Vraag | Waarom het uitmaakt | Sinds |
 |---|---|---|---|
+| PL4 | **Prijs en waarde in Close kloppen niet met wat in gesprekken staat.** Academica: Close 12.600 per jaar, gesprek 18.000 plus 21% btw, intern 3,75 per student per maand, prijsmodel 3. North-West University: Close 80.000, voorstel 4.000. UTI: Close 500.000, gesprek noemt 375. Welke getallen kloppen, en mag ik Close-waarden laten corrigeren? | Contractband per deal hangt aan de eerstejaarswaarde. Academica heeft de btw-verrassing al als vertrouwenskwestie genoemd. | 24-11-2026 |
+| PL5 | **Breederode: telt de itslearning-koppeling nog als prioriteit?** MT 13-11: geen voorrang meer. Marina op 24-11: de school wacht op de koppeling. Kan een vak eerder starten met handmatige upload? | Het is de enige getekende klant en hij staat 48 dagen na tekenen niet live. Eerste review noemt dit als bottleneck. | 24-11-2026 |
+| PL6 | **Wat is het succesmoment (X) voor een klant?** | Standard 6. Zonder X kan niemand scoren dat een klant is geslaagd. Zie `GTM/pull-lab/gtm/post-sales.md`. | 24-11-2026 |
 | A5 | **Wordt de leidende maat "geboekte eerste gesprekken per week", vijf stuks?** Uren deep work blijven dan het scorebord, de gesprekken worden de knop waar je op stuurt. | Uren zijn beinvloedbaar maar matig voorspellend: je kunt 28 uur aan het verkeerde werk besteden. Zie `Context/deep-work.md`. | 19-09-2026 |
 | A6 | Verhuist de financiele controle van zaterdag 09:00 naar 11:00? | Nu valt hij in blok 2, terwijl het shallow werk is. De pauze is geen alternatief, die blijft leeg. | 20-09-2026 |
 | A8 | **Ruil je de heenreis om van lezen naar schrijven?** Heen schrijven (frisste uur), terug lezen. Nu lees je beide kanten, acht uur per week input zonder output. | Schrijven is het zwaarste denkwerk dat er is en hoort in je beste uur. Lezen houdt prima stand met een halve batterij. | 20-09-2026 |
