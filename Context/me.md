@@ -1,6 +1,6 @@
 # Dante
 
-_Laatst bijgewerkt: 2026-09-20._
+_Laatst bijgewerkt: 2026-11-24._
 
 - **Naam:** Dante Torbed
 - **Geboren:** 17-08-2006. Leeftijd zelf uitrekenen tegen de datum van vandaag, nooit een getal hier neerzetten. (Op 19-09-2026: 20.)
@@ -25,6 +25,7 @@ Uit de agenda gelezen op 19-09-2026. Dit is de vorm van zijn week, niet een afsp
 | Ma en wo | Terugtrein 18:35, thuis ~19:25 |
 | Di en do | Terugtrein 16:05, want gym om 17:00 |
 | Vrijdag | Thuis, geen reistijd |
+| Ma en vr, vóór 07:00 | PULL-review (`/pull-weekly-review`). Op maandag is dat in de trein van 05:53, op vrijdag thuis. Afgesproken 24-11-2026. |
 | Elke dag 20:00 | Dag afsluiten |
 | Gym 4x per week | Di en do 17:00, za en zo 13:00, 2 uur per keer |
 

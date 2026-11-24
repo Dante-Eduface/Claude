@@ -1,12 +1,14 @@
 # Wat er nu eerst moet
 
-_Laatst bijgewerkt: 2026-09-20. Dit bestand wint van elk ander contextbestand. Verandert de focus, dan verandert dit bestand, niet een zin ergens anders._
+_Laatst bijgewerkt: 2026-11-24. Dit bestand wint van elk ander contextbestand. Verandert de focus, dan verandert dit bestand, niet een zin ergens anders._
 
 ## De prioriteit
 
 **Elke maand 20 salesprocessen starten.** Consistent, maand na maand. Gemiddelde dealwaarde 50.000 euro. Geen einddatum, dit is de staande prioriteit voor het hele jaar.
 
 Enkelvoud, en dat is het punt. Dante op 19-09-2026: *"bepaal gewoon één prioriteit, daar focus ik mij het hele jaar op, ik doe geen ander werk."* De redenering staat in `Platform/Onderzoek/focus-these-hormozi.md`. Komt er iets langs dat hier niet aan bijdraagt, dan is het antwoord nee, ook als het een goed idee is.
+
+**Hoe we de 20 starten (24-11-2026):** met PULL Lab, de skills `/pull-lead-gen`, `/pull-outbound-setup`, `/pull-call-prep`, `/pull-deal-review` en `/pull-weekly-review`. Dat is de werkwijze, niet een tweede prioriteit. Geheugen en regels: `GTM/pull-lab/`. Review op maandag en vrijdag vóór 07:00, plus op verzoek.
 
 **Hoe we de stand bijhouden:** vragen aan Dante. Hij telt zelf hoeveel processen er deze maand gestart zijn. Niet uit Close proberen af te leiden, dat heeft hij op 19-09-2026 expliciet zo gekozen.
 

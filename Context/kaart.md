@@ -96,7 +96,7 @@ Data in `GTM/pull-lab/`. Alle oordelen komen van `ai-rob` via Skillfully, toegan
 - **`/pull-outbound-setup`**: goedgekeurde lijst importeren en een sequentie als concept schrijven.
 - **`/pull-call-prep`**: gesprek voorbereiden, live volgen, debriefen.
 - **`/pull-deal-review`**: na elk contact het dealbestand en het gesprekslog bijwerken.
-- **`/pull-weekly-review`**: de vrijdagreview met één bottleneck. Staat niet in Dantes weekritme (PL2).
+- **`/pull-weekly-review`**: de vrijdagreview met één bottleneck. Ma en vr vóór 07:00, staat in `Context/me.md`.
 
 ### SHIFT-pijplijn
 

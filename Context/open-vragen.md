@@ -16,8 +16,6 @@ De enige plek waar openstaande vragen aan Dante staan. Een vraag die hier staat 
 
 | # | Vraag | Waarom het uitmaakt | Sinds |
 |---|---|---|---|
-| PL2 | **Dante zei "dit is de prioriteit" over PULL Lab. Wordt PULL Lab de nieuwe ene prioriteit, of de werkwijze om de 20 gestarte salesprocessen per maand te halen?** Eerste past `current-priorities.md` aan, tweede laat het staan. | Dat bestand wint van alles en zegt nu "20 salesprocessen starten". Ik pas het niet aan op een aanname. | 24-11-2026 |
-| PL3 | **Op welk uur draaien de reviews?** Maandagochtend botst met blok 1 (07:00 tot 09:00, de deep-work-taak). Vrijdagmiddag is shallow werk en past vanzelf. De `pull-` skills zijn ook nog niet aan Todoist of de agenda gehangen. | Anders wint de review van het blok, of andersom. | 24-11-2026 |
 | A5 | **Wordt de leidende maat "geboekte eerste gesprekken per week", vijf stuks?** Uren deep work blijven dan het scorebord, de gesprekken worden de knop waar je op stuurt. | Uren zijn beinvloedbaar maar matig voorspellend: je kunt 28 uur aan het verkeerde werk besteden. Zie `Context/deep-work.md`. | 19-09-2026 |
 | A6 | Verhuist de financiele controle van zaterdag 09:00 naar 11:00? | Nu valt hij in blok 2, terwijl het shallow werk is. De pauze is geen alternatief, die blijft leeg. | 20-09-2026 |
 | A8 | **Ruil je de heenreis om van lezen naar schrijven?** Heen schrijven (frisste uur), terug lezen. Nu lees je beide kanten, acht uur per week input zonder output. | Schrijven is het zwaarste denkwerk dat er is en hoort in je beste uur. Lezen houdt prima stand met een halve batterij. | 20-09-2026 |
@@ -56,6 +54,8 @@ Blijft staan zodat zichtbaar is wat er al gevraagd is. Alles hieronder is beantw
 | Vraag | Antwoord | Waar het nu staat |
 |---|---|---|
 | Toegang tot `ai-rob` weer actief? (PL1) | Ja, Skillfully meldt `paid_entitlement` (24-11-2026). De `pull-` skills kunnen draaien. | `GTM/pull-lab/README.md` |
+| Wordt PULL Lab de nieuwe prioriteit? (PL2) | Nee, het is de werkwijze om 20 nieuwe salesprocessen per maand te starten. De prioriteit zelf blijft. | `Context/current-priorities.md` |
+| Op welk uur draaien de reviews? (PL3) | Maandag en vrijdag vóór 07:00, plus op verzoek. | `Context/me.md` |
 | Hoeveel klanten betalen er, wat is de MRR? (PL, bedrijfsstand) | Geen MRR. Breederode getekend, nog niet live, 3 per student per maand zodra live. | `GTM/pull-lab/context/company.md` |
 | Waar staan transcripten? (PL) | Close en Wispr Flow. | `GTM/pull-lab/context/company.md` |
 | Azure en Google Cloud, EU-only? (V2) | Microsoft, Google en Railway werken voor Eduface alleen met EU-infrastructuur. Uitspraak over wat Amerikaans recht daarvoor betekent is er niet. | `.claude/skills/privacy-it/platform-privacykennis.md` |

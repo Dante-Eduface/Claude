@@ -19,11 +19,12 @@ _Concept van 24-11-2026, bijgewerkt na antwoorden van Dante. Ingevuld uit bestaa
 ## The one goal
 
 - **Goal:** elke maand 20 salesprocessen starten, gemiddelde dealwaarde 50.000 euro, geen einddatum (`Context/current-priorities.md`, 20-09-2026). Het revenue target van Eduface tot eind 2027: 1 deal boven 40.000, 2 deals van minimaal 10.000, 1 deal in het buitenland.
+- **Hoe:** PULL Lab is de werkwijze om die 20 per maand te starten (Dante, 24-11-2026).
 - **Why that goal:** het is de ene prioriteit voor het hele jaar. Dante op 19-09-2026: "bepaal gewoon één prioriteit, daar focus ik mij het hele jaar op."
 
 ## Constraints
 
-- **Weekreview:** maandagochtend en vrijdagmiddag, plus wanneer Dante of Jeroen erom vraagt (Dante, 24-11-2026). OPEN: op welk uur.
+- **Weekreview:** maandag en vrijdag vóór 07:00, plus wanneer Dante of Jeroen erom vraagt (Dante, 24-11-2026).
 - **Time on sales per week:** OPEN. Dante heeft 28 uur deep work per week (zeven dagen, vier uur), maar dat is niet hetzelfde als tijd voor sales.
 - **Runway:** OPEN
 - **We won't:** Meta- en LinkedIn-ads, SEO en GEO, de Framer-site herbouwen, de Jisc/CHEST-pilotdoelen uit Q2 (allemaal bewust af sinds 19-09-2026). LinkedIn voor outreach blijft wel.
