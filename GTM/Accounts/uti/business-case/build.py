@@ -107,12 +107,10 @@ def cg(widths):
 def chart():
     rows = [
         ("Grading time today", TOTAL_H, "ctx", False),
-        (f"Time the tool takes off, low and expected case ({pct(RED)})", SAVED_H, "ctx", False),
-        (f"Time the tool takes off, high case ({pct(RED_H)})", SAVED_H_HIGH, "ctx", False),
-        (f"High case: all saved hours in two- and three-section shifts, at {pct(RED_H)}", HIGH["cash_h"], "key", True),
-        (f"Expected case: all saved hours in two- and three-section shifts, at {pct(RED)}", EXP["cash_h"], "key", True),
-        ("Low case: only grading outside scheduled hours", LOW["cash_h"], "key", True),
-        (f"Hours needed to cover the licence ({usd100(COST)} at ${RATE:.0f} an hour)", NEED_H, "gate", False),
+        ("High case: counted as payroll savings", HIGH["cash_h"], "key", True),
+        ("Expected case: counted as payroll savings", EXP["cash_h"], "key", True),
+        ("Low case: counted as payroll savings", LOW["cash_h"], "key", True),
+        (f"Needed to cover the licence ({usd100(COST)})", NEED_H, "gate", False),
     ]
     out = []
     for lab, hrs, kind, is_key in rows:
@@ -122,37 +120,33 @@ def chart():
             f'<div class="track"><div class="bar {kind}" style="width:{w:.2f}%"></div></div>'
             f'<div class="val">{h10(hrs)} h</div></div>'
         )
-    cap = "Hours per year, all HVAC sections. Dark bars: hours that become payroll savings. Outlined bar: hours needed to cover the licence cost."
+    cap = f"Hours per year, all HVAC sections, at ${RATE:.0f} an hour. Dark bars: hours that become payroll savings (the tool saves {h10(SAVED_H)} hours at {pct(RED)} and {h10(SAVED_H_HIGH)} at {pct(RED_H)}). Outlined bar: hours needed to cover the licence cost."
     return f'<figure class="bars">{"".join(out)}<figcaption>{e(cap)}</figcaption></figure>'
 
 
 def build():
-    # --- first page
     p1 = ("UTI's HVAC program grew from about 29 to about 98 sections per course start in twelve months. The share of instructors teaching two or "
           "three sections went from 14% to 42%, and they grade more than their shift schedule leaves room for.")
-    p2 = (f"Eduface proposes a score and written feedback for each lab submission, and the instructor reviews and approves it. This document shows three cases. "
-          f"The low case counts only the grading that now happens outside scheduled hours. The expected case counts all the time the tool saves in two- and "
-          f"three-section shifts, with the tool taking {pct(RED)} off the grading time. The high case is the bullish scenario: the same, with the tool taking "
-          f"{pct(RED_H)} off. The expected and high cases assume the freed time becomes real payroll savings, through less overtime, shorter shifts or fewer hires. "
-          f"All three are estimates until the pilot measures them.")
+    p2 = ("Expected and high count every saved hour in these shifts as money. That holds only if the freed time lowers payroll (less overtime, shorter shifts, fewer hires). All cases are estimates until the pilot measures them.")
 
     CASES = (LOW, EXP, HIGH)
+    n3 = lambda *xs: "".join(f"<td class='n'>{x}</td>" for x in xs)
     glance = (
-        "<tr><td>Time the tool takes off</td>" + "".join(f"<td class='n'>{pct(x)}</td>" for x in (RED, RED, RED_H)) + "</tr>"
-        "<tr><td>Payroll savings a year</td>" + "".join(f"<td class='n'>{usd100(c['sav'])}</td>" for c in CASES) + "</tr>"
-        "<tr><td>Licence cost a year</td>" + "".join(f"<td class='n'>{usd100(COST)}</td>" for c in CASES) + "</tr>"
-        "<tr class='total'><td>Net result a year</td>" + "".join(f"<td class='n'>{net_text(c['sav'], COST)}</td>" for c in CASES) + "</tr>"
-        "<tr><td>Back for every $1 spent</td>" + "".join(f"<td class='n'>${c['ratio']:.2f}</td>" for c in CASES) + "</tr>"
+        "<tr><td>What counts as money</td><td>Only grading outside scheduled hours</td><td>All saved time in these shifts</td><td>All saved time in these shifts</td></tr>"
+        "<tr><td>Time the tool takes off</td>" + n3(*(pct(x) for x in (RED, RED, RED_H))) + "</tr>"
+        "<tr><td>Payroll savings a year</td>" + n3(*(usd100(c["sav"]) for c in CASES)) + "</tr>"
+        "<tr><td>Licence cost a year</td>" + n3(*(usd100(COST) for c in CASES)) + "</tr>"
+        "<tr class='total'><td>Net result a year</td>" + n3(*(net_text(c["sav"], COST) for c in CASES)) + "</tr>"
+        "<tr><td>Back for every $1 spent</td>" + n3(*(f"${c['ratio']:.2f}" for c in CASES)) + "</tr>"
     )
 
     today_rows = [
-        ("HVAC sections per day", "About 100 (about 29 per course start in Oct 2025, about 98 in Oct 2026)", "UTI Operations, 10 Nov 2026; HVAC data export, 13 Nov 2026"),
-        ("Instructors teaching HVAC", "66 (22 per course start in Oct 2025, 67 in Oct 2026)", "UTI Operations, 10 Nov 2026; HVAC data export"),
-        ("Campuses with HVAC", "14", "HVAC data export"),
+        ("HVAC sections per day", "About 100 (about 29 per course start in Oct 2025, about 98 in Oct 2026)", "UTI Operations 10 Nov; HVAC data export"),
+        ("Instructors teaching HVAC", "66 (22 per course start in Oct 2025, 67 in Oct 2026), at 14 campuses", "UTI Operations 10 Nov; HVAC data export"),
         ("Instructors with two or three sections", "42% of instructors and 60% of sections in Oct 2026 (14% and 24% in Oct 2025)", "HVAC data export"),
-        ("Students per section, teaching days a year", f"{STUDENTS:.0f} students, {D:.0f} days (51 weeks, 5 days)", "UTI Operations, 13 Nov 2026"),
-        ("Cost per instructor hour", f"${RATE:.0f} (UTI estimate)", "UTI Operations, 10 Nov 2026"),
-        ("Grading time per section per day", "30 to 60 minutes (UTI estimate, not tracked)", "UTI Operations, 10 and 13 Nov 2026"),
+        ("Students per section, days", f"{STUDENTS:.0f} students per section (one 5-hour class), {D:.0f} days a year (51 weeks, 5 days)", "UTI Operations, 13 Nov"),
+        ("Cost per instructor hour", f"${RATE:.0f} (UTI estimate)", "UTI Operations, 10 Nov"),
+        ("Grading time per section per day", "30 to 60 minutes (UTI estimate, not tracked)", "UTI Operations, 10 and 13 Nov"),
     ]
     today = "".join(f"<tr><td>{e(a)}</td><td>{e(b)}</td><td>{e(s)}</td></tr>" for a, b, s in today_rows)
 
@@ -165,34 +159,39 @@ def build():
         f"<tr><td>Three sections</td><td class='n'>{pct(SEC3 / S)}</td><td>No fixed limit</td><td class='n'>{need3:.0f} min</td><td>All of it</td></tr>"
     )
 
-    # --- calculation table: three cases side by side
-    step4 = (f"<strong>Low:</strong> only grading that falls outside scheduled hours, about {OVER2 * 60:.0f} of the {RED * 2 * G * 60:.0f} minutes saved "
-             f"per day for a two-section instructor, all saved time for three sections. <strong>Expected and high:</strong> all saved time in these shifts.")
-    n3 = lambda *xs: "".join(f"<td class='n'>{x}</td>" for x in xs)
-    calc = (
-        f"<tr><td>1</td><td>Grading time today</td><td>{S:.0f} sections × {G:g} h × {D:.0f} days</td><td class='n' colspan='3'>{h10(TOTAL_H)} h, all cases</td><td>UTI Operations: 30 to 60 minutes, midpoint. Not measured.</td></tr>"
-        f"<tr><td>2</td><td>Time the tool takes off</td><td>{pct(RED)} of step 1 (high case: {pct(RED_H)})</td>{n3(h10(SAVED_H) + ' h', h10(SAVED_H) + ' h', h10(SAVED_H_HIGH) + ' h')}<td>Eduface assumption. High case is the bullish scenario. Measured in the pilot.</td></tr>"
-        f"<tr><td>3</td><td>In two- and three-section shifts</td><td>{pct(SHARE)} of sections (Oct 2026)</td>{n3(h10(SAVED_MULTI) + ' h', h10(SAVED_MULTI) + ' h', h10(SAVED_MULTI_HIGH) + ' h')}<td>HVAC data export. The rest falls in single-section shifts, paid 8 hours either way.</td></tr>"
-        f"<tr><td>4</td><td>Becomes payroll savings</td><td>{step4}</td>{n3(h10(LOW['cash_h']) + ' h', h10(EXP['cash_h']) + ' h', h10(HIGH['cash_h']) + ' h')}<td>UTI example shift schedules, 13 Nov 2026</td></tr>"
-        f"<tr><td>5</td><td>Value</td><td>Hours × ${RATE:.0f}</td>{n3(usd100(LOW['sav']), usd100(EXP['sav']), usd100(HIGH['sav']))}<td>UTI Operations, 10 Nov 2026</td></tr>"
-        f"<tr><td>6</td><td>Licence cost</td><td>{IN_CLASS:,.0f} students × ${PRICE:.2f} × 12 months</td><td class='n' colspan='3'>{usd100(COST)}, all cases</td><td>Draft licence agreement, sent 16 Nov 2026, Article 5.1</td></tr>"
-        f"<tr class='total'><td></td><td>Net result per year</td><td>Step 5 minus step 6</td>{n3(*(net_text(c['sav'], COST) for c in (LOW, EXP, HIGH)))}<td></td></tr>"
-        f"<tr><td></td><td>Back for every $1 spent</td><td>Step 5 divided by step 6</td>{n3(*('$%.2f' % c['ratio'] for c in (LOW, EXP, HIGH)))}<td></td></tr>"
+    def mins(x):
+        return int(x + 0.5)
+    two_low = 2 * G * (1 - RED) * 60
+    two_high = 2 * G * (1 - RED_H) * 60
+    ba = (
+        "<tr><td>Marking and review</td><td>The instructor marks each lab by hand, in the time scheduled after class.</td>"
+        "<td>Eduface proposes a score with feedback per criterion against UTI's answer key and rubric. The instructor checks, edits and approves it before the student sees anything.</td></tr>"
+        f"<tr><td>Two-section shift</td><td>{need2:.0f} minutes of grading against {WIN * 60:.0f} scheduled, about {OVER2 * 60:.0f} minutes over.</td>"
+        f"<td>{mins(two_low)} minutes at {pct(RED)} saved, {mins(two_high)} at {pct(RED_H)}. Both fit inside the {WIN * 60:.0f} scheduled minutes.</td></tr>"
     )
 
-    # --- sensitivity, three cases: (low, expected, high) savings, None = not applicable
+    step4 = "<strong>Low:</strong> only grading outside scheduled hours. <strong>Expected and high:</strong> all saved time in these shifts."
+    calc = (
+        f"<tr><td>1</td><td>Grading today</td><td>{S:.0f} sections × {G:g} h × {D:.0f} days</td><td class='n' colspan='3'>{h10(TOTAL_H)} h, all cases</td><td>UTI Operations, 10 Nov (30 to 60 min, midpoint)</td></tr>"
+        f"<tr><td>2</td><td>Tool saves</td><td>{pct(RED)} of step 1 (high case: {pct(RED_H)})</td>{n3(h10(SAVED_H) + ' h', h10(SAVED_H) + ' h', h10(SAVED_H_HIGH) + ' h')}<td>Eduface assumption, tested in the pilot</td></tr>"
+        f"<tr><td>3</td><td>Multi-section shifts</td><td>{pct(SHARE)} of sections (Oct 2026)</td>{n3(h10(SAVED_MULTI) + ' h', h10(SAVED_MULTI) + ' h', h10(SAVED_MULTI_HIGH) + ' h')}<td>HVAC data export. Single-section shifts are paid 8 hours either way.</td></tr>"
+        f"<tr><td>4</td><td>Payroll savings</td><td>{step4}</td>{n3(h10(LOW['cash_h']) + ' h', h10(EXP['cash_h']) + ' h', h10(HIGH['cash_h']) + ' h')}<td>UTI shift schedules, 13 Nov</td></tr>"
+        f"<tr><td>5</td><td>Value</td><td>Hours × ${RATE:.0f}</td>{n3(usd100(LOW['sav']), usd100(EXP['sav']), usd100(HIGH['sav']))}<td>UTI Operations, 10 Nov</td></tr>"
+        f"<tr><td>6</td><td>Licence cost</td><td>{IN_CLASS:,.0f} students × ${PRICE:.2f} × 12 months</td><td class='n' colspan='3'>{usd100(COST)}, all cases</td><td>Eduface price per student per month</td></tr>"
+        f"<tr class='total'><td></td><td>Net per year</td><td>Step 5 minus step 6</td>{n3(*(net_text(c['sav'], COST) for c in CASES))}<td></td></tr>"
+        f"<tr><td></td><td>Back per $1</td><td>Step 5 divided by step 6</td>{n3(*('$%.2f' % c['ratio'] for c in CASES))}<td></td></tr>"
+    )
+
     def three(g=G, r=RED, rh=RED_H, m=1.0):
         return (lens1(g, r, m), lens2(g, r, m), lens2(g, rh, m))
     base = (LOW["sav"], EXP["sav"], HIGH["sav"])
-    low30 = lens1(G, 0.3)
     sens = [
         ("Base case", base, COST),
-        ("Grading takes 30 minutes per section instead of 45", three(g=0.5), COST),
-        ("Grading takes 60 minutes per section instead of 45", three(g=1.0), COST),
-        (f"The tool removes 30% of grading time instead of {pct(RED)} (high case: {pct(RED_H)})", three(r=0.3, rh=0.3), COST),
-        ("Only half of the saved hours in step 4 reduce payroll", (None, EXP["sav"] / 2, HIGH["sav"] / 2), COST),
-        (f"Hours are paid at time and a half (${RATE * 1.5:.0f} an hour)", three(m=1.5), COST),
-        (f"2,500 students instead of {LICENSED:,.0f} (sections keep growing)", base, 2500 * PRICE * 12),
+        ("Grading 30 minutes per section (base 45)", three(g=0.5), COST),
+        ("Grading 60 minutes per section (base 45)", three(g=1.0), COST),
+        (f"Tool removes 30% (base {pct(RED)}, high {pct(RED_H)})", three(r=0.3, rh=0.3), COST),
+        ("Half of step 4 hours reduce payroll", (None, EXP["sav"] / 2, HIGH["sav"] / 2), COST),
+        (f"Time and a half (${RATE * 1.5:.0f} an hour)", three(m=1.5), COST),
     ]
     def cell(v, cost):
         return "<td class='n'>n/a</td><td class='n'>n/a</td>" if v is None else f"<td class='n'>{usd100(v)}</td><td class='n'>{net_text(v, cost)}</td>"
@@ -200,10 +199,6 @@ def build():
         f"<tr{' class=total' if i == 0 else ''}><td>{e(lab)}</td>" + "".join(cell(v, cost) for v in vals) + "</tr>"
         for i, (lab, vals, cost) in enumerate(sens)
     )
-    sens_note = ("The low case depends most on how long grading really takes: at 30 minutes per section it fits inside the scheduled time and leaves little "
-                 "to save in payroll. The expected and high cases move in proportion to grading time, the share the tool removes and the hourly rate, because "
-                 "they count every saved hour in these shifts as money. That only holds if the freed time really lowers payroll; the half-of-the-hours row "
-                 "shows the result if it does for half of it (not applicable to the low case).")
 
     fte = SAVED_SINGLE / 2080
     leavers = 66 * 0.20
@@ -214,108 +209,48 @@ def build():
 <img class="brand" src="file://{LOGO}" alt="Eduface">
 <h1>Eduface in HVAC: business case for Universal Technical Institute</h1>
 <p class="case">Low case, expected case and high case</p>
-<p class="status">Draft for validation by UTI, 24 Nov 2026. Prepared by Eduface from figures supplied by UTI Operations. Every input names its source. Hours are rounded to 10, dollars to $100. Contact: Dante Torbed, Customer Success Manager, dante.torbed@eduface.me. The model is available on request.</p>
+<p class="status">Draft for validation by UTI, 24 Nov 2026. Based on figures from UTI Operations. Hours are rounded to 10, dollars to $100. Contact: Dante Torbed, dante.torbed@eduface.me.</p>
 
 <p class="lead">{e(p1)}</p>
-<p>{e(p2)}</p>
 {chart()}
 
-<table class="keep"><caption>The three cases at a glance</caption>{cg((40, 20, 20, 20))}
+<table class="keep"><caption>The three cases at a glance</caption>{cg((28, 24, 24, 24))}
 <thead><tr><th></th><th class="n">Low case</th><th class="n">Expected case</th><th class="n">High case</th></tr></thead><tbody>{glance}</tbody></table>
 
 <h2>Customer context</h2>
-<h3>What UTI is working toward</h3>
-<ul>
-<li>UTI's North Star strategy is mainly campus growth, diversification and optimization (UTI, 18 Sep 2026).</li>
-<li>UTI adds two new campuses a year and brings existing programs to as many campuses as possible (UTI, 18 Sep 2026). HVAC already runs at 14 campuses.</li>
-<li>Instructor supply is the constraint. Some campuses struggle to hire and keep instructors, and UTI moves instructors across the country to teach courses (UTI, 18 Sep 2026).</li>
-<li>Instructor pay is one of the largest variable costs that education directors manage. Hourly instructors who grade have no time left to tutor (UTI, 18 Sep 2026).</li>
-</ul>
-
-<table class="keep"><caption>HVAC at UTI today</caption>{cg((30, 44, 26))}
+<table class="keep"><caption>HVAC at UTI today</caption>{cg((29, 45, 26))}
 <thead><tr><th>Measure</th><th>Value</th><th>Source</th></tr></thead><tbody>{today}</tbody></table>
-<p class="src">A section is one 5-hour class of about {STUDENTS:.0f} students. UTI Operations does not track grading time or turnover causes separately, so grading time and the cost of an instructor hour are estimates.</p>
 
-<h3>Where the grading pressure sits</h3>
-<p>Instructors who teach one section are paid for 8 hours and have about 2.5 to 2.8 hours scheduled after class for grading, preparation and training aid work. Grading fits. Instructors who teach two sections work a 12-hour shift with only {WIN * 60:.0f} minutes on average scheduled for the same tasks, so two sections at {need1:.0f} minutes each leave a gap of about {OVER2 * 60:.0f} minutes a day outside scheduled hours. Instructors with three sections get as much time as they need.</p>
 <table class="keep"><caption>Scheduled time against grading needed, at {need1:.0f} minutes per section</caption>{cg((17, 14, 33, 16, 20))}
 <thead><tr><th>Shift</th><th class="n">Share of sections</th><th>Scheduled for grading, prep and training aids</th><th class="n">Grading needed</th><th>Gap per day</th></tr></thead><tbody>{gap}</tbody></table>
-<p class="src">UTI example shift schedules and HVAC data export, 13 Nov 2026; UTI Operations estimate of 30 to 60 minutes per section, 10 Nov 2026 (midpoint used). Gap calculated by Eduface.</p>
-<p>Over a year, grading outside scheduled hours adds up to about {h10(CEIL_H)} hours, or about {usd100(CEIL_H * RATE)} at ${RATE:.0f} an hour if it is paid time. UTI Operations has not yet confirmed how these hours are paid, and the payroll data it checked was not representative, so the pilot baseline will settle it. Earlier conversations (26 Aug 2026) cited 2 to 4 hours of grading a day. This document uses the lower figure from UTI Operations.</p>
+<p class="src">UTI example shift schedules and HVAC data export, 13 Nov 2026; UTI Operations, 10 Nov 2026. Over a year the gap adds up to about {h10(CEIL_H)} hours, or {usd100(CEIL_H * RATE)} at ${RATE:.0f} an hour if it is paid time. UTI Operations has not yet confirmed how these hours are paid.</p>
 
-<h2>Current and future state</h2>
-<table><caption>How a lab submission is handled</caption>{cg((18, 41, 41))}
-<thead><tr><th>Step</th><th>Today</th><th>With Eduface</th></tr></thead><tbody>
-<tr><td>Submission</td><td>Students upload lab documents in Blackboard Ultra.</td><td>Unchanged for students.</td></tr>
-<tr><td>Marking</td><td>The instructor marks each lab by hand. Blackboard auto-grading only accepts exact matches, so an answer one character off counts as wrong.</td><td>Eduface reads each submission against UTI's own answer key and rubric and proposes a score with feedback per criterion. It marks where it is unsure.</td></tr>
-<tr><td>Review</td><td>The instructor is the marker.</td><td>The instructor checks, edits and approves each proposal. Nothing reaches the student or the gradebook before that.</td></tr>
-<tr><td>Feedback to students</td><td>Mostly verbal and occasional, and not measured.</td><td>Written feedback per criterion, inside Blackboard.</td></tr>
-<tr><td>Gradebook</td><td>The instructor enters the grade.</td><td>The approved grade and feedback sync to the Blackboard gradebook.</td></tr>
-<tr><td>Instructor time</td><td>Grading in the hours after class, often in the evening.</td><td>Less grading time per submission. The freed time can go to preparation, training aids and tutoring.</td></tr>
-</tbody></table>
-<p class="src">Eduface product description; demonstration on UTI's own labs, 1 Sep 2026; UTI statements, 26 Aug and 18 Sep 2026.</p>
-
-<table><caption>Decision criteria UTI has raised or agreed, and where each stands</caption>{cg((24, 18, 30, 28))}
-<thead><tr><th>Criterion</th><th>Raised or agreed by</th><th>How it is addressed</th><th>Status</th></tr></thead><tbody>
-<tr><td>Works inside Blackboard Ultra, grades sync to the gradebook</td><td>UTI, 26 Aug 2026</td><td>LTI 1.3 connection. Approved grades and feedback sync back.</td><td>First call 19 Nov 2026. First course set up by 7 Dec 2026 (target).</td></tr>
-<tr><td>Instructor stays in control</td><td>UTI and Concorde, 25 Sep 2026</td><td>The instructor approves every proposal before the student sees it.</td><td>By design. In the draft licence agreement, Article 10.2.</td></tr>
-<tr><td>Accuracy above 90% after calibration</td><td>UTI, 18 Sep 2026</td><td>Tuned per course on UTI's answer keys and rubrics.</td><td>To validate in the pilot.</td></tr>
-<tr><td>Student data is not used to train AI</td><td>UTI IT, 25 Sep 2026</td><td>Contractual commitment.</td><td>In the draft licence agreement, Article 10.3.</td></tr>
-<tr><td>Accessibility documentation</td><td>UTI, 1 Sep 2026</td><td>VPAT, WCAG 2.2 AA, report of July 2026.</td><td>Shared 2 Sep 2026.</td></tr>
-<tr><td>Security and legal review</td><td>UTI</td><td>Questionnaire returned 27 Oct 2026.</td><td>Security review completed 6 Nov 2026. Legal review in progress.</td></tr>
-<tr><td>Little setup work per course</td><td>UTI, 18 Sep 2026</td><td>Course setup with the program lead in four calls over two weeks.</td><td>To validate in the first course.</td></tr>
-</tbody></table>
+<table class="keep"><caption>Current and future state: how a lab submission is handled</caption>{cg((18, 41, 41))}
+<thead><tr><th>Step</th><th>Today</th><th>With Eduface</th></tr></thead><tbody>{ba}</tbody></table>
 
 <h2>Cost justification</h2>
-<table><caption>How the savings are calculated, low, expected and high case</caption>{cg((5, 13, 23, 11, 11, 11, 26))}
+<p>{e(p2)}</p>
+<table class="keep"><caption>How the savings are calculated</caption>{cg((5, 14, 27, 11, 11, 11, 21))}
 <thead><tr><th>Step</th><th>What</th><th>Calculation</th><th class="n">Low</th><th class="n">Expected</th><th class="n">High</th><th>Basis</th></tr></thead><tbody>{calc}</tbody></table>
-<p class="src">The licence cost is the number of students times ${PRICE:.2f} per student per month (Article 5.1). Every 100 students adds {usd(100 * PRICE * 12)} a year. Onboarding, one LMS integration, training for up to 50 users and standard support are included (Article 8.2). No fee accrues in months without students (Article 5.3).</p>
-
-<table class="keep"><caption>What moves the result</caption>{cg((25, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5))}
-<thead><tr><th>If this changes</th><th class="n">Low: savings</th><th class="n">Low: net</th><th class="n">Expected: savings</th><th class="n">Expected: net</th><th class="n">High: savings</th><th class="n">High: net</th></tr></thead><tbody>{sens_rows}</tbody></table>
-<p class="src">Savings are payroll savings a year; net is after the licence cost. {e(sens_note)} Other inputs as in the base case.</p>
 
 <h3>Not counted in the numbers</h3>
 <ul>
-<li><strong>Time returned in single-section shifts.</strong> About {h10(SAVED_SINGLE)} hours a year, roughly {fte:.1f} full-time equivalents (2,080 hours each). Single-section instructors are paid 8 hours either way, so it is not a payroll saving. It is time for preparation, training aids and tutoring.</li>
-<li><strong>Turnover.</strong> Last year 37% of HVAC instructors left (25 of 66); UTI Operations suggests 20% as a planning figure (18 Nov 2026). At 20%, about {leavers:.0f} leave a year, and replacing an instructor costs $10,000 to $15,000 (10 Nov 2026), so $132,000 to $198,000. If better workload kept one in ten of them, that is $13,000 to $20,000 a year. There is no evidence yet that grading load causes departures, so none is counted.</li>
-<li><strong>Quality and completion.</strong> Consistent written feedback on every submission, and the effect of freed instructor time on course completion, which UTI tracks and Eduface has not seen.</li>
+<li><strong>Single-section shifts.</strong> About {h10(SAVED_SINGLE)} hours a year ({fte:.1f} full-time equivalents) go to preparation and tutoring. They are paid 8 hours either way, so no payroll saving.</li>
+<li><strong>Turnover.</strong> 37% of HVAC instructors left last year (25 of 66); UTI Operations suggests 20% for planning, about {leavers:.0f} leavers at $10,000 to $15,000 each. No evidence yet that grading load is the cause, so none is counted.</li>
 </ul>
 
-<h2>Validation and plan</h2>
-<table class="keep"><caption>What the pilot measures</caption>{cg((24, 50, 26))}
+<table class="keep"><caption>What moves the result</caption>{cg((29, 11.8, 11.8, 11.8, 11.8, 11.8, 12))}
+<thead><tr><th>If this changes</th><th class="n">Low: savings</th><th class="n">Low: net</th><th class="n">Expected: savings</th><th class="n">Expected: net</th><th class="n">High: savings</th><th class="n">High: net</th></tr></thead><tbody>{sens_rows}</tbody></table>
+<p class="src">Savings are payroll savings a year; net is after the licence cost. The half-of-the-hours row does not apply to the low case, which counts only grading outside scheduled hours.</p>
+
+<h2>Validation</h2>
+<table class="keep"><caption>What the pilot measures</caption>{cg((30, 44, 26))}
 <thead><tr><th>Measure</th><th>How</th><th>Tests</th></tr></thead><tbody>
-<tr><td>Grading time per section per day</td><td>A control group of instructors logs grading time for 1 to 2 weeks before the pilot, then during it (agreed in principle by UTI Operations, 13 Nov 2026).</td><td>The 45 minutes and the {pct(RED)} (high case: {pct(RED_H)})</td></tr>
-<tr><td>Grading outside scheduled hours</td><td>The same group, per course start, for instructors with one, two and three sections.</td><td>The gap of about {OVER2 * 60:.0f} minutes</td></tr>
-<tr><td>Pay rules for two- and three-section shifts</td><td>UTI Operations confirms how the hours are paid and at what rate.</td><td>Whether the gap is paid time, and the hourly rate</td></tr>
-<tr><td>Accuracy</td><td>Difference between the score Eduface proposes and the instructor's final score on pilot submissions.</td><td>The 90% criterion</td></tr>
+<tr><td>Grading time per section</td><td>A control group logs grading time for 1 to 2 weeks before and during the pilot.</td><td>The 45 minutes and the {pct(RED)} (high: {pct(RED_H)})</td></tr>
+<tr><td>Grading outside scheduled hours</td><td>The same group, by one, two and three sections.</td><td>The gap of about {OVER2 * 60:.0f} minutes</td></tr>
+<tr><td>Pay rules, two and three sections</td><td>UTI Operations confirms how the hours are paid.</td><td>Paid time or not, and the rate</td></tr>
 </tbody></table>
-<p class="src">Sector evidence for the accuracy criterion, not UTI evidence: a UK university pilot in June 2026 (435 assignments, 13 instructors) averaged about 6 points from the instructor's grade, and about 2 points where instructors had tuned the model. That was written work, not lab short answers.</p>
-
-<h3>Decision rule</h3>
-<p>The licence pays for itself if the pilot shows about {NEED_MIN:.0f} minutes a day less paid or overtime grading per instructor with two or three sections. Across HVAC that is about {h10(NEED_H)} hours a year at ${RATE:.0f}. The low case assumes {LOW['min']:.0f} minutes, the expected case {EXP['min']:.0f} and the high case {HIGH['min']:.0f}. The high case also needs the pilot to show the tool removing {pct(RED_H)} or more of the grading time. After the pilot we replace the assumptions with the measured values and update this document.</p>
-
-<table><caption>Plan</caption>{cg((46, 32, 22))}
-<thead><tr><th>Step</th><th>Who</th><th>When</th></tr></thead><tbody>
-<tr><td>Licence agreement and DPA sent to UTI</td><td>Jeroen van Gessel</td><td>16 Nov 2026</td></tr>
-<tr><td>Licence agreement reviewed by UTI Legal and procurement</td><td>UTI Legal</td><td>To confirm</td></tr>
-<tr><td>LTI 1.3 connection in Blackboard Ultra, first call</td><td>Jeroen van Gessel, Dante Torbed and Charlie Rosenbam</td><td>19 Nov 2026</td></tr>
-<tr><td>First HVAC course fully set up (four calls over two weeks)</td><td>Dante Torbed and Dan Lawson</td><td>7 Dec 2026 (target)</td></tr>
-<tr><td>Baseline grading-time measurement</td><td>Bas Schotsman and a control group of instructors</td><td>To confirm</td></tr>
-<tr><td>Days on campus, Bloomfield</td><td>Dante Torbed, Jeroen van Gessel, Menno Hahury and Dan Lawson</td><td>18 to 20 Jan 2027 (tentative)</td></tr>
-<tr><td>Pilot go-live, HVAC 101, about 125 students</td><td>Robert Jordan</td><td>Jan 2027, date to be set</td></tr>
-<tr><td>Pilot results and updated business case</td><td>Eduface and UTI Operations</td><td>To confirm</td></tr>
-<tr><td>Decision on HVAC-wide rollout</td><td>UTI leadership</td><td>To confirm, subject to UTI budget</td></tr>
-</tbody></table>
-<p class="src">If UTI moves from Blackboard to Canvas later, Eduface also integrates with Canvas, so a migration does not need a new contract (UTI Q&amp;A, go-live plan, 12 Nov 2026).</p>
-
-<h3>Assumptions to validate</h3>
-<ol>
-<li>Grading takes 45 minutes per section per day. UTI Operations estimates 30 to 60 and does not track it.</li>
-<li>The tool removes {pct(RED)} of that time in the low and expected cases, and {pct(RED_H)} in the high case (bullish scenario). Eduface has not yet measured this on UTI's labs.</li>
-<li>Low case: grading outside scheduled hours is paid time, at $38 an hour. Expected and high case: every saved hour in two- and three-section shifts reduces paid hours, through less overtime, shorter shifts or fewer hires, at $38 an hour. How these hours are paid is not yet confirmed.</li>
-<li>HVAC runs at about 100 sections and about {IN_CLASS:,.0f} students across the year, with the mix of Oct 2026. Growth raises both the licence cost and the gap.</li>
-</ol>
+<p>The licence pays for itself if the pilot shows about {NEED_MIN:.0f} minutes a day less paid or overtime grading per instructor with two or three sections, about {h10(NEED_H)} hours a year at ${RATE:.0f}. The low case assumes {LOW['min']:.0f} minutes, the expected case {EXP['min']:.0f} and the high case {HIGH['min']:.0f}, which also needs the tool to remove {pct(RED_H)} of the grading time.</p>
 </body></html>"""
 
 

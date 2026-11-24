@@ -45,7 +45,7 @@ tr.total td { border-bottom: 2px solid var(--navy); font-family: var(--font-disp
 td.k { font-family: var(--font-display); font-weight: 700; }
 /* hours-to-dollars chart: een label-baan, een plot-baan, een waarde-baan */
 figure.bars { margin: var(--s3) 0 0; break-inside: avoid; }
-figure.bars .row { display: grid; grid-template-columns: 272px 1fr 80px; column-gap: var(--s2); align-items: center; min-height: 32px; border-bottom: 1px solid var(--ink-100); padding: 4px 0; }
+figure.bars .row { display: grid; grid-template-columns: 318px 1fr 80px; column-gap: var(--s2); align-items: center; min-height: 28px; border-bottom: 1px solid var(--ink-100); padding: 3px 0; }
 figure.bars .lab { font-size: 14px; line-height: 1.4; }
 figure.bars .track { height: 20px; position: relative; }
 figure.bars .bar { height: 20px; border-radius: 0; }
@@ -57,3 +57,5 @@ figure.bars .row.is-key .lab { font-family: var(--font-display); font-weight: 70
 figcaption { font-size: 12px; line-height: 1.4; color: var(--ink-500); margin-top: var(--s1); max-width: 90ch; }
 .keep { break-inside: avoid; }
 strong { font-family: var(--font-display); font-weight: 700; }
+
+h2.pb { break-before: page; }
