@@ -107,9 +107,9 @@ def cg(widths):
 def chart():
     rows = [
         ("Grading time today", TOTAL_H, "ctx", False),
-        ("High case: counted as payroll savings", HIGH["cash_h"], "key", True),
-        ("Expected case: counted as payroll savings", EXP["cash_h"], "key", True),
-        ("Low case: counted as payroll savings", LOW["cash_h"], "key", True),
+        ("High case: hours freed and valued", HIGH["cash_h"], "key", True),
+        ("Expected case: hours freed and valued", EXP["cash_h"], "key", True),
+        ("Low case: hours outside scheduled time", LOW["cash_h"], "key", True),
         (f"Needed to cover the licence ({usd100(COST)})", NEED_H, "gate", False),
     ]
     out = []
@@ -120,21 +120,22 @@ def chart():
             f'<div class="track"><div class="bar {kind}" style="width:{w:.2f}%"></div></div>'
             f'<div class="val">{h10(hrs)} h</div></div>'
         )
-    cap = f"Hours per year, all HVAC sections, at ${RATE:.0f} an hour. Dark bars: hours that become payroll savings (the tool saves {h10(SAVED_H)} hours at {pct(RED)} and {h10(SAVED_H_HIGH)} at {pct(RED_H)}). Outlined bar: hours needed to cover the licence cost."
+    cap = f"Hours per year, all HVAC sections, at ${RATE:.0f} an hour. Dark bars: hours freed that UTI values at the cost of an instructor hour (the tool saves {h10(SAVED_H)} hours at {pct(RED)} and {h10(SAVED_H_HIGH)} at {pct(RED_H)}). Outlined bar: hours needed to cover the licence cost."
     return f'<figure class="bars">{"".join(out)}<figcaption>{e(cap)}</figcaption></figure>'
 
 
 def build():
     p1 = ("UTI's HVAC program grew from about 29 to about 98 sections per course start in twelve months. The share of instructors teaching two or "
           "three sections went from 14% to 42%, and they grade more than their shift schedule leaves room for.")
-    p2 = ("Expected and high count every saved hour in these shifts as money. That holds only if the freed time lowers payroll (less overtime, shorter shifts, fewer hires). All cases are estimates until the pilot measures them.")
+    p2 = ("Expected and high value every hour freed in these shifts at what an instructor hour costs, because UTI would otherwise pay for it, in overtime "
+          "or extra hires. Low counts only grading outside scheduled hours. All cases are estimates until the pilot measures them.")
 
     CASES = (LOW, EXP, HIGH)
     n3 = lambda *xs: "".join(f"<td class='n'>{x}</td>" for x in xs)
     glance = (
-        "<tr><td>What counts as money</td><td>Only grading outside scheduled hours</td><td>All saved time in these shifts</td><td>All saved time in these shifts</td></tr>"
+        "<tr><td>Hours valued</td><td>Grading outside scheduled hours</td><td>All hours freed in these shifts</td><td>All hours freed in these shifts</td></tr>"
         "<tr><td>Time the tool takes off</td>" + n3(*(pct(x) for x in (RED, RED, RED_H))) + "</tr>"
-        "<tr><td>Payroll savings a year</td>" + n3(*(usd100(c["sav"]) for c in CASES)) + "</tr>"
+        "<tr><td>Value a year</td>" + n3(*(usd100(c["sav"]) for c in CASES)) + "</tr>"
         "<tr><td>Licence cost a year</td>" + n3(*(usd100(COST) for c in CASES)) + "</tr>"
         "<tr class='total'><td>Net result a year</td>" + n3(*(net_text(c["sav"], COST) for c in CASES)) + "</tr>"
         "<tr><td>Back for every $1 spent</td>" + n3(*(f"${c['ratio']:.2f}" for c in CASES)) + "</tr>"
@@ -170,12 +171,12 @@ def build():
         f"<td>{mins(two_low)} minutes at {pct(RED)} saved, {mins(two_high)} at {pct(RED_H)}. Both fit inside the {WIN * 60:.0f} scheduled minutes.</td></tr>"
     )
 
-    step4 = "<strong>Low:</strong> only grading outside scheduled hours. <strong>Expected and high:</strong> all saved time in these shifts."
+    step4 = "<strong>Low:</strong> only grading outside scheduled hours. <strong>Expected and high:</strong> all hours freed in these shifts."
     calc = (
         f"<tr><td>1</td><td>Grading today</td><td>{S:.0f} sections × {G:g} h × {D:.0f} days</td><td class='n' colspan='3'>{h10(TOTAL_H)} h, all cases</td><td>UTI Operations, 10 Nov (30 to 60 min, midpoint)</td></tr>"
         f"<tr><td>2</td><td>Tool saves</td><td>{pct(RED)} of step 1 (high case: {pct(RED_H)})</td>{n3(h10(SAVED_H) + ' h', h10(SAVED_H) + ' h', h10(SAVED_H_HIGH) + ' h')}<td>Eduface assumption, tested in the pilot</td></tr>"
         f"<tr><td>3</td><td>Multi-section shifts</td><td>{pct(SHARE)} of sections (Oct 2026)</td>{n3(h10(SAVED_MULTI) + ' h', h10(SAVED_MULTI) + ' h', h10(SAVED_MULTI_HIGH) + ' h')}<td>HVAC data export. Single-section shifts are paid 8 hours either way.</td></tr>"
-        f"<tr><td>4</td><td>Payroll savings</td><td>{step4}</td>{n3(h10(LOW['cash_h']) + ' h', h10(EXP['cash_h']) + ' h', h10(HIGH['cash_h']) + ' h')}<td>UTI shift schedules, 13 Nov</td></tr>"
+        f"<tr><td>4</td><td>Hours valued</td><td>{step4}</td>{n3(h10(LOW['cash_h']) + ' h', h10(EXP['cash_h']) + ' h', h10(HIGH['cash_h']) + ' h')}<td>UTI shift schedules, 13 Nov</td></tr>"
         f"<tr><td>5</td><td>Value</td><td>Hours × ${RATE:.0f}</td>{n3(usd100(LOW['sav']), usd100(EXP['sav']), usd100(HIGH['sav']))}<td>UTI Operations, 10 Nov</td></tr>"
         f"<tr><td>6</td><td>Licence cost</td><td>{IN_CLASS:,.0f} students × ${PRICE:.2f} × 12 months</td><td class='n' colspan='3'>{usd100(COST)}, all cases</td><td>Eduface price per student per month</td></tr>"
         f"<tr class='total'><td></td><td>Net per year</td><td>Step 5 minus step 6</td>{n3(*(net_text(c['sav'], COST) for c in CASES))}<td></td></tr>"
@@ -190,7 +191,7 @@ def build():
         ("Grading 30 minutes per section (base 45)", three(g=0.5), COST),
         ("Grading 60 minutes per section (base 45)", three(g=1.0), COST),
         (f"Tool removes 30% (base {pct(RED)}, high {pct(RED_H)})", three(r=0.3, rh=0.3), COST),
-        ("Half of step 4 hours reduce payroll", (None, EXP["sav"] / 2, HIGH["sav"] / 2), COST),
+        ("Only half of step 4 hours realised", (None, EXP["sav"] / 2, HIGH["sav"] / 2), COST),
         (f"Time and a half (${RATE * 1.5:.0f} an hour)", three(m=1.5), COST),
     ]
     def cell(v, cost):
@@ -230,18 +231,18 @@ def build():
 
 <h2>Cost justification</h2>
 <p>{e(p2)}</p>
-<table class="keep"><caption>How the savings are calculated</caption>{cg((5, 14, 27, 11, 11, 11, 21))}
+<table class="keep"><caption>How the value is calculated</caption>{cg((5, 14, 27, 11, 11, 11, 21))}
 <thead><tr><th>Step</th><th>What</th><th>Calculation</th><th class="n">Low</th><th class="n">Expected</th><th class="n">High</th><th>Basis</th></tr></thead><tbody>{calc}</tbody></table>
 
 <h3>Not counted in the numbers</h3>
 <ul>
-<li><strong>Single-section shifts.</strong> About {h10(SAVED_SINGLE)} hours a year ({fte:.1f} full-time equivalents) go to preparation and tutoring. They are paid 8 hours either way, so no payroll saving.</li>
+<li><strong>Single-section shifts.</strong> About {h10(SAVED_SINGLE)} hours a year ({fte:.1f} full-time equivalents) go to preparation and tutoring. They are paid 8 hours either way, so not counted.</li>
 <li><strong>Turnover.</strong> 37% of HVAC instructors left last year (25 of 66); UTI Operations suggests 20% for planning, about {leavers:.0f} leavers at $10,000 to $15,000 each. No evidence yet that grading load is the cause, so none is counted.</li>
 </ul>
 
 <table class="keep"><caption>What moves the result</caption>{cg((29, 11.8, 11.8, 11.8, 11.8, 11.8, 12))}
-<thead><tr><th>If this changes</th><th class="n">Low: savings</th><th class="n">Low: net</th><th class="n">Expected: savings</th><th class="n">Expected: net</th><th class="n">High: savings</th><th class="n">High: net</th></tr></thead><tbody>{sens_rows}</tbody></table>
-<p class="src">Savings are payroll savings a year; net is after the licence cost. The half-of-the-hours row does not apply to the low case, which counts only grading outside scheduled hours.</p>
+<thead><tr><th>If this changes</th><th class="n">Low: value</th><th class="n">Low: net</th><th class="n">Expected: value</th><th class="n">Expected: net</th><th class="n">High: value</th><th class="n">High: net</th></tr></thead><tbody>{sens_rows}</tbody></table>
+<p class="src">Value and net are per year, net after the licence cost. The half-realised row does not apply to the low case.</p>
 
 <h2>Validation</h2>
 <table class="keep"><caption>What the pilot measures</caption>{cg((30, 44, 26))}
