@@ -49,7 +49,7 @@ De volledige tabel met betekenis en drager staat in `Platform/onderwijs-vakterme
 Poort 0b: minstens één opleiding **langer dan een jaar** (aangescherpt 18-08-2026, was 2 weken). Meet het langste programma. Losse lesdagen verspreid over meer dan een jaar tellen mee; een modulaire route telt als de deelnemer aaneengesloten naar één diploma werkt. Twijfel net onder het jaar = kandidaat, niet afgevallen. Eenheid: maanden, EC/SBU als beschikbaar.
 
 ## Prijsmodel
-EUR. Toolfee 7.500 per opleiding plus infrastructuurstaffel op studentplaatsen per opleiding: A tot 500 = 10.000, B tot 1.500 = 15.000, C tot 3.000 = 21.500, D tot 6.000 = 33.500, E daarboven = 51.500. Drempel 10.000 jaarwaarde, en onze fee hoogstens 10% van de programma-omzet. Bron: `Archive/prijsmodel-nl-opleiding-26-27.md`. Harde waarden in `profiel.json`.
+EUR. Toolfee 7.500 per opleiding plus infrastructuurstaffel op studentplaatsen per opleiding: A tot 500 = 10.000, B tot 1.500 = 15.000, C tot 3.000 = 21.500, D tot 6.000 = 33.500, E daarboven = 51.500. Drempel sinds 24-11-2026: minimaal 500 lerenden per jaar, dus 18.000 jaarwaarde bij 3 per student per maand (was 10.000). Onze fee hoogstens 10% van de programma-omzet. Bron: `Archive/prijsmodel-nl-opleiding-26-27.md`. Harde waarden in `profiel.json`.
 
 ## Titelrangorde
 Onderwijstak boven bedrijfsvoeringstak. College van bestuur en bestuurder bovenaan, dan algemeen directeur en eigenaar, dan directeur onderwijs/opleidingen/kwaliteit, dan hoofd onderwijs, lector/decaan, manager onderwijs, opleidingsmanager, teamleider, adviseur, coördinator, docent. Nooit de examencommissie als ingang; opleidingsmanager alleen als er niets hogers is, dan een directeur als tweede kandidaat erbij. Regexes in `profiel.json`.

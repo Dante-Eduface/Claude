@@ -41,8 +41,8 @@ Regels bij het meten:
 - Twijfel of het net onder het jaar zit → **kandidaat**, niet afgevallen. Leg de duur met citaat vast en laat Dante beslissen.
 - **Deze aanbieders mogen niet in de outreach-workflow komen, ook niet met een contactpersoon erbij.**
 
-**Poort 0d (omvang, zachte poort): is er een deal van 10.000 euro?**
-_Aangescherpt 19-08-2026. Was sorterend, is nu een zachte poort._
+**Poort 0d (omvang, zachte poort): zijn er minimaal 500 lerenden per jaar?**
+_Aangescherpt door Dante op 24-11-2026: minimaal 500 studenten. Bij 3 euro per student per maand is dat een jaarwaarde van 18.000 euro, en dat getal staat als `drempel_jaarwaarde` in `profiel.json`. Daarvoor: 10.000 euro (19-08-2026). De staffel en de rekenvoorbeelden hieronder zijn van het oude prijsmodel en gelden niet meer voor de drempel._
 
 Onder de drempel gaat een opleider naar `icp_status=te_klein`, niet naar `afgevallen`. Hij blijft op de lijst en valt buiten de outreach, tot Dante de lat verlaagt met `pipeline.py omvang --drempel X --herzien` of `--aandeel X --herzien`.
 

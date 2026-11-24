@@ -28,10 +28,10 @@ csv.field_size_limit(10 * 1024 * 1024)
 # ---------------------------------------------------------------- paden
 
 # Twee geldige lay-outs voor dezelfde pipeline.py: genest onder GTM/ICP/shift/
-# (de Claud AE-hoofdmap) of plat op de repo-root (de losgetrokken shift-agent-
+# (de Claude-hoofdmap, sinds de herindeling; daarvoor projects/shift/) of plat op de repo-root (de losgetrokken shift-agent-
 # repo voor Jeroen, sinds 16-09-2026). Kies wat er echt staat, gok niet vast.
 REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-_GENEST = os.path.join(REPO, "projects", "shift")
+_GENEST = os.path.join(REPO, "GTM", "ICP", "shift")
 SHIFT = _GENEST if os.path.isdir(os.path.join(_GENEST, "master")) else REPO
 MASTER = os.path.join(SHIFT, "master")
 MARKETS = os.path.join(SHIFT, "markets")

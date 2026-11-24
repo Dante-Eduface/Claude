@@ -34,7 +34,8 @@
       "E"
     ]
   ],
-  "drempel_jaarwaarde": 10000,
+  "prijs_per_student_maand": 3,
+  "drempel_jaarwaarde": 18000,
   "max_fee_aandeel": 0.1,
   "titel_rang": [
     [
