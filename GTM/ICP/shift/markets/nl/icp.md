@@ -44,6 +44,10 @@ Regels bij het meten:
 **Poort 0d (omvang, zachte poort): zijn er minimaal 500 lerenden per jaar?**
 _Aangescherpt door Dante op 24-11-2026: minimaal 500 studenten. Bij 3 euro per student per maand is dat een jaarwaarde van 18.000 euro, en dat getal staat als `drempel_jaarwaarde` in `profiel.json`. Daarvoor: 10.000 euro (19-08-2026). De staffel en de rekenvoorbeelden hieronder zijn van het oude prijsmodel en gelden niet meer voor de drempel._
 
+**Uitzondering 300 tot 500 (Dante, 24-11-2026):** een serieuze instelling met serieuze opleidingen mag ook met 300 tot 500 lerenden door. Serieus is zorg, management en real estate. Heel specifieke opleidingen tellen niet mee, ook niet boven de 500. Onder de 300 nooit. Voorbeeld van wel: AOG School of Management. Voorbeeld van niet: Insurance Business Academy (15 lerenden). Het script toetst alleen de 500 (`drempel_jaarwaarde` 18000); de uitzondering beoordeel je zelf en leg je voor bij twijfel.
+
+**Niet koud benaderen:** wat al in Close staat (ook gebeld of gediskwalificeerd) gaat op `geblokkeerd`, publiek bekostigd op `afgevallen`.
+
 Onder de drempel gaat een opleider naar `icp_status=te_klein`, niet naar `afgevallen`. Hij blijft op de lijst en valt buiten de outreach, tot Dante de lat verlaagt met `pipeline.py omvang --drempel X --herzien` of `--aandeel X --herzien`.
 
 Je rekent dit niet zelf uit. Vul de velden en vraag `pipeline.py omvang --toets org_x` om het oordeel: `groot_genoeg`, `te_klein` of `onbekend`.
