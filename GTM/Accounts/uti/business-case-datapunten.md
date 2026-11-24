@@ -60,7 +60,17 @@ Jeroen vroeg op 12 nov om een overurenlog, het aantal aangenomen instructeurs en
 
 Bas: financieel voordeel is er alleen bij 2 of 3 secties, "30% of the instructors". De overige 70% krijgt "improved efficiency", geen kostenbesparing.
 
-Het dienstrooster (Skilled Trade Schedule) laat zien: 1 sectie is 06:00 tot 14:30 met 2,5 uur "lab grading, prep, TTEV". Bij 2 secties staat er in totaal ongeveer 40 tot 80 minuten voor "lab grading, prep, TTEV" en "attendance, grading" (de blokken in het rooster zijn onderling niet consistent genoteerd). Dat is minder dan de 60 tot 120 minuten die nakijken alleen al kost bij 2 x 30 tot 60 minuten. **Berekening/interpretatie:** dat wijst op overwerk of weggedrukte voorbereiding bij doubles, maar UTI zegt zelf dat de overurendata dat niet laat zien.
+**Het dienstrooster (`Skilled Trade Schedule ex. Calf.xlsx`), opnieuw doorgerekend uit de kloktijden.** Het bestand heeft typefouten (bijvoorbeeld "Out 23:30" bij een dienst die om 11:30 eindigt, lunch "3:00", een avonddienst die als "AM" is gelabeld). Het is een voorbeeldrooster, geen bewijs van werkelijke uren.
+
+| Dienst | Secties | Betaalde uren (zonder lunch) | Niet-les tijd (prep, nakijken, TTEV) | Per sectie |
+|---|---|---|---|---|
+| Single AM / MID / EVE | 1 | 8,0 | 3,0 / 2,8 / 2,7 uur | ~2,7 tot 3,0 uur |
+| Double AM/MID en MID/EVE | 2 | 11,5 | 1,3 uur | 0,67 uur |
+
+- Een single heeft ruim 2,5 uur slack. Bij 0,5 tot 1,0 uur nakijken blijft er ongeveer 1,7 tot 2,5 uur over voor voorbereiding en reparatie. Dat bevestigt Bas: daar valt geen kas te besparen.
+- Een double heeft 1,3 uur niet-les tijd voor twee secties samen. Bij 0,5 uur nakijken per sectie vult nakijken al 75% daarvan. Bij 1,0 uur per sectie past het niet meer (2,0 uur nodig, 1,3 beschikbaar). **Dan moet het buiten het rooster gebeuren, dus als niet-geroosterde tijd of overuren.**
+- **Berekening/interpretatie:** de bovenkant van Bas' range (60 minuten) is dus alleen mogelijk als er overuren of onbetaald werk zijn. De onderkant (30 minuten) past in het rooster. Het rooster bewijst niets, maar het maakt 30 tot 45 minuten per sectie waarschijnlijker dan 60.
+- **Onbekend:** wat TTEV betekent, hoe doubles worden betaald (11,5 uur betaalde dienst per dag, met of zonder overuurtoeslag), en of "ex. Calf." Californie betekent (Long Beach, Rancho Cucamonga, Sacramento).
 
 ---
 
@@ -82,6 +92,19 @@ Export van 1.219 records, 19 cursusstarts (okt 2025 tot okt 2026), 14 campussen,
 - HVAC groeide in een jaar van ~29 naar ~98 secties per start (3,4x), instructeurs van 22 naar 65 tot 67. Er worden meer secties dan instructeurs bijgezet, dus de mix schuift naar doubles en triples.
 - De 69/28/2,5 van Bas is het gemiddelde over 19 starts. **De huidige mix is gunstiger voor een kostenbesparing dan het gemiddelde.**
 - Weeg niet per instructeur maar per sectie: nakijktijd hangt aan de sectie. Over alle 19 starts geeft 48% van de secties werk aan een 2- of 3-sectie-instructeur. Nu is dat 60%.
+- **Bas' eigen headcount past bij de huidige mix, niet bij het gemiddelde.** 100 secties per dag bij 66 instructeurs is gemiddeld 1,5 sectie per instructeur. De huidige mix geeft 1,45 (dus ~69 instructeurs), het 19-starts gemiddelde 1,33 (dus ~75).
+
+**Grote verschillen per campus** (gemiddelde laatste 3 starts, aandeel van de secties bij instructeurs met 2 of 3 secties):
+
+| Hoog | Midden | Laag |
+|---|---|---|
+| Dallas/Fort Worth 95%, Austin 92%, Long Beach 89%*, Houston 86%, San Antonio 75% | Orlando 67%, Lisle 60%, Phoenix 53%*, Bloomfield 50%*, Rancho Cucamonga 50% | Mooresville 33%, Atlanta 25%, Sacramento 11%, Miramar 0% |
+
+*Bij Long Beach, Phoenix en Bloomfield staan 62 secties zonder instructeurnaam in de export (Long Beach 32, Phoenix 19, Bloomfield 11, afnemend van 4 per start in okt 2025 naar 0 in okt 2026). De mix daar is dus minder zeker. **Bloomfield is de pilotcampus.** Aantallen per campus zijn klein (2 tot 8 instructeurs per start).
+
+**Doubles zijn een rol die wisselt.** Van 61 instructeurs met minstens 6 cursusstarts deden er 9 nooit een double, 37 soms (minder dan de helft van de starts), 13 meestal en 2 bijna altijd. 72 van de 98 instructeurs hebben minstens een keer 2 of 3 secties gegeven. Het is dus geen vaste groep van 30%, maar een wisselende bezetting. Voor de pilot betekent dat: meet de nakijktijd per instructeur per cursusstart, niet per instructeur in het algemeen.
+
+**De hele HVAC-opleiding is nog niet gevuld.** In de laatste start hebben cursussen 011 tot 013 maar 5, 7 en 3 secties, cursus 003 en 005 elk 11. Het aantal secties groeit dus waarschijnlijk nog door naarmate cohorten verder komen (interpretatie).
 
 ---
 
@@ -165,27 +188,66 @@ Problemen, op volgorde van gewicht:
 5. **Gemiddelde over 66 instructeurs ("45 tot 90 min per instructeur")** verhult dat de mix scheef is en verschuift.
 6. **De sample negeert verloop en kwaliteit**, terwijl de sample zelf zegt dat dat de upside is.
 
-**Gevolg:** de sample overschat de harde besparing met een factor 2 tot 5. De terechte reactie van Bas ("the outcome is impressive, however...") was correct, en Jeroen paste dat bij de $139k al aan.
+**Gevolg:** de sample overschat de harde besparing met een factor 1,6 (als alle bespaarde tijd bij doubles en triples kas wordt) tot 3,1 (als de helft dat wordt). De terechte reactie van Bas ("the outcome is impressive, however...") was correct. De $139k van Jeroen op 16 nov is al een aangepaste versie.
 
 ---
 
-## 8. Scenario's (**berekening**, niet gevalideerd)
+## 8. De berekening (**berekening**, niet gevalideerd)
 
-Vaste invoer: 100 secties, 255 dagen, $38. Kolommen: aandeel van de secties waar echt geld te besparen valt, nakijktijd per sectie, en hoeveel de tool daarvan wegneemt.
+Het model staat in `GTM/Accounts/uti/business-case-berekening.xlsx` (formules, blauwe cellen zijn invoer, elk getal heeft bron en status). Tabbladen: Aannames, Berekening, Scenarios, Sample_vs_model, Rooster, Data_export. De uitkomsten zijn onafhankelijk nagerekend in Python en komen exact overeen.
 
-| Aandeel secties met kosteneffect | Nakijktijd | Uren/jaar | 30% minder | 50% minder | 84,5% minder |
-|---|---|---|---|---|---|
-| 31% (Bas letterlijk, per instructeur) | 30 min | 3.914 | $45k | $74k | $126k |
-| 31% | 60 min | 7.828 | $89k | $149k | $251k |
-| 48% (gemiddelde 12 mnd, per sectie) | 30 min | 6.127 | $70k | $116k | $197k |
-| 48% | 60 min | 12.254 | $140k | $233k | $393k |
-| 60% (huidige mix, per sectie) | 30 min | 7.650 | $87k | $145k | $246k |
-| 60% | 60 min | 15.300 | $174k | $291k | $491k |
+**Invoer die vaststaat (UTI schriftelijk):** 100 secties per dag, 255 dagen, $38 per uur, 22 studenten per sectie, huidige mix 58/39/3% (1 / 2 / 3 secties).
+**Kosten Eduface voor de hele HVAC:** 2.200 studenten x $3 x 12 = **$79.200 per jaar** (Jeroens $79.000).
 
-- **Kosten Eduface voor de hele HVAC:** ~$77.600.
-- **Break-even** (alleen kostenbesparing): bij 31% en 30 min moet de tool 52% van de nakijktijd wegnemen, bij 48% en 30 min 33%, bij 60% en 30 min 27%. Bij 60 min is het de helft daarvan.
-- **De $139k van Jeroen** valt binnen dit bereik, het dichtst bij "60% van de secties, 30 min, 50% minder" ($145k). Dat is mijn reconstructie. Zijn sheet heb ik niet gevonden.
-- **Verloop:** 20% van 66 is 13 vertrekkers per jaar, $132k tot $198k wervingskosten. Bij 37% (25 vertrekkers): $250k tot $375k. Om Eduface alleen via verloop terug te verdienen moeten 5 tot 8 instructeurs per jaar blijven door minder nakijken, ofwel 40 tot 60% van de vertrekkers. **Verloop kan de case aanvullen, niet dragen.**
+**Basiscase** (voorzichtig: 0,5 uur nakijken per sectie, tool neemt 50% weg, de helft van de bespaarde uren bij doubles en triples wordt kas, overuurmultiplier 1,0):
+
+| | |
+|---|---|
+| Bespaarde uren per jaar (tijd) | 6.375 |
+| Waarvan kas (alleen doubles en triples, de helft) | 1.906 uur |
+| **Kasbesparing** | **$72.400** |
+| Kosten Eduface | $79.200 |
+| Voordeel gedeeld door kosten | **0,91x** (netto -$6.800) |
+| Break-even reductie van nakijktijd | 55% |
+| Tijd die vrijkomt maar geen kas is (capaciteit, vooral bij singles) | 4.469 uur |
+
+**Kasbesparing per jaar, huidige mix** (kolom c: welk deel van de bespaarde uren bij doubles en triples kas wordt):
+
+| g (uur/sectie) | Reductie r | c = 50% | c = 100% |
+|---|---|---|---|
+| 0,5 | 30% | $43k | $87k |
+| 0,5 | 50% | **$72k** | **$145k** |
+| 0,5 | 84,5% | $122k | $245k |
+| 0,75 | 50% | $109k | $217k |
+| 1,0 | 30% | $87k | $174k |
+| 1,0 | 50% | $145k | $290k |
+| 1,0 | 84,5% | $245k | $490k |
+
+Met het gemiddelde van 19 starts in plaats van de huidige mix is alles ~20% lager. Kosten $79.200.
+
+**Break-even reductie** (alleen kas, huidige mix): g = 0,5: 55% (c 50%) of 27% (c 100%). g = 0,75: 37% / 18%. g = 1,0: 27% / 14%.
+
+**Strengere lens uit het rooster (alleen overloop boven het geroosterde venster wordt kas):**
+
+| g (uur/sectie) | r = 30% | r = 50% | r = 84,5% |
+|---|---|---|---|
+| 0,5 | $3k | $3k | $3k |
+| 0,75 | $57k | $62k | $62k |
+| 1,0 | $174k | $203k | $206k |
+
+Dit model neemt aan dat een double altijd een vaste dienst van 12 uur heeft. Past nakijken binnen het venster (g = 0,5), dan levert minder nakijken alleen voorbereidingstijd op, tenzij de dienst korter wordt. Pas boven het venster komt er kas vrij.
+
+**Verloop, los daarvan:** 20% van 66 is 13 vertrekkers, $132k tot $198k wervingskosten per jaar (37%: $250k tot $375k). Om Eduface alleen via verloop terug te verdienen moeten 5 tot 8 instructeurs per jaar blijven, 40 tot 60% van de vertrekkers. Verloop vult de case aan, draagt hem niet. Basis in het model: 0%, want er is geen bewijs dat werklast het vertrek veroorzaakt.
+
+**Pilot (Bloomfield, 125 studenten):** $375 per maand. Kasbesparing op jaarbasis ~$3.400 tegen $4.500 kosten (0,76x). De pilot is bedoeld om te meten, niet om terug te verdienen.
+
+**Hoe ik dit weeg:**
+- **Wat vaststaat:** secties, dagen, tarief, studenten per sectie, mix, kosten. Die geven geen onzekerheid.
+- **Wat de uitkomst bepaalt, en alleen in de pilot te meten is:** nakijktijd per sectie (g), reductie door de tool (r), welk deel kas wordt (c) en de overuurmultiplier (m). Samen geven die een range van ~$3k tot ~$490k. Ze zijn allemaal te meten met de controlegroep die Bas zelf voorstelt.
+- **Jeroens $139k** komt dicht bij mijn "g = 0,5, r = 50%, c = 100%" ($145k). Dat is mijn reconstructie: alle bespaarde tijd bij doubles en triples wordt kas. Het rooster maakt dat bij 30 minuten per sectie te gul.
+- **Vergelijking met de sample:** de $228k tot $456k van de sample wordt in drie stappen $72k tot $145k (tabblad Sample_vs_model): alleen secties bij doubles en triples (-40%), en alleen de helft daarvan als kas (-50%), met 255 in plaats van 240 dagen (+6%). Afwijking: -68%.
+- **Overuurmultiplier:** bij 1,5 worden alle kasbedragen 50% hoger. Dat is niet meegenomen omdat het onbekend is hoe doubles worden betaald.
+- **Eerlijke conclusie op dit moment:** bij voorzichtige aannames is de pure kasbesparing ongeveer break-even met de licentie. De business case zit in de bandbreedte, de groei (secties 3,4x in een jaar, kosten en voordeel groeien samen) en wat niet in geld te zetten is: bijles, kwaliteit, consistentie tussen campussen.
 - **Niet te kwantificeren, wel genoemd:** ruimte voor bijles (Nikki), voltooiingspercentage en omzet per student (Nikki, Robert), reiskosten van overgevlogen instructeurs, consistentie tussen campussen (Nikki, Jeroen), studentenfeedback die nu mondeling is.
 
 ---
@@ -210,7 +272,7 @@ Close heeft twee opportunities: **EUR 18.000 per maand** (pipeline Deal, 20%, = 
 
 1. **Jeroens rekenmodel achter de $139k.** Zonder dat kun je niet zien welke aannames erin zitten.
 2. **Baseline van nakijktijd** (controlegroep, 1 tot 2 weken). Dit is wat Bas zelf voorstelt.
-3. **Overuren per type dienst en het tarief.** Payroll-data zijn onbruikbaar volgens Bas. Alleen de controlegroep kan dit oplossen.
+3. **Hoe doubles worden betaald** (11,5 betaalde uren per dag: met of zonder overuurtoeslag, daggrens of weekgrens), het overuurtarief, en of het voorbeeldrooster voor alle campussen geldt. Payroll-data zijn onbruikbaar volgens Bas, dus alleen de controlegroep of een directe vraag aan Bas lost dit op. Dit bepaalt c en m.
 4. **Aantal aangenomen HVAC-instructeurs en of workload een vertrekreden is** (uit exitgesprekken). Aangevraagd op 13 nov.
 5. **Voltooiingsdata en omzet per student** (Robert: "a ton of data"). Nooit gevraagd, en het kan de grootste post zijn.
 6. **Welk deel van het nakijken is digitale labdocumenten** en welk deel praktijk. Bepaalt het bereik van de tool.
@@ -218,10 +280,13 @@ Close heeft twee opportunities: **EUR 18.000 per maand** (pipeline Deal, 20%, = 
 8. **Wat telt als "actieve student" voor de factuur** (3-maanden-regel, 12 maanden inactiviteit, staffels) en of de pilot betaald is.
 9. **Huidige productstatus** voor korte-antwoordvragen en quizzen (Menno/Samuel). De notitie van 29 sep noemt features die genoemd zijn maar nog niet gebouwd zijn.
 10. **De bron van "~1.500 instructeurs"** in het go-live plan. In geen enkele meeting gevonden. Alleen de 66 HVAC-instructeurs zijn schriftelijk bevestigd.
+11. **De 62 secties zonder instructeur** in de export (Long Beach, Phoenix, Bloomfield), en wat TTEV betekent in het rooster.
 
 ---
 
 ## 11. Bronnen, en wat ik niet kon lezen
+
+De twee Excel-bestanden die Dante op 24 nov heeft aangeleverd zijn identiek aan Bas' bijlagen van 13 nov (zelfde checksum) en zijn volledig gelezen en doorgerekend.
 
 Gelezen: Close-mails sinds 26 aug, transcripten 18 sep, 25 sep, 2 okt, 6 nov, Close-notes (MEDDPICC-review 28 sep, 5 okt, 29 sep), Gmail-bijlagen (`HVAC Data.xlsx`, `Skilled Trade Schedule ex. Calf.xlsx`, `Sample calculation (1).pdf`, `UTI - Eduface presentation.pptx`), Drive (go-live plannen, "Tjarko GTM updates"), Wispr-notities (22 sep, 2 okt, 5 okt, 2 nov, 9 nov, 13 nov, 16 nov, 18 nov), `Platform/product.md`.
 
