@@ -29,19 +29,21 @@
   .num { font-family: "League Spartan", sans-serif; font-weight: 700; line-height: .78; letter-spacing: -.02em; white-space: nowrap; }
   .lbl { font-family: "Inter", sans-serif; font-weight: 400; color: var(--ink-700); line-height: 1.1; white-space: nowrap; }
 
-  /* laag 2: twee kaarten. Radius = radius-2xl (20) x3, schaduw = schaduw-lg x3, navy-getint. */
+  /* laag 2: stat-kaarten, compact links boven (ruimte laten voor rest van de content).
+     Icoon-badge overlapt de bovenrand. Radius = radius-2xl (20) x2. */
   .card {
-    position: absolute; top: 300px; width: 1301px; height: 1520px;
-    background: #ffffff; border-radius: 60px; padding: 110px 96px;
-    display: flex; flex-direction: column; align-items: flex-start; justify-content: space-between;
-    box-shadow: 0 6px 18px rgba(0,35,51,.08), 0 36px 120px rgba(0,35,51,.16);
+    position: absolute; top: 424px; width: 806px; height: 640px;
+    background: #002333; color: #ffffff; border-radius: 40px; padding: 276px 48px 64px;
+    display: flex; flex-direction: column; align-items: flex-start;
+    box-shadow: 0 8px 24px rgba(0,35,51,.18), 0 44px 100px rgba(0,35,51,.30);
   }
-  .card .icon { filter: drop-shadow(0 20px 28px rgba(0,35,51,.16)); }
-  .pill {
-    display: inline-block; background: #00e075; color: #002333;
-    font: 400 78px/1 "Inter", sans-serif; padding: 30px 60px; border-radius: 9999px;
+  .badge {
+    position: absolute; top: -208px; left: 48px; width: 416px; height: 416px; border-radius: 50%;
+    background: #ffffff; display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 8px 20px rgba(0,35,51,.14), 0 28px 70px rgba(0,35,51,.28);
   }
-  .card .num { font-size: 400px; }
+  .card .num { font-size: 264px; color: #00e075; }
+  .card .lbl { font-size: 56px; color: #ffffff; margin-top: 36px; }
 </style>
 </head>
 <body>
@@ -53,7 +55,7 @@
 <script>
 const NAVY = '#002333', INK2 = '#cdd9de';
 const polar=(cx,cy,r,deg)=>{const a=(deg-90)*Math.PI/180;return [cx+r*Math.cos(a),cy+r*Math.sin(a)];};
-const svg=(inner,size=620)=>`<svg class="icon" width="${size}" height="${size}" viewBox="0 0 400 400">${inner}</svg>`;
+const svg=(inner,size=284)=>`<svg class="icon" width="${size}" height="${size}" viewBox="0 0 400 400">${inner}</svg>`;
 
 /* Icoon 1: roos met pijl. Geen groen in het icoon. */
 const target = svg(
@@ -79,18 +81,20 @@ const papers = svg(`
   <line x1="136" y1="168" x2="254" y2="168" stroke="${INK2}" stroke-width="12" stroke-linecap="round"/>
   <line x1="136" y1="206" x2="214" y2="206" stroke="${INK2}" stroke-width="12" stroke-linecap="round"/>
   <circle cx="285" cy="290" r="92" fill="#fff"/>
-  ${clockBase(285,290,72,20,.485)}`);
+  ${clockBase(285,290,72,20,.485)}
+  <line x1="352" y1="22" x2="352" y2="146" stroke="${NAVY}" stroke-width="24" stroke-linecap="round"/>
+  <polyline points="318,110 352,150 386,110" fill="none" stroke="${NAVY}" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>`);
 
 const card = (left, icon, num, label) => `
   <div class="card" style="left:${left}px">
-    ${icon}
+    <div class="badge">${icon}</div>
     <div class="num">${num}</div>
-    <div class="pill">${label}</div>
+    <div class="lbl">${label}</div>
   </div>`;
 
 document.getElementById('layer-content').innerHTML =
   card(128,  target, '96%',   'grading accuracy') +
-  card(1525, papers, '48.5%', 'less time spent grading');
+  card(994,  papers, '48.5%', 'less time spent grading');
 </script>
 </body>
 </html>
