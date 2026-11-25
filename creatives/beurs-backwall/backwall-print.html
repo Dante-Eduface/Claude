@@ -84,7 +84,7 @@
   .lms { grid-column: 1 / 3; grid-row: 3; justify-self: center; margin-top: 34px; display: flex; flex-direction: column; align-items: center; gap: 22px; }
   .lms .lab { font: 400 46px/1 Inter; color: var(--i5); white-space: nowrap; }
   .lms .row { display: flex; align-items: center; justify-content: center; gap: 110px; }
-  .lms img { height: 66px; width: auto; filter: grayscale(1) contrast(.9); opacity: .5; }
+  .lms img { height: 66px; width: auto; }   /* grijs en 50% doorzichtig zit in het plaatje zelf, geen filter */
 </style>
 </head>
 <body>
@@ -116,7 +116,7 @@ const right=`<div class="pr"><img class="lg" src="assets/logos/eduface-white-hir
   </div></div>`;
 const ai=`<div class="ai"><div><div class="n">250,000</div><div class="l">education-specific feedback examples</div></div><div class="sep"></div>
   <div class="lock"><img src="assets/logos/eduface-white-hires.png"><div class="aitxt">AI</div></div></div>`;
-const lms=`<div class="lms"><div class="lab">Integrated with your LMS</div><div class="row"><img src="assets/logos/lms-canvas.png"><img src="assets/logos/lms-moodle.png"><img src="assets/logos/lms-blackboard.png"><img src="assets/logos/lms-brightspace.png"></div></div>`;
+const lms=`<div class="lms"><div class="lab">Integrated with your LMS</div><div class="row"><img src="assets/logos/lms-gray-canvas.png"><img src="assets/logos/lms-gray-moodle.png"><img src="assets/logos/lms-gray-blackboard.png"><img src="assets/logos/lms-gray-brightspace.png"></div></div>`;
 document.getElementById('layer-content').innerHTML=`<div class="g">${left}${right}${ai}${lms}</div>`;
 </script>
 </body>

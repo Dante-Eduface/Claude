@@ -1,4 +1,4 @@
-"""Bouwt de gevel (fascia 3020 x 350 mm, met standnummer C11) als bewerkbare pptx op schaal 1:4 (755 x 87,5 mm).
+"""Bouwt de gevel/fascia (3020 x 350 mm, met standnummer C11, zonder groene stippen) als bewerkbare pptx met de bestandsnaam voor Full Vision (OEB 2026) op schaal 1:4 (755 x 87,5 mm).
 Posities komen uit measured_facade.json (gemeten uit facade-print.html). Eerst `node measure_facade.js`, dan dit script."""
 from pptx import Presentation
 from pptx.util import Emu, Pt
@@ -44,5 +44,6 @@ text((hx, hy, hw, hh), [dict(parts=[('Chatbots ', NAVY), ("don't", GD), (' grade
                         dict(parts=[('like instructors.', NAVY)], font=HEAD, size=100, lh=1.04, spc=-.02)], grow=60, name='Kop')
 text(M['l'], [dict(parts=[('Stand', GREY)], font=BODY, size=44, lh=1)], grow=40, name='Stand')
 text(M['n'], [dict(parts=[('C11', NAVY)], font=HEAD, size=150, lh=.95, spc=-.02)], grow=40, name='Standnummer C11')
-out = os.path.join(HERE, '..', 'gevel-bewerkbaar.pptx'); prs.save(out); print('opgeslagen', os.path.normpath(out))
+prs.core_properties.title = 'Eduface OEB 2026 C11 Fascia 25pct'; prs.core_properties.author = 'Eduface'
+out = os.path.join(HERE, '..', 'export-fullvision', 'levering', 'Eduface_OEB2026_C11_Fascia_25pct.pptx'); prs.save(out); print('opgeslagen', os.path.normpath(out))
 print('buiten canvas:', [s.name for s in slide.shapes if s.left < 0 or s.top < 0 or s.left + s.width > prs.slide_width or s.top + s.height > prs.slide_height] or 'geen')

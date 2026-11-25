@@ -442,7 +442,7 @@
   },
   {
    "k": "img",
-   "t": "lms-canvas.png",
+   "t": "lms-gray-canvas.png",
    "x0": 695.5,
    "y0": 2224.59375,
    "x1": 947.40625,
@@ -450,7 +450,7 @@
   },
   {
    "k": "img",
-   "t": "lms-moodle.png",
+   "t": "lms-gray-moodle.png",
    "x0": 1057.40625,
    "y0": 2224.59375,
    "x1": 1321.40625,
@@ -458,7 +458,7 @@
   },
   {
    "k": "img",
-   "t": "lms-blackboard.png",
+   "t": "lms-gray-blackboard.png",
    "x0": 1431.40625,
    "y0": 2224.59375,
    "x1": 1898.765625,
@@ -466,7 +466,7 @@
   },
   {
    "k": "img",
-   "t": "lms-brightspace.png",
+   "t": "lms-gray-brightspace.png",
    "x0": 2008.765625,
    "y0": 2224.59375,
    "x1": 2258.5,
