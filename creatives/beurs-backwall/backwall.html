@@ -5,9 +5,9 @@
 <title>Beurs backwall</title>
 <script src="assets/icons/icons.js"></script>
 <style>
-  /* Canvas: 1 px = 1 mm. Wand 2954 x 2520 mm. De kop staat op de gevel (facade.html).
-     Per rij een paar: links het probleem (donker), rechts de oplossing (wit, groen). Iconen: Lucide (ISC), niet zelf getekend.
-     Lettersysteem: L 88 Inter (quotes) / M 84 League Spartan (koppen) / S 46 Inter (bronnen, labels) / XL 150 Spartan (alleen het getal). */
+  /* Canvas: 1 px = 1 mm. Wand 2954 x 2520 mm. De kop van de gevel staat NIET op de wand. Elk vlak heeft zijn eigen kop.
+     Links licht = generieke AI tools (het probleem), rechts donker = Eduface (de oplossing). Per rij een paar, op één lijn.
+     Iconen: Lucide (ISC). Lettersysteem: L 88 Inter (quotes) / M 84 League Spartan (koppen) / S 46 Inter (bronnen, labels) / XL 150 Spartan (alleen het getal). */
   @font-face { font-family: "League Spartan"; font-weight: 700; src: url("../../Design/Merk/fonts/LeagueSpartan-Bold.ttf"); }
   @font-face { font-family: "Inter"; font-weight: 400; src: url("../../Design/Merk/fonts/Inter-Regular.ttf"); }
   :root { --w: 2954px; --h: 2520px; --navy: #002333; --gd: #007b54; --g: #00e075; --i7: #2c4a57; --i5: #5b7480; --i3: #a9bcc4; --i2: #cdd9de; --i50: #f3f7f8; --red: #b3261e; }
@@ -21,46 +21,50 @@
   }
   .logo { position: absolute; right: 128px; bottom: 128px; width: 420px; height: auto; }
 
-  .g { position: absolute; left: 128px; top: 128px; width: 2698px; display: grid; grid-template-columns: 1500px 96px 1102px; grid-template-rows: auto auto auto auto; }
-  .pl, .pr { grid-row: 1 / 5; border-radius: 56px; }
-  .pl { grid-column: 1; background: var(--navy); box-shadow: 0 14px 34px rgba(0,35,51,.28), 0 60px 130px rgba(0,35,51,.34); }
-  .pr { grid-column: 3; background: #fff; box-shadow: 0 10px 28px rgba(0,35,51,.10), 0 50px 110px rgba(0,35,51,.20); }
+  .g { position: absolute; left: 128px; top: 128px; width: 2698px; display: grid; grid-template-columns: 1500px 96px 1102px; grid-template-rows: auto auto auto auto auto; }
+  .pl, .pr { grid-row: 1 / 6; border-radius: 56px; }
+  .pl { grid-column: 1; background: rgba(255,255,255,.84); box-shadow: 0 10px 28px rgba(0,35,51,.08), 0 50px 110px rgba(0,35,51,.16); }
+  .pr { grid-column: 3; background: var(--navy); box-shadow: 0 14px 34px rgba(0,35,51,.28), 0 60px 130px rgba(0,35,51,.34); }
   .cl, .cr, .cm { z-index: 1; display: flex; align-items: center; }
-  .cl { grid-column: 1; padding: 34px 68px; gap: 44px; color: #fff; }
-  .cr { grid-column: 3; padding: 34px 68px; gap: 44px; }
+  .cl { grid-column: 1; padding: 30px 68px; gap: 44px; color: var(--navy); }
+  .cr { grid-column: 3; padding: 30px 68px; gap: 44px; color: #fff; }
   .cm { grid-column: 2; justify-content: center; }
-  .r1 { grid-row: 1; } .r2 { grid-row: 2; } .r3 { grid-row: 3; } .r4 { grid-row: 4; }
-  .r1.cl, .r1.cr { padding-top: 64px; }
+  .r0 { grid-row: 1; } .r1 { grid-row: 2; } .r2 { grid-row: 3; } .r3 { grid-row: 4; } .r4 { grid-row: 5; }
+  .r0.cl, .r0.cr { padding-top: 64px; padding-bottom: 20px; height: 180px; }
+  .r4.cl, .r4.cr { padding-bottom: 64px; }
+
+  /* koppen: bepalen meteen wat eronder staat */
+  .hd { font: 700 96px/1 "League Spartan"; letter-spacing: -.02em; color: var(--navy); }
+  .r0.cr img { height: 104px; width: auto; }
 
   .it { flex: none; width: 170px; height: 170px; border-radius: 44px; display: flex; align-items: center; justify-content: center; }
-  .it svg { width: 100px; height: 100px; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
-  .cl .it { background: rgba(255,255,255,.1); } .cl .it svg { stroke: #fff; }
-  .cr .it { background: var(--g); } .cr .it svg { stroke: var(--navy); }
+  .it svg { width: 100px; height: 100px; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; stroke: var(--navy); }
+  .cl .it { background: #e6edf0; }
+  .cr .it { background: var(--g); }
   .cm svg { width: 64px; height: 64px; fill: none; stroke: var(--i3); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
 
-  .qt { font: 400 88px/1.16 Inter; color: #fff; letter-spacing: -.005em; }
-  .qt .qm { font: 700 88px/1 "League Spartan"; color: rgba(255,255,255,.4); margin-right: 8px; }
-  .qt mark { background: rgba(255,255,255,.16); color: inherit; padding: 0 12px; margin: 0 -12px; border-radius: 14px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
-  .who { font: 400 46px/1.2 Inter; color: var(--i3); margin-top: 16px; }
-  .eh { font: 700 84px/1.12 "League Spartan"; letter-spacing: -.015em; color: var(--navy); }
-  .eh span { background: var(--g); padding: 0 14px; margin: 0 -14px; border-radius: 16px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+  .qt { font: 400 88px/1.16 Inter; color: var(--navy); letter-spacing: -.005em; }
+  .qt .qm { font: 700 88px/1 "League Spartan"; color: var(--i3); margin-right: 8px; }
+  .qt mark { background: rgba(0,35,51,.08); color: inherit; padding: 0 12px; margin: 0 -12px; border-radius: 14px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+  .who { font: 400 46px/1.2 Inter; color: var(--i5); margin-top: 16px; }
+  .eh { font: 700 84px/1.1 "League Spartan"; letter-spacing: -.015em; color: #fff; }
+  .eh span { color: var(--g); }
 
   /* onderste rij: links de tools, rechts Eduface AI */
-  .cl.r4 { justify-content: center; text-align: center; padding-bottom: 64px; }
-  .tools .lab { font: 700 84px/1 "League Spartan"; letter-spacing: -.01em; color: #fff; margin-bottom: 24px; }
+  .cl.r4 { justify-content: center; text-align: center; }
+  .tools .lab { font: 700 84px/1 "League Spartan"; letter-spacing: -.01em; color: var(--navy); margin-bottom: 24px; }
   .redbox { display: inline-flex; gap: 22px; background: #f8e3e0; border: 4px solid #eec3be; border-radius: 40px; padding: 28px 32px; }
   .tl { position: relative; width: 250px; height: 168px; border-radius: 28px; background: #fff; box-shadow: inset 0 0 0 4px #efc9c4;
         display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; font: 400 46px/1 Inter; color: var(--i7); }
   .tl img { width: 66px; height: 66px; opacity: .85; }
   .x { position: absolute; top: -18px; right: -18px; width: 54px; height: 54px; border-radius: 50%; background: var(--red); box-shadow: 0 4px 10px rgba(179,38,30,.35); }
-  .cr.r4 { padding: 34px 52px 52px; }
-  .own { width: 100%; border-radius: 40px; background: var(--g); padding: 40px 44px; text-align: center; box-shadow: 0 14px 34px rgba(0,224,117,.32); }
+  .cr.r4 { padding-left: 52px; padding-right: 52px; }
+  .own { width: 100%; border-radius: 40px; background: var(--g); padding: 40px 44px; text-align: center; box-shadow: 0 14px 34px rgba(0,224,117,.30); }
   .own .top { display: inline-flex; align-items: flex-end; justify-content: center; gap: 24px; background: #fff; border-radius: 34px; padding: 20px 40px; box-shadow: 0 8px 20px rgba(0,35,51,.12); }
   .own .top img { height: 84px; width: auto; }
   .own .top .ai { font: 700 84px/.74 "League Spartan"; color: var(--navy); letter-spacing: -.01em; }
   .own .n { font: 700 150px/1 "League Spartan"; letter-spacing: -.025em; margin-top: 20px; color: var(--navy); }
   .own .l { font: 400 46px/1.2 Inter; color: var(--navy); margin-top: 8px; }
-  .own .d { font: 400 46px/1.2 Inter; color: rgba(0,35,51,.8); margin-top: 22px; }
 
   .lms { position: absolute; left: 128px; top: 2278px; height: 114px; display: flex; align-items: center; gap: 96px; }
   .lms img { height: 66px; width: auto; filter: grayscale(1) contrast(.9); opacity: .5; }
@@ -85,6 +89,7 @@ const A=[{ic:'graduation-cap',h:'Trained on how <span>instructors grade.</span>'
          {ic:'messages-square',h:'Feedback <span>per student.</span>'},
          {ic:'copy-check',h:'Set up <span>once.</span>'}];
 let h='<div class="pl"></div><div class="pr"></div>';
+h+=`<div class="cl r0"><div class="hd">Generic AI tools</div></div><div class="cr r0"><img src="assets/logos/eduface-white.png"></div>`;
 Q.forEach((q,i)=>{
   h+=`<div class="cl r${i+1}"><div class="it">${ic(q.ic)}</div><div><div class="qt"><span class="qm">“</span>${q.t}</div><div class="who">${q.w}</div></div></div>`;
   h+=`<div class="cm r${i+1}">${ic('arrow-right')}</div>`;
@@ -94,8 +99,7 @@ const x=`<div class="x"><svg width="54" height="54" viewBox="0 0 54 54"><path d=
 const tool=(img,name)=>`<div class="tl"><img src="${L(img)}">${name}${x}</div>`;
 h+=`<div class="cl r4"><div class="tools"><div class="lab">Not built for grading.</div><div class="redbox">${tool('openai','ChatGPT')}${tool('googlegemini','Gemini')}${tool('claude','Claude')}</div></div></div>`;
 h+=`<div class="cr r4"><div class="own"><div class="top"><img src="../../Design/Merk/logos/logo_navy.png"><div class="ai">AI</div></div>
-  <div class="n">250,000</div><div class="l">education-specific feedback examples</div>
-  <div class="d">Developed with the help of Leiden University and Radboud University.</div></div></div>`;
+  <div class="n">250,000</div><div class="l">education-specific feedback examples</div></div></div>`;
 const lms=`<div class="lms"><div class="lab">Integrated with your LMS</div><img src="assets/logos/lms-canvas.png"><img src="assets/logos/lms-moodle.png"><img src="assets/logos/lms-blackboard.png"><img src="assets/logos/lms-brightspace.png"></div>`;
 document.getElementById('layer-content').innerHTML=`<div class="g">${h}</div>${lms}`;
 </script>
