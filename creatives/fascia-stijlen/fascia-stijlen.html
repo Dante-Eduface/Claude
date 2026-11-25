@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Fascia stijlen</title>
+<style>
+  @font-face{font-family:"League Spartan";font-weight:700;src:url("file:///home/user/Claude/Design/Merk/fonts/LeagueSpartan-Bold.ttf")}
+  @font-face{font-family:"InterLocal";font-weight:400 700;src:url("file:///home/user/Claude/Design/Merk/fonts/Inter-Regular.ttf")}
+  :root{
+    --navy:#002333; --green:#00e075; --green-deep:#007b54; --teal:#004c4c;
+    --ink-50:#f3f7f8; --ink-100:#e7eef0; --ink-200:#cdd9de;
+    --shadow-lg:0 12px 40px rgba(0,35,51,.10); --shadow-md:0 4px 16px rgba(0,35,51,.08);
+    --logo-navy:url("file:///home/user/Claude/Design/Merk/logos/logo_navy.png");
+    --logo-white:url("file:///home/user/Claude/creatives/fascia-stijlen/logo_white_crop.png");
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#eef0f4;font-family:"InterLocal",Inter,sans-serif;color:var(--navy);-webkit-font-smoothing:antialiased}
+  .sheet{display:flex;flex-direction:column;gap:0;width:1700px}
+  /* stage = ruimte voor de schaduw, transparant */
+  .stage{padding:40px 50px;width:1700px;display:flex;align-items:center}
+  .banner{position:relative;width:1600px;display:flex;align-items:center;overflow:hidden}
+  .logo-navy{height:46px;aspect-ratio:2596/703;background:var(--logo-navy) center/contain no-repeat;flex:none}
+  .logo-white{height:46px;aspect-ratio:394/110;background:var(--logo-white) center/contain no-repeat;flex:none}
+  h2{font-family:"League Spartan",sans-serif;font-weight:700;letter-spacing:-.015em;line-height:1.04;font-size:50px}
+  .dots{position:absolute;pointer-events:none;
+    background-image:radial-gradient(circle,var(--green) 1.6px,transparent 2.2px);background-size:13px 13px}
+
+  /* 1. Licht en rustig: de originele, maar logo klein en groen leesbaar */
+  #s1{height:200px;border-radius:12px;padding:0 72px;gap:44px;background:linear-gradient(90deg,#eef3f5 0%,#fff 45%,#fbfbf7 100%);box-shadow:var(--shadow-lg)}
+  #s1 .rule{width:2px;height:84px;background:var(--ink-200);flex:none}
+  #s1 h2 .hl{color:var(--green-deep)}
+  #s1 .dots{right:0;top:0;width:340px;height:100%;opacity:.55;
+    -webkit-mask-image:radial-gradient(ellipse 100% 120% at 100% 0%,#000 0%,transparent 62%);mask-image:radial-gradient(ellipse 100% 120% at 100% 0%,#000 0%,transparent 62%)}
+  #s1 .dots.b{left:0;right:auto;opacity:.4;
+    -webkit-mask-image:radial-gradient(ellipse 100% 120% at 0% 100%,#000 0%,transparent 55%);mask-image:radial-gradient(ellipse 100% 120% at 0% 100%,#000 0%,transparent 55%)}
+
+  /* 2. Navy balk */
+  #s2{height:200px;border-radius:12px;padding:0 72px 0 80px;gap:48px;background:var(--navy);box-shadow:0 12px 40px rgba(0,35,51,.28)}
+  #s2::before{content:"";position:absolute;left:0;top:0;bottom:0;width:14px;background:var(--green)}
+  #s2::after{content:"";position:absolute;right:-120px;top:-160px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(0,224,117,.20),transparent 65%)}
+  #s2 h2{color:#fff;position:relative;z-index:1}
+  #s2 h2 .hl{color:var(--green)}
+  #s2 .rule{width:2px;height:84px;background:rgba(255,255,255,.18);flex:none}
+
+  /* 3. Groen vlak, logo in witte tab */
+  #s3{height:200px;border-radius:12px;padding:0 24px;gap:56px;background:var(--green);box-shadow:var(--shadow-lg)}
+  #s3 .tab{height:152px;padding:0 44px;border-radius:8px;background:#fff;display:flex;align-items:center;flex:none}
+  #s3 .copy{display:flex;flex-direction:column;gap:6px}
+  #s3 .copy .a{font-family:"InterLocal";font-weight:600;font-size:30px;letter-spacing:-.005em}
+  #s3 .copy h2{font-size:64px;line-height:1}
+  #s3 .dots{right:0;top:0;width:380px;height:100%;opacity:.28;
+    background-image:radial-gradient(circle,var(--navy) 1.6px,transparent 2.2px);
+    -webkit-mask-image:linear-gradient(90deg,transparent,#000);mask-image:linear-gradient(90deg,transparent,#000)}
+
+  /* 4. Lower third met schuine rand */
+  #s4wrap{filter:drop-shadow(0 10px 24px rgba(0,35,51,.16))}
+  #s4{height:200px;width:1600px;border-radius:0;overflow:visible;background:transparent}
+  #s4 .left{position:relative;height:200px;width:420px;background:var(--navy);display:flex;align-items:center;justify-content:center;
+    clip-path:polygon(0 0,100% 0,calc(100% - 56px) 100%,0 100%);z-index:2;padding-right:28px}
+  #s4 .right{position:relative;height:200px;flex:1;margin-left:-56px;background:#fff;display:flex;align-items:center;padding:0 72px 0 112px;gap:0;
+    clip-path:polygon(56px 0,100% 0,100% 100%,0 100%);border-radius:0 12px 12px 0}
+  #s4 .right::after{content:"";position:absolute;left:0;right:0;bottom:0;height:10px;background:var(--green)}
+  #s4 h2 .hl{color:var(--green-deep)}
+  #s4 .logo-white{height:50px}
+
+  /* 5. Pil, een regel, logo als afsluiter */
+  #s5{height:128px;width:1600px;border-radius:9999px;padding:0 28px 0 72px;gap:48px;justify-content:space-between;
+    background:linear-gradient(100deg,var(--navy) 0%,#00303d 55%,var(--teal) 100%);box-shadow:0 12px 40px rgba(0,35,51,.28)}
+  #s5 h2{font-size:44px;color:#fff;white-space:nowrap;position:relative;z-index:1}
+  #s5 h2 .hl{color:var(--green)}
+  #s5 .badge{height:80px;padding:0 40px;border-radius:9999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);display:flex;align-items:center;position:relative;z-index:1}
+  #s5 .logo-white{height:38px}
+  #s5 .dots{right:0;top:0;height:100%;width:520px;opacity:.5;
+    -webkit-mask-image:radial-gradient(ellipse 90% 140% at 100% 100%,#000 0%,transparent 70%);mask-image:radial-gradient(ellipse 90% 140% at 100% 100%,#000 0%,transparent 70%)}
+</style></head>
+<body>
+<div class="sheet">
+
+  <div class="stage" id="st1"><div class="banner" id="s1">
+    <div class="dots"></div><div class="dots b"></div>
+    <div class="logo-navy"></div><div class="rule"></div>
+    <h2>Increase your grading capacity<br><span class="hl">without hiring new markers.</span></h2>
+  </div></div>
+
+  <div class="stage" id="st2"><div class="banner" id="s2">
+    <div class="logo-white"></div><div class="rule"></div>
+    <h2>Increase your grading capacity<br><span class="hl">without hiring new markers.</span></h2>
+  </div></div>
+
+  <div class="stage" id="st3"><div class="banner" id="s3">
+    <div class="dots"></div>
+    <div class="tab"><div class="logo-navy"></div></div>
+    <div class="copy"><div class="a">Increase your grading capacity</div><h2>without hiring new markers.</h2></div>
+  </div></div>
+
+  <div class="stage" id="st4"><div id="s4wrap"><div class="banner" id="s4">
+    <div class="left"><div class="logo-white"></div></div>
+    <div class="right"><h2>Increase your grading capacity<br><span class="hl">without hiring new markers.</span></h2></div>
+  </div></div></div>
+
+  <div class="stage" id="st5"><div class="banner" id="s5">
+    <div class="dots"></div>
+    <h2>Increase your grading capacity <span class="hl">without hiring new markers.</span></h2>
+    <div class="badge"><div class="logo-white"></div></div>
+  </div></div>
+
+</div>
+</body></html>
