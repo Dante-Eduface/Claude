@@ -26,12 +26,12 @@
   .lbl { font: 700 62px/1.05 "League Spartan"; letter-spacing: -.01em; margin-top: 38px; white-space: nowrap; }
 
   /* trap van kaarten */
-  .card { position: absolute; width: 880px; height: 380px; padding: 40px 44px; background: #fff; border-radius: 44px;
+  .card { position: absolute; width: 880px; padding: 40px 44px; background: #fff; border-radius: 44px;
     box-shadow: 0 8px 24px rgba(0,35,51,.10), 0 40px 90px rgba(0,35,51,.20); }
   .head { display: flex; align-items: center; gap: 28px; height: 88px; }
   .tile { flex: none; width: 88px; height: 88px; border-radius: 24px; background: var(--navy); display: flex; align-items: center; justify-content: center; }
-  .title { font: 700 56px/1 "League Spartan"; letter-spacing: -.01em; }
-  .row { display: flex; gap: 16px; margin-top: 24px; height: 180px; }
+  .title { font: 700 52px/1 "League Spartan"; letter-spacing: -.01em; white-space: nowrap; }
+  .row { display: flex; gap: 16px; margin-top: 24px; height: 150px; }
   .cell { position: relative; background: var(--i50); border-radius: 28px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px;
     font: 400 38px/1.05 "Inter"; color: var(--navy); text-align: center; }
   .cell small { font: 400 34px/1 "Inter"; color: var(--i5); }
@@ -40,10 +40,20 @@
   .ok { position: absolute; top: -14px; right: -14px; width: 54px; height: 54px; border-radius: 50%; background: var(--gd); box-shadow: 0 4px 10px rgba(0,123,84,.35); }
   .link { position: absolute; width: 56px; height: 56px; border-radius: 50%; background: var(--navy); display: flex; align-items: center; justify-content: center;
     box-shadow: 0 6px 16px rgba(0,35,51,.28); z-index: 5; }
-  .lms { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
-  .lms span { display: inline-flex; align-items: center; gap: 10px; height: 84px; padding: 0 18px; background: var(--i50); border-radius: 24px; font: 400 33px/1 "Inter"; white-space: nowrap; }
-  .lms span.soft { color: var(--i5); }
-  .lms img { width: 40px; height: 40px; }
+  .win { margin-top: 24px; background: var(--i50); border-radius: 28px; padding: 0 20px 18px; }
+  .bar { height: 56px; display: flex; align-items: center; gap: 10px; }
+  .bar i { width: 15px; height: 15px; border-radius: 50%; background: var(--i2); }
+  .tab { margin-left: auto; background: #fff; border-radius: 14px; padding: 7px 18px; display: flex; align-items: center; gap: 10px;
+    box-shadow: 0 4px 10px rgba(0,35,51,.10); font: 400 28px/1 "Inter"; color: var(--gd); }
+  .lms { display: flex; flex-wrap: wrap; gap: 12px; }
+  .lms span { display: inline-flex; align-items: center; gap: 10px; height: 60px; padding: 0 18px; background: #fff; border-radius: 20px; font: 400 32px/1 "Inter"; white-space: nowrap;
+    box-shadow: 0 3px 8px rgba(0,35,51,.07); }
+  .lms span.soft { color: var(--i5); background: transparent; box-shadow: none; }
+  .lms img { width: 36px; height: 36px; }
+  .big { position: relative; margin-top: 16px; height: 190px; border-radius: 32px; background: #fff; box-shadow: inset 0 0 0 6px var(--gd), 0 14px 34px rgba(0,123,84,.18);
+    display: flex; align-items: center; gap: 36px; padding: 0 44px; }
+  .big .t1 { font: 700 70px/1 "League Spartan"; letter-spacing: -.01em; color: var(--gd); }
+  .big .t2 { font: 400 36px/1.15 "Inter"; color: var(--i7); margin-top: 10px; }
 </style>
 </head>
 <body>
@@ -75,6 +85,7 @@ const ti = {
   submit: sv(`<rect x="90" y="50" width="220" height="300" rx="28" fill="none" stroke="${W}" stroke-width="30"/>${[130,190,250].map(v=>`<line x1="140" y1="${v}" x2="260" y2="${v}" stroke="${W}" stroke-width="24" stroke-linecap="round"/>`).join('')}`,56),
   ai: sv(`<circle cx="200" cy="200" r="150" fill="none" stroke="${W}" stroke-width="30"/><circle cx="200" cy="200" r="76" fill="none" stroke="${W}" stroke-width="30"/><circle cx="200" cy="200" r="24" fill="${W}"/>`,56),
   teacher: sv(`<circle cx="150" cy="110" r="62" fill="none" stroke="${W}" stroke-width="30"/><path d="M40,330 C40,230 260,230 260,330" fill="none" stroke="${W}" stroke-width="30" stroke-linecap="round"/><polyline points="250,230 310,290 380,190" fill="none" stroke="${W}" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>`,56),
+  student: sv(`<circle cx="200" cy="214" r="64" fill="none" stroke="${W}" stroke-width="30"/><path d="M52,380 C52,310 348,310 348,380" fill="none" stroke="${W}" stroke-width="30" stroke-linecap="round"/><polygon points="200,22 356,88 200,154 44,88" fill="${W}" stroke="#002333" stroke-width="16" stroke-linejoin="round"/>`,56),
   lms: sv(`<rect x="50" y="80" width="170" height="240" rx="26" fill="none" stroke="${W}" stroke-width="30"/><line x1="140" y1="200" x2="350" y2="200" stroke="${W}" stroke-width="34" stroke-linecap="round"/><polyline points="290,140 350,200 290,260" fill="none" stroke="${W}" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>`,56)
 };
 
@@ -85,13 +96,14 @@ const fileLogo=(t,c)=>`<svg width="104" height="124" viewBox="0 0 104 124"><path
 const xBadge=`<div class="x"><svg width="54" height="54" viewBox="0 0 54 54"><path d="M18,18 L36,36 M36,18 L18,36" stroke="#fff" stroke-width="6" stroke-linecap="round"/></svg></div>`;
 const okBadge=`<div class="ok"><svg width="54" height="54" viewBox="0 0 54 54"><path d="M16,28 L24,36 L38,19" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>`;
 function stars(cx,cy,r,n,sz,c){let o='';for(let i=0;i<n;i++){const [x,y]=polar(cx,cy,r,i*360/n);o+=`<polygon transform="translate(${x},${y}) scale(${sz})" points="0,-1 .29,-.4 .95,-.31 .47,.15 .59,.81 0,.5 -.59,.81 -.47,.15 -.95,-.31 -.29,-.4" fill="${c}"/>`;}return o;}
+const gdprBadge=`<svg width="108" height="108" viewBox="0 0 108 108"><circle cx="54" cy="54" r="52" fill="${N}"/>${stars(54,54,38,12,6.5,'#fff')}<rect x="38" y="52" width="32" height="26" rx="6" fill="#00e075"/><path d="M44,52 V45 a10,10 0 0 1 20,0 V52" fill="none" stroke="#00e075" stroke-width="6" stroke-linecap="round"/></svg>`;
 const aiActBadge=`<svg width="108" height="108" viewBox="0 0 108 108"><circle cx="54" cy="54" r="52" fill="${N}"/>${stars(54,54,38,12,6.5,'#fff')}<path d="M36,56 L48,68 L72,42" fill="none" stroke="#00e075" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 const humanIcon=`<svg width="108" height="108" viewBox="0 0 400 400"><circle cx="150" cy="110" r="62" fill="none" stroke="${N}" stroke-width="30"/><path d="M40,330 C40,230 260,230 260,330" fill="none" stroke="${N}" stroke-width="30" stroke-linecap="round"/><polyline points="250,230 310,290 380,190" fill="none" stroke="${N}" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 const L=(f)=>`assets/logos/${f}.svg`;
 
 /* ---- kaarten ---- */
-const X0=[128,728,1328,1928], Y0=[600,1000,1400,1800];
-const card=(i,icon,title,body)=>`<div class="card" style="left:${X0[i]}px;top:${Y0[i]}px"><div class="head"><div class="tile">${icon}</div><div class="title">${title}</div></div>${body}</div>`;
+const H=[342,510,342,398], GAP=20, X0=[128,728,1328,1928]; const Y0=[]; H.reduce((y,h,i)=>{Y0[i]=y;return y+h+GAP;},570);
+const card=(i,icon,title,body)=>`<div class="card" style="left:${X0[i]}px;top:${Y0[i]}px;height:${H[i]}px"><div class="head"><div class="tile">${icon}</div><div class="title">${title}</div></div>${body}</div>`;
 
 const c1=`<div class="row">
   <div class="cell" style="width:164px">${docIcon()}Paper</div>
@@ -99,20 +111,21 @@ const c1=`<div class="row">
   <div style="width:20px"></div>
   <div class="cell" style="width:150px">${fileLogo('PDF','#d93831')}</div>
   <div class="cell" style="width:150px">${fileLogo('DOCX','#2b579a')}</div></div>`;
-const llm=(img,name)=>`<div class="cell" style="width:188px"><img src="${L(img)}" width="76" height="76" style="opacity:.8"><small>${name}</small>${xBadge}</div>`;
-const c2=`<div class="row">${llm('openai','ChatGPT')}${llm('googlegemini','Gemini')}${llm('claude','Claude')}
-  <div class="cell" style="width:188px;background:#fff;box-shadow:inset 0 0 0 5px #007b54"><img src="../../Design/Merk/logos/logo_navy.png" width="130"><span style="font:700 34px/1 'League Spartan';color:#007b54">our own LLM</span>${okBadge}</div></div>`;
+const llm=(img,name)=>`<div class="cell" style="width:256px;height:112px;flex-direction:row;gap:14px;font-size:34px;color:#5b7480"><img src="${L(img)}" width="52" height="52" style="opacity:.8">${name}${xBadge}</div>`;
+const c2=`<div class="row" style="height:112px">${llm('openai','ChatGPT')}${llm('googlegemini','Gemini')}${llm('claude','Claude')}</div>
+  <div class="big"><img src="../../Design/Merk/logos/logo_navy.png" width="220"><div><div class="t1">Eduface LLM</div><div class="t2">our own model,<br>built for education</div></div>${okBadge}</div>`;
 const c3=`<div class="row">
-  <div class="cell" style="width:396px;flex-direction:row;gap:22px;padding:0 20px">${humanIcon}<span style="text-align:left;font-weight:400">Human<br>in the loop</span></div>
-  <div class="cell" style="width:396px;flex-direction:row;gap:22px;padding:0 20px">${aiActBadge}<span style="text-align:left">AI Act<br>compliant</span></div></div>`;
-const c4=`<div class="lms"><span><img src="${L('moodle')}">Moodle</span><span><img src="${L('canvas')}">Canvas</span><span>Blackboard</span><span>Brightspace</span><span>itslearning</span><span>Neo LMS</span><span class="soft">and more</span></div>`;
+  <div class="cell" style="width:396px;flex-direction:row;gap:22px;padding:0 20px">${aiActBadge}<span style="text-align:left">AI Act<br>compliant</span></div>
+  <div class="cell" style="width:396px;flex-direction:row;gap:22px;padding:0 20px">${gdprBadge}<span style="text-align:left">GDPR<br>compliant</span></div></div>`;
+const c4=`<div class="win"><div class="bar"><i></i><i></i><i></i><div class="tab"><img src="../../Design/Merk/logos/logo_navy.png" height="30" style="height:30px;width:auto">inside</div></div>
+  <div class="lms"><span><img src="${L('moodle')}">Moodle</span><span><img src="${L('canvas')}">Canvas</span><span>Blackboard</span><span>Brightspace</span><span>itslearning</span><span>Neo LMS</span><span class="soft">and more</span></div></div>`;
 
 const chev=`<svg width="30" height="30" viewBox="0 0 30 30"><polyline points="7,11 15,20 23,11" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 let h='';
 h+=`<div class="stat" style="left:128px">${target(270)}<div><div class="num">96%</div><div class="lbl">grading accuracy</div></div></div>`;
 h+=`<div class="stat" style="right:128px">${papers(270)}<div><div class="num">48.5%</div><div class="lbl">less time spent grading</div></div></div>`;
-h+=card(0,ti.submit,'Student submits',c1)+card(1,ti.ai,'AI proposes a grade',c2)+card(2,ti.teacher,'Teacher approves',c3)+card(3,ti.lms,'Grade in your LMS',c4);
-[0,1,2].forEach(i=>{h+=`<div class="link" style="left:${X0[i]+712}px;top:${Y0[i]+352}px">${chev}</div>`;});
+h+=card(0,ti.student,'Student',c1)+card(1,ti.ai,'AI proposes a grade',c2)+card(2,ti.teacher,'Human in the loop',c3)+card(3,ti.lms,'Integrated inside your LMS',c4);
+[0,1,2].forEach(i=>{h+=`<div class="link" style="left:${X0[i]+712}px;top:${Y0[i]+H[i]+GAP/2-28}px">${chev}</div>`;});
 document.getElementById('layer-content').innerHTML=h;
 </script>
 </body>
