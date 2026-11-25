@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Beurs backwall</title>
+<style>
+  /* Canvas: 1 px = 1 mm. Wand is 2954 x 2520 mm. Onderste derde (vanaf y 1700) blijft leeg: dat zit aan de grond en wordt niet gezien. */
+  @font-face { font-family: "League Spartan"; font-weight: 700; src: url("../../Design/Merk/fonts/LeagueSpartan-Bold.ttf"); }
+  @font-face { font-family: "Inter"; font-weight: 400; src: url("../../Design/Merk/fonts/Inter-Regular.ttf"); }
+  :root { --w: 2954px; --h: 2520px; --navy: #002333; --gd: #007b54; --g: #00e075; --i7: #2c4a57; --i5: #5b7480; --i2: #cdd9de; --i50: #f3f7f8; --red: #b3261e; }
+  * { margin: 0; box-sizing: border-box; }
+  html, body { width: var(--w); height: var(--h); }
+  .wall {
+    position: relative; width: var(--w); height: var(--h); overflow: hidden; color: var(--navy);
+    background:
+      radial-gradient(ellipse 80% 45% at 90% 52%, #f9f8f7 0%, rgba(249,248,247,0) 100%),
+      linear-gradient(180deg, #dce7ee 0%, #e2edf1 20%, #ecf3f5 40%, #f4f6f6 55%, #eff3f3 70%, #e4edf1 90%, #dde8ee 100%);
+  }
+  .abs { position: absolute; }
+  .logo { position: absolute; right: 128px; bottom: 128px; width: 420px; height: auto; }
+  .sh { filter: drop-shadow(0 12px 14px rgba(0,35,51,.16)) drop-shadow(0 36px 40px rgba(0,35,51,.22)); }
+
+  /* bento-blokken */
+  .blk { position: absolute; padding: 52px; background: #fff; border-radius: 56px;
+    box-shadow: 0 10px 28px rgba(0,35,51,.10), 0 50px 110px rgba(0,35,51,.20); }
+  .blk.navy { background: var(--navy); color: #fff; box-shadow: 0 14px 34px rgba(0,35,51,.28), 0 60px 130px rgba(0,35,51,.34); }
+  .head { display: flex; align-items: center; gap: 30px; height: 96px; }
+  .tile { flex: none; width: 96px; height: 96px; border-radius: 28px; background: var(--navy); display: flex; align-items: center; justify-content: center; }
+  .navy .tile { background: #fff; }
+  .title { font: 700 66px/1 "League Spartan"; letter-spacing: -.01em; white-space: nowrap; }
+
+  .num { font: 700 250px/.78 "League Spartan"; letter-spacing: -.02em; color: var(--gd); white-space: nowrap; }
+  .lbl { font: 700 60px/1.05 "League Spartan"; letter-spacing: -.01em; white-space: nowrap; }
+  .navy .num { color: var(--g); }
+
+  .cell { position: relative; background: var(--i50); border-radius: 30px; display: flex; align-items: center; justify-content: center; gap: 22px;
+    font: 400 40px/1.05 "Inter"; color: var(--navy); }
+  .x { position: absolute; top: -16px; right: -16px; width: 58px; height: 58px; border-radius: 50%; background: var(--red); box-shadow: 0 4px 10px rgba(179,38,30,.4); }
+  .ok { position: absolute; top: -18px; right: -18px; width: 66px; height: 66px; border-radius: 50%; background: var(--gd); box-shadow: 0 4px 12px rgba(0,123,84,.4); }
+
+  .win { background: var(--i50); border-radius: 34px; padding: 0 28px 28px; }
+  .bar { height: 72px; display: flex; align-items: center; gap: 12px; }
+  .bar i { width: 18px; height: 18px; border-radius: 50%; background: var(--i2); }
+  .tab { margin-left: auto; background: #fff; border-radius: 18px; padding: 9px 22px; display: flex; align-items: center; gap: 12px;
+    box-shadow: 0 4px 10px rgba(0,35,51,.10); font: 400 34px/1 "Inter"; color: var(--gd); }
+  .lms { display: flex; flex-wrap: wrap; gap: 20px; }
+  .lms span { display: inline-flex; align-items: center; gap: 14px; height: 128px; padding: 0 36px; background: #fff; border-radius: 30px; font: 400 56px/1 "Inter"; white-space: nowrap;
+    box-shadow: 0 4px 10px rgba(0,35,51,.08); }
+  .lms span.soft { color: var(--i5); background: transparent; box-shadow: none; }
+  .lms img { width: 68px; height: 68px; }
+  .link { position: absolute; width: 76px; height: 76px; border-radius: 50%; background: var(--navy); display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 8px 20px rgba(0,35,51,.30); z-index: 5; border: 6px solid #fff; }
+</style>
+</head>
+<body>
+  <div class="wall" id="wall">
+    <div id="layer-content"></div>
+    <img class="logo" src="../../Design/Merk/logos/logo_navy.png" alt="Eduface">
+  </div>
+
+<script>
+const N='#002333', I2='#cdd9de', W='#fff', G='#00e075', GD='#007b54';
+const polar=(cx,cy,r,d)=>{const a=(d-90)*Math.PI/180;return [cx+r*Math.cos(a),cy+r*Math.sin(a)];};
+const sv=(inner,s,cls='')=>`<svg class="${cls}" width="${s}" height="${s}" viewBox="0 0 400 400">${inner}</svg>`;
+
+/* ---- stat-iconen ---- */
+const target=(s,cls='sh')=>sv([172,116,60].map(r=>`<circle cx="200" cy="200" r="${r}" fill="${W}" stroke="${N}" stroke-width="22"/>`).join('')+
+ `<circle cx="200" cy="200" r="28" fill="${N}"/><line x1="206" y1="194" x2="338" y2="62" stroke="${N}" stroke-width="20" stroke-linecap="round"/>
+  <line x1="338" y1="62" x2="378" y2="62" stroke="${N}" stroke-width="18" stroke-linecap="round"/><line x1="338" y1="62" x2="338" y2="22" stroke="${N}" stroke-width="18" stroke-linecap="round"/>`,s,cls);
+function clk(cx,cy,r,sw,p){const [x1,y1]=polar(cx,cy,r,p*360),[x0,y0]=polar(cx,cy,r,0);
+ return `<circle cx="${cx}" cy="${cy}" r="${r}" fill="${W}" stroke="${I2}" stroke-width="${sw}"/><path d="M${x0},${y0} A${r},${r} 0 0 1 ${x1},${y1}" fill="none" stroke="${N}" stroke-width="${sw}"/>
+ <line x1="${cx}" y1="${cy}" x2="${cx}" y2="${cy-r*.62}" stroke="${N}" stroke-width="${sw*.55}" stroke-linecap="round"/><line x1="${cx}" y1="${cy}" x2="${cx+r*.34}" y2="${cy+r*.2}" stroke="${N}" stroke-width="${sw*.55}" stroke-linecap="round"/><circle cx="${cx}" cy="${cy}" r="${sw*.5}" fill="${N}"/>`;}
+const papers=(s)=>sv(`<rect x="40" y="46" width="190" height="250" rx="22" fill="#fff" stroke="${N}" stroke-width="16" transform="rotate(-7 135 171)"/>
+ <rect x="90" y="76" width="190" height="250" rx="22" fill="#fff" stroke="${N}" stroke-width="16"/>
+ <line x1="126" y1="136" x2="244" y2="136" stroke="${I2}" stroke-width="12" stroke-linecap="round"/><line x1="126" y1="174" x2="244" y2="174" stroke="${I2}" stroke-width="12" stroke-linecap="round"/><line x1="126" y1="212" x2="204" y2="212" stroke="${I2}" stroke-width="12" stroke-linecap="round"/>
+ <circle cx="275" cy="300" r="92" fill="#fff"/>${clk(275,300,72,20,.485)}
+ <line x1="350" y1="22" x2="350" y2="150" stroke="${N}" stroke-width="24" stroke-linecap="round"/><polyline points="316,114 350,154 384,114" fill="none" stroke="${N}" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>`,s,'sh');
+
+/* ---- icoon in tegel ---- */
+const ti = {
+  student: (c)=>sv(`<circle cx="200" cy="214" r="64" fill="none" stroke="${c}" stroke-width="30"/><path d="M52,380 C52,310 348,310 348,380" fill="none" stroke="${c}" stroke-width="30" stroke-linecap="round"/><polygon points="200,22 356,88 200,154 44,88" fill="${c}" stroke="${c==='#fff'?N:'#fff'}" stroke-width="16" stroke-linejoin="round"/>`,64),
+  ai: (c)=>sv(`<circle cx="200" cy="200" r="150" fill="none" stroke="${c}" stroke-width="30"/><circle cx="200" cy="200" r="76" fill="none" stroke="${c}" stroke-width="30"/><circle cx="200" cy="200" r="24" fill="${c}"/>`,64),
+  teacher: (c)=>sv(`<circle cx="150" cy="110" r="62" fill="none" stroke="${c}" stroke-width="30"/><path d="M40,330 C40,230 260,230 260,330" fill="none" stroke="${c}" stroke-width="30" stroke-linecap="round"/><polyline points="250,230 310,290 380,190" fill="none" stroke="${c}" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>`,64),
+  lms: (c)=>sv(`<rect x="50" y="80" width="170" height="240" rx="26" fill="none" stroke="${c}" stroke-width="30"/><line x1="140" y1="200" x2="350" y2="200" stroke="${c}" stroke-width="34" stroke-linecap="round"/><polyline points="290,140 350,200 290,260" fill="none" stroke="${c}" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>`,64)
+};
+
+/* ---- opdrachtbladen ---- */
+const paperSheet=`<svg width="360" height="450" viewBox="0 0 400 500"><rect x="8" y="8" width="384" height="484" rx="34" fill="#fff" stroke="${N}" stroke-width="12"/>
+  <rect x="52" y="60" width="210" height="22" rx="11" fill="${N}"/>
+  ${[120,160,200,240,280,320].map((y,i)=>`<rect x="52" y="${y}" width="${i%3==2?200:296}" height="14" rx="7" fill="${I2}"/>`).join('')}
+  <rect x="52" y="372" width="296" height="14" rx="7" fill="${I2}"/><rect x="52" y="412" width="150" height="14" rx="7" fill="${I2}"/></svg>`;
+const examSheet=`<svg width="360" height="450" viewBox="0 0 400 500"><rect x="8" y="8" width="384" height="484" rx="34" fill="#fff" stroke="${N}" stroke-width="12"/>
+  ${[0,1].map(i=>{const y=56+i*222;return `<circle cx="78" cy="${y+22}" r="26" fill="${N}"/><text x="78" y="${y+34}" text-anchor="middle" font-family="League Spartan" font-weight="700" font-size="34" fill="#fff">${i+1}</text>
+   <rect x="124" y="${y+6}" width="220" height="20" rx="10" fill="${N}"/><rect x="124" y="${y+38}" width="150" height="14" rx="7" fill="${N}" opacity=".35"/>
+   <rect x="52" y="${y+84}" width="296" height="14" rx="7" fill="${I2}"/><rect x="52" y="${y+118}" width="296" height="14" rx="7" fill="${I2}"/><rect x="52" y="${y+152}" width="190" height="14" rx="7" fill="${I2}"/>`;}).join('')}</svg>`;
+
+/* ---- losse visuals ---- */
+const xBadge=`<div class="x"><svg width="58" height="58" viewBox="0 0 54 54"><path d="M18,18 L36,36 M36,18 L18,36" stroke="#fff" stroke-width="6" stroke-linecap="round"/></svg></div>`;
+const okBadge=`<div class="ok"><svg width="66" height="66" viewBox="0 0 54 54"><path d="M16,28 L24,36 L38,19" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>`;
+function stars(cx,cy,r,n,sz,c){let o='';for(let i=0;i<n;i++){const [x,y]=polar(cx,cy,r,i*360/n);o+=`<polygon transform="translate(${x},${y}) scale(${sz})" points="0,-1 .29,-.4 .95,-.31 .47,.15 .59,.81 0,.5 -.59,.81 -.47,.15 -.95,-.31 -.29,-.4" fill="${c}"/>`;}return o;}
+const badge=(inner)=>`<svg width="100" height="100" viewBox="0 0 108 108"><circle cx="54" cy="54" r="52" fill="${N}"/>${stars(54,54,38,12,6.5,'#fff')}${inner}</svg>`;
+const aiActBadge=badge(`<path d="M36,56 L48,68 L72,42" fill="none" stroke="#00e075" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>`);
+const gdprBadge=badge(`<rect x="38" y="52" width="32" height="26" rx="6" fill="#00e075"/><path d="M44,52 V45 a10,10 0 0 1 20,0 V52" fill="none" stroke="#00e075" stroke-width="6" stroke-linecap="round"/>`);
+const L=(f)=>`assets/logos/${f}.svg`;
+const chevR=`<svg width="40" height="40" viewBox="0 0 30 30"><polyline points="11,7 20,15 11,23" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+
+/* ---- raster: 2698 breed vanaf x=128, rij 1 = 820, rij 2 = 680, tussenruimte 36 ---- */
+const GAPX=36, X=128, Y=140, LW=1100, RW=2698-LW-GAPX, R1=820, R2=680;
+const blk=(cls,x,y,w,h,inner)=>`<div class="blk ${cls}" style="left:${x}px;top:${y}px;width:${w}px;height:${h}px">${inner}</div>`;
+const head=(ic,t)=>`<div class="head"><div class="tile">${ic}</div><div class="title">${t}</div></div>`;
+
+/* A. Student submits */
+const A=blk('',X,Y,LW,R1,head(ti.student('#fff'),'Student submits')+
+ `<div class="abs" style="left:96px;top:208px;transform:rotate(-4deg)" ><div class="sh">${paperSheet}</div><div class="lbl" style="text-align:center;margin-top:30px">Paper</div></div>
+  <div class="abs" style="left:600px;top:226px;transform:rotate(3deg)"><div class="sh">${examSheet}</div><div class="lbl" style="text-align:center;margin-top:30px;white-space:nowrap;font-size:54px">Open-ended exam</div></div>`);
+
+/* B. AI proposes a grade (navy, groot) */
+const crossed=(img,name,i)=>`<div class="cell" style="position:absolute;left:${i*254}px;top:0;width:232px;height:120px;background:rgba(255,255,255,.08);color:rgba(255,255,255,.62);font-size:33px;gap:12px"><img src="${L(img)}" width="56" height="56" style="filter:brightness(0) invert(1);opacity:.55">${name}${xBadge}</div>`;
+const B=blk('navy',X+LW+GAPX,Y,RW,R1,head(ti.ai(N),'AI proposes a grade')+
+ `<div class="abs" style="left:52px;top:190px">${target(180,'')}
+    <div class="num" style="font-size:330px;margin-top:22px">96%</div><div class="lbl" style="margin-top:38px;font-size:64px">grading accuracy</div></div>
+  <div class="abs" style="left:770px;top:216px;width:740px;height:120px">${crossed('openai','ChatGPT',0)}${crossed('googlegemini','Gemini',1)}${crossed('claude','Claude',2)}</div>
+  <div class="abs" style="left:770px;top:376px;width:740px;height:340px;background:#fff;border-radius:40px;box-shadow:0 0 0 8px ${G},0 24px 60px rgba(0,224,117,.22);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px">
+    <img src="../../Design/Merk/logos/logo_navy.png" width="360"><div style="text-align:center"><div style="font:700 80px/1 'League Spartan';color:${GD}">our own LLM</div><div style="font:400 38px/1.2 Inter;color:#2c4a57;margin-top:12px">built for education</div></div>${okBadge}</div>`);
+
+/* C. Human in the loop (+ 48.5%) */
+const C=blk('',X,Y+R1+GAPX,LW,R2,head(ti.teacher(N).replace(/stroke="#002333"/g,`stroke="#fff"`),'Human in the loop')+
+ `<div class="abs" style="left:52px;top:196px;display:flex;align-items:center;gap:36px">${papers(200)}
+    <div><div class="num" style="font-size:220px">48.5%</div><div class="lbl" style="margin-top:28px;font-size:56px">less time spent grading</div></div></div>
+  <div class="abs" style="left:52px;top:512px;display:flex;gap:16px">
+    <div class="cell" style="width:488px;height:110px;justify-content:flex-start;padding:0 20px;gap:20px;font-size:42px">${aiActBadge.replace('width="100" height="100"','width="76" height="76"')}AI Act compliant</div>
+    <div class="cell" style="width:488px;height:110px;justify-content:flex-start;padding:0 20px;gap:20px;font-size:42px">${gdprBadge.replace('width="100" height="100"','width="76" height="76"')}GDPR compliant</div></div>`);
+
+/* D. Integrated inside your LMS */
+const D=blk('',X+LW+GAPX,Y+R1+GAPX,RW,R2,head(ti.lms('#fff'),'Integrated inside your LMS')+
+ `<div class="abs win" style="left:52px;top:176px;width:${RW-104}px"><div class="bar"><i></i><i></i><i></i><div class="tab"><img src="../../Design/Merk/logos/logo_navy.png" style="height:36px;width:auto">inside</div></div>
+   <div class="lms"><span><img src="${L('moodle')}">Moodle</span><span><img src="${L('canvas')}">Canvas</span><span>Blackboard</span><span>Brightspace</span><span>itslearning</span><span>Neo LMS</span><span class="soft">and more</span></div></div>`);
+
+const linkH=`<div class="link" style="left:${X+LW+GAPX/2-38}px;top:${Y+R1/2-38}px">${chevR}</div>`;
+const linkH2=`<div class="link" style="left:${X+LW+GAPX/2-38}px;top:${Y+R1+GAPX+R2/2-38}px">${chevR}</div>`;
+document.getElementById('layer-content').innerHTML = A+B+C+D+linkH+linkH2;
+</script>
+</body>
+</html>
