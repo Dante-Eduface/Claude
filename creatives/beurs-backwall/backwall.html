@@ -1,39 +1,116 @@
 <!doctype html>
-<html lang="nl">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <title>Beurs backwall</title>
 <style>
   /* Canvas: 1 px = 1 mm. Wand is 2954 x 2520 mm. */
-  :root { --w: 2954px; --h: 2520px; }
+  @font-face { font-family: "League Spartan"; font-weight: 700; src: url("../../Design/Merk/fonts/LeagueSpartan-Bold.ttf"); }
+  @font-face { font-family: "Inter"; font-weight: 400; src: url("../../Design/Merk/fonts/Inter-Regular.ttf"); }
+  :root {
+    --w: 2954px; --h: 2520px;
+    --navy: #002333; --green: #00e075; --ink-700: #2c4a57; --white: #ffffff;
+  }
   * { margin: 0; box-sizing: border-box; }
   html, body { width: var(--w); height: var(--h); }
   .wall {
-    position: relative;
-    width: var(--w);
-    height: var(--h);
-    overflow: hidden;
+    position: relative; width: var(--w); height: var(--h); overflow: hidden;
     background:
       radial-gradient(ellipse 80% 45% at 90% 52%, #f9f8f7 0%, rgba(249,248,247,0) 100%),
       linear-gradient(180deg, #dce7ee 0%, #e2edf1 20%, #ecf3f5 40%, #f4f6f6 55%, #eff3f3 70%, #e4edf1 90%, #dde8ee 100%);
+    color: var(--navy);
   }
-  /* Onderdelen komen hieronder, een laag per stap. */
+  .abs { position: absolute; }
 
-  /* laag 1: logo rechtsonder. 420 mm breed, 128 mm marge (8pt-familie). */
-  .logo {
-    position: absolute;
-    right: 128px;
-    bottom: 128px;
-    width: 420px;
-    height: auto;
-  }
+  /* laag 1: logo rechtsonder, 420 mm breed, 128 mm marge */
+  .logo { position: absolute; right: 128px; bottom: 128px; width: 420px; height: auto; }
+
+  /* laag 2: cijfers en objecten */
+  .num { font-family: "League Spartan", sans-serif; font-weight: 700; line-height: .78; letter-spacing: -.02em; white-space: nowrap; }
+  .lbl { font-family: "Inter", sans-serif; font-weight: 400; color: var(--ink-700); line-height: 1.1; white-space: nowrap; }
 </style>
 </head>
 <body>
   <div class="wall" id="wall">
-    <!-- laag 0: leeg canvas -->
-    <!-- laag 1: logo -->
+    <div id="layer-content"></div>
     <img class="logo" src="../../Design/Merk/logos/logo_navy.png" alt="Eduface">
   </div>
+
+<script>
+const NAVY = '#002333', GREEN = '#00e075', INK700 = '#2c4a57';
+
+/* ---- Klok: 'saved' deel is weggesneden, de rest is vol ------------------ */
+function clock(r, saved) {
+  const pad = 110, size = 2 * (r + pad), c = size / 2;
+  const pt = (deg, rad) => {
+    const a = (deg - 90) * Math.PI / 180;
+    return [c + rad * Math.cos(a), c + rad * Math.sin(a)];
+  };
+  const end = saved * 360;
+  const [x0, y0] = pt(0, r), [x1, y1] = pt(end, r);
+  const savedPath = `M${c},${c} L${x0},${y0} A${r},${r} 0 0 1 ${x1},${y1} Z`;
+  const restPath  = `M${c},${c} L${x1},${y1} A${r},${r} 0 1 1 ${x0},${y0} Z`;
+  let ticks = '';
+  for (let i = 0; i < 12; i++) {
+    const d = i * 30, long = i % 3 === 0;
+    const [a, b] = pt(d, r + 40), [e, f] = pt(d, r + (long ? 100 : 78));
+    ticks += `<line x1="${a}" y1="${b}" x2="${e}" y2="${f}" stroke="${NAVY}" stroke-width="${long ? 14 : 10}" stroke-linecap="round"/>`;
+  }
+  return `<svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">
+    <path d="${restPath}" fill="${NAVY}"/>
+    <path d="${savedPath}" fill="none" stroke="${NAVY}" stroke-width="12" stroke-dasharray="32 26" stroke-linejoin="round"/>
+    <circle cx="${c}" cy="${c}" r="${r}" fill="none" stroke="${NAVY}" stroke-width="10"/>
+    <line x1="${c}" y1="${c}" x2="${x1}" y2="${y1}" stroke="${GREEN}" stroke-width="26" stroke-linecap="round"/>
+    <circle cx="${c}" cy="${c}" r="34" fill="${NAVY}"/>
+    ${ticks}
+  </svg>`;
+}
+
+/* ---- Buisje: capsule, 96% gevuld, schaal rechts ------------------------- */
+function tube(w, h, fill, labels = true) {
+  const s = 20, gap = 20, i = s + gap;
+  const innerW = w - 2 * i, innerH = h - 2 * i;
+  const extra = labels ? 190 : 0;
+  const fillH = innerH * fill, top = i + innerH - fillH;
+  let marks = '';
+  if (labels) {
+    for (let p = 0; p <= 10; p++) {
+      const y = i + innerH * (1 - p / 10), major = p % 5 === 0;
+      marks += `<line x1="${w + 18}" y1="${y}" x2="${w + 18 + (major ? 64 : 36)}" y2="${y}" stroke="${NAVY}" stroke-width="${major ? 10 : 7}" stroke-linecap="round"/>`;
+      if (major) marks += `<text x="${w + 18 + 64 + 18}" y="${y + 19}" font-family="Inter" font-size="54" fill="${INK700}">${p * 10}</text>`;
+    }
+  }
+  return `<svg width="${w + extra}" height="${h}" viewBox="0 0 ${w + extra} ${h}">
+    <defs><clipPath id="cap${w}"><rect x="${i}" y="${i}" width="${innerW}" height="${innerH}" rx="${innerW / 2}"/></clipPath></defs>
+    <rect x="${s / 2}" y="${s / 2}" width="${w - s}" height="${h - s}" rx="${(w - s) / 2}" fill="rgba(255,255,255,.55)" stroke="${NAVY}" stroke-width="${s}"/>
+    <g clip-path="url(#cap${w})">
+      <rect x="${i}" y="${top}" width="${innerW}" height="${fillH}" fill="${NAVY}"/>
+      <rect x="${i}" y="${top}" width="${innerW}" height="22" fill="${GREEN}"/>
+    </g>
+    ${marks}
+  </svg>`;
+}
+
+const put = (html, style) => `<div class="abs" style="${style}">${html}</div>`;
+const layout = new URLSearchParams(location.search).get('v');
+let out = '';
+
+if (layout === '1') {
+  /* Indeling 1: gelijk gewicht. Buisje links, klok rechts, cijfers op een lijn. */
+  out += put(tube(300, 1450, .96), 'left:160px; top:250px;');
+  out += put('<div class="num" style="font-size:400px">96%</div><div class="lbl" style="font-size:92px; margin-top:56px">grading accuracy</div>', 'left:740px; top:1390px;');
+  out += put(clock(420, .485), 'left:1720px; top:250px;');
+  out += put('<div class="num" style="font-size:400px">48.5%</div><div class="lbl" style="font-size:92px; margin-top:56px">less time spent grading</div>', 'left:1780px; top:1390px;');
+}
+
+if (layout === '2') {
+  /* Indeling 2: een held. Reusachtige klok bloedt rechts af, buisje smal links. */
+  out += put(clock(820, .485), 'left:1590px; top:230px;');
+  out += put(tube(200, 1260, .96, false), 'left:160px; top:240px;');
+  out += put('<div class="num" style="font-size:440px">48.5%</div><div class="lbl" style="font-size:104px; margin-top:64px">less time spent grading</div>', 'left:520px; top:260px;');
+  out += put('<div class="num" style="font-size:230px">96%</div><div class="lbl" style="font-size:72px; margin-top:40px">grading accuracy</div>', 'left:520px; top:1140px;');
+}
+document.getElementById('layer-content').innerHTML = out;
+</script>
 </body>
 </html>
