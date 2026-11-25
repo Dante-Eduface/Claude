@@ -7,7 +7,7 @@
   /* Canvas: 1 px = 1 mm. Wand is 2954 x 2520 mm. */
   @font-face { font-family: "League Spartan"; font-weight: 700; src: url("../../Design/Merk/fonts/LeagueSpartan-Bold.ttf"); }
   @font-face { font-family: "Inter"; font-weight: 400; src: url("../../Design/Merk/fonts/Inter-Regular.ttf"); }
-  :root { --w: 2954px; --h: 2520px; --navy: #002333; --green-deep: #007b54; }
+  :root { --w: 2954px; --h: 2520px; --navy: #002333; --gd: #007b54; --i7: #2c4a57; --i2: #cdd9de; }
   * { margin: 0; box-sizing: border-box; }
   html, body { width: var(--w); height: var(--h); }
   .wall {
@@ -17,17 +17,25 @@
       linear-gradient(180deg, #dce7ee 0%, #e2edf1 20%, #ecf3f5 40%, #f4f6f6 55%, #eff3f3 70%, #e4edf1 90%, #dde8ee 100%);
   }
   .abs { position: absolute; }
-
-  /* laag 1: logo rechtsonder, 420 mm breed, 128 mm marge */
   .logo { position: absolute; right: 128px; bottom: 128px; width: 420px; height: auto; }
 
-  /* laag 2: twee losse stats. Geen kaart: groot icoon met schaduw, cijfer boven, label eronder.
-     Blok A: icoon links. Blok B: gespiegeld, icoon rechts. Zo lijken ze niet op elkaar. */
-  .stat { position: absolute; left: 128px; display: flex; align-items: center; gap: 64px; }
-  .stat.flip { flex-direction: row-reverse; justify-content: flex-end; }
-  .icon { flex: none; filter: drop-shadow(0 14px 16px rgba(0,35,51,.16)) drop-shadow(0 44px 48px rgba(0,35,51,.22)); }
-  .num { font: 700 280px/.78 "League Spartan", sans-serif; letter-spacing: -.02em; color: var(--green-deep); white-space: nowrap; }
-  .lbl { font: 700 60px/1.05 "League Spartan", sans-serif; letter-spacing: -.01em; color: var(--navy); margin-top: 44px; white-space: nowrap; }
+  /* laag 2: proces-rail. Vier stations, kolommen van 674 mm, marge 128. */
+  .sh { filter: drop-shadow(0 12px 14px rgba(0,35,51,.16)) drop-shadow(0 36px 40px rgba(0,35,51,.22)); }
+  .node { position: absolute; width: 184px; height: 184px; border-radius: 50%; background: #fff;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 8px 20px rgba(0,35,51,.14), 0 30px 70px rgba(0,35,51,.24); }
+  .col { position: absolute; width: 660px; text-align: center; }
+  .title { font: 700 62px/1.05 "League Spartan"; letter-spacing: -.01em; }
+  .big   { font: 700 64px/1.05 "League Spartan"; letter-spacing: -.01em; color: var(--gd); margin-top: 8px; }
+  .sub   { font: 400 46px/1.25 "Inter"; color: var(--i7); margin-top: 14px; }
+  .chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 18px; margin-top: 0; }
+  .chip  { display: inline-flex; align-items: center; gap: 14px; background: #fff; border-radius: 30px; padding: 14px 28px;
+    font: 400 42px/1 "Inter"; color: var(--navy);
+    box-shadow: 0 4px 10px rgba(0,35,51,.10), 0 18px 40px rgba(0,35,51,.16); }
+  .chip.soft { background: rgba(255,255,255,.55); color: var(--i7); box-shadow: 0 4px 10px rgba(0,35,51,.06), 0 14px 30px rgba(0,35,51,.10); }
+  .num { font: 700 200px/.78 "League Spartan"; letter-spacing: -.02em; color: var(--gd); white-space: nowrap; }
+  .lbl { font: 700 58px/1.05 "League Spartan"; letter-spacing: -.01em; margin-top: 36px; white-space: nowrap; }
+  .stat { position: absolute; display: flex; align-items: center; gap: 44px; }
 </style>
 </head>
 <body>
@@ -37,47 +45,60 @@
   </div>
 
 <script>
-const NAVY = '#002333', INK2 = '#cdd9de';
-const polar=(cx,cy,r,deg)=>{const a=(deg-90)*Math.PI/180;return [cx+r*Math.cos(a),cy+r*Math.sin(a)];};
-const svg=(inner,size=400)=>`<svg class="icon" width="${size}" height="${size}" viewBox="0 0 400 400">${inner}</svg>`;
+const N = '#002333', I2 = '#cdd9de', W = '#fff';
+const polar=(cx,cy,r,d)=>{const a=(d-90)*Math.PI/180;return [cx+r*Math.cos(a),cy+r*Math.sin(a)];};
+const sv=(inner,s,cls='')=>`<svg class="${cls}" width="${s}" height="${s}" viewBox="0 0 400 400">${inner}</svg>`;
 
-/* Accuraatheid: roos met pijl */
-const target = svg(
-  [172,116,60].map(r=>`<circle cx="200" cy="200" r="${r}" fill="#fff" stroke="${NAVY}" stroke-width="22"/>`).join('') +
-  `<circle cx="200" cy="200" r="28" fill="${NAVY}"/>
-   <line x1="206" y1="194" x2="338" y2="62" stroke="${NAVY}" stroke-width="20" stroke-linecap="round"/>
-   <line x1="338" y1="62" x2="378" y2="62" stroke="${NAVY}" stroke-width="18" stroke-linecap="round"/>
-   <line x1="338" y1="62" x2="338" y2="22" stroke="${NAVY}" stroke-width="18" stroke-linecap="round"/>`);
+/* ---- grote stat-iconen ---- */
+const target = (s)=>sv([172,116,60].map(r=>`<circle cx="200" cy="200" r="${r}" fill="${W}" stroke="${N}" stroke-width="22"/>`).join('')+
+ `<circle cx="200" cy="200" r="28" fill="${N}"/><line x1="206" y1="194" x2="338" y2="62" stroke="${N}" stroke-width="20" stroke-linecap="round"/>
+  <line x1="338" y1="62" x2="378" y2="62" stroke="${N}" stroke-width="18" stroke-linecap="round"/><line x1="338" y1="62" x2="338" y2="22" stroke="${N}" stroke-width="18" stroke-linecap="round"/>`,s,'sh');
+function clk(cx,cy,r,sw,p){const [x1,y1]=polar(cx,cy,r,p*360),[x0,y0]=polar(cx,cy,r,0);
+ return `<circle cx="${cx}" cy="${cy}" r="${r}" fill="${W}" stroke="${I2}" stroke-width="${sw}"/><path d="M${x0},${y0} A${r},${r} 0 0 1 ${x1},${y1}" fill="none" stroke="${N}" stroke-width="${sw}"/>
+ <line x1="${cx}" y1="${cy}" x2="${cx}" y2="${cy-r*.62}" stroke="${N}" stroke-width="${sw*.55}" stroke-linecap="round"/><line x1="${cx}" y1="${cy}" x2="${cx+r*.34}" y2="${cy+r*.2}" stroke="${N}" stroke-width="${sw*.55}" stroke-linecap="round"/><circle cx="${cx}" cy="${cy}" r="${sw*.5}" fill="${N}"/>`;}
+const papers = (s)=>sv(`<rect x="40" y="46" width="190" height="250" rx="22" fill="#fff" stroke="${N}" stroke-width="16" transform="rotate(-7 135 171)"/>
+ <rect x="90" y="76" width="190" height="250" rx="22" fill="#fff" stroke="${N}" stroke-width="16"/>
+ <line x1="126" y1="136" x2="244" y2="136" stroke="${I2}" stroke-width="12" stroke-linecap="round"/><line x1="126" y1="174" x2="244" y2="174" stroke="${I2}" stroke-width="12" stroke-linecap="round"/><line x1="126" y1="212" x2="204" y2="212" stroke="${I2}" stroke-width="12" stroke-linecap="round"/>
+ <circle cx="275" cy="300" r="92" fill="#fff"/>${clk(275,300,72,20,.485)}
+ <line x1="350" y1="22" x2="350" y2="150" stroke="${N}" stroke-width="24" stroke-linecap="round"/><polyline points="316,114 350,154 384,114" fill="none" stroke="${N}" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>`,s,'sh');
 
-/* Tijdwinst: papieren, klok (48,5% van de ring gevuld), pijl omlaag */
-function clockBase(cx,cy,r,sw,progress){
-  const [x1,y1]=polar(cx,cy,r,progress*360), [x0,y0]=polar(cx,cy,r,0);
-  return `<circle cx="${cx}" cy="${cy}" r="${r}" fill="#fff" stroke="${INK2}" stroke-width="${sw}"/>
-    <path d="M${x0},${y0} A${r},${r} 0 0 1 ${x1},${y1}" fill="none" stroke="${NAVY}" stroke-width="${sw}"/>
-    <line x1="${cx}" y1="${cy}" x2="${cx}" y2="${cy-r*.62}" stroke="${NAVY}" stroke-width="${sw*.55}" stroke-linecap="round"/>
-    <line x1="${cx}" y1="${cy}" x2="${cx+r*.34}" y2="${cy+r*.2}" stroke="${NAVY}" stroke-width="${sw*.55}" stroke-linecap="round"/>
-    <circle cx="${cx}" cy="${cy}" r="${sw*.5}" fill="${NAVY}"/>`;
-}
-const papers = svg(`
-  <rect x="40" y="46" width="190" height="250" rx="22" fill="#fff" stroke="${NAVY}" stroke-width="16" transform="rotate(-7 135 171)"/>
-  <rect x="90" y="76" width="190" height="250" rx="22" fill="#fff" stroke="${NAVY}" stroke-width="16"/>
-  <line x1="126" y1="136" x2="244" y2="136" stroke="${INK2}" stroke-width="12" stroke-linecap="round"/>
-  <line x1="126" y1="174" x2="244" y2="174" stroke="${INK2}" stroke-width="12" stroke-linecap="round"/>
-  <line x1="126" y1="212" x2="204" y2="212" stroke="${INK2}" stroke-width="12" stroke-linecap="round"/>
-  <circle cx="275" cy="300" r="92" fill="#fff"/>
-  ${clockBase(275,300,72,20,.485)}
-  <line x1="350" y1="22" x2="350" y2="150" stroke="${NAVY}" stroke-width="24" stroke-linecap="round"/>
-  <polyline points="316,114 350,154 384,114" fill="none" stroke="${NAVY}" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>`);
+/* ---- node-iconen (navy, 120px) ---- */
+const nodeIcons = [
+  sv(`<rect x="90" y="50" width="220" height="300" rx="28" fill="none" stroke="${N}" stroke-width="28"/>${[130,190,250].map(v=>`<line x1="140" y1="${v}" x2="260" y2="${v}" stroke="${N}" stroke-width="22" stroke-linecap="round"/>`).join('')}`,116),
+  sv(`<circle cx="200" cy="200" r="150" fill="none" stroke="${N}" stroke-width="28"/><circle cx="200" cy="200" r="76" fill="none" stroke="${N}" stroke-width="28"/><circle cx="200" cy="200" r="24" fill="${N}"/>`,116),
+  sv(`<circle cx="150" cy="110" r="62" fill="none" stroke="${N}" stroke-width="28"/><path d="M40,330 C40,230 260,230 260,330" fill="none" stroke="${N}" stroke-width="28" stroke-linecap="round"/><polyline points="250,230 310,290 380,190" fill="none" stroke="${N}" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>`,116),
+  sv(`<rect x="50" y="80" width="170" height="240" rx="26" fill="none" stroke="${N}" stroke-width="28"/><line x1="140" y1="200" x2="350" y2="200" stroke="${N}" stroke-width="32" stroke-linecap="round"/><polyline points="290,140 350,200 290,260" fill="none" stroke="${N}" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>`,116)
+];
 
-const stat = (top, flip, icon, num, label) => `
-  <div class="stat${flip ? ' flip' : ''}" style="top:${top}px; ${flip ? 'left:340px' : ''}">
-    ${icon}
-    <div><div class="num">${num}</div><div class="lbl">${label}</div></div>
-  </div>`;
+const cx = [465, 1139, 1813, 2487], railY = 640;
+const fileChip = (t)=>`<span class="chip"><svg width="36" height="46" viewBox="0 0 36 46"><path d="M3,3 H22 L33,14 V43 H3 Z" fill="#fff" stroke="${N}" stroke-width="4" stroke-linejoin="round"/><path d="M22,3 V14 H33" fill="none" stroke="${N}" stroke-width="4" stroke-linejoin="round"/></svg>${t}</span>`;
 
-document.getElementById('layer-content').innerHTML =
-  stat(320,  false, target, '96%',   'grading accuracy') +
-  stat(900,  true,  papers, '48.5%', 'less time spent grading');
+let h = '';
+/* rail + pijlen + haakje */
+h += `<svg class="abs" style="left:0;top:0" width="2954" height="2520">
+  <line x1="${cx[0]}" y1="${railY}" x2="${cx[3]}" y2="${railY}" stroke="${N}" stroke-width="16" stroke-linecap="round"/>
+  ${[0,1,2].map(i=>{const m=(cx[i]+cx[i+1])/2;return `<polyline points="${m-16},${railY-34} ${m+22},${railY} ${m-16},${railY+34}" fill="none" stroke="${N}" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" style="filter:drop-shadow(0 0 0 #fff)"/>`}).join('')}
+  <line x1="${cx[1]}" y1="${railY-96}" x2="${cx[1]}" y2="498" stroke="${N}" stroke-width="8" stroke-dasharray="2 18" stroke-linecap="round"/>
+  <path d="M${cx[0]},1240 V1286 H${cx[3]} V1240" fill="none" stroke="${N}" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="${(cx[0]+cx[3])/2}" y1="1286" x2="${(cx[0]+cx[3])/2}" y2="1330" stroke="${N}" stroke-width="10" stroke-linecap="round"/></svg>`;
+
+/* nodes en kolomtekst */
+const cols = [
+  {t:'Student submits',    d:`<div class="chips">${fileChip('PDF')}${fileChip('DOCX')}</div><div class="sub" style="margin-top:26px">Papers, open-ended exams</div>`},
+  {t:'AI proposes a grade',d:`<div class="big">Our own LLM</div><div class="sub">No ChatGPT, no other LLM</div>`},
+  {t:'Teacher approves',   d:`<div class="big">Human in the loop</div><div class="sub">The academic decides</div>`},
+  {t:'Grade in your LMS', d:`<div class="chips"><span class="chip">Moodle</span><span class="chip">Blackboard</span><span class="chip">Brightspace</span><span class="chip">Canvas</span><span class="chip soft">and more</span></div>`}
+];
+cols.forEach((c,i)=>{
+  h += `<div class="node" style="left:${cx[i]-92}px;top:${railY-92}px">${nodeIcons[i]}</div>`;
+  h += `<div class="col" style="left:${cx[i]-330}px;top:${railY+140}px"><div class="title">${c.t}</div><div style="margin-top:34px">${c.d}</div></div>`;
+});
+
+/* stats */
+h += `<div class="stat" style="left:${cx[1]-340}px;top:230px">${target(196)}<div><div class="num">96%</div><div class="lbl">grading accuracy</div></div></div>`;
+h += `<div class="stat" style="left:${(cx[0]+cx[3])/2-420}px;top:1360px">${papers(196)}<div><div class="num">48.5%</div><div class="lbl">less time spent grading</div></div></div>`;
+
+document.getElementById('layer-content').innerHTML = h;
 </script>
 </body>
 </html>
