@@ -21,25 +21,13 @@
   /* laag 1: logo rechtsonder, 420 mm breed, 128 mm marge */
   .logo { position: absolute; right: 128px; bottom: 128px; width: 420px; height: auto; }
 
-  /* laag 2: stat-kaarten, compact in een kolom links. Wit, met twee kaarten eronder gestapeld. */
-  .card {
-    position: absolute; z-index: 0; left: 128px; width: 1040px; padding: 64px;
-    background: #ffffff; border-radius: 40px;
-    box-shadow:
-      24px 24px 0 0 rgba(255,255,255,.66),
-      48px 48px 0 0 rgba(255,255,255,.38),
-      0 8px 24px rgba(0,35,51,.10),
-      0 50px 110px rgba(0,35,51,.22);
-  }
-
-  .head { display: flex; align-items: center; gap: 32px; }
-  .tile {
-    flex: none; width: 148px; height: 148px; border-radius: 36px; background: var(--navy);
-    display: flex; align-items: center; justify-content: center;
-    box-shadow: 0 10px 24px rgba(0,35,51,.28);
-  }
-  .lbl { font: 700 60px/1.05 "League Spartan", sans-serif; letter-spacing: -.01em; color: var(--navy); }
-  .num { font: 700 280px/.78 "League Spartan", sans-serif; letter-spacing: -.02em; color: var(--green-deep); margin-top: 72px; white-space: nowrap; }
+  /* laag 2: twee losse stats. Geen kaart: groot icoon met schaduw, cijfer boven, label eronder.
+     Blok A: icoon links. Blok B: gespiegeld, icoon rechts. Zo lijken ze niet op elkaar. */
+  .stat { position: absolute; left: 128px; display: flex; align-items: center; gap: 64px; }
+  .stat.flip { flex-direction: row-reverse; justify-content: flex-end; }
+  .icon { flex: none; filter: drop-shadow(0 14px 16px rgba(0,35,51,.16)) drop-shadow(0 44px 48px rgba(0,35,51,.22)); }
+  .num { font: 700 280px/.78 "League Spartan", sans-serif; letter-spacing: -.02em; color: var(--green-deep); white-space: nowrap; }
+  .lbl { font: 700 60px/1.05 "League Spartan", sans-serif; letter-spacing: -.01em; color: var(--navy); margin-top: 44px; white-space: nowrap; }
 </style>
 </head>
 <body>
@@ -49,38 +37,47 @@
   </div>
 
 <script>
-const W = '#ffffff', W35 = 'rgba(255,255,255,.35)';
+const NAVY = '#002333', INK2 = '#cdd9de';
 const polar=(cx,cy,r,deg)=>{const a=(deg-90)*Math.PI/180;return [cx+r*Math.cos(a),cy+r*Math.sin(a)];};
-const svg=(inner,size=120)=>`<svg width="${size}" height="${size}" viewBox="0 0 400 400">${inner}</svg>`;
+const svg=(inner,size=400)=>`<svg class="icon" width="${size}" height="${size}" viewBox="0 0 400 400">${inner}</svg>`;
 
-/* Icoon accuraatheid: roos met pijl, wit op navy tegel. */
+/* Accuraatheid: roos met pijl */
 const target = svg(
-  [165,108,52].map(r=>`<circle cx="200" cy="200" r="${r}" fill="none" stroke="${W}" stroke-width="28"/>`).join('') +
-  `<circle cx="200" cy="200" r="24" fill="${W}"/>
-   <line x1="206" y1="194" x2="346" y2="54" stroke="${W}" stroke-width="26" stroke-linecap="round"/>
-   <line x1="346" y1="54" x2="390" y2="54" stroke="${W}" stroke-width="22" stroke-linecap="round"/>
-   <line x1="346" y1="54" x2="346" y2="10" stroke="${W}" stroke-width="22" stroke-linecap="round"/>`);
+  [172,116,60].map(r=>`<circle cx="200" cy="200" r="${r}" fill="#fff" stroke="${NAVY}" stroke-width="22"/>`).join('') +
+  `<circle cx="200" cy="200" r="28" fill="${NAVY}"/>
+   <line x1="206" y1="194" x2="338" y2="62" stroke="${NAVY}" stroke-width="20" stroke-linecap="round"/>
+   <line x1="338" y1="62" x2="378" y2="62" stroke="${NAVY}" stroke-width="18" stroke-linecap="round"/>
+   <line x1="338" y1="62" x2="338" y2="22" stroke="${NAVY}" stroke-width="18" stroke-linecap="round"/>`);
 
-/* Icoon tijdwinst: klok (48,5% van de ring gevuld) met pijl omlaag, wit op navy tegel. */
-const [cx, cy, r, sw, p] = [160, 220, 120, 34, .485];
-const [x0,y0] = polar(cx,cy,r,0), [x1,y1] = polar(cx,cy,r,p*360);
-const clockDown = svg(`
-  <circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${W35}" stroke-width="${sw}"/>
-  <path d="M${x0},${y0} A${r},${r} 0 0 1 ${x1},${y1}" fill="none" stroke="${W}" stroke-width="${sw}"/>
-  <line x1="${cx}" y1="${cy}" x2="${cx}" y2="${cy-r*.6}" stroke="${W}" stroke-width="22" stroke-linecap="round"/>
-  <line x1="${cx}" y1="${cy}" x2="${cx+r*.36}" y2="${cy+r*.22}" stroke="${W}" stroke-width="22" stroke-linecap="round"/>
-  <line x1="348" y1="40" x2="348" y2="190" stroke="${W}" stroke-width="30" stroke-linecap="round"/>
-  <polyline points="302,142 348,190 394,142" fill="none" stroke="${W}" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>`);
+/* Tijdwinst: papieren, klok (48,5% van de ring gevuld), pijl omlaag */
+function clockBase(cx,cy,r,sw,progress){
+  const [x1,y1]=polar(cx,cy,r,progress*360), [x0,y0]=polar(cx,cy,r,0);
+  return `<circle cx="${cx}" cy="${cy}" r="${r}" fill="#fff" stroke="${INK2}" stroke-width="${sw}"/>
+    <path d="M${x0},${y0} A${r},${r} 0 0 1 ${x1},${y1}" fill="none" stroke="${NAVY}" stroke-width="${sw}"/>
+    <line x1="${cx}" y1="${cy}" x2="${cx}" y2="${cy-r*.62}" stroke="${NAVY}" stroke-width="${sw*.55}" stroke-linecap="round"/>
+    <line x1="${cx}" y1="${cy}" x2="${cx+r*.34}" y2="${cy+r*.2}" stroke="${NAVY}" stroke-width="${sw*.55}" stroke-linecap="round"/>
+    <circle cx="${cx}" cy="${cy}" r="${sw*.5}" fill="${NAVY}"/>`;
+}
+const papers = svg(`
+  <rect x="40" y="46" width="190" height="250" rx="22" fill="#fff" stroke="${NAVY}" stroke-width="16" transform="rotate(-7 135 171)"/>
+  <rect x="90" y="76" width="190" height="250" rx="22" fill="#fff" stroke="${NAVY}" stroke-width="16"/>
+  <line x1="126" y1="136" x2="244" y2="136" stroke="${INK2}" stroke-width="12" stroke-linecap="round"/>
+  <line x1="126" y1="174" x2="244" y2="174" stroke="${INK2}" stroke-width="12" stroke-linecap="round"/>
+  <line x1="126" y1="212" x2="204" y2="212" stroke="${INK2}" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="275" cy="300" r="92" fill="#fff"/>
+  ${clockBase(275,300,72,20,.485)}
+  <line x1="350" y1="22" x2="350" y2="150" stroke="${NAVY}" stroke-width="24" stroke-linecap="round"/>
+  <polyline points="316,114 350,154 384,114" fill="none" stroke="${NAVY}" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>`);
 
-const card = (top, icon, label, num) => `
-  <div class="card" style="top:${top}px">
-    <div class="head"><div class="tile">${icon}</div><div class="lbl">${label}</div></div>
-    <div class="num">${num}</div>
+const stat = (top, flip, icon, num, label) => `
+  <div class="stat${flip ? ' flip' : ''}" style="top:${top}px; ${flip ? 'left:340px' : ''}">
+    ${icon}
+    <div><div class="num">${num}</div><div class="lbl">${label}</div></div>
   </div>`;
 
 document.getElementById('layer-content').innerHTML =
-  card(300, target,    'grading accuracy',        '96%') +
-  card(940, clockDown, 'less time spent grading', '48.5%');
+  stat(320,  false, target, '96%',   'grading accuracy') +
+  stat(900,  true,  papers, '48.5%', 'less time spent grading');
 </script>
 </body>
 </html>
