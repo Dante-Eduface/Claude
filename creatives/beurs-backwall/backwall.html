@@ -23,35 +23,35 @@
   .h1 em { font-style: normal; color: var(--gd); }
 
   /* ---- QUOTES: een kaart per bron. Links het tool, rechts de quote(s) groot. ---- */
-  .stack { position: absolute; left: 128px; top: 448px; width: 2698px; display: flex; flex-direction: column; gap: 28px; }
+  .stack { position: absolute; left: 128px; top: 128px; width: 2698px; display: flex; flex-direction: column; gap: 44px; }
   .advrow { display: flex; gap: 59px; }
   .qg { position: relative; width: 100%; background: #fff; border-radius: 56px; padding: 56px 64px;
     box-shadow: 0 10px 28px rgba(0,35,51,.10), 0 50px 110px rgba(0,35,51,.20); }
-  .qs { display: flex; flex-direction: column; gap: 56px; }
+  .qs { display: flex; flex-direction: column; gap: 64px; }
   .qone { display: flex; gap: 28px; align-items: flex-start; }
   .qm { font: 700 230px/.78 "League Spartan"; color: var(--red); width: 120px; flex: none; margin-top: 10px; }
-  .qt { font: 400 96px/1.18 Inter; color: var(--navy); letter-spacing: -.005em; text-wrap: balance; }
+  .qt { font: 400 104px/1.16 Inter; color: var(--navy); letter-spacing: -.005em; text-wrap: balance; }
   .qt mark { white-space: nowrap; background: rgba(179,38,30,.13); color: inherit; padding: 0 12px; margin: 0 -12px; border-radius: 14px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
-  .who { font: 400 44px/1.2 Inter; color: var(--i5); margin-top: 20px; }
+  .who { font: 400 46px/1.2 Inter; color: var(--i5); margin-top: 22px; }
 
   /* ---- rest, compact ---- */
-  .band { position: relative; width: 100%; height: 170px; border-radius: 56px; background: var(--red); padding: 0 52px; display: flex; align-items: center; justify-content: space-between;
+  .band { position: relative; width: 100%; height: 210px; border-radius: 56px; background: var(--red); padding: 0 52px; display: flex; align-items: center; justify-content: space-between;
     box-shadow: 0 12px 30px rgba(179,38,30,.28), 0 50px 110px rgba(0,35,51,.22); }
-  .band .t { font: 700 76px/1 "League Spartan"; letter-spacing: -.015em; color: #fff; }
+  .band .t { font: 700 68px/1 "League Spartan"; letter-spacing: -.015em; color: #fff; }
   .rl { display: flex; gap: 24px; }
-  .rl div { height: 106px; padding: 0 40px 0 30px; border-radius: 30px; background: rgba(255,255,255,.14); box-shadow: inset 0 0 0 4px rgba(255,255,255,.4); display: flex; align-items: center; gap: 22px; font: 700 60px/1 "League Spartan"; letter-spacing: -.01em; color: #fff; white-space: nowrap; }
+  .rl div { height: 114px; padding: 0 40px 0 30px; border-radius: 30px; background: rgba(255,255,255,.14); box-shadow: inset 0 0 0 4px rgba(255,255,255,.4); display: flex; align-items: center; gap: 22px; font: 700 68px/1 "League Spartan"; letter-spacing: -.01em; color: #fff; white-space: nowrap; }
   .rl img { width: 62px; height: 62px; filter: brightness(0) invert(1); }
 
-  .adv { position: relative; flex: none; width: 860px; height: 340px; padding: 36px 48px; border-radius: 56px; background: var(--navy); color: #fff;
+  .adv { position: relative; flex: none; width: 860px; height: 440px; padding: 44px 48px; border-radius: 56px; background: var(--navy); color: #fff;
     box-shadow: 0 14px 34px rgba(0,35,51,.28), 0 60px 130px rgba(0,35,51,.34); display: flex; flex-direction: column; justify-content: space-between; }
-  .adv .it { align-self: flex-end; width: 120px; height: 120px; border-radius: 34px; background: rgba(255,255,255,.1); display: flex; align-items: center; justify-content: center; }
-  .adv .a1 { font: 700 62px/1.02 "League Spartan"; letter-spacing: -.01em; }
+  .adv .it { align-self: flex-end; width: 150px; height: 150px; border-radius: 42px; background: rgba(255,255,255,.1); display: flex; align-items: center; justify-content: center; }
+  .adv .a1 { font: 700 68px/1.02 "League Spartan"; letter-spacing: -.01em; }
   .adv .a1 span { color: var(--g); }
 
   .lms { position: absolute; left: 128px; top: 2278px; height: 114px; display: flex; align-items: center; gap: 52px; }
   .lms img { height: 62px; width: auto; filter: grayscale(1) contrast(.9); opacity: .5; }
   .lms .wm { font: 700 46px/1 "League Spartan"; letter-spacing: -.01em; color: var(--i5); opacity: .75; white-space: nowrap; }
-  .lms .lab { position: absolute; left: 0; top: -58px; font: 400 36px/1 Inter; color: var(--i5); white-space: nowrap; }
+  .lms .lab { position: absolute; left: 0; top: -62px; font: 400 46px/1 Inter; color: var(--i5); white-space: nowrap; }
 </style>
 </head>
 <body>
@@ -67,10 +67,10 @@ const sv=(inner,s=124)=>`<svg width="${s}" height="${s}" viewBox="0 0 400 400">$
 
 /* Quotes: bron Eduface case study 25-11-2026, licht bewerkt voor correct Engels. Functie anoniem. */
 const platformIc=`<svg width="66" height="66" viewBox="0 0 46 46"><rect x="4" y="4" width="16" height="16" rx="4" fill="#2c4a57"/><rect x="26" y="4" width="16" height="16" rx="4" fill="#2c4a57" opacity=".55"/><rect x="4" y="26" width="16" height="16" rx="4" fill="#2c4a57" opacity=".55"/><rect x="26" y="26" width="16" height="16" rx="4" fill="#2c4a57"/></svg>`;
-const q=(t,w)=>`<div class="qone"><div class="qm">\u201C</div><div><div class="qt">${t}</div><div class="who">${w}</div></div></div>`;
+const q=(t,w)=>`<div class="qone"><div class="qm">\u201C</div><div><div class="qt">${t}</div>${w?`<div class="who">${w}</div>`:''}</div></div>`;
 const R1='Head of academic innovation, private university', R2='AVP instructional design, US technical college';
 const A=`<div class="qg"><div class="qs">`+
-  q('We didn\u2019t find any platform that can mark and give feedback <mark>the way a teacher does.</mark>', R1)+
+  q('Such that you would upload the same rubric and the same writing assignment, and <mark>you would receive different grades.</mark>', '')+
   q('At some point it gets generic: <mark>every student gets the same feedback.</mark>', R1)+
   q('You would have to prompt the agent <mark>every single time.</mark>', R2)+`</div></div>`;
 const B='';
@@ -82,11 +82,11 @@ const icBubbles=sv(`<rect x="30" y="34" width="230" height="104" rx="38" fill="n
 const icSheets=sv(`<rect x="130" y="24" width="220" height="270" rx="30" fill="none" stroke="${W}" stroke-width="22" opacity=".4"/><rect x="90" y="64" width="220" height="270" rx="30" fill="none" stroke="${W}" stroke-width="22" opacity=".7"/><rect x="44" y="108" width="220" height="270" rx="30" fill="${N}" stroke="${W}" stroke-width="26"/>${[160,222,284].map(y=>`<polyline points="76,${y} 92,${y+16} 118,${y-14}" fill="none" stroke="${G}" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/><rect x="134" y="${y-8}" width="98" height="14" rx="7" fill="${W}"/>`).join('')}`);
 const X=[128,1047,1966];
 const ADV=[{ic:icTeacher,h:'Trained on how <span>teachers mark.</span>'},{ic:icBubbles,h:'Feedback <span>per student.</span>'},{ic:icSheets,h:'Set up <span>once.</span>'}];
-const adv=ADV.map((r,i)=>`<div class="adv"><div class="it">${r.ic.replace('width="124" height="124"','width="90" height="90"')}</div><div class="a1">${r.h}</div></div>`).join('');
+const adv=ADV.map((r,i)=>`<div class="adv"><div class="it">${r.ic.replace('width="124" height="124"','width="112" height="112"')}</div><div class="a1">${r.h}</div></div>`).join('');
 const lms=`<div class="lms"><div class="lab">Integrated with your LMS</div><img src="assets/logos/lms-canvas.png"><img src="assets/logos/lms-moodle.png"><img src="assets/logos/lms-blackboard.png"><img src="assets/logos/lms-brightspace.png"><div class="wm">itslearning</div><div class="wm">NEO LMS</div></div>`;
 
 document.getElementById('layer-content').innerHTML =
- `<div class="h1">Generic AI doesn't grade<br>like a teacher. <em>Eduface does.</em></div><div class="stack">${A}${B}${band}<div class="advrow">${adv}</div></div>${lms}`;
+ `<div class="stack">${A}${B}${band}<div class="advrow">${adv}</div></div>${lms}`;
 </script>
 </body>
 </html>

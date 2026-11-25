@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Gevel</title>
+<style>
+  /* Gevel: 3020 x 350 mm, 1 px = 1 mm. Eduface-logo links, kop rechts, groene stippen in de hoeken. */
+  @font-face { font-family: "League Spartan"; font-weight: 700; src: url("../../Design/Merk/fonts/LeagueSpartan-Bold.ttf"); }
+  * { margin: 0; box-sizing: border-box; }
+  html, body { width: 3020px; height: 350px; }
+  #f { position: relative; width: 3020px; height: 350px; overflow: hidden;
+       background: linear-gradient(90deg, #e6eef1 0%, #eff4f5 30%, #f7f8f6 62%, #fbf9f4 100%); }
+  .logo { position: absolute; left: 540px; top: 50%; width: 640px; transform: translateY(-50%); }
+  .h { position: absolute; left: 1470px; top: 50%; transform: translateY(-50%); font: 700 100px/1.02 "League Spartan"; letter-spacing: -.02em; color: #002333; white-space: nowrap; }
+  svg.dots { position: absolute; inset: 0; }
+</style></head><body>
+<div id="f">
+  <svg class="dots" width="3020" height="350" viewBox="0 0 3020 350" id="d"></svg>
+  <img class="logo" src="../../Design/Merk/logos/logo_navy.png">
+  <div class="h">Generic AI doesn't grade<br>like a teacher.</div>
+</div>
+<script>
+/* halftone-stippen: grootte volgt de afstand tot een golvende rand, links onder en rechts boven */
+const W=3020,H=350,P=15; let out='';
+function field(x,y,cx,cy,R,amp,k){ const d=Math.hypot((x-cx)*0.62,(y-cy)); const wave=Math.sin(x/ k)*amp; return 1-(d+wave)/R; }
+for(let y=P/2;y<H;y+=P){ for(let x=P/2;x<W;x+=P){
+  const row=Math.round(y/P)%2; const xx=x+(row?P/2:0);
+  const a=field(xx,y,0,H+30,300,26,110), b=field(xx,y,W,-30,300,26,110);
+  const v=Math.max(a,b); if(v>0.06){ const r=Math.min(3.8,v*6.5); out+=`<circle cx="${xx.toFixed(1)}" cy="${y.toFixed(1)}" r="${r.toFixed(2)}" fill="#00e075" opacity="${(0.3+Math.min(.45,v)).toFixed(2)}"/>`; } } }
+document.getElementById('d').innerHTML=out;
+</script></body></html>
