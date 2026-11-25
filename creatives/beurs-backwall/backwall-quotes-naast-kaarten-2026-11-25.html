@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Beurs backwall</title>
+<style>
+  /* Canvas: 1 px = 1 mm. Wand is 2954 x 2520 mm. Onderste derde (vanaf y 1700) blijft leeg: dat zit aan de grond. */
+  @font-face { font-family: "League Spartan"; font-weight: 700; src: url("../../Design/Merk/fonts/LeagueSpartan-Bold.ttf"); }
+  @font-face { font-family: "Inter"; font-weight: 400; src: url("../../Design/Merk/fonts/Inter-Regular.ttf"); }
+  :root { --w: 2954px; --h: 2520px; --navy: #002333; --gd: #007b54; --g: #00e075; --i7: #2c4a57; --i5: #5b7480; --i3: #a9bcc4; --i2: #cdd9de; --i50: #f3f7f8; --red: #b3261e; }
+  * { margin: 0; box-sizing: border-box; }
+  html, body { width: var(--w); height: var(--h); }
+  .wall {
+    position: relative; width: var(--w); height: var(--h); overflow: hidden; color: var(--navy);
+    background:
+      radial-gradient(ellipse 80% 45% at 90% 52%, #f9f8f7 0%, rgba(249,248,247,0) 100%),
+      linear-gradient(180deg, #dce7ee 0%, #e2edf1 20%, #ecf3f5 40%, #f4f6f6 55%, #eff3f3 70%, #e4edf1 90%, #dde8ee 100%);
+  }
+  .abs { position: absolute; }
+  .logo { position: absolute; right: 128px; bottom: 128px; width: 420px; height: auto; }
+
+  .h1 { position: absolute; left: 128px; top: 96px; font: 700 168px/.98 "League Spartan"; letter-spacing: -.025em; color: var(--navy); white-space: nowrap; }
+  .h1 em { font-style: normal; color: var(--gd); }
+
+  .card { position: absolute; top: 520px; height: 1170px; padding: 56px; border-radius: 56px; display: flex; flex-direction: column; gap: 30px; }
+  .card.generic { left: 128px; width: 1180px; background: rgba(255,255,255,.62); box-shadow: 0 8px 24px rgba(0,35,51,.07), 0 40px 90px rgba(0,35,51,.12); }
+  .card.ours { left: 1344px; width: 1482px; background: var(--navy); color: #fff; box-shadow: 0 14px 34px rgba(0,35,51,.28), 0 60px 130px rgba(0,35,51,.36); }
+  .tag { height: 72px; flex-shrink: 0; display: flex; align-items: center; }
+  .generic .tag { font: 700 58px/1 "League Spartan"; color: var(--i5); letter-spacing: -.01em; }
+
+  .qrow { height: 236px; flex-shrink: 0; display: flex; gap: 26px; align-items: flex-start; }
+  .qm { font: 700 150px/.8 "League Spartan"; color: var(--i3); width: 70px; flex: none; margin-top: 8px; }
+  .qt { font: 400 46px/1.22 Inter; color: var(--i7); }
+  .qa { font: 400 32px/1.2 Inter; color: var(--i5); margin-top: 14px; }
+
+  .arow { height: 236px; flex-shrink: 0; display: flex; gap: 30px; align-items: flex-start; }
+  .chk { flex: none; width: 76px; height: 76px; border-radius: 50%; background: var(--g); display: flex; align-items: center; justify-content: center; margin-top: 4px; }
+  .a1 { font: 700 66px/1.02 "League Spartan"; letter-spacing: -.01em; color: #fff; }
+  .a1 span { color: var(--g); }
+  .a2 { font: 400 42px/1.22 Inter; color: rgba(255,255,255,.78); margin-top: 16px; }
+
+  .logos { display: flex; gap: 22px; margin-top: auto; flex-shrink: 0; }
+  .lg { position: relative; flex: 1; height: 124px; border-radius: 30px; background: var(--i50); display: flex; align-items: center; justify-content: center; gap: 18px; font: 400 40px/1 Inter; color: var(--i5); }
+  .lg img { width: 58px; height: 58px; opacity: .8; }
+  .x { position: absolute; top: -16px; right: -16px; width: 58px; height: 58px; border-radius: 50%; background: var(--red); box-shadow: 0 4px 10px rgba(179,38,30,.4); }
+  .ownstrip { margin-top: auto; flex-shrink: 0; height: 124px; border-radius: 30px; box-shadow: inset 0 0 0 6px var(--g); display: flex; align-items: center; gap: 30px; padding: 0 44px; }
+  .ownstrip .t1 { font: 700 58px/1 "League Spartan"; color: var(--g); white-space: nowrap; }
+  .ownstrip .t2 { font: 400 36px/1.15 Inter; color: rgba(255,255,255,.78); }
+  .link { position: absolute; width: 76px; height: 76px; border-radius: 50%; background: var(--navy); display: flex; align-items: center; justify-content: center; border: 6px solid #fff; box-shadow: 0 8px 20px rgba(0,35,51,.30); z-index: 5; }
+</style>
+</head>
+<body>
+  <div class="wall" id="wall">
+    <div id="layer-content"></div>
+    <img class="logo" src="../../Design/Merk/logos/logo_navy.png" alt="Eduface">
+  </div>
+
+<script>
+const N='#002333', G='#00e075', RED='#b3261e';
+const L=(f)=>`assets/logos/${f}.svg`;
+const xBadge=`<div class="x"><svg width="58" height="58" viewBox="0 0 54 54"><path d="M18,18 L36,36 M36,18 L18,36" stroke="#fff" stroke-width="6" stroke-linecap="round"/></svg></div>`;
+const chk=`<div class="chk"><svg width="46" height="46" viewBox="0 0 54 54"><path d="M14,28 L23,37 L40,17" fill="none" stroke="${N}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>`;
+const chev=`<svg width="40" height="40" viewBox="0 0 30 30"><polyline points="11,7 20,15 11,23" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+
+/* Bron: Eduface case study 25-11-2026. Quotes woordelijk, functie anoniem. */
+const Q=[
+ {q:'We didn\u2019t find any platform that can simulate the correction of a teacher in terms of feedback and marking.', a:'Head of academic innovation, private university'},
+ {q:'At some point it is generic and it says with each student it gives the same feedback.', a:'Head of academic innovation, private university'},
+ {q:'You would have to prompt the agent every single time.', a:'AVP instructional design, US technical college'}
+];
+const A=[
+ {h:'Trained on how <span>teachers mark.</span>', t:'Own model. You approve or change every grade.'},
+ {h:'Feedback <span>per student.</span>', t:'Based on their own answer and the course material.'},
+ {h:'Set up <span>once.</span>', t:'Rubric and instructions per assignment, copied across courses.'}
+];
+
+const GEN =
+ `<div class="tag">Generic AI tools</div>`+
+ Q.map(r=>`<div class="qrow"><div class="qm">\u201C</div><div><div class="qt">${r.q}</div><div class="qa">${r.a}</div></div></div>`).join('')+
+ `<div class="logos"><div class="lg"><img src="${L('openai')}">ChatGPT${xBadge}</div><div class="lg"><img src="${L('googlegemini')}">Gemini${xBadge}</div><div class="lg"><img src="${L('claude')}">Claude${xBadge}</div></div>`;
+
+const OURS =
+ `<div class="tag"><img src="assets/logos/eduface-white.png" style="height:72px;width:auto"></div>`+
+ A.map(r=>`<div class="arow">${chk}<div><div class="a1">${r.h}</div><div class="a2">${r.t}</div></div></div>`).join('')+
+ `<div class="ownstrip"><div class="t1">our own model</div><div class="t2">built with universities in the Netherlands and the UK</div></div>`;
+
+/* pijlknopen tussen quote-rij en antwoord-rij */
+const top0=520+56+72+30, step=236+30;
+const nodes=[0,1,2].map(i=>`<div class="link" style="left:${128+1180+18-38}px;top:${top0+i*step+30}px">${chev}</div>`).join('');
+
+document.getElementById('layer-content').innerHTML =
+ `<div class="h1">Generic AI doesn't grade<br>like a teacher. <em>Eduface does.</em></div>
+  <div class="card generic">${GEN}</div><div class="card ours">${OURS}</div>${nodes}`;
+</script>
+</body>
+</html>
