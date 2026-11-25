@@ -4,7 +4,8 @@
 <meta charset="utf-8">
 <title>Beurs backwall</title>
 <style>
-  /* Canvas: 1 px = 1 mm. Wand is 2954 x 2520 mm. Eerst focus op de quotes; de rest staat compact eronder. */
+  /* Canvas: 1 px = 1 mm. Wand is 2954 x 2520 mm. De kop staat op de gevel (facade.html), de wand heeft alleen quotes en Eduface.
+     Lettersysteem, drie maten: L 104 Inter (quotes) / M 68 League Spartan (koppen) / S 46 Inter (bronnen, labels). */
   @font-face { font-family: "League Spartan"; font-weight: 700; src: url("../../Design/Merk/fonts/LeagueSpartan-Bold.ttf"); }
   @font-face { font-family: "Inter"; font-weight: 400; src: url("../../Design/Merk/fonts/Inter-Regular.ttf"); }
   :root { --w: 2954px; --h: 2520px; --navy: #002333; --gd: #007b54; --g: #00e075; --i7: #2c4a57; --i5: #5b7480; --i3: #a9bcc4; --i2: #cdd9de; --i50: #f3f7f8; --red: #b3261e; }
@@ -16,37 +17,38 @@
       radial-gradient(ellipse 80% 45% at 90% 52%, #f9f8f7 0%, rgba(249,248,247,0) 100%),
       linear-gradient(180deg, #dce7ee 0%, #e2edf1 20%, #ecf3f5 40%, #f4f6f6 55%, #eff3f3 70%, #e4edf1 90%, #dde8ee 100%);
   }
-  .abs { position: absolute; }
   .logo { position: absolute; right: 128px; bottom: 128px; width: 420px; height: auto; }
 
-  .h1 { position: absolute; left: 128px; top: 90px; font: 700 152px/.98 "League Spartan"; letter-spacing: -.025em; color: var(--navy); white-space: nowrap; }
-  .h1 em { font-style: normal; color: var(--gd); }
+  .row { position: absolute; left: 128px; top: 128px; width: 2698px; display: flex; gap: 36px; align-items: stretch; }
 
-  /* ---- QUOTES: een kaart per bron. Links het tool, rechts de quote(s) groot. ---- */
-  .stack { position: absolute; left: 128px; top: 128px; width: 2698px; display: flex; flex-direction: column; gap: 44px; }
-  .advrow { display: flex; gap: 59px; }
-  .qg { position: relative; width: 100%; background: #fff; border-radius: 56px; padding: 56px 64px;
-    box-shadow: 0 10px 28px rgba(0,35,51,.10), 0 50px 110px rgba(0,35,51,.20); }
-  .qs { display: flex; flex-direction: column; gap: 64px; }
-  .qone { display: flex; gap: 28px; align-items: flex-start; }
-  .qm { font: 700 230px/.78 "League Spartan"; color: var(--red); width: 120px; flex: none; margin-top: 10px; }
-  .qt { font: 400 104px/1.16 Inter; color: var(--navy); letter-spacing: -.005em; text-wrap: balance; }
-  .qt mark { white-space: nowrap; background: rgba(179,38,30,.13); color: inherit; padding: 0 12px; margin: 0 -12px; border-radius: 14px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+  /* links: quotes. Rood alleen in het kleine vlak rond de drie tools. */
+  .q { width: 1400px; background: #fff; border-radius: 56px; padding: 64px 68px 64px; display: flex; flex-direction: column; justify-content: space-between; gap: 56px;
+       box-shadow: 0 10px 28px rgba(0,35,51,.10), 0 50px 110px rgba(0,35,51,.20); }
+  .qs { display: flex; flex-direction: column; gap: 60px; }
+  .qone { display: flex; gap: 22px; align-items: flex-start; }
+  .qm { font: 700 150px/.8 "League Spartan"; color: var(--i3); width: 76px; flex: none; margin-top: 10px; }
+  .qt { font: 400 104px/1.16 Inter; color: var(--navy); letter-spacing: -.005em; }
+  .qt mark { background: rgba(0,35,51,.08); color: inherit; padding: 0 12px; margin: 0 -12px; border-radius: 14px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
   .who { font: 400 46px/1.2 Inter; color: var(--i5); margin-top: 22px; }
 
-  /* ---- rest, compact ---- */
-  .band { position: relative; width: 100%; height: 210px; border-radius: 56px; background: var(--red); padding: 0 52px; display: flex; align-items: center; justify-content: space-between;
-    box-shadow: 0 12px 30px rgba(179,38,30,.28), 0 50px 110px rgba(0,35,51,.22); }
-  .band .t { font: 700 68px/1 "League Spartan"; letter-spacing: -.015em; color: #fff; }
-  .rl { display: flex; gap: 24px; }
-  .rl div { height: 114px; padding: 0 40px 0 30px; border-radius: 30px; background: rgba(255,255,255,.14); box-shadow: inset 0 0 0 4px rgba(255,255,255,.4); display: flex; align-items: center; gap: 22px; font: 700 68px/1 "League Spartan"; letter-spacing: -.01em; color: #fff; white-space: nowrap; }
-  .rl img { width: 62px; height: 62px; filter: brightness(0) invert(1); }
+  .tools .lab { font: 700 68px/1 "League Spartan"; letter-spacing: -.01em; color: var(--navy); margin-bottom: 26px; }
+  .redbox { display: inline-flex; gap: 20px; background: var(--red); border-radius: 36px; padding: 26px 28px; box-shadow: 0 10px 24px rgba(179,38,30,.28); }
+  .tl { width: 232px; height: 176px; border-radius: 26px; background: rgba(255,255,255,.14); box-shadow: inset 0 0 0 4px rgba(255,255,255,.42);
+        display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; font: 400 46px/1 Inter; color: #fff; }
+  .tl img { width: 70px; height: 70px; filter: brightness(0) invert(1); }
 
-  .adv { position: relative; flex: none; width: 860px; height: 440px; padding: 44px 48px; border-radius: 56px; background: var(--navy); color: #fff;
-    box-shadow: 0 14px 34px rgba(0,35,51,.28), 0 60px 130px rgba(0,35,51,.34); display: flex; flex-direction: column; justify-content: space-between; }
-  .adv .it { align-self: flex-end; width: 150px; height: 150px; border-radius: 42px; background: rgba(255,255,255,.1); display: flex; align-items: center; justify-content: center; }
-  .adv .a1 { font: 700 68px/1.02 "League Spartan"; letter-spacing: -.01em; }
-  .adv .a1 span { color: var(--g); }
+  /* rechts: Eduface */
+  .e { width: 1262px; background: var(--navy); color: #fff; border-radius: 56px; padding: 64px 68px; display: flex; flex-direction: column; justify-content: space-between; gap: 56px;
+       box-shadow: 0 14px 34px rgba(0,35,51,.28), 0 60px 130px rgba(0,35,51,.34); }
+  .es { flex: 1; display: flex; flex-direction: column; justify-content: space-evenly; }
+  .er { display: flex; align-items: center; gap: 44px; }
+  .it { flex: none; width: 250px; height: 250px; border-radius: 64px; background: rgba(255,255,255,.1); display: flex; align-items: center; justify-content: center; }
+  .eh { font: 700 68px/1.04 "League Spartan"; letter-spacing: -.01em; }
+  .eh span { color: var(--g); }
+  .own { height: 218px; border-radius: 36px; box-shadow: inset 0 0 0 6px var(--g); display: flex; align-items: center; gap: 30px; padding: 0 52px; }
+  .own img { height: 86px; width: auto; }
+  .own .ai { font: 700 68px/1 "League Spartan"; color: var(--g); letter-spacing: -.01em; }
+  .own .t2 { margin-left: auto; font: 400 46px/1.15 Inter; color: rgba(255,255,255,.8); text-align: right; }
 
   .lms { position: absolute; left: 128px; top: 2278px; height: 114px; display: flex; align-items: center; gap: 52px; }
   .lms img { height: 62px; width: auto; filter: grayscale(1) contrast(.9); opacity: .5; }
@@ -63,30 +65,27 @@
 <script>
 const N='#002333', G='#00e075', W='#fff';
 const L=(f)=>`assets/logos/${f}.svg`;
-const sv=(inner,s=124)=>`<svg width="${s}" height="${s}" viewBox="0 0 400 400">${inner}</svg>`;
+const sv=(inner,s=172)=>`<svg width="${s}" height="${s}" viewBox="0 0 400 400">${inner}</svg>`;
 
-/* Quotes: bron Eduface case study 25-11-2026, licht bewerkt voor correct Engels. Functie anoniem. */
-const platformIc=`<svg width="66" height="66" viewBox="0 0 46 46"><rect x="4" y="4" width="16" height="16" rx="4" fill="#2c4a57"/><rect x="26" y="4" width="16" height="16" rx="4" fill="#2c4a57" opacity=".55"/><rect x="4" y="26" width="16" height="16" rx="4" fill="#2c4a57" opacity=".55"/><rect x="26" y="26" width="16" height="16" rx="4" fill="#2c4a57"/></svg>`;
-const q=(t,w)=>`<div class="qone"><div class="qm">\u201C</div><div><div class="qt">${t}</div>${w?`<div class="who">${w}</div>`:''}</div></div>`;
+/* Quotes: formulering van Dante, 25-11-2026. Bron van quote 2 en 3 staat in de case study; de herschreven zinnen zijn nog niet aan die personen voorgelegd (V15). Quote 1: bron onbekend (V17). */
+const q=(t,w)=>`<div class="qone"><div class="qm">“</div><div><div class="qt">${t}</div>${w?`<div class="who">${w}</div>`:''}</div></div>`;
 const R1='Head of academic innovation, private university', R2='AVP instructional design, US technical college';
-const A=`<div class="qg"><div class="qs">`+
-  q('Such that you would upload the same rubric and the same writing assignment, and <mark>you would receive different grades.</mark>', '')+
-  q('At some point it gets generic: <mark>every student gets the same feedback.</mark>', R1)+
-  q('You would have to prompt the agent <mark>every single time.</mark>', R2)+`</div></div>`;
-const B='';
+const tool=(img,name)=>`<div class="tl"><img src="${L(img)}">${name}</div>`;
+const left=`<div class="q"><div class="qs">`+
+  q('Same rubric, same essay, uploaded twice. <mark>Two different grades.</mark>','')+
+  q('After a few essays it goes generic. <mark>Every student gets the same feedback.</mark>',R1)+
+  q('You have to re-prompt it <mark>for every single assignment.</mark>',R2)+
+  `</div><div class="tools"><div class="lab">Not built for marking.</div><div class="redbox">${tool('openai','ChatGPT')}${tool('googlegemini','Gemini')}${tool('claude','Claude')}</div></div></div>`;
 
-/* rest */
-const band=`<div class="band"><div class="t">Not built for marking.</div><div class="rl"><div><img src="${L('openai')}">ChatGPT</div><div><img src="${L('googlegemini')}">Gemini</div><div><img src="${L('claude')}">Claude</div></div></div>`;
 const icTeacher=sv(`<circle cx="150" cy="108" r="64" fill="none" stroke="${W}" stroke-width="30"/><path d="M36,340 C36,236 264,236 264,340" fill="none" stroke="${W}" stroke-width="30" stroke-linecap="round"/><circle cx="312" cy="294" r="62" fill="${G}"/><polyline points="282,294 304,316 342,270" fill="none" stroke="${N}" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>`);
 const icBubbles=sv(`<rect x="30" y="34" width="230" height="104" rx="38" fill="none" stroke="${W}" stroke-width="26"/><rect x="60" y="68" width="110" height="18" rx="9" fill="${W}"/><rect x="140" y="156" width="230" height="104" rx="38" fill="rgba(255,255,255,.14)" stroke="${W}" stroke-width="26"/><rect x="172" y="190" width="150" height="18" rx="9" fill="${W}"/><rect x="30" y="278" width="230" height="104" rx="38" fill="none" stroke="${W}" stroke-width="26"/><rect x="60" y="312" width="84" height="18" rx="9" fill="${G}"/>`);
 const icSheets=sv(`<rect x="130" y="24" width="220" height="270" rx="30" fill="none" stroke="${W}" stroke-width="22" opacity=".4"/><rect x="90" y="64" width="220" height="270" rx="30" fill="none" stroke="${W}" stroke-width="22" opacity=".7"/><rect x="44" y="108" width="220" height="270" rx="30" fill="${N}" stroke="${W}" stroke-width="26"/>${[160,222,284].map(y=>`<polyline points="76,${y} 92,${y+16} 118,${y-14}" fill="none" stroke="${G}" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/><rect x="134" y="${y-8}" width="98" height="14" rx="7" fill="${W}"/>`).join('')}`);
-const X=[128,1047,1966];
-const ADV=[{ic:icTeacher,h:'Trained on how <span>teachers mark.</span>'},{ic:icBubbles,h:'Feedback <span>per student.</span>'},{ic:icSheets,h:'Set up <span>once.</span>'}];
-const adv=ADV.map((r,i)=>`<div class="adv"><div class="it">${r.ic.replace('width="124" height="124"','width="112" height="112"')}</div><div class="a1">${r.h}</div></div>`).join('');
-const lms=`<div class="lms"><div class="lab">Integrated with your LMS</div><img src="assets/logos/lms-canvas.png"><img src="assets/logos/lms-moodle.png"><img src="assets/logos/lms-blackboard.png"><img src="assets/logos/lms-brightspace.png"><div class="wm">itslearning</div><div class="wm">NEO LMS</div></div>`;
+const ER=[{ic:icTeacher,h:'Trained on how <span>teachers mark.</span>'},{ic:icBubbles,h:'Feedback <span>per student.</span>'},{ic:icSheets,h:'Set up <span>once.</span>'}];
+const right=`<div class="e"><div class="es">`+ER.map(r=>`<div class="er"><div class="it">${r.ic}</div><div class="eh">${r.h}</div></div>`).join('')+
+  `</div><div class="own"><img src="assets/logos/eduface-white.png"><div class="ai">AI</div><div class="t2">our own<br>model</div></div></div>`;
 
-document.getElementById('layer-content').innerHTML =
- `<div class="stack">${A}${B}${band}<div class="advrow">${adv}</div></div>${lms}`;
+const lms=`<div class="lms"><div class="lab">Integrated with your LMS</div><img src="assets/logos/lms-canvas.png"><img src="assets/logos/lms-moodle.png"><img src="assets/logos/lms-blackboard.png"><img src="assets/logos/lms-brightspace.png"><div class="wm">itslearning</div><div class="wm">NEO LMS</div></div>`;
+document.getElementById('layer-content').innerHTML = `<div class="row">${left}${right}</div>${lms}`;
 </script>
 </body>
 </html>
