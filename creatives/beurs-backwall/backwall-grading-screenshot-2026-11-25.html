@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Beurs backwall</title>
+<style>
+  /* Canvas: 1 px = 1 mm. Wand 2954 x 2520 mm. De kop van de gevel staat NIET op de wand.
+     Links licht = Chatbots (het probleem, twee quotes), rechts navy = Eduface (een boodschap + productscreenshot).
+     Daaronder een rustig wit blok (250,000 en Eduface AI), dan de LMS-rij gecentreerd.
+     Lettersysteem: Inter 92 (quotes) / League Spartan 92 (kop rechts) / League Spartan 76 (vlakkoppen) / Inter 46 (bronnen, labels). */
+  @font-face { font-family: "League Spartan"; font-weight: 700; src: url("../../Design/Merk/fonts/LeagueSpartan-Bold.ttf"); }
+  @font-face { font-family: "Inter"; font-weight: 400; src: url("../../Design/Merk/fonts/Inter-Regular.ttf"); }
+  @font-face { font-family: "Inter"; font-weight: 700; src: local("Inter Bold"), local("Inter-Bold"), url("file:///usr/share/fonts/opentype/inter/Inter-Bold.otf"); }
+  :root { --w: 2954px; --h: 2520px; --navy: #002333; --g: #00e075; --g6: #008f5a; --i7: #2c4a57; --i5: #5b7480; --i3: #a9bcc4; --i50: #f3f7f8; }
+  * { margin: 0; box-sizing: border-box; }
+  html, body { width: var(--w); height: var(--h); }
+  .wall {
+    position: relative; width: var(--w); height: var(--h); overflow: hidden; color: var(--navy);
+    background:
+      radial-gradient(ellipse 80% 45% at 90% 52%, #f9f8f7 0%, rgba(249,248,247,0) 100%),
+      linear-gradient(180deg, #dce7ee 0%, #e2edf1 20%, #ecf3f5 40%, #f4f6f6 55%, #eff3f3 70%, #e4edf1 90%, #dde8ee 100%);
+  }
+  .g { position: absolute; left: 128px; top: 128px; width: 2698px; display: grid; grid-template-columns: 1500px 1162px; column-gap: 36px; }
+  .pl, .pr { border-radius: 56px; box-shadow: 0 24px 60px rgba(0,35,51,.10); }
+  .pl { grid-column: 1; grid-row: 1; background: var(--i50); padding: 56px 68px 64px; display: flex; flex-direction: column; justify-content: space-between; gap: 48px; }
+  .pr { grid-column: 2; grid-row: 1; background: var(--navy); box-shadow: 0 24px 60px rgba(0,35,51,.22); padding: 56px 68px 68px; display: flex; flex-direction: column; gap: 52px; color: #fff; }
+
+  .hd { font: 700 76px/1 "League Spartan"; letter-spacing: -.02em; color: var(--navy); }
+  .pr img.lg { height: 84px; width: auto; align-self: flex-start; }
+
+  .qt { font: 400 92px/1.14 Inter; color: var(--i7); letter-spacing: -.01em; }
+  .qt .qm { font: 700 92px/1 "League Spartan"; color: var(--g6); margin-right: 8px; }
+  .qt mark { background: none; color: var(--navy); font-weight: 700; }
+  .who { font: 400 46px/1.2 Inter; color: var(--i5); margin-top: 16px; }
+  .q + .q { border-top: 2px solid rgba(0,35,51,.12); padding-top: 48px; }
+
+  .eh { font: 700 112px/1.06 "League Spartan"; letter-spacing: -.02em; color: #fff; }
+  .eh span { color: var(--g); }
+  .shot { margin-top: auto; align-self: center; width: 880px; border-radius: 28px; overflow: hidden; box-shadow: 0 18px 50px rgba(0,0,0,.35); background: #fff; }
+  .shot img { display: block; width: 100%; height: auto; }
+
+  /* wit blok: 250,000 links, rustige Eduface AI-lockup rechts */
+  .ai { grid-column: 1 / 3; grid-row: 2; margin-top: 44px; background: #fff; border-radius: 48px; padding: 56px 88px; display: flex; align-items: center; justify-content: space-between;
+        box-shadow: 0 24px 60px rgba(0,35,51,.10); }
+  .ai .n { font: 700 150px/1 "League Spartan"; letter-spacing: -.03em; color: var(--navy); }
+  .ai .l { font: 400 46px/1.2 Inter; color: var(--i5); margin-top: 10px; }
+  .lock { display: flex; align-items: center; gap: 24px; }
+  .lock img { height: 60px; width: auto; }
+  .lock .pill { height: 56px; padding: 0 22px; border-radius: 16px; background: var(--navy); color: #fff; display: flex; align-items: center; font: 700 40px/1 "League Spartan"; letter-spacing: .02em; }
+  .lock .sep { width: 2px; height: 64px; background: rgba(0,35,51,.16); margin: 0 6px; }
+  .lock .sub { font: 400 40px/1.2 Inter; color: var(--i5); }
+
+  .lms { position: absolute; left: 128px; width: 2698px; top: 2226px; display: flex; flex-direction: column; align-items: center; gap: 26px; }
+  .lms .lab { font: 400 46px/1 Inter; color: var(--i5); white-space: nowrap; }
+  .lms .row { display: flex; align-items: center; justify-content: center; gap: 110px; }
+  .lms img { height: 66px; width: auto; filter: grayscale(1) contrast(.9); opacity: .5; }
+</style>
+</head>
+<body>
+  <div class="wall" id="wall">
+    <div id="layer-content"></div>
+  </div>
+
+<script>
+const R0='Director of education, public university', R1='Head of academic innovation, private university';
+/* Quotes: formulering van Dante, 25-11-2026. Quote 2: bron in de case study, herschreven zin nog niet aan die persoon voorgelegd (V15). Quote 1: bronregel volgens Dante, klopt mogelijk niet (V17). */
+const Q=[{t:'Same rubric, same essay, uploaded twice. <mark>Two different grades.</mark>',w:R0},
+         {t:'After a few essays it goes generic. <mark>Every student gets the same feedback.</mark>',w:R1}];
+const left=`<div class="pl"><div class="hd">Chatbots</div>`+Q.map(q=>`<div class="q"><div class="qt"><span class="qm">“</span>${q.t}</div><div class="who">${q.w}</div></div>`).join('')+`</div>`;
+const right=`<div class="pr"><img class="lg" src="assets/logos/eduface-white.png"><div class="eh">Trained on how <span>instructors grade.</span></div>
+  <div class="shot"><img src="assets/product-grading.png"></div></div>`;
+const ai=`<div class="ai"><div><div class="n">250,000</div><div class="l">education-specific feedback examples</div></div>
+  <div class="lock"><img src="../../Design/Merk/logos/logo_navy.png"><div class="pill">AI</div></div></div>`;
+const lms=`<div class="lms"><div class="lab">Integrated with your LMS</div><div class="row"><img src="assets/logos/lms-canvas.png"><img src="assets/logos/lms-moodle.png"><img src="assets/logos/lms-blackboard.png"><img src="assets/logos/lms-brightspace.png"></div></div>`;
+document.getElementById('layer-content').innerHTML=`<div class="g">${left}${right}${ai}</div>${lms}`;
+</script>
+</body>
+</html>
