@@ -18,11 +18,22 @@
       linear-gradient(180deg, #dce7ee 0%, #e2edf1 20%, #ecf3f5 40%, #f4f6f6 55%, #eff3f3 70%, #e4edf1 90%, #dde8ee 100%);
   }
   /* Onderdelen komen hieronder, een laag per stap. */
+
+  /* laag 1: logo rechtsonder. 420 mm breed, 128 mm marge (8pt-familie). */
+  .logo {
+    position: absolute;
+    right: 128px;
+    bottom: 128px;
+    width: 420px;
+    height: auto;
+  }
 </style>
 </head>
 <body>
   <div class="wall" id="wall">
     <!-- laag 0: leeg canvas -->
+    <!-- laag 1: logo -->
+    <img class="logo" src="../../Design/Merk/logos/logo_navy.png" alt="Eduface">
   </div>
 </body>
 </html>
