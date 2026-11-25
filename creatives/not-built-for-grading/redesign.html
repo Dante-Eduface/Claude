@@ -1,52 +1,50 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8">
+<!-- Canvas 1477 x 1260 ontwerp-px = 2954 x 2520 mm (1 px = 2 mm) -->
 <style>
 @font-face{font-family:"League Spartan";src:url("file:///home/user/Claude/Design/Merk/fonts/LeagueSpartan-Bold.ttf");font-weight:700}
-:root{
-  --navy:#002333; --green:#00e075; --ink-700:#2c4a57; --ink-500:#5b7480; --ink-300:#a9bcc4;
-  --inverse-soft:rgba(255,255,255,.62);
-}
+:root{--navy:#002333;--green:#00e075;--ink-500:#5b7480;--ink-300:#a9bcc4;--surface:#f3f7f8}
 *{box-sizing:border-box;margin:0;padding:0}
-body{width:1080px;height:1350px;background:#fff;color:var(--navy);font-family:"Inter",sans-serif;-webkit-font-smoothing:antialiased}
-.canvas{width:1080px;height:1350px;padding:72px;display:flex;flex-direction:column;justify-content:space-between}
-.rows{display:flex;flex-direction:column;gap:72px}
-.row{display:grid;grid-template-columns:1.3fr 32px .7fr;column-gap:24px;align-items:start}
-.q{font-size:44px;line-height:1.25;font-weight:500;letter-spacing:-.015em}
+body{width:1477px;height:1260px;background:#fff;color:var(--navy);font-family:"Inter",sans-serif;-webkit-font-smoothing:antialiased}
+.canvas{width:1477px;height:1260px;padding:96px;display:flex;flex-direction:column;justify-content:space-between}
+.rows{display:flex;flex-direction:column;gap:56px}
+.row{display:grid;grid-template-columns:1.45fr 40px .75fr;column-gap:28px;align-items:start}
+.q{font-size:46px;line-height:1.25;font-weight:500;letter-spacing:-.015em}
 .q b{font-weight:700}
-.who{margin-top:14px;font-size:22px;line-height:1.4;color:var(--ink-500);font-weight:400;letter-spacing:0}
-.arrow{padding-top:23px}
+.who{margin-top:14px;font-size:24px;line-height:1.4;color:var(--ink-500);font-weight:400}
+.arrow{padding-top:21px}
 .arrow svg{display:block}
-.a{display:flex;gap:12px;align-items:flex-start;font-family:"League Spartan";font-weight:700;font-size:30px;line-height:1.15;letter-spacing:-.01em;color:var(--ink-700)}
-.a .tick{flex:none;width:32px;height:32px;border-radius:50%;background:var(--green);display:grid;place-items:center;margin-top:1px}
-.proof{background:#f3f7f8;color:var(--navy);border-radius:20px;padding:36px 48px;display:grid;grid-template-columns:auto 1fr;column-gap:56px;align-items:center}
-.proof .kicker{display:flex;align-items:flex-end;gap:14px;margin-bottom:20px;font-family:"League Spartan";font-weight:700;font-size:30px;line-height:1;letter-spacing:-.01em}
-.proof .klogo{height:34px;display:block}
+.a{display:flex;gap:14px;align-items:flex-start;font-family:"League Spartan";font-weight:700;font-size:40px;line-height:1.15;letter-spacing:-.01em;color:var(--navy)}
+.a .tick{flex:none;width:40px;height:40px;border-radius:50%;background:var(--green);display:grid;place-items:center;margin-top:3px}
+.proof{background:var(--surface);border-radius:24px;padding:44px 56px;display:grid;grid-template-columns:auto 1fr;column-gap:96px;align-items:center}
+.proof .kicker{display:flex;align-items:flex-end;gap:14px;margin-bottom:20px;font-family:"League Spartan";font-weight:700;font-size:34px;line-height:1;letter-spacing:-.01em}
+.proof .klogo{height:38px;display:block}
 .proof .kicker span{position:relative;top:4px}
-.proof .num{font-family:"League Spartan";font-weight:700;font-size:56px;line-height:1;letter-spacing:-.02em}
-.proof .cap{margin-top:8px;font-size:20px;color:var(--ink-500)}
-.proof .dev{font-size:24px;line-height:1.4;max-width:340px}
+.proof .num{font-family:"League Spartan";font-weight:700;font-size:64px;line-height:1;letter-spacing:-.02em}
+.proof .cap{margin-top:8px;font-size:22px;color:var(--ink-500)}
+.proof .dev{font-size:28px;line-height:1.4;max-width:520px}
 .proof .dev b{font-weight:600}
 .foot{display:flex;flex-direction:column;align-items:center}
-.foot .lbl{font-size:18px;color:var(--ink-500);margin-bottom:12px}
-.foot img.lms{height:40px;display:block}
+.foot .lbl{font-size:20px;color:var(--ink-500);margin-bottom:12px}
+.foot img.lms{height:48px;display:block}
 </style></head>
 <body><div class="canvas">
 
 <section class="rows">
   <div class="row">
-    <div><p class="q">“Same rubric, same essay, uploaded twice. <b>Two different grades.</b>”</p><p class="who">Job title, public university</p></div>
-    <div class="arrow"><svg width="32" height="16" viewBox="0 0 56 16" fill="none" stroke="#a9bcc4" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h44M42 2l6 6-6 6"/></svg></div>
-    <div class="a"><span class="tick"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#002333" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span>Trained on how instructors grade.</span></div>
+    <div><p class="q">“Same rubric, same essay, uploaded twice. <b>Two different grades.</b>”</p><p class="who">Director of teaching and learning, public university</p></div>
+    <div class="arrow"><svg width="40" height="16" viewBox="0 0 56 16" fill="none" stroke="#a9bcc4" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h44M42 2l6 6-6 6"/></svg></div>
+    <div class="a"><span class="tick"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#002333" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span>Trained on how instructors grade.</span></div>
   </div>
   <div class="row">
     <div><p class="q">“After a few essays it goes generic. <b>Every student gets the same feedback.</b>”</p><p class="who">Head of academic innovation, private university</p></div>
-    <div class="arrow"><svg width="32" height="16" viewBox="0 0 56 16" fill="none" stroke="#a9bcc4" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h44M42 2l6 6-6 6"/></svg></div>
-    <div class="a"><span class="tick"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#002333" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span>Feedback per student.</span></div>
+    <div class="arrow"><svg width="40" height="16" viewBox="0 0 56 16" fill="none" stroke="#a9bcc4" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h44M42 2l6 6-6 6"/></svg></div>
+    <div class="a"><span class="tick"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#002333" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span>Feedback per student.</span></div>
   </div>
   <div class="row">
     <div><p class="q">“You have to re-prompt it <b>for every single assignment.</b>”</p><p class="who">AVP instructional design, US technical college</p></div>
-    <div class="arrow"><svg width="32" height="16" viewBox="0 0 56 16" fill="none" stroke="#a9bcc4" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h44M42 2l6 6-6 6"/></svg></div>
-    <div class="a"><span class="tick"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#002333" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span>Set up once.</span></div>
+    <div class="arrow"><svg width="40" height="16" viewBox="0 0 56 16" fill="none" stroke="#a9bcc4" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h44M42 2l6 6-6 6"/></svg></div>
+    <div class="a"><span class="tick"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#002333" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span>Set up once.</span></div>
   </div>
 </section>
 

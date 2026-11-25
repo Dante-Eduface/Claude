@@ -18,7 +18,7 @@ HEAD, BODY = 'League Spartan', 'Inter'
 g = json.load(open('geometry.json'))
 
 prs = Presentation()
-prs.slide_width, prs.slide_height = E(1080), E(1350)
+prs.slide_width, prs.slide_height = E(1477), E(1260)   # 1 px = 2 mm op de print (2954 x 2520 mm)
 s = prs.slides.add_slide(prs.slide_layouts[6])
 
 def rect(x, y, w, h, fill, r=0):
@@ -63,35 +63,35 @@ def text(box, runs, *, font=BODY, size=32, color=NAVY, lh=None, spc=0.0, w_extra
 
 # --- drie rijen: klacht, pijl, vinkje, antwoord
 Q = [
-  ([('“Same rubric, same essay, uploaded twice. ', False), ('Two different grades.”', True)], 'Job title, public university', 'Trained on how instructors grade.'),
+  ([('“Same rubric, same essay, uploaded twice. ', False), ('Two different grades.”', True)], 'Director of teaching and learning, public university', 'Trained on how instructors grade.'),
   ([('“After a few essays it goes generic. ', False), ('Every student gets the same feedback.”', True)], 'Head of academic innovation, private university', 'Feedback per student.'),
   ([('“You have to re-prompt it ', False), ('for every single assignment.”', True)], 'AVP instructional design, US technical college', 'Set up once.'),
 ]
 for i, (q, who, a) in enumerate(Q):
-    text(g['q'][i], [(t, b, None) for t, b in q], size=44, lh=55, spc=-0.015, name=f'Klacht {i+1}')
-    text(g['who'][i], [(who, False, None)], size=22, color=INK500, lh=30.8, name=f'Bron {i+1}')
+    text(g['q'][i], [(t, b, None) for t, b in q], size=46, lh=57.5, spc=-0.015, name=f'Klacht {i+1}')
+    text(g['who'][i], [(who, False, None)], size=24, color=INK500, lh=33.6, name=f'Bron {i+1}')
     ax, ay, _, _ = g['arrow'][i]; k = g['arrow'][i][2] / 56; oy = ay + (16 - 16 * k) / 2
     m = lambda px, py: (ax + px * k, oy + py * k)
     stroke([[m(4, 8), m(48, 8)], [m(42, 2), m(48, 8), m(42, 14)]], INK300, 3.5 * k)
     tx, ty, d, _ = g['tick'][i]
     oval(tx, ty, d, GREEN)
-    ck = 16 / 24; off = (d - 16) / 2
+    ck = 20 / 24; off = (d - 20) / 2
     stroke([[(tx + off + px * ck, ty + off + py * ck) for px, py in [(5, 12.5), (9.5, 17), (19, 7.5)]]], NAVY, 3.2 * ck)
     ab = list(g['a'][i]); ab[2] = g['a'][0][2]
-    text(ab, [(a, True, None)], font=HEAD, size=30, lh=34.5, spc=-0.01, color='2C4A57', name=f'Antwoord {i+1}')
+    text(ab, [(a, True, None)], font=HEAD, size=40, lh=46, spc=-0.01, name=f'Antwoord {i+1}')
 
 # --- bewijsblok (licht vlak)
 px_, py_, pw, ph = g['proof']
-rect(px_, py_, pw, ph, 'F3F7F8', r=20).name = 'Bewijsblok'
+rect(px_, py_, pw, ph, 'F3F7F8', r=24).name = 'Bewijsblok'
 x, y, w, h = g['klogo']; s.shapes.add_picture('logo_navy_crop.png', E(x), E(y), E(w), E(h)).name = 'Eduface logo'
-text(g['kai'], [('AI', True, None)], font=HEAD, size=30, lh=30, spc=-0.01, w_extra=30, name='AI')
-text(g['num'], [('250,000', True, None)], font=HEAD, size=56, lh=56, spc=-0.02, w_extra=60, name='Getal')
-text(g['cap'], [('education-specific feedback examples', False, INK500)], size=20, lh=26, name='Toelichting getal')
+text(g['kai'], [('AI', True, None)], font=HEAD, size=34, lh=34, spc=-0.01, w_extra=30, name='AI')
+text(g['num'], [('250,000', True, None)], font=HEAD, size=64, lh=64, spc=-0.02, w_extra=60, name='Getal')
+text(g['cap'], [('education-specific feedback examples', False, INK500)], size=22, lh=28, w_extra=60, name='Toelichting getal')
 text(g['dev'], [('Developed with the help of ', False, None), ('Leiden University', True, None), (' and ', False, None), ('Radboud University.', True, None)],
-     size=24, lh=33.6, name='Ontwikkeld met')
+     size=28, lh=39.2, name='Ontwikkeld met')
 
 # --- voet, gecentreerd
-x, y, w, h = g['lbl']; text((x - 40, y, w + 80, h), [('Integrated with your LMS', False, INK500)], size=18, lh=21, align=PP_ALIGN.CENTER, name='LMS label')
+x, y, w, h = g['lbl']; text((x - 40, y, w + 80, h), [('Integrated with your LMS', False, INK500)], size=20, lh=24, align=PP_ALIGN.CENTER, name='LMS label')
 x, y, w, h = g['lms']; s.shapes.add_picture('lms_clean.png', E(x), E(y), E(w), E(h)).name = 'LMS-logos'
 
 # themastijl (schaduw-verwijzing) van alle vormen halen, zodat niets een ongevraagde schaduw krijgt

@@ -1,7 +1,7 @@
 const { chromium } = require('playwright');
 (async () => {
   const b = await chromium.launch();
-  const p = await b.newPage({ viewport: { width: 1080, height: 1350 } });
+  const p = await b.newPage({ viewport: { width: 1477, height: 1260 } });
   await p.goto('file://' + process.cwd() + '/redesign.html');
   await p.waitForTimeout(300);
   const g = await p.evaluate(() => {
