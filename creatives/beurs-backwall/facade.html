@@ -6,7 +6,9 @@
   * { margin: 0; box-sizing: border-box; }
   html, body { width: 3020px; height: 350px; }
   #f { position: relative; width: 3020px; height: 350px; overflow: hidden;
-       background: linear-gradient(90deg, #e6eef1 0%, #eff4f5 30%, #f7f8f6 62%, #fbf9f4 100%); }
+       background:
+         radial-gradient(ellipse 80% 45% at 90% 52%, #f9f8f7 0%, rgba(249,248,247,0) 100%),
+         linear-gradient(180deg, #dce7ee 0%, #e2edf1 20%, #ecf3f5 40%, #f4f6f6 55%, #eff3f3 70%, #e4edf1 90%, #dde8ee 100%); }  /* zelfde achtergrond als de backwall */
   .logo { position: absolute; left: 540px; top: 50%; width: 640px; transform: translateY(-50%); }
   .h { position: absolute; left: 1470px; top: 50%; transform: translateY(-50%); font: 700 100px/1.02 "League Spartan"; letter-spacing: -.02em; color: #002333; white-space: nowrap; }
   svg.dots { position: absolute; inset: 0; }
