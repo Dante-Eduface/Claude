@@ -7,11 +7,11 @@ const { chromium } = require('playwright');
   const g = await p.evaluate(() => {
     const r = e => { const b = e.getBoundingClientRect(); return [b.left, b.top, b.width, b.height].map(v => Math.round(v * 10) / 10); };
     const all = s => [...document.querySelectorAll(s)].map(r);
-    return { h1: r(document.querySelector('h1')), names: r(document.querySelector('.names')),
+    return { 
       q: all('.q'), who: all('.who'), tick: all('.tick'), arrow: all('.arrow svg'), a: all('.a > span:last-child'),
-      proof: r(document.querySelector('.proof')), kicker: r(document.querySelector('.kicker')), num: r(document.querySelector('.num')),
+      proof: r(document.querySelector('.proof')), kicker: r(document.querySelector('.kicker')), klogo: r(document.querySelector('.klogo')), kai: r(document.querySelector('.kicker span')), num: r(document.querySelector('.num')),
       cap: r(document.querySelector('.cap')), dev: r(document.querySelector('.dev')), lbl: r(document.querySelector('.lbl')),
-      lms: r(document.querySelector('img.lms')), logo: r(document.querySelector('img.logo')) };
+      lms: r(document.querySelector('img.lms')) };
   });
   require('fs').writeFileSync('geometry.json', JSON.stringify(g, null, 1));
   console.log(JSON.stringify(g));

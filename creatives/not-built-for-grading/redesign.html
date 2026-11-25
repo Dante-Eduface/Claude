@@ -9,56 +9,50 @@
 *{box-sizing:border-box;margin:0;padding:0}
 body{width:1080px;height:1350px;background:#fff;color:var(--navy);font-family:"Inter",sans-serif;-webkit-font-smoothing:antialiased}
 .canvas{width:1080px;height:1350px;padding:72px;display:flex;flex-direction:column;justify-content:space-between}
-h1{font-family:"League Spartan";font-weight:700;font-size:76px;line-height:1;letter-spacing:-.02em}
-.names{margin-top:16px;font-size:26px;color:var(--ink-500);font-weight:500}
-.rows{display:flex;flex-direction:column;gap:48px}
-.row{display:grid;grid-template-columns:1.12fr 48px .88fr;align-items:start}
-.q{font-size:32px;line-height:1.3;font-weight:500;letter-spacing:-.01em}
+.rows{display:flex;flex-direction:column;gap:72px}
+.row{display:grid;grid-template-columns:1.3fr 32px .7fr;column-gap:24px;align-items:start}
+.q{font-size:44px;line-height:1.25;font-weight:500;letter-spacing:-.015em}
 .q b{font-weight:700}
-.who{margin-top:12px;font-size:20px;line-height:1.4;color:var(--ink-500);font-weight:400;letter-spacing:0}
-.arrow{padding-top:15px}
+.who{margin-top:14px;font-size:22px;line-height:1.4;color:var(--ink-500);font-weight:400;letter-spacing:0}
+.arrow{padding-top:23px}
 .arrow svg{display:block}
-.a{display:flex;gap:20px;align-items:flex-start;font-family:"League Spartan";font-weight:700;font-size:40px;line-height:1.1;letter-spacing:-.015em}
-.a .tick{flex:none;width:44px;height:44px;border-radius:50%;background:var(--green);display:grid;place-items:center;margin-top:-2px}
-.proof{background:var(--navy);color:#fff;border-radius:20px;padding:48px;display:grid;grid-template-columns:auto 1fr;column-gap:56px;align-items:center}
-.proof .kicker{font-family:"League Spartan";font-weight:700;font-size:28px;letter-spacing:-.01em;margin-bottom:16px}
-.proof .num{font-family:"League Spartan";font-weight:700;font-size:128px;line-height:.95;letter-spacing:-.02em}
-.proof .cap{margin-top:12px;font-size:22px;color:var(--inverse-soft)}
-.proof .dev{font-size:26px;line-height:1.4;max-width:340px}
+.a{display:flex;gap:12px;align-items:flex-start;font-family:"League Spartan";font-weight:700;font-size:30px;line-height:1.15;letter-spacing:-.01em;color:var(--ink-700)}
+.a .tick{flex:none;width:32px;height:32px;border-radius:50%;background:var(--green);display:grid;place-items:center;margin-top:1px}
+.proof{background:#f3f7f8;color:var(--navy);border-radius:20px;padding:36px 48px;display:grid;grid-template-columns:auto 1fr;column-gap:56px;align-items:center}
+.proof .kicker{display:flex;align-items:flex-end;gap:14px;margin-bottom:20px;font-family:"League Spartan";font-weight:700;font-size:30px;line-height:1;letter-spacing:-.01em}
+.proof .klogo{height:34px;display:block}
+.proof .kicker span{position:relative;top:4px}
+.proof .num{font-family:"League Spartan";font-weight:700;font-size:56px;line-height:1;letter-spacing:-.02em}
+.proof .cap{margin-top:8px;font-size:20px;color:var(--ink-500)}
+.proof .dev{font-size:24px;line-height:1.4;max-width:340px}
 .proof .dev b{font-weight:600}
-.foot{display:flex;justify-content:space-between;align-items:flex-end}
+.foot{display:flex;flex-direction:column;align-items:center}
 .foot .lbl{font-size:18px;color:var(--ink-500);margin-bottom:12px}
-.foot img.lms{height:40px;display:block;margin-left:-4px}
-.foot img.logo{height:56px;display:block}
+.foot img.lms{height:40px;display:block}
 </style></head>
 <body><div class="canvas">
 
-<header>
-  <h1>Not built for grading.</h1>
-  <p class="names">ChatGPT, Gemini, Claude</p>
-</header>
-
 <section class="rows">
   <div class="row">
-    <div><p class="q">Same rubric, same essay, uploaded twice. <b>Two different grades.</b></p><p class="who">Job title, public university</p></div>
-    <div class="arrow"><svg width="48" height="16" viewBox="0 0 56 16" fill="none" stroke="#a9bcc4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h44M42 2l6 6-6 6"/></svg></div>
-    <div class="a"><span class="tick"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#002333" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span>Trained on how instructors grade.</span></div>
+    <div><p class="q">“Same rubric, same essay, uploaded twice. <b>Two different grades.</b>”</p><p class="who">Job title, public university</p></div>
+    <div class="arrow"><svg width="32" height="16" viewBox="0 0 56 16" fill="none" stroke="#a9bcc4" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h44M42 2l6 6-6 6"/></svg></div>
+    <div class="a"><span class="tick"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#002333" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span>Trained on how instructors grade.</span></div>
   </div>
   <div class="row">
-    <div><p class="q">After a few essays it goes generic. <b>Every student gets the same feedback.</b></p><p class="who">Head of academic innovation, private university</p></div>
-    <div class="arrow"><svg width="48" height="16" viewBox="0 0 56 16" fill="none" stroke="#a9bcc4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h44M42 2l6 6-6 6"/></svg></div>
-    <div class="a"><span class="tick"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#002333" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span>Feedback per student.</span></div>
+    <div><p class="q">“After a few essays it goes generic. <b>Every student gets the same feedback.</b>”</p><p class="who">Head of academic innovation, private university</p></div>
+    <div class="arrow"><svg width="32" height="16" viewBox="0 0 56 16" fill="none" stroke="#a9bcc4" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h44M42 2l6 6-6 6"/></svg></div>
+    <div class="a"><span class="tick"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#002333" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span>Feedback per student.</span></div>
   </div>
   <div class="row">
-    <div><p class="q">You have to re-prompt it <b>for every single assignment.</b></p><p class="who">AVP instructional design, US technical college</p></div>
-    <div class="arrow"><svg width="48" height="16" viewBox="0 0 56 16" fill="none" stroke="#a9bcc4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h44M42 2l6 6-6 6"/></svg></div>
-    <div class="a"><span class="tick"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#002333" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span>Set up once.</span></div>
+    <div><p class="q">“You have to re-prompt it <b>for every single assignment.</b>”</p><p class="who">AVP instructional design, US technical college</p></div>
+    <div class="arrow"><svg width="32" height="16" viewBox="0 0 56 16" fill="none" stroke="#a9bcc4" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h44M42 2l6 6-6 6"/></svg></div>
+    <div class="a"><span class="tick"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#002333" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span>Set up once.</span></div>
   </div>
 </section>
 
 <section class="proof">
   <div>
-    <p class="kicker">Eduface AI</p>
+    <div class="kicker"><img src="logo_navy_crop.png" class="klogo"><span>AI</span></div>
     <p class="num">250,000</p>
     <p class="cap">education-specific feedback examples</p>
   </div>
@@ -66,8 +60,7 @@ h1{font-family:"League Spartan";font-weight:700;font-size:76px;line-height:1;let
 </section>
 
 <footer class="foot">
-  <div><p class="lbl">Integrated with your LMS</p><img class="lms" src="lms_clean.png"></div>
-  <img class="logo" src="file:///home/user/Claude/Design/Merk/logos/logo_navy.png">
+  <p class="lbl">Integrated with your LMS</p><img class="lms" src="lms_clean.png">
 </footer>
 
 </div></body></html>

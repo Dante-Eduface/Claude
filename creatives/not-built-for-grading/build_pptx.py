@@ -45,13 +45,13 @@ def stroke(paths, color, width):
     etree.SubElement(ln, qn('a:round'))
     return sh
 
-def text(box, runs, *, font=BODY, size=32, color=NAVY, lh=None, spc=0.0, w_extra=0, name=None):
+def text(box, runs, *, font=BODY, size=32, color=NAVY, lh=None, spc=0.0, w_extra=0, name=None, align=PP_ALIGN.LEFT):
     x, y, w, h = box
     tb = s.shapes.add_textbox(E(x), E(y), E(w + w_extra), E(h))
     if name: tb.name = name
     tf = tb.text_frame; tf.word_wrap = True; tf.vertical_anchor = MSO_ANCHOR.TOP
     tf.margin_left = tf.margin_right = tf.margin_top = tf.margin_bottom = 0
-    p = tf.paragraphs[0]; p.alignment = PP_ALIGN.LEFT
+    p = tf.paragraphs[0]; p.alignment = align
     if lh: p.line_spacing = P(lh)
     for t, bold, col in runs:
         r = p.add_run(); r.text = t
@@ -60,41 +60,39 @@ def text(box, runs, *, font=BODY, size=32, color=NAVY, lh=None, spc=0.0, w_extra
     return tb
 
 # --- kop
-text(g['h1'], [('Not built for grading.', True, None)], font=HEAD, size=76, lh=76, spc=-0.02, w_extra=40, name='Titel')
-text(g['names'], [('ChatGPT, Gemini, Claude', False, None)], size=26, color=INK500, lh=31, name='Chatbots')
 
 # --- drie rijen: klacht, pijl, vinkje, antwoord
 Q = [
-  ([('Same rubric, same essay, uploaded twice. ', False), ('Two different grades.', True)], 'Job title, public university', 'Trained on how instructors grade.'),
-  ([('After a few essays it goes generic. ', False), ('Every student gets the same feedback.', True)], 'Head of academic innovation, private university', 'Feedback per student.'),
-  ([('You have to re-prompt it ', False), ('for every single assignment.', True)], 'AVP instructional design, US technical college', 'Set up once.'),
+  ([('“Same rubric, same essay, uploaded twice. ', False), ('Two different grades.”', True)], 'Job title, public university', 'Trained on how instructors grade.'),
+  ([('“After a few essays it goes generic. ', False), ('Every student gets the same feedback.”', True)], 'Head of academic innovation, private university', 'Feedback per student.'),
+  ([('“You have to re-prompt it ', False), ('for every single assignment.”', True)], 'AVP instructional design, US technical college', 'Set up once.'),
 ]
 for i, (q, who, a) in enumerate(Q):
-    text(g['q'][i], [(t, b, None) for t, b in q], size=32, lh=41.6, spc=-0.01, name=f'Klacht {i+1}')
-    text(g['who'][i], [(who, False, None)], size=20, color=INK500, lh=28, name=f'Bron {i+1}')
-    ax, ay, _, _ = g['arrow'][i]; k = 48 / 56; oy = ay + (16 - 16 * k) / 2
+    text(g['q'][i], [(t, b, None) for t, b in q], size=44, lh=55, spc=-0.015, name=f'Klacht {i+1}')
+    text(g['who'][i], [(who, False, None)], size=22, color=INK500, lh=30.8, name=f'Bron {i+1}')
+    ax, ay, _, _ = g['arrow'][i]; k = g['arrow'][i][2] / 56; oy = ay + (16 - 16 * k) / 2
     m = lambda px, py: (ax + px * k, oy + py * k)
-    stroke([[m(4, 8), m(48, 8)], [m(42, 2), m(48, 8), m(42, 14)]], INK300, 2.5)
+    stroke([[m(4, 8), m(48, 8)], [m(42, 2), m(48, 8), m(42, 14)]], INK300, 3.5 * k)
     tx, ty, d, _ = g['tick'][i]
     oval(tx, ty, d, GREEN)
-    ck = 22 / 24
-    stroke([[(tx + 11 + px * ck, ty + 11 + py * ck) for px, py in [(5, 12.5), (9.5, 17), (19, 7.5)]]], NAVY, 3.2 * ck)
+    ck = 16 / 24; off = (d - 16) / 2
+    stroke([[(tx + off + px * ck, ty + off + py * ck) for px, py in [(5, 12.5), (9.5, 17), (19, 7.5)]]], NAVY, 3.2 * ck)
     ab = list(g['a'][i]); ab[2] = g['a'][0][2]
-    text(ab, [(a, True, None)], font=HEAD, size=40, lh=44, spc=-0.015, name=f'Antwoord {i+1}')
+    text(ab, [(a, True, None)], font=HEAD, size=30, lh=34.5, spc=-0.01, color='2C4A57', name=f'Antwoord {i+1}')
 
-# --- bewijsblok
+# --- bewijsblok (licht vlak)
 px_, py_, pw, ph = g['proof']
-rect(px_, py_, pw, ph, NAVY, r=20).name = 'Bewijsblok'
-text(g['kicker'], [('Eduface AI', True, WHITE)], font=HEAD, size=28, lh=26, spc=-0.01, name='Productnaam')
-text(g['num'], [('250,000', True, WHITE)], font=HEAD, size=128, lh=121.6, spc=-0.02, w_extra=60, name='Getal')
-text(g['cap'], [('education-specific feedback examples', False, SOFT)], size=22, lh=26, name='Toelichting getal')
-text(g['dev'], [('Developed with the help of ', False, WHITE), ('Leiden University', True, WHITE), (' and ', False, WHITE), ('Radboud University.', True, WHITE)],
-     size=26, lh=36.4, name='Ontwikkeld met')
+rect(px_, py_, pw, ph, 'F3F7F8', r=20).name = 'Bewijsblok'
+x, y, w, h = g['klogo']; s.shapes.add_picture('logo_navy_crop.png', E(x), E(y), E(w), E(h)).name = 'Eduface logo'
+text(g['kai'], [('AI', True, None)], font=HEAD, size=30, lh=30, spc=-0.01, w_extra=30, name='AI')
+text(g['num'], [('250,000', True, None)], font=HEAD, size=56, lh=56, spc=-0.02, w_extra=60, name='Getal')
+text(g['cap'], [('education-specific feedback examples', False, INK500)], size=20, lh=26, name='Toelichting getal')
+text(g['dev'], [('Developed with the help of ', False, None), ('Leiden University', True, None), (' and ', False, None), ('Radboud University.', True, None)],
+     size=24, lh=33.6, name='Ontwikkeld met')
 
-# --- voet
-text(g['lbl'], [('Integrated with your LMS', False, INK500)], size=18, lh=21, name='LMS label')
+# --- voet, gecentreerd
+x, y, w, h = g['lbl']; text((x - 40, y, w + 80, h), [('Integrated with your LMS', False, INK500)], size=18, lh=21, align=PP_ALIGN.CENTER, name='LMS label')
 x, y, w, h = g['lms']; s.shapes.add_picture('lms_clean.png', E(x), E(y), E(w), E(h)).name = 'LMS-logos'
-x, y, w, h = g['logo']; s.shapes.add_picture('/home/user/Claude/Design/Merk/logos/logo_navy.png', E(x), E(y), E(w), E(h)).name = 'Eduface logo'
 
 # themastijl (schaduw-verwijzing) van alle vormen halen, zodat niets een ongevraagde schaduw krijgt
 for sh in s.shapes:
