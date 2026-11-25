@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Beurs backwall</title>
+<style>
+  /* Canvas: 1 px = 1 mm. Wand is 2954 x 2520 mm. Onderste derde (vanaf y 1700) blijft leeg: dat zit aan de grond. */
+  @font-face { font-family: "League Spartan"; font-weight: 700; src: url("../../Design/Merk/fonts/LeagueSpartan-Bold.ttf"); }
+  @font-face { font-family: "Inter"; font-weight: 400; src: url("../../Design/Merk/fonts/Inter-Regular.ttf"); }
+  :root { --w: 2954px; --h: 2520px; --navy: #002333; --gd: #007b54; --g: #00e075; --i7: #2c4a57; --i5: #5b7480; --i3: #a9bcc4; --i2: #cdd9de; --i50: #f3f7f8; --red: #b3261e; }
+  * { margin: 0; box-sizing: border-box; }
+  html, body { width: var(--w); height: var(--h); }
+  .wall {
+    position: relative; width: var(--w); height: var(--h); overflow: hidden; color: var(--navy);
+    background:
+      radial-gradient(ellipse 80% 45% at 90% 52%, #f9f8f7 0%, rgba(249,248,247,0) 100%),
+      linear-gradient(180deg, #dce7ee 0%, #e2edf1 20%, #ecf3f5 40%, #f4f6f6 55%, #eff3f3 70%, #e4edf1 90%, #dde8ee 100%);
+  }
+  .abs { position: absolute; }
+  .logo { position: absolute; right: 128px; bottom: 128px; width: 420px; height: auto; }
+
+  .h1 { position: absolute; left: 128px; top: 96px; font: 700 168px/.98 "League Spartan"; letter-spacing: -.025em; color: var(--navy); white-space: nowrap; }
+  .h1 em { font-style: normal; color: var(--gd); }
+
+  /* verticaal: titel, quotes, rode band, drie kaarten. 3 kolommen: x 128, 1047, 1966, breed 860. */
+  .q { position: absolute; top: 500px; width: 860px; display: flex; gap: 22px; }
+  .qm { font: 700 150px/.8 "League Spartan"; color: var(--i3); width: 76px; flex: none; margin-top: 6px; }
+  .qt { font: 400 52px/1.2 Inter; color: var(--navy); }
+  .qa { font: 400 34px/1.2 Inter; color: var(--i5); margin-top: 18px; }
+
+  .band { position: absolute; left: 128px; top: 872px; width: 2698px; height: 214px; border-radius: 56px; background: var(--red);
+    padding: 34px; display: flex; gap: 24px; box-shadow: 0 12px 30px rgba(179,38,30,.28), 0 50px 110px rgba(0,35,51,.22); }
+  .no { flex: 1; border-radius: 34px; background: rgba(255,255,255,.14); box-shadow: inset 0 0 0 4px rgba(255,255,255,.45); display: flex; align-items: center; gap: 30px; padding: 0 40px; color: #fff; }
+  .no img { width: 82px; height: 82px; filter: brightness(0) invert(1); }
+  .no .n1 { font: 700 70px/1 "League Spartan"; letter-spacing: -.01em; white-space: nowrap; }
+  .no .n2 { font: 400 36px/1 Inter; color: rgba(255,255,255,.85); margin-top: 10px; }
+
+  .adv { position: absolute; top: 1160px; width: 860px; height: 530px; padding: 48px; border-radius: 56px; background: var(--navy); color: #fff;
+    box-shadow: 0 14px 34px rgba(0,35,51,.28), 0 60px 130px rgba(0,35,51,.34); }
+  .adv .top { display: flex; justify-content: space-between; align-items: flex-start; }
+  .num { width: 88px; height: 88px; border-radius: 50%; background: var(--g); color: var(--navy); display: flex; align-items: center; justify-content: center; font: 700 56px/1 "League Spartan"; }
+  .ic { width: 160px; height: 160px; border-radius: 44px; background: rgba(255,255,255,.1); display: flex; align-items: center; justify-content: center; }
+  .a1 { font: 700 68px/1.02 "League Spartan"; letter-spacing: -.01em; margin-top: 30px; }
+  .a1 span { color: var(--g); }
+  .a2 { font: 400 42px/1.22 Inter; color: rgba(255,255,255,.78); margin-top: 16px; }
+
+  .link { position: absolute; width: 76px; height: 76px; border-radius: 50%; background: var(--navy); display: flex; align-items: center; justify-content: center; border: 6px solid #fff; box-shadow: 0 8px 20px rgba(0,35,51,.30); z-index: 5; left: 1439px; }
+</style>
+</head>
+<body>
+  <div class="wall" id="wall">
+    <div id="layer-content"></div>
+    <img class="logo" src="../../Design/Merk/logos/logo_navy.png" alt="Eduface">
+  </div>
+
+<script>
+const N='#002333', G='#00e075', W='#fff';
+const L=(f)=>`assets/logos/${f}.svg`;
+const chevD=`<svg width="40" height="40" viewBox="0 0 30 30"><polyline points="7,11 15,20 23,11" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+const sv=(inner,s=136)=>`<svg width="${s}" height="${s}" viewBox="0 0 400 400">${inner}</svg>`;
+
+/* Quotes: bron Eduface case study 25-11-2026, licht bewerkt voor correct Engels. Functie anoniem. */
+const Q=[
+ {q:'We didn\u2019t find any platform that can mark and give feedback the way a teacher does.', a:'Head of academic innovation, private university'},
+ {q:'At some point it gets generic: every student gets the same feedback.', a:'Head of academic innovation, private university'},
+ {q:'You would have to prompt the agent every single time.', a:'AVP instructional design, US technical college'}
+];
+const X=[128,1047,1966];
+const quotes=Q.map((r,i)=>`<div class="q" style="left:${X[i]}px"><div class="qm">\u201C</div><div><div class="qt">${r.q}</div><div class="qa">${r.a}</div></div></div>`).join('');
+
+const no=(img,name)=>`<div class="no"><img src="${L(img)}"><div><div class="n1">No ${name}</div><div class="n2">Not built for marking</div></div></div>`;
+const band=`<div class="band">${no('openai','ChatGPT')}${no('googlegemini','Gemini')}${no('claude','Claude')}</div>`;
+
+/* iconen (wit op navy, groene accenten) */
+const icTeacher=sv(`<circle cx="150" cy="108" r="64" fill="none" stroke="${W}" stroke-width="30"/><path d="M36,340 C36,236 264,236 264,340" fill="none" stroke="${W}" stroke-width="30" stroke-linecap="round"/><circle cx="312" cy="294" r="62" fill="${G}"/><polyline points="282,294 304,316 342,270" fill="none" stroke="${N}" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>`);
+const icBubbles=sv(`<rect x="30" y="34" width="230" height="104" rx="38" fill="none" stroke="${W}" stroke-width="26"/><rect x="60" y="68" width="110" height="18" rx="9" fill="${W}"/>
+  <rect x="140" y="156" width="230" height="104" rx="38" fill="rgba(255,255,255,.14)" stroke="${W}" stroke-width="26"/><rect x="172" y="190" width="150" height="18" rx="9" fill="${W}"/>
+  <rect x="30" y="278" width="230" height="104" rx="38" fill="none" stroke="${W}" stroke-width="26"/><rect x="60" y="312" width="84" height="18" rx="9" fill="${G}"/>`);
+const icSheets=sv(`<rect x="130" y="24" width="220" height="270" rx="30" fill="none" stroke="${W}" stroke-width="22" opacity=".4"/>
+  <rect x="90" y="64" width="220" height="270" rx="30" fill="none" stroke="${W}" stroke-width="22" opacity=".7"/>
+  <rect x="44" y="108" width="220" height="270" rx="30" fill="${N}" stroke="${W}" stroke-width="26"/>
+  ${[160,222,284].map(y=>`<polyline points="76,${y} 92,${y+16} 118,${y-14}" fill="none" stroke="${G}" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/><rect x="134" y="${y-8}" width="98" height="14" rx="7" fill="${W}"/>`).join('')}`);
+
+const ADV=[
+ {ic:icTeacher, h:'Trained on how <span>teachers mark.</span>', t:'Our own model. You approve or change every grade.'},
+ {ic:icBubbles, h:'Feedback <span>per student.</span>', t:'Based on their own answer and the course material.'},
+ {ic:icSheets,  h:'Set up <span>once.</span>', t:'Rubric and instructions per assignment, copied across courses.'}
+];
+const adv=ADV.map((r,i)=>`<div class="adv" style="left:${X[i]}px"><div class="top"><div class="num">${i+1}</div><div class="ic">${r.ic}</div></div><div class="a1">${r.h}</div><div class="a2">${r.t}</div></div>`).join('');
+
+document.getElementById('layer-content').innerHTML =
+ `<div class="h1">Generic AI doesn't grade<br>like a teacher. <em>Eduface does.</em></div>${quotes}
+  <div class="link" style="top:806px">${chevD}</div>${band}<div class="link" style="top:1096px">${chevD}</div>${adv}`;
+</script>
+</body>
+</html>

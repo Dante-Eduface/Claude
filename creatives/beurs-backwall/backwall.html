@@ -22,20 +22,30 @@
   .h1 { position: absolute; left: 128px; top: 96px; font: 700 168px/.98 "League Spartan"; letter-spacing: -.025em; color: var(--navy); white-space: nowrap; }
   .h1 em { font-style: normal; color: var(--gd); }
 
-  /* verticaal: titel, quotes, rode band, drie kaarten. 3 kolommen: x 128, 1047, 1966, breed 860. */
-  .q { position: absolute; top: 500px; width: 860px; display: flex; gap: 22px; }
-  .qm { font: 700 150px/.8 "League Spartan"; color: var(--i3); width: 76px; flex: none; margin-top: 6px; }
-  .qt { font: 400 52px/1.2 Inter; color: var(--navy); }
-  .qa { font: 400 34px/1.2 Inter; color: var(--i5); margin-top: 18px; }
+  /* verticaal: titel, een rode zone (quotes + gebruikte tools), drie Eduface-kaarten. */
+  .red { position: absolute; left: 128px; top: 484px; width: 2698px; height: 640px; border-radius: 56px; background: var(--red);
+    padding: 40px 44px 44px; display: flex; flex-direction: column; gap: 28px;
+    box-shadow: 0 12px 30px rgba(179,38,30,.28), 0 50px 110px rgba(0,35,51,.22); }
+  .rhead { display: flex; align-items: center; justify-content: space-between; height: 100px; flex-shrink: 0; }
+  .rtitle { font: 700 76px/1 "League Spartan"; letter-spacing: -.015em; color: #fff; }
+  .rlogos { display: flex; gap: 22px; }
+  .rl { width: 100px; height: 100px; border-radius: 28px; background: rgba(255,255,255,.14); box-shadow: inset 0 0 0 4px rgba(255,255,255,.4); display: flex; align-items: center; justify-content: center; }
+  .rl img { width: 58px; height: 58px; filter: brightness(0) invert(1); }
 
-  .band { position: absolute; left: 128px; top: 872px; width: 2698px; height: 214px; border-radius: 56px; background: var(--red);
-    padding: 34px; display: flex; gap: 24px; box-shadow: 0 12px 30px rgba(179,38,30,.28), 0 50px 110px rgba(0,35,51,.22); }
-  .no { flex: 1; border-radius: 34px; background: rgba(255,255,255,.14); box-shadow: inset 0 0 0 4px rgba(255,255,255,.45); display: flex; align-items: center; gap: 30px; padding: 0 40px; color: #fff; }
-  .no img { width: 82px; height: 82px; filter: brightness(0) invert(1); }
-  .no .n1 { font: 700 70px/1 "League Spartan"; letter-spacing: -.01em; white-space: nowrap; }
-  .no .n2 { font: 400 36px/1 Inter; color: rgba(255,255,255,.85); margin-top: 10px; }
+  .rcards { display: flex; gap: 28px; flex: 1; min-height: 0; }
+  .qc { background: #fff; border-radius: 40px; padding: 40px 48px 36px; display: flex; flex-direction: column; justify-content: space-between; }
+  .qc.wide { flex: 1.22; } .qc.single { flex: 1; }
+  .qs { display: flex; gap: 52px; }
+  .qone { flex: 1; display: flex; gap: 18px; }
+  .qm { font: 700 130px/.8 "League Spartan"; color: var(--i3); width: 62px; flex: none; margin-top: 4px; }
+  .qt { font: 400 48px/1.2 Inter; color: var(--navy); }
+  .qc.single .qt { font-size: 52px; }
+  .qfoot { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+  .who { font: 400 34px/1.2 Inter; color: var(--i5); }
+  .tool { display: flex; align-items: center; gap: 16px; background: var(--i50); border-radius: 26px; padding: 14px 26px; font: 400 36px/1 Inter; color: var(--i7); white-space: nowrap; }
+  .tool img { width: 46px; height: 46px; opacity: .8; }
 
-  .adv { position: absolute; top: 1160px; width: 860px; height: 530px; padding: 48px; border-radius: 56px; background: var(--navy); color: #fff;
+  .adv { position: absolute; top: 1160px; width: 860px; height: 520px; padding: 48px; border-radius: 56px; background: var(--navy); color: #fff;
     box-shadow: 0 14px 34px rgba(0,35,51,.28), 0 60px 130px rgba(0,35,51,.34); }
   .adv .top { display: flex; justify-content: space-between; align-items: flex-start; }
   .num { width: 88px; height: 88px; border-radius: 50%; background: var(--g); color: var(--navy); display: flex; align-items: center; justify-content: center; font: 700 56px/1 "League Spartan"; }
@@ -43,8 +53,6 @@
   .a1 { font: 700 68px/1.02 "League Spartan"; letter-spacing: -.01em; margin-top: 30px; }
   .a1 span { color: var(--g); }
   .a2 { font: 400 42px/1.22 Inter; color: rgba(255,255,255,.78); margin-top: 16px; }
-
-  .link { position: absolute; width: 76px; height: 76px; border-radius: 50%; background: var(--navy); display: flex; align-items: center; justify-content: center; border: 6px solid #fff; box-shadow: 0 8px 20px rgba(0,35,51,.30); z-index: 5; left: 1439px; }
 </style>
 </head>
 <body>
@@ -60,16 +68,17 @@ const chevD=`<svg width="40" height="40" viewBox="0 0 30 30"><polyline points="7
 const sv=(inner,s=136)=>`<svg width="${s}" height="${s}" viewBox="0 0 400 400">${inner}</svg>`;
 
 /* Quotes: bron Eduface case study 25-11-2026, licht bewerkt voor correct Engels. Functie anoniem. */
-const Q=[
- {q:'We didn\u2019t find any platform that can mark and give feedback the way a teacher does.', a:'Head of academic innovation, private university'},
- {q:'At some point it gets generic: every student gets the same feedback.', a:'Head of academic innovation, private university'},
- {q:'You would have to prompt the agent every single time.', a:'AVP instructional design, US technical college'}
-];
-const X=[128,1047,1966];
-const quotes=Q.map((r,i)=>`<div class="q" style="left:${X[i]}px"><div class="qm">\u201C</div><div><div class="qt">${r.q}</div><div class="qa">${r.a}</div></div></div>`).join('');
-
-const no=(img,name)=>`<div class="no"><img src="${L(img)}"><div><div class="n1">No ${name}</div><div class="n2">Not built for marking</div></div></div>`;
-const band=`<div class="band">${no('openai','ChatGPT')}${no('googlegemini','Gemini')}${no('claude','Claude')}</div>`;
+const platformIc=`<svg width="46" height="46" viewBox="0 0 46 46"><rect x="4" y="4" width="16" height="16" rx="4" fill="#5b7480"/><rect x="26" y="4" width="16" height="16" rx="4" fill="#5b7480" opacity=".6"/><rect x="4" y="26" width="16" height="16" rx="4" fill="#5b7480" opacity=".6"/><rect x="26" y="26" width="16" height="16" rx="4" fill="#5b7480"/></svg>`;
+const quote=(t,cls='')=>`<div class="qone"><div class="qm">\u201C</div><div class="qt">${t}</div></div>`;
+const rl=(img)=>`<div class="rl"><img src="${L(img)}"></div>`;
+const red=`<div class="red">
+  <div class="rhead"><div class="rtitle">Not built for marking.</div><div class="rlogos">${rl('openai')}${rl('googlegemini')}${rl('claude')}</div></div>
+  <div class="rcards">
+    <div class="qc wide"><div class="qs">${quote('We didn\u2019t find any platform that can mark and give feedback the way a teacher does.')}${quote('At some point it gets generic: every student gets the same feedback.')}</div>
+      <div class="qfoot"><div class="who">Head of academic innovation, private university</div><div class="tool">${platformIc}Other AI grading platforms</div></div></div>
+    <div class="qc single"><div class="qs">${quote('You would have to prompt the agent every single time.')}</div>
+      <div class="qfoot"><div class="who">AVP instructional design,<br>US technical college</div><div class="tool"><img src="${L('openai')}">ChatGPT agents</div></div></div>
+  </div></div>`;
 
 /* iconen (wit op navy, groene accenten) */
 const icTeacher=sv(`<circle cx="150" cy="108" r="64" fill="none" stroke="${W}" stroke-width="30"/><path d="M36,340 C36,236 264,236 264,340" fill="none" stroke="${W}" stroke-width="30" stroke-linecap="round"/><circle cx="312" cy="294" r="62" fill="${G}"/><polyline points="282,294 304,316 342,270" fill="none" stroke="${N}" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>`);
@@ -81,6 +90,7 @@ const icSheets=sv(`<rect x="130" y="24" width="220" height="270" rx="30" fill="n
   <rect x="44" y="108" width="220" height="270" rx="30" fill="${N}" stroke="${W}" stroke-width="26"/>
   ${[160,222,284].map(y=>`<polyline points="76,${y} 92,${y+16} 118,${y-14}" fill="none" stroke="${G}" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/><rect x="134" y="${y-8}" width="98" height="14" rx="7" fill="${W}"/>`).join('')}`);
 
+const X=[128,1047,1966];
 const ADV=[
  {ic:icTeacher, h:'Trained on how <span>teachers mark.</span>', t:'Our own model. You approve or change every grade.'},
  {ic:icBubbles, h:'Feedback <span>per student.</span>', t:'Based on their own answer and the course material.'},
@@ -89,8 +99,7 @@ const ADV=[
 const adv=ADV.map((r,i)=>`<div class="adv" style="left:${X[i]}px"><div class="top"><div class="num">${i+1}</div><div class="ic">${r.ic}</div></div><div class="a1">${r.h}</div><div class="a2">${r.t}</div></div>`).join('');
 
 document.getElementById('layer-content').innerHTML =
- `<div class="h1">Generic AI doesn't grade<br>like a teacher. <em>Eduface does.</em></div>${quotes}
-  <div class="link" style="top:806px">${chevD}</div>${band}<div class="link" style="top:1096px">${chevD}</div>${adv}`;
+ `<div class="h1">Generic AI doesn't grade<br>like a teacher. <em>Eduface does.</em></div>${red}${adv}`;
 </script>
 </body>
 </html>
