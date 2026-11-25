@@ -7,7 +7,7 @@
 <style>
   /* Canvas: 1 px = 1 mm. Wand 2954 x 2520 mm. De kop van de gevel staat NIET op de wand. Elk vlak heeft zijn eigen kop.
      Links licht = generieke AI tools (het probleem), rechts donker = Eduface (de oplossing). Per rij een paar, op één lijn.
-     Iconen: Lucide (ISC). Lettersysteem: L 88 Inter (quotes) / M 84 League Spartan (koppen) / S 46 Inter (bronnen, labels) / XL 150 Spartan (alleen het getal). */
+     Iconen: Lucide (ISC). Lettersysteem: L 84 Inter (quotes) / M 84 League Spartan (koppen) / S 46 Inter (bronnen, labels) / XL 150 Spartan (alleen het getal). */
   @font-face { font-family: "League Spartan"; font-weight: 700; src: url("../../Design/Merk/fonts/LeagueSpartan-Bold.ttf"); }
   @font-face { font-family: "Inter"; font-weight: 400; src: url("../../Design/Merk/fonts/Inter-Regular.ttf"); }
   :root { --w: 2954px; --h: 2520px; --navy: #002333; --gd: #007b54; --g: #00e075; --i7: #2c4a57; --i5: #5b7480; --i3: #a9bcc4; --i2: #cdd9de; --i50: #f3f7f8; --red: #b3261e; }
@@ -21,7 +21,7 @@
   }
   .logo { position: absolute; right: 128px; bottom: 128px; width: 420px; height: auto; }
 
-  .g { position: absolute; left: 128px; top: 128px; width: 2698px; display: grid; grid-template-columns: 1500px 96px 1102px; grid-template-rows: auto auto auto auto auto; }
+  .g { position: absolute; left: 128px; top: 128px; width: 2698px; display: grid; grid-template-columns: 1600px 96px 1002px; grid-template-rows: auto auto auto auto auto; }
   .pl, .pr { grid-row: 1 / 6; border-radius: 56px; }
   .pl { grid-column: 1; background: #fff; box-shadow: 0 10px 28px rgba(0,35,51,.08), 0 50px 110px rgba(0,35,51,.16); }
   .pr { grid-column: 3; background: var(--navy); box-shadow: 0 14px 34px rgba(0,35,51,.28), 0 60px 130px rgba(0,35,51,.34); }
@@ -30,21 +30,23 @@
   .cr { grid-column: 3; padding: 30px 68px; gap: 44px; color: #fff; }
   .cm { grid-column: 2; justify-content: center; }
   .r0 { grid-row: 1; } .r1 { grid-row: 2; } .r2 { grid-row: 3; } .r3 { grid-row: 4; } .r4 { grid-row: 5; }
-  .r0.cl, .r0.cr { padding-top: 64px; padding-bottom: 20px; height: 180px; }
-  .r4.cl, .r4.cr { padding-bottom: 64px; }
+  .r0.cl, .r0.cr { padding-top: 52px; padding-bottom: 36px; height: 170px; }
+  .pair { flex-direction: column; align-items: flex-start; justify-content: flex-start; gap: 14px; padding-top: 18px; padding-bottom: 18px; }
+  .cm.pair { flex-direction: row; justify-content: center; align-items: flex-start; padding-top: 50px; }
+  .r4.cl, .r4.cr { padding-bottom: 52px; }
 
   /* koppen: bepalen meteen wat eronder staat */
   .hd { font: 700 96px/1 "League Spartan"; letter-spacing: -.02em; color: var(--navy); }
   .r0.cr img { height: 104px; width: auto; }
 
-  .it { flex: none; width: 170px; height: 170px; border-radius: 44px; display: flex; align-items: center; justify-content: center; }
-  .it svg { width: 100px; height: 100px; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; stroke: var(--navy); }
+  .it { flex: none; width: 124px; height: 124px; border-radius: 34px; display: flex; align-items: center; justify-content: center; }
+  .it svg { width: 76px; height: 76px; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; stroke: var(--navy); }
   .cl .it { background: #e6edf0; }
   .cr .it { background: var(--g); }
   .cm svg { width: 64px; height: 64px; fill: none; stroke: var(--i3); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
 
-  .qt { font: 400 88px/1.16 Inter; color: var(--navy); letter-spacing: -.005em; }
-  .qt .qm { font: 700 88px/1 "League Spartan"; color: var(--i3); margin-right: 8px; }
+  .qt { font: 400 84px/1.16 Inter; color: var(--navy); letter-spacing: -.005em; }
+  .qt .qm { font: 700 84px/1 "League Spartan"; color: var(--i3); margin-right: 8px; }
   .qt mark { background: rgba(0,35,51,.08); color: inherit; padding: 0 12px; margin: 0 -12px; border-radius: 14px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
   .who { font: 400 46px/1.2 Inter; color: var(--i5); margin-top: 16px; }
   .eh { font: 700 84px/1.1 "League Spartan"; letter-spacing: -.015em; color: #fff; }
@@ -91,9 +93,9 @@ const A=[{ic:'graduation-cap',h:'Trained on how <span>instructors grade.</span>'
 let h='<div class="pl"></div><div class="pr"></div>';
 h+=`<div class="cl r0"><div class="hd">Generic AI tools</div></div><div class="cr r0"><img src="assets/logos/eduface-white.png"></div>`;
 Q.forEach((q,i)=>{
-  h+=`<div class="cl r${i+1}"><div class="it">${ic(q.ic)}</div><div><div class="qt"><span class="qm">“</span>${q.t}</div><div class="who">${q.w}</div></div></div>`;
-  h+=`<div class="cm r${i+1}">${ic('arrow-right')}</div>`;
-  h+=`<div class="cr r${i+1}"><div class="it">${ic(A[i].ic)}</div><div class="eh">${A[i].h}</div></div>`;
+  h+=`<div class="cl pair r${i+1}"><div class="it">${ic(q.ic)}</div><div><div class="qt"><span class="qm">“</span>${q.t}</div><div class="who">${q.w}</div></div></div>`;
+  h+=`<div class="cm pair r${i+1}">${ic('arrow-right')}</div>`;
+  h+=`<div class="cr pair r${i+1}"><div class="it">${ic(A[i].ic)}</div><div class="eh">${A[i].h}</div></div>`;
 });
 const x=`<div class="x"><svg width="54" height="54" viewBox="0 0 54 54"><path d="M18,18 L36,36 M36,18 L18,36" stroke="#fff" stroke-width="6" stroke-linecap="round"/></svg></div>`;
 const tool=(img,name)=>`<div class="tl"><img src="${L(img)}">${name}${x}</div>`;
