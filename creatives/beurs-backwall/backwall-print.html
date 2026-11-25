@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Backwall drukvariant</title>
+<style>
+  /* Canvas: 1 px = 1 mm. Wand 2954 x 2520 mm. De kop van de gevel staat NIET op de wand.
+     Links licht = Chatbots (het probleem, twee quotes), rechts navy = Eduface (een boodschap + productscreenshot).
+     Daaronder een rustig wit blok (250,000 en Eduface AI), dan de LMS-rij gecentreerd.
+     Lettersysteem: Inter 92 (quotes) / League Spartan 92 (kop rechts) / League Spartan 76 (vlakkoppen) / Inter 46 (bronnen, labels). */
+  @font-face { font-family: "League Spartan"; font-weight: 700; src: url("../../Design/Merk/fonts/LeagueSpartan-Bold.ttf"); }
+  @font-face { font-family: "Inter"; font-weight: 400; src: url("../../Design/Merk/fonts/Inter-Regular.ttf"); }
+  @font-face { font-family: "Inter"; font-weight: 700; src: local("Inter Bold"), local("Inter-Bold"), url("file:///usr/share/fonts/opentype/inter/Inter-Bold.otf"); }
+  :root { --w: 2954px; --h: 2520px; --navy: #002333; --g: #00e075; --g6: #008f5a; --i7: #2c4a57; --i5: #5b7480; --i3: #a9bcc4; --i50: #f3f7f8; }
+  * { margin: 0; box-sizing: border-box; }
+  html, body { width: var(--w); height: var(--h); }
+  .wall { margin-right: -6px; margin-bottom: -6px; }
+  .wall {
+    position: relative; width: calc(var(--w) + 6px); height: calc(var(--h) + 6px); overflow: hidden; color: var(--navy);
+    background:
+      radial-gradient(ellipse 80% 45% at 90% 52%, #f9f8f7 0%, rgba(249,248,247,0) 100%),
+      linear-gradient(180deg, #dce7ee 0%, #e2edf1 20%, #ecf3f5 40%, #f4f6f6 55%, #eff3f3 70%, #e4edf1 90%, #dde8ee 100%);
+  }
+  .g { position: absolute; left: 142px; top: 142px; width: 2670px; display: grid; grid-template-columns: 1317px 1317px; column-gap: 36px; }
+  .pl, .pr { border-radius: 56px; box-shadow: 0 24px 60px rgba(0,35,51,.10); }
+  .pl { grid-column: 1; grid-row: 1; background: #fff; box-shadow: 0 24px 60px rgba(0,35,51,.10); color: var(--navy); padding: 84px 68px 64px 118px; display: flex; flex-direction: column; justify-content: flex-start; gap: 52px; }
+  .pr { grid-column: 2; grid-row: 1; background: var(--navy); box-shadow: 0 24px 60px rgba(0,35,51,.22); padding: 84px 68px 68px 68px; display: flex; flex-direction: column; gap: 52px; color: #fff; }
+
+  .hd { font: 700 76px/1 "League Spartan"; letter-spacing: -.02em; color: var(--navy); height: 84px; display: flex; align-items: center; }
+  .pr img.lg { height: 84px; width: auto; align-self: flex-start; }
+
+  .qt { font: 400 100px/1.14 Inter; color: var(--i7); letter-spacing: -.01em; }
+  .qt .qm { font: 700 100px/1 "League Spartan"; color: var(--g6); margin-right: 8px; }
+  .qt mark { background: none; color: var(--navy); font-weight: 700; }
+  .who { font: 400 50px/1.2 Inter; color: var(--i5); margin-top: 20px; }
+  .qs { flex: 1; display: flex; flex-direction: column; justify-content: space-between; }
+  .dv { height: 2px; background: rgba(0,35,51,.12); }
+  .qs .q:first-child .qt { position: relative; top: -10px; }   /* bovenkant tekst gelijk met de kop rechts */
+
+  .eh { font: 700 112px/1.06 "League Spartan"; letter-spacing: -.02em; color: #fff; }
+  .eh span { color: var(--g); }
+  /* nagebouwd voorbeeld van het reviewscherm (Economics, UK). Verzonnen inhoud, daarom gelabeld als Example. */
+  .mock { margin-top: auto; width: 100%; display: flex; flex-direction: column; gap: 22px; font-family: Inter, sans-serif; color: var(--navy); }
+  .m1, .m2 { border-radius: 34px; padding: 34px 40px; box-shadow: 0 4px 12px rgba(0,35,51,.08), 0 18px 40px rgba(0,35,51,.12); }
+  .m1 { background: #fff; border: 2px solid #e6edf0; }
+  .m2 { background: #f2f7f8; border: 2px solid #e6edf0; }
+  .m1 .top { display: flex; align-items: center; gap: 16px; }
+  .m1 .qn { font: 700 34px/1 Inter; } .m2 .qn { font: 700 34px/1 Inter; }
+  .pill2 { font: 400 26px/1 Inter; border: 2px solid #cdd9de; border-radius: 12px; padding: 6px 14px; color: var(--i7); }
+  .ex { margin-left: auto; font: 700 24px/1 Inter; letter-spacing: .06em; text-transform: uppercase; color: var(--i5); }
+  .m1 .q { font: 500 36px/1.25 Inter; margin: 22px 0 22px; }
+  .m1 hr { border: 0; border-top: 2px solid #e6edf0; margin: 0 0 20px; }
+  .who2 { display: flex; align-items: center; gap: 14px; font: 700 28px/1 Inter; }
+  .who2 .av { width: 44px; height: 44px; border-radius: 50%; background: #e4f0f2; display: flex; align-items: center; justify-content: center; font: 500 24px/1 Inter; }
+  .who2 .an { font-weight: 400; color: var(--i5); }
+  .ans { font: 400 32px/1.3 Inter; color: var(--i7); margin-top: 16px; }
+  .m2 .hdr { display: flex; justify-content: space-between; align-items: baseline; }
+  .m2 .met { font: 700 26px/1 Inter; color: var(--i5); }
+  .crit { display: flex; flex-direction: column; gap: 12px; margin: 20px 0 22px; }
+  .cr { display: flex; align-items: center; gap: 16px; font: 400 28px/1.2 Inter; }
+  .cr svg { flex: none; width: 36px; height: 36px; }
+  .cr.no { color: var(--i5); }
+  .pts { display: flex; align-items: center; gap: 18px; font: 400 28px/1 Inter; color: var(--i5); }
+  .seg { display: flex; border: 2px solid #cdd9de; border-radius: 14px; overflow: hidden; background: #fff; }
+  .seg span { width: 56px; height: 52px; display: flex; align-items: center; justify-content: center; font: 500 28px/1 Inter; color: var(--navy); }
+  .seg span.on { background: var(--navy); color: #fff; }
+  .expl { background: #fff; border: 2px solid #e6edf0; border-radius: 22px; padding: 20px 26px; margin: 20px 0 22px; }
+  .expl .lb { font: 700 22px/1 Inter; letter-spacing: .08em; color: var(--i5); }
+  .expl .tx { font: 400 28px/1.3 Inter; margin-top: 10px; }
+  .foot2 { display: flex; justify-content: space-between; align-items: center; }
+  .fb { font: 500 28px/1 Inter; color: #007b54; }
+  .appr { background: var(--navy); color: #fff; border-radius: 16px; padding: 18px 34px; font: 500 28px/1 Inter; display: flex; align-items: center; gap: 12px; }
+
+  /* wit blok: Eduface AI en 250,000 vormen een geheel, in het midden */
+  .ai { grid-column: 1 / 3; grid-row: 2; justify-self: center; width: fit-content; margin-top: 30px; background: var(--navy); border-radius: 48px; padding: 52px 80px; display: flex; align-items: center; justify-content: center; gap: 64px;
+        box-shadow: 0 24px 60px rgba(0,35,51,.22); }
+  .lock { display: flex; align-items: baseline; gap: 22px; }
+  .lock img { height: 132px; width: auto; }
+  .lock .aitxt { font: 700 148px/1 "League Spartan"; color: var(--g); letter-spacing: -.01em; }
+  .ai .sep { width: 2px; align-self: stretch; background: rgba(255,255,255,.2); }
+  .ai .n { font: 700 132px/1 "League Spartan"; letter-spacing: -.03em; color: #fff; }
+  .ai .l { font: 400 46px/1.2 Inter; color: var(--i3); margin-top: 8px; }
+
+  .lms { grid-column: 1 / 3; grid-row: 3; justify-self: center; margin-top: 34px; display: flex; flex-direction: column; align-items: center; gap: 22px; }
+  .lms .lab { font: 400 46px/1 Inter; color: var(--i5); white-space: nowrap; }
+  .lms .row { display: flex; align-items: center; justify-content: center; gap: 110px; }
+  .lms img { height: 66px; width: auto; filter: grayscale(1) contrast(.9); opacity: .5; }
+</style>
+</head>
+<body>
+  <div class="wall" id="wall">
+    <div id="layer-content"></div>
+  </div>
+
+<script>
+const R0='Director of education, public university', R1='Head of academic innovation, private university';
+/* Quotes: formulering van Dante, 25-11-2026. Quote 2: bron in de case study, herschreven zin nog niet aan die persoon voorgelegd (V15). Quote 1: bronregel volgens Dante, klopt mogelijk niet (V17). */
+const Q=[{t:'I uploaded the same essay with the same rubric twice. <mark>I&nbsp;got two different grades.</mark>',w:R0},
+         {t:'After a few essays, the feedback goes generic. <mark>Every student ends up with the same comments.</mark>',w:R1}];
+const left=`<div class="pl"><div class="hd">Chatbots</div><div class="qs">`+Q.map(q=>`<div class="q"><div class="qt"><span class="qm">\u201C</span>${q.t}</div><div class="who">${q.w}</div></div>`).join('<div class="dv"></div>')+`</div></div>`;
+const right=`<div class="pr"><img class="lg" src="assets/logos/eduface-white-hires.png"><div class="eh">Trained on how <span>instructors grade.</span></div>
+  <div class="mock">
+    <div class="m1"><div class="top"><div class="qn">Question 2b</div><div class="pill2">4 marks</div><div class="ex">Example</div></div>
+      <div class="q">Explain why a price ceiling set below the equilibrium price leads to a shortage.</div><hr>
+      <div class="who2"><div class="av">S</div>Student <span class="an">&middot; Answer 1 of 1</span></div>
+      <div class="ans">A price ceiling below equilibrium holds the price down, so more people want to buy. This creates a shortage, for example with rent controls.</div></div>
+    <div class="m2"><div class="hdr"><div class="qn">Review</div><div class="met">3 of 4 criteria met</div></div>
+      <div class="crit">
+        <div class="cr"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="17" fill="#00e075"/><path d="M10.5 18.5l5 5 10-11" fill="none" stroke="#002333" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Ceiling is set below the equilibrium price</div>
+        <div class="cr"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="17" fill="#00e075"/><path d="M10.5 18.5l5 5 10-11" fill="none" stroke="#002333" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Demand rises at the lower price</div>
+        <div class="cr no"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="16" fill="none" stroke="#a9bcc4" stroke-width="3"/><path d="M12.5 12.5l11 11M23.5 12.5l-11 11" stroke="#a9bcc4" stroke-width="3" stroke-linecap="round"/></svg>Supply falls at the lower price</div>
+        <div class="cr"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="17" fill="#00e075"/><path d="M10.5 18.5l5 5 10-11" fill="none" stroke="#002333" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Quantity demanded exceeds quantity supplied</div></div>
+      <div class="pts">Awarded points<div class="seg"><span>0</span><span>1</span><span>2</span><span class="on">3</span><span>4</span></div><span>/ 4</span></div>
+      <div class="expl"><div class="lb">SCORE EXPLANATION</div><div class="tx">Identifies the ceiling, the higher demand and the shortage. Does not explain why supply falls, so one mark is withheld.</div></div>
+      <div class="foot2"><div class="fb">Feedback for the student</div><div class="appr">&#10003; Approve</div></div></div>
+  </div></div>`;
+const ai=`<div class="ai"><div><div class="n">250,000</div><div class="l">education-specific feedback examples</div></div><div class="sep"></div>
+  <div class="lock"><img src="assets/logos/eduface-white-hires.png"><div class="aitxt">AI</div></div></div>`;
+const lms=`<div class="lms"><div class="lab">Integrated with your LMS</div><div class="row"><img src="assets/logos/lms-canvas.png"><img src="assets/logos/lms-moodle.png"><img src="assets/logos/lms-blackboard.png"><img src="assets/logos/lms-brightspace.png"></div></div>`;
+document.getElementById('layer-content').innerHTML=`<div class="g">${left}${right}${ai}${lms}</div>`;
+</script>
+</body>
+</html>
