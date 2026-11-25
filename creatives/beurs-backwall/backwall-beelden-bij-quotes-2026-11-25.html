@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Beurs backwall</title>
+<style>
+  /* Canvas: 1 px = 1 mm. Wand 2954 x 2520 mm. De kop staat op de gevel (facade.html).
+     Lettersysteem: L 96 Inter (quotes) / M 84 League Spartan (koppen) / S 46 Inter (bronnen, labels) / XL 150 Spartan (alleen het getal). */
+  @font-face { font-family: "League Spartan"; font-weight: 700; src: url("../../Design/Merk/fonts/LeagueSpartan-Bold.ttf"); }
+  @font-face { font-family: "Inter"; font-weight: 400; src: url("../../Design/Merk/fonts/Inter-Regular.ttf"); }
+  :root { --w: 2954px; --h: 2520px; --navy: #002333; --gd: #007b54; --g: #00e075; --i7: #2c4a57; --i5: #5b7480; --i3: #a9bcc4; --i2: #cdd9de; --i50: #f3f7f8; --red: #b3261e; }
+  * { margin: 0; box-sizing: border-box; }
+  html, body { width: var(--w); height: var(--h); }
+  .wall {
+    position: relative; width: var(--w); height: var(--h); overflow: hidden; color: var(--navy);
+    background:
+      radial-gradient(ellipse 80% 45% at 90% 52%, #f9f8f7 0%, rgba(249,248,247,0) 100%),
+      linear-gradient(180deg, #dce7ee 0%, #e2edf1 20%, #ecf3f5 40%, #f4f6f6 55%, #eff3f3 70%, #e4edf1 90%, #dde8ee 100%);
+  }
+  .logo { position: absolute; right: 128px; bottom: 128px; width: 420px; height: auto; }
+  .row { position: absolute; left: 128px; top: 128px; width: 2698px; display: flex; gap: 36px; align-items: stretch; }
+
+  /* links: quotes met beeld. Rood alleen, en licht, in het kleine tool-vak. */
+  .q { width: 1500px; background: #fff; border-radius: 56px; padding: 64px 68px; display: flex; flex-direction: column; justify-content: space-between; gap: 52px;
+       box-shadow: 0 10px 28px rgba(0,35,51,.10), 0 50px 110px rgba(0,35,51,.20); }
+  .qs { display: flex; flex-direction: column; gap: 56px; }
+  .qone { display: flex; gap: 44px; align-items: center; }
+  .vis { flex: none; width: 280px; height: 240px; }
+  .qt { font: 400 96px/1.16 Inter; color: var(--navy); letter-spacing: -.005em; }
+  .qt .qm { font: 700 96px/1 "League Spartan"; color: var(--i3); margin-right: 8px; }
+  .qt mark { background: rgba(0,35,51,.08); color: inherit; padding: 0 12px; margin: 0 -12px; border-radius: 14px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+  .who { font: 400 46px/1.2 Inter; color: var(--i5); margin-top: 18px; }
+
+  .tools .lab { font: 700 84px/1 "League Spartan"; letter-spacing: -.01em; color: var(--navy); margin-bottom: 26px; }
+  .redbox { display: inline-flex; gap: 22px; background: #f8e3e0; border: 4px solid #eec3be; border-radius: 40px; padding: 28px 32px; }
+  .tl { position: relative; width: 250px; height: 168px; border-radius: 28px; background: #fff; box-shadow: inset 0 0 0 4px #efc9c4;
+        display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; font: 400 46px/1 Inter; color: var(--i7); }
+  .tl img { width: 66px; height: 66px; opacity: .85; }
+  .x { position: absolute; top: -18px; right: -18px; width: 54px; height: 54px; border-radius: 50%; background: var(--red); box-shadow: 0 4px 10px rgba(179,38,30,.35); }
+
+  /* rechts: Eduface. Icoon boven, tekst eronder. */
+  .e { width: 1162px; background: var(--navy); color: #fff; border-radius: 56px; padding: 64px 68px; display: flex; flex-direction: column; gap: 36px;
+       box-shadow: 0 14px 34px rgba(0,35,51,.28), 0 60px 130px rgba(0,35,51,.34); }
+  .es { flex: 1; display: flex; flex-direction: column; justify-content: space-evenly; }
+  .eb .it { width: 150px; height: 150px; border-radius: 40px; background: rgba(255,255,255,.1); display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
+  .eh { font: 700 84px/1.04 "League Spartan"; letter-spacing: -.015em; }
+  .eh span { color: var(--g); }
+  .arrow { align-self: center; margin: 0; }
+  .own { margin-top: auto; border-radius: 40px; box-shadow: inset 0 0 0 6px var(--g); padding: 44px 52px; }
+  .own .top { display: flex; align-items: center; gap: 26px; }
+  .own .top img { height: 84px; width: auto; }
+  .own .top .ai { font: 700 84px/1 "League Spartan"; color: var(--g); letter-spacing: -.01em; }
+  .own .n { font: 700 150px/1 "League Spartan"; letter-spacing: -.025em; margin-top: 22px; }
+  .own .l { font: 400 46px/1.2 Inter; color: rgba(255,255,255,.85); margin-top: 8px; }
+  .own .d { font: 400 46px/1.2 Inter; color: rgba(255,255,255,.7); margin-top: 26px; }
+
+  .lms { position: absolute; left: 128px; top: 2278px; height: 114px; display: flex; align-items: center; gap: 52px; }
+  .lms img { height: 62px; width: auto; filter: grayscale(1) contrast(.9); opacity: .5; }
+  .lms .wm { font: 700 46px/1 "League Spartan"; letter-spacing: -.01em; color: var(--i5); opacity: .75; white-space: nowrap; }
+  .lms .lab { position: absolute; left: 0; top: -62px; font: 400 46px/1 Inter; color: var(--i5); white-space: nowrap; }
+</style>
+</head>
+<body>
+  <div class="wall" id="wall">
+    <div id="layer-content"></div>
+    <img class="logo" src="../../Design/Merk/logos/logo_navy.png" alt="Eduface">
+  </div>
+
+<script>
+const N='#002333', G='#00e075', W='#fff', I2='#cdd9de', I5='#5b7480', RED='#b3261e';
+const L=(f)=>`assets/logos/${f}.svg`;
+const sv=(inner,s=120)=>`<svg width="${s}" height="${s}" viewBox="0 0 400 400">${inner}</svg>`;
+
+/* ---- beelden bij de quotes (280 x 240) ---- */
+const lines=(x,y,w,n,c=I2)=>Array.from({length:n},(_,i)=>`<rect x="${x}" y="${y+i*16}" width="${i===n-1?w*.6:w}" height="7" rx="3.5" fill="${c}"/>`).join('');
+const sheet=(x,y,w,h)=>`<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="12" fill="#fff" stroke="${N}" stroke-width="6"/>${lines(x+14,y+18,w-28,4)}`;
+// 1. Dezelfde opdracht twee keer, twee verschillende cijfers
+const vis1=`<svg class="vis" viewBox="0 0 280 240">${sheet(10,6,108,116)}${sheet(162,6,108,116)}
+  <path d="M64,128 V152" stroke="${N}" stroke-width="6" stroke-linecap="round"/><path d="M216,128 V152" stroke="${N}" stroke-width="6" stroke-linecap="round"/>
+  <rect x="22" y="158" width="84" height="74" rx="18" fill="${N}"/><text x="64" y="212" text-anchor="middle" font-family="League Spartan" font-weight="700" font-size="54" fill="#fff">B</text>
+  <rect x="174" y="158" width="84" height="74" rx="18" fill="${N}"/><text x="216" y="212" text-anchor="middle" font-family="League Spartan" font-weight="700" font-size="54" fill="#fff">D</text>
+  <circle cx="140" cy="195" r="22" fill="#fff" stroke="${RED}" stroke-width="5"/><path d="M128,189 H152 M128,201 H152 M146,180 L134,210" stroke="${RED}" stroke-width="5" stroke-linecap="round"/></svg>`;
+// 2. Robot: dezelfde generieke feedback voor iedere student
+const bub=(x)=>`<rect x="${x}" y="122" width="76" height="50" rx="12" fill="#fff" stroke="${N}" stroke-width="5"/>${lines(x+12,136,52,2,I5)}<path d="M${x+26},172 l-6,12 l18,-12" fill="#fff" stroke="${N}" stroke-width="5" stroke-linejoin="round"/><circle cx="${x+38}" cy="206" r="14" fill="${I2}"/><path d="M${x+14},236 q24,-30 48,0" fill="${I2}"/>`;
+const vis2=`<svg class="vis" viewBox="0 0 280 240"><line x1="140" y1="4" x2="140" y2="20" stroke="${N}" stroke-width="6" stroke-linecap="round"/><circle cx="140" cy="6" r="6" fill="${N}"/>
+  <rect x="92" y="22" width="96" height="76" rx="22" fill="#fff" stroke="${N}" stroke-width="6"/><circle cx="118" cy="52" r="9" fill="${N}"/><circle cx="162" cy="52" r="9" fill="${N}"/><path d="M118,76 H162" stroke="${N}" stroke-width="6" stroke-linecap="round" stroke-dasharray="6 8"/>
+  ${bub(4)}${bub(102)}${bub(200)}</svg>`;
+// 3. Elke opdracht opnieuw promoten
+const pr=(x)=>`${sheet(x,6,76,90)}<path d="M${x+38},100 V114" stroke="${N}" stroke-width="5" stroke-linecap="round"/><rect x="${x-4}" y="118" width="84" height="40" rx="20" fill="${N}"/><rect x="${x+14}" y="133" width="30" height="8" rx="4" fill="${W}"/><rect x="${x+52}" y="130" width="4" height="14" fill="${G}"/>`;
+const vis3=`<svg class="vis" viewBox="0 0 280 240">${pr(14)}${pr(102)}${pr(190)}
+  <path d="M58,196 q82,50 164,0" fill="none" stroke="${N}" stroke-width="6" stroke-linecap="round"/><path d="M212,182 l16,12 l-20,8" fill="none" stroke="${N}" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+
+/* ---- links ---- */
+const q=(vis,t,w)=>`<div class="qone">${vis}<div><div class="qt"><span class="qm">“</span>${t}</div>${w?`<div class="who">${w}</div>`:''}</div></div>`;
+const R1='Head of academic innovation, private university', R2='AVP instructional design, US technical college';
+const x=`<div class="x"><svg width="54" height="54" viewBox="0 0 54 54"><path d="M18,18 L36,36 M36,18 L18,36" stroke="#fff" stroke-width="6" stroke-linecap="round"/></svg></div>`;
+const tool=(img,name)=>`<div class="tl"><img src="${L(img)}">${name}${x}</div>`;
+const left=`<div class="q"><div class="qs">`+
+  q(vis1,'Same rubric, same essay, uploaded twice. <mark>Two different grades.</mark>','')+
+  q(vis2,'After a few essays it goes generic. <mark>Every student gets the same feedback.</mark>',R1)+
+  q(vis3,'You have to re-prompt it <mark>for every single assignment.</mark>',R2)+
+  `</div><div class="tools"><div class="lab">Not built for grading.</div><div class="redbox">${tool('openai','ChatGPT')}${tool('googlegemini','Gemini')}${tool('claude','Claude')}</div></div></div>`;
+
+/* ---- rechts ---- */
+const icTeacher=sv(`<circle cx="150" cy="108" r="64" fill="none" stroke="${W}" stroke-width="30"/><path d="M36,340 C36,236 264,236 264,340" fill="none" stroke="${W}" stroke-width="30" stroke-linecap="round"/><circle cx="312" cy="294" r="62" fill="${G}"/><polyline points="282,294 304,316 342,270" fill="none" stroke="${N}" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>`);
+const icBubbles=sv(`<rect x="30" y="34" width="230" height="104" rx="38" fill="none" stroke="${W}" stroke-width="26"/><rect x="60" y="68" width="110" height="18" rx="9" fill="${W}"/><rect x="140" y="156" width="230" height="104" rx="38" fill="rgba(255,255,255,.14)" stroke="${W}" stroke-width="26"/><rect x="172" y="190" width="150" height="18" rx="9" fill="${W}"/><rect x="30" y="278" width="230" height="104" rx="38" fill="none" stroke="${W}" stroke-width="26"/><rect x="60" y="312" width="84" height="18" rx="9" fill="${G}"/>`);
+const icSheets=sv(`<rect x="130" y="24" width="220" height="270" rx="30" fill="none" stroke="${W}" stroke-width="22" opacity=".4"/><rect x="90" y="64" width="220" height="270" rx="30" fill="none" stroke="${W}" stroke-width="22" opacity=".7"/><rect x="44" y="108" width="220" height="270" rx="30" fill="${N}" stroke="${W}" stroke-width="26"/>${[160,222,284].map(y=>`<polyline points="76,${y} 92,${y+16} 118,${y-14}" fill="none" stroke="${G}" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/><rect x="134" y="${y-8}" width="98" height="14" rx="7" fill="${W}"/>`).join('')}`);
+const EB=[{ic:icTeacher,h:'Trained on how <span>instructors grade.</span>'},{ic:icBubbles,h:'Feedback <span>per student.</span>'},{ic:icSheets,h:'Set up <span>once.</span>'}];
+const arrow=`<svg class="arrow" width="96" height="84" viewBox="0 0 96 84"><path d="M48,6 V62" stroke="${G}" stroke-width="12" stroke-linecap="round"/><polyline points="20,40 48,70 76,40" fill="none" stroke="${G}" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+const right=`<div class="e"><div class="es">`+EB.map(r=>`<div class="eb"><div class="it">${r.ic}</div><div class="eh">${r.h}</div></div>`).join('')+`</div>${arrow}
+  <div class="own"><div class="top"><img src="assets/logos/eduface-white.png"><div class="ai">AI</div></div>
+  <div class="n">250,000</div><div class="l">education-specific feedback examples</div>
+  <div class="d">Developed with the help of Leiden University and Radboud University.</div></div></div>`;
+
+const lms=`<div class="lms"><div class="lab">Integrated with your LMS</div><img src="assets/logos/lms-canvas.png"><img src="assets/logos/lms-moodle.png"><img src="assets/logos/lms-blackboard.png"><img src="assets/logos/lms-brightspace.png"><div class="wm">itslearning</div><div class="wm">NEO LMS</div></div>`;
+document.getElementById('layer-content').innerHTML = `<div class="row">${left}${right}</div>${lms}`;
+</script>
+</body>
+</html>
