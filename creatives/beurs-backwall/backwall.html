@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Beurs backwall</title>
+<style>
+  /* Canvas: 1 px = 1 mm. Wand is 2954 x 2520 mm. */
+  :root { --w: 2954px; --h: 2520px; }
+  * { margin: 0; box-sizing: border-box; }
+  html, body { width: var(--w); height: var(--h); }
+  .wall {
+    position: relative;
+    width: var(--w);
+    height: var(--h);
+    overflow: hidden;
+    background:
+      radial-gradient(ellipse 80% 45% at 90% 52%, #f9f8f7 0%, rgba(249,248,247,0) 100%),
+      linear-gradient(180deg, #dce7ee 0%, #e2edf1 20%, #ecf3f5 40%, #f4f6f6 55%, #eff3f3 70%, #e4edf1 90%, #dde8ee 100%);
+  }
+  /* Onderdelen komen hieronder, een laag per stap. */
+</style>
+</head>
+<body>
+  <div class="wall" id="wall">
+    <!-- laag 0: leeg canvas -->
+  </div>
+</body>
+</html>
