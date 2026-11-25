@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Iconen</title>
+<style>
+  @font-face { font-family: "League Spartan"; font-weight: 700; src: url("../../Design/Merk/fonts/LeagueSpartan-Bold.ttf"); }
+  @font-face { font-family: "Inter"; font-weight: 400; src: url("../../Design/Merk/fonts/Inter-Regular.ttf"); }
+  * { margin: 0; box-sizing: border-box; }
+  body { width: 2400px; height: 1700px; }
+  #sheet { position: relative; width: 2400px; height: 1700px; color: #002333;
+    background: linear-gradient(180deg, #dce7ee 0%, #ecf3f5 40%, #f4f6f6 55%, #e4edf1 90%, #dde8ee 100%); }
+  .row { position: absolute; left: 100px; font: 400 44px Inter; color: #2c4a57; }
+  .cell { position: absolute; width: 700px; }
+  .opt { font: 400 44px Inter; color: #2c4a57; margin-bottom: 24px; }
+  .num { font: 700 180px/0.8 "League Spartan"; letter-spacing: -.02em; margin-top: 36px; }
+  .lbl { font: 400 60px/1.1 Inter; color: #2c4a57; margin-top: 28px; }
+</style></head><body>
+<div id="sheet"></div>
+<script>
+const N='#002333', G='#00e075', I2='#cdd9de', I7='#2c4a57';
+const polar=(cx,cy,r,deg)=>{const a=(deg-90)*Math.PI/180;return [cx+r*Math.cos(a),cy+r*Math.sin(a)];};
+const svg=(inner)=>`<svg width="380" height="380" viewBox="0 0 400 400">${inner}</svg>`;
+
+function rings(w){return [170,115,60].map(r=>`<circle cx="200" cy="200" r="${r}" fill="rgba(255,255,255,.55)" stroke="${N}" stroke-width="${w}"/>`).join('');}
+const target = svg(`${rings(22)}<circle cx="200" cy="200" r="28" fill="${G}" stroke="${N}" stroke-width="10"/>
+  <line x1="206" y1="194" x2="338" y2="62" stroke="${N}" stroke-width="20" stroke-linecap="round"/>
+  <line x1="338" y1="62" x2="378" y2="62" stroke="${N}" stroke-width="18" stroke-linecap="round"/>
+  <line x1="338" y1="62" x2="338" y2="22" stroke="${N}" stroke-width="18" stroke-linecap="round"/>`);
+const cluster = svg(`${rings(14)}
+  ${[[-26,-14],[20,-22],[12,26],[-18,22],[32,4]].map(([x,y])=>`<circle cx="${200+x}" cy="${200+y}" r="15" fill="${N}"/>`).join('')}
+  <circle cx="200" cy="200" r="15" fill="${G}" stroke="${N}" stroke-width="6"/>`);
+function gauge(p){
+  const cx=200, cy=270, r=160, a0=180, a1=180+p*180;
+  const pt=(deg,rad)=>[cx+rad*Math.cos(deg*Math.PI/180), cy+rad*Math.sin(deg*Math.PI/180)];
+  const [sx,sy]=pt(180,r), [ex,ey]=pt(360,r), [fx,fy]=pt(a1,r), [nx,ny]=pt(a1,r-30);
+  return svg(`<path d="M${sx},${sy} A${r},${r} 0 0 1 ${ex},${ey}" fill="none" stroke="${I2}" stroke-width="44"/>
+    <path d="M${sx},${sy} A${r},${r} 0 0 1 ${fx},${fy}" fill="none" stroke="${N}" stroke-width="44"/>
+    <line x1="${cx}" y1="${cy}" x2="${nx}" y2="${ny}" stroke="${G}" stroke-width="20" stroke-linecap="round"/>
+    <circle cx="${cx}" cy="${cy}" r="30" fill="${N}"/>`);
+}
+function clockBase(cx,cy,r,sw,progress){
+  const [x1,y1]=polar(cx,cy,r,progress*360), [x0,y0]=polar(cx,cy,r,0);
+  const hands=`<line x1="${cx}" y1="${cy}" x2="${cx}" y2="${cy-r*.62}" stroke="${N}" stroke-width="${sw*.55}" stroke-linecap="round"/>
+    <line x1="${cx}" y1="${cy}" x2="${cx+r*.34}" y2="${cy+r*.2}" stroke="${N}" stroke-width="${sw*.55}" stroke-linecap="round"/>
+    <circle cx="${cx}" cy="${cy}" r="${sw*.5}" fill="${N}"/>`;
+  const ring = progress? `<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${I2}" stroke-width="${sw}"/>
+    <path d="M${x0},${y0} A${r},${r} 0 ${progress>.5?1:0} 1 ${x1},${y1}" fill="none" stroke="${N}" stroke-width="${sw}"/>`
+    : `<circle cx="${cx}" cy="${cy}" r="${r}" fill="rgba(255,255,255,.7)" stroke="${N}" stroke-width="${sw}"/>`;
+  return ring+hands;
+}
+const clock1 = svg(clockBase(200,200,150,34,.485));
+const papers = svg(`
+  <rect x="50" y="40" width="190" height="250" rx="22" fill="#fff" stroke="${N}" stroke-width="16" transform="rotate(-7 145 165)"/>
+  <rect x="100" y="70" width="190" height="250" rx="22" fill="#fff" stroke="${N}" stroke-width="16"/>
+  <line x1="136" y1="130" x2="254" y2="130" stroke="${I2}" stroke-width="12" stroke-linecap="round"/>
+  <line x1="136" y1="168" x2="254" y2="168" stroke="${I2}" stroke-width="12" stroke-linecap="round"/>
+  <line x1="136" y1="206" x2="214" y2="206" stroke="${I2}" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="285" cy="290" r="92" fill="#fff"/>
+  ${clockBase(285,290,72,20,.485)}`);
+const bars = svg(`
+  ${clockBase(78,76,52,16,0)}
+  <rect x="24" y="190" width="352" height="66" rx="18" fill="${N}"/>
+  <rect x="24" y="290" width="181" height="66" rx="18" fill="${N}"/>
+  <rect x="205" y="290" width="171" height="66" rx="18" fill="none" stroke="${N}" stroke-width="8" stroke-dasharray="26 18"/>`);
+
+const cells = [
+ {row:0,col:0,tag:'1',icon:target ,n:'96%',l:'grading accuracy'},
+ {row:0,col:1,tag:'2',icon:cluster,n:'96%',l:'grading accuracy'},
+ {row:0,col:2,tag:'3',icon:gauge(.96),n:'96%',l:'grading accuracy'},
+ {row:1,col:0,tag:'4',icon:clock1 ,n:'48.5%',l:'less time spent grading'},
+ {row:1,col:1,tag:'5',icon:papers ,n:'48.5%',l:'less time spent grading'},
+ {row:1,col:2,tag:'6',icon:bars   ,n:'48.5%',l:'less time spent grading'},
+];
+document.getElementById('sheet').innerHTML = cells.map(c=>
+ `<div class="cell" style="left:${100+c.col*760}px; top:${60+c.row*800}px">
+    <div class="opt">${c.tag}</div>${c.icon}
+    <div class="num">${c.n}</div><div class="lbl">${c.l}</div></div>`).join('');
+</script></body></html>
