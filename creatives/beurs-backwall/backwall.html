@@ -3,9 +3,10 @@
 <head>
 <meta charset="utf-8">
 <title>Beurs backwall</title>
+<script src="assets/icons/icons.js"></script>
 <style>
   /* Canvas: 1 px = 1 mm. Wand 2954 x 2520 mm. De kop staat op de gevel (facade.html).
-     Links donker (het probleem), rechts wit met veel groen (de oplossing).
+     Per rij een paar: links het probleem (donker), rechts de oplossing (wit, groen). Iconen: Lucide (ISC), niet zelf getekend.
      Lettersysteem: L 88 Inter (quotes) / M 84 League Spartan (koppen) / S 46 Inter (bronnen, labels) / XL 150 Spartan (alleen het getal). */
   @font-face { font-family: "League Spartan"; font-weight: 700; src: url("../../Design/Merk/fonts/LeagueSpartan-Bold.ttf"); }
   @font-face { font-family: "Inter"; font-weight: 400; src: url("../../Design/Merk/fonts/Inter-Regular.ttf"); }
@@ -19,42 +20,47 @@
       linear-gradient(180deg, #dce7ee 0%, #e2edf1 20%, #ecf3f5 40%, #f4f6f6 55%, #eff3f3 70%, #e4edf1 90%, #dde8ee 100%);
   }
   .logo { position: absolute; right: 128px; bottom: 128px; width: 420px; height: auto; }
-  .row { position: absolute; left: 128px; top: 128px; width: 2698px; display: flex; gap: 36px; align-items: stretch; }
 
-  /* links: donker. Icoon boven, quote eronder, precies zoals rechts. */
-  .q { width: 1500px; background: var(--navy); color: #fff; border-radius: 56px; padding: 56px 68px; display: flex; flex-direction: column; justify-content: space-between; gap: 30px;
-       box-shadow: 0 14px 34px rgba(0,35,51,.28), 0 60px 130px rgba(0,35,51,.34); }
-  .qs { display: flex; flex-direction: column; gap: 36px; }
-  .it { width: 150px; height: 150px; border-radius: 40px; display: flex; align-items: center; justify-content: center; margin-bottom: 14px; }
-  .q .it { background: rgba(255,255,255,.1); }
+  .g { position: absolute; left: 128px; top: 128px; width: 2698px; display: grid; grid-template-columns: 1500px 96px 1102px; grid-template-rows: auto auto auto auto; }
+  .pl, .pr { grid-row: 1 / 5; border-radius: 56px; }
+  .pl { grid-column: 1; background: var(--navy); box-shadow: 0 14px 34px rgba(0,35,51,.28), 0 60px 130px rgba(0,35,51,.34); }
+  .pr { grid-column: 3; background: #fff; box-shadow: 0 10px 28px rgba(0,35,51,.10), 0 50px 110px rgba(0,35,51,.20); }
+  .cl, .cr, .cm { z-index: 1; display: flex; align-items: center; }
+  .cl { grid-column: 1; padding: 34px 68px; gap: 44px; color: #fff; }
+  .cr { grid-column: 3; padding: 34px 68px; gap: 44px; }
+  .cm { grid-column: 2; justify-content: center; }
+  .r1 { grid-row: 1; } .r2 { grid-row: 2; } .r3 { grid-row: 3; } .r4 { grid-row: 4; }
+  .r1.cl, .r1.cr { padding-top: 64px; }
+
+  .it { flex: none; width: 170px; height: 170px; border-radius: 44px; display: flex; align-items: center; justify-content: center; }
+  .it svg { width: 100px; height: 100px; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .cl .it { background: rgba(255,255,255,.1); } .cl .it svg { stroke: #fff; }
+  .cr .it { background: var(--g); } .cr .it svg { stroke: var(--navy); }
+  .cm svg { width: 64px; height: 64px; fill: none; stroke: var(--i3); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+
   .qt { font: 400 88px/1.16 Inter; color: #fff; letter-spacing: -.005em; }
   .qt .qm { font: 700 88px/1 "League Spartan"; color: rgba(255,255,255,.4); margin-right: 8px; }
   .qt mark { background: rgba(255,255,255,.16); color: inherit; padding: 0 12px; margin: 0 -12px; border-radius: 14px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
   .who { font: 400 46px/1.2 Inter; color: var(--i3); margin-top: 16px; }
+  .eh { font: 700 84px/1.12 "League Spartan"; letter-spacing: -.015em; color: var(--navy); }
+  .eh span { background: var(--g); padding: 0 14px; margin: 0 -14px; border-radius: 16px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
 
-  .tools { text-align: center; }
+  /* onderste rij: links de tools, rechts Eduface AI */
+  .cl.r4 { justify-content: center; text-align: center; padding-bottom: 64px; }
   .tools .lab { font: 700 84px/1 "League Spartan"; letter-spacing: -.01em; color: #fff; margin-bottom: 24px; }
   .redbox { display: inline-flex; gap: 22px; background: #f8e3e0; border: 4px solid #eec3be; border-radius: 40px; padding: 28px 32px; }
   .tl { position: relative; width: 250px; height: 168px; border-radius: 28px; background: #fff; box-shadow: inset 0 0 0 4px #efc9c4;
         display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; font: 400 46px/1 Inter; color: var(--i7); }
   .tl img { width: 66px; height: 66px; opacity: .85; }
   .x { position: absolute; top: -18px; right: -18px; width: 54px; height: 54px; border-radius: 50%; background: var(--red); box-shadow: 0 4px 10px rgba(179,38,30,.35); }
-
-  /* rechts: wit, veel groen. */
-  .e { width: 1162px; background: #fff; color: var(--navy); border-radius: 56px; padding: 56px 68px; display: flex; flex-direction: column; gap: 32px;
-       box-shadow: 0 10px 28px rgba(0,35,51,.10), 0 50px 110px rgba(0,35,51,.20); }
-  .es { flex: 1; display: flex; flex-direction: column; justify-content: space-evenly; }
-  .e .it { background: var(--g); }
-  .eh { font: 700 84px/1.12 "League Spartan"; letter-spacing: -.015em; }
-  .eh span { background: var(--g); padding: 0 14px; margin: 0 -14px; border-radius: 16px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
-  .arrow { align-self: center; }
-  .own { margin-top: auto; border-radius: 40px; background: var(--g); padding: 44px 52px; text-align: center; box-shadow: 0 14px 34px rgba(0,224,117,.32); }
-  .own .top { display: inline-flex; align-items: flex-end; justify-content: center; gap: 24px; background: #fff; border-radius: 34px; padding: 22px 44px 22px; box-shadow: 0 8px 20px rgba(0,35,51,.12); }
+  .cr.r4 { padding: 34px 52px 52px; }
+  .own { width: 100%; border-radius: 40px; background: var(--g); padding: 40px 44px; text-align: center; box-shadow: 0 14px 34px rgba(0,224,117,.32); }
+  .own .top { display: inline-flex; align-items: flex-end; justify-content: center; gap: 24px; background: #fff; border-radius: 34px; padding: 20px 40px; box-shadow: 0 8px 20px rgba(0,35,51,.12); }
   .own .top img { height: 84px; width: auto; }
-  .own .top .ai { font: 700 84px/.74 "League Spartan"; color: var(--navy); letter-spacing: -.01em; padding-bottom: 0; }
-  .own .n { font: 700 150px/1 "League Spartan"; letter-spacing: -.025em; margin-top: 22px; color: var(--navy); }
+  .own .top .ai { font: 700 84px/.74 "League Spartan"; color: var(--navy); letter-spacing: -.01em; }
+  .own .n { font: 700 150px/1 "League Spartan"; letter-spacing: -.025em; margin-top: 20px; color: var(--navy); }
   .own .l { font: 400 46px/1.2 Inter; color: var(--navy); margin-top: 8px; }
-  .own .d { font: 400 46px/1.2 Inter; color: rgba(0,35,51,.8); margin-top: 26px; }
+  .own .d { font: 400 46px/1.2 Inter; color: rgba(0,35,51,.8); margin-top: 22px; }
 
   .lms { position: absolute; left: 128px; top: 2278px; height: 114px; display: flex; align-items: center; gap: 96px; }
   .lms img { height: 66px; width: auto; filter: grayscale(1) contrast(.9); opacity: .5; }
@@ -68,49 +74,30 @@
   </div>
 
 <script>
-const N='#002333', G='#00e075', W='#fff', PINK='#f1a9a1';
+const ic=(n)=>`<svg viewBox="0 0 24 24">${ICONS[n]}</svg>`;
 const L=(f)=>`assets/logos/${f}.svg`;
-const sv=(inner,s=128)=>`<svg width="${s}" height="${s}" viewBox="0 0 400 400">${inner}</svg>`;
-
-/* ---- iconen links (wit op donker, lichtrode accenten): het probleem ---- */
-// 1. twee verschillende cijfers voor dezelfde opdracht
-const icGrades=sv(`<rect x="24" y="110" width="140" height="180" rx="34" fill="none" stroke="${W}" stroke-width="26"/><text x="94" y="236" text-anchor="middle" font-family="League Spartan" font-weight="700" font-size="116" fill="${W}">B</text>
-  <rect x="236" y="110" width="140" height="180" rx="34" fill="none" stroke="${W}" stroke-width="26"/><text x="306" y="236" text-anchor="middle" font-family="League Spartan" font-weight="700" font-size="116" fill="${W}">D</text>
-  <circle cx="200" cy="200" r="38" fill="${N}"/><path d="M178,184 H222 M178,216 H222" stroke="${PINK}" stroke-width="13" stroke-linecap="round"/><path d="M212,166 L188,234" stroke="${PINK}" stroke-width="13" stroke-linecap="round"/>`);
-// 2. robot: generiek, dezelfde feedback
-const icRobot=sv(`<line x1="200" y1="20" x2="200" y2="70" stroke="${W}" stroke-width="22" stroke-linecap="round"/><circle cx="200" cy="26" r="20" fill="${W}"/>
-  <rect x="64" y="70" width="272" height="206" rx="60" fill="none" stroke="${W}" stroke-width="26"/><circle cx="146" cy="158" r="24" fill="${W}"/><circle cx="254" cy="158" r="24" fill="${W}"/><path d="M142,226 H258" stroke="${PINK}" stroke-width="18" stroke-linecap="round" stroke-dasharray="22 24"/>
-  <path d="M110,276 V330 M290,276 V330" stroke="${W}" stroke-width="22" stroke-linecap="round"/>`);
-// 3. elke keer opnieuw promoten
-const icRepeat=sv(`<path d="M312,132 A128,128 0 1 0 328,236" fill="none" stroke="${W}" stroke-width="26" stroke-linecap="round"/><polyline points="318,60 316,142 236,134" fill="none" stroke="${W}" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
-  <rect x="124" y="138" width="152" height="108" rx="30" fill="none" stroke="${W}" stroke-width="22"/><rect x="154" y="176" width="52" height="16" rx="8" fill="${W}"/><rect x="226" y="168" width="10" height="32" fill="${PINK}"/>`);
-
-/* ---- iconen rechts (navy op groen): de oplossing ---- */
-const icTeacher=sv(`<circle cx="150" cy="108" r="64" fill="none" stroke="${N}" stroke-width="30"/><path d="M36,340 C36,236 264,236 264,340" fill="none" stroke="${N}" stroke-width="30" stroke-linecap="round"/><circle cx="312" cy="294" r="62" fill="${W}"/><polyline points="282,294 304,316 342,270" fill="none" stroke="${N}" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>`);
-const icBubbles=sv(`<rect x="30" y="34" width="230" height="104" rx="38" fill="none" stroke="${N}" stroke-width="26"/><rect x="60" y="68" width="110" height="18" rx="9" fill="${N}"/><rect x="140" y="156" width="230" height="104" rx="38" fill="rgba(255,255,255,.55)" stroke="${N}" stroke-width="26"/><rect x="172" y="190" width="150" height="18" rx="9" fill="${N}"/><rect x="30" y="278" width="230" height="104" rx="38" fill="none" stroke="${N}" stroke-width="26"/><rect x="60" y="312" width="84" height="18" rx="9" fill="${N}"/>`);
-const icSheets=sv(`<rect x="130" y="24" width="220" height="270" rx="30" fill="none" stroke="${N}" stroke-width="22" opacity=".4"/><rect x="90" y="64" width="220" height="270" rx="30" fill="none" stroke="${N}" stroke-width="22" opacity=".7"/><rect x="44" y="108" width="220" height="270" rx="30" fill="${G}" stroke="${N}" stroke-width="26"/>${[160,222,284].map(y=>`<polyline points="76,${y} 92,${y+16} 118,${y-14}" fill="none" stroke="${N}" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/><rect x="134" y="${y-8}" width="98" height="14" rx="7" fill="${N}"/>`).join('')}`);
-
-/* ---- links ---- */
-const q=(ic,t,w)=>`<div class="qb"><div class="it">${ic}</div><div class="qt"><span class="qm">“</span>${t}</div>${w?`<div class="who">${w}</div>`:''}</div>`;
 const R0='[job title], public university', R1='Head of academic innovation, private university', R2='AVP instructional design, US technical college';
+/* Quotes: formulering van Dante, 25-11-2026. Bron van quote 2 en 3 staat in de case study; herschreven zinnen nog niet aan die personen voorgelegd (V15). Quote 1: functietitel onbekend (V17). */
+const Q=[{ic:'dices',t:'Same rubric, same essay, uploaded twice. <mark>Two different grades.</mark>',w:R0},
+         {ic:'bot',t:'After a few essays it goes generic. <mark>Every student gets the same feedback.</mark>',w:R1},
+         {ic:'repeat',t:'You have to re-prompt it <mark>for every single assignment.</mark>',w:R2}];
+const A=[{ic:'graduation-cap',h:'Trained on how <span>instructors grade.</span>'},
+         {ic:'messages-square',h:'Feedback <span>per student.</span>'},
+         {ic:'copy-check',h:'Set up <span>once.</span>'}];
+let h='<div class="pl"></div><div class="pr"></div>';
+Q.forEach((q,i)=>{
+  h+=`<div class="cl r${i+1}"><div class="it">${ic(q.ic)}</div><div><div class="qt"><span class="qm">“</span>${q.t}</div><div class="who">${q.w}</div></div></div>`;
+  h+=`<div class="cm r${i+1}">${ic('arrow-right')}</div>`;
+  h+=`<div class="cr r${i+1}"><div class="it">${ic(A[i].ic)}</div><div class="eh">${A[i].h}</div></div>`;
+});
 const x=`<div class="x"><svg width="54" height="54" viewBox="0 0 54 54"><path d="M18,18 L36,36 M36,18 L18,36" stroke="#fff" stroke-width="6" stroke-linecap="round"/></svg></div>`;
 const tool=(img,name)=>`<div class="tl"><img src="${L(img)}">${name}${x}</div>`;
-const left=`<div class="q"><div class="qs">`+
-  q(icGrades,'Same rubric, same essay, uploaded twice. <mark>Two different grades.</mark>',R0)+
-  q(icRobot,'After a few essays it goes generic. <mark>Every student gets the same feedback.</mark>',R1)+
-  q(icRepeat,'You have to re-prompt it <mark>for every single assignment.</mark>',R2)+
-  `</div><div class="tools"><div class="lab">Not built for grading.</div><div class="redbox">${tool('openai','ChatGPT')}${tool('googlegemini','Gemini')}${tool('claude','Claude')}</div></div></div>`;
-
-/* ---- rechts ---- */
-const EB=[{ic:icTeacher,h:'Trained on how <span>instructors grade.</span>'},{ic:icBubbles,h:'Feedback <span>per student.</span>'},{ic:icSheets,h:'Set up <span>once.</span>'}];
-const arrow=`<svg class="arrow" width="96" height="84" viewBox="0 0 96 84"><path d="M48,6 V62" stroke="${G}" stroke-width="14" stroke-linecap="round"/><polyline points="18,38 48,70 78,38" fill="none" stroke="${G}" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
-const right=`<div class="e"><div class="es">`+EB.map(r=>`<div class="eb"><div class="it">${r.ic}</div><div class="eh">${r.h}</div></div>`).join('')+`</div>${arrow}
-  <div class="own"><div class="top"><img src="../../Design/Merk/logos/logo_navy.png"><div class="ai">AI</div></div>
+h+=`<div class="cl r4"><div class="tools"><div class="lab">Not built for grading.</div><div class="redbox">${tool('openai','ChatGPT')}${tool('googlegemini','Gemini')}${tool('claude','Claude')}</div></div></div>`;
+h+=`<div class="cr r4"><div class="own"><div class="top"><img src="../../Design/Merk/logos/logo_navy.png"><div class="ai">AI</div></div>
   <div class="n">250,000</div><div class="l">education-specific feedback examples</div>
   <div class="d">Developed with the help of Leiden University and Radboud University.</div></div></div>`;
-
 const lms=`<div class="lms"><div class="lab">Integrated with your LMS</div><img src="assets/logos/lms-canvas.png"><img src="assets/logos/lms-moodle.png"><img src="assets/logos/lms-blackboard.png"><img src="assets/logos/lms-brightspace.png"></div>`;
-document.getElementById('layer-content').innerHTML = `<div class="row">${left}${right}</div>${lms}`;
+document.getElementById('layer-content').innerHTML=`<div class="g">${h}</div>${lms}`;
 </script>
 </body>
 </html>
