@@ -28,6 +28,20 @@
   /* laag 2: cijfers en objecten */
   .num { font-family: "League Spartan", sans-serif; font-weight: 700; line-height: .78; letter-spacing: -.02em; white-space: nowrap; }
   .lbl { font-family: "Inter", sans-serif; font-weight: 400; color: var(--ink-700); line-height: 1.1; white-space: nowrap; }
+
+  /* laag 2: twee kaarten. Radius = radius-2xl (20) x3, schaduw = schaduw-lg x3, navy-getint. */
+  .card {
+    position: absolute; top: 300px; width: 1301px; height: 1520px;
+    background: #ffffff; border-radius: 60px; padding: 110px 96px;
+    display: flex; flex-direction: column; align-items: flex-start; justify-content: space-between;
+    box-shadow: 0 6px 18px rgba(0,35,51,.08), 0 36px 120px rgba(0,35,51,.16);
+  }
+  .card .icon { filter: drop-shadow(0 20px 28px rgba(0,35,51,.16)); }
+  .pill {
+    display: inline-block; background: #00e075; color: #002333;
+    font: 400 78px/1 "Inter", sans-serif; padding: 30px 60px; border-radius: 9999px;
+  }
+  .card .num { font-size: 400px; }
 </style>
 </head>
 <body>
@@ -37,80 +51,46 @@
   </div>
 
 <script>
-const NAVY = '#002333', GREEN = '#00e075', INK700 = '#2c4a57';
+const NAVY = '#002333', INK2 = '#cdd9de';
+const polar=(cx,cy,r,deg)=>{const a=(deg-90)*Math.PI/180;return [cx+r*Math.cos(a),cy+r*Math.sin(a)];};
+const svg=(inner,size=620)=>`<svg class="icon" width="${size}" height="${size}" viewBox="0 0 400 400">${inner}</svg>`;
 
-/* ---- Klok: 'saved' deel is weggesneden, de rest is vol ------------------ */
-function clock(r, saved) {
-  const pad = 110, size = 2 * (r + pad), c = size / 2;
-  const pt = (deg, rad) => {
-    const a = (deg - 90) * Math.PI / 180;
-    return [c + rad * Math.cos(a), c + rad * Math.sin(a)];
-  };
-  const end = saved * 360;
-  const [x0, y0] = pt(0, r), [x1, y1] = pt(end, r);
-  const savedPath = `M${c},${c} L${x0},${y0} A${r},${r} 0 0 1 ${x1},${y1} Z`;
-  const restPath  = `M${c},${c} L${x1},${y1} A${r},${r} 0 1 1 ${x0},${y0} Z`;
-  let ticks = '';
-  for (let i = 0; i < 12; i++) {
-    const d = i * 30, long = i % 3 === 0;
-    const [a, b] = pt(d, r + 40), [e, f] = pt(d, r + (long ? 100 : 78));
-    ticks += `<line x1="${a}" y1="${b}" x2="${e}" y2="${f}" stroke="${NAVY}" stroke-width="${long ? 14 : 10}" stroke-linecap="round"/>`;
-  }
-  return `<svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">
-    <path d="${restPath}" fill="${NAVY}"/>
-    <path d="${savedPath}" fill="none" stroke="${NAVY}" stroke-width="12" stroke-dasharray="32 26" stroke-linejoin="round"/>
-    <circle cx="${c}" cy="${c}" r="${r}" fill="none" stroke="${NAVY}" stroke-width="10"/>
-    <line x1="${c}" y1="${c}" x2="${x1}" y2="${y1}" stroke="${GREEN}" stroke-width="26" stroke-linecap="round"/>
-    <circle cx="${c}" cy="${c}" r="34" fill="${NAVY}"/>
-    ${ticks}
-  </svg>`;
+/* Icoon 1: roos met pijl. Geen groen in het icoon. */
+const target = svg(
+  [170,115,60].map(r=>`<circle cx="200" cy="200" r="${r}" fill="#fff" stroke="${NAVY}" stroke-width="22"/>`).join('') +
+  `<circle cx="200" cy="200" r="28" fill="${NAVY}"/>
+   <line x1="206" y1="194" x2="338" y2="62" stroke="${NAVY}" stroke-width="20" stroke-linecap="round"/>
+   <line x1="338" y1="62" x2="378" y2="62" stroke="${NAVY}" stroke-width="18" stroke-linecap="round"/>
+   <line x1="338" y1="62" x2="338" y2="22" stroke="${NAVY}" stroke-width="18" stroke-linecap="round"/>`);
+
+/* Icoon 5: papieren met klokje, ring voor 48,5% gevuld */
+function clockBase(cx,cy,r,sw,progress){
+  const [x1,y1]=polar(cx,cy,r,progress*360), [x0,y0]=polar(cx,cy,r,0);
+  return `<circle cx="${cx}" cy="${cy}" r="${r}" fill="#fff" stroke="${INK2}" stroke-width="${sw}"/>
+    <path d="M${x0},${y0} A${r},${r} 0 ${progress>.5?1:0} 1 ${x1},${y1}" fill="none" stroke="${NAVY}" stroke-width="${sw}"/>
+    <line x1="${cx}" y1="${cy}" x2="${cx}" y2="${cy-r*.62}" stroke="${NAVY}" stroke-width="${sw*.55}" stroke-linecap="round"/>
+    <line x1="${cx}" y1="${cy}" x2="${cx+r*.34}" y2="${cy+r*.2}" stroke="${NAVY}" stroke-width="${sw*.55}" stroke-linecap="round"/>
+    <circle cx="${cx}" cy="${cy}" r="${sw*.5}" fill="${NAVY}"/>`;
 }
+const papers = svg(`
+  <rect x="50" y="40" width="190" height="250" rx="22" fill="#fff" stroke="${NAVY}" stroke-width="16" transform="rotate(-7 145 165)"/>
+  <rect x="100" y="70" width="190" height="250" rx="22" fill="#fff" stroke="${NAVY}" stroke-width="16"/>
+  <line x1="136" y1="130" x2="254" y2="130" stroke="${INK2}" stroke-width="12" stroke-linecap="round"/>
+  <line x1="136" y1="168" x2="254" y2="168" stroke="${INK2}" stroke-width="12" stroke-linecap="round"/>
+  <line x1="136" y1="206" x2="214" y2="206" stroke="${INK2}" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="285" cy="290" r="92" fill="#fff"/>
+  ${clockBase(285,290,72,20,.485)}`);
 
-/* ---- Buisje: capsule, 96% gevuld, schaal rechts ------------------------- */
-function tube(w, h, fill, labels = true) {
-  const s = 20, gap = 20, i = s + gap;
-  const innerW = w - 2 * i, innerH = h - 2 * i;
-  const extra = labels ? 190 : 0;
-  const fillH = innerH * fill, top = i + innerH - fillH;
-  let marks = '';
-  if (labels) {
-    for (let p = 0; p <= 10; p++) {
-      const y = i + innerH * (1 - p / 10), major = p % 5 === 0;
-      marks += `<line x1="${w + 18}" y1="${y}" x2="${w + 18 + (major ? 64 : 36)}" y2="${y}" stroke="${NAVY}" stroke-width="${major ? 10 : 7}" stroke-linecap="round"/>`;
-      if (major) marks += `<text x="${w + 18 + 64 + 18}" y="${y + 19}" font-family="Inter" font-size="54" fill="${INK700}">${p * 10}</text>`;
-    }
-  }
-  return `<svg width="${w + extra}" height="${h}" viewBox="0 0 ${w + extra} ${h}">
-    <defs><clipPath id="cap${w}"><rect x="${i}" y="${i}" width="${innerW}" height="${innerH}" rx="${innerW / 2}"/></clipPath></defs>
-    <rect x="${s / 2}" y="${s / 2}" width="${w - s}" height="${h - s}" rx="${(w - s) / 2}" fill="rgba(255,255,255,.55)" stroke="${NAVY}" stroke-width="${s}"/>
-    <g clip-path="url(#cap${w})">
-      <rect x="${i}" y="${top}" width="${innerW}" height="${fillH}" fill="${NAVY}"/>
-      <rect x="${i}" y="${top}" width="${innerW}" height="22" fill="${GREEN}"/>
-    </g>
-    ${marks}
-  </svg>`;
-}
+const card = (left, icon, num, label) => `
+  <div class="card" style="left:${left}px">
+    ${icon}
+    <div class="num">${num}</div>
+    <div class="pill">${label}</div>
+  </div>`;
 
-const put = (html, style) => `<div class="abs" style="${style}">${html}</div>`;
-const layout = new URLSearchParams(location.search).get('v');
-let out = '';
-
-if (layout === '1') {
-  /* Indeling 1: gelijk gewicht. Buisje links, klok rechts, cijfers op een lijn. */
-  out += put(tube(300, 1450, .96), 'left:160px; top:250px;');
-  out += put('<div class="num" style="font-size:400px">96%</div><div class="lbl" style="font-size:92px; margin-top:56px">grading accuracy</div>', 'left:740px; top:1390px;');
-  out += put(clock(420, .485), 'left:1720px; top:250px;');
-  out += put('<div class="num" style="font-size:400px">48.5%</div><div class="lbl" style="font-size:92px; margin-top:56px">less time spent grading</div>', 'left:1780px; top:1390px;');
-}
-
-if (layout === '2') {
-  /* Indeling 2: een held. Reusachtige klok bloedt rechts af, buisje smal links. */
-  out += put(clock(820, .485), 'left:1590px; top:230px;');
-  out += put(tube(200, 1260, .96, false), 'left:160px; top:240px;');
-  out += put('<div class="num" style="font-size:440px">48.5%</div><div class="lbl" style="font-size:104px; margin-top:64px">less time spent grading</div>', 'left:520px; top:260px;');
-  out += put('<div class="num" style="font-size:230px">96%</div><div class="lbl" style="font-size:72px; margin-top:40px">grading accuracy</div>', 'left:520px; top:1140px;');
-}
-document.getElementById('layer-content').innerHTML = out;
+document.getElementById('layer-content').innerHTML =
+  card(128,  target, '96%',   'grading accuracy') +
+  card(1525, papers, '48.5%', 'less time spent grading');
 </script>
 </body>
 </html>
