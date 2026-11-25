@@ -28,8 +28,8 @@
   .hd { font: 700 76px/1 "League Spartan"; letter-spacing: -.02em; color: var(--navy); height: 84px; display: flex; align-items: center; }
   .pr img.lg { height: 84px; width: auto; align-self: flex-start; }
 
-  .qt { font: 400 112px/1.13 Inter; color: var(--i7); letter-spacing: -.01em; }
-  .qt .qm { font: 700 112px/1 "League Spartan"; color: var(--g6); margin-right: 8px; }
+  .qt { font: 400 100px/1.14 Inter; color: var(--i7); letter-spacing: -.01em; }
+  .qt .qm { font: 700 100px/1 "League Spartan"; color: var(--g6); margin-right: 8px; }
   .qt mark { background: none; color: var(--navy); font-weight: 700; }
   .who { font: 400 50px/1.2 Inter; color: var(--i5); margin-top: 20px; }
   .qs { flex: 1; display: flex; flex-direction: column; justify-content: space-between; }
@@ -94,8 +94,8 @@
 <script>
 const R0='Director of education, public university', R1='Head of academic innovation, private university';
 /* Quotes: formulering van Dante, 25-11-2026. Quote 2: bron in de case study, herschreven zin nog niet aan die persoon voorgelegd (V15). Quote 1: bronregel volgens Dante, klopt mogelijk niet (V17). */
-const Q=[{t:'Same rubric, same essay, uploaded twice. <mark>Two different grades.</mark>',w:R0},
-         {t:'After a few essays it goes generic. <mark>Every student gets the same feedback.</mark>',w:R1}];
+const Q=[{t:'I uploaded the same essay with the same rubric twice. <mark>I&nbsp;got two different grades.</mark>',w:R0},
+         {t:'After a few essays, the feedback goes generic. <mark>Every student ends up with the same comments.</mark>',w:R1}];
 const left=`<div class="pl"><div class="hd">Chatbots</div><div class="qs">`+Q.map(q=>`<div class="q"><div class="qt"><span class="qm">\u201C</span>${q.t}</div><div class="who">${q.w}</div></div>`).join('<div class="dv"></div>')+`</div></div>`;
 const right=`<div class="pr"><img class="lg" src="assets/logos/eduface-white.png"><div class="eh">Trained on how <span>instructors grade.</span></div>
   <div class="mock">
