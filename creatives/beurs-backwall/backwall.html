@@ -7,7 +7,7 @@
   /* Canvas: 1 px = 1 mm. Wand is 2954 x 2520 mm. */
   @font-face { font-family: "League Spartan"; font-weight: 700; src: url("../../Design/Merk/fonts/LeagueSpartan-Bold.ttf"); }
   @font-face { font-family: "Inter"; font-weight: 400; src: url("../../Design/Merk/fonts/Inter-Regular.ttf"); }
-  :root { --w: 2954px; --h: 2520px; --navy: #002333; --gd: #007b54; --i7: #2c4a57; --i2: #cdd9de; }
+  :root { --w: 2954px; --h: 2520px; --navy: #002333; --gd: #007b54; --i7: #2c4a57; --i5: #5b7480; --i2: #cdd9de; --i50: #f3f7f8; --red: #b3261e; }
   * { margin: 0; box-sizing: border-box; }
   html, body { width: var(--w); height: var(--h); }
   .wall {
@@ -19,23 +19,31 @@
   .abs { position: absolute; }
   .logo { position: absolute; right: 128px; bottom: 128px; width: 420px; height: auto; }
 
-  /* laag 2: proces-rail. Vier stations, kolommen van 674 mm, marge 128. */
+  /* stats bovenaan: links en rechts */
   .sh { filter: drop-shadow(0 12px 14px rgba(0,35,51,.16)) drop-shadow(0 36px 40px rgba(0,35,51,.22)); }
-  .node { position: absolute; width: 184px; height: 184px; border-radius: 50%; background: #fff;
-    display: flex; align-items: center; justify-content: center;
-    box-shadow: 0 8px 20px rgba(0,35,51,.14), 0 30px 70px rgba(0,35,51,.24); }
-  .col { position: absolute; width: 660px; text-align: center; }
-  .title { font: 700 62px/1.05 "League Spartan"; letter-spacing: -.01em; }
-  .big   { font: 700 64px/1.05 "League Spartan"; letter-spacing: -.01em; color: var(--gd); margin-top: 8px; }
-  .sub   { font: 400 46px/1.25 "Inter"; color: var(--i7); margin-top: 14px; }
-  .chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 18px; margin-top: 0; }
-  .chip  { display: inline-flex; align-items: center; gap: 14px; background: #fff; border-radius: 30px; padding: 14px 28px;
-    font: 400 42px/1 "Inter"; color: var(--navy);
-    box-shadow: 0 4px 10px rgba(0,35,51,.10), 0 18px 40px rgba(0,35,51,.16); }
-  .chip.soft { background: rgba(255,255,255,.55); color: var(--i7); box-shadow: 0 4px 10px rgba(0,35,51,.06), 0 14px 30px rgba(0,35,51,.10); }
-  .num { font: 700 200px/.78 "League Spartan"; letter-spacing: -.02em; color: var(--gd); white-space: nowrap; }
-  .lbl { font: 700 58px/1.05 "League Spartan"; letter-spacing: -.01em; margin-top: 36px; white-space: nowrap; }
-  .stat { position: absolute; display: flex; align-items: center; gap: 44px; }
+  .stat { position: absolute; top: 150px; display: flex; align-items: center; gap: 48px; }
+  .num { font: 700 270px/.78 "League Spartan"; letter-spacing: -.02em; color: var(--gd); white-space: nowrap; }
+  .lbl { font: 700 62px/1.05 "League Spartan"; letter-spacing: -.01em; margin-top: 38px; white-space: nowrap; }
+
+  /* trap van kaarten */
+  .card { position: absolute; width: 880px; height: 380px; padding: 40px 44px; background: #fff; border-radius: 44px;
+    box-shadow: 0 8px 24px rgba(0,35,51,.10), 0 40px 90px rgba(0,35,51,.20); }
+  .head { display: flex; align-items: center; gap: 28px; height: 88px; }
+  .tile { flex: none; width: 88px; height: 88px; border-radius: 24px; background: var(--navy); display: flex; align-items: center; justify-content: center; }
+  .title { font: 700 56px/1 "League Spartan"; letter-spacing: -.01em; }
+  .row { display: flex; gap: 16px; margin-top: 24px; height: 180px; }
+  .cell { position: relative; background: var(--i50); border-radius: 28px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px;
+    font: 400 38px/1.05 "Inter"; color: var(--navy); text-align: center; }
+  .cell small { font: 400 34px/1 "Inter"; color: var(--i5); }
+  .x { position: absolute; top: -14px; right: -14px; width: 54px; height: 54px; border-radius: 50%; background: var(--red);
+    box-shadow: 0 4px 10px rgba(179,38,30,.35); }
+  .ok { position: absolute; top: -14px; right: -14px; width: 54px; height: 54px; border-radius: 50%; background: var(--gd); box-shadow: 0 4px 10px rgba(0,123,84,.35); }
+  .link { position: absolute; width: 56px; height: 56px; border-radius: 50%; background: var(--navy); display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 6px 16px rgba(0,35,51,.28); z-index: 5; }
+  .lms { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+  .lms span { display: inline-flex; align-items: center; gap: 10px; height: 84px; padding: 0 18px; background: var(--i50); border-radius: 24px; font: 400 33px/1 "Inter"; white-space: nowrap; }
+  .lms span.soft { color: var(--i5); }
+  .lms img { width: 40px; height: 40px; }
 </style>
 </head>
 <body>
@@ -45,60 +53,67 @@
   </div>
 
 <script>
-const N = '#002333', I2 = '#cdd9de', W = '#fff';
+const N='#002333', I2='#cdd9de', W='#fff';
 const polar=(cx,cy,r,d)=>{const a=(d-90)*Math.PI/180;return [cx+r*Math.cos(a),cy+r*Math.sin(a)];};
 const sv=(inner,s,cls='')=>`<svg class="${cls}" width="${s}" height="${s}" viewBox="0 0 400 400">${inner}</svg>`;
 
-/* ---- grote stat-iconen ---- */
-const target = (s)=>sv([172,116,60].map(r=>`<circle cx="200" cy="200" r="${r}" fill="${W}" stroke="${N}" stroke-width="22"/>`).join('')+
+/* ---- stat-iconen ---- */
+const target=(s)=>sv([172,116,60].map(r=>`<circle cx="200" cy="200" r="${r}" fill="${W}" stroke="${N}" stroke-width="22"/>`).join('')+
  `<circle cx="200" cy="200" r="28" fill="${N}"/><line x1="206" y1="194" x2="338" y2="62" stroke="${N}" stroke-width="20" stroke-linecap="round"/>
   <line x1="338" y1="62" x2="378" y2="62" stroke="${N}" stroke-width="18" stroke-linecap="round"/><line x1="338" y1="62" x2="338" y2="22" stroke="${N}" stroke-width="18" stroke-linecap="round"/>`,s,'sh');
 function clk(cx,cy,r,sw,p){const [x1,y1]=polar(cx,cy,r,p*360),[x0,y0]=polar(cx,cy,r,0);
  return `<circle cx="${cx}" cy="${cy}" r="${r}" fill="${W}" stroke="${I2}" stroke-width="${sw}"/><path d="M${x0},${y0} A${r},${r} 0 0 1 ${x1},${y1}" fill="none" stroke="${N}" stroke-width="${sw}"/>
  <line x1="${cx}" y1="${cy}" x2="${cx}" y2="${cy-r*.62}" stroke="${N}" stroke-width="${sw*.55}" stroke-linecap="round"/><line x1="${cx}" y1="${cy}" x2="${cx+r*.34}" y2="${cy+r*.2}" stroke="${N}" stroke-width="${sw*.55}" stroke-linecap="round"/><circle cx="${cx}" cy="${cy}" r="${sw*.5}" fill="${N}"/>`;}
-const papers = (s)=>sv(`<rect x="40" y="46" width="190" height="250" rx="22" fill="#fff" stroke="${N}" stroke-width="16" transform="rotate(-7 135 171)"/>
+const papers=(s)=>sv(`<rect x="40" y="46" width="190" height="250" rx="22" fill="#fff" stroke="${N}" stroke-width="16" transform="rotate(-7 135 171)"/>
  <rect x="90" y="76" width="190" height="250" rx="22" fill="#fff" stroke="${N}" stroke-width="16"/>
  <line x1="126" y1="136" x2="244" y2="136" stroke="${I2}" stroke-width="12" stroke-linecap="round"/><line x1="126" y1="174" x2="244" y2="174" stroke="${I2}" stroke-width="12" stroke-linecap="round"/><line x1="126" y1="212" x2="204" y2="212" stroke="${I2}" stroke-width="12" stroke-linecap="round"/>
  <circle cx="275" cy="300" r="92" fill="#fff"/>${clk(275,300,72,20,.485)}
  <line x1="350" y1="22" x2="350" y2="150" stroke="${N}" stroke-width="24" stroke-linecap="round"/><polyline points="316,114 350,154 384,114" fill="none" stroke="${N}" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>`,s,'sh');
 
-/* ---- node-iconen (navy, 120px) ---- */
-const nodeIcons = [
-  sv(`<rect x="90" y="50" width="220" height="300" rx="28" fill="none" stroke="${N}" stroke-width="28"/>${[130,190,250].map(v=>`<line x1="140" y1="${v}" x2="260" y2="${v}" stroke="${N}" stroke-width="22" stroke-linecap="round"/>`).join('')}`,116),
-  sv(`<circle cx="200" cy="200" r="150" fill="none" stroke="${N}" stroke-width="28"/><circle cx="200" cy="200" r="76" fill="none" stroke="${N}" stroke-width="28"/><circle cx="200" cy="200" r="24" fill="${N}"/>`,116),
-  sv(`<circle cx="150" cy="110" r="62" fill="none" stroke="${N}" stroke-width="28"/><path d="M40,330 C40,230 260,230 260,330" fill="none" stroke="${N}" stroke-width="28" stroke-linecap="round"/><polyline points="250,230 310,290 380,190" fill="none" stroke="${N}" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>`,116),
-  sv(`<rect x="50" y="80" width="170" height="240" rx="26" fill="none" stroke="${N}" stroke-width="28"/><line x1="140" y1="200" x2="350" y2="200" stroke="${N}" stroke-width="32" stroke-linecap="round"/><polyline points="290,140 350,200 290,260" fill="none" stroke="${N}" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>`,116)
-];
+/* ---- icoon in navy tegel (wit) ---- */
+const ti = {
+  submit: sv(`<rect x="90" y="50" width="220" height="300" rx="28" fill="none" stroke="${W}" stroke-width="30"/>${[130,190,250].map(v=>`<line x1="140" y1="${v}" x2="260" y2="${v}" stroke="${W}" stroke-width="24" stroke-linecap="round"/>`).join('')}`,56),
+  ai: sv(`<circle cx="200" cy="200" r="150" fill="none" stroke="${W}" stroke-width="30"/><circle cx="200" cy="200" r="76" fill="none" stroke="${W}" stroke-width="30"/><circle cx="200" cy="200" r="24" fill="${W}"/>`,56),
+  teacher: sv(`<circle cx="150" cy="110" r="62" fill="none" stroke="${W}" stroke-width="30"/><path d="M40,330 C40,230 260,230 260,330" fill="none" stroke="${W}" stroke-width="30" stroke-linecap="round"/><polyline points="250,230 310,290 380,190" fill="none" stroke="${W}" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>`,56),
+  lms: sv(`<rect x="50" y="80" width="170" height="240" rx="26" fill="none" stroke="${W}" stroke-width="30"/><line x1="140" y1="200" x2="350" y2="200" stroke="${W}" stroke-width="34" stroke-linecap="round"/><polyline points="290,140 350,200 290,260" fill="none" stroke="${W}" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>`,56)
+};
 
-const cx = [465, 1139, 1813, 2487], railY = 640;
-const fileChip = (t)=>`<span class="chip"><svg width="36" height="46" viewBox="0 0 36 46"><path d="M3,3 H22 L33,14 V43 H3 Z" fill="#fff" stroke="${N}" stroke-width="4" stroke-linejoin="round"/><path d="M22,3 V14 H33" fill="none" stroke="${N}" stroke-width="4" stroke-linejoin="round"/></svg>${t}</span>`;
+/* ---- losse visuals ---- */
+const docIcon=(c=N)=>`<svg width="64" height="72" viewBox="0 0 64 72"><rect x="6" y="4" width="52" height="64" rx="10" fill="none" stroke="${c}" stroke-width="6"/><line x1="18" y1="26" x2="46" y2="26" stroke="${c}" stroke-width="5" stroke-linecap="round"/><line x1="18" y1="38" x2="46" y2="38" stroke="${c}" stroke-width="5" stroke-linecap="round"/><line x1="18" y1="50" x2="34" y2="50" stroke="${c}" stroke-width="5" stroke-linecap="round"/></svg>`;
+const examIcon=(c=N)=>`<svg width="64" height="72" viewBox="0 0 64 72"><rect x="6" y="4" width="52" height="64" rx="10" fill="none" stroke="${c}" stroke-width="6"/><text x="32" y="40" text-anchor="middle" font-family="League Spartan" font-weight="700" font-size="34" fill="${c}">?</text><line x1="18" y1="54" x2="46" y2="54" stroke="${c}" stroke-width="5" stroke-linecap="round"/></svg>`;
+const fileLogo=(t,c)=>`<svg width="104" height="124" viewBox="0 0 104 124"><path d="M8,6 H64 L96,38 V118 H8 Z" fill="${c}" stroke="${c}" stroke-width="8" stroke-linejoin="round"/><path d="M64,6 V38 H96 Z" fill="rgba(255,255,255,.35)"/><text x="52" y="94" text-anchor="middle" font-family="League Spartan" font-weight="700" font-size="${t.length>3?26:32}" fill="#fff">${t}</text></svg>`;
+const xBadge=`<div class="x"><svg width="54" height="54" viewBox="0 0 54 54"><path d="M18,18 L36,36 M36,18 L18,36" stroke="#fff" stroke-width="6" stroke-linecap="round"/></svg></div>`;
+const okBadge=`<div class="ok"><svg width="54" height="54" viewBox="0 0 54 54"><path d="M16,28 L24,36 L38,19" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>`;
+function stars(cx,cy,r,n,sz,c){let o='';for(let i=0;i<n;i++){const [x,y]=polar(cx,cy,r,i*360/n);o+=`<polygon transform="translate(${x},${y}) scale(${sz})" points="0,-1 .29,-.4 .95,-.31 .47,.15 .59,.81 0,.5 -.59,.81 -.47,.15 -.95,-.31 -.29,-.4" fill="${c}"/>`;}return o;}
+const aiActBadge=`<svg width="108" height="108" viewBox="0 0 108 108"><circle cx="54" cy="54" r="52" fill="${N}"/>${stars(54,54,38,12,6.5,'#fff')}<path d="M36,56 L48,68 L72,42" fill="none" stroke="#00e075" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+const humanIcon=`<svg width="108" height="108" viewBox="0 0 400 400"><circle cx="150" cy="110" r="62" fill="none" stroke="${N}" stroke-width="30"/><path d="M40,330 C40,230 260,230 260,330" fill="none" stroke="${N}" stroke-width="30" stroke-linecap="round"/><polyline points="250,230 310,290 380,190" fill="none" stroke="${N}" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+const L=(f)=>`assets/logos/${f}.svg`;
 
-let h = '';
-/* rail + pijlen + haakje */
-h += `<svg class="abs" style="left:0;top:0" width="2954" height="2520">
-  <line x1="${cx[0]}" y1="${railY}" x2="${cx[3]}" y2="${railY}" stroke="${N}" stroke-width="16" stroke-linecap="round"/>
-  ${[0,1,2].map(i=>{const m=(cx[i]+cx[i+1])/2;return `<polyline points="${m-16},${railY-34} ${m+22},${railY} ${m-16},${railY+34}" fill="none" stroke="${N}" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" style="filter:drop-shadow(0 0 0 #fff)"/>`}).join('')}
-  <line x1="${cx[1]}" y1="${railY-96}" x2="${cx[1]}" y2="498" stroke="${N}" stroke-width="8" stroke-dasharray="2 18" stroke-linecap="round"/>
-  <path d="M${cx[0]},1240 V1286 H${cx[3]} V1240" fill="none" stroke="${N}" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-  <line x1="${(cx[0]+cx[3])/2}" y1="1286" x2="${(cx[0]+cx[3])/2}" y2="1330" stroke="${N}" stroke-width="10" stroke-linecap="round"/></svg>`;
+/* ---- kaarten ---- */
+const X0=[128,728,1328,1928], Y0=[600,1000,1400,1800];
+const card=(i,icon,title,body)=>`<div class="card" style="left:${X0[i]}px;top:${Y0[i]}px"><div class="head"><div class="tile">${icon}</div><div class="title">${title}</div></div>${body}</div>`;
 
-/* nodes en kolomtekst */
-const cols = [
-  {t:'Student submits',    d:`<div class="chips">${fileChip('PDF')}${fileChip('DOCX')}</div><div class="sub" style="margin-top:26px">Papers, open-ended exams</div>`},
-  {t:'AI proposes a grade',d:`<div class="big">Our own LLM</div><div class="sub">No ChatGPT, no other LLM</div>`},
-  {t:'Teacher approves',   d:`<div class="big">Human in the loop</div><div class="sub">The academic decides</div>`},
-  {t:'Grade in your LMS', d:`<div class="chips"><span class="chip">Moodle</span><span class="chip">Blackboard</span><span class="chip">Brightspace</span><span class="chip">Canvas</span><span class="chip soft">and more</span></div>`}
-];
-cols.forEach((c,i)=>{
-  h += `<div class="node" style="left:${cx[i]-92}px;top:${railY-92}px">${nodeIcons[i]}</div>`;
-  h += `<div class="col" style="left:${cx[i]-330}px;top:${railY+140}px"><div class="title">${c.t}</div><div style="margin-top:34px">${c.d}</div></div>`;
-});
+const c1=`<div class="row">
+  <div class="cell" style="width:164px">${docIcon()}Paper</div>
+  <div class="cell" style="width:236px">${examIcon()}<span style="white-space:nowrap">Open-ended<br>exam</span></div>
+  <div style="width:20px"></div>
+  <div class="cell" style="width:150px">${fileLogo('PDF','#d93831')}</div>
+  <div class="cell" style="width:150px">${fileLogo('DOCX','#2b579a')}</div></div>`;
+const llm=(img,name)=>`<div class="cell" style="width:188px"><img src="${L(img)}" width="76" height="76" style="opacity:.8"><small>${name}</small>${xBadge}</div>`;
+const c2=`<div class="row">${llm('openai','ChatGPT')}${llm('googlegemini','Gemini')}${llm('claude','Claude')}
+  <div class="cell" style="width:188px;background:#fff;box-shadow:inset 0 0 0 5px #007b54"><img src="../../Design/Merk/logos/logo_navy.png" width="130"><span style="font:700 34px/1 'League Spartan';color:#007b54">our own LLM</span>${okBadge}</div></div>`;
+const c3=`<div class="row">
+  <div class="cell" style="width:396px;flex-direction:row;gap:22px;padding:0 20px">${humanIcon}<span style="text-align:left;font-weight:400">Human<br>in the loop</span></div>
+  <div class="cell" style="width:396px;flex-direction:row;gap:22px;padding:0 20px">${aiActBadge}<span style="text-align:left">AI Act<br>compliant</span></div></div>`;
+const c4=`<div class="lms"><span><img src="${L('moodle')}">Moodle</span><span><img src="${L('canvas')}">Canvas</span><span>Blackboard</span><span>Brightspace</span><span>itslearning</span><span>Neo LMS</span><span class="soft">and more</span></div>`;
 
-/* stats */
-h += `<div class="stat" style="left:${cx[1]-340}px;top:230px">${target(196)}<div><div class="num">96%</div><div class="lbl">grading accuracy</div></div></div>`;
-h += `<div class="stat" style="left:${(cx[0]+cx[3])/2-420}px;top:1360px">${papers(196)}<div><div class="num">48.5%</div><div class="lbl">less time spent grading</div></div></div>`;
-
-document.getElementById('layer-content').innerHTML = h;
+const chev=`<svg width="30" height="30" viewBox="0 0 30 30"><polyline points="7,11 15,20 23,11" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+let h='';
+h+=`<div class="stat" style="left:128px">${target(270)}<div><div class="num">96%</div><div class="lbl">grading accuracy</div></div></div>`;
+h+=`<div class="stat" style="right:128px">${papers(270)}<div><div class="num">48.5%</div><div class="lbl">less time spent grading</div></div></div>`;
+h+=card(0,ti.submit,'Student submits',c1)+card(1,ti.ai,'AI proposes a grade',c2)+card(2,ti.teacher,'Teacher approves',c3)+card(3,ti.lms,'Grade in your LMS',c4);
+[0,1,2].forEach(i=>{h+=`<div class="link" style="left:${X0[i]+712}px;top:${Y0[i]+352}px">${chev}</div>`;});
+document.getElementById('layer-content').innerHTML=h;
 </script>
 </body>
 </html>
