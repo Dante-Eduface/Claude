@@ -53,9 +53,9 @@
   .eh span { color: var(--g); }
 
   /* Eduface AI onder de twee vlakken, over de volle breedte (zoals op de afbeelding) */
-  .ai { grid-column: 1 / 4; grid-row: 4; margin-top: 56px; background: var(--i50); border-radius: 48px; padding: 52px 72px; display: flex; align-items: center; justify-content: space-between; gap: 80px;
+  .ai { grid-column: 1 / 4; grid-row: 4; margin-top: 56px; background: var(--i50); border-radius: 48px; padding: 52px 72px; display: flex; align-items: center; justify-content: center; text-align: center;
         box-shadow: 0 8px 22px rgba(0,35,51,.06), 0 40px 90px rgba(0,35,51,.12); }
-  .ai .top { display: flex; align-items: flex-end; gap: 22px; }
+  .ai .top { display: inline-flex; align-items: flex-end; gap: 22px; }
   .ai .top img { height: 84px; width: auto; }
   .ai .top .t { font: 700 70px/.76 "League Spartan"; color: var(--navy); letter-spacing: -.01em; }
   .ai .n { font: 700 160px/1 "League Spartan"; letter-spacing: -.025em; margin-top: 14px; color: var(--navy); }
@@ -90,8 +90,7 @@ Q.forEach((q,i)=>{
   h+=`<div class="cm r${i+1}">${ic('arrow-right')}</div>`;
   h+=`<div class="cr pair r${i+1}"><div class="it">${ic(A[i].ic)}</div><div class="eh">${A[i].h}</div></div>`;
 });
-h+=`<div class="ai"><div><div class="top"><img src="../../Design/Merk/logos/logo_navy.png"><div class="t">AI</div></div><div class="n">250,000</div><div class="l">education-specific feedback examples</div></div>
-  <div class="d">Developed with the help of <b>Leiden University</b> and <b>Radboud University.</b></div></div>`;
+h+=`<div class="ai"><div><div class="top"><img src="../../Design/Merk/logos/logo_navy.png"><div class="t">AI</div></div><div class="n">250,000</div><div class="l">education-specific feedback examples</div></div></div>`;
 const lms=`<div class="lms"><div class="lab">Integrated with your LMS</div><div class="row"><img src="assets/logos/lms-canvas.png"><img src="assets/logos/lms-moodle.png"><img src="assets/logos/lms-blackboard.png"><img src="assets/logos/lms-brightspace.png"></div></div>`;
 document.getElementById('layer-content').innerHTML=`<div class="g">${h}</div>${lms}`;
 </script>
