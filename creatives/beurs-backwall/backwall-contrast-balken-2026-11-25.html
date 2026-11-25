@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Beurs backwall</title>
+<style>
+  /* Canvas: 1 px = 1 mm. Wand is 2954 x 2520 mm. Onderste derde (vanaf y 1700) blijft leeg: dat zit aan de grond. */
+  @font-face { font-family: "League Spartan"; font-weight: 700; src: url("../../Design/Merk/fonts/LeagueSpartan-Bold.ttf"); }
+  @font-face { font-family: "Inter"; font-weight: 400; src: url("../../Design/Merk/fonts/Inter-Regular.ttf"); }
+  :root { --w: 2954px; --h: 2520px; --navy: #002333; --gd: #007b54; --g: #00e075; --i7: #2c4a57; --i5: #5b7480; --i3: #a9bcc4; --i2: #cdd9de; --i50: #f3f7f8; --red: #b3261e; }
+  * { margin: 0; box-sizing: border-box; }
+  html, body { width: var(--w); height: var(--h); }
+  .wall {
+    position: relative; width: var(--w); height: var(--h); overflow: hidden; color: var(--navy);
+    background:
+      radial-gradient(ellipse 80% 45% at 90% 52%, #f9f8f7 0%, rgba(249,248,247,0) 100%),
+      linear-gradient(180deg, #dce7ee 0%, #e2edf1 20%, #ecf3f5 40%, #f4f6f6 55%, #eff3f3 70%, #e4edf1 90%, #dde8ee 100%);
+  }
+  .abs { position: absolute; }
+  .logo { position: absolute; right: 128px; bottom: 128px; width: 420px; height: auto; }
+
+  .h1 { position: absolute; left: 128px; top: 120px; font: 700 184px/.98 "League Spartan"; letter-spacing: -.025em; color: var(--navy); white-space: nowrap; }
+  .h1 em { font-style: normal; color: var(--gd); }
+
+  .card { position: absolute; top: 620px; height: 1070px; padding: 60px; border-radius: 56px; display: flex; flex-direction: column; gap: 34px; }
+  .card.generic { left: 128px; width: 1180px; background: rgba(255,255,255,.62);
+    box-shadow: 0 8px 24px rgba(0,35,51,.07), 0 40px 90px rgba(0,35,51,.12); }
+  .card.ours { left: 1344px; width: 1482px; background: var(--navy); color: #fff;
+    box-shadow: 0 14px 34px rgba(0,35,51,.28), 0 60px 130px rgba(0,35,51,.36); }
+
+  .tag { height: 72px; display: flex; align-items: center; }
+  .generic .tag { font: 700 58px/1 "League Spartan"; color: var(--i5); letter-spacing: -.01em; }
+  .cap { font: 700 62px/1.02 "League Spartan"; letter-spacing: -.01em; margin-bottom: 20px; }
+  .generic .cap { color: var(--i7); }
+  .sec { position: relative; flex-shrink: 0; }
+
+  .runs { display: flex; align-items: center; gap: 36px; }
+  .rows { display: flex; flex-direction: column; gap: 18px; }
+  .row { display: flex; align-items: center; gap: 26px; font: 400 46px/1 Inter; }
+  .row b { font-weight: 400; width: 130px; }
+  .track { width: 740px; height: 60px; border-radius: 30px; background: rgba(0,35,51,.08); overflow: hidden; }
+  .ours .track { width: 960px; background: rgba(255,255,255,.14); }
+  .fill { height: 100%; border-radius: 27px; }
+
+  .logos { display: flex; gap: 22px; margin-top: auto; flex-shrink: 0; }
+  .lg { position: relative; flex: 1; height: 130px; border-radius: 30px; background: var(--i50); display: flex; align-items: center; justify-content: center; gap: 18px; font: 400 40px/1 Inter; color: var(--i5); }
+  .lg img { width: 58px; height: 58px; opacity: .8; }
+  .x { position: absolute; top: -16px; right: -16px; width: 58px; height: 58px; border-radius: 50%; background: var(--red); box-shadow: 0 4px 10px rgba(179,38,30,.4); }
+  .ownstrip { margin-top: auto; flex-shrink: 0; height: 130px; border-radius: 30px; box-shadow: inset 0 0 0 6px var(--g); display: flex; align-items: center; gap: 36px; padding: 0 44px; }
+  .ownstrip .t1 { font: 700 62px/1 "League Spartan"; color: var(--g); }
+  .ownstrip .t2 { font: 400 38px/1 Inter; color: rgba(255,255,255,.78); }
+</style>
+</head>
+<body>
+  <div class="wall" id="wall">
+    <div id="layer-content"></div>
+    <img class="logo" src="../../Design/Merk/logos/logo_navy.png" alt="Eduface">
+  </div>
+
+<script>
+const N='#002333', G='#00e075', RED='#b3261e';
+const L=(f)=>`assets/logos/${f}.svg`;
+const xBadge=`<div class="x"><svg width="58" height="58" viewBox="0 0 54 54"><path d="M18,18 L36,36 M36,18 L18,36" stroke="#fff" stroke-width="6" stroke-linecap="round"/></svg></div>`;
+
+/* ≠ en = als ronde badge */
+const neq=`<svg width="120" height="120" viewBox="0 0 120 120"><circle cx="60" cy="60" r="58" fill="${RED}"/><path d="M34,48 H86 M34,72 H86" stroke="#fff" stroke-width="9" stroke-linecap="round"/><path d="M72,28 L48,92" stroke="#fff" stroke-width="9" stroke-linecap="round"/></svg>`;
+const eq=`<svg width="120" height="120" viewBox="0 0 120 120"><circle cx="60" cy="60" r="58" fill="${G}"/><path d="M34,48 H86 M34,72 H86" stroke="${N}" stroke-width="9" stroke-linecap="round"/></svg>`;
+
+/* feedback-document: links doorgestreept en bijgewerkt, rechts met vinkjes */
+const lines=[[380,0],[330,0],[400,0],[250,0]];
+function doc(good){
+  const rows=lines.map(([w],i)=>{const y=34+i*50;
+    const dot = good
+      ? `<circle cx="38" cy="${y+10}" r="19" fill="${G}"/><path d="M29,${y+10} L36,${y+17} L48,${y+3}" fill="none" stroke="${N}" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>`
+      : `<circle cx="38" cy="${y+10}" r="19" fill="none" stroke="${RED}" stroke-width="6"/><path d="M30,${y+2} L46,${y+18} M46,${y+2} L30,${y+18}" stroke="${RED}" stroke-width="6" stroke-linecap="round"/>`;
+    const bar = `<rect x="76" y="${y}" width="${w}" height="20" rx="10" fill="${good?'rgba(255,255,255,.55)':'#a9bcc4'}"/>`;
+    const strike = good?'':`<rect x="70" y="${y+7}" width="${w+16}" height="6" rx="3" fill="${RED}" transform="rotate(-1.5 ${70+w/2} ${y+10})"/>`;
+    return dot+bar+strike;}).join('');
+  return `<svg width="${good?640:540}" height="${(34+lines.length*50+4)*(good?640:540)/560}" viewBox="0 0 560 ${34+lines.length*50+4}">${rows}</svg>`;
+}
+
+const GEN =
+ `<div class="tag">Generic AI tools</div>
+  <div class="sec"><div class="cap">Same assignment, sent twice.<br>Two different grades.</div>
+    <div class="runs"><div class="rows">
+      <div class="row"><b>Run 1</b><div class="track"><div class="fill" style="width:78%;background:#5b7480"></div></div></div>
+      <div class="row"><b>Run 2</b><div class="track"><div class="fill" style="width:49%;background:#5b7480"></div></div></div></div>${neq}</div></div>
+  <div class="sec"><div class="cap">Doesn't grade like a teacher.<br>Teachers fix everything.</div>${doc(false)}</div>
+  <div class="logos"><div class="lg"><img src="${L('openai')}">ChatGPT${xBadge}</div><div class="lg"><img src="${L('googlegemini')}">Gemini${xBadge}</div><div class="lg"><img src="${L('claude')}">Claude${xBadge}</div></div>`;
+
+const OURS =
+ `<div class="tag"><img src="assets/logos/eduface-white.png" style="height:72px;width:auto"></div>
+  <div class="sec"><div class="cap">Same assignment, sent twice.<br><span style="color:${G}">Same grade.</span></div>
+    <div class="runs"><div class="rows">
+      <div class="row"><b>Run 1</b><div class="track"><div class="fill" style="width:78%;background:${G}"></div></div></div>
+      <div class="row"><b>Run 2</b><div class="track"><div class="fill" style="width:78%;background:${G}"></div></div></div></div>${eq}</div></div>
+  <div class="sec"><div class="cap">Grades like a teacher.<br><span style="color:${G}">Trained to.</span></div>${doc(true)}</div>
+  <div class="ownstrip"><div class="t1">our own LLM</div><div class="t2">built for education</div></div>`;
+
+document.getElementById('layer-content').innerHTML =
+ `<div class="h1">Generic AI doesn't grade<br>like a teacher. <em>Eduface does.</em></div>
+  <div class="card generic">${GEN}</div><div class="card ours">${OURS}</div>`;
+</script>
+</body>
+</html>
