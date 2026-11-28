@@ -75,7 +75,8 @@ Open: bij Descriptive vallen de 0/1-randvoorwaarden weg. Tijd, omvang en plagiaa
 
 ### Hoe het werkt
 - De vrije tekst is de **hele** prompt voor die generatie [Bevestigd, Dante 28-11]. Wat je niet opnieuw meegeeft, is niet gegarandeerd bewaard. Plak dus steeds de volledige tekst.
-- Of een nieuwe generatie eerder gegenereerde instructies overschrijft of aanvult, is **[Onbekend]**. Test: zet in een proefopdracht een korte tekst, regenereer, en kijk in "Bekijk modelinstructies" wat er van de oude onderdelen is blijven staan.
+- Een nieuwe generatie vervangt de vorige: een eerdere versie van de gegenereerde instructies is niet terug te halen [Bevestigd, Dante 28-11]. Bewaar je eigen tekst dus buiten Eduface. Of er toch iets van de oude tekst doorwerkt, is **[Onbekend]**.
+- Instructies horen bij één opdracht. Wil je een instructie testen zonder de huidige te verliezen, maak dan een tweede opdracht. Een nieuwe opdracht start met de standaardinstructies [Waargenomen, Breederode].
 - De generatiestap comprimeert [Waargenomen, Breederode]. Voorbeeldzinnen overleven niet en bij twee voorbeelden blijft er één over. Geef er dus één.
 - Breederode zei dat de sectie Inline opmerkingen niet doorkwam en dat Beoordelingsstrengheid een kort label blijft. Bij Academica veranderden de inline opmerkingen wel mee met de instructie (geen lof meer, maximaal twee korte zinnen). We hebben de gegenereerde tekst niet teruggelezen, dus waarom is **[Onbekend]**.
 
@@ -140,7 +141,7 @@ Waargenomen bij Academica, op één student en vijf runs.
 
 ## 9. Nog te testen
 
-1. Overschrijft Regenerate eerdere gegenereerde instructies, of voegt het toe?
+1. Werkt er na een Regenerate nog iets door van de eerdere instructies? (Dat een oude versie niet terug te halen is, is bevestigd.)
 2. Blijven pillen bestaan na een Regenerate, en hebben ze effect op het oordeel?
 3. Hoeveel ruis zit er in dezelfde instellingen (herhaalrun)?
 4. Helpt "General feedback on entire assignment" tegen de herhaling bij meerdere criteria?
