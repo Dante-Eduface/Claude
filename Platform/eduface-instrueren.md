@@ -38,6 +38,7 @@ Elk punt heeft een bewijsniveau:
 - **Een rubric als afbeelding-pdf is ingelezen [Waargenomen, Academica].** Twee rubrics zonder tekstlaag kwamen in Eduface als volledige criteria met niveauteksten terecht.
 - **De bestandsnaam wordt de titel van de inzending in de export [Waargenomen].** Geef bestanden dus een naam met de opdracht erin.
 - **Eduface doet geen plagiaatscan en beoordeelt geen vormgeving [Bevestigd, Dante 28-11].** Laat die criteria uit de opdracht weg, of beoordeel ze zelf. Dat geldt ook voor criteria over het inleveren, zoals tijd en omvang.
+- **Een cijferberekening of herkansingsregel in de rubric wordt niet toegepast [Waargenomen, portfolio].** Eduface rekent met zijn eigen gewichten en liet bij één Onvoldoende toch een totaal Goed zien. Het eindoordeel blijft aan de docent.
 
 ## 3. Wat stuurt wat
 
