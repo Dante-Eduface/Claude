@@ -86,7 +86,7 @@ Open: bij Descriptive vallen de 0/1-randvoorwaarden weg. Tijd, omvang en plagiaa
 3. **"Zorg dat het niveau past bij je eigen feedback."** Leerdoelen methode ging van Uitstekend naar Goed. Eduface schreef er zelf bij dat de opbouw nog niet zichtbaar was en gaf toch het hoogste niveau [Waargenomen, 1 run].
 4. **"Kies het hoogste niveau alleen als de tekst de omschrijving aantoonbaar haalt."**
 5. **Harde woordlimiet bij de algemene feedback** (50 woorden) [Waargenomen, Breederode: de sjabloonopener verdween. Bij Academica staat het als instelling en bleef de feedback daaronder].
-6. **Voor inline opmerkingen: "elke opmerking bevat een verbeterpunt, nooit alleen iets positiefs"** [Waargenomen, 0 van 11 losse lofopmerkingen].
+6. **Voor inline opmerkingen: "elke opmerking bevat een verbeterpunt, nooit alleen iets positiefs"** [Waargenomen: 0 van 11 losse lofopmerkingen bij Lessenserie ontwerpen. Bij de kopie van Lessenserie uitgewerkt met dezelfde soort instructie bleef het 4 van 15, dus de regel houdt niet altijd stand. Waarom is onbekend, mogelijk valt de Inline-sectie bij het genereren weg].
 7. **"Maximaal twee korte zinnen, één punt per opmerking, hetzelfde punt één keer."**
 
 ### Wat niet werkte
@@ -138,6 +138,7 @@ Waargenomen bij Academica, op één student en vijf runs.
 - **Hoge niveaus bij ontbrekende informatie** als het verkeerde document bij de rubric zit.
 - **Stijl:** alleen opdrachten ("Voeg toe", "Neem op", "Koppel"), geen vragen, en rubric-taal als "traceerbaar" en "controleerbaar".
 - **Stabiliteit:** vier van de zeven niveaus bleven in drie runs gelijk. Een vijfde wiebelde. Ruis is niet apart gemeten.
+- **Standaardinstructie tegenover aangepaste instructie** (Lessenserie uitgewerkt, lesontwerp van 21 pagina's, één student, [Waargenomen]): zes van de negen niveaus bleven gelijk. Twee keer Uitstekend werd Goed, Feedback geven ging van Goed naar Voldoende, de opener "Je deed goed werk door" verdween (was 5 van de 9), en de opmerkingen werden korter (gemiddeld 36 woorden tegen 42). De vondsten bleven grotendeels gelijk. De rubric werd bij de kopie opnieuw ingelezen (een criterium kreeg een andere naam), dus de vergelijking is niet volledig zuiver.
 
 ## 9. Nog te testen
 
